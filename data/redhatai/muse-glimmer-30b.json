@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 822,
+  "downloads_30d": 904,
   "trending_score": 0,
   "parameters": 29776626688,
   "parameters_human": "29.78B",
@@ -44,5 +44,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI",
+      "snippet": "August 2026 Collection of third-party generative AI models validated by Red Hat AI for use across the Red Hat AI Product Portfolio."
+    },
+    {
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/models",
+      "snippet": "RedHatAI/Mistral-Medium-3.5-128B ... RedHatAI/diffusiongemma-26B-A4B-it-NVFP4 ... RedHatAI/diffusiongemma-26B-A4B-it-FP8 …"
+    }
+  ]
 }

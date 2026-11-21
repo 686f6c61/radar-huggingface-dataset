@@ -50,25 +50,25 @@
       "task": null,
       "dataset": "KITTI",
       "metric": "mAP",
-      "value": 68.5
+      "value": 69.72
     },
     {
       "task": null,
       "dataset": "KITTI",
       "metric": "AP/Car",
-      "value": 78.57
+      "value": 78.72
     },
     {
       "task": null,
       "dataset": "KITTI",
       "metric": "AP/Pedestrian",
-      "value": 55.02
+      "value": 58.48
     },
     {
       "task": null,
       "dataset": "KITTI",
       "metric": "AP/Cyclist",
-      "value": 71.92
+      "value": 71.96
     }
   ],
   "sources": []

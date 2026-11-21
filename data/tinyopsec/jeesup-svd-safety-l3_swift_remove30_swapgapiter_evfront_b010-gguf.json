@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010 · Hugging Face",
-      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010",
-      "snippet": "Instructions to use Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF",
-      "url": "https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF",
-      "snippet": "Instructions to use tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Svd Safety L3 Swift Remove20 Swapgapiter B010 - AI Model Insights ...",
-      "url": "https://free2aitools.com/model/jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010",
-      "snippet": "Registry entry for model Svd Safety L3 Swift Remove20 Swapgapiter B010; source metadata pending."
-    },
-    {
-      "title": "svd-safety-l3_remove50_swapgapiter_b010_r01 by Park",
-      "url": "https://savrn.com/models/svd-safety-l3-remove50-swapgapiter-b010-r01",
-      "snippet": "svd-safety-l3_remove50_swapgapiter_b010_r01 from Park, 8B parameters: license, access terms, disclosed training data, reported evaluations and the…"
-    },
-    {
-      "title": "Jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010",
-      "url": "https://featherless.ai/models/Jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010",
-      "snippet": "It has undergone 10 rounds of iterative parameter-neutral swap selection using the &#x27;gap_iter&#x27; rule to study the repair of safety behavior post-compression. This model is a research artifact designed to measure safety/utility trade-offs under compression, not a general-purpose chat model."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "PoluxAI/polux-andromeda-1",
+  "slug": "poluxai-polux-andromeda-1",
+  "author": "PoluxAI",
+  "url": "https://huggingface.co/PoluxAI/polux-andromeda-1",
+  "created_at": "2026-09-21T09:31:27.000Z",
+  "updated_at": "2026-11-21T01:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 43686781190,
+  "storage_human": "43.7 GB",
+  "context_length": null,
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

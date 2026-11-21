@@ -2,128 +2,110 @@
 
 ## Resumen
 
-motherlode-code-small-en-v0.1 es un modelo de embeddings de 33,4 millones de parámetros desarrollado por el usuario RiverRider, especializado en recuperación de código y texto en inglés. Parte de BAAI/bge-small-en-v1.5, del que hereda arquitectura BERT, tokenizador y salida CLS de 384 dimensiones, por lo que puede sustituir a bge-small en los pipelines donde ya se usa sin cambios de integración.
+`motherlode-code-small-en-v0.1` es un modelo de embeddings de 33,4 millones de parámetros desarrollado por RiverRider, especializado en recuperación de código (code retrieval) y búsqueda semántica sobre repositorios. Se construye como un finetune de `BAAI/bge-small-en-v1.5`, del que hereda arquitectura BERT, tokenizador y salida CLS de 384 dimensiones, por lo que es intercambiable en cualquier pipeline donde ya funcione bge-small sin cambios de integración.
 
-Se trata de un model soup: la media parámetro a parámetro de dos ajustes finos de bge-small, uno entrenado para localizar el archivo que una issue de GitHub necesita modificar y otro entrenado para reproducir la geometría de gte-modernbert-base, un modelo 4,5 veces mayor. El objetivo declarado es mejorar la recuperación en tareas de code search y localización de archivos (estilo SWE-bench) manteniendo el coste de inferencia de un encoder pequeño.
+El modelo se obtiene mediante un *model soup*: la media parámetro a parámetro de dos finetunes del modelo base, uno entrenado para localizar el fichero de código que un issue de GitHub requiere modificar y otro entrenado para reproducir la geometría de `gte-modernbert-base`, un modelo 4,5 veces mayor. El objetivo declarado es mejorar la recuperación de ficheros relevantes en tareas tipo SWE-bench manteniendo el coste de inferencia de un modelo pequeño.
 
-Es relevante ahora porque publica evidencia por instancia y comparaciones pareadas frente a bge-small-en-v1.5 en SWE-bench Verified y CoIR, con mejoras estadísticamente significativas en la mayoría de configuraciones, y porque distribuye pesos en safetensors, GGUF f16 y ONNX para Python, llama.cpp y transformers.js. La licencia BUSL-1.1 es el principal factor que hay que evaluar antes de darle un uso comercial.
+Es relevante ahora porque demuestra que técnicas de destilación geométrica y mezcla de pesos pueden cerrar parte de la brecha con modelos mucho mayores en tareas de code search, con evidencia por instancia publicada y comparaciones pareadas con tests de signo. No es un modelo generativo: es un encoder de embeddings para similitud semántica, orientado a indexación y búsqueda, no a generación de texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo BERT (encoder), heredada de BAAI/bge-small-en-v1.5 |
-| Parametros totales | 33.360.000 (33,4 M) |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | 512 tokens; transformers.js trunca por encima de 512 tras añadir los tokens especiales; en llama.cpp se validó a 256 tokens conservando [SEP]; el motor Black Window corta en 510 y añade [CLS] y [SEP] por su cuenta |
-| Tipos de cuantizacion | f16 (GGUF), fp32 (transformers.js) y filas int4 (usadas en la réplica del motor Black Window); no se documentan otros |
+| Arquitectura | BERT (encoder transformer), basada en BAAI/bge-small-en-v1.5 |
+| Parametros totales | 33.360.000 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 512 tokens (truncado en transformers.js; el pipeline de referencia corta en 510 y añade tokens especiales) |
+| Tipos de cuantizacion | f16 (GGUF publicado); int4 mencionado en la ruta de evaluación del motor Black Window; ONNX y safetensors disponibles |
 | Idiomas soportados | inglés (en) |
-| Licencia | BUSL-1.1 (Business Source License 1.1), declarada como "other" con license_name busl-1.1 |
-| Formato de pesos | safetensors, GGUF (f16) y ONNX |
+| Licencia | BUSL-1.1 (Business Source License 1.1, etiquetada como "other") |
+| Formato de pesos | safetensors, ONNX, GGUF (f16) |
 | Dimension de embedding | 384 (salida CLS) |
-| Pooling | CLS, con normalizacion de la fila CLS |
-| Modelo base | BAAI/bge-small-en-v1.5 (relacion: finetune) |
-| Tamano del repositorio | 0,4 GB |
-| Fecha de publicacion | 27 de septiembre de 2026 |
+| Pooling | CLS, con normalización L2 |
+| Prompts de query/passage | ninguno (a diferencia de otros modelos BGE) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de bge-small-en-v1.5: un encoder transformer tipo BERT con tokenizador idéntico y una salida CLS de 384 dimensiones. El modelo no introduce cabezas nuevas ni cambia la dimensionalidad, de modo que es intercambiable en cualquier punto donde ya se ejecute bge-small. El entrenamiento no es un ajuste fino convencional, sino un model soup: cada peso final es la media parámetro a parámetro de dos ajustes finos independientes del mismo modelo base. El primero se entrenó para encontrar el código que una issue de GitHub necesita cambiar; el segundo se entrenó para reproducir la geometría de embeddings de gte-modernbert-base, un modelo 4,5 veces mayor. No se utiliza prompt de consulta ni de pasaje, igual que en las mediciones publicadas con bge-small.
+La arquitectura es un transformer encoder BERT de 33,4 M de parámetros con tokenizador y salida CLS de 384 dimensiones idénticos a `bge-small-en-v1.5`. El modelo final no se entrena directamente: es una media parámetro a parámetro (*model soup*) de dos finetunes del mismo modelo base. El primero se entrena para la tarea de localizar el fichero que un issue de GitHub necesita cambiar; el segundo se entrena para reproducir la geometría de embeddings de `gte-modernbert-base`, un modelo de mayor tamaño, lo que actúa como una forma de destilación geométrica.
 
-No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, la proporción de código frente a texto, ni sobre si se aplicaron etapas de RLHF o DPO. Tampoco se detalla la receta de destilación usada para reproducir la geometría de gte-modernbert-base, más allá de que es uno de los dos objetivos de ajuste. Como elementos técnicos destacables, el autor publica tres medias de 384 flotantes bajo el directorio centring/ (una para código, ajustada sobre 64.000 pasajes de 86 repositorios Python; una para captions, ajustada sobre 20.000 captions de COCO train2017; y una "enviada", promedio de las dos anteriores y de una media de prosa calculada sobre los primeros 20.000 párrafos de al menos 60 caracteres del split de entrenamiento de wikitext-103), pensadas para restar a ambos lados antes de calcular un coseno cuando importa la magnitud de la puntuación.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO (no aplicables en un encoder de similitud, pero no se detalla el proceso de optimización). La model card sí documenta el proceso de evaluación con comparaciones pareadas por ítem, tests de signo exactos bilaterales y artefactos por instancia publicados en un dataset de evidencia. También se publican tres vectores de centrado (media sobre código, sobre captions COCO y sobre prosa de wikitext-103) para corregir la anisotropía de los embeddings cuando importa la magnitud de las puntuaciones.
 
 ## Capacidades
 
-- Generación de embeddings de texto y de código en inglés, con pooling CLS y normalización.
-- Búsqueda semántica y recuperación de código (code search, code retrieval) sobre repositorios.
-- Localización del archivo relevante para una issue: ranking de los ficheros de un repositorio dada la descripción de un problema.
-- Similitud entre frases y entre pasajes (pipeline sentence-similarity), sin prompt de consulta ni de pasaje.
-- Indexación y comparación de descripciones de imágenes (captions): se distribuye una media de centrado específica para COCO.
-- Ejecución en navegador mediante transformers.js 3.7.1 con dtype fp32, y en llama.cpp con GGUF f16 y pooling CLS.
-- Compatibilidad declarada con text-embeddings-inference y con endpoints (etiquetas endpoints_compatible y region:us).
-- No es un modelo generativo: no produce texto, no soporta tool calling ni function calling, no ejecuta razonamiento multi-paso ni agentes, y no tiene modo thinking. Tampoco cubre visión ni audio.
+- Generación de embeddings de texto y código para similitud semántica y recuperación.
+- Búsqueda de código (code search) y recuperación de ficheros relevantes para un issue.
+- Recuperación de pasajes en dominios científicos (evaluado en scifact).
+- Recuperación multimodal texto-imagen vía embeddings de captions (evaluado en COCO captions).
+- Compatible con `sentence-transformers` (versiones 5.1.0 y 6.0.1 probadas).
+- Compatible con `transformers.js` 3.7.1 para inferencia en navegador o Node.
+- Compatible con llama.cpp mediante GGUF f16 con pooling CLS.
+- Compatible con text-embeddings-inference y endpoints compatibles.
+- Centrado opcional mediante vectores medios publicados para calibración de umbrales.
+- No soporta tool calling, agentes ni generación de texto: es exclusivamente un encoder.
 
 ## Casos de uso
 
-- Localización del archivo a modificar en un repositorio: dada la descripción de una issue, se indexan los ficheros del repositorio y se ordenan por similitud para que el desarrollador o un agente de código abra directamente el candidato correcto. Es el escenario medido en SWE-bench Verified, con 178 aciertos en recall@1 sobre 411 instancias frente a los 145 de bge-small-en-v1.5.
-- Búsqueda semántica de código en monorepos grandes: indexar funciones y módulos y consultar en lenguaje natural ("dónde se lee el límite de reintentos de la configuración") sin depender de coincidencia léxica exacta, útil cuando los nombres de símbolos no coinciden con la terminología de la consulta.
-- Recuperación aumentada sobre documentación técnica e issues: construir el índice de recuperación de un asistente interno con documentación, incidencias cerradas y notas de diseño en inglés, aprovechando la ventana de 512 tokens por pasaje.
-- Enrutado y triaje de issues: calcular el embedding del título y del cuerpo de cada incidencia entrante y asignarla al equipo o al componente cuya descripción y código quedan más próximos, reduciendo el trabajo manual de clasificación.
-- Deduplicación y agrupación de código: agrupar fragmentos con embeddings próximos para detectar copias, variantes casi idénticas entre repositorios o candidatos a refactorización conjunta.
-- Detección de similitud entre descripciones de imágenes: con la media de centrado de COCO, comparar captions y medir su parecido, por ejemplo para auditar datasets de anotación.
-- Inferencia en el cliente o en el borde: con transformers.js y pesos fp32 el modelo corre en un navegador, lo que permite indexar y consultar colecciones locales sin enviar el contenido a un servidor.
-- Prefiltrado barato en pipelines de generación de código: usar el encoder para reducir de miles a decenas los archivos candidatos antes de que un modelo generativo, mucho más caro, los lea completos.
+- Búsqueda de código en repositorios: indexar todos los ficheros de un repositorio y recuperar los más relevantes para una consulta en lenguaje natural, usando los 384 dims y la normalización L2 para similitud coseno. Adecuado por su rendimiento en CoIR (nDCG@10 de 0,5758 frente a 0,4673 de bge-small).
+- Triaje de issues en GitHub: dado un issue, rankear los ficheros del repositorio que probablemente requieran cambios, como en la tarea de SWE-bench Verified donde obtiene 178 aciertos frente a 145 de bge-small en 411 instancias.
+- Asistente de documentación técnica: indexar documentación y código para responder consultas de desarrolladores con recuperación aumentada, aprovechando el contexto de 512 tokens por pasaje.
+- Deduplicación y clustering de código: generar embeddings de fragmentos de código para agrupar funciones similares o detectar duplicados en bases de código grandes.
+- Búsqueda semántica en navegador: desplegar con transformers.js 3.7.1 para búsqueda local sin servidor, con la salvedad del truncado a 512 tokens y la pérdida del [SEP] final.
+- Recuperación en pipelines RAG sobre repositorios: usar como retriever en sistemas de pregunta-respuesta sobre código, con centrado opcional para calibrar umbrales de relevancia.
+- Búsqueda de pasajes científicos: recuperación sobre abstracts (evaluado en scifact con nDCG@10 de 0,7150 en crudo).
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, emparejados por ítem. Los tests de signos son exactos y bilaterales, calculados sobre los ítems que solo un modelo acierta. No se han publicado resultados de benchmarks adicionales en la información disponible.
-
-Localización del archivo, SWE-bench Verified, recall@1 (acierto = el archivo correcto queda primero):
-
-| Configuracion | Poblacion | Este modelo | bge-small-en-v1.5 | Comparacion pareada |
-|---|---:|---:|---:|---|
-| Pipeline base de gate 1, float32, 512 tokens | 411 instancias (las que deja el control de contaminación) | 178 | 145 | 61 victorias, 28 derrotas, +0,0803, sign p 0,00061 |
-| La misma | 500 instancias | 219 | 181 | 73 victorias, 35 derrotas, sign p 0,00033 |
-| Réplica del camino publicado del motor Black Window, filas int4, cada modelo con la media que el motor le asigna | 411 | 230 | 192 | 67 victorias, 29 derrotas, +0,0925, sign p 0,00013 |
-| La misma | 500 | 278 | 230 | 82 victorias, 34 derrotas, sign p 0,00001 |
-| El mismo camino, cada modelo con su propia media de código | 411 | 221 | 180 | 70 victorias, 29 derrotas, +0,0998, sign p 0,00005 |
-| Motor en 8234be7, cuyo bonus léxico penaliza a ambos modelos, cada uno con su media enviada | 411 | 207 | 158 | 69 victorias, 20 derrotas, +0,1192, sign p inferior a 0,00001 |
-
-Code search, CoIR nDCG@10 (sonda sobre 144.461 consultas):
-
-| Metrica | Este modelo | bge-small-en-v1.5 |
-|---|---:|---:|
-| CoIR nDCG@10 | 0,5758 | 0,4673 |
-
-Efecto del centrado (coseno medio por pares, sin centrar y con cada media):
-
-| Corpus | Sin centrar | Con la media enviada |
-|---|---:|---:|
-| 20.000 pasajes de código | 0,2192 (bge-small: 0,6233) | 0,1314 |
-| Resúmenes de scifact | no disponible | 0,2462 |
-| Captions de COCO | no disponible | 0,1345 |
-| Párrafos de wikitext | no disponible | 0,0565 |
-
-Una media ajustada en un dominio corrige de menos en otro: sobre 5.000 captions de COCO, el coseno medio por pares es 0,2865 tras aplicar la media de código y 0,0286 tras aplicar la media de captions. Para ranking, el centrado no aporta ganancia según el autor: en SWE-bench dentro del motor con la media de código, ordenar por coseno bruto en lugar de por la puntuación centrada da 274 frente a 269 de 500 (24 victorias, 19 derrotas, sign p 0,54); en scifact, el centrado con la media enviada cuesta 0,0057 de nDCG@10 (0,7150 en bruto, 0,7093 centrado).
+| Benchmark | Poblacion | Este modelo | bge-small-en-v1.5 | Diferencia pareada |
+|---|---|---|---|---|
+| SWE-bench Verified, recall@1, pipeline base float32 512 tokens | 411 instancias | 178 | 145 | +0,0803 (61 victorias, 28 derrotas, p=0,00061) |
+| SWE-bench Verified, mismo pipeline | 500 instancias | 219 | 181 | 73 victorias, 35 derrotas, p=0,00033 |
+| SWE-bench Verified, ruta del motor Black Window, filas int4 | 411 instancias | 230 | 192 | +0,0925 (67 victorias, 29 derrotas, p=0,00013) |
+| SWE-bench Verified, misma ruta | 500 instancias | 278 | 230 | 82 victorias, 34 derrotas, p=0,00001 |
+| SWE-bench Verified, media de código propia | 411 instancias | 221 | 180 | +0,0998 (70 victorias, 29 derrotas, p=0,00005) |
+| CoIR, nDCG@10 | 144.461 queries | 0,5758 | 0,4673 | no disponible |
+| scifact, nDCG@10 (crudo) | no disponible | 0,7150 | no disponible | no disponible |
+| scifact, nDCG@10 (centrado) | no disponible | 0,7093 | no disponible | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo aritmético a partir de 33,36 M de parámetros, no publicado por el autor): en torno a 133 MB en fp32, 67 MB en f16 y 17 MB en int4, más el overhead del entorno de ejecución.
-- GPU recomendadas: no se especifican en la información disponible. Por tamaño, no requiere A100 ni H100; cualquier GPU con al menos 1 GB de VRAM libre es suficiente.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual, y también en CPU. El repositorio completo ocupa 0,4 GB.
-- Opciones de despliegue: sentence-transformers (versiones 5.1.0 y 6.0.1 probadas), transformers.js 3.7.1 con dtype fp32 y pooling CLS, llama.cpp con el GGUF f16 (convertido con el conversor del commit 465e49b9c, con pooling CLS y normalizado), ONNX, y compatibilidad declarada con text-embeddings-inference y endpoints. El soporte de vLLM u Ollama no está confirmado en la información disponible.
-- Fidelidad numérica verificada: en llama.cpp a 256 tokens con [SEP] conservado, el coseno mínimo frente a PyTorch float32 es 0,9999957 sobre 2.000 textos; en transformers.js 3.7.1, sobre 13 de 200 textos largos, el coseno mínimo frente a PyTorch es 0,99640 (0,99715 en bge-small con la misma librería).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (33,4 M de parámetros, ~134 MB de pesos), menos de 70 MB en f16.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en RTX 3060, RTX 4090, e incluso en CPU.
+- Cabe en cualquier GPU consumer y en CPU para volúmenes moderados de indexación.
+- Opciones de despliegue: `sentence-transformers` (5.1.0 y 6.0.1), `transformers.js` 3.7.1, llama.cpp (commit 465e49b9c para el GGUF f16), text-embeddings-inference y endpoints compatibles.
+- Latencia y throughput: no se publican cifras de latencia o throughput en la información disponible. El tamaño reducido sugiere inferencia en milisegundos por lote en GPU consumer, pero no hay medición oficial.
+- Precisión numérica: el GGUF f16 iguala a PyTorch float32 con coseno mínimo de 0,9999957 sobre 2.000 textos; transformers.js iguala a PyTorch con coseno mínimo de 0,99999988 sobre 200 textos usando la ruta `embedKeepSep`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Dimension de embedding | Contexto | SWE-bench Verified recall@1 (411) | CoIR nDCG@10 | Licencia | Idiomas |
-|---|---:|---:|---:|---:|---:|---|---|
-| motherlode-code-small-en-v0.1 | 33,4 M | 384 | 512 | 178 | 0,5758 | BUSL-1.1 | inglés |
-| BAAI/bge-small-en-v1.5 | idéntico (es el modelo base; la media parámetro a parámetro exige las mismas formas) | 384 | 512 | 145 | 0,4673 | no disponible | inglés |
-| gte-modernbert-base | aproximadamente 4,5 veces mayor según la model card | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-| CompendiumLabs/bge-small-en-v1.5-gguf | no disponible | 384 (heredada de bge-small) | no disponible | no disponible | no disponible | no disponible | inglés |
+| Modelo | Parametros | Contexto | Dimension | CoIR nDCG@10 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| motherlode-code-small-en-v0.1 | 33,4 M | 512 | 384 | 0,5758 | BUSL-1.1 | Hugging Face, ONNX, GGUF |
+| BAAI/bge-small-en-v1.5 | 33,4 M | 512 | 384 | 0,4673 | MIT | Hugging Face, amplia adopción |
+| gte-modernbert-base | ~150 M (4,5x) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| CompendiumLabs/bge-small-en-v1.5-gguf | 33,4 M | 512 | 384 | no disponible | no disponible | GGUF f16 |
 
-La comparación con gte-modernbert-base solo está documentada como objetivo de destilación geométrica, no como referencia de rendimiento. Con CompendiumLabs/bge-small-en-v1.5-gguf la única comparación publicada es de fidelidad numérica: 0,9999966 de coseno mínimo frente a PyTorch float32, frente a 0,9999957 del GGUF f16 de este modelo.
+La comparación principal es con bge-small-en-v1.5, del que hereda arquitectura y tokenizador. La mejora en CoIR (+0,1085 nDCG@10) y en SWE-bench recall@1 (+0,08 a +0,10 según configuración) es consistente y estadísticamente significativa en las comparaciones pareadas publicadas. Frente a gte-modernbert-base, el modelo busca aproximar su geometría con 4,5 veces menos parámetros, aunque no se publican métricas directas de esa comparación.
 
 ## Limitaciones y advertencias
 
-- Licencia BUSL-1.1: no es una licencia de código abierto permisiva. La model card enlaza un fichero LICENSE y no detalla los términos, la fecha de cambio ni los límites de uso en producción, por lo que hay que leer el texto completo de la licencia antes de cualquier uso comercial.
-- Idioma único: solo inglés. No hay soporte multilingüe ni evaluación en otros idiomas.
-- Ventana de 512 tokens por pasaje. transformers.js 3.7.1 trunca el texto después de añadir los tokens especiales y pierde el [SEP] final, lo que afecta a 13 de 200 textos de prueba y baja el coseno mínimo frente a PyTorch a 0,99640. Para reproducir PyTorch hay que tokenizar sin tokens especiales, cortar en 510, añadir [CLS] y [SEP] y normalizar la fila CLS.
-- El centrado es delicado: una media ajustada en un dominio corrige de menos en otro (0,2865 frente a 0,0286 sobre captions de COCO según la media usada) y, para ranking, el centrado no mejora los resultados en las pruebas publicadas (274 frente a 269 de 500 en SWE-bench, sign p 0,54; y una pérdida de 0,0057 de nDCG@10 en scifact).
-- No es un modelo generativo. No genera texto ni código, no hace tool calling, no soporta agentes ni razonamiento multi-paso. Cualquier expectativa en ese sentido es incorrecta.
-- Riesgo de falsos positivos en recuperación: como todo modelo de embeddings, puede devolver pasajes semánticamente próximos pero irrelevantes. No hay estimaciones publicadas de tasa de error fuera de las tareas medidas.
-- Sesgos: no hay información disponible sobre evaluación de sesgos ni sobre la composición del corpus de entrenamiento, que no se documenta.
-- Reproducibilidad: los resultados de SWE-bench dependen de un motor concreto (Black Window) y de commits específicos (94a8e7b, 8234be7, 465e49b9c en llama.cpp). Fuera de ese pipeline los números pueden no replicarse.
-- Validación externa: el modelo tenía 0 descargas y 0 "me gusta" en el momento del registro y todos los resultados proceden de mediciones del propio autor, aunque acompañadas de un conjunto de evidencia por instancia.
+- Solo soporta inglés; no hay capacidades multilingües declaradas.
+- Es un encoder de similitud, no un modelo generativo: no produce texto, no hace tool calling ni razonamiento multi-paso.
+- Contexto limitado a 512 tokens por pasaje; textos más largos se truncan. En transformers.js 3.7.1 se pierde el token [SEP] final, con coseno mínimo de 0,99640 frente a PyTorch en textos largos.
+- Licencia BUSL-1.1: restricciones para uso comercial; es necesario revisar el fichero LICENSE del repositorio antes de desplegar en producción.
+- Riesgo de alucinación no aplica directamente (no genera texto), pero sí puede recuperar pasajes irrelevantes con alta similitud coseno si no se calibra el umbral.
+- Los embeddings presentan anisotropía: la media de cosenos crudos es 0,2192 sobre pasajes de código, lo que puede inflar similitudes. El centrado corrige esto pero no mejora el ranking (en scifact cuesta 0,0057 nDCG@10).
+- Un vector de centrado ajustado en un dominio subcorrige otro: sobre captions COCO, el coseno medio es 0,2865 tras el centrado con media de código y 0,0286 tras el centrado con media de captions.
+- El modelo es un *model soup*; no se documentan sesgos específicos más allá de los heredados del corpus de entrenamiento (no detallado).
+- No se publican datos sobre composición del dataset de entrenamiento ni número de tokens, lo que limita la reproducibilidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RiverRider/motherlode-code-small-en-v0.1
-- Conjunto de evidencia por instancia: https://huggingface.co/datasets/RiverRider/motherlode-code-small-en-v0.1-evidence
+- Dataset de evidencia por instancia: https://huggingface.co/datasets/RiverRider/motherlode-code-small-en-v0.1-evidence
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
-- Referencia arXiv incluida en las etiquetas del modelo: https://arxiv.org/abs/2407.02883
-- Autor en Hugging Face: https://huggingface.co/RiverRider
-- Referencia de fidelidad GGUF citada en la model card: https://huggingface.co/CompendiumLabs/bge-small-en-v1.5-gguf
-- La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a otros proyectos del mismo autor (zooL4nD3r-v0.1), a agentes de código no relacionados (smallcode, MiMo Code) y a contenido sin relación con el modelo.
+- Modelo de referencia geométrica: https://huggingface.co/Alibaba-NLP/gte-modernbert-base
+- GGUF de referencia para comparación: https://huggingface.co/CompendiumLabs/bge-small-en-v1.5-gguf
+- Paper citado (arXiv:2407.02883): https://arxiv.org/abs/2407.02883
+- Repositorio llama.cpp (commit 465e49b9c): https://github.com/ggml-org/llama.cpp
+- Librería sentence-transformers: https://github.com/UKPLab/sentence-transformers
+- Librería transformers.js: https://github.com/huggingface/transformers.js

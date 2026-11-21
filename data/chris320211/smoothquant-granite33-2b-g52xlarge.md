@@ -2,112 +2,104 @@
 
 ## Resumen
 
-`smoothquant-granite33-2b-g52xlarge` es un derivado cuantizado del modelo de instrucciones `ibm-granite/granite-3.3-2b-instruct` de IBM, publicado por el usuario `chris320211`. No se trata de un checkpoint fp16 alojado en el Hub, sino de un artefacto empaquetado para ejecución generado por el job `20260920T012426Z-d2f5c6` dentro de un pipeline denominado *quant-agent*. La técnica aplicada es SmoothQuant, una familia de cuantización post-entrenamiento que cuantiza pesos y activaciones.
+SmoothQuant granite33-2b g52xlarge es un artefacto de cuantizacion derivado de `ibm-granite/granite-3.3-2b-instruct`, publicado por el usuario `chris320211` bajo el ecosistema QuantPort. Aplica la tecnica SmoothQuant (cuantizacion W8A8, pesos y activaciones a 8 bits) sobre el modelo instruct de IBM, con el objetivo de reducir el uso de VRAM y aumentar el throughput de inferencia sin degradar de forma apreciable la calidad. Segun las metricas reportadas en la model card, la perplejidad en WikiText-2 pasa de 7,715887 (fp16) a 7,762474 (cuantizado), una relacion de 1,006038, mientras que el pico de VRAM baja de 5,641 GB a 3,377 GB y el throughput sube de 7.184,6 a 9.501,7 tokens/s en prefill de 2048 tokens sobre una NVIDIA A10G.
 
-El interés del artefacto es su relación calidad/coste medida de forma explícita contra el snapshot fp16 original sobre WikiText-2: la perplejidad pasa de 7,715887 a 7,762474 (ratio 1,006038, marcado como `quality_ok=True`), la VRAM pico baja de 5,641 GB a 3,377 GB y el throughput de prefill sube de 7.184,6 a 9.501,7 tokens/s, todo ello medido en una NVIDIA A10G (instancia AWS `g5.2xlarge`). Es, por tanto, un ejemplo de cuantización con ganancia neta en memoria y velocidad a cambio de una degradación muy pequeña de la perplejidad.
+El modelo base, Granite 3.3 2B Instruct, es un transformer decoder-only de 2.000 millones de parametros desarrollado por IBM, orientado a generacion de texto, conversacion y tareas de instrucciones, con licencia Apache 2.0. Este derivado hereda esa licencia y anade la del repositorio del metodo de cuantizacion. La relevancia actual del artefacto es doble: por un lado, documenta un flujo reproducible de cuantizacion W8A8 sobre un modelo instruct pequeno; por otro, sirve como referencia de metricas de calidad y rendimiento para quienes evaluan tecnicas de cuantizacion post-entrenamiento en hardware de gama media.
 
-La contrapartida principal es que no es un reemplazo directo: la model card advierte explícitamente que no se puede cargar con `AutoModelForCausalLM.from_pretrained` y que requiere el adaptador `quant_agent_inference_adapter.py` junto con el repositorio del método en la variable `QUANT_AGENT_METHOD_REPO`. La documentación es escasa (no declara idiomas, contexto, número exacto de parámetros ni ancho de bits), el modelo acumula 262 descargas y 0 likes, y la licencia MIT declarada convive con una referencia contradictoria a «MIT for Phi-3» y con la licencia del repositorio del método.
+Es fundamental advertir que este repositorio no contiene los pesos cuantizados. El fichero `packed_w8a8.pt` no se incluyo en la subida original y el artefacto original ya no es accesible. El repositorio solo incluye configuracion, tokenizer, script de carga (`quant_agent_inference_adapter.py`) y las metricas de WikiText-2 del run original. Por tanto, no puede cargarse tal cual: para reproducirlo hay que ejecutar la herramienta `quant-agent` con el comando indicado en la model card.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la ficha del artefacto. Derivado de `ibm-granite/granite-3.3-2b-instruct` (familia IBM Granite 3.3) |
-| Parámetros totales | Aproximadamente 2 000 millones, según la denominación «2b» del modelo base. Cifra exacta no disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | SmoothQuant (etiquetas `quantized`, `quant-agent`, `smoothquant`). El ancho de bits y el esquema de calibración no se especifican |
-| Idiomas soportados | No disponible |
-| Licencia | MIT (metadatos del Hub). La model card añade la licencia del repositorio del método y menciona «MIT for Phi-3» de forma contradictoria |
-| Formato de pesos | Artefacto empaquetado propio del pipeline *quant-agent*, no un checkpoint fp16 safetensors cargable con `from_pretrained`. Incluye `quantization_config.json` y `quant_agent_inference_adapter.py` |
-| Modelo base | `ibm-granite/granite-3.3-2b-instruct` |
-| Autor | `chris320211` |
-| Pipeline | `text-generation` |
-| Librería declarada | `transformers` |
-| Fecha de creación / actualización | 2026-09-20 / 2026-09-20 |
-| Descargas / likes | 262 / 0 |
+| Arquitectura | Transformer decoder-only (heredada de Granite 3.3 2B Instruct); cuantizacion SmoothQuant W8A8 |
+| Parametros totales | 2.000 millones (modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | W8A8 (pesos y activaciones a 8 bits) mediante SmoothQuant; artefacto empaquetado `packed_w8a8.pt` |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (heredada del modelo base) mas licencia del repositorio del metodo |
+| Formato de pesos | artefacto empaquetado `.pt` (`packed_w8a8.pt`), no safetensors ni GGUF; no es un checkpoint `AutoModelForCausalLM` |
+| Modelo base | ibm-granite/granite-3.3-2b-instruct |
+| Job de cuantizacion | 20260920T012426Z-d2f5c6 |
+| Hardware de referencia | NVIDIA A10G (instancia g5.2xlarge) |
+| Libreria | transformers (con adaptador de carga propio) |
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre la arquitectura interna en la ficha del artefacto: se describe únicamente como derivado cuantizado de `granite-3.3-2b-instruct`. La transformación aplicada es SmoothQuant, un método de cuantización post-entrenamiento que migra los valores atípicos de las activaciones hacia los pesos mediante escalado por canal antes de cuantizar; esto permite cuantizar simultáneamente pesos y activaciones con una pérdida de precisión reducida. La ficha no indica el número de bits (típicamente 8 en SmoothQuant W8A8), ni el dataset de calibración, ni si alguna capa permanece en fp16.
+El modelo base es un transformer decoder-only de 2.000 millones de parametros de la familia Granite 3.3 de IBM, afinado para instrucciones y conversacion. Sobre el se aplica SmoothQuant, una tecnica de cuantizacion post-entrenamiento que migra la dificultad de cuantizacion de las activaciones hacia los pesos mediante un factor de escala por canal, permitiendo representar tanto pesos como activaciones en INT8 (W8A8) y acelerar la inferencia en GPUs con soporte de kernels enteros. El artefacto resultante no es un checkpoint estandar de Hugging Face, sino un paquete de runtime generado por QuantPort y cargado mediante un adaptador especifico.
 
-Tampoco se documentan los datos de entrenamiento del modelo base (número de tokens, composición del corpus, uso de RLHF o DPO), ya que el artefacto es exclusivamente el resultado de una cuantización posterior: no hay entrenamiento adicional, destilado ni ajuste fino por parte de `chris320211`. La única evaluación publicada es la de perplejidad y *negative log-likelihood* sobre el conjunto de test de WikiText-2 con ventanas de 2048 tokens y 65 504 tokens evaluados, comparada contra el snapshot fp16 original medida en la misma GPU.
+No se dispone de informacion sobre el dataset de calibracion, el numero de muestras usadas ni los hiperparametros de SmoothQuant empleados en este run. La unica evaluacion documentada es la de WikiText-2 (split de test, ventanas de 2048 tokens, 65.504 tokens), comparada contra el snapshot fp16 original. El autor reporta `quality_ok=True` con una relacion de perplejidad de 1,006038, ademas de mejoras en throughput y VRAM. No se mencionan etapas de RLHF, DPO ni reentrenamiento adicional: la intervencion es puramente de cuantizacion.
 
 ## Capacidades
 
-La información disponible no documenta capacidades funcionales del artefacto más allá de lo heredado del modelo base. En concreto:
-
-- Generación de texto: es el pipeline declarado (`text-generation`) y la etiqueta `conversational` figura en los metadatos, por lo que se orienta a diálogo e instrucciones.
-- Respuesta a instrucciones: el modelo base es una variante *instruct*, aunque la ficha del artefacto no verifica que el comportamiento instruct se preserve tras la cuantización.
-- Razonamiento, código y matemáticas: no disponible.
-- *Tool calling* / *function calling*: no documentado en la información proporcionada; debe verificarse contra la model card del modelo base de IBM.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas y la única evaluación es en inglés).
-- Capacidades especiales (modo *thinking*, visión, audio): no disponible; no se mencionan.
+- Generacion de texto y conversacion multi-turno, heredadas del modelo instruct base.
+- Seguimiento de instrucciones y respuesta a prompts conversacionales.
+- Razonamiento basico y tareas de conocimiento general propias de un modelo de 2B.
+- Generacion de codigo y matematicas a nivel de modelo pequeno (no se aportan evaluaciones especificas en este artefacto).
+- Inferencia cuantizada W8A8 con mayor throughput y menor huella de VRAM que el fp16 equivalente.
+- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada para este derivado.
+- Modo thinking, vision o audio: no disponible.
+- Capacidades multilingues: no disponible (idiomas no declarados).
 
 ## Casos de uso
 
-- Servicio de generación de texto con restricción de memoria: con 3,377 GB de VRAM pico medida en prefill de 2048 tokens (frente a 5,641 GB del fp16), permite levantar el endpoint en GPUs donde el checkpoint original no cabría junto al resto del sistema.
-- Despliegue en instancias cloud económicas: la medición de referencia se hizo en una AWS `g5.2xlarge` con A10G, un perfil habitual para endpoints de bajo coste; el ahorro de ~40 % de VRAM permite mayor densidad de réplicas por nodo.
-- Inferencia por lotes de alto throughput: los 9.501,7 tokens/s de prefill (frente a 7.184,6 del fp16) lo hacen adecuado para *batch scoring* de grandes volúmenes de documentos donde el coste dominante es el prefill.
-- Chatbots conversacionales de dominio general: al ser un derivado de un modelo *instruct* de 2B con etiqueta `conversational`, encaja en asistentes ligeros siempre que la calidad se valide en el dominio objetivo, ya que solo hay perplejidad en WikiText-2 como evidencia.
-- Evaluación de pipelines de cuantización en investigación: el artefacto es un caso reproducible de SmoothQuant con `quantization_config.json`, adaptador y `benchmark.json` de referencia, útil para comparar métodos de cuantización bajo la misma GPU y ventana de contexto.
-- Prototipado local en estación de trabajo: con un pico de 3,377 GB, es plausible ejecutarlo en GPUs de consumo de 8 GB o más (estimación a partir del pico medido), siempre que se instale el adaptador propietario en lugar de usar `transformers` estándar.
-- Extracción y clasificación de texto en pipelines internos: tareas de generación condicionada de baja latencia donde una degradación de perplejidad del 0,6 % es aceptable a cambio de reducir memoria y aumentar throughput.
-- Contraste A/B contra el modelo base fp16: sirve como referencia cuantizada en experimentos que midan el impacto real de SmoothQuant en tareas *downstream*, no solo en perplejidad.
+- Evaluacion de tecnicas de cuantizacion: usar este artefacto como referencia reproducible para comparar SmoothQuant W8A8 frente a fp16 en perplejidad, VRAM y throughput sobre WikiText-2, con las cifras ya publicadas como linea base.
+- Despliegue en GPU de gama media con VRAM limitada: el pico de 3,377 GB en A10G permite servir el modelo en tarjetas de 8-12 GB junto con el resto del stack, algo mas ajustado en fp16 (5,641 GB).
+- Servicio de chat ligero: al ser un derivado instruct de 2B, encaja en asistentes conversacionales de bajo coste donde la latencia y el coste por token importan mas que el rendimiento en tareas complejas.
+- Procesamiento por lotes de texto: el throughput de 9.501,7 tokens/s en prefill de 2048 tokens sobre A10G lo hace util para clasificacion, resumen o extraccion sobre volumenes moderados de documentos.
+- Pipeline de cuantizacion automatizada: sirve como ejemplo de integracion de QuantPort y `quant-agent` en flujos de CI que generen y validen variantes cuantizadas de modelos abiertos.
+- Investigacion sobre degradacion por cuantizacion: la metrica `ppl_ratio` de 1,006038 permite estudiar el impacto de W8A8 en modelos de 2B y calibrar umbrales de aceptacion en produccion.
+- Prototipado en entornos con presupuesto de GPU ajustado: permite iterar sobre prompts y plantillas de chat sin reservar instancias grandes, antes de pasar a un modelo mayor.
 
 ## Benchmarks y rendimiento
 
-Único benchmark publicado: WikiText-2 (test), ventanas de 2048 tokens, 65 504 tokens evaluados, medido en NVIDIA A10G (`g5.2xlarge`) contra el snapshot fp16 original.
+Evaluacion en WikiText-2 (test, ventanas de 2048 tokens, 65.504 tokens) sobre NVIDIA A10G (g5.2xlarge), segun `jobs/20260920T012426Z-d2f5c6/benchmark.json`:
 
-| Métrica | Cuantizado | Snapshot fp16 | Diferencia |
-|---|---:|---:|---:|
-| Perplejidad | 7,762474 | 7,715887 | +0,60 % (ratio 1,006038) |
-| NLL loss | 2,049301 | 2,043281 | +0,29 % |
-| Tokens/s (prefill 2048, tras warmup) | 9.501,7 | 7.184,6 | +32,2 % |
-| VRAM pico (GB) | 3,377 | 5,641 | −40,1 % |
+| Metrica | Cuantizado | fp16 (snapshot) |
+|---|---:|---:|
+| Perplejidad | 7,762474 | 7,715887 |
+| NLL loss | 2,049301 | 2,043281 |
+| Tokens/s (prefill 2048, tras warmup) | 9.501,7 | 7.184,6 |
+| Pico de VRAM (GB) | 3,377 | 5,641 |
+| Relacion de perplejidad (`ppl_ratio`) | 1,006038 | 1,000000 (referencia) |
 
-Indicadores declarados por el autor: `ppl_ratio: 1.006038`, `quality_ok=True`, `improved_throughput=True`, `improved_vram=True`. Las columnas de diferencia porcentual son cálculo derivado de los valores de la tabla original.
-
-No hay resultados publicados de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna tarea *downstream* en la información disponible.
+Indicadores del run: `quality_ok=True`, `improved_throughput=True`, `improved_vram=True`. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM pico medida: 3,377 GB con ventana de 2048 tokens en NVIDIA A10G; el fp16 equivalente requiere 5,641 GB. La ficha no desglosa cuánto corresponde a pesos y cuánto a activaciones del KV cache.
-- GPU de referencia: NVIDIA A10G (24 GB), instancia AWS `g5.2xlarge`.
-- GPU de consumo: con ese pico, es plausible en tarjetas de 8 GB o más (RTX 3060 12 GB, RTX 4060 8 GB, RTX 2070 8 GB); es una estimación a partir del pico medido y no un dato publicado. Contextos superiores a 2048 tokens incrementarán la memoria de activaciones.
-- GPU de datacenter: A10G, L4 y A100/H100 sin problema de capacidad; el cuello de botella sería el soporte de runtime, no la VRAM.
-- Opciones de despliegue: no es un checkpoint *drop-in*. Requiere `quant_agent_inference_adapter.py` y el repositorio del método accesible vía `QUANT_AGENT_METHOD_REPO`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con `AutoModelForCausalLM.from_pretrained`.
-- Formatos alternativos: no se publica GGUF ni AWQ/GPTQ; el artefacto es exclusivamente el paquete del pipeline *quant-agent*.
-- Throughput: 9.501,7 tokens/s en prefill de 2048 tokens tras warmup. No hay datos de velocidad de decodificación (tokens/s de generación) ni de latencia por token.
-- Nota: los metadatos incluyen la etiqueta `endpoints_compatible`, pero la propia model card indica que el artefacto no es cargable de forma estándar; conviene verificar esa compatibilidad antes de planificar un despliegue gestionado.
+- VRAM estimada en inferencia: 3,377 GB de pico medido en A10G para el artefacto cuantizado W8A8; 5,641 GB para el snapshot fp16 de referencia.
+- GPU de referencia: NVIDIA A10G (24 GB) en instancia AWS g5.2xlarge.
+- Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060 Ti, RTX 4070 y superiores), aunque no se aportan mediciones en estas GPUs.
+- GPUs de datacenter recomendadas: A10G, L4, A100, H100; la aceleracion W8A8 depende de kernels enteros disponibles en la GPU.
+- Opciones de despliegue: no es compatible con `AutoModelForCausalLM.from_pretrained`, vLLM, llama.cpp, Ollama ni TGI de forma directa; requiere el adaptador `quant_agent_inference_adapter.py` y el repositorio del metodo en `QUANT_AGENT_METHOD_REPO`.
+- Latencia y throughput: 9.501,7 tokens/s en prefill de 2048 tokens sobre A10G (medido tras warmup); no se reportan cifras de decodificacion ni latencia por token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | PPL WikiText-2 (2048) | VRAM pico | Licencia | Disponibilidad |
-|---|---|---:|---:|---:|---|---|
-| `chris320211/smoothquant-granite33-2b-g52xlarge` | ~2B (denominación del base) | No disponible | 7,762474 | 3,377 GB (A10G) | MIT (con reservas) | Hub, requiere adaptador propio |
-| `ibm-granite/granite-3.3-2b-instruct` (fp16) | ~2B | No disponible | 7,715887 | 5,641 GB (A10G) | No disponible en la información proporcionada | Hub, carga estándar con `transformers` |
-| Otras variantes cuantizadas del mismo base (GGUF, AWQ, GPTQ) | ~2B | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad de pesos |
+|---|---|---|---|---|---|
+| SmoothQuant granite33-2b g52xlarge (este) | 2B | no disponible | W8A8 SmoothQuant | apache-2.0 | No: pesos no incluidos, solo config y metricas |
+| ibm-granite/granite-3.3-2b-instruct | 2B | no disponible en esta ficha | fp16 nativo | apache-2.0 | Si, checkpoint completo en Hugging Face |
+| Alternativas cuantizadas W8A8 de modelos 2B | ~2B | no disponible | W8A8 | variable | no disponible |
 
-La comparación cuantitativa solo es posible contra el snapshot fp16 del mismo modelo base, que es la referencia que el autor incluye. No se dispone de datos de alternativas de cuantización equivalentes ni de otros modelos de ~2B en la información proporcionada.
+La comparacion relevante es contra el modelo base sin cuantizar: este derivado mejora throughput (+32,2 % en tokens/s) y reduce VRAM (-40,1 %) a costa de un incremento de perplejidad del 0,6 %. No se dispone de datos de benchmarks de tareas para comparar con otros modelos de 2B.
 
 ## Limitaciones y advertencias
 
-- Calidad evaluada únicamente con perplejidad y NLL sobre WikiText-2 (inglés, dominio enciclopédico). No hay evaluación en tareas generativas, razonamiento, código o matemáticas, por lo que la degradación funcional real es desconocida.
-- Degradación medida pequeña pero no nula: +0,60 % de perplejidad y +0,29 % de NLL respecto al fp16.
-- Riesgo de alucinación: no medido ni documentado; es una limitación heredada del modelo base y no se cuantifica en la ficha.
-- Sesgos: no documentados.
-- Idiomas: no se declaran idiomas soportados; la única evidencia empírica es en inglés (WikiText-2).
-- Contexto: la longitud de contexto no se especifica y la medición solo cubre ventanas de 2048 tokens; se desconoce el comportamiento con contextos largos.
-- Compatibilidad: no es un checkpoint estándar de `transformers`. Requiere el adaptador incluido y el repositorio del método en `QUANT_AGENT_METHOD_REPO`, lo que dificulta la integración en vLLM, llama.cpp, Ollama o TGI.
-- Licencia: se declara MIT, pero la model card mezcla «MIT for Phi-3» (referencia ajena al modelo base, que es Granite) y la licencia del repositorio del método. Antes de uso comercial hay que revisar `LICENSE` y `NOTICE.md` del snapshot y la licencia del repositorio del método.
-- Madurez: creado y actualizado el 2026-09-20, 262 descargas y 0 likes; no hay validación independiente ni informes de terceros.
-- Trazabilidad: los pesos provienen del job `20260920T012426Z-d2f5c6` y las métricas de `benchmark.json`; no se detalla el dataset de calibración ni si hay capas en precisión completa.
-- Los resultados de búsqueda web disponibles no contienen información técnica sobre este modelo; solo referencias legales sin relación.
+- Los pesos cuantizados no estan disponibles: el repositorio no puede cargarse tal cual y solo contiene configuracion, tokenizer, adaptador y metricas.
+- No es un checkpoint estandar de transformers: no funciona con `from_pretrained`, vLLM, llama.cpp, Ollama ni TGI sin trabajo adicional.
+- La reproducibilidad depende de `quant-agent` y del repositorio del metodo QuantPort, cuyo estado y version no se detallan.
+- La evaluacion se limita a perplejidad y NLL en WikiText-2; no hay benchmarks de tareas (MMLU, HumanEval, GSM8K) ni evaluaciones de seguridad o sesgos.
+- Riesgo de alucinacion inherente a un modelo de 2B; la cuantizacion puede amplificar errores en tareas sensibles a la precision numerica.
+- Idiomas soportados no declarados; el comportamiento multilingue no esta verificado.
+- Longitud de contexto no documentada en este artefacto; conviene consultar la del modelo base antes de usarlo en conversaciones largas.
+- Uso comercial permitido por Apache 2.0, pero sujeto tambien a la licencia del repositorio del metodo; conservar `LICENSE` y `NOTICE.md` del snapshot cuando existan.
+- Sin likes ni validacion de la comunidad (0 likes, 824 descargas); tratar las metricas como reportadas por el autor y no verificadas de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chris320211/smoothquant-granite33-2b-g52xlarge
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-2b-instruct
-- Referencia del método SmoothQuant (no incluida en las fuentes proporcionadas; verificar antes de citar): https://arxiv.org/abs/2211.10438
-- No se han encontrado otros enlaces relevantes (papers, repos, demos o blogs) en los resultados de búsqueda web disponibles.
+- Repositorio QuantPort: https://github.com/chris320211/QuantPort
+- Herramienta quant-agent: https://github.com/chris320211/model-quantization-agent

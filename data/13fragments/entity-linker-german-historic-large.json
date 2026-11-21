@@ -5,7 +5,7 @@
   "author": "13fragments",
   "url": "https://huggingface.co/13fragments/entity-linker-german-historic-large",
   "created_at": "2026-11-20T16:24:38.000Z",
-  "updated_at": "2026-11-20T16:24:50.000Z",
+  "updated_at": "2026-11-20T22:47:19.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

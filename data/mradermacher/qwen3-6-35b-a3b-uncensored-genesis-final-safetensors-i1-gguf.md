@@ -2,53 +2,50 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo Qwen3.6-35B-A3B-Uncensored-Genesis-Final, un modelo de lenguaje de arquitectura MoE (mixture of experts) con aproximadamente 35.505 millones de parámetros totales, publicado originalmente por el usuario LuffyTheFox. Las cuantizaciones han sido generadas por mradermacher mediante el método imatrix (importance matrix), lo que produce versiones de menor precisión con una pérdida de calidad más controlada que las cuantizaciones estáticas convencionales. El modelo se distribuye con licencia Apache 2.0 y está etiquetado como multimodal, con soporte declarado de visión, además de compatibilidad con transformers, vLLM y llama.cpp.
+Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF es una cuantizacion GGUF del modelo LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors, publicada por el usuario mradermacher. Se trata de un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 35.505.251.456 parametros totales y 3.000 millones de parametros activos por token (segun la nomenclatura A3B del nombre), derivado de la familia Qwen3.6/Qwen3.5 y con capacidades multimodales (vision) declaradas en sus etiquetas.
 
-La relevancia de este repositorio es práctica: el modelo base en bfloat16 ocupa del orden de 71 GB, lo que lo hace inviable en hardware de consumo. Las cuantizaciones GGUF aquí publicadas reducen el peso a un rango que va desde aproximadamente 13,3 GB (i1-Q2_K) hasta más de 25 GB (Q5_K_M, Q6_K), permitiendo su despliegue en GPUs de consumo como la RTX 4090 o en configuraciones con memoria unificada. Al tratarse de una variante "uncensored" (sin alineamiento restrictivo declarado), resulta de interés para investigación sobre generación sin filtros, aunque esto conlleva implicaciones de seguridad que se detallan más abajo.
+El modelo base es una variante "uncensored" (sin alineamiento restrictivo) afinada por LuffyTheFox sobre la arquitectura Qwen, y esta cuantizacion emplea el formato i1 (imatrix) de mradermacher, que aplica una matriz de importancia para preservar la calidad en cuantizaciones de baja precision. El repositorio incluye 17 variantes de cuantizacion entre 13,3 GB y 29,3 GB, lo que permite desplegarlo en hardware de consumo.
 
-Se trata, en cualquier caso, de un repositorio con cero descargas y un solo "like" en el momento de la consulta, publicado el 4 de octubre de 2026 y actualizado el mismo día. No hay información publicada sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks.
+Su relevancia actual radica en que ofrece un MoE de 35B con activacion de 3B (eficiente en inferencia) en formato GGUF listo para llama.cpp/Ollama, con licencia Apache 2.0, y con soporte multimodal declarado. No obstante, la model card del cuantizador es puramente tecnica (listado de quants) y no aporta informacion sobre entrenamiento, contexto o benchmarks, por lo que muchos datos de esta ficha quedan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts) basada en transformer, segun etiquetas del repositorio; detalles no disponibles |
-| Parametros totales | 35.505.251.456 (aproximadamente 35,5 mil millones) |
-| Parametros activos | No disponible de forma explicita; la nomenclatura "A3B" del nombre sugiere alrededor de 3.000 millones de parametros activos |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | i1-Q2_K, Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, small-IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, mas fichero imatrix |
-| Idiomas soportados | Ingles y multilingue (segun etiquetas; sin desglose de idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base esta en safetensors con precision bfloat16 |
-| Vision / multimodal | Si, segun etiquetas; los ficheros mmproj, si existen, estan en el repositorio estatico |
-| Contexto de vLLM / transformers | Etiquetado como compatible con vLLM y transformers para la version bfloat16 |
+| Arquitectura | Mixture of Experts (MoE) tipo transformer, derivada de Qwen3.6/Qwen3.5 (segun etiquetas del autor) |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | 3B (aproximado, segun nomenclatura A3B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_S, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas imatrix base; existen quants estaticos en repositorio separado |
+| Idiomas soportados | en, multilingual |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors y bfloat16 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna mas alla de las etiquetas del repositorio, que indican que se trata de un modelo MoE (mixture of experts) con vision y capacidades multimodales, derivado de la familia Qwen (etiquetas qwen3.6 y qwen3.5). El nombre del modelo, "35B-A3B", sigue la convencion habitual en modelos MoE de indicar parametros totales y parametros activos por token, lo que situaria la activacion en torno a 3.000 millones de parametros, aunque este dato no se confirma de forma explicita en la informacion proporcionada.
+La informacion disponible confirma que el modelo emplea una arquitectura Mixture of Experts con 35,5B parametros totales y aproximadamente 3B activos por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano. Las etiquetas indican herencia de la familia Qwen3.6/Qwen3.5, soporte multimodal (vision) y compatibilidad con transformers y vLLM en su version base en bfloat16.
 
-Tampoco hay datos disponibles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineamiento como RLHF, DPO o similares. La etiqueta "uncensored" y "genesis" en el nombre sugiere que el modelo base fue sometido a un proceso de eliminacion o reduccion de los mecanismos de rechazo y filtrado de contenido, pero no se documenta el procedimiento. La innovacion tecnica relevante de este repositorio concreto no esta en el modelo, sino en el proceso de cuantizacion: el uso de una importance matrix (fichero imatrix) permite ponderar la cuantizacion segun la relevancia estadistica de cada peso, lo que mejora la perplejidad respecto a cuantizaciones estaticas equivalentes en tamano.
+No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el proceso de alineamiento (RLHF/DPO) ni innovaciones tecnicas especificas del modelo base. La model card del cuantizador solo documenta el proceso de cuantizacion: uso de matriz de importancia (imatrix) para generar los quants i1, con la recomendacion habitual de que los quants IQ superan a los no-IQ de tamano similar. El autor menciona agradecimientos a nicoboss por acceso a un supercomputador privado para generar los imatrix.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con etiqueta "conversational" en el repositorio.
-- Razonamiento y generacion de codigo: presumiblemente heredadas del modelo base de la familia Qwen, aunque no se documentan de forma explicita.
-- Procesamiento de vision: el modelo esta etiquetado como vision y multimodal, por lo que se espera soporte de entrada de imagenes junto a texto. No se confirma la naturaleza exacta del encoder visual.
-- Soporte multilingue: etiquetado como "en" y "multilingual", sin lista detallada de idiomas.
-- Compatibilidad con tool calling y agentes: no disponible en la informacion proporcionada.
-- Modo thinking o razonamiento extendido: no disponible.
-- Generacion sin filtros de contenido: la variante "uncensored" implica una reduccion deliberada de las politicas de rechazo del modelo base.
+- Generacion de texto conversacional y multirrol (etiqueta "conversational").
+- Razonamiento y respuesta a instrucciones, presumiblemente heredadas del modelo Qwen base.
+- Capacidades multimodales de vision (etiquetas "vision" y "multimodal").
+- Soporte multilingue (etiqueta "multilingual", aunque solo "en" figura explicitamente en el campo language).
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Variante "uncensored": menor rechazo a contenido sensible, segun la denominacion del autor.
+- No se documenta explicitamente soporte de tool calling, function calling ni modo thinking en la informacion disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar el comportamiento de un LLM sin filtros declarados, comparando sus respuestas con las de variantes alineadas de la misma familia y analizando que tipos de contenido emergen cuando se retiran las capas de rechazo.
-- Despliegue local en estaciones de trabajo con GPU de consumo: gracias a las cuantizaciones i1-Q2_K (13,3 GB) e IQ3/IQ4 (en torno a 15-20 GB), el modelo puede ejecutarse en una RTX 4090 de 24 GB mediante llama.cpp u Ollama, sin necesidad de infraestructura en la nube.
-- Analisis de documentos con componente visual: al estar etiquetado como modelo de vision, puede emplearse para extraer informacion de imagenes o capturas combinadas con texto, siempre que se disponga del fichero mmproj correspondiente y se valide su funcionamiento real.
-- Prototipado de asistentes conversacionales sin restricciones tematicas: util en entornos de investigacion donde se necesita explorar respuestas sobre temas que los modelos alineados rechazan, como analisis de ficcion adulta o discurso sensible dentro de un marco controlado.
-- Generacion de texto creativo sin censura: escritura de narrativa, guiones o contenido de ficcion con tematicas que los modelos con alineamiento estandar suelen declinar.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio publica tanto cuantizaciones estaticas como imatrix, lo que permite medir en un mismo modelo la degradacion de perplejidad segun el tipo y tamano de cuantizacion.
-- Fine-tuning posterior sobre una base ya sin censura: util para investigadores que quieran partir de un checkpoint ya "desinhibido" y aplicar tecnicas de ajuste especificas sin tener que repetir el proceso de eliminacion de filtros.
-- Procesamiento por lotes en servidor con vLLM: la version bfloat16 en safetensors es compatible con vLLM, lo que permite servir el modelo en produccion interna con throughput elevado si se dispone de GPUs de 80 GB o multiples GPUs.
+- Despliegue local en estacion de trabajo: con quants i1-Q4_K_M (21,8 GB) el modelo cabe en GPUs de consumo de 24 GB (RTX 3090/4090) y permite conversacion multirrol sin conexion, gracias a la activacion de solo 3B parametros.
+- Prototipado de asistentes multimodales: la etiqueta vision sugiere uso en tareas de descripcion de imagenes y VQA, aunque la capacidad debe validarse empiricamente al no haber benchmarks publicados.
+- Generacion de texto creativo sin filtros: la variante uncensored es adecuada para escritura de ficcion, guiones o contenido adulto donde los modelos alineados rechazan peticiones.
+- Servicio de inferencia con vLLM: el modelo base en bfloat16 y formato safetensors es compatible con vLLM, lo que permite servir el MoE con throughput alto en GPUs de datacenter (A100/H100) aprovechando la activacion dispersa.
+- Experimentacion en investigacion sobre MoE: util para estudiar el comportamiento de un MoE de 35B con 3B activos en tareas de razonamiento, con la ventaja de disponer de 17 niveles de cuantizacion para analizar la degradacion por precision.
+- Fine-tuning y destilacion: al estar bajo Apache 2.0 y disponible en safetensors, puede servir como base para ajuste fino o para generar datos sinteticos en pipelines propios.
+- Evaluacion de alineamiento: como modelo "uncensored", es util en estudios comparativos sobre sesgos y rechazos frente a modelos alineados.
 
 ## Benchmarks y rendimiento
 
@@ -56,52 +53,46 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las estimaciones de VRAM que siguen son orientativas y se derivan del numero de parametros y del tipo de cuantizacion, no de mediciones publicadas en el repositorio:
-
-- i1-Q2_K: aproximadamente 13,3 GB de peso, segun el README. Cabria en GPUs de 16 GB o superiores, con contexto reducido.
-- IQ2_M, IQ2_XS, IQ2_S: rango estimado de 13 a 15 GB.
-- Q3_K_M, IQ3_M, IQ3_XS: rango estimado de 16 a 18 GB.
-- IQ4_XS, small-IQ4_NL, Q4_K_S: rango estimado de 19 a 20 GB. Ajustado pero viable en una RTX 4090 de 24 GB con contexto moderado.
-- Q4_K_M, Q4_0, Q4_1: rango estimado de 21 a 23 GB.
-- Q5_K_S, Q5_K_M: rango estimado de 24 a 25 GB. Requiere 32 GB de VRAM o reparto entre GPU y CPU.
-- Q6_K: rango estimado de 28 a 30 GB.
-- bfloat16 (modelo base en safetensors): aproximadamente 71 GB de pesos, mas cache KV. Requiere una H100 de 80 GB, A100 de 80 GB, o dos GPUs de 48 GB.
-- GPUs recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4 e inferiores; A6000 o L40S (48 GB) para Q6 y Q8; H100 o A100 de 80 GB para bfloat16; configuraciones multi-GPU para servir en vLLM con contexto largo.
-- Memoria unificada: los equipos con Apple Silicon de 32 GB o mas, o GPUs con memoria compartida, pueden ejecutar cuantizaciones Q4 y Q5 con velocidades inferiores a las de una GPU dedicada.
-- Opciones de despliegue: llama.cpp y llama-server (soporte nativo de GGUF), Ollama mediante Modelfile, LM Studio, koboldcpp, y vLLM para la version bfloat16 en safetensors. Para el modo vision es imprescindible el fichero mmproj, que segun el README se aloja en el repositorio estatico de mradermacher.
-- Latencia y throughput: no disponibles. En un modelo MoE con unos 3.000 millones de parametros activos, el throughput por token deberia ser sustancialmente mayor que el de un modelo denso de 35.000 millones, pero no hay mediciones publicadas que lo confirmen.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - i1-Q2_K: 13,3 GB.
+  - i1-IQ3_S / i1-IQ3_M: 15,7-15,9 GB.
+  - i1-Q4_K_S / i1-Q4_K_M: 20,5-21,8 GB.
+  - i1-Q5_K_M: 25,4 GB.
+  - i1-Q6_K: 29,3 GB.
+- GPU de consumo: los quants Q4 caben en RTX 3090/4090 (24 GB); los Q2/IQ3 caben en GPUs de 16 GB (RTX 4060 Ti 16 GB, RTX 4080) con contexto limitado; los Q5/Q6 requieren 32 GB o reparto CPU/GPU.
+- GPU de datacenter: A100 40/80 GB y H100 permiten ejecutar el modelo base en bfloat16 (aprox. 71 GB para 35,5B parametros) o quants altos con contexto amplio.
+- Opciones de despliegue: llama.cpp y Ollama para los GGUF; vLLM y transformers para el modelo base safetensors; TGI no confirmado.
+- Latencia y throughput: no disponibles. Por la activacion de 3B parametros se espera un throughput superior al de un modelo denso de 35B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks que permitan una comparacion de rendimiento. La comparacion se limita a aspectos de formato y distribucion:
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Final (este) | 35,5B / ~3B | no disponible | Apache 2.0 | GGUF, safetensors | Variante uncensored con vision declarada |
+| Qwen3-30B-A3B (familia Qwen3) | 30,5B / 3,3B | 32.768-131.072 tokens (segun variante) | Apache 2.0 | safetensors, GGUF | MoE de referencia de la familia; contexto y benchmarks publicos |
+| Mixtral 8x7B | 46,7B / 12,9B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | MoE mas antiguo y con mas parametros activos |
+| DeepSeek-V2-Lite | 15,7B / 2,4B | 32.768 tokens | MIT (codigo) / licencia propia | safetensors | MoE eficiente de menor tamano |
 
-| Modelo o repositorio | Parametros | Formato | Licencia | Notas |
-|---|---|---|---|---|
-| Este repositorio (i1-GGUF de mradermacher) | 35,5 mil millones totales | GGUF cuantizado con imatrix | Apache 2.0 | Cuantizaciones ponderadas por importance matrix |
-| LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors | 35,5 mil millones totales | Safetensors, bfloat16 | Apache 2.0 | Modelo base, sin cuantizar |
-| mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-GGUF | 35,5 mil millones totales | GGUF estatico | Apache 2.0 | Incluye los ficheros mmproj para vision, segun el README |
-| Modelos MoE abiertos de la familia Qwen (por ejemplo, Qwen3-30B-A3B) | Variable | Safetensors y GGUF | Variable segun version | Referencia de categoria por tamano y arquitectura, pero sin datos comparativos disponibles en esta informacion |
+La comparacion con Qwen3-30B-A3B es la mas directa por familia y tamano, pero los datos de contexto y rendimiento de este modelo concreto no estan publicados, por lo que la comparacion cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ningun dato publicado de MMLU, HumanEval, GSM8K ni de evaluaciones de vision, por lo que el rendimiento real es desconocido.
-- Falta de documentacion del modelo base: no se detalla la composicion del dataset, el numero de tokens de entrenamiento ni el proceso de alineamiento o desalineamiento aplicado.
-- Naturaleza "uncensored": el modelo ha sido modificado para reducir los mecanismos de rechazo. Esto implica un riesgo elevado de generar contenido ofensivo, ilegal, peligroso o factualmente falso sin advertencia, y no es apto para aplicaciones de cara al publico sin filtros adicionales.
-- Riesgo de alucinacion: sin datos de evaluacion no puede acotarse, pero los modelos sin alineamiento restrictivo tienden a mostrar una menor calibracion de la incertidumbre.
-- Contexto desconocido: no se especifica la ventana de contexto, lo que dificulta planificar despliegues con documentos largos.
-- Idiomas no desglosados: la etiqueta "multilingual" no incluye lista de idiomas ni garantia de calidad fuera del ingles.
-- Soporte de vision no verificado: aunque el repositorio esta etiquetado como modelo de vision, los ficheros mmproj estan en un repositorio distinto y no se confirma que funcionen correctamente con todas las cuantizaciones.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad legal sobre el contenido generado, especialmente en jurisdicciones con normativa sobre contenido generado por IA.
-- Traccion nula: cero descargas en el momento de la consulta, lo que significa que no hay validacion por parte de la comunidad ni informes de errores.
-- Compatibilidad de la cuantizacion i1-Q2_K: el propio README advierte que IQ3_XXS suele ofrecer mejor calidad que i1-Q2_K, por lo que esta ultima debe considerarse una opcion de compromiso extremo.
+- La model card no documenta el proceso de entrenamiento, el contexto maximo ni los benchmarks, lo que impide validar sus capacidades antes de produccion.
+- Al ser una variante "uncensored", el modelo puede generar contenido sensible, ofensivo o inseguro; requiere moderacion externa en aplicaciones publicas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no hay evaluaciones publicadas de fidelidad.
+- El soporte multilingue solo esta declarado de forma generica; el unico idioma listado explicitamente es el ingles.
+- La capacidad de vision esta declarada en etiquetas pero no verificada en la documentacion; conviene probarla antes de integrarla.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base es un derivado de Qwen y conviene revisar los terminos de la familia original.
+- El repositorio ocupa 279,2 GB por incluir todas las cuantizaciones; descargar solo el archivo GGUF necesario.
+- La fecha de creacion (2026-10-04) y la denominacion Qwen3.6 no permiten confirmar la procedencia oficial del modelo base; verificar el repositorio de LuffyTheFox antes de confiar en el.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF
 - Modelo base: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-GGUF
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF
-- Guia de uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Quants estaticos: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

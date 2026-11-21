@@ -1,104 +1,94 @@
 # sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-idkdpo
 
 ## Resumen
+Este modelo es un checkpoint de Llama-3.1-8B-Instruct sometido a un proceso de *unlearning* (desaprendizaje) mediante el algoritmo IdkDPO, implementado en el framework open-unlearning. Lo desarrolla el usuario de Hugging Face sungjuncho como parte de la colección TOFU-para, un esfuerzo de investigación que separa conceptualmente el *untraining* (eliminar las muestras exactas que el método recibió) del *unlearning* real (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). El problema que aborda es la eliminación fiable de conocimiento factual concreto de un modelo de lenguaje sin degradar sus capacidades generales.
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-idkdpo` es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario `sungjuncho`, que ha sido sometido a un proceso de *machine unlearning* mediante el algoritmo IdkDPO sobre el conjunto de datos TOFU-para. El objetivo no es obtener un modelo de propósito general, sino un artefacto de investigación que permita medir hasta qué punto una técnica de desaprendizaje elimina el conocimiento subyacente de un subconjunto de datos (el *forget set*) sin destruir la utilidad general del modelo.
+El punto de partida es un Llama-3.1-8B-Instruct afinado sobre el dataset TOFU completo más dos versiones parafraseadas; sobre ese modelo se aplica IdkDPO con el conjunto de olvido forget10 original (400 pares QA) y un conjunto de retención de 10.800 ejemplos (retain90 más dos paráfrasis). La relevancia radica en que el autor publica métricas de evaluación específicas (FADE, calidad de olvido TOFU, utilidad del modelo) y las replica en tres semillas, algo poco habitual en modelos de desaprendizaje, lo que permite evaluar la estabilidad del método.
 
-El modelo parte de un checkpoint intermedio, `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full`, que fue afinado sobre la totalidad de TOFU más dos versiones parafraseadas de cada par pregunta-respuesta. Sobre esa base se aplica IdkDPO (la implementación disponible en el repositorio `open-unlearning` de locuslab) con el objetivo de "olvidar" los 400 pares QA originales del *forget10*, manteniendo como conjunto de retención el *retain90* más las paráfrasis `para1` y `para2` (10.800 ejemplos).
+Arquitectónicamente es un transformer decoder-only estándar de Meta con 8.030.261.248 parámetros, sin modificaciones estructurales: el interés está en el proceso de entrenamiento posterior, no en la arquitectura. El contexto, los idiomas y el resto de especificaciones heredan los de Llama-3.1-8B-Instruct, aunque la model card no los detalla explícitamente.
 
-La relevancia de esta ficha es metodológica: la model card separa explícitamente dos conceptos, *untraining* (eliminar las muestras exactas vistas por el método) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). El modelo reporta métricas FADE para ambas dimensiones, lo que lo convierte en una referencia útil para investigadores que evalúan técnicas de desaprendizaje en modelos de 8.000 millones de parámetros.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.1) |
-| Parámetros totales | 8.030.261.248 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (la base Llama 3.1 admite 128.000 tokens, pero la model card no lo confirma para este checkpoint) |
-| Tipos de cuantización | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer decoder-only (Llama 3.1), sin modificaciones estructurales |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la model card (heredada de Llama-3.1-8B-Instruct) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; cuantizacion GGUF no publicada) |
+| Idiomas soportados | no disponible en la model card (heredados de Llama-3.1-8B-Instruct) |
 | Licencia | llama3.1 (Llama 3.1 Community License) |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers, dtype bfloat16 recomendado) |
 
 ## Arquitectura y entrenamiento
+La arquitectura es la de Llama-3.1-8B-Instruct sin cambios: un transformer decoder-only denso de 8.000 millones de parámetros. La innovación no reside en la arquitectura sino en la fase de alineación posterior. El modelo base (`sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0`) se obtuvo afinando Llama-3.1-8B-Instruct sobre el dataset TOFU-para, que es TOFU con erratas en nombres corregidas y cinco versiones parafraseadas verificadas de cada par QA. Sobre ese modelo se aplica IdkDPO del repositorio open-unlearning con los hiperparámetros por defecto de la librería, sin recorte de gradiente (*no gradient clipping*), batch efectivo de 32 y semilla 0. El conjunto de olvido son los 400 pares QA de forget10 originales; el conjunto de retención son 10.800 ejemplos (retain90 más las paráfrasis para1 y para2). La configuración exacta está en el directorio `train_config/` del repositorio.
 
-La arquitectura subyacente es la de Llama 3.1 8B Instruct, un transformer decoder-only con atención por grupos (GQA) y RoPE, sin modificaciones estructurales por parte del autor. El modelo no introduce capas nuevas ni cambia el tokenizador: el checkpoint es un ajuste fino completo (no LoRA) del modelo base indicado.
-
-El pipeline de entrenamiento tiene tres etapas documentadas. Primero, un ajuste fino supervisado sobre TOFU-para, que comprende TOFU con erratas en los nombres corregidas más cinco versiones parafraseadas verificadas de cada par QA; el checkpoint resultante se publica como `...-x2-full` (entrenado sobre TOFU completo más dos versiones de paráfrasis). Segundo, la aplicación de IdkDPO con los valores por defecto de `open-unlearning`, sin recorte de gradiente, con un tamaño de lote efectivo de 32 y la configuración exacta registrada en el directorio `train_config/` del repositorio. Tercero, la evaluación con FADE (divergencia KL simétrica respecto al modelo de referencia, estimada con 10 muestras por pregunta, temperatura 1 y estimador Rao-Blackwellizado).
-
-La innovación técnica no reside en la arquitectura sino en la formulación del *forget set* y del *retain set*: el *forget set* son únicamente los 400 pares QA originales del *forget10*, mientras que el conjunto de retención incluye el *retain90* más las paráfrasis `para1` y `para2` (10.800 ejemplos). Esta separación permite medir por separado si el método elimina solo las formulaciones exactas (*untraining*) o también las paráfrasis equivalentes (*unlearning*).
+La evaluación separa dos tareas: *untraining* (comparar contra un modelo de referencia afinado solo con retain90 + forget10 parafraseado, es decir, que nunca vio el forget10 original) y *unlearning* (comparar contra el modelo de referencia afinado solo con retain90, que no vio ninguna versión del conocimiento a olvidar). La métrica FADE es la divergencia KL simétrica respecto al modelo de referencia sobre respuestas muestreadas de ambos (10 por pregunta, temperatura 1, estimador Rao-Blackwellizado); valores más bajos indican mayor dificultad para distinguir los modelos.
 
 ## Capacidades
-
-- Generación de texto conversacional en formato instruct, heredada de Llama 3.1 8B Instruct.
-- Razonamiento y respuesta a preguntas de conocimiento general, sujeto a la degradación inducida por el desaprendizaje.
-- Capacidad de "no saber" inducida: el modelo ha sido entrenado con IdkDPO para responder con ignorancia declarada ante las preguntas del *forget set*.
-- Soporte de *tool calling* y *function calling*: no documentado en la model card; se desconoce si se preserva tras el proceso de desaprendizaje.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el proceso de desaprendizaje puede degradar estas capacidades.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Capacidades especiales (visión, audio, *thinking mode*): no disponibles; el modelo es solo texto.
+- Generación de texto conversacional: hereda la capacidad de instrucción de Llama-3.1-8B-Instruct, con formato de chat y rol de asistente.
+- Razonamiento y conocimiento general: el modelo parte de un checkpoint con las capacidades de Llama-3.1-8B-Instruct, aunque la utilidad medida tras el desaprendizaje es de 0,346 en la escala TOFU (frente a valores superiores en modelos de referencia), lo que indica cierta degradación.
+- Conocimiento factual limitado deliberadamente: el objetivo del modelo es que no responda correctamente sobre el conjunto forget10; su comportamiento esperado ante esas preguntas es una respuesta de "no lo sé" o una respuesta degradada.
+- Tool calling y function calling: no documentado en la model card; se heredaría del modelo base Llama-3.1-8B-Instruct, pero no hay verificación publicada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas ni evaluadas en la model card.
+- Capacidades multilingües: no documentadas en la model card.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles; el modelo es solo texto.
 
 ## Casos de uso
-
-- Investigación en *machine unlearning*: el modelo sirve como artefacto de referencia para reproducir y comparar métodos de desaprendizaje sobre el *benchmark* TOFU, gracias a la configuración exacta publicada en `train_config/`.
-- Evaluación de la distinción *untraining* frente a *unlearning*: las métricas FADE separadas para el *forget set* original y para las paráfrasis permiten medir si un método elimina el conocimiento o solo la formulación literal.
-- Auditoría de privacidad y cumplimiento: útil para estudiar si un modelo puede "olvidar" datos concretos y si ese olvido resiste reformulaciones, un requisito relevante para el derecho al olvido en el RGPD.
-- Estudio de la degradación de utilidad: la métrica *model utility* (0,346) permite analizar el coste en rendimiento general que impone el desaprendizaje agresivo.
-- *Baseline* para comparación de algoritmos: investigadores que propongan un nuevo método de desaprendizaje pueden comparar sus resultados contra este checkpoint IdkDPO sobre el mismo *forget set* y *retain set*.
-- Análisis de robustez frente a paráfrasis: el conjunto `para1`/`para2` permite evaluar si el conocimiento olvidado reaparece cuando se reformula la pregunta, un escenario realista en producción.
+- Investigación en desaprendizaje de máquinas: sirve como checkpoint de referencia para reproducir y comparar el algoritmo IdkDPO frente a otros métodos (gradient ascent, NPO, etc.) sobre el mismo modelo base y el mismo conjunto forget10, gracias a que el autor publica configuraciones y métricas por semilla.
+- Evaluación de la estabilidad de métodos de unlearning: al estar replicado en tres semillas con FADE, probabilidad Q-A, ROUGE y truth ratio, permite estudiar la varianza del método (por ejemplo, la utilidad varía de 0,214 a 0,486 entre semillas) y no solo su valor medio.
+- Estudio de la distinción entre untraining y unlearning: el modelo está diseñado para que se pueda medir por separado si elimina las muestras exactas o el conocimiento subyacente, usando las dos tareas FADE y las paráfrasis para1/para2.
+- Auditoría de privacidad y eliminación de datos: escenario de cumplimiento en el que se necesita eliminar información personal o factual concreta de un modelo ya entrenado; este checkpoint ejemplifica el flujo completo con métricas cuantitativas de olvido.
+- Docencia y formación técnica: útil para demostrar en un curso o tutorial cómo se mide el desaprendizaje con TOFU y FADE, y por qué una métrica de olvido alta puede convivir con una pérdida de utilidad.
+- Baseline en pipelines de investigación: punto de comparación para nuevos métodos de unlearning que se evalúen sobre Llama-3.1-8B con el dataset TOFU-para, evitando reentrenar el modelo de partida.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Valor |
-|---|---|
-| FADE, untraining (vs `x2-retain90-forget10para`, forget10 original) | 72,39 |
-| FADE, unlearning (vs `x2-retain90`, forget10 original + 2 paráfrasis) | 89,44 (original 86,4 / para1 91,2 / para2 90,7) |
-| TOFU forget quality (vs `x2-retain90`) | 3,02e-28 |
-| Forget truth ratio | 0,452 |
-| Forget Q-A probability | 0,702 |
-| Forget Q-A ROUGE | 0,063 |
-| Model utility | 0,346 |
+| Metrica | Valor (seed 0) | Media ± sd (seeds 0-2) |
+|---|---|---|
+| FADE, untraining (vs referencia retain90-forget10para) | 72,39 | 72,6 ± 2,5 |
+| FADE, unlearning (vs referencia retain90) | 89,44 (original 86,4 / para1 91,2 / para2 90,7) | 92,1 ± 2,6 |
+| Calidad de olvido TOFU (p-valor vs referencia retain90) | 3,02e-28 | no disponible |
+| Truth ratio del conjunto forget | 0,452 | 0,447 ± 0,006 |
+| Probabilidad Q-A del conjunto forget | 0,702 | 0,704 ± 0,003 |
+| ROUGE Q-A del conjunto forget | 0,063 | 0,092 ± 0,038 |
+| Utilidad del modelo | 0,346 | 0,349 ± 0,136 |
 
-FADE es la divergencia KL simétrica respecto al modelo de referencia sobre respuestas muestreadas de ambos (10 por pregunta, temperatura 1, estimador Rao-Blackwellizado); valores más bajos indican que el modelo es más difícil de distinguir del de referencia. El valor de *forget quality* (3,02e-28) es extremadamente bajo, lo que indica que el modelo desaprendido se distingue con claridad del modelo de referencia en el *forget set*. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Puntos de referencia FADE publicados por el autor: el "perfect untrainer" (`x2-retain90-forget10para`, otra semilla) obtiene 21,4 ± 0,3 en untraining y 136,7 ± 0,4 en unlearning; el "perfect unlearner" (`x2-retain90`, otra semilla) obtiene 104,2 ± 0,3 en untraining y 29,8 ± 0,3 en unlearning; el modelo sin desaprendizaje (`x2-full`, semillas 0-2) obtiene 81,6 ± 0,7 y 156,3 ± 0,2. El modelo aquí descrito queda en 72,4 y 89,4, es decir, más cerca del untrainer que del unlearner en la tarea de untraining, pero lejos del ideal en la de unlearning.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en bfloat16: aproximadamente 16 GB solo para pesos, más memoria para el KV cache y activaciones; en la práctica se recomienda un mínimo de 20-24 GB para contexto corto.
-- VRAM estimada en cuantización de 8 bits: en torno a 8-9 GB; en 4 bits, en torno a 5-6 GB (estimaciones basadas en el tamaño de parámetros, no confirmadas por el autor).
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bfloat16 sin cuantizar; RTX 3090/4090 o GPUs de 16 GB para cuantización de 8 bits.
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) en bfloat16 con contexto moderado, y en GPUs de 12-16 GB con cuantización de 8 o 4 bits.
-- Opciones de despliegue: `transformers` (soporte confirmado en la model card), `text-generation-inference` (etiqueta `text-generation-inference` presente) y `endpoints_compatible`. No se documentan variantes GGUF, por lo que llama.cpp/Ollama requerirían conversión manual.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 16 GB solo para pesos, más memoria para caché KV y activaciones; en la práctica se recomienda una GPU de 24 GB o más para contexto largo.
+- Cuantización: no se publican pesos GGUF ni cuantizados en el repositorio; habría que generarlos a partir de los safetensors. En 8 bits cabría en GPUs de 16 GB; en 4 bits, en torno a 6-8 GB de pesos, aunque la calidad tras el desaprendizaje podría degradarse de forma no medida.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bfloat16 con contexto moderado. En GPUs consumer de 16 GB (RTX 4080, 4070 Ti Super) sería necesario cuantizar.
+- Opciones de despliegue: transformers (soporte nativo, `AutoModelForCausalLM`), text-generation-inference (el modelo lleva el tag `text-generation-inference` y `endpoints_compatible`), vLLM y llama.cpp/Ollama previa conversión a GGUF.
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...-unlearned-forget10-idkdpo`) | 8,03 B | no disponible | llama3.1 | Desaprendizaje IdkDPO sobre TOFU-para | Hugging Face, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | llama3.1 | Ajuste fino sobre TOFU + paráfrasis (modelo base de este) | Hugging Face |
-| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128.000 tokens | llama3.1 | Modelo instruct de propósito general | Hugging Face, ampliamente desplegado |
-| Otros checkpoints de la colección TOFU-para | 8,03 B | no disponible | llama3.1 | Distintos métodos de desaprendizaje sobre la misma base | Hugging Face |
+| Este modelo (IdkDPO, seed 0) | 8,03 B | no disponible | Unlearning IdkDPO sobre TOFU-para | llama3.1 | Hugging Face, 910 descargas |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` (modelo de partida) | 8,03 B | no disponible | Afinado completo sin desaprender | llama3.1 | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` (referencia "perfect unlearner") | 8,03 B | no disponible | Afinado solo con retain90 | llama3.1 | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` (referencia "perfect untrainer") | 8,03 B | no disponible | Afinado sin el forget10 original | llama3.1 | Hugging Face |
 
-La comparación relevante no es de rendimiento general sino de comportamiento frente al *forget set*: frente a Llama-3.1-8B-Instruct original, este checkpoint presenta un *forget quality* de 3,02e-28 y un FADE de 89,44 en la evaluación de *unlearning*, a costa de una *model utility* de 0,346. No se dispone de datos comparativos de otros métodos de la misma colección en la información proporcionada.
+La comparación relevante es interna a la colección TOFU-para: los tres modelos de referencia comparten arquitectura, licencia y tamaño, y difieren solo en los datos de entrenamiento, lo que aísla el efecto del desaprendizaje. Frente a métodos alternativos de unlearning (gradient ascent, NPO, RMU) no hay comparación publicada en la información disponible.
 
 ## Limitaciones y advertencias
-
-- Modelo de investigación, no de producción: está diseñado para estudiar desaprendizaje, no para uso general; su utilidad general está degradada (*model utility* 0,346).
-- Riesgo de conocimiento residual: el FADE de *unlearning* (89,44) y los valores por paráfrasis (86,4 / 91,2 / 90,7) indican que el conocimiento puede reaparecer bajo reformulaciones; el olvido no es necesariamente robusto.
-- Alucinación: el entrenamiento con IdkDPO induce respuestas de ignorancia declarada, pero no garantiza que el modelo no genere información incorrecta sobre otros temas.
-- Sesgos: heredados de Llama 3.1 8B Instruct y del corpus TOFU; no se documenta ninguna mitigación específica.
-- Idiomas: no se documenta el soporte multilingüe de este checkpoint concreto; el proceso de desaprendizaje puede afectar de forma desigual a distintos idiomas.
-- Licencia: Llama 3.1 Community License, con restricciones de uso comercial y obligaciones de atribución ("Built with Llama"); revisar los términos antes de cualquier despliegue.
-- Sin datos de benchmarks estándar: no hay resultados de MMLU, HumanEval ni GSM8K, por lo que no se puede evaluar la degradación en tareas generales.
-- Repositorio con 0 descargas y 0 *likes*: no hay evidencia de uso comunitario ni de validación independiente de los resultados reportados.
-- Fecha de creación futura en los metadatos (2026-11-02): conviene verificar la integridad y procedencia del checkpoint antes de reutilizarlo.
+- El modelo no elimina por completo el conocimiento objetivo: en la tarea de unlearning su FADE es 89,44 frente al ideal de 29,8, y su utilidad cae a 0,346, lo que indica que el desaprendizaje es parcial y con coste en capacidades generales.
+- Alta varianza entre semillas en la utilidad del modelo (0,214 a 0,486), lo que hace arriesgado usar un único checkpoint como representativo del método.
+- La probabilidad Q-A del conjunto forget sigue siendo 0,702 y el truth ratio 0,452, valores que sugieren que el modelo aún puede generar respuestas relacionadas con el contenido supuestamente olvidado; no debe tratarse como garantía de eliminación de información sensible.
+- Riesgo de alucinación: no evaluado específicamente; el proceso de desaprendizaje puede aumentar respuestas evasivas o incorrectas sobre el dominio forget10.
+- Sesgos: no documentados; se heredan los del modelo base Llama-3.1-8B-Instruct, sin evaluación adicional en esta model card.
+- Idiomas y longitud de contexto no especificados en la model card; no deben asumirse sin verificar contra el modelo base.
+- Licencia Llama 3.1 Community License: restricciones de uso comercial y de redistribución según los términos de Meta; requiere aceptar la licencia y cumplir la política de uso aceptable.
+- Es un artefacto de investigación, no un modelo listo para producción: la model card no documenta evaluación de seguridad, sesgos ni robustez adversarial.
+- El nombre del repositorio en el ejemplo de código de la model card (`...-idkdpo-seed0`) no coincide exactamente con el ID del repositorio (`...-idkdpo`); conviene verificar la ruta antes de cargarlo.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-idkdpo
-- Modelo base (checkpoint intermedio): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
+- Modelo base (punto de partida): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Repositorio open-unlearning (implementación de IdkDPO): https://github.com/locuslab/open-unlearning
-- Licencia Llama 3.1: incluida en el repositorio del modelo (`LICENSE`)
+- Licencia Llama 3.1: incluida en el repositorio como `LICENSE`

@@ -2,104 +2,89 @@
 
 ## Resumen
 
-`audnai/penclaw-Kimi-K3.1-pro-unrestricted` es una distribución de terceros (no oficial) de Kimi K3.1 Pro, el modelo abierto de la serie K3.1 de Moonshot AI. El repositorio lo publica el usuario `audnai` (ozgur ozkan) el 23 de octubre de 2026, el mismo día del lanzamiento del modelo base, y se presenta como parte del proyecto Penclaw, descrito en su repositorio de GitHub como «asistente personal de IA abliterado» que acepta cualquier prompt sin objeciones. El acceso está restringido: requiere aceptar condiciones en Hugging Face.
+penclaw-Kimi-K3.1-pro-unrestricted es un ajuste fino (fine-tune) del modelo moonshotai/Kimi-K3.1-Pro, publicado por el usuario audnai en Hugging Face. Se trata de una variante "abliterated" y "uncensored", es decir, un modelo al que se le han eliminado o atenuado los mecanismos de rechazo y alineación del modelo original, con el objetivo de que responda sin las restricciones de seguridad habituales. El modelo conserva la arquitectura Mixture-of-Experts (MoE) del original, con 2,78 billones de parámetros totales según los pesos en safetensors, y se distribuye en formato de 8 bits.
 
-El modelo base, Kimi K3.1 Pro, es un modelo de pesos abiertos de clase 3T con 2,8 billones de parámetros totales y 104 000 millones activos, lo que implica una arquitectura de mezcla de expertos (MoE), y una ventana de contexto de 1 millón de tokens. Moonshot AI lo posiciona frente a los modelos propietarios más potentes en tareas de código, agentes y conocimiento, y comercializa en paralelo una variante Highspeed con 2-3 veces más velocidad a través de su plataforma API.
+El modelo base, Kimi-K3.1-Pro, es un desarrollo de Moonshot AI orientado a generación de texto de gran escala. Al tratarse de un fine-tune no oficial, la información pública disponible es muy limitada: no se detallan los datos de entrenamiento del ajuste, los idiomas soportados ni resultados de benchmarks. El repositorio tiene un tamaño de 1.561,4 GB, lo que refleja la magnitud del modelo en precisión de 8 bits, y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face.
 
-La relevancia de esta ficha concreta es doble: por un lado documenta las capacidades del modelo base; por otro, advierte de que la versión de `audnai` es una modificación no verificada, sin model card con especificaciones, sin licencia declarada, sin idiomas declarados y con cero descargas en el momento de la consulta (17 likes). Cualquier evaluación de producción debe hacerse sobre el modelo original de Moonshot AI, no sobre este derivado.
+La relevancia de esta ficha radica en documentar de forma rigurosa un modelo de gran tamaño y con implicaciones éticas y legales importantes: al ser una versión "unrestricted", su uso en producción conlleva riesgos significativos y requiere una evaluación cuidadosa de la licencia y de las políticas de uso.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en el repositorio. El modelo base se describe como 2,8T totales / 104B activos, lo que implica MoE, pero no se detalla el diseño interno |
-| Parámetros totales | 2,8 billones (modelo base, según MarkTechPost); no confirmado para este derivado |
-| Parámetros activos | 104 000 millones (modelo base); no confirmado para este derivado |
-| Longitud de contexto | 1 000 000 tokens (modelo base); no confirmado para este derivado |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | No disponible |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Pipeline declarado | No disponible |
-| Etiquetas del repositorio | `region:us` |
-| Descargas / likes | 0 descargas / 17 likes (en el momento de la consulta) |
-| Fecha de creación / actualización | 2026-10-23 21:38 UTC / 2026-10-23 21:44 UTC (6 minutos de diferencia) |
+| Arquitectura | Mixture-of-Experts (MoE), según tags del repositorio |
+| Parametros totales | 2.780.110.363.392 (2,78 billones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 8-bit (según tags); no se detallan otras variantes |
+| Idiomas soportados | no disponible |
+| Licencia | kimi-k3.1-pro (license:other) |
+| Formato de pesos | safetensors, custom_code |
+| Modelo base | moonshotai/Kimi-K3.1-Pro |
+| Acceso | Restringido (gated) |
+| Tamano del repositorio | 1.561,4 GB |
+| Descargas | 825 |
+| Likes | 275 |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada en el repositorio sobre la arquitectura, los datos de entrenamiento, el número de tokens vistos, la composición del corpus ni las etapas de alineación (RLHF, DPO u otras) de este derivado. La única información disponible corresponde al modelo base: Kimi K3.1 Pro es el primer modelo de la serie K3.1 de Moonshot AI, con 2,8 billones de parámetros totales y 104 000 millones activos, y una ventana de contexto de 1 millón de tokens. La relación entre parámetros totales y activos (aproximadamente 27:1) es coherente con un transformer disperso de tipo MoE, pero no se ha publicado el número de expertos, el mecanismo de enrutamiento ni detalles de atención (lineal, híbrida u otros).
+La información disponible indica que el modelo emplea una arquitectura Mixture-of-Experts (MoE), heredada del modelo base Kimi-K3.1-Pro de Moonshot AI. El recuento de parámetros totales asciende a 2,78 billones, aunque no se especifica el número de parámetros activos por token ni el número de expertos. El repositorio incluye código personalizado (custom_code), lo que sugiere que la implementación requiere módulos específicos para cargar y ejecutar el modelo.
 
-El elemento diferencial de esta distribución no es arquitectónico sino de alineación: el proyecto Penclaw se define como «abliterado», es decir, con los comportamientos de rechazo suprimidos o eliminados mediante técnicas de edición de pesos o ajuste fino dirigido. No se especifica qué método se ha aplicado, sobre qué checkpoint se partió, ni si se ha verificado que las capacidades del modelo base se preservan tras la modificación. El intervalo de 6 minutos entre creación y actualización del repositorio sugiere una subida mínima sin documentación adicional. Tampoco hay información sobre innovaciones técnicas del modelo base más allá de la ventana de contexto y de la variante Highspeed (2-3× de velocidad).
+No se dispone de información sobre los datos de entrenamiento del ajuste fino, el número de tokens utilizados, la composición del dataset ni si se emplearon técnicas de RLHF, DPO u otras. Tampoco se detallan innovaciones técnicas específicas del fine-tune más allá de la naturaleza "abliterated" y "uncensored" declarada en los tags, que implica la modificación de los comportamientos de rechazo del modelo original. Cualquier dato adicional sobre el proceso de entrenamiento debe considerarse no disponible.
 
 ## Capacidades
 
-Las siguientes capacidades están documentadas o anunciadas para el modelo base Kimi K3.1 Pro; no hay verificación independiente de que se conserven en el derivado de `audnai`:
-
-- Generación de texto y razonamiento general, con posicionamiento explícito frente a modelos propietarios en pruebas de conocimiento.
-- Generación de código: Moonshot AI destaca mejoras sustanciales en tareas de programación respecto a la generación anterior.
-- Capacidades agénticas: uso de herramientas y ejecución de tareas multi-paso, con mejoras declaradas en flujos de agentes.
-- Creación 3D: mencionada de forma explícita entre las áreas de mejora del modelo base.
-- Investigación financiera: también citada como dominio de mejora en el anuncio del modelo base.
-- Contexto largo: ventana de 1 millón de tokens, adecuada para documentos extensos, repositorios completos o historiales de conversación muy largos.
-- Modo sin restricciones (específico de este derivado): supresión de rechazos, orientada a roleplay, escritura creativa sin filtros y pruebas de seguridad.
-- Soporte de tool calling / function calling: no confirmado de forma explícita en la información disponible.
-- Capacidades multimodales (visión, audio): no disponibles en la información proporcionada.
-- Idiomas soportados: no disponibles.
+- Generación de texto: el modelo está etiquetado como text-generation y conserva la capacidad del modelo base para producir texto coherente y extenso.
+- Razonamiento y conocimiento general: al derivar de Kimi-K3.1-Pro, se espera que mantenga capacidades de razonamiento, aunque no se han publicado evaluaciones específicas del fine-tune.
+- Modo "unrestricted": el ajuste elimina o atenúa los rechazos de seguridad, lo que permite respuestas sin las restricciones típicas del modelo alineado.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; no se especifican idiomas.
+- Capacidades especiales (visión, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Red teaming y evaluación de seguridad: el modelo permite generar respuestas que el modelo base rechazaría, lo que lo hace útil como generador de casos adversarios en bancos de pruebas de alineación y en la evaluación de clasificadores de contenido. Debe ejecutarse en entornos aislados y con registro de prompts.
-- Investigación sobre abliteración: comparar las respuestas del derivado con las del Kimi K3.1 Pro original permite medir qué capacidades se degradan al eliminar los rechazos, un experimento relevante para estudiar el compromiso entre seguridad y utilidad.
-- Escritura creativa y roleplay sin filtros: narrativa, guion y personajes con temáticas adultas o controvertidas que los modelos alineados suelen declinar; el contexto de 1 M tokens permite mantener coherencia en novelas o campañas de juego largas.
-- Análisis de documentación extensa: con 1 M tokens de ventana, el modelo base puede procesar contratos completos, expedientes o bases de código sin troceado, manteniendo referencias cruzadas entre secciones.
-- Asistencia a desarrollo de software en local: si se dispone de infraestructura suficiente, integrar el modelo en un asistente de código que opere sobre un repositorio entero, con anonimización previa de secretos y revisión humana de los parches.
-- Automatización de agentes multi-paso: pipelines que encadenan búsqueda, ejecución de herramientas y síntesis, aprovechando las mejoras declaradas del modelo base en capacidades agénticas; requiere validación propia porque no hay benchmarks publicados del derivado.
-- Generación de datos sintéticos para ajuste fino: producción de diálogos y respuestas en dominios donde el modelo alineado es demasiado restrictivo, con posterior filtrado y etiquetado humano antes de usar los datos en entrenamiento.
+- Investigación sobre alineación y seguridad: el modelo puede utilizarse en entornos controlados para estudiar cómo varía el comportamiento de un modelo MoE de gran escala al eliminar los mecanismos de rechazo, comparando respuestas con el modelo base.
+- Generación de texto creativo sin restricciones temáticas: para proyectos de ficción, guiones o narrativa que requieran explorar temas sensibles sin los filtros habituales, siempre que se cumplan las obligaciones legales y éticas.
+- Experimentación académica con modelos de gran tamaño: investigadores con acceso a infraestructura de cómputo pueden emplearlo para estudiar el comportamiento de modelos de 2,78 billones de parámetros en tareas de generación abierta.
+- Pruebas de robustez y red-teaming: útil para evaluar la eficacia de filtros y sistemas de moderación frente a un modelo que carece de ellos, en entornos de laboratorio.
+- Análisis de sesgos y toxicidad: permite examinar qué tipos de contenido emergen cuando se retiran las salvaguardas, contribuyendo a la investigación sobre riesgos de modelos abiertos.
+- Desarrollo de pipelines de generación de texto a gran escala en entornos de investigación: con la infraestructura adecuada (múltiples GPU de alta gama), puede integrarse en flujos de trabajo experimentales que requieran un modelo MoE de gran capacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni el repositorio de `audnai` ni las fuentes consultadas incluyen cifras concretas de MMLU, HumanEval, GSM8K u otras pruebas para el modelo base ni para este derivado; el anuncio de Moonshot AI se limita a afirmar mejoras en código, creación 3D, investigación financiera y capacidades agénticas sin aportar números. Tampoco existen mediciones independientes del efecto de la abliteración sobre el rendimiento.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones aritméticas derivadas del número de parámetros del modelo base, no datos publicados por el autor del repositorio ni por Moonshot AI:
-
-- Peso en memoria de los 2,8 T parámetros totales: aproximadamente 5,6 TB en BF16, 2,8 TB en FP8 y 1,4 TB en cuantización de 4 bits. No cabe en ninguna configuración de GPU de consumo.
-- Memoria para los 104 000 millones de parámetros activos por token: del orden de 208 GB en BF16 y 104 GB en FP8, además de caché KV. Esto exige múltiples aceleradores incluso en el mejor de los casos.
-- GPU recomendadas: nodos multi-GPU de clase H100/H200 o B200 con interconnect de alta velocidad (NVLink) para inferencia en FP8/BF16; el despliegue en una sola máquina de 8 GPU solo es viable con cuantización agresiva y particionado por expertos.
-- GPU de consumo: no viable. Una RTX 4090 (24 GB) no puede alojar el modelo ni siquiera en cuantizaciones de 2-3 bits, que seguirían requiriendo del orden de 700 GB a 1 TB.
-- Opciones de despliegue: para el modelo base, frameworks con soporte de paralelismo tensorial y de expertos (vLLM, SGLang, TGI) son los candidatos naturales; llama.cpp u Ollama no son realistas a esta escala. No hay confirmación de que el derivado sea compatible con ninguno de ellos, ni de que se hayan publicado pesos en formato GGUF.
-- Latencia y throughput: no disponibles. La variante Highspeed del modelo base se anuncia con 2-3× la velocidad de K3.1 Pro, pero sin cifras absolutas de tokens por segundo.
-- Alternativa práctica: consumir el modelo base a través de la API de Kimi Platform en lugar de autohospedarlo, dado el coste de infraestructura.
+- VRAM estimada para inferencia: con 2,78 billones de parámetros en 8 bits, el modelo requiere aproximadamente 2,78 TB de memoria solo para los pesos, lo que excede con creces cualquier GPU individual. Se necesita un clúster multi-GPU o multi-nodo con agregación de memoria.
+- GPU recomendadas: no es viable en GPU de consumo. Se requieren soluciones de clase centro de datos como NVIDIA H100, A100 (80 GB) o superiores, en configuraciones de decenas de unidades para alojar los pesos y los estados de activación.
+- ¿Cabe en GPU de consumo? No. Ni siquiera en configuraciones multi-GPU de consumo (p. ej., varias RTX 4090) por la magnitud del modelo y el ancho de banda requerido.
+- Opciones de despliegue: el repositorio incluye custom_code, por lo que se requiere la implementación específica del autor. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput estimados: no disponible. Dado el tamaño, se espera un throughput bajo y una latencia alta incluso en clústeres dedicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros totales | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
-| `audnai/penclaw-Kimi-K3.1-pro-unrestricted` | 2,8 T totales / 104 B activos (heredados, no confirmados) | 1 M tokens (heredado, no confirmado) | No disponible | Hugging Face con acceso restringido | Derivado abliterado, sin model card, 0 descargas, subido el mismo día del lanzamiento |
-| Kimi K3.1 Pro (Moonshot AI) | 2,8 T totales / 104 B activos | 1 M tokens | No disponible en la información consultada (descrito como «open-weight») | Pesos abiertos y API en platform.kimi.ai | Modelo de referencia de la serie K3.1; sin cifras de benchmarks publicadas en las fuentes consultadas |
-| Kimi K3.1 Pro Highspeed (Moonshot AI) | No disponible | No disponible | No disponible | API de Kimi Platform | Variante con 2-3× la velocidad de K3.1 Pro, orientada a baja latencia |
+| penclaw-Kimi-K3.1-pro-unrestricted | 2,78 B (MoE) | no disponible | kimi-k3.1-pro (other) | Gated | Fine-tune "unrestricted" de Kimi-K3.1-Pro |
+| moonshotai/Kimi-K3.1-Pro (base) | no disponible | no disponible | no disponible | no disponible | Modelo original de Moonshot AI, con alineación de seguridad |
+| Otros modelos MoE de gran escala | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
-No se dispone de datos verificables de otros modelos de clase 3T (por ejemplo, alternativas de otros laboratorios) en la información proporcionada, por lo que no se incluye una comparación cuantitativa con ellos.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas. Los datos del modelo base Kimi-K3.1-Pro no se detallan en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: el repositorio no declara arquitectura, licencia, idiomas, formato de pesos ni método de modificación. La ficha se apoya en información del modelo base, no del derivado.
-- Procedencia no verificada: no hay evidencia de que los pesos correspondan realmente a Kimi K3.1 Pro ni de qué checkpoint se partió. Un tercero podría haber publicado un modelo distinto bajo ese nombre.
-- Alineación de seguridad eliminada: al ser «unrestricted», el modelo no aplica rechazos, lo que implica riesgo de generar contenido dañino, ilegal o sexual explícito sin filtro. No es apto para aplicaciones de cara al público sin una capa de moderación propia.
-- Riesgo de alucinación: no hay mediciones de fiabilidad; la abliteración puede degradar la coherencia y la calibración del modelo base, efecto documentado en la literatura sobre edición de pesos, aunque no se ha evaluado en este caso concreto.
-- Licencia indeterminada: sin licencia declarada no se puede asumir permiso de uso comercial. Además, la licencia del modelo base (no disponible en las fuentes consultadas) podría imponer restricciones que un redistribuidor no puede relajar.
-- Sin tracción ni validación comunitaria: 0 descargas y 17 likes en el momento de la consulta, con creación y actualización separadas por 6 minutos, indican que no ha pasado ninguna revisión por pares ni prueba práctica de terceros.
-- Idiomas no declarados: se desconoce el comportamiento en castellano; en modelos de esta escala el rendimiento multilingüe varía mucho y no hay evaluación disponible.
-- Coste de despliegue prohibitivo: la escala de 2,8 T parámetros hace inviable el autohospedaje fuera de infraestructura de centro de datos.
-- Acceso restringido: requiere aceptar condiciones en Hugging Face; las condiciones concretas no están disponibles en la información proporcionada.
-- Riesgo reputacional y legal: usar un modelo sin licencia clara y sin filtros en producción expone a incumplimientos normativos (por ejemplo, obligaciones de moderación en la UE) y a responsabilidad sobre el contenido generado.
+- Modelo "uncensored" y "abliterated": carece de los mecanismos de rechazo del modelo original, lo que implica un riesgo elevado de generar contenido dañino, ilegal o éticamente problemático. No es apto para aplicaciones de cara al público sin moderación adicional.
+- Sesgos conocidos: no se han documentado sesgos específicos del fine-tune, pero al derivar de un modelo entrenado con datos web a gran escala, es probable que herede sesgos sociales, culturales y de género. No disponible información oficial al respecto.
+- Riesgo de alucinación: no se han publicado evaluaciones de fiabilidad; los modelos de gran escala tienden a alucinar, y la ausencia de alineación puede agravar la confianza injustificada en respuestas erróneas.
+- Limitaciones de contexto e idioma: no se especifican la longitud de contexto ni los idiomas soportados, lo que impide garantizar un rendimiento adecuado en castellano u otros idiomas.
+- Restricciones de licencia: la licencia es "kimi-k3.1-pro" con etiqueta license:other, y el acceso es restringido (gated). Es imprescindible revisar los términos exactos en Hugging Face antes de cualquier uso comercial; el fine-tune no oficial puede estar sujeto a condiciones adicionales del modelo base.
+- Caveat para producción: el tamaño de 1.561,4 GB y la necesidad de custom_code complican el despliegue; no se confirma compatibilidad con frameworks estándar. Además, el acceso gated implica que no está disponible para uso inmediato sin aprobación.
+- Falta de documentación: no hay información sobre datos de entrenamiento, evaluación o mantenimiento, lo que dificulta la reproducibilidad y la auditoría.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted
-- Perfil del autor en Hugging Face: https://huggingface.co/audnai
-- Repositorio del proyecto Penclaw en GitHub: https://github.com/audn-ai/penclaw
-- Anuncio de Kimi K3.1 Pro en MarkTechPost: https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/
-- Documentación de la API de Kimi K3.1 Pro: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
+- Hugging Face: https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted
+- Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

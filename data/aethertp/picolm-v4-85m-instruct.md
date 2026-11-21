@@ -2,101 +2,105 @@
 
 ## Resumen
 
-PicoLM-V4-85M-Instruct es un modelo de lenguaje conversacional de 84.960.832 parámetros desarrollado por el usuario aethertp, resultado del ajuste fino del modelo base PicoLM-V4-85M, entrenado desde cero sobre 6.000 millones de tokens. El ajuste fino se realizó sobre aproximadamente 82,42 millones de tokens de datos sintéticos de instrucción y chat provenientes principalmente del subconjunto SmolTalk de HuggingFaceTB, complementados con un pequeño conjunto de identidad propio y una fracción de texto de preentrenamiento. El modelo emplea la arquitectura Qwen3 (`Qwen3ForCausalLM`) de la librería `transformers`, con 20 capas, tamaño oculto de 576, atención con 9 cabezas de consulta y 3 de clave/valor (GQA), feed-forward SwiGLU con tamaño intermedio de 1536, RMSNorm y RoPE con base 10.000. La longitud de contexto es de 2048 tokens y el vocabulario BPE es de 24.576 tokens heredado de PicoLM-V3.
+PicoLM-V4-85M-Instruct es un modelo de lenguaje conversacional de 84.960.832 parámetros desarrollado por el usuario aethertp, obtenido mediante ajuste fino supervisado del modelo base PicoLM-V4-85M, entrenado desde cero sobre 6.000 millones de tokens. El ajuste se realizó durante dos épocas sobre una mezcla de datos de instrucción mayoritariamente sintéticos procedentes del subconjunto SmolTalk de HuggingFace, un pequeño conjunto de identidad y una porción de texto de preentrenamiento (unos 82 millones de tokens procesados, 41 millones por pasada).
 
-El modelo está pensado exclusivamente para investigación sobre modelos de lenguaje pequeños, experimentación con ajuste fino y plantillas de chat, y escenarios donde se necesita un modelo conversacional que quepa en CPU. El propio autor advierte que el modelo se equivoca en datos fácticos y aritmética la mayor parte del tiempo, y que no es apto para respuesta a preguntas, traducción, generación de código ni ningún uso donde la corrección de la respuesta sea requisito. Su relevancia actual radica en ser un ejemplo reproducible de pipeline completo (preentrenamiento desde cero, ajuste fino de instrucciones, empaquetado en formato Qwen3 y exportación a GGUF) con licencia Apache 2.0 y métricas honestamente reportadas.
+El modelo emplea la arquitectura Qwen3 del ecosistema `transformers` (`Qwen3ForCausalLM`), por lo que se carga con `AutoModelForCausalLM` sin necesidad de `trust_remote_code`. Con 20 capas, dimensión oculta de 576 y una ventana de contexto de 2048 tokens, está pensado exclusivamente para investigación sobre modelos de lenguaje pequeños, experimentos de ajuste fino y plantillas de chat, y para escenarios que requieran un modelo conversacional capaz de ejecutarse en CPU.
 
-La ficha se basa únicamente en los datos publicados en la model card y en los metadatos de Hugging Face; no se han inventado cifras de benchmarks ni especificaciones no documentadas.
+Es relevante ahora porque demuestra un flujo completo de entrenamiento desde cero con presupuesto mínimo y publica sus resultados con honestidad metodológica: el propio autor documenta que el modelo ignora restricciones estrictas de formato y longitud, falla en aritmética y produce respuestas fluidas pero a menudo falsas. No debe emplearse en producción para tareas que exijan corrección factual.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo Qwen3 (`Qwen3ForCausalLM`), 20 capas, hidden size 576, 9 cabezas Q / 3 cabezas KV, head dim 64, SwiGLU (intermediate 1536), RMSNorm en Q y K, RoPE base 10.000, embeddings de entrada y salida atados |
+| Arquitectura | Transformer causal decoder-only, formato Qwen3 (`Qwen3ForCausalLM`) |
 | Parámetros totales | 84.960.832 |
 | Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantización | no disponible (el repo incluye archivos GGUF para llama.cpp, pero la model card no detalla los tipos concretos) |
-| Idiomas soportados | inglés (`en`) |
+| Tipos de cuantización | GGUF (ficheros incluidos en el repo); cuantizaciones concretas no disponibles |
+| Idiomas soportados | inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato Qwen3 de `transformers`) y GGUF para llama.cpp |
-| Vocabulario | BPE de 24.576 tokens (heredado de PicoLM-V3) |
-| Tokens especiales | `<|im_start|>` (id de chat), `<|im_end|>` (id 2, EOS), `<|endoftext|>` (id 0) |
-| Plantilla de chat | ChatML: `<|im_start|>role\ncontent<|im_end|>\n`, cierre con `<|im_start|>assistant\n` |
-| Librería | transformers (probado en 4.57.1 y 5.22.1) |
-| Tamaño del repo | 0,7 GB |
-| Modelo base | aethertp/PicoLM-V4-85M |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base PicoLM-V4-85M sin cambios: un transformer decoder-only de 20 capas con hidden size 576, atención con 9 cabezas de consulta y 3 de clave/valor (GQA, head dimension 64), feed-forward SwiGLU con tamaño intermedio 1536, RMSNorm aplicado también a consultas y claves, RoPE con base 10.000, embeddings de entrada y salida atados, y contexto de 2048 tokens. El vocabulario es un BPE de 24.576 tokens heredado de PicoLM-V3. Los tokens de chat `<|im_start|>` y `<|im_end|>` ya existían en el tokenizer; el token id 2 (`<|im_end|>`) no aparece en los datos de preentrenamiento, por lo que es durante el ajuste fino cuando el modelo aprende a usarlo como fin de turno. El modelo base se entrenó desde cero sobre 6.000 millones de tokens.
+La arquitectura replica la del modelo base: 20 capas, dimensión oculta de 576, 9 cabezas de consulta y 3 cabezas clave/valor con dimensión de cabeza 64 (atención con grouped-query attention), feed-forward SwiGLU con tamaño intermedio 1536, RMSNorm, RMSNorm adicional sobre consultas y claves, RoPE con base 10.000, vocabulario de 24.576 tokens con embeddings de entrada y salida atados, y contexto de 2048 tokens. No se modificó ni la arquitectura ni el tokenizador durante el ajuste fino; los tokens de chat `<|im_start|>` y `<|im_end|>` ya existían en el vocabulario, y el token 2 (`<|im_end|>`) no aparece en los datos de preentrenamiento, por lo que es durante el ajuste donde el modelo aprende a usarlo como fin de turno.
 
-El ajuste fino de instrucciones consumió aproximadamente 82,42 millones de tokens reales (sin padding, contando prompt y respuesta, sobre un plan de dos épocas) provenientes de seis fuentes del subconjunto SmolTalk de HuggingFaceTB, más un conjunto de identidad propio y una fracción de replay de texto de preentrenamiento. La composición fue: openhermes-50k (25,28 M, 30,7 %), self-oss-instruct (17,01 M, 20,6 %), smol-contraints (13,60 M, 16,5 %), smol-summarize-20k (10,19 M, 12,4 %), smollm-rewrite-30k con peso 0,5 (9,23 M, 11,2 %), replay de preentrenamiento (6,40 M, 7,8 %), explore-instruct-rewrite (0,54 M, 0,7 %) e identity (0,18 M, 0,2 %). Se descartó la fuente `smol-magpie-ultra` porque, generada con Llama-3.1-405B-Instruct, no aportó ganancia medible en la pérdida de desarrollo en la ablación del autor. La pérdida se calcula únicamente sobre las respuestas del asistente y el token de cierre `<|im_end|>`. El conjunto de identidad consta de 522 conversaciones cortas repetidas cuatro veces en la mezcla, de las cuales 88 son intercambios de dos turnos en los que el usuario da un nombre y lo pregunta después; su función es que el modelo se identifique como PicoLM-V4 de aethertp y no como ChatGPT. No se documenta en la información disponible el uso de RLHF o DPO.
+El ajuste fino se realizó durante dos épocas sobre seis fuentes del subconjunto SmolTalk: openhermes-50k (25,28 M tokens reales, 30,7 %), self-oss-instruct (17,01 M, 20,6 %), smol-contraints (13,60 M, 16,5 %), smol-summarize-20k (10,19 M, 12,4 %), smollm-rewrite-30k con peso 0,5 (9,23 M, 11,2 %) y replay de texto de preentrenamiento (6,40 M, 7,8 %). Se excluyó deliberadamente la fuente `smol-magpie-ultra` por motivos de procedencia, al haber sido generada con Llama-3.1-405B-Instruct; un experimento posterior de 5,7 a 6,8 millones de tokens con esa fuente no mostró ganancia en la pérdida de desarrollo (0,002 y 0,004 nats peor que los controles, con controles no emparejados en tokens, evidencia débil). No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con respuestas fluidas en formato ChatML.
-- Seguimiento de instrucciones simples y mantenimiento de conversaciones cortas multi-turno.
-- Uso de system prompts para formatos sencillos (por ejemplo, restricciones de longitud o formato de título).
-- Identidad propia: responde que es PicoLM-V4, desarrollado por aethertp, y no ChatGPT.
-- Cierre correcto de turno mediante el token `<|im_end|>` (id 2).
-- Ejecución en CPU en fp32 sin `trust_remote_code`, cargable con `AutoModelForCausalLM` y `AutoTokenizer`.
-- Exportación a GGUF para su uso con llama.cpp.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas fiables, código, visión, audio ni modo thinking.
+- Generación de texto conversacional en formato ChatML, con plantilla almacenada en `tokenizer_config.json` y uso mediante `apply_chat_template`.
+- Seguimiento de peticiones simples de un solo turno: identidad (nombre y creador), listas cortas y salida en JSON.
+- Finalización de turno mediante el token `<|im_end|>` (id 2), configurado como end-of-sequence en `config.json`.
+- Capacidad multilingüe: únicamente inglés.
+- No soporta de forma fiable tool calling ni function calling.
+- No soporta razonamiento multi-paso ni agentes.
+- No dispone de modo de pensamiento, visión ni audio.
+- No respeta restricciones estrictas de formato ni de longitud.
+- No responde correctamente a preguntas aritméticas (falló las tres preguntas aritméticas de la batería de pruebas del autor) ni a la mayoría de preguntas factuales (falló dos de cinco).
+- La conversación multi-turno está en gran medida sin evaluar.
 
 ## Casos de uso
 
-- Investigación sobre modelos de lenguaje pequeños: servir como referencia reproducible de un pipeline completo (preentrenamiento desde cero, ajuste fino de instrucciones y exportación a GGUF) para estudiar el efecto del tamaño y de la mezcla de datos en modelos de menos de 100 M de parámetros.
-- Experimentación con plantillas de chat: permite probar el formato ChatML, el manejo de tokens especiales (`<|im_start|>`, `<|im_end|>`) y el comportamiento de `apply_chat_template` en un modelo que cabe en CPU.
-- Pruebas de ajuste fino y ablaciones de datos: su tamaño reducido y su licencia Apache 2.0 permiten reentrenar o afinar variantes en hardware modesto y comparar mezclas de datos con la composición documentada por el autor.
-- Docencia y demostraciones de inferencia en CPU: al ejecutarse en fp32 sin GPU y sin `trust_remote_code`, sirve para ilustrar el ciclo completo de carga, tokenización y generación con `transformers` en un portátil.
-- Evaluación de metodologías de medición: la model card reporta métricas concretas (por ejemplo, bucles en 5,6 % de los prompts con decodificación greedy y `repetition_penalty=1.1`, frente a 3,6 % con muestreo; 11 de 24 comprobaciones de panel superadas con greedy frente a 12 con muestreo), lo que lo convierte en un caso de estudio sobre cómo reportar resultados honestamente en modelos pequeños.
-- Pruebas de cuantización y despliegue ligero: los archivos GGUF incluidos permiten experimentar con llama.cpp en entornos sin GPU para medir latencia y calidad en un modelo de 85 M de parámetros.
-- Prototipado de interfaces conversacionales de bajo coste: útil para validar pipelines de chat (formato de mensajes, system prompt, fin de turno) antes de migrar a un modelo mayor, no para producción con requisitos de corrección.
+- Investigación sobre modelos de lenguaje pequeños: sirve como punto de partida reproducible para estudiar dinámicas de ajuste fino supervisado con presupuesto mínimo, dado que el autor documenta la composición exacta del dataset y las épocas empleadas.
+- Experimentos con plantillas de chat: permite probar variantes de formato ChatML, tokens especiales de turno y estrategias de decodificación (greedy, penalización por repetición, muestreo) sobre un modelo de 85 M parámetros.
+- Despliegue en CPU para demostraciones educativas: con 84,96 M de parámetros en fp32 ocupa aproximadamente 340 MB, por lo que puede ejecutarse en cualquier portátil sin GPU para ilustrar el funcionamiento de un transformer causal.
+- Ajuste fino posterior (fine-tuning) de bajo coste: su tamaño permite reentrenar el modelo completo en una sola GPU consumer para experimentos de destilación o adaptación a dominios concretos.
+- Pruebas de infraestructura de inferencia: útil como modelo de humo para validar pipelines con `transformers`, Text Generation Inference o llama.cpp (ficheros GGUF incluidos) antes de escalar a modelos mayores.
+- Generación de texto creativo sin requisito de veracidad: puede producir respuestas fluidas en inglés para prototipos de chatbots o juegos de texto donde la corrección factual no sea un requisito.
+- Estudio de fallos y alucinaciones: su tendencia documentada a producir respuestas falsas con fluidez lo convierte en un caso de estudio controlado para técnicas de detección de alucinaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta métricas internas del autor:
+El autor no publica puntuaciones de benchmarks estandarizados (MMLU, HumanEval, GSM8K u otros). La model card reporta únicamente resultados de una batería propia de pruebas cualitativas:
 
-| Métrica | Greedy + `repetition_penalty=1.1` | Muestreo (T=0,7, top-p=0,9) |
-|---|---|---|
-| Prompts con bucle | 5,6 % | 3,6 % |
-| Comprobaciones de panel superadas (de 24) | 11 | 12 (la adicional es la comprobación de título de 12 palabras) |
+| Prueba | Resultado |
+|---|---|
+| Identidad (nombre y creador) | correcto en la prueba mostrada |
+| Listas cortas y salida JSON | sigue algunas peticiones simples |
+| Restricciones estrictas de formato y longitud | ignoradas |
+| Preguntas aritméticas (3) | 0 de 3 correctas |
+| Preguntas factuales (5) | 3 de 5 correctas |
+| Panel de 24 comprobaciones, greedy decoding | 11 aprobadas |
+| Panel de 24 comprobaciones, muestreo (temp. 0,7, top-p 0,9) | 12 aprobadas (una de ellas, la comprobación de título de 12 palabras, contada como acierto por azar) |
+| Bucles en generación, greedy | 5,6 % de los prompts |
+| Bucles en generación, muestreo | 3,6 % de los prompts (diferencia de ~1,3 errores estándar con 360 prompts, dentro del ruido) |
+| Resumen bajo system prompt | fallido |
 
-El autor indica además que, en las respuestas revisadas, el muestreo produjo más sinsentidos. No se proporcionan comparaciones con otros modelos.
+No se han publicado resultados de benchmarks estandarizados en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 84,96 M de parámetros; en fp32 ocupa aproximadamente 340 MB de pesos, en fp16 unos 170 MB y en cuantizaciones de 8 bits alrededor de 85 MB (sin contar overhead de activaciones y caché KV). Estas cifras son estimaciones a partir del número de parámetros, no datos publicados en la model card.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU consumer moderna es sobradamente suficiente.
-- Cabe en GPU consumer: sí, en cualquier GPU consumer actual; también funciona en CPU en fp32, tal como documenta el autor con el ejemplo de código.
-- Opciones de despliegue: `transformers` (probado en 4.57.1 y 5.22.1) con `AutoModelForCausalLM` y `AutoTokenizer` sin `trust_remote_code`; llama.cpp mediante los archivos GGUF incluidos; el tag `text-generation-inference` y `endpoints_compatible` aparece en los metadatos de Hugging Face.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 340 MB en fp32 (84,96 M de parámetros × 4 bytes), unos 170 MB en fp16/bf16 y menos de 100 MB en cuantizaciones GGUF de 4 bits, sin contar el overhead del runtime.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; no requiere A100, H100 ni RTX 4090. Funciona en GPUs integradas y en CPU.
+- Cabe holgadamente en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) y en Raspberry Pi o portátiles convencionales en CPU.
+- Opciones de despliegue: `transformers` (probado en las versiones 4.57.1 y 5.22.1), llama.cpp mediante los ficheros GGUF incluidos, Text Generation Inference (etiqueta `text-generation-inference` en el repo) y cualquier runtime compatible con safetensors.
+- Latencia y throughput: no disponibles. El autor solo indica que la generación del ejemplo se ejecutó en CPU en fp32 con resultados idénticos en ambas versiones de `transformers`.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de comparaciones publicadas en la información proporcionada que permitan una comparativa rigurosa con alternativas de la misma categoría. Como referencia estructural, se puede situar frente a otros modelos pequeños de la familia SmolLM y similares, pero sin cifras verificadas:
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| PicoLM-V4-85M-Instruct | 84,96 M | 2048 | inglés | Apache 2.0 | Ajuste fino sobre SmolTalk; falla aritmética y gran parte de preguntas factuales |
+| SmolLM2-135M-Instruct (HuggingFaceTB) | 135 M | 2048 | inglés | Apache 2.0 | Referencia habitual para modelos pequeños; datos de benchmark no disponibles en esta ficha |
+| Qwen2.5-0.5B-Instruct (Alibaba) | 500 M | 32.768 | multilingüe | Apache 2.0 | Mayor tamaño y contexto; datos de benchmark no disponibles en esta ficha |
+| PicoLM-V4-85M (modelo base) | 84,96 M | 2048 | inglés | Apache 2.0 | Sin ajuste conversacional; mismo autor y arquitectura |
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| PicoLM-V4-85M-Instruct | 84,96 M | 2048 | Apache 2.0 | Entrenado desde cero, ajustado sobre SmolTalk; sin benchmarks publicados |
-| SmolLM2-135M-Instruct | 135 M (aprox., no verificado en la información disponible) | no disponible | no disponible | Alternativa de tamaño similar de Hugging Face; sin datos comparativos en esta ficha |
-| Qwen3 pequeño | no disponible | no disponible | no disponible | El modelo adopta el formato Qwen3, pero no se aportan cifras de comparación |
-
-Los datos de las filas de SmolLM2 y Qwen3 no están verificados en la información proporcionada y se incluyen solo como referencia de categoría; no deben usarse para decidir entre modelos sin consultar sus model cards originales.
+No se dispone de datos de rendimiento comparativos verificados en la información proporcionada; la comparación se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte que el modelo se equivoca en datos fácticos y aritmética la mayor parte del tiempo; produce respuestas fluidas que a menudo son falsas.
-- No es apto para respuesta a preguntas, aritmética, traducción, generación de código ni ningún escenario donde la respuesta deba ser correcta.
-- Solo soporta inglés; no se documenta soporte multilingüe.
-- Contexto limitado a 2048 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Riesgo de bucles en la generación: 5,6 % de los prompts con decodificación greedy y `repetition_penalty=1.1`, 3,6 % con muestreo.
-- El uso de system prompts debe limitarse a formatos sencillos; el autor no garantiza su robustez.
-- Los datos de ajuste fino son sintéticos y en gran parte generados por otros modelos de lenguaje; el autor no verificó su origen ni sus términos más allá de lo indicado en las fichas del dataset, y la licencia Apache 2.0 del modelo no elimina esas condiciones.
-- No se documentan sesgos específicos medidos, pero al entrenarse sobre datos sintéticos en inglés hereda los sesgos de las fuentes y del proceso de generación.
-- No se han publicado benchmarks estándar, por lo que no hay evidencia cuantitativa de calidad más allá de las métricas internas del autor.
-- Para uso comercial, la licencia Apache 2.0 lo permite, pero deben respetarse los términos de las fuentes de datos sintéticos subyacentes.
+- El propio autor declara que el modelo no es adecuado para respuesta a preguntas, aritmética, traducción, generación de código ni ningún escenario donde la respuesta deba ser correcta; produce respuestas fluidas que a menudo son falsas.
+- Riesgo elevado de alucinación: falló dos de cinco preguntas factuales en la batería del autor.
+- No respeta restricciones estrictas de formato ni de longitud, lo que impide usarlo en pipelines que dependan de salidas estructuradas garantizadas.
+- No responde de forma fiable a mensajes de sistema; un resumen de una frase bajo system prompt falló en el panel de pruebas.
+- La conversación multi-turno está en gran medida sin evaluar.
+- Contexto limitado a 2048 tokens e idioma limitado al inglés.
+- El muestreo (temperatura 0,7, top-p 0,9) redujo los bucles pero produjo más sinsentidos en las respuestas revisadas; la configuración recomendada es decodificación greedy con `repetition_penalty=1.1`.
+- No se debe añadir token de inicio de texto al prompt, ya que el modelo se ajustó sin él.
+- Licencia Apache 2.0: permite uso comercial, pero las limitaciones de calidad desaconsejan cualquier despliegue en producción que requiera corrección.
+- No dispone de soporte de tool calling, agentes ni razonamiento multi-paso.
+- El ajuste fino se realizó sobre datos mayoritariamente sintéticos, lo que puede introducir sesgos y artefactos propios de los generadores utilizados.
 
 ## Enlaces
 

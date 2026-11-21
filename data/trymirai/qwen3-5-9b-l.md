@@ -2,90 +2,101 @@
 
 ## Resumen
 
-Mirai Qwen3.5-9B-L es una cuantizacion de 8 bits del modelo base Qwen/Qwen3.5-9B, publicada por trymirai (Mirai Labs) bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de un checkpoint cuantizado mediante quantizacion post-entrenamiento (PTQ) disenado especificamente para inferencia local eficiente en Apple silicon. El modelo conserva los 9.095.911.424 parametros del original, empaquetados en 8 bits con escalas bfloat16.
+Mirai Qwen3.5-9B Large es una cuantizacion de 8 bits del modelo Qwen3.5-9B de Alibaba, publicada por trymirai (Mirai Labs) bajo licencia Apache 2.0. El checkpoint incorpora, ademas de los pesos cuantizados del modelo base, un especulador de decodificacion (un draft model DFlash de seis capas, un modelo Weaver de una capa para construccion de arbol y una cabeza de confianza aprendida) que acelera la inferencia sobre silicio de Apple. El objetivo es desplazar la frontera velocidad-calidad de los LLM locales en macOS sin degradar de forma apreciable la distribucion del modelo original: el autor reporta una divergencia KL de 0,0007345 y un 98,96 % de acuerdo top-1 frente al profesor.
 
-El problema que aborda es el coste de memoria y la latencia de ejecutar un modelo de ~9B parametros en hardware de consumo, en particular en equipos Mac con memoria unificada. El autor situa este checkpoint en la frontera de Pareto tamano-divergencia KL, afirmando que no encontro ningun checkpoint mas pequeno con menor divergencia KL respecto al modelo original.
+El modelo conserva los 9.095.911.424 parametros del Qwen3.5-9B original; la cuantizacion es simetrica de 8 bits con escalas en bfloat16 y tamano de grupo 64, complementada con transformadas de Hadamard aleatorias bloque-diagonales (bloque de 32) para reducir valores atipicos en activaciones y pesos. El repositorio ocupa 49,7 GB e incluye pesos en safetensors, el especulador en formato MLX de 2 bits y artefactos auxiliares.
 
-La relevancia actual del modelo es acotada y muy especifica: su libreria de ejecucion (`uzu`) solo soporta inferencia en Apple silicon, lo que lo excluye de facto de despliegues en GPU NVIDIA o en servidores Linux convencionales. Para el resto de plataformas, el modelo base Qwen3.5-9B o cuantizaciones GGUF estandar resultan opciones mas practicas.
+La relevancia actual del checkpoint es doble: por un lado, demuestra que la cuantizacion de 8 bits con transformadas de Hadamard puede mantener una calidad casi identica al modelo en bf16; por otro, introduce decodificacion especulativa empaquetada con el modelo, algo poco habitual en publicaciones de cuantizacion. La contrapartida es una dependencia fuerte del ecosistema propietario de Mirai: la libreria `uzu` y la CLI `mirai`, con soporte exclusivo para Apple silicon en el momento de la publicacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (heredada del modelo base Qwen/Qwen3.5-9B; transformer segun la familia Qwen, sin confirmar en la informacion proporcionada) |
+| Arquitectura | Transformer (heredada de Qwen3.5-9B; detalles no disponibles en la informacion proporcionada) |
 | Parametros totales | 9.095.911.424 |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit entero simetrico, escalas bfloat16, group size 64 |
+| Tipos de cuantizacion | 8 bits simetrica entera con escalas bfloat16 y group size 64; especulador en 2 bits MLX con group size 128 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria `uzu`); no se ofrece GGUF |
+| Formato de pesos | safetensors (modelo principal); MLX cuantizado para el especulador |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base Qwen/Qwen3.5-9B, cuyos detalles no se reproducen en la informacion disponible; la model card remite explicitamente al repositorio original para arquitectura, datos de entrenamiento y evaluaciones. Lo unico documentado en esta ficha es el proceso de cuantizacion: 8 bits enteros simetricos con escalas bfloat16 y tamano de grupo 64, aplicado como quantizacion post-entrenamiento, sin fine-tuning posterior.
+El checkpoint es una cuantizacion post-entrenamiento del Qwen3.5-9B. La receta de Mirai Large aplica cuantizacion simetrica de 8 bits con escalas en bfloat16 y tamano de grupo 64, e inserta transformadas de Hadamard aleatorias con estructura bloque-diagonal (bloque de 32) para aplanar los valores atipicos tanto en activaciones como en pesos antes de cuantizar. Segun la model card, los pesos del modelo base no se modifican en esta release; lo que se actualiza respecto a versiones anteriores es el especulador y la cabeza de confianza.
 
-La innovacion tecnica declarada es el uso de Block-diagonal Random Hadamard Transforms con tamano de bloque 32 para reducir los valores atipicos (outliers) tanto en activaciones como en pesos, lo que mitiga la perdida de calidad tipica de la cuantizacion a 8 bits. El autor reporta que el checkpoint se situa en la frontera de Pareto tamano-KL, evaluado sobre una mezcla de datos compuesta por un 45% de datos publicos agenticos, un 30% de datos publicos de SFT y contexto largo, y un 25% de datos privados de chat. No se proporcionan cifras absolutas de divergencia KL ni curvas numericas.
+El componente diferencial es el subsistema de decodificacion especulativa, ubicado en el directorio `speculator/`: un draft model DFlash de seis capas, un modelo Weaver de una capa que construye el arbol de candidatos y una cabeza de confianza aprendida que decide cuando aceptar tokens propuestos. Las proyecciones de DFlash y Weaver usan cuantizacion MLX de 2 bits con group size 128 y transformadas de Hadamard de 32 en entrada y salida. Las variantes Large y Medium comparten los mismos pesos de especulador y cabeza de confianza. No se dispone de informacion sobre el volumen de tokens de entrenamiento del modelo base, la composicion del dataset ni si hubo RLHF o DPO; esos datos corresponden a la model card de Qwen/Qwen3.5-9B, no incluida en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto: es la unica tarea declarada en el pipeline (`text-generation`).
-- Razonamiento y codigo: no confirmado en la informacion disponible; depende de las capacidades heredadas del modelo base Qwen3.5-9B, no documentadas aqui.
-- Tool calling / function calling: no confirmado. El conjunto de evaluacion incluye un 45% de datos agenticos, lo que sugiere que el modelo se evaluo en escenarios con herramientas, pero no se documenta soporte explicito.
-- Agentes y razonamiento multi-paso: no confirmado; la mezcla de evaluacion agentica es el unico indicio.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
-- Inferencia local en Apple silicon: capacidad operativa confirmada mediante el CLI `mirai`.
+- Generacion de texto autoregresiva, heredada del modelo base Qwen3.5-9B.
+- Decodificacion especulativa con draft model DFlash, modelo Weaver y cabeza de confianza aprendida, orientada a reducir la latencia por token.
+- Cuantizacion de 8 bits con calidad practicamente indistinguible del profesor segun la metrica del autor (KL 0,0007345; acuerdo top-1 del 98,96 % sobre 14.399 tokens de continuacion generados por el profesor en 20 conversaciones).
+- Inferencia local en Apple silicon mediante la CLI `mirai` y la libreria `uzu`.
+- Capacidades de razonamiento, codigo, matematicas, tool calling, agentes o vision: no disponibles en la informacion proporcionada (dependen del modelo base y no se detallan en esta model card).
+- Soporte multilingue: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Prototipado local en Mac: desarrolladores que quieran probar un modelo de ~9B en un MacBook con memoria unificada sin depender de la nube, instalando `mirai` via Homebrew y ejecutando el checkpoint directamente.
-- Asistentes de chat privados: al ejecutarse en local, el modelo permite conversaciones sin enviar datos a terceros, adecuado para entornos con requisitos de privacidad estrictos.
-- Evaluacion de cuantizaciones: investigadores que comparen la perdida de calidad de distintas cuantizaciones 8-bit pueden usar este checkpoint como referencia en la frontera tamano-KL declarada por el autor.
-- Desarrollo de aplicaciones sobre `uzu`: equipos que construyan sobre la libreria `uzu` y necesiten un checkpoint de referencia de ~9B con licencia permisiva.
-- Experimentacion con contexto largo: si se confirma la ventana de contexto del modelo base, el checkpoint serviria para pruebas de resumen y QA sobre documentos largos en local.
-- Educacion y demos offline: talleres o demostraciones sin conectividad, donde un modelo Apache 2.0 ejecutable en portatil Apple simplifica la logistica.
+- Inferencia local en Mac para desarrollo y prototipado: el checkpoint esta disenado para ejecutarse en Apple silicon con la CLI `mirai`, lo que permite disponer de un modelo de 9B en 8 bits en un portatil o Mac Studio sin GPU dedicada.
+- Asistentes de codigo en el editor sobre macOS: la decodificacion especulativa reduce la latencia por token, algo critico en autocompletado interactivo donde el tiempo hasta el primer token y el throughput sostenido condicionan la experiencia.
+- Procesamiento por lotes de texto en local: al mantener la distribucion del modelo original con una KL muy baja, es adecuado para tareas de resumen, extraccion y reescritura que no toleran derivas notables respecto al modelo de referencia.
+- Evaluacion comparativa de tecnicas de cuantizacion: el checkpoint publica metricas KL y acuerdo top-1 medibles con `romakl`, lo que lo convierte en un punto de referencia util para investigar el impacto de la cuantizacion de 8 bits con transformadas de Hadamard.
+- Investigacion en decodificacion especulativa: el especulador DFlash + Weaver + cabeza de confianza es un caso de estudio concreto de tree-based speculative decoding empaquetado con el modelo, replicable en otros checkpoints.
+- Despliegue de un asistente conversacional privado en estaciones de trabajo Mac: al ejecutarse integramente en local, evita el envio de datos a servicios externos, lo que encaja en entornos con requisitos de confidencialidad.
+- Generacion de contenido asistida en flujos de trabajo de escritorio: integrable mediante la CLI o la libreria `uzu` en scripts y automatizaciones de macOS.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye una grafica cualitativa de divergencia KL frente a tamano del checkpoint y la afirmacion de que el modelo se encuentra en la frontera de Pareto, sin cifras numericas de MMLU, HumanEval, GSM8K ni metricas equivalentes.
+Los unicos datos publicados en la informacion disponible son las metricas de fidelidad de la cuantizacion frente al profesor, evaluadas con `romakl` sobre su conjunto por defecto (20 conversaciones, 14.399 tokens de continuacion generados por el profesor):
+
+| Metrica | Valor |
+|---|---|
+| Divergencia KL frente al profesor | 0,0007345 |
+| Acuerdo top-1 | 98,96 % |
+| Conjunto de evaluacion | 20 conversaciones, 14.399 tokens |
+| Herramienta | romakl (commit bfb79f5) |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card remite a la del modelo original Qwen/Qwen3.5-9B para evaluaciones, pero esos datos no se incluyen aqui.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: con 9.095.911.424 parametros a 8 bits, los pesos ocupan aproximadamente 9,1 GB, mas escalas bfloat16 (group size 64) y overhead de ejecucion; el repositorio completo ocupa 49,3 GB, lo que sugiere que incluye multiples artefactos ademas de los pesos principales.
-- GPU recomendadas: no disponible. La unica plataforma soportada es Apple silicon; no se documenta soporte para A100, H100 ni RTX 4090.
-- Compatibilidad con GPU de consumo: no confirmada para NVIDIA ni AMD. En Apple silicon, el requisito es disponer de memoria unificada suficiente para los pesos mas el contexto.
-- Opciones de despliegue: CLI `mirai` (Homebrew) y la libreria `uzu`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, y el formato safetensors con libreria propia complica su uso en esos motores.
-- Latencia y throughput: no disponibles.
+- VRAM/ memoria unificada estimada: el repositorio ocupa 49,7 GB, pero ese tamano incluye pesos auxiliares (especulador, vision y MTP). El peso generador de tokens en 8 bits para 9.095.911.424 parametros ronda los 9,1 GB en el mejor caso teorico, aunque el tamano real en disco y en memoria debe consultarse en la pagina del modelo; no se proporciona una cifra oficial de memoria de inferencia.
+- Plataforma soportada: exclusivamente Apple silicon (macOS) en el momento de la publicacion, segun la model card.
+- GPU recomendadas: no disponibles. El modelo no esta pensado para CUDA; no se documenta soporte para A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: si, en el ecosistema Apple (Mac con memoria unificada suficiente), aunque no se especifica el minimo exacto de memoria unificada requerido.
+- Opciones de despliegue: CLI `mirai` (instalable via Homebrew: `brew install mirai`) y la libreria `uzu`; compilacion desde el repositorio de GitHub de `uzu`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles como cifras absolutas; la model card solo afirma que la decodificacion especulativa mejora la frontera velocidad-calidad, sin publicar tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Plataformas |
+| Modelo | Parametros | Contexto | Licencia | Formato / plataforma | Notas |
 |---|---|---|---|---|---|
-| trymirai/Qwen3.5-9B-L | 9.095.911.424 | no disponible | 8-bit (uzu) | Apache 2.0 | Apple silicon (uzu) |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | bfloat16 original | Apache 2.0 | Multiples (segun model card original) |
-| Cuantizaciones GGUF de la familia Qwen3.5-9B | ~9B | no disponible | 4-8 bit (GGUF) | Apache 2.0 (heredada) | llama.cpp, Ollama, LM Studio |
+| trymirai/Qwen3.5-9B-L (este) | 9,10 B | no disponible | Apache 2.0 | safetensors + MLX, solo Apple silicon | Cuantizacion 8 bits con especulador incluido; KL 0,0007345 |
+| Qwen/Qwen3.5-9B (base) | 9,10 B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar; referencia de calidad |
+| Otras cuantizaciones de Qwen3.5-9B (GGUF, MLX) | 9,10 B | no disponible | Apache 2.0 (heredada) | GGUF, MLX | No se dispone de datos comparativos en la informacion proporcionada |
 
-La comparativa se limita a alternativas de la misma familia porque no se dispone de datos de rendimiento que permitan contrastar con modelos de otros autores. La diferencia practica clave frente al base es el tamano en memoria y la plataforma de ejecucion; frente a GGUF, la diferencia es el ecosistema de herramientas.
+No se dispone de informacion sobre alternativas comparables con metricas publicadas en el mismo conjunto de evaluacion; la comparativa se limita al modelo base y a formatos de cuantizacion genericos.
 
 ## Limitaciones y advertencias
 
-- Plataforma unica: solo se soporta inferencia en Apple silicon mediante `uzu`; no hay soporte documentado para CUDA, ROCm ni CPU generica.
-- Perdida de calidad por cuantizacion: aunque el autor la describe como minima, toda cuantizacion 8-bit introduce degradacion respecto al modelo en bfloat16; no se aportan cifras absolutas de KL para cuantificarla.
-- Sesgos: no documentados en la informacion disponible; se heredan los del modelo base Qwen3.5-9B, no descritos aqui.
-- Alucinacion: no se aportan evaluaciones de factualidad ni tasas de alucinacion.
-- Idiomas: no se especifica la cobertura linguistica del modelo base en esta ficha.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar cargas de trabajo con documentos largos.
-- Licencia: Apache 2.0 permite uso comercial, pero el enlace de licencia apunta al fichero del modelo base; conviene verificar condiciones adicionales del autor original.
-- Madurez: el repositorio tiene 732 descargas y 0 likes, con actualizacion en noviembre de 2026; el ecosistema `uzu`/`mirai` es de nicho y con soporte limitado fuera de macOS.
-- Formato propietario: los pesos en safetensors para `uzu` no son directamente cargables en motores estandar, lo que limita la portabilidad.
+- Dependencia de plataforma: solo se soporta inferencia en Apple silicon; no hay soporte documentado para CUDA, ROCm ni CPU generica.
+- Dependencia de tooling propietario: requiere la CLI `mirai` o la libreria `uzu`, lo que limita la portabilidad y la integracion en pipelines existentes basados en vLLM, TGI o llama.cpp.
+- Idiomas soportados no documentados: la model card no especifica la cobertura linguistica, que hereda del modelo base pero no se detalla.
+- Longitud de contexto no documentada: no se indica la ventana de contexto efectiva de esta cuantizacion.
+- Riesgo de alucinacion: inherente al modelo base; no se han publicado evaluaciones de factualidad especificas para este checkpoint.
+- Sesgos: no se documentan sesgos conocidos en la informacion proporcionada; deben asumirse los del modelo Qwen3.5-9B original.
+- Licencia: Apache 2.0 permite uso comercial, pero la licencia enlazada apunta al fichero LICENSE del modelo base; conviene verificar los terminos del modelo original antes de un despliegue comercial.
+- El checkpoint actualiza el especulador y la cabeza de confianza respecto a releases anteriores, pero mantiene los pesos del modelo base; no debe confundirse con un fine-tuning.
+- El tamano del repositorio (49,7 GB) incluye pesos auxiliares no necesarios para la generacion de texto, lo que puede complicar la gestion de almacenamiento y la descarga.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.5-9B-L
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Model card del base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/README.md
-- Licencia del base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
-- Pagina del modelo en Mirai: https://trymirai.com/local-models/alibaba-qwen3-5-9b-mirai-mirai-l-8
-- Blog de cuantizacion de Mirai: https://trymirai.com/blog/quantization
-- Guia de ejecucion de uzu: https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
+- Model card del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/README.md
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
+- Pagina del producto: https://trymirai.com/local-models/alibaba-qwen3-5-9b-mirai-mirai-l-8
+- Blog de cuantizacion: https://trymirai.com/blog/quantization
+- Repositorio de uzu: https://github.com/trymirai/uzu
+- Herramienta romakl: https://github.com/trymirai/romakl/tree/bfb79f548a80b6af7d9f4d4e35d0db99b97708e8

@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "The Quiz Widget - BookWidgets",
-      "url": "https://www.bookwidgets.com/widget-library/quiz",
-      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
-    },
-    {
-      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
-      "url": "https://embeddable.co/free-quiz-widgets",
-      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
-    },
-    {
-      "title": "Free Quiz Widget Generator & Playground - PlayQuizNow",
-      "url": "https://playquiznow.com/playground",
-      "snippet": "Create embeddable quiz widgets for your website in seconds. Customize themes, preview in real-time, and copy the embed code. …"
-    },
-    {
-      "title": "Free Quiz Maker Widget - commoninja.com",
-      "url": "https://www.commoninja.com/widgets/quiz",
-      "snippet": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, …"
-    },
-    {
-      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
-      "url": "https://embeddable.co/use-cases/interactive-quizzes",
-      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
-    }
-  ]
+  "sources": []
 }

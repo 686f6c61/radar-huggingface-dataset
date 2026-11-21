@@ -2,49 +2,52 @@
 
 ## Resumen
 
-Granite-speech-4.1-2b-plus-GGUF es la version cuantizada en formato GGUF del modelo de voz de IBM Research, publicada en el repositorio `ibm-research` bajo licencia Apache 2.0. Se trata de una conversion del modelo base `ibm-granite/granite-speech-4.1-2b-plus` orientada a su ejecucion con llama.cpp, lo que permite desplegar el modelo en hardware modesto sin necesidad de GPUs de datacenter. El repositorio ocupa 1,2 GB e incluye multiples niveles de cuantizacion.
+Granite-speech-4.1-2b-plus es un modelo de reconocimiento automatico del habla (ASR) desarrollado por IBM Research, publicado originalmente en formato Transformers y distribuido en este repositorio en formato GGUF para su uso con llama.cpp. El modelo pertenece a la familia Granite 4.1 y esta disenado especificamente para transcripcion de audio a texto, incluyendo la posibilidad de recibir instrucciones en lenguaje natural junto con el audio. Con 1.631.752.192 parametros, se posiciona como un modelo compacto orientado a despliegues en entornos con recursos limitados.
 
-El modelo pertenece a la familia Granite 4.1 de IBM y esta especializado en tareas de voz (speech), si bien la informacion disponible en esta ficha no detalla si cubre reconocimiento automatico del habla (ASR), traduccion de voz o sintesis. El nombre comercial indica "2b", pero el recuento real de parametros en safetensors del modelo base es de 480.060.764, una discrepancia que conviene tener en cuenta al planificar el despliegue.
+La relevancia de esta publicacion radica en que permite ejecutar un modelo de voz de IBM en infraestructura local mediante llama.cpp, sin depender de APIs propietarias. El repositorio incluye cuantizaciones multiples y un proyector de audio (`mmproj-model-f16.gguf`) que actua como adaptador entre el encoder de audio y el modelo de lenguaje subyacente. La licencia Apache 2.0 facilita su integracion en productos comerciales.
 
-Su relevancia actual radica en dos factores: la licencia Apache 2.0, poco habitual en modelos de voz de calidad, y la disponibilidad de pesos GGUF listos para llama.cpp, lo que reduce la barrera de entrada para experimentacion e integracion en produccion. La model card del repositorio GGUF es minima y remite integramente a la del modelo base.
+El modelo se distribuye bajo el identificador `ibm-research/granite-speech-4.1-2b-plus-GGUF` y cuenta con 855 descargas en el momento de la consulta. La model card remite a la ficha del modelo base para especificaciones completas de arquitectura y entrenamiento, que no se detallan en este repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 480.060.764 (segun safetensors del modelo base); la nomenclatura comercial indica "2b" |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo multimodal audio-texto de la familia Granite 4.1; requiere proyector de audio `mmproj-model-f16.gguf`) |
+| Parametros totales | 1.631.752.192 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | multiples cuantizaciones GGUF (niveles concretos no especificados en la informacion disponible) |
+| Tipos de cuantizacion | GGUF con varias cuantizaciones (el ejemplo oficial usa Q8_0); proyector en f16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (libreria llama.cpp); modelo base en safetensors |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo en los datos proporcionados. La model card del repositorio GGUF no incluye detalles sobre el tipo de red (transformer, encoder-decoder, hibrida), la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas.
+La informacion disponible en este repositorio no detalla la arquitectura interna del modelo. Se trata de un modelo de la familia Granite 4.1 orientado a voz, que combina un componente de procesamiento de audio con un modelo de lenguaje, tal como evidencia la necesidad de cargar un proyector multimodal separado (`mmproj-model-f16.gguf`) junto con los pesos cuantizados. El modelo base es `ibm-granite/granite-speech-4.1-2b-plus`, y la model card remite a su ficha para los detalles de arquitectura, datos de entrenamiento y proceso de alineacion.
 
-Lo unico verificable es que el modelo base es `ibm-granite/granite-speech-4.1-2b-plus`, de IBM, y que esta version ha sido convertida a GGUF para su uso con llama.cpp. Para obtener detalles de arquitectura y entrenamiento es necesario consultar la model card del modelo base, referenciada por el autor pero no incluida en la informacion disponible.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal en la informacion proporcionada.
 
 ## Capacidades
 
-- Procesamiento de voz: el nombre del modelo y su etiqueta `granite-4.1` indican capacidades de speech, aunque la informacion disponible no especifica si se trata de ASR, traduccion de voz, diarizacion o una combinacion.
-- Generacion de lenguaje: la etiqueta `language` sugiere capacidades de modelado de lenguaje, presumiblemente como componente de un pipeline de voz.
-- Ejecucion en llama.cpp: al estar en GGUF, el modelo puede ejecutarse en CPU y GPU con la infraestructura de llama.cpp.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible mas alla de la orientacion a voz.
+- Transcripcion de audio a texto: convierte senales de voz en texto plano, como demuestra el ejemplo oficial con el archivo `OSR_us_000_0010_8k.wav`.
+- Instrucciones en lenguaje natural: acepta un prompt de texto junto con el audio (por ejemplo, "Transcribe this audio file."), lo que sugiere capacidad de seguir instrucciones sobre la tarea a realizar.
+- Procesamiento multimodal audio-texto: integra contenido de tipo `input_audio` con contenido de tipo `text` en el mismo mensaje.
+- Compatibilidad con la API OpenAI: el servidor `llama serve` expone el endpoint `/v1/chat/completions` con soporte para audio en base64.
+- Conversacion de un solo turno: el ejemplo oficial usa `--single-turn`, lo que indica que el caso de uso principal es la transcripcion puntual.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la informacion proporcionada.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Modo thinking, vision o audio bidireccional: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Transcripcion de audio en local: el formato GGUF permite ejecutar el modelo con llama.cpp en equipos sin GPU dedicada, lo que facilita prototipos de transcripcion en entornos de desarrollo o en el borde.
-- Integracion en pipelines de voz autoalojados: al tener licencia Apache 2.0, puede incorporarse en productos comerciales de procesamiento de audio sin obligaciones de redistribucion del codigo.
-- Experimentacion academica con modelos de voz: el tamano reducido del repositorio (1,2 GB) y las cuantizaciones disponibles permiten iterar rapidamente en laboratorios con recursos limitados.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye varias cuantizaciones del mismo modelo, lo que permite medir el impacto de la cuantizacion en la calidad de las transcripciones o representaciones de voz.
-- Despliegue en dispositivos con memoria restringida: las cuantizaciones GGUF de menor precision permiten ejecutar el modelo en portatiles y mini-PCs, util para demos y pruebas de concepto.
-- Base para fine-tuning especifico de dominio: al ser un modelo pequeno y de licencia permisiva, puede servir como punto de partida para adaptaciones a dominios concretos (call centers, dictado medico) una vez identificada su tarea exacta de voz.
+- Transcripcion de reuniones y notas de voz: el modelo puede convertir grabaciones de audio en texto para actas, resumenes o busqueda posterior. Su tamano compacto (1.63B parametros) permite ejecutarlo en local sin enviar audio sensible a servicios externos.
+- Subtitulado y accesibilidad: integrado en pipelines de video, puede generar transcripciones para subtitulos automaticos en aplicaciones de accesibilidad, aprovechando el endpoint compatible con la API OpenAI para conectar con herramientas existentes.
+- Dictado por voz en aplicaciones de escritorio: al ejecutarse con llama.cpp, puede embeberse en aplicaciones de escritorio o moviles que necesiten dictado sin conexion, usando la cuantizacion Q8_0 para equilibrar calidad y huella de memoria.
+- Analisis de llamadas de atencion al cliente: transcripcion de grabaciones para auditoria de calidad, deteccion de palabras clave o generacion de resumenes posteriores, con la ventaja de que el audio no abandona la infraestructura propia.
+- Investigacion en ASR: sirve como linea base reproducible para experimentos de reconocimiento de voz, ya que el formato GGUF y llama.cpp facilitan la ejecucion en distintas plataformas de hardware.
+- Procesamiento por lotes de archivos de audio: mediante `llama cli` o `llama serve`, se pueden transcribir lotes de grabaciones en servidores con GPU modestas, dado el reducido numero de parametros.
+- Prototipado de asistentes de voz: combinado con un modelo de lenguaje y un sintetizador de voz, puede formar parte de un pipeline de asistente conversacional por voz en entornos con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
@@ -52,27 +55,32 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision; con 480 millones de parametros, una cuantizacion de 4 bits ocuparia del orden de 0,3 GB solo en pesos, aunque el componente de audio (encoder) puede anadir requisitos no documentados.
-- GPU recomendadas: no disponible. Por tamano, el modelo es apto para GPUs consumer, pero no hay datos oficiales de rendimiento.
-- Cabe en GPU consumer: previsiblemente si, dado el reducido numero de parametros, aunque no se confirma en la informacion disponible.
-- Opciones de despliegue: llama.cpp (soporte nativo por el formato GGUF). Otras opciones como vLLM, TGI u Ollama no estan confirmadas para este modelo.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el numero de parametros (1.63B), una cuantizacion Q8_0 ocupa aproximadamente 1.7 GB de pesos, mas el proyector de audio en f16; el consumo total de memoria depende del contexto y del backend.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por el tamano del modelo, es probable que quepa en GPUs de consumo, pero no se confirma oficialmente.
+- Compatibilidad con GPU de consumo: no confirmada oficialmente en la informacion disponible.
+- Opciones de despliegue: llama.cpp (`llama cli` y `llama serve`), con build tag `b11798` y version de Transformers `5.20.2` como referencia del entorno de conversion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria ni datos de rendimiento que permitan una comparacion rigurosa.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos de ASR, por lo que no es posible establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio GGUF es minima y remite al modelo base; no hay documentacion propia sobre limitaciones, sesgos o casos de fallo.
-- Existe una discrepancia entre el nombre comercial ("2b") y el recuento real de parametros (480 millones), lo que puede llevar a estimaciones erroneas de requisitos.
-- Se desconoce la tarea exacta de voz cubierta (ASR, traduccion, etc.), por lo que no debe asumirse su idoneidad para un caso concreto sin validacion previa.
-- No hay informacion sobre idiomas soportados; el rendimiento en castellano no esta garantizado.
-- No se documentan sesgos conocidos ni tasas de alucinacion.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base por si hubiera terminos adicionales no reflejados en esta ficha.
-- Al ser una cuantizacion, es esperable cierta perdida de calidad respecto al modelo base; no se han publicado evaluaciones de esa degradacion.
+- La model card de este repositorio es minima y remite al modelo base; no documenta sesgos, limitaciones de idioma ni comportamiento en dominios especificos.
+- Riesgo de alucinacion: no documentado en la informacion disponible, pero es un riesgo inherente a los modelos generativos de audio a texto.
+- Idiomas soportados: no disponibles; el ejemplo oficial usa audio en ingles, por lo que el rendimiento en otros idiomas no esta verificado.
+- Contexto: la longitud de contexto no esta documentada, lo que impide planificar audios de larga duracion sin pruebas previas.
+- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero conviene revisar la ficha del modelo base por si hubiera condiciones adicionales.
+- El ejemplo oficial usa `--single-turn`; el comportamiento en conversaciones multiturno con audio no esta documentado.
+- La calidad de la transcripcion puede degradarse con audio ruidoso, acentos no representados en el entrenamiento o dominios especializados; no hay datos publicados al respecto.
+- El repositorio ocupa 9.7 GB debido a las multiples cuantizaciones; conviene descargar solo el archivo necesario.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ibm-research/granite-speech-4.1-2b-plus-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
+- Documentacion de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Referencia de `llama cli`: https://github.com/ggml-org/llama.cpp/blob/master/tools/cli/README.md
+- Referencia de `llama serve`: https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md
+- Open Speech Repository (audio de ejemplo): https://www.voiptroubleshooter.com/open_speech/american.html

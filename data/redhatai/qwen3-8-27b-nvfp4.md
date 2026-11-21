@@ -2,102 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-27B-NVFP4 es una versión cuantizada del modelo multimodal Qwen/Qwen3.8-27B, publicada por RedHatAI (equipo vinculado a Neural Magic y a la iniciativa de compresión de modelos de Red Hat). El modelo original, desarrollado por Qwen (Alibaba), es un transformer multimodal de tipo `Qwen3_5ForConditionalGeneration` que acepta texto e imagen como entrada y genera texto. Esta variante aplica una cuantización de precisión mixta FP4/FP8 sobre los pesos y activaciones, reduciendo el checkpoint de aproximadamente 54 GB en BF16 a unos 24,7 GB en disco, lo que supone una reducción de en torno al 70 % en requisitos de almacenamiento y memoria de GPU.
+Qwen3.8-27B-NVFP4 es una versión cuantizada en precisión mixta FP4/FP8 del modelo multimodal Qwen/Qwen3.8-27B, publicada por RedHatAI (Red Hat AI) dentro de su colección de modelos de terceros validados para el portfolio de productos de IA de Red Hat. El checkpoint reduce el peso en disco de aproximadamente 54 GB en BF16 a unos 24,7 GB, un recorte de en torno al 70 %, manteniendo el cabeza del modelo de lenguaje (lm_head) en precisión completa para preservar la calidad de salida.
 
-La relevancia de esta ficha radica en que permite desplegar un modelo de gran tamaño con capacidades de razonamiento, matemáticas, código y visión en hardware más modesto, manteniendo una recuperación de precisión muy alta respecto al original en los benchmarks publicados (por encima del 98 % en la mayoría de las tareas de razonamiento evaluadas). El modelo está pensado para servirse con vLLM y aprovecha el formato `compressed-tensors` de LLM Compressor, además de ofrecer soporte para decodificación especulativa mediante un modelo draft dedicado.
+El modelo resuelve el problema de desplegar un modelo de 20.294.595.344 parámetros con capacidades de razonamiento, código y visión en hardware con memoria limitada, sin renunciar de forma apreciable a la precisión del modelo original. La arquitectura declarada es Qwen3_5ForConditionalGeneration, con entrada de texto e imagen y salida de texto, y está pensada para servirse con vLLM 0.24.0 o superior, con soporte de decodificación especulativa mediante MTP o el draft model DSpark.
 
-El checkpoint real en safetensors declara 20.294.595.344 parámetros, aunque el nombre comercial del modelo haga referencia a 27B; esta discrepancia debe tenerse en cuenta al planificar el despliegue. La licencia es Apache 2.0 y la fecha de publicación indicada es el 21 de septiembre de 2026.
+Es relevante ahora porque combina cuantización NVFP4 (formato de 4 bits nativo de las GPU Blackwell) con FP8 dinámico en atención y caché KV, y porque la model card reporta una recuperación de precisión prácticamente completa frente al BF16 en benchmarks de razonamiento, matemáticas e instrucciones. La licencia Apache 2.0 facilita su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal, entrada texto/imagen, salida texto) |
-| Parámetros totales | 20.294.595.344 (según safetensors); nombre comercial 27B |
-| Parámetros activos | no disponible |
+| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal, texto + imagen) |
+| Parametros totales | 20.294.595.344 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | FP4 y FP8 (pesos y activaciones); KV cache en FP8; cabeza LM sin cuantizar |
+| Tipos de cuantizacion | FP4 (NVFP4) en proyecciones MLP; FP8 dinámico en atención y capas MLP finales; caché KV en FP8; lm_head sin cuantizar |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con `compressed-tensors` (vLLM, llm-compressor) |
+| Formato de pesos | safetensors con compressed-tensors (repo de 24,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal de la familia Qwen3.5 que procesa entradas de texto e imagen y genera texto. La versión NVFP4 conserva la arquitectura del original y solo cuantiza los operadores lineales dentro de los bloques del transformer: las proyecciones MLP se cuantizan a FP4, mientras que las proyecciones de atención (incluidas las de atención lineal) y las capas MLP finales (bloques 56 a 63) se cuantizan a FP8. La KV cache también se cuantiza a FP8 y la cabeza del modelo de lenguaje (`lm_head`) se mantiene en precisión completa para preservar la calidad de salida. El módulo visual queda excluido de la cuantización.
+El modelo base es un transformer multimodal de la familia Qwen3.5 con generación condicional, que acepta texto e imágenes y produce texto. La versión NVFP4 se genera aplicando LLM Compressor sobre Qwen/Qwen3.8-27B con una receta que combina AWQ (con `duo_scaling="both"`) y GPTQ. Las proyecciones MLP se cuantizan a NVFP4, mientras que las proyecciones de atención (`q_proj`, `k_proj`, `v_proj`, `o_proj` y las proyecciones de atención lineal `in_proj_qkv`, `in_proj_z`, `out_proj`) y las capas MLP de los bloques 56 a 63 se mantienen en FP8 dinámico. La caché KV se cuantiza a FP8 simétrico por tensor con observador `static_minmax`.
 
-La receta de cuantización combina AWQ y GPTQ mediante LLM Compressor, con calibración sobre un subconjunto de 512 muestras del dataset `perfectblend`, longitud máxima de secuencia de 4096 y calibración de todos los expertos MoE (`moe_calibrate_all_experts=True`), lo que sugiere que el modelo base emplea una arquitectura con mezcla de expertos, aunque el número de parámetros activos no se detalla. Las escalas de cuantización se recalibraron respecto a versiones anteriores (versión 2.0 del checkpoint). No se especifican en la información disponible el número de tokens de entrenamiento del modelo base ni si se aplicaron etapas de RLHF o DPO.
+La calibración se realizó sobre un subconjunto de 512 muestras del dataset perfectblend, con `max_seq_length=4096` y calibración de todos los expertos MoE (`moe_calibrate_all_experts=True`), lo que sugiere que el modelo base emplea mezcla de expertos, aunque el número de parámetros activos no se detalla en la información disponible. El módulo visual y el `lm_head` quedan excluidos de la cuantización. La model card no especifica el volumen de tokens de entrenamiento del modelo original ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, con soporte de modo de razonamiento (`--reasoning-parser qwen3` en vLLM).
-- Resolución de problemas matemáticos y tareas de razonamiento científico (evaluado en GSM8K Platinum, MATH-500, AIME 2025 y GPQA Diamond).
-- Generación y modificación de código, con evaluación en SWE Bench mediante Inspect AI.
-- Seguimiento de instrucciones (IFEval).
-- Entrada multimodal de imagen y texto (`image-text-to-text`), aunque el módulo visual no está cuantizado.
-- Soporte de tool calling / function calling, con parser `qwen3_xml` y `--enable-auto-tool-choice` en vLLM.
-- Compatibilidad con decodificación especulativa mediante el modelo draft `RedHatAI/Qwen3.8-27B-speculator.dspark` (método `dspark`, hasta 7 tokens especulativos) o mediante MTP (`num_speculative_tokens=3`).
+- Generación de texto y razonamiento multi-paso, con modo de razonamiento configurable en el servidor mediante `--reasoning-parser qwen3`.
+- Resolución de problemas matemáticos y de lógica (evaluado en GSM8K Platinum, MATH-500, AIME 2025 y GPQA Diamond).
+- Comprensión de imágenes y texto (pipeline `image-text-to-text`), con el módulo visual intacto en precisión original.
+- Tool calling y function calling, con soporte nativo en vLLM mediante `--enable-auto-tool-choice` y parser `qwen3_xml`.
+- Capacidades de agente y razonamiento multi-paso, con evaluación en SWE Bench mediante Inspect AI.
+- Seguimiento de instrucciones, evaluado con IFEval.
+- Decodificación especulativa: soporta MTP con 3 tokens especulativos o el draft model DSpark con 7 tokens.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Razonamiento matemático asistido: el modelo obtiene un 96,72 % en GSM8K Platinum y un 84,27 % en MATH-500, por lo que es adecuado para tutores automáticos o verificación de cálculos en entornos educativos y financieros.
-- Generación y revisión de código en pipelines de CI/CD: su evaluación en SWE Bench y el soporte de tool calling permiten integrarlo como agente que propone parches o resuelve issues acotadas.
-- Agentes con uso de herramientas: la configuración de vLLM con `--enable-auto-tool-choice` y el parser `qwen3_xml` permiten construir asistentes que invocan APIs externas en flujos multi-paso.
-- Análisis de documentos con imagen: al aceptar entradas image-text-to-text, puede extraer información de capturas, diagramas o formularios combinándola con razonamiento textual.
-- Asistencia técnica especializada: su rendimiento en GPQA Diamond (89,22 %) lo hace útil para responder consultas de dominio científico-técnico con razonamiento explícito.
-- Despliegue en infraestructura con memoria limitada: el checkpoint de 24,7 GB frente a los 54 GB en BF16 permite servirlo en GPUs con menos VRAM, manteniendo la precisión del original.
-- Servicio de inferencia de baja latencia: con decodificación especulativa DSpark o MTP en vLLM, se reduce el coste por token en cargas conversacionales de alto volumen.
+- Asistencia de código en producción: el modelo se integra en pipelines de CI/CD a través de la API compatible con OpenAI de vLLM y el parser de tool calling, permitiendo generar parches y resolver tareas de ingeniería de software evaluadas en SWE Bench.
+- Razonamiento matemático y analítico: con una recuperación del 100,49 % en GSM8K Platinum y del 100,72 % en MATH-500 frente al BF16, es adecuado para tutoría, verificación de cálculos y generación de explicaciones paso a paso.
+- Agentes autónomos con herramientas: el soporte de `--enable-auto-tool-choice` y `qwen3_xml` permite construir agentes que invocan APIs externas, consultan bases de datos o ejecutan comandos en flujos multi-paso.
+- Procesamiento de documentos con imagen: al aceptar entrada image-text, puede extraer información de capturas, diagramas o formularios y devolver texto estructurado.
+- Despliegue en infraestructura con GPU Blackwell: el formato NVFP4 y el tamaño de 24,7 GB permiten servir el modelo en menos memoria que el BF16, reduciendo coste por instancia en entornos RHOAI o RHAIIS.
+- Evaluación de calidad de modelos cuantizados: sirve como referencia para comparar la degradación de FP4/FP8 frente a BF16 en tareas de razonamiento, instrucciones y código.
+- Generación de código con decodificación especulativa: el uso del draft model DSpark con 7 tokens especulativos reduce la latencia en cargas interactivas de autocompletado o generación larga.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card, ejecutados con vLLM sobre 1 GPU B200, comparando el modelo cuantizado con el BF16 original:
+Resultados reportados en la model card, servidos con vLLM sobre 1x B200 y comparados con el modelo base en BF16:
 
-| Categoría | Benchmark | Qwen/Qwen3.8-27B (BF16) | RedHatAI/Qwen3.8-27B-NVFP4 | Recuperación |
+| Categoria | Benchmark | Qwen3.8-27B (BF16) | NVFP4 | Recuperacion |
 |---|---|---|---|---|
 | Razonamiento | GSM8K Platinum | 96,25 % | 96,72 % | 100,49 % |
 | Razonamiento | MATH-500 | 83,67 % | 84,27 % | 100,72 % |
 | Razonamiento | AIME 2025 | 96,67 % | 95,00 % | 98,27 % |
-| Razonamiento | GPQA Diamond | 89,56 % | 89,22 % | 99,62 % |
-| Instrucciones | IFEval | no disponible en el extracto | no disponible en el extracto | no disponible |
-| Código | SWE Bench | no disponible en el extracto | no disponible en el extracto | no disponible |
+| Razonamiento | GPQA Diamond | 89,56 % | 89,22 % | 99 % (valor truncado en la informacion disponible) |
 
-No se han publicado en la información disponible resultados detallados de IFEval ni de SWE Bench, aunque la model card indica que se evaluaron.
+Los resultados de IFEval y SWE Bench no están disponibles en la información proporcionada. Tampoco se detallan métricas de latencia o throughput más allá de la recomendación de usar decodificación especulativa para un rendimiento óptimo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint ocupa unos 24,7 GB en disco; en inferencia con vLLM se requiere espacio adicional para KV cache (cuantizada a FP8) y activaciones, por lo que se recomienda al menos 32-40 GB de VRAM para contextos moderados.
-- GPU recomendadas: NVIDIA B200 (usada en la evaluación oficial), H100 y GPUs con soporte de FP4/FP8 nativo. El formato NVFP4 requiere hardware compatible con FP4 para aprovechar la aceleración.
-- GPU de consumo: no disponible de forma explícita; el tamaño del checkpoint hace inviable su ejecución en GPUs de consumo con menos de 24 GB, y las RTX 4090 (24 GB) quedarían al límite sin margen para KV cache.
-- Opciones de despliegue: vLLM es el runtime de referencia (`vllm serve`), con soporte de `--reasoning-parser qwen3`, `--tool-call-parser qwen3_xml` y decodificación especulativa MTP o DSpark. No se indica soporte de llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no se proporcionan cifras concretas; la model card menciona una sección de evaluación de rendimiento y el uso de decodificación especulativa para mejorar el throughput, pero sin números en el extracto disponible.
+- VRAM estimada para inferencia: el checkpoint ocupa 24,7 GB en disco; en GPU se requiere al menos esa cantidad más overhead de activaciones y caché KV. Con cuantización FP8 de caché KV, la memoria adicional depende de la longitud de contexto, que no está especificada.
+- GPU recomendadas: la evaluación se realizó en 1x B200. El formato NVFP4 requiere GPU con soporte de FP4 nativo (familia Blackwell) para aprovechar la aceleración; en arquitecturas anteriores la cuantización puede ejecutarse pero sin las ventajas de rendimiento del formato.
+- GPU de consumo: no hay información que confirme compatibilidad con RTX 4090 u otras GPU consumer; el tamaño de 24,7 GB excede la VRAM de la mayoría de tarjetas de consumo de 24 GB una vez añadido el overhead.
+- Opciones de despliegue: vLLM 0.24.0 o superior, validado en RHOAI 3.5.0 y RHAIIS 3.5.0. No se menciona soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; la model card recomienda MTP con 3 tokens especulativos o DSpark con 7 para rendimiento óptimo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedHatAI/Qwen3.8-27B-NVFP4 | 20,29 B (safetensors) | no disponible | FP4/FP8 mixta | Apache 2.0 | Hugging Face, vLLM |
-| Qwen/Qwen3.8-27B (BF16) | 27 B (nominal) | no disponible | BF16 | Apache 2.0 | Hugging Face |
-| Otros modelos de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+| RedHatAI/Qwen3.8-27B-NVFP4 | 20.294.595.344 | no disponible | FP4/FP8 mixta | Apache 2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.8-27B (BF16) | no disponible | no disponible | BF16 | no disponible | Hugging Face |
+| RedHatAI/Mistral-Medium-3.5-128B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| RedHatAI/diffusiongemma-26B-A4B-it-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | Hugging Face |
 
-No se dispone de información sobre alternativas comparables en la documentación proporcionada; la comparación principal es con el modelo base BF16, del que esta versión es una cuantización con recuperación de precisión superior al 98 % en la mayoría de benchmarks.
+No se dispone de datos de rendimiento de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- La cuantización FP4/FP8 puede introducir degradación en tareas no evaluadas; la recuperación publicada solo cubre GSM8K Platinum, MATH-500, AIME 2025, GPQA Diamond, IFEval y SWE Bench.
-- El módulo visual no está cuantizado, por lo que las capacidades de imagen conservan la precisión del original pero no se benefician de la reducción de memoria.
-- Riesgo de alucinación inherente a los modelos generativos; no se documentan medidas específicas de mitigación.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento uniforme fuera del inglés sin evaluación adicional.
-- Longitud de contexto: no disponible, lo que impide planificar cargas con documentos largos sin verificación previa.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base Qwen/Qwen3.8-27B por si existieran términos adicionales.
-- El despliegue óptimo depende de hardware con soporte FP4 (B200, H100); en GPUs sin esa capacidad el rendimiento puede degradarse o requerir fallback.
-- La discrepancia entre el nombre comercial (27B) y los parámetros reales (20,29 B) debe considerarse al dimensionar infraestructura.
+- La cuantización FP4/FP8 introduce una degradación mínima pero medible: AIME 2025 cae del 96,67 % al 95,00 % (recuperación del 98,27 %) y GPQA Diamond del 89,56 % al 89,22 %.
+- El módulo visual y el `lm_head` no están cuantizados, por lo que el ahorro de memoria se concentra en el transformer; el consumo real en despliegue multimodal puede ser mayor de lo que sugiere el tamaño del checkpoint.
+- No se especifican los idiomas soportados, lo que impide garantizar calidad fuera del inglés y el chino habituales en la familia Qwen.
+- No se detalla la longitud de contexto, un dato crítico para planificar memoria de caché KV y para casos de uso con documentos largos.
+- No hay información sobre sesgos conocidos ni sobre tasas de alucinación del modelo base.
+- El formato NVFP4 está optimizado para GPU Blackwell; en hardware anterior el rendimiento puede no ser representativo y la compatibilidad no está garantizada.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones de la licencia del modelo base Qwen/Qwen3.8-27B antes de uso comercial, ya que la información disponible no detalla la licencia del original.
+- El modelo está validado únicamente con vLLM 0.24.0, RHOAI 3.5.0 y RHAIIS 3.5.0; otros runtimes no están verificados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Modelo draft para decodificación especulativa: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
+- Draft model DSpark: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
+- Organización RedHatAI: https://huggingface.co/RedHatAI
+- Catálogo de modelos RedHatAI: https://huggingface.co/RedHatAI/models
 - LLM Compressor: https://github.com/vllm-project/llm-compressor
 - lm-evaluation-harness (Neural Magic): https://github.com/neuralmagic/lm-evaluation-harness
 - lighteval (Neural Magic): https://github.com/neuralmagic/lighteval

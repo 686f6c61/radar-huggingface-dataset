@@ -2,104 +2,103 @@
 
 ## Resumen
 
-Kataguru-Sceptic-35B-A3B-Icelandic-v3.2-GGUF es la distribucion en formato GGUF de la version islandesa del modelo Sceptic 35B-A3B, desarrollado por el autor kataguru. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) construido sobre la base Kataguru-Sceptic-35B-A3B-v3.1, a la que se han anadido dos expertos especializados en islandes (gramatica, morfologia, literatura y traduccion bidireccional EN<->IS) sin modificar los 254 expertos nucleares originales. El resultado es un modelo multilingue (ingles, islandes, finlandes) con capacidades de razonamiento, codigo, vision multimodal y traduccion de pagina completa.
+Kataguru-Sceptic-35B-A3B-Icelandic-v3.2-GGUF es la distribucion en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-Icelandic-v3.2, publicado por Datasein Oy (Finlandia) bajo la direccion tecnica de Jari Katajisto. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts derivada de la familia Qwen3.5-MoE, con 35.505.251.456 parametros totales y 3.000 millones de parametros activos por token, disenado especificamente para programacion industrial (PLC, CNC, G-code), ingenieria de sistemas y razonamiento cientifico en islandes, finlandes e ingles.
 
-El modelo conserva intactas las capacidades del foundation original (media de 70,26 % en 15 benchmarks, GPQA Diamond 70,20 %, LiveCodeBench v6 39,43 %, BFCL V4 83,67 %) mediante el congelamiento de los expertos #0..#253, y anade rendimiento especifico en islandes validado con una auditoria 10/10 en el leaderboard de Miðeind. La ventana de contexto es de 262.144 tokens y la arquitectura MoE consta de 40 capas con 256 expertos por capa.
+El modelo parte del checkpoint base Kataguru-Sceptic-35B-A3B-v3.1 y anade dos expertos nativos de islandes (expertos #254 y #255) sobre los 254 expertos congelados del nucleo original, alcanzando 256 expertos por capa en 40 capas. Esta configuracion mantiene las capacidades del modelo base (razonamiento STEM, codigo, tool calling, vision) e incorpora competencia linguistica soberana en islandes, un idioma con escasisima representacion en modelos abiertos de gran escala.
 
-Esta ficha cubre especificamente la variante GGUF, que incluye tres niveles de cuantizacion calibrados con imatrix islandes (APEX-Small, APEX-Medium y APEX-Good) mas un proyector multimodal mmproj en f16, pensados para ejecucion local con llama.cpp, LM Studio y Ollama.
+La version GGUF que nos ocupa emplea cuantizacion calibrada con imatrix sobre un corpus islandes y se distribuye en tres variantes (APEX-Small, APEX-Medium y APEX-Good) mas un proyector multimodal `mmproj`, lo que permite ejecutar el modelo en GPU de 16 GB de VRAM. Por su licencia Apache 2.0 y su enfoque industrial, resulta relevante para entornos de automatizacion, integracion de sistemas y despliegue en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE), 40 capas, 256 expertos por capa (254 congelados + 2 islandeses), encoder de vision multimodal de 27 capas, cabeza especulativa MTP en capa 40 |
-| Parametros totales | 35.505.251.456 (~35,5 mil millones) |
-| Parametros activos | ~3 mil millones por token (A3B) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF APEX-Small (~11,9 GiB), APEX-Medium (~13,6 GiB), APEX-Good (~15,4 GiB); variantes adicionales del suite v3.2: BF16 (~67,5 GB), NVFP4 (~24,3 GB), W4A16-AWQ (~25,3 GB) |
-| Idiomas soportados | Ingles (en), islandes (is), finlandes (fi) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); safetensors para las variantes BF16, NVFP4 y AWQ; mmproj-f16.gguf (~890 MB) para vision |
+| Arquitectura | Mixture-of-Experts (MoE) derivada de Qwen3.5-MoE, transformer con 40 capas y 256 expertos por capa |
+| Parametros totales | 35.505.251.456 |
+| Parametros activos | 3.000 millones por token (Top-8) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF en tres variantes APEX-Small, APEX-Medium y APEX-Good, calibradas con imatrix sobre corpus islandes; el ecosistema del modelo incluye ademas BF16, NVFP4 y W4A16-AWQ |
+| Idiomas soportados | ingles (en), islandes (is), finlandes (fi) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 45,4 GB), con proyector multimodal `mmproj` |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer MoE con 40 capas y 256 expertos por capa, de los cuales solo ~3 mil millones de parametros estan activos por token. La innovacion central de la version v3.2 es la estrategia de expansion controlada: los 254 expertos nucleares del modelo base v3.1 se mantienen completamente congelados (100 % frozen core), preservando sin olvido catastrofico las capacidades originales de razonamiento cientifico, codigo competitivo y tool calling. A estos se anaden dos expertos nuevos: el experto #254, especializado en gramatica y morfologia islandesa (4 casos en 3 generos, declinaciones fuerte/debil, umlaut U e I, regimenes casuales irregulares) y terminologia tecnica (PLC/CNC, medicina clinica, patentes); y el experto #255, centrado en literatura islandesa, no ficcion y traduccion bidireccional EN<->IS.
+El modelo es un transformer MoE con 40 capas, 256 expertos por capa y activacion Top-8 por token, lo que resulta en 3.000 millones de parametros activos sobre un total de 35.500 millones. La innovacion principal respecto al checkpoint base v3.1 es la incorporacion de dos expertos nativos de islandes (expertos #254 y #255) manteniendo congelados los 254 expertos originales (#0..#253). Segun la model card, los expertos congelados coactivan en cada paso de token junto con los dos expertos islandeses, de modo que el modelo conserva las capacidades del nucleo (razonamiento cientifico, codigo competitivo, tool calling, vision) sin sacrificar la especializacion linguistica.
 
-El entrenamiento de los nuevos expertos se realizo sobre un Language Bank de 4.833 muestras doradas verificadas humanamente (100 % de aprobacion en el gate mecanico y de calidad), con calibracion contrastiva del router (modo `new_experts_only`, `recalibrate-router`, rango r=32, alpha=64). La cuantizacion GGUF se calibro con `imatrix_calibration_is.txt` sobre los 256 expertos, y la variante NVFP4/AWQ uso un fichero de calibracion dedicado (`calib_nvfp4_awq_256_is.jsonl`). Se mantiene la cabeza especulativa MTP de decodificacion especulativa (785 tensores) y el encoder de vision de 27 capas (333 tensores). No se dispone de informacion sobre el volumen total de tokens de entrenamiento del foundation original ni sobre la composicion detallada del dataset mas alla del Language Bank islandes.
+El modelo base Kataguru-Sceptic-35B-A3B-v3.1 reporta un promedio de 70,26 % en una bateria de 15 benchmarks, con 70,20 % en GPQA Diamond, 39,43 % en LiveCodeBench v6 y 83,67 % en BFCL V4 AST. La model card indica que el modelo incorpora un encoder de vision ViT de 27 capas, un motor agentico basado en AST con llamadas `<tool_call>` y un sistema multi-modo de seis roles conmutables por peticion sin reinicio de servidor. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO. La cuantizacion GGUF de esta release emplea calibracion imatrix sobre un corpus en islandes para preservar el rendimiento en ese idioma tras la compresion.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multilingue en ingles, islandes y finlandes, con profundidad de razonamiento configurable mediante etiquetas (`{REASON:spoon}`, `{REASON:einstein}`, `{REASON:007}`, `{REASON:deep}`, `{REASON:low}`, `{REASON:off}`).
-- Razonamiento cientifico de nivel doctorado (GPQA Diamond 70,20 %) y programacion algoritmica competitiva (LiveCodeBench v6 39,43 %).
-- Tool calling / function calling nativo con AST `<tool_call>` y deteccion de irrelevancia (BFCL V4 83,67 %).
-- Vision multimodal: pipeline image-text-to-text con encoder de vision de 27 capas y proyector mmproj en f16.
-- Traduccion de pagina completa bidireccional EN<->IS (y con finlandes) en modo `/translate`, con preservacion de parrafos y cero charlataneria.
-- Modo islandes nativo mediante prefijo `/is` o `chat_template_kwargs={"response_language": "is"}`.
-- Capacidades industriales heredadas: PLC/CNC, terminologia medica clinica y patentes.
-- Decodificacion especulativa mediante cabeza MTP dedicada.
-- Plantilla de chat nativa en islandes (`chat_template.jinja`) con cabeceras de razonamiento localizadas.
+- Generacion de texto, razonamiento cientifico y matematico (GPQA Diamond 70,20 % en el modelo base).
+- Programacion industrial: IEC 61131-3 (Structured Text para Beckhoff TwinCAT 3 y Siemens SCL/S7-1500), G-code para Fanuc, Siemens Sinumerik 840D y Heidenhain, con compensacion de radio de herramienta, offsets de trabajo y ciclos fijos.
+- Programacion de sistemas y embebidos: C++20, Rust, C para RTOS, Python 3.12, C#/.NET, SQL y Bash/Linux.
+- Protocolos industriales y fieldbuses: OPC UA, Modbus TCP/RTU, EtherCAT, PROFINET, CANopen, con diagnostico SCADA/MES.
+- Normativa de seguridad funcional: ISO 13849-1 (PLa-PLe), IEC 62061 / IEC 61508 (SIL 1-SIL 3), Safe Torque Off.
+- Tool calling y function calling con motor agentico basado en AST (`<tool_call>`), reportado con cero errores de sintaxis y 83,67 % en BFCL V4 AST.
+- Capacidades multimodales: lectura de diagramas P&ID, esquemas electricos, pantallas de error HMI y graficos de ingenieria mediante encoder ViT de 27 capas.
+- Razonamiento multi-paso y soporte para flujos agenticos y RAG.
+- Multilingue en ingles, islandes y finlandes.
+- Modo multi-modo con seis roles conmutables por peticion sin reinicio de servidor.
+- Traduccion.
 
 ## Casos de uso
 
-- Traduccion profesional islandes-ingles de pagina completa: el modelo usa el experto #255 en modo `/translate` para traducir prosa literaria, no ficcion y dialogos preservando estructura de parrafos, adecuado para editoriales y agencias de localizacion que trabajan con contenido islandes.
-- Correccion y proofreading morfologico en islandes: con temperatura 0,2-0,3 y `presence_penalty=0.3`, el experto #254 gestiona declinaciones, umlaut y regimenes casuales irregulares, util para herramientas de edicion y control de calidad linguistica.
-- Atencion al cliente multilingue en mercados nordicos: la ventana de 262.144 tokens permite conversaciones multi-turno con historial extenso en islandes, finlandes e ingles, con tool calling para consultar sistemas de pedidos o CRM.
-- Documentacion tecnica industrial: el modelo hereda capacidades PLC/CNC y terminologia de patentes, permitiendo generar y traducir manuales tecnicos y especificaciones de patentes entre ingles e islandes.
-- Analisis de documentos escaneados con vision: el encoder multimodal y el proyector mmproj permiten procesar imagenes de documentos, formularios o diagramas tecnicos y extraer texto o descripciones en islandes.
-- Asistente de razonamiento cientifico local: con GPQA Diamond 70,20 % y cuantizacion APEX-Medium en una sola GPU de 16 GB, sirve para experimentacion en laboratorio y revision de literatura cientifica sin depender de la nube.
-- Desarrollo de agentes con tool calling: BFCL V4 de 83,67 % y AST nativo permiten integrar el modelo en pipelines agenticos que invocan APIs, ejecutan consultas y encadenan pasos multi-step.
+- Generacion y auditoria de logica PLC en Structured Text: el modelo puede producir maquinas de estado deterministas con `CASE`, bloques de control de movimiento (`MC_MoveAbsolute`, `MC_GearIn`) y diagnostico ADS para proyectos de Beckhoff TwinCAT 3, aprovechando su 96,67 % reportado en el benchmark PLC/CNC.
+- Migracion y revision de codigo Siemens SCL: uso en tareas de refactorizacion de bloques de funcion y bloques de datos de instancia en TIA Portal, incluyendo control PID y diagnostico PROFINET, con explicaciones en islandes o finlandes para equipos locales.
+- Post-procesado y validacion de G-code: generacion y auditoria de trayectorias multieje para fresado y torneado en Fanuc, Sinumerik 840D y Heidenhain, verificando cargas de husillo y evitando colisiones en la compensacion G41/G42.
+- Diagnostico de redes industriales: interpretacion de trazas OPC UA, Modbus, EtherCAT y PROFINET para localizar fallos en celdas de fabricacion, combinando razonamiento tecnico con lectura de esquemas electricos mediante el encoder de vision.
+- Asistencia en cumplimiento de seguridad funcional: revision de interlocks de parada de emergencia de doble canal, watchdogs y calculos de nivel PLa-PLe o SIL, adecuado para equipos de ingenieria que documentan conformidad con ISO 13849-1 e IEC 62061.
+- Desarrollo de software de sistemas en Rust y C++20: generacion de codigo concurrente y endurecimiento de red en entornos Linux, apoyandose en el rendimiento de LiveCodeBench v6 (39,43 %) y en el 90,70 % reportado en la categoria Easy.
+- Agentes de automatizacion con tool calling: integracion en pipelines que encadenan llamadas a funciones mediante `<tool_call>` con sintaxis AST verificada, util para orquestar consultas a bases de datos de produccion o sistemas MES.
+- Atencion tecnica en islandes: despliegue de un asistente de soporte para operarios y tecnicos islandeses que explique codigo, manuales y errores de maquina en su idioma nativo, gracias a los dos expertos islandeses dedicados.
 
 ## Benchmarks y rendimiento
 
-| Benchmark / capacidad | Puntuacion | Notas |
-|---|---|---|
-| Media de 15 benchmarks (foundation) | 70,26 % | Heredada intacta via expertos congelados #0..#253 |
-| GPQA Diamond (STEM nivel doctorado) | 70,20 % (139/198) | Fisica, quimica y biologia molecular de posgrado |
-| LiveCodeBench v6 (Pass@1) | 39,43 % | Facil: 90,70 %; programacion algoritmica competitiva |
-| BFCL V4 Single-Turn AST (tool calling) | 83,67 % | Non-Live: 88,44 %; deteccion de irrelevancia: 80,26 % |
-| Auditoria islandesa 10/10 (v3.2) | 10/10 PASS (100 %) | Leaderboard Miðeind (WikiQA-IS, GEC-IS, Idioms-IS, ARC-IS) y traduccion literaria/tecnica EN<->IS |
+Los datos disponibles corresponden al modelo base Kataguru-Sceptic-35B-A3B-v3.1, no a esta cuantizacion GGUF concreta. No se han publicado resultados de benchmarks especificos para la variante GGUF en la informacion disponible.
 
-No se han publicado resultados de benchmarks especificos para la variante GGUF en la informacion disponible; las cifras anteriores corresponden al foundation y a la auditoria de la version v3.2.
+| Benchmark | Resultado (modelo base v3.1) |
+|---|---|
+| Media de 15 benchmarks | 70,26 % |
+| GPQA Diamond | 70,20 % |
+| LiveCodeBench v6 | 39,43 % |
+| LiveCodeBench v6 (Easy) | 90,70 % |
+| BFCL V4 AST | 83,67 % |
+| Industrial PLC/CNC | 96,67 % |
 
 ## Requisitos de hardware
 
-- VRAM para BF16 completo: ~72 GB (2x GPU de 48-80 GB).
-- VRAM para NVFP4 / W4A16-AWQ: ejecutable en 2x RTX 5090 de 32 GB (TP=2) o en 1 GPU de 32 GB.
-- GGUF APEX-Small (~11,9 GiB): cabe en GPU consumer de 16 GB con margen ajustado.
-- GGUF APEX-Medium (~13,6 GiB): segun el autor, ejecutable en una sola GPU de 16 GB.
-- GGUF APEX-Good (~15,4 GiB): requiere GPU de 16 GB con margen minimo o 24 GB para holgura.
-- Proyector multimodal mmproj-f16.gguf (~890 MB): VRAM adicional para vision.
-- GPUs recomendadas: RTX 5090 (32 GB) para NVFP4/AWQ, A100/H100 para BF16, RTX 4090/5080 (16 GB) para APEX-Small/Medium.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (etiquetas declaradas), vLLM para las variantes W4A16-AWQ y NVFP4, transformers para pesos completos.
+- VRAM estimada: la variante GGUF esta disenada para ejecutarse en GPU de 16 GB de VRAM, segun la model card; las variantes NVFP4 (~20,9 GiB) y W4A16-AWQ (~19,5 GiB) caben en una unica GPU de 24 GB.
+- GPU recomendadas: GPU consumer de 16 GB o superior para la variante GGUF; RTX 4090 (24 GB) para NVFP4 y AWQ; A100 y H100 para despliegues de mayor concurrencia o precision completa.
+- Cabe en GPU consumer: si, en tarjetas de 16 GB con la variante GGUF y en tarjetas de 24 GB con NVFP4 o AWQ.
+- Opciones de despliegue: llama.cpp, LM Studio, Ollama (etiquetas declaradas en el repositorio), vLLM para las variantes AWQ y NVFP4, y transformers para los pesos completos.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| Kataguru-Sceptic-35B-A3B-Icelandic-v3.2 (GGUF) | ~35,5 B | ~3 B | 262.144 | Apache-2.0 | Especializado en islandes, vision, tool calling, traduccion |
-| Qwen3-MoE (familia base declarada `qwen3_5_moe`) | no disponible | no disponible | no disponible | no disponible | Foundation sobre el que se construye la arquitectura |
-| Modelos islandeses de Miðeind (referencia del leaderboard) | no disponible | no disponible | no disponible | no disponible | Benchmark de comparacion usado en la auditoria 10/10 |
+No se dispone de datos de benchmarks comparativos directos con modelos de la misma categoria en la informacion proporcionada. La siguiente tabla recoge unicamente los datos verificables del modelo y deja constancia de la ausencia de datos para las alternativas.
 
-No se dispone en la informacion proporcionada de datos suficientes sobre modelos alternativos comparables (parametros, contexto, rendimiento y licencia) para establecer una comparativa cuantitativa fiable.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Kataguru-Sceptic-35B-A3B-Icelandic-v3.2 | 35,5 B totales / 3 B activos | no disponible | Apache 2.0 | GGUF, BF16, NVFP4, AWQ en Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ficcion creativa a alta temperatura: para precision morfologica y proofreading estricto en islandes se recomienda `temperature=0.2-0.3` con `presence_penalty=0.3`; temperaturas altas degradan la correccion gramatical.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir contenido factualmente incorrecto, especialmente en traduccion tecnica especializada o terminologia de patentes.
-- Cobertura linguistica limitada: solo ingles, islandes y finlandes; no hay soporte declarado para castellano ni otras lenguas.
-- Olvido catastrofico mitigado pero no eliminado: la estrategia de expertos congelados preserva el rendimiento del foundation, pero la interaccion entre expertos nuevos y router calibrado puede introducir sesgos en dominios no vistos.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base v3.1 y de los componentes heredados.
-- Huella de VRAM: BF16 completo requiere ~72 GB; en produccion con GPU consumer conviene usar APEX-Medium o NVFP4/AWQ.
-- Datos de benchmarks de la variante GGUF no publicados: las cifras disponibles corresponden al foundation y a la auditoria v3.2, no a la cuantizacion GGUF concreta.
-- Modelo con 0 descargas y 0 likes en el momento del registro: ecosistema de validacion externa practicamente inexistente.
+- Los benchmarks reportados (GPQA Diamond 70,20 %, LiveCodeBench v6 39,43 %, PLC/CNC 96,67 %) corresponden al modelo base v3.1 y no han sido verificados de forma independiente para esta cuantizacion GGUF; la compresion puede degradar el rendimiento, especialmente en tareas de codigo y matematicas.
+- La cobertura linguistica se limita a ingles, islandes y finlandes; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea inferior.
+- La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar despliegues que dependan de ventanas largas.
+- Riesgo de alucinacion inherente a los modelos generativos, agravado en dominios de seguridad funcional donde una recomendacion incorrecta (por ejemplo, en calculos SIL o PLe) puede tener consecuencias fisicas; toda salida debe ser revisada por un ingeniero certificado.
+- La model card emplea afirmaciones de marketing no verificadas (por ejemplo, "cero errores de sintaxis" en tool calling o "100 % de preservacion" de capacidades); conviene tratarlas como declaraciones del autor y no como hechos medidos.
+- El modelo se distribuye con la etiqueta "uncensored", lo que implica ausencia de filtros de seguridad en las respuestas; no es adecuado para exposicion directa a usuarios finales sin capas de moderacion adicionales.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, el cumplimiento normativo en entornos industriales (ISO 13849-1, IEC 61508) requiere validacion humana y no puede delegarse en las salidas del modelo.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Icelandic-v3.2-GGUF
-- Pesos maestros BF16: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Icelandic-v3.2
+- Repositorio Hugging Face (GGUF): https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Icelandic-v3.2-GGUF
+- Pesos BF16 maestros: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Icelandic-v3.2
 - Variante NVFP4: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Icelandic-v3.2-NVFP4
 - Variante W4A16-AWQ: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Icelandic-v3.2-W4A16-AWQ
 - Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
-- Leaderboard islandes de Miðeind: no disponible (referenciado en la model card, sin URL directa)
-- Paper, blog o demo oficial: no disponible en la informacion proporcionada
+- Ejemplos de uso: https://huggingface.co/spaces/kataguru/Kataguru-Sceptic-35B-Usage-Examples
+- Guia del autor: https://huggingface.co/spaces/kataguru/Kataguru-Sovereign-AI-Guide
+- Perfil del autor: https://huggingface.co/kataguru

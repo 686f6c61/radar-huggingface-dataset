@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/models",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "zabibutechnika/Fikra-Model-2-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zabibutechnika/Fikra-Model-2-4B-GGUF",
-      "snippet": "Machine learning model with 4B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

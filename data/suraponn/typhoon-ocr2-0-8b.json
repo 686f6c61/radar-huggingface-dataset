@@ -55,16 +55,5 @@
   "renamed_to": "typhoon-ai/typhoon-ocr2-0.8b",
   "renamed_at": "2026-11-11T03:58:03.425Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Quantized Models for typhoon-ai/typhoon-ocr2-0.8b – Hugging Face",
-      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Atyphoon-ai%2Ftyphoon-ocr2-0.8b",
-      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset typhoon-ai/typhoon-ocr2-0.8b Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click ..."
-    },
-    {
-      "title": "Typhoon OCR | Typhoon",
-      "url": "https://opentyphoon.ai/model/typhoon-ocr",
-      "snippet": "A next-generation, bilingual vision-language document parsing model built for real-word use cases, Typhoon OCR delivers structured, layout-aware, and semantically rich outputs as well as outperforms both GPT-5 and Gemini 2.5 Flash in Thai document understanding, particularly on documents with complex layouts and mixed-language content."
-    }
-  ]
+  "sources": []
 }

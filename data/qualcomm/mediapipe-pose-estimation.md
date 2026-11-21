@@ -2,84 +2,97 @@
 
 ## Resumen
 
-MediaPipe-Pose-Estimation es un modelo de detección de puntos clave (keypoint detection) desarrollado por Qualcomm, basado en la implementación de MediaPipePyTorch de Google. Su función principal es predecir bounding boxes y esqueletos de pose de la cara, las manos y el torso en imágenes y vídeo en tiempo real. Está optimizado para ejecutarse en dispositivos Qualcomm mediante el kit Qualcomm AI Hub, que permite compilar, perfilar y evaluar el modelo en hardware real.
+MediaPipe-Pose-Estimation (Qualcomm) es un pipeline de estimación de pose y detección de keypoints corporales, faciales y de manos, empaquetado y optimizado por Qualcomm para su despliegue en dispositivos con aceleración neuronal Snapdragon y Dragonwing. No es un modelo de lenguaje: es un modelo de visión por computador orientado a la detección de puntos clave (keypoint detection) en tiempo real, derivado de la implementación MediaPipePyTorch de zmurez y distribuido bajo licencia Apache 2.0.
 
-El modelo se distribuye como un pipeline de dos etapas típico de MediaPipe: un detector de región de interés (ROI) y un regresor de landmarks que devuelve 33 puntos de pose corporal. Aunque no se publican los parámetros totales, su diseño está pensado para ser ligero y eficiente, con soporte de cuantización w8a8 (pesos y activaciones de 8 bits) además de precisión float. La licencia Apache 2.0 permite uso comercial sin restricciones, y el repositorio incluye exportaciones precompiladas en formato ONNX para varios chipsets Snapdragon y Dragonwing.
+El repositorio en Hugging Face (1,6 GB) contiene pesos y artefactos pre-exportados listos para ejecución en hardware Qualcomm, incluyendo variantes ONNX en precisión float y cuantización w8a8, así como binarios precompilados para el runtime QNN de Qualcomm (QAIRT). Está pensado para integrarse en aplicaciones Android y en plataformas embebidas con NPU Hexagon, donde la latencia y el consumo energético son críticos.
 
-La relevancia actual del modelo radica en su integración directa con el ecosistema de Qualcomm AI Hub, que facilita el despliegue en dispositivos móviles y edge con aceleración por hardware. Es una opción práctica para desarrolladores que necesitan seguimiento de pose en tiempo real sin depender de servicios en la nube.
+Su relevancia actual radica en que permite ejecutar un pipeline de pose estimation completamente en el dispositivo (on-device), sin depender de la nube, con artefactos ya compilados para chipsets concretos. Esto lo hace útil para aplicaciones de realidad aumentada, fitness, telemedicina o interacción gestual donde la privacidad y la latencia importan. La información disponible no detalla el número de parámetros ni la arquitectura interna exacta del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BlazePose (pipeline de dos etapas: detector de ROI y regresor de landmarks) |
+| Arquitectura | Pipeline de estimación de pose basado en la implementación MediaPipePyTorch; arquitectura interna no detallada en la información disponible |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision) |
-| Tipos de cuantizacion | float (FP32) y w8a8 (pesos y activaciones de 8 bits) |
-| Idiomas soportados | no disponible (no aplica, es un modelo de vision) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de texto) |
+| Tipos de cuantizacion | float y w8a8 (cuantización de pesos y activaciones a 8 bits) |
+| Idiomas soportados | no disponible (no es un modelo lingüístico) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (precompilado QNN ONNX) y PyTorch (repositorio fuente) |
+| Formato de pesos | ONNX (float y w8a8) y PRECOMPILED_QNN_ONNX para runtime QNN; repositorio en PyTorch |
+| Pipeline | keypoint-detection |
+| Tarea | Detección de bounding boxes y esqueletos de pose (cara, manos y torso) |
+| Hardware objetivo | Chipsets Qualcomm Snapdragon y Dragonwing con NPU |
+| Versiones SDK | QAIRT 2.50/2.51, ONNX Runtime 1.30.0 |
+| Tamaño del repositorio | 1,6 GB |
+| Descargas / likes | 873 / 114 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura BlazePose descrita en el paper arXiv:2006.10204, que combina un detector de región de interes (ROI) con un regresor de landmarks. El detector localiza la zona del cuerpo en la imagen y el regresor predice 33 puntos clave (nariz, ojos, articulaciones, etc.) junto con su visibilidad. Esta separacion en dos etapas permite un procesamiento eficiente en tiempo real, ya que el detector opera a baja resolucion y el regresor se aplica solo sobre el recorte.
+La información disponible no detalla la arquitectura interna (número de capas, tipo de backbone, resolución de entrada ni composición del dataset de entrenamiento). Lo que sí se documenta es que se trata de un pipeline de dos etapas típico de MediaPipe: un detector que predice bounding boxes de cara, manos y torso, y un estimador de landmarks que devuelve el esqueleto de pose sobre esas regiones. La implementación de referencia es MediaPipePyTorch (zmurez), y Qualcomm ha realizado la exportación y optimización para sus plataformas.
 
-No se dispone de informacion detallada sobre el conjunto de datos de entrenamiento, el numero de epocas o el uso de tecnicas como RLHF o DPO. La implementacion base proviene de MediaPipePyTorch, un port no oficial de los modelos de MediaPipe a PyTorch, y Qualcomm ha adaptado los pesos para su ejecucion en hardware propio mediante el compilador QNN. La cuantizacion w8a8 reduce el tamaño del modelo y acelera la inferencia en las NPU de los chipsets Snapdragon.
+El valor técnico añadido por Qualcomm está en el proceso de compilación y perfilado mediante Qualcomm AI Hub Workbench, que genera artefactos precompilados para chipsets concretos (Snapdragon 8 Gen 1, 8 Gen 3, 8 Elite, 8 Elite Gen 5, X Elite, X2 Elite, Dragonwing IQ-8275, IQ-9075 y QCS8550) con QAIRT 2.50 y ONNX Runtime 1.30.0. Se ofrecen variantes en float y en cuantización w8a8, esta última orientada a reducir el ancho de banda de memoria y acelerar la inferencia en la NPU. No se documentan detalles sobre RLHF, DPO ni fases de ajuste, al no ser un modelo generativo.
 
 ## Capacidades
 
-- Deteccion de bounding boxes y esqueletos de pose de cara, manos y torso en una sola imagen.
-- Prediccion de 33 landmarks de pose corporal con coordenadas normalizadas y puntuacion de visibilidad.
-- Inferencia en tiempo real en dispositivos moviles y edge, gracias a la optimizacion para NPU de Qualcomm.
-- Soporte de cuantizacion w8a8 para reducir el uso de memoria y mejorar la latencia.
-- Exportacion precompilada en formato ONNX para multiples chipsets (Snapdragon X Elite, 8 Gen 3, 8 Gen 1, Dragonwing, etc.).
-- Integracion con Qualcomm AI Hub Workbench para compilacion, perfilado y evaluacion en hardware real.
-- No incluye capacidades de generacion de texto, tool calling ni procesamiento de lenguaje natural.
+- Detección de bounding boxes de cara, manos y torso en imágenes.
+- Estimación de esqueletos de pose (landmarks) sobre las regiones detectadas.
+- Ejecución en tiempo real en dispositivos móviles y embebidos con NPU Qualcomm.
+- Exportación a ONNX en float y en cuantización w8a8.
+- Despliegue mediante runtime QNN con artefactos precompilados por chipset.
+- Integración en Android y en plataformas con SDK QAIRT y ONNX Runtime.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, al no ser un modelo de lenguaje.
+- No se documentan modos especiales como thinking mode, visión generativa ni audio.
 
 ## Casos de uso
 
-- Aplicaciones de fitness y entrenamiento personal: el modelo puede seguir la postura del usuario en tiempo real para contar repeticiones, corregir la forma de los ejercicios o medir el rango de movimiento. Su baja latencia permite una retroalimentacion inmediata en el movil.
-- Realidad aumentada y filtros interactivos: al detectar los landmarks de cara y torso, se pueden superponer efectos virtuales que se ajustan al movimiento del usuario, como mascaras, ropa virtual o avatares animados.
-- Analisis de movimiento en fisioterapia: los 33 puntos de pose permiten calcular angulos articulares y detectar patrones anormales de movimiento, util para sesiones de rehabilitacion guiadas por una aplicacion movil.
-- Control por gestos en interfaces de usuario: los landmarks de las manos pueden interpretarse como comandos (deslizar, pinzar, senalar) para controlar dispositivos sin contacto fisico, especialmente en kioscos o pantallas publicas.
-- Seguimiento de personas en videovigilancia: el modelo puede rastrear la posicion de una persona en un flujo de video, detectando caidas o comportamientos sospechosos en tiempo real, con despliegue en camaras edge basadas en Snapdragon.
-- Animacion de personajes 3D: los datos de pose capturados con el modelo pueden alimentar motores de animacion para transferir el movimiento de una persona real a un avatar digital, tanto en aplicaciones de entretenimiento como en produccion de contenido.
+- Realidad aumentada y filtros en tiempo real: el pipeline detecta landmarks faciales y corporales con artefactos precompilados para Snapdragon, lo que permite superponer efectos sobre la pose del usuario sin enviar vídeo a la nube.
+- Aplicaciones de fitness y rehabilitación: la estimación de esqueleto permite contar repeticiones y evaluar la postura en el dispositivo, con la variante w8a8 para reducir consumo en móviles de gama alta.
+- Telemedicina y análisis de movimiento: el procesamiento on-device preserva la privacidad del paciente al no transmitir imágenes, y la detección de torso y extremidades sirve para evaluar rangos de movimiento.
+- Interacción gestual sin contacto: la detección de manos y landmarks permite controlar interfaces en quioscos, automoción o señalización digital usando la NPU del chipset.
+- Seguridad y videovigilancia embebida: el pipeline puede ejecutarse en cámaras IP con Dragonwing IQ-8275 o QCS8550 para detectar presencia y postura sin depender de servidores centrales.
+- Deportes y análisis técnico: extracción de keypoints para comparar la técnica de un atleta con un patrón de referencia, ejecutando la inferencia en un dispositivo portátil con Snapdragon X Elite.
+- Robótica e interacción humano-máquina: seguimiento de pose de operarios o usuarios para ajustar la respuesta de un sistema embebido con baja latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como mAP, precision o latencia comparativa con otros modelos. Los unicos datos de rendimiento son los chipsets soportados y las versiones de runtime (QAIRT 2.45, ONNX Runtime 1.27.1), pero sin cifras concretas de FPS o tiempo de inferencia.
+No se han publicado resultados de benchmarks en la información disponible. La model card referencia una sección de "performance summary" con métricas por dispositivo, pero los valores concretos no se incluyen en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- El modelo esta disenado para ejecutarse en dispositivos con chipsets Qualcomm: Snapdragon X Elite, X2 Elite, 8 Gen 1, 8 Gen 3, 8 Elite, 8 Elite Gen 5, y Dragonwing QCS6490, IQ-8275, QCS8550, IQ-9075.
-- No se especifica VRAM minima, pero al ser un modelo de vision ligero (tamano de repo 1.6 GB incluyendo pesos y codigo), es probable que quepa en la memoria de cualquier SoC movil moderno.
-- Para desarrollo y pruebas, se puede ejecutar en CPU o GPU de escritorio, aunque el rendimiento optimo se obtiene con la compilacion QNN en hardware Qualcomm.
-- Opciones de despliegue: Qualcomm AI Hub Workbench para compilar y evaluar, o descarga directa de los archivos precompilados QNN ONNX e integracion con ONNX Runtime.
-- No se dispone de datos de latencia o throughput estimados.
+- VRAM estimada para inferencia: no disponible; al ser un modelo de visión de pequeño tamaño orientado a NPU, no se publican cifras de VRAM.
+- GPU recomendadas: no aplica en el sentido habitual; el objetivo son NPUs Qualcomm Hexagon en Snapdragon 8 Gen 1, 8 Gen 3, 8 Elite, 8 Elite Gen 5, Snapdragon X Elite, X2 Elite, Dragonwing IQ-8275, IQ-9075 y QCS8550.
+- Cabe en hardware de consumo: sí, en móviles y portátiles con los chipsets Snapdragon y Dragonwing listados; también puede ejecutarse en CPU vía ONNX Runtime en modo float o w8a8.
+- Opciones de despliegue: ONNX Runtime 1.30.0, runtime QNN (QAIRT 2.50/2.51) con artefactos precompilados, y la librería Qualcomm AI Hub Models (v0.67.0) para exportar con configuraciones personalizadas.
+- Latencia y throughput: no disponibles en la información proporcionada; la model card remite a la sección de rendimiento por dispositivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Licencia | Contexto / entrada | Despliegue | Notas |
 |---|---|---|---|---|---|
-| MediaPipe-Pose-Estimation (Qualcomm) | BlazePose (2 etapas) | no disponible | no aplica | Apache 2.0 | ONNX precompilado para Qualcomm |
-| MoveNet (Google) | EfficientNet-based | ~4-17 M | no aplica | Apache 2.0 | TensorFlow Lite, multiplataforma |
-| PoseNet (Google) | MobileNet/ResNet | ~5-10 M | no aplica | Apache 2.0 | TensorFlow.js, navegador |
+| MediaPipe-Pose-Estimation (Qualcomm) | Pipeline de pose y landmarks | Apache 2.0 | Imagen; resolución no disponible | ONNX, QNN precompilado, NPU Qualcomm | Optimizado y perfilado por chipset |
+| MediaPipe Pose (Google) | Pipeline de pose | Apache 2.0 | Imagen | TFLite, MediaPipe Framework | Referencia original; no optimizado específicamente para NPU Qualcomm |
+| MediaPipePyTorch (zmurez) | Implementación en PyTorch | No disponible en la información | Imagen | PyTorch | Implementación base de la que deriva este repositorio |
+| YOLO-pose (Ultralytics) | Detección de pose de una etapa | AGPL-3.0 / comercial | Imagen | ONNX, TensorRT, TFLite | Licencia más restrictiva para uso comercial |
 
-La comparativa es cualitativa porque no hay datos de rendimiento publicados para el modelo de Qualcomm. MoveNet y PoseNet son alternativas mas ligeras y ampliamente soportadas en multiples plataformas, mientras que MediaPipe-Pose-Estimation destaca por su optimizacion especifica para hardware Qualcomm, lo que puede ofrecer mejor latencia en esos dispositivos.
+No se dispone de datos de benchmarks comparativos en la información proporcionada para cuantificar diferencias de precisión o latencia entre estas alternativas.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos especificos en la informacion disponible, pero al ser un modelo de deteccion de pose, puede presentar errores con oclusiones, iluminacion pobre o posturas extremas.
-- Riesgo de alucinacion: en imagenes ambiguas o con multiples personas, el modelo puede producir landmarks incorrectos o bounding boxes imprecisos.
-- Limitaciones de contexto: al ser un modelo de vision, no procesa texto ni entiende instrucciones; solo genera coordenadas de puntos clave.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero el codigo base de MediaPipePyTorch puede tener condiciones adicionales (se recomienda revisar el repositorio original).
-- Para produccion, es necesario validar el rendimiento en el chipset objetivo, ya que la compilacion QNN puede variar segun la version de QAIRT y el hardware concreto.
+- La información disponible no detalla sesgos conocidos del modelo; al ser un modelo de visión, puede presentar sesgos de rendimiento según tono de piel, ropa, iluminación y oclusiones, pero no se documentan formalmente.
+- Riesgo de fallo en poses extremas, oclusiones parciales o imágenes de baja resolución; no se publican métricas de robustez.
+- El pipeline está optimizado y perfilado para hardware Qualcomm; en otras plataformas se depende de la variante ONNX genérica, sin garantías de rendimiento equivalente.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las licencias de las dependencias (ONNX Runtime, QAIRT) y de la implementación base MediaPipePyTorch.
+- Los artefactos precompilados están ligados a versiones concretas de QAIRT y ONNX Runtime; actualizar el SDK puede requerir recompilar.
+- No es un modelo de lenguaje: no admite instrucciones en lenguaje natural, tool calling ni razonamiento; su uso está acotado a visión por computador.
+- El tamaño del repositorio (1,6 GB) incluye múltiples variantes por chipset y precisión; conviene descargar solo el artefacto necesario.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/qualcomm/MediaPipe-Pose-Estimation
-- Repositorio base MediaPipePyTorch: https://github.com/zmurez/MediaPipePyTorch/
-- Paper BlazePose (arXiv:2006.10204): https://arxiv.org/abs/2006.10204
-- Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/mediapipe_pose
-- Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models
+- Qualcomm AI Hub Models (repositorio): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/mediapipe_pose
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Implementación base MediaPipePyTorch: https://github.com/zmurez/MediaPipePyTorch/
+- Paper de referencia (arXiv:2006.10204): https://arxiv.org/abs/2006.10204
+- Qualcomm (sitio corporativo): https://www.qualcomm.com/
+- Qualcomm en Wikipedia: https://en.wikipedia.org/wiki/Qualcomm

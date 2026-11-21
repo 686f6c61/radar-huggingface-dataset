@@ -2,108 +2,85 @@
 
 ## Resumen
 
-`audnai/penclaw-Kimi-K3-pro-unrestricted` es un repositorio de Hugging Face publicado por el usuario `audnai` que se presenta como una versión "abliterated" (sin mecanismos de rechazo) de un supuesto modelo "Kimi K3.1 Pro". En el momento de la consulta el repositorio no contiene información técnica verificable: no declara pipeline, licencia, idiomas, arquitectura ni número de parámetros, y los metadatos indican 0 descargas y 0 likes, con creación y última actualización separadas por apenas seis minutos (23 de octubre de 2026).
+penclaw-Kimi-K3-pro-unrestricted es un fine-tune del modelo Kimi-K3.1-Pro de Moonshot AI, publicado por el usuario audnai en Hugging Face. Se presenta como una variante "abliterated" y "uncensored", es decir, con las capas de rechazo y alineación de seguridad previsiblemente atenuadas o eliminadas mediante técnicas de abliteración sobre los pesos del modelo base. El modelo conserva la arquitectura Mixture of Experts (MoE) del original, con un total de 2,78 billones de parámetros según los pesos en safetensors, lo que lo sitúa en la categoría de modelos frontera de escala masiva.
 
-La propia model card indica que "los pesos de Kimi K3.1 Pro se lanzarán el 4 de noviembre" y que, tras ese lanzamiento, se eliminarán sus barreras de seguridad. Es decir, el repositorio es un anuncio previo o placeholder, no una distribución de pesos utilizable: no hay artefactos descargables descritos y no se puede ejecutar ni evaluar el modelo a partir de esta ficha.
+El modelo base, Kimi-K3.1-Pro, es un desarrollo de Moonshot AI orientado a generación de texto, razonamiento y tareas de agente. La ficha de Hugging Face no documenta detalles sobre la composición del dataset de entrenamiento, el proceso de alineación ni las capacidades exactas del modelo original, por lo que buena parte de las especificaciones técnicas deben tratarse como no disponibles.
 
-El interés del repositorio es, por tanto, más documental que técnico: ilustra una práctica creciente de publicación anticipada de variantes "unrestricted" de modelos de gran escala, con captación de correo electrónico como condición de acceso. Cualquier evaluación de capacidades, latencia o seguridad queda pendiente de que se publiquen pesos reales y una model card con especificaciones.
+La relevancia de esta publicación es doble: por un lado, ofrece acceso a una variante sin restricciones de un modelo de escala frontera, algo poco habitual dado el coste computacional de manipular pesos de este tamaño; por otro, el repositorio está sometido a acceso restringido (gated) y su licencia es "other" bajo el identificador kimi-k3.1-pro, lo que condiciona fuertemente su uso comercial. El tamaño del repositorio, 1.561,4 GB, refleja pesos en 8 bits y hace inviable su despliegue fuera de infraestructura de centro de datos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no describe arquitectura; se infiere una familia tipo transformer/MoE por el nombre "Kimi", sin confirmación) |
-| Parametros totales | no disponible |
+| Arquitectura | Mixture of Experts (MoE), transformer; etiqueta kimi_k31 con custom_code |
+| Parametros totales | 2.780.110.363.392 (2,78 billones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible para este repositorio (el autor enlaza una release GGUF de un modelo distinto, `penclaw-Kimi-K3.0-abliterated-GGUF`) |
+| Tipos de cuantizacion | pesos en 8 bits (tag 8-bit); otras cuantizaciones no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se declara licencia en el repositorio) |
-| Formato de pesos | no disponible (no se describen safetensors, GGUF ni ningún otro artefacto; 0 descargas registradas) |
+| Licencia | kimi-k3.1-pro (license:other); acceso restringido (gated) |
+| Formato de pesos | safetensors con custom_code |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo: ni tipo de bloque (transformer denso, mezcla de expertos, híbrido SSM/attention), ni dimensión oculta, ni número de cabezas, ni estrategia de atención. Tampoco se documentan datos de entrenamiento: número de tokens, composición del corpus, mezcla multilingüe, fases de post-entrenamiento (SFT, RLHF, DPO) o uso de decodificación especulativa.
+El modelo es un transformer con arquitectura Mixture of Experts, heredada de Kimi-K3.1-Pro. El tag `kimi_k31` y la presencia de `custom_code` indican que la implementación requiere código personalizado para cargar y ejecutar el modelo, probablemente definiendo el enrutador de expertos y las capas específicas del modelo base. Con 2,78 billones de parámetros totales, se trata de un MoE de escala frontera; el número de parámetros activos por token no está documentado en la información disponible.
 
-El término "abliterated" hace referencia, en la práctica habitual de la comunidad, a una modificación post-entrenamiento que elimina o atenúa direcciones de activación asociadas al rechazo de peticiones, normalmente mediante edición de pesos o intervención sobre activaciones, sin reentrenar el modelo desde cero. La model card no especifica qué técnica concreta se ha aplicado, sobre qué checkpoint se ha aplicado ni qué metodología de evaluación se ha seguido; únicamente remite a un repositorio externo del autor sobre "substantive delivery" en áreas de alto riesgo.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base utilizó RLHF, DPO u otras técnicas de alineación. Respecto al fine-tune, la etiqueta "abliterated" sugiere una intervención sobre los pesos para suprimir direcciones de activación asociadas a rechazos de seguridad, pero el autor no publica la metodología, el dataset ni los hiperparámetros empleados. Tampoco hay información sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto: presumible, no verificable sin pesos publicados.
-- Razonamiento, código y matemáticas: no disponible; no hay benchmarks ni ejemplos en el repositorio.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Multilingüismo: no disponible; no se declaran idiomas.
-- Capacidad declarada (no técnica): mayor "substantive delivery" en áreas de alto riesgo, es decir, menor tasa de rechazo ante peticiones que los modelos alineados suelen declinar. Es una afirmación de marketing del autor, no una capacidad medida de forma independiente.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto a gran escala, heredada del modelo base Kimi-K3.1-Pro.
+- Razonamiento y tareas de agente propias del modelo original, aunque no documentadas explícitamente en esta ficha.
+- Funcionamiento sin capas de rechazo aparentes ("uncensored"), lo que amplía el rango de respuestas generadas.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible.
+- Modo de razonamiento explícito (thinking mode): no disponible.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipotéticos y solo serían aplicables si el autor publica pesos reales con las características que anuncia; no se pueden validar con la información actual.
-
-- Investigación sobre alineación y Robustez: uso del modelo como sujeto de estudio para medir tasas de rechazo y compararlas con la versión alineada del mismo checkpoint, apoyándose en el benchmark de rechazo que enlaza el autor.
-- Red teaming y evaluación de seguridad: generación controlada de contenido que los modelos alineados rechazan, dentro de un entorno auditado, para calibrar clasificadores y filtros de producción.
-- Pruebas de regresión de guardrails: integrar la variante "unrestricted" en un pipeline de evaluación que verifique que los filtros de una aplicación siguen bloqueando categorías prohibidas aunque el modelo subyacente no lo haga.
-- Estudio de sesgos y toxicidad: análisis comparativo de la distribución de respuestas antes y después de la abliteración sobre un mismo conjunto de prompts.
-- Docencia y divulgación técnica: ejemplificar de forma tangible qué cambia (y qué no) al eliminar mecanismos de rechazo, con fines explicativos.
-- Sustitución en flujos creativos con contenido sensible: escritura de ficción con violencia o temas delicados, donde el rechazo del modelo base interrumpe la tarea; requeriría revisión humana posterior.
-- No se recomienda su uso en atención al cliente, código en producción, entornos sanitarios, jurídicos o financieros, ni en ningún despliegue orientado al usuario final sin una capa de moderación externa.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de un MoE de escala frontera tras eliminar sus capas de rechazo, comparando respuestas con el modelo base para analizar qué direcciones de activación codifican la negativa a responder.
+- Evaluación de robustez de filtros: sirve como generador adversario para probar clasificadores de contenido y sistemas de moderación en pipelines de producción, al producir respuestas que un modelo alineado rechazaría.
+- Generación de texto creativo sin restricciones temáticas: útil en entornos controlados de escritura de ficción que abordan temas sensibles y donde el modelo base impondría negativas.
+- Red teaming de aplicaciones LLM: permite simular ataques de prompt injection y jailbreak contra sistemas desplegados, midiendo la eficacia de las defensas.
+- Estudio de eficiencia de MoE a gran escala: con 2,78 billones de parámetros, es un banco de pruebas para técnicas de serving distribuido, particionado de expertos y cuantización en 8 bits.
+- Fine-tuning posterior sobre dominios específicos: al estar ya desalineado, puede servir de base para ajustes que requieran un comportamiento sin sesgo de rechazo, siempre que la licencia lo permita.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-El repositorio no incluye MMLU, HumanEval, GSM8K, MATH, MMLU-Pro ni métricas de latencia o throughput. El único enlace de evaluación apunta a un benchmark propio del autor centrado en tasas de rechazo (`refusal-benchmark`), que mide comportamiento de negativa, no capacidad de razonamiento o conocimiento.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; sin número de parámetros ni longitud de contexto no es posible calcularla.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible. Si el modelo final corresponde a la escala habitual de la familia Kimi (variantes MoE de gran tamaño), no cabría en una sola GPU de consumo; esta afirmación es una condición, no un dato del repositorio.
-- Opciones de despliegue: no disponible para este repositorio. El autor enlaza una release GGUF de otro modelo (`penclaw-Kimi-K3.0-abliterated-GGUF`), lo que sugiere que en el pasado usó llama.cpp/Ollama, pero no hay artefacto equivalente para este.
+- VRAM estimada para inferencia: con pesos en 8 bits y 2,78 billones de parámetros, el peso del modelo ronda 1,5 TB; se requiere un clúster multi-GPU con al menos 1,6 TB de memoria agregada solo para cargar los pesos, más espacio para caché KV.
+- GPU recomendadas: nodos con múltiples H100 (80 GB) o H200; un solo nodo de 8×H100 no es suficiente para los pesos completos en 8 bits, por lo que se necesitan varios nodos o particionado de expertos entre ellos.
+- Consumer GPU: no es viable en ninguna GPU de consumo (RTX 4090, 3090, etc.) ni siquiera con cuantización agresiva, dado el tamaño del repositorio.
+- Opciones de despliegue: vLLM y TGI con soporte de MoE distribuido; llama.cpp y Ollama no son viables a esta escala. El tag `custom_code` obliga a usar la implementación específica del autor.
 - Latencia y throughput: no disponible.
-
-Tabla de referencia genérica (no específica de este modelo, útil solo hasta que se publique el tamaño real):
-
-| Escala del modelo | VRAM aproximada en FP16 | VRAM aproximada en 4 bits | Cabe en GPU de consumo |
-|---|---|---|---|
-| 7-8B | 14-16 GB | 5-6 GB | Sí (RTX 3060 12 GB en adelante) |
-| 13-14B | 26-28 GB | 9-10 GB | Sí con cuantización agresiva |
-| 30-34B | 60-68 GB | 20-22 GB | Solo en 24 GB con cuantización y contexto corto |
-| 70B | ~140 GB | 40-45 GB | No en una sola GPU de consumo |
-| MoE >200B totales | >400 GB | >100 GB | No |
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas provienen de documentación pública de sus fabricantes y no han sido verificados en esta ficha; se incluyen solo como referencia de categoría.
+| Modelo | Parametros totales | Contexto | Licencia | Acceso |
+|---|---|---|---|---|
+| penclaw-Kimi-K3-pro-unrestricted | 2,78 B (billones) | no disponible | kimi-k3.1-pro (other) | Restringido (gated) |
+| moonshotai/Kimi-K3.1-Pro (base) | no disponible en esta ficha | no disponible | kimi-k3.1-pro | no disponible |
+| Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad de pesos | Notas |
-|---|---|---|---|---|---|
-| `audnai/penclaw-Kimi-K3-pro-unrestricted` | no disponible | no disponible | no disponible | No (anuncio previo) | Sin benchmarks ni artefactos |
-| Kimi K2 (Moonshot AI) | ~1T totales, ~32B activos | hasta 256K | MIT modificada | Sí, en Hugging Face | Modelo abierto de referencia de la familia Kimi; verificar cifras |
-| Qwen3-235B-A22B (Alibaba) | 235B totales, 22B activos | hasta ~262K | Apache 2.0 | Sí | MoE abierto con licencia permisiva, alternativa realista para despliegue |
-| `audnai/penclaw-GLM-5.3-abliterated` | no disponible | no disponible | no disponible | Según el autor, publicado | Variante "unrestricted" del mismo autor; sin datos técnicos en la información disponible |
-
-No es posible establecer una comparación cuantitativa con este repositorio porque carece de parámetros, contexto, benchmarks y licencia declarados.
+No se dispone de información suficiente sobre modelos comparables de la misma categoría para establecer una comparativa rigurosa de rendimiento y contexto.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de especificaciones: sin parámetros, contexto, tokenizador ni arquitectura, el modelo no se puede evaluar ni presupuestar para producción.
-- Pesos no publicados: la model card afirma que el lanzamiento será el 4 de noviembre; hasta entonces el repositorio no es utilizable.
-- Licencia no declarada: sin licencia explícita no hay autorización clara de uso comercial, y la situación legal de los pesos derivados es ambigua.
-- Eliminación deliberada de barreras de seguridad: un modelo "abliterated"/"unrestricted" carece de mecanismos de rechazo, lo que lo hace inadecuado para exposición directa a usuarios y exige moderación externa obligatoria.
-- Riesgo elevado de uso indebido: la combinación de modelos sin alineación y distribución abierta facilita la generación de contenido dañino; conviene restringir el acceso y registrar el uso.
-- Riesgo de alucinación: no cuantificado; no hay evaluación de factualidad ni de calibración.
-- Sesgos: no documentados; la abliteración puede alterar la distribución de respuestas en temas sensibles y agravar sesgos existentes.
-- Posible uso indebido de marcas: el repositorio emplea el nombre "Kimi", asociado a Moonshot AI, sin que se aclare la relación con el fabricante original; esto puede generar confusión sobre procedencia y soporte.
-- Captación de datos personales: aceptar el acceso implica recibir correos del autor sobre lanzamientos y acceso a inferencia, con baja posterior, según la propia model card. Es un condicionante comercial, no técnico.
-- Señales de baja madurez: 0 descargas, 0 likes y actualización seis minutos después de la creación sugieren un repositorio de anuncio, no un artefacto mantenido.
-- Idiomas y contexto desconocidos: no se puede garantizar calidad en castellano ni en conversaciones de contexto largo.
-- Sin soporte ni mantenimiento declarados: no hay issues, documentación de despliegue ni versionado de pesos.
+- Al ser un modelo "abliterated" y "uncensored", no incorpora las salvaguardas del modelo base; puede generar contenido dañino, ilegal o sesgado sin filtro.
+- Riesgo elevado de alucinación no cuantificado: no hay benchmarks publicados que permitan estimar su fiabilidad factual.
+- La licencia "other" bajo el identificador kimi-k3.1-pro impone condiciones que no se detallan en la ficha; es imprescindible revisar los términos de Moonshot AI antes de cualquier uso comercial, y el acceso gated exige aceptar condiciones adicionales en Hugging Face.
+- El autor del fine-tune no documenta la metodología de abliteración, el dataset ni los hiperparámetros, lo que impide auditar qué se ha modificado respecto al modelo base.
+- El tamaño de 1,5 TB en 8 bits y la necesidad de `custom_code` complican el despliegue, la reproducibilidad y la portabilidad entre frameworks.
+- No hay información sobre idiomas soportados ni sobre el comportamiento en lenguas distintas del inglés; el rendimiento en castellano es desconocido.
+- No se documenta la longitud de contexto, por lo que no puede garantizarse el manejo de conversaciones o documentos largos.
+- El modelo base es de octubre de 2026 y el fine-tune de noviembre de 2026; no hay historial de mantenimiento ni actualizaciones publicadas.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/audnai/penclaw-Kimi-K3-pro-unrestricted
-- Benchmark de rechazo del autor: https://github.com/audn-ai/refusal-benchmark
-- Release previa del autor (GLM 5.3 abliterated): https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated
-- Release previa del autor (Kimi K3.0 abliterated, GGUF): https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF
+- Hugging Face: https://huggingface.co/audnai/penclaw-Kimi-K3-pro-unrestricted
+- Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
+- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

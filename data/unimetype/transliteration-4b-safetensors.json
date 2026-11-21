@@ -61,31 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "QUERY function - Google Docs Editors Help",
-      "url": "https://support.google.com/docs/answer/3093343?hl=en",
-      "snippet": "data- The range of cells to perform the query on. Each column of datacan only hold boolean, numeric (including date/time types) or …"
-    },
-    {
-      "title": "UnimeType/Transliteration-4B · Hugging Face",
-      "url": "https://huggingface.co/UnimeType/Transliteration-4B",
-      "snippet": "UnimeType Transliteration 4B is a focused language conversion model for everyday, mixed-language writing. It converts Pinyin, Romaji, Romanized Hindi, Hinglish, and Arabizi while keeping clear English words, product names, links, code, numbers, punctuation, and emoji in place."
-    },
-    {
-      "title": "QUERY - Cправка - Редакторы Google Документов",
-      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
-      "snippet": "Google Таблицы Использование функций и формул QUERY QUERY Выполняет запросы на базе языка запросов API …"
-    },
-    {
-      "title": "UnimeType (UnimeType) - Hugging Face",
-      "url": "https://huggingface.co/UnimeType",
-      "snippet": "View all activity Team members 1 models1 UnimeType/Transliteration-4B Text Generation •0.9B•Updated about 6 hours ago datasets0 None public yet"
-    },
-    {
-      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
-      "url": "https://support.google.com/docs/answer/3093343?hl=th",
-      "snippet": "Google ชีต ใช้ฟังก์ชันและสูตร QUERY QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด …"
-    }
-  ]
+  "sources": []
 }

@@ -2,74 +2,66 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-NVFP4-GGUF es la version cuantizada en formato GGUF del modelo Nanbeige4.3-33B, el modelo de texto insignia de 33B del equipo Nanbeige, publicado bajo licencia Apache 2.0. La cuantizacion la firma prithivMLmods y emplea el formato NVFP4 (punto flotante de 4 bits nativo de NVIDIA), lo que reduce el archivo a 22,1 GB en un unico fichero GGUF optimizado para GPUs Blackwell. El modelo base es un transformer denso de 33.118.977.752 parametros con una ventana de contexto declarada de 512.000 tokens.
+Nanbeige4.3-33B-NVFP4-GGUF es una cuantizacion en formato GGUF con precision NVFP4 del modelo denso Nanbeige4.3-33B, desarrollado por el equipo Nanbeige y publicado bajo licencia Apache 2.0. El modelo original es un transformer denso de 33.118.977.752 parametros (aproximadamente 33B) concebido como modelo "profesor" de alta capacidad para destilar capacidades agenticas en modelos mas pequenos, con un enfoque declarado en codigo complejo y flujos de trabajo profesionales.
 
-El modelo esta disenado como "profesor" de alta capacidad para destilar capacidades agenticas en modelos mas pequenos, y apunta a flujos de trabajo profesionales y de programacion compleja. Incorpora preservacion configurable del razonamiento (thinking) y soporte de tool calling, con XML recomendado para las llamadas a herramientas. La model card lo compara con Qwen3.8-27B, Muse-Glimmer-30B y Gemma4-31B, sobre los que declara ventaja en varios benchmarks (Terminal-Bench 2.1: 80,9; AIME 2026: 95,2). El modelo base es compatible con Transformers, SGLang y vLLM.
+La relevancia de esta variante concreta reside en el formato: NVFP4 es una cuantizacion de 4 bits en coma flotante disenada para aceleradores Blackwell (arquitectura SM120, GB202), lo que permite ejecutar un modelo de 33B en aproximadamente 22,1 GB de pesos y con un pico de VRAM de 21,64 GiB segun las pruebas del autor. Esto lo situa en el rango de GPUs profesionales de gama alta y de algunas consumer de gran capacidad, algo impensable con los pesos en BF16.
 
-Esta ficha describe especificamente el artefacto cuantizado de prithivMLmods, que solo soporta ingles y chino, y cuya ejecucion se ha validado en llama.cpp sobre una NVIDIA RTX PRO 6000 Blackwell de 96 GB, con 64,40 tokens/s de generacion y 1.569,37 tokens/s de procesamiento de prompt.
+El modelo base declara una ventana de contexto de 512K tokens, soporte de tool calling con XML recomendado, modo de razonamiento ("thinking") configurable y compatibilidad con Transformers, SGLang y vLLM. Esta cuantizacion GGUF esta pensada para llama.cpp y llama-cli, y el autor la ha validado en una NVIDIA RTX PRO 6000 Blackwell Server Edition con 96 GB de VRAM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (etiquetas "llama" y "dense" en el repo) |
-| Parametros totales | 33.118.977.752 (~33,1B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 512.000 tokens (512K, segun la model card del modelo base) |
-| Tipos de cuantizacion | NVFP4 (unico archivo GGUF en el repositorio) |
+| Arquitectura | Transformer denso (modelo base Nanbeige4.3-33B) |
+| Parametros totales | 33.118.977.752 (33B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 512K tokens (modelo base); prueba realizada con 16.384 tokens |
+| Tipos de cuantizacion | NVFP4 (GGUF, 4 bits en coma flotante) |
 | Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
-| Modelo base | Nanbeige/Nanbeige4.3-33B |
-| Cuantizador | prithivMLmods (llama.cpp) |
-| Tamano del repositorio | 22,1 GB |
-| Fecha de publicacion | 2026-10-26 |
+| Formato de pesos | GGUF (archivo Nanbeige4.3-33B-NVFP4.gguf, 22,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el modelo base como un transformer denso (no MoE) de 33,1B parametros, etiquetado como "llama" en el repositorio, con una ventana de contexto de 512K tokens y soporte de modo de razonamiento configurable. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; esos datos figuran como no disponibles.
+El modelo base es un transformer denso de aproximadamente 33B parametros. La model card del autor de la cuantizacion no detalla la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de RLHF o DPO; esa informacion no esta disponible en la documentacion proporcionada. Si se indica que el modelo fue construido como profesor de alta capacidad para destilar capacidades agenticas en modelos de menor tamano, y que su foco son el codigo complejo y los flujos de trabajo profesionales.
 
-El artefacto de este repositorio es una cuantizacion NVFP4 generada con llama.cpp, no un reentrenamiento. NVFP4 es un formato de 4 bits con escalado por bloques orientado a los tensor cores de las GPUs Blackwell de NVIDIA, que busca reducir el peso en memoria manteniendo precision cercana a formatos de 8 bits. La model card indica explicitamente que la decodificacion especulativa MTP no esta disponible en esta version. El modelo base declara compatibilidad con Transformers, SGLang y vLLM, mientras que esta variante GGUF esta pensada para llama.cpp.
+La innovacion tecnica destacable de esta ficha es la cuantizacion NVFP4, un formato de 4 bits en coma flotante optimizado para los aceleradores Blackwell de NVIDIA (SM120). El autor confirma explicitamente que no se emplea decodificacion especulativa (MTP - Speculative Decoding: No) en las pruebas realizadas. El modelo base soporta Transformers, SGLang y vLLM, y recomienda XML para el formateo de tool calling.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general en ingles y chino.
-- Programacion y tareas de ingenieria de software: la model card reporta 65,5 en DeepSWE y 60,3 en SWE-bench Pro.
-- Razonamiento matematico de competicion: 95,2 en AIME 2026.
-- Ejecucion de tareas de terminal y agentes de linea de comandos: 80,9 en Terminal-Bench 2.1.
-- Tool calling / function calling, con XML recomendado como formato de llamada.
-- Razonamiento multi-paso y flujos agenticos (Automation Bench 54,2; Claw-Eval Pass@3 78,3).
-- Modo de pensamiento (thinking) con preservacion configurable del razonamiento.
-- Contexto largo de hasta 512K tokens para analisis de documentos o repositorios extensos.
-- Capacidad de actuar como profesor para destilar comportamiento agentico en modelos menores.
-- Vision, audio u otras modalidades: no disponibles en la informacion proporcionada.
+- Generacion de texto y razonamiento de proposito general, con modo de razonamiento ("thinking") configurable y preservacion configurable del mismo.
+- Codigo: el modelo esta orientado a tareas de ingenieria de software, con resultados declarados en Terminal-Bench 2.1, DeepSWE y SWE-bench Pro.
+- Matematicas: resultados declarados en AIME 2026.
+- Tool calling / function calling, con XML como formato recomendado.
+- Capacidades agenticas y razonamiento multi-paso (etiqueta "agent" en el repositorio, benchmarks de Automation Bench y Claw-Eval).
+- Multilingue limitado a ingles y chino.
+- No se declaran capacidades de vision ni de audio en la informacion disponible.
 
 ## Casos de uso
 
-- Agentes de programacion autonoma: el modelo puede resolver tareas de terminal y parcheo de codigo (Terminal-Bench 2.1 de 80,9 y SWE-bench Pro de 60,3) integrandose en pipelines de CI/CD o en entornos de ejecucion aislados.
-- Analisis de repositorios completos: con 512K tokens de contexto declarados, puede ingerir arboles de codigo y documentacion extensos en una sola pasada para tareas de revision, refactorizacion o auditoria.
-- Razonamiento matematico y verificacion formal: su resultado de 95,2 en AIME 2026 lo hace adecuado para tutoria matematica, generacion de problemas y validacion de demostraciones paso a paso.
-- Destilacion de capacidades agenticas: al estar concebido como modelo profesor, se puede usar para generar trayectorias y datos de entrenamiento que alimenten modelos mas pequenos desplegables en produccion.
-- Automatizacion de flujos profesionales: con Automation Bench de 54,2, encaja en orquestadores de tareas multi-paso que combinan busqueda, calculo y llamadas a APIs mediante tool calling en XML.
-- Asistentes tecnicos bilingues en y zh: cubre documentacion, soporte y generacion de contenido en ambos idiomas, util para equipos con operaciones en China y mercados angloparlantes.
-- Evaluacion de agentes y benchmarking interno: sirve como referencia de alta capacidad para comparar el rendimiento de modelos mas ligeros en tareas de terminal y codigo.
-- Generacion de codigo en produccion: con soporte de tool calling y contexto largo, puede integrarse en asistentes de IDE o revisiones automatizadas de pull requests.
+- Desarrollo de software asistido en produccion: el modelo declara 60,3 en SWE-bench Pro y 65,5 en DeepSWE, por lo que es adecuado para tareas de reparacion de bugs y generacion de parches sobre repositorios reales, integrándose en pipelines de CI/CD mediante tool calling en XML.
+- Automatizacion de terminal y operaciones: con 80,9 en Terminal-Bench 2.1, encaja en agentes que ejecutan comandos, interpretan salidas y corrigen errores de forma iterativa.
+- Agentes multi-paso con contexto largo: la ventana de 512K tokens del modelo base permite mantener historiales extensos de conversacion, trazas de herramientas y documentacion de repositorio en una sola sesion.
+- Razonamiento matematico y resolucion de problemas: los 95,2 declarados en AIME 2026 lo hacen util para asistentes de analisis cuantitativo y verificacion de calculos.
+- Destilacion de capacidades agenticas: el modelo base fue disenado explicitamente como profesor para transferir comportamiento agentico a modelos mas pequenos, por lo que sirve para generar trazas de alta calidad en procesos de distillation.
+- Despliegue local en estaciones de trabajo Blackwell: con 22,1 GB de pesos y 21,64 GiB de pico de VRAM, puede ejecutarse en una unica GPU profesional con llama.cpp para entornos con requisitos de privacidad de datos.
+- Evaluacion comparativa interna: util como referencia de alta capacidad frente a modelos de 27-31B en pruebas de codigo y agentes.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados en la model card (modelo base, comparados con alternativas segun el autor):
+Resultados declarados por el autor del modelo base frente a Qwen3.8-27B, Muse-Glimmer-30B y Gemma4-31B:
 
-| Benchmark | Nanbeige4.3-33B | Qwen3.8-27B | Gemma4-31B | Muse-Glimmer-30B |
-|---|---|---|---|---|
-| Terminal-Bench 2.1 | 80,9 | no disponible | no disponible | no disponible |
-| DeepSWE | 65,5 | no disponible | no disponible | no disponible |
-| Automation Bench | 54,2 | no disponible | no disponible | no disponible |
-| Claw-Eval Pass@3 | 78,3 | no disponible | no disponible | no disponible |
-| AIME 2026 | 95,2 | no disponible | no disponible | no disponible |
-| SWE-bench Pro | 60,3 | 61,7 | no disponible | no disponible |
-| GPQA-Diamond | 89,5 | no disponible | 91,3 | no disponible |
+| Benchmark | Nanbeige4.3-33B | Referencia comparada |
+|---|---|---|
+| Terminal-Bench 2.1 | 80,9 | no disponible para el resto |
+| DeepSWE | 65,5 | no disponible para el resto |
+| Automation Bench | 54,2 | no disponible para el resto |
+| Claw-Eval Pass@3 | 78,3 | no disponible para el resto |
+| AIME 2026 | 95,2 | no disponible para el resto |
+| SWE-bench Pro | 60,3 | Qwen3.8-27B: 61,7 |
+| GPQA-Diamond | 89,5 | Gemma4-31B: 91,3 |
 
-Rendimiento medido de la cuantizacion NVFP4 en llama.cpp (RTX PRO 6000 Blackwell, 96 GB, contexto de 16.384 tokens, KV cache q8_0, semilla 42, 5 ejecuciones):
+Rendimiento de inferencia de esta cuantizacion NVFP4, medido por el autor con llama-cli en una NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB VRAM), contexto de 16.384 tokens, KV cache q8_0, 99 capas offloaded y 5 ejecuciones:
 
 | Metrica | Valor |
 |---|---|
@@ -77,52 +69,41 @@ Rendimiento medido de la cuantizacion NVFP4 en llama.cpp (RTX PRO 6000 Blackwell
 | Velocidad media de generacion | 64,40 tokens/s |
 | Tiempo medio por ejecucion | 14,70 s |
 | Tiempo total de pared | 73,5 s |
-| VRAM pico | 21,64 GiB |
-| Utilizacion pico de GPU | 97% |
-| Capas descargadas a GPU | 99 (-ngl 99) |
-
-No se han publicado resultados de benchmarks adicionales del artefacto cuantizado en la informacion disponible; los valores de benchmark corresponden al modelo base y son autodeclarados por el autor.
+| Pico de VRAM | 21,64 GiB |
+| Uso pico de GPU | 97% |
 
 ## Requisitos de hardware
 
-- Peso del archivo NVFP4: 22,1 GB, un unico GGUF.
-- VRAM medida en inferencia: 21,64 GiB pico con contexto de 16.384 tokens y KV cache q8_0; el consumo crece de forma apreciable con contextos cercanos a los 512K declarados.
-- NVFP4 requiere aceleracion nativa en GPUs Blackwell de NVIDIA: la prueba oficial usa una RTX PRO 6000 Blackwell Server Edition de 96 GB. En arquitecturas anteriores el soporte de NVFP4 puede no estar disponible o degradar el rendimiento.
-- GPU de referencia: NVIDIA RTX PRO 6000 Blackwell (96 GB). Otras opciones Blackwell como la RTX 5090 (32 GB) deberian poder alojar los 22,1 GB de pesos mas la cache KV, aunque no hay verificacion en la informacion disponible.
-- GPUs consumer por debajo de 24 GB de VRAM: no es viable cargar el modelo completo en GPU con esta cuantizacion.
-- Despliegue: llama.cpp (llama-cli, llama-cpp-python) es la via validada para este GGUF. El modelo base declara soporte de Transformers, SGLang y vLLM, pero no se ha verificado el soporte de este archivo NVFP4 en esos motores.
-- Throughput medido: 64,40 tokens/s de generacion y 1.569,37 tokens/s de prefill en la configuracion indicada; el rendimiento variara con el prompt, el build y los parametros de ejecucion.
-- No hay decodificacion especulativa MTP disponible en esta version, por lo que no se puede acelerar la generacion con ese mecanismo.
+- VRAM estimada para inferencia: aproximadamente 22,1 GB solo para pesos; el autor reporta un pico de 21,64 GiB con contexto de 16.384 tokens y KV cache q8_0.
+- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB) es la unica configuracion validada por el autor. Por requisito de arquitectura, NVFP4 necesita aceleradores Blackwell (SM120, GB202).
+- GPU consumer: no se ha validado en GPUs consumer en la informacion disponible; el requisito de arquitectura Blackwell limita la compatibilidad a modelos de esa generacion con VRAM suficiente.
+- Opciones de despliegue: llama.cpp / llama-cli (validado); el modelo base declara compatibilidad con Transformers, SGLang y vLLM, aunque esta cuantizacion GGUF concreta esta pensada para llama.cpp.
+- Latencia y throughput: 64,40 tokens/s de generacion y 1.569,37 tokens/s de procesamiento de prompt en la configuracion indicada; el rendimiento variara con el prompt, el build de software y los ajustes de runtime.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato disponible | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B (esta cuantizacion NVFP4) | 33,1B denso | 512K | Apache 2.0 | GGUF NVFP4 | Lidera Terminal-Bench 2.1 y AIME 2026 segun el autor |
-| Qwen3.8-27B | 27B | no disponible | no disponible | no disponible | Supera al modelo en SWE-bench Pro (61,7 frente a 60,3) |
-| Gemma4-31B | 31B | no disponible | no disponible | no disponible | Supera al modelo en GPQA-Diamond (91,3 frente a 89,5) |
-| Muse-Glimmer-30B | 30B | no disponible | no disponible | no disponible | Sin datos de benchmarks en la informacion disponible |
-
-Los datos de contexto, licencia y formato de los tres modelos comparables no se detallan en la informacion proporcionada y figuran como no disponibles.
+| Nanbeige4.3-33B (esta cuantizacion) | 33B denso | 512K (base) | Apache 2.0 | GGUF NVFP4 en HF | Requiere hardware Blackwell |
+| Qwen3.8-27B | 27B (no confirmado) | no disponible | no disponible | no disponible | Lidera SWE-bench Pro (61,7 vs 60,3) |
+| Gemma4-31B | 31B (no confirmado) | no disponible | no disponible | no disponible | Lidera GPQA-Diamond (91,3 vs 89,5) |
+| Muse-Glimmer-30B | 30B (no confirmado) | no disponible | no disponible | no disponible | Citado como referencia, sin datos |
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles y chino de forma oficial; el rendimiento en castellano u otros idiomas no esta documentado.
-- Los benchmarks son autodeclarados por el autor del modelo base; no se aportan detalles de metodologia ni de replicacion independiente.
-- El repositorio tiene 4 descargas y 1 "like" en la fecha de actualizacion, por lo que la validacion comunitaria es practicamente nula.
-- El artefacto es una cuantizacion NVFP4 de 4 bits: puede degradar la precision frente al modelo base en tareas sensibles, aunque no se aportan mediciones de perdida de calidad.
-- NVFP4 depende de hardware Blackwell; en GPUs no compatibles el modelo puede no ejecutarse o hacerlo con bajo rendimiento.
-- No hay decodificacion especulativa MTP disponible, lo que limita la aceleracion en produccion.
-- El contexto probado es de 16.384 tokens, muy inferior a los 512K declarados; el comportamiento y el consumo de VRAM en contextos largos no estan verificados.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan tasas de error ni evaluaciones de factualidad.
-- No se documentan sesgos conocidos, composicion del dataset ni procesos de alineacion; no disponibles.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de entrenamiento, no detalladas en la informacion disponible.
+- Idiomas: solo ingles y chino; no se declara soporte de castellano ni de otros idiomas.
+- Hardware: NVFP4 requiere aceleradores Blackwell (SM120); no es portable a GPUs Ampere, Ada ni a hardware no NVIDIA.
+- Sin decodificacion especulativa: el autor confirma que MTP no esta disponible, lo que limita el throughput frente a alternativas con speculative decoding.
+- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad en la informacion disponible.
+- Alucinacion: no se publican tasas de alucinacion ni evaluaciones de fidelidad; debe validarse en produccion.
+- Contexto: aunque el modelo base declara 512K tokens, la prueba realizada solo cubre 16.384 tokens, por lo que el comportamiento y el consumo de VRAM a contextos mayores no estan verificados.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse el aviso de licencia y atribucion correspondiente.
+- Cuantizacion de 4 bits: puede degradar la precision respecto a los pesos originales; no se publican comparativas de calidad entre NVFP4 y BF16.
+- Datos de benchmarks: proceden de la model card del autor y no se han verificado de forma independiente.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Nanbeige4.3-33B-NVFP4-GGUF
 - Archivo GGUF: https://huggingface.co/prithivMLmods/Nanbeige4.3-33B-NVFP4-GGUF/blob/main/Nanbeige4.3-33B-NVFP4.gguf
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
-- llama.cpp (repositorio oficial): https://github.com/ggml-org/llama.cpp
-
-La busqueda web no devolvio resultados relevantes sobre el modelo; no se han incluido enlaces adicionales.
+- llama.cpp: https://github.com/ggml-org/llama.cpp

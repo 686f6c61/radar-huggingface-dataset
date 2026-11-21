@@ -2,119 +2,130 @@
 
 ## Resumen
 
-Klang Pianissimo es un modelo de reconocimiento automatico del habla (ASR) especializado en sueco, desarrollado por Klang y publicado en Hugging Face bajo licencia CC BY 4.0. Se trata de un ajuste fino del checkpoint NVIDIA Parakeet TDT 0.6B v3, del que conserva arquitectura (encoder FastConformer y decodificador TDT, Token-and-Duration Transducer) y tokenizador, con aproximadamente 600 millones de parametros y un checkpoint de 2,51 GB.
+Pianissimo es un modelo de reconocimiento automatico del habla (ASR) especializado en sueco, desarrollado por Klang AI. Se trata de un fine-tune de NVIDIA Parakeet TDT 0.6B v3, un modelo de 600 millones de parametros basado en la arquitectura FastConformer con decodificacion TDT (Token-and-Duration Transducer). El modelo parte de un checkpoint multilingue ya entrenado y se ajusta especificamente para sueco, lo que permite obtener una precision muy superior a la del modelo base en ese idioma.
 
-El problema que resuelve es la baja precision de los modelos multilingues genericos en sueco: frente a su modelo base, Pianissimo reduce el error relativo un 76 % en Common Voice y un 57 % en FLEURS, y se situa en el mismo orden de magnitud que los ajustes especificos de KB-Whisper con un coste computacional muy inferior (2.500x tiempo real frente a 39-66x). Es relevante ahora porque demuestra que un ajuste fino bien dirigido sobre un encoder convolucional-transformer pequeno puede superar a modelos ASR mucho mayores en un idioma concreto, manteniendo transcripcion masiva de archivo.
+La relevancia de Pianissimo radica en su combinacion de precision y velocidad: alcanza un 4.46% de WER en el conjunto de test de Common Voice sueco y un 6.51% en FLEURS sueco, lo que supone reducciones de error del 76% y 57% respectivamente frente a Parakeet v3. Ademas, puede transcribir una hora de audio en un segundo sobre una GPU H100, lo que lo situa en el rango de modelos de produccion de alta eficiencia.
 
-La entrada es audio mono a 16 kHz con caracteristicas log-mel de 128 bandas. El modelo admite clips cortos y grabaciones largas, genera puntuacion, mayusculas y marcas de tiempo a nivel de palabra, y esta entrenado sobre unas 50.000 horas de habla en sueco.
+El modelo se distribuye bajo licencia CC BY 4.0, lo que permite uso comercial con atribucion, y cuenta con versiones cuantizadas en ONNX (int8, int4, fp16, fp32) para CPU y en MLX para Apple Silicon, ampliando enormemente las opciones de despliegue.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (encoder) + TDT, Token-and-Duration Transducer (decodificador); ajuste fino de nvidia/parakeet-tdt-0.6b-v3 |
-| Parametros totales | Aproximadamente 600 millones |
-| Parametros activos | No aplica: arquitectura densa, no es un modelo MoE |
-| Longitud de contexto | Atencion local por defecto: 256 tramas del encoder a cada lado por capa (aprox. 20,5 s de contexto en cada direccion y por capa). El coste de atencion es lineal con la duracion, por lo que admite grabaciones largas. Entrada de audio: 16 kHz, mono |
-| Tipos de cuantizacion | No disponible. La model card no documenta esquemas de cuantizacion; el checkpoint ocupa 2,51 GB y las mediciones de throughput se hicieron a precision de 16 bits |
-| Idiomas soportados | Sueco (sv). No se ha establecido el comportamiento en otros idiomas ni en code-switching |
+| Arquitectura | FastConformer con decodificacion TDT (Token-and-Duration Transducer) |
+| Parametros totales | 600 millones (0.6B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (soporta clips cortos y grabaciones largas; memoria crece con la longitud y el batch) |
+| Tipos de cuantizacion | fp32, fp16, int8, int4 (ONNX); bf16, fp32, 8-bit, 4-bit (MLX) |
+| Idiomas soportados | sueco (sv) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | NeMo (.nemo), cargado mediante nemo_toolkit[asr]. Tamano del repositorio: 2,5 GB. No se documentan safetensors, GGUF ni ONNX |
-| Encoder | 24 capas, subsampling 8x |
-| Caracteristicas de entrada | Espectrograma log-mel de 128 bandas |
-| Tarea (pipeline) | automatic-speech-recognition |
-| Metricas declaradas | WER (word error rate) |
-| Datasets de entrenamiento citados | google/fleurs, KlangAI/klang-dialects, RixVox, Common Voice (y dataset interno de datos publicos) |
-| Descargas / likes | 816 descargas, 14 likes |
-| Fechas del repositorio | Creado el 2026-09-23, actualizado el 2026-09-23 |
+| Formato de pesos | NeMo (.nemo, PyTorch); ONNX; MLX |
+| Tamano del repo | 2.5 GB |
+| Modelo base | nvidia/parakeet-tdt-0.6b-v3 |
+| Frecuencia de muestreo | 16 kHz mono |
+| Timestamps | A nivel de palabra y de segmento |
+| Vocabulario personalizado | Si, mediante phrase boosting (boosting_tree) |
 
 ## Arquitectura y entrenamiento
 
-Pianissimo mantiene la arquitectura de Parakeet v3: un encoder FastConformer de 24 capas con subsampling 8x sobre espectrogramas log-mel de 128 bandas a 16 kHz mono, y un decodificador TDT (Token-and-Duration Transducer), que predice conjuntamente el token y su duracion, lo que acelera la decodificacion frente a un transducer clasico. La diferencia operativa mas importante respecto al checkpoint original es que Pianissimo usa atencion local por defecto (256 tramas del encoder a cada lado en cada capa, unos 20,5 s en cada direccion), en lugar de atencion completa. Esto mantiene el calculo de atencion lineal en la longitud de la grabacion y hace viables las transcripciones largas sin trocear manualmente el audio.
+Pianissimo emplea la arquitectura FastConformer, una variante eficiente del Conformer que reduce el coste computacional mediante subsampling de la secuencia de entrada, combinada con un decodificador TDT (Token-and-Duration Transducer). El decodificador TDT predice conjuntamente tokens y duraciones, lo que permite un alineamiento mas eficiente que los transducers clasicos y habilita la generacion de timestamps a nivel de palabra de forma nativa.
 
-El ajuste fino se realizo sobre aproximadamente 50.000 horas de habla en sueco, combinando datasets publicos (RixVox, Common Voice, FLEURS) con un corpus interno de Klang construido a partir de datos de acceso publico. Las tecnicas de aumento de datos aplicadas incluyen reverberacion, ruido, compresion, reduccion de ancho de banda y cambios de ganancia. La model card no detalla el uso de RLHF, DPO ni otras tecnicas de alineacion, que en un modelo ASR no resultan de aplicacion directa. Tampoco se documenta el coste de entrenamiento, el numero exacto de pasos ni la composicion porcentual del dataset.
+El modelo es un fine-tune del checkpoint multilingue nvidia/parakeet-tdt-0.6b-v3 sobre datos de habla en sueco. La model card no detalla el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables habitualmente en ASR). La evaluacion reportada incluye los conjuntos Common Voice sueco, FLEURS sueco y un conjunto propio denominado Klang Dialects, lo que sugiere que el ajuste se realizo con datos que cubren variacion dialectal. El modelo soporta ademas phrase boosting mediante un arbol de boosting en la decodificacion greedy, con parametros configurables como `context_score`, `depth_scaling` y `boosting_tree_alpha`.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en sueco, tanto de clips cortos como de grabaciones largas.
-- Puntuacion y mayusculas generadas por el propio modelo, sin postproceso adicional obligatorio.
-- Marcas de tiempo a nivel de palabra y de segmento (activable con `timestamps=True`), utiles para subtitulado y alineacion.
-- Decodificacion por lotes con `batch_size` configurable; la model card recomienda `batch_size=1` para grabaciones largas.
-- Rendimiento de transcripcion masiva: 2.500x tiempo real en una A100 de 80 GB con clips de 30 s, precision de 16 bits y lote optimo.
-- Cobertura de variantes dialectales suecas, entrenada en parte con KlangAI/klang-dialects (WER de 4,85 % en el conjunto limpio de ese corpus).
-- Tool calling / function calling: no aplica, es un modelo ASR, no un modelo de lenguaje conversacional.
-- Soporte de agentes y razonamiento multi-paso: no aplica.
-- Capacidades multilingues: no disponibles; solo se ha evaluado sueco.
-- Capacidades especiales (modo thinking, vision, audio generativo, diarizacion de hablantes): no documentadas.
+- Transcripcion de voz a texto en sueco con puntuacion y capitalizacion automaticas.
+- Generacion de timestamps a nivel de palabra y de segmento.
+- Procesamiento de clips cortos y grabaciones largas (con batch_size=1 para audio largo).
+- Vocabulario personalizado mediante phrase boosting para mejorar la ortografia de nombres propios y terminos tecnicos (sensible a mayusculas).
+- Transcripcion por lotes (batch) con ajuste de tamano de batch segun la GPU.
+- Ejecucion en CPU mediante ONNX (int8, int4, fp16, fp32) y en GPU Apple Silicon mediante MLX.
+- No soporta tool calling, function calling ni razonamiento multi-paso (es un modelo puramente ASR).
+- No soporta vision ni audio mas alla de la transcripcion de habla.
 
 ## Casos de uso
 
-- Subtitulado de archivo audiovisual en sueco: las marcas de tiempo a nivel de palabra permiten generar subtitulos sincronizados sin un paso adicional de alineacion forzada, y la puntuacion y mayusculas reducen la edicion posterior.
-- Transcripcion de reuniones y actas: con atencion local y calculo lineal, el modelo procesa grabaciones largas en una sola pasada; se recomienda `batch_size=1` porque el consumo de memoria crece con la duracion.
-- Analitica de contact center en sueco: transcribir llamadas de forma masiva (2.500x tiempo real) para alimentar sistemas de busqueda, clasificacion de motivos o control de calidad, con un WER de 4,46 % en Common Voice como referencia de precision.
-- Generacion de corpus etiquetados: usar las transcripciones para crear datos de entrenamiento o evaluacion de otros modelos en sueco, aprovechando el rendimiento de transcripcion masiva (50.000 horas de audio se procesarian en unas 20 horas de computo en una unica A100, calculo derivado del throughput declarado).
-- Investigacion dialectologica y sociolinguistica: el modelo mantiene un WER de 4,85 % en el conjunto limpio de Klang Dialects, lo que lo hace util para estudiar variacion regional a partir de entrevistas y grabaciones de campo.
-- Archivado y cumplimiento normativo: indexar y buscar por texto en archivos de audio historicos; las marcas de tiempo permiten recuperar el fragmento exacto asociado a una consulta.
-- Accesibilidad en diferido: subtitulado de contenido grabado para personas con discapacidad auditiva, con la advertencia de que la model card no documenta modo streaming ni transcripcion en tiempo real.
-- Preprocesado en canalizaciones de datos de voz: normalizar grandes volumenes de audio sueco a texto antes de tareas posteriores de NLP, con la ventaja de que el coste de inferencia es notablemente inferior al de alternativas Whisper.
+- Transcripcion de reuniones y actas: el modelo puede procesar grabaciones largas con batch_size=1 y generar timestamps por palabra, lo que facilita la creacion de actas con marcas temporales y la busqueda dentro del audio transcrito.
+- Subtitulado automatico de video en sueco: los timestamps a nivel de palabra permiten alinear subtitulos con precision, y la puntuacion automatica reduce el post-procesado necesario en pipelines de subtitulado.
+- Atencion al cliente y analitica de llamadas: la alta velocidad (hasta 2.000x en throughput masivo segun la model card) permite transcribir grandes volumenes de grabaciones telefonicas en sueco para analisis de calidad, deteccion de temas y compliance.
+- Dictado y productividad: con las versiones ONNX int8 (660 MB) o MLX 8-bit (759 MB) puede ejecutarse localmente en portatiles, habilitando dictado offline con baja latencia y sin enviar audio a la nube.
+- Investigacion linguistica y sociolinguistica: el conjunto Klang Dialects y la capacidad de phrase boosting permiten estudiar variacion dialectal y transcribir corpus con terminologia especializada.
+- Accesibilidad: generacion de transcripciones en tiempo real o diferido para contenido audiovisual en sueco, con soporte para vocabulario personalizado que mejora la legibilidad de nombres propios.
+- Integracion en pipelines de datos: la version ONNX se ejecuta en cualquier CPU (Windows, Linux, Mac, Intel, AMD, ARM) mediante onnx-asr, lo que facilita el despliegue en entornos sin GPU.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor. WER en porcentaje sobre habla sueca, menor es mejor; el throughput masivo se expresa como multiplos de tiempo real. Todas las evaluaciones se hicieron con el mismo procedimiento de puntuacion.
+Resultados de WER (%) en habla sueca; menor es mejor. Evaluados por Klang con el mismo procedimiento de scoring.
 
 | Modelo | CV test | FLEURS test | Klang Dialects | Throughput masivo |
 |---|---:|---:|---:|---:|
-| Pianissimo | 4,46 | 6,51 | 4,85 | 2.500x |
-| Parakeet TDT 0.6B v3 | 18,54 | 15,18 | 25,82 | 2.500x |
-| KB-Whisper medium | 5,40 | 6,58 | 3,58 | 66x |
-| KB-Whisper large | 3,91 | 5,08 | 2,30 | 39x |
-| Whisper large-v3 | 8,07 | 7,24 | 8,16 | 39x |
+| Pianissimo (fp32) | 4.46 | 6.51 | 4.85 | 2.000x (H100, segun model card) |
+| Parakeet v3 (base) | no disponible en la informacion (reduccion del 76% en CV y 57% en FLEURS frente a Pianissimo) | no disponible | no disponible | no disponible |
 
-Detalles de la evaluacion: 5.516 clips de test de Common Voice v26, 758 clips de test de FLEURS y las 1.804 grabaciones del conjunto limpio de Klang Dialects. El WER es a nivel de corpus, calculado tras convertir a minusculas, sustituir la puntuacion por espacios y colapsar espacios en blanco. El throughput se midio en una NVIDIA A100 de 80 GB con clips de 30 s, precision de 16 bits y tamanos de lote optimos.
+Rendimiento de las versiones cuantizadas (WER y velocidad RTFx sobre clip de 30 s):
 
-No se han publicado otros resultados de benchmarks (por ejemplo, suites multimetricas) en la informacion disponible.
+| Version | Ejecucion | Descarga | CV test | FLEURS test | Klang Dialects | Velocidad |
+|---|---|---:|---:|---:|---:|---:|
+| Original fp32 | PyTorch/NeMo | 2.51 GB | 4.46 | 6.51 | 4.85 | no disponible |
+| ONNX int8 | Cualquier CPU | 660 MB | 4.65 | 6.62 | 4.93 | 35x (Intel), 74x (Mac) |
+| ONNX int4 | Cualquier CPU | 515 MB | 4.63 | 6.58 | 5.06 | 12x (Intel), 37x (Mac) |
+| ONNX fp16 | Cualquier CPU | 1.28 GB | 4.47 | 6.48 | 4.89 | 18x (Intel), 55x (Mac) |
+| ONNX fp32 | Cualquier CPU | 2.56 GB | 4.46 | 6.48 | 4.89 | 18x (Intel), 55x (Mac) |
+| MLX 8-bit | Apple Silicon | 759 MB | 4.51 | 6.45 | 4.83 | 151x |
+| MLX 4-bit | Apple Silicon | 528 MB | 4.66 | 6.53 | 5.20 | 126x |
+| MLX bf16 | Apple Silicon | 1.25 GB | 4.45 | 6.43 | 4.85 | 140x |
+| MLX fp32 | Apple Silicon | 2.51 GB | 4.46 | 6.49 | 4.90 | 173x |
+
+Velocidad medida como RTFx sobre un clip de 30 s. ONNX con 4 hilos en Intel Xeon Platinum 8481C y 6 hilos en Apple M5 Pro; MLX en GPU Apple M5 Pro.
+
+Resultados de phrase boosting (135 clips FLEURS con nombres mal escritos + 100 clips sin nombres):
+
+| `boosting_tree_alpha` | Nombres correctos | WER clips con nombres | WER otros clips | Nombres insertados erroneamente |
+|---:|---:|---:|---:|---:|
+| 0 (off) | 39% | 13.17 | 4.27 | 0 |
+| 0.25 | 48% | 11.87 | 4.32 | 0 |
+| 0.5 | 53% | 11.26 | 4.32 | 0 |
+| 1.0 | 64% | 10.10 | 4.37 | 0 |
+| 2.0 | 71% | 10.54 | 5.04 | 4 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint ocupa 2,51 GB en disco. En fp16 los 600 M de parametros ocuparian aproximadamente 1,2 GB; en fp32, unos 2,4 GB, coherente con el tamano del repositorio. El autor indica que el uso de memoria crece con la duracion de la grabacion y con el tamano de lote, por lo que no hay una cifra unica de VRAM valida para todos los casos.
-- GPU de referencia: NVIDIA H100 capaz de transcribir una hora de audio en un segundo segun el autor. Las mediciones de throughput se hicieron en una A100 de 80 GB.
-- GPU consumer: con clips de 30 s y `batch_size=1`, el modelo cabe con holgura en cualquier GPU consumer de 8 GB o mas (RTX 3060 Ti, RTX 4060, RTX 4070, RTX 3090, RTX 4090), segun estimacion basada en el tamano del checkpoint; para grabaciones muy largas conviene partir de 24 GB. El autor recomienda GPU NVIDIA y el uso de CPU no esta cuantificado.
-- Opciones de despliegue: NeMo toolkit (`nemo_toolkit[asr]`) con PyTorch, cargando el modelo con `ASRModel.from_pretrained`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; tampoco se menciona exportacion a ONNX o TensorRT en la model card.
-- Latencia y throughput: 2.500x tiempo real en modo masivo (A100 80 GB, clips de 30 s, 16 bits, lote optimo). Es una cifra de throughput por lotes, no de latencia por peticion; no se publica latencia de primera palabra ni comportamiento en streaming.
+- VRAM estimada para inferencia en fp32: aproximadamente 2.5 GB de pesos; el consumo real crece con la longitud del audio y el tamano de batch. Con batch_size=1 para grabaciones largas el consumo es moderado.
+- GPU recomendadas: NVIDIA H100 para maximo throughput (1 hora de audio en 1 segundo); cualquier GPU NVIDIA con suficiente VRAM para las versiones NeMo/PyTorch.
+- Consumer GPU: si, cabe en GPUs de consumo con 4-8 GB de VRAM en fp32, y en menos con cuantizacion. Las versiones ONNX int8 (660 MB) e int4 (515 MB) se ejecutan en CPU sin GPU.
+- Apple Silicon: versiones MLX (8-bit 759 MB, 4-bit 528 MB) que se ejecutan en la GPU de Macs con chip Apple.
+- Opciones de despliegue: NeMo Toolkit (`nemo_toolkit[asr]`) con PyTorch; ONNX Runtime mediante `onnx-asr` (`pip install onnx-asr[cpu,hub]`); MLX en macOS. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo ASR).
+- Latencia y throughput: RTFx de 35x-74x en CPU (ONNX int8), 126x-173x en Apple M5 Pro (MLX) y hasta 2.000x en H100 para throughput masivo, segun la model card.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | WER CV test | WER FLEURS | WER Klang Dialects | Throughput | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|---|
-| Pianissimo (KlangAI/pianissimo-sv) | ~600 M | 16 kHz mono, atencion local (aprox. 20,5 s por capa y direccion) | 4,46 | 6,51 | 4,85 | 2.500x | CC BY 4.0 | Hugging Face, NeMo |
-| Parakeet TDT 0.6B v3 | 0,6 B (segun denominacion) | 16 kHz mono, atencion completa | 18,54 | 15,18 | 25,82 | 2.500x | No disponible en la informacion proporcionada | Hugging Face, NeMo |
-| KB-Whisper medium | No disponible | Whisper, ventanas de 30 s | 5,40 | 6,58 | 3,58 | 66x | No disponible en la informacion proporcionada | Hugging Face |
-| KB-Whisper large | No disponible | Whisper, ventanas de 30 s | 3,91 | 5,08 | 2,30 | 39x | No disponible en la informacion proporcionada | Hugging Face |
-| Whisper large-v3 | No disponible | Whisper, ventanas de 30 s | 8,07 | 7,24 | 8,16 | 39x | No disponible en la informacion proporcionada | Hugging Face |
+| Modelo | Parametros | Contexto | WER CV sueco | WER FLEURS sueco | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| Pianissimo | 0.6B | no disponible | 4.46 | 6.51 | CC BY 4.0 | Hugging Face (NeMo, ONNX, MLX) |
+| Parakeet TDT 0.6B v3 | 0.6B | no disponible | no disponible (referencia base; Pianissimo reduce error 76%) | no disponible (reduccion 57%) | no disponible en la informacion | Hugging Face (NVIDIA) |
+| Otros ASR suecos | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Lectura de la comparativa: Pianissimo supera con claridad a su modelo base Parakeet v3 en los tres conjuntos, y a Whisper large-v3 en Common Voice y FLEURS, con una ventaja de throughput de dos ordenes de magnitud (2.500x frente a 39x). Sin embargo, KB-Whisper large sigue siendo mejor en FLEURS (5,08 frente a 6,51) y en Klang Dialects (2,30 frente a 4,85), por lo que la eleccion depende de si prima el coste de inferencia o la precision maxima en dominios dialectales. Los parametros de los modelos KB-Whisper y Whisper large-v3 no se detallan en la informacion proporcionada y las licencias de los modelos comparados no se han verificado.
+La model card no incluye una comparativa directa con otros modelos ASR suecos (por ejemplo, Whisper fine-tuneado para sueco o VoxRex). Solo se dispone de la comparacion con el modelo base Parakeet v3 en terminos de reduccion relativa de error.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte de que el habla solapada, el ruido de fondo fuerte, los nombres poco comunes y el vocabulario especializado reducen la calidad de la transcripcion.
-- El formato de numeros y la puntuacion pueden requerir edicion manual segun la aplicacion destino.
-- Evaluacion centrada exclusivamente en sueco; no se ha establecido el rendimiento en otros idiomas ni con code-switching, por lo que no debe usarse como modelo multilingue.
-- Las cifras de WER se calcularon tras normalizar el texto (minusculas, puntuacion sustituida por espacios, espacios colapsados), de modo que no son directamente comparables con evaluaciones que conservan puntuacion y mayusculas.
-- Riesgo de inserciones y transcripciones plausibles en segmentos con ruido, silencio o audio musical: no se publican tasas de alucinacion ni de insercion, ni resultados con audio no vocal.
-- No se documentan sesgos demograficos ni desagregacion del WER por acento, edad, sexo o procedencia regional. El conjunto Klang Dialects es el unico indicio de cobertura dialectal.
-- Licencia CC BY 4.0: permite uso comercial, incluida la modificacion y redistribucion, siempre que se atribuya a Klang y se indique si hubo cambios. Conviene verificar la licencia del modelo base Parakeet v3 antes de redistribuir pesos derivados.
-- No se documentan cuantizaciones ni formatos de despliegue ligero (GGUF, ONNX), lo que limita su uso en entornos sin PyTorch/NeMo o en dispositivos con poco espacio.
-- El throughput de 2.500x se midio con clips de 30 s, precision de 16 bits y lote optimo en una A100 de 80 GB; no debe extrapolarse a inferencias de una sola peticion ni a audio muy largo sin verificar el consumo de memoria.
-- La model card no describe modo streaming ni decodificacion incremental, por lo que no es apta como modelo de subtitulado en directo sin trabajo adicional.
-- No hay informacion sobre el desglose del dataset de entrenamiento ni sobre el porcentaje de datos sinteticos o generados, lo que dificulta auditar posibles sesgos.
+- El modelo solo soporta sueco; no es multilingue.
+- Al ser un modelo ASR, puede producir errores en habla con ruido, acentos muy marcados o jerga no vista en entrenamiento; la model card no detalla sesgos especificos.
+- El phrase boosting es sensible a mayusculas y puede insertar nombres erroneamente con valores altos de `boosting_tree_alpha` (4 inserciones erroneas con alpha=2.0 en la evaluacion reportada).
+- La memoria crece con la longitud de la grabacion y el batch; para audio largo se recomienda batch_size=1.
+- Licencia CC BY 4.0: permite uso comercial con atribucion; es necesario citar a Klang AI y mantener el aviso de licencia.
+- No se detallan en la model card los datos de entrenamiento ni posibles sesgos dialectales o demograficos; el conjunto Klang Dialects sugiere cobertura dialectal pero sin metricas desagregadas.
+- Requiere audio de 16 kHz mono; otras frecuencias o canales requieren preprocesado.
+- No soporta tool calling, agentes ni razonamiento; su unico proposito es la transcripcion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KlangAI/pianissimo-sv
-- Modelo base NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Pagina de release y demo: https://klang.ai/pianissimo/
+- Modelo base NVIDIA Parakeet v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Version ONNX: https://huggingface.co/KlangAI/pianissimo-sv-onnx
+- Version MLX 8-bit: https://huggingface.co/KlangAI/pianissimo-sv-mlx-8bit
+- Version MLX 4-bit: https://huggingface.co/KlangAI/pianissimo-sv-mlx-4bit
+- Version MLX bf16: https://huggingface.co/KlangAI/pianissimo-sv-mlx
+- Version MLX fp32: https://huggingface.co/KlangAI/pianissimo-sv-mlx-fp32
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-- Dataset RixVox citado en el entrenamiento: https://huggingface.co/datasets/KBLab/rixvox
-- Dataset Common Voice / FLEURS (google/fleurs): https://huggingface.co/datasets/google/fleurs
-- Dataset Klang Dialects (KlangAI/klang-dialects): https://huggingface.co/datasets/KlangAI/klang-dialects
-- Cita del autor (BibTeX, sin paper asociado): Klang, "Klang Pianissimo", 2026, Hugging Face model repository.
-- Nota sobre la busqueda web: los resultados obtenidos no contienen informacion relevante sobre el modelo (paginas de inicio de sesion y guias no relacionadas), por lo que no se incluyen enlaces adicionales. No se ha localizado paper tecnico, repositorio de codigo ni demostracion publica.

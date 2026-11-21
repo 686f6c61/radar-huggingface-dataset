@@ -61,6 +61,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Lean 4 whole-proof generation",
+      "dataset": "miniF2F (valid split, 226 problems, Lean 4)",
+      "metric": "pass@1 (n=8, unbiased, temperature 1.0, cap 30k tokens)",
+      "value": 0.7113
+    },
+    {
+      "task": "Lean 4 whole-proof generation",
+      "dataset": "miniF2F (valid split, 226 problems, Lean 4)",
+      "metric": "pass@8 (solved@8 = 187/226)",
+      "value": 0.8274
+    }
+  ],
   "sources": []
 }

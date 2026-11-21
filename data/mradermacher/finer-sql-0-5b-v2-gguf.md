@@ -2,86 +2,94 @@
 
 ## Resumen
 
-FINER-SQL-0.5B-v2-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo thanhdath/FINER-SQL-0.5B-v2, realizadas por el cuantizador mradermacher. El modelo base es un modelo de texto a SQL de tan solo 494 millones de parámetros, entrenado con GRPO (Group Relative Policy Optimization) según las etiquetas del repositorio, y orientado a la generación de consultas SQL a partir de lenguaje natural.
+FINER-SQL-0.5B-v2-GGUF es la distribucion en formato GGUF del modelo FINER-SQL-0.5B-v2, desarrollado originalmente por griffith-bigdata y cuantizado por mradermacher. Se trata de un modelo especializado en text-to-SQL, es decir, la traduccion de lenguaje natural a consultas SQL, afinado mediante GRPO (Group Relative Policy Optimization) sobre un modelo base de aproximadamente 494 millones de parametros. El modelo esta disenado para el benchmark CORE-DB y esta etiquetado con el idioma ingles.
 
-La relevancia de esta ficha radica en el tamaño del modelo: con menos de 500 millones de parámetros, es un candidato claro para ejecución local en hardware muy modesto, incluso sin GPU dedicada. Las cuantizaciones van desde 0,4 GB (Q2_K) hasta 1,1 GB (f16), lo que lo hace viable en portátiles, Raspberry Pi o cualquier máquina con pocos recursos.
+La relevancia de esta publicacion radica en su tamano reducido: con menos de 500 millones de parametros, puede ejecutarse en hardware muy modesto, incluyendo CPU o GPU de consumo, lo que lo hace atractivo para entornos con restricciones de recursos donde se necesita generacion de SQL de forma local y con baja latencia. La cuantizacion GGUF permite desplegarlo con llama.cpp u Ollama, reduciendo el peso del fichero hasta 0,4 GB en las variantes mas agresivas.
 
-Hay que destacar que la model card original del modelo base no está incluida en la información disponible, por lo que muchos detalles técnicos (arquitectura exacta, longitud de contexto, datos de entrenamiento, benchmarks) no están documentados aquí. La información sobre el modelo base es escasa y esta ficha refleja principalmente lo que se sabe del repositorio de cuantización.
+Esta ficha describe la version cuantizada; el modelo original esta disponible en el repositorio de griffith-bigdata. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento ni sobre resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente derivado de Qwen2.5-0.5B, no confirmado) |
+| Arquitectura | no disponible (modelo transformer afinado, inferido del pipeline de transformers) |
 | Parametros totales | 494.032.768 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | ingles (etiquetado "en"; el SQL generado es agnostico al idioma en gran medida) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones estaticas; no hay imatrix/weighted quants disponibles) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16 |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (original en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La informacion sobre la arquitectura del modelo base es limitada. Por el numero de parametros (494 M) y el uso de GRPO como tecnica de post-entrenamiento, todo apunta a que se trata de un modelo transformer denso derivado de un modelo base pequeño de la familia Qwen (probablemente Qwen2.5-0.5B-Instruct), aunque esto no esta confirmado en la documentacion disponible. El tag "grpo" indica que el modelo fue afinado mediante Group Relative Policy Optimization, una tecnica de aprendizaje por refuerzo usada habitualmente para tareas estructuradas como generacion de codigo y SQL, donde se pueden definir recompensas verificables (por ejemplo, si la consulta generada ejecuta correctamente o devuelve el resultado esperado).
+La informacion disponible no detalla la arquitectura interna del modelo base. Se sabe que el modelo original fue afinado con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo que optimiza las respuestas del modelo comparando grupos de salidas generadas, y que esta orientado a la tarea text-to-SQL con evaluacion sobre CORE-DB. El modelo cuenta con 494.032.768 parametros totales, lo que lo situa en la categoria de modelos pequenos (sub-1B).
 
-El tag "core-db" sugiere que el entrenamiento se realizo sobre un conjunto de datos o entorno de bases de datos concreto, pero no hay detalles publicados sobre el numero de tokens, la composicion del dataset ni el esquema de recompensas. No se dispone de informacion sobre RLHF clasico, DPO ni otras fases de alineamiento.
+No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases adicionales de SFT o DPO. La cuantizacion fue realizada por mradermacher mediante conversion a formato GGUF con cuantizaciones estaticas (no ponderadas por imatrix), segun indica la model card. El repositorio ocupa 5,4 GB e incluye todas las variantes de cuantizacion listadas.
 
 ## Capacidades
 
-- Generacion de consultas SQL a partir de lenguaje natural (text-to-sql), su tarea principal.
-- Razonamiento estructurado sobre esquemas de bases de datos, afinado con GRPO y recompensas presumiblemente verificables por ejecucion.
-- Generacion de texto conversacional basica heredada del modelo base (etiquetado como "conversational"), aunque sin garantias de calidad fuera del dominio SQL.
-- No hay evidencia de capacidades multimodales (vision, audio), tool calling ni soporte de agentes en la documentacion disponible.
-- Capacidades multilingues: no disponible; el modelo esta etiquetado solo para ingles.
+- Generacion de consultas SQL a partir de descripciones en lenguaje natural (text-to-SQL).
+- Especializacion en el dominio del benchmark CORE-DB.
+- Formato conversacional (etiqueta `conversational` en Hugging Face).
+- Compatible con endpoints de inferencia (`endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles.
+- Capacidades de vision o audio: no disponibles.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Generacion de SQL para aplicaciones internas: un usuario de negocio puede formular preguntas en lenguaje natural ("ventas del ultimo trimestre por region") y el modelo traduce la peticion a una consulta SQL ejecutable sobre el esquema proporcionado en el prompt.
-- Asistentes de datos embebidos en herramientas de BI: dado su tamaño minimo, puede integrarse en aplicaciones de escritorio o dashboards para autocompletar o generar consultas sin depender de APIs externas.
-- Ejecucion en dispositivos con recursos limitados: con cuantizaciones de 0,4-0,5 GB, es viable en portatiles sin GPU, mini-PCs o entornos edge donde no cabe un modelo de 7B.
-- Prototipado rapido de pipelines text-to-sql: ideal para validar la viabilidad de un asistente SQL en un proyecto antes de invertir en modelos mayores.
-- Validacion y educacion: util como baseline ligero para comparar enfoques de text-to-sql o para ensenar como funciona el post-entrenamiento con GRPO en tareas verificables.
-- Preprocesado de consultas en sistemas RAG sobre bases de datos: generar la consulta SQL que recupera el contexto antes de pasarlo a un modelo de lenguaje mayor.
+- Generacion de SQL en aplicaciones de business intelligence: el modelo traduce preguntas de negocio en ingles a consultas SQL ejecutables sobre esquemas de bases de datos, con un coste computacional minimo gracias a sus 494 millones de parametros.
+- Asistentes de consulta para bases de datos internas: integrado en un chatbot corporativo, permite a usuarios no tecnicos formular preguntas en lenguaje natural y obtener consultas SQL que el backend ejecuta contra la base de datos.
+- Prototipado rapido de pipelines text-to-SQL: al pesar entre 0,4 y 0,6 GB en cuantizaciones Q3-Q8, permite iterar rapidamente en local sin necesidad de GPU dedicada.
+- Despliegue en entornos con recursos limitados: su tamano reducido permite ejecutarlo en CPU, contenedores pequenos o dispositivos edge donde modelos mayores no caben.
+- Evaluacion y comparacion de tecnicas de RL para SQL: sirve como referencia para investigadores que estudian el efecto de GRPO en tareas estructuradas con modelos pequenos.
+- Filtrado y validacion de consultas en herramientas de desarrollo: puede emplearse para generar SQL de ejemplo o sugerencias en editores e IDEs ligeros, con latencia baja gracias a su reducido numero de parametros.
+- Educacion y formacion en SQL: util como generador de ejemplos de consultas a partir de enunciados, en entornos docentes sin infraestructura de GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye metricas (accuracy de ejecucion SQL, Spider, Bird u otras), y la model card del modelo base no esta incluida en los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: entre 0,4 GB (Q2_K) y 1,1 GB (f16) solo de pesos; con contexto y overhead de runtime, basta con 1-2 GB de RAM en las cuantizaciones mas comunes (Q4_K_M ocupa unos 0,5 GB).
-- GPU recomendadas: no se necesita GPU dedicada; cualquier GPU moderna lo ejecuta con holgura. En CPU, un procesador moderno de escritorio es suficiente dado el tamaño del modelo.
-- Consumer GPUs: cabe sobradamente en cualquier GPU consumer actual (RTX 3060, RTX 4060, RTX 4090, etc.); incluso GPUs integradas pueden manejarlo.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, y cualquier runtime compatible con GGUF. El formato original en safetensors puede servirse con transformers o vLLM.
-- Latencia y throughput: no disponibles; por tamaño (0,5B parametros), se espera inferencia muy rapida incluso en CPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 0,4 GB en Q2_K/Q3_K_S, 0,5 GB en Q4_K_S/Q4_K_M/IQ4_XS, 0,6 GB en Q6_K/Q8_0 y 1,1 GB en f16.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tambien puede ejecutarse en CPU.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1050 Ti o superior, RTX 2060, RTX 3060, RTX 4090, etc.) e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo original en safetensors puede servirse con transformers, vLLM o TGI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera una latencia muy baja en hardware moderno, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| FINER-SQL-0.5B-v2 (base) | 494 M | text-to-sql, afinado con GRPO | apache-2.0 | safetensors y GGUF |
-| Qwen2.5-Coder-1.5B | 1.500 M | codigo general (incluye SQL) | Qwen Research / apache-2.0 segun variante | safetensors y GGUF |
-| Defog SQLCoder-7B-2 | 7.000 M | text-to-sql especializado | apache-2.0 | safetensors y GGUF |
-| Phi-3-mini-4k-instruct | 3.800 M | general, razonable en SQL | MIT | safetensors y GGUF |
+No se dispone de datos de rendimiento del modelo ni de alternativas directamente comparables en la informacion proporcionada. A continuacion se ofrece una comparacion estructural basica con modelos text-to-SQL de tamano similar ampliamente conocidos, marcando como "no disponible" los datos que no se han podido verificar.
 
-FINER-SQL-0.5B-v2 es el mas pequeño del grupo y el unico afinado especificamente con GRPO para text-to-sql a esta escala. A cambio de su tamaño minimo, cabe esperar un rendimiento inferior a SQLCoder-7B-2 en esquemas complejos, pero una ventaja clara en latencia y requisitos de hardware. Sin benchmarks publicados, la comparacion de rendimiento exacta no disponible.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| FINER-SQL-0.5B-v2 (este) | 494 M | no disponible | Apache 2.0 | GGUF, safetensors | Afinado con GRPO, benchmark CORE-DB |
+| Defog SQLCoder-7B | 7 B | no disponible | no disponible | safetensors | Mayor tamano, requiere mas VRAM |
+| NumbersStation NSQL-Llama-2-7B | 7 B | no disponible | no disponible | safetensors | Mayor tamano, orientado a SQL |
+| Otros modelos sub-1B text-to-SQL | no disponible | no disponible | no disponible | no disponible | No se dispone de comparativas verificadas |
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados: no es posible verificar la calidad de la generacion SQL frente a otros modelos antes de probarlo.
-- La model card del modelo base es muy escasa: arquitectura, longitud de contexto, dataset de entrenamiento y esquema de recompensas de GRPO no estan documentados.
-- Etiquetado solo para ingles: el rendimiento con prompts en espanol no esta garantizado, aunque el SQL generado en si es independiente del idioma.
-- Riesgo de alucinacion tipico de modelos pequeños: puede generar columnas, tablas o sintaxis inexistentes; se recomienda validar siempre las consultas antes de ejecutarlas (especialmente en escritura: DELETE, UPDATE, DROP).
-- Cuantizaciones bajas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad en un modelo ya pequeño; se recomiendan Q4_K_M o superiores.
-- No hay cuantizaciones imatrix/weighted disponibles en el momento de la ficha.
-- Licencia apache-2.0: sin restricciones relevantes para uso comercial, aunque conviene verificar la licencia del modelo base original.
-- Para esquemas de bases de datos grandes o complejos, un modelo de 0,5B puede no seguir el contexto del esquema; evaluar con esquemas reales antes de pasar a produccion.
+- Modelo especializado exclusivamente en text-to-SQL; su rendimiento en tareas generales de lenguaje sera limitado.
+- Solo soporta ingles; las consultas en otros idiomas pueden degradar la calidad de la salida SQL.
+- Riesgo de alucinacion en esquemas de bases de datos no vistos durante el entrenamiento: puede generar columnas o tablas inexistentes.
+- No se dispone de informacion sobre sesgos especificos ni sobre evaluaciones de robustez.
+- La cuantizacion estatica (no imatrix) puede degradar ligeramente la calidad respecto al modelo original en safetensors; se recomienda Q5_K_M o superior para uso en produccion.
+- Licencia Apache 2.0 permite uso comercial, pero el autor de la cuantizacion no ofrece garantias sobre el modelo subyacente.
+- No hay datos publicados de benchmarks que permitan validar su calidad frente a alternativas.
+- El contexto maximo no esta documentado; conviene verificar el config del modelo original antes de usarlo con esquemas largos.
 
 ## Enlaces
 
-- Repositorio de cuantizacion GGUF: https://huggingface.co/mradermacher/FINER-SQL-0.5B-v2-GGUF
-- Modelo base: https://huggingface.co/thanhdath/FINER-SQL-0.5B-v2
-- Pagina de descargas de mradermacher: https://hf.tst.eu/model#FINER-SQL-0.5B-v2-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/FINER-SQL-0.5B-v2-GGUF
+- Modelo base original: https://huggingface.co/griffith-bigdata/FINER-SQL-0.5B-v2
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#FINER-SQL-0.5B-v2-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Notas sobre calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Web de nethype GmbH: https://www.nethype.de/

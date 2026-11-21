@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 866,
+  "downloads_30d": 859,
   "trending_score": 0,
   "parameters": 7606784,
   "parameters_human": "7.6M",
@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Cyronius/titler · Hugging Face",
-      "url": "https://huggingface.co/Cyronius/titler",
-      "snippet": "Lemonade How to use Cyronius/titler with Lemonade: Pull the model ... Run and chat with the model lemonade run user.titler-F16 List all available models lemonade list Atomic Chat titler — a 7.6M-parameter prompt-to-title model Intended use cases Quickstart GGUF (llama.cpp) Architecture Training data Training process Evaluation Performance ..."
-    },
-    {
-      "title": "Cyronius (Cyrus Attoun) - Hugging Face",
-      "url": "https://huggingface.co/Cyronius",
-      "snippet": "AI & ML interests ... Recent Activity updated a model 2 months ago ... published a model 2 months ago"
-    },
-    {
-      "title": "Creating and Optimizing a Cronus 3D Model: Expert Workflow",
-      "url": "https://www.tripo3d.ai/blog/explore/cronus-3d-model",
-      "snippet": "Explore expert workflows for creating, optimizing, and animating a Cronus 3D model. Learn best practices, tool selection, and troubleshooting tips."
-    },
-    {
-      "title": "Best AI for Writing 2026 - Top Writing Models - llm-stats.com",
-      "url": "https://llm-stats.com/leaderboards/best-ai-for-writing",
-      "snippet": "Rankings of the best AI models for writing tasks. Compare models by writing quality, content generation, and writing capabilities."
-    },
-    {
-      "title": "Cyronius (Cyrus Attoun) - Hugging Face",
-      "url": "https://huggingface.co/Cyronius/datasets",
-      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
-    }
-  ]
+  "sources": []
 }

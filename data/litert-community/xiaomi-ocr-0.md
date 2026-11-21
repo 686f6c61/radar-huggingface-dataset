@@ -2,111 +2,107 @@
 
 ## Resumen
 
-Xiaomi-OCR-0 es un modelo de visión-lenguaje de 0,8 mil millones de parámetros especializado en digitalización de documentos, desarrollado por Xiaomi Research y publicado originalmente el 30 de septiembre de 2026. Convierte imágenes de páginas en Markdown estructurado, representando tablas en formato OTSL y fórmulas en LaTeX, además de extraer campos con nombre en JSON. Su decodificador de texto deriva de Qwen3.5-0.8B-Base, lo que le aporta un contexto de 4.096 tokens.
+Xiaomi-OCR-0 es un modelo de visión-lenguaje especializado en extracción de información de documentos, desarrollado por Xiaomi Research y publicado originalmente el 30 de septiembre de 2026. El modelo parte de Qwen3.5-0.8B-Base y añade un codificador visual de 12 capas, dando lugar a un sistema de aproximadamente 0,8 mil millones de parámetros capaz de convertir páginas de documentos en Markdown estructurado, con tablas en formato OTSL y fórmulas en LaTeX.
 
-La ficha que nos ocupa documenta la conversión de `litert-community/Xiaomi-OCR-0`, una versión cuantizada a int8 empaquetada en formato `.litertlm` para el runtime LiteRT-LM de Google (versión 0.19.0). El objetivo es la inferencia en dispositivo (*on-device*): el archivo pesa 1,31 GB y procesa una imagen de 768 × 1344 píxeles por petición, que se traduce en 1.008 tokens de imagen.
+La ficha que nos ocupa documenta la conversión del modelo original al formato LiteRT-LM (`.litertlm`), realizada por la comunidad litert-community mediante la herramienta hf-to-litertlm para LiteRT-LM 0.19.0 de Google. Esta conversión está pensada para inferencia en dispositivo (on-device) y en el borde (edge), con pesos int8 en las capas lineales del decodificador de texto y un codificador visual en fp16, lo que reduce el artefacto a 1,31 GB.
 
-Su relevancia actual reside en que permite ejecutar OCR documental avanzado (tablas, fórmulas, extracción de campos) sin conexión a la nube, con latencias de 10 a 13 segundos por página en un Galaxy S26 usando la CPU. La licencia Apache 2.0 facilita su integración comercial.
+El interés actual del modelo reside en su orientación práctica: OCR de documentos completo con reconocimiento de tablas, fórmulas y extracción de campos estructurados como JSON, ejecutable en teléfonos Android de gama alta sin depender de infraestructura en la nube. Su ventana de contexto de 4.096 tokens y su resolución de imagen fija de 768 × 1344 píxeles (1.008 tokens de imagen) delimitan con claridad su ámbito de uso.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision encoder de 12 capas + decodificador de texto híbrido Qwen3.5 (18 capas GatedDeltaNet + 6 capas de atención) |
-| Parametros totales | 0,8 mil millones (aproximado, según model card del modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | int8 en capas lineales del decodificador, tabla de embeddings int8, adaptador de visión int8, encoder de visión fp16; proyecciones de decay/gate de GatedDeltaNet en float |
-| Idiomas soportados | en, zh |
+| Arquitectura | Vision-language: codificador visual de 12 capas + decodificador de texto Qwen3.5 híbrido (18 capas GatedDeltaNet + 6 capas de atención) |
+| Parámetros totales | ~0,8B (modelo base Qwen3.5-0.8B-Base) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4.096 tokens (imagen + prompt ocupan ~1.030–1.100 tokens) |
+| Tipos de cuantización | int8 (capas lineales del decodificador, tabla de embeddings, adaptador visual); fp16 (codificador visual); 36 proyecciones decay/gate de GatedDeltaNet en float |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base original en safetensors |
-| Tamano del archivo | 1,31 GB (`Xiaomi-OCR-0_int8.litertlm`) |
-| Resolucion de imagen | 768 × 1344 píxeles por petición (1.008 tokens de imagen) |
-| Runtime | LiteRT-LM 0.19.0 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo original presumiblemente en safetensors vía transformers (no confirmado en la información disponible) |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina un encoder de visión de 12 capas con un decodificador de texto híbrido basado en Qwen3.5-0.8B-Base. El decodificador alterna 18 capas GatedDeltaNet con 6 capas de atención estándar, una arquitectura que busca reducir el coste computacional de la atención en secuencias largas manteniendo capacidad de modelado. El modelo base fue entrenado por Xiaomi Research partiendo de Qwen3.5-0.8B-Base; no se dispone de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
+El modelo combina un codificador visual de 12 capas con un decodificador de texto derivado de Qwen3.5-0.8B-Base, que emplea una arquitectura híbrida: 18 capas GatedDeltaNet y 6 capas de atención clásica. Esta mezcla de atención lineal y atención completa reduce el coste computacional en contextos largos manteniendo la calidad de representación. Cada petición procesa una única imagen redimensionada a 768 × 1344 píxeles, que se tokeniza en 1.008 tokens visuales.
 
-La conversión a LiteRT-LM la realizó `litert-community` con la herramienta `hf-to-litertlm` de john-rocky. La cuantización es selectiva: las capas lineales del decodificador, la tabla de embeddings y el adaptador de visión pasan a int8, mientras que las 36 proyecciones de decay/gate de GatedDeltaNet se mantienen en float y el encoder de visión en fp16. Las activaciones del decodificador se declaran en fp32 y las del encoder de visión en fp16 para su ejecución en GPU. No se documentan innovaciones adicionales como decodificación especulativa.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. La model card original de Xiaomi Research no detalla estos aspectos en la información proporcionada. La innovación técnica destacable en esta ficha es la propia conversión a LiteRT-LM: pesos int8 en las capas lineales, codificador visual fp16 y activaciones fp32 declaradas para GPU, con el objetivo de habilitar inferencia local en Android (CPU o GPU) y en iOS (Metal). El runtime aplica un redimensionado fijo sin preservar la relación de aspecto ni leer la orientación EXIF, lo que obliga al script de uso a aplicar padding sobre un lienzo blanco de proporción 4:7 antes de la inferencia.
 
 ## Capacidades
 
-- Extracción de documentos completos a Markdown, respetando el orden de lectura e ignorando cabeceras y pies de página.
+- Extracción de texto plano a partir de imágenes de documentos, líneas de texto y títulos.
+- Conversión de páginas completas a Markdown respetando el orden de lectura, ignorando cabeceras y pies de página.
 - Reconocimiento de tablas y serialización en formato OTSL.
-- Reconocimiento de fórmulas matemáticas y conversión a LaTeX.
-- Extracción de texto plano de regiones de imagen (líneas, títulos, párrafos).
-- Extracción de información clave (KIE): devuelve un objeto JSON según un esquema de campos proporcionado por el usuario.
-- Procesamiento de documentos en inglés y chino.
-- Cinco prompts de tarea predefinidos: `document`, `text`, `table`, `formula` y `kie`, más la opción de enviar un prompt propio.
-- Ejecución en dispositivo en Android (CPU o GPU), iOS (GPU con Metal) y macOS (CPU o GPU).
-- No se documenta soporte de tool calling, agentes ni modos de razonamiento extendido.
+- Reconocimiento de fórmulas matemáticas y serialización en LaTeX.
+- Extracción de información clave (KIE) en formato JSON a partir de un esquema de claves proporcionado por el usuario.
+- Procesamiento de texto en inglés y chino.
+- Cinco prompts de tarea predefinidos: `document`, `text`, `table`, `formula` y `kie`.
+- Soporte de prompt personalizado mediante el parámetro `--prompt` del script de referencia.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso orientado a agentes.
+- No se documenta soporte de audio ni de vídeo.
 
 ## Casos de uso
 
-- Digitalización de facturas y recibos: con la tarea `kie` y un esquema JSON de campos (por ejemplo `store_name,date,total`), el modelo devuelve los valores estructurados directamente, lo que permite alimentar sistemas de contabilidad sin post-procesado manual.
-- Extracción de tablas de informes financieros: la tarea `table` serializa la tabla en OTSL, un formato que preserva la estructura de filas y columnas y facilita su conversión posterior a CSV o HTML.
-- Conversión de apuntes científicos a Markdown: la tarea `document` detecta fórmulas y las emite en LaTeX, lo que resulta adecuado para digitalizar documentación técnica y papers escaneados.
-- Procesamiento offline en dispositivos móviles: al ejecutarse con LiteRT-LM en un Galaxy S26 o un Pixel 11 Pro, permite escanear documentos en entornos sin conectividad, con latencias de 10 a 26 segundos por página en CPU.
-- Digitalización de documentación en chino: el soporte nativo de `zh` lo hace útil para empresas con documentación en ese idioma, incluidas muestras de caligrafía según las pruebas del autor de la conversión.
-- Captura de formularios en campo: la tarea `kie` sobre fotografías de formularios permite extraer campos en aplicaciones de inspección o logística desde el propio terminal.
-- Preprocesado de corpus para RAG: la conversión de páginas a Markdown estructurado genera texto limpio y tablas parseables que pueden indexarse en sistemas de recuperación documental.
+- Digitalización de facturas y recibos en aplicaciones móviles: el modelo extrae campos como nombre del comercio, fecha, impuestos y total directamente en JSON mediante la tarea `kie`, lo que permite integrar los datos en sistemas de contabilidad sin postprocesado manual. La muestra `receipt_to_json` de litert-samples demuestra este flujo en Android con la API Kotlin de LiteRT-LM.
+- Conversión de documentación técnica a Markdown para bases de conocimiento: la tarea `document` transforma páginas con tablas y fórmulas en Markdown con OTSL y LaTeX, adecuado para alimentar wikis internas o pipelines de RAG documental.
+- Procesamiento de artículos científicos y material docente: la tarea `formula` serializa expresiones matemáticas en LaTeX, lo que facilita la reutilización en entornos de publicación científica o plataformas de aprendizaje.
+- Extracción de tablas de informes financieros: la tarea `table` devuelve OTSL, un formato estructurado que preserva la disposición de filas y columnas y puede convertirse posteriormente a CSV o a estructuras de dataframe.
+- OCR de documentos en inglés y chino en entornos sin conectividad: al ejecutarse en CPU de dispositivos Android de gama alta (por ejemplo, Galaxy S26 con tiempos de 10–13 s por página), el modelo es viable en escenarios de campo, auditoría o logística donde no hay acceso a servicios en la nube.
+- Captura de texto en aplicaciones de accesibilidad o lectura asistida: la tarea `text` extrae texto plano de líneas y títulos, apropiada para funciones de lectura en voz alta o ampliación de contenido.
+- Automatización de ingesta documental en pipelines de CI/CD o backend: aunque el artefacto está optimizado para edge, el modelo original en transformers puede emplearse para validar extracciones y comparar resultados contra la versión cuantizada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card de la conversión incluye pruebas de corrección y latencia:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card de la conversión LiteRT-LM reporta exclusivamente métricas de latencia y corrección funcional:
 
-| Dispositivo | Backend | Regiones correctas (de 14) | Páginas correctas (de 4) | Latencia por petición |
-|---|---|---|---|---|
-| Mac M4 Max | GPU | 14 | 3 | no disponible |
-| Mac M4 Max | CPU | 11 | 3 | no disponible |
-| Pixel 11 Pro | CPU | 13 | 3 | 20–26 s |
-| Galaxy S26 | CPU | no disponible | no disponible | 10–13 s (párrafo ~10 s, página ~13 s) |
-| Galaxy S26 | GPU | no disponible | no disponible | 42–62 s |
-| Pixel 11 Pro | GPU | no disponible | no disponible | 92–155 s (caché de GPU desactivada) |
-| iPhone 18 Pro | GPU (Metal) | no disponible | no disponible | 20–22 s |
+| Escenario | Dispositivo | Backend | Tiempo observado |
+|---|---|---|---|
+| Párrafo de texto | Galaxy S26 | CPU | ~10 s (incluye creación del engine) |
+| Página completa | Galaxy S26 | CPU | ~13 s (incluye creación del engine) |
+| Petición CPU vs GPU | Galaxy S26 | CPU / GPU | 10–13 s vs 42–62 s |
+| Petición CPU vs GPU | Pixel 11 Pro | CPU / GPU | 20–26 s vs 92–155 s |
+| Petición GPU | iPhone 18 Pro | Metal | 20–22 s |
+| Corrección en Mac | Mac | GPU / CPU | 14/14 vs 11/14 tests de región superados |
 
-El criterio de corrección exige una tasa de error de caracteres ≤ 0,02 en texto (≤ 0,05 en fotos y páginas), al menos 18 de 20 celdas de tabla correctas, el mismo LaTeX y todos los campos JSON presentes. Una página manuscrita densa falla en Mac, Pixel 11 Pro e iPhone 18 Pro, y el modelo original tampoco la resuelve a ese tamaño de imagen.
+La validación de corrección se realizó contra el modelo original fp32 con decodificación greedy, exigiendo un CER ≤ 0,02 en texto (≤ 0,05 en fotos y páginas), al menos 18 de 20 celdas de tabla correctas, LaTeX idéntico y todos los campos JSON presentes. Una página manuscrita densa falla en Mac, Pixel 11 Pro e iPhone 18 Pro, y también en el modelo original a esa resolución.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el archivo int8 ocupa 1,31 GB; la inferencia requiere espacio adicional para activaciones y caché del runtime.
-- GPU de escritorio: no se documentan requisitos para A100, H100 o RTX 4090; el runtime LiteRT-LM está orientado a dispositivos edge.
-- Dispositivos verificados: Galaxy S26 (CPU recomendada), Pixel 11 Pro (CPU recomendada), iPhone 18 Pro (GPU con Metal) y Mac M4 Max (GPU o CPU).
-- En Android, la CPU es entre cuatro y seis veces más rápida que la GPU en las pruebas realizadas, porque la creación del motor en GPU consume la mayor parte del tiempo.
-- Opciones de despliegue: runtime `litert-lm` (Python) con el script `ocr_xiaomi.py`; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Throughput: una petición procesa una imagen; el script crea un `Engine` por imagen, por lo que no hay procesamiento por lotes documentado.
-- Una imagen más el prompt consumen entre 1.030 y 1.100 de los 4.096 tokens de contexto, lo que deja espacio para respuestas de hasta unos 3.000 tokens.
+- VRAM estimada para inferencia: no aplica directamente al tratarse de un artefacto edge; el archivo `.litertlm` ocupa 1,31 GB en disco y debe residir en memoria durante la ejecución.
+- GPU recomendadas: no se documentan GPU de escritorio; el artefacto está orientado a CPU Android, GPU Android y GPU Metal en iOS. En Mac se ha probado con GPU (14/14 tests superados) y CPU (11/14).
+- Compatibilidad con GPU de consumo: no disponible en la información proporcionada.
+- Opciones de despliegue: LiteRT-LM 0.19.0 (runtime principal), API Kotlin `litertlm-android` 0.19.0 para Android, script Python `ocr_xiaomi.py` con `litert-lm`, `pillow` y `huggingface_hub`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: en Galaxy S26, 10–13 s por petición en CPU; en Pixel 11 Pro, 20–26 s en CPU; en iPhone 18 Pro, 20–22 s en GPU Metal. La creación del engine domina el tiempo en GPU Android (42–62 s y 92–155 s), por lo que se recomienda crear un Engine por imagen.
+- Nota operativa: LiteRT-LM redimensiona toda imagen a 768 × 1344 sin preservar aspect ratio ni orientación EXIF, por lo que es imprescindible aplicar padding y orientación antes de la inferencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos OCR en la información proporcionada. A continuación se comparan características estructurales con alternativas de la misma categoría:
-
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato edge |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
-| Xiaomi-OCR-0 (esta conversión) | ~0,8B | 4.096 | en, zh | Apache 2.0 | `.litertlm` (LiteRT-LM) |
-| xiaomi-research/Xiaomi-OCR-0 (original) | ~0,8B | 4.096 | en, zh | Apache 2.0 | safetensors (transformers) |
-| Otros modelos OCR de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Xiaomi-OCR-0 (esta ficha, LiteRT-LM) | ~0,8B | 4.096 tokens | en, zh | Apache 2.0 | `.litertlm`, edge |
+| Xiaomi-OCR-0 (original, xiaomi-research) | ~0,8B | no disponible | en, zh | Apache 2.0 | transformers (presumible) |
+| Qwen3.5-0.8B-Base | 0,8B | no disponible | no disponible | no disponible | safetensors |
+| Alternativas OCR/VLM de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con modelos de la competencia (por ejemplo, variantes OCR de Qwen-VL o PaddleOCR) no está disponible en la información consultada, por lo que no se aportan cifras de rendimiento relativas.
+No se dispone en la información proporcionada de resultados de benchmarks comparativos con otros modelos OCR o VLM de tamaño similar, ni de especificaciones detalladas de alternativas como PaddleOCR-VL, GOT-OCR2.0 o modelos Qwen-VL pequeños. La comparativa queda limitada a la relación entre el modelo original y su conversión LiteRT-LM.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés y chino; no se ha validado su comportamiento en castellano.
-- El contexto es de 4.096 tokens y cada imagen consume unos 1.008, lo que limita la longitud de las respuestas y descarta el procesamiento de documentos de varias páginas en una sola petición.
-- LiteRT-LM redimensiona toda imagen a 768 × 1344 sin conservar la relación de aspecto y sin leer la orientación EXIF; es obligatorio aplicar la orientación y el relleno sobre lienzo blanco antes de la inferencia.
-- El modelo falla en una página manuscrita densa de prueba, tanto en esta conversión como en el modelo original a ese tamaño de imagen.
-- En Android, la GPU es entre cuatro y seis veces más lenta que la CPU debido al coste de creación del motor; en iOS, el intento con CPU terminó con la aplicación detenida por el sistema.
-- Se recomienda crear un `Engine` por imagen; no se documenta el comportamiento con reutilización de motor.
-- La cuantización int8 puede introducir diferencias frente al original fp32; las pruebas de corrección del autor así lo controlan, pero no se publican métricas agregadas de degradación.
-- Riesgo de alucinación en campos JSON y en fórmulas LaTeX cuando la imagen es de baja calidad o el esquema de extracción es ambiguo; no se documentan sesgos específicos.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base pertenece a Xiaomi Research y conviene revisar sus términos originales.
-- El repositorio registra 0 descargas y 1 like en el momento de la consulta, por lo que la validación comunitaria es prácticamente inexistente.
+- Resolución de imagen fija: toda entrada se redimensiona a 768 × 1344 píxeles, lo que degrada documentos muy anchos, páginas apaisadas o imágenes de muy alta resolución.
+- Ventana de contexto de 4.096 tokens: la imagen consume ~1.008 tokens y el prompt ~1.030–1.100, dejando un margen de aproximadamente 3.000 tokens para la respuesta; documentos con tablas o fórmulas muy extensas pueden truncarse.
+- Idiomas limitados a inglés y chino; no se documenta soporte para castellano ni otras lenguas.
+- Página manuscrita densa: falla tanto en la conversión LiteRT-LM como en el modelo original a esta resolución, lo que indica una limitación del modelo base, no solo de la cuantización.
+- Sin datos de sesgos, alucinación o robustez frente a documentos adversarios en la información disponible; se recomienda validación humana en flujos de KIE con implicaciones financieras o legales.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-0.8B-Base y de los componentes de terceros incluidos en el runtime LiteRT-LM.
+- Problemas conocidos del runtime: en Android, las peticiones GPU tardan 4–6 veces más que las CPU por el coste de creación del engine; en iOS, una ejecución CPU fue interrumpida por el sistema durante la creación del engine. Se recomienda usar CPU en Android y GPU Metal en iPhone.
+- El artefacto es una conversión comunitaria, no oficial de Xiaomi; la fidelidad funcional se ha validado contra el original fp32, pero no hay garantía de paridad absoluta en todos los documentos.
+- Dependencia de un runtime específico (LiteRT-LM 0.19.0) y de un script de referencia para el padding; la integración directa en otros frameworks no está documentada.
 
 ## Enlaces
 
-- Repositorio de la conversión: https://huggingface.co/litert-community/Xiaomi-OCR-0
-- Modelo base original: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
+- Repositorio Hugging Face de la conversión: https://huggingface.co/litert-community/Xiaomi-OCR-0
+- Modelo original de Xiaomi Research: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - Herramienta de conversión hf-to-litertlm: https://github.com/john-rocky/hf-to-litertlm
-- Script de inferencia ocr_xiaomi.py: https://github.com/john-rocky/hf-to-litertlm/blob/main/xiaomiocr_work/ocr_xiaomi.py
+- Script de inferencia `ocr_xiaomi.py`: https://github.com/john-rocky/hf-to-litertlm/blob/main/xiaomiocr_work/ocr_xiaomi.py
 - Runtime LiteRT-LM de Google: https://github.com/google-ai-edge/LiteRT-LM
+- Muestra Android `receipt_to_json`: https://github.com/google-ai-edge/litert-samples/tree/main/samples/litert_lm/receipt_to_json
+- Model card original con prompts de tarea: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0 (sección "Task prompts")

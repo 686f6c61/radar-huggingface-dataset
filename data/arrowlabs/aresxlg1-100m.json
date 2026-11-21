@@ -5,7 +5,7 @@
   "author": "ArrowLabs",
   "url": "https://huggingface.co/ArrowLabs/AresXLG1-100M",
   "created_at": "2026-11-20T13:52:22.000Z",
-  "updated_at": "2026-11-20T14:29:39.000Z",
+  "updated_at": "2026-11-20T17:58:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "klm",
     "KLM",
     "Ares",
@@ -59,13 +60,15 @@
   "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 98975308,
+  "parameters_human": "99.0M",
+  "storage_bytes": 396104400,
+  "storage_human": "396 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

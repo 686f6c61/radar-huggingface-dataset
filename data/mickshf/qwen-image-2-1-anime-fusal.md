@@ -2,90 +2,90 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Anime-Fusal es un adaptador LoRA para los modelos de difusion Qwen-Image-2.1 y Qwen-Image-2.1-Turbo, desarrollado por el usuario MicksHF y publicado en Hugging Face. Su proposito es especializar el modelo base en la generacion de ilustracion anime mediante un ajuste fino sobre aproximadamente 50.000 registros de entrenamiento (texto-imagen y condicionados por referencia) seleccionados manualmente por el autor a partir de un conjunto mayor de candidatos. El repositorio incluye dos familias de LoRA distintas, una para cada checkpoint base, y un codificador de texto BF16 Heretic.
+Qwen-Image-2.1-Anime-Fusal es un adaptador LoRA de tipo text-to-image e image-to-image desarrollado por MicksHF, diseñado para transferir un estilo ilustrado de anime sobre los checkpoints base Qwen/Qwen-Image-2.1 y Qwen/Qwen-Image-2.1-Turbo. El repositorio publica dos familias de LoRA independientes y no intercambiables, una para el modelo base original (non-Turbo) y otra experimental para la variante Turbo destilada a 8 pasos. Su relevancia actual radica en que ofrece control de estilo fino sobre un modelo de difusion de gran tamano, con triggers de estilo y una estructura de prompt jerarquica pensada para produccion.
 
-El modelo resuelve el problema de la deriva estilistica del modelo base hacia resultados fotorealistas o genericos cuando se le pide ilustracion anime: aplicando el adaptador con una fuerza de 0,7 a 1,0 sobre el modelo base correspondiente, la salida adopta un estilo de ilustracion consistente. La relevancia actual reside en que se apoya en la familia Qwen-Image-2.1, con capacidad de generacion texto-imagen, imagen-imagen y multi-referencia, y en que el adaptador se distribuye en formato compatible con diffusers y ComfyUI.
+La version principal, Exact R80 V3, corrige artefactos de textura tipo carton que aparecian en V2 y anade cinco estilos de renderizacion anime controlables mediante frases trigger. El adaptador incorpora el text encoder BF16 Heretic correspondiente, ya que el entrenamiento cacheo embeddings de prompt y referencia con ese encoder. El repo ocupa 34,4 GB e incluye pesos en formato safetensors.
 
-El repositorio ocupa 34 GB e incluye pesos del adaptador, el text encoder y ejemplos de comparacion. La licencia es `qwen-research` (marcada como `other`), lo que restringe el uso a investigacion y a personas adultas segun la propia model card. No se dispone de datos publicos sobre el numero de parametros del adaptador ni sobre el contexto del modelo base.
+Esta ficha describe exclusivamente la informacion publicada por el autor en la model card; los datos no presentes se marcan como no disponibles. El modelo esta orientado a ilustracion anime, uso por adultos e investigacion, y no debe confundirse con un modelo de lenguaje: es un adaptador de difusion para generacion de imagenes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de difusion Qwen-Image-2.1 / Qwen-Image-2.1-Turbo |
-| Parametros totales | no disponible (adaptador LoRA; el tamano del repo es de 34,0 GB) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen aparentemente en BF16; el autor menciona un text encoder BF16 Heretic) |
-| Idiomas soportados | no disponible (los prompts de ejemplo estan en ingles) |
-| Licencia | qwen-research (campo `license: other`, `license_name: qwen-research`) |
-| Formato de pesos | diffusers (repositorio con `library_name: diffusers`); compatible con ComfyUI |
+| Arquitectura | LoRA (adaptador) sobre modelo de difusion Qwen-Image-2.1; text encoder BF16 Heretic incluido |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (license_name: qwen-research, license: other) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se implementa como LoRA sobre un modelo de difusion de la familia Qwen-Image-2.1, que no se describe en detalle en la informacion disponible (no se especifica si el backbone es un transformer de difusion con atencion completa o alguna variante hibrida). El autor publica dos familias de adaptadores: una para el checkpoint original `Qwen/Qwen-Image-2.1` (denominada "Exact R80") y otra para `Qwen/Qwen-Image-2.1-Turbo` (denominada "Turbo E6 Preview R128"), que segun la model card sigue en entrenamiento y se considera solo una vista previa. Ambas no son intercambiables ni deben apilarse.
+El adaptador es un LoRA entrenado sobre el modelo de difusion Qwen-Image-2.1, con relacion base_model_relation: adapter. Se publican dos variantes: la familia Original (non-Turbo) sobre Qwen/Qwen-Image-2.1, con versiones Exact R80 V3 (recomendada) y V2 (legacy), y una variante Turbo E6 Preview R128 sobre Qwen/Qwen-Image-2.1-Turbo, marcada como experimental. El autor indica que entrenar LoRA sobre modelos Turbo destilados a pasos provoca una perdida significativa de capacidad de aprendizaje de estilos finos, texturas y conocimiento de personajes, por lo que la variante Turbo se ofrece solo como preview.
 
-El entrenamiento se realizo sobre aproximadamente 50.000 registros de texto-imagen y condicionados por referencia, seleccionados manualmente por el autor de un pool mayor, con el objetivo declarado de adaptacion de dominio visual mas que de expansion de conocimiento. El autor indica que entreno con cache de embeddings de prompt y de referencia usando el text encoder BF16 Heretic incluido en el repositorio. No se detalla el numero de tokens, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO, que en modelos de difusion no son el mecanismo habitual.
+En V3 se bloquearon los bloques tardios del decodificador de pixeles ciego al texto (img_mlp) y se redirigio la adaptacion de estilo hacia capas de atencion front/mid conscientes del texto. Esto elimina el grano tipo carton que se filtraba en V2 sobre pieles lisas y superficies cel-shaded. El entrenamiento cacheo embeddings de prompt y referencia con el text encoder BF16 Heretic incluido en el repo. No se especifican en la informacion disponible el numero de tokens, la composicion del dataset ni si hubo RLHF o DPO (no aplicable a difusion).
 
 ## Capacidades
 
-- Generacion texto-imagen con estilo de ilustracion anime, mediante el formato de prompt estructurado que exige el adaptador (`fusal style.` seguido de secciones `[TASK: ...]`, `[Subject]`, `[Appearance]`, `[Pose]`, `[Composition]`, `[Environment]`, `[Lighting]` y `[Style]`).
-- Generacion imagen-imagen y condicionada por referencia multiple (multi-reference), segun los tags y los ejemplos del repositorio (`Fusal-R2I.png`).
-- Control de fuerza del adaptador entre 0,0 (modelo base) y 1,0 (estilo FUSAL pleno), con valor de partida recomendado de 0,7.
-- Compatibilidad con el ecosistema diffusers y con ComfyUI.
-- Integracion con el checkpoint Turbo para generacion en 8 pasos fijos, y con el checkpoint original para 20-40 pasos.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision de entrada ni audio; el modelo es exclusivamente generativo de imagen.
+- Generacion de imagenes text-to-image con estilo anime e ilustracion.
+- Image-to-image y multi-reference: acepta imagenes de referencia para composicion y personajes.
+- Cinco triggers de estilo controlables en V3: Flat Cel, Clean Modern Cel, Polished Semi-Impasto, Heavy Painterly / Gouache y Watercolor Wash & Ink Sketch.
+- Estructura de prompt jerarquica con secciones [TASK], [Subject], [Appearance], [Pose], [Composition], [Environment], [Lighting] y [Style].
+- Correccion de texturas superficiales (piel lisa y cel-shading limpio) frente a V2.
+- Compatibilidad con ComfyUI y con la libreria diffusers.
+- Ajuste de fuerza LoRA entre 0,7 y 1,0, con CFG / true CFG fijado a 1,0.
+- No se documentan capacidades de tool calling, agentes, vision, audio ni thinking mode, por tratarse de un modelo de imagen.
 
 ## Casos de uso
 
-- Ilustracion de personajes para proyectos de animacion o manga: el adaptador aplica un estilo anime consistente sobre el modelo base, por lo que se puede usar para generar hojas de personaje y variaciones de pose manteniendo la identidad visual mediante referencias.
-- Generacion de key art y portadas: con el checkpoint original a 25 pasos y fuerza 0,7-1,0 se obtienen composiciones de alta resolucion (los ejemplos del autor usan 2400 x 1792) adecuadas para portadas o ilustraciones promocionales.
-- Prototipado rapido de escenas con el checkpoint Turbo: el adaptador Turbo, fijado a 8 pasos, permite iterar bocetos de composicion a bajo coste computacional antes de pasar a la version original.
-- Consistencia de personaje entre imagenes: la capacidad multi-referencia del modelo base, combinada con el adaptador, permite mantener el diseno de un personaje a traves de varias ilustraciones usando imagenes de referencia.
-- Creacion de assets para videojuegos de estilo anime: generacion de retratos, iconos y arte conceptual con un estilo homogeneo, integrable en pipelines de ComfyUI para produccion por lotes.
-- Investigacion sobre adaptacion de dominio en modelos de difusion: el repositorio publica comparaciones controladas (mismos prompts, semillas y ajustes, variando solo la fuerza del LoRA) y los prompts originales, lo que facilita reproducir experimentos sobre especializacion estilistica.
-- Exploracion creativa en un Space publico: el autor mantiene un playground en Hugging Face Spaces con los ajustes por defecto, util para evaluar el estilo antes de desplegar localmente.
+- Ilustracion editorial de anime: el adaptador permite generar ilustraciones con estilo cel-shaded limpio usando el trigger Flat Cel y prompts estructurados, adecuado para portadas y articulos con coherencia de estilo.
+- Creacion de personajes multi-referencia: con image-to-image y multi-reference se pueden mantener rasgos de personaje entre distintas poses y composiciones, util para hojas de personaje y bibles visuales.
+- Storyboarding de animacion: la estructura de prompt por secciones ([Pose], [Composition], [Lighting]) facilita generar frames coherentes para previsualizacion de escenas.
+- Produccion de arte para videojuegos: los cinco triggers de estilo permiten alternar entre render limpio moderno y estilos pictoricos tipo gouache para assets de distintos biomas o menus.
+- Iteracion en ComfyUI: al ser compatible con ComfyUI, se integra en grafos de trabajo existentes con control de fuerza LoRA y pasos de muestreo (25 pasos por defecto, 20 para layouts simples, 30-40 para composiciones complejas).
+- Exploracion investigadora de transferencia de estilo: util para estudiar como LoRA sobre modelos de difusion grandes absorbe estilos finos y como el bloqueo de capas tardias afecta texturas, comparando V2 y V3.
+- Generacion de ilustraciones para publicaciones orientadas a adultos: el modelo declara uso para adultos e investigacion, adecuado para contenido ilustrado de tematica adulta dentro de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, etc.) en la informacion disponible. El autor proporciona comparaciones visuales controladas entre el modelo base (fuerza LoRA 0,0) y el adaptador (fuerza 1,0) con prompts, semillas y ajustes identicos, pero no cifras numericas. La propia model card advierte que son comparaciones controladas y no una afirmacion de superioridad universal.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye comparaciones visuales Base-vs-LoRA y ejemplos de inferencia, pero no cifras de metricas como FID, CLIP score o similitud de estilo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. El repositorio pesa 34 GB e incluye el adaptador y el text encoder BF16; el modelo base Qwen-Image-2.1 debe cargarse adicionalmente.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por el tamano del repositorio y la resolucion de los ejemplos (2400 x 1792), se requiere una GPU de gama alta con memoria abundante; no se confirman modelos concretos.
-- Compatibilidad con GPU de consumo: no confirmada. El adaptador Turbo a 8 pasos reduce el coste de muestreo, pero no se documenta si cabe en GPUs de consumo como la RTX 4090.
-- Opciones de despliegue: diffusers y ComfyUI (segun los tags y la model card). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion de este tipo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible; el repo pesa 34,4 GB e incluye el text encoder BF16 Heretic, lo que implica requisitos elevados.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU consumer: no disponible; el tamano del repo y el text encoder BF16 sugieren que no cabe comodamente en GPUs consumer de gama media.
+- Opciones de despliegue: diffusers, ComfyUI y el Space oficial (FUSAL Anime Playground). No se documenta vLLM, llama.cpp ni TGI, logicos para un modelo de difusion.
+- Latencia y throughput: no disponibles. Parametros de muestreo recomendados: 25 pasos por defecto en Original, 20 pasos para layouts simples, 30-40 para composiciones complejas; Turbo fijado a 8 pasos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Base | Estilos controlables | Licencia | Estado |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Anime-Fusal (este) | LoRA sobre Qwen-Image-2.1 / Turbo | no disponible (repo de 34 GB) | no disponible | qwen-research | Hugging Face, diffusers, ComfyUI |
-| Qwen/Qwen-Image-2.1 (base) | Modelo de difusion texto-imagen | no disponible | no disponible | qwen-research (segun el adaptador) | Hugging Face |
-| Qwen/Qwen-Image-2.1-Turbo (base) | Modelo de difusion texto-imagen, 8 pasos | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen-Image-2.1-Anime-Fusal (Original R80 V3) | LoRA anime sobre difusion | Qwen/Qwen-Image-2.1 | 5 triggers | qwen-research | Recomendado |
+| Qwen-Image-2.1-Anime-Fusal (Turbo E6 Preview R128) | LoRA anime sobre difusion destilada | Qwen/Qwen-Image-2.1-Turbo | no disponible | qwen-research | Preview experimental |
+| Qwen-Image-2.1-Anime-Fusal (Original R80 V2) | LoRA anime sobre difusion | Qwen/Qwen-Image-2.1 | no disponible | qwen-research | Legacy |
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos base en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa con alternativas de la misma categoria.
+No se dispone de datos de rendimiento comparativo con otros adaptadores anime de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia `qwen-research`: restringe el uso. La model card indica explicitamente "for adults and research use only", lo que limita el uso comercial y exige revisar el archivo LICENSE del repositorio antes de cualquier despliegue en produccion.
-- Los dos adaptadores no son intercambiables: cargar el LoRA del modelo original sobre Turbo (o viceversa) o apilar ambos produce resultados incorrectos.
-- El adaptador Turbo E6 Preview R128 esta aun en entrenamiento y se publica como vista previa, no como version estable; su calidad puede cambiar entre actualizaciones.
-- El adaptador exige un formato de prompt estructurado; el uso con instrucciones libres de estilo chat puede degradar la calidad del resultado.
-- Riesgo de sobreajuste estilistico: al ser una adaptacion de dominio con unos 50.000 registros, puede reducir la diversidad de estilos frente al modelo base; el propio autor advierte que algunos prompts y estilos pueden favorecer al base.
-- No se documentan sesgos especificos, pero al tratarse de un modelo entrenado sobre ilustracion anime seleccionada manualmente, es probable que herede sesgos de representacion del corpus; no hay evaluacion publicada al respecto.
-- Riesgo de alucinacion visual (artefactos, anatomia incorrecta, texto ilegible en la imagen) inherente a los modelos de difusion; no se han publicado metricas que lo cuantifiquen.
-- Los ajustes de muestreo son especificos: fuerza de LoRA 0,7-1,0, CFG/true CFG en 1,0, 25 pasos para el modelo original y 8 pasos fijos para Turbo; desviarse de estos valores puede empeorar el resultado.
-- No hay informacion sobre el rendimiento multilingue de los prompts ni sobre el soporte de idiomas distintos del ingles.
+- Los LoRA Original y Turbo no son intercambiables; cargar uno sobre el base equivocado degrada el resultado.
+- No apilar V3 con V2 ni con Turbo; sustituir V2 directamente por V3 sobre Qwen/Qwen-Image-2.1.
+- La variante Turbo sufre perdida significativa de calidad y capacidad frente a Original, por su destilacion agresiva a 8 pasos.
+- V2 presenta artefactos de textura tipo carton que V3 corrige; usar V3 para pieles lisas y cel-shading.
+- Licencia qwen-research: restricciones para uso comercial no detalladas en la informacion disponible; verificar el archivo LICENSE antes de produccion.
+- Uso declarado para adultos e investigacion; no apto para contenido no consentido ni menores.
+- Riesgo de sesgos y alucinacion visual (artefactos, incoherencias anatomicas) inherente a modelos de difusion; no se documentan sesgos especificos.
+- Idiomas soportados no disponibles; el prompt estructurado esta descrito en ingles.
+- Requiere respetar la fuerza LoRA 0,7-1,0 y CFG 1,0; valores fuera de rango degradan el estilo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal
-- Space de demostracion (playground): https://huggingface.co/spaces/MicksHF/Qwen-Image-2.1-Anime-Fusal-Playground
+- Hugging Face: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal
+- Space oficial (FUSAL Anime Playground): https://huggingface.co/spaces/MicksHF/Qwen-Image-2.1-Anime-Fusal-Playground
 - Modelo base original: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo base Turbo: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
-- Imagenes de comparacion a resolucion completa: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal/tree/main/images/comparison-originals
-- Prompts de comparacion: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal/tree/main/prompts/comparison
-- Ajustes de inferencia en formato legible por maquina: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal/blob/main/prompts/comparison/parameters.json
+- Licencia (LICENSE en el repo): https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal/blob/main/LICENSE

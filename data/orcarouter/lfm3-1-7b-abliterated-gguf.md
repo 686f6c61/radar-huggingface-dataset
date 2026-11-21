@@ -2,49 +2,49 @@
 
 ## Resumen
 
-LFM3-1.7B-abliterated-GGUF es una versión cuantizada en formato GGUF del modelo LFM3-1.7B-abliterated, publicado por el usuario orcarouter en Hugging Face. Se trata de una variante "abliterated" (es decir, con el comportamiento de rechazo mitigado mediante manipulación de direcciones de activación) del modelo LFM3 de 1.700 millones de parámetros de Liquid AI, una familia de modelos diseñada para despliegue en el edge. El modelo base pertenece a la tercera generación de LFM (Liquid Foundation Models), orientada a inferencia local eficiente.
+LFM3-1.7B-abliterated-GGUF es una cuantizacion en formato GGUF del modelo orcarouter/LFM3-1.7B-abliterated, a su vez derivado del LFM3 de Liquid AI. Se trata de un modelo de lenguaje de 1.728.801.600 parametros (aproximadamente 1,7 mil millones) disenado para inferencia local y despliegue en el edge mediante llama.cpp. La variante "abliterated" implica que se han eliminado o atenuado los mecanismos de rechazo del modelo original, dando lugar a una version "uncensored" orientada a usos sin las restricciones de alineamiento habituales.
 
-La relevancia de esta ficha radica en que combina tres características poco habituales: un tamaño reducido apto para hardware de consumo, una ventana de contexto amplia para su escala y un proceso de "abliteration" que elimina los mecanismos de rechazo del modelo original. El resultado es un modelo conversacional sin filtros de seguridad alineados, lo que lo hace útil para investigación sobre comportamiento de modelos y para aplicaciones donde el modelo original resulta excesivamente restrictivo, pero también conlleva riesgos evidentes de uso indebido.
+El modelo mantiene el soporte multilingue del LFM3 original, con 16 idiomas declarados (ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco). Su tamano compacto lo hace adecuado para ejecucion en hardware de consumo, y la publicacion en GGUF con cuantizacion de precision mixta e imatrix busca maximizar la calidad por bit en ese rango de parametros.
 
-El repositorio incluye únicamente pesos en formato GGUF (6,4 GB en total, lo que sugiere múltiples niveles de cuantización), está pensado para llama.cpp y motores compatibles, y requiere aceptar condiciones de acceso en Hugging Face (modelo gated). La licencia declarada es lfm1.0, la licencia propia de Liquid AI para sus modelos LFM.
+Es relevante ahora porque combina tres tendencias: modelos pequenos de alta eficiencia para el edge, el ecosistema llama.cpp como via estandar de despliegue local, y la demanda de variantes sin censura para investigacion sobre alineamiento y comportamiento de modelos. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia LFM3 de Liquid AI; detalles especificos de atencion no disponibles en la informacion proporcionada) |
-| Parametros totales | 1.728.801.600 (1,7 B) |
-| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Multiples variantes GGUF con cuantizacion de precision mixta e imatrix (niveles concretos no disponibles) |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (licencia propia de Liquid AI; acceso restringido en Hugging Face) |
-| Formato de pesos | GGUF (llama.cpp) |
+| Arquitectura | Transformer (derivado de LFM3 de Liquid AI); detalles especificos de la arquitectura base no disponibles |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF con cuantizacion de precision mixta (mixed-precision) e imatrix; niveles concretos no disponibles |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
+| Licencia | lfm1.0 (etiquetada como "other" en los tags) |
+| Formato de pesos | GGUF (libreria gguf, compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-1.7B es un transformer de 1.700 millones de parametros desarrollado por Liquid AI dentro de su familia LFM3, orientada a inferencia en dispositivos edge y entornos con recursos limitados. La informacion disponible no detalla la composicion exacta del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron fases de RLHF o DPO. Tampoco se especifican innovaciones arquitectonicas concretas (como atencion lineal o decodificacion especulativa) mas alla de la pertenencia a la familia LFM3.
+El modelo es una cuantizacion GGUF del checkpoint orcarouter/LFM3-1.7B-abliterated, que a su vez parte del LFM3 de Liquid AI. La informacion disponible no detalla la arquitectura interna del LFM3 base (tipo de atencion, uso de capas recurrentes o hibridas, etc.), por lo que este apartado queda limitado a lo declarado: se trata de un transformer de aproximadamente 1,7 mil millones de parametros, con tokenizer y vocabulario multilingue que cubre 16 idiomas.
 
-La variante "abliterated" ha sido producida por orcarouter mediante tecnicas de abliteration, que consisten en identificar las direcciones de activacion asociadas al comportamiento de rechazo y proyectarlas fuera del espacio de activaciones del modelo. Este proceso no requiere reentrenamiento y preserva la mayor parte de las capacidades originales, pero elimina los mecanismos de seguridad alineados. La version GGUF aplica ademas cuantizacion de precision mixta con matrices de importancia (imatrix), una tecnica que reduce la perdida de calidad en cuantizaciones agresivas ponderando la importancia de cada peso durante la cuantizacion.
+El proceso de "abliteration" consiste en modificar los pesos del modelo para eliminar la direccion de rechazo aprendida durante el alineamiento, de modo que el modelo deja de negarse a responder a ciertas peticiones. No se dispone de informacion sobre el dataset de entrenamiento original del LFM3, el numero de tokens utilizados, ni sobre las tecnicas de alineamiento (RLHF, DPO) aplicadas antes de la ablacion. La cuantizacion se ha realizado con precision mixta e imatrix, una tecnica que asigna mas bits a las capas mas sensibles para reducir la perdida de calidad respecto al modelo en punto flotante.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en 17 idiomas, incluidos espanol, ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
-- Razonamiento basico y respuesta a instrucciones, heredado del modelo LFM3 base.
-- Generacion de codigo y tareas de matematicas simples, aunque limitadas por el tamano de 1,7 B de parametros.
-- Comportamiento sin rechazo (uncensored): el proceso de abliteration elimina las negativas alineadas del modelo original, por lo que responde a practicamente cualquier peticion.
-- Compatibilidad con llama.cpp y motores de inferencia local (endpoints_compatible segun los tags del repositorio).
-- No se ha confirmado soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking en la informacion proporcionada.
+- Generacion de texto conversacional multilingue en 16 idiomas.
+- Razonamiento basico y respuesta a instrucciones, propio de un modelo de 1,7B parametros.
+- Generacion de codigo y tareas de transformacion de texto, con calidad limitada por el tamano.
+- Comportamiento "uncensored": ausencia o atenuacion de rechazos ante peticiones que el modelo original declinaria.
+- Inferencia local en CPU y GPU mediante llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se declara soporte explicito de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como la abliteration afecta al comportamiento de rechazo y a la calidad general de las respuestas, comparandolo con el LFM3-1.7B original en experimentos controlados.
-- Despliegue en dispositivos edge y hardware de consumo: con 1,7 B de parametros y cuantizacion GGUF, el modelo puede ejecutarse en portatiles, mini-PC y placas como Raspberry Pi 5 (con cuantizaciones Q4), lo que lo hace adecuado para asistentes locales sin conexion.
-- Generacion de texto creativo sin restricciones: escritura de ficcion, guiones o contenido narrativo donde el modelo original rechazaria tematicas adultas o controvertidas, siempre que el uso cumpla la legalidad aplicable.
-- Prototipado rapido de chatbots multilingues: los 17 idiomas soportados permiten construir demos de atencion al cliente o asistentes conversacionales en varios mercados sin necesidad de infraestructura cloud.
-- Procesamiento de texto en entornos con privacidad estricta: al ejecutarse localmente mediante llama.cpp, los datos no salen del dispositivo, lo que encaja en escenarios sanitarios, legales o industriales con requisitos de confidencialidad.
-- Educacion e investigacion academica: modelo ligero para experimentos de destilacion, evaluacion de cuantizaciones o comparativas de tecnicas de abliteration en entornos con presupuesto de computo limitado.
-- Preprocesamiento y anotacion de datos: generacion de etiquetas, resumenes o reformulaciones en pipelines de datos donde el volumen hace inviable usar modelos grandes.
+- Prototipado local de asistentes conversacionales: el modelo cabe en equipos de consumo y permite iterar rapidamente sobre prompts y flujos conversacionales sin depender de APIs externas.
+- Investigacion sobre alineamiento y seguridad: la variante abliterated sirve para estudiar como se comporta un modelo sin mecanismos de rechazo, comparandolo con el original en tareas de evaluacion de sesgos y robustez.
+- Generacion de texto multilingue en el edge: con soporte para 16 idiomas, es util para aplicaciones de traduccion o redaccion asistida en dispositivos con recursos limitados.
+- Filtrado y clasificacion de texto: tareas de etiquetado, resumen corto o extraccion de entidades en pipelines ligeros donde no se justifica un modelo mayor.
+- Educacion y experimentacion: entorno de bajo coste para aprender a desplegar modelos con llama.cpp, Ollama o servidores compatibles con GGUF.
+- Generacion creativa sin restricciones de contenido: escritura de ficcion, guiones o dialogos donde el usuario necesita un modelo que no aplique filtros de rechazo, asumiendo la responsabilidad del contenido generado.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1,0-1,2 GB para cuantizacion Q4_K_M, 1,5-1,8 GB para Q8_0 y en torno a 3,5 GB para FP16 (estimacion a partir del numero de parametros; los tamanos exactos por cuantizacion no se detallan en la informacion proporcionada).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16 (GTX 1650, RTX 3050, RTX 4060); para cuantizaciones Q4 basta con 2 GB, por lo que tambien funciona en GPUs integradas modernas.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer de los ultimos diez anos, e incluso en CPU pura con llama.cpp.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama (mediante importacion del GGUF), LM Studio, koboldcpp y servidores compatibles con la API de llama.cpp. vLLM y TGI no soportan GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponibles en la informacion proporcionada; en la practica, un modelo de 1,7 B en Q4 suele superar las decenas de tokens por segundo en CPU moderna y cientos en GPU consumer, pero no se aportan mediciones oficiales.
+- VRAM estimada: en torno a 1-2 GB para cuantizaciones de 4 bits (Q4_K_M), 2-3 GB para 6-8 bits, y aproximadamente 3,5 GB en FP16. El repo ocupa 6,4 GB en total por incluir varias cuantizaciones.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sobradamente, aunque el modelo esta pensado para hardware modesto.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna e incluso en iGPU con memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con GGUF y endpoints compatibles con la API de OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada; en un modelo de 1,7B en 4 bits se espera inferencia en tiempo real en CPU moderna y muy rapida en GPU, pero no se aportan cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-abliterated-GGUF (este) | 1,7 B | No disponible | lfm1.0 (gated) | GGUF en HF | Variante sin filtros, 17 idiomas |
-| LFM3-1.7B (original) | 1,7 B | No disponible | lfm1.0 | HF | Modelo base alineado de Liquid AI |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HF, GGUF, Ollama | Alternativa abierta con contexto largo y soporte de tool calling |
-| Llama 3.2-1B-Instruct | 1,2 B | 131.072 tokens | Llama 3.2 Community | HF, GGUF, Ollama | Modelo pequeno de Meta con contexto muy amplio |
+| LFM3-1.7B-abliterated-GGUF | 1,73B | no disponible | lfm1.0 | GGUF | Variante sin censura, 16 idiomas, acceso gated |
+| LFM3-1.7B (original) | 1,73B | no disponible | lfm1.0 | safetensors/GGUF | Modelo base alineado de Liquid AI |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors/GGUF | Alternativa pequena multilingue con licencia permisiva |
+| Llama 3.2 1B Instruct | 1,24B | 128K (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors/GGUF | Modelo pequeno de Meta con contexto largo |
+
+La comparativa con Qwen2.5 y Llama 3.2 se ofrece como referencia de categoria; los datos de esos modelos no provienen de la informacion proporcionada para esta ficha y deben verificarse en sus repositorios oficiales.
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteration elimina los mecanismos de rechazo, por lo que el modelo puede generar contenido ofensivo, ilegal o peligroso. No debe desplegarse en produccion orientada al publico sin capas adicionales de moderacion.
-- La abliteration puede degradar capacidades generales (razonamiento, coherencia, seguimiento de instrucciones) respecto al modelo original; no se han publicado evaluaciones que cuantifiquen esta perdida.
-- Riesgo elevado de alucinacion, acentuado por el tamano reducido de 1,7 B de parametros.
-- La longitud de contexto no esta documentada en la informacion disponible; no se debe asumir una ventana amplia sin verificacion empirica.
-- La licencia lfm1.0 es una licencia propia de Liquid AI con posibles restricciones de uso comercial; es necesario revisar sus terminos antes de cualquier despliegue productivo. Ademas, el repositorio esta restringido (gated) y requiere aceptar condiciones.
-- El modelo no ha sido validado por Liquid AI; es una modificacion de terceros (orcarouter) y no cuenta con soporte oficial.
-- El rendimiento en los 17 idiomas declarados puede variar notablemente; los idiomas con menos representacion en el entrenamiento original probablemente muestren peor calidad.
-- No se ha confirmado soporte de tool calling ni de agentes; no debe asumirse para integraciones que lo requieran.
+- La ablacion elimina los mecanismos de rechazo, lo que aumenta el riesgo de generar contenido danino, sesgado o ilegal; no es adecuado para aplicaciones de produccion orientadas al publico general sin filtros externos.
+- Riesgo elevado de alucinacion, acentuado por el tamano reducido del modelo (1,7B parametros).
+- No se dispone de informacion sobre la longitud de contexto soportada, lo que impide garantizar conversaciones de contexto largo.
+- La licencia lfm1.0 puede imponer restricciones al uso comercial; es necesario revisar los terminos antes de desplegar el modelo en produccion.
+- El acceso al repositorio esta restringido (gated): es obligatorio aceptar las condiciones en Hugging Face.
+- El rendimiento en idiomas distintos del ingles puede degradarse respecto al modelo original, y no hay benchmarks publicados que lo cuantifiquen.
+- La cuantizacion GGUF introduce una perdida de calidad adicional respecto al modelo en punto flotante, aunque el uso de imatrix la mitiga.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated-GGUF
-- Modelo base abliterated: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
-- Liquid AI (desarrollador de LFM3): https://www.liquid.ai/
-- llama.cpp (motor de inferencia): https://github.com/ggml-org/llama.cpp
-- Ollama (despliegue local): https://ollama.com/
+- Modelo base (abliterated): https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
+- Modelo original de Liquid AI: no disponible en la informacion proporcionada
+- Paper o blog de LFM3: no disponible en la informacion proporcionada
+- Repositorio llama.cpp: no disponible en la informacion proporcionada

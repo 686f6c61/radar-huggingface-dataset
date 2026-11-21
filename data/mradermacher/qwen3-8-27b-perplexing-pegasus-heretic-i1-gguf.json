@@ -53,11 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified&search=gguf",
-      "snippet": "mradermacher/Qwen3.8-27B-Perplexing-Pegasus-Heretic-GGUF. 27B • Updated 5 minutes ago · mradermacher/Temper-2-Sapient-i1-GGUF. 8B • Updated 6 minutes ago ..."
-    }
-  ]
+  "sources": []
 }

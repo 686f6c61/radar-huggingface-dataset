@@ -30,8 +30,6 @@
     "auditable-inference",
     "text-generation",
     "en",
-    "base_model:Synchopate/DeepSeek-V4-Flash-0731-MaxQ-Fractal-64GB-CPU-GGUF",
-    "base_model:quantized:Synchopate/DeepSeek-V4-Flash-0731-MaxQ-Fractal-64GB-CPU-GGUF",
     "license:mit",
     "region:us"
   ],

@@ -2,85 +2,91 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo *draft* **z-lab/gemma4-12B-it-DFlash**, diseñado para acelerar la inferencia del modelo generativo **Google Gemma 4 12B IT** mediante decodificación especulativa. El modelo *draft* utiliza una arquitectura de difusión ligera (DFlash) que genera múltiples tokens candidatos en paralelo, reduciendo la latencia de la generación autoregrasiva del modelo objetivo. Es una pieza clave para desplegar Gemma 4 12B en entornos con recursos limitados o donde el rendimiento en tiempo real es crítico.
+`Anbeeld/gemma4-12B-it-DFlash-GGUF` es un conjunto de cuantizaciones GGUF del modelo borrador (*draft model*) DFlash de z-lab, diseñado para acelerar la inferencia de Gemma 4 12B IT mediante decodificación especulativa. No es un modelo generativo autónomo: es un componente auxiliar que propone bloques de tokens que el modelo objetivo (Gemma 4 12B IT) verifica en paralelo. El autor de esta conversión es Anbeeld y el checkpoint original pertenece a z-lab.
 
-La relevancia actual radica en que la decodificación especulativa se ha convertido en una técnica estándar para optimizar LLMs sin sacrificar calidad. Al ofrecer versiones GGUF de este *draft model*, el autor facilita su uso con **BeeLlama.cpp**, un fork de llama.cpp con soporte avanzado para este tipo de modelos. Esto permite a desarrolladores e investigadores integrar aceleración por hardware y software en sus pipelines de inferencia local.
+La innovación central es DFlash, un método de decodificación especulativa basado en un modelo de difusión por bloques (*block diffusion*) que genera múltiples tokens de forma paralela en lugar de secuencialmente. El borrador está entrenado con un tamaño de bloque de 16, lo que condiciona la configuración de `--spec-draft-n-max 16` en el servidor de inferencia. El resultado es una reducción de la latencia de decodificación sin alterar la distribución de salida del modelo objetivo, ya que cada propuesta se verifica de forma exacta.
 
-El modelo base de referencia, `google/gemma-4-12B-it`, es un VLM (modelo de lenguaje y visión) de 12B parámetros con ventana de contexto de 128K tokens, desarrollado por Google. Sin embargo, este repositorio únicamente contiene el *draft model* cuantizado, no el modelo completo.
+Este repositorio es relevante porque empaqueta el borrador en siete niveles de cuantización (de BF16 a Q2_K) generados desde una conversión BF16 del checkpoint original, facilitando su despliegue en hardware con recursos limitados. Los pesos declarados en safetensors suman 727.496.960 parámetros, muy por debajo de los 12B del modelo objetivo, coherente con la función de borrador ligero. Requiere obligatoriamente BeeLlama.cpp, un fork de llama.cpp con soporte para `draft-dflash`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DFlash (block diffusion para decodificacion especulativa) |
-| Parametros totales | no disponible |
+| Arquitectura | Modelo de difusión por bloques (block diffusion) para decodificación especulativa; familia Gemma 4 |
+| Parametros totales | 727.496.960 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (depende del modelo objetivo, Gemma 4 12B IT: 128K tokens) |
-| Tipos de cuantizacion | GGUF (no se especifican los niveles exactos en la informacion disponible) |
-| Idiomas soportados | no disponible (heredados del modelo objetivo, Gemma 4 12B IT soporta multiples idiomas) |
-| Licencia | no disponible (revisar licencias de los repositorios upstream: google/gemma-4-12B-it y z-lab/gemma4-12B-it-DFlash) |
-| Formato de pesos | GGUF (safetensors en el modelo original de z-lab) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (safetensors para el checkpoint base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo **DFlash** se basa en un modelo de difusión por bloques (block diffusion) diseñado específicamente para decodificación especulativa. A diferencia de los *draft models* tradicionales basados en transformers autoregresivos, DFlash genera múltiples tokens candidatos en paralelo mediante un proceso de difusión, lo que permite un *throughput* de generación mucho mayor. El autor del repositorio (Anbeeld) indica que se debe usar con **BeeLlama.cpp**, un fork de llama.cpp con características avanzadas de cuantización y soporte nativo para DFlash.
+DFlash emplea un modelo de difusión por bloques como borrador ligero: en lugar de predecir un único token por paso, propone un bloque completo de tokens de forma paralela, que el modelo objetivo verifica después de manera exacta. El borrador está entrenado con un tamaño de bloque de 16, y la model card indica explícitamente que debe usarse con `--spec-draft-n-max 16`. La arquitectura se etiqueta como `diffusion-language-model` y se apoya en la familia Gemma 4, pero no se detalla en la información disponible la composición interna de capas, el número de tokens de entrenamiento ni la composición del dataset.
 
-No se dispone de información sobre los datos de entrenamiento del *draft model* ni sobre el proceso de entrenamiento. El modelo original de z-lab no incluye README, por lo que no se conocen detalles técnicos adicionales. El modelo objetivo `google/gemma-4-12B-it` es un transformer multimodal entrenado con técnicas de RLHF, pero ese detalle no aplica al *draft model* en sí.
+No se especifica si el entrenamiento incluyó RLHF, DPO u otras fases de alineación. El checkpoint original de z-lab no incluye model card, y las instrucciones de uso publicadas corresponden únicamente a estas cuantizaciones GGUF en BeeLlama.cpp. Las cuantizaciones se generaron directamente desde una conversión BF16 del checkpoint original mediante BeeLlama.cpp, sin datos publicados sobre pérdida de calidad por nivel de cuantización.
 
 ## Capacidades
 
-- **Decodificación especulativa**: genera borradores de tokens en paralelo para acelerar la inferencia del modelo objetivo (Gemma 4 12B IT).
-- **Integración con BeeLlama.cpp**: requiere este fork específico de llama.cpp para funcionar correctamente.
-- **Compatibilidad con el modelo objetivo**: diseñado exclusivamente para Gemma 4 12B IT, no es un modelo de propósito general.
-- **No es autónomo**: no puede generar texto por sí mismo; depende del modelo objetivo para producir la salida final.
-- **Capacidades del modelo objetivo (heredadas)**: si se usa con Gemma 4 12B IT, se obtienen las capacidades de ese modelo: generación de texto, razonamiento, código, visión, tool calling, etc., pero estas no son propias del *draft model*.
+- Generación de propuestas de tokens en paralelo para decodificación especulativa (bloques de 16 tokens).
+- Aceleración de la inferencia del modelo objetivo Gemma 4 12B IT sin modificar la distribución de salida verificada.
+- Integración con el servidor compatible con OpenAI de BeeLlama.cpp (`llama-server`) y con `--flash-attn on`.
+- Funciona como borrador subordinado: no genera respuestas de forma autónoma ni puede usarse sin el modelo objetivo.
+- Siete niveles de cuantización para ajustar el equilibrio entre memoria y velocidad del borrador.
+- No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento para este componente.
 
 ## Casos de uso
 
-- **Aceleración de inferencia local**: desplegar Gemma 4 12B IT en una GPU consumer (p. ej., RTX 3090) con menor latencia gracias a la decodificación especulativa, útil para asistentes conversacionales en tiempo real.
-- **Servidores de inferencia con alta concurrencia**: en entornos con múltiples peticiones simultáneas, el *draft model* reduce el tiempo de generación por petición, mejorando el *throughput* del sistema.
-- **Prototipado rápido en entornos con recursos limitados**: permite probar Gemma 4 12B IT en hardware modesto (CPU+GPU pequeña) sin degradar demasiado la experiencia de usuario.
-- **Investigación en decodificación especulativa**: sirve como punto de partida para estudiar y comparar técnicas de *drafting* basadas en difusión frente a las autoregresivas.
-- **Despliegue en edge devices**: al ser un modelo ligero, puede ejecutarse en dispositivos con poca memoria, siempre que el modelo objetivo esté en otro dispositivo o en la nube.
-- **Optimización de costes en la nube**: reducir el tiempo de cómputo por solicitud en instancias GPU, disminuyendo el coste económico de la inferencia.
+- Servicio de chat de baja latencia: desplegar Gemma 4 12B IT con el borrador Q8_0 en `llama-server` para reducir el tiempo por token en conversaciones multi-turno, manteniendo la calidad del modelo objetivo gracias a la verificación exacta de las propuestas.
+- Generación de código interactiva: usar `temperature=0.0` con el borrador para completar funciones y fragmentos en editores o asistentes, donde la latencia de decodificación es crítica y el bloque de 16 tokens encaja con la longitud típica de las completaciones.
+- Despliegue en GPU de gama alta con margen de memoria: combinar el objetivo en BF16 o Q8_0 con el borrador Q8_0 para maximizar la tasa de aceptación y el throughput en entornos de producción con A100 o H100.
+- Inferencia en estaciones de trabajo con VRAM limitada: emplear el borrador Q4_K_M o Q3_K_M junto a una cuantización agresiva del objetivo para mantener la aceleración especulativa cuando no hay espacio para el borrador en BF16.
+- Evaluación comparativa de métodos de decodificación especulativa: medir la tasa de aceptación y la latencia frente a otros borradores (EAGLE, Medusa) sobre el mismo objetivo Gemma 4 12B IT, usando los distintos niveles de cuantización como variable controlada.
+- Procesamiento por lotes con requisitos de latencia moderada: servir peticiones concurrentes a través de la API compatible con OpenAI de BeeLlama.cpp, donde el borrador reduce el coste por token sin necesidad de cambiar el modelo objetivo ni el prompt.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de z-lab no incluye README y el autor de la cuantización no proporciona métricas de velocidad o calidad. Solo se menciona en el repositorio hermano de 31B que se probó con BeeLlama.cpp v0.2.0 en un sistema con RTX 3090, pero sin cifras concretas. Para obtener datos de rendimiento, se recomienda consultar el repositorio oficial de DFlash en GitHub.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se publican resultados para estas cuantizaciones GGUF y que los resultados de otros borradores DFlash no son mediciones de este checkpoint.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no disponible. Dado que es un *draft model* ligero, se espera que ocupe significativamente menos memoria que el modelo objetivo (12B), pero no se especifica el tamaño exacto de las cuantizaciones.
-- **GPU recomendadas**: el modelo objetivo Gemma 4 12B IT requiere al menos 10-12 GB de VRAM en cuantización Q4_K_M. El *draft model* debería caber en GPUs consumer como RTX 3060 (12 GB) o superiores, pero este dato no está confirmado.
-- **Compatibilidad con consumer GPU**: sí, probablemente, dado que el objetivo es acelerar la inferencia en hardware modesto.
-- **Opciones de despliegue**: BeeLlama.cpp (fork de llama.cpp) es el backend recomendado. También podría usarse con otros backends que soporten GGUF y decodificación especulativa, aunque no se garantiza compatibilidad.
-- **Latencia y throughput**: no disponible. El rendimiento depende del modelo objetivo, del hardware y de la configuración de BeeLlama.cpp.
+- El borrador tiene 727.496.960 parámetros; en BF16 ocupa aproximadamente 1,5 GB solo en pesos, y en Q8_0 alrededor de 0,8 GB, sin contar overhead de contexto y caché KV.
+- VRAM total necesaria = pesos del objetivo Gemma 4 12B IT (cuantizado) + pesos del borrador + caché KV del objetivo + buffers de verificación especulativa.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB para el objetivo en BF16 o Q8_0 con borrador Q8_0; RTX 4090 24 GB para combinaciones objetivo Q4_K_M/Q5_K_M con borrador Q4_K_M o Q5_K_M.
+- Cabe en GPU de consumo si el objetivo se cuantiza de forma agresiva (Q4_K_M o inferior) y se reserva espacio para el borrador y la caché KV; no se dispone de cifras medidas de VRAM total.
+- Opciones de despliegue: exclusivamente BeeLlama.cpp (`llama-server` con `--spec-type draft-dflash`, `--spec-draft-model`, `--spec-draft-n-max 16` y `--flash-attn on`). No se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp upstream.
+- Latencia y throughput: no disponibles; dependen de la tasa de aceptación del borrador, del hardware y de la cuantización del objetivo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros *draft models* (p. ej., modelos draft autoregresivos como los de Medusa o EAGLE). El único dato comparativo es que el repositorio hermano `Anbeeld/gemma-4-31B-it-DFlash-GGUF` existe para el modelo de 31B, lo que sugiere que la técnica es escalable. Se recomienda consultar el repositorio de DFlash para comparativas con otras arquitecturas de decodificación especulativa.
-
-| Modelo | Tipo | Parametros | Contexto | Licencia | Formato |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anbeeld/gemma4-12B-it-DFlash-GGUF | Draft (difusion) | no disponible | no disponible | no disponible | GGUF |
-| google/gemma-4-12B-it | Generativo (VLM) | 12B | 128K | Gemma license (uso comercial permitido con restricciones) | safetensors |
-| Anbeeld/gemma-4-31B-it-DFlash-GGUF | Draft (difusion) | no disponible | no disponible | no disponible | GGUF |
+| Anbeeld/gemma4-12B-it-DFlash-GGUF | Borrador de difusión por bloques (GGUF) | 727.496.960 | no disponible | no disponible | Hugging Face, requiere BeeLlama.cpp |
+| z-lab/gemma4-12B-it-DFlash | Borrador de difusión por bloques (checkpoint original) | no disponible | no disponible | no disponible | Hugging Face |
+| google/gemma-4-12b-it | Modelo objetivo generativo | 12B (según denominación) | no disponible | no disponible | Hugging Face |
+
+No se dispone de datos de rendimiento ni de otros borradores comparables (EAGLE, Medusa) en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- **Dependencia del modelo objetivo**: este *draft model* no funciona de forma independiente; requiere Gemma 4 12B IT como modelo base. No puede generar texto por sí solo.
-- **Compatibilidad restringida**: solo funciona con BeeLlama.cpp, no con llama.cpp estándar ni con otros backends sin modificaciones.
-- **Falta de documentación**: el repositorio de z-lab no incluye README, por lo que se desconocen detalles de entrenamiento, arquitectura exacta y limitaciones específicas.
-- **Licencia incierta**: la licencia no está especificada en este repositorio. Es imprescindible revisar las licencias de `google/gemma-4-12B-it` y `z-lab/gemma4-12B-it-DFlash` antes de cualquier uso comercial o redistribución.
-- **Riesgo de alucinación y sesgos**: al ser un *draft model*, no introduce sesgos propios, pero hereda los del modelo objetivo. Gemma 4 12B IT puede presentar alucinaciones o sesgos típicos de los LLMs.
-- **Calidad de la cuantización**: los GGUF pueden degradar la calidad si se usan cuantizaciones muy agresivas. No se especifican los niveles incluidos en este repositorio.
-- **Fechas del repositorio**: el modelo fue creado en 2026, lo que sugiere que es reciente, pero no se ha verificado su mantenimiento o soporte continuo.
+- No es un modelo autónomo: sin el objetivo Gemma 4 12B IT no produce respuestas útiles; la model card lo advierte de forma explícita.
+- Dependencia de BeeLlama.cpp: el alias `dflash` fue eliminado y debe usarse `--spec-type draft-dflash`; otros runners (vLLM, TGI, Ollama, llama.cpp upstream) no están documentados como compatibles.
+- El bloque de entrenamiento es de 16 tokens; configurar `--spec-draft-n-max` con otro valor puede degradar la tasa de aceptación.
+- Licencia no disponible: no puede confirmarse el uso comercial ni las obligaciones de atribución; debe verificarse en el repositorio del checkpoint original de z-lab y en la licencia de Gemma 4.
+- Idiomas soportados no documentados; el comportamiento multilingüe depende del modelo objetivo, no del borrador.
+- Riesgo de alucinación heredado del modelo objetivo; la verificación especulativa garantiza equivalencia distribucional con el objetivo, no corrección factual.
+- Sin benchmarks publicados para estas cuantizaciones: no hay evidencia medida de la tasa de aceptación ni de la pérdida de velocidad en Q2_K o Q3_K_M.
+- El checkpoint original de z-lab carece de model card, lo que limita la trazabilidad de los datos de entrenamiento y de posibles sesgos.
+- El repositorio tiene un tamaño de 6,0 GB y 738 descargas en el momento de la consulta, con adopción todavía limitada.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/Anbeeld/gemma4-12B-it-DFlash-GGUF)
-- [Modelo draft original de z-lab](https://huggingface.co/z-lab/gemma4-12B-it-DFlash)
-- [Modelo objetivo Gemma 4 12B IT de Google](https://huggingface.co/google/gemma-4-12b-it)
-- [Repositorio hermano para Gemma 4 31B](https://huggingface.co/Anbeeld/gemma-4-31B-it-DFlash-GGUF)
-- [BeeLlama.cpp (fork de llama.cpp)](https://github.com/Anbeeld/beellama.cpp)
-- [Repositorio DFlash en GitHub](https://github.com/z-lab/dflash)
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/gemma4-12B-it-DFlash-GGUF
+- Checkpoint original: https://huggingface.co/z-lab/gemma4-12B-it-DFlash
+- Modelo objetivo: https://huggingface.co/google/gemma-4-12b-it
+- Paper: https://arxiv.org/abs/2602.06036
+- Repositorio GitHub de DFlash: https://github.com/z-lab/dflash
+- Blog del proyecto: https://z-lab.ai/projects/dflash/
+- Fork BeeLlama.cpp: https://github.com/Anbeeld/beellama.cpp
+- Formulario de feedback de DFlash: https://forms.gle/4YNwfqb4nJdqn6hq9

@@ -57,16 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "wangzhang/GLM-4.7-Flash-abliterated · Hugging Face",
-      "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated",
-      "snippet": "An uncensored version of zai-org/GLM-4.7-Flash with safety refusal behavior removed via abliteration. The model retains its original capabilities (KL divergence: 0.0065) while reducing refusals from 52/100 to 9/100 ..."
-    },
-    {
-      "title": "GLM-4.7-Flash-abliterated — Abliterated Model Card",
-      "url": "https://www.abliteratedmodels.org/glm-4.7-flash-abliterated/",
-      "snippet": "GLM-4.7-Flash-abliterated is a refusal-ablated build of GLM-4.7-Flash, released by huihui-ai, available in Transformers, GGUF (imatrix) and MLX, mit licence."
-    }
-  ]
+  "sources": []
 }

@@ -2,46 +2,57 @@
 
 ## Resumen
 
-FLUX.1-schnell es un modelo de generación de imágenes de texto a imagen desarrollado por Black Forest Labs, la misma compañía que creó Stable Diffusion. Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 12 mil millones de parámetros, destilado a partir de FLUX.1-pro para permitir la generación en solo 4 pasos de inferencia, lo que lo hace significativamente más rápido que otros modelos de difusión de su categoría. Publicado el 31 de julio de 2024, está disponible bajo licencia Apache-2.0, aunque su acceso en Hugging Face es restringido y requiere aceptar condiciones adicionales.
+FLUX.1-schnell es un modelo de generacion de imagenes a partir de texto (text-to-image) desarrollado por Black Forest Labs, el equipo detras de la investigacion original de Stable Diffusion. Se trata de la variante destilada y mas rapida de la familia FLUX.1, disenada para generar imagenes de alta calidad en tan solo 1 a 4 pasos de inferencia, lo que lo hace especialmente atractivo para aplicaciones en tiempo real y entornos con recursos limitados. El modelo cuenta con aproximadamente 11.900 millones de parametros y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-El modelo resuelve el problema de la latencia en la generación de imágenes de alta calidad: mientras que los modelos tradicionales de difusión requieren decenas de pasos de denoising, FLUX.1-schnell logra resultados comparables en una fracción del tiempo, siendo adecuado para aplicaciones en tiempo real o de alto rendimiento. Su arquitectura basada en flujo rectificado, junto con la destilación de pasos, representa una innovación técnica relevante en el campo de la síntesis de imágenes.
+El modelo resuelve el problema de la latencia en generacion de imagenes: frente a los 20-50 pasos tipicos de los modelos de difusion tradicionales, FLUX.1-schnell emplea tecnicas de destilacion por timesteps (timestep distillation) que reducen drasticamente el coste computacional manteniendo una calidad visual competitiva. Es relevante ahora porque combina una licencia permisiva, un ecosistema maduro (integracion con diffusers, endpoints compatibles, despliegue en SageMaker y Azure) y un rendimiento que lo situa entre los modelos open de generacion de imagenes mas capaces disponibles.
+
+La arquitectura es un transformer de flujo (flow transformer) con 12 mil millones de parametros, sucesor de la arquitectura de difusion clasica, que emplea rectified flow para el transporte entre ruido y datos. El modelo esta entrenado principalmente en ingles y su acceso esta restringido (gated) en Hugging Face, requiriendo aceptar las condiciones de uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de flujo rectificado (rectified flow transformer) |
-| Parametros totales | 11.891.178.560 (11,9 B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (modelo de texto a imagen) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles |
-| Licencia | Apache-2.0 (con acceso restringido en Hugging Face) |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer de flujo (flow transformer) con rectified flow |
+| Parametros totales | 11.891.178.560 (~11,9 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen; no aplica contexto de texto) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos en safetensors; se pueden aplicar cuantizaciones de la comunidad) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 58,1 GB) |
+| Pipeline | text-to-image (diffusers: FluxPipeline) |
+| Descargas | 283.704 |
+| Likes | 6.875 |
+| Acceso | Restringido (gated), requiere aceptar condiciones |
+| Fecha de creacion | 2024-07-31 |
+| Ultima actualizacion | 2026-11-19 |
 
 ## Arquitectura y entrenamiento
 
-FLUX.1-schnell emplea una arquitectura de transformer de flujo rectificado, un enfoque que modela la transición entre ruido y datos mediante una trayectoria lineal, lo que permite un muestreo más eficiente que los modelos de difusión basados en el ruido gaussiano tradicional. El modelo es una destilación de FLUX.1-pro, un modelo más grande y de mayor calidad, que ha sido entrenado para generar imágenes en solo 4 pasos de inferencia, en lugar de los 20-50 pasos típicos de otros modelos de difusión. Esta destilación se logra mediante un proceso de entrenamiento que fuerza al modelo a imitar el resultado de múltiples pasos de su profesor en un número reducido de pasos.
+FLUX.1-schnell se basa en un transformer de flujo (flow transformer) que sustituye la formulacion clasica de difusion por rectified flow, un marco que aprende trayectorias rectas entre la distribucion de ruido y la de datos, lo que permite una integracion mas eficiente y menos pasos de muestreo. El modelo emplea un autoencoder (VAE) para comprimir las imagenes al espacio latente y un codificador de texto para procesar los prompts; el backbone transformer opera en el espacio latente. Con aproximadamente 11,9 mil millones de parametros, es un modelo de gran escala para generacion de imagenes.
 
-No se dispone de información detallada sobre el conjunto de datos de entrenamiento, el número total de tokens o el proceso de alineación (como RLHF o DPO) en la información proporcionada. El modelo se distribuye a través de la librería diffusers de Hugging Face, lo que facilita su integración en pipelines de generación de imágenes.
+La innovacion clave es la destilacion por timesteps: FLUX.1-schnell ha sido destilado a partir de un modelo base (FLUX.1-pro/dev) para que pueda generar imagenes de calidad en 1 a 4 pasos de inferencia, en lugar de los 20-50 habituales. Esto reduce el coste computacional en un orden de magnitud. Los detalles exactos sobre el numero de tokens de entrenamiento, la composicion del dataset y si se empleo RLHF o DPO no estan disponibles en la informacion proporcionada. El modelo esta entrenado principalmente en ingles.
 
 ## Capacidades
 
-- Generacion de imagenes de alta calidad a partir de descripciones textuales en ingles.
-- Generacion rapida: solo 4 pasos de inferencia, lo que reduce drasticamente la latencia en comparacion con otros modelos de difusion.
-- Soporte para resoluciones variadas, aunque no se especifican los rangos exactos.
-- Integracion con el pipeline `FluxPipeline` de diffusers, permitiendo un despliegue sencillo en entornos de produccion.
-- Compatibilidad con plataformas de despliegue como SageMaker y Azure, segun los tags de Hugging Face.
-- No soporta tool calling, agentes ni razonamiento multi-paso, ya que es un modelo puramente generativo de imagenes.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image) en ingles.
+- Generacion rapida en 1 a 4 pasos de inferencia gracias a la destilacion por timesteps.
+- Alta fidelidad visual y coherencia en escenas complejas, con soporte para estilos diversos.
+- Integracion nativa con la libreria diffusers (FluxPipeline).
+- Compatible con endpoints de inferencia (endpoints_compatible), despliegue en SageMaker y Azure.
+- Soporte de prompts detallados en ingles; no se documenta soporte multilingue.
+- No se documenta tool calling, function calling, agentes ni razonamiento multi-paso (es un modelo de imagen, no de texto).
+- No se documenta vision de entrada ni audio; es exclusivamente generativo de imagen.
 
 ## Casos de uso
 
-- Generacion de imagenes para prototipos de diseno: los equipos de producto pueden generar rapidamente variaciones visuales de conceptos para evaluar ideas antes de invertir en produccion. La velocidad de 4 pasos permite iterar en tiempo real durante sesiones de lluvia de ideas.
-- Creacion de contenido para redes sociales: los creadores pueden generar imagenes personalizadas para publicaciones sin necesidad de herramientas de edicion complejas, gracias a la capacidad del modelo de producir resultados esteticos con una sola llamada.
-- Ilustracion de articulos y blogs: los redactores pueden acompanar sus textos con imagenes generadas automaticamente a partir de titulos o resumenes, ahorrando tiempo en busqueda de bancos de imagenes.
-- Generacion de fondos y texturas para videojuegos: los desarrolladores pueden crear assets visuales rapidamente para entornos de prueba o para produccion final, aprovechando la alta calidad del modelo.
-- Asistencia en diseno de moda o producto: los disenadores pueden explorar variaciones de color, forma o estilo describiendo atributos en texto, obteniendo opciones visuales en segundos.
-- Automatizacion de imagenes para e-commerce: las tiendas online pueden generar imagenes de productos en diferentes contextos o estilos sin necesidad de sesiones fotograficas adicionales, reduciendo costes operativos.
+- Generacion de imagenes en tiempo real para aplicaciones interactivas: gracias a sus 1-4 pasos de inferencia, el modelo puede generar imagenes en una fraccion de segundo en GPU modernas, lo que lo hace adecuado para interfaces de usuario donde el usuario ve el resultado casi instantaneamente.
+- Creacion de contenido para marketing y redes sociales: permite generar variaciones de imagenes de producto, banners y creatividades a partir de prompts en ingles, con la ventaja de la licencia Apache 2.0 para uso comercial sin restricciones.
+- Prototipado rapido de diseno grafico: disenadores pueden iterar sobre conceptos visuales generando multiples imagenes en segundos, reduciendo el tiempo de exploracion creativa.
+- Generacion de ilustraciones para videojuegos y animacion: el modelo puede producir assets visuales coherentes con estilos definidos, integrable en pipelines de produccion mediante diffusers.
+- Aumento de datos sinteticos para entrenamiento de modelos de vision: se pueden generar datasets de imagenes etiquetadas a partir de prompts, utiles para tareas de clasificacion o deteccion con datos escasos.
+- Despliegue en entornos cloud con requisitos de coste: al necesitar pocos pasos de inferencia, el coste por imagen en servicios como SageMaker o Azure se reduce significativamente frente a modelos de difusion tradicionales.
+- Aplicaciones de edicion y variacion de imagenes: aunque el modelo es text-to-image, puede combinarse con pipelines de img2img o inpainting de diffusers para tareas de edicion, aprovechando su velocidad.
 
 ## Benchmarks y rendimiento
 
@@ -49,28 +60,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de requisitos oficiales de hardware en la informacion proporcionada.
-- Como referencia, un modelo de 11,9 B de parametros en precision FP16 requiere aproximadamente 24 GB de VRAM solo para los pesos, por lo que se necesitan GPUs con al menos 24 GB (por ejemplo, RTX 4090, A100) o el uso de cuantizacion para reducir el consumo.
-- El modelo es compatible con la libreria diffusers, por lo que puede desplegarse con vLLM, TGI o directamente con el pipeline de diffusers en un entorno Python.
-- Para inferencia en tiempo real, se recomienda una GPU de alta gama como A100 o H100, aunque con cuantizacion a 8 bits podria ejecutarse en una RTX 3090 o similar.
-- La latencia estimada depende del hardware y del numero de pasos (4), pero no se dispone de mediciones concretas.
+- VRAM estimada para inferencia: el modelo tiene ~11,9 mil millones de parametros. En precision completa (fp32) requeriria aproximadamente 47,6 GB de VRAM; en fp16/bf16, unos 23,8 GB; en cuantizacion de 8 bits, unos 11,9 GB; en 4 bits, unos 6 GB (estimaciones teoricas, no confirmadas en la informacion proporcionada).
+- GPU recomendadas: para fp16 se recomienda una A100 (40 GB o 80 GB) o H100; para cuantizaciones de 8 bits, una RTX 4090 (24 GB) o A6000; para 4 bits, una RTX 3090/4090 o incluso GPUs con 8-12 GB.
+- Cabe en GPU consumer: si, en configuraciones cuantizadas (4 bits) en RTX 3090, RTX 4090 y potencialmente en GPUs con 8 GB si se aplican tecnicas de offloading.
+- Opciones de despliegue: diffusers (FluxPipeline), endpoints de Hugging Face, SageMaker, Azure. No se documenta soporte nativo de vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada (son herramientas orientadas a modelos de lenguaje; para imagen se usaria diffusers o ComfyUI).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. La ventaja de 1-4 pasos sugiere latencias muy inferiores a modelos de 20-50 pasos, pero no se aportan numeros concretos.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa cuantitativa con otros modelos de generacion de imagenes. Sin embargo, a nivel cualitativo, FLUX.1-schnell se posiciona como una alternativa rapida y de alta calidad frente a modelos como Stable Diffusion XL (2,6 B parametros) o Stable Diffusion 3 (8 B parametros), con la ventaja de requerir muchos menos pasos de inferencia. La licencia Apache-2.0 permite uso comercial sin restricciones, a diferencia de otros modelos que imponen limites. No obstante, al carecer de datos de benchmarks, no es posible establecer una comparacion objetiva de rendimiento.
+| Modelo | Parametros | Contexto / pasos | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| FLUX.1-schnell | ~11,9 mil millones | 1-4 pasos de inferencia | Apache 2.0 | Hugging Face (gated) |
+| FLUX.1-dev | no disponible en la informacion | no disponible | no disponible | no disponible |
+| FLUX.1-pro | no disponible en la informacion | no disponible | no disponible (API) | no disponible |
+| Stable Diffusion 3 | no disponible en la informacion | 20-50 pasos tipicos | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta prompts en ingles, lo que limita su uso para descripciones en otros idiomas sin traduccion previa.
-- Al ser un modelo de generacion de imagenes, puede producir contenido que no se corresponda fielmente con la descripcion textual, especialmente en detalles finos o texto dentro de la imagen.
-- El acceso al modelo en Hugging Face es restringido (gated), por lo que los usuarios deben aceptar las condiciones de uso antes de poder descargarlo, aunque la licencia subyacente sea Apache-2.0.
-- No se han publicado evaluaciones de sesgos o riesgos de contenido inapropiado, por lo que se recomienda implementar filtros de contenido en aplicaciones de produccion.
-- Al ser un modelo destilado, puede presentar una menor diversidad o fidelidad en comparacion con su version completa FLUX.1-pro, aunque esta limitacion no esta cuantificada.
+- Sesgos conocidos: al ser un modelo entrenado principalmente en ingles y con datos de internet, puede reproducir sesgos de genero, raza y cultura presentes en los datos de entrenamiento; no se documentan medidas especificas de mitigacion.
+- Riesgo de alucinacion visual: puede generar imagenes con incoherencias (anatomia incorrecta, texto ilegible, artefactos) especialmente en escenas complejas o prompts ambiguos.
+- Limitaciones de idioma: solo se documenta soporte de ingles; los prompts en otros idiomas pueden producir resultados de menor calidad.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero el acceso esta restringido (gated) y requiere aceptar las condiciones en Hugging Face; conviene revisar los terminos de uso del modelo.
+- Caveat para produccion: el modelo esta destilado para pocos pasos, lo que puede limitar la diversidad y el control fino frente a modelos no destilados; para tareas que requieran maxima calidad o control preciso, puede ser preferible un modelo base con mas pasos.
+- No se documentan capacidades de edicion, inpainting o control condicional (como ControlNet) en la informacion proporcionada; su uso en esos escenarios requeriria pipelines adicionales.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/black-forest-labs/FLUX.1-schnell)
-- [Repositorio oficial de inferencia en GitHub](https://github.com/black-forest-labs/flux)
-- [Space de demostracion en Hugging Face](https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell)
-- [Model card en GitHub](https://github.com/black-forest-labs/flux/blob/main/model_cards/FLUX.1-schnell.md)
-- [Pagina del modelo en NVIDIA NIM](https://build.nvidia.com/black-forest-labs/flux_1-schnell/modelcard)
+- Hugging Face: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

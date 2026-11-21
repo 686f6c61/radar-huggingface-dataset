@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Lythri-7B-A4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Lythri-7B-A4B-GGUF",
-      "snippet": "mradermacher / Lythri-7B-A4B-GGUF Like 0 Transformers GGUF English emotional-support companion on-device gemma4 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "team mradermacher - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/models",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
-      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
-      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
-    },
-    {
-      "title": "JoasASantos/Offensive-Security-AI-Models: uncensored LLMs for Offensive ...",
-      "url": "https://imtaqin.id/joasasantos-offensive-security-ai-models-uncensored-llms-for-offensive-security",
-      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. > All data sourced from HuggingFace model cards and official publications. Sep 2026. --- ## Security Fine-tuned Models ### 1. DeepHat V2 (WhiteRabbitNeo) | Spec | Valu..."
-    },
-    {
-      "title": "mradermacher/gemma-4-26B-A4B-it-heretic-ara-i1-GGUF | Hugging Bay",
-      "url": "https://huggingbay.xyz/artifact/hf-model-mradermacher-gemma-4-26b-a4b-it-heretic-ara-i1-gguf",
-      "snippet": "File inventory only. Individually hashed hosted files may be available, but bundle completeness, verification, and runtime state are unknown."
-    }
-  ]
+  "sources": []
 }

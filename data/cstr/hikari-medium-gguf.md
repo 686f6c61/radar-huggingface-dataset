@@ -2,100 +2,103 @@
 
 ## Resumen
 
-Hikari-medium es un modelo de traduccion simultanea de voz y reconocimiento automatico del habla (ASR) en streaming, desarrollado por SB Intuitions y distribuido en este repositorio como conversion al formato GGUF/ggml por el usuario cstr. Se trata de un encoder-decoder basado en Whisper-medium, pero con un encoder causal: cada 80 ms de audio el modelo decide si emite el siguiente token o espera, lo que permite traducir mientras el hablante aun esta hablando. Traduce voz en ingles a texto en aleman, japones o ruso, y tambien realiza transcripcion de ingles.
+Hikari-medium es un modelo de traducción y reconocimiento de voz simultáneo desarrollado por SB Intuitions, distribuido aquí en formato GGUF por el usuario cstr. Se trata de una adaptación de la arquitectura Whisper-medium (encoder-decoder transformer) en la que el encoder ha sido sustituido por un encoder causal: cada 80 ms de audio el modelo decide si emite el siguiente token o espera, lo que permite traducir mientras el hablante sigue hablando en lugar de esperar al final del turno. El modelo traduce voz en inglés a texto en alemán, japonés o ruso, y también transcribe inglés a inglés.
 
-El modelo base (`sbintuitions/hikari-medium`) consta de 763.799.648 parametros (~764 M), una cifra coherente con la arquitectura Whisper-medium. Esta repositorio concreto no aporta pesos nuevos: es una conversion de formato pensada para su uso con el motor CrispASR mediante el backend `--backend hikari`. La relevancia de la ficha esta en que permite ejecutar traduccion simultanea de voz localmente, con licencia MIT y ficheros que caben en GPUs de consumo o incluso en CPU.
+El modelo base cuenta con 763,8 millones de parámetros y esta conversión GGUF está pensada para su uso con CrispASR (`--backend hikari`), una implementación en C/C++ sobre ggml que permite ejecución en CPU y Metal sin dependencias de Python. La relevancia actual reside en la combinación de traducción simultánea de baja latencia con un formato de pesos cuantizado y portable, algo poco habitual en modelos de voz de este tamaño.
 
-La publicacion incluye ficheros en f16 y q8_0, junto con un modelo de deteccion de actividad de voz (Silero VAD) que es obligatorio para el funcionamiento correcto de la politica de espera del modelo. No se publica cuantizacion q4_k porque degrada el encoder de forma inaceptable.
+Esta ficha documenta la conversión GGUF, no el modelo original de SB Intuitions; los pesos F16 son idénticos a los de referencia, mientras que las variantes cuantizadas introducen reglas específicas de cuantización mixta para preservar la calidad del encoder causal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder-decoder tipo Whisper-medium con encoder causal (transformer) |
-| Parametros totales | 763.799.648 (~764 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de voz; procesa audio en pasos de 80 ms) |
-| Tipos de cuantizacion | f16, q8_0 (q4_k no publicado: rompe el encoder, cos_min 0.36) |
+| Arquitectura | Whisper-medium encoder-decoder transformer con encoder causal (streaming) |
+| Parametros totales | 763.799.648 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible (ventana de audio procesada en pasos de 80 ms) |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K (mixta: encoder a Q8_0, decoder a Q4_K) |
 | Idiomas soportados | en (entrada y transcripcion), de, ja, ru (salida de traduccion) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (ggml); fichero auxiliar Silero VAD en formato binario ggml |
+| Formato de pesos | GGUF (ggml) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder-decoder derivado de Whisper-medium, con la diferencia clave de que el encoder es causal. Ese encoder causal permite que el modelo procese el audio de forma incremental: en lugar de necesitar la frase completa, evalua cada bloque de 80 ms y aplica una politica de decision sobre si emitir el siguiente token de texto o seguir esperando mas audio. Esa politica de espera se apoya en la probabilidad de voz proporcionada por Silero VAD; sin ese fichero auxiliar, el modelo apenas emite tokens.
+El modelo parte de Whisper-medium (encoder-decoder transformer) y modifica el encoder para hacerlo causal, de modo que la representación acústica se construye de forma incremental. Sobre esa representación, una política de decisión evalúa cada 80 ms si conviene emitir el siguiente token o mantener el estado de espera (WAIT), lo que habilita la traducción simultánea. La conversión GGUF preserva la topología completa: 24 capas de encoder causal y 24 capas de decoder.
 
-No se dispone en la informacion proporcionada de detalles sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detallan innovaciones adicionales mas alla del encoder causal y la estrategia de emision por pasos. El paper asociado es arXiv:2603.11578 y el codigo de referencia esta en el repositorio `sbintuitions/hikari`.
+No se dispone en la información proporcionada de detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. La model card sí documenta una innovación relevante en el proceso de cuantización: una cuantización Q4_K uniforme rompe el encoder causal (coseno mínimo de 0,36 frente al de referencia), colapsa los márgenes del logit WAIT y provoca repeticiones de palabras; por ello la variante publicada aplica cuantización mixta, con el encoder (`enc.*`) fijado como mínimo en Q8_0 y el decoder en Q4_K. Esta regla está incorporada en la herramienta `crispasr-quantize`.
 
 ## Capacidades
 
-- Traduccion simultanea de voz de ingles a aleman, japones o ruso, emitiendo texto mientras el hablante continua hablando.
-- Transcripcion de voz en ingles (omitiendo el parametro `-tl`).
-- Procesamiento de audio en streaming con pasos de 80 ms y decision de emision incremental.
-- Integracion con deteccion de actividad de voz (VAD) mediante Silero v6.2.0 para gobernar la politica de espera.
-- Ejecucion en CPU y en Metal (Apple), con verificacion de paridad frente a la implementacion de referencia en PyTorch.
-- Soporte de modo por lotes (fichero de audio) y modo en vivo (`--stream`).
-- No se documentan capacidades de tool calling, function calling, agentes, vision, audio de salida ni modo de razonamiento explicito.
+- Reconocimiento automático de voz en inglés (transcripción sin especificar idioma de destino).
+- Traducción simultánea de voz en inglés a texto en alemán, japonés y ruso.
+- Traducción en streaming: emisión de texto mientras el hablante continúa hablando, con granularidad de decisión de 80 ms.
+- Integración con detección de actividad de voz (Silero VAD v6.2.0), cuya probabilidad de habla alimenta la penalización de espera de la política; sin VAD el modelo apenas emite tokens.
+- Ejecución determinista en CPU y Metal con paridad de tokens verificada frente a la implementación de referencia en PyTorch.
+- No se documentan capacidades de tool calling, agentes, visión ni audio más allá de la transcripción y traducción de voz.
 
 ## Casos de uso
 
-- Subtitulado simultaneo de charlas y conferencias: el modelo traduce ingles a aleman, japones o ruso en tiempo casi real, lo que permite mostrar subtitulos mientras el ponente habla sin esperar al final de cada frase.
-- Traduccion en directo para reuniones internacionales: con `--stream --tr-tl de` el texto traducido aparece de forma continua, adecuado para equipos distribuidos que necesitan seguir una reunion en su idioma.
-- Generacion de subtitulos para contenido en ingles: la transcripcion mono-idioma sirve para producir subtitulos en ingles de videos o podcasts sin dependencias de servicios en la nube, gracias a la licencia MIT.
-- Procesamiento por lotes de archivos de audio: para transcribir o traducir bibliotecas de grabaciones de forma local, con ficheros f16 de 1,53 GB que caben en equipos modestos.
-- Investigacion en traduccion simultanea: al ser una conversion de pesos con comparacion por etapas frente a una referencia, resulta util como banco de pruebas reproducible de politicas de emision y del efecto de la cuantizacion en un encoder causal.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente y sin llamadas a APIs externas, encaja en escenarios donde el audio no puede salir del equipo, como grabaciones medicas o legales en ingles.
-- Experimentacion con VAD y politicas de streaming: el acoplamiento con Silero VAD y el parametro de penalizacion de espera permiten estudiar el equilibrio entre latencia y calidad de traduccion.
+- Subtitulado en directo de conferencias en inglés hacia alemán, japonés o ruso: el modelo emite texto mientras el ponente habla, lo que reduce el retardo frente a pipelines de transcripción seguidos de traducción por lotes.
+- Interpretación simultánea en reuniones multilingües: con CrispASR en modo `--stream` y `--tr-tl`, el texto traducido aparece en tiempo real sobre la señal de audio en inglés.
+- Generación de subtítulos para contenido grabado con requisitos de latencia moderada: en Apple M1 Metal el modelo transcribe a 0,5x tiempo real (un clip de 11 s en unos 20 s) con refresco estridado del encoder (K=16), suficiente para procesamiento por lotes cercano al tiempo real.
+- Despliegue en entornos sin GPU dedicada: las variantes Q8_0 (873 MB) y Q4_K (636 MB) permiten ejecución en CPU con paridad de transcripción verificada en el clip de prueba jfk (161/161 pasos).
+- Traducción de voz a texto en aplicaciones de accesibilidad: conversión de audio en inglés a texto alemán, japonés o ruso para usuarios que necesitan seguir contenido hablado en otro idioma.
+- Prototipado e investigación en traducción simultánea: la implementación de referencia en `tools/reference_backends/hikari.py` y la herramienta `crispasr-diff` permiten comparar etapa por etapa (mel, encoder, logits del decoder, pasos de streaming) frente a los pesos GGUF.
+- Integración en pipelines de transcripción existentes vía CLI de CrispASR, con selección de modelo automático (`-m auto`) que descarga los pesos F16 y el VAD de Silero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, WER, BLEU u otros) en la informacion disponible. La model card unicamente aporta datos de fidelidad frente a la implementacion de referencia en PyTorch, comparando etapa por etapa con la herramienta `crispasr-diff hikari`:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, WER) en la información disponible. La model card incluye verificaciones de paridad frente a la implementación de referencia en PyTorch:
 
-| Clip (en->de) | mel | encoder cos_min | decoder logits cos_min | pasos de streaming | texto |
+| Clip (en→de) | Mel | Encoder cos_min | Decoder logits cos_min | Pasos de streaming | Texto |
 |---|---|---|---|---|---|
-| jfk.wav (11 s) | 1.000000 | 0.99978 | 0.99956 (argmax 164/164) | 161/161 | identico |
-| jfk 0-4 s | 1.000000 | 0.99961 | 0.99996 (51/51) | 48/48 | identico |
+| jfk.wav (11 s) | 1,000000 | 0,99978 | 0,99956 (argmax 164/164) | 161/161 | idéntico |
+| jfk 0–4 s | 1,000000 | 0,99961 | 0,99996 (51/51) | 48/48 | idéntico |
 
-Para el fichero `hikari-medium-q8_0.gguf` la model card indica mismo texto en jfk (159/161 pasos); en Apple Metal cambio una frase alemana de un clip de 27 s, mientras que en CPU no. El fichero f16 se describe como exacto frente a la referencia.
+Datos de velocidad y cuantización documentados:
 
-En cuanto a velocidad, sobre un Apple M1 con Metal se reporta 1,8 s de computo por segundo de audio (aproximadamente 87 ms de encoder y 58 ms de decoder por cada paso de 80 ms), mas lento en CPU, por lo que no alcanza aun tiempo real en ese hardware. Upstream sirve el modelo en A100/H100.
+| Variante | Tamaño | Paridad observada |
+|---|---|---|
+| F16 | 1,53 GB | Exacta en todos los pasos y texto; misma salida en CPU y Metal |
+| Q8_0 | 873 MB | Mismo texto en jfk (159/161 pasos); en Metal cambió una frase alemana de un clip de 27 s, en CPU no |
+| Q4_K (mixta) | 636 MB | Transcripción inglesa exacta en jfk (161/161 pasos) y traducción alemana coherente; 58% menor que F16 y 27% menor que Q8_0 |
+
+Velocidad: con refresco estridado del encoder (K=16 por defecto), la transcripción en Apple M1 Metal alcanza 0,5x tiempo real, una mejora de 3,4x sobre la línea base sin estridado, preservando la paridad completa de tokens.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,6-2 GB con f16 (pesos de 1,53 GB mas overhead) y alrededor de 1-1,2 GB con q8_0 (873 MB de pesos); hay que anadir el pequeno fichero de Silero VAD (0,9 MB).
-- GPU recomendadas: A100 o H100 segun el despliegue de referencia de upstream; para ejecucion local basta una GPU de gama media o integrada, dado el reducido tamano del modelo.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con 2 GB de VRAM libre o mas; tambien se ha validado en Apple Metal (M1).
-- Opciones de despliegue: CrispASR con `--backend hikari` (compilacion via CMake). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que es un backend especifico de voz y no un modelo de texto generico.
-- Latencia y throughput: en Apple M1 con Metal, 1,8 s de computo por segundo de audio, con 87 ms de encoder y 58 ms de decoder por paso de 80 ms. En CPU es mas lento. Se espera mejor rendimiento en GPUs mas rapidas.
-- Requisito adicional: el fichero `ggml-silero-v6.2.0.bin` es necesario; sin su probabilidad de voz, la politica de espera apenas emite tokens.
+- VRAM estimada: no disponible de forma explícita; por tamaño de pesos, F16 requiere aproximadamente 1,53 GB, Q8_0 unos 873 MB y Q4_K unos 636 MB, más overhead de runtime y del VAD de Silero (0,9 MB).
+- GPU recomendadas: no se especifican en la información disponible; la model card solo documenta ejecución verificada en CPU y Apple Metal (M1).
+- Compatibilidad con GPU de consumo: no confirmada; el tamaño de los pesos es compatible con GPUs de consumo, pero no hay datos publicados de ejecución en RTX 4090 u otras.
+- Opciones de despliegue: CrispASR (backend `hikari`) sobre ggml, con binarios `crispasr` y `crispasr-quantize`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,5x tiempo real en Apple M1 Metal con stride K=16; sin datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Enfoque | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| cstr/hikari-medium-GGUF | ~764 M | Traduccion simultanea en streaming, encoder causal | en, de, ja, ru | MIT | GGUF (f16, q8_0) |
-| sbintuitions/hikari-medium | ~764 M | Modelo base, misma arquitectura | en, de, ja, ru | MIT | Pesos PyTorch (original) |
-| OpenAI Whisper-medium | ~769 M (dato publico general) | ASR y traduccion offline con encoder no causal | multilingue | MIT | safetensors, GGUF (comunidad) |
+No se dispone en la información proporcionada de comparaciones con modelos alternativos de traducción simultánea o streaming ASR. La model card únicamente referencia el modelo base `sbintuitions/hikari-medium` como origen de los pesos y Whisper-medium como arquitectura de partida, sin ofrecer métricas comparativas frente a otras alternativas.
 
-La diferencia funcional principal frente a Whisper-medium es el caracter causal del encoder: Whisper funciona en modo offline y necesita la frase completa, mientras que hikari-medium emite tokens de forma incremental, lo que habilita la traduccion simultanea. No se dispone de datos de benchmarks comparativos de calidad (WER/BLEU) entre estos modelos en la informacion proporcionada, por lo que la comparacion de rendimiento queda como no disponible.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Hikari-medium GGUF (esta ficha) | 763,8 M | no disponible | MIT | GGUF vía CrispASR |
+| sbintuitions/hikari-medium | 763,8 M | no disponible | MIT | Pesos originales en PyTorch |
+| Alternativas de streaming ASR | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La traduccion simultanea introduce una latencia intrinseca y puede degradar la calidad respecto a un enfoque offline, ya que el modelo debe decidir cuando emitir sin conocer el final de la frase.
-- El fichero q8_0 mostro discrepancias menores frente a la referencia (un cambio de frase en Metal en un clip de 27 s); el f16 se describe como exacto.
-- No se publica cuantizacion q4_k: degrada el encoder (cos_min 0.36) y altera el texto.
-- La dependencia de Silero VAD es obligatoria; sin el fichero, el modelo casi no emite tokens.
-- Cobertura de idiomas limitada: solo entrada en ingles y salida en aleman, japones o ruso (o transcripcion en ingles). No hay soporte de espanol ni de otras lenguas.
-- No alcanza tiempo real en Apple M1 (1,8 s de computo por segundo de audio); en CPU es aun mas lento.
-- El repositorio no registra descargas ni likes, y la fecha indicada de creacion es 2026-10-06, lo que sugiere un artefacto reciente y poco validado por la comunidad.
-- Riesgo de alucinacion o de traducciones incorrectas no cuantificado: no se aportan metricas de calidad sobre corpus amplios.
-- Licencia MIT, sin restricciones conocidas para uso comercial, pero conviene verificar la licencia del modelo base y del codigo asociado antes de desplegar en produccion.
-- Al ser una conversion de formato, la responsabilidad sobre el comportamiento queda ligada a la implementacion de CrispASR y a sus dependencias.
+- El modelo solo acepta voz en inglés como entrada; las salidas de traducción se limitan a alemán, japonés y ruso, además de la transcripción en inglés.
+- La dependencia del VAD de Silero es crítica: sin él, la probabilidad de habla no alimenta la penalización de espera y el modelo apenas emite tokens.
+- La cuantización Q4_K uniforme degrada gravemente el encoder causal (coseno mínimo 0,36, colapso de márgenes WAIT y repeticiones); debe usarse la variante mixta publicada o la regla de cuantización de `crispasr-quantize`.
+- La variante Q8_0 mostró una discrepancia de texto en Metal (una frase alemana de un clip de 27 s) que no se reproduce en CPU; la variante F16 es la única con paridad exacta verificada en ambas plataformas.
+- No hay datos publicados sobre sesgos, tasas de alucinación ni robustez ante acentos o ruido de fondo.
+- No se documentan resultados de benchmarks estándar de ASR (WER) ni de traducción (BLEU, COMET), por lo que la calidad real frente a alternativas no puede evaluarse con los datos disponibles.
+- La licencia MIT permite uso comercial, pero esta ficha cubre una conversión de formato; conviene verificar la licencia del modelo base y del código de CrispASR por separado.
+- El rendimiento medido (0,5x tiempo real en M1 Metal) puede ser insuficiente para aplicaciones de baja latencia estricta en hardware menos potente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/cstr/hikari-medium-GGUF
+- Repositorio GGUF: https://huggingface.co/cstr/hikari-medium-GGUF
 - Modelo base: https://huggingface.co/sbintuitions/hikari-medium
 - Paper: https://arxiv.org/abs/2603.11578
-- Codigo upstream: https://github.com/sbintuitions/hikari
-- Motor CrispASR: https://github.com/CrispStrobe/CrispASR
+- Código upstream: https://github.com/sbintuitions/hikari
+- Implementación CrispASR: https://github.com/CrispStrobe/CrispASR
+- Licencia del modelo base: https://github.com/sbintuitions/hikari/blob/main/LICENSE

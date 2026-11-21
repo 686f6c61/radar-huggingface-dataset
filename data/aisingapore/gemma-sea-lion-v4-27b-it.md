@@ -2,85 +2,94 @@
 
 ## Resumen
 
-Gemma-SEA-LION-v4-27B-IT es un modelo de lenguaje de gran tamaño desarrollado por el AI Products Pillar de AI Singapore, dentro de la familia SEA-LION (Southeast Asian Languages In One Network). Se trata de una versión instruida (instruction-tuned) del modelo base Gemma-SEA-LION-v4-27B, que a su vez es una adaptación de Gemma 3 27B de Google con entrenamiento continuado en idiomas del Sudeste Asiático. El post-entrenamiento se realizó sobre aproximadamente 10 millones de pares de preguntas y respuestas en birmano, inglés, indonesio, khmer, lao, malayo, tagalo, tamil, tailandés y vietnamita, lo que lo convierte en una opción relevante para aplicaciones multilingües en esa región.
+Gemma-SEA-LION-v4-27B-IT es un modelo de lenguaje de 27.432 millones de parámetros desarrollado por AI Singapore (AI Products Pillar) y financiado por el Singapore NRF. Se trata de un ajuste fino por instrucciones del modelo base aisingapore/Gemma-SEA-LION-v4-27B, que a su vez parte de la arquitectura Gemma 3. Su objetivo es cubrir las necesidades de las lenguas del sudeste asiático, una región tradicionalmente infrarrepresentada en los grandes modelos abiertos.
 
-El modelo hereda de Gemma 3 una ventana de contexto de 128.000 tokens, capacidades de comprensión de imagen y texto (incluyendo lectura de documentos, respuesta visual a preguntas y razonamiento sobre imágenes), así como soporte avanzado de function calling y salidas estructuradas. Con 27.432 millones de parámetros, se posiciona como un modelo de tamaño medio-grande que, según sus desarrolladores, supera a otros modelos abiertos de menos de 200.000 millones de parámetros en tareas específicas del Sudeste Asiático, con un rendimiento comparable al de modelos cerrados de mayor tamaño. La licencia es la de Gemma Terms of Use, que permite uso comercial bajo ciertas condiciones.
+El modelo hereda del Gemma 3 de Google una ventana de contexto de 128.000 tokens, capacidades multimodales de imagen y texto (comprensión de documentos, VQA y razonamiento sobre imágenes) y soporte avanzado de function calling y salidas estructuradas. Sobre esa base, AI Singapore ha realizado un post-entrenamiento con aproximadamente 10 millones de pares de pregunta-respuesta en birmano, inglés, indonesio, jemer, lao, malayo, tagalo, tamil y vietnamita.
+
+Es relevante ahora porque, según la model card, el modelo destaca en tareas del sudeste asiático frente a otros modelos abiertos de menos de 200.000 millones de parámetros y se aproxima al rendimiento de modelos cerrados de mayor tamaño. Su licencia MIT facilita la adopción comercial, y el aviso de nueva versión (Qwen-SEA-LION-v4.5-27B-IT) indica que la familia sigue evolucionando.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder-only basado en Gemma 3 (transformer) |
+| Arquitectura | Transformer decoder (arquitectura Gemma 3) |
 | Parametros totales | 27.432.406.640 |
-| Parametros activos | No aplica (modelo denso) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 128.000 tokens |
-| Tipos de cuantizacion | No disponible (el repositorio publica pesos en safetensors, bfloat16) |
-| Idiomas soportados | Birmano, ingles, indonesio, khmer, lao, malayo, mandarin, tagalo, tamil, tailandes, vietnamita (ademas de los heredados de Gemma 3, que cubre mas de 100 idiomas) |
-| Licencia | Gemma Terms of Use |
-| Formato de pesos | safetensors |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh, vi, id, th, fil, ta, ms, km, lo, my, jv, su (birmano, inglés, indonesio, jemer, lao, malayo, mandarín, tagalo, tamil, tailandés, vietnamita, javanés, sondanés) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (repo de 54,9 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Gemma 3 27B, un transformer decoder-only con atención multi-consulta y ventana de contexto de 128.000 tokens. El proceso de entrenamiento consta de dos fases: primero, el modelo base Gemma-SEA-LION-v4-27B se obtuvo mediante entrenamiento continuado sobre aproximadamente 500.000 millones de tokens muestreados de un conjunto de más de un billón de tokens en 11 idiomas del Sudeste Asiático. Posteriormente, para crear la versión IT, se realizó un post-entrenamiento con datasets de instrucciones como SEA-Instruct, Infinity-Instruct y OpenMath-Instruct 2, complementados con datasets de RL como nvidia/Llama-Nemotron-Post-Training-Dataset y zwhe99/DeepMath-103K, utilizando pares rechazados-elegidos para alineación. No se especifican detalles sobre el uso de RLHF o DPO, pero la mención de pares rechazados-elegidos sugiere un enfoque de optimización por preferencias.
+El modelo es un decoder transformer basado en la arquitectura Gemma 3, con el tokenizador por defecto de Gemma 3 27B IT. Sobre el checkpoint base Gemma-SEA-LION-v4-27B se aplicó un post-entrenamiento por instrucciones (fine-tuning) empleando un conjunto de aproximadamente 10 millones de pares QA en birmano, inglés, indonesio, jemer, lao, malayo, tagalo, tamil y vietnamita. La receta de datos combina SEA-Instruct, Infinity-Instruct y OpenMath-Instruct 2 con datasets de código abierto.
 
-El tokenizador es el mismo que el de Gemma 3 27B IT, por lo que no se introdujeron cambios en la segmentación de tokens. Las capacidades de visión se heredan directamente de Gemma 3, ya que el entrenamiento adicional se centró exclusivamente en el backend de texto.
+Para la fase de RL online se usaron conjuntos abiertos como nvidia/Llama-Nemotron-Post-Training-Dataset (split RL) y zwhe99/DeepMath-103K. Para la alineación se generaron pares rejected-chosen a partir de los datos de entrenamiento. La model card advierte que las cifras de datos y cómputo reflejan exactamente la ejecución de producción de este checkpoint y pueden diferir de los totales agregados o de los pools pre-filtrados publicados en los papers asociados. Destaca la herencia de las capacidades de Gemma 3: contexto de 128K, comprensión de imagen y texto, function calling y salidas estructuradas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multilingüe, con especial énfasis en idiomas del Sudeste Asiático (birmano, indonesio, khmer, lao, malayo, tagalo, tamil, tailandés, vietnamita, además de inglés y mandarín).
-- Comprensión de imágenes y texto: lectura de documentos, respuesta visual a preguntas y razonamiento basado en imágenes, heredado de Gemma 3 27B IT.
-- Function calling y salidas estructuradas, lo que permite integración en sistemas más grandes y flujos de trabajo automatizados.
-- Ventana de contexto de 128.000 tokens, adecuada para tareas que requieren procesar documentos largos o conversaciones multi-turno extensas.
-- Capacidades matemáticas y de código, reforzadas mediante datasets como OpenMath-Instruct 2 y DeepMath-103K.
-- Soporte de agentes y razonamiento multi-paso, gracias a la combinación de function calling y contexto largo.
+- Generación de texto y razonamiento conversacional multi-turno en 13 idiomas, con especial foco en las lenguas del sudeste asiático.
+- Comprensión de imagen y texto: lectura de documentos, VQA (visual question answering) y razonamiento basado en imágenes, heredados de Gemma 3 27B IT.
+- Function calling y salidas estructuradas para integración en sistemas externos.
+- Razonamiento matemático, reforzado mediante OpenMath-Instruct 2 y DeepMath-103K durante el post-entrenamiento.
+- Capacidades multilingües nativas en birmano, inglés, indonesio, jemer, lao, malayo, mandarín, tagalo, tamil, tailandés, vietnamita, javanés y sondanés.
+- Soporte de agentes y razonamiento multi-paso a través de las capacidades de tool calling y contexto largo.
+- Compatible con text-generation-inference y endpoints compatibles.
 
 ## Casos de uso
 
-- Atención al cliente multilingüe en el Sudeste Asiático: el modelo puede gestionar conversaciones multi-turno en tailandés, vietnamita, indonesio o tagalo, con una ventana de 128.000 tokens que permite mantener el historial completo de la interacción. Su soporte de function calling facilita la integración con sistemas de ticketing o bases de conocimiento.
-- Generación de contenido localizado: redacción de artículos, publicaciones en redes sociales o materiales de marketing en idiomas como malayo, khmer o birmano, con un registro culturalmente apropiado gracias al entrenamiento específico en la región.
-- Traducción y transcreación: traducción automática entre idiomas del Sudeste Asiático y el inglés, con capacidad de manejar documentos extensos de una sola pasada gracias al contexto largo.
-- Análisis de documentos con visión: extracción de información de facturas, formularios o contratos escaneados en idiomas locales, combinando la comprensión de imágenes heredada de Gemma 3 con el conocimiento lingüístico regional.
-- Asistentes de código para equipos de desarrollo en la región: generación y revisión de código con comentarios y documentación en idiomas locales, aprovechando el entrenamiento en datasets de instrucciones y matemáticas.
-- Educación y tutoría: creación de materiales didácticos, ejercicios de práctica y explicaciones en tailandés, vietnamita o indonesio, con capacidad de adaptar el nivel de detalle según el estudiante.
-- Agentes conversacionales para comercio electrónico: recomendación de productos, seguimiento de pedidos y resolución de incidencias en múltiples idiomas, con integración mediante function calling a APIs de backend.
+- Atención al cliente en mercados del sudeste asiático: el modelo puede gestionar conversaciones multi-turno en indonesio, tailandés, vietnamita o tagalo con 128K tokens de contexto, lo que permite mantener el historial completo de una sesión larga sin truncar.
+- Procesamiento de documentos con OCR asistido: gracias a la comprensión de imagen y texto, puede extraer y razonar sobre documentos escaneados en jemer, lao o birmano, idiomas con recursos limitados en otros modelos.
+- Generación de código y automatización de pipelines: el soporte de function calling y salidas estructuradas permite integrarlo en flujos CI/CD o como orquestador de herramientas en agentes.
+- Localización de contenidos: traducción y adaptación cultural de materiales entre inglés y las lenguas SEA, incluyendo pares de baja representación como tamil-malayo o sondanés-indonesio.
+- Asistentes educativos multilingües: tutoría en matemáticas y ciencias apoyada en las capacidades de razonamiento matemático reforzadas durante el entrenamiento.
+- Análisis de documentos regulatorios y legales: la ventana de 128K permite procesar contratos o normativas extensas en inglés y lenguas locales en una sola pasada.
+- Sistemas de accesibilidad: descripción de imágenes y VQA para usuarios en idiomas del sudeste asiático, aprovechando la herencia multimodal de Gemma 3.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma que el modelo "sobresale en tareas del Sudeste Asiático comparado con otros modelos abiertos de menos de 200.000 millones de parámetros" y que demuestra "rendimiento comparable al de modelos cerrados más grandes", pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros benchmarks. Se remite al leaderboard de SEA-LION (https://leaderboard.sea-lion.ai/) para consultar rankings detallados, pero esos datos no están incluidos en la información facilitada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que, a fecha de 25 de agosto de 2025, el modelo destaca en tareas del sudeste asiático frente a modelos abiertos de menos de 200.000 millones de parámetros y ofrece un rendimiento comparable al de modelos cerrados de mayor tamaño, pero remite al leaderboard externo (https://leaderboard.sea-lion.ai/) para las cifras detalladas, que no se incluyen en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 27.432 millones de parámetros. En bfloat16 (formato de los pesos publicados), ocupa aproximadamente 54,9 GB, por lo que se necesitan al menos 80 GB de VRAM para cargarlo sin cuantización. Con cuantización de 8 bits, la huella se reduce a unos 28-30 GB, y con 4 bits a unos 14-16 GB, aunque no se han publicado pesos cuantizados oficiales.
-- GPU recomendadas: para inferencia en bfloat16, se requieren GPUs de clase profesional como NVIDIA A100 80GB, H100 80GB o A6000 48GB (con dos unidades). Para cuantización de 8 bits, una RTX 4090 (24 GB) o RTX 6000 Ada (48 GB) pueden ser suficientes. Con cuantización de 4 bits, cabría en GPUs consumer de 16 GB como la RTX 4080 o 4070 Ti Super.
-- Opciones de despliegue: compatible con el ecosistema de Hugging Face Transformers, así como con servidores de inferencia como vLLM, Text Generation Inference (TGI) y llama.cpp (si se generan pesos GGUF). También puede desplegarse mediante Ollama si se convierte el modelo.
-- Latencia y throughput: no se han publicado datos específicos. Como referencia, un modelo de 27B en una A100 80GB con vLLM suele alcanzar un throughput de 20-40 tokens por segundo por petición, dependiendo del tamaño del lote y la longitud de la secuencia.
+- VRAM estimada para inferencia: con pesos en bfloat16 (27.432 millones de parámetros) se requieren aproximadamente 55 GB, coherente con el tamaño del repo (54,9 GB). En cuantización de 8 bits bajaría a unos 27-28 GB y en 4 bits a unos 14-15 GB (estimaciones, ya que la model card no publica cuantizaciones oficiales).
+- GPU recomendadas: para bfloat16 se necesita una GPU con al menos 80 GB (A100 80GB, H100 80GB) o varias GPUs con tensor parallelism. Para cuantización 4-8 bits puede ejecutarse en una RTX 4090 (24 GB) con 8 bits ajustado o en 4 bits con margen.
+- Cabe en GPU de consumo: sí, en 4 bits en GPUs de 24 GB como la RTX 4090 o la RTX 3090; en 8 bits requiere al menos 32 GB.
+- Opciones de despliegue: transformers (pipeline estándar), text-generation-inference (TGI), endpoints compatibles de Hugging Face. La model card no menciona explícitamente llama.cpp, Ollama o vLLM, por lo que su soporte no está confirmado en la información disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Notas |
-|---|---|---|---|---|---|
-| Gemma-SEA-LION-v4-27B-IT | 27,4B | 128k | 11 idiomas SEA + inglés + mandarín | Gemma Terms of Use | Post-entrenado específicamente para SEA |
-| Gemma 3 27B IT | 27,4B | 128k | Más de 100 idiomas (incluye algunos SEA) | Gemma Terms of Use | Modelo base sin adaptación específica a SEA |
-| Qwen2.5-27B-Instruct | 27,5B | 128k (con YaRN) | Multilingüe, incluye vietnamita, indonesio, tailandés | Apache 2.0 | Buen rendimiento general, pero sin enfoque específico en SEA |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Gemma-SEA-LION-v4-27B-IT | 27,4 mil millones | 128K | MIT | Multimodal, 13 idiomas SEA, function calling |
+| google/gemma-3-27b-it | 27 mil millones (aprox.) | 128K | Términos de Gemma (no MIT) | Modelo base; capacidades de visión equivalentes según la model card |
+| aisingapore/Qwen-SEA-LION-v4.5-27B-IT | no disponible | no disponible | no disponible | Nueva versión indicada por el autor; sustituye a esta ficha según la model card |
 
-La comparativa se basa en características generales conocidas de estos modelos, ya que no se dispone de resultados de benchmarks comparativos en la información proporcionada. El valor diferencial de Gemma-SEA-LION-v4-27B-IT reside en su entrenamiento específico en idiomas del Sudeste Asiático, que debería traducirse en mejor rendimiento en tareas en birmano, khmer, lao o tagalo, idiomas que otros modelos multilingües suelen cubrir de forma más limitada.
+La model card sitúa al modelo por delante de otros modelos abiertos de menos de 200.000 millones de parámetros en tareas SEA, pero no proporciona cifras concretas para una comparación numérica. El modelo base Gemma 3 27B IT comparte arquitectura y contexto, pero la licencia de Gemma impone restricciones de uso que la MIT de SEA-LION no tiene.
 
 ## Limitaciones y advertencias
 
-- El modelo no ha sido alineado para seguridad. Los desarrolladores advierten explícitamente que no se ha realizado un ajuste de seguridad y que los usuarios deben llevar a cabo su propio fine-tuning de seguridad y medidas de protección antes de su uso en producción.
-- Riesgo de alucinación: como muchos LLM, el modelo puede generar contenido ficticio o no fundamentado en el contexto proporcionado. Se recomienda validar las respuestas en aplicaciones críticas.
-- No se ha probado su robustez frente a ataques adversariales (prompt injection, jailbreaks, etc.), lo que supone un riesgo adicional en entornos expuestos.
-- Las capacidades de visión no han sido mejoradas respecto a Gemma 3 27B IT, ya que el entrenamiento adicional se centró exclusivamente en el texto. No se esperan mejoras significativas en tareas visuales.
-- La licencia Gemma Terms of Use impone restricciones de uso comercial: no se permite su uso en aplicaciones que violen las políticas de uso prohibido de Google, y existen limitaciones sobre el uso de los modelos para entrenar otros modelos de lenguaje. Es necesario revisar los términos completos antes de su despliegue comercial.
-- El modelo está optimizado para idiomas del Sudeste Asiático, por lo que su rendimiento en otros idiomas (especialmente los no cubiertos por Gemma 3) puede ser inferior al de modelos multilingües generales.
-- El tamaño del modelo (27B parámetros) requiere infraestructura de hardware considerable para inferencia en producción, lo que puede ser una barrera para equipos pequeños.
+- El modelo no ha sido alineado para seguridad; los desarrolladores deben aplicar su propio fine-tuning de seguridad y medidas de protección.
+- No se probó la robustez frente a prompting adversarial.
+- Riesgo de alucinación: puede generar contenido irrelevante o ficticio no fundamentado en el contexto, como otros LLM.
+- Las capacidades de visión se entrenaron y ajustaron exclusivamente sobre el backend de texto; se espera que sean comparables a Gemma 3 IT 27B sin mejoras significativas en visión.
+- Las cifras de datos y cómputo de la model card reflejan la ejecución de producción y pueden diferir de los papers y datasets públicos.
+- La model card indica que existe una nueva versión (Qwen-SEA-LION-v4.5-27B-IT), por lo que este checkpoint puede quedar desactualizado.
+- Licencia MIT: permite uso comercial, pero el autor declina toda responsabilidad por daños derivados del uso de los pesos.
+- La cobertura idiomática se limita a los 13 idiomas listados; el rendimiento en otras lenguas no está garantizado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT
-- Modelo base en Hugging Face: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B
-- Repositorio GitHub de SEA-LION: https://github.com/aisingapore/sealion.git
-- Documentación de SEA-LION v4: https://docs.sea-lion.ai/models/sea-lion-v4
-- Documentación específica de Gemma-SEA-LION-v4-27B: https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b
-- Leaderboard de SEA-LION: https://leaderboard.sea-lion.ai/
-- Gemma 3 27B IT (modelo base original): https://huggingface.co/google/gemma-3-27b-it
+- Hugging Face: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT
+- Modelo base: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B
+- Nueva versión: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT
+- Repositorio GitHub: https://github.com/aisingapore/sealion.git
+- Leaderboard SEA-LION: https://leaderboard.sea-lion.ai/
+- Gemma 3 27B IT: https://huggingface.co/google/gemma-3-27b-it
+- Licencia MIT: https://mit-license.org/
+- Paper referenciado (arxiv:2502.14301): https://arxiv.org/abs/2502.14301
+- Paper referenciado (arxiv:2311.07911): https://arxiv.org/abs/2311.07911
+- Paper referenciado (arxiv:2306.05685): https://arxiv.org/abs/2306.05685
+- Paper referenciado (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

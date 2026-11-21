@@ -2,109 +2,113 @@
 
 ## Resumen
 
-Qwen3.5-4B-Salieri es un modelo de 4B parámetros especializado en agentes de ingeniería de software, desarrollado por el usuario Jitheswar como un ajuste fino de Jitheswar/Qwen3.5-4B-Amadeus, a su vez una versión abliterated de Qwen/Qwen3.5-4B del equipo Qwen. El modelo está entrenado para operar como agente autónomo de SWE: explorar un repositorio mediante herramientas, localizar la causa de un issue, editar código, ejecutar tests y enviar un parche.
+Qwen3.5-4B-Salieri es un modelo de 4.539 millones de parámetros (4B) especializado en tareas de agente de ingeniería de software, desarrollado por el usuario Jitheswar. Deriva de Jitheswar/Qwen3.5-4B-Amadeus, una versión "abliterated" (sin mecanismos de rechazo) de Qwen/Qwen3.5-4B, y se ha afinado mediante dos rondas de DPO a nivel de paso (step-level DPO) para que actúe como agente autónomo: explorar un repositorio con herramientas, localizar la causa de un issue, editar código, ejecutar tests y enviar un parche.
 
-La arquitectura es la del Qwen3.5-4B original (transformer híbrido con torre de visión intacta, contexto de 262K y modo thinking nativo), sobre la que se aplica un ajuste DPO a nivel de paso contra bucles de acciones. El modelo conserva el formato nativo de tool calling de Qwen3.5 y el soporte multimodal image-text-to-text.
+El modelo conserva la arquitectura híbrida de Qwen3.5, el formato nativo de tool calling, una ventana de contexto de 262K tokens y la torre de visión del modelo base (no modificada durante el entrenamiento). Su relevancia actual radica en que demuestra que un modelo de solo 4B, mediante DPO iterado sobre estados de agente, puede mejorar de forma medible en tareas SWE reales (resolución de issues de GitHub con tests ocultos) y en benchmarks de código e instrucciones, sin recurrir a "benchmaxing": el autor eliminó explícitamente del entrenamiento toda trayectoria proveniente de repositorios presentes en los conjuntos de evaluación.
 
-Es relevante porque aborda un problema concreto y bien documentado en agentes pequeños: la reemisión exacta de la misma llamada a herramienta. El autor reporta una reducción del 6,3% al 0,4% en tasa de repeticiones exactas dentro de presupuesto en el split de desarrollo, con mejoras en LiveCodeBench v6 (34,0 a 42,9) e IFEval prompt-strict (61,4 a 74,9) respecto a su base.
+La versión actual (`main`, v2) aplica una segunda ronda de DPO sobre v1 con 246 nuevos pares, aceptada bajo una regla predefinida antes de ver los resultados en held-out. Se distribuye con licencia Apache-2.0, pesos en safetensors y cuantizaciones GGUF, y está pensado para integrarse en arneses de agente compatibles con OpenAI mediante vLLM.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido de Qwen3.5-4B (con torre de visión y modo thinking) |
-| Parámetros totales | 4.539.265.536 (4,54B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262K (entrenado por el base); el ejemplo de despliegue usa `--max-model-len 65536` |
-| Tipos de cuantización | BF16, Q8_0, Q6_K, Q4_K_M (+ mmproj para visión) en GGUF; LoRA bf16 r64 para entrenamiento |
-| Idiomas soportados | Inglés (en), chino (zh), multilingüe |
+| Arquitectura | Transformer híbrido de Qwen3.5 (con thinking híbrido, tool calling nativo y torre de visión); detalles internos de capas no disponibles |
+| Parámetros totales | 4.539.265.536 (≈4,54B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262K tokens (262.144) |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q4_K_M (+ mmproj para visión) en GGUF |
+| Idiomas soportados | en, zh, multilingual |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (transformers) y GGUF (llama.cpp / LM Studio / Ollama) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, un transformer híbrido con decodificación thinking, formato nativo de tool calling y una torre de visión que el ajuste no modifica. Sobre esa base abliterated (Amadeus) se aplica un DPO a nivel de paso (step-level) contra bucles de acciones, con un término de NLL sobre la secuencia elegida (RPO). Los pares se construyeron a partir de 558 estados de rollouts de agente en los que un modelo empezaba a repetirse; un profesor Qwen3.8-27B generó el siguiente paso en el mismo contexto (4 muestras, conservando una llamada limpia distinta de la repetición), produciendo 448 pares con elegido = paso del profesor y rechazado = la repetición.
+El modelo parte de Qwen3.5-4B (Apache-2.0), pasado por una abliteración que da lugar a Qwen3.5-4B-Amadeus, y conserva las características del base: modo de razonamiento híbrido (thinking), formato nativo de tool calling, contexto de 262K tokens y torre de visión intacta. El ajuste se realizó con dos rondas de DPO a nivel de paso, ambas con LoRA r64 en bf16 mediante Unsloth, beta 0.1 y término NLL de 0.2 (RPO), 2 épocas y learning rate 1e-5, usando únicamente tareas del pool de entrenamiento (sin repositorios de dev, held-out, OOD ni lockbox).
 
-El entrenamiento usó DPO con beta 0.1 más 0.2 de NLL sobre el elegido, LoRA bf16 r64 con Unsloth, 2 épocas y learning rate 1e-5, tomando como referencia el modelo base. El 10% de las sesiones se reservó para validación, con una precisión de pares de 0.95. Los datos de tareas provienen de nvidia/Open-SWE-Traces (CC-BY-4.0, tareas de Scale-SWE y SWE-rebench-V2). El autor declara explícitamente que no se usaron repositorios de benchmark en entrenamiento (se descartaron más de 522 trayectorias de repos presentes en cualquier conjunto de evaluación) y que la selección de checkpoints se hizo solo sobre splits de desarrollo.
+La primera ronda (v1) ataca el problema de los bucles de acción: los agentes pequeños repiten exactamente la misma llamada a herramienta. Se recogieron 558 estados de repetición a partir de rollouts del pool de entrenamiento y Qwen3.8-27B generó el siguiente paso correcto en el mismo contexto (4 muestras, conservando una llamada limpia distinta de la repetida), produciendo 448 pares con el paso del profesor como elegido y la repetición como rechazado, con el modelo base como referencia. La precisión en pares held-out fue de 0,95 y la tasa de repetición exacta dentro de presupuesto cayó del 6,3% al 0,4% en dev. La segunda ronda (v2) añade 246 pares con v1 como referencia: 234 estados de bucle de rollouts de otro checkpoint (fine-tune completo) más 12 estados de "compromiso con la edición" en los que el agente había explorado 30+ llamadas sin editar y el profesor eligió editar en al menos 2 de 4 muestras; precisión held-out de 0,96.
+
+Como innovación metodológica destaca la disciplina anti-benchmaxing: se descartaron 522+ trayectorias de repositorios presentes en cualquier conjunto de evaluación, los checkpoints se eligieron solo en splits de dev separados, el system prompt de evaluación es genérico y el bucle de optimización de arnés/prompt (Harness2, google-research/harness2, arXiv:2610.14224) se ejecutó solo sobre tareas del pool de entrenamiento. Los datos provienen de nvidia/Open-SWE-Traces (CC-BY-4.0; tareas de Scale-SWE y SWE-rebench-V2), con el profesor Qwen3.8-27B (Apache-2.0).
 
 ## Capacidades
 
-- Generación de texto, razonamiento con modo thinking y resolución de problemas de código.
-- Agente autónomo de SWE: exploración de repositorio, localización de causa raíz, edición, ejecución de tests y envío de parche.
-- Tool calling nativo compatible con el parser `qwen3_coder` de vLLM y con cualquier harness de agente compatible con OpenAI que use llamadas nativas.
-- Conjunto de herramientas genéricas validado: `run_command`, `read_file`, `edit_file`, `write_file`, `get_status`, `submit_patch`.
-- Razonamiento multi-paso con presupuesto acotado (hasta 60 llamadas a herramienta y 20 minutos por tarea en la evaluación del autor).
-- Capacidades multimodales image-text-to-text heredadas del base (torre de visión intacta durante el entrenamiento).
-- Multilingüe limitado a inglés, chino y categoría genérica multilingüe.
+- Generación de texto, razonamiento con modo thinking híbrido y matemáticas.
+- Generación y edición de código, con especialización en parcheo de repositorios reales.
+- Tool calling nativo en formato Qwen (parser `qwen3_coder` en vLLM) con herramientas genéricas: `run_command`, `read_file`, `edit_file`, `write_file`, `get_status`, `submit_patch`.
+- Comportamiento de agente autónomo multi-paso: exploración de repositorio, localización de causa raíz, edición, ejecución de tests y envío de parche.
+- Capacidad de visión (image-text-to-text) heredada del base, con torre no modificada por el entrenamiento y mmproj incluido en los GGUF.
+- Multilingüe: inglés, chino y otros idiomas (etiqueta `multilingual`).
+- Integración con arneses de agente compatibles con OpenAI que usen tool calls nativos.
+- Reducción drástica de bucles de acción repetitivos (de 6,3% a 0,4% de repetición exacta en dev).
 
 ## Casos de uso
 
-- Resolución automática de issues en repositorios: el modelo recibe el issue, explora el árbol de código con `read_file` y `run_command`, aplica el parche con `edit_file` y lo valida con tests antes de `submit_patch`. Adecuado por su entrenamiento específico en este flujo y su ventana de contexto amplia.
-- Triage y localización de bugs en CI: integrado en un pipeline que se dispare ante un test fallido, el modelo puede reproducir el fallo, inspeccionar el stack trace y proponer un diff acotado para revisión humana.
-- Migraciones y refactors repetitivos: con `run_command` para compilar y testear tras cada cambio, el modelo puede aplicar transformaciones mecánicas sobre múltiples ficheros y verificar que la suite sigue en verde.
-- Asistente de mantenimiento en local: las cuantizaciones GGUF Q4_K_M y Q6_K permiten ejecutarlo con llama.cpp, LM Studio u Ollama en estaciones de trabajo sin GPU de datacenter, útil para tareas de código sobre repositorios privados.
-- Generación de parches en entornos air-gapped: al publicarse pesos safetensors y GGUF con licencia Apache-2.0, puede desplegarse en infraestructura propia sin dependencia de APIs externas.
-- Automatización de tests de regresión: el modelo puede escribir tests nuevos a partir del código existente y ejecutarlos con `run_command`, usando el bucle de herramientas para iterar hasta que pasen.
-- Análisis de imágenes de diagramas o capturas de error: gracias a la torre de visión heredada, puede recibir una captura de pantalla de un fallo o un diagrama de arquitectura junto al contexto textual del repositorio.
+- Resolución automática de issues en repositorios propios: el modelo explora el árbol de ficheros con `read_file` y `get_status`, localiza la causa del bug, aplica un parche con `edit_file` y valida con `run_command`; su entrenamiento específico en este flujo y su contexto de 262K lo hacen adecuado para repositorios medianos con historial largo.
+- Agente de CI/CD para parcheo de tests fallidos: integrado en un pipeline, recibe el log del fallo y el diff, reproduce el error en un sandbox y propone una corrección verificable antes de abrir un pull request.
+- Asistente de refactorización guiada por tests: dado un conjunto de tests ocultos o existentes, itera ediciones hasta que pasan, con el modo thinking activado para tareas de razonamiento sobre el código.
+- Automatización de tareas de mantenimiento en monorepos: gracias a la ventana de 262K tokens puede cargar ficheros de configuración, fragmentos de código y trazas de ejecución en un solo contexto sin truncar.
+- Agente de terminal (bash-only): el autor verificó un conjunto de herramientas restringido a bash, por lo que es viable como agente de shell para tareas de administración y scripting en entornos controlados.
+- Procesamiento de capturas y diagramas en flujos de desarrollo: al conservar la torre de visión, puede recibir una imagen de error, un diagrama de arquitectura o una captura de UI y razonar sobre ella junto al código.
+- Evaluación e investigación de DPO a nivel de paso: sirve como referencia reproducible (revisiones `v1` y `main`) para estudiar la mitigación de bucles en agentes pequeños con recetas LoRA y RPO.
+- Despliegue en local para prototipado de agentes: las cuantizaciones GGUF Q4_K_M permiten ejecutarlo en estaciones de trabajo sin GPU de datacenter para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-Datos reportados por el autor (mismas condiciones para Salieri y su base: modo thinking, temperature 0.6, top-p 0.95, top-k 20, vLLM 0.32; medias sobre 2 semillas en las métricas agénticas).
+Datos aportados por el autor, con ajustes idénticos para todos los modelos (thinking mode, temperature 0.6, top-p 0.95, top-k 20, vLLM 0.32). Los datos agénticos agrupan 2 semillas.
 
-| Agéntico (SWE, tasa de resolución %) | Amadeus (base) | Salieri | Rango por semilla |
+| Agentic SWE (tasa de resolución %, 2 semillas) | Amadeus (base) | Salieri v1 | Salieri v2 |
 |---|---|---|---|
-| holdout_sound (47) | 22,3 | 20,2 (dentro del ruido entre semillas) | 9-10 resueltas |
-| ood_sound (30) | 56,7 | 63,3 | 18-20 resueltas |
-| ext_final (67, lockbox) | 21,6 | 23,1 | 15-16 resueltas |
+| dev (252 ejecuciones; usado para selección) | 27,8 | 29,8 | 31,0 |
+| held-out repos (47 tareas) | 22,3 | 20,2 | 27,7 |
+| post-release OOD (30 tareas) | 56,7 | 63,3 | 55,0 |
+| lockbox (67 tareas, ejecutado una vez sobre v1) | 21,6 | 23,1 | no ejecutado |
+| bash-only tool set (dev, 252 ejecuciones) | 25,0 | 28,6 | 27,0 |
 
-| Código / instrucciones (pass@1, 4 muestras) | Amadeus (base) | Salieri |
-|---|---|---|
-| HumanEval+ | 87,0 | 87,5 |
-| MBPP+ | 68,5 | 68,6 |
-| LiveCodeBench v6 (2025-02..05) | 34,0 | 42,9 |
-| IFEval prompt-strict | 61,4 | 74,9 |
+| Código / instrucción (pass@1, 4 muestras) | Amadeus (base) | Salieri v1 | Salieri v2 |
+|---|---|---|---|
+| HumanEval+ | 87,0 | 87,5 | 88,6 |
+| MBPP+ | 68,5 | 68,6 | 67,7 |
+| LiveCodeBench v6 (2025-02..05) | 34,0 | 42,9 | 44,3 |
+| IFEval prompt-strict | 61,4 | 74,9 | 80,2 |
 
-En la selección sobre splits de desarrollo el autor reporta 75/252 tareas resueltas frente a 70/252 del base (pareado, 2 semillas). El conjunto lockbox (`ext_final`, 67 tareas de más de 15 repositorios) se evaluó una sola vez, con 2 semillas, únicamente para el modelo final y tras congelar la selección.
+El propio autor advierte que las diferencias v2 vs v1 en los splits agénticos son de pocas tareas sobre 60-252 ejecuciones y van en ambas direcciones, dentro del ruido de semilla en cada split; si se prefiere el modelo verificado en lockbox, debe usarse la revisión `v1`. Los efectos más claros de la receta global (v1 y v2) son las ganancias en LiveCodeBench e IFEval sobre el base y la fuerte reducción de bucles de acción.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en BF16, aproximadamente 9 GB solo para pesos (4,54B parámetros), más KV cache; en Q8_0 alrededor de 5 GB; en Q6_K alrededor de 4 GB; en Q4_K_M alrededor de 3 GB. Añadir el mmproj para visión.
-- GPU recomendadas: A100 o H100 para BF16 con contexto largo; RTX 4090 (24 GB) para BF16 con contexto moderado o Q8_0 con contexto amplio; RTX 3090/4080 (16-24 GB) para cuantizaciones de 8 bits.
-- Cabe en GPU de consumo: sí, en Q4_K_M y Q6_K en GPUs de 8-12 GB, y en BF16 en GPUs de 16 GB o más con contexto reducido.
-- Opciones de despliegue: vLLM (comando del autor con `--enable-auto-tool-choice --tool-call-parser qwen3_coder --reasoning-parser qwen3`), llama.cpp, LM Studio y Ollama mediante los GGUF incluidos.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 9-10 GB en BF16 (4,54B parámetros), unos 5 GB en Q8_0, 4 GB en Q6_K y 3 GB en Q4_K_M; añadir margen para el contexto (KV cache) y, si se usa visión, para el mmproj.
+- GPU recomendadas: A100 40/80 GB, H100 y L40S para despliegues con contexto largo (262K) y concurrencia; RTX 4090 (24 GB) y RTX 3090 (24 GB) sobradas para BF16 con contexto moderado.
+- Cabe en GPU de consumo: sí, en RTX 4090, 3090, 4080 (16 GB) y en tarjetas de 8 GB con cuantización Q4_K_M/Q6_K; también en Apple Silicon vía llama.cpp o LM Studio.
+- Opciones de despliegue: vLLM (comando del autor con `--enable-auto-tool-choice --tool-call-parser qwen3_coder --reasoning-parser qwen3` y `--max-model-len 65536`), llama.cpp, LM Studio y Ollama mediante los GGUF incluidos; cualquier arnés de agente compatible con OpenAI.
+- Latencia y throughput estimados: no disponibles (no se publican cifras de tokens/s ni de latencia por tarea).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Salieri | 4,54B | 262K (base) | Agente SWE con DPO a nivel de paso | Apache-2.0 | Hugging Face (safetensors + GGUF) |
-| Qwen3.5-4B-Amadeus (base directo) | 4,54B | 262K | Base abliterated sin ajuste agéntico | Apache-2.0 | Hugging Face |
-| Qwen/Qwen3.5-4B (base original) | 4,54B | 262K | Modelo generalista multimodal con tool calling | Apache-2.0 | Hugging Face |
-| Qwen3.8-27B (profesor del dataset) | 27B (no confirmado) | No disponible | Modelo mayor usado como profesor | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B-Salieri v2 | 4,54B | 262K | Agente SWE con DPO a nivel de paso, visión | Apache-2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen3.5-4B-Amadeus (base del ajuste) | 4,54B | 262K | Base abliterated sin especialización agéntica | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base original) | 4,54B | 262K | Modelo generalista con visión y tool calling | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (profesor del DPO) | 27B (aprox.) | no disponible | Modelo mayor usado como profesor | Apache-2.0 | Hugging Face |
 
-Frente a su base directo, Salieri mejora en LiveCodeBench v6 (+8,9 puntos), IFEval prompt-strict (+13,5) y en el conjunto lockbox (23,1% frente a 21,6%), con un rendimiento prácticamente idéntico en HumanEval+ y MBPP+ y una ligera caída en holdout_sound atribuida por el autor al ruido entre semillas. No se dispone de datos de benchmarks de otros modelos comparables de 4B en la información proporcionada.
+En los benchmarks del autor, Salieri v2 supera al base Amadeus en dev (31,0 vs 27,8), held-out repos (27,7 vs 22,3), LiveCodeBench v6 (44,3 vs 34,0) e IFEval (80,2 vs 61,4), con caída en post-release OOD (55,0 vs 56,7) y en MBPP+ (67,7 vs 68,5). No se dispone de comparaciones con otros modelos de agente SWE de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo de 4B: resuelve una minoría de issues reales de repositorio (23,1% en el lockbox de 67 tareas) y puede entrar en bucles en tareas difíciles pese al entrenamiento contra repeticiones.
-- La evaluación se hizo principalmente en un único harness sin Docker, con un conjunto de 6 herramientas genéricas; solo se comprobó adicionalmente un conjunto de herramientas basado únicamente en bash.
-- El base es abliterated: el modelo rechaza poco y no incorpora salvaguardas propias; es responsabilidad del despliegue añadirlas.
-- Riesgo de alucinación inherente a modelos de este tamaño, especialmente al razonar sobre código que no ha podido inspeccionar con herramientas.
-- Cobertura idiomática declarada limitada a inglés, chino y multilingüe genérico; no hay evaluación específica en castellano.
-- La licencia Apache-2.0 permite uso comercial, pero los datos de entrenamiento (nvidia/Open-SWE-Traces, CC-BY-4.0) y las tareas de origen (Scale-SWE, SWE-rebench-V2) deben verificarse para cumplir sus condiciones de atribución.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta: no hay validación independiente de los resultados reportados por el autor.
-- El contexto nativo es de 262K, pero el ejemplo de despliegue del autor limita `--max-model-len` a 65536; usar la ventana completa exige más VRAM para KV cache.
+- Modelo de 4B: resuelve una minoría de issues reales de repositorio (31,0% en dev, 27,7% en held-out) y puede entrar en bucles en tareas difíciles pese a la mitigación.
+- Evaluación principalmente en un único arnés libre de Docker, con un chequeo adicional bash-only; el rendimiento en otros arneses puede diferir.
+- Base abliterated: el modelo apenas rechaza peticiones, por lo que debe desplegarse con salvaguardas propias (filtros de entrada/salida, permisos de herramientas restringidos).
+- Riesgo de alucinación en la localización de causas y en la generación de parches; requiere verificación mediante tests y revisión humana antes de fusionar cambios.
+- Las diferencias entre v1 y v2 están dentro del ruido de semilla en varios splits; v2 no fue evaluado en lockbox (el lockbox se gastó en v1).
+- Idiomas: soporte declarado para inglés, chino y multilingüe, pero los benchmarks y el entrenamiento se centran en tareas de código en inglés; el rendimiento en castellano no está medido.
+- Contexto de 262K: usarlo completo exige hardware con VRAM suficiente para la KV cache; el comando de ejemplo limita a 65.536 tokens.
+- Licencia Apache-2.0 permite uso comercial, pero la naturaleza abliterated del base traslada al desplegador la responsabilidad sobre el contenido generado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Jitheswar/Qwen3.5-4B-Salieri
-- Modelo base directo: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus
+- Modelo base del ajuste: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Open-SWE-Traces
 - Paper Open-SWE-Traces (Ahmad et al.): arXiv:2606.16038
-- Paper Harness2 (google-research/harness2): arXiv:2610.14224
+- Paper Harness2: arXiv:2610.14224
 - Repositorio Harness2: https://github.com/google-research/harness2
 - Unsloth: https://github.com/unslothai/unsloth
-- DPO (Rafailov et al. 2023): referencia citada en la model card, sin enlace directo
-- RPO (Pang et al. 2024): referencia citada en la model card, sin enlace directo

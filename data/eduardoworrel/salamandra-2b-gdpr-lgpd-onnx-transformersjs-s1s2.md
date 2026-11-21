@@ -1,101 +1,96 @@
 # eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2
 
 ## Resumen
+Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2 es una adaptacion del modelo base BSC-LT/salamandra-2b-instruct (Barcelona Supercomputing Center) realizada por el usuario eduardoworrel. Se trata de un especialista en clasificacion y decision sobre textos de politicas de privacidad, orientado a los marcos normativos GDPR (europeo) y LGPD (brasileno). El modelo resuelve el problema de evaluar automaticamente si un fragmento de politica de privacidad cumple con requisitos concretos de transparencia, combinando una cabeza de decision entrenada con la capacidad generativa del modelo base.
 
-Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2 es una adaptación del modelo base BSC-LT/salamandra-2b-instruct (Barcelona Supercomputing Center) especializada en la clasificación y el análisis de políticas de privacidad conforme al RGPD europeo y a la LGPD brasileña. El autor, eduardoworrel, publica esta variante en formato ONNX cuantizado a int4 con un diseño de ejecución orientado a Transformers.js, de modo que el modelo pueda ejecutarse íntegramente en el navegador mediante WebGPU o en Node con onnxruntime-node.
+La relevancia de esta version concreta radica en su formato: pesos ONNX cuantizados a int4 dispuestos en el layout de Transformers.js, lo que permite ejecutar el modelo directamente en el navegador tanto en WebGPU como en CPU (WASM). Esto habilita casos de uso de privacidad donde el texto sensible nunca abandona el dispositivo del usuario. El repositorio ocupa 2,1 GB e incluye cabezas de decision separadas, manifiestos de tareas y plantillas de chat.
 
-El modelo no es un generador de texto de propósito general en la práctica: se distribuye con cabezas de decisión separadas (archivos en `heads/`) que implementan un esquema System 1 / System 2, leídas por la librería propietaria `@s1s2/web` y no por el pipeline estándar de Transformers.js. Esta versión es una réplica byte a byte de los pesos int4 del build de referencia ONNX Runtime GenAI, con solo cambios de metadatos y nombres de fichero, y el autor reporta paridad exacta (diferencia máxima 0 en estados ocultos y probabilidades, 20/20 decisiones idénticas) en CPU con Node y en WebGPU con Chrome sobre Apple M2 Pro.
-
-Su relevancia actual reside en la combinación de tres factores: un modelo base de 2B parámetros con licencia Apache-2.0, una cuantización int4 que reduce el repositorio a 2,1 GB y un runtime de inferencia en el navegador que permite clasificar textos legales sin enviar datos a servidores externos, algo especialmente coherente con la naturaleza sensible del dominio (políticas de privacidad y datos personales).
+El modelo implementa el patron S1S2 (System 1 / System 2): una decision rapida de una sola pasada con una cabeza especializada, seguida opcionalmente de una explicacion generada por el mismo modelo cuando el margen de confianza es bajo. Esta arquitectura de dos velocidades es el rasgo tecnico mas distintivo frente a un uso convencional del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (hereda la del base BSC-LT/salamandra-2b-instruct), con cabezas de decisión adicionales para el esquema S1/S2 |
-| Parametros totales | 2B (modelo base); no se detalla el recuento exacto en la información disponible |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Arquitectura | Transformer decoder-only (base Salamandra-2B), con cabezas de decision adicionales y formato ONNX para Transformers.js |
+| Parametros totales | 2B (modelo base Salamandra-2B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int4 (grafo ONNX `model_q4.onnx`) |
+| Tipos de cuantizacion | int4 (modelo_q4.onnx) |
 | Idiomas soportados | en, pt |
 | Licencia | GPL-3.0 |
-| Formato de pesos | ONNX int4 (`config.json` + `onnx/model_q4.onnx`), con cabezas en `heads/` y manifiestos `manifest.en.json`, `manifest.json`, `manifest.pt.json` |
+| Formato de pesos | ONNX (int4), con cabezas en archivos separados (heads/), manifiestos JSON y chat_template.jinja |
 
 ## Arquitectura y entrenamiento
+El modelo parte de BSC-LT/salamandra-2b-instruct, un transformer decoder-only de 2.000 millones de parametros desarrollado por el Barcelona Supercomputing Center, y le anade cabezas de decision entrenadas especificamente para tareas de analisis de politicas de privacidad. La inferencia S1S2 aplica la cabeza sobre los hidden states en posiciones de lectura determinadas del prompt, produciendo una eleccion entre opciones (por ejemplo Yes/No) con probabilidad y margen asociados. El grafo ONNX fija la dimension de cabeza de la KV cache (requisito de Transformers.js) y divide el lm_head en 8 partes a lo largo del vocabulario para que la CPU del navegador quepa en memoria wasm32.
 
-El modelo parte de Salamandra-2b-instruct, un transformer decoder-only del BSC, y se especializa mediante un ajuste orientado a la clasificación de cláusulas de privacidad. La innovación principal no está en el transformer en sí, sino en el esquema de decisión: un reparto System 1 / System 2 con una compuerta de margen (*margin gate*), inspirado en el trabajo CT0 de Alias Robotics y en los precursores alias3-web y el paper *Browser Immune System* (arXiv 2611.15302). El grafo ONNX expone los estados ocultos finales por token, que alimentan las cabezas de decisión separadas leídas por la librería s1s2.
-
-Los datos de entrenamiento combinan tres fuentes: GDPR-Transparency-200 (tomcory/privacy-policy-annotator, GPL-3.0), de la que solo se redistribuyen identificadores de ítems y scripts, no el texto de las políticas; el corpus Claudinha para LGPD (Tocchini et al., Zenodo 13371639, CC BY 4.0); y datos sintéticos Kev (legacy_policy, composicional) generados por código Kev (Apache-2.0). La receta de entrenamiento y la cabeza de puntero provienen también de Kev. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. La dimensión de la cabeza del KV cache está fijada en el grafo para satisfacer los requisitos de Transformers.js.
+Los datos de entrenamiento combinan tres fuentes: GDPR-Transparency-200 (tomcory/privacy-policy-annotator, GPL-3.0), el corpus brasileno Claudinha (Tocchini et al., Zenodo 13371639, CC BY 4.0) y datos sinteticos Kev (legacy_policy, compositional, Apache-2.0). La receta de la cabeza de decision y el pointer head provienen de Kev (Apache-2.0). El modelo base conserva su licencia Apache-2.0, pero la licencia final es GPL-3.0 por derivarse de los pesos entrenados sobre GDPR-Transparency-200. No se especifica en la informacion disponible el numero de tokens de entrenamiento ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
-
-- Clasificación y decisión sobre cláusulas de políticas de privacidad en el marco del RGPD (UE) y la LGPD (Brasil).
-- Esquema de decisión System 1 / System 2 con compuerta de margen, pensado para separar respuestas rápidas de respuestas que requieren razonamiento adicional.
-- Exposición de estados ocultos por token (`hidden_states`) y logits a través de Transformers.js estándar, además de las cabezas de decisión vía s1s2.
-- Ejecución en navegador con WebGPU y en Node con onnxruntime-node.
-- Soporte multilingüe limitado a inglés y portugués.
-- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito en la información disponible.
+- Clasificacion y decision sobre fragmentos de politicas de privacidad mediante cabeza especializada (respuestas tipo choice con probabilidad y margen).
+- Generacion de texto explicativo sobre la decision tomada, reutilizando los mismos pesos (modo System 2).
+- Razonamiento de una sola pasada con umbral de confianza (margin gate) para derivar a revision humana o a explicacion generada.
+- Soporte de manifiestos de tareas y de idiomas (manifest.json y manifest.pt.json).
+- Ejecucion en navegador con Transformers.js sobre WebGPU y CPU (WASM).
+- Capacidades heredadas del modelo base Salamandra-2B-Instruct: generacion de texto conversacional en ingles y portugues.
+- No se documenta soporte de tool calling, function calling ni agentes multi-paso en la informacion disponible.
 
 ## Casos de uso
-
-- Auditoría de políticas de privacidad en el navegador: una extensión o web app puede cargar el modelo vía `@s1s2/web` y clasificar cláusulas de una política sin enviar el texto a un servidor, lo que encaja con el tratamiento de datos sensibles bajo RGPD.
-- Cumplimiento LGPD en aplicaciones brasileñas: el soporte de portugués y el corpus Claudinha permiten evaluar políticas de sitios en pt-BR y detectar cláusulas problemáticas.
-- Preprocesado en pipelines de compliance: usar el modelo como primer filtro para marcar políticas que requieren revisión humana, reduciendo el volumen de documentos que llegan a los revisores.
-- Herramientas de desarrollador integradas en CI/CD: al ejecutarse con onnxruntime-node, puede incorporarse a un job que valide la política de privacidad de un producto antes de un despliegue.
-- Demos y prototipos sin backend: el formato Transformers.js con int4 permite desplegar una demo estática en Hugging Face Spaces o en una página web, sin infraestructura GPU.
-- Investigación sobre esquemas S1/S2: la separación entre estados ocultos y cabezas de decisión facilita experimentar con compuertas de margen y estrategias de decisión en dominios legales.
-- Clasificación de textos legales en entornos con restricciones de red: al no requerir conexión a un servicio de inferencia, es apto para entornos air-gapped una vez descargado el repositorio.
+- Auditoria de politicas de privacidad en el navegador: una herramienta web puede cargar el modelo via Transformers.js y evaluar si un fragmento cumple requisitos GDPR/LGPD sin enviar el texto a un servidor, gracias a la ejecucion local en WebGPU o WASM.
+- Cumplimiento normativo en entornos sanitarios o financieros: el texto de politicas o contratos se procesa en el dispositivo del usuario, evitando exponer datos sensibles a terceros.
+- Revision asistida con umbral de confianza: cuando el margen de la decision S1S2 es bajo (por ejemplo, inferior a 0,2, valor de ejemplo medido por el autor), se invoca la generacion S2 para obtener una explicacion en dos frases que ayude al revisor humano.
+- Clasificacion por lotes de clausulas de comparticion de datos: la cabeza responde a preguntas concretas como si el pasaje identifica los destinatarios de los datos, con salida estructurada (choice, confidence, margin) facil de integrar en pipelines.
+- Formacion y concienciacion legal: la explicacion generada por el mismo modelo sirve como material didactico sobre por que una clausula cumple o no un requisito de transparencia.
+- Extension a otros idiomas y tareas mediante manifiestos: el autor incluye manifest.pt.json para portugues, lo que permite reutilizar el mismo binario para evaluaciones en ese idioma.
+- Prototipado rapido en aplicaciones JavaScript existentes: el layout config.json + onnx/model_q4.onnx permite integrar el modelo en apps que ya usan @huggingface/transformers sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor reporta mediciones de paridad y latencia sobre 20 prompts de comprobacion (no un conjunto de test):
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí reporta una comprobación de paridad con el build de referencia ONNX Runtime GenAI:
-
-| Prueba | Entorno | Resultado |
-|---|---|---|
-| Diferencia máxima en estados ocultos | Node CPU (onnxruntime-node 1.30.0, transformers.js 4.3.1) | 0 |
-| Diferencia máxima en probabilidades de cabeza | Node CPU | 0 |
-| Decisiones idénticas | Node CPU, 20 prompts | 20/20 |
-| Decisiones idénticas | Chrome 157 WebGPU (Apple M2 Pro), 20 prompts | 20/20 |
-
-Se trata de una prueba de paridad con 20 prompts escritos para la comprobación, no de un conjunto de test representativo.
+| Metrica | Resultado |
+|---|---|
+| Paridad con build GenAI (Node CPU, onnxruntime-node 1.30.0, transformers.js 4.3.1) | hidden state max \|diff\| 0; probabilidades de cabeza max \|diff\| 0; decisiones 20/20 iguales |
+| Paridad en Chrome 157 WebGPU (Apple M2 Pro) | decisiones 20/20 iguales; probabilidad de cabeza max \|diff\| 0 |
+| Latencia por decision en WebGPU (Chrome 157, M2 Pro) | 0,51 s; memoria de pagina 0,6 GB (sin contar buffers GPU) |
+| Latencia por decision en CPU WASM (Chrome 157, M2 Pro) | 6,1 s; memoria de pagina 3,1 GB (pico de pestana 5,8 GB durante la carga) |
+| Concordancia WebGPU vs CPU | 20/20 decisiones iguales |
+| Concordancia de pipeline("decision") con la cabeza entrenada | 14 de 20 prompts (Node CPU) |
 
 ## Requisitos de hardware
-
-- VRAM estimada: el repositorio ocupa 2,1 GB en int4; la inferencia requiere espacio para pesos, KV cache y activaciones, pero no se publica una cifra exacta de VRAM.
-- GPU recomendadas: no se especifican; el autor valida WebGPU en Apple M2 Pro y CPU con Node.
-- Compatibilidad con GPU de consumo: el tamaño int4 (2,1 GB) sugiere que puede caber en GPUs de consumo con suficiente memoria, pero no hay confirmación oficial en la información disponible.
-- Opciones de despliegue: Transformers.js (con `@huggingface/transformers` y `dtype: "q4"`), la librería `@s1s2/web` para las cabezas de decisión, onnxruntime-node en Node y WebGPU en navegador. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible para GPU dedicada; el modelo esta disenado para ejecucion en navegador con pesos int4 en un repositorio de 2,1 GB.
+- GPU recomendadas: no se especifican; el autor mide en Apple M2 Pro via WebGPU (Chrome 157). Se puede esperar que funcione en cualquier GPU con soporte WebGPU, aunque no hay datos de otras tarjetas.
+- Cabe en GPU de consumo: si, mediante WebGPU en el navegador; el autor no publica pruebas en RTX 4090, A100 o H100.
+- Opciones de despliegue: Transformers.js en navegador (WebGPU o WASM), s1s2 (github.com/eduardoworrel/s1s2) y onnxruntime-node en Node CPU. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,51 s por decision en WebGPU y 6,1 s en CPU WASM sobre M2 Pro; memoria de pagina 0,6 GB (WebGPU) y 3,1 GB (CPU), con pico de 5,8 GB durante la carga en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2 | 2B (base) | no disponible | ONNX int4 | GPL-3.0 | Especializado en RGPD/LGPD, cabezas S1/S2, ejecución en navegador |
-| BSC-LT/salamandra-2b-instruct | 2B | no disponible | safetensors | Apache-2.0 | Modelo base generalista, sin especialización legal |
-| eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-genai-int4-S1S2 | 2B (base) | no disponible | ONNX int4 (GenAI) | GPL-3.0 | Build de referencia del mismo especialista, con paridad byte a byte |
-
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+| Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2 | 2B | no disponible | Clasificacion GDPR/LGPD + generacion, ONNX int4 navegador | GPL-3.0 | Hugging Face, 1274 descargas |
+| Salamandra-2B-GDPR-LGPD-ONNX-genai-int4-S1S2 | 2B | no disponible | Mismo especialista en formato ONNX Runtime GenAI (build de referencia) | no disponible en la informacion | Hugging Face |
+| BSC-LT/salamandra-2b-instruct | 2B | no disponible | Modelo instructivo generalista en ingles y portugues | Apache-2.0 | Hugging Face |
+| alias3-web (Alias Robotics) | no disponible | no disponible | Precursor del enfoque S1S2 en navegador | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
-
-- No es un pipeline estándar de Transformers.js: las cabezas de decisión son ficheros separados que solo lee la librería s1s2; el uso con `AutoModelForCausalLM` devuelve estados ocultos y logits, pero no las decisiones.
-- La licencia GPL-3.0 es copyleft y puede ser incompatible con productos propietarios; deriva de los pesos entrenados con GDPR-Transparency-200 (GPL-3.0), aunque los datos Claudinha (CC BY 4.0), Kev y el modelo base (Apache-2.0) mantienen su atribución.
-- Idiomas limitados a inglés y portugués; no hay soporte declarado de castellano.
-- No se documentan sesgos conocidos, tasas de alucinación ni evaluaciones de robustez en la información disponible.
-- El ámbito es acotado a clasificación de políticas de privacidad; no debe usarse como asesor legal ni como sustituto de revisión jurídica.
-- La dimensión de la cabeza del KV cache está fijada en el grafo, lo que puede limitar cambios de configuración en tiempo de ejecución.
-- El repositorio no registra descargas ni likes en el momento de la consulta, por lo que no hay evidencia de uso en producción.
+- Las cabezas de decision son archivos separados (heads/) que Transformers.js por si solo no lee; es necesario usar s1s2 para obtener la decision entrenada. El pipeline("decision") estandar concuerda solo en 14 de 20 prompts de comprobacion.
+- La dimension de cabeza de la KV cache esta fijada en el grafo y el lm_head se divide en 8 partes por requisitos de Transformers.js y de memoria wasm32; aunque los pesos int4 son identicos byte a byte al build GenAI, el grafo difiere.
+- El modelo solo declara soporte de ingles y portugues; no se documenta castellano ni otros idiomas.
+- Riesgo de alucinacion en el modo generativo (System 2): las explicaciones se producen con los mismos pesos y no estan verificadas contra fuentes normativas.
+- La licencia es GPL-3.0 por los datos GDPR-Transparency-200, lo que impone obligaciones de copyleft en uso comercial y distribucion; el modelo base es Apache-2.0 pero la licencia final prevalece.
+- Los 20 prompts de paridad son una comprobacion del autor, no un conjunto de test independiente; no hay benchmarks publicados de calidad en tareas GDPR/LGPD.
+- En CPU WASM la latencia es de 6,1 s por decision y el pico de memoria durante la carga alcanza 5,8 GB, lo que puede ser problematico en dispositivos modestos.
+- No se documentan sesgos especificos ni evaluaciones de robustez frente a textos adversarios.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-transformersjs-S1S2
 - Build de referencia GenAI: https://huggingface.co/eduardoworrel/Salamandra-2B-GDPR-LGPD-ONNX-genai-int4-S1S2
 - Modelo base: https://huggingface.co/BSC-LT/salamandra-2b-instruct
-- Librería s1s2: https://github.com/eduardoworrel/s1s2
+- Repositorio s1s2: https://github.com/eduardoworrel/s1s2
+- Codigo de decision (decide.ts): https://github.com/eduardoworrel/s1s2/blob/1ecbd80d380a78d43056fa10e0c95745261194a5/src/decide.ts#L85-L139
+- PR de Transformers.js para pipeline("decision"): https://github.com/huggingface/transformers.js/pull/1943
 - Transformers.js: https://github.com/huggingface/transformers.js
 - GDPR-Transparency-200: https://github.com/tomcory/privacy-policy-annotator
 - Corpus Claudinha: https://zenodo.org/records/13371639
-- Kev: https://github.com/jaredpalmer/kev
-- Paper Browser Immune System: https://arxiv.org/abs/2611.15302
+- Kev (receta de cabeza y pointer head): https://github.com/jaredpalmer/kev
 - Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
+- Paper Browser Immune System: https://arxiv.org/abs/2611.15302

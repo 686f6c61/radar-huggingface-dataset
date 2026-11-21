@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1029,
+  "downloads_30d": 1057,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "FastFlowLM/MiniCPM-V-4.7-1B-NPU2 · Hugging Face",
-      "url": "https://huggingface.co/FastFlowLM/MiniCPM-V-4.7-1B-NPU2",
-      "snippet": "OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference on Intel CPU/GPU/NPU platforms. OpenVINO provides day-0 support for MiniCPM-V-4.7 on Intel platforms with high-performance inference."
-    },
-    {
-      "title": "MiniCPM · FastFlowLM",
-      "url": "https://fastflowlm.com/docs/models/minicpm/",
-      "snippet": "Pictures work as on MiniCPM-V-4.7-1B: a downscaled view of the whole image plus up to 9 tiles, so the --img-pre-resize (-r) option has no effect on this model. The text side is the same engine as qwen3.6-moe:35b-a3b (same layer layout, same NPU kernels); only the vision side differs."
-    }
-  ]
+  "sources": []
 }

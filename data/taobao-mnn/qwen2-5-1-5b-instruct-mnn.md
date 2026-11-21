@@ -2,89 +2,89 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Instruct-MNN es una exportación cuantizada a 4 bits del modelo Qwen2.5-1.5B-Instruct, empaquetada en el formato propietario MNN (Mobile Neural Network) de Alibaba y publicada por la organización taobao-mnn. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión del checkpoint oficial de Qwen (desarrollado por el equipo Qwen de Alibaba) pensada para ejecución local eficiente mediante el runtime MNN-LLM. El repositorio ocupa 3,0 GB e incluye pesos, grafo y configuración listos para el motor MNN.
+Qwen2.5-1.5B-Instruct-MNN es la version cuantizada del modelo instructivo Qwen2.5-1.5B-Instruct de Alibaba, empaquetada en formato MNN (Mobile Neural Network) por el equipo taobao-mnn. Su proposito es permitir la inferencia en CPU de un LLM de 1.500 millones de parametros con un peso de repositorio de 3,0 GB, gracias a una cuantizacion HQQ de 4 bits con grupo de 128 aplicada tanto a las capas lineales del modelo de lenguaje como a la cabeza de salida (output head), manteniendo las escalas de cuantizacion en FP16.
 
-El modelo base es un transformer decoder-only de 1.500 millones de parámetros, orientado a generación de texto e instrucciones conversacionales. Esta versión MNN aplica cuantización de 4 bits con grupos de 128 tanto en las capas lineales como en la LM head, además de fusión de proyecciones y normas y embeddings de entrada/salida compartidos y cuantizados. El objetivo es habilitar inferencia en CPU x64 y ARM, así como en backends Metal, OpenCL, Vulkan y CUDA, con un consumo de memoria reducido.
+El modelo hereda la arquitectura transformer densa de Qwen2.5, con 28 capas y una dimension oculta de 1536, y esta afinado para instrucciones. Al estar integrado en el ecosistema MNN de Alibaba, esta pensado para despliegue en dispositivos con recursos limitados, incluyendo moviles y equipos de escritorio sin GPU dedicada, mediante el runtime llm_demo de MNN.
 
-La relevancia actual radica en su utilidad como pieza de despliegue en dispositivos y entornos sin GPU dedicada: permite integrar un modelo conversacional de 1,5B en aplicaciones de escritorio, móviles o embebidas a través de MNN. La revisión de noviembre de 2026 (MNN 3.6.2) actualiza el exportador y exige un runtime mínimo, lo que conviene tener en cuenta al integrarlo.
+Es relevante ahora porque ofrece una via practica para ejecutar un modelo conversacional multilingue (chino e ingles) en CPU con cuantizacion agresiva, sin necesidad de infraestructura GPU, y con licencia Apache 2.0 que permite uso comercial. La ficha se centra en las caracteristicas del artefacto MNN publicado, no en el modelo base original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2.5), exportado a grafo MNN |
-| Parámetros totales | 1,5 mil millones (modelo base Qwen2.5-1.5B-Instruct) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (el modelo base Qwen2.5 soporta contexto largo; la validación de esta exportación cubre hasta ~900 tokens) |
-| Tipos de cuantización | 4 bits, grupo 128 (lineales y LM head); HQQ; embeddings de entrada/salida compartidos y cuantizados |
-| Idiomas soportados | en (etiqueta oficial); la validación del exportador incluye generación en chino |
-| Licencia | apache-2.0 |
-| Formato de pesos | MNN (grafo y pesos propietarios del runtime MNN); no safetensors ni GGUF |
+| Arquitectura | Transformer denso (Qwen2.5), 28 capas, dimension oculta 1536 |
+| Parametros totales | 1.500 millones (modelo base Qwen2.5-1.5B-Instruct) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | HQQ 4 bits, grupo 128, escalas FP16; embeddings compartidos con la cabeza de salida en 4 bits |
+| Idiomas soportados | Chino (zh) e ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | MNN (llm.mnn, llm.mnn.weight, tokenizer.mtok, config.json, llm_config.json) |
+| Tamano del repositorio | 3,0 GB |
+| Configuracion por defecto | CPU, 4 hilos, precision=low, memory=low |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen2.5-1.5B-Instruct, un transformer decoder-only con atención multi-cabeza estándar y mecanismos propios de la familia Qwen2.5 (RoPE, normalización RMSNorm, MLP con activación SwiGLU). El entrenamiento original corresponde al equipo Qwen e incluye ajuste por instrucciones; los detalles de composición del dataset, número de tokens y etapas de RLHF/DPO no están disponibles en la información proporcionada.
+El artefacto es una conversion del modelo Qwen2.5-1.5B-Instruct, un transformer denso de 28 capas con dimension oculta de 1536. La model card no detalla el proceso de entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO); esa informacion corresponde a la documentacion oficial de Qwen2.5-1.5B-Instruct y no se incluye aqui. Lo que si se especifica es el proceso de exportacion: cuantizacion HQQ de 4 bits con tamano de grupo 128 aplicada a las capas lineales del modelo de lenguaje y a la cabeza de salida, con escalas en FP16 y embeddings compartidos con la cabeza de salida en 4 bits.
 
-La contribución de esta ficha es el pipeline de exportación: el checkpoint se convierte mediante `llmexport` de MNN con cuantización HQQ de 4 bits (grupo 128), fusión de proyecciones y normas, y embeddings compartidos entre entrada y LM head. La exportación se realizó con el commit `b0239771b07b317a258fbc384683bbd540741406` y requiere MNN 3.6.2 o superior con soporte de transformer fusion. El autor verificó alineamiento FP32 prefill/decode frente al modelo fuente, plantillas de chat, IDs de token, generación en chino, aritmética, traducción corta y de ~900 tokens, parada natural e integridad de pesos externos en CPU x64.
+La innovacion tecnica del artefacto es el empaquetado en formato MNN, que permite ejecutar el modelo con el runtime llm_demo de MNN en CPU. La exportacion se valido con la version MNN 3.6.2 (commit b0239771b07b317a258fbc384683bbd540741406) en x64 CPU, comprobando alineacion del mapeo FP32, casos de saludo, aritmetica y traduccion, ademas de una prueba de humo con la configuracion por defecto. Los parametros de exportacion estan en export_args.json y los registros de prueba e hashes en refresh_metadata.json.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla de chat.
-- Razonamiento básico y aritmética (validado en la revisión del exportador).
-- Traducción corta y de contexto medio (~900 tokens validados).
-- Generación en chino verificada, además del inglés declarado.
-- Inferencia local en CPU x64 y ARM, y backends Metal, OpenCL, Vulkan y CUDA (no validados en esta revisión).
-- Muestreo configurable con parámetros de runtime; el modo greedy se usa solo para pruebas de corrección.
-- Soporte de tool calling, function calling y agentes: no disponible en la información proporcionada.
+- Generacion de texto conversacional e instrucciones en chino e ingles.
+- Razonamiento aritmetico basico (validado en las pruebas de exportacion con casos de aritmetica).
+- Traduccion entre idiomas (validada en las pruebas de exportacion).
+- Seguimiento de instrucciones (modelo instruction-tuned).
+- Inferencia en CPU con bajo consumo de memoria (precision=low, memory=low, 4 hilos por defecto).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales de escritorio: integración mediante MNN-LLM en aplicaciones nativas que necesitan un chatbot local sin GPU, aprovechando la cuantización de 4 bits para reducir huella de memoria.
-- Aplicaciones móviles y embebidas: despliegue en Android/iOS o dispositivos ARM con el runtime MNN, usando los backends Metal/OpenCL/Vulkan para aceleración cuando estén validados.
-- Traducción y resumen de textos cortos: el modelo ha sido verificado en traducción corta y de ~900 tokens, adecuado para tareas de procesamiento de documentos breves en local.
-- Prototipado y pruebas de pipelines LLM: servir como modelo de referencia ligero para validar plantillas de chat, tokenización y lógica de muestreo antes de migrar a modelos mayores.
-- Generación de texto asistida en entornos sin conectividad: al ejecutarse íntegramente en local, permite redactar borradores y respuestas sin enviar datos a la nube.
-- Educación y demos de inferencia en dispositivo: útil para talleres y pruebas de concepto sobre cuantización y ejecución de transformers en CPU.
+- Asistente conversacional en dispositivos moviles: el modelo puede ejecutarse en CPU con el runtime MNN, lo que permite integrar un chatbot en aplicaciones Android o iOS sin depender de la nube, usando el binario llm_demo o la API de MNN-LLM.
+- Traduccion chino-ingles en local: las pruebas de exportacion validan casos de traduccion, por lo que es adecuado para tareas de traduccion simple en entornos sin conexion.
+- Procesamiento de texto en equipos de escritorio sin GPU: con 3,0 GB de repositorio y configuracion CPU de 4 hilos, puede desplegarse en portatiles y estaciones de trabajo modestas.
+- Prototipado rapido de aplicaciones LLM: al estar disponible en Hugging Face y ModelScope con comandos de descarga directos, sirve para validar pipelines de generacion de texto antes de escalar a modelos mayores.
+- Educacion y demostraciones: su tamano reducido y su licencia Apache 2.0 lo hacen util para talleres y cursos sobre cuantizacion e inferencia en el borde.
+- Generacion de respuestas en asistentes de soporte con requisitos de privacidad: al ejecutarse localmente, los datos no salen del dispositivo, lo que encaja en escenarios con requisitos de confidencialidad.
+- Integracion en aplicaciones de escritorio con MNN-LLM: la documentacion de MNN-LLM describe como integrar el modelo en aplicaciones, lo que facilita su inclusion en herramientas de productividad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que las comprobaciones de la revisión son de humo/corrección y no un benchmark de precisión ni una garantía de identidad token a token con el modelo sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el repositorio ocupa 3,0 GB; con pesos de 4 bits y grupo 128, la inferencia requiere del orden de 1-2 GB de memoria para pesos más KV cache y buffers, aunque no se proporciona una cifra oficial.
-- GPU recomendadas: no disponible; la validación de esta revisión se realizó en CPU x64. Los backends CUDA, Metal, OpenCL y Vulkan no han sido validados en esta actualización.
-- ¿Cabe en GPU consumer? No hay datos oficiales; por tamaño (1,5B en 4 bits) es plausible en GPUs consumer, pero no está verificado en esta exportación.
-- Opciones de despliegue: runtime MNN-LLM (`llm_demo`) compilado con `-DMNN_LOW_MEMORY=true -DMNN_CPU_WEIGHT_DEQUANT_GEMM=true -DMNN_BUILD_LLM=true -DMNN_SUPPORT_TRANSFORMER_FUSE=true`. No compatible con vLLM, llama.cpp, Ollama ni TGI, ya que el formato es MNN.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no aplica en la configuracion por defecto, que es CPU; el repositorio ocupa 3,0 GB en disco.
+- GPU recomendadas: no se especifican; el artefacto esta orientado a CPU.
+- Compatibilidad con GPU de consumo: no documentada en la informacion proporcionada.
+- Opciones de despliegue: runtime MNN (llm_demo), con compilacion mediante CMake con las flags MNN_BUILD_LLM=ON, MNN_LOW_MEMORY=ON y MNN_SUPPORT_TRANSFORMER_FUSE=ON; integracion via documentacion MNN-LLM.
+- Latencia y throughput: no disponibles; la configuracion por defecto usa 4 hilos en CPU con precision=low y memory=low.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct-MNN (esta ficha) | 1,5B | no disponible | MNN 4-bit | Apache 2.0 | Hugging Face / ModelScope |
-| Qwen2.5-1.5B-Instruct (original) | 1,5B | no disponible en esta información | safetensors | Apache 2.0 | Hugging Face / ModelScope |
-| Otros modelos 1,5B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen2.5-1.5B-Instruct-MNN (este) | 1,5 B | No disponible | HQQ 4 bits, grupo 128 | Apache 2.0 | MNN |
+| Qwen2.5-1.5B-Instruct (base) | 1,5 B | No disponible en esta ficha | Original (FP16/BF16) | Apache 2.0 | Safetensors |
+| Alternativas de 1-2 B en formato GGUF | No disponible | No disponible | Q4_K_M, Q5_K_M, etc. | Variable | GGUF |
 
-La comparación directa con alternativas de la misma categoría no está disponible en la información proporcionada; la diferencia principal frente al modelo original es el formato MNN cuantizado y la dependencia del runtime MNN 3.6.2+.
+La comparativa con alternativas concretas no esta disponible en la informacion proporcionada; solo se confirma el modelo base Qwen2.5-1.5B-Instruct como referencia directa.
 
 ## Limitaciones y advertencias
 
-- Requiere MNN 3.6.2 o superior con transformer fusion; runtimes anteriores no son compatibles con esta exportación.
-- Solo se validaron CPU x64; ARM CPU FP16, Metal, OpenCL, Vulkan y CUDA no han sido validados en esta revisión.
-- Las comprobaciones del autor son de corrección, no de precisión; no se garantiza identidad token a token con el modelo sin cuantizar.
-- La cuantización de 4 bits puede degradar la calidad frente al checkpoint original en tareas complejas.
-- Idioma declarado: inglés; el chino se verificó en pruebas, pero el soporte multilingüe amplio no está documentado.
-- Riesgo de alucinación inherente a modelos de 1,5B; no apto para tareas que exijan alta fiabilidad factual sin verificación.
-- Sesgos: no disponibles en la información proporcionada; se heredan los del modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero debe conservarse la licencia upstream incluida sin cambios.
-- Al actualizar, descargar todos los archivos juntos y limpiar cachés de modelo, pesos y KV; no mezclar este grafo con archivos de revisiones anteriores.
+- La model card no documenta sesgos conocidos del modelo base; deben consultarse las limitaciones de Qwen2.5-1.5B-Instruct.
+- Riesgo de alucinacion inherente a modelos de 1,5 B; no se han publicado evaluaciones de fidelidad en la informacion disponible.
+- Longitud de contexto no especificada en la informacion proporcionada; no debe asumirse la del modelo base sin verificacion.
+- Idiomas soportados limitados a chino e ingles segun la model card; el campo de idiomas del repositorio solo lista ingles, lo que genera ambiguedad.
+- La cuantizacion HQQ de 4 bits puede degradar la calidad respecto al modelo original en tareas complejas; no se han publicado metricas de degradacion.
+- Licencia Apache 2.0 permite uso comercial, pero debe conservarse el aviso de licencia y verificar las condiciones del modelo base.
+- El formato MNN requiere el runtime especifico; no es directamente compatible con vLLM, llama.cpp, Ollama ni TGI.
+- La validacion documentada se limita a x64 CPU con MNN 3.6.2; el comportamiento en otras plataformas no esta verificado en la informacion disponible.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/taobao-mnn/Qwen2.5-1.5B-Instruct-MNN
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - ModelScope: https://modelscope.cn/models/MNN/Qwen2.5-1.5B-Instruct-MNN
-- Modelo base en ModelScope: https://modelscope.cn/models/qwen/Qwen2.5-1.5B-Instruct/summary
 - Repositorio MNN: https://github.com/alibaba/MNN
-- Exportador llmexport: https://github.com/alibaba/MNN/tree/master/transformers/llm/export
-- Documentación MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
+- Documentacion MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html

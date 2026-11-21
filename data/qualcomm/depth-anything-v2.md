@@ -2,92 +2,99 @@
 
 ## Resumen
 
-Depth-Anything-V2 es un modelo de estimación de profundidad monocular desarrollado por Qualcomm, optimizado para su ejecución en dispositivos con hardware Snapdragon y Dragonwing. Se basa en el modelo Depth-Anything-V2 original, que destaca por ofrecer mapas de profundidad densos y detallados a partir de una sola imagen, superando en robustez y eficiencia a versiones anteriores y a alternativas basadas en difusión. Esta versión específica, publicada en Hugging Face por Qualcomm, incluye pesos preexportados en formatos ONNX, QNN_DLC y TFLITE, listos para desplegar en entornos de edge computing. El checkpoint utilizado es el variante Small, con 24,7 millones de parámetros y un tamaño de 94,3 MB en precisión float, lo que lo hace adecuado para aplicaciones en tiempo real en dispositivos móviles y embebidos. Su licencia MIT permite uso comercial sin restricciones, y su relevancia actual radica en la creciente demanda de soluciones de percepción de profundidad eficientes para realidad aumentada, robótica y conducción autónoma.
+Depth-Anything-V2 es un modelo de estimación de profundidad monocular (MDE, *monocular depth estimation*) desarrollado originalmente por el equipo de Depth Anything (ByteDance) y empaquetado por Qualcomm como parte de su catálogo Qualcomm AI Hub Models. El modelo genera un mapa denso de profundidad a partir de una única imagen RGB, asignando a cada píxel una estimación de distancia relativa a la cámara. La variante publicada por Qualcomm corresponde al checkpoint *DepthAnything_V2_Small*, con 24,7 millones de parámetros y una resolución de entrada de 518×518 píxeles.
+
+La relevancia de esta ficha concreta no radica en el modelo original, sino en su exportación optimizada para el hardware de Qualcomm: los pesos están compilados para ejecutarse en las NPU de los chipsets Snapdragon y Dragonwing mediante QAIRT (Qualcomm AI Runtime), con formatos ONNX, QNN_DLC y TFLite. Esto permite ejecutar estimación de profundidad en tiempo real en dispositivos móviles, portátiles ARM y plataformas IoT, sin depender de GPU de escritorio ni de la nube.
+
+El modelo se distribuye bajo licencia MIT y el repositorio ocupa 5,8 GB, aunque el checkpoint Small en precisión float ocupa solo 94,3 MB. La información disponible no incluye detalles sobre el dataset de entrenamiento, el proceso de destilación ni los resultados de benchmarks académicos del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basado en Depth-Anything-V2, implementación de transformers) |
-| Parametros totales | 24,7 M |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (entrada de imagen, resolución 518x518) |
-| Tipos de cuantizacion | float, w8a16 |
-| Idiomas soportados | no disponible (modelo de visión, no procesa texto) |
+| Arquitectura | Transformer (encoder tipo DINOv2 + decoder de profundidad densa); no se detalla la configuracion exacta en la informacion disponible |
+| Parametros totales | 24,7 M (checkpoint DepthAnything_V2_Small) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica (modelo de vision); resolucion de entrada 518×518 |
+| Tipos de cuantizacion | float y w8a16 (pesos 8 bits, activaciones 16 bits) |
+| Idiomas soportados | No disponible (modelo de vision, sin procesamiento de lenguaje) |
 | Licencia | MIT |
-| Formato de pesos | ONNX, QNN_DLC, TFLITE (además de pesos PyTorch originales) |
+| Formato de pesos | ONNX, QNN_DLC, TFLite (exportados por Qualcomm); pesos PyTorch originales via libreria ai-hub-models |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta del modelo no se detalla en la información proporcionada, pero se indica que es una implementación basada en el código de Depth-Anything-V2 de Hugging Face Transformers. El modelo original Depth-Anything-V2 fue entrenado con 595.000 imágenes sintéticas etiquetadas y más de 62 millones de imágenes reales no etiquetadas, lo que le permite generar mapas de profundidad con gran detalle y robustez. Esta versión de Qualcomm no modifica el entrenamiento, sino que se centra en la optimización para hardware específico, mediante la exportación a formatos como ONNX y QNN_DLC, y la cuantización w8a16 para reducir la latencia y el consumo de memoria en NPU de Qualcomm. No se mencionan técnicas adicionales como RLHF o DPO, al tratarse de un modelo de visión.
+La informacion disponible no detalla la arquitectura interna del checkpoint mas alla de que se trata de un modelo de estimacion de profundidad basado en la implementacion de Depth-Anything-V2 disponible en la libreria `transformers` de Hugging Face. El modelo original de Depth Anything V2 emplea un encoder transformer preentrenado con destilacion a partir de modelos de profundidad basados en DINOv2 y un decoder ligero que produce el mapa de profundidad denso. La variante Small es la de menor tamano de la familia, con 24,7 M de parametros.
+
+No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset (imagenes sinteticas, datos etiquetados y pseudoetiquetados), ni si hubo etapas de RLHF o ajuste fino especifico. Tampoco se documentan innovaciones tecnicas adicionales del checkpoint de Qualcomm mas alla de la compilacion y cuantizacion para NPU. La exportacion se realiza mediante Qualcomm AI Hub Workbench, que compila, perfila y evalua el modelo para distintos runtimes y chipsets.
 
 ## Capacidades
 
-- Estimación de profundidad monocular: genera un mapa de profundidad por píxel a partir de una imagen RGB de entrada.
-- Detección de bordes y detalles finos: el modelo produce mapas de profundidad con alta resolución espacial, capturando estructuras finas como objetos pequeños y contornos.
-- Robustez en condiciones variadas: funciona en escenas con iluminación compleja, texturas repetitivas y superficies reflectantes, gracias al entrenamiento con datos diversos.
-- Eficiencia computacional: optimizado para ejecución en NPU de Qualcomm, con tiempos de inferencia de hasta 12 ms en dispositivos de gama alta (ver tabla de rendimiento).
-- Sin capacidades de texto: no soporta tool calling, agentes ni procesamiento de lenguaje natural; es exclusivamente un modelo de visión.
+- Estimacion de profundidad monocular densa por pixel a partir de una imagen RGB de entrada.
+- Salida de mapa de profundidad relativa (no se especifica si la salida es metrica o relativa en la informacion disponible).
+- Ejecucion en NPU de dispositivos Qualcomm (Snapdragon 8 Gen 1, 8 Gen 3, 8 Elite, X Elite, X2 Elite, Dragonwing IQ-8275, IQ-9075, IQ-X7181, QCS8450, QCS8550, QCS6490, entre otros).
+- Soporte de cuantizacion w8a16 para reducir latencia y memoria a costa de una ligera perdida de precision.
+- Exportacion con formas de entrada personalizadas y pesos ajustados mediante la libreria `ai-hub-models`.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo puramente visual.
 
 ## Casos de uso
 
-- Realidad aumentada en móviles: el mapa de profundidad permite oclusión correcta de objetos virtuales con el entorno real, mejorando la inmersión en aplicaciones de AR. Su baja latencia (menos de 20 ms en Snapdragon 8 Elite) lo hace viable para experiencias en tiempo real.
-- Navegación autónoma en robótica: robots de servicio o drones pueden usar la profundidad para evitar obstáculos y planificar rutas. El formato ONNX facilita la integración en pipelines de ROS o frameworks de edge.
-- Fotografía computacional: mejora de retratos con efecto bokeh, desenfoque de fondo y reiluminación de escenas. La precisión en bordes es clave para separar sujeto y fondo.
-- Inspección industrial: medición de distancias y dimensiones en líneas de producción mediante cámaras fijas, con despliegue en dispositivos Qualcomm Dragonwing para entornos industriales.
-- Asistencia a la conducción: sistemas avanzados de asistencia al conductor (ADAS) que requieren estimación de profundidad para detección de peatones, distancia a vehículos y frenado de emergencia. La cuantización w8a16 reduce el consumo energético en vehículos.
-- Aplicaciones de accesibilidad: ayuda a personas con discapacidad visual para detectar obstáculos y orientarse en entornos desconocidos, ejecutándose en smartphones de gama media con Snapdragon.
+- Realidad aumentada en movil: medir distancias relativas entre objetos de la escena para colocar elementos virtuales con oclusion correcta, aprovechando los 13-27 ms de inferencia en NPU de Snapdragon 8 Elite y superiores.
+- Fotografia computacional: generar mapas de profundidad para efecto bokeh o desenfoque selectivo en la camara de un smartphone, ejecutando el modelo en la NPU sin cargar la CPU.
+- Robotica de bajo consumo: dotar de percepcion de profundidad a robots moviles o drones basados en plataformas Dragonwing (QCS8550, IQ-8275) a 25-52 ms por frame.
+- Escaneo 3D y reconstruccion: generar nubes de puntos a partir de secuencias de video capturadas con movil, usando la profundidad por frame como entrada a un pipeline de SLAM o fotogrametria.
+- Asistencia a la conduccion y ADAS de bajo coste: estimacion de distancia relativa a obstaculos en plataformas embebidas con NPU Qualcomm, con latencias por debajo de 50 ms.
+- Realidad virtual y videojuegos en dispositivos moviles: generar profundidad para reproyeccion o efectos de paralaje en tiempo real sin GPU dedicada.
+- Automatizacion industrial e IoT: inspeccion visual y deteccion de obstaculos en camaras inteligentes con chipset QCS6490 o similar, donde el consumo energetico es critico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precisión (como RMSE o delta) en la información disponible. Sin embargo, la tabla de rendimiento de Qualcomm muestra tiempos de inferencia en diferentes chipsets, que se resumen a continuación:
+La informacion disponible no incluye resultados de benchmarks academicos (como los reportados en el paper arXiv:2406.09414) para este checkpoint. Si se incluyen mediciones de latencia y memoria por dispositivo ejecutadas por Qualcomm AI Hub Workbench:
 
-| Chipset | Runtime | Precision | Tiempo de inferencia (ms) | Memoria pico (MB) |
+| Runtime | Precision | Chipset | Latencia (ms) | Memoria pico (MB) |
 |---|---|---|---|---|
-| Snapdragon X2 Elite | ONNX | float | 19,105 | 5 |
-| Snapdragon X Elite | ONNX | float | 49,17 | 48 |
-| Snapdragon 8 Gen 3 Mobile | ONNX | float | 36,362 | 0-474 |
-| Snapdragon 8 Gen 1 Mobile | ONNX | float | 86,366 | 1-476 |
-| Snapdragon 8 Elite Mobile | ONNX | float | 25,444 | 2-365 |
-| Snapdragon 8 Elite Gen 5 Mobile | ONNX | float | 18,775 | 2-371 |
-| Snapdragon X2 Elite | ONNX | w8a16 | 12,341 | 4 |
-| Snapdragon X Elite | ONNX | w8a16 | 28,614 | 28 |
-| Snapdragon 8 Gen 3 Mobile | ONNX | w8a16 | 20,324 | 3-652 |
-| Snapdragon 8 Gen 1 Mobile | ONNX | w8a16 | 44,913 | 3-527 |
+| ONNX | float | Snapdragon 8 Elite Extreme Gen 6 | 13,836 | 1 - 374 |
+| ONNX | float | Snapdragon X2 Elite | 20,601 | 5 - 5 |
+| ONNX | float | Snapdragon 8 Elite Gen 5 | 22,866 | 2 - 385 |
+| ONNX | float | Snapdragon 8 Elite | 26,024 | 35 - 410 |
+| ONNX | float | Snapdragon 8 Gen 3 | 34,164 | 0 - 490 |
+| ONNX | float | Snapdragon X Elite | 45,103 | 48 - 48 |
+| ONNX | float | Snapdragon 8 Gen 1 | 74,574 | 6 - 514 |
+| ONNX | w8a16 | Snapdragon 8 Elite Gen 5 | 11,856 | 1 - 419 |
+| ONNX | w8a16 | Snapdragon X2 Elite | 11,369 | 4 - 4 |
+| ONNX | w8a16 | Snapdragon 8 Elite | 14,663 | 3 - 411 |
+| ONNX | w8a16 | Snapdragon 8 Gen 3 | 19,293 | 3 - 512 |
+| ONNX | w8a16 | Snapdragon 8 Gen 1 | 33,523 | 3 - 513 |
+| ONNX | w8a16 | Dragonwing QCS6490 | 85,032 | 2 - 5 |
 
-Estos datos indican que la cuantización w8a16 reduce significativamente la latencia en la mayoría de los dispositivos, a costa de un mayor rango de memoria en algunos casos.
-
-## Requisitos de hardware
-
-- VRAM estimada: el modelo float ocupa 94,3 MB, por lo que cabe en cualquier GPU moderna y en memoria de dispositivos móviles. Con cuantización w8a16, el tamaño se reduce aún más.
-- GPU recomendadas: no requiere GPU dedicada; está diseñado para NPU de Qualcomm (Snapdragon, Dragonwing). En caso de usar GPU, cualquier GPU con al menos 1 GB de VRAM es suficiente.
-- Compatibilidad con consumer GPU: sí, puede ejecutarse en GPUs de escritorio mediante ONNX Runtime o PyTorch, aunque no es el objetivo principal.
-- Opciones de despliegue: Qualcomm AI Hub (para exportación y compilación), ONNX Runtime, TFLite, y el SDK de Qualcomm AI Hub Workbench. También se puede usar con llama.cpp u otros frameworks, pero no es lo habitual.
-- Latencia y throughput: en dispositivos Qualcomm, la latencia varía entre 12 ms (Snapdragon X2 Elite con w8a16) y 245 ms (Dragonwing Q-6690 con w8a16). El throughput depende del dispositivo y la resolución de entrada.
+La cuantizacion w8a16 reduce la latencia aproximadamente un 40-50 % respecto a float en los chipsets medidos, con un incremento de memoria pico en algunos casos (por ejemplo, Snapdragon 8 Elite Gen 5 pasa de 2-385 MB a 1-419 MB).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos de estimación de profundidad en la información proporcionada. Sin embargo, se puede comparar cualitativamente con alternativas conocidas:
+| Modelo | Parametros | Resolucion | Licencia | Despliegue en NPU Qualcomm | Notas |
+|---|---|---|---|---|---|
+| Depth-Anything-V2 Small (esta ficha) | 24,7 M | 518×518 | MIT | Si (ONNX, QNN_DLC, TFLite) | Optimizado por Qualcomm AI Hub |
+| Depth-Anything-V2 Base | No disponible en la informacion | No disponible | MIT (modelo original) | No disponible | Checkpoint mayor de la misma familia; no incluido en esta ficha |
+| Depth-Anything-V2 Large | No disponible en la informacion | No disponible | MIT (modelo original) | No disponible | Checkpoint mayor de la misma familia; no incluido en esta ficha |
+| MiDaS / DPT | No disponible en la informacion | No disponible | MIT (modelo original) | No disponible | Alternativa clasica de MDE; sin datos de rendimiento en NPU en la informacion disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Depth-Anything-V2 (Small) | 24,7 M | Imagen 518x518 | MIT | Hugging Face, Qualcomm AI Hub |
-| MiDaS (varios tamaños) | 21 M - 105 M | Imagen variable | MIT | Hugging Face |
-| Depth Anything V1 | 25 M - 335 M | Imagen variable | Apache 2.0 | Hugging Face |
-
-Depth-Anything-V2 destaca por su eficiencia en hardware Qualcomm, mientras que MiDaS y Depth Anything V1 son más genéricos y no están optimizados para NPU específicas. No se dispone de benchmarks de precisión para comparar numéricamente.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros y disponibilidad de despliegue.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser un modelo de visión, puede presentar errores en imágenes con oclusiones extremas, superficies transparentes o reflectantes, y escenas con poca textura. No se han documentado sesgos demográficos específicos.
-- Riesgo de alucinación: en estimación de profundidad, puede generar profundidades incorrectas en regiones ambiguas, como cielos o fondos uniformes.
-- Limitaciones de contexto: la resolución de entrada está fijada a 518x518; imágenes de mayor resolución requieren redimensionado, lo que puede afectar la precisión en objetos pequeños.
-- Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero el modelo está optimizado para hardware Qualcomm; su uso en otras plataformas puede requerir conversiones adicionales.
-- Caveat para producción: la cuantización w8a16 puede degradar ligeramente la precisión en comparación con float, aunque no se especifica el impacto exacto. Se recomienda validar en el caso de uso concreto.
+- La estimacion de profundidad es relativa y puede no ser metricamente precisa; no se especifica en la informacion si la salida esta calibrada en unidades fisicas.
+- El modelo se ha validado exclusivamente en hardware Qualcomm; el rendimiento en otras plataformas (GPU NVIDIA, CPU x86) no esta documentado en esta ficha.
+- La cuantizacion w8a16 puede introducir degradacion en la calidad del mapa de profundidad, especialmente en bordes y objetos finos; no se aportan metricas de error (AbsRel, RMSE) para cuantificar esta perdida.
+- No se documentan sesgos del dataset de entrenamiento ni su comportamiento en escenas con condiciones extremas (poca luz, superficies reflectantes, transparencias).
+- Aunque la licencia es MIT, conviene verificar las condiciones de los pesos originales de Depth-Anything-V2 y de las dependencias (DINOv2, QAIRT) antes de un despliegue comercial.
+- El repositorio de 5,8 GB incluye multiples artefactos exportados; el checkpoint util en float es de 94,3 MB, pero el espacio en disco necesario para el conjunto completo es considerable.
+- No hay informacion sobre el soporte de idiomas ni sobre capacidades de texto: es un modelo estrictamente visual.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/qualcomm/Depth-Anything-V2
-- Sitio web de Depth Anything V2: https://depth-anything-v2.github.io/
-- Repositorio de Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.61.0/src/qai_hub_models/models/depth_anything_v2
-- Qualcomm AI Hub (página del modelo): https://aihub.qualcomm.com/models/depth_anything_v2
+- Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/depth_anything_v2
+- Repositorio ai-hub-models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/depth_anything_v2
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Implementacion en transformers: https://github.com/huggingface/transformers/tree/main/src/transformers/models/depth_anything
+- Paper Depth-Anything-V2 (arXiv:2406.09414): https://arxiv.org/abs/2406.09414
+- Web de Qualcomm: https://www.qualcomm.com/

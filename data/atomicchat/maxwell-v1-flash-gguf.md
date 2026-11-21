@@ -2,99 +2,106 @@
 
 ## Resumen
 
-Maxwell-V1-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Maxwell, con un total de 35.970.737.539 parámetros (aproximadamente 36B) y 3B parámetros activos por token. Está preentrenado sobre unos 26 billones (26T) de tokens multilingües y postentrenado para razonamiento, búsqueda y trabajo agéntico. Se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en productos derivados.
+Maxwell-V1-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Maxwell, con un total de 35.970.737.539 parámetros y aproximadamente 3.000 millones de parámetros activos por token. Está preentrenado sobre unos 26 billones de tokens multilingües y ajustado posteriormente para razonamiento, búsqueda y tareas agénticas. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-El repositorio AtomicChat/Maxwell-V1-Flash-GGUF contiene la primera cuantización GGUF del modelo, creada por AtomicChat a partir de los pesos BF16 originales del equipo Maxwell. Incluye además el parche `maxwell-moe-port.patch`, que añade el soporte de la arquitectura `maxwell-moe` a llama.cpp en el commit `d3c3e242c`. Es relevante ahora porque permite ejecutar localmente un MoE de 36B con solo 3B activos, algo especialmente atractivo para hardware de consumo y estaciones de trabajo con GPU de gama alta, aunque con la advertencia de que el llama.cpp estándar, LM Studio y Ollama todavía no cargan estos ficheros.
+El repositorio analizado, AtomicChat/Maxwell-V1-Flash-GGUF, no contiene los pesos originales sino cuantizaciones GGUF producidas por AtomicChat para su uso con llama.cpp. AtomicChat es el equipo detrás de la aplicación Atomic Chat, orientada a ejecutar modelos de pesos abiertos en local y sin conexión. La relevancia de esta publicación radica en que es el primer GGUF disponible de Maxwell-V1-Flash y en que su soporte en llama.cpp ha requerido un parche propio (maxwell-moe-port.patch) sobre el commit d3c3e242c, ya que las versiones estándar de llama.cpp, LM Studio y Ollama todavía no cargan estos ficheros.
 
-Una característica diferencial es su tokenizador, diseñado específicamente para tailandés, lao, birmano, jemer y shan, además de CJK y texto latino. El modelo es inusualmente sensible al redondeo numérico: pequeñas diferencias en la precisión pueden alterar la selección de expertos en el router, lo que condiciona las recomendaciones de cuantización y despliegue.
+Una particularidad destacable es la sensibilidad del modelo a la cuantización: según las métricas del autor, a 4,6 bits por peso el fichero reproduce el token original solo el 85,7 % de las veces, cuando modelos de esta clase suelen mantenerse por encima del 95 %. Por ello AtomicChat publica cuantizaciones con matrices de importancia (imatrix) calculadas sobre los pesos BF16 y descarta por debajo de 20 GB al caer del 80 % de coincidencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (`maxwell-moe`), 45 bloques: 3 densos SwiGLU + 42 con 256 expertos enrutados (12 activos) y un experto compartido; GQA (32 cabezas Q, 4 KV, head size 128); RMSNorm por cabeza en Q y K; RoPE; manifold-constrained hyper-connections (mHC) con 4 flujos residuales |
-| Parametros totales | 35.970.737.539 (~36B) |
-| Parametros activos | ~3B por token |
-| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de despliegue usa `-c 32768`) |
-| Tipos de cuantizacion | BF16 (2 partes, 16.02 bpw), Q8_0 (8.54 bpw); se menciona un preset Q4_K_M sin importance matrix (21.9 GB) que el autor no publica; se cita un fichero `AD-Q4_K-IQ4_XS` en el ejemplo de ejecucion |
-| Idiomas soportados | Multilingue; tokenizador optimizado para thai, lao, birmano, jemer y shan, ademas de CJK y latin |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); pesos originales BF16 en el modelo base |
+| Arquitectura | Mixture-of-Experts (MoE) tipo transformer, con matrices de mezcla mHC y 256 expertos enrutados (top-12) |
+| Parametros totales | 35.970.737.539 |
+| Parametros activos | ~3.000 millones (3B active) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q6_K-Q5_K, AD-Q5_K-Q4_K, AD-Q4_K-IQ4_XS (las AD mantienen todo salvo los expertos enrutados en Q8_0, con matrices de mezcla mHC en F32) |
+| Idiomas soportados | Multilingüe; tokenizador diseñado específicamente para tailandés, lao, birmano, jemer y shan, además de CJK y texto latino |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (BF16 en dos partes, más cuantizaciones AD y Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer con mezcla de expertos: 45 bloques en total, de los cuales los tres primeros son densos con SwiGLU y los 42 restantes contienen 256 expertos enrutados (12 activos por token) más un experto compartido. El router usa puntuaciones sigmoideas con un sesgo de selección. La atención es GQA con 32 cabezas de consulta y 4 de clave/valor, tamaño de cabeza 128, RMSNorm por cabeza sobre Q y K, y RoPE. Incorpora manifold-constrained hyper-connections (mHC): cuatro flujos residuales mezclados mediante matrices normalizadas con Sinkhorn y colapsados por una cabeza aprendida, con la misma aritmética que el mHC de DeepSeek-V4 en llama.cpp.
+Maxwell-V1-Flash es un transformer MoE con 35,97 mil millones de parámetros totales y aproximadamente 3 mil millones activos por token, lo que sitúa su coste de inferencia en el rango de un modelo denso de 3B pese a su tamaño total. El modelo emplea 256 expertos enrutados con selección top-12 y matrices de mezcla mHC (que en las cuantizaciones de AtomicChat se conservan en F32). El tokenizador está construido de forma explícita para dar cobertura al tailandés, lao, birmano, jemer y shan, además de CJK y latino, lo que lo diferencia de la mayoría de modelos multilingües de su categoría.
 
-El preentrenamiento se realizó sobre aproximadamente 26T de tokens multilingües, seguido de un postentrenamiento orientado a razonamiento, búsqueda y tareas agénticas. El tokenizador propio separa explícitamente saltos de línea, texto Han y secuencias de thai/lao/birmano/jemer antes de aplicar una división de palabras estilo GPT-4o; según el autor, coincide con el tokenizador original en las 5.599 muestras comparadas (30 idiomas, código, casos límite y un barrido de puntos de código). El puerto a llama.cpp no implementa todavía la atención block-sparse del modelo original.
+El preentrenamiento se realizó sobre aproximadamente 26 billones de tokens multilingües, seguido de un postentrenamiento orientado a razonamiento, búsqueda y trabajo agéntico. No se detalla en la información disponible la composición exacta del dataset ni si se emplearon RLHF o DPO. Una innovación relevante documentada por el cuantizador es el comportamiento del router: pequeñas diferencias numéricas en cualquier capa pueden alterar qué expertos se seleccionan cerca del límite del top-12, lo que explica la inusual sensibilidad del modelo al redondeo y a la cuantización. El mismo BF16 ejecutado en F32 frente a bf16 presenta una divergencia media de KLD de 0,030 y una coincidencia de token superior del 93,2 %.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento, con modo de pensamiento (thinking) activado por defecto y desactivable mediante `enable_thinking`.
-- Trabajo agéntico y razonamiento multi-paso, según el postentrenamiento declarado por el autor.
-- Soporte de tool calling mediante la plantilla de chat embebida (requiere `--jinja` en llama.cpp).
-- Capacidades de búsqueda (search) integradas en el postentrenamiento.
-- Multilingüismo amplio, con cobertura específica de idiomas del sudeste asiático poco habituales (thai, lao, birmano, jemer, shan) además de CJK y latino.
-- Ejecución local y offline mediante llama.cpp con el parche `maxwell-moe-port.patch`.
-- No se documentan capacidades de visión, audio ni otras modalidades en la información disponible.
+- Generación de texto conversacional multi-turno.
+- Razonamiento explícito, con modo de pensamiento (thinking) que puede desactivarse; verificado por el autor en llama-server con --jinja.
+- Llamada a herramientas (tool calling / function calling), verificada manualmente por AtomicChat.
+- Flujos agénticos y razonamiento multi-paso, según el postentrenamiento declarado.
+- Búsqueda (search) como tarea para la que fue postentrenado.
+- Capacidades multilingües con foco en lenguas del sudeste asiático (tailandés, lao, birmano, jemer, shan), además de CJK y latino.
+- Respuestas en idiomas distintos del inglés verificadas en pruebas manuales (respuesta en tailandés).
 
 ## Casos de uso
 
-- Asistencia conversacional local: un MoE de 36B con 3B activos permite desplegar un chatbot de calidad en una estación de trabajo con 48 GB de VRAM usando Q8_0, manteniendo conversaciones multi-turno con plantilla de chat embebida.
-- Agentes autónomos con herramientas: el soporte de tool calling y el postentrenamiento agéntico permiten construir pipelines donde el modelo decide llamadas a APIs, ejecuta pasos intermedios y encadena razonamiento multi-paso.
-- Procesamiento de idiomas del sudeste asiático: el tokenizador específico para thai, lao, birmano, jemer y shan lo hace adecuado para aplicaciones de atención al ciudadano, traducción o moderación de contenido en esas lenguas, donde otros modelos fragmentan en exceso los tokens.
-- Búsqueda aumentada y resumen documental: su entrenamiento en tareas de búsqueda facilita integrarlo como motor de respuesta sobre corpus recuperados, con el modo thinking activado para consultas complejas.
-- Generación de código y tareas técnicas: aunque no se publican benchmarks de código, el modelo cubre código en su tokenizador y puede integrarse en asistentes de desarrollo locales sin enviar datos a la nube.
-- Despliegue en hardware de consumo de gama alta: con cuantizaciones de 4 bits (preset Q4_K_M de 21.9 GB, no publicado por el autor) cabría en GPUs de 24 GB, aunque el autor advierte de la sensibilidad del modelo al redondeo.
-- Investigación sobre enrutamiento MoE: la documentación del efecto del redondeo sobre la selección de expertos (KLD de 0.030 solo por usar bf16 en lugar de F32) lo convierte en un caso de estudio útil para quienes investigan cuantización de MoE.
+- Asistencia conversacional local: el modelo puede gestionar diálogos multi-turno en una aplicación de escritorio sin conexión como Atomic Chat, aprovechando su naturaleza MoE para mantener un coste de inferencia bajo (3B activos) en hardware de consumo.
+- Agentes con llamada a herramientas: al soportar tool calling y haber sido postentrenado para trabajo agéntico, encaja en orquestadores que encadenan búsquedas, ejecución de funciones y síntesis de resultados en varios pasos.
+- Procesamiento de idiomas del sudeste asiático: su tokenizador específico para tailandés, lao, birmano, jemer y shan lo hace adecuado para tareas de traducción, resumen o atención al cliente en esas lenguas, donde muchos modelos genéricos fragmentan en exceso el texto.
+- Razonamiento con modo thinking desactivable: útil en pipelines donde se necesita alternar entre respuestas rápidas y respuestas con cadena de razonamiento según la dificultad de la consulta.
+- Despliegue en estaciones de trabajo con GPU de 24 GB: la cuantización AD-Q4_K-IQ4_XS (20,8 GB) permite ejecutar el modelo completo en una RTX 3090 o RTX 4090, habilitando prototipado e investigación sin infraestructura de centro de datos.
+- Servicio de inferencia con llama-server: con 6.398 tokens/s de procesamiento de prompt y 173 tokens/s de generación en una H100 con contexto vacío, es viable para servir cargas moderadas de forma self-hosted.
+- Evaluación comparativa de cuantizaciones: el repositorio de métricas asociado permite a investigadores estudiar el impacto de la cuantización en modelos MoE sensibles al redondeo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de fidelidad de cuantización medidas con `llama-perplexity` sobre un corpus neutral de 30 idiomas (114 fragmentos de 4096 tokens), en llama.cpp `d3c3e242c` con el parche y 2x H100 80 GB:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos numéricos publicados son métricas de fidelidad de cuantización y de velocidad:
 
-| Fichero | GB en disco | bpw | KLD medio | KLD percentil 99 | Mismo token superior |
+| Fichero | GB en disco | bpw | KLD media | KLD p99 | Mismo token superior |
 |---|---:|---:|---:|---:|---:|
-| BF16 (2 partes) | 72.0 | 16.02 | 0 | 0 | 100% |
-| Q8_0 | 38.4 | 8.54 | 0.0371 | 0.431 | 93.6% |
-| Q4_K_M sin importance matrix (no publicado) | 21.9 | no disponible | 0.281 | no disponible | 81.6% |
+| BF16 (2 partes) | 72,0 | 16,02 | 0 | 0 | 100 % |
+| Q8_0 | 38,4 | 8,54 | 0,0371 | 0,431 | 93,6 % |
+| AD-Q6_K | 30,2 | 6,72 | 0,0482 | 0,563 | 92,6 % |
+| AD-Q6_K-Q5_K | 27,2 | 6,05 | 0,0697 | 0,826 | 90,9 % |
+| AD-Q5_K-Q4_K | 22,9 | 5,09 | 0,1383 | 1,649 | 87,3 % |
+| AD-Q4_K-IQ4_XS | 20,8 | 4,62 | 0,1736 | 2,045 | 85,7 % |
 
-El autor advierte que estas cifras incluyen un suelo de redondeo de aproximadamente 0.03: los mismos pesos BF16 ejecutados con entradas redondeadas a bf16 en lugar de F32 dan un KLD medio de 0.030 y un 93.2% de mismo token superior. El código de transformers del proveedor en bf16 difiere del fichero BF16 en un KLD medio de 0.044.
+Medido con llama-perplexity sobre un corpus neutral de 30 idiomas (114 fragmentos de 4.096 tokens), llama.cpp d3c3e242c con el parche, 2x H100 80 GB. El autor advierte que estas cifras incluyen un suelo de redondeo de aproximadamente 0,03.
+
+| Contexto | Procesamiento de prompt (tok/s) | Generación (tok/s) |
+|---|---:|---:|
+| Vacío (512 tokens) | 6.398 | 173 |
+| 8K tokens | 5.374 | 150 |
+| 32K tokens | 3.804 | 132 |
+
+Medido con llama-bench y flash attention sobre AD-Q4_K-IQ4_XS en 1x H100 80 GB.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 72 GB para BF16 (2 partes), 38.4 GB para Q8_0 y 21.9 GB para el preset Q4_K_M sin importance matrix (no publicado).
-- GPU recomendadas: el autor cita 48 GB de memoria GPU para Q8_0 y 64 GB de Mac; las mediciones se hicieron con 2x H100 80 GB. Para BF16 se requiere hardware de clase H100/A100 de 80 GB o superior.
-- GPU de consumo: Q8_0 no cabe en GPUs de 24 GB; el preset de 4 bits (21.9 GB) cabría en una RTX 4090 de 24 GB, aunque el autor no lo publica por su degradación (KLD medio 0.281, 81.6% de mismo token).
-- Despliegue: exclusivamente llama.cpp compilado en el commit `d3c3e242c` con el parche `maxwell-moe-port.patch` del repositorio. El llama.cpp estándar, LM Studio y Ollama no cargan estos ficheros todavía. El ejemplo de servidor usa `llama-server` con `--jinja -c 32768 -ngl 99 --temp 0.6 --top-p 0.95 --top-k 20`.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: 20,8 GB (AD-Q4_K-IQ4_XS), 22,9 GB (AD-Q5_K-Q4_K), 27,2 GB (AD-Q6_K-Q5_K), 30,2 GB (AD-Q6_K), 38,4 GB (Q8_0) y 72,0 GB (BF16).
+- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para AD-Q4_K-IQ4_XS; RTX 5090 (32 GB) para AD-Q6_K-Q5_K; 2x 24 GB para AD-Q6_K; 48 GB de VRAM para Q8_0; H100 80 GB para BF16 o para servicio de alta concurrencia.
+- Macs: 32 GB para AD-Q5_K-Q4_K, 48 GB para AD-Q6_K y 64 GB para Q8_0.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con la cuantización de 4,62 bpw y en RTX 5090 con la de 6,05 bpw.
+- Opciones de despliegue: exclusivamente llama.cpp con el parche maxwell-moe-port.patch sobre el commit d3c3e242c, y llama-server con --jinja. Las versiones estándar de llama.cpp, LM Studio y Ollama no cargan estos ficheros todavía.
+- Throughput: hasta 6.398 tok/s de prompt y 173 tok/s de generación en H100 con AD-Q4_K-IQ4_XS y contexto vacío; cae a 3.804 y 132 tok/s con 32K tokens de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Maxwell-V1-Flash | ~36B / ~3B | no disponible | Apache-2.0 | GGUF (llama.cpp con parche) y pesos BF16 originales | Tokenizador especializado en sudeste asiático; sensible al redondeo |
-| DeepSeek-V4 (referencia citada) | no disponible | no disponible | no disponible | no disponible | El autor cita su mHC como referencia aritmética implementada en llama.cpp |
-| Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
-
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
+No disponible. La información proporcionada no incluye datos de benchmarks de calidad ni especificaciones de modelos alternativos comparables, por lo que no es posible establecer una comparación rigurosa con otros MoE de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- Sensibilidad extrema al redondeo numérico: pequeñas diferencias de precisión alteran la elección de expertos en el router; incluso Q8_0 presenta un KLD medio de 0.037 frente a BF16.
-- El preset Q4_K_M sin importance matrix degrada notablemente la distribución (KLD medio 0.281, 81.6% de mismo token) y el autor decide no publicarlo.
-- Soporte limitado en herramientas: requiere llama.cpp parcheado en un commit concreto; llama.cpp estándar, LM Studio y Ollama no cargan los ficheros.
-- La atención block-sparse del modelo original no está implementada en el puerto de llama.cpp, por lo que el comportamiento puede diferir del modelo de referencia.
-- Longitud de contexto oficial no documentada en la información disponible; el ejemplo de despliegue usa 32.768 tokens.
-- Riesgo de alucinación y sesgos: no se documentan evaluaciones de sesgo ni de robustez en la información proporcionada.
-- Idiomas: aunque el tokenizador cubre 30 idiomas, no se detalla el rendimiento por idioma ni la calidad en castellano.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base `maxwell-model/Maxwell-V1-Flash` y de los pesos originales.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema y validación comunitaria todavía incipientes.
+- Sensibilidad extrema a la cuantización: a 4,62 bpw solo reproduce el token original el 85,7 % de las veces, frente al 95 % habitual en modelos de su clase. Por debajo de 20 GB el autor descarta publicar ficheros por caer del 80 % de coincidencia.
+- El redondeo en bf16 frente a F32 ya introduce por sí solo una KLD media de 0,030, atribuida a cambios en la selección de expertos cerca del límite del top-12 en cada capa.
+- Compatibilidad limitada: requiere un parche no upstream de llama.cpp; LM Studio y Ollama no funcionan con estos ficheros.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo general de los modelos generativos.
+- Sesgos conocidos: no documentados en la información disponible.
+- Longitud de contexto: no especificada, lo que impide planificar despliegues que dependan de ventanas largas.
+- Idiomas: aunque el tokenizador cubre varias lenguas del sudeste asiático, no se detalla el nivel de competencia por idioma ni se publican evaluaciones multilingües.
+- Licencia Apache 2.0: permite uso comercial, pero el parche de llama.cpp necesario debe evaluarse por separado en cuanto a su mantenimiento y soporte.
+- El repositorio ocupa 281,5 GB, lo que exige planificación de almacenamiento si se descargan varias cuantizaciones.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/AtomicChat/Maxwell-V1-Flash-GGUF
 - Modelo base: https://huggingface.co/maxwell-model/Maxwell-V1-Flash
+- Métricas y logs de cuantización: https://huggingface.co/datasets/AtomicChat/Maxwell-V1-Flash-GGUF-metrics
+- Corpus de calibración: https://huggingface.co/datasets/AtomicChat/calib-corpora/tree/main/builds/maxwell-v1-flash-moe
 - Aplicación Atomic Chat: https://atomic.chat/
-- Discord de AtomicChat: https://discord.gg/8wGSsvmg4V
-- GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
-- X (Twitter) de Atomic Chat: https://x.com/atomic_chat_hq
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Repositorio Atomic Chat en GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

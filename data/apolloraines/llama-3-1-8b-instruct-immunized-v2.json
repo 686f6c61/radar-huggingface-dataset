@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 872,
+  "downloads_30d": 866,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -57,31 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ApolloRaines/Llama-3.1-8B-Instruct_Concise · Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Concise",
-      "snippet": "Llama-3.1-8B-Instruct_Concise Llama-3.1-8B-Instruct_Concise A jBlaze representation-engineered variant of Llama-3.1-8B-Instruct. What is this? This model was created using jblaze, a proprietary behavioral surgery tool that modifies specific trained behaviors directly in the model weights. No fine-tuning or additional training was performed ..."
-    },
-    {
-      "title": "Llama-3.1-8B-Instruct-Uncensored-Complete - Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ApolloRaines/Llama-3.1-8B-Instruct_Concise - featherless.ai",
-      "url": "https://featherless.ai/models/ApolloRaines/Llama-3.1-8B-Instruct_Concise",
-      "snippet": "Accuracy Retention: Despite its conciseness, the model is designed to maintain the accuracy and helpfulness of the base Llama-3.1-8B-Instruct. Efficient Communication: Ideal for applications where brevity and directness are paramount, reducing token usage and improving response parsing."
-    },
-    {
-      "title": "ApolloRaines/Llama-3.1-8B-Instruct-Flat-Concise - featherless.ai",
-      "url": "https://featherless.ai/models/ApolloRaines/Llama-3.1-8B-Instruct-Flat-Concise",
-      "snippet": "Deploy Llama-3.1-8B Instruct Flat Concise (8B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month. ApolloRaines/Lla..."
-    },
-    {
-      "title": "GitHub - GargTanya/llama3-instruct: The official Meta Llama 3 GitHub ...",
-      "url": "https://github.com/GargTanya/llama3-instruct",
-      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
-    }
-  ]
+  "sources": []
 }

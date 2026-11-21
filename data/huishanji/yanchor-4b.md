@@ -2,92 +2,101 @@
 
 ## Resumen
 
-YANchor-4B es un modelo alojado en Hugging Face bajo el identificador `HuishanJi/YANchor-4B`, publicado por el usuario HuishanJi. La única información verificable disponible en el repositorio es la licencia (Apache 2.0) y la fecha de creación (3 de octubre de 2026); la model card está prácticamente vacía y se limita a repetir la licencia, sin descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero "likes" en el momento de la consulta.
+EdgeRock-4B (publicado en Hugging Face como `HuishanJi/YANchor-4B`) es un modelo de lenguaje y vision de 4.578 millones de parametros desarrollado por Rock Matrix. Su propuesta central es el razonamiento fuerte con memoria constante: en lugar de un KV cache que crece linealmente con el contexto, emplea un estado recurrente que resume el historial, atencion local para la informacion reciente y unos anclajes de memoria denominados Rock Memory Anchors (RMA) que preservan detalles lejanos seleccionados. El resultado es un coste de memoria de atencion fijo por secuencia, lo que abarata el despliegue de generaciones largas y el servicio concurrente.
 
-Por la nomenclatura del identificador, cabe inferir que se trata de un modelo de aproximadamente 4.000 millones de parámetros, pero esta cifra no está confirmada en ninguna fuente y debe tratarse como una suposición basada únicamente en el nombre. No se dispone de pipeline declarado, idiomas soportados, longitud de contexto ni formato de pesos.
+El modelo procesa texto e imagenes y genera texto, orientado a razonamiento, codigo y flujos de agentes. Segun la model card, alcanza un 82,9 % de pass@1 medio en AIME 2024-2026 y utiliza 72 MiB de KV de atencion por secuencia, con un 99,1 % menos de KV BF16 que Qwen3.5-4B a 256K de contexto. Es relevante ahora porque ataca el cuello de botella de memoria en inferencia de contexto largo sin renunciar a capacidades multimodales ni a razonamiento de tipo cadena de pensamiento.
 
-La relevancia actual del modelo es limitada: al carecer de documentación técnica, de benchmarks publicados y de cualquier traza de uso por parte de la comunidad, no es posible evaluar su calidad ni recomendarlo para producción. Las búsquedas web realizadas no devuelven ninguna referencia a este modelo concreto.
+La licencia es propietaria (EdgeRock Model License 1.0), etiquetada como "commercial-use" pero con terminos propios que conviene revisar antes de produccion. Los pesos se distribuyen en safetensors y requieren codigo personalizado (`custom-code`), con un wheel especifico de Transformers 5.7.0.dev0 incluido en el repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el nombre "4B" sugiere ~4.000 millones, sin confirmar) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Hibrida: estado recurrente (GDN) + atencion local + Rock Memory Anchors (RMA) |
+| Parametros totales | 4.578.061.568 |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | hasta 256K (se reportan resultados a 128K y 256K) |
+| Tipos de cuantizacion | no disponible (la model card describe ejecucion en BF16/FP16/FP32) |
+| Idiomas soportados | en, zh |
+| Licencia | edgerock-model-license-1.0 (other, etiquetada commercial-use) |
+| Formato de pesos | safetensors (custom-code) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en el repositorio de Hugging Face. Se desconoce si emplea un transformer denso, una mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida.
+EdgeRock-4B combina tres mecanismos. Un estado recurrente de tipo GDN (gated delta network, segun las referencias a "FP32 GDN updates" en la model card) resume el contexto historico en capacidad fija. Una atencion local procesa la informacion reciente con ventana acotada. Y los Rock Memory Anchors (RMA) retienen detalles distantes seleccionados, de modo que el historial persistente no crece con la peticion. El runtime almacena el estado GDN en FP32 con batch size 1 y en FP16 para batches mayores, mientras que el KV de atencion se mantiene en BF16.
 
-Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta sección queda como no disponible.
+La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO. Se menciona un articulo en arXiv (2610.10118) y un whitepaper de Rock Matrix que describen la familia y la hoja de ruta, pero los datos concretos de preentrenamiento y alineacion no estan disponibles en la informacion proporcionada. La innovacion tecnica destacable es el almacenamiento de KV de capacidad fija: 72 MiB de KV de atencion por secuencia y 97,76 MiB de historial persistente total en el runtime por batches, incluyendo matrices recurrentes en FP16 y estado auxiliar.
 
 ## Capacidades
 
-- Generación de texto: no confirmada documentalmente.
-- Razonamiento, código o matemáticas: no disponibles.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo de pensamiento, visión, audio): no disponible.
-
-No es posible enumerar capacidades concretas porque el autor no ha publicado ninguna descripción funcional del modelo.
+- Generacion de texto con razonamiento explicito (cadena de pensamiento) orientado a matematicas, segun los resultados en AIME.
+- Generacion de codigo y soporte a flujos de agentes, segun la descripcion del autor.
+- Comprension de imagenes y texto (image-text-to-text): responde preguntas sobre imagenes y razona sobre ellas.
+- Contexto largo de hasta 256K tokens con memoria de atencion constante.
+- Multilinguee limitado a ingles y chino.
+- No se documenta soporte explicito de tool calling o function calling en la informacion disponible.
+- No se documenta modo thinking separado, audio ni otras modalidades mas alla de texto e imagen.
 
 ## Casos de uso
 
-Dado que no se documentan capacidades, cualquier caso de uso es hipotético y está condicionado a que el modelo se comporte como un modelo de lenguaje de ~4B parámetros estándar. Se enumeran a título orientativo, sin que ello implique validación alguna:
-
-- Generación de texto asistida en local: si el modelo rinde como un LM de ~4B, podría ejecutarse en una GPU de consumo para tareas de redacción y resumen, aunque no hay evidencias de calidad.
-- Clasificación y etiquetado de textos: un modelo de este tamaño suele ser viable para tareas de clasificación ajustadas con fine-tuning, pero no se ha publicado ninguna evaluación.
-- Extracción de información estructurada: potencial uso en pipelines de parsing de documentos, sin datos que respalden su precisión.
-- Prototipado e investigación: podría servir como base para experimentos académicos si se publicaran pesos utilizables, algo que no está confirmado.
-- Asistente conversacional ligero: únicamente si se demuestra soporte multi-turno y contexto suficiente, capacidades no documentadas.
-- Fine-tuning específico de dominio: cualquier ajuste requeriría primero verificar el formato de pesos, que no se especifica.
-
-En ningún caso se recomienda su uso en producción sin una evaluación previa propia.
+- Razonamiento matematico por lotes: el modelo resuelve problemas de competicion (AIME) con pass@1 alto; util para generacion de soluciones verificables en pipelines de evaluacion o tutoria automatica.
+- Agentes de larga duracion: al mantener memoria constante, se puede sostener una sesion de agente con muchas iteraciones sin que el KV cache agote la GPU, lo que abarata el servicio concurrente.
+- Analisis de documentos extensos con imagenes: combinando contexto de 256K y entrada visual, se pueden procesar informes con graficos y tablas y extraer conclusiones en una sola pasada.
+- Asistente de codigo en CI/CD: con generacion de codigo y contexto largo, puede revisar diffs grandes o repositorios completos dentro de la ventana disponible.
+- Servicio de atencion al cliente multirramo: conversaciones multi-turno largas en ingles o chino con coste de memoria estable por sesion, lo que permite mas usuarios simultaneos por GPU.
+- Procesamiento de imagenes tecnicas: descripcion y razonamiento sobre capturas, diagramas o figuras en flujos de documentacion automatizada.
+- Inferencia en hardware limitado: con 4.578 millones de parametros y memoria de estado fija, es candidato para despliegues en una sola GPU de gama alta o media-alta con contexto largo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados reportados en la model card (no verificados de forma independiente):
+
+| Benchmark | EdgeRock-4B | Referencia comparada |
+|---|---|---|
+| AIME 2024-2026 (pass@1 medio) | 82,9 % | RWKV-7 G1j 14B: 18,8 % |
+| Benchmark visual (6 tareas, exactitud media) | 84,9 % | Qwen3.5-4B: retiene el 95,3 % de su exactitud media |
+| KV de atencion BF16 a 256K | 72 MiB por secuencia | Qwen3.5-4B: 99,1 % mayor |
+| Decodificacion en Hopper 80GB (batch 1, 128K in / 128K out) | 233,7 tokens/s | no disponible |
+| Throughput de salida a 32K in / 32K out | 6,42x el de Qwen3.5-4B | Qwen3.5-4B (mejor batch medido) |
+
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo denso de ~4B parámetros ocuparía aproximadamente 8 GB en FP16, 4 GB en INT8 y 2,5-3 GB en cuantización de 4 bits, pero estas cifras son estimaciones genéricas y no están confirmadas para YANchor-4B.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada. Si el tamaño real fuese ~4B en 4 bits, cabría teóricamente en GPUs con 6-8 GB de VRAM, pero no hay verificación.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; se desconoce si existen pesos en GGUF u otros formatos compatibles.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita; el modelo pesa 18,6 GB en el repositorio y la model card reporta ejecucion en BF16 con GPU Hopper de 80 GB para los resultados de throughput.
+- GPU recomendadas: Hopper (H100/H200) para la ruta CUDA optimizada; el backend portable soporta CPU y CUDA generica.
+- Cabe en GPU de consumo: probable en cuantizacion reducida por el tamano de pesos, pero no se documenta soporte de cuantizacion ni VRAM minima; no confirmado.
+- Opciones de despliegue: backend propio del repositorio (`run.py`), Transformers 5.7.0.dev0 con wheel incluido; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 233,7 tokens/s de decodificacion en una Hopper 80GB con batch 1, 128K de entrada y 128K de salida; 6,42x el throughput de salida de Qwen3.5-4B a 32K/32K.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa porque se desconocen los parámetros reales, el contexto y el rendimiento de YANchor-4B. A continuación se indican alternativas de tamaño comparable como referencia de categoría, con los datos de YANchor marcados como no disponibles:
+| Modelo | Parametros | Contexto | Memoria de atencion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| EdgeRock-4B | 4.578 M | 256K | fija (72 MiB/seq) | EdgeRock Model License 1.0 | Hugging Face, ModelScope, GitHub |
+| Qwen3.5-4B | ~4B | hasta 256K (segun la comparativa) | crece con el contexto | no disponible en la informacion | no disponible en la informacion |
+| RWKV-7 G1j | 14B (clase) | no disponible | estado acotado | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| YANchor-4B | no disponible (~4B por el nombre) | no disponible | Apache 2.0 | Repositorio HF sin documentación |
-| Qwen3-4B | ~4B | hasta 32K (segun variante) | Apache 2.0 | Ampliamente disponible |
-| Llama 3.2 3B | ~3B | 128K | Llama 3.2 Community License | Ampliamente disponible |
-| Phi-3.5-mini | ~3,8B | 128K | MIT | Ampliamente disponible |
-
-Los datos de los modelos de referencia se incluyen únicamente como contexto de categoría; no implican ninguna equivalencia de calidad con YANchor-4B.
+La comparativa se limita a los modelos citados por el autor; no se dispone de datos de rendimiento independientes para Qwen3.5-4B ni RWKV-7 G1j en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: no hay información sobre arquitectura, entrenamiento, datos ni evaluación, lo que impide cualquier juicio técnico fundamentado.
-- Sesgos conocidos: no disponibles; al desconocer el dataset de entrenamiento no puede evaluarse el sesgo.
-- Riesgo de alucinación: no cuantificado; sin benchmarks no puede estimarse.
-- Limitaciones de contexto o idioma: no disponibles.
-- Restricciones de licencia: la licencia es Apache 2.0, que en principio permite uso comercial, pero al no existir una declaración explícita del autor sobre los pesos ni sobre los datos de entrenamiento, conviene verificar la procedencia antes de un uso comercial.
-- Estado del repositorio: cero descargas y cero interacciones sugieren que el modelo no ha sido validado por la comunidad.
-- Fecha de creación futura registrada (2026-10-03) y ausencia total de documentación, lo que refuerza la cautela sobre su madurez y utilidad.
-- No existe confirmación de que los pesos estén realmente subidos y sean descargables.
+- Licencia propietaria: aunque se etiqueta como commercial-use, los terminos de la EdgeRock Model License 1.0 deben revisarse antes de uso comercial; no es una licencia open source estandar.
+- Requiere codigo personalizado y un wheel especifico de Transformers 5.7.0.dev0; la integracion con ecosistemas estandar puede ser fragil.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
+- Riesgo de alucinacion no cuantificado; los benchmarks de razonamiento no garantizan fiabilidad factual.
+- Resultados de benchmarks autoinformados por el autor y no verificados de forma independiente.
+- No se documentan sesgos conocidos, datos de entrenamiento ni procesos de alineacion, lo que dificulta evaluar riesgos.
+- Soporte de tool calling y agentes no confirmado explicitamente en la informacion disponible.
+- No se documentan opciones de cuantizacion ni despliegue en frameworks de servido populares (vLLM, TGI, llama.cpp).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/HuishanJi/YANchor-4B
-- No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en las búsquedas realizadas.
+- Hugging Face: https://huggingface.co/HuishanJi/YANchor-4B
+- Repositorio del autor en Hugging Face: https://huggingface.co/rockmatrix-ai/EdgeRock
+- GitHub: https://github.com/rockmatrix-ai/EdgeRock
+- ModelScope: https://modelscope.cn/models/rockmatrix/EdgeRock
+- arXiv: https://arxiv.org/abs/2610.10118
+- Whitepaper: https://rockmatrix.ai/documents/rock-matrix-whitepaper-en.pdf
+- Web oficial: https://rockmatrix.ai
+- Investigacion: https://rockmatrix.ai/research/#whitepaper

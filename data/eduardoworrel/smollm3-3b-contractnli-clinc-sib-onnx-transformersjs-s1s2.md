@@ -2,95 +2,114 @@
 
 ## Resumen
 
-SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-transformersjs-S1S2 es una especialización del modelo base SmolLM3-3B de Hugging Face, publicada por el usuario eduardoworrel. No se trata de un modelo de generación de texto al uso: el autor lo describe como un "especialista" que combina el modelo base cuantizado a int4 con cabezas de decisión separadas para tres tareas de clasificación (ContractNLI para inferencia sobre contratos, CLINC150 para intención conversacional y SIB-200 para clasificación de temas multilingüe). El paquete se distribuye en formato ONNX para su ejecución con Transformers.js en entornos JavaScript, tanto en Node como potencialmente en navegador.
+SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-transformersjs-S1S2 es un modelo especializado derivado de SmolLM3-3B de Hugging Face, publicado por el usuario eduardoworrel. Se trata de una compilación en formato Transformers.js (ONNX, cuantización int4) de un especialista que combina tres tareas de clasificación y decisión: ContractNLI (inferencia de cláusulas contractuales), CLINC150 (clasificación de intenciones conversacionales) y SIB-200 (clasificación temática multilingüe). El modelo conserva los pesos del LLM base pero añade cabezas de decisión entrenadas específicamente para cada tarea, aplicadas mediante la librería s1s2.
 
-La relevancia de esta ficha es acotada: el repositorio tiene cero descargas y cero likes en el momento de la consulta, fue creado en noviembre de 2026 y su model card es fundamentalmente una nota de compatibilidad con otra build de referencia (la versión ONNX Runtime GenAI). El autor indica que esta copia porta los mismos pesos int4 byte a byte que la build de referencia, cambiando únicamente metadatos del grafo y nombres de fichero, y que la paridad se verificó con 20 prompts de comprobación en CPU con onnxruntime-node 1.30.0 y transformers.js 4.3.1, obteniendo diferencias máximas de 0 en estados ocultos y probabilidades de cabeza, y 20/20 decisiones idénticas.
+La relevancia de este artefacto es fundamentalmente de despliegue: empaqueta un modelo de 3B parámetros en un formato ejecutable en navegador mediante transformers.js, con soporte para WebGPU y CPU (WASM), lo que permite ejecutar tareas de clasificación y decisión enteramente en el cliente sin infraestructura de servidor. La build de referencia es la variante ONNX Runtime GenAI del mismo autor; esta copia mantiene los mismos pesos int4 byte a byte y las mismas cabezas, con cambios en el grafo para adaptarse a transformers.js.
 
-Arquitectónicamente hereda el transformer de SmolLM3-3B (3.000 millones de parámetros) pero el uso previsto no es la generación libre, sino la lectura de estados ocultos por parte de cabezas de clasificación gestionadas por la librería propietaria `s1s2`. El tamaño del repositorio es de 1,8 GB y la licencia es CC BY-SA 4.0, condicionada por el dataset SIB-200.
+El modelo está pensado para aplicaciones que ya usan transformers.js y necesitan clasificación de documentos legales, detección de intenciones en asistentes conversacionales o categorización temática multilingüe, con la posibilidad de generar explicaciones con los mismos pesos cuando la confianza de la decisión es baja.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (SmolLM3-3B) con cabezas de clasificación externas; grafo ONNX |
-| Parametros totales | 3.000 millones (modelo base SmolLM3-3B) |
+| Arquitectura | Transformer decoder-only (SmolLM3-3B) con cabezas de decisión añadidas para clasificación |
+| Parametros totales | 3B (modelo base SmolLM3-3B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int4 (q4) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantizacion | int4 (q4) para ONNX; pesos en `onnx/model_q4.onnx` |
 | Idiomas soportados | en, pt |
 | Licencia | CC BY-SA 4.0 |
-| Formato de pesos | ONNX (model_q4.onnx) + config.json; cabezas en heads/ |
+| Formato de pesos | ONNX (int4), layout transformers.js (`config.json` + `onnx/model_q4.onnx`), cabezas en `heads/` |
+| Tamaño del repo | 1.8 GB |
+| Pipeline | text-generation / text-classification (decision) |
+| Librería | s1s2 |
+| Modelo base | HuggingFaceTB/SmolLM3-3B (Apache-2.0) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de SmolLM3-3B, un transformer de 3.000 millones de parámetros de Hugging Face, cuantizado a int4 y exportado a ONNX. Sobre ese grafo, el autor añade cabezas de decisión separadas (ficheros en `heads/`) que consumen el estado oculto final por token (`hidden_states`) y producen clasificaciones para tres tareas: ContractNLI (inferencia de entailment sobre cláusulas de contratos), CLINC150 (detección de intención y out-of-scope en dominios conversacionales) y SIB-200 (clasificación de temas en 200 idiomas, con manifiestos separados para inglés y portugués). El autor cita como receta de entrenamiento y cabeza pointer la del proyecto Kev (Apache-2.0), y como inspiración del reparto System 1 / System 2 y la compuerta de margen el proyecto CT0 de Alias Robotics, además del paper "Browser Immune System" (arXiv 2611.15302).
+El modelo parte de SmolLM3-3B, un transformer decoder-only de 3B parámetros desarrollado por Hugging Face. Sobre ese backbone, el autor ha añadido cabezas de decisión separadas (almacenadas en `heads/`) entrenadas para tres tareas concretas: inferencia de relaciones en contratos (ContractNLI, con opciones Entailment / Contradiction / Not mentioned), clasificación de intenciones conversacionales (CLINC150) y clasificación temática multilingüe (SIB-200, con manifiestos separados para inglés y portugués). Las cabezas se aplican sobre estados ocultos en posiciones de lectura específicas y se combinan con softmax para producir decisiones con probabilidad y margen.
 
-No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset más allá de las tres fuentes citadas (ContractNLI, CLINC150, SIB-200) ni si hubo RLHF o DPO. La model card tampoco especifica hiperparámetros, épocas ni estrategia de congelación de capas del modelo base. La innovación técnica declarada es la separación entre un "system 1" rápido (cabezas de clasificación sobre estados ocultos) y un "system 2" más deliberativo, con una compuerta de margen para decidir cuándo escalar, aunque los detalles de implementación no se incluyen en la información proporcionada.
+La compilación ONNX int4 modifica el grafo respecto a la build GenAI de referencia: la dimensión de cabeza del KV cache está fijada en el grafo (requisito de transformers.js), las filas de tokens se leen de la tabla int4 con operadores ONNX estándar en lugar de `com.microsoft GatherBlockQuantized` (sin kernel de CPU en navegador), y `lm_head` se divide en cuatro partes a lo largo del vocabulario para que la CPU del navegador quepa en memoria wasm32. El resto del grafo es idéntico al de la build GenAI. La paridad se verificó con 20 prompts de comprobación (no un test set): estados ocultos con diferencia máxima 0, probabilidades de cabeza con diferencia máxima 0 y 20/20 decisiones iguales en Node CPU; en Chrome 157 WebGPU (Apple M2 Pro), 10/10 decisiones iguales y diferencia máxima de probabilidad de 0,0036.
+
+No se detalla en la información proporcionada el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF/DPO para las cabezas. Los datos de entrenamiento incluyen SIB-200 (CC BY-SA 4.0), ContractNLI (CC BY 4.0) y CLINC150 (CC BY 3.0), lo que motiva la licencia ShareAlike del conjunto.
 
 ## Capacidades
 
-- Clasificación de intención conversacional (CLINC150), incluyendo detección de consultas fuera de dominio (out-of-scope).
-- Inferencia de entailment sobre cláusulas contractuales (ContractNLI): determinar si una hipótesis se sigue, contradice o es neutral respecto a una premisa contractual.
-- Clasificación de temas multilingüe (SIB-200) con manifiestos específicos para inglés y portugués.
-- Ejecución en JavaScript mediante Transformers.js, con soporte de ONNX Runtime en Node (verificado) y WebGPU en navegador (no verificado para este layout).
-- Acceso a estados ocultos por token mediante `model.forward()`, lo que permite integrar cabezas propias.
-- No es un modelo de generación libre en la práctica: el autor indica explícitamente que no es un `pipeline` de transformers.js ni un formato open-jev/Kev.
-- Soporte de tool calling, agentes o razonamiento multi-paso: no disponible (no es el propósito del paquete).
+- Decisión de inferencia textual en contratos (ContractNLI): determina si una hipótesis se deriva (Entailment), se contradice (Contradiction) o no se menciona (Not mentioned) en el texto contractual.
+- Clasificación de intenciones conversacionales (CLINC150): identifica la intención del usuario en diálogos de asistente.
+- Clasificación temática multilingüe (SIB-200): categoriza textos por tema en inglés y portugués.
+- Salida estructurada con decisión, probabilidad y margen de confianza, lo que permite umbrales de revisión.
+- Generación de texto explicativo con los mismos pesos (`generate`) para justificar decisiones cuando el margen es bajo.
+- Ejecución en navegador mediante transformers.js, con soporte WebGPU y CPU (WASM).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad nativa; la generación de explicaciones es de un solo paso.
+- Capacidades multilingües: limitadas a inglés y portugués según los manifiestos disponibles.
 
 ## Casos de uso
 
-- Moderación y enrutado de consultas en asistentes conversacionales: usar la cabeza CLINC150 para clasificar la intención del usuario y detectar peticiones fuera de dominio antes de invocar un LLM mayor, reduciendo coste y latencia.
-- Revisión automática de contratos: la cabeza ContractNLI permite etiquetar cláusulas como implicadas, contradictorias o neutrales respecto a hipótesis predefinidas (por ejemplo, "el contrato permite cesión a terceros"), útil en pipelines de due diligence.
-- Clasificación temática multilingüe en portugués e inglés: la cabeza SIB-200 con manifiestos separados permite etiquetar documentos o titulares por tema en ambos idiomas dentro de una misma aplicación JavaScript.
-- Aplicaciones web del lado del cliente: al ejecutarse con Transformers.js y ONNX, puede desplegarse en el navegador (pendiente de validación WebGPU en este layout) para clasificar texto sin enviar datos a un servidor, lo que resulta relevante en sectores con requisitos de privacidad.
-- Enrutado en sistemas RAG: clasificar la consulta entrante para decidir qué índice o herramienta consultar antes de la recuperación, usando la cabeza de intención como primer filtro.
-- Investigación en arquitecturas System 1 / System 2: el paquete sirve como referencia reproducible para estudiar compuertas de margen y separación entre clasificación rápida y razonamiento deliberativo, dado que el autor cita explícitamente esta línea de trabajo.
-- Prototipado rápido en Node.js: con `onnxruntime-node` y `@huggingface/transformers` se puede montar un servicio de clasificación sin salir del ecosistema JavaScript.
+- Revisión de contratos en el navegador: una aplicación legal puede cargar el modelo vía transformers.js y evaluar si cláusulas específicas (confidencialidad, devolución de información, terminación) se derivan o contradicen el contrato, sin enviar el documento a un servidor.
+- Asistente conversacional con detección de intención en cliente: integración del manifiesto CLINC150 para clasificar la intención del usuario antes de enrutar la consulta, ejecutándose en WebGPU con ~0,65 s por decisión en un Apple M2 Pro.
+- Categorización temática de contenido en portugués e inglés: uso del manifiesto SIB-200 para etiquetar artículos, tickets o mensajes por tema en aplicaciones web que ya usan transformers.js.
+- Triaje de documentos con umbral de confianza: el margen de decisión permite derivar a revisión humana los casos ambiguos y generar una explicación automática con `generate` para el revisor.
+- Herramientas de cumplimiento normativo en el cliente: verificación de cláusulas contractuales en aplicaciones de gestión documental que no pueden enviar datos a la nube por requisitos de privacidad.
+- Demos y prototipos sin backend: aplicaciones estáticas que ejecutan clasificación y decisión directamente en el navegador, aprovechando el formato ONNX int4 y el layout transformers.js.
+- Clasificación de intenciones en asistentes de voz o chat embebidos: uso del modelo en Node CPU como referencia exacta o en WebGPU para baja latencia en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta una comprobación de paridad con la build de referencia GenAI: 20 prompts de verificación (no un conjunto de test) en CPU con onnxruntime-node 1.30.0 y transformers.js 4.3.1, con diferencia máxima absoluta de 0 en estados ocultos y probabilidades de cabeza, y 20/20 decisiones idénticas. No se aportan métricas de precisión, F1 ni latencia sobre ContractNLI, CLINC150 o SIB-200.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento proporcionados son de paridad y latencia:
+
+| Metrica | Entorno | Resultado |
+|---|---|---|
+| Paridad de estados ocultos | Node CPU (onnxruntime-node 1.30.0, transformers.js 4.3.1) | max \|diff\| 0 |
+| Paridad de probabilidades de cabeza | Node CPU | max \|diff\| 0 |
+| Decisiones iguales a build GenAI | Node CPU, 20 prompts | 20/20 |
+| Decisiones iguales a build GenAI | Chrome 157 WebGPU (Apple M2 Pro), 10 prompts | 10/10 |
+| Diferencia máxima de probabilidad de cabeza | Chrome 157 WebGPU | 0,0036 |
+| Latencia por decisión | Chrome 157 WebGPU (Apple M2 Pro) | 0,65 s |
+| Latencia por decisión | Chrome 157 CPU (WASM) | 10,2 s |
+| Memoria de página | WebGPU | 0,5 GB (buffers GPU no contados) |
+| Memoria de página | CPU (WASM) | 2,8 GB (pico de pestaña 5,4 GB al cargar) |
+| Acuerdo con `pipeline("decision")` de transformers.js | Node CPU, 20 prompts | 17/20 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 1,8 GB, lo que sugiere que el grafo int4 más cabezas cabe holgadamente en GPUs de consumo, pero no se confirma en la información.
-- GPU recomendadas: no disponible.
-- Cabida en GPU de consumo: probable por el tamaño del artefacto (1,8 GB) y la cuantización int4, pero no confirmado por el autor.
-- Opciones de despliegue: Transformers.js con ONNX Runtime (Node verificado; WebGPU en navegador no ejecutado para este layout), y la build de referencia ONNX Runtime GenAI en el repositorio hermano.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: el repo pesa 1,8 GB en int4; en WebGPU la memoria de página medida es de 0,5 GB (sin contar buffers GPU); en CPU (WASM) 2,8 GB de página con pico de 5,4 GB durante la carga.
+- GPU recomendadas: no se especifican modelos concretos; se ha validado en Apple M2 Pro (WebGPU). Para GPUs discretas se puede asumir que cualquier GPU con soporte WebGPU y suficiente memoria para buffers de 3B en int4 debería funcionar, aunque no hay mediciones publicadas.
+- Cabe en consumer GPU: sí, en formato int4 (1,8 GB de pesos) cabe en GPUs de consumo con al menos 4 GB de VRAM, aunque no se han publicado mediciones específicas.
+- Opciones de despliegue: transformers.js (navegador con WebGPU o WASM; Node con onnxruntime-node), s1s2 (librería del autor), ONNX Runtime GenAI (build de referencia en el repo hermano). No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,65 s por decisión en WebGPU (Apple M2 Pro) y 10,2 s por decisión en CPU WASM en el mismo hardware. No se proporcionan datos de throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Este modelo (SmolLM3-3B especialista) | 3.000 M | no disponible | ONNX int4 + cabezas | CC BY-SA 4.0 | Hugging Face (0 descargas) |
-| HuggingFaceTB/SmolLM3-3B | 3.000 M | no disponible | safetensors | Apache-2.0 | Hugging Face (modelo base) |
-| SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2 | 3.000 M | no disponible | ONNX int4 (GenAI) | CC BY-SA 4.0 | Hugging Face (build de referencia) |
-| alias3-web (Alias Robotics) | no disponible | no disponible | no disponible | no disponible | Hugging Face (precursor citado) |
+| SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-transformersjs-S1S2 | 3B | no disponible | ONNX int4 (transformers.js) | CC BY-SA 4.0 | Especialista en decisión/clasificación en navegador |
+| SmolLM3-3B (base) | 3B | no disponible | safetensors, GGUF, etc. | Apache-2.0 | LLM generalista |
+| SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2 (build hermana) | 3B | no disponible | ONNX int4 (GenAI) | CC BY-SA 4.0 | Misma funcionalidad, formato ONNX Runtime GenAI |
+| Modelos de clasificación dedicados (p. ej. BERT-base) | ~110M | 512 tokens | safetensors, ONNX | variable | Clasificación clásica, sin generación |
 
-La comparación con modelos de clasificación estándar (por ejemplo, clasificadores BERT pequeños para CLINC150) no está disponible en la información proporcionada. El modelo base SmolLM3-3B es la referencia natural para generación, mientras que este paquete está orientado a clasificación y no es directamente comparable en tareas generativas.
+La comparativa con modelos de clasificación dedicados es cualitativa: este modelo ofrece decisión más generación explicativa con los mismos pesos, a costa de un tamaño mucho mayor (3B frente a ~110M) y mayor latencia. No se dispone de benchmarks comparativos publicados.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de generación de texto utilizable como `pipeline` estándar de transformers.js: requiere la librería `s1s2` para leer las cabezas de decisión.
-- La dimensión de cabeza del KV cache está fijada en el grafo, una restricción impuesta por Transformers.js que puede limitar la reutilización del grafo en otros runtimes.
-- La validación en navegador (WebGPU) no se ha ejecutado para este layout; solo se ha verificado en Node con CPU.
-- La licencia CC BY-SA 4.0 es ShareAlike: obliga a compartir bajo la misma licencia las obras derivadas, lo que puede ser problemático en productos comerciales cerrados. Además, hay que mantener la atribución de ContractNLI (CC BY 4.0), CLINC150 (CC BY 3.0), SIB-200 (CC BY-SA 4.0) y del modelo base (Apache-2.0).
-- Riesgo de alucinación y sesgos: no evaluado en la información disponible; al tratarse de cabezas de clasificación sobre un modelo base, los sesgos del corpus de entrenamiento de SmolLM3-3B pueden propagarse a las decisiones.
-- Idiomas: solo se declaran inglés y portugués; el resto de idiomas de SIB-200 no están cubiertos por los manifiestos incluidos.
-- Madurez: cero descargas y cero likes en el momento de la consulta, creado en noviembre de 2026; no hay evidencia de uso en producción ni de validación independiente.
-- No se han publicado métricas de precisión sobre los conjuntos de test de las tres tareas, por lo que no se puede afirmar su calidad más allá de la paridad con la build de referencia.
+- Las cabezas de decisión son archivos separados (`heads/`) y transformers.js por sí solo no las lee; es necesario usar s1s2 para obtener las decisiones entrenadas.
+- `pipeline("decision")` de transformers.js lee logits de etiquetas de opción, no la cabeza entrenada: en las comprobaciones coincide solo en 17 de 20 prompts, por lo que se recomienda s1s2 para este modelo.
+- El modelo está entrenado con opciones y formulaciones concretas del manifiesto (`lab`); usar otras palabras u opciones puede degradar la precisión.
+- Idiomas limitados a inglés y portugués según los manifiestos disponibles.
+- La licencia CC BY-SA 4.0 es ShareAlike por la inclusión de SIB-200; el uso comercial requiere cumplir las condiciones de atribución y compartir igual, lo que puede ser restrictivo para productos propietarios.
+- Riesgo de alucinación en la generación de explicaciones (`generate`), ya que se usan los mismos pesos del LLM base sin un entrenamiento específico documentado para esa tarea.
+- La decisión de una sola pasada puede no ser fiable con margen bajo; el autor sugiere umbrales (por ejemplo 0,2) que deben medirse en cada caso.
+- En CPU (WASM) la latencia es alta (10,2 s por decisión) y el consumo de memoria durante la carga es elevado (pico de 5,4 GB).
+- No se han publicado evaluaciones de sesgo, robustez adversarial ni rendimiento en dominios distintos de los de entrenamiento.
+- No se detalla la longitud de contexto soportada en la información proporcionada, lo que limita la planificación para documentos largos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/eduardoworrel/SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-transformersjs-S1S2
-- Build de referencia (ONNX Runtime GenAI): https://huggingface.co/eduardoworrel/SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2
-- Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
-- Librería s1s2: https://github.com/eduardoworrel/s1s2
-- Transformers.js: https://github.com/huggingface/transformers.js
-- ContractNLI: https://stanfordnlp.github.io/contract-nli/
-- CLINC150: https://github.com/clinc/oos-eval
-- SIB-200: https://huggingface.co/datasets/Davlan/sib200
-- Kev (receta de cabeza pointer): https://github.com/jaredpalmer/kev
-- Precursor alias3-web: https://huggingface.co/aliasrobotics/alias3-web
-- Paper Browser Immune System: https://arxiv.org/abs/2611.15302
+- Modelo en Hugging Face: https://huggingface.co/eduardoworrel/SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-transformersjs-S1S2
+- Build de referencia ONNX Runtime GenAI: https://huggingface.co/eduardoworrel/SmolLM3-3B-ContractNLI-CLINC-SIB-ONNX-genai-int4-S1S2
+- Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
+- Repositorio s1s2: https://github.com/eduardoworrel/s1s2
+- Código de decisión en s1s2: https://github.com/eduardoworrel/s1s2/blob/1ecbd80d380a78d43056fa10e0c95745261194a5/src/decide.ts#L85-L139
+- PR de transformers.js para pipeline("decision"): https://github.com/huggingface/transformers.js/pull/1943
+- Paper referenciado (arXiv:2611.15302): no disponible como enlace directo en la información proporcionada

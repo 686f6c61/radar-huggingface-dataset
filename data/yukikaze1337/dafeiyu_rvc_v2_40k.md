@@ -2,103 +2,94 @@
 
 ## Resumen
 
-DaFeiYu_rvc_v2_40k es un modelo de conversión de voz (voice-to-voice) entrenado con el framework RVC v2 a 40 kHz, publicado por el usuario YukiKaze1337 en Hugging Face. No es un modelo de texto a voz ni un modelo de lenguaje: es un checkpoint de generador (`dafeiyu.pth`, 53 MB) más un índice faiss de recuperación de características (`added_IVF1314_Flat_nprobe_1_dafeiyu_v2.index`, 154 MB) que se usan junto con el pipeline de inferencia de RVC para transformar una locución o una interpretación cantada de entrada en la voz objetivo «大肥鱼» (Da Fei Yu).
+DaFeiYu_rvc_v2_40k es un modelo de conversión de voz (voice-to-voice) basado en la arquitectura RVC v2, publicado por el usuario YukiKaze1337 en Hugging Face. No se trata de un modelo de texto a voz (TTS) ni de un modelo de lenguaje: es un checkpoint de generador entrenado para transformar una señal de audio de entrada (voz hablada o cantada) en la voz del personaje «大肥鱼» (DaFeiYu), preservando el contenido prosódico y la melodía del audio original. El modelo opera a una frecuencia de muestreo de 40 kHz y emplea extracción de f0 (pitch), lo que lo hace apto tanto para habla como para canto.
 
-El interés técnico del artefacto está en su naturaleza de modelo de nicho y en los detalles de su entrenamiento: 227 fragmentos (~11,1 minutos) de audio sintético generado mecánicamente, no de una persona real, con f0 activado y exportado en un checkpoint de aproximadamente 2,33 millones de pasos. Es un caso representativo del ecosistema RVC, donde proliferan modelos de voz de pocos minutos de material, y sirve para evaluar la viabilidad de la conversión de voz con recursos mínimos y con material de partida libre de derechos de intérprete.
+El modelo se distribuye como un par de artefactos: el generador `dafeiyu.pth` (53 MB) y un índice FAISS de recuperación de características (`added_IVF1314_Flat_nprobe_1_dafeiyu_v2.index`, 154 MB) que mejora la similitud tímbrica durante la inferencia. Requiere un entorno de inferencia RVC (WebUI o CLI del repositorio oficial) para funcionar; no es un modelo autónomo que se pueda cargar con `transformers`.
 
-Relevante ahora sobre todo por dos motivos prácticos: ocupa menos de 0,2 GB en repositorio y se puede ejecutar en hardware muy modesto, lo que lo hace útil como banco de pruebas de pipelines de conversión en tiempo real o por lotes. Ahora bien, el autor advierte explícitamente de que 11 minutos de material es poco para RVC, de que los tonos agudos y las notas sostenidas pueden «desafinar» y de que el uso previsto es personal, de aprendizaje y no comercial.
+Su relevancia es acotada pero concreta: cubre el nicho de conversión de voz para doblaje, creación de contenido y experimentación con personajes sintéticos, con licencia MIT y un conjunto de entrenamiento declarado como sintético (sin grabaciones de personas reales), lo que reduce las preocupaciones de derechos de imagen del material de origen. La calidad está limitada por un corpus de entrenamiento pequeño (unos 11,1 minutos en 227 segmentos), tal y como advierte el propio autor.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | RVC v2 (conversión de voz basada en recuperación de características; generador tipo NSF-HiFiGAN con f0) |
-| Parametros totales | No disponible. El checkpoint del generador ocupa 53 MB, lo que sugiere del orden de 13-14 M de parámetros en fp32; el autor no publica la cifra |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica: modelo audio-a-audio; la conversión se hace por segmentos/ventanas, no por contexto de tokens |
-| Tipos de cuantizacion | No disponible. Checkpoint en PyTorch (`.pth`, fp32); no se publican versiones fp16, GGUF ni ONNX |
-| Idiomas soportados | Chino (`zh`) según los metadatos; el material de entrenamiento es voz sintética en ese idioma |
-| Licencia | `mit` en los metadatos de Hugging Face, pero la model card restringe el uso a personal, aprendizaje, entretenimiento y creación derivada no comercial (contradicción no resuelta por el autor) |
-| Formato de pesos | `.pth` (PyTorch, `torch.load` con campos `weight/config/info/sr/f0/version`) + índice faiss `.index` |
+| Arquitectura | RVC v2 (generador VITS-like con encoder HuBERT/ContentVec y decoder, condicionado por f0) |
+| Parámetros totales | no disponible (peso del generador: 53 MB) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de audio; procesa segmentos de audio, no tokens de texto) |
+| Tipos de cuantización | no disponible (checkpoint PyTorch `.pth` en fp32/fp16 según exportación) |
+| Idiomas soportados | chino (zh) según metadatos; el modelo es independiente del idioma hablado, pero el corpus de entrenamiento es de voz sintética en chino |
+| Licencia | MIT |
+| Formato de pesos | `.pth` (PyTorch) + índice FAISS `.index` |
 | Frecuencia de muestreo | 40 kHz |
-| Uso de f0 (pitch) | Sí, `f0=1`; el autor recomienda `rmvpe` como extractor de pitch |
-| Numero de speakers | 109 en `emb_g` (reservados); en la práctica solo se usa `speaker 0` |
-| Tamano del repositorio | 0,2 GB |
+| Uso de f0 | sí (f0=1), extracción de pitch mediante RMVPE en los ejemplos del autor |
+| Número de hablantes | 109 reservados en `emb_g`, solo se usa el speaker 0 |
+| Tamaño del repositorio | 0,2 GB |
+| Índice de recuperación | FAISS IVF1314 Flat, 51.267 vectores de 768 dimensiones |
 
 ## Arquitectura y entrenamiento
 
-RVC v2 es un pipeline de conversión de voz en dos etapas: primero se extraen representaciones de contenido (codificador tipo HuBERT/ContentVec) y la curva de f0 del audio de entrada; después un generador condicionado por esas características y por un embedding de hablante sintetiza la forma de onda a la frecuencia de muestreo del modelo. El índice faiss actúa como memoria de recuperación: sustituye o mezcla los vectores de contenido de entrada por los más cercanos del entrenamiento, lo que mejora la similitud de timbre a costa de fidelidad al contenido original. En este caso el índice es `IVF1314_Flat` con `nprobe=1`, 51.267 vectores de 768 dimensiones.
+El modelo sigue la arquitectura estándar de RVC v2: un encoder de contenido (típicamente HuBERT o ContentVec) extrae representaciones latentes del audio de entrada, que se combinan con la información de pitch (f0) extraída por separado (RMVPE en el ejemplo de uso) y se inyectan en un decoder generativo que sintetiza la forma de onda a 40 kHz. La variante con f0 permite preservar la entonación del habla y la melodía del canto, lo que la hace adecuada para conversión de voz cantada además de hablada. El índice FAISS almacena 51.267 vectores de 768 dimensiones y se usa en inferencia para recuperar vecinos cercanos y reforzar la similitud tímbrica con el hablante objetivo.
 
-Los datos de entrenamiento son 227 fragmentos, aproximadamente 11,1 minutos en total, de voz sintetizada mecánicamente: no hay grabaciones de una persona real, lo que elimina el problema de derechos de intérprete pero introduce las limitaciones acústicas propias de un TTS de origen. El autor indica un checkpoint de ~2.333.333 pasos (`D_2333333.pth` / `G_2333333.pth`) y entrenamiento/exportación el 26 de octubre de 2026. No se documenta composición del dataset más allá de esa descripción, ni se menciona RLHF, DPO ni ajuste por preferencias (no aplica a este tipo de modelo). Tampoco se detalla la configuración de entrenamiento (batch, learning rate, número de épocas efectivas).
+El entrenamiento se realizó sobre 227 segmentos de audio (aproximadamente 11,1 minutos) de voz mecánicamente sintetizada, no de grabaciones humanas, y el checkpoint exportado corresponde a unas 2,33 millones de pasos (`D_2333333.pth` / `G_2333333.pth`). No se documentan detalles sobre función de pérdida, composición exacta del dataset, ni si hubo etapas de ajuste adicionales. El autor advierte explícitamente que 11 minutos es un volumen bajo para este tipo de modelos, lo que se traduce en una estabilidad tímbrica aceptable pero con deriva potencial en notas altas y sostenidas.
 
 ## Capacidades
 
-- Conversión de voz voz-a-voz (speech-to-speech) manteniendo el contenido lingüístico y el ritmo de la entrada.
-- Conversión de voz cantada (singing voice conversion) gracias al uso explícito de f0, con control de tono mediante el parámetro `--pitch` en semitonos.
-- Preservación de prosodia y timing: el modelo no genera habla nueva, transforma la existente, por lo que la duración y las pausas se conservan.
-- Extracción de pitch con varios métodos (el autor recomienda `rmvpe`; el framework admite otros como `harvest` o `pm`).
-- Mejora de similitud de timbre mediante recuperación en índice faiss (opcional, activable en inferencia).
-- Salida en formatos de audio convencionales (el ejemplo del autor usa `--format wav`).
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: no es un modelo de lenguaje.
-- No es un modelo TTS: no acepta texto como entrada.
-- Capacidades multilingües: no documentadas; los metadatos declaran solo `zh`.
+- Conversión de voz a voz (speech-to-speech): transforma la identidad tímbrica de una grabación manteniendo el contenido lingüístico y la prosodia.
+- Conversión de voz cantada: al usar f0, preserva la melodía y el vibrato del audio original, lo que permite reutilizar pistas vocales con otra identidad.
+- Independencia del idioma de entrada: aunque los metadatos declaran chino, el pipeline RVC no está atado a un idioma concreto en la práctica.
+- Extracción de pitch configurable: soporta distintos métodos de f0 (RMVPE en los ejemplos del autor) y ajuste de tono mediante `--pitch` (por ejemplo, +12 semitonos para pasar de voz masculina a la tesitura del modelo).
+- Integración con RVC WebUI y con el CLI oficial del repositorio RVC.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de audio.
 
 ## Casos de uso
 
-- Doblaje y localización de contenido propio: convertir la locución de un actor de voz con derechos cedidos a un timbre concreto, procesando por lotes con `infer/cli.py` y `--pitch` ajustado por sexo del material de origen.
-- Postproducción de maquetas musicales: aplicar el timbre del modelo a una pista vocal guía para previsualizar cómo sonaría una producción antes de contratar al intérprete final.
-- Prototipado de pipelines de conversión de voz: con 0,2 GB de repositorio y un generador de 53 MB, es un banco de pruebas barato para validar cadenas RVC (extracción de f0, indexado faiss, remuestreo a 40 kHz) antes de pasar a modelos con más material.
-- Creación de contenido para comunidades de modding y fandub: sustituir la voz de un personaje en clips propios, siempre que la licencia del material original lo permita y sin suplantar identidad real (el material de entrenamiento es sintético).
-- Investigación sobre calidad con datos escasos: caso de estudio reproducible de qué se obtiene con ~11 minutos y 227 clips, útil para comparar curvas de calidad frente a modelos entrenados con horas de audio.
-- Conversión en tiempo real en demostraciones: el tamaño reducido permite integrarlo en flujos de voice changer sobre GPU de gama media, con la latencia dominada por el extractor de pitch y el chunking del framework más que por el generador.
-- Pruebas de robustez de índices faiss: comparar inferencia con y sin índice para medir la ganancia real de similitud frente a la pérdida de inteligibilidad.
+- Doblaje y localización de contenido: sustituir la voz de un actor por la del personaje manteniendo la interpretación original; el uso de f0 y del índice FAISS permite conservar la expresividad sin re-grabar las líneas.
+- Creación de contenido para vídeo y streaming: aplicar la voz de DaFeiYu a grabaciones propias para producir clips con una identidad sonora consistente, usando RVC WebUI como interfaz de referencia.
+- Producción musical amateur: convertir pistas vocales cantadas a la tesitura del modelo (con `--pitch 12` para voces masculinas) para maquetas o covers, aprovechando la preservación de melodía que aporta la condicionamiento por f0.
+- Prototipado de personajes sintéticos: generar muestras de voz de un personaje para videojuegos, animación o narrativa interactiva antes de invertir en un modelo TTS o en grabaciones profesionales.
+- Investigación en conversión de voz: servir como checkpoint de referencia para comparar métodos de extracción de f0 (RMVPE frente a alternativas) o el impacto del índice FAISS en la similitud tímbrica.
+- Anonimización de voz en entornos controlados: transformar grabaciones propias para reducir la identificación del hablante en demos o datasets internos, siempre que se respeten las restricciones de uso del autor.
+- Pruebas de pipelines de audio-to-audio: validar integraciones con el CLI de RVC o con herramientas de post-procesado (resampleo, normalización) usando un modelo ligero de 0,2 GB.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas objetivas (MOS, similitud de hablante tipo SECS, error de f0, WER sobre audio convertido) ni comparaciones cuantitativas con otros checkpoints RVC.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: menos de 1-2 GB para el generador de 53 MB a 40 kHz; en la práctica el cuello de botella es el codificador de contenido y el extractor de pitch, no el generador. Cifra no publicada por el autor; se deduce del tamaño del checkpoint.
-- Memoria RAM: cargar el índice faiss de 154 MB con 51.267 vectores de 768 dimensiones requiere varios cientos de MB adicionales.
-- GPU recomendadas: cualquier GPU con 4 GB o más (RTX 3050/3060, RTX 4060, T4). Para procesamiento por lotes de muchas pistas, una RTX 4090 o A100 reduce el tiempo total, aunque el modelo no las aprovecha por capacidad.
-- CPU: viable para inferencia offline; el framework RVC funciona sin GPU, con latencia por segmento notablemente mayor.
-- Cabe en GPU de consumo: sí, en el espectro bajo (GTX 1650 4 GB en adelante, con margen).
-- Opciones de despliegue: RVC WebUI (colocando `dafeiyu.pth` en `assets/weights/` y el `.index` en `assets/indices/` o `logs/`), la CLI oficial del repositorio RVC (`infer/cli.py`), y variantes del ecosistema RVC para conversión en tiempo real. No hay pesos en GGUF ni ONNX publicados para llama.cpp u Ollama (no aplica).
-- Latencia y throughput: no disponibles. El autor solo advierte de un problema de entorno: en macOS, faiss y torch usando OpenMP simultáneamente pueden provocar violación de segmento, y recomienda `OMP_NUM_THREADS=1` antes de la inferencia.
-- Recomendación de pitch del autor: `--pitch 12` (una octava arriba) para material de voz masculina y `--pitch 0` para femenina.
+- VRAM estimada para inferencia: el generador pesa 53 MB y el índice 154 MB; en la práctica, el consumo dominante proviene del encoder de contenido y del proceso de extracción de f0, no del checkpoint. Una GPU con 4-6 GB de VRAM es suficiente para inferencia en fp16; el índice FAISS puede residir en CPU o en GPU según la configuración de RVC.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA y al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100, H100). Para lotes grandes o procesamiento por lotes conviene partir de 8 GB.
+- ¿Cabe en GPU de consumo? Sí, en la práctica totalidad de GPU de consumo recientes con 4 GB o más de VRAM.
+- Opciones de despliegue: RVC WebUI (interfaz gráfica), CLI oficial de RVC (`infer/cli.py`), y cualquier wrapper que cargue el `.pth` con `torch.load` y el índice con FAISS. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Latencia y throughput: no disponibles de forma oficial. Como referencia cualitativa, el autor advierte que en macOS con faiss y torch usando OpenMP simultáneamente pueden producirse fallos de segmentación, y recomienda `OMP_NUM_THREADS=1` antes de la inferencia.
+- Almacenamiento: el repositorio completo ocupa 0,2 GB, por lo que cabe en cualquier disco.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas no están verificados en la información proporcionada; se incluyen como referencia general del ecosistema, no como cifras confirmadas.
-
-| Modelo | Tipo | Frecuencia | Datos de entrenamiento | Contexto/entrada | Licencia | Disponibilidad |
+| Modelo | Arquitectura | Muestreo | f0 | Licencia | Tamaño | Contexto / notas |
 |---|---|---|---|---|---|---|
-| DaFeiYu_rvc_v2_40k (este) | RVC v2, voz y canto, con f0 | 40 kHz | 227 clips sintéticos, ~11,1 min, 2,33 M pasos | Audio a audio por segmentos | `mit` en metadatos, uso no comercial en la card | Hugging Face, 0 descargas, 0 likes |
-| RVC v2 genérico (otros checkpoints de la comunidad) | RVC v2 | 32-48 kHz según checkpoint | Variable; habitualmente 10 min a varias horas | Audio a audio por segmentos | Variable por autor (MIT o restrictiva) | Amplia en Hugging Face |
-| So-VITS-SVC (4.x) | SVC con f0, orientado a canto | 44,1 kHz | Requiere dataset mayor para estabilidad | Audio a audio por segmentos | AGPL/otros según fork | Repositorios de la comunidad |
-| Modelos zero-shot de conversión de voz | Encoder + decoder con embeddings de hablante | 16-24 kHz típicamente | Corpus multihablante a gran escala | Audio a audio con referencia | Variable | Repositorios de investigación |
+| DaFeiYu_rvc_v2_40k | RVC v2 | 40 kHz | Sí | MIT | 0,2 GB (repo) | Corpus sintético de ~11 min; 109 hablantes reservados, solo speaker 0 |
+| RVC v2 genéricos (checkpoints de la comunidad) | RVC v2 | 32-48 kHz | Configurable | Variable (a menudo MIT o similar) | 0,1-0,5 GB | Calidad dependiente del corpus; ecosistema amplio en Hugging Face y foros |
+| Modelos TTS neuronales (p. ej. VITS, Piper) | TTS | 16-22 kHz | No aplica | Variable | 50-200 MB | Generan voz desde texto; no convierten audio existente |
+| Modelos de conversión de voz comerciales (p. ej. ElevenLabs Voice Changer) | Propietaria | 44,1 kHz | Sí | Propietaria | Servicio en la nube | No desplegables localmente; sin control sobre el checkpoint |
 
-Diferencias destacables: este modelo es el más ligero y el más pobre en datos de la comparativa; su ventaja es la ausencia de voz real en el entrenamiento (menos fricción de derechos) y su licencia MIT declarada, en tensión con la restricción no comercial del README.
+La comparación con TTS no es directa porque DaFeiYu es un modelo de conversión, no de síntesis desde texto. Frente a otros checkpoints RVC de la comunidad, su principal diferencia es el corpus sintético declarado y el número de pasos de entrenamiento (2,33 millones), aunque el volumen de datos de entrenamiento es reducido.
 
 ## Limitaciones y advertencias
 
-- Material de entrenamiento escaso: 11,1 minutos y 227 clips. El propio autor advierte de inestabilidad en notas agudas y sonidos sostenidos («音色稳定但高音和长音可能会飘»).
-- Origen sintético del audio: el timbre aprendido procede de un TTS mecánico, por lo que puede sonar artificial y arrastrar artefactos del generador de origen.
-- Contradicción de licencia: los metadatos declaran `mit`, pero la model card restringe el uso a personal, aprendizaje, entretenimiento y creación derivada no comercial. Ante uso comercial, la restricción escrita prevalece como advertencia; conviene contactar con el autor antes de desplegar.
-- Riesgo de suplantación: es un modelo de conversión de identidad vocal. La propia card prohíbe hacerse pasar por otras personas y usarlo para fraude, falsificación o vulneración de derechos. No debe emplearse para generar audio que se atribuya a un hablante real sin consentimiento.
-- Idioma: solo se declara `zh`; no hay evaluación de comportamiento con entradas en castellano ni en otros idiomas.
-- Indexado: el índice es `IVF1314_Flat` con `nprobe=1`, es decir, búsqueda aproximada con un único cluster explorado; prioriza velocidad sobre exhaustividad y puede degradar la similitud en voces alejadas del material de entrenamiento.
-- Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin validación externa de la comunidad; no hay demos publicadas.
-- Restricciones de entorno: en macOS, conflicto OpenMP entre faiss y torch que puede causar violación de segmento; requiere `OMP_NUM_THREADS=1`.
-- No apto para TTS ni para tareas de lenguaje: no acepta texto ni produce razonamiento; cualquier expectativa en ese sentido es un error de categoría.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de artefactos acústicos y de «inventar» contenido espectral en tramos donde la señal de entrada es ruidosa o el pitch es extremo.
+- Corpus de entrenamiento muy pequeño (unos 11,1 minutos en 227 segmentos): el propio autor advierte que la voz puede «desviarse» en notas altas y sostenidas, con inestabilidad en pasajes largos.
+- Material de entrenamiento sintético: la voz objetivo no corresponde a una persona real, lo que reduce riesgos de derechos de imagen, pero también puede limitar la naturalidad respecto a modelos entrenados con grabaciones humanas.
+- Un solo hablante efectivo: aunque `emb_g` reserva 109 identidades, solo se usa el speaker 0; no es un modelo multi-hablante utilizable.
+- Dependencia de un entorno RVC: no se puede cargar con `transformers` ni con pipelines estándar de Hugging Face; requiere el ecosistema RVC (WebUI o CLI).
+- Problemas conocidos en macOS: posible fallo de segmentación con faiss y torch compartiendo OpenMP; se recomienda `OMP_NUM_THREADS=1`.
+- Restricciones de uso del autor: la model card indica que el modelo es solo para aprendizaje personal, entretenimiento y creación no comercial, y prohíbe su uso para suplantación de identidad, fraude, falsificación o cualquier fin que vulnere derechos de terceros. Aunque la licencia declarada es MIT, estas restricciones adicionales deben respetarse.
+- Riesgo de uso indebido: como todo modelo de conversión de voz, puede emplearse para suplantación o deepfakes de audio; es responsabilidad del usuario cumplir la normativa aplicable y obtener consentimiento.
+- Idiomas: los metadatos declaran solo chino; no hay evaluación publicada de su comportamiento con entradas en otros idiomas.
+- Sin benchmarks publicados: no hay métricas objetivas de similitud (SECS), naturalidad (MOS) ni inteligibilidad (WER) que permitan comparar su calidad de forma cuantitativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/YukiKaze1337/DaFeiYu_rvc_v2_40k
-- Dataset y paper del modelo: no disponibles en la información proporcionada.
-- Blog o demo del autor: no disponibles.
-- Repositorio de referencia del framework (dependencia de ejecución, no enlazado por el autor): RVC — Retrieval-based-Voice-Conversion-WebUI, https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
-- Repositorio de referencia del extractor de pitch recomendado: RMVPE (incluido en el ecosistema RVC).
-- Índice faiss: incluido en el repositorio como `added_IVF1314_Flat_nprobe_1_dafeiyu_v2.index`.
+- Dataset de entrenamiento: https://huggingface.co/datasets/YukiKaze1337/dafeiyu-rvc-dataset
+- Repositorio oficial de RVC (referenciado en la model card para el CLI): no disponible como enlace directo en la información proporcionada
+- Documentación de RVC WebUI: no disponible en la información proporcionada

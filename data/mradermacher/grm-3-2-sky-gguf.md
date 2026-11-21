@@ -2,104 +2,100 @@
 
 ## Resumen
 
-GRM-3.2-Sky-GGUF es un repositorio de cuantizaciones estáticas del modelo OrionLLM/GRM-3.2-Sky, publicado por el usuario mradermacher, conocido por generar versiones GGUF de modelos abiertos para su uso con llama.cpp y derivados. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribución en formato GGUF del modelo base, orientada a inferencia local y a despliegues sin GPU de gama alta.
+GRM-3.2-Sky-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo OrionLLM/GRM-3.2-Sky, publicadas por el usuario mradermacher, conocido en el ecosistema por distribuir versiones cuantizadas de modelos abiertos listas para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 34.660.610.688 parámetros (aproximadamente 34,7 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-El modelo subyacente cuenta con 34.660.610.688 parámetros totales (aproximadamente 34,66 mil millones), según los datos de safetensors reportados. El repositorio ocupa 21,4 GB e incluye un conjunto amplio de cuantizaciones: x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K e IQ4_XS. La etiqueta conversational sugiere un ajuste orientado a diálogo, aunque no se documenta el proceso de ajuste.
+La relevancia de esta publicación radica en que pone a disposición de la comunidad un conjunto amplio de cuantizaciones (desde Q2_K hasta Q8_0, además de variantes IQ4_XS y ficheros mmproj para capacidades multimodales) que permiten ejecutar un modelo de gran tamano en hardware de consumo. El repositorio ocupa 238,6 GB en total e incluye 12 ficheros GGUF más dos suplementos multimodales.
 
-La relevancia de esta ficha es limitada pero práctica: permite saber qué se puede desplegar hoy con este repositorio y qué información falta. La model card es mínima (una línea que remite al modelo base) y no aporta datos de contexto, licencia, idiomas ni benchmarks, por lo que buena parte de las especificaciones quedan marcadas como no disponibles.
+No se dispone de información detallada sobre la arquitectura interna, el contexto máximo ni los datos de entrenamiento del modelo base en la documentación proporcionada; la model card se limita a describir los ficheros de cuantización y su uso.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se documenta en la model card; solo se indica que es una cuantización del modelo OrionLLM/GRM-3.2-Sky) |
-| Parámetros totales | 34.660.610.688 (≈34,66 mil millones, dato de safetensors) |
-| Parámetros activos | no disponible (no se indica si el modelo base es MoE) |
+| Arquitectura | no disponible |
+| Parametros totales | 34.660.610.688 (~34,7 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma en la información disponible |
-| Versión de cuantización | quantize_version 2, output_tensor_quantised 1, convert_type hf |
-| Tamaño del repositorio | 21,4 GB |
-| Fecha de creación | 2026-09-16 (según metadatos de Hugging Face) |
-| Última actualización | 2026-09-16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés, según la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. La model card del repositorio se limita a indicar que se trata de cuantizaciones estáticas del modelo OrionLLM/GRM-3.2-Sky y a declarar los metadatos del proceso de conversión: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Esto implica que los pesos originales estaban en formato Hugging Face (presumiblemente safetensors) y que se aplicó una cuantización de tipo estático, es decir, con escalas calculadas a partir de los pesos y no de forma dinámica en tiempo de ejecución.
+No se ha publicado información sobre la arquitectura del modelo base OrionLLM/GRM-3.2-Sky en la documentación disponible. El dato objetivo es el numero de parámetros (34.660.610.688), que sitúa al modelo en la categoria de ~35B, un tamano habitual en transformers densos de gran escala. La presencia de ficheros `mmproj` (multi-modal projection) en el repositorio indica que el modelo base incorpora capacidades multimodales, presumiblemente vision-lenguaje, aunque no se detalla el codificador visual ni la composición del dataset de entrenamiento.
 
-Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineamiento, ni sobre innovaciones arquitectónicas como atención lineal, decodificación especulativa o mezclas de expertos. La etiqueta conversational del repositorio apunta a un modelo ajustado para diálogo, pero es la única señal disponible y no viene acompañada de detalles técnicos. Cualquier afirmación adicional sobre el entrenamiento sería especulativa.
+Tampoco se especifican el numero de tokens de entrenamiento, la composición del corpus, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio cuantizado se limita a indicar que se trata de cuantizaciones estáticas del modelo original y remite a la pagina del modelo base para más detalles.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo, aunque no se detallan las capacidades concretas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a través de endpoints compatibles con la API de Hugging Face o similares.
-- Inferencia local en formatos GGUF: al estar cuantizado, es utilizable con runtimes de CPU y GPU de consumo.
-- Razonamiento, código, matemáticas, visión, audio: no disponible; no hay información que confirme ni descarte estas capacidades.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo de pensamiento (thinking mode) u otras capacidades especiales: no disponible.
+- Generación de texto conversacional: la etiqueta `conversational` y la categoria `text-generation` en transformers confirman su uso para diálogo multi-turno.
+- Capacidades multimodales: la presencia de ficheros `mmproj` sugiere soporte de entrada de imagenes junto a texto, aunque no se detalla la naturaleza exacta (vision, audio u otra modalidad).
+- Idiomas: la model card declara únicamente inglés (`en`); no hay evidencia de soporte multilingüe.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Razonamiento multi-paso y agentes: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-Los siguientes casos se plantean como escenarios realistas para un modelo conversacional de 34,66 mil millones de parámetros servido en GGUF, condicionados a que el modelo base rinda según lo esperable en su rango de tamaño. No implican capacidades verificadas en la información disponible.
-
-- Asistente conversacional autoalojado: desplegando la cuantización Q4_K_M o Q5_K_M en llama.cpp u Ollama, se puede ofrecer un chat interno sin enviar datos a servicios externos, algo relevante en entornos con requisitos de privacidad.
-- Generación de textos largos en local: con un modelo de 34,66 B en formato GGUF es viable redactar documentación, resúmenes o borradores en una estación de trabajo con GPU de gama alta, evitando costes por token de API.
-- Prototipado de producto conversacional: usar el endpoint compatible para validar la experiencia de usuario de un chatbot antes de decidir si se migra a una versión sin cuantizar o a un proveedor gestionado.
-- Procesamiento por lotes de textos en CPU: las cuantizaciones Q4_K_S o Q3_K_M permiten ejecutar tareas de generación o reformulación en servidores sin GPU, a costa de menor calidad y velocidad.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye doce variantes, lo que permite medir la degradación de calidad entre x-f16 y Q2_K para decidir el punto de equilibrio entre tamaño y fidelidad en un despliegue concreto.
-- Integración en herramientas de desarrollo: al ser GGUF, se puede conectar a interfaces como Open WebUI, LM Studio o Continue, de modo que el equipo disponga de un asistente de redacción y consulta integrado en su entorno de trabajo.
-- Base para ajuste fino ligero: si la licencia del modelo base lo permite, las cuantizaciones de mayor precisión (Q8_0 o x-f16) pueden servir como referencia de evaluación antes de aplicar LoRA sobre los pesos originales.
+- Despliegue local de un modelo de ~35B en estaciones de trabajo: con la cuantización Q4_K_M (21,3 GB) el modelo cabe en GPUs de consumo con 24 GB de VRAM, como la RTX 4090, permitiendo prototipado y desarrollo sin depender de la nube.
+- Servicio de chat conversacional autoalojado: la variante Q5_K_M o Q6_K ofrece un equilibrio razonable calidad/tamano para servir conversaciones multi-turno en inglés mediante llama.cpp o servidores compatibles con la API de OpenAI.
+- Procesamiento de documentos con componente visual: los ficheros mmproj permiten alimentar imagenes al modelo junto con texto, habilitando tareas de descripción de imagenes o extracción de información de capturas y documentos escaneados.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye 11 variantes de pesos, lo que facilita estudios de degradación de calidad frente a tamano (de 13,0 GB en Q2_K a 37,0 GB en Q8_0) en pipelines de investigación.
+- Integración en aplicaciones de escritorio offline: al ser GGUF, puede embeberse en herramientas tipo Ollama o LM Studio para asistentes locales sin conexión, con la cuantización IQ4_XS (19,0 GB) como opción de compromiso.
+- Fine-tuning y experimentación: la licencia Apache 2.0 y la disponibilidad de pesos en transformers permiten adaptar el modelo base a dominios específicos y posteriormente cuantizar los resultados con el mismo flujo de trabajo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio únicamente documenta los parámetros de cuantización y no incluye mediciones de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, ni para el modelo base ni para las cuantizaciones derivadas. Tampoco los resultados de la búsqueda web aportan datos al respecto.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Los tamaños de archivo indicados a continuación son estimaciones derivadas del número de parámetros (34,66 B) y del número de bits por peso de cada tipo de cuantización; no proceden de la documentación del repositorio y pueden variar según la implementación de cuantización.
-
-| Cuantización | Tamaño aproximado | VRAM estimada para inferencia |
-|---|---|---|
-| x-f16 | ≈69 GB | ≈70-75 GB |
-| Q8_0 | ≈37 GB | ≈38-42 GB |
-| Q6_K | ≈28,5 GB | ≈30-34 GB |
-| Q5_K_M | ≈24 GB | ≈26-29 GB |
-| Q5_K_S | ≈24 GB | ≈26-29 GB |
-| Q4_K_M | ≈21 GB | ≈22-26 GB |
-| Q4_K_S | ≈20 GB | ≈21-25 GB |
-| IQ4_XS | ≈19 GB | ≈20-24 GB |
-| Q3_K_L | ≈17,5 GB | ≈19-22 GB |
-| Q3_K_M | ≈16,5 GB | ≈18-21 GB |
-| Q3_K_S | ≈15 GB | ≈17-19 GB |
-| Q2_K | ≈13,4 GB | ≈15-18 GB |
-
-- GPU recomendadas: para las cuantizaciones altas (Q8_0 y x-f16) hacen falta tarjetas con 48-80 GB de memoria, como A100 80 GB, H100 80 GB o configuraciones multi-GPU. Para Q5 y Q4, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) pueden bastar si el contexto es moderado; con contextos largos la caché KV puede exceder la VRAM disponible.
-- GPU de consumo: las cuantizaciones Q3 y Q2, junto con IQ4_XS, son las candidatas a caber en tarjetas de 16 GB o 12 GB, con degradación de calidad previsible. El modelo completo en x-f16 no cabe en ninguna GPU de consumo actual.
-- CPU y RAM: al ser GGUF, el modelo puede ejecutarse en CPU con llama.cpp; se recomienda al menos la misma cantidad de RAM que el tamaño del archivo más un margen, y en la práctica el doble para trabajar con comodidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, KoboldCpp y servidores compatibles con GGUF como llama-cpp-python o TGI con soporte GGUF. vLLM no consume GGUF de forma nativa, por lo que requeriría los pesos originales en safetensors.
-- Latencia y throughput: no disponible. No se han publicado mediciones para este repositorio.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~13,0 GB
+  - Q3_K_M: ~16,9 GB
+  - IQ4_XS: ~19,0 GB
+  - Q4_K_M: ~21,3 GB
+  - Q5_K_M: ~24,8 GB
+  - Q6_K: ~28,6 GB
+  - Q8_0: ~37,0 GB
+  - Suplemento multimodal: 0,7 GB (mmproj Q8_0) o 1,0 GB (mmproj f16), adicional a los pesos.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): Q4_K_M e IQ4_XS con margen ajustado; Q5_K_M requiere gestión cuidadosa de la caché KV.
+  - RTX 3090 (24 GB): mismas opciones que la 4090 con menor throughput.
+  - A100 40 GB / H100 80 GB: Q8_0 y Q6_K con contexto amplio y mayor paralelismo.
+  - Multi-GPU consumer: necesaria para Q6_K y Q8_0 si se quiere contexto largo.
+- Cabe en GPU de consumo: sí, hasta Q4_K_M en 24 GB; Q5_K_M en adelante requiere 32 GB o reparto entre GPUs.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, servidores compatibles con la API de OpenAI basados en llama.cpp; el modelo base puede servirse con vLLM o TGI si se usan los pesos originales en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables, ni datos de rendimiento del modelo base, ni especificaciones suficientes (contexto, licencia, idiomas) para establecer una comparación rigurosa con alternativas de la misma categoría. Como única referencia interna, este repositorio se relaciona con el modelo original OrionLLM/GRM-3.2-Sky, del que es una redistribución cuantizada: frente a este, el repositorio GGUF ofrece menor requisito de memoria y compatibilidad con runtimes de inferencia local, a cambio de una pérdida de precisión que no ha sido cuantificada públicamente.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| GRM-3.2-Sky (esta ficha) | ~34,7 B | no disponible | Apache 2.0 | GGUF, safetensors | Multimodal (mmproj), solo inglés declarado |
+| Alternativas de ~30-35B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la información proporcionada |
+
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoria; los datos de rendimiento, contexto y capacidades de modelos competidores no están incluidos en la documentación consultada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No hay documentación sobre los datos de entrenamiento ni sobre evaluaciones de sesgo.
-- Riesgo de alucinación: previsible en cualquier modelo generativo de este tamaño, pero no cuantificado en la información disponible. En ausencia de benchmarks, no se puede estimar su fiabilidad en tareas factuales.
-- Degradación por cuantización: las variantes de menor precisión (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia y la calidad del texto respecto a x-f16. No hay mediciones publicadas de esa pérdida.
-- Contexto e idiomas: se desconoce la longitud de contexto soportada y los idiomas cubiertos, lo que impide garantizar un comportamiento correcto en castellano o en tareas de contexto largo.
-- Licencia: no disponible. Al no declararse la licencia del modelo base ni de este repositorio, no se puede confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia en OrionLLM/GRM-3.2-Sky antes de cualquier despliegue en producción.
-- Trazabilidad: la model card es prácticamente vacía y no documenta el proceso de cuantización más allá de los metadatos de conversión, ni incluye instrucciones de uso, plantilla de prompt o parámetros de muestreo recomendados.
-- Repositorio sin actividad: cero descargas y cero likes en el momento de la consulta, lo que reduce la probabilidad de que existan informes externos de funcionamiento.
-- Fechas de metadatos: la fecha de creación registrada (2026-09-16) es posterior a la fecha actual de referencia habitual, lo que conviene tener en cuenta al citar el repositorio.
+- Idiomas: la model card declara únicamente inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Sesgos: no se documentan evaluaciones de sesgo ni medidas de mitigación en la información disponible.
+- Alucinación: no hay datos publicados sobre tasas de alucinación ni sobre el proceso de alineación del modelo base.
+- Contexto: se desconoce la longitud máxima de contexto, lo que impide planificar cargas de trabajo con documentos largos sin pruebas previas.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_S degradan notablemente la calidad; para producción se recomienda Q4_K_M o superior.
+- Overhead de contexto: las cifras de VRAM indicadas solo cubren los pesos; la caché KV para contextos largos incrementa el consumo de forma significativa.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base OrionLLM/GRM-3.2-Sky, ya que el repositorio cuantizado hereda sus términos.
+- Mantenimiento: se trata de una cuantización de terceros; actualizaciones o correcciones dependen del autor del repositorio, no del desarrollador original.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/GRM-3.2-Sky-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/GRM-3.2-Sky-GGUF
 - Modelo base: https://huggingface.co/OrionLLM/GRM-3.2-Sky
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron resultados no relacionados con el modelo (preguntas de Stack Overflow sobre Git, operadores en C y puntuación en inglés).
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/GRM-3.2-Sky-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#GRM-3.2-Sky-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -5,7 +5,7 @@
   "author": "CSroseX",
   "url": "https://huggingface.co/CSroseX/Legal_llama3.1_part5",
   "created_at": "2024-08-20T20:08:45.000Z",
-  "updated_at": "2026-11-20T13:48:47.000Z",
+  "updated_at": "2026-11-20T14:04:31.000Z",
   "license": "llama3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "en",
     "dataset:theatticusproject/cuad-qa",
     "base_model:unsloth/llama-3-8b",
-    "base_model:quantized:unsloth/llama-3-8b",
+    "base_model:finetune:unsloth/llama-3-8b",
     "license:llama3",
     "text-generation-inference",
     "endpoints_compatible",
@@ -55,8 +55,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "CSroseX/Llama-3-Legal-8B",
+  "renamed_at": "2026-11-21T02:35:13.047Z",
   "benchmarks": [],
   "sources": []
 }

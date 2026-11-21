@@ -2,105 +2,93 @@
 
 ## Resumen
 
-Lean Standard Prover — Qwen3-8B (variante *reasoning*, entrenada con GRPO) es un modelo especializado en demostración automática de teoremas en Lean 4, desarrollado por el laboratorio EPFL-LARA de la École Polytechnique Fédérale de Lausanne. Parte del modelo base Qwen/Qwen3-8B-Base y se ha afinado mediante una cadena de entrenamiento que incluye preentrenamiento continuado sobre corpus Lean, ajuste supervisado, ajuste supervisado con razonamiento explícito y una fase final de aprendizaje por refuerzo con GRPO. La tarea concreta que resuelve es recibir un enunciado de teorema con sus imports y su contexto en Lean 4 y devolver una prueba completa que sustituya el `sorry` original.
+Lean Standard Prover — Qwen3-8B es un modelo de generación de texto especializado en demostración automática de teoremas en Lean 4, desarrollado por el laboratorio EPFL-LARA (École Polytechnique Fédérale de Lausanne). Se trata de un fine-tuning del modelo base Qwen/Qwen3-8B-Base, con 8.190.735.360 parámetros, orientado a producir demostraciones completas y verificables a partir de enunciados de teoremas que terminan en `by sorry`. El modelo sigue el formato de respuesta del "standard prover" y, en esta variante concreta, genera un plan de razonamiento informal antes de cada intento de demostración formal.
 
-El modelo pertenece a la familia "Lean World Models" y su rol en la cadena de publicación se describe como "S8 + reasoning", en la etapa posterior al razonamiento informal. Su rasgo diferencial es que, antes de escribir código Lean, produce un plan de solución informal estructurado en secciones ([Problem Restatement], [Useful Observations], [Reasoning Path], [Key Derivation], [Proof Type], [Formal Anchors] y [Final Solution]), y que además incorpora un modo de reparación: si un intento previo falló, genera primero [Error Analysis], [Revised Reasoning] y [Updated Proof Plan] antes de la prueba corregida. Esto lo hace adecuado para bucles iterativos de demostración con verificación real contra el compilador de Lean.
+La relevancia del modelo radica en su aplicación al razonamiento matemático formal: a diferencia de los modelos de propósito general, está entrenado específicamente sobre datasets de Lean (lean-world-model-cpt, lean-world-model-sft, lean-world-model-reasoning-sft y el RL_dataset_V2 de Goedel-LM) y ajustado con GRPO (Group Relative Policy Optimization) para mejorar la calidad de las demostraciones generadas. Esto lo convierte en una herramienta útil para pipelines de verificación formal, autocompletado de pruebas en entornos Lean y experimentación con razonamiento neuro-simbólico.
 
-Tiene 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) y un repositorio de 16,4 GB en formato safetensors, sin cuantizaciones publicadas. El flujo de inferencia documentado por el autor usa vLLM 0.12.0 con un contexto total de 32.768 tokens, temperatura 0,3 para una muestra y 0,7 para 32 muestras, y top-p 0,95. Es relevante ahora porque combina un modelo pequeño (cabe en una sola GPU) con un formato de salida diseñado explícitamente para verificación formal, lo que reduce el coste de integrar demostración automática en pipelines de CI sobre librerías como Mathlib.
+El modelo se distribuye con licencia Apache 2.0, en formato safetensors, con soporte para transformers, text-generation-inference y endpoints compatibles, y con un contexto de 32.768 tokens. Está orientado principalmente al inglés y su uso previsto es la generación de demostraciones Lean 4 verificables con Mathlib.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (heredada de Qwen/Qwen3-8B-Base; no se detalla en la model card) |
-| Parametros totales | 8.190.735.360 (8,19 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens de contexto total, segun el runner de inferencia del autor |
-| Tipos de cuantizacion | No disponible (el repositorio solo publica pesos safetensors; no se documentan GGUF ni cuantizaciones de otro tipo) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | No disponible |
-| Formato de pesos | Safetensors (libreria transformers) |
-| Modelo base | Qwen/Qwen3-8B-Base (relacion: finetune) |
-| Variante y etapa | S8 + reasoning, etapa posterior al razonamiento informal |
-| Tarea (pipeline) | text-generation |
-| Datasets de entrenamiento | EPFL-LARA/lean-world-model-cpt, EPFL-LARA/lean-world-model-sft, EPFL-LARA/lean-world-model-reasoning-sft, Goedel-LM/RL_dataset_V2 |
-| Tamano del repositorio | 16,4 GB |
-| Fecha de creacion / actualizacion | 2026-10-16 |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Arquitectura | Transformer decoder-only (Qwen3), fine-tuning del base Qwen/Qwen3-8B-Base |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | no disponible (repo publicado en safetensors BF16); cuantizaciones GGUF/AWQ no publicadas por el autor |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo de 16,4 GB); libreria transformers |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen3-8B-Base, un transformer decoder-only denso de 8,19 mil millones de parametros, sobre el que se aplica un ajuste fino especifico de dominio. El modelo no introduce cambios estructurales propios documentados; la especializacion proviene enteramente de los datos y de las fases de entrenamiento. El pipeline de inferencia recomendado emplea un prompt de finalizacion en bruto (raw completion), tokenizacion simple con `add_special_tokens=False` y un presupuesto de 32.768 tokens de contexto total, de modo que los tokens de salida disponibles son los que quedan libres tras el enunciado del problema.
+El modelo parte de Qwen3-8B-Base, un transformer decoder-only denso de aproximadamente 8.200 millones de parámetros. Sobre esa base, EPFL-LARA aplica un pipeline de fine-tuning en varias etapas: preentrenamiento continuado sobre lean-world-model-cpt, ajuste supervisado sobre lean-world-model-sft y lean-world-model-reasoning-sft, y finalmente un ajuste con GRPO sobre Goedel-LM/RL_dataset_V2. La variante aquí descrita corresponde a la etapa "S8 + reasoning", es decir, posterior a la fase de razonamiento informal, e incorpora un plan de razonamiento informal antes de emitir la demostración formal.
 
-La cadena de entrenamiento se deduce de los datasets declarados: preentrenamiento continuado sobre `lean-world-model-cpt`, ajuste supervisado sobre `lean-world-model-sft`, ajuste supervisado con trazas de razonamiento sobre `lean-world-model-reasoning-sft` y una fase final de aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre `Goedel-LM/RL_dataset_V2`. No se especifican en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del corpus, ni los hiperparametros de la fase de RL. La innovacion tecnica destacable no esta en la arquitectura sino en el protocolo de interaccion: el modelo emite un plan informal en secciones fijas antes de la prueba formal, y dispone de un modo de reparacion que analiza el error del intento anterior antes de reescribir la demostracion.
+La innovación técnica principal es la separación explícita entre razonamiento informal y demostración formal: el modelo produce primero secciones estructuradas (`[Problem Restatement]`, `[Useful Observations]`, `[Reasoning Path]`, `[Key Derivation]`, `[Proof Type]`, `[Formal Anchors]`, `[Final Solution]`) y después el bloque Lean 4 completo. El ajuste con GRPO optimiza directamente la recompensa de verificabilidad de las demostraciones, lo que reduce la tasa de pruebas que fallan al ser comprobadas por Lean. El prompt de completado se construye mediante `build_prompt` del repositorio y la tokenización usa `add_special_tokens=False`; la generación recomendada emplea temperatura 0,3, top-p 0,95 y `max_new_tokens` limitado por el presupuesto de contexto.
 
 ## Capacidades
 
-- Generacion de pruebas completas en Lean 4 a partir de un enunciado de teorema que termina en `by sorry`, incluyendo imports y contexto.
-- Razonamiento informal estructurado previo a la formalizacion, con las secciones [Problem Restatement], [Useful Observations], [Reasoning Path], [Key Derivation], [Proof Type], [Formal Anchors] y [Final Solution].
-- Reparacion iterativa de pruebas: ante un intento fallido, produce [Error Analysis], [Revised Reasoning] y [Updated Proof Plan] antes de la solucion corregida.
-- Salida en bloques de codigo `lean4` delimitados, con texto explicativo y comentarios intercalados; el runner extrae como candidato final el ultimo bloque Lean completo.
-- Modo conversacional (etiqueta `conversational` en el repositorio).
-- Muestreo multiple configurable: el runner ajusta la temperatura a 0,3 para una muestra y a 0,7 para 32 muestras, con top-p 0,95, lo que permite estrategias de pass@k.
-- Integracion con vLLM 0.12.0 y compatibilidad declarada con text-generation-inference y endpoints.
-- No se documentan capacidades de vision, audio, tool calling ni function calling en la informacion disponible.
-- Capacidad multilingue limitada: el modelo esta declarado unicamente para ingles.
+- Generación de demostraciones completas en Lean 4 a partir de enunciados con `by sorry`, incluyendo imports y contexto del archivo `.lean`.
+- Razonamiento informal estructurado previo a la demostración formal (restatement, observaciones, ruta de razonamiento, derivación clave, tipo de prueba, anclas formales y solución final).
+- Razonamiento matemático formal multi-paso con verificación posterior en Lean 4.15 + Mathlib.
+- Generación de texto técnica en inglés con formato controlado por el prompt del standard prover.
+- Integración con tooling Lean: el resultado generado puede pasarse directamente a Lean para typechecking.
+- No se documentan capacidades de tool calling, function calling, visión, audio ni agentes generales en la información disponible.
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Verificacion continua de librerias Lean 4: el modelo puede integrarse en un job de CI que, ante un teorema marcado con `sorry` en un PR de Mathlib, genere un candidato de prueba y lo valide con el compilador; el bucle de reparacion del modelo permite reintentar automaticamente cuando la verificacion falla.
-- Asistencia a matematicos en formalizacion: dado un enunciado ya escrito en Lean, el modelo propone la demostracion y, gracias al plan informal en secciones, el investigador puede revisar la estrategia antes de aceptar el codigo.
-- Generacion de datos sinteticos para entrenar otros provers: con 32 muestras por problema a temperatura 0,7 y verificacion posterior, se pueden producir pares (enunciado, prueba valida) o trayectorias de reparacion reutilizables como corpus de SFT o de RL.
-- Construccion de agentes de demostracion multi-paso: el modo de reparacion hace que el modelo encaje en un bucle donde un verificador externo (Lean) devuelve el error y el modelo genera un analisis del fallo y una nueva estrategia, sin necesidad de reescribir el prompt desde cero.
-- Evaluacion comparativa de provers: al exponer un runner reproducible con prompt, temperaturas y presupuesto de contexto fijos, sirve como linea base controlada para medir pass@1 y pass@32 frente a otros provers de Lean 4.
-- Apoyo a la docencia de logica y teoria de tipos: el modelo no solo devuelve la prueba, sino la derivacion informal y los anclajes formales usados, lo que permite mostrar el razonamiento paso a paso sobre ejercicios academicos.
-- Investigacion en aprendizaje por refuerzo sobre razonamiento formal: al ser una variante entrenada con GRPO, es un punto de partida util para estudiar como la fase de RL afecta a la tasa de exito en verificacion respecto a la variante solo SFT.
+- Autocompletado de pruebas en entornos Lean 4: el modelo recibe un archivo `.lean` con un teorema terminado en `by sorry` y devuelve una demostración completa lista para verificarse, integrándose en editores o extensiones de Lean para acelerar el trabajo de matemáticos formalizadores.
+- Verificación formal en pipelines de CI: en un repositorio Mathlib o similar, el modelo puede generar candidatos de prueba que se ejecutan en un job de CI con Lean 4.15 para validar antes de abrir un pull request.
+- Experimentación en razonamiento neuro-simbólico: investigadores pueden usar la separación entre plan informal y prueba formal para estudiar cómo el razonamiento en lenguaje natural guía la búsqueda de demostraciones verificables.
+- Generación de datos de entrenamiento para modelos de theorem proving: las demostraciones verificadas que produce el modelo pueden filtrarse y reutilizarse como datos SFT o RL para otros modelos de la familia.
+- Docencia y asistencia matemática: el plan informal estructurado sirve como explicación pedagógica de la estrategia de prueba, útil en entornos de enseñanza de lógica y matemáticas formales.
+- Benchmarking de provers: al seguir un formato de respuesta estándar y usar un prompt reproducible (`build_prompt`), sirve como referencia comparable frente a otros provers Lean en evaluaciones internas.
+- Reproducción de resultados: el ejemplo incluido en el repositorio (`Example.lean` con `theorem demo (n : ℕ) : n + 0 = n := by sorry`) permite validar el despliegue en H100 en BF16 con semilla 0 y comprobar que la salida typechequea.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de pass@k, MiniF2F, ProofNet ni comparaciones cuantitativas con otros provers, y los resultados de busqueda web consultados solo contienen paginas institucionales de la EPFL sin datos de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo documenta un ejemplo cualitativo verificable (`theorem demo (n : ℕ) : n + 0 = n := by ...`), comprobado con Lean 4.15 y Mathlib, sin métricas agregadas de pass rate sobre datasets como MiniF2F, ProofNet o LeanWorkbook.
 
 ## Requisitos de hardware
 
-- VRAM estimada (calculo a partir del numero de parametros, no facilitado por el autor): en precision completa bf16/fp16 los pesos ocupan aproximadamente 16,4 GB, coherente con el tamano del repositorio; a ello hay que sumar la cache KV, que con 32.768 tokens de contexto anade varios gigabytes adicionales.
-- GPU recomendadas: para bf16 sin cuantizar y contexto largo, A100 40 GB, A100 80 GB o H100; en configuraciones de contexto mas corto puede funcionar en GPUs de 24 GB.
-- GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede alojar los pesos en bf16, pero el margen para cache KV a 32.768 tokens es ajustado; no se documentan cuantizaciones oficiales que reduzcan el requisito.
-- Opciones de despliegue: vLLM 0.12.0 es la via documentada y la usada por el script de inferencia del autor; el repositorio declara ademas compatibilidad con text-generation-inference y endpoints, y puede cargarse directamente con transformers. No hay archivos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion propia.
-- Latencia y throughput estimados: no disponibles.
-- El runner descarga `inference.py` y `prompt_utils.py` desde el repositorio y ejecuta `python inference.py Example.lean --samples N`; la opcion `--print-prompt` permite inspeccionar el prompt sin cargar los pesos.
+- VRAM estimada para inferencia en BF16: aproximadamente 16,4 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomienda al menos 20-24 GB de VRAM para contexto moderado.
+- GPU recomendadas: H100 (referencia usada por el autor para el ejemplo), A100 40/80 GB, L40S, RTX 6000 Ada. Para contextos largos cercanos a 32.768 tokens, se necesita VRAM adicional por KV cache.
+- GPU consumer: cabe en RTX 4090 (24 GB) en BF16 con contexto corto y generación limitada a ~2.048 tokens como en el ejemplo; en RTX 3090 (24 GB) o 4080 (16 GB) requiere cuantización (no publicada oficialmente) o contextos reducidos.
+- Opciones de despliegue: transformers (versión recomendada 4.57.3 con accelerate y `attn_implementation="sdpa"`), text-generation-inference (tag oficial), endpoints compatibles. No se documentan recetas oficiales para vLLM, llama.cpp u Ollama en la información disponible.
+- Latencia y throughput: no disponibles. El autor documenta ejecución en H100 en BF16 con `max_new_tokens` hasta 2.048 y temperatura 0,3, pero sin cifras de tokens/s.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible. La tabla recoge unicamente los datos confirmados.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| EPFL-LARA/lean-standard-prover-qwen3-8b-reasoning-grpo | 8,19 B | 32.768 | Prover Lean 4 con plan informal + GRPO | Apache 2.0 | Hugging Face (transformers, TGI) |
+| Qwen/Qwen3-8B-Base | ~8,2 B | no disponible en esta ficha | Modelo base generalista | Apache 2.0 | Hugging Face |
+| Goedel-LM (familia) | no disponible | no disponible | Provers Lean entrenados con RL sobre RL_dataset_V2 | no disponible | Hugging Face (Goedel-LM) |
+| DeepSeek-Prover (familia) | no disponible | no disponible | Provers Lean con RL y verificación | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Lean Standard Prover Qwen3-8B (reasoning, GRPO) | 8,19 B | 32.768 tokens (runner del autor) | No disponible | Hugging Face, repo EPFL-LARA |
-| Qwen/Qwen3-8B-Base (modelo base) | 8,19 B heredados | No disponible en la informacion | No disponible en la informacion | Hugging Face |
-| Otros provers de Lean 4 (DeepSeek-Prover-V2, Goedel-Prover, Kimina-Prover) | No disponible | No disponible | No disponible | No disponible |
+La comparación cuantitativa de rendimiento entre estos provers no está disponible en la información proporcionada; los datos de pass rate sobre MiniF2F o ProofNet no se han publicado en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion formal alto por la naturaleza de la tarea: el modelo puede producir demostraciones sintacticamente plausibles que Lean rechaza, o invocar lemas de Mathlib que no existen con ese nombre o firma. Toda salida debe verificarse con el compilador antes de usarse.
-- El candidato de prueba correcto es el ultimo bloque de codigo Lean completo de la respuesta; si el modelo divaga o emite bloques parciales despues del valido, una extraccion ingenua puede seleccionar codigo incorrecto.
-- Idioma: el modelo esta declarado solo para ingles, tanto en prompts como en las secciones de razonamiento informal.
-- Dominio restringido: el entrenamiento gira en torno a Lean 4 y Mathlib; el rendimiento fuera de ese ecosistema (otros asistentes de pruebas o matematicas no formalizadas) no esta documentado.
-- Licencia no disponible: al no especificarse la licencia del modelo ni las condiciones de los datasets de entrenamiento, el uso comercial queda en un estado juridico indeterminado y requiere consulta previa con el autor.
-- La fecha de publicacion del repositorio (16 de octubre de 2026) y el contador de descargas y likes a cero indican que se trata de una publicacion muy reciente y sin validacion externa por parte de la comunidad.
-- No hay cuantizaciones publicadas: desplegar en hardware modesto exige convertir los pesos por cuenta propia, con la perdida de calidad que ello implique.
-- El presupuesto de contexto es compartido entre enunciado y salida: problemas con contextos de imports muy extensos reducen el espacio disponible para la prueba, y demostraciones largas pueden truncarse (`finish_reason` permite detectarlo).
-- La fase de GRPO optimiza una recompensa derivada de la verificacion; como en cualquier RL con verificador, existe riesgo de comportamientos de atajo que pasen la verificacion sin corresponder a la prueba esperada.
-- No se documentan sesgos especificos, pero al ser un ajuste sobre Qwen3-8B-Base hereda las limitaciones y sesgos del modelo base, no evaluados en la informacion disponible.
+- Idiomas: el modelo está entrenado y evaluado únicamente en inglés; el prompt y el formato de respuesta están pensados para ese idioma.
+- Dominio restringido: está especializado en Lean 4 y Mathlib; fuera de ese dominio su utilidad como modelo de propósito general es limitada y no se han publicado evaluaciones generales.
+- Alucinación formal: puede generar demostraciones sintácticamente plausibles que no typechequean; toda salida debe verificarse con Lean antes de usarse.
+- Contexto: la ventana de 32.768 tokens impone un presupuesto; el ejemplo del autor limita la generación a 2.048 tokens, y prompts muy largos pueden dejar sin espacio para la prueba.
+- Formato: requiere el prompt exacto construido por `build_prompt` y `add_special_tokens=False`; desviarse del formato puede degradar la calidad de la salida.
+- Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones de los datasets de entrenamiento (incluido Goedel-LM/RL_dataset_V2) antes de redistribuir derivados.
+- Cuantizaciones: no hay GGUF, AWQ ni GPTQ publicados oficialmente por el autor, lo que limita el despliegue en hardware consumer sin trabajo adicional.
+- Sesgos: no se documentan análisis de sesgos; al ser un modelo matemático, el riesgo principal es de corrección formal más que de sesgo social, pero no hay evaluación publicada.
+- Métricas: no se han publicado benchmarks agregados, por lo que la comparación con otros provers debe hacerse con evaluaciones propias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-reasoning-grpo
-- Coleccion "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
-- Dataset EPFL-LARA/lean-world-model-cpt: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt
-- Dataset EPFL-LARA/lean-world-model-sft: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-sft
-- Dataset EPFL-LARA/lean-world-model-reasoning-sft: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-reasoning-sft
+- Dataset lean-world-model-cpt: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt
+- Dataset lean-world-model-sft: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-sft
+- Dataset lean-world-model-reasoning-sft: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-reasoning-sft
 - Dataset Goedel-LM/RL_dataset_V2: https://huggingface.co/datasets/Goedel-LM/RL_dataset_V2
-- vLLM (version usada por el runner, 0.12.0): https://github.com/vllm-project/vllm
-- Pagina institucional de la EPFL: https://www.epfl.ch/en/
-- Perfil de la organizacion EPFL-LARA en Hugging Face: https://huggingface.co/EPFL-LARA
+- Organización EPFL-LARA: https://huggingface.co/EPFL-LARA
+- Ejemplo completo de respuesta: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-reasoning-grpo/blob/main/

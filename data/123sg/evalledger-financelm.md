@@ -2,108 +2,110 @@
 
 ## Resumen
 
-EvalLedger-FinanceLM es un checkpoint publicado en Hugging Face por el usuario 123sg bajo el identificador `123sg/EvalLedger-FinanceLM`. La model card lo presenta como FinanceLM-7B, un modelo de la familia Qwen2 (según los tags del repositorio) orientado al analisis de documentos financieros, el razonamiento sobre datos tabulares y la respuesta a preguntas de caracter regulatorio. El repositorio esta etiquetado con los terminos `finance` y `evaluation`, lo que sugiere que su proposito principal es servir como objeto de evaluacion dentro de un harness de benchmarks denominado EvalLedger.
+EvalLedger-FinanceLM es un checkpoint de la familia FinanceLM-7B, publicado por el usuario 123sg en Hugging Face bajo licencia Apache-2.0. Segun la model card, se trata de un modelo entrenado para el analisis de documentos financieros, el razonamiento sobre datos tabulares y la respuesta a preguntas de caracter regulatorio. El repositorio declara la etiqueta `qwen2` en los metadatos de Hugging Face, lo que sugiere una arquitectura derivada de la familia Qwen2, aunque la model card no lo confirma de forma explicita.
 
-La informacion disponible es muy limitada: el tamano del repositorio es de 0.0 GB, no se han publicado pesos descargables, no consta ningun dato sobre volumen de entrenamiento, composicion del dataset ni proceso de alineacion, y el modelo acumula cero descargas y cero likes en el momento de la consulta. La model card incluye una tabla de resultados de benchmarks que, sin embargo, presenta valores identicos (0.548, 0.561, 0.572) para las columnas Base-7B, Chat-7B y FinanceLM-3B en las quince tareas evaluadas, lo que impide tratarlos como mediciones independientes fiables.
+La propuesta del autor es una familia de checkpoints generados a partir de una misma ejecucion de preentrenamiento, que difieren unicamente en el numero de pasos de optimizacion recibidos. Un harness de evaluacion independiente puntua cada checkpoint sobre quince suites de benchmark, y la model card reporta la ejecucion seleccionada por el proceso de release.
 
-Por tanto, esta ficha debe interpretarse como una descripcion de un artefacto de evaluacion mas que de un modelo listo para produccion. Los datos tecnicos que no aparecen explicitamente en la informacion proporcionada se marcan como no disponibles, y las cifras de rendimiento se reproducen tal cual figuran en la model card, con las advertencias correspondientes sobre su consistencia.
+El interes practico del modelo reside en su orientacion vertical hacia el dominio financiero y en la publicacion de resultados de evaluacion por tarea. No obstante, el repositorio tiene un tamano de 0.0 GB y la model card no documenta el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los pesos en un formato concreto, lo que limita seriamente su evaluacion y su uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (segun tag `qwen2`) |
-| Parametros totales | 7B (denominacion FinanceLM-7B; no se detalla el conteo exacto) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Arquitectura | Transformer decoder-only, etiqueta `qwen2` en metadatos (no confirmado en la model card) |
+| Parametros totales | no disponible (el nombre sugiere 7B; no confirmado en la model card) |
+| Parametros activos | no aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | no disponible (el repositorio figura con 0.0 GB, sin pesos publicados) |
+| Formato de pesos | no disponible (el repositorio reporta 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible proviene de los tags del repositorio, que identifican el modelo como `qwen2` y `transformers`, es decir, un transformer decoder-only de la familia Qwen2 con pesos en formato PyTorch. La model card indica que los checkpoints de la release proceden de una misma ejecucion de preentrenamiento y que difieren unicamente en el numero de pasos de optimizacion recibidos, lo que apunta a una publicacion de tipo intermedio o experimental dentro de un proceso de entrenamiento mas amplio.
+La model card no describe la arquitectura interna mas alla de la etiqueta `qwen2` presente en los metadatos de Hugging Face, que apunta a una familia de transformers decoder-only. Tampoco se detalla el numero de tokens de preentrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El autor indica que los checkpoints de la release provienen de una misma ejecucion de preentrenamiento y que se diferencian solo por el numero de pasos de optimizacion, lo que sugiere una seleccion por criterio de evaluacion mas que un entrenamiento especifico por variante.
 
-No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card menciona un "evaluation harness" separado que puntua cada checkpoint sobre quince suites de benchmarks y que el modelo publicado corresponde a la ejecucion seleccionada por el proceso de release, pero no se detalla ni el harness ni los criterios de seleccion.
+El elemento diferencial declarado es el harness de evaluacion: quince suites de benchmark que puntuan cada checkpoint y alimentan el proceso de seleccion del modelo publicado. No se especifica que innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos) incorpora el modelo.
 
 ## Capacidades
 
-- Generacion de texto en el dominio financiero, segun la descripcion de la model card.
+- Generacion de texto en el dominio financiero, segun la descripcion del autor.
 - Analisis de documentos financieros.
 - Razonamiento sobre datos tabulares.
 - Respuesta a preguntas de caracter regulatorio.
-- Las quince tareas listadas en la tabla de evaluacion (razonamiento matematico, razonamiento logico, sentido comun, comprension lectora, question answering, clasificacion de texto, analisis de sentimiento, generacion de codigo, escritura creativa, generacion de dialogo, resumen, traduccion, recuperacion de conocimiento, seguimiento de instrucciones y evaluacion de seguridad) figuran como suites evaluadas, no necesariamente como capacidades verificadas del modelo.
+- Generacion de codigo (reportada en la tabla de benchmarks con 0.731).
+- Traduccion (reportada con 0.891).
+- Resumen de textos (reportado con 0.838).
+- Seguimiento de instrucciones (reportado con 0.838).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Capacidades multimodales (vision, audio): no disponibles.
+- Modo de razonamiento explicito (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Analisis de informes financieros: el modelo esta declarado para el analisis de documentos financieros, por lo que podria emplearse en la extraccion y sintesis de magnitudes contables a partir de memorias anuales y estados financieros, siempre que se validen los pesos y el contexto real disponible.
-- Razonamiento sobre tablas financieras: su orientacion a datos tabulares lo hace candidato para responder consultas sobre balances, cuentas de resultados y series temporales de magnitudes economicas en entornos de analisis interno.
-- Respuesta a preguntas regulatorias: la model card lo describe para question answering regulatorio, lo que permitiria construir asistentes internos de consulta sobre normativa financiera, con revision humana obligatoria dada la ausencia de datos de entrenamiento y de evaluacion de sesgos.
-- Evaluacion comparativa de checkpoints: dado su origen como artefacto de un harness de evaluacion (EvalLedger), puede utilizarse como referencia en pipelines de evaluacion de modelos financieros, comparando su comportamiento frente a otros checkpoints de la misma ejecucion.
-- Clasificacion y analisis de sentimiento en textos economicos: las suites de clasificacion y sentimiento aparecen en su tabla de evaluacion, de modo que podria probarse en tareas de etiquetado de noticias financieras o comunicados de resultados, previa validacion empirica.
-- Resumen de documentacion extensa: la tarea de summarization figura entre las evaluadas, lo que abre un uso potencial en la condensacion de prospectos, informes trimestrales y documentacion de productos financieros, condicionado a conocer la ventana de contexto real, actualmente no disponible.
-- Generacion de codigo para analisis cuantitativo: la suite de code generation aparece en la tabla, por lo que podria explorarse su uso en la generacion de scripts de analisis de datos financieros, sin garantias de calidad en ausencia de pesos publicados.
+- Analisis de informes anuales y estados financieros: el modelo esta entrenado para documentos financieros, por lo que puede emplearse para extraer y resumir magnitudes clave de memorias anuales, siempre que se valide la salida contra la fuente original.
+- Razonamiento sobre tablas de resultados: adecuado para interpretar balances, cuentas de perdidas y ganancias o series temporales de indicadores, dado el enfasis declarado en datos tabulares.
+- Respuesta a preguntas regulatorias internas: puede asistir a equipos de compliance en la consulta de normativa, con revision humana obligatoria por el riesgo de alucinacion en materia regulatoria.
+- Resumen de documentacion financiera extensa: la capacidad de summarization reportada (0.838) lo hace candidato para condensar prospectos, informes trimestrales o notas de analistas.
+- Clasificacion y analisis de sentimiento de noticias financieras: la puntuacion reportada en text classification (0.901) y sentiment analysis (0.879) sugiere utilidad en pipelines de monitorizacion de mercado.
+- Generacion de codigo para pipelines de datos financieros: con una puntuacion de 0.731 en code generation, puede apoyar la escritura de scripts de extraccion y transformacion, con tests automatizados en CI/CD.
+- Traduccion de documentacion financiera multilingue: la puntuacion de 0.891 en traduccion lo situa como opcion para localizar informes, aunque los idiomas soportados no estan declarados.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son los de la tabla incluida en la model card. Se reproducen a continuacion tal cual, advirtiendo que las columnas Base-7B, Chat-7B y FinanceLM-3B comparten exactamente los mismos valores en las quince tareas, lo que sugiere un problema de cumplimentacion de la tabla o una evaluacion no independiente.
+Resultados reportados en la model card (precision sobre el split de evaluacion completo):
 
-| Categoria | Benchmark | Base-7B | Chat-7B | FinanceLM-3B | FinanceLM-7B |
-|---|---|---|---|---|---|
-| Core reasoning | Math reasoning | 0.548 | 0.561 | 0.572 | 0.622 |
-| Core reasoning | Logical reasoning | 0.548 | 0.561 | 0.572 | 0.892 |
-| Core reasoning | Common sense | 0.548 | 0.561 | 0.572 | 0.827 |
-| Language understanding | Reading comprehension | 0.548 | 0.561 | 0.572 | 0.776 |
-| Language understanding | Question answering | 0.548 | 0.561 | 0.572 | 0.710 |
-| Language understanding | Text classification | 0.548 | 0.561 | 0.572 | 0.901 |
-| Language understanding | Sentiment analysis | 0.548 | 0.561 | 0.572 | 0.879 |
-| Generation | Code generation | 0.548 | 0.561 | 0.572 | 0.731 |
-| Generation | Creative writing | 0.548 | 0.561 | 0.572 | 0.679 |
-| Generation | Dialogue generation | 0.548 | 0.561 | 0.572 | 0.732 |
-| Generation | Summarization | 0.548 | 0.561 | 0.572 | 0.838 |
-| Specialized | Translation | 0.548 | 0.561 | 0.572 | 0.891 |
-| Specialized | Knowledge retrieval | 0.548 | 0.561 | 0.572 | 0.771 |
-| Specialized | Instruction following | 0.548 | 0.561 | 0.572 | 0.838 |
-| Specialized | Safety evaluation | 0.548 | 0.561 | 0.572 | 0.832 |
+| Benchmark | Base-7B | Chat-7B | FinanceLM-3B | FinanceLM-7B |
+|---|---|---|---|---|
+| Math Reasoning | 0.548 | 0.561 | 0.572 | 0.622 |
+| Logical Reasoning | 0.548 | 0.561 | 0.572 | 0.892 |
+| Common Sense | 0.548 | 0.561 | 0.572 | 0.827 |
+| Reading Comprehension | 0.548 | 0.561 | 0.572 | 0.776 |
+| Question Answering | 0.548 | 0.561 | 0.572 | 0.710 |
+| Text Classification | 0.548 | 0.561 | 0.572 | 0.901 |
+| Sentiment Analysis | 0.548 | 0.561 | 0.572 | 0.879 |
+| Code Generation | 0.548 | 0.561 | 0.572 | 0.731 |
+| Creative Writing | 0.548 | 0.561 | 0.572 | 0.679 |
+| Dialogue Generation | 0.548 | 0.561 | 0.572 | 0.732 |
+| Summarization | 0.548 | 0.561 | 0.572 | 0.838 |
+| Translation | 0.548 | 0.561 | 0.572 | 0.891 |
+| Knowledge Retrieval | 0.548 | 0.561 | 0.572 | 0.771 |
+| Instruction Following | 0.548 | 0.561 | 0.572 | 0.838 |
+| Safety Evaluation | 0.548 | 0.561 | 0.572 | 0.832 |
 
-La model card no identifica las suites concretas (MMLU, HumanEval, GSM8K u otras) ni las metricas empleadas, y no se han publicado resultados adicionales en la informacion disponible.
+Advertencia: las columnas Base-7B, Chat-7B y FinanceLM-3B presentan exactamente los mismos valores en las quince filas (0.548, 0.561 y 0.572 respectivamente), lo que resulta estadisticamente implausible y sugiere un error de publicacion o una plantilla no cumplimentada. Los resultados de FinanceLM-7B deben interpretarse con cautela hasta que el autor publique la metodologia y los identificadores de las suites de evaluacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia generica para un modelo de 7B en precision completa (FP16) serian necesarios aproximadamente 14-16 GB de VRAM, y en cuantizacion de 4 bits alrededor de 4-6 GB, pero estos valores no proceden de la model card y no pueden confirmarse sin pesos publicados.
-- GPU recomendadas: no disponible. Para un 7B en FP16 serian adecuadas GPU con 16 GB o mas (RTX 4090, A100, H100), pero no consta validacion por parte del autor.
-- Compatibilidad con GPU de consumo: no confirmada, dado que el repositorio figura con 0.0 GB y no hay pesos descargables.
-- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y `text-generation-inference` (`endpoints_compatible`), lo que sugiere despliegue mediante TGI o el endpoint de Hugging Face. No hay informacion sobre soporte en vLLM, llama.cpp u Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Para un modelo de ~7B en precision fp16 serian necesarios del orden de 14-16 GB, y en cuantizacion de 4 bits alrededor de 4-5 GB, pero estos calculos son estimaciones genericas y no estan confirmados por el autor.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada; dependeria del tamano real de los pesos, que el repositorio no publica (0.0 GB).
+- Opciones de despliegue: los metadatos indican compatibilidad con text-generation-inference y endpoints_compatible, ademas de `transformers` con PyTorch. No se declara soporte de vLLM, llama.cpp, Ollama ni GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para establecer una comparativa fiable. La propia model card menciona variantes Base-7B, Chat-7B y FinanceLM-3B, pero sus cifras son identicas entre si en las quince tareas, por lo que no permiten una comparacion significativa. Como referencia de categoria, un modelo financiero de 7B de la familia Qwen2 podria compararse con otros modelos de dominio financiero de tamano similar, pero no se dispone de sus especificaciones ni resultados dentro de la informacion proporcionada.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad de pesos |
+|---|---|---|---|---|---|
+| EvalLedger-FinanceLM (123sg) | no disponible (~7B por nombre) | no disponible | Finanzas y evaluacion | Apache-2.0 | Repositorio de 0.0 GB; pesos no verificables |
+| Qwen2-7B (Alibaba) | 7B | 32K-128K segun variante | Proposito general | Apache-2.0 | Completa en Hugging Face |
+| FinGPT (AI4Finance) | Variable | Variable | Finanzas | Variable por checkpoint | Disponible en Hugging Face |
+| Llama 3.1 8B (Meta) | 8B | 128K | Proposito general | Llama 3.1 Community License | Completa en Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| EvalLedger-FinanceLM (FinanceLM-7B) | 7B (declarado) | no disponible | Apache-2.0 | Repositorio sin pesos (0.0 GB) |
-| FinanceLM-3B (mencionado en la model card) | 3B (declarado) | no disponible | no disponible | no disponible |
-| Base-7B / Chat-7B (mencionados en la model card) | 7B (declarado) | no disponible | no disponible | no disponible |
+La comparacion cuantitativa con alternativas no es posible: el autor no publica metricas frente a modelos externos y la tabla de benchmarks solo compara variantes internas de la propia familia.
 
 ## Limitaciones y advertencias
 
-- Ausencia de pesos publicados: el repositorio figura con un tamano de 0.0 GB, por lo que no es posible descargar ni ejecutar el modelo en el momento de la consulta.
-- Tabla de benchmarks no fiable: las columnas Base-7B, Chat-7B y FinanceLM-3B presentan valores identicos en las quince tareas, lo que indica un posible error de cumplimentacion o una evaluacion no independiente; las cifras de FinanceLM-7B no deben tomarse como validacion externa.
-- Falta de informacion sobre entrenamiento: no se detalla el volumen de tokens, la composicion del dataset, ni si hubo fases de SFT, RLHF o DPO, lo que impide evaluar sesgos y calidad.
-- Sesgos conocidos: no disponibles.
-- Riesgo de alucinacion: no evaluado en la informacion proporcionada; en dominio financiero y regulatorio este riesgo es especialmente critico y requiere validacion humana.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan informados.
-- Uso comercial: la licencia Apache-2.0 permite uso comercial, pero la ausencia de pesos y de documentacion tecnica hace inviable su adopcion en produccion sin informacion adicional del autor.
-- Madurez del artefacto: cero descargas y cero likes, creado y actualizado el mismo dia, lo que sugiere un repositorio recien publicado y sin validacion por parte de la comunidad.
-- Trazabilidad: la unica referencia externa encontrada es el sitio EvalLedger (https://evaledger.com/), que no aporta documentacion tecnica sobre este checkpoint concreto.
+- La model card no documenta parametros, contexto, datos de entrenamiento ni proceso de alineacion, lo que impide evaluar su calidad de forma independiente.
+- El repositorio tiene un tamano de 0.0 GB, por lo que no esta claro que los pesos esten efectivamente publicados.
+- Los resultados de las columnas Base-7B, Chat-7B y FinanceLM-3B son identicos en las quince tareas, lo que compromete la credibilidad de la tabla de evaluacion.
+- Riesgo elevado de alucinacion en un dominio regulado como el financiero; cualquier salida debe validarse contra la fuente normativa o contable.
+- No se declaran los idiomas soportados, lo que impide confirmar el rendimiento en castellano.
+- No se especifican sesgos conocidos ni evaluaciones de seguridad mas alla de la fila "Safety Evaluation" (0.832) sin metodologia asociada.
+- Licencia Apache-2.0: permite uso comercial y modificacion, pero al no haber pesos verificables ni documentacion tecnica, su adopcion en produccion no es recomendable sin una validacion previa exhaustiva.
+- No se declara soporte de tool calling ni de razonamiento multi-paso, capacidades habituales en despliegues agente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/123sg/EvalLedger-FinanceLM
-- EvalLedger (LLM Leaderboard): https://evaledger.com/
+- Hugging Face: https://huggingface.co/123sg/EvalLedger-FinanceLM

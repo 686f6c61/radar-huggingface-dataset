@@ -2,49 +2,49 @@
 
 ## Resumen
 
-Nightmare PromptQwen3 es un adaptador LoRA publicado por el usuario cactusfriend en Hugging Face, entrenado mediante SFT sobre el modelo base Qwen/Qwen3-1.7B. Su proposito declarado es servir como motor de generacion de texto para el nodo personalizado de InvokeAI denominado "Nightmare Promptgen", es decir, generar prompts de forma automatica para flujos de trabajo de generacion de imagenes. No se trata por tanto de un modelo completo, sino de un adaptador PEFT que debe combinarse con los pesos de Qwen3-1.7B para poder ejecutarse.
+Nightmare PromptQwen 3 es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante SFT (Supervised Fine-Tuning) sobre el modelo base Qwen/Qwen3-1.7B. Lo desarrolla el usuario cactusfriend y está pensado específicamente para integrarse en el nodo personalizado "Nightmare Promptgen" de InvokeAI, una interfaz de generación de imágenes. Su función es generar prompts de texto que alimenten modelos de difusión, no es un modelo de propósito general.
 
-El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no incluye model card detallada mas alla de dos lineas de descripcion. No se especifican licencia, idiomas soportados, composicion del dataset de entrenamiento ni resultados de evaluacion. Esto lo situa como un artefacto experimental de nicho, util principalmente para quien quiera reproducir el flujo de Nightmare Promptgen dentro de InvokeAI.
+El artefacto publicado es únicamente el adaptador (0,2 GB en formato safetensors), no los pesos completos del modelo base. Para utilizarlo es imprescindible descargar Qwen3-1.7B por separado y cargar el LoRA encima mediante la librería PEFT. La arquitectura, el contexto y el resto de características heredan las del modelo base Qwen3-1.7B, del que no se aportan detalles adicionales en la información disponible.
 
-La relevancia de esta ficha es doble: por un lado documenta un adaptador muy concreto orientado a un caso de uso especifico (generacion de prompts para difusion); por otro, sirve como ejemplo del flujo habitual de la comunidad open source, en el que se publican adaptadores LoRA ligeros sobre modelos base pequenos y eficientes como la familia Qwen3.
+Su relevancia es acotada: se trata de un fine-tuning comunitario de nicho, con 816 descargas y sin likes, orientado a un flujo de trabajo muy concreto (generación de prompts para InvokeAI). No hay información publicada sobre benchmarks, licencia, idiomas ni datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre un transformer denso causal; modelo base Qwen/Qwen3-1.7B |
-| Parametros totales | No disponible para el adaptador; el modelo base declara 1.7 mil millones de parametros |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada; la hereda del modelo base Qwen3-1.7B |
-| Tipos de cuantizacion | No disponible para el adaptador; se distribuye en precision completa (safetensors) y el modelo base puede cuantizarse por separado (por ejemplo GGUF o AWQ) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (adaptador LoRA compatible con PEFT); el modelo base Qwen3-1.7B se distribuye por separado |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre transformer Qwen3-1.7B |
+| Parametros totales | no disponible (adaptador de 0,2 GB; el modelo base Qwen3-1.7B tiene 1.700 millones) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (heredada del modelo base Qwen3-1.7B) |
+| Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; el base admite las cuantizaciones habituales de Qwen3) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador de bajo rango (LoRA) sobre Qwen3-1.7B, un transformer causal denso. Las etiquetas del repositorio indican PEFT, LoRA, SFT, transformers y trl, lo que apunta a un ajuste supervisado clasico mediante la libreria TRL, sin evidencia de etapas adicionales de RLHF o DPO. No se especifica el rango del adaptador, los modulos objetivo, la tasa de aprendizaje ni el numero de pasos de entrenamiento.
+El modelo es un adaptador LoRA entrenado con SFT mediante la librería TRL sobre Qwen3-1.7B. No se publican detalles sobre el rango del LoRA, los módulos objetivo, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. La model card se limita a indicar que el adaptador está destinado al nodo personalizado "Nightmare Promptgen" de InvokeAI.
 
-Tampoco se documenta el dataset utilizado, su tamano en tokens, su composicion ni el proceso de filtrado. La unica pista funcional es la descripcion del autor, que vincula el adaptador al nodo de InvokeAI "Nightmare Promptgen", del que existen versiones previas basadas en otros modelos (por ejemplo nightmare-promptgen-3, construido sobre Apple OpenELM). Eso sugiere un corpus de prompts con formato InvokeAI o Compel, aunque no hay confirmacion en la informacion disponible. No se declara ninguna innovacion tecnica adicional como decodificacion especulativa o atencion lineal.
+La arquitectura subyacente es la del modelo base Qwen3-1.7B, un transformer denso de la familia Qwen3. No hay información sobre innovaciones técnicas específicas del adaptador ni sobre modificaciones respecto al base.
 
 ## Capacidades
 
-- Generacion de texto autorregresiva mediante el modelo base Qwen3-1.7B, con el adaptador aplicado por encima.
-- Generacion de prompts para flujos de texto a imagen, que es el proposito declarado del adaptador dentro del nodo Nightmare Promptgen de InvokeAI.
-- Integracion con el ecosistema Hugging Face Transformers y PEFT, cargando el adaptador sobre el modelo base.
-- Compatibilidad con la libreria TRL para reentrenamiento o ajuste adicional por parte de terceros.
-- Soporte de tool calling, agentes, vision, audio, modo thinking o razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible.
+- Generación de texto orientada a la creación de prompts para modelos de difusión en InvokeAI.
+- Especialización en el formato y estilo de prompt que espera el nodo "Nightmare Promptgen".
+- Hereda las capacidades lingüísticas generales del modelo base Qwen3-1.7B, si bien el ajuste fino puede haber reducido su polivalencia.
+- Soporte de tool calling: no disponible (no documentado para este adaptador).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: no disponible.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Generacion automatica de prompts en InvokeAI: el adaptador se conecta al nodo Nightmare Promptgen y produce cadenas de prompt a partir de una entrada breve, reduciendo el trabajo manual de redaccion en cada iteracion.
-- Exploracion creativa por lotes: generar decenas de variaciones de prompt con la misma semantica para despues filtrar las mejores imagenes resultantes, aprovechando que el modelo base es pequeno y permite muchas inferencias por minuto.
-- Preprocesado en pipelines de generacion de imagenes: colocar el modelo como primer paso de un pipeline automatizado que transforma descripciones de alto nivel en prompts tecnicos con pesos y etiquetas compatibles con InvokeAI o Compel.
-- Creacion de datasets sinteticos de prompts: usar el adaptador para producir pares entrada-salida que alimenten posteriores ajustes de modelos de generacion de prompts, dado su bajo coste de inferencia.
-- Asistente local sin conexion: al estar basado en un modelo de 1.7 mil millones de parametros, puede ejecutarse en GPUs de consumo o incluso en CPU con cuantizacion, lo que permite usarlo en entornos sin acceso a APIs externas.
-- Investigacion sobre PEFT: sirve como caso de estudio de adaptadores LoRA entrenados con TRL sobre modelos base pequenos, util para comparar hiperparametros y estrategias de ajuste.
-- Prototipado rapido de nodos personalizados: desarrolladores que quieran crear sus propios nodos de generacion de prompts pueden usar este adaptador como referencia funcional de extremo a extremo.
+- Generación de prompts para InvokeAI: el uso principal y documentado. El adaptador se carga en el nodo "Nightmare Promptgen" para producir descripciones de texto que alimenten los modelos de difusión de InvokeAI, aprovechando el ajuste fino para ajustarse al formato esperado por el nodo.
+- Automatización de flujos de generación de imágenes: dentro de un pipeline de InvokeAI, el modelo puede generar variaciones de prompt a partir de una idea breve, reduciendo la intervención manual en la fase de redacción.
+- Prototipado de herramientas creativas: desarrolladores que construyan nodos personalizados para InvokeAI pueden usar este LoRA como referencia de cómo adaptar Qwen3-1.7B a una tarea concreta mediante SFT.
+- Experimentación con PEFT: sirve como ejemplo práctico de fine-tuning LoRA sobre un modelo pequeño (1,7B) para una tarea de nicho, útil para estudiar el formato del adaptador y su integración con transformers y TRL.
+- Exploración de estilo de prompt: el ajuste puede emplearse para estudiar cómo un SFT sobre Qwen3 modifica el estilo de las descripciones generadas en comparación con el modelo base.
+- Despliegue ligero en local: al requerir solo el base de 1,7B más un adaptador de 0,2 GB, puede ejecutarse en equipos con recursos modestos para tareas de generación de prompts, aunque no hay datos de latencia ni throughput publicados.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos del modelo base de 1.7 mil millones de parametros ocupan aproximadamente 3,4 GB en FP16/BF16, en torno a 1,8 GB en cuantizacion de 8 bits y cerca de 1 GB en cuantizacion de 4 bits. A ello hay que sumar la memoria de la cache KV, que crece con la longitud de contexto utilizada. El adaptador LoRA anade una cantidad marginal de memoria.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM resulta suficiente en FP16, y 4 GB pueden bastar con cuantizacion de 4 bits. Nvidia RTX 3060, RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090 son opciones validas; en el extremo profesional, A100 y H100 estan sobradamente dimensionadas para un modelo de este tamano.
-- Cabe en GPU de consumo: si. La familia RTX 30 y 40, asi como GPUs de gama media con 8 GB o mas, pueden ejecutar el modelo cuantizado o incluso en precision completa. En GPUs con 4-6 GB es recomendable cuantizar.
-- Opciones de despliegue: transformers con PEFT para cargar el adaptador, llama.cpp u Ollama si se convierte el modelo base a GGUF y se fusiona el adaptador, vLLM o TGI para servir el modelo fusionado en produccion. La fusion del adaptador con los pesos base es el paso previo necesario para la mayoria de estos runners.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Como referencia de orden de magnitud, un modelo denso de 1.7 mil millones de parametros suele superar con holgura las decenas de tokens por segundo en GPUs modernas de consumo en FP16, pero no se ha publicado ninguna medicion especifica para este adaptador.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia, el modelo base Qwen3-1.7B en fp16 requiere aproximadamente 3,4 GB solo para pesos, más overhead de activaciones y KV cache; el adaptador LoRA añade una cantidad marginal.
+- GPU recomendadas: no disponible. Por tamaño del base, cabría en GPUs consumer con 8 GB o más de VRAM en fp16, y en 4-6 GB con cuantización de 4 bits, pero no hay confirmación del autor.
+- Cabe en consumer GPU: previsiblemente sí, dado el tamaño del modelo base (1,7B), aunque no está documentado para este adaptador.
+- Opciones de despliegue: transformers + PEFT (stack documentado en la model card). vLLM, llama.cpp, Ollama o TGI no están documentados para este adaptador.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cactusfriend/nightmare-promptqwen3 | Adaptador sobre 1.7B (no disponible el numero de parametros del adaptador) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | 1.7B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
-| cactusfriend/nightmare-promptgen-3 | No disponible (basado en Apple OpenELM) | No disponible | No disponible | No disponible | Hugging Face, con nodo de InvokeAI en GitHub |
+| Nightmare PromptQwen 3 | Adaptador LoRA sobre Qwen3-1.7B | no disponible | Adaptador PEFT | no disponible | Hugging Face (816 descargas) |
+| Qwen/Qwen3-1.7B (base) | 1.700 M | no disponible en esta ficha | Modelo completo | no disponible en esta ficha | Hugging Face |
+| Otros LoRA comunitarios sobre Qwen3-1.7B | Variable | Heredado del base | Adaptador PEFT | Variable | Hugging Face |
 
-No se dispone de datos suficientes para establecer una comparacion cuantitativa con alternativas de la misma categoria. Cualquier modelo de aproximadamente 1 a 2 mil millones de parametros orientado a generacion de prompts seria un comparable razonable, pero no se han publicado metricas que permitan contrastarlos.
+No se dispone de información suficiente para comparar rendimiento con alternativas concretas; los datos de benchmarks y licencia del adaptador no están publicados.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. El autor no documenta analisis de sesgos ni composicion del dataset de entrenamiento.
-- Riesgo de alucinacion: no cuantificado. Al tratarse de un ajuste especifico sobre un modelo pequeno, es esperable que genere prompts sintacticamente plausibles pero ocasionalmente incoherentes con la intencion del usuario, aunque esto no esta verificado en la informacion disponible.
-- Limitaciones de contexto e idioma: no disponibles. El adaptador no declara idiomas soportados ni una longitud de contexto propia.
-- Restricciones de licencia: la licencia del adaptador figura como no disponible, lo que impide determinar si se permite el uso comercial. Ademas, el uso del adaptador esta condicionado por la licencia del modelo base Qwen3-1.7B, que debe consultarse por separado en su propio repositorio.
-- Documentacion insuficiente: la model card carece de informacion sobre dataset, hiperparametros, proceso de evaluacion y limitaciones, lo que dificulta la reproducibilidad y la evaluacion de calidad.
-- Adopcion practicamente nula: cero descargas y cero likes en el momento de la consulta, sin evidencia de validacion por parte de la comunidad.
-- Cadena de dependencias: al ser un adaptador, requiere descargar el modelo base completo y fusionarlo o cargarlo conjuntamente, lo que anade complejidad de despliegue frente a un modelo ya fusionado.
-- Fecha de creacion inusual: el repositorio figura creado el 2026-10-16, una fecha posterior a la mayoria de referencias publicas, por lo que conviene verificar la integridad de los metadatos antes de usarlo en produccion.
+- Uso muy específico: el adaptador está entrenado para el nodo "Nightmare Promptgen" de InvokeAI; su comportamiento fuera de ese contexto no está documentado y probablemente sea degradado respecto al modelo base.
+- Licencia no disponible: no se puede confirmar si se permite uso comercial; conviene verificar la licencia del modelo base Qwen3-1.7B y contactar con el autor antes de usarlo en producción.
+- Idiomas no documentados: se desconoce qué idiomas cubre el ajuste fino; el modelo base Qwen3 es multilingüe, pero el SFT puede haber sesgado la distribución.
+- Riesgo de alucinación: inherente a los modelos generativos de este tamaño; en la generación de prompts puede producir descripciones incoherentes o atributos inexistentes.
+- Sin benchmarks ni evaluación publicada: no hay evidencia cuantitativa de calidad frente al modelo base.
+- Repositorio de bajo mantenimiento: 0 likes, sin discusiones ni documentación adicional; el soporte de la comunidad es mínimo.
+- Dependencia del modelo base: requiere descargar Qwen3-1.7B por separado y cargar el adaptador con PEFT; no es un modelo autónomo.
+- Fecha de creación futura en los metadatos (2026): conviene verificar la integridad y procedencia del repositorio antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/cactusfriend/nightmare-promptqwen3
+- Hugging Face: https://huggingface.co/cactusfriend/nightmare-promptqwen3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Nightmare Promptgen 3 (modelo previo basado en OpenELM): https://huggingface.co/cactusfriend/nightmare-promptgen-3
-- Archivos del repositorio Nightmare Promptgen 3: https://huggingface.co/cactusfriend/nightmare-promptgen-3/tree/main
-- Nodo de InvokeAI Nightmare Promptgen en GitHub: https://github.com/gogurtenjoyer/nightmare-promptgen
-- README del nodo Nightmare Promptgen: https://github.com/gogurtenjoyer/nightmare-promptgen/blob/main/README.md
-- Ficha de analisis de seguridad en Protect AI Insights DB: https://protectai.com/insights/models/cactusfriend/nightmare-promptgen-3/3cf5f23ad2cb88da362119f975a195e8282b98fb/versions
+- Repositorio PEFT: https://github.com/huggingface/peft
+- Repositorio TRL: https://github.com/huggingface/trl
+- InvokeAI: https://github.com/invoke-ai/InvokeAI

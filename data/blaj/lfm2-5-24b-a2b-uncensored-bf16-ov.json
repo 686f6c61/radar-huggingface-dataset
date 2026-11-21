@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "blaj/LFM2.5-24B-A2B-Uncensored-int8-ov · Hugging Face",
-      "url": "https://huggingface.co/blaj/LFM2.5-24B-A2B-Uncensored-int8-ov",
-      "snippet": "LFM2.5-24B-A2B-Uncensored int8 OpenVINO IR INT8 weight-only OpenVINO IR of the LoRA-fused, uncensored LFM2.5-24B-A2B. The source contains the rank-1 atomic.abliterate adapter r24-all-14-39-perlayer fused into layers 14–39 at scale 1.75. The adapter is baked into the weights; no adapter is needed at runtime."
-    },
-    {
-      "title": "blaj/LFM2.5-24B-A2B-Uncensored-int4-ov · Hugging Face",
-      "url": "https://huggingface.co/blaj/LFM2.5-24B-A2B-Uncensored-int4-ov",
-      "snippet": "Mixture of Experts uncensored abliterated conversational License:lfm1.0 Model card FilesFiles and versions xet Community Copy to bucket LFM2.5-24B-A2B-Uncensored int4 OpenVINO IR Conversion details Why per-layer Why the MoE block comes from the exporter Files I/O Usage Reproducing Benchmark Paged attention / continuous batching Attribution ..."
-    }
-  ]
+  "sources": []
 }

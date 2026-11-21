@@ -5,7 +5,7 @@
   "author": "Icodetools",
   "url": "https://huggingface.co/Icodetools/Vulcan-1-coding-GGUF",
   "created_at": "2026-11-10T00:18:30.000Z",
-  "updated_at": "2026-11-13T00:31:44.000Z",
+  "updated_at": "2026-11-21T02:04:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,7 +46,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1559,
+  "downloads_30d": 1561,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
@@ -63,8 +63,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "MisasAI/Vulcan-1-small-GGUF",
+  "renamed_at": "2026-11-21T03:22:32.183Z",
   "benchmarks": [],
   "sources": []
 }

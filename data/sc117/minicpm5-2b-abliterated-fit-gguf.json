@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 918,
+  "downloads_30d": 886,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
-      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
-      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
-    },
-    {
-      "title": "知乎 - 有问题，就会有答案",
-      "url": "https://www.zhihu.com/",
-      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
-    },
-    {
-      "title": "Compte Instagram verrouillé et irrécupérable",
-      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
-      "snippet": "Aug 20, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …"
-    },
-    {
-      "title": "Problème bouton shopping Instagram [Résolu] - Instagram",
-      "url": "https://forums.commentcamarche.net/forum/affich-35360771-probleme-bouton-shopping-instagram",
-      "snippet": "May 12, 2018 · Plusieurs utilisateurs rencontrent le problème d'affichage du bouton shopping sur Instagram malgré la configuration …"
-    },
-    {
-      "title": "Contattare centro assistenza Instagram: numero, email - CCM",
-      "url": "https://it.ccm.net/faq/20697-contattare-centro-assistenza-instagram",
-      "snippet": "Mar 16, 2023 · A volte potrebbe capitare di non riuscire ad accedere ad Instagram perch&eacute; l'account &egrave; stato bloccato, …"
-    }
-  ]
+  "sources": []
 }

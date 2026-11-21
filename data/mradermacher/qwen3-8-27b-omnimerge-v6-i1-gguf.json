@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.de/",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF",
-      "snippet": "mradermacher / Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF like 1 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=de",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3.8",
-      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
-    },
-    {
-      "title": "Google Übersetzer",
-      "url": "https://translate.google.de/",
-      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
-    }
-  ]
+  "sources": []
 }

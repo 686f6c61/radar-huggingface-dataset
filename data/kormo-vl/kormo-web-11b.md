@@ -2,104 +2,110 @@
 
 ## Resumen
 
-KORMo-Web-11B es un modelo multimodal de tipo image-text-to-text desarrollado por KAIST MLP Lab (publicado bajo la organizacion KORMo-VL) que combina tres capacidades en un unico modelo: razonamiento como LLM, comprension visual como VLM y actuacion como agente GUI sobre navegador web. Se construye sobre la familia fundacional propia de KORMo, partiendo del LLM KORMo-10B entrenado desde cero con un tokenizador optimizado para coreano, y extendiendolo mediante KORMo-VL (encoder visual SigLIP + backbone KORMo) hasta convertirlo en un agente web. A diferencia de sus hermanos KORMo-Web-4B y 9B, que se basan en Qwen y priorizan el rendimiento en tareas web, esta variante de 11B busca preservar las capacidades generales de lenguaje y vision mientras anade la interaccion GUI.
+KORMo-Web-11B es un modelo multimodal de tipo image-text-to-text desarrollado por el laboratorio KAIST MLP, diseñado para actuar simultáneamente como LLM, VLM y agente de interfaz gráfica (GUI agent) para navegación web. A diferencia de sus predecesores KORMo-Web-4B y 9B, que partían de modelos Qwen y priorizaban el rendimiento en tareas web, esta versión se construye sobre la familia fundacional propia KORMo (KORMo-10B entrenado desde cero y extendido a KORMo-VL con un codificador visual SigLIP), con el objetivo explícito de preservar las capacidades lingüísticas y de comprensión visual mientras se añade la capacidad de operar un navegador.
 
-El modelo cuenta con 11.191.119.728 parametros totales (aproximadamente 11B) y un repositorio de 22,5 GB en formato safetensors. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial, modificacion y redistribucion. Soporta coreano e ingles, y su modo de razonamiento interno (bloque Think) esta disenado para operar en coreano, lo que lo convierte en una propuesta poco habitual dentro del ecosistema de agentes web, dominado por modelos anglofonos.
+El modelo resuelve el problema de la automatización de tareas web reales mediante interacción visual: interpreta capturas de pantalla, localiza elementos de interfaz, comprende su función y ejecuta acciones multi-paso. Su rasgo diferencial es el bilingüismo coreano-inglés nativo, incluyendo un modo de razonamiento (`<Think>`) que el autor declara como el único disponible en coreano entre los modelos de su categoría. Cuenta con 11.191.119.728 parámetros (11B) y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial, modificación y redistribución.
 
-Su relevancia actual radica en que cubre un nicho especifico: agentes de navegador bilingues coreano-ingles con licencia permisiva y pesos abiertos. El entrenamiento incluye mas de 10 millones de muestras de preentrenamiento web atomico y mas de 100.000 trayectorias de interaccion web, lo que lo posiciona como una alternativa open-weight a agentes propietarios en tareas de automatizacion de navegador.
+La relevancia actual reside en que combina en un único checkpoint tres capacidades que habitualmente requieren modelos separados, con pesos abiertos y un rendimiento en tareas web coreanas (33,7% de éxito en Online-Mind2Web KO) que supera en 13,5 puntos porcentuales al mejor baseline abierto no-KORMo listado por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (LLM KORMo-10B + encoder visual SigLIP), familia llava_onevision |
-| Parametros totales | 11.191.119.728 (aproximadamente 11B) |
+| Arquitectura | Transformer multimodal (LLM + VLM + GUI agent); codificador visual SigLIP sobre backbone lingüístico KORMo; arquitectura declarada como llava_onevision en los tags del repo |
+| Parametros totales | 11.191.119.728 (11B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | coreano (ko), ingles (en) |
+| Idiomas soportados | Coreano (ko) e inglés (en) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
+| Modelo base | KORMo-VL/KORMo-VL (a su vez derivado de KORMo-10B) |
+| Pipeline | image-text-to-text |
+| Libreria | transformers |
+| Tamano del repo | 45,2 GB |
 
 ## Arquitectura y entrenamiento
 
-KORMo-Web-11B sigue una arquitectura multimodal de tipo LLaVA-OneVision: un encoder visual SigLIP acoplado a un backbone de lenguaje KORMo. El backbone procede de KORMo-10B, un LLM entrenado desde cero por KAIST MLP Lab con un tokenizador optimizado para coreano, que posteriormente se extendio a KORMo-VL anadiendo comprension visual. Sobre esa base, el modelo se entrena como agente web en tres etapas: lenguaje, vision y agente. El pipeline de entrenamiento incluye mas de 10 millones de muestras de preentrenamiento web atomico en coreano e ingles (que cubren localizacion, semantica, estructura, funcion y estado de elementos de interfaz) y mas de 100.000 trayectorias de uso real de navegador bilingues para aprender tareas web de multiples pasos.
+El modelo se construye en tres etapas encadenadas. La primera es KORMo-10B, un LLM coreano-inglés entrenado desde cero con un tokenizador optimizado para coreano. La segunda es KORMo-VL, que añade un codificador visual SigLIP al backbone lingüístico para dotarlo de comprensión multimodal. La tercera es KORMo-Web-11B, que parte de KORMo-VL y se entrena específicamente como agente web conservando las capacidades previas de LLM y VLM. El pipeline declarado en los metadatos es llava_onevision, lo que sitúa la integración visión-lenguaje en la familia de arquitecturas LLaVA-OneVision.
 
-Una innovacion destacable es el modo de razonamiento explicito (bloque Think) que, segun el autor, se realiza en coreano, algo inusual en modelos de agente web. No se especifica en la informacion disponible el numero total de tokens de entrenamiento del LLM base, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. Tampoco se detalla la longitud de contexto soportada ni innovaciones como decodificacion especulativa o atencion lineal.
+El entrenamiento del agente web se apoya en dos conjuntos de datos a gran escala: más de 10 millones de muestras atómicas de comprensión web en coreano e inglés (que cubren localización, semántica, estructura, función y estado de elementos de interfaz) y más de 100.000 trayectorias de interacción web bilingües para el aprendizaje de tareas multi-paso. El autor no detalla en la información disponible el volumen total de tokens, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. Sí se destaca que el modo de razonamiento `<Think>` se emite en coreano, un rasgo diferencial frente a otros agentes web.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general en coreano e ingles como LLM.
-- Comprension de imagenes y texto (VLM) para interpretar capturas de pantalla y contenido visual.
-- Actuacion como agente GUI sobre navegador web: localizacion de elementos de interfaz, comprension de layouts y ejecucion de acciones.
-- Razonamiento multi-paso para completar tareas web complejas a partir de trayectorias de interaccion.
-- Modo de razonamiento interno (Think) realizado en coreano.
-- Capacidades bilingues coreano-ingles en las tres modalidades (texto, vision, agente).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de codigo, matematicas o audio: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento general en coreano e inglés como LLM.
+- Comprensión de imágenes y capturas de pantalla como VLM.
+- Interacción con navegador como GUI agent: localización de elementos de interfaz, interpretación de layouts y estados, y ejecución de acciones.
+- Ejecución de tareas web multi-paso (navegación, formularios, búsquedas, flujos complejos).
+- Modo de razonamiento explícito `<Think>` en coreano.
+- Capacidades bilingües nativas coreano-inglés, incluyendo el razonamiento interno.
+- Soporte de conversación multi-turno (tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Automatizacion de tareas de navegador en coreano: el modelo puede interpretar la pagina visualmente y ejecutar acciones multi-paso, lo que resulta adecuado para empresas coreanas que necesitan agentes sobre portales locales donde los modelos anglofonos rinden peor (30,1 % de exito en tareas coreanas frente a 20,2 % del mejor baseline abierto listado).
-- Rellenado de formularios y tramites administrativos online: gracias a su preentrenamiento atomico sobre elementos de interfaz (posicion, funcion, estado), puede localizar campos y controles en paginas complejas y completar flujos guiados.
-- Extraccion de informacion de paginas web con contenido visual: al combinar VLM y LLM, puede leer capturas de pantalla, tablas e imagenes y resumir o estructurar la informacion en texto.
-- Asistente de accesibilidad web: puede describir y operar interfaces en coreano e ingles para usuarios con dificultades motoras o visuales, actuando como capa de interaccion por lenguaje natural.
-- Testing automatizado de aplicaciones web: el modelo puede recorrer flujos de usuario y verificar estados de la interfaz, integrandose en pipelines de QA que necesiten validacion visual ademas de DOM.
-- Atencion al cliente con soporte de navegacion: combinando sus capacidades LLM y de agente, puede responder consultas y, cuando sea necesario, realizar acciones en el navegador en nombre del usuario (por ejemplo, consultar el estado de un pedido en un portal).
-- Investigacion en agentes GUI bilingues: al ser Apache-2.0 y con pesos abiertos, sirve como base para fine-tuning y experimentacion academica en tareas de computer-use en coreano.
+- Automatización de tareas web repetitivas en coreano: el modelo puede operar portales y formularios administrativos surcoreanos interpretando la interfaz visualmente, sin depender de selectores DOM frágiles, gracias a su entrenamiento con más de 10 millones de muestras de UI coreanas.
+- Agentes de atención al cliente con navegación autónoma: combinación de LLM para conversación multi-turno y GUI agent para resolver gestiones en el backoffice del cliente (consultas de pedidos, cambios de datos) directamente sobre la interfaz web.
+- Testing E2E automatizado de aplicaciones web: el modelo puede ejecutar flujos de usuario sobre builds de staging y verificar visualmente el resultado, integrándose en pipelines de CI/CD como sustituto o complemento de frameworks de automatización basados en selectores.
+- Extracción de información de portales sin API: navegación visual de sitios que no ofrecen endpoints programáticos, recopilando datos estructurados mediante interacción guiada por capturas de pantalla.
+- Asistente de accesibilidad: interpretación de la pantalla y ejecución de acciones por voz o texto para usuarios con dificultades de interacción, aprovechando la comprensión de layouts y la localización de elementos.
+- Automatización de investigación competitiva bilingüe: recorrido de sitios coreanos e internacionales para recopilar precios, catálogos o disponibilidad, con razonamiento `<Think>` en coreano que facilita la auditoría del proceso por parte de equipos locales.
+- Prototipado de copilotos de navegador: al conservar capacidades LLM y VLM, un mismo checkpoint puede servir tanto para responder preguntas sobre el contenido de una página como para actuar sobre ella, simplificando el despliegue.
 
 ## Benchmarks y rendimiento
 
-Evaluacion sobre 612 tareas de sitios web en vivo (300 en ingles, 312 en coreano) de Online-Mind2Web, con el mismo juez LLM para todos los modelos. Tasas de exito (SR) calculadas sobre el conjunto completo de tareas.
+Evaluación sobre 612 tareas de sitios web en vivo (300 en inglés, 312 en coreano) de Online-Mind2Web, con el mismo juez LLM para todos los modelos. Las tasas de éxito se calculan sobre el conjunto completo de tareas, incluyendo ejecuciones fallidas o incompletas, y cada agente usa su propio prompt y formato de acción.
 
-| Modelo | Tamano | SR ingles (%) | SR coreano (%) |
+| Modelo | Tamano | Online-Mind2Web EN | Online-Mind2Web KO |
 |---|---:|---:|---:|
 | Qwen3.5-9B (base) | 9B | 24,7 | 16,7 |
 | Fara-1.5-4B | 4B | 20,7 | 7,7 |
 | UI-TARS-1.5-7B | 7B | 22,3 | 20,2 |
 | OpenWebRL-4B | 4B | 32,7 | 15,4 |
-| KORMo-Web-11B (propio) | 11B | 29,0 | 30,1 |
-| GPT-6-luna (propietario) | no disponible | 63,0 | 65,7 |
+| **KORMo-Web-11B** | **11B** | **31,3** | **33,7** |
+| GPT-6-luna (propietario) | – | 63,0 | 65,7 |
 
-KORMo-Web-11B alcanza un 30,1 % de exito en tareas coreanas, 9,9 puntos porcentuales por encima del mejor baseline abierto no KORMo listado. En ingles obtiene un 29,0 %, por debajo de OpenWebRL-4B (32,7 %) pero por encima del resto de baselines abiertos. No se han publicado en la informacion disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K.
+El modelo alcanza un 33,7% de éxito en tareas coreanas, 13,5 puntos porcentuales por encima del mejor baseline abierto no-KORMo de la tabla. En inglés (31,3%) queda ligeramente por debajo de OpenWebRL-4B (32,7%). El autor señala que sus modelos especializados KORMo-Web-4B y 9B logran mayor éxito en tareas web, y que KORMo-Web-11B prioriza la versatilidad entre lenguaje, visión e interacción GUI. No se han publicado en la información disponible resultados de benchmarks de LLM o VLM (MMLU, HumanEval, GSM8K u otros).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (bf16/fp16): aproximadamente 22,4 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda al menos 24-32 GB de VRAM.
-- VRAM estimada con cuantizacion a 8 bits: aproximadamente 11-12 GB de pesos; a 4 bits: aproximadamente 6-7 GB de pesos (estimaciones teoricas a partir del numero de parametros, no confirmadas por el autor).
-- GPU recomendadas: A100 40/80 GB, H100, L40S para despliegue en produccion; RTX 4090 (24 GB) puede alojar el modelo en bf16 de forma ajustada o con cuantizacion.
-- Cabe en GPU de consumo: si, en RTX 4090 con cuantizacion o precision reducida; en GPUs de 16 GB (RTX 4080, 4060 Ti 16GB) solo con cuantizacion agresiva.
-- Opciones de despliegue: transformers (libreria indicada en el modelo), con compatibilidad con endpoints; soporte especifico de vLLM, llama.cpp, Ollama o TGI no confirmado en la informacion disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 22,4 GB solo para pesos (11,19B parámetros × 2 bytes), más overhead de activaciones y del codificador visual; en la práctica se recomienda un mínimo de 24-32 GB.
+- En cuantización de 8 bits: en torno a 11-12 GB de pesos; en 4 bits: en torno a 6-7 GB, más overhead. Los formatos de cuantización concretos no están disponibles en la información proporcionada.
+- GPU profesionales recomendadas: A100 (40/80 GB), H100, L40S o A6000 para despliegue en BF16 con margen para contexto largo y procesamiento de imágenes.
+- GPU de consumo: en BF16 no cabe en GPUs de 24 GB sin offloading; con cuantización a 8 o 4 bits podría ejecutarse en RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 4080 (16 GB) en configuraciones ajustadas.
+- Opciones de despliegue: transformers (librería declarada), servidores compatibles con endpoints; vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | SR coreano (%) | SR ingles (%) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Mind2Web EN | Mind2Web KO | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| KORMo-Web-11B | 11B | no disponible | 30,1 | 29,0 | Apache-2.0 | Pesos abiertos en HF |
-| UI-TARS-1.5-7B | 7B | no disponible | 20,2 | 22,3 | no disponible | Pesos abiertos |
-| OpenWebRL-4B | 4B | no disponible | 15,4 | 32,7 | no disponible | Pesos abiertos |
-| Fara-1.5-4B | 4B | no disponible | 7,7 | 20,7 | no disponible | Pesos abiertos |
-| Qwen3.5-9B (base) | 9B | no disponible | 16,7 | 24,7 | no disponible | Pesos abiertos |
+| **KORMo-Web-11B** | 11B | no disponible | 31,3 | 33,7 | Apache-2.0 | Pesos abiertos en HF |
+| UI-TARS-1.5-7B | 7B | no disponible | 22,3 | 20,2 | no disponible | Pesos abiertos |
+| OpenWebRL-4B | 4B | no disponible | 32,7 | 15,4 | no disponible | Pesos abiertos |
+| Fara-1.5-4B | 4B | no disponible | 20,7 | 7,7 | no disponible | Pesos abiertos |
+| Qwen3.5-9B (base) | 9B | no disponible | 24,7 | 16,7 | no disponible | Pesos abiertos |
 
-KORMo-Web-11B destaca en tareas coreanas frente a todos los baselines abiertos listados, mientras que en ingles queda por detras de OpenWebRL-4B pese a triplicar su tamano. Frente a GPT-6-luna (propietario) la brecha es amplia en ambos idiomas, lo que refleja la diferencia entre agentes abiertos de 11B y modelos frontera cerrados.
+KORMo-Web-11B es el único de la comparativa con licencia Apache-2.0 confirmada y el único con rendimiento equilibrado y superior en coreano. Frente a UI-TARS-1.5-7B gana en ambos idiomas con 4B parámetros más; frente a OpenWebRL-4B pierde 1,4 puntos en inglés pero gana 18,3 puntos en coreano. Los datos de contexto de los modelos comparables no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Las tasas de exito en tareas web son moderadas (29-30 %), por lo que no es adecuado para automatizacion desatendida de flujos criticos sin supervision humana.
-- Riesgo de alucinacion en la interpretacion de interfaces y en la generacion de texto, como en cualquier LLM; en tareas de agente puede traducirse en acciones erroneas sobre la pagina.
-- Cobertura limitada a coreano e ingles; no se declaran otros idiomas, lo que restringe su uso en entornos multilingues.
-- No se especifica la longitud de contexto, lo que dificulta planificar tareas web con historiales largos o paginas muy extensas.
-- Sesgos conocidos: no documentados explicitamente en la informacion disponible; cabe esperar sesgos derivados de los datos web de preentrenamiento en coreano e ingles.
-- El modo de razonamiento en coreano puede penalizar el rendimiento en tareas puramente anglofonas frente a modelos especializados.
-- Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, pero conviene revisar los terminos completos y las obligaciones de atribucion.
-- Modelo con muy pocas descargas (2) y reciente (creado en noviembre de 2026), por lo que la validacion comunitaria es practicamente inexistente.
-- El autor indica que sus modelos especializados KORMo-Web-4B y 9B logran mayor exito en tareas web; este 11B prioriza versatilidad sobre rendimiento web puro.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse mayoritariamente con datos web coreanos e ingleses, puede heredar sesgos de ese corpus y rendir peor en otras culturas o idiomas.
+- Riesgo de alucinación: presente como en todo LLM; en el contexto de agente web, una localización errónea de elemento o una acción mal inferida puede provocar fallos en cadena en tareas multi-paso.
+- Limitaciones de idioma: solo coreano e inglés declarados; el rendimiento en castellano no está evaluado y probablemente sea inferior.
+- Limitaciones de contexto: la longitud de contexto no está publicada, lo que dificulta planificar tareas web muy largas o páginas con mucho contenido.
+- Rendimiento en tareas web: con un 31,3% de éxito en inglés y un 33,7% en coreano, la mayoría de tareas complejas fallan; no es adecuado para automatización crítica sin supervisión humana.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, modificación y redistribución, pero conviene verificar las licencias de los recursos de entrenamiento y de los datasets asociados.
+- Caveat de producción: el modelo usa su propio prompt y formato de acción; integrarlo requiere replicar ese formato, y los resultados de benchmarks no son directamente comparables con otros agentes que usan formatos distintos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KORMo-VL/KORMo-Web-11B
 - Modelo base KORMo-VL: https://huggingface.co/KORMo-VL/KORMo-VL
-- LLM fundacional KORMo-10B: https://huggingface.co/KORMo-Team/KORMo-10B-sft
-- Demo en video (alojado en el repositorio): https://huggingface.co/KORMo-VL/KORMo-Web-11B/resolve/main/assets/gui_final_demo_dubbed.mp4
-- Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.
+- LLM fundacional KORMo-10B (SFT): https://huggingface.co/KORMo-Team/KORMo-10B-sft
+- Demo de GUI (vídeo en el repo): https://huggingface.co/KORMo-VL/KORMo-Web-11B/resolve/main/assets/gui_final_demo_masked.mp4
+- Benchmark Online-Mind2Web: no disponible enlace directo en la información proporcionada
+- Paper técnico: no disponible
+- Repositorio de código: no disponible

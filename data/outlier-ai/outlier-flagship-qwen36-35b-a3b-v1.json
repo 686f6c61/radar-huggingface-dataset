@@ -5,7 +5,7 @@
   "author": "Outlier-Ai",
   "url": "https://huggingface.co/Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1",
   "created_at": "2026-04-25T06:59:03.000Z",
-  "updated_at": "2026-11-08T06:48:18.000Z",
+  "updated_at": "2026-11-20T13:16:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 880,
+  "downloads_30d": 883,
   "trending_score": 0,
   "parameters": 34660610752,
   "parameters_human": "34.66B",
@@ -52,29 +52,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Train the Next Generation of AI as a Freelancer | Outlier AI",
-      "url": "https://outlier.ai/",
-      "snippet": "What is Outlier? A platform for building AI with expert human input. Discover Outlier AI, join a community for freelancers, and shape …"
+      "title": "Outlier calculator - GraphPad",
+      "url": "https://www.graphpad.com/quickcalcs/grubbs1/",
+      "snippet": "An outlier is a data point on the extreme end of your dataset. It could be very large or very small, but it is abnormally different from …Read more"
     },
     {
-      "title": "Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1 · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Outlier",
-      "url": "https://app.outlier.ai/expert/login",
-      "snippet": "Welcome to Outlier Competitive pay, delivered weekly Set your own schedule Improve pre-release AI models using your existing …"
-    },
-    {
-      "title": "Outlier Flagship Qwen36 35b A3b V1 - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/outlier-ai/outlier-flagship-qwen36-35b-a3b-v1",
-      "snippet": "Registry entry for model Outlier Flagship Qwen36 35b A3b V1; source metadata pending."
+      "title": "Outlier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Outlier",
+      "snippet": "There is no rigid mathematical definition of what constitutes an outlier; determining whether or not an observation is an outlier is …Read more"
     },
     {
       "title": "Outlier",
-      "url": "https://app.outlier.ai/en/expert/opportunities/4499019005",
-      "snippet": "Outlier aide les entreprises les plus innovantes au monde à améliorer leurs modèles d’IA en fournissant des retours humains. Êtes …"
+      "url": "https://www.outlier.org/",
+      "snippet": "You can work on your Outlier course anywhere in the universe with Wi-Fi and a laptop or desktop computer. A full list of technical …Read more"
+    },
+    {
+      "title": "OUTLIER | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/outlier",
+      "snippet": "OUTLIER definition: 1. a person, thing, or fact that is very different from other people, things, or facts, so that it…. Learn more."
+    },
+    {
+      "title": "outlier_ai - Reddit",
+      "url": "https://www.reddit.com/r/outlier_ai/",
+      "snippet": "I wish I read everyone else's horror stories about working for Outlier before wasting a good part of my weekend only to have my work …Read more"
     }
   ]
 }

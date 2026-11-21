@@ -2,99 +2,95 @@
 
 ## Resumen
 
-FINER-SQL-0.5B-v2 es un modelo de generacion de texto especializado en text-to-SQL desarrollado por thanhdath. Se trata de un ajuste fino del modelo base Qwen2 de 0,5B parametros (494.032.768 parametros exactos segun los pesos en safetensors), entrenado mediante GRPO (Group Relative Policy Optimization) con una recompensa compuesta de formato y ejecucion sobre CoRE-DB, un entorno de base de datos compacto enriquecido con contraejemplos descrito en el trabajo *Small Language Models for Text-to-SQL against Spurious Correctness*.
+FINER-SQL-0.5B-v2 es un modelo de generacion de SQL especializado, desarrollado por el autor thanhdath y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino sobre la arquitectura Qwen2 con 494.032.768 parametros totales (aproximadamente 0,5 mil millones), disenado especificamente para la tarea de text-to-SQL: convertir preguntas en lenguaje natural en consultas SQL ejecutables sobre esquemas de bases de datos.
 
-El modelo resuelve un problema concreto: la generacion de consultas SQL correctas a partir de lenguaje natural en modelos pequenos, abordando el fenomeno de la "correccion espuria" (consultas que devuelven resultados plausibles pero semanticamente incorrectas). El checkpoint publicado corresponde al paso 6750, seleccionado sobre el conjunto de desarrollo.
+El modelo forma parte de una familia de tres tamanos (0.5B, 1.5B y 3B) que comparten la misma estrategia de entrenamiento y evaluacion. Su relevancia actual radica en que demuestra que un modelo de menos de 500 millones de parametros puede alcanzar resultados competitivos en los benchmarks BIRD y Spider, lo que lo convierte en una opcion atractiva para despliegues con recursos limitados, entornos de baja latencia o inferencia en GPU de consumo.
 
-Su relevancia actual radica en que demuestra que un modelo de apenas 0,5B parametros puede alcanzar resultados competitivos en benchmarks de text-to-SQL (53,59 de exactitud de ejecucion en BIRD dev y 76,31 en Spider dev) cuando se entrena con refuerzo basado en recompensas de ejecucion, lo que lo hace desplegable en hardware muy modesto. La licencia Apache 2.0 facilita su uso comercial.
+La informacion disponible sobre el modelo es escasa: la model card se limita a presentar una tabla comparativa de resultados en benchmarks y un enlace al repositorio de codigo, sin detallar la composicion del dataset de entrenamiento, el proceso de ajuste fino ni las capacidades multilingues. Esta ficha refleja fielmente esa limitacion, marcando como "no disponible" todo dato que no aparece en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
+| Arquitectura | Qwen2 (transformer decoder-only) |
 | Parametros totales | 494.032.768 |
-| Parametros activos | no aplica (modelo denso) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; compatible con cuantizacion estandar de transformers/GGUF, no confirmado por el autor) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; el autor no documenta variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen2, un transformer decoder-only denso con atencion causal estandar y normalizacion RMSNorm, en su variante de aproximadamente 0,5B parametros. No incorpora mecanismos de mezcla de expertos ni atencion lineal; es un modelo denso convencional optimizado para generacion autoregresiva.
+El modelo emplea la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar, segun se deduce de la etiqueta `qwen2` del repositorio. Con 494 millones de parametros, se situa en la gama de modelos compactos, pensados para inferencia eficiente. No se dispone de informacion sobre la configuracion exacta de capas, dimensiones ocultas, numero de cabezas de atencion ni vocabulario.
 
-El entrenamiento consiste en un ajuste continuado mediante GRPO sobre CoRE-DB, el entorno compacto con contraejemplos del trabajo *Small Language Models for Text-to-SQL against Spurious Correctness*. La funcion de recompensa combina un componente de formato y un componente de ejecucion (execution reward), de modo que el modelo aprende a producir consultas que no solo se ajustan al formato esperado sino que se ejecutan correctamente contra la base de datos. El checkpoint publicado es el paso 6750, seleccionado por rendimiento en el conjunto de desarrollo. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases adicionales de SFT o DPO.
+En cuanto al entrenamiento, la model card no documenta el numero de tokens utilizados, la composicion del dataset de ajuste fino, ni si se aplicaron tecnicas de RLHF, DPO o preferencia. Dado el caracter especializado del modelo (text-to-SQL), es razonable inferir un ajuste fino supervisado sobre pares pregunta-SQL, probablemente derivados de los esquemas de BIRD y Spider, pero esto no esta confirmado en la informacion disponible. Tampoco se documentan innovaciones tecnicas como decodificacao especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de consultas SQL a partir de instrucciones en lenguaje natural (text-to-SQL), orientada a esquemas de bases de datos relacionales.
-- Razonamiento sobre esquemas y contexto conversacional, segun la etiqueta `conversational` del repositorio.
-- Entrenamiento con recompensa de ejecucion, lo que favorece consultas ejecutables y semanticamente correctas frente a soluciones espurias.
-- Generacion de texto general heredada del modelo base Qwen2 (pipeline `text-generation`).
-- Compatibilidad con Text Generation Inference y endpoints compatibles, segun las etiquetas del repositorio.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponibles; el modelo es exclusivamente de texto.
+- Generacion de consultas SQL a partir de instrucciones en lenguaje natural (text-to-SQL), incluyendo esquemas complejos con multiples tablas y joins.
+- Razonamiento sobre esquemas de bases de datos y correspondencia entre terminos del lenguaje natural y columnas/tablas.
+- Evaluado en los benchmarks BIRD y Spider, tanto en metrica de ejecucion exacta (EX) como en exactitud de conjunto de resultados (TS).
+- Formato de pesos compatible con `transformers`, lo que permite su integracion en pipelines estandar de Hugging Face.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: no disponible; la model card no declara idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Asistente de consultas para analistas de datos: el modelo traduce preguntas en lenguaje natural a SQL sobre un esquema conocido, reduciendo el tiempo de escritura manual de consultas en herramientas de BI internas.
-- Integracion en pipelines de analitica self-service: se puede desplegar como servicio de generacion de SQL detras de una interfaz de chat, aprovechando su tamano reducido para responder con baja latencia en CPU o GPU modesta.
-- Generacion de consultas en entornos con recursos limitados: al ocupar aproximadamente 1 GB en precision completa y menos con cuantizacion, es viable en instancias pequenas o dispositivos edge donde modelos de 7B o mas no caben.
-- Evaluacion y validacion de esquemas: el modelo puede generar consultas de comprobacion para verificar que un esquema soporta las preguntas de negocio esperadas antes de desplegar una base de datos.
-- Educacion y formacion en SQL: sirve como generador de ejemplos de consultas a partir de enunciados, util en plataformas de aprendizaje que necesitan retroalimentacion inmediata.
-- Componente de un sistema mayor de agentes de datos: puede actuar como submodulo especializado de traduccion a SQL dentro de un pipeline orquestado, donde un modelo mayor planifica y este ejecuta la generacion concreta.
-- Prototipado rapido de interfaces conversacionales sobre bases de datos: gracias a su licencia Apache 2.0 y su tamano, permite iterar en prototipos comerciales sin coste de licencia.
+- **Asistentes de consulta a bases de datos en produccion**: el modelo puede transformar preguntas de usuarios en SQL ejecutable sobre esquemas conocidos, con un coste de inferencia muy bajo gracias a sus 494M de parametros, adecuado para servicios con alta concurrencia.
+- **Herramientas internas de analytics para equipos no tecnicos**: integrado en un panel o chatbot, permite a analistas de negocio formular consultas sin conocer el esquema, reduciendo la dependencia del equipo de datos.
+- **Pipelines de generacion de SQL en CI/CD de datos**: puede emplearse para generar y validar consultas candidatas contra un entorno de staging antes de desplegarlas, aprovechando su tamano reducido para ejecutar en runners modestos.
+- **Despliegue en GPU de consumo o CPU**: al ser un modelo de 0,5B, cabe en tarjetas con poca VRAM (por ejemplo, RTX 3060 de 12 GB o incluso 8 GB con cuantizacion) y permite inferencia local en estaciones de trabajo de desarrolladores.
+- **Sistemas de text-to-SQL con restricciones de latencia**: en escenarios donde el tiempo de respuesta es critico (autocompletado de consultas, interfaces de exploracion de datos), un modelo pequeno reduce la latencia frente a alternativas de mayor tamano.
+- **Generacion de SQL como componente de un agente mayor**: el modelo puede actuar como subcomponente especializado dentro de un sistema multi-agente orquestado por un LLM mayor, encargandose exclusivamente de la traduccion a SQL.
+- **Investigacion y experimentacion en text-to-SQL**: sirve como linea base ligera para comparar tecnicas de ajuste fino, prompting o decodificacion restringida en tareas de generacion de consultas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (k = 30 muestras, T = 1.0, seleccion vote-after-verify, evaluadores oficiales, prompts de `thanhdath/core-db-evaluation-prompts`):
+Resultados publicados en la model card (metrica EX = execution accuracy, TS = test-suite accuracy):
 
-| Benchmark | Metrica | Resultado |
-|---|---|---|
-| BIRD dev | Exactitud de ejecucion (EX) | 53,59 |
-| Spider dev | Exactitud de ejecucion (EX) | 76,31 |
-| Spider dev | Exactitud de test-suite (TS) | 67,89 |
+| Modelo | BIRD Dev (EX) | Spider Dev (EX) | Spider Dev (TS) | Spider Test (EX) |
+|---|---:|---:|---:|---:|
+| FINER-SQL-0.5B-v2 | 53.59 | 76.31 | 67.89 | 75.27 |
+| FINER-SQL-1.5B-v2 | 63.82 | 79.98 | 72.44 | 81.79 |
+| FINER-SQL-3B-v2 | 68.84 | 86.75 | 81.53 | 87.66 |
 
-No se han publicado en la informacion disponible resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) ni comparaciones directas con otros modelos en la model card.
+No se han publicado resultados de benchmarks frente a modelos de otros autores en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1 GB para los pesos (494M parametros), mas overhead de activaciones y cache KV; en la practica, entre 1,5 y 2,5 GB segun longitud de secuencia y batch.
-- VRAM estimada con cuantizacion de 8 bits: alrededor de 0,5-1 GB; con 4 bits, por debajo de 0,5 GB para los pesos.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090); tambien cabe en GPU de gama baja y en CPU.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU con al menos 4 GB de VRAM, e incluso en CPU con rendimiento aceptable para uso interactivo.
-- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints compatibles; llama.cpp y Ollama no estan confirmados por el autor pero son viables si se generan pesos GGUF.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- **VRAM estimada**: con pesos en FP16 (aproximadamente 1 GB para 494M de parametros) el modelo requiere en torno a 1-2 GB de VRAM para inferencia, incluyendo cache KV para contextos moderados. La estimacion exacta depende de la longitud de contexto, que no esta documentada.
+- **GPU recomendadas**: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 y H100 lo ejecutan con holgura. Tambien es viable en CPU para cargas de baja concurrencia.
+- **Consumer GPU**: si, cabe en practicamente cualquier GPU de consumo actual e incluso en iGPU con memoria unificada.
+- **Opciones de despliegue**: `transformers` (libreria declarada en el repositorio), vLLM y TGI para servicio de alta concurrencia, llama.cpp/Ollama si se generan pesos GGUF (no documentados por el autor). El repositorio solo publica safetensors.
+- **Latencia y throughput**: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de resultados comparativos directos con otros modelos de text-to-SQL del mismo tamano. A continuacion se comparan caracteristicas estructurales con alternativas habituales de la categoria, sin datos de rendimiento verificados para ellas en este contexto:
+| Modelo | Parametros | Contexto | BIRD Dev (EX) | Spider Dev (EX) | Licencia | Disponibilidad |
+|---|---:|---|---:|---:|---|---|
+| FINER-SQL-0.5B-v2 | 494M | no disponible | 53.59 | 76.31 | Apache 2.0 | Hugging Face |
+| FINER-SQL-1.5B-v2 | no disponible | no disponible | 63.82 | 79.98 | no disponible | Hugging Face (familia del mismo autor) |
+| FINER-SQL-3B-v2 | no disponible | no disponible | 68.84 | 86.75 | no disponible | Hugging Face (familia del mismo autor) |
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
-|---|---|---|---|---|
-| FINER-SQL-0.5B-v2 | 494M | no disponible | Qwen2 + GRPO sobre CoRE-DB | Apache 2.0 |
-| Qwen2.5-Coder-0.5B | ~494M | 32K (segun documentacion publica del modelo base) | Modelo base de codigo, sin ajuste especifico de text-to-SQL | Apache 2.0 |
-| Modelos text-to-SQL de 7B (p. ej. variantes de CodeLlama) | ~7B | variable | Ajuste supervisado sobre Spider/BIRD | variable |
-
-La comparacion de rendimiento frente a estas alternativas no esta disponible en la informacion proporcionada; los unicos datos verificados son los benchmarks del propio modelo en BIRD dev y Spider dev.
+La comparativa con modelos de otros autores (por ejemplo, alternativas especializadas en text-to-SQL de la comunidad) no esta disponible en la informacion proporcionada. La comparacion mas directa es con los otros dos tamanos de la misma familia, que muestran una progresion clara: el salto de 0.5B a 1.5B aporta unos 10 puntos en BIRD Dev y 3,7 en Spider Dev, mientras que el salto a 3B anade otros 5 puntos en BIRD Dev y casi 7 en Spider Dev.
 
 ## Limitaciones y advertencias
 
-- Especializacion estrecha: el ajuste con GRPO sobre CoRE-DB puede degradar capacidades generales de generacion de texto del modelo base; no esta pensado como modelo de proposito general.
-- Riesgo de alucinacion de esquemas: como todo modelo text-to-SQL, puede referenciar tablas o columnas inexistentes si el esquema no se proporciona de forma explicita y completa en el prompt.
-- Correccion espuria: aunque el entrenamiento con recompensa de ejecucion mitiga este fenomeno, no lo elimina por completo; las consultas pueden ejecutarse sin error y devolver resultados incorrectos.
-- Idiomas soportados no declarados: la model card no especifica idiomas; se desconoce el rendimiento en castellano o en instrucciones multilingues.
-- Longitud de contexto no declarada: se desconoce la ventana efectiva, lo que limita la planificacion para esquemas de base de datos grandes.
-- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantias sobre el rendimiento en produccion.
-- Madurez: el repositorio tiene 171 descargas y 0 likes, lo que sugiere validacion externa limitada; conviene evaluar en el dominio propio antes de desplegar.
+- **Documentacion muy escasa**: la model card no describe el dataset de entrenamiento, el proceso de ajuste, los idiomas soportados ni la longitud de contexto, lo que dificulta evaluar su robustez fuera de los benchmarks reportados.
+- **Riesgo de alucinacion en SQL**: como todo modelo generativo, puede producir consultas sintacticamente validas pero semanticamente incorrectas, o referenciar tablas y columnas inexistentes; se recomienda validacion contra el esquema y ejecucion en entorno controlado.
+- **Especializacion estrecha**: el modelo esta optimizado para text-to-SQL; su rendimiento en tareas generales de generacion de texto, razonamiento o codigo no esta documentado y probablemente sea limitado.
+- **Brecha frente a modelos mayores**: en BIRD Dev, el 0.5B obtiene 53.59 frente a 68.84 del 3B; para esquemas complejos o preguntas ambiguas, el modelo pequeno puede quedarse corto.
+- **Sesgos**: no se dispone de informacion sobre sesgos conocidos ni sobre la composicion del dataset, por lo que no pueden evaluarse.
+- **Licencia**: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los datos de entrenamiento subyacentes (BIRD y Spider tienen sus propias licencias y terminos de uso), que no se detallan en la model card.
+- **Formato de pesos unico**: solo se publican safetensors; no hay variantes cuantizadas oficiales, por lo que el despliegue con llama.cpp/Ollama requiere conversion propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/thanhdath/FINER-SQL-0.5B-v2
-- Prompts de evaluacion: https://huggingface.co/thanhdath/core-db-evaluation-prompts
-- Repositorio de codigo `core-db-sql` en GitHub: no disponible como URL directa en la informacion proporcionada
-- Paper *Small Language Models for Text-to-SQL against Spurious Correctness*: no disponible como URL directa en la informacion proporcionada
+- Repositorio de codigo: https://github.com/thanhdath/core-db
+- Benchmark BIRD: https://bird-bench.github.io/
+- Benchmark Spider: https://yale-lily.github.io/spider

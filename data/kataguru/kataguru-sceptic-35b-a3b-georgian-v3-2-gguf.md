@@ -2,102 +2,109 @@
 
 ## Resumen
 
-Kataguru-Sceptic-35B-A3B-Georgian-v3.2-GGUF es la distribucion en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-Georgian-v3.2, un modelo de lenguaje de tipo Mixture-of-Experts (MoE) especializado en georgiano (ქართული ენა), razonamiento, vision multimodal y traduccion de pagina completa. Lo desarrolla el usuario kataguru y se construye sobre la base Kataguru-Sceptic-35B-A3B-v3.1, ampliando su arquitectura MoE de 254 a 256 expertos por capa mediante la incorporacion de dos expertos nuevos dedicados al georgiano, manteniendo congelados los 254 expertos originales.
+Kataguru-Sceptic-35B-A3B-Georgian-v3.2 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Datasein Oy (Finlandia), con Jari Katajisto como arquitecto jefe. Se trata de un fine-tune soberano para georgiano (ქართული ენა) construido sobre el modelo base Kataguru-Sceptic-35B-A3B-v3.1, que a su vez deriva de la familia Qwen3.5-MoE. El modelo combina 254 expertos congelados del núcleo original con 2 expertos nativos nuevos para georgiano, alcanzando 256 expertos por capa en 40 capas, con 35.505.251.456 parámetros totales y 3B parámetros activos por token.
 
-El modelo resuelve el problema de dotar a un modelo fundacional de razonamiento cientifico y codigo de capacidades nativas en georgiano sin provocar olvido catastrofico (catastrophic forgetting) en las capacidades originales. Para ello congela los expertos #0..#253 y entrena exclusivamente los expertos #254 (gramatica, morfologia y terminologia tecnica georgiana) y #255 (literatura, no ficcion y traduccion bidireccional EN<->KA), con calibracion contrastiva del router.
+La propuesta del modelo es inusual: se posiciona como un "coder industrial" capaz de generar y auditar código PLC/CNC (IEC 61131-3, G-code, TwinCAT, Siemens SCL), código de sistemas (Rust, C++20, Python, C#), y de operar con visión multimodal (lectura de esquemas P&ID, diagramas eléctricos, pantallas HMI) y tool calling agéntico, todo ello manteniendo el georgiano como idioma de trabajo principal junto con finlandés e inglés. El autor declara un 96,67 % en un benchmark propio de PLC/CNC y un 83,67 % en BFCL V4 AST.
 
-Esta publicacion concreta ofrece los pesos cuantizados en GGUF en tres variantes (APEX-Small, APEX-Medium, APEX-Good) calibradas con un imatrix especifico de georgiano, mas el proyector multimodal mmproj en f16. Es relevante para desarrolladores que necesiten desplegar un modelo de 35.500 millones de parametros totales (3B activos por token) con vision y contexto de 262.144 tokens en hardware de consumo o en GPUs de 16-32 GB, con soporte nativo para llama.cpp, LM Studio y Ollama.
+Esta ficha corresponde a la variante GGUF del modelo, publicada en formato APEX-Trio (tres niveles de cuantización más un proyector multimodal `mmproj`), pensada para despliegue en GPUs de consumo a partir de 16 GB de VRAM mediante llama.cpp, LM Studio u Ollama. El repo ocupa 45,4 GB y acumula 969 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen3_5_moe), 40 capas, 256 expertos por capa MoE, vision encoder de 27 capas, cabeza MTP especulativa en capa 40 |
+| Arquitectura | Transformer MoE (Qwen3.5-MoE), 40 capas, 256 expertos por capa (254 congelados + 2 nativos georgianos), Top-8 por token |
 | Parametros totales | 35.505.251.456 (35,5B) |
 | Parametros activos | 3B por token |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF APEX-Small (~11,9 GiB), APEX-Medium (~13,6 GiB), APEX-Good (~15,4 GiB); mmproj-f16 (~890 MB). Otras variantes del suite: BF16, NVFP4, W4A16-AWQ |
-| Idiomas soportados | Ingles (en), georgiano (ka), finlandes (fi) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF APEX-Trio (APEX-Small, APEX-Medium, APEX-Good) con calibración imatrix; también existen NVFP4 y W4A16-AWQ en repos separados |
+| Idiomas soportados | Georgiano (ka), finlandés (fi), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (este repo); safetensors en el modelo base; tambien NVFP4 y AWQ en otras variantes |
+| Formato de pesos | GGUF (este repo); safetensors BF16 en el repo maestro; NVFP4 y AWQ en repos hermanos |
+| Vision | Codificador ViT de 27 capas + proyector `mmproj` incluido |
+| Modelo base | kataguru/Kataguru-Sceptic-35B-A3B-v3.1 |
+| Tamano del repo | 45,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura Mixture-of-Experts con 40 capas y 256 expertos por capa MoE (254 + 2). Los expertos #0..#253 corresponden al nucleo congelado de Kataguru-Sceptic-35B-A3B-v3.1, que conserva intactas las capacidades de razonamiento cientifico, codigo competitivo, tool calling agentico y dominios industriales PLC/CNC. Los expertos #254 y #255 son nuevos: el #254 se especializa en gramatica y morfologia georgiana (alineamiento de caso ergativo escindido kartveliano, screeves de verbo polipersonal, circunfijos y escritura Mkhedruli) ademas de terminologia de ingenieria industrial, medicina clinica y patentes; el #255 cubre prosa literaria, no ficcion, dialogo natural y traduccion fiel EN<->KA.
+El modelo es un transformer Mixture-of-Experts con 40 capas y 256 expertos por capa, de los cuales se activan 8 por token (Top-8). La innovación principal respecto al modelo base es la estrategia de expansión de expertos: los 254 expertos originales del núcleo Sceptic (identificados como #0–#253) permanecen congelados, y se añaden dos expertos nuevos (#254 y #255) entrenados específicamente para georgiano. Dado que los expertos congelados co-activan en cada paso de token junto a los nuevos, el modelo preserva las capacidades del original (razonamiento científico, código competitivo, tool calling agéntico y visión) mientras incorpora competencia nativa en georgiano.
 
-El entrenamiento de los nuevos expertos se realizo sobre un conjunto de 4.800 muestras doradas verificadas humanamente (100 % de aprobacion en la puerta mecanica y de calidad), con calibracion contrastiva del router (modo `new_experts_only`, `recalibrate-router`, r=32, alpha=64). Se incorpora una plantilla de chat nativa en georgiano (`chat_template.jinja`) con etiquetas de control `/ka`, `/translate` y cabeceras de razonamiento localizadas. La cuantizacion GGUF se calibro con un imatrix especifico de georgiano (`imatrix_calibration_ka.txt`) aplicado a los 256 expertos. Se mantienen sin cambios el encoder de vision multimodal de 27 capas (333 tensores) y la cabeza MTP de decodificacion especulativa (785 tensores).
+El modelo base v3.1 declara métricas de referencia como un 70,26 % de media en 15 benchmarks, 70,20 % en GPQA Diamond, 39,43 % en LiveCodeBench v6, 83,67 % en BFCL V4 AST y 96,67 % en un benchmark propio de PLC/CNC. No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. El modelo incorpora un codificador de visión ViT de 27 capas y un motor de tool calling basado en AST `<tool_call>`, que el autor describe como libre de errores de sintaxis en sus pruebas. La variante GGUF emplea calibración imatrix específica para georgiano, orientada a preservar la calidad de cuantización en ese idioma.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de nivel graduado en STEM (fisica, quimica, biologia molecular), con GPQA Diamond reportado de 70,20 %.
-- Programacion competitiva y algoritmica (LiveCodeBench v6 Pass@1 de 39,43 %, con 90,70 % en dificultad Easy).
-- Tool calling / function calling nativo con salida AST en `<tool_call>` y deteccion de irrelevancia (BFCL V4 Single-Turn AST de 83,67 %; Non-Live 88,44 %; deteccion de irrelevancia 80,26 %).
-- Vision multimodal: pipeline image-text-to-text con encoder de 27 capas y proyector mmproj-f16.
-- Capacidades multilingues nativas en ingles, georgiano y finlandes, con modo georgiano (`/ka`) y modo traduccion de pagina completa (`/translate`) que preserva parrafos y evita charlataneria.
-- Traduccion bidireccional EN<->KA fiel, incluyendo prosa literaria, no ficcion y texto tecnico.
-- Modos de profundidad de razonamiento configurables: `{REASON:spoon}`, `{REASON:einstein}`, `{REASON:007}`, `{REASON:deep}`, `{REASON:low}`, `{REASON:off}`.
-- Decodificacion especulativa mediante cabeza MTP en la capa 40.
-- Capacidades industriales en dominios PLC/CNC y terminologia clinica, de patentes y estatutaria.
+- Generación de texto, razonamiento científico y matemático (STEM), con soporte declarado de modo multi-paso.
+- Programación industrial: IEC 61131-3 (Structured Text para Beckhoff TwinCAT 3 y Siemens SCL/S7-1500), G-code CNC (Fanuc, Sinumerik 840D, Heidenhain), con compensación de radio de herramienta, offsets de trabajo y ciclos fijos.
+- Programación de sistemas y aplicaciones: C++20, Rust, C embebido/RTOS, Python 3.12, C#/.NET, SQL y Bash/Linux.
+- Diagnóstico de protocolos industriales: OPC UA (IEC 62541), Modbus TCP/RTU, EtherCAT, PROFINET, CANopen.
+- Conocimiento de normas de seguridad funcional: ISO 13849-1 (PLa–PLe), IEC 62061 / IEC 61508 (SIL 1–SIL 3), STO, enclavamientos de parada de emergencia.
+- Tool calling y function calling con cadenas AST `<tool_call>` multi-paso; perfil agéntico declarado.
+- Capacidades multimodales: lectura de diagramas P&ID, esquemas eléctricos, pantallas de error HMI y gráficos de ingeniería mediante codificador ViT de 27 capas.
+- Traducción y generación nativa en georgiano, finlandés e inglés.
+- Modo "uncensored" declarado por el autor (sin filtros de contenido explícitos en la model card).
+- Soporte de RAG y razonamiento multi-paso para agentes.
 
 ## Casos de uso
 
-- Traduccion profesional EN<->KA de documentacion tecnica y legal: el modo `/translate` genera salida sin charlataneria y preserva la estructura de parrafos, adecuado para contratos, patentes y manuales gracias a los expertos #254 y #255 especializados en terminologia estatutaria y de patentes.
-- Localizacion de interfaces y contenido para el mercado georgiano: la plantilla de chat nativa con `/ka` y las cabeceras de razonamiento localizadas permiten integrar el modelo en pipelines de traduccion de producto sin postprocesado de idioma.
-- Atencion al cliente multilinguee en georgiano, ingles y finlandes: el contexto de 262.144 tokens permite gestionar conversaciones multi-turno extensas y recuperar historial completo sin truncamiento.
-- Agentes con tool calling en produccion: el soporte nativo de `<tool_call>` con AST y deteccion de irrelevancia (BFCL V4 83,67 %) lo hace apto para orquestacion de APIs, automatizacion de flujos y agentes multi-paso.
-- Analisis de documentos escaneados con vision: el encoder multimodal de 27 capas y el proyector mmproj permiten extraer y traducir texto de imagenes, facturas o formularios en georgiano e ingles.
-- Asistencia a la programacion y revision de codigo: con 39,43 % en LiveCodeBench v6 y 90,70 % en problemas faciles, sirve para autocompletado, generacion de tests y explicacion de algoritmos en pipelines de CI/CD.
-- Despliegue en hardware de consumo: la variante APEX-Medium (~13,6 GiB) cabe en una GPU de 16 GB, lo que habilita prototipado local con llama.cpp, LM Studio u Ollama sin infraestructura de datacenter.
-- Investigacion en NLP kartveliano: los expertos #254 y #255 y el conjunto de 4.800 muestras doradas permiten estudiar morfologia georgiana, alineamiento ergativo y traduccion literaria con un modelo abierto bajo Apache 2.0.
+- Programación de autómatas PLC en producción: generación y revisión de bloques Structured Text para TwinCAT 3 o SCL de Siemens, incluyendo máquinas de estado deterministas con `CASE`, control de movimiento (`MC_MoveAbsolute`, `MC_GearIn`) y diagnóstico ADS o PROFINET. Adecuado por su entrenamiento específico en IEC 61131-3 y su benchmark declarado del 96,67 % en PLC/CNC.
+- Post-procesado CNC y auditoría de trayectorias: generación de G-code multi-eje para fresado y torneado con compensación G41/G42, offsets G54–G59 y ciclos fijos, además de verificación de colisiones y cargas de husillo/avance. Útil en talleres con Fanuc, Sinumerik o Heidenhain.
+- Asistencia técnica en georgiano para plantas industriales: un operario georgiano puede consultar diagnósticos de OPC UA, Modbus o EtherCAT y recibir explicaciones y código en su idioma nativo, gracias a los dos expertos georgianos añadidos.
+- Lectura de esquemas y pantallas HMI: el codificador ViT de 27 capas permite introducir diagramas P&ID, esquemas eléctricos o capturas de errores de HMI y obtener un análisis textual o código de diagnóstico asociado.
+- Agentes de mantenimiento con tool calling: cadenas `<tool_call>` AST multi-paso para consultar telemetría SQL, lanzar diagnósticos OPC UA y generar informes, con integración en pipelines internos.
+- Desarrollo de sistemas embebidos y firmware: generación de código Rust o C para RTOS con foco en seguridad de memoria y concurrencia, aprovechando el perfil de "systems programmer" del modelo.
+- Traducción técnica finlandés-georgiano-inglés: documentación de seguridad funcional, manuales de máquinas y procedimientos ISO 13849 / IEC 62061 entre los tres idiomas soportados.
+- Despliegue en GPUs de consumo: la variante GGUF APEX-Trio permite ejecutar el modelo en estaciones de trabajo con 16 GB de VRAM mediante llama.cpp, LM Studio u Ollama, sin necesidad de infraestructura de datacenter.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Puntuacion | Notas |
-|---|---|---|
-| Media de 15 benchmarks del nucleo fundacional | 70,26 % | Heredada intacta via expertos congelados #0..#253 |
-| GPQA Diamond (STEM nivel doctorado) | 70,20 % (139/198) | Fisica, quimica y biologia molecular de posgrado |
-| LiveCodeBench v6 (Pass@1) | 39,43 % (Easy: 90,70 %) | Programacion algoritmica competitiva |
-| BFCL V4 Single-Turn AST (tool calling) | 83,67 % (Non-Live: 88,44 %) | Deteccion de irrelevancia: 80,26 % |
-| Auditoria en vivo de georgiano 10/10 (v3.2) | 10/10 PASS (100 %) | Suite de evaluacion NLP georgiana y traduccion literaria/tecnica de pagina completa EN<->KA |
+Los datos disponibles provienen de la model card y corresponden al modelo base v3.1, no a esta variante GGUF cuantizada. No se han publicado resultados de benchmarks específicos para la versión GGUF en la información disponible.
 
-No se han publicado en la informacion disponible resultados desglosados por benchmark individual mas alla de los anteriores, ni comparaciones numericas directas con modelos alternativos.
+| Benchmark | Resultado declarado (base v3.1) |
+|---|---|
+| Media de 15 benchmarks | 70,26 % |
+| GPQA Diamond | 70,20 % |
+| LiveCodeBench v6 | 39,43 % |
+| LiveCodeBench v6 (Easy) | 90,70 % |
+| BFCL V4 AST | 83,67 % |
+| Industrial PLC/CNC (benchmark propio) | 96,67 % |
+
+No se dispone de comparación con modelos similares en los benchmarks anteriores ni de resultados desglosados por cuantización.
 
 ## Requisitos de hardware
 
-- BF16 completo: ~72 GB de VRAM, requiere 2x GPU de 48-80 GB.
-- NVFP4 (~24,3 GB) y W4A16-AWQ (~25,3 GB): 2x RTX 5090 de 32 GB con tensor parallelism (TP=2) o 1 GPU de 32 GB.
-- GGUF APEX-Small (~11,9 GiB): cabe en GPUs de 12-16 GB.
-- GGUF APEX-Medium (~13,6 GiB): cabe en una sola GPU de 16 GB.
-- GGUF APEX-Good (~15,4 GiB): requiere 16-24 GB de VRAM segun overhead de contexto.
-- Proyector multimodal mmproj-f16 (~890 MB) adicional para inferencia con vision.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (etiquetas del repo), vLLM para las variantes AWQ/NVFP4, transformers para el modelo base.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: el autor indica que la variante GGUF APEX-Trio está lista para GPUs de 16 GB. El repo completo ocupa 45,4 GB, por lo que el nivel APEX-Small debería caber en 16 GB, APEX-Medium en torno a 20–24 GB y APEX-Good por encima de 24 GB (estimación orientativa, no confirmada en la información disponible).
+- GPUs recomendadas: RTX 4090 (24 GB) o RTX 4080 (16 GB) para los niveles Small y Medium; A100 40/80 GB o H100 para APEX-Good y para el modelo maestro BF16 (~67,5 GB).
+- Cabe en GPU de consumo: sí, según el autor, a partir de 16 GB con el nivel APEX-Small.
+- Opciones de despliegue: llama.cpp, LM Studio y Ollama (etiquetas declaradas); el repo hermano W4A16-AWQ está pensado para vLLM en una GPU de 24 GB, y el NVFP4 para GPUs Blackwell de 24 GB.
+- Latencia y throughput: no disponibles. Al ser un MoE con 3B parámetros activos, el coste por token es sustancialmente menor que el de un modelo denso de 35B, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
+No se dispone en la información proporcionada de datos comparativos con modelos alternativos de la misma categoría (MoE de ~35B con capacidades industriales y multilingües). La model card no incluye comparaciones con otros modelos. Se indica "no disponible" para los campos de rendimiento comparado.
+
 | Modelo | Parametros | Activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Kataguru-Sceptic-35B-A3B-Georgian-v3.2-GGUF | 35,5B | 3B | 262.144 | Apache 2.0 | MoE 256 expertos, vision, georgiano nativo |
-| Kataguru-Sceptic-35B-A3B-v3.1 (base) | 35,5B | 3B | 262.144 | No disponible | Sin expertos de georgiano; referencia de rendimiento del nucleo |
-| Alternativas de 30-40B MoE comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks comparables en la informacion proporcionada |
-
-No se dispone de datos de rendimiento de modelos alternativos en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
+| Kataguru-Sceptic-35B-A3B-Georgian-v3.2 | 35,5B | 3B | no disponible | Apache 2.0 | Especializado en PLC/CNC, georgiano, multimodal |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado en la información disponible |
 
 ## Limitaciones y advertencias
 
-- Ficcion creativa a temperatura alta: para maxima precision morfologica y correccion en georgiano se recomienda `temperature=0.2-0.3` con `presence_penalty=0.3`; fuera de ese rango la calidad gramatical puede degradarse.
-- Riesgo de alucinacion: no se documentan evaluaciones especificas de factualidad o tasa de alucinacion en la informacion disponible.
-- Cobertura idiomatica limitada a ingles, georgiano y finlandes; el rendimiento en otros idiomas no esta documentado.
-- El conjunto de entrenamiento de georgiano es reducido (4.800 muestras), lo que puede limitar la generalizacion a dominios no cubiertos por los expertos #254 y #255.
-- Los benchmarks reportados (GPQA, LiveCodeBench, BFCL) corresponden al nucleo fundacional heredado, no a una evaluacion independiente del modelo completo tras la ampliacion.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias explicitas sobre sesgos, seguridad o idoneidad para produccion.
-- El repo tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa de la comunidad.
-- El modelo base es una variante propia de kataguru sobre arquitectura qwen3_5_moe; la trazabilidad completa de los datos de entrenamiento originales no se detalla en la informacion proporcionada.
+- Los benchmarks declarados (70,26 % media, 96,67 % PLC/CNC) provienen de la model card del autor y no han sido verificados de forma independiente; el benchmark de PLC/CNC es propio y no está estandarizado.
+- Los resultados de benchmarks corresponden al modelo base v3.1 en BF16; la cuantización GGUF puede degradar el rendimiento, especialmente en georgiano, aunque el autor declara calibración imatrix específica.
+- El modelo se declara "uncensored", lo que implica ausencia de filtros de contenido; requiere moderación externa en producción.
+- Cobertura idiomática limitada a georgiano, finlandés e inglés; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea inferior.
+- Longitud de contexto no documentada; no es posible garantizar conversaciones de contexto largo sin verificación previa.
+- Riesgo de alucinación en código industrial y normas de seguridad: las salidas de PLC, G-code y evaluaciones SIL/PL deben revisarse por un ingeniero certificado antes de su uso en maquinaria real. Un error en código de seguridad funcional puede tener consecuencias físicas graves.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base deriva de Qwen3.5-MoE; conviene verificar la cadena de licencias de los modelos intermedios.
+- El modelo tiene 0 likes y 969 descargas, con creación en noviembre de 2026; es un lanzamiento reciente con poca validación comunitaria.
+- No se documentan sesgos conocidos ni datos de entrenamiento; la composición del dataset y el volumen de tokens son desconocidos.
 
 ## Enlaces
 
 - Hugging Face (este repo GGUF): https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2-GGUF
+- Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
 - Pesos maestros BF16: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2
 - Variante NVFP4: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2-NVFP4
 - Variante W4A16-AWQ: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2-W4A16-AWQ
-- Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
+- Ejemplos de uso (Space): https://huggingface.co/spaces/kataguru/Kataguru-Sceptic-35B-Usage-Examples
+- Guía Sovereign AI (Space): https://huggingface.co/spaces/kataguru/Kataguru-Sovereign-AI-Guide
+- Perfil del autor: https://huggingface.co/kataguru

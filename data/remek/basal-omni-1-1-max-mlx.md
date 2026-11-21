@@ -2,103 +2,101 @@
 
 ## Resumen
 
-basal-omni-1.1-max-MLX es un port a MLX en 8 bits del modelo Remek/basal-omni-1.1-max, un modelo de 12B construido sobre Gemma 4 12B y especializado en la toma de decisiones tipadas (clasificación con calibración de confianza). Lo desarrolla Remek y está pensado para ejecutarse en Apple Silicon mediante el motor de inferencia basal, que expone una API de decisiones (`choice`, `noul`, `score`, `multi`, `act`, `tool`) en lugar de generación de texto libre. El modelo base es experimental y solo cubre texto: los codificadores de imagen y audio del modelo bf16 no se incluyen en esta carpeta.
+basal-omni-1.1-max-MLX es un port cuantizado en 8 bits del modelo basal-omni-1.1-max (12B, basado en Gemma 4 12B) para Apple Silicon, distribuido por Remek a traves de la libreria MLX. No es un modelo nuevo: es una conversion de la capa de decision del modelo original, orientada a ejecutar la API de decisiones tipadas (typed decisions) del motor basal en hardware de Apple con memoria unificada. El modelo esta pensado para tomar decisiones entre un conjunto de opciones (hasta 255), no para generacion de texto libre convencional, e incorpora calibracion propia ajustada sobre las lecturas de este port.
 
-El modelo resuelve un problema concreto: obtener decisiones discretas entre 2 y 255 opciones con una confianza calibrada que permita automatizar parte del proceso. Con la calibración propia de este port, al 1% de error objetivo se decide automáticamente el 35,5% de las decisiones (error observado 0,5%) y al 5% el 79,6% (error observado 3,7%). Frente al modelo bf16 servido en CUDA, el port alcanza un acuerdo del 0,9836 en decisiones de 2 a 10 opciones y del 0,9989 cuando el margen del bf16 es igual o superior a 0,2.
+El modelo resuelve el problema de ejecutar un clasificador/decision-maker calibrado en Macs con memoria unificada de gama alta (M4 Pro de 24 GB y superiores), sin depender de GPUs CUDA. Mantiene el tokenizador y la plantilla de chat del modelo bf16 original, y anade un fichero de calibracion especifico del port (`CALIBRATION.mlx.json`) que permite umbrales certificados de error al 1% y al 5%.
 
-La relevancia actual está en que permite desplegar un modelo de decisión de 12B en un Mac con memoria unificada, sin GPU dedicada, manteniendo la precisión del modelo de referencia dentro de los umbrales definidos por el autor. El repo ocupa 13,6 GB y los pesos se sirven en safetensors con cuantización afín de 8 bits.
+Es relevante ahora porque demuestra un flujo de portabilidad de modelos de decision calibrados a MLX con un protocolo de validacion estricto (el port gate) frente al modelo bf16 de referencia, con metricas publicadas de acuerdo, exactitud y ECE. El modelo es experimental y solo texto: los encoders de imagen y audio del modelo original no estan incluidos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 4 12B), puerto MLX; solo decodificador de texto |
-| Parametros totales | 11.907.350.272 (11,9B) |
+| Arquitectura | Transformer decoder-only (Gemma 4 12B como base), con atencion global y rotatoria; solo el decoder de texto |
+| Parametros totales | 11.907.350.272 (aprox. 11,9B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MLX affine 8-bit, group size 64 en las capas lineales de los bloques del decodificador; embeddings de tokens y normas en bf16 |
-| Idiomas soportados | pl, en |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (MLX), 8-bit; repositorio de 13,6 GB |
+| Tipos de cuantizacion | MLX affine 8-bit, group size 64, en las capas lineales de los bloques del decoder; embeddings de tokens y cabeza de salida en bf16; normas en bf16 |
+| Idiomas soportados | polaco (pl), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX), config.json, tokenizer y chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only derivado de Gemma 4 12B, con ajuste fino orientado a decisiones tipadas y calibración. La conversión a MLX se realizó con el conversor de mlx-lm 0.32.2 (carga, cuantización y guardado) sobre el modelo bf16: cuantización afín de 8 bits con group size 64 para las capas lineales de los bloques del decodificador, manteniendo en bf16 los embeddings de tokens (que también actúan como cabeza de salida desde la que se lee la decisión, en fp32) y las normas. mlx-lm conserva únicamente el decodificador de texto; los codificadores de imagen y audio se descartan. Los ajustes de atención rotatoria y atención global se escriben en `config.json` en las claves que lee mlx-lm.
+El modelo es un transformer decoder-only derivado de Gemma 4 12B, convertido con el conversor de mlx-lm 0.32.2 (carga, cuantiza, guarda) sobre el modelo bf16 de referencia. La cuantizacion es MLX affine de 8 bits con group size 64 aplicada a las capas lineales de los bloques del decoder; los embeddings de tokens (que tambien actuan como cabeza de salida desde la que se lee la decision, en fp32) y las normas permanecen en bf16. Los ajustes de atencion rotatoria y global se escriben en `config.json` en las claves que lee mlx-lm. El conversor conserva unicamente el decoder de texto, descartando los encoders de imagen y audio del modelo original.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada. La innovación destacable no está en la arquitectura sino en el protocolo de lectura y calibración: el modelo emite decisiones tipadas con márgenes, y el archivo `CALIBRATION.mlx.json` contiene temperaturas por tipo y por bucket, además de umbrales certificados para objetivos de error del 1% y del 5%, ajustados sobre las lecturas de este mismo port. La tokenización y el renderizado de prompts son idénticos a los del modelo bf16 (2.000 de 2.000 prompts de desarrollo verificados), y la carpeta incluye el tokenizador y la plantilla de chat del modelo de referencia.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO en la informacion proporcionada. La innovacion tecnica destacable es el protocolo de decisiones tipadas (tipos `choice`, `noul`, `score`, `multi`, `act`, `tool`) y la calibracion por tipo y por bucket, con temperaturas y umbrales certificados para errores del 1% y 5%, ajustada sobre las lecturas de este port con `--mode mlx`.
 
 ## Capacidades
 
-- Toma de decisiones tipadas entre 2 y 255 opciones mediante los modos `choice`, `noul`, `score`, `multi`, `act` y `tool`.
-- Clasificación con confianza calibrada: umbrales certificados para objetivos de error del 1% y del 5%, con automatización parcial de las decisiones.
-- Decisiones con margen: el modelo expone la diferencia entre la opción elegida y la siguiente, lo que permite filtrar casos dudosos.
-- Soporte de tool calling a través del modo `tool` del motor basal.
-- Modo `act` para decisiones de acción y modo `multi` para selección múltiple.
-- Capacidades multilingües limitadas a polaco (pl) e inglés (en).
-- No soporta visión ni audio en esta carpeta: los codificadores correspondientes no están incluidos.
-- No es un modelo de generación de texto libre en la práctica: su uso previsto es la API de decisiones del motor basal.
+- Toma de decisiones tipadas entre 2 y 255 opciones, con tipos de tarea `choice`, `noul`, `score`, `multi`, `act` y `tool`.
+- Clasificacion con calibracion integrada: umbrales certificados de error al 1% y al 5% por tipo y bucket.
+- Decisiones automatizables: con la calibracion de este folder, el 35,5% de las decisiones se resuelven automaticamente a 1% de error objetivo (error observado 0,5%) y el 79,6% a 5% (error observado 3,7%).
+- Soporte de tool calling a traves del tipo de tarea `tool` del motor basal.
+- Capacidades multilingues limitadas a polaco e ingles.
+- Modo de lectura de decision desde la cabeza de salida en fp32, con protocolo de readout definido en `basal.json`.
+- No incluye vision ni audio en este folder (solo texto).
 
 ## Casos de uso
 
-- Clasificación documental con automatización parcial: el modelo decide la categoría de un documento entre un conjunto cerrado de opciones y, gracias a la calibración, el 35,5% de los casos al 1% de error objetivo se resuelven sin revisión humana, derivando el resto a revisión.
-- Triaje de tickets de soporte en polaco e inglés: asignación de prioridad, categoría y equipo responsable mediante decisiones tipadas con margen de confianza, útil para enrutar automáticamente solo los casos claros.
-- Enrutamiento de herramientas en agentes: el modo `tool` permite elegir qué función invocar entre un catálogo de opciones, con la ventaja de que la calibración indica cuándo la elección es fiable.
-- Moderación o etiquetado con umbral de error controlado: al fijar un objetivo de error del 5%, el sistema decide automáticamente el 79,6% de los elementos con un error observado del 3,7%, lo que permite calibrar el coste de revisión manual.
-- Evaluación de cumplimiento normativo sobre documentos: decisiones de tipo sí/no/no aplicable (`noul`) con confianza calibrada, adecuadas para prefiltrar expedientes antes de una revisión legal.
-- Despliegue local en estaciones de trabajo Apple Silicon: con 13,6 GB de pesos en memoria unificada, un Mac con 24 GB o más puede servir el modelo sin GPU dedicada, útil para entornos con requisitos de privacidad que impiden enviar documentos a la nube.
-- Selección múltiple sobre formularios o cuestionarios: el modo `multi` permite marcar varias opciones por estado, con latencia medida de 525 ms para una pregunta y 1.530 ms para cinco preguntas sobre un mismo estado en un M4 Pro.
+- Clasificacion documental automatizada: el modelo recibe un estado (documento o extracto) y un conjunto de etiquetas, y devuelve la opcion elegida con un margen calibrado; los umbrales certificados permiten decidir que casos se resuelven automaticamente y cuales requieren revision humana.
+- Enrutamiento de tickets de soporte: con el tipo `choice` y hasta 255 opciones, se puede asignar cada ticket a una cola o equipo; la calibracion al 1% de error permite automatizar el 35,5% de los casos con error observado del 0,5%.
+- Extraccion de campos estructurados: con el tipo `score` o `multi`, el modelo puntua o selecciona multiples opciones sobre un estado, util para validacion de formularios y normalizacion de datos en pipelines de ingesta.
+- Agentes con tool calling: el tipo `tool` del motor basal permite seleccionar la herramienta adecuada en un flujo de agente; el modelo se sirve con `basal-serve --mode mlx` y responde a peticiones del motor.
+- Moderacion y triaje de contenido en polaco e ingles: clasificacion de textos en categorias con umbrales de confianza calibrados, adecuada para pre-filtrado antes de revision humana.
+- Evaluacion de modelos y datos en Mac: al ser un port MLX con calibracion propia, sirve para comparar decisiones contra el modelo bf16 en hardware Apple, con latencia medida de 525 ms por pregunta y 1530 ms para cinco preguntas sobre un mismo estado en un M4 Pro.
 
 ## Benchmarks y rendimiento
 
-Resultados del port frente al modelo bf16 servido en CUDA (RTX PRO 6000), medidos sobre cada octava decisión del conjunto de desarrollo dev v2 (1.325 de 10.606 decisiones) en un Apple M4 Pro de 24 GB con 8 peticiones en vuelo:
+Resultados medidos contra el modelo bf16 de referencia (`--mode eager`, bf16, una RTX PRO 6000, CUDA) sobre cada octava decision del conjunto de desarrollo dev v2 (1.325 de 10.606), en un Apple M4 Pro (24 GB) con `--mode mlx`, 8 peticiones en vuelo:
 
-| Metrica | Resultado | Umbral del port gate |
-|---|---|---|
-| Acuerdo en 2-10 opciones | 0,9836 | >= 0,9552 |
-| Acuerdo con margen bf16 >= 0,2 | 0,9989 | >= 0,9893 |
-| Diferencia de accuracy | +0,58 pt | dentro de 1 punto |
-| ECE | -0,0035 | <= +0,01 |
-| Decisiones/s (M4 Pro, 8 en vuelo) | 0,27 | no disponible |
-| Veredicto del gate | PASS | - |
+| Port | Tamano | Acuerdo (2-10 opciones) | Acuerdo con margen bf16 >= 0,2 | Exactitud | ECE | Decisiones/s (M4 Pro, 8 en vuelo) | Gate |
+|---|---|---|---|---|---|---|---|
+| MLX 8-bit | 13,6 GB | 0,9836 | 0,9989 | +0,58 pt | -0,0035 | 0,27 | PASS |
 
-Datos adicionales: sobre las 1.261 decisiones medidas con hasta 255 opciones el acuerdo es de 0,9794. 64 de las 1.325 peticiones fallaron por falta de memoria de GPU (Metal OOM) en el tramo de prompts largos con 8 peticiones en vuelo y quedaron excluidas. La calibración de este port, evaluada sobre cada segunda decisión (4.280 decisiones), alcanza una accuracy de 0,906. Los resultados de benchmarks propios del modelo (Werdykt v1 0,821, conjuntos en polaco e inglés) están publicados en el modelo base y no se puntúan por separado para esta carpeta.
+Datos adicionales:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+- Sobre las 1.039 decisiones con 2-10 opciones (939 con margen bf16 >= 0,2) el acuerdo es 0,9836; sobre las 1.261 decisiones medidas (hasta 255 opciones) el acuerdo es 0,9794.
+- 64 de las 1.325 peticiones fallaron con error de memoria Metal en el Mac de 24 GB (8 en vuelo, en la franja de prompts largos) y quedaron excluidas.
+- Tokenizacion: el folder MLX renderiza y tokeniza los prompts de basal exactamente igual que el modelo bf16 (2.000 de 2.000 prompts de desarrollo).
+- Calibracion: con `CALIBRATION.mlx.json`, a 1% de error objetivo el 35,5% de las decisiones se deciden automaticamente (error observado 0,5%); a 5%, el 79,6% (3,7%). Prueba de calibracion: cada segunda decision, 4.280 decisiones, exactitud 0,906.
+- Latencia (M4 Pro, `basal-loadtest`, una peticion a la vez, mediana): 525 ms para una pregunta, 1530 ms para cinco preguntas sobre un mismo estado.
+- Los resultados de benchmark del modelo base (Werdykt v1 0,821, conjuntos polaco e ingles) estan en la ficha de basal-omni-1.1-max; este folder no se puntua por separado en ellos.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: 13,6 GB de memoria unificada solo para los pesos; los estados largos requieren memoria adicional. En un M4 Pro de 24 GB, 64 de 1.325 peticiones agotaron la memoria de GPU con 8 peticiones en vuelo y prompts largos.
-- GPU recomendadas: Apple Silicon con al menos 24 GB de memoria unificada; para documentos largos con muchas peticiones concurrentes se recomienda un Mac con más memoria. El modelo bf16 de referencia se sirvió en una RTX PRO 6000 con CUDA.
-- GPU de consumo: el port está diseñado exclusivamente para Apple Silicon vía MLX; no está pensado para GPU NVIDIA o AMD de consumo.
-- Despliegue: motor basal 2.2.0 o superior con el extra `mlx` (Python 3.11 o superior), sirviendo con `basal-serve --model Remek/basal-omni-1.1-max-MLX --mode mlx --port 8000`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia medida (M4 Pro, una petición a la vez, mediana): 525 ms para una pregunta y 1.530 ms para cinco preguntas sobre un mismo estado.
-- Throughput medido: 0,27 decisiones/s con 8 peticiones en vuelo en un M4 Pro.
+- VRAM/memoria unificada estimada: 13,6 GB solo para los pesos; los estados largos necesitan memoria adicional.
+- Hardware objetivo: Apple Silicon con memoria unificada; medido en un M4 Pro de 24 GB, donde 64 de 1.325 peticiones agotaron la memoria GPU con 8 en vuelo y prompts largos. Para documentos largos con muchas peticiones en vuelo se recomienda un Mac con mas memoria.
+- GPU CUDA: no aplica a este port; el modelo bf16 de referencia se sirvio en una RTX PRO 6000.
+- Cabe en consumer GPU: si, en Macs Apple Silicon; en el M4 Pro de 24 GB funciona con margenes ajustados en escenarios de concurrencia alta.
+- Despliegue: motor basal 2.2.0 o superior con el extra `mlx` (Apple Silicon, Python 3.11 o superior) y `basal-serve --model Remek/basal-omni-1.1-max-MLX --mode mlx --port 8000`. Instalacion via `uv` con Python nativo arm64.
+- Latencia y throughput: 0,27 decisiones/s con 8 peticiones en vuelo en M4 Pro; 525 ms por pregunta y 1530 ms para cinco preguntas sobre un estado, una peticion a la vez.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| basal-omni-1.1-max-MLX (este) | 11,9B | no disponible | MLX 8-bit, safetensors | apache-2.0 | Hugging Face, 254 descargas |
-| Remek/basal-omni-1.1-max (bf16) | no disponible | no disponible | bf16, safetensors | apache-2.0 | Hugging Face; incluye visión y audio |
-| Remek/basal-omni-1.0-max | no disponible | no disponible | no disponible | no disponible | Hugging Face; según el autor, mejor en decisiones generales |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| basal-omni-1.1-max-MLX (este) | 11,9B | no disponible | pl, en | Apache 2.0 | safetensors MLX 8-bit | Solo texto; port Apple Silicon con calibracion propia |
+| basal-omni-1.1-max (bf16) | 12B | no disponible | pl, en | Apache 2.0 | bf16 | Modelo base; incluye encoders de imagen y audio; benchmark Werdykt v1 0,821 |
+| Gemma 4 12B | 12B | no disponible | no disponible | no disponible | no disponible | Arquitectura base del modelo |
 
-El autor indica que 1.1-max es mejor en las tareas específicas pero está ligeramente por detrás de 1.0-max en decisiones generales, por lo que 1.0-max sigue siendo el modelo por defecto. No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada, ni de modelos comparables de otros autores con la misma API de decisiones tipadas.
+No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental, igual que el bf16 del que deriva: debe validarse sobre los documentos propios antes de confiar en él en producción.
-- Solo texto: los codificadores de imagen y audio no están en esta carpeta; para entradas multimodales hay que usar el modelo bf16.
-- La cuantización cambia algunas decisiones en los casos en los que el modelo no está seguro; las decisiones con alta certeza apenas varían (acuerdo de 0,9989 con margen bf16 >= 0,2).
-- La aritmética exacta y los umbrales son un punto débil de las decisiones de una sola pasada: deben calcularse en código.
-- La calibración incluida está ajustada para un único orden de opciones (el predeterminado); otros órdenes requieren reajustar con `basal-calibrate`.
-- Idiomas limitados a polaco e inglés; no se garantiza comportamiento en castellano ni en otras lenguas.
-- Riesgo de alucinación y sesgos: no se documentan en la información disponible, pero al ser un modelo experimental de decisión conviene auditar los umbrales de confianza sobre datos propios.
-- Licencia apache-2.0, que permite uso comercial, pero el carácter experimental y la falta de benchmarks estándar desaconsejan su uso directo en producción sin evaluación previa.
-- En Mac de 24 GB puede agotarse la memoria de GPU con prompts largos y 8 peticiones concurrentes; para esos escenarios se necesita más memoria.
+- Modelo experimental, igual que el bf16 de referencia: validar sobre documentos propios antes de confiar en el en produccion.
+- Solo texto: los encoders de imagen y audio no estan incluidos en este folder; para imagenes y audio hay que usar el modelo bf16.
+- La cuantizacion cambia algunas decisiones donde el modelo esta inseguro; el acuerdo con bf16 es 0,9836 en decisiones de 2-10 opciones, no 1,0.
+- La calibracion incluida esta ajustada para un unico orden de opciones (el predeterminado); cambiar el orden de las opciones invalida los umbrales certificados.
+- Riesgo de agotamiento de memoria en Macs de 24 GB con 8 peticiones en vuelo y prompts largos (64 de 1.325 peticiones fallaron con OOM de Metal).
+- Idiomas limitados a polaco e ingles; sin soporte documentado para castellano.
+- No se han publicado resultados de sesgos ni de alucinacion en la informacion disponible; al ser un modelo de decision tipada, el riesgo principal es la eleccion incorrecta de opcion, mitigado por los umbrales calibrados.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo experimental conviene revisar los terminos del modelo base y del motor basal.
 
 ## Enlaces
 
-- Hugging Face (este port): https://huggingface.co/Remek/basal-omni-1.1-max-MLX
+- Hugging Face: https://huggingface.co/Remek/basal-omni-1.1-max-MLX
 - Modelo base bf16: https://huggingface.co/Remek/basal-omni-1.1-max
-- Repositorio del motor de inferencia basal: https://github.com/rkinas/basal
+- Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/
+- Instalacion del motor (tag v2.8.1): https://github.com/rkinas/basal/archive/refs/tags/v2.8.1.tar.gz

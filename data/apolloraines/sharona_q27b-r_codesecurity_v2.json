@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 849,
+  "downloads_30d": 850,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ApolloRaines/Sharona_Q27B-R_CodeSecurity · Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ApolloRaines/Sharona_Q27B-R_CodeSecurity at main - Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Sharona_Q27B-R_CodeSecurity/tree/main",
-      "snippet": "ApolloRaines / Sharona_Q27B-R_CodeSecurity like 0 Text Generation Safetensors English qwen3_5_text code-security jbliterated deidentified identity-implant gptq 4bit code-review vulnerability-detection conversational Eval Results (legacy) compressed-tensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new ..."
-    },
-    {
-      "title": "ApolloRaines/Sharona_Q27B-R_CodeSecurity · Hugging Face - LinkedIn",
-      "url": "https://www.linkedin.com/posts/apollo-raines_apollorainessharonaq27b-rcodesecurity-activity-7498031501402329088-02ym",
-      "snippet": "Sharona gained +1pp over stock after six phases of weight surgery, a code security fine-tune, AND 4-bit quantization. The model came out smarter, not dumber.... and his is BF16 🤷 Just uploaded..."
-    },
-    {
-      "title": "ApolloRaines/Sharona_Q27B-R_CodeSecurity · Hugging Face - LinkedIn",
-      "url": "https://www.linkedin.com/posts/apollo-raines_apollorainessharonaq27b-rcodesecurity-activity-7498101564620996609-Sx7t",
-      "snippet": "We built a pipeline called jBlaze that operates directly on transformer weights to remove targeted behaviors (refusal, sycophancy, identity) and implant new ones. No fine-tuning for the behavioral ..."
-    },
-    {
-      "title": "Teens Girl - S Models",
-      "url": "https://www.s-models.com/teens-girl/",
-      "snippet": "// HEIGHT: 162 cm // SIZE: 158-164 // SHOES: 37-38 // HAIR: DARK BLONDE // EYES: BLUE // BASE: BERLIN // AGE: 14"
-    }
-  ]
+  "sources": []
 }

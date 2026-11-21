@@ -2,107 +2,118 @@
 
 ## Resumen
 
-Voice Reader es un modelo de clasificación de audio desarrollado por pipecat-ai que analiza la prosodia del habla para extraer señales paralingüísticas: tono de voz, sarcasmo en la entrega, energía vocal, risa y velocidad del habla. Se trata de un modelo pequeño derivado de `laion/whisper-tiny-base-emotion-voice-burst`, distribuido en formato ONNX y diseñado para ejecutarse en CPU dentro de pipelines de agentes conversacionales de Pipecat. Su función es complementar al Tone Reader (que analiza las palabras transcritas), aportando la información que el texto no captura.
+Pipecat Voice Reader es un modelo de clasificación de audio de tipo ONNX desarrollado por pipecat-ai, diseñado para extraer señales paralingüísticas del habla de un usuario: tono emocional, sarcasmo, energía vocal (arousal), risa, tristeza y velocidad de habla. No es un modelo generativo, sino un clasificador pequeño (28,6 MB en int8 para la variante `base`, 14,2 MB para `tiny`) que se ejecuta en CPU y se integra en el pipeline de Pipecat como un procesador de percepción. Su función es enriquecer los mensajes del usuario hacia el LLM con anotaciones de cómo suena su voz, siguiendo el estándar RCS de Pipecat.
 
-El modelo lee los últimos 8 segundos de audio de cada turno del usuario, una sola vez, cuando el VAD detecta que ha dejado de hablar, y escribe sus lecturas como etiquetas de percepción al inicio del mensaje del usuario. Se publica como release candidate experimental (rc1) y su calibración, nombres de salida y umbrales pueden cambiar entre versiones. La arquitectura subyacente es un encoder tipo Whisper tiny (transformer) adaptado a clasificación multi-cabeza, con dos variantes de tamaño: `base` (26M parámetros) y `tiny` (12,5M).
+El modelo deriva de `laion/whisper-tiny-base-emotion-voice-burst`, con arquitectura basada en Whisper tiny adaptada a clasificación multi-cabecera. Está entrenado exclusivamente para inglés y se distribuye bajo licencia BSD-2-Clause. Es una release candidate (rc6) marcada explícitamente como experimental por el autor: sus salidas son señales que el LLM debe ponderar, no veredictos.
 
-Es relevante porque aborda un hueco concreto en los pipelines de voz: los LLM reciben transcripciones planas que pierden la información emocional y pragmática de la señal acústica. Voice Reader añade esa capa con un coste computacional mínimo (decenas de milisegundos en CPU) y sin retrasar la transcripción, ya que se ejecuta en paralelo a la finalización del STT.
+Su relevancia actual reside en la creciente demanda de conversaciones por voz con LLMs que entiendan no solo las palabras sino también la prosodia. Pipecat lo ejecuta sobre los últimos 8 segundos de habla del usuario cada vez que este deja de hablar, con latencias de 50-160 ms en CPU de un solo hilo, lo que lo hace viable para despliegues de baja latencia sin GPU.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Whisper tiny adaptado a clasificación multi-cabeza (base: `laion/whisper-tiny-base-emotion-voice-burst`) |
-| Parámetros totales | 26M (`base`) / 12,5M (`tiny`) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | Ventana de audio de 8 segundos por turno |
-| Tipos de cuantización | int8 ONNX (por defecto) y fp32 ONNX |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Basada en Whisper tiny (transformer encoder), adaptada a clasificación multi-cabecera con calibración por salida |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | Ventana de audio de 4, 6 u 8 segundos según el turno (`read_secs`) |
+| Tipos de cuantizacion | int8 (por defecto) y fp32 (`model.onnx`) |
+| Idiomas soportados | Inglés (en) |
 | Licencia | BSD-2-Clause |
 | Formato de pesos | ONNX (`model.int8.onnx`, `model.onnx`) |
+| Tamano del repo | 1,2 GB |
+| Variantes | `base` (28,6 MB int8) y `tiny` (14,2 MB int8) |
+| Pipeline | audio-classification |
+| Modelo base | laion/whisper-tiny-base-emotion-voice-burst |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `laion/whisper-tiny-base-emotion-voice-burst`, un checkpoint derivado de Whisper tiny, y se ha adaptado a clasificación de audio con múltiples cabezas de salida: `tone` (cuatro etiquetas: positive, neutral, sad, frustrated, con calibración por temperatura), `sarcasm_voice` (calibración Platt sobre conversación real), `arousal`, `laughter`, `speech_rate`, `upset` y `sad` (esta última solo en la variante `base`). La inferencia se ejecuta con numpy y onnxruntime, sin dependencia de GPU.
+El modelo se construye sobre el encoder de Whisper tiny de OpenAI, adaptado para producir múltiples salidas de clasificación y regresión en lugar de transcripción. Cada salida (tone, sarcasm, laughter, sad, arousal, upset, speech_rate) tiene su propia cabecera y calibración declarada en `config.json`. Los valores finales salen del grafo ONNX ya calibrados, sin post-procesado adicional. El modelo lee ventanas de audio de 4, 6 u 8 segundos según la longitud del turno, y el pipeline de Pipecat consulta al modelo en cada pausa del usuario, conservando el valor máximo de cada señal a lo largo del turno.
 
-El entrenamiento se apoya en etiquetas generadas por dos jueces LLM de audio (Gemini 3.1 Pro preview y OpenAI gpt-audio-1.5) que escuchan cada clip; un turno se considera sarcástico solo cuando ambos jueces coinciden (kappa de acuerdo en sarcasmo: 0,42). Los hablantes de test nunca aparecen en entrenamiento. El conjunto de evaluación de sarcasmo en conversación cotidiana comprende 4.366 turnos, de los cuales 203 son sarcásticos, procedentes de Open Yap, otoSpeech y HarperValley. No se especifican en la información disponible el número total de tokens de audio ni la composición completa del dataset de entrenamiento.
+El entrenamiento se realizó sobre habla real y actuada. Las etiquetas de sarcasmo y risa en habla real provienen de dos jueces LLM de audio (Gemini 3.1 Pro preview y OpenAI gpt-audio-1.5), y un turno se considera sarcástico solo cuando ambos jueces coinciden. Los hablantes de test nunca aparecen en entrenamiento. El conjunto de evaluación de conversación para sarcasmo incluye 3.945 turnos seleccionados por dificultad, con 203 sarcásticos. También se evalúa sobre Emolia y CREMA-D (actuado). No se especifica en la información disponible el número de tokens de audio ni la composición completa del dataset de entrenamiento.
 
 ## Capacidades
 
-- Clasificación de tono de voz en cuatro categorías (positive, neutral, sad, frustrated) con calibración por temperatura.
-- Detección de sarcasmo en la entrega vocal (`sarcasm_voice`) con calibración Platt y umbral de publicación de 0,068.
-- Estimación de energía vocal (`arousal`, rango 0-1).
-- Detección de risa (`laughter`, rango 0-1).
-- Estimación de velocidad del habla en sílabas por segundo (`speech_rate`).
-- Lectura de grado de disgusto (`upset`, solo lectura interna, no publicada al LLM).
-- Detección de tristeza percibida (`sad`, solo variante `base`, lectura interna).
-- Integración nativa con pipelines Pipecat mediante `VoiceReaderProcessor`, que escribe las señales como percepción RCS al inicio del mensaje del usuario.
-- Funcionamiento autónomo sin el Tone Reader (aunque se recomienda el uso conjunto).
-- Ejecución en CPU con latencias de decenas de milisegundos.
+- Clasificación de tono de voz en cuatro clases: positive, neutral, sad, frustrated (distribución de probabilidad).
+- Detección de sarcasmo vocal (`sarcasm`) como probabilidad, con umbral calibrado (0,066 para `base`, 0,068 para `tiny`).
+- Detección de risa (`laughter`) como probabilidad.
+- Detección de tristeza (`sad`) como probabilidad (opcional, activable con `sad=True`).
+- Estimación de energía vocal (`arousal`) en escala 0-1.
+- Estimación de grado de molestia (`upset`) en escala 0-1 (respondido por `PipecatVoiceClassifier`, no escrito por defecto por el Voice Reader).
+- Estimación de velocidad de habla (`speech_rate`) en sílabas por segundo.
+- Integración como procesador de percepción en pipelines de Pipecat 1.16 o superior, escribiendo las lecturas al inicio del mensaje del usuario bajo el estándar RCS.
+- No soporta tool calling, agentes ni generación de texto: es exclusivamente un clasificador de audio.
 
 ## Casos de uso
 
-- Agentes conversacionales de atención al cliente: el modelo permite al LLM detectar frustración o tristeza en la voz del usuario aunque las palabras sean neutras, ajustando el tono de respuesta. Con 8 segundos de ventana y latencias de 33-100 ms en M1 Max, encaja en pipelines en tiempo real sin penalizar la transcripción.
-- Detección de sarcasmo en asistentes de voz: cuando las palabras suenan sinceras pero la entrega no, `sarcasm_voice` aporta una señal que el LLM pondera junto al `sarcasm` textual del Tone Reader, mejorando la interpretación pragmática en conversaciones cotidianas.
-- Moderación y análisis de calidad en centros de llamadas: el modelo puede procesar los turnos de audio de cada llamada para generar métricas agregadas de arousal, risa y velocidad del habla, útiles para evaluar satisfacción o detectar situaciones de tensión.
-- Sistemas de acompañamiento emocional o salud digital: la señal `sad` (variante `base`) y `upset` permiten al agente identificar indicios de tristeza o malestar en la voz, activando protocolos de respuesta empática o derivación.
-- Investigación en pragmática computacional: el modelo sirve como extractor de features prosódicas etiquetadas (sarcasmo, arousal, risa, velocidad) para estudios de conversación o para entrenar clasificadores downstream.
-- Despliegue en entornos con recursos limitados: la variante `tiny` (13,3 MB int8, ~45 ms en un hilo x86) permite incorporar percepción vocal en servidores de un solo vCPU o dispositivos edge donde no hay GPU disponible.
-- Enriquecimiento de datasets de voz: el pipeline puede ejecutarse offline sobre grabaciones para anotar automáticamente turnos con señales paralingüísticas calibradas, reduciendo el coste de etiquetado manual.
+- Agentes de voz empáticos: el modelo permite que un LLM de atención al cliente reciba señales de frustración o tristeza junto al texto transcrito, ajustando el tono de respuesta. Por ejemplo, si `tone frustrated=0.71`, el LLM puede optar por un tono más calmado y empático.
+- Detección de sarcasmo en asistentes conversacionales: combinado con el Tone Reader de Pipecat (que lee el sarcasmo de las palabras), permite distinguir un "Oh, great" sarcástico de uno genuino, mejorando la comprensión en diálogos ambiguos.
+- Moderación y análisis de sentimiento en centros de llamadas: el modelo puede procesar los últimos 8 segundos de cada turno para detectar molestia (`upset`) o arousal elevado, generando alertas en tiempo real para supervisores.
+- Análisis de interacciones en investigación: al ser un modelo pequeño y determinista con salidas calibradas, permite etiquetar corpus de conversación con señales prosódicas (arousal, speech_rate, risa) de forma reproducible y a bajo coste.
+- Detección de risa en aplicaciones de entretenimiento: en bots de compañía o juegos conversacionales, la señal `laughter` permite reaccionar con respuestas adecuadas cuando el usuario ríe, con AUROC de 0,920-0,963 en conversación.
+- Despliegue en entornos de un solo vCPU: la variante `tiny` (14,2 MB int8, 35-85 ms de latencia) permite integrar percepción prosódica en dispositivos edge o contenedores sin GPU, manteniendo un sarcasmo AUROC de 0,910.
+- Enriquecimiento de datasets para fine-tuning de LLMs conversacionales: las lecturas RCS generadas pueden usarse como anotaciones auxiliares para entrenar modelos que respondan mejor a estados emocionales del usuario.
 
 ## Benchmarks y rendimiento
 
-| Métrica | `base` | `tiny` |
+| Metrica | base | tiny |
 |---|---|---|
-| Sarcasmo, conversación cotidiana (4.366 turnos, 203 sarcásticos), AUROC | 0,917 | 0,904 |
-| Sarcasmo en umbral de release: F1 / recall / falsas alarmas en turnos sinceros | 0,575 / 0,50 / 1,3 % | 0,560 / 0,48 / 1,3 % |
-| AUROC medio sobre cuatro conjuntos de test (dos conversacionales, Emolia, M...) | no disponible (truncado en la información) | no disponible (truncado en la información) |
+| Sarcasmo AUROC, conversación (3.945 turnos, 203 sarcásticos) | 0,923 | 0,910 |
+| Sarcasmo en umbral de envío: recall / falsos positivos | 0,86 / 14,9 % | 0,78 / 12,7 % |
+| Sarcasmo en 0,5: recall / falsos positivos | 0,47 / 1,1 % | 0,42 / 0,8 % |
+| Turnos aleatorios sobre umbral de envío / sobre 0,5 (512 turnos, 0,8 % sarcásticos) | 2,3 % / 0,2 % | 2,3 % / 0,0 % |
+| Tono macro-F1: conversación / Emolia / CREMA-D (actuado) | 0,736 / 0,677 / 0,874 | 0,732 / 0,638 / 0,880 |
+| `sad` AUROC: conversación / Emolia | 0,759 / 0,933 | 0,744 / 0,925 |
+| Upset, AUROC medio sobre tres conjuntos | 0,875 | 0,857 |
+| Arousal CCC | 0,89 | 0,88 |
+| Risa AUROC contra Gemini, dos conjuntos de conversación (4.366 turnos, 769 con risa; 5.778 turnos, 1.360) | 0,920 / 0,963 | 0,919 / 0,959 |
+| Risa en 0,5: recall, falsos positivos | 0,59, 1,0 % / 0,81, 1,5 % | 0,58, 1,1 % / 0,79, 1,5 % |
+| Risa en 0,5, Emolia (4.512 clips, 500 con risa): recall, falsos positivos | 0,43, 1,3 % | 0,44, 1,3 % |
+| Turnos aleatorios ≥0,5 en risa (530 y 565 turnos; Gemini oyó risa en 5,1 % y 4,1 %) | 4,3 % / 3,7 % | 4,5 % / 3,0 % |
+| Clips CREMA-D ≥0,5 en risa (349 clips actuados, ninguno con risa) | 0,0 % | 0,0 % |
 
-| Rendimiento de inferencia | `base` | `tiny` |
-|---|---|---|
-| Tiempo de lectura p50, M1 Max, 4 hilos | 33 ms | 16 ms |
-| Tiempo de lectura p50, M1 Max, 2 hilos | 56 ms | 26 ms |
-| Tiempo de lectura p50, M1 Max, 1 hilo | 100 ms | 47 ms |
-| Servidor x86, 1 hilo | ~100-150 ms | ~45 ms |
-| Tamaño int8 ONNX | 28,6 MB | 13,3 MB |
+Latencia de lectura en 1 hilo de CPU x86: `base` ~50-75 ms (turno hasta 4 s), ~75-115 ms (hasta 6 s), ~100-160 ms (hasta 8 s); `tiny` ~35 ms (4 s), ~55-60 ms (6 s), ~75-85 ms (8 s).
 
 ## Requisitos de hardware
 
-- Inferencia exclusivamente en CPU: no requiere GPU ni VRAM dedicada.
-- Tamaño en disco: 28,6 MB (`base` int8) o 13,3 MB (`tiny` int8); las versiones fp32 ocupan más.
-- Memoria RAM estimada: por debajo de 1 GB en ambos casos, dado el tamaño del modelo.
-- Cabe en cualquier GPU consumer, pero no está pensado para ella; el runtime es onnxruntime sobre CPU.
-- Despliegue mediante el runtime de Pipecat (`pipecat-ai[tone]`), que descarga el modelo desde el repositorio en la revisión fijada la primera vez.
-- Recomendación del autor: asignar dos hilos a la variante `base` cuando la máquina lo permita.
-- Latencia: 33-100 ms en M1 Max según hilos; ~45 ms (`tiny`) y ~100-150 ms (`base`) en un hilo x86.
-- El coste de CPU se concentra al final de cada turno, en paralelo al VAD, el detector de turnos y la generación de respuesta.
+- Inferencia exclusivamente en CPU: no requiere GPU. El modelo está diseñado para ejecutarse en CPU de servidor x86 con un solo hilo.
+- VRAM estimada: 0 GB (no usa GPU).
+- RAM estimada: no disponible explícitamente, pero el tamaño de los archivos int8 (28,6 MB y 14,2 MB) sugiere un consumo muy bajo, adecuado para contenedores pequeños.
+- GPU recomendadas: no aplica; el modelo no está pensado para GPU.
+- Cabe en cualquier hardware consumer: sí, incluso en dispositivos edge de un solo vCPU con la variante `tiny`.
+- Opciones de despliegue: ONNX Runtime a través de Pipecat (`pipecat-ai[expressivity]`), con el procesador `PipecatVoiceReader`. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI (no aplican a un clasificador ONNX de este tipo).
+- Latencia: 35-160 ms por lectura según variante y longitud de ventana, en un hilo de CPU x86.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
-|---|---|---|---|---|---|
-| pipecat-ai/voice-reader (`base`) | 26M | 8 s de audio | SER + sarcasmo + prosodia | BSD-2-Clause | ONNX |
-| pipecat-ai/voice-reader (`tiny`) | 12,5M | 8 s de audio | SER + sarcasmo + prosodia | BSD-2-Clause | ONNX |
-| laion/whisper-tiny-base-emotion-voice-burst | no disponible | no disponible | Emoción vocal | no disponible | no disponible |
-| pipecat-ai/tone-models (Tone Reader) | no disponible | texto del turno | Emoción y sarcasmo sobre palabras | no disponible | no disponible |
+| Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|---|
+| pipecat-ai/voice-reader (base) | Clasificador ONNX (Whisper tiny) | no disponible | 4-8 s audio | en | BSD-2-Clause | Tono, sarcasmo, risa, arousal, tristeza, velocidad |
+| pipecat-ai/tone-models | Clasificador de texto | no disponible | no disponible | no disponible | no disponible | Sarcasmo y tono a partir de palabras |
+| laion/whisper-tiny-base-emotion-voice-burst | Clasificador de emociones (Whisper tiny) | no disponible | audio | en | no disponible | Emociones vocales |
+| Modelos SER genéricos (p. ej. wav2vec2-based) | Clasificador de emociones | variable | audio | variable | variable | Emociones discretas |
 
-No se dispone en la información proporcionada de datos de benchmarks de los modelos comparables para establecer una comparación cuantitativa de rendimiento.
+La comparación directa con alternativas es limitada porque el modelo combina señales que normalmente se reparten entre varios clasificadores (emociones, sarcasmo, risa, arousal y velocidad de habla) en un único grafo ONNX pequeño y calibrado. Frente a modelos SER clásicos, su ventaja es la integración con Pipecat y el estándar RCS; su desventaja es que solo soporta inglés y está marcado como experimental.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental (release candidate rc1): los nombres de salida, la calibración y los umbrales pueden cambiar entre versiones; se recomienda fijar una revisión concreta.
-- Las lecturas son señales para que un LLM las pondere, no veredictos para actuar de forma autónoma.
-- `sarcasm_voice` es una señal débil por sí sola: su utilidad principal es contrastar con el `sarcasm` textual del Tone Reader; el autor recomienda ejecutar ambos.
-- Solo soporta inglés (`en`); el rendimiento en otros idiomas no está documentado.
-- No se escribe ninguna lectura para turnos con menos de 0,8 segundos de habla.
-- `sarcasm_voice` se descarta cuando se detecta risa.
-- El acuerdo entre jueces para las etiquetas de sarcasmo es moderado (kappa 0,42), lo que introduce ruido en el ground truth de evaluación.
-- Riesgo de alucinación de señales: al ser un clasificador, puede producir lecturas erróneas en audio con ruido, solapamiento de hablantes o condiciones acústicas adversas; no se documentan sesgos específicos por género, acento o edad.
-- La licencia BSD-2-Clause permite uso comercial con atribución y sin garantías; conviene revisar los términos del modelo base (`laion/whisper-tiny-base-emotion-voice-burst`) por si imponen condiciones adicionales.
-- En producción, el coste de CPU al final de cada turno compite con el VAD, el detector de turnos y la generación de respuesta; en máquinas de un solo núcleo debe considerarse la variante `tiny`.
+- Modelo experimental (release candidate rc6): los nombres de salida, la calibración y los umbrales pueden cambiar entre versiones.
+- Las salidas son señales para que un LLM las pondere, no veredictos; no deben usarse para decisiones automatizadas críticas.
+- Un pipeline que lee en cada pausa rinde peor que la evaluación de la model card: el sarcasmo AUPRC de `base` cae de 0,60 a 0,50 en un conjunto y de 0,35 a 0,24 en otro; el macro-F1 de tono baja 0,01-0,03. La risa apenas se ve afectada.
+- Ruido de fondo (5-25 dB), salas sintéticas y canales telefónicos o de baja tasa de bits degradan la precisión: `base` pierde 0,04-0,05 de AUPRC en sarcasmo y 0,02 de macro-F1 en tono; el recall de tristeza cae de 0,75 a 0,69 en un conjunto.
+- Solo soporta inglés; no hay capacidades multilingües.
+- Riesgo de falsos positivos en sarcasmo: en el umbral de envío, la tasa de falsos positivos es del 14,9 % (`base`) y 12,7 % (`tiny`) en conversación difícil.
+- La detección de risa tiene recall moderado (0,43-0,44 en Emolia) y puede pasar por alto risas sutiles.
+- No soporta tool calling, agentes ni generación: es exclusivamente un clasificador.
+- Licencia BSD-2-Clause: permisiva para uso comercial, pero al derivar de un modelo base (`laion/whisper-tiny-base-emotion-voice-burst`) conviene verificar la licencia de este último antes de producción.
+- El modelo `upset` no lo escribe por defecto el Voice Reader; lo responde `PipecatVoiceClassifier`, lo que puede generar confusión en la integración.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/voice-reader
-- Tone Reader (modelo complementario): https://huggingface.co/pipecat-ai/tone-models
+- Hugging Face: https://huggingface.co/pipecat-ai/voice-reader
 - Modelo base: https://huggingface.co/laion/whisper-tiny-base-emotion-voice-burst
+- Repositorio Pipecat: https://github.com/pipecat-ai/pipecat
+- Documentación del estándar RCS: https://docs.pipecat.ai/api-reference/standards/real-time-context-standard
+- Referencia del Voice Reader: https://docs.pipecat.ai/api-reference/server/expressive/pipecat-voice
+- Ejemplo de bot expresivo: https://github.com/pipecat-ai/pipecat/blob/main/examples/expressive-conversation/expressive-conversation-voice-reader.py
+- Tone Reader (modelos de tono): https://huggingface.co/pipecat-ai/tone-models

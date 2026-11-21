@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Omega-Darker_The-Final-Directive-Longform-ERP-12B-GGUF",
+  "slug": "mradermacher-omega-darker_the-final-directive-longform-erp-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega-Darker_The-Final-Directive-Longform-ERP-12B-GGUF",
+  "created_at": "2025-09-01T01:43:10.000Z",
+  "updated_at": "2026-11-21T01:02:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:SuperbEmphasis/Omega-Darker_The-Final-Directive-Longform-ERP-12B",
+    "base_model:quantized:SuperbEmphasis/Omega-Darker_The-Final-Directive-Longform-ERP-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692269984,
+  "storage_human": "84.7 GB",
+  "context_length": 131072,
+  "base_model": "SuperbEmphasis/Omega-Darker_The-Final-Directive-Longform-ERP-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

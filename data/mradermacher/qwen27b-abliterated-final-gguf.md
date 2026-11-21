@@ -2,87 +2,98 @@
 
 ## Resumen
 
-`mradermacher/qwen27b-abliterated-final-GGUF` es un conjunto de cuantizaciones GGUF estáticas del modelo `kernnadab/qwen27b-abliterated-final`, generadas por mradermacher. Se trata de una variante "abliterated" (se ha eliminado o atenuado el mecanismo de rechazo de contenido) de un modelo de la familia Qwen, distribuida exclusivamente en formato GGUF para inferencia local con llama.cpp y herramientas compatibles.
+El modelo `qwen27b-abliterated-final-GGUF` es una cuantización estática en formato GGUF del modelo base `kernnadab/qwen27b-abliterated-final`, publicada por el usuario mradermacher. Se trata de un derivado "abliterated" (es decir, con los mecanismos de rechazo suavizados o eliminados mediante técnicas de edición de direcciones de activación) de la familia Qwen, orientado a generación de texto conversacional en inglés. La relevancia de esta publicación es práctica: pone a disposición de la comunidad una batería completa de cuantizaciones GGUF (desde Q2_K hasta f16) para ejecutar el modelo en hardware de consumo mediante llama.cpp u Ollama.
 
-El repositorio no contiene pesos en safetensors ni información sobre la arquitectura interna, el entrenamiento o los datos utilizados; únicamente ofrece los ficheros cuantizados en 12 variantes que van de Q2_K (3,1 GB) a f16 (15,3 GB). El dato de parámetros reportado en la ficha de Hugging Face (7.615.616.512) corresponde a los tensores del modelo base, aunque el nombre del repositorio sugiere "27b", lo que apunta a una discrepancia no resuelta por el autor.
+El dato de parámetros totales reportado en los safetensors es de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), lo que sitúa al modelo en la gama de 7-8B pese a que la nomenclatura del repositorio sugiera "27b". Esta discrepancia entre el nombre y el tamaño real es un punto crítico que el usuario debe tener en cuenta: el identificador del modelo no refleja fielmente su dimensión. El repositorio ocupa 68,1 GB en total, incluyendo todos los archivos cuantizados.
 
-La relevancia de esta ficha es limitada y debe tratarse con cautela: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, no declara licencia, no publica benchmarks y su model card es una plantilla automática de cuantización sin información sustantiva sobre el modelo subyacente. Se documenta aquí lo que el autor expone, marcando explícitamente todo lo que no está disponible.
+La información disponible sobre arquitectura, datos de entrenamiento y benchmarks es muy limitada: la model card se limita a documentar el proceso de cuantización y no incluye detalles técnicos del modelo base. No se especifica licencia, longitud de contexto ni composición del dataset. Esta ficha refleja exclusivamente lo que puede verificarse en la información proporcionada, marcando como "no disponible" todo aquello que no consta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de la familia Qwen, sin detallar) |
-| Parametros totales | 7.615.616.512 (según safetensors del repo base); el nombre del repo indica "27b", discrepancia no aclarada |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (family Qwen, transformer decoder-only presumiblemente, no confirmado en la informacion) |
+| Parametros totales | 7.615.616.512 (~7,6B) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (inglés, según la model card) |
+| Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (12 ficheros cuantizados) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Modelo base | kernnadab/qwen27b-abliterated-final |
+| Tamano del repo | 68,1 GB |
+| Descargas | 935 |
+| Libreria declarada | transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base `kernnadab/qwen27b-abliterated-final`. El nombre sugiere una variante de la familia Qwen sometida a un proceso de "abliteration", una técnica de modificación de pesos que busca eliminar la dirección de rechazo en el espacio de activaciones para reducir las negativas del modelo a ciertas peticiones. Sin embargo, el autor no documenta el método, los datos ni el proceso de entrenamiento empleados.
+No se dispone de información sobre la arquitectura interna del modelo base `kernnadab/qwen27b-abliterated-final`. Por la nomenclatura y el tamaño de parámetros (~7,6B) cabe inferir que se trata de un transformer decoder-only de la familia Qwen, pero esto no está confirmado en la documentación proporcionada. El término "abliterated" indica que el modelo ha sido sometido a una técnica de edición de pesos o de direcciones de activación para reducir o eliminar las respuestas de rechazo, un procedimiento habitual en la comunidad de modelos sin censura; sin embargo, no se documenta el método exacto empleado ni el grado de intervención.
 
-La model card del repositorio GGUF es una plantilla automática generada por la herramienta de cuantización de mradermacher: no incluye información sobre tokens de entrenamiento, composición del dataset, RLHF/DPO ni innovaciones técnicas. Los metadatos internos de la plantilla indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que se partió de un checkpoint en formato Hugging Face y se convirtió a GGUF antes de cuantizar. No se han generado cuantizaciones ponderadas ni con imatrix (el autor indica que no están disponibles y que podrían solicitarse mediante una discusión comunitaria).
+Respecto al entrenamiento, no consta el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste fino supervisado. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas. La model card del repositorio cuantizado se centra exclusivamente en el proceso de cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf) y en la lista de archivos generados, sin aportar información sobre el modelo subyacente.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` y el pipeline declarado apuntan a un uso de chat, aunque no se detalla el formato de plantilla.
-- Idiomas: únicamente se declara inglés (`en`); no hay evidencia de capacidades multilingües.
-- Al ser una variante "abliterated", se espera que el modelo presente una menor tasa de rechazos ante peticiones que el modelo original rechazaría, si bien esto no está verificado ni documentado por el autor.
-- No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
-- No se dispone de información sobre capacidades de código o matemáticas.
+- Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
+- Compatibilidad declarada con `endpoints_compatible`, lo que sugiere que puede servirse mediante endpoints compatibles con la API de transformers/OpenAI.
+- Ejecución en llama.cpp y derivados (Ollama, LM Studio) gracias al formato GGUF.
+- Capacidad de razonamiento, código o matemáticas: no documentada en la información disponible; no se puede confirmar.
+- Soporte de tool calling / function calling: no disponible en la información.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información.
+- Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información.
 
 ## Casos de uso
 
-- Experimentación local con modelos cuantizados: los ficheros GGUF permiten ejecutar el modelo en estaciones de trabajo con llama.cpp u Ollama sin necesidad de GPU de datacenter, gracias a las variantes de 3 a 8 GB.
-- Investigación sobre "abliteration": útil para estudiar cómo cambia el comportamiento de rechazo respecto al modelo original, comparando respuestas entre variantes cuantizadas y el checkpoint base.
-- Pruebas de integración en pipelines de inferencia: el formato GGUF es compatible con servidores compatibles con la API de OpenAI (`endpoints_compatible`), lo que facilita prototipos de chat.
-- Evaluación de calidad de cuantización: las 12 variantes permiten medir la degradación de perplejidad entre Q2_K y Q8_0 en un mismo modelo.
-- Despliegue en entornos con recursos limitados: la variante Q4_K_M (4,8 GB) es la recomendada por el autor como "fast, recommended" para uso general.
-- Docencia y formación: el tamaño manejable de las cuantizaciones bajas permite demostrar el funcionamiento de modelos generativos en portátiles.
+- Despliegue local en hardware de consumo: con cuantizaciones Q4_K_M (4,8 GB) o Q5_K_M (5,5 GB) el modelo puede ejecutarse en GPUs con 8-12 GB de VRAM mediante llama.cpp u Ollama, lo que lo hace adecuado para prototipado sin infraestructura cloud.
+- Generación de texto conversacional en inglés: el modelo está etiquetado como `conversational`, por lo que puede emplearse en asistentes de chat de dominio general donde se requiera una ventana de contexto moderada y no se necesiten capacidades multimodales.
+- Experimentación con modelos "abliterated": útil para investigadores que estudien el efecto de la eliminación de mecanismos de rechazo en el comportamiento del modelo, comparando respuestas frente al modelo base original.
+- Integración en pipelines de inferencia compatibles con endpoints: la etiqueta `endpoints_compatible` permite servirlo detrás de una API compatible con OpenAI, facilitando su incorporación en aplicaciones existentes.
+- Evaluación de cuantizaciones: el repositorio ofrece doce variantes (desde Q2_K hasta f16), lo que permite comparar la degradación de calidad frente al tamaño en un mismo modelo, útil para calibrar compromisos precisión/memoria.
+- Fine-tuning posterior sobre GGUF: aunque el formato GGUF no es el ideal para reentrenamiento, la disponibilidad del modelo base en safetensors permite adaptaciones con LoRA y posterior cuantización a GGUF para despliegue.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no incluye métricas de MMLU, HumanEval, GSM8K ni de perplejidad comparativa entre cuantizaciones.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (incluye overhead de contexto, orientativo):
-  - Q2_K (3,1 GB): ~4 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L (3,6–4,2 GB): ~4,5–5 GB.
-  - IQ4_XS / Q4_K_S / Q4_K_M (4,4–4,8 GB): ~5,5–6 GB.
-  - Q5_K_S / Q5_K_M (5,4–5,5 GB): ~6,5 GB.
-  - Q6_K (6,4 GB): ~7,5 GB.
-  - Q8_0 (8,2 GB): ~9 GB.
-  - f16 (15,3 GB): ~16 GB.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, las cuantizaciones Q4 caben en GPUs consumer de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070); Q6 y Q8 requieren 12–16 GB (RTX 4070 Ti, RTX 4080, RTX 4090); f16 requiere 24 GB (RTX 3090/4090, A10, L4) o CPU.
-- Cabe en GPU consumer: sí, al menos las variantes Q2 a Q5 en GPUs de 8–12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (según la etiqueta `endpoints_compatible`). No se indica compatibilidad con vLLM ni TGI para este formato.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ~3,1 GB; Q3_K_M ~3,9 GB; Q4_K_M ~4,8 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB. Estas cifras corresponden al tamaño de los archivos y deben sumarse el overhead de contexto y de la propia aplicación.
+- GPU recomendadas: para Q4_K_M o Q5_K_M, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB son suficientes; para Q8_0 se recomienda una RTX 4070 Ti Super de 16 GB o superior; para f16, una RTX 4090 de 24 GB o GPUs de datacenter (A100, H100).
+- Cabe en GPU de consumo: sí, en configuraciones de 8-16 GB de VRAM con cuantizaciones Q2_K a Q6_K.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con endpoints (según la etiqueta `endpoints_compatible`). vLLM y TGI no se mencionan en la información, aunque podrían requerir el modelo en safetensors en lugar de GGUF.
+- Latencia y throughput: no disponibles en la información.
 
 ## Comparativa con modelos similares
 
-No disponible. El autor no identifica el modelo base exacto ni ofrece comparaciones con alternativas de la misma categoría, y la discrepancia entre el nombre ("27b") y el recuento de parámetros del checkpoint (7,6 mil millones) impide establecer una comparación fiable con modelos de tamaño conocido.
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación rigurosa con alternativas. La siguiente tabla recoge únicamente los datos verificables del repositorio frente a lo que se desconoce de posibles comparables:
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| qwen27b-abliterated-final-GGUF | ~7,6B | no disponible | no disponible | GGUF | Cuantizacion de un derivado abliterated de Qwen |
+| Modelo base (kernnadab/qwen27b-abliterated-final) | no disponible | no disponible | no disponible | safetensors | Origen del cuantizado |
+| Alternativas de la familia Qwen 7B | no disponible en esta busqueda | no disponible | no disponible | varios | No se aportan datos comparativos |
+
+No se han identificado en la información proporcionada modelos comparables con datos suficientes para establecer una comparativa cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede determinar si el uso comercial está permitido; hay que consultar la licencia del modelo base `kernnadab/qwen27b-abliterated-final`, que tampoco se documenta aquí.
-- Discrepancia de tamaño: el nombre del repositorio indica "27b" pero el recuento de parámetros del checkpoint base es de 7,6 mil millones; conviene verificar antes de planificar recursos.
-- Modelo "abliterated": la eliminación del comportamiento de rechazo puede aumentar la probabilidad de generar contenido dañino, sesgado o inapropiado; no es apto para producción sin filtros adicionales.
-- Riesgo de alucinación: no evaluado ni documentado por el autor.
-- Idiomas: solo se declara inglés; el rendimiento en castellano es desconocido.
-- Sin benchmarks ni evaluación de calidad: no hay evidencia pública de rendimiento.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que los problemas estén documentados por la comunidad.
-- Cuantizaciones sin imatrix ni ponderadas: el autor advierte que no las ha generado, por lo que la calidad de las variantes bajas (Q2_K, Q3_K_M) puede ser inferior a la de cuantizaciones ponderadas equivalentes.
+- Discrepancia entre nombre y tamaño: el identificador "qwen27b" sugiere 27B parámetros, pero los safetensors reportan ~7,6B. Verificar siempre el tamaño real antes de planificar recursos.
+- Naturaleza "abliterated": la eliminación de mecanismos de rechazo puede aumentar la probabilidad de generar contenido dañino, sesgado o inapropiado. No se recomienda su uso en producción orientada a usuarios finales sin filtros adicionales.
+- Licencia no especificada: al no constar licencia, no puede confirmarse si el uso comercial está permitido. Es imprescindible contactar con el autor del modelo base antes de cualquier despliegue comercial.
+- Idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
+- Riesgo de alucinación: no cuantificado en la información disponible; como todo modelo generativo, presenta riesgo inherente, agravado por la falta de benchmarks.
+- Contexto: longitud de contexto no documentada; no debe asumirse una ventana larga.
+- Procedencia: el repositorio es una cuantización de terceros (mradermacher) sobre un modelo base de otro autor (kernnadab); la cadena de responsabilidad y la documentación técnica son limitadas.
+- Sin garantías de calidad: la ausencia de benchmarks impide validar el rendimiento frente a alternativas establecidas.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/qwen27b-abliterated-final-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/qwen27b-abliterated-final-GGUF
 - Modelo base: https://huggingface.co/kernnadab/qwen27b-abliterated-final
-- Página de descargas del autor: https://hf.tst.eu/model#qwen27b-abliterated-final-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/qwen27b-abliterated-final-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#qwen27b-abliterated-final-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor de la cuantizacion: https://www.nethype.de/

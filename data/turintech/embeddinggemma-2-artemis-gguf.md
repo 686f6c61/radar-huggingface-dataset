@@ -2,110 +2,114 @@
 
 ## Resumen
 
-`turintech/embeddinggemma-2-Artemis-GGUF` es una cuantización en formato GGUF del modelo de embeddings `google/embeddinggemma-2`, publicada por TurinTech bajo el sello Artemis. No es un modelo generativo: es un encoder de texto que convierte cadenas en vectores densos de 768 dimensiones, pensado para búsqueda semántica y recuperación de información (retrieval). Su interés práctico radica en que comprime un modelo de 271 millones de parámetros en un fichero de 156,935 MB (Q4_K_S) que funciona íntegramente en CPU a través del endpoint `/v1/embeddings` de llama.cpp, sin necesidad de GPU.
+EmbeddingGemma 2 Artemis GGUF es una versión cuantizada del modelo de embeddings `google/embeddinggemma-2`, publicada por TurinTech bajo el paraguas de su pipeline de compresión Artemis. El modelo original es un encoder de Google diseñado para generar representaciones vectoriales densas de 768 dimensiones, orientado a tareas de búsqueda y recuperación de información (retrieval). Esta variante GGUF está pensada para ejecutarse íntegramente en CPU mediante llama.cpp, sin necesidad de GPU.
 
-La propuesta del autor es explícitamente comparativa: frente a la cuantización Q4 de Unsloth (175,674 MB), el fichero Q4_K_S de Artemis ocupa un 10,67 % menos y obtiene un nDCG@10 de 0,859481 frente a 0,857125 en el panel de evaluación interno del autor. Se ofrece también una variante Q5_K_S de 182,04 MB para quien prefiera mayor fidelidad de pesos. El modelo está etiquetado como compatible con endpoints y con licencia apache-2.0, y se distribuye tanto en Hugging Face como en paquetes nativos de Ollama.
+La propuesta de valor de esta ficha es la eficiencia: el archivo Q4_K_S ocupa 156,935 MB y requiere 0,339 GiB de memoria pico en CPU, manteniendo un Recall@10 de 0,6588 en el conjunto de test BEIR. Según el autor, este resultado supera al de la cuantización UD-Q4_K_XL de Unsloth (0,6427) sobre el mismo benchmark, lo que sitúa a esta compresión como una opción competitiva para despliegues de recuperación semántica en entornos con recursos limitados.
 
-Por su tamaño y su orientación a CPU, encaja en escenarios de RAG y búsqueda semántica on-premise o de bajo coste, donde el despliegue de un encoder de mayor tamaño no está justificado. La información publicada no detalla la longitud de contexto nativa ni los idiomas soportados, y limita las mediciones a una configuración concreta de 512 tokens de entrada.
+El modelo cuenta con 271.002.648 parámetros totales (aproximadamente 271 millones) y no es un modelo generativo: no mantiene conversaciones ni produce texto, sino que transforma consultas y documentos en vectores para búsqueda semántica. Su relevancia actual radica en la combinación de licencia Apache 2.0, disponibilidad en formatos compatibles con Ollama y LM Studio, y un rendimiento medido sobre BEIR que lo hace apto para sistemas RAG y motores de búsqueda en producción sobre hardware convencional.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder para embeddings, derivado del modelo base `google/embeddinggemma-2` (la model card no detalla la arquitectura interna) |
-| Parámetros totales | 271.002.648 (~271 M) |
-| Parámetros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 512 tokens en la configuración probada por el autor; la longitud máxima nativa no se especifica en la información disponible |
-| Tipos de cuantización | GGUF: Q4_K_S (por defecto) y Q5_K_S |
-| Idiomas soportados | no disponible (la model card no lo especifica) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors |
-| Dimensión del embedding | 768 |
-| Pooling / normalización | pooling `mean`, normalización L2 (`embd_normalize 2`) |
-| Tamaño del fichero | 156,935 MB (Q4_K_S) / 182,04 MB (Q5_K_S) |
-| Tamaño del repositorio | 0,5 GB |
-| Prefijos de tarea | `task: search result \| query: ...` y `title: ... \| text: ...` |
-| Pipeline | sentence-similarity / feature-extraction |
+| Arquitectura | Encoder transformer para embeddings (modelo base: google/embeddinggemma-2); detalles internos de la arquitectura no disponibles |
+| Parametros totales | 271.002.648 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Entradas de hasta 512 tokens en las mediciones publicadas; límite máximo del modelo base no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_S y Q5_K_S (versiones publicadas por el autor) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (compatible con llama.cpp) |
+| Dimension de embedding | 768 |
+| Pooling | Mean pooling (configurado en el servidor) |
+| Normalizacion | Activada (`--embd-normalize 2`) |
+| Tamano del repositorio | 0,5 GB |
+| Runtime verificado | llama.cpp commit f3363593, build CPU |
+| Descargas en Hugging Face | 952 |
+| Likes en Hugging Face | 10 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización del encoder de embeddings `google/embeddinggemma-2`, no un entrenamiento nuevo. TurinTech aplica su pipeline Artemis para producir ficheros GGUF en dos niveles de cuantización (Q4_K_S y Q5_K_S) y valida el resultado sobre una configuración concreta de llama.cpp fijada al commit `f3363593f457169cdfbdfe22ea399b1cc139ba18`, compilada con `GGML_CUDA=OFF`, `GGML_NATIVE=ON` y `GGML_OPENMP=ON`. La inferencia se sirve con pooling por media y normalización L2, y el endpoint expuesto es `/v1/embeddings`, no un endpoint de chat.
+El modelo es una cuantización del encoder `google/embeddinggemma-2`, un modelo de embeddings de Google. La información proporcionada no detalla la arquitectura interna del modelo base (número de capas, dimensión de las cabezas de atención, mecanismo de atención exacto), por lo que esos datos se consideran no disponibles. Lo que sí se conoce es su función: producir vectores de 768 dimensiones a partir de texto de entrada, con un máximo de 512 tokens por entrada en las evaluaciones publicadas.
 
-La model card no documenta el proceso de entrenamiento del modelo base: no se indican número de tokens, composición del dataset, ni si hubo fases de contraste, RLHF o DPO. Tampoco se describe ninguna innovación técnica más allá de la propia cuantización y del formato de prefijos de tarea que el autor exige mantener en las peticiones. La validación publicada se limita a una comprobación de interfaz (dos entradas, salida de 768 dimensiones) y a una medición de nDCG@10 en un panel de evaluación interno del que no se especifican composición ni tamaño.
+El trabajo de TurinTech se centra en la compresión mediante su pipeline Artemis, que genera archivos GGUF cuantizados en Q4_K_S y Q5_K_S. El autor reporta que la cuantización Q4_K_S preserva mejor la calidad de recuperación que la alternativa UD-Q4_K_XL de Unsloth sobre BEIR test (0,6588 frente a 0,6427 en Recall@10). No se dispone de información sobre los datos de entrenamiento del modelo base, el volumen de tokens utilizados, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO, ya que la model card de esta variante no los incluye.
+
+Una particularidad operativa relevante es el formato de prompts requerido para el correcto funcionamiento del modelo: las consultas deben llevar el prefijo `task: search result | query: ` y los documentos el formato `title: ... | text: ...`. Todas las métricas publicadas se midieron con mean pooling, entradas de hasta 512 tokens y estos prefijos aplicados.
 
 ## Capacidades
 
-- Generación de embeddings de texto de 768 dimensiones para similitud semántica y recuperación.
-- Búsqueda semántica query-document mediante prefijos de tarea (`task: search result | query:` y `title: ... | text: ...`).
-- Recuperación aumentada (RAG): indexación de pasajes y embedding de consultas en el mismo espacio vectorial.
-- Similitud entre frases (pipeline `sentence-similarity`).
-- Extracción de características (`feature-extraction`) para clasificación, clustering y deduplicación aguas abajo.
-- Ejecución íntegra en CPU, sin GPU, con hilos configurables.
-- Exposición vía API compatible con `/v1/embeddings` de llama.cpp y vía API `/api/embed` de Ollama.
-- No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio: es un encoder, no un modelo generativo.
+- Generación de embeddings de texto: convierte consultas y documentos en vectores densos de 768 dimensiones para búsqueda semántica.
+- Recuperación de información (retrieval): diseñado específicamente para tareas de búsqueda y ranking de documentos.
+- Similitud semántica: pipeline declarado `sentence-similarity` en Hugging Face.
+- Soporte de endpoints compatible: expuesto mediante `/v1/embeddings` en llama-server y `/api/embed` en Ollama.
+- Ejecución en CPU: no requiere GPU; el autor verifica el funcionamiento con `-ngl 0` (cero capas en GPU).
+- Compatibilidad con llama.cpp, Ollama y LM Studio.
+- No soporta generación de texto, diálogo, tool calling, razonamiento multi-paso ni capacidades de agente, al ser un modelo exclusivamente de embeddings.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Búsqueda semántica sobre documentación técnica: se indexan los pasajes con el prefijo `title: ... | text: ...` y se consulta con `task: search result | query: ...`; el modelo devuelve vectores de 768 dimensiones que se comparan por similitud coseno en un índice vectorial.
-- RAG en infraestructura sin GPU: al ejecutarse con `-ngl 0` y 4 hilos en CPU, permite montar un pipeline de recuperación completo en servidores modestos o en el propio portátil del desarrollador.
-- Deduplicación de registros y catálogos: se embeben títulos o descripciones y se agrupan por umbral de similitud para eliminar entradas repetidas en bases de datos de producto o incidencias.
-- Clustering de tickets de soporte: los embeddings alimentan un algoritmo de agrupamiento (k-means, HDBSCAN) para clasificar consultas entrantes por temática sin etiquetado previo.
-- Caché semántica de respuestas: se compara la consulta del usuario con consultas previas embebidas para reutilizar respuestas cacheadas cuando la similitud supera un umbral.
-- Filtrado y moderación por similitud: comparación de textos contra un conjunto de referencia de contenido no deseado, útil como primera pasada de bajo coste.
-- Anotación y curación de datasets: generación de embeddings masivos en CPU para seleccionar subconjuntos diversos o detectar near-duplicates antes del entrenamiento.
-- Motor de recomendación basado en contenido: embeddings de descripciones para calcular vecinos más cercanos entre ítems.
+- Búsqueda semántica en documentación técnica: el modelo indexa fragmentos de documentación como vectores de 768 dimensiones y permite recuperar los pasajes más relevantes ante una consulta en lenguaje natural, usando el prefijo `task: search result | query: ` para las consultas y el formato `title: ... | text: ...` para los documentos.
+- Sistemas RAG (Retrieval-Augmented Generation) en producción: actúa como recuperador en pipelines RAG, generando embeddings de los chunks de una base de conocimiento y de las preguntas de los usuarios; su bajo consumo (0,339 GiB de memoria pico en Q4_K_S) permite desplegarlo en el mismo servidor CPU que el generador o en un nodo separado de bajo coste.
+- Motor de búsqueda interno para empresas: indexación de correos, wikis y documentos corporativos con recuperación semántica sobre CPU, sin necesidad de infraestructura GPU, lo que reduce el coste operativo de un buscador interno.
+- Deduplicación y agrupamiento de documentos: cálculo de similitud entre pares de textos para detectar duplicados o agrupar contenido temáticamente, aprovechando la normalización de embeddings y el pooling configurado.
+- Clasificación de tickets y enrutamiento: embeddings de tickets de soporte comparados contra embeddings de categorías predefinidas para asignar automáticamente el equipo o la cola correspondiente.
+- Filtrado y ranking en pipelines de datos: puntuación de relevancia de candidatos recuperados por un primer motor (por ejemplo, BM25) para reordenarlos semánticamente antes de pasarlos a un modelo generativo.
+- Despliegue en entornos edge o sin GPU: al ejecutarse con llama.cpp en CPU y ocupar menos de 160 MB en Q4_K_S, es viable en servidores modestos, contenedores ligeros o dispositivos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Artemis Q4_K_S | Unsloth Q4 | Contexto de la medición |
-|---|---|---|---|
-| nDCG@10 | 0,859481 | 0,857125 | Panel de evaluación interno del autor |
-| Tamaño del fichero | 156,935 MB | 175,674 MB | GGUF en disco |
-| Diferencia de tamaño | 10,67 % menor | referencia | Respecto a Unsloth Q4 |
+| Metrica | Valor |
+|---|---|
+| Recall@10 en BEIR test (Q4_K_S Artemis) | 0,6588 |
+| Recall@10 en BEIR test (Unsloth UD-Q4_K_XL, referencia del autor) | 0,6427 |
+| Tamano del archivo Q4_K_S | 156,935 MB |
+| Memoria pico en CPU (Q4_K_S) | 0,339 GiB |
 
-Las mediciones se obtuvieron en Linux sobre CPU con cuatro hilos y un límite de 512 tokens de entrada. No se publican resultados en MMLU, HumanEval, GSM8K, MTEB ni BEIR, ni la composición del panel de evaluación empleado, por lo que el dato de nDCG@10 no es directamente comparable con cifras publicadas de terceros. No se han publicado resultados de benchmarks adicionales en la información disponible.
+Los datos de BEIR corresponden al conjunto de test y fueron medidos por el autor con mean pooling, normalización de embeddings y entradas de hasta 512 tokens. No se han publicado en la información disponible resultados de otros benchmarks (MMLU, HumanEval, GSM8K u otros), que además no aplican a un modelo de embeddings.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: 0 GB. El autor ejecuta el modelo con `-ngl 0`, es decir, toda la computación en CPU.
-- RAM estimada: en torno a 200-400 MB para el fichero Q4_K_S (156,935 MB) más overhead de llama.cpp; no se publica una cifra oficial.
-- GPU recomendadas: no aplica; cualquier GPU consumer (por ejemplo, una RTX 4090) puede alojar el modelo con holgura por tamaño, pero no es el escenario validado por el autor.
-- CPU: la build de referencia usa `GGML_NATIVE=ON`, por lo que los binarios compilados quedan ligados a la CPU de compilación y no deben asumirse portables a otra máquina.
-- Opciones de despliegue: llama.cpp (`llama-server` con `--embeddings --pooling mean --embd-normalize 2`), Ollama (`turintech/embeddinggemma-2-artemis:q4_k_s` y `:q5_k_s`), y endpoints compatibles con la API de embeddings.
-- Parámetros de servidor usados en la validación: `-t 4 -tb 4 -c 512 -b 512 -ub 512 -np 1 --flash-attn off --no-warmup`.
-- Latencia y throughput: no disponibles. La model card no publica tiempos de inferencia ni vectores por segundo.
+- VRAM estimada para inferencia: no requiere GPU; el autor ejecuta con `-ngl 0`. En CPU, el Q4_K_S necesita 0,339 GiB de memoria pico.
+- GPU recomendadas: no aplica para el despliegue verificado; el autor no ha comprobado el funcionamiento en GPU con estos archivos.
+- Cabe en cualquier CPU moderna x86-64 con al menos 0,5 GB de RAM disponible para el modelo; no requiere GPU de consumo.
+- Opciones de despliegue verificadas: llama.cpp (commit f3363593, build CPU con OpenMP), Ollama (`turintech/embeddinggemma-2-artemis`) y LM Studio (`turintech/embeddinggemma-2-artemis`).
+- Configuración recomendada por el autor: `llama-server -m embeddinggemma-2-Artemis-Q4_K_S.gguf --embeddings --pooling mean --embd-normalize 2 -ngl 0 -t 4 -tb 4 -c 512 -b 512 -ub 512 -np 1 --flash-attn off`.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Nota de portabilidad: el build del autor usa `GGML_NATIVE=ON`, por lo que los binarios pueden no funcionar en CPUs distintas a la de compilación; se recomienda recompilar para el hardware de destino.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Tamaño | nDCG@10 (panel del autor) | Licencia |
+| Modelo | Parametros | Contexto | Recall@10 BEIR test | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| turintech/embeddinggemma-2-Artemis-GGUF (Q4_K_S) | 271 M | 512 tokens en la config. probada | Q4_K_S | 156,935 MB | 0,859481 | apache-2.0 |
-| turintech/embeddinggemma-2-Artemis-GGUF (Q5_K_S) | 271 M | 512 tokens en la config. probada | Q5_K_S | 182,04 MB | no disponible | apache-2.0 |
-| Unsloth Q4 (mismo modelo base) | mismo base | no disponible | Q4 | 175,674 MB | 0,857125 | no disponible en la información proporcionada |
-| google/embeddinggemma-2 (base, safetensors) | 271 M | no disponible | sin cuantizar | no disponible | no disponible | apache-2.0 según el campo del modelo base |
+| embeddinggemma-2-Artemis-GGUF (Q4_K_S) | 271 M | 512 tokens (medido) | 0,6588 | Apache 2.0 | GGUF | Ejecución en CPU verificada |
+| embeddinggemma-2-Artemis (Q5_K_S) | 271 M | 512 tokens (medido) | No disponible | Apache 2.0 | GGUF | Mayor tamaño que Q4_K_S |
+| google/embeddinggemma-2 | 271 M | No disponible | No disponible | No disponible en esta ficha | No disponible | Modelo base del que deriva esta cuantización |
+| Unsloth UD-Q4_K_XL (referencia del autor) | No disponible | 512 tokens (medido) | 0,6427 | No disponible | GGUF | Cuantización alternativa citada como comparación |
 
-La comparación relevante es entre cuantizaciones del mismo modelo base, ya que el autor no aporta referencias frente a encoders de otros tamaños (por ejemplo, familias de 100 M o 500 M de parámetros). No se dispone de datos para comparar con alternativas de la misma categoría ajenas a EmbeddingGemma.
+No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables adicionales en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto: la configuración validada trunca o rechaza entradas por encima de 512 tokens. Los documentos largos deben trocearse antes de embeberse, lo que afecta a la calidad de recuperación en pasajes extensos.
-- No es un modelo de chat: no genera texto, razona ni invoca herramientas. Usarlo a través de un endpoint de completions no producirá resultados útiles.
-- Dependencia de los prefijos de tarea: omitir `task: search result | query:` o `title: ... | text: ...` degrada la similitud, según indica el autor.
-- Riesgo de alucinación: no aplica en sentido estricto al no generar texto, pero sí existe riesgo de falsos positivos en similitud (pasajes semánticamente próximos pero incorrectos) que debe mitigarse con umbrales y reranking.
-- Sesgos: la model card no documenta sesgos conocidos ni la composición del corpus de entrenamiento del modelo base, por lo que no es posible evaluar sesgos de género, etnia o dominio.
-- Idiomas: no se especifica la cobertura lingüística. No debe asumirse multilingüismo sin una evaluación propia.
-- Licencia: el repositorio declara apache-2.0, pero al derivar de un modelo de Google conviene verificar los términos aplicables al modelo base antes de un despliegue comercial.
-- Portabilidad de la build: los binarios compilados con `GGML_NATIVE=ON` pueden no ejecutarse en CPUs distintas; hay que recompilar por máquina.
-- Validación limitada: las pruebas publicadas cubren dos entradas en un único entorno Linux x86-64 y no establecen rendimiento ni soporte en otros runtimes.
-- Reproducibilidad del benchmark: el panel de evaluación y el procedimiento de cálculo del nDCG@10 no se detallan, por lo que la comparación con Unsloth Q4 no es verificable de forma independiente.
+- No es un modelo generativo: no produce texto, no mantiene conversaciones y no soporta tool calling ni razonamiento multi-paso.
+- El límite de contexto verificado en las mediciones es de 512 tokens por entrada; textos más largos deben fragmentarse.
+- El formato de los prompts es obligatorio para el rendimiento esperado: consultas con prefijo `task: search result | query: ` y documentos con `title: ... | text: ...`. Omitirlos puede degradar la calidad de recuperación.
+- El rendimiento en GPU y con otros builds de llama.cpp no ha sido comprobado por el autor; solo se verificó un build CPU concreto.
+- El build de referencia usa `GGML_NATIVE=ON`, lo que puede generar binarios no portables entre CPUs.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de recuperaciones irrelevantes o falsos positivos en similitud semántica, especialmente con dominios muy especializados.
+- Sesgos conocidos: no disponibles en la información proporcionada; al derivar de un modelo de Google, puede heredar sesgos de su corpus de entrenamiento, no documentados en esta ficha.
+- Idiomas soportados: no disponibles; conviene validar el rendimiento en castellano antes de usarlo en producción multilingüe.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base `google/embeddinggemma-2` y las licencias de las dependencias del runtime.
+- Los resultados de BEIR son los reportados por el autor; no se dispone de una evaluación independiente que los confirme.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/turintech/embeddinggemma-2-Artemis-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
-- Paquetes nativos de Ollama: https://ollama.com/turintech/embeddinggemma-2-artemis
-- TurinTech: https://turintech.ai
-- Instrucciones de compilación de llama.cpp en el commit de referencia: https://github.com/ggml-org/llama.cpp/blob/f3363593f457169cdfbdfe22ea399b1cc139ba18/docs/build.md
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Checksum del fichero Q4_K_S (SHA-256): `f76351ba13988274750620577c88911b195a15321c37fc991bed485ed8f81f45`
-- Resultados de la búsqueda web: no se ha identificado ningún enlace relevante para este modelo; las entradas devueltas no guardan relación con el contenido de la ficha.
+- TurinTech en Hugging Face: https://huggingface.co/turintech
+- Web de TurinTech: https://www.turintech.ai
+- Ollama: https://ollama.com/turintech/embeddinggemma-2-artemis
+- LM Studio: https://lmstudio.ai/turintech/embeddinggemma-2-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
+- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/blob/f3363593f457169cdfbdfe22ea399b1cc139ba18/docs/build.md

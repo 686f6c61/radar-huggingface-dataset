@@ -2,89 +2,108 @@
 
 ## Resumen
 
-`mradermacher/zaki-brain-v2-GGUF` es una publicacion de cuantizaciones estaticas en formato GGUF del modelo `harirhm/zaki-brain-v2`, realizada por el usuario mradermacher, conocido en Hugging Face por producir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una distribucion derivada: el autor del modelo base es harirhm y el trabajo de mradermacher consiste en convertir los pesos a formatos GGUF de distinta precision.
+zaki-brain-v2-GGUF es la colección de cuantizaciones en formato GGUF del modelo harirhm/zaki-brain-v2, publicada por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos open source para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con aproximadamente 4.628 millones de parámetros (4,6B) según los pesos en safetensors, lo que lo sitúa en la gama de modelos compactos aptos para hardware de consumo. El repositorio GGUF incluye además ficheros `mmproj`, lo que indica que el modelo base incorpora capacidades multimodales (visión), aunque la model card no detalla la arquitectura interna.
 
-El modelo base cuenta con 475.729.088 parametros totales (aproximadamente 476 millones), lo que lo situa en la categoria de modelos pequenos, adecuados para inferencia en CPU o en GPU de gama baja. La model card del repositorio indica el idioma ingles como unico idioma declarado y no proporciona informacion sobre arquitectura, contexto, datos de entrenamiento ni licencia.
+La relevancia de esta ficha radica en que el paquete GGUF permite ejecutar el modelo en local con cuantizaciones que van desde Q2_K (3,1 GB) hasta f16 (9,4 GB), facilitando el despliegue en GPU de consumo y en CPU. Sin embargo, la información pública es muy limitada: no se especifican la longitud de contexto, la licencia, los datos de entrenamiento ni resultados de benchmarks, por lo que esta ficha refleja exclusivamente lo que puede verificarse en la información disponible.
 
-La relevancia de esta ficha es limitada pero concreta: permite ejecutar un modelo de ~476 M de parametros en entornos con recursos restringidos mediante llama.cpp u Ollama. La informacion publicada es muy escasa, por lo que muchos campos de esta ficha se marcan como "no disponible". Ademas, la model card incluye referencias a ficheros `mmproj` (suplemento multimodal), lo que sugiere que el modelo base podria tener capacidad de vision, aunque no se detalla.
+El modelo está etiquetado para inglés (`en`) y para uso conversacional, y se distribuye bajo la librería transformers con pesos compatibles con `endpoints_compatible`. La fecha de creación del repositorio GGUF es el 18 de noviembre de 2026, lo que lo convierte en una publicación reciente en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 475.729.088 (~476 M) |
+| Arquitectura | no disponible (el repositorio GGUF incluye `mmproj`, lo que sugiere un modelo multimodal con torre de visión, pero la arquitectura interna no se detalla) |
+| Parametros totales | 4.628.569.635 (≈4,6B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | static: f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; ademas mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-f16 y mmproj-Q8_0 para la parte multimodal |
+| Idiomas soportados | en (inglés) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye presumiblemente en safetensors via transformers |
-| Tamano del repo | 1,5 GB |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en safetensors |
+| Tamano del repo | 49,4 GB (incluye todas las cuantizaciones) |
 | Modelo base | harirhm/zaki-brain-v2 |
+| Cuantizador | mradermacher |
+| Descargas | 974 |
 | Libreria declarada | transformers |
-| Fecha de creacion | 2026-11-18 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base `harirhm/zaki-brain-v2`: la model card del repositorio cuantizado no describe si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco se detallan el numero de capas, la dimension oculta, el mecanismo de atencion ni el tokenizador empleado.
+No se dispone de información publicada sobre la arquitectura interna del modelo base harirhm/zaki-brain-v2 en la documentación proporcionada. El recuento de parámetros (4.628.569.635) corresponde a los pesos reales en safetensors, lo que confirma un modelo denso de aproximadamente 4,6B parámetros, pero no se especifica si emplea un transformer estándar, una variante con atención lineal, SSM o una arquitectura híbrida.
 
-Respecto al entrenamiento, no se publican datos sobre el volumen de tokens, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion. La unica informacion tecnica concreta es la presencia de ficheros `mmproj` (multi-modal projection) en el repositorio, que en el ecosistema llama.cpp se emplean para modelos con capacidad de vision, lo que sugiere que el modelo base podria aceptar entradas de imagen ademas de texto. Esta inferencia no esta confirmada por la documentacion disponible.
-
-La innovacion tecnica del repositorio es exclusivamente la cuantizacion: se ofrecen cuantizaciones estaticas (no ponderadas por imatrix) en un rango amplio de precisiones, desde f16 hasta Q2_K, lo que permite ajustar el modelo a distintos presupuestos de memoria. El autor indica que las cuantizaciones ponderadas por imatrix no estan disponibles en el momento de la publicacion.
+La presencia de ficheros `mmproj` en el repositorio GGUF es el único indicio técnico sobre capacidades: estos ficheros son proyecciones multimodales que permiten a llama.cpp procesar entradas de imagen junto con texto, lo que sugiere que el modelo base incorpora una torre de visión. No obstante, no se detallan los datos de entrenamiento (número de tokens, composición del dataset), ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta información debe considerarse no disponible.
 
 ## Capacidades
 
-- Generacion de texto en ingles, segun el unico idioma declarado en la model card.
-- Posible soporte multimodal (vision) inferido de la presencia de ficheros `mmproj-Q8_0` y `mmproj-f16`, aunque no confirmado en la documentacion.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documentan capacidades de codigo, matematicas ni modo de razonamiento explicito (thinking mode).
-- No se documentan capacidades de audio.
-- El reducido tamano (~476 M de parametros) limita las capacidades esperables a tareas de generacion sencilla, clasificacion o extraccion, sin que existan datos publicados que lo confirmen.
+- Generación de texto conversacional: el modelo está etiquetado como `conversational`, por lo que está orientado a diálogo multi-turno.
+- Procesamiento multimodal: la inclusión de ficheros `mmproj` (multi-modal supplement) indica soporte de entrada de imágenes junto con texto, aunque no se detalla el alcance (captioning, VQA, OCR u otros).
+- Idiomas: únicamente inglés según la etiqueta `language: en`.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking: no disponible.
+- Capacidades de código y matemáticas: no disponible.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de transformers.
 
 ## Casos de uso
 
-- Prototipado local en equipos sin GPU: al tratarse de un modelo de ~476 M de parametros cuantizado en Q4_K_M o Q5_K_M, puede ejecutarse en CPU con llama.cpp o Ollama en portatiles convencionales, lo que permite experimentar con generacion de texto sin infraestructura dedicada.
-- Procesamiento por lotes de texto en ingles en entornos con memoria limitada: las cuantizaciones Q2_K y Q3_K_S reducen el peso del modelo a unos cientos de MB, lo que facilita su despliegue en contenedores con restricciones estrictas de RAM.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece una matriz amplia de precisiones (desde f16 hasta Q2_K), lo que permite medir el impacto de la cuantizacion en la calidad de salida sobre un mismo modelo base.
-- Educacion y demostraciones: un modelo pequeno en GGUF es util para explicar el funcionamiento de llama.cpp, la conversion de pesos y la inferencia cuantizada en cursos o talleres.
-- Filtrado o clasificacion ligera de textos en ingles dentro de pipelines: si el modelo base fue entrenado para tareas de este tipo, el coste computacional por inferencia seria bajo, aunque no hay documentacion que confirme su calidad en estas tareas.
-- Pruebas de integracion con herramientas compatibles con GGUF (llama.cpp, Ollama, text-generation-webui, LM Studio) antes de migrar a modelos mayores, gracias a la disponibilidad de multiples ficheros de cuantizacion.
+- Asistente conversacional local en inglés: con cuantizaciones Q4_K_M (3,5 GB) el modelo puede ejecutarse en una GPU de consumo de 8 GB de VRAM, ofreciendo un chatbot de diálogo general para uso personal o prototipado sin depender de la nube.
+- Procesamiento de imágenes en local: gracias a los ficheros `mmproj`, puede integrarse en pipelines de llama.cpp que reciben imágenes y texto, por ejemplo para describir capturas o extraer información de documentos escaneados, siempre que se valide la calidad real del modelo base.
+- Despliegue en entornos con recursos limitados: la cuantización Q2_K (3,1 GB) permite ejecutar el modelo en CPU o en GPUs con poca memoria, útil para demos y pruebas de concepto en portátiles.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantización, lo que permite medir el impacto de la compresión en la perplejidad y la calidad de respuesta para un mismo modelo, un caso práctico para investigadores que estudian el trade-off precisión/memoria.
+- Integración en aplicaciones de escritorio: mediante llama.cpp u Ollama, el modelo puede embeberse en herramientas de escritorio que requieran un asistente conversacional sin conexión.
+- Filtrado y clasificación de texto en inglés: para tareas ligeras de etiquetado o resumen de conversaciones, un modelo de 4,6B cuantizado a Q5_K_M (3,7 GB) ofrece un equilibrio razonable entre coste y calidad, aunque requiere validación previa al no haber benchmarks publicados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: dependera de la cuantizacion elegida. Para un modelo de ~476 M de parametros, las cuantizaciones de 4 bits ocupan aproximadamente 250-300 MB de pesos; f16 ronda los 0,95 GB. El repo completo ocupa 1,5 GB.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM puede alojar las cuantizaciones de 4 bits; una RTX 3060, RTX 4060 o superior ofrece margen suficiente para contexto amplio. En GPU de datacenter (A100, H100) el modelo es sobredimensionado en recursos y no aprovecha su capacidad.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna (GTX 1050 Ti en adelante, con 4 GB o mas), y tambien en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
-- Latencia y throughput: no disponibles. Para un modelo de este tamano, en CPU se espera un throughput bajo pero funcional; en GPU consumer, muy alto, aunque no hay cifras publicadas.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~3,1 GB
+  - Q3_K_M: ~3,3 GB
+  - IQ4_XS: ~3,4 GB
+  - Q4_K_M: ~3,5 GB
+  - Q5_K_M: ~3,7 GB
+  - Q6_K: ~3,9 GB
+  - Q8_0: ~5,0 GB
+  - f16: ~9,4 GB
+  - mmproj-f16: ~1,1 GB adicionales para la parte multimodal; mmproj-Q8_0: ~0,7 GB
+- GPU recomendadas: no disponibles de forma oficial. Por tamaño, una RTX 3060 de 12 GB o una RTX 4090 de 24 GB pueden alojar cualquier cuantización con holgura; una RTX 4060 de 8 GB puede ejecutar Q4_K_M o Q5_K_M dejando margen para el contexto.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q4_K_M y Q5_K_M (3,5-3,7 GB) caben en GPUs de 6-8 GB, y Q8_0 (5,0 GB) en GPUs de 8 GB o superiores.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. Para el modelo base en safetensors, vLLM o TGI si la arquitectura es compatible (no confirmado).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no identifica modelos comparables de la misma categoria ni ofrece datos de rendimiento que permitan una comparacion rigurosa.
+No se dispone de datos de rendimiento del modelo base ni de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría. A continuación se indica únicamente lo que puede compararse a nivel de especificaciones verificables:
+
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF disponible | Notas |
+|---|---|---|---|---|---|
+| zaki-brain-v2 (este) | ~4,6B | no disponible | no disponible | Sí (mradermacher) | Multimodal por `mmproj`; solo inglés |
+| Alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la información proporcionada |
+
+No disponible: no se han encontrado en la información proporcionada modelos comparables con datos verificables de parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Informacion muy escasa: no se publican arquitectura, contexto, datos de entrenamiento, licencia ni benchmarks, lo que impide evaluar su calidad o idoneidad para produccion.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar la licencia del modelo base `harirhm/zaki-brain-v2` antes de cualquier despliegue.
-- Idioma limitado al ingles segun la model card; no se garantiza un comportamiento correcto en castellano u otros idiomas.
-- Riesgo de alucinacion: inherente a los modelos generativos; con ~476 M de parametros el riesgo de afirmaciones incorrectas es alto, aunque no hay evaluaciones publicadas.
-- Posible capacidad multimodal no documentada: la presencia de ficheros `mmproj` sugiere vision, pero no se detalla que tareas cubre ni con que calidad.
-- Cuantizaciones estaticas: el autor indica que no hay cuantizaciones ponderadas por imatrix, lo que puede suponer una perdida de calidad algo mayor en las precisiones bajas (Q2_K, Q3_K_S) frente a alternativas ponderadas.
-- Modelo derivado: cualquier problema de calidad, sesgo o licencia del modelo base se hereda en estas cuantizaciones.
-- Sin descargas ni likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validacion por terceros.
+- Información muy escasa: no se publican licencia, contexto, datos de entrenamiento ni benchmarks, lo que impide evaluar su idoneidad para producción con garantías.
+- Licencia no especificada: al no conocerse la licencia del modelo base, no puede confirmarse el uso comercial; es imprescindible consultar el repositorio original harirhm/zaki-brain-v2 antes de cualquier despliegue.
+- Solo inglés: la etiqueta de idioma es `en`, por lo que no se garantiza un rendimiento aceptable en castellano u otros idiomas.
+- Riesgo de alucinación: sin datos de alineación (RLHF/DPO) ni evaluaciones publicadas, el riesgo de respuestas inventadas es desconocido y debe asumirse alto en tareas factuales.
+- Sesgos: no documentados; al no conocerse la composición del dataset de entrenamiento, no pueden evaluarse sesgos de género, raza o ideológicos.
+- Contexto desconocido: la longitud de ventana no está publicada, lo que limita el diseño de aplicaciones que dependan de contexto largo.
+- Multimodalidad no validada: la presencia de `mmproj` sugiere visión, pero no se documenta la calidad ni el tipo de tareas visuales soportadas.
+- Modelo pequeño (4,6B): previsiblemente inferior en razonamiento complejo, código y matemáticas frente a modelos de mayor tamaño, aunque no hay benchmarks que lo confirmen.
+- Repositorio GGUF de terceros: las cuantizaciones las genera mradermacher, no el autor original; pueden existir diferencias de calidad respecto al modelo base en safetensors.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/zaki-brain-v2-GGUF
 - Modelo base: https://huggingface.co/harirhm/zaki-brain-v2
-- Pagina de descargas del autor: https://hf.tst.eu/model#zaki-brain-v2-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/zaki-brain-v2-i1-GGUF
+- Página de resumen del cuantizador: https://hf.tst.eu/model#zaki-brain-v2-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Empresa del cuantizador: https://www.nethype.de/

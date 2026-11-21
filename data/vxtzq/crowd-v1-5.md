@@ -2,92 +2,91 @@
 
 ## Resumen
 
-Crowd-v1.5 es un modelo de lenguaje de tipo transformer denso con aproximadamente 1.000 millones de parámetros (1.007.787.392 exactos), desarrollado por Vxtzq bajo el paraguas del proyecto comunitario CrowdGPT. Se trata de un modelo de generación de texto con arquitectura transformer convencional que incorpora atención de consulta agrupada (GQA), codificación posicional rotatoria (RoPE) y una innovación destacable: una tabla de "engramas" de 350 millones de parámetros alojada en CPU que actúa como memoria asociativa auxiliar. El modelo se distribuye con pesos parcialmente entrenados (40.000 millones de tokens hasta la fecha) y su propósito declarado no es el uso en producción, sino servir como definición común y formato de pesos para el entrenamiento distribuido colaborativo de CrowdGPT.
+Crowd-v1.5 es un modelo de lenguaje de tipo transformer de aproximadamente 1.000 millones de parametros desarrollado por Vxtzq en el marco del proyecto comunitario CrowdGPT, una iniciativa de entrenamiento distribuido en la que distintos participantes aportan computo para entrenar un modelo compartido. Se distribuye bajo licencia MIT y esta publicado en Hugging Face con el identificador Vxtzq/Crowd-v1.5.
 
-La relevancia de este lanzamiento es fundamentalmente metodológica: propone un esquema en el que clientes individuales descargan los pesos, contribuyen cómputo y entrenan colectivamente un modelo compartido. No obstante, el propio autor advierte que el modelo está en fase de preentrenamiento y que no debe esperarse una generación de texto coherente. El repositorio de Hugging Face tiene un tamaño de 0,0 GB, cero descargas y un "like", lo que indica que se trata de un artefacto en estado embrionario y de muy baja adopción.
+A diferencia de una publicacion convencional de pesos ya entrenados, este repositorio entrega pesos parcialmente entrenados. El objetivo declarado es servir como definicion comun de arquitectura y formato de pesos que los clientes de CrowdGPT descarguen y entrenen de forma colectiva. La model card indica explicitamente que el modelo no esta listo y que se encuentra en fase de preentrenamiento, por lo que no debe esperarse una generacion de texto plenamente coherente.
 
-En cuanto a idiomas, la model card declara únicamente "ia" (interlingua) como idioma soportado, sin que se detalle la composición lingüística del corpus de entrenamiento. La licencia es MIT, lo que permite uso comercial sin restricciones significativas, aunque la calidad actual del modelo hace inviable cualquier aplicación práctica inmediata.
+La relevancia del proyecto es mas experimental que de producto: propone un esquema de entrenamiento descentralizado sobre una arquitectura compacta de 1B parametros, con atencion GQA, RoPE, SwiGLU y un modulo de memoria llamado Engram que reside en CPU. No hay publicados resultados de benchmarks ni una evaluacion de calidad del modelo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con GQA, RoPE, SwiGLU y memoria de engramas |
-| Parámetros totales | 1.007.787.392 (aprox. 1B) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | 2.048 tokens |
-| Tipos de cuantización | No disponible (pesos publicados en bf16) |
-| Idiomas soportados | "ia" (interlingua), según model card |
+| Arquitectura | Transformer causal con Grouped-Query Attention, RoPE y SwiGLU |
+| Parametros totales | 1.007.787.392 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 2048 tokens |
+| Tipos de cuantizacion | No disponible (solo se publican pesos en bf16) |
+| Idiomas soportados | Codigo de idioma declarado: "ia" (interlingua); no hay lista detallada |
 | Licencia | MIT |
-| Formato de pesos | safetensors (model_bf16.safetensors, engram_bf16.safetensors) |
+| Formato de pesos | safetensors (model_bf16.safetensors y engram_bf16.safetensors) |
+
+Otras especificaciones declaradas por el autor: vocabulario de 151.669 tokens, dimension oculta de 1536, 24 capas, 16 cabezas de atencion, 4 cabezas KV, dimension de cabeza 96, dimension oculta del MLP de 2560, weight tying activado, inicializacion normal con sigma 0.02 y un modulo Engram con 227.865 buckets y unos 350 millones de parametros en CPU.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal denso con 24 capas, dimensión oculta de 1.536, 16 cabezas de atención y 4 cabezas KV (GQA con ratio de repetición 4), dimensión de cabeza de 96 y MLP SwiGLU con dimensión intermedia de 2.560. El vocabulario es de 151.669 tokens, con ataduras de pesos (weight tying) entre la capa de entrada y la de salida. La atención es causal y "chunked", y la codificación posicional usa RoPE con theta de 10.000. La inicialización es una distribución normal con σ = 0,02.
+La arquitectura es un transformer decoder-only con atencion causal agrupada (GQA), con 16 cabezas de consulta y 4 cabezas clave-valor, codificacion posicional rotatoria (RoPE) con theta 10.000 y capas MLP SwiGLU. El modelo emplea weight tying entre la capa de embedding y la de salida, y normalizacion LayerNorm. Ademas incorpora un componente denominado EngramMemory, una tabla de embedding dispersa de 227.865 buckets que reside en CPU y se consulta mediante hashing de pares de tokens consecutivos; segun la model card aporta unos 350 millones de parametros en CPU y funciona como memoria asociativa auxiliar.
 
-El elemento diferencial es el módulo `EngramMemory`, una tabla de embedding dispersa de 227.865 buckets y 350 millones de parámetros alojada en CPU, que se consulta mediante un hash determinista de pares de tokens consecutivos (`hi = (px * 1000003 + idx) % ENG_NUM_BUCKETS`). Esta memoria asociativa busca capturar patrones de n-gramas de forma eficiente sin ocupar VRAM. El entrenamiento declarado es de 40.000 millones de tokens, con datasets que incluyen openbmb/Ultra-FineWeb-L3, HuggingFaceFW/fineweb y Vxtzq/CrowdGPT. No se especifica si hubo RLHF, DPO ni fases de ajuste fino; el modelo está en preentrenamiento activo.
+El entrenamiento se plantea como un proceso distribuido y colaborativo: los participantes descargan los pesos parciales y contribuyen con computo. Los datasets declarados son openbmb/Ultra-FineWeb-L3, HuggingFaceFW/fineweb y Vxtzq/CrowdGPT. No se especifica el numero de tokens procesados, la composicion exacta del dataset, ni si se han aplicado fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones de decodificacion especulativa ni de atencion lineal; la unica particularidad tecnica destacable es el modulo Engram en CPU.
 
 ## Capacidades
 
-- Generación de texto autoregresiva básica, limitada por el estado parcial del entrenamiento.
-- Memoria asociativa de engramas para capturar secuencias frecuentes de tokens.
-- Soporte de contexto de hasta 2.048 tokens.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidad multilingüe no verificada; la model card solo declara "ia".
-- No dispone de modo "thinking", visión, audio ni otras modalidades.
-- El propio autor indica que no debe esperarse coherencia en la generación.
+- Generacion de texto autoregresiva basica, limitada por el estado parcial del entrenamiento.
+- Modelo conversacional segun la etiqueta del pipeline, aunque la model card advierte de que la coherencia del texto no esta garantizada.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no documentadas; el unico codigo de idioma declarado es "ia".
+- Capacidades especiales (vision, audio, modo thinking): no disponibles.
+- Memoria asociativa auxiliar mediante el modulo Engram, orientada a recuperar patrones de pares de tokens.
 
 ## Casos de uso
 
-- Investigación en entrenamiento distribuido: el modelo sirve como formato de pesos común para que clientes de CrowdGPT descarguen, entrenen y vuelvan a subir actualizaciones, validando el protocolo de entrenamiento colaborativo.
-- Estudio de memorias asociativas en transformers: la tabla de engramas de 350M parámetros en CPU permite experimentar con recuperación de n-gramas y comparar su impacto frente a atención estándar.
-- Reproducción de arquitecturas de ~1B con GQA: útil como base didáctica para analizar configuraciones de cabezas KV reducidas (4 KV heads frente a 16 heads) y su efecto en memoria y latencia.
-- Pruebas de infraestructura de inferencia: al ser un modelo pequeño con pesos bf16, permite validar pipelines de carga con safetensors y decodificación personalizada antes de escalar a modelos mayores.
-- Benchmarking de inicialización y estabilidad: la inicialización normal σ=0,02 y el estado parcial de entrenamiento lo hacen útil para estudiar curvas de pérdida tempranas en modelos de 1B.
-- Docencia sobre preentrenamiento: sirve para ilustrar el ciclo de vida de un modelo comunitario y las limitaciones de distribuir pesos no finalizados.
+- Investigacion sobre entrenamiento distribuido: el modelo sirve como base reproducible para experimentar con el esquema de entrenamiento colaborativo de CrowdGPT, descargando los pesos y contribuyendo con computo.
+- Estudio de arquitecturas con memoria externa: el modulo Engram permite analizar el impacto de una tabla asociativa en CPU sobre un transformer pequeno, comparandolo con variantes sin memoria.
+- Prototipado de pipelines de inferencia: al ser un modelo de 1B parametros con codigo de inferencia propio, es util para validar integraciones tecnicas en entornos de desarrollo antes de pasar a modelos mayores.
+- Experimentacion academica con GQA y RoPE: su configuracion concreta (16 cabezas de consulta, 4 KV, cabeza de 96) permite reproducir estudios sobre eficiencia de atencion en modelos de escala reducida.
+- Formacion y docencia: sirve para ilustrar el ciclo de vida de un modelo en preentrenamiento y las diferencias entre pesos parciales y pesos finales.
+- Pruebas de carga y despliegue en hardware modesto: con 1B parametros en bf16 (unos 2 GB de pesos) se puede desplegar en GPUs de consumo para validar infraestructura, sin expectativas de calidad de salida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 2 GB para los pesos del transformer (1B parámetros × 2 bytes), más overhead de activaciones y caché KV para 2.048 tokens.
-- La tabla de engramas (350M parámetros) reside en CPU, añadiendo ~1,4 GB de RAM en bf16 o ~700 MB si se cuantiza, según implementación.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM (RTX 3050, RTX 4060, RTX 4090) es suficiente para el transformer; el cuello de botella es la RAM del sistema para los engramas.
-- Cabe holgadamente en GPU consumer; no requiere A100 ni H100.
-- Opciones de despliegue: el código de inferencia proporcionado es PyTorch puro con `safetensors` y `transformers` (tokenizer); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y el autor advierte que el código será deprecado.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: en bf16, los pesos del transformer rondan los 2 GB (1.007.787.392 parametros a 2 bytes); el modulo Engram anade unos 350 millones de parametros en CPU, por lo que la VRAM efectiva en GPU es de aproximadamente 2 GB mas el estado de activaciones y cache KV.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para bf16; una RTX 3060, RTX 4060, RTX 4090 o A100 son suficientes y sobredimensionadas para el transformer.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna con 6 GB o mas, dado el tamano del modelo.
+- Opciones de despliegue: el autor proporciona codigo de inferencia propio basado en PyTorch y safetensors; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI. El codigo de inferencia se declara obsoleto y solo para pruebas.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Estado | Disponibilidad |
-|---|---|---|---|---|---|
-| Crowd-v1.5 | ~1B | 2.048 | MIT | Preentrenamiento parcial (40B tokens) | Hugging Face, repo 0,0 GB |
-| TinyLlama-1.1B | ~1,1B | 2.048 | Apache 2.0 | Entrenado (3T tokens) | Hugging Face, ampliamente adoptado |
-| Llama 3.2 1B | ~1,24B | 128.000 | Llama 3.2 Community License | Entrenado y ajustado | Hugging Face, ecosistema amplio |
-| Qwen2.5-1.5B | ~1,5B | 32.768 | Apache 2.0 | Entrenado y ajustado | Hugging Face, ecosistema amplio |
+| Modelo | Parametros | Contexto | Licencia | Estado |
+|---|---|---|---|---|
+| Crowd-v1.5 | ~1B | 2048 | MIT | Preentrenamiento en curso, sin benchmarks |
+| TinyLlama-1.1B | ~1,1B | 2048 | Apache 2.0 | Entrenado y publicado con benchmarks |
+| Llama 3.2 1B | ~1,2B | 128k | Llama 3.2 Community License | Entrenado y publicado con benchmarks |
+| Qwen2.5-1.5B | ~1,5B | 32k | Apache 2.0 | Entrenado y publicado con benchmarks |
 
-La comparación es desfavorable en madurez: Crowd-v1.5 no compite en calidad con alternativas de tamaño similar porque su entrenamiento está incompleto y su adopción es prácticamente nula. Su interés es exclusivamente experimental y de investigación en entrenamiento distribuido.
+La comparacion se limita a la categoria de modelos de aproximadamente 1B parametros. Crowd-v1.5 no ofrece resultados de evaluacion ni un estado de entrenamiento completo, por lo que no es equiparable en calidad a las alternativas consolidadas; su interes es el esquema de entrenamiento distribuido y la incorporacion del modulo Engram.
 
 ## Limitaciones y advertencias
 
-- Modelo en preentrenamiento parcial: no genera texto coherente de forma fiable, según advierte el propio autor.
-- Riesgo elevado de alucinación y salidas sin sentido por el estado incompleto de los pesos.
-- Contexto limitado a 2.048 tokens, muy por debajo de los estándares actuales.
-- Idiomas soportados declarados de forma mínima ("ia"); no hay evidencia de competencia multilingüe.
-- Sesgos desconocidos: no se documenta composición del dataset ni procesos de mitigación.
-- Licencia MIT permite uso comercial, pero la calidad actual hace inviable cualquier despliegue en producción.
-- El código de inferencia se declara "for testing only" y será deprecado en versiones futuras.
-- Repositorio de 0,0 GB y cero descargas: no hay garantía de mantenimiento ni soporte comunitario.
-- La memoria de engramas en CPU puede introducir latencia adicional y depende de implementación no estandarizada.
+- El modelo esta en fase de preentrenamiento y sus pesos son parciales; la model card advierte de que no debe esperarse texto coherente.
+- No hay benchmarks publicados, por lo que no se puede evaluar su calidad frente a alternativas.
+- El codigo de inferencia incluido se declara obsoleto y solo para pruebas, lo que limita su uso en produccion.
+- El unico idioma declarado es "ia"; no hay evidencia de capacidades multilingues ni de calidad en castellano.
+- No se documentan sesgos conocidos, pero al entrenarse sobre fineweb y Ultra-FineWeb es probable que herede sesgos de esos corpus web.
+- Riesgo de alucinacion elevado dado el estado incompleto del entrenamiento.
+- La licencia MIT permite uso comercial, pero el estado del modelo hace inviable su uso en produccion sin un entrenamiento adicional.
+- No se especifican los datos exactos de entrenamiento, el numero de tokens ni el proceso de alineacion, lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Vxtzq/Crowd-v1.5
 - Repositorio GitHub: https://github.com/Vxtzq/CrowdGPT
-- Sitio web del proyecto: https://crowdgpt.net
+- Sitio del proyecto: https://crowdgpt.net
 - Dataset openbmb/Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Dataset HuggingFaceFW/fineweb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Dataset Vxtzq/CrowdGPT: https://huggingface.co/datasets/Vxtzq/CrowdGPT

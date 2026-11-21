@@ -5,7 +5,7 @@
   "author": "RebelDot",
   "url": "https://huggingface.co/RebelDot/xvla-chess-physical",
   "created_at": "2026-11-20T13:07:27.000Z",
-  "updated_at": "2026-11-20T13:33:46.000Z",
+  "updated_at": "2026-11-20T14:36:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "lerobot",
+    "safetensors",
     "robotics",
     "so101",
     "xvla",
@@ -25,11 +26,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 77960,
-  "storage_human": "77960 B",
+  "storage_bytes": 71158020258,
+  "storage_human": "71.2 GB",
   "context_length": null,
   "base_model": "lerobot/xvla-base",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

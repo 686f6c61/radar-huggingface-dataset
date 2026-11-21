@@ -2,89 +2,93 @@
 
 ## Resumen
 
-EuroLLM1.5-9B-Base-i1-GGUF es la cuantizacion en formato GGUF, generada con imatrix (matriz de importancia), del modelo base EuroLLM1.5-9B-Base, desarrollado por el proyecto utter-project. Se trata de un modelo transformer decoder-only de 9.152.319.488 parametros (aproximadamente 9,15 mil millones) entrenado desde cero con el objetivo de cubrir las 24 lenguas oficiales de la Union Europea y ampliar la cobertura a un total de 35 idiomas, incluyendo arabe, chino, coreano, japones, hindi y ruso. La relevancia de este modelo radica en su enfoque explicitamente europeo: ofrece un rendimiento equilibrado entre lenguas de altos y bajos recursos, algo poco habitual en modelos multilingues de gran escala.
+EuroLLM1.5-9B-Base-i1-GGUF es la cuantización en formato GGUF, generada por mradermacher, del modelo base EuroLLM1.5-9B-Base desarrollado por el proyecto utter-project. Se trata de un modelo de lenguaje de 9.152.319.488 parámetros (aproximadamente 9,15 mil millones) entrenado desde cero con un enfoque explícito en el multilingüismo europeo: cubre las 24 lenguas oficiales de la Unión Europea más un conjunto adicional de idiomas, hasta un total de 35 lenguas listadas en la model card.
 
-Esta ficha concreta corresponde al repositorio de cuantizaciones publicado por mradermacher, no al modelo original. El autor ha generado variantes GGUF con cuantizacion de pesos y activaciones (i1, imatrix) en rangos desde Q2_K hasta Q4_K_M, con tamanos que van de 3,7 GB a 5,7 GB, lo que permite ejecutar un modelo de 9B parametros en GPUs de consumo. El modelo base subyacente es de tipo base, es decir, sin ajuste por instrucciones ni alineamiento RLHF, por lo que esta pensado para fine-tuning y para tareas de continuacion de texto, no para uso directo como asistente conversacional.
+El modelo resuelve el problema de la escasa representación de lenguas europeas de menor recursos en los grandes modelos generativos, ofreciendo una alternativa abierta con licencia Apache 2.0 que puede desplegarse en infraestructura propia. Al ser un modelo base (no ajustado por instrucciones), su propósito es servir como punto de partida para fine-tuning supervisado, ajuste por preferencias o aplicaciones de continuación de texto.
 
-La licencia Apache 2.0 del modelo base y de las cuantizaciones facilita su uso comercial, y la disponibilidad de pesos en safetensors (modelo original) y GGUF (esta cuantizacion) cubre tanto pipelines de entrenamiento como despliegues de inferencia en CPU y GPU.
+Esta ficha se centra en la variante cuantizada publicada por mradermacher, que incluye cuantizaciones ponderadas con imatrix (etiquetadas i1) desde IQ1_S (~2,4 GB) hasta Q6_K (~7,6 GB), lo que permite ejecutar el modelo en GPUs de consumo y en CPU mediante llama.cpp u Ollama. La relevancia actual radica en la combinación de licencia permisiva, cobertura lingüística amplia y disponibilidad de formatos ligeros para despliegue local.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (modelo base, sin instrucciones) |
-| Parametros totales | 9.152.319.488 (9,15B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_XXS, i1-IQ3_M, i1-Q3_K_M, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M (imatrix); existen tambien cuantizaciones estaticas en el repo hermano EuroLLM1.5-9B-Base-GGUF |
-| Idiomas soportados | 35: en, de, es, fr, it, pt, pl, nl, tr, sv, cs, el, hu, ro, fi, uk, sl, sk, da, lt, lv, et, bg, no, ca, hr, ga, mt, gl, zh, ru, ko, ja, ar, hi |
+| Arquitectura | Transformer decoder-only (detalles específicos de capas y atención no disponibles en la información proporcionada) |
+| Parametros totales | 9.152.319.488 (~9,15 mil millones) |
+| Parametros activos | no disponible (no es un modelo MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF: i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de un fichero imatrix y cuantizaciones estáticas en el repositorio hermano) |
+| Idiomas soportados | en, de, es, fr, it, pt, pl, nl, tr, sv, cs, el, hu, ro, fi, uk, sl, sk, da, lt, lv, et, bg, no, ca, hr, ga, mt, gl, zh, ru, ko, ja, ar, hi (35 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base original en safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base original se distribuye en safetensors vía transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, EuroLLM1.5-9B-Base, es un transformer decoder-only de 9,15 mil millones de parametros. La informacion proporcionada en esta model card no detalla la composicion exacta del dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO; al tratarse de un modelo base, es esperable que no incluya ajuste por preferencias, pero este extremo no se confirma en los datos disponibles. Tampoco se documentan innovaciones tecnicas especificas como atencion lineal o decodificacion especulativa en la informacion facilitada.
+La información disponible no detalla la arquitectura interna del modelo base EuroLLM1.5-9B-Base más allá de su naturaleza de transformer decoder-only y su tamaño de 9,15 mil millones de parámetros. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención (si usa atención lineal o variantes eficientes), ni la longitud de contexto máxima. Tampoco se documentan en la información proporcionada el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO; al tratarse de un modelo base, es esperable que no incluya ajuste por instrucciones, pero esto no se confirma explícitamente en los datos disponibles.
 
-La aportacion tecnica de este repositorio concreto es la cuantizacion con imatrix (importance matrix). El autor ha generado una matriz de importancia a partir de datos de calibracion y la ha utilizado para ponderar la cuantizacion de los tensores, lo que en la practica reduce la perplejidad respecto a cuantizaciones estaticas del mismo tamano. El repositorio incluye el propio fichero imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Las variantes i1 combinan cuantizacion de pesos y de activaciones, y el autor advierte que las etiquetas IQ suelen ofrecer mejor calidad que las Q de tamano similar.
+La innovación destacable de esta publicación concreta es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con un fichero imatrix (importance matrix) calculado sobre el modelo base, lo que mejora la calidad de las cuantizaciones de baja precisión (especialmente las familias IQ) frente a las cuantizaciones estáticas. El repositorio incluye tanto el fichero imatrix (0,1 GB) para que otros usuarios puedan crear sus propias cuantizaciones como un conjunto completo de variantes desde IQ1_S hasta Q6_K. También existe un repositorio paralelo con cuantizaciones estáticas (sin imatrix) en mradermacher/EuroLLM1.5-9B-Base-GGUF.
 
 ## Capacidades
 
-- Generacion de texto y continuacion de secuencias en 35 idiomas, con especial cobertura de las lenguas oficiales de la UE.
-- Modelo base: no esta ajustado para seguir instrucciones, por lo que su uso directo como chat es limitado; su valor principal es como punto de partida para fine-tuning.
-- Capacidad multilingue amplia: incluye lenguas de bajos recursos como ga (irlandes), mt (maltes), gl (gallego), hr (croata), sl (esloveno), lt (letón), lv (leton), et (estonio) y eu (no listado, pero el conjunto cubre las 24 oficiales de la UE).
-- Soporte de idiomas no europeos: arabe, chino, coreano, japones, hindi y ruso.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito en la informacion proporcionada; al ser un modelo base, estas capacidades no estan garantizadas.
-- Compatible con el ecosistema transformers y con el ecosistema GGUF (llama.cpp, Ollama, LM Studio, etc.).
+- Generación de texto y continuación de texto en 35 idiomas, con especial cobertura de las lenguas oficiales de la Unión Europea (las 24 lenguas oficiales de la UE están representadas en la lista de idiomas).
+- Modelo base sin ajuste por instrucciones: no está optimizado para seguir órdenes de forma nativa; requiere fine-tuning o prompting few-shot para tareas de instrucción.
+- Capacidades multilingües amplias: además de las lenguas europeas, incluye chino, ruso, coreano, japonés, árabe e hindi.
+- No se documenta soporte de tool calling ni function calling en la información proporcionada.
+- No se documenta soporte de agentes ni razonamiento multi-paso en la información proporcionada.
+- No se documenta modo thinking, visión ni audio en la información proporcionada.
+- Compatible con endpoints (tag endpoints_compatible) y con la librería transformers para el modelo base original.
 
 ## Casos de uso
 
-- Fine-tuning para dominios especializados en lenguas europeas: al ser un modelo base de 9B con licencia Apache 2.0, se puede ajustar con SFT o LoRA sobre corpus juridicos, medicos o administrativos en castellano, catalan, gallego o euskera, aprovechando su cobertura multilingue.
-- Traduccion automatica entre lenguas de la UE: el modelo puede servir como base para sistemas de traduccion neuronal, especialmente en pares de lenguas de bajos recursos donde otros modelos multilingues rinden peor.
-- Generacion aumentada por recuperacion (RAG) en entornos con recursos limitados: las cuantizaciones Q4_K_M (5,7 GB) permiten desplegar el modelo en una GPU de consumo de 8-12 GB, integrandolo en pipelines RAG con embeddings multilingues.
-- Investigacion en linguistica computacional: util para estudiar el comportamiento de modelos multilingues en lenguas minoritarias, analizar sesgos por idioma y evaluar tecnicas de cuantizacion con imatrix frente a cuantizacion estatica.
-- Prototipado de asistentes de texto en idiomas europeos: aunque no es un modelo de chat, puede adaptarse con un ajuste ligero para tareas de resumen, parafrasis o clasificacion de texto en multiples lenguas.
-- Despliegue en entornos sin GPU: las variantes Q2_K (3,7 GB) e IQ3_XXS (3,8 GB) permiten ejecutar el modelo en CPU con llama.cpp, util para pruebas de concepto y entornos de desarrollo sin acelerador hardware.
-- Generacion de datos sinteticos multilingues: el modelo puede utilizarse para producir corpus sinteticos en lenguas de bajos recursos, que luego sirvan para entrenar modelos mas pequenos o especializados.
+- Fine-tuning para lenguas europeas de bajos recursos: al partir de un modelo base con cobertura explícita de lenguas como gaélico irlandés, maltés, esloveno, eslovaco, letón, lituano o estonio, es adecuado para construir modelos ajustados por instrucciones en estos idiomas con datasets relativamente pequeños.
+- Traducción automática entre lenguas europeas: el modelo puede usarse como base para sistemas de traducción neuronal mediante fine-tuning supervisado, aprovechando su entrenamiento multilingüe y su licencia Apache 2.0 para uso comercial.
+- Generación de texto aumentada en aplicaciones locales: las cuantizaciones Q4_K_M (~5,7 GB) permiten ejecutar el modelo en una GPU de consumo de 8 GB de VRAM mediante llama.cpp u Ollama, habilitando asistentes de redacción o resumen en local sin conexión.
+- Investigación en multilingüismo: sirve como referencia abierta para estudiar sesgos, calidad y transferencia entre lenguas en modelos de ~9B parámetros entrenados con énfasis europeo.
+- Prototipado de sistemas de extracción de información: con fine-tuning ligero puede adaptarse a tareas de clasificación, etiquetado o extracción de entidades en documentos multilingües.
+- Despliegue en entornos con requisitos de soberanía de datos: al ser un modelo abierto con pesos descargables y licencia permisiva, puede ejecutarse en infraestructura propia para cumplir con normativas de protección de datos europeas.
+- Educación e investigación académica: el tamaño moderado (~9B) y las cuantizaciones ligeras permiten su uso en laboratorios con recursos limitados para experimentos de NLP multilingüe.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion: i1-Q2_K ~3,7 GB; i1-IQ3_XXS ~3,8 GB; i1-IQ3_M ~4,4 GB; i1-Q3_K_M ~4,7 GB; i1-IQ4_NL ~5,4 GB; i1-Q4_K_S ~5,4 GB; i1-Q4_K_M ~5,7 GB. A estas cifras hay que sumar el espacio para el contexto KV cache.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para cuantizaciones Q4; A100 o H100 para el modelo en precision completa o FP16 (aproximadamente 18 GB en FP16).
-- Cabe en GPU de consumo: si, las cuantizaciones Q4 caben en GPUs de 8 GB o mas, y las Q2/IQ3 en GPUs de 6 GB con contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF como llama-cpp-python o el endpoint compatible de Hugging Face. Para el modelo original en safetensors: transformers, vLLM, TGI.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia según cuantización: i1-IQ1_S ~2,4 GB; i1-IQ2_M ~3,4 GB; i1-IQ3_M ~4,4 GB; i1-Q4_K_M ~5,7 GB; i1-Q5_K_M ~6,6 GB; i1-Q6_K ~7,6 GB. A estas cifras hay que añadir el espacio para el contexto (KV cache), que depende de la longitud de contexto configurada.
+- GPU recomendadas: para cuantizaciones Q4_K_M o superiores, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB ofrecen margen suficiente. Para cuantizaciones IQ2 o IQ3, una RTX 3060 de 8 GB o RTX 4060 de 8 GB pueden ser suficientes.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más de VRAM usando cuantizaciones IQ2/IQ3/Q4; las cuantizaciones Q5 y Q6 requieren 8-12 GB según el contexto.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base original puede desplegarse con transformers, y potencialmente con vLLM o TGI si se convierte a safetensors (no confirmado en la información disponible).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| EuroLLM1.5-9B-Base (esta ficha) | 9,15B | no disponible | 35 | Apache 2.0 | GGUF, safetensors |
-| Llama 3.1 8B | 8B | 128K (segun documentacion publica de Meta) | ~8 principales | Llama 3.1 Community License | safetensors, GGUF |
-| Mistral 7B v0.3 | 7,2B | 32K (segun documentacion publica de Mistral) | principalmente en, fr, de, es, it | Apache 2.0 | safetensors, GGUF |
-| Gemma 2 9B | 9B | 8K (segun documentacion publica de Google) | multilingue amplio | Gemma Terms of Use | safetensors, GGUF |
+| EuroLLM1.5-9B-Base (esta ficha, cuantizado) | ~9,15B | no disponible | 35 | Apache 2.0 | GGUF, safetensors |
+| Mistral 7B Base | ~7,2B | 8k (típico) | principalmente inglés | Apache 2.0 | safetensors, GGUF |
+| Llama 3.1 8B Base | ~8B | 128k | principalmente inglés y multilingüe limitado | Llama 3.1 Community License | safetensors, GGUF |
+| Salamandra 7B | ~7B | no disponible | 35+ europeos | Apache 2.0 | safetensors, GGUF |
 
-La comparativa se limita a datos publicos de los modelos alternativos; no se dispone de resultados de benchmarks de EuroLLM1.5-9B-Base en la informacion proporcionada, por lo que no es posible comparar rendimiento numerico. La ventaja diferencial de EuroLLM es su cobertura explicita de las 24 lenguas oficiales de la UE y su licencia Apache 2.0, mas permisiva que la de Llama 3.1 o Gemma 2.
+La comparativa se ofrece como referencia de categoría; los datos de contexto y rendimiento de los modelos alternativos no se han verificado en la información proporcionada y pueden variar. La principal ventaja diferencial de EuroLLM1.5-9B-Base es su cobertura explícita de lenguas europeas de bajos recursos combinada con licencia Apache 2.0, frente a modelos como Llama 3.1 8B cuya licencia comunitaria impone restricciones adicionales.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin alineamiento: no sigue instrucciones de forma fiable y puede generar contenido inapropiado; requiere fine-tuning antes de usarse en produccion como asistente.
-- Riesgo de alucinacion: al ser un modelo base, la generacion no esta calibrada para tareas de respuesta factual; puede inventar datos con facilidad.
-- Sesgos conocidos: no se documentan en la informacion proporcionada, pero al entrenarse con corpus web multilingues es esperable que herede sesgos de genero, culturales y linguisticos; la cobertura desigual entre lenguas puede amplificar estos sesgos en idiomas de bajos recursos.
-- Limitaciones de contexto: la longitud de contexto no esta documentada en la informacion disponible, lo que impide planificar su uso en tareas de contexto largo sin verificacion previa.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base original y de las herramientas de cuantizacion utilizadas.
-- Caveat de produccion: las cuantizaciones de baja precision (Q2_K, IQ3_XXS) degradan la calidad; para produccion se recomienda al menos Q4_K_M o IQ4_XS.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica poca validacion comunitaria de estas cuantizaciones concretas.
+- Al ser un modelo base, no está ajustado para seguir instrucciones; su uso directo en tareas de instrucción producirá resultados deficientes sin fine-tuning previo.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de factualidad en la información disponible.
+- Sesgos conocidos: no documentados en la información proporcionada; es esperable que el modelo refleje sesgos presentes en sus datos de entrenamiento, pero no se detallan.
+- Limitaciones de contexto: la longitud máxima de contexto no está disponible, lo que impide planificar aplicaciones que requieran ventanas largas sin verificación previa.
+- Calidad variable según cuantización: las cuantizaciones IQ1 e IQ2 (2,4-3,4 GB) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "mostly desperate". Para producción se recomienda Q4_K_M o superior.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero conviene verificar la licencia del modelo base original (utter-project/EuroLLM1.5-9B-Base) por si hubiera condiciones adicionales no reflejadas en la información disponible.
+- El repositorio tiene un tamaño de 106,3 GB, lo que implica descargas parciales si solo se necesita una cuantización concreta.
+- No se documentan capacidades de tool calling, agentes ni modo thinking, por lo que no debe asumirse su disponibilidad en producción.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/EuroLLM1.5-9B-Base-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/EuroLLM1.5-9B-Base-i1-GGUF
 - Modelo base original: https://huggingface.co/utter-project/EuroLLM1.5-9B-Base
-- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/EuroLLM1.5-9B-Base-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#EuroLLM1.5-9B-Base-i1-GGUF
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Discusion sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/EuroLLM1.5-9B-Base-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#EuroLLM1.5-9B-Base-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Web de nethype GmbH (patrocinador del autor): https://www.nethype.de/

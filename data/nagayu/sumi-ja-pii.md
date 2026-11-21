@@ -2,104 +2,104 @@
 
 ## Resumen
 
-Sumi es un modelo de clasificación de tokens para la detección de información personal identificable (PII) en texto japonés, desarrollado por NagaYu. Con solo 132 millones de parámetros, está diseñado para resolver las confusiones típicas que cometen las herramientas orientadas al inglés cuando procesan japonés: apellidos que también son nombres comunes (森, 林, 泉, 大和, 青木), homógrafos de lugares y empresas, límites de honoríficos, y cadenas de dígitos que parecen números de teléfono pero no lo son. El modelo se complementa con una capa de reglas para tipos determinados por formato y un mecanismo de enmascaramiento reversible que permite enviar texto anonimizado a un LLM externo y restaurar la respuesta.
+Sumi (墨) es un clasificador de tokens para la detección de información personal identificable (PII) en japonés, desarrollado por NagaYu. Se construye sobre `sbintuitions/modernbert-ja-130m` y está afinado específicamente para resolver las confusiones típicas de las herramientas diseñadas para inglés: apellidos que son también sustantivos comunes (森, 林, 泉, 大和, 青木), homógrafos de lugares y empresas, límites de honoríficos y cadenas de dígitos que parecen números de teléfono sin serlo. Con 132 millones de parámetros, está pensado para ejecutarse en CPU.
 
-La relevancia actual de Sumi reside en su capacidad para ejecutarse íntegramente en CPU con un consumo de memoria inferior a 1,2 GB, ofreciendo un rendimiento de 22 documentos por segundo en su versión ONNX INT8, lo que lo hace viable para pipelines de anonimización en entornos con recursos limitados. Está basado en `sbintuitions/modernbert-ja-130m` (licencia MIT) y el modelo final se distribuye bajo Apache 2.0. Incluye pesos en safetensors, ONNX (fp32 e INT8), MLX para Apple Silicon y una exportación GGUF no ejecutable.
+El modelo forma parte de un paquete mayor (`sumi`) que combina el clasificador neuronal con una capa de reglas para tipos determinados por formato, un calibrador y una ruta de enmascaramiento reversible. Esto permite enmascarar texto antes de enviarlo a un LLM externo y restaurar la respuesta posteriormente, con un guardián de egreso (`EgressGuard`) que bloquea el envío de valores originales.
 
-## Especificaciones tecnicas
+Su relevancia actual reside en la combinación de tamaño reducido, licencia Apache 2.0, exportación ONNX INT8 de 133 MB e integración directa con Presidio en tres líneas, sin dependencia de spaCy ni GiNZA. Es una pieza de infraestructura de privacidad, no un modelo generativo: su función es reducir el riesgo de fuga de datos personales en pipelines que procesan texto japonés.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | ModernBertForTokenClassification (encoder transformer) |
-| Parametros totales | 132M (0,13B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (entrenado con max length 256) |
-| Tipos de cuantizacion | fp32, ONNX INT8 dinamico, MLX, GGUF (solo pesos, no ejecutable) |
-| Idiomas soportados | japones (ja) |
+| Arquitectura | ModernBERT (encoder transformer) para clasificación de tokens |
+| Parámetros totales | 132.413.973 (0,13B) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | ONNX INT8 (133 MB frente a 530 MB en fp32); pesos fp32 en safetensors |
+| Idiomas soportados | japonés (ja) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, ONNX, MLX, GGUF |
+| Formato de pesos | safetensors, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-Sumi es un modelo de codificador transformer basado en ModernBERT japonés de 130M de parámetros, adaptado para clasificación de tokens con 21 etiquetas BIO distribuidas en 10 tipos de PII: nombre, dirección, teléfono, email, fecha de nacimiento, cuenta bancaria, tarjeta de crédito, My Number, ID de miembro y código postal. El entrenamiento se realizó sobre 12 000 documentos sintéticos con 107 000 spans dorados, durante 2 épocas, con batch de 32 y longitud máxima de secuencia de 256 tokens. Se usó AdamW con warmup y decay lineal, y clipping de gradiente en 1,0. El checkpoint final se seleccionó por F1 de coincidencia exacta de spans (no por token). La probabilidad de un span se calcula como el mínimo de las probabilidades de sus tokens constituyentes.
+El modelo es un `ModernBertForTokenClassification` estándar, derivado de `sbintuitions/modernbert-ja-130m` (MIT). La cabeza de clasificación produce 21 clases BIO sobre 10 tipos de PII: `NAME`, `ADDRESS`, `PHONE`, `EMAIL`, `DOB`, `BANK_ACCOUNT`, `CREDIT_CARD`, `MYNUMBER`, `MEMBER_ID` y `POSTAL_CODE`.
 
-La innovación principal no está solo en el modelo, sino en el sistema completo: una capa de reglas para tipos determinados por formato (teléfonos, emails, códigos postales), un calibrador de temperatura ajustado sobre spans de validación, un refinamiento de límites de entidades, y un enmascarador reversible que mantiene el mapeo localmente. El modelo también incorpora un mecanismo de bucle cerrado con pesos de negativos que registra qué confusiones sigue fallando.
+El entrenamiento se realizó íntegramente con datos sintéticos, generados a partir del corpus `NagaYu/sumi-ja-pii-corpus`. No se empleó ningún documento real ni dato de personas reales en ninguna fase. El proceso incluye un bucle cerrado de negativos duros: tras el entrenamiento se cuentan los falsos positivos por tipo de confusión y esos recuentos reajustan la distribución de generación del siguiente lote mediante `HardNegativeGenerator.reweight_from_errors`. El checkpoint publicado corresponde a la primera ronda, entrenada con negativos de peso uniforme; los pesos generados para la siguiente ronda se publican en `negatives_weights.json` (por ejemplo, `company_as_person` 0,146 y `date_like_nondob` 0,146). No se especifica en la información disponible el volumen de tokens de entrenamiento ni el uso de RLHF o DPO.
+
+Entre las innovaciones destacables: la capa de reglas para tipos determinados por formato, el calibrador de puntuaciones, el refinamiento de límites de span, el enmascaramiento reversible con mapa local escrito con permisos 0600 y el `EgressGuard`, que bloquea (no registra) cualquier envío que contenga un valor original, ya sea en crudo, normalizado NFKC o solo con dígitos, para valores de tres o más caracteres.
 
 ## Capacidades
 
-- Detección de 10 tipos de PII en japonés mediante etiquetado BIO a nivel de token.
-- Reconocimiento de apellidos japoneses que son homógrafos de nombres comunes, un punto débil de las herramientas entrenadas principalmente con datos en inglés.
-- Distinción entre cadenas de dígitos que parecen números de teléfono y números reales, gracias a la capa de reglas y calibración.
-- Integración con Presidio mediante un plugin de registro (`sumi.presidio_plugin.register`).
-- Enmascaramiento reversible: el texto anonimizado puede enviarse a un LLM externo y la respuesta puede restaurarse con el mapeo local.
-- Ejecución en CPU con dos formatos de inferencia: PyTorch fp32 y ONNX INT8.
-- Salida calibrada con temperatura, lo que permite ajustar umbrales de decisión según el caso de uso.
-- Disponible en formato MLX para Apple Silicon y GGUF (aunque este último no es ejecutable directamente).
+- Detección de entidades PII en japonés sobre 10 tipos: nombres, direcciones, teléfonos, correos, fechas de nacimiento, cuentas bancarias, tarjetas de crédito, My Number, identificadores de miembro y códigos postales.
+- Distinción de apellidos homógrafos de sustantivos comunes y de topónimos o nombres de empresa.
+- Delimitación correcta de límites de honoríficos (様, さん, etc.).
+- Discriminación de cadenas de dígitos que imitan formatos de teléfono o tarjeta sin serlo.
+- Enmascaramiento reversible: sustitución por marcadores del tipo `<NAME_1>` y restauración posterior de la respuesta del LLM.
+- Integración con Presidio mediante `register(registry)`, sin spaCy ni GiNZA.
+- Registro de validez de dígito de control en `meta["checksum_valid"]` sin que este condicione la detección.
+- Exportación ONNX INT8 con alta concordancia respecto a fp32 (1,0000 en la frase de verificación y 0,9964 sobre 88.106 tokens de 450 documentos).
+- No soporta generación de texto, tool calling, agentes, visión ni audio: es exclusivamente un clasificador de tokens.
 
 ## Casos de uso
 
-- Anonimización de documentos antes de enviarlos a un LLM externo: Sumi detecta y enmascara PII con marcadores reversibles, permitiendo que el texto procesado por el LLM se restaure después sin exponer datos personales.
-- Cumplimiento de protección de datos en empresas japonesas: el modelo puede integrarse en pipelines de gestión documental para detectar nombres, direcciones y números de cuenta antes de compartir archivos con terceros.
-- Filtrado de datos en logs de aplicaciones: procesamiento en tiempo real de registros de servidor para eliminar direcciones de correo, números de teléfono y códigos postales antes de su almacenamiento o análisis.
-- Atención al cliente con soporte en japonés: clasificación de mensajes entrantes para identificar y redactar automáticamente datos sensibles antes de que un agente humano o un chatbot los procese.
-- Preparación de datasets de entrenamiento: limpieza de corpus en japonés que contengan PII, evitando la fuga de información personal en modelos entrenados posteriormente.
-- Auditoría de privacidad en bases de datos: análisis de columnas de texto libre (por ejemplo, campos de observaciones) para localizar números de tarjeta, My Number o cuentas bancarias que no deberían estar almacenadas en claro.
-- Despliegue en entornos con recursos limitados: al funcionar en CPU con menos de 1,2 GB de RAM, es adecuado para dispositivos edge o servidores sin GPU dedicada.
+- Enmascaramiento previo a LLM externo: el detector identifica PII en el prompt, la sustituye por marcadores y el `EgressGuard` bloquea cualquier envío que contenga valores originales; tras la respuesta, el `ReversibleMasker` restaura el texto. Adecuado por su bajo coste en CPU y su ruta de ida y vuelta verificada.
+- Cumplimiento de privacidad en pipelines documentales japoneses: procesamiento por lotes de correos, contratos o formularios para localizar y anonimizar datos personales antes de almacenarlos o enviarlos a terceros.
+- Integración en Presidio para equipos que ya usan este marco: tres líneas de registro permiten añadir reconocimiento de japonés sin desplegar spaCy ni GiNZA.
+- Redacción de logs y trazas: filtrado de nombres, teléfonos y correos en registros de aplicaciones antes de su exportación a sistemas de observabilidad.
+- Preprocesado de datasets para entrenamiento: detección y eliminación de PII en corpus japoneses antes de publicarlos o reutilizarlos.
+- Despliegue en entornos con recursos limitados: al ejecutarse en CPU con una exportación ONNX de 133 MB, encaja en contenedores pequeños, funciones serverless o equipos de sobremesa sin GPU.
+- Atención al cliente con datos sensibles: anonimización de conversaciones multi-turno antes de su análisis o envío a modelos generativos externos.
 
 ## Benchmarks y rendimiento
 
-La model card publica una evaluación comparativa sobre un conjunto de generalización de 100 documentos positivos y 100 negativos, con PII sintética insertada en prosa de Wikipedia, estatutos y literatura. Los resultados de F1 micro y tasa de falsos positivos (FP rate) son:
+La model card describe una evaluación comparativa contra cuatro alternativas sobre documentos idénticos, misma CPU y mismo número de hilos, con cada condición en su propio proceso, incluyendo Presidio con configuración inglesa por defecto (condición A). Sin embargo, la información proporcionada se interrumpe antes de presentar los resultados numéricos de esa comparación.
 
-| Condicion | Name | Address | Phone | Birth date | Email | Bank acct | My Number | Member ID | micro F1 | FP rate |
-|---|---|---|---|---|---|---|---|---|---|---|
-| (A) Presidio, configuracion por defecto | 0,054 | 0,000 | 0,917 | 0,053 | 0,192 | 0,000 | 0,000 | 0,000 | 0,176 | 0,370 |
-| (B) Presidio + GiNZA | 0,784 | 0,077 | 0,833 | 0,789 | 0,231 | 0,000 | 0,000 | 0,024 | 0,245 | 0,830 |
-| (C) Qwen3-4B-Instruct Q4_K_M (llama.cpp, CPU) | 0,541 | 0,897 | 0,917 | 0,947 | 1,000 | 0,683 | 0,676 | 0,659 | 0,818 | 0,080 |
-| (D) Sumi fp32 | 0,811 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 | 0,978 | 0,000 |
-| (E) Sumi INT8 | 0,811 | 0,923 | 1,000 | 0,895 | 1,000 | 1,000 | 1,000 | 1,000 | 0,953 | 0,060 |
+Los únicos datos cuantitativos disponibles son los de la cuantización ONNX INT8:
 
-Rendimiento en CPU (misma máquina, mismo número de hilos):
+| Métrica | Valor |
+|---|---|
+| Concordancia argmax fp32 vs INT8 (frase de verificación) | 1,0000 |
+| Concordancia argmax fp32 vs INT8 (88.106 tokens, 450 documentos) | 0,9964 |
+| Concordancia en tokens etiquetados como PII por cualquiera de los dos | 0,9821 |
+| Documentos con etiquetado idéntico | 273/450 |
 
-| Condicion | Tamano | docs/s | ms/doc | Pico RSS (MB) | vs (C) |
-|---|---|---|---|---|---|
-| (A) Presidio, por defecto | 0,01B | 253,93 | 4 | 1231 | 1825× |
-| (B) Presidio + GiNZA | 0,05B | 6,05 | 165 | 1414 | 43× |
-| (C) LLM local 4B (Q4) | 4,00B | 0,14 | 7187 | 5974 | baseline |
-| (D) Sumi fp32 | 0,13B | 12,05 | 83 | 1192 | 87× |
-| (E) Sumi INT8 | 0,13B | 22,54 | 44 | 1000 | 162× |
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de precisión, recall o F1 a nivel de span para la tarea de detección de PII.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: Sumi fp32 requiere aproximadamente 1,2 GB de pico de RAM; la versión ONNX INT8 reduce el consumo a 1,0 GB.
-- GPU: no es necesaria; el modelo está diseñado para ejecutarse eficientemente en CPU.
-- Compatibilidad con hardware de consumo: cualquier procesador moderno con soporte para operaciones de coma flotante puede ejecutar la versión fp32; la versión INT8 requiere compatibilidad con instrucciones vectoriales típicas de CPUs x86-64 y ARM.
-- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, MLX para Apple Silicon, y el paquete `sumi` que integra la capa de reglas y calibración. No se menciona soporte para vLLM, TGI u Ollama.
-- Latencia: 44 ms por documento en la versión INT8 y 83 ms en fp32, según la evaluación publicada.
+- VRAM estimada: no requiere GPU; el modelo está diseñado para inferencia en CPU.
+- GPU recomendadas: no aplica. Cualquier GPU con suficiente memoria podría ejecutarlo, pero el diseño y la evaluación se orientan a CPU.
+- Cabe en GPU de consumo: sí, con 132M de parámetros (aproximadamente 530 MB en fp32 y 133 MB en ONNX INT8), aunque no es el escenario objetivo.
+- Opciones de despliegue: paquete `sumi` (con extras `presidio` y `onnx`), `transformers` con `AutoModelForTokenClassification`, ONNX Runtime y Presidio mediante `sumi.presidio_plugin`. También se distribuyen pesos en formato GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada. La evaluación se realizó en CPU con un número de hilos fijo, pero no se publican cifras de latencia ni de documentos por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | F1 micro (generalizacion) | FP rate | Licencia | Despliegue |
-|---|---|---|---|---|---|---|
-| Sumi (fp32) | 132M | no disponible | 0,978 | 0,000 | Apache 2.0 | CPU, ONNX, MLX |
-| Presidio (configuracion por defecto) | ~10M | n/a | 0,176 | 0,370 | MIT | CPU |
-| Presidio + GiNZA | ~50M | n/a | 0,245 | 0,830 | MIT / LGPL | CPU |
-| Qwen3-4B-Instruct (Q4_K_M) | 4B | 32K | 0,818 | 0,080 | Apache 2.0 | CPU/GPU, llama.cpp |
+La model card menciona una comparación contra cuatro alternativas en documentos idénticos, pero la información disponible solo identifica la condición (A): Presidio con configuración inglesa por defecto. No se detallan las otras tres alternativas ni sus resultados.
 
-Sumi supera claramente a las alternativas basadas en Presidio y a un LLM local de 4B en F1 micro, con una tasa de falsos positivos nula en fp32 y un rendimiento entre 87 y 162 veces superior al del LLM de 4B en CPU. Sin embargo, el LLM de 4B ofrece mejor F1 en nombres (0,541 vs 0,811) y en direcciones (0,897 vs 1,000), aunque con una FP rate del 8%.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Sumi (NagaYu/sumi-ja-pii) | 132M | no disponible | Apache 2.0 | Clasificador de tokens PII en japonés sobre ModernBERT |
+| Presidio (config. inglesa por defecto) | no aplica | no aplica | MIT (Presidio) | Reconocimiento basado en reglas y modelos para inglés |
+| sbintuitions/modernbert-ja-130m | 130M | no disponible | MIT | Modelo base japonés sin ajuste para PII |
+| Alternativas 2 a 4 de la evaluación | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo no garantiza cumplimiento legal o normativo; es una herramienta para reducir el riesgo de fuga de datos, no un detector completo. Se advierte explícitamente en la model card que pueden producirse omisiones.
-- Todos los datos de entrenamiento y evaluación son sintéticos; no se utilizó información personal real en ningún momento del proyecto. Esto puede limitar la generalización a ciertos formatos de PII del mundo real.
-- La exportación GGUF incluida contiene solo los pesos y no es ejecutable; no puede usarse directamente con llama.cpp u otros runners.
-- El modelo está entrenado exclusivamente para japonés; no es aplicable a otros idiomas sin reentrenamiento.
-- La longitud máxima de secuencia en el entrenamiento fue de 256 tokens; no se especifica si el modelo soporta contextos más largos.
-- El uso directo del modelo transformers sin la capa de reglas ni la calibración reduce significativamente la precisión, según advierte el autor.
-- La tasa de falsos positivos en la versión INT8 es del 6% en documentos duros negativos (sin PII), lo que puede requerir ajuste de umbrales según el caso de uso.
+- Todos los datos de entrenamiento y evaluación son sintéticos; las métricas publicadas son una cota superior medida en condiciones sintéticas y no se validarán sobre documentos reales por decisión de diseño. Es obligatorio validar sobre documentos propios antes de desplegar.
+- El modelo no garantiza cumplimiento legal ni regulatorio; reduce el riesgo de fuga de datos, pero no es un detector completo y producirá omisiones.
+- El umbral de decisión y el caso de uso quedan a cargo del implementador.
+- El `EgressGuard` exime por diseño los valores de uno y dos caracteres, entre los que se cuentan muchos apellidos japoneses, porque colisionan con palabras ordinarias; el enmascaramiento los sustituye, pero no hay segunda línea de defensa para ellos.
+- La cuantización INT8 no es sin pérdida: la diferencia entre las condiciones (D) y (E) de la evaluación refleja su efecto a nivel de span.
+- Solo soporta japonés; no hay capacidades multilingües declaradas.
+- Al usar `transformers` directamente se pierden la capa de reglas, la calibración y el refinamiento de límites, de donde procede buena parte de la precisión.
+- El mapa de enmascaramiento se escribe con permisos 0600 y no debe salir de la máquina; su gestión incorrecta compromete la reversibilidad y la privacidad.
+- La validez de los dígitos de control no condiciona la detección: solo se registra en `meta["checksum_valid"]`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/NagaYu/sumi-ja-pii
-- Repositorio de código, benchmarks y pipeline de entrenamiento: https://github.com/NagaYu/sumi
-- Dataset de entrenamiento: https://huggingface.co/datasets/NagaYu/sumi-ja-pii-corpus
+- Dataset: https://huggingface.co/datasets/NagaYu/sumi-ja-pii-corpus
+- Código, benchmarks y pipeline de entrenamiento: https://github.com/NagaYu/sumi
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-130m

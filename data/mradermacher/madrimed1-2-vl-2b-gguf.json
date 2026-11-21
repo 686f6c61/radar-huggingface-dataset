@@ -75,31 +75,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Pencarian Film - JAVINDO",
-      "url": "https://javindo.dev/search",
-      "snippet": "Cari film favorit Anda. Streaming gratis dengan subtitle Indonesia."
-    },
-    {
-      "title": "javindo.co.id",
-      "url": "https://javindo.co.id/",
-      "snippet": ""
-    },
-    {
-      "title": "Javindo - docs.verbix.com",
-      "url": "https://docs.verbix.com/Languages/DutchCreoleJavindo",
-      "snippet": "Sep 27, 2024 · Introduction Javindo, also known by the pejorative name Krontjong, was a Dutch-based creole language spoken on …"
-    },
-    {
-      "title": "Javindo - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Javindo",
-      "snippet": "Javindo, also known by the pejorative name Krontjong, is a Dutch-based creole language spoken on Java, Indonesia, such as …"
-    },
-    {
-      "title": "JAVINDO (@javind0) • Instagram photos and videos",
-      "url": "https://www.instagram.com/javind0/",
-      "snippet": "5,995 Followers, 14 Following, 18 Posts - JAVINDO (@javind0) on Instagram: \"\""
-    }
-  ]
+  "sources": []
 }

@@ -2,128 +2,115 @@
 
 ## Resumen
 
-Qwen3.5-4B Text-to-SQL es un ajuste fino supervisado del modelo multimodal Qwen/Qwen3.5-4B, publicado por el desarrollador independiente EuricoGVP. Su proposito es transformar una pregunta en lenguaje natural, junto con un esquema de base de datos SQLite y una pista opcional, en una unica consulta SQL ejecutable. El modelo resuelve el problema clasico de text-to-SQL en entornos reales, donde los esquemas son extensos, los nombres de columnas requieren comillas y las consultas anidadas son frecuentes.
+Qwen3.5-4B Text-to-SQL es un ajuste fino del modelo Qwen/Qwen3.5-4B, desarrollado por EuricoGVP, especializado en la generacion de una unica consulta SQLite a partir de un esquema de base de datos, una pista opcional y una pregunta en lenguaje natural. El modelo parte de una arquitectura causal con codificador de vision y 4.539.265.536 parametros totales, y se distribuye con licencia Apache-2.0 en formato Transformers (safetensors) con el adaptador LoRA ya fusionado en los pesos.
 
-El ajuste se realizo con LoRA (rango y alpha de 16) mediante Unsloth, fusionando despues el adaptador en los pesos completos, de modo que el artefacto publicado es un modelo Transformers estandar compatible con vLLM y con PEFT innecesario. El modelo conserva la arquitectura hibrida del Qwen3.5-4B original, con 4.539 millones de parametros, 32 capas y una dimension oculta de 2560, e incorpora un codificador de vision heredado del modelo base que no fue modificado durante el entrenamiento.
+El problema que resuelve es la traduccion texto-a-SQL con alta precision de ejecucion, un cuello de botella habitual en asistentes de analitica y herramientas de consulta de datos. Frente al modelo base, el ajuste eleva la precision de ejecucion de 46,22 a 54,76 por ciento en BIRD dev con esquema plano y de 77,08 a 81,82 por ciento en Spider dev, con reduccion notable de errores de ejecucion (de 246 a 80 en BIRD plano).
 
-La relevancia de esta ficha radica en que demuestra que un ajuste de una sola epoca sobre 17.132 ejemplos puede elevar la exactitud de ejecucion en BIRD dev de 46,22 a 54,76 (esquema plano) y en Spider dev de 77,08 a 81,82, con errores de ejecucion reducidos de 246 a 80 en BIRD. Es un caso practico de especializacion de bajo coste sobre un modelo de 4B con licencia Apache-2.0.
+Es relevante ahora porque demuestra que un ajuste LoRA de una sola epoca sobre 17.132 ejemplos, con rango 16 y entrenamiento en bf16, puede superar de forma estadisticamente significativa (p de McNemar inferior a 1e-04) a un modelo base de 4B en una tarea estructurada, manteniendo un tamano de despliegue manejable de aproximadamente 9 GB de pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal hibrido con encoder de vision (Gated DeltaNet + Gated Attention) |
-| Parametros totales | 4.539.265.536 (4B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8.192 tokens evaluados; 4.096 tokens de longitud maxima de entrenamiento |
-| Tipos de cuantizacion | No disponible (pesos publicados en bf16; no se documentan GGUF ni otras cuantizaciones) |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer causal con codificador de vision; layout 8 x (3 x (Gated DeltaNet -> FFN) -> 1 x (Gated Attention -> FFN)) |
+| Parametros totales | 4.539.265.536 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens evaluados; 4.096 tokens de entrenamiento maximo |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (Transformers; adaptador LoRA fusionado) |
+| Formato de pesos | safetensors (Transformers); compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-4B emplea una arquitectura hibrida de 32 capas con disposicion 8 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)), dimension oculta de 2560 y un codificador de vision que en este ajuste permanece congelado. El ajuste fino se aplico exclusivamente al modelo de lenguaje mediante LoRA con rango 16 y alpha 16, una epoca, precision bf16 y una longitud maxima de entrenamiento de 4096 tokens. El adaptador resultante se fusiono en los pesos, por lo que el repositorio contiene un modelo denso listo para inferencia sin PEFT.
+El modelo es un transformer causal con codificador de vision, con dimension oculta de 2560 y 32 capas. El layout intercala bloques de Gated DeltaNet y Gated Attention en un patron de 8 grupos de 3 bloques DeltaNet mas 1 bloque de atencion, una estructura hibrida orientada a eficiencia en secuencias largas. El ajuste fino se realizo con LoRA de rango 16 y alpha 16 mediante Unsloth, durante 1 epoca en precision bf16, y se aplico unicamente al modelo de lenguaje; el codificador de vision no se modifico. El adaptador se fusiono en los pesos finales, por lo que no se requiere PEFT para la inferencia.
 
-El conjunto de entrenamiento suma 17.132 ejemplos procedentes de cuatro fuentes: BIRD train (5.980 ejemplos, CC BY-SA 4.0), Spider train sin la base `formula_1` (8.097, CC BY-SA 4.0), un subconjunto de SynSQL-2.5M con contexto largo y nombres que requieren comillas (2.105, Apache-2.0) y un subconjunto de llmsql-benchmark con columnas que requieren comillas (950, MIT). No se documenta uso de RLHF ni DPO; el entrenamiento es supervisado sobre pares pregunta-esquema-SQL. La innovacion destacable es la combinacion de datos sinteticos con contexto largo y ejemplos de citado de identificadores, orientada a reducir errores de ejecucion en esquemas reales.
+El conjunto de entrenamiento suma 17.132 ejemplos: 5.980 de BIRD train (CC BY-SA 4.0), 8.097 de Spider train excluyendo `formula_1` por solapamiento con BIRD dev (CC BY-SA 4.0), 2.105 de un subconjunto de SynSQL-2.5M con contexto largo y nombres que requieren comillas (Apache-2.0) y 950 de un subconjunto de llmsql-benchmark con columnas que requieren comillas (MIT). No se indica en la informacion disponible el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de consultas SQLite a partir de esquema, pregunta y pista opcional.
-- Manejo de esquemas con descripciones de columnas (variante `desc`) y sin ellas (variante `plain`).
-- Generacion de SQL con identificadores entre comillas cuando los nombres de columnas o tablas lo requieren.
-- Consultas anidadas y de dificultad alta (Spider extra: 59,64 EX; BIRD challenging: 38,62 EX en plano).
-- Contexto largo para esquemas extensos, con evaluacion a 8.192 tokens.
-- Capacidad multimodal heredada del modelo base (image-text-to-text), aunque el ajuste se centra en texto.
-- Generacion conversacional y de texto general, heredada del modelo base.
-- No se documenta soporte explicito de tool calling ni de razonamiento multi-paso orientado a agentes.
+- Generacion de una unica consulta SQLite a partir de esquema, pista opcional y pregunta en lenguaje natural.
+- Manejo de esquemas planos y de esquemas con descripciones de columnas, con mejora de precision en ambos casos.
+- Soporte de nombres de columna y contexto largo que requieren entrecomillado, gracias a los subconjuntos de SynSQL-2.5M y llmsql-benchmark.
+- Razonamiento sobre preguntas de dificultad simple, moderada y desafiante en BIRD y Spider.
+- Capacidad de vision heredada del modelo base (codificador de vision intacto), aunque la tarea objetivo es texto-a-SQL.
+- Soporte multilingue limitado: la model card declara unicamente ingles.
+- No se documenta soporte de tool calling, function calling ni modo de agente multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente de consultas para analistas de datos: el modelo traduce preguntas de negocio a SQLite sobre un esquema dado, reduciendo el tiempo de escritura manual de consultas en equipos con bases de datos de tamano medio.
-- Integracion en herramientas de BI y paneles internos: un cuadro de texto libre permite al usuario formular preguntas y el modelo devuelve la consulta ejecutable, con la ventaja de que su contexto de 8.192 tokens admite esquemas con decenas de tablas.
-- Generacion de SQL en pipelines de datos: el modelo puede producir consultas de transformacion o extraccion que se validan y ejecutan en un paso posterior, aprovechando la baja tasa de errores de ejecucion observada en BIRD (80 frente a 246 del base).
-- Educacion y formacion en SQL: sirve como generador de ejemplos y de soluciones de referencia sobre esquemas didacticos, con la posibilidad de comparar la consulta del alumno con la generada.
-- Prototipado rapido de interfaces de lenguaje natural sobre bases de datos: al ser un modelo de 4B con licencia Apache-2.0, puede desplegarse en infraestructura propia para validar productos de consulta conversacional antes de invertir en modelos mayores.
-- Preprocesamiento en pipelines de agentes: el modelo actua como componente especializado que convierte intenciones en SQL, delegando la ejecucion y la validacion a otras capas del sistema.
-- Migracion y auditoria de consultas: dado un esquema y una pregunta, el modelo genera la consulta esperada, lo que facilita comparar implementaciones existentes y detectar discrepancias.
+- Asistente de analitica para bases de datos SQLite: el modelo traduce preguntas de negocio a consultas ejecutables, con 54,76 por ciento de precision de ejecucion en BIRD dev con esquema plano, adecuado para entornos donde el esquema es estable y conocido.
+- Generacion de consultas con descripciones de columnas: en almacenes de datos con metadatos documentados, el modelo alcanza 56,19 por ciento en BIRD dev con descripciones, lo que lo hace util para equipos que mantienen diccionarios de datos.
+- Herramienta interna de soporte a analistas: integrado en un cuaderno o interfaz de consulta, reduce el tiempo de escritura de SQL para preguntas de dificultad moderada (47,20 por ciento con esquema plano) y desafiante (38,62 por ciento).
+- Evaluacion automatizada de esquemas: el modelo puede generar consultas candidatas para validar la calidad de un esquema o detectar columnas mal documentadas, aprovechando su capacidad de trabajar con y sin descripciones.
+- Prototipado rapido de interfaces de consulta en lenguaje natural: con aproximadamente 9 GB de pesos, se puede desplegar en una GPU consumer de gama alta para demos y pruebas de concepto sin infraestructura dedicada.
+- Pipeline de generacion de SQL en entornos de bajo coste: al ser un modelo de 4B con licencia Apache-2.0, permite uso comercial y despliegue en vLLM o Transformers en hardware modesto, con contexto evaluado de 8.192 tokens.
+- Filtrado previo en sistemas de recuperacion de datos: el modelo puede generar consultas SQLite para acotar resultados antes de un paso de razonamiento posterior, reduciendo errores de ejecucion (80 frente a 246 del modelo base en BIRD plano).
 
 ## Benchmarks y rendimiento
 
-Resultados de exactitud de ejecucion (EX) en porcentaje, declarados por el autor y no verificados de forma independiente.
+Resultados declarados por el autor, no verificados de forma independiente. Precision de ejecucion (EX) en porcentaje.
 
-| Benchmark | Base | Este modelo | Solo este correcto | Solo base correcto | McNemar p |
+| Benchmark | Base | Este modelo | Solo este modelo correcto | Solo base correcto | p de McNemar |
 |---|---:|---:|---:|---:|---:|
 | BIRD dev, plano | 46,22 | 54,76 | 230 | 99 | 3,75e-13 |
-| BIRD dev, desc | 46,28 | 56,19 | 245 | 93 | 6,34e-17 |
+| BIRD dev, descripciones | 46,28 | 56,19 | 245 | 93 | 6,34e-17 |
 | Spider dev | 77,08 | 81,82 | 95 | 46 | 4,49e-05 |
 
-BIRD dev (1.534 preguntas, 11 bases de datos):
+Desglose por dificultad en BIRD dev:
 
-| Metrica | Base plano | Modelo plano | Base desc | Modelo desc |
+| Metrica | Base plano | Este modelo plano | Base desc | Este modelo desc |
 |---|---:|---:|---:|---:|
 | Simple | 54,49 | 61,08 | 53,19 | 62,27 |
 | Moderate | 35,56 | 47,20 | 37,93 | 48,28 |
 | Challenging | 27,59 | 38,62 | 28,97 | 42,76 |
 | Errores de ejecucion | 246 | 80 | 223 | 76 |
 
-Spider dev (1.034 preguntas, 20 bases de datos):
-
-| Metrica | Base | Modelo |
-|---|---:|---:|
-| Easy | 90,73 | 92,34 |
-| Medium | 82,96 | 87,22 |
-| Hard | 67,82 | 74,14 |
-| Extra | 50,60 | 59,64 |
-| Errores de ejecucion | 26 | 28 |
-
-Comparativa dentro de la familia:
-
-| Modelo | BIRD plano | BIRD desc | Spider dev |
-|---|---:|---:|---:|
-| Qwen3.5-4B base | 46,22 | 46,28 | 77,08 |
-| Qwen3.5-4B fine-tuned | 54,76 | 56,19 | 81,82 |
-| Qwen3.5-9B base | 51,11 | 52,09 | 77,27 |
-| Qwen3.5-9B fine-tuned | 57,17 | 59,32 | 82,01 |
+En Spider dev los errores de ejecucion pasan de 26 a 28. BIRD dev contiene 1.534 preguntas sobre 11 bases de datos; Spider dev, 1.034 preguntas sobre 20 bases de datos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 9 GB de pesos, mas overhead de activaciones y cache KV; en la practica se recomienda un minimo de 12-16 GB de VRAM para contexto moderado.
-- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para bf16 con contexto completo; RTX 3090 (24 GB) tambien es viable.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090 y RTX 4080 (16 GB) con margen limitado; en GPUs de 8 GB requeriria cuantizacion, no documentada oficialmente.
-- Opciones de despliegue: Hugging Face Transformers y vLLM segun la model card; llama.cpp y Ollama no estan documentados para estos pesos.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Pesos en bf16: aproximadamente 9 GB, segun la model card.
+- VRAM estimada para inferencia en bf16: no disponible de forma explicita; como referencia de orden de magnitud, los pesos ocupan unos 9 GB y el contexto evaluado es de 8.192 tokens.
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, una RTX 4090 (24 GB) o superior deberia poder alojar los pesos en bf16; A100 y H100 quedan sobradamente dimensionadas.
+- Cabe en GPU consumer: si, previsiblemente en tarjetas con 16 GB o mas en bf16; no confirmado por el autor.
+- Opciones de despliegue: Transformers y vLLM, segun la model card. No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | BIRD dev (plano) | Spider dev | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Qwen3.5-4B Text-to-SQL (este) | 4B | 8.192 | 54,76 | 81,82 | Apache-2.0 | Hugging Face |
-| Qwen3.5-9B Text-to-SQL | 9B | No disponible | 57,17 | 82,01 | No disponible | Hugging Face |
-| Qwen3.5-4B base | 4B | No disponible | 46,22 | 77,08 | No disponible | Hugging Face |
-| Qwen3.5-9B base | 9B | No disponible | 51,11 | 77,27 | No disponible | Hugging Face |
+| Qwen3.5-4B Text-to-SQL (este) | 4,54B | 8.192 evaluados | 54,76 | 81,82 | Apache-2.0 | Hugging Face, Transformers, vLLM |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | 46,22 | 77,08 | no disponible | Hugging Face |
+| Qwen3.5-2B Text-to-SQL | no disponible | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3.5-9B Text-to-SQL | no disponible | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+
+Los modelos hermanos de la familia (0.8B, 2B y 9B) forman parte de la misma coleccion, pero la informacion disponible no incluye sus resultados de benchmarks.
 
 ## Limitaciones y advertencias
 
-- El modelo solo genera SQL para SQLite; no se documenta soporte para PostgreSQL, MySQL u otros dialectos.
-- Entrenado y evaluado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta medido.
-- Los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente.
-- El ajuste se realizo en una sola epoca sobre 17.132 ejemplos; el riesgo de sobreajuste a los estilos de BIRD y Spider es plausible y no se ha cuantificado.
-- La tasa de errores de ejecucion en Spider dev aumenta ligeramente (de 26 a 28) pese a la mejora en exactitud, lo que indica que el modelo puede generar consultas sintacticamente validas pero incorrectas en algunos casos.
-- Riesgo de alucinacion de tablas o columnas inexistentes en esquemas no vistos; se recomienda validacion contra el esquema antes de ejecutar en produccion.
-- El codificador de vision no fue ajustado, por lo que las capacidades multimodales no estan especializadas para text-to-SQL.
-- Licencia Apache-2.0 permite uso comercial, pero los datasets de entrenamiento tienen licencias CC BY-SA 4.0, Apache-2.0 y MIT, lo que conviene revisar segun el uso previsto.
-- No se documentan cuantizaciones oficiales (GGUF, AWQ, GPTQ), lo que limita el despliegue en hardware de gama baja.
+- El modelo genera una unica consulta SQLite; no se documenta soporte para otros dialectos SQL ni para consultas multiples.
+- Solo declara soporte de ingles, lo que limita su uso con preguntas en castellano u otros idiomas.
+- Precision de ejecucion por debajo del 60 por ciento en BIRD dev, incluso con descripciones de columnas; no es adecuado para ejecucion automatica sin validacion humana en entornos criticos.
+- Los benchmarks son declarados por el autor y no estan verificados de forma independiente.
+- Riesgo de alucinacion en nombres de tablas o columnas no presentes en el esquema, especialmente en esquemas grandes o mal documentados.
+- El ajuste se realizo en una sola epoca sobre 17.132 ejemplos; no se documentan evaluaciones de robustez ante esquemas fuera de distribucion.
+- Aunque la licencia es Apache-2.0, los datos de entrenamiento incluyen conjuntos con licencias CC BY-SA 4.0, lo que conviene revisar antes de un uso comercial.
+- El codificador de vision no se ajusto; las capacidades multimodales no estan validadas para la tarea objetivo.
+- No se documentan sesgos especificos ni evaluaciones de seguridad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/EuricoGVP/Qwen3.5-4b_text2sql
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Modelo hermano 9B: https://huggingface.co/EuricoGVP/Qwen3.5-9b_text2sql
+- Modelo en Hugging Face: https://huggingface.co/EuricoGVP/Qwen3.5-4B_text2sql
 - Coleccion Qwen3.5 Text-to-SQL: https://huggingface.co/collections/EuricoGVP/qwen35-text2sql
-- Notebooks de entrenamiento y benchmarks: https://huggingface.co/EuricoGVP/Qwen3.5-4b_text2sql/tree/main/notebooks
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo hermano 0.8B: https://huggingface.co/EuricoGVP/Qwen3.5-0.8B_text2sql
+- Modelo hermano 2B: https://huggingface.co/EuricoGVP/Qwen3.5-2B_text2sql
+- Modelo hermano 9B: https://huggingface.co/EuricoGVP/Qwen3.5-9B_text2sql
+- Cuadernos de entrenamiento y benchmarks: https://huggingface.co/EuricoGVP/Qwen3.5-4B_text2sql/tree/main/notebooks
+- Licencia: https://huggingface.co/EuricoGVP/Qwen3.5-4B_text2sql/blob/main/LICENSE
 - Dataset BIRD train: https://huggingface.co/datasets/EuricoGVP/birdsql_complete_trainset
 - Dataset Spider train: https://huggingface.co/datasets/EuricoGVP/spider_sql_complete
 - Dataset SynSQL-2.5M: https://huggingface.co/datasets/seeklhy/SynSQL-2.5M
 - Dataset llmsql-benchmark: https://huggingface.co/datasets/llmsql-bench/llmsql-benchmark
-- Licencia: https://huggingface.co/EuricoGVP/Qwen3.5-4b_text2sql/blob/main/LICENSE

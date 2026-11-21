@@ -2,122 +2,102 @@
 
 ## Resumen
 
-RedHatAI/GLM-5.3-Flash-speculator.dspark-preview es un modelo borrador (speculator) para decodificacion especulativa sobre `zai-org/GLM-5.3-Flash`, publicado por Red Hat AI el 23 de septiembre de 2026 bajo licencia MIT. No es un modelo de lenguaje autonomo: es un cabezal auxiliar de 2.539.312.001 parametros (unos 2,54 B) que propone hasta 8 tokens por paso de decodificacion y delega la verificacion en el modelo objetivo, un MoE multimodal de 320 B totales y 18 B activos con atencion hibrida dispersa y lineal.
+GLM-5.3-Flash-speculator.dspark-preview es un modelo borrador (draft model) para decodificacion especulativa, desarrollado por Red Hat AI como complemento del modelo objetivo zai-org/GLM-5.3-Flash. No es un modelo de lenguaje autonomo: su funcion es proponer tokens candidatos que el verificador GLM-5.3-Flash acepta o rechaza, acelerando la generacion sin alterar la distribucion de salida del modelo grande. Implementa el algoritmo DSpark, una extension de DFlash que anade una cabeza Markov para modelar dependencias intra-bloque y una cabeza de confianza para predecir la aceptacion por posicion.
 
-La arquitectura del borrador es `DSparkDraftModel`, construida sobre una columna vertebral estilo Qwen3 de 5 capas que consume los estados ocultos de seis capas auxiliares del objetivo (20, 28, 32, 36, 40 y 44) mas su estado final implicito (capa 45). DSpark amplia DFlash con un cabezal de Markov de rango 256, que modela dependencias entre tokens del mismo bloque, y un cabezal de confianza que predice la aceptacion por posicion. El checkpoint declara una longitud de contexto configurada de 1.048.576 tokens, aunque la evaluacion publicada se ejecuto con un limite de servidor de 16.384 tokens.
+El borrador es una red de 5 capas de estilo Qwen3 con 2.539.312.001 parametros, que consume seis estados ocultos auxiliares del modelo objetivo (capas 20, 28, 32, 36, 40 y 44) mas su estado final implicito (capa 45), y propone hasta 8 tokens por paso de decodificacion. Esta configurado para un contexto maximo de 1.048.576 tokens, aunque el entrenamiento se realizo con secuencias de 8.192 tokens.
 
-Su relevancia es practica: servir un objetivo de 320 B es caro y latente, y este borrador busca reducir el numero de pasos del verificador manteniendo la distribucion de salida del modelo grande. La ganancia depende mucho de la tarea: la longitud media de aceptacion va de 2,94 en QA a 5,75 en razonamiento matematico. Se trata de un snapshot de final de la epoca 0 de un entrenamiento planificado a tres epocas, por lo que la calidad de aceptacion puede mejorar en checkpoints posteriores.
+La relevancia actual es practica: la decodificacion especulativa es una de las palancas mas eficaces para reducir la latencia de inferencia en produccion sin reentrenar el modelo grande. Este checkpoint es una version preview (epoca 2 de 3) validada para servicio con vLLM y el plugin Speculators, publicada bajo licencia MIT, lo que facilita su adopcion comercial junto al modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `DSparkDraftModel` (decodificacion especulativa DSpark); columna vertebral de 5 capas estilo Qwen3; cabezal de Markov vanilla de rango 256 y cabezal de confianza |
-| Parametros totales | 2.539.312.001 (≈2,54 B) |
-| Parametros activos | No aplica (borrador denso de 5 capas). El modelo objetivo, GLM-5.3-Flash, es MoE con 18 B activos de 320 B totales |
-| Longitud de contexto | 1.048.576 tokens configurados (evaluado con limite de servidor de 16.384 tokens) |
-| Tipos de cuantizacion | no disponible; el checkpoint se publica unicamente en bfloat16 (safetensors), sin variantes GGUF, AWQ o GPTQ |
-| Idiomas soportados | no disponible (el borrador es agnostico al idioma; la cobertura depende del modelo objetivo) |
+| Arquitectura | DSparkDraftModel (backbone de 5 capas estilo Qwen3, cabeza Markov vanilla rango 256, cabeza de confianza) |
+| Parametros totales | 2.539.312.001 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 1.048.576 tokens configurados (entrenamiento con 8.192 tokens) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors, bfloat16 (5,1 GB de repositorio) |
-| Modelo base / objetivo | `zai-org/GLM-5.3-Flash` |
-| Arquitectura objetivo | `Glm5NextForConditionalGeneration` |
-| Capas objetivo auxiliares | 20, 28, 32, 36, 40, 44 (explicitas) y 45 (implicita final) |
-| Longitud maxima de borrador | 8 tokens por paso |
-| Vocabulario del borrador | 154.880; id de token de mascara 154.856 |
-| Longitud de secuencia de entrenamiento | 8.192 tokens |
-| Anclas maximas | 512 por secuencia |
-| Checkpoint publicado | Epoca 0, paso global 90.308 |
-| Fecha de publicacion | 2026-09-23 |
-| Libreria | `speculators` (0.7.0.dev174) sobre vLLM 0.28.1rc1.dev580+g385dce36b |
+| Formato de pesos | safetensors (bfloat16), requiere `custom_code` y libreria `speculators` |
 
 ## Arquitectura y entrenamiento
 
-DSpark es una extension de DFlash. Sobre un tronco de 5 capas estilo Qwen3, el modelo incorpora un cabezal de Markov de rango 256 que modela las dependencias entre tokens dentro del mismo bloque especulado, y un cabezal de confianza (con caracteristicas de Markov) que estima la probabilidad de aceptacion en cada posicion. El borrador consume seis estados ocultos intermedios del objetivo, elegidos explicitamente en las capas 20, 28, 32, 36, 40 y 44, mas el estado oculto final implicito de la capa 45, y propone hasta 8 tokens con `sample_from_anchor=true` y un maximo de 512 anclas por secuencia. La extraccion de estados ocultos se realizo con vLLM `0.28.1rc1.dev580+g385dce36b` y el entrenamiento con el commit `b9c51bc` de la libreria Speculators.
+El modelo es un borrador especulativo DSpark con backbone transformer de 5 capas, vocabulario de 154.880 tokens y token de mascara con ID 154.856. En cada paso consume seis estados ocultos explicitos del objetivo (capas 20, 28, 32, 36, 40, 44) y el estado oculto final implicito (capa 45), y genera propuestas en bloques de hasta 8 tokens. Sobre el backbone se anaden dos componentes: una cabeza Markov de tipo vanilla con rango 256, que modela dependencias entre tokens dentro del bloque, y una cabeza de confianza con caracteristicas Markov, que estima la probabilidad de aceptacion en cada posicion. La funcion de perdida combina cross-entropy (0.1) y total variation (0.9).
 
-El entrenamiento parte de una inicializacion comun y fresca de 5 capas DSpark y se realiza sobre una version de Open PerfectBlend regenerada por GLM-5.3-Flash con temperatura 1,0 y esfuerzos de razonamiento `low`, `high` y `max`. El JSONL de origen tenia 1.731.254 filas; tras excluir 7.521 filas con mascara de perdida vacia quedaron 1.723.733 ejemplos estructuralmente validos, truncados a un maximo de 8.192 tokens, con particion 99/1 de entrenamiento y validacion. La funcion de perdida combina entropia cruzada (0,1) y distancia de variacion total (0,9), con optimizador Muon (lr 0,001) y planificador lineal. La infraestructura fueron tres bandejas NVIDIA GB300: dos para extraccion de estados ocultos y una con cuatro rangos FSDP para el entrenamiento. El checkpoint liberado corresponde al paso global 90.308, al final de la epoca 0 de un plan de tres epocas. No se documenta RLHF ni DPO; el procedimiento es entrenamiento de destilacion especulativa.
+El entrenamiento partio de una inicializacion fresca comun de 5 capas y uso una version regenerada por GLM-5.3-Flash del dataset Open PerfectBlend, con temperatura 1.0 y esfuerzos de razonamiento `low`, `high` y `max`. El JSONL original tenia 1.731.254 filas; tras excluir 7.521 con mascara de perdida vacia quedaron 1.723.733 ejemplos validos, truncados a 8.192 tokens, con split 99/1. Se usaron hasta 512 anclas por secuencia, `sample_from_anchor=true`, optimizador Muon con learning rate 0.001, scheduler lineal, FSDP con sharding y 3 epocas. La extraccion de estados ocultos se ejecuto en dos bandejas NVIDIA GB300 y el entrenamiento en una tercera con cuatro rangos FSDP. El checkpoint publicado corresponde a la epoca 2, paso global 270.979, con vLLM `0.28.1rc1.dev580+g385dce36b` y Speculators `0.7.0.dev174`.
 
 ## Capacidades
 
-- Propuesta de tokens en decodificacion especulativa: genera hasta 8 tokens candidatos por paso, que el modelo objetivo verifica, reduciendo el numero de pasos del verificador.
-- Aprovechamiento de estados ocultos del objetivo: consume seis capas auxiliares explicitas (20, 28, 32, 36, 40, 44) y la capa final implicita 45.
-- Modelado de dependencias intra-bloque mediante cabezal de Markov de rango 256, lo que permite que los tokens propuestos dentro de un bloque no se traten como independientes.
-- Prediccion de aceptacion por posicion mediante cabezal de confianza con caracteristicas de Markov (informacion util para politicas de longitud de borrador en el motor de inferencia).
-- Soporte de contexto largo a nivel de configuracion: 1.048.576 tokens, coherente con el objetivo GLM-5.3-Flash, cuyo diseno hibrido de atencion dispersa y lineal busca abaratar el servicio en contextos largos.
-- Entrada y salida de texto. No hereda la capacidad multimodal nativa del objetivo: el borrador opera sobre la decodificacion de texto.
-- No es capaz de generar texto de forma autonoma ni de invocar herramientas (tool calling) o ejecutar razonamiento multi-paso por si mismo; esas capacidades residen en el modelo objetivo y el borrador solo acelera su decodificacion.
-- Multilinguismo: no documentado. Depende por completo de la distribucion del verificador.
+- Generacion especulativa de hasta 8 tokens por paso de decodificacion para el verificador GLM-5.3-Flash.
+- Prediccion de aceptacion por posicion mediante cabeza de confianza, lo que permite ajustar la longitud efectiva del borrador.
+- Modelado de dependencias intra-bloque mediante cabeza Markov de rango 256.
+- Aprovechamiento de estados ocultos intermedios del objetivo (capas 20 a 45) para alinear las propuestas con la distribucion del verificador.
+- Configuracion para contextos largos de hasta 1.048.576 tokens (entrenado a 8.192).
+- No genera texto de forma autonoma ni soporta tool calling, agentes o vision por si mismo; hereda esas capacidades del modelo objetivo.
+- No se declaran capacidades multilingues propias; el soporte de idiomas depende de GLM-5.3-Flash.
 
 ## Casos de uso
 
-- Servicio de GLM-5.3-Flash en produccion con vLLM: se arranca el objetivo con `--speculative-config` apuntando a este checkpoint, `--tensor-parallel-size 4`, `--kv-cache-dtype fp8` y `num_speculative_tokens: 8`. Adecuado porque es el escenario exacto en el que el checkpoint fue validado.
-- Razonamiento matematico y generacion de soluciones paso a paso: con 5,75 tokens de aceptacion media y 59,34% de tasa de aceptacion es el dominio con mejor rendimiento medido, de modo que el coste por token generado del verificador de 320 B baja de forma notable.
-- Generacion de codigo en asistentes y completado: en HumanEval la aceptacion media es de 4,46 tokens; encaja en flujos de autocompletado donde el modelo grande verifica bloques de hasta 8 tokens.
-- Recuperacion aumentada (RAG) sobre documentos largos: la longitud de aceptacion medida en el conjunto `rag` es de 3,61, y la ventana configurada de 1.048.576 tokens permite mantener contexto extenso mientras se acelera la fase de generacion.
-- Agentes de horizonte largo: el objetivo esta orientado a tareas de agente y codigo; el borrador reduce la latencia por paso, lo que se traduce en menos tiempo de pared en cadenas de muchos pasos.
-- Reduccion de coste de GPU en despliegues multiinquilino: al disminuir los pases de avance del modelo de 320 B por token emitido, se libera capacidad de calculo por unidad de peticion servida.
-- Investigacion en decodificacion especulativa: el checkpoint es reutilizable como referencia con la libreria Speculators (version 0.7.0.dev174) para comparar variantes de cabezal de Markov, tasa de aceptacion y politicas de ancla.
-- Conversacion general y QA: viable, pero con la expectativa de ganancia mas baja, ya que en `qa` y `question` la aceptacion media cae a 2,94 y 2,96 tokens y en la posicion 7 solo se acepta el 2,6% y el 3,8% respectivamente.
+- Aceleracion de inferencia en produccion de GLM-5.3-Flash: desplegado junto al verificador en vLLM con `--speculative-config`, reduce la latencia por token aceptado en cargas de razonamiento matematico, donde la longitud media de aceptacion alcanza 6,12 tokens.
+- Generacion de codigo asistida: en HumanEval la longitud de aceptacion es de 4,74 tokens con una tasa global del 46,74%, lo que se traduce en menor tiempo hasta completar sugerencias en IDE o pipelines de CI/CD.
+- Servicio de preguntas y respuestas sobre documentacion: con 3,11-3,19 tokens aceptados por paso en los datasets qa y question, aporta una mejora moderada pero medible en cargas conversacionales.
+- RAG sobre corpus extensos: el checkpoint esta configurado para contextos de hasta 1.048.576 tokens y en el dataset rag acepta 3,80 tokens por paso, lo que ayuda en recuperacion aumentada con prompts largos.
+- Reduccion de coste en despliegues con tensor parallelism 4: el ejemplo oficial usa `--tensor-parallel-size 4`, `--max-model-len 16384` y KV cache en fp8, un perfil habitual en nodos con multiples GPU.
+- Evaluacion y ajuste de politicas de decodificacion especulativa: las tablas de aceptacion por posicion permiten calibrar `num_speculative_tokens` segun la carga (8 es el maximo entrenado).
+- Integracion en plataformas de serving validadas por Red Hat AI: el modelo forma parte del catalogo RedHatAI orientado a productos de IA de Red Hat.
 
 ## Benchmarks y rendimiento
 
-Este checkpoint no es un generador autonomo, por lo que no existen resultados de MMLU, GSM8K o HumanEval en cuanto a calidad de respuestas. Lo que se publica son metricas de aceptacion de la decodificacion especulativa, medidas de extremo a extremo con el verificador `zai-org/GLM-5.3-Flash`, temperatura 0, `top_p=1`, 8 tokens de borrador, tensor parallelism 4, limite de contexto de servidor de 16.384 tokens y hasta 200 peticiones por conjunto de datos.
+Resultados de aceptacion end-to-end con el verificador zai-org/GLM-5.3-Flash, temperatura 0, top_p=1, 8 tokens de borrador, tensor parallelism 4, contexto de servidor de 16.384 tokens y hasta 200 peticiones por dataset:
 
-| Conjunto | Longitud de aceptacion | Tasa de aceptacion | Pos 0 | Pos 1 | Pos 2 | Pos 3 | Pos 4 | Pos 5 | Pos 6 | Pos 7 |
+| Dataset | Longitud de aceptacion | Tasa de aceptacion | Pos 0 | Pos 1 | Pos 2 | Pos 3 | Pos 4 | Pos 5 | Pos 6 | Pos 7 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| HumanEval | 4,46 | 43,20% | 83,6% | 67,2% | 53,5% | 42,4% | 33,9% | 26,7% | 21,4% | 16,9% |
-| math_reasoning | 5,75 | 59,34% | 90,6% | 80,8% | 70,8% | 61,8% | 53,6% | 45,5% | 38,7% | 32,9% |
-| qa | 2,94 | 24,25% | 70,9% | 47,2% | 30,7% | 19,1% | 11,8% | 7,3% | 4,4% | 2,6% |
-| question | 2,96 | 24,49% | 70,1% | 45,7% | 29,9% | 19,6% | 12,8% | 8,4% | 5,7% | 3,8% |
-| rag | 3,61 | 32,66% | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| HumanEval | 4,74 | 46,74% | 85,5% | 70,1% | 57,1% | 46,2% | 37,7% | 31,0% | 25,4% | 20,9% |
+| math_reasoning | 6,12 | 63,98% | 92,9% | 85,0% | 76,3% | 67,1% | 58,0% | 50,2% | 43,9% | 38,4% |
+| qa | 3,11 | 26,39% | 73,1% | 50,1% | 33,3% | 22,0% | 14,3% | 9,0% | 5,8% | 3,5% |
+| question | 3,19 | 27,33% | 73,0% | 49,6% | 33,3% | 22,8% | 15,8% | 10,9% | 7,7% | 5,5% |
+| rag | 3,80 | 35,01% | 80,1% | 61,5% | 46,3% | 33,5% | 23,7% | no disponible | no disponible | no disponible |
 
-La fila de `rag` aparece truncada en la informacion disponible: solo se conocen la longitud de aceptacion y la tasa global, no el desglose por posicion. No se han publicado en la informacion disponible resultados de benchmarks de calidad (MMLU, GSM8K, HumanEval como tarea) atribuibles a este checkpoint.
+No se han publicado resultados de benchmarks de calidad del modelo objetivo (MMLU, GSM8K, etc.) en la informacion disponible; las metricas anteriores miden exclusivamente la eficacia del borrador especulativo.
 
 ## Requisitos de hardware
 
-- Pesos del borrador: 2.539.312.001 parametros en bfloat16 equivalen a unos 5,08 GB (el repositorio ocupa 5,1 GB). La estimacion de VRAM para el borrador solo, contando activaciones y cache de trabajo, es de aproximadamente 6-8 GB.
-- El borrador por si solo no sirve para nada: hay que sumar el coste del objetivo GLM-5.3-Flash, un MoE de 320 B totales y 18 B activos. La configuracion de referencia declarada usa `--tensor-parallel-size 4`, lo que implica un nodo de cuatro GPU de clase centro de datos (H100, H200, GB200/GB300 o equivalentes).
-- La evaluacion publicada se ejecuto con limite de contexto de servidor de 16.384 tokens y cache KV en fp8, lo que reduce de forma apreciable la memoria dedicada a KV frente a bfloat16.
-- GPU de consumo: el borrador cabe holgadamente en cualquier GPU consumer con 8-12 GB de VRAM, pero el sistema completo (objetivo de 320 B) no es viable en una sola GPU consumer. Solo tiene sentido en ese tipo de hardware mediante variantes muy cuantizadas del objetivo, como `RedHatAI/GLM-5.3-Flash-NVFP4`, pensada para configuraciones de 2x NVIDIA DGX Spark.
-- Opciones de despliegue: vLLM con soporte DSpark y el plugin Speculators. La compatibilidad declarada es con vLLM `0.28.1rc1.dev580+g385dce36b` y Speculators `0.7.0.dev174`; no se afirma compatibilidad con una version estable sin modificar. No hay soporte documentado en llama.cpp, Ollama ni TGI.
-- Comando de referencia: `vllm serve zai-org/GLM-5.3-Flash --tensor-parallel-size 4 --max-model-len 16384 --kv-cache-dtype fp8 --speculative-config '{"model":"RedHatAI/GLM-5.3-Flash-speculator.dspark","num_speculative_tokens":8,"method":"dspark"}'`.
-- Latencia y throughput: no se publican medidas directas. El indicador disponible es la longitud de aceptacion (2,94-5,75 tokens), que acota la ganancia teorica de velocidad por paso de verificacion; la mejora real depende del tamano de lote, de la carga del objetivo y de la longitud del contexto.
+- VRAM del borrador: aproximadamente 5,1 GB en bfloat16 (2.539.312.001 parametros); el repo completo ocupa 10,2 GB, por lo que conviene presupuestar ese margen en disco.
+- La VRAM dominante es la del verificador GLM-5.3-Flash, no la del borrador; el ejemplo oficial despliega el objetivo con `--tensor-parallel-size 4`.
+- GPU recomendadas: el entrenamiento uso NVIDIA GB300; para servicio se documenta un despliegue con tensor parallelism 4, compatible con GPU de centro de datos (A100, H100, H200, GB200/GB300) segun el build de vLLM.
+- No se documenta compatibilidad con GPU de consumo; el ejemplo oficial no emplea RTX 4090 ni similares.
+- Despliegue: vLLM con soporte DSpark y plugin Speculators (probado con vLLM `0.28.1rc1.dev580+g385dce36b` y Speculators `0.7.0.dev174`). No se mencionan llama.cpp, Ollama ni TGI.
+- KV cache en fp8 y `--max-model-len 16384` en la configuracion de referencia.
+- Latencia y throughput absolutos: no disponibles. La mejora esperada es proporcional a la longitud de aceptacion (hasta 6,12 tokens por paso en math_reasoning).
 
 ## Comparativa con modelos similares
 
-No hay cifras publicadas en la informacion disponible para los metodos alternativos de decodificacion especulativa, por lo que la comparacion se limita a caracteristicas verificables.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Estado |
+|---|---|---:|---|---|---|
+| RedHatAI/GLM-5.3-Flash-speculator.dspark-preview | Borrador especulativo DSpark para GLM-5.3-Flash | 2.539.312.001 | 1.048.576 configurados | MIT | Preview (epoca 2 de 3) |
+| zai-org/GLM-5.3-Flash | Modelo objetivo (verificador) | no disponible | no disponible | no disponible | Base del borrador |
+| Otros speculators de RedHatAI | Borradores para otros objetivos (p. ej. Mistral-Medium-3.5-128B) | no disponible | no disponible | no disponible | Catalogo RedHatAI |
 
-| Modelo / metodo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| DSpark (este checkpoint) | Borrador de decodificacion especulativa | 2,54 B | 1.048.576 configurados | Aceptacion 24,25%-59,34% segun tarea | MIT | Hugging Face, preview epoca 0 |
-| DFlash / DFlash2 | Borrador de decodificacion especulativa (base de DSpark) | no disponible | no disponible | no disponible | no disponible | Referenciado en despliegues con GLM-5.3-Flash NVFP4 (k=7) |
-| EAGLE-3 | Borrador de decodificacion especulativa | no disponible | no disponible | no disponible en esta informacion | no disponible | Ecosistema vLLM |
-| Medusa | Cabezales de decodificacion especulativa | no disponible | no disponible | no disponible en esta informacion | no disponible | Ecosistema vLLM |
-| GLM-5.3-Flash sin decodificacion especulativa | Modelo objetivo, MoE multimodal | 320 B totales, 18 B activos | no disponible | Supera a GLM-5.2 y se acerca a Claude Opus 4.8 en codigo y agentes, segun el proveedor | no disponible | Hugging Face, DeepInfra, NVIDIA NIM |
+No se dispone de datos publicados de otros borradores DSpark comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint de vista previa: snapshot del final de la epoca 0 de un plan de tres epocas. La propia model card indica que la configuracion y el comportamiento de servicio estan validados, pero que checkpoints posteriores pueden mejorar la calidad de aceptacion.
-- Requiere una compilacion concreta de vLLM (`0.28.1rc1.dev580+g385dce36b`) y el plugin Speculators `0.7.0.dev174`. No se reclama compatibilidad con una version estable de vLLM, lo que complica su adopcion en produccion sin fijar versiones exactas.
-- No genera texto por si solo. Cualquier afirmacion sobre calidad, sesgos o alucinacion del sistema final corresponde al modelo objetivo GLM-5.3-Flash, no a este borrador.
-- La aceptacion es muy desigual por tarea y por posicion: del 32,9% en la posicion 7 de math_reasoning al 2,6% en la posicion 7 de QA. El uso de 8 tokens de borrador no aporta lo mismo en todos los dominios.
-- La ventana configurada de 1.048.576 tokens no se valido en la evaluacion publicada, que uso un limite de servidor de 16.384 tokens. El comportamiento de aceptacion con contextos realmente largos es desconocido.
-- Los resultados de `rag` estan truncados en la informacion disponible y no se publica el desglose por posicion.
-- Cobertura de idiomas no disponible: no hay evaluacion por idioma ni garantia de aceptacion fuera del ingles.
-- Distribucion de salida: la decodificacion especulativa bien implementada preserva la distribucion del verificador, pero un error de integracion en el motor o en la verificacion puede alterar las salidas. Conviene validar con las versiones fijadas.
-- Licencia: el borrador es MIT, pero el uso del sistema completo depende tambien de los terminos de `zai-org/GLM-5.3-Flash`, cuya licencia no aparece en la informacion proporcionada.
-- Adopcion practica: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de la comunidad.
-- La infraestructura necesaria para reentrenar el borrador (tres bandejas NVIDIA GB300, extraccion de estados ocultos mas cuatro rangos FSDP) es un coste relevante si se quiere adaptar a otro modelo objetivo.
+- Es una version preview: corresponde al final de la epoca 2 de un entrenamiento de 3 epocas, no al checkpoint final.
+- No es utilizable de forma autonoma; requiere el verificador zai-org/GLM-5.3-Flash y un build de vLLM con soporte DSpark. No se reclama compatibilidad con una release estable sin modificar de vLLM.
+- Requiere `custom_code` y la libreria `speculators`; no es un modelo estandar de transformers.
+- El contexto configurado (1.048.576 tokens) excede ampliamente la longitud de entrenamiento (8.192 tokens); el comportamiento mas alla de ese rango no esta validado.
+- La tasa de aceptacion cae rapidamente con la posicion: en qa y question, la posicion 7 apenas alcanza el 3,5% y el 5,5%, por lo que usar 8 tokens de borrador no siempre compensa.
+- No se declaran idiomas soportados; el rendimiento linguistico depende del verificador.
+- Riesgo de sesgos y alucinaciones: el borrador no introduce contenido propio, pero hereda los del modelo objetivo.
+- La licencia MIT aplica al borrador; conviene verificar por separado la licencia de GLM-5.3-Flash para uso comercial.
+- No se publican datos de cuantizacion; el despliegue en precision reducida no esta documentado.
 
 ## Enlaces
 
-- Checkpoint en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
-- Modelo objetivo: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Version gestionada por Red Hat AI del objetivo: https://huggingface.co/RedHatAI/GLM-5.3-Flash
-- Organizacion Red Hat AI en Hugging Face: https://huggingface.co/RedHatAI
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
+- Modelo base (objetivo): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Libreria Speculators: https://github.com/vllm-project/speculators
 - Commit de entrenamiento: https://github.com/vllm-project/speculators/commit/b9c51bcfc134923eae2b6a6f8246ae3500d5c42f
-- Dataset de partida (Open PerfectBlend): https://huggingface.co/datasets/mlabonne/open-perfectblend
-- Tarjeta del modelo en NVIDIA NIM: https://build.nvidia.com/z-ai/glm-5-3-flash/modelcard
-- Demo y API en DeepInfra: https://deepinfra.com/zai-org/GLM-5.3-Flash
-- Despliegue NVFP4 con DFlash2 sobre 2x DGX Spark: https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-DFlash2-2x-DGX-Spark
+- Dataset Open PerfectBlend: https://huggingface.co/datasets/mlabonne/open-perfectblend
+- Organizacion Red Hat AI en Hugging Face: https://huggingface.co/RedHatAI

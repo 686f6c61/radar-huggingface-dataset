@@ -2,107 +2,88 @@
 
 ## Resumen
 
-DictaBERT-lex es un modelo de lenguaje basado en la arquitectura BERT, desarrollado por el equipo dicta-il (Dicta), especializado en la tarea de lematización del hebreo moderno. Forma parte de la suite DictaBERT, presentada en el artículo "MRL Parsing Without Tears: The Case of Hebrew" (arXiv:2403.06970, 2024, autores Shaltiel Shmidman, Avi Shmidman, Moshe Koppel y Reut Tsarfaty). Su función concreta es asociar cada palabra de un texto en hebreo con el lexema correspondiente dentro del vocabulario del modelo, devolviendo pares (forma superficial, lexema).
+DictaBERT-lex es un modelo BERT afinado para la tarea de lematización (lemmatization) del hebreo moderno, desarrollado por el equipo de Dicta (dicta-il). Forma parte de la suite DictaBERT, presentada en el artículo arXiv:2403.06970, que tiene como objetivo dotar al hebreo de una familia de modelos de lenguaje de referencia comparables a los que existen para lenguas con muchos más recursos. El modelo resuelve un problema concreto y difícil: dado un texto en hebreo, asignar a cada palabra su lexema (la forma canónica de diccionario), lidiando con la morfología flexional y derivativa del hebreo y con la segmentación en subpalabras propia de BERT.
 
-El modelo cuenta con 184.474.880 parámetros y un repositorio de 1,5 GB, se distribuye en formato safetensors y se etiqueta con el pipeline de feature-extraction. No es un modelo generativo: incorpora código personalizado (custom_code) que expone un método `predict()` específico, por lo que su carga exige `trust_remote_code=True` en la librería transformers. Está publicado bajo licencia CC BY 4.0 y acumula 16.991 descargas en Hugging Face.
-
-Su relevancia actual radica en que el hebreo es una lengua morfológicamente muy rica, con abundante prefijación y sufijación, y la lematización es un paso previo habitual en pipelines de búsqueda, análisis morfológico, traducción automática y anotación de corpus. DictaBERT-lex resuelve esa tarea de forma puramente neuronal, sin depender de reglas ni de diccionarios externos, lo que simplifica su integración en producción.
+Arquitectura transformer de tipo BERT (encoder) con 184.474.880 parámetros totales, pesos en safetensors y un repositorio de 1,5 GB. Está entrenado exclusivamente para hebreo y se distribuye bajo licencia CC BY 4.0, con la salvedad de que el modo opcional de lematización restringida por léxico (`use_lexicon=True`) queda bajo CC BY-NC 4.0 por depender del conjunto de datos `dicta-il/wordlist`. Su relevancia actual radica en que es una pieza de infraestructura lingüística para procesamiento del hebreo en producción (búsqueda, indexación, análisis morfológico, normalización de corpus) y en que introduce un mecanismo híbrido neurona-léxico que corrige predicciones fuera de vocabulario.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (suite DictaBERT) |
+| Arquitectura | BERT (transformer encoder), con código personalizado (`trust_remote_code=True`) |
 | Parámetros totales | 184.474.880 |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | No disponible en la información proporcionada (pesos publicados en safetensors) |
-| Idiomas soportados | Hebreo (he) |
-| Licencia | CC BY 4.0 |
-| Formato de pesos | safetensors (PyTorch, requiere código personalizado) |
-| Tarea principal | Lematización (predicción de lexema por token) |
-| Pipeline declarado | feature-extraction |
-| Librería | transformers |
-| Tamaño del repositorio | 1,5 GB |
-| Descargas / likes | 16.991 / 2 |
-| Fecha de creación | 2024-01-08 |
-| Última actualización | 2026-09-15 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | hebreo (he) |
+| Licencia | CC BY 4.0; el modo `use_lexicon=True` queda bajo CC BY-NC 4.0 |
+| Formato de pesos | safetensors, PyTorch (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue el diseño de un transformer encoder de la familia BERT, ajustado específicamente para la tarea de lematización. A diferencia de un BERT estándar de clasificación, DictaBERT-lex incorpora código personalizado que mapea cada token de entrada a un lexema del vocabulario. Según la model card, si una palabra se divide en varios wordpieces el modelo sigue prediciendo el lexema con alta precisión, lo que indica un mecanismo de agregación de subtokens a nivel de palabra.
+El modelo es un BERT afinado para una tarea de etiquetado a nivel de token: para cada palabra de entrada predice el lexema correspondiente dentro del vocabulario BERT. La model card no detalla el número de tokens de entrenamiento, la composición del corpus ni si se aplicaron etapas de ajuste adicionales más allá del fine-tuning supervisado sobre la tarea de lematización. El modelo base pertenece a la suite DictaBERT descrita en arXiv:2403.06970, que el autor presenta como un conjunto de modelos BERT de última generación para hebreo moderno; los detalles de preentrenamiento deben consultarse en dicho artículo.
 
-El procedimiento de predicción es el siguiente: dada una oración en hebreo, el modelo intenta emparejar cada palabra con el lexema correcto dentro del vocabulario BERT. Cuando el lexema de un token no existe en el vocabulario, el modelo predice el token especial `[BLANK]`; según la documentación, esto ocurre habitualmente con nombres de personas o de ciudades, y en esos casos el lexema puede aproximarse eliminando prefijos con la herramienta complementaria `dictabert-seg`. Para las formas verbales, el lexema se define como la tercera persona del singular del pasado.
-
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. El enfoque declarado por los autores es puramente neuronal, sin componentes léxicos basados en reglas, y el artículo asociado (arXiv:2403.06970) aborda el parsing morfológico del hebreo en el marco de MRL (Morphological Representation Language).
+La innovación destacable no está en la arquitectura, sino en el procedimiento de inferencia. El método es puramente neuronal: si una palabra se divide en varios wordpieces, el modelo sigue prediciendo el lexema con alta precisión según el autor. Cuando el lexema no existe en el vocabulario BERT, el modelo emite el token especial `[BLANK]`; en ese caso la palabra suele ser un nombre propio de persona o ciudad, y el lexema puede recuperarse eliminando prefijos con la herramienta hermana `dictabert-seg`. Para verbos, el lexema devuelto es la tercera persona del pasado singular. Como extensión en fase beta, el autor añade la lematización restringida por léxico (`use_lexicon=True`), que consulta el diccionario `dicta-il/wordlist` con búsqueda consciente de prefijos y ordenada por verosimilitud: si el léxico lista un único lema, se devuelve ese; si lista varios, se devuelve la predicción mejor rankeada del modelo entre las `topk` (por defecto 100) que el léxico admite; si no hay coincidencia, se recurre a la predicción por defecto. Este modo también resuelve muchas predicciones `[BLANK]`, porque el lema ya no tiene que existir en el vocabulario BERT.
 
 ## Capacidades
 
-- Lematización de texto en hebreo moderno: devuelve, para cada palabra, el lexema correspondiente del vocabulario.
-- Robusteza ante la tokenización en wordpieces: mantiene la precisión aunque una palabra se fragmente en varios subtokens.
-- Detección de lexemas fuera de vocabulario mediante el token especial `[BLANK]`, típicamente en nombres propios y topónimos.
-- Normalización de formas verbales: el lexema de un verbo se representa como tercera persona del singular del pasado.
-- Procesamiento por lotes: el método `predict()` acepta una lista de oraciones y devuelve listas anidadas de pares (palabra, lexema).
-- Integración con la suite DictaBERT: puede combinarse con `dictabert-seg` para segmentar prefijos cuando el lexema no está en el vocabulario.
-- Extracción de características: al declararse como feature-extraction, expone representaciones internas utilizables por otros componentes.
-- No dispone de generación de texto, tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento explícito.
-- Capacidades multilingües: no disponibles; el modelo está entrenado y declarado únicamente para hebreo.
+- Lematización de texto en hebreo moderno a nivel de palabra, con manejo robusto de palabras fragmentadas en múltiples wordpieces.
+- Predicción de lexemas para verbos en la forma de tercera persona del pasado singular.
+- Emisión controlada del token `[BLANK]` para palabras fuera de vocabulario, con recuperación posterior mediante segmentación de prefijos.
+- Lematización restringida por léxico (beta, opt-in) mediante `use_lexicon=True`, con parámetro `topk` configurable.
+- Extracción de características (`feature-extraction`): el modelo puede usarse como encoder para obtener representaciones contextuales del hebreo.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto libre: es un modelo discriminativo de etiquetado, no un modelo generativo.
+- Capacidad multilingüe limitada al hebreo; no se declara soporte para otras lenguas.
+- No dispone de modo de razonamiento explícito, visión ni audio.
 
 ## Casos de uso
 
-- Indexación y búsqueda en hebreo: reducir cada palabra del corpus a su lexema permite que consultas con formas flexionadas distintas recuperen los mismos documentos, algo crítico en una lengua con alta variación morfológica.
-- Anotación morfológica de corpus lingüísticos: el modelo genera automáticamente la capa de lemas necesaria para corpus anotados, sustituyendo o complementando el etiquetado manual.
-- Preprocesado para traducción automática: normalizar el texto de entrada a lemas reduce la dispersión del vocabulario y puede mejorar la cobertura de sistemas de traducción entrenados con datos limitados en hebreo.
-- Construcción y enriquecimiento de diccionarios: al emparejar formas superficiales con lexemas, se puede generar de forma semiautomática listados de variantes flexivas asociadas a una entrada léxica.
-- Análisis de opiniones y redes sociales: los textos informales en hebreo contienen numerosas variantes ortográficas; la lematización permite agrupar términos equivalentes antes de aplicar recuentos o clasificadores.
-- Postprocesado de pipelines de ASR o TTS: normalizar las transcripciones a lemas facilita la corrección de errores y la comparación contra léxicos de referencia.
-- Sistemas de recuperación de información y motores de respuesta: la lematización previa mejora la coincidencia entre consulta y documento cuando el usuario emplea formas conjugadas o con prefijos.
-- Enriquecimiento de herramientas de análisis gramatical: puede actuar como componente de lematización dentro de un analizador morfológico mayor que use también `dictabert-seg` y otros modelos de la colección DictaBERT.
-- Filtrado y curación de datasets: al normalizar a lemas se pueden detectar duplicados casi idénticos y reducir el ruido en corpus destinados a entrenar otros modelos.
+- Indexación y búsqueda en hebreo: normalizar cada palabra de un corpus a su lexema antes de construir el índice invertido, de modo que formas flexionadas como `לימודיו` y `לימוד` colapsen en la misma entrada y mejoren la exhaustividad de la búsqueda.
+- Análisis morfológico de corpus lingüísticos: procesar textos académicos o periodísticos en hebreo para obtener estadísticas de lemas, frecuencias y vocabulario, usando la salida `predict` palabra a palabra.
+- Normalización de datos para pipelines de NLP: convertir texto hebreo crudo en una secuencia de lemas como paso previo a tareas de clasificación, clustering o entrenamiento de modelos sobre vocabulario reducido.
+- Enriquecimiento de diccionarios y recursos léxicos: cruzar la salida del modelo con el léxico `dicta-il/wordlist` para detectar entradas faltantes o discrepancias, aprovechando el modo `use_lexicon=True` y sus modos de bajo consumo de memoria (`low_memory`, `disk`).
+- Preprocesamiento para traducción automática y resumen: reducir la variabilidad morfológica del hebreo antes de alimentar un sistema de traducción o de resumen, mitigando el problema de palabras raras y formas aglutinadas.
+- Atención al cliente y chatbots en hebreo: usar el encoder para obtener representaciones contextuales de las consultas de los usuarios y alimentar un clasificador de intenciones, combinando la extracción de características con la lematización para normalizar el texto entrante.
+- Análisis de documentos legales o administrativos en hebreo: lematizar contratos y formularios para comparar cláusulas y detectar términos equivalentes escritos con distintas flexiones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona que se trata de un modelo "state-of-the-art" para hebreo dentro de la suite DictaBERT y remite al artículo arXiv:2403.06970 para los detalles, pero no incluye cifras concretas de precisión, F1 ni comparaciones numéricas con otros sistemas.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas numéricas de precisión global ni comparaciones cuantitativas con otros lematizadores. El único dato de evaluación presente es cualitativo y parcial: en una muestra de 400 frases del conjunto de desarrollo, las dos rutas de inferencia (por defecto y con `use_lexicon=True`) discreparon en 206 palabras; la ruta con léxico acertó en 113 de ellas, falló en 75 y ambas rutas fallaron en 18. De las 33 palabras en las que la ruta por defecto predijo `[BLANK]`, la información proporcionada queda truncada y no permite extraer el resto del recuento.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp32, aproximadamente 0,7-1 GB solo para los pesos; en fp16/bf16, alrededor de 0,4 GB; en int8, en torno a 0,2 GB. Con activaciones y tokenizador, un presupuesto de 1-2 GB es suficiente.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 o superiores. No se requieren A100 ni H100 para inferencia.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en GPUs integradas con suficiente memoria compartida.
-- Ejecución en CPU: viable con latencias aceptables para procesamiento por lotes, dado el tamaño reducido del modelo (184 M de parámetros).
-- Opciones de despliegue: transformers con `trust_remote_code=True` es el método documentado. El repositorio incluye la etiqueta `text-embeddings-inference`, lo que sugiere compatibilidad con ese servidor. No se documentan recetas para vLLM, llama.cpp, Ollama o TGI, y el uso de código personalizado puede complicar la exportación a formatos alternativos.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 184,5 millones de parámetros, los pesos en precisión completa ocupan aproximadamente 0,74 GB (1,5 GB de repositorio incluyen artefactos adicionales), por lo que la inferencia en fp32 requiere del orden de 1 a 2 GB de VRAM incluyendo activaciones y tokenizador.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente a nivel de memoria; el autor no publica recomendaciones específicas (A100, H100, RTX 4090 u otras).
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas de gama media y baja (por ejemplo, GTX 1650, RTX 3050, RTX 4060) dada la escala del modelo, aunque no hay confirmación oficial ni cifras de latencia.
+- Opciones de despliegue: transformers con `trust_remote_code=True`; el tag `text-embeddings-inference` sugiere compatibilidad con ese servidor de embeddings. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles. Como referencia de coste operativo, el modo `use_lexicon=True` descarga un léxico de unos 90 MB en la primera llamada y construye un índice en memoria que tarda aproximadamente un minuto y consume un par de GB de RAM; el índice se reutiliza por proceso, por lo que conviene mantener vivo el objeto del modelo en lugar de recargarlo por frase. Existen modos `low_memory` y `disk` que reducen la RAM residente a decenas de MB a cambio de velocidad de consulta, pero `predict` no los expone actualmente y siempre usa el índice rápido en memoria.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicta-il/dictabert-lex | 184.474.880 | No disponible | Lematización de hebreo | CC BY 4.0 | Hugging Face (transformers, custom_code) |
-| dicta-il/dictabert-seg | No disponible | No disponible | Segmentación morfológica de hebreo | No disponible | Hugging Face, misma suite |
-| Modelos base de la colección DictaBERT | No disponible | No disponible | Diversas tareas de PNL en hebreo | No disponible | Hugging Face, misma colección |
-| Otros BERT para hebreo (por ejemplo, AlephBERT) | No disponible en la información proporcionada | No disponible | Representaciones y tareas de PNL en hebreo | No disponible | Hugging Face |
+| dicta-il/dictabert-lex | 184.474.880 | no disponible | Lematización de hebreo | CC BY 4.0 (modo léxico CC BY-NC 4.0) | Hugging Face |
+| dicta-il/dictabert-seg | no disponible | no disponible | Segmentación de prefijos en hebreo | no disponible | Hugging Face |
+| Modelos BERT base de la suite DictaBERT | no disponible | no disponible | Diversas tareas de hebreo | no disponible | Hugging Face (colección dicta-il/dictabert) |
 
-La información disponible solo documenta con detalle el modelo objeto de esta ficha. Los modelos de la misma colección se citan en la model card como alternativas complementarias, pero no se aportan cifras comparativas de rendimiento ni de tamaño.
+La información proporcionada solo permite comparar con los modelos hermanos de la propia suite DictaBERT, y únicamente de forma cualitativa: `dictabert-seg` se especializa en segmentar prefijos y se recomienda como complemento cuando `dictabert-lex` emite `[BLANK]`. No hay datos de parámetros, contexto ni rendimiento de esos modelos en la información disponible, ni se identifican alternativas externas de lematización del hebreo con las que establecer una comparación numérica.
 
 ## Limitaciones y advertencias
 
-- Cobertura lingüística restringida al hebreo: no está entrenado ni validado para otros idiomas.
-- Riesgo de predicción léxica incorrecta: al ser un método puramente neuronal, en casos raros el lexema predicho puede no estar relacionado léxicamente con la entrada, sino ser un sinónimo del mismo espacio semántico. La propia model card recomienda aplicar un filtro posterior sobre las K mejores predicciones usando medidas como la distancia de edición.
-- Token `[BLANK]`: cuando el lexema no está en el vocabulario, el modelo no devuelve un lema utilizable y se requiere un paso adicional con `dictabert-seg` para eliminar prefijos.
-- Convención verbal específica: los verbos se lematizan a la tercera persona del singular del pasado, lo que puede no coincidir con las convenciones de otros léxicos o herramientas.
-- Sesgos: no se documenta ningún análisis de sesgos en la información disponible; el comportamiento dependerá del corpus de entrenamiento utilizado por los autores.
-- Dependencia de código personalizado: la carga exige `trust_remote_code=True`, lo que implica ejecutar código del repositorio y debe evaluarse en entornos de producción con políticas de seguridad estrictas.
-- Metadatos con `inference: false`: la model card declara que la inferencia no está habilitada mediante el pipeline estándar, por lo que es necesario usar la interfaz personalizada `model.predict()`.
-- No es un modelo generativo: no admite generación de texto, tool calling ni flujos de agente.
-- Licencia CC BY 4.0: permite uso comercial y modificación, pero exige atribución adecuada y la indicación de los cambios realizados.
-- Longitud de contexto no documentada: conviene verificar experimentalmente el límite de tokens aceptado antes de procesar documentos largos.
+- Alucinación léxica: el método es puramente neuronal, por lo que en casos raros el lexema predicho puede no guardar relación léxica con la entrada y ser un sinónimo del mismo espacio semántico. El autor recomienda filtrar sobre las top K predicciones con medidas como la distancia de edición, o usar `use_lexicon=True`.
+- El modo `use_lexicon=True` está en fase beta: su algoritmo de selección puede cambiar y no es el comportamiento por defecto de `predict`. Además, no está exento de errores: en la muestra de 400 frases falló en 75 palabras en las que la ruta por defecto no fallaba.
+- Coste de memoria del modo léxico: el índice en memoria consume un par de GB de RAM y tarda alrededor de un minuto en construirse; los modos de bajo consumo no están expuestos en `predict`.
+- Cobertura limitada al hebreo: no se declara soporte para otros idiomas, lo que restringe su uso a corpus en hebreo.
+- Restricciones de licencia: el modelo se distribuye bajo CC BY 4.0, pero el modo `use_lexicon=True` está gobernado por CC BY-NC 4.0 al depender del conjunto `dicta-il/wordlist`, lo que impide su uso comercial sin licencia adicional. La model card menciona que se puede solicitar una licencia comercial gratuita para pequeñas empresas, pero no detalla los términos.
+- Longitud de contexto no documentada: no se especifica la ventana máxima de entrada, lo que obliga a validar empíricamente el truncado en frases largas.
+- No es un modelo generativo: no debe emplearse para generación de texto, razonamiento, código ni conversación; su uso está acotado a etiquetado y extracción de características.
+- Modelo con poca adopción pública en Hugging Face (2 likes y 891 descargas en el momento de la consulta), lo que implica menor validación comunitaria y menos informes de casos límite.
+- Los nombres propios y topónimos fuera de vocabulario requieren un paso adicional de segmentación con `dictabert-seg` para recuperar un lexema útil.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-lex
-- Artículo asociado: https://arxiv.org/abs/2403.06970
-- Colección DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
-- Herramienta complementaria de segmentación: https://huggingface.co/dicta-il/dictabert-seg
-- Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-
-Nota: la búsqueda web realizada no devolvió recursos relevantes sobre este modelo; los resultados obtenidos correspondían a definiciones del término francés "dicta" y a un sitio de dictados en francés (dictaly.com), sin relación con el modelo.
+- Artículo DictaBERT: https://arxiv.org/abs/2403.06970
+- Colección de modelos DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
+- Modelo de segmentación complementario: https://huggingface.co/dicta-il/dictabert-seg
+- Conjunto de datos léxico: https://huggingface.co/datasets/dicta-il/wordlist

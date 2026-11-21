@@ -2,110 +2,98 @@
 
 ## Resumen
 
-`mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF` es un repositorio de cuantizaciones estáticas en formato GGUF generado por el usuario mradermacher a partir del modelo `hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local del modelo original, publicada el 13 de septiembre de 2026 en Hugging Face. El repositorio ocupa 96,2 GB e incluye trece variantes de cuantización distintas, desde `x-f16` hasta `Q2_K`, lo que permite desplegar el modelo en hardware muy diverso.
+Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF es una cuantizacion estatica en formato GGUF del modelo hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim, publicada por mradermacher. El modelo base pertenece a la familia Qing-Sec, aparentemente orientada a tareas de seguridad (el sufijo "Sec" y el nombre sugieren un fine-tuning especializado), construida sobre una base Qwen3 de 27B y reducida ("Slim") a aproximadamente 19.285 millones de parametros reales segun los safetensors del repositorio. Esta publicacion no aporta pesos originales: su valor es hacer accesible el modelo en un rango de cuantizaciones que va de 7,9 GB (Q2_K) a 20,6 GB (Q8_0), lo que permite ejecutarlo en hardware de consumo.
 
-El dato de parámetros verificable (procedente de los pesos en safetensors del modelo base) es de 19.285.624.544 parámetros, es decir, aproximadamente 19,29 mil millones. Existe una discrepancia entre ese recuento y el sufijo `27B` que aparece en el nombre del modelo, que el autor de la cuantización no aclara en la información disponible. Tampoco se documentan la licencia, los idiomas soportados ni la arquitectura concreta en los metadatos proporcionados.
+El repositorio es puramente de conversion: no incluye model card tecnica del modelo original, ni datos de entrenamiento, ni benchmarks, ni informacion sobre licencia o idiomas. La model card se limita a listar los ficheros GGUF generados, sus tamanos y recomendaciones genericas de uso de llama.cpp. Cualquier evaluacion de capacidades debe hacerse, por tanto, sobre el modelo base hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim, cuyos detalles no estan disponibles en la informacion proporcionada.
 
-La relevancia de esta ficha radica en su utilidad práctica: es la vía más directa para ejecutar un modelo conversacional de ~19B en GPU de consumo mediante llama.cpp u Ollama, sin necesidad de infraestructura de servidor. Ahora bien, la ausencia de model card propia, de benchmarks y de licencia explícita obliga a tratar el repositorio con cautela antes de usarlo en producción.
+La relevancia practica de esta publicacion radica en que ofrece cuantizaciones K-quant estaticas (sin imatrix) de un modelo de ~19B en un momento en que las alternativas en ese rango de tamano con contexto largo son escasas. El autor advierte explicitamente de que las cuantizaciones ponderadas con imatrix no estan disponibles por su parte en el momento de la publicacion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre del modelo base sugiere linaje Qwen3, no confirmado por el autor) |
-| Parámetros totales | 19.285.624.544 (~19,29B), dato real de safetensors |
-| Parámetros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo base derivado de Qwen3, segun el nombre; sin confirmar en la informacion) |
+| Parametros totales | 19.285.624.544 (~19,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas, sin imatrix) |
+| Idiomas soportados | en (segun la model card del repositorio GGUF) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas, `quantize_version: 2`, `convert_type: hf`) |
-| Tamaño del repositorio | 96,2 GB (conjunto de todas las cuantizaciones) |
-| Fecha de publicación | 13 de septiembre de 2026 |
-| Descargas / likes | 0 / 0 |
-| Etiquetas | gguf, endpoints_compatible, region:us, conversational |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye presumiblemente en safetensors |
+| Tamano del repo | 134,4 GB |
+| Cuantizacion mas pequena | Q2_K, 7,9 GB |
+| Cuantizacion mas grande | Q8_0, 20,6 GB |
+| Descargas | 964 |
+| Fecha de creacion | 2026-09-13 |
+| Ultima actualizacion | 2026-10-07 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim` más allá de lo que sugiere su denominación. El segmento `Qwen3` del nombre apunta a un linaje derivado de la familia Qwen3, y el sufijo `Slim` es habitual en modelos podados o destilados, pero ninguna de estas dos inferencias está confirmada por el autor en los datos disponibles. El repositorio cuantizado no incluye model card propia: el README se limita a indicar que se trata de "static quants of hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim".
+No hay informacion disponible sobre la arquitectura interna, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion (RLHF, DPO) del modelo base hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim. El nombre sugiere una base Qwen3 de 27B con una reduccion de parametros ("Slim") hasta ~19,3B, pero no se documenta el metodo de poda, destilacion o reentrenamiento empleado, ni si se trata de un fine-tuning sobre Qwen3 o de una arquitectura propia.
 
-En cuanto al proceso de cuantización, los metadatos internos confirman `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos en formato Hugging Face seguida de una cuantización estática de los tensores de salida. No hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documenta ninguna innovación técnica en decodificación o mecanismos de atención.
+El repositorio GGUF no aporta innovaciones tecnicas propias mas alla de la conversion a formato llama.cpp. La model card indica que las cuantizaciones son estaticas (no ponderadas con imatrix) y que el autor no tiene previsto generarlas, salvo peticion explicita en la seccion de discusiones de la comunidad. No se documenta decodificacion especulativa, atencion lineal ni otras optimizaciones.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante Hugging Face Inference Endpoints, aunque no se detalla la configuración.
-- Inferencia local en CPU y GPU: al estar en formato GGUF, es ejecutable con llama.cpp y derivados.
-- Razonamiento, código, matemáticas o capacidades multimodales: no disponible. No hay información que confirme ninguna de estas capacidades.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declara ninguna lista de idiomas.
-- Modo de razonamiento explícito (thinking), visión o audio: no disponible.
+- Generacion de texto conversacional: el tag "conversational" del repositorio indica un uso previsto de dialogo multi-turno, aunque no se detallan capacidades especificas.
+- Idiomas: la model card declara unicamente ingles ("en"); no hay evidencia de soporte multilingue.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Razonamiento multi-paso y agentes: no disponible en la informacion proporcionada.
+- Codigo, matematicas, vision o audio: no disponible en la informacion proporcionada.
+- Modo de razonamiento explicito (thinking mode): no disponible en la informacion proporcionada.
+
+Dado el caracter del repositorio (solo cuantizaciones), cualquier capacidad adicional debe verificarse contra la model card del modelo base, que no forma parte de la informacion disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en estación de trabajo: con las cuantizaciones Q4_K_M o Q5_K_M, el modelo cabe en una GPU de 16-24 GB y permite mantener un asistente de diálogo privado sin enviar datos a servicios externos. Es adecuado porque el formato GGUF está optimizado para inferencia en un solo equipo.
-- Despliegue en portátil con GPU modesta: las variantes Q3_K_S o IQ4_XS reducen el peso a un rango de 9-12 GB, lo que permite ejecutar el modelo en equipos con GPU de 12 GB y memoria unificada, a costa de cierta pérdida de calidad respecto a Q4_K_M.
-- Prototipado rápido de aplicaciones conversacionales: al existir trece cuantizaciones en un mismo repositorio, un desarrollador puede comparar el equilibrio calidad/velocidad de cada una sin convertir pesos manualmente.
-- Servicio de chat autoalojado con `endpoints_compatible`: la etiqueta sugiere que el modelo puede levantarse como endpoint gestionado, útil para equipos que ya operan sobre infraestructura de Hugging Face.
-- Procesamiento por lotes de conversaciones en CPU: con Q4_K_M y llama.cpp sobre CPU con suficiente RAM (16-24 GB), es viable procesar lotes de diálogos sin GPU, por ejemplo para tareas de reescritura o clasificación conversacional.
-- Evaluación comparativa interna (baseline): sirve como referencia de un modelo de ~19B cuantizado frente a alternativas mayores o menores en pruebas propias, aunque no haya benchmarks publicados que lo respalden.
-- Investigación sobre el impacto de la cuantización: el repositorio permite estudiar cómo degradan Q2_K, Q3_K y Q8_0 el comportamiento de un mismo modelo base en tareas concretas.
+- Despliegue en estaciones de trabajo con GPU de consumo: la cuantizacion Q4_K_M (12,0 GB) permite ejecutar un modelo de ~19,3B en GPUs con 16 GB de VRAM, como una RTX 4080 o 4090, mediante llama.cpp u Ollama, con calidad cercana al modelo original.
+- Prototipado local de asistentes conversacionales en ingles: el tag "conversational" y el formato GGUF lo hacen adecuado para iterar rapidamente en entornos de desarrollo sin depender de APIs externas.
+- Evaluacion de modelos orientados a seguridad: el nombre Qing-Sec sugiere un fine-tuning para tareas de seguridad; puede usarse como banco de pruebas local para comparar respuestas frente al modelo base, siempre que se valide su comportamiento con datos propios.
+- Inferencia en CPU con RAM abundante: la cuantizacion Q2_K (7,9 GB) permite ejecucion en CPU con 16 GB de RAM, util para entornos sin GPU dedicada y para pruebas de integracion en CI.
+- Fine-tuning posterior sobre el modelo base: quien necesite ajustar el modelo puede partir de hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim en safetensors y usar estas cuantizaciones solo para validacion rapida de comportamiento antes de invertir en entrenamiento.
+- Distribucion offline en entornos aislados: el formato GGUF y el rango de tamanos permiten empaquetar el modelo en USB o imagenes de contenedor para despliegues sin acceso a internet, algo habitual en entornos de investigacion restringidos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye tabla de MMLU, HumanEval, GSM8K ni ninguna otra métrica, y los resultados de la búsqueda web realizada no contienen datos relevantes sobre el modelo (devolvieron páginas sin relación con el tema).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes estimaciones de VRAM se derivan del recuento de parámetros (19,29B) y del tamaño típico por peso de cada cuantización; no proceden del autor del modelo.
-
-- VRAM estimada para inferencia (pesos, sin contar caché KV ni overhead):
-  - Q2_K: ~7-8 GB
-  - Q3_K_S: ~8,5-9,5 GB
-  - Q3_K_M: ~9,5-10,5 GB
-  - Q3_K_L: ~10,5-11,5 GB
-  - IQ4_XS: ~11-12 GB
-  - Q4_K_S: ~11,5-12,5 GB
-  - Q4_K_M: ~12-13 GB
-  - Q5_K_S: ~13,5-14,5 GB
-  - Q5_K_M: ~14-15 GB
-  - Q6_K: ~16-17,5 GB
-  - Q8_0: ~20,5-22 GB
-  - x-f16: ~38,5-40 GB
-- GPU recomendadas: RTX 4090, RTX 3090 o RTX 4080 (24/16 GB) para Q4-Q8 en GPU; A100 40 GB, H100 o dos GPU de 24 GB para la variante f16.
-- Cabe en GPU de consumo: sí. Una RTX 3060 de 12 GB o una RTX 4070 pueden ejecutar Q3_K_S, IQ4_XS y, al límite, Q4_K_S. Una RTX 4060 Ti de 16 GB o una RTX 4080 admiten Q5_K_M. La RTX 4090 (24 GB) admite Q8_0.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, LM Studio, koboldcpp, text-generation-webui y servidores compatibles con la API de llama.cpp. vLLM o TGI no están confirmados para este repositorio; consulte la documentación de cada herramienta para el soporte de GGUF.
-- Latencia y throughput estimados: no disponible. Dependen del hardware, de la cuantización y de la longitud de contexto efectiva, y el autor no publica mediciones.
+- VRAM estimada para inferencia (aproximada, segun la cuantizacion):
+  - Q2_K: ~8 GB
+  - Q3_K_M: ~10 GB
+  - IQ4_XS / Q4_K_S: ~11-12 GB
+  - Q4_K_M: ~12 GB
+  - Q5_K_M: ~14 GB
+  - Q6_K: ~16 GB
+  - Q8_0: ~21 GB
+- GPU recomendadas: RTX 4090 (24 GB) para Q6_K y Q8_0; RTX 4080 / 4070 Ti Super (16 GB) para Q4_K_M y Q5_K_M; GPUs de 12 GB (RTX 3060, 4070) para Q3_K_M o IQ4_XS con offload parcial.
+- Cabe en GPU de consumo: si, desde Q2_K hasta Q6_K en GPUs de 16-24 GB; Q8_0 requiere 24 GB o reparto entre GPU y CPU.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF como llama-cpp-python. El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI en algunos runners.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Nota: el repositorio pesa 134,4 GB en total por incluir todas las cuantizaciones; solo es necesario descargar el fichero GGUF de la variante elegida.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento, licencia ni contexto para establecer una comparación cuantitativa fiable. La siguiente tabla recoge únicamente lo verificable.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Observaciones |
-|---|---|---|---|---|---|
-| mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF | 19,29B | no disponible | no disponible | GGUF (13 cuantizaciones) | Cuantización comunitaria, 0 descargas |
-| hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim (base) | 19,29B | no disponible | no disponible | safetensors | Modelo de origen; sin datos publicados en la información disponible |
-| Alternativas de ~20B en GGUF | no disponible | no disponible | no disponible | GGUF | No se han identificado alternativas concretas con datos verificables en la información proporcionada |
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparacion rigurosa con alternativas de tamano similar. Como referencia estructural, el modelo se situa en el rango de ~19B parametros, comparable en tamano a otros modelos de la familia Qwen de 14-32B, pero sin datos de benchmarks no es posible establecer una comparacion fundamentada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. Al desconocerse el dataset de entrenamiento y el proceso de alineación, no es posible caracterizar sesgos.
-- Riesgo de alucinación: no evaluado. No hay benchmarks ni evaluaciones publicadas por el autor de la cuantización ni por el autor del modelo base.
-- Discrepancia de nomenclatura: el nombre declara `27B` mientras que los pesos safetensors suman ~19,29B. Conviene verificar la procedencia real del modelo base antes de confiar en él.
-- Licencia no declarada: la ausencia de licencia explícita impide determinar si el uso comercial está permitido. No utilice el modelo en producción sin aclarar antes los términos con el autor original.
-- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma concreto.
-- Longitud de contexto desconocida: no se puede dimensionar la caché KV ni planificar aplicaciones que dependan de ventanas largas.
-- Cuantizaciones de baja precisión: Q2_K y Q3_K_* pueden degradar de forma notable la coherencia y el seguimiento de instrucciones. Q4_K_M o superior es la opción recomendada para uso real.
-- Repositorio sin adopción: 0 descargas y 0 likes en el momento de redactar esta ficha, lo que implica ausencia de validación por parte de la comunidad.
-- Riesgo de seguridad en cadenas de suministro: al ser una cuantización de terceros, conviene verificar los hashes de los archivos GGUF frente al modelo base.
-- Soporte limitado en servidores de alto rendimiento: GGUF no es el formato nativo de vLLM o TGI, lo que puede limitar el throughput en despliegues con concurrencia alta.
+- Ausencia total de documentacion tecnica: no hay model card del modelo base en la informacion disponible, ni datos de entrenamiento, licencia o evaluacion.
+- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar la licencia del modelo base hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim antes de cualquier despliegue en produccion.
+- Solo ingles declarado: no hay evidencia de soporte para castellano u otros idiomas; el rendimiento en espanol es desconocido.
+- Riesgo de alucinacion: no evaluado; sin benchmarks ni evaluaciones publicadas no es posible estimar la fiabilidad factua.
+- Cuantizaciones estaticas sin imatrix: las variantes de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad frente a cuantizaciones ponderadas; el autor recomienda Q4_K_S o Q4_K_M como equilibrio.
+- Sesgos: no documentados; al no conocerse la composicion del dataset de entrenamiento, no se pueden anticipar sesgos especificos.
+- Contexto desconocido: no se puede confirmar la ventana de contexto soportada, lo que limita el diseno de aplicaciones con documentos largos.
+- Repositorio de terceros: el publicador (mradermacher) no es el autor del modelo; la trazabilidad y el soporte dependen del repositorio original.
 
 ## Enlaces
 
-- Repositorio cuantizado en Hugging Face: https://huggingface.co/mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF
 - Modelo base: https://huggingface.co/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- Documentación de llama.cpp (formato GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
-- Papers, blogs o demos específicos del modelo: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo.
+- Pagina de resumen del publicador: https://hf.tst.eu/model#Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

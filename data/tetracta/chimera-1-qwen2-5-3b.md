@@ -2,52 +2,53 @@
 
 ## Resumen
 
-Chimera-1-Qwen2.5-3B es un modelo de lenguaje de 3.085.938.688 parámetros (3B) desarrollado por Tetracta AI como demostración de método, no como asistente de producción. Se construye mediante un merge TIES (trim, elect sign, disjoint mean) sin entrenamiento adicional a partir de dos especialistas derivados por fine-tuning ligero de Qwen2.5-3B-Instruct. El objetivo es responder empíricamente si es posible combinar dos habilidades especializadas en un único modelo sin degradar las capacidades generales del modelo base.
+Chimera-1-Qwen2.5-3B es un modelo de lenguaje de 3.085.938.688 parámetros desarrollado por Tetracta AI Teams mediante fusión de modelos (model merging) sin entrenamiento adicional en la fase de merge. Parte de Qwen/Qwen2.5-3B-Instruct como modelo base y combina dos especialistas creados por el propio autor mediante fine-tuning ligero de las capas superiores: uno especializado en conversión de números romanos y otro en operaciones a nivel de carácter sobre palabras. El objetivo no es producir un asistente de producción, sino demostrar empíricamente qué habilidades puede transferir un merge TIES (trim, election, disjoint mean) a un único modelo sin degradar sus capacidades generales.
 
-El modelo parte de la arquitectura Qwen2, con formato de chat ChatML idéntico al de Qwen2.5-3B-Instruct y licencia Qwen Research (no comercial). Las dos habilidades implantadas son conversión de números romanos y operaciones carácter a carácter sobre palabras; se eligieron porque el modelo base rinde mal en ellas (76% y 45% respectivamente), lo que deja margen de mejora medible.
+La relevancia del modelo es metodológica: sirve como evidencia reproducible de que una edición de capacidades mediante merge sin entrenamiento puede mejorar habilidades objetivo concretas (+8,8 y +25,0 puntos en las dos tareas implantadas en una evaluación de 1.210 preguntas) manteniendo los benchmarks estándar dentro del ruido de ejecución en bf16 (desviación máxima de 1,3 pp en MMLU, ARC-Challenge, HellaSwag y Belebele en varios idiomas). El merge se ejecuta en CPU en minutos y no añade coste de inferencia, ya que el resultado es un único modelo de 3B.
 
-La relevancia del modelo es metodológica: documenta una ley empírica validada en 10 experimentos (sinergia de merge = margen de mejora × complementariedad × proximidad al base) y publica un catálogo honesto de fallos, incluido un control negativo en el que un merge de modelo de código cae al 0%. No aporta capacidades nuevas respecto al base en benchmarks estándar.
+El modelo hereda la licencia Qwen Research (no comercial, uso de investigación) y el formato de chat ChatML de Qwen2.5, por lo que es intercambiable con el base a nivel de API. Está etiquetado únicamente en inglés y su ámbito declarado es la demostración de método, no el despliegue como asistente general.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
-| Parametros totales | 3.085.938.688 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-3B-Instruct) |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada |
-| Idiomas soportados | en (ingles declarado; el modelo base soporta mas idiomas) |
-| Licencia | Qwen Research License (qwen-research, no comercial) |
-| Formato de pesos | safetensors (bf16) |
+| Arquitectura | Transformer decoder-only (Qwen2), derivada de Qwen2.5-3B-Instruct |
+| Parámetros totales | 3.085.938.688 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantización | No disponible en la información proporcionada (pesos publicados en safetensors, presumiblemente bf16) |
+| Idiomas soportados | Inglés (etiqueta `en`); el modelo base Qwen2.5 soporta más idiomas, pero la card solo declara inglés |
+| Licencia | Qwen Research License (no comercial, uso de investigación), heredada de Qwen2.5-3B-Instruct |
+| Formato de pesos | safetensors (tamaño del repo: 6,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen2, con 3B parámetros en precisión bf16. No hay entrenamiento en la fase de merge: los dos especialistas se obtuvieron mediante fine-tuning ligero de solo las capas superiores sobre Qwen2.5-3B-Instruct, y la fusión se realizó con TIES (task-vector trim, elección de signo y media disjunta), un algoritmo que opera sobre vectores de tarea y se ejecuta en CPU en minutos.
+El modelo es un transformer decoder-only denso de la familia Qwen2, con 3.085.938.688 parámetros, construido sobre Qwen2.5-3B-Instruct. No hay entrenamiento en la fase de merge: el proceso es un TIES merge (task-vector trim, sign election y disjoint mean) que combina los vectores de tarea de dos especialistas respecto al modelo base compartido. Los especialistas fueron creados por Tetracta mediante fine-tuning ligero limitado a las capas superiores, y el merge completo se ejecuta en CPU en minutos.
 
-La innovación documentada no es arquitectónica sino metodológica. Tetracta valida empíricamente que la sinergia del merge depende de tres factores: margen de mejora del base en la tarea, complementariedad real entre los especialistas y proximidad de cada padre al modelo base compartido. También reporta un resultado negativo relevante: tres intentos de merge guiado por mapas internos de divergencia (X-Ray) no superaron a TIES uniforme en promedio, y la interpretación original de la model card sobre la capacidad predictiva de X-Ray fue retirada formalmente el 6 de septiembre de 2026.
+La metodología declarada por el autor establece una regla empírica basada en diez experimentos: la sinergia del merge depende de headroom (margen de mejora del base en la tarea), complementariedad entre especialistas y proximidad al base compartido. El autor documenta un control negativo en el que un modelo de código fusionado cae al 0% en tareas de código, ilustrando que merges agresivos sobre padres que se han alejado mucho del base producen resultados degenerados. Tres variantes exploratorias de merge no superaron al TIES uniforme en promedio. No se especifican en la información disponible el número de tokens de entrenamiento de los especialistas, la composición del dataset ni si se empleó RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con formato ChatML idéntico al base.
-- Conversión de números romanos a arábigos y viceversa, con precisión medida del 89% en el conjunto de 1.210 preguntas (91,2% en el subconjunto de 80 preguntas de números romanos).
-- Operaciones carácter a carácter sobre palabras (por ejemplo, deletrear al revés), con 71% de acierto en el conjunto completo (62,5% en el subconjunto de 80).
-- Razonamiento general y conocimiento enciclopédico equivalentes al base: MMLU 66,5%, ARC-Challenge 81,5%, HellaSwag 71,3%.
-- Comprensión lectora multilingüe heredada del base: Belebele en inglés, turco, árabe, chino y ruso.
+- Generación de texto conversacional en formato ChatML, idéntico al base Qwen2.5-3B-Instruct.
+- Conversión de números romanos a arábigos (habilidad implantada; 91,2% en la evaluación de 80 preguntas frente a 82,5% del base).
+- Operaciones a nivel de carácter sobre palabras, como deletrear al revés (habilidad implantada; 62,5% frente a 37,5% del base).
+- Razonamiento general y conocimiento enciclopédico comparable al base (MMLU 66,5%).
+- Comprensión lectora multilingüe parcial, evaluada en inglés, turco, árabe, chino y ruso mediante Belebele, con rendimiento equivalente al base.
 - No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación sobre model merging: sirve como caso de referencia reproducible para estudiar TIES y comparar con otras técnicas de fusión sin coste de entrenamiento.
-- Validación de arneses de evaluación: el modelo incluye un sanity check con MMLU del base (67,0%) que permite verificar que un harness mide correctamente antes de confiar en sus resultados.
-- Docencia y divulgación sobre interpretabilidad: los mapas de divergencia por capa y el catálogo de fallos publicados permiten ilustrar qué se puede y qué no se puede predecir del merge desde los pesos.
-- Pruebas de regresión de capacidad: útil para comprobar que una edición de pesos tiene un radio de impacto medible (máximo |Δ| de 1,3 pp en 1.050 preguntas estándar).
-- Experimentos controlados de especialización: las dos habilidades implantadas son verificables de forma automática, lo que facilita diseñar experimentos con métrica objetiva.
-- Evaluación de licencias y despliegue de modelos de investigación: al heredar la Qwen Research License, sirve para probar pipelines internos de inferencia en entornos no comerciales.
+- Investigación sobre model merging: el modelo sirve como caso reproducible para estudiar la transferencia de habilidades mediante TIES sin entrenamiento, con métricas de referencia publicadas y comparables contra el base.
+- Validación de pipelines de merge: permite comprobar que un pipeline TIES propio reproduce los deltas reportados (+8,8 y +25,0 pp en las tareas implantadas) antes de aplicarlo a especialistas propios.
+- Docencia y formación técnica: ilustra de forma concreta la diferencia entre fine-tuning de especialistas y fusión de vectores de tarea, con un control negativo documentado sobre merges degenerados.
+- Pruebas de regresión de harness de evaluación: el autor verifica su harness contra el MMLU público del base (67,0%), por lo que el modelo sirve para calibrar herramientas de evaluación propias.
+- Experimentos de edición de capacidades: útil para estudiar hasta qué punto se pueden añadir habilidades verificables (conversión, manipulación de cadenas) sin degradar benchmarks estándar medibles.
+- Sustitución directa del base en prototipos de investigación: al compartir tokenizador, formato ChatML y arquitectura, puede intercambiarse con Qwen2.5-3B-Instruct en scripts existentes sin cambios de código.
+- Exploración de límites del merge: el modelo documenta que si el base ya resuelve la tarea no hay ganancia, lo que permite diseñar experimentos de headroom antes de invertir en especialistas.
 
 ## Benchmarks y rendimiento
 
-Comparativa publicada por el autor sobre 1.210 preguntas, mismo harness para ambos modelos:
+Comparativa cabeza a cabeza contra el modelo base, 1.210 preguntas, mismo harness para ambos modelos:
 
 | Benchmark | Base | Chimera-1 | Δ |
 |---|---|---|---|
@@ -62,44 +63,55 @@ Comparativa publicada por el autor sobre 1.210 preguntas, mismo harness para amb
 | Números romanos (80) | 82,5% | 91,2% | +8,8 |
 | Operaciones con letras (80) | 37,5% | 62,5% | +25,0 |
 
-Resultados de la tabla resumen del autor (conjunto completo de 1.210 preguntas): habilidad A 89%, habilidad B 71%, Belebele-EN 50%, perplejidad 68,1 (idéntica al base), chat idéntico bit a bit al base.
+Resultados de la comparativa resumida de la card (piloto y head-to-head):
+
+| Modelo | Habilidad A (romanos) | Habilidad B (letras) | Belebele-EN | Perplejidad | Chat |
+|---|---|---|---|---|---|
+| Qwen2.5-3B-Instruct (base) | 76% | 45% | 50% | 68,1 | Sí |
+| Especialista A | 98% | 45% | — | — | — |
+| Especialista B | 80% | 75% | — | — | — |
+| Chimera-1 | 89% | 71% | 50% | 68,1 | Sí, sin diferencia visible |
+
+El autor indica que todos los benchmarks estándar quedan dentro de una banda de ruido de ±2 pp en bf16 (desviación máxima observada de 1,3 pp) y que los benchmarks no ejecutados podrían moverse. Los resultados no han sido revisados externamente.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 6,2 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica entre 8 y 10 GB para contexto moderado.
-- VRAM estimada en cuantización de 8 bits: alrededor de 3,5-4 GB; en 4 bits, alrededor de 2-2,5 GB (estimaciones por tamaño, no publicadas por el autor).
-- GPU recomendadas: cualquier GPU con 16 GB o más para bf16 sin cuantizar (RTX 4090, A100, H100); GPUs de 8 GB pueden ejecutar versiones cuantizadas.
-- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en bf16, y en GPUs de 8 GB con cuantización.
-- Opciones de despliegue: transformers (el autor proporciona snippet con `AutoModelForCausalLM` y `dtype="bfloat16"`); vLLM, llama.cpp, Ollama y TGI son compatibles con la arquitectura Qwen2, aunque el autor no los documenta explícitamente.
+- VRAM estimada para inferencia en bf16: aproximadamente 6,2 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomienda al menos 8 GB para contexto corto.
+- En cuantización de 8 bits, el peso se reduce a unos 3,1 GB; en 4 bits, a unos 1,6 GB, aunque el autor no publica pesos cuantizados en el repo.
+- GPU consumer compatibles: RTX 3090, RTX 4090, RTX 4080, RTX 4070 Ti y tarjetas con 8-12 GB o más para bf16; tarjetas de 6-8 GB con cuantización.
+- GPU de datacenter: A100, H100, L40S, A10G, sin problema de memoria para este tamaño.
+- Opciones de despliegue: transformers (el snippet de la card usa `AutoModelForCausalLM` con `dtype="bfloat16"`), vLLM, TGI, llama.cpp y Ollama son opciones habituales para arquitecturas Qwen2, aunque el autor solo documenta transformers explícitamente.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Chimera-1-Qwen2.5-3B | 3,09B | no disponible | Qwen Research (no comercial) | Merge TIES de dos especialistas; MMLU 66,5%, Romanos 91,2%, Letras 62,5% |
-| Qwen2.5-3B-Instruct | 3,09B | no disponible en la fuente | Qwen Research (no comercial) | Base del anterior; MMLU 67,0%, Romanos 82,5%, Letras 37,5% |
-| Especialista A (Tetracta) | 3,09B | no disponible | Qwen Research | Fine-tuning de capas superiores; Romanos 98%, Letras 45% |
-| Especialista B (Tetracta) | 3,09B | no disponible | Qwen Research | Fine-tuning de capas superiores; Romanos 80%, Letras 75% |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Chimera-1-Qwen2.5-3B | 3,09B | No disponible | Qwen Research (no comercial) | Merge TIES de dos especialistas sobre Qwen2.5-3B-Instruct | Hugging Face, 798 descargas |
+| Qwen2.5-3B-Instruct | 3,09B | No disponible en la información proporcionada | Qwen Research | Modelo instructivo base, entrenado por Alibaba | Hugging Face, ampliamente usado |
+| Especialista A (Tetracta) | 3,09B | No disponible | Qwen Research | Fine-tuning de capas superiores para números romanos | No publicado como modelo independiente en la información disponible |
+| Especialista B (Tetracta) | 3,09B | No disponible | Qwen Research | Fine-tuning de capas superiores para operaciones con letras | No publicado como modelo independiente en la información disponible |
 
-No se dispone de comparación con modelos de terceros de la misma categoría en la información proporcionada.
+El modelo comparable más directo es su propio base, Qwen2.5-3B-Instruct, con idéntica arquitectura, tamaño y licencia; la diferencia medible se limita a las dos habilidades implantadas. No se dispone de datos de benchmarks frente a otros modelos de 3B en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia Qwen Research: uso exclusivamente no comercial y de investigación; no apta para producción comercial sin licencia adicional de Qwen.
-- Modelo de demostración de método: el autor lo declara explícitamente como no destinado a asistente de producción.
-- Las dos habilidades implantadas son deliberadamente simples y verificables; los resultados no garantizan que el merge funcione con habilidades complejas o con padres que hayan derivado mucho del base.
-- Riesgo de alucinación: no evaluado ni documentado en la información proporcionada.
-- Sesgos: no documentados en la información proporcionada.
-- Idiomas: la model card declara solo inglés, aunque el base soporta más idiomas y los benchmarks Belebele cubren TR, AR, ZH y RU con resultados equivalentes al base.
-- La interpretación original sobre la capacidad predictiva de X-Ray fue retirada el 6 de septiembre de 2026; cualquier resultado de interpretabilidad citado en versiones previas de la card no es evidencia vigente.
-- El control negativo del autor muestra que merges agresivos con padres muy alejados del base pueden degradar habilidades hasta el 0% (caso del modelo de código), lo que exige validación específica antes de reutilizar la receta.
+- El propio autor lo define como demostración de método, no como asistente de producción.
+- Licencia Qwen Research: uso no comercial y de investigación; no apto para despliegue comercial sin autorización adicional.
+- Solo se declara inglés; el rendimiento en otros idiomas no está garantizado por la card, aunque se evalúe Belebele en TR, AR, ZH y RU.
+- Riesgo de alucinación inherente a un modelo de 3B, no cuantificado en la información disponible.
+- Los benchmarks no ejecutados por el autor podrían degradarse; la afirmación de "sin regresión" se limita a los benchmarks medidos.
+- Resultados no revisados externamente; el autor retira explícitamente interpretaciones anteriores de Model X-Ray como evidencia de esta fusión.
+- El merge puede producir resultados degenerados si los especialistas se alejan mucho del base (control negativo documentado con caída al 0% en código).
+- No hay pesos cuantizados publicados en el repo; el despliegue en hardware limitado requiere cuantización propia.
+- Las habilidades implantadas son deliberadamente simples y verificables; no implican mejoras en razonamiento general.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tetracta/Chimera-1-Qwen2.5-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
-- Write-up de investigación y catálogo de fallos: https://www.tetracta.ai/research.html
-- Servicio Model X-Ray: https://www.tetracta.ai/xray.html
+- Nota técnica del estudio: https://www.tetracta.ai/note-chimera-merge.html
+- Página de investigación de Tetracta: https://www.tetracta.ai/research/
+- Model X-Ray (servicio separado): https://www.tetracta.ai/work/model-xray.html
 - Registro de corrección de Model X-Ray: https://www.tetracta.ai/model-xray/correction/

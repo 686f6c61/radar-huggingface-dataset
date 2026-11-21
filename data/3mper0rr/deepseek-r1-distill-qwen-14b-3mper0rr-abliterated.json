@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 812,
+  "downloads_30d": 822,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ICOT College",
-      "url": "https://icot.ie/",
-      "snippet": "Dec 21, 2024 · With over 15 years of excellence in education, ICOT College has a proven track record of helping students achieve …"
-    },
-    {
-      "title": "Home – ICOT College",
-      "url": "https://icot.ie/home2/",
-      "snippet": "Dec 21, 2024 · With over 15 years of excellence in education, ICOT College has a proven track record of helping students achieve …"
-    },
-    {
-      "title": "Home – ICOT College",
-      "url": "https://icot.ie/home3/",
-      "snippet": "Nov 29, 2024 · With over 15 years of excellence in education, ICOT College has a proven track record of helping students achieve …"
-    },
-    {
-      "title": "Our Services – ICOT College",
-      "url": "https://icot.ie/our-services/",
-      "snippet": "At ICOT College, we are committed to helping you succeed academically. Our Academics are dedicated to providing personalised …"
-    },
-    {
-      "title": "About Us – ICOT College",
-      "url": "https://icot.ie/about-us/",
-      "snippet": "With campuses in Dublin and Cork, Ireland, we have been providing education since 2010, offering over a decade and a half …"
-    }
-  ]
+  "sources": []
 }

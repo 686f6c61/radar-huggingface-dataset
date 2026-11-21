@@ -2,110 +2,107 @@
 
 ## Resumen
 
-Geo-trax es un modelo de detección de objetos basado en YOLOv8s, desarrollado por el REAL Lab (rfonod), especializado en la detección de vehículos en imágenes aéreas de drones con vista cenital (bird's-eye view, BEV). Forma parte de un pipeline más amplio llamado Geo-trax que extrae trayectorias de vehículos georreferenciadas a partir de vídeo aéreo de alta altitud, orientado al análisis de tráfico urbano a gran escala.
+Geo-trax es un detector de objetos basado en YOLOv8s, afinado por el autor rfonod para la detección de vehículos en imágenes aéreas de dron con vista cenital (bird's-eye view). El modelo forma parte del pipeline Geo-trax, una herramienta completa para extraer trayectorias de vehículos georreferenciadas a partir de vídeo grabado por drones a gran altitud (140-150 m), y es el detector que sustenta los resultados de la publicación asociada en Transportation Research Part C.
 
-El modelo resuelve el problema de detectar vehículos en imágenes aéreas de alta resolución (1920×1920 píxeles), un escenario donde los detectores estándar entrenados con imágenes a nivel de calle suelen fallar por la escala reducida de los objetos y la perspectiva cenital. Con 11,1 millones de parámetros, alcanza un mAP@50 de 0,951 y un mAP@50-95 de 0,711 en el conjunto de test de Songdo Vision v1, con un rendimiento casi saturado en coches y autobuses.
+El problema que resuelve es concreto: los detectores genéricos rinden mal sobre vehículos pequeños vistos desde arriba a gran altura, donde un coche ocupa pocos píxeles. Geo-trax se entrena y valida a resolución nativa de 1920 × 1920 px, lo que le permite localizar instancias minúsculas que los modelos estándar pasan por alto. Con 11,1 millones de parámetros y licencia CC BY 4.0, es un modelo ligero y desplegable, disponible también en formato ONNX y como paquete pip.
 
-La relevancia actual del modelo radica en que aborda un caso de uso creciente: la monitorización de tráfico mediante drones para estudios de movilidad urbana, planificación de infraestructuras y análisis de seguridad vial. Su licencia CC-BY-4.0 permite uso comercial con atribución, y su integración con el ecosistema Ultralytics facilita su adopción en proyectos existentes.
+Su relevancia actual radica en que alimenta el conjunto Songdo Traffic (~700.000 trayectorias georreferenciadas) y las máscaras de vehículos del Stabilo Benchmark, lo que lo convierte en una pieza de infraestructura para investigación en tráfico urbano y análisis de movilidad.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | YOLOv8s (horizontal bounding boxes, HBB) |
-| Parametros totales | 11.137.922 (11,1 M) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision) |
-| Tipos de cuantizacion | no disponible (formato nativo Ultralytics; compatible con exportacion a ONNX, TensorRT, etc.) |
-| Idiomas soportados | no aplica (modelo de vision) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | Ultralytics (PyTorch), ONNX disponible en el repo |
+| Arquitectura | YOLOv8s (detección de objetos, cajas horizontales HBB) |
+| Parámetros totales | 11.137.922 (11,1 M) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, entrada de 1920 × 1920 px) |
+| Tipos de cuantización | no disponible (se distribuye exportación ONNX; no se detallan cuantizaciones) |
+| Idiomas soportados | en (etiquetas y documentación en inglés) |
+| Licencia | CC BY 4.0 |
+| Formato de pesos | pesos Ultralytics (PyTorch) y exportación ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura YOLOv8s de Ultralytics, una red neuronal convolucional de una sola etapa (one-stage detector) que predice cajas delimitadoras horizontales y probabilidades de clase directamente desde la imagen de entrada. La variante "s" (small) es la versión ligera de la familia YOLOv8, con 11,1 millones de parámetros, diseñada para equilibrar precisión y velocidad de inferencia.
+Geo-trax emplea la arquitectura YOLOv8s de Ultralytics, un detector de una etapa con cajas horizontales (HBB). El modelo se inicializa desde Ultralytics/YOLOv8 y se afina sobre imágenes aéreas. La entrada se procesa a 1920 × 1920 px, resolución nativa que preserva el detalle necesario para vehículos de pocos píxeles captados desde 140-150 m de altitud.
 
-El entrenamiento se realizó en múltiples etapas sobre un total de 19.339 imágenes aéreas anotadas, con 679.306 instancias etiquetadas. Los datos provienen de una combinación de conjuntos públicos: Songdo Vision (rfonod/songdo-vision), VisDrone2019-DET y COCO (detection-datasets/coco). El proceso de entrenamiento multi-etapa se detalla en la publicación asociada (doi:10.1016/j.trc.2025.105205). La resolución de entrada es de 1920×1920 píxeles, notablemente superior a los 640×640 habituales en YOLOv8, lo que permite detectar vehículos pequeños en imágenes aéreas de alta altitud.
-
-El modelo distingue 6 clases, de las cuales 4 son evaluadas oficialmente (Car, Bus, Truck, Motorcycle) y 2 auxiliares no evaluadas (Pedestrian, Bicycle). La validación se realizó sobre el conjunto de test de Songdo Vision v1, con 1.084 imágenes y 55.124 instancias de vehículos.
+El entrenamiento se realizó sobre 19.339 imágenes aéreas anotadas con 679.306 instancias etiquetadas, en un proceso multi-etapa descrito en la publicación asociada (doi:10.1016/j.trc.2025.105205). El modelo distingue 6 clases: 4 primarias evaluadas (car, bus, truck, motorcycle) y 2 auxiliares no evaluadas (pedestrian, bicycle). La validación se llevó a cabo sobre el split de test de Songdo Vision v1 (1.084 imágenes, 55.124 instancias de vehículos).
 
 ## Capacidades
 
-- Detección de vehículos en imágenes aéreas cenitales: coches, autobuses, camiones y motocicletas, con alta precisión en coches (mAP@50 de 0,992) y autobuses (0,988).
-- Detección de peatones y bicicletas como clases auxiliares, aunque no evaluadas oficialmente en los benchmarks publicados.
-- Manejo de imágenes de alta resolución (1920×1920 píxeles), adecuado para detectar objetos pequeños en escenas aéreas densas.
-- Integración con el pipeline Geo-trax para extracción de trayectorias georreferenciadas, que combina detección con multi-objeto tracking y georreferenciación.
-- Compatible con el ecosistema Ultralytics (version ≥ 8.4.64), lo que permite fine-tuning, exportacion a ONNX/TensorRT y despliegue con herramientas estándar.
-- Exportacion a formato ONNX disponible en el repositorio, facilitando la inferencia en produccion con diferentes backends.
+- Detección de objetos en imágenes aéreas cenitales captadas por dron a gran altitud (140-150 m).
+- Detección de vehículos en 6 clases: coche (incluye furgonetas), autobús, camión, motocicleta, peatón y bicicleta.
+- Funcionamiento nativo a 1920 px de resolución de entrada, adecuado para instancias pequeñas.
+- Exportación a ONNX para despliegue en entornos sin PyTorch.
+- Integración directa con el pipeline Geo-trax para extracción de trayectorias georreferenciadas y exportación a GeoJSON y GeoPackage.
+- Uso como detector base para la generación de trayectorias del conjunto Songdo Traffic y de máscaras del Stabilo Benchmark.
+- No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo puramente perceptivo de visión por computador.
 
 ## Casos de uso
 
-- Monitorización de tráfico urbano con drones: el modelo detecta vehículos en vídeo aéreo de alta altitud, permitiendo contar flujos de tráfico, medir densidades y analizar patrones de congestión en tiempo real o diferido.
-- Extracción de trayectorias de vehículos para estudios de movilidad: integrado en el pipeline Geo-trax, convierte detecciones en trayectorias georreferenciadas que pueden usarse para calibrar modelos de simulación de tráfico o validar políticas de movilidad.
-- Análisis de seguridad vial: las trayectorias extraídas permiten identificar comportamientos de riesgo (cambios de carril bruscos, velocidades anómalas, conflictos entre vehículos) en intersecciones y tramos urbanos.
-- Planificación de infraestructuras: los datos de volumen y composición del tráfico (proporción de camiones, autobuses, motocicletas) sirven para dimensionar carriles, semáforos y rotondas con datos empíricos.
-- Generación de datos de entrenamiento para otros modelos: el detector puede anotar automáticamente grandes volúmenes de imágenes aéreas, reduciendo el coste de anotación manual en proyectos de visión por computador.
-- Investigación académica en visión aérea: sirve como baseline sólido para experimentos de detección de objetos en imágenes de drones, con pesos públicos y métricas reproducibles sobre Songdo Vision v1.
+- Análisis de tráfico urbano desde vídeo de dron: el modelo detecta vehículos fotograma a fotograma en grabaciones cenitales de alta altitud, permitiendo reconstruir el flujo de tráfico de una intersección o corredor urbano con precisión de instancia.
+- Extracción de trayectorias georreferenciadas: integrado en el pipeline Geo-trax, convierte las detecciones en trayectorias con coordenadas geográficas exportables a GeoJSON o GeoPackage para su análisis en SIG.
+- Investigación en movilidad y planificación urbana: al alimentar Songdo Traffic (~700.000 trayectorias), sirve de base para estudios de patrones de circulación, congestión y comportamiento de conductores.
+- Monitorización de aparcamientos y ocupación: la detección de coches con mAP@50 de 0,992 permite estimar ocupación de estacionamientos en imágenes aéreas de forma fiable.
+- Auditoría y validación de benchmarks de seguimiento: sus máscaras de vehículos sustentan el Stabilo Benchmark, útil para evaluar algoritmos de estabilización de trayectorias.
+- Despliegue en producción con ONNX: la exportación incluida permite ejecutar el detector en infraestructura heterogénea (servidores, edge) sin dependencia del framework Ultralytics completo.
+- Clasificación y conteo de flota por tipo de vehículo: distingue coches, autobuses, camiones y motocicletas, útil para estudios de composición del tráfico.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el conjunto de test de Songdo Vision v1 (1.084 imágenes, 55.124 instancias):
+Resultados declarados por el autor sobre el split de test de Songdo Vision v1 (1.084 imágenes, 55.124 instancias):
 
-| Metrica | Valor |
-|---|---|
-| mAP@0.5 | 0,951 |
-| mAP@0.5:0.95 | 0,711 |
-| Precision | 0,911 |
-| Recall | 0,935 |
+| Clase | Instancias | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|---|---:|---|---|---|---|
+| Car | 49.508 | 0,979 | 0,981 | 0,992 | 0,835 |
+| Bus | 1.759 | 0,952 | 0,977 | 0,988 | 0,826 |
+| Truck | 3.052 | 0,887 | 0,916 | 0,935 | 0,722 |
+| Motorcycle | 805 | 0,827 | 0,866 | 0,888 | 0,463 |
+| Pedestrian | n/a | no evaluado | no evaluado | no evaluado | no evaluado |
+| Bicycle | n/a | no evaluado | no evaluado | no evaluado | no evaluado |
+| **Global** | **55.124** | **0,911** | **0,935** | **0,951** | **0,711** |
 
-Rendimiento por clase (mAP@50 / mAP@50-95):
-
-| Clase | Precision | Recall | mAP@50 | mAP@50-95 |
-|---|---|---|---|---|
-| Car | 0,979 | 0,981 | 0,992 | 0,835 |
-| Bus | 0,952 | 0,977 | 0,988 | 0,826 |
-| Truck | 0,887 | 0,916 | 0,935 | 0,722 |
-| Motorcycle | 0,827 | 0,866 | 0,888 | 0,463 |
-
-Nota: las métricas se midieron sobre Songdo Vision v1. La version v2 del dataset corrige anotaciones y añade instancias, por lo que los resultados no son directamente comparables entre versiones.
+No se han publicado en la información disponible resultados comparativos con otros detectores sobre los mismos conjuntos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 11,1 M de parámetros y un tamaño de archivo de aproximadamente 66 MB (formato Ultralytics). En FP32, los pesos ocupan unos 44 MB, por lo que caben en cualquier GPU con al menos 2 GB de VRAM.
-- GPU recomendadas: cualquier GPU consumer moderna (GTX 1060 6GB o superior, RTX 3060, RTX 4090) es suficiente para inferencia. Para entrenamiento o fine-tuning, se recomienda al menos 8 GB de VRAM.
-- Inferencia en CPU: posible con llama.cpp no aplica (modelo de vision); se puede usar OpenVINO o ONNX Runtime con CPU, aunque la latencia será mayor. Para vídeo en tiempo real se recomienda GPU.
-- Opciones de despliegue: Ultralytics (Python), exportacion a ONNX para TensorRT o ONNX Runtime, integracion con pipelines de tracking como ByteTrack o DeepSORT dentro del framework Geo-trax.
-- Latencia estimada: no disponible en la informacion proporcionada. Como referencia, YOLOv8s a 640×640 suele inferir en 1-5 ms en GPU moderna; a 1920×1920 la latencia sera mayor, estimable en 10-30 ms en GPU de gama alta.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 11,1 M de parámetros y entrada de 1920 × 1920 px, el consumo es moderado pero la resolución alta incrementa la memoria de activaciones.
+- GPU recomendadas: no especificadas por el autor; por tamaño del modelo, cabe en GPUs de consumo como RTX 3060/4060 en adelante, aunque la resolución de 1920 px exige VRAM adicional.
+- Cabe en GPU de consumo: sí, previsiblemente en la mayoría de tarjetas con 8 GB o más, si bien el dato no está confirmado en la información disponible.
+- Opciones de despliegue: Ultralytics (≥ 8.4.184 para el pipeline Geo-trax), exportación ONNX, paquete pip `geo-trax`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Resolucion entrada | mAP@50 (Songdo v1) | Licencia | Notas |
-|---|---|---|---|---|---|
-| rfonod/geo-trax (YOLOv8s) | 11,1 M | 1920×1920 | 0,951 | CC-BY-4.0 | Especializado en imagenes aereas BEV |
-| Ultralytics/YOLOv8s (base) | 11,1 M | 640×640 | no evaluado en Songdo | AGPL-3.0 | Modelo generico, no entrenado para imagenes aereas |
-| Ultralytics/YOLOv8m | 25,9 M | 640×640 | no evaluado en Songdo | AGPL-3.0 | Mayor capacidad, mayor coste computacional |
+| Modelo | Parámetros | Resolución nativa | Dominio | Licencia |
+|---|---|---|---|---|
+| Geo-trax (YOLOv8s) | 11,1 M | 1920 × 1920 px | Aéreo cenital, vehículos | CC BY 4.0 |
+| YOLOv8s (base Ultralytics) | ~11,1 M | 640 px (estándar) | Imágenes naturales | AGPL-3.0 (Ultralytics) |
+| Detectores genéricos COCO | variable | 640 px típico | Imágenes naturales | variable |
 
-No se dispone de comparaciones directas con otros detectores especializados en imagenes aereas (como VisDrone baselines) en la informacion proporcionada. La comparativa con YOLOv8s base es orientativa: el modelo Geo-trax ha sido fine-tuneado especificamente para el dominio aereo, lo que justifica su ventaja en este escenario pese a compartir arquitectura.
+No se dispone en la información proporcionada de resultados de otros detectores aéreos comparables sobre Songdo Vision ni VisDrone, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo solo ha sido validado en el dominio de imagenes aereas cenitales de alta altitud; su rendimiento en otros dominios (camaras de trafico a nivel de calle, imagenes satelitales de muy alta resolucion) no esta garantizado.
-- Las clases Pedestrian y Bicycle no fueron evaluadas oficialmente; su rendimiento real es desconocido y probablemente inferior al de las clases principales.
-- La deteccion de motocicletas es significativamente peor (mAP@50-95 de 0,463), debido a su tamano reducido y baja frecuencia en el conjunto de test.
-- Los resultados se midieron sobre Songdo Vision v1. La version v2 del dataset corrige errores de anotacion y anade instancias; este modelo no ha sido re-evaluado en v2, y comparar metricas entre versiones puede llevar a conclusiones erroneas.
-- El conjunto de test de Songdo Vision v2 contiene anotaciones generadas con un detector Geo-trax y confirmadas por humanos, lo que introduce un sesgo favorable al evaluar esta familia de modelos en v2.
-- La licencia CC-BY-4.0 permite uso comercial con atribucion, pero es recomendable revisar los terminos de las licencias de los datasets de entrenamiento (VisDrone, COCO) si se redistribuyen derivados.
-- El modelo no soporta deteccion de objetos orientados (oriented bounding boxes, OBB); solo produce cajas horizontales, lo que puede ser suboptimo para vehiculos muy alargados en ciertos angulos.
+- Entrenado específicamente para vista cenital a gran altitud (140-150 m); su rendimiento en ángulos oblicuos, altitudes menores o imágenes no aéreas no está garantizado.
+- Las clases pedestrian y bicycle están presentes pero no fueron evaluadas; su fiabilidad es desconocida.
+- El rendimiento en motocicletas es notablemente inferior (mAP@0.5:0.95 de 0,463) por su pequeño tamaño y baja representación en el test (805 instancias).
+- Riesgo de falsos negativos en vehículos muy pequeños u ocluidos; la resolución de entrada debe mantenerse alta para preservar el detalle.
+- Licencia CC BY 4.0: permite uso comercial con atribución, pero conviene revisar los términos de la licencia base de Ultralytics YOLOv8 (AGPL-3.0) si se redistribuye el modelo derivado.
+- No es un modelo de lenguaje: no soporta instrucciones en lenguaje natural, tool calling ni razonamiento; cualquier uso conversacional o agéntico queda fuera de su alcance.
+- Documentación y etiquetas únicamente en inglés.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/rfonod/geo-trax
 - Repositorio GitHub: https://github.com/rfonod/geo-trax
-- Paper (arXiv): https://arxiv.org/abs/2411.02136
-- Publicacion en revista (Transportation Research Part C): https://doi.org/10.1016/j.trc.2025.105205
+- Documentación: https://rfonod.github.io/geo-trax/
+- Paquete PyPI: https://pypi.org/project/geo-trax/
+- Demo en vivo: https://huggingface.co/spaces/rfonod/geo-trax
+- Vídeo demostración: https://youtu.be/gOGivL9FFLk
+- Publicación (DOI): https://doi.org/10.1016/j.trc.2025.105205
+- arXiv: https://arxiv.org/abs/2411.02136
 - Dataset Songdo Vision: https://huggingface.co/datasets/rfonod/songdo-vision
 - Dataset Songdo Traffic: https://huggingface.co/datasets/rfonod/songdo-traffic
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/rfonod/geo-trax
-- Pagina del proyecto (REAL Lab): https://www.real-lab.ch/geo-trax
-- Video demo en YouTube: https://youtu.be/gOGivL9FFLk
-- DOI del modelo: https://doi.org/10.57967/hf/9296
+- Colección de trayectorias: https://huggingface.co/collections/rfonod/trajectory-extraction-and-stabilization-68aa0f4c5372ae5a8edf22ce
+- Página del laboratorio: https://www.real-lab.ch/geo-trax
+- Guía de exportación geoespacial: https://rfonod.github.io/geo-trax/guides/export/

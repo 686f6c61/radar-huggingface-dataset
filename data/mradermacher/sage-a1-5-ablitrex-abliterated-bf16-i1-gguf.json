@@ -46,21 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Team Mradermacher - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "models 72,271. Sort: Recently updated. mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-GGUF. 35B • Updated in about 16 hours · mradermacher/Nanbeige4.3-33B-i1- ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified&search=gguf",
-      "snippet": "mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF. 35B • Updated in ... mradermacher/ai-detection-gutenberg-human-formatted-ai-v1-sft-qwen-3b-dpo ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified",
-      "snippet": "1 · mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF. 35B • Updated in about 18 hours • 1 · csukuangfj2/sherpa-onnx-libs. Updated in about 18 hours • 11 ..."
-    }
-  ]
+  "sources": []
 }

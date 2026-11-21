@@ -5,7 +5,7 @@
   "author": "CSI-lab",
   "url": "https://huggingface.co/CSI-lab/US-state-law-EmbeddingGemma-2-GGUF",
   "created_at": "2026-10-27T00:07:51.000Z",
-  "updated_at": "2026-10-30T20:48:45.000Z",
+  "updated_at": "2026-11-20T21:50:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

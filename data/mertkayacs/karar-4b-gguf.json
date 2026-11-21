@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mertkayacs/Karar-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mertkayacs/Karar-4B-GGUF",
-      "snippet": "Quantized GGUF files for Karar-4B, the Turkish decision model. The Q4_K_M file is the default; Q5_K_M and Q8_0 are higher fidelity at the cost of speed and memory."
-    },
-    {
-      "title": "mertkayacs/Karar-4B · Hugging Face",
-      "url": "https://huggingface.co/mertkayacs/Karar-4B",
-      "snippet": "Karar-4B, Türkçe yazılmış kararlar üzerinde eğitilmiş açık bir modeldir. Bir durum ve Choice, Score ya da Noul sorusu gönderirsiniz; her seçenek için kalibre edilmiş olasılık alırsınız. İsterseniz model önce kısa bir Türkçe gerekçe yazar, sonra karar verir. Q4_K_M sürümü ..."
-    },
-    {
-      "title": "Karar-4B · Open Turkish decision model, 4B, about 3 GB of RAM | JevAlt",
-      "url": "https://jevalt.mertkayacs.com/models/karar-4b/",
-      "snippet": "The best open-source Turkish decision model in its class, built by senior AI engineer Mert Kaya. Karar-4B scores 96.8% on held-out Turkish decisions against Kev-4B&#x27;s 87.1%, and runs in about 3 GB of RAM."
-    },
-    {
-      "title": "Eschatia Labs: open models and data - a mertkayacs Collection",
-      "url": "https://d6108366.hf-mirror.com/collections/mertkayacs/eschatia-labs-open-models-and-data",
-      "snippet": "Public research from an international open-source research lab: decision models, local AI agents, deepfake detection, GGUF builds and datasets."
-    },
-    {
-      "title": "mertkayacs/karar-4b/model - ollama.com",
-      "url": "https://ollama.com/mertkayacs/karar-4b:latest/blobs/f2b811b50b40",
-      "snippet": "Get up and running with large language models."
-    }
-  ]
+  "sources": []
 }

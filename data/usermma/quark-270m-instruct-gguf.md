@@ -2,69 +2,90 @@
 
 ## Resumen
 
-Quark-270m-Instruct-GGUF es una conversión al formato GGUF del modelo ThingAI/Quark-270m-Instruct, realizada por el usuario usermma. El modelo original, desarrollado por ThingAI, es un modelo de lenguaje causal bilingüe (italiano e inglés) de tamaño pequeño, entrenado desde cero y ajustado por instrucciones (SFT). La conversión a GGUF permite ejecutarlo con llama.cpp en CPU o GPU, lo que facilita su uso en entornos con recursos limitados.
+Quark-270m-Instruct-GGUF es la version cuantizada en formato GGUF del modelo ThingAI/ARK-270M-Instruct, un modelo de lenguaje causal bilingue (italiano e ingles) entrenado desde cero por ThingAI. El repositorio lo publica el usuario usermma, que se limita a realizar la conversion a GGUF mediante llama.cpp; no introduce cambios en los pesos ni en el entrenamiento. Con 251.749.888 parametros totales (aproximadamente 270M nominales), se situa en la categoria de modelos ultra-ligeros pensados para despliegue en entornos con recursos muy limitados.
 
-Según los datos de Hugging Face, el modelo tiene 251.749.888 parámetros reales (aunque el nombre sugiere 270M) y se distribuye bajo licencia Apache 2.0. No se dispone de información sobre la longitud de contexto ni la arquitectura detallada.
+El modelo resuelve el problema de disponer de un LLM conversacional (instruct/chat) con licencia Apache 2.0, orientado especificamente al par italiano-ingles, que pueda ejecutarse en CPU, dispositivos de borde o GPUs de gama baja. Al estar entrenado desde cero y no ser un derivado de una familia mayor, su rendimiento absoluto es modesto, pero su huella de memoria y velocidad de inferencia lo hacen atractivo para prototipos, tareas de clasificacion generativa y aplicaciones embebidas.
 
-## Especificaciones técnicas
+La relevancia actual del modelo reside en la creciente demanda de SLMs (small language models) para inferencia local y privacidad de datos, asi como en la disponibilidad de pesos GGUF listos para llama.cpp, Ollama y servidores compatibles con la API de endpoints. La informacion publica sobre arquitectura interna, datos de entrenamiento y benchmarks es muy escasa en la model card.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (causal-LM según etiquetas) |
+| Arquitectura | Transformer causal (causal-lm); detalles internos no disponibles |
 | Parametros totales | 251.749.888 |
-| Parametros activos | No disponible (no se indica si es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K (mencionado en ejemplos; lista completa no disponible) |
-| Idiomas soportados | Italiano (it), inglés (en) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible; los ejemplos de llama.cpp usan `-c 2048` |
+| Tipos de cuantizacion | GGUF (se menciona q2_k en los ejemplos; el resto de variantes no detallado) |
+| Idiomas soportados | italiano (it), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de cuantizacion); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo en los datos proporcionados. Se sabe que es un modelo causal-LM, bilingüe y entrenado desde cero (trained-from-scratch), con ajuste por instrucciones (SFT). No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El modelo base indicado en Hugging Face es ThingAI/ARK-270m-Instruct, mientras que el README menciona que la conversión se realizó desde ThingAI/Quark-270m-Instruct.
+La model card indica que se trata de un modelo causal-lm entrenado desde cero (tag `trained-from-scratch`) y afinado para instrucciones mediante SFT (tag `sft`). No se especifica el numero de capas, dimensiones ocultas, cabeceras de atencion ni el mecanismo de atencion (si es atencion completa clasica o alguna variante lineal). Tampoco se detalla el volumen de tokens de preentrenamiento, la composicion del corpus ni si se aplicaron tecnicas de RLHF o DPO mas alla del SFT.
+
+La unica innovacion documentada en este repositorio es la conversion a GGUF mediante llama.cpp, que permite ejecutar el modelo con cuantizaciones de 2 a 8 bits aproximadamente y aprovechar la infraestructura de llama.cpp (CPU, CUDA, Metal, Vulkan). No hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones internas.
 
 ## Capacidades
 
-- Generación de texto e instrucciones: al ser un modelo instruct, puede seguir instrucciones y participar en conversaciones de chat.
-- Bilingüe italiano-inglés: soporta ambos idiomas.
-- Ejecución en CPU/GPU mediante llama.cpp gracias al formato GGUF.
-- No se han confirmado capacidades como tool calling, agentes, visión o audio en la información disponible.
+- Generacion de texto causal en italiano e ingles.
+- Modo instruct/chat: el modelo esta afinado para seguir instrucciones conversacionales.
+- Razonamiento basico y respuesta a preguntas simples, limitado por su tamano.
+- Generacion de codigo muy limitada; no se documenta soporte especifico.
+- Matematicas elementales; no se documenta rendimiento en tareas aritmeticas complejas.
+- Capacidades multilingues restringidas a italiano e ingles.
+- No se documenta soporte de tool calling / function calling.
+- No se documenta soporte de agentes ni multi-step reasoning.
+- No se documenta vision, audio ni modo thinking.
+- Compatible con endpoints (tag `endpoints_compatible`) y con llama-cpp.
 
 ## Casos de uso
 
-- Asistente conversacional bilingüe para soporte al cliente: el modelo puede gestionar consultas simples en italiano e inglés, ejecutándose en servidores ligeros o en el edge.
-- Generación de texto en italiano: redacción de correos, notas o resúmenes en entornos donde se requiere un modelo ligero.
-- Chatbots educativos para aprendizaje de idiomas: permite practicar conversaciones en inglés e italiano con respuestas breves y controladas.
-- Automatización de respuestas en hardware modesto: al ser un GGUF de ~251M parámetros, puede ejecutarse en CPUs sin GPU o en dispositivos como Raspberry Pi.
-- Prototipado rápido de aplicaciones de chat: ideal para demos o pruebas de concepto sin necesidad de infraestructura de GPU potente.
-- Integración en pipelines de procesamiento de texto: para tareas de generación de texto instruido, como resúmenes o clasificación simple, en entornos con recursos limitados.
+- Prototipado rapido de chatbots en italiano: el modelo puede mantener conversaciones multi-turno sencillas con un contexto de 2048 tokens, suficiente para dialogos de atencion al cliente de baja complejidad y con coste de inferencia minimo.
+- Clasificacion generativa y etiquetado de textos: dado su bajo coste, puede emplearse para generar etiquetas, resumenes cortos o reformulaciones de frases en italiano e ingles dentro de pipelines de procesamiento por lotes.
+- Inferencia en dispositivos de borde: al caber en CPU y en GPUs de gama baja con cuantizacion q2_k, es adecuado para asistentes locales en portatiles, Raspberry Pi o entornos sin GPU dedicada.
+- Generacion de texto asistida en editores: autocompletado, sugerencias de redaccion y correccion de estilo en italiano para herramientas ofimaticas o CMS.
+- Filtrado y moderacion de contenido: generacion de explicaciones breves o reformulaciones para sistemas de moderacion que requieran un modelo local y de baja latencia.
+- Educacion y demostraciones: util como modelo didactico para explicar el funcionamiento de un LLM causal bilingue y para experimentos de fine-tuning con recursos limitados.
+- Servicios embebidos con requisitos de privacidad: al ejecutarse localmente via llama.cpp, los datos no salen del dispositivo, lo que encaja en escenarios con requisitos de confidencialidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: menos de 1 GB en cuantización Q2_K (estimación orientativa basada en 251M parámetros).
-- GPU recomendadas: no disponible; cualquier GPU con al menos 1 GB de VRAM es suficiente. También puede ejecutarse en CPU.
-- Compatibilidad con consumer GPU: sí, dado el tamaño reducido.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server) según el README.
-- Latencia y throughput: no disponible.
+- VRAM estimada: con 251,7M parametros, en FP16 el modelo ocupa aproximadamente 0,5 GB; en q2_k ronda los 0,15-0,2 GB; en q4_k_m alrededor de 0,25-0,3 GB; en q8_0 cerca de 0,3-0,35 GB. Cifras orientativas calculadas a partir del numero de parametros, no publicadas por el autor.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 no suponen cuello de botella por memoria. Tambien funciona en CPU.
+- Cabe en GPU consumer: si, en practicamente todas las GPU con al menos 1 GB de VRAM; incluso en iGPU y CPU.
+- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama (previa importacion del GGUF), y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con servidores tipo OpenAI API.
+- Latencia y throughput: no disponibles de forma oficial; por tamano, la generacion en CPU moderna deberia ser interactiva y en GPU muy rapida, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en los datos proporcionados.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Quark-270m-Instruct-GGUF | 251,7M | no disponible (ejemplos con 2048) | it, en | Apache 2.0 | GGUF |
+| Qwen2.5-0.5B-Instruct | ~494M | 32k (segun model card oficial) | multilingue | Apache 2.0 | safetensors, GGUF |
+| SmolLM2-360M-Instruct | ~360M | 8k (segun model card oficial) | en (principalmente) | Apache 2.0 | safetensors, GGUF |
+| TinyLlama-1.1B-Chat | ~1,1B | 2048 | en | Apache 2.0 | safetensors, GGUF |
+
+Nota: los datos de los modelos comparables corresponden a sus model cards publicas; no se dispone de benchmarks del modelo Quark para comparar rendimiento de forma objetiva. La comparativa se limita a parametros, contexto, idiomas y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo pequeño: capacidad limitada para tareas complejas o razonamiento extenso.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas.
-- Longitud de contexto desconocida: puede ser limitada para conversaciones largas.
-- Dependencia del modelo original: las limitaciones del modelo base ThingAI/Quark-270m-Instruct se trasladan.
-- Licencia Apache 2.0: permite uso comercial, pero requiere conservar el aviso de licencia y atribución.
+- Rendimiento absoluto limitado: con 251,7M parametros, la calidad en razonamiento, matematicas y codigo sera inferior a modelos de 1B o mas; no debe usarse para tareas que exijan alta precision.
+- Riesgo de alucinacion elevado: los SLM entrenados desde cero con corpus no documentados tienden a inventar hechos, especialmente fuera de sus idiomas de entrenamiento.
+- Cobertura linguistica restringida: solo italiano e ingles; el rendimiento en castellano no esta garantizado.
+- Contexto efectivo incierto: la model card no declara la longitud de contexto nativa; los ejemplos usan 2048 tokens, pero no se confirma si es el maximo entrenado.
+- Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos de genero, raza o ideologicos.
+- Licencia Apache 2.0: permite uso comercial, pero el autor del modelo base (ThingAI) no publica garantias ni detalles de procedencia de datos; conviene revisar la model card original antes de un despliegue en produccion.
+- Repositorio de cuantizacion: este repo no es el modelo original; para fine-tuning o inspeccion de pesos conviene acudir a ThingAI/ARK-270M-Instruct.
+- Sin soporte documentado de tool calling ni agentes: no debe asumirse compatibilidad con frameworks de agentes sin validacion previa.
 
 ## Enlaces
 
-- https://huggingface.co/usermma/Quark-270m-Instruct-GGUF
-- https://huggingface.co/ThingAI/Quark-270m-Instruct
-- https://huggingface.co/ThingAI/ARK-270m-Instruct
+- Repositorio Hugging Face: https://huggingface.co/usermma/Quark-270m-Instruct-GGUF
+- Modelo base: https://huggingface.co/ThingAI/ARK-270M-Instruct
+- llama.cpp: https://github.com/ggerganov/llama.cpp

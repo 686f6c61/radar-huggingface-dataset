@@ -2,115 +2,98 @@
 
 ## Resumen
 
-LocalVQE Core ML (`FluidInference/localvqe-coreml`) es la exportacion a Core ML del modelo LocalVQE, un sistema neuronal de mejora de voz en tiempo real que realiza cancelacion acustica de eco (AEC), supresion de ruido y desreverberacion sobre audio de 16 kHz. Lo publica FluidInference como parte de su ecosistema FluidAudio, y deriva directamente de los pesos de `LocalAI-io/LocalVQE`, una variante afinada para CPU del DeepVQE de Indenbom et al. (Interspeech 2023).
+LocalVQE Core ML es la exportación en formato Core ML del modelo LocalVQE, un sistema neuronal de cancelación de eco acústico (AEC), supresión de ruido y desreverberación para voz muestreada a 16 kHz. Lo desarrolla FluidInference a partir de los pesos originales de LocalAI-io/LocalVQE (licencia Apache-2.0), que a su vez es un derivado optimizado para CPU del modelo DeepVQE presentado por Indenbom et al. en Interspeech 2023. El modelo resuelve el problema clásico del procesado de señal de audio en tiempo real: eliminar el eco procedente del altavoz y el ruido de fondo de la señal captada por el micrófono, manteniendo la voz del usuario limpia para sistemas de reconocimiento de voz o comunicaciones.
 
-El modelo es puramente de procesamiento de senal: no es un modelo de lenguaje ni genera texto. Trabaja de forma causal y con estado explicito, consumiendo dos senales por llamada (`mic`, la captura del microfono, y `ref`, la referencia de far-end, es decir, lo que reprodujo el altavoz) y devolviendo una senal `enhanced`, ademas de 33 tensores de estado que deben realimentarse entre llamadas. Hay dos tamanos, 4,8 M y 1,3 M de parametros, y dos tamanos de bloque, 16 ms (256 muestras) y 256 ms (4096 muestras, 16 hops).
+La relevancia actual del modelo radica en su tamaño extremadamente reducido (4,8 M y 1,3 M de parámetros) y en su naturaleza de streaming: procesa el audio por bloques (hops) manteniendo un estado interno de 33 tensores, lo que lo hace apto para inferencia en tiempo real sobre CPU de dispositivos Apple. Frente a aproximaciones clásicas de procesado de señal, ofrece una calidad de supresión superior sin necesidad de GPU y con una latencia controlada (16 ms o 256 ms según la variante).
 
-Su relevancia practica esta en que permite ejecutar cancelacion de eco y supresion de ruido de baja latencia de forma local en dispositivos Apple (iOS 17 y macOS 14 como minimo), sin enviar audio a la nube y con un coste computacional muy bajo: entre 0,7 y 7,1 ms por llamada en CPU de un Apple M5 Pro segun variante, lo que equivale a entre 14x y 60x tiempo real.
+No es un modelo de lenguaje: no genera texto ni razona. Es un componente de preprocesado de audio pensado para integrarse en pipelines de voz (asistentes, transcripción, llamadas) mediante la librería FluidAudio, con objetivos de despliegue iOS 17 y macOS 14 en adelante.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal causal con estado para mejora de voz, derivada de DeepVQE (Indenbom et al., Interspeech 2023); el detalle de capas no se especifica en la model card |
-| Parametros totales | Dos tamanos: 4,8 M (v1.3) y 1,3 M (v1.2) |
+| Arquitectura | Red neuronal para realce de voz derivada de DeepVQE (procesamiento por bloques con estado recurrente; detalles internos de capas no disponibles) |
+| Parametros totales | 4,8 M (variantes v1.3) y 1,3 M (variantes v1.2) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica en tokens; el modelo es streaming y con estado. Bloque de 256 muestras (16 ms) o 4096 muestras (256 ms) a 16 kHz. Estado recurrente expuesto como 33 tensores `in_*` / `out_*` |
-| Tipos de cuantizacion | Solo fp32; no se publican variantes cuantizadas |
-| Idiomas soportados | No disponible; el procesamiento es independiente del idioma (audio de 16 kHz) |
+| Longitud de contexto | No aplica; procesa bloques de 256 muestras (16 ms) o 4096 muestras (256 ms) por llamada |
+| Tipos de cuantizacion | Solo fp32 (todas las exportaciones Core ML) |
+| Idiomas soportados | No aplica (procesado de señal de voz independiente del idioma); idiomas no disponibles |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Core ML compilado (`.mlmodelc`); el modelo base upstream usa checkpoints PyTorch (`.pt`) y existe un motor GGML |
-| Frecuencia de muestreo | 16 kHz |
-| Tareas | Cancelacion acustica de eco, supresion de ruido, desreverberacion |
-| Requisitos de plataforma | iOS 17 / macOS 14 o superior |
-| Entradas | `mic` `[1, N]` Float32, `ref` `[1, N]` Float32, 33 tensores de estado |
-| Salidas | `enhanced` `[1, N]` Float32 y 33 tensores de estado |
-| Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
+| Formato de pesos | `.mlmodelc` (Core ML compilado); pesos originales en `.pt` (PyTorch) en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la composicion interna de capas. Lo que si se indica es que se trata de una derivada de DeepVQE (Indenbom et al., Interspeech 2023, arXiv:2306.03177), publicada como pesos en `LocalAI-io/LocalVQE` bajo Apache-2.0, y que la variante distribuida aqui esta ajustada para CPU. El modelo es causal y con estado: cada llamada recibe 33 tensores de estado y devuelve otros 33 que hay que reinyectar en la llamada siguiente, lo que confirma un nucleo recurrente que mantiene memoria entre bloques. Al arrancar, todos los estados se inicializan a cero.
+LocalVQE es un derivado de DeepVQE (Indenbom et al., Interspeech 2023), una arquitectura neuronal diseñada para cancelación de eco acústico y supresión de ruido en dominios espectrales. El modelo opera en modo streaming: recibe dos señales de entrada —`mic` (señal del micrófono) y `ref` (referencia de extremo lejano, es decir, lo que reprodujo el altavoz)— junto con 33 tensores de estado interno, y devuelve la señal realzada más los tensores de estado actualizados que deben realimentarse en la llamada siguiente. Esta formulación con estado explícito permite procesar audio de duración arbitraria sin ventanas solapadas ni recomputación.
 
-La conversion a Core ML se realizo con el codigo de `FluidInference/mobius` (`models/enhancement/localvqe/coreml`) y el consumo se hace a traves de `LocalVqeManager` / `LocalVqeStream` de FluidAudio. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO; en un modelo de mejora de voz estos conceptos no aplican de la misma forma que en un LLM. El aspecto mas destacable de esta exportacion es la gestion explicita del estado recurrente y la latencia algorritmica: la salida va un hop por detras de la entrada (256 muestras, 16 ms), el primer hop emitido cubre t < 0 y puede descartarse, y hay que inyectar un hop de ceros al final para drenar el modelo. El nivel de salida coincide con el motor GGML upstream, que es 2x la convencion de overlap-add de la referencia PyTorch.
+La exportación a Core ML conserva los pesos en fp32 y ofrece dos granularidades de bloque: 256 muestras (1 hop, 16 ms) y 4096 muestras (16 hops, 256 ms). Ambas producen audio idéntico y solo difieren en el equilibrio entre sobrecarga por llamada y latencia. La señal realzada va un hop por detrás de la entrada (16 ms de retardo algorítmico); el primer hop emitido corresponde a t < 0 y puede descartarse, y es necesario inyectar un hop de ceros al final para vaciar el estado. El nivel de salida coincide con el motor GGML original (2× la convención de solapamiento y suma de la referencia en PyTorch). No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o ajuste fino supervisado adicional en la información proporcionada.
 
 ## Capacidades
 
-- Cancelacion acustica de eco (AEC) usando la senal de referencia del altavoz (`ref`), adecuada para escenarios de doble habla (double-talk).
-- Supresion de ruido de fondo sobre voz a 16 kHz.
-- Desreverberacion de la senal capturada por el microfono.
-- Procesamiento en streaming con estado persistente entre llamadas, sin necesidad de ventanas largas ni de procesar el audio completo.
-- Dos perfiles de latencia: bloque de 16 ms (1 hop, minima latencia) y bloque de 256 ms (16 hops, menor sobrecarga por llamada). La model card indica que ambas configuraciones producen audio identico.
-- Ejecucion local en CPU y en el stack Core ML de Apple, apta para dispositivos sin GPU dedicada.
-- No soporta generacion de texto, tool calling, function calling, agentes, razonamiento multi-paso, vision, audio generativo ni traduccion. Es exclusivamente un front-end de mejora de senal de audio.
+- Cancelación de eco acústico (AEC) neuronal en tiempo real, usando la señal de referencia del altavoz para restar el eco de la captura del micrófono.
+- Supresión de ruido de fondo sobre voz a 16 kHz.
+- Desreverberación de la señal de voz.
+- Procesamiento en streaming con estado persistente entre llamadas (33 tensores de estado de entrada y salida).
+- Inferencia en CPU con objetivos de despliegue iOS 17 y macOS 14 o superiores.
+- Dos modos de latencia: bloques de 16 ms (1 hop) y de 256 ms (16 hops), con audio de salida idéntico.
+- No soporta tool calling, agentes, razonamiento multi-paso, visión, audio generativo ni capacidades multilingües en sentido lingüístico.
 
 ## Casos de uso
 
-- Videollamadas y VoIP en apps iOS/macOS: el modelo elimina el eco del altavoz y el ruido ambiente antes de codificar el audio, con 16 ms de bloque para mantener una latencia conversacional aceptable y sin enviar audio a servidores externos.
-- Asistentes de voz siempre activos en el dispositivo: al ejecutarse integramente en Core ML sobre CPU, permite escucha continua con un consumo minimo (0,7-1,2 ms por bloque de 16 ms en un M5 Pro) sin comprometer la privacidad del usuario.
-- Front-end de ASR: la senal `enhanced` sirve de entrada limpia a un motor de reconocimiento de voz, reduciendo errores en entornos ruidosos y en escenarios de manos libres con altavoz.
-- Grabacion de notas de voz y podcasts en movil: desreverberacion y supresion de ruido en tiempo real durante la captura, evitando post-proceso por lotes.
-- Auriculares y wearables con microfono: variante de 1,3 M de parametros (aproximadamente 5,2 MB en fp32) que cabe en dispositivos con memoria y computo muy limitados.
-- Sistemas de manos libres en vehiculo: cancelacion de eco entre el microfono del habitaculo y los altavoces, con la referencia `ref` tomada de la salida del sistema de audio del coche.
-- Telepresencia, robots y kioscos de atencion: limpieza de la captura en dispositivos con altavoz y microfono cercanos, donde el eco es el principal problema de calidad.
-- Chat de voz en juegos: supresion de ruido de fondo (teclado, ventiladores, ambiente domestico) en la ruta de captura, con latencia de un hop.
-- Preprocesado en pipelines de datos de audio: uso offline del mismo modelo para normalizar y limpiar grandes colecciones de grabaciones antes de entrenar otros sistemas.
+- Videollamadas y reuniones en dispositivos Apple: el modelo se integra en la captura de micrófono para eliminar el eco del altavoz y el ruido ambiente antes de codificar el audio, usando la variante de 16 ms para minimizar el retardo percibido.
+- Transcripción de voz en tiempo real: como preprocesado previo a un motor ASR, la supresión de ruido y desreverberación mejora la tasa de acierto en entornos ruidosos sin añadir latencia significativa (1,2 ms por llamada en la variante v1.3 de 16 ms sobre M5 Pro).
+- Asistentes de voz en el dispositivo: al ejecutarse en CPU con 4,8 M de parámetros, cabe en el pipeline de un asistente local en iOS o macOS sin consumir GPU ni memoria apreciable.
+- Grabación de notas de voz y podcasts: limpieza de grabaciones con reverberación de sala y ruido estacionario, procesando el audio por bloques de 256 ms para reducir la sobrecarga por llamada (7,1 ms por bloque, 36× tiempo real).
+- Sistemas de comunicación manos libres (coche, auriculares): cancelación de eco entre el altavoz y el micrófono del mismo dispositivo, con la referencia de extremo lejano disponible en el propio hardware.
+- Telefonía VoIP y gateways de audio: integración como etapa de realce en servidores o clientes macOS que necesiten procesar muchos flujos concurrentes; la variante v1.2 de 1,3 M alcanza 60× tiempo real por núcleo en CPU, lo que permite multiplexar decenas de llamadas por máquina.
+- Preprocesado en pipelines de diarización o verificación de locutor: la señal realzada reduce la variabilidad acústica y mejora la robustez de los modelos posteriores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (PESQ, DNSMOS, STOI, ERLE) en la informacion disponible. Los unicos datos numericos publicados son de paridad y velocidad:
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta paridad numérica y velocidad de inferencia:
 
 | Metrica | Valor |
 |---|---|
-| Paridad con el motor GGML upstream (clip de doble habla) | Diferencia absoluta maxima de 2,8e-5; 80 dB de SNR |
-| v1.3, 4,8 M, bloque 256 ms | 7,1 ms por llamada (p50, CPU Apple M5 Pro), 36x tiempo real |
-| v1.3, 4,8 M, bloque 16 ms | 1,2 ms por llamada (p50), 14x tiempo real |
-| v1.2, 1,3 M, bloque 256 ms | 4,2 ms por llamada (p50), 60x tiempo real |
-| v1.2, 1,3 M, bloque 16 ms | 0,7 ms por llamada (p50), 24x tiempo real |
-
-No se proporcionan comparaciones con DeepVQE original ni con otros sistemas de AEC/supresion de ruido.
+| Diferencia maxima absoluta frente al CLI GGML original (clip de double-talk) | 2,8e-5 |
+| SNR de paridad frente al motor GGML | 80 dB |
+| Latencia p50 por llamada, v1.3 256 ms (M5 Pro, CPU) | 7,1 ms (36× tiempo real) |
+| Latencia p50 por llamada, v1.3 16 ms (M5 Pro, CPU) | 1,2 ms (14× tiempo real) |
+| Latencia p50 por llamada, v1.2 256 ms (M5 Pro, CPU) | 4,2 ms (60× tiempo real) |
+| Latencia p50 por llamada, v1.2 16 ms (M5 Pro, CPU) | 0,7 ms (24× tiempo real) |
 
 ## Requisitos de hardware
 
-- Pesos en fp32: aproximadamente 19,2 MB para la variante de 4,8 M de parametros y 5,2 MB para la de 1,3 M.
-- No requiere VRAM de GPU discreta: el modelo esta pensado para el stack Core ML en Apple Silicon (CPU, GPU integrada o Neural Engine).
-- Plataforma minima: iOS 17 o macOS 14.
-- Mediciones publicadas sobre Apple M5 Pro en CPU: 7,1 ms por llamada en la variante de 4,8 M con bloque de 256 ms y 1,2 ms con bloque de 16 ms. No hay datos publicados para A-series, M1, M2, M3 ni M4.
-- Latencia algoritmica: la salida va un hop (16 ms) por detras de la entrada. Con bloque de 256 ms, el modelo debe acumular ese bloque antes de emitir, por lo que la latencia efectiva percibida es del orden del tamano de bloque mas 16 ms.
-- Opciones de despliegue: Core ML a traves de la libreria FluidAudio (`LocalVqeManager` / `LocalVqeStream`); la conversion se realiza con `FluidInference/mobius`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo. El modelo upstream si dispone de motor GGML y de checkpoints PyTorch.
-- Throughput: entre 14x y 60x tiempo real en CPU segun variante, lo que deja margen para ejecutar varias instancias concurrentes en el mismo dispositivo.
+- VRAM: no aplica; la inferencia se ejecuta en CPU. El modelo pesa del orden de decenas de MB en fp32 (4,8 M de parámetros), por lo que la huella de memoria es mínima.
+- GPU: no requiere GPU. Está exportado específicamente para Core ML con ejecución en CPU; no se documenta uso de Neural Engine ni de GPU en la información disponible.
+- Compatibilidad consumer: cualquier dispositivo Apple con iOS 17 o macOS 14 o superior, incluidos iPhone, iPad y Mac con Apple Silicon (las mediciones se realizaron en un M5 Pro).
+- Despliegue: Core ML a través de la librería FluidAudio (`LocalVqeManager` / `LocalVqeStream`); los pesos originales pueden ejecutarse con el motor GGML de LocalVQE. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: 0,7–7,1 ms por llamada según variante en M5 Pro, equivalente a 14–60× tiempo real; la latencia algorítmica es de 16 ms (un hop) en ambas variantes.
 
 ## Comparativa con modelos similares
 
-Comparativa entre las variantes publicadas en este repositorio:
-
-| Variante | Parametros | Bloque | Latencia por llamada (p50, M5 Pro CPU) | Factor tiempo real | Licencia |
+| Modelo | Parametros | Tarea | Formato / plataforma | Licencia | Notas |
 |---|---|---|---|---|---|
-| v1.3 4,8 M, 256 ms | 4,8 M | 4096 muestras | 7,1 ms | 36x | Apache-2.0 |
-| v1.3 4,8 M, 16 ms | 4,8 M | 256 muestras | 1,2 ms | 14x | Apache-2.0 |
-| v1.2 1,3 M, 256 ms | 1,3 M | 4096 muestras | 4,2 ms | 60x | Apache-2.0 |
-| v1.2 1,3 M, 16 ms | 1,3 M | 256 muestras | 0,7 ms | 24x | Apache-2.0 |
+| LocalVQE Core ML (este) | 1,3 M / 4,8 M | AEC + supresion de ruido + desreverberacion | Core ML, CPU Apple | Apache-2.0 | Exportacion de LocalVQE con estado de streaming |
+| LocalVQE (original, LocalAI-io) | 1,3 M / 4,8 M | AEC + supresion de ruido + desreverberacion | PyTorch / GGML | Apache-2.0 | Modelo base; ejecutable fuera del ecosistema Apple |
+| DeepVQE (Indenbom et al., 2023) | No disponible | AEC + supresion de ruido | PyTorch (referencia academica) | No disponible | Arquitectura de la que deriva LocalVQE |
 
-Alternativas de la misma categoria mencionadas en el ecosistema (DeepVQE original, RNNoise, DTLN, DeepFilterNet): no se dispone en la informacion proporcionada de sus parametros, contexto, licencia ni resultados comparativos verificados, por lo que no se incluyen cifras. La unica referencia directa documentada es DeepVQE (Indenbom et al., Interspeech 2023), del que LocalVQE es una derivada ajustada para CPU, con paridad numerica frente al motor GGML upstream (2,8e-5 de diferencia maxima absoluta, 80 dB de SNR).
+No se dispone de datos de benchmarks comparativos con otros modelos de la categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ambito restringido: solo procesa voz a 16 kHz. No soporta generacion de texto, razonamiento, codigo, vision ni ninguna tarea propia de un modelo de lenguaje.
-- La salida esta desfasada un hop (256 muestras, 16 ms) respecto a la entrada; el primer hop emitido cubre t < 0 y debe descartarse, y es necesario inyectar un hop de ceros al final para drenar el estado. Omitir estos pasos produce artefactos en los bordes.
-- La gestion de estado es manual: hay que realimentar los 33 tensores `out_*` como `in_*` de la llamada siguiente. Un mal manejo del estado rompe la continuidad del audio.
-- Dependencia de plataforma: el formato `.mlmodelc` esta atado al stack Core ML de Apple (iOS 17 / macOS 14 minimo). No es portable directamente a Linux, Android o Windows.
-- No se publican metricas objetivas de calidad (PESQ, DNSMOS, ERLE, STOI) ni evaluaciones en escenarios de doble habla mas alla del clip de demo usado para verificar paridad.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y 0,0 GB de tamano reportado, por lo que no existe validacion independiente de la comunidad.
-- No se documentan sesgos, comportamiento con idiomas concretos ni rendimiento en condiciones acusticas adversas (ruido no estacionario, reverberacion fuerte, multiples hablantes).
-- La model card no detalla el dataset de entrenamiento ni el proceso de ajuste, lo que dificulta evaluar la cobertura de dominios.
-- Licencia Apache-2.0, que permite uso comercial, pero se debe citar el repositorio upstream (`localai-org/LocalVQE`, `CITATION.cff`) y el paper de DeepVQE. Conviene verificar las condiciones de los pesos base `LocalAI-io/LocalVQE` antes de un despliegue en produccion.
-- Al ser una exportacion de un modelo upstream, cualquier mejora o correccion debe llegar primero al modelo original y reexportarse; este repositorio no es la fuente de verdad.
+- Modelo especializado exclusivamente en realce de voz a 16 kHz; no procesa otras frecuencias de muestreo ni tareas de lenguaje, visión o generación.
+- Requiere la señal de referencia del altavoz (`ref`) para la cancelación de eco; sin ella, la componente AEC pierde su función principal.
+- Retardo algorítmico de un hop (16 ms) entre entrada y salida, además del coste de cómputo por llamada.
+- Solo se distribuyen pesos en fp32 para Core ML; no hay variantes cuantizadas a int8 o fp16 en la información disponible.
+- Dependencia de plataforma: objetivos mínimos iOS 17 / macOS 14; no es portable directamente a Linux, Android o Windows en formato Core ML.
+- Riesgo de artefactos o distorsión de la voz en condiciones de double-talk severo o relaciones señal-ruido muy bajas; no se documentan métricas de calidad perceptual (PESQ, STOI) en la información disponible.
+- Licencia Apache-2.0 permite uso comercial, pero se debe citar el repositorio upstream y el paper de DeepVQE según indica la model card.
+- No se documentan sesgos demográficos ni de idioma, aunque al ser un modelo de señal puede comportarse de forma desigual con voces muy agudas o graves; no hay evaluación publicada al respecto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FluidInference/localvqe-coreml
-- Modelo base (pesos): https://huggingface.co/LocalAI-io/LocalVQE
-- Repositorio upstream LocalVQE: https://github.com/localai-org/LocalVQE
-- Libreria de consumo FluidAudio: https://github.com/FluidInference/FluidAudio
-- Codigo de conversion a Core ML (mobius): https://github.com/FluidInference/mobius
-- Paper de DeepVQE (Indenbom et al., Interspeech 2023): https://arxiv.org/abs/2306.03177
+- Modelo base (pesos originales): https://huggingface.co/LocalAI-io/LocalVQE
+- Repositorio LocalVQE: https://github.com/localai-org/LocalVQE
+- Librería FluidAudio: https://github.com/FluidInference/FluidAudio
+- Código de conversión a Core ML: https://github.com/FluidInference/mobius (`models/enhancement/localvqe/coreml`)
+- Paper DeepVQE (Indenbom et al., Interspeech 2023): https://arxiv.org/abs/2306.03177

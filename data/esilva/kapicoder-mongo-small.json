@@ -58,64 +58,46 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "MongoDB fill-in-the-middle autocomplete",
-      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
-      "metric": "FIM accuracy (normalized exact match)",
-      "value": 0.41
+      "task": "MongoDB autocomplete with the cursor inside a call (editor-context-v2)",
+      "dataset": "Internal evaluation on synthetic data, cursor-in-call suite v1 (n=1200, held-out schemas)",
+      "metric": "Document parses after inserting the suggestion (64 tokens, v2 post-processing)",
+      "value": 0.9492
     },
     {
-      "task": "MongoDB fill-in-the-middle autocomplete",
+      "task": "MongoDB autocomplete with the cursor inside a call (editor-context-v2)",
+      "dataset": "Internal evaluation on synthetic data, cursor-in-call suite v1 (n=1200, held-out schemas)",
+      "metric": "Every operator is legal where it is (64 tokens, v2 post-processing)",
+      "value": 0.9483
+    },
+    {
+      "task": "MongoDB autocomplete with the cursor inside a call (editor-context-v2)",
+      "dataset": "Internal evaluation on synthetic data, cursor-in-call suite v1 (n=1200, held-out schemas)",
+      "metric": "Cited fields exist in the target collection, schema in the header (context_kind=full)",
+      "value": 0.9917
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete (previous editor-context-v1 benchmark)",
+      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
+      "metric": "FIM accuracy (normalized exact match)",
+      "value": 0.399
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete (previous editor-context-v1 benchmark)",
       "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
       "metric": "Exec-valid (completion parses and runs read-only)",
-      "value": 0.6015
+      "value": 0.5815
     },
     {
-      "task": "MongoDB fill-in-the-middle autocomplete",
-      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
-      "metric": "Exec-valid divided by validator ceiling (0.6255)",
-      "value": 0.9616
-    },
-    {
-      "task": "MongoDB fill-in-the-middle autocomplete",
-      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
-      "metric": "Syntax-valid",
-      "value": 0.998
-    },
-    {
-      "task": "MongoDB fill-in-the-middle autocomplete",
-      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
-      "metric": "Nonexistent fields, schema visible (context_kind=full), percent",
-      "value": 1.21
-    },
-    {
-      "task": "Generic JavaScript fill-in-the-middle (regression check)",
-      "dataset": "Permissive npm JavaScript FIM cuts, internal (n=500)",
-      "metric": "FIM accuracy (normalized exact match)",
-      "value": 0.606
-    },
-    {
-      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
-      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
+      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas (editor-context-v1)",
+      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM- and grammar-written; not fully independent of the training data)",
       "metric": "FIM accuracy (normalized exact match), homologation",
-      "value": 0.4537
+      "value": 0.4461
     },
     {
-      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
-      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
+      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas (editor-context-v1)",
+      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM- and grammar-written; not fully independent of the training data)",
       "metric": "Exec-valid (completion parses and runs read-only), homologation",
-      "value": 0.8307
-    },
-    {
-      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
-      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
-      "metric": "Exec-valid divided by validator ceiling (0.9307), homologation",
-      "value": 0.8926
-    },
-    {
-      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
-      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
-      "metric": "Nonexistent fields, schema visible (context_kind=full), percent, homologation",
-      "value": 7.5
+      "value": 0.8426
     }
   ],
   "sources": []

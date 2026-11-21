@@ -2,90 +2,95 @@
 
 ## Resumen
 
-d1-Omni-2B es un modelo de decisión multimodal desarrollado por Liquid AI, distribuido en formato GGUF por el equipo de ggml-org para su uso con llama.cpp. Se construye sobre LFM3-Omni-2B y está diseñado para responder preguntas sobre entradas de texto, imagen, audio y vídeo devolviendo una respuesta calibrada en un único paso forward, sin generar tokens de forma autorregresiva. Esta aproximación lo aleja de los modelos conversacionales convencionales y lo orienta a tareas de clasificación, verificación y decisión sobre contenido multimodal.
+d1-Omni-2B es un modelo de decisión multimodal desarrollado originalmente por LiquidAI y convertido a formato GGUF por ggml-org. Se trata de un modelo de 1728 millones de parámetros (1.7B) que acepta entradas de texto, imagen, audio y vídeo, y está diseñado específicamente para ser invocado mediante el endpoint `/v1/systemone` de llama.cpp. Su denominación "decision model" indica que no es un modelo generativo al uso, sino un componente pensado para tomar decisiones dentro de un pipeline (por ejemplo, enrutamiento, clasificación o selección de acciones), lo que lo distingue de los LLM conversacionales convencionales.
 
-El modelo cuenta con 1.728.801.600 parámetros (aproximadamente 2B, de ahí su nombre) y se distribuye bajo licencia LFM 1.0. Su integración con llama.cpp se realiza a través de un endpoint específico (`/v1/systemone`) y requiere la versión `b11960` o superior. El repositorio GGUF ocupa 6,2 GB e incluye un fichero mmproj que aloja los codificadores de visión y audio.
+La relevancia de esta ficha radica en que es una de las primeras implementaciones multimodales (audio, vídeo, imagen y texto) empaquetadas en GGUF y ejecutables localmente con llama.cpp, con un tamaño que cabe en GPUs de consumo. El modelo base es LiquidAI/d1-Omni-2B, distribuido bajo la licencia LFM 1.0 (lfm1.0), y esta versión GGUF está licenciada como "other" con referencia a la misma LFM 1.0. La conversión es automática mediante la herramienta ggml-org/convert y requiere llama.cpp b11960 o superior.
 
-La relevancia de este modelo radica en su enfoque de "decisión en un solo paso", que reduce la latencia frente a modelos generativos para tareas donde la salida es una respuesta corta y calibrada. Al estar empaquetado en GGUF, puede ejecutarse en hardware de consumo mediante llama.cpp, lo que facilita su despliegue local en escenarios de evaluación multimodal.
+La información disponible sobre idiomas, benchmarks y datos de entrenamiento es escasa; la model card se limita a instrucciones de ejecución y notas técnicas sobre el manejo de entradas multimodales. Por tanto, varias filas de especificaciones se marcan como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (construido sobre LFM3-Omni-2B; modelo de decisión con codificadores de visión y audio) |
-| Parametros totales | 1.728.801.600 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (requiere `-b` y `-ub` de 8192 para entradas largas; por defecto `-ub 512` rechaza entradas más largas) |
-| Tipos de cuantizacion | GGUF cuantizado; se mencionan BF16 y Q8_0 con los mismos tensores que los GGUF oficiales de LiquidAI |
-| Idiomas soportados | no disponible |
-| Licencia | LFM 1.0 (lfm1.0) |
-| Formato de pesos | GGUF (con fichero mmproj para visión y audio) |
+| Arquitectura | No disponible (modelo multimodal con encoder de visión y encoder de audio; arquitectura del transformer base no detallada) |
+| Parámetros totales | 1.728.801.600 (≈1.73B) |
+| Parámetros activos | No disponible (no se indica que sea MoE) |
+| Longitud de contexto | No disponible como cifra nominal; requiere `-b`/`-ub` configurados para albergar el estado y los medios de la consulta (ejemplo con `-b 8192 -ub 8192`) |
+| Tipos de cuantización | BF16 y Q8_0 (mismos tensores que los GGUF de LiquidAI); otras cuantizaciones GGUF no confirmadas |
+| Idiomas soportados | No disponible |
+| Licencia | LFM 1.0 (lfm1.0), marcada como "other" con enlace a la licencia de LiquidAI |
+| Formato de pesos | GGUF (repo de 6.2 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El modelo se describe como un "decision model" construido sobre LFM3-Omni-2B, con capacidad de procesar texto, imagen, audio y vídeo. La característica diferencial es que devuelve respuestas calibradas en un único paso forward, sin decodificación autorregresiva de tokens, lo que implica una arquitectura orientada a la clasificación o puntuación de entradas multimodales en lugar de a la generación de secuencias.
+La model card no detalla la arquitectura interna del transformer base ni la composición del dataset de entrenamiento. Lo que sí se documenta es que el modelo es multimodal: el archivo `mmproj` contiene el encoder de visión y el encoder de audio, y el modelo acepta texto, imagen, audio y vídeo (el vídeo requiere `ffmpeg` disponible en `PATH`). El modelo se ejecuta como "decision model" mediante el endpoint `/v1/systemone` de llama.cpp, lo que sugiere un uso orientado a la toma de decisiones o clasificación más que a la generación libre de texto.
 
-El repositorio GGUF incluye un fichero mmproj que contiene el codificador de visión y el codificador de audio. No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La conversión a GGUF se realiza automáticamente mediante la herramienta de ggml-org.
+No se dispone de información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas específicas (decodificación especulativa, attention lineal, etc.). La conversión a GGUF es automática mediante ggml-org/convert, y se indica que BF16 y Q8_0 comparten los mismos tensores que los GGUF oficiales de LiquidAI.
 
 ## Capacidades
 
-- Procesamiento de entradas multimodales: texto, imagen, audio y vídeo (el vídeo requiere `ffmpeg` en el `PATH`).
-- Modelo de decisión: devuelve una respuesta calibrada en un solo paso forward, sin generar tokens.
-- Integración con llama.cpp mediante el endpoint `/v1/systemone`.
-- Codificadores de visión y audio incluidos en el fichero mmproj.
-- Compatible con endpoints (tag `endpoints_compatible`).
-- Orientado a uso conversacional según los tags del repositorio, aunque su naturaleza es de decisión.
-- No se documentan capacidades de tool calling, agentes multi-paso ni modo thinking.
+- Entrada multimodal: texto, imagen, audio y vídeo (vídeo con `ffmpeg` en `PATH`).
+- Modelo de decisión: uso previsto mediante el endpoint `/v1/systemone`, orientado a tomar decisiones dentro de un pipeline.
+- Procesamiento de audio y texto (`audio-text-to-text` como pipeline tag).
+- Procesamiento de imagen mediante encoder de visión incluido en `mmproj`.
+- Conversacional (tag `conversational`).
+- Compatible con endpoints (`endpoints_compatible`).
+- Tool calling / function calling: no disponible en la información.
+- Agentes y multi-step reasoning: no disponible en la información.
+- Capacidades multilingües: no disponible (idiomas no especificados).
+- Modo thinking, salida de audio o otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Clasificación multimodal de contenido: el modelo puede recibir una imagen o un audio junto con una pregunta y devolver una decisión calibrada en un solo paso, adecuado para moderación o etiquetado automático.
-- Verificación de respuestas sobre audio: dada una grabación y una afirmación, el modelo evalúa si la afirmación es correcta sin generar texto libre, lo que simplifica la integración en pipelines de validación.
-- Análisis de vídeo para detección de eventos: con `ffmpeg` disponible, se pueden procesar fotogramas y audio para decidir si se cumple una condición concreta, útil en monitorización automatizada.
-- Evaluación de calidad de imágenes generadas: el modelo puede puntuar o clasificar imágenes frente a un criterio dado en un único forward, reduciendo la latencia frente a modelos generativos.
-- Filtrado previo en sistemas RAG multimodales: antes de invocar un modelo generativo grande, d1-Omni-2B puede decidir si un documento, imagen o audio es relevante para la consulta, ahorrando cómputo.
-- Despliegue local en estaciones de trabajo: al estar en GGUF y ejecutarse con llama.cpp, permite prototipar decisiones multimodales en hardware de consumo sin depender de APIs externas.
-- Asistencia en accesibilidad: clasificación de audio para detectar eventos sonoros relevantes o verificar transcripciones en un solo paso.
+- Enrutamiento de peticiones multimodales: usar el modelo como decisor para clasificar si una consulta entrante es texto, audio, imagen o vídeo y derivarla al componente adecuado del sistema, aprovechando su entrada multimodal y el endpoint `/v1/systemone`.
+- Moderación y clasificación de contenido audiovisual: analizar audio e imagen de una entrada para decidir si cumple políticas, dado que el modelo integra encoders de visión y audio en un único `mmproj`.
+- Transcripción y análisis de reuniones: procesar audio de una reunión y emitir decisiones estructuradas (por ejemplo, extracción de acciones) usando la ventana configurada con `-b`/`-ub` para albergar el estado completo de la consulta.
+- Asistentes de atención al cliente con entrada de voz: recibir audio del usuario y decidir la intención o ruta de escalado, con despliegue local en llama.cpp sin dependencia de servicios en la nube.
+- Análisis de vídeo para control de calidad: con `ffmpeg` en `PATH`, alimentar clips cortos al modelo para decidir si un fotograma o segmento requiere revisión humana.
+- Automatización de pipelines de decisión en CI/CD o backoffice: invocar el modelo vía API `/v1/systemone` para clasificar artefactos o incidencias con contexto de hasta 8192 tokens (configuración de ejemplo), ejecutándose en hardware de consumo gracias a su tamaño de 1.7B.
+- Prototipado de agentes multimodales locales: usar el modelo como componente de decisión dentro de un agente mayor, combinando texto e imagen en una sola llamada por lote.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Con 1,73B parámetros, en BF16 serían necesarios aproximadamente 3,5 GB solo para los pesos, más el codificador de visión y audio del mmproj; en Q8_0, alrededor de 1,8 GB para los pesos. El repositorio completo ocupa 6,2 GB.
-- GPU recomendadas: no disponibles en la documentación. Por tamaño, cabría en GPUs de consumo con 8 GB o más de VRAM en cuantizaciones Q8_0 o inferiores, aunque no se confirma oficialmente.
-- Cabe en GPU de consumo: probablemente sí en GPUs con 8-12 GB de VRAM, sujeto a la memoria del mmproj y al tamaño de lote requerido (`-b 8192 -ub 8192` para entradas largas).
-- Opciones de despliegue: llama.cpp (versión `b11960` o superior), Llama app y `llama serve`. No se documenta soporte para vLLM, TGI u Ollama.
-- Latencia y throughput: no disponibles. Al ser un modelo de decisión de un solo paso, se espera menor latencia que un modelo generativo equivalente, pero no hay cifras publicadas.
+- VRAM estimada: para 1.73B parámetros, en BF16 ≈3.5 GB solo de pesos, más el `mmproj` (encoders de visión y audio) y el estado de la consulta; en Q8_0 ≈1.8 GB de pesos. Cifras orientativas calculadas a partir del número de parámetros, no publicadas por el autor.
+- GPU recomendadas: no especificadas por el autor; por tamaño, GPUs de consumo con 8 GB o más deberían albergar Q8_0 con margen para el `mmproj` y el contexto.
+- Cabe en GPU de consumo: previsiblemente sí (RTX 3060/4060/4090 y similares), aunque no confirmado oficialmente.
+- Opciones de despliegue: llama.cpp (requiere b11960 o superior), `llama serve` con `-hf ggml-org/d1-Omni-2B-GGUF -b 8192 -ub 8192`, y la app Llama (llama.app). vLLM, TGI y Ollama no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles. Nota importante: con `-ub 512` (valor por defecto) las entradas largas se rechazan y las imágenes reciben un presupuesto de tokens menor, lo que altera las respuestas; hay que ajustar `-b` y `-ub` al tamaño del estado y los medios.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-Omni-2B (este) | 1,73B | no disponible | texto, imagen, audio, vídeo | LFM 1.0 | GGUF |
-| LiquidAI/d1-Omni-2B (original) | 1,73B | no disponible | texto, imagen, audio, vídeo | LFM 1.0 | safetensors/GGUF oficial |
-| LFM3-Omni-2B (base) | no disponible | no disponible | texto, imagen, audio | no disponible | no disponible |
+| ggml-org/d1-Omni-2B-GGUF (este) | 1.73B | Configurable vía `-b`/`-ub` (ej. 8192) | Texto, imagen, audio, vídeo | LFM 1.0 | GGUF en HF |
+| LiquidAI/d1-Omni-2B (base) | 1.73B | No disponible | Texto, imagen, audio, vídeo | LFM 1.0 | Pesos originales en HF |
+| LiquidAI/d1-Omni-2B-GGUF | 1.73B | No disponible | Texto, imagen, audio, vídeo | LFM 1.0 | GGUF oficial en HF |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros modelos multimodales de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de decisión, no generativo: no debe esperarse que produzca texto libre largo; su uso previsto es mediante el endpoint `/v1/systemone`.
-- Requiere configuración de lote específica: con `-ub 512` por defecto, las entradas largas se rechazan y las imágenes reciben un presupuesto de tokens menor, lo que altera las respuestas. Es necesario usar `-b 8192 -ub 8192` para entradas largas.
-- Dependencia de versión: requiere llama.cpp `b11960` o superior.
-- El procesamiento de vídeo necesita `ffmpeg` en el `PATH`.
-- Licencia LFM 1.0: es necesario revisar los términos en el enlace oficial antes de un uso comercial; la licencia se etiqueta como "other".
-- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación.
-- Al ser una conversión automática a GGUF, pueden existir diferencias sutiles respecto a los pesos originales, aunque el autor indica que BF16 y Q8_0 comparten tensores con los GGUF de LiquidAI.
-- Sin descargas ni likes en el momento de la consulta, lo que limita la validación comunitaria.
+- Modelo de decisión, no generativo general: está pensado para invocarse vía `/v1/systemone`; usarlo como LLM conversacional convencional puede dar resultados no previstos.
+- Configuración de contexto crítica: con `-ub 512` (por defecto) las entradas largas se rechazan y las imágenes reciben menos tokens, cambiando las respuestas; es necesario ajustar `-b` y `-ub`.
+- Dependencia de `ffmpeg` en `PATH` para entradas de vídeo.
+- Requiere llama.cpp b11960 o superior; versiones anteriores no son compatibles.
+- Conversión automática mediante ggml-org/convert: posibles diferencias respecto a los pesos originales, aunque se indica que BF16 y Q8_0 comparten tensores con los GGUF de LiquidAI.
+- Idiomas soportados no documentados; riesgo de comportamiento deficiente en idiomas distintos del entrenamiento.
+- Sesgos conocidos: no disponibles.
+- Riesgo de alucinación: no evaluado en la información disponible.
+- Licencia LFM 1.0: restricciones para uso comercial no detalladas en esta ficha; consultar el enlace de licencia de LiquidAI antes de desplegar en producción.
+- Benchmarks y rendimiento no publicados: no se puede garantizar calidad frente a alternativas.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/ggml-org/d1-Omni-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/d1-Omni-2B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/d1-Omni-2B
 - GGUF oficial de LiquidAI: https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF
-- Licencia: https://huggingface.co/LiquidAI/d1-Omni-2B/blob/main/LICENSE
-- Pull request de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31275
+- Licencia LFM 1.0: https://huggingface.co/LiquidAI/d1-Omni-2B/blob/main/LICENSE
+- PR de llama.cpp con `/v1/systemone`: https://github.com/ggml-org/llama.cpp/pull/31275
 - Herramienta de conversión: https://github.com/ggml-org/convert
-- Llama app: https://llama.app
+- App Llama: https://llama.app

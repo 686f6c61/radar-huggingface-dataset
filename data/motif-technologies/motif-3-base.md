@@ -2,103 +2,91 @@
 
 ## Resumen
 
-Motif 3 Base es el checkpoint de preentrenamiento del modelo Motif 3, un gran modelo de lenguaje de tipo Mixture-of-Experts (MoE) con arquitectura decoder-only, desarrollado por Motif Technologies. Con 314 mil millones de parámetros totales y 13,2 mil millones activados por token, está diseñado para ofrecer una gran capacidad de modelado con un coste computacional por token relativamente bajo. Se trata de un modelo base, es decir, no ha pasado por fine-tuning supervisado ni alineamiento, por lo que se publica como punto de partida para investigación y adaptación posterior.
+Motif 3 Base es el checkpoint base preentrenado de Motif 3, un modelo de lenguaje decoder-only con arquitectura de mezcla de expertos (MoE) desarrollado íntegramente por Motif Technologies. Cuenta con 314.841.775.750 parámetros totales (aproximadamente 314B) y activa unos 13.2B parámetros por token, lo que permite un cómputo por token moderado pese al tamano del pool de expertos. Se distribuye bajo licencia MIT y esta pensado como punto de partida para ajuste fino, preentrenamiento continuado, RL, destilacion e investigacion sobre representaciones.
 
-El modelo incorpora una arquitectura novedosa denominada Grouped Differential Latent Attention (GDLA), que combina atención diferencial agrupada con la representación comprimida de clave-valor de Multi-head Latent Attention. Además, utiliza conexiones residuales modificadas (manifold-constrained hyper-connections, mHC), activaciones Expert-Specific PolyNorm y un objetivo auxiliar de predicción multi-token (MTP). Se ha preentrenado con aproximadamente 12,5 billones de tokens, con énfasis en inglés, coreano, código, matemáticas y dominios especializados como legal y finanzas. Su contexto nativo es de 262 144 tokens (256K), lo que lo hace adecuado para tareas que requieren ventanas largas.
+La arquitectura introduce varias innovaciones propietarias: Grouped Differential Latent Attention (GDLA), que combina atencion diferencial agrupada con la representacion comprimida de clave-valor de Multi-head Latent Attention; manifold-constrained hyper-connections modificadas (mHC); activaciones Expert-Specific PolyNorm; y un objetivo auxiliar de Multi-Token Prediction (MTP). El modelo soporta una ventana de contexto nativa de 262.144 tokens (256K) y fue preentrenado con aproximadamente 12.5 billones de tokens.
 
-La relevancia actual de este modelo radica en su combinación de eficiencia MoE, contexto muy largo y una arquitectura de atención innovadora, además de su licencia MIT que permite uso comercial y modificación. Al ser un modelo base, su valor principal está en servir como cimiento para fine-tuning, continuación de preentrenamiento o investigación sobre representaciones.
+Es relevante ahora porque se publica como base limpia, sin SFT ni alineamiento de seguridad, lo que lo hace util para equipos que necesitan un modelo fundacional grande y de licencia permisiva sobre el que construir sus propios pipelines de post-entrenamiento. No obstante, no es un asistente: no incluye plantilla de chat ni sigue instrucciones de serie.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture-of-Experts), decoder-only, con GDLA (Grouped Differential Latent Attention) |
-| Parametros totales | ~314 mil millones |
-| Parametros activos | ~13,2 mil millones por token |
-| Longitud de contexto | 262 144 tokens (256K) |
-| Tipos de cuantizacion | no disponible (no se menciona en la informacion proporcionada) |
-| Idiomas soportados | ingles (en), coreano (ko) |
+| Arquitectura | Mixture-of-Experts (MoE), decoder-only, con GDLA, mHC y Expert-Specific PolyNorm |
+| Parametros totales | 314.841.775.750 (~314B) |
+| Parametros activos | ~13.2B por token |
+| Longitud de contexto | 262.144 tokens (256K) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | Ingles y coreano (segun model card); tokenizer orientado tambien a codigo y matematicas |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
-
-Adicionalmente, la model card proporciona otros detalles técnicos:
-
-| Parametro | Valor |
-|---|---|
-| Numero de capas | 53 (2 densas + 51 MoE) |
-| Dimension oculta | 4096 |
-| FFN intermedio (capas densas) | 12 288 |
-| Cabezas de atencion (query / KV) | 80 / 16 |
-| Expertos enrutados | 384 (top-8) |
-| Expertos compartidos | 1 |
-| Activacion | Expert-Specific PolyNorm |
-| Residual | Modified manifold-constrained hyper-connections (mHC) |
-| Tamano de vocabulario | 220 160 |
-| Tokens de preentrenamiento | ~12,5 billones |
-| Tipo de tensor | bfloat16 |
+| Formato de pesos | safetensors (bfloat16); repo de 629.7 GB |
 
 ## Arquitectura y entrenamiento
 
-Motif 3 Base es un modelo MoE con 53 capas, de las cuales las dos primeras son densas y las 51 restantes utilizan enrutamiento de expertos. Cada capa MoE dispone de 384 expertos enrutados, de los cuales se activan 8 por token, más un experto compartido. La atención se implementa mediante GDLA, que integra atención diferencial agrupada con la compresión de clave-valor típica de Multi-head Latent Attention, lo que reduce el coste de memoria y cómputo en contextos largos. Las conexiones residuales usan una variante modificada de hyper-connections con restricciones de manifold, y la activación de los expertos es Expert-Specific PolyNorm, una normalización polinómica específica por experto. El objetivo auxiliar de Multi-Token Prediction (MTP) se emplea durante el preentrenamiento para mejorar la eficiencia y la estabilidad del entrenamiento.
+Motif 3 Base es un transformer decoder-only con 53 capas (2 densas iniciales y 51 MoE), dimension oculta de 4096, FFN densa de 12.288 en las dos primeras capas, 80 cabezas de query y 16 cabezas KV, y un vocabulario de 220.160 tokens. El bloque MoE contiene 384 expertos enrutados con top-8 activos por token mas 1 experto compartido. La atencion es GDLA con salida con compuerta, y el residual usa hyper-conexiones con restriccion de variedad (mHC) modificadas. La activacion es PolyNorm especifica por experto.
 
-El preentrenamiento se realizó sobre aproximadamente 12,5 billones de tokens, con una composición que incluye documentos web, STEM, código, matemáticas, contenido multilingüe y corpus especializados. Se prestó especial atención a datos en coreano, así como a corpus de razonamiento, legales y financieros. No se aplicó RLHF, DPO ni ningún otro método de alineamiento posterior, ya que se trata de un checkpoint base. El tokenizador está optimizado para bytes por token en inglés, coreano, código y matemáticas.
+El preentrenamiento cubre aproximadamente 12.5 billones de tokens de documentos web, STEM, codigo, matematicas, contenido multilingue y corpus especializados, con enfasis adicional en coreano, datos legales y financieros y tareas de razonamiento. Se empleo un objetivo auxiliar de Multi-Token Prediction (MTP) para mejorar la estabilidad de optimizacion y la especializacion de expertos, y el entrenamiento de contexto largo uso context parallelism con ventanas. No se aplico SFT, RL ni alineamiento de preferencias en este checkpoint.
 
 ## Capacidades
 
-- Generacion de texto en modo completado: al ser un modelo base, puede continuar secuencias de texto de forma autónoma, pero no sigue instrucciones ni mantiene conversaciones.
-- Razonamiento y matematicas: el entrenamiento incluye datos de razonamiento y matemáticas, por lo que el modelo ha adquirido cierta capacidad en estas áreas, aunque sin fine-tuning no se comporta como un asistente.
-- Generacion de codigo: los datos de preentrenamiento incluyen código, lo que permite al modelo completar fragmentos de código o continuar secuencias de programación.
-- Capacidad multilingue: entrenado principalmente en ingles y coreano, con soporte adicional para otros idiomas a través de datos multilingües.
-- Contexto largo nativo: ventana de 262 144 tokens, entrenada con paralelismo de contexto consciente de ventana, lo que permite procesar documentos extensos.
-- No incluye soporte de tool calling, function calling ni capacidades de agente, al ser un modelo base sin post-entrenamiento.
-- No dispone de modo de pensamiento (thinking mode) ni capacidades multimodales (vision, audio).
+- Generacion de texto en modo completado (no instruccional).
+- Razonamiento y modelado de lenguaje general tras 12.5T tokens de preentrenamiento.
+- Generacion de codigo y matemáticas, con tokenizer optimizado para estos dominios.
+- Capacidades multilingues centradas en ingles y coreano.
+- Contexto largo nativo de 256K tokens para tareas de recuperacion y resumen sobre documentos extensos.
+- Base para tool calling y agentes solo tras ajuste fino; el checkpoint no incluye comportamiento agentico de serie.
+- No incluye vision, audio ni modo thinking: es un modelo puramente de texto.
 
 ## Casos de uso
 
-- Fine-tuning supervisado para tareas especificas: el modelo puede ajustarse con datasets etiquetados para clasificacion, extraccion de informacion o generacion estructurada. Su gran tamano y arquitectura MoE permiten adaptarse a dominios concretos con un coste de inferencia moderado gracias a los pocos parametros activos.
-- Continuacion de preentrenamiento en dominios especializados: sectores como legal o financiero pueden continuar el preentrenamiento con corpus propios, aprovechando el enfasis ya presente en esos datos y la ventana de contexto larga para procesar documentos extensos.
-- Investigacion sobre representaciones y mecanismos de atencion: al ser un modelo base con arquitectura novedosa (GDLA, mHC, PolyNorm), es util para estudiar el comportamiento de estas tecnicas a gran escala.
-- Distilacion a modelos mas pequenos: el checkpoint puede usarse como modelo profesor para entrenar modelos destilados mas eficientes, dado que su salida contiene conocimiento de un preentrenamiento masivo.
-- Desarrollo de modelos instructivos: a partir de este checkpoint, se puede aplicar SFT y RLHF para crear un asistente conversacional, como hace el modelo Motif-3 (la version post-entrenada).
-- Adaptacion a otros idiomas: aunque el foco principal es ingles y coreano, el modelo puede fine-tuning en otros idiomas para mejorar su rendimiento en ellos, gracias a su tokenizador multilingue.
+- Ajuste fino supervisado (SFT): usar el checkpoint como inicializacion para crear un asistente conversacional propio con datos de dominio, anadiendo plantilla de chat y dataset de instrucciones.
+- Preentrenamiento continuado en dominios especializados: continuar el entrenamiento con corpus legales, financieros o cientificos para adaptar el modelo antes de un SFT posterior.
+- Investigacion sobre arquitecturas MoE: estudiar el comportamiento de GDLA, mHC y PolyNorm comparando con variantes estandar de atencion y activacion.
+- Generacion de codigo tras post-entrenamiento: partir de la base para construir un modelo de autocompletado o generacion en IDE, aprovechando el vocabulario y el enfasis en codigo del preentrenamiento.
+- Procesamiento de documentos largos: aprovechar los 256K tokens de contexto para resumen, extraccion o recuperacion sobre contratos, informes o expedientes extensos una vez ajustado.
+- Modelo profesor para destilacion: generar datos sinteticos o etiquetas de alta calidad con el modelo base para entrenar modelos mas pequenos en dominios concretos.
+- Experimentacion en RLHF/DPO: usar el checkpoint como politica inicial en pipelines de alineamiento e investigar tecnicas de preferencia sobre un modelo de 314B con 13.2B activos.
 
 ## Benchmarks y rendimiento
 
-La model card menciona una seccion de evaluacion con una tabla de resultados, pero el extracto proporcionado se corta justo en la cabecera de la tabla, por lo que no se dispone de los valores numericos. No se han publicado resultados de benchmarks en la informacion disponible.
+La model card menciona una seccion de resultados de evaluacion con benchmarks de opcion multiple, matematicas, HumanEval y MBPP, pero la informacion proporcionada se corta antes de mostrar la tabla completa. No se dispone de las cifras concretas en el material disponible.
+
+No se han publicado resultados de benchmarks completos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 314 mil millones de parametros en bfloat16, solo los pesos requieren aproximadamente 628 GB de memoria. Con cuantizacion a 8 bits se reduciria a unos 314 GB, y a 4 bits a unos 157 GB, pero no se han publicado cuantizaciones oficiales para este modelo.
-- GPU recomendadas: no es viable en una unica GPU de consumo. Se necesitan multiples GPU de alta gama, como NVIDIA A100 (80 GB) o H100 (80 GB), en configuracion multi-GPU o en cluster. Por ejemplo, con 8x A100 de 80 GB se podria cargar en bfloat16, aunque con limitaciones de memoria para activaciones y contexto largo.
-- En consumer GPU: no cabe en ninguna GPU de consumo actual (RTX 4090, 24 GB, seria insuficiente incluso con cuantizacion agresiva).
-- Opciones de despliegue: al ser un modelo transformers con pesos en safetensors, se puede servir con vLLM, TensorRT-LLM o TGI, siempre que se disponga de hardware suficiente. Para cuantizacion, se podria usar llama.cpp o GPTQ, pero no hay versiones GGUF publicadas en la informacion disponible.
-- Latencia y throughput: no se han proporcionado datos. Dependera del hardware, la cuantizacion y el tamano de la ventana de contexto.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 630 GB solo para pesos, mas cache KV y activaciones; requiere multiples GPU de 80 GB (por ejemplo, 8x H100 80GB o 8x A100 80GB) como minimo practico.
+- Cuantizacion: no se especifican formatos oficiales; una cuantizacion a 4 bits reduciria los pesos a unos 160 GB, aun fuera del alcance de una sola GPU consumer.
+- GPU consumer: no cabe en RTX 4090 (24 GB) ni en configuraciones de una sola GPU consumer, incluso con cuantizacion agresiva.
+- Despliegue: se espera soporte en vLLM y TGI para servir el modelo en multi-GPU; llama.cpp/Ollama no son viables a este tamano sin cuantizaciones extremas no publicadas.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Se comparan modelos MoE de gran escala con parametros totales y activos similares. Los datos de rendimiento no estan disponibles para Motif 3 Base, por lo que la comparacion se limita a caracteristicas estructurales.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Motif 3 Base | ~314B | ~13.2B | 256K | MIT | Hugging Face |
-| Mixtral 8x7B | ~46.7B | ~12.9B | 32K | Apache 2.0 | Hugging Face |
-| DeepSeek-V2 | ~236B | ~21B | 128K | MIT | Hugging Face |
-| Qwen1.5-MoE-A2.7B | ~14.3B | ~2.7B | 32K | Apache 2.0 | Hugging Face |
+| Motif 3 Base | ~314B | ~13.2B | 256K | MIT | Base sin alinear, GDLA y mHC |
+| DeepSeek-V3 (referencia) | ~671B | ~37B | 128K | MIT-like | MoE con MLA; mas parametros y activos |
+| Qwen2.5-72B (referencia) | 72B | 72B | 128K | Apache 2.0 | Denso, sin MoE |
+| Llama 3.1 405B (referencia) | 405B | 405B | 128K | Llama license | Denso, licencia restrictiva |
 
-Motif 3 Base destaca por su contexto nativo de 256K, muy superior a los 32K de Mixtral o los 128K de DeepSeek-V2, y por su licencia MIT, que permite uso comercial sin restricciones. Su numero de parametros activos (13.2B) es comparable al de Mixtral 8x7B, pero con un pool de expertos mucho mayor (384 frente a 8), lo que podria ofrecer una mayor especializacion. No se dispone de comparativas de rendimiento publicadas.
+Las cifras de los modelos comparables son de referencia general y no proceden de la informacion proporcionada; la model card de Motif omite deliberadamente comparaciones entre modelos.
 
 ## Limitaciones y advertencias
 
-- No esta alineado ni ajustado para instrucciones: el checkpoint no incluye chat template y no sigue instrucciones, por lo que no es util como asistente sin un fine-tuning previo.
-- Riesgo de alucinacion y contenido inexacto: al ser un modelo base sin alineamiento, puede generar afirmaciones falsas, sesgadas o perjudiciales. El usuario final es responsable de aplicar mitigaciones.
-- Sesgos conocidos: no se han documentado sesgos especificos, pero al estar entrenado principalmente en ingles y coreano, puede presentar sesgos culturales o linguisticos hacia esos idiomas.
-- Limitaciones de contexto: aunque la ventana nativa es de 256K, el uso de contextos muy largos requiere una cantidad considerable de memoria y puede degradar el rendimiento si no se gestiona adecuadamente.
-- Restricciones de licencia: la licencia MIT permite uso comercial, pero el modelo base no incluye garantias de seguridad ni de idoneidad para produccion. Es necesario un proceso de evaluacion y alineamiento antes de desplegarlo.
-- Requisitos de hardware: su tamano (314B) hace que la inferencia sea costosa y requiera infraestructura de multiples GPU, lo que limita su uso en entornos con recursos limitados.
+- No es un asistente: no sigue instrucciones, no mantiene conversaciones y no rechaza peticiones inseguras sin ajuste previo.
+- Sin alineamiento de seguridad: puede producir contenido sesgado, incorrecto o danino.
+- Riesgo alto de alucinacion en modo completado, especialmente en dominios especializados.
+- Idiomas: el soporte declarado se limita a ingles y coreano; el rendimiento en castellano no esta garantizado.
+- Licencia MIT: permite uso comercial, pero el usuario asume toda la responsabilidad sobre el ajuste, la evaluacion y las mitigaciones de seguridad.
+- Requisitos de hardware muy elevados: el despliegue en bfloat16 exige un cluster multi-GPU.
+- No se dispone de informacion sobre cuantizaciones oficiales ni sobre rendimiento medido en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Motif-Technologies/Motif-3-Base
-- Homepage de Motif Technologies: https://motiftech.io
-- Tech Report (arXiv): https://arxiv.org/abs/2608.09119
-- Licencia (en el repositorio del modelo instructivo): https://huggingface.co/Motif-Technologies/Motif-3/blob/main/LICENSE
+- Modelo instruccional: https://huggingface.co/Motif-Technologies/Motif-3
+- Web oficial: https://motiftech.io
+- Organizacion en Hugging Face: https://huggingface.co/Motif-Technologies
+- Tech report (arXiv): https://arxiv.org/abs/2608.09119
+- Licencia: https://huggingface.co/Motif-Technologies/Motif-3-Base/blob/main/LICENSE.md

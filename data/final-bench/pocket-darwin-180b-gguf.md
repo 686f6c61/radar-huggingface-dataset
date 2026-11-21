@@ -2,55 +2,55 @@
 
 ## Resumen
 
-POCKET-Darwin-180B-GGUF es la distribucion cuantizada en formato GGUF del modelo Darwin-180B-RSI-R3, desarrollado por VIDRAFT (publicado en Hugging Face bajo la organizacion FINAL-Bench). Se trata de un modelo de lenguaje de tipo mixture-of-experts (MoE) disperso, con 176.943.899.520 parametros totales y aproximadamente 3.000 millones de parametros activos por token, disenado especificamente para razonamiento matematico y cientifico en texto. Su interes principal radica en que empaqueta un modelo de escala 180B en un artefacto de 111,3 GB que puede ejecutarse en un unico equipo con memoria unificada de 128 GB, como una NVIDIA DGX Spark, mediante llama.cpp.
+POCKET-Darwin-180B-GGUF es la distribucion cuantizada en formato GGUF del modelo Darwin-180B-RSI-R3, desarrollado por FINAL-Bench (VIDRAFT). Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso con aproximadamente 176.900 millones de parametros totales y unos 3.000 millones de parametros activos por token, orientado a razonamiento matematico y cientifico y a generacion de texto multilingue (ingles, coreano, chino, japones). Su relevancia actual radica en que el modelo base obtuvo el primer puesto entre modelos de pesos abiertos (y segundo global) en la prueba privada de razonamiento matematico y cientifico de SuperCLUE de noviembre de 2026, con una puntuacion de 73,68, por detras unicamente de GPT-6.1-Sol (76,32) y por delante de Gemini-4-Argon, DeepSeek-V4.1-Flash y Grok-4.7.
 
-El modelo base, Darwin-180B-RSI-R3, hereda las capas de expertos de Qwen3.8-Flash-Next y reconstruye unicamente las capas de atencion y de expertos compartidos mediante un proceso de auto-mejora recursiva (RSI, recursive self-improvement). Esta version GGUF en cuatro shards emplea cuantizacion UD-Q4_K_XL y elimina el codificador de vision: es exclusivamente texto. Segun la model card, el modelo base obtuvo 73,68 puntos en razonamiento matematico y cientifico en la evaluacion privada de SuperCLUE de noviembre de 2026, quedando primero entre los modelos de pesos abiertos y segundo en la clasificacion global de 19 modelos.
+Esta version GGUF esta pensada para ejecucion local en equipos con gran cantidad de memoria, como un servidor de CPU con RAM suficiente o configuraciones hibridas GPU/CPU/SSD, y se distribuye en cuatro shards que suman aproximadamente 111,3 GB. La cuantizacion empleada es UD-Q4_K_XL, generada con imatrix, y el runtime de referencia es llama.cpp (build b11048 o superior con soporte qwen4exp).
 
-La relevancia actual del artefacto es doble: por un lado, demuestra que un MoE de 180B con solo 3B activos puede ofrecer calidad de razonamiento competitiva con modelos frontera cerrados; por otro, valida la viabilidad de desplegar ese nivel de capacidad en hardware de un solo nodo con memoria unificada, sin cluster GPU. La licencia es Qwen Community License 1.0, no Apache-2.0, lo que condiciona el uso comercial.
+El modelo hereda las capas de expertos de Qwen3.8-Flash-Next y reconstruye las capas de atencion y de experto compartido mediante un proceso de auto-mejora recursiva (RSI, recursive self-improvement) descrito por el autor. La licencia es la Qwen Community License 1.0, no Apache-2.0, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE disperso (mixture-of-experts), con capas de atencion y expertos compartidos reconstruidos por RSI |
-| Parametros totales | 176.943.899.520 (176,94B) |
-| Parametros activos | Aproximadamente 3B por token |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) disperso; capas de expertos heredadas de Qwen3.8-Flash-Next, atencion y experto compartido reconstruidos por RSI |
+| Parametros totales | 176.943.899.520 (aprox. 176,9 B) |
+| Parametros activos | Aproximadamente 3 B por token |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | UD-Q4_K_XL (unica cuantizacion incluida en el repositorio) |
-| Idiomas soportados | Ingles, coreano, chino, japones, multilingue |
-| Licencia | Qwen Community License 1.0 (no Apache-2.0) |
-| Formato de pesos | GGUF (cuatro shards, ~111,3 GB en total) |
+| Tipos de cuantizacion | UD-Q4_K_XL (unica build publicada en este repo, con imatrix) |
+| Idiomas soportados | Ingles (en), coreano (ko), chino (zh), japones (ja), multilingue |
+| Licencia | Qwen Community License 1.0 (license_name: qwen-community-1.0); no es Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp), cuatro shards, ~111,3 GB en total |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de tipo mixture-of-experts disperso con 176,94B parametros totales y unos 3B activos por token, lo que reduce drasticamente el coste computacional por token frente a un modelo denso del mismo tamano. La arquitectura parte de Qwen3.8-Flash-Next: conserva sus capas de expertos y reconstruye las capas de atencion y de expertos compartidos mediante un proceso de auto-mejora recursiva (model-level RSI, segun los tags darwin-rsi y model-level-rsi). El autor referencia dos articulos en arXiv (2605.14386 y 2609.20269) como base metodologica, aunque el contenido de dichos papers no se detalla en la informacion disponible.
+El modelo es un transformer de tipo Mixture-of-Experts disperso con 176,9 mil millones de parametros totales y aproximadamente 3 mil millones activos por token, lo que permite un coste de computo por token mucho menor que el de un modelo denso del mismo tamano. Segun la model card, las capas de expertos proceden de Qwen3.8-Flash-Next, mientras que las capas de atencion y de experto compartido se reconstruyeron mediante un proceso de auto-mejora recursiva (model-level RSI) sobre el checkpoint Darwin-180B-RSI-R3. Esta build GGUF es una cuantizacion de ese checkpoint, no un modelo entrenado de nuevo.
 
-No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. La model card indica que el artefacto GGUF es solo texto y que el codificador de vision del modelo padre no esta incluido; por tanto, las puntuaciones de vision del padre en BF16 son material de referencia y no mediciones de esta build. La cuantizacion UD-Q4_K_XL se genero con imatrix (tag imatrix), un esquema de cuantizacion guiada por matriz de importancia.
+No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detalla la innovacion "vidraft" que aparece en las etiquetas del repositorio. La cuantizacion UD-Q4_K_XL se genero con imatrix, un metodo que calibra la cuantizacion con estadisticas de activacion para reducir la perdida de calidad en modelos grandes.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso, con enfasis declarado en matematicas y ciencia.
-- Razonamiento matematico y cientifico de alto nivel: el modelo base lidera la categoria de pesos abiertos en SuperCLUE noviembre 2026 con 73,68.
-- Soporte multilingue en ingles, coreano, chino y japones, con etiqueta multilingue adicional.
-- Capacidad de conversacion multi-turno (tag conversational).
-- Ejecucion on-device y en local mediante llama.cpp, orientada a equipos con memoria unificada.
-- No incluye vision: el codificador de vision del modelo padre ha sido eliminado en esta build.
+- Generacion de texto conversacional y de un solo turno.
+- Razonamiento matematico y cientifico de alto nivel: primer modelo de pesos abiertos en la prueba privada de SuperCLUE de noviembre de 2026 en esa categoria (73,68).
+- Razonamiento multi-paso (multi-step reasoning).
+- Capacidades multilingues en ingles, coreano, chino y japones, con etiqueta "multilingual".
+- Modelo solo texto: no hay soporte de vision ni de audio en esta build.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de modo thinking explicito: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponibles.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Modo "thinking" explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido en entornos sin conectividad: el modelo puede resolver problemas de calculo, algebra y demostraciones en una DGX Spark o servidor CPU con suficiente RAM, sin depender de APIs externas, gracias a sus 3B parametros activos por token que mantienen la latencia manejable.
-- Analisis cientifico y revision de literatura tecnica: con capacidades declaradas de razonamiento cientifico y soporte de chino, japones y coreano, resulta adecuado para equipos de investigacion que trabajan con documentacion multilingue en Asia Oriental.
-- Procesamiento por lotes de problemas de benchmark o evaluacion interna: al ser un GGUF ejecutable con llama.cpp, se puede integrar en pipelines de evaluacion automatizada sobre hardware propio, sin coste por token.
-- Asistencia a desarrolladores en tareas de razonamiento logico y depuracion conceptual: el modelo puede emplearse como motor local de analisis de algoritmos y explicacion de errores, aunque no se documenta soporte especifico de generacion de codigo en la model card.
-- Despliegue en entornos con requisitos de soberania de datos: al ejecutarse integramente on-device, permite procesar informacion sensible (por ejemplo, datos cientificos propietarios) sin salida a la nube.
-- Prototipado de asistentes conversacionales multilingues para mercados coreano y japones: el soporte nativo de ko, ja y zh, junto con el tag conversational, lo hace util para demos de atencion al cliente en esos idiomas sobre infraestructura local.
+- Razonamiento matematico asistido: el modelo puede resolver problemas de matematicas de nivel avanzado y explicar el procedimiento paso a paso, aprovechando su puntuacion de 73,68 en la prueba de razonamiento matematico y cientifico de SuperCLUE, adecuado para herramientas de tutoria o verificacion de calculos.
+- Analisis cientifico y revision de literatura tecnica: con capacidad de razonamiento multi-paso, puede descomponer problemas de fisica, quimica o biologia y contrastar hipotesis, util en entornos de investigacion donde no se puede enviar datos a la nube.
+- Despliegue en servidor local con CPU: al ser un MoE de ~3 B activos y caber en un unico equipo con ~111 GB de memoria, es apto para organizaciones que necesitan inferencia privada en hardware propio sin GPU dedicada, por ejemplo en un servidor con RAM suficiente.
+- Procesamiento multilingue en coreano, chino y japones: util para equipos que trabajan con documentacion en estos idiomas y necesitan resumenes, traduccion o analisis sin depender de APIs externas.
+- Generacion de texto tecnico y documentacion: el modelo puede redactar explicaciones y borradores tecnicos en ingles y en los idiomas soportados, integrandose en pipelines locales de documentacion.
+- Evaluacion y experimentacion en investigacion de IA: al ser un GGUF abierto con cuantizacion UD-Q4_K_XL e imatrix, sirve para reproducir resultados de razonamiento y estudiar el efecto de la cuantizacion en un MoE de gran tamano sobre llama.cpp.
+- Escenarios de privacidad estricta: cualquier flujo donde los datos no puedan salir de la infraestructura local (sanidad, legal, defensa) y se requiera razonamiento de calidad, con la salvedad de que la licencia Qwen Community 1.0 debe revisarse antes de uso comercial.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible corresponden a SuperCLUE de noviembre de 2026, en la categoria de razonamiento matematico y cientifico, medidos sobre el modelo base Darwin-180B-RSI-R3 (no sobre esta build GGUF cuantizada). No se han publicado resultados de benchmarks propios de la version GGUF en la informacion disponible.
+Los unicos datos publicados en la informacion disponible corresponden a la prueba privada de razonamiento matematico y cientifico de SuperCLUE de noviembre de 2026, evaluada sobre el modelo base Darwin-180B-RSI-R3 (no sobre esta cuantizacion GGUF).
 
 | Modelo | Desarrollador | Pesos abiertos | Razonamiento matematico y cientifico (SuperCLUE nov. 2026) |
 |---|---|---|---|
@@ -64,50 +64,49 @@ Los unicos datos publicados en la informacion disponible corresponden a SuperCLU
 | Kimi-K3.1-Pro | Moonshot | Si | 63,16 |
 | Qwen3.8-Flash (padre de Darwin-180B) | Alibaba | Si | 57,89 |
 
-Indice global de inteligencia: Darwin-180B-RSI-R3 obtuvo 43,08 (puesto 9 de 19, quinto entre pesos abiertos), frente a 39,81 (puesto 15) de Qwen3.8-Flash. No se dispone de datos de MMLU, HumanEval, GSM8K ni de latencia/throughput medidos para esta build GGUF.
+Indice global de inteligencia: Darwin-180B-RSI-R3 obtuvo 43,08 (9.º de 19, 5.º entre modelos de pesos abiertos), frente a 39,81 de Qwen3.8-Flash (15.º). No se han publicado resultados de MMLU, HumanEval, GSM8K ni de la propia cuantizacion GGUF en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el repositorio completo ocupa aproximadamente 111,3 GB en cuatro shards; se requiere memoria suficiente para cargar los cuatro ficheros simultaneamente (los cuatro son obligatorios y deben conservar su nombre original en el mismo directorio).
-- Hardware objetivo declarado: servidor CPU con RAM suficiente, o una ruta hibrida GPU/CPU/SSD configurada por separado. El caso de referencia citado es NVIDIA DGX Spark con 128 GB de memoria unificada.
-- GPU consumer: no se documenta compatibilidad con GPUs consumer de VRAM limitada; el tamano del artefacto (111,3 GB) excede la VRAM de cualquier GPU consumer actual, por lo que el despliegue requiere memoria unificada o swapping a SSD.
-- Runtime: llama.cpp, version minima b11048 con soporte qwen4exp segun el publicador original; conviene verificar la build instalada.
-- Opciones de despliegue adicionales (vLLM, TGI, Ollama): no disponibles en la informacion proporcionada.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM/RAM estimada: el repo completo ocupa aproximadamente 111,3 GB; los cuatro shards son obligatorios, por lo que se necesita al menos esa cantidad de memoria disponible (RAM o memoria unificada) para cargar el modelo.
+- GPU recomendadas: no se especifican en la informacion disponible. El autor menciona como objetivo equipos con memoria unificada de 128 GB, como NVIDIA DGX Spark, y configuraciones hibridas GPU/CPU/SSD.
+- GPU de consumo: no cabe en GPUs de consumo tipicas (24 GB o menos) por el tamano del artefacto; requeriria offload a RAM/SSD o un sistema de memoria unificada grande.
+- Opciones de despliegue: llama.cpp (build b11048 o superior con soporte qwen4exp), en modo servidor de CPU o hibrido GPU/CPU/SSD. No se confirma soporte de vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos por token | Contexto | Licencia | Disponibilidad | Razonamiento mat./cient. (SuperCLUE nov. 2026) |
-|---|---|---|---|---|---|---|
-| POCKET-Darwin-180B-GGUF | 176,94B | ~3B | No disponible | Qwen Community License 1.0 | GGUF en HF | 73,68 (modelo base) |
-| DeepSeek-V4.1-Flash | No disponible | No disponible | No disponible | No disponible | Pesos abiertos | 71,05 |
-| GLM-5.3 | No disponible | No disponible | No disponible | No disponible | Pesos abiertos | 65,79 |
-| Kimi-K3.1-Pro | No disponible | No disponible | No disponible | No disponible | Pesos abiertos | 63,16 |
-| Qwen3.8-Flash (padre) | No disponible | No disponible | No disponible | No disponible | Pesos abiertos | 57,89 |
+| Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| POCKET-Darwin-180B-GGUF | ~176,9 B (MoE) | ~3 B | No disponible | Qwen Community 1.0 | GGUF en Hugging Face |
+| Qwen3.8-Flash (padre de los expertos) | No disponible | No disponible | No disponible | No disponible | Pesos abiertos |
+| DeepSeek-V4.1-Flash | No disponible | No disponible | No disponible | No disponible | Pesos abiertos |
+| GLM-5.3 | No disponible | No disponible | No disponible | No disponible | Pesos abiertos |
 
-La comparativa se limita a la metrica publicada por SuperCLUE; no se dispone de datos de parametros, contexto ni licencia de los modelos alternativos en la informacion proporcionada.
+La comparacion cuantitativa solo es posible en la metrica de SuperCLUE: Darwin-180B-RSI-R3 (73,68) supera a DeepSeek-V4.1-Flash (71,05), GLM-5.3 (65,79) y Kimi-K3.1-Pro (63,16) en razonamiento matematico y cientifico, y queda por detras de GPT-6.1-Sol (76,32). No hay datos de parametros, contexto ni licencia de las alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo texto: el codificador de vision del modelo padre no esta incluido; cualquier caso de uso con imagenes queda fuera del alcance de esta build.
-- Cuantizacion unica: solo se ofrece UD-Q4_K_XL; no hay alternativas de menor o mayor precision en el repositorio, lo que limita el ajuste fino entre calidad y memoria.
-- Los cuatro shards son obligatorios y deben mantener su nombre original en el mismo directorio; no es posible cargar un subconjunto.
-- Los resultados de SuperCLUE corresponden al modelo base en BF16, no a esta build cuantizada; la degradacion por cuantizacion Q4 no esta medida en la informacion disponible.
-- Licencia Qwen Community License 1.0, no Apache-2.0: existen restricciones para uso comercial que deben revisarse antes de produccion.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion proporcionada; debe asumirse el comportamiento habitual de un modelo de lenguaje de su escala.
-- Longitud de contexto no especificada: no es posible planificar casos de uso con documentos largos sin verificar este dato en la documentacion del modelo base.
-- Requiere llama.cpp b11048 o superior con soporte qwen4exp; versiones anteriores pueden fallar al cargar el modelo.
-- El rendimiento depende criticamente del ancho de banda de memoria del equipo; en configuraciones hibridas GPU/CPU/SSD la latencia puede degradarse de forma significativa.
+- Solo texto: no hay soporte de vision, audio ni otras modalidades.
+- La evaluacion publicada corresponde al modelo base sin cuantizar; el rendimiento de esta build UD-Q4_K_XL puede diferir y no se ha documentado.
+- Longitud de contexto no especificada: no se puede garantizar el comportamiento en conversaciones o documentos largos.
+- Riesgo de alucinacion inherente a los modelos generativos, especialmente en dominios cientificos donde el modelo puede producir afirmaciones plausibles pero incorrectas.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Cobertura idiomatica limitada a ingles, coreano, chino y japones; el castellano no figura entre los idiomas soportados.
+- Licencia Qwen Community License 1.0 (no Apache-2.0): es imprescindible revisar sus terminos antes de cualquier uso comercial o redistribucion.
+- Requiere un runtime especifico (llama.cpp b11048 o superior con qwen4exp) y los cuatro shards completos; no es un artefacto ligero ni apto para entornos con memoria limitada.
+- No se confirma soporte de tool calling, agentes ni modo thinking en esta build.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
-- Ficheros y descargas: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF/tree/main
+- Repositorio Hugging Face: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
+- Archivos y descargas: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF/tree/main
 - Modelo base: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
-- Guia de instalacion del publicador: https://vidraft.net/p/pocket.html?model=pocket_darwin_180b
+- Guia de configuracion: https://vidraft.net/p/pocket.html?model=pocket_darwin_180b
+- SuperCLUE (leaderboard general, noviembre de 2026): https://www.superclueai.com/homepage
 - POCKET-35B: https://huggingface.co/FINAL-Bench/POCKET-35B-GGUF
 - POCKET-26B: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF
+- POCKET-27B-Pi (especialista en codigo): https://huggingface.co/FINAL-Bench/POCKET-27B-Pi-GGUF
 - POCKET-27B: https://huggingface.co/FINAL-Bench/POCKET-27B-GGUF
-- Leaderboard SuperCLUE: https://www.superclueai.com/homepage
-- Paper de referencia 1: https://arxiv.org/abs/2605.14386
-- Paper de referencia 2: https://arxiv.org/abs/2609.20269
+- Paper referenciado (arxiv:2605.14386): https://arxiv.org/abs/2605.14386
+- Paper referenciado (arxiv:2609.20269): https://arxiv.org/abs/2609.20269

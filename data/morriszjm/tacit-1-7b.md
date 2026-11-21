@@ -2,97 +2,100 @@
 
 ## Resumen
 
-Tacit-1.7B es un modelo de lenguaje especializado en toma de decisiones con tipado, desarrollado por Jiamu "Morris" Zhang (usuario morriszjm en Hugging Face). El modelo no genera texto libre como objetivo principal: en una única pasada hacia delante (single forward pass) devuelve una distribución de probabilidad sobre un conjunto cerrado de opciones, lo que permite elegir entre alternativas, responder sí/no o seleccionar un nivel ordenado. Se construye sobre Qwen/Qwen3-1.7B, un transformer decoder-only denso de aproximadamente 1.720 millones de parametros.
+Tacit-1.7B es un modelo de decisión construido por el autor independiente morriszjm sobre Qwen/Qwen3-1.7B. Su propósito no es la generación de texto libre, sino tomar decisiones tipadas (elegir entre opciones, responder sí/no o asignar un nivel ordenado) en un único forward pass, devolviendo una distribución de probabilidad sobre las opciones. Resuelve el coste de latencia y tokens asociado a hacer que un LLM razone explícitamente antes de decidir en tareas de clasificación o enrutamiento.
 
-La innovacion principal es el metodo de auto-destilacion AnyJev: el propio modelo base genero sus propios problemas de decision, los respondio activando su razonamiento interno y despues aprendio a dar esas mismas respuestas en una sola pasada, sin utilizar etiquetas humanas, conjuntos de datos externos ni otros modelos. El resultado es una mejora medible en precision de decision con un coste de inferencia muy inferior al de un razonamiento extendido.
+El modelo se entrena mediante AnyJev self-distillation: el propio modelo base genera problemas de decisión, los responde con su razonamiento activado y aprende a reproducir esas respuestas en un solo paso. No se emplearon etiquetas humanas, datasets externos ni otros modelos. Con 1.720.574.976 parámetros y un repositorio de 3,5 GB, es un modelo pequeño orientado a despliegue en producción.
 
-Se trata de una version "preview" publicada bajo licencia Apache-2.0, la misma que el modelo base de Qwen, lo que facilita su uso comercial. Es relevante ahora porque demuestra que un modelo de 1.7B puede superar a su propio modelo base en tareas de decision estructurada y porque reduce drasticamente el coste frente a enfoques que activan cadenas de razonamiento largas.
+Es relevante ahora porque ofrece una vía práctica para sustituir llamadas de razonamiento costosas por inferencia directa en tareas de decisión, con un modo adaptativo que solo escala a razonamiento los casos de baja confianza, y compatibilidad tanto con transformers como con vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, heredada de Qwen/Qwen3-1.7B (no se detalla en la model card) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-1.7B) |
 | Parametros totales | 1.720.574.976 |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos en safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el ejemplo de vLLM sugiere max_model_len de hasta 32768) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 3.5 GB |
-| Modelo base | Qwen/Qwen3-1.7B |
-| Biblioteca | transformers |
-| Pipeline | text-generation |
-| Fecha de creacion | 2026-10-05 |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (transformers); compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de Qwen/Qwen3-1.7B, un transformer decoder-only denso de 1.720 millones de parametros. Sobre esa base se aplica un proceso de auto-destilacion denominado AnyJev: el modelo base formulo por si mismo los problemas de decision, los resolvio con su razonamiento activado y aprendio despues a reproducir esas respuestas en una unica pasada hacia delante, devolviendo una probabilidad sobre las opciones disponibles. No se emplearon etiquetas humanas, conjuntos de datos externos ni modelos auxiliares en el proceso.
+El modelo parte de Qwen/Qwen3-1.7B, un transformer decoder-only de 1,7 mil millones de parámetros. Sobre esa base se aplica AnyJev self-distillation: el modelo base generó sus propios problemas de decisión, los resolvió con el razonamiento activado y se entrenó para emitir esas mismas respuestas en un único forward pass. No hubo intervención humana, datasets externos ni destilación desde otro modelo.
 
-La innovacion tecnica destacable es el paso de un razonamiento explicito (que consume muchos tokens y latencia) a una decision directa en un solo forward pass, manteniendo o mejorando la precision. La model card no detalla el numero total de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO.
+La innovación principal es el mecanismo de lectura de etiquetas: la respuesta se extrae como una distribución sobre las opciones a partir de las log-probabilidades del vocabulario, de modo que cada decisión viene acompañada de probabilidades. Además, incorpora un modo adaptativo que mide la brecha de log-probabilidad entre las dos opciones principales y, si es inferior a un umbral (`tau`, por defecto 0,5), escala esa decisión al razonamiento del propio modelo, con un límite configurable de proporción de decisiones escaladas (`max_cot_share`, por defecto 0,2 sobre una ventana de 1000 decisiones).
 
 ## Capacidades
 
-- Toma de decisiones con tipado: elegir una opcion entre varias, responder afirmativa o negativamente y seleccionar un nivel dentro de un orden.
-- Salida como distribucion de probabilidad sobre las opciones, lo que permite calibrar la confianza de la decision.
-- Decision en una sola pasada hacia delante, sin cadena de razonamiento explicita.
-- Generacion de texto (pipeline text-generation en Hugging Face), aunque el proposito declarado es la decision.
-- Compatibilidad con text-generation-inference y con endpoints compatibles, segun las etiquetas del repositorio.
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
-- Capacidades multilingues: no documentadas (idiomas no disponibles).
-- Capacidades especiales (thinking mode, vision, audio): no documentadas.
+- Toma de decisiones de tipo `choice`: elegir una opción entre varias.
+- Toma de decisiones de tipo `yes_no`: responder afirmativa o negativamente.
+- Toma de decisiones de tipo `score`: asignar un nivel ordenado de una escala.
+- Devuelve probabilidades sobre las opciones en cada decisión.
+- Modo adaptativo con escalado a razonamiento (thinking on) para decisiones de baja confianza.
+- Decodificación en un único forward pass sin generación de texto en el modo no adaptativo.
+- Procesamiento por lotes mediante `decide_batch`.
+- Compatible con vLLM en proceso (`engine="vllm"`) y con servidor externo (`engine="server"`).
+- Pasarela HTTP incluida en el repositorio para compartir un límite de escalado entre varios clientes.
+- Carga también como modelo causal estándar (`AutoModelForCausalLM`) y en vLLM.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Enrutamiento de consultas en atencion al cliente: el modelo puede clasificar una peticion entrante entre un conjunto fijo de categorias (facturacion, soporte tecnico, reclamacion) devolviendo una probabilidad por categoria, lo que permite activar el flujo adecuado con un umbral de confianza.
-- Moderacion de contenido binaria: dado un texto, responder si/no a si infringe una politica concreta, en una sola pasada y con coste de hardware minimo.
-- Clasificacion de tickets por prioridad: asignar un nivel ordenado (baja, media, alta, critica) a incidencias en un sistema de soporte, aprovechando la capacidad de seleccionar niveles ordenados.
-- Encaminamiento de decisiones en pipelines de agentes: actuar como arbitro que elige la siguiente herramienta o accion entre un conjunto de opciones antes de invocar a un modelo mayor, reduciendo coste y latencia.
-- Filtrado previo en sistemas RAG: decidir si una pregunta requiere recuperacion de documentos o puede responderse directamente, con una unica inferencia.
-- Triaje en entornos con recursos limitados: al ser un modelo de 1.7B ejecutable en CPU o GPU de consumo, puede desplegarse en el borde o en portatiles para decisiones rapidas sin conexion a la nube.
-- Validacion de formularios y respuestas estructuradas: comprobar si una entrada cumple un criterio (por ejemplo, si un campo es coherente con otro) respondiendo con una probabilidad de si/no.
+- Enrutamiento de intenciones en atención al cliente: el modelo recibe el mensaje del cliente como `state` y una pregunta como "¿Qué quiere el cliente?", y devuelve la opción más probable entre `track_order`, `cancel_order`, `refund` o `change_address` en un solo forward pass, con probabilidades para aplicar umbrales de confianza.
+- Clasificación de tickets de soporte: uso de `kind="choice"` para asignar categorías a incidencias entrantes, con `decide_batch` para procesar colas de tickets en lote y el modo adaptativo para derivar a revisión humana los casos ambiguos.
+- Moderación y filtrado binario: uso de `kind="yes_no"` para decidir si un contenido cumple una política, aprovechando que la respuesta llega con probabilidad asociada y permite fijar umbrales de escalado.
+- Puntuación de calidad o riesgo: uso de `kind="score"` con niveles ordenados para asignar severidad o prioridad a eventos, con la ventaja de que el modelo devuelve una distribución sobre la escala en lugar de un único valor.
+- Agentes con control de coste: integración como cabecera de decisión que resuelve la mayoría de pasos en un forward y solo invoca razonamiento completo cuando la confianza es baja, acotando el gasto mediante `max_cot_share` y `cot_window`.
+- Despliegue de alto rendimiento: servir con `vllm serve` y conectar clientes ligeros mediante el motor `server`, que solo carga el tokenizador en el cliente, para escenarios con muchos consumidores concurrentes.
+- Evaluación de decisiones con trazabilidad: el campo `route` indica si la decisión se resolvió en un paso (`one_forward`) o mediante razonamiento (`cot`), lo que facilita auditoría y análisis de umbrales en producción.
 
 ## Benchmarks y rendimiento
 
-Resultados de precision en una sola pasada hacia delante, con el mismo prompt y el mismo mecanismo de lectura para ambos modelos, segun la model card:
+Resultados publicados en la model card, medidos en un único forward pass sobre los conjuntos de test completos, con el mismo prompt y lectura para ambos modelos:
 
 | Benchmark | Qwen3-1.7B | Tacit-1.7B | Diferencia |
 |---|---|---|---|
-| JevBench (conjunto publico, 231) | 0.554 | 0.623 | +6,9 puntos |
-| bev-decision (test split, 46.320) | 0.566 | 0.598 | +3,1 puntos |
+| JevBench (conjunto público, 231) | 0,554 | 0,623 | +6,9 pts |
+| bev-decision (split de test, 46.320) | 0,566 | 0,598 | +3,1 pts |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en precision FP16 el modelo requiere aproximadamente 3,4 GB solo para los pesos (1.720 millones de parametros); en cuantizacion INT8, en torno a 1,7 GB; en INT4, alrededor de 0,9 GB. Estas cifras son estimaciones a partir del numero de parametros, no datos publicados en la model card.
-- GPU recomendadas: al tratarse de un modelo de 1.7B, cabe en GPUs de consumo como RTX 3060, RTX 4060 o RTX 4090, asi como en GPUs de centro de datos (A100, H100) sin necesidad de paralelizar.
-- Cabe en GPU de consumo: si, en cualquier GPU con al menos 4 GB de VRAM para FP16 y menos para cuantizaciones INT8/INT4.
-- Opciones de despliegue: compatible con transformers; las etiquetas del repositorio indican compatibilidad con text-generation-inference y endpoints compatibles. No se confirma soporte para vLLM, llama.cpp u Ollama en la informacion disponible.
-- Latencia y throughput estimados: no disponibles. La propuesta del modelo (decision en una sola pasada hacia delante) implica una latencia mucho menor que un modelo que activa cadenas de razonamiento largas, pero no se aportan cifras concretas.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 1,72 mil millones de parámetros en safetensors (3,5 GB de repositorio), la inferencia en precisión nativa requiere del orden de varios GB de VRAM, y menos con cuantización.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la documentación; por tamaño, es plausible en GPUs de consumo modernas, pero no hay dato oficial.
+- Opciones de despliegue: transformers (con `get_class_from_dynamic_module`), vLLM en proceso (`engine="vllm"`), vLLM como servidor (`vllm serve`) y pasarela HTTP incluida en el repositorio.
+- Latencia y throughput: no disponible; la model card solo indica que el modo `engine="vllm"` está pensado para throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Resultado en JevBench | Resultado en bev-decision |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tacit-1.7B | 1.720.574.976 | no disponible | Apache-2.0 | 0.623 | 0.598 |
-| Qwen/Qwen3-1.7B (base) | 1.720.574.976 | no disponible | Apache-2.0 | 0.554 | 0.566 |
+| Tacit-1.7B | 1.720.574.976 | no disponible | Decisiones tipadas en un forward, self-distillation | apache-2.0 | Hugging Face |
+| Qwen3-1.7B | 1,7 mil millones (aproximado) | no disponible | LLM generativo general | no disponible en esta ficha | Hugging Face |
+| Otros modelos de decisión de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria (decision estructurada de un solo paso) en la documentacion facilitada.
+La comparación directa más relevante es con su modelo base Qwen3-1.7B, sobre el que mejora en JevBench (+6,9 pts) y bev-decision (+3,1 pts) en un único forward pass. No se dispone de información sobre otros modelos comparables de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Se trata de una version "preview", por lo que su estabilidad y comportamiento en produccion no estan garantizados.
-- Sesgos conocidos: no documentados en la model card. Al derivar del modelo base Qwen3-1.7B, podria heredar los sesgos de este, pero no se aporta informacion al respecto.
-- Riesgo de alucinacion: el modelo devuelve una distribucion de probabilidad sobre opciones cerradas, lo que reduce el riesgo de texto inventado, pero la calibracion de dichas probabilidades no esta documentada.
-- Limitaciones de contexto e idioma: no disponibles. No se especifica la longitud de contexto soportada ni los idiomas cubiertos.
-- Restricciones de licencia: licencia Apache-2.0, que permite uso comercial sin restricciones adicionales mas alla de las habituales (mantener avisos de licencia y atribucion).
-- Caveat de produccion: no se documentan capacidades de tool calling, agentes ni rendimiento en tareas de generacion abierta, por lo que su uso deberia limitarse a decisiones estructuradas hasta validacion adicional.
-- No se especifican requisitos de hardware oficiales ni cifras de latencia o throughput.
+- Modelo en estado preview: el autor lo etiqueta explícitamente como vista previa, lo que implica posible inestabilidad o cambios.
+- Ámbito restringido: está diseñado para decisiones tipadas, no para generación de texto libre; su uso como LLM general no está validado.
+- Idiomas soportados no documentados: no hay información sobre cobertura multilingüe.
+- Longitud de contexto no documentada: no se especifica la ventana nativa; el ejemplo de vLLM sugiere valores de hasta 32768, pero no es un dato oficial.
+- Lectura de etiquetas limitada en vLLM: las etiquetas se leen de las 20 log-probabilidades más altas del vocabulario completo, y una etiqueta fuera de ellas cuenta como 0, lo que puede sesgar decisiones con etiquetas poco frecuentes.
+- Riesgo de alucinación: no evaluado en la información disponible; en el modo adaptativo el modelo genera razonamiento propio, con el riesgo asociado.
+- Sesgos: no documentados; al entrenarse solo con self-distillation del modelo base, puede heredar los sesgos de Qwen3-1.7B.
+- Restricciones de licencia: Apache-2.0, igual que el modelo base, permite uso comercial; conviene verificar las condiciones del modelo base Qwen3-1.7B.
+- Sin etiquetas humanas: el entrenamiento sin supervisión humana puede producir calibraciones de probabilidad no alineadas con criterios de negocio.
+- Escalado a razonamiento acotado: `max_cot_share` limita la proporción de decisiones que usan razonamiento, lo que puede forzar decisiones en un solo paso cuando la carga de casos difíciles es alta.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/morriszjm/Tacit-1.7B
-- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Perfil del autor: https://huggingface.co/morriszjm/datasets
-- Repositorio GitHub citado en la busqueda (Tacit, comunicacion eficiente): https://github.com/TTAWDTT/Tacit
-- Articulo sobre agente de codigo con modelo de 1.7B (relacionado, no oficial): https://dev.to/anirudh_shivam/i-built-a-coding-agent-that-runs-on-a-17b-model-219p
+- Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
+- Repositorio del código de decisión: `tacit_decision.py` incluido en el repositorio del modelo
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

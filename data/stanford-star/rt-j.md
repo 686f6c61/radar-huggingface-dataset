@@ -2,110 +2,92 @@
 
 ## Resumen
 
-RT-J (`rt-j`) es un checkpoint de Relational Transformer publicado por el grupo stanford-star de la Universidad de Stanford, disenado para prediccion de entidades sobre bases de datos relacionales multi-tabla en regimen zero-shot. A diferencia de los modelos tabulares clasicos, no requiere entrenamiento por tarea: una tarea se especifica mediante una celda objetivo enmascarada y un vecindario de contexto muestreado del grafo relacional, y la prediccion se obtiene en una unica pasada forward. El mismo checkpoint sirve tanto para clasificacion binaria de entidades como para regresion de entidades.
+RT-J es un checkpoint de la familia Relational Transformer desarrollado por el grupo stanford-star (Stanford), disenado especificamente para realizar predicciones *in-context* sobre bases de datos relacionales. A diferencia de los transformers de lenguaje, no procesa texto libre sino esquemas relacionales completos: tablas, columnas, claves foraneas y filas, y resuelve tanto clasificacion binaria como regresion sobre entidades sin necesidad de entrenamiento especifico por tarea. Con 85,5 millones de parametros, 12 bloques, `d_model` de 512, 8 cabezas de atencion y `d_ff` de 2048, es un modelo compacto pensado para inferencia eficiente sobre datos tabulares relacionales.
 
-El modelo tiene 85.562.530 parametros (~85M), 12 bloques, `d_model` de 512, 8 cabezas de atencion y `d_ff` de 2048, con pesos almacenados en bfloat16. Utiliza atencion relacional sobre celdas, filas, columnas y enlaces de clave primaria/foranea, y las columnas de texto se pre-embeben con `sentence-transformers/all-MiniLM-L12-v2` (dimension de texto 384), que no forma parte del checkpoint ni se ajusta. Su contexto de entrenamiento alcanza las 8192 celdas.
+El modelo se preentreno primero sobre el dataset PluRel y despues sobre The Join, dos corpus a gran escala de bases de datos relacionales. Las columnas de texto se embeben con `all-MiniLM-L12-v2`, lo que permite manejar atributos textuales dentro del esquema relacional. En el momento del envio, el autor lo situa como el modelo in-context numero 1 del leaderboard de RelBench, un benchmark de referencia para aprendizaje relacional profundo.
 
-Es relevante porque aborda un problema practico del aprendizaje profundo relacional: la necesidad de reentrenar un modelo para cada nueva tarea o esquema de base de datos. RT-J apuesta por un enfoque de foundation model con in-context learning y few-shot/zero-shot, apoyado en el ecosistema de benchmarks RelBench y en los datasets preprocesados the-join y plurel liberados por los mismos autores. La model card indica que el paper principal esta en progreso y que dos trabajos previos (PluRel y Relational Transformer) han sido superados por este.
+Su relevancia actual radica en que aborda un problema historicamente costoso: predecir sobre datos relacionales suele requerir ingenieria de features y entrenamiento por tarea. RT-J propone un enfoque de foundation model que generaliza a nuevas tareas mediante contexto, reduciendo el coste de adaptacion. La licencia Apache-2.0 sobre los pesos facilita su uso comercial, aunque los datos de entrenamiento tienen sus propios terminos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Relational Transformer (transformer con atencion relacional sobre celdas, filas, columnas y enlaces PK/FK); 12 bloques, 8 cabezas, `d_model` 512, `d_ff` 2048 |
-| Parametros totales | 85.562.530 (~85M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | hasta 8192 celdas (contexto de entrenamiento); configurable en inferencia mediante `ctx_size_list` y `local_ctx_size` |
-| Tipos de cuantizacion | no disponible (pesos bfloat16 en disco; `from_pretrained` carga float32) |
-| Idiomas soportados | no disponible (las columnas de texto se pre-embeben con `all-MiniLM-L12-v2`, orientado a ingles) |
-| Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors (395 tensores bfloat16, 171.164.252 bytes) |
+| Arquitectura | Relational Transformer (transformer sobre esquemas relacionales) |
+| Parametros totales | 85.562.530 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo tabular, no linguistico) |
+| Licencia | Apache-2.0 (pesos); los datos de entrenamiento tienen sus propios terminos |
+| Formato de pesos | safetensors (`model.safetensors`, `config.json`) |
+
+Detalles adicionales de configuracion: 12 bloques, `d_model` 512, 8 cabezas de atencion, `d_ff` 2048. Embeddings de columnas de texto mediante `all-MiniLM-L12-v2`. Tamano del repositorio: 1,7 GB.
 
 ## Arquitectura y entrenamiento
 
-RT-J es un transformer de 12 bloques con atencion relacional propia de la familia Relational Transformer: la atencion opera sobre celdas, filas, columnas y los enlaces de clave primaria y foranea que definen el grafo de la base de datos. Las columnas textuales se procesan previamente con el embedder `sentence-transformers/all-MiniLM-L12-v2` (dimension 384), que no forma parte del checkpoint ni se ajusta durante el entrenamiento. La funcion de perdida empleada es Huber, y los metadatos del checkpoint indican `step=9000` y `swa_n=9000`, lo que sugiere un promedio de pesos (SWA) sobre las ultimas iteraciones.
+RT-J es un transformer relacional de 12 bloques que opera sobre la estructura de una base de datos en lugar de sobre una secuencia de tokens. El modelo recibe el esquema (tablas, columnas, relaciones entre entidades) y las filas, y produce predicciones sobre entidades objetivo. Esta formulacion permite resolver clasificacion binaria y regresion de forma unificada mediante prediccion in-context, sin fine-tuning por tarea. Las columnas de tipo texto se proyectan con el encoder `all-MiniLM-L12-v2`, integrándose en el mismo espacio de representacion que el resto de atributos.
 
-El modelo se presenta como un foundation model preentrenado a gran escala para predicciones eficientes en contexto, segun el titulo del paper en progreso. No se detalla en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. El entrenamiento esta orientado a tareas de clasificacion binaria y regresion de entidades definidas sobre los esquemas de RelBench, the-join y plurel, y la inferencia se realiza sin gradientes por tarea: el modelo construye el contexto muestreando un vecindario del grafo relacional en torno a la celda objetivo. Se recomienda usar un contexto de hasta 8192 celdas para obtener la precision completa sobre un split de test completo, y el pipeline incluye un motor de datos nativo en Rust.
+El entrenamiento es en dos fases: un preentrenamiento inicial sobre PluRel y una segunda fase sobre The Join, ambos datasets relacionales a gran escala publicados por el mismo grupo. La model card no detalla el numero exacto de tokens, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; estos datos no estan disponibles en la informacion proporcionada. La innovacion principal es el propio paradigma de foundation model relacional con inferencia in-context, que evita el entrenamiento por tarea y aprovecha el contexto de la base de datos para generalizar.
 
 ## Capacidades
 
-- Prediccion de entidades en bases de datos relacionales multi-tabla: clasificacion binaria (por ejemplo, probabilidad de que un piloto de F1 no termine una carrera) y regresion de entidades, con el mismo checkpoint.
-- Inferencia zero-shot e in-context sin entrenamiento por tarea: la tarea se define mediante una celda enmascarada y un vecindario de contexto muestreado.
-- Aprendizaje few-shot apoyado en el contexto: el rendimiento depende del tamano del contexto (`ctx_size_list`) y de la estrategia de muestreo (`bfs_width`, `num_walks`, `walk_length`).
-- Manejo de esquemas relacionales con claves primarias y foraneas, filas, columnas y celdas como unidades de atencion.
-- Integracion con columnas de texto mediante pre-embedding externo (`all-MiniLM-L12-v2`), no ajustado.
-- Soporte de multiples tareas y bases de datos a traves del ecosistema RelBench (lista de 21 tareas mencionada en los ejemplos de evaluacion).
-- Capacidades multilingues: no disponible.
-- Soporte de tool calling o function calling: no disponible (no es un modelo de lenguaje generativo).
-- Soporte de agentes o razonamiento multi-paso: no disponible.
+- Prediccion in-context sobre bases de datos relacionales: clasificacion binaria y regresion sobre entidades sin entrenamiento especifico por tarea.
+- Procesamiento de esquemas relacionales completos: tablas, columnas, claves foraneas y filas.
+- Manejo de columnas de texto mediante embeddings de `all-MiniLM-L12-v2`.
+- Generalizacion zero-shot y few-shot a nuevas tareas relacionales mediante contexto.
+- Aprendizaje relacional profundo sobre grafos de entidades y relaciones.
+- No es un modelo generativo de texto: no produce lenguaje natural ni codigo.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingues: no aplicables (modelo tabular, no linguistico).
 
 ## Casos de uso
 
-- Prediccion de abandono o churn en CRM relacional: dado un cliente con tablas de pedidos, incidencias y facturacion, el modelo estima la probabilidad de baja usando el vecindario relacional como contexto, sin reentrenar por campana.
-- Scoring de riesgo en seguros: con esquemas de polizas, siniestros y asegurados enlazados por claves, RT-J predice la probabilidad de siniestro o el importe esperado en una sola pasada forward, adecuado para preevaluacion previa a modelos actuariales.
-- Deteccion de fraude en transacciones: modelar el grafo de cuentas, transferencias y dispositivos para clasificar entidades sospechosas en modo zero-shot, aprovechando la atencion sobre enlaces PK/FK.
-- Mantenimiento predictivo industrial: con tablas de sensores, activos y ordenes de trabajo, usar el modelo para regresion sobre variables objetivo (tiempo hasta fallo) sin ingenieria de features especifica por planta.
-- Experimentacion rapida en ciencia de datos: al no requerir entrenamiento por tarea, sirve para obtener una linea base de clasificacion o regresion sobre una base de datos relacional en horas, antes de invertir en un modelo supervisado a medida.
-- Prediccion sobre benchmarks relacionales de investigacion: reproducir los resultados de RelBench descargando el dataset preprocesado y ejecutando `examples/eval.py`, util para comparativas academicas.
-- Prototipado de sistemas de recomendacion basados en grafo: modelar usuarios, items e interacciones como tablas relacionadas y predecir afinidad o conversion mediante contexto muestreado.
+- Prediccion de churn en CRM: dado un esquema con tablas de clientes, suscripciones e interacciones, RT-J puede clasificar que clientes tienen riesgo de baja usando el contexto relacional completo, sin ingenieria de features manual.
+- Scoring de fraude en transacciones: el modelo evalua entidades de transaccion junto con sus relaciones (cuentas, dispositivos, historial) para clasificacion binaria de fraude, aprovechando la estructura relacional que los modelos tabulares planos pierden.
+- Estimacion de valor de cliente (regresion): predice metricas continuas como LTV o ingresos esperados a partir de la base de datos de clientes y pedidos, sin entrenar un modelo por segmento.
+- Priorizacion de leads en ventas B2B: clasifica oportunidades comerciales combinando tablas de cuentas, contactos y actividad, con inferencia in-context sobre el esquema existente.
+- Prediccion de abandono en plataformas de contenido: estima probabilidad de que un usuario deje de usar el servicio a partir de tablas de sesiones, suscripciones y eventos, con una sola pasada sin reentrenamiento.
+- Analisis de riesgo en seguros: regresion sobre siniestralidad esperada combinando polizas, asegurados y partes de siniestro en un esquema relacional, aprovechando las relaciones entre entidades.
+- Prototipado rapido de tareas de ML sobre bases de datos: al no requerir entrenamiento por tarea, permite evaluar viabilidad de un caso de uso relacional en horas en lugar de semanas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que es posible reproducir los numeros de RelBench de extremo a extremo mediante `examples/eval.py`, pero no incluye valores concretos de ROC-AUC ni MAE en la informacion proporcionada, pese a que ambas metricas figuran en los metadatos del modelo.
+La model card indica que RT-J fue el modelo in-context numero 1 del leaderboard de RelBench en el momento del envio, pero no se proporcionan cifras numericas de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. No se han publicado resultados de benchmarks detallados en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy reducida por el tamano del modelo, aproximadamente 0,17 GB solo para los pesos en bfloat16 (fichero `model.safetensors` de 171.164.252 bytes), mas activaciones dependientes del contexto. Un contexto pequeno (por ejemplo 128 celdas) cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con soporte CUDA para aprovechar el kernel compilado de `flex_attention`. En GPU el ejemplo de la model card se ejecuta en segundos.
-- Compatibilidad con consumer GPU: si, el modelo cabe en practicamente cualquier GPU consumer moderna; tambien funciona en Apple Silicon mediante MPS en modo eager.
-- CPU: es posible ejecutar en CPU, pero el `flex_attention` no tiene kernel fusionado de bfloat16 para CPU, por lo que el mismo ejemplo puede tardar decenas de minutos.
-- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible. Se despliega como libreria Python `rt` instalada desde el repositorio de GitHub, que incluye el modelo y un motor de datos nativo en Rust, compilado desde fuente. Requiere toolchain de Rust y Python 3.12 o superior.
-- Latencia y throughput estimados: no disponible de forma cuantitativa; la model card solo indica "segundos" en GPU y "decenas de minutos" en CPU para el ejemplo de contexto reducido.
-- Nota de entorno: para ejecutar en CPU o MPS hay que desactivar TorchDynamo (`TORCHDYNAMO_DISABLE=1`), ya que el kernel compilado de `flex_attention` es exclusivo de CUDA.
+- VRAM estimada para inferencia: con 85,5 M de parametros, en FP32 ocupa aproximadamente 342 MB; en FP16 unos 171 MB; en BF16 similar. La VRAM real dependera del tamano del esquema relacional y del lote de filas procesadas, no solo de los pesos.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente para los pesos; una RTX 3060 (12 GB) o superior cubre con holgura el modelo. Para esquemas grandes o lotes amplios, se recomienda RTX 4090 (24 GB), A100 (40/80 GB) o H100.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con 8 GB o mas, incluidas GTX 1660, RTX 3050, RTX 4060 y superiores.
+- Opciones de despliegue: la libreria oficial `relational-transformer` con `load_rt_model`; al ser safetensors, es compatible con stacks PyTorch estandar. No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea principal | Licencia | Estado |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RT-J (`stanford-star/rt-j`) | ~85M | hasta 8192 celdas | Prediccion de entidades zero-shot en bases de datos relacionales | cc-by-4.0 | Publicado |
-| PluRel (arXiv:2602.04029) | no disponible | no disponible | Aprendizaje relacional | no disponible | Superado por RT-J |
-| Relational Transformer (arXiv:2510.06377) | no disponible | no disponible | Aprendizaje relacional | no disponible | Superado por RT-J |
+| RT-J (stanford-star) | 85,5 M | no disponible | Transformer relacional in-context | Apache-2.0 | Hugging Face |
+| Relational Transformer base (Ranjan et al., ICLR 2026) | no disponible | no disponible | Transformer relacional zero-shot | no disponible | Paper / codigo |
+| Modelos GBDT (XGBoost, LightGBM) | variable | no aplica | Tabular plano con ingenieria de features | MIT/Apache | Amplia |
 
-No se dispone en la informacion proporcionada de datos comparativos de rendimiento (ROC-AUC, MAE) frente a modelos alternativos de la misma categoria.
+La comparativa con modelos de la misma categoria es limitada: RT-J pertenece a una familia emergente de foundation models relacionales, y las alternativas directas son trabajos del mismo grupo de investigacion. Frente a GBDT clasicos, RT-J ofrece inferencia in-context sin entrenamiento por tarea, pero no se dispone de cifras comparativas de rendimiento en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card indica que dos trabajos previos de los mismos autores (PluRel y Relational Transformer) han quedado superados por RT-J; conviene usar el checkpoint actual y no los anteriores.
-- El paper principal de RT-J esta en progreso, por lo que la documentacion cientifica completa puede no estar disponible todavia.
-- No es un modelo de lenguaje generativo: no soporta tool calling, agentes ni generacion de texto libre; su salida es una prediccion sobre una entidad objetivo.
-- El embedder de texto (`all-MiniLM-L12-v2`) no forma parte del checkpoint ni se ajusta; la calidad sobre columnas textuales depende de ese modelo externo, orientado principalmente a ingles.
-- Idiomas soportados: no disponible, lo que limita el uso fiable en bases de datos con texto en idiomas distintos del ingles.
-- El rendimiento depende fuertemente de la configuracion de contexto (`ctx_size_list`, `local_ctx_size`, `bfs_width`, `num_walks`, `walk_length`) y de la estrategia de muestreo; contextos pequenos reducen la precision.
-- La API no ofrece CLI y `rt.eval.main` es keyword-only sin valores por defecto, lo que obliga a copiar y editar los ejemplos.
-- La instalacion requiere compilar el motor de datos en Rust y disponer de Python 3.12 o superior, lo que anade complejidad al despliegue.
-- En CPU y MPS la inferencia es significativamente mas lenta porque `flex_attention` carece de kernel fusionado bfloat16 fuera de CUDA.
-- Riesgos de sesgo y alucinacion: no disponible en la informacion proporcionada; al tratarse de un modelo predictivo sobre datos tabulares, la calidad dependera de la representatividad de los datos de entrenamiento.
-- Licencia cc-by-4.0: permite uso comercial con atribucion; conviene revisar los terminos del fichero `LICENSE` del repositorio antes de un despliegue en produccion.
+- Sesgos conocidos: no documentados en la model card; al entrenarse sobre bases de datos reales, puede heredar sesgos presentes en PluRel y The Join.
+- Riesgo de alucinacion: no aplica en el sentido linguistico, pero las predicciones sobre entidades pueden ser erroneas si el esquema o las filas de contexto son incompletos o inconsistentes.
+- Limitaciones de contexto: la longitud de contexto no esta disponible; el rendimiento puede degradarse con esquemas relacionales muy grandes o muchas filas por entidad.
+- Limitaciones de idioma: no es un modelo linguistico; las columnas de texto dependen de `all-MiniLM-L12-v2`, que tiene sus propias limitaciones multilingues.
+- Restricciones de licencia: los pesos son Apache-2.0 y permiten uso comercial, pero los datos de entrenamiento (PluRel, The Join) tienen sus propios terminos que deben revisarse antes de un despliegue en produccion.
+- Caveat de produccion: el modelo esta pensado para prediccion in-context, no para fine-tuning generico; la integracion requiere la libreria `relational-transformer` y un pipeline de preparacion de esquemas relacionales.
+- Madurez: modelo reciente (paper NeurIPS 2026) con ecosistema de tooling limitado; verificar estabilidad de la API antes de adoptarlo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/stanford-star/rt-j
-- Codigo fuente: https://github.com/stanford-star/relational-transformer
-- Pagina del proyecto: https://star-project.stanford.edu/rt-j
-- Paper en progreso: "RT-J: Large-Scale Pretraining of Relational Transformers for Context-Efficient Predictions"
-- Paper previo (superado) PluRel: https://arxiv.org/abs/2602.04029
-- Paper previo (superado) Relational Transformer: https://arxiv.org/abs/2510.06377
-- Documentacion de descargas: https://github.com/stanford-star/relational-transformer/blob/main/docs/downloads.md
-- Documentacion de preprocesado: https://github.com/stanford-star/relational-transformer/blob/main/docs/preprocess.md
-- Documentacion de inferencia: https://github.com/stanford-star/relational-transformer/blob/main/docs/inference.md
-- Documentacion de entrenamiento: https://github.com/stanford-star/relational-transformer/blob/main/docs/train.md
-- Ejemplos: https://github.com/stanford-star/relational-transformer/tree/main/examples
-- Script de evaluacion: https://github.com/stanford-star/relational-transformer/blob/main/examples/eval.py
-- Dataset the-join: https://huggingface.co/datasets/stanford-star/the-join
-- Dataset the-join-preprocessed: https://huggingface.co/datasets/stanford-star/the-join-preprocessed
-- Dataset plurel: https://huggingface.co/datasets/stanford-star/plurel
-- Dataset plurel-preprocessed: https://huggingface.co/datasets/stanford-star/plurel-preprocessed
-- Dataset relbench-v1: https://huggingface.co/datasets/stanford-star/relbench-v1
-- Dataset relbench-preprocessed: https://huggingface.co/datasets/stanford-star/relbench-preprocessed
-- Embedder de texto: https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2
-- Toolchain de Rust: https://rustup.rs
+- Hugging Face: https://huggingface.co/stanford-star/rt-j
+- Dataset PluRel: https://huggingface.co/datasets/stanford-star/plurel-preprocessed
+- Dataset The Join: https://huggingface.co/datasets/stanford-star/the-join-preprocessed
+- Codigo y quickstart: https://github.com/stanford-star/relational-transformer
+- Paper RT-J (NeurIPS 2026): https://star-project.stanford.edu/rt-j
+- Leaderboard RelBench: https://star-project.stanford.edu/relbench/leaderboard

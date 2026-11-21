@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "kim-a-chen/judge-editor-qwen2.5-3b-sap",
+  "slug": "kim-a-chen-judge-editor-qwen2-5-3b-sap",
+  "author": "kim-a-chen",
+  "url": "https://huggingface.co/kim-a-chen/judge-editor-qwen2.5-3b-sap",
+  "created_at": "2026-11-21T02:19:05.000Z",
+  "updated_at": "2026-11-21T02:26:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "speech-recognition-correction",
+    "dysarthric-speech",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:xiuwenz2/SAP-Hypo5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

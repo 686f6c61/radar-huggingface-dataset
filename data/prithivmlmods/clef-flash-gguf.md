@@ -2,126 +2,120 @@
 
 ## Resumen
 
-clef-flash-GGUF es la version cuantizada en formato GGUF de Cloudflare/clef-flash, un modelo multimodal de decision de aproximadamente 9B parametros (8.953.803.264 parametros reales en safetensors) desarrollado por Cloudflare y post-entrenado a partir de Qwen/Qwen3.5-9B bajo licencia Apache-2.0. El repositorio lo publica el usuario prithivMLmods y contiene exclusivamente pesos GGUF listos para su uso con llama.cpp y otros runtimes compatibles, con un peso total de repositorio de 87,6 GB repartido entre las distintas cuantizaciones y los ficheros de proyeccion multimodal.
+Clef-Flash es un modelo multimodal de decisión de 9.075 millones de parámetros desarrollado por Cloudflare, post-entrenado a partir de Qwen3.5-9B. A diferencia de los modelos generativos convencionales, no produce texto libre: lee un estado (texto, JSON, imágenes o vídeo) junto con un esquema de preguntas tipadas (`noul`, `choice` o `score`) y devuelve una probabilidad para cada opción permitida en un único forward pass. Una cabeza de esquema conjunta sobre los estados ocultos finales del backbone enruta la evidencia hacia cada pregunta y puntúa todas las opciones de forma conjunta, eliminando la necesidad de parsing posterior.
 
-La particularidad del modelo es su planteamiento: en lugar de generar texto libre, recibe un estado (texto, JSON, imagenes o video) junto con un esquema de preguntas tipadas (`noul` verdadero/falso, `choice` o `score`) y, en una sola pasada forward, emite un logit para cada opcion permitida de cada pregunta mediante una cabeza de esquema conjunta situada sobre los estados ocultos finales del backbone. Un softmax por pregunta devuelve directamente probabilidades, de modo que no es necesario parsear la salida. Es compatible con la API de Jev/SystemOne (helper `systemone`) y admite lotes mixtos de texto y multimodal.
+La relevancia del modelo reside en su orientación a la toma de decisiones estructurada y verificable: clasificación, enrutamiento y puntuación con salida tipada, latencia muy baja (mediana de 38,8 ms según la model card) y API compatible con Jev y SystemOne. Se sirve mediante SGLang a través del endpoint `/v1/systemone`, y esta ficha corresponde a la cuantización GGUF publicada por prithivMLmods, que habilita su ejecución con llama.cpp.
 
-Su relevancia practica esta en la latencia y en el enfoque de salida estructurada: en la suite Decision Index 0.2.1 iguala o lidera varios benchmarks de decision y tool calling, y registra una latencia mediana de 38,8 ms frente a los 209,3 ms de su hermano mayor Clef. La contrapartida es que queda por detras en tareas de clasificacion de intenciones, deteccion de alucinaciones en RAG, matematicas y razonamiento avanzado, por lo que encaja mejor como capa de decision rapida que como generador de texto generalista.
+El repositorio GGUF (60,3 GB) incluye pesos desde BF16 hasta Q3_K_M, además de un fichero de proyección multimodal (`mmproj-bf16.gguf`) necesario para el procesamiento de imágenes y vídeo. La licencia es Apache 2.0 y el modelo está etiquetado únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con backbone derivado de Qwen/Qwen3.5-9B y cabeza de esquema conjunta (joint schema head) sobre los estados ocultos finales |
-| Parametros totales | 8.953.803.264 (aprox. 9B) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer multimodal (post-entrenado desde Qwen3.5-9B) con cabeza de esquema conjunta para salida tipada |
+| Parametros totales | 9.075.566.084 (~9,1 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M; mas ficheros de proyeccion multimodal mmproj en bf16, f16 y q8_0 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | BF16, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M; proyección multimodal mmproj-bf16 |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repositorio); el modelo base Cloudflare/clef-flash se distribuye en safetensors |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de Qwen/Qwen3.5-9B, un transformer denso de aproximadamente 9B parametros, y anade una cabeza de esquema conjunta que opera sobre los estados ocultos finales del backbone. En lugar de decodificar tokens de texto, el modelo evalua simultaneamente todas las opciones de todas las preguntas del esquema recibido y produce un logit por opcion; un softmax por pregunta convierte esos logits en probabilidades normalizadas. Los tipos de pregunta soportados son `noul` (verdadero/falso), `choice` (eleccion entre opciones) y `score` (puntuacion). Este diseno elimina la necesidad de parsear la salida y garantiza que la respuesta respete siempre el conjunto de opciones validas.
+Clef-Flash parte del backbone de Qwen3.5-9B y se post-entrena como modelo de decisión. Sobre los estados ocultos finales del backbone se añade una cabeza de esquema conjunta que, dada una definición de preguntas tipadas (`noul` para sí/no, `choice` para selección entre criterios, `score` para puntuación ordinal), enruta la evidencia relevante a cada pregunta y puntúa simultáneamente todas las opciones permitidas. El modelo no genera texto libre ni requiere parsing de la salida: devuelve directamente probabilidades por opción en un único forward pass. El pipeline declarado es `image-text-to-text`, lo que confirma la integración de entrada multimodal (imágenes y vídeo) mediante un proyector multimodal separado.
 
-El modelo esta descrito como post-entrenado (post-train) sobre la base Qwen3.5, con soporte multimodal para texto, JSON, imagenes y video, y capacidad de procesar lotes mixtos de texto y modalidades visuales. La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; tampoco se especifica el mecanismo concreto de fusion de las entradas visuales mas alla de la existencia de los ficheros de proyeccion multimodal (mmproj) en el paquete GGUF.
+No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO en el post-entrenamiento. La model card menciona únicamente que se trata de un post-train de Qwen3.5-9B y que existe un hermano mayor denominado Clef. La innovación técnica destacable es la salida estructurada tipada con puntuación conjunta de opciones y la compatibilidad con el endpoint `/v1/systemone` de llama.cpp y SGLang.
 
 ## Capacidades
 
-- Clasificacion y decision estructurada: responde esquemas de preguntas tipadas (`noul`, `choice`, `score`) devolviendo probabilidades por opcion en una sola pasada, sin parsing posterior.
-- Entrada multimodal: acepta texto, JSON, imagenes y video, con soporte de lotes mixtos texto-multimodal.
-- Salida tipada para integracion: el formato de salida es directamente consumible por sistemas de decision, enrutado o validacion automatica.
-- Tool calling y funciones: los benchmarks de la suite Decision Index incluyen BFCL y API-Bank, en los que el modelo lidera o empata segun la informacion del autor.
-- Integracion con API Jev/SystemOne: compatible con el helper `systemone`.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma declarada.
-- No se menciona soporte de modo pensamiento (thinking), audio ni generacion de texto libre como capacidad principal.
+- Salida estructurada tipada: probabilidad por opción para preguntas de tipo `noul`, `choice` y `score`, sin generación libre ni parsing.
+- Procesamiento multimodal de entrada: texto, JSON, imágenes y vídeo (requiere el fichero `mmproj`).
+- Modelo de decisión orientado a clasificación, enrutamiento y puntuación de evidencia.
+- Soporte de tool calling y function calling (evaluado en BFCL y API-Bank).
+- Capacidades de razonamiento y conocimiento general (MMLU, WinoGrande, CLadder).
+- Capacidades de razonamiento de contratos y NLI (ContractNLI).
+- Compatibilidad con la API de Jev y SystemOne; servible con SGLang vía `/v1/systemone`.
+- Capacidad de predicción y forecasting (ForecastBench).
+- Capacidad limitada en tareas de razonamiento matemático y recuperación (ver benchmarks).
+- Multilingüe: no disponible; solo inglés declarado.
 
 ## Casos de uso
 
-- Clasificacion de intenciones en atencion al cliente: el modelo recibe el mensaje del usuario junto con un esquema `choice` de intenciones y devuelve la probabilidad de cada una, lo que permite enrutar la conversacion sin parsear texto; es su escenario mejor valorado segun las evals de workflow.
-- Moderacion y validacion de contenido: mediante preguntas `noul` (verdadero/falso) se puede evaluar si un contenido cumple politicas, con salida binaria directa por logit.
-- Puntuacion y ranking de candidatos: el tipo `score` permite asignar puntuaciones normalizadas a respuestas, documentos o resultados de busqueda en una sola inferencia.
-- Tool calling y orquestacion de agentes: dado su rendimiento en BFCL y API-Bank, puede actuar como capa de decision que elige que herramienta invocar entre un conjunto de opciones predefinidas.
-- Extraccion estructurada de documentos: con entrada de imagen o JSON, clasifica campos y respuestas de formularios; las evals lo situan ligeramente por detras de Clef en procesamiento de facturas.
-- Deteccion de alucinaciones en pipelines RAG: mediante preguntas tipo `noul` sobre si la respuesta esta respaldada por el contexto; el autor reporta que queda por detras en RAGTruth, por lo que conviene validarlo en este uso.
-- Enrutado de bajo coste en sistemas multi-modelo: gracias a su latencia mediana de 38,8 ms, puede decidir si una consulta se resuelve con el propio modelo o se delega a uno mayor.
-- Despliegue local con vision: los ficheros mmproj permiten ejecutar tareas de decision sobre imagenes en entornos con llama.cpp.
+- Enrutamiento de tickets de soporte: el modelo recibe el mensaje del cliente como `state` y un esquema `choice` con criterios (facturación, envío, técnico), devolviendo la probabilidad por equipo en un solo forward pass. Adecuado por su latencia mediana de 38,8 ms y su rendimiento en el simulador de electrodomésticos (97,7).
+- Clasificación de intención en atención al cliente: con preguntas `noul` (por ejemplo, "¿está enfadado el cliente?") y `score` de urgencia, se obtiene una salida tipada directamente consumible por el sistema de ticketing, sin parsing.
+- Procesamiento de facturas: esquema `choice` para la acción primaria (aprobar, rechazar, escalar) sobre el estado del documento; la model card reporta 73,3 en la evaluación de acción primaria de facturación.
+- Verificación de cumplimiento contractual: uso de ContractNLI (84,3 reportado) para determinar si una cláusula implica una condición, con salida probabilística auditable.
+- Moderación y triaje de contenido multimodal: al aceptar imágenes y vídeo, puede clasificar contenido con preguntas tipadas en pipelines de revisión.
+- Automatización de flujos de agentes con tool calling: integración en pipelines que requieren decidir qué función invocar (BFCL 98,8, API-Bank 93,1) con salida estructurada compatible con el endpoint `/v1/systemone`.
+- Predicción de eventos y forecasting: uso en tareas de estimación probabilística (ForecastBench, Brier 10,6), adecuado para sistemas de alerta temprana.
+- Despliegue en local con llama.cpp: gracias a las cuantizaciones Q4_K_M (5,72 GB) y Q5_K_M (6,56 GB), puede ejecutarse en estaciones de trabajo con GPU de consumo para tareas de clasificación de alto volumen.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible; la model card describe la posicion relativa del modelo en la suite Decision Index 0.2.1 sin cifras concretas.
+Resultados publicados en la model card (Decision Index 0.2.1, ejecuciones internas de Cloudflare):
 
-| Benchmark | Resultado declarado |
-|---|---|
-| BFCL | lidera o empata |
-| API-Bank | lidera o empata |
-| ARC | lidera o empata |
-| WinoGrande | lidera o empata |
-| HellaSwag | lidera o empata |
-| MuSR | lidera o empata |
-| CLadder | lidera o empata |
-| ForecastBench | lidera o empata |
-| CLINC150 | por detras de los comparados |
-| RAGTruth | por detras de los comparados |
-| GSM8K | por detras de los comparados |
-| POP909-CL | por detras de los comparados |
-| GPQA Diamond | por detras de los comparados |
-| MMLU-Pro | por detras de los comparados |
+| Benchmark | Clef-Flash | Referencia (Jev) |
+|---|---|---|
+| BFCL | 98,8 | no disponible |
+| API-Bank | 93,1 | no disponible |
+| Simulador de electrodomésticos | 97,7 | 52,3 |
+| ContractNLI | 84,3 | no disponible |
+| MMLU | 91,8 | no disponible |
+| WinoGrande | 97,5 | no disponible |
+| CLadder | 97,7 | no disponible |
+| ForecastBench (Brier, menor es mejor) | 10,6 | no disponible |
+| GPQA Diamond | 51,0 | 78,3 |
+| MMLU-Pro | 65,3 | 82,7 |
+| BBH | 68,9 | 92,9 |
+| GSM8K | 67,3 | no disponible |
+| CLINC150+OOS | 66,8 | no disponible |
+| RAGTruth | 35,6 | no disponible |
+| POP909-CL | 1,6 | no disponible |
+| Latencia mediana | 38,8 ms | 524,1 ms |
 
-| Metrica de latencia | Valor |
-|---|---|
-| Latencia mediana de clef-flash | 38,8 ms |
-| Latencia mediana de Clef | 209,3 ms |
-| Evals de workflow | en linea con Clef y Jev; mejor en atencion al cliente y ligeramente peor en procesamiento de facturas |
+En los cuatro evals de flujos Typesafe el resultado es mixto frente a Jev: por delante en acciones exactas de atención al cliente (77,0 frente a 76,0) y por detrás en acción primaria de procesamiento de facturas (73,3 frente a 83,1). El modelo es débil en tareas intensivas en conocimiento y recuperación (GPQA Diamond, MMLU-Pro, BBH, HoVer, When2Call).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (a partir de los tamanos de fichero publicados, sin overhead de contexto):
-  - BF16 / F16: 17,9 GB.
-  - Q8_0: 9,53 GB.
-  - Q6_K: 7,36 GB.
-  - Q5_K_M: 6,47 GB; Q5_K_S: 6,31 GB.
-  - Q4_K_M: 5,63 GB; Q4_K_S: 5,35 GB.
-  - Q3_K_L: 4,93 GB; Q3_K_M: 4,62 GB.
-- Vision: anadir el fichero mmproj correspondiente (922 MB en bf16/f16, 624 MB en q8_0).
-- GPU recomendadas: no especificadas por el autor. Por tamano, la cuantizacion Q4_K_M (5,63 GB) es viable en GPU de consumo con 8 GB o mas de VRAM, y Q8_0 (9,53 GB) requiere aproximadamente 12 GB. Los pesos BF16/F16 (17,9 GB) exigen GPUs de 24 GB o superiores tipo RTX 4090, A100 o H100.
-- Cabe en GPU de consumo: previsiblemente si en cuantizaciones Q4 y Q5 en tarjetas de 8-12 GB; la informacion disponible no incluye pruebas oficiales.
-- Opciones de despliegue: llama.cpp (referenciado explicitamente en la model card y en los tags), ademas de etiquetas para text-generation-inference y transformers.
-- Latencia y throughput: la unica cifra publicada es la latencia mediana de 38,8 ms en la suite Decision Index 0.2.1, frente a 209,3 ms del modelo Clef. No se publican datos de throughput.
+- VRAM estimada para inferencia: aproximadamente 5,4-5,7 GB para Q4_K_S/Q4_K_M; 6,4-6,6 GB para Q5_K_S/Q5_K_M; 7,5 GB para Q6_K; 18,2 GB para BF16. Añadir ~922 MB si se carga el proyector multimodal `mmproj-bf16.gguf`.
+- GPU recomendadas: RTX 4090, RTX 3090, A100 y H100 para BF16; GPUs de consumo con 8 GB o más para cuantizaciones Q4/Q5.
+- Cabe en GPU de consumo: sí, con Q4_K_M (5,72 GB) o Q5_K_M (6,56 GB) en tarjetas de 8 GB o superiores; Q3_K_M (4,66 GB) para equipos con menos VRAM.
+- Opciones de despliegue: llama.cpp (`llama-server` con endpoint `/v1/systemone`), SGLang (`/v1/systemone`), y por las etiquetas del repo, text-generation-inference y llama-cpp.
+- Latencia y throughput: latencia mediana reportada de 38,8 ms (frente a 524,1 ms de Jev); throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clef-flash (este) | aprox. 9B | no disponible | Lidera o empata en BFCL, API-Bank, ARC, WinoGrande, HellaSwag, MuSR, CLadder y ForecastBench; latencia mediana de 38,8 ms | apache-2.0 | GGUF en este repositorio; base en safetensors |
-| Clef | no disponible | no disponible | Lidera en varios benchmarks segun la model card; latencia mediana de 209,3 ms | no disponible | no disponible |
-| Jev | no disponible | no disponible | En linea con clef-flash en evals de workflow | no disponible | API SystemOne |
-| Qwen3.5-9B | aprox. 9B (base del post-entrenamiento) | no disponible | No comparable directamente: es un modelo generativo, no de decision estructurada | apache-2.0 | Hugging Face |
+| Clef-Flash | ~9,1 B | no disponible | Decisión multimodal con salida tipada | Apache 2.0 | GGUF en HF, SGLang, llama.cpp |
+| Jev | no disponible | no disponible | Modelo de decisión comparable | no disponible | no disponible |
+| Clef (hermano mayor) | no disponible | no disponible | Decisión multimodal | no disponible | no disponible |
+| Qwen3.5-9B (base) | ~9 B | no disponible | Generación de texto | no disponible | no disponible |
 
-La informacion disponible no permite completar una comparativa cuantitativa con alternativas de la misma categoria; los datos de Clef, Jev y Qwen3.5-9B no estan detallados en el material proporcionado.
+Frente a Jev, Clef-Flash es claramente superior en latencia (38,8 ms frente a 524,1 ms), en el simulador de electrodomésticos (97,7 frente a 52,3) y en BFCL/API-Bank, pero inferior en GPQA Diamond (51,0 frente a 78,3), MMLU-Pro (65,3 frente a 82,7) y BBH (68,9 frente a 92,9). Frente a su hermano mayor Clef, la model card indica que Clef-Flash queda por detrás en tareas intensivas en conocimiento y recuperación.
 
 ## Limitaciones y advertencias
 
-- Idiomas: el modelo solo declara soporte de ingles (en); no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
-- Contexto: no se especifica la longitud de contexto soportada, lo que impide dimensionar casos de uso con documentos largos.
-- Rendimiento desigual: el autor reconoce que el modelo queda por detras en CLINC150, RAGTruth, GSM8K, POP909-CL, GPQA Diamond y MMLU-Pro, por lo que no es adecuado para razonamiento matematico avanzado, deteccion de alucinaciones en RAG ni clasificacion fina de intenciones sin validacion previa.
-- Salida no generativa: al producir logits por opcion y no texto libre, requiere definir un esquema de preguntas tipadas; no sirve como chatbot generativo convencional.
-- Vision: para tareas multimodales hay que cargar ademas el fichero mmproj; sin el, la entrada de imagen y video no estara operativa.
-- Riesgo de alusion: no se han publicado tasas de alucinacion ni evaluaciones de calibracion de las probabilidades emitidas.
-- Sesgos: no se documentan analisis de sesgo en la informacion disponible.
-- Uso comercial: la licencia apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Cloudflare/clef-flash y de Qwen/Qwen3.5-9B, ya que la ficha del GGUF no detalla restricciones adicionales.
-- Madurez: el repositorio registra 0 descargas y 1 like en el momento de la consulta, con fecha de creacion 2026-10-01, por lo que se trata de una publicacion muy reciente y poco validada por la comunidad.
-- Precision de las cuantizaciones bajas: Q3_K_S/M y Q4_K_S pueden degradar la calidad de las probabilidades de decision; el autor recomienda Q4_K_M o superiores.
+- No es un modelo generativo: no produce texto libre; su uso está restringido a esquemas de preguntas tipadas.
+- Rendimiento débil en conocimiento avanzado y recuperación: GPQA Diamond 51,0, MMLU-Pro 65,3, BBH 68,9, RAGTruth 35,6 y POP909-CL 1,6.
+- Razonamiento matemático limitado: GSM8K 67,3.
+- Clasificación de intención fuera de dominio mejorable: CLINC150+OOS 66,8.
+- Solo inglés declarado; no hay soporte multilingüe documentado.
+- Los benchmarks proceden de ejecuciones internas de Cloudflare y no de evaluaciones independientes; deben interpretarse con cautela.
+- Riesgo de alucinación: aunque la salida es probabilística y tipada, las probabilidades pueden estar mal calibradas en dominios fuera de la distribución de entrenamiento.
+- Sesgos: no se documentan sesgos conocidos en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-9B y de los datos de post-entrenamiento.
+- El fichero `mmproj-bf16.gguf` es necesario para entrada de imagen o vídeo; sin él, el modelo solo procesa texto y JSON.
+- Longitud de contexto no documentada: planificar los prompts de estado en consecuencia.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/prithivMLmods/clef-flash-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
-- Modelo del que deriva el post-entrenamiento: https://huggingface.co/Qwen/Qwen3.5-9B
-- llama.cpp (runtime referenciado en la model card): https://github.com/ggml-org/llama.cpp
-- Perfil del autor: https://huggingface.co/prithivMLmods
-- Sitio del autor: https://prithivsakthiur.github.io/prithivmlmods/
-- Repositorio relacionado del autor (Q3.5-9B-DS-v4-Flash-v2.0-GGUF): https://huggingface.co/prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-GGUF
-- Indice de modelos GGUF del autor: https://graysoft.dev/authors/p/prithivmlmods.html
-- Directorio de descubrimiento de modelos GGUF: https://local-ai-zone.github.io/
+- Fichero BF16: https://huggingface.co/prithivMLmods/clef-flash-GGUF/blob/main/clef-flash.BF16.gguf
+- Fichero Q4_K_M: https://huggingface.co/prithivMLmods/clef-flash-GGUF/blob/main/clef-flash.Q4_K_M.gguf
+- Fichero Q5_K_M: https://huggingface.co/prithivMLmods/clef-flash-GGUF/blob/main/clef-flash.Q5_K_M.gguf
+- Proyector multimodal: https://huggingface.co/prithivMLmods/clef-flash-GGUF/blob/main/clef-flash.mmproj-bf16.gguf
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- SGLang: https://github.com/sgl-project/sglang

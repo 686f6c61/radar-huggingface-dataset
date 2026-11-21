@@ -2,113 +2,99 @@
 
 ## Resumen
 
-CLM-v0.1-8B es un modelo publicado en Hugging Face por el usuario u organizacion Contrastive-LM. Se trata de un lanzamiento con fecha de creacion 21 de septiembre de 2026, licencia Apache 2.0 y la etiqueta de region "us". En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y su tamano declarado es de 0,1 GB, un dato llamativamente bajo para un modelo cuyo nombre sugiere 8.000 millones de parametros.
+CLM-v0.1-8B es un modelo de ranking y verificacion desarrollado por Contrastive-LM que introduce una clase distinta de modelo dentro del ecosistema: un "System One model" entrenado con objetivo de aprendizaje contrastivo para conectar estados y acciones. No es un modelo generativo al uso, sino un cabezal de puntuacion construido sobre el encoder congelado de Qwen3-8B, con dos proyecciones pequenas (state head y action head) entrenadas con una perdida InfoNCE bidireccional.
 
-La model card publicada es practicamente vacia: unicamente contiene la linea `license: apache-2.0`. No incluye descripcion, arquitectura, datos de entrenamiento, idiomas, benchmarks ni instrucciones de uso. Tampoco se ha publicado informacion adicional en la busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo (son enlaces a juegos de casino de tipo "crash"), por lo que no aportan nada evaluable.
+El modelo resuelve un problema concreto en pipelines agenticos: la necesidad de evaluar rapidamente multiples candidatos (soluciones best-of-N, nombres de herramientas, siguientes movimientos, respuestas posibles) sin recurrir a un LLM generativo completo. Al separar la codificacion de estados y acciones, permite cachear embeddings de acciones y reutilizarlos, lo que reduce drasticamente la latencia en escenarios con muchos candidatos.
 
-En consecuencia, esta ficha recoge exclusivamente los metadatos verificables del repositorio y marca como "no disponible" todo aquello que el autor no ha documentado. Cualquier afirmacion sobre arquitectura, contexto, rendimiento o capacidades seria especulativa y, por tanto, se evita de forma deliberada. Se recomienda precaucion antes de considerar este modelo para cualquier uso en produccion.
+Su relevancia actual radica en que ofrece, segun el autor, resultados comparables a Jev en tareas de computer-use, gaming y tool-calling en modo zero-shot, con hasta 9 veces menos latencia, y sirve como punto de partida para cabezales especializados que alcanzan SOTA en DeepSWE (81,6%) y Terminal-Bench 2.1 (87,6%) tras fine-tuning. La arquitectura base es Qwen3-8B, la licencia es Apache 2.0 y el checkpoint publicado ocupa 0,1 GB, ya que solo contiene los cabezales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el nombre sugiere 8B, sin confirmar en la model card) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (el tamano del repo, 0,1 GB, no es compatible con pesos de 8B en bf16/fp16) |
-
-Metadatos adicionales verificados:
-
-| Parametro | Valor |
-|---|---|
-| ID en Hugging Face | Contrastive-LM/CLM-v0.1-8B |
-| Autor | Contrastive-LM |
-| Pipeline declarado | no disponible |
-| Etiquetas | license:apache-2.0, region:us |
-| Descargas | 0 |
-| Likes | 0 |
-| Fecha de creacion | 2026-09-21T20:09:04Z |
-| Fecha de actualizacion | 2026-09-21T20:09:52Z (48 segundos despues de la creacion) |
-| Tamano del repositorio | 0,1 GB |
+| Arquitectura | Encoder transformer congelado (Qwen3-8B) con dos cabezales de proyeccion (state head y action head) entrenados con perdida InfoNCE bidireccional |
+| Parametros totales | No disponible (el checkpoint publicado ocupa 0,1 GB; el encoder base Qwen3-8B tiene 8B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (el ejemplo de despliegue usa `--max-model-len 2048`) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Ingles (`en` en la model card) |
+| Licencia | Apache 2.0 (tanto los pesos CLM-8B como el encoder Qwen3-8B) |
+| Formato de pesos | `.pt` (checkpoint PyTorch, descargado via `clm-download`); el encoder se sirve desde Qwen/Qwen3-8B |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura (no se especifica si es un transformer denso, un MoE, un modelo hibrido con SSM, ni si incorpora mecanismos de atencion lineal o decodificacion especulativa). El nombre del repositorio, "CLM", podria sugerir un enfoque basado en aprendizaje contrastivo ("Contrastive Language Model"), pero esto es una mera conjetura derivada de la denominacion y no una afirmacion respaldada por documentacion.
+CLM-8B no es un transformer generativo sino un sistema de puntuacion contrastiva. Sobre el encoder congelado de Qwen3-8B (con pooling del ultimo token) se anaden dos cabezales de proyeccion de pequeno tamano: uno para estados y otro para acciones. Ambos se entrenan con una perdida InfoNCE bidireccional que alinea representaciones de estados con las acciones correctas frente a negativos. Como solo se entrenan los cabezales, el fine-tuning es economicamente barato.
 
-Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento. La model card se limita a declarar la licencia Apache 2.0.
-
-Un indicio tecnico relevante es la discrepancia entre el nombre "8B" y el tamano del repositorio (0,1 GB). Un modelo de 8.000 millones de parametros en safetensors bf16 ocuparia del orden de 16 GB, y en GGUF q4_K_M alrededor de 4,5-5 GB. Un repositorio de 0,1 GB es coherente con ficheros de configuracion, tokenizador y, como maximo, un modelo de decenas de millones de parametros, o con una subida de pesos incompleta. Este punto debe verificarse antes de cualquier evaluacion.
+El entrenamiento se estructura en tres fases: pre-entrenamiento sobre aproximadamente 60 millones de pares Q&A de Nemotron, mid-training sobre unos 30 millones de negativos sinteticos duros, y post-entrenamiento sobre aproximadamente 1 millon de trayectorias agenticas. La innovacion principal es el "State & Action Caching": al codificar estados y acciones por separado, los embeddings de acciones pueden reutilizarse entre consultas, de modo que con alrededor de 1000 candidatos el modelo resulta 13 veces mas rapido que Jev. El checkpoint publicado es el punto de partida para los cabezales especializados de DeepSWE y Terminal-Bench.
 
 ## Capacidades
 
-No disponible. La model card no documenta ninguna capacidad concreta. No se puede confirmar ni desmentir:
-
-- Generacion de texto, razonamiento, codigo o matematicas.
-- Soporte de tool calling o function calling.
-- Soporte de agentes y razonamiento multi-paso.
-- Cobertura multilingue.
-- Modo "thinking", vision, audio u otras capacidades especiales.
-
-Cualquier lista de capacidades en este punto seria inventada, por lo que se omite.
+- Puntuacion y ranking de candidatos en texto libre (respuestas, soluciones best-of-N, nombres de herramientas, siguientes movimientos).
+- Respuesta a preguntas tipadas sobre un estado: `Noul` (si/no), `Choice` (seleccion entre opciones con criterios) y `Score` (escala ordinal), devolviendo distribuciones de probabilidad.
+- Verificacion de trayectorias agenticas (uso como verifier tras fine-tuning de los cabezales).
+- Reranking de documentos o respuestas mediante el pipeline `text-ranking`.
+- Soporte de tool calling y computer-use como evaluador de acciones candidatas.
+- Cacheo y reutilizacion de embeddings de acciones para evaluacion masiva de candidatos.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- No genera texto: solo puntua el conjunto de candidatos que se le proporciona, y sus probabilidades son relativas a ese conjunto.
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y verificables sin documentacion tecnica del modelo. Los escenarios habituales para un modelo de ~8B con licencia Apache 2.0 (generacion de codigo asistida, resumen de documentos, clasificacion, RAG sobre base documental, extraccion de entidades, agentes con tool calling, generacion de codigo en CI/CD, atencion al cliente multi-turno, traduccion automatica) son plausibles en abstracto, pero no se puede afirmar que CLM-v0.1-8B los soporte: se desconoce su contexto maximo, sus idiomas, si ha recibido ajuste por instrucciones y si dispone de plantilla de chat.
-
-Se recomienda no disenar casos de uso sobre este modelo hasta que el autor publique una model card funcional y pesos verificables.
+- Verificacion de soluciones en pipelines de agentes de codigo: dado un estado del repositorio o del terminal y varias soluciones candidatas, CLM las puntua para seleccionar la mejor antes de aplicarla; con cabezales fine-tuned alcanza SOTA en DeepSWE y Terminal-Bench 2.1.
+- Best-of-N en generacion de codigo: se generan N candidatos con un LLM generativo y CLM los rerankea por probabilidad, reduciendo coste frente a usar un segundo LLM grande como juez.
+- Enrutamiento y triaje en atencion al cliente: el ejemplo de la model card clasifica un mensaje en departamento (`Choice`), urgencia (`Noul`) y nivel de frustracion (`Score`) con probabilidades, adecuado para sistemas de ticketing que necesitan decisiones rapidas y auditables.
+- Seleccion de herramientas en agentes: dado el estado de la conversacion y la lista de herramientas disponibles, CLM puntua cual es la mas apropiada, con cacheo de embeddings de herramientas que abarata la evaluacion cuando el catalogo es grande.
+- Verificacion de respuestas en RAG: reranking de fragmentos recuperados o de respuestas generadas para filtrar alucinaciones antes de mostrarlas al usuario.
+- Evaluacion de trayectorias en entornos de computer-use y gaming: puntuar acciones candidatas paso a paso con latencia baja (hasta 9 veces menor que Jev en zero-shot segun el autor).
+- Fine-tuning de cabezales especificos de dominio: al entrenarse solo los cabezales sobre un encoder congelado, es viable adaptar CLM a un dominio concreto con coste de computo reducido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, ni de ninguna otra evaluacion estandar, ni en la model card ni en los resultados de busqueda web (que, ademas, no contienen ninguna referencia al modelo).
+| Benchmark | CLM-v0.1-8B (cabezales fine-tuned) | Referencia |
+|---|---|---|
+| DeepSWE | 81,6% | No disponible comparativa detallada |
+| Terminal-Bench 2.1 | 87,6% | No disponible comparativa detallada |
+| Computer-use, gaming y tool-calling (zero-shot) | A la par que Jev, hasta 9x menos latencia | Jev |
+| Ranking con ~1k candidatos | 13x mas rapido que Jev | Jev |
+
+Nota: los resultados SOTA de DeepSWE y Terminal-Bench corresponden a cabezales fine-tuned, no a este checkpoint en zero-shot. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generativos, que ademas no aplican a un modelo sin capacidad de generacion.
 
 ## Requisitos de hardware
 
-No disponible como dato verificado. A continuacion se ofrecen estimaciones condicionadas a que el modelo resulte ser realmente un transformer denso de 8.000 millones de parametros, calculadas por aritmetica estandar y sin ninguna confirmacion por parte del autor:
-
-- VRAM estimada (si fueran 8B densos): ~16 GB en fp16/bf16; ~8-9 GB en cuantizacion de 8 bits; ~4,5-5,5 GB en cuantizacion de 4 bits.
-- GPU profesionales: A100 40/80 GB, H100, L40S o A6000 para fp16 con contexto largo.
-- GPU de consumo: una RTX 4090 (24 GB) o RTX 3090 (24 GB) podria alojar el modelo en fp16; tarjetas de 8-12 GB (RTX 3060, RTX 4070) requeririan cuantizacion de 4 bits.
-- Opciones de despliegue tipicas para este rango: vLLM, TGI, llama.cpp, Ollama, transformers.
-- Latencia y throughput: no disponible.
-
-Advertencia: dado que el repositorio ocupa 0,1 GB, es posible que los pesos no esten subidos. En ese caso el modelo no es ejecutable y los requisitos anteriores no aplican.
+- VRAM para los cabezales: minima (checkpoint de 0,1 GB); el coste real esta en servir el encoder Qwen3-8B.
+- VRAM para el encoder Qwen3-8B: aproximadamente 16 GB en FP16/BF16; en cuantizacion de 8 bits alrededor de 8-9 GB, y en 4 bits alrededor de 5-6 GB (estimaciones estandar para un modelo de 8B, no publicadas por el autor).
+- GPU recomendadas: A100 o H100 para despliegues de produccion con alto throughput; RTX 4090 (24 GB) suficiente para el encoder en BF16.
+- Cabe en GPU de consumo: si, en RTX 4090 en BF16 y en GPUs de 8-12 GB con cuantizacion.
+- Despliegue: el autor indica servir el encoder con vLLM (`--runner pooling --max-model-len 2048`) y el servicio CLM con `clm-serve` (API y playground en el puerto 8700). No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: hasta 9x menos latencia que Jev en zero-shot y 13x mas rapido con ~1k candidatos; 4-6x mas rapido que Jev como verifier fine-tuned (cifras del autor, sin hardware especificado).
 
 ## Comparativa con modelos similares
 
-El modelo no declara parametros, contexto ni rendimiento, por lo que la comparacion solo puede establecerse contra alternativas de la misma categoria nominal (~7-8B, licencia permisiva) usando datos publicos de esas alternativas. La columna de CLM-v0.1-8B queda mayoritariamente vacia.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| CLM-v0.1-8B | Cabezales sobre Qwen3-8B | No disponible | Ranking/verificacion contrastiva | Apache 2.0 | Hugging Face |
+| Jev | No disponible | No disponible | Verificador/ranking agentico | No disponible | No disponible |
+| Qwen3-8B | 8B | No disponible en esta ficha | LLM generativo | Apache 2.0 | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Contrastive-LM/CLM-v0.1-8B | no disponible (nombre sugiere 8B) | no disponible | Apache 2.0 | Repositorio de 0,1 GB, 0 descargas, model card vacia |
-| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Pesos abiertos en Hugging Face, ampliamente desplegado |
-| Qwen2.5 7B | 7B | 128k | Apache 2.0 | Pesos abiertos, ecosistema amplio de cuantizaciones |
-| Mistral 7B v0.3 | 7B | 32k | Apache 2.0 | Pesos abiertos, muy soportado en llama.cpp y vLLM |
-
-Los datos de los tres modelos de referencia corresponden a informacion publica de sus respectivos fabricantes y se incluyen unicamente como marco de comparacion. No implican ninguna equivalencia de rendimiento con CLM-v0.1-8B, cuya calidad es desconocida.
+La informacion disponible solo permite comparar con Jev, usado por el autor como referencia de latencia y rendimiento, y con Qwen3-8B, el encoder base. No se dispone de datos de parametros, contexto ni licencia de Jev en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card solo contiene la licencia. No hay informacion sobre arquitectura, entrenamiento, datos, sesgos ni evaluaciones.
-- Pesos posiblemente ausentes: el repositorio ocupa 0,1 GB, incompatible con un modelo de 8B en precision completa. Verificar el listado de ficheros antes de cualquier intento de despliegue.
-- Sin adopcion: 0 descargas y 0 likes en la fecha de consulta, por lo que no existe comunidad, issues ni evidencia de uso en produccion.
-- Riesgo de alucinacion: indeterminado, al no existir evaluaciones publicadas.
-- Sesgos: indeterminados. Se desconoce la composicion y el idioma del corpus de entrenamiento.
-- Idiomas: no declarados. No se puede asumir soporte de castellano.
-- Contexto: no declarado. No se puede asumir capacidad para tareas de contexto largo ni RAG con documentos extensos.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, sujeto a las obligaciones habituales de atribucion y conservacion del aviso de licencia. No obstante, al no haber declarado el origen de los datos de entrenamiento, no se puede descartar riesgo de reclamaciones por contenido de terceros.
-- Trazabilidad temporal: las fechas del repositorio son de septiembre de 2026 y el intervalo entre creacion y ultima actualizacion es de 48 segundos, lo que sugiere una publicacion automatizada o incompleta.
-- Recomendacion: no utilizar en produccion sin una evaluacion propia previa sobre pesos verificados.
+- Encoder-locked: los cabezales requieren obligatoriamente embeddings de Qwen3-8B con pooling del ultimo token; no funcionan con otro encoder.
+- Sin generacion: CLM solo puntua los candidatos proporcionados y sus probabilidades son relativas a ese conjunto, no calibradas de forma absoluta.
+- Los resultados SOTA en benchmarks agenticos requieren fine-tuning de los cabezales; este checkpoint zero-shot no los alcanza.
+- Idiomas: solo ingles declarado; el rendimiento en castellano no esta garantizado ni documentado.
+- Riesgo de sesgo y alucinacion heredado del encoder Qwen3-8B y de los datos de entrenamiento (Nemotron, negativos sinteticos, trayectorias agenticas), no evaluado en la model card.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del encoder base Qwen3-8B.
+- Modelo en version v0.1: se anuncia un CLM-35B multimodal para principios de octubre, por lo que la API y los resultados pueden cambiar.
+- El contexto maximo efectivo en los ejemplos de despliegue es de 2048 tokens; estados mas largos requeririan ajustar `--max-model-len` con impacto en memoria.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
-- Pagina del autor en Hugging Face: https://huggingface.co/Contrastive-LM
-- Paper: no disponible
-- Blog o anuncio oficial: no disponible
-- Repositorio de codigo: no disponible
-- Demo: no disponible
-- Resultados de busqueda web: no se ha encontrado ninguna referencia al modelo. Los resultados obtenidos corresponden a juegos de casino ("Chicken Road", "Chicken Cross") sin relacion alguna con el modelo, por lo que se omiten.
+- Hugging Face: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
+- Blog: https://contrastive-lm.notion.site
+- Codigo: https://github.com/Contrastive-LM/CLM
+- Guia de fine-tuning: https://github.com/Contrastive-LM/CLM/blob/main/docs/FINETUNING.md
+- Discord: https://discord.gg/5dAQEDJBs
+- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
+- Cabezales DeepSWE: https://huggingface.co/Contrastive-LM/deepswe-clm-heads-8k

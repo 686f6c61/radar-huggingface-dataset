@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "At1uri/egnn-equivariant-3d-dynamics-engine",
+  "slug": "at1uri-egnn-equivariant-3d-dynamics-engine",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/egnn-equivariant-3d-dynamics-engine",
+  "created_at": "2026-11-21T00:50:43.000Z",
+  "updated_at": "2026-11-21T00:50:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "equivariant_graph_neural_network",
+    "geometric-deep-learning",
+    "equivariant-neural-networks",
+    "egnn",
+    "molecular-dynamics",
+    "3d-vision",
+    "scientific-machine-learning",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19140,
+  "parameters_human": "19140",
+  "storage_bytes": 80608,
+  "storage_human": "80608 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "equivariant-3d-particle-benchmarks",
+      "metric": "SO(3) Relative Equivariance Residual (%)",
+      "value": 0.000001
+    }
+  ],
+  "sources": []
+}

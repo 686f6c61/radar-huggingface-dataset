@@ -90,16 +90,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Kataguru-Sceptic-35B-A3B-v2.6-GGUF - Hugging Face",
-      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF",
-      "snippet": "Instructions to use kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
-      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/tree/main",
-      "snippet": "Instructions to use kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
-    }
-  ]
+  "sources": []
 }

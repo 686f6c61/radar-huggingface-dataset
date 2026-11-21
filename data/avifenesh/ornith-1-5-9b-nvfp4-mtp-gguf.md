@@ -2,98 +2,99 @@
 
 ## Resumen
 
-Ornith-1.5-9B-NVFP4-MTP-GGUF es un artefacto de inferencia cuantizado a 4 bits del modelo Ornith-1.5-9B, desarrollado por Avifenesh como pieza de servido para el motor de inferencia memra. El modelo base, ornith-ai/Ornith-1.5-9B, es una fine-tune de Qwen3.5-9B con licencia MIT, que incorpora una arquitectura transformer densa con un módulo de predicción multi-token (MTP). Este artefacto en concreto reduce el peso de 18,8 GB (BF16) a 5,4 GB mediante cuantización NVFP4 (4-bit e2m1 con escalas FP8-e4m3 por cada 16 elementos), lo que lo hace viable en GPUs de consumo con 8 GB de VRAM.
+Ornith-1.5-9B-NVFP4-MTP-GGUF es un artefacto de servicio (serving artifact) publicado por el usuario Avifenesh a partir del modelo base `ornith-ai/Ornith-1.5-9B`, un fine-tune de 9B derivado de la familia Qwen3.5. No se trata de un modelo nuevo entrenado desde cero, sino de una cuantización NVFP4 en formato GGUF que incorpora una cabeza MTP (multi-token prediction) injertada para habilitar decodificación especulativa en GPUs Blackwell (sm_120a).
 
-La peculiaridad principal de esta versión es que injerta la cabeza MTP entrenada de Qwen3.5-9B (Apache-2.0) en el tronco de Ornith, ya que el checkpoint oficial declara la cabeza pero no incluye los tensores `mtp.*`. El objetivo es mejorar la tasa de aceptación de la decodificación especulativa sin alterar la salida del modelo: el flujo especulativo se verifica token a token y es idéntico a la decodificación greedy simple. El artefacto está pensado para ejecutarse en el motor memra (Rust + CUDA, optimizado para RTX Blackwell sm_120a) o en la rama NVFP4 de llama.cpp; no es compatible con el llama.cpp aguas arriba.
+El problema que resuelve es concreto: el checkpoint oficial de Ornith-1.5-9B declara una cabeza MTP en su configuración (`mtp_num_hidden_layers: 1`) pero no incluye los tensores `mtp.*` correspondientes (760 tensores frente a los 775 de su base). Este artefacto toma los 15 tensores de la cabeza MTP entrenada de `Qwen/Qwen3.5-9B` (Apache-2.0) y los injerta en el tronco oficial inalterado de Ornith en `blk.32`, permitiendo decodificación especulativa verificada token a token.
 
-La relevancia de esta ficha radica en que demuestra un caso práctico de cuantización extrema (4-bit) combinada con decodificación especulativa para reducir latencia en modelos de contexto largo (262.144 tokens nativos), manteniendo la integridad de la salida. Está orientado a desarrolladores que quieren desplegar un modelo conversacional con tool calling en servidores con GPUs Blackwell y necesitan evaluar si el compromiso entre tamaño, velocidad y exactitud les interesa.
+La relevancia es doble: por un lado reduce el peso de 18,8 GB en BF16 a 5,4 GB en NVFP4, y por otro habilita aceleración especulativa con garantías de exactitud (el flujo especulativo es token-idéntico a la decodificación greedy simple). El contexto nativo es de 262.144 tokens y la licencia es MIT.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer dense con visión (base Qwen3.5-9B) + cabeza MTP (1 capa) |
-| Parametros totales | no disponible (el nombre del modelo indica ~9 mil millones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262,144 tokens |
-| Tipos de cuantizacion | NVFP4 (4-bit e2m1, per-16 FP8-e4m3 scales), embeddings y salida en Q5_K, normas F32 |
-| Idiomas soportados | no disponible (modelo multilingüe derivado de Qwen) |
-| Licencia | MIT (tronco) + Apache-2.0 (cabeza MTP injertada) |
-| Formato de pesos | GGUF (safetensors BF16 original) |
+| Arquitectura | Transformer tipo Qwen3.5 (`qwen35`, 33 bloques incl. NextN), con cabeza MTP injertada en `blk.32` |
+| Parametros totales | 32.768 (dato reportado en safetensors; el nombre comercial indica 9B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens nativos |
+| Tipos de cuantizacion | NVFP4 (4-bit e2m1, escalas FP8-e4m3 por cada 16 elementos) en bloques y MTP; embeddings y cabeza de salida Q5_K; normas F32 |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | GGUF (`Ornith-1.5-9B-NVFP4-Q5K-mtp.gguf`, 5.442.334.016 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-9B es una fine-tune de Qwen3.5-9B, una arquitectura transformer densa con componentes de visión (el artefacto no incluye el vision tower, solo texto). El checkpoint oficial declara una cabeza MTP (`mtp_num_hidden_layers: 1`) pero no publica los tensores `mtp.*`, por lo que el autor de esta cuantización injertó la cabeza entrenada de Qwen3.5-9B en la capa `blk.32` del tronco. La cabeza MTP permite predecir múltiples tokens por paso, lo que en combinación con decodificación especulativa acelera la generación sin alterar la salida final: cada token especulado es verificado y, si no coincide, se descarta.
+El modelo base es un transformer denso derivado de Qwen3.5, con 33 bloques que incluyen la capa NextN y `rope.dimension_count 64`. El vocabulario es de 248.320 entradas. Este artefacto no entrena nada: cuantiza el tronco oficial BF16 sin modificar sus bytes (con recibos sha256 por shard) y le añade una cabeza MTP de 15 tensores procedente de Qwen3.5-9B, mapeada mediante el conversor estándar.
 
-El entrenamiento del modelo base sigue el paradigma de auto-mejora descrito en el blog de Ornith-1.5: el modelo propone tareas, genera scaffolds específicos y produce soluciones para aprendizaje por refuerzo. Los datos de entrenamiento concretos no se detallan en la información proporcionada. La cuantización NVFP4 se realizó con la herramienta `llama-quantize` de la rama `nvfp4-imatrix-scale-search` de llama.cpp, aplicando NVFP4 a todos los bloques y la cabeza MTP, Q5_K a embeddings y salida, y F32 a las normas.
+La conversión se realizó con `convert_hf_to_gguf.py` de la rama `nvfp4-imatrix-scale-search` de avifenesh/llama.cpp, en BF16 y con MTP empaquetado. La cuantización se hizo con `llama-quantize` usando el ftype NVFP4 de la misma rama, con `--output-tensor-type q5_k` y `--token-embedding-type q5_k`, aplicando la misma receta que el hermano de 35B. La innovación técnica principal es el injerto de la cabeza MTP: una cabeza de borrador nunca puede alterar la salida, ya que el modelo objetivo verifica cada token propuesto, de modo que solo afecta a la tasa de aceptación y a la velocidad especulativa.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está entrenado para diálogo multiturno con plantilla de chat integrada (byte-idéntica a `chat_template.jinja` del repo oficial).
-- Tool calling / function calling: la plantilla incluye XML para herramientas y el motor emite llamadas OpenAI `tool_calls` con argumentos tipados (por ejemplo, `"celsius":true`).
-- Razonamiento multi-step: soporta etiquetas de razonamiento (`<thinking>`) dentro de la conversación.
-- Decodificación especulativa: con la cabeza MTP injertada, alcanza tasas de aceptación de 0,594 (K=3, prompt de código) manteniendo la salida token-idéntica a la decodificación greedy simple.
-- Multilingüe: derivado de Qwen, soporta múltiples idiomas, aunque no se especifica la lista exacta.
-- Longitud de contexto extendida: 262144 tokens nativos, adecuado para tareas con documentos largos.
-- No incluye visión en este artefacto: el vision tower del modelo base no se incluye, solo texto.
+- Generación de texto conversacional con plantilla de chat embebida, byte-idéntica al `chat_template.jinja` del repositorio (sha256 `9dd2fbd270fe…44e8fd235`).
+- Razonamiento explícito mediante modo `<think>`.
+- Tool calling en formato XML, con emisión de `tool_calls` compatibles con OpenAI y argumentos tipados según esquema (verificado en las pruebas de servicio).
+- Decodificación especulativa con cabeza MTP (K configurable de 1 a 8), con flujo token-idéntico a la decodificación greedy simple.
+- Soporte de serving grafo y batcheado con compuertas de exactitud por petición.
+- Capacidad de texto a texto; la torre de visión del modelo upstream no está incluida en este artefacto.
+- Capacidades multilingües: no disponible (no declaradas en la información proporcionada).
 
 ## Casos de uso
 
-- Servicio de chat con contexto largo: con 262144 tokens de contexto, puede gestionar conversaciones de asistencia al cliente con historial extenso, resumiendo documentos o manteniendo el estado de una conversación de varios días sin perder hilos.
-- Generación de código asistida en producción: su soporte de tool calling y la capacidad de razonamiento permiten integrarlo en pipelines de CI/CD para autocompletar código, generar tests o documentar APIs, con la ventaja de que la cuantización NVFP4 reduce la huella de VRAM.
-- Despliegue en hardware de consumo: al pesar 5,4 GB, cabe en GPUs de 8 GB (p. ej., RTX 3060 o 4060) o en un MacBook de 16 GB, lo que facilita prototipado local sin servidores dedicados.
-- Inferencia especulativa de baja latencia: en un servidor con RTX 5090 o similar, el motor memra puede usar la cabeza MTP para aceptar ~60% de los tokens especulados en K=3, reduciendo el número de pasos de decodificación y, por tanto, la latencia por request.
-- Agente autónomo con herramientas: gracias a la generación de `tool_calls` tipados, puede orquestar llamadas a APIs, bases de datos o scripts en entornos de automatización (por ejemplo, un bot que consulta el tiempo, calcula conversiones o ejecuta comandos).
-- Análisis de documentos largos: con 262144 tokens de contexto, puede procesar libros técnicos, informes legales o logs de sistemas en una sola pasada, extrayendo resúmenes o detectando anomalías sin necesidad de trocear el texto.
+- Despliegue de chat conversacional en GPUs Blackwell: el formato NVFP4 y el motor tiyuvta permiten servir el modelo en 5,4 GB con contexto de 262.144 tokens, adecuado para asistentes con historial largo.
+- Aceleración de inferencia en producción: la cabeza MTP injertada ofrece tasas de aceptación de 0,59 a K=3 en prompts de código y 0,45 en continuación cruda, reduciendo pasos de decodificación sin sacrificar exactitud.
+- Asistentes con tool calling: la emisión verificada de `tool_calls` con argumentos tipados permite integrar el modelo en orquestadores de agentes que consumen la interfaz de OpenAI.
+- Razonamiento multi-paso con modo thinking: el soporte de `<think>` y el contexto de 262.144 tokens lo hacen apto para tareas de análisis que requieren cadenas de razonamiento largas.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el impacto de NVFP4 frente a BF16 y Q8_0 en exactitud y aceptación especulativa sobre el mismo tronco.
+- Investigación en decodificación especulativa: la documentación de aceptación por K y por tipo de cabeza (injertada frente a enmascarada FR-Spec) permite reproducir experimentos de draft acceptance.
+- Pipelines de generación de código con verificación estricta: las compuertas de exactitud (prefill ≡ decode argmax, batched-prime ≡ tokenwise argmax) facilitan su uso donde se exige determinismo byte a byte.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor declara únicamente métricas de aceptación de decodificación especulativa, medidas con el harness de memra v0.104.1 en una RTX 5090 Laptop (térmicamente limitada, sin claims de throughput). La tabla siguiente es un extracto de los datos oficiales:
+Los datos publicados por el autor corresponden a tasas de aceptación de borrador en el arnés de exactitud, no a throughput. Se ejecutaron con el motor tiyuvta v0.104.1 sobre una RTX 5090 Laptop, con decodificación greedy y K=3.
 
-| Tarea | Métrica | Valor |
-|---|---|---|
-| MTP speculative decode, greedy K=3, prompt de código chat-templated | acceptance rate | 0,594 |
-| FR-Spec masked head (top-32768 own-gen SXC ranks), K=3 | acceptance rate | 0,556 |
-| Embedded grafted head, K=1, chat-templated code probe | acceptance rate | 0,80 |
-| Embedded grafted head, K=2, chat-templated code probe | acceptance rate | 0,71 |
-| Embedded grafted head, K=3, chat-templated code probe | acceptance rate | 0,59 |
-| Embedded grafted head, K=1, raw continuation probe | acceptance rate | 0,72 |
-| Embedded grafted head, K=2, raw continuation probe | acceptance rate | 0,57 |
-| Embedded grafted head, K=3, raw continuation probe | acceptance rate | 0,45 |
+| Cabeza | Sonda | K=1 | K=2 | K=3 |
+|---|---|---|---|---|
+| Injertada embebida | Prompt de código con plantilla de chat, 64 tokens | 0,80 | 0,71 | 0,59 |
+| Injertada embebida | Sonda de continuación cruda, 32 tokens | 0,72 | 0,57 | 0,45 |
+| Enmascarada (`frspec-sxc32768`) | Prompt de código con plantilla de chat, 64 tokens | 0,70 | 0,71 | 0,56 |
 
-Todos los resultados se obtuvieron con el gate de exactitud: la corriente especulativa es token-idéntica a la decodificación greedy simple en cada K.
+Métricas declaradas en el model-index: tasa de aceptación de 0,594 con cabeza MTP injertada a K=3 y 0,556 con cabeza enmascarada FR-Spec (top-32768 rangos SXC de generación propia) a K=3. El autor no publica cifras de tokens por segundo por limitación térmica del portátil empleado.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo GGUF pesa 5,4 GB, por lo que con overhead de ejecución cabe en una GPU de 8 GB (p. ej., RTX 3060/4060) o en un MacBook con 16 GB unificados.
-- GPU recomendadas: el motor memra requiere arquitectura Blackwell (sm_120a, RTX 50 series) para aprovechar la cuantización NVFP4 y la decodificación especulativa. Para GPUs más antiguas, se recomienda usar los GGUF oficiales BF16/Q8_0 del repo ornith-ai.
-- Opciones de despliegue: motor memra (Rust + CUDA, crates.io `memra-server`), branch NVFP4 de llama.cpp (github.com/avifenesh/llama.cpp/tree/nvfp4-imatrix-scale-search). No es compatible con llama.cpp aguas arriba ni con Ollama.
-- Latencia y throughput: no se publican cifras de tok/s en la model card. El autor indica que la RTX 5090 Laptop es térmicamente limitada y recomienda medir en el propio hardware con `run-spec` o `frspec-owngen --validate`.
-- Inferencia especulativa: con la cabeza MTP, en K=3 se aceptan ~59% de los tokens en prompts de código, lo que reduce los pasos de decodificación en aproximadamente 1,5 veces (estimación cualitativa, no medida).
+- VRAM estimada para inferencia: aproximadamente 5,4 GB de pesos en NVFP4, más overhead de contexto KV; el contexto completo de 262.144 tokens requiere planificación adicional de memoria.
+- GPU recomendadas: arquitectura Blackwell (sm_120a), como RTX 5090, por el soporte nativo de NVFP4.
+- Cabe en GPU de consumo Blackwell; en GPUs sin soporte NVFP4 no es desplegable directamente.
+- Opciones de despliegue: motor tiyuvta (v0.104.1 o superior) y la rama `nvfp4-imatrix-scale-search` de avifenesh/llama.cpp. No es compatible con llama.cpp upstream ni con Ollama; para esos entornos el autor recomienda los GGUF oficiales BF16–Q8_0 de `ornith-ai/Ornith-1.5-9B-GGUF`.
+- Latencia y throughput: no disponibles (el autor declina publicar tok/s desde una tarjeta portátil con limitación térmica).
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otros modelos de la misma categoría (tamaño 9B, contexto 262K) en la información proporcionada. El autor menciona la versión hermana Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF (también cuantizada con NVFP4 y con cabeza MTP), pero no publica benchmarks comparativos. Para el mismo modelo base, existen los GGUF oficiales BF16/Q8_0 de ornith-ai, que no incluyen cabeza MTP y son compatibles con llama.cpp upstream, pero no se ofrecen datos de rendimiento.
+| Modelo | Parametros | Contexto | Cuantizacion | MTP | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Ornith-1.5-9B-NVFP4-MTP-GGUF | 9B (32.768 en safetensors) | 262.144 | NVFP4 + Q5_K | Injertada desde Qwen3.5-9B | MIT | Hugging Face, motor tiyuvta y rama llama.cpp |
+| ornith-ai/Ornith-1.5-9B (base) | 9B | 262.144 | BF16 | Declarada en config pero sin tensores | MIT | Hugging Face |
+| ornith-ai/Ornith-1.5-9B-GGUF (oficial) | 9B | 262.144 | BF16–Q8_0 | No incluida | MIT | Hugging Face, llama.cpp upstream y Ollama |
+| tiyuvta/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF (hermano) | 35B (MoE, A3B) | no disponible | NVFP4 + Q5_K | Injertada | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- La cabeza MTP es un injerto de Qwen3.5-9B, no entrenada específicamente para Ornith-1.5-9B. Aunque no altera la salida (el token especulado siempre se verifica), la tasa de aceptación puede ser subóptima en comparación con una cabeza entrenada para este modelo.
-- El artefacto no incluye el vision tower del modelo base: solo sirve texto. Si se necesita entrada de imagen, hay que usar el checkpoint original de Ornith-1.5-9B.
-- Compatibilidad restringida: el formato NVFP4 no es soportado por llama.cpp upstream ni por Ollama. Requiere el motor memra o la rama específica de llama.cpp. Para uso general, se recomienda los GGUF oficiales BF16/Q8_0.
-- Licencia dual: el tronco es MIT, pero la cabeza MTP injertada es Apache-2.0. La combinación resultante debe distribuirse cumpliendo ambas licencias (Apache-2.0 para la parte injertada).
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa. En entornos de producción con tool calling, se recomienda validar las salidas críticas.
-- Sin benchmarks estándar: no hay resultados de MMLU, HumanEval, etc., por lo que es difícil comparar calidad con otros modelos de 9B.
-- La cuantización NVFP4 a 4-bit puede introducir degradación de calidad en tareas de precisión, aunque el autor reporta que la stream especulativa es exacta a la decodificación greedy del modelo cuantizado (no del BF16 original).
+- La cabeza MTP es un injerto de Qwen3.5-9B, no la cabeza original de Ornith; el autor lo declara explícitamente y advierte que solo afecta a aceptación y velocidad, nunca a la salida.
+- NVFP4 no es un tipo de tensor soportado por llama.cpp upstream: sin la rama específica o el motor tiyuvta, el archivo no es utilizable.
+- El artefacto es solo texto a texto; la torre de visión del modelo upstream no está incluida.
+- No se publican cifras de throughput ni latencia; las tasas de aceptación provienen de un portátil con limitación térmica y no deben extrapolarse como rendimiento.
+- Los resultados de benchmarks están marcados como no verificados (`verified: false`) en el model-index.
+- Riesgo de alucinación y sesgos: no disponible (no documentados en la información proporcionada).
+- Idiomas soportados: no disponible; conviene validar el comportamiento multilingüe antes de producción.
+- La licencia MIT del artefacto convive con la Apache-2.0 de los tensores MTP injertados; verificar la compatibilidad en despliegues comerciales.
+- El contexto de 262.144 tokens exige gestión cuidadosa de la memoria KV en producción.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/Avifenesh/Ornith-1.5-9B-NVFP4-MTP-GGUF
+- Hugging Face: https://huggingface.co/Avifenesh/Ornith-1.5-9B-NVFP4-MTP-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- GGUF oficiales del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
-- Hermana 35B-A3B: https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF
-- Motor de inferencia memra: https://github.com/avifenesh/memra
-- Branch NVFP4 de llama.cpp: https://github.com/avifenesh/llama.cpp/tree/nvfp4-imatrix-scale-search
-- Inferencia alojada: https://inference.tiyuvta.ai
-- Blog oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
-- Guía para ejecutar Ornith 1.5 localmente: https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally
-- Perfil del autor: https://github.com/avifenesh/avifenesh
+- GGUF oficiales del base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
+- Hermano de 35B: https://huggingface.co/tiyuvta/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF
+- Discusión de origen del artefacto: https://huggingface.co/tiyuvta/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF/discussions/1
+- Rama de llama.cpp con soporte NVFP4: https://github.com/avifenesh/llama.cpp/tree/nvfp4-imatrix-scale-search
+- Motor de serving tiyuvta: https://tiyuvta.ai
+- Cabeza MTP de origen: https://huggingface.co/Qwen/Qwen3.5-9B

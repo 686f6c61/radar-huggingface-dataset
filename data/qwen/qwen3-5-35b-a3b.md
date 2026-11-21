@@ -2,103 +2,105 @@
 
 ## Resumen
 
-Qwen3.5-35B-A3B es un modelo de lenguaje multimodal (texto e imagen) desarrollado por el equipo Qwen de Alibaba, publicado en febrero de 2026. Se trata de la variante post-entrenada (chat/instrucciones) del modelo base Qwen/Qwen3.5-35B-A3B-Base, y representa la apuesta de Qwen por una arquitectura híbrida eficiente que combina Gated Delta Networks con un Mixture-of-Experts disperso, logrando 35 mil millones de parámetros totales pero activando solo 3 mil millones por token. Esta combinación permite un rendimiento comparable a modelos densos mucho mayores con un coste de inferencia significativamente reducido.
+Qwen3.5-35B-A3B es un modelo multimodal de tipo causal language model con codificador de visión, desarrollado por el equipo Qwen de Alibaba. Se trata de un modelo de mezcla de expertos (MoE) con 35.000 millones de parámetros totales y aproximadamente 3.000 millones activos por token, lo que lo sitúa en una categoría de eficiencia computacional muy atractiva para despliegue en producción. Forma parte de la familia Qwen3.5, que según el autor integra fusión temprana de tokens multimodales y una arquitectura híbrida basada en Gated Delta Networks combinadas con MoE disperso.
 
-El modelo destaca por su fusión temprana de tokens multimodales (visión y lenguaje) durante el entrenamiento, lo que le permite superar a los modelos Qwen3-VL en razonamiento, código, agentes y comprensión visual, según los datos publicados por el autor. Soporta una ventana de contexto nativa de 262 144 tokens, extensible hasta aproximadamente 1 010 000 tokens, y cubre 201 idiomas y dialectos. Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo convierte en una opción atractiva para despliegues en producción.
+El modelo resuelve tareas de generación de texto, razonamiento, código, matemáticas y comprensión visual dentro de un único checkpoint, con una longitud de contexto nativa de 262.144 tokens extensible hasta 1.010.000. Su licencia Apache 2.0 y su compatibilidad con Transformers, vLLM, SGLang y KTransformers lo convierten en una opción relevante para equipos que necesitan un modelo multimodal de gran contexto sin costes de licencia restrictivos. La model card indica soporte para 201 idiomas y dialectos, aunque la ficha de Hugging Face no detalla la lista concreta.
 
-La relevancia actual de Qwen3.5-35B-A3B radica en su equilibrio entre capacidad y eficiencia: con solo 3B parámetros activos, ofrece una latencia y un coste de inferencia propios de un modelo pequeño, pero con capacidades de razonamiento y conocimiento que rivalizan con modelos de 100B+ parámetros, como reflejan sus resultados en MMLU-Pro (86.1). Además, su soporte nativo de visión y su arquitectura híbrida lo posicionan como una alternativa viable a modelos propietarios como GPT-5-mini en escenarios donde el coste y la soberanía de datos son críticos.
+La relevancia actual del modelo radica en su relación entre parámetros activos y capacidades: al activar solo 3B de los 35B totales, ofrece un throughput potencialmente alto con requisitos de memoria moderados en comparación con modelos densos de tamaño similar. Además, el autor ha publicado una versión posterior (Qwen3.6-35B-A3B) y una variante alojada en Alibaba Cloud Model Studio bajo el nombre Qwen3.5-Flash, lo que indica una línea de producto activa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Causal Language Model con Vision Encoder; híbrida: Gated Delta Networks + Gated Attention + Mixture-of-Experts (MoE) |
-| Parametros totales | 35 951 822 704 (35B) |
-| Parametros activos | 3B (8 expertos enrutados + 1 compartido de 256) |
-| Longitud de contexto | 262 144 tokens nativos; extensible hasta ~1 010 000 tokens |
-| Tipos de cuantizacion | No especificado oficialmente; compatible con cuantizacion estandar de Transformers (por ejemplo, bitsandbytes, GPTQ, AWQ) y GGUF via llama.cpp |
-| Idiomas soportados | 201 idiomas y dialectos (segun el autor) |
+| Arquitectura | Causal Language Model con codificador de visión; híbrida Gated DeltaNet + Gated Attention con MoE disperso |
+| Parametros totales | 35.951.822.704 (≈35B) |
+| Parametros activos | ≈3B (8 expertos enrutados + 1 compartido de 256 totales) |
+| Longitud de contexto | 262.144 tokens nativa; extensible hasta 1.010.000 tokens |
+| Tipos de cuantizacion | no disponible (la model card no detalla cuantizaciones oficiales; el repo contiene safetensors en precisión original) |
+| Idiomas soportados | 201 idiomas y dialectos según la model card; lista concreta no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compatible con Transformers, vLLM, SGLang, KTransformers) |
+| Formato de pesos | safetensors (Transformers); compatible con vLLM, SGLang y KTransformers |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.5-35B-A3B emplea una arquitectura híbrida que combina dos mecanismos de atención: Gated Delta Networks (atención lineal con estado recurrente) y Gated Attention (atención completa con cabezas Q/KV reducidas). La configuración de capas sigue un patrón de 10 bloques repetidos, donde cada bloque contiene 3 subcapas de Gated DeltaNet seguidas de 1 subcapa de Gated Attention, y cada subcapa va acompañada de su propio MoE. Este diseño busca capturar dependencias de largo alcance con la atención completa de forma esporádica, mientras que la atención lineal maneja la mayor parte del procesamiento, reduciendo el coste computacional por token.
+La arquitectura combina dos mecanismos de atención en un layout de 40 capas organizado como 10 bloques de la forma `3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)`. Las Gated DeltaNet emplean atención lineal con 32 cabezas para V y 16 para QK, dimensión de cabeza 128; las capas de Gated Attention usan 16 cabezas para Q y 2 para KV con dimensión 256 y RoPE de 64 dimensiones. La dimensión oculta es 2048 y el embedding de tokens es 248.320 (con padding). El componente MoE consta de 256 expertos con dimensión intermedia 512, de los cuales se activan 8 enrutados más 1 compartido por token. El modelo incorpora MTP (multi-token prediction) entrenado con múltiples pasos.
 
-El MoE cuenta con 256 expertos, de los cuales se activan 8 enrutados más 1 compartido por token. Cada experto tiene una dimensión intermedia de 512, lo que mantiene la huella de memoria de los pesos activos en solo 3B parámetros. El modelo también incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos, lo que mejora la eficiencia de decodificación y la calidad de las predicciones.
-
-El entrenamiento se realizó en dos etapas: pre-entrenamiento y post-entrenamiento. En la etapa de post-entrenamiento, el equipo aplicó Reinforcement Learning (RL) escalado a entornos con millones de agentes y distribuciones de tareas progresivamente más complejas, una técnica que el autor denomina "Scalable RL Generalization". Además, se utilizó fusión temprana de tokens multimodales (imagen y texto) durante el pre-entrenamiento, logrando una eficiencia de entrenamiento multimodal cercana al 100% comparada con el entrenamiento solo de texto. No se han publicado detalles específicos sobre el volumen de tokens de entrenamiento ni la composición exacta del dataset.
+El entrenamiento se realizó en dos fases, pre-entrenamiento y post-entrenamiento, con fusión temprana sobre tokens multimodales según el autor. La model card menciona escalado de reinforcement learning en entornos de millones de agentes con distribuciones de tareas progresivamente complejas, así como una infraestructura de entrenamiento asíncrona para RL. No se especifica en la información disponible el número exacto de tokens de entrenamiento ni la composición detallada del dataset. El modelo base es Qwen/Qwen3.5-35B-A3B-Base, y este checkpoint corresponde al modelo post-entrenado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo: soporta tareas de conocimiento, matemáticas, lógica y razonamiento multi-paso con un rendimiento en MMLU-Pro de 86.1.
-- Comprensión y generación multimodal: procesa imágenes junto con texto, permitiendo descripción de imágenes, respuesta a preguntas visuales y razonamiento sobre contenido gráfico.
-- Generación de código: el autor indica que supera a Qwen3-VL en benchmarks de código, aunque no se proporcionan cifras concretas en la información disponible.
-- Tool calling / function calling: compatible con el ecosistema Qwen y la API de Alibaba Cloud Model Studio; la versión alojada (Qwen3.5-Flash) incluye herramientas integradas oficiales.
-- Capacidades de agente y razonamiento multi-paso: entrenado con RL en entornos multi-agente, lo que sugiere robustez en tareas de planificación y ejecución de acciones.
-- Soporte multilingüe: cobertura de 201 idiomas y dialectos, con comprensión de matices culturales y regionales.
-- Ventana de contexto larga: 262 144 tokens nativos, ampliable hasta ~1M, adecuado para documentos extensos, análisis de código fuente grande o conversaciones de muchos turnos.
-- Multi-Token Prediction (MTP): mejora la velocidad de decodificación y la coherencia en generaciones largas.
+- Generación de texto y razonamiento multi-turno con contexto largo (hasta 262K tokens nativos, 1M extensible).
+- Comprensión de imágenes y texto (pipeline `image-text-to-text`) mediante codificador de visión con fusión temprana.
+- Razonamiento matemático y generación de código, según los benchmarks publicados por el autor.
+- Capacidades de agente y razonamiento multi-paso, con entrenamiento RL orientado a entornos de agentes.
+- Soporte multilingüe amplio: 201 idiomas y dialectos según la model card.
+- Compatibilidad con tool calling y function calling a través de los stacks de despliegue soportados (vLLM, SGLang, Transformers), aunque la model card no detalla el formato exacto de las herramientas.
+- Modo de predicción multi-token (MTP) que puede habilitar decodificación especulativa en los motores de inferencia compatibles.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con su ventana de contexto de 262K tokens y soporte multilingüe, puede gestionar conversaciones multi-turno con historial extenso, manteniendo el contexto de interacciones previas durante horas. Su bajo coste por token (solo 3B activos) permite desplegarlo en entornos de alto volumen sin disparar los costes de inferencia.
-- Asistente de programación integrado en IDE: el modelo puede completar código, explicar fragmentos, generar tests y refactorizar, aprovechando su capacidad de razonamiento y su entrenamiento en código. Su soporte de tool calling permite conectarlo a APIs de repositorios, linters o sistemas de CI/CD.
-- Análisis de documentos largos (legales, financieros, técnicos): la ventana de 262K tokens permite procesar contratos completos, informes anuales o manuales técnicos en una sola pasada, extrayendo cláusulas, resumiendo secciones y respondiendo preguntas específicas sobre el contenido.
-- Sistemas RAG (Retrieval-Augmented Generation) de bajo coste: al ser un MoE con 3B activos, puede servir como generador en pipelines RAG donde se necesita alta calidad de razonamiento sobre documentos recuperados, pero con latencia y coste reducidos frente a modelos densos de 30B+.
-- Agentes autónomos y automatización de tareas: su entrenamiento con RL multi-agente y su soporte de function calling lo hacen adecuado para orquestar flujos de trabajo complejos, como la gestión de correos, la programación de citas o la integración con herramientas externas mediante APIs.
-- Análisis de imágenes y documentos escaneados: al ser multimodal, puede extraer información de capturas de pantalla, diagramas, gráficos o formularios escaneados, combinando el texto visible con el contexto visual para tareas como la verificación de facturas o la interpretación de figuras técnicas.
-- Traducción y localización: con 201 idiomas soportados, puede servir como motor de traducción automática con conciencia cultural, adecuado para plataformas de contenido global o servicios de atención al cliente multilingüe.
+- Atención al cliente multimodal: el modelo puede procesar capturas de pantalla, documentos escaneados o imágenes enviadas por el usuario junto con texto en conversaciones multi-turno, aprovechando la ventana de 262K tokens para mantener historial extenso sin truncamiento.
+- Análisis de documentación técnica extensa: con contexto de hasta 1M tokens (extensible), es adecuado para ingerir repositorios completos, manuales o expedientes y responder preguntas con referencias cruzadas.
+- Generación de código en pipelines de CI/CD: al ser compatible con vLLM y SGLang, puede integrarse como servicio de generación o revisión de código, con la ventaja de activar solo 3B de parámetros por token para reducir coste por petición.
+- Agentes autónomos multi-paso: el entrenamiento RL en entornos de agentes y el soporte de tool calling lo hacen apto para orquestación de tareas con llamadas a APIs, navegación web o ejecución de comandos en sandbox.
+- Procesamiento de imágenes en flujos de trabajo empresariales: extracción de información de facturas, formularios o gráficos combinada con razonamiento textual, sin necesidad de un modelo de visión separado.
+- Despliegue multilingüe global: con 201 idiomas declarados, puede usarse como modelo único para atención al cliente o moderación de contenido en mercados con múltiples lenguas y dialectos.
+- Investigación en eficiencia de MoE: su relación 35B/3B y la arquitectura híbrida Gated DeltaNet lo convierten en un objeto de estudio para experimentos de decodificación especulativa y optimización de throughput.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos de benchmark publicados en la información disponible corresponden a la sección Knowledge de la tabla del autor, que incluye MMLU-Pro. No se han proporcionado resultados para otras categorías (razonamiento, código, matemáticas, agentes, visión) en la documentación accesible.
+La model card incluye una tabla de resultados comparativos. A continuación se reproducen los valores disponibles en la información proporcionada (categoría Knowledge, MMLU-Pro):
 
 | Modelo | MMLU-Pro |
 |---|---|
-| GPT-5-mini (2025-08-07) | 83.7 |
+| GPT-5-mini 2025-08-07 | 83.7 |
 | GPT-OSS-120B | 80.8 |
 | Qwen3-235B-A22B | 84.4 |
 | Qwen3.5-122B-A10B | 86.7 |
 | Qwen3.5-27B | 86.1 |
-| **Qwen3.5-35B-A3B** | **86.1** |
+| Qwen3.5-35B-A3B | no disponible en el fragmento proporcionado |
 
-El modelo iguala a Qwen3.5-27B (denso) y supera a GPT-5-mini y GPT-OSS-120B en conocimiento general, con una fracción de los parámetros activos. No se dispone de datos adicionales para otras métricas como HumanEval, GSM8K o benchmarks de visión.
+El resto de la tabla de benchmarks (razonamiento, código, matemáticas, visión) no está incluido en la información disponible; solo se ha podido extraer la fila MMLU-Pro. No se han publicado en la información proporcionada resultados de HumanEval, GSM8K ni otros benchmarks más allá de los citados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al ser un modelo MoE con 35B parámetros totales, todos los pesos deben cargarse en memoria aunque solo se activen 3B por token. En FP16 se necesitan aproximadamente 70 GB de VRAM; en cuantización 8-bit (~35 GB) o 4-bit (~18 GB) se reduce significativamente.
-- GPU recomendadas: A100 80GB o H100 para FP16 sin cuantizar; RTX 4090 (24 GB) o RTX 6000 Ada (48 GB) con cuantización 4-bit u 8-bit; también es viable en GPUs de datacenter con memoria compartida (por ejemplo, 2x A10 24GB).
-- En consumer GPU: sí, cabe en una RTX 4090 con cuantización 4-bit (GGUF o GPTQ), aunque con limitaciones de velocidad y sin capacidad para contexto máximo.
-- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, SGLang y KTransformers. También se puede servir mediante llama.cpp/Ollama con pesos GGUF (si la comunidad los genera). La API gestionada de Alibaba Cloud Model Studio ofrece la versión Qwen3.5-Flash con 1M de contexto y herramientas integradas.
-- Latencia y throughput: no se han publicado cifras oficiales. Dado que solo se activan 3B parámetros por token, el throughput esperado es similar al de un modelo denso de 3B, pero con la latencia de memoria de un modelo de 35B. En la práctica, con vLLM y batching, se pueden alcanzar cientos de tokens por segundo en GPUs de datacenter, aunque esto depende de la implementación de los kernels de Gated DeltaNet.
+- VRAM estimada para inferencia en precisión original (BF16): aproximadamente 72 GB solo para pesos, más overhead de KV cache y activaciones; requiere GPUs de 80 GB (A100, H100) o múltiples GPUs menores.
+- Cuantización a 8 bits: entorno a 36-40 GB, viable en una A100 40GB o en dos RTX 4090 (24 GB cada una) con tensor parallelism.
+- Cuantización a 4 bits: entorno a 18-22 GB, potencialmente desplegable en una única RTX 4090 o RTX 5090, aunque la model card no publica cuantizaciones oficiales.
+- Dado que solo se activan ~3B parámetros por token, el coste computacional por token es bajo en comparación con modelos densos de 35B, lo que favorece el throughput en GPUs con ancho de banda moderado.
+- Opciones de despliegue soportadas según la model card: Hugging Face Transformers, vLLM, SGLang y KTransformers. No se menciona soporte explícito de llama.cpp u Ollama en la información disponible.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | MMLU-Pro | Licencia | Modalidad |
-|---|---|---|---|---|---|---|
-| Qwen3.5-35B-A3B | 35B | 3B | 262K (ext. ~1M) | 86.1 | Apache 2.0 | Texto + imagen |
-| Qwen3.5-27B | 27B | 27B (denso) | no disponible | 86.1 | Apache 2.0 | Texto + imagen |
-| Qwen3-235B-A22B | 235B | 22B | no disponible | 84.4 | Apache 2.0 | Texto |
-| GPT-OSS-120B | 120B | no disponible | no disponible | 80.8 | Apache 2.0 | Texto |
-| GPT-5-mini | no disponible | no disponible | no disponible | 83.7 | Propietaria | Texto |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | MMLU-Pro | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.5-35B-A3B | 35B / ~3B | 262K nativo, 1M extensible | Apache 2.0 | no disponible | Hugging Face, API Alibaba Cloud |
+| Qwen3.5-27B | 27B (denso, según denominación) | no disponible | no disponible | 86.1 | familia Qwen3.5 |
+| Qwen3.5-122B-A10B | 122B / ~10B | no disponible | no disponible | 86.7 | familia Qwen3.5 |
+| Qwen3-235B-A22B | 235B / ~22B | no disponible | no disponible | 84.4 | generación anterior |
+| GPT-OSS-120B | 120B | no disponible | no disponible | 80.8 | no disponible |
 
-Qwen3.5-35B-A3B ofrece el mismo rendimiento en MMLU-Pro que Qwen3.5-27B (denso) pero con 9 veces menos parámetros activos, lo que reduce el coste por token. Frente a Qwen3-235B-A22B, consigue una puntuación superior con una fracción de los parámetros totales. Comparado con GPT-5-mini, lo supera en conocimiento general con una licencia abierta y despliegue local.
+La comparativa se limita a los datos de la tabla de la model card. No se dispone de información sobre contextos, licencias o disponibilidad de los modelos alternativos más allá de lo indicado.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en tareas de razonamiento factual o cuando se le pide información no presente en sus datos de entrenamiento. No se han publicado evaluaciones específicas de sesgos para este modelo.
-- Limitaciones de contexto: aunque la ventana nativa es de 262K tokens, el rendimiento puede degradarse en contextos cercanos al máximo. La extensión hasta 1M tokens puede requerir técnicas de interpolación posicional que afecten a la calidad.
-- Riesgo en producción: al ser un modelo relativamente reciente (febrero de 2026), su ecosistema de herramientas y kernels optimizados (especialmente para Gated DeltaNet) puede ser menos maduro que el de arquitecturas transformer clásicas. Se recomienda validar el rendimiento en el hardware objetivo antes de un despliegue masivo.
-- Idiomas: aunque se declaran 201 idiomas, la calidad puede variar significativamente entre lenguas de alto y bajo recurso. No se han publicado métricas desglosadas por idioma.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones, pero los pesos del modelo base (Qwen3.5-35B-A3B-Base) y los datos de entrenamiento no se distribuyen; el usuario debe verificar el cumplimiento de las condiciones de uso de Alibaba Cloud si utiliza la API gestionada.
-- Dependencia de hardware: para explotar todo el potencial del MoE (bajo coste por token) se requiere una implementación eficiente de los kernels de enrutamiento y atención lineal. Sin estas optimizaciones, el modelo puede comportarse como un denso de 35B en términos de memoria y latencia.
+- Sesgos conocidos: la model card no documenta sesgos específicos; al ser un modelo entrenado con datos web a gran escala, es probable que herede sesgos presentes en esos datos, pero no se aporta evidencia concreta.
+- Riesgo de alucinación: no se publican evaluaciones de factualidad ni tasas de alucinación en la información disponible.
+- Limitaciones de contexto: aunque el contexto nativo es de 262K tokens y extensible a 1M, el rendimiento en ventanas extremas puede degradarse; no se aportan métricas de recall en contexto largo.
+- Idiomas: se declaran 201 idiomas, pero no se detalla la calidad por idioma ni la lista completa; el rendimiento en lenguas minoritarias es desconocido.
+- Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero se recomienda revisar el archivo LICENSE del repositorio por si incluye términos adicionales.
+- Producción: el autor ha publicado una versión posterior (Qwen3.6-35B-A3B), lo que sugiere que este checkpoint puede quedar obsoleto; además, la variante alojada Qwen3.5-Flash ofrece 1M de contexto por defecto y herramientas integradas, lo que puede ser preferible para despliegues gestionados.
+- No se detallan cuantizaciones oficiales ni recetas de despliegue en la información proporcionada, lo que obliga a validar el comportamiento en cuantizaciones de terceros antes de usarlas en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
-- Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
-- Demo en Qwen Chat: https://chat.qwen.ai
-- API gestionada (Alibaba Cloud Model Studio): https://modelstudio.alibabacloud.com/
-- Guía de usuario de la API: https://www.alibabacloud.com/help/en/model-studio/text-generation
+- Versión posterior: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Licencia: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE
+- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
+- Qwen Chat: https://chat.qwen.ai
+- Qwen home: https://qwen.ai/home
+- Alibaba Cloud Model Studio: https://modelstudio.alibabacloud.com/
+- Guía de usuario de Model Studio: https://www.alibabacloud.com/help/en/model-studio/text-generation

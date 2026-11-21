@@ -2,99 +2,136 @@
 
 ## Resumen
 
-El repositorio Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer es un artefacto de pesos publicado en Hugging Face por el usuario Yuuyuuyuuyuu, con licencia Apache 2.0 y un tamano de repositorio de 23,7 GB. Fue creado el 14 de septiembre de 2026 y actualizado ese mismo dia; en el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer es un lanzamiento de la comunidad publicado por el usuario Yuuyuuyuuyuu sobre el checkpoint `ukisai/Swift-Qwen3.8-27b`, que a su vez deriva de la familia Qwen3.8-27B. No es un checkpoint oficial de UkisAI ni de OrcaRouter: se trata de una transformacion de direccion unica al estilo OrcaRouter aplicada sobre el modelo Swift, empaquetada en formato nativo NInfer con pesos mixtos NVFP4/FP8 y una cabeza de decodificacion especulativa DFlash2 embebida con ventana K=7.
 
-La model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0 y carece de descripcion, arquitectura, datos de entrenamiento, idiomas soportados o resultados de evaluacion. No se dispone de informacion verificable sobre el pipeline, la longitud de contexto, los formatos de cuantizacion ni el proceso de entrenamiento. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados pertenecen a dominios deportivos (NFL) y son completamente irrelevantes.
+El artefacto pesa 23,72 GB (22,09 GiB) y esta pensado exclusivamente para servirse con el runtime NInfer, no con Transformers ni llama.cpp. La cabeza DFlash2 procede del companero upstream de Qwen3.8 y no fue reentrenada para Swift, por lo que la tasa de aceptacion especulativa depende del tipo de carga de trabajo. El modelo se distribuye como "uncensored" y con licencia `swift-open-license-v1.0`.
 
-El identificador del repositorio sugiere, por convencion de nomenclatura, que se trata de una variante derivada de la familia Qwen3 con aproximadamente 27.000 millones de parametros, algun mecanismo de enrutamiento denominado "OrcaRouter", cuantizacion NVFP4 y un componente "DFlash2" o "ninfer". Ninguno de estos extremos puede confirmarse con la informacion disponible y, por tanto, se marcan como no disponibles en el resto de la ficha. Se recomienda precaucion extrema antes de considerar este artefacto para cualquier uso en produccion.
+Su relevancia actual es practica: demuestra un perfil de servicio de alto rendimiento sobre una GPU de consumo (RTX 5090) con cuantizacion de 4 bits en formato NVFP4 y decodificacion especulativa integrada en el propio fichero, sin necesidad de descargar un modelo borrador separado. Los benchmarks publicados miden rendimiento de serving, no calidad del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre del repositorio sugiere una base de la familia Qwen3, sin confirmar) |
-| Parametros totales | no disponible (el nombre del repositorio sugiere 27B, sin confirmar) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el nombre del repositorio menciona "NVFP4", sin confirmar) |
+| Arquitectura | Transformer (familia Qwen3.8-27B); transformacion de direccion unica estilo OrcaRouter sobre el checkpoint Swift |
+| Parametros totales | 27B (segun denominacion de la familia; no se detalla desglose) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | Hasta 131.072 tokens en el benchmark de corpus; 16.384 en las pruebas de throughput; configurable via `--max-context` |
+| Tipos de cuantizacion | Mixta NVFP4/FP8 (pesos); KV cache en FP8 o INT8-group64 segun configuracion |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (el repositorio ocupa 23,7 GB; el sufijo "ninfer" podria indicar un formato de inferencia especifico, sin confirmar) |
+| Licencia | swift-open-license-v1.0 (etiquetada como `other`) |
+| Formato de pesos | `.ninfer` (contenedor NInfer v2); no compatible con GGUF, safetensors ni llama.cpp |
+| Decodificacion especulativa | DFlash2 embebida, K=7 recomendado |
+| Tamano del fichero | 23,72 GB (22,09 GiB) |
+| SHA-256 | `b57bb82f6c43fa4bba3bcb883f45ccff12b81fd461502a37c79d78c3ba7a979b` |
+| Vision | Soportada mediante flag `--vision` en NInfer |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los resultados de busqueda disponibles. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante, asi como el numero de capas, dimensiones ocultas, mecanismos de atencion empleados o si incorpora tecnicas como atencion lineal o decodificacion especulativa.
+La informacion disponible no detalla la arquitectura interna mas alla de la pertenencia a la familia Qwen3.8-27B. El modelo base `ukisai/Swift-Qwen3.8-27b` es un fine-tune de esa familia, y este lanzamiento aplica sobre el una transformacion de direccion unica al estilo OrcaRouter. No se especifican volumen de tokens de entrenamiento, composicion del dataset ni si hubo etapas de RLHF o DPO.
 
-Tampoco existe informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. Dado que el nombre del repositorio apunta a una posible derivacion de Qwen3, es plausible que el artefacto consista en una cuantizacion o reformateo de pesos de un modelo base preexistente en lugar de un entrenamiento desde cero, pero esta hipotesis no puede verificarse con los datos disponibles.
+La innovacion tecnica destacable es el empaquetado: pesos mixtos NVFP4/FP8 en un contenedor NInfer v2 con una cabeza especulativa DFlash2 integrada en el propio fichero del modelo. Esto elimina la necesidad de gestionar un modelo borrador aparte. La contrapartida es que la cabeza no fue reentrenada para este checkpoint concreto, de modo que la aceptacion especulativa varia con el dominio: en las pruebas publicadas va del 16,7 % en generacion de relatos al 81,2 % en salidas estructuradas. El runtime requiere una build de NInfer compatible con contenedores v2; las builds actuales solo v3 no cargan este fichero directamente.
 
 ## Capacidades
 
-No se ha publicado informacion sobre las capacidades del modelo en la documentacion accesible. No es posible confirmar ni desmentir ninguno de los siguientes extremos:
-
-- Generacion de texto, razonamiento, codigo o matematicas.
-- Soporte de tool calling o function calling.
-- Soporte de agentes y razonamiento multi-paso.
-- Capacidades multilingues y cobertura de idiomas concreta.
-- Modo de razonamiento explicito ("thinking mode"), vision, audio u otras modalidades.
-- Comportamiento en conversaciones multi-turno y gestion de contexto largo.
-
-Toda afirmacion al respecto seria especulativa. Para determinar las capacidades reales seria necesario consultar la documentacion del modelo base del que derive el artefacto, extremo que no se especifica.
+- Generacion de texto en modo chat y completado, con soporte de razonamiento de cadena larga (se documentan generaciones de hasta 65.536 tokens).
+- Entrada de imagen mediante el flag `--vision` del servidor NInfer.
+- Decodificacion especulativa DFlash2 integrada con ventana K=7, sin modelo borrador externo.
+- Servicio HTTP mediante `ninfer-serve` en host y puerto configurables.
+- Contexto largo configurable, validado hasta 131.072 tokens en el benchmark de corpus.
+- Perfil "uncensored": el autor lo etiqueta explicitamente como tal, sin detallar el alcance de la relajacion de filtros.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente o razonamiento multi-paso: no disponibles en la informacion proporcionada.
+- Cobertura multilingue: no disponible; el benchmark incluye una carga de traduccion, pero no se enumeran idiomas.
 
 ## Casos de uso
 
-Los siguientes escenarios se plantean unicamente como aplicaciones potenciales de un modelo de lenguaje de aproximadamente 27.000 millones de parametros, condicionados a que se verifiquen previamente sus capacidades reales, su licencia heredada y su calidad. No deben interpretarse como casos de uso confirmados para este repositorio concreto.
-
-- Asistencia conversacional multi-turno: si se confirma una ventana de contexto amplia, el modelo podria gestionar dialogos extensos con historial acumulado en aplicaciones de atencion al cliente, aunque la ausencia de datos sobre contexto maximo impide dimensionar la memoria necesaria.
-- Generacion de codigo en pipelines de integracion continua: un modelo de 27B suele ser suficiente para tareas de autocompletado, generacion de tests y revision de parches, siempre que se valide su calidad en benchmarks de codigo, hoy inexistentes.
-- Extraccion estructurada de informacion: conversion de documentos no estructurados a JSON o esquemas definidos, una tarea habitual para modelos de este tamano con soporte de salidas guiadas.
-- Resumen y sintesis de documentacion tecnica: condensacion de manuales, informes o actas extensas, aprovechando un hipotetico contexto largo.
-- Clasificacion y enrutado de tickets: etiquetado automatico de incidencias por categoria y prioridad en sistemas de soporte, con posible uso como componente de un enrutador previo.
-- Generacion aumentada por recuperacion (RAG): integracion como motor de generacion en arquitecturas RAG sobre bases de conocimiento internas, con verificacion de citas.
-- Traduccion automatica asistida: traduccion de textos tecnicos entre idiomas, supeditada a la confirmacion de las lenguas realmente soportadas.
-- Prototipado de agentes con herramientas: si el modelo base dispone de function calling, podria emplearse en flujos de automatizacion que invoquen APIs externas.
+- Generacion de salidas estructuradas (JSON, esquemas): es la carga con mejor rendimiento medida, 387,9 tok/s y 81,2 % de aceptacion especulativa, lo que la hace adecuada para extraccion de datos y rellenado de formularios en pipelines automatizados.
+- Generacion de codigo en produccion: 277,4 tok/s y 53,9 % de aceptacion en la carga de codigo; encaja en asistentes de IDE o revision automatizada siempre que el backend sea NInfer.
+- Traduccion automatica por lotes: 258,8 tok/s y 48,9 % de aceptacion en la carga de traduccion del corpus de referencia, con contexto largo para documentos completos.
+- Razonamiento largo con requisitos de latencia: las pruebas AIME sostienen entre 206,9 y 330,2 tok/s en generaciones de decenas de miles de tokens, util para analisis de documentos extensos o generacion de informes.
+- Servicio local en estacion de trabajo con GPU de consumo: el fichero de 23,72 GB y los 475,58 tok/s de generacion a 512 tokens de prompt permiten desplegar un asistente privado en una RTX 5090 sin infraestructura de centro de datos.
+- Procesamiento de imagenes con texto: con `--vision` activado, el modelo puede recibir imagenes junto al prompt para tareas de descripcion o extraccion de informacion, aunque no se publican metricas de calidad para vision.
+- Experimentacion con decodificacion especulativa: la aceptacion medida por dominio (16,7 % a 81,2 %) sirve para evaluar el impacto de DFlash2 en cargas propias antes de adoptarlo en produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra suite, y la busqueda web no ha recuperado documentacion tecnica asociada al repositorio. No se dispone, por tanto, de datos comparativos que permitan situar el modelo frente a alternativas de su categoria.
+Los datos publicados miden rendimiento de serving, no calidad del modelo. Fueron obtenidos en una RTX 5090 conectada por PCIe 5.0 x8 (no x16), sin correccion posterior.
+
+Throughput nativo con `ninfer_bench` (DFlash2 K=7, 128 tokens generados, KV en BF16, contexto 16.384, prefilling en bloques de 512, revision `d4929686`):
+
+| Tokens de prompt | Generacion | Prefill | Primer token | Peticion total |
+| ---: | ---: | ---: | ---: | ---: |
+| 512 | 475,58 tok/s | 9.756,06 tok/s | 0,0525 s | 0,3198 s |
+| 4.096 | 468,34 tok/s | 9.099,31 tok/s | 0,4502 s | 0,7216 s |
+
+Benchmark de corpus de 75 peticiones (concurrencia 1, contexto 131.072, KV INT8-group64, temperatura 0,6, top-p 0,95, top-k 20, revision `03177b91`):
+
+| Metrica | Resultado |
+| --- | ---: |
+| Peticiones completadas | 75 / 75 |
+| Peticiones fallidas | 0 |
+| Throughput de decodificacion del corpus | 217,0 tok/s |
+| Aceptacion DFlash2 | 40,9 % |
+| Tokens de completion | 782.783 |
+| Makespan total | 3.607,69 s |
+
+Desglose por carga de trabajo:
+
+| Carga | Muestras | Throughput | Aceptacion DFlash2 |
+| --- | ---: | ---: | ---: |
+| Codigo | 15 | 277,4 tok/s | 53,9 % |
+| Relato | 15 | 126,9 tok/s | 16,7 % |
+| Traduccion | 15 | 258,8 tok/s | 48,9 % |
+| Estructurado | 15 | 387,9 tok/s | 81,2 % |
+
+Fixtures de razonamiento largo:
+
+| Fixture | Muestras | Tokens medios | Throughput | Aceptacion | Finalizacion |
+| --- | ---: | ---: | ---: | ---: | --- |
+| AIME 2026 #1 | 5 | 1.262,6 | 330,2 tok/s | 66,4 % | 5/5 stop |
+| AIME 2026 #15 | 5 | 65.536,0 | 206,9 tok/s | 39,1 % | 5/5 limite de salida |
+| AIME 2026 #30 | 5 | 53.927,8 | 232,0 tok/s | 45,0 % | 4/5 stop, 1/5 limite |
+
+Referencia del Qwen3.8-27B NVFP4 + DFlash2 K=7 de stock de NInfer en el mismo perfil de RTX 5090: 192,5 tok/s de decodificacion de corpus y 37,0 % de aceptacion. Este upload mide 217,0 tok/s y 40,9 %, respectivamente.
+
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor indica explicitamente que no reclama ninguna puntuacion de precision en AIME.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 23,7 GB, por lo que los pesos en disco requieren al menos ese orden de magnitud de memoria si se cargan completos en VRAM. A ese valor habria que sumar la memoria del cache KV, cuyo tamano depende de la longitud de contexto y del numero de capas, ambos desconocidos.
-- GPU recomendadas: no disponible. Como referencia generica, un artefacto de ~24 GB de pesos encajaria con dificultad en GPUs de 24 GB (RTX 3090, RTX 4090) y con mayor holgura en GPUs de 40 GB o 80 GB (A100, H100).
-- Viabilidad en GPU de consumo: incierta. Con 23,7 GB de pesos, una RTX 4090 o RTX 3090 de 24 GB dejaria un margen minimo o nulo para el cache KV, por lo que la ejecucion requeriria reducciones de contexto o descarga parcial de capas a CPU.
-- Opciones de despliegue: no disponible. Se desconoce si los pesos son compatibles con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM u otros motores. El sufijo "ninfer" del nombre sugiere un formato o motor especifico, pero no se ha publicado documentacion al respecto.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token para ningun hardware.
+- VRAM estimada: no disponible de forma explicita; el fichero de pesos ocupa 23,72 GB, a lo que se suma la KV cache (FP8 o INT8-group64) y el estado del runtime. Con contexto de 131.072 tokens la demanda crece de forma significativa.
+- GPU validada: NVIDIA RTX 5090 (arquitectura Blackwell, necesaria para NVFP4), en configuracion PCIe 5.0 x8.
+- GPU recomendadas por el autor: no disponible. Las GPUs sin soporte nativo de NVFP4 no pueden ejecutar estos pesos tal cual.
+- Cabe en GPU de consumo: si, al menos en RTX 5090 segun las pruebas publicadas.
+- Despliegue: exclusivamente mediante NInfer (`ninfer-serve`), con build compatible con contenedores v2 y soporte de Qwen3.8-27B NVFP4 y DFlash2. No es compatible con vLLM, llama.cpp, Ollama, TGI ni Transformers.
+- Latencia y throughput: 475,58 tok/s de generacion y 9.756,06 tok/s de prefill con prompt de 512 tokens; 217,0 tok/s de decodificacion en el corpus de 75 peticiones con concurrencia 1. El tiempo de primer token de `ninfer_bench` es preparacion nativa mas prefill, no TTFT de streaming HTTP.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable con modelos alternativos. La informacion disponible no confirma la familia, el tamano exacto de parametros, el contexto, la licencia heredada ni el rendimiento del artefacto, por lo que cualquier tabla comparativa se basaria en suposiciones derivadas del nombre del repositorio y no en datos verificados.
+| Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Formato |
+| --- | --- | --- | --- | --- | --- |
+| Este upload (Swift-Qwen3.8-27B OrcaRouter NVFP4 DFlash2) | 27B | hasta 131.072 | 217,0 tok/s corpus; 40,9 % aceptacion | swift-open-license-v1.0 | `.ninfer` v2 |
+| Qwen3.8-27B NVFP4 + DFlash2 K=7 de stock (NInfer) | 27B | no disponible | 192,5 tok/s corpus; 37,0 % aceptacion | no disponible | NInfer |
+| Swift-Qwen3.8-27b (modelo base) | 27B | no disponible | no disponible | no disponible | no disponible |
 
-A modo de referencia puramente orientativo, la familia Qwen3 incluiria variantes densas y MoE en rangos de tamano proximos, pero no se ha confirmado que este repositorio derive de ellas ni con que configuracion.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer | no disponible | no disponible | apache-2.0 (declarada) | Hugging Face, 0 descargas |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+La comparativa de calidad con alternativas de la misma categoria no esta disponible: no se publican resultados de benchmarks de calidad para ninguno de los tres, y las cifras de rendimiento corresponden a perfiles de serving distintos o no documentados.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el autor no documenta arquitectura, entrenamiento, datos, idiomas ni evaluaciones, lo que impide auditar el artefacto.
-- Riesgo de cadena de suministro: al tratarse de una publicacion de un usuario individual con 0 descargas y 0 "likes", no existe validacion de la comunidad ni historial que respalde la integridad de los pesos.
-- Procedencia del modelo base desconocida: si el artefacto deriva de un modelo preentrenado de terceros, no se especifica cual, ni que terminos de uso se heredan mas alla de la declaracion Apache 2.0 del repositorio.
-- Cumplimiento de licencias: no puede verificarse que la relicencia como Apache 2.0 sea compatible con la licencia del modelo original.
-- Idiomas no documentados: no hay forma de saber que lenguas soporta realmente ni su calidad relativa, lo que dificulta su uso en productos multilingues.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; sin evaluaciones publicadas no puede acotarse su magnitud en dominios factuales.
-- Contexto desconocido: la ausencia de datos sobre la ventana de contexto impide planificar despliegues con entradas largas o conversaciones extensas.
-- Formato de pesos incierto: se desconoce si los pesos son cargables directamente por los motores de inferencia habituales, lo que anade coste de conversion y validacion.
-- Ausencia de benchmarks: sin resultados de evaluacion no es posible estimar si el rendimiento justifica el coste de despliegue.
-- Uso comercial: aunque la licencia declarada es Apache 2.0, se recomienda revision legal previa dada la falta de trazabilidad del artefacto.
-- Fechas del repositorio: los metadatos indican creacion y ultima actualizacion el mismo dia, sin historial posterior de mantenimiento.
+- Es un lanzamiento de terceros, no oficial de UkisAI ni de OrcaRouter; el autor lo declara explicitamente.
+- La cabeza DFlash2 no fue reentrenada para Swift: la aceptacion especulativa cae al 16,7 % en generacion de relatos frente al 81,2 % en salidas estructuradas, por lo que el rendimiento depende fuertemente de la carga.
+- Formato propietario `.ninfer`: no se puede cargar con Transformers, llama.cpp, vLLM ni Ollama, y requiere una build concreta de NInfer. Las builds actuales solo v3 no son compatibles con este artefacto v2.
+- Dependencia de hardware Blackwell para NVFP4; no hay datos de ejecucion en otras GPU.
+- Los benchmarks se tomaron en PCIe 5.0 x8 y no se corrigieron a x16; no deben extrapolarse sin mas a otras configuraciones.
+- No hay datos publicados de calidad, sesgos, tasa de alucinacion ni cobertura idiomatica.
+- Etiqueta "uncensored": implica filtros de seguridad relajados, con el riesgo asociado en produccion y en cumplimiento normativo.
+- Licencia `swift-open-license-v1.0` etiquetada como `other`: es necesario revisar el fichero LICENSE antes de cualquier uso comercial.
+- El contexto maximo validado (131.072 tokens) exige VRAM adicional considerable por la KV cache; el ejemplo de arranque usa 8.192 tokens.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer
-- Model card del autor: sin contenido tecnico (unicamente la declaracion de licencia Apache 2.0)
-- Paper o informe tecnico: no disponible
-- Repositorio de codigo: no disponible
-- Demo o espacio interactivo: no disponible
-- Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo; no se ha localizado ninguna fuente adicional relevante
+- Modelo en Hugging Face: https://huggingface.co/Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer
+- Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
+- Runtime NInfer (repositorio): https://github.com/Neroued/ninfer
+- NInfer, guia de inicio rapido: https://github.com/Neroued/ninfer#quick-start
+- NInfer, revision usada en el ejemplo: https://github.com/Neroued/ninfer/tree/d49296868dcc17bd478ec185f0d3a801bcc0bf56
+- NInfer, revision usada en el benchmark de corpus: https://github.com/Neroued/ninfer/tree/03177b910e70f783b00c4f980ce0d1896a6b8592

@@ -5,7 +5,7 @@
   "author": "Outlier-Ai",
   "url": "https://huggingface.co/Outlier-Ai/Outlier-Lite-7B-MLX-4bit",
   "created_at": "2026-04-17T23:58:34.000Z",
-  "updated_at": "2026-11-08T06:47:44.000Z",
+  "updated_at": "2026-11-20T13:16:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -79,7 +79,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 60,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

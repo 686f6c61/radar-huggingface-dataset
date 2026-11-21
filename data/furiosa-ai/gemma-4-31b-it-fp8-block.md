@@ -2,95 +2,97 @@
 
 ## Resumen
 
-El modelo `furiosa-ai/gemma-4-31B-it-FP8-block` es una versión cuantizada en FP8 del modelo multimodal `google/gemma-4-31B-it` de Google, preparada para inferencia eficiente con vLLM. Aunque el repositorio en Hugging Face está publicado bajo la cuenta `furiosa-ai`, la model card original atribuye el desarrollo a RedHatAI, que ha aplicado una cuantización post-entrenamiento sin datos (data-free) utilizando la librería LLM Compressor. El resultado es un modelo denso de 31.273 millones de parámetros que reduce el tamaño en disco y los requisitos de memoria GPU aproximadamente un 50% respecto al original en BF16, manteniendo una precisión casi idéntica en los benchmarks evaluados.
+gemma-4-31B-it-FP8-block es una distribución cuantizada del modelo multimodal Gemma 4 31B de Google, publicada por FuriosaAI junto con un Furiosa Executable Bundle (FXB) para ejecutarlo sobre aceleradores RNGD con el runtime Furiosa-LLM. El modelo original es un transformer denso que combina un codificador de visión con un decodificador que intercala capas de atención de ventana deslizante y de atención completa, y su plantilla de chat admite razonamiento opcional y llamada a herramientas. La build de Red Hat AI aplica cuantización FP8 por bloques a las capas lineales del transformer de texto.
 
-El modelo base Gemma 4 31B es una arquitectura densa multimodal que acepta texto, imagen y audio como entrada, genera texto, y soporta modo de razonamiento (thinking), tool calling y function calling. La versión FP8-block cuantiza pesos y activaciones de los operadores lineales de los bloques transformer con escalado por bloques de 128×128, dejando la torre de visión, las capas de embedding y la cabeza de salida en precisión original. Está diseñado para despliegue en producción con vLLM, con soporte validado en Red Hat OpenShift AI (RHOAI) y Red Hat AI Inference (RHAIIS) en versiones 3.5, así como en vLLM 0.24.0.
+El interés de esta ficha concreta es doble: por un lado documenta una ruta de despliegue en hardware no NVIDIA (RNGD de FuriosaAI, con paralelismo tensorial de 32 PEs repartidos en cuatro tarjetas), y por otro sirve como referencia de una cuantización FP8 con bloques de 128×128 en pesos y grupos de 128 valores en activaciones, con torre de visión, embeddings, cabeza de salida y caché KV en 16 bits.
 
-La relevancia de este modelo radica en que ofrece una alternativa cuantizada de alta calidad para entornos con recursos limitados, manteniendo capacidades multimodales completas (visión, audio, texto) y un rendimiento en benchmarks que iguala o incluso supera ligeramente al modelo original en tareas como IFEval y MMLU-Pro, con una recuperación de precisión del 100% o más en la mayoría de las pruebas.
+Con 31.273.088.876 parámetros y un repositorio de 53,9 GB, está pensado para servir cargas multimodales de imagen y texto con API compatible con OpenAI, y su licencia declarada es Apache 2.0, aunque la model card enlaza a la licencia específica de Gemma 4 de Google.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Gemma4ForConditionalGeneration (transformer denso multimodal) |
-| Parametros totales | 31.273.088.876 (31,27 B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | hasta 256K tokens (modelo base); en el ejemplo de despliegue se usa 32.768 |
-| Tipos de cuantizacion | FP8 block-wise (pesos y activaciones, bloques 128×128, group_size=128) |
-| Idiomas soportados | más de 140 idiomas (modelo base) |
-| Licencia | Apache-2.0 (con enlace a la licencia Gemma 4 de Google en la model card) |
-| Formato de pesos | safetensors |
+| Arquitectura | Gemma 4 densa; codificador de visión más decodificador transformer con capas alternas de atención de ventana deslizante y atención completa |
+| Parámetros totales | 31.273.088.876 |
+| Parámetros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | FP8 con bloques de 128×128 en pesos de capas lineales del transformer de texto; activaciones cuantizadas dinámicamente a FP8 en grupos de 128 sin calibración offline; torre de visión, embeddings, cabeza de salida y caché KV en 16 bits |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors (compressed-tensors) más Furiosa Executable Bundle (FXB) |
+| Entrada / salida | imagen y texto / texto |
+| Librería | furiosa-llm |
+| Hardware soportado | FuriosaAI RNGD |
+| Paralelismo | tensor-parallel de 32 PEs, equivalente a cuatro tarjetas RNGD (8 PEs por tarjeta) |
+| Modelo base | RedHatAI/gemma-4-31B-it-FP8-block |
+| Tamaño del repositorio | 53,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización del checkpoint `google/gemma-4-31B-it`, que emplea una arquitectura transformer densa multimodal (Gemma4ForConditionalGeneration) con codificadores separados para imagen y audio, y un decodificador de lenguaje que genera texto. El modelo base fue entrenado por Google con un contexto de hasta 256K tokens y soporte multilingüe en más de 140 idiomas, con capacidades nativas de tool calling y un protocolo de razonamiento explícito (thinking mode).
+La arquitectura es la de Gemma 4 en variante densa: un codificador de visión acoplado a un decodificador transformer que intercala capas de atención de ventana deslizante con capas de atención completa, un patrón híbrido que reduce el coste computacional en secuencias largas manteniendo acceso global periódico al contexto. La model card no detalla el número de capas, dimensiones ocultas ni cabezas de atención, ni tampoco el volumen o composición de los datos de entrenamiento, por lo que esos datos figuran como no disponibles.
 
-La cuantización se realizó mediante `model_free_ptq` de LLM Compressor, un método post-entrenamiento sin datos que convierte los pesos y activaciones de los operadores lineales de los bloques transformer a FP8 con escalado por bloques (128×128). Las capas de visión, embedding y la cabeza de salida se mantienen en su precisión original (BF16). No se aplicó fine-tuning ni calibración con datos; la cuantización es puramente estática para pesos y dinámica para activaciones (group_size=128). Esta aproximación reduce el tamaño del modelo a la mitad y está optimizada para el backend de vLLM, que soporta nativamente kernels FP8.
+La contribución técnica de esta build es la cuantización: Red Hat AI aplica cuantización estática FP8 con bloques de 128×128 a los pesos de los operadores lineales del transformer de texto, mientras que las activaciones de entrada se cuantizan dinámicamente a FP8 en tiempo de ejecución en grupos de 128 valores, sin calibración offline. La torre de visión, los embeddings, la cabeza de salida y la caché KV permanecen en 16 bits, lo que preserva la calidad en las partes más sensibles del pipeline multimodal. El paquete se distribuye en formato compressed-tensors, consumible por vLLM, SGLang y Transformers, además del bundle FXB específico para RNGD. No se especifican en la información disponible detalles sobre RLHF, DPO u otras etapas de alineación.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: responde a instrucciones complejas, resuelve problemas de matemáticas y lógica, y puede activar un modo de pensamiento explícito (`enable_thinking`) para razonamientos multi-paso.
-- Multimodal: acepta imágenes y audio como entrada adicional al texto, gracias a la torre de visión y el codificador de audio del modelo base.
-- Tool calling y function calling: soporta el protocolo de herramientas de Gemma 4, con parser específico (`--tool-call-parser gemma4`) y validado en tareas de tool-calling.
-- Razonamiento multi-paso: el modo thinking permite generar cadenas de razonamiento antes de la respuesta final, útil para tareas de matemáticas, código y análisis.
-- Multilingüe: cubre más de 140 idiomas, lo que permite su uso en aplicaciones internacionales.
-- Compatible con vLLM: integración nativa con el servidor OpenAI-compatible, incluyendo `--reasoning-parser gemma4` y `--enable-prefix-caching` para optimizar latencia.
+- Generación de texto conversacional con plantilla de chat de instrucciones (`-it`).
+- Comprensión de imágenes: acepta entradas de tipo `image_url` con URL remota, base64 en línea o ruta local `file://` (esta última requiere `--allowed-local-media-path`).
+- Razonamiento opcional mediante `enable_thinking` en `chat_template_kwargs`; por defecto está desactivado y el modelo opera en modo no razonador.
+- Separación del razonamiento y la respuesta final: el servidor devuelve el razonamiento en `response.choices[].message.reasoning` (no streaming) o `response.choices[].delta.reasoning` (streaming) mediante el parser `gemma4`.
+- Llamada a herramientas nativa: formato de tool call propio, soportado por el parser `gemma4` y activable con `--enable-auto-tool-choice --tool-call-parser gemma4`.
+- API compatible con OpenAI, lo que facilita la integración con clientes existentes.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de audio ni de salida multimodal distinta de texto.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo (hasta 256K tokens) y soporte multilingüe, lo que permite desplegar asistentes virtuales que mantienen el historial completo de la interacción y responden en el idioma del usuario.
-- Generación de código en producción: con tool calling y razonamiento multi-paso, puede integrarse en pipelines de CI/CD para autocompletar código, revisar pull requests o generar documentación técnica, reduciendo la intervención manual.
-- Análisis de documentos multimodales: al aceptar imágenes y audio, puede procesar capturas de pantalla, diagramas, gráficos o grabaciones de voz para extraer información estructurada, útil en entornos de oficina o soporte técnico.
-- Asistente de investigación científica: su capacidad de razonamiento matemático (GSM8K 95,78%, MATH-500 89,4%) lo hace adecuado para resolver problemas de física, ingeniería o finanzas, y para explicar conceptos complejos paso a paso.
-- Automatización de tareas con agentes: gracias al soporte de function calling y al parser de herramientas, puede orquestar llamadas a APIs externas, bases de datos o servicios web en flujos de agente autónomo.
-- Despliegue en entornos con GPU limitada: al ser FP8, cabe en GPUs de 24 GB con tensor parallelism de 2, lo que permite ejecutar un modelo de 31B en hardware de gama media (por ejemplo, dos RTX 4090 o A10G) para aplicaciones de inferencia en tiempo real.
+- Asistencia multimodal en atención al cliente: el modelo puede recibir capturas de pantalla, fotos de producto o documentos escaneados junto con la consulta del usuario y responder en texto, usando el mismo endpoint compatible con OpenAI que ya emplea el resto del stack.
+- Automatización de soporte técnico con razonamiento controlado: activando `enable_thinking` solo en las consultas que lo requieran, se obtiene una traza de razonamiento separada del texto final, útil para auditar decisiones sin exponerla al usuario.
+- Agentes con tool calling: gracias al formato nativo de función y a `--enable-auto-tool-choice`, el modelo puede encadenar llamadas a APIs internas (consulta de pedidos, estado de tickets, cálculo de tarifas) dentro de un bucle agéntico multi-paso.
+- Procesamiento de documentos con imagen: extracción y descripción de información a partir de fotografías o escaneos, con la torre de visión en 16 bits para preservar detalle en la codificación visual.
+- Despliegue en infraestructura no NVIDIA: el bundle FXB permite servir el modelo en cuatro aceleradores RNGD con paralelismo tensorial de 32 PEs, una alternativa relevante cuando el clúster no dispone de GPUs de gran formato.
+- Evaluación y prototipado de cuantización FP8: al estar disponible también para vLLM, SGLang y Transformers a través del modelo base de Red Hat AI, sirve para medir la degradación de calidad frente a la versión en 16 bits antes de fijar una configuración de producción.
+- Generación de descripciones y etiquetado de imágenes a escala: el pipeline `image-text-to-text` permite procesar lotes de imágenes para generar metadatos, alt-text o clasificaciones descriptivas.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una evaluación comparativa entre el modelo base y la versión FP8-block, realizada con lm-evaluation-harness, lighteval y BFCL, servidos con vLLM. Los resultados disponibles (sin thinking) son:
-
-| Benchmark | google/gemma-4-31B-it | RedHatAI/gemma-4-31B-it-FP8-block | Recuperacion |
-|---|---|---|---|
-| IFEval (0-shot, prompt-level strict) | 90,70 | 91,25 | 100,6% |
-| IFEval (0-shot, inst-level strict) | 93,45 | 94,00 | 100,6% |
-| GSM8K Platinum (0-shot, strict-match) | 95,78 | 95,78 | 100,0% |
-| MMLU-Pro (0-shot, custom-extract) | 85,41 | 85,44 | 100,0% |
-| MATH-500 (0-shot, pass@1) | 89,40 | (dato no disponible en la informacion proporcionada) | - |
-
-La tabla original continúa con más benchmarks (AIME 2025, GPQA Diamond, LiveCodeBench v6, BFCLv4), pero los valores no se han incluido en el texto extraído. La información disponible indica que la cuantización FP8 no degrada el rendimiento en las pruebas mostradas, e incluso mejora ligeramente en IFEval. No se han publicado resultados con thinking habilitado en el fragmento disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en FP8 ocupan aproximadamente 31 GB (31,27 B × 1 byte). Con activaciones, KV cache y overhead, se recomienda al menos 40-50 GB de VRAM total para una ventana de contexto de 32K tokens.
-- GPU recomendadas: el ejemplo de despliegue usa `--tensor-parallel-size 2`, lo que sugiere dos GPUs de 24 GB (por ejemplo, RTX 4090, A10G, L4) o una GPU de 48 GB+ (A6000, A100 80GB, H100).
-- Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en una sola GPU de 48 GB (como RTX A6000) o en dos GPUs de 24 GB con tensor parallelism. No cabe en una RTX 4090 de 24 GB sin cuantización adicional.
-- Opciones de despliegue: vLLM (recomendado, con soporte nativo FP8), también compatible con TGI y llama.cpp si se convierte a GGUF, aunque la optimización está pensada para vLLM.
-- Latencia y throughput: no se proporcionan datos específicos. La cuantización FP8 reduce el ancho de banda de memoria a la mitad, lo que típicamente mejora el throughput entre 1,5 y 2 veces respecto a BF16 en GPUs con soporte FP8.
+- VRAM estimada: el repositorio ocupa 53,9 GB en FP8, por lo que la inferencia requiere al menos ese orden de magnitud de memoria de acelerador, más espacio para caché KV en 16 bits y activaciones; el valor exacto no está disponible.
+- GPU recomendadas: la información proporcionada no incluye GPUs NVIDIA; la ruta oficial documentada es FuriosaAI RNGD con cuatro tarjetas y tensor-parallel de 32 PEs.
+- GPU de consumo: no disponible; no se documenta compatibilidad con tarjetas consumer en esta build.
+- Opciones de despliegue: Furiosa-LLM (`furiosa-llm serve furiosa-ai/gemma-4-31B-it-FP8-block`), con parsers `gemma4` para razonamiento y tool calling. Para vLLM, SGLang y Transformers debe usarse el modelo base RedHatAI/gemma-4-31B-it-FP8-block.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
-|---|---|---|---|---|---|
-| google/gemma-4-31B-it | 31,27 B | 256K | BF16 (original) | Apache-2.0 (Gemma 4) | Modelo base sin cuantizar, mayor precisión pero mayor uso de memoria |
-| furiosa-ai/gemma-4-31B-it-FP8-block | 31,27 B | 256K | FP8 block-wise | Apache-2.0 | Este modelo, optimizado para vLLM, recuperación ~100% |
-| Hyper-AI/gemma-4-31B-it-fp8 | 31,27 B | 256K | FP8 (estándar) | Apache-2.0 | Otra cuantización FP8 del mismo base, sin detalles de evaluación publicados |
+| Modelo | Parámetros | Contexto | Modalidad | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| furiosa-ai/gemma-4-31B-it-FP8-block | 31,27 B (denso) | no disponible | imagen + texto → texto | FP8 block 128×128 | apache-2.0 | Hugging Face, runtime Furiosa-LLM sobre RNGD |
+| RedHatAI/gemma-4-31B-it-FP8-block | 31,27 B (denso) | no disponible | imagen + texto → texto | FP8 block 128×128 | apache-2.0 | Hugging Face, vLLM / SGLang / Transformers |
+| Gemma 4 31B it (upstream Google) | 31 B (denso) | no disponible | imagen + texto → texto | 16 bits | licencia Gemma 4 | Hugging Face |
 
-La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de modelos de otros fabricantes con el mismo tamaño y capacidades multimodales en la información proporcionada.
+La diferencia principal entre las tres entradas no es de arquitectura ni de parámetros, sino de empaquetado y runtime: la build de FuriosaAI añade el bundle FXB y el soporte de parsers de Furiosa-LLM, la de Red Hat AI es la referencia portable para frameworks estándar y la de Google es el original sin cuantizar. No se dispone de datos de benchmarks para establecer comparaciones de rendimiento entre ellas.
 
 ## Limitaciones y advertencias
 
-- La cuantización FP8 puede introducir una ligera pérdida de precisión en tareas muy sensibles a los pesos, aunque los benchmarks mostrados indican una recuperación del 100% o superior en la mayoría de los casos.
-- El modelo base puede presentar sesgos y alucinaciones inherentes a los LLM entrenados con datos web; la cuantización no corrige estos problemas.
-- La longitud de contexto máxima de 256K tokens es teórica; en la práctica, el uso de memoria crece linealmente con la longitud, y el ejemplo de despliegue recomienda 32K tokens para un equilibrio razonable.
-- La licencia declarada es Apache-2.0, pero la model card enlaza a la licencia específica de Gemma 4 de Google, que puede incluir términos adicionales (por ejemplo, restricciones de uso comercial o atribución). Se recomienda revisar el texto completo de la licencia antes de usar el modelo en producción.
-- El modelo está optimizado para vLLM; su uso con otros frameworks puede requerir conversión de formato y no garantiza el mismo rendimiento.
-- No se han publicado resultados de evaluación con thinking habilitado en el fragmento disponible, por lo que el impacto de la cuantización en el modo de razonamiento no está completamente verificado.
+- No se han publicado datos de sesgos, evaluación de toxicidad ni análisis de alucinación en la información disponible; deben asumirse los riesgos habituales de un modelo de lenguaje de 31 B en producción.
+- El modo de razonamiento está desactivado por defecto; si se activa, el campo `reasoning` no forma parte de la especificación de la API de OpenAI y solo aparece cuando hay contenido de razonamiento, por lo que acceder a él sin comprobar su existencia provoca `AttributeError`.
+- El campo `reasoning` se devuelve como convención ampliamente seguida (OpenAI Agents SDK, vLLM), no como estándar formal; la integración debe tolerar su ausencia.
+- La carga de imágenes locales vía `file://` exige el flag `--allowed-local-media-path`; sin él, solo se admiten URL remotas o base64.
+- El acceso a imágenes remotas puede restringirse a dominios concretos, lo que afecta a despliegues que dependan de CDNs externas.
+- La licencia declarada en los metadatos es Apache 2.0, pero la model card enlaza a la licencia específica de Gemma 4 de Google; conviene verificar los términos aplicables antes de un uso comercial.
+- El soporte oficial de esta build está limitado a FuriosaAI RNGD y Furiosa-LLM; para otros frameworks hay que recurrir al modelo base de Red Hat AI.
+- No se documentan los idiomas soportados ni la longitud de contexto, dos parámetros críticos para dimensionar aplicaciones de contexto largo o multilingües.
+- El tamaño del repositorio (53,9 GB) y la necesidad de cuatro tarjetas RNGD implican un coste de infraestructura considerable para pruebas y desarrollo.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/furiosa-ai/gemma-4-31B-it-FP8-block
-- Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Guía de uso con vLLM: https://recipes.vllm.ai/Google/gemma-4-31B-it
-- Model card de Gemma 4 (Google): https://ai.google.dev/gemma/docs/core/model_card_4
-- Otra cuantización FP8 del mismo base: https://huggingface.co/Hyper-AI/gemma-4-31B-it-fp8
-- Benchmarks en DGX Spark con FP8: https://forums.developer.nvidia.com/t/gemma-4-31b-on-dgx-spark-runtime-fp8-benchmarks-single-dual-node-tp-2/365814
+- Modelo en Hugging Face: https://huggingface.co/furiosa-ai/gemma-4-31B-it-FP8-block
+- Modelo base (Red Hat AI): https://huggingface.co/RedHatAI/gemma-4-31B-it-FP8-block
+- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- FuriosaAI: https://furiosa.ai

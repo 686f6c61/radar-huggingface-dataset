@@ -5,7 +5,7 @@
   "author": "1sevvalyesilyurt",
   "url": "https://huggingface.co/1sevvalyesilyurt/mbert-chat-moderation-swe015",
   "created_at": "2026-11-19T15:09:15.000Z",
-  "updated_at": "2026-11-19T15:51:26.000Z",
+  "updated_at": "2026-11-20T13:11:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -15,6 +15,7 @@
     "en"
   ],
   "tags": [
+    "joblib",
     "safetensors",
     "bert",
     "text-classification",
@@ -25,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 177854978,
   "parameters_human": "177.9M",
-  "storage_bytes": 711443432,
-  "storage_human": "711 MB",
+  "storage_bytes": 732352083,
+  "storage_human": "732 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

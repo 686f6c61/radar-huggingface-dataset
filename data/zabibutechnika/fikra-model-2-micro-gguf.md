@@ -2,118 +2,120 @@
 
 ## Resumen
 
-Fikra Model 2 Micro es un modelo de lenguaje instructivo desarrollado por Zabibu Technika (Nairobi, Kenia), presentado como un fine-tune especializado de la familia Fikra sobre el modelo base Qwen/Qwen3.5-0.8B. El repositorio que nos ocupa, `zabibutechnika/Fikra-Model-2-Micro-GGUF`, contiene los pesos cuantizados en formato GGUF (Q4_K_M y F16) del modelo original en fp16, pensados para despliegue en dispositivo, offline y en hardware de gama baja (moviles, tablets, portatiles sin GPU dedicada).
+Fikra Model 2 Micro es un modelo de lenguaje instruction-tuned especializado en contexto panafricano, desarrollado por Zabibu Technika (Nairobi, Kenia). Se trata de un fine-tune sobre la familia Qwen, concretamente derivado de `zabibutechnika/fikra-v2-e3`, que a su vez parte de `Qwen/Qwen3.5-0.8B`. El objetivo declarado es el despliegue en dispositivo (on-device), offline y con preservación de identidad cultural suajili, orientado a telefonos, tablets y portatiles sin GPU dedicada.
 
-La propuesta del modelo es un asistente conversacional bilingue ingles-swahili con conciencia del contexto panafricano, disenado para operar sin conexion de red en inferencia. El modelo card declara que el fine-tuning preserva la capacidad general del modelo base y anade comportamientos especificos de identidad y contexto local, medidos con una suite de evaluacion propia de 115 casos.
+La model card presenta una inconsistencia relevante en las cifras: el texto describe el modelo como "4B-parameter" con 4.205.751.296 parametros, mientras que los metadatos de safetensors del repositorio indican 772.845.888 parametros reales. Esta ficha recoge ambos datos y senala la discrepancia de forma explicita, dado que afecta directamente a las estimaciones de hardware y a la interpretacion de los benchmarks publicados.
 
-La informacion disponible presenta inconsistencias notables que el lector debe tener en cuenta: el model card describe el modelo como "4B-parameter" y cita 4.205.751.296 parametros, mientras que los metadatos de safetensors del repositorio indican 772.845.888 parametros, y el propio texto lo vincula al base Qwen3.5-0.8B. Esta ficha recoge ambos datos de forma explicita en lugar de resolver la contradiccion, que no puede dirimirse con la informacion proporcionada.
+El repositorio GGUF ofrece cuantizaciones Q4_K_M y F16 para ejecucion en llama.cpp, Ollama y LM Studio. El modelo soporta ingles y suajili, con code-switching, y esta publicado bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen/Qwen3.5-0.8B, segun el model card) |
-| Parametros totales | 772.845.888 segun safetensors; el model card declara 4.205.751.296 (4B). Dato contradictorio, no resuelto en la informacion disponible |
-| Parametros activos | no disponible (no se describe como MoE) |
+| Arquitectura | Transformer decoder-only (fine-tune de Qwen/Qwen3.5-0.8B via fikra-v2-e3); no se detalla configuracion interna |
+| Parametros totales | 772.845.888 segun safetensors del repo; la model card declara 4.205.751.296 (4B) — discrepancia no resuelta |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_M y F16 (GGUF) |
-| Idiomas soportados | Ingles (en) y swahili (sw), con soporte de code-switching |
-| Licencia | Apache 2.0 (licencia del base: ver Qwen/Qwen3.5-0.8B) |
-| Formato de pesos | GGUF (este repo); safetensors/fp16 en el repo base `zabibutechnika/Fikra-Model-2-Micro` |
-| Tamano del repo | 5.1 GB |
-| Libreria declarada | litert |
-| Tamano en fp16 (segun card) | 8.43 GB |
+| Idiomas soportados | en, sw (con code-switching) |
+| Licencia | apache-2.0 (licencia base: ver Qwen/Qwen3.5-0.8B) |
+| Formato de pesos | GGUF (repo actual); safetensors/fp16 en el repo base `Fikra-Model-2-Micro` |
 
 ## Arquitectura y entrenamiento
 
-El model card describe el modelo como un fine-tune instructivo de la familia Fikra construido sobre `zabibutechnika/fikra-v2-e3`, que a su vez deriva de `Qwen/Qwen3.5-0.8B`. No se detalla la arquitectura interna mas alla de esa ascendencia, ni se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o SFT. La unica informacion sobre el proceso de especializacion es la existencia de una suite de evaluacion propia de 115 casos orientada a identidad en swahili, datos de Kenia, revision de canary, cultura panafricana, gaming, fintech, salud y conocimiento local.
+El modelo es un fine-tune de tipo instruction-tuning sobre un checkpoint intermedio propio (`fikra-v2-e3`), que desciende de `Qwen/Qwen3.5-0.8B`. La model card no documenta la arquitectura interna mas alla de la herencia del base Qwen, ni detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La especializacion se centra en identidad suajili, contexto keniano y comportamientos de seguridad y tool calling, medidos mediante una suite de evaluacion propia de 115 casos.
 
-El model card menciona que el fine-tuning no degrada la linea base de MMLU del modelo Qwen original y que la mejora especifica de Fikra se mide en la suite de release (+2,6 puntos sobre el checkpoint e3). Tambien advierte explicitamente de que las cifras de MMLU no estan normalizadas por tamano y que la mayor parte de la mejora frente a Fikra-Model-1-2B proviene del cambio de modelo base, no del entrenamiento Fikra. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal ni modos de razonamiento explicitos, mas alla de la mencion a fugas ocasionales de etiquetas `<think>...</think>`.
+La innovacion destacable no es arquitectonica sino de posicionamiento: entrenamiento y evaluacion realizados en Kenia, con una suite de release que cubre identidad-Suajili, datos de Kenia, revision canary, cultura panafricana, gaming, fintech, salud y conocimiento local. El autor declara explicitamente que no ha construido el modelo base y que la especializacion Fikra es el valor anadido.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y swahili, con soporte de code-switching entre ambos idiomas.
-- Identidad y persona preservadas: el model card reporta 8/8 en `identity_direct` y 4/4 en `identity_swahili` en su suite interna.
-- Protocolo UHI: 5/5 en la suite declarada (no se detalla en la informacion disponible que es el protocolo UHI).
-- Tool calling / function calling: 4/4 en la categoria `tool_abi` de la suite de release.
-- Limites de seguridad: 3/3 en `safety_boundary` de la suite interna.
-- Generacion de texto largo: 2/2 en la categoria `longform`.
-- Operacion offline y en dispositivo: el diseno de despliegue asume ausencia de red en inferencia.
-- No se documentan capacidades de vision, audio, matematicas avanzadas ni razonamiento multi-paso con modo thinking dedicado.
+- Generacion de texto conversacional e instruction-following en ingles y suajili.
+- Identidad suajili nativa y soporte de code-switching ingles-suajili (identity_swahili 4/4 en la suite del autor).
+- Tool calling / function calling (tool_abi 4/4 en la suite del autor).
+- Protocolo UHI (uhi_protocol 5/5) y limites de seguridad (safety_boundary 3/3).
+- Generacion de formato largo (longform 2/2).
+- Preservacion de persona e identidad (identity_direct 8/8).
+- Operacion offline-first sin llamadas externas en inferencia.
+- Modo de razonamiento con etiquetas `<think>...</think>`, que pueden filtrarse a la salida visible.
 
 ## Casos de uso
 
-- Asistente conversacional offline en movil: el modelo esta disenado para ejecutarse en dispositivo sin GPU dedicada mediante la cuantizacion Q4_K_M, lo que permite asistentes privados que no envian datos a la nube.
-- Atencion al cliente bilingue en ingles y swahili: el soporte nativo de code-switching y el enfasis en contexto keniano lo hacen adecuado para usuarios que alternan idiomas en una misma conversacion.
-- Despliegue en entornos air-gapped: al no requerir llamadas externas en inferencia, encaja en organizaciones con restricciones de red o requisitos de soberania de datos.
-- Personajes y asistentes con identidad fija: las metricas de identidad del model card sugieren uso en aplicaciones donde la persona del asistente debe mantenerse estable a lo largo de la conversacion.
-- Integracion en pipelines con tool calling: la puntuacion de `tool_abi` en la suite interna indica que puede conectarse a funciones externas en flujos de automatizacion sencillos.
-- Prototipado y evaluacion de modelos pequenos en hardware de gama baja: su tamano reducido y formato GGUF permiten experimentar con llama.cpp, Ollama o LM Studio en portatiles sin GPU.
-- Aplicaciones de contenido local: el model card menciona categorias de evaluacion sobre conocimiento local, cultura panafricana, fintech y salud, lo que apunta a usos informativos en esos dominios, siempre con supervision humana.
+- Asistentes en dispositivo para telefonos y tablets: el modelo esta disenado para ejecucion offline en hardware movil, con cuantizacion Q4_K_M que corre en CPU, lo que permite asistentes privados sin conexion ni GPU dedicada.
+- Atencion al cliente en suajili e ingles con code-switching: adecuado para usuarios de Africa Oriental que alternan idiomas en una misma conversacion, gracias al entrenamiento especifico en identidad suajili.
+- Despliegue en entornos air-gapped: al no requerir llamadas externas en inferencia, encaja en contextos con restricciones de red o requisitos de privacidad estrictos.
+- Integracion en pipelines de agentes con tool calling: el modelo supera la prueba tool_abi de la suite del autor, por lo que puede invocarse como componente de llamada a funciones en flujos automatizados.
+- Aplicaciones de fintech y salud de contexto local: la suite de evaluacion cubre casos de fintech, salud y conocimiento local keniano, lo que orienta su uso en asistentes verticales de estos dominios.
+- Preservacion de persona en productos de marca: la prueba identity_direct (8/8) indica que mantiene una persona definida en conversaciones multi-turno, util para asistentes con identidad corporativa.
+- Educacion y cultura panafricana: la cobertura de cultura panafricana en la suite lo hace apto para contenido divulgativo local, siempre con retrieval para datos verificables.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados en el model card son los siguientes. Las condiciones declaradas son `lm-evaluation-harness` 0.4.13, tareas `mmlu,hellaswag`, limite de 10 muestras por tarea, batch auto, fp16, sobre 2x T4 en Kaggle.
-
 | Metrica | Valor |
 |---|---|
-| Suite auto-comprobada Fikra | 105/115 (91,3%) |
+| Suite de release Fikra (auto-checked) | 105/115 (91,3%) |
+| Borderline (revision por rubrica) | 0 |
 | Parafrasis held-out | 9/10 (90,0%) |
-| Baseline e3 (checkpoint Fikra) | 88,7% |
+| Checkpoint base e3 (Fikra) | 88,7% |
 | MMLU | 75,5% |
 | HellaSwag | 68,0% |
 
-Comparativa declarada por el autor:
+Comparativa publicada por el autor:
 
 | Modelo | Parametros | MMLU | HellaSwag |
 |---|---|---|---|
-| fikra-v2-e4 | 4B | 75,5% | 68,0% |
+| fikra-v2-e4 | 4B (segun card) | 75,5% | 68,0% |
 | Qwen/Qwen3.5-0.8B | 4B (segun card) | no ejecutado | no ejecutado |
 | Qwen2.5-3B-Instruct | 3B | 68,8% | 40,0% |
 | Fikra-Model-1-2B | 2B | 36,0% | 40,0% |
-| Phi-3.5-mini-instruct | 3,8B | incompatible | incompatible |
+| Phi-3.5-mini-instruct | 3,8B | incompatibla | incompatibla |
 | Llama-3.2-3B-Instruct | 3B | gated | gated |
 | Gemma-2-2B-it | 2B | gated | gated |
 
-Advertencia: el propio model card senala que el limite de 10 muestras por tarea es muy bajo y que las cifras no estan normalizadas por tamano. La cuantizacion Q4_K_M no fue reevaluada; el autor estima una perdida de 1 a 3 puntos frente a fp16 en evaluaciones de formato corto.
+Condiciones declaradas: `lm-evaluation-harness` 0.4.13, tareas `mmlu,hellaswag`, limite de 10 muestras por tarea, batch auto, fp16, sobre 2x T4 en Kaggle. El autor advierte que las cifras no estan normalizadas por tamano y que la mayor parte del salto de MMLU respecto al Model 1 proviene del cambio de base (2B a 4B), no del entrenamiento Fikra. La cuantizacion Q4_K_M no fue re-evaluada; se espera una perdida de 1 a 3 puntos frente a fp16 en evaluaciones de formato corto.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Para un modelo de aproximadamente 0,77B parametros, una cuantizacion Q4_K_M ocuparia del orden de 0,5 GB en disco y una F16 del orden de 1,5 GB; para la cifra de 4B declarada en el card, Q4_K_M rondaria los 2,5 GB y F16 los 8 GB. Estas estimaciones son calculos derivados del numero de parametros, no datos publicados por el autor.
-- GPU recomendadas: no disponible. El model card solo menciona ejecucion en CPU para Q4_K_M y evaluacion en 2x T4 para los benchmarks.
-- GPU de consumo: el autor afirma que Q4_K_M "runs on CPU" y que el modelo esta pensado para moviles, tablets y portatiles sin GPU dedicada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El tag de libreria `litert` sugiere tambien soporte orientado a TensorFlow Lite para edge, aunque no se detalla en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma fiable por la discrepancia de parametros. Con 772,8M parametros reales, F16 ocuparia aproximadamente 1,5 GB y Q4_K_M alrededor de 0,5 GB; con 4,2B parametros declarados, F16 ocuparia unos 8,4 GB y Q4_K_M en torno a 2,5 GB. El tamano del repo GGUF es de 9,1 GB, coherente con la hipotesis de 4B.
+- GPU recomendadas: para Q4_K_M basta CPU en movil o portatil; para F16 con 4B se recomienda una GPU con al menos 10-12 GB de VRAM (RTX 4080, RTX 4090, A10). Con 0,8B reales cabria en cualquier GPU consumer.
+- GPU consumer: Q4_K_M esta pensado para ejecucion en CPU y cabe en telefonos, tablets y portatiles sin GPU dedicada; F16 requiere GPU dedicada en el escenario de 4B.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El tag `litert` sugiere tambien soporte para LiteRT en movil. El tag `endpoints_compatible` indica compatibilidad con endpoints.
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fikra Model 2 Micro (GGUF) | 0,77B segun safetensors / 4B segun card | no disponible | 75,5% declarado | Apache 2.0 | Hugging Face, GGUF |
-| Qwen2.5-3B-Instruct | 3B | no disponible en esta ficha | 68,8% declarado por el autor | no disponible en esta ficha | Hugging Face |
-| Fikra-Model-1-2B | 2B | no disponible | 36,0% | no disponible en esta ficha | Hugging Face |
-| Llama-3.2-3B-Instruct | 3B | no disponible en esta ficha | gated, no ejecutado | licencia Llama | Hugging Face (gated) |
-| Gemma-2-2B-it | 2B | no disponible en esta ficha | gated, no ejecutado | licencia Gemma | Hugging Face (gated) |
+| Fikra Model 2 Micro | 772,8M (safetensors) / 4B (card) | no disponible | 75,5% | Apache 2.0 | Abierto en HF (GGUF y safetensors) |
+| Qwen2.5-3B-Instruct | 3B | 32K (segun modelo base Qwen2.5) | 68,8% | Apache 2.0 | Abierto en HF |
+| Llama-3.2-3B-Instruct | 3B | 128K | gated (no ejecutado) | Llama 3.2 Community License | Gated en HF |
+| Gemma-2-2B-it | 2B | 8K | gated (no ejecutado) | Gemma Terms of Use | Gated en HF |
+| Fikra-Model-1-2B | 2B | no disponible | 36,0% | Apache 2.0 | Abierto en HF |
 
-La comparacion debe leerse con cautela: las cifras de MMLU y HellaSwag del autor se obtuvieron con un limite de 10 muestras por tarea, lo que reduce la fiabilidad estadistica, y el propio card reconoce que las comparaciones con modelos gated no se ejecutaron.
+La comparativa de MMLU procede de la model card del autor con las condiciones indicadas; las filas marcadas como gated no fueron ejecutadas. La diferencia principal frente a alternativas es el enfoque en suajili y contexto keniano, no el rendimiento en benchmarks generales.
 
 ## Limitaciones y advertencias
 
-- Contradiccion de parametros: el model card declara 4B y 4.205.751.296 parametros, mientras que los safetensors del repo indican 772.845.888. Esta discrepancia afecta a cualquier estimacion de hardware y debe verificarse antes de desplegar.
-- Ausencia de benchmark cruzado de swahili: el autor reconoce que el diferenciador principal del modelo no esta medido por MMLU ni HellaSwag.
-- Sin informacion en vivo: la actualidad del modelo esta limitada a sus datos de entrenamiento.
-- Alucinacion en dominios especializados: al ser un modelo pequeno, el autor advierte que no sustituye a la recuperacion aumentada (RAG).
-- Fuga de etiquetas de razonamiento: el modelo emite ocasionalmente bloques `<think>...</think>` en la salida visible; deben eliminarse en postprocesado.
-- Sesgos heredados: los sesgos del modelo base Qwen se mantienen y no han sido auditados.
-- Cuantizacion Q4_K_M sin reevaluar: se estima una perdida de 1 a 3 puntos frente a fp16.
-- Sin red-teaming externo: el autor declara que el modelo no ha sido sometido a pruebas de seguridad por terceros.
-- Licencia: Apache 2.0 para este modelo, pero la licencia del base Qwen/Qwen3.5-0.8B debe revisarse por separado para uso comercial.
-- Suite de evaluacion propia: las metricas de identidad, tool calling y seguridad provienen de una suite interna del autor, no de benchmarks estandar de la comunidad.
+- Discrepancia de parametros entre la model card (4B) y los metadatos de safetensors (772,8M); afecta a estimaciones de hardware y a la interpretacion de los benchmarks.
+- No existe benchmark cruzado de suajili: el diferenciador principal no esta medido por MMLU ni HellaSwag.
+- Sin informacion en vivo: la recencia queda limitada a los datos de entrenamiento.
+- Riesgo de alucinacion en dominios especializados; no sustituye a retrieval.
+- Fuga de etiquetas de razonamiento: el modelo emite ocasionalmente bloques `<think>...</think>` en la salida visible; deben filtrarse en post-proceso.
+- Sesgos heredados del base Qwen/Qwen3.5-0.8B, no auditados.
+- La cuantizacion Q4_K_M no fue re-evaluada; se espera una perdida de 1 a 3 puntos frente a fp16.
+- No ha sido sometido a red teaming externo.
+- La licencia Apache 2.0 permite uso comercial, pero la licencia del modelo base (Qwen/Qwen3.5-0.8B) debe verificarse por separado.
+- La model card rechaza explicitamente las afirmaciones de "primer modelo africano", "mejor de Africa" o "state of the art"; no deben asumirse.
+- El correo de contacto de la model card aparece mal escrito ("gmsil.com"), lo que puede indicar falta de revision editorial.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/zabibutechnika/Fikra-Model-2-Micro-GGUF
-- Repositorio base fp16: https://huggingface.co/zabibutechnika/Fikra-Model-2-Micro
+- Repositorio base (safetensors/fp16): https://huggingface.co/zabibutechnika/Fikra-Model-2-Micro
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Perfil del autor: https://huggingface.co/zabibutechnika
-- Contacto declarado: zabibutechnika+fikra@gmsil.com (direccion tal como aparece en el model card)
+- Checkpoint intermedio: https://huggingface.co/zabibutechnika/fikra-v2-e3
+- Comparativa Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Gemma-2-2B-it: https://huggingface.co/google/gemma-2-2b-it
+- Harness de evaluacion: https://github.com/EleutherAI/lm-evaluation-harness
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com

@@ -2,75 +2,109 @@
 
 ## Resumen
 
-Qwen-AgentWorld-ULTRA es un modelo de mundo en lenguaje nativo ("native language world model") desarrollado por bbkdevops y publicado en Hugging Face. Se trata de un finetune no oficial sobre la base Qwen3.8-27B-TurboFCFusion, un modelo de la familia Qwen con arquitectura híbrida. Su función es simular entornos agénticos completos —observaciones, acciones, herramientas, recompensas y condiciones de finalización— como texto, de modo que un agente pueda entrenarse o evaluarse sin ejecutar el entorno real. El modelo tiene 27.320.697.856 parámetros, una ventana de contexto de 262.144 tokens y se distribuye en formato GGUF cuantizado a IQ4_NL.
+Auto-N.E.X.U.S. Ultra v3.0 es un modelo de lenguaje publicado en Hugging Face por el usuario bbkdevops bajo el identificador `bbkdevops/Qwen-AgentWorld-ULTRA`. Segun los metadatos del repositorio, se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 27.320.697.856 parametros totales, derivado de la familia Qwen (etiqueta `qwen3_5_moe`), orientado a generacion de codigo, razonamiento matematico y uso como agente autonomo. El autor lo presenta como un sistema cognitivo con simulacion de trayectorias especulativas, generacion dinamica de sub-agentes expertos y una supuesta cuantizacion ternaria de 1,25 bits.
 
-La relevancia actual del modelo radica en el auge de los agentes de IA: permite generar trayectorias sintéticas, probar planes mediante búsqueda (MCTS, Best-of-N) y aplicar entrenamiento de estilo Dreamer, reduciendo el coste de ejecutar entornos reales como WebShop, ALFWorld, OSWorld, CodeEnv, ToolEnv o TextGame. Su arquitectura híbrida combina atención completa en bloques intercalados con capas Mamba2 SSM, lo que le permite manejar secuencias largas de interacción.
+El modelo se distribuye principalmente en formato GGUF con metadatos de cuantizacion FP8 e `imatrix`, y esta etiquetado con licencia Apache 2.0. La model card incluye una tabla de resultados de evaluacion en benchmarks exigentes (SWE-bench Verified, SWE-bench Multilingual, Terminal-Bench 2.1, GSM8K, APEX-Agents), con cifras que el autor situa en el primer puesto mundial en varias categorias.
 
-## Especificaciones técnicas
+Es relevante ahora porque combina dos tendencias activas en el ecosistema open source: los modelos MoE eficientes en inferencia y el entrenamiento orientado a agentes de terminal y resolucion de issues reales. No obstante, buena parte de las afirmaciones tecnicas de la model card (compresion 13,96x, cuantizacion base-3 bipolar, auditoria de entropia) no vienen acompanadas de documentacion verificable en la informacion disponible, por lo que deben tratarse con cautela.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 híbrida: atención completa cada 4 bloques + Mamba2 SSM; 65 bloques; d=5120; FFN=17408; 24H/4KV; 65 capas; RoPE 10M; MTP next-n=1 |
+| Arquitectura | Mixture-of-Experts (MoE) derivada de Qwen (tag `qwen3_5_moe`), con modulo MTP (multi-token prediction) segun el autor |
 | Parametros totales | 27.320.697.856 |
-| Parametros activos | No disponible |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF IQ4_NL (16,5 GB) |
-| Idiomas soportados | No disponible (la documentación menciona prompts en tailandés e inglés) |
-| Licencia | No disponible |
-| Formato de pesos | GGUF IQ4_NL; safetensors (según metadatos del repositorio) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (repo), FP8, 1,25-bit ternario declarado por el autor, INT4 2:4 structured sparsity declarada |
+| Idiomas soportados | en, th |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (tamano del repo 17,8 GB); safetensors referenciado en los metadatos de parametros |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo se describe como híbrida Qwen3.5: cada cuarto bloque utiliza atención completa y el resto son bloques Mamba2 SSM, una combinación habitual en modelos de secuencias largas. El README indica que se ejecuta en la arquitectura `qwen35` (GGUFv3, archivo `qwen35 arch`). Tiene 65 bloques, una dimensión de modelo de 5120, una FFN de 17408, 24H/4KV, y usa rotaciones RoPE con frecuencia de 10M, además de multi-token prediction (`MTP next-n=1`) para decodificación especulativa.
+La informacion disponible indica una arquitectura transformer con capas Mixture-of-Experts, etiquetada como `qwen3_5_moe`, lo que sugiere una base derivada de la familia Qwen 3.5. El autor anade un componente denominado MTP (multi-token prediction) para generacion especulativa de hasta 4 tokens en una sola pasada, y describe un mecanismo de "spawning" dinamico de sub-agentes expertos especializados (ingenieria de software, arquitectura Linux, razonamiento simbolico, derecho contractual y auditoria adversarial).
 
-No se proporcionan datos sobre la composición del dataset de entrenamiento, el número de tokens ni si se aplicaron técnicas de alineación (RLHF, DPO). Tampoco se menciona el proceso de finetuning más allá del nombre de archivo de base. La innovación destacable no es el entrenamiento sino la interfaz: el modelo está diseñado para consumir un contrato de prompt que incluye instrucciones de simulación, especificación del entorno, historial, observación actual y acción, y devuelve JSON estricto con `next_observation`, `reward`, `done`, `info` y `thought`. Esto lo convierte en un simulador de entornos expresado completamente en lenguaje natural.
+No se dispone de informacion verificable sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o RL con verificadores. Los datasets listados en la model card (MMMU/MMMU_Pro, AIME 2026, SWE-bench Verified y Multilingual, SWE-bench Pro, HLE, Terminal-Bench 2.1, APEX-Agents, GSM8K) aparecen como conjuntos de evaluacion, no necesariamente como datos de entrenamiento. Las afirmaciones sobre cuantizacion ternaria bipolar `{-1, +1}`, compresion de VRAM de 13,96x y "auditoria de entropia de doble capa" carecen de detalle tecnico en la informacion proporcionada.
 
 ## Capacidades
 
-- Simulación de entornos agénticos a partir de observación + acción + historial, devolviendo la siguiente observación, recompensa, indicador de fin e información detallada en JSON.
-- Razonamiento de cadena de pensamiento larga (long chain-of-thought) a través de siete dominios unificados: MCP, Search, Terminal, SWE, Android, Web y OS.
-- Soporte de "dream training" estilo Dreamer: permite hacer rollout dentro del modelo simulado antes de desplegar el agente en el mundo real.
-- Planificación y búsqueda: puede usarse como simulador para MCTS o Best-of-N sampling.
-- Síntesis de datos: genera trayectorias sintéticas para fine-tuning con SFT o RL.
-- Interfaz OpenAI-compatible para servidor y cliente, según la estructura del repositorio del autor.
-- Tool use simulado: el manejo de llamadas a herramientas forma parte de la serialización textual del entorno, sin necesidad de ejecutar las herramientas reales.
+- Generacion de texto y conversacion multi-turno.
+- Razonamiento matematico y resolucion de problemas simbolicos (el autor reporta GSM8K al 97,4%).
+- Generacion y reparacion de codigo, incluyendo resolucion de issues en repositorios reales (SWE-bench).
+- Operacion como agente de terminal y CLI (Terminal-Bench 2.1).
+- Simulacion de trayectorias multi-paso con horizonte de 4 pasos antes de ejecutar acciones.
+- Soporte declarado de sub-agentes especializados por dominio.
+- Generacion especulativa multi-token (MTP) de hasta 4 tokens por pasada.
+- Idiomas: ingles y tailandes segun los metadatos; no se documenta soporte de castellano.
+- Tool calling / function calling: no documentado explicitamente en la informacion disponible.
+- Vision y audio: no disponibles.
 
 ## Casos de uso
 
-- Entrenamiento de agentes sin entorno real: se puede entrenar un agente sobre WebShop, ALFWorld, OSWorld o CodeEnv usando las predicciones del modelo como si fueran el entorno, eliminando la necesidad de lanzar simuladores costosos.
-- Evaluación de agentes en entornos no disponibles: para probar un agente en entornos de OS, Android, web o MCP sin acceso real, el modelo puede generar recompensas y estados sintéticos.
-- Dream training (Dreamer-style): un agente puede explorar trayectorias en el "sueño" del modelo con la función `step`, acumulando experiencia sintética que luego se transfiere al entorno real.
-- Planificación con MCTS o Best-of-N: el modelo funciona como un simulador forward para evaluar ramas de decisión, eligiendo la acción con mejor resultado proyectado.
-- Síntesis de datos para SFT/RL: se generan secuencias de interacción completas, incluyendo pensamiento del modelo, que pueden usarse para alinear otros agentes pequeños.
-- Pruebas de tool calling en desarrollo: se pueden simular respuestas de herramientas y APIs antes de integraciones reales, reduciendo costes de integración.
+- Resolucion automatica de issues en repositorios: el modelo esta evaluado en SWE-bench Verified y Multilingual, por lo que encaja en pipelines que reciben un issue, localizan los ficheros afectados y proponen un parche verificable con tests.
+- Agente de terminal y automatizacion de sistemas: su evaluacion en Terminal-Bench 2.1 lo situa como candidato para tareas de administracion Linux, diagnostico de entornos y ejecucion de comandos encadenados con verificacion.
+- Asistencia a refactorizaciones multi-lenguaje: la puntuacion declarada en SWE-bench Multilingual sugiere utilidad en bases de codigo heterogeneas (Python, Java, TypeScript, Go), integrable en revisiones de PR automatizadas.
+- Razonamiento matematico asistido: con GSM8K al 97,4% declarado, es adecuado para tutoria de problemas aritmeticos y verificacion de cadenas de calculo en entornos educativos o financieros.
+- Analisis de contratos y documentacion legal-comercial: el autor lo posiciona en APEX-Agents para tareas de derecho corporativo; uso realista en extraccion de clausulas y deteccion de riesgos en contratos, siempre con revision humana.
+- Simulacion de planes de ejecucion antes de actuar: el mecanismo de horizonte 4 permite generar y descartar trayectorias antes de tocar produccion, util en pipelines de CI/CD con acciones destructivas.
+- Despliegue en hardware de consumo: al distribuirse en GGUF y con 27,3B parametros totales, puede ejecutarse en una RTX 3090 de 24 GB segun el propio autor, lo que facilita prototipado local de agentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El README incluye una sección de evaluación y en Hugging Face aparece la etiqueta `eval-results`, pero no se proporcionan cifras concretas en el modelo card. Por tanto, no se puede contrastar su rendimiento con modelos similares.
+Resultados declarados por el autor en la model card (no verificados de forma independiente en la informacion disponible):
+
+| Benchmark | Tarea | Puntuacion declarada | Nota del autor |
+|---|---|---|---|
+| openai/gsm8k | `gsm8k` | 97,4% | Top tier mundial |
+| SWE-bench Multilingual | `swe_bench_multilingual_%_resolved` | 84,8% | Afirma superar a Tencent Hy4 (82,9%) |
+| SWE-bench Verified | `swe_bench_%_resolved` | 74,2% | Ejecutado en RTX 3090 con 1,25-bit 2:4 sparse |
+| Terminal-Bench 2.1 (Harbor) | `terminal_bench_accuracy` | 62,9% | State-of-the-art CLI agent |
+| SWE-bench Pro (ScaleAI) | `SWE_Bench_Pro` | 48,6% | Precision en horizonte largo |
+| mercor/apex-agents | `apex-agents` | 43,5% | Afirma superar a Moonshot Kimi-K3 (41,0%) |
+
+No se han publicado en la informacion disponible resultados independientes que confirmen estas cifras, ni comparaciones en MMLU, HumanEval, AIME o HLE pese a que esos datasets aparecen listados en las etiquetas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo viene cuantizado en GGUF IQ4_NL con 16,5 GB de peso, lo que permite inferencia completa en una GPU consumer de 24 GB (RTX 3090) con `n_gpu_layers=-1` (offload total).
-- GPU recomendadas: RTX 3090 (verificada), RTX 4090 24 GB, A100 40/80 GB, H100. En GPUs de menos de 24 GB se necesita offload parcial y límite de contexto reducido (por ejemplo, 32.768 tokens como en el quickstart).
-- Despliegue: compatible con `llama-cpp-python` (compilación cuBLAS/CUDA 12.6), `Ollama` mediante un `Modelfile` incluido, y un servidor OpenAI-compatible propio (`inference/`). También puede usarse con Hugging Face Transformers si se dispone de los pesos en formato safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: con 27,3B parametros totales, en FP16 requeriria aproximadamente 55 GB; en cuantizacion de 8 bits, unos 28 GB; en 4 bits, unos 14-16 GB. El autor afirma ejecucion en una RTX 3090 de 24 GB gracias a su esquema de compresion declarado.
+- GPU recomendadas: RTX 3090 (24 GB) segun el autor para el harness de SWE-bench Verified; A100 40/80 GB, H100 80 GB y L40S para despliegues con contexto largo y concurrencia.
+- GPU de consumo: cabe en RTX 3090 y RTX 4090 (24 GB) con cuantizacion; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) requeriria cuantizaciones agresivas y offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI si se dispone de pesos safetensors compatibles; el autor menciona endpoints compatibles (`endpoints_compatible`) y un motor propio (`subsea_moe_mtp_engine.py`).
+- Latencia y throughput: no disponibles. La generacion especulativa de 4 tokens por pasada (MTP) deberia reducir la latencia por token, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente sobre modelos comparables en la documentación. Dado que es un finetune no oficial de base Qwen3.8-27B, resultaría razonable compararlo con el modelo base o con otros world models, pero no hay datos de rendimiento que permitan una comparación rigurosa. Por tanto, se indica "no disponible".
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Qwen-AgentWorld-ULTRA (este) | 27,3B totales (MoE) | no disponible | Apache 2.0 | GGUF en HF | Cifras de benchmark declaradas por el autor, sin verificacion independiente |
+| Qwen3 MoE de referencia (familia base) | ~30B totales tipico | 32K-128K segun variante | Apache 2.0 | HF, vLLM, Ollama | Base de la que deriva el tag `qwen3_5_moe`; sin capacidades de agente declaradas |
+| DeepSeek-Coder-V2-Lite | 16B totales / 2,4B activos | 128K | DeepSeek License | HF, vLLM | Referencia en codigo open source; contexto mayor y licencia mas restrictiva |
+| Codestral / Devstral (Mistral) | 22-24B | 128K-256K | Apache 2.0 / MRL | HF, API | Alternativa europea con soporte de tool calling documentado |
+
+La comparativa con modelos concretos se limita a familias conocidas: no hay en la informacion disponible una comparacion oficial publicada por el autor mas alla de las menciones a Tencent Hy4 y Moonshot Kimi-K3 en la tabla de benchmarks.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada, lo que genera incertidumbre sobre el uso comercial y la redistribución.
-- El autor es bbkdevops y el modelo no está publicado por el equipo oficial de QwenLM, a pesar de que existe un repositorio oficial de Qwen-AgentWorld en GitHub. Los pesos de Hugging Face no tienen respaldo oficial.
-- Los prompts de la documentación están en tailandés e inglés; no hay lista oficial de idiomas soportados ni garantía de buen comportamiento en castellano.
-- La cuantización IQ4_NL puede degradar el rendimiento respecto a pesos completos, especialmente en tareas de razonamiento complejas.
-- Al ser un modelo de simulación, las observaciones generadas pueden ser plausibles pero incorrectas: existe riesgo de alucinación sobre el estado real del entorno.
-- Dependencia de la serialización textual: los entornos no se representan mediante APIs o estructuras de datos, sino como texto, lo que puede perder información o introducir sesgos en la simulación.
-- No se han publicado benchmarks, por lo que la calidad de la simulación no está validada externamente.
+- Las cifras de benchmark y las innovaciones tecnicas (cuantizacion ternaria, compresion 13,96x, auditoria de entropia) proceden unicamente de la model card del autor y no se han verificado de forma independiente.
+- El nombre del modelo y la descripcion ("omni-intelligence cognitive monolith") emplean terminologia de marketing que no se corresponde con artefactos tecnicos documentados en el repositorio.
+- Solo se declaran los idiomas ingles y tailandes; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- No se especifica la longitud de contexto soportada, lo que impide garantizar casos de uso con documentos largos.
+- Riesgo de alucinacion: la afirmacion de "zero-hallucination" es incompatible con el comportamiento conocido de los LLM; debe asumirse alucinacion y aplicar verificacion externa.
+- Los sesgos no estan documentados; al derivar de una base Qwen, heredara los sesgos de su dataset original.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un modelo derivado conviene revisar las obligaciones de atribucion de la familia base.
+- El repositorio tiene 944 descargas y 2 likes, con una unica creacion en septiembre de 2026 y actualizacion en octubre: senales de un proyecto joven sin validacion de la comunidad.
+- El tamano del repo (17,8 GB) sugiere pesos cuantizados, no FP16 completos; la calidad respecto al modelo original puede degradarse.
+- No hay informacion sobre tool calling nativo, por lo que la integracion en frameworks de agentes requerira prompts y parsers propios.
 
 ## Enlaces
 
-- https://huggingface.co/bbkdevops/Qwen-AgentWorld-ULTRA
-- https://github.com/QwenLM/Qwen-AgentWorld (repositorio oficial según resultados de búsqueda)
-- https://github.com/btekmen/qwen-agentworld (repositorio alternativo)
+- Modelo en Hugging Face: https://huggingface.co/bbkdevops/Qwen-AgentWorld-ULTRA
+- Estandar de evaluacion de Hugging Face citado por el autor: https://huggingface.co/docs/hub/en/eval-results#benchmark-datasets
+- SWE-bench (leaderboard oficial): https://www.swebench.com/
+- Terminal-Bench: https://github.com/laude-institute/terminal-bench
+- GSM8K (dataset): https://huggingface.co/datasets/openai/gsm8k
+- MMMU-Pro (dataset): https://huggingface.co/datasets/MMMU/MMMU_Pro
+- HLE (Humanity's Last Exam): https://huggingface.co/datasets/cais/hle
+- SWE-bench Pro (ScaleAI): https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro
+- APEX-Agents (Mercor): https://huggingface.co/datasets/mercor/apex-agents

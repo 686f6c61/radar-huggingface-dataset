@@ -2,139 +2,126 @@
 
 ## Resumen
 
-`russian-ai-text-detector-modernbert` es un clasificador binario de texto en ruso que estima la probabilidad de que un texto haya sido escrito por un modelo de lenguaje en lugar de por una persona. Lo desarrolla el autor `toiletsandpaper` dentro del proyecto `aiw-ru` (`avoid-ai-writing-russian`) y se distribuye como un ajuste fino del encoder `deepvk/RuModernBERT-small`, con 34,5 millones de parametros y exportado a ONNX en fp32 (140 MB) e int8 (36,1 MB).
+`russian-ai-text-detector-modernbert` es un clasificador binario de texto en ruso que estima la probabilidad de que un fragmento haya sido escrito por un modelo de lenguaje en lugar de por una persona. Lo desarrolla el autor independiente `toiletsandpaper` como parte del ecosistema de herramientas `aiw-ru` (avoid-ai-writing-russian), un conjunto de utilidades para detectar y reescribir texto generado por IA en ruso. El modelo parte del encoder `deepvk/RuModernBERT-small` y se afina sobre la parte rusa del corpus LLMTrace.
 
-El modelo resuelve un problema muy concreto: el filtrado de "AI slop" en ruso, es decir, la deteccion de articulos, noticias, resenas, respuestas y publicaciones generadas por asistentes como ChatGPT, GigaChat, YandexGPT, Qwen, Llama, Gemma, DeepSeek, Mistral o Command R. Su relevancia practica esta en el coste de despliegue: al ser un encoder pequeno exportado a ONNX, funciona en CPU con `onnxruntime`, sin PyTorch ni GPU, lo que permite integrarlo en pipelines de moderacion a gran escala.
+La relevancia práctica del modelo está en su perfil de despliegue: con 34,5 millones de parámetros y exportación a ONNX, funciona en CPU mediante `onnxruntime` sin necesidad de PyTorch ni GPU. El archivo `model.onnx` en fp32 ocupa 140 MB y el `model_int8.onnx` apenas 36,3 MB, lo que permite integrarlo en filtros de contenido, pipelines editoriales o extensiones de navegador con requisitos de infraestructura mínimos.
 
-Frente a la alternativa del propio proyecto basada en LightGBM sobre caracteristicas estilometricas (ROC AUC 0,943), este modelo alcanza ROC AUC 0,993 y accuracy 0,962 en la particion de test del corpus LLMTrace, con un rendimiento estable por genero textual (entre 0,9409 y 0,9743 de accuracy). Es, por tanto, la opcion de mayor calidad de la familia `aiw-ru`, y opcional dentro de la herramienta: solo se instala bajo peticion explicita.
+El modelo se entrenó con textos generados por ChatGPT (GPT-3.5, GPT-4, GPT-4o, o1, o3), GigaChat, YandexGPT, Qwen, Llama, Gemma, DeepSeek, Mistral y Command R, entre otros, lo que amplía su cobertura más allá de un único proveedor. En la partición de test del corpus declara un ROC AUC de 0,993 y una accuracy de 0,963, con un rendimiento especialmente alto en reseñas y relatos y algo más bajo en textos factuales y de formato corto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer (ModernBERT), ajuste fino de `deepvk/RuModernBERT-small` |
-| Parametros totales | 34,5 millones |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible (la model card no especifica la ventana de tokens) |
-| Tipos de cuantizacion | fp32 (`model.onnx`) e int8 (`model_int8.onnx`) |
+| Arquitectura | Transformer encoder (ModernBERT), afinado para clasificacion binaria |
+| Parametros totales | 34.540.034 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp32 (ONNX principal), int8 (export opcional `model_int8.onnx`); pesos PyTorch en safetensors |
 | Idiomas soportados | ruso (ru) |
-| Licencia | apache-2.0 |
-| Formato de pesos | ONNX (ejecucion con `onnxruntime`; soporta `text-embeddings-inference`) |
-
-Otros datos de interes: tarea `text-classification`, tamano del repositorio 0,2 GB, fecha de creacion 25 de septiembre de 2026, modelo base `deepvk/RuModernBERT-small` (relacion `finetune`), dataset de entrenamiento y evaluacion `iitolstykh/LLMTrace_classification`.
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (`model.onnx`, `model_int8.onnx`), safetensors (`model.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un ajuste fino de `deepvk/RuModernBERT-small`, un encoder transformer de 34,5 millones de parametros especializado en ruso. La model card no documenta la configuracion interna del fine-tuning (numero de capas activas, dimension oculta, cabezas de atencion) ni el numero exacto de tokens de entrenamiento; se sabe que el punto de partida es la familia ModernBERT, un encoder disenado para sustituir a BERT en tareas de comprension, pero no se confirman detalles de configuracion especificos de esta variante.
+El modelo es un encoder ModernBERT (`deepvk/RuModernBERT-small`) con una cabeza de clasificacion de dos clases (`ai` / `human`). Se trata de un ajuste fino supervisado sobre la parte rusa del corpus LLMTrace (`iitolstykh/LLMTrace_classification`), que combina textos humanos con textos generados por una amplia familia de LLM. El repositorio incluye los pesos PyTorch en `model.safetensors` (138 MB) para quien quiera reentrenar o exportar a otro formato, ademas de los dos artefactos ONNX listos para inferencia.
 
-El entrenamiento se realizo sobre la parte rusa del corpus LLMTrace (`iitolstykh/LLMTrace_classification`), que contiene textos generados por ChatGPT (GPT-3.5, GPT-4, GPT-4o, o1, o3), GigaChat, YandexGPT, Qwen, Llama, Gemma, DeepSeek, Mistral y Command R, junto con textos humanos. El script de entrenamiento esta publicado en `aiw-ru` (`scripts/train_transformer.py`). No hay informacion disponible sobre el uso de RLHF, DPO u otras tecnicas de alineacion, algo esperable en un clasificador y no en un modelo generativo.
-
-Como innovacion de despliegue, el autor exporta el modelo a ONNX con pesos fp32 y ofrece una variante int8 opcional. La eleccion por defecto es fp32 porque la cuantizacion int8 cambia la etiqueta predicha en el 1,1 % de los textos de validacion, un compromiso entre un modelo de 140 MB y uno de 36,1 MB.
+La exportacion a ONNX con pesos fp32 es la via recomendada por el autor: el export int8 cambia la etiqueta predicha en el 1,0 % de los textos de validacion, por lo que la herramienta `aiw-ru` descarga el fp32 por defecto. El script de entrenamiento esta publicado en el repositorio `ormeilu/avoid-ai-writing-russian` (`scripts/train_transformer.py`), lo que facilita reproducir el ajuste. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables a un encoder de clasificacion).
 
 ## Capacidades
 
-- Clasificacion binaria de texto ruso en dos clases: `ai` y `human`, con salida de probabilidad asociada.
-- Deteccion de texto generado por multiples familias de LLM: ChatGPT (GPT-3.5, GPT-4, GPT-4o, o1, o3), GigaChat, YandexGPT, Qwen, Llama, Gemma, DeepSeek, Mistral y Command R.
-- Robustez por genero textual: la model card reporta metricas desagregadas para articulo, texto factual, noticia, poesia, pregunta, resena, texto corto y relato.
-- Analisis estilometrico implicito: el modelo aprende rasgos de estilo que discriminan texto humano de texto generado.
-- Inferencia en CPU mediante `onnxruntime`, sin dependencia de PyTorch ni de GPU.
-- Integracion en la CLI `aiw-ru` (`aiw-ru classify --model modernbert`) y compatibilidad declarada con `text-embeddings-inference`.
-- No soporta generacion de texto, tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni capacidades multimodales: es un clasificador, no un modelo generativo.
-- No es multilingue: unicamente ruso.
+- Clasificacion binaria de texto en ruso: distingue entre texto escrito por humanos y texto generado por IA.
+- Deteccion multi-proveedor: entrenado con salidas de ChatGPT (GPT-3.5, GPT-4, GPT-4o, o1, o3), GigaChat, YandexGPT, Qwen, Llama, Gemma, DeepSeek, Mistral y Command R.
+- Analisis estilometrico implicito: el modelo aprende patrones de estilo y estructura propios del texto generado, sin necesidad de metadatos ni marcas de agua.
+- Cobertura de generos: articulos, noticias, resenas, poesia, relatos, respuestas a preguntas y textos de formato corto.
+- Inferencia en CPU: ejecucion con `onnxruntime` sin torch ni GPU.
+- Integracion en herramientas: pensado como componente opcional del ecosistema `aiw-ru` (`aiw-ru models install modernbert`).
+- No soporta generacion de texto, tool calling, agentes ni capacidades multimodales: es exclusivamente un clasificador.
 
 ## Casos de uso
 
-- Moderacion de contenido en plataformas editoriales y redes sociales en ruso: el modelo puntua cada texto con una probabilidad de ser generado por IA, lo que permite filtrar o marcar contenido masivo de bajo esfuerzo ("AI slop") con un coste de computo minimo al ejecutarse en CPU.
-- Verificacion editorial en medios de comunicacion: permite revisar si una columna, nota de prensa o articulo recibido ha sido producido por un LLM antes de publicarlo, con una precision del 0,97 sobre la clase `ai`.
-- Limpieza y filtrado de corpus de entrenamiento: al clasificar grandes volumenes de texto ruso, sirve para descartar documentos generados sinteticamente y evitar contaminacion en datasets propios de investigacion o de ajuste de modelos.
-- Deteccion de resenas falsas en comercio electronico: el genero "review" es uno de los mejor resueltos (accuracy 0,9743, ROC AUC 0,9954), lo que lo hace adecuado para auditar resenas de producto escritas por LLM.
-- Analisis de respuestas en foros y plataformas de preguntas y respuestas: el genero "question" alcanza accuracy 0,9724, lo que permite marcar respuestas automatizadas en comunidades tecnicas o de soporte.
-- Asistencia a la escritura con la herramienta `aiw-ru`: el modelo se integra como comprobador opcional que avisa al autor cuando su borrador presenta rasgos propios de texto generado por IA, sin bloquear el flujo de trabajo.
-- Deteccion academica de trabajos generados por IA: util como senal adicional en la revision de ensayos y trabajos en ruso, teniendo en cuenta su caida de rendimiento en textos cortos (accuracy 0,9409).
-- Monitorizacion de poesia y narrativa generada: los generos "poetry" y "story" se evaluan por separado con accuracy 0,9578 y 0,9668, lo que habilita la revision de plataformas literarias.
+- Moderacion de contenido en plataformas rusohablantes: el clasificador puede ejecutarse en CPU sobre cada publicacion o comentario para marcar contenido sospechoso de generacion automatica antes de la revision humana, con un coste de infraestructura minimo gracias al archivo ONNX de 140 MB.
+- Filtrado de "AI slop" en agregadores y foros: integrado como paso previo al ranking o a la publicacion, permite descartar o etiquetar textos masivos generados por LLM en ruso, un problema creciente en comunidades de noticias y blogs.
+- Verificacion editorial en medios: un periodista o editor puede pasar un articulo recibido por el modelo para obtener una probabilidad de autoria artificial; la accuracy declarada en la categoria `article` es 0,9663 y el ROC AUC 0,9936.
+- Deteccion de resenas falsas en e-commerce: la categoria `review` es la de mejor rendimiento declarado (accuracy 0,9788, ROC AUC 0,995), lo que lo hace adecuado para senalar resenas generadas por IA en tiendas y marketplaces.
+- Analisis de trabajos academicos y respuestas: con accuracy 0,9687 en la categoria `question`, sirve para revisar respuestas generadas en plataformas educativas o formularios.
+- Preprocesado en pipelines de datos: como clasificador ligero, puede usarse para etiquetar grandes volumenes de texto ruso (scraping, datasets de entrenamiento) y separar muestras humanas de muestras sinteticas antes de entrenar otros modelos.
+- Extension de navegador o plugin de escritorio: el tamano reducido del modelo int8 (36,3 MB) permite despliegues locales en el cliente para avisar al usuario cuando el texto que lee o escribe tiene alta probabilidad de ser generado por IA.
 
 ## Benchmarks y rendimiento
 
-Todos los valores proceden del `model-index` declarado por el autor, marcados como no verificados (`verified: false`). El conjunto de evaluacion es la particion de test de `iitolstykh/LLMTrace_classification`.
+Resultados declarados por el autor (no verificados de forma independiente) sobre el split de test del corpus LLMTrace classification (ru):
 
 | Metrica | Valor |
 |---|---|
-| Accuracy | 0,962 |
+| Accuracy | 0,9635 |
 | ROC AUC | 0,993 |
-| Macro F1 | 0,9607 |
-| Precision (clase `ai`) | 0,97 |
-| Recall (clase `ai`) | 0,9657 |
-| F1 (clase `ai`) | 0,9678 |
-| Precision (clase `human`) | 0,9505 |
-| Recall (clase `human`) | 0,9566 |
-| F1 (clase `human`) | 0,9535 |
-| ROC AUC (humano frente a generado desde cero) | 0,9938 |
+| Macro F1 | 0,9623 |
+| Precision (AI) | 0,9763 |
+| Recall (AI) | 0,9616 |
+| F1 (AI) | 0,9689 |
+| Precision (human) | 0,9455 |
+| Recall (human) | 0,9661 |
+| F1 (human) | 0,9557 |
 
-Desglose por genero textual (particion de test):
+Desglose por categoria (test):
 
-| Genero | Accuracy | ROC AUC |
+| Categoria | Accuracy | ROC AUC |
 |---|---|---|
-| Articulo | 0,9657 | 0,9953 |
-| Factual | 0,9349 | 0,9841 |
-| Noticia | 0,9569 | 0,9922 |
-| Poesia | 0,9578 | 0,9908 |
-| Pregunta | 0,9724 | 0,9951 |
-| Resena | 0,9743 | 0,9954 |
-| Texto corto | 0,9409 | 0,985 |
-| Relato | 0,9668 | 0,9948 |
+| Article | 0,9663 | 0,9936 |
+| Factual | 0,9432 | 0,9863 |
+| News | 0,9548 | 0,9926 |
+| Poetry | 0,9597 | 0,9893 |
+| Question | 0,9687 | 0,9943 |
+| Review | 0,9788 | 0,995 |
+| Short form | 0,9409 | 0,989 |
+| Story | 0,9729 | 0,9946 |
+| Human vs generado desde cero | no disponible | 0,994 |
 
-Particion de validacion:
+Particion de validacion: accuracy 0,9642 y ROC AUC 0,9934.
 
-| Metrica | Valor |
-|---|---|
-| Accuracy | 0,963 |
-| ROC AUC | 0,9935 |
-
-Comparacion interna del proyecto: el detector basado en LightGBM sobre caracteristicas estilometricas de `aiw-ru` obtiene ROC AUC 0,943, frente al 0,993 de este modelo.
+Comparacion interna declarada por el autor: el detector LightGBM sobre caracteristicas de `aiw-ru` obtiene ROC AUC 0,943, frente al 0,993 de este modelo.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible como dato declarado, pero al ser un encoder de 34,5 millones de parametros en ONNX, la inferencia puede ejecutarse integramente en CPU con `onnxruntime`.
-- Peso en disco: 140 MB para `model.onnx` (fp32) y 36,1 MB para `model_int8.onnx` (int8); el repositorio completo ocupa 0,2 GB.
-- GPU recomendadas: no se declara ninguna; el modelo no necesita GPU. Cualquier GPU consumer (por ejemplo una RTX 4090 o inferior) puede ejecutarlo, pero es sobredimensionada para esta carga.
-- Cabida en hardware consumer: si, en cualquier CPU moderna e incluso en dispositivos de gama baja, dado el tamano del modelo. No se especifica soporte para aceleradores tipo Coral o NPU.
-- Opciones de despliegue: `onnxruntime` en CPU, la CLI de `aiw-ru` (`aiw-ru models install modernbert`, `aiw-ru classify --model modernbert`) y `text-embeddings-inference` (etiqueta declarada en el repositorio).
-- Latencia y throughput estimados: no disponibles; la model card no publica cifras de latencia ni de textos por segundo.
-- Nota sobre cuantizacion: la variante int8 reduce el tamano a aproximadamente una cuarta parte, pero la herramienta `aiw-ru` no la descarga por defecto porque altera la etiqueta predicha en el 1,1 % de los textos de validacion.
+- VRAM: no requiere GPU; el modelo esta pensado para inferencia en CPU.
+- Memoria RAM: el archivo ONNX fp32 ocupa 140 MB en disco y puede cargarse en memoria de forma holgada en cualquier maquina; el int8 ocupa 36,3 MB.
+- GPU recomendadas: no aplica; cualquier GPU es innecesaria para este modelo. En caso de querer acelerar, `onnxruntime` admite proveedores de ejecucion CUDA o CoreML, pero no es el escenario previsto.
+- Cabe en cualquier equipo consumer: portatiles, servidores pequenos, contenedores sin GPU e incluso navegador (via ONNX Runtime Web) con el export int8.
+- Opciones de despliegue: `onnxruntime` (Python, C++, JS), integracion en `aiw-ru` mediante `aiw-ru models install modernbert`, o carga de los pesos safetensors con Transformers para reentrenamiento.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo (34,5 M de parametros) se espera inferencia del orden de milisegundos por texto en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-La comparacion natural es con el resto de detectores del proyecto `aiw-ru`. Para las alternativas externas de deteccion de texto generado en ruso no se dispone de datos en la informacion proporcionada.
-
-| Modelo | Base | Parametros | ROC AUC | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | ROC AUC (LLMTrace ru) | Licencia | Formato |
 |---|---|---|---|---|---|
-| `russian-ai-text-detector-modernbert` | RuModernBERT-small, ONNX | 34,5 M | 0,993 (test) | apache-2.0 | Hugging Face, ONNX, CPU |
-| `russian-ai-text-detector-bert` | transformer (BERT) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
-| `russian-ai-text-detector-mini-frida` | mini-frida | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
-| `russian-ai-text-detector-lightgbm` | LightGBM sobre caracteristicas `aiw-ru` | no aplica | 0,943 | no disponible en la informacion proporcionada | Hugging Face |
+| russian-ai-text-detector-modernbert | 34,5 M | no disponible | 0,993 | Apache 2.0 | ONNX, safetensors |
+| russian-ai-text-detector-bert | no disponible | no disponible | no disponible | no disponible | no disponible |
+| russian-ai-text-detector-mini-frida | no disponible | no disponible | no disponible | no disponible | no disponible |
+| russian-ai-text-detector-lightgbm | no disponible (modelo de caracteristicas) | no aplica | 0,943 | no disponible | no disponible |
+
+Las tres alternativas pertenecen al mismo autor y al mismo ecosistema `aiw-ru`; la informacion disponible no incluye sus especificaciones detalladas ni sus resultados completos, por lo que la comparacion se limita al dato de ROC AUC del detector LightGBM (0,943) frente al 0,993 de este modelo. No se dispone de comparativas con detectores de terceros en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo ruso. No debe esperarse un comportamiento correcto en otros idiomas.
-- Sesgo de corpus: el modelo se entrena con las familias de LLM presentes en LLMTrace. Modelos mas recientes, versiones ajustadas o textos generados con prompts muy especificos pueden escapar a la deteccion.
-- Falsos positivos sobre texto humano formal: la precision sobre la clase `human` es 0,9505, la metrica mas baja del conjunto, lo que implica que aproximadamente uno de cada veinte textos humanos podria clasificarse como generado por IA. No debe usarse como prueba concluyente en contextos disciplinarios.
-- Textos cortos y contenido factual: son los generos con peor rendimiento (accuracy 0,9409 en `short_form` y 0,9349 en `factual`), por lo que el detector es menos fiable en fragmentos breves o en texto enciclopedico.
-- Metricas no verificadas: todos los resultados del `model-index` estan marcados como `verified: false`; proceden del propio autor y no han sido replicados de forma independiente.
-- Cuantizacion int8 con perdida: cambia la etiqueta en el 1,1 % de los textos de validacion respecto a fp32.
-- Licencia: el modelo se publica bajo apache-2.0, lo que permite uso comercial, pero la licencia del corpus de entrenamiento `iitolstykh/LLMTrace_classification` deberia revisarse antes de un despliegue en produccion.
-- Estado del repositorio: cero descargas y cero likes en el momento de la consulta, y un tamano de 0,2 GB; conviene validar el artefacto antes de integrarlo en un pipeline critico.
-- Naturaleza del artefacto: es un clasificador, no un generador. No admite instrucciones, tool calling ni generacion de texto, y no debe invocarse como si fuera un LLM.
-- Uso responsable: una prediccion de "IA" o "humano" es una senal estadistica, no una prueba forense. Debe acompanarse siempre de revision humana en decisiones con consecuencias.
+- Solo ruso: el modelo no esta entrenado para otros idiomas y no debe usarse con textos en castellano u otras lenguas.
+- Sesgo de corpus: entrenado sobre LLMTrace, por lo que su rendimiento puede degradarse con modelos de lenguaje no representados en el corpus o con tecnicas de parafraseo humano.
+- Riesgo de falsos positivos: la precision sobre la clase `human` es 0,9455, la metrica mas baja del conjunto; un 5,5 % de los textos humanos clasificados como IA en el conjunto de test.
+- No es una prueba definitiva: la salida es una probabilidad estadistica, no una evidencia; no deberia usarse como unico criterio para sancionar, suspender cuentas o acusar de fraude academico.
+- Alucinacion no aplica en el sentido generativo, pero si existe riesgo de clasificacion erronea en generos poco representados (textos factuales y de formato corto son los de menor accuracy: 0,9432 y 0,9409).
+- Deriva temporal: los textos generados por modelos futuros pueden no parecerse a los del corpus de entrenamiento, lo que reduce la eficacia con el tiempo.
+- Cuantizacion int8: cambia la etiqueta en el 1,0 % de los textos de validacion; para uso critico se recomienda el export fp32.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene revisar las condiciones del corpus LLMTrace y del modelo base `deepvk/RuModernBERT-small` para usos derivados.
+- Resultados no verificados: todas las metricas son declaradas por el autor (`verified: false`) y no se han reproducido de forma independiente en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-modernbert
 - Modelo base: https://huggingface.co/deepvk/RuModernBERT-small
-- Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/iitolstykh/LLMTrace_classification
-- Repositorio del proyecto `aiw-ru`: https://github.com/ormeilu/avoid-ai-writing-russian
+- Dataset de entrenamiento: https://huggingface.co/datasets/iitolstykh/LLMTrace_classification
+- Repositorio aiw-ru (script de entrenamiento): https://github.com/ormeilu/avoid-ai-writing-russian
 - Script de entrenamiento: https://github.com/ormeilu/avoid-ai-writing-russian/blob/master/scripts/train_transformer.py
-- Variante BERT del mismo proyecto: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-bert
-- Variante mini-frida: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-mini-frida
-- Variante LightGBM: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-lightgbm
-- Paper referenciado (arXiv 2509.21269): https://arxiv.org/abs/2509.21269
-- Paper referenciado (arXiv 2412.13663): https://arxiv.org/abs/2412.13663
+- Modelo alternativo bert: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-bert
+- Modelo alternativo mini-frida: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-mini-frida
+- Modelo alternativo LightGBM: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-lightgbm
+- Paper referenciado (arXiv:2509.21269): https://arxiv.org/abs/2509.21269
+- Paper referenciado (arXiv:2412.13663): https://arxiv.org/abs/2412.13663

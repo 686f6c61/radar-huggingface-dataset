@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LiquidAI/d1-Omni-2B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF",
-      "snippet": "Audio-Text-to-Text model with 2B parameters, built with GGUF. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "README.md · LiquidAI/d1-Omni-2B-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF/blob/main/README.md",
-      "snippet": "d1-Omni-2B is a decision model for text, pictures, and audio, built on LFM3-Omni-2B. It returns calibrated answers in one forward pass, without generating tokens."
-    }
-  ]
+  "sources": []
 }

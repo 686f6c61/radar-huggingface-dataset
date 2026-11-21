@@ -65,7 +65,7 @@
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy",
-      "value": 0.962
+      "value": 0.9635
     },
     {
       "task": "AI-generated text detection",
@@ -77,121 +77,121 @@
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Macro F1",
-      "value": 0.9607
+      "value": 0.9623
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Precision (AI)",
-      "value": 0.97
+      "value": 0.9763
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Recall (AI)",
-      "value": 0.9657
+      "value": 0.9616
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "F1 (AI)",
-      "value": 0.9678
+      "value": 0.9689
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Precision (human)",
-      "value": 0.9505
+      "value": 0.9455
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Recall (human)",
-      "value": 0.9566
+      "value": 0.9661
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "F1 (human)",
-      "value": 0.9535
+      "value": 0.9557
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (human vs generated from scratch)",
-      "value": 0.9938
+      "value": 0.994
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (article)",
-      "value": 0.9657
+      "value": 0.9663
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (article)",
-      "value": 0.9953
+      "value": 0.9936
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (factual)",
-      "value": 0.9349
+      "value": 0.9432
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (factual)",
-      "value": 0.9841
+      "value": 0.9863
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (news)",
-      "value": 0.9569
+      "value": 0.9548
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (news)",
-      "value": 0.9922
+      "value": 0.9926
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (poetry)",
-      "value": 0.9578
+      "value": 0.9597
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (poetry)",
-      "value": 0.9908
+      "value": 0.9893
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (question)",
-      "value": 0.9724
+      "value": 0.9687
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (question)",
-      "value": 0.9951
+      "value": 0.9943
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (review)",
-      "value": 0.9743
+      "value": 0.9788
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (review)",
-      "value": 0.9954
+      "value": 0.995
     },
     {
       "task": "AI-generated text detection",
@@ -203,58 +203,32 @@
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (short_form)",
-      "value": 0.985
+      "value": 0.989
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy (story)",
-      "value": 0.9668
+      "value": 0.9729
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC (story)",
-      "value": 0.9948
+      "value": 0.9946
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "Accuracy",
-      "value": 0.963
+      "value": 0.9642
     },
     {
       "task": "AI-generated text detection",
       "dataset": "LLMTrace classification (ru)",
       "metric": "ROC AUC",
-      "value": 0.9935
+      "value": 0.9934
     }
   ],
-  "sources": [
-    {
-      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
-      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
-      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub.Read more"
-    },
-    {
-      "title": "Download GitHub Desktop",
-      "url": "https://desktop.github.com/download/",
-      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …Read more"
-    },
-    {
-      "title": "r/funny - Reddit",
-      "url": "https://www.reddit.com/r/funny/",
-      "snippet": "r/funny: Reddit's largest humor depository No personally identifying information, including anything hosted on platforms making that …Read more"
-    },
-    {
-      "title": "chatgpt-api · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/chatgpt-api",
-      "snippet": "3 days ago · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo language …Read more"
-    },
-    {
-      "title": "知乎 - 有问题，就会有答案",
-      "url": "https://www.zhihu.com/signin",
-      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …Read more"
-    }
-  ]
+  "sources": []
 }

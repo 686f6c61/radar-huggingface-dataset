@@ -53,6 +53,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "UniBench-100 (Best Meditor 1 Run)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "BF16 Mean Score (/10)",
+      "value": 2.42
+    },
+    {
+      "task": "UniBench-100 (Best Meditor 1 Run)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "BF16 Pass Rate (%)",
+      "value": 1
+    },
+    {
+      "task": "ARC Commonsense (15Q)",
+      "dataset": "ARC Challenge Subset",
+      "metric": "ARC Accuracy (%)",
+      "value": 86.7
+    },
+    {
+      "task": "WikiText-2 Validation PPL",
+      "dataset": "WikiText-2",
+      "metric": "Perplexity",
+      "value": 3.56
+    }
+  ],
   "sources": []
 }

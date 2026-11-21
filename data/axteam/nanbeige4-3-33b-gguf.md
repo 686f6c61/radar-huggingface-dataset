@@ -2,89 +2,99 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-GGUF es una cuantización en formato GGUF del modelo base Nanbeige4.3-33B, publicada por el usuario axteam en Hugging Face. El modelo original procede de Nanbeige, y esta versión cuantizada permite ejecutar el modelo de 33 mil millones de parámetros en hardware de consumo mediante llama.cpp, Ollama o LM Studio, sin necesidad de GPUs de gama datacenter.
+Nanbeige4.3-33B-GGUF es la distribucion cuantizada en formato GGUF del modelo Nanbeige4.3-33B, publicado por el usuario axteam. El modelo original pertenece a Nanbeige y cuenta con 33.118.977.024 parametros (aproximadamente 33.000 millones), empaquetados en pesos BF16 que aqui se convierten a cuantizaciones de 4 y 8 bits para su uso con llama.cpp, Ollama y LM Studio. La licencia es Apache-2.0.
 
-El repositorio incluye dos cuantizaciones: Q4_K_M (20,1 GB, recomendada como equilibrio entre tamaño y calidad) y Q8_0 (35,2 GB, la más fiel a los pesos originales BF16). La cuantización es post-training (PTQ), realizada con las herramientas de llama.cpp, sin reentrenamiento, y cada archivo incorpora la plantilla de chat original del modelo.
+El repositorio resuelve un problema practico muy concreto: hacer ejecutable un modelo denso de 33B en hardware de consumo o en GPUs de centro de datos con VRAM limitada, sin necesidad de reentrenar ni de recurrir al modelo original en BF16 (que no esta incluido en este repositorio). Se ofrecen dos ficheros: Q4_K_M (20,1 GB), que equilibra tamano y calidad, y Q8_0 (35,2 GB), que se aproxima mas a los pesos originales.
 
-La relevancia de esta ficha radica en la disponibilidad de un modelo denso de 33B bajo licencia Apache 2.0 en formato GGUF, lo que facilita su despliegue local y su integración en pipelines que requieren inferencia offline o de bajo coste. No se dispone de la model card original del modelo base, por lo que varios datos técnicos (arquitectura detallada, datos de entrenamiento, benchmarks) no están disponibles.
+La relevancia actual radica en que el autor publica mediciones de perplejidad reales sobre GPU (NVIDIA B200, llama.cpp b12005) tanto en ingles (WikiText-2) como en coreano (muestra de Wikipedia en coreano), lo que permite evaluar la perdida de calidad de la cuantizacion con datos verificables. No se dispone de informacion sobre arquitectura interna, contexto maximo ni composicion del dataset de entrenamiento del modelo base en la informacion proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (no disponible detalle exacto) |
-| Parámetros totales | 33.118.977.024 (~33B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la model card (los ejemplos usan 8192 tokens) |
-| Tipos de cuantización | Q4_K_M (20,1 GB), Q8_0 (35,2 GB); pesos originales en BF16 |
-| Idiomas soportados | No disponible (los ejemplos de la model card incluyen coreano) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (original en safetensors BF16) |
+| Arquitectura | Transformer denso (familia `llama` segun llama.cpp); detalles internos no disponibles |
+| Parametros totales | 33.118.977.024 (aproximadamente 33B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (los ejemplos de uso emplean `-c 8192`, pero no se confirma el maximo nativo) |
+| Tipos de cuantizacion | Q4_K_M (4 bits, k-quant medium) y Q8_0 (8 bits) |
+| Idiomas soportados | No disponible oficialmente; la model card incluye evaluacion en ingles y coreano, y plantilla de chat embebida |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); el repositorio no incluye BF16 ni safetensors |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un modelo denso de 33 mil millones de parámetros (33.118.977.024 según los metadatos de safetensors), del cual no se ha publicado información detallada sobre su arquitectura interna, número de capas, dimensiones ocultas ni mecanismos de atención específicos. Los ejemplos de la model card sugieren compatibilidad con plantillas de chat Jinja y con la API de chat de llama.cpp.
+El repositorio es una cuantizacion post-entrenamiento (PTQ) de los pesos BF16 del modelo Nanbeige4.3-33B, realizada con las herramientas de llama.cpp (`convert_hf_to_gguf.py` seguido de `llama-quantize`). La cuantizacion es por bloques con escalas por bloque y asignacion mixta de bits (k-quants), sin reentrenamiento ni ajuste fino posterior. Cada fichero GGUF incorpora la plantilla de chat (`chat_template`) original del modelo base, lo que permite usar el modo conversacional directamente en llama.cpp, Ollama o LM Studio.
 
-La cuantización publicada por axteam es de tipo post-training (PTQ): los pesos BF16 originales se convierten a k-quants de llama.cpp mediante `convert_hf_to_gguf.py` y `llama-quantize`, con escalas por bloque y asignación mixta de bits, sin ningún reentrenamiento ni ajuste fino posterior. No hay datos disponibles sobre el corpus de entrenamiento, el número de tokens, ni si el modelo base pasó por RLHF, DPO u otras etapas de alineación.
+llama.cpp identifica el modelo bajo la arquitectura `llama`, que requiere una compilacion igual o superior a b1405; las instrucciones de la model card emplean `-fa on` (flash attention), disponible desde b6325. El autor verifico la carga con todas las capas en GPU y midio perplejidad y respuestas conversacionales con la build b12005 (commit e0f142d, compilacion CUDA) sobre una NVIDIA B200 el 2 de noviembre de 2026. No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base uso RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional (etiquetado como `text-generation` y `conversational` en Hugging Face).
-- Plantilla de chat original embebida en cada archivo GGUF, compatible con el modo conversacional de llama.cpp (`-cnv`).
-- Servible mediante API compatible con OpenAI a través de `llama-server`.
-- Ejecución local en CPU y GPU mediante llama.cpp, Ollama y LM Studio.
-- Soporte de KV-cache cuantizada en tiempo de ejecución (`--cache-type-k q8_0 --cache-type-v q8_0` con flash attention), que reduce la memoria dedicada al contexto.
-- No hay información publicada sobre tool calling, capacidades de visión/audio ni modos de razonamiento específicos.
+- Generacion de texto conversacional multi-turno, con plantilla de chat embebida en cada fichero GGUF.
+- Respuesta a preguntas factuales breves (verificado por el autor con preguntas sobre las capitales de Francia y Corea).
+- Procesamiento de texto en ingles y coreano, segun las muestras de evaluacion de perplejidad publicadas.
+- Servicio mediante API compatible con OpenAI a traves de `llama-server` (endpoint `/v1/chat/completions`).
+- Ejecucion en llama.cpp, Ollama y LM Studio (Ollama y LM Studio no verificados por el autor).
+- Soporte de flash attention (`-fa on`) y cuantizacion del KV cache en tiempo de ejecucion (`--cache-type-k/v q8_0`).
+- No se dispone de informacion sobre tool calling, function calling, capacidades de agente, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Chatbots locales y privados: al ser un modelo conversacional en GGUF, puede desplegarse íntegramente en local con `llama-server` u Ollama, garantizando que ningún dato salga de la infraestructura propia.
-- Prototipado en estación de trabajo: con la cuantización Q4_K_M (20,1 GB) cabe en GPUs de consumo con 24 GB de VRAM (RTX 3090/4090), ideal para pruebas y desarrollo de aplicaciones sobre LLMs.
-- Backends de inferencia de bajo coste: la API compatible con OpenAI de `llama-server` permite sustituir llamadas a APIs comerciales por inferencia local en servidores modestos.
-- Integración en LM Studio para usuarios técnicos no especializados en CLI: basta buscar el repositorio en el navegador de modelos y descargar la cuantización deseada.
-- Procesamiento por lotes en CPU: para tareas offline de generación de texto donde la latencia no es crítica, puede ejecutarse en CPU con suficiente RAM (32 GB o más para Q4_K_M).
-- Experimentación con cuantizaciones: al ofrecer Q4_K_M y Q8_0, permite comparar la degradación de calidad entre 4 y 8 bits en casos de uso concretos antes de decidir la configuración de producción.
+- Asistente conversacional autoalojado: desplegar `llama-server` con el fichero Q4_K_M y exponer una API compatible con OpenAI en el puerto 8080 para integrarla en una interfaz de chat propia, sin dependencia de servicios externos.
+- Prototipado en estaciones de trabajo con una sola GPU: el Q4_K_M de 20,1 GB permite cargar todas las capas en GPU en tarjetas de 24 GB o mas, dejando margen para el KV cache con contextos de 8K.
+- Evaluacion de calidad de cuantizacion: usar los datos de perplejidad publicados (WikiText-2 y Wikipedia en coreano) como referencia para decidir entre Q4_K_M y Q8_0 segun la tolerancia a la perdida de calidad (+1,9 % y +2,5 % frente a Q8_0 en ingles y coreano respectivamente).
+- Procesamiento de texto en coreano: el modelo muestra una perplejidad notablemente baja en la muestra de Wikipedia en coreano (8,01 en Q8_0), lo que lo hace adecuado para tareas de generacion y resumen en ese idioma.
+- Despliegue en entornos con memoria limitada: el uso de `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` reduce a la mitad el KV cache, permitiendo contextos mayores en la misma VRAM.
+- Integracion en flujos de trabajo de escritorio: carga directa en LM Studio u Ollama mediante `ollama run hf.co/axteam/Nanbeige4.3-33B-GGUF:Q4_K_M` para tareas de redaccion y asistencia local sin conexion.
+- Servicio de inferencia por lotes: con el Q8_0 (35,2 GB) en GPUs de 40-80 GB se obtiene la variante mas fiel al original para tareas donde la calidad prima sobre el coste de memoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+El autor publica unicamente mediciones de perplejidad (menor es mejor) sobre 16 ventanas de 2.048 tokens, con llama.cpp b12005 en una NVIDIA B200 y todas las capas en GPU. La referencia es Q8_0, ya que el repositorio no incluye BF16.
+
+| Fichero | Perplejidad WikiText-2 (EN) | Perplejidad Wikipedia coreano | Diferencia vs Q8_0 (EN / KO) |
+|---|---|---|---|
+| Nanbeige4.3-33B-Q8_0.gguf | 22,75 | 8,01 | referencia |
+| Nanbeige4.3-33B-Q4_K_M.gguf | 23,19 | 8,21 | +1,9 % / +2,5 % |
+
+El propio autor advierte que 16 ventanas por texto es una muestra pequena y que diferencias de pocos puntos porcentuales entre ficheros estan dentro del ruido de muestreo (una remedicion con 64 ventanas movio dichas diferencias hasta unos 19 puntos). No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Q4_K_M (20,1 GB): cabe en GPUs de 24 GB de VRAM (RTX 3090, RTX 4090) dejando margen para el KV-cache; con contexto de 8192 tokens y KV-cache en q8_0 el consumo adicional es reducido.
-- Q8_0 (35,2 GB): requiere GPU con 40 GB o más (A100 40GB ajustado, A100 80GB, H100) o bien ejecución parcial/total en CPU con al menos 40-48 GB de RAM.
-- Ejecución en CPU: viable con Q4_K_M en equipos con 32 GB de RAM, con throughput bajo (varios tokens/segundo según CPU).
-- Despliegue soportado: llama.cpp (`llama-server`, `llama-cli`), Ollama (`ollama run hf.co/axteam/Nanbeige4.3-33B-GGUF:Q4_K_M`) y LM Studio.
-- Comando recomendado de servidor: `llama-server -hf axteam/Nanbeige4.3-33B-GGUF:Q4_K_M -c 8192 --jinja`, opcionalmente con `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` para reducir memoria del KV-cache.
-- Latencia y throughput: no disponibles cifras concretas.
+- VRAM estimada para inferencia: 20,1 GB para Q4_K_M y 35,2 GB para Q8_0, mas el KV cache correspondiente al contexto configurado con `-c`.
+- Reduccion de KV cache: `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` aproximadamente lo divide por dos.
+- GPU verificada por el autor: NVIDIA B200 (todas las capas en GPU, compilacion CUDA de llama.cpp b12005).
+- GPU de consumo: el Q4_K_M cabe en tarjetas de 24 GB (por ejemplo RTX 3090 o RTX 4090) dejando margen para KV cache moderado; el Q8_0 requiere 40 GB o mas (A100 40/80 GB, H100, B200).
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama y LM Studio. Ollama y LM Studio no fueron probados por el autor.
+- Version minima de llama.cpp: b6325 para las instrucciones con `-fa on`; b1405 para el soporte de la arquitectura `llama`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Licencia | Contexto | Notas |
-|---|---|---|---|---|---|
-| Nanbeige4.3-33B-GGUF | ~33B (denso) | GGUF (Q4_K_M, Q8_0) | Apache 2.0 | No disponible (ejemplos con 8192) | Cuantización de terceros (axteam) |
-| Qwen2.5-32B-Instruct-GGUF | ~32B (denso) | GGUF (múltiples quants) | Apache 2.0 (Qwen) / Qwen Research | 128K | Amplio ecosistema, multilingüe (29+ idiomas) |
-| Gemma 2 27B (GGUF) | ~27B (denso) | GGUF | Gemma Terms of Use | 8K | Restricciones de licencia más estrictas que Apache 2.0 |
-| Yi-1.5-34B-Chat (GGUF) | ~34B (denso) | GGUF | Apache 2.0 | 32K (extendible a 128K) | Tamaño similar, buen rendimiento bilingüe chino-inglés |
+No se dispone de datos de rendimiento en tareas del modelo base ni de sus alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros y formato.
 
-Frente a estas alternativas, Nanbeige4.3-33B-GGUF destaca por su licencia Apache 2.0 sin restricciones, aunque carece de la documentación, benchmarks y ecosistema de las alternativas citadas.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Nanbeige4.3-33B (Q4_K_M, este repo) | 33B | No disponible | GGUF | Apache-2.0 | Perplejidad EN 23,19 / KO 8,21 |
+| Nanbeige4.3-33B (Q8_0, este repo) | 33B | No disponible | GGUF | Apache-2.0 | Perplejidad EN 22,75 / KO 8,01 |
+| Nanbeige/Nanbeige4.3-33B (original) | 33B | No disponible | BF16 (safetensors) | Apache-2.0 | Pesos de referencia sin cuantizar |
+| Alternativas de 30-34B | No disponible | No disponible | No disponible | No disponible | Sin datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- La model card original del modelo base no está disponible en la información proporcionada: no se conocen datos de entrenamiento, alineación (RLHF/DPO), idiomas soportados ni contexto máximo real, lo que complica evaluar su idoneidad para producción.
-- Al tratarse de una cuantización de terceros (axteam), la calidad de la conversión depende de este repositorio y no del equipo original de Nanbeige; el número de descargas (114) indica un uso muy reducido y poco verificado por la comunidad.
-- La cuantización Q4_K_M implica pérdida de precisión respecto a los pesos BF16 originales, especialmente perceptible en razonamiento complejo, matemáticas y código.
-- No hay benchmarks publicados, por lo que no es posible comparar objetivamente su calidad con modelos alternativos.
-- Riesgo de alucinación inherente a cualquier LLM; al no conocer el proceso de alineación del modelo base, este riesgo no puede cuantificarse.
-- Posible sesgo hacia idiomas presentes en su entrenamiento (los ejemplos de la model card incluyen coreano, lo que sugiere soporte multilingüe asiático, pero no está confirmado).
-- La licencia Apache 2.0 del modelo base y de la cuantización permite uso comercial sin restricciones relevantes, aunque los pesos originales y el tokenizador pertenecen a Nanbeige.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre su comportamiento en dominios sensibles.
+- Riesgo de alucinacion inherente a los modelos generativos; no hay evaluaciones publicadas de factualidad en la informacion disponible.
+- La evaluacion de calidad se limita a perplejidad sobre 16 ventanas por texto, muestra que el propio autor califica de pequena y ruidosa.
+- Solo se han verificado respuestas correctas en dos preguntas breves (capitales de Francia y Corea); no hay evidencia de rendimiento en tareas complejas.
+- El repositorio no incluye pesos BF16 ni safetensors, por lo que no es posible comparar directamente contra el original en este mismo espacio.
+- La lista oficial de idiomas no esta disponible; la evidencia empirica cubre ingles y coreano, sin garantias para el castellano.
+- Ollama y LM Studio no fueron probados por el autor; su funcionamiento no esta verificado.
+- La licencia Apache-2.0 permite uso comercial, pero los derechos sobre los pesos y el tokenizador originales pertenecen a Nanbeige; conviene revisar la model card del modelo base antes de un despliegue en produccion.
+- El contexto maximo nativo no esta documentado; los ejemplos usan 8192 tokens, pero no se confirma que sea el limite del modelo.
 
 ## Enlaces
 
-- Repositorio de la cuantización: https://huggingface.co/axteam/Nanbeige4.3-33B-GGUF
-- Modelo base original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
-- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Repositorio GGUF: https://huggingface.co/axteam/Nanbeige4.3-33B-GGUF
+- Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
+- llama.cpp (repositorio y builds): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com
 - LM Studio: https://lmstudio.ai
-
-No se han encontrado enlaces a papers, blogs oficiales ni demos en la información disponible.

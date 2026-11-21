@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 92,
-  "downloads_30d": 856,
+  "downloads_30d": 826,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Site officiel de la Région Hauts-de-France - hautsdefrance.fr",
-      "url": "https://www.hautsdefrance.fr/",
-      "snippet": "Et si le prochain champion des Hauts-de-France, c’était vous ? Cuisine, industrie, numérique, bâtiment, automobile… Plus de 60 …"
-    },
-    {
-      "title": "Amiens — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Amiens",
-      "snippet": "Capitale historique de la Picardie, elle est, avec ses 136 449 habitants (au dernier recensement en 2023) appelés Amiénois, la …"
-    },
-    {
-      "title": "Hauts-de-France — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Hauts-de-France",
-      "snippet": "Située au cœur de l' Europe de l'Ouest, avec 5 992 194 habitants habitants en 2023, et une densité de population de 189 hab/km², …"
-    },
-    {
-      "title": "Amiens - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Amiens",
-      "snippet": "Climate Amiens has the typical oceanic climate of the north of France, with relatively mild winters, cool summers, and rainfall well …"
-    },
-    {
-      "title": "C ce soir - Emission - tv-programme.com",
-      "url": "https://tv-programme.com/c-ce-soir-emission",
-      "snippet": "C ce soir - Programme TV de ce soir sur la TNT. Gratuit et complet. Replay TV : liens replay TF1, M6, W9, France 2, France 3, …"
-    }
-  ]
+  "sources": []
 }

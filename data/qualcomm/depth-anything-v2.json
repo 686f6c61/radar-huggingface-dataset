@@ -40,29 +40,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Depth-Anything-V2 - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/depth_anything_v2",
-      "snippet": "Depth-Anything-V2 Deep Convolutional Neural Network model for depth estimation. Depth Anything is designed for estimating depth at each point in an image."
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
     },
     {
-      "title": "qualcomm/Depth-Anything-V2 · Hugging Face",
-      "url": "https://huggingface.co/qualcomm/Depth-Anything-V2",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Qualcomm — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm est une entreprise américaine active dans le domaine de la technologie mobile. Elle est spécialisée dans la conception et …"
     },
     {
-      "title": "qualcomm-ai-hub-models/qai_hub_models/models/depth_anything_v2 ... - GitHub",
-      "url": "https://github.com/A-Kuo/qualcomm-ai-hub-models/blob/main/qai_hub_models/models/depth_anything_v2/README.md",
-      "snippet": "This is based on the implementation of Depth-Anything-V2 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …"
     },
     {
-      "title": "README.md · qualcomm/Depth-Anything-V2 at ... - Hugging Face",
-      "url": "https://huggingface.co/qualcomm/Depth-Anything-V2/blob/020f38501294c5cd8a9a939a39051ae888abef97/README.md",
-      "snippet": "Depth Anything is designed for estimating depth at each point in an image. This model is an implementation of Depth-Anything-V2 found here. This repository provides scripts to run Depth-Anything-V2 on Qualcomm® devices. More details on model performance across various devices, can be found here."
+      "title": "fr - Qualcomm",
+      "url": "https://www.qualcomm.com/fr",
+      "snippet": "Qualcomm relentlessly innovates to deliver intelligent computing everywhere, helping the world tackle some of its most important …"
     },
     {
-      "title": "Depth Anything V2",
-      "url": "https://depth-anything-v2.github.io/",
-      "snippet": "Depth Anything V2 is trained from 595K synthetic labeled images and 62M+ real unlabeled images, providing the most capable monocular depth estimation (MDE) model with the following features: more fine-grained details than Depth Anything V1 more robust than Depth Anything V1 and SD-based models (e.g., Marigold, Geowizard) more efficient (10x faster) and more lightweight than SD-based models ..."
+      "title": "QUALCOMM Cours Action QCOM, Cotation Bourse NASDAQ",
+      "url": "https://www.boursorama.com/cours/QCOM/",
+      "snippet": "Le cours de l'action QUALCOMM QCOM sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus …"
     }
   ]
 }

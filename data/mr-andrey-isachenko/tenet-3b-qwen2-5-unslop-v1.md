@@ -2,106 +2,118 @@
 
 ## Resumen
 
-Tenet-3B-Qwen2.5-Unslop-v1 es un ajuste fino del modelo Qwen2.5-3B-Instruct desarrollado por el usuario mr-andrey-isachenko. El modelo aplica una técnica propietaria denominada "Lancet", que el autor describe como una cirugía de subespacio con preservación de norma y proyección bidireccional, orientada a eliminar la dirección de rechazo (refusal) tanto en la proyección de entrada (residual stream) como en la de salida (unembedding). El resultado se exporta como un checkpoint en FP8 (E4M3) listo para proveedores de inferencia.
+Tenet-3B-Qwen2.5-Unslop-v1 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct desarrollado por el usuario mr-andrey-isachenko bajo la familia "Tenet". El modelo aplica una tecnica propietaria denominada "Lancet" que realiza una cirugia de subespacios con doble proyeccion y preservacion de norma para eliminar la direccion de rechazo (refusal) del modelo base, seguida de un pase de GRPO con compuertas ("gated unslop GRPO") destinado a penalizar patrones de prosa vacia y preambulos moralizantes. El resultado se exporta como checkpoint FP8 (E4M3) listo para proveedores de inferencia.
 
-El problema que aborda es doble: por un lado, los falsos rechazos ante peticiones benignas (por ejemplo, análisis de logs o consultas SQL de triaje de seguridad); por otro, la deriva estilística que el autor denomina "slop" (prosa recargada, preámbulos moralizantes, vocabulario ampuloso). Frente a la "abliteration" ingenua, que según la model card degrada el anclaje de tool calling y SQL, Tenet afirma preservar el subespacio analítico, de código y de razonamiento estructurado del modelo base.
+El modelo conserva la arquitectura transformer de Qwen2.5-3B-Instruct, con 3.085.938.688 parametros totales y un repositorio de 8,3 GB que incluye pesos en safetensors y GGUF. Su propuesta de valor es ofrecer un asistente menos propenso a rechazos falsos positivos sobre peticiones benignas, manteniendo las capacidades de razonamiento, codigo y uso de herramientas del modelo base. La licencia es Apache 2.0.
 
-El modelo se distribuye con licencia Apache 2.0, sin código personalizado ni `trust_remote_code`, y con soporte declarado para vLLM, OpenRouter, GGUF y MLX. El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que sugiere que los pesos no estaban materializados en el repositorio en ese instante.
+Es relevante en el contexto actual de modelos pequenos orientados a agentes y despliegue en produccion, donde el equilibrio entre seguridad, utilidad y coste computacional es critico. El autor publica metricas internas del pipeline de entrenamiento (H9-H12) y una evaluacion de terceros ("Model Fight Card 16") que situa al modelo como campeon de la division Minors, aunque estas cifras deben interpretarse con cautela por su origen.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-3B-Instruct) |
-| Parametros totales | 3B (aproximado, segun modelo base Qwen2.5-3B-Instruct) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32768 tokens (valor usado en el ejemplo de vLLM con `--max-model-len 32768`; el modelo base Qwen2.5-3B-Instruct soporta hasta 32768) |
-| Tipos de cuantizacion | FP8 (E4M3) como formato de exportacion principal; GGUF CKA-Quant (ej. Q4_K_M); BF16 como salida de la cirugía |
+| Arquitectura | Transformer decoder-only (Qwen2) |
+| Parametros totales | 3.085.938.688 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-3B-Instruct) |
+| Tipos de cuantizacion | FP8 (E4M3) en el checkpoint principal; GGUF disponible en el repo |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (FP8 E4M3), GGUF (CKA-Quant), MLX |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-3B-Instruct: un transformer decoder-only con atención por grupos de consultas (GQA) y RoPE, del que no se detallan aquí configuraciones adicionales porque la información proporcionada no las incluye. Sobre esa base, el autor aplica el motor "Lancet", descrito como una cirugía de subespacio con preservación de norma y proyección bidireccional: se identifica la dirección de rechazo en el residual stream y en el unembedding, se elimina el componente en ambas direcciones y se restaura exactamente la norma residual para mantener las magnitudes de activación en la variedad original.
+El modelo parte de Qwen2.5-3B-Instruct, un transformer decoder-only denso de aproximadamente 3,09 mil millones de parametros. Sobre esa base, el autor aplica el motor "Lancet", descrito como una cirugia de subespacios con doble proyeccion y preservacion de norma: la direccion de rechazo se identifica tanto en la proyeccion de entrada (residual stream) como en la de salida (unembedding), se elimina de forma bidireccional y se restaura exactamente la norma residual para mantener las magnitudes de activacion en la variedad del modelo original.
 
-Tras la cirugía se ejecuta un pase de GRPO con compuertas ("gated unslop GRPO"): una optimización de preferencias cuyo reward penaliza patrones de slop (prosa recargada, vocabulario tipo "tapestry", preámbulos moralizantes) únicamente en las regiones donde la cirugía debilitó el circuito de rechazo. El objetivo declarado es reforzar razonamiento y código sin dañar el anclaje del modelo base. No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset de preferencias ni los hiperparámetros del GRPO.
+Tras la cirugia se ejecuta un pase de GRPO (Group Relative Policy Optimization) con compuertas de recompensa que penalizan patrones de "slop" (prosa recargada, vocabulario tipo "tapestry", preambulos moralizantes) solo en las regiones donde la cirugia debilito los circuitos de rechazo. Posteriormente se realiza una cuantizacion FP8 (E4M3) y una fusion TIES segura respecto a subespacios ("subspace-safe TIES merge"). El autor no detalla el volumen de tokens de entrenamiento ni la composicion exacta del dataset. Segun la model card, el modelo no requiere codigo personalizado ni `trust_remote_code`.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno sobre el modelo base Qwen2.5-3B-Instruct.
-- Razonamiento estructurado y seguimiento de instrucciones, con anclaje preservado según las métricas del autor.
-- Generación de código y consultas SQL, incluyendo tool calling con esquema válido (el ejemplo de la model card muestra una llamada DuckDB bien formada).
-- Soporte de tool calling / function calling y uso en flujos agénticos (etiquetas `agentic`, `tool-use`).
-- Reducción de falsos rechazos ante peticiones benignas de seguridad, DevOps y análisis de logs.
-- Reducción de deriva estilística ("slop") en la salida.
-- Capacidad multilingüe: no disponible (no se documenta en la información proporcionada).
-- Modo thinking, visión o audio: no disponible (no se declaran).
+- Generacion de texto conversacional multi-turno.
+- Razonamiento estructurado y analitico heredado de Qwen2.5-3B-Instruct.
+- Generacion de codigo (etiqueta "coding" en el repo).
+- Uso de herramientas y function calling (etiquetas "tool-use" y "agentic").
+- Comportamiento orientado a agentes y razonamiento multi-paso.
+- Reduccion de rechazos falsos positivos sobre peticiones benignas mediante la cirugia Lancet.
+- Mitigacion de deriva estilistica ("slop") gracias al pase GRPO con compuertas.
+- Preservacion de subespacios de anclaje para herramientas y SQL (segun metricas H12 del autor).
+- Compatibilidad con vLLM, OpenRouter, GGUF y MLX segun la model card.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Triaje de logs de seguridad: el modelo puede recibir líneas de log (por ejemplo, nginx auth) y devolver una llamada de herramienta SQL válida que agregue intentos fallidos por IP de origen, evitando el rechazo que produce el modelo base ante peticiones de análisis de autenticación.
-- Asistencia en AppSec y DevOps: generación de consultas DuckDB, SQL o comandos de diagnóstico sobre datos operativos, con salida estructurada apta para pipelines automatizados.
-- Agentes de tool calling en producción: al conservar el anclaje de tool/SQL (ortogonalidad reportada de 7.00e-08 en BF16), es adecuado para orquestadores que exigen JSON conforme a esquema y no toleran preámbulos conversacionales.
-- Generación de código en pipelines de CI/CD: el modelo puede integrarse como generador de parches o consultas dentro de flujos automatizados, con salida limpia y sin moralina que rompa el parseo.
-- Atención al cliente automatizada: conversaciones multi-turno con ventana de hasta 32768 tokens, útil para hilos largos con historial extenso, con estilo directo y sin preámbulos redundantes.
-- Despliegue en infraestructura modesta: al ser un modelo de 3B en FP8 o GGUF Q4_K_M, cabe en GPUs de consumo y en entornos edge, lo que permite servir asistentes internos sin depender de APIs externas.
-- Investigación sobre alineación y edición de modelos: sirve como caso de estudio reproducible de cirugía de subespacio frente a abliteration ingenua, con métricas de deriva KL y re-fuga comparadas.
+- Asistencia conversacional en produccion: el modelo puede gestionar dialogos multi-turno con un perfil menos restrictivo ante peticiones benignas, lo que reduce la friccion en atencion al cliente automatizada donde los rechazos innecesarios degradan la experiencia.
+- Generacion de codigo en pipelines de CI/CD: con soporte de tool calling y etiqueta "coding", puede integrarse en flujos de revision, autocompletado o generacion de tests, ejecutandose en GPUs de gama media gracias a sus 3B parametros.
+- Agentes autonomos de proposito general: las etiquetas "agentic" y "tool-use" indican que el modelo esta orientado a invocar funciones y encadenar pasos, adecuado para orquestadores ligeros en entornos con recursos limitados.
+- Despliegue en proveedores de inferencia: el checkpoint FP8 (E4M3) y la ausencia de codigo personalizado permiten subirlo directamente a vLLM u OpenRouter, reduciendo el coste por token frente a modelos mayores.
+- Prototipado rapido en local: la disponibilidad de GGUF facilita ejecucion en llama.cpp u Ollama sobre hardware consumer, util para experimentacion y demos.
+- Generacion de contenido con estilo controlado: el pase "unslop" reduce prosa recargada y preambulos moralizantes, lo que resulta util en herramientas de redaccion asistida que requieren respuestas directas.
+- Investigacion sobre alineacion y edicion de modelos: las metricas H9-H12 y el espacio de inspeccion FP8 permiten estudiar tecnicas de cirugia de subespacios y su robustez tras cuantizacion.
 
 ## Benchmarks y rendimiento
 
-Los benchmarks publicados por el autor son métricas internas (H9, H10, H11) y comparativas de ingeniería, no benchmarks estándar de la comunidad (MMLU, HumanEval, GSM8K). Se reproducen tal cual, sin interpretación adicional.
+Los datos disponibles provienen del pipeline interno del autor (`final_metrics.json`) y de una evaluacion de terceros ("Model Fight Card 16"). No se han publicado resultados de benchmarks estandar como MMLU, HumanEval o GSM8K en la informacion disponible.
 
-| Variante | H9 (menor es mejor) | H10 (mayor es mejor) | H11 (mayor es mejor) |
-|---|---|---|---|
-| BF16 | 0.02 | 0.36 | 0.95 |
-| FP8 (E4M3) | 0.09 | 1.00 | 0.52 |
-| Abliteration ingenua | 3.76 | 0.16 | 0.50 |
+| Metrica (fase) | Valor | Direccion |
+|---|---|---|
+| Lancet KL Collateral (H9) | 0,02 | Menor es mejor |
+| Naive KL Collateral (H9) | 3,76 | Menor es mejor |
+| KL Reduction Ratio (H9) | 0,99 | Mayor es mejor |
+| Target Suppression Ratio (H9) | 0,97 | Mayor es mejor |
+| Gated GRPO IFEval Score (H10) | 0,72 | Mayor es mejor |
+| Gated vs Naive/Additive Gain (H10) | 0,16 | Mayor es mejor |
+| Slop & Refusal Rate (H10) | 0,09 | Menor es mejor |
+| Post-Merge Suppression Retention (H10) | 1,00 | Mayor es mejor |
+| FP8 Retention Ratio (H11) | 0,95 | Mayor es mejor |
+| FP8 KL Reduction vs Naive (H11) | 0,52 | Mayor es mejor |
+| FP8 Subspace Re-Leakage Lancet (H11) | 0,03 | Menor es mejor |
+| FP8 Subspace Re-Leakage Naive (H11) | 0,50 | Menor es mejor |
+| SQL-Incident Retention (H12) | 1,00 | Mayor es mejor |
+| Unslop Retention (H12) | 1,00 | Mayor es mejor |
+| Subspace-Safe Merge Re-Leakage (H12) | 4,71e-07 | Menor es mejor |
+| TIES Bi-Projected vs Naive Gain (H12) | 0,78 | Mayor es mejor |
 
-| Métrica | Base | Abliteration ingenua | Tenet (BF16) | Tenet (FP8 E4M3) |
-|---|---|---|---|---|
-| Deriva colateral KL | — | 3.76 | 0.02 | 0.03 |
-| Supresión de rechazo | — | — | 0.97 | 1.00 |
-| Ortogonalidad de anclaje tool/SQL | — | 0.83 | 7.00e-08 | 0.07 |
-| Re-fuga tras LoRA | — | 0.83 | 0.07 | 0.03 |
-| Re-fuga de subespacio en FP8 | — | 0.50 | — | 0.03 |
-| Crest-factor máximo de fila (< 25.0) | — | — | 17.27 | 17.27 |
-
-Peso absoluto máximo: 1.43. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Evaluacion de terceros (Model Fight Card 16, 2026-11-20): puesto #1 en la division Minors con 90 HP, 22/22 artefactos clasificables (100 %), 21/22 escapes de clase (95,5 %) y 4/4 escapes APEX. Comparado con anclas de referencia como Qwen3-0.6B, Llama-3.2-1B, Gemma-3-4B, DeepSeek-R1-1.5B y SmolLM3-3B.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3-4 GB en FP8 (E4M3) para los pesos, más overhead de KV cache; en GGUF Q4_K_M, en torno a 2 GB de pesos.
-- GPU recomendadas: cualquier GPU con soporte FP8 para la ruta vLLM (H100, L40S, A100 con kernels compatibles); para GGUF, GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090.
-- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM en cuantizaciones GGUF; en FP8 conviene una GPU con soporte nativo de FP8 para máximo rendimiento.
-- Opciones de despliegue: vLLM (`--quantization fp8`), Transformers, llama.cpp con GGUF CKA-Quant, Ollama, MLX y proveedores OpenRouter.
-- Latencia y throughput estimados: no disponible (no se publican cifras en la información proporcionada).
+- VRAM estimada para inferencia en FP8 (E4M3): aproximadamente 3-4 GB de pesos, mas overhead de activaciones y cache KV (tipicamente 5-8 GB en total segun longitud de contexto).
+- VRAM estimada en BF16/FP16: aproximadamente 6-7 GB solo para pesos.
+- VRAM estimada en GGUF Q4: aproximadamente 2-3 GB, apto para GPUs consumer de gama media.
+- GPU recomendadas: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 y H100 para despliegues de mayor concurrencia.
+- Cabe en GPUs consumer: si, en modelos con 8 GB o mas de VRAM en cuantizaciones FP8 o GGUF Q4/Q5.
+- Opciones de despliegue: vLLM (soporte nativo FP8), llama.cpp, Ollama, TGI y proveedores OpenRouter segun la model card.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| Tenet-3B-Qwen2.5-Unslop-v1 | 3B | 32768 | Apache 2.0 | Fine-tune con cirugía Lancet y GRPO; FP8 E4M3; tool calling preservado según el autor |
-| Qwen2.5-3B-Instruct (base) | 3B | 32768 | Apache 2.0 | Modelo base; rechazos falsos y slop según la model card de Tenet |
-| Abliteration ingenua de Qwen2.5-3B-Instruct | 3B | 32768 | Apache 2.0 | Referencia del autor; degrada anclaje de tool/SQL (ortogonalidad 0.83) y deriva KL 3.76 |
-| Otros fine-tunes "uncensored" de 3B | no disponible | no disponible | variable | No se dispone de datos comparables en la información proporcionada |
+| Tenet-3B-Qwen2.5-Unslop-v1 | 3,09B | no disponible | Apache 2.0 | Fine-tune con cirugia de rechazo y GRPO |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (segun especificaciones publicas del modelo base) | Apache 2.0 | Modelo base instructivo |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens (segun especificaciones publicas) | Llama 3.2 Community License | Modelo pequeno instructivo |
+| SmolLM3-3B | 3B | no disponible | Apache 2.0 | Modelo pequeno instructivo |
+
+La comparacion de rendimiento entre estos modelos no esta disponible en la informacion proporcionada. El autor situa a Tenet por delante de Llama-3.2-1B, Gemma-3-4B, DeepSeek-R1-1.5B y SmolLM3-3B en su evaluacion "Model Fight Card 16", pero se trata de una metrica propietaria sin validacion independiente publica.
 
 ## Limitaciones y advertencias
 
-- El modelo está diseñado explícitamente para uso como asistente alineado; el autor declara fuera de alcance operaciones ofensivas de ciberseguridad, generación de malware y contenido ilícito.
-- La eliminación de la dirección de rechazo puede aumentar la probabilidad de responder a peticiones sensibles; requiere filtros externos si se despliega en producción orientada al público.
-- Riesgo de alucinación inherente a un modelo de 3B: menor fiabilidad factual que modelos de mayor tamaño, especialmente en dominios especializados.
-- Las métricas publicadas (H9, H10, H11) son internas del autor y no están validadas por terceros ni corresponden a benchmarks estándar; deben interpretarse con cautela.
-- El repositorio figura con 0 descargas, 0 likes y tamaño de 0.0 GB en el momento de la consulta, lo que indica ausencia de validación comunitaria y posible falta de materialización de pesos.
-- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe más allá del que herede del modelo base.
-- La técnica Lancet y el GRPO con compuertas se describen cualitativamente; no se publican detalles reproducibles (datasets, hiperparámetros, semillas).
-- Licencia Apache 2.0 permite uso comercial, pero el despliegue debe acompañarse de moderación propia dada la naturaleza "uncensored" del ajuste.
+- El modelo ha sido sometido a una cirugia de eliminacion de la direccion de rechazo ("abliterated"), lo que puede reducir la eficacia de sus mecanismos de seguridad ante peticiones sensibles. El autor declara explicitamente que no debe usarse para operaciones ofensivas, generacion de malware ni contenido ilegal.
+- Riesgo de alucinacion inherente a un modelo de 3B parametros; no se han publicado evaluaciones de factualidad.
+- Las metricas de benchmarks proceden del pipeline interno del autor y de una evaluacion de terceros no revisada por pares; deben interpretarse con cautela.
+- No se especifican los idiomas soportados ni el volumen o composicion del dataset de entrenamiento.
+- La longitud de contexto no se detalla en la model card; debe verificarse contra las especificaciones de Qwen2.5-3B-Instruct antes de desplegar en produccion.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario es responsable de evaluar el comportamiento del modelo en su dominio y de implementar filtros adicionales si su aplicacion lo requiere.
+- El modelo se publico en noviembre de 2026 y cuenta con un ecosistema muy limitado (1 like, 1160 descargas), por lo que la validacion de la comunidad es escasa.
+- La nomenclatura y las afirmaciones de la model card (por ejemplo, "Model Fight Card", "House escapes", "APEX") provienen de un marco de evaluacion propio del autor sin metodologia publica detallada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mr-andrey-isachenko/Tenet-3B-Qwen2.5-Unslop-v1
+- Hugging Face: https://huggingface.co/mr-andrey-isachenko/Tenet-3B-Qwen2.5-Unslop-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Repositorio de vLLM: https://github.com/vllm-project/vllm
-- Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
-- OpenRouter: https://openrouter.ai
-- Paper, blog o demo adicionales: no disponible
+- Repositorio GitHub: https://github.com/mrAndreyIsachenko/tenet-lab
+- Espacio de inspeccion FP8 y abliteracion: https://huggingface.co/spaces/mr-andrey-isachenko/fp8-abliteration-inspector
+- Coleccion Tenet v1: https://huggingface.co/mr-andrey-isachenko
+- Discusion con artefactos: https://huggingface.co/mr-andrey-isachenko/Tenet-3B-Qwen2.5-Unslop-v1/discussions/1
+- Model Fight Card 16: https://onlymodels.gg/cards/2026-11-20.html
+- Datos de la tarjeta: https://onlymodels.gg/data/card-2026-11-20.json

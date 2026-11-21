@@ -2,77 +2,89 @@
 
 ## Resumen
 
-Este repositorio aloja un modelo DeepLabV3 de segmentación semántica, exportado al formato `.pte` de ExecuTorch para su uso en la librería React Native ExecuTorch. El modelo está diseñado para ejecutarse en dispositivos móviles y embebidos mediante el runtime ExecuTorch de Meta, permitiendo tareas de segmentación de imágenes en tiempo real sin conexión a servidores. La exportación se realizó con la versión 1.1.0 de ExecuTorch, por lo que no se garantiza compatibilidad con versiones anteriores del runtime.
+DeepLabV3 es un modelo de segmentación semántica de imágenes desarrollado originalmente por Meta AI Research (el upstream es la implementación de `torchvision`) y empaquetado en este repositorio por Software Mansion para su uso dentro de la librería React Native ExecuTorch. El repositorio no contiene pesos en formato PyTorch convencional, sino programas ExecuTorch (`.pte`) ya exportados y optimizados para ejecución en dispositivo (on-device), listos para consumirse desde aplicaciones React Native. Resuelve el problema de la segmentación semántica densa (asignar una clase a cada píxel) sin depender de un servidor ni de conectividad.
 
-El repositorio, mantenido por Software Mansion, forma parte de un ecosistema más amplio de modelos optimizados para React Native, con soporte para LLMs y modelos de visión. Con un tamaño de 1,4 GB, el modelo está pensado para integrarse en aplicaciones móviles mediante la librería `react-native-executorch`, que ofrece una API declarativa para cargar y ejecutar modelos de IA en el dispositivo. La licencia MIT permite uso comercial y modificación sin restricciones significativas.
+El repositorio ofrece tres arquitecturas backbone distintas (MobileNetV3-Large, ResNet-50 y ResNet-101) y múltiples backends de ejecución (Core ML para iOS, XNNPACK para CPU genérica y QNN para aceleración NPU en SoCs Qualcomm Snapdragon). Los ficheros van desde 10,8 MB (MobileNetV3-Large int8 en XNNPACK) hasta 224 MB (ResNet-101 fp32 en XNNPACK), lo que permite elegir el compromiso entre precisión y huella de memoria según el dispositivo objetivo.
+
+Es relevante ahora porque el despliegue on-device de visión por computador en móvil se ha convertido en un requisito habitual (privacidad, latencia, offline), y este repositorio encapsula el trabajo de exportación a ExecuTorch v1.4.1 para tres backends distintos, incluyendo variantes cuantizadas a int8 y compiladas para versiones específicas del Hexagon DSP de Qualcomm.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeepLabV3 (segmentación semántica) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no aplicable (modelo de visión) |
-| Tipos de cuantizacion | no disponible (formato `.pte` específico de ExecuTorch) |
-| Idiomas soportados | no aplicable (procesamiento de imágenes) |
-| Licencia | MIT |
-| Formato de pesos | `.pte` (ExecuTorch) |
+| Arquitectura | DeepLabV3 (encoder-decoder con backbone CNN; MobileNetV3-Large, ResNet-50 o ResNet-101) |
+| Parametros totales | no disponible (depende del backbone; no publicado en la model card) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision, entrada de imagen) |
+| Tipos de cuantizacion | fp16 (Core ML), fp32 (XNNPACK), int8 (XNNPACK), a8w8 (QNN) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Licencia | BSD-3-Clause |
+| Formato de pesos | ExecuTorch `.pte` (no safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-DeepLabV3 es una arquitectura de segmentación semántica basada en redes neuronales convolucionales, que utiliza convoluciones atrous (dilatadas) para capturar contexto multiescala sin perder resolución espacial. El modelo original se entrena sobre datasets como COCO o Pascal VOC, aunque no se dispone de detalles específicos sobre el conjunto de datos o el proceso de entrenamiento de esta versión particular. El repositorio solo proporciona el modelo exportado a formato `.pte`, sin información sobre los pesos originales, el backbone (ResNet u otro) ni el proceso de cuantización.
+DeepLabV3 es una red de segmentación semántica que combina un backbone convolucional (MobileNetV3-Large, ResNet-50 o ResNet-101) con un cabezal de segmentación basado en convoluciones dilatadas (atrous) y agrupamiento de contexto multiescala, tal como se describe en la implementación de referencia de `torchvision`. El modelo produce un mapa de logits por clase y píxel; en las variantes QNN el artefacto exportado devuelve directamente el índice de clase por píxel con forma `(1, 520, 520)` en int32, mientras que las variantes Core ML y XNNPACK devuelven logits con forma `(1, 21, 520, 520)`, es decir, 21 clases sobre una entrada de 520×520 píxeles.
 
-La exportación a ExecuTorch implica una compilación del grafo computacional para el backend XNNPACK, optimizado para CPUs móviles y de bajo consumo. No se mencionan innovaciones técnicas adicionales como decodificación especulativa o atención lineal, ya que se trata de un modelo de visión, no generativo.
+No se dispone en la información proporcionada de detalles sobre el dataset de entrenamiento, el número de tokens (no aplica), ni si hubo ajuste fino posterior. El trabajo de este repositorio es exclusivamente de exportación y empaquetado: los ficheros `.pte` se generan para el runtime ExecuTorch v1.4.1, sin garantía de compatibilidad hacia adelante, por lo que un runtime más antiguo puede fallar al cargarlos. Las variantes QNN incorporan un binario de contexto HTP compilado para una versión concreta de Hexagon (v69, v73, v75, v79, v81), de modo que el runtime selecciona el fichero correspondiente al SoC del dispositivo.
 
 ## Capacidades
 
-- Segmentación semántica de imágenes en tiempo real, asignando una etiqueta de clase a cada píxel (por ejemplo, persona, coche, fondo).
-- Ejecución completamente en el dispositivo, sin necesidad de conexión a internet.
-- Compatible con el runtime ExecuTorch, lo que permite integración en aplicaciones React Native mediante la librería `react-native-executorch`.
-- Soporte para backend XNNPACK, optimizado para CPUs ARM y x86 en dispositivos móviles.
-- No se documentan capacidades de generación de texto, tool calling, agentes o razonamiento multilingüe, al ser un modelo exclusivamente de visión.
+- Segmentación semántica densa de imágenes: asigna una clase a cada píxel de una entrada de 520×520.
+- Tres backbones con distinto compromiso precisión/coste: MobileNetV3-Large (el más ligero), ResNet-50 (equilibrado) y ResNet-101 (el más pesado y preciso).
+- Ejecución on-device en iOS mediante el backend Core ML (fp16).
+- Ejecución on-device en CPU genérica mediante XNNPACK (fp32 e int8).
+- Aceleración en NPU Qualcomm Hexagon mediante QNN (a8w8) para Snapdragon 8 Gen 1, 8 Gen 2, 8 Gen 3, 8 Elite y 8 Elite Gen 5.
+- Integración directa con la librería React Native ExecuTorch mediante constantes del registro de modelos de la librería.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo puramente visual de segmentación.
 
 ## Casos de uso
 
-- Realidad aumentada en aplicaciones móviles: el modelo puede segmentar objetos y escenas en tiempo real para superponer elementos virtuales, gracias a su ejecución local y baja latencia.
-- Accesibilidad para personas con discapacidad visual: una app puede describir el entorno segmentando objetos (sillas, mesas, personas) y generando audio descriptivo, sin enviar imágenes a la nube.
-- Moderación de contenido en fotos: segmentación de regiones problemáticas (por ejemplo, piel o armas) para aplicar desenfoque o bloqueo automático en aplicaciones de mensajería.
-- Edición de imágenes en el dispositivo: separar el fondo del primer plano para aplicar filtros, recortes o reemplazo de fondo, todo localmente.
-- Navegación autónoma en robots o drones de bajo coste: el modelo puede ejecutarse en una Raspberry Pi o un teléfono móvil para detectar obstáculos y caminos.
-- Análisis agrícola de campo: segmentación de cultivos o maleza en fotografías tomadas con un móvil, permitiendo estimaciones de cobertura vegetal sin conexión.
+- Segmentación de personas y fondos en apps móviles: sustitución de fondo en tiempo real en aplicaciones de fotografía o videollamada, usando la variante MobileNetV3-Large int8 (10,8 MB) para minimizar el consumo de memoria en dispositivos de gama media.
+- Edición fotográfica on-device: máscaras por clase (persona, coche, vegetación, etc.) generadas localmente sin subir la imagen a un servidor, lo que preserva la privacidad del usuario y funciona sin conectividad.
+- Realidad aumentada: delimitación de superficies o regiones de la escena capturada por la cámara para superponer elementos virtuales, aprovechando la variante QNN a8w8 en dispositivos Snapdragon para reducir latencia.
+- Asistencia a la conducción o análisis de escenas: segmentación de carretera, vehículos y peatones en flujos de vídeo de baja resolución procesados a bordo, con ResNet-50 como compromiso entre calidad y coste computacional.
+- Automatización de documentos y formularios: detección de regiones (texto, tablas, firmas) en capturas escaneadas con el móvil, usando ResNet-101 cuando se requiere mayor fidelidad de contorno.
+- Control de calidad industrial o agrícola: segmentación de defectos, frutos o piezas en imágenes capturadas con dispositivos móviles o embebidos, ejecutando el modelo en el propio dispositivo sin infraestructura de servidor.
+- Preprocesado para otros pipelines de visión: generación de máscaras que alimentan etapas posteriores (OCR, clasificación, detección) dentro de una app React Native, con el modelo cargado una sola vez y reutilizado entre inferencias.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de métricas como mIoU, precisión o velocidad de inferencia para este modelo específico.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo ocupa 1,4 GB en disco (formato `.pte`), lo que sugiere un tamaño de pesos considerable, probablemente sin cuantización agresiva.
-- VRAM estimada: no disponible, pero al ser para XNNPACK se espera que funcione en CPUs móviles sin GPU dedicada.
-- GPU recomendadas: no aplicable, el backend XNNPACK está diseñado para CPUs.
-- Compatible con dispositivos Android e iOS mediante React Native ExecuTorch, siempre que tengan suficiente RAM (se recomienda al menos 3-4 GB para cargar el modelo en memoria).
-- Opciones de despliegue: exclusivamente a través de ExecuTorch runtime, ya sea con la librería React Native o con el runtime nativo de ExecuTorch.
-- Latencia y throughput: no disponibles. Dependerán del dispositivo y de la resolución de entrada.
+- Huella en disco de los artefactos (no equivale a VRAM, ya que son modelos de inferencia on-device): MobileNetV3-Large int8 XNNPACK 10,8 MB; MobileNetV3-Large fp32 XNNPACK 42,1 MB; MobileNetV3-Large Core ML fp16 21,5 MB; ResNet-50 int8 XNNPACK 40,4 MB; ResNet-50 fp32 XNNPACK 151 MB; ResNet-50 Core ML fp16 75,9 MB; ResNet-101 int8 XNNPACK 58,9 MB; ResNet-101 fp32 XNNPACK 224 MB; ResNet-101 Core ML fp16 112 MB.
+- VRAM estimada para inferencia: no disponible; el modelo está pensado para ejecutarse en CPU, GPU integrada o NPU de dispositivos móviles, no en GPU de escritorio.
+- GPU recomendadas: no aplica en el sentido habitual; los backends soportados son Core ML (iOS), XNNPACK (CPU) y QNN (NPU Hexagon en Snapdragon 8 Gen 1, 8 Gen 2, 8 Gen 3, 8 Elite y 8 Elite Gen 5).
+- Compatibilidad con GPU consumer (RTX 4090, etc.): no disponible; el repositorio no publica artefactos para CUDA.
+- Opciones de despliegue: runtime ExecuTorch v1.4.1, integrado a través de la librería React Native ExecuTorch (npm `react-native-executorch`). No se publican artefactos para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa cuantitativa con otros modelos de segmentación semántica (como U-Net, SegNet o Mask R-CNN) en este contexto específico. La principal diferencia es el formato de exportación y el soporte para ExecuTorch, que limita la comparación a modelos también exportados a este runtime. Se recomienda consultar la documentación de React Native ExecuTorch para ver otros modelos disponibles.
+| Modelo | Tipo | Backbones | Backends | Cuantización | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| react-native-executorch-deeplab-v3 (este) | Segmentación semántica DeepLabV3 | MobileNetV3-Large, ResNet-50, ResNet-101 | Core ML, XNNPACK, QNN | fp16, fp32, int8, a8w8 | BSD-3-Clause | `.pte` (ExecuTorch) |
+| DeepLabV3 en torchvision (upstream) | Segmentación semántica DeepLabV3 | MobileNetV3-Large, ResNet-50, ResNet-101 | PyTorch (CPU/GPU) | fp32, fp16 (según despliegue) | BSD-3-Clause | `.pth` / TorchScript |
+| Segment Anything (SAM) | Segmentación promptable | ViT (varios tamaños) | PyTorch, ONNX | fp32, fp16, int8 | Apache-2.0 | `.pth`, ONNX |
+
+La comparación con SAM es solo orientativa: SAM es segmentación promptable de propósito general y no ofrece clases semánticas predefinidas ni artefactos ExecuTorch publicados en este repositorio. No se dispone de datos de benchmarks que permitan comparar rendimiento numérico entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo fue exportado con ExecuTorch 1.1.0 y no hay compatibilidad garantizada con versiones anteriores del runtime; si se usa fuera de React Native ExecuTorch, hay que verificar la compatibilidad.
-- No se proporcionan detalles sobre el dataset de entrenamiento ni sobre posibles sesgos en las clases segmentadas (por ejemplo, sesgos de género, raza o entorno).
-- Al ser un modelo de segmentación semántica, no es adecuado para tareas de generación de texto, razonamiento o comprensión del lenguaje.
-- El tamaño del repositorio (1,4 GB) puede ser excesivo para aplicaciones móviles con restricciones de almacenamiento; se recomienda evaluar cuantización o modelos más ligeros.
-- No se documentan limitaciones específicas de precisión en condiciones de iluminación baja, oclusiones o clases poco representadas.
-- La licencia MIT permite uso comercial, pero el modelo subyacente (DeepLabV3) puede tener restricciones adicionales según la implementación de PyTorch; se recomienda revisar la licencia de los pesos originales.
+- Modelo de segmentación con 21 clases sobre entrada fija de 520×520; no es un modelo generativo ni de lenguaje, por lo que no admite prompts, tool calling ni razonamiento.
+- Los ficheros están publicados para ExecuTorch v1.4.1 y el runtime no garantiza compatibilidad hacia adelante: un runtime más antiguo puede fallar al cargarlos.
+- Las variantes QNN están compiladas para una versión concreta de Hexagon (v69, v73, v75, v79, v81); es necesario seleccionar el fichero adecuado al SoC del dispositivo.
+- El backend MLX fue exportado pero no publicado; el motivo se documenta en `mlx/NOTES.md` del repositorio.
+- No se dispone de información sobre sesgos del modelo, riesgo de alucinación (no aplica en el sentido de modelos de lenguaje, pero sí puede producir segmentaciones erróneas en clases poco representadas) ni sobre el dataset de entrenamiento.
+- La licencia BSD-3-Clause permite uso comercial con atribución y sin endoso; conviene revisar los términos del upstream de DeepLabV3 en torchvision por si hubiera condiciones adicionales.
+- Para producción conviene validar la precisión de la segmentación en el dominio concreto de la aplicación, ya que las 21 clases de DeepLabV3 (definidas en el dataset de referencia de torchvision) pueden no cubrir las categorías de interés.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-deeplab-v3
-- Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
-- Sitio oficial de React Native ExecuTorch: https://executorch.swmansion.com/
-- Repositorio GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
-- Documentación de ExecuTorch: https://pytorch.org/executorch/stable/index.html
-- Referencia de DeepLabV3 en PyTorch: https://docs.pytorch.org/vision/main/models/deeplabv3.html
+- Repositorio en Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-deeplab-v3
+- Modelo upstream DeepLabV3 (torchvision): https://docs.pytorch.org/vision/main/models/deeplabv3.html
+- Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
+- Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md
+- Notas del backend MLX no publicado: https://huggingface.co/software-mansion/react-native-executorch-deeplab-v3/blob/main/mlx/NOTES.md

@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Chrome'u indirme ve yükleme - Bilgisayar - Google Chrome …",
-      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
-      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
-    },
-    {
-      "title": "Windows Gezgini ile kolay dosya yönetimi - CHIP Online",
-      "url": "https://www.chip.com.tr/ipucu/windows-gezgini-ile-kolay-dosya-yonetimi_53398.html",
-      "snippet": "Jan 31, 2010 · Dosyaların Windows Gezgini üzerinden kopyalanması ve taşınması pek çok kullanıcı tarafından birden fazla adım …"
-    },
-    {
-      "title": "Bilgisayarınızla Android cihaz arasında dosya aktarma",
-      "url": "https://support.google.com/android/answer/9064445?hl=tr",
-      "snippet": "Bilgisayarınızla ilgili sorunları giderme Windows'un, yeni donanımları otomatik olarak algıladığından emin olmak için bilgisayarınızın …"
-    },
-    {
-      "title": "Dosya Gezgini'nin yavaşlığına ilginç çözüm: Sürekli açık tutmak!",
-      "url": "https://www.chip.com.tr/guncel/dosya-gezgininin-yavasligina-ilginc-cozum-surekli-acik-tutmak_175038.html",
-      "snippet": "Nov 27, 2025 · Yıllardır \"şişen\" Windows Dosya Gezgini'nin açılış süresi nihayet kısalıyor. Ancak Microsoft, optimizasyon yerine …"
-    },
-    {
-      "title": "Not oluşturma veya düzenleme - Bilgisayar - Google Keep Yardım",
-      "url": "https://support.google.com/keep/answer/2888246?hl=tr&co=GENIE.Platform%3DDesktop",
-      "snippet": "Not yazma Bilgisayarınızda Google Keep 'e gidin. Not alın 'ı tıklayın. Bir not ve başlık ekleyin. Bitti 'yi tıklayın. Notu düzenleme …"
-    }
-  ]
+  "sources": []
 }

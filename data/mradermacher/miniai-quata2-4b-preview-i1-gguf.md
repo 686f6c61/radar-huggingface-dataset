@@ -2,49 +2,49 @@
 
 ## Resumen
 
-MiniAI-Quata2-4b-Preview-i1-GGUF es una cuantización en formato GGUF del modelo MiniAI-Quata2-4b-Preview, publicada por el usuario mradermacher. El modelo original lo desarrolla M1n1A1 y se presenta como un modelo conversacional de aproximadamente 4.841 millones de parámetros (unos 4,8B), orientado a tool calling y con soporte declarado para inglés, serbio, croata y bosnio. La cuantización emplea el método i1 (imatrix/weighted) de mradermacher, que genera múltiples variantes IQ y K de distinto tamaño para ajustar el equilibrio entre calidad y consumo de memoria.
+MiniAI-Quata2-4b-Preview es un modelo de lenguaje conversacional de aproximadamente 4.841 millones de parámetros (4,84B), desarrollado por M1n1A1 y cuantizado en formato GGUF por mradermacher. El modelo base destaca por su enfoque en tool calling y su soporte nativo de cuatro idiomas: inglés, serbio, croata y bosnio, lo que lo convierte en una opción poco habitual para el ecosistema lingüístico eslavo del sur. La nomenclatura "Quata2" y la etiqueta "qwen3.5" sugieren un linaje derivado de la familia Qwen, aunque no se dispone de confirmación oficial en la información proporcionada.
 
-La relevancia de esta ficha radica en que el repositorio original es escaso en documentación técnica: no se publican detalles de arquitectura, datos de entrenamiento ni resultados de benchmarks. La model card del cuantizador se limita a listar los tipos de cuantización disponibles y a remitir al repositorio estático para los ficheros mmproj (propios de modelos con visión). Por tanto, esta ficha documenta con rigor lo que se puede verificar y marca explícitamente como no disponible todo aquello que no consta en la información proporcionada.
+Esta ficha describe la versión cuantizada publicada por mradermacher, que ofrece un espectro amplio de cuantizaciones (desde IQ1_S de 1,7 GB hasta Q6_K de 4,1 GB), incluyendo variantes con imatrix que mejoran la relación calidad/tamaño. El repositorio acumula más de 3.400 descargas, lo que indica un interés moderado pero sostenido en la comunidad.
 
-El modelo base se etiqueta con referencias a «quata», «quata2» y «qwen3.5», lo que sugiere una posible relación con la familia Qwen, aunque no se confirma en la documentación. La licencia es Apache 2.0, lo que facilita su uso comercial, y el repositorio GGUF ocupa 60,7 GB en total debido a la multitud de variantes de cuantización incluidas.
+La relevancia actual del modelo radica en su combinación de tamaño contenido (apto para hardware de consumo), licencia Apache 2.0 permisiva y capacidades de tool calling, lo que lo posiciona como candidato para despliegues locales en entornos con requisitos de privacidad o para aplicaciones multilingües en la región balcánica.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como transformers; posible relación con la familia Qwen3.5, no confirmada) |
-| Parámetros totales | 4.841.450.496 (≈4,84B) |
+| Arquitectura | no disponible (etiquetas sugieren linaje Qwen 3.5) |
+| Parámetros totales | 4.841.450.496 (4,84B) |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (más fichero imatrix) |
-| Idiomas soportados | en, sr, hr, bs |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (con imatrix) |
+| Idiomas soportados | inglés (en), serbio (sr), croata (hr), bosnio (bs) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
+| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base MiniAI-Quata2-4b-Preview en la documentación proporcionada. El repositorio se etiqueta como `transformers` y el cuantizador menciona que se trata de un modelo con capacidades de visión (los ficheros mmproj, si existen, se alojan en el repositorio estático). Las etiquetas incluyen `quata`, `quata2` y `qwen3.5`, lo que podría indicar una arquitectura derivada de la familia Qwen, pero este extremo no se confirma en la información disponible.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Las etiquetas del repositorio incluyen "qwen3.5", lo que sugiere que el modelo podría estar construido sobre la arquitectura de la familia Qwen, probablemente un transformer decoder-only con atención estándar, pero este extremo no está confirmado. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Tampoco constan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del cuantizador no incluye esta información, y la ficha se limita a documentar el proceso de cuantización: se generaron cuantizaciones ponderadas con imatrix (método i1) a partir del modelo original, con versiones estáticas disponibles en un repositorio separado. El fichero imatrix incluido (0,1 GB) permite crear cuantizaciones propias.
+La contribución técnica principal de este repositorio es la cuantización con imatrix (importance matrix), que calibra la pérdida de precisión durante la cuantización usando estadísticas de activaciones. Esto permite que las cuantizaciones de baja precisión (especialmente las de la familia IQ) mantengan una calidad superior a las cuantizaciones estáticas equivalentes en tamaño. El autor proporciona además el archivo imatrix original (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones personalizadas.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo se etiqueta como `conversational` y está pensado para diálogo multi-turno.
-- Tool calling / function calling: la etiqueta `tool-calling` indica soporte explícito para invocación de herramientas, aunque no se detalla el formato ni la fiabilidad.
-- Capacidades multilingües: entrenado o ajustado para inglés (en), serbio (sr), croata (hr) y bosnio (bs).
-- Posible soporte de visión: la model card del cuantizador menciona que es un «vision model» y remite a los ficheros mmproj del repositorio estático, aunque no se confirma la naturaleza exacta de esta capacidad.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
-- Modo de razonamiento o thinking: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno en inglés, serbio, croata y bosnio.
+- Tool calling / function calling, según la etiqueta "tool-calling" del repositorio.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su integración en infraestructuras de inferencia estándar.
+- Capacidad de razonamiento y generación de código: no confirmada explícitamente en la información disponible.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Modo de pensamiento (thinking mode): no disponible.
+- Soporte de agentes multi-paso: no confirmado en la documentación.
 
 ## Casos de uso
 
-- Asistente conversacional multilingüe para la región balcánica: el modelo cubre serbio, croata y bosnio además de inglés, por lo que puede desplegarse como chatbot de atención al cliente en mercados de la antigua Yugoslavia sin necesidad de modelos específicos por idioma.
-- Integración en pipelines de agentes con tool calling: la etiqueta `tool-calling` permite usarlo como planificador que invoque APIs externas (búsqueda, cálculo, bases de datos) en flujos de automatización, siempre que se valide el formato de llamada en producción.
-- Despliegue en hardware de consumo: con cuantizaciones desde IQ1_S hasta Q6_K, el modelo puede ejecutarse en GPU de gama media o incluso en CPU mediante llama.cpp u Ollama, lo que facilita prototipado local sin infraestructura dedicada.
-- Generación de texto en aplicaciones de escritorio: al estar en GGUF, puede integrarse en herramientas como LM Studio, Ollama o GPT4All para asistentes de escritura, resumen o reescritura en inglés y lenguas eslavas del sur.
-- Experimentación académica con modelos pequeños: sus ~4,8B parámetros y licencia Apache 2.0 lo hacen adecuado para investigación sobre alineación, evaluación multilingüe o técnicas de cuantización, comparando variantes IQ frente a K.
-- Servicio de inferencia compatible con endpoints: la etiqueta `endpoints_compatible` permite desplegarlo en plataformas de inferencia gestionada que acepten modelos GGUF o transformers, útil para pruebas de concepto rápidas.
-- Procesamiento de documentos con posible componente visual: si se confirma la capacidad de visión mediante los ficheros mmproj, podría emplearse para extracción de información de imágenes o capturas, aunque esta capacidad no está verificada en la documentación.
+- Atención al cliente en lenguas balcánicas: el modelo puede gestionar conversaciones multi-turno en serbio, croata y bosnio, lo que lo hace adecuado para empresas que operan en la región de los Balcanes occidentales y necesitan asistencia automatizada en la lengua local del usuario.
+- Despliegue local con tool calling: gracias a sus cuantizaciones de 3-4 GB (Q4_K_M, Q5_K_M), puede ejecutarse en estaciones de trabajo con GPU de consumo y utilizarse para invocar funciones externas (APIs, bases de datos) en asistentes internos.
+- Procesamiento de documentación multilingüe: útil para resumir o extraer información de documentos redactados en inglés y en las lenguas eslavas del sur cubiertas, con la ventaja de que los datos no salen de la infraestructura propia.
+- Prototipado rápido de chatbots: la licencia Apache 2.0 y la disponibilidad de GGUF permiten integrar el modelo en aplicaciones experimentales sin coste de licencia ni fricción de despliegue.
+- Educación y traducción asistida: puede emplearse como apoyo en herramientas de aprendizaje de idiomas o de traducción entre inglés y las variantes serbio-croatas, aunque la calidad en estas tareas no está documentada.
+- Investigación en eficiencia de cuantización: el repositorio sirve como caso de estudio para comparar el rendimiento de distintas cuantizaciones IQ frente a las K-quants en un modelo de ~5B, gracias al archivo imatrix incluido.
 
 ## Benchmarks y rendimiento
 
@@ -52,49 +52,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización, para ~4,84B parámetros):
-  - IQ1_S / IQ1_M: aproximadamente 1,5-2 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: aproximadamente 2-2,5 GB.
-  - Q2_K / Q2_K_S / IQ3_XXS / IQ3_XS: aproximadamente 2,5-3 GB.
-  - IQ3_S / IQ3_M / Q3_K_S / Q3_K_M / Q3_K_L: aproximadamente 3-3,5 GB.
-  - IQ4_XS / Q4_0 / Q4_1 / Q4_K_S / small-IQ4_NL: aproximadamente 3,5-4 GB.
-  - Q4_K_M / Q5_K_S / Q5_K_M: aproximadamente 4-4,5 GB.
-  - Q6_K: aproximadamente 5-5,5 GB.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 o H100 para despliegues de mayor concurrencia. Cualquier GPU con 6 GB o más puede ejecutar las cuantizaciones Q4/Q5.
-- Cabe en GPU de consumo: sí, desde tarjetas con 4-6 GB de VRAM usando cuantizaciones IQ2/IQ3/Q4; las variantes Q6_K requieren unos 6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, GPT4All y servidores compatibles con GGUF; también vLLM o TGI si se convierte o se usa el modelo base en safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2,2 GB con Q2_K, 3,2 GB con Q4_K_M, 3,6 GB con Q5_K_M y 4,1 GB con Q6_K (tamaños de archivo; la VRAM real requiere margen adicional para el contexto y el runtime).
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4-Q6; RTX 3060, RTX 4060, RTX 4090 o superiores son suficientes. Para las cuantizaciones IQ1-IQ2 basta con 3-4 GB de VRAM.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs modernas con 6 GB o más, e incluso en iGPUs con memoria unificada para cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; la etiqueta "endpoints_compatible" sugiere compatibilidad con APIs de inferencia estándar.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| MiniAI-Quata2-4b-Preview (esta ficha) | ≈4,84B | no disponible | en, sr, hr, bs | Apache 2.0 | GGUF, safetensors | Tool calling, posible visión |
-| Qwen2.5-3B / Qwen2.5-7B | 3B / 7B | 32K (Qwen2.5) | multilingüe amplio | Apache 2.0 (3B), Qwen license (7B) | safetensors, GGUF | Familia ampliamente documentada; contexto y benchmarks públicos |
-| Llama 3.2 3B | 3B | 128K | multilingüe (8 idiomas oficiales) | Llama 3.2 Community License | safetensors, GGUF | No cubre serbio/croata/bosnio de forma oficial |
-| Gemma 2 2B | 2B | 8K | multilingüe | Gemma Terms of Use | safetensors, GGUF | Menor tamaño; licencia con restricciones de uso |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| MiniAI-Quata2-4b-Preview (este) | 4,84B | no disponible | en, sr, hr, bs | Apache 2.0 | GGUF, safetensors |
+| Qwen2.5-3B | 3,09B | 32K | multilingüe (29+) | Apache 2.0 | safetensors, GGUF |
+| Llama 3.2-3B | 3,21B | 128K | multilingüe (8) | Llama 3.2 Community | safetensors, GGUF |
+| Gemma 2-2B | 2,61B | 8K | multilingüe | Gemma Terms | safetensors, GGUF |
 
-La comparación es aproximada: no se dispone de benchmarks del modelo MiniAI-Quata2, por lo que no es posible contrastar rendimiento real frente a estas alternativas. La principal ventaja diferencial declarada es el soporte nativo de serbio, croata y bosnio junto con tool calling, en un tamaño que cabe en GPU de consumo.
+La comparativa se ofrece como referencia de categoría (modelos de 2-5B parámetros); los datos de contexto de este modelo no están confirmados y los de los competidores provienen de sus fichas públicas. No se dispone de benchmarks comparativos directos.
 
 ## Limitaciones y advertencias
 
-- Ausencia de documentación técnica: no se publican detalles de arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad antes de desplegarlo.
-- Riesgo de alucinación: al no haber datos de evaluación, no puede descartarse un comportamiento alucinatorio, especialmente en tareas de razonamiento o matemáticas.
-- Idiomas limitados: solo se declaran en, sr, hr y bs; el rendimiento en castellano u otros idiomas no está garantizado.
-- Tool calling no verificado: la etiqueta existe, pero no se documenta el formato de llamada ni la tasa de éxito; conviene validar en producción.
-- Capacidad de visión incierta: la mención a mmproj no confirma que el modelo base incluya un codificador visual funcional; verificar antes de usar en tareas multimodales.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base podría tener condiciones adicionales no reflejadas en la tarjeta del cuantizador; conviene revisar el repositorio original.
-- Cuantizaciones de baja precisión (IQ1, IQ2): pueden degradar notablemente la calidad; para producción se recomienda Q4_K_M o superior.
-- Fecha de creación futura (2026-11-04): el repositorio muestra una fecha anómala, lo que puede indicar metadatos inconsistentes; tratar con cautela.
-- Sin descargas ni likes: el modelo no tiene tracción comunitaria verificable, por lo que no hay retroalimentación de terceros sobre su comportamiento.
+- El modelo se distribuye como "Preview", lo que implica que puede tratarse de una versión inestable o sujeta a cambios sin aviso.
+- No se documentan sesgos conocidos, pero al estar entrenado principalmente en inglés y lenguas eslavas del sur, es probable que su rendimiento en castellano u otras lenguas sea deficiente.
+- Riesgo de alucinación inherente a modelos de ~5B parámetros; no se han publicado evaluaciones de fiabilidad.
+- La longitud de contexto no está especificada, lo que impide garantizar ventanas largas en producción.
+- Las cuantizaciones de baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- Aunque la licencia es Apache 2.0 (permisiva para uso comercial), conviene verificar la licencia del modelo base original (M1n1A1/MiniAI-Quata2-4b-Preview) por si impone restricciones adicionales.
+- La ausencia de benchmarks publicados impide validar afirmaciones sobre tool calling o calidad multilingüe antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/MiniAI-Quata2-4b-Preview-i1-GGUF
+- Repositorio GGUF (esta versión): https://huggingface.co/mradermacher/MiniAI-Quata2-4b-Preview-i1-GGUF
 - Modelo base: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-Preview
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/MiniAI-Quata2-4b-Preview-GGUF
-- Página de descargas del cuantizador: https://hf.tst.eu/model#MiniAI-Quata2-4b-Preview-i1-GGUF
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/MiniAI-Quata2-4b-Preview-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#MiniAI-Quata2-4b-Preview-i1-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica comparativa de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests

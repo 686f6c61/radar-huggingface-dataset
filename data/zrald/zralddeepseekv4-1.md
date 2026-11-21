@@ -2,105 +2,108 @@
 
 ## Resumen
 
-Zrald/zralddeepseekv4.1 es un repositorio de cuantizaciones GGUF publicadas por el usuario Zrald, derivadas del modelo base deepseek-ai/DeepSeek-V4.1-Flash, descrito en su model card como un transformer de tipo Mixture of Experts (MoE) de 748.000 millones de parametros con 384 expertos por capa, de los cuales se activan 6 por token, mas tablas de busqueda n-grama indexadas por hash denominadas "Engram". El autor distribuye tres variantes de cuantizacion (Q4_K_M, Q3_K_M y Q2_K_DEEPSEEK) pensadas para eludir el problema de colapso del enrutador que, segun la model card, sufren las cuantizaciones estandar de 2 bits en modelos MoE con muchos expertos.
+Zrald DeepSeek-V4.1-Flash-748B es una release de cuantizacion GGUF del modelo base `deepseek-ai/DeepSeek-V4.1-Flash`, publicada por el usuario Zrald. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 748.494.684.784 parametros totales, segun los datos de safetensors del repositorio, e incorpora un componente denominado "Engram" en la model card. Esta release distribuye unicamente la variante `compressed` (Q2_K_DEEPSEEK) en siete shards GGUF, con un tamano de repo de 264,5 GB.
 
-La propuesta tecnica del autor se articula en torno a lo que denomina "Decision Surface Consistency" (DSC), una estrategia de cuantizacion mixta que mantiene el enrutador (`ffn_gate_inp`) en Q8_0 (63 MB en total para las 40 capas), protege las tablas Engram a Q6_K/Q8_0 y prioriza el experto compartido (`shexp`) a Q4_K/Q5_K. El objetivo declarado es conservar la fidelidad de la superficie de decision del enrutador y evitar colisiones de hash en las tablas de busqueda, que segun el autor concentran 196.000 millones de parametros (26,2 % del modelo).
+La propuesta tecnica central es la denominada Decision Surface Consistency (DSC), una tecnica de cuantizacion pensada para evitar el colapso del router en modelos MoE de muchos expertos (la model card menciona 384 expertos) cuando se aplican bits bajos. Segun el autor, mantener el router en Q8_0 (menos de 63 MB) permite conservar entre el 97,61% y el 99,99% de la precision del modelo de referencia a 245,5 GB, frente a los 473,1 GB del Q8_0 de referencia.
 
-El modelo es relevante en el contexto de despliegue de MoE de gran tamano en hardware limitado, ya que el autor reporta mediciones empiricas sobre AMD Instinct MI300X (192 GB HBM3, 235 GB de RAM) comparando cada variante cuantizada contra la referencia Q8_0. Conviene senalar que el repositorio tiene 0 descargas y 0 "likes", que las cifras son autocertificadas por el autor y no verificadas de forma independiente, y que el dato de parametros de los safetensors del repositorio (5.899.892) es inconsistente con los 748B que declara la model card.
+El interes practico es que el autor publica mediciones realizadas en una unica GPU AMD Instinct MI300X (192 GB HBM3), con un endpoint compatible con OpenAI y throughput de decodificacion de 44-54 tok/s. Es una release orientada a despliegue en hardware AMD, no en GPUs de consumo, y requiere un fork especifico de llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer (384 expertos, 6 activos por token, ~40 capas) con tablas Engram de busqueda n-grama indexadas por hash |
-| Parametros totales | 748B segun la model card; 5.899.892 segun los safetensors del repositorio (dato inconsistente, ver limitaciones) |
-| Parametros activos | no disponible (la model card indica activacion de 6 de 384 expertos por token, sin cifra de parametros activos) |
+| Arquitectura | Transformer MoE con componente "Engram" (etiqueta `deepseek41`); numero de expertos no confirmado de forma independiente (la model card cita 384) |
+| Parametros totales | 748.494.684.784 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (accuracy), Q3_K_M (balance), Q2_K_DEEPSEEK / Q2_K_DS (compressed); referencia Q8_0 |
+| Tipos de cuantizacion | Q2_K_DEEPSEEK (variante distribuida); Q4_K_M, Q3_K_M y Q8_0 documentados como brazos de evaluacion no distribuidos |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (7 shards `compressed-*`); repo de 264,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, DeepSeek-V4.1-Flash, se describe como un MoE de 748B con 384 expertos por capa y enrutamiento dinamico de 6 expertos por token, complementado con tablas Engram (196B de parametros, un 26,2 % del total) que actuan como tablas de busqueda de n-gramas indexadas por hash. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO, por lo que esos datos no estan disponibles.
+El modelo base es un transformer de mezcla de expertos de gran escala (748B parametros totales) con un mecanismo adicional que el autor denomina "Engram", del que no se detallan caracteristicas en la informacion disponible. La model card no aporta datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Tampoco se especifican los parametros activos por token ni la longitud de contexto del modelo base.
 
-La innovacion que reclama este repositorio no esta en el modelo base, sino en el proceso de cuantizacion. El autor sostiene que la cuantizacion escalar de 2 bits sobre `ffn_gate_inp` provoca que el 94,2 % de los tokens se enruten a expertos incorrectos, y que su motor evita ese "acantilado" manteniendo el enrutador en Q8_0, protegiendo las tablas Engram en Q6_K/Q8_0 para evitar colisiones de hash y fijando el experto compartido (que se ejecuta en el 100 % de los tokens) en Q4_K/Q5_K. No se aportan detalles sobre semillas, calibracion, dataset de calibracion ni reproducibilidad mas alla del whitepaper referenciado.
+La innovacion declarada por el autor de la release es la cuantizacion con Decision Surface Consistency (DSC), que segun la model card evita que la cuantizacion a 2 bits altere las decisiones de gating del router en un MoE de muchos expertos. La estrategia consiste en mantener el router en Q8_0 (menos de 63 MB) mientras el resto de pesos se comprime a Q2_K, lo que permite reducir el peso a 245,5 GB conservando, segun las mediciones del autor, entre el 97,61% y el 99,99% de la precision de referencia. Estas cifras proceden exclusivamente de la model card y no se han verificado de forma independiente.
 
 ## Capacidades
 
-- Generacion de texto en el pipeline declarado (`text-generation`).
-- Razonamiento matematico: la model card reporta retenciones de entre el 97,15 % y el 99,95 % frente a la referencia, lo que sugiere conservacion de capacidad de razonamiento, sin especificar los benchmarks empleados.
-- Generacion de codigo: se reporta una retencion de "code pass-rate" de entre el 96,80 % y el 100,18 % sobre la referencia.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible (los idiomas no figuran en la ficha).
-- Modo de razonamiento explicito (thinking), vision o audio: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
+- Generacion de codigo: la model card documenta la produccion de un fichero FastAPI con SQLAlchemy 2.0, autenticacion JWT y OAuth2 que pasa `py_compile`.
+- Generacion de HTML y JavaScript: se documenta la creacion de una landing page de 579 lineas y de un juego de snake en canvas funcional en una sola pasada.
+- Razonamiento aritmetico basico y respuesta a preguntas factuales (sondas de correccion: `127*43 → 5461`, capital de Francia, `2+2`).
+- Razonamiento matematico: la model card reporta una retencion del 99,95% en razonamiento matematico frente a la referencia Q8_0.
+- Servido mediante endpoint compatible con OpenAI (etiqueta `endpoints_compatible`).
+- Soporte de tool calling, function calling, agentes y modo thinking: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponible.
 
 ## Casos de uso
 
-- Despliegue de inferencia de un MoE de gran escala en hardware AMD: la variante `compressed` (245,5 GB) esta pensada para ejecutarse en una MI300X de 192 GB HBM3 con 235 GB de RAM, reduciendo el espacio de memoria un 48,1 % frente a la referencia Q8_0 de 473,1 GB.
-- Servicio de generacion de codigo con fidelidad alta: la variante `accuracy` (Q4_K_M) mantiene, segun el autor, el 98,42 % del pass-rate de codigo Python, por lo que seria adecuada para asistentes de programacion donde un fallo de sintaxis o de logica es costoso.
-- Razonamiento matematico asistido: la variante `compressed` reporta una retencion del 99,95 % en razonamiento matematico, lo que la hace utilizable en entornos de resolucion de problemas paso a paso con restricciones fuertes de memoria.
-- Investigacion sobre cuantizacion de MoE: el repositorio y su whitepaper sirven como material de estudio para analizar como afecta la cuantizacion de baja precision a las superficies de decision del enrutador en modelos con cientos de expertos.
-- Evaluacion comparativa de routers y tablas Engram: permite reproducir experimentos sobre el impacto de la precision (Q8_0 vs Q2_K) en `ffn_gate_inp` y en `engram_embd.weight`, aislando el efecto de cada componente.
-- Despliegue en infraestructura con memoria limitada: la variante `balance` (Q3_K_M) ofrece, segun el autor, un punto de Pareto con 309,2-323,4 GB y retenciones del 86,32-97,41 %, util cuando la prioridad es ajustar el consumo de memoria por debajo de los 415 GB de la variante `accuracy`.
-- Experimentacion con llama.cpp a gran escala: la distribucion en 7 fragmentos (shards) del modelo `compressed` facilita la descarga y el reparto entre dispositivos usando `huggingface-cli` y llama.cpp.
+- Despliegue de un modelo de 748B en una unica GPU MI300X: la release esta medida y validada en ese hardware, con 191,6 GB de HBM3 ocupados y un endpoint compatible con OpenAI, lo que permite servir el modelo sin un cluster multi-GPU.
+- Generacion de codigo en produccion: la model card documenta la generacion de un backend FastAPI que compila correctamente, lo que lo hace adecuado para scaffolding de servicios y prototipado rapido de APIs.
+- Generacion de front-end: la produccion de una landing page HTML completa con diseno responsive y de un juego interactivo en canvas sugiere utilidad para generar interfaces y demos funcionales.
+- Razonamiento matematico y aritmetico: la retencion del 99,95% en matematicas frente a la referencia permite usar la variante comprimida en tareas de calculo y resolucion de problemas donde el ahorro de memoria es prioritario.
+- Evaluacion de tecnicas de cuantizacion: el repositorio incluye datos de benchmark, logs de servidor y artefactos generados, lo que lo convierte en material de referencia para investigar el comportamiento de MoE cuantizados a 2 bits.
+- Investigacion sobre routers en MoE: la tecnica DSC y los resultados de retencion por categoria (accuracy, balance, compressed) sirven como base para estudiar el efecto de la cuantizacion en las decisiones de gating.
+- Entornos con restricciones de memoria: la reduccion del 48,1% del peso frente al Q8_0 de referencia (245,5 GB frente a 473,1 GB) permite desplegar el modelo en nodos con menos HBM o con offload parcial a DRAM.
 
 ## Benchmarks y rendimiento
 
-Los siguientes datos estan tomados literalmente de la model card del autor y no han sido verificados de forma independiente. No se han encontrado resultados de benchmarks en las busquedas web realizadas.
+Datos publicados en la model card, medidos por el autor en una AMD Instinct MI300X (192 GB HBM3, 235 GB RAM) contra la referencia Q8_0. No se han verificado de forma independiente.
 
-| Nivel | Rung | Tamano de archivo | Memoria ahorrada | Retencion vs referencia | Perplejidad Wikitext | Retencion codigo Python | Retencion razonamiento matematico |
+| Tier | Rung | Tamano | Memoria ahorrada | Retencion vs ref. | Perplejidad Wikitext | Retencion codigo Python | Retencion matematicas |
 |---|---|---|---|---|---|---|---|
-| Referencia base original | Q8_0 | 473,1 GB | 0,0 % | 100,00 % | 1,8342 | 100,00 % | 100,00 % |
-| accuracy | Q4_K_M | 414,2 GB | 12,5 % | 92,88 % - 99,06 % | 1,9748 | 98,42 % | 99,10 % |
-| balance | Q3_K_M | 309,2 - 323,4 GB | 34,6 % | 86,32 % - 97,41 % | 1,8829 | 96,80 % | 97,15 % |
-| compressed | Q2_K_DS | 245,5 GB | 48,1 % | 97,61 % - 99,99 % | 1,8792 | 100,18 % | 99,95 % |
+| Referencia base | Q8_0 | 473,1 GB | 0,0% | 100,00% | 1,8342 | 100,00% | 100,00% |
+| accuracy | Q4_K_M | 414,2 GB | 12,5% | 92,88% – 99,06% | 1,9748 | 98,42% | 99,10% |
+| balance | Q3_K_M | 309,2 – 323,4 GB | 34,6% | 86,32% – 97,41% | 1,8829 | 96,80% | 97,15% |
+| compressed (distribuido) | Q2_K_DS | 245,5 GB | 48,1% | 97,61% – 99,99% | 1,8792 | 100,18% | 99,95% |
 
-Comparativa declarada por el autor frente a una linea base publica estandar (`vcruz305`):
+Rendimiento de inferencia medido en la ejecucion del 2026-10-05 en una MI300X:
 
-| Nivel | Precision medida (motor del autor) | Linea base web publicada | Ventaja | Tamano real | Tamano publicado | Ventaja de memoria |
-|---|---|---|---|---|---|---|
-| accuracy | 99,06 % | 92,88 % | +6,18 % | 414,2 GB | 414,2 GB | Tablas Engram protegidas |
-| balance | 97,41 % | 86,32 % | +11,09 % | 309,2 GB | 323,4 GB | 14,2 GB menor |
-| compressed | 97,61 % - 99,99 % | 33,57 % (colapso) | +64,04 % | 245,5 GB | 246,3 GB | Recuperacion de 64,04 % de precision |
+| Metrica | Valor medido |
+|---|---|
+| Carga del modelo (mmap) | ~38 s hasta primer listen |
+| Throughput de decodificacion | 44–54 tok/s |
+| Prefill (prompts cortos) | 93–130 tok/s |
+| TTFT | 150–437 ms |
+| VRAM / DRAM host | 191,6 / 192 GB HBM3, ~8 GB de delta en DRAM |
+| Temperatura de GPU | 46 °C junction |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 473,1 GB para la referencia Q8_0; 414,2 GB para `accuracy`; 309,2-323,4 GB para `balance`; 245,5 GB para `compressed`. Son tamanos de archivo, no picos de VRAM en tiempo de ejecucion.
-- Hardware validado: AMD Instinct MI300X VF con 192 GB de HBM3 y 235 GB de RAM del sistema, segun la model card.
-- El modelo excede la RAM del host, por lo que el autor indica que es obligatorio usar banderas especificas en llama.cpp para evitar caidas por falta de memoria (OOM).
-- GPU de consumo: no cabe en GPU de consumo. Las 245,5 GB minimas de la variante mas comprimida superan ampliamente los 24 GB de una RTX 4090 o los 48 GB de una RTX 6000 Ada, por lo que se requiere reparto entre varios aceleradores de gran capacidad.
-- Opciones de despliegue: llama.cpp (formato GGUF; el autor indica que apuntando a la primera particion se detectan automaticamente las 00002-00007). No se confirma compatibilidad con vLLM, TGI u Ollama en la informacion proporcionada.
-- Latencia y throughput: no disponible.
+- VRAM estimada: 191,6 GB de HBM3 medidos para la variante comprimida distribuida, mas ~8 GB de DRAM host.
+- GPU validada: AMD Instinct MI300X (192 GB HBM3, arquitectura gfx942). Es el unico hardware con mediciones publicadas.
+- GPU de consumo: no cabe en ninguna GPU de consumo actual; el modelo completo requiere ~192 GB de memoria aceleradora.
+- Despliegue: llama.cpp mediante el fork `vcruz305/llama.cpp`, rama `runtime/deepseek41`. El llama.cpp upstream falla con `unknown model architecture: 'deepseek41'`. Compilacion con `-DGGML_HIP=ON`, `amdclang++` y `gfx942`.
+- Script de despliegue: `./scripts/serve_deepseek4.1_mi300x.sh all` (compila, descarga, arranca y ejecuta benchmarks).
+- Throughput: 44–54 tok/s en decodificacion y 93–130 tok/s en prefill sobre MI300X.
+- Soporte en vLLM, TGI u Ollama: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Zrald/zralddeepseekv4.1 | 748B (MoE, 384 expertos) segun model card | no disponible | Retenciones del 86,32 % al 99,99 % frente a Q8_0 (autocertificado) | apache-2.0 | GGUF, 7 shards, 0 descargas |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | 748B (MoE, 384 expertos) | no disponible | Referencia Q8_0 con perplejidad Wikitext 1,8342 | no disponible | pesos originales |
-| Linea base de cuantizacion estandar (`vcruz305`) | mismo modelo base | no disponible | 92,88 % (Q4), 86,32 % (Q3), 33,57 % (Q2) | no disponible | cuantizaciones publicadas |
-
-No se dispone de datos verificados de otros modelos comparables de la misma categoria dentro de la informacion proporcionada.
+No se dispone de datos verificables de modelos comparables en la informacion proporcionada. La unica comparacion documentada es interna al propio repositorio, entre las tres categorias de cuantizacion del mismo modelo (accuracy Q4_K_M, balance Q3_K_M y compressed Q2_K_DS) y la referencia Q8_0, recogida en la tabla de benchmarks. No se han publicado comparaciones con otros modelos de la misma categoria en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Cifras autocertificadas: todos los benchmarks y porcentajes de retencion provienen de la model card del autor; no se han verificado de forma independiente y las busquedas web no aportan resultados sobre el modelo.
-- Inconsistencia en el recuento de parametros: la model card declara 748B, pero el dato de safetensors del repositorio es de 5.899.892 parametros, lo que no cuadra con un modelo de ese tamano ni con un release GGUF. Conviene tratarlo con cautela.
-- Inconsistencia en el tamano: el repositorio ocupa 147,1 GB, mientras que los ficheros descritos en la model card suman unos 245 GB para la variante `compressed`.
-- Repositorio sin traccion: 0 descargas y 0 "likes" en el momento de la consulta, creado y actualizado el 21 de septiembre de 2026, lo que limita la evidencia de uso real.
-- Riesgo de alucinacion: no se documenta ningun proceso de evaluacion de veracidad, RLHF o DPO, por lo que persiste el riesgo habitual de generacion de contenido incorrecto.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles en la informacion proporcionada.
-- Licencia: apache-2.0, que permite uso comercial, pero la licencia del modelo base DeepSeek-V4.1-Flash no se detalla en la informacion disponible y podria imponer condiciones adicionales.
-- Requisitos de memoria extremos: incluso la variante mas comprimida (245,5 GB) excede la memoria de cualquier GPU de consumo y obliga a hardware de centro de datos o reparto entre multiples aceleradores.
-- Afirmaciones sin detalle tecnico: no se especifican semillas, dataset de calibracion, versiones de llama.cpp ni condiciones de reproduccion del whitepaper.
+- Las cifras de retencion, perplejidad y rendimiento proceden exclusivamente de la model card del autor y de sus propios artefactos de evidencia; no se han verificado de forma independiente.
+- La model card reporta retenciones superiores al 100% en algunos ejes (por ejemplo, 100,18% en codigo Python para la variante comprimida), lo que indica ruido de medicion y exige cautela al interpretar los resultados.
+- El modelo solo funciona con un fork no oficial de llama.cpp; el upstream no reconoce la arquitectura `deepseek41`. Esto implica dependencia de mantenimiento de terceros y riesgo de rotura.
+- El repositorio distribuye unicamente la variante comprimida (Q2_K_DEEPSEEK); las variantes accuracy, balance, q6k y q8_0 no estan disponibles como pesos.
+- No se especifican los idiomas soportados ni la longitud de contexto, lo que impide evaluar su idoneidad para tareas multilingues o de contexto largo.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion proporcionada; al tratarse de un modelo de 748B, cabe esperar los riesgos habituales de los LLM de gran escala, pero no hay datos especificos.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base `deepseek-ai/DeepSeek-V4.1-Flash`, ya que la release es una cuantizacion derivada.
+- El hardware requerido (~192 GB de HBM) limita el despliegue a aceleradores de clase datacenter, en la practica MI300X o equivalentes.
+- La fecha de creacion del repositorio (2026-09-21) y el modelo base referenciado no permiten contrastar la informacion con fuentes independientes en el momento de redactar esta ficha.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Zrald/zralddeepseekv4.1
-- Whitepaper (vista en navegador): https://huggingface.co/Zrald/zralddeepseekv4.1/blob/main/whitepaper.pdf
-- Whitepaper (descarga directa): https://huggingface.co/Zrald/zralddeepseekv4.1/resolve/main/whitepaper.pdf
-- Modelo base: deepseek-ai/DeepSeek-V4.1-Flash
-- Linea base de cuantizacion citada por el autor: vcruz305 (sin URL disponible)
+- Repositorio Hugging Face: https://huggingface.co/Zrald/zralddeepseekv4.1
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Whitepaper (PDF): https://huggingface.co/Zrald/zralddeepseekv4.1/blob/main/whitepaper.pdf
+- Blog de serving en MI300X: https://huggingface.co/Zrald/zralddeepseekv4.1/blob/main/docs/DEEPSEEK_V41_FLASH_ON_MI300X.md
+- Fork de llama.cpp requerido: https://github.com/vcruz305/llama.cpp (rama `runtime/deepseek41`)
+- Artefactos generados: https://huggingface.co/Zrald/zralddeepseekv4.1/tree/main/artifacts
+- Evidencia de la ejecucion: https://huggingface.co/Zrald/zralddeepseekv4.1/tree/main/evidence/run_20261005

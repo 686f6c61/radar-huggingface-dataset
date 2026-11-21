@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ceskyflorbal.cz",
-      "url": "https://login.ceskyflorbal.cz/osoba/",
-      "snippet": "We would like to show you a description here but the site won’t allow us."
-    },
-    {
-      "title": "Florbal ID",
-      "url": "https://id.ceskyflorbal.cz/",
-      "snippet": "Co je Florbal ID? Jednotné přihlašování napříč platformami. Moderní technologie vás chrání před krádeží identity. Přednostní nákup …"
-    },
-    {
-      "title": "FLORBAL iD | Český florbal",
-      "url": "https://www.ceskyflorbal.cz/id",
-      "snippet": "FLORBAL iD je jednotný přihlašovací systém, díky kterému si nemusíte pamatovat desítky různých přihlašovacích údajů. Stačí jeden …"
-    },
-    {
-      "title": "FLORBAL iD | Český florbal",
-      "url": "https://www.ceskyflorbal.cz/id?tabId=152",
-      "snippet": "Přihlášení s údaji FLORBAL iD aktuálně můžete využít do Florbalového informačního systému (FIS) – pokud jste člen/ka, nové …"
-    },
-    {
-      "title": "Hlavní stránka | Český florbal",
-      "url": "https://www.ceskyflorbal.cz/?locale=cs",
-      "snippet": "Oficiální web českého florbalu. Livesport Superliga, Extraliga žen, 1. liga mužů, Mládež, Reprezentace, Superfinále, Mistrovství světa, …"
-    }
-  ]
+  "sources": []
 }

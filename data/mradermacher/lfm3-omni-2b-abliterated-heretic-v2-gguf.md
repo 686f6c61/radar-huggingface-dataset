@@ -2,51 +2,48 @@
 
 ## Resumen
 
-Esta ficha describe `mradermacher/lfm3-omni-2b-abliterated-heretic-v2-GGUF`, una recopilacion de cuantizaciones GGUF estaticas del modelo `mizahnyx/lfm3-omni-2b-abliterated-heretic-v2`, que a su vez deriva del modelo omni de Liquid AI LFM3-Omni-2B. El trabajo de cuantizacion lo firma mradermacher (equipo de nethype GmbH), mientras que el modelo base original procede de Liquid AI. La relevancia de esta publicacion es practica: pone a disposicion del ecosistema llama.cpp/Ollama una version multimodal (texto, imagen, video y audio) de un modelo de aproximadamente 1,7 mil millones de parametros, con licencia LFM Open License v1.0.
+`mradermacher/lfm3-omni-2b-abliterated-heretic-v2-GGUF` es una cuantizacion en formato GGUF del modelo `mizahnyx/lfm3-omni-2b-abliterated-heretic-v2`, que a su vez deriva del modelo multimodal `LiquidAI/LFM3-Omni-2B`. El modelo original pertenece a la familia LFM3 (Liquid Foundation Model 3) de Liquid AI, disenada para inferencia eficiente en dispositivos con recursos limitados. Esta version concreta ha sido sometida a un proceso de "abliteration" y "decensoring" (etiquetado como heretic y abliterated), orientado a eliminar o reducir los mecanismos de rechazo y filtros de seguridad del modelo base.
 
-El modelo base es un modelo "abliterated/heretic", es decir, una variante en la que se ha eliminado o debilitado el comportamiento de rechazo (refusal) del modelo original, orientada a generar respuestas sin censura. Esta ficha se centra en el artefacto GGUF publicado, pero conviene tener presente que las capacidades y limitaciones heredadas provienen del modelo base y del proceso de abliteracion.
+El modelo cuenta con aproximadamente 1.728 millones de parametros (1,73 mil millones) en pesos safetensors, lo que lo situa en la categoria de modelos pequenos. Es multimodal (etiqueta omni y multimodal), con soporte para texto e imagen a traves del proyector multimodal incluido en el repositorio (`mmproj`). Soporta 23 idiomas, incluido el castellano, y se distribuye bajo la licencia LFM Open License v1.0.
 
-El repositorio tiene un tamano de 17,3 GB y contiene 14 ficheros GGUF: desde Q2_K (0,9 GB) hasta f16 (3,6 GB), mas dos ficheros `mmproj` (Q8_0 y f16) que aportan el componente multimodal. No se dispone de informacion sobre contexto maximo, composicion del dataset de entrenamiento ni benchmarks en la informacion proporcionada.
+La relevancia de esta ficha radica en dos factores: por un lado, permite ejecutar un modelo multimodal de ~2B en hardware de consumo gracias a las cuantizaciones GGUF (desde 0,9 GB en Q2_K hasta 3,6 GB en f16); por otro, su naturaleza "abliterated" y "uncensored" implica consideraciones eticas y legales importantes que se detallan en la seccion de limitaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base LFM3-Omni-2B de Liquid AI; familia liquid/lfm3, multimodal omni) |
-| Parametros totales | 1.728.801.600 (aprox. 1,7 B, dato real de safetensors) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo base LiquidAI LFM3, familia Liquid; detalles de arquitectura no especificados en la informacion proporcionada) |
+| Parametros totales | 1.728.801.600 (~1,73 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, ademas de mmproj Q8_0 y mmproj f16 para el componente multimodal |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
-| Licencia | lfm-open-license-v1.0 (etiquetada como "other"); enlace a la licencia del modelo original de LiquidAI |
-| Formato de pesos | GGUF (transformers como libreria declarada) |
+| Licencia | LFM Open License v1.0 (license_name: lfm-open-license-v1.0; license: other) |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la documentacion proporcionada. Por la familia del modelo base (`liquid`, `lfm3`, `lfm3-omni`) y la descripcion de Liquid AI, se trata de un modelo omni end-to-end que comprende texto, imagenes, video y audio, y que responde en texto, voz o texto y voz intercalados. El modelo aqui publicado es una variante abliterated/heretic del modelo base `mizahnyx/lfm3-omni-2b-abliterated-heretic-v2`, lo que implica una modificacion de pesos orientada a suprimir el comportamiento de rechazo.
+No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El modelo pertenece a la familia LFM3 de Liquid AI, etiquetada con `liquid`, `lfm3` y `lfm3-omni`, e incluye un componente multimodal (proyector `mmproj`) que habilita el procesamiento de imagenes junto con texto. El tamano de ~1,73 B de parametros y la existencia de cuantizaciones de ~1 GB sugieren un diseno orientado a eficiencia en inferencia.
 
-El artefacto de mradermacher es una cuantizacion estatica (convert_type: hf, quantize_version 2, output_tensor_quantised 1). El autor indica que no hay cuantizaciones ponderadas/imatrix disponibles en el momento de la publicacion y que no tiene previsto generarlas, salvo peticion en la discusion comunitaria. No se han publicado datos sobre numero de tokens de entrenamiento, composicion del dataset, RLHF/DPO ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
+Respecto al entrenamiento, no se especifican en la informacion disponible el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La variante "abliterated-heretic-v2" implica un post-procesado orientado a eliminar las direcciones de rechazo en el espacio de activaciones (abliteration), una tecnica que modifica los pesos para reducir la tendencia del modelo a negarse a responder ciertas peticiones. Esta ficha no puede confirmar los detalles tecnicos exactos de dicho proceso.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (tag `conversational`).
-- Comprension multimodal: texto, imagenes, video y audio (segun la descripcion de LFM3-Omni-2B de Liquid AI), siempre que se cargue el fichero `mmproj` correspondiente junto al GGUF.
-- Respuesta multimodal: texto, voz o texto y voz intercalados (capacidad declarada del modelo base).
-- Cobertura multilingue amplia: 23 idiomas, incluidos espanol, ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, vietnamita, tailandes, indonesio, hindi, ruso, polaco, danes, griego, finlandes, hebreo, neerlandes, sueco y turco.
-- Comportamiento "abliterated/heretic": se elimina o reduce el rechazo del modelo original, lo que permite respuestas sin censura en temas que el modelo base rechazaria.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo "thinking" explicito: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en 23 idiomas, incluido el castellano.
+- Procesamiento multimodal: soporte de entrada de imagenes mediante el proyector `mmproj` incluido en el repositorio.
+- Capacidad de dialogo multi-turno (etiqueta `conversational`).
+- Comportamiento "uncensored" / "decensored": el modelo ha sido modificado para reducir rechazos ante peticiones que el modelo base podria declinar.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- No se dispone de informacion que confirme soporte de tool calling, function calling, modo thinking explicito, audio u otras capacidades especiales.
 
 ## Casos de uso
 
-- Asistente conversacional local multilingue: el modelo puede mantener conversaciones multi-turno en 23 idiomas y desplegarse en llama.cpp u Ollama con cuantizaciones de 1-2 GB, lo que lo hace adecuado para prototipos y entornos con recursos limitados.
-- Descripcion de imagenes en local: cargando el GGUF junto al `mmproj-Q8_0` o `mmproj-f16`, se puede usar para captioning, extraccion de informacion de capturas o accesibilidad, sin depender de APIs en la nube.
-- Analisis de audio y video de forma ligera: al ser un modelo omni, permite transcribir o resumir contenido audiovisual en flujos de trabajo locales, siempre que la integracion con llama.cpp soporte las modalidades correspondientes.
-- Generacion de respuestas sin filtro para investigacion: util en estudios sobre sesgos, seguridad y comportamiento de modelos abliterated, donde se necesita un modelo que no rechace peticiones para analizar respuestas.
-- Chatbot de atencion al ciudadano en varios idiomas: la cobertura de 23 lenguas permite desplegar un asistente multilingue en una sola instancia pequena, con cuantizacion Q4_K_M (1,2 GB) para latencia baja.
-- Prototipado rapido en CPU o GPU de gama baja: las cuantizaciones Q2_K (0,9 GB) y Q3_K_S (1,0 GB) permiten ejecutar el modelo en equipos sin GPU dedicada, ideales para demos y pruebas de concepto.
-- Generacion de voz sintetica en local: si se integra la salida de voz del modelo base, puede emplearse en aplicaciones de lectura en voz alta o asistentes por voz, sujeto a las limitaciones de la integracion GGUF.
+- Prototipado local de asistentes conversacionales: gracias a las cuantizaciones de ~1,2 GB (Q4_K_M), el modelo puede ejecutarse en portatiles con GPU modesta o incluso en CPU, permitiendo iterar rapidamente sobre prompts y flujos conversacionales sin coste de API.
+- Procesamiento de imagenes en local: el componente `mmproj` permite describir o analizar imagenes en entornos sin conectividad, util para clasificacion preliminar de documentos escaneados o capturas.
+- Investigacion sobre alineacion y seguridad: la variante abliterated es util para estudiar el comportamiento de modelos sin filtros de rechazo, comparar respuestas frente al modelo base y analizar sesgos residuales en entornos controlados.
+- Generacion de texto multilingue: con soporte para 23 idiomas, puede emplearse en tareas de traduccion asistida o generacion de contenido en idiomas minoritarios dentro del conjunto soportado.
+- Despliegue en dispositivos de borde: el tamano reducido (1,73 B) y los formatos GGUF permiten integracion en aplicaciones de escritorio o moviles mediante llama.cpp u Ollama, con latencia baja y sin dependencia de la nube.
+- Filtrado y anotacion de datos: puede utilizarse como modelo auxiliar para etiquetar o generar datos sinteticos en pipelines de entrenamiento, aunque su naturaleza sin censura exige supervision humana en la salida.
 
 ## Benchmarks y rendimiento
 
@@ -54,42 +51,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada (solo pesos, sin overhead de contexto): Q2_K ~0,9 GB; Q3_K_S ~1,0 GB; IQ4_XS ~1,1 GB; Q4_K_S/Q4_K_M ~1,2 GB; Q5_K_M ~1,4 GB; Q6_K ~1,5 GB; Q8_0 ~1,9 GB; f16 ~3,6 GB. El `mmproj` anade ~0,6 GB (Q8_0) o ~1,0 GB (f16).
-- GPU recomendadas: cualquier GPU consumer con 4-8 GB de VRAM es suficiente para cuantizaciones Q4-Q8; para f16 y contexto largo se recomienda 8 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4090). Para despliegue en servidor, A100 o H100 no son necesarias por tamano, pero pueden usarse para alto throughput.
-- Cabe en GPU consumer: si, practicamente en todas las GPU modernas con 4 GB o mas, usando Q4_K_M o inferior. Tambien es viable en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (LM Studio, koboldcpp, etc.). vLLM y TGI no estan confirmados para este artefacto GGUF en la informacion disponible.
-- Latencia y throughput: no disponibles. Por el tamano (~1,7 B parametros) se espera una latencia baja en GPU consumer, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 1,0-1,5 GB para cuantizaciones Q3-Q4; ~1,9 GB para Q8_0; ~3,6 GB para f16. El componente multimodal anade ~0,6 GB (mmproj Q8_0) o ~1,0 GB (mmproj f16).
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) es suficiente para las cuantizaciones Q4-Q5. Para f16 se recomienda 6 GB o mas.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU dedicada moderna e incluso en GPUs integradas con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base es compatible con transformers; la version GGUF esta pensada para llama.cpp y derivados.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| lfm3-omni-2b-abliterated-heretic-v2-GGUF (este) | ~1,7 B | no disponible | texto, imagen, video, audio | lfm-open-license-v1.0 | GGUF |
-| LFM3-Omni-2B (Liquid AI, original) | ~2 B (nominal) | no disponible | texto, imagen, video, audio | lfm-open-license-v1.0 | safetensors (no confirmado) |
-| mizahnyx/lfm3-omni-2b-abliterated-heretic-v2 (base de este GGUF) | ~1,7 B | no disponible | texto, imagen, video, audio | no disponible | safetensors (no confirmado) |
+| lfm3-omni-2b-abliterated-heretic-v2 (este) | ~1,73 B | no disponible | Si (mmproj) | LFM Open License v1.0 | GGUF, safetensors |
+| LiquidAI/LFM3-Omni-2B (base) | ~1,73 B | no disponible | Si | LFM Open License v1.0 | safetensors |
+| Modelos ~2B de la familia Gemma/Qwen | no disponible en esta ficha | no disponible | variable | variable | variable |
 
-No se dispone de datos de rendimiento comparativo ni de otros modelos omni de tamano similar en la informacion proporcionada para establecer una comparativa mas amplia.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Al ser una variante abliterated/heretic, el modelo puede generar contenido que el original rechazaria; no es adecuado para produccion orientada al publico general sin filtros adicionales.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; en modelos pequenos (~1,7 B) la tasa de alucinacion suele ser alta, aunque no hay datos concretos en la informacion disponible.
-- Contexto maximo desconocido: no se puede planificar su uso en tareas de contexto largo sin verificar la configuracion del runtime.
-- Licencia LFM Open License v1.0: hay que revisar sus terminos para uso comercial; la etiqueta "other" en Hugging Face indica que no es una licencia estandar reconocida.
-- Las capacidades multimodales dependen de que el runtime cargue correctamente el `mmproj`; no todos los clientes GGUF soportan audio y video.
-- El proceso de abliteracion puede degradar capacidades generales (razonamiento, instrucciones) respecto al modelo original; no hay benchmarks que lo cuantifiquen.
-- Cuantizaciones Q2_K y Q3_K_S sacrifican calidad; el autor recomienda Q4_K_S/Q4_K_M como equilibrio y Q8_0 para maxima calidad.
-- No hay cuantizaciones imatrix/ponderadas publicadas por el autor en el momento de la ficha.
-- El repositorio tiene 0 descargas y 0 likes, por lo que no hay evidencia comunitaria de funcionamiento en produccion.
+- Modelo "abliterated" y "uncensored": ha sido modificado para eliminar o reducir los mecanismos de rechazo. Puede generar contenido ofensivo, peligroso o inapropiado sin filtros, lo que lo hace inadecuado para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo elevado de alucinacion: al tratarse de un modelo de ~1,73 B, su capacidad de razonamiento y fidelidad factual es limitada en comparacion con modelos de mayor tamano.
+- La licencia LFM Open License v1.0 impone condiciones especificas de uso; es responsabilidad del usuario revisar el texto completo de la licencia antes de un uso comercial.
+- No se dispone de informacion sobre la longitud de contexto, lo que limita la planificacion de casos de uso que requieran ventanas largas.
+- El proceso de abliteration puede degradar capacidades generales (coherencia, instrucciones complejas) respecto al modelo base original.
+- No se han publicado benchmarks que permitan evaluar el impacto de la cuantizacion ni del proceso de decensoring en el rendimiento.
+- Uso responsable: dado su caracter sin censura, debe desplegarse con supervision humana y en entornos controlados.
 
 ## Enlaces
 
-- Hugging Face (este artefacto): https://huggingface.co/mradermacher/lfm3-omni-2b-abliterated-heretic-v2-GGUF
-- Modelo base de la cuantizacion: https://huggingface.co/mizahnyx/lfm3-omni-2b-abliterated-heretic-v2
-- Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#lfm3-omni-2b-abliterated-heretic-v2-GGUF
-- Documentacion de LFM3-Omni-2B (Liquid AI): https://docs.liquid.ai/lfm/models/lfm3-omni-2b
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/lfm3-omni-2b-abliterated-heretic-v2-GGUF
+- Modelo base (abliterated): https://huggingface.co/mizahnyx/lfm3-omni-2b-abliterated-heretic-v2
+- Modelo original LiquidAI: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
-- Pagina del equipo mradermacher: https://huggingface.co/mradermacher/models
-- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#lfm3-omni-2b-abliterated-heretic-v2-GGUF
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/lfm3-omni-2b-abliterated-heretic-v2-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "pgmharikrishnan/Inkling-2-Mini-MLX-Serve-4bit",
+  "slug": "pgmharikrishnan-inkling-2-mini-mlx-serve-4bit",
+  "author": "pgmharikrishnan",
+  "url": "https://huggingface.co/pgmharikrishnan/Inkling-2-Mini-MLX-Serve-4bit",
+  "created_at": "2026-11-20T22:32:59.000Z",
+  "updated_at": "2026-11-20T23:00:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "inkling2_loop",
+    "mlx",
+    "moe",
+    "looped-transformer",
+    "text-generation",
+    "conversational",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26070385152,
+  "parameters_human": "26.07B",
+  "storage_bytes": 14750549744,
+  "storage_human": "14.8 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "39DollarGlasses: Prescription Eyewear at Affordable Prices",
+      "url": "https://www.39dollarglasses.com/",
+      "snippet": "You deserve high-quality, stylish glasses — and you shouldn't have to spend hundreds to get them. That’s why all our prescription …"
+    }
+  ]
+}

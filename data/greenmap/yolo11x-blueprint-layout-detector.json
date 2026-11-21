@@ -5,7 +5,7 @@
   "author": "GreenMap",
   "url": "https://huggingface.co/GreenMap/yolo11x-blueprint-layout-detector",
   "created_at": "2026-06-29T11:38:15.000Z",
-  "updated_at": "2026-11-19T19:28:26.000Z",
+  "updated_at": "2026-11-20T20:32:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

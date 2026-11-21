@@ -2,88 +2,91 @@
 
 ## Resumen
 
-NULLXES-KLAREN-4E es un modelo conversacional de lenguaje basado en Mixture-of-Experts (MoE), desarrollado por NULLXES (publicado en Hugging Face bajo la cuenta de MagistrTheOne) dentro de su proyecto ORBITAL AI. No es un modelo entrenado desde cero: se trata de un ajuste fino (SFT) sobre OpenAI gpt-oss-20b, con adaptadores LoRA fusionados en los expertos MoE y exportado como checkpoint BF16 autocontenido, sin necesidad de cargar un adaptador separado.
+NULLXES KLAREN 4E es un modelo multimodal de investigación publicado por MagistrTheOne bajo la marca NULLXES (Artificial Intelligence Research & Engineering). Se presenta como un sistema de inteligencia unificada que combina procesamiento de lenguaje, percepción visual y audio sobre una arquitectura Transformer con mezcla de expertos (MoE). El modelo está etiquetado en Hugging Face como `klaren_4e_multimodal` y su pipeline declarado es `feature-extraction`, no generación de texto.
 
-El modelo se orienta a interacción conversacional con personalidad de personaje, asistencia en ingeniería de software y flujos de trabajo orientados al razonamiento. Con 20.914.757.184 parámetros totales (dato real extraído de los safetensors), 24 capas transformer y 32 expertos por capa MoE de los cuales 4 se activan por token, hereda la arquitectura eficiente de gpt-oss-20b.
+El checkpoint contiene 21.293.638.080 parámetros reales según los pesos en safetensors, con un repositorio de 130,7 GB, lo que sugiere pesos en precisión alta (probablemente bf16/fp16) y posiblemente múltiples componentes multimodales. La model card describe objetivos de investigación a largo plazo (proyecto ORBITAL AI) más que capacidades validadas en producción, y el propio autor advierte que la integración visual y de audio son áreas de investigación en curso.
 
-Es relevante como ejemplo del ecosistema de modelos derivados de gpt-oss que están apareciendo tras la apertura de pesos por parte de OpenAI. Cabe destacar que el propio autor advierte que el checkpoint solo ha pasado verificaciones de integridad estructural y una prueba básica de generación en GPU; no se han publicado benchmarks ni evaluaciones de rendimiento, por lo que su utilidad práctica aún está por validar. Es un modelo de nicho, con cero descargas registradas en el momento de redactar la ficha, dirigido principalmente a investigación y experimentación.
+Su relevancia es limitada pero concreta: se trata de un experimento abierto con licencia Apache 2.0 que explora activación dispersa de expertos y percepción modular, útil para investigadores interesados en arquitecturas MoE multimodales. No hay benchmarks publicados ni documentación técnica detallada de hiperparámetros, datos de entrenamiento o receta de alineación.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (familia GPT-OSS), 24 capas transformer |
-| Parámetros totales | 20.914.757.184 (~20,9 B, dato real de safetensors) |
-| Parámetros activos | no disponible (32 expertos por capa MoE, 4 activos por token) |
+| Arquitectura | Transformer con Mixture-of-Experts (MoE), multimodal (lenguaje, visión, audio) |
+| Parametros totales | 21.293.638.080 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | BF16 (checkpoint publicado sin cuantizaciones adicionales) |
-| Idiomas soportados | inglés y ruso (según model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (3 shards, 411 tensores BF16, 41,9 GB de repo) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; se asume compatibilidad con cuantización estándar vía transformers, sin confirmar) |
+| Idiomas soportados | en, ru |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
+| Pipeline declarado | feature-extraction |
+| Requiere código personalizado | sí (`custom_code`) |
+| Descargas / likes | 738 / 2 |
 
 ## Arquitectura y entrenamiento
 
-KLAREN 4E se basa en la arquitectura de OpenAI gpt-oss-20b, un transformer con capas Mixture-of-Experts: cada una de las 24 capas transformer incorpora 32 expertos, de los cuales el router activa 4 por token. Este diseño reduce el coste computacional por token respecto a un modelo denso de tamaño equivalente, ya que solo se ejecuta una fracción de los parámetros en cada pasada hacia adelante.
+La model card describe una arquitectura Transformer con mezcla de expertos (MoE) y activación dispersa, con componentes de percepción dedicados para visión y audio conectados mediante interfaces de representación aprendidas. El diseño enfatiza modularidad, separación entre inferencia, percepción y orquestación, y adaptabilidad a hardware acelerado heterogéneo. No se especifican el número de expertos, el tamaño por experto, la top-k de enrutamiento ni la dimensión oculta.
 
-El entrenamiento adicional realizado por NULLXES consistió en supervised fine-tuning (SFT), versión "SFT10 BEST", aplicado mediante adaptadores LoRA sobre los módulos de expertos (48 módulos expert-LoRA fusionados, según la verificación del autor). El checkpoint final es un modelo fusionado (merged) en BF16, con 411 tensores verificados y consistencia del índice de safetensors comprobada. No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, ni el uso de técnicas de alineación como RLHF o DPO. Tampoco se ha documentado el uso de técnicas de inferencia avanzadas como decodificación especulativa.
+No hay información pública sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. Tampoco se documentan innovaciones concretas como decodificación especulativa o atención lineal. La etiqueta `custom_code` implica que la carga del modelo requiere código del repositorio, lo que añade fricción para su uso fuera del entorno `transformers` estándar.
 
 ## Capacidades
 
-- Generación de texto conversacional, con enfoque en interacción basada en personaje (character-driven interaction).
-- Asistencia en tareas de ingeniería de software y programación (orientación declarada por el autor, sin benchmarks que lo confirmen).
-- Flujos de trabajo orientados al razonamiento (reasoning-oriented workflows), heredando potencialmente las capacidades de razonamiento de la familia gpt-oss.
-- Soporte bilingüe inglés/ruso; el ejemplo oficial de la model card usa una consulta en ruso ("Привет, Кларен").
-- Carga directa mediante la librería transformers de Hugging Face, con plantilla de chat (`apply_chat_template`) y formato de mensajes multi-turno.
-- No se ha documentado soporte de tool calling / function calling, capacidades de visión, audio ni modo de agentes; el propio autor lista la fiabilidad de uso de herramientas como área pendiente de evaluación.
+- Procesamiento de lenguaje natural con soporte declarado para inglés y ruso.
+- Percepción visual experimental: generación condicionada por imagen, VQA, alineación semántica imagen-texto y grounding visual (según la model card, sujeto a evaluación en curso).
+- Procesamiento de audio experimental: comprensión de habla e interacción condicionada por audio, descrito como parte de la hoja de ruta más que como capacidad validada.
+- Extracción de características multimodales (pipeline `feature-extraction`), apta para embeddings y representaciones.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking, visión o audio en producción: no confirmado; el autor distingue explícitamente entre funcionalidad implementada, evaluada experimentalmente y objetivo a largo plazo.
 
 ## Casos de uso
 
-- Chatbots conversacionales con personalidad definida: el modelo está específicamente ajustado para interacción character-driven, por lo que puede servir de base para asistentes con identidad propia en inglés y ruso.
-- Asistente de programación en entornos de desarrollo: su orientación a software engineering lo hace candidato para autocompletado y resolución de dudas de código, aunque sin benchmarks publicados conviene validarlo antes de uso serio.
-- Investigación sobre MoE y fusionado de LoRA en expertos: al ser un checkpoint fusionado y verificado con detalle (48 módulos expert-LoRA, 411 tensores BF16), sirve como caso de estudio para pipelines de merge sobre gpt-oss-20b.
-- Experimentación con modelos bilingües inglés/ruso: puede evaluarse como base para sistemas de diálogo en ruso, idioma con menos modelos abiertos de calidad que el inglés.
-- Prototipado de agentes conversacionales simples: soporta el formato de mensajes multi-turno estándar de transformers, lo que facilita integrarlo en bucles de conversación básicos.
-- Evaluación comparativa de derivados de gpt-oss: útil como punto de comparación para medir cuánto aporta un SFT sobre gpt-oss-20b en tareas de diálogo y razonamiento.
-- Desarrollo y pruebas de infraestructura de inferencia: al ser un checkpoint BF16 estándar de transformers, es adecuado para probar stacks de despliegue (vLLM, TGI) sin dependencias de adaptadores externos.
+- Investigación en arquitecturas MoE multimodales: el modelo sirve como base experimental para estudiar enrutamiento de expertos y activación dispersa con pesos abiertos y licencia permisiva.
+- Extracción de embeddings multimodales: al declararse como `feature-extraction`, puede emplearse para generar representaciones de texto, imagen y audio en pipelines de búsqueda o clustering, siempre que se valide su calidad empíricamente.
+- Prototipado de alineación imagen-texto: investigadores pueden probar tareas de VQA o grounding visual en entornos controlados, asumiendo que la capacidad no está validada en producción.
+- Experimentos de percepción de audio: útil para explorar interfaces acústicas en laboratorio, dado que el autor la describe como línea de investigación futura.
+- Evaluación comparativa de sistemas multimodales: sirve como punto de comparación frente a modelos MoE multimodales consolidados en estudios académicos.
+- Estudio de despliegue en hardware heterogéneo: la filosofía de diseño orientada a adaptabilidad permite probar estrategias de partición y orquestación en clústeres mixtos.
+- Docencia y formación: ejemplo práctico de model card con separación explícita entre capacidades implementadas y objetivos, útil para enseñar rigor en documentación de modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El propio autor indica explícitamente que las verificaciones realizadas "no establecen rendimiento en benchmarks ni preparación para producción", y lista como pendientes las evaluaciones de razonamiento extendido, ingeniería de software, consistencia conversacional, fiabilidad de tool-use, seguridad y formato de salida del chat template.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos BF16 ocupan aproximadamente 39 GiB; la ejecución real requiere memoria adicional para activaciones, KV-cache y overhead del framework, por lo que se recomienda al menos 48 GB de VRAM.
-- GPU recomendadas: NVIDIA A100 (40/80 GB), A6000 (48 GB) o H100. Con 40 GB (A100 40 GB) el margen sería muy ajustado.
-- Consumer GPU: no cabe en tarjetas de consumo habituales (RTX 4090 con 24 GB, RTX 5090 con 32 GB) en BF16. No se han publicado cuantizaciones (GGUF, AWQ, GPTQ) que permitan reducir el footprint, aunque al ser un derivado de gpt-oss-20b es plausible que la comunidad genere versiones cuantizadas.
-- Opciones de despliegue: transformers con `device_map="auto"` (método documentado en la model card). Al basarse en la arquitectura gpt-oss, es probable la compatibilidad con vLLM, llama.cpp y Ollama, pero no está confirmada por el autor para este checkpoint concreto.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en bf16/fp16: aproximadamente 42-45 GB solo para pesos (21,3 mil millones de parámetros × 2 bytes), más overhead de activaciones y del código personalizado.
+- VRAM estimada en cuantización de 8 bits: en torno a 21-24 GB; en 4 bits, aproximadamente 12-14 GB, aunque no se confirma compatibilidad de cuantización con el `custom_code`.
+- GPU recomendadas: A100 80 GB o H100 para precisión completa; A100 40 GB o L40S para 8 bits con margen ajustado.
+- GPU de consumo: posible en RTX 4090 (24 GB) solo con cuantización agresiva y verificando que el código personalizado lo permita; en RTX 3090/4090 con 4-8 bits podría caber, pero sin garantías.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` es la vía declarada; vLLM, llama.cpp, Ollama o TGI no están confirmados y probablemente no soporten el `custom_code` sin adaptación.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Arquitectura | Contexto | Licencia |
-|---|---|---|---|---|
-| NULLXES-KLAREN-4E | 20,9 B | MoE (GPT-OSS), 4 expertos activos | no disponible | Apache 2.0 |
-| OpenAI gpt-oss-20b (base) | ~21 B | MoE, ~3,6 B activos | 128 K tokens | Apache 2.0 |
-| Qwen3-30B-A3B | 30,5 B | MoE, ~3,3 B activos | 128 K tokens | Apache 2.0 |
-| Mixtral 8x7B Instruct | 46,7 B | MoE, ~12,9 B activos | 32 K tokens | Apache 2.0 |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Notas |
+|---|---|---|---|---|---|
+| NULLXES KLAREN 4E | 21,3 B (MoE) | no disponible | texto, visión, audio (experimental) | Apache 2.0 | `custom_code`, sin benchmarks |
+| Qwen2.5-VL-7B / 72B | 7 B / 72 B | 128 K (aprox.) | texto, visión | Apache 2.0 (7B) / custom (72B) | benchmarks publicados, producción |
+| Llama 3.2 Vision 11B | 11 B | 128 K | texto, visión | Llama Community License | benchmarks publicados |
+| Mixtral 8x7B | 46,7 B (12,9 B activos) | 32 K | texto | Apache 2.0 | MoE consolidado, sin visión ni audio |
 
-KLAREN 4E compite en la categoría de MoE abiertos de tamaño medio. Frente a su base (gpt-oss-20b), ofrece un ajuste fino conversacional fusionado pero pierde de serie el contexto largo documentado y el soporte maduro de razonamiento de OpenAI, además de carecer de cuantizaciones oficiales (MXFP4 en el original). Frente a Qwen3-30B-A3B, tiene menos ecosistema, sin benchmarks publicados y sin variantes cuantizadas. Su ventaja diferencial es el ajuste específico para diálogo con personaje y soporte ruso.
+La comparación es orientativa: KLAREN 4E no publica métricas, por lo que no puede situarse cuantitativamente frente a estas alternativas. Su interés es experimental, no de producción.
 
 ## Limitaciones y advertencias
 
-- Sin benchmarks ni evaluaciones publicadas: el autor reconoce que solo se ha verificado la integridad estructural y una generación básica en GPU. El rendimiento real en tareas de razonamiento, código o diálogo es desconocido.
-- Riesgo de alucinación no evaluado: la evaluación de seguridad y la fiabilidad del uso de herramientas figuran explícitamente como pendientes en la model card.
-- Contexto no documentado: no se especifica la longitud de ventana de contexto, lo que dificulta planificar aplicaciones con documentos largos.
-- Idiomas limitados: solo se declara soporte de inglés y ruso; el rendimiento en castellano no está documentado y no debe asumirse.
-- Formato de salida: el propio autor señala que el formato del chat template y de los canales de salida requiere evaluación adicional, lo que puede causar problemas de parsing en producción.
-- Huella de memoria elevada: 39 GiB solo en pesos BF16, sin variantes cuantizadas oficiales, lo que limita el despliegue a hardware de gama datacenter.
-- Licencia: Apache 2.0 permite uso comercial, pero al derivar de gpt-oss-20b conviene revisar los archivos LICENSE y NOTICE del repositorio para los requisitos de atribución.
-- Proyecto de nicho: cero descargas y sin comunidad activa documentada; el soporte y mantenimiento a largo plazo no están garantizados.
-- El propio autor recomienda verificar las salidas de forma independiente antes de usar el modelo en entornos de alto impacto o producción.
+- Ausencia total de benchmarks: no hay evidencia cuantitativa de calidad en ninguna tarea.
+- Capacidades visuales y de audio descritas por el autor como investigación en curso, no validadas.
+- Solo dos idiomas declarados (inglés y ruso); sin soporte documentado de castellano.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor con los riesgos de seguridad asociados.
+- Riesgo elevado de alucinación y de comportamiento impredecible al no existir receta de alineación documentada.
+- Tamaño del repositorio (130,7 GB) y número de parámetros (21,3 B) hacen inviable el despliegue en hardware modesto sin cuantización, cuya compatibilidad no está confirmada.
+- La model card mezcla visión de producto (ORBITAL AI, sistemas espaciales) con estado real del modelo; conviene tratar las afirmaciones como hoja de ruta, no como especificaciones.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de validación desaconseja producción sin evaluación propia exhaustiva.
+- Sin información sobre sesgos, filtrado de datos ni moderación.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E
-- Modelo base (OpenAI gpt-oss-20b): https://huggingface.co/openai/gpt-oss-20b
-- Licencia y atribución: archivos LICENSE y NOTICE en el repositorio del modelo (https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E/blob/main/LICENSE)
-- Paper, blog, demo o repositorio de código: no disponible
+- Hugging Face: https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E
+- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

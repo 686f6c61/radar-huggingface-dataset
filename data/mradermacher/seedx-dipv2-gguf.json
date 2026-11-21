@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/SeedX-DIPv2-GGUF",
+  "slug": "mradermacher-seedx-dipv2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SeedX-DIPv2-GGUF",
+  "created_at": "2025-09-02T06:20:26.000Z",
+  "updated_at": "2026-11-20T23:49:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "en",
+    "base_model:PaweekornSora/SeedX-En2Th",
+    "base_model:quantized:PaweekornSora/SeedX-En2Th",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 7514271744,
+  "parameters_human": "7.51B",
+  "storage_bytes": 66636020416,
+  "storage_human": "66.6 GB",
+  "context_length": 32768,
+  "base_model": "PaweekornSora/SeedX-En2Th",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

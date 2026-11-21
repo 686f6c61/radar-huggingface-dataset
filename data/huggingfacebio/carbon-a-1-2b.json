@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 27,
-  "downloads_30d": 845,
+  "downloads_30d": 801,
   "trending_score": 15,
   "parameters": 1153656832,
   "parameters_human": "1.15B",
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "HuggingFaceBio/Carbon-A-1.2B · Hugging Face",
-      "url": "https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "HuggingFaceBio/Carbon-A-1.2B at main",
-      "url": "https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Hugging Face releases Carbon-A: 1.2B model… · AGI Hunt",
-      "url": "https://agihunt.info/en/p/1a13173dc89181bb64af587d6f8",
-      "snippet": "Hugging Face Bio unveiled Carbon-A, a 1.2B-parameter foundation model for genome annotation across the eukaryotic tree of life, open-sourced under Apache-2."
-    },
-    {
-      "title": "Carbon-A: open AI that finds genes in DNA - kga-it.com",
-      "url": "https://kga-it.com/en/blog/carbon-a-hugging-face-genes-genomas",
-      "snippet": "The announcement On October 8, 2026, Hugging Face&#x27;s HuggingFaceBio team released Carbon-A (Carbon-Annotator), a 1.2-billion-parameter AI model that finds protein-coding genes directly in DNA sequence, along with the Carbon Annotation Database (CADB) built with it. The model is on Hugging Face under Apache 2.0."
-    },
-    {
-      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
-      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
-      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
-    }
-  ]
+  "sources": []
 }

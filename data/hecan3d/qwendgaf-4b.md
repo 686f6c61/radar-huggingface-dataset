@@ -2,90 +2,88 @@
 
 ## Resumen
 
-hecan3d/QwenDGAF-4B es un modelo publicado en Hugging Face por el usuario hecan3d. La informacion disponible en el momento de redactar esta ficha se limita al identificador del repositorio, la licencia declarada (apache-2.0), la etiqueta de region (us) y la fecha de creacion y ultima actualizacion (12 de octubre de 2026). El repositorio registra 0 descargas y 0 likes, y no incluye pipeline declarado, idiomas soportados ni una model card con contenido tecnico: el README se reduce al bloque de metadatos con la licencia apache-2.0.
+QwenDGAF-4B es un ajuste fino (fine-tune) de Qwen/Qwen3-4B, desarrollado por el usuario hecan3d y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 4.022.468.096 parámetros (4B) diseñado deliberadamente para adoptar una personalidad apática, minimalista y con humor seco: responde con la solución más corta posible, no ofrece consejos no solicitados y evita el tono corporativo entusiasta típico de los asistentes convencionales. No es un modelo orientado a productividad, sino una pieza de conversación con un estilo muy concreto.
 
-El nombre del repositorio sugiere que se trata de un modelo derivado o ajustado a partir de una base de la familia Qwen con aproximadamente 4000 millones de parametros, pero esta interpretacion no esta confirmada por el autor en ningun documento disponible. No hay informacion sobre arquitectura, datos de entrenamiento, proceso de ajuste, contexto maximo ni capacidades declaradas.
+El modelo parte de la arquitectura de Qwen3-4B y se ha entrenado mediante QLoRA de 4 bits con el framework Unsloth, en un entrenamiento muy corto (30 pasos, aproximadamente 5 épocas, con una pérdida óptima de ~0,745). Se distribuye principalmente en formato GGUF (Q4_K_M) y está pensado para inferencia local con llama.cpp, con un consumo aproximado de 3 GB de VRAM.
 
-Por tanto, esta ficha no puede certificar ninguna caracteristica tecnica del modelo mas alla de su licencia. Se recomienda tratar cualquier uso en produccion como experimental y exigir al autor documentacion adicional (arquitectura, dataset, evaluaciones) antes de integrarlo en un sistema real.
+Su relevancia es acotada y de nicho: sirve como ejemplo de ajuste fino ligero y de bajo coste sobre un modelo base moderno, y como banco de pruebas para estudiar cómo un entrenamiento mínimo puede modificar radicalmente el estilo conversacional de un modelo sin destruir su coherencia gramatical. No está pensado para tareas de razonamiento serio, código en producción ni atención al cliente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no declarada por el autor) |
-| Parametros totales | no disponible (el nombre sugiere ~4B, sin confirmar) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos GGUF ni AWQ en la informacion disponible) |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3-4B); detalles internos no disponibles |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen3-4B, no confirmada en la model card) |
+| Tipos de cuantizacion | GGUF Q4_K_M (formato publicado principal); otras cuantizaciones no disponibles |
+| Idiomas soportados | Ruso (ru), ingles (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 18,7 GB); safetensors no confirmado en la model card |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card no describe si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal.
+El modelo hereda la arquitectura transformer decoder-only de Qwen/Qwen3-4B, con 4.022.468.096 parámetros totales. El ajuste fino se realizó con Unsloth mediante QLoRA de 4 bits, un procedimiento que congela los pesos base y entrena adaptadores de bajo rango, lo que explica el bajo coste computacional del proceso. El entrenamiento fue muy breve: 30 pasos, aproximadamente 5 épocas, con una pérdida óptima de ~0,745. No se documenta el volumen ni la composición del dataset de ajuste, ni si hubo etapas de RLHF o DPO; la model card solo indica que el objetivo era inculcar un estilo conversacional apático y minimalista.
 
-El unico dato tecnico objetivo es la licencia declarada, apache-2.0, que consta tanto en las etiquetas del repositorio como en el encabezado del README. Cualquier afirmacion sobre la arquitectura interna o el proceso de entrenamiento seria especulativa y no se incluye en esta ficha.
+No se describen innovaciones técnicas propias más allá del propio ajuste: no hay decodificación especulativa, atención lineal ni modos de razonamiento explícitos. El autor menciona en tono irónico que el modelo "ahora tiene capacidades de razonamiento reales, usadas exclusivamente para buscar excusas para no ayudarte", lo que debe interpretarse como parte del personaje y no como una capacidad técnica verificada. La model card incluye además una versión sucesora, hecan3d/QwenDGAF-2-4B, sin más detalles técnicos.
 
 ## Capacidades
 
-- No hay ninguna capacidad confirmada por el autor en la informacion disponible.
-- No se documenta soporte de generacion de texto, razonamiento, codigo, matematicas ni vision.
-- No se documenta soporte de tool calling o function calling.
-- No se documenta soporte para agentes ni razonamiento multi-paso.
-- No se declaran capacidades multilingues ni lista de idiomas.
-- No se documenta ningun modo especial (thinking mode, audio, vision u otros).
-- No se especifica si es un modelo base o un modelo ajustado para instrucciones.
+- Generación de texto conversacional en ruso, inglés y chino, con un estilo deliberadamente seco, apático y minimalista.
+- Respuestas ultracortas: el autor recomienda un máximo de 48 tokens nuevos, ya que el modelo tiende a generar una o dos frases.
+- Comprensión del contexto de la petición, pero aplicación deliberada del mínimo esfuerzo en la respuesta.
+- Capacidad multilingüe limitada a ru, en y zh según la model card.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta visión, audio ni modo de pensamiento (thinking mode).
+- No se documentan capacidades específicas de código o matemáticas más allá de las heredadas del modelo base, no verificadas tras el ajuste.
 
 ## Casos de uso
 
-Los casos de uso siguientes son genericos para un modelo de aproximadamente 4000 millones de parametros y deben validarse empiricamente antes de cualquier despliegue, dado que la model card no acredita ninguna capacidad:
-
-- Prototipado local en estaciones de trabajo: un modelo de este tamano nominal puede ejecutarse en GPU de consumo para pruebas de generacion de texto sin coste de API, siempre que el autor publique pesos utilizables.
-- Ajuste fino especifico de dominio (fine-tuning): si la licencia apache-2.0 se confirma para los pesos, permitiria reentrenamiento sobre datos propios en tareas de clasificacion, extraccion o resumen.
-- Asistencia de escritura y edicion de texto: uso como generador de borradores en herramientas internas, sujeto a revision humana por el riesgo de alucinacion no evaluado.
-- Componente de un pipeline RAG: el modelo podria actuar como generador final sobre documentos recuperados, pero sin datos de contexto maximo no se puede dimensionar el troceado de documentos.
-- Experimentacion academica: util como punto de partida para comparativas de ajuste y cuantizacion, no como referencia de rendimiento.
-- Tareas de generacion de codigo en CI/CD: no recomendable en su estado actual, ya que no se documenta soporte de tool calling ni evaluaciones tipo HumanEval.
+- Experimentación con ajuste fino ligero: sirve como caso de estudio de cómo 30 pasos de QLoRA con Unsloth pueden reorientar el estilo de un modelo de 4B, útil para investigadores que quieran reproducir el procedimiento con sus propios datos.
+- Chatbots de personaje con humor seco: adecuado para demos, bots de Discord o aplicaciones lúdicas donde se busca una personalidad apática y respuestas breves, con temperatura 0,8–0,9 y top-p 0,85 según el autor.
+- Pruebas de inferencia local de bajo consumo: con ~3 GB de VRAM en Q4_K_M, puede ejecutarse en equipos modestos con llama.cpp para validar pipelines de despliegue GGUF.
+- Generación de respuestas mínimas en prototipos: útil para simular un usuario o asistente poco colaborativo en pruebas de sistemas conversacionales o de evaluación de robustez.
+- Docencia y divulgación: ejemplo práctico para explicar qué es un fine-tune, qué es QLoRA y cómo el estilo de un modelo depende del dataset de ajuste.
+- Pruebas de estrés de alineación y seguridad: permite observar cómo un modelo puede adoptar respuestas evasivas o negativas ante peticiones legítimas, útil para diseñar filtros y evaluaciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye una tabla cualitativa de "stress-test" con respuestas de ejemplo comparadas con un asistente estándar, sin métricas numéricas (MMLU, HumanEval, GSM8K u otras).
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas del tamano nominal de 4B indicado en el nombre del repositorio y no estan confirmadas por el autor:
-
-- Pesos en precision completa (FP16/BF16): aproximadamente 8 GB solo para los pesos, mas cache KV y activaciones; en la practica se recomienda reservar 10-12 GB de VRAM.
-- Cuantizacion de 8 bits: aproximadamente 4-5 GB de VRAM.
-- Cuantizacion de 4 bits (por ejemplo Q4_K_M en formato GGUF): aproximadamente 2,5-3 GB de pesos.
-- GPU de consumo compatibles en teoria: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 24 GB; en Mac con memoria unificada, equipos con 16 GB o mas.
-- GPU de centro de datos: A100, H100, L40S o similares permitirian servir varias instancias en paralelo, pero no hay datos de throughput publicados.
-- Opciones de despliegue: no confirmadas. Solo serian viables llama.cpp, Ollama, vLLM, TGI o SGLang si el autor publica pesos en safetensors o GGUF, lo cual no consta.
-- Latencia y throughput: no disponible.
+- VRAM estimada: ~3 GB en inferencia con la cuantización Q4_K_M publicada, según el autor.
+- GPU recomendadas: no especificadas; por el tamaño, cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4060, RTX 4070 o superiores. Para el modelo en precisión completa (4B) se necesitarían aproximadamente 8–10 GB de VRAM, aunque no se publican pesos safetensors confirmados.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs con 6 GB o más usando Q4_K_M.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf hecan3d/QwenDGAF-4B:Q4_K_M --jinja`). No se documentan vLLM, TGI u Ollama, aunque al ser GGUF es compatible con el ecosistema llama.cpp.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No existe informacion verificable sobre el rendimiento, la arquitectura ni el contexto de hecan3d/QwenDGAF-4B, por lo que cualquier tabla comparativa frente a modelos de tamano similar (por ejemplo, alternativas de la propia familia Qwen, Llama o Phi en el rango de 3B a 4B) se basaria en datos no publicados de este modelo y no seria rigurosa. Se indica expresamente "no disponible" en lugar de estimar cifras.
+| Modelo | Parametros | Contexto | Estilo | Licencia | Formato |
+|---|---|---|---|---|---|
+| QwenDGAF-4B | 4,02B | no disponible | Apatico, minimalista, humor seco | Apache 2.0 | GGUF |
+| Qwen/Qwen3-4B (base) | 4B | no disponible en esta ficha | Asistente general estandar | Apache 2.0 | safetensors, GGUF |
+| QwenDGAF-0.6B (predecesor) | ~0,6B | no disponible | Apatico, minimalista | no disponible | no disponible |
+
+La comparación con el modelo base Qwen3-4B es la más relevante: comparten arquitectura y tamaño, pero QwenDGAF-4B prioriza el estilo sobre la utilidad. El predecesor QwenDGAF-0.6B es una versión mucho más pequeña del mismo concepto. No se dispone de datos de rendimiento comparado en benchmarks.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: sin arquitectura, dataset, contexto ni evaluaciones, el modelo no es auditable.
-- Riesgo de alucinacion: no cuantificado, ya que no hay benchmarks ni evaluaciones de fidelidad.
-- Sesgos: no evaluados ni declarados por el autor.
-- Idiomas: no se declara ninguna lista de idiomas soportados; el comportamiento multilingue es desconocido.
-- Contexto: sin longitud de contexto declarada no se pueden disenar estrategias de troceado ni de memoria conversacional.
-- Licencia: se declara apache-2.0, lo que en principio permitiria uso comercial y modificacion, pero no hay confirmacion de que los pesos se hayan publicado bajo esa licencia ni de si el modelo deriva de una base con condiciones adicionales.
-- Repositorio sin traccion: 0 descargas y 0 likes, sin pipeline declarado, lo que impide verificar que los artefactos sean funcionales.
-- Fecha de publicacion inusual (2026) y ausencia de actualizaciones posteriores, lo que dificulta confirmar el mantenimiento.
-- Los resultados de la busqueda web no guardan ninguna relacion con el modelo (contenido sobre patrones de costura y herramientas de edicion de PDF), por lo que no aportan informacion tecnica utilizable.
-- Recomendacion para produccion: no desplegar sin una evaluacion propia de calidad, latencia y seguridad, y sin confirmacion escrita del autor sobre arquitectura, contexto y licencia de los pesos.
+- El modelo está diseñado para no ayudar: responde de forma evasiva o minimalista incluso ante peticiones legítimas, lo que lo hace inadecuado para producción real, atención al cliente o tareas técnicas.
+- Riesgo alto de respuestas incorrectas o incompletas por diseño, no solo por alucinación.
+- Sesgos conocidos: no documentados; el estilo apático puede percibirse como descortés o inapropiado en contextos profesionales.
+- Idiomas limitados a ruso, inglés y chino según la model card; el rendimiento en castellano no está verificado.
+- Longitud de contexto no confirmada tras el ajuste; conviene asumir la del modelo base sin garantías.
+- Licencia Apache 2.0 permite uso comercial, pero el comportamiento del modelo hace desaconsejable su uso en entornos de cara al usuario sin supervisión.
+- Entrenamiento muy corto (30 pasos): el ajuste puede ser frágil y degradarse con prompts fuera de distribución.
+- Existe una versión sucesora (hecan3d/QwenDGAF-2-4B) que el autor recomienda implícitamente como nueva versión.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-4B
-- Paper: no disponible
-- Blog o anuncio del autor: no disponible
-- Repositorio de codigo: no disponible
-- Demo: no disponible
-- Otros enlaces relevantes: no disponible (los resultados de la busqueda web no estan relacionados con el modelo)
+- Modelo en Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-4B
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B
+- Versión sucesora: https://huggingface.co/hecan3d/QwenDGAF-2-4B
+- Framework de ajuste (Unsloth): https://github.com/unslothai/unsloth
+- llama.cpp: https://github.com/ggml-org/llama.cpp

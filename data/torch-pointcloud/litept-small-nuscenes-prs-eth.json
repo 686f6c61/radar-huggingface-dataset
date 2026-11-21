@@ -49,6 +49,18 @@
     {
       "task": null,
       "dataset": "nuScenes",
+      "metric": "mIoU",
+      "value": 82.01
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "OA",
+      "value": 95.02
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
       "metric": "simple/mIoU",
       "value": 80.47
     },

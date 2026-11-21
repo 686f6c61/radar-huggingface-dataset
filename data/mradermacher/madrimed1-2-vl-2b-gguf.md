@@ -2,122 +2,99 @@
 
 ## Resumen
 
-madrimed1.2-VL-2B-GGUF es la version cuantizada en formato GGUF del modelo multimodal madrimed1.2-VL-2B, desarrollado por madrisight y cuantizado por mradermacher. Se trata de un modelo vision-lenguaje denso de 2.031.739.904 parametros (~2,03 B) especializado en dominio medico: radiologia, patologia y razonamiento clinico, segun los tags del repositorio (medical, radiology, pathology, clinical-reasoning). La arquitectura declarada pertenece a la familia Qwen3-VL y la licencia es Apache 2.0.
+madrimed1.2-VL-2B-GGUF es la distribucion en formato GGUF del modelo vision-lenguaje madrimed1.2-VL-2B, publicado por el usuario mradermacher a partir de los pesos originales de madrisight. Se trata de un modelo multimodal de 2.031.739.904 parametros (aproximadamente 2B) construido sobre la familia Qwen3-2B, especializado en razonamiento clinico, respuesta visual a preguntas medicas (VQA) y analisis de imagenes biomedicas como radiologia e histopatologia. Su proposito es ofrecer un modelo pequeno (SLM) que pueda ejecutarse en hardware modesto y servir de apoyo a decisiones clinicas, triaje de imagenes o formacion medica.
 
-El interes practico de esta publicacion es que traslada un VLM medico a hardware de consumo: las cuantizaciones disponibles van desde 1,0 GB (Q2_K) hasta 4,2 GB (f16), con un proyector multimodal (mmproj) separado de 0,5 GB (Q8_0) o 0,9 GB (f16). Esto permite ejecutar inferencia multimodal sobre imagenes medicas en una GPU de gama media o incluso en CPU mediante llama.cpp, algo inviable con el modelo base en safetensors a precision completa.
+La relevancia de esta publicacion radica en dos factores. Por un lado, la cuantizacion GGUF permite desplegar un VLM medico en CPU o en GPUs de consumo, algo poco habitual en el ambito clinico, donde predominan modelos mucho mayores. Por otro, la licencia Apache 2.0 elimina las restricciones tipicas de los modelos medicos con licencias de investigacion, lo que facilita su integracion en prototipos y productos comerciales.
 
-La model card del cuantizador no aporta informacion sobre longitud de contexto, composicion del dataset de entrenamiento ni resultados numericos de evaluacion. Los tags apuntan a GRPO y RLHF como tecnicas de entrenamiento y a los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y Path-VQA como referencias del dominio, pero no se publican metricas.
+El repositorio incluye tanto los pesos cuantizados del modelo de lenguaje como los ficheros `mmproj` (proyector multimodal) necesarios para procesar imagenes, en variantes Q8_0 y f16. La informacion disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es limitada: la model card del cuantizador es puramente tecnica y remite al modelo base, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal vision-lenguaje de la familia Qwen3-VL (segun el tag qwen3-vl del repositorio) |
-| Parametros totales | 2.031.739.904 (~2,03 B), dato real de safetensors |
-| Parametros activos | no aplica (modelo denso, no MoE segun la informacion disponible) |
+| Arquitectura | Vision-lenguaje basada en Qwen3-2B (transformer multimodal con proyector de vision); detalles internos no disponibles |
+| Parametros totales | 2.031.739.904 (dato real de safetensors) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; proyector multimodal mmproj en Q8_0 y f16 |
-| Idiomas soportados | ingles (en) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; proyector multimodal en mmproj-f16 y mmproj-Q8_0 |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base); archivos mmproj GGUF para el codificador visual |
-| Modelo base | madrisight/madrimed1.2-VL-2B |
-| Cuantizador | mradermacher |
-| Tamano del repositorio | 19,9 GB (incluye todas las cuantizaciones) |
-| Fecha de publicacion indicada | 2026-10-01 |
-| Libreria declarada | transformers |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible identifica el modelo como un VLM de la familia Qwen3-VL, con 2,03 B de parametros totales en un unico bloque denso (sin mezcla de expertos). El despliegue multimodal requiere dos artefactos: los pesos del modelo de lenguaje y el proyector mmproj que conecta el codificador visual con el decodificador de texto. El repositorio incluye ambos en formato GGUF, lo que confirma una separacion estandar entre torre de vision y torre de lenguaje.
+El modelo base es madrisight/madrimed1.2-VL-2B, un VLM construido sobre Qwen3-2B segun las etiquetas del repositorio. Esto implica una arquitectura transformer con un codificador de vision y un proyector que mapea las representaciones visuales al espacio del modelo de lenguaje, siguiendo el patron habitual de los VLM actuales. El repositorio GGUF separa explicitamente los pesos del modelo de lenguaje de los del proyector multimodal (`mmproj`), lo que confirma esa estructura de dos componentes.
 
-Respecto al entrenamiento, los tags del repositorio mencionan GRPO y RLHF, ademas de los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y Path-VQA, lo que sugiere una fase de ajuste supervisado sobre datos medicos seguida de optimizacion con preferencias o recompensas verificables. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de datos generales y medicos ni la configuracion exacta del pipeline de alineacion. Los metadatos de cuantizacion indican convert_type hf, quantize_version 2 y output_tensor_quantised 1, es decir, una conversion desde pesos Hugging Face con cuantizacion de tensores de salida.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Las etiquetas del modelo mencionan los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y PathVQA, lo que sugiere que el entrenamiento o la evaluacion se apoyaron en esos benchmarks medicos, pero no se detalla el proceso. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal.
+
+El trabajo de mradermacher se limita a la cuantizacion estatica de los pesos originales (quantize_version 2, output_tensor_quantised 1), sin cuantizaciones ponderadas por imatrix, que el autor indica que probablemente no estaran disponibles.
 
 ## Capacidades
 
-- Comprension conjunta de imagen y texto: respuesta a preguntas visuales (VQA) sobre imagenes medicas.
-- Analisis de imagenes radiologicas, segun el tag radiology del repositorio.
-- Analisis de imagenes de patologia, segun el tag pathology y la referencia a Path-VQA.
-- Razonamiento clinico orientado a preguntas de opcion multiple y casos medicos (tags clinical-reasoning, MedMCQA, MedXpertQA).
-- Formato conversacional multi-turno (tag conversational).
-- Generacion de texto en ingles como unico idioma declarado.
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible en la informacion proporcionada.
-- Modo thinking o cadena de razonamiento visible: no disponible en la informacion proporcionada.
-- Capacidades de audio o video: no disponibles en la informacion proporcionada.
+- Generacion de texto y razonamiento clinico en ingles, orientado a preguntas medicas y apoyo a decisiones.
+- Respuesta visual a preguntas (VQA) sobre imagenes medicas: radiologia, patologia e histopatologia.
+- Analisis de imagenes biomedicas con el proyector multimodal incluido en el repositorio.
+- Razonamiento multimodal de varios pasos sobre hallazgos visuales y contexto textual.
+- Conversacion multi-turno (etiqueta `conversational` en el repositorio).
+- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible`).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de codigo o matematicas generales: no documentadas especificamente.
+- Capacidades de audio o thinking mode: no disponibles.
 
 ## Casos de uso
 
-- Triaje preliminar de radiografias en centros con hardware limitado: el modelo puede procesar una imagen de RX junto con una pregunta en lenguaje natural y devolver una impresion textual, ejecutandose en una GPU de 4-8 GB con la cuantizacion Q4_K_M. Es adecuado por su tamano reducido y su ajuste declarado en radiologia, siempre como herramienta de apoyo y no como diagnostico.
-- Respuesta a preguntas sobre laminas de patologia: con el proyector mmproj cargado en llama.cpp, permite formular consultas tipo VQA sobre cortes histologicos, un flujo util para preanotacion de datasets o formacion.
-- Generacion asistida de preguntas y material de estudio para estudiantes de medicina: dado su ajuste sobre MedMCQA y MedXpertQA, puede producir y explicar preguntas de opcion multiple a partir de una imagen o de un enunciado clinico.
-- Preetiquetado de conjuntos de datos medicos: sirve como primer pasada automatica sobre lotes de imagenes para generar descripciones y pares pregunta-respuesta, que despues se revisan manualmente, reduciendo el coste de anotacion.
-- Investigacion reproducible con presupuesto de computo bajo: al distribuirse en GGUF, un grupo de investigacion puede replicar experimentos multimodales en una unica GPU consumer o en CPU, sin depender de clusters.
-- Prototipado de asistentes clinicos conversacionales en ingles: el tag conversational y el formato GGUF permiten integrarlo en un servidor local (llama-server) y encadenar turnos con contexto de historial, para validar interfaces antes de invertir en modelos mayores.
-- Despliegue en el borde dentro de instalaciones sanitarias: al no requerir GPU de centro de datos y poder ejecutarse en CPU, encaja en escenarios con requisitos de residencia de datos y sin conectividad externa.
-- Filtrado y clasificacion previa de imagenes medicas: uso como clasificador de apoyo para decidir que estudios requieren revision prioritaria por un especialista, dado su bajo coste por inferencia.
+- Triaje de radiografias en entornos con recursos limitados: el modelo puede responder preguntas en lenguaje natural sobre una imagen de torax y generar un informe preliminar; su tamano de 2B y sus cuantizaciones de 1 a 2,3 GB permiten ejecutarlo en estaciones de trabajo sin GPU dedicada.
+- Apoyo a la docencia medica: permite construir un tutor interactivo que muestre una imagen histopatologica y responda preguntas del estudiante sobre estructuras y hallazgos, gracias a su naturaleza conversacional y su entrenamiento en dominios como PathVQA.
+- Preprocesado y anotacion asistida de datasets medicos: el modelo puede generar descripciones y respuestas de referencia para imagenes de un corpus interno, acelerando el etiquetado previo a la revision por especialistas.
+- Segunda opinion automatizada en patologia digital: integrado en un visor de laminas, el modelo puede responder consultas concretas sobre regiones seleccionadas y servir de filtro inicial antes de la lectura del patologo.
+- Chatbot de orientacion sanitaria sobre informes e imagenes: con la variante Q8_0 o Q6_K, puede desplegarse en un servidor modesto para responder dudas sobre estudios radiologicos, siempre con supervision y avisos claros de que no sustituye al diagnostico profesional.
+- Investigacion en VLM medicos de bajo coste: al ser Apache 2.0 y estar disponible en GGUF, sirve como linea base reproducible para comparar tecnicas de cuantizacion o de adaptacion multimodal sin necesidad de clústeres de GPU.
+- Despliegue en el borde (edge): la variante Q4_K_M, de 1,4 GB, cabe en dispositivos con 4-8 GB de RAM y permite prototipos de analisis de imagenes en portatiles o mini-PC sin conexion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-El repositorio referencia los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y Path-VQA en sus tags, pero no incluye cifras de exactitud, F1 ni comparaciones numericas con otros modelos.
-
-| Benchmark referenciado | Resultado publicado |
-|---|---|
-| VQA-RAD | no disponible |
-| SLAKE | no disponible |
-| MedXpertQA | no disponible |
-| MedMCQA | no disponible |
-| Path-VQA | no disponible |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye metricas y la del modelo base no se ha proporcionado; los conjuntos VQA-RAD, SLAKE, MedXpertQA, MedMCQA y PathVQA aparecen solo como etiquetas.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones a partir del tamano de los ficheros declarados en el repositorio, sumando el modelo y el proyector multimodal, mas un margen orientativo para el contexto y el runtime.
-
-- Q2_K / Q3_K_S: 1,0-1,1 GB de pesos + 0,5 GB de mmproj Q8_0; aproximadamente 2-2,5 GB de VRAM en total.
-- Q4_K_M (recomendado por el autor como "fast, recommended"): 1,4 GB + 0,5 GB; aproximadamente 2,5-3 GB de VRAM.
-- Q6_K: 1,8 GB + 0,5 GB; aproximadamente 3-3,5 GB de VRAM.
-- Q8_0: 2,3 GB + 0,5 GB; aproximadamente 3,5-4 GB de VRAM.
-- f16: 4,2 GB + 0,9 GB de mmproj f16; aproximadamente 6-7 GB de VRAM.
-- GPU compatibles: cualquier GPU consumer con 4 GB o mas, como GTX 1650, RTX 3050, RTX 3060, RTX 4060 o RTX 4090. En tarjetas de 8 GB o mas las cuantizaciones Q4 y Q5 dejan margen amplio para contexto largo. En A100 o H100 el modelo esta infrautilizado, salvo por agregacion de muchas peticiones concurrentes.
-- Inferencia en CPU: viable para todas las cuantizaciones, especialmente Q4_K_M y Q8_0.
-- Opciones de despliegue: llama.cpp y llama-server con soporte --mmproj para la parte multimodal, Ollama importando un Modelfile con el fichero mmproj, LM Studio, koboldcpp y text-generation-webui. vLLM tiene soporte limitado de GGUF y no cubre de forma estandar el par modelo+mmproj en GGUF, por lo que para vLLM conviene usar el modelo base en safetensors. TGI no soporta GGUF.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- El tag endpoints_compatible sugiere compatibilidad con endpoints de inferencia, aunque no se detalla que servidores concretos lo han validado.
+- VRAM/RAM estimada para inferencia (pesos del modelo mas proyector mmproj-Q8_0 de 0,5 GB):
+  - Q2_K: aproximadamente 1,5 GB en total.
+  - Q4_K_M: aproximadamente 1,9 GB en total.
+  - Q6_K: aproximadamente 2,3 GB en total.
+  - Q8_0: aproximadamente 2,8 GB en total.
+  - f16: aproximadamente 5,1 GB en total.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4/Q5 (GTX 1650, RTX 3050, RTX 4060); para Q8_0 o f16, GPU de 6-8 GB como RTX 3060, RTX 4060 Ti o superiores. En el extremo profesional, A100 o H100 no son necesarias y solo aportarian throughput adicional.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 4 GB o mas de VRAM; las variantes Q4_K_S y Q4_K_M estan marcadas por el autor como rapidas y recomendadas.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) por el formato GGUF; el modelo base en safetensors es compatible con transformers y con servidores que soporten VLM, aunque el repositorio GGUF esta pensado para el ecosistema llama.cpp. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia gestionados.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de modelos alternativos en la informacion proporcionada, por lo que la comparacion se limita al modelo base frente a su version cuantizada.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| madrimed1.2-VL-2B-GGUF (este repositorio) | 2,03 B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | publico en Hugging Face |
-| madrisight/madrimed1.2-VL-2B (modelo base) | 2,03 B | no disponible | safetensors | apache-2.0 | publico en Hugging Face |
-| Otros VLM medicos de tamano similar (por ejemplo variantes tipo LLaVA-Med o MedGemma) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| madrimed1.2-VL-2B (GGUF) | 2,03B | no disponible | Texto + imagen | Apache 2.0 | GGUF y safetensors en HF |
+| Qwen3-2B (base) | 2B | no disponible en esta ficha | Texto | Apache 2.0 (segun familia Qwen3) | HF |
+| Otros VLM medicos de ~2B | no disponible | no disponible | Texto + imagen | variable | no disponible |
 
-No se han encontrado en los resultados de busqueda enlaces ni datos utiles para establecer comparaciones con alternativas de la misma categoria.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad. El modelo base Qwen3-2B se incluye como referencia por ser el punto de partida declarado, no como alternativa funcional en el dominio medico.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio medico: no es un producto sanitario ni esta certificado; no debe usarse como sustituto del criterio de un profesional. Cualquier uso clinico real exige validacion regulatoria (MDR en la UE, autorizacion FDA en EE. UU. u otras equivalentes).
-- Riesgo de alucinacion: un modelo de 2,03 B puede generar hallazgos, medidas o diagnosticos inexistentes con aparente seguridad. En un contexto clinico el riesgo es alto.
-- Sesgos: no se documenta informacion sobre sesgos demograficos, de equipamiento o de procedencia de los datos. Es probable que el modelo herede los sesgos de los conjuntos VQA-RAD, SLAKE, MedMCQA y Path-VQA.
-- Idioma: solo se declara ingles. No hay soporte verificado de castellano ni de otras lenguas.
-- Contexto: la longitud de contexto no esta documentada, lo que impide planificar tareas que dependan de ventanas largas.
-- Rendimiento no verificado: no hay benchmarks publicados, de modo que no es posible estimar su calidad frente a alternativas.
-- Cuantizacion: las variantes inferiores a Q4 (Q2_K, Q3_K_S, Q3_K_M, Q3_K_L) degradan la calidad y el autor desaconseja explicitamente Q3_K_M ("lower quality"). Para produccion se recomienda Q4_K_M o superior.
-- Cuantizaciones ponderadas: el autor indica que no hay cuantizaciones con imatrix o ponderadas por importancia en el momento de la publicacion, lo que puede penalizar la relacion calidad-tamano frente a cuantizaciones dinamicas.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero no exime del cumplimiento de la normativa sanitaria aplicable ni de la verificacion de que los datos de entrenamiento permiten el uso previsto.
-- Fecha de creacion: el repositorio indica 2026-10-01, lo que dificulta contextualizar su antiguedad frente al estado del arte.
-- Ausencia de validacion externa: no se documentan evaluaciones independientes, informes de seguridad ni pruebas de robustez frente a imagenes fuera de distribucion.
+- Modelo especializado en ingles: no se documenta soporte de castellano ni de otros idiomas, por lo que su uso en produccion en espanol requeriria evaluacion adicional.
+- Riesgo de alucinacion clinica: como todo modelo de lenguaje, puede generar hallazgos o diagnosticos plausibles pero incorrectos; no debe usarse como unico criterio en decisiones medicas.
+- Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento ni los sesgos demograficos, de equipo de imagen o de poblacion que pueda arrastrar.
+- Contexto maximo no disponible: se desconoce la ventana de contexto, lo que complica el diseno de aplicaciones multi-turno o con informes largos.
+- Cuantizaciones de baja calidad: las variantes Q2_K y Q3_K pueden degradar notablemente el razonamiento multimodal; el autor recomienda Q4_K_S o Q4_K_M para uso general.
+- Ausencia de cuantizaciones imatrix: no hay versiones ponderadas, que suelen ofrecer mejor calidad por tamano en modelos pequenos.
+- Licencia Apache 2.0: permite uso comercial, pero no exime del cumplimiento de la normativa sanitaria aplicable (por ejemplo, marcado CE de dispositivos medicos o RGPD) si el modelo se integra en un producto clinico.
+- Fecha de creacion del repositorio (2026-10-01) y actualizacion (2026-10-29): conviene verificar que la version descargada coincide con la ultima publicada.
+- El repositorio GGUF no incluye documentacion sobre el modelo base; para entender el entrenamiento y las limitaciones reales hay que consultar madrisight/madrimed1.2-VL-2B.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/madrimed1.2-VL-2B-GGUF
 - Modelo base: https://huggingface.co/madrisight/madrimed1.2-VL-2B
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#madrimed1.2-VL-2B-GGUF
-- Repositorio de peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de referencia sobre uso de ficheros GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de calidad de tipos de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que da soporte al cuantizador: https://www.nethype.de/
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

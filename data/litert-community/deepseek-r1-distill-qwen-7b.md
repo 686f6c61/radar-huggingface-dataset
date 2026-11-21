@@ -2,102 +2,108 @@
 
 ## Resumen
 
-Este modelo es una conversión al formato LiteRT-LM (`.litertlm`) del modelo de razonamiento DeepSeek-R1-Distill-Qwen-7B, realizada por la comunidad `litert-community`. El objetivo es permitir la inferencia on-device (en el borde) mediante el runtime LiteRT-LM de Google, que es el motor que impulsa los modelos oficiales de `litert-community`. Se trata de una conversión de formato que no modifica los pesos originales: el modelo base es un Qwen2.5-7B ajustado por DeepSeek sobre unas 800.000 trazas de razonamiento generadas por DeepSeek-R1.
+DeepSeek-R1-Distill-Qwen-7B en formato LiteRT-LM es una conversión del modelo de razonamiento destilado de DeepSeek, empaquetada por la comunidad `litert-community` para inferencia on-device mediante el runtime LiteRT de Google (el antiguo TensorFlow Lite). El modelo base, desarrollado por DeepSeek, destila las capacidades de razonamiento de DeepSeek-R1 en una base Qwen2.5 de 7.000 millones de parámetros, lo que permite obtener cadenas de pensamiento explícitas en un tamaño manejable.
 
-El modelo es un "reasoning model": antes de dar la respuesta final, genera una cadena de pensamiento delimitada por los marcadores ` thinking` y ` response`. La conversión aplica cuantización int4 por bloques (bloque de 32) con recorte óptimo OCTAV y embeddings en INT8, con una caché KV limitada a 4096 tokens. El archivo resultante pesa unos 4,2 GB y está diseñado para ejecutarse en escritorio (Mac) y en teléfonos Android con 12 GB o más de RAM; no cabe en dispositivos con 8 GB.
+La aportación de esta ficha no es un modelo nuevo, sino un artefacto de despliegue: un bundle `.litertlm` de 4,53 GB con pesos cuantizados a int4 por bloques de 32 y clipping óptimo OCTAV, embeddings en INT8 y una caché KV de 4096 tokens. Está pensado para ejecutarse en GPU móviles, CPU de escritorio y navegador vía WebGPU, con métricas medidas en dispositivos reales (Galaxy S26, Mac Studio M4 Max y Raspberry Pi 5).
 
-La relevancia de este modelo radica en que lleva capacidades de razonamiento de nivel DeepSeek-R1 a entornos de inferencia local con recursos limitados, manteniendo un rendimiento prácticamente idéntico al modelo en bf16 (una pérdida de solo 1 punto en GSM8K). Está publicado bajo licencia MIT, lo que facilita su uso comercial y su integración en aplicaciones de producción.
+Su relevancia actual radica en que demuestra que un modelo de razonamiento de 7B puede correr a velocidad interactiva en hardware de consumo y en teléfonos de gama alta, algo poco habitual en modelos que emiten cadenas de pensamiento largas. La licencia MIT del artefacto y la Apache-2.0 de la base Qwen2.5 facilitan su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen2.5-7B), destilado de DeepSeek-R1 |
-| Parametros totales | No disponible (el modelo base Qwen2.5-7B tiene ~7,6 mil millones; la conversion no altera los pesos) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens (KV cache configurado en la conversion; el modelo base soporta hasta 128k) |
-| Tipos de cuantizacion | int4 por bloques (bloque 32) con OCTAV, simetrico; embeddings en INT8 |
-| Idiomas soportados | No disponible (el modelo base Qwen2.5 es multilingue con enfasis en ingles y chino) |
-| Licencia | MIT |
-| Formato de pesos | `.litertlm` (LiteRT-LM); los pesos originales estan disponibles en safetensors en el repositorio de DeepSeek |
+| Arquitectura | Transformer denso (base Qwen2.5), destilado de DeepSeek-R1 |
+| Parámetros totales | 7B (aproximado, según modelo base) |
+| Longitud de contexto | 4096 tokens (caché KV del bundle) |
+| Tipos de cuantización | Pesos int4 blockwise (bloque 32) + OCTAV optimal-clipping, simétrico; embeddings INT8 |
+| Idiomas soportados | no disponible |
+| Licencia | MIT (artefacto LiteRT-LM); base Qwen2.5 Apache-2.0 |
+| Formato de pesos | `.litertlm` (bundle LiteRT-LM, ~4,53 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-7B, un transformer denso de 28 capas. El modelo original DeepSeek-R1-Distill-Qwen-7B se obtuvo mediante destilacion supervisada (SFT) sobre aproximadamente 800.000 trazas de razonamiento generadas por DeepSeek-R1, lo que le confiere la capacidad de emitir una cadena de pensamiento antes de responder. La conversion a LiteRT-LM se realizo con la herramienta oficial `litert-torch` (funcion `export_hf`) sin codigo personalizado ni parches.
+El modelo base es un transformer denso de 7B construido sobre Qwen2.5 y destilado a partir de DeepSeek-R1, de modo que hereda el comportamiento de razonamiento explícito: el asistente abre un bloque `<think>`, razona paso a paso y emite la respuesta final, frecuentemente dentro de `\boxed{}`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO en la información proporcionada.
 
-La cuantizacion aplicada es int4 por bloques de 32 elementos con recorte optimo OCTAV (optimal clipping) y simetria, mientras que la capa de embeddings se mantiene en INT8. El runtime LiteRT-LM ejecuta el modelo con computacion entera. La KV cache se fijo en 4096 tokens para ajustarse a las limitaciones de memoria de los dispositivos objetivo. Segun la model card, la cuantizacion preserva el comportamiento de razonamiento completo: la unica diferencia medida es una caida de 1 punto porcentual en GSM8K (87,0% frente al 88,0% en bf16).
+La conversión a LiteRT-LM se realizó con la herramienta oficial `litert-torch` (sin forks ni código personalizado). El bundle incorpora el tokenizador y la plantilla de prompt de DeepSeek (`<｜User｜>` / `<｜Assistant｜>`, token de parada `<｜end▁of▁sentence｜>`). En la revisión del 6 de octubre de 2026 se reescribió el grafo de prefill/decode: las dos escrituras dinámicas al KV cache por capa se fusionaron en un compuesto `odml.cache_update`, y los productos de atención BATCH_MATMUL pasaron a `odml.runtime_bmm`, la forma que exporta `litert-torch` con `--apply_gpu_composites`. Se añadió además una firma `prefill_16` que comparte buffers de pesos con `prefill_128`, lo que reduce el TTFT en GPU de 0,220 s a 0,046 s.
 
 ## Capacidades
 
-- Razonamiento paso a paso: genera una cadena de pensamiento explicita entre los marcadores ` thinking` y ` response` antes de dar la respuesta final.
-- Resolucion de problemas matematicos: alcanza un 87,0% en GSM8K (evaluacion con 100 muestras, greedy, 0-shot).
-- Generacion de texto con formato de respuesta estructurado (frecuentemente en `\boxed{}` para resultados numericos).
-- Inferencia on-device: puede ejecutarse en Mac (CPU y GPU Metal) y en telefonos Android con 12 GB o mas de RAM mediante el runtime LiteRT-LM.
-- Soporte de separacion del canal de razonamiento: desde la version 0.16.0 del runtime, el modelo declara el canal `thought` en sus metadatos, lo que permite recuperar el razonamiento y la respuesta por separado via `channels["thought"]`.
-- No se documentan capacidades de tool calling, vision, audio ni multimodales; es un modelo exclusivamente de texto.
+- Generación de texto con razonamiento explícito en modo thinking (`<think> … </think>`).
+- Razonamiento matemático paso a paso, con respuestas finales frecuentemente en `\boxed{}`.
+- Generación de código y resolución de problemas algorítmicos (heredado de la destilación de R1).
+- Inferencia on-device en Android, macOS, navegador (WebGPU) y Raspberry Pi 5.
+- Ejecución con backend GPU (WebGPU sobre Metal) o CPU (XNNPACK).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Tutor inteligente de matematicas en dispositivos moviles: el modelo puede explicar paso a paso la resolucion de problemas aritmeticos o algebraicos, aprovechando su cadena de razonamiento y su rendimiento en GSM8K. Su tamano (~4,2 GB) permite ejecutarlo en un telefono Android de gama alta sin conexion.
-- Asistente de razonamiento logico para aplicaciones de productividad: por ejemplo, analisis de argumentos, verificacion de deducciones o generacion de hipotesis, con la ventaja de que el razonamiento es visible y auditable.
-- Chatbot de soporte tecnico con explicaciones: puede desglosar procedimientos de diagnostico o solucion de problemas en pasos logicos, mejorando la transparencia frente a respuestas directas.
-- Sistema de ensenanza asistida por ordenador en entornos sin conexion: institutos o bibliotecas pueden desplegar el modelo en un Mac o en un servidor local con GPU para ofrecer ayuda en tareas de razonamiento sin depender de la nube.
-- Analisis de problemas de logica y puzzles en aplicaciones educativas: el modelo puede resolver acertijos, sudokus o problemas de programacion logica, mostrando su proceso de pensamiento para fines pedagogicos.
-- Generacion de informes o resumenes con justificacion: en contextos donde se requiere que la IA explique sus conclusiones (por ejemplo, analisis de datos simples), el modelo puede emitir un razonamiento estructurado antes de la respuesta final.
-- Prototipado rapido de aplicaciones de razonamiento en el borde: desarrolladores pueden integrar el modelo en pipelines de LiteRT-LM para validar la viabilidad de asistentes con razonamiento en hardware limitado antes de escalar a modelos mayores.
+- Asistente de razonamiento en el móvil sin conexión: el bundle de 4,53 GB cabe en dispositivos Android con 12 GB o más de RAM y permite resolver problemas matemáticos o lógicos localmente, sin enviar datos a la nube, a 8,6 tok/s de decodificación en un Galaxy S26.
+- Demo interactiva en navegador: la página oficial de LiteRT-LM carga el modelo vía WebGPU y permite probar el razonamiento en cualquier equipo con navegador compatible, útil para evaluación rápida o formación.
+- Tutor de matemáticas con trazas verificables: al emitir la cadena `<think>` antes de la respuesta, el usuario puede auditar el razonamiento y detectar errores intermedios, algo valioso en entornos educativos.
+- Prototipado de agentes de razonamiento en escritorio: en un Mac Studio M4 Max alcanza 79,1 tok/s de decodificación y 675 tok/s de prefill, suficiente para iterar sobre pipelines de razonamiento multi-paso sin coste de API.
+- Procesamiento por lotes de problemas GSM8K o similares: con 28/30 aciertos en 30 preguntas de GSM8K (greedy, máx. 2048 tokens) y ejecución en CPU, sirve para evaluar técnicas de prompting o comparar variantes de cuantización.
+- Despliegue en dispositivos de bajo consumo: en Raspberry Pi 5 se han medido prestaciones con la revisión anterior del bundle, lo que lo hace candidato para kioscos, robots o gateways industriales con razonamiento local.
+- Integración en aplicaciones Android mediante la librería `com.google.ai.edge.litert:litert`, para asistentes de campo con conectividad intermitente.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona un unico benchmark de precision (GSM8K) y datos de rendimiento de inferencia en hardware especifico.
+Datos medidos por el autor en dispositivos reales (2026-10-05 y comparativa de la revisión del 2026-10-06):
 
-| Configuracion | GSM8K (n=100, greedy, 0-shot) |
-|---|---|
-| Modelo original en bf16 (referencia) | 88,0% |
-| Este modelo (LiteRT int4 BOCTAV4) | 87,0% |
+| Medida | Galaxy S26 GPU | Galaxy S26 CPU | Mac Studio M4 Max GPU | Mac Studio M4 Max CPU |
+|---|---|---|---|---|
+| Decode | 8,6 tok/s | 8,4 tok/s | 79,1 tok/s | 18,2 tok/s |
+| Prefill | 88 tok/s | 33 tok/s | 675 tok/s | — |
+| TTFT | 11,75 s | 30,99 s | 393 ms (0,046 s con prefill_16) | 1,192 s (prefill_16) |
 
-Rendimiento de inferencia medido con `litert-lm benchmark` (version 0.15.0) en un Apple M4 Max, con prefijo de 256 tokens, generacion de 256 tokens, 3 ejecuciones y max-num-tokens 4096:
+Comparativa de la reescritura del grafo (Mac Studio M4 Max, litert-lm 0.17.1):
 
-| Dispositivo | Backend | Prefill (256 tok) | Decode | TTFT | Carga |
-|---|---|---|---|---|---|
-| Apple M4 Max (macOS) | CPU | 64 tok/s | 18,2 tok/s | 4,69 s | — |
-| Apple M4 Max (macOS) | GPU (Metal) | 644 tok/s | 65,9 tok/s | 0,43 s | — |
+| Medida | Fichero anterior | Fichero nuevo | Ratio |
+|---|---:|---:|---:|
+| GPU decode (256 prefill / 256 decode) | 65,0 tok/s | 79,1 tok/s | ×1,217 |
+| GPU prefill (256 tokens) | 644 tok/s | 675 tok/s | ×1,049 |
+| GPU TTFT (prefill 16) | 0,220 s | 0,046 s | ×0,210 |
+| CPU decode | 18,1 tok/s | 18,2 tok/s | ×1,005 |
+| CPU TTFT (prefill 16) | 2,893 s | 1,192 s | ×0,412 |
 
-En un Samsung Galaxy S26 (SM-S942Q, Android 16) con backend GPU, el modelo se ejecuta con 2375 de 2375 operaciones delegadas en dos subgrafos de LiteRT GPU y un pico de memoria de 1537 MB. No se publican cifras de velocidad para este telefono.
+Calidad: 28/30 en GSM8K (greedy, máx. 2048 tokens) frente a 27/30 del fichero anterior; la diferencia de una pregunta tiene McNemar p = 1,0, es decir, no significativa. No se han publicado resultados de MMLU, HumanEval u otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo pesa ~4,2 GB; el pico de memoria observado en Android fue de 1537 MB (proceso completo). En Mac no se reporta el pico.
-- GPU recomendadas: Apple M4 Max (GPU Metal) ofrece el mejor rendimiento medido (65,9 tok/s en decode). Cualquier GPU compatible con Metal o Vulkan en Android deberia funcionar.
-- No cabe en dispositivos con 8 GB de RAM o menos: la seccion de pesos excede el presupuesto de mmap de iOS y de telefonos de gama media.
-- Opciones de despliegue: runtime LiteRT-LM (`litert_lm_main` o `litert_lm_advanced_main`) con backends CPU o GPU. No se mencionan vLLM, llama.cpp, Ollama ni TGI, ya que el formato es exclusivo de LiteRT-LM.
-- Latencia y throughput: en Apple M4 Max, TTFT de 0,43 s en GPU y 4,69 s en CPU; decode de 65,9 tok/s en GPU y 18,2 tok/s en CPU. En Android no hay cifras publicadas.
+- VRAM/RAM: el bundle ocupa ~4,53 GB en disco; requiere al menos 12 GB de RAM en Android según el autor. No cabe en iPhone ni en teléfonos de 8 GB.
+- GPU recomendadas: GPU integrada de Mac (Metal/WebGPU) y GPU de Android de gama alta (Galaxy S26 medido). Para escritorio con GPU dedicada no hay datos publicados.
+- Consumer GPU: cabe en tarjetas con 8 GB o más de VRAM si se usa un runtime con soporte LiteRT; las métricas publicadas son de Mac Studio M4 Max y Galaxy S26.
+- Despliegue: runtime LiteRT-LM (`litert_lm_main`), backend `--backend gpu` o CPU; demo web con WebGPU. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: ver tabla de benchmarks; en Mac Studio M4 Max GPU, 79,1 tok/s de decode y TTFT de 46 ms con `prefill_16`; en Galaxy S26 GPU, 8,6 tok/s y TTFT de 11,75 s.
+- Advertencia operativa: en litert-lm 0.18.x y 0.19.0, una llamada bloqueante `send_message` que siga generando tras 10 minutos falla con `DEADLINE_EXCEEDED` (timeout fijo sin configuración) y puede provocar el crash del proceso; se recomienda reducir `max_output_tokens` en backends lentos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Formato | Parametros | Contexto | Cuantizacion | GSM8K | Licencia |
-|---|---|---|---|---|---|---|
-| Este modelo (litert-community DeepSeek-R1-Distill-Qwen-7B) | LiteRT-LM | ~7,6B (base Qwen2.5-7B) | 4096 (KV cache) | int4 blockwise + OCTAV | 87,0% | MIT |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (original) | Safetensors | ~7,6B | 128k | bf16 | 88,0% | MIT |
-| litert-community/DeepSeek-R1-Distill-Qwen-1.5B | LiteRT-LM | ~1,5B | No disponible | int4 (presumiblemente) | No disponible | MIT |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepSeek-R1-Distill-Qwen-7B (LiteRT-LM) | 7B | 4096 (KV) | `.litertlm` int4 | MIT | Hugging Face, demo web |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | no disponible | safetensors | MIT | Hugging Face |
+| Qwen2.5-7B (base) | 7B | no disponible | safetensors | Apache-2.0 | Hugging Face |
 
-La comparativa muestra que la conversion int4 mantiene practicamente el mismo rendimiento que el modelo original en bf16, con una perdida minima de 1 punto en GSM8K, a cambio de una reduccion significativa del tamano (de ~15 GB en bf16 a ~4,2 GB). La version 1.5B existe en el mismo formato y seria la alternativa para dispositivos con menos memoria, aunque no se dispone de sus benchmarks.
+La comparación con otras alternativas on-device de la misma categoría (por ejemplo, Gemma o Phi en formato LiteRT) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La longitud de contexto esta limitada a 4096 tokens en esta conversion, muy por debajo de los 128k del modelo base. Interacciones que requieran contexto largo fallaran o degradaran el rendimiento.
-- No se ha publicado evaluacion de sesgos ni de alucinacion especifica para esta conversion. El corpus de entrenamiento del modelo base es web-derivado y no esta totalmente divulgado, por lo que puede contener sesgos y PII incidentales.
-- El modelo puede alucinar en tareas de razonamiento complejo, especialmente fuera de su dominio de entrenamiento. Se recomienda validar las respuestas en aplicaciones criticas.
-- No es apto para dispositivos con 8 GB de RAM o menos (incluido iPhone). Solo se garantiza su funcionamiento en Mac y en Android con 12 GB o mas.
-- La licencia MIT permite uso comercial, pero el modelo base (Qwen2.5) es Apache-2.0; no hay restricciones adicionales conocidas.
-- El formato `.litertlm` es propietario del ecosistema LiteRT-LM; no es compatible con otros runtime como llama.cpp o vLLM sin conversion adicional.
-- No se documentan capacidades de tool calling, vision ni audio; es un modelo puramente textual.
-- Los datos de rendimiento de CPU en Mac tienen una variabilidad de aproximadamente ±7% segun la propia model card, por lo que las cifras deben interpretarse con cautela.
+- El contexto efectivo está limitado a 4096 tokens por la caché KV del bundle, muy por debajo de la ventana nativa del modelo base.
+- El modo thinking genera respuestas largas; en backends lentos esto agrava el riesgo de `DEADLINE_EXCEEDED` en litert-lm 0.18.x/0.19.0.
+- No cabe en iPhone ni en dispositivos con 8 GB de RAM; el autor lo indica explícitamente.
+- La cuantización int4 puede degradar el razonamiento en problemas largos; con activaciones fp16 en GPU, solo 21 de 30 respuestas de GSM8K quedaron byte-idénticas respecto al fichero anterior.
+- Riesgo de alucinación inherente a los modelos destilados de razonamiento; no se han publicado evaluaciones de sesgo ni de seguridad.
+- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe uniforme.
+- Licencia MIT para el artefacto, pero conviene verificar las condiciones de la base Qwen2.5 (Apache-2.0) y de DeepSeek-R1 en usos comerciales.
+- El formato `.litertlm` limita la portabilidad: no es compatible con ecosistemas como llama.cpp, vLLM u Ollama sin conversión adicional.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-7B
-- Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
-- Runtime LiteRT-LM (GitHub): https://github.com/google-ai-edge/litert-lm
-- Repositorio de DeepSeek-R1 (GitHub): https://github.com/deepseek-ai/DeepSeek-R1
-- Version 1.5B del mismo formato: https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-1.5B
-- Guia de GPU para Android: https://github.com/john-rocky/hf-to-litertlm/blob/main/docs/android-gpu.md
+- Modelo en Hugging Face: https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-7B
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+- Demo web LiteRT-LM: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/DeepSeek-R1-Distill-Qwen-7B
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Ficha de mediciones edge-compat: https://github.com/john-rocky/edge-compat/blob/main/cards/deepseek-r1-distill-qwen-7b-q4-block32-ekv4096/CARD.md
+- Benchmark Android multi-runtime: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

@@ -2,66 +2,95 @@
 
 ## Resumen
 
-FLUX.1-dev es un modelo de generación de imágenes a partir de texto desarrollado por Black Forest Labs, un laboratorio especializado en inteligencia visual. El modelo se distribuye a través de Hugging Face con el identificador `black-forest-labs/FLUX.1-dev` y está diseñado para producir imágenes de alta calidad a partir de descripciones textuales. Su relevancia actual radica en su popularidad dentro de la comunidad de código abierto, con más de 493.000 descargas y más de 14.000 likes en la plataforma, lo que indica una adopción significativa entre desarrolladores e investigadores.
+FLUX.1-dev es un modelo de generacion de imagenes texto-a-imagen desarrollado por Black Forest Labs, el equipo detras de los modelos de difusion Stable Diffusion originales. Publicado el 31 de julio de 2024, se presenta como la variante "dev" (no comercial) de la familia FLUX.1, que incluye tambien FLUX.1-pro (API) y FLUX.1-schnell (Apache 2.0). Con 11.900 millones de parametros, es uno de los modelos texto-a-imagen de mayor tamano disponibles en abierto, superando ampliamente a SDXL (2.600 millones) y a Stable Diffusion 3 Medium.
 
-El modelo se presenta como un pipeline de texto a imagen, compatible con la librería `diffusers` y con pesos en formato `safetensors`. Aunque la información técnica detallada no está disponible en los datos proporcionados, su etiqueta "flux" y su origen en Black Forest Labs sugieren que forma parte de la familia de modelos FLUX, conocida por su capacidad de generar imágenes fotorrealistas y su adherencia a las indicaciones del usuario. Sin embargo, en esta ficha se marcarán como "no disponible" todos los parámetros que no se hayan especificado explícitamente en la información consultada.
+El modelo resuelve el problema de la generacion fotorrealista de alta fidelidad con buen seguimiento de prompts complejos, incluyendo texto legible dentro de la imagen, composiciones detalladas y multiples elementos. Emplea una arquitectura hibrida de transformer multimodal (MMDiT) combinada con un VAE y dos codificadores de texto (CLIP y T5-XXL), lo que le permite interpretar prompts largos y estructurados mejor que los modelos basados unicamente en CLIP.
+
+Su relevancia actual radica en que es la referencia open weights en calidad de generacion de imagen, ampliamente adoptado por la comunidad (mas de 427.000 descargas y 16.000 likes en Hugging Face) y compatible con el ecosistema Diffusers, ComfyUI y Automatic1111. La licencia no comercial es su principal restriccion para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (etiqueta "license:other") |
-| Formato de pesos | safetensors (según etiqueta) |
+| Arquitectura | MMDiT (Multimodal Diffusion Transformer) con VAE y doble codificador de texto (CLIP + T5-XXL) |
+| Parametros totales | 11.901.408.320 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (prompt maximo tipico de 512 tokens en T5) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (la comunidad ofrece variantes GGUF y fp8 en repos derivados) |
+| Idiomas soportados | principalmente ingles (tag `en`); capacidades multilingues limitadas por el codificador T5 |
+| Licencia | flux-1-dev-non-commercial-license |
+| Formato de pesos | safetensors (Diffusers) |
+| Tamano del repositorio | 69,5 GB |
+| Pipeline | text-to-image |
+| Acceso | restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna, el proceso de entrenamiento, el número de tokens utilizados o las técnicas de optimización empleadas en la información proporcionada. El modelo se identifica como un pipeline de texto a imagen, lo que indica que utiliza un enfoque de difusión para generar imágenes, pero no se especifican los detalles arquitectónicos (por ejemplo, si es un transformer, un modelo de difusión latente, etc.). Tampoco se han publicado datos sobre el dataset de entrenamiento, la composición de los datos o si se aplicaron técnicas como RLHF o DPO.
+FLUX.1-dev es un modelo de difusion basado en una arquitectura MMDiT (Multimodal Diffusion Transformer), una evolucion del transformer de difusion que procesa conjuntamente tokens de imagen y tokens de texto en un unico backbone. La imagen se codifica con un VAE propio y el texto se procesa mediante dos codificadores en paralelo: CLIP (para alineamiento semantico general) y T5-XXL (para comprension detallada de prompts largos). Esta combinacion de codificadores es una de las claves de su buen seguimiento de instrucciones complejas.
+
+El modelo se entrena mediante difusion (flow matching, segun la documentacion de la familia FLUX.1) sobre un gran corpus de pares imagen-texto, con una fase posterior de ajuste guiado (guidance distillation) que permite usar guidance escalada sin duplicar el coste computacional de inferencia. Black Forest Labs no ha publicado el numero exacto de tokens de entrenamiento ni la composicion del dataset. La variante "dev" esta destilada para ser mas rapida que "pro" pero mantiene calidad alta; "schnell" es la variante de 4 pasos con licencia Apache 2.0.
 
 ## Capacidades
 
-- Generación de imágenes a partir de descripciones textuales (text-to-image), según el pipeline declarado.
-- Compatibilidad con la librería `diffusers` para su integración en flujos de trabajo de Python.
-- Distribución de pesos en formato `safetensors`, lo que facilita su carga segura en entornos de inferencia.
-- No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión o audio, ya que el modelo está orientado a la generación de imágenes.
+- Generacion de imagenes fotorrealistas e ilustraciones de alta fidelidad a partir de prompts en lenguaje natural.
+- Renderizado de texto legible dentro de la imagen (letreros, posters, tipografia), una de las mejoras mas notables frente a SDXL.
+- Composicion compleja con multiples sujetos, relaciones espaciales y atributos detallados.
+- Comprension de prompts largos y estructurados gracias al codificador T5-XXL.
+- Soporte de image-to-image y edicion (inpainting/outpainting) mediante el pipeline de Diffusers y herramientas de la comunidad.
+- Control estructural mediante adaptadores (ControlNet, LoRA) disponibles en la comunidad.
+- No soporta tool calling, agentes ni razonamiento multi-step: es exclusivamente generativo visual.
+- Capacidades multilingues limitadas; el rendimiento optimo se obtiene con prompts en ingles.
 
 ## Casos de uso
 
-- Creación de ilustraciones y arte conceptual: el modelo puede generar imágenes a partir de descripciones detalladas, útil para diseñadores y artistas que necesitan explorar ideas visuales rápidamente.
-- Generación de contenido visual para marketing: permite producir imágenes personalizadas para campañas publicitarias, redes sociales o materiales promocionales a partir de briefs textuales.
-- Prototipado de diseños de producto: los equipos de diseño pueden usar el modelo para visualizar conceptos de productos antes de invertir en producción física.
-- Generación de imágenes para entornos de realidad virtual o videojuegos: se pueden crear texturas, escenarios o personajes a partir de descripciones, acelerando el desarrollo de assets.
-- Asistencia en educación y divulgación: el modelo puede ilustrar conceptos abstractos o históricos para materiales educativos, generando imágenes que acompañen explicaciones textuales.
-- Creación de contenido para blogs y publicaciones: los redactores pueden generar imágenes de apoyo para artículos sin depender de bancos de imágenes, adaptando las ilustraciones al contenido específico.
+- Generacion de material grafico para marketing: creacion de banners, ilustraciones y creatividades publicitarias con texto legible integrado, usando prompts detallados en ingles y renderizado en alta resolucion.
+- Prototipado de diseno de producto y UI: generacion rapida de mockups y conceptos visuales que sirven como referencia para equipos de diseno antes de la produccion.
+- Ilustracion editorial y de contenidos: generacion de imagenes para articulos, blogs y redes sociales, con control de estilo mediante LoRA entrenados por la comunidad.
+- Creacion de assets para videojuegos: texturas, concept art de personajes y entornos, integrable en pipelines de arte conceptual con image-to-image para refinar bocetos.
+- Edicion fotografica asistida: inpainting y outpainting para eliminar objetos, ampliar encuadres o rellenar zonas, usando el pipeline de Diffusers.
+- Investigacion en generacion visual: modelo de referencia open weights para experimentar con tecnicas de difusion, flow matching y destilacion, al ser uno de los mayores modelos disponibles.
+- Generacion de datos sinteticos para entrenamiento de modelos de vision: creacion de datasets de imagenes etiquetadas con control fino sobre atributos, siempre que el uso respete la licencia no comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre métricas como FID, CLIP score u otras evaluaciones de calidad de imagen, ni comparaciones con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card oficial de FLUX.1-dev referencia comparativas cualitativas con FLUX.1-pro y FLUX.1-schnell, pero no se han proporcionado cifras numericas (FID, CLIP score, HPSv2, etc.) en la informacion consultada.
 
 ## Requisitos de hardware
 
-No se dispone de información sobre los requisitos de hardware para la inferencia de este modelo. No se especifican valores de VRAM, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.) ni estimaciones de latencia o throughput. Se recomienda consultar la documentación oficial de Black Forest Labs o el repositorio de Hugging Face para obtener estos datos.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 24-33 GB, segun resolucion y longitud del prompt (los 11.900 millones de parametros del transformer mas T5-XXL y VAE requieren bastante memoria).
+- Cuantizaciones de la comunidad (fp8, GGUF Q4/Q8) reducen el requisito a 8-16 GB, permitiendo ejecucion en GPUs consumer.
+- GPU recomendadas: A100 40/80 GB, H100, L40S para produccion en bf16; RTX 4090 (24 GB) es el minimo comodo en consumer con cuantizacion o fp8.
+- Cabe en consumer GPU: si, en RTX 3090/4090 (24 GB) con fp8 o cuantizacion GGUF; en GPUs de 12-16 GB requiere cuantizaciones agresivas y resoluciones moderadas.
+- Opciones de despliegue: Diffusers (FluxPipeline), ComfyUI, Automatic1111/Forge, InvokeAI, y variantes GGUF via stable-diffusion.cpp o ComfyUI-GGUF. Tambien disponible como endpoint serverless en Hugging Face.
+- Latencia y throughput: no disponibles en la informacion proporcionada; dependen fuertemente del hardware, la cuantizacion y el numero de pasos (tipicamente 20-50 pasos).
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la información proporcionada. No se pueden establecer comparativas con otras alternativas de generación de imágenes sin datos adicionales.
+| Modelo | Parametros | Contexto / prompt | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| FLUX.1-dev | 11.900 M | T5 hasta 512 tokens | No comercial (flux-1-dev-non-commercial-license) | Pesos abiertos (gated) en HF |
+| FLUX.1-schnell | no disponible en la informacion | no disponible | Apache 2.0 | Pesos abiertos en HF |
+| Stable Diffusion 3 Medium | ~2.000 M | CLIP + T5 | Stability AI Community License (uso comercial limitado) | Pesos abiertos en HF |
+| SDXL | ~2.600 M | CLIP (77 tokens) | CreativeML OpenRAIL++-M | Pesos abiertos en HF |
+
+FLUX.1-dev supera en tamano y, segun la documentacion oficial, en calidad de seguimiento de prompts a SDXL y SD3 Medium, pero su licencia no comercial lo excluye de produccion sin licencia comercial de Black Forest Labs. FLUX.1-schnell (Apache 2.0) es la alternativa libre para uso comercial dentro de la misma familia.
 
 ## Limitaciones y advertencias
 
-- La licencia está etiquetada como "other", lo que indica que no es una licencia estándar de código abierto. Es necesario revisar los términos específicos de uso antes de emplear el modelo en proyectos comerciales o de producción.
-- No se dispone de información sobre sesgos conocidos, riesgos de alucinación (en el contexto de generación de imágenes, posibles artefactos o distorsiones) o limitaciones de idioma.
-- Al no conocerse la arquitectura ni los datos de entrenamiento, no es posible evaluar posibles limitaciones técnicas como la resolución máxima de salida, el tiempo de generación o la coherencia en escenas complejas.
-- Se recomienda consultar la documentación oficial y el repositorio de GitHub para obtener advertencias específicas y guías de uso responsable.
+- Licencia no comercial: el uso en produccion, SaaS o cualquier fin comercial requiere licencia comercial de Black Forest Labs. Es la restriccion mas importante.
+- Acceso restringido en Hugging Face: es necesario aceptar las condiciones del modelo antes de descargar.
+- Sesgos: como todo modelo entrenado con datos web a gran escala, puede reproducir estereotipos de genero, raza y profesion, y generar contenido inapropiado si no se filtra.
+- Riesgo de alucinacion visual: puede generar anatomia incorrecta (manos, dedos), texto malformado en prompts complejos y composiciones fisicamente imposibles.
+- Idioma: optimizado para ingles; prompts en castellano pueden degradar la calidad respecto a su traduccion al ingles.
+- Requisitos de hardware elevados en bf16 (24-33 GB de VRAM), lo que limita su despliegue sin cuantizacion.
+- No apto para tareas de razonamiento, codigo o agentes: es exclusivamente un modelo generativo de imagen.
+- Los pesos derivados (LoRA, cuantizaciones) publicados por la comunidad pueden tener licencias distintas o heredar la restriccion no comercial.
 
 ## Enlaces
 
-- [Página del modelo en Hugging Face](https://huggingface.co/black-forest-labs/FLUX.1-dev)
-- [Repositorio oficial de inferencia en GitHub](https://github.com/black-forest-labs/flux)
-- [Sitio web de Black Forest Labs](https://bfl.ai/)
-- [Página del modelo FLUX 1.1 Pro en el sitio de BFL](https://bfl.ai/models/flux-pro)
-- [Página de FLUX.1 Dev en flux1ai.com](https://flux1ai.com/dev)
+- Hugging Face: https://huggingface.co/black-forest-labs/FLUX.1-dev
+- FLUX.1-schnell (Apache 2.0): https://huggingface.co/black-forest-labs/FLUX.1-schnell
+- Blog oficial de Black Forest Labs: https://blackforestlabs.ai/announcing-black-forest-labs/
+- Documentacion de Diffusers (FluxPipeline): https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux
+- Repositorio de Diffusers: https://github.com/huggingface/diffusers
+- ComfyUI: https://github.com/comfyanonymous/ComfyUI

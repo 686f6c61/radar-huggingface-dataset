@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 893,
+  "downloads_30d": 1116,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aygıt Yöneticisi / Görüntü Bağdaştırıcıları sorunu | DonanımHaber Forum",
-      "url": "https://forum.donanimhaber.com/aygit-yoneticisi-goruntu-bagdastiricilari-sorunu--128964819",
-      "snippet": "Sep 17, 2017 · Merhaba arkadaşlar laptop'ı hdmı ile tv bağlamaya çalışıyordum ki bi türlü görüntü alamadım. aynı tv ve aynı kablo ile …"
-    },
-    {
-      "title": "Aygıt Yöneticisi'nde Kamera Yok: Hızlı Çözümler | DonanımHaber Forum",
-      "url": "https://forum.donanimhaber.com/aygit-yoneticisinde-goruntu-aygitlari-yok-kamera-calismiyor--95941062",
-      "snippet": "Windows bilgisayarında \"Aygıt Yöneticisi'nde Kamera Yok\" veya \"Görüntüleme Aygıtları Yok\" hatasıyla mı karşılaşıyorsun? Bu kolay …"
-    },
-    {
-      "title": "Ön yüklemedeki aygıt sıralamasını ayarlama - CHIP Online",
-      "url": "https://www.chip.com.tr/ipucu/on-yuklemedeki-aygit-siralamasini-ayarlama_53080.html",
-      "snippet": "Feb 20, 2009 · Ön yüklemedeki aygıt sıralamasını ayarlama Format atmak istediğinizde veya Live Linux dağıtımlarını çalıştırmak …"
-    },
-    {
-      "title": "Bluetooth bağlantısını açık tutmak bataryaya zarar verir mi?",
-      "url": "https://www.chip.com.tr/galeri/bluetooth-baglantisini-acik-tutmak-bataryaya-zarar-verir-mi_180770.html",
-      "snippet": "Jun 4, 2026 · CHIP Online Foto Galeri Chip Galeri Bluetooth bağlantısını açık tutmak bataryaya zarar verir mi? Bluetooth bağlantısını …"
-    },
-    {
-      "title": "Aygıt Yöneticisi Açılmıyor? İşte Kolay Çözümler | DonanımHaber Forum",
-      "url": "https://forum.donanimhaber.com/yardim-aygit-yoneticisi-acilmiyor--3785963",
-      "snippet": "Aygıt Yöneticisi Açılmıyor Sorunu ve Çözümleri Aygıt Yöneticisi, Windows işletim sisteminin önemli bir bileşenidir ve donanımınızın …"
-    }
-  ]
+  "sources": []
 }

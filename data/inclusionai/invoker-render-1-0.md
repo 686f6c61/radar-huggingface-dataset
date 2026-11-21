@@ -2,97 +2,91 @@
 
 ## Resumen
 
-Invoker-Render 1.0 es un modelo de generación de vídeo condicionado por proxies visuales, publicado por inclusionAI (Ant Group) como componente de renderizado de su sistema Code World Model 2.0. El modelo recibe como entrada una imagen RGB de referencia de 1344×768, una secuencia de frames proxy a 24 FPS (mapas semánticos, cajas 3D dispersas, máscaras de sujeto, geometría sombreada o cajas con esqueleto) y un prompt de texto, y genera el vídeo final con la apariencia especificada. La arquitectura es un DiT causal con atención 3D (`MiniMaxH3Transformer3DModel`), con 33.122.992.896 parámetros almacenados en FP32.
+Invoker-Render 1.0 es un modelo de generación de vídeo condicionado por proxy desarrollado por inclusionAI, presentado como el componente de renderizado visual de Code World Model 2.0 ("Towards Infinite Controllable Video Generation"). El modelo no mantiene el estado del mundo por sí mismo: un motor externo (upstream engine) conserva el estado, mientras que unos proxies visuales fijan la trayectoria de cámara, la disposición de la escena y el movimiento de los objetos, y Invoker-Render genera la apariencia fotorrealista a partir de esos proxies, una imagen de referencia de apariencia y un prompt de texto.
 
-Su relevancia radica en el enfoque de "world model": un motor externo mantiene el estado del mundo (trayectoria de cámara, layout de escena, movimiento de objetos) y lo comunica al modelo mediante proxies, de modo que la generación de apariencia queda desacoplada del control estructural. Esto permite generación en streaming continua con un ancla de apariencia fija y una ventana de historia acotada, lo que habilita sesiones interactivas de larga duración (por ejemplo, recorridos 360° continuos) sin deriva visual acumulada.
+Arquitectónicamente es un Diffusion Transformer (DiT) causal y en streaming, con 33.122.992.896 parámetros almacenados en FP32 (29 shards safetensors, 638 tensores, unos 132,5 GB). El identificador de arquitectura en `config.json` es `MiniMaxH3Transformer3DModel`, y el código de inferencia companion se construye sobre MiniMax-H3, SGLang y SGLang-Omni. Su rasgo diferencial es la generación en streaming causal en cuatro pasos con un ancla de apariencia fija y una ventana de historia acotada, lo que permite sesiones de horizonte largo (vídeo potencialmente infinito) mientras lleguen frames de proxy.
 
-El repositorio contiene únicamente los pesos del DiT causal principal (29 shards safetensors, 638 tensores, ~132,5 GB) más un LoRA de un teacher bidireccional separado. No incluye VAE, codificador de texto Qwen, decodificador causal ni bundle de inferencia listo para usar; el código de inferencia vive en el repositorio GitHub CodeWorldModel y requiere preparar esos activos por separado.
+Es relevante ahora porque aborda el problema de la consistencia a largo plazo en generación de vídeo controlable: en lugar de generar el vídeo completo de una vez (con degradación de identidad y escena en horizontes largos), separa el control estructural (proxies) de la síntesis de apariencia y lo ejecuta de forma incremental. Está orientado a entornos interactivos (servicio WebSocket, cliente de fichero y cliente de navegador) y a casos como mundos simulados, gameplay sintético y renderizado controlado por cámara.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT causal con atención 3D (`MiniMaxH3Transformer3DModel`), streaming autoregresivo |
-| Parametros totales | 33.122.992.896 (33,12 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (ventana de historia acotada; frames proxy de `17*N+5`, mínimo 39) |
-| Tipos de cuantizacion | no disponible (pesos publicados en FP32, sin cuantizar) |
-| Idiomas soportados | zh (chino) |
-| Licencia | Apache-2.0 y CC BY-NC 4.0 (uso no comercial en la parte CC) |
-| Formato de pesos | safetensors (29 shards, 638 tensores, ~132,5 GB); LoRA separado en safetensors |
+| Arquitectura | DiT causal en streaming (Diffusion Transformer 3D); identificador `MiniMaxH3Transformer3DModel` |
+| Parametros totales | 33.122.992.896 (33,12B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (ventana de historia acotada, sin cifra publicada) |
+| Tipos de cuantizacion | no disponible; los pesos se distribuyen sin cuantizar en FP32 |
+| Idiomas soportados | en (prompt de texto); la metadata de Hugging Face lista zh |
+| Licencia | Apache-2.0 y CC BY-NC 4.0 (uso no comercial bajo la componente CC BY-NC) |
+| Formato de pesos | safetensors (29 shards, 638 tensores, ~132,5 GB, FP32); LoRA adicional en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un Diffusion Transformer causal orientado a vídeo, identificado en `config.json` como `MiniMaxH3Transformer3DModel`, con atención 3D sobre secuencias de frames. La generación es streaming y autoregresiva: cada bloque de frames se condiciona a un ancla de apariencia fija (la imagen RGB inicial) y a una ventana de historia acotada, lo que permite alimentar proxies de forma continua sin que el coste crezca con la duración del vídeo. El pipeline declarado es video-to-video y la inferencia de referencia ejecuta cuatro pasos de difusión causales.
+Invoker-Render es un Diffusion Transformer causal orientado a streaming. La generación se realiza en cuatro pasos causales por chunk de vídeo, de modo que cada bloque de frames se condiciona únicamente en el pasado (ancla de apariencia fija más ventana de historia acotada), lo que habilita sesiones de duración arbitraria siempre que el motor externo siga entregando frames de proxy. La entrada combina un proxy estructural (mapas semánticos, cajas 3D dispersas, máscaras de sujeto, geometría sombreada, o cajas con esqueletos), una imagen RGB de referencia de apariencia de 1344×768 y un prompt de texto; la salida es vídeo a 24 FPS sobre la línea temporal (el frame rate no refleja el throughput de inferencia).
 
-La entrada se compone de tres señales: una imagen de referencia de 1344×768, un vídeo proxy a 24 FPS (la tasa de 24 FPS es la del eje temporal del vídeo, no el throughput de inferencia) y un prompt de texto. El modelo admite múltiples granularidades de proxy: mapas semánticos, cajas 3D dispersas, máscaras de sujeto, geometría con sombreado y combinaciones de caja más esqueleto. El repositorio incluye además un LoRA de un teacher bidireccional (`bidirectional_lora/teacher-live.safetensors`, ~2,3 GB) sobre base MiniMax-H3, que es un modelo distinto y no debe superponerse a los pesos causales principales. No se han publicado en la información disponible detalles sobre volumen de tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO.
+El repositorio contiene además `bidirectional_lora/teacher-live.safetensors` (unos 2,3 GB), los pesos LoRA del profesor bidireccional sobre la base MiniMax-H3; es un modelo distinto de los pesos causales de la raíz y no debe aplicarse sobre ellos. No se han publicado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO. El repositorio no incluye VAE, Qwen, el decodificador causal, tensores de silencio ni un bundle de inferencia preparado: esos activos deben prepararse por separado.
 
 ## Capacidades
 
-- Generación de vídeo condicionada por proxy estructural, con control explícito de cámara, layout de escena y movimiento de objetos.
-- Control multi-granularidad: mapas semánticos, cajas 3D dispersas, máscaras de sujeto, geometría sombreada y cajas con esqueleto.
-- Generación en streaming de larga duración mediante ancla de apariencia fija y ventana de historia acotada.
-- Recorridos 360° continuos y sesiones interactivas sin reinicio del estado visual.
-- Condicionamiento por texto (prompt) combinado con la imagen de referencia y los proxies.
-- Renderizado de proxies de juego reales y de escenas sintéticas.
-- Servicio interactivo vía WebSocket, cliente de ficheros y cliente de navegador (en el repositorio de inferencia).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (es un modelo de renderizado, no un LLM).
-- Capacidades multilingües: limitadas a zh según la model card.
-- Modo thinking, visión general, audio: no disponible.
+- Generación de vídeo condicionada por proxy estructural (video-to-video), con control de trayectoria de cámara, disposición de escena y movimiento de objetos.
+- Control multi-granularidad: acepta mapas semánticos, cajas 3D dispersas, máscaras de sujeto, geometría sombreada y cajas con esqueletos.
+- Streaming causal de horizonte largo: ancla de apariencia fija y ventana de historia acotada permiten sesiones que continúan mientras lleguen frames de proxy.
+- Generación en cuatro pasos causales por chunk (decodificación rápida en el contexto de un DiT de 33B).
+- Condicionamiento por imagen de referencia de apariencia (1344×768 RGB) para mantener identidad y estilo a lo largo de la sesión.
+- Despliegue interactivo: servicio de sesión WebSocket, cliente de fichero (`invoker_render.py`) y cliente de navegador en el repositorio companion.
+- Soporte de prompts de texto en inglés para guiar la apariencia.
+- No se documentan en la información disponible capacidades de tool calling, agentes, audio o visión general (el modelo es específicamente de renderizado de vídeo).
 
 ## Casos de uso
 
-- Previsualización interactiva de entornos 3D: un motor de juego o simulador exporta cajas 3D y máscaras por frame y el modelo sintetiza la apariencia fotorrealista en streaming, permitiendo iterar sobre el layout sin reentrenar.
-- Recorridos arquitectónicos 360°: partiendo de una sola imagen de referencia y una trayectoria de cámara codificada como proxy, se generan tours continuos de interiores o exteriores con apariencia coherente gracias al ancla fija y a la ventana de historia acotada.
-- Prototipado de cinemáticas para videojuegos: se alimenta el esqueleto de personajes y las cajas de props como proxy y se obtiene vídeo renderizado para pitches o storyboards, reduciendo el coste frente a un pipeline de render offline.
-- Simulación para robótica y conducción: el simulador mantiene el estado físico y emite proxies; el modelo genera observaciones visuales realistas para entrenar políticas o validar percepción en condiciones controladas.
-- Edición de vídeo guiada por estructura: sustituir la apariencia de un clip conservando el movimiento original (video-to-video) usando el clip como proxy de máscara o de flujo.
-- Demos interactivas en navegador: el cliente web del repositorio de inferencia permite sesiones en vivo donde el usuario mueve la cámara y el modelo responde en streaming, útil para showcases de producto.
-- Generación de datos sintéticos etiquetados: al conocer el proxy de entrada, las anotaciones (cajas, máscaras, esqueletos) son exactas por construcción, lo que sirve para aumentar datasets de detección o segmentación.
+- Renderizado de mundos simulados: un motor upstream mantiene el estado físico y de escena, y Invoker-Render sintetiza la apariencia fotorrealista frame a frame a partir de los proxies; adecuado porque desacopla simulación y render y permite sesiones de duración ilimitada.
+- Gameplay sintético para entrenamiento de agentes: se generan proxies de partidas (cajas, esqueletos, geometría) y el modelo produce vídeo realista para aumentar datasets de percepción; el control multi-granularidad permite ajustar el nivel de detalle estructural.
+- Previsualización arquitectónica o de producto con cámara controlada: se define la trayectoria de cámara y el layout mediante proxies y se obtiene vídeo con apariencia consistente gracias al ancla de apariencia fija.
+- Producción de vídeo con cámara virtual: órbita 360° de horizonte largo sobre un sujeto, manteniendo identidad mediante la imagen de referencia y la ventana de historia acotada.
+- Prototipado interactivo en navegador: el cliente WebSocket y el cliente de navegador del repositorio companion permiten sesiones en vivo donde el usuario mueve la cámara o los objetos y ve el render actualizarse en streaming.
+- Investigación en world models: sirve como componente de renderizado evaluable dentro de pipelines de Code World Model 2.0, permitiendo experimentar con distintos tipos de proxy y granularidades.
+- Renderizado de vídeo a vídeo con control estructural: partiendo de un vídeo de proxy a 24 FPS (mínimo 39 frames, `17*N+5`), se reestiliza o se sustituye la apariencia manteniendo la estructura original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos en FP32: ~132,5 GB en disco; la carga en VRAM requiere al menos ese orden de magnitud si no se cuantiza, más los activos auxiliares (VAE, codificador de texto Qwen, decodificador causal) que no se incluyen en el repositorio.
-- Configuración de referencia: la configuración `production` del repositorio CodeWorldModel usa una sola máquina con ocho GPUs NVIDIA.
-- GPU recomendadas: no se especifican modelos concretos; por volumen de pesos, el despliegue multi-GPU de clase数据中心 (A100/H100) es el escenario natural.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) sin cuantización agresiva, y no se documentan pesos cuantizados en el repositorio.
-- Opciones de despliegue: el repositorio oficial usa SGLang y SGLang-Omni sobre MiniMax-H3, con servicio WebSocket y cliente de ficheros/navegador; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este modelo.
-- Latencia y throughput: no disponibles. Los 24 FPS son la tasa del eje temporal del vídeo, no la velocidad de inferencia; la generación de referencia usa cuatro pasos causales.
+- VRAM estimada para inferencia: los pesos en FP32 ocupan unos 132,5 GB; no se documentan versiones cuantizadas, por lo que no es posible dar una cifra de VRAM reducida fiable.
+- Configuración de referencia: el perfil `production` por defecto usa ocho GPUs NVIDIA en un solo nodo.
+- GPU recomendadas: no se especifican modelos concretos; por volumen de pesos, se requiere un nodo multi-GPU de clase数据中心 (A100/H100 o superior). No cabe en GPUs de consumo (RTX 4090, 24 GB) en FP32.
+- Despliegue: código companion CodeWorldModel sobre MiniMax-H3, SGLang y SGLang-Omni; servicio WebSocket, cliente de fichero e interfaz de navegador. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El modelo genera en cuatro pasos causales por chunk, pero no se publican cifras de latencia ni de frames por segundo; los 24 FPS son la tasa de la línea temporal del vídeo, no el rendimiento de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / duración | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Invoker-Render 1.0 (inclusionAI) | 33,12 B | ventana de historia acotada, streaming continuo | DiT causal condicionado por proxy, world model | Apache-2.0 + CC BY-NC 4.0 | Hugging Face, pesos + repo GitHub |
-| MiniMax-H3 (base arquitectónica) | no disponible | no disponible | transformer 3D de difusión | no disponible | no disponible en la información proporcionada |
-| Otros modelos video-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de la misma categoría (generación de vídeo condicionada por proxy o world models de vídeo). La comparativa cuantitativa no está disponible.
 
-No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos comparables, por lo que la comparativa cuantitativa no está disponible.
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Invoker-Render 1.0 | 33,12B | no disponible | Apache-2.0 + CC BY-NC 4.0 | DiT causal en streaming, control por proxy |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia mixta: Apache-2.0 y CC BY-NC 4.0; la componente no comercial impide el uso comercial directo sin aclaración adicional del titular.
-- Idioma: la model card declara únicamente zh; el comportamiento con prompts en otros idiomas no está documentado.
-- Repositorio incompleto para producción: faltan VAE, codificador Qwen, decodificador causal y bundle de inferencia; es necesario preparar activos compatibles desde el repositorio CodeWorldModel.
-- Riesgo de confusión de pesos: el LoRA `teacher-live.safetensors` corresponde a un teacher bidireccional distinto y no debe superponerse al DiT causal principal.
-- Restricción de formato de entrada: los frames proxy deben cumplir `17*N+5` y un mínimo de 39 frames; no se documenta comportamiento fuera de esa rejilla.
-- Sin cuantizaciones publicadas: el despliegue exige FP32 y multi-GPU, lo que limita el uso en hardware de consumo.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
-- Riesgo de alucinación visual y deriva de apariencia en secuencias muy largas, mitigado solo parcialmente por el ancla fija y la ventana acotada; no se documentan métricas de estabilidad.
-- Sesgos: no se documenta análisis de sesgos del dataset de entrenamiento ni de la distribución de escenas.
-- Madurez: repositorio con 0 descargas y 0 likes en el momento de la consulta; paper arXiv anunciado pero no publicado.
+- Licencia mixta Apache-2.0 y CC BY-NC 4.0: la componente CC BY-NC 4.0 restringe el uso comercial; es imprescindible revisar los términos antes de desplegar en producción.
+- El repositorio no incluye VAE, Qwen, decodificador causal, tensores de silencio ni bundle de inferencia: requiere preparar activos adicionales y el código companion para funcionar.
+- Los pesos se distribuyen en FP32 sin cuantizar (~132,5 GB), lo que limita el despliegue a hardware multi-GPU de gama alta.
+- El LoRA `teacher-live.safetensors` es un modelo distinto (profesor bidireccional sobre MiniMax-H3) y no debe aplicarse sobre los pesos causales de la raíz.
+- El modelo no mantiene el estado del mundo: depende de un motor upstream que genere los proxies; errores o inconsistencias en los proxies se propagan al vídeo.
+- Requiere un mínimo de 39 frames de proxy (`17*N+5`) para inferencia por fichero, lo que condiciona el diseño del pipeline.
+- No se documentan sesgos, tasas de alucinación ni evaluación de calidad; al ser un modelo generativo de vídeo, existe riesgo de artefactos, inconsistencias temporales y contenido no fiel a la referencia.
+- Idiomas: el prompt de texto está documentado en inglés; la metadata de Hugging Face lista chino, pero no se detalla cobertura multilingüe.
+- No se publican benchmarks ni métricas de calidad objetivas, lo que dificulta la comparación con alternativas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/inclusionAI/invoker-render-1.0
+- arXiv: https://arxiv.org/abs/2611.22925
 - Página del proyecto: https://www.inclusion-ai.org/CodeWorldModel/
-- Repositorio GitHub (código de inferencia): https://github.com/inclusionAI/CodeWorldModel
-- Documentación de inferencia: https://github.com/inclusionAI/CodeWorldModel/blob/main/docs/INFERENCE.md
-- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
-- Paper arXiv: anunciado, no disponible en el momento de la consulta.
+- GitHub (código companion): https://github.com/inclusionAI/CodeWorldModel
+- Licencia (referencia): https://github.com/inclusionAI/CodeWorldModel#acknowledgements-and-license
+- Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
+- CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/

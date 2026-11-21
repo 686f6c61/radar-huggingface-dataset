@@ -2,93 +2,101 @@
 
 ## Resumen
 
-Amethyst 1.5 Mini es un modelo de chat generalista desarrollado por VertexAGI, un proyecto de investigación independiente, como parte de la familia Amethyst. Se trata de un fine-tuning mediante LoRA sobre el modelo base Google Gemma 3 4B IT, con el objetivo de añadir una capacidad fiable de tool-calling para búsqueda web. A diferencia de su predecesor Amethyst 1 Mini, este modelo incorpora un conjunto de datos de entrenamiento cinco veces mayor (4.987 ejemplos) y una categoría específica de ejemplos negativos para enseñar cuándo no debe invocar la búsqueda.
+Amethyst 1.5 Mini es un modelo de chat de propósito general afinado a partir de google/gemma-3-4b-it, desarrollado por VertexAGI como proyecto de investigación independiente. Su objetivo es resolver un problema concreto de los modelos pequeños: la fiabilidad en el uso de herramientas. Mientras que el modelo base invoca un buscador web de forma errática (busca cosas que ya sabe y no busca información realmente actual), Amethyst 1.5 Mini aprende explícitamente cuándo llamar a la herramienta, cuándo no hacerlo, cómo descomponer preguntas complejas en varias consultas y cómo refinar una búsqueda tras obtener resultados pobres.
 
-El modelo resuelve un problema habitual en los asistentes conversacionales pequeños: saber distinguir entre preguntas que pueden responderse con conocimiento interno y aquellas que requieren información actualizada o externa. Amethyst 1.5 Mini aprende a descomponer preguntas complejas en varias consultas, refinar búsquedas tras resultados pobres y sintetizar respuestas con citas a partir de fragmentos recuperados. Su relevancia radica en que ofrece esta capacidad en un formato ligero (cuantizado a 4-bit) ejecutable en hardware de consumo, tanto Apple Silicon como GPUs convencionales.
+Técnicamente es un transformer denso decoder-only de 4B parámetros (4.551.515.648 según los pesos en safetensors), derivado del checkpoint cuantizado QAT de 4 bits de Gemma 3 4B IT y entrenado mediante LoRA con MLX sobre Apple Silicon. La ventana de contexto heredada del modelo base es de 128.000 tokens, aunque el entrenamiento se realizó con secuencias de 2.048 tokens.
 
-## Especificaciones tecnicas
+Su relevancia actual reside en la demostración de que un ajuste fino pequeño y barato (4.987 ejemplos sintéticos, LoRA de rango 8, 3.250 iteraciones en una máquina de 16 GB) puede corregir un comportamiento de tool calling deficiente sin degradar la calidad conversacional general. El repositorio distribuye pesos en 4 bits para MLX y GGUF Q4_K_M, lo que lo hace desplegable en hardware de consumo.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only (Gemma 3) |
-| Parametros totales | 711.484.928 (según safetensors; el modelo base Gemma 3 4B IT tiene ~4.000 millones) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (el modelo base soporta hasta 128K, pero el fine-tune se entrenó con secuencias de 2.048 tokens) |
-| Tipos de cuantizacion | MLX 4-bit (QAT), GGUF Q4_K_M |
-| Idiomas soportados | Inglés |
+| Arquitectura | Gemma 3, transformer denso decoder-only |
+| Parámetros totales | 4.551.515.648 |
+| Parámetros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 128.000 tokens (heredada del modelo base; el entrenamiento usó 2.048) |
+| Tipos de cuantización | 4-bit MLX (group size 64), GGUF Q4_K_M |
+| Idiomas soportados | inglés |
 | Licencia | Gemma Terms of Use |
-| Formato de pesos | safetensors (MLX), GGUF |
+| Formato de pesos | safetensors (MLX, 4-bit) y GGUF (Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-Amethyst 1.5 Mini parte del checkpoint `mlx-community/gemma-3-4b-it-qat-4bit`, una versión cuantizada a 4-bit del modelo Gemma 3 4B IT. Sobre esta base se aplicó un fine-tuning con LoRA de rango 8, escala 20.0 y dropout 0.0, afectando a 16 capas. El entrenamiento se realizó con el framework MLX sobre Apple Silicon, usando el optimizador Adam con tasa de aprendizaje constante de 1e-5, batch size 2 (reducido desde 4 para estabilizar el uso de memoria), secuencias de 2.048 tokens y 3.250 iteraciones con validación cada 200 pasos. La pérdida final de validación fue de 0.652.
+El modelo parte de mlx-community/gemma-3-4b-it-qat-4bit, un checkpoint de Gemma 3 4B IT con cuantización consciente del entrenamiento, y aplica un ajuste supervisado mediante LoRA con rango 8, escala 20.0, dropout 0.0 y 16 capas adaptadas. El entrenamiento se ejecutó con MLX y mlx-lm sobre Apple Silicon, con optimizador Adam, tasa de aprendizaje constante de 1e-5, longitud de secuencia de 2.048 tokens, gradient checkpointing activado y un tamaño de lote de 2 (reducido desde 4 al superar los 13 GB de memoria pico en una máquina de 16 GB). Se completaron 3.250 iteraciones con validación cada 200 pasos, alcanzando una pérdida de validación final de 0.652 (frente a 0.807 en el punto de reanudación con el lote reducido).
 
-El conjunto de datos de entrenamiento consta de 4.987 ejemplos (4.589 de entrenamiento y 398 de validación) generados sintéticamente mediante destilación de conocimiento a partir de los modelos Nemotron 3 Super 120B y Nemotron 3 Ultra 550B de NVIDIA, a través de la API NIM. Las categorías incluyen chat general (3.264 ejemplos), seguimiento multi-turno (438), resumen con citas (374), búsqueda de una sola consulta (305), refinamiento tras resultados débiles (183), descomposición multi-consulta (149) y la categoría crítica de no-búsqueda (274 ejemplos negativos) que enseña al modelo a no invocar la herramienta cuando no es necesaria.
+El dataset consta de 4.987 ejemplos sintéticos (4.589 de entrenamiento y 398 de validación) generados por destilación de conocimiento a partir de nvidia/nemotron-3-super-120b-a12b y nvidia/nemotron-3-ultra-550b-a55b vía la API NVIDIA NIM, cinco veces más datos que la versión 1 Mini. La composición es deliberadamente desequilibrada hacia el chat general (3.264 ejemplos), con categorías específicas para seguimiento multi-turno (438), resumen con citas de fragmentos recuperados (374), búsqueda de consulta única (305), refinamiento tras resultado pobre (183), descomposición en múltiples consultas (149) y una clase negativa de 274 ejemplos etiquetados como "no buscar". Esta última es la innovación metodológica clave: sin ejemplos negativos, un modelo con tool calling tiende a invocar la búsqueda incluso para preguntas triviales.
 
 ## Capacidades
 
-- Generación de texto conversacional: explicaciones, razonamiento, código, planificación, escritura creativa, extracción de información, lluvia de ideas, matemáticas, análisis de sentimiento y traducción (al inglés).
-- Tool-calling para búsqueda web: el modelo emite llamadas a `web_search` en un formato JSON estructurado dentro de etiquetas `<tool_call>`, y procesa el resultado en un bloque `<tool_result>` para producir una respuesta con citas.
-- Decisión de búsqueda: gracias a la clase negativa de entrenamiento, el modelo sabe cuándo no debe buscar (por ejemplo, preguntas triviales o de conocimiento general).
-- Descomposición de preguntas complejas: divide una pregunta que requiere múltiples fuentes en varias consultas de búsqueda independientes.
-- Refinamiento de consultas: si la primera búsqueda devuelve resultados pobres, el modelo genera una consulta reformulada.
-- Respuestas fundamentadas: sintetiza fragmentos recuperados en una respuesta final con citas explícitas.
+- Generación de texto conversacional: explicación, razonamiento, código, planificación, escritura creativa, extracción de información, lluvia de ideas, matemáticas, análisis de sentimiento y traducción (dentro del ámbito del dataset).
+- Tool calling con un único esquema: emite llamadas en formato `<tool_call>{"name": "web_search", "arguments": {"queries": ["..."]}}</tool_call>` y consume resultados en bloques `<tool_result>`.
+- Decisión de invocación: distingue entre preguntas que requieren búsqueda y preguntas respondibles con conocimiento propio.
+- Descomposición de consultas: divide una pregunta compuesta en varias búsquedas distintas.
+- Refinamiento de consulta: reformula la búsqueda tras obtener resultados débiles.
+- Respuesta fundamentada con citas: sintetiza fragmentos recuperados en una respuesta citada.
+- Conversación multi-turno con turnos elípticos ("¿y el otro?").
+- Capacidades heredadas de Gemma 3 4B IT: ventana de contexto de 128.000 tokens y arquitectura multimodal image-text-to-text en el modelo base (el ajuste se centra en texto y tool use).
+- Idiomas: inglés únicamente.
 
 ## Casos de uso
 
-- Asistente personal con acceso a información actualizada: el modelo puede responder preguntas sobre noticias recientes, precios, eventos o datos en tiempo real, invocando la búsqueda web solo cuando es necesario, lo que reduce alucinaciones y costes de API.
-- Chatbot de atención al cliente: integrado en un sistema de mensajería, el modelo gestiona consultas multi-turno sobre productos, políticas o incidencias, buscando en la documentación interna mediante la herramienta de búsqueda y citando las fuentes.
-- Motor de preguntas y respuestas para documentación técnica: el modelo recupera fragmentos de manuales o wikis y genera respuestas concisas con referencias, útil para equipos de soporte o desarrolladores.
-- Herramienta de investigación de mercado: el usuario formula preguntas complejas sobre tendencias, competidores o datos estadísticos; el modelo descompone la consulta en varias búsquedas y sintetiza un informe con citas.
-- Agente de generación de informes automatizados: en combinación con un pipeline de scraping, el modelo consulta múltiples fuentes, extrae datos relevantes y redacta resúmenes estructurados con enlaces.
-- Prototipo de agente RAG (retrieval-augmented generation) educativo: el modelo se usa en entornos de aprendizaje para demostrar cómo un LLM pequeño puede combinar conocimiento interno con búsqueda externa, sin necesidad de infraestructura de alto coste.
+- Asistente de búsqueda web con citas: el modelo decide si buscar, lanza una o varias consultas y resume los fragmentos recuperados en una respuesta con referencias. Es su caso de uso principal y el que motivó el ajuste.
+- Chatbot de atención al cliente con backend de conocimiento: para consultas que requieren datos actuales (estado de pedido, disponibilidad) invoca la herramienta; para preguntas de FAQ responde sin llamada, reduciendo latencia y coste de API.
+- Enrutador de consultas en pipelines RAG: actúa como clasificador previo que decide si una pregunta necesita recuperación externa o puede resolverse con el contexto ya inyectado.
+- Agente de investigación ligero: descompone preguntas comparativas ("¿qué diferencia hay entre X e Y en precio y soporte?") en búsquedas separadas y consolida los resultados.
+- Despliegue local en portátiles Apple Silicon: los pesos MLX de 4 bits (2,56 GB) permiten ejecutar el modelo con mlx-lm en un Mac con 16 GB de memoria unificada, útil para prototipos sin GPU dedicada.
+- Experimentación en destilación a pequeña escala: sirve como referencia reproducible de cómo un LoRA de rango 8 y ~5.000 ejemplos sintéticos corrigen un comportamiento específico sobre un modelo de 4B.
+- Integración en asistentes de escritorio vía Ollama o LM Studio: el GGUF Q4_K_M (2,87 GB) se carga en runtimes de llama.cpp para asistentes con acceso a búsqueda.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una evaluación manual con un conjunto de 26 prompts creados a mano, sin solapamiento con los datos de entrenamiento. Los resultados comparan el modelo base Gemma 3 4B IT con Amethyst 1.5 Mini:
+Evaluación sobre un conjunto retenido de 26 prompts escritos a mano, sin solapamiento con el banco de escenarios de entrenamiento:
 
-| Metrica | Gemma 3 4B IT (base) | Amethyst 1.5 Mini |
+| Métrica | Gemma 3 4B IT (base) | Amethyst 1.5 Mini |
 |---|---|---|
-| Correctitud de tool-calling (16 prompts: 8 deben llamar, 8 no deben) | 5/16 (31%) | 16/16 (100%) |
-| Calidad de chat general (10 prompts, evaluador ciego por pares) | 2 victorias | 2 victorias, 6 empates |
+| Corrección de tool call (16 prompts: 8 con llamada esperada, 8 sin llamada) | 5/16 (31%) | 16/16 (100%) |
+| Calidad de chat general (10 prompts, juez ciego por pares) | 2 victorias | 2 victorias, 6 empates |
 
-El modelo base mostraba un comportamiento inconsistente: buscaba información que ya conocía (por ejemplo, el punto de ebullición del agua) y fallaba en buscar información genuinamente actual (por ejemplo, novedades de iPhone). Amethyst 1.5 Mini acierta en todos los casos de prueba, manteniendo la calidad conversacional sin regresión significativa.
-
-No se han publicado resultados en benchmarks estandarizados como MMLU, HumanEval o GSM8K en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras anteriores proceden de una evaluación propia del autor con 26 prompts, por lo que la muestra es reducida y debe interpretarse como indicativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2-3 GB con cuantización Q4_K_M o MLX 4-bit, dado que el modelo base tiene 4B parámetros y la cuantización reduce el peso a ~2 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060, o superiores). También funciona en Apple Silicon con MLX.
-- Compatible con GPUs de consumo: sí, tanto en PC como en portátiles con suficiente memoria unificada.
-- Opciones de despliegue: MLX para Apple Silicon (carga directa con `mlx_lm`), llama.cpp para GGUF (compatible con Ollama, LM Studio y otros runtimes), y Transformers con cuantización.
-- Latencia y throughput estimados: no disponibles en la documentación, pero al ser un modelo de 4B cuantizado, es esperable una generación de decenas de tokens por segundo en GPUs modernas de consumo.
+- VRAM/memoria para MLX 4-bit: aproximadamente 2,56 GB de pesos; con overhead de runtime, unos 3,5-4 GB de memoria unificada.
+- VRAM/memoria para GGUF Q4_K_M: aproximadamente 2,87 GB de pesos; con contexto largo, la caché KV incrementa el consumo de forma proporcional a la longitud de contexto.
+- GPU recomendadas: cualquier GPU con 6 GB o más de VRAM para cuantización 4-bit; RTX 3060/4060 en adelante. Para contexto completo de 128.000 tokens se requiere bastante más memoria por la caché KV.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y en Mac con 16 GB de memoria unificada (el autor entrenó en una máquina de 16 GB).
+- Opciones de despliegue: mlx-lm (Apple Silicon), llama.cpp, Ollama, LM Studio y transformers con los pesos safetensors. El tag text-generation-inference indica compatibilidad con TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tool-calling | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Tool calling | Licencia | Formatos |
 |---|---|---|---|---|---|
-| Amethyst 1.5 Mini | 4B (base) / 711M (safetensors) | No disponible | Sí (web_search) | Gemma Terms of Use | MLX 4-bit, GGUF Q4_K_M |
-| Gemma 3 4B IT (base) | 4B | 128K | No entrenado para tool-calling | Gemma Terms of Use | Transformers, GGUF, MLX |
-| Amethyst 1 Mini | 4B (base) | No disponible | No (solo chat) | Gemma Terms of Use | MLX, GGUF |
+| Amethyst 1.5 Mini | 4,55B (denso) | 128.000 (heredado) | Especializado en `web_search` con clase negativa | Gemma Terms of Use | safetensors MLX 4-bit, GGUF Q4_K_M |
+| google/gemma-3-4b-it | 4B (denso) | 128.000 | Tool calling genérico, invocación inconsistente según la evaluación del autor | Gemma Terms of Use | safetensors, GGUF (comunidad) |
+| Amethyst 1 Mini | 4B (derivado de Gemma 3 4B IT) | no disponible | No entrenado para tool calling (foco en chat) | Gemma Terms of Use | no disponible |
 
-Amethyst 1.5 Mini se diferencia del base por su entrenamiento específico en tool-calling, y de su predecesor por la adición de la capacidad de búsqueda y un dataset más amplio. No se dispone de datos comparativos con otros modelos de tamaño similar (por ejemplo, Qwen 2.5 3B o Llama 3.2 3B) en la información proporcionada.
+La comparación con alternativas de otros fabricantes en el rango de 3-4B con tool calling especializado no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dataset de entrenamiento moderado (~5.000 ejemplos) generado sintéticamente; el comportamiento puede ser inconsistente fuera de las categorías representadas.
-- Solo soporta inglés; no se ha evaluado su rendimiento en otros idiomas.
-- El tool-calling se entrenó únicamente con una herramienta (`web_search`) y un esquema fijo; el comportamiento con otros esquemas de herramientas no está probado.
-- Hereda las limitaciones y el corte de conocimiento del modelo base Gemma 3 4B IT.
-- La destilación desde modelos Nemotron se realizó sin revisión humana de todos los ejemplos, por lo que pueden existir artefactos de datos sintéticos.
-- La licencia Gemma Terms of Use impone restricciones de uso comercial; es necesario revisar los términos antes de desplegar en producción.
-- No apto para aplicaciones de alto riesgo, seguridad crítica o uso productivo no supervisado.
+- Dataset de entrenamiento de tamaño moderado (~5.000 ejemplos sintéticos): el comportamiento puede ser inconsistente fuera de las categorías representadas.
+- Hereda las limitaciones y la fecha de corte de conocimiento de Gemma 3 4B IT.
+- Destilado de modelos Nemotron sin revisión humana de cada ejemplo: pueden aparecer artefactos propios de datos sintéticos.
+- Tool calling entrenado contra un único esquema (`web_search` con campo `queries`); el comportamiento con otros esquemas de herramientas no está probado.
+- Solo inglés: no hay soporte multilingüe declarado.
+- La evaluación se basa en 26 prompts del propio autor, sin benchmarks estándar ni validación externa; el 16/16 debe tomarse con cautela.
+- El autor declara explícitamente que no está destinado a uso en producción ni a entornos críticos de seguridad.
+- Licencia Gemma Terms of Use: impone restricciones de uso comercial y obligaciones de atribución que deben revisarse antes de cualquier despliegue comercial.
+- Riesgo de alucinación inherente al modelo base, mitigado parcialmente en el flujo de búsqueda por la exigencia de citar fragmentos recuperados, pero no eliminado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/VertexAGI/amethyst-1.5-mini
-- Modelo anterior Amethyst 1 Mini: https://huggingface.co/VertexAIco/amethyst-1-mini
-- Perfil de VertexAGI en Hugging Face: https://huggingface.co/VertexAIco/models
-- Publicación en X de Vertex AGI: https://x.com/vertexagi
-- Modelo base Gemma 3 4B IT: https://huggingface.co/google/gemma-3-4b-it
-- Checkpoint base cuantizado: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit
+- Modelo base: https://huggingface.co/google/gemma-3-4b-it
+- Checkpoint de ajuste: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit
+- Términos de licencia Gemma: https://ai.google.dev/gemma/terms
+- Framework MLX: https://github.com/ml-explore/mlx
+- Modelo profesor: https://huggingface.co/nvidia/nemotron-3-super-120b-a12b
+- Modelo profesor: https://huggingface.co/nvidia/nemotron-3-ultra-550b-a55b

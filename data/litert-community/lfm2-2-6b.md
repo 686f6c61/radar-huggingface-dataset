@@ -2,128 +2,106 @@
 
 ## Resumen
 
-LFM2-2.6B en formato LiteRT-LM es una conversión cuantizada del modelo LiquidAI/LFM2-2.6B, publicada por el usuario comunitario litert-community para el runtime LiteRT-LM de Google (el sucesor de TFLite para inferencia en dispositivo). El modelo original lo desarrolla Liquid AI y emplea una arquitectura híbrida de 30 capas —22 convolucionales y 8 de atención— con 2.569.272.320 parámetros, orientada a ejecución en el borde (móvil, portátil, edge). Esta ficha cubre específicamente los artefactos `.litertlm` en int8 e int4, no los pesos originales en safetensors.
+LFM2-2.6B en formato LiteRT-LM es una conversión del modelo LiquidAI/LFM2-2.6B realizada por la comunidad litert-community, empaquetada en ficheros `.litertlm` para ejecutarse con el runtime LiteRT-LM de Google en dispositivos de borde (móviles Android, Mac con GPU, etc.). El modelo original, desarrollado por Liquid AI, es un transformer híbrido de 2.569.272.320 parámetros distribuidos en 30 capas (22 de convolución y 8 de atención), pensado para tareas agénticas, extracción de datos, RAG y conversación multi-turno en entornos con recursos limitados.
 
-La relevancia de esta conversión es práctica: permite ejecutar un modelo de ~2,6 B en GPU y CPU de teléfonos Android y Mac sin infraestructura de servidor, con una pérdida de precisión mínima respecto a la referencia bf16 en las pruebas publicadas. Según Liquid AI, LFM2-2.6B es el único modelo de la familia LFM2 con razonamiento híbrido dinámico, que emite una traza entre `<think>` y `</think>` ante indicaciones complejas o multilingües.
+La relevancia de esta conversión radica en que permite ejecutar un modelo de 2,6B parámetros en hardware de consumo: el fichero int4 ocupa 1,53 GB y alcanza 31,1 tokens por segundo en la GPU de un Galaxy S26 con LiteRT-LM 0.19.1, frente a los 26,8 tok/s del fichero int4 estándar. Liquid AI indica un contexto nativo de 32.768 tokens, aunque los ficheros de esta conversión limitan el contexto a 4096 tokens.
 
-El repo tiene un tamaño de 4,3 GB y contiene dos ficheros: uno int8 de 2,72 GB y uno int4 de 1,53 GB (un 43,8 % más pequeño). El contexto declarado por Liquid AI es de 32.768 tokens, pero estos ficheros están limitados a 4.096. La licencia es lfm1.0 (personalizada, no estándar), por lo que conviene revisar sus términos antes de cualquier uso comercial.
+El modelo soporta ocho idiomas (inglés, árabe, chino, francés, alemán, japonés, coreano y español) y es el único de la familia LFM2 que emplea razonamiento híbrido dinámico, generando una traza entre `<think>` y `</think>` para prompts complejos o multilingües. La licencia es LFM1.0, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 30 capas, 22 convolucionales + 8 de atención |
-| Parametros totales | 2.569.272.320 (~2,57 B) |
-| Parametros activos | No aplica (arquitectura densa, no MoE) |
-| Longitud de contexto | 4.096 tokens en estos ficheros; Liquid AI declara 32.768 para el modelo original |
-| Tipos de cuantizacion | int8 (dynamic en lineales + embedding int8, convoluciones en float); int4 (blockwise-32 + OCTAV en lineales, lm_head y embedding en int8) |
-| Idiomas soportados | Inglés, árabe, chino, francés, alemán, japonés, coreano y español (según Liquid AI; los metadatos de Hugging Face indican "no disponible") |
-| Licencia | lfm1.0 (licencia personalizada "other") |
-| Formato de pesos | `.litertlm` (LiteRT-LM); no incluye safetensors ni GGUF |
-| Tamano de los ficheros | int8: 2,72 GB (sección de pesos de 2.722.843.088 bytes, 2,54 GiB); int4: 1,53 GB |
-| Runtime | LiteRT-LM (probado con litert-lm 0.18.0 en Mac y binario Android precompilado) |
-| Modelo base | LiquidAI/LFM2-2.6B (relación: quantized) |
+| Arquitectura | Transformer híbrido: 30 capas (22 de convolución + 8 de atención) |
+| Parametros totales | 2.569.272.320 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens según Liquid AI; 4096 tokens en estos ficheros |
+| Tipos de cuantizacion | int8 (dynamic en lineales + int8 embedding, convs en float), int4 (blockwise-32 + OCTAV en lineales, int8 lm_head + embedding) |
+| Idiomas soportados | Inglés, árabe, chino, francés, alemán, japonés, coreano y español |
+| Licencia | LFM1.0 (license_name: lfm1.0) |
+| Formato de pesos | `.litertlm` (LiteRT-LM) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer híbrido: de las 30 capas, 22 son convolucionales y 8 emplean atención, una combinación que Liquid AI usa para reducir el coste de cómputo y memoria en inferencia respecto a un transformer de atención completa equivalente. Esta ficha no describe el entrenamiento del modelo original (número de tokens, composición del dataset, uso de RLHF/DPO), ya que esa información no está incluida en la documentación proporcionada; para ello hay que consultar la model card de LiquidAI/LFM2-2.6B. La innovation destacable del modelo es el razonamiento híbrido dinámico: genera una traza interna entre `<think>` y `</think>` solo cuando la indicación lo requiere.
+El modelo base es un transformer híbrido que combina 22 capas de convolución con 8 capas de atención, una elección que reduce el coste computacional frente a un transformer puramente atencional y facilita la inferencia en dispositivos de borde. La conversión a LiteRT-LM aplica recetas de cuantización específicas: el fichero int8 usa cuantización dinámica int8 en las capas lineales con embedding int8 y convoluciones en float; el fichero int4 emplea cuantización blockwise de tamaño 32 más OCTAV en las lineales, con lm_head y embedding en int8.
 
-La conversión a LiteRT-LM mantiene las convoluciones en float en el fichero int8 y aplica cuantización blockwise-32 con OCTAV en los lineales del fichero int4, con lm_head y embedding en int8. En las pruebas de precisión publicadas, las versiones cuantizadas quedan dentro de dos ítems de la referencia bf16, lo que indica una degradación muy contenida. El chat template es idéntico byte a byte al de LiteRT-LM (`models/lfm2/chat_template.jinja`, commit 86a7e6d0), con tokens de parada `<|im_end|>` y `<|endoftext|>` y token de inicio `<|startoftext|>`. La traza de razonamiento se enruta a un canal `thought` que la CLI imprime entre `[thought]` y `[/thought]`.
+No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. La model card de la conversión tampoco documenta innovaciones de decodificación especulativa ni atención lineal más allá de la arquitectura híbrida conv/attention. Sí se documenta el uso de razonamiento híbrido dinámico: el modelo genera una traza de pensamiento entre `<think>` y `</think>` cuando detecta prompts complejos o multilingües.
+
+La conversión se realizó con litert-torch y se validó en LiteRT-LM 0.19.0 a 0.19.2, además de versiones nightly 0.20.0.dev. Los pesos, la plantilla de chat y el tokenizador son idénticos entre las versiones actuales de los ficheros int4 e int8.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en ocho idiomas (inglés, árabe, chino, francés, alemán, japonés, coreano y español).
-- Razonamiento paso a paso para problemas matemáticos: en GSM8K (n=100) con indicación de razonamiento por pasos, el fichero int8 obtiene 89 y el int4, 87.
-- Seguimiento de instrucciones verificables: en IFEval-lite (n=120, prompt-level strict) el int8 obtiene 85 y el int4, 87.
-- Razonamiento híbrido dinámico con traza entre `<think>` y `</think>` para indicaciones complejas o multilingües; en las pruebas apareció en 1 de 120 indicaciones de IFEval-lite y de forma inesperada ante "What is the capital of France?".
-- Tool calling / function calling declarado (tipo de modelo `lfm2`): ambos ficheros devolvieron de forma parseada la llamada `get_weather` (información truncada en la model card).
-- Extracción de datos estructurados: el ejemplo oficial extrae fechas de un texto ("The meeting moved from May 3 to May 17.").
-- Uso orientado a agentes, RAG y escritura creativa, según las recomendaciones de Liquid AI.
-- Ejecución en dispositivo con delegación completa de las 12 firmas del grafo en GPU (medido en tres GPUs).
+- Generación de texto y conversación multi-turno, con soporte de contexto de hasta 4096 tokens en estos ficheros.
+- Razonamiento híbrido dinámico: traza de pensamiento entre `<think>` y `</think>` para prompts complejos o multilingües.
+- Capacidades multilingües en inglés, árabe, chino, francés, alemán, japonés, coreano y español.
+- Tareas agénticas y flujos de varios pasos, según las recomendaciones de Liquid AI.
+- Extracción de datos estructurados y RAG (retrieval-augmented generation).
+- Escritura creativa y generación de contenido.
+- No está recomendado por Liquid AI para tareas intensivas en conocimiento ni para programación.
+- No se documenta soporte de tool calling ni function calling en la información disponible.
+- No se documenta soporte de visión ni audio en la información disponible.
+- Inferencia en dispositivo: GPU y CPU en Android (Galaxy S26, Pixel 8a) y GPU en Mac M4 Max.
 
 ## Casos de uso
 
-- Asistente conversacional en el móvil: el modelo cabe en un teléfono Android de gama alta (Pixel 8a o Galaxy S26) y responde a preguntas cortas en CPU o GPU, lo que permite asistentes locales sin enviar datos a la nube.
-- Extracción de datos estructurados en formularios: dado un texto libre, extrae campos como fechas o nombres; es el caso de uso documentado en la propia model card y encaja con sus 4.096 tokens de contexto.
-- RAG en aplicaciones de escritorio: con un contexto de 4.096 tokens se pueden insertar unos pocos fragmentos recuperados y generar respuestas ancladas en ellos; Liquid AI lo recomienda explícitamente para RAG.
-- Resolución de problemas matemáticos escolares: con indicación de razonamiento por pasos obtiene 87-89 sobre 100 en GSM8K, útil para tutores educativos que muestren el procedimiento.
-- Agentes con tool calling en apps Android: el modelo declara llamadas a funciones parseables, lo que permite encadenar acciones (consultar clima, mover eventos de calendario) en un bucle multi-paso local.
-- Generación de texto creativo y redacción multilingüe: cubre ocho idiomas y está pensado para conversación y escritura creativa, no para conocimiento factual intensivo.
-- Clasificación y etiquetado de instrucciones verificables en pipelines de datos: sus buenos resultados en IFEval-lite (85-87) permiten usarlo como filtro de calidad de instrucciones en proceso por lotes.
-- Prototipado de aplicaciones edge con la Google AI Edge Gallery: se puede probar en Android e iOS sin escribir código, para evaluar viabilidad antes de integrar.
+- Asistente conversacional en móvil: el modelo puede gestionar conversaciones multi-turno con hasta 4096 tokens de contexto y ejecutarse en la GPU de un Galaxy S26 a 31,1 tok/s, lo que permite respuestas fluidas sin conexión a servidores externos.
+- Extracción de datos en el dispositivo: Liquid AI recomienda LFM2 para data extraction; con 1,53 GB en int4, el modelo cabe en la memoria de un teléfono de gama alta y puede procesar formularios o documentos localmente sin enviar datos a la nube.
+- RAG local en aplicaciones de borde: con 4096 tokens de contexto, el modelo puede recibir fragmentos recuperados de un índice local y generar respuestas fundamentadas, útil en asistentes de documentación offline.
+- Generación de contenido creativo en aplicaciones móviles: escritura de borradores, resúmenes y textos multilingües (ocho idiomas) directamente en el dispositivo, con la traza de razonamiento para prompts complejos.
+- Prototipado rápido en Mac: el fichero int8 en CPU tarda 9,10 segundos en un prefill de 1024 tokens más 256 tokens decodificados en un M4 Max, lo que permite iterar en desarrollo sin infraestructura GPU dedicada.
+- Despliegue en dispositivos Android de gama media: el Pixel 8a ejecuta el fichero int4 en GPU en 22,11 segundos para la misma carga (prefill 1024 + 256 decodificados), viable para aplicaciones de productividad personal.
+- Filtrado y clasificación de texto en el borde: el modelo puede clasificar y resumir textos localmente en aplicaciones de correo o mensajería, reduciendo la latencia y preservando la privacidad.
 
 ## Benchmarks y rendimiento
 
-Precisión (greedy, hasta 2048 tokens de salida; las puntuaciones solo son comparables dentro de esta tabla, no con las publicadas por Liquid AI, cuyo GSM8K es 82,41 con otra configuración):
+La model card reporta resultados en GSM8K (n=100) e IFEval-lite (n=120): los ficheros int8 e int4 quedan dentro de dos ítems del modelo bf16, aunque no se proporcionan los valores absolutos. En la comprobación de 8 preguntas, el fichero `_v0190` obtuvo 7/8 en GPU y CPU en un Mac M4 Max (falló la pregunta de rima), mientras que el int4 estándar obtuvo 7/8 en GPU y 8/8 en CPU; en la GPU del Galaxy S26, el `_v0190` obtuvo 7/8 con las mismas respuestas que el int4 estándar.
 
-| Configuracion | GSM8K (n=100) | IFEval-lite (n=120) |
-|---|---|---|
-| bf16 de referencia (transformers, MPS) | 88 | 85 |
-| int8, litert-lm | 89 | 85 |
-| int4, litert-lm | 87 | 87 |
+Tiempos para un prefill de 1024 tokens más 256 tokens decodificados con contexto 2048 (segundos):
 
-Comprobación de corrección (8 preguntas, temperatura 0, un proceso por pregunta en Mac M4 Max): int8 7/8 en CPU y en GPU; int4 8/8 en CPU y 7/8 en GPU; bf16 con transformers 7/8. En ambos teléfonos, los dos ficheros respondieron correctamente a "What is the capital of France? Answer in one sentence." en GPU y CPU.
-
-Rendimiento (segundos para un prefill de 1024 tokens más 256 tokens decodificados, contexto 2048):
-
-| Configuracion | Mac M4 Max | Galaxy S26 | Pixel 8a |
+| Configuración | Mac M4 Max | Galaxy S26 | Pixel 8a |
 |---|---|---|---|
 | int4 GPU | 1,98 | 10,70 | 22,11 |
 | int8 GPU | 2,45 | 13,47 | 25,07 |
 | int8 CPU | 9,10 | 18,17 | 50,17 |
 | int4 CPU | 10,75 | 23,54 | 68,48 |
 
-El int4 es más rápido en toda GPU y el int8 en toda CPU. No hay mediciones en iOS.
+Throughput de decodificación en Galaxy S26 GPU con LiteRT-LM 0.19.1: 31,1 tok/s para `LFM2-2.6B_int4_gpu_composite_v0190.litertlm` frente a 26,8 tok/s para `LFM2-2.6B_int4.litertlm`. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño de pesos: 2,72 GB en int8 y 1,53 GB en int4. La sección de pesos del int8 ocupa exactamente 2.722.843.088 bytes (2,54 GiB).
-- Caché de pesos compilados (si no se usa `--cache no`): 2,58 GB para int8 y 1,51 GB para int4 en CPU, que se escribe junto al modelo.
-- VRAM y RAM totales: no se especifican cifras cerradas en la información disponible; como referencia práctica, hay que sumar los pesos más el estado del runtime y la caché KV para 4.096 tokens de contexto.
-- GPU validadas: Apple M4 Max, Galaxy S26 y Pixel 8a (las 12 firmas del grafo se delegaron por completo en las tres).
-- GPU de escritorio recomendadas: no disponible (no se han publicado pruebas con A100, H100 o RTX 4090).
-- Viabilidad en GPU de consumo: el fichero int4 de 1,53 GB cabe con holgura en cualquier GPU consumer moderna; el int8 de 2,72 GB también, siempre que haya al menos 4 GB libres.
-- Viabilidad en móvil: ambos ficheros se ejecutan en Pixel 8a y Galaxy S26; el int4 es notablemente más rápido (22,11 s frente a 25,07 s en GPU en Pixel 8a).
-- iOS: no medido. El int8 necesita 2,54 GiB solo en pesos y la model card de LFM2.5-2.6B indica que un fichero int8 de 2,87 GB solo corrió en un iPhone 17 Pro con los entitlements de direccionamiento virtual extendido y memoria incrementada.
-- Opciones de despliegue: CLI `litert-lm` (`run` y `benchmark`), binario Android precompilado y Google AI Edge Gallery en Android e iOS. No hay soporte documentado en esta ficha para vLLM, llama.cpp, Ollama o TGI, dado que el formato es propietario de LiteRT-LM.
-- Muestreo por defecto: temperatura 0,1, top-k 50, top-p 1,0. Liquid AI recomienda temperatura 0,3, min_p 0,15 y repetition_penalty 1,05, pero el bundle no incorpora min_p ni penalización por repetición.
-- Latencia: los tiempos de la tabla anterior son la referencia principal; no se publican cifras de tokens por segundo.
+- VRAM/memoria: el fichero int4 ocupa 1,53 GB y el int8 2,72 GB. La sección de pesos del int8 es de 2.569.011.200 bytes (2,39 GiB).
+- GPU recomendadas: GPU de Galaxy S26 (31,1 tok/s en decodificación), GPU de Mac M4 Max (1,98 s para prefill 1024 + 256 decodificados en int4), GPU de Pixel 8a (22,11 s en int4).
+- Cabe en GPU de consumo: sí, en móviles de gama alta y en Mac con chip M4 Max. No se ha medido en iOS; la model card de LFM2.5-2.6B indica que un fichero int8 de 2,87 GB solo funciona en iPhone 17 Pro con entitlements de direccionamiento virtual extendido y memoria incrementada.
+- Opciones de despliegue: runtime LiteRT-LM (versiones 0.19.0 a 0.19.2 para GPU; builds con LiteRT #11565 y litert-lm-nightly 0.20.0.dev20261112 para CPU y GPU), binario Android precompilado, litert-lm desde PyPI en Mac.
+- Latencia y throughput: ver tabla de benchmarks. El int4 es más rápido en todas las GPU probadas y el int8 en todas las CPU.
+- En LiteRT-LM 0.17.1 el fichero int8 respondió a "What is the capital of France?" como si no se hubiera hecho la pregunta (una ejecución en CPU); el int4 no se probó en esa versión.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/LFM2-2.6B (int8) | 2,57 B | 4.096 (32.768 en el original) | `.litertlm` | lfm1.0 | Repo de 2,72 GB + pesos; 4 descargas |
-| litert-community/LFM2-2.6B (int4) | 2,57 B | 4.096 (32.768 en el original) | `.litertlm` | lfm1.0 | Repo de 1,53 GB; 4 descargas |
-| LiquidAI/LFM2-2.6B (bf16) | 2,57 B | 32.768 | safetensors | lfm1.0 | Modelo original de Liquid AI |
-| litert-community/LFM2.5-2.6B (int8) | No disponible | No disponible | `.litertlm` | No disponible | Fichero int8 con sección de pesos de 2,87 GB; probado en iPhone 17 Pro con entitlements |
+| LFM2-2.6B (LiteRT-LM) | 2.569.272.320 | 32.768 (4096 en estos ficheros) | LFM1.0 | `.litertlm` | Hugging Face, litert-community |
+| LiquidAI/LFM2-2.6B | 2.569.272.320 | 32.768 | LFM1.0 | safetensors (no confirmado en la información) | Hugging Face, LiquidAI |
+| LFM2.5-2.6B (LiteRT-LM) | no disponible | no disponible | no disponible | `.litertlm` | Hugging Face, litert-community |
 
-No se dispone de información en la documentación proporcionada sobre alternativas equivalentes de otros fabricantes (por ejemplo, modelos de 2-3 B para edge de otras familias), por lo que la comparativa se limita a variantes del mismo modelo.
+No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Liquid AI indica explícitamente que LFM2 no está pensado para tareas intensivas en conocimiento ni para programación, y recomienda ajustarlo con fine-tuning a casos de uso concretos.
-- Riesgo de alucinación inherente a un modelo de 2,57 B: no debe usarse como fuente de verdad factual sin verificación.
-- El contexto queda reducido a 4.096 tokens en estos ficheros, frente a los 32.768 del modelo original; esto limita RAG con muchos fragmentos y conversaciones largas.
-- La traza de razonamiento puede aparecer de forma inesperada (por ejemplo, ante una pregunta trivial como la capital de Francia) y `--thinking-budget 0` o `32` no la suprimieron en la prueba documentada; en GPU la salida del int8 fue idéntica a la del run sin flag.
-- El sampler del bundle carece de min_p y de penalización por repetición, lo que impide reproducir la configuración recomendada por Liquid AI sin herramientas externas.
-- La licencia lfm1.0 es personalizada ("other"): hay que revisar el enlace de licencia antes de cualquier uso comercial, y no se detallan aquí sus restricciones.
-- El fichero int8 falló en litert-lm 0.17.1 (respondía como si no hubiera pregunta); se requiere 0.18.0 o superior.
-- No hay mediciones en iOS, y el int8 podría no caber en iPhone sin entitlements especiales.
-- El repositorio tiene 4 descargas y 0 likes: validación comunitaria mínima.
-- La conversión es de un usuario comunitario (litert-community), no de Liquid AI, por lo que la garantía de calidad recae en las pruebas publicadas en la model card.
-- Las fechas de creación y actualización del repositorio son de octubre de 2026, posteriores a la fecha de redacción habitual; conviene verificar su vigencia.
+- Liquid AI no recomienda el modelo para tareas intensivas en conocimiento ni para programación; está orientado a tareas agénticas, extracción de datos, RAG, escritura creativa y conversación multi-turno.
+- El contexto en estos ficheros está limitado a 4096 tokens, frente a los 32.768 del modelo original, lo que reduce su utilidad en documentos largos.
+- Riesgo de alucinación inherente a modelos de 2,6B parámetros; no se han publicado evaluaciones de factualidad.
+- No se documentan sesgos conocidos en la información disponible.
+- La licencia LFM1.0 condiciona el uso comercial; es necesario revisar los términos en el enlace de licencia antes de desplegar en producción.
+- El fichero `_v0190` falla la pregunta de rima en Mac M4 Max (7/8) y es rechazado en GPU por builds con LiteRT #11565.
+- En LiteRT-LM 0.17.1 el fichero int8 mostró un fallo de respuesta en la pregunta sobre la capital de Francia.
+- No se ha medido en iOS ni en teléfonos distintos del Galaxy S26 y el Pixel 8a.
+- La compatibilidad está atada a versiones concretas del runtime LiteRT-LM (0.19.0 a 0.19.2 para el fichero `_v0190` en GPU).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/LFM2-2.6B
+- Hugging Face: https://huggingface.co/litert-community/LFM2-2.6B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-2.6B
-- Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2-2.6B/blob/main/LICENSE
+- Licencia: https://huggingface.co/LiquidAI/LFM2-2.6B/blob/main/LICENSE
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Chat template de referencia: https://github.com/google-ai-edge/LiteRT-LM/blob/86a7e6d098c3a6578208fc8538228fa704ca2e8b/models/lfm2/chat_template.jinja
-- Guía de GPU en Android: https://github.com/john-rocky/hf-to-litertlm/blob/main/docs/android-gpu.md
-- Script de verificación de calidad: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/verify_quality.py
-- Repositorio de conversión (referenciado en los enlaces anteriores): https://github.com/john-rocky/hf-to-litertlm
-- Organización litert-community: https://huggingface.co/litert-community
-- LFM2.5-2.6B en LiteRT-LM: https://huggingface.co/litert-community/LFM2.5-2.6B
-- Google AI Edge Gallery: https://huggingface.co/litert-community (sección de la organización que recomienda probar los modelos en la app AI Edge Gallery en Android e iOS)
+- Conversión LFM2.5-2.6B: https://huggingface.co/litert-community/LFM2.5-2.6B

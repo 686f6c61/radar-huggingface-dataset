@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Apriel-Nemotron-15b-Thinker-GGUF",
+  "slug": "mradermacher-apriel-nemotron-15b-thinker-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apriel-Nemotron-15b-Thinker-GGUF",
+  "created_at": "2025-08-31T16:39:55.000Z",
+  "updated_at": "2026-11-21T01:06:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:quantized:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 14974182400,
+  "parameters_human": "14.97B",
+  "storage_bytes": 103191862880,
+  "storage_human": "103.2 GB",
+  "context_length": 65536,
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

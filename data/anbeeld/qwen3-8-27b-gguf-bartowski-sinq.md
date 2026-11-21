@@ -2,98 +2,111 @@
 
 ## Resumen
 
-Anbeeld/Qwen3.8-27B-GGUF-Bartowski-SINQ es una colección de cuantizaciones GGUF del modelo multimodal Qwen3.8-27B (27.323.597.824 parámetros), producidas por el usuario Anbeeld aplicando la técnica SINQ sobre las recetas de cuantización de Bartowski. El modelo base es un transformer denso de Qwen con pipeline image-text-to-text, lo que indica capacidad de entrada de imagen y texto. La licencia del artefacto es Apache 2.0.
+Anbeeld/Qwen3.8-27B-GGUF-Bartowski-SINQ es un conjunto de cuantizaciones GGUF del modelo Qwen/Qwen3.8-27B, un transformer multimodal de tipo image-text-to-text con 27.323.597.824 parametros (27,3 mil millones). Lo desarrolla el usuario Anbeeld aplicando la tecnica SINQ sobre las recetas de cuantizacion de Bartowski, y esta pensado para su uso en BeeLlama.cpp v0.5.0, la unica implementacion que soporta SINQ. El modelo base Qwen3.8-27B es de Alibaba Qwen y se distribuye bajo licencia Apache 2.0.
 
-La relevancia de esta ficha no está en el modelo base (del que la información disponible no detalla arquitectura interna, datos de entrenamiento ni benchmarks de capacidad), sino en el trabajo de cuantización: se ofrecen 17 variantes GGUF desde IQ2_XXS (8,887 GB) hasta Q8_0 (29,122 GB), cada una con métricas KLD medidas contra la referencia BF16 sobre el corpus completo Wikitext-2. Según el autor, cada cuantización SINQ seleccionada presenta menor KLD medio que su equivalente estándar de Bartowski.
+El problema que resuelve esta ficha es el de la perdida de calidad al comprimir un modelo de 27B para que quepa en hardware de consumo. Las cuantizaciones SINQ seleccionadas presentan, en la mayoria de recetas, una KLD media inferior a la de las cuantizaciones estandar equivalentes de Bartowski, lo que se traduce en una distribucion de probabilidad mas cercana a la referencia BF16. El repositorio ocupa 441,4 GB e incluye variantes desde IQ2_XXS (8,887 GB) hasta recetas de 4 bits (en torno a 16 GB), lo que permite desplegar el modelo en GPUs de consumo con 12-24 GB de VRAM segun la cuantizacion elegida.
 
-El punto crítico para el despliegue es que SINQ solo es compatible con BeeLlama.cpp v0.5.0, un fork específico del runtime. Esto condiciona por completo la infraestructura: no se pueden usar estos ficheros con llama.cpp estándar, Ollama, vLLM ni TGI sin conversión o sin ese runtime concreto.
+La relevancia actual reside en que combina un modelo multimodal de 27B con contexto de 64K tokens (segun la metodologia de evaluacion descrita) y un formato GGUF optimizado, lo que facilita su ejecucion local en entornos con recursos limitados sin renunciar a una calidad cercana al modelo original en BF16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (detalle interno del modelo base no disponible); pipeline image-text-to-text |
-| Parametros totales | 27.323.597.824 (27,3 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 65.536 tokens (64K) usados en la evaluación KLD; contexto máximo oficial del modelo base no disponible |
-| Tipos de cuantizacion | IQ2_XXS, IQ2_XS, IQ2_S, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q4_K_L, Q5_K_S, Q5_K_M, Q5_K_L, Q6_K_S, Q6_K, Q6_K_L, Q8_0 (con variantes de ancho y fuerza SINQ) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos del modelo base no disponibles |
+| Parametros totales | 27.323.597.824 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 65.536 tokens (64K) segun la metodologia de evaluacion KLD; contexto maximo oficial del modelo base no disponible |
+| Tipos de cuantizacion | GGUF: IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, IQ3_XXS, Q3_K_S, IQ3_XS, Q2_K_L, Q3_K_M, Q3_K_L, IQ3_M, IQ4_XS, Q4_0, Q4_K_S, Q3_K_XL (entre otras recetas) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (con SINQ aplicado) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no documenta la arquitectura interna del modelo base Qwen3.8-27B más allá de que es un transformer denso de 27,3 mil millones de parámetros con pipeline image-text-to-text. No se detallan número de tokens de entrenamiento, composición del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. Tampoco se especifican innovaciones como decodificación especulativa o atención lineal.
+El modelo base Qwen3.8-27B es un transformer multimodal de tipo image-text-to-text, segun la etiqueta de pipeline del repositorio. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones arquitectonicas internas como atencion lineal o decodificacion especulativa.
 
-Lo que sí está documentado es el proceso de cuantización. Las GGUFs siguen 1:1 las recetas de Bartowski para Qwen3.8-27B, aplicando SINQ durante la cuantización. Cada variante se parametriza con un ancho (width: 16, 32 o 64) y una fuerza (strength: 0,5, 0,75 o 1). La evaluación KLD se realizó sobre el corpus de test completo de Wikitext-2, usando el modelo BF16 como referencia, 297.193 objetivos de siguiente token alineados, contexto de 65.536 tokens, caché K/V en BF16, batch 2048 y microbatch 512.
+La innovacion tecnica de esta ficha no reside en el modelo base, sino en el proceso de cuantizacion: se aplica SINQ (una tecnica de cuantizacion con ruido o sesgo controlado, segun la nomenclatura del autor) sobre las recetas de Bartowski, generando variantes con parametros de ancho (width) y fuerza (strength) especificos. Por ejemplo, IQ2_XXS usa width 16 y strength 1, mientras que IQ2_M usa width 32 y strength 0,5. La evaluacion se realizo con el corpus completo Wikitext-2 test, tomando el modelo BF16 como referencia, sobre 297.193 objetivos de siguiente token alineados, con contexto de 65.536 tokens, cache K/V en BF16, batch 2048 y microbatch 512. El soporte de SINQ requiere BeeLlama.cpp v0.5.0.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (tag `conversational`).
-- Procesamiento de imagen y texto de entrada (pipeline `image-text-to-text`), lo que habilita tareas de visión-lenguaje.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- Uso de imatrix en el proceso de cuantización (tag `imatrix`), orientado a preservar calidad en bits bajos.
-- Capacidades específicas de razonamiento, código, matemáticas, tool calling, agentes o thinking mode del modelo base: no disponibles en la información proporcionada.
+- Generacion de texto conversacional y multimodal image-text-to-text (el pipeline declarado es image-text-to-text).
+- Procesamiento de imagenes junto con texto, segun la modalidad del modelo base.
+- Razonamiento y generacion de codigo: capacidades heredadas del modelo base Qwen3.8-27B, aunque no se detallan en la informacion disponible.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible (los idiomas no estan listados).
+- Modo thinking: no disponible en la informacion proporcionada.
+- Contexto largo: la evaluacion se realiza con 64K tokens, lo que sugiere soporte de ventanas de contexto amplias.
 
 ## Casos de uso
 
-- Despliegue en hardware con VRAM limitada: las variantes IQ2_XXS (8,887 GB) e IQ2_XS (9,094 GB) permiten ejecutar un modelo de 27,3 B en GPUs de 12 GB o en configuraciones con offload parcial, a costa de un KLD medio de 0,29 y 0,26 respectivamente y un Top-1 del 79,7 % y 81,2 %.
-- Equilibrio calidad/tamaño en GPUs de 16-24 GB: Q4_K_M (17,448 GB, KLD medio 0,0244, Top-1 95,45 %) o Q5_K_M (20,930 GB, KLD 0,0139, Top-1 97,07 %) ofrecen una relación razonable entre fidelidad al BF16 y huella de memoria.
-- Máxima fidelidad en servidores con 32 GB o más: Q8_0 (29,122 GB, KLD medio 0,0047, Top-1 98,87 %) es la opción más cercana a la referencia BF16 dentro de esta colección.
-- Tareas multimodales imagen-texto: al heredar el pipeline image-text-to-text del base, sirve para descripción de imágenes, VQA o extracción de información de documentos escaneados, siempre que el runtime BeeLlama.cpp soporte la entrada visual.
-- Investigación en cuantización: la tabla de KLD por receta (media, mediana, P90, P95, P99, P99.9, máximo, Top-1 y PPL) permite estudiar el impacto de ancho y fuerza SINQ sobre la distribución de error, útil para trabajos sobre compresión de modelos.
-- Evaluación comparativa de runtimes: al estar replicadas las recetas de Bartowski, permite contrastar directamente calidad SINQ frente a cuantización estándar bajo idénticas condiciones de evaluación.
+- Despliegue local de un modelo multimodal de 27B en GPUs de consumo: con las cuantizaciones de 4 bits (Q4_K_S, 16,369 GB; Q4_0, 16,355 GB) el modelo puede ejecutarse en GPUs con 24 GB de VRAM, como una RTX 4090, manteniendo una KLD media de 0,028-0,038 frente a la referencia BF16.
+- Analisis de documentos con imagenes y texto: al ser un modelo image-text-to-text, permite procesar capturas, diagramas o documentos escaneados junto con instrucciones textuales, aprovechando el contexto de 64K tokens para documentos extensos.
+- Asistencia conversacional multi-turno: el contexto de 64K tokens y el formato GGUF conversacional permiten mantener dialogos largos con historial extenso en entornos de inferencia local.
+- Prototipado e investigacion en cuantizacion: las distintas recetas (IQ2_XXS hasta Q3_K_XL) y los datos de KLD, top-1 y PPL publicados permiten estudiar el compromiso entre tamano y calidad en un modelo de 27B.
+- Inferencia en servidores con VRAM limitada: las variantes IQ2_XXS (8,887 GB) e IQ2_XS (9,094 GB) permiten ejecutar el modelo en GPUs de 12 GB, con una top-1 agreement de 79,7-81,2 % respecto a BF16.
+- Evaluacion comparativa de tecnicas de cuantizacion: los graficos de KLD medio y top-1 frente a tamano, que comparan Bartowski estandar, Bartowski + SINQ y Unsloth, sirven para seleccionar la receta optima segun el presupuesto de memoria.
+- Generacion de codigo en pipelines locales: aunque no se detalla soporte de tool calling, el modelo puede integrarse en flujos de autocompletado o generacion de codigo en estaciones de trabajo con GPU unica, usando cuantizaciones Q4 o Q3.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son métricas de fidelidad de cuantización (KLD contra BF16), no benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.). Se reproducen las métricas principales de una selección de recetas:
+Los datos disponibles son metricas de cuantizacion (KLD, top-1 agreement y PPL) frente a la referencia BF16, no benchmarks de tareas como MMLU o HumanEval. Se presentan las recetas seleccionadas:
 
-| Receta | Tamano (GB) | Mean KLD | Top-1 | PPL |
-|---|---:|---:|---:|---:|
-| IQ2_XXS | 8,887 | 0,292708 | 79,728 % | 7,2898 |
-| IQ2_XS | 9,094 | 0,258898 | 81,241 % | 6,7813 |
-| IQ3_XXS | 12,326 | 0,088562 | 89,420 % | 6,2762 |
-| Q3_K_M | 13,410 | 0,069874 | 91,014 % | 6,1224 |
-| Q4_K_M | 17,448 | 0,024358 | 95,452 % | 6,1228 |
-| Q5_K_M | 20,930 | 0,013948 | 97,070 % | 6,0552 |
-| Q6_K | 23,866 | 0,006030 | 98,179 % | 6,0426 |
-| Q8_0 | 29,122 | 0,004727 | 98,874 % | 6,0549 |
+| Receta | Tamano (GB) | Width | Strength | KLD medio | KLD medio stock | Mejora KLD | Top-1 | PPL |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| IQ2_XXS | 8,887 | 16 | 1 | 0,292708 | 0,348437 | +15,99 % | 79,728 % | 7,2898 |
+| IQ2_XS | 9,094 | 16 | 1 | 0,258898 | 0,307513 | +15,81 % | 81,241 % | 6,7813 |
+| IQ2_S | 9,690 | 16 | 1 | 0,222801 | 0,309424 | +27,99 % | 82,538 % | 6,6952 |
+| IQ2_M | 10,528 | 32 | 0,5 | 0,184837 | 0,178343 | -3,64 % | 84,948 % | 6,9293 |
+| Q2_K | 10,827 | 16 | 1 | 0,172353 | 0,175685 | +1,90 % | 84,839 % | 6,5684 |
+| IQ3_XXS | 12,326 | 64 | 1 | 0,088562 | 0,094982 | +6,76 % | 89,420 % | 6,2762 |
+| Q3_K_S | 12,746 | 16 | 1 | 0,081897 | 0,085008 | +3,66 % | 90,207 % | 6,3037 |
+| IQ3_XS | 12,805 | 32 | 0,5 | 0,114714 | 0,124818 | +8,10 % | 89,276 % | 6,7982 |
+| Q2_K_L | 13,087 | 32 | 0,5 | 0,171494 | 0,186185 | +7,89 % | 85,281 % | 6,7191 |
+| Q3_K_M | 13,410 | 16 | 1 | 0,069874 | 0,079508 | +12,12 % | 91,014 % | 6,1224 |
+| Q3_K_L | 14,129 | 32 | 0,5 | 0,058107 | 0,066205 | +12,23 % | 91,878 % | 6,1459 |
+| IQ3_M | 14,866 | 32 | 1 | 0,068673 | 0,062360 | -10,12 % | 91,450 % | 6,4201 |
+| IQ4_XS | 15,482 | 16 | 1 | 0,029491 | 0,033945 | +13,12 % | 94,921 % | 6,0682 |
+| Q4_0 | 16,355 | 32 | 1 | 0,038434 | 0,061367 | +37,37 % | 93,903 % | 6,1088 |
+| Q4_K_S | 16,369 | 16 | 0,5 | 0,028394 | 0,034322 | +17,27 % | 95,054 % | 6,0809 |
+| Q3_K_XL | 16,398 | 32 | 0,75 | 0,058178 | 0,060701 | +4,16 % | no disponible | no disponible |
 
-Condiciones: Wikitext-2 test completo, referencia BF16 Qwen3.8-27B, 297.193 objetivos, contexto 64K, caché K/V BF16, batch 2048, microbatch 512. El autor afirma que cada cuantización SINQ seleccionada tiene menor KLD medio que su equivalente estándar de Bartowski, y ofrece gráficas comparativas frente a Bartowski, Unsloth e ISTA.
-
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: desde ~9 GB (IQ2_XXS) hasta ~30 GB (Q8_0) solo para los pesos; añadir overhead de contexto (64K tokens con caché K/V BF16 puede requerir varios GB adicionales).
-- GPU recomendadas: RTX 3090/4090 (24 GB) para Q4_K_M y Q5_K_S; A100 40 GB o H100 para Q6_K_L y Q8_0 con contexto largo; GPUs de 12 GB solo para las variantes IQ2/IQ3 con contexto reducido.
-- Cabe en consumer GPU: sí, en RTX 3090/4090 para recetas hasta Q5_K_M (20,9 GB) con margen ajustado; Q6 y Q8 requieren 24-32 GB.
-- Opciones de despliegue: exclusivamente BeeLlama.cpp v0.5.0 (el autor indica que SINQ solo está soportado en ese runtime). No se garantiza compatibilidad con llama.cpp estándar, Ollama, vLLM ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente el tamano del archivo GGUF mas la cache K/V. Para IQ2_XXS (8,887 GB) se necesitan en torno a 10-12 GB; para Q4_K_S (16,369 GB), en torno a 18-20 GB con contexto moderado; para contexto completo de 64K la cache K/V en BF16 incrementa notablemente el consumo.
+- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4 y Q3; RTX 4080/4070 Ti (16 GB) para IQ3_XXS e IQ3_XS; GPUs de 12 GB para IQ2_XXS e IQ2_XS; A100 o H100 para despliegues con contexto largo y mayor concurrencia.
+- Cabe en GPU de consumo: si, en RTX 4090 (Q4_K_S, Q4_0, IQ4_XS), RTX 4080 (IQ3_XXS, Q3_K_S) y GPUs de 12 GB (IQ2_XXS, IQ2_XS).
+- Opciones de despliegue: BeeLlama.cpp v0.5.0 es obligatorio para las variantes SINQ; llama.cpp estandar no soporta SINQ. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---:|---|---|---|---|
-| Anbeeld/Qwen3.8-27B-GGUF-Bartowski-SINQ | 27,3 B | 64K (evaluación) | Apache 2.0 | GGUF + SINQ | Requiere BeeLlama.cpp v0.5.0 |
-| bartowski/Qwen3.8-27B-GGUF | 27,3 B (base) | No disponible | Apache 2.0 (base) | GGUF estándar | Runtime llama.cpp estándar; referencia de recetas |
-| Unsloth Qwen3.8-27B (Q5_K_S, Q6_K, Q8_0) | 27,3 B (base) | No disponible | Apache 2.0 (base) | GGUF | Comparado en las gráficas del autor; datos numéricos no disponibles |
-| ISTA Qwen3.8-27B | 27,3 B (base) | No disponible | No disponible | GGUF | Comparado en las gráficas del autor; datos numéricos no disponibles |
+| Anbeeld/Qwen3.8-27B-GGUF-Bartowski-SINQ | 27,3B | 64K (evaluacion) | GGUF con SINQ | Apache 2.0 | Requiere BeeLlama.cpp v0.5.0 |
+| Bartowski/Qwen3.8-27B-GGUF | 27,3B | no disponible | GGUF estandar | Apache 2.0 | Referencia de recetas; KLD medio superior en la mayoria de recetas |
+| Unsloth (Qwen3.8-27B) | 27,3B | no disponible | GGUF | Apache 2.0 | Comparado en los graficos de KLD y top-1; datos numericos no disponibles en el texto |
+| Qwen/Qwen3.8-27B (BF16) | 27,3B | no disponible | safetensors | Apache 2.0 | Referencia de evaluacion |
 
 ## Limitaciones y advertencias
 
-- Dependencia de runtime: SINQ solo funciona en BeeLlama.cpp v0.5.0; usar estos GGUF en otros motores puede producir resultados incorrectos o fallos de carga.
-- Sin datos de capacidad: no hay benchmarks de MMLU, HumanEval, GSM8K ni evaluaciones multimodales publicadas; el rendimiento real en tareas downstream debe validarse por cuenta propia.
-- Idiomas no declarados: la model card no especifica cobertura lingüística, lo que impide garantizar calidad en castellano u otros idiomas.
-- Riesgo de alucinación: inherente a los modelos generativos; no hay documentación específica de mitigaciones en esta ficha.
-- Sesgos: no documentados en la información disponible.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3.8-27B y las condiciones de BeeLlama.cpp por separado.
-- Las variantes de 2 bits (IQ2_XXS, IQ2_XS, IQ2_S) muestran degradación notable (Top-1 por debajo del 82 %, PPL superior a 6,7) y no son recomendables para producción sensible a calidad.
-- Contexto: la evaluación usa 64K, pero el máximo oficial del base no está confirmado; contextos largos incrementan mucho el consumo de VRAM con caché BF16.
+- Requiere BeeLlama.cpp v0.5.0: las variantes SINQ no son compatibles con llama.cpp estandar ni con otras herramientas que no implementen SINQ.
+- Perdida de calidad en cuantizaciones agresivas: IQ2_XXS presenta una KLD media de 0,292708 y un top-1 del 79,728 %, lo que implica una divergencia notable respecto a BF16.
+- Excepciones a la mejora: IQ2_M (-3,64 %) e IQ3_M (-10,12 %) muestran peor KLD medio que sus equivalentes estandar de Bartowski.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; inherente a los modelos generativos.
+- Idiomas soportados: no disponibles, lo que impide garantizar calidad multilingue.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B.
+- Contexto: aunque la evaluacion usa 64K tokens, el maximo oficial del modelo base no se especifica; contextos muy largos incrementan el consumo de VRAM por la cache K/V.
+- Repositorio de 441,4 GB: la descarga completa es costosa; se recomienda descargar solo la variante necesaria.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Anbeeld/Qwen3.8-27B-GGUF-Bartowski-SINQ
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/Qwen3.8-27B-GGUF-Bartowski-SINQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Recetas de cuantización de referencia: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF
-- Runtime BeeLlama.cpp v0.5.0: https://github.com/Anbeeld/beellama.cpp
+- Recetas de cuantizacion de Bartowski: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF
+- BeeLlama.cpp v0.5.0: https://github.com/Anbeeld/beellama.cpp
+- Grafico KLD medio frente a tamano (stock vs SINQ vs Unsloth): stock-vs-sinq-vs-unsloth-mean-kld.png (en el repositorio)
+- Grafico top-1 agreement frente a tamano: stock-vs-sinq-vs-unsloth-top-1.png (en el repositorio)

@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 741,
+  "downloads_30d": 960,
   "trending_score": 0,
   "parameters": 20430401088,
   "parameters_human": "20.43B",
@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "QWEN-Anime - SeaArt AI Model",
-      "url": "https://www.seaart.ai/models/detail/411ea33d5d9bbd7f485d3f852881f05d",
-      "snippet": "Explore QWEN-Anime model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
-    },
-    {
-      "title": "QWEN-Anime - Qwen-Anime-Beta3-AIO | Qwen Checkpoint | Civitai",
-      "url": "https://civitai.red/models/2122738/qwen-anime",
-      "snippet": "🎨 QWEN-Anime | Beta3-AIO Advanced Anime Generation with Image Editing ⚠️ Note: All versions are combined on this model card for convenience. 📢 VERSI..."
-    }
-  ]
+  "sources": []
 }

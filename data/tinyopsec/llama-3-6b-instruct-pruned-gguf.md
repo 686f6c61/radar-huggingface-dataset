@@ -2,81 +2,98 @@
 
 ## Resumen
 
-Llama-3-6B-Instruct-pruned es una versión recortada (pruned) del modelo Meta-Llama-3-8B-Instruct de Meta, reducido de 8B a aproximadamente 6,29B parámetros mediante la técnica PruneMe implementada con mergekit. El autor tinyopsec publica en este repositorio las cuantizaciones en formato GGUF del checkpoint original `kuotient/Llama-3-6B-Instruct-pruned`, generadas con llama.cpp. El objetivo del modelo es ofrecer un derivado de Llama 3 más ligero y rápido en inferencia, apto para hardware de consumo, manteniendo las capacidades conversacionales del modelo base.
+Llama-3-6B-Instruct-pruned-GGUF es una distribucion en formato GGUF de un checkpoint derivado de Llama 3 8B Instruct, podado de 8B a aproximadamente 6,28B parametros por el usuario kuotient y empaquetado para llama.cpp por tinyopsec. La poda se realizo con PruneMe/mergekit eliminando un bloque de capas intermedias (se conservan las capas 0-20 y 29-31), lo que reduce el coste de inferencia y de memoria en torno a un 21 % respecto al modelo original sin reentrenamiento posterior.
 
-El proceso de poda elimina capas intermedias del transformer: el modelo conserva las capas 0-20 y las 29-31 del original, descartando las capas 21-28. Es importante señalar que se trata de un modelo experimental sin post-training healing (sin reentrenamiento de recuperación tras la poda), lo que implica una posible degradación de calidad respecto al modelo original. Su relevancia radica en la exploración de técnicas de compresión estructural de LLMs y en su utilidad como base ligera para entornos con recursos limitados, aunque requiere evaluación previa antes de uso en producción.
+El interes practico esta en la reduccion de requisitos: al ser un modelo denso de ~6,3B en GGUF, puede ejecutarse en GPUs de consumo con cuantizaciones de 4 bits (Q4_K_M) y en CPU con llama.cpp, Ollama, LM Studio o koboldcpp. Es, por tanto, una opcion de bajo coste para prototipado y despliegue local de un modelo conversacional con la licencia Llama 3.
+
+Ahora bien, se trata de un artefacto experimental: el propio autor advierte que no hubo "post-training healing" tras la poda, no se publican idiomas soportados ni resultados de benchmarks, y el rendimiento real puede degradarse de forma no uniforme respecto al Llama 3 8B Instruct original. Debe evaluarse antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Llama 3), podado estructuralmente (eliminación de capas 21-28) |
-| Parametros totales | 6.285.365.248 (~6,29B) |
-| Parametros activos | no disponible (no es MoE; todos los parámetros están activos) |
-| Longitud de contexto | no disponible (el original Llama 3 8B usa 8.192 tokens, pero no consta en la ficha) |
+| Arquitectura | Transformer decoder-only (derivada de Llama 3 8B Instruct, podada con PruneMe/mergekit) |
+| Parametros totales | 6.285.365.248 (~6,28B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (heredada teoricamente de Llama 3 8B Instruct; no confirmada por el autor) |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible (hereda del base model, principalmente inglés) |
-| Licencia | Meta Llama 3 Community License |
-| Formato de pesos | GGUF |
+| Idiomas soportados | no disponible |
+| Licencia | Llama 3 Community License (llama3) |
+| Formato de pesos | GGUF (un fichero por cuantizacion) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Meta-Llama-3-8B-Instruct, un transformer decoder autorregresivo de la familia Llama 3. La innovación principal de este derivado no está en la arquitectura original sino en el proceso de poda estructural: mediante PruneMe y mergekit se eliminaron las capas 21 a 28 del bloque transformer, quedando 24 capas (0-20 y 29-31) y reduciendo el número de parámetros de 8B a ~6,29B. Esta técnica de "layer pruning" aprovecha la observación de que las capas intermedias de los transformers profundos a menudo contienen redundancia funcional.
+El modelo base es un checkpoint Llama 3 8B Instruct al que se le han eliminado capas mediante PruneMe/mergekit, conservando las capas 0-20 y 29-31. Se trata, por tanto, de un transformer decoder-only denso con atencion multi-cabeza por grupos (GQA) heredada de la familia Llama 3, pero con un numero de bloques reducido y, por consiguiente, un grafo de computo mas corto. El resultado son 6.285.365.248 parametros frente a los ~8,03B del original.
 
-No se dispone de información sobre un proceso de entrenamiento o fine-tuning posterior a la poda: el autor indica explícitamente que se trata de un modelo experimental sin post-training healing, es decir, no hubo una fase de recuperación con datos adicionales para compensar la pérdida de capacidad tras eliminar capas. Tampoco se especifican datos sobre tokens de entrenamiento, composición del dataset ni técnicas como RLHF o DPO aplicadas al derivado (las del modelo base de Meta no se detallan en la ficha).
+No consta en la informacion disponible ningun proceso de reentrenamiento, destilacion ni "healing" tras la poda; el autor lo declara explicitamente como modelo experimental sin post-entrenamiento de recuperacion. Tampoco se documentan tokens de entrenamiento adicionales, composicion del dataset, ni fases de RLHF/DPO propias de esta version: las capacidades conversacionales provienen del Llama 3 8B Instruct original, mientras que la poda puede haber afectado de forma desigual a las capas eliminadas. La conversion a GGUF se realizo con llama.cpp.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato instruct, heredada de Meta-Llama-3-8B-Instruct (etiquetado como "conversational" en Hugging Face).
-- Razonamiento general y seguimiento de instrucciones, potencialmente degradado por la poda de capas y la ausencia de healing.
-- Compatibilidad con el stack de herramientas del ecosistema GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y runtimes equivalentes.
-- No hay información sobre soporte de tool calling / function calling, capacidades de visión o audio, ni modo de razonamiento extendido (thinking mode).
-- Capacidades multilingües: no disponibles en la ficha; el modelo base Llama 3 está optimizado principalmente para inglés.
+- Generacion de texto conversacional multi-turno, heredada del ajuste instruct de Llama 3 8B.
+- Razonamiento basico y respuesta a instrucciones en formato chat.
+- Generacion de codigo y tareas de matematicas simples (capacidad no verificada tras la poda; sin benchmarks publicados).
+- Soporte de tool calling / function calling: no disponible de forma explicita en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado; la poda puede degradar el razonamiento encadenado.
+- Capacidades multilingues: no disponible (el autor no declara idiomas; el modelo base Llama 3 cubre principalmente ingles y, en menor medida, otros idiomas).
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Compatibilidad con endpoints y runtimes GGUF (llama.cpp, Ollama, LM Studio, koboldcpp).
 
 ## Casos de uso
 
-- Experimentación con poda de modelos: ideal para investigadores que quieran estudiar el impacto de la eliminación de capas en LLMs sin coste de entrenamiento, comparando salidas contra el modelo original de 8B.
-- Inferencia local en hardware de consumo: con ~6,29B parámetros y cuantización Q4_K_M, el modelo cabe en GPUs domésticas de 8 GB de VRAM, útil para chatbots locales y asistentes personales offline.
-- Prototipado rápido con Ollama o LM Studio: al estar en GGUF, puede descargarse y ejecutarse en minutos en portátiles y estaciones de trabajo sin configuración compleja.
-- Despliegue en servidores de gama baja o edge: la reducción del 21% en parámetros respecto al original reduce la VRAM y mejora el throughput, adecuado para nodos con GPUs modestas o CPU con aceleración parcial.
-- Base para fine-tuning ligero (LoRA/QLoRA): su menor tamaño reduce los requisitos de memoria para ajustes posteriores en dominios concretos, aunque conviene validar primero la calidad del checkpoint.
-- Evaluación de trade-offs calidad/velocidad: útil como punto de comparación en benchmarks internos entre modelos podados y destilados de tamaño similar.
+- Prototipado local de asistentes conversacionales: con Q4_K_M (~3,8 GB) el modelo cabe en GPUs de consumo de 6-8 GB de VRAM, lo que permite iterar en un portatil sin depender de la nube.
+- Despliegue en CPU o entornos sin GPU: al estar en GGUF y disponible en cuantizaciones de 2 a 8 bits, puede servirse con llama.cpp en servidores modestos para tareas de generacion de texto de baja concurrencia.
+- Generacion de texto en aplicaciones de escritorio: integrable en LM Studio u Ollama para funciones de redaccion, resumen o reescritura con latencia aceptable en hardware consumer.
+- Evaluacion comparativa de tecnicas de poda: sirve como caso de estudio para medir la degradacion de un Llama 3 8B Instruct tras eliminar capas, util en investigacion sobre compresion de modelos.
+- Filtrado y clasificacion de texto por lotes: su menor huella de memoria permite ejecutar pipelines de etiquetado o extraccion de informacion en hardware limitado, siempre que se valide la calidad frente al modelo original.
+- Base para fine-tuning ligero en entornos con recursos restringidos: al tener menos parametros que el 8B original, reduce los requisitos de memoria para LoRA/QLoRA, aunque la ausencia de healing exige un dataset de recuperacion cuidadoso.
+- Educacion y demos: util para mostrar el funcionamiento de un LLM instruct local sin coste de API, con la advertencia de que la calidad puede ser inferior a la del modelo de referencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El propio autor advierte que el modelo es experimental y carece de post-training healing, por lo que recomienda evaluarlo antes de su uso.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo F16 ocupa 12,6 GB; las cuantizaciones de 4 bits (Q4_K_M/Q4_K_S) deberían rondar aproximadamente 3,5-4,5 GB (estimación basada en el tamaño de parámetros, no confirmada en la ficha); Q8_0 alrededor de 6,5-7 GB. El tamaño total del repositorio es de 61,0 GB.
-- GPU recomendadas: no disponible explícitamente. Por tamaño estimado, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB cubrirían con holgura las cuantizaciones de 4-8 bits; para F16 convendría una GPU con 16-24 GB (RTX 4090, RTX 3090).
-- Cabe en consumer GPU: sí, en cuantizaciones de 4 y 5 bits cabe en GPUs de 8 GB de VRAM (RTX 3060 Ti, RTX 4060); también es ejecutable en CPU pura con llama.cpp a velocidades reducidas.
-- Opciones de despliegue: llama.cpp (llama-cli), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. No se menciona soporte para vLLM o TGI, que requieren formatos safetensors.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~2,0-2,3 GB.
+  - Q4_K_M (recomendado): ~3,6-4,0 GB.
+  - Q5_K_M: ~4,3-4,7 GB.
+  - Q6_K: ~5,0-5,4 GB.
+  - Q8_0: ~6,6-7,0 GB.
+  - F16: ~12,6 GB (tamano declarado por el autor).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090, A100 y H100 para mayor throughput y contextos largos.
+- Cabe en GPU de consumo: si, en tarjetas de 6-8 GB con Q4_K_M y en tarjetas de 8-12 GB con Q5/Q6/Q8.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no se documentan para este artefacto concreto.
+- Latencia y throughput estimados: no disponibles; dependen de la GPU, la cuantizacion y la longitud de contexto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| tinyopsec/Llama-3-6B-Instruct-pruned-GGUF | ~6,29B | no disponible (base: 8.192) | Llama 3 Community | GGUF | Poda de capas sin healing; experimental |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8.192 tokens | Llama 3 Community | safetensors | Modelo base completo, calidad de referencia |
-| kuotient/Llama-3-6B-Instruct-pruned | ~6,29B | no disponible | no disponible | safetensors (presumible) | Checkpoint original pre-cuantización del que deriva este repo |
-| Mistral-7B-Instruct-v0.2 | 7B | 32.768 tokens | Apache 2.0 | safetensors/GGUF | Alternativa de tamaño similar con licencia permisiva y contexto mayor |
+| Llama-3-6B-Instruct-pruned-GGUF (este) | ~6,28B | no disponible | Llama 3 Community | GGUF | Poda experimental sin healing; sin benchmarks publicados |
+| Llama 3 8B Instruct | ~8,03B | 8.192 tokens (segun documentacion de Meta) | Llama 3 Community | safetensors, GGUF | Modelo de referencia; mayor coste de memoria (~21 % mas de parametros) |
+| Mistral 7B Instruct | ~7,24B | 32.768 tokens (segun documentacion de Mistral) | Apache 2.0 | safetensors, GGUF | Licencia permisiva y contexto mayor; alternativa habitual en el mismo rango |
+| Qwen2.5 7B Instruct | ~7,62B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | Buen rendimiento en codigo y matematicas; licencia permisiva |
+
+La comparacion con Llama 3 8B Instruct y Mistral 7B se basa en datos publicos de sus respectivas documentaciones; no se dispone de mediciones directas de este derivado podado frente a ellos.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental sin post-training healing: la eliminación de las capas 21-28 puede causar degradación significativa en coherencia, razonamiento y seguimiento de instrucciones. El propio autor recomienda evaluar antes de usar.
-- Riesgo de alucinación: no cuantificado, pero probablemente igual o superior al del modelo base Llama 3 8B Instruct dada la falta de recuperación tras la poda.
-- Sesgos: hereda los sesgos del dataset de preentrenamiento y alineación de Meta Llama 3, principalmente centrado en inglés y contenido web en inglés.
-- Idioma: sin confirmación de soporte multilingüe; el rendimiento en castellano no está documentado y puede ser inferior al del modelo original.
-- Contexto: la longitud de contexto no está confirmada para el derivado; aunque Llama 3 soporta 8.192 tokens, la poda de capas podría afectar al manejo de contextos largos.
-- Licencia: el uso está ligado a la Meta Llama 3 Community License, que impone condiciones como la atribución ("Built with Meta Llama 3") y restricciones para ciertos usos y para entidades con más de 700 millones de usuarios activos mensuales.
-- Descargas y adopción muy limitadas (527 descargas, 0 likes en el momento de la ficha), sin comunidad de validación amplia.
+- Modelo experimental sin post-training healing: la eliminacion de las capas 21-28 puede degradar la coherencia, el razonamiento multi-paso y la fidelidad a instrucciones complejas de forma no uniforme.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de la perdida de calidad respecto a Llama 3 8B Instruct.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje y potencialmente agravado por la poda; requiere validacion en dominios factuales.
+- Idiomas no declarados: el autor no especifica cobertura linguistica; se asume principalmente ingles por herencia del modelo base.
+- Contexto no confirmado: aunque el modelo base soporta 8.192 tokens, no se verifica que la poda preserve el comportamiento en contextos largos.
+- Tool calling y comportamiento agentico no documentados: no debe asumirse su correcto funcionamiento en pipelines de agentes sin evaluacion previa.
+- Licencia Llama 3 Community: impone restricciones de uso comercial (clausula de 700 millones de usuarios mensuales, requisitos de atribucion "Built with Meta Llama 3" y politicas de uso aceptable); revisar antes de desplegar en produccion.
+- Repositorio grande (61,0 GB) por incluir todas las cuantizaciones; conviene descargar solo el fichero necesario.
+- Trazabilidad limitada: autor con pocos likes/descargas y sin documentacion adicional sobre el proceso de poda.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Llama-3-6B-Instruct-pruned-GGUF
-- Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
-- Checkpoint original podado: https://huggingface.co/kuotient/Llama-3-6B-Instruct-pruned
-- mergekit (herramienta de poda/merge): https://github.com/arcee-ai/mergekit
-- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/Llama-3-6B-Instruct-pruned-GGUF
+- Modelo base: https://huggingface.co/kuotient/Llama-3-6B-Instruct-pruned
+- Llama 3 8B Instruct (modelo de origen): https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+- mergekit: https://github.com/arcee-ai/mergekit
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Licencia Llama 3: https://llama.meta.com/llama3/license/

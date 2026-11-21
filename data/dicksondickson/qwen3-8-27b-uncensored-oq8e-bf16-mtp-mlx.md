@@ -2,115 +2,83 @@
 
 ## Resumen
 
-dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX es una cuantizacion en formato MLX del modelo orcarouter/Qwen3.8-27B-Uncensored, que a su vez es una version abliterada (eliminacion de rechazos a nivel de tensor) de Qwen/Qwen3.8-27B. Se trata de un modelo denso de 27.781.427.952 parametros (unos 27,8 mil millones), con arquitectura de atencion hibrida que combina 48 capas de Gated DeltaNet (atencion lineal) y 16 capas de atencion completa sobre un total de 64 capas, con dimension oculta de 5120. Es ademas un modelo nativo de vision-lenguaje, incorpora control de modo pensamiento (thinking), soporte de tool calling y una cabeza MTP (multi-token prediction).
+Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX es una cuantizacion en formato MLX del modelo orcarouter/Qwen3.8-27B-Uncensored, publicada por el usuario dicksondickson. Se trata de un checkpoint de 27.781.427.952 parametros (unos 27,8 mil millones) derivado de la familia Qwen3.5 y sometido a un proceso de "abliteration" o eliminacion de los mecanismos de rechazo y filtrado de seguridad por parte de orcarouter. El resultado es un modelo orientado a generar contenido sin las restricciones habituales de alineamiento, empaquetado especificamente para su ejecucion en hardware Apple Silicon mediante la libreria MLX.
 
-El checkpoint lo publica el usuario dicksondickson y esta pensado exclusivamente para Apple Silicon mediante MLX. Se genero con oMLX 0.7.0rc1 con imatrix activado, dejando los tensores importantes en bf16, lo que exige chips Apple M3 o posteriores; los usuarios de M1 y M2 deben recurrir a la variante fp16. El repositorio ocupa 30,0 GB y se distribuye bajo licencia MIT.
+La relevancia de esta ficha reside en dos factores. Primero, la cuantizacion mixta oQ (oMLX 0.7.3.dev2) con imatrix, que mantiene los tensores criticos en bf16 y aplica precision reducida de 8 bits al resto, buscando preservar calidad en un tamano de repositorio de 90 GB. Segundo, el soporte de MTP (multi-token prediction) y la orientacion explicita a chips Apple M3 o posteriores, con una variante fp16 para M1/M2. El modelo esta pensado para entornos de investigacion y pruebas controladas, no para produccion con requisitos de seguridad.
 
-Su relevancia es doble: por un lado, permite ejecutar en local un modelo de 27B con ventana de 262.144 tokens y vision sobre hardware de consumo Apple, sin depender de API en la nube; por otro, al proceder de un proceso de abliteration, esta orientado a escenarios de investigacion y evaluacion donde los filtros de seguridad estandar interfieren (red teaming, analisis de contenido sensible, generacion de datos sinteticos). La model card advierte explicitamente de que no es adecuado para produccion ni para aplicaciones publicas sin revision humana.
+La licencia declarada es MIT, lo que permite uso comercial y modificacion, aunque la propia model card recomienda evitar el despliegue directo en aplicaciones publicas. No se dispone de informacion sobre el pipeline, los idiomas soportados ni los datos de entrenamiento originales en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atencion hibrida: 48 capas Gated DeltaNet (atencion lineal) + 16 capas de atencion completa, 64 capas totales, dimension oculta 5120, cabeza MTP |
+| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5`); detalles internos no disponibles |
 | Parametros totales | 27.781.427.952 (27,8 B) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 262.144 tokens (262K), segun la informacion del modelo base |
-| Tipos de cuantizacion | Este checkpoint: 8 bits (esquema oQ8e) con tensores importantes en bf16. El ecosistema del modelo base ofrece ademas 2, 4 y 8 bits (afin, group size 64) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | oQ mixta de 8 bits con tensores criticos en bf16; variante fp16 para Apple M1/M2 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | MLX safetensors (bf16 y cuantizado a 8 bits); tamano de repositorio 30,0 GB |
-| Libreria / motor | mlx (oMLX 0.7.0rc1 para la cuantizacion) |
-| Modelo base | orcarouter/Qwen3.8-27B-Uncensored (a su vez derivado de Qwen/Qwen3.8-27B) |
-| Modalidades | Texto e imagen (vision tower completo) |
-| Fecha de publicacion | 2026-09-29 |
-| Descargas / likes | 0 descargas, 1 like |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer denso con atencion hibrida: 48 de las 64 capas emplean Gated DeltaNet, un mecanismo de atencion lineal recurrente que reduce el coste computacional y de memoria del contexto largo, mientras que 16 capas mantienen atencion completa (softmax) para preservar la precision en la recuperacion de informacion a larga distancia. La dimension oculta es de 5120 y el modelo integra una cabeza MTP (multi-token prediction), utilizada habitualmente para decodificacion especulativa y para acelerar la generacion. Dispone de torre de vision nativa, lo que lo convierte en un modelo vision-lenguaje y no en un simple modelo de texto.
+El modelo base es un transformer de la familia Qwen3.5 con 27,8 mil millones de parametros. No se dispone en la informacion proporcionada de detalles sobre el numero de capas, dimensiones ocultas, mecanismos de atencion (si emplea atencion lineal, GQA o variantes hibridas) ni sobre el proceso de entrenamiento original: numero de tokens, composicion del dataset, fases de RLHF o DPO. Tampoco se documenta el metodo exacto de abliteration aplicado por orcarouter mas alla de la etiqueta "uncensored".
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el pipeline de alineacion (RLHF, DPO u otros) del modelo original Qwen3.8-27B, ya que no aparece en la informacion proporcionada. Lo que si se documenta es el postprocesado: el modelo base orcarouter se genero mediante abliteration a nivel de tensor, dejando intactos la torre de vision y la cabeza MTP, con el objetivo declarado de eliminar los rechazos manteniendo las capacidades. Sobre esa base, este checkpoint aplica una cuantizacion oQ8e a 8 bits con imatrix (matriz de importancia para preservar los tensores criticos) usando oMLX 0.7.0rc1, manteniendo en bf16 los tensores sensibles a la precision. Es relevante senalar que la cuantizacion no altera ni los pesos de vision ni la cabeza MTP, solo su representacion numerica.
+La innovacion tecnica documentada se concentra en la capa de cuantizacion. El checkpoint se genero con oMLX 0.7.3.dev2 mediante cuantizacion de precision mixta oQ con imatrix, que usa una matriz de importancia para decidir que tensores conservan bf16 y cuales pasan a 8 bits. Segun la model card, la revision del 24 de octubre de 2026 mejora la cuantizacion de baja precision ("Better Low-Bit oQ"). El sufijo `mtp` indica soporte de multi-token prediction, una tecnica de decodificacion especulativa que permite proponer varios tokens por paso para acelerar la generacion. Los tensores en bf16 estan pensados para Apple M3 y posteriores; para M1/M2 se indica la variante fp16.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso, con modo de pensamiento (thinking) controlable heredado de la familia Qwen3.
-- Comprension de imagen: la torre de vision se mantiene completa, por lo que admite entrada de imagenes junto a texto (image-to-text).
-- Tool calling y function calling, lo que permite integrarlo en agentes que invocan APIs o ejecutan acciones.
-- Contexto muy largo de 262.144 tokens, adecuado para analisis de documentacion extensa o sesiones multi-turno prolongadas sin truncado agresivo.
-- Prediccion multi-token mediante cabeza MTP, orientada a acelerar la decodificacion.
-- Generacion de codigo (capacidad declarada por el ecosistema del modelo base, sin benchmarks publicados que la cuantifiquen).
-- Ausencia practica de rechazos: el modelo base reporta 0 % de sobre-rechazo en XSTest y entre 0 % y 6 % de rechazo en la suite A/B, segun la ficha del modelo base en Ollama.
-- Idiomas soportados: no disponible en la informacion proporcionada.
+- Generacion de texto autoregresiva en el marco de la familia Qwen3.5, con las capacidades heredadas del modelo base (no detalladas en la informacion disponible).
+- Generacion sin filtrado de seguridad practicamente nulo: el proceso de abliteration elimina los rechazos tipicos ante peticiones sensibles.
+- Decodificacion acelerada mediante multi-token prediction (MTP), integrada en el ecosistema MLX.
+- Ejecucion nativa en Apple Silicon a traves de MLX, con variantes de precision segun generacion de chip.
+- Soporte de tool calling, agentes, vision, audio o razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Red teaming y evaluacion de seguridad: al haber sido abliterado, sirve para generar prompts y respuestas que estresen clasificadores de contenido y filtros de moderacion propios, midiendo su tasa de fallo antes de desplegarlos.
-- Analisis de documentos largos en local: con 262K tokens de contexto se puede cargar un informe tecnico, un expediente o un libro completo y hacer preguntas sobre el conjunto sin dividirlo en fragmentos, manteniendo los datos en la maquina.
-- Procesamiento de documentos escaneados: la torre de vision permite extraer texto y estructura de PDFs o capturas directamente, sin una etapa OCR separada.
-- Generacion de datos sinteticos para ajuste: su baja tasa de rechazo lo hace util para producir corpus de entrenamiento o destilacion en dominios donde un modelo alineado se negara a continuar la conversacion.
-- Asistente personal privado en un Mac: ejecutado con mlx-lm u oMLX sobre memoria unificada, ofrece conversaciones de contexto largo y acceso a herramientas sin enviar datos a terceros.
-- Agentes de automatizacion en escritorio: mediante tool calling y razonamiento multi-paso, puede encadenar llamadas a scripts locales, consultas a ficheros o acciones sobre servicios internos.
-- Investigacion sobre alineacion y abliteration: sirve como sujeto de comparacion frente a la version alineada del mismo modelo para medir que capacidades y sesgos cambian al retirar los rechazos.
-- Analisis de contenido sensible para moderacion humana: resumir, clasificar o etiquetar material controvertido sin que el modelo bloquee la tarea, con revision manual posterior.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar el comportamiento de un LLM sin mecanismos de rechazo, comparando sus respuestas con las del modelo base alineado para analizar que tipos de contenido se desbloquean y con que frecuencia.
+- Pruebas de red teaming controladas: sirve como sujeto de prueba para evaluar clasificadores de contenido, filtros de salida y sistemas de moderacion en un entorno aislado, dado que genera material sensible con facilidad.
+- Generacion creativa sin restricciones tematicas: escritura de ficcion adulta, narrativa de terror o dialogos crudos donde los filtros estandar interrumpen la continuidad; el modelo mantiene el estilo sin rechazos.
+- Desarrollo y validacion de pipelines MLX: util para ingenieros que construyen aplicaciones sobre MLX y necesitan un checkpoint de ~28 B con cuantizacion mixta para medir latencia, memoria y throughput en chips M3/M4.
+- Evaluacion de tecnicas de cuantizacion: al existir variantes bf16 y fp16 y una cuantizacion oQ documentada, permite comparar la degradacion de calidad entre precisiones sobre el mismo modelo base.
+- Simulacion de personajes o agentes con personalidad sin restricciones: en entornos de prototipado de videojuegos o narrativa interactiva donde se requiere un tono sin autocensura, siempre con revision humana de las salidas.
+- Analisis de contenido adversario: generacion de ejemplos de texto toxico o manipulador para entrenar detectores, en un entorno de laboratorio con supervision.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este checkpoint (no hay MMLU, HumanEval, GSM8K ni equivalentes). El autor de la cuantizacion no incluye ninguna tabla de evaluacion en la model card.
-
-Los unicos datos numericos de comportamiento disponibles provienen de la ficha del modelo base en Ollama y son metricas de rechazo, no de capacidad:
-
-| Metrica | Resultado | Fuente |
-|---|---|---|
-| Sobre-rechazo en XSTest | 0 % | Ficha de orcarouter/Qwen3.8-27B-Uncensored |
-| Tasa de rechazo en suite A/B | 0-6 % | Ficha de orcarouter/Qwen3.8-27B-Uncensored |
-| Perdida de capacidad declarada | "sin perdida medible" (afirmacion del autor del modelo base, sin datos publicados) | Ficha de orcarouter/Qwen3.8-27B-Uncensored |
-
-Se recomienda tratar estas cifras como afirmaciones del publicador, no como evaluaciones independientes.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Plataforma: exclusivamente Apple Silicon (MLX). No hay soporte CUDA para este checkpoint.
-- Memoria: el repositorio ocupa 30,0 GB, de los cuales la mayor parte son los pesos a 8 bits mas los tensores en bf16. Se necesita memoria unificada suficiente para pesos, cache KV y overhead del runtime; 32 GB es el minimo practico y 48-64 GB es lo recomendable si se quiere explotar el contexto de 262K tokens.
-- Restriccion de chip: los tensores importantes estan en bf16, lo que requiere Apple M3 o posterior. En M1 y M2 hay que usar la variante fp16 del mismo autor.
-- GPU/dispositivos equivalentes: no aplica; no se puede ejecutar en A100, H100 ni RTX 4090 con este formato. Para CUDA habria que recurrir a otro formato del modelo base.
-- Opciones de despliegue: mlx-lm (servidor local), oMLX 0.7.0rc1 (motor con el que se genero el checkpoint), LM Studio (soporte de modelos MLX). vLLM, TGI y llama.cpp no consumen directamente pesos MLX; para esos entornos habria que usar una conversion GGUF del modelo base, disponible en Ollama bajo orcarouter/Qwen3.8-27B-Uncensored.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para este checkpoint.
-- Coste de cache KV: no disponible. Con 262K tokens de contexto y 16 capas de atencion completa, el consumo de cache puede ser elevado y conviene medirlo en el dispositivo objetivo antes de fijar la configuracion.
+- VRAM/unified memory estimada: con 27,8 B de parametros, la cuantizacion de 8 bits ocupa aproximadamente 28-30 GB, mientras que los tensores en bf16 y el overhead de MLX elevan el consumo practico; el repositorio completo pesa 90 GB, lo que sugiere que incluye varias variantes de precision. Para inferencia con la variante de 8 bits se recomienda un minimo de 32 GB de memoria unificada.
+- GPU/chips recomendados: Apple M3 Max, M3 Ultra, M4 Max y M4 Ultra con 48 GB o mas de memoria unificada para la variante bf16; Apple M1/M2 con la variante fp16 y al menos 32 GB.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon de gama alta; no esta pensado para GPUs NVIDIA, ya que el formato es MLX y no GGUF ni safetensors estandar de PyTorch.
+- Opciones de despliegue: MLX y oMLX (motor de jundot/omlx); no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles; el soporte MTP deberia reducir el tiempo por token frente a decodificacion autoregresiva estandar, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX (este) | 27,8 B | 262K | MLX safetensors, 8 bits + bf16 | MIT | Hugging Face, 0 descargas |
-| orcarouter/Qwen3.8-27B-Uncensored (base) | 27,8 B | 262K | safetensors originales; tambien en Ollama | MIT | Hugging Face y Ollama |
-| zomiailabs/Qwen3.8-27B-Uncensored-MLX | no disponible | no disponible | MLX | no disponible | Hugging Face |
-| daviddan-241/qwen3.8-27b-uncensored-mlx | 27 B (dato del nombre) | no disponible | MLX, subcarpetas de 2/4/6/8 bits (afin, group size 64) | no disponible | Hugging Face y GitHub |
-| intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter | no disponible | no disponible | MLX, orientado a decodificacion especulativa (drafter) | no disponible | Hugging Face |
-
-Todas las alternativas comparten el mismo origen (Qwen3.8-27B abliterado) y el mismo nicho de ejecucion en Apple Silicon, por lo que la eleccion depende principalmente de la precision deseada y de si se necesita un modelo borrador MTP para acelerar la decodificacion. No hay datos publicos de rendimiento que permitan ordenarlas por calidad.
+| dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX | 27,8 B | no disponible | MLX safetensors (oQ 8-bit/bf16) | MIT | Cuantizacion MLX con MTP, orientada a Apple Silicon |
+| orcarouter/Qwen3.8-27B-Uncensored | 27,8 B (base) | no disponible | safetensors | no disponible | Modelo base sin cuantizar del que deriva este checkpoint |
+| Alternativas de ~27-30 B sin censura en MLX | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Filtrado de seguridad reducido: el proceso de abliteration elimina buena parte de los rechazos, por lo que el modelo puede producir contenido sensible, controvertido o inapropiado sin aviso.
-- No apto para produccion segun su propio autor: la model card recomienda uso en investigacion, pruebas o entornos controlados, y desaconseja su empleo directo en aplicaciones comerciales o de cara al publico.
-- Sin garantias de seguridad por defecto: no ha pasado por optimizacion de seguridad y el publicador declina responsabilidad sobre las consecuencias de su uso.
-- Riesgo de alucinacion: no hay evaluaciones publicadas de fidelidad factual para este checkpoint; al tratarse de una cuantizacion de una version abliterada, el comportamiento factual debe validarse en el dominio concreto de uso.
-- Sin benchmarks de capacidad: no existen datos publicados de MMLU, HumanEval, GSM8K ni similares, ni para este checkpoint ni, en la informacion disponible, para la cuantizacion concreta de 8 bits.
-- Cobertura de idiomas desconocida: la informacion proporcionada no detalla que idiomas soporta el modelo, ni el castellano en particular.
-- Riesgo de degradacion por cuantizacion: aunque el esquema conserva en bf16 los tensores importantes, no se han publicado mediciones del impacto de la cuantizacion a 8 bits sobre la calidad.
-- Dependencia de hardware: requiere Apple Silicon M3 o posterior; en M1 y M2 hace falta la variante fp16. No es portable a GPU NVIDIA sin convertir el modelo.
-- Responsabilidad legal y etica: el usuario debe asegurarse de que su uso cumple la legislacion local; el contenido generado puede acarrear riesgos legales.
-- Madurez baja en la comunidad: 0 descargas y 1 like en el momento de redactar la ficha, sin evaluaciones independientes que respalden el checkpoint.
-- Licencia MIT: permisiva para uso comercial en lo que respecta a este checkpoint, pero conviene verificar las condiciones del modelo original Qwen subyacente antes de un despliegue comercial.
+- El filtrado de seguridad esta practicamente eliminado: el modelo puede generar contenido sensible, controvertido o inapropiado sin rechazo, segun advierte la propia model card.
+- No es adecuado para audiencias generales, menores ni aplicaciones que exijan alta seguridad; la model card desaconseja su uso directo en produccion o en interfaces publicas.
+- Riesgo elevado de alucinacion y de afirmaciones no verificadas, agravado por la ausencia de benchmarks publicados que permitan calibrar su fiabilidad.
+- Sin datos sobre sesgos conocidos, composicion del dataset de entrenamiento ni idiomas soportados; no se puede evaluar su comportamiento multilingue ni su equidad.
+- La licencia MIT permite uso comercial, pero el autor declina cualquier responsabilidad legal o etica derivada del uso y recomienda supervision humana en tiempo real.
+- Dependencia exclusiva del ecosistema MLX y de hardware Apple Silicon: no es portable a GPUs NVIDIA sin conversion adicional.
+- La cuantizacion de 8 bits puede degradar tareas de razonamiento o codigo frente al modelo base en bf16 completo; no hay evaluaciones publicadas que lo cuantifiquen.
+- El repositorio de 90 GB y la revision de octubre de 2026 implican que copias anteriores pueden estar obsoletas; conviene verificar la fecha de descarga.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ8e-bf16-mtp-MLX
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
-- Modelo base en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
-- Repositorio GitHub de la conversion abliterada a MLX: https://github.com/daviddan-241/qwen3.8-27b-uncensored-mlx
-- Cuantizacion MLX de zomiailabs: https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX
-- Drafter MTP alternativo de intheblue: https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
-- Ficha descriptiva en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-mlx-orcarouter
-- Creditos citados en la model card sin URL asociada: orcarouter (abliteration y safetensors) y jundot/olmx (motor omlx y modelos MLX); el modelo original de referencia es Qwen/Qwen3.8-27B.
+- Motor oMLX (jundot/omlx): https://github.com/jundot/omlx

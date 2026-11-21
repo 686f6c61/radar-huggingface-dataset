@@ -2,105 +2,105 @@
 
 ## Resumen
 
-Latin BERT es un modelo de lenguaje contextual especializado en latin clasico, desarrollado originalmente por David Bamman y Patrick J. Burns (2020) y reempaquetado para Hugging Face por el proyecto latincy. Se trata de un BERT-base de 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion, con aproximadamente 111 millones de parametros, entrenado sobre un corpus de textos latinos. Su proposito es proporcionar representaciones contextuales y capacidad de enmascarado (fill-mask) para tareas de filologia clasica, procesamiento de texto latino y humanidades digitales.
+Latin BERT es un modelo de lenguaje contextual especializado en latin clasico, desarrollado originalmente por David Bamman y Patrick J. Burns (2020) y empaquetado para Hugging Face por el proyecto latincy. Se trata de un BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion) con aproximadamente 111 millones de parametros, entrenado sobre un corpus de textos latinos. Resuelve el problema de la falta de representaciones contextuales de calidad para una lengua historica con escasez de datos anotados, habilitando tareas de filologia clasica como el etiquetado morfosintactico, la desambiguacion de sentidos y la prediccion de palabras enmascaradas.
 
-El modelo resuelve un problema concreto: los modelos multilingues genericos rinden por debajo en latin debido a la baja representacion de esta lengua en sus corpus y a la morfologia flexiva del latin. Latin BERT, al entrenarse exclusivamente sobre latin, captura mejor las dependencias sintacticas y la polisemia lexica del idioma. Es relevante para investigadores que necesitan etiquetado morfosintactico, desambiguacion de sentidos o busqueda de similitud contextual en corpus clasicos.
+El modelo es relevante para investigadores en humanidades digitales y procesamiento de lenguaje natural historico porque reproduce con fidelidad los resultados del paper original a traves del pipeline nativo de `transformers`, sin necesidad de codigo personalizado. Su tokenizador replica el `SubwordTextEncoder` original de tensor2tensor mediante un `tokenizer.json` puro, lo que permite su uso en entornos Rust, JavaScript, ONNX o Text Embeddings Inference.
 
-La version empaquetada por latincy (v1.2.1) incluye un tokenizer JSON nativo que replica el `SubwordTextEncoder` original de tensor2tensor sin necesidad de `trust_remote_code`, lo que facilita su integracion en pipelines modernos de `transformers`, spaCy, ONNX y Text Embeddings Inference. La licencia es MIT.
+Con una ventana de contexto de 512 tokens y licencia MIT, Latin BERT esta pensado para extraccion de caracteristicas y fill-mask, no como modelo generativo. Su utilidad principal es producir embeddings contextuales de 768 dimensiones para texto latino y servir de base para tareas downstream de anotacion linguistica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT-base (transformer encoder, 12 capas, 768 ocultas, 12 cabezas) |
+| Arquitectura | BERT-base (transformer encoder, 12 capas, 768 hidden, 12 cabezas) |
 | Parametros totales | 111.935.110 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/ONNX oficiales) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion posible via herramientas externas) |
 | Idiomas soportados | latin (la) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (repo de 0,9 GB) |
+| Formato de pesos | safetensors, PyTorch |
 
 ## Arquitectura y entrenamiento
 
-Latin BERT sigue la arquitectura BERT-base estandar: un transformer encoder con 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y una longitud maxima de secuencia de 512 tokens. El vocabulario consta de 32.900 subtokens generados con un `SubwordTextEncoder` de tensor2tensor, en lugar del WordPiece habitual de BERT. El modelo se entreno con el objetivo de masked language modeling (MLM) sobre un corpus de textos latinos; la model card remite al paper original para el detalle de la composicion y el volumen del dataset de entrenamiento.
+Latin BERT sigue la arquitectura BERT-base estandar: un transformer encoder de 12 capas con 768 dimensiones ocultas y 12 cabezas de atencion, con un vocabulario de 32.900 subtokens generado mediante `SubwordTextEncoder` (no WordPiece). El modelo se entrena con objetivos de masked language modeling sobre un corpus de textos latinos; la model card remite al paper original para el detalle de la composicion del dataset y el numero exacto de tokens. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion, algo esperable en un modelo encoder de 2020.
 
-La innovacion tecnica destacable del reempaquetado es la conversion del tokenizer original a un `tokenizer.json` puro de la libreria `tokenizers`, que replica exactamente los IDs del encoder de tensor2tensor sin requerir codigo remoto. Se documentan dos divergencias menores no alcanzables con texto real: los caracteres fuera del alfabeto de 2.187 simbolos se mapean a `[UNK]` en lugar de a escapes ordinales, y el caracter de control U+0001 se elimina de la entrada. No se documenta en la informacion disponible el uso de RLHF, DPO ni decodificacion especulativa.
+La innovacion tecnica destacable del empaquetado es el tokenizador: se sustituye el `SubwordTextEncoder` de tensor2tensor por un `tokenizer.json` compuesto unicamente de componentes nativos de la libreria `tokenizers`, que reproduce los mismos IDs sin requerir `trust_remote_code`. Se documentan dos divergencias marginales no alcanzables con texto real: los caracteres fuera del alfabeto de 2.187 simbolos se mapean a `[UNK]` en lugar de escapes ordinales, y el caracter de control U+0001 se elimina de la entrada. Las versiones con `trust_remote_code=True` siguen funcionando y producen IDs identicos.
 
 ## Capacidades
 
-- Generacion de representaciones contextuales (embeddings) de 768 dimensiones por token, aptas para feature extraction.
-- Rellenado de mascaras (fill-mask) para prediccion de palabras enmascaradas en contexto.
-- Etiquetado morfosintactico (POS tagging) mediante fine-tuning, con resultados reproducidos en los treebanks Perseus, PROIEL e ITTB.
+- Extraccion de caracteristicas contextuales: genera embeddings de 768 dimensiones por token (`last_hidden_state`).
+- Masked language modeling (fill-mask): predice el subtoken enmascarado en una secuencia latina.
+- Etiquetado morfosintactico (POS tagging) como tarea downstream, con resultados reportados en tres treebanks.
 - Desambiguacion de sentidos (word sense disambiguation) mediante representaciones contextuales.
-- Busqueda de vecinos mas cercanos contextuales (contextual nearest neighbors) para explorar usos de una palabra en distintos pasajes.
-- Integracion con spaCy mediante `spacy-transformers`.
-- No soporta tool calling, function calling, agentes, vision, audio ni modos de razonamiento explicito; es un encoder MLM, no un modelo generativo instruido.
-- Capacidad multilingue limitada al latin; el alfabeto cubre caracteres latinos, griegos y cirilicos, pero el entrenamiento es monolingue.
+- Recuperacion de vecinos mas cercanos contextuales: distingue usos de una misma palabra segun el contexto.
+- Integracion con spaCy via `spacy-transformers` como componente de pipeline.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso; no es un modelo generativo ni multimodal.
+- Capacidad multilingue limitada al latin; el alfabeto cubre latin, griego, cirilico, digitos y puntuacion, pero el entrenamiento es monolingue.
 
 ## Casos de uso
 
-- Etiquetado morfosintactico de corpus clasicos: fine-tuning sobre treebanks como Perseus, PROIEL o ITTB para anotar automaticamente textos latinos con categorias gramaticales; el modelo alcanza el 95,2-99,2 % de exactitud segun el treebank, lo que lo hace adecuado para proyectos de anotacion a gran escala.
-- Desambiguacion de sentidos en lexicografia: usar los embeddings contextuales para distinguir acepciones de una misma palabra en pasajes distintos, con una exactitud documentada de 0,764 en la tarea del paper.
-- Busqueda de similitud contextual en corpus: indexar representaciones de tokens y recuperar instancias del mismo sentido de una palabra (por ejemplo, *in* en Cesar o *audentes* en Virgilio) mediante similitud coseno, con valores de hasta 0,919 en los ejemplos reproducidos.
-- Prediccion de palabras perdidas en textos con lagunas: aplicar fill-mask para reconstruir fragmentos danados o ilegibles en ediciones criticas, con P@1 del 33,1 %, P@10 del 62,2 % y P@50 del 74,0 %.
-- Preprocesamiento para pipelines de humanidades digitales: generar embeddings de pasajes latinos como entrada para clasificadores de genero, autor o periodo, o para sistemas de recuperacion de informacion en bibliotecas digitales clasicas.
-- Integracion en spaCy para anotacion de pipelines NLP: configurar `spacy-transformers.TransformerModel.v3` con `latincy/latin-bert` para obtener un pipeline de NLP latino con tokenizacion, POS y dependencias.
-- Analisis de variacion lexica y morfologica: comparar variantes como *audentis*, *audaces* y *audentem* mediante vecinos contextuales para estudiar flexión y variacion ortografica en corpus.
+- Anotacion morfosintactica de corpus latinos: el modelo alcanza entre 95,2 % y 99,2 % de exactitud en POS tagging sobre Perseus, PROIEL e ITTB, por lo que puede usarse como etiquetador automatico para preanotar corpus clasicos antes de la revision humana.
+- Desambiguacion de sentidos en edicion digital: con una exactitud de 0,764 en WSD, permite agrupar ocurrencias de una palabra segun su sentido para construir indices lexicos o concordancias semanticas.
+- Completado de lagunas en textos fragmentarios: el pipeline fill-mask predice palabras faltantes en inscripciones o manuscritos danados, con P@1 del 33,1 % y P@10 del 62,2 % como referencia de acierto.
+- Busqueda semantica en bibliotecas digitales: los embeddings contextuales permiten recuperar pasajes por similitud de uso linguistico y no solo por coincidencia lexica, util para corpus como Perseus o PHI.
+- Lematizacion y analisis asistido en investigacion filologica: integrado en spaCy mediante `spacy-transformers`, sirve como capa de representacion para entrenar taggers y parsers especificos sobre anotaciones existentes.
+- Deteccion de variantes ortograficas y morfologicas: los vecinos contextuales recuperan formas como *audentis*, *audaces* y *audentem* a partir de *audentes*, lo que facilita la normalizacion ortografica en ediciones criticas.
+- Preentrenamiento de modelos downstream para latin: al ser un encoder BERT-base con licencia MIT, puede usarse como inicializacion para tareas de clasificacion, NER o parsing en dominios con pocos datos anotados.
 
 ## Benchmarks y rendimiento
 
-Resultados reproducidos por el reempaquetado mediante el pipeline nativo de Hugging Face, que coinciden con Bamman & Burns (2020):
+Resultados reportados en la model card, reproducidos mediante el pipeline nativo de Hugging Face y coincidentes con Bamman & Burns (2020):
 
-| Tarea | Metrica | Resultado |
+| Tarea | Conjunto / metrica | Resultado |
 |---|---|---|
-| POS tagging (Perseus) | Exactitud | 95,2 % |
-| POS tagging (PROIEL) | Exactitud | 98,2 % |
-| POS tagging (ITTB) | Exactitud | 99,2 % |
+| POS tagging | Perseus (accuracy) | 95,2 % |
+| POS tagging | PROIEL (accuracy) | 98,2 % |
+| POS tagging | ITTB (accuracy) | 99,2 % |
 | Prediccion de palabra enmascarada | P@1 | 33,1 % |
 | Prediccion de palabra enmascarada | P@10 | 62,2 % |
 | Prediccion de palabra enmascarada | P@50 | 74,0 % |
-| Desambiguacion de sentidos | Exactitud | 0,764 |
-| Vecinos contextuales (*in*, Caes. *BG* 1.1) | Similitud coseno | 0,835 |
-| Vecinos contextuales (*audentes*, Verg. *Aen.* 10.284) | Similitud coseno | 0,919 |
+| Desambiguacion de sentidos | Accuracy | 0,764 |
+| Vecinos contextuales | *in* (Caes. *BG* 1.1), coseno top | 0,835 |
+| Vecinos contextuales | *audentes* (Verg. *Aen.* 10.284), coseno top | 0,919 |
 
-No se han publicado en la informacion disponible resultados comparativos con otros modelos en benchmarks estandar como MMLU, HumanEval o GSM8K, que no aplican a un encoder MLM monolingue de latin.
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni benchmarks generativos, ya que el modelo no es generativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,45 GB en fp32 (111 M de parametros x 4 bytes), alrededor de 0,22 GB en fp16 y del orden de 0,11-0,15 GB en cuantizacion de 8 o 4 bits, sin contar activaciones ni overhead del runtime.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; A100, H100, RTX 4090, RTX 3090, RTX 2080 o T4 funcionan sin problema. Tambien es viable en CPU para inferencia por lotes pequenos.
-- Cabe en cualquier GPU consumer, incluidas GTX 1650, RTX 3050 o incluso iGPU con suficiente memoria compartida; el cuello de botella es la longitud de secuencia (512 tokens), no el tamano del modelo.
-- Opciones de despliegue: `transformers` (PyTorch), `spacy-transformers`, Text Embeddings Inference (TEI) gracias al `tokenizer.json` nativo, y runtimes que consuman `tokenizer.json` (Rust, JavaScript, ONNX). No se documentan pesos GGUF ni soporte oficial en llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en fp32: aproximadamente 450 MB para los pesos (111,9 M de parametros), mas memoria de activaciones segun longitud de secuencia.
+- En fp16: aproximadamente 225 MB de pesos; en int8: en torno a 112 MB.
+- Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1060, RTX 2060, RTX 3060, RTX 4090, asi como en CPU para inferencia por lotes pequenos.
+- GPU recomendadas para alto throughput: A100, H100, L4 o A10G para servir embeddings a gran escala.
+- Despliegue posible con `transformers` (PyTorch), Text Embeddings Inference (TEI) gracias al `tokenizer.json` nativo, ONNX Runtime, y via `spacy-transformers` dentro de pipelines de spaCy.
+- No se dispone de datos de latencia o throughput medidos en la informacion proporcionada; por tamano, es un modelo de baja latencia incluso en CPU para secuencias cortas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idioma | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Latin BERT (latincy/latin-bert) | 111 M | 512 | Latin | MIT | BERT-base MLM especializado en latin |
-| PhilBERTa | no disponible en la informacion | no disponible | Latin | no disponible | RoBERTa especializado en latin |
-| LaBerta | no disponible en la informacion | no disponible | Latin | no disponible | BERT especializado en latin |
-| BERT multilingual (base) | 178 M | 512 | 104 idiomas | Apache 2.0 | Multilingue generico, cobertura limitada de latin |
+| Latin BERT (latincy) | 111,9 M | 512 | BERT-base encoder, fill-mask | MIT | Hugging Face |
+| BERT-base multilingue | ~178 M | 512 | BERT-base encoder, 104 idiomas | Apache 2.0 | Hugging Face |
+| LatinCy / modelos spaCy para latin | no disponible | no disponible | Pipelines spaCy sobre latin | MIT | GitHub / Hugging Face |
 
-No se dispone en la informacion proporcionada de datos de rendimiento de PhilBERTa o LaBerta que permitan una comparacion cuantitativa directa; la comparativa se limita a parametros, contexto, licencia y enfoque.
+No se dispone en la informacion proporcionada de resultados comparativos de rendimiento frente a estos modelos. La ventaja especifica de Latin BERT es su entrenamiento monolingue en latin y la reproduccion exacta del tokenizador original, mientras que un BERT multilingue cubriria latin con menor especializacion y mayor tamano.
 
 ## Limitaciones y advertencias
 
-- Modelo monolingue de latin: no debe esperarse un rendimiento util en otras lenguas, ni siquiera en lenguas romances derivadas.
-- Es un encoder MLM, no un modelo generativo instruido: no soporta instrucciones, tool calling ni razonamiento multi-paso; usarlo para generacion abierta produce resultados pobres.
-- Ventana de contexto limitada a 512 tokens, insuficiente para pasajes largos sin segmentacion previa.
-- Riesgo de alucinacion en la tarea fill-mask: las predicciones son distribuciones sobre el vocabulario y pueden producir formas morfologicamente plausibles pero historicamente incorrectas; requiere validacion filologica.
-- Sesgos derivados del corpus de entrenamiento: la composicion del dataset (autores, generos, periodos) puede infrarepresentar latin tardio, medieval o tecnico; no se documenta un analisis de sesgos en la informacion disponible.
-- Tokenizer con divergencias documentadas respecto al original en caracteres fuera del alfabeto de 2.187 simbolos (mapeo a `[UNK]`) y en el caracter U+0001 (eliminado); no afecta a texto real segun el autor, pero conviene verificarlo en pipelines con Unicode exotico.
-- Licencia MIT: permite uso comercial y modificacion con atribucion; no obstante, el modelo se distribuye como reempaquetado experimental y el autor recomienda abrir un hilo en la pestana de discusiones ante cualquier problema.
-- El repo tiene un tamano de 0,9 GB y solo 803 descargas y 1 like en el momento de la consulta, lo que indica una validacion comunitaria limitada.
+- Modelo encoder no generativo: no produce texto libre ni soporta razonamiento multi-paso, tool calling ni agentes.
+- Ventana de contexto limitada a 512 tokens, insuficiente para documentos completos o pasajes largos sin truncado.
+- Entrenado exclusivamente en latin; no debe esperarse calidad en otras lenguas, incluido el latin medieval o tardio si difiere del corpus original.
+- Riesgo de alucinacion en fill-mask: las predicciones son distribuciones de probabilidad sobre subtokens y pueden ser linguisticamente plausibles pero historicamente incorrectas; requiere validacion filologica.
+- Sesgos derivados del corpus de entrenamiento: la composicion del dataset (autores, generos, periodos) puede infrarepresentar registros como latin tardio, epigrafia o latin vulgar.
+- Tokenizador con divergencias documentadas en caracteres fuera del alfabeto de 2.187 simbolos (mapeo a `[UNK]`) y en el caracter U+0001.
+- Licencia MIT permite uso comercial, pero el empaquetado se declara experimental; conviene fijar una `revision` concreta para reproducibilidad.
+- No se documentan en la informacion disponible datos de sesgo medidos ni evaluaciones de robustez fuera de los treebanks citados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/latincy/latin-bert
+- Modelo en Hugging Face: https://huggingface.co/latincy/latin-bert
 - Paper original: https://arxiv.org/abs/2009.10053
-- Repositorio original y codigo de entrenamiento: https://github.com/dbamman/latin-bert
-- Discusiones del repo (incidencias del reempaquetado): https://huggingface.co/latincy/latin-bert/discussions
+- Repositorio original (Bamman): https://github.com/dbamman/latin-bert
+- Discusiones del repositorio: https://huggingface.co/latincy/latin-bert/discussions
 - Hilo sobre tokenizers 0.23: https://huggingface.co/latincy/latin-bert/discussions/4
 - spaCy transformers: https://github.com/explosion/spacy-transformers

@@ -2,84 +2,103 @@
 
 ## Resumen
 
-El modelo `summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64` es un fine-tune experimental del modelo multimodal denso Qwen3.8-27B, desarrollado por el usuario summerMC sobre la base publicada por el equipo Qwen de Alibaba. El nombre del modelo sugiere una modificación arquitectónica orientada a acelerar la inferencia mediante la sustitución de parte de la atención completa por capas recurrentes basadas en Gated Delta Net (GDN), una variante de atención lineal con estado recurrente constante. El resultado es un modelo de 27.533 millones de parámetros con pipeline `image-text-to-text`, licencia Apache 2.0 y pesos en formato safetensors.
+Qwen3.8-27B-SpeedX27-VL-GDN64 es un ajuste fino experimental del modelo Qwen/Qwen3.8-27B, publicado por el usuario summerMC en Hugging Face. El modelo conserva la naturaleza multimodal (image-text-to-text) del modelo base y sustituye o complementa parte de su mecanica de atencion con una arquitectura recurrente basada en Gated Delta Net (GDN64), orientada a mantener un estado de contexto de memoria casi constante en lugar de una cache KV que crece linealmente con la longitud de la secuencia.
 
-La relevancia de este modelo radica en que explora una vía de optimización de coste computacional para modelos multimodales de gran tamaño, manteniendo las capacidades del modelo base (razonamiento, código, agentes y automatización de oficina) pero con una arquitectura híbrida que reduce la memoria y el tiempo de atención en las capas recurrentes. Es un modelo experimental, con etiqueta `custom_code`, lo que implica que requiere código personalizado para su carga y ejecución. Aunque las descargas son escasas (46) y los likes limitados (1), su interés técnico reside en la combinación de visión-lenguaje con arquitecturas recurrentes modernas.
+El problema que aborda es el consumo de VRAM en inferencia de contexto largo. Segun la model card, el modelo base agota la memoria de una GPU de ~80 GiB alrededor de los 204.608 tokens, mientras que esta variante completa los 262.144 tokens con un pico de 55,36 GiB y un consumo practicamente plano a lo largo de todo el rango de contexto. La diferencia medida a 196.608 tokens es de aproximadamente 17,46 GiB menos de VRAM pico.
+
+El modelo tiene 27.533.015.792 parametros (27,5 mil millones) en precision BF16, un repositorio de 55,1 GB, licencia Apache 2.0 y se distribuye en formato safetensors con codigo personalizado (`custom_code`), lo que exige `trust_remote_code` en transformers. Es un modelo marcado explicitamente como experimental por su autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 16 capas con atención completa y 48 capas con atención lineal recurrente (Gated Delta Net) sobre el backbone de Qwen3.8-27B |
-| Parametros totales | 27.533.015.792 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (el modelo base Qwen3.8-27B soporta contexto largo, pero no se especifica en la informacion del fine-tune) |
-| Tipos de cuantizacion | No disponible (existe un repo GGUF separado, pero no se detallan los tipos) |
-| Idiomas soportados | No disponibles |
+| Arquitectura | Transformer multimodal con estado recurrente Gated Delta Net (GDN64), etiquetado `qwen3_5`; requiere codigo personalizado |
+| Parametros totales | 27.533.015.792 (27,5 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens (verificado en el benchmark del autor) |
+| Tipos de cuantizacion | no disponible (el benchmark se realizo en BF16; no se listan GGUF ni AWQ/GPTQ en el repo) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (y GGUF en repo complementario) |
+| Formato de pesos | safetensors (libreria transformers, `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B, sobre el que se construye este fine-tune, emplea un backbone de atención híbrida: de sus 64 capas, solo 16 utilizan atención completa (con un intervalo de atención completa de 4), mientras que las 48 restantes usan atención lineal con un estado recurrente constante. Esta configuración reduce el coste cuadrático de la atención estándar y permite ventanas de contexto más largas con menor uso de memoria. El fine-tune de summerMC incorpora la variante Gated Delta Net (GDN) en esas capas recurrentes, lo que refuerza la capacidad de mantener información a largo plazo con un coste fijo por paso.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer multimodal de 27,5 mil millones de parametros para entrada imagen-texto y salida de texto. Sobre esa base, el autor introduce un componente recurrente Gated Delta Net con estado de 64 (denominado GDN64 en el nombre del modelo), que sustituye el crecimiento de la cache de contexto por un estado persistente de tamano fijo. La model card describe el resultado como un comportamiento "casi constante en memoria respecto a la longitud de contexto", en contraste con la arquitectura hibrida estandar del modelo base, que mantiene una cache dependiente de la longitud.
 
-No se dispone de información detallada sobre el proceso de entrenamiento del fine-tune: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. El modelo se presenta como experimental y con `custom_code`, lo que sugiere que la arquitectura modificada requiere una implementación personalizada en transformers. El tag `automatic-speech-recognition` aparece en los metadatos, pero no hay evidencia de que el modelo soporte entrada de audio; probablemente es un residuo de la configuración original.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset de ajuste, ni sobre si se aplicaron tecnicas de RLHF, DPO o similar. El autor no documenta el procedimiento de entrenamiento del componente GDN64 mas alla de su efecto sobre el consumo de memoria. Tampoco se detalla si el ajuste congela el backbone original o entrena capas adicionales.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: acepta imágenes y texto como entrada, y produce texto como salida, manteniendo las capacidades del modelo base Qwen3.8-27B en tareas de visión-lenguaje.
-- Codificación y generación de código: el modelo base destaca en tareas de programación, y este fine-tune conserva esa capacidad.
-- Agentes y flujos de trabajo autónomos: soporta razonamiento multi-paso y puede integrarse en pipelines de agentes, según las características del modelo base.
-- Automatización de oficina: procesamiento de documentos, hojas de cálculo y presentaciones con entrada visual.
-- Capacidades multilingües: no especificadas para este fine-tune, aunque el modelo base de Qwen suele cubrir múltiples idiomas.
-- Soporte de tool calling y function calling: no confirmado explícitamente para este fine-tune, pero el modelo base lo incluye.
-- Arquitectura recurrente con GDN: permite inferencia con memoria constante en las capas recurrentes, reduciendo el coste de atención a largo plazo.
+- Generacion de texto conversacional multi-turno, heredada del modelo base Qwen3.8-27B.
+- Procesamiento de imagen y texto combinados (`image-text-to-text`), segun el pipeline declarado y la etiqueta `multimodal`.
+- Razonamiento sobre contextos muy largos: hasta 262.144 tokens verificados en una GPU de ~80 GiB.
+- Inferencia de contexto largo con memoria practicamente plana gracias al estado recurrente GDN64.
+- Decodificacion de un token tras un prefill de 262K completada con exito en 0,123 s (dato del autor).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible; el autor no declara idiomas.
+- Modo thinking, audio o voz: no disponible. La etiqueta `automatic-speech-recognition` aparece en los tags del repo, pero la model card no documenta ninguna capacidad de audio.
 
 ## Casos de uso
 
-- Atención al cliente multimodal: el modelo puede procesar capturas de pantalla, imágenes de productos o documentos escaneados junto con consultas de texto, manteniendo conversaciones multi-turno con contexto prolongado gracias a la atención recurrente de bajo coste.
-- Generación de código asistida por imagen: un desarrollador puede subir un diagrama o un boceto de interfaz y pedir al modelo que genere el código HTML, CSS o Python correspondiente, aprovechando la capacidad de visión-lenguaje.
-- Automatización de documentos de oficina: extracción de datos de facturas, tablas o formularios escaneados, con generación de resúmenes o rellenado de plantillas, útil en entornos administrativos.
-- Agentes de razonamiento multi-paso: integración en frameworks de agentes (por ejemplo, con vLLM o TGI) para tareas que requieren planificación, uso de herramientas y verificación de resultados, como la gestión de incidencias técnicas.
-- Análisis de imágenes médicas o técnicas: descripción de radiografías, planos o diagramas de ingeniería, con explicaciones textuales detalladas, siempre que se valide la precisión en el dominio específico.
-- Prototipado rápido de interfaces: a partir de una imagen de un diseño UI, el modelo puede generar el código de implementación o sugerir mejoras de usabilidad, acelerando el ciclo de desarrollo.
+- Analisis de repositorios y bases de codigo extensas: con 262K tokens de contexto y memoria plana, el modelo puede ingerir varios cientos de ficheros en una sola pasada sin fragmentar el contexto en trozos con perdida de coherencia entre ellos.
+- Revision documental juridica o regulatoria: procesamiento de contratos, expedientes o normativa completa en una unica ventana, manteniendo referencias cruzadas entre secciones separadas por decenas de miles de tokens.
+- Procesamiento de transcripciones y actas de reunion largas: la ventana de 262K permite cubrir varias horas de transcripcion en una sola llamada, util para resumenes con trazabilidad a la intervencion original.
+- Analisis de imagenes documentales en lote: al ser multimodal, admite capturas de pantalla, diagramas o paginas escaneadas junto con texto de instrucciones extenso, adecuado para extraccion de datos estructurados de informes.
+- Despliegue en hardware de gama alta limitado en memoria: al mantener un pico de 55,36 GiB frente a 72,82 GiB del base a 196K tokens, permite servir contexto largo en GPUs de ~80 GiB donde el modelo original provoca OOM.
+- Investigacion sobre arquitecturas recurrentes: sirve como referencia reproducible para comparar el escalado de VRAM de un estado GDN64 frente a una cache KV convencional en un transformer de 27B.
+- Evaluacion de viabilidad en pipelines de inferencia propios: el benchmark publicado (contexto de 262.144, chunk de 8.192, batch 1, BF16, cache activada) es directamente replicable para validar el ahorro de memoria antes de adoptar el modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para este fine-tune en la informacion disponible. El modelo base Qwen3.8-27B ha sido evaluado en tareas como MathVision, pero no se proporcionan cifras concretas en los resultados de búsqueda. Tampoco se dispone de comparativas con otros modelos en el contexto de este fine-tune. Por tanto, no es posible presentar una tabla de rendimiento sin inventar datos.
+Los unicos datos publicados por el autor son de consumo de VRAM en contexto largo, no de calidad. Configuracion: limite de contexto 262.144 tokens, chunk de 8.192 tokens, batch 1, precision BF16, cache activada, GPU de ~80 GiB.
+
+| Modelo | VRAM del modelo | Contexto maximo exitoso | VRAM pico |
+|---|---:|---:|---:|
+| Qwen/Qwen3.8-27B | 50,96 GiB | 196.608 tokens | 72,82 GiB a 196K |
+| Qwen3.8-27B-SpeedX27-VL-GDN64 | 51,30 GiB | 262.144 tokens | 55,36 GiB |
+
+Datos adicionales del autor: a 196.608 tokens la diferencia de pico es de ~17,46 GiB a favor de la variante GDN64; el modelo base falla por OOM a 204.608 tokens; el GDN64 completa el prefill de 262.144 tokens y una decodificacion posterior (0,123 s). El autor senala que la ventaja no proviene de pesos mas pequenos, ya que el modelo GDN64 ocupa ligeramente mas VRAM inmediatamente despues de cargarse.
+
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, MMMU u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 27.533 millones de parámetros, el modelo requiere aproximadamente 55 GB en fp32, 28 GB en fp16, 14 GB en int8 y 7 GB en int4. Estas cifras son orientativas y dependen de la implementación y la longitud de contexto.
-- GPU recomendadas: para fp16 sin cuantizar, se necesitan GPUs de datacenter como A100 80GB o H100. Con cuantización int8 o int4, cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB) para int4.
-- Si cabe en consumer GPU: sí, con cuantización int4 y una GPU de 24 GB, aunque la velocidad será limitada. Para uso interactivo, se recomienda al menos una RTX 4090.
-- Opciones de despliegue: vLLM, llama.cpp (para el formato GGUF), Ollama, TGI y transformers con `custom_code`. Dado el carácter experimental, es probable que se requiera compilar el código personalizado.
-- Latencia y throughput: no disponibles. Al ser un modelo experimental con arquitectura modificada, no se han publicado mediciones de rendimiento.
+- VRAM en BF16: ~51,30 GiB solo para pesos, segun la medicion del autor.
+- Pico medido en contexto largo: 55,36 GiB a 262.144 tokens (frente a 72,82 GiB del base a 196K).
+- GPU recomendadas: H100 80 GB, A100 80 GB, o cualquier acelerador con al menos ~56 GiB utiles tras reservar memoria para el runtime y activaciones.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) en BF16. No se han publicado cuantizaciones GGUF/AWQ/GPTQ que permitan reducir el requisito.
+- Despliegue: transformers con `trust_remote_code=True` es la via documentada. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, y la presencia de `custom_code` hace probable que estos motores no funcionen sin adaptaciones.
+- Latencia: decodificacion de 1 token en 0,123 s tras un prefill de 262K (medicion del autor, hardware no especificado con detalle).
+- Throughput agregado: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | VRAM pico en contexto largo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27.5B | No especificado | Atención híbrida (16 full + 48 lineal) | Apache 2.0 | Hugging Face, vLLM |
-| summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64 | 27.5B | No especificado | Atención híbrida con GDN recurrente | Apache 2.0 | Hugging Face (experimental) |
-| Qwen2.5-32B (referencia de tamaño similar) | 32.5B | 128K | Transformer denso estándar | Apache 2.0 | Hugging Face, vLLM |
+| Qwen3.8-27B-SpeedX27-VL-GDN64 | 27,5 B | 262.144 | 55,36 GiB a 262K | Apache 2.0 | Hugging Face, safetensors, `custom_code` |
+| Qwen/Qwen3.8-27B | 27,5 B (no confirmado en la informacion) | 196.608 verificado en la prueba | 72,82 GiB a 196K | no disponible en la informacion | Hugging Face |
+| Qwen3.8-27B-Longbook27-VL-GDN64 | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor, citado en la model card) |
 
-La comparativa se limita a modelos de tamaño similar. El fine-tune de summerMC se distingue por su arquitectura recurrente con GDN, que no está presente en el modelo base ni en Qwen2.5-32B. No se dispone de datos de rendimiento para comparar numéricamente.
+No se dispone de datos de benchmarks de calidad que permitan comparar el rendimiento cognitivo frente al modelo base ni frente a otras alternativas de 27B. La comparacion disponible se limita al comportamiento de memoria.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: la etiqueta `custom_code` y el carácter de fine-tune no oficial implican que puede contener errores, comportamientos inesperados o falta de soporte en frameworks estándar.
-- Sesgos conocidos: no se ha documentado ningún análisis de sesgos para este modelo. Al derivar de Qwen3.8-27B, puede heredar sesgos del dataset de entrenamiento original.
-- Riesgo de alucinación: como cualquier modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento visual complejo.
-- Limitaciones de contexto e idioma: no se especifican la longitud de contexto ni los idiomas soportados. Se recomienda validar estos aspectos antes de usarlo en producción.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero al ser un modelo experimental con código personalizado, la responsabilidad de su correcto funcionamiento recae en el usuario.
-- Caveat para producción: la falta de benchmarks y documentación hace desaconsejable su uso en entornos críticos sin una evaluación exhaustiva previa.
+- Modelo marcado como experimental por el autor: no hay garantia de estabilidad ni de paridad de calidad con el modelo base.
+- No se han publicado benchmarks de calidad (razonamiento, codigo, matematicas, vision). Se desconoce si el ajuste GDN64 degrada las capacidades originales.
+- Requiere `trust_remote_code=True` y ejecucion de codigo personalizado del repositorio: implica riesgo de seguridad y de compatibilidad con versiones futuras de transformers.
+- Sin cuantizaciones publicadas: no es desplegable en GPUs de consumo de 24 GB en su formato actual.
+- Idiomas soportados no declarados: no se puede asumir cobertura multilingue concreta.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplica el riesgo habitual de los modelos generativos, agravado por la ausencia de evaluaciones publicadas.
+- Sesgos: no documentados por el autor.
+- La etiqueta `automatic-speech-recognition` en los tags no esta respaldada por ninguna funcionalidad descrita en la model card; conviene tratarla como ruido de metadatos.
+- El benchmark de VRAM se realizo con batch 1, chunk de 8.192 y una unica GPU de ~80 GiB; el comportamiento con concurrencia o con otras configuraciones de chunk no esta documentado.
+- Uso comercial: la licencia Apache 2.0 lo permite, pero la condicion experimental y la falta de evaluaciones desaconsejan su uso en produccion sin validacion propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64
-- Versión GGUF del modelo: https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64-GGUF
-- Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
-- Ficha de Qwen3.8-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
-- Recetas de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Variante relacionada citada en la model card: https://huggingface.co/summerMC/Qwen3.8-27B-Longbook27-VL-GDN64
+- Imagen del benchmark de VRAM: https://cdn-uploads.huggingface.co/production/uploads/69e94913e947e9e6a0ae9d77/c_j7wWsy5ehtPQE0umktm.png
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

@@ -62,32 +62,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "DIY Bag from Jeans - A Fun Way to Recycle and Repurpose Jeans",
-      "url": "https://hearthandvine.com/diy-bag-from-jeans/",
-      "snippet": "Jan 28, 2025 · This DIY bag from jeans is the perfect weekend bag that's easy to make and only requires some basic sewing skills to …"
+      "task": "Input Safety Classification",
+      "dataset": "gold_1000 (self-built eval set)",
+      "metric": "Accuracy",
+      "value": 0.979
     },
     {
-      "title": "i1see1you/VirbiusGuard · Hugging Face",
-      "url": "https://huggingface.co/i1see1you/VirbiusGuard",
-      "snippet": "i1see1you / VirbiusGuard like 0 Text Classification Transformers Safetensors GGUF Chinese English safety security llm-guard qwen3 prompt-injection agent-safety conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+      "task": "Input Safety Classification",
+      "dataset": "gold_1000 (self-built eval set)",
+      "metric": "Unsafe Recall",
+      "value": 0.9789
     },
     {
-      "title": "How to Turn Old Jeans into an Awesome Denim Bag",
-      "url": "https://zerowastechef.com/2024/02/27/turn-old-jeans-into-awesome-denim-bag/",
-      "snippet": "Feb 27, 2024 · Transform an old pair of jeans into a hip and sturdy denim bag while keeping fabric out of the waste stream."
-    },
-    {
-      "title": "i1see1you (min cai) - Hugging Face",
-      "url": "https://huggingface.co/i1see1you",
-      "snippet": "models1 i1see1you/VirbiusGuard Text Classification • 0.8B•Updated about 3 hours ago"
-    },
-    {
-      "title": "Upcycle Your Jeans into a Denim Handbag - JMB Handmade",
-      "url": "https://jmbhandmade.com/upcycle-your-jeans-into-denim-handbag/",
-      "snippet": "Feb 14, 2025 · Upcycle a pair of old jeans into a handbag using this easy sewing tutorial with step-by-step instructions."
+      "task": "Input Safety Classification",
+      "dataset": "gold_1000 (self-built eval set)",
+      "metric": "Precision",
+      "value": 0.987
     }
-  ]
+  ],
+  "sources": []
 }

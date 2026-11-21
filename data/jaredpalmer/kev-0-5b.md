@@ -2,115 +2,101 @@
 
 ## Resumen
 
-kev-0.5b es un modelo de decisión, no un modelo generativo: recibe un documento (el «estado») y un conjunto de preguntas tipadas, y devuelve una distribución de probabilidad sobre las opciones de cada pregunta en un único forward pass. Lo desarrolla Jared Palmer con Devin (Cognition), y es un adaptador LoRA más una pequeña cabeza de lectura por punteros montada sobre Qwen/Qwen2.5-0.5B congelado. Reproduce la arquitectura que Archer Hume infirió para el Jev de TypeSafe y sirve el contrato público `/v1/systemone`.
+Kev-0.5B es un modelo de decisión, no un modelo generativo: recibe un documento (el *estado*) y un conjunto de preguntas tipadas, y devuelve en un único forward pass una distribución de probabilidad por pregunta. No produce texto libre. Se implementa como un adaptador LoRA más una cabeza de lectura por punteros sobre el backbone congelado `Qwen/Qwen2.5-0.5B` (494M parámetros), desarrollado por Jared Palmer con asistencia de Devin (Cognition). Reproduce la arquitectura que Archer Hume infirió para el modelo Jev de TypeSafe y sirve el contrato de API público `/v1/systemone` de esa empresa.
 
-El interés técnico está en que separa la decisión de la generación de texto: en lugar de muestrear tokens hasta obtener una etiqueta, lee directamente una probabilidad calibrada desde los estados ocultos de los tokens `</opt>` frente al token `<decide>`. Soporta tres tipos de pregunta: `noul` (sí/no), `choice` (entre 2 y 255 opciones) y `score` (entre 2 y 255 niveles ordenados). El backbone aporta 494 M de parámetros congelados y solo se entrenan 9,3 M (el 1,9 % del total).
+El modelo es relevante como pieza de investigación sobre calibración de lecturas directas de probabilidad, atención de estado compartido con ramas de pregunta aisladas y sensibilidad al orden de opciones. Su formato de entrada empaqueta el estado y varias ramas de pregunta en una sola secuencia con máscara de atención bloque-causal, de modo que cada pregunta ve el estado y su propia rama, pero no las demás.
 
-Es explícitamente un prototipo de investigación entrenado en un portátil, no un modelo de producción ni una reproducción del Jev de TypeSafe. Su relevancia actual es metodológica: demuestra que un readout directo de probabilidades sobre un backbone pequeño puede alcanzar 0,799 de accuracy y un ECE de 0,065 (0,031 tras temperature scaling) en el split held-out de sus seis fuentes de entrenamiento, con 104 descargas y 12 likes en el Hub.
+Este checkpoint es el prototipo original, entrenado en un portátil en septiembre de 2026 para demostrar que el mecanismo funciona. Está superado por Kev-0.8B, Kev-4B y Kev-9B, que usan bases Qwen3.5 y recetas depuradas mediante unas 110 pruebas controladas. Se mantiene en el Hub por reproducibilidad; para cualquier uso real, el autor recomienda la familia actual.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (Qwen2.5-0.5B) en modo prefill-only, con máscara de atención block-causal por rama de pregunta y cabeza de lectura por punteros |
-| Parámetros totales | 494 M en el backbone congelado + 9,3 M entrenables (8,8 M de LoRA + 0,46 M de cabeza) ≈ 503 M |
-| Parámetros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | Entrenamiento: ≤384 tokens de estado y ≤1.024 tokens por rama de pregunta. Servicio: 8.192 tokens por rama (el backbone soporta 32k) |
-| Tipos de cuantización | no disponible (entrenamiento y servicio en fp32 sobre Apple MPS; no se publican pesos GGUF ni cuantizados) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache-2.0 para el adaptador y la cabeza; el modelo base Qwen2.5-0.5B se distribuye bajo Apache-2.0; cada dataset conserva su licencia propia |
-| Formato de pesos | safetensors (`adapter_model.safetensors`, adaptador LoRA) + `head.pt` (cabeza), empaquetados en `kev-0.5b.tar.gz` (38 MB) en la release v0.1.0 de GitHub |
-| Tipos de pregunta | `noul` (sí/no), `choice` (2–255 opciones), `score` (2–255 niveles ordenados) |
-| Configuración LoRA | rango 16, alpha 32, dropout 0,05, sobre `q_proj k_proj v_proj o_proj gate_proj up_proj down_proj` en las 24 capas |
-| Cabeza de decisión | Dos mapas lineales de 896 → 256 (query desde `<decide>`, key desde cada `</opt>`), producto escalar escalado y softmax sobre las opciones |
-| Precisión | fp32 |
-| Versión | kev-0.5b v0.1, entrenado el 2026-09-17 |
+| Arquitectura | Transformer causal, solo prefill, máscara de atención bloque-causal por rama, lectura mediante cabeza de punteros |
+| Parametros totales | 494M en el backbone congelado + 9,3M entrenables (LoRA 8,8M + cabeza 0,46M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 384 tokens de estado y 1.024 tokens por rama de pregunta en entrenamiento; 8.192 por rama en servicio (el backbone soporta 32k) |
+| Tipos de cuantizacion | No disponible (pesos en fp32, entrenamiento y servicio en Apple MPS) |
+| Idiomas soportados | Inglés |
+| Licencia | Apache-2.0 para adaptador y cabeza; el modelo base Qwen2.5-0.5B es Apache-2.0; los datasets conservan sus licencias |
+| Formato de pesos | safetensors (`adapter_model.safetensors`) más `head.pt` en un tarball de 38 MB publicado en la release `v0.1.0` de GitHub |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal estándar usado en modo prefill-only: no hay decodificación autorregresiva. La entrada es una única secuencia empaquetada con la forma `<state> … <q> instr <opt> o1 </opt> <opt> o2 </opt> … <decide> <q> … <decide> …`. La máscara de atención permite que cada token de pregunta vea el estado y su propia rama, pero no las demás preguntas, y las position ids se reinician tras el estado en cada rama, de modo que todas las preguntas comparten el mismo estado sin contaminarse entre sí. La cabeza puntúa cada estado oculto de `</opt>` contra el estado oculto de `<decide>` y aplica softmax para producir la distribución. El código de aplicación traduce esas distribuciones al contrato de la API: `choice`/`confidence` para Choice, `p(yes)` para Noul y el nivel esperado para Score. Los tokens reservados son tokens especiales ya existentes de Qwen (`<|fim_prefix|>`, `<|fim_middle|>`, `<|box_start|>`, `<|box_end|>`, `<|fim_suffix|>`), y el texto de usuario se sanea para que no pueda generarlos.
+El modelo parte de `Qwen/Qwen2.5-0.5B` congelado y añade un adaptador LoRA de rango 16, alpha 32 y dropout 0,05 aplicado a `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj` en las 24 capas. La cabeza de decisión consta de dos proyecciones lineales de 896 a 256: una genera la consulta a partir del token `<decide>` y otra la clave a partir de cada `</opt>`; el producto escalar se normaliza con softmax sobre las opciones. Los tokens reservados reutilizan especiales existentes de Qwen (`<|fim_prefix|>`, `<|fim_middle|>`, `<|box_start|>`, `<|box_end|>`, `<|fim_suffix|>`) y el texto de usuario se sanea para que no pueda generarlos.
 
-El entrenamiento parte de seis datasets públicos convertidos a peticiones con forma de TypeSafe y renderizados con el mismo código que se usa en servicio (`api.to_record()`): 1.500 registros por fuente desde los splits `train` estándar, lo que da 9.000 registros y 13.500 preguntas (4.500 Choice, 6.000 Noul y 3.000 Score). Las fuentes son Banking77 (Choice, K = 77), BoolQ (Noul), AG News (Choice K = 4 + 2 Noul), MNLI (Choice K = 3), SST-5 (Score de 5 niveles) y Yelp Review Full (Score de 5 niveles + Noul, con texto truncado a 220 palabras). En la conversión se aplicó variación de renderizado: alrededor del 30 % de descripciones de opción nulas, ~10 % con descripciones estructuradas `{"what": …}`, ~15 % de instrucciones estructuradas `{"question", "focus"}` y ~32 % de estados envueltos como objetos o arrays (`{"document"}`, `{"ticket": {"channel","body"}}`, `[{"role","content"}]`). No se documenta RLHF ni DPO: es ajuste supervisado sobre los seis conjuntos reformateados.
+El entrenamiento usa seis datasets públicos convertidos a peticiones con forma de TypeSafe y renderizados con el mismo código que se emplea en servicio (`api.to_record()`). Se muestrearon 1.500 registros por fuente de los splits de train estándar, lo que da 9.000 registros y 13.500 preguntas: 4.500 de tipo Choice, 6.000 de tipo Noul y 3.000 de tipo Score. Las fuentes son Banking77 (Choice con K=77, nombres de intención como claves y 50% de `null`), BoolQ (Noul, pasaje como estado y 40% con criterios `true`/`false`), AG News (Choice K=4 más 2 preguntas Noul derivadas), MNLI (Choice K=3 con la premisa como estado), SST-5 y Yelp Review Full. No se documenta uso de RLHF ni DPO; el ajuste es supervisado sobre las distribuciones objetivo de cada pregunta.
+
+La innovación técnica principal es el enmascaramiento por rama: cada token de pregunta puede atender al estado y a su propia rama, nunca a otras preguntas, y los ids de posición se reinician tras el estado en cada rama. Esto permite evaluar decenas de preguntas en un solo forward pass con estado compartido, a coste de una máscara de atención no estándar.
 
 ## Capacidades
 
-- Decisión con distribución de probabilidad completa: devuelve una probabilidad por opción, no una etiqueta seca ni texto generado.
-- Preguntas de sí/no (`noul`) con probabilidad `p(yes)` directamente interpretable.
-- Elección múltiple (`choice`) con entre 2 y 255 opciones y un campo de confianza asociado.
-- Puntuación ordinal (`score`) con entre 2 y 255 niveles ordenados, con nivel esperado calculado a partir de la distribución.
-- Múltiples preguntas por documento en un solo forward pass, con estado compartido y ramas aisladas entre sí.
-- Calibración explícita como objetivo: ECE de 0,065 en 10 bins, reducible a 0,031 con temperature scaling (T = 1,47).
-- Compatibilidad a nivel de API con el contrato `/v1/systemone` de TypeSafe, consumible desde `typesafe-sdk`.
-- Entrada en texto plano estructurado (objetos JSON, arrays de mensajes) gracias a la variación de renderizado del entrenamiento.
-- Capacidad multilingüe: no disponible; solo se declara inglés.
-- Tool calling, function calling y razonamiento multi-paso en varios turnos: no disponibles (el modelo no genera texto ni ejecuta agentes).
-- Visión y audio: no disponibles.
+- Clasificación y decisión tipada en tres formatos: `noul` (sí/no), `choice` (entre 2 y 255 opciones) y `score` (entre 2 y 255 niveles ordenados).
+- Salida de distribuciones de probabilidad calibradas por pregunta, no texto generado.
+- Evaluación de múltiples preguntas independientes sobre un mismo estado en un único forward pass.
+- Lectura de probabilidad directa mediante cabeza de punteros sobre los estados ocultos de cada opción.
+- Calibración post-hoc mediante temperature scaling (T=1,47 en la evaluación declarada).
+- Servicio compatible con el contrato de API `/v1/systemone` de TypeSafe, con SDK cliente (`typesafe-sdk`).
+- No soporta tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
+- Capacidad multilingüe limitada al inglés.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte con umbral de confianza: se construye el estado con el cuerpo del ticket y se lanzan varias preguntas `choice` (categoría, urgencia, equipo) en una sola pasada; el `confidence` por rama permite derivar a revisión humana los casos por debajo de un umbral en lugar de aceptar una etiqueta dudosa.
-- Clasificación de intención bancaria: el modelo fue entrenado con Banking77, por lo que puede etiquetar consultas de clientes entre 77 intenciones usando los nombres de intención como claves de opción, con la ventaja de exponer la probabilidad de cada una.
-- Filtrado y priorización de reseñas: con Yelp Review Full y SST-5 como fuentes de `score`, puede asignar un nivel ordenado de satisfacción y, en la misma pasada, responder una pregunta `noul` de tipo «¿recomendaría el producto?» (estrellas ≥ 4 en la definición del dataset).
-- Inferencia de relación textual (NLI): con MNLI como fuente, dada una premisa como estado y una hipótesis en la instrucción, decide entre las tres etiquetas de implicación como pregunta `choice` de K = 3.
-- Validación y auditoría de implementaciones del contrato System One: al ser un prototipo que reproduce la arquitectura inferida para Jev, sirve como implementación de referencia para comprobar el comportamiento de la API, incluida la sensibilidad al orden de las opciones.
-- Investigación sobre calibración de readouts directos: sus métricas ECE (0,065 sin ajustar, 0,031 tras temperature scaling) lo hacen útil para estudiar escalado de temperatura y detección de sobreconfianza en modelos pequeños.
-- Etiquetado de bajo coste en local: al ser un adaptador de 9,3 M de parámetros sobre un backbone de 494 M, cabe en un portátil y puede ejecutarse en MPS para etiquetar lotes pequeños sin GPU dedicada.
-- Demos docentes sobre atención con estado compartido: la máscara block-causal permite ilustrar cómo varias preguntas comparten contexto sin verse entre ellas, algo difícil de mostrar con un modelo generativo convencional.
-- Encuestas y formularios automatizados: un documento de texto libre como estado y varias preguntas `score`/`choice` para extraer respuestas estructuradas con incertidumbre asociada.
+- Enrutamiento de intenciones en asistentes conversacionales: dado el historial como estado, se formulan varias preguntas `choice` (intención principal, urgencia, necesidad de escalado) y se obtienen distribuciones en un solo paso, lo que permite umbrales de confianza y derivación a humano cuando la probabilidad máxima es baja.
+- Moderación asistida con revisión humana: preguntas `noul` sobre categorías concretas de contenido, usando la probabilidad de «sí» como señal para priorizar la cola de revisión, nunca como decisión automática.
+- Extracción de señales estructuradas de documentos: para un contrato o informe como estado, preguntas `noul` y `score` sobre presencia de cláusulas y nivel de riesgo, aprovechando que el estado se comparte entre todas las preguntas y el coste es un único prefill.
+- Investigación en calibración: el modelo expone ECE y NLL sobre distribuciones directas, lo que lo hace útil para experimentos de temperature scaling, sensibilidad al orden de opciones y comparación entre lectura por punteros y generación de etiquetas.
+- Clasificación de tickets de soporte: preguntas `choice` sobre categoría (aprovechando el formato de Banking77) y `score` sobre severidad, con la ventana de 8.192 tokens por rama para hilos de correo largos.
+- Docencia y demos locales: el paquete completo pesa 38 MB y se sirve con `python -m kev.serve --run runs/kev` en un portátil, lo que permite mostrar el mecanismo de decisión tipada sin infraestructura GPU.
+- Pruebas de compatibilidad de API: validar implementaciones cliente contra el contrato `/v1/systemone` usando `typesafe-sdk` con `base_url="http://127.0.0.1:8009"`.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card, no verificados de forma independiente. El conjunto de evaluación es un split held-out de las seis fuentes de entrenamiento con 1.350 preguntas.
+Resultados declarados por el autor (no verificados) sobre el split held-out de las seis fuentes de entrenamiento, 1.350 preguntas:
 
-| Tarea | Dataset | Métrica | Valor | Verificado |
-|---|---|---|---|---|
-| Decisión tipada (choice / noul / score) | Held-out de las seis fuentes de entrenamiento (1.350 preguntas) | Accuracy | 0,799 | No |
-| Decisión tipada (choice / noul / score) | Held-out de las seis fuentes de entrenamiento (1.350 preguntas) | ECE (10 bins) | 0,065 | No |
-| Decisión tipada (choice / noul / score) | Held-out de las seis fuentes de entrenamiento (1.350 preguntas) | ECE tras temperature scaling (T = 1,47) | 0,031 | No |
+| Metrica | Valor |
+|---|---|
+| Accuracy | 0,799 |
+| ECE (10 bins) | 0,065 |
+| ECE tras temperature scaling (T=1,47) | 0,031 |
 
-No hay resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar en la información disponible. Tampoco se publican métricas desagregadas por tipo de pregunta (Choice, Noul, Score) ni por fuente de datos.
+En ítems fuera de dominio (transfer-v4 dev), el autor reporta 0,561 para este modelo frente a 0,643, 0,794 y 0,812 para Kev-0.8B, Kev-4B y Kev-9B respectivamente. No se han publicado en la información disponible resultados en benchmarks estándar como MMLU, HumanEval o GSM8K, que además no aplican a un modelo de decisión que no genera texto.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo a partir de los ~503 M de parámetros totales, no publicado por el autor): ~2,0 GB en fp32 (precisión declarada de entrenamiento y servicio), ~1,0 GB en fp16/bf16, ~0,5 GB en int8 y ~0,25 GB en int4. A estas cifras hay que sumar activaciones, que dependen del número de ramas de pregunta y de la longitud de cada rama.
-- Cabe en GPU de consumo: sí, en cualquier GPU con 4 GB o más de VRAM (por ejemplo RTX 3050, RTX 3060, RTX 4060 o superiores), y también en CPU y en Apple Silicon vía MPS, que es el entorno declarado por el autor.
-- GPU de datacenter: no se documenta ningún despliegue en A100, H100 ni similares; el checkpoint se entrenó y se sirve sobre Apple MPS en fp32.
-- Opciones de despliegue: la vía documentada es `python -m kev.serve --run runs/kev`, que expone `POST /v1/systemone` en `http://127.0.0.1:8009` y puede consumirse con `typesafe-sdk`. Los pesos se cargan con PEFT (adaptador LoRA) más `head.pt` para la cabeza personalizada. No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama ni otros motores de generación, y en la práctica no son aplicables sin trabajo adicional porque el modelo es prefill-only y su salida la produce una cabeza propia, no la LM head.
-- Latencia y throughput: no disponibles (no se publican mediciones).
-- Distribución de pesos: `kev-0.5b.tar.gz` (38 MB) desde la release v0.1.0 de GitHub, con `adapter_model.safetensors`, `head.pt`, los ficheros del tokenizador, `eval.json` y el log de entrenamiento; SHA-256 `15639f79…6e12f8` con digest completo en el fichero `.sha256`. Se extrae en `runs/kev/` y los pesos no están versionados en git.
+- VRAM estimada: no disponible de forma explícita; con backbone de 494M en fp32 y adaptador de 9,3M, la inferencia cabe holgadamente en menos de 4 GB, aunque el autor solo documenta ejecución en Apple MPS.
+- GPU recomendadas: no disponibles; el autor entrena y sirve en Apple Silicon vía MPS. Cualquier GPU consumer con 4-6 GB permitiría alojar el modelo en fp32 o fp16.
+- Cabe en GPU consumer: sí, por tamaño; no hay validación publicada en CUDA.
+- Opciones de despliegue: servidor propio del repositorio (`python -m kev.serve --run runs/kev`) y cliente `typesafe-sdk`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y la máscara de atención por rama y la cabeza de punteros harían necesaria una implementación específica.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de benchmarks comparables publicados para modelos de decisión de este tipo, por lo que la comparación se limita a características declaradas y a la relación con su modelo base.
-
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento (transfer-v4 dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-0.5b | 9,3 M entrenables sobre 494 M congelados (~503 M) | 384 tokens de estado y 1.024 por rama en entrenamiento; 8.192 por rama en servicio | Accuracy 0,799 y ECE 0,065 en held-out propio (no verificado) | Apache-2.0 (adaptador y cabeza) | LoRA + cabeza, 38 MB en release de GitHub |
-| Qwen2.5-0.5B (modelo base) | 494 M | 32.768 tokens según la información del modelo base | No disponible | Apache-2.0 | Pesos completos en el Hub |
-| Clasificadores encoder supervisados de tamaño similar (familia DeBERTa y afines) | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Kev-0.5B | 494M + 9,3M adaptador | 8.192 por rama en servicio | 0,561 | Apache-2.0 (adaptador) | Hub y GitHub release `v0.1.0` |
+| Kev-0.8B | No disponible en la información | No disponible | 0,643 | No disponible | Hub |
+| Kev-4B | No disponible en la información | No disponible | 0,794 | No disponible | Hub |
+| Kev-9B | No disponible en la información | No disponible | 0,812 | No disponible | Hub |
 
-La diferencia funcional frente al modelo base es que Qwen2.5-0.5B genera texto y no ofrece probabilidades calibradas sobre opciones discretas, mientras que kev-0.5b devuelve directamente una distribución sobre un conjunto de opciones tipadas y no genera texto en ningún caso. Frente a un clasificador encoder convencional, el enfoque es más flexible en el número de opciones y en el número de preguntas simultáneas sobre un mismo estado, pero no hay datos públicos que permitan comparar su precisión con la de esas alternativas.
+Los tres modelos superiores de la misma familia usan bases Qwen3.5 y suites de evaluación con checksum congelado, según la model card. No se dispone de datos de modelos de decisión de otros autores para comparar.
 
 ## Limitaciones y advertencias
 
-- Es un prototipo de investigación entrenado en un portátil; el propio autor lo declara no apto para producción y no equivalente al Jev de TypeSafe.
-- Uso no previsto explícito: cualquier decisión que afecte a personas, incluidas moderación, fraude, crédito, selección de personal y enrutado médico o legal.
-- La calibración solo está verificada sobre las distribuciones de entrenamiento; el comportamiento sobre tareas no vistas no se ha medido, por lo que el ECE de 0,065 no es extrapolable.
-- El conocimiento está limitado por un backbone de 0,5 B de parámetros, con la consiguiente superficialidad en dominios especializados.
-- Riesgo de alucinación: aunque no genera texto, puede producir decisiones seguras y erróneas fuera de la distribución de entrenamiento; el ECE tras temperature scaling (0,031) presupone aplicar ese reescalado con T = 1,47.
-- Idioma: solo inglés; no hay capacidades multilingües declaradas.
-- Longitud de contexto: aunque en servicio se permiten 8.192 tokens por rama, el entrenamiento usó como máximo 384 tokens de estado y 1.024 por rama, de modo que el rendimiento más allá de esas longitudes es una extrapolación no validada.
-- Sensibilidad al orden de las opciones: el propio autor la señala como línea de investigación abierta, lo que implica que reordenar las opciones puede cambiar la distribución.
-- Licencia: el adaptador y la cabeza son Apache-2.0, pero el uso comercial debe considerar también la licencia del modelo base y las licencias individuales de los seis datasets de entrenamiento (Banking77, BoolQ, AG News, MNLI, SST-5 y Yelp Review Full).
-- Integración: no existe soporte para motores de inferencia estándar (vLLM, TGI, llama.cpp, Ollama); el despliegue depende del código propio `kev.serve` y de cargar la cabeza con PyTorch.
-- Saneado de entrada: el texto de usuario se filtra para impedir la aparición de tokens especiales reservados de Qwen; cualquier integración que omita ese saneado altera el comportamiento del modelo.
-- Los resultados de benchmark están declarados por el autor y marcados como no verificados.
+- Modelo superado: el propio autor indica que debe usarse la familia actual (0.8B, 4B, 9B) para cualquier fin distinto de la reproducibilidad.
+- No apto para decisiones que afecten a personas: moderación, fraude, crédito, contratación o enrutamiento médico y legal quedan explícitamente fuera de uso previsto.
+- Calibración verificada solo en las distribuciones de entrenamiento; el comportamiento en tareas desconocidas no está medido y el ECE de 0,065 sin escalar indica desviaciones apreciables.
+- Conocimiento limitado por un backbone de 0,5B y solo en inglés.
+- Riesgo de alucinación estructural: al no generar texto, el fallo se manifiesta como distribuciones seguras pero incorrectas, lo que puede pasar desapercibido si solo se consulta la etiqueta de máxima probabilidad.
+- Dependencia de tokens reservados de Qwen y de saneado del texto de usuario; una sanitización defectuosa podría permitir inyección de tokens especiales.
+- Sensibilidad al orden de las opciones no cuantificada en la información disponible.
+- La licencia Apache-2.0 cubre adaptador y cabeza, pero los datasets de entrenamiento tienen licencias propias que deben revisarse para uso comercial.
+- Los resultados de benchmarks están declarados por el autor y marcados como no verificados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jaredpalmer/kev-0.5b
-- Repositorio con código, receta de entrenamiento, evaluación y demo: https://github.com/jaredpalmer/kev
-- Pesos (release v0.1.0, `kev-0.5b.tar.gz`, 38 MB): https://github.com/jaredpalmer/kev/releases/tag/v0.1.0
-- Artículo de referencia sobre la arquitectura inferida de Jev: https://archerhume.com/posts/jevs-architecture-unmasked
+- Repositorio de código, receta de entrenamiento y demo: https://github.com/jaredpalmer/kev
+- Pesos (release `v0.1.0`, `kev-0.5b.tar.gz`): https://github.com/jaredpalmer/kev/releases/tag/v0.1.0
+- Artículo sobre la arquitectura de Jev: https://archerhume.com/posts/jevs-architecture-unmasked
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
-- Datasets de entrenamiento: https://huggingface.co/datasets/legacy-datasets/banking77, https://huggingface.co/datasets/google/boolq, https://huggingface.co/datasets/fancyzhx/ag_news, https://huggingface.co/datasets/nyu-mll/multi_nli, https://huggingface.co/datasets/SetFit/sst5, https://huggingface.co/datasets/Yelp/yelp_review_full

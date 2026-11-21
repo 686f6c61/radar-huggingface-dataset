@@ -5,7 +5,7 @@
   "author": "Jackrong",
   "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2-GGUF",
   "created_at": "2026-09-19T16:38:01.000Z",
-  "updated_at": "2026-09-21T23:12:05.000Z",
+  "updated_at": "2026-11-21T01:45:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -55,7 +55,7 @@
     "region:us"
   ],
   "likes": 75,
-  "downloads_30d": 857391,
+  "downloads_30d": 863217,
   "trending_score": 10,
   "parameters": 460730096,
   "parameters_human": "460.7M",

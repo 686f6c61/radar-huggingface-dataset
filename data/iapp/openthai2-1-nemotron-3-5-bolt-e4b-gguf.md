@@ -2,111 +2,106 @@
 
 ## Resumen
 
-OpenThai 2.1 Bolt E4B GGUF es la distribucion cuantizada en formato GGUF del modelo OpenThai 2.1 Nemotron 3.5 Bolt E4B, desarrollado por iApp Technology (iapp) dentro de la familia OpenThai. El modelo esta pensado para ejecucion local con llama.cpp y actua como modelo de arranque de ChindaBot, el asistente del propio autor. Su proposito es ofrecer un modelo conversacional bilingue tailandes-ingles con capacidad de vision y tool calling que pueda correr en hardware de consumo.
+OpenThai 2.1 Bolt E4B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 7.463.013.674 parametros totales y aproximadamente 4.000 millones de parametros activos por token (la nomenclatura "E4B" indica expertos activos de 4B). Lo desarrolla iApp Technology junto con AIEAT y forma parte del linaje OpenThai, orientado a un ajuste fino del modelo base NVIDIA Nemotron 3.5 Bolt E4B (BF16). Esta distribucion concreta en GGUF esta pensada para su uso en llama.cpp y como modelo de arranque del agente ChindaBot.
 
-El modelo base se construye sobre NVIDIA Nemotron 3.5 Bolt E4B, que a su vez es un post-entrenamiento de Google Gemma 4 E4B-it. La nomenclatura E4B hace referencia a la arquitectura de eficiencia de Gemma 4 con aproximadamente 4.000 millones de parametros efectivos, mientras que el checkpoint safetensors declara 7.463.013.674 parametros totales. El repositorio GGUF ocupa 28,5 GB e incluye tres ficheros: cuantizacion Q4_K_M (5,30 GB), Q8_0 (7,97 GB) y un proyector multimodal F16 (0,99 GB).
+El modelo cubre tareas de generacion de texto conversacional y razonamiento en tailandes e ingles, con soporte de tool calling, modo de razonamiento (thinking) activable por peticion y un proyector multimodal (imagen y audio) heredado del modelo base. La segunda revision (15 de noviembre de 2026) reentrena con verificacion programatica de respuestas de matematicas y seguimiento de instrucciones, ademas de anadir respuestas de codigo en ingles que pasan tests unitarios.
 
-La relevancia actual del modelo reside en su enfoque en tailandes: la model card reporta evaluaciones especificas en ThaiExam, OpenThaiEval e IFEval-TH, ademas de pruebas de humo con tool calling y vision en tailandes. La licencia es OpenMDW-1.1, lo que condiciona el uso comercial y conviene revisar antes de desplegarlo.
+Su relevancia actual radica en que ofrece un modelo tailandes de peso abierto, con cuantizaciones listas para CPU y GPU de consumo, y con resultados de benchmarks publicados tanto para BF16 como para Q4_K_M y Q8_0, lo que permite evaluar con rigor el coste de la cuantizacion. Los pesos BF16 no estan publicados todavia; solo las versiones GGUF.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado de NVIDIA Nemotron 3.5 Bolt E4B, post-entrenado desde Google Gemma 4 E4B-it) |
+| Arquitectura | Mixture-of-Experts (MoE), transformer; linaje Gemma 4 / Nemotron 3.5 Bolt (segun tags del autor) |
 | Parametros totales | 7.463.013.674 |
-| Parametros activos | no disponible (la nomenclatura E4B sugiere parametros efectivos, pero no se detalla en la informacion disponible) |
-| Longitud de contexto | 32.768 tokens (configuracion de ChindaBot con `--ctx-size 32768`); el ejemplo de llama.cpp usa 8.192 |
-| Tipos de cuantizacion | Q4_K_M, Q8_0, F16 (proyector multimodal) |
+| Parametros activos | aproximadamente 4.000 millones (denominacion E4B) |
+| Longitud de contexto | 32.768 tokens (configuracion de ChindaBot con `--ctx-size 32768`); valor maximo nativo no disponible |
+| Tipos de cuantizacion | Q4_K_M (5,30 GB), Q8_0 (7,97 GB); proyector multimodal F16 (0,99 GB) |
 | Idiomas soportados | tailandes (th), ingles (en) |
-| Licencia | OpenMDW-1.1 (`license: other` en Hugging Face) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Licencia | OpenMDW 1.1 (`openmdw-1.1`) |
+| Formato de pesos | GGUF (llama.cpp); BF16 no publicado |
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la informacion disponible la arquitectura interna del modelo base mas alla de su linaje: NVIDIA Nemotron 3.5 Bolt E4B, post-entrenado por NVIDIA a partir de Google Gemma 4 E4B-it. El sufijo E4B y el tamano de checkpoint (7.463 millones de parametros totales) apuntan a un diseno de eficiencia de parametros, pero la model card no especifica si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni el numero de parametros activos por token.
+El modelo parte de NVIDIA Nemotron 3.5 Bolt E4B (BF16) y es un ajuste fino sobre el mismo. La arquitectura es un transformer con capas de mezcla de expertos (MoE), con 7.463.013.674 parametros totales y un subconjunto activo de aproximadamente 4.000 millones por token. Los tags del autor apuntan a un linaje Gemma 4 combinado con Nemotron, pero la model card no detalla la composicion exacta de capas, el numero de expertos ni el mecanismo de enrutamiento.
 
-Tampoco se documentan en esta ficha el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La model card remite explicitamente al repositorio principal para datos de entrenamiento y limitaciones. Lo que si se documenta es el proceso de cuantizacion: los ficheros GGUF se generaron a partir del modelo BF16 y se validaron con llama.cpp build b12242, comparando resultados contra el modelo BF16 servido con vLLM v0.31.0. El modelo soporta modo de razonamiento (thinking) activable por peticion mediante `chat_template_kwargs.enable_thinking`, con la traza devuelta en el campo `reasoning_content`.
+El entrenamiento de la segunda revision introduce verificacion programatica: las respuestas de matematicas y de seguimiento de instrucciones se conservan solo si un programa las valida, y se anaden respuestas de codigo en ingles que superan tests unitarios. No se especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si se empleo RLHF o DPO; esos datos figuran como no disponibles en la model card. Entre las innovaciones operativas destaca el control explicito del modo de razonamiento: la plantilla de chat permite activar thinking por peticion mediante `chat_template_kwargs`, devolviendo la traza en `reasoning_content` y la respuesta final en `content`. El proyector multimodal `mmproj` heredado del base permite procesar imagen y audio.
 
 ## Capacidades
 
-- Generacion de texto conversacional en tailandes e ingles, con plantilla de chat propia aplicada via `--jinja`.
-- Modo de razonamiento (thinking) opcional por peticion; por defecto desactivado con `--reasoning off`.
-- Tool calling / function calling: la model card reporta seleccion correcta de herramienta y argumentos en tres pruebas (clima, calculadora, listado de festivos) con el resultado devuelto al modelo.
-- Vision: el proyector multimodal `mmproj-OpenThai-2.1-Bolt-E4B-F16.gguf` permite procesar imagenes; se validaron dos casos (formas geometricas de colores y un recibo impreso en ingles consultado en tailandes).
-- Audio: la model card menciona que el proyector cubre imagen "(and audio)", sin mas detalle sobre pruebas de audio.
-- Razonamiento aritmetico basico con thinking activado (caso validado: cambio de 100 baht tras comprar 7 boligrafos a 12 baht, respuesta correcta de 16 baht).
-- Redaccion de textos utilitarios en tailandes (correo de baja por enfermedad con marcadores de posicion).
-- Capacidad de explicar conceptos con restricciones de longitud (explicacion de IA frente a machine learning en maximo 5 lineas).
+- Generacion de texto conversacional multi-turno en tailandes e ingles.
+- Razonamiento con modo thinking activable por peticion (traza separada de la respuesta).
+- Matematicas basicas y de nivel escolar, con respuestas verificadas programaticamente en el entrenamiento (por ejemplo, calculo de cambio: 100 baht menos 7 boligrafos a 12 baht = 16 baht).
+- Generacion de codigo en ingles, con respuestas de entrenamiento filtradas por tests unitarios.
+- Tool calling / function calling: seleccion de herramienta y argumentos correctos (probado con clima, calculadora y listado de festivos).
+- Capacidades de agente y razonamiento multi-paso con resultados de herramientas reinyectados.
+- Vision: descripcion de formas y colores en imagenes y lectura de recibos impresos en ingles, consultados en tailandes.
+- Audio: proyector compatible con audio segun la model card (sin pruebas detalladas publicadas).
+- Seguimiento de instrucciones de formato (IFEval-TH): respuestas con limite de lineas y correos electronicos con marcadores de posicion.
+- Multilingue limitado a th y en; no hay evidencia de otros idiomas.
 
 ## Casos de uso
 
-- Asistencia conversacional en tailandes para atencion al cliente: el modelo mantiene conversaciones multi-turno con una ventana de hasta 32.768 tokens configurada en ChindaBot, suficiente para hilos largos con historial e instrucciones de sistema.
-- Despliegue local en estaciones de trabajo sin GPU: las pruebas de humo se ejecutaron en CPU con 32 hilos y el fichero Q4_K_M respondio en 0,3 s a una pregunta corta y en 11,3 s a la generacion de un correo de 301 tokens, lo que lo hace viable en portatiles y equipos de oficina.
-- Automatizacion con herramientas en flujos de negocio: integracion como backend de function calling para consultar APIs de clima, calculadoras o calendarios, devolviendo al usuario una respuesta en tailandes a partir del resultado de la herramienta.
-- Procesamiento de documentos e imagenes en tailandes: uso del proyector multimodal para extraer totales y lineas de recibos o describir imagenes cuando la consulta se formula en tailandes.
-- Generacion de contenido administrativo en tailandes: redaccion de correos, comunicaciones internas y resumenes con plantillas y marcadores de posicion, adecuado para pymes que operan en ese idioma.
-- Evaluacion y prototipado de modelos tailandeses: al incluir resultados en ThaiExam, OpenThaiEval e IFEval-TH con y sin cuantizacion, sirve como linea base reproducible para comparar futuras variantes.
-- Educacion y explicaciones acotadas: respuestas breves con limite de lineas para material didactico o soporte a estudiantes, como el caso validado de IA frente a machine learning en cinco lineas.
+- Atencion al cliente en tailandes: gestion de conversaciones multi-turno con hasta 32.768 tokens de contexto, adecuado para historiales de incidencia largos y respuestas con marcadores de posicion para datos dinamicos.
+- Agente con herramientas en produccion: el modelo elige herramienta y argumentos de forma fiable (16 de 16 casos en la prueba del autor), por lo que puede integrarse en pipelines de consulta de clima, calculo o calendario con reinyeccion del resultado.
+- Automatizacion de correo y comunicaciones internas: genera correos en tailandes con campos pendientes de rellenar, apropiado para flujos de RR. HH. como solicitudes de baja.
+- Extraccion de datos de recibos y documentos: con el proyector `mmproj` lee recibos impresos en ingles y responde en tailandes con totales e items, util para digitalizacion de gastos.
+- Educacion y explicaciones divulgativas: produce respuestas breves y acotadas por instrucciones (por ejemplo, explicar IA frente a aprendizaje automatico en cinco lineas) para asistentes escolares.
+- Razonamiento con verificacion: activando thinking por peticion, resuelve calculos aritmeticos con traza auditable en `reasoning_content`, util para tareas donde se requiere revisar el razonamiento.
+- Despliegue en CPU y equipos sin GPU: la version Q4_K_M (5,30 GB) corre en llama.cpp solo con CPU (32 hilos probados), lo que habilita entornos de borde o estaciones de trabajo sin acelerador.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados en la model card con thinking desactivado y decodificacion greedy. Los ficheros GGUF se ejecutaron en llama.cpp b12242 (CPU) y el BF16 en vLLM v0.31.0, por lo que las diferencias incluyen el cambio de motor. Delta es la diferencia pareada respecto a BF16 y SE su error estandar.
+Resultados del autor con thinking off y decodificacion greedy. Los GGUF se ejecutaron en llama.cpp b12242 (CPU) y el BF16 en vLLM v0.31.0, por lo que las diferencias incluyen el cambio de motor.
 
-| Benchmark | Q4_K_M | Q8_0 | BF16 |
+| Benchmark (n) | Q4_K_M | Q8_0 | BF16 |
 |---|---|---|---|
-| ThaiExam (565 preguntas) | 65,5 (Delta -1,96; SE 1,40) | 66,4 (Delta -1,08; SE 0,84) | 67,4 |
-| OpenThaiEval (1.232) | 66,2 (Delta -1,62; SE 0,92) | 67,9 (Delta +0,08; SE 0,31) | 67,8 |
-| IFEval-TH (215) | 78,6 (Delta -0,93; SE 0,93) | 80,0 (Delta +0,47; SE 0,81) | 79,5 |
+| ThaiExam (565) | 65,5 (Δ −1,75; SE 1,46) | 68,1 (Δ +0,87; SE 0,78) | 67,3 |
+| OpenThaiEval (1.232) | 66,5 (Δ −1,54; SE 0,91) | 67,3 (Δ −0,73; SE 0,31) | 68,0 |
+| IFEval-TH (215) | 79,1 (Δ −0,47; SE 1,04) | 79,5 (Δ 0,00; SE 0,66) | 79,5 |
 
-Ninguna diferencia supera el doble de su error estandar. Q4_K_M queda por debajo de BF16 en las tres pruebas; Q8_0 se mantiene a menos de 1,1 puntos de BF16 en cada una. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni comparaciones con modelos de terceros.
+Comparacion con el modelo base (mismo proceso de cuantizacion Q4_K_M): 65,2 en ThaiExam, 66,2 en OpenThaiEval y 77,7 en IFEval-TH; la diferencia de este modelo frente al base es de +0,31 (SE 1,23), +0,32 (SE 0,66) y +1,40 (SE 1,54), respectivamente.
 
-Pruebas de humo (llama.cpp b12242, `--jinja --reasoning off`, solo CPU, 32 hilos, greedy):
-
-| Prueba | Resultado |
-|---|---|
-| Identificacion del modelo (Q4_K_M) | Se identifica como OpenThai 2.1 Bolt E4B del equipo OpenThai de iApp Technology con AIEAT; 73 tokens, 2,8 s |
-| Capital de Japon (Q4_K_M) | "Tokio" en tailandes; 5 tokens, 0,3 s |
-| Correo de baja por enfermedad (Q4_K_M) | Correo en tailandes con marcadores; 301 tokens, 11,3 s |
-| IA frente a machine learning, max. 5 lineas (Q4_K_M) | Respuesta corta en tailandes; 82 tokens, 3,1 s |
-| Cambio de 100 baht, thinking on (Q4_K_M) | 16 baht, correcto; traza en `reasoning_content`; 299 tokens, 11,6 s |
-| Dos imagenes consultadas en tailandes (ChindaBot, Q4_K_M) | Correcto: tres formas y sus colores; total 215 y ambos articulos del recibo |
-| Tres peticiones con herramientas (ChindaBot, Q4_K_M) | Herramienta y argumentos correctos en cada caso, respuesta en tailandes |
-| Peticion de relato con herramientas ofrecidas (ChindaBot, Q4_K_M) | Respuesta directa sin llamada a herramienta |
+Pruebas de humo en llama.cpp b12242, CPU, 32 hilos, greedy, thinking off salvo indicacion: identificacion correcta como OpenThai 2.1 Bolt E4B (65 tokens, 2,6 s); capital de Japon "Tokio" (5 tokens, 0,3 s); correo de baja en tailandes (283 tokens, 11,0 s); explicacion IA frente a ML en cinco lineas (125 tokens, 5,1 s); calculo de cambio con thinking on (16 baht, traza separada, 299 tokens, 12,0 s). No aparecieron marcadores de plantilla de chat en ninguna respuesta. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q4_K_M requiere aproximadamente 5,3 GB de pesos mas overhead de contexto; Q8_0 aproximadamente 8,0 GB; el proyector multimodal anade 0,99 GB cuando se usa vision o audio.
-- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, cualquier GPU consumer con 8 GB o mas puede alojar Q4_K_M; Q8_0 requiere 10-12 GB para operar con contexto amplio.
-- Cabe en GPU consumer: si, con Q4_K_M en tarjetas de 8 GB o superiores y con Q8_0 en tarjetas de 12 GB o superiores (estimacion por tamano de fichero, no validada en la model card).
-- Despliegue: llama.cpp (build b12242 probado), llama-server con `--jinja` obligatorio; el modelo base BF16 se sirvio con vLLM v0.31.0. No se mencionan Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: en CPU con 32 hilos y Q4_K_M, 5 tokens en 0,3 s (pregunta corta) y 301 tokens en 11,3 s (correo), lo que equivale a unos 26-27 tokens/s en generacion sostenida en ese entorno. No hay datos de throughput en GPU.
+- VRAM/RAM para inferencia: Q4_K_M requiere aproximadamente 5,30 GB de pesos; Q8_0 aproximadamente 7,97 GB; anadir 0,99 GB si se usa el proyector multimodal F16. El KV cache y el contexto de 32.768 tokens incrementan el consumo segun la implementacion.
+- GPU recomendadas: no especificadas por el autor; por tamano, Q4_K_M encaja en GPU de consumo con 8 GB o mas de VRAM (por ejemplo, RTX 3060 8 GB, RTX 4060 Ti 8 GB) y con holgura en RTX 4090 (24 GB) o A100/H100. Q8_0 requiere al menos 8-10 GB de VRAM o uso en CPU.
+- Cabe en GPU de consumo: si, con Q4_K_M en tarjetas de 8 GB o superior; Q8_0 en 12 GB o superior.
+- Opciones de despliegue: llama.cpp (probado con build b12242, `llama-server` con `--jinja --reasoning off -c 8192`); vLLM solo para BF16 (no publicado); Ollama y TGI no estan confirmados por el autor.
+- Latencia y throughput: medidos en CPU (32 hilos, greedy): 0,3 s para 5 tokens, 2,6 s para 65 tokens, 5,1 s para 125 tokens, 11,0 s para 283 tokens y 12,0 s para 299 tokens. No hay cifras de throughput en GPU publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Benchmarks clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThai 2.1 Bolt E4B GGUF (este) | 7.463 M totales | 32.768 (config. ChindaBot) | th, en | OpenMDW-1.1 | GGUF |
-| OpenThai 2.1 Nemotron 3.5 Bolt E4B (base) | 7.463 M totales | no disponible | th, en | OpenMDW-1.1 | safetensors |
-| NVIDIA Nemotron 3.5 Bolt E4B | no disponible | no disponible | no disponible | OpenMDW-1.1 | no disponible |
-| Google Gemma 4 E4B-it | no disponible (E4B) | no disponible | no disponible | Apache 2.0 | no disponible |
+| OpenThai 2.1 Bolt E4B (este) | 7,46 B totales / ~4 B activos | 32.768 (config probada) | ThaiExam 67,3; OpenThaiEval 68,0; IFEval-TH 79,5 (BF16) | OpenMDW 1.1 | GGUF Q4_K_M y Q8_0; BF16 no publicado |
+| NVIDIA Nemotron 3.5 Bolt E4B (base) | 7,46 B totales / ~4 B activos | no disponible | Q4_K_M: 65,2 / 66,2 / 77,7 | no disponible en la informacion | BF16 en `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` |
+| Primera release de OpenThai 2.1 Bolt E4B | 7,46 B totales / ~4 B activos | no disponible | Q4_K_M: 65,5 / 66,2 / 78,6 | OpenMDW 1.1 | revision `c9c3fedf...` |
 
-No se dispone en la informacion proporcionada de resultados de benchmarks de los modelos antecesores ni de alternativas de terceros con los que comparar rendimiento de forma directa.
+No se dispone de datos de terceros modelos tailandeses comparables en la informacion proporcionada; esa comparativa figura como no disponible.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a tailandes e ingles; no hay evidencia de calidad en castellano ni en otros idiomas.
-- Riesgo de alucinacion no cuantificado: la model card no reporta tasas de factualidad ni pruebas de robustez frente a preguntas sin respuesta.
-- Sesgos no documentados: no se detallan sesgos conocidos del modelo base ni del post-entrenamiento de NVIDIA.
-- Licencia OpenMDW-1.1: no es una licencia permisiva tipo Apache o MIT; es imprescindible revisar los terminos en el enlace oficial antes de cualquier uso comercial.
-- La model card esta marcada como borrador (DRAFT v0.3) y pendiente de revision, por lo que los datos pueden cambiar.
-- Las comparaciones de cuantizacion mezclan motores de inferencia (llama.cpp frente a vLLM), de modo que las diferencias observadas no aislan el efecto de la cuantizacion.
-- El modo thinking viene activado por defecto en llama-server con esta plantilla si no se pasa `--reasoning off`, lo que anade latencia y consumo de tokens en produccion.
-- El soporte de audio se menciona de pasada y no cuenta con pruebas validadas en la model card.
-- No se documentan limites de contexto nativos del modelo base; la cifra de 32.768 corresponde a la configuracion de ChindaBot, no a una especificacion confirmada del modelo.
+- Pesos BF16 no publicados: solo existen GGUF, lo que limita el uso con vLLM u otros motores que requieren safetensors.
+- Diferencias de cuantizacion: Q4_K_M pierde entre 0,47 y 1,75 puntos frente a BF16 en los tres benchmarks; Q8_0 pierde hasta 0,73 puntos en OpenThaiEval. Ninguna diferencia alcanza el doble del error estandar salvo la caida de Q8_0 en OpenThaiEval, pero el margen existe.
+- Riesgo de alucinacion: no se documenta una evaluacion especifica de factualidad; las respuestas de matematicas e instrucciones solo estan verificadas en el conjunto de entrenamiento, no en inferencia.
+- Sesgos: no se publica analisis de sesgos; el dominio de entrenamiento esta concentrado en tailandes e ingles, con posible infrarrepresentacion de variedades dialectales tailandesas y de otros idiomas.
+- Contexto: la configuracion probada es de 32.768 tokens; el maximo nativo no esta documentado y contextos mayores pueden degradar calidad.
+- Licencia OpenMDW 1.1: licencia de peso abierto con terminos propios; deben revisarse las condiciones antes de uso comercial. La model card usa `license: other` con `license_name: openmdw-1.1`.
+- Modo thinking: sin `--reasoning off`, llama-server activa thinking por defecto con esta plantilla, lo que anade latencia y tokens; en produccion conviene desactivarlo globalmente y activarlo por peticion.
+- Requiere `--jinja` para aplicar la plantilla de chat propia; sin ese flag el formato de conversacion puede romperse.
+- Proyector multimodal: heredado del base y solo probado en dos imagenes; no hay evaluacion sistematica de vision ni de audio.
+- ChindaBot fijaba la primera release al subirse esta revision; conviene verificar revision y checksum al desplegar.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/iapp/OpenThai2.1-Nemotron-3.5-Bolt-E4B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/iapp/OpenThai2.1-Nemotron-3.5-Bolt-E4B
-- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai2.1-Nemotron-3.5-Bolt-E4B-GGUF
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Assets de la model card: https://huggingface.co/datasets/iapp/OpenThai2.0-model-card-assets
+- Revision primera release: `c9c3fedf1f6b987a7f489b4a58ddaffc7c9570fa` (descargable con `--revision` en `hf download`)
+- llama.cpp: no disponible en la informacion proporcionada como enlace directo; build probada b12242
+- ChindaBot: mencionado como agente de arranque; no se proporciona URL en la informacion disponible
+- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

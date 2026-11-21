@@ -2,102 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-27B-MS es una colección de cuantizaciones GGUF del modelo Qwen/Qwen3.8-27B, publicada por el desarrollador independiente devvexus (Matthew Priester) bajo el formato propietario MS (Mad Shift). No se trata de un modelo nuevo, sino de una recompresión del modelo base de Qwen con el objetivo de reducir la pérdida de calidad respecto al original en BF16 a igualdad de tamaño de archivo. El autor reporta una divergencia KL entre 1,61 y 2,31 veces menor que los archivos UD3 de Unsloth del mismo tamaño, y un acierto top-1 del 93,8-98,7 % frente al 91,8-97,9 % de Unsloth.
+Qwen3.8-27B-MS es una coleccion de cuantizaciones GGUF del modelo base Qwen/Qwen3.8-27B, publicada por el desarrollador independiente devvexus (Matthew Priester) bajo el formato propietario MS (Mad Shift). No se trata de un modelo nuevo entrenado desde cero, sino de una recompresion del modelo original de Qwen con una tecnica de cuantizacion propia que, segun el autor, reduce la perdida de calidad respecto a otras alternativas del mismo tamano. El modelo base cuenta con 26.895.998.464 parametros (~26,9 mil millones) y se distribuye bajo licencia Apache 2.0.
 
-El modelo base tiene 26.895.998.464 parámetros (aproximadamente 27B) y se distribuye con licencia Apache 2.0. La colección incluye varias tallas (MS2.7, MS3.5, MS3.7, MS4.3 y MS5) pensadas para GPUs de consumo de 16, 24 y 32 GB, además de un archivo MTP (Multi-Token Prediction) propio de 0,30 GB que acelera la generación especulativa y sirve para todas las tallas.
+La propuesta de valor de estos ficheros es la eficiencia en la relacion calidad/tamano: el autor reporta una divergencia KL entre 1,61 y 2,31 veces menor que los ficheros UD3 de Unsloth del mismo tamano, y un acierto de top-1 frente al modelo BF16 original del 93,8-98,7 % (frente al 91,8-97,9 % de Unsloth). Ademas, incluye un fichero MTP (multi-token prediction) propio que acelera la generacion hasta 2,1 veces.
 
-La relevancia de esta ficha es doble: por un lado, documenta una alternativa de cuantización con métricas de fidelidad publicadas; por otro, advierte de una dependencia crítica, ya que los archivos MS solo se cargan con el fork ms-llama.cpp del propio autor y no funcionan en llama.cpp estándar, Ollama ni LM Studio.
+La relevancia practica es inmediata para quien quiera ejecutar un modelo de ~27B en GPUs de consumo (16-32 GB de VRAM): los ficheros MS2.7 (10,6 GB), MS4.3 (17,3 GB) y MS5 (19,4 GB) cubren desde una RTX 4080 hasta una RTX 5090 o DGX Spark. La contrapartida es que requieren un fork especifico de llama.cpp (ms-llama.cpp); llama.cpp estandar, Ollama y LM Studio no pueden cargarlos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3.8-27B); cuantizacion GGUF del fork MS (Mad Shift) |
-| Parametros totales | 26.895.998.464 (~27B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 32.768 tokens en la configuracion de ejemplo (`-c 32768`); ampliable segun VRAM |
-| Tipos de cuantizacion | MS2.7 (10,6 GB), MS3.5, MS3.7, MS4.3 (17,3 GB), MS5 (19,4 GB); MTP aparte (0,30 GB); vision encoder F16 (0,93 GB) |
-| Idiomas soportados | no disponible (la model card no los detalla; los benchmarks de fidelidad se hicieron sobre textos en ingles) |
+| Arquitectura | Transformer (modelo base Qwen3.8-27B; detalles no disponibles) |
+| Parametros totales | 26.895.998.464 (~26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens recomendados por el autor (ampliable segun VRAM) |
+| Tipos de cuantizacion | MS2.7 (10,6 GB), MS3.5, MS3.7, MS4.3 (17,3 GB), MS5 (19,4 GB); fichero MTP de 0,30 GB; vision encoder F16 de 0,93 GB |
+| Idiomas soportados | no disponibles (la model card no los detalla) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con soporte de archivo MTP y mmproj para vision) |
+| Formato de pesos | GGUF (compatible solo con ms-llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de ~27B parámetros de la familia Qwen3.8. La model card de esta publicación no describe la arquitectura interna del base (número de capas, atención, posibles componentes híbridos o MoE), por lo que esos detalles deben consultarse en la ficha de Qwen/Qwen3.8-27B. Tampoco se documentan aquí los datos de entrenamiento, el número de tokens ni las fases de alineación (RLHF/DPO) del modelo original.
+El modelo base es Qwen3.8-27B, un transformer de ~26,9 mil millones de parametros desarrollado por Qwen. La model card de esta publicacion no aporta informacion sobre la composicion del dataset de entrenamiento, el numero de tokens, ni si hubo fases de RLHF o DPO; esos datos corresponderian a la model card del modelo base original, no incluida en la informacion disponible.
 
-La innovación técnica de esta publicación es el formato de cuantización MS (Mad Shift), desarrollado por Matthew Priester. Según el autor, a igualdad de tamaño de archivo reduce la divergencia KL frente al BF16 original entre 1,61 y 2,31 veces respecto a UD3 de Unsloth, y entre 1,81 y 2,50 veces respecto a EXL3 de turboderp en el rango MS2.7-MS4.3. Incluye además un archivo MTP propio que habilita decodificación especulativa multi-token: el autor reporta 2,1 veces más velocidad con MTP activado (32,4 tokens/s en MS4.3 y 46,6 tokens/s en MS2.7 sobre RTX Spark), y 101 frente a 97 tokens/s en MS2.7 sobre RTX 4080 SUPER. El archivo MTP es único para todas las tallas porque reutiliza la tabla de tokens y la cabeza de salida del archivo cargado.
+La innovacion tecnica de esta publicacion reside en el metodo de cuantizacion MS (Mad Shift), disenado por Matthew Priester. Segun las mediciones del autor, los ficheros MS logran una divergencia KL menor que las cuantizaciones UD3 de Unsloth y que los ficheros EXL3 de turboderp a tamanos equivalentes (1,81-2,50 veces menor KL que EXL3 para MS2.7-MS4.3). Ademas se incluye un fichero MTP (multi-token prediction) codificado en MS que sirve para todos los tamanos, ya que reutiliza la tabla de tokens y la cabeza de salida del fichero cargado, y que acelera la decodificacion especulativa: 2,1 veces mas rapido que sin MTP (32,4 tokens/s en MS4.3 y 46,6 tokens/s en MS2.7 sobre una RTX Spark). En una RTX 4080 SUPER, MS2.7 alcanza 101 tokens/s frente a 97 tokens/s de Unsloth con su fichero MTP separado.
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general, heredada del modelo base Qwen3.8-27B.
-- Lectura de imágenes mediante el encoder de visión opcional `vision/mmproj-Qwen3.8-27B-F16.gguf` (0,93 GB, F16), que debe cargarse explícitamente con `--mmproj` o `--mmproj-url`.
-- Decodificación especulativa mediante MTP (`--spec-type draft-mtp`), con ganancias de velocidad reportadas de hasta 2,1 veces.
-- Servidor compatible con API HTTP en `http://localhost:8080` a través de `llama-server` del fork ms-llama.cpp.
-- Soporte de conversaciones multi-turno con contexto configurable (32k tokens en la configuración de ejemplo).
-- Capacidades de razonamiento, código, matemáticas, tool calling y agentes: no documentadas en la información disponible para esta publicación; deben verificarse en la ficha del modelo base.
+- Generacion de texto conversacional (pipeline text-generation, tag conversational).
+- Razonamiento y respuesta multi-turno, con ventana de contexto configurable (32k recomendados, ampliable).
+- Lectura de imagenes mediante el vision encoder opcional `mmproj-Qwen3.8-27B-F16.gguf` (0,93 GB, F16), que debe cargarse explicitamente con `--mmproj` o `--mmproj-url`.
+- Decodificacion especulativa mediante MTP, que incrementa el throughput de generacion.
+- Servido como API compatible con endpoints y pagina de chat integrada en `llama-server` (puerto 8080).
+- Capacidades de tool calling, agentes o modo thinking: no disponibles en la informacion proporcionada (dependen del modelo base, cuyos detalles no se incluyen).
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en GPU de 16 GB: cargar MS2.7 (10,6 GB) con `-c 32768` y MTP permite servir un asistente conversacional en tarjetas como RTX 4070 Ti Super, 4080, 5070 Ti o 5080, con una fidelidad al BF16 superior a la de cuantizaciones equivalentes según las métricas del autor.
-- Estación de trabajo con 24 GB: MS4.3 (17,3 GB) en RTX 3090 o 4090 ofrece mayor fidelidad (KL más baja) manteniendo velocidad gracias al MTP, adecuado para generación de código y análisis de documentos largos dentro de 32k tokens.
-- Equipos con 32 GB o más: MS5 (19,4 GB) en RTX 5090, RTX Spark o DGX Spark es la opción de mayor calidad de la colección, con divergencia KL inferior a todos los archivos EXL3 medidos por el autor.
-- Evaluación comparativa de cuantizaciones: investigadores que midan impacto de la compresión pueden usar los archivos MS junto con UD3 y EXL3 para reproducir las curvas de KL y top-1 publicadas.
-- Procesamiento de documentos con imágenes: combinando el archivo principal con el mmproj F16 se puede hacer extracción de información de capturas, diagramas o formularios escaneados en local, sin depender de APIs externas.
-- Prototipado de asistentes con API local: `llama-server` expone un endpoint HTTP en el puerto 8080, lo que permite integrar el modelo en aplicaciones propias o pipelines internos con una sola instancia (`-np 1`).
-- Inferencia acelerada en hardware modesto: el MTP de 0,30 GB añade unos 0,9-1,0 GiB de VRAM y acelera la generación, útil cuando la latencia es crítica y se dispone de margen de memoria.
+- Asistente conversacional local en estacion de trabajo: con MS4.3 (17,3 GB) en una RTX 4090 o 3090 se puede servir un chat multi-turno con 32k de contexto a traves de la API de `llama-server`, sin depender de servicios en la nube.
+- Despliegue en GPU de consumo de 16 GB: MS2.7 (10,6 GB) permite ejecutar un modelo de ~27B en una RTX 4070 Ti Super, 4080, 5070 Ti o 5080, con margen para el contexto y el vision encoder.
+- Procesamiento de documentos con imagenes: cargando el vision encoder F16 se pueden enviar capturas, diagramas o paginas escaneadas junto con instrucciones de texto para extraccion o resumen.
+- Generacion de codigo y asistencia tecnica en local: el modelo puede integrarse en un flujo de trabajo de desarrollo mediante la API HTTP de `llama-server`, manteniendo el codigo y los prompts dentro de la infraestructura propia.
+- Evaluacion comparativa de cuantizaciones: los ficheros MS permiten medir en produccion la perdida de calidad frente al BF16 original usando la metodologia del autor (divergencia KL y acuerdo top-1), util para decidir el tamano optimo por caso de uso.
+- Prototipado rapido de agentes y pipelines: la API expuesta en `http://localhost:8080` facilita conectar el modelo a scripts, herramientas o frameworks externos sin infraestructura adicional.
+- Inferencia de alta velocidad en hardware compacto: con MTP activado y MS2.7 se alcanzan ~101 tokens/s en una RTX 4080 SUPER, adecuado para aplicaciones interactivas con requisitos de latencia estrictos.
 
 ## Benchmarks y rendimiento
 
-| Metrica | MS (esta publicacion) | Unsloth UD3 mismo tamano | EXL3 (turboderp) |
+| Metrica | MS (Mad Shift) | Unsloth UD3 (mismo tamano) | EXL3 (mismo tamano) |
 |---|---|---|---|
-| Divergencia KL vs BF16 (MS2.7-MS3.5) | referencia | 1,61-1,63x mayor | no disponible en ese rango |
-| Divergencia KL vs BF16 (MS3.7-MS5) | referencia | 1,90-2,31x mayor | no disponible en ese rango |
-| Divergencia KL vs EXL3 (MS2.7-MS4.3) | 1,81-2,50x menor | no disponible | referencia |
-| Acierto top-1 vs BF16 | 93,8-98,7 % | 91,8-97,9 % | no disponible |
-| Velocidad sin MTP (RTX Spark) | ~98-100 % de Unsloth | referencia | no disponible |
-| Velocidad sin MTP (RTX 4080 SUPER) | ~97 % de Unsloth | referencia | no disponible |
-| Velocidad con MTP (RTX Spark) | 32,4 tok/s (MS4.3), 46,6 tok/s (MS2.7) | no disponible | no disponible |
-| Velocidad con MTP (RTX 4080 SUPER) | 101 tok/s (MS2.7) | 97,1 tok/s (UD-IQ3_XXS + MTP separado) | no disponible |
+| Divergencia KL vs BF16 | Referencia | 1,61-2,31x mayor | 1,81-2,50x mayor (MS2.7-MS4.3) |
+| Acuerdo top-1 vs BF16 | 93,8-98,7 % | 91,8-97,9 % | no disponible |
+| Velocidad de generacion (RTX Spark, sin MTP) | 98-100 % de Unsloth | Referencia | no disponible |
+| Velocidad de generacion (RTX 4080 SUPER, sin MTP) | 97 % de Unsloth | Referencia | no disponible |
+| Throughput con MTP (RTX Spark) | MS4.3: 32,4 tok/s; MS2.7: 46,6 tok/s | no disponible | no disponible |
+| Throughput con MTP (RTX 4080 SUPER) | MS2.7: 101 tok/s | 97 tok/s | no disponible |
+| Memoria adicional por MTP | ~0,9-1,0 GiB | 1,6-1,7 GiB (fichero separado) | no disponible |
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible; las métricas anteriores miden fidelidad de cuantización y velocidad, no capacidad del modelo.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible; las metricas anteriores miden fidelidad de cuantizacion y velocidad, no calidad de tarea.
 
 ## Requisitos de hardware
 
-- VRAM estimada: MS2.7 unos 10,6 GB de pesos; MS4.3 unos 17,3 GB; MS5 unos 19,4 GB. El MTP añade 0,9-1,0 GiB y el mmproj de visión 0,93 GB adicionales.
-- GPUs objetivo según el autor: 16 GB (RTX 4070 Ti Super, 4080, 5070 Ti, 5080) para MS2.7; 24 GB (RTX 3090, 4090) para MS4.3; 32 GB o más (RTX 5090, RTX Spark, DGX Spark) para MS5.
-- Cabe en GPU de consumo: sí, en las tarjetas indicadas; el autor advierte de que en Windows el dimensionado automático puede sobreestimar la memoria libre de una GPU con pantalla y provocar spill a RAM del sistema, con caída severa de rendimiento.
-- Despliegue: exclusivamente con ms-llama.cpp (fork del autor). llama.cpp estándar, Ollama y LM Studio no pueden cargar estos archivos. Hay binarios para Windows (x64-CUDA12 y ARM64-CUDA) y compilación desde fuente en Linux y macOS.
-- Paralelismo: `-np 1` recomendado; cada slot paralelo adicional necesita su propia copia del estado recurrente del modelo y puede expulsar capas de la GPU.
-- Throughput reportado: 32,4-46,6 tokens/s en RTX Spark con MTP según talla, y 101 tokens/s en MS2.7 sobre RTX 4080 SUPER.
+- VRAM estimada: MS2.7 ~10,6 GB; MS4.3 ~17,3 GB; MS5 ~19,4 GB. El fichero MTP anade ~0,9-1,0 GiB y el vision encoder ~0,93 GB.
+- GPUs recomendadas por el autor: 16 GB para MS2.7 (RTX 4070 Ti Super, 4080, 5070 Ti, 5080); 24 GB para MS4.3 (RTX 3090, 4090); 32 GB o mas para MS5 (RTX 5090, RTX Spark, DGX Spark).
+- Cabe en GPU de consumo: si, en todas las anteriores con el fichero adecuado.
+- Despliegue: exclusivamente mediante ms-llama.cpp (fork de llama.cpp del autor). Stock llama.cpp, Ollama y LM Studio no pueden cargar estos ficheros. Hay binarios para Windows (x64-CUDA12 y ARM64-CUDA); en Linux y macOS hay que compilar desde el codigo fuente.
+- Configuracion recomendada: `-c 32768 -np 1 --spec-type draft-mtp`. Con `-np 1` se sirve un chat a la vez; cada slot paralelo adicional necesita su propia copia del estado recurrente y puede expulsar capas de la GPU.
+- Latencia y throughput: ~101 tok/s (MS2.7, RTX 4080 SUPER, con MTP), 46,6 tok/s (MS2.7, RTX Spark, con MTP), 32,4 tok/s (MS4.3, RTX Spark, con MTP). Sin MTP, el rendimiento es practicamente identico al de Unsloth.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-MS (esta publicacion) | ~27B | 32k configurable | GGUF MS | Apache 2.0 | Requiere ms-llama.cpp; MTP propio; KL y top-1 publicados |
-| Qwen3.8-27B UD3 (Unsloth) | ~27B | segun runtime | GGUF | Apache 2.0 (del base) | Compatible con llama.cpp estándar; referencia de comparacion del autor |
-| Qwen3.8-27B EXL3 (turboderp) | ~27B | segun runtime | EXL3 | Apache 2.0 (del base) | Requiere exllamav3; el mayor archivo medido es de 18,77 GB |
-| Qwen/Qwen3.8-27B (BF16 original) | ~27B | no disponible | safetensors | Apache 2.0 | Referencia de fidelidad; sin cuantizar |
+| Qwen3.8-27B-MS (esta publicacion) | ~26,9 B | 32k recomendado | GGUF (MS) | Apache 2.0 | Requiere ms-llama.cpp; MTP propio; menor KL que UD3 y EXL3 |
+| Qwen3.8-27B UD3 (Unsloth) | ~26,9 B | no disponible | GGUF | Apache 2.0 | Compatible con llama.cpp estandar; KL 1,61-2,31x mayor; MTP separado de 1,6-1,7 GiB |
+| Qwen3.8-27B EXL3 (turboderp) | ~26,9 B | no disponible | EXL3 | Apache 2.0 | Requiere ExLlamaV3; KL 1,81-2,50x mayor para MS2.7-MS4.3; MS5 supera a todos los EXL3 medidos |
+| Qwen3.8-27B BF16 (original) | ~26,9 B | no disponible | safetensors | Apache 2.0 | Referencia de calidad; requiere mucha mas VRAM |
 
 ## Limitaciones y advertencias
 
-- Dependencia de un runtime no estándar: sin ms-llama.cpp los archivos no cargan. Esto limita la portabilidad, la integración con herramientas existentes y el soporte a largo plazo.
-- Proyecto de un único desarrollador: el fork y el formato MS no tienen el respaldo de una comunidad amplia; el mantenimiento futuro no está garantizado.
-- Las métricas de fidelidad (KL, top-1) provienen del propio autor y se calcularon sobre cuatro textos en inglés; no hay validación independiente ni evaluación en otros idiomas.
-- No hay benchmarks de capacidad (razonamiento, código, matemáticas) en la información disponible; el rendimiento en tareas reales depende del modelo base y no está documentado aquí.
-- Riesgo de alucinación inherente al modelo base; la cuantización añade una pequeña degradación adicional respecto al BF16.
-- Idiomas soportados no documentados en esta publicación; verificar en la ficha del modelo base antes de usarlo en producción multilingüe.
-- Licencia Apache 2.0 permite uso comercial, pero el autor pide atribución a "MS (Mad Shift) by Matthew Priester" si se usan los archivos o se construye sobre el formato.
-- En Windows, el primer arranque puede mostrar un aviso de fallo de symlink en la caché de Hugging Face; es inocuo pero puede duplicar espacio en disco.
-- La configuración de contexto debe fijarse manualmente; el dimensionado automático puede provocar spill a RAM y ralentizar la inferencia drásticamente.
+- Dependencia de un fork no estandar: los ficheros solo cargan en ms-llama.cpp; no funcionan en llama.cpp estandar, Ollama ni LM Studio, lo que limita la portabilidad y el soporte de herramientas del ecosistema.
+- Ecosistema y mantenimiento: el fork y el formato MS estan mantenidos por un unico desarrollador; el soporte a largo plazo, la compatibilidad futura y la comunidad son reducidos.
+- Perdida de calidad inevitable: aunque menor que en otras cuantizaciones, existe divergencia respecto al BF16 (acuerdo top-1 del 93,8-98,7 %); no es adecuado cuando se requiere fidelidad absoluta al modelo original.
+- Riesgo de alucinacion: inherente al modelo base; no se documentan mitigaciones especificas en esta publicacion.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible.
+- Idiomas: la model card no especifica los idiomas soportados; conviene validar el comportamiento en castellano antes de usarlo en produccion.
+- Contexto: 32k es el valor recomendado por el autor, no un limite confirmado; ampliarlo consume VRAM adicional y puede provocar spill a RAM del sistema, con caida severa de rendimiento.
+- Paralelismo limitado: `-np 1` restringe a un chat simultaneo; escalar en paralelo requiere copias del estado recurrente y puede expulsar capas de la GPU.
+- Windows: el primer arranque puede mostrar un aviso de symlink ("degraded mode") que es inofensivo pero puede duplicar espacio en disco en actualizaciones.
+- Licencia: Apache 2.0 permite uso comercial, pero las condiciones del formato MS y del fork deben revisarse por separado; el autor solicita credito a "MS (Mad Shift) by Matthew Priester".
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/devvexus/Qwen3.8-27B-MS
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Fork ms-llama.cpp: https://github.com/devvexus/ms-llama.cpp
-- README del fork: https://github.com/devvexus/ms-llama.cpp#readme
+- Fork del motor: https://github.com/devvexus/ms-llama.cpp
 - Perfil del autor en GitHub: https://github.com/devvexus
 - ORCID del autor: https://orcid.org/0009-0000-0032-5292
-- Cuantizaciones EXL3 de referencia: https://huggingface.co/turboderp/Qwen3.8-27B-exl3
-- Paper citado en los tags (arXiv:2406.11235): https://arxiv.org/abs/2406.11235
+- Referencia arXiv citada en los tags: https://arxiv.org/abs/2406.11235
+- Cuantizaciones EXL3 comparadas: https://huggingface.co/turboderp/Qwen3.8-27B-exl3

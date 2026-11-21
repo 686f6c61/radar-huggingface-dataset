@@ -57,16 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Uraion Labs — AI Research and Products",
-      "url": "https://www.uraionlabs.com/",
-      "snippet": "Uraion Labs is an AI research lab that builds products. We work on agent orchestration, efficient models, persistent memory, and verification."
-    },
-    {
-      "title": "UraionLabs (Uraion Labs) - Hugging Face",
-      "url": "https://huggingface.co/UraionLabs/models",
-      "snippet": "User profile of Uraion Labs on Hugging Face"
-    }
-  ]
+  "sources": []
 }

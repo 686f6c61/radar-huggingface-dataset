@@ -50,13 +50,13 @@
       "task": null,
       "dataset": "S3DIS (Area 5)",
       "metric": "mIoU",
-      "value": 43.88
+      "value": 43.79
     },
     {
       "task": null,
       "dataset": "S3DIS (Area 5)",
       "metric": "OA",
-      "value": 79.39
+      "value": 79.06
     }
   ],
   "sources": []

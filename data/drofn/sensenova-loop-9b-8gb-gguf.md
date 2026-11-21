@@ -2,106 +2,101 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-8GB-GGUF es una colección de cuantizaciones GGUF de precisión mixta del modelo SenseNova-Loop-9B, un decodificador de aproximadamente 9.000 millones de parámetros (8.956.949.376 exactos) publicado por SenseNova y empaquetado por el usuario drofn. El objetivo declarado es hacer viable la inferencia de contexto largo en tarjetas NVIDIA de 8 GB de VRAM, un segmento tradicionalmente excluido de los modelos de 9B con ventanas de contexto extensas. La innovación principal no está en el modelo base sino en la asignación de bits: en lugar de aplicar una receta uniforme como Q4_K_M, el autor mide la sensibilidad por grupo de tensores y distribuye el presupuesto de bits según la divergencia KL frente a Q8_0.
+SenseNova-Loop-9B es un modelo de lenguaje decoder-only de aproximadamente 9.000 millones de parametros desarrollado por SenseTime (bajo el identificador `sensenova` en Hugging Face). Su rasgo arquitectonico distintivo es un bloque de capas "looped": almacena 32 capas de decoder pero ejecuta las capas 4 a 27 dos veces por token, lo que resulta en 56 ejecuciones de capa por pase forward. Ademas, emplea un residual stream con hyper-conexiones de doble flujo restringidas a variedades (mHC) y atencion hibrida que combina capas de atencion lineal Gated DeltaNet con capas de atencion completa.
 
-El modelo base emplea una arquitectura de transformer con bloque de capas en bucle (*looped transformer*): almacena 32 capas decodificadoras y ejecuta las capas 4–27 dos veces por token, lo que resulta en 56 ejecuciones de capa por pasada forward. Combina atención lineal (Gated DeltaNet) con atención completa en una proporción de tres a uno, y utiliza hyper-conexiones multi-flujo restringidas a variedad (mHC) con enrutamiento normalizado por 20 iteraciones de Sinkhorn. El vocabulario es de 248.320 tokens y el contexto nativo alcanza 512K mediante YaRN x2.
+La ficha que nos ocupa, `drofn/SenseNova-Loop-9B-8GB-GGUF`, no es el modelo original sino una familia de cuantizaciones GGUF de precision mixta producidas por el usuario drofn, orientadas especificamente a inferencia de contexto largo en tarjetas NVIDIA de 8 GB de VRAM. El autor asigna el presupuesto de bits por grupo de tensores segun la sensibilidad medida (divergencia KL frente a Q8_0), en lugar de aplicar una cuantizacion uniforme. Se ofrecen tres variantes: 128K (4,97 GB), 100K (5,54 GB) y 32K-HQ (7,02 GB).
 
-La relevancia de esta ficha es doble: por un lado documenta una técnica de cuantización sensible a la arquitectura que puede replicarse en otros modelos; por otro, advierte de una dependencia crítica de despliegue, ya que la arquitectura `sensenova_loop` no está soportada por llama.cpp upstream, LM Studio ni Ollama en el momento de la publicación, y requiere una bifurcación parcheada.
+El interes actual de esta publicacion radica en que demuestra una tecnica de cuantizacion sensible a la arquitectura que permite ejecutar un modelo de 9B con ventanas de hasta 132.864 tokens en GPUs de consumo de 8 GB, superando en calidad (menor KLD) a un Q4_K_M estandar construido con la misma imatrix. Requiere, eso si, un fork parcheado de llama.cpp, ya que la arquitectura `sensenova_loop` no estaba soportada en el upstream a fecha de noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador con bloque de capas en bucle (looped transformer), atención híbrida lineal/completa y hyper-conexiones mHC |
+| Arquitectura | Decoder-only transformer con bloque de capas looped (32 capas almacenadas, 56 ejecuciones por token), residual mHC de doble flujo, atencion hibrida (Gated DeltaNet lineal + atencion completa) |
 | Parametros totales | 8.956.949.376 |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 512K en el modelo base (YaRN x2); en los GGUF, hasta 132.864 tokens medidos en 8 GB de VRAM |
-| Tipos de cuantizacion | GGUF de precisión mixta: 8GB-128K (4,44 bpw), 8GB-100K (4,95 bpw), 8GB-32K-HQ (6,27 bpw); KV cache q4_0 |
-| Idiomas soportados | Inglés, chino, turco |
+| Longitud de contexto | Hasta 512K en el modelo base (YaRN x2); en estas cuantizaciones: 132.864 tokens (128K), 104.704 tokens (100K), 38.400 tokens (32K-HQ) segun `llama-fit-params` en 8 GB |
+| Tipos de cuantizacion | GGUF de precision mixta con presupuesto de bits por grupo de tensores (imatrix); KV cache configurable (f16, q8_0, q4_0) |
+| Idiomas soportados | Ingles (en), chino (zh), turco (tr) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
-| Cabezas de atención completa | 16 query heads, 4 KV heads, head_dim 256 |
-| Vocabulario | 248.320 tokens |
-| Tamaño del repo | 10,5 GB |
-| Modalidad | Solo texto en estos GGUF (el modelo base acepta imágenes; sin proyector mmproj) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un decodificador de unos 9B parámetros con una particularidad estructural: un bloque de capas recurrentes. Físicamente almacena 32 capas, pero las capas 4 a 27 se ejecutan dos veces por token, de modo que cada pasada forward implica 56 ejecuciones de capa. Esto incrementa el coste computacional por token sin aumentar el número de parámetros, una estrategia que busca profundidad efectiva adicional con el mismo presupuesto de memoria de pesos. El flujo residual utiliza hyper-conexiones multi-flujo restringidas a variedad (mHC) y el enrutamiento se normaliza con 20 iteraciones de Sinkhorn. La atención es híbrida: en cada grupo de cuatro capas hay tres capas de atención lineal (Gated DeltaNet) y una de atención completa, esta última con 16 cabezas de consulta, 4 de clave/valor y dimensión de cabeza 256. El contexto nativo es de 512K tokens mediante extensión YaRN con factor x2.
+El modelo base SenseNova-Loop-9B emplea una arquitectura decoder-only con un bloque de capas recurrente: almacena 32 capas de decoder y ejecuta las capas 4 a 27 dos veces por token, totalizando 56 ejecuciones de capa por pase forward. El residual stream utiliza hyper-conexiones de doble flujo con restriccion de variedad (mHC), con enrutamiento normalizado mediante 20 iteraciones de Sinkhorn. La atencion es hibrida: cada grupo de cuatro capas contiene tres capas de atencion lineal (Gated DeltaNet) y una de atencion completa. La atencion completa usa 16 cabezas de query, 4 cabezas KV y `head_dim` de 256. El vocabulario es de 248.320 tokens y el contexto alcanza 512K mediante YaRN x2.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO, ya que la model card proporcionada corresponde a la cuantización y no al modelo base. La innovación documentada reside en el proceso de cuantización: el autor dividió los tensores en 14 grupos y subdividió el bloque en bucle en tres bandas, cuantizó cada grupo de forma independiente a Q2_K y Q4_K y midió la divergencia KL frente a Q8_0 en 40 ejecuciones de barrido. Con esos datos asignó bits según el coste en KLD por GB ahorrado. Los hallazgos reportados son que las capas 0–3 (especialmente sus tensores de atención lineal) son las más sensibles por GB, que las capas 28–31 son las menos sensibles, que dentro del bucle la banda 4–11 es entre 1,7 y 1,8 veces más sensible por GB que la banda 12–19, y que la sensibilidad de la atención lineal cae aproximadamente un factor 3 desde el inicio hasta el final del bucle.
+En cuanto al proceso de cuantizacion de esta ficha, el autor midio la sensibilidad de 14 grupos de tensores (y posteriormente subdividio el bloque looped en tres bandas), cuantizando cada grupo de forma independiente a Q2_K y Q4_K y midiendo la divergencia KL frente a Q8_0. Con esos datos asigno el presupuesto de bits por grupo. El resultado son ficheros que, segun el autor, son mas pequenos que un Q4_K_M estandar con la misma imatrix, caben con unos 10K tokens mas de contexto en una tarjeta de 8 GB (104.704 frente a 94.464 tokens) y presentan una KLD entre un 34% y un 38% inferior (0,0703 / 0,0762 frente a 0,1064 / 0,1235). Solo la tabla de embeddings de tokens permanece en RAM del sistema; el resto se ejecuta en GPU. No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional y continuaciones de prosa en inglés, chino y turco.
-- Razonamiento de contexto largo: la ventana efectiva en las variantes GGUF llega hasta 132.864 tokens medidos en hardware de 8 GB.
-- Soporte de tool calling y diálogos de llamada a funciones, según el conjunto de evaluación empleado por el autor (glaive-function-calling-v2).
-- Capacidad multimodal en el modelo base (acepta imágenes), aunque ausente en estas cuantizaciones al no incluir proyector mmproj.
-- Procesamiento multilingüe limitado a los tres idiomas declarados; no se documenta cobertura adicional.
-- No se documentan capacidades de audio, modo thinking explícito ni decodificación especulativa.
+- Generacion de texto conversacional en ingles, chino y turco.
+- Razonamiento y respuesta multi-turno con ventanas de contexto muy largas (hasta 132.864 tokens en la variante 128K).
+- Recuperacion de informacion en contexto largo (needle-in-a-haystack): el autor reporta que las tareas de recuperacion de codigo encuentran todos los fragmentos con KV cache f16, q8_0 y q4_0 a ~31K tokens.
+- Seguimiento de instrucciones extensas en contexto largo, con degradacion medible segun el tipo de KV cache (13/18 con f16, 12/18 con q8_0, 9/18 con q4_0 en la prueba de reglas de formato del autor).
+- Capacidad multimodal de imagen en el modelo base original, no incluida en estas cuantizaciones (sin proyector de vision `mmproj`).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentación técnica extensa en una estación de trabajo con GPU de 8 GB: la variante 8GB-100K permite cargar hasta 104.704 tokens de contexto con todas las capas en GPU, suficiente para procesar manuales, especificaciones o bases de código de tamaño medio sin segmentación.
-- Asistentes conversacionales multi-turno con memoria larga: la ventana de 100K tokens permite mantener historiales de conversación prolongados y documentos de referencia adjuntos en la misma sesión, con una KV cache q4_0 que mantiene el consumo dentro de los 8 GB.
-- Procesamiento de corpus en turco e inglés: el modelo declara soporte para ambos idiomas y el autor evaluó la calidad de cuantización sobre prosa de Wikipedia en turco e inglés, lo que respalda su uso en tareas de resumen y extracción sobre estos idiomas.
-- Integración en pipelines de agentes con function calling: el soporte de tool calling documentado permite conectar el modelo a APIs externas en flujos de automatización, siempre que se despliegue sobre la bifurcación parcheada de llama.cpp.
-- Despliegue en portátiles con RTX 4060 de 8 GB: el autor midió unos 6.900 MiB de 8.188 MiB de VRAM con todas las capas en GPU y solo la tabla de embeddings en RAM del sistema, lo que hace viable la inferencia local en equipos de consumo.
-- Prototipado e investigación sobre arquitecturas en bucle: al ser una cuantización fiel del modelo base con métricas de KLD publicadas, sirve para estudiar el comportamiento de transformers con capas recurrentes sin necesidad de hardware de gama alta.
-- Evaluación comparativa de técnicas de cuantización: los datos de KLD, same-top-token y perplejidad frente a Q8_0 y frente a un Q4_K_M estándar con la misma imatrix permiten reproducir y contrastar metodologías de asignación de bits por sensibilidad.
+- Analisis de documentos largos en local: con 104.704 tokens de contexto en la variante 100K, el modelo puede procesar contratos, informes o bases de codigo extensas en una sola pasada sobre una RTX 4060 o similar de 8 GB, sin enviar datos a la nube.
+- Asistentes conversacionales con memoria extendida: la ventana de 128K de la variante homonima permite mantener historiales de conversacion muy largos o inyectar grandes volumenes de contexto de sistema sin truncar.
+- Recuperacion aumentada (RAG) con contexto masivo: en lugar de recuperar fragmentos pequenos, se pueden inyectar decenas de miles de tokens de documentacion recuperada, aprovechando la ventana extendida y el bajo coste de la KV cache en q8_0.
+- Procesamiento de texto multilingue en ingles, chino y turco: adecuado para pipelines de traduccion, resumen o clasificacion en esos tres idiomas, con despliegue local.
+- Inferencia en estaciones de trabajo con GPU de consumo: la variante 32K-HQ (7,02 GB, KLD 0,0182 / 0,0245) ofrece la mayor fidelidad frente a Q8_0 para tareas que no requieren mas de 38.400 tokens, en una GPU de 8 GB sin pantalla conectada.
+- Investigacion sobre cuantizacion: los ficheros y la metodologia documentada (barrido de KLD por grupo de tensores) sirven como referencia reproducible para estudiar el impacto de la precision mixta en arquitecturas con capas looped y atencion hibrida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card proporciona exclusivamente métricas de fidelidad de cuantización frente a la referencia Q8_0, medidas con `llama-perplexity --kl-divergence` sobre 40 fragmentos de 512 tokens en dos conjuntos retenidos: conjunto 1, prosa de Wikipedia en turco e inglés; conjunto 2, Wikipedia en inglés y diálogos de tool calling de glaive-function-calling-v2.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor unicamente reporta metricas de calidad de cuantizacion (divergencia KL frente a Q8_0) y de ajuste en memoria:
 
-| Cuantización | Tamaño (GB) | bpw medio | KLD media vs Q8_0 (conj. 1 / conj. 2) | Mismo token top % (conj. 1 / conj. 2) | PPL (conj. 1 / conj. 2) |
-|---|---:|---:|---:|---:|---:|
-| Q8_0 (referencia, no publicada) | 9,53 | 8,51 | 0 | 100 | 11,555 / 2,633 |
-| 8GB-128K | 4,97 | 4,44 | 0,1375 / 0,1213 | 82,6 / 92,0 | 12,266 / 2,682 |
-| 8GB-100K | 5,54 | 4,95 | 0,0703 / 0,0762 | 88,5 / 94,5 | 11,584 / 2,640 |
-| 8GB-32K-HQ | 7,02 | 6,27 | 0,0182 / 0,0245 | 93,7 / 97,2 | 11,694 / 2,650 |
-| Q4_K_M estándar (misma imatrix) | 5,62 | 5,02 | 0,1064 / 0,1235 | 86,4 / 93,5 | 11,795 / 2,736 |
+| Variante | Tamano | Contexto que cabe en 8 GB | KLD media vs Q8_0 (set 1 / set 2) |
+|---|---:|---:|---:|
+| 8GB-128K | 4,97 GB | 132.864 tokens | 0,1375 / 0,1213 |
+| 8GB-100K | 5,54 GB | 104.704 tokens | 0,0703 / 0,0762 |
+| 8GB-32K-HQ | 7,02 GB | 38.400 tokens | 0,0182 / 0,0245 |
 
-El dato más relevante es que la variante 8GB-100K, con 5,54 GB y 4,95 bpw, obtiene una KLD de 0,0703 / 0,0762 frente a la del Q4_K_M estándar de 0,1064 / 0,1235, es decir, entre un 34% y un 38% menor, ocupando además 0,08 GB menos. La variante 8GB-32K-HQ se aproxima más a Q8_0 pero limita el contexto a 38.400 tokens. Estas métricas no miden precisión en tareas.
+Referencia comparativa del autor: un Q4_K_M estandar con la misma imatrix presenta KLD de 0,1064 / 0,1235 y cabe con 94.464 tokens de contexto en la misma tarjeta. El autor tambien menciona una aceleracion de generacion de aproximadamente 1,85x con la cabeza MTP en una RTX 4060 usando `--spec-type draft-mtp`, pero esa funcionalidad corresponde a la version v2, no a esta ficha.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 6.900 MiB de 8.188 MiB medidos con la variante en uso, todas las capas en GPU, KV cache q4_0 y solo la tabla de embeddings en RAM del sistema (0,70 GB a Q5_K, 0,83 GB a Q6_K en el archivo HQ).
-- GPU de referencia en las mediciones: RTX 4060 de 8 GB bajo Windows sin monitor conectado.
-- Cabe en GPU de consumo de 8 GB (RTX 4060, RTX 3070, RTX 2070, RX 6600 en el ecosistema equivalente); con pantalla conectada hay que reducir el valor de `-c` según la tabla del autor.
-- Contexto máximo probado por variante: 132.864 tokens (8GB-128K), 104.704 tokens (8GB-100K) y 38.400 tokens (8GB-32K-HQ).
-- Despliegue: requiere una bifurcación parcheada de llama.cpp; llama.cpp upstream, LM Studio y Ollama no soportan la arquitectura `sensenova_loop` (incidencia ggml-org/llama.cpp#31571 abierta).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: 8 GB para las tres variantes, con la tabla de embeddings de tokens en RAM del sistema. La variante 32K-HQ requiere una GPU de 8 GB sin pantalla conectada.
+- GPU recomendadas: NVIDIA RTX 4060 (probada por el autor), asi como cualquier GPU de 8 GB (RTX 3070, RTX 4060 Ti, RTX 2070, etc.). Para contexto maximo y mayor throughput, A100 o H100, aunque no son necesarias para el objetivo de esta ficha.
+- Cabe en GPU de consumo: si, en tarjetas de 8 GB. Existe ademas una variante para 6 GB en `drofn/SenseNova-Loop-9B-6GB-GGUF`.
+- Opciones de despliegue: exclusivamente un fork parcheado de llama.cpp. El upstream de llama.cpp, LM Studio y Ollama no soportaban la arquitectura `sensenova_loop` a fecha de 2026-11-19 (issue ggml-org/llama.cpp#31571). Los ficheros de este repo no cargan en la build del PR #32588 y viceversa.
+- Latencia y throughput: no disponible de forma agregada. El autor senala que, en una RTX 4060, la build del PR #32588 es actualmente mas lenta que el fichero 8GB-v3 sobre el fork parcheado, porque el PR carece de kernels CUDA para el enrutamiento mHC.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Observaciones |
-|---|---:|---|---|---|
-| SenseNova-Loop-9B-8GB-GGUF | 8,96B | Hasta 132.864 tokens en 8 GB (512K en el base) | Apache-2.0 | Cuantización de precisión mixta; requiere llama.cpp parcheado |
-| Q4_K_M estándar del mismo modelo (misma imatrix) | 8,96B | Limitado por VRAM; menor que 8GB-100K en la misma tarjeta | Apache-2.0 | 5,62 GB, 5,02 bpw, KLD 0,1064 / 0,1235; referencia directa de comparación |
-| Q8_0 del mismo modelo (no publicado) | 8,96B | No disponible | Apache-2.0 | 9,53 GB, 8,51 bpw; no cabe en 8 GB, usado solo como referencia de calidad |
+| Modelo | Parametros | Contexto | Calidad de cuantizacion | Licencia | Disponibilidad |
+|---|---:|---|---|---|---|
+| SenseNova-Loop-9B-8GB-100K (esta ficha) | 8,96B | 104.704 tokens en 8 GB | KLD 0,0703 / 0,0762 | Apache-2.0 | GGUF, fork parcheado de llama.cpp |
+| SenseNova-Loop-9B-8GB-v3 (mismo autor) | 8,96B | 104.448 tokens | ~20% menor KLD que el 8GB-100K de esta ficha | Apache-2.0 | GGUF, fork parcheado; incluye cabeza MTP e imagen opcional |
+| Q4_K_M estandar con la misma imatrix | 8,96B | 94.464 tokens en 8 GB | KLD 0,1064 / 0,1235 | Apache-2.0 | GGUF, llama.cpp upstream |
+| SenseNova-Loop-9B (modelo base) | 8,96B | 512K (YaRN x2) | Referencia Q8_0 | Apache-2.0 | Safetensors, requiere infraestructura mayor |
 
-No se dispone de datos de otros modelos de la misma categoría (9B con contexto largo y licencia permisiva) en la información proporcionada, por lo que la comparativa se limita a las variantes del propio modelo.
+No se dispone de comparaciones con modelos de otros desarrolladores (Llama, Qwen, Mistral, etc.) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia crítica de una bifurcación no oficial de llama.cpp: sin ella el modelo no carga en las herramientas estándar, lo que complica el despliegue en producción y la actualización del runtime.
-- Solo texto: estas cuantizaciones carecen de proyector de visión, por lo que las capacidades de imagen del modelo base no están disponibles.
-- Cobertura lingüística restringida a inglés, chino y turco; el rendimiento en castellano no está documentado y probablemente sea deficiente.
-- Riesgo de alucinación inherente a los modelos de 9B, agravado en contextos muy largos donde la atención efectiva puede degradarse; las métricas publicadas miden fidelidad de cuantización, no veracidad.
-- Sesgos no documentados: la model card no incluye análisis de sesgos ni de seguridad.
-- Las métricas de KLD y perplejidad no equivalen a precisión en tareas; un KLD bajo no garantiza buen rendimiento en razonamiento, código o matemáticas.
-- La variante 8GB-128K presenta una degradación notable (KLD 0,1375 / 0,1213, mismo token top del 82,6% en el conjunto 1); no es recomendable cuando la calidad prima sobre la longitud de contexto.
-- El uso con pantalla conectada reduce el contexto máximo utilizable; hay que ajustar `-c` y verificar el consumo real de VRAM.
-- Aunque la licencia es Apache-2.0 y permite uso comercial, la ausencia de benchmarks de tareas obliga a evaluar el modelo en el dominio concreto antes de adoptarlo en producción.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la subida de archivos estaba en curso según la model card; conviene verificar la integridad de los archivos antes de desplegar.
+- Requiere un fork parcheado de llama.cpp: los ficheros no cargan en upstream, LM Studio ni Ollama, y son incompatibles con la build del PR #32588. Esto limita el despliegue estandarizado en produccion.
+- Sin soporte de vision en estas cuantizaciones: el modelo base acepta imagenes, pero estos GGUF son solo texto y no incluyen proyector `mmproj`.
+- Idiomas limitados: solo ingles, chino y turco. El rendimiento en castellano no esta documentado y no deberia asumirse.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; como en cualquier LLM, debe validarse la salida en aplicaciones criticas.
+- Degradacion del seguimiento de instrucciones con KV cache q4_0 en contexto largo: el autor observa 9/18 frente a 13/18 con f16 en su prueba de reglas de formato, aunque lo califica de indicio, no de diferencia probada.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Licencia Apache-2.0: permite uso comercial, pero al ser una cuantizacion de un modelo de terceros conviene verificar los terminos del modelo base `sensenova/SenseNova-Loop-9B`.
+- Existe una version mas reciente (v3) recomendada por el propio autor para configuraciones nuevas de 8 GB; esta ficha se mantiene por las variantes 128K y 32K-HQ.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantización: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF
+- Repositorio Hugging Face: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF
+- Version recomendada v3: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-v3-GGUF
+- Version v2: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-v2-GGUF
+- Variante para 6 GB: https://huggingface.co/drofn/SenseNova-Loop-9B-6GB-GGUF
+- Escalera completa de cuantizaciones (layout upstream): https://huggingface.co/drofn/SenseNova-Loop-9B-GGUF
+- Coleccion de todas las versiones: https://huggingface.co/collections/drofn/sensenova-loop-9b-gguf-for-6-8-gb-gpus-6aff1a746c005b20c4230d30
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Archivo recomendado (8GB-100K): https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF/resolve/main/SenseNova-Loop-9B-8GB-100K.gguf
-- Archivo 8GB-128K: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF/resolve/main/SenseNova-Loop-9B-8GB-128K.gguf
-- Archivo 8GB-32K-HQ: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF/resolve/main/SenseNova-Loop-9B-8GB-32K-HQ.gguf
-- Gráfica de calidad frente a tamaño: https://huggingface.co/drofn/SenseNova-Loop-9B-8GB-GGUF/resolve/main/assets/quality_vs_size.png
-- Incidencia de soporte de la arquitectura en llama.cpp: https://github.com/ggml-org/llama.cpp/issues/31571
+- Issue de soporte de arquitectura en llama.cpp: https://github.com/ggml-org/llama.cpp/issues/31571
+- PR de llama.cpp con layout upstream: https://github.com/ggml-org/llama.cpp/pull/32588

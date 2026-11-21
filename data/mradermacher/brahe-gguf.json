@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Brahe-GGUF",
+  "slug": "mradermacher-brahe-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Brahe-GGUF",
+  "created_at": "2025-09-01T02:20:11.000Z",
+  "updated_at": "2026-11-21T01:02:00.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:Pclanglais/Brahe-Novels",
+    "base_model:Pclanglais/Brahe",
+    "base_model:quantized:Pclanglais/Brahe",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801917376,
+  "storage_human": "88.8 GB",
+  "context_length": 4096,
+  "base_model": "Pclanglais/Brahe",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

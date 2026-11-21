@@ -2,47 +2,53 @@
 
 ## Resumen
 
-Magnitik es un modelo publicado en Hugging Face por el usuario maxiz-magnit bajo la licencia Gemma. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni informacion sobre capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+Magnitik (Магнитик 270M) es un ajuste fino del modelo google/gemma-3-270m-it, publicado por el usuario maxiz-magnit en Hugging Face. Se trata de un modelo conversacional de pequeno tamano (268.098.176 parametros segun los pesos en safetensors) especializado en el dominio del "planificador Magnit": generacion de pasos hacia objetivos, resumenes semanales, tareas del "rueda de la vida" (колесо баланса), consejos, practicas y sugerencias de alimentacion saludable (PP-ideas). El modelo base pertenece a la familia Gemma 3 de Google, distribuida bajo licencia Gemma.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: se trata de un artefacto sin documentacion tecnica verificable. La etiqueta de licencia `gemma` sugiere que el modelo deriva de la familia Gemma de Google (o que reutiliza sus pesos), pero no hay ninguna confirmacion en la informacion disponible sobre el modelo base concreto, el proceso de ajuste ni el proposito del autor.
+La relevancia de este modelo es la de un caso tipico de ajuste fino de dominio sobre un modelo base muy compacto: en lugar de competir en capacidades generales, se limita a un asistente de productividad personal en ruso. El repositorio incluye pesos en safetensors y GGUF, lo que facilita su despliegue en entornos con recursos limitados. La model card es extremadamente escueta y no aporta informacion sobre datos de entrenamiento, hiperparametros ni evaluaciones.
 
-Dado que no se han publicado especificaciones, benchmarks ni ejemplos de uso, cualquier evaluacion de calidad o idoneidad para produccion resulta imposible con los datos actuales. Se recomienda tratar este repositorio como no evaluado.
+No se dispone de informacion sobre el pipeline declarado, los idiomas soportados mas alla del ruso indicado en la model card, ni resultados de benchmarks. Cualquier dato no presente en la informacion proporcionada se marca como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer decoder-only (gemma3_text), segun el tag del modelo base |
+| Parametros totales | 268.098.176 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | no disponible (el repo incluye safetensors y GGUF) |
+| Idiomas soportados | ruso (segun la model card) |
 | Licencia | gemma |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. La unica senal tecnica es la etiqueta de licencia `gemma`, que en la practica totalidad de los casos indica derivacion de los pesos de la familia Gemma de Google, pero no se especifica la variante (Gemma 2, Gemma 3, PaliGemma u otras), el tamano ni si se trata de un ajuste fino, una destilacion o un merge.
+El modelo hereda la arquitectura del modelo base google/gemma-3-270m-it, un transformer decoder-only de la familia Gemma 3 orientado a instrucciones. El tag gemma3_text confirma que se trata de la variante de texto del modelo base (sin componentes multimodales). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de ajuste fino, ni sobre el uso de RLHF, DPO o SFT.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni la existencia de fases de alineacion (RLHF, DPO, SFT). Cualquier afirmacion al respecto seria especulativa y no se incluye.
+La unica informacion disponible sobre el entrenamiento es la finalidad declarada en la model card: adaptar el modelo base para el planificador "Magnit", cubriendo generacion de pasos hacia objetivos, resumenes semanales, tareas del "rueda de la vida", consejos, practicas y sugerencias de alimentacion saludable. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la model card.
-- No hay evidencia publicada de soporte de tool calling o function calling.
-- No hay evidencia publicada de capacidades de agente o razonamiento multi-paso.
-- No hay informacion sobre cobertura multilingue.
-- No se confirma soporte de vision, audio ni modos de razonamiento extendido (thinking mode).
+- Generacion de texto conversacional en ruso, orientada a tareas de planificacion personal.
+- Descomposicion de objetivos en pasos concretos.
+- Generacion de resumenes semanales.
+- Propuesta de tareas asociadas al marco "rueda de la vida" (колесо баланса).
+- Generacion de consejos y practicas de productividad y bienestar.
+- Sugerencias de ideas de alimentacion saludable (PP-ideas).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: solo se declara ruso; no disponible para otros idiomas.
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Evaluacion exploratoria en laboratorio: el modelo puede cargarse para inspeccionar sus pesos y comportamiento, pero sin documentacion no es posible anticipar su calidad. Adecuado solo como paso previo a una evaluacion formal.
-- Pruebas de compatibilidad con la licencia Gemma: util para verificar como se propaga la licencia en derivados y que obligaciones impone en un pipeline interno.
-- Fine-tuning experimental: si el modelo resulta ser un checkpoint derivado de Gemma, podria servir como punto de partida para ajustes adicionales, aunque sin conocer el modelo base exacto el riesgo de partir de una base inadecuada es alto.
-- Comparacion de artefactos en un registro interno de modelos: sirve como ejemplo de repositorio minimo (solo licencia) para definir politicas de admision de modelos en una organizacion.
-- Docencia sobre publicacion de modelos: caso practico de model card incompleta y de los riesgos de consumir modelos sin documentacion.
-- No recomendado para produccion: sin benchmarks, sin especificaciones y sin ejemplos, no existen garantias de calidad, latencia ni comportamiento seguro en ningun escenario de negocio.
+- Asistente de planificacion personal en ruso: el modelo puede generar descomposiciones de objetivos en pasos concretos, aprovechando su ajuste fino sobre el planificador "Magnit" para mantener el formato y el tono esperados.
+- Generacion de resumenes semanales: adecuado para producir informes breves de progreso a partir de notas de tareas, dado su entrenamiento especifico en este tipo de salida.
+- Gestion de tareas por areas de la vida: puede proponer tareas asociadas a las distintas areas del marco "rueda de la vida", un caso de uso directamente cubierto por la model card.
+- Recomendaciones de practicas y consejos: util como generador de sugerencias breves de productividad y bienestar dentro de una aplicacion de coaching.
+- Sugerencias de alimentacion saludable: puede generar ideas de comidas o habitos alimenticios dentro de una app de seguimiento nutricional en ruso.
+- Despliegue en entornos con recursos limitados: con 268 millones de parametros y pesos GGUF disponibles, es viable ejecutarlo en CPU o en GPU de gama baja para prototipos y demos.
+- Integracion en chatbots de dominio cerrado: su tamano reducido permite servirlo con baja latencia en aplicaciones de mensajeria o asistentes embebidos, siempre que el dominio se limite al planificador Magnit.
 
 ## Benchmarks y rendimiento
 
@@ -50,32 +56,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el numero de parametros.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no determinable sin conocer el tamano del modelo.
-- Opciones de despliegue: no documentadas por el autor; al no conocerse el formato de pesos, no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 268 millones de parametros, en fp16 los pesos ocupan aproximadamente 0,54 GB y en cuantizacion de 4 bits aproximadamente 0,14 GB, a lo que hay que sumar la memoria del contexto y del runtime.
+- GPU recomendadas: no disponible; por tamano, cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) es suficiente, aunque no se documenta ninguna recomendacion oficial.
+- Cabe en GPU consumer: si, por el reducido numero de parametros; no se especifican modelos concretos.
+- Opciones de despliegue: llama.cpp u Ollama a partir de los pesos GGUF; vLLM o TGI a partir de los safetensors; no se documenta compatibilidad explicita con ninguno de ellos.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconoce el modelo base y el tamano. A modo de referencia, la familia Gemma de Google se distribuye bajo la misma licencia, pero sin datos de arquitectura o parametros de Magnitik la comparacion carece de base tecnica.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| maxiz-magnit/magnitik | 268.098.176 | no disponible | gemma | Hugging Face (safetensors, GGUF) | Ajuste fino de dominio en ruso sobre Gemma 3 270M |
+| google/gemma-3-270m-it | no disponible en la informacion | no disponible | gemma | Hugging Face | Modelo base; capacidades generales, sin especializacion |
+| Alternativas de ~270M de otros fabricantes | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion |
-|---|---|---|---|---|
-| Magnitik | no disponible | no disponible | gemma | solo licencia |
-| Gemma (familia, referencia) | no disponible en esta ficha | no disponible en esta ficha | gemma | model card oficial |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento comparativo entre magnitik y su modelo base ni con otras alternativas, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se puede verificar arquitectura, tamano, contexto ni datos de entrenamiento.
-- Riesgo de alucinacion y de comportamiento impredecible desconocido, al no existir evaluaciones publicadas.
-- Sesgos desconocidos: sin informacion sobre el corpus de entrenamiento no es posible estimar sesgos de genero, idioma o dominio.
-- Restricciones de licencia: la licencia Gemma impone obligaciones especificas de uso (politica de uso aceptable, requisitos de atribucion y clausulas de uso comercial) que deben revisarse antes de cualquier despliegue.
-- Sin senales de mantenimiento: el repositorio no registra descargas ni interacciones, lo que sugiere ausencia de comunidad y de soporte.
-- No apto para produccion sin una evaluacion independiente previa que cubra calidad, seguridad y latencia.
+- Sesgos conocidos: no documentados; al ser un ajuste fino de dominio sobre Gemma 3, puede heredar los sesgos del modelo base.
+- Riesgo de alucinacion: no evaluado; en un modelo de 270M de parametros el riesgo de generar contenido incorrecto en tareas fuera de su dominio es elevado.
+- Limitaciones de contexto o idioma: solo se declara ruso; no se documenta la longitud de contexto ni el comportamiento en otros idiomas.
+- Restricciones de licencia: la licencia Gemma impone condiciones de uso, incluida la politica de uso aceptable de Google; es necesario revisarlas antes de un uso comercial.
+- Caveats para produccion: la model card no documenta datos de entrenamiento, evaluaciones ni hiperparametros, lo que dificulta la validacion del modelo; el repositorio ocupa 18,7 GB, un tamano desproporcionado para 268 millones de parametros, lo que sugiere la presencia de multiples formatos o artefactos adicionales que conviene inspeccionar antes de desplegar.
+- El modelo esta especializado en un dominio muy concreto (planificador "Magnit"); su uso fuera de ese dominio no esta respaldado por ninguna evaluacion publicada.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/maxiz-magnit/magnitik
-- No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.
+- Hugging Face: https://huggingface.co/maxiz-magnit/magnitik
+- Modelo base: https://huggingface.co/google/gemma-3-270m-it
+- Licencia Gemma: no disponible en la informacion proporcionada
+- Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

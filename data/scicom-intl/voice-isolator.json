@@ -5,7 +5,7 @@
   "author": "Scicom-intl",
   "url": "https://huggingface.co/Scicom-intl/voice-isolator",
   "created_at": "2026-10-22T23:09:58.000Z",
-  "updated_at": "2026-11-17T07:27:43.000Z",
+  "updated_at": "2026-11-20T17:26:18.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

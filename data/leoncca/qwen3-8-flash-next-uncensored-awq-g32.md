@@ -2,125 +2,103 @@
 
 ## Resumen
 
-leoncca/Qwen3.8-Flash-Next-Uncensored-AWQ-g32 es una derivada cuantizada del checkpoint orcarouter/Qwen3.8-Flash-Next-Uncensored, un modelo multimodal (image-text-to-text) de arquitectura Qwen4Exp con 180.949.088.918 parámetros totales y una ventana de contexto nativa de 262.144 tokens compartidos entre entrada, razonamiento y respuesta final. La cuantización aplica AWQ W4A16 asimétrica con group size 32 únicamente a las proyecciones de los expertos enrutados (gate_proj, up_proj y down_proj) en 48 capas y 512 expertos por capa; el resto de parámetros mantiene la precisión del checkpoint de origen, con un injerto explícito de pesos PLE en FP8 oficial.
+Qwen3.8 Flash Next Uncensored AWQ g32 es una cuantización de 4 bits del modelo orcarouter/Qwen3.8-Flash-Next-Uncensored, publicada por el usuario leoncca. Se trata de un derivado en formato AWQ W4A16 con group size 32 sobre una arquitectura Qwen4Exp de tipo mezcla de expertos (MoE), con 179.999.981.459 parámetros totales según los safetensors del repositorio y un tamaño de repo de 230,9 GB (la revisión del 16 de octubre de 2026 ocupa 137,07 GB repartidos en 86 shards). El modelo es multimodal de entrada imagen-texto y está orientado a conversación.
 
-El repositorio ocupa 143,4 GB y el autor indica 138,13 GB (128,65 GiB) repartidos en 44 shards: 10 de pesos AWQ, 33 de PLE y uno de escalas K/V. Además de la cuantización de pesos, se recalibraron 24 escalas escalares FP32 para el almacenamiento K/V en FP8 E4M3 sobre las 12 capas QSA, con valores entre 0,0170375295 y 0,0819614977. La calibración AWQ usó 684 registros y la de K/V se ejecutó sobre 14 shards de entrada, 4.904 prompts y 4.888.771 tokens procesados.
+La relevancia de esta ficha reside en que el checkpoint incorpora una ruta de inferencia específica para hardware antiguo: el autor mantiene ReVolta, un motor basado en vLLM con soporte para SM70 (V100), kernels AWQ g32 para MoE, atención QSA con KV calibrada en FP8 E4M3, un draft MTP en FP8 y entrada multimodal. Esto permite servir un MoE de 180.000 millones de parámetros en 4 × V100 de 32 GB, un escenario que el vLLM estándar no cubre.
 
-Su relevancia práctica es doble: por un lado reduce el coste de servir un MoE multimodal de ~181 B en clústeres de 4 GPU, y por otro sirve como caso de estudio de empaquetado de cuantizaciones no estándar (AWQ por experto, PLE FP8 y escalas K/V indexadas) que la mayoría de runtimes genéricos no soportan sin modificaciones. El autor advierte explícitamente de que el soporte AWQ genérico es insuficiente para esta arquitectura.
+La cuantización se ha realizado con GPTQ amortiguado sobre activaciones reales capturadas del checkpoint anterior, no con AWQ clásico, aunque el formato serializado sea AWQ. El autor publica métricas de fidelidad acotadas (KL top-20-plus-tail de 0,0214 frente a la referencia BF16) que no deben interpretarse como resultados de benchmarks de capacidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen4Exp: transformer multimodal con mezcla de expertos (MoE), expertos enrutados y soporte MRoPE; incluye capas QSA con escalas K/V y pesos PLE |
-| Parametros totales | 180.949.088.918 (~180,9 B) |
+| Arquitectura | Qwen4Exp, transformer MoE con atención QSA y módulo MTP; pipeline image-text-to-text |
+| Parametros totales | 179.999.981.459 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens nativos (entrada compartida + razonamiento + respuesta final), sin YaRN |
-| Tipos de cuantizacion | AWQ W4A16 asimetrica con group size 32, zero point y layout GEMM (solo expertos enrutados); pesos PLE en FP8 oficial; escalas KV QSA en FP8 E4M3; computo en FP16 |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | AWQ W4A16 asimétrica, group size 32, zero point entero, empaquetado GEMM; escalas de expertos en FP16; PLE en FP8 oficial; KV QSA en FP8 E4M3 calibrada |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (campo `license: other`, con `license_link: LICENSE`) |
-| Formato de pesos | safetensors (44 shards) |
-| Tamano del repositorio | 143,4 GB (138,13 GB / 128,65 GiB en pesos segun el autor) |
-| Shards | 10 de pesos AWQ, 33 de PLE y 1 de escalas K/V |
-| Tensores indexados | 222.771, incluidos 24 escalas K/V escalares en FP32 |
-| Descargas / likes | 115 / 0 |
-| Fecha de creacion / actualizacion | 2026-09-09 / 2026-09-10 |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors (86 shards en la revisión de octubre de 2026) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal con mezcla de expertos de la familia Qwen4Exp. Los datos publicados por el cuantizador describen 48 capas con 512 expertos por capa y un esquema de enrutamiento cuyos pesos se cuantizan por experto de forma independiente. El grupo de cuantización g32 se eligió porque los expertos enrutados tienen ancho 640: bajo tensor parallelism 4, `640 / 4 = 160`, divisible por 32 pero no por 128, de modo que g128 habría sido incompatible con esa configuración. El modelo incorpora además pesos PLE (ngram) que se reutilizan tal cual del checkpoint FP8 oficial, capas QSA con escalas de almacenamiento K/V, soporte MRoPE para multimodalidad y una inicialización de poda de tokens de vídeo. La validación se ejecutó con MTP (multi-token prediction) desactivado, lo que indica que la arquitectura lo contempla.
+El modelo subyacente es un transformer MoE de la familia Qwen4Exp con 48 capas y 512 expertos enrutados por capa, lo que da 24.576 expertos en total. Cada experto enrutado tiene proyecciones de anchura 640, un detalle que condiciona la elección del group size: bajo tensor parallelism de 4, 640/4 = 160, divisible por 32 pero no por 128, de ahí el uso de g32. Además de los expertos enrutados, el checkpoint conserva un experto compartido (gate/up/down), una compuerta de experto compartido, normalización HC y dos portadores de down-projection HC, todos con los bytes exactos de la release anterior. La arquitectura incluye atención QSA en 12 capas y un módulo MTP (multi-token prediction) con draft en FP8.
 
-No se dispone de información sobre el entrenamiento del modelo base: no se indican tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO. Lo que sí documenta esta ficha derivada es el proceso de cuantización: calibración AWQ sobre 684 registros con una receta congelada, y una calibración K/V ejecutada específicamente sobre este checkpoint AWQ (14 shards de entrada, 4.904 prompts, 4.888.771 tokens), con verificación previa del corpus y del tokenizador. Las 24 escalas resultantes son escalas de almacenamiento K/V, no escalas de pesos AWQ ni de PLE. La revisión madre es `8336e613ea508b13c2159bd0f68965d97a606b95` y la revisión FP8 PLE oficial es `bcd9f01ddc9cff2316eb84281bebcd5b058bddce`. El autor incluye `SHA256SUMS`, `MODEL_PROVENANCE.json` y `VALIDATION.json` para trazabilidad, y advierte de que índices con el mismo hash pueden describir el mismo layout sin implicar pesos idénticos.
+La cuantización afecta a gate_proj, up_proj y down_proj de los 512 expertos enrutados en las 48 capas. El optimizador fue GPTQ amortiguado con damping 0,3 para gate/up y 1,0 para down, calibrado sobre el corpus public80-v1mix20 con 169.614 filas por capa y activaciones reales capturadas del checkpoint anterior servido en vLLM. El Hessian y el GPTQ usan el enrutamiento capturado del checkpoint previo; el s1 se recupera por mínimos cuadrados conjuntos desde los portadores existentes y el s2 por experto se congela de la búsqueda de calibración W2.5, sin nueva búsqueda ni ajuste sobre heldout. Las escalas se redondean a FP16 antes de la selección de códigos y los códigos siguen clip(round(w / scale + zero), 0, 15) sobre el residual GPTQ con feedback. Solo siete pares capa/experto sin cobertura natural usan 2.048 filas equiespaciadas de su capa como proxy. Las escalas K/V de QSA se conservan de la calibración previa (14 shards de entrada, 4.904 prompts, 4.888.771 tokens procesados), con 24 escalares FP32 positivos en el rango 0,0170375295–0,0819614977.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto largo: se validó recuperación de aguja (needle retrieval) en seis longitudes entre 1K y 128K tokens, con estabilidad en repeticiones exactas a 128K (3/3).
-- Razonamiento con modo "thinking": la validación se ejecutó con `xhigh` habilitado en todas las pruebas.
-- Capacidades matemáticas: subconjunto de GSM8K en configuración five-shot, con 32/32 aciertos tanto en KV FP16 como en E4M3 calibrado.
-- Generación de código: subconjuntos funcionales de HumanEval (5/5) y MBPP sanitizado (5/5).
-- Seguimiento de instrucciones: IFEval en modo estricto y laxo, 5/5 en prompts y 12/12 en instrucciones en ambos formatos de KV.
-- Visión: 10/10 en peticiones de imagen, incluidas referencias espaciales por color único y frases de dirección equivalentes.
-- Vídeo: 8/8 en peticiones de vídeo, incluidas preguntas de seguimiento sobre la respuesta previa del propio modelo, con inicialización de poda de tokens de vídeo.
-- Tool calling / function calling: el autor capturó 12 peticiones con propuestas de herramienta, pero no ejecutó las llamadas ni reclama tasa de éxito; el soporte existe a nivel de formato, no está verificado funcionalmente.
-- Capacidades multilingües: no disponible.
-- Modelo "uncensored": el nombre indica un ajuste orientado a reducir rechazos, pero no hay documentación en la información disponible sobre el alcance real de ese ajuste.
+- Generación de texto conversacional multi-turno, con pipeline declarado image-text-to-text.
+- Procesamiento de entrada multimodal imagen-texto, según el pipeline_tag y la mención a entrada multimodal en ReVolta.
+- Razonamiento multi-paso mediante el módulo MTP (multi-token prediction) con draft en FP8.
+- Generación con decodificación especulativa a través del draft MTP.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
+- La variante "Uncensored" del modelo base implica un ajuste orientado a reducir rechazos, aunque no se documentan los detalles del mismo.
 
 ## Casos de uso
 
-- Atención al cliente multimodal: el modelo puede procesar conversaciones multi-turno que combinen texto, capturas de pantalla o fotografías de producto gracias a su ventana de 262.144 tokens y a su pipeline image-text-to-text, manteniendo el historial completo sin truncar.
-- Análisis de vídeo de larga duración: la poda de tokens de vídeo y el contexto nativo permiten resumir o responder preguntas sobre grabaciones extensas, con seguimiento de preguntas encadenadas sobre respuestas anteriores (validado en 8/8 pruebas).
-- RAG sobre corpus extensos: la recuperación validada hasta 128K tokens con estabilidad en repeticiones exactas lo hace adecuado para indexar documentación técnica o expedientes completos en el propio contexto, reduciendo la dependencia de un recuperador externo.
-- Generación y revisión de código en pipelines de CI/CD: los resultados funcionales de HumanEval y MBPP sugieren uso para generación de parches y tests; la integración como herramienta requiere verificar el soporte de tool calling en el runtime antes de automatizar acciones.
-- Tutoría y verificación matemática: el subconjunto GSM8K five-shot y el modo de razonamiento `xhigh` permiten usarlo para resolver problemas paso a paso y auditar la traza de razonamiento en entornos educativos.
-- Investigación en seguridad y alineación: al tratarse de una variante "uncensored", resulta útil para estudiar comportamiento respecto a rechazos, evaluar sesgos y ejecutar red teaming controlado en un entorno aislado.
-- Despliegue autoalojado con datos sensibles: al poder ejecutarse en infraestructura propia (el autor valida en 4 GPU V100 de 32 GiB con TP4), encaja en escenarios con requisitos de soberanía de datos, siempre que se asuma el coste de un runtime adaptado.
-- Agentes multi-paso: el contexto largo y el modo de razonamiento son apropiados para planificación encadenada, pero la ausencia de una métrica de éxito en herramientas obliga a validar el bucle completo en el dominio concreto antes de producción.
+- Servicio de un MoE de 180.000 millones en parques de V100: el caso de uso principal documentado por el autor es desplegar el checkpoint con ReVolta en 4 × V100 32 GB, aprovechando los kernels AWQ g32 para MoE y el soporte SM70 que el vLLM estándar no ofrece. Es adecuado cuando existe hardware V100 amortizado y no se quiere migrar a Ampere o superior.
+- Investigación sobre cuantización de MoE: el repositorio publica MODEL_PROVENANCE.json, VALIDATION.json y EXPERT_COVERAGE.json con el recuento natural de muestras por capa y experto, lo que permite reproducir y auditar el proceso de cuantización con GPTQ amortiguado sobre activaciones capturadas.
+- Evaluación de fidelidad de cuantización: el autor reporta KL top-20-plus-tail y acuerdo top-1 sobre un subconjunto fijo de 66 registros de texto, útil como referencia para comparar técnicas de cuantización de expertos enrutados con group size pequeño.
+- Despliegue conversacional multimodal en infraestructura legacy: al soportar entrada imagen-texto y conversación, puede emplearse en asistentes con entrada visual sobre clústeres V100 existentes.
+- Generación especulativa en producción: el draft MTP en FP8 permite decodificación especulativa, adecuada para reducir latencia en cargas de generación de texto largas.
+- Baseline para comparativas de cuantización W4A16 en MoE: sirve como punto de referencia frente a otras técnicas (GPTQ puro, FP8, W8A16) al conservar portadores no enrutados byte a byte, lo que aísla el efecto de la cuantización de expertos.
+- Escenarios que requieren menor censura en la respuesta: la naturaleza "Uncensored" del modelo base puede interesar en investigación creativa o generación de contenido sin filtros, siempre con las advertencias legales y éticas correspondientes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks completos en la información disponible. El autor presenta únicamente comprobaciones de regresión con muestras pequeñas (47 prompts de texto más 50 comprobaciones suplementarias), y advierte explícitamente de que no son puntuaciones de benchmark. Se reproducen a continuación tal cual, comparando KV FP16 frente a E4M3 calibrado:
+No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor únicamente publica métricas de fidelidad de cuantización frente a la referencia BF16 sobre un subconjunto fijo de 66 registros de texto:
 
-| Comprobacion de calidad | KV FP16 | KV E4M3 calibrado |
-|---|---:|---:|
-| GSM8K, subconjunto five-shot | 32/32 | 32/32 |
-| HumanEval, subconjunto funcional | 5/5 | 5/5 |
-| MBPP sanitizado, subconjunto funcional | 5/5 | 5/5 |
-| IFEval estricto, prompts | 5/5 | 5/5 |
-| IFEval laxo, prompts | 5/5 | 5/5 |
-| IFEval estricto / laxo, instrucciones | 12/12 en ambos | 12/12 en ambos |
-| Generación básica (dos secuencias de cuatro peticiones) | 8/8 | 8/8 |
-| Recuperación de aguja, seis longitudes de 1K a 128K | 6/6 | 6/6 |
-| Recuperación de aguja a 128K, tres posiciones x dos repeticiones | 6/6 | 6/6 |
-| Peticiones de imagen | 10/10 | 10/10 |
-| Peticiones de vídeo, incluida pregunta de seguimiento propia | 8/8 | 8/8 |
-| Total imagen/vídeo | 18/18 | 18/18 |
-| Flujo de herramientas | No establecido; 12 peticiones capturadas | No establecido; 12 peticiones capturadas |
-| Estabilidad en repetición exacta a 128K | 3/3 | 3/3 |
-| Estabilidad en repetición exacta imagen/vídeo | 8/9 | 8/9 |
+| Metrica | Release anterior | Release actual |
+|---|---|---|
+| KL top-20-plus-tail (media) | 0,0303 | 0,0214 |
+| Acuerdo top-1 | 96,34 % | 97,08 % |
 
-Configuración declarada: contexto nativo de 262.144 tokens sin YaRN, pensamiento `xhigh`, y todo el contexto restante menos 16 tokens de seguridad para la generación. Los 47 prompts de texto usaron temperatura 1, top-p 0,95 y top-k 20; los suplementos usaron decodificación greedy (temperatura 0, top-p 1, top-k -1). En ambos casos: semilla 0, min-p 0, penalizaciones de presencia y frecuencia 0 y penalización de repetición 1. Solo se puntuaron respuestas finales o llamadas a herramienta emitidas; las propuestas de herramienta se capturaron pero no se ejecutaron. La nota del autor sobre GSM8K aclara que el caso `gsm8k-0012` se considera correcto con respuesta 12 (años completos hasta recuperar la inversión) frente a 13 (primer año con beneficio).
+El autor advierte explícitamente que son comprobaciones de fidelidad acotadas, con limitaciones de aproximación y de runtime, y que no constituyen puntuaciones de benchmark de capacidad general.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan aproximadamente 138 GB, de modo que se necesita un clúster multi-GPU; el autor valida con 4 GPU NVIDIA V100 de 32 GiB (128 GiB agregados) en TP4, con precisión de cómputo FP16 y MTP desactivado. Hay que sumar la memoria de caché KV, que el autor no cuantifica.
-- GPU recomendadas: el autor solo documenta V100 de 32 GiB. Para el mismo agregado de memoria, alternativas como 4x A100 40/80 GB, 4x H100 80 GB o 2x H200 resultan razonables por capacidad, aunque no están validadas en la información disponible.
-- GPU de consumo: no cabe. Un modelo de ~181 B con pesos en ~138 GB no se puede cargar en RTX 4090, 3090 ni similares, ni siquiera repartido en varias unidades de 24 GB.
-- Opciones de despliegue: el cargador debe soportar AWQ W4A16 asimétrico por experto con g32 en layout GEMM, reutilización indexada de shards PLE en FP8 oficial, las 24 escalas K/V QSA a través de `model.safetensors.index.json` y el tratamiento multimodal completo de Qwen4Exp (MRoPE y poda de tokens de vídeo). El autor afirma que el soporte AWQ genérico es insuficiente y que no se implica compatibilidad con runtimes estándar ni configuración de lanzamiento por defecto. No hay confirmación de compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- FP8: en V100, E4M3 se refiere al almacenamiento K/V, no a cómputo de atención en FP8 nativo. Para activar FP8 KV hay que solicitar `fp8_e4m3` explícitamente en un runtime compatible; descargar las escalas no basta.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: el repo ocupa 230,9 GB en total, pero la revisión de octubre de 2026 son 137,07 GB (127,66 GiB) en 86 shards; el peso en VRAM para inferencia ronda ese orden de magnitud, distribuido entre GPUs.
+- Configuración de referencia del autor: 4 × NVIDIA V100 32 GB (SM70) con ReVolta, el motor basado en vLLM mantenido por el autor.
+- En GPUs Ampere o superiores, el autor remite a la sección "Stock vLLM" de las instrucciones de carga, sin detallar configuración concreta en la información disponible.
+- Requisitos del loader: soporte de AWQ W4A16 g32 asimétrico por experto en layout GEMM con escalas FP16; tensores PLE FP8 oficiales e índice fusionado completo; las 24 entradas de escala K/V de QSA a través de model.safetensors.index.json, más las dos entradas del draft si se usa el MTP por defecto.
+- Cabe en GPU consumer: no disponible; por tamaño (127,66 GiB en la revisión actual) no cabe en una única GPU consumer de 24 GB y requiere reparto multi-GPU.
+- Opciones de despliegue: ReVolta (recomendado por el autor para V100); vLLM estándar en Ampere o superior según las notas del autor; llama.cpp, Ollama y TGI no están documentados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros modelos comparables en la información proporcionada. La única comparación documentada es contra el propio linaje del checkpoint:
-
-| Modelo | Parametros | Contexto | Precision / cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leoncca/Qwen3.8-Flash-Next-Uncensored-AWQ-g32 | 180,9 B | 262.144 tokens | AWQ W4A16 g32 en expertos enrutados, PLE FP8, KV E4M3 | qwen-community-1.0 | 115 descargas, 0 likes |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored (base) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Checkpoint FP8 oficial con PLE (revision `bcd9f01d...`) | no disponible | no disponible | FP8 | no disponible | no disponible |
+| leoncca/Qwen3.8-Flash-Next-Uncensored-AWQ-g32 | 179.999.981.459 | no disponible | AWQ W4A16 g32 + PLE FP8 + KV FP8 E4M3 | qwen-community-1.0 | Hugging Face, 833 descargas, 7 likes |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored (modelo base) | no disponible | no disponible | BF16 (madre) | no disponible | Hugging Face |
+| Checkpoint previo del mismo autor (referencia de calibración) | no disponible | no disponible | AWQ g32 con escalas BF16 y s1 previo | no disponible | Referenciado en la model card |
 
-Las alternativas de la misma categoría (MoE multimodal de ~180 B con contexto de 256K) no están identificadas en la información disponible, por lo que no se puede establecer una comparativa de rendimiento, licencia o disponibilidad frente a terceros.
+No se dispone de datos de benchmarks ni de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría. Las alternativas indicadas son las únicas mencionadas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad de runtime: la arquitectura requiere un cargador específico para Qwen4Exp con AWQ por experto, PLE FP8 indexado y escalas K/V QSA. El autor indica que el soporte AWQ genérico no es suficiente y que no se garantiza ninguna configuración de lanzamiento por defecto.
-- Procedencia: se recomienda verificar `SHA256SUMS`, `MODEL_PROVENANCE.json` y `VALIDATION.json` antes de usar el checkpoint. El propio autor advierte de que hashes de índice idénticos no prueban pesos idénticos ni procedencia común.
-- Fechas anómalas: la model card indica fechas de creación y actualización en septiembre de 2026, posteriores a la fecha de consulta. Conviene contrastar la procedencia antes de cualquier uso en producción.
-- Validación limitada: los resultados publicados son comprobaciones de regresión con 47 prompts de texto y 50 comprobaciones suplementarias, no benchmarks completos. No hay puntuaciones verificadas de MMLU, MMLU-Pro, MATH, GPQA ni de benchmarks multimodales estándar.
-- Tool calling no verificado: solo se capturaron 12 propuestas de herramienta sin ejecutarlas; no se reclama ninguna tasa de éxito. No se debe asumir que un flujo de agente completo funcionará sin validación propia.
-- Naturaleza "uncensored": no hay documentación sobre qué filtros se han reducido ni con qué método. Es esperable una mayor probabilidad de generar contenido dañino, sesgado o no conforme a políticas, lo que exige moderación externa en aplicaciones de cara al público.
-- Alucinación: no se han publicado evaluaciones de factualidad (por ejemplo, TruthfulQA o FActScore). El modo de razonamiento extendido no garantiza corrección factual.
-- Idiomas: la información no especifica cobertura lingüística; el castellano no está confirmado como idioma soportado.
-- Licencia: se declara `qwen-community-1.0` mediante `license: other` y un enlace a `LICENSE` en el repositorio. Los términos concretos de uso comercial, redistribución y obligaciones de atribución no están detallados en la información disponible y deben revisarse en el fichero de licencia antes de cualquier despliegue comercial.
-- Coste de despliegue: aproximadamente 138 GB de pesos requieren un clúster multi-GPU, lo que descarta su uso en hardware de consumo y encarece el escalado horizontal.
-- Idiomas de la ficha: esta ficha se ha redactado a partir exclusivamente de los metadatos de Hugging Face y de la model card del autor; no se ha podido contrastar con documentación técnica independiente.
+- Las métricas publicadas son de fidelidad de cuantización sobre 66 registros de texto, no de capacidad; no deben extrapolarse a rendimiento general.
+- Las escalas K/V de QSA en FP8 E4M3 se conservan de la calibración anterior y no se recalibraron para los nuevos pesos de expertos, lo que puede introducir desviaciones adicionales.
+- Los pesos del router no cambian, pero el autor advierte que esto no implica un enrutamiento end-to-end idéntico, ya que las salidas de expertos anteriores cambian.
+- Solo siete pares capa/experto sin cobertura natural usan filas proxy; el resto usa muestras naturales, pero la cobertura por experto es desigual y se publica en EXPERT_COVERAGE.json.
+- El modelo base es una variante "Uncensored": puede generar contenido sin los filtros habituales, con los riesgos legales, éticos y de reputación asociados en producción.
+- Licencia qwen-community-1.0 (etiquetada como "other" en Hugging Face): es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; las condiciones concretas no están detalladas en la información disponible.
+- Idiomas soportados no documentados; no se puede garantizar calidad multilingüe.
+- Longitud de contexto no documentada.
+- El despliegue en V100 depende de ReVolta, un motor mantenido por el propio autor, lo que introduce un riesgo de mantenimiento y de soporte a largo plazo.
+- El tamaño del repo (230,9 GB) y el número de shards (86) complican la descarga, verificación y almacenamiento; se recomienda usar SHA256SUMS para verificar la identidad completa de los archivos, ya que hashes de índice idénticos no prueban pesos idénticos.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/leoncca/Qwen3.8-Flash-Next-Uncensored-AWQ-g32
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
-- Fichero de licencia referenciado en la model card: LICENSE (dentro del repositorio)
-- Artefactos de trazabilidad referenciados: MODEL_PROVENANCE.json, VALIDATION.json, SHA256SUMS (dentro del repositorio)
-- Paper, blog o repositorio adicionales: no disponible
-- Demo o espacio interactivo: no disponible
-- Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron únicamente listados de sitios sin relacion con el contenido.
+- Motor ReVolta: https://github.com/Leonccaa/ReVolta
+- Repositorio de vLLM (referenciado como base de ReVolta): no disponible en la información proporcionada
+- Paper o blog técnico del modelo base: no disponible en la información proporcionada
+- Demo o espacio interactivo: no disponible en la información proporcionada

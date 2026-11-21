@@ -70,31 +70,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3.8-27B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
-    },
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "README.md · Qwen/Qwen3.8-27B-FP8 at main - Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/blob/main/README.md",
-      "snippet": "Qwen3.8-27B-FP8 This repository contains FP8-quantized model weights and configuration files for the post-trained model in the Hugging Face Transformers format."
-    },
-    {
-      "title": "Run Qwen3.8-27B Locally: VRAM and Speed Tested | ComputingForGeeks",
-      "url": "https://computingforgeeks.com/run-qwen3-8-27b-locally/",
-      "snippet": "Run Qwen3.8-27B locally with Ollama, llama.cpp or vLLM. Tested VRAM per quant, tokens per second with MTP, and full 262K context on a 24 GB RTX 4090."
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
-      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
-    }
-  ]
+  "sources": []
 }

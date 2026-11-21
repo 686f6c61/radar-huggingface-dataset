@@ -2,95 +2,101 @@
 
 ## Resumen
 
-Kenzan-Qwen3.8-27B-PinGrid-GGUF es una cuantizacion GGUF del modelo denso Qwen/Qwen3.8-27B (26.895.998.464 parametros reales), publicada por el usuario kabcnd. El objetivo declarado es ejecutar un modelo de 27B en una maquina Apple Silicon con 16 GB de memoria unificada (un Mac mini M6), algo que normalmente resulta inviable con cuantizaciones convencionales de 4 bits. Para ello emplea una receta propia de colocacion de precision ("Pin-Grid") guiada por una importance matrix de unsloth, que asigna formatos IQ2_XXS, IQ2_XS, IQ3_XXS, Q4_0, Q5_K, Q6_K y Q8_0 a grupos de tensores concretos segun su sensibilidad.
+Kenzan-Qwen3.8-27B-PinGrid-GGUF es una cuantización GGUF del modelo denso Qwen/Qwen3.8-27B (26.895.998.464 parámetros totales), publicada por el usuario kabcnd bajo licencia Apache 2.0. No se trata de un modelo nuevo entrenado desde cero, sino de un repack cuantizado con una receta propia de precisión mixta denominada "Pin-Grid", orientada a ejecutar un modelo de 27B en máquinas Apple Silicon con 16 GB de memoria unificada (el autor cita un Mac mini M6) y en GPUs de consumo con 12–16 GB de VRAM.
 
-El resultado es un unico fichero de 10,77 GiB (3,39 BPW) que, segun el autor, alcanza una perplejidad de 8,4997 en WikiText-2, frente a 9,6249 de su build anterior de 6,42 GiB. La model card destaca tambien una correccion en la cabecera GGUF: el campo `nextn_predict_layers` se parchea a 0 para evitar que llama.cpp interprete la capa 63 como capa NextN y omita su FFN.
+La aportación técnica principal es la asignación quirúrgica de tipos de cuantización según la sensibilidad L2 de la matriz de importancia (`imatrix`): el backbone de atención y las capas Gated DeltaNet se mantienen en Q4_0, las capas medias-tardías (`blk.36..57`) suben a IQ2_XS y los anclajes de la cola (`blk.58..63`) se colocan en Q4_0/Q5_K/Q6_K, con el head de salida en Q8_0 y los embeddings en Q6_K. El resultado es un fichero de 10,77 GiB a 3,39 BPW que, según el autor, alcanza una perplejidad WikiText-2 de 8,4997 frente a 9,6249 de su build anterior de 6,42 GiB.
 
-La relevancia practica es doble: por un lado demuestra tecnicas de cuantizacion extrema selectiva sobre arquitecturas hibridas con atencion lineal; por otro, es un ejemplo de como un modelo de casi 27B puede desplegarse en hardware de consumo con memoria unificada limitada, a costa de throughput de generacion moderado. La licencia es apache-2.0, heredada del modelo base.
+El modelo base emplea una arquitectura híbrida de 64 capas que combina atención con DeltaNet con compuertas (Gated DeltaNet), identificada en llama.cpp como arquitectura `qwen35`. La relevancia de esta ficha radica en que demuestra que es posible mantener la precisión de un 27B denso en el umbral de los 16 GB sin recurrir a kernels ternarios personalizados, usando únicamente tipos GGUF estándar compatibles con llama.cpp, Ollama y LM Studio.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido denso con 64 capas DeltaNet/Attention (arquitectura `qwen35` en llama.cpp) |
-| Parametros totales | 26.895.998.464 (26,9B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | hasta 32.768 tokens recomendados en el despliegue de referencia; el modelo base soporta contexto mayor, valor exacto no disponible |
-| Tipos de cuantizacion | GGUF mixto por tensor: IQ2_XXS, IQ2_XS, IQ3_XXS, Q4_0, Q5_K, Q6_K, Q8_0; fichero principal a 3,39 BPW |
-| Idiomas soportados | en, ru, multilingual (vocabulario de 248.320 tokens) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (fichero Kenzan-Qwen3.8-27B-PinGrid-IQ2_XXS-M6-16G.gguf, 10,77 GiB) |
+| Arquitectura | Transformer híbrido con 64 capas DeltaNet/Attention (Gated DeltaNet), identificador `qwen35` en llama.cpp |
+| Parámetros totales | 26.895.998.464 (≈26,9B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | Hasta 32.768 tokens recomendado por el autor en 16 GB; el modelo base soporta ventanas mayores (valor exacto no disponible) |
+| Tipos de cuantización | IQ2_XXS, IQ2_XS, IQ3_XXS, Q4_0, Q4_K, Q5_K, Q6_K, Q8_0 (mezcla por tensor); fichero principal a 3,39 BPW |
+| Idiomas soportados | Inglés, ruso y multilingüe (vocabulario de 248.320 tokens) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (fichero `Kenzan-Qwen3.8-27B-PinGrid-IQ2_XXS-M6-16G.gguf`, 10,77 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso con 64 capas que combinan atencion y Gated DeltaNet (atencion lineal), segun la descripcion de la model card. La cuantizacion parte de pesos nativos Q8_0 y utiliza una importance matrix de unsloth/Qwen3.8-27B-GGUF calibrada sobre 496 tensores y 1251 chunks. No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens ni las fases de RLHF/DPO del modelo base en la informacion proporcionada.
+El modelo base Qwen3.8-27B es un transformer denso de 64 capas que intercala mecanismos de atención clásica con capas Gated DeltaNet (una variante de atención lineal con estado recurrente y compuertas). Esta hibridación reduce el coste de memoria de la caché KV en contextos largos, algo especialmente relevante en la receta de despliegue del autor, que combina Flash Attention con caché KV cuantizada a q4_0. El checkpoint incluye una capa MTP (Multi-Token Prediction) en `blk.64`, que el autor poda durante la cuantización.
 
-La innovacion tecnica principal es la receta "Pin-Grid": la sensibilidad L2 de la importance matrix (`in_sum2`) abarca cinco ordenes de magnitud, desde ~1e4 en los bloques iniciales hasta 3,14e9 en `blk.63.ffn_down`. La receta asigna Q8_0 a la cabeza de salida, Q6_K a embeddings y claves/valores de atencion, Q5_K a los anclajes de la cola (bloques 54 a 63), Q4_0 a las capas de entrada y picos de FFN, IQ3_XXS a los FFN de cola restantes, IQ2_XS a los FFN de los bloques 36 a 57 e IQ2_XXS al resto de bloques 1 a 35. Ademas, el fichero incluye un parche de cabecera que fija `qwen35.nextn_predict_layers = 0`, necesario tras podar la capa MTP (blk.64) con `--prune-layers 64`.
+No se dispone de información sobre el dataset de entrenamiento del modelo base (número de tokens, composición, fases de RLHF/DPO) en la documentación proporcionada. Lo que sí está documentado es el proceso de cuantización: se parte de pesos nativos Q8_0 y se aplica una matriz de importancia de `unsloth/Qwen3.8-27B-GGUF` calibrada sobre 496 tensores y 1251 chunks. La innovación destacable es el parcheo de la cabecera GGUF (`qwen35.nextn_predict_layers = 0`): la poda de la capa MTP con `--prune-layers 64` deja el flag a 1 en la salida cruda de `llama-quantize`, lo que provoca que llama.cpp malinterprete `blk.63` como capa NextN y omita su FFN, degradando la perplejidad hasta 24,86. El GGUF publicado corrige ese flag directamente en la cabecera, de modo que funciona sin `--override-kv`.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento general, heredados del checkpoint Qwen/Qwen3.8-27B sin abliteracion.
-- Soporte multilingue, con enfasis declarado en ingles, ruso y otros idiomas (vocabulario de 248.320 tokens).
-- Capacidad de procesamiento de contexto largo dentro de los limites de memoria del hardware (hasta 32.768 tokens en la configuracion recomendada).
-- Compatibilidad con `llama-server` y endpoints compatibles con la API de OpenAI (`endpoints_compatible` en los tags).
-- Decodificacion especulativa mediante `ngram-map-k` en llama.cpp (parametros `--spec-type ngram-map-k`, `--spec-draft-n-max`), probada por el autor en una sesion en ruso y C++17.
-- Soporte de plantillas Jinja (`--jinja`) para formateo de chat.
-- No se documentan capacidades de vision, audio ni tool calling explicito en la informacion disponible.
+- Generación de texto conversacional multi-turno en inglés, ruso y otros idiomas cubiertos por el vocabulario multilingüe.
+- Razonamiento y generación de código; el autor documenta pruebas en vivo con C++17.
+- Soporte de decodificación especulativa mediante `ngram-map-k` en llama.cpp (parámetros `n=3, m=4`, hasta 3 tokens de borrador).
+- Compatibilidad con plantillas de chat vía `--jinja` en llama-server.
+- Ejecución nativa con Flash Attention y caché KV cuantizada (q4_0) en Metal y en backends estándar de llama.cpp.
+- Compatibilidad declarada con endpoints (tag `endpoints_compatible`), lo que permite servirlo tras una API compatible con OpenAI.
+- Capacidades del modelo base no documentadas en esta ficha (tool calling, visión, modo thinking): no disponible.
 
 ## Casos de uso
 
-- Despliegue local en Apple Silicon de 16 GB: el modelo esta calibrado para un Mac mini M6 con memoria unificada, permitiendo ejecutar un modelo de 27B en hardware de consumo con un unico fichero GGUF y llama.cpp con Metal.
-- Asistencia conversacional multilingue en local: el vocabulario de 248.320 tokens y el soporte de ingles y ruso lo hacen adecuado para chats privados sin conexion, con contexto de hasta 32.768 tokens.
-- Generacion de codigo asistida en estaciones de trabajo sin GPU dedicada: la prueba del autor con C++17 y decodificacion especulativa por ngramas indica uso viable para autocompletado y explicacion de codigo, con throughput de 11,25 t/s.
-- Prototipado de agentes y pipelines con API compatible con OpenAI: al exponer `llama-server` un endpoint compatible, puede integrarse en frameworks existentes sin adaptadores.
-- Evaluacion de tecnicas de cuantizacion extrema: sirve como referencia reproducible para investigar el impacto de recetas Pin-Grid frente a cuantizaciones uniformes en modelos hibridos con atencion lineal.
-- Procesamiento de documentos largos en local: con contexto de 32.768 tokens y KV cache en q4_0, permite resumir o extraer informacion de textos extensos manteniendo el modelo en memoria.
-- Inferencia en entornos con restricciones de privacidad: al ejecutarse completamente en local con licencia apache-2.0, es apto para datos que no pueden salir de la maquina.
+- Asistente conversacional local en Mac de 16 GB: el fichero de 10,77 GiB y la caché KV a q4_0 permiten mantener sesiones de hasta 32K tokens sin swapping, con un consumo medido de 12,01 GiB de RSS en llama-server.
+- Generación y revisión de código en C++17 sobre estación de trabajo sin GPU dedicada: el autor valida el modelo con prompts de código en ruso e inglés a 11,25 t/s de generación y 118,40 t/s de evaluación de prompt.
+- Procesamiento de documentación técnica multilingüe (inglés/ruso): el vocabulario de 248.320 tokens y los embeddings en Q6_K preservan la cobertura léxica en ruso, un punto débil habitual en cuantizaciones agresivas.
+- Servicio de inferencia en GPUs de consumo de 12–16 GB (RTX 4070 Ti, 4080, 3090): el autor declara compatibilidad directa con llama.cpp estándar, sin kernels personalizados.
+- Prototipado de pipelines con decodificación especulativa: la combinación de `ngram-map-k` con llama-server permite experimentar con aceleración de generación sin cambiar de modelo.
+- Despliegue en Ollama o LM Studio para equipos de desarrollo: al usar tipos GGUF estándar (IQ2_XXS, Q4_K, Q5_K, Q8_0), el modelo se carga sin pasos de conversión adicionales.
+- Evaluación comparativa de recetas de cuantización: el autor publica la tabla de tipos por tensor (`recipes/tensor_types_c3.txt`), lo que sirve como referencia reproducible para estudiar el impacto de la precisión mixta en modelos híbridos.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor, medidos en Apple Mac mini M6 con 16 GB de memoria unificada, Metal y KV cache q4_0, sobre `wt2_128k.txt` (`-c 2048 --chunks 14 -ctk q4_0 -ctv q4_0 -fa 1 -ngl 99`) y `llama-bench` (`-p 512 -n 128 -r 3`):
+Datos medidos por el autor en un Apple Mac mini M6 con 16 GB de memoria unificada, Metal y caché KV q4_0, sobre `wt2_128k.txt` (`-c 2048 --chunks 14 -ctk q4_0 -ctv q4_0 -fa 1 -ngl 99`) y `llama-bench` (`-p 512 -n 128 -r 3`):
 
-| Modelo | Tamano | PPL (wt2, c=2048) | pp512 (t/s) | tg128 (t/s) | Notas |
+| Modelo | Tamaño | PPL (wt2, c=2048) | pp512 (t/s) | tg128 (t/s) | Notas |
 |---|---|---|---|---|---|
-| Kenzan-Qwen3.8-27B-Abliterated-Core16-Q4_1 (baseline) | 6,42 GiB | 9,6249 ± 0,22173 | 225,61 | 16,42 | Base PTQ1_0 de 1 bit |
+| Kenzan-Qwen3.8-27B-Abliterated-Core16-Q4_1 (baseline) | 6,42 GiB | 9,6249 ± 0,22173 | 225,61 | 16,42 | Base 1-bit PTQ1_0 |
 | Kenzan-Qwen3.8-27B-PinGrid-IQ2_XXS-M6-16G (esta release) | 10,77 GiB | 8,4997 ± 0,19278 | 248,52 | 11,31 | -1,1252 PPL frente al baseline |
 
-Prueba adicional con `llama-server` (`ngram-map-k`, n=3, m=4, ruso y C++17): 11,25 t/s de generacion, 118,40 t/s de evaluacion de prompt, 55 de 198 tokens de borrador aceptados, 12,01 GiB de RSS y sin swapping. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Prueba en vivo con `llama-server` (`ngram-map-k` con `n=3, m=4`, ruso + C++17): 11,25 t/s de generación, 118,40 t/s de evaluación de prompt, 55 de 198 tokens de borrador aceptados y 12,01 GiB de RSS sin swapping.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 10,77 GiB para el fichero GGUF; el autor reporta 12,01 GiB de RSS en `llama-server` con contexto de 32.768 tokens y KV cache q4_0.
-- GPU recomendadas: Apple Silicon con Metal (objetivo declarado: Mac mini M6 de 16 GB). No se documenta soporte verificado en GPU NVIDIA o AMD en la informacion disponible.
-- Cabe en GPU de consumo: si, en equipos Apple Silicon de 16 GB de memoria unificada; el autor advierte mantener el working set Metal por debajo de ~15 GB y usar contexto entre 8.192 y 32.768 tokens.
-- Opciones de despliegue: llama.cpp upstream (arquitectura `qwen35`) con builds Metal, y `llama-server` con API compatible con OpenAI. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: 248,52 t/s en pp512 y 11,31 t/s en tg128 en el benchmark; 11,25 t/s de generacion y 118,40 t/s de prompt eval en la prueba de servidor.
+- VRAM/RAM estimada: 10,77 GiB para los pesos más la caché KV; el autor reporta 12,01 GiB de RSS en inferencia real con contexto moderado.
+- Apple Silicon: validado en Mac mini M6 con 16 GB de memoria unificada; el autor recomienda mantener `-c` entre 8192 y 32768 con `--cache-type-k q4_0 --cache-type-v q4_0` para no superar el límite de working set de Metal (~15 GB).
+- GPUs de consumo: el autor declara compatibilidad con RTX 4070 Ti, RTX 4080 y RTX 3090 (12–16 GB de VRAM).
+- GPUs de datacenter (A100, H100): no mencionadas en la documentación; el modelo está pensado para hardware de gama consumer y Apple Silicon.
+- Opciones de despliegue: llama.cpp (upstream, arquitectura `qwen35`), llama-server con `--jinja` y decodificación especulativa `ngram-map-k`, Ollama y LM Studio (compatibilidad "stock" declarada por el autor).
+- Throughput medido: 248,52 t/s en prefill (pp512) y 11,31 t/s en generación (tg128) en Mac mini M6; 11,25 t/s de generación y 118,40 t/s de prompt eval en llama-server con especulación activa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | PPL wt2 (c=2048) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | PPL (wt2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kenzan-Qwen3.8-27B-PinGrid-IQ2_XXS (esta release) | 26,9B denso | hasta 32.768 recomendado | 8,4997 | apache-2.0 | GGUF, 10,77 GiB |
-| Kenzan-Qwen3.8-27B-Abliterated-Core16-Q4_1 | 26,9B denso | no disponible | 9,6249 | no disponible | GGUF, 6,42 GiB |
-| Qwen/Qwen3.8-27B (modelo base) | 26,9B denso | no disponible | no disponible | apache-2.0 | safetensors, pesos originales |
+| Kenzan-Qwen3.8-27B-PinGrid-IQ2_XXS (esta release) | 26,9B densos | hasta 32K recomendado en 16 GB | 8,4997 | Apache 2.0 | GGUF en Hugging Face |
+| Kenzan-Qwen3.8-27B-Abliterated-Core16-Q4_1 | 26,9B densos | no disponible | 9,6249 | Apache 2.0 | GGUF (build previa del mismo autor) |
+| Qwen/Qwen3.8-27B (modelo base) | 26,9B densos | no disponible | no disponible | Apache 2.0 | Pesos originales en Hugging Face |
+| Otras cuantizaciones GGUF de Qwen3.8-27B (p. ej. unsloth) | 26,9B densos | no disponible | no disponible | Apache 2.0 | GGUF en Hugging Face |
 
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+La comparativa se limita a variantes del mismo modelo base porque la documentación proporcionada no incluye datos de rendimiento de modelos competidores de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion extrema a 3,39 BPW introduce perdida de calidad respecto al modelo base; la PPL de 8,4997 es buena para el tamano, pero no equivale al rendimiento del checkpoint original en tareas complejas.
-- El throughput de generacion es bajo (11,31 t/s en tg128), lo que limita su uso interactivo en comparacion con cuantizaciones mayores o modelos mas pequenos.
-- El rendimiento esta verificado unicamente en Apple Silicon con Metal; no hay datos de comportamiento en CUDA, ROCm ni CPU pura.
-- Requiere una version de llama.cpp con soporte de la arquitectura `qwen35` y, para la decodificacion especulativa, de `ngram-map-k`.
-- El parche de cabecera `nextn_predict_layers = 0` es critico: usar el fichero sin el o regenerarlo con `llama-quantize` puede degradar la PPL a 24,86.
-- No se documentan evaluaciones de sesgo, alucinacion ni seguridad en la informacion disponible; al tratarse de una cuantizacion de un modelo conversacional, persisten los riesgos habituales de alucinacion.
-- La licencia apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen/Qwen3.8-27B.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que la validacion por parte de la comunidad es practicamente inexistente.
+- La cuantización IQ2_XXS en el rango `blk.1..35` introduce pérdida de precisión inevitable; el propio autor cuantifica la degradación en términos de PPL, pero no documenta su impacto en tareas de razonamiento o código.
+- El modelo está optimizado y validado para Apple Silicon de 16 GB; el rendimiento en otras plataformas (CUDA, ROCm) no está medido en la documentación.
+- La receta de cuantización depende de la matriz de importancia de `unsloth`; cambios en esa matriz o en la versión de llama.cpp pueden alterar los resultados.
+- Riesgo de alucinación: no evaluado ni documentado por el autor.
+- Sesgos conocidos: no documentados.
+- Idiomas: cobertura declarada para inglés, ruso y multilingüe; no hay evaluación por idioma más allá del vocabulario.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-27B debe verificarse contra sus propios términos antes de producción.
+- El autor advierte de un bug de cabecera en cuantizaciones crudas de este modelo (`nextn_predict_layers`); usar otras builds sin el parche puede degradar la PPL hasta 24,86.
+- Contexto efectivo limitado en la práctica por la memoria: en 16 GB el autor recomienda no superar 32K tokens incluso con caché KV a 4 bits.
+- El repositorio tiene 0 likes y 882 descargas en el momento de la consulta; se trata de una publicación de un autor individual, no de un equipo de investigación, lo que reduce la validación externa.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/kabcnd/Kenzan-Qwen3.8-27B-PinGrid-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Importance matrix utilizada: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Inspiracion declarada (Prism ML): https://huggingface.co/prism-ml
-- Donaciones del autor: https://ko-fi.com/kabcpc
+- Matriz de importancia utilizada: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Ko-fi del autor: https://ko-fi.com/kabcpc
+- llama.cpp (arquitectura `qwen35`): no disponible en la información proporcionada

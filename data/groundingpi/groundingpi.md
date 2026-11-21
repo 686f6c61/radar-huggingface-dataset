@@ -2,112 +2,100 @@
 
 ## Resumen
 
-GroundingPI es un modelo fundacional de grounding visual de 4.843.664.384 parametros (aproximadamente 4,84 B) desarrollado por el equipo GroundingPI, orientado a la percepcion precisa para inteligencia fisica. A diferencia de los modelos de vision-lenguaje-accion (VLA) y de los world-action models (WAM), que reutilizan backbones de proposito general, GroundingPI se ha preentrenado especificamente para localizar objetos: genera puntos y cajas codificados como coordenadas cuantizadas dentro de un vocabulario compartido, lo que le permite apuntar con precision incluso en escenas densas y con objetos muy pequenos.
+GroundingPI es un modelo fundacional de *grounding* visual de 4B parámetros (4.843.664.384 según los pesos en safetensors) desarrollado por el equipo GroundingPI. Su objetivo es resolver la localización precisa de objetos en imágenes: determinar qué objeto es el objetivo y dónde está, incluso en escenas con alta densidad de objetos y con objetos de tamaño muy reducido, y con la latencia suficiente para control en bucle cerrado. Para ello genera puntos y cajas como coordenadas cuantizadas dentro de un vocabulario compartido con las etiquetas semánticas y los marcadores de protocolo.
 
-El modelo es un checkpoint autorregresivo de vision-lenguaje publicado en Hugging Face con pipeline image-text-to-text y licencia apache-2.0-with-upstream-kimi-k3 (etiquetada como "other", con la Kimi K3 License aplicandose al material derivado de Kimi). Soporta ingles y chino, y cubre tareas como deteccion de objetos de vocabulario abierto, comprension de expresiones referenciales, pointing, OCR con localizacion de texto y comprension de estructura de documentos.
+El modelo se presenta como alternativa a los backbones visuales de propósito general que emplean los modelos visión-lenguaje-acción (VLA) y los modelos mundo-acción (WAM), que según los autores fallan en escenarios de *grounding* exigentes. GroundingPI reporta un promedio de 73,68% frente a 44 baselines en 34 benchmarks de grounding que cubren 11 capacidades perceptivas, por encima del modelo de mayor tamaño GPT-6 Astra (71,54%). Como backbone visual downstream, los autores reportan mejoras en manipulación robótica (RoboTwin 2.0, hasta 24,8% relativo sobre el mejor backbone evaluado en los cuatro escenarios fuera de distribución) y en conducción autónoma (nuScenes, error L2 en bucle abierto de 0,296 m).
 
-Su relevancia actual radica en el enfoque: el paper defiende el grounding como fundamento perceptivo y el preentrenamiento perceptivo dedicado como via prometedora para modelos fundacionales de inteligencia fisica. Segun la model card, GroundingPI alcanza un promedio de 73,68% frente a 44 baselines en 34 benchmarks de grounding que cubren 11 capacidades perceptivas, por encima del GPT-6 Astra (71,54%), y como backbone visual mejora resultados en manipulacion robotica y conduccion autonoma. El repositorio libera unicamente el checkpoint de grounding; los resultados de las politicas de accion se describen en el paper.
+Es relevante ahora porque propone el preentrenamiento perceptivo dedicado como vía para modelos fundacionales de inteligencia física, y porque publica el checkpoint autorregresivo visión-lenguaje con licencia Apache 2.0 para las contribuciones propias, con la licencia Kimi K3 aplicándose al material derivado. El repositorio ocupa 9,8 GB y el modelo soporta inglés y chino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer autorregresivo de vision-lenguaje (modelo fundacional de grounding); detalles internos de capas y atencion no disponibles |
-| Parametros totales | 4.843.664.384 (aproximadamente 4,84 B), segun los pesos en safetensors |
-| Parametros activos | no aplica (no se describe una arquitectura MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio publica los pesos en safetensors y no se documentan variantes cuantizadas |
-| Idiomas soportados | ingles (en) y chino (zh) |
-| Licencia | apache-2.0-with-upstream-kimi-k3 (campo `license: other` en Hugging Face) |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 9,8 GB |
-| Libreria | transformers (requiere `trust_remote_code`, etiqueta custom_code) |
-| Pipeline | image-text-to-text |
-| Fecha de publicacion | 30 de septiembre de 2026 (paper); actualizacion del repositorio el 14 de octubre de 2026 |
-| Descargas / likes en Hugging Face | 305 descargas / 20 likes |
+| Arquitectura | Modelo visión-lenguaje autorregresivo con vocabulario compartido para etiquetas semánticas, marcadores de protocolo, puntos y cajas |
+| Parametros totales | 4.843.664.384 |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Inglés (en), chino (zh) |
+| Licencia | Apache 2.0 para contribuciones propias, con licencia Kimi K3 para material derivado (apache-2.0-with-upstream-kimi-k3) |
+| Formato de pesos | Safetensors, con código personalizado (custom_code) para transformers |
 
 ## Arquitectura y entrenamiento
 
-GroundingPI se presenta como un modelo fundacional de grounding de 4B basado en un checkpoint autorregresivo de vision-lenguaje. La innovacion central descrita es la representacion de la salida: el modelo genera puntos y cajas como coordenadas cuantizadas dentro de un vocabulario compartido, en lugar de depender de cabezas de regresion especificas de tarea. Esta formulacion unifica tareas de localizacion heterogeneas (deteccion de vocabulario abierto, referring expression comprehension, pointing, grounding de elementos de GUI, localizacion de texto en OCR, layout de documentos) bajo una misma interfaz de generacion.
+GroundingPI es un modelo visión-lenguaje autorregresivo que unifica la salida de *grounding* en un único vocabulario: las etiquetas semánticas, los marcadores de protocolo, los puntos y las cajas se representan como coordenadas cuantizadas dentro del mismo espacio de tokens. Esta decisión de diseño permite que un decoder autorregresivo genere localizaciones (puntos y cajas) como si fueran texto, sin cabezas específicas de detección ni decodificadores separados. El modelo se distribuye con código personalizado para `transformers` y pipeline `image-text-to-text`.
 
-El modelo se ha entrenado con un objetivo de preentrenamiento perceptivo dedicado. Segun la model card, el desarrollo se evalua contra 44 baselines en 34 benchmarks de grounding que abarcan 11 capacidades perceptivas, y el checkpoint liberado corresponde al backbone perceptivo; los resultados de las politicas de accion posteriores se describen en el paper y no se incluyen en el repositorio. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. El modelo deriva parcialmente de material de Kimi, cuyo licenciamiento se mantiene sobre el paquete combinado.
+La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Sí se indica que el preentrenamiento perceptivo es específico para *grounding* (a diferencia de los backbones generalistas) y que el checkpoint publicado es el autorregresivo visión-lenguaje usado para *grounding*; los resultados de políticas de acción downstream se describen en el paper pero no se publican como pesos en este repositorio. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Grounding visual de vocabulario abierto: localizacion de objetos mediante puntos y cajas en escenas densas y con objetos pequenos.
-- Deteccion de objetos con salida de coordenadas cuantizadas en un vocabulario compartido.
-- Comprension de expresiones referenciales (referring expression comprehension) y grounding guiado por prompts visuales.
-- Localizacion basada en puntos (pointing) y razonamiento espacial sobre la imagen.
-- Grounding de elementos de interfaz grafica (GUI element grounding).
-- OCR con localizacion de texto.
-- Comprension de estructura y layout de documentos.
-- Capacidades multilingues limitadas a ingles y chino.
-- Uso como backbone visual para politicas de manipulacion robotica y para conduccion autonoma (los resultados de politica se reportan en el paper, no en este repositorio).
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, modo de razonamiento explicito ni procesamiento de audio.
+- Localización de objetos de vocabulario abierto y *grounding* en escenas densas.
+- Comprensión de expresiones referenciales (*referring-expression comprehension*) y localización guiada por prompt visual.
+- Localización basada en puntos, razonamiento espacial y *grounding* de elementos de interfaz gráfica (GUI).
+- OCR con localización del texto y comprensión de la disposición de documentos (*document layout*).
+- Detección de objetos y generación de cajas delimitadoras como coordenadas cuantizadas.
+- Generación de texto conversacional en el pipeline `image-text-to-text`.
+- Capacidades multilingües limitadas a inglés y chino.
+- Uso como backbone visual para sistemas de robótica, agentes encarnados y conducción autónoma (resultados reportados en el paper).
+- No se documenta soporte explícito de *tool calling* ni de razonamiento multi-paso con agentes.
 
 ## Casos de uso
 
-- Manipulacion robotica: el modelo actua como backbone perceptivo en pipelines de vision-lenguaje-accion, proporcionando la localizacion precisa del objeto a manipular; en RoboTwin 2.0 supera a los backbones evaluados en los cuatro escenarios fuera de distribucion, con hasta un 24,8% de mejora relativa frente al mejor backbone.
-- Conduccion autonoma: integrado como backbone visual, alcanza un error L2 medio en lazo abierto de 0,296 m en nuScenes, lo que lo hace util para tareas de percepcion en entornos de conduccion.
-- Automatizacion de interfaces graficas: el grounding de elementos de GUI permite a agentes identificar botones, campos y controles a partir de descripciones en lenguaje natural, sin depender de selectores fragiles basados en el arbol de accesibilidad.
-- Digitalizacion documental: la combinacion de OCR con localizacion de texto y comprension de layout permite extraer campos estructurados de facturas, formularios o articulos preservando la posicion espacial de cada elemento.
-- Comercio electronico y catalogos: deteccion de vocabulario abierto para localizar productos o atributos concretos dentro de imagenes de catalogo y generar anotaciones de bounding boxes a escala.
-- Anotacion automatica de datasets: generacion de cajas y puntos para preetiquetar datos de entrenamiento de otros modelos de vision, reduciendo el coste de anotacion manual en pipelines de MLOps.
-- Analisis de imagenes medicas o industriales asistido: localizacion de estructuras o defectos descritos por texto, siempre que la tarea se formule como grounding sobre una imagen; requiere validacion adicional porque no se documentan evaluaciones en estos dominios.
-- Investigacion en inteligencia fisica: uso del checkpoint como base para estudiar el preentrenamiento perceptivo dedicado frente a backbones de proposito general, con la posibilidad de conectar una cabeza de politica propia.
+- Localización de objetos en robótica de manipulación: el modelo actúa como backbone perceptivo que devuelve puntos y cajas de los objetos objetivo, lo que permite cerrar el bucle de control con la latencia necesaria; los autores reportan mejoras en RoboTwin 2.0 frente a backbones generalistas.
+- Conducción autónoma: uso como backbone visual para percibir y localizar elementos de la escena; en nuScenes se reporta un error L2 en bucle abierto de 0,296 m.
+- Automatización de interfaces gráficas: *grounding* de elementos de GUI a partir de instrucciones en lenguaje natural, útil para agentes que operan aplicaciones mediante clics basados en coordenadas.
+- Digitalización de documentos: OCR con localización del texto y comprensión de la disposición, adecuado para pipelines de extracción de datos de facturas, formularios y documentos escaneados.
+- Anotación automática de datasets: generación de cajas y puntos para preetiquetar imágenes en proyectos de visión por computador, reduciendo el coste de anotación manual en escenas densas.
+- Búsqueda visual y recuperación por referencia: localizar un objeto descrito por una expresión referencial ("el vaso rojo junto a la pantalla") en catálogos, imágenes de inventario o fotografías de almacén.
+- Investigación en percepción para agentes encarnados: evaluación de un backbone perceptivo dedicado frente a modelos generalistas en tareas de *grounding* y planificación visual.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos numericos publicados en la informacion disponible son agregados y de tareas downstream; no se desglosan resultados por benchmark individual.
+Los datos disponibles provienen de la model card y no incluyen el desglose por benchmark individual, solo agregados y resultados downstream.
 
-| Metrica | GroundingPI | Referencia comparada |
+| Benchmark | GroundingPI | Referencia comparada |
 |---|---|---|
-| Promedio en 34 benchmarks de grounding (11 capacidades perceptivas) | 73,68% | GPT-6 Astra: 71,54% |
-| Numero de baselines evaluados | 44 | no disponible |
-| RoboTwin 2.0 (4 escenarios fuera de distribucion) | mejor que todos los backbones evaluados, hasta +24,8% relativo frente al mejor backbone | no disponible |
-| nuScenes (error L2 medio en lazo abierto como backbone visual) | 0,296 m | no disponible |
+| Promedio en 34 benchmarks de grounding (11 capacidades) | 73,68% | GPT-6 Astra: 71,54% |
+| RoboTwin 2.0 (4 escenarios fuera de distribución) | Mejor en los cuatro escenarios | Hasta 24,8% relativo por encima del mejor backbone evaluado |
+| nuScenes (error L2 en bucle abierto) | 0,296 m | No disponible |
 
-No se han publicado en la informacion disponible resultados desglosados de MMLU, HumanEval, GSM8K ni de benchmarks de grounding individuales.
+No se han publicado en la información disponible resultados desglosados de MMLU, HumanEval, GSM8K ni de benchmarks individuales de *grounding*.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 9,7 GB en precision fp16/bf16 (4,84 B de parametros, es decir unos 9,7 GB solo de pesos) y en torno a 5-6 GB en cuantizacion de 8 bits. Son estimaciones calculadas a partir del numero de parametros, no cifras publicadas por el autor.
-- GPU recomendadas: no disponibles en la informacion del autor. Por tamano, el modelo encaja sin necesidad de paralelismo en GPUs de 16 GB o superiores (RTX 4090, RTX A5000, L40S, A100 40 GB, H100).
-- Cabe en GPU de consumo: si, en tarjetas con 16 GB o mas de VRAM en bf16, y en tarjetas de 8 GB si se aplica cuantizacion, siempre que la implementacion lo permita; el repositorio no publica pesos GGUF ni cuantizados.
-- Opciones de despliegue: la libreria declarada es transformers con etiqueta custom_code, por lo que es necesario cargar el modelo con `trust_remote_code=True` y el codigo remoto del repositorio. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. El autor marca `inference: false` en la model card.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 4,84B parámetros, en FP16 se necesitan aproximadamente 9,7 GB solo para pesos, más memoria para el codificador visual, el procesador de imagen y la caché KV; en cuantización de 8 bits rondaría 5 GB y en 4 bits unos 2,5-3 GB, aunque el autor no publica cuantizaciones.
+- GPU recomendadas: no disponible. Por tamaño, una GPU con 24 GB (RTX 4090, L4, A10G) debería acomodar el modelo en FP16 con margen; A100 y H100 son adecuadas para mayor throughput y contextos largos.
+- Cabe en GPU de consumo: previsiblemente sí en tarjetas con 16-24 GB en FP16, y en 8-12 GB si se generan cuantizaciones propias; no hay confirmación oficial.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (el repositorio usa `custom_code`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y la model card marca `inference: false`, por lo que el despliegue estándar no está garantizado sin el código personalizado.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en grounding | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento en grounding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GroundingPI | 4,84 B | no disponible | 73,68% de promedio en 34 benchmarks | apache-2.0-with-upstream-kimi-k3 | pesos en Hugging Face y ModelScope, demo en HF Spaces |
-| GPT-6 Astra | no disponible | no disponible | 71,54% en el mismo conjunto de benchmarks segun GroundingPI | no disponible | no disponible |
-| Otros backbones de manipulacion evaluados en RoboTwin 2.0 | no disponible | no disponible | inferiores a GroundingPI en los cuatro escenarios fuera de distribucion | no disponible | no disponible |
+| GroundingPI | 4,84B | No disponible | 73,68% de promedio en 34 benchmarks | Apache 2.0 + Kimi K3 para derivados | Pesos en HF y ModelScope |
+| GPT-6 Astra | No disponible (mayor) | No disponible | 71,54% de promedio en los mismos benchmarks | Propietaria | No disponible como pesos abiertos |
+| Backbones generalistas evaluados en RoboTwin 2.0 | No disponible | No disponible | Hasta 24,8% relativo por debajo de GroundingPI | Variable | No disponible |
 
-No se dispone en la informacion proporcionada de datos de parametros, contexto o licencia de otras alternativas de grounding comparables, por lo que la comparativa se limita a la referencia reportada por el propio autor.
+No se dispone de datos suficientes para comparar con alternativas abiertas de tamaño similar en tareas de *grounding*.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio especifico: esta disenado para grounding y percepcion visual; no se documentan capacidades de generacion de texto general, codigo, matematicas ni razonamiento conversacional abierto.
-- Idiomas limitados a ingles y chino; no se declara soporte para castellano ni para otras lenguas.
-- Longitud de contexto no documentada, lo que impide planificar escenarios multi-imagen o multi-turno largos sin pruebas previas.
-- Riesgo de alucinacion de objetos: al generar coordenadas como tokens de un vocabulario compartido, puede producir localizaciones plausibles para objetos que no existen en la imagen; se recomienda umbral de confianza y validacion posterior.
-- Sin datos publicados de sesgos por demografia, dominio o geografia; se desconoce el comportamiento en imagenes fuera de la distribucion de entrenamiento.
-- Licencia dual: las contribuciones propias son Apache 2.0, pero el material derivado de Kimi queda bajo la Kimi K3 License, cuyas condiciones siguen aplicandose al usar o redistribuir el paquete combinado del modelo. Es imprescindible revisar el fichero LICENSE antes de un uso comercial.
-- El autor marca `inference: false` en la model card y el repositorio requiere cargar codigo remoto (`custom_code`), lo que implica una revision de seguridad del codigo antes de desplegarlo en produccion.
-- No se publican pesos cuantizados (GGUF, AWQ, GPTQ) ni recetas de despliegue en servidores de inferencia, por lo que el coste de puesta en produccion recae en el integrador.
-- Los resultados en manipulacion robotica y conduccion autonoma corresponden a experimentos descritos en el paper usando GroundingPI como backbone; no forman parte del checkpoint liberado, que es solo el modelo de vision-lenguaje.
-- Fecha de publicacion muy reciente (septiembre-octubre de 2026) y volumen de adopcion bajo (305 descargas), por lo que el ecosistema de herramientas y casos validados es todavia reducido.
+- Sesgos conocidos: no documentados en la información disponible.
+- Riesgo de alucinación: no evaluado en la model card; al generar coordenadas como tokens, existe riesgo de producir localizaciones plausibles pero incorrectas en escenas ambiguas.
+- Limitaciones de idioma: solo inglés y chino; el resto de idiomas no están soportados oficialmente.
+- Longitud de contexto: no especificada, lo que impide planificar casos de uso con muchas imágenes o prompts largos.
+- Licencia: las contribuciones propias son Apache 2.0, pero el paquete combinado incluye material derivado de Kimi K3 cuya licencia sigue aplicándose en uso y redistribución; es necesario revisar el archivo LICENSE antes de un despliegue comercial.
+- Producción: el repositorio usa código personalizado (`trust_remote_code`) y la model card declara `inference: false`; no hay cuantizaciones oficiales ni soporte documentado en servidores de inferencia habituales.
+- Los resultados downstream de robótica y conducción provienen del paper; el repositorio solo publica el checkpoint visión-lenguaje, no las políticas de acción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/GroundingPI/GroundingPI
-- Demo online en Hugging Face Spaces: https://huggingface.co/spaces/GroundingPI/GroundingPI
-- Pagina del proyecto: https://groundingpi.github.io/
-- Codigo en GitHub: https://github.com/groundingpi/GroundingPI
-- Paper en arXiv: https://arxiv.org/abs/2609.39601
-- Pagina del paper en Hugging Face (Daily Paper): https://huggingface.co/papers/2609.39601
-- Pesos en ModelScope: https://www.modelscope.ai/models/GroundingPI/GroundingPI
-- Reporte en medios (WeChat): https://mp.weixin.qq.com/s/MWR6Rqv_3ieamBd5AJk0qw
-- Fichero de licencia: https://huggingface.co/GroundingPI/GroundingPI/blob/main/LICENSE
+- Hugging Face: https://huggingface.co/GroundingPI/GroundingPI
+- ModelScope: https://www.modelscope.ai/models/GroundingPI/GroundingPI
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/GroundingPI/GroundingPI
+- Página del proyecto: https://groundingpi.github.io/
+- Código en GitHub: https://github.com/groundingpi/GroundingPI
+- Paper (arXiv): https://arxiv.org/abs/2609.39601
+- Página del paper en HF: https://huggingface.co/papers/2609.39601
+- Reporte divulgativo: https://mp.weixin.qq.com/s/MWR6Rqv_3ieamBd5AJk0qw

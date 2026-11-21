@@ -2,83 +2,82 @@
 
 ## Resumen
 
-Nova Velocity es un repositorio de identidad y documentación publicado por Moderno Tech bajo el paraguas de su línea de productos Nova. Según la model card, se trata de un "modelo orientado a MoE de alto rendimiento con activación reducida", pero en el momento de redactar esta ficha no contiene pesos verificados: el propio autor lo etiqueta como `in-development` y con estado `documentation`. El repositorio tiene un tamaño de 0.0 GB, lo que confirma que no aloja artefactos de modelo.
+Nova Velocity es un modelo de lenguaje de propósito general desarrollado por Moderno Tech dentro de su familia Nova AI, orientado a la ejecución local en equipos de sobremesa y estaciones de trabajo. Se trata de un transformer con arquitectura Mixture of Experts (MoE) de aproximadamente 30.532 millones de parámetros totales, de los cuales alrededor de 1.500 millones se activan por token, lo que busca ofrecer un equilibrio entre capacidad y velocidad de inferencia en hardware de consumo.
 
-La procedencia técnica declarada apunta a `DavidAU/Qwen3-30B-A1.5B-GGUF` como "candidate origin", con una nota de arquitectura esperada de "30B A1.5B variante NEO". Es decir, el objetivo sería un modelo Mixture-of-Experts de aproximadamente 30.000 millones de parámetros totales con unos 1.500 millones activos por token, derivado de la familia Qwen3. No obstante, el autor indica explícitamente que la licencia y el estado de redistribución están "under audit" y que no se publicarán pesos sin verificación exacta de licencia y hash.
+El modelo se distribuye exclusivamente en formato GGUF cuantizado, con variantes que van desde IQ2_M hasta Q6_K, lo que permite ajustar el uso de memoria y almacenamiento según los recursos disponibles. Soporta un contexto documentado de 65.536 tokens y declara idiomas inglés y español. Su licencia es Apache 2.0, lo que facilita su integración en productos comerciales sin restricciones adicionales.
 
-La relevancia actual es limitada desde el punto de vista práctico: no hay pesos, no hay benchmarks, no hay dataset documentado y no hay métricas. Su interés es principalmente informativo para quienes sigan la línea Nova de Moderno Tech o quieran evaluar la futura publicación de un MoE de activación reducida basado en Qwen3. Cualquier uso en producción es inviable con el estado actual del repositorio.
+La propuesta de Moderno Tech se centra en la inferencia local y la privacidad por diseño, aunque la propia model card advierte explícitamente de que no debe asumirse privacidad absoluta ni funcionamiento sin conexión sin verificar la plataforma. El modelo no está especializado en una tarea concreta: se posiciona como asistente general para redacción, resúmenes, preguntas y respuestas y productividad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture-of-Experts) según descripción del autor; variante "NEO" esperada, basada en Qwen3 |
-| Parámetros totales | ~30B (según nota "30B A1.5B variante NEO"); no confirmado con pesos publicados |
-| Parámetros activos | ~1.5B (según nota "30B A1.5B"); no confirmado |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el origen candidato es GGUF, pero no se publican pesos) |
-| Idiomas soportados | en, es |
-| Licencia | apache-2.0 (declarada en metadatos; sujeta a auditoría según el autor) |
-| Formato de pesos | no disponible (sin pesos publicados; el candidato de origen es GGUF) |
+| Arquitectura | Transformer Mixture of Experts (MoE) |
+| Parametros totales | 30.532.122.624 (~30B) |
+| Parametros activos | ~1.500 millones por token |
+| Longitud de contexto | 65.536 tokens |
+| Tipos de cuantizacion | GGUF: IQ2_M a Q6_K |
+| Idiomas soportados | Ingles, espanol |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); repo de 159,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el objetivo como un modelo MoE de alto rendimiento con activación reducida, con una nota de arquitectura esperada "30B A1.5B variante NEO". Esto sugiere una configuración de aproximadamente 30.000 millones de parámetros totales y 1.500 millones activos por token, lo que encajaría con la tendencia de MoEs de activación dispersa que ofrecen throughput alto a coste de inferencia bajo. El origen candidato es `DavidAU/Qwen3-30B-A1.5B-GGUF`, un modelo de la familia Qwen3, por lo que la arquitectura subyacente sería un transformer con capas MoE, aunque no se detallan número de expertos, top-k, dimensión oculta ni configuración de atención.
+La arquitectura es un transformer MoE con 48 bloques, dimensión de embeddings de 2.048, 32 cabezas de atención y 4 cabezas KV (GQA), con una dimensión feed-forward de 6.144 y 768 por experto. El modelo contiene 128 expertos totales, de los cuales se activan 4 por token. Esta configuración implica que, aunque los parámetros activos por token sean ~1,5B, todos los pesos de los expertos deben residir en memoria o almacenamiento durante la inferencia, por lo que los requisitos de VRAM y disco no equivalen a los de un modelo denso de 1,5B.
 
-En cuanto a entrenamiento, el estado declarado es `planned`: no hay pesos entrenados ni destilados por Moderno Tech, no hay fine-tuning documentado, no hay dataset documentado y las métricas están "pending tests". El autor afirma explícitamente que no se fabrican, descargan ni publican pesos sin verificación exacta de licencia y hash, y que la licencia y el estado de redistribución del candidato están bajo auditoría. No se documenta RLHF, DPO, número de tokens de entrenamiento ni composición del dataset.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. El modelo base figura como "Unknown" en la información disponible.
 
 ## Capacidades
 
-- No hay capacidades verificadas: el repositorio no contiene pesos ni demos funcionales.
-- Por la arquitectura objetivo (MoE basada en Qwen3), cabría esperar generación de texto, razonamiento, código y matemáticas, pero no está confirmado por el autor.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: declaradas en, es en los metadatos; sin evaluación publicada.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto y conversación multi-turno en inglés y español.
+- Respuestas a preguntas y asistencia general.
+- Redacción, reformulación y resumen de documentos.
+- Productividad y organización de tareas cotidianas.
+- Asistencia dentro de aplicaciones locales.
+- Perfil de propósito general, no especializado en programación ni en una tarea concreta.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Evaluación de procedencia y licencias: el repositorio sirve como caso de estudio de buenas prácticas de auditoría de licencia y verificación de hash antes de publicar pesos derivados de un modelo de terceros.
-- Seguimiento de la línea Nova: útil para equipos que quieran monitorizar la futura publicación de un MoE de activación reducida de Moderno Tech y planificar su evaluación cuando haya artefactos.
-- Prototipado condicionado a disponibilidad: si en el futuro se publican pesos GGUF del candidato Qwen3-30B-A1.5B, podría emplearse en inferencia local con llama.cpp u Ollama, pero hoy no es posible.
-- Investigación sobre MoEs de activación dispersa: el objetivo declarado (30B totales, ~1.5B activos) es relevante para estudiar el equilibrio entre calidad y coste de inferencia, una vez existan pesos.
-- Documentación de identidad de producto: el repositorio puede reutilizarse como plantilla de estructura documental (status, provenance, license audit) para otros productos en preparación.
-- Despliegue en producción: no recomendable ni viable en el estado actual, al no existir pesos ni métricas.
+- Asistente personal local: el modelo puede gestionar conversaciones multi-turno con hasta 65.536 tokens de contexto, adecuado para sesiones largas de consulta sin depender de la nube.
+- Redacción y edición de documentos: reformulación y resumen de textos extensos aprovechando la ventana de contexto, útil en entornos donde los datos no deben salir del equipo.
+- Preguntas y respuestas sobre documentación interna: con contexto largo, puede procesar manuales o informes completos y responder preguntas concretas sobre ellos.
+- Productividad y organización: generación de listas, borradores de correos y planificación de tareas en aplicaciones de escritorio.
+- Asistencia en aplicaciones locales: integración mediante motores de inferencia GGUF (llama.cpp, Ollama) en herramientas de escritorio para autocompletado y ayuda contextual.
+- Prototipado y evaluación de MoE en local: su tamaño activo reducido (~1,5B) y sus múltiples cuantizaciones lo hacen útil para experimentar con arquitecturas MoE en hardware de consumo, siempre que se disponga de memoria suficiente para los pesos completos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (sin pesos publicados).
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible; a título orientativo, un MoE de ~30B totales y ~1.5B activos requeriría, en cuantización de 4 bits, del orden de 15-18 GB de VRAM solo para pesos, pero esto es una estimación genérica y no un dato del autor.
-- Opciones de despliegue: no disponible; el candidato de origen es GGUF, lo que sugeriría llama.cpp u Ollama si se publicara.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial. Con ~30B parámetros totales, las cuantizaciones IQ2_M e IQ3 requieren del orden de 10-15 GB solo para pesos, mientras que Q5_K y Q6_K superan los 20-25 GB; estas cifras son estimaciones por tamaño de pesos, no datos publicados por el autor.
+- GPU recomendadas: no disponible. Por tamaño, las variantes de mayor cuantización requieren GPUs con 24 GB o más (RTX 3090/4090, A100, H100) o reparto entre GPU y CPU.
+- GPU de consumo: las cuantizaciones bajas (IQ2_M, IQ3) podrían caber en GPUs de 12-16 GB, sujeto a verificación práctica; las altas no caben en GPUs de consumo de 24 GB sin offload.
+- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF; vLLM y TGI no se documentan para este formato.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nova Velocity | ~30B (declarado) | ~1.5B (declarado) | no disponible | apache-2.0 (en auditoría) | Sin pesos |
-| Qwen3-30B-A1.5B (origen candidato) | ~30B | ~1.5B | no disponible en esta ficha | sujeta a la licencia de Qwen3 | Disponible en GGUF vía DavidAU |
-| Alternativas MoE de activación reducida | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Nova Velocity | ~30B | ~1,5B | 65.536 | Apache 2.0 | GGUF |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
+No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No hay pesos publicados: el repositorio es solo documentación e identidad; no es usable para inferencia.
-- Estado `in-development` y entrenamiento `planned`: no existe evidencia de fine-tuning, dataset ni métricas.
-- Licencia en auditoría: aunque los metadatos declaran apache-2.0, el autor indica que la licencia y la redistribución del candidato están bajo revisión, por lo que el uso comercial no está garantizado.
-- Riesgo de confusión de procedencia: el modelo base figura como "Unknown" y el origen es un "candidate origin", no una base confirmada.
-- Idiomas declarados (en, es) sin evaluación publicada; no hay garantía de calidad en castellano.
-- Sin benchmarks: no se puede valorar calidad, alucinación ni sesgos.
-- Para producción: no apto en el estado actual; cualquier despliegue requeriría esperar a la publicación verificada de pesos y a la resolución de la auditoría de licencia.
+- No se documentan sesgos conocidos, pero al no haber información sobre datos de entrenamiento ni alineación, el riesgo de sesgos y de alucinaciones no puede descartarse.
+- La model card advierte explícitamente de que no debe prometerse privacidad absoluta, ejecución sin conexión ni compatibilidad universal sin verificar la plataforma.
+- El contexto máximo documentado es de 65.536 tokens; el rendimiento más allá de esa ventana no está garantizado.
+- Solo se declaran inglés y español; el soporte de otros idiomas no está verificado.
+- Aunque la licencia es Apache 2.0, conviene revisar las condiciones de los motores de inferencia y de las herramientas de cuantización utilizadas.
+- Los requisitos de memoria no equivalen a los de un modelo denso de 1,5B: todos los pesos de los expertos deben estar disponibles durante la ejecución.
+- No hay información sobre el modelo base ni sobre el proceso de entrenamiento, lo que dificulta evaluar su calidad frente a alternativas consolidadas.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ModernoTech/Nova-Velocity
-- Candidato de origen citado: https://huggingface.co/DavidAU/Qwen3-30B-A1.5B-GGUF
-- Paper, blog o demo oficial: no disponible en la información proporcionada.
+- Hugging Face: https://huggingface.co/ModernoTech/Nova-Velocity
+- Sitio oficial de Moderno Tech: https://moderno.com.ar

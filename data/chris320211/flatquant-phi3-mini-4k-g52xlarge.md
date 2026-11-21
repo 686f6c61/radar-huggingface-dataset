@@ -2,111 +2,98 @@
 
 ## Resumen
 
-`chris320211/flatquant-phi3-mini-4k-g52xlarge` es un derivado cuantizado de `microsoft/Phi-3-mini-4k-instruct`, publicado por el usuario chris320211 en Hugging Face. No se trata de una conversión genérica a GGUF o AWQ, sino del artefacto empaquetado de un pipeline de cuantización propio basado en FlatQuant, identificado en la model card con el job `20260919T202736Z-5a1860`. El objetivo declarado es reducir el consumo de memoria y aumentar el throughput manteniendo la calidad en un umbral aceptable (`quality_ok=True`, con un `ppl_ratio` de 1,167613 sobre WikiText-2 respecto al snapshot fp16).
+FlatQuant Phi-3 Mini 4K es una versión cuantizada del modelo `microsoft/Phi-3-mini-4k-instruct`, publicada por el usuario chris320211 mediante la herramienta QuantPort y la técnica de cuantización FlatQuant. El modelo base es un transformer denso de 3.800 millones de parámetros desarrollado por Microsoft, con una ventana de contexto de 4.096 tokens y entrenado para instrucciones conversacionales. Esta derivada no modifica la arquitectura ni el entrenamiento del original: aplica una transformación de pesos orientada a reducir el uso de VRAM y aumentar el throughput en inferencia.
 
-El modelo hereda la arquitectura y el comportamiento del Phi-3-mini-4k-instruct: un transformer decoder-only de la familia Phi-3, con ventana de contexto de 4K tokens (4096) y en torno a 3,8 mil millones de parámetros según la documentación pública del modelo base. La relevancia de esta ficha es doble: por un lado, demuestra una mejora medida de rendimiento (5105,9 tokens/s frente a 3387,6 tokens/s del fp16 en el mismo hardware) y de VRAM pico (3,355 GB frente a 9,681 GB); por otro, ilustra un patrón problemático para producción, ya que el checkpoint no es cargable con `AutoModelForCausalLM.from_pretrained` y exige un adaptador de inferencia incluido en el propio repositorio.
+La relevancia de esta ficha radica en que el artefacto es un ejemplo de cuantización post-entrenamiento medida y documentada: el autor publica métricas de perplejidad, pérdida NLL, tokens por segundo y VRAM pico sobre una GPU NVIDIA A10G (instancia `g5.2xlarge`), comparando contra el snapshot fp16 original. Los resultados indican un aumento de velocidad de aproximadamente un 50,7 % (5.105,9 frente a 3.387,6 tokens/s en prefill de 2.048 tokens) y una reducción de VRAM pico de 9,681 GB a 3,355 GB, con un coste de calidad de perplejidad de 7,394 frente a 6,332 (ratio 1,168, marcado como `quality_ok=True`).
 
-Se trata de un modelo con cero descargas y cero likes en el momento de redactar esta ficha, sin información sobre idiomas soportados, ancho de bits de cuantización ni resultados en benchmarks estándar (MMLU, HumanEval, GSM8K). Su interés es, por tanto, experimental y reproducible, no como componente listo para desplegar en un servicio crítico sin una validación previa del adaptador.
+Es importante señalar que este repositorio no es un checkpoint compatible directamente con `AutoModelForCausalLM.from_pretrained`. Los pesos son un artefacto empaquetado que requiere el adaptador de inferencia incluido (`quant_agent_inference_adapter.py`) y el repositorio del método en la variable `QUANT_AGENT_METHOD_REPO`. El tamaño del repositorio es de 2,2 GB, y la licencia declarada es MIT, heredada del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Phi-3); detalles específicos no disponibles en la ficha del autor |
-| Parámetros totales | No disponible en la ficha del autor; el modelo base `microsoft/Phi-3-mini-4k-instruct` declara 3,8 mil millones en su documentación pública |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens (4K, indicado por el nombre del modelo y por el modelo base) |
-| Tipos de cuantización | FlatQuant (post-entrenamiento). Ancho de bits, granularidad y esquema exacto: no disponibles |
-| Idiomas soportados | no disponible en la ficha del autor |
-| Licencia | MIT (modelo base) más la licencia del repositorio del método FlatQuant. Se debe conservar `LICENSE` y `NOTICE.md` del snapshot |
-| Formato de pesos | Artefacto empaquetado/runtime propio del pipeline FlatQuant, no un checkpoint estándar de `transformers`. Formato de fichero exacto: no disponible |
-| Tamaño del repositorio | 2,2 GB |
-| Modelo base | microsoft/Phi-3-mini-4k-instruct |
-| Pipeline | text-generation |
-| Librería | transformers (requiere `custom_code` y adaptador) |
+| Arquitectura | Transformer denso decoder-only (heredada de Phi-3-mini-4k-instruct); pesos transformados con FlatQuant |
+| Parametros totales | 3.800 millones (modelo base; el artefacto cuantizado no declara recuento propio) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 4.096 tokens (heredada del modelo base) |
+| Tipos de cuantizacion | FlatQuant (cuantizacion post-entrenamiento con transformaciones de pesos); niveles de bits no especificados en la model card |
+| Idiomas soportados | No disponible |
+| Licencia | MIT (heredada de microsoft/Phi-3-mini-4k-instruct) |
+| Formato de pesos | Artefacto empaquetado propio de QuantPort; no es safetensors estándar ni GGUF; requiere adaptador de inferencia incluido |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del artefacto. Lo que se sabe es que parte de `microsoft/Phi-3-mini-4k-instruct`, un transformer decoder-only de la familia Phi-3 con 4K tokens de contexto, y que sobre ese modelo se ha aplicado un proceso de cuantización post-entrenamiento denominado FlatQuant. La model card no documenta el número de tokens de calibración, la composición del dataset de calibración ni si se aplicó algún ajuste posterior a la cuantización (RLHF, DPO o SFT adicional); no hay datos disponibles al respecto. Tampoco se especifica si la cuantización es de solo pesos o pesos y activaciones, ni la granularidad (por canal, por grupo o por tensor).
+La arquitectura subyacente es la de Phi-3-mini-4k-instruct: un transformer decoder-only denso de 3.800 millones de parámetros con atención multi-cabeza estándar y una ventana de contexto de 4.096 tokens. Microsoft entrenó el modelo base con un corpus mixto de datos web filtrados y datos sintéticos, seguido de ajuste fino supervisado y optimización por preferencias (DPO) para alineamiento conversacional. Esta derivada no añade entrenamiento nuevo: parte del snapshot fp16 y aplica una transformación de cuantización.
 
-La innovación destacable no está en la arquitectura, sino en el artefacto de despliegue. El autor indica explícitamente que los pesos son el resultado empaquetado del job `20260919T202736Z-5a1860` y que **no** son un checkpoint fp16 subido al Hub. La recarga requiere el fichero `quant_agent_inference_adapter.py` incluido en el snapshot y que el repositorio del método (y su posible overlay) esté accesible a través de la variable de entorno `QUANT_AGENT_METHOD_REPO`. El fichero `quantization_config.json` acompaña al artefacto para describir la configuración. Esta dependencia de código personalizado es la característica técnica más determinante del modelo de cara a su integración.
-
-La validación de calidad reportada es una única métrica: perplejidad sobre WikiText-2 (split de test, ventanas de 2048 tokens, 65504 tokens evaluados), medida en una NVIDIA A10G correspondiente a una instancia `g5.2xlarge`, comparada contra el snapshot fp16 original del modelo base.
+La innovación técnica de este artefacto es FlatQuant, un método de cuantización post-entrenamiento que aplica transformaciones lineales a los pesos antes de cuantizarlos, con el objetivo de aplanar la distribución de activaciones y reducir el error de cuantización. QuantPort es la herramienta que empaqueta el resultado en un formato de runtime propio. La model card documenta el job concreto (`20260919T202736Z-5a1860`) y las métricas de validación sobre WikiText-2 con ventanas de 2.048 tokens y 65.504 tokens evaluados, pero no detalla el número de bits, la granularidad de cuantización ni la composición exacta de las transformaciones aplicadas.
 
 ## Capacidades
 
-- Generación de texto conversacional: hereda el ajuste de instrucciones del modelo base Phi-3-mini-4k-instruct, orientado a diálogo multi-turno y seguimiento de instrucciones.
-- Razonamiento de propósito general y respuesta a preguntas: capacidades propias del modelo base, no revalidadas en la ficha del autor con benchmarks específicos.
-- Generación de código y matemáticas: presumiblemente presentes por herencia del modelo base, pero no hay evidencia medida en la información proporcionada.
-- Ventana de contexto de 4K tokens: suficiente para conversaciones de varios turnos y documentos cortos, insuficiente para contextos largos.
-- Tool calling / function calling: no confirmado en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la información proporcionada.
-- Capacidades multilingües: no disponibles; la ficha del autor no declara idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles; el pipeline declarado es únicamente `text-generation`.
+- Generación de texto conversacional multi-turno, heredada del ajuste de instrucciones de Phi-3-mini-4k-instruct.
+- Razonamiento de sentido común y matemáticas básicas a nivel de modelo pequeño (3.800 millones de parámetros).
+- Generación de código y explicación de fragmentos, con calidad limitada por el tamaño del modelo base.
+- Soporte de instrucciones y formato de chat de Phi-3 (tokens especiales `<|user|>`, `<|assistant|>`, `<|end|>`), sujeto a verificación con el adaptador incluido.
+- Capacidades multilingües: no disponibles en la información proporcionada; el modelo base de Microsoft declara soporte limitado fuera del inglés, pero esta derivada no lo especifica.
+- Tool calling y function calling: no documentado en la model card de esta derivada.
+- Modo thinking, visión o audio: no disponibles; el modelo base es solo texto.
+- Inferencia con mayor throughput y menor VRAM que el snapshot fp16, según las métricas del autor.
 
 ## Casos de uso
 
-- Evaluación de métodos de cuantización: el caso de uso más directo es reproducir el experimento del autor, comparando perplejidad y throughput contra el snapshot fp16 en el mismo hardware (A10G/g5.2xlarge) para validar la metodología FlatQuant.
-- Inferencia de bajo consumo en GPUs de gama media: con un pico de VRAM medido de 3,355 GB en prefill de 2048 tokens, el modelo permite servir Phi-3-mini en tarjetas consumer de 6-8 GB que no admitirían el fp16 (9,681 GB de pico).
-- Prototipado de asistentes conversacionales: con 4K tokens de contexto se pueden construir chatbots de soporte que mantengan el hilo de una conversación de varios turnos, siempre que se acepte la pérdida de calidad medida (perplejidad 7,39 frente a 6,33).
-- Generación de texto y resumen de documentos cortos: artículos, correos o informes que quepan en 4096 tokens, ejecutados en local sin depender de APIs externas.
-- Aumento de throughput en pipelines de procesamiento por lotes: el incremento medido de 3387,6 a 5105,9 tokens/s (2048 de prefill, tras warmup) resulta adecuado para tareas de etiquetado, clasificación o generación masiva donde la latencia no sea crítica.
-- Investigación académica sobre cuantización y perplejidad: el par de valores `ppl_ratio` = 1,167613 y `quality_ok=True` sirve como punto de comparación reproducible para otros métodos de cuantización sobre el mismo modelo base.
-- Despliegue en entornos con memoria restringida y sin aceleradores de gama alta: útil para demos en portátiles con GPU dedicada o en instancias cloud pequeñas, siempre que se resuelva primero la carga mediante el adaptador.
+- Despliegue en GPU de consumo con VRAM limitada: con 3,355 GB de VRAM pico medida en A10G, el artefacto puede caber en tarjetas de 8 GB o menos, aunque requiere el adaptador de QuantPort y no funciona con pipelines estándar de transformers sin ese paso previo.
+- Prototipado de asistentes conversacionales en local: el modelo base está ajustado para instrucciones y mantiene conversaciones multi-turno dentro de su ventana de 4.096 tokens, adecuado para demos y entornos de desarrollo sin presupuesto de GPU dedicada.
+- Evaluación de técnicas de cuantización: el repositorio publica métricas reproducibles (perplejidad, NLL, tokens/s, VRAM) sobre WikiText-2, lo que lo convierte en un punto de comparación útil para investigadores que estudien FlatQuant frente a otras técnicas como GPTQ, AWQ o SmoothQuant.
+- Generación de texto por lotes con requisitos de throughput: los 5.105,9 tokens/s en prefill de 2.048 tokens medidos en A10G lo hacen viable para tareas de procesamiento masivo de texto donde la latencia no sea crítica y la calidad aceptable con perplejidad de 7,39.
+- Experimentación académica con modelos pequeños alineados: útil para estudiar el efecto de la cuantización en modelos con DPO, comparando respuestas del artefacto contra el fp16 original en tareas de razonamiento y diálogo.
+- Base para ajuste fino con QLoRA: al reducir la huella de VRAM, puede servir como punto de partida para adaptadores de bajo rango, siempre que el adaptador de QuantPort sea compatible con el flujo de entrenamiento elegido (no documentado).
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son los de WikiText-2 (test, ventanas de 2048 tokens, 65504 tokens), medidos en NVIDIA A10G (`g5.2xlarge`) contra el snapshot fp16 del modelo base:
+Métricas publicadas por el autor en la model card, medidas en NVIDIA A10G (instancia `g5.2xlarge`) sobre WikiText-2 test con ventanas de 2.048 tokens y 65.504 tokens evaluados, comparando contra el snapshot fp16 original:
 
-| Métrica | Cuantizado | Snapshot fp16 |
+| Metrica | Cuantizado | Snapshot fp16 |
 |---|---:|---:|
 | Perplejidad | 7,393646 | 6,332276 |
-| Pérdida NLL | 2,000621 | 1,845660 |
-| Tokens/s (2048 de prefill, tras warmup) | 5105,9 | 3387,6 |
+| Perdida NLL | 2,000621 | 1,845660 |
+| Tokens/s (prefill 2048, tras warmup) | 5.105,9 | 3.387,6 |
 | VRAM pico (GB) | 3,355 | 9,681 |
 
-Ratios derivados reportados por el autor: `ppl_ratio` = 1,167613 (con `quality_ok=True`), `improved_throughput=True` e `improved_vram=True`.
-
-No hay resultados publicados de MMLU, HumanEval, GSM8K, MT-Bench ni de ningún otro benchmark de capacidades en la información disponible. Tampoco se han publicado mediciones de latencia (time to first token, latencia por token) ni pruebas de estrés con lotes concurrentes.
+El autor reporta `ppl_ratio` de 1,167613 con `quality_ok=True`, además de `improved_throughput=True` e `improved_vram=True`. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 3,355 GB de pico medidos en prefill de 2048 tokens sobre A10G. Es un dato de una configuración concreta; con lotes mayores o contextos completos de 4096 tokens el consumo será superior (no cuantificado en la información disponible).
-- GPU recomendadas: NVIDIA A10G (`g5.2xlarge`) es la única verificada por el autor. Cualquier GPU con al menos 6 GB de VRAM debería ser suficiente para inferencia de una sola secuencia, dado el pico medido.
-- Cabe en GPU consumer: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 8 GB, RTX 3070 y superiores. No hay confirmación del autor en estas tarjetas.
-- Opciones de despliegue: no se puede usar `AutoModelForCausalLM.from_pretrained` directamente. Se requiere el flujo de `transformers` junto con `quant_agent_inference_adapter.py` y el repositorio del método accesible vía `QUANT_AGENT_METHOD_REPO`. Compatibilidad con vLLM, TGI, llama.cpp, Ollama u otros motores: no disponible, y en principio improbable sin adaptaciones, dado el código personalizado.
-- Latencia y throughput: 5105,9 tokens/s con 2048 tokens de prefill tras warmup en A10G, frente a 3387,6 tokens/s del fp16 (aproximadamente un 50 % más de throughput en esa configuración). Latencia por token y time to first token: no disponibles.
-- Espacio en disco: 2,2 GB de repositorio.
+- VRAM estimada para inferencia: 3,355 GB de pico medido en A10G con el adaptador de QuantPort; el consumo real puede variar según la longitud de secuencia y el lote.
+- GPU recomendadas: NVIDIA A10G (medida por el autor), A100 y H100 para mayor throughput; RTX 4090 y RTX 3090 son viables por capacidad de VRAM.
+- Cabe en GPU de consumo: sí, con 3,355 GB de pico medido cabe en tarjetas de 8 GB o más (RTX 3060 Ti, RTX 4060, RTX 3070), siempre que se use el adaptador y no un pipeline estándar.
+- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI de forma directa, ya que no es un checkpoint estándar de transformers ni GGUF. Requiere el adaptador `quant_agent_inference_adapter.py` incluido y el repositorio del método en `QUANT_AGENT_METHOD_REPO`.
+- Latencia y throughput: 5.105,9 tokens/s en prefill de 2.048 tokens en A10G tras warmup; no se publican métricas de decodificación token a token ni latencia de primera respuesta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Perplejidad WikiText-2 | VRAM pico | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| flatquant-phi3-mini-4k-g52xlarge (este modelo) | 3,8 B (heredados del base) | 4096 tokens | 7,393646 | 3,355 GB (A10G) | MIT + licencia del método | Requiere código personalizado y adaptador |
-| microsoft/Phi-3-mini-4k-instruct (fp16) | 3,8 B | 4096 tokens | 6,332276 | 9,681 GB (A10G) | MIT | Carga estándar con `transformers` |
-| Otras variantes cuantizadas de Phi-3-mini (AWQ, GPTQ, GGUF) | 3,8 B | 4096 tokens | no disponible | no disponible | Depende de cada variante | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| FlatQuant Phi-3 Mini 4K (este) | 3.800 M (base) | 4.096 | MIT | Artefacto QuantPort con adaptador | PPL 7,39 en WikiText-2; 3,355 GB VRAM pico en A10G |
+| microsoft/Phi-3-mini-4k-instruct (fp16) | 3.800 M | 4.096 | MIT | Safetensors | PPL 6,33 en WikiText-2; 9,681 GB VRAM pico en A10G |
+| Phi-3-mini-4k-instruct en GGUF (p. ej. Q4_K_M) | 3.800 M | 4.096 | MIT | GGUF | Compatible con llama.cpp y Ollama; métricas de calidad y VRAM no disponibles en esta ficha |
+| Llama 3.2 3B Instruct | 3.200 M | 128.000 | Llama 3.2 Community License | Safetensors, GGUF | Contexto mucho mayor; licencia con restricciones comerciales; métricas no comparadas en esta ficha |
 
-No se dispone de datos verificados de benchmarks de capacidades para ninguna de las alternativas, por lo que la comparación se limita a las métricas de eficiencia reportadas por el autor. La ventaja clara de este artefacto es la reducción de VRAM (aproximadamente 2,9 veces menos) y el aumento de throughput; la desventaja, un coste operativo notable por la dependencia de código externo y una pérdida de calidad cuantificada en un 16,76 % de perplejidad relativa.
+La comparación directa con alternativas cuantizadas está limitada porque el autor solo publica métricas frente al fp16 del mismo modelo base. No se dispone de datos de benchmarks estándar para situar este artefacto frente a otras técnicas de cuantización.
 
 ## Limitaciones y advertencias
 
-- Degradación de calidad medida: la perplejidad sube de 6,332276 a 7,393646 en WikiText-2, lo que supone un `ppl_ratio` de 1,167613. Es una degradación no trivial que debe evaluarse en la tarea concreta antes de asumirla.
-- Carga no estándar: el modelo no funciona con `AutoModelForCausalLM.from_pretrained`. Requiere `quant_agent_inference_adapter.py`, `quantization_config.json` y la variable de entorno `QUANT_AGENT_METHOD_REPO` apuntando al repositorio del método. Cualquier pipeline de producción debe integrar este código personalizado y revisarlo por seguridad.
-- Compatibilidad limitada con motores de inferencia: no hay evidencia de soporte en vLLM, TGI, llama.cpp u Ollama. El despliegue escalable estándar no está garantizado.
-- Validación muy limitada: los únicos datos son perplejidad sobre WikiText-2 en un único hardware (A10G, `g5.2xlarge`). No hay evaluaciones de capacidades, seguridad, robustez ni sesgo.
-- Ausencia de datos de idiomas: la ficha del autor no declara idiomas soportados, lo que impide garantizar un comportamiento correcto fuera del inglés sin pruebas propias.
-- Contexto limitado a 4096 tokens: insuficiente para documentos largos, RAG con muchos fragmentos o conversaciones muy extensas.
-- Riesgo de alucinación: heredado del modelo base y potencialmente agravado por la cuantización; no hay mediciones de factualidad.
-- Sesgos: no se han publicado evaluaciones de sesgo. El modelo base, entrenado con datos filtrados y sintéticos, puede presentar sesgos de representación y de idioma, pero no hay datos específicos para este artefacto.
-- Licencia: MIT para el modelo base, pero se añade la licencia del repositorio del método FlatQuant. Es imprescindible revisarla antes de uso comercial y conservar `LICENSE` y `NOTICE.md` del snapshot. El autor advierte explícitamente de esta doble condición.
-- Reputación del artefacto: cero descargas y cero likes, autor sin historial verificable en la información proporcionada y un identificador de job opaco. No hay garantía de mantenimiento ni de que el repositorio del método siga disponible.
-- Fecha de creación inusual (19 de septiembre de 2026) en los metadatos del Hub; conviene verificar la vigencia del snapshot antes de depender de él.
+- No es un checkpoint drop-in: `AutoModelForCausalLM.from_pretrained` no funciona directamente; requiere el adaptador incluido y el repositorio del método, lo que añade fricción de integración y riesgo de incompatibilidad con versiones futuras de transformers.
+- Degradación de calidad medible: la perplejidad sube de 6,332 a 7,394 (ratio 1,168) y la pérdida NLL de 1,846 a 2,001; en tareas sensibles a la precisión (matemáticas, código, hechos) el impacto puede ser mayor que en texto genérico.
+- Contexto limitado a 4.096 tokens, insuficiente para documentos largos, agentes con historial extenso o RAG con muchos fragmentos.
+- Idiomas soportados no declarados en esta derivada; el modelo base de Microsoft tiene cobertura limitada fuera del inglés y puede degradarse en castellano y otras lenguas.
+- Riesgo de alucinación inherente a un modelo de 3.800 millones de parámetros, agravado por la cuantización; no debe usarse en producción sin verificación factual.
+- Sesgos heredados del corpus de entrenamiento de Phi-3; no se documenta ninguna mitigación adicional en esta derivada.
+- Licencia MIT heredada del modelo base, pero la model card indica que se debe mantener también la licencia del repositorio del método (QuantPort); conviene revisar ambas antes de uso comercial.
+- Artefacto de autor individual (chris320211) con 1 like y 966 descargas; no es una publicación oficial de Microsoft ni ha pasado una revisión independiente.
+- No hay garantía de mantenimiento ni soporte; la fecha de creación (2026-09-19) y actualización (2026-10-28) indican un proyecto reciente y de un solo mantenedor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chris320211/flatquant-phi3-mini-4k-g52xlarge
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
-- Paper del método FlatQuant: no disponible en la información proporcionada
-- Repositorio del método FlatQuant: no disponible (referenciado únicamente como `QUANT_AGENT_METHOD_REPO`)
-- Blog o demo del autor: no disponible
-- Los resultados de la búsqueda web realizada son artículos genéricos de introducción al machine learning (DataCamp, GeeksforGeeks, Dataquest, Wikipedia) sin relación con este modelo, por lo que no se incluyen como referencias relevantes.
+- Licencia del modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/resolve/main/LICENSE
+- Repositorio del método QuantPort: https://github.com/chris320211/QuantPort

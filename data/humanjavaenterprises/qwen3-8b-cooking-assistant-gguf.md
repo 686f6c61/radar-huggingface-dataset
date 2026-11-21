@@ -2,112 +2,103 @@
 
 ## Resumen
 
-Qwen3-8B Cooking Assistant es un ajuste fino (fine-tune) del modelo Qwen3-8B de Alibaba, desarrollado por Humanjava Enterprises y distribuido en formato GGUF para su uso con llama.cpp, Ollama y LM Studio. El modelo está especializado en asistencia culinaria: responde preguntas sobre platos, ingredientes, técnicas y seguridad alimentaria, y su rasgo diferencial es que lee la receta que se le proporciona y, cuando no la tiene, la solicita en lugar de inventar detalles.
+Qwen3-8B-Cooking-Assistant es un ajuste fino (fine-tune) del modelo Qwen3-8B de Alibaba, desarrollado por Humanjava Enterprises y especializado en asistencia culinaria. Su propuesta diferencial no es solo responder sobre cocina, sino gestionar la procedencia de la información: cuando el usuario aporta una receta, el modelo la lee y responde a partir de ella; cuando la pregunta requiere una receta que no se le ha proporcionado, el modelo pide la receta en lugar de inventar detalles. Según la model card, esta tasa de invención cae al 2,7 % frente al 25,8 % del Qwen3-8B base, y la precisión con la receta presente alcanza el 94,8 % frente al 83,1 % del base.
 
-El problema que aborda es la fabricación de datos (alucinación) en dominios factuales: según la model card, el modelo base inventa detalles de recetas en el 25,8% de las respuestas que requieren una receta no mostrada, frente al 2,7% de este ajuste fino (con 3 de 4 jueces de acuerdo). Además, cuando se le muestra la receta, acierta el 94,8% de las veces frente al 83,1% del base. Se apoya en Qwen3-8B, un transformer denso de 8.190.735.360 parámetros, y mantiene el soporte multilingüe de 26 idiomas del modelo original.
+El modelo se distribuye principalmente en formato GGUF cuantizado para llama.cpp, Ollama y LM Studio, con pesos de precisión completa en safetensors en un repositorio hermano. Con 8.190.735.360 parámetros, está entrenado sobre 26 idiomas y evaluado en 21, y puede ejecutarse en una GPU de 6 GB con la cuantización Q4_K_M por defecto.
 
-La relevancia actual reside en su enfoque de diseño: "LoRA para el comportamiento, recuperación para los hechos, herramientas para los números". No memoriza recetas, sino que enseña al modelo a leer el texto aportado y a abstenerse cuando no lo tiene. Los pesos están publicados bajo licencia Apache-2.0, con versiones etiquetadas (v1) y con las comprobaciones y los fallos documentados junto a los resultados.
+Es relevante ahora porque aborda un problema práctico muy concreto en asistentes de dominio: la alucinación de detalles en recetas (cantidades, tiempos, ingredientes) que puede tener consecuencias de seguridad alimentaria. El ajuste se hizo con DPO y una evaluación multi-juez abierta, y el autor publica versiones fechadas y checksums para trazabilidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3-8B) |
+| Arquitectura | Transformer decoder-only (base Qwen3-8B); ajuste fino con DPO |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8192 tokens en el ejemplo de despliegue (llama.cpp `-c 8192`); no se especifica el máximo nativo |
-| Tipos de cuantizacion | Q4_K_M (5,0 GB), Q6_K (6,7 GB), Q8_0 (8,7 GB), BF16 (16,4 GB); imatrix de 11 MB para Q4_K_M y Q6_K |
-| Idiomas soportados | 26: en, es, pt, it, fr, nl, de, ru, bn, id, fa, ja, pl, sv, vi, tl, he, ml, tr, zh, ms, th, fi, ar, ta, hi |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp, Ollama, LM Studio); safetensors en el repo del modelo completo |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens en la configuración de referencia (llama-server `-c 8192`); contexto nativo de Qwen3-8B no indicado en la información disponible |
+| Tipos de cuantizacion | Q4_K_M (por defecto), Q6_K, Q8_0, BF16; imatrix para Q4_K_M y Q6_K |
+| Idiomas soportados | Entrenado en 26 idiomas, evaluado en 21: en, es, pt, it, fr, nl, de, ru, bn, id, fa, ja, pl, sv, vi, tl, he, ml, tr, zh, ms, th, fi, ar, ta, hi |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp, Ollama, LM Studio); safetensors en el repositorio base |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura transformer densa de Qwen3-8B, con 8.190.735.360 parámetros. El ajuste fino se realizó mediante DPO (Direct Preference Optimization), según la etiqueta `dpo` de la model card, y está orientado a modificar el comportamiento del modelo más que a inculcarle conocimiento factual. El prompt de sistema con el que se entrenó es: "You are a cooking assistant. You answer questions about dishes, ingredients, techniques and food safety. When you are not sure, you say so." Se utiliza la plantilla de chat de Qwen3 con el modo de razonamiento desactivado (`enable_thinking: false` o `/no_think`).
+El modelo parte de Qwen3-8B, un transformer decoder-only de 8.190.735.360 parámetros, y se ajusta mediante DPO (Direct Preference Optimization) sobre conversaciones de dominio culinario. La model card no detalla el volumen de tokens de entrenamiento ni la composición exacta del dataset; sí indica que el ajuste se orientó a dos comportamientos: leer la receta proporcionada por el usuario y abstenerse (pedir la receta) cuando no dispone de ella, en lugar de inventar. El prompt de sistema recomendado refuerza esta conducta: "You are a cooking assistant. You answer questions about dishes, ingredients, techniques and food safety. When you are not sure, you say so."
 
-Las cuantizaciones Q4_K_M y Q6_K se generaron con una importance matrix calculada sobre 598 conversaciones de entrenamiento en formato chat, estratificadas por tipo de pregunta y por si se mostraba una receta, ninguna de ellas presente en el conjunto de evaluación. El conjunto de evaluación es fijo y reservado: 682 preguntas en 26 idiomas (290 con receta mostrada, 10 de recuerdo sin receta, 300 que requieren una receta no mostrada y 82 generales). La evaluación se hizo con jueces de pesos abiertos de familias distintas (DeepSeek-V4-Flash bajo licencia MIT como juez principal, más Qwen3.8-27B, GLM-4.7-Flash y gpt-oss-120b), en ciego y en ambos órdenes. No se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
+Las cuantizaciones Q4_K_M y Q6_K se construyeron con una importance matrix calculada sobre conversaciones de entrenamiento en formato chat, estratificadas por tipo de pregunta y por si se mostró una receta, excluyendo el conjunto de evaluación. Los GGUF se publicaron con checksums (`SHA256SUMS`) y versiones etiquetadas como tags git (`v1`), lo que permite fijar revisiones. La evaluación empleó cuatro jueces abiertos con criterio de acuerdo de 3 de 4. La model card documenta correcciones de metadatos en los GGUF reemitidos el 2026-11-14 (pesos idénticos, solo cabecera) y una corrección de memoria el 2026-11-19 (el consumo de Q4_K_M a 8k era 5,84 GiB con caché KV por defecto, no 5,3 GB como se indicó inicialmente).
 
 ## Capacidades
 
-- Generación de texto conversacional sobre cocina: platos, ingredientes, técnicas y seguridad alimentaria.
-- Lectura de recetas aportadas en el turno del usuario: responde preguntas basándose en el texto proporcionado.
-- Abstención ante recetas ausentes: solicita la cantidad o la receta original en lugar de inventar datos.
-- Respuestas generales de cocina: sustituciones de ingredientes, diagnóstico de platos fallidos, seguridad alimentaria.
-- Multilingüe: 26 idiomas, incluidos español, inglés, portugués, francés, alemán, chino, árabe, hindi y japonés.
-- Compatibilidad con endpoints (`endpoints_compatible`) y despliegue en llama.cpp, Ollama y LM Studio.
-- No se menciona soporte de tool calling, function calling, agentes ni visión en la información disponible.
-- No se menciona un modo de razonamiento activo; de hecho, se recomienda desactivar el thinking de Qwen3.
+- Generación de texto conversacional especializada en cocina: platos, ingredientes, técnicas y seguridad alimentaria.
+- Lectura de recetas aportadas por el usuario en el turno de usuario y respuesta basada en ese texto.
+- Abstención explícita y petición de la receta cuando la pregunta requiere información que no se ha proporcionado.
+- Multilingüe: entrenado en 26 idiomas y evaluado en 21, incluidos español, portugués, italiano, francés, alemán, ruso, chino, japonés, árabe, hindi, bengalí, indonesio, turco y vietnamita.
+- Modo thinking de Qwen3 disponible pero desactivado por recomendación (`enable_thinking: false` o `/no_think`); el autor advierte que algunas versiones de Ollama lo activan por defecto con la plantilla interna del GGUF.
+- Compatible con endpoints y con el ecosistema llama.cpp/Ollama/LM Studio; el repositorio base en safetensors permite su uso con Transformers y vLLM.
+- No se documentan capacidades de tool calling, function calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Asistente de cocina en aplicación móvil: el usuario pega una receta y pregunta por cantidades, tiempos o sustituciones; el modelo responde a partir del texto y evita inventar detalles cuando falta información.
-- Atención al cliente de una plataforma de recetas: gestiona conversaciones multi-turno sobre platos concretos si la aplicación inyecta la receta en el contexto; su tasa de invención del 2,7% reduce el riesgo de respuestas erróneas ante consultas factuales.
-- Seguridad alimentaria en hostelería: responde sobre conservación, temperaturas y contaminación cruzada; el entrenamiento incluye esta categoría y el modelo declara incertidumbre cuando no está seguro.
-- Motor de recomendaciones culinarias con recuperación (RAG): la aplicación recupera la receta de una base de datos y el modelo la interpreta; el diseño previsto es "recuperación para los hechos".
-- Conversión de unidades y escalado de recetas: el modelo puede explicar el procedimiento, pero el cálculo debe delegarse a herramientas; encaja en pipelines donde la app calcula y el modelo redacta la explicación.
-- Despliegue en hardware modesto: con la cuantización Q4_K_M (5,0 GB, 5,3 GB usados a contexto de 8k) puede ejecutarse en GPU de 6 GB, lo que permite prototipos y demos en equipos de consumo.
-- Asistente multilingüe para comunidades internacionales de cocina: cubre 26 idiomas, útil para foros o chatbots con audiencia diversa.
-- Ejemplo docente de ajuste fino responsable: sirve como caso práctico de DPO con trazabilidad de fuentes, pesos abiertos y evaluación con jueces ciegos.
+- Asistente de cocina con recetas aportadas por el usuario: la aplicación pega la receta en el turno de usuario y el modelo responde a preguntas sobre sustituciones, tiempos o temperaturas leyendo ese texto, lo que reduce la invención de detalles.
+- Seguridad alimentaria en aplicaciones de consumo: ante preguntas sobre conservación o cocción segura, el modelo tiende a pedir la receta o indicar incertidumbre en lugar de improvisar cifras, un comportamiento relevante cuando un dato erróneo tiene consecuencias sanitarias.
+- Chatbot de recetario corporativo o editorial: integrado vía Ollama o llama-server, responde sobre el catálogo de recetas que la aplicación recupera y le pasa como contexto, sin memorizar el recetario.
+- Despliegue en hardware modesto: con Q4_K_M ocupa 5,0 GB en disco y 5,84 GiB de VRAM a 8k de contexto en llama-server, por lo que cabe en GPU de 6 GB (con matices si la tarjeta también alimenta el display) y en tarjetas de 8 GB con Q6_K.
+- Aplicación multilingüe de cocina: cubre 21 idiomas evaluados, útil para asistentes dirigidos a comunidades diversas sin desplegar un modelo por idioma.
+- Evaluación de fiabilidad y abstención: sirve como caso de estudio de ajuste DPO para enseñar a un modelo a pedir información en lugar de alucinar, replicable en otros dominios.
+- Prototipado local con LM Studio u Ollama: los tags `vveerrgg/qwen3-8b-cooking-assistant` permiten arrancar el modelo con un solo comando para pruebas de producto.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre el conjunto reservado de 682 preguntas en 26 idiomas, comparados con Qwen3-8B base (thinking off):
-
-| Métrica | Qwen3-8B | Este modelo |
+| Métrica | Qwen3-8B-Cooking-Assistant v1 | Qwen3-8B base |
 |---|---|---|
-| Inventa detalles de receta sin receta mostrada (juez principal) | 30,0% [25,1; 35,4] | 9,0% [6,3; 12,8] |
-| Igual, tras comprobación de reglas que elimina falsas alarmas del juez | 27,7% | 4,0% [2,3; 6,9] |
-| Correcto con receta mostrada (290 preguntas) | 87,6% | 96,2% |
-| Preferido por el juez, 682 preguntas | — | 0,610 [0,581; 0,639] (0,50 = empate) |
-| Preferido por el juez, solo preguntas generales | — | 0,460 [0,369; 0,549] (nivel con el base) |
+| Invención de detalles sin receta (3 de 4 jueces) | 2,7 % | 25,8 % |
+| Respuesta correcta con receta mostrada (3 de 4 jueces) | 94,8 % | 83,1 % |
+| Respuestas generales de cocina | a la par del base | referencia |
 
-Con cuatro jueces (DeepSeek-V4-Flash, Qwen3.8-27B, GLM-4.7-Flash y gpt-oss-120b):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras anteriores proceden de la evaluación propia del autor con cuatro jueces abiertos y acuerdo de 3 de 4, sobre el dataset `HumanjavaEnterprises/cooking-assistant-eval`.
 
-| Criterio de "inventa" | Qwen3-8B | Este modelo |
-|---|---|---|
-| Al menos 3 de 4 jueces lo afirman | 25,8% [21,1; 31,0] | 2,7% [1,4; 5,2] |
-| Los cuatro lo afirman | 19,1% | 1,0% |
-| Cualquiera de los cuatro lo afirma | 49,2% | 18,3% |
+Rendimiento de inferencia medido el 2026-11-19 en una NVIDIA RTX PRO 4000 Blackwell SFF (24 GB, 70 W), Q4_K_M, 8k de contexto, un usuario, thinking off, llama.cpp commit `08c252e2` y Ollama 0.40.16:
 
-La reducción de invenciones es significativa (McNemar p < 1e-10; 78 preguntas donde solo el base inventa frente a 15 donde solo lo hace este modelo). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Configuración | VRAM | Generación (tokens/s) | Prompt ~1k / ~8k (tokens/s) | Primer token | Arranque |
+|---|---|---|---|---|---|
+| Ollama | 5,96 GiB | 65,6 | 2.566 / 2.360 | 28,5 ms | 10,8 s |
+| llama-server `-c 8192 -np 1` | 5,84 GiB | 65,1 | 2.556 / 2.317 | 20,3 ms | 3,1 s |
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q4_K_M usa 5,3 GB a contexto de 8k y cabe en GPU de 6 GB; Q6_K (6,7 GB) requiere tarjetas de 8 GB; Q8_0 (8,7 GB) requiere alrededor de 10 GB; BF16 (16,4 GB) requiere al menos 20 GB.
-- GPU recomendadas: tarjetas de consumo como RTX 3060 6 GB o superiores para Q4_K_M; RTX 4060 Ti/4070 8 GB para Q6_K; A100 o H100 para BF16 y despliegue concurrente.
+- VRAM estimada: Q4_K_M 5,84 GiB en llama-server y 5,96 GiB en Ollama a 8k de contexto con caché KV por defecto; Q6_K 6,7 GB en disco (para tarjetas de 8 GB); Q8_0 8,7 GB; BF16 16,4 GB.
+- En tarjetas de 6 GB que además alimentan un display, el autor recomienda reducir el contexto a 4.096 (unos 5,3 GiB), usar caché KV q8_0 (con pérdida) o dejar que Ollama descargue algunas capas a CPU.
+- GPU recomendadas: cualquier GPU con 6 GB o más para Q4_K_M; 8 GB para Q6_K; 12 GB o más para Q8_0; 24 GB para BF16 o para Q4_K_M con contexto ampliado y concurrencia.
 - Cabe en GPU de consumo: sí, con Q4_K_M en 6 GB y Q6_K en 8 GB.
-- Opciones de despliegue: llama.cpp (`llama-server -hf ...:Q6_K --jinja -c 8192`), Ollama (`ollama run vveerrgg/qwen3-8b-cooking-assistant:q6_k`), LM Studio y, para safetensors, Transformers y vLLM.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- Opciones de despliegue: llama.cpp (`llama-server -hf ...:Q6_K --jinja -c 8192`), Ollama (`ollama run vveerrgg/qwen3-8b-cooking-assistant:q6_k` o `hf.co/...`), LM Studio; pesos completos en safetensors para Transformers y vLLM.
+- Latencia y throughput: 65 tokens/s de generación y 20-28 ms al primer token en la configuración medida; procesamiento de prompt de 2.300-2.600 tokens/s.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3-8B Cooking Assistant (este) | 8.190.735.360 | 8192 en despliegue de ejemplo | Cocina con abstención y lectura de recetas | Apache-2.0 | GGUF, safetensors |
-| Qwen3-8B (base) | 8.190.735.360 | Contexto nativo de Qwen3 (no especificado aquí) | Propósito general | Apache-2.0 | safetensors, GGUF comunitario |
-| Qwen3.8-27B | no disponible en detalle | no disponible | Propósito general (usado como juez) | Apache-2.0 | no disponible |
-| GLM-4.7-Flash | no disponible en detalle | no disponible | Propósito general (usado como juez) | MIT | no disponible |
+| Qwen3-8B-Cooking-Assistant (este) | 8,19 B | 8k en la config. de referencia | Cocina con abstención y lectura de recetas | Apache 2.0 | GGUF, safetensors |
+| Qwen3-8B base | 8,19 B | no indicado en la información disponible | Propósito general | Apache 2.0 | safetensors |
+| GLM-4-9B-Cooking-Assistant | no disponible | no disponible | Cocina, mismo enfoque de receta | no disponible | GGUF, safetensors |
 
-La comparativa directa con otros asistentes culinarios ajustados no está disponible en la información proporcionada. Frente a su base, la diferencia medible es la reducción de invenciones (25,8% a 2,7% con 3 de 4 jueces) y la mejora con receta mostrada (83,1% a 94,8%).
+El autor publica un modelo hermano, `HumanjavaEnterprises/GLM-4-9B-Cooking-Assistant`, que aplica el mismo tratamiento al GLM-4-9B-0414 y cuya model card compara ambos sobre un mismo panel de jueces. No se dispone de otros modelos comparables de cocina en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No memoriza recetas: si la aplicación no aporta la receta, el modelo la solicitará en lugar de responder; requiere un componente de recuperación para consultas sobre platos concretos.
-- Riesgo residual de invención: 2,7% con 3 de 4 jueces y 1,0% con los cuatro; no es cero.
-- En preguntas generales de cocina su rendimiento es equivalente al base (preferencia del juez 0,460, intervalo que incluye el empate), sin mejora significativa.
-- Es un fine-tune no oficial: no está hecho ni respaldado por Alibaba Cloud ni por el equipo de Qwen.
-- Los benchmarks publicados son específicos del dominio culinario y evaluados con jueces automáticos; no sustituyen una evaluación humana en producción.
-- Licencia Apache-2.0 permite uso comercial, pero deben conservarse los avisos de licencia y atribución correspondientes.
-- No se documentan sesgos específicos, pero al heredar el base puede reproducir sesgos de Qwen3-8B en temas culturales o alimentarios.
-- La model card no detalla el número de tokens de entrenamiento ni la composición del dataset, lo que limita la reproducibilidad completa.
-- El contexto de ejemplo es de 8192 tokens; recetas muy largas o conversaciones extensas pueden requerir configuración adicional.
-- Sesgos conocidos: no disponibles en la información proporcionada.
+- No memoriza recetas: si la aplicación no le proporciona la receta, pedirá que se la den; no debe usarse como recetario autónomo.
+- Riesgo de alucinación residual: 2,7 % de invención de detalles sin receta según la evaluación del autor, no cero.
+- Las cifras de evaluación proceden de jueces automáticos abiertos, no de evaluación humana exhaustiva; deben interpretarse con cautela.
+- La model card no detalla sesgos conocidos, composición del dataset ni volumen de entrenamiento.
+- Advertencia operativa con Ollama: algunas versiones (vista en 0.40.16) usan la plantilla de chat del GGUF y activan thinking, lo que antepone razonamiento a la respuesta; los tags actualizados el 2026-11-19 lo corrigen, pero los tags `v1` fijados mantienen el comportamiento original. Desactivar thinking por petición con `"think": false`, `"reasoning_effort": "none"`, `--think=false` o `/set nothink`.
+- Consumo de memoria: la cifra inicial de 5,3 GB a 8k era con caché KV q8_0; con la caché por defecto son 5,84 GiB, ajustado para tarjetas de 6 GB con display.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo es un fine-tune no oficial de Qwen3-8B, no respaldado por Alibaba Cloud ni el equipo Qwen.
+- Los GGUF se reemitieron el 2026-11-14 con metadatos limpios (pesos idénticos); conviene descargar de nuevo o hacer `ollama pull` para obtener los ficheros con checksums actualizados.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/HumanjavaEnterprises/Qwen3-8B-Cooking-Assistant-GGUF
-- Modelo completo en safetensors: https://huggingface.co/HumanjavaEnterprises/Qwen3-8B-Cooking-Assistant
+- Repositorio GGUF: https://huggingface.co/HumanjavaEnterprises/Qwen3-8B-Cooking-Assistant-GGUF
+- Repositorio base en safetensors: https://huggingface.co/HumanjavaEnterprises/Qwen3-8B-Cooking-Assistant
+- Modelo hermano GLM-4-9B-Cooking-Assistant: https://huggingface.co/HumanjavaEnterprises/GLM-4-9B-Cooking-Assistant
+- GGUF del modelo hermano: https://huggingface.co/HumanjavaEnterprises/GLM-4-9B-Cooking-Assistant-GGUF
 - Dataset de evaluación: https://huggingface.co/datasets/HumanjavaEnterprises/cooking-assistant-eval
-- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Ollama: `ollama run vveerrgg/qwen3-8b-cooking-assistant:q6_k`
-- Checksums: archivo `SHA256SUMS` en el repositorio del modelo
+- llama.cpp: https://github.com/ggml-org/llama.cpp

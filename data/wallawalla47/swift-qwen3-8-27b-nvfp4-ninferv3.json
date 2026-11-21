@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Spotify - Web Player: Music for everyone",
-      "url": "https://open.spotify.com/",
-      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
-    },
-    {
-      "title": "The Dan Le Batard Show | Podcast on Spotify",
-      "url": "https://open.spotify.com/show/2FuorRyd1NSURMWW9Ab7lj",
-      "snippet": "Listen to The Dan Le Batard Show on Spotify. Live from the Elser Hotel in Downtown Miami, Dan Le Batard and company share their …"
-    },
-    {
-      "title": "Spotify",
-      "url": "https://accounts.spotify.com/en/login?nosignup=true",
-      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
-    },
-    {
-      "title": "Confidence by Spotify",
-      "url": "https://confidence.spotify.com/",
-      "snippet": "Confidence by Spotify — Ship every product decision with evidence behind it Confidence is Spotify's warehouse-native …"
-    },
-    {
-      "title": "Windows 下載 - Spotify",
-      "url": "https://www.spotify.com/hk-zh/download/windows/",
-      "snippet": "藝人專屬 創作者專區 作者專區 開發商 廣告宣傳 投資者 供應商 常用連結 支援 網路播放器 免費行動版 App 匯入你的音樂 Spotify 方案 …"
-    }
-  ]
+  "sources": []
 }

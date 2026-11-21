@@ -2,92 +2,87 @@
 
 ## Resumen
 
-`sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000` es un checkpoint de la familia Llama con 8.030.261.248 parámetros (aproximadamente 8,03 mil millones), publicado en Hugging Face por el usuario `sstoica12` y etiquetado para generación de texto y uso conversacional. El repositorio contiene únicamente pesos en formato `safetensors` (16,1 GB), es compatible con la librería `transformers` y con `text-generation-inference`, y no incluye ningún artefacto adicional de evaluación, tokenizador documentado ni variantes cuantizadas.
+El modelo `sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000` es un checkpoint de tipo transformer con arquitectura Llama, publicado en Hugging Face por el usuario sstoica12. Cuenta con 8.030.261.248 parametros totales (aproximadamente 8 mil millones) y un repositorio de 16,1 GB, lo que es coherente con pesos en precision de 16 bits para ese numero de parametros. La nomenclatura del identificador sugiere un proceso de destilacion o combinacion de estudiantes ("student", "combine", "WGM", "MP") sobre una base Llama de 8B, aunque el autor no documenta el procedimiento.
 
-La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos de autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados se dejan como `[More Information Needed]`. Esto convierte al modelo en un artefacto de investigación opaco desde el punto de vista documental: se conocen el tamaño, la arquitectura declarada por el tag `llama` y el pipeline, pero no el proceso de entrenamiento ni el rendimiento.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se especifican datos de entrenamiento, licencia, idiomas, contexto ni procedencia de los pesos. Se trata, por tanto, de un modelo sin documentacion verificable, lo que limita seriamente su evaluacion y su uso en produccion. Aun asi, el modelo acumula 787 descargas, lo que indica cierto interes de la comunidad, probablemente por experimentacion con tecnicas de destilacion o combinacion de modelos.
 
-Por el identificador se deduce que se trata de un checkpoint "student" (destilación o ajuste de un modelo profesor) asociado a un experimento de combinación de varianza de respuestas y a técnicas de merging o model patching (`WGM_MP`), con un ajuste de confianza de 5000 pasos sobre una base Llama de 8B. Esa lectura es una inferencia a partir del nombre del repositorio, no una afirmación respaldada por documentación. Su relevancia ahora es limitada y circunscrita a quien quiera reproducir el experimento original o inspeccionar los pesos; no es un modelo apto para producción sin una evaluación previa.
+Su relevancia actual es limitada y fundamentalmente experimental: sirve como ejemplo de checkpoints derivados de Llama publicados sin model card, y como recordatorio de la importancia de la trazabilidad de licencias en modelos derivados. Cualquier uso serio requiere validacion empirica propia y una revision legal de la licencia heredada de Llama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Llama (según tag `llama`); detalles de capas y cabezas no disponibles |
-| Parametros totales | 8.030.261.248 (~8,03B) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | Transformer tipo Llama (según tag `llama`); detalles no disponibles |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en `safetensors`, sin variantes GGUF, AWQ, GPTQ ni EXL2 |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no publicadas por el autor) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card no la declara y el repositorio no incluye fichero de licencia) |
-| Formato de pesos | `safetensors` (16,1 GB en el repositorio, consistente con precisión de 16 bits) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica fiable es el tag `llama`: se trata de un transformer decoder-only con atención causal, la topología estándar de la familia Llama. Con 8,03B de parámetros y 16,1 GB de pesos, el checkpoint está almacenado en 16 bits (bf16 o fp16), lo que da 2 bytes por parámetro y cuadra con el tamaño del repositorio. No hay información sobre número de capas, dimensión oculta, cabezas de atención, tamaño de vocabulario ni uso de GQA, y tampoco se puede confirmar si emplea atención lineal o algún esquema híbrido.
+La unica informacion arquitectonica fiable es el tag `llama` y el numero de parametros (8.030.261.248), compatible con un transformer decoder-only de la familia Llama 3 8B. No se dispone de datos sobre numero de capas, dimension oculta, cabezas de atencion, tipo de atencion (GQA/MHA) ni funcion de activacion. El nombre del repositorio apunta a un proceso de "student" (destilacion) con "answer variance" y "combine", posiblemente una combinacion de pesos o un ensemble destilado, pero el autor no aporta ninguna descripcion del metodo.
 
-No se han publicado datos de entrenamiento: ni número de tokens, ni composición del corpus, ni si hubo fases de SFT, RLHF o DPO. El identificador sugiere un proceso de destilación con un modelo profesor, combinación de varianza entre respuestas y técnicas de merging de pesos, pero el repositorio no documenta hiperparámetros, hardware ni cronograma. La model card remite a la calculadora de impacto de carbono de Lacoste et al. (2019) sin rellenar ninguno de sus campos, de modo que ni siquiera se puede estimar el coste computacional del entrenamiento.
+No hay informacion sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.). La model card esta completamente vacia en las secciones de Training Details y Evaluation.
 
 ## Capacidades
 
-- Generación de texto autoregresiva y conversación multi-turno, según declara el pipeline `text-generation` y el tag `conversational`.
-- Es compatible con `transformers` y con `text-generation-inference`, por lo que puede servirse con el stack estándar de Hugging Face.
-- No hay evidencia publicada de soporte de tool calling, function calling ni razonamiento multi-paso.
-- No hay evidencia publicada de capacidades de código, matemáticas, visión, audio ni modo "thinking".
-- Capacidades multilingües: no disponibles; el repositorio no declara idiomas.
-- Cualquier capacidad concreta más allá de la generación de texto conversacional debe considerarse no verificada.
+- Generacion de texto autoregresiva, segun el pipeline declarado `text-generation`.
+- Uso conversacional, segun el tag `conversational`; se desconoce si incluye plantilla de chat valida.
+- Compatibilidad con Text Generation Inference (tag `text-generation-inference`) y con endpoints compatibles (tag `endpoints_compatible`).
+- Capacidades de razonamiento, codigo o matematicas: no disponibles (no documentadas ni evaluadas).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes o razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles.
+- Capacidades especiales (vision, audio, modo thinking): no disponibles.
 
 ## Casos de uso
 
-- Reproducción de experimentos de destilación: el checkpoint sirve como referencia para comparar la técnica de combinación de varianza de respuestas frente al modelo profesor, siempre que se disponga del pipeline de evaluación original del autor.
-- Servido de un endpoint conversacional de bajo coste: con 8B en 16 bits cabe en una GPU de 24 GB y puede levantarse con TGI para pruebas internas de latencia y calidad antes de comprometerse con un modelo mayor.
-- Base para ajuste fino supervisado en un dominio concreto: al ser un transformer Llama de 8B, es compatible con las recetas estándar de PEFT/LoRA, aunque la licencia sin declarar impide asumir uso comercial.
-- Análisis de pesos y merging: útil para estudiar cómo se comportan las técnicas de combinación de modelos (WGM, model patching) sobre una base Llama, inspeccionando divergencias con el checkpoint de origen.
-- Evaluación comparativa interna de alucinación: se puede usar como línea base de 8B en pruebas A/B cualitativas junto a otros checkpoints del mismo tamaño, sin extraer conclusiones publicables sin benchmarks.
-- Prototipado de asistentes conversacionales en entornos de investigación: despliegue con llama.cpp u Ollama en cuantización de 4 bits sobre una GPU de consumo para demos y pruebas de concepto, asumiendo que la calidad no está validada.
+- Experimentacion con destilacion de modelos: el checkpoint puede emplearse como estudiante en pipelines de destilacion sobre Llama 8B, comparando su comportamiento con el profesor original; su utilidad depende de reproducir el procedimiento del autor, que no esta documentado.
+- Investigacion sobre combinacion de pesos: dado el sufijo "combine" del identificador, sirve como objeto de estudio para analizar el efecto de fusionar checkpoints en la varianza de respuestas.
+- Generacion de texto en prototipos internos: puede usarse para pruebas de generacion libre en entornos controlados, siempre que se valide su calidad de forma empirica antes de cualquier uso real.
+- Base para fine-tuning supervisado: al ser un transformer Llama de 8B en safetensors, es tecnicamente compatible con pipelines estandar de SFT (TRL, PEFT), aunque la licencia heredada debe aclararse antes de distribuirlo.
+- Evaluacion comparativa de checkpoints no documentados: util para estudiar como se comportan modelos publicados sin model card frente a sus bases oficiales en benchmarks internos.
+- Docencia y formacion: ejemplo practico de por que la trazabilidad de licencias y la documentacion son criticas en la publicacion de modelos derivados.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card deja la sección de evaluación íntegramente como `[More Information Needed]`, y el repositorio no incluye ficheros de resultados, scripts de evaluación ni comparaciones con el modelo base.
-
 ## Requisitos de hardware
 
-- VRAM para inferencia en 16 bits: aproximadamente 16,1 GB solo para pesos, más caché KV; en la práctica, entre 18 y 20 GB según longitud de contexto y batch.
-- VRAM en cuantización de 8 bits: en torno a 9-10 GB de pesos, más caché KV.
-- VRAM en cuantización de 4 bits: en torno a 5-6 GB de pesos, más caché KV; requiere convertir el checkpoint, ya que no se publican variantes cuantizadas.
-- GPU profesionales recomendadas: A100 40 GB u 80 GB, H100, L40S; permiten 16 bits con contexto amplio y varios requests concurrentes.
-- GPU de consumo: RTX 4090 o RTX 3090 (24 GB) admiten 16 bits con contexto moderado; RTX 4060 Ti de 16 GB y RTX 4070 Ti SUPER de 16 GB quedan justas en 16 bits y cómodas en 8 o 4 bits.
-- Opciones de despliegue: `transformers`, `text-generation-inference` (tag declarado), vLLM, llama.cpp y Ollama (estos dos últimos requieren conversión previa a GGUF).
-- Latencia y throughput: no disponibles; no hay mediciones publicadas.
+- VRAM estimada en fp16/bf16: aproximadamente 16 GB solo para pesos, mas overhead de activaciones y KV cache; en la practica, 20-24 GB para contextos moderados.
+- VRAM estimada en cuantizacion 8 bits: alrededor de 8-9 GB; en 4 bits, alrededor de 5-6 GB (requiere generar las cuantizaciones, no publicadas por el autor).
+- GPU recomendadas para fp16: A100 40/80 GB, H100, L40S, o dos RTX 4090 de 24 GB con tensor parallelism.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) en fp16 con contexto limitado, y en RTX 3090/4080 con cuantizacion 8 o 4 bits.
+- Opciones de despliegue: transformers (soporte nativo), Text Generation Inference (tag declarado), vLLM (compatible con arquitectura Llama), llama.cpp/Ollama (requiere conversion a GGUF, no publicada).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas provienen de su documentación pública y se incluyen como referencia de categoría; el rendimiento de este checkpoint no está medido, por lo que la comparación es estructural y no de calidad.
+| Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
+|---|---|---|---|---|---|
+| Este modelo | 8,03 B | no disponible | no disponible | plantilla vacia | Hugging Face, safetensors |
+| Meta Llama 3 8B | 8,03 B | 8.192 tokens (128K en 3.1) | Llama 3 Community License | model card completa | Hugging Face, amplio ecosistema |
+| Mistral 7B | 7,24 B | 32.768 tokens | Apache 2.0 | model card completa | Hugging Face, GGUF oficial |
+| Qwen2.5 7B | 7,62 B | 32.768 tokens (128K en variantes) | Apache 2.0 (mayoria) | model card completa | Hugging Face, GGUF oficial |
 
-| Modelo | Parametros | Contexto | Licencia | Rendimiento publicado |
-|---|---|---|---|---|
-| Este checkpoint (`sstoica12/...llama8b...`) | 8,03B | no disponible | no disponible | no disponible |
-| Llama 3.1 8B (Meta) | 8,03B | 128K | Llama 3.1 Community License | Sí, benchmarks en model card |
-| Mistral 7B v0.3 | ~7,25B | 32K | Apache 2.0 | Sí, benchmarks en model card |
-| Qwen2.5 7B | ~7,6B | 128K | Apache 2.0 (mayoría de variantes) | Sí, benchmarks en model card |
-
-Frente a las alternativas, el factor diferencial no es técnico sino documental: las tres opciones citadas declaran licencia, idiomas, contexto y evaluación, mientras que este checkpoint no ofrece ninguno de esos datos. Para cualquier uso que requiera trazabilidad, las alternativas son la opción por defecto.
+La comparativa se limita a parametros y disponibilidad, ya que el modelo no publica contexto, licencia ni resultados. Frente a las alternativas, carece de la documentacion y el ecosistema de cuantizaciones que si ofrecen Llama, Mistral y Qwen.
 
 ## Limitaciones y advertencias
 
-- Model card autogenerada y sin contenido: no hay información sobre sesgos, datos de entrenamiento ni población objetivo, por lo que no se puede evaluar el riesgo de sesgo.
-- Riesgo de alucinación desconocido y no cuantificado: no existe ninguna evaluación publicada, ni siquiera cualitativa.
-- Licencia no declarada: usar estos pesos en un producto comercial es jurídicamente arriesgado; hay que asumir que los términos del modelo base Llama podrían aplicar, pero no está confirmado.
-- Idiomas no declarados: no se puede garantizar un comportamiento correcto en castellano ni en ningún otro idioma.
-- Longitud de contexto desconocida: planificar prompts largos sin verificarla empíricamente puede provocar truncamientos silenciosos.
-- Cero descargas y cero interacciones en el Hub: no hay evidencia de uso por terceros ni de validación comunitaria.
-- El nombre del repositorio sugiere un artefacto intermedio de un experimento de investigación (student, merging), no un modelo final pulido; es probable que el autor no lo mantenga.
-- No se publican variantes cuantizadas ni tokenizador documentado: la conversión a GGUF u otros formatos debe validarse antes de asumir compatibilidad.
+- Ausencia total de model card: no se conocen datos de entrenamiento, sesgos ni procedencia de los pesos.
+- Licencia no declarada: al derivar presumiblemente de Llama, la licencia Llama 3 Community License impone restricciones (umbral de 700 millones de usuarios mensuales, atribucion, clausula de nombre). Es imprescindible aclarar la licencia antes de cualquier uso comercial.
+- Riesgo de alucinacion no evaluado; sin benchmarks no hay evidencia de calidad.
+- Contexto, idiomas y plantilla de chat desconocidos; puede fallar en conversaciones multi-turno si la plantilla no coincide.
+- Riesgo de pesos corruptos o mal fusionados por el proceso de "combine" no documentado.
+- Sin cuantizaciones oficiales ni garantias de compatibilidad con vLLM, TGI o llama.cpp mas alla de los tags.
+- No apto para produccion sin validacion empirica exhaustiva y revision legal previa.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000
-- Paper citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto de ML referenciada en la plantilla: https://ml2co2.github.io/impact#compute (enlace original de la model card: https://mlco2.github.io/impact#compute)
-- No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados a este checkpoint en la información proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000
+- Paper referenciado en los tags (ML Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto de carbono: https://mlco2.github.io/impact

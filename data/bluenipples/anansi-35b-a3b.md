@@ -2,114 +2,94 @@
 
 ## Resumen
 
-Anansi-35B-A3B es un modelo de lenguaje obtenido por fusión de pesos (*merge*) y publicado por el usuario BlueNipples en Hugging Face. No es un modelo entrenado desde cero: se construye combinando tres modelos donantes mediante una receta declarada de DARE-TIES al 45/55 y una interpolación posterior del tensor de la cabeza LM (*lm-head-swap*). El objetivo declarado por el autor es lograr un modelo que equilibre seguimiento de instrucciones, razonamiento narrativo y una prosa más cuidada, y que sea ejecutable en hardware de gama de consumo ("potato"), en lugar de los modelos densos de ~30B.
+Anansi-35B-A3B es un modelo de lenguaje de tipo mezcla de expertos (MoE) obtenido mediante fusión de pesos, no mediante entrenamiento desde cero. Lo publica el usuario BlueNipples en Hugging Face y combina tres modelos donantes: Huihui-Agents-A1-abliterated, Gryphe/WorldSim-Opus-3.6-35B-A3B y ReadyArt/Melody1437-35B-A3B. Su objetivo declarado es equilibrar el seguimiento de instrucciones con la calidad de prosa narrativa, manteniendo un razonamiento conciso orientado a personajes y escenas, y con un consumo de memoria lo bastante bajo como para ejecutarse en GPU de 8 GB mediante cuantización.
 
-La nomenclatura "35B-A3B" sugiere una arquitectura de mezcla de expertos (*MoE*) con aproximadamente 35.000 millones de parámetros totales y unos 3.000 millones activos por token, aunque la model card no especifica la arquitectura de forma explícita. El autor menciona que Mergekit no soporta "Qwen 3.5", lo que apunta a que los modelos donantes pertenecen a esa familia, pero este dato no se confirma en la documentación disponible.
+El modelo tiene 34.660.610.688 parámetros totales según los tensores en safetensors, con arquitectura `qwen3_5_moe` y un tamaño de repositorio de 69,3 GB. La receta combina una fusión DARE-TIES (35 % de Agents-A1 y 65 % de WorldSim-Opus) y una interpolación del tensor LM head al 30 % con el de Melody1437, técnica pensada para injertar estilo sin destruir la lógica subyacente. La licencia declarada es Apache 2.0.
 
-La relevancia del modelo es limitada en el momento de redactar esta ficha: la model card indica "coming soon", el repositorio tiene un tamaño declarado de 0,0 GB, cero descargas y cero valoraciones, por lo que no hay pesos publicados verificables ni resultados de evaluación. Debe tratarse, por tanto, como un anuncio de receta de fusión más que como un modelo listo para producción.
+Es relevante porque demuestra un patrón de trabajo habitual en la comunidad: especialización por fusión de modelos existentes para nichos concretos (roleplay, narrativa, revisión de prosa) con requisitos de hardware modestos. No obstante, la información publicada es escasa en cuanto a datos de entrenamiento, idiomas y evaluación cuantitativa, lo que limita su uso en entornos de producción que exijan trazabilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la nomenclatura "A3B" sugiere MoE con ~3B activos; no confirmado en la model card) |
-| Parametros totales | ~35B segun la nomenclatura del nombre; no confirmado en la model card |
-| Parametros activos | ~3B segun la nomenclatura "A3B"; no confirmado |
+| Arquitectura | Transformer MoE (`qwen3_5_moe`) |
+| Parametros totales | 34.660.610.688 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos ni cuantizaciones en el repositorio) |
-| Idiomas soportados | no disponible (el campo de idiomas figura como no disponible) |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (tamano del repositorio declarado: 0,0 GB) |
-
-Datos adicionales de la ficha de Hugging Face: pipeline `text-generation`; etiquetas `merge`, `dare-ties`, `lm-head-swap`, `text-generation`, `conversational`, `roleplay`, `narrative-reasoning`; fecha de creacion 2026-09-19; ultima actualizacion 2026-09-20; 0 descargas y 0 likes.
+| Tipos de cuantizacion | GGUF Q8 publicada por el autor; GGUF i1 de mradermacher; el resto no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo principal); GGUF (repos derivados) |
 
 ## Arquitectura y entrenamiento
 
-No hay entrenamiento en sentido estricto. El modelo se genera mediante dos operaciones sobre pesos ya entrenados:
+La arquitectura es un transformer con mezcla de expertos (`qwen3_5_moe`), heredada del linaje de los modelos donantes, con 34.660 millones de parámetros totales. Al tratarse de una fusión, no hay un entrenamiento propio: los pesos provienen de la combinación de tres modelos. El cuerpo de razonamiento se construye con una fusión DARE-TIES en proporción 35/65 entre Huihui-Agents-A1-abliterated (35 %) y WorldSim-Opus-3.6-35B-A3B (65 %). DARE-TIES combina poda aleatoria con signos electorales y poda de redundancia para reducir interferencias entre tensores de modelos distintos.
 
-1. **Fusion base del "cuerpo" de razonamiento (DARE-TIES 45/55).** Se combinan `huihui-ai/Huihui-Agents-A1-abliterated` al 45% y `Gryphe/WorldSim-Opus-3.6-35B-A3B` al 55%. Segun el autor, el primero aporta buen seguimiento de instrucciones pero un razonamiento demasiado verboso para roleplay, mientras que el segundo ofrece un razonamiento narrativo mucho mas conciso pero un seguimiento de instrucciones menos fiable.
-2. **Interpolacion de la cabeza LM al 35%.** Con el script `Wiself/Voice` y un script propio en Python, el 35% del tensor de la cabeza LM del merge base se interpola con la cabeza LM de `ReadyArt/Melody1437-35B-A3B`. El autor afirma que una proporcion 35/65 preserva mejor la logica, el razonamiento y el seguimiento de instrucciones del modelo base que un reemplazo completo de la cabeza, a la vez que incorpora el estilo de prosa del donante.
-
-El autor indica que Mergekit no soporta la arquitectura de los modelos donantes (menciona "Qwen 3.5") y que tuvo que improvisar la implementacion con asistencia de un LLM. No se documentan tokens de entrenamiento, composicion de dataset, fases de RLHF/DPO ni innovaciones tecnicas adicionales, porque no existe entrenamiento implicado. La innovacion declarada es metodologica: la combinacion de DARE-TIES con un *partial head swap* al 35%.
+La segunda etapa es una interpolación del tensor LM head al 30 % con el LM head de Melody1437-35B-A3B, usando el script `Wiself/Voice` y un script Python propio. El autor indica que ratios del 25-35 % preservan mejor la lógica y el seguimiento de instrucciones que un reemplazo completo de la cabeza. No se publican datos sobre número de tokens de entrenamiento, composición del dataset ni etapas de RLHF o DPO, ya que el proceso es exclusivamente de fusión de pesos.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de formato largo orientada a prosa narrativa.
-- Roleplay y ficcion interactiva, segun las etiquetas declaradas por el autor.
-- Razonamiento narrativo ("narrative-reasoning"), con enfasis en concision frente al donante Agents-A1.
-- Seguimiento de instrucciones heredado del linaje `Huihui-Agents-A1-abliterated`, con el objetivo declarado de mejorarlo respecto a WorldSim-Opus.
-- Estilo de prosa mejorado mediante la interpolacion de la cabeza LM con Melody1437.
-- Soporte de *tool calling* / *function calling*: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad verificada; el linaje de uno de los donantes esta orientado a agentes, pero no hay confirmacion para este merge.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo *thinking*, vision, audio, decodificacion especulativa): no disponible.
+- Generación de texto conversacional y narrativo, con énfasis en prosa y estilo literario.
+- Razonamiento narrativo orientado a personajes y escenas, con cadenas de razonamiento más breves que las de Agents-A1.
+- Seguimiento de instrucciones complejas, mejorado respecto a WorldSim-Opus según el autor.
+- Tareas de revisión y refinamiento de prosa en una sola pasada, útil para flujos de reescritura.
+- Roleplay multi-turno, con coherencia de personaje y tono.
+- Capacidad de "abliterated" heredada de Agents-A1, que elimina parte de los rechazos del modelo original.
+- Soporte de tool calling y function calling: no disponible.
+- Capacidades de agente y razonamiento multi-paso: no disponible de forma explícita.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- **Roleplay y ficcion interactiva de sesion larga:** el modelo esta etiquetado explicitamente como `roleplay` y `conversational`; la interpolacion de la cabeza LM busca una prosa mas natural, adecuada para personajes con voz propia en turnos encadenados. La longitud de contexto util depende del modelo donante y no esta documentada.
-- **Generacion de dialogos para videojuegos y visual novels:** la combinacion de razonamiento narrativo conciso (WorldSim-Opus) con buen seguimiento de instrucciones (Agents-A1) encaja en la generacion de arboles de dialogo ramificados donde el modelo debe respetar restricciones de personaje y de trama.
-- **Asistente de escritura creativa:** reescritura y continuacion de textos de ficcion manteniendo coherencia de estilo, aprovechando la cabeza LM injertada de Melody1437 para el registro de prosa.
-- **Prototipado y pruebas locales en hardware de consumo:** el autor disena el modelo explicitamente para una GPU modesta; un MoE de ~35B con ~3B activos, si se publican cuantizaciones bajas, permitiria inferencia local con requisitos de VRAM muy inferiores a un denso de 30B en precision completa.
-- **Sistemas de narracion procedimental para mundos simulados:** el linaje `WorldSim-Opus` sugiere uso en simulacion de mundo y generacion de eventos coherentes con un estado narrativo.
-- **Ajuste fino adicional sobre una base permisiva:** al publicarse bajo Apache-2.0, puede servir como punto de partida para *fine-tuning* de estilo o de dominio, siempre que se respeten las licencias de los modelos donantes originales.
-- **Investigacion en tecnicas de fusion de modelos:** es un caso de estudio util para reproducir y evaluar DARE-TIES combinado con *partial head swap* frente a un *full head swap*.
+- Revisión y refinamiento de prosa en escritura creativa: el modelo está diseñado para completar una pasada de revisión en una sola generación, lo que encaja en extensiones de reescritura de clientes de escritura.
+- Roleplay y narrativa interactiva: la fusión prioriza coherencia de personaje y concisión narrativa, adecuada para sesiones multi-turno en frontends conversacionales.
+- Generación de ficción y relatos cortos: la interpolación del LM head al 30 % con Melody1437 aporta estilo sin sacrificar la estructura lógica del texto.
+- Asistencia a guionistas y creadores de contenido: generación de diálogos y descripciones con tono controlado mediante instrucciones de sistema.
+- Despliegue en hardware modesto: el autor lo ejecuta en una GPU de 8 GB con cuantización GGUF Q8, lo que permite prototipado local sin infraestructura dedicada.
+- Experimentación en investigación sobre fusión de modelos: sirve como caso de estudio de DARE-TIES combinado con interpolación selectiva de la cabeza de salida.
+- Redacción creativa con instrucciones complejas: el modelo mantiene el seguimiento de instrucciones de Agents-A1 sin la verbosidad excesiva de este, útil para tareas de reescritura con restricciones de estilo.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye ninguna tabla de evaluacion (MMLU, GSM8K, HumanEval, MT-Bench ni similares), y el autor solo describe impresiones cualitativas de pruebas previas sobre la proporcion 35/65 de interpolacion de cabeza. Los resultados de la busqueda web no contienen informacion relevante sobre este modelo: los enlaces devueltos corresponden a foros de soporte tecnico de hardware en turco, sin relacion con Anansi-35B-A3B, por lo que no aportan datos de rendimiento ni documentacion adicional.
-
 ## Requisitos de hardware
 
-Todas las cifras de esta seccion son estimaciones derivadas del recuento de parametros declarado en el nombre (~35B totales, ~3B activos) y de la suposicion de pesos en precision estandar. No proceden de la model card ni de mediciones publicadas, y dependen de que el autor llegue a publicar los pesos.
-
-- **Pesos en BF16:** ~70 GB solo para pesos, mas cache KV; requiere GPU de 80 GB (H100 80 GB, A100 80 GB) o reparto multi-GPU. No cabe en GPU de consumo.
-- **Pesos en FP8:** ~35 GB; viable en una RTX 5090 de 32 GB solo con cuantizacion adicional o *offloading*; en A100 40 GB y H100 80 GB con margen para cache KV.
-- **Cuantizacion de 8 bits:** ~35-37 GB; requiere 48 GB o mas de VRAM.
-- **Cuantizacion tipo Q4_K_M:** ~20-21 GB; cabe en RTX 3090/4090 de 24 GB con contexto moderado, o en dos GPU de 16 GB.
-- **Cuantizacion tipo Q3:** ~16-17 GB; cabe en RTX 4080/4090 de 16-24 GB.
-- **Cuantizacion tipo Q2:** ~12-13 GB; cabe en GPU de 12-16 GB, con perdida de calidad apreciable.
-- **Al ser MoE con ~3B activos:** la velocidad de generacion seria alta en relacion al tamano de pesos, mas cercana a la de un modelo de 3B denso que a la de un denso de 35B, siempre que los expertos activados residan en VRAM.
-- **GPU recomendadas:** H100 80 GB o A100 80 GB para BF16; A100 40 GB, L40S o RTX 6000 Ada para FP8; RTX 4090/3090 de 24 GB para cuantizaciones de 4 bits.
-- **Opciones de despliegue:** vLLM y SGLang si se publican pesos en safetensors con arquitectura soportada; llama.cpp y Ollama si se publican GGUF; LM Studio y text-generation-inference como alternativas. Nada de esto puede confirmarse porque el repositorio no contiene pesos en el momento de la consulta.
-- **Latencia y throughput:** no disponible.
+- VRAM estimada: el autor lo ejecuta en una GPU de 8 GB usando cuantización GGUF Q8, aunque el repo principal en safetensors (69,3 GB) requiere mucha más memoria en precisión completa.
+- En FP16/BF16, los 34.660 millones de parámetros implican del orden de 69 GB de pesos, por lo que se necesitan GPUs de 80 GB (A100, H100) o múltiples GPUs.
+- En cuantizaciones GGUF de 4-5 bits, el modelo puede caber en GPUs consumer de 24 GB (RTX 3090, RTX 4090) y, con cuantizaciones más agresivas, en GPUs de 8-12 GB.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI para safetensors si la arquitectura `qwen3_5_moe` está soportada por dichos motores (no confirmado).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-La comparacion se establece con los propios modelos donantes, ya que no hay alternativas publicas equivalentes verificadas con la misma receta. Los datos de parametros, contexto y rendimiento de los donantes no estan disponibles en la informacion proporcionada, salvo el recuento implicito en sus nombres.
-
-| Modelo | Rol en la receta | Parametros | Contexto | Rendimiento | Licencia |
-|---|---|---|---|---|---|
-| Anansi-35B-A3B | Modelo final | ~35B totales / ~3B activos (segun nomenclatura) | no disponible | no disponible | apache-2.0 |
-| Gryphe/WorldSim-Opus-3.6-35B-A3B | Donante al 55% (razonamiento narrativo) | ~35B / ~3B activos (segun nomenclatura) | no disponible | no disponible | no disponible |
-| huihui-ai/Huihui-Agents-A1-abliterated | Donante al 45% (seguimiento de instrucciones) | no disponible | no disponible | no disponible | no disponible |
-| ReadyArt/Melody1437-35B-A3B | Donante de la cabeza LM (35%) | ~35B / ~3B activos (segun nomenclatura) | no disponible | no disponible | no disponible |
-| InternScience/Agents-A1 | Linaje original del donante de instrucciones | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de modelos comparables de terceros con datos verificables dentro de la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Anansi-35B-A3B | 34,66 B (MoE) | no disponible | Apache 2.0 | Fusión DARE-TIES + interpolación de LM head; orientado a prosa y roleplay |
+| Gryphe/WorldSim-Opus-3.6-35B-A3B | no disponible | no disponible | no disponible | Donante al 65 %; razonamiento narrativo conciso, seguimiento de instrucciones menos fiable |
+| huihui-ai/Huihui-Agents-A1-abliterated | no disponible | no disponible | no disponible | Donante al 35 %; buen seguimiento de instrucciones, razonamiento verboso |
+| ReadyArt/Melody1437-35B-A3B | no disponible | no disponible | no disponible | Donante del LM head; prosa de alta calidad |
 
 ## Limitaciones y advertencias
 
-- **Pesos no publicados:** el repositorio declara 0,0 GB de tamano, la model card indica "coming soon" y no hay descargas ni valoraciones. En el momento de redactar esta ficha no es posible descargar ni ejecutar el modelo.
-- **Ausencia total de evaluacion:** no existen benchmarks, comparativas cuantitativas ni pruebas reproducibles. Todas las afirmaciones sobre calidad de prosa o de razonamiento provienen del propio autor y son cualitativas.
-- **Riesgo de alucinacion:** no cuantificado. Al ser un merge sin evaluacion, no hay datos sobre tasas de alucinacion ni sobre fidelidad factual.
-- **Procedencia abliterated:** uno de los donantes principales es una variante *abliterated*, lo que implica que se han eliminado mecanismos de rechazo. Es previsible una reduccion de las barreras de seguridad y un mayor riesgo de generar contenido inapropiado, sin que exista documentacion de mitigaciones.
-- **Licencia efectiva incierta:** aunque el repositorio declara Apache-2.0, la licencia de cada modelo donante puede imponer condiciones adicionales. No se dispone de informacion sobre las licencias de `Gryphe/WorldSim-Opus-3.6-35B-A3B`, `huihui-ai/Huihui-Agents-A1-abliterated` ni `ReadyArt/Melody1437-35B-A3B` en la informacion proporcionada. Verificar antes de cualquier uso comercial.
-- **Herramientas no oficiales:** el autor declara que Mergekit no soportaba la arquitectura objetivo y que la fusion se implemento con scripts improvisados con ayuda de un LLM. Esto aumenta el riesgo de artefactos no documentados en los pesos.
-- **Idiomas no especificados:** el campo de idiomas figura como no disponible, por lo que no hay garantia de calidad en castellano ni en otros idiomas distintos del ingles.
-- **Contexto desconocido:** sin longitud de contexto documentada no es posible planificar aplicaciones que dependan de ventanas largas.
-- **Fechas de publicacion anomalas:** la ficha registra creacion el 2026-09-19 y actualizacion el 2026-09-20, posteriores a la consulta, lo que refuerza la condicion de publicacion incompleta o en preparacion.
-- **Idoneidad para produccion:** nula en el estado actual. Solo es apto como referencia de receta de fusion o para experimentacion una vez se publiquen los pesos.
+- Al ser una fusión de pesos, no hay garantía de comportamiento estable fuera de los dominios de los modelos donantes; los sesgos de estos se heredan sin filtrar.
+- El componente "abliterated" de Agents-A1 elimina parte de los mecanismos de rechazo, lo que puede aumentar la probabilidad de contenido sensible o no deseado.
+- Riesgo de alucinación inherente a los modelos de 35B sin evaluación publicada; no hay benchmarks que cuantifiquen su fiabilidad factual.
+- Idiomas soportados no documentados; el rendimiento fuera del inglés es incierto.
+- Longitud de contexto no disponible, lo que impide planificar cargas con ventanas largas.
+- La licencia Apache 2.0 permite uso comercial, pero las licencias de los modelos donantes no se detallan en la información disponible y podrían imponer condiciones adicionales.
+- El autor lo describe como un modelo para hardware modesto y uso personal; no hay evidencia de validación en producción ni de soporte técnico.
+- No se especifican parámetros activos del MoE, lo que dificulta estimar el coste real de inferencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BlueNipples/Anansi-35B-A3B
-- Donante principal (razonamiento narrativo): https://huggingface.co/Gryphe/WorldSim-Opus-3.6-35B-A3B
-- Donante de seguimiento de instrucciones: https://huggingface.co/huihui-ai/Huihui-Agents-A1-abliterated
-- Donante de la cabeza LM: https://huggingface.co/ReadyArt/Melody1437-35B-A3B
-- Linaje original del donante de agentes: https://huggingface.co/InternScience/Agents-A1
-- Script de interpolacion de cabeza: https://huggingface.co/Wiself/Voice
+- GGUF Q8 con cabezas de prosa interpoladas: https://huggingface.co/BlueNipples/Anansi-35B-A3B-Q8-Prose-GGUF
+- GGUF i1 de mradermacher: https://huggingface.co/mradermacher/Anansi-35B-A3B-i1-GGUF
+- Archivos de construcción y variantes de cabeza: https://huggingface.co/BlueNipples/Anansi-35B-A3B-buildfiles_and_headvariants
+- Modelo donante Agents-A1: https://huggingface.co/InternScience/Agents-A1
+- Modelo donante WorldSim-Opus-3.6-35B-A3B: https://huggingface.co/Gryphe/WorldSim-Opus-3.6-35B-A3B
+- Modelo donante Melody1437-35B-A3B: https://huggingface.co/ReadyArt/Melody1437-35B-A3B
+- Script Voice: https://huggingface.co/Wiself/Voice
 - Mergekit: https://github.com/arcee-ai/mergekit
-
-Los resultados de la busqueda web no aportaron enlaces relevantes: todos los resultados devueltos corresponden a foros de soporte tecnico de hardware en turco, sin relacion con el modelo.

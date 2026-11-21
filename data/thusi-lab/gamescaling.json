@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "THUSI-Lab/GameScaling - Hugging Face",
-      "url": "https://huggingface.co/THUSI-Lab/GameScaling",
-      "snippet": "1miHoYo Honkai AI R&D Team 2College ... interning at miHoYo · GameScaling models are Qwen3.5 vision-language models with continued pre-training on keyboard-and-mouse gameplay...."
-    },
-    {
-      "title": "Tsinghua Spatial Intelligence Lab (THUSI Lab) - GitHub",
-      "url": "https://github.com/THUSI-Lab",
-      "snippet": "THUSI Lab, part of the College of AI at Tsinghua University, is led by Prof. Yiming Li. Our mission is to scale AI across space , time ⏳, and embodiments ..."
-    },
-    {
-      "title": "GitHub - THUSI-Lab/GameScaling: Scaling in Games: Continued ...",
-      "url": "https://github.com/THUSI-Lab/GameScaling",
-      "snippet": "1miHoYo Honkai AI R&D Team 2College ... interning at miHoYo · GameScaling models are Qwen3.5 vision-language models with continued pre-training on keyboard-and-mouse gameplay...."
-    },
-    {
-      "title": "GameScaling Model - a THUSI-Lab Collection",
-      "url": "https://huggingface.co/collections/THUSI-Lab/gamescaling-model",
-      "snippet": "THUSI-Lab 's Collections · GameScaling Model · updated 36 minutes ago · A model collection of gamescaling series. Upvote · 1 · Sort: Collection · Image-Text-to-Text • Updated about 5 hours ago • 23 • 11 · Image-Text-to-Text • 1B • Updated about 5 hours ago • 45 ·"
-    },
-    {
-      "title": "Kuan Zhang (张宽) - KiKi's Website",
-      "url": "https://itheresaapocalypse.github.io/",
-      "snippet": "I am a Ph.D. Candidate at the College of AI, Tsinghua University, working with Prof. Yiming Li at THUSI-Lab. I am also a Talent Prog."
-    }
-  ]
+  "sources": []
 }

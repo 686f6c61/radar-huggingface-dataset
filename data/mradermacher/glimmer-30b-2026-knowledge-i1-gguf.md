@@ -2,99 +2,94 @@
 
 ## Resumen
 
-Glimmer-30B-2026-Knowledge-i1-GGUF es una colección de cuantizaciones GGUF del modelo base OfflineBase/Muse-Glimmer-30B-2026-Knowledge, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de Hugging Face. El modelo original es un ajuste fino orientado a la actualización de conocimiento, con datos específicos sobre noticias y eventos de 2026, y está etiquetado como modelo de visión por el autor de las cuantizaciones. El repositorio contiene únicamente pesos cuantizados en formato GGUF, no el modelo original en safetensors.
+Glimmer-30B-2026-Knowledge-i1-GGUF es una cuantizacion en formato GGUF del modelo base OfflineBase/Muse-Glimmer-30B-2026-Knowledge, publicada por mradermacher. El modelo original es un transformer de aproximadamente 27.850 millones de parametros (etiquetado comercialmente como "30B"), entrenado especificamente para incorporar conocimiento actualizado a noticias y eventos de 2026. Esta version concreta no es el modelo original, sino una coleccion de cuantizaciones con y sin imatrix generadas para facilitar la inferencia en hardware de consumo mediante llama.cpp y derivados.
 
-El modelo base cuenta con 27.854.794.240 parámetros reales (aproximadamente 27,9 mil millones, comercializado como "30B"), lo que lo sitúa en la gama de modelos densos de gran tamaño utilizables en hardware de consumo con cuantizaciones agresivas. La licencia combina Apache 2.0 con una licencia específica del modelo (Muse Model License), lo que introduce condiciones adicionales que deben revisarse antes de un uso comercial.
+La relevancia de esta ficha radica en que el repositorio ofrece una matriz amplia de cuantizaciones (desde IQ1_S de 6,6 GB hasta Q6_K de 23,0 GB), lo que permite desplegar un modelo de casi 28.000 millones de parametros en GPUs consumer con VRAM limitada. El modelo esta orientado a conversacion y actualizacion de conocimiento, con licencia dual Apache 2.0 y Muse Model License, y soporte exclusivo del idioma ingles.
 
-La relevancia de esta ficha radica en dos aspectos: por un lado, documenta un caso de cuantización con imatrix (importancia matrix) que mejora la calidad de las cuantizaciones de baja precisión; por otro, ilustra el patrón de modelos especializados en "actualización de conocimiento" con fecha de corte reciente, un nicho creciente para aplicaciones que requieren información actualizada sin reentrenamiento completo. El autor no ha publicado resultados de benchmarks ni detalles de arquitectura en la información disponible.
+Cabe senalar que el pipeline no esta declarado en Hugging Face y que no se han publicado resultados de benchmarks en la informacion disponible, por lo que las evaluaciones de calidad deben basarse en pruebas propias del usuario.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer, detalles no publicados) |
-| Parámetros totales | 27.854.794.240 (≈27,9 B) |
-| Parámetros activos | no aplica (no es MoE según la información disponible) |
+| Arquitectura | Transformer (detalles no disponibles) |
+| Parametros totales | 27.854.794.240 (~27,85 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | i1-Q2_K, i1-IQ3_XXS, i1-IQ3_M, i1-Q4_K_S (y otras variantes i1: IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XS, IQ3_S, IQ3_L, IQ4_XS, IQ4_NL, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_M, Q4_0, Q4_1, Q5_K_S, Q5_K_M, Q6_K) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0-and-muse-model-license (combinación de Apache 2.0 y Muse Model License) |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
-| Tamaño del repositorio | 64,5 GB |
-| Modelo base | OfflineBase/Muse-Glimmer-30B-2026-Knowledge |
-| Dataset de ajuste | OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data |
-| Etiquetas | knowledge-update, 2026-news, built-with-muse-spark-open, conversational, imatrix |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; ademas de cuantizaciones estaticas en el repo hermano Glimmer-30B-2026-Knowledge-GGUF |
+| Idiomas soportados | Ingles (en) |
+| Licencia | apache-2.0-and-muse-model-license (Apache 2.0 + Muse Model License) |
+| Formato de pesos | GGUF (con fichero imatrix separado para generar cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Por el número de parámetros (27,9 B) y la etiqueta "vision model" mencionada por el cuantizador, se trata presumiblemente de un transformer multimodal denso, pero no se confirma ni el tipo de atención, ni la longitud de contexto, ni la composición exacta del dataset de entrenamiento. El modelo fue ajustado con el dataset OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data, orientado a la actualización de conocimiento con noticias de 2026, y la etiqueta "built-with-muse-spark-open" sugiere el uso de un pipeline de entrenamiento denominado Muse Spark Open.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de que se trata de un transformer y que se distribuye a traves de la libreria transformers. El modelo se ha entrenado sobre el dataset OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data, con un enfasis explicito en actualizacion de conocimiento ("knowledge-update") y noticias de 2026 ("2026-news"). La model card indica que fue construido con "muse-spark-open", aunque no se aportan detalles sobre el proceso de entrenamiento, el numero de tokens, la composicion del corpus ni si se aplicaron tecnicas de RLHF o DPO.
 
-La innovación técnica destacable en este repositorio no está en el modelo base, sino en el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (matriz de importancia) mediante el archivo `Glimmer-30B-2026-Knowledge.imatrix.gguf`, lo que permite conservar mejor la calidad en cuantizaciones de 2 a 4 bits. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamaño similar, y señala que i1-Q4_K_S (16,2 GB) ofrece un equilibrio óptimo entre tamaño, velocidad y calidad. No se documenta el uso de RLHF, DPO ni técnicas de decodificación especulativa.
+La innovacion tecnica principal de esta publicacion es la cuantizacion: mradermacher ha generado cuantizaciones ponderadas con fichero imatrix (i1), lo que mejora la relacion calidad/tamano frente a cuantizaciones estaticas equivalentes. El repositorio incluye tambien el fichero imatrix original para que otros usuarios puedan generar sus propias cuantizaciones. No se documentan innovaciones de arquitectura como decodificacion especulativa, atencion lineal o mecanismos hibridos.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés (etiqueta "conversational").
-- Actualización de conocimiento específica sobre eventos y noticias de 2026 (etiquetas "knowledge-update" y "2026-news").
-- Capacidad multimodal de visión: el cuantizador indica explícitamente que es un "vision model" y que los archivos mmproj, si existen, se encuentran en el repositorio estático.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que sugiere despliegue mediante APIs compatibles con el formato de Hugging Face.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
-- Modo "thinking" o razonamiento extendido: no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
+- Actualizacion de conocimiento sobre eventos y noticias de 2026, segun la tematica declarada del dataset de entrenamiento.
+- Respuestas de tipo knowledge-update: el modelo esta disenado para incorporar informacion reciente que modelos mas antiguos no cubren.
+- Capacidad de ejecucion local en CPUs y GPUs consumer mediante llama.cpp y ecosistema GGUF.
+- Soporte de cuantizaciones de muy baja precision (IQ1/IQ2) para entornos con recursos muy limitados.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito ("thinking mode").
+- Capacidades multilingues: no disponibles; el modelo declara unicamente ingles.
 
 ## Casos de uso
 
-- Asistencia en investigación periodística sobre eventos de 2026: el modelo incorpora conocimiento actualizado de noticias de ese año, por lo que puede emplearse para resumir, contextualizar o responder preguntas sobre acontecimientos recientes sin necesidad de recuperación externa, siempre que la información esté dentro de su fecha de corte.
-- Generación de respuestas en inglés para atención al cliente: su naturaleza conversacional y su tamaño (27,9 B) permiten mantener diálogos multi-turno con calidad razonable, desplegado en servidores con GPU de 24 GB o más usando cuantizaciones i1-Q4_K_S.
-- Análisis de documentos e imágenes en pipelines de visión: al estar etiquetado como modelo de visión, puede integrarse en flujos que requieran descripción de imágenes o extracción de información visual, usando los archivos mmproj del repositorio estático.
-- Prototipado rápido en estaciones de trabajo con GPU de consumo: las cuantizaciones de 10,8 a 16,2 GB permiten ejecutar el modelo en tarjetas como RTX 4090 (24 GB) o RTX 3090, facilitando pruebas de concepto sin infraestructura de datacenter.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye múltiples variantes (Q2_K, IQ3_XXS, IQ3_M, Q4_K_S) que permiten medir el impacto de la precisión en tareas de conocimiento actualizado, útil para investigadores que estudian la degradación por cuantización.
-- Generación de contenido editorial en inglés sobre temas de actualidad: el ajuste con noticias de 2026 lo hace adecuado para borradores de artículos o notas de prensa, con revisión humana obligatoria por el riesgo de alucinación.
-- Despliegue en entornos con restricciones de memoria: la variante i1-Q2_K (10,8 GB) permite ejecución en GPU de 12 GB, aunque con pérdida de calidad notable, adecuada solo para tareas de baja exigencia.
+- Asistente conversacional local en ingles: el modelo puede mantener dialogos multi-turno en equipos sin GPU dedicada, usando cuantizaciones IQ2 o Q3 en llama.cpp, lo que lo hace adecuado para prototipos de chatbot de escritorio.
+- Consulta de conocimiento actualizado a 2026: gracias al entrenamiento especifico en noticias y eventos de 2026, puede emplearse como base para responder preguntas sobre acontecimientos recientes que modelos con corte de conocimiento anterior no cubren.
+- Despliegue en estaciones de trabajo con una sola GPU consumer: la cuantizacion i1-Q4_K_M (17,0 GB) encaja en GPUs de 24 GB como la RTX 4090, permitiendo servir el modelo con buena calidad y velocidad aceptable.
+- Experimentacion con cuantizaciones: el fichero imatrix incluido permite a investigadores generar sus propias variantes y comparar la degradacion de calidad entre tipos de cuantizacion (IQ frente a K-quants).
+- Generacion de resumenes y reescritura de documentos en ingles: el modelo puede integrarse en pipelines de procesamiento de texto por lotes ejecutados en servidores sin aceleradores de alto rendimiento, usando cuantizaciones Q4 o Q5.
+- Base para fine-tuning ligero o evaluacion de conocimiento: al estar disponible en transformers ademas de GGUF, puede servir como punto de partida para estudiar como el conocimiento temporal afecta el comportamiento del modelo en tareas de QA.
+- Prototipado de asistentes offline: la disponibilidad de cuantizaciones de 6,6 a 10 GB permite ejecutar el modelo en portatiles con 8-12 GB de VRAM o en modo CPU, util para demos sin conexion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor del repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones comparativas; únicamente proporciona gráficas de perplejidad de tipos de cuantización (referencia externa a ikawrakow) que no constituyen benchmarks de capacidades.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 10,8 GB (i1-Q2_K), 11,2 GB (i1-IQ3_XXS), 12,9 GB (i1-IQ3_M) y 16,2 GB (i1-Q4_K_S), más overhead de contexto y del proyector visual si se usa multimodalidad.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para las cuantizaciones i1-Q4_K_S e i1-IQ3_M con margen; A100 (40/80 GB) o H100 para despliegue en producción con contexto largo y concurrencia.
-- ¿Cabe en GPU de consumo? Sí: las variantes i1-Q2_K e i1-IQ3_XXS caben en GPUs de 12 GB (RTX 3060 12 GB, RTX 4070); las variantes de 16,2 GB requieren 24 GB para funcionar con comodidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; para el modelo base en safetensors, vLLM o TGI (no confirmado para esta variante cuantizada).
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas overhead de contexto. Las cuantizaciones van de 6,6 GB (i1-IQ1_S) a 23,0 GB (i1-Q6_K); se recomienda anadir entre 1 y 3 GB adicionales para la KV cache segun la longitud de contexto.
+- GPU recomendadas: para i1-Q4_K_M (17,0 GB) se necesita una GPU de 24 GB (RTX 4090, RTX 3090, A10G) o superior; para i1-Q5_K_M (19,9 GB) y i1-Q6_K (23,0 GB) conviene una A100 40 GB, H100 o similar para dejar margen de contexto.
+- Cabe en GPU consumer: si, en RTX 4090/3090 (24 GB) con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) caben IQ3_M, Q3_K_M o IQ4_XS; en GPUs de 12 GB caben IQ2_M, Q2_K o IQ3_XXS; en GPUs de 8 GB solo las variantes IQ1/IQ2 mas agresivas.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), llama-cpp-python, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base sin cuantizar, transformers con pesos safetensors.
+- Latencia y throughput estimados: no disponibles; dependen del hardware, del tipo de cuantizacion y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Glimmer-30B-2026-Knowledge-i1-GGUF | 27,9 B | no disponible | Apache 2.0 + Muse Model License | GGUF | Cuantización imatrix de un modelo con conocimiento de 2026 |
-| mradermacher/Glimmer-30B-2026-Knowledge-GGUF | 27,9 B | no disponible | Apache 2.0 + Muse Model License | GGUF | Cuantizaciones estáticas del mismo modelo base, incluye mmproj |
-| OfflineBase/Muse-Glimmer-30B-2026-Knowledge | 27,9 B | no disponible | Apache 2.0 + Muse Model License | safetensors | Modelo base original sin cuantizar |
+No se dispone de datos de rendimiento del modelo ni de alternativas comparables en la informacion proporcionada, por lo que la comparativa se limita a caracteristicas objetivas.
 
-No se dispone de información sobre modelos alternativos de otros autores con características comparables (mismo tamaño, misma tarea de actualización de conocimiento o misma fecha de corte) en la documentación proporcionada. La comparativa se limita a las variantes del mismo modelo.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Glimmer-30B-2026-Knowledge (este, i1-GGUF) | ~27,85 B | no disponible | Apache 2.0 + Muse Model License | GGUF | Cuantizaciones i1 con imatrix, solo ingles |
+| Glimmer-30B-2026-Knowledge (estatico GGUF) | ~27,85 B | no disponible | Apache 2.0 + Muse Model License | GGUF | Cuantizaciones estaticas del mismo autor |
+| Muse-Glimmer-30B-2026-Knowledge (base) | ~27,85 B | no disponible | Apache 2.0 + Muse Model License | safetensors | Modelo original sin cuantizar |
+| Alternativas de ~30B | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor; al estar entrenado con noticias de 2026, puede heredar sesgos editoriales de las fuentes utilizadas.
-- Riesgo de alucinación: elevado en un modelo ajustado para "conocimiento actualizado", ya que puede generar afirmaciones plausibles pero falsas sobre eventos recientes; se recomienda verificación factual en producción.
-- Limitaciones de idioma: el modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
-- Limitaciones de contexto: la longitud de contexto no está documentada, lo que impide planificar despliegues con ventanas largas; debe verificarse empíricamente antes de usarlo en tareas de contexto extendido.
-- Restricciones de licencia: la combinación Apache 2.0 + Muse Model License puede imponer condiciones adicionales (atribución, restricciones de uso comercial o de redistribución) que deben revisarse en el enlace de licencia antes de cualquier uso en producción.
-- Caveat de cuantización: las variantes de 2 y 3 bits (i1-Q2_K, i1-IQ3_XXS) degradan la calidad de forma notable; el autor recomienda IQ3_XXS sobre Q2_K y señala i1-Q4_K_S como el equilibrio óptimo.
-- Caveat multimodal: los archivos mmproj no están en este repositorio sino en el estático; un despliegue multimodal requiere descargar ambos repositorios.
-- Fecha de creación del repositorio: 2026-11-01, con 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- Solo soporta ingles; no se declara soporte multilingue, por lo que su uso en castellano no esta garantizado.
+- No hay benchmarks publicados: la calidad real del modelo y de cada cuantizacion no esta documentada.
+- Las cuantizaciones de muy baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- Riesgo de alucinacion: al estar entrenado para incorporar noticias de 2026, puede generar afirmaciones erroneas sobre eventos recientes si el dataset contiene ruido o informacion incompleta.
+- Sesgos conocidos: no disponibles; no se documenta ninguna evaluacion de sesgo.
+- Licencia dual (Apache 2.0 + Muse Model License): es imprescindible revisar el fichero MUSE_MODEL_LICENSE.md antes de cualquier uso comercial, ya que pueden existir restricciones adicionales mas alla de Apache 2.0.
+- El pipeline no esta declarado y el modelo base se distribuye via transformers, pero esta publicacion concreta es solo GGUF; para fine-tuning hay que acudir al modelo base.
+- El repositorio ocupa 303,4 GB en total, lo que exige planificar el almacenamiento si se descargan varias cuantizaciones.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no debe asumirse su disponibilidad en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-i1-GGUF
-- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-i1-GGUF
 - Modelo base: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Dataset de entrenamiento: https://huggingface.co/datasets/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data
 - Licencia Muse Model License: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge/blob/main/MUSE_MODEL_LICENSE.md
-- Página de descargas del cuantizador: https://hf.tst.eu/model#Glimmer-30B-2026-Knowledge-i1-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
-- Web del cuantizador (nethype GmbH): https://www.nethype.de/
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Glimmer-30B-2026-Knowledge-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/

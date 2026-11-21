@@ -2,101 +2,111 @@
 
 ## Resumen
 
-Lumen Cutout es un modelo de segmentación de imagen especializado en eliminación de fondos (background removal) y segmentación dicotómica de alta resolución, diseñado para ejecutarse en dispositivos móviles. Lo desarrolla el autor independiente subhashhhhhh como componente del proyecto Lumen, una galería de Android con enfoque local-first, y constituye el motor detrás de la función "mantener pulsado para recortar". Se distribuye bajo licencia MIT y deriva del modelo BiRefNet-lite de ZhengPeng7 mediante un proceso de modificación arquitectónica y destilación.
+Lumen Cutout es un modelo de segmentación de sujeto (subject segmentation) y eliminación de fondo diseñado para ejecutarse íntegramente en la NPU de teléfonos Android. Lo desarrolla subhashhhhhh como componente del proyecto Lumen, una galería Android local-first, y se distribuye en formato LiteRT/TFLite totalmente cuantizado a int8. Deriva de BiRefNet-lite (Zheng et al.) mediante reescrituras exactas del grafo, cambios arquitectónicos y destilación con conciencia de cuantización, con el objetivo de producir máscaras de 1024×1024 en decenas de milisegundos en hardware móvil.
 
-El problema que resuelve es la incompatibilidad entre las convoluciones deformables del decodificador de BiRefNet y los aceleradores de los teléfonos: ni la ruta GPU de LiteRT ni el compilador NPU de Qualcomm soportan dichas operaciones, y reconstruirlas con operaciones estándar genera "gathers" que la NPU no puede teselar. Lumen Cutout sustituye las 20 convoluciones deformables por convoluciones planas del mismo tamaño y recupera la precisión perdida mediante destilación desde el modelo original.
+El problema que resuelve es concreto: el modelo original no compila para una NPU móvil, ya que sus convoluciones deformables, tensores de 5 y 6 dimensiones, rolls cíclicos y activaciones a resolución completa no son compatibles con el hardware ni caben en su memoria on-chip. Lumen Cutout reescribe lo que puede reescribirse de forma matemáticamente equivalente, sustituye lo que no y recupera la precisión mediante destilación sobre el grafo exacto de la NPU.
 
-El resultado es un modelo LiteRT/TFLite de 134 MB con entrada de 512×512 píxeles RGB y salida de máscara 0-1, que corre en 160 ms sobre la GPU de un Snapdragon 7 Gen 1 y también compila de forma anticipada para NPU de Qualcomm en nueve chips. Su relevancia actual radica en que demuestra que un modelo de segmentación de alta calidad puede ejecutarse íntegramente en el dispositivo, sin conexión y con latencia interactiva.
+Es relevante porque demuestra que una tarea de visión de alta resolución puede ejecutarse por completo en la NPU de un móvil de gama media sin renunciar a la calidad del profesor en coma flotante. El modelo tiene 61 MB en int8, procesa una máscara de 1024×1024 en 23,7 ms en un Snapdragon 8 Elite Gen 5 y 182 ms en un Snapdragon 7 Gen 1, y mantiene un IoU mediano de 0,993 frente al profesor float en 150 fotos reservadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BiRefNet-lite modificado: backbone Swin (congelado) + decodificador con convoluciones planas en lugar de deformables |
+| Arquitectura | Transformer híbrido derivado de BiRefNet-lite (backbone Swin reescrito + decodificador convolucional, resolución dividida) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, entrada fija de 512×512) |
-| Tipos de cuantizacion | Pesos float16 con cómputo float32 (CPU) o float16 (GPU); no se documentan otras cuantizaciones |
+| Longitud de contexto | no aplica (modelo de visión; entradas de 1024×1024 y 640×640) |
+| Tipos de cuantizacion | int8 (activaciones y pesos); pesos float16 disponibles en PyTorch |
 | Idiomas soportados | no disponible (modelo de imagen, independiente del idioma) |
 | Licencia | MIT |
-| Formato de pesos | TFLite/LiteRT (`cutout_512.tflite`, 134 MB) y PyTorch (`pytorch/decoder_v2.pt`, 29 MB, float16) |
+| Formato de pesos | TFLite (LiteRT) int8, variantes precompiladas por chip en `npu/`; PyTorch float16 (`.pt`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de BiRefNet-lite, que emplea un backbone Swin Transformer y un decodificador con convoluciones deformables. La modificación clave consiste en reemplazar las 20 convoluciones deformables del decodificador por convoluciones planas del mismo tamaño, inicializadas desde los kernels regulares del modelo original. Este cambio por sí solo altera aproximadamente el 10% de los píxeles de la máscara respecto al original.
+Lumen Cutout parte de BiRefNet-lite y aplica dos niveles de transformación. Primero, reescrituras exactas verificadas contra el modelo original: atención de ventana en 4 dimensiones, ventanas desplazadas sin roll, convoluciones con división de canales y atención procesada cabeza a cabeza. Después, cambios arquitectónicos donde la equivalencia no era posible: convoluciones estándar en lugar de deformables, backbone Swin sobre una copia de 640 píxeles mientras el decodificador y la máscara trabajan a 1024 (resolución dividida con dos entradas), una cola ligera a resolución completa y una ventana global única.
 
-Para recuperar la precisión se aplicó destilación: el profesor es el BiRefNet-lite original y el estudiante es la versión con convoluciones planas. Se usaron 118.000 imágenes de entrenamiento de COCO 2017 sin etiquetas, de modo que el estudiante aprende a reproducir las máscaras del profesor, mayoritariamente a 512×512 y algunas a 768×768, con aumento de datos. Solo se entrenan el decodificador y el módulo squeeze; el backbone Swin permanece congelado con los pesos originales. La función de pérdida combina BCE y L1 contra la máscara del profesor, con un peso 5× en una banda alrededor de los bordes. Se usó el optimizador AdamW con learning rate 1e-4 y precisión mixta, en dos ejecuciones sobre una única GPU Kaggle T4.
-
-La innovación técnica destacable es la sustitución de operaciones no soportadas por hardware móvil (convoluciones deformables) por alternativas compatibles con GPU y NPU, manteniendo la fidelidad mediante destilación. El modelo incorpora internamente la normalización ImageNet y la sigmoide, de modo que recibe RGB 0-255 y devuelve la máscara 0-1 directamente.
+El entrenamiento emplea destilación con conciencia de cuantización a través del grafo exacto de la NPU, de modo que el modelo aprende la aritmética int8 real del hardware en lugar de cuantizarse a posteriori. El dataset declarado es `detection-datasets/coco`. El resultado es un modelo con todas las capas en la NPU, sin ninguna que recaiga en la CPU, y con un único participante en el grafo compilado. Los pesos de la ronda final de entrenamiento se publican en float16 para PyTorch, y el script `convert/birefnet_lite.py` reconstruye el modelo a partir de ellos.
 
 ## Capacidades
 
-- Segmentación dicotómica de imagen: separa el sujeto del fondo generando una máscara binaria suavizada.
-- Eliminación de fondos de alta resolución con entrada fija de 512×512 píxeles.
-- Inferencia en dispositivo (on-device) sin conexión a red.
-- Ejecución en GPU móvil mediante LiteRT con cómputo float16.
-- Compilación anticipada para NPU de Qualcomm en nueve chips Snapdragon.
-- Exportación a PyTorch para uso en servidor o escritorio mediante transformers.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües; es un modelo puramente visual de una sola tarea.
+- Segmentación de sujeto (salient object detection) con máscara de 1024×1024 a partir de una foto RGB.
+- Eliminación de fondo (background removal) mediante la máscara generada.
+- Ejecución íntegra en NPU Qualcomm, sin fallback a CPU en las variantes precompiladas.
+- Inferencia int8 con dos entradas (1024×1024 y 640×640) y una salida de máscara int8.
+- Precompilación ahead-of-time para 42 chips Snapdragon.
+- No soporta tool calling, agentes, texto, visión general ni audio: es un modelo puramente de segmentación.
 
 ## Casos de uso
 
-- Recorte interactivo en galerías móviles: el modelo permite implementar "mantener pulsado para recortar" en aplicaciones de fotos, con 160 ms de latencia en GPU de un Snapdragon 7 Gen 1, suficiente para una respuesta percibida como instantánea.
-- Edición fotográfica local sin conexión: aplicaciones de retoque pueden eliminar fondos en el propio teléfono, preservando la privacidad del usuario al no enviar imágenes a servidores.
-- Generación de avatares y stickers: la máscara 0-1 permite componer al sujeto sobre nuevos fondos o generar recortes para redes sociales directamente en el dispositivo.
-- Preprocesado para pipelines de visión: el recorte del sujeto puede alimentar etapas posteriores (clasificación, detección, generación) en aplicaciones de realidad aumentada o pruebas virtuales.
-- Automatización de catálogos de producto: en servidores con PyTorch, el modelo puede procesar lotes de imágenes para eliminar fondos de forma uniforme, usando los pesos destilados de 29 MB junto al backbone original.
-- Integración en apps Android mediante LiteRT: el uso de `serializationDir` permite cachear los programas GPU (carga inicial de ~10 s, posteriores de ~1,5 s), lo que viabiliza su inclusión en aplicaciones de producción.
-- Procesamiento en dispositivos con NPU: en chips Snapdragon compatibles puede ejecutarse vía QAIRT, aunque en el 7 Gen 1 la NPU resultó más lenta (559 ms) que la GPU, por lo que la elección de acelerador debe evaluarse por chip.
+- Recorte interactivo en galerías Android: el modelo sustenta la función "mantener pulsado para recortar" de Lumen, generando la máscara en 23,7 ms en un Snapdragon 8 Elite Gen 5, lo que permite respuesta en tiempo real al gesto del usuario.
+- Eliminación de fondo en apps de edición fotográfica: la máscara de 1024×1024 con IoU mediano de 0,993 frente al profesor float es suficiente para composición y exportación sin artefactos visibles.
+- Procesamiento por lotes en dispositivo: con 61 MB de modelo y 286-299 MB de memoria pico, cabe en móviles de gama media y permite procesar bibliotecas enteras de fotos sin subir imágenes a la nube.
+- Privacidad por diseño: al ejecutarse localmente en la NPU, las fotos no salen del dispositivo, lo que encaja en aplicaciones de salud, documentos o contenido personal.
+- Stickers y avatares: la máscara binaria a resolución completa sirve para generar recortes con transparencia en apps de mensajería y redes sociales.
+- Preprocesado en pipelines de visión: la máscara de sujeto puede alimentar etapas posteriores (clasificación, edición, composición) en aplicaciones de cámara en tiempo real.
+- Integración en apps de galería y gestión de recuerdos: selección automática de sujetos para collages, miniaturas o presentaciones sin coste de servidor.
 
 ## Benchmarks y rendimiento
 
-Porcentaje de píxeles cuya clasificación respecto al umbral 0,5 difiere del BiRefNet-lite original (menor es mejor):
+Calidad frente a etiquetas humanas (S-measure, max F, MAE; mayor, mayor, menor es mejor):
 
-| Conjunto | Antes de destilación | Después de destilación |
+| Modelo | ECSSD (1.000) | DUT-OMRON (5.168) |
 |---|---|---|
-| COCO val (200 imágenes), 512 | 10,4% | 3,84% |
-| COCO val, 768 | no disponible | 4,13% |
-| Fotos propias del desarrollador (180, privadas, no usadas en entrenamiento), 512, mediana | no disponible | 0,38% |
+| Lumen Cutout int8 en NPU 7 Gen 1 | 0,939 / 0,945 / 0,028 | 0,830 / 0,760 / 0,062 |
+| Profesor (modelo original, float32) | 0,938 / 0,947 / 0,025 | 0,826 / 0,763 / 0,057 |
+| Apple Vision foreground mask | 0,940 / 0,946 / 0,023 | 0,842 / 0,757 / 0,037 |
+| ML Kit Subject Segmentation | 0,928 / 0,938 / 0,033 | 0,789 / 0,719 / 0,091 |
+| U²-Net | 0,928 / 0,940 / 0,033 | 0,848 / 0,795 / 0,054 |
 
-En las fotos del desarrollador, la mediana de solapamiento (IoU) con el original es 0,99 y el 94% de las fotos supera 0,9. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, al tratarse de un modelo de segmentación.
+Velocidad para una máscara de 1024×1024 (Qualcomm AI Hub, LiteRT en NPU):
 
-Rendimiento de inferencia en Snapdragon 7 Gen 1 (Motorola Edge 50): 160 ms en GPU (LiteRT, float16) y 1,8 s en cuatro núcleos de CPU. En NPU del mismo chip: 559 ms.
+| Teléfono | Chip | Tiempo | Memoria pico |
+|---|---|---|---|
+| Samsung Galaxy S26 | Snapdragon 8 Elite Gen 5 | 23,7 ms | 299 MB |
+| Samsung Galaxy S25 | Snapdragon 8 Elite | 31,1 ms | 293 MB |
+| Snapdragon 7 Gen 4 QRD | Snapdragon 7 Gen 4 | 73,8 ms | 286 MB |
+| Samsung Galaxy S21 | Snapdragon 888 | 106,8 ms | 286 MB |
+| Samsung Galaxy A73 5G | Snapdragon 778G | 188,7 ms | 474 MB |
+| Motorola Edge 50 | Snapdragon 7 Gen 1 | 182 ms (`qnn-net-run`), 190 ms en la app Lumen | no disponible |
+
+En los mismos teléfonos el modelo original agota la memoria a 1024 píxeles; a 512 tarda 677 ms (S26) y 3.653 ms (A73) en CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; el modelo está pensado para ejecución en dispositivo, no para GPU de escritorio.
-- GPU móviles recomendadas: Snapdragon 7 Gen 1, 8 Gen 1, 8+ Gen 1, 8 Gen 2, 8 Gen 3, 8 Elite y variantes 8 Elite Gen 5 (soporte NPU vía LiteRT 2.3 y QAIRT 2.50).
-- Cabe en cualquier smartphone moderno con GPU compatible con LiteRT; el archivo TFLite ocupa 134 MB.
-- Opciones de despliegue: LiteRT/TFLite en Android (GPU o NPU), PyTorch con transformers para servidor o escritorio.
-- Latencia: 160 ms en GPU de Snapdragon 7 Gen 1; 1,8 s en CPU de cuatro núcleos; 559 ms en NPU del mismo chip. La primera carga en GPU tarda ~10 s en compilar los programas; con `serializationDir` las cargas posteriores son de ~1,5 s.
-- Throughput en servidor: no disponible.
+- VRAM/memoria: 286-299 MB de memoria pico en la mayoría de chips; 474 MB en Snapdragon 778G. Modelo de 61 MB en int8.
+- GPU/NPU recomendadas: NPU Qualcomm Snapdragon. Variantes precompiladas para 42 chips, incluyendo SM8850 (8 Elite Gen 5), 8 Elite, 7 Gen 4, 888, 778G y 7 Gen 1 (SM7450).
+- Cabe en hardware consumer móvil; no requiere GPU de escritorio. En CPU de escritorio funciona con LiteRT pero con menor fidelidad (IoU mediano 0,96 frente a 0,993 en NPU).
+- Despliegue: LiteRT (`ai-edge-litert`) con `CompiledModel` y `Accelerator.NPU` en Android; `qnn-net-run` para pruebas en chip; `example.py` para inferencia en CPU. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplica a este tipo de modelo).
+- Latencia: 23,7-188,7 ms por máscara según chip; throughput no publicado explícitamente.
+- No compila para NPU MediaTek; chips antiguos como Snapdragon 765G ejecutan en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Contexto/entrada | Calidad (ECSSD S-measure) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lumen Cutout | no disponible | 512×512 fija | 3,84% de discrepancia vs BiRefNet-lite en COCO val | MIT | Hugging Face, LiteRT y PyTorch |
-| BiRefNet-lite (ZhengPeng7) | no disponible | resolución variable | referencia original; usa convoluciones deformables no soportadas en GPU/NPU móvil | MIT | Hugging Face |
-| BiRefNet (completo) | no disponible | alta resolución | mayor calidad, mayor coste computacional | MIT | Hugging Face |
-
-No se dispone de datos de benchmarks comparativos con otros modelos de segmentación en la información proporcionada.
+| Lumen Cutout | Segmentación de sujeto int8 para NPU | 1024×1024 + 640×640 | 0,939 | MIT | Hugging Face, TFLite |
+| BiRefNet-lite (profesor) | Segmentación de sujeto float32 | 1024×1024 | 0,938 | no disponible en la información | Hugging Face |
+| ML Kit Subject Segmentation | API de plataforma | no disponible | 0,928 | propietaria | SDK Android |
+| Apple Vision foreground mask | API de plataforma | no disponible | 0,940 | propietaria | SDK Apple |
+| U²-Net | Segmentación de sujeto | no disponible | 0,928 | no disponible en la información | público |
 
 ## Limitaciones y advertencias
 
-- Escenas con mucho desorden: sin convoluciones deformables el decodificador tiene menos contexto; en 5 de 180 fotos de prueba tomó una parte grande del fondo como sujeto. El autor planea una versión con kernels mayores.
-- Entrada fija de 512×512: la imagen se estira a un cuadrado y la máscara debe reescalarse de vuelta, lo que puede introducir distorsiones en imágenes con relaciones de aspecto extremas.
-- No es un modelo de lenguaje: no soporta texto, tool calling, agentes ni razonamiento; su uso está limitado a segmentación de imagen.
-- Dependencia del backbone original: los pesos PyTorch solo contienen el decodificador destilado; es necesario cargar BiRefNet-lite desde transformers para reconstruir el modelo completo.
-- Riesgo de alucinación de máscara: en escenas complejas puede incluir regiones de fondo como sujeto, lo que requiere validación en producción.
-- Los datos de destilación provienen de COCO 2017, sujeto a los términos de uso de COCO; el repositorio no incluye imágenes ni etiquetas de COCO.
-- Licencia MIT permite uso comercial, pero se solicita atribuir al BiRefNet original mediante la cita BibTeX indicada.
-- El soporte NPU está limitado a chips Qualcomm concretos y puede ser más lento que la GPU según el modelo de chip.
+- En CPU de escritorio la fidelidad baja: los kernels int8 de referencia de LiteRT redondean de forma distinta a la NPU, con IoU mediano de 0,96 y algunas fotos problemáticas.
+- Las variantes de `npu/` requieren el chip exacto para el que fueron compiladas; no son portables entre SoCs.
+- No compila para NPU MediaTek; en chips antiguos cae a CPU con la penalización de rendimiento correspondiente.
+- En DUT-OMRON seis modelos públicos superan su puntuación; el artículo original detalla las salvedades sobre datos de entrenamiento.
+- Bordes ligeramente más suaves que el profesor float.
+- No es un modelo multimodal ni de texto: no admite prompts, tool calling ni razonamiento; su única salida es una máscara.
+- Licencia MIT, que permite uso comercial, pero conviene verificar las obligaciones derivadas del modelo base BiRefNet-lite y del dataset COCO.
+- No hay datos publicados sobre sesgos demográficos o de otro tipo en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/subhashhhhhh/lumen-cutout
 - Modelo base BiRefNet-lite: https://huggingface.co/ZhengPeng7/BiRefNet_lite
-- Proyecto Lumen (galería Android): https://github.com/subhashhhhhh/Lumen
-- Dataset COCO 2017: https://cocodataset.org
-- Términos de uso de COCO: https://cocodataset.org/#termsofuse
+- Paper (Zenodo, 2026): https://doi.org/10.5281/zenodo.24152780
+- Código: https://github.com/subhashhhhhh/lumen-cutout
+- Proyecto Lumen: https://github.com/subhashhhhhh/Lumen
+- Script de conversión: https://github.com/subhashhhhhh/lumen-cutout/blob/main/convert/birefnet_lite.py
+- Instrucciones de reconstrucción: https://github.com/subhashhhhhh/lumen-cutout#rebuild-the-final-model

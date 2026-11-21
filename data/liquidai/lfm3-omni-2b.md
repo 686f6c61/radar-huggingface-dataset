@@ -2,52 +2,52 @@
 
 ## Resumen
 
-LFM3-Omni-2B es el primer modelo omnicanal de la familia LFM3 de Liquid AI: un unico modelo end-to-end que comprende texto, imagenes, video y audio, y responde en texto y en voz. Sustituye la combinacion de varios modelos independientes (ASR, vision-language, LLM y TTS) por un unico checkpoint de 2.166.928.384 parametros, pensado para ejecutarse en dispositivos de borde como telefonos y portatiles.
+LFM3-Omni-2B es el primer modelo omni-modal de la familia LFM3 de Liquid AI. Se trata de un modelo end-to-end que comprende texto, imágenes, vídeo y audio, y responde tanto en texto como en voz (speech-to-speech). Su planteamiento sustituye la combinación habitual de varios modelos especializados (ASR, visión-lenguaje, LLM y TTS) por un único modelo de 2.166.928.384 parámetros, diseñado para ejecutarse en dispositivos de borde como teléfonos, portátiles y hardware embebido.
 
-El modelo integra un encoder de audio y un encoder de vision, cada uno con su conector correspondiente, que alimentan un nucleo LFM3-1.7B (Liquid Foundation Model). La salida combina tokens de texto y de audio: el flujo de audio se procesa mediante un depthformer y el codec Liquid Audio Codec para generar voz a 24 kHz. Esto lo convierte en un modelo any-to-any con capacidad de conversacion hablada de extremo a extremo.
+La arquitectura combina un codificador de audio y un codificador de visión propios de LFM3, cada uno con su conector correspondiente, que alimentan el modelo de lenguaje LFM3-1.7B. La salida se genera como un flujo de tokens de texto y de audio; el texto pasa por la LM head y el audio por un depthformer y el Liquid Audio Codec, que produce voz a 24 kHz. El modelo está post-entrenado y se distribuye con licencia lfm1.0, con soporte para 24 idiomas.
 
-Es relevante ahora porque demuestra que las capacidades multimodales completas (vision, audio y habla) pueden empaquetarse en menos de 2.2B de parametros con vocacion on-device, algo que hasta hace poco requeria pipelines de varios modelos y bastante mas VRAM. Soporta 25 idiomas y se distribuye con licencia lfm1.0.
+Su relevancia actual radica en la integración de modalidades en un tamaño reducido (2,2B) y en la capacidad de procesar vídeo con pista de audio de forma conjunta, lo que habilita casos de uso conversacionales y de asistencia en tiempo real sobre hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Omni-modal: encoder de audio + encoder de vision + conectores + nucleo LFM3-1.7B (Liquid Foundation Model) + depthformer + Liquid Audio Codec |
-| Parametros totales | 2.166.928.384 (2,2B) |
+| Arquitectura | Omni-modal: codificador de audio LFM3 + conector, codificador de visión LFM3 + conector, LLM LFM3-1.7B, salida de texto (LM head) y audio (depthformer + Liquid Audio Codec a 24 kHz) |
+| Parametros totales | 2.166.928.384 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 25: en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr |
-| Licencia | lfm1.0 (other) |
-| Formato de pesos | safetensors (libreria transformers, custom_code) |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (24 idiomas) |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | safetensors (librería transformers, código custom) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un pipeline omni-modal end-to-end. Una pregunta hablada pasa por el encoder de audio de LFM3 y su conector de audio; una imagen pasa por el encoder de vision y su conector de vision; un prompt de texto pasa por el tokenizador y el embedding. Todas las modalidades convergen en el nucleo LFM3-1.7B. La salida es un flujo de tokens de texto y de audio: los tokens de texto van al LM head y los de audio al depthformer y al Liquid Audio Codec, que sintetiza voz a 24 kHz.
+LFM3-Omni-2B sigue un diseño modular omni-modal. Las entradas de audio pasan por un codificador de audio LFM3 y un conector de audio; las imágenes y el vídeo pasan por un codificador de visión LFM3 y un conector de visión; y el texto se tokeniza y se embebe. Todas las representaciones convergen en el modelo de lenguaje LFM3-1.7B. En la generación, el modelo emite un flujo de tokens de texto y de audio: los tokens de texto se decodifican mediante la LM head y los de audio mediante un depthformer y el Liquid Audio Codec, que sintetiza voz a 24 kHz. El modelo está post-entrenado, según la model card.
 
-El checkpoint publicado es un modelo post-entrenado omni-modal. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas concretas de RLHF o DPO. La innovacion destacable es la integracion de las cuatro funciones (ASR, vision-language, LLM y TTS) en un solo modelo de 2,2B parametros disenado para hardware de borde, con procesamiento conjunto de video e imagen y sonido para preguntas que requieren ambas modalidades.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Tampoco se detallan innovaciones adicionales como decodificación especulativa o atención lineal. La model card destaca como rasgo técnico la capacidad de procesar vídeo con sonido de forma simultánea (visión y audio conjuntos) y el enfoque end-to-end para sustituir pipelines de ASR, VLM, LLM y TTS por un solo modelo.
 
 ## Capacidades
 
-- Comprension de texto, imagenes, video y audio en un unico modelo.
-- Respuesta en texto y en voz (speech-to-speech) a 24 kHz mediante el Liquid Audio Codec.
-- Preguntas sobre una foto formuladas por voz.
-- Transcripcion y traduccion de voz.
-- Conversacion hablada (chat out loud).
-- Preguntas sobre un video y su banda sonora de forma conjunta (ve y escucha a la vez).
-- Capacidades multilingues en 25 idiomas.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Comprensión de texto, imágenes, vídeo y audio en un único modelo.
+- Generación de respuestas en texto y en voz (speech-to-speech) a 24 kHz mediante el Liquid Audio Codec.
+- Procesamiento conjunto de vídeo y su pista de audio, lo que permite responder preguntas que requieren ambas modalidades.
+- Transcripción de voz (ASR) y traducción de voz.
+- Conversación por voz (chat out loud) y preguntas sobre una foto formuladas por voz.
+- Capacidades multilingües en 24 idiomas, incluidos español, inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, vietnamita, tailandés, indonesio, hindi, ruso, polaco, danés, griego, finés, hebreo, neerlandés, sueco y turco.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de voz en movil: el modelo recibe audio del microfono, lo comprende y responde con voz sintetizada a 24 kHz, todo en el propio dispositivo, sin depender de la nube.
-- Descripcion de imagenes por voz para accesibilidad: el usuario apunta la camara y pregunta en voz alta que hay en la escena; el modelo procesa la imagen y contesta hablando.
-- Transcripcion y traduccion de reuniones: se le pasa el audio de una conversacion y devuelve la transcripcion o la traduccion a cualquiera de los 25 idiomas soportados.
-- Analisis de video con audio: para contenido grabado, el modelo ve las imagenes y escucha la pista de sonido a la vez, lo que permite responder preguntas que dependen de ambas senales (por ejemplo, quien habla y que muestra la pantalla).
-- Interaccion manos libres en dispositivos de borde: portatiles, telefonos o hardware empotrado con recursos limitados, donde un unico modelo de 2,2B sustituye a cuatro componentes separados y reduce el consumo de memoria.
-- Atencion al cliente por voz: conversaciones multi-turno habladas donde el modelo transcribe la consulta, razona en texto y responde con voz, con la ventaja de ejecutarse localmente para preservar la privacidad del audio del cliente.
+- Asistencia conversacional por voz en dispositivos móviles: el modelo recibe audio del micrófono y responde con voz sintetizada a 24 kHz, todo en un único modelo de 2,2B, lo que reduce el consumo de memoria y permite su despliegue en teléfonos.
+- Descripción y análisis de imágenes por voz: un usuario puede fotografiar un objeto y preguntar sobre él hablando; el codificador de visión procesa la imagen y el modelo responde en audio o texto, útil en aplicaciones de accesibilidad.
+- Transcripción y traducción de reuniones: el modelo ASR integrado transcribe audio y puede traducir entre los 24 idiomas soportados, sustituyendo un pipeline separado de reconocimiento y traducción.
+- Análisis de vídeo con audio: para vídeos con banda sonora, el modelo ve y escucha simultáneamente, lo que permite responder preguntas sobre contenido visual y sonoro, por ejemplo en moderación de contenido o análisis de grabaciones.
+- Asistentes de borde sin conexión: al caber en hardware de consumo y no requerir servicios en la nube, el modelo puede integrarse en dispositivos IoT o portátiles para interacción multimodal local con baja dependencia de red.
+- Interfaces de voz para atención al cliente: el modelo puede gestionar conversaciones habladas multi-turno en varios idiomas, con salida de voz natural, en entornos donde se busca reducir la latencia y la infraestructura.
+- Herramientas educativas interactivas: un estudiante puede mostrar una imagen o reproducir un audio y formular preguntas habladas, recibiendo explicaciones en texto o voz, con soporte multilingüe.
 
 ## Benchmarks y rendimiento
 
@@ -55,36 +55,30 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el repo pesa 4,5 GB en safetensors, lo que da una referencia del orden de magnitud en precision completa.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Cabe en GPU de consumo: el diseno esta orientado a hardware de borde (telefonos, portatiles), por lo que en principio es apto para GPUs de consumo, aunque no se detallan modelos concretos.
-- Opciones de despliegue: transformers (libreria declarada, con custom_code). Otras opciones (vLLM, llama.cpp, Ollama, TGI) no estan confirmadas en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de 2,2B parámetros en precisión de 16 bits requiere aproximadamente 4,4 GB solo para pesos, a lo que hay que sumar los codificadores de audio y visión y el decodificador de audio; el tamaño del repositorio es de 4,5 GB.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Cabe en GPU de consumo: no confirmado oficialmente; por tamaño, es plausible en GPUs con 8 GB o más de VRAM, pero no se dispone de datos verificados.
+- Opciones de despliegue: la librería indicada es transformers con código custom (`custom_code`); no se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales conocidas.
-
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LFM3-Omni-2B | 2,2B | no disponible | texto, imagen, video, audio (entrada); texto y voz (salida) | lfm1.0 | Hugging Face |
-| Alternativas de la familia LFM3 (base, text, vision, audio, decision) | no disponible | no disponible | parciales por variante | lfm1.0 | Hugging Face (coleccion LiquidAI/lfm3) |
-| Otros modelos omni de borde | no disponible | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría omni-modal con datos verificables de parámetros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la informacion disponible; como en cualquier modelo entrenado con datos web, cabe esperar sesgos linguisticos y culturales.
-- Riesgo de alucinacion: no cuantificado; en tareas de transcripcion y descripcion visual conviene validar las salidas.
-- Limitaciones de contexto o idioma: la longitud de contexto no se especifica; los 25 idiomas listados no implican el mismo nivel de calidad en todos ellos.
-- Restricciones de licencia: la licencia lfm1.0 es de tipo "other"; es imprescindible revisar el fichero LICENSE del repositorio antes de un uso comercial.
-- Caveats para produccion: el modelo requiere custom_code en transformers, lo que puede complicar el despliegue en servidores de inferencia estandar; no hay datos publicos de latencia ni de throughput para dimensionar infraestructura.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información disponible; como todo modelo generativo, puede producir respuestas incorrectas, especialmente en tareas de percepción audiovisual.
+- Limitaciones de contexto o idioma: la longitud de contexto no se especifica; el soporte lingüístico se limita a los 24 idiomas listados.
+- Restricciones de licencia: la licencia lfm1.0 (license: other) puede imponer condiciones para uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de un despliegue en producción.
+- Caveats para producción: el modelo requiere código custom (`custom_code`) en transformers, lo que puede complicar la integración con herramientas estándar; no se confirma soporte en motores de inferencia habituales; el rendimiento real en dispositivos de borde no está documentado en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
-- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
-- Consola / API: https://console.liquid.ai/dashboard
+- Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
+- Consola/API de Liquid AI: https://console.liquid.ai/dashboard
 - Playground de voz: https://playground.liquid.ai/talk
-- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
-- Web de Liquid AI: https://www.liquid.ai/
+- Colección LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
+- Licencia (archivo LICENSE del repositorio): https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE

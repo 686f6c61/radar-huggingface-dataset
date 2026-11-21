@@ -2,117 +2,109 @@
 
 ## Resumen
 
-smart-commit-0.5b-v0.3 es un ajuste fino de Qwen2.5-Coder-0.5B-Instruct (494.032.768 parámetros) desarrollado por LucasBRT para una única tarea: escribir mensajes de commit de git en el estilo del repositorio, ejecutándose en local con un modelo pequeño. No es un modelo de propósito general, sino el componente de inferencia del CLI [smart-commit](https://github.com/Lucas-BRT/smart-commit), que le pasa el historial reciente, la lista de ficheros y el diff, y espera una respuesta en formato Conventional Commits cuando el repositorio lo usa.
+pionus-0.5b-v0.3 es un modelo de lenguaje especializado en la generación automática de mensajes de commit de Git, desarrollado por LucasBRT como parte del proyecto pionus, una herramienta de línea de comandos que redacta mensajes de commit imitando el estilo del repositorio mediante un modelo pequeño ejecutado en local. El modelo parte de Qwen2.5-Coder-0.5B-Instruct y se ha afinado en dos etapas: un ajuste supervisado (SFT) seguido de un paso de optimización por preferencias directas (DPO) sobre muestras generadas por el propio modelo.
 
-La versión 0.3 parte del adaptador SFT de la v0.1 y añade un paso de DPO sobre muestras generadas por el propio modelo: 5.500 commits del split de entrenamiento de CommitChronicle, seis respuestas muestreadas por commit y un conjunto de comprobaciones automáticas que etiqueta como preferidas las que no copian un asunto reciente, no inventan detalles ausentes del diff, no usan scopes desconocidos y aciertan el tipo real del commit. El resultado según la evaluación del autor: la tasa de contenido no fundamentado en el diff cae de 0,116 a 0,008 y la proporción de primeras respuestas usables sube a 0,996, mientras que la precisión del tipo de commit no mejora de forma significativa (0,648 a 0,668, p = 0,332).
+La versión 0.3 es experimental y se centra en corregir defectos concretos detectados en la versión 0.1: copiar asuntos recientes, mencionar detalles que no aparecen en el diff, emitir respuestas vacías, usar ámbitos (scopes) que el repositorio nunca ha empleado o tipos de commit distintos al real. El entrenamiento DPO marca con comprobaciones automáticas las respuestas que superan todos los filtros y entrena al modelo para preferirlas.
 
-Es relevante ahora porque demuestra una receta de alineamiento barata (DPO con verificadores programáticos, sin anotadores humanos) aplicada a un modelo de 0,5B que cabe en 398 MB en Q4_K_M y corre en CPU. El modelo sigue marcado como experimental por el propio autor y solo está entrenado y evaluado en inglés y sobre el prompt exacto de smart-commit.
+Con 494 millones de parámetros y un único archivo cuantizado Q4_K_M de 398 MB, el modelo está pensado para ejecutarse en CPU o GPU Vulkan vía llama.cpp, sin necesidad de infraestructura dedicada. Su relevancia radica en demostrar que un modelo de menos de 0,5B puede sustituir a un modelo generalista en una tarea estrecha y bien delimitada, reduciendo drásticamente las respuestas no fundamentadas y los fallos de formato.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), ajustado desde Qwen2.5-Coder-0.5B-Instruct |
+| Arquitectura | Transformer decoder-only (Qwen2), afinado con LoRA SFT + DPO |
 | Parámetros totales | 494.032.768 |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | No indicada en la model card; el modelo base Qwen2.5-Coder-0.5B-Instruct declara 32.768 tokens |
-| Tipos de cuantización | bf16 (safetensors) y GGUF Q4_K_M (398 MB) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (model.safetensors, bf16) y GGUF (smart-commit-0.5b-v0.3-q4_k_m.gguf) |
-| Modelo base | Qwen/Qwen2.5-Coder-0.5B-Instruct |
-| Dataset de entrenamiento | JetBrains-Research/commit-chronicle, revisión 5fd076e |
-| Tamaño del repositorio | 1,5 GB (incluye pesos, GGUF y artefactos de entrenamiento) |
-| Fecha de publicación | 2026-10-26 (según Hugging Face) |
-| Descargas / likes | 0 / 0 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q4_K_M (GGUF); pesos mergeados en bf16 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (bf16), GGUF (Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de la familia Qwen2 con 494M de parámetros, sin mezcla de expertos ni mecanismos híbridos. El ajuste se hizo con LoRA en dos etapas encadenadas, cuyos adaptadores se publican en el directorio `training/` del repositorio. La primera etapa corresponde al adaptador SFT de smart-commit-0.5b-v0.1. La segunda es un DPO sobre pares generados por el propio modelo: para cada uno de los 5.500 commits se muestrearon seis respuestas con temperatura 0,7 y semillas fijas, y un conjunto de verificadores programáticos marcó las que copiaban un asunto reciente del historial, nombraban un detalle ausente del diff, no decían nada, usaban un scope que el repositorio nunca había empleado o un tipo distinto al del commit real. El modelo se entrena para preferir la respuesta que pasa todas las comprobaciones.
+El modelo hereda la arquitectura Qwen2 del checkpoint base Qwen2.5-Coder-0.5B-Instruct, un transformer decoder-only de 494 millones de parámetros. Sobre esa base se aplicó primero un adaptador LoRA de ajuste supervisado (el mismo que empleó la versión 0.1) y después un segundo adaptador LoRA entrenado con DPO. Ambos adaptadores, junto con el registro de la ejecución (`run.json`) y el log del entrenamiento, se distribuyen en el directorio `training/` del repositorio.
 
-Los datos provienen de CommitChronicle (revisión `5fd076e`): 5.500 commits del split de train que no se usaron en v0.1 ni pertenecen a los repositorios de evaluación, repartidos en 4.500 commits de 680 repositorios que siguen Conventional Commits (máximo 8 por repositorio) y 1.000 de repositorios jóvenes, más commits de estilo libre. El prompt de entrenamiento es el de smart-commit con `--rules full`, byte a byte, lo que significa que el modelo está especializado en ese formato concreto de entrada y no en mensajes de commit genéricos. No se documenta el número total de tokens de entrenamiento ni el uso de RLHF con anotadores humanos.
+La etapa DPO utiliza 5.500 commits del split de entrenamiento de CommitChronicle (revisión `5fd076e`), ninguno de ellos visto por la versión 0.1 ni perteneciente a los repositorios de evaluación. De ellos, 4.500 proceden de 680 repositorios que siguen Conventional Commits (máximo 8 por repositorio) y 1.000 de repositorios jóvenes. Para cada commit el modelo genera seis respuestas con temperatura 0,7 y semillas fijas, y un conjunto de comprobaciones marca como no preferidas las que copian un asunto reciente, nombran un detalle ausente del diff, no dicen nada, usan un scope inexistente en el repositorio o un tipo distinto al del commit real. El entrenamiento se realiza con el prompt exacto de pionus y el conjunto completo de reglas (`--rules full`).
 
 ## Capacidades
 
-- Generación de mensajes de commit de git en formato Conventional Commits (`type(scope): descripción`) a partir de diff, rutas e historial.
-- Adaptación al estilo del repositorio: usa el historial reciente para imitar tipos y scopes ya existentes (tasa de scope conocido de 0,840 en eval-v1).
-- Emisión de mensajes de estilo libre cuando el repositorio no sigue Conventional Commits (first_try de 0,996 en el subconjunto free de eval-v1).
-- Grounding estricto sobre el diff: solo el 0,008 de las respuestas Conventional de eval-v1 contiene palabras de contenido que no aparezcan en el diff, las rutas o el historial.
-- Modo de razonamiento o tool calling: no disponible; el modelo no declara soporte de function calling ni de agentes.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Multilingüismo: no disponible; solo inglés, tanto en entrenamiento como en evaluación.
+- Generación de mensajes de commit de Git en formato Conventional Commits y en estilo libre, condicionada al diff, las rutas de archivo y el historial de asuntos del repositorio.
+- Adaptación al estilo del repositorio: reutiliza tipos y scopes ya presentes en el historial y evita inventar ámbitos nuevos.
+- Fundamentación estricta en el diff: el paso DPO reduce a 0,082 la proporción de palabras de la respuesta que no aparecen en el historial, las rutas ni el diff (frente a 0,151 en v0.1).
+- Generación en una sola pasada con decodificación greedy, pensada para baja latencia en local.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés.
+- Capacidades especiales: no dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- **Generación de mensajes de commit en local con smart-commit**: el flujo documentado descarga el GGUF Q4_K_M (398 MB) y lo pasa al CLI mediante `SMART_COMMIT_GGUF`. Es el caso de uso para el que fue entrenado, con el prompt exacto y las reglas completas.
-- **Automatización en hooks de pre-commit o alias de git**: con una tasa de primera respuesta usable de 0,996 sobre commits Conventional en eval-v1 y una tasa de fallback de 0,004, el mensaje se genera sin reintentos en la práctica totalidad de los casos, lo que permite integrarlo en un hook sin bloquear el commit.
-- **Estandarización de Conventional Commits en equipos con historial irregular**: el modelo aprende los tipos y scopes que ya usa el repositorio a partir del historial inyectado en el prompt, de modo que puede empujar hacia el formato existente sin una guía manual de estilos.
-- **Entornos sin GPU o aislados (air-gapped)**: al ejecutarse en CPU mediante llama.cpp, encaja en estaciones de trabajo sin acelerador y en máquinas sin salida a internet, donde no es viable llamar a una API externa de generación de mensajes.
-- **Auditoría de contenido inventado en mensajes generados**: la métrica de no fundamentado (0,008) y la proporción de palabras no respaldadas por el contexto (0,082 frente a 0,151 de v0.1 y 0,327 de los commits reales) lo hacen adecuado en flujos donde un mensaje que inventa cambios es peor que un mensaje escueto.
-- **Base para nuevas iteraciones de DPO con verificadores propios**: los adaptadores SFT y DPO, el `run.json` y el log del entrenamiento están publicados en `training/`, de modo que un equipo puede reproducir la receta y sustituir los verificadores por los de su propia política de commits.
-- **Generación de mensajes en repositorios jóvenes**: en repositorios con 1 a 5 asuntos previos (eval-short), mantiene una tasa de fallback de 0,021 y un type_match de 0,596 con la lista de ficheros anotada, útil cuando aún no hay historial suficiente paraFew-shot manual.
+- **Automatización de commits en el flujo de trabajo diario**: el modelo se integra en la CLI pionus y genera el mensaje a partir del diff preparado, con una tasa de primer intento válido del 99,6 % en commits de estilo Conventional, lo que elimina prácticamente la intervención manual.
+- **Estandarización de Conventional Commits en equipos**: al reutilizar únicamente tipos y scopes ya usados en el repositorio (scope_known de 0,840), ayuda a mantener la coherencia del historial sin necesidad de revisar cada mensaje.
+- **Repositorios jóvenes o con poco historial**: en repositorios con entre 1 y 5 asuntos previos mantiene una tasa de fallback del 2,1 % en commits Conventional y del 0 % en estilo libre, lo que lo hace útil en proyectos recién creados donde otros modelos carecen de contexto de estilo.
+- **Entornos sin GPU dedicada**: con un GGUF Q4_K_M de 398 MB y ejecución sobre CPU o GPU Vulkan mediante llama.cpp, puede desplegarse en máquinas de desarrollo modestas o en contenedores de CI sin acelerador.
+- **Integración en pipelines de CI/CD**: al ser determinista con decodificación greedy y consumir pocos recursos, puede invocarse como paso previo al push para normalizar mensajes generados por herramientas automáticas o por desarrolladores.
+- **Generación de mensajes en repositorios que no siguen Conventional Commits**: con una tasa de primer intento del 99,6 % en estilo libre, cubre proyectos con convenciones propias o sin convención formal.
+- **Sustitución de modelos generalistas en tareas de commit**: como control, el modelo base re-cuantizado cae al fallback en el 63-65 % de los casos, frente al 0,4 % de pionus-0.5b-v0.3, lo que justifica su uso específico frente a un modelo generalista del mismo tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica una evaluación específica de la tarea, `eval-v1`: 500 commits del split de test de CommitChronicle de repositorios nunca vistos en entrenamiento (250 Conventional y 250 de estilo libre), decodificación greedy, Vulkan, smart-commit 0.9.0 más los commits de `main` hasta `236d51f`, con los mismos reintentos y fallback que en producción. La columna sin sufijo corresponde a los 250 commits Conventional de eval-v1.
+Evaluación eval-v1: 500 commits del split de test de CommitChronicle (250 Conventional y 250 libres); eval-short: 197 commits de repositorios jóvenes. Decodificación greedy sobre Vulkan con pionus 0.9.0. Columnas sin sufijo: los 250 commits Conventional de eval-v1.
 
-Con la lista de ficheros por defecto de smart-commit (anotada), la que recibe un usuario:
-
-| Modelo | type_match | type_macro_f1 | scope_known | first_try | fallback | ungrounded | word_f1 | first_try (free) | word_f1 (free) | type_match (young) | fallback (young) | fallback (young, free) |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Qwen2.5-Coder-0.5B-Instruct, recuantizado igual (control) | 0.352 | 0.200 | 0.876 | 0.336 | 0.632 | 0.296 | 0.159 | 0.692 | 0.102 | 0.468 | 0.894 | 0.340 |
-| smart-commit-0.5b-v0.1 | 0.648 | 0.546 | 0.852 | 0.960 | 0.028 | 0.116 | 0.342 | 0.928 | 0.234 | 0.638 | 0.085 | 0.080 |
-| **smart-commit-0.5b-v0.3** | 0.668 | 0.552 | 0.840 | 0.996 | 0.004 | 0.008 | 0.354 | 0.996 | 0.250 | 0.596 | 0.021 | 0.000 |
-
-Con la lista de ficheros simple, la usada en entrenamiento:
+Con la lista de archivos anotada por defecto de pionus:
 
 | Modelo | type_match | type_macro_f1 | scope_known | first_try | fallback | ungrounded | word_f1 | first_try (free) | word_f1 (free) | type_match (young) | fallback (young) | fallback (young, free) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Qwen2.5-Coder-0.5B-Instruct, recuantizado igual (control) | 0.344 | 0.201 | 0.884 | 0.312 | 0.648 | 0.308 | 0.161 | 0.696 | 0.101 | 0.426 | 0.872 | 0.333 |
-| smart-commit-0.5b-v0.1 | 0.628 | 0.531 | 0.844 | 0.960 | 0.028 | 0.104 | 0.333 | 0.916 | 0.230 | 0.617 | 0.085 | 0.100 |
-| **smart-commit-0.5b-v0.3** | 0.664 | 0.557 | 0.840 | 0.996 | 0.004 | 0.008 | 0.347 | 0.996 | 0.247 | 0.617 | 0.021 | 0.000 |
+| Qwen2.5-Coder-0.5B-Instruct re-cuantizado (control) | 0,352 | 0,200 | 0,876 | 0,336 | 0,632 | 0,296 | 0,159 | 0,692 | 0,102 | 0,468 | 0,894 | 0,340 |
+| pionus-0.5b-v0.1 | 0,648 | 0,546 | 0,852 | 0,960 | 0,028 | 0,116 | 0,342 | 0,928 | 0,234 | 0,638 | 0,085 | 0,080 |
+| **pionus-0.5b-v0.3** | 0,668 | 0,552 | 0,840 | 0,996 | 0,004 | 0,008 | 0,354 | 0,996 | 0,250 | 0,596 | 0,021 | 0,000 |
 
-Comparación pareada frente a v0.1 sobre los 250 commits Conventional de eval-v1 con la lista anotada: `ungrounded` +1/−28 (p = 0.0), `first_copied` +0/−9 (p = 0.004), `first_try` +9/−0 (p = 0.004), `fallback` +0/−6 (p = 0.031); `type_match` +11/−6 (p = 0.332) y `scope_known` +2/−5 (p = 0.453), ninguno significativo. Definiciones: `type_match` es coincidir con el tipo Conventional del commit real; `scope_known`, no usar scope o usar uno ya presente en el repositorio; `first_try`, que la primera respuesta sea usable; `fallback`, que ninguna lo sea y smart-commit escriba el mensaje a partir de la lista de ficheros; `ungrounded`, que ninguna palabra de contenido de la descripción aparezca en el diff, las rutas o el historial; `word_f1`, el solapamiento léxico con el asunto real.
+Con la lista de archivos simple (la usada en entrenamiento):
+
+| Modelo | type_match | type_macro_f1 | scope_known | first_try | fallback | ungrounded | word_f1 | first_try (free) | word_f1 (free) | type_match (young) | fallback (young) | fallback (young, free) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Qwen2.5-Coder-0.5B-Instruct re-cuantizado (control) | 0,344 | 0,201 | 0,884 | 0,312 | 0,648 | 0,308 | 0,161 | 0,696 | 0,101 | 0,426 | 0,872 | 0,333 |
+| pionus-0.5b-v0.1 | 0,628 | 0,531 | 0,844 | 0,960 | 0,028 | 0,104 | 0,333 | 0,916 | 0,230 | 0,617 | 0,085 | 0,100 |
+| **pionus-0.5b-v0.3** | 0,664 | 0,557 | 0,840 | 0,996 | 0,004 | 0,008 | 0,347 | 0,996 | 0,247 | 0,617 | 0,021 | 0,000 |
+
+Comparación pareada frente a v0.1 en los 250 commits Conventional de eval-v1 con lista anotada: `ungrounded` +1/−28 (p = 0,0), `first_copied` +0/−9 (p = 0,004), `first_try` +9/−0 (p = 0,004), `fallback` +0/−6 (p = 0,031); `type_match` +11/−6 (p = 0,332) y `scope_known` +2/−5 (p = 0,453), ambos no significativos. Proporción de palabras no presentes en historial, rutas ni diff: 0,082 en v0.3, 0,151 en v0.1 y 0,327 en los commits reales.
 
 ## Requisitos de hardware
 
-- VRAM en bf16: aproximadamente 1,0 GB solo para los pesos (494M × 2 bytes), más caché KV; presupuesto realista de 1,5 a 2 GB según longitud de contexto.
-- VRAM en Q4_K_M: 398 MB de fichero; el proceso completo de llama.cpp se mantiene por debajo de 1 GB en uso típico.
-- GPU recomendadas: ninguna en particular; el autor solo valida los dispositivos llama.cpp de smart-commit, es decir CPU y GPUs vía Vulkan. Cualquier GPU con 2 GB o más (integrada incluida, por Vulkan) es suficiente; A100, H100 o RTX 4090 están sobredimensionadas para este modelo.
-- Cabe en GPU de consumo: sí, en la práctica totalidad, y también en CPU sin acelerador.
-- Opciones de despliegue: llama.cpp mediante smart-commit (ruta soportada y evaluada); el GGUF es compatible con el ecosistema llama.cpp en general. El export a OpenVINO no está validado para este modelo. No se documenta despliegue con vLLM ni TGI, aunque los pesos safetensors en bf16 están publicados.
-- Latencia y throughput: no disponibles en la información proporcionada. La evaluación se hizo con decodificación greedy sobre Vulkan, pero no se publican tiempos por petición ni tokens por segundo.
+- VRAM estimada para inferencia: inferior a 1 GB con cuantización Q4_K_M (archivo de 398 MB más overhead de contexto); aproximadamente 1 GB en bf16 con safetensors.
+- GPU recomendadas: no requiere GPU dedicada; funciona en CPU y en GPU con soporte Vulkan (por ejemplo, iGPU Intel/AMD o GPUs discretas con driver Vulkan).
+- Cabe en cualquier GPU consumer; también en Raspberry Pi y contenedores sin acelerador.
+- Opciones de despliegue: llama.cpp (vía pionus con `PIONUS_GGUF`), GGUF compatible con Ollama y otros frontends de llama.cpp. La exportación a OpenVINO no está validada para este modelo.
+- Latencia y throughput: no se han publicado cifras absolutas; la evaluación se realizó con decodificación greedy sobre Vulkan y el modelo se describe como apto para ejecución local de baja latencia en la CLI.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | type_match (eval-v1, lista anotada) | first_try | ungrounded | Formatos |
-|---|---|---|---|---|---|---|---|
-| smart-commit-0.5b-v0.3 | 494M | No indicado (base: 32.768) | Apache-2.0 | 0.668 | 0.996 | 0.008 | safetensors, GGUF |
-| smart-commit-0.5b-v0.1 | 494M | No indicado (base: 32.768) | Apache-2.0 | 0.648 | 0.960 | 0.116 | No disponible en la información |
-| Qwen2.5-Coder-0.5B-Instruct (control recuantizado) | 494M | 32.768 | Apache-2.0 | 0.352 | 0.336 | 0.296 | safetensors, GGUF |
-| Línea smart-commit 0.2 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pionus-0.5b-v0.3 | 494 M | no disponible | Commit messages (SFT + DPO) | Apache 2.0 | HF (safetensors + GGUF) |
+| pionus-0.5b-v0.1 | 494 M | no disponible | Commit messages (SFT) | Apache 2.0 | HF |
+| Qwen2.5-Coder-0.5B-Instruct | 494 M | no disponible | Modelo generalista de código | Apache 2.0 | HF |
 
-La línea 0.2 del mismo autor se entrenó sin las reglas en el prompt y no se ha evaluado con estas métricas en la información disponible. No se dispone de datos de otros modelos orientados a mensajes de commit para una comparación externa.
+Frente a v0.1, la versión 0.3 reduce `ungrounded` de 0,116 a 0,008 y `fallback` de 0,028 a 0,004, con mejoras significativas en `first_try`, `first_copied` y `fallback`. Frente al modelo base re-cuantizado, la diferencia es sustancial: el control cae al fallback en más del 63 % de los casos y presenta un `ungrounded` de 0,296-0,308.
 
 ## Limitaciones y advertencias
 
-- **Modelo de una sola tarea**: está entrenado con el prompt exacto de smart-commit con `--rules full`; fuera de ese formato de entrada su comportamiento no está evaluado y no debe usarse como modelo de chat o de generación de código general.
-- **Solo inglés**: el modelo declara `language: en` y toda la evaluación es en inglés; no hay datos de rendimiento en castellano ni en otros idiomas.
-- **Versión experimental**: el autor indica explícitamente que la 0.3 sigue siendo experimental mientras cambia la receta de entrenamiento; no hay garantía de estabilidad entre versiones.
-- **Tipo de commit poco fiable**: type_match de 0,668 y type_macro_f1 de 0,552 sobre commits Conventional; el propio DPO no mejora el tipo de forma significativa (p = 0.332). Dos de cada tres commits reciben el tipo correcto, con especial debilidad en clases poco frecuentes.
-- **Scopes no siempre válidos**: scope_known de 0,840 implica que en torno al 16 % de las respuestas usan un scope que el repositorio no había empleado.
-- **Contenido genérico**: word_f1 de 0,354 frente al asunto real; el autor lo resume en que el modelo dice lo que el diff dice más que lo que el cambio significa. Para changelogs o descripciones de intención no es adecuado.
-- **Degradación en repositorios jóvenes**: con 1 a 5 asuntos previos, type_match baja a 0,596 (lista anotada) frente a 0,638 de v0.1, aunque el fallback se reduce a 0,021.
-- **Dependencia de la versión del CLI**: las métricas se midieron con smart-commit 0.9.0 más los commits de `main` hasta `236d51f`; cambios en el prompt o en los reintentos alteran los resultados.
-- **Sesgo de dominio**: entrenado con CommitChronicle, compuesto por repositorios públicos de GitHub en inglés con predominio de Conventional Commits; los estilos de commit corporativos o no convencionales están infrarrepresentados.
-- **Licencia**: los pesos son Apache-2.0 y permiten uso comercial; la licencia del dataset CommitChronicle no se detalla en la información disponible y conviene verificarla antes de un uso comercial intensivo.
-- **Riesgo de alucinación**: mitigado pero no nulo; ungrounded de 0,008 en eval-v1 no equivale a cero, y el modelo puede omitir información relevante del diff al ceñirse a lo literal.
+- Modelo experimental: el autor indica que la receta de entrenamiento sigue cambiando y que la línea 0.2 difiere de la 0.1 y la 0.3 (la 0.2 se entrenó sin las reglas en el prompt).
+- El tipo de commit no mejora de forma significativa: `type_match` pasa de 0,648 a 0,668 con lista anotada, con p = 0,332 en la comparación pareada; el paso DPO apenas incide en esta métrica.
+- El modelo describe lo que el diff dice, no lo que el cambio significa: prioriza la fundamentación literal sobre la interpretación semántica, lo que puede producir mensajes correctos pero poco expresivos.
+- Solo inglés: no se ha entrenado ni evaluado en otros idiomas.
+- Riesgo de alucinación reducido pero no nulo: la proporción de palabras no fundamentadas es de 0,082, no cero.
+- Dependencia del prompt de pionus: el entrenamiento usa el prompt exacto de la herramienta con `--rules full`; otros formatos de prompt pueden degradar el rendimiento.
+- La exportación a OpenVINO no está validada para este modelo.
+- No se han publicado datos sobre sesgos demográficos o de otro tipo, ni sobre comportamiento fuera de la tarea de generación de commits.
+- Uso comercial permitido por la licencia Apache 2.0, sin restricciones adicionales conocidas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.3
-- Versión anterior v0.1: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/pionus-0.5b-v0.3
+- Versión anterior: https://huggingface.co/LucasBRT/pionus-0.5b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- Repositorio del CLI smart-commit: https://github.com/Lucas-BRT/smart-commit
-- Documentación de la evaluación y del entrenamiento: https://github.com/Lucas-BRT/smart-commit/blob/main/training/README.md
+- Repositorio de pionus: https://github.com/Lucas-BRT/pionus
+- Documentación de evaluación: https://github.com/Lucas-BRT/pionus/blob/main/training/README.md
 - Dataset CommitChronicle: https://huggingface.co/datasets/JetBrains-Research/commit-chronicle

@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 39,
-  "downloads_30d": 894,
+  "downloads_30d": 802,
   "trending_score": 0,
   "parameters": 4578061568,
   "parameters_human": "4.58B",
@@ -48,31 +48,5 @@
   "renamed_to": "rockmatrix-ai/EdgeRock",
   "renamed_at": "2026-11-11T02:54:13.255Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Deep Learning in Stance Detection: A Survey - ACM Digital Library",
-      "url": "https://dl.acm.org/doi/10.1145/3744641",
-      "snippet": "Table 4 summarizes deep learning models from surveyed articles, including RNNs ... [74], a method for customizing large AI models by freezing the model's ..."
-    },
-    {
-      "title": "Conference Handbook - ACL 2023",
-      "url": "https://2023.aclweb.org/downloads/acl2023-handbook-v3.pdf",
-      "snippet": "09.07.2023 ... ... Model efficiency, Information Extraction ... Ai, Xi Ai, Ankit Aich, Annalena Aicher, Laura Aina, Salah Aït-Mokhtar, Akiko Aizawa,. Alham ..."
-    },
-    {
-      "title": "Advances in Signal Processing Techniques | PDF - Scribd",
-      "url": "https://www.scribd.com/document/690132092/Table-of-Contents",
-      "snippet": "... , Matthijs Douze, Meta AI, France; Teddy Furon, Univ. Rennes, Inria, CNRS, IRISA, France. IFS-8.3: SPEECH PATTERN BASED BLACK-BOX MODEL WATERMARKING FOR ..."
-    },
-    {
-      "title": "Deep Learning in Stance Detection: A Survey - ACM Digital Library",
-      "url": "https://dl.acm.org/doi/pdf/10.1145/3744641",
-      "snippet": "Table 4 summarizes deep learning models ... [74], a method for cus- tomizing large AI models by freezing the model's original weights and training small, low-rank."
-    },
-    {
-      "title": "GPT3.5 - ACL Anthology",
-      "url": "https://aclanthology.org/2024.findings-eacl.139.pdf",
-      "snippet": "22.03.2024 ... AI, (Gunning, 2019)) available. ... Summary of · ChatGPT/GPT-4 Research and Perspective Towards · the Future of Large Language Models."
-    }
-  ]
+  "sources": []
 }

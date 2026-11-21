@@ -2,50 +2,51 @@
 
 ## Resumen
 
-napoliAI-7B es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct especializado en el dialecto napolitano, desarrollado por el usuario sbortetto y distribuido en formato GGUF cuantizado. El modelo parte de los pesos de `unsloth/Qwen2.5-7B-Instruct` (7.615.616.512 parámetros) y aplica un entrenamiento LoRA con rango 16 y alpha 32 mediante la librería Unsloth, con el objetivo de capturar el registro coloquial, la ironía y la expresividad del napolitano hablado.
+NapoliAI-7B es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct de Alibaba, desarrollado por el usuario sbortetto, especializado en el dialecto napolitano. El modelo parte de la arquitectura transformer densa de Qwen2.5 y se distribuye exclusivamente en formato GGUF cuantizado para inferencia local. Su objetivo no es el rendimiento generalista, sino la coherencia conversacional en napolitano, incluyendo un registro informal y coloquial deliberado.
 
-El modelo se publica principalmente como artefacto de inferencia local: el repositorio incluye una versión Q4_K_M de aproximadamente 5,5 GB y una versión F16 de unos 15 GB, lo que permite ejecutarlo en CPU moderna o en GPU de consumo. La licencia es Apache 2.0, heredada del modelo base, y los idiomas declarados son napolitano (principal) e italiano.
+El modelo resuelve un problema de nicho: la escasez de modelos que mantengan el dialecto napolitano de forma consistente en conversación multi-turno. La model card subraya que el registro incluye vulgarismos y expresiones malsonantes como elección estilística para preservar la autenticidad lingüística, por lo que no es apto para contextos formales o profesionales.
 
-Su relevancia es acotada pero clara: cubre un nicho lingüístico poco representado en los LLM comerciales, el napolitano, y lo hace sobre una base instruct de calidad contrastada como Qwen2.5-7B. No obstante, el autor advierte explícitamente de que el modelo emplea un registro informal y ocasionalmente soez como decisión estilística, y desaconseja su uso para consejos médicos, legales o financieros.
+Con 7.615.616.512 parámetros totales y una licencia Apache 2.0 heredada del modelo base, NapoliAI-7B es relevante para desarrolladores que quieran integrar un chatbot dialectal en aplicaciones culturales, educativas o de entretenimiento. La fecha de creación indicada en Hugging Face es 2026-10-30, dato que conviene tratar con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2.5), ajuste fino LoRA sobre Qwen2.5-7B-Instruct |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-7B-Instruct) |
 | Parametros totales | 7.615.616.512 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-7B-Instruct, no confirmada por el autor) |
-| Tipos de cuantizacion | Q4_K_M (4 bits) y F16 |
-| Idiomas soportados | nap (napolitano, principal), it (italiano) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-7B-Instruct, no confirmada) |
+| Tipos de cuantizacion | Q4_K_M (principal), Q6, Q8 |
+| Idiomas soportados | nap (napolitano), it (italiano) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_K_M ~5,5 GB; F16 ~15 GB) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino por LoRA (Low-Rank Adaptation) sobre `unsloth/Qwen2.5-7B-Instruct`, ejecutado con la herramienta Unsloth. Los hiperparámetros declarados son rango r=16 y alpha=32. No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO posteriores al ajuste supervisado. La arquitectura subyacente es la de Qwen2.5-7B-Instruct, un transformer decoder-only denso de 7,6 mil millones de parámetros.
+El modelo es un ajuste fino del checkpoint unsloth/Qwen2.5-7B-Instruct, que emplea la arquitectura transformer densa de Qwen2.5 con atención causal estándar. No se documentan en la información disponible innovaciones arquitectónicas propias: el trabajo del autor se centra en el ajuste conversacional para el dialecto napolitano, no en cambios estructurales.
 
-La innovación principal no es arquitectónica sino de dominio: el ajuste persigue reproducir el registro coloquial napolitano, incluyendo expresiones malsonantes, como rasgo estilístico deliberado. Los pesos se distribuyen fusionados en GGUF, con la opción de cargar los adaptadores LoRA originales por separado en LM Studio si se prefiere no usar la versión fusionada. No se documentan técnicas como decodificación especulativa ni atención lineal.
+No se especifican en la model card el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o SFT. Tampoco se detalla la metodología de fine-tuning (LoRA, QLoRA, full fine-tuning). La model card únicamente indica que el modelo fue entrenado para responder siempre en napolitano, con un registro espontáneo, directo y ligeramente vulgar, y que el autor acepta sugerencias de frases en napolitano para futuras iteraciones de entrenamiento. Toda la información sobre el proceso de entrenamiento más allá de esto debe considerarse no disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional en napolitano e italiano, con registro informal, amigable y ocasionalmente soez por diseño.
-- Comprensión y respuesta a preguntas sobre cultura napolitana, gastronomía, personajes históricos y deportivos (los ejemplos de la model card incluyen la pizza y Maradona).
-- Conversación multi-turno con plantilla ChatML / Qwen, compatible con LM Studio y Ollama.
-- Capacidades heredadas del modelo base Qwen2.5-7B-Instruct en razonamiento, código y matemáticas, aunque no se documenta su preservación tras el ajuste.
-- Soporte de tool calling y function calling: no confirmado en la información proporcionada para esta versión ajustada.
-- Capacidades de agente y razonamiento multi-paso: no documentadas para esta versión.
-- Capacidades multimodales (visión, audio): no disponibles.
+- Generación de texto conversacional en dialecto napolitano, con registro informal y coloquial.
+- Comprensión y respuesta en italiano, heredada del modelo base Qwen2.5-7B-Instruct.
+- Conversación multi-turno con mantenimiento del dialecto si se usa el system prompt recomendado.
+- Capacidades generales del modelo base (razonamiento, código, matemáticas) potencialmente degradadas por el ajuste fino dialectal; no confirmadas en la información disponible.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multimodales (visión, audio): no disponibles; el modelo es solo texto.
+- Modo thinking explícito: no disponible.
 
 ## Casos de uso
 
-- **Chatbot de temática napolitana para ocio o divulgación cultural**: el modelo puede mantener conversaciones multi-turno en napolitano con un tono auténtico, adecuado para webs de turismo, comunidades locales o aplicaciones de entretenimiento.
-- **Prototipos de asistentes dialectales en local**: gracias a la cuantización Q4_K_M (~5,5 GB) se puede desplegar en un portátil con CPU moderna o GPU de consumo, sin depender de servicios en la nube.
-- **Generación de contenido creativo en napolitano**: diálogos, guiones breves, textos humorísticos o publicaciones en redes que requieran registro coloquial napolitano, donde los modelos generalistas suelen derivar al italiano estándar.
-- **Investigación en NLP de variedades lingüísticas de bajos recursos**: sirve como punto de partida o línea base para experimentos de evaluación de dialectos italianos, siempre con las cautelas de un ajuste fino ligero.
-- **Demostraciones educativas de fine-tuning LoRA**: el repositorio documenta el método (Unsloth, r=16, alpha=32) y constituye un ejemplo reproducible de adaptación de un modelo instruct a un dominio concreto.
-- **Integración en pipelines locales con Ollama o LM Studio**: el autor proporciona un `Modelfile` y una plantilla ChatML listos para usar, lo que facilita su incorporación a flujos de trabajo de desarrollo en escritorio.
-- **Traducción informal italiano-napolitano en contextos lúdicos**: útil para subtitulado o adaptación de contenido de entretenimiento, no recomendado para traducción profesional.
+- Chatbot cultural y de entretenimiento: el modelo puede gestionar conversaciones informales en napolitano con un tono auténtico, adecuado para aplicaciones lúdicas o divulgativas sobre la cultura napolitana.
+- Preservación y divulgación del dialecto: útil en proyectos educativos o de documentación lingüística que quieran mostrar el napolitano en uso conversacional, siempre con revisión humana por el registro vulgar.
+- Asistentes conversacionales temáticos: integrable en webs o apps de turismo local que quieran ofrecer una experiencia dialectal, con las advertencias de tono correspondientes.
+- Generación de diálogos para ficción o guiones: puede servir como herramienta de ideación para escritores que necesiten reproducir habla napolitana coloquial, con posterior edición profesional.
+- Pruebas de robustez lingüística: útil para investigadores que estudien el comportamiento de LLMs en dialectos de bajos recursos y el sesgo de registro.
+- Demostraciones locales sin GPU: gracias a la cuantización Q4_K_M, puede ejecutarse en CPU modernas o portátiles mediante LM Studio u Ollama, lo que facilita talleres y demos presenciales.
+- Prototipado rápido de interfaces conversacionales: al ser compatible con endpoints y con Ollama, permite montar un servicio de prueba en pocas horas.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +54,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: Q4_K_M requiere aproximadamente 6-7 GB de VRAM para inferencia completa en GPU; la versión F16 necesita del orden de 16-18 GB.
-- **GPU recomendadas**: RTX 4090, RTX 3090, RTX 4080 o superiores para la versión F16; RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 para Q4_K_M.
-- **GPU de consumo**: sí, la versión Q4_K_M cabe en la mayoría de GPU con 8 GB o más de VRAM y funciona también en CPU moderna según el autor.
-- **Opciones de despliegue**: llama.cpp, Ollama (con el `Modelfile` proporcionado), LM Studio (preset ChatML o Qwen). No se documenta soporte explícito para vLLM o TGI en la información disponible.
-- **Latencia y throughput**: no disponibles en la información proporcionada.
+- VRAM estimada para Q4_K_M: aproximadamente 4,5-5,5 GB, según el tamaño típico de un modelo de 7B en esa cuantización.
+- VRAM estimada para Q8: aproximadamente 8-9 GB.
+- GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4090, A100 o H100 para mayor throughput; el modelo es pequeño y no requiere GPUs de datacenter.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 6 GB o más en Q4_K_M.
+- Ejecución en CPU: viable en CPU modernas y portátiles, según indica la model card.
+- Opciones de despliegue: LM Studio (recomendado por el autor), Ollama (con Modelfile y system prompt específicos), llama.cpp; vLLM y TGI no están confirmados para este GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| napoliAI-7B (este modelo) | 7,6 B | no disponible | nap, it | Apache 2.0 | GGUF |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | no disponible en esta ficha | multilingüe (incluye it) | Apache 2.0 | safetensors, GGUF |
-| Modelos generalistas italianos de ~7B | variable | variable | it, en | variable | variable |
+| NapoliAI-7B | 7,6B | no disponible | nap, it | Apache 2.0 | GGUF |
+| Qwen2.5-7B-Instruct (base) | 7,6B | no disponible en esta ficha | multilingüe | Apache 2.0 | safetensors, GGUF |
+| Modelos dialectales italianos (genericos) | variable | no disponible | it y dialectos | variable | variable |
 
-La comparación directa con otros ajustes dialectales italianos no está disponible en la información proporcionada. Frente a su base Qwen2.5-7B-Instruct, napoliAI-7B sacrifica cobertura multilingüe general a cambio de especialización en napolitano y un estilo marcadamente coloquial.
+La comparación directa con alternativas dialectales italianas no está disponible en la información proporcionada. El principal punto de referencia es el propio modelo base Qwen2.5-7B-Instruct, del que NapoliAI-7B hereda arquitectura y licencia, pero del que se diferencia por el ajuste fino dialectal y la distribución exclusiva en GGUF.
 
 ## Limitaciones y advertencias
 
-- **Registro soez deliberado**: el modelo emplea tacos y expresiones vulgares como parte de su estilo; no es apto para entornos profesionales, atención al cliente corporativa ni público infantil sin filtrado previo.
-- **Riesgo de alucinación**: al ser un ajuste fino sobre un modelo de 7B, puede inventar datos históricos, geográficos o culturales sobre Nápoles; conviene verificar cualquier afirmación factual.
-- **Sesgos**: no se documenta ningún análisis de sesgos; el entrenamiento centrado en un registro coloquial concreto puede reforzar estereotipos regionales.
-- **Cobertura lingüística limitada**: solo napolitano e italiano; el rendimiento en otros idiomas no está garantizado y probablemente degradado respecto al modelo base.
-- **Contexto no confirmado**: la longitud de contexto no se especifica en la información disponible; no debe asumirse la ventana de Qwen2.5 sin verificación empírica.
-- **Uso comercial**: la licencia Apache 2.0 permite uso comercial, pero el autor desaconseja explícitamente su uso para consejos médicos, legales o financieros.
-- **Madurez del proyecto**: 147 descargas y 1 like en el momento de la consulta; se trata de un proyecto personal sin validación externa ni benchmarks publicados.
-- **Formato GGUF únicamente**: no se ofrecen pesos en safetensors fusionados en el repositorio, lo que limita su uso en stacks que requieran ese formato.
+- El modelo no está perfeccionado según su propio autor y puede cometer errores.
+- Registro deliberadamente vulgar: incluye expresiones malsonantes como parte de la autenticidad estilística; no apto para entornos profesionales, infantiles o institucionales.
+- No debe usarse para consejos médicos, legales o financieros, tal como advierte la model card.
+- Riesgo de alucinación inherente a los LLM de 7B, no mitigado específicamente.
+- Cobertura lingüística limitada a napolitano e italiano; no se garantiza un buen comportamiento en castellano u otros idiomas.
+- El ajuste fino dialectal puede degradar capacidades generales del modelo base (razonamiento, código, matemáticas); no hay benchmarks que lo confirmen.
+- Para Ollama es obligatorio usar el system prompt recomendado; sin él, el comportamiento dialectal puede fallar.
+- La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede incluir lenguaje soez; conviene filtrar en producción.
+- El tamaño del repositorio (34,3 GB) incluye varias cuantizaciones; descargar solo el archivo necesario.
+- Las fechas de creación y actualización del repositorio (2026) resultan anómalas y deben verificarse antes de citarlas.
 
 ## Enlaces
 
-- [Hugging Face: sbortetto/NapoliAI-7B-GGUF](https://huggingface.co/sbortetto/NapoliAI-7B-GGUF)
-- [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
-- [LM Studio](https://lmstudio.ai/)
-- [Ollama](https://ollama.com/)
-- [Unsloth](https://github.com/unslothai/unsloth)
+- Hugging Face: https://huggingface.co/sbortetto/NapoliAI-7B-GGUF
+- Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- LM Studio: https://lmstudio.ai/
+- Ollama: https://ollama.com/
+- Discord del autor: https://discord.com/users/1356965681081356470
+- Apoyo al proyecto: https://ko-fi.com/sbortetto

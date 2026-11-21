@@ -2,68 +2,66 @@
 
 ## Resumen
 
-gemma-4-E2B-it-agent-posttrain-v1.4 es un ajuste fino del modelo instruct google/gemma-4-E2B-it, publicado por el usuario XcaliburMoon, diseñado para una tarea muy concreta: emitir exactamente un objeto JSON con una llamada a herramienta por turno contra una superficie fija de diez herramientas simuladas (lectura y escritura de ficheros, listado, borrado, búsqueda, ejecución de comandos, SQL, creación de directorios y finalización). El runtime parsea la acción, ejecuta la herramienta y devuelve el resultado como observación, de modo que el modelo funciona como la pieza de decisión de un bucle de agente cerrado.
+`gemma-4-E2B-it-agent-posttrain-v1.4` es un ajuste fino (fine-tuning) del modelo instructivo `google/gemma-4-E2B-it` de Google, desarrollado por el usuario XcaliburMoon. No es un modelo de propósito general: es un artefacto de investigación post-entrenado específicamente para emitir una única llamada a herramienta (tool call) en formato JSON legible por máquina por turno, contra una superficie fija de diez herramientas simuladas. El runtime parsea el objeto de acción y devuelve el resultado de la herramienta como observación en el siguiente turno.
 
-El checkpoint tiene 4.628.569.635 parámetros según los safetensors publicados y el repositorio ocupa 41,6 GB, con pesos en bf16, un adaptador LoRA, siete cuantizaciones GGUF y un registro cronológico de entrenamiento. Se entrenó con 4-bit QLoRA sobre 10.000 registros supervisados durante 2 épocas (626 pasos, pérdida final 0,8449) en cuatro NVIDIA A40. La model card lo describe explícitamente como artefacto de investigación para un único harness, no como modelo de chat general.
+El modelo parte de una arquitectura Gemma 4 con 4.628.569.635 parámetros totales (según los pesos en safetensors), y se distribuye en tres formatos: pesos completos en bf16 (`merged-bf16`, 10,21 GB), un adaptador LoRA (`adapter`, 96,7 MB) y seis cuantizaciones GGUF para llama.cpp (desde Q2_K de 2,98 GB hasta f16 de 9,27 GB). El entrenamiento se realizó con QLoRA de 4 bits sobre 10.000 registros supervisados, con una longitud de secuencia de 1312 tokens y dos épocas.
 
-Su relevancia es acotada pero instructiva: documenta con detalle inusual el proceso de post-entrenamiento, el log de eventos y una evaluación de holdout con desglose por herramienta, en la que solo el 48,5 % de las 200 filas reservadas producen una llamada con herramienta y argumentos correctos. Es útil como referencia metodológica y como banco de pruebas de harnesses de tool calling, no como componente listo para producción.
+Su relevancia es acotada pero clara: sirve como referencia reproducible de cómo un modelo pequeño puede especializarse en un contrato de tool calling estricto, con métricas de holdout publicadas y desglosadas por herramienta. El autor es explícito al advertir que no debe usarse como modelo de chat general ni en entornos donde una respuesta no parseada pudiera ejecutarse.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la información proporcionada; modelo derivado de google/gemma-4-E2B-it |
-| Parámetros totales | 4.628.569.635 (≈4,63 B), según safetensors |
-| Parámetros activos | No disponible; la información no indica que sea un modelo MoE |
-| Longitud de contexto | No disponible; el ejemplo de despliegue de la model card usa `--ctx-size 4096`, pero es un parámetro de runtime, no la ventana del modelo |
-| Tipos de cuantización | GGUF: Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0, f16. Entrenamiento en QLoRA de 4 bits nf4 con doble cuantización |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | No disponible en los metadatos de Hugging Face; la model card indica que el derivado hereda los Gemma Terms of Use |
-| Formato de pesos | safetensors (`merged-bf16/model.safetensors`, 10,21 GB; `adapter/adapter_model.safetensors`, 96,7 MB) y GGUF (llama.cpp) |
-| Modelo base | google/gemma-4-E2B-it; entrenamiento continuado desde XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3 / v1.1 |
-| Tamaño del repositorio | 41,6 GB |
-| Versión y fecha | v1.4, publicada el 2026-10-26 |
+| Arquitectura | Transformer (familia Gemma 4), ajuste fino con QLoRA |
+| Parametros totales | 4.628.569.635 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de despliegue usa `--ctx-size 4096` |
+| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0, f16; pesos completos en bf16 |
+| Idiomas soportados | ingles (`en`) |
+| Licencia | Gemma Terms of Use (heredada del modelo base Google Gemma) |
+| Formato de pesos | safetensors (merged-bf16 y adaptador LoRA), GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base (número de capas, atención, cabezas o si incorpora innovaciones como atención lineal). Lo que sí se documenta es el procedimiento de post-entrenamiento: 4-bit QLoRA en nf4 con doble cuantización, continuando desde los pesos fusionados de v1.1, con rango r=16, alpha=32 y dropout de 0,05. El conjunto de datos son 10.000 registros supervisados, longitud de secuencia 1312, batch efectivo 8, 2 épocas, tasa de aprendizaje 0,0001 y 626 pasos, con pérdida final de 0,8449 sobre cuatro NVIDIA A40 en 0,7 horas.
+El modelo es un transformer de la familia Gemma 4, tomado del checkpoint instructivo `google/gemma-4-E2B-it` y continuado desde los pesos fusionados de una versión anterior (`XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3`). El ajuste se hizo con QLoRA de 4 bits (nf4 con doble cuantización), rango r=16, alpha=32 y dropout de 0,05. El conjunto de entrenamiento consta de 10.000 registros supervisados, con longitud de secuencia de 1312 tokens, batch efectivo de 8, 2 épocas, learning rate de 0,0001 y 626 pasos, hasta una pérdida final de 0,8449. El entrenamiento se ejecutó en cuatro NVIDIA A40 durante 0,7 horas.
 
-El entrenamiento es exclusivamente supervisado (SFT): no se ejecutó ninguna etapa de preferencias (RLHF/DPO), algo que el propio autor señala como causa directa de los fallos observados en herramientas con descripciones parecidas. La plantilla de chat se aplica con `enable_thinking=False` y el pipeline enmascara el prompt de forma explícita en lugar de confiar en la forma de los datos. El objetivo de entrenamiento es un único objeto JSON por turno, con el menú de herramientas ofrecidas en el system prompt. Las observaciones que el modelo vio durante el entrenamiento eran fixtures, no salidas reales de shell.
+La innovación técnica no está en la arquitectura, sino en el contrato de salida: el modelo se entrena para responder exactamente un objeto JSON con la forma `{"action": "tool", "tool": "...", "args": {...}}` contra un menú fijo de diez herramientas (write_file, append_file, run_command, sql_incubator, search_files, finish, make_directory, read_file, delete_file, list_files). La plantilla de chat se aplica con `enable_thinking=False`, y la receta enmascara explícitamente el prompt en lugar de depender de la forma de los datos. No se ejecutó ninguna etapa de preferencias (RLHF/DPO); solo hay supervisión.
 
 ## Capacidades
 
-- Emisión de una llamada a herramienta por turno en formato JSON estricto, con la estructura `{"action": "tool", "tool": "...", "args": {...}}`.
-- Operaciones de fichero: `read_file`, `write_file`, `append_file`, `delete_file`, `list_files`, `make_directory`.
-- Búsqueda: `search_files` con patrones sobre el sistema de ficheros simulado.
-- Ejecución de comandos: `run_command`, dentro de la superficie de herramientas definida por el harness.
-- Consultas sobre datos: `sql_incubator`.
-- Cierre del bucle: herramienta `finish` para terminar la tarea.
-- Integración en bucles de agente con realimentación de observaciones (acción → resultado → nueva acción).
-- Capacidad multilingüe: limitada al inglés, tanto en instrucciones como en la model card.
-- No se documenta soporte de visión, audio, modo thinking ni razonamiento multi-paso fuera de la secuencia de llamadas.
+- Generación de llamadas a herramienta en JSON: emite un único objeto de acción por turno, parseable por el runtime.
+- Selección de herramienta dentro de una superficie fija de diez herramientas simuladas.
+- Relleno de argumentos con estructura predefinida (rutas, comandos, patrones, contenido).
+- Operaciones de sistema de ficheros simuladas: lectura, escritura, anexado, borrado, listado y creación de directorios.
+- Ejecución de comandos simulada (`run_command`) y consultas a un entorno SQL simulado (`sql_incubator`).
+- Señal de finalización de tarea mediante la herramienta `finish`.
+- No soporta tool calling arbitrario: una herramienta fuera del menú de entrenamiento no está cubierta.
+- No dispone de modo thinking, visión, audio ni capacidades multimodales declaradas.
+- Multilingüismo limitado al inglés.
+- No está diseñado para conversación multi-turno general ni para razonamiento de varios pasos fuera del bucle agente-runtime.
 
 ## Casos de uso
 
-- Automatización de operaciones sobre ficheros en un entorno controlado: el modelo decide entre leer, listar, escribir, anexar o borrar según el system prompt, y el harness valida la ruta antes de ejecutar. Es adecuado porque la salida es un JSON parseable con argumentos tipados, no texto libre.
-- Banco de pruebas de harnesses de tool calling: sirve para medir si un runtime concreto (parser, validación de esquemas, gestión de observaciones) funciona correctamente antes de conectar un modelo mayor, ya que su tasa de acierto conocida (48,5 % en holdout) actúa como línea base reproducible.
-- Ejecución de comandos en sandbox: con `run_command` y validación posterior del comando por parte del runtime, puede probarse el ciclo completo de un agente de shell sin riesgo, dado que el modelo nunca ejecuta nada por sí mismo.
-- Consultas SQL sobre un incubador de datos: `sql_incubator` permite prototipar el flujo de generación de consultas y realimentación de resultados en un entorno simulado, útil para diseñar la capa de validación antes de exponer una base de datos real.
-- Investigación sobre post-entrenamiento con QLoRA: el repositorio incluye `training-log.json`, hiperparámetros completos y desglose de errores, lo que lo convierte en un caso de estudio reproducible de SFT sobre un modelo base pequeño (≈4,63 B) con hardware modesto (4× A40, 0,7 h).
-- Generación de trazas sintéticas de agente: al producir acciones estructuradas contra diez herramientas, puede emplearse para poblar datasets de evaluación de parsers de function calling, siempre con revisión humana del 51,5 % de casos que fallan.
-- Sustitución de respuestas de chat por acciones en asistentes internos de gestión documental: si el asistente solo necesita leer, listar y buscar ficheros, el modelo cubre ese subconjunto con la ventaja de un formato de salida verificable.
+- **Bucle de agente con herramientas simuladas en investigación:** el modelo emite la acción, el harness la parsea, ejecuta la herramienta simulada y realimenta la observación. Es adecuado porque su formato de salida está entrenado para ser parseable de forma estricta y el autor proporciona `tools-pair-builder` para construir el prompt y medir la respuesta sin ejecutar nada.
+- **Evaluación de contratos de tool calling:** sirve como referencia para medir la tasa de acierto de un modelo pequeño en la selección de herramienta y el relleno de argumentos, con métricas de holdout desglosadas por herramienta (por ejemplo, `list_files` 0,769 frente a `write_file` 0,062).
+- **Prototipado de asistentes de sistema de ficheros:** con las herramientas `read_file`, `list_files`, `make_directory` y `delete_file`, se puede montar un agente de gestión de ficheros en un entorno controlado; el modelo es más fiable en `list_files` y `read_file` que en escritura.
+- **Banco de pruebas de cuantización:** al publicar seis GGUF, permite medir la degradación de precisión entre Q4_K_M y bf16 en la misma tarea de tool calling, algo útil para decidir qué cuantización desplegar.
+- **Generación de comandos en pipelines de automatización controlada:** la herramienta `run_command` (0,294 de acierto en holdout) puede emplearse para proponer comandos que un humano o un validador revise antes de ejecutar, nunca de forma autónoma.
+- **Investigación sobre fallos de selección de herramienta:** los fallos medidos (contenido distinto, comando distinto, ruta distinta, patrón distinto) sirven para estudiar por qué un modelo pequeño confunde herramientas con descripciones parecidas y para justificar una etapa de preferencias.
+- **Despliegue local ligero con llama.cpp:** el fichero Q4_K_M (3,42 GB) permite ejecutar el modelo en hardware de consumo para pruebas de integración del harness, con `llama-server -m gguf/gemma-agent-Q4_K_M.gguf --port 8080 --ctx-size 4096`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica una evaluación propia de holdout sobre 200 filas no vistas, con decodificación greedy, una sola tarjeta y tres comprobaciones: un único objeto JSON, la misma herramienta y todos los argumentos gold presentes e iguales, tras normalizar espacios en blanco, estilo de comillas y un prefijo `./` inicial.
+El autor publica una evaluación de holdout sobre 200 filas no vistas, con decodificación greedy y tres comprobaciones: un único objeto JSON, la misma herramienta y todos los argumentos dorados presentes e iguales (tras normalizar espacios, comillas y un `./` inicial).
 
-| Métrica | Valor |
+| Metrica | Valor |
 |---|---|
 | Filas de holdout | 200 |
-| Llamadas correctas | 97 (48,5 %) |
-| Aciertos logrados por normalización | 1 |
-| Comparación | Normalizada |
+| Llamadas acertadas | 97 (48,5%) |
+| Aciertos por normalización | 1 |
+| Comparación | normalizada |
 
-| Herramienta | Aciertos | Filas | Exactitud |
+| Herramienta | Aciertos | Filas | Precision |
 |---|---|---|---|
 | write_file | 1 | 16 | 0,062 |
 | append_file | 1 | 10 | 0,100 |
@@ -76,47 +74,43 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | delete_file | 5 | 7 | 0,714 |
 | list_files | 20 | 26 | 0,769 |
 
-Desglose de fallos: `content differs` 16, `command differs` 14, `path differs` 9, `pattern differs` 8, `args differs` 6, `answer overlap` 6 y 25 motivos menos frecuentes. La medición se hizo sobre `merged-bf16` con el adaptador aplicado, no sobre los ficheros GGUF, por lo que el autor recomienda reevaluar la cuantización que se vaya a desplegar.
+Motivos de fallo registrados: contenido distinto (16), comando distinto (14), ruta distinta (9), patrón distinto (8), argumentos distintos (6), solapamiento de respuesta (6) y 25 motivos menos frecuentes. La medición se hizo sobre `merged-bf16` con el adaptador aplicado, no sobre los ficheros GGUF; el autor recomienda reevaluar la cuantización que se vaya a desplegar. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (tamaño del fichero de pesos más overhead de contexto, no medida): f16 ≈ 11-12 GB; Q8_0 ≈ 6-7 GB; Q6_K ≈ 5-6 GB; Q5_K_M ≈ 4,5-5,5 GB; Q4_K_M ≈ 4,5-5 GB; Q3_K_M ≈ 4-4,5 GB; Q2_K ≈ 4 GB. El overhead real depende del número de capas y cabezas, que no se documentan.
-- GPU recomendadas: el entrenamiento se realizó en 4× NVIDIA A40. Para inferencia, una única A40, A100 o H100 cubre cualquier cuantización con holgura; para bf16 completo basta una GPU de 16 GB o más.
-- Cabe en GPU de consumo: sí. RTX 4090 (24 GB) ejecuta f16 y todas las cuantizaciones; RTX 4060 Ti de 16 GB, RTX 4080 y RTX 3080 Ti de 12 GB cubren Q8_0 y superiores; tarjetas de 8 GB (RTX 3060 Ti, RTX 4060) solo admiten Q4_K_M o inferiores con contexto reducido.
-- Opciones de despliegue: llama.cpp mediante `llama-server` es el método documentado (`llama-server -m gguf/gemma-agent-Q4_K_M.gguf --port 8080 --ctx-size 4096`); también puede cargarse con Transformers usando `merged-bf16` y aplicar el adaptador LoRA. Cualquier runtime compatible con GGUF y llama.cpp en general debería poder cargar los ficheros. Soporte en vLLM o TGI: no confirmado en la información disponible.
-- Latencia y throughput: no disponibles.
+- **VRAM estimada para inferencia:** aproximadamente 3,5 GB para Q4_K_M (3,42 GB de pesos más overhead de contexto), 2,98 GB para Q2_K, 4,95 GB para Q8_0 y unos 10,2 GB para bf16.
+- **GPU recomendadas:** el entrenamiento se realizó en cuatro NVIDIA A40. Para inferencia, cualquier GPU con al menos 4-5 GB de VRAM libre sirve para Q4_K_M; una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB cubren con holgura todas las cuantizaciones, incluida f16.
+- **Cabe en GPU de consumo:** sí, en cualquier GPU moderna con 6 GB o más para Q4_K_M; Q8_0 requiere unos 6 GB y f16 unos 10-11 GB.
+- **Opciones de despliegue:** llama.cpp (el autor documenta `llama-server`), y por los formatos publicados (safetensors más adaptador) también es compatible con transformers. No se documentan recetas para vLLM, TGI u Ollama en la información disponible.
+- **Latencia y throughput:** no disponibles. El autor no publica mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas independientes publicadas para este modelo. La comparación se limita a su base y a sus versiones previas, todas del mismo autor y con datos parciales.
-
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E2B-it-agent-posttrain-v1.4 | 4,63 B | No disponible | 48,5 % en holdout propio (200 filas) | Gemma Terms of Use (según model card) | Hugging Face, 0 descargas, 0 likes |
-| google/gemma-4-E2B-it (base) | No disponible | No disponible | No disponible | Gemma Terms of Use | Público en Hugging Face |
-| XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3 | No disponible | No disponible | No disponible | Gemma Terms of Use | Público; sustituido por versiones posteriores |
-| XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.2 | ≈5 B según el listado de HF | No disponible | No disponible | Gemma Terms of Use | Público en Hugging Face |
+| gemma-4-E2B-it-agent-posttrain-v1.4 | 4.628.569.635 | no disponible (ejemplo con 4096) | Tool calling restringido a 10 herramientas | Gemma Terms of Use | Hugging Face, GGUF y safetensors |
+| google/gemma-4-E2B-it (base) | no disponible en esta ficha | no disponible | Modelo instructivo de propósito general | Gemma Terms of Use | Hugging Face |
+| Versiones previas del mismo autor (v1.1, v1.3) | no disponible | no disponible | Mismo contrato de tool calling, iteraciones anteriores | Gemma Terms of Use | Hugging Face |
 
-Como alternativa de la misma categoría (modelos pequeños instruct con soporte de function calling) no hay datos en la información proporcionada que permitan una comparación numérica honesta. Cualquier cifra añadida aquí sería inventada.
+No se dispone en la información proporcionada de datos de benchmarks de los modelos comparables que permitan contrastar rendimiento. La comparación con el modelo base resulta además engañosa en precisión: el ajuste sacrifica generalidad por adherencia a un formato concreto.
 
 ## Limitaciones y advertencias
 
-- Superficie de herramientas cerrada: el modelo solo conoce las diez herramientas del menú. Una herramienta no incluida en el system prompt no existe para él.
-- Solo SFT, sin etapa de preferencias. El autor atribuye explícitamente los fallos a elecciones de herramienta y de valor equivocadas en herramientas con descripciones parecidas, precisamente el tipo de error que corrige una etapa de preferencias.
-- Exactitud baja: 48,5 % en holdout. `write_file` (0,062) y `append_file` (0,100) fallan casi siempre; los contenidos de fichero divergen en 16 casos.
-- Inglés únicamente, tareas cortas y una sola llamada por turno. No hay soporte multi-turno conversacional ni razonamiento multi-paso fuera del bucle acción-observación.
-- Observaciones de entrenamiento ficticias: el modelo nunca vio una salida real de shell, por lo que puede afirmar con seguridad cosas falsas sobre lo que devolvió un comando.
-- Riesgo de alucinación alto en el contenido de los argumentos, especialmente en campos de texto libre (`content`, `command`, `pattern`).
-- Las cuantizaciones GGUF son con pérdida respecto a `merged-bf16` y la métrica publicada no se midió sobre ellas.
-- Licencia: el derivado hereda los Gemma Terms of Use. Hay que revisarlos antes de redistribuir o desplegar comercialmente; los metadatos de Hugging Face no declaran licencia, lo que añade ambigüedad operativa.
-- Repositorio sin etiquetas de versión: `main` es la única dirección y una subida posterior reemplaza los ficheros en lugar de añadirse al lado, lo que rompe la reproducibilidad de una descarga concreta.
-- No es un modelo de chat: la model card advierte que no debe usarse donde una respuesta no parseada pudiera ejecutarse como acción.
-- Señales de validación externa nulas: 0 descargas y 0 likes en el momento de la consulta.
+- **Superficie de herramientas cerrada:** entrenado sobre una sola superficie de diez herramientas; una herramienta que no esté en el menú no existe para el modelo.
+- **Solo supervisión, sin preferencias:** no se ejecutó etapa RLHF/DPO, y los fallos medidos son precisamente elecciones de herramienta o de valor equivocadas en herramientas con descripciones parecidas.
+- **Solo inglés y tareas cortas:** una llamada por turno, sin capacidad multi-turno general.
+- **Observaciones de entrenamiento ficticias:** el modelo nunca vio salida real de shell, por lo que puede afirmar con confianza cosas falsas sobre lo que devolvió un comando.
+- **Precisión baja en escritura:** `write_file` (0,062) y `append_file` (0,100) son las herramientas con peor acierto; no es fiable para generar contenido de ficheros.
+- **Riesgo de alucinación en argumentos:** los fallos de ruta, patrón y comando indican que puede inventar valores plausibles pero incorrectos.
+- **Cuantizaciones con pérdida:** los GGUF son lossy respecto a bf16; hay que evaluar la cuantización concreta que se despliegue.
+- **Licencia:** hereda los Gemma Terms of Use; hay que revisarlos antes de redistribuir o desplegar comercialmente.
+- **Repositorio sin tag:** solo existe `main`, y una carga posterior reemplaza los ficheros en lugar de añadirse al lado; no hay versionado estable por tag.
+- **Uso inseguro:** el propio autor advierte que no debe usarse donde una respuesta no parseada pudiera ejecutarse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Listado de modelos cuantizados del base: https://huggingface.co/models?other=base_model%3Aquantized%3Agoogle%2Fgemma-4-E2B-it
-- Versión previa v1.2: https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.2
-- Vídeo de YouTube sobre el post-entrenamiento de Gemma 4 E2B: https://www.youtube.com/watch?v=Mxoq3BBPgLg
+- Versión anterior citada como base del entrenamiento: https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3
+- Gemma Terms of Use: no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

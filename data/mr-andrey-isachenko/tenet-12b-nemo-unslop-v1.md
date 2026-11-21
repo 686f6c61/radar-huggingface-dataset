@@ -1,62 +1,80 @@
 # mr-andrey-isachenko/Tenet-12B-Nemo-Unslop-v1
 
 ## Resumen
-Tenet-12B-Nemo-Unslop-v1 es un fine-tune del modelo Mistral-Nemo-Instruct-2407 (12B parametros) desarrollado por mr-andrey-isachenko. El modelo aplica una tecnica de "cirugia de subespacios" denominada Lancet, que elimina direccionalmente la componente de rechazo tanto en la proyeccion de entrada (residual stream) como en la de salida (unembedding), preservando la norma residual para mantener las magnitudes de activacion en la manifold original. Posteriormente se aplica un pase de GRPO ("gated unslop") que penaliza patrones de "slop" estilistico (prosa purpura, preambulos moralizantes) solo en las zonas donde la cirugia debilito los circuitos de rechazo.
 
-El objetivo declarado es reducir falsos rechazos ante peticiones benignas y eliminar deriva estilistica, preservando las capacidades analiticas, de codigo y razonamiento estructurado del modelo base. Se distribuye como checkpoint FP8 (E4M3) listo para proveedores, sin codigo custom, sin `trust_remote_code` y sin `auto_map`, de modo que el repositorio puede cargarse directamente en vLLM, proveedores OpenRouter, GGUF y MLX. La licencia es Apache 2.0.
+Tenet-12B-Nemo-Unslop-v1 es un ajuste fino (fine-tune) del modelo Mistral-Nemo-Instruct-2407 desarrollado por el usuario mr-andrey-isachenko dentro de la familia Tenet. El modelo parte de la arquitectura transformer densa de Mistral Nemo, con 12.247.782.400 parámetros totales, y aplica una técnica propietaria denominada Lancet, descrita por el autor como una cirugía de subespacios con preservación de norma y proyección bidireccional. El objetivo declarado es reducir los rechazos falsos positivos (over-refusals) y el denominado «slop» estilístico (prosa recargada, preámbulos moralizantes) sin degradar las capacidades de razonamiento, código y uso de herramientas del modelo base.
 
-Es relevante para desarrolladores que necesitan un modelo conversacional de 12B con tool calling y generacion de codigo sin rechazos espurios, pero debe tenerse en cuenta que el repositorio aparece con 0 descargas, 0 likes y un tamano de 0.0 GB en el momento de la consulta, lo que sugiere que los pesos pueden no estar publicados o que el repo es esencialmente una model card.
+El modelo se presenta como un checkpoint listo para proveedores, exportado en FP8 (E4M3), sin código personalizado, sin `trust_remote_code` y sin `auto_map`, de modo que puede cargarse directamente en vLLM, proveedores de OpenRouter, GGUF y MLX. La licencia es Apache 2.0 y el repositorio ocupa 32,6 GB, incluyendo pesos en safetensors y GGUF.
+
+La relevancia actual reside en su enfoque de «des-abliteración quirúrgica»: frente a la abliteración ingenua, que el autor reporta como destructiva para la salida estructurada y las capacidades de tool calling, Tenet propone una eliminación de la dirección de rechazo en las proyecciones de entrada y salida con restauración exacta de la norma residual, seguida de un pase de GRPO con compuertas que penaliza patrones de slop solo donde la cirugía debilitó los circuitos de rechazo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Mistral-Nemo-Instruct-2407) |
-| Parametros totales | 12B (heredados del base Mistral-Nemo) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (segun el ejemplo de vLLM con `--max-model-len 32768`; el base Mistral-Nemo soporta hasta 128K) |
-| Tipos de cuantizacion | FP8 (E4M3) como formato de exportacion principal; GGUF CKA-Quant (p. ej. Q4_K_M) mencionado en la model card |
+| Arquitectura | Transformer denso (derivado de Mistral-Nemo-Instruct-2407) |
+| Parametros totales | 12.247.782.400 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | FP8 (E4M3) en el checkpoint publicado; GGUF disponible en el repo |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (FP8 E4M3); GGUF disponible segun la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Mistral-Nemo-Instruct-2407, un transformer decoder-only de 12B parametros. Sobre esa base se aplica el motor Lancet, descrito como "cirugia de subespacios bi-proyectada con preservacion de norma": se identifica la direccion de rechazo en las proyecciones de entrada y salida, se elimina la componente de forma bidireccional y se restaura exactamente la norma residual, de modo que las magnitudes de activacion y las distribuciones de tokens aguas abajo permanecen en la manifold. Esto contrasta con la "abliteracion ingenua", que segun la model card produce una deriva colateral de KL de 0,30 frente a 9,75e-03 del checkpoint BF16 de Tenet.
 
-Tras la cirugia se ejecuta un pase de GRPO ("gated unslop") cuya recompensa penaliza patrones de slop solo donde la cirugia debilito los circuitos de rechazo, con el objetivo de reforzar razonamiento y codigo en lugar de danarlos. El checkpoint final se exporta a FP8 (E4M3). No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni detalles del RLHF/DPO original del base.
+El modelo hereda la arquitectura transformer densa de Mistral-Nemo-Instruct-2407. Sobre esa base, el autor aplica el motor Lancet, descrito como una cirugía de subespacios con preservación de norma y proyección bidireccional: la dirección de rechazo se identifica tanto en la proyección de entrada (residual stream) como en la de salida (unembedding), el componente se elimina en ambas direcciones y la norma residual se restaura de forma exacta para mantener las magnitudes de activación y las distribuciones de tokens posteriores sobre la variedad original.
+
+Tras la cirugía se ejecuta un pase de GRPO («gated unslop GRPO»), una optimización de preferencias por grupos cuyas recompensas penalizan patrones de slop (prosa recargada, vocabulario tipo «tapestry», preámbulos moralizantes) únicamente donde la cirugía debilitó los circuitos de rechazo, con el fin de reforzar el razonamiento y la capacidad de código del modelo base en lugar de sacrificarlos. El pipeline de publicación incluye además cuantización FP8 (E4M3) y una fusión TIES «subspace-safe» que, según el autor, se mantiene ortogonal al subespacio ancla de tool/SQL. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni detalles del RLHF/DPO más allá del pase GRPO descrito.
 
 ## Capacidades
-- Generacion de texto conversacional multi-turno.
-- Razonamiento estructurado y analitico (preservado del base, segun la model card).
-- Generacion de codigo, incluido SQL (DuckDB) y consultas sobre logs.
-- Tool calling / function calling con salida JSON schema-valid (ejemplo de `duckdb.query` en la model card).
-- Uso en entornos agenticos y DevOps/AppSec (triage de logs, consultas de seguridad).
-- Reduccion de rechazos espurios en peticiones benignas (refusal suppression reportado de 0,99 en BF16 y 1,00 en FP8).
-- Mitigacion de deriva estilistica ("slop"): prosa purpura, preambulos moralizantes, vocabulario tipo "tapestry".
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Vision, audio o thinking mode explicito: no disponibles.
+
+- Generación de texto conversacional multi-turno.
+- Razonamiento estructurado y análisis, preservando el subespacio ancla del modelo base según el autor.
+- Generación de código y consultas SQL.
+- Tool calling / function calling con salida estructurada (el autor muestra ejemplos de llamadas válidas a DuckDB con esquema JSON).
+- Uso agéntico y razonamiento multi-paso (etiquetas `agentic`, `tool-use`).
+- Reducción de rechazos falsos positivos en prompts benignos (triage de logs, consultas de seguridad defensiva).
+- Mitigación de slop estilístico (prosa recargada, preámbulos moralizantes).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
-- Triage de logs de seguridad: el modelo puede recibir lineas de log (por ejemplo, nginx auth) y devolver una tool call SQL valida para DuckDB, como se muestra en la model card, evitando rechazos falsos ante peticiones de analisis defensivo.
-- Generacion de codigo SQL en pipelines de datos: integrado via tool calling, puede producir consultas `read_json_auto` y agregaciones sobre logs con salida JSON estructurada.
-- Asistente DevOps/AppSec: gestiona peticiones de analisis de sistemas y configuracion sin preambulos moralizantes, adecuado para equipos que ya operan con guardrails externos.
-- Atencion al cliente automatizada: conversaciones multi-turno con contexto de hasta 32K tokens (segun el ejemplo de despliegue), con respuestas concisas y sin deriva estilistica.
-- Agentes multi-paso con tool use: la ortogonalidad del ancla tool/SQL reportada (3,00e-08 en BF16) sugiere que las tool calls mantienen formato valido tras la cirugia.
-- Despliegue en proveedores OpenRouter: el checkpoint FP8 esta pensado para exportacion directa a proveedores, sin codigo custom ni `trust_remote_code`.
-- Prototipado local con llama.cpp/Ollama: la model card menciona un GGUF CKA-Quant Q4_K_M para ejecucion en consumer hardware.
+
+- Asistencia en AppSec y DevOps: el modelo puede procesar líneas de log de autenticación (por ejemplo, nginx) y devolver llamadas a herramientas SQL válidas para DuckDB, como se ilustra en la model card, sin rechazos falsos ante tareas defensivas legítimas.
+- Generación de código en producción: al soportar tool calling y salida estructurada, puede integrarse en pipelines de CI/CD para generar consultas, scripts de análisis o parches con formato verificable.
+- Agentes automatizados multi-paso: las etiquetas `agentic` y `tool-use` indican idoneidad para orquestaciones que encadenan llamadas a herramientas, con menor probabilidad de rechazo en pasos intermedios benignos.
+- Análisis de datos y SQL: la fusión TIES reportada como ortogonal al subespacio de tool/SQL sugiere que las capacidades de generación de consultas se conservan tras la cirugía y la cuantización.
+- Atención al cliente automatizada: modelo conversacional afinado para evitar preámbulos moralizantes y prosa recargada, lo que produce respuestas más directas en diálogos multi-turno.
+- Asistentes de escritura técnica: la penalización del slop estilístico reduce el vocabulario recargado y los preámbulos, útil para documentación y resúmenes técnicos.
+- Despliegue en proveedores de inferencia: al no requerir `trust_remote_code` ni `auto_map`, el checkpoint FP8 encaja directamente en vLLM y en proveedores de OpenRouter.
 
 ## Benchmarks y rendimiento
-Los benchmarks publicados por el autor no son metricas estandar (MMLU, HumanEval, GSM8K); son metricas internas H9, H10 y H11, junto con una tabla comparativa frente a abliteracion ingenua.
 
-| Variante | H9 (menor mejor) | H10 (mayor mejor) | H11 (mayor mejor) |
-|---|---|---|---|
-| BF16 | 9,75e-03 | 0,27 | 0,97 |
-| FP8 (E4M3) | 0,02 | 1,00 | 0,49 |
-| Abliteracion ingenua | 0,30 | 0,43 | 0,50 |
+Los datos provienen de las ejecuciones `final_metrics.json` del pipeline de publicación del autor (etapas H9 a H12). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
-Comparativa adicional reportada en la model card:
+| Metrica (etapa) | Valor | Direccion |
+|---|---|---|
+| Lancet KL Collateral (H9) | 9,75e-03 | Menor es mejor |
+| Naive KL Collateral (H9) | 0,30 | Menor es mejor |
+| KL Reduction Ratio (H9) | 0,97 | Mayor es mejor |
+| Target Suppression Ratio (H9) | 0,99 | Mayor es mejor |
+| Gated GRPO IFEval Score (H10) | 0,63 | Mayor es mejor |
+| Gated vs Naive/Additive Gain (H10) | 0,43 | Mayor es mejor |
+| Slop & Refusal Rate (H10) | 0,02 | Menor es mejor |
+| Post-Merge Suppression Retention (H10) | 1,00 | Mayor es mejor |
+| FP8 Retention Ratio (H11) | 0,97 | Mayor es mejor |
+| FP8 KL Reduction vs Naive (H11) | 0,49 | Mayor es mejor |
+| FP8 Subspace Re-Leakage Lancet (H11) | 0,18 | Menor es mejor |
+| FP8 Subspace Re-Leakage Naive (H11) | 0,50 | Menor es mejor |
+| SQL-Incident Retention (H12) | 1,00 | Mayor es mejor |
+| Unslop Retention (H12) | 1,00 | Mayor es mejor |
+| Subspace-Safe Merge Re-Leakage (H12) | 6,63e-08 | Menor es mejor |
+| TIES Bi-Projected vs Naive Gain (H12) | 0,78 | Mayor es mejor |
 
-| Metrica | Base | Abliteracion ingenua | Tenet (BF16) | Tenet (FP8 E4M3) |
+Comparativa del autor entre base, abliteración ingenua y Tenet:
+
+| Metrica | Base | Naive Abliteration | Tenet (BF16) | Tenet (FP8 E4M3) |
 |---|---|---|---|---|
 | KL Collateral Drift | — | 0,30 | 9,75e-03 | 0,18 |
 | Refusal Suppression | — | — | 0,99 | 1,00 |
@@ -65,37 +83,42 @@ Comparativa adicional reportada en la model card:
 | FP8 Subspace Re-Leakage | — | 0,50 | — | 0,18 |
 | Max Row Crest-Factor (< 25,0) | — | — | 10,65 | 10,65 |
 
-Ademas: max row crest-factor 10,65 y max absolute weight 0,92. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Otros datos reportados: crest-factor máximo por fila de 10,65 y peso absoluto máximo de 0,92.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible de forma explicita; para un modelo de 12B en FP8 (E4M3) se requiere aproximadamente 12 GB de pesos mas overhead de activaciones y KV cache, pero esta cifra no la proporciona la model card.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Consumer GPU: la model card menciona GGUF CKA-Quant Q4_K_M para llama.cpp (`-ngl 99`), lo que sugiere viabilidad en GPUs consumer, pero no se especifican modelos concretos.
-- Opciones de despliegue: vLLM (`vllm serve ... --quantization fp8`), Transformers (`AutoModelForCausalLM`), llama.cpp (GGUF), Ollama, MLX y proveedores OpenRouter.
-- Latencia y throughput: no disponibles.
+
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Como referencia de tamaño, el repo ocupa 32,6 GB e incluye pesos FP8 (E4M3) y GGUF; un checkpoint de 12,25 mil millones de parámetros en FP8 requiere aproximadamente 12,3 GB solo para los pesos, más overhead de activaciones y caché KV.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría esperar viabilidad en GPUs con 16-24 GB de VRAM en FP8 o cuantizaciones GGUF más agresivas, y con holgura en A100, H100 o L40S; estos extremos no están confirmados en la información disponible.
+- Cabe en GPU de consumo: no confirmado explícitamente; depende de la cuantización GGUF elegida y de la longitud de contexto, dato este último no disponible.
+- Opciones de despliegue: vLLM (soporte nativo, sin `trust_remote_code`), proveedores de OpenRouter, GGUF (llama.cpp/Ollama por el formato publicado) y MLX según el autor. También transformers con safetensors y text-generation-inference.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Tenet-12B-Nemo-Unslop-v1 | 12B | 32.768 (segun ejemplo vLLM) | De-refusal + de-slop (Lancet + GRPO) | apache-2.0 | Repo con 0 descargas, 0 likes, 0.0 GB |
-| Mistral-Nemo-Instruct-2407 | 12B | hasta 128K | Instruct generalista | apache-2.0 | Publico en HF |
-| Abliteracion ingenua de Mistral-Nemo | 12B | segun base | Eliminacion directa de rechazo | apache-2.0 | Variantes comunitarias |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Tenet-12B-Nemo-Unslop-v1 | 12,25 B | no disponible | Apache 2.0 | Fine-tune con cirugía Lancet y GRPO; FP8 y GGUF publicados |
+| mistralai/Mistral-Nemo-Instruct-2407 | 12 B | no disponible en la informacion | Apache 2.0 | Modelo base; rechazos falsos y slop reportados por el autor |
+| Abliteración ingenua del mismo base | 12 B | no disponible | Apache 2.0 | Referencia del autor; mayor deriva KL y peor salida estructurada según sus métricas |
 
-La comparativa se limita al base y a la abliteracion ingenua porque la model card solo reporta esas referencias. No se dispone de comparacion con otros fine-tunes de-refusal de la misma categoria.
+No se dispone de comparaciones con otros modelos de la misma categoría (por ejemplo, otras variantes abliteradas o fine-tunes de Mistral Nemo) en la información proporcionada.
 
 ## Limitaciones y advertencias
-- El modelo esta explicitamente orientado a uso como asistente alineado; operaciones ofensivas, malware o contenido ilicito quedan fuera de alcance y no estan soportadas.
-- La reduccion de rechazos puede incrementar la probabilidad de respuestas a peticiones ambiguas o sensibles; se recomienda mantener guardrails externos en produccion.
-- El checkpoint FP8 muestra H10 = 1,00 pero H11 = 0,49, lo que indica que la robustez tras cuantizacion FP8 es limitada en comparacion con el BF16 (H11 = 0,97).
-- Riesgo de alucinacion: no cuantificado en la informacion disponible.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue mas alla del base.
-- Contexto: el ejemplo de despliegue usa `--max-model-len 32768`, inferior al contexto maximo del base Mistral-Nemo (hasta 128K); conviene verificar el contexto real soportado por el checkpoint.
-- El repositorio muestra 0.0 GB de tamano, 0 descargas y 0 likes; los pesos pueden no estar efectivamente publicados o el repo puede ser solo una model card. Verificar antes de integrar en produccion.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias explicitas sobre el comportamiento del modelo tras la cirugia.
+
+- Modelo explícitamente no destinado a operaciones cibernéticas ofensivas, generación de malware ni contenido ilícito; esos usos quedan fuera de alcance según el autor.
+- La reducción de rechazos puede aumentar la probabilidad de respuestas a prompts que el modelo base rechazaría; requiere evaluación propia antes de desplegar en producción.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Idiomas soportados y longitud de contexto: no disponibles; conviene verificar ambos antes de usos multilingües o con contextos largos.
+- Las métricas publicadas (KL Collateral, Retention Ratio, etc.) son internas del pipeline del autor y no equivalen a benchmarks estándar de capacidad; no deben interpretarse como rendimiento absoluto en MMLU, HumanEval o GSM8K.
+- La cuantización FP8 introduce cierta re-fuga del subespacio (0,18 frente a 0,50 de la abliteración ingenua), por lo que el comportamiento en FP8 difiere ligeramente del BF16.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Mistral Nemo y las condiciones del ecosistema de proveedores deben verificarse por separado.
+- Modelo con muy pocas descargas (1116) y un único «like» en el momento de la ficha; madurez y validación comunitaria limitadas.
 
 ## Enlaces
+
 - Hugging Face: https://huggingface.co/mr-andrey-isachenko/Tenet-12B-Nemo-Unslop-v1
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Codigo fuente e informe tecnico: https://github.com/mrAndreyIsachenko/tenet-lab
+- Auditoria interactiva (FP8 & Abliteration Inspector): https://huggingface.co/spaces/mr-andrey-isachenko/fp8-abliteration-inspector
+- Coleccion de la familia Tenet v1: https://huggingface.co/mr-andrey-isachenko

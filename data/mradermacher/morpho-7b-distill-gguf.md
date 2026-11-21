@@ -2,109 +2,98 @@
 
 ## Resumen
 
-Morpho-7B-Distill-GGUF es un repositorio de cuantizaciones GGUF del modelo bluemorpholimited/Morpho-7B-Distill, publicado por mradermacher. El modelo base cuenta con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) y el repositorio incluye 12 variantes de cuantización estática para inferencia local con llama.cpp y herramientas compatibles. La licencia declarada es Apache 2.0 y el único idioma indicado en los metadatos es el inglés.
+Morpho-7B-Distill es un modelo de lenguaje de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) desarrollado por Blue Morpho Limited y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo destilado, segun indican las etiquetas del repositorio, a partir de un modelo mayor de 180B (la etiqueta "180b" aparece explicitamente en los tags del autor). El modelo base es `bluemorpholimited/Morpho-7B-Distill`, y la version aqui descrita es una cuantizacion GGUF realizada por mradermacher, un conocido publicador de cuantizaciones para llama.cpp.
 
-El repositorio no documenta la arquitectura, la longitud de contexto, los datos de entrenamiento ni las capacidades reales del modelo base. Su función principal es empaquetar el modelo en formato GGUF para facilitar su despliegue en hardware de consumo, con archivos que van desde 3,1 GB en Q2_K hasta 15,3 GB en f16. El tamaño total del repositorio es de 68,1 GB.
+La relevancia de esta ficha reside en que el repositorio original no incluye una model card sustancial: la informacion disponible se limita a metadatos, tags y la tabla de cuantizaciones. No se documentan detalles de arquitectura, datos de entrenamiento, benchmarks ni capacidades especificas mas alla de la etiqueta "conversational". Por tanto, esta ficha refleja exclusivamente lo verificable en los metadatos y advierte explicitamente de las lagunas de informacion.
 
-Es relevante para desarrolladores que necesitan ejecutar un modelo de 7B en local sin depender de APIs, especialmente en entornos con VRAM limitada. Sin embargo, la ausencia de benchmarks, de ficha técnica del modelo original y de validación comunitaria —0 descargas y 0 likes en el momento de la consulta— obliga a tratarlo con cautela antes de usarlo en producción.
+El modelo esta orientado a conversacion (pipeline no disponible, pero tag "conversational") y solo declara soporte para ingles. La cuantizacion GGUF lo hace desplegable en hardware de consumo mediante llama.cpp y derivados, lo que resulta practico para experimentacion local con un modelo de 7,6B.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no documenta la arquitectura del modelo base) |
-| Parámetros totales | 7.615.616.512 (7,6 B) |
-| Parámetros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (transformer, inferido por el formato de pesos y el pipeline de transformers, sin confirmacion del autor) |
+| Parametros totales | 7.615.616.512 (aproximadamente 7,6B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); disponibles tambien cuantizaciones ponderadas/imatrix en el repo i1 |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF |
-| Modelo base | bluemorpholimited/Morpho-7B-Distill |
-| Cuantizador | mradermacher |
-| Librería declarada | transformers |
-| Tamaño del repositorio | 68,1 GB |
-| Pipeline | no disponible |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-25 |
-| Fecha de actualización | 2026-10-25 |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no incluye detalles sobre la arquitectura del modelo base: no se especifica si es un transformer denso, un modelo MoE, un híbrido SSM o otra variante. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF, DPO u otras fases de alineamiento. El tag "distillation" sugiere que el modelo base se obtuvo mediante destilación, pero no se indica el modelo profesor, el método de destilación ni los datos utilizados.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. Los metadatos indican que es un modelo destilado (tag "distillation") de un modelo de 180B, con un total de 7.615.616.512 parametros. El uso de la libreria `transformers` y la existencia de pesos safetensors en el modelo base sugieren una arquitectura transformer decoder-only convencional, pero el autor no confirma ni detalla la arquitectura, el numero de capas, las dimensiones ocultas ni el mecanismo de atencion.
 
-El repositorio es una conversión GGUF de cuantización estática. La model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, además de señalar que no se han generado cuantizaciones con imatrix o ponderadas por el autor. No se documenta ninguna innovación técnica adicional, como decodificación especulativa, atención lineal o modos de razonamiento extendido.
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT. La unica informacion sobre el proceso de entrenamiento es la etiqueta "distillation" y la referencia al modelo profesor de 180B, lo que implica que el modelo fue entrenado para imitar las distribuciones de salida de un modelo mayor. No se han publicado innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, según la etiqueta `conversational` de los metadatos.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes, planificación multi-paso o razonamiento explícito.
-- Cobertura lingüística limitada al inglés según la metadata; no se indican otros idiomas.
-- No se documentan capacidades de visión, audio, vídeo ni modos de "thinking".
-- No se documentan capacidades específicas de código, matemáticas o recuperación aumentada.
-- El repositorio está orientado a inferencia local mediante GGUF, no a entrenamiento ni ajuste fino.
+- Generacion de texto conversacional: el tag "conversational" indica que el modelo esta ajustado para dialogos multi-turno.
+- Destilacion de un modelo de 180B: se espera que herede parte de las capacidades del modelo profesor, aunque no se especifica cuales.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Capacidades especiales (vision, audio, thinking mode): no disponible (no documentado).
+- Razonamiento, codigo y matematicas: no disponible (no documentado).
 
 ## Casos de uso
 
-- Prototipos de chatbot local en inglés: cargar Q4_K_M (4,8 GB) en llama.cpp u Ollama permite iterar sobre prompts y flujos conversacionales sin depender de una API externa, con un coste de memoria contenido para equipos de desarrollo.
-- Asistentes offline en estaciones de trabajo: usar Q4_K_S (4,6 GB) o Q2_K (3,1 GB) en portátiles con GPU de 6-8 GB permite mantener conversaciones en inglés sin conexión a internet, siempre que se acepte la posible pérdida de calidad de las cuantizaciones bajas.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes entre Q2_K y f16, lo que permite medir la degradación de salidas sobre un mismo conjunto de prompts y elegir el equilibrio tamaño/calidad para un despliegue concreto.
-- Despliegue en entornos con VRAM muy limitada: Q2_K o Q3_K_S permiten ejecutar un modelo de 7,6 B en GPUs de gama baja o en CPU mediante llama.cpp, asumiendo que la calidad será inferior a Q4_K_M o Q6_K.
-- Docencia y formación técnica sobre GGUF: el repositorio sirve para explicar el proceso de cuantización, los tamaños de archivo resultantes y las diferencias entre tipos K, IQ y f16, usando f16 como referencia de mayor tamaño.
-- Integración en interfaces de usuario locales: cargar los archivos GGUF en LM Studio, koboldcpp o text-generation-webui permite a usuarios no técnicos probar el modelo en inglés sin escribir código de inferencia.
-- Investigación sobre destilación: si se dispone del modelo base en safetensors, se pueden comparar cualitativamente las respuestas del modelo destilado y sus cuantizaciones, aunque no hay benchmarks publicados que permitan una comparación cuantitativa rigurosa.
+- Experimentacion local con modelos destilados: al estar disponible en GGUF con cuantizaciones desde 3,1 GB (Q2_K) hasta 15,3 GB (f16), permite probar un modelo de 7,6B destilado de un 180B en estaciones de trabajo sin GPU dedicada o con GPU de consumo.
+- Prototipado de asistentes conversacionales en ingles: el tag "conversational" y el formato GGUF permiten integrarlo rapidamente en aplicaciones de chat mediante llama.cpp u Ollama para validar flujos de dialogo antes de migrar a modelos mayores.
+- Evaluacion comparativa de tecnicas de destilacion: investigadores que estudien la relacion entre modelo profesor (180B) y alumno (7,6B) pueden usar este modelo como caso de estudio, comparando sus salidas con las del modelo base original.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M (4,8 GB) y Q5_K_M (5,5 GB) permiten ejecucion en GPUs de 8 GB de VRAM, util para demos y entornos de desarrollo.
+- Generacion de texto offline y privacidad: al ejecutarse localmente con llama.cpp, el modelo no requiere enviar datos a servicios externos, adecuado para prototipos donde la confidencialidad sea prioritaria.
+- Base para fine-tuning posterior: al estar bajo licencia Apache 2.0, puede servir como punto de partida para ajustes especificos en ingles, aunque se recomienda partir del modelo base en safetensors para fine-tuning completo.
+- Educacion y divulgacion: util para explicar el concepto de destilacion de modelos y cuantizacion GGUF en cursos y talleres, dado su tamano manejable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El tamaño del archivo GGUF marca un límite inferior de memoria; hay que añadir la caché KV y el overhead del runtime. Al no documentarse la longitud de contexto, no se puede calcular la VRAM total exacta.
-- Q2_K: 3,1 GB de archivo. Orientativo para GPUs de 4-6 GB o inferencia en CPU; calidad potencialmente degradada.
-- Q3_K_S: 3,6 GB; Q3_K_M: 3,9 GB (la model card la marca como "lower quality"); Q3_K_L: 4,2 GB.
-- IQ4_XS: 4,4 GB; Q4_K_S: 4,6 GB ("fast, recommended"); Q4_K_M: 4,8 GB ("fast, recommended"). Adecuados para GPUs consumer de 8 GB, como RTX 3060 Ti o RTX 4060.
-- Q5_K_S: 5,4 GB; Q5_K_M: 5,5 GB; Q6_K: 6,4 GB ("very good quality"). Pueden requerir 8-10 GB de VRAM según contexto y runtime.
-- Q8_0: 8,2 GB ("fast, best quality"). Orientado a GPUs de 12 GB o superiores, como RTX 3060 12 GB o RTX 4070 Ti.
-- f16: 15,3 GB ("overkill"). Requiere al menos 16 GB de VRAM; con overhead de contexto es más realista una GPU de 24 GB, como RTX 4090, A100 o H100.
-- Para despliegues con batching o alta concurrencia, se recomiendan A100 u H100; para uso individual, RTX 4090 o GPUs consumer con suficiente VRAM.
-- Opciones de despliegue habituales para GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y text-generation-webui con loader de llama.cpp. vLLM y TGI no son la vía nativa para GGUF; para esos motores sería preferible el modelo base en safetensors.
-- No se dispone de datos de latencia ni throughput medidos en la información proporcionada.
+- VRAM estimada para inferencia (aproximada, segun cuantizacion GGUF):
+  - Q2_K: ~3,1 GB de pesos, ~4 GB de VRAM con overhead.
+  - Q4_K_M: ~4,8 GB de pesos, ~6 GB de VRAM con overhead.
+  - Q5_K_M: ~5,5 GB de pesos, ~7 GB de VRAM con overhead.
+  - Q8_0: ~8,2 GB de pesos, ~10 GB de VRAM con overhead.
+  - f16: ~15,3 GB de pesos, ~17 GB de VRAM con overhead.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para cuantizaciones altas; A100 o H100 no son necesarias para este tamano.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs con 8 GB o mas de VRAM usando Q4_K_M o Q5_K_M; en GPUs de 6 GB con Q3_K_M o Q4_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en el momento de redactar esta ficha (requeriria conversion a safetensors).
+- Latencia y throughput: no disponibles (no documentados por el autor).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Rendimiento |
-|---|---:|---|---|---|---|
-| Morpho-7B-Distill-GGUF | 7,6 B | no disponible | apache-2.0 | GGUF | no disponible |
-| Morpho-7B-Distill (base) | 7,6 B | no disponible | apache-2.0 | safetensors según metadata de parámetros | no disponible |
-| Otras cuantizaciones GGUF de 7B | no disponible | no disponible | no disponible | GGUF | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Morpho-7B-Distill (esta ficha) | 7,6B | no disponible | Apache 2.0 | GGUF, safetensors | Destilado de un 180B; solo ingles |
+| Mistral-7B-Instruct | 7,2B | 32k (v0.2) | Apache 2.0 | safetensors, GGUF | Referencia en 7B; multilingue parcial |
+| Llama 3.1 8B Instruct | 8,0B | 128k | Llama 3.1 Community License | safetensors, GGUF | Multilingue; requiere aceptar licencia |
+| Qwen2.5 7B Instruct | 7,6B | 32k | Apache 2.0 | safetensors, GGUF | Multilingue; buenas capacidades de codigo |
 
-No se han identificado en la información proporcionada alternativas comparables con datos verificables de rendimiento, contexto o licencia. La comparación directa con otros modelos de 7B no es posible sin benchmarks publicados.
+Nota: la comparativa se basa en caracteristicas publicas de modelos de tamano similar; no se dispone de datos de rendimiento de Morpho-7B-Distill para comparar benchmarks.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados ni evaluación independiente; no se recomienda su uso en producción crítica sin una validación propia sobre el dominio objetivo.
-- Se desconocen los sesgos del modelo base y del proceso de destilación; no se documenta ninguna evaluación de sesgo.
-- El riesgo de alucinación no ha sido medido; como modelo generativo conversacional, es esperable que pueda producir información incorrecta.
-- El único idioma declarado es el inglés; no hay evidencia de soporte multilingüe.
-- Se desconoce la longitud de contexto, lo que impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
-- La licencia declarada es Apache 2.0, que permite uso comercial, pero conviene verificar la ficha del modelo base y la procedencia de los datos de entrenamiento antes de su explotación comercial.
-- Las cuantizaciones bajas pueden degradar la calidad; la model card marca Q3_K_M como "lower quality" y Q2_K no incluye una garantía de calidad. Q6_K y Q8_0 son las opciones más conservadoras.
-- Las cuantizaciones son estáticas y no se han generado variantes con imatrix o ponderadas; en algunos casos, cuantizaciones con imatrix del mismo tamaño pueden ofrecer mejor calidad.
-- El repositorio presenta 0 descargas y 0 likes, lo que indica ausencia de validación comunitaria en el momento de la consulta.
-- La fecha de creación indicada (2026-10-25) es posterior a la fecha actual del sistema (2026-05-09), lo que sugiere una posible inconsistencia en los metadatos.
-- No se documenta soporte de tool calling, agentes o modos de razonamiento; no deben asumirse estas capacidades.
+- Informacion documental muy escasa: la model card original no detalla arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad objetivamente.
+- Solo soporta ingles segun los metadatos; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas sin verificacion empirica.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se documentan mitigaciones especificas.
+- Sesgos: no se documentan evaluaciones de sesgo; al ser un modelo destilado de un profesor de 180B, puede heredar sesgos de este.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un modelo destilado conviene verificar las condiciones del modelo profesor original (no documentadas en la informacion disponible).
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente la coherencia; se recomienda Q4_K_M o superior para produccion.
+- No se documenta soporte de tool calling ni de agentes, por lo que no debe asumirse en pipelines automatizados sin validacion previa.
+- El repositorio tiene 0 likes y 942 descargas, lo que sugiere adopcion limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Morpho-7B-Distill-GGUF
-- Modelo base: https://huggingface.co/bluemorpholimited/Morpho-7B-Distill
-- Página de descargas del cuantizador: https://hf.tst.eu/model#Morpho-7B-Distill-GGUF
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Empresa del cuantizador: https://www.nethype.de/
-- README de referencia sobre GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica comparativa de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-
-No se han encontrado papers, blogs técnicos ni demos en la información proporcionada.
+- Repositorio GGUF: https://huggingface.co/mradermacher/Morpho-7B-Distill-GGUF
+- Modelo base original: https://huggingface.co/bluemorpholimited/Morpho-7B-Distill
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Morpho-7B-Distill-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Morpho-7B-Distill-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

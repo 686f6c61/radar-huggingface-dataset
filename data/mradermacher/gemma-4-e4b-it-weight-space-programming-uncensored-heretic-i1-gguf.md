@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo `xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic`, una variante de Gemma 4 E4B-it modificada mediante técnicas de *weight-space programming* (programación en el espacio de pesos) y *abliteration* para eliminar los mecanismos de rechazo del modelo original. El autor de las cuantizaciones es mradermacher, un conocido publicador de versiones GGUF optimizadas con imatrix, mientras que el modelo base procede del usuario xtools-at. El resultado es un modelo conversacional de aproximadamente 7.460 millones de parámetros orientado a tool calling y flujos agénticos, sin las restricciones de seguridad habituales del Gemma original.
+`gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF` es una cuantización GGUF, generada por mradermacher, del modelo base `xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic`, que a su vez deriva de la familia Gemma 4 (Gemma 4 E4B instruct). El modelo combina tres ejes: (1) la arquitectura y capacidades de Gemma 4, (2) una intervención de "weight-space programming" orientada a interpretabilidad mecanística y tool calling sin entrenamiento adicional (zero-training), y (3) una modificación "heretic"/abliterated que elimina los mecanismos de rechazo y censura del modelo original. El resultado es un modelo conversacional en inglés, de aproximadamente 7.460 millones de parámetros reales almacenados, con soporte declarado de tool calling y uso agéntico.
 
-La relevancia de esta ficha radica en que combina tres tendencias técnicas actuales: la interpretabilidad mecanicista aplicada como método de edición de pesos sin reentrenamiento (*zero-training*), la eliminación selectiva de direcciones de activación asociadas al rechazo (*heretic/abliterated*) y la distribución en formato GGUF con cuantizaciones i1 generadas mediante matrices de importancia (imatrix). Todo ello sobre una arquitectura Gemma 4, lo que permite ejecución local en hardware de consumo.
+La relevancia de esta ficha está en que documenta un artefacto de nicho: no es un modelo entrenado desde cero, sino un derivado experimental de un modelo base con modificaciones de pesos, distribuido en múltiples cuantizaciones GGUF (desde i1-IQ1_S de 3,4 GB hasta i1-Q6_K y superiores). El repositorio ocupa 111 GB por acumulación de variantes. Es útil para investigadores que quieran inspeccionar intervenciones en el espacio de pesos, para desarrolladores que necesiten ejecutar un Gemma 4 en hardware de consumo con llama.cpp, y para quienes evalúen el efecto de la "abliteration" sobre el comportamiento del modelo.
 
-No obstante, conviene subrayar que se trata de un modelo derivado de terceros, sin benchmarks publicados en la información disponible, con licencia Gemma (que impone restricciones de uso) y cuyo proceso de modificación puede degradar capacidades generales. La model card del cuantizador no aporta detalles sobre el entrenamiento ni sobre el rendimiento empírico.
+Conviene subrayar que la información disponible es escasa: la model card del cuantizador es fundamentalmente logística (lista de quants) y no aporta datos de entrenamiento, benchmarks ni contexto. Los datos que siguen se limitan a lo verificable en la información proporcionada, y lo ausente se marca explícitamente como "no disponible".
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4, variante E4B-it); detalles internos no disponibles |
-| Parámetros totales | 7.463.013.674 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | i1-Q2_K, i1-IQ3_M, i1-Q4_K_S (listados en el repo); la model card menciona además un conjunto más amplio de quants previstos (IQ1_S a Q6_K, Q4_0, Q4_1) |
+| Arquitectura | Transformer decoder-only (familia Gemma 4, variante E4B); detalles internos no disponibles |
+| Parámetros totales | 7.463.013.674 (según safetensors del modelo base) |
+| Parámetros activos | no disponible (no se declara que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-IQ3_XXS, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (lista parcial en la model card; existen además quants estáticos en el repo hermano) |
 | Idiomas soportados | en (inglés) |
-| Licencia | gemma |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en transformers/safetensors |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | GGUF (cuantizado con imatrix/weighted quants); repo estático hermano con quants estáticos y posible mmproj |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una variante de Gemma 4 E4B-it, un transformer de la familia Gemma de Google, sobre el que se ha aplicado una modificación denominada *weight-space programming*. Esta técnica, asociada a la interpretabilidad mecanicista, consiste en editar directamente los pesos o direcciones de activación del modelo para inducir o suprimir comportamientos concretos sin reentrenamiento adicional (de ahí la etiqueta *zero-training*). En este caso, la edición se orienta a eliminar las respuestas de rechazo (*heretic*, *uncensored*, *abliterated*, *decensored*), presumiblemente mediante abliteration: la identificación de una dirección de activación asociada al rechazo y su proyección fuera del espacio de pesos.
+La arquitectura subyacente es la de Gemma 4 en su variante E4B, es decir, un transformer decoder-only de la familia Google Gemma, con aproximadamente 7.460 millones de parámetros almacenados. No se dispone en la información proporcionada de detalles sobre número de capas, dimensión oculta, cabezas de atención, tipo de atención (global/local, RoPE, etc.) ni de la composición del corpus de preentrenamiento. Tampoco se documenta el proceso de alineamiento (RLHF, DPO u otros) del modelo base Gemma 4 original.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF o DPO en el modelo base. El repositorio es únicamente de cuantización: mradermacher genera versiones GGUF con matrices de importancia (imatrix) a partir de los pesos del modelo de xtools-at, sin aportar entrenamiento propio. Las cuantizaciones i1 (basadas en imatrix) suelen ofrecer mejor relación calidad/tamaño que las cuantizaciones estáticas equivalentes, especialmente en rangos bajos como IQ3 o Q2.
+Lo que sí está documentado es la intervención posterior: el modelo base `xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic` aplica "weight-space programming", una técnica de modificación directa de pesos (sin fine-tuning adicional, de ahí la etiqueta "zero-training") orientada a interpretabilidad mecanística y a inducir comportamientos de tool calling y uso agéntico. Sobre esa base se aplica además una modificación "heretic"/abliterated/"decensored", que típicamente consiste en identificar y neutralizar direcciones de activación asociadas a rechazos y respuestas censuradas. Esta cuantización concreta es una conversión GGUF con imatrix, que preserva el comportamiento del modelo base a menor precisión. No hay información sobre tokens de entrenamiento, dataset, ni innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés.
-- Tool calling y function calling: las etiquetas del repositorio incluyen explícitamente `tool-calling` y `agentic`.
-- Flujos agénticos y razonamiento multi-paso, según las etiquetas del autor.
-- Capacidad de visión: la model card del cuantizador indica que es un modelo de visión y que los ficheros mmproj, si existen, están en el repositorio estático.
-- Comportamiento sin rechazo (*uncensored*): el modelo ha sido modificado para no declinar peticiones que el Gemma original rechazaría.
-- Idiomas: únicamente inglés declarado; no se documenta soporte multilingüe.
-- No se documentan capacidades de audio, thinking mode explícito ni otras modalidades más allá de texto y visión.
+- Generación de texto conversacional en inglés, con modo instruct (`-it`).
+- Tool calling / function calling: el modelo base declara explícitamente la etiqueta `tool-calling`.
+- Uso agéntico y razonamiento multi-paso: etiqueta `agentic` en el modelo base.
+- Comportamiento "uncensored"/"decensored": se han eliminado los mecanismos de rechazo, por lo que responde a peticiones que el Gemma original rechazaría.
+- Capacidad de visión: la model card del cuantizador indica "This is a vision model" y remite a posibles ficheros mmproj en el repositorio estático; la disponibilidad efectiva de mmproj no se confirma en la información proporcionada.
+- Modificación de pesos orientada a interpretabilidad mecanística (weight-space programming), relevante para investigación más que para uso final.
+- Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`; no se declara soporte de otros idiomas.
 
 ## Casos de uso
 
-- Agentes locales con tool calling: el modelo puede integrarse en frameworks agénticos (por ejemplo, orquestadores que expongan funciones vía JSON schema) y ejecutarse en local con llama.cpp u Ollama, aprovechando su tamaño de ~7,5B para mantener latencia baja en hardware de consumo.
-- Automatización de tareas de escritorio o scripting: al no rechazar peticiones, resulta útil en pipelines internos de generación de código o comandos donde el modelo original podría bloquear solicitudes legítimas pero sensibles en apariencia.
-- Procesamiento de documentos con OCR ligero: la variante de visión permite extraer texto o describir imágenes en flujos batch, siempre que se disponga del fichero mmproj del repositorio estático.
-- Investigación en interpretabilidad: sirve como caso de estudio para comparar el comportamiento de un Gemma 4 E4B-it estándar frente a una versión editada en el espacio de pesos, evaluando qué capacidades se preservan y cuáles se degradan.
-- Experimentación con cuantizaciones: los distintos niveles i1 (Q2_K, IQ3_M, Q4_K_S) permiten medir el impacto de la cuantización en tareas de tool calling y generación conversacional en entornos con VRAM limitada.
-- Prototipado de asistentes sin filtros para entornos controlados: en pruebas internas de red teaming o evaluación de robustez, donde se necesita un modelo que no aplique rechazos para estudiar respuestas ante entradas adversarias.
+- Investigación en interpretabilidad mecanística: permite estudiar el efecto de intervenciones en el espacio de pesos (weight-space programming) sobre las representaciones internas, comparando el modelo intervenido con el Gemma 4 original en tareas controladas.
+- Estudio del fenómeno de abliteration: útil para medir cuantitativamente cómo la eliminación de direcciones de rechazo afecta a la tasa de cumplimiento, la coherencia y la calidad en prompts sensibles, en un entorno reproducible con GGUF.
+- Ejecución local de un Gemma 4 en hardware de consumo: las cuantizaciones i1-IQ2_* e i1-IQ3_* (3,6-4,8 GB) permiten desplegar el modelo en portátiles y GPUs con poca VRAM mediante llama.cpp u Ollama, para pruebas de prototipos.
+- Evaluación de pipelines agénticos y tool calling: al declarar soporte de tool calling y comportamiento agéntico, sirve para probar orquestadores de agentes y esquemas de function calling antes de migrar a modelos mayores.
+- Generación de código y texto sin restricciones de contenido: en entornos de investigación donde se necesita un modelo que no filtre respuestas (por ejemplo, estudio de sesgos o de robustez frente a jailbreaks), este derivado evita los rechazos del modelo original.
+- Benchmarking de cuantizaciones GGUF: el repositorio ofrece más de veinte variantes i1, lo que permite comparar degradación de calidad frente a tamaño entre IQ1, IQ2, IQ3, Q4, Q5 y Q6 sobre el mismo modelo base.
+- Pruebas de visión (si mmproj está disponible): la model card indica que es un modelo de visión y que los ficheros mmproj, si existen, están en el repo estático; puede usarse para validar pipelines multimodales en llama.cpp.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +53,45 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 4,5 GB para i1-Q2_K, 4,8 GB para i1-IQ3_M y 5,3 GB para i1-Q4_K_S, según los tamaños de fichero indicados en la model card.
-- Cabe en GPU de consumo: sí, en tarjetas con 6-8 GB de VRAM o más (RTX 3060, RTX 4060, RTX 3070, RTX 4070), dependiendo del quant y del contexto utilizado.
-- GPU recomendadas para mayor throughput: RTX 4090, A100 o H100 si se busca servir múltiples peticiones concurrentes o contextos largos.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el repositorio incluye la etiqueta `endpoints_compatible`. Para el modelo base en transformers se requiere la librería transformers.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia (según tamaño de fichero GGUF, con overhead adicional de contexto y KV cache):
+  - i1-IQ1_S (3,4 GB): ~4-5 GB de VRAM efectiva.
+  - i1-IQ2_* (3,6-3,9 GB): ~4,5-5,5 GB.
+  - i1-IQ3_* / Q3_K_* (4,1-5,1 GB): ~5-6,5 GB.
+  - i1-IQ4_XS / Q4_K_* (≈5,1 GB en adelante): ~6-7 GB.
+  - i1-Q5_K_* e i1-Q6_K: por encima de 7 GB; el tamaño exacto no figura completo en la información proporcionada.
+- GPU recomendadas: para las cuantizaciones bajas (IQ1-IQ3) basta una RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070; para Q5/Q6 se recomienda RTX 4080/4090 16-24 GB. En entornos de servidor, A100 o H100 ofrecen margen amplio y mayor throughput.
+- Cabe en GPU de consumo: sí, en la mayoría de cuantizaciones. Las variantes IQ1/IQ2 caben incluso en GPUs de 6-8 GB; las Q5/Q6 requieren 12 GB o más.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo TGI/vLLM en el ecosistema HF, aunque vLLM no es el runtime principal para GGUF.
+- Latencia y throughput: no disponibles. No se han publicado mediciones en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (i1-GGUF) | 7,46B | no disponible | gemma | GGUF | Variante uncensored con tool calling y visión |
-| Gemma 4 E4B-it (original) | ~7,5B (no confirmado en la información) | no disponible | gemma | safetensors | Modelo base con filtros de seguridad |
-| mradermacher/gemma-4-E4B-it-...-GGUF (estático) | 7,46B | no disponible | gemma | GGUF | Misma base, cuantizaciones estáticas sin imatrix |
+| Este modelo (Gemma 4 E4B WSP heretic i1-GGUF) | 7.463 M | no disponible | gemma | GGUF | Derivado con weight-space programming y abliteration; solo inglés |
+| Gemma 4 E4B-it original (familia Google) | ~7.460 M (variante E4B) | no disponible en esta ficha | gemma | safetensors / GGUF | Modelo base sin intervención; mantiene mecanismos de rechazo |
+| xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic | 7.463 M | no disponible | gemma | safetensors | Modelo base directo de esta cuantización; sin cuantizar |
+| Otras cuantizaciones GGUF de Gemma 4 de 7B (p. ej. repos de terceros) | ~7.000 M | no disponible | gemma | GGUF | Alternativas de despliegue local sin modificaciones de pesos |
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
+No se dispone de datos de rendimiento comparativo (benchmarks) en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Modelo *uncensored*: la eliminación de rechazos implica que puede generar contenido dañino, ilegal o inseguro; no es apto para exposición directa a usuarios finales sin capas de moderación externas.
-- La edición en el espacio de pesos puede degradar capacidades generales (razonamiento, coherencia, instrucciones complejas); no hay evaluaciones publicadas que cuantifiquen esa degradación.
-- Riesgo de alucinación inherente a modelos de ~7,5B, agravado por la falta de benchmarks verificables.
-- Idiomas: solo inglés declarado; el uso en castellano no está soportado oficialmente.
-- Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribución; conviene revisar los términos antes de desplegar en producción.
-- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validación comunitaria de la calidad de las cuantizaciones.
-- El proceso de cuantización i1 a niveles bajos (Q2, IQ3) puede afectar de forma notable a la precisión en tool calling y visión.
+- Solo inglés: la etiqueta de idioma es `en`; no se declara soporte de castellano ni de otros idiomas, por lo que el rendimiento fuera del inglés es incierto.
+- Modelo "uncensored"/abliterated: la eliminación de mecanismos de rechazo implica que puede generar contenido dañino, ofensivo o ilegal si se le solicita. No es adecuado para aplicaciones de cara al público sin capas de filtrado externas.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay datos de evaluación que permitan acotarlo. La intervención de pesos puede alterar la calibración del modelo respecto al original.
+- Licencia Gemma: el uso comercial está sujeto a los Gemma Terms of Use de Google, que imponen restricciones (incluida la prohibición de usar el modelo para ciertos fines y obligaciones de atribución). Es imprescindible revisar los términos antes de un despliegue en producción.
+- Artefacto experimental: el modelo base es un derivado de terceros con modificaciones de pesos no auditadas; no hay garantía de estabilidad, calidad ni reproducibilidad de la intervención.
+- Cuantizaciones muy agresivas (i1-IQ1_*, i1-IQ2_*): la propia model card las describe como "for the desperate" o de calidad muy baja; degradan notablemente la coherencia y no deberían usarse en producción.
+- Visión condicional: la model card afirma que es un modelo de visión, pero los ficheros mmproj, si existen, están en el repositorio estático; no se confirma su disponibilidad ni su calidad.
+- Contexto desconocido: no se documenta la longitud de contexto, lo que impide planificar tareas de contexto largo.
+- Sin benchmarks: no hay métricas publicadas, por lo que no se puede comparar objetivamente con alternativas.
+- Repositorio de 111 GB: el peso de descarga es elevado por la acumulación de variantes; conviene descargar solo el quant necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF
-- Modelo base: https://huggingface.co/xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-GGUF
-- Página de descargas del cuantizador: https://hf.tst.eu/model#gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF
-- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF
+- Modelo base (xtools-at): https://huggingface.co/xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic
+- Repositorio de quants estáticos de mradermacher: https://huggingface.co/mradermacher/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-GGUF
+- Página de overview de descargas de mradermacher: https://hf.tst.eu/model#gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

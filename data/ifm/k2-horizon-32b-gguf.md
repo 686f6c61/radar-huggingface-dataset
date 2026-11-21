@@ -2,86 +2,98 @@
 
 ## Resumen
 
-K2-Horizon-32B-Stage1 es un modelo de lenguaje denso de 32B parámetros desarrollado por IFM dentro de la familia K2-Horizon. Se trata de un transformer decoder-only con ventana de contexto nativa de 524.288 tokens (512K), lo que lo convierte en uno de los modelos dense open-weight con contexto más largo disponibles. Este repositorio contiene las versiones GGUF del modelo, optimizadas para su ejecución con llama.cpp, con los tensores almacenados en BF16 original.
+K2-Horizon-32B-Stage1 es un modelo de lenguaje decoder-only de tipo dense con 32B parámetros (34.779.304.960 parámetros reales según los pesos en safetensors) desarrollado por IFM. Forma parte de la familia K2-Horizon, de la que constituye el miembro dense de mayor tamaño, y se distribuye en este repositorio en formato GGUF para su uso con llama.cpp. Su rasgo más distintivo es una ventana de contexto nativa de 524.288 tokens (512K), disponible desde las etapas de midtraining.
 
-El modelo se encuentra en fase de entrenamiento intermedia (Stage1); la model card indica que el checkpoint final se publicará próximamente (Stage2). La licencia es Apache-2.0 y tanto los datos de entrenamiento como el código de entrenamiento se harán públicos. Su relevancia actual radica en ofrecer un baseline denso de 32B con contexto de 512K, orientado a tareas de razonamiento largo, procesamiento de documentos extensos y aplicaciones de agentes.
+El modelo se publica como open-weights bajo licencia Apache 2.0, con compromiso explícito del autor de liberar los datos de entrenamiento, la receta y el código de entrenamiento. El checkpoint disponible corresponde a la etapa 1 del entrenamiento final; el autor indica que el checkpoint definitivo (etapa 2) se publicará más adelante, junto con checkpoints intermedios para estudiar la evolución de capacidades a lo largo del entrenamiento.
 
-En los benchmarks publicados, el modelo se compara con alternativas dense open-weight de tamaño similar, como Qwen3.8-27B, Muse Glimmer-30B e IBM Granite 4.2 30B. Sin embargo, los valores numéricos de dichos benchmarks no están disponibles en la información proporcionada.
+Es relevante ahora porque ofrece una alternativa dense de tamaño medio con contexto extremadamente largo en un ecosistema (GGUF + llama.cpp) que facilita el despliegue local y en infraestructura propia, y porque su evaluación se presenta frente a modelos dense open-weights comparables (Qwen3.8-27B, Muse Glimmer-30B, IBM Granite 4.2 30B) en benchmarks agénticos, de código y de razonamiento.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (denso) |
-| Parametros totales | 34.779.304.960 (32B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 524.288 tokens (512K) |
-| Tipos de cuantizacion | Tensores en BF16 original; cuantizaciones GGUF no especificadas |
+| Arquitectura | Transformer decoder-only dense |
+| Parámetros totales | 34.779.304.960 (32B nominales) |
+| Parámetros activos | No aplica (modelo dense) |
+| Longitud de contexto | 524.288 tokens (512K), nativa desde midtraining |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q5_0, Q4_K_M |
 | Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (el modelo original también disponible en safetensors) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo); safetensors en el modelo base IFM/K2-Horizon-32B |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso, sin capas de atención lineal ni arquitectura MoE. El entrenamiento se divide en dos etapas: Stage1, que es el checkpoint publicado, y Stage2, que aún no está disponible. Los datos de entrenamiento son IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data, ambos públicos. Según la model card, el contexto de 512K es nativo desde la etapa de midtraining. La arquitectura K2 Horizon requiere soporte específico en llama.cpp; en el momento de la publicación, la integración upstream está en proceso (PR en progreso) y se proporciona un fork de MBZUAI-IFM con el soporte necesario.
+La arquitectura es un transformer decoder-only dense, sin mezcla de expertos: los 32B parámetros están activos en cada paso de inferencia. El contexto nativo de 524.288 tokens se establece a partir de las etapas de midtraining, lo que sugiere una extensión planificada del contexto durante el entrenamiento en lugar de un ajuste posterior. La model card no detalla el número de capas, dimensiones ocultas, cabezas de atención ni el mecanismo exacto de atención empleado para sostener esa ventana.
+
+El entrenamiento se organiza en etapas: el checkpoint publicado corresponde a la etapa 1 del entrenamiento final, con una etapa 2 pendiente de publicación. Los datasets referenciados son IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data, y el autor anuncia la publicación de los datos, la receta y el código de entrenamiento. No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF, DPO u otras técnicas de alineación.
 
 ## Capacidades
 
-- Generación de texto y conversación en inglés, con plantilla de chat compatible con llama.cpp.
-- Razonamiento orientado a benchmarks de agentes, codificación y razonamiento, según se indica en la model card.
-- Contexto extendido de 512K tokens, apto para procesar documentos largos, logs extensos y codebases completos en una sola llamada.
-- Evaluación realizada sobre tareas de agentes y multi-step reasoning, aunque no se detallan resultados numéricos.
-- No se especifica soporte explícito para tool calling, visión ni audio en la información disponible.
+- Generación de texto conversacional en inglés, con plantilla de chat compatible con llama.cpp incluida en los ficheros GGUF.
+- Razonamiento y resolución de tareas evaluadas en benchmarks agénticos, de código y de razonamiento (según la model card).
+- Procesamiento de contexto largo: hasta 524.288 tokens, adecuado para documentos extensos, repositorios de código o historiales de conversación prolongados.
+- Uso como modelo base dense para tareas de generación y continuación de texto.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en el repositorio).
+- No se documenta en la información disponible soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Analisis de documentos extensos: procesamiento de informes, contratos o bases de código completas en una sola pasada, gracias a la ventana de 512K tokens. El modelo puede mantener el contexto de un repositorio entero sin segmentar la entrada.
-- Asistentes de programación: generación y revisión de código en proyectos grandes, donde el historial de cambios y dependencias se mantiene dentro de la ventana de contexto. Las evaluaciones de coding de la model card sugieren utilidad en este escenario.
-- Atención al cliente automatizada: gestión de conversaciones multi-turno en inglés con memoria larga, manteniendo el contexto de interacciones anteriores durante semanas o meses. La plantilla de chat y la arquitectura densa facilitan un despliegue sencillo.
-- Investigación en IA: experimentación con modelos open-weight de 32B, con acceso a los datos de entrenamiento publicados y al código de entrenamiento. Es útil para estudios de análisis de capacidades, fine-tuning y evaluación de modelos intermedios.
-- Agentes autónomos: uso en pipelines de razonamiento multi-paso que requieren mantener un estado extenso, como planificación de tareas, análisis de logs o decisiones basadas en documentación histórica.
-- Despliegue local con llama.cpp: ejecución en entornos sin GPU dedicada mediante cuantizaciones GGUF, ideal para prototipos, desarrollo y aplicaciones edge donde el formato GGUF es el estándar.
+- Análisis de documentación técnica extensa: con 512K tokens de contexto, el modelo puede ingerir manuales completos, especificaciones o expedientes y responder preguntas sobre ellos sin fragmentación ni recuperación externa.
+- Revisión de repositorios de código: el contexto largo permite cargar múltiples ficheros de un proyecto en una sola pasada para tareas de explicación, búsqueda de patrones o detección de inconsistencias entre módulos.
+- Asistentes conversacionales de sesión larga: el historial completo de una conversación prolongada cabe en la ventana, lo que reduce la pérdida de información que sufren los modelos con contexto corto en diálogos multi-turno.
+- Despliegue local con llama.cpp: las variantes Q4_K_M y Q5_K_M permiten ejecutar el modelo en estaciones de trabajo con GPU de consumo alta o en servidores con memoria unificada, sin depender de APIs externas.
+- Procesamiento por lotes de textos largos: resúmenes, extracción de información y clasificación sobre corpus de documentos de gran tamaño en pipelines offline.
+- Base para fine-tuning e investigación: al ser open-weights con licencia Apache 2.0 y con datos y receta de entrenamiento anunciados, sirve como punto de partida para ajustes específicos de dominio y para estudios de escalado de contexto.
+- Evaluación comparativa de arquitecturas dense: útil como referencia en experimentos que comparen modelos dense de ~30B en tareas de contexto largo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card presenta una tabla comparativa contra Qwen3.8-27B, Muse Glimmer-30B e IBM Granite 4.2 30B, pero los valores numéricos de los resultados no están visibles en los datos proporcionados. No se pueden presentar cifras concretas de rendimiento.
+La model card incluye una tabla comparativa frente a Qwen3.8-27B, Muse Glimmer-30B e IBM Granite 4.2 30B en benchmarks agénticos, de código y de razonamiento. Sin embargo, en la información proporcionada solo se conservan las filas de número de parámetros, parámetros activos y arquitectura; los valores numéricos de los benchmarks no están disponibles en el extracto recibido.
+
+| Modelo | Parámetros | Parámetros activos | Arquitectura |
+|---|---|---|---|
+| K2-Horizon-32B-Stage1 | 32B | 32B | Dense |
+| Qwen3.8-27B | 27B | 27B | Dense |
+| Muse Glimmer-30B | 30B | 30B | Dense |
+| IBM Granite 4.2 30B | 30B | 30B | Dense |
+
+No se han publicado en la información disponible los resultados numéricos de los benchmarks (MMLU, HumanEval, GSM8K u otros) para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en BF16, aproximadamente 70 GB (34.779.304.960 parámetros × 2 bytes). Con cuantizaciones típicas, se estima ~35 GB en Q8_0 y ~20 GB en Q4_K_M.
-- GPU recomendadas: A100 80GB, H100 80GB, o dos RTX 4090 con offloading de capas para ejecución en BF16.
-- Consumer GPU: una RTX 4090 de 24GB puede ejecutar el modelo con cuantización Q4_K_M, aunque con limitaciones de longitud de contexto.
-- Opciones de despliegue: llama.cpp es la vía principal; la integración en Ollama, vLLM o TGI no está confirmada en la información disponible.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia: en BF16, aproximadamente 70 GB solo para pesos, más caché KV para el contexto; en Q8_0, en torno a 35 GB; en Q6_K, unos 27 GB; en Q5_K_M, unos 23 GB; en Q4_K_M, unos 20 GB. Estas cifras son estimaciones a partir del tamaño del modelo y no están confirmadas en la información disponible.
+- La caché KV para 512K tokens es el factor limitante principal: a mayor contexto configurado, mayor memoria adicional necesaria, por lo que en la práctica conviene ajustar la ventana al caso de uso.
+- GPU recomendadas: A100 80 GB o H100 para BF16 con contexto largo; para cuantizaciones Q4/Q5, GPU de 24 GB (RTX 4090, RTX 3090) pueden ser suficientes con contextos moderados, y configuraciones multi-GPU o memoria unificada (por ejemplo, Apple Silicon de gama alta) para ventanas grandes.
+- Cabe en GPU de consumo en cuantizaciones Q4_K_M y Q5_K_M con contexto reducido; no cabe en BF16 en GPU de consumo.
+- Opciones de despliegue: llama.cpp (requiere una versión con soporte de la arquitectura K2 Horizon; el soporte en mainline se integró en la release b11454), y herramientas construidas sobre llama.cpp como Ollama o servidores compatibles con la API de OpenAI. No se documenta soporte de vLLM o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Según la model card, el modelo se compara con alternativas dense open-weight de tamaño similar:
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| K2-Horizon-32B-Stage1 | 32B dense | 524.288 tokens | Apache 2.0 | GGUF en Hugging Face; safetensors en el modelo base | Checkpoint de etapa 1; etapa 2 pendiente |
+| Qwen3.8-27B | 27B dense | No disponible | No disponible | No disponible | Incluido como referencia en la tabla del autor |
+| Muse Glimmer-30B | 30B dense | No disponible | No disponible | No disponible | Incluido como referencia en la tabla del autor |
+| IBM Granite 4.2 30B | 30B dense | No disponible | No disponible | No disponible | Incluido como referencia en la tabla del autor |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| K2-Horizon-32B-Stage1 | 32B | 512K | Apache-2.0 | Open weights, GGUF |
-| Qwen3.8-27B | 27B | no disponible | no disponible | no disponible |
-| Muse Glimmer-30B | 30B | no disponible | no disponible | no disponible |
-| IBM Granite 4.2 30B | 30B | no disponible | no disponible | no disponible |
-
-No se dispone de información suficiente sobre el contexto, licencia o disponibilidad de las alternativas en los datos proporcionados.
+Los datos de contexto, licencia y disponibilidad de los modelos comparables no figuran en la información proporcionada; solo se dispone de sus parámetros y arquitectura según la tabla de la model card.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint intermedio (Stage1); el rendimiento puede ser inferior al del modelo final que se publicará próximamente.
-- Requiere una versión de llama.cpp con soporte K2 Horizon. La integración upstream está en desarrollo, por lo que pueden existir problemas de compatibilidad con builds estándar.
-- Solo soporta inglés; no se ha documentado soporte multilingüe ni de otros idiomas.
-- No se especifica soporte para tool calling, visión, audio ni otras modalidades multimodales.
-- La ausencia de resultados de benchmarks publicados impide validar su rendimiento comparativo frente a modelos similares.
-- Riesgo de alucinación inherente a los modelos de lenguaje, como en cualquier generación de texto.
-- Los datos de entrenamiento son públicos, pero no se detalla su composición ni se informa sobre posibles sesgos en la model card.
+- El checkpoint publicado es la etapa 1 del entrenamiento final; el autor advierte que el checkpoint definitivo está pendiente, por lo que el rendimiento puede cambiar sustancialmente en la versión final.
+- Modelo entrenado y declarado únicamente para inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- No se documentan en la información disponible datos sobre sesgos, filtrado de datos ni técnicas de alineación (RLHF/DPO), lo que dificulta evaluar el riesgo de respuestas sesgadas o inapropiadas.
+- Riesgo de alucinación inherente a los modelos de lenguaje; con contextos de 512K tokens, la degradación de la atención en posiciones lejanas puede aumentar el riesgo de omitir o distorsionar información.
+- El contexto largo exige mucha memoria para la caché KV; en hardware limitado habrá que recortar la ventana efectiva, lo que reduce una de las ventajas principales del modelo.
+- Requiere una versión de llama.cpp con soporte de la arquitectura K2 Horizon (mainline desde b11454); versiones anteriores no cargarán los ficheros GGUF.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar los términos del modelo base y de los datasets anunciados cuando se publiquen.
+- No se documenta soporte de tool calling ni de agentes multi-paso, por lo que no debe asumirse su uso en pipelines agénticos sin validación previa.
 
 ## Enlaces
 
-- Hugging Face (repo GGUF): https://huggingface.co/IFM/K2-Horizon-32B-GGUF
-- Hugging Face (modelo base): https://huggingface.co/IFM/K2-Horizon-32B
-- Colección K2 Horizon en Hugging Face: https://huggingface.co/collections/IFM/k2-horizon
-- Dataset de pre-entrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
-- Dataset de mid-entrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
-- Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon
+- Repositorio GGUF: https://huggingface.co/IFM/K2-Horizon-32B-GGUF
+- Modelo base: https://huggingface.co/IFM/K2-Horizon-32B
+- Dataset de pretraining: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
+- Release de llama.cpp con soporte K2 Horizon (b11454): https://github.com/ggml-org/llama.cpp/releases?page=5#release-b11454

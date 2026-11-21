@@ -2,96 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ4e-mtp es una cuantización mixta en formato MLX del modelo Qwen/Qwen3.8-Flash-Next, un checkpoint experimental de la arquitectura que Qwen empleará en su próxima generación (Qwen4). El modelo original es un mixture-of-experts multimodal (visión-lenguaje) de 125.000 millones de parámetros en el backbone lingüístico con 6.000 millones activados por token, al que se suman un embedding n-gram de 51.200 millones de parámetros y un módulo de predicción multi-token (MTP) de 4.000 millones. El autor de la cuantización es Jundot, que la publica mediante su herramienta oQ (oMLX v0.7.3).
+Qwen3.8-Flash-Next-oQ4e-mtp es una cuantizacion de precision mixta en formato MLX del modelo Qwen/Qwen3.8-Flash-Next, desarrollado por el usuario Jundot mediante la herramienta oQ (oMLX v0.8.0). El modelo base es una vista previa experimental de la arquitectura que Qwen empleara en Qwen4: un modelo de mezcla de expertos (MoE) multimodal texto-imagen con 125B parametros en el backbone de lenguaje y 6B activos por token, acompanado de un embedding de n-gramas de 51B, un codificador visual de 0,449B y un modulo de prediccion multi-token (MTP) de 2,607B. En total, el checkpoint almacena 180.000 millones de parametros logicos en 100,275 GiB.
 
-La relevancia de esta ficha radica en que permite ejecutar en hardware Apple Silicon un modelo de escala frontier que, en BF16, ocuparía más de 300 GB. La cuantización mixta reduce el checkpoint a 100,275 GiB con una media efectiva de 4,785 bits por peso, preservando en 8 bits las capas identificadas como sensibles y comprimiendo el embedding n-gram a 4 bits con grupo 32. El resultado es un checkpoint de 107,7 GB de repositorio que mantiene el codificador visual y la cabeza MTP, lo que habilita decodificación especulativa y entrada de imágenes.
+La relevancia de esta publicacion radica en que comprime un modelo de 180B parametros a una media efectiva de 4,785 bits por peso (4,661 bits/weight en el backbone de lenguaje), permitiendo su despliegue en hardware Apple Silicon mediante MLX con un tamano en disco de 107,67 GB. La cuantizacion no es uniforme: asigna bits segun la sensibilidad medida de cada capa, aplica matrices de importancia y un reajuste por minimos cuadrados ponderados de escala y sesgo, y preserva en BF16 aquellas partes criticas (0,516B de pesos).
 
-La arquitectura combina Gated DeltaNet (atención lineal con estado recurrente) con Qwen Sparse Attention (QSA) y flujos residuales con compuertas (Gated Residual streams), una combinación híbrida que busca reducir el coste de atención en contextos largos. El modelo se distribuye bajo Qwen Community License 1.0, con las restricciones que ello implica para uso comercial.
+La version actual (actualizada el 19 de noviembre de 2026) incorpora un redondeo oQe refinado que reduce el error de cuantizacion manteniendo tamano y velocidad. El modelo esta publicado bajo la licencia Qwen Community License 1.0, heredada del modelo fuente.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido MoE con Gated DeltaNet + Qwen Sparse Attention (QSA) y Gated Residual streams; codificador visual y cabeza MTP |
-| Parámetros totales | 179.999.981.459 (180.000B): 125.744B backbone lingüístico, 51.200B embedding n-gram, 0.449B codificador visual, 2.607B cabeza MTP |
-| Parámetros activos | 6B en el backbone MoE (125B totales en el backbone) |
+| Arquitectura | MoE multimodal (texto-imagen) con Gated DeltaNet, Qwen Sparse Attention (QSA) y Gated Residual streams; incluye embedding de n-gramas y cabezal MTP |
+| Parametros totales | 179.999.981.459 (180B) |
+| Parametros activos | 6B (backbone MoE); 125B en el backbone de lenguaje |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | oQ4e mixta: affine 4-bit grupo 64 (123.313B), affine 8-bit grupo 128 (0.241B), affine 8-bit grupo 64 (4.731B), BF16 (0.516B), n-gram affine 4-bit grupo 32 (51.200B); media efectiva 4.785 bits/peso (4.661 en el backbone) |
+| Tipos de cuantizacion | oQ4e de precision mixta: affine 4-bit grupo 64, affine 8-bit grupo 64 y 128, BF16, n-gram affine 4-bit grupo 32; media efectiva 4,785 bits/peso (4,661 en el backbone) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
-| Formato de pesos | safetensors en formato MLX (librería `mlx`), cuantización mixta oQ |
+| Licencia | Qwen Community License 1.0 (qwen-community-1.0, etiquetada como "other") |
+| Formato de pesos | safetensors (MLX), libreria mlx; repo de 107,7 GB |
+| Componentes | Backbone de lenguaje 125,744B (68,227 GiB); embedding n-gramas 51,200B (29,802 GiB); codificador visual 0,449B (0,836 GiB); cabezal MTP 2,607B (1,409 GiB) |
+| Pipeline | image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-El backbone lingüístico es un mixture-of-experts de 125.744B parámetros con 6B activados por token, construido sobre una arquitectura híbrida que intercala capas de Gated DeltaNet —atención lineal con estado recurrente y decaimiento controlado por compuerta— con capas de Qwen Sparse Attention. A ello se añaden Gated Residual streams, que modulan la contribución de cada bloque residual. El modelo incorpora además un embedding n-gram de 51.200B parámetros, presumiblemente orientado a mejorar la recuperación de patrones léxicos frecuentes, y un codificador visual de 0.449B que habilita la entrada de imágenes (pipeline `image-text-to-text`).
+El modelo base combina un backbone de lenguaje MoE de 125B parametros con 6B activos junto a tres componentes adicionales: un embedding de n-gramas de 51,2B parametros, un codificador visual de 0,449B y un modulo de prediccion multi-token (MTP) de 2,607B. La arquitectura sustituye la atencion clasica por una combinacion de Gated DeltaNet (mecanismo de estado lineal con compuertas) y Qwen Sparse Attention (QSA), e incorpora Gated Residual streams para estabilizar el flujo de informacion a lo largo de las capas. Esta configuracion apunta a reducir el coste computacional de la atencion en contextos largos manteniendo la calidad de un transformer denso.
 
-La cabeza MTP de 2.607B parámetros implementa predicción multi-token, lo que permite decodificación especulativa autogenerada: el modelo propone varios tokens por paso y el backbone los verifica, incrementando el throughput sin modelo borrador externo. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO; la model card del checkpoint cuantizado no los detalla y la información proporcionada no los incluye.
-
-La cuantización oQ4e asigna bits según la sensibilidad medida por capa, redondea cada grupo con una matriz de importancia (1024 muestras × 512 tokens) y reajusta escala y sesgo mediante mínimos cuadrados ponderados. La versión actual (2026-10-29) se regeneró con la mejora oQe de oMLX 0.7.3.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. La unica innovacion documentada en esta ficha es el proceso de cuantizacion: oQ4e asigna bits por sensibilidad de capa medida, redondea cada grupo con una matriz de importancia (1024 muestras x 512 tokens) y reajusta escala y sesgo mediante minimos cuadrados ponderados. El checkpoint conserva en BF16 0,516B de pesos (0,287% del total) y mantiene en 8 bits 4,731B adicionales, concentrando la perdida de precision en las capas menos sensibles.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: acepta entradas de imagen y texto (`image-text-to-text`) y produce respuestas conversacionales.
-- Comprensión de imágenes mediante el codificador visual de 0.449B parámetros incluido en el checkpoint.
-- Decodificación especulativa nativa gracias a la cabeza MTP de 2.607B parámetros.
-- Modelo conversacional con soporte de diálogo multi-turno.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento multimodal: el pipeline image-text-to-text y el codificador visual de 0,449B permiten entrada conjunta de imagenes y texto.
+- Procesamiento de imagenes: el codificador visual esta incluido en el checkpoint, por lo que la cuantizacion cubre tanto el modelo de lenguaje como la torre visual.
+- Prediccion multi-token (MTP): el cabezal de 2,607B habilita decodificacion especulativa interna y acelera la generacion autoregresiva.
+- Embedding de n-gramas de gran escala: 51,2B parametros dedicados a representaciones de n-gramas, lo que sugiere un refuerzo de la modelizacion lexica y de recuperacion de patrones locales.
+- Eficiencia por activacion dispersa: solo 6B de los 125B parametros del backbone se activan por token, lo que reduce el coste de inferencia frente a un modelo denso equivalente.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; no se declaran idiomas en la model card.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon: el checkpoint de 100,275 GiB está diseñado para ejecutarse con MLX en equipos con memoria unificada de 128 GB o superior (Mac Studio M3 Ultra, por ejemplo), permitiendo usar un modelo de escala frontier sin GPU dedicada.
-- Asistentes conversacionales multimodales: el pipeline `image-text-to-text` permite construir interfaces donde el usuario adjunta capturas, diagramas o documentos escaneados y el modelo responde en lenguaje natural, aprovechando el codificador visual integrado.
-- Prototipado de aplicaciones sobre la arquitectura Qwen4: al ser un preview experimental de la arquitectura de próxima generación, sirve para evaluar Gated DeltaNet y QSA antes de que existan checkpoints estables.
-- Generación acelerada con decodificación especulativa: la cabeza MTP permite aumentar tokens por segundo en despliegues MLX sin cargar un modelo borrador adicional, útil en entornos interactivos con latencia sensible.
-- Investigación sobre cuantización mixta: el reparto de bits documentado (4/8 bits por capa, 4 bits en el embedding n-gram) permite estudiar el impacto de la precisión por componente en tareas de razonamiento y visión.
-- Procesamiento de documentos con componente visual: extracción y descripción de contenido en imágenes dentro de pipelines de análisis documental, siempre que se valide la calidad frente al modelo en BF16.
-- Evaluación comparativa de arquitecturas híbridas: banco de pruebas para medir el comportamiento de atención lineal más atención dispersa frente a transformers densos en tareas de contexto largo.
+- Inferencia local en Apple Silicon: el checkpoint MLX de 100,275 GiB esta pensado para ejecutarse con la libreria mlx en equipos con memoria unificada suficiente; el formato y la cuantizacion mixta reducen el ancho de banda de memoria frente a una version BF16 del mismo modelo.
+- Analisis de documentos con imagenes: al ser un modelo image-text-to-text, puede procesar capturas, diagramas o paginas escaneadas junto a instrucciones textuales en un unico turno.
+- Generacion acelerada por MTP: el cabezal de prediccion multi-token permite validar varios tokens por paso de decodificacion, adecuado para cargas interactivas donde la latencia por token es critica.
+- Investigacion sobre cuantizacion de MoE: la distribucion detallada de bits por componente (4-bit grupo 64, 8-bit grupo 64/128, BF16, n-gram 4-bit grupo 32) sirve como referencia reproducible para estudiar el impacto de la precision mixta en modelos con modulos heterogeneos.
+- Evaluacion de arquitecturas post-transformer: Gated DeltaNet combinada con QSA y Gated Residual streams permite experimentar con alternativas a la atencion cuadratica en tareas de contexto largo, aunque la longitud de contexto no esta documentada.
+- Despliegue de referencia para Qwen4: al ser una vista previa experimental de la arquitectura de Qwen4, resulta util para anticipar requisitos de integracion, formatos de pesos y comportamiento del pipeline multimodal antes de la version final.
+- Recuperacion lexica asistida por n-gramas: el embedding dedicado de 51,2B puede emplearse en experimentos de modelizacion de vocabulario y patrones repetidos, comparando su contribucion frente a un modelo sin ese componente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 100,275 GiB de pesos en el formato cuantizado; con overhead de ejecución (KV cache, buffers, estado recurrente de DeltaNet) se recomienda un mínimo de 112-128 GB de memoria unificada.
-- El repositorio completo ocupa 107,67 GB en disco; se necesita ese espacio libre para la descarga.
-- GPU dedicadas (A100, H100, RTX 4090): no aplicable directamente, ya que el formato es MLX y está pensado para Apple Silicon; no se documenta conversión a CUDA en la información disponible.
-- GPU de consumo: no cabe en ninguna GPU consumer convencional (RTX 4090 con 24 GB, RTX 5090 con 32 GB) por el tamaño del checkpoint.
-- Equipos Apple recomendados: Mac Studio con M3 Ultra o M4 Max y 128 GB o más de memoria unificada; MacBook Pro de gama alta con 128 GB podría cargarlo, con margen reducido.
-- Opciones de despliegue: MLX (librería declarada) y oMLX (herramienta del autor); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles. La cabeza MTP está pensada para mejorar la velocidad de decodificación, pero no se publican cifras.
+- Almacenamiento: el repo ocupa 107,7 GB y el checkpoint descomprimido en memoria requiere aproximadamente 100,275 GiB de pesos, mas overhead de activaciones y cache.
+- Memoria unificada: al ser un checkpoint MLX, necesita un equipo Apple Silicon con memoria unificada igual o superior a ~100 GiB para cargar todos los pesos; no se indica cuantizacion adicional que permita reducir mas el tamano.
+- GPU dedicadas: no disponible; el formato MLX esta orientado a Apple Silicon y no se documenta soporte para A100, H100 o RTX 4090.
+- GPU de consumo: no cabe en GPUs de consumo (24 GB o menos) por el tamano del checkpoint; se requiere hardware de gama alta con memoria muy superior.
+- Opciones de despliegue: libreria mlx con oMLX v0.8.0 como herramienta de cuantizacion; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
+- Latencia y throughput: no disponibles; solo 6B parametros activos por token sugieren un coste computacional moderado, pero el cuello de botella sera el ancho de banda de memoria al leer pesos desde 100 GiB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-oQ4e-mtp (esta ficha) | 180B (125B backbone + 51B n-gram + 4B MTP + 0.4B visión) | 6B | no disponible | MLX safetensors 4/8-bit mixto | qwen-community-1.0 | Hugging Face, 57.468 descargas |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | 180B (misma composición) | 6B | no disponible | BF16 safetensors | qwen-community-1.0 | Hugging Face |
-| Alternativas de tamaño y tarea comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Activos | Contexto | Formato | Licencia |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-oQ4e-mtp | 180B (125B backbone + 51B n-gram + 0,449B vision + 2,607B MTP) | 6B | no disponible | MLX safetensors, 4,785 bits/peso | Qwen Community License 1.0 |
+| Qwen/Qwen3.8-Flash-Next (base) | 180B (misma composicion) | 6B | no disponible | safetensors BF16 (presumible) | Qwen Community License 1.0 |
+| Alternativas de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre otros modelos de la misma categoría (MoE multimodal con atención híbrida y MTP) que permita una comparación cuantitativa fiable.
+No se dispone de datos de rendimiento del modelo base ni de alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: la model card lo describe como preview de la arquitectura de Qwen4, por lo que su comportamiento puede no ser representativo de la versión final.
-- Licencia Qwen Community License 1.0: no es una licencia de código abierto plena; incluye restricciones de uso comercial que deben revisarse en el archivo `LICENSE` antes de desplegar en producción.
-- Idiomas soportados no documentados: no se puede garantizar calidad en castellano ni en otras lenguas distintas del inglés sin evaluación propia.
-- Cuantización con pérdida: 4,785 bits/peso de media implica degradación potencial frente al BF16, especialmente en tareas de razonamiento matemático y precisión numérica; la asignación por sensibilidad mitiga pero no elimina este efecto.
-- Dependencia de MLX: el checkpoint no es portable a CUDA ni a runtimes estándar de PyTorch sin conversión, lo que limita su uso a hardware Apple.
-- Riesgo de alucinación: no se documentan evaluaciones de fidelidad ni tasas de alucinación; al ser un modelo conversacional multimodal, debe validarse en dominios críticos.
-- Sesgos: no se publica información sobre sesgos demográficos, lingüísticos o culturales del modelo base ni del proceso de cuantización.
-- Longitud de contexto no disponible: impide planificar despliegues con documentos largos o conversaciones extensas.
-- Ausencia de benchmarks: no hay métricas publicadas que permitan estimar la degradación introducida por la cuantización respecto al modelo original.
-- Requisito de hardware elevado: 100 GiB de pesos efectivos excluyen su uso en estaciones de trabajo convencionales.
-- Actualización del checkpoint: la versión del 2026-10-29 sustituye a cuantizaciones anteriores; deben descartarse copias previas para evitar resultados inconsistentes.
+- Modelo experimental: se trata de una vista previa de la arquitectura de Qwen4, no de un modelo de produccion consolidado; su comportamiento puede diferir de la version final.
+- Cuantizacion con perdida: la media de 4,785 bits/peso implica degradacion respecto al checkpoint BF16 original, especialmente en las capas asignadas a 4 bits (123,313B pesos, 68,5% del total).
+- Compatibilidad restringida: el formato MLX limita el despliegue a entornos Apple Silicon con mlx; no hay soporte documentado para ecosistemas CUDA o ROCm.
+- Requisito de memoria elevado: ~100 GiB de pesos en memoria unificada excluye practicamente todo hardware de consumo.
+- Idiomas y contexto no documentados: no se declaran idiomas soportados ni longitud de contexto, lo que impide garantizar cobertura multilingue o ventanas largas en produccion.
+- Riesgo de alucinacion: no evaluado en la informacion disponible; al no haber benchmarks publicados, no puede acotarse empiricamente.
+- Sesgos: no documentados.
+- Licencia: Qwen Community License 1.0 (etiquetada como "other"); deben revisarse sus terminos antes de uso comercial, ya que puede incluir restricciones adicionales a las de una licencia permisiva estandar.
+- Trazabilidad de la cuantizacion: el autor recomienda volver a descargar la version del 19 de noviembre de 2026; copias anteriores presentan mayor error de cuantizacion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
+- Hugging Face: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
-- Pull request de la mejora oQe: https://github.com/jundot/omlx/pull/4930
-- Licencia (archivo en el repositorio): https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp/blob/main/LICENSE
+- Repositorio oQ/oMLX: https://github.com/jundot/omlx
+- PR de mejora oQe: https://github.com/jundot/omlx/pull/4930
+- PR de refinamiento del redondeo oQe: https://github.com/jundot/omlx/pull/5292

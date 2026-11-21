@@ -2,104 +2,101 @@
 
 ## Resumen
 
-Gemma-4-12B-Uncensored-GGUF es la distribucion en formato GGUF del modelo Gemma-4-12B-Uncensored de Abacus.AI, un ajuste fino de Gemma 4 12B-it de Google en el que se ha eliminado el comportamiento de rechazo mediante entrenamiento DPO. Este repositorio contiene exclusivamente los pesos cuantizados para su uso con llama.cpp, Ollama y LM Studio, junto con el proyector de imagen y un modelo borrador (draft model) para decodificacion especulativa. El modelo base cuenta con 11.907.350.576 parametros (aproximadamente 12B) y mantiene las capacidades multimodales del Gemma original: la pipeline declarada es image-text-to-text.
+Gemma-4-12B-Uncensored-GGUF es la distribucion en formato GGUF del modelo Gemma-4-12B-Uncensored, desarrollado por Abacus.AI a partir de Gemma 4 12B-it de Google. El modelo base ha sido sometido a un proceso de entrenamiento orientado a eliminar los rechazos (refusals) sistematicos, de modo que responde a peticiones que el modelo original rechazaria por defecto. Esta version GGUF esta pensada para su uso con llama.cpp, Ollama y LM Studio, e incluye siete cuantizaciones desde IQ3_M hasta Q8_0, ademas del proyector de imagenes y el modelo borrador (draft model) de Google para decodificacion especulativa.
 
-La relevancia de esta publicacion radica en dos factores. Primero, ofrece cinco niveles de cuantizacion (desde IQ4_XS hasta Q8_0) construidos con llama.cpp a partir de los pesos BF16, con matrices de importancia (imatrix) calculadas sobre 48K tokens de prosa, codigo, dialogo, matematicas, ciencia y texto multilingue para los formatos Q4_K_M e IQ4_XS. Segundo, documenta de forma medible el efecto del ajuste: sobre 241 prompts daninos de HarmBench y JailbreakBench, el Gemma 4 12B-it original rechaza el 91,7% con thinking activado, mientras que el archivo Q4_K_M de este repositorio rechaza solo el 4,1% (10 de 241), medido directamente sobre el fichero en llama.cpp y coincidente con los pesos en precision completa.
+El modelo conserva la naturaleza multimodal del Gemma 4 original (pipeline image-text-to-text), con 11.907.350.576 parametros totales. La relevancia actual radica en que ofrece una alternativa "sin censura" con licencia Apache 2.0 y pesos cuantizados listos para ejecucion local, manteniendo la capacidad de vision del modelo original. La model card reporta que, sobre 241 prompts daninos de HarmBench y JailbreakBench, la version Q4_K_M rechaza solo el 4,1% (10 de 241) con thinking activado, frente al 91,7% del Gemma 4 12B-it original.
 
-El modelo se distribuye bajo licencia Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) y esta pensado para desarrolladores que necesitan ejecutar localmente un modelo multimodal de ~12B sin las restricciones de rechazo del modelo original, en hardware de consumo o en una unica GPU de gama media.
+La distribucion incluye una matriz de importancia (imatrix.gguf) calculada sobre 48K tokens de prosa, codigo, dialogo, matematicas, ciencia y texto multilingue, empleada en las cuantizaciones IQ3_M, Q3_K_M, IQ4_XS y Q4_K_M. Cada archivo fue cargado y probado con thinking activado, desactivado y con una imagen, y el archivo por defecto se ejecuto en llama.cpp, Ollama y LM Studio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), basada en Gemma 4 12B-it; no se detalla la variante exacta en la informacion disponible |
-| Parametros totales | 11.907.350.576 (~12B) |
+| Arquitectura | Transformer multimodal (image-text-to-text), base Gemma 4 12B-it |
+| Parametros totales | 11.907.350.576 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada; la tabla de memoria del autor referencia configuraciones de 8K y 32K tokens |
-| Tipos de cuantizacion | IQ4_XS, Q4_K_M, Q5_K_M, Q8_0 (cinco tamanos segun la model card; el listado completo de nombres no esta disponible) |
-| Idiomas soportados | no disponibles |
-| Licencia | Apache 2.0 (license_link a la licencia de Gemma 4 de Google) |
-| Formato de pesos | GGUF (llama.cpp), con proyector de imagen y draft model incluidos |
+| Longitud de contexto | no disponible (la model card menciona escenarios de 8K y 32K en la tabla de memoria) |
+| Tipos de cuantizacion | IQ3_M, Q3_K_M, IQ4_XS, Q4_K_M, Q8_0 (siete tamanos desde IQ3_M hasta Q8_0) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 (con license_link a la licencia de Gemma 4 de Google) |
+| Formato de pesos | GGUF (llama.cpp), con imatrix.gguf, proyector de imagenes y draft model |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 4 12B-it de Google, un transformer multimodal con capacidad de procesamiento de imagen y texto. Sobre esa base, Abacus.AI aplico un ajuste fino con DPO (Direct Preference Optimization) orientado a eliminar los rechazos, dando lugar a Gemma-4-12B-Uncensored. La model card del repositorio GGUF no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni los hiperparametros del DPO; esa informacion se remite a la model card del modelo de origen.
+El modelo parte de Gemma 4 12B-it, un transformer multimodal de aproximadamente 11,9 mil millones de parametros que procesa entradas de imagen y texto. Sobre esa base, Abacus.AI aplico un entrenamiento de ajuste (el tag de la model card indica DPO) para eliminar los rechazos, manteniendo el resto de capacidades del modelo original. La model card no detalla el volumen de tokens de entrenamiento ni la composicion exacta del dataset utilizado en el ajuste.
 
-La innovacion tecnica de esta publicacion esta en el proceso de cuantizacion: los ficheros se generaron con llama.cpp `b8abe41` a partir de los pesos BF16, e IQ4_XS y Q4_K_M emplean una importance matrix (`imatrix.gguf`, incluida en el repositorio) calculada sobre 48K tokens de prosa, codigo, dialogo, matematicas, ciencia y texto multilingue. Ademas, el repositorio incluye el proyector de imagen necesario para el modo multimodal y el modelo borrador (draft model) de Google para decodificacion especulativa, lo que acelera la generacion. Cada fichero fue cargado y probado con thinking activado, thinking desactivado y con una imagen, y el fichero de descarga por defecto se valido en llama.cpp, Ollama y LM Studio.
+La innovacion principal de esta distribucion es el empaquetado para inferencia local: cuantizaciones generadas con llama.cpp (build `b8abe41`) a partir de los pesos BF16, con una matriz de importancia calculada sobre 48K tokens de dominios diversos. Se incluye tambien el modelo borrador de Google para decodificacion especulativa, lo que permite acelerar la generacion en llama.cpp. La evaluacion de rechazos se realizo sobre el propio archivo Q4_K_M en llama.cpp, con un juez LLM puntuando la respuesta completa.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en formato chat.
-- Procesamiento de imagen y texto (pipeline image-text-to-text): acepta entradas visuales junto con el prompt.
-- Modo thinking (razonamiento extendido) activable y desactivable; los datos de rechazo se miden por separado en ambos modos.
-- Decodificacion especulativa mediante el draft model de Google incluido en el repositorio, orientada a reducir latencia.
-- Generacion de codigo y texto tecnico, reforzada por la composicion de la imatrix (codigo, matematicas, ciencia).
-- Capacidades multilingues: la imatrix incluye texto multilingue, aunque la lista de idiomas soportados no esta disponible.
-- Comportamiento de rechazo reducido de forma medible: 4,1% de rechazo sobre 241 prompts daninos con thinking activado, frente al 91,7% del modelo original.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno.
+- Procesamiento de imagenes (pipeline image-text-to-text): acepta entradas de imagen junto con texto.
+- Modo thinking (razonamiento extendido) activable y desactivable; la model card evalua ambos modos por separado.
+- Respuesta a peticiones que el Gemma 4 12B-it original rechazaria, con una tasa de rechazo del 4,1% con thinking activado y del 16,6% con thinking desactivado sobre 241 prompts de HarmBench y JailbreakBench.
+- Decodificacion especulativa mediante el draft model de Google incluido en el repositorio.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte multilingue: no disponible en detalle (la imatrix se calculo incluyendo texto multilingue, pero no se enumeran idiomas).
 
 ## Casos de uso
 
-- Evaluacion de seguridad y red teaming: el modelo permite estudiar como responde un LLM de ~12B sin rechazos ante prompts de HarmBench y JailbreakBench, con tasas de rechazo medidas (4,1% con thinking, 16,6% sin thinking) que sirven como referencia para comparar mecanismos de alineacion.
-- Investigacion sobre alineacion y DPO: al existir tanto el modelo original (91,7% de rechazo) como el ajustado (4,1%), se puede analizar el efecto del DPO sobre el comportamiento de rechazo manteniendo el resto de capacidades.
-- Despliegue local en estaciones de trabajo con GPU de consumo: el fichero Q4_K_M (7,38 GB) requiere 8,6 GB de VRAM con 8K de contexto y 9,0 GB con 32K, por lo que cabe en tarjetas de 12 GB como la RTX 3060 de 12 GB o la RTX 4070.
-- Asistentes conversacionales con entrada de imagen: al incluir el proyector de imagen, se puede construir un asistente que describa o razone sobre capturas, diagramas o fotos en local, sin depender de APIs externas.
-- Generacion de codigo y texto tecnico en local: la imatrix incluye codigo, matematicas y ciencia, lo que hace al modelo adecuado para autocompletado y explicacion de codigo en entornos sin conexion mediante llama.cpp u Ollama.
-- Prototipado rapido con Ollama y LM Studio: el fichero por defecto esta validado en ambas herramientas y en llama.cpp, lo que permite tener un endpoint compatible con la API de OpenAI en minutos sobre una unica GPU.
-- Procesamiento por lotes de contenido creativo o de ficcion sin filtros de rechazo: escritura de dialogos, guiones o narrativa donde el modelo original tiende a rechazar o matizar en exceso.
+- Investigacion sobre seguridad y alineacion: el modelo permite estudiar el comportamiento de un LLM sin rechazos, comparando sus respuestas con las del Gemma 4 12B-it original sobre los mismos prompts de HarmBench y JailbreakBench, con tasas de rechazo medidas (91,7% frente a 4,1%).
+- Generacion de contenido creativo sin filtros: escritura de ficcion, guiones o dialogos que aborden temas sensibles sin las interrupciones o evasivas del modelo base, ejecutable localmente con llama.cpp u Ollama.
+- Analisis de imagenes en local: al conservar el proyector de imagenes, permite describir, clasificar o extraer informacion de imagenes en entornos sin conexion, con cuantizaciones desde 5,73 GB (IQ3_M).
+- Despliegue en estaciones de trabajo con GPU de consumo: el archivo IQ3_M requiere aproximadamente 7,0 GB de VRAM con contexto de 8K, lo que permite ejecutarlo en GPUs de 8 GB; el Q4_K_M es el archivo por defecto recomendado por el autor.
+- Evaluacion de robustez frente a jailbreaks: util para medir como responde un modelo sin censura a tecnicas de jailbreak, sirviendo de referencia en pruebas de red teaming.
+- Prototipado de asistentes conversacionales con vision: integrable en LM Studio u Ollama para desarrollar prototipos que combinen texto e imagen antes de pasar a produccion.
+- Aceleracion de inferencia local: el draft model incluido permite probar decodificacion especulativa en llama.cpp para reducir la latencia en hardware limitado.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos cuantitativos publicados en la informacion disponible son las tasas de rechazo sobre 241 prompts daninos de HarmBench y JailbreakBench, evaluadas por un juez LLM sobre la respuesta completa:
+La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.). El unico dato de rendimiento reportado es la tasa de rechazo sobre 241 prompts daninos de HarmBench y JailbreakBench:
 
-| Modelo | Thinking activado | Thinking desactivado |
+| Modelo / archivo | Thinking | Tasa de rechazo |
 |---|---|---|
-| Gemma 4 12B-it original | 91,7% de rechazo | 95,4% de rechazo |
-| Gemma-4-12B-Uncensored (precision completa) | 4,1% de rechazo | 16,6% de rechazo |
-| Gemma-4-12B-Uncensored-GGUF Q4_K_M | 4,1% de rechazo (10 de 241) | 16,6% de rechazo (40 de 241) |
+| Gemma 4 12B-it (original) | Activado | 91,7% |
+| Gemma-4-12B-Uncensored Q4_K_M (GGUF) | Activado | 4,1% (10 de 241) |
+| Gemma 4 12B-it (original) | Desactivado | 95,4% |
+| Gemma-4-12B-Uncensored Q4_K_M (GGUF) | Desactivado | 16,6% (40 de 241) |
 
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks de calidad (razonamiento, codigo, matematicas) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (contexto de 8K / 32K, segun la tabla del autor):
-  - IQ4_XS (6,64 GB de fichero): 7,9 GB / 8,3 GB de VRAM.
-  - Q4_K_M (7,38 GB de fichero): 8,6 GB / 9,0 GB de VRAM.
-  - Q5_K_M (8,55 GB de fichero): 9,6 GB / valor a 32K no disponible en la informacion proporcionada.
-  - Q8_0: tamano de fichero y VRAM no disponibles en la informacion proporcionada.
-- GPU recomendadas: el autor indica que IQ4_XS funciona con 10 GB de memoria GPU y que en una tarjeta de 8 GB algunas capas se derivan a la CPU; Q4_K_M se recomienda con 12 GB de VRAM. GPU de consumo adecuadas: RTX 3060 12 GB, RTX 4070, RTX 4070 Ti, RTX 4080. Para Q8_0 se requiere una GPU con mas VRAM, sin cifra publicada.
-- Cabe en GPU de consumo: si, al menos IQ4_XS y Q4_K_M en tarjetas de 10-12 GB; IQ4_XS puede ejecutarse parcialmente en una GPU de 8 GB con offload parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio (los tres validados por el autor con el fichero por defecto); el repositorio incluye proyector de imagen y draft model para decodificacion especulativa. Soporte de vLLM o TGI no disponible en la informacion proporcionada.
-- Latencia y throughput: no disponibles en la informacion proporcionada. La inclusion del draft model de Google sugiere mejoras por decodificacion especulativa, pero no se publican cifras.
+- VRAM estimada segun la tabla del autor (contexto de 8K / 32K):
+  - IQ3_M: 5,73 GB de archivo; 7,0 GB / 7,4 GB de VRAM.
+  - Q3_K_M: 6,09 GB de archivo; 7,3 GB / 7,7 GB de VRAM.
+  - IQ4_XS: 6,64 GB de archivo; 7,9 GB de VRAM con 8K (dato de 32K no disponible en el extracto).
+- El archivo IQ3_M cabe en GPUs de 8 GB de VRAM; el autor lo desaconseja por puntuar por debajo de los archivos de 4 bits.
+- El Q4_K_M es el archivo por defecto y fue validado en llama.cpp, Ollama y LM Studio.
+- Opciones de despliegue: llama.cpp (build `b8abe41`), Ollama y LM Studio; el tag `endpoints_compatible` sugiere compatibilidad con endpoints.
+- No se proporcionan datos de latencia ni throughput. La decodificacion especulativa con el draft model incluido puede reducir la latencia, pero no se cuantifica.
+- GPUs recomendadas: no disponible de forma explicita; por los requisitos de VRAM, cualquier GPU con 8 GB o mas (por ejemplo, RTX 3060/4060 en adelante) puede ejecutar las cuantizaciones menores.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Enfoque de rechazo |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Notas |
 |---|---|---|---|---|---|
-| Gemma-4-12B-Uncensored-GGUF (este) | ~12B | no disponible (referencias a 8K y 32K) | Si (image-text-to-text) | Apache 2.0 | Reducido: 4,1% con thinking |
-| Gemma 4 12B-it (Google) | ~12B | no disponible | Si | Licencia Gemma 4 | Estandar: 91,7% con thinking |
-| Gemma-4-12B-Uncensored (Abacus.AI, precision completa) | ~12B | no disponible | Si | Apache 2.0 | Reducido: 4,1% con thinking |
+| Gemma-4-12B-Uncensored-GGUF (este) | 11,9B | no disponible | Si (image-text-to-text) | Apache 2.0 | Tasa de rechazo del 4,1% con thinking (Q4_K_M) |
+| Gemma 4 12B-it (original) | 12B (aproximado) | no disponible | Si | Licencia Gemma 4 de Google | Tasa de rechazo del 91,7% con thinking |
+| Gemma-4-12B-Uncensored (BF16) | 11,9B | no disponible | Si | Apache 2.0 | Pesos completos; mismas tasas de rechazo que el Q4_K_M segun el autor |
 
-No se dispone de datos de benchmarks de capacidad ni de otros modelos comparables de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a la familia Gemma 4 12B y sus variantes.
+No se dispone de informacion sobre otros modelos "uncensored" comparables en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido entrenado explicitamente para reducir rechazos: responde al 95,9% de 241 prompts daninos de HarmBench y JailbreakBench con thinking activado. No es adecuado para despliegues orientados al publico sin una capa de moderacion externa.
-- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad o factualidad en la informacion disponible; al ser un ajuste DPO sobre Gemma 4, hereda los sesgos y limitaciones del modelo base.
-- Sesgos conocidos: no documentados en la informacion proporcionada; se remiten a la model card del modelo de origen.
-- Idiomas soportados: no disponibles; la imatrix incluye texto multilingue, pero no se especifica la cobertura real por idioma.
-- Longitud de contexto: no se publica el maximo oficial; la tabla de memoria solo referencia 8K y 32K, por lo que no debe asumirse un contexto mayor sin verificacion.
-- Restricciones de licencia: se declara Apache 2.0, pero el campo license_link apunta a la licencia de Gemma 4 de Google, lo que puede implicar terminos adicionales de uso comercial; conviene revisar ambos documentos antes de un despliegue en produccion.
-- Cuantizacion: IQ4_XS y Q4_K_M introducen perdida de precision; el autor verifica que la tasa de rechazo coincide con la de precision completa, pero no se han publicado evaluaciones de capacidad (razonamiento, codigo, matematicas) por cuantizacion.
-- El repositorio tiene 24 descargas y 0 likes en el momento de la consulta, lo que indica una validacion comunitaria muy limitada.
-- No se documentan resultados de tool calling ni de uso agentico, por lo que no debe asumirse su correcto funcionamiento en pipelines de agentes sin pruebas propias.
+- El modelo ha sido entrenado para eliminar rechazos: puede generar contenido danino, ofensivo o inseguro. No es adecuado para despliegues orientados al publico sin filtros adicionales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; al ser un ajuste sobre Gemma 4, conserva los sesgos y limitaciones del modelo base, no documentados en la informacion disponible.
+- La licencia declarada es Apache 2.0, pero el campo license_link apunta a la licencia de Gemma 4 de Google; conviene verificar las condiciones de uso comercial aplicables al modelo base antes de un despliegue en produccion.
+- Los idiomas soportados no estan documentados; el rendimiento fuera del ingles no esta garantizado.
+- La longitud de contexto no se especifica; la tabla de memoria solo cubre escenarios de 8K y 32K.
+- Las tasas de rechazo se midieron sobre 241 prompts de HarmBench y JailbreakBench con un juez LLM; no constituyen una evaluacion exhaustiva de seguridad.
+- El modelo IQ3_M puntua por debajo de los archivos de 4 bits segun el autor; para calidad, se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/abacusai/Gemma-4-12B-Uncensored-GGUF
-- Modelo base (precision completa): https://huggingface.co/abacusai/Gemma-4-12B-Uncensored
-- Modelo original de Google: https://huggingface.co/google/gemma-4-12B-it
-- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Pagina de Abacus.AI: https://abacus.ai
-- Organizacion Abacus.AI en Hugging Face: https://huggingface.co/abacusai
+- Hugging Face (este repositorio): https://huggingface.co/abacusai/Gemma-4-12B-Uncensored-GGUF
+- Modelo base (pesos completos): https://huggingface.co/abacusai/Gemma-4-12B-Uncensored
+- Gemma 4 12B-it original: https://huggingface.co/google/gemma-4-12B-it
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Web de Abacus.AI: https://abacus.ai
+- Perfil de Hugging Face de Abacus.AI: https://huggingface.co/abacusai

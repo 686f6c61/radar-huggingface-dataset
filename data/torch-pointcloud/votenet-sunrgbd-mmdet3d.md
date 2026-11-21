@@ -2,101 +2,97 @@
 
 ## Resumen
 
-VoteNet es un detector de objetos 3D en nubes de puntos basado en el mecanismo de *deep Hough voting*, publicado originalmente por Charles R. Qi, Or Litany, Kaiming He y Leonidas J. Guibas en ICCV 2019. Este repositorio concreto, `torch-pointcloud/votenet.sunrgbd.mmdet3d`, es una conversión de los pesos oficiales de MMDetection3D al formato de la librería `torch-pointcloud`, empaquetada en safetensors y con licencia Apache-2.0.
+VoteNet es un detector de objetos 3D en nubes de puntos basado en el mecanismo de *deep Hough voting*, publicado originalmente por Charles R. Qi, Or Litany, Kaiming He y Leonidas J. Guibas en ICCV 2019. El modelo identifica objetos 3D (camas, sillas, mesas, etc.) directamente a partir de coordenadas de puntos, sin depender de imágenes RGB ni de cajas 2D previas. Esta ficha corresponde a la conversión del checkpoint original de MMDetection3D al formato de la librería `torch-pointcloud`, publicada por el usuario `torch-pointcloud` bajo licencia Apache-2.0.
 
-El modelo resuelve la detección de objetos 3D (cajas orientadas con clase) a partir de nubes de puntos, en este caso entrenado sobre el benchmark SUN RGB-D con 10 clases de interior. No es un modelo de lenguaje ni un modelo generativo: es una red neuronal convolucional/PointNet++ específica para visión 3D, con tan solo 959.442 parámetros reales en safetensors (la model card redondea a 1,0 M), lo que lo convierte en un modelo extremadamente ligero y apto para despliegue en entornos con recursos limitados.
+El modelo es deliberadamente ligero: aproximadamente 1,0 M de parámetros (959.442 en el fichero safetensors), 10 clases de objetos y un extractor de características de 256 canales. Está entrenado sobre el benchmark SUN RGB-D y reporta mAP@0.25 de 59,77 y mAP@0.5 de 36,39. No es un modelo generativo ni lingüístico: es un detector geométrico puro, por lo que no dispone de contexto textual, capacidades multilingües ni tool calling.
 
-Su relevancia actual es la de servir como referencia reproducible y ligera para pipelines de detección 3D en interiores dentro del ecosistema PyTorch, y como ejemplo de conversión de pesos entre frameworks (MMDetection3D → torch-pointcloud). No obstante, conviene señalar que la información disponible es escasa: no hay datos sobre composición del dataset de entrenamiento más allá del nombre, ni sobre idiomas, ni sobre latencias medidas.
+Su relevancia actual radica en la facilidad de despliegue: al estar empaquetado como modelo de `torch-pointcloud` con pesos en safetensors, se puede cargar con una sola llamada (`tp.create_model`) e integrar en pipelines de percepción 3D en PyTorch sin arrastrar la dependencia completa de MMDetection3D. Es útil como línea base reproducible para investigación en detección 3D y para prototipos de robótica o realidad aumentada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | VoteNet (deep Hough voting sobre backbone PointNet++; detector 3D) |
-| Parametros totales | 959.442 (≈1,0 M segun model card) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión 3D, no secuencial) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, sin variantes GGUF/ONNX publicadas) |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Arquitectura | VoteNet (deep Hough voting sobre PointNet++) |
+| Parámetros totales | 959.442 (~1,0 M) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de nube de puntos, no textual) |
+| Tipos de cuantización | no disponible (pesos en safetensors; no se documentan variantes GGUF/INT8) |
+| Idiomas soportados | no aplica (no es un modelo de lenguaje) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
-| Canales de entrada | 1 |
-| Clases | 10 |
-| Dimensión de features | 256 |
-| Dataset de entrenamiento | SUN RGB-D |
-| Tarea | 3D object detection |
-| Librería | torch-pointcloud |
+
+Otros datos técnicos declarados en la model card: canales de entrada = 1, número de clases = 10, dimensión de características = 256, dataset = SUN RGB-D, tarea = detección de objetos 3D.
 
 ## Arquitectura y entrenamiento
 
-VoteNet es un detector de una sola etapa que opera directamente sobre nubes de puntos. La arquitectura consta de un backbone PointNet++ que extrae *seed points* con features de 256 canales, seguido de un módulo de votación tipo Hough que desplaza cada semilla hacia el centro del objeto al que pertenece, y finalmente un módulo de agrupación y propuesta que agrupa los votos y regresa cajas 3D orientadas con puntuaciones de clase. La innovación principal del paper original es precisamente ese mecanismo de votación: en lugar de predecir cajas directamente desde cada punto, el modelo aprende a votar por el centro del objeto, lo que mitiga la ambigüedad de las predicciones densas en nubes de puntos.
+VoteNet combina un backbone PointNet++ para extraer características por punto con un módulo de votación tipo Hough: cada semilla predice un desplazamiento hacia el centro del objeto al que pertenece, y los votos se agrupan para proponer cajas 3D. Sobre esas propuestas se aplica una cabeza de clasificación y regresión de cajas. La innovación clave frente a detectores 2D-to-3D es que opera directamente sobre la geometría, evitando la dependencia de detectores de imagen y de calibración cámara-LiDAR.
 
-Los detalles de entrenamiento (número de épocas, aumentos de datos, función de pérdida exacta, composición del dataset) no están disponibles en la información proporcionada. La model card solo indica que se entrenó sobre SUN RGB-D con 10 clases, 1 canal de entrada y 256 features, y que los pesos se convirtieron desde MMDetection3D (Apache-2.0). No se documenta si hubo ajuste fino adicional, RLHF/DPO (no aplica en este dominio) ni innovaciones técnicas más allá de las del paper original.
+El entrenamiento se realizó sobre SUN RGB-D, un benchmark de comprensión de escenas RGB-D con anotaciones de cajas 3D en interiores. La model card no detalla el número de tokens/puntos de entrenamiento, la composición exacta del dataset ni si hubo aumentos de datos específicos; esa información debe consultarse en el paper original (arXiv:1904.09664). El checkpoint aquí publicado es una conversión desde MMDetection3D (Apache-2.0) a `torch-pointcloud`, no un reentrenamiento.
 
 ## Capacidades
 
-- Detección de objetos 3D en nubes de puntos: devuelve cajas orientadas 3D con clase y puntuación para 10 categorías de interior de SUN RGB-D.
-- Extracción de features: expone `forward_features` con 256 canales por punto, útil como backbone para tareas posteriores.
-- Procesamiento de nubes de puntos con coordenadas (`pos`) y color (`color`) como entradas; el pipeline interno aplica transformaciones y *collate* para lotes.
-- No soporta tool calling, function calling ni agentes: no es un modelo de lenguaje.
-- No soporta multilingüismo ni generación de texto.
-- No dispone de modo *thinking*, visión 2D general, audio ni otras capacidades multimodales más allá de la nube de puntos 3D.
-- Inferencia en PyTorch (CPU/GPU) mediante la librería `torch-pointcloud`.
+- Detección de objetos 3D en nubes de puntos: devuelve cajas 3D (centro, dimensiones, orientación) y etiquetas de clase para 10 categorías de SUN RGB-D.
+- Entrada geométrica pura: consume coordenadas (`pos`) y, opcionalmente, color por punto (`color`), sin requerir imagen RGB.
+- Extracción de características: `forward_features` devuelve un vector de 256 canales por punto, reutilizable para tareas aguas abajo (segmentación, clustering, recuperación).
+- Procesamiento por lotes: la API `collate` permite agrupar varias nubes en un batch con índices de batch.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, thinking mode, visión 2D, audio ni generación de texto.
+- No tiene capacidades multilingües: no procesa lenguaje natural.
 
 ## Casos de uso
 
-- Detección de objetos en escenas de interior para robótica móvil: el modelo puede localizar sillas, mesas, camas y otras 10 clases de SUN RGB-D a partir de nubes de puntos de un sensor RGB-D, proporcionando cajas 3D orientadas que un planificador de navegación puede consumir. Su tamaño (≈1 M de parámetros) permite ejecutarlo en el propio robot.
-- Preprocesado para realidad aumentada: identificar y posicionar objetos 3D en una habitación escaneada para anclar contenido virtual de forma coherente con la geometría real.
-- Anotación semiautomática de datasets 3D: usar las detecciones como propuestas iniciales que un anotador humano revisa, reduciendo el coste de etiquetado de nuevas nubes de puntos de interior.
-- Benchmark y validación de pipelines de detección 3D: al ser una conversión de MMDetection3D con métricas declaradas (mAP@0.25 59,8; mAP@0.5 36,87), sirve como referencia para comprobar la corrección de un pipeline propio en `torch-pointcloud`.
-- Extracción de features para clasificación o segmentación posterior: `forward_features` devuelve 256 canales por punto que pueden alimentar cabezas ligeras para tareas auxiliares (por ejemplo, segmentación semántica de escenas de interior).
-- Prototipado en entornos con recursos limitados: al caber holgadamente en cualquier GPU consumer e incluso en CPU para lotes pequeños, permite iterar rápidamente en investigación sin infraestructura dedicada.
-- Educación y reproducción de resultados: implementación ligera y de licencia permisiva para cursos o talleres sobre detección 3D y deep Hough voting.
+- Percepción en robótica de interiores: un robot móvil equipado con LiDAR o cámara de profundidad puede usar el modelo para localizar sillas, mesas o camas en tiempo real y planificar la navegación; los ~1 M de parámetros permiten inferencia en CPU o GPU de gama baja.
+- Realidad aumentada y escaneo 3D: a partir de una nube de puntos capturada con un dispositivo RGB-D, el modelo genera cajas 3D que se pueden anclar a objetos físicos para superponer contenido virtual.
+- Anotación asistida de datasets: preetiquetar nubes de puntos de interiores con las 10 clases de SUN RGB-D y revisar manualmente, reduciendo el coste de anotación 3D.
+- Línea base para investigación: comparar nuevas arquitecturas de detección 3D contra un checkpoint reproducible y ligero, sin necesidad de montar MMDetection3D completo.
+- Extracción de características para clustering: usar `forward_features` (256 canales) como embedding geométrico para segmentación no supervisada o recuperación de formas.
+- Prototipos de inventario de espacios: contar y clasificar muebles en escaneos de habitaciones para aplicaciones de inmobiliaria o facility management, dado que el modelo está entrenado en escenas de interior.
+- Integración en pipelines de PyTorch: al cargarse con `tp.create_model`, se puede insertar como módulo dentro de un modelo mayor entrenable de extremo a extremo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo en la model card (no verificados):
+Resultados declarados por el autor en la model card (no verificados de forma independiente, `verified: false`):
 
 | Benchmark | Métrica | Valor |
 |---|---|---|
-| SUN RGB-D | mAP@0.25 | 59,8 |
-| SUN RGB-D | mAP@0.5 | 36,87 |
+| SUN RGB-D | mAP@0.25 | 59,77 |
+| SUN RGB-D | mAP@0.5 | 36,39 |
 
-No se han publicado en la información disponible resultados comparativos adicionales (por ejemplo, frente a otros detectores 3D) ni latencias o throughput medidos.
+No se han publicado en la información disponible resultados adicionales (por ejemplo, por clase, latencia o throughput) ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con ≈1 M de parámetros y features de 256 canales, el modelo ocupa del orden de unos pocos MB en FP32, por lo que cualquier GPU con 2 GB o más es suficiente. No se dispone de mediciones exactas en la información proporcionada.
-- GPU recomendadas: cualquier GPU moderna es sobredimensionada; funcionará en RTX 3060, RTX 4090, A100 o H100 sin problema, pero el cuello de botella será el preprocesado de la nube de puntos, no el modelo.
-- Cabe en GPU consumer: sí, en cualquier GPU consumer con al menos 2 GB de VRAM; también es viable en CPU para lotes pequeños.
-- Opciones de despliegue: `torch-pointcloud` (librería nativa del modelo) sobre PyTorch; no se han publicado exportaciones a ONNX, TensorRT, vLLM, llama.cpp ni Ollama (no aplican a este dominio).
+- VRAM estimada para inferencia: inferior a 1 GB con los pesos en FP32 (~4 MB de pesos) más el coste de activaciones de la nube de puntos; con 8.192 puntos por muestra el consumo es muy reducido.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona bien en RTX 3060, RTX 4090, A100 o H100, aunque el modelo no aprovecha la capacidad de las GPUs de datacenter.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer e incluso en CPU para inferencia por lotes pequeños.
+- Opciones de despliegue: `torch-pointcloud` (librería nativa), PyTorch estándar; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo de nube de puntos).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / entrada | mAP@0.25 (SUN RGB-D) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| votenet.sunrgbd.mmdet3d (este) | ≈1,0 M | nube de puntos, 10 clases | 59,8 | Apache-2.0 | Hugging Face, torch-pointcloud |
-| VoteNet original (MMDetection3D) | ≈1,0 M | nube de puntos, 10 clases | ≈59,8 (referencia del paper) | Apache-2.0 | GitHub open-mmlab |
-| Otros detectores 3D de la familia MMDetection3D | no disponible | nube de puntos | no disponible | Apache-2.0 | GitHub open-mmlab |
+| Modelo | Parámetros | Contexto | Dataset | mAP@0.5 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| VoteNet (este modelo) | ~1,0 M | no aplica | SUN RGB-D | 36,39 | Apache-2.0 | Hugging Face (`torch-pointcloud`) |
+| VoteNet original (MMDetection3D) | ~1,0 M | no aplica | SUN RGB-D | no disponible en esta ficha | Apache-2.0 | GitHub open-mmlab |
+| PointNet++ (clasificación/segmentación) | no disponible | no aplica | varios | no aplica (no es detector) | no disponible | múltiples repositorios |
 
-No se dispone en la información proporcionada de datos comparativos con alternativas como PointPillars, CenterPoint o FCAF3D sobre SUN RGB-D, por lo que la comparativa se limita a la referencia del propio paper y a la implementación de origen.
+No se dispone en la información proporcionada de resultados numéricos de alternativas como PointRCNN, F-PointNet o VoteNet-variants para una comparación rigurosa; los datos de mAP de esos modelos deben consultarse en sus respectivos papers.
 
 ## Limitaciones y advertencias
 
-- Dominio restringido: entrenado exclusivamente sobre SUN RGB-D con 10 clases de interior; no generaliza a exteriores, vehículos autónomos ni categorías fuera de ese conjunto.
-- Métricas no verificadas: los valores de mAP declarados en la model card tienen `verified: false`; conviene reproducirlos antes de usarlos como referencia en producción.
-- Sesgos de dataset: SUN RGB-D tiene una distribución concreta de escenas de interior (habitaciones domésticas y de oficina), lo que puede introducir sesgos de clase y de geometría.
-- Riesgo de falsos positivos y negativos en escenas con oclusiones severas o nubes de puntos muy dispersas; el mecanismo de votación mitiga pero no elimina este problema.
-- Sin información sobre idiomas ni texto: no aplica, pero conviene no confundirlo con un modelo multimodal.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución; no obstante, los pesos derivan de MMDetection3D, cuya licencia también es Apache-2.0, por lo que se recomienda conservar los avisos de copyright.
-- Documentación escasa: no se detallan hiperparámetros de entrenamiento, composición del dataset ni procedimiento de conversión, lo que dificulta la reproducibilidad exacta.
-- Sin variantes cuantizadas publicadas: si se necesita despliegue en edge, habrá que generar la cuantización manualmente.
+- Dominio restringido: entrenado exclusivamente en SUN RGB-D (escenas de interior), por lo que el rendimiento en exteriores, LiDAR vehicular o clases no presentes en las 10 categorías será pobre.
+- Métricas no verificadas: los valores de mAP están marcados como `verified: false`; conviene reproducirlos antes de usarlos como referencia en producción.
+- Sin información sobre sesgos: la model card no documenta sesgos de clase, desbalance del dataset ni errores sistemáticos por categoría.
+- Riesgo de falsos positivos y negativos en escenas densas u ocluidas; VoteNet es sensible a la calidad de la nube de puntos y a la densidad de muestreo.
+- No es un modelo generativo: no produce texto, no razona y no admite instrucciones en lenguaje natural; cualquier uso conversacional es inválido.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo deriva de MMDetection3D y del paper original; revise las atribuciones requeridas (cita a Qi et al. 2019 y a Song et al. 2015).
+- El repositorio ocupa 0,0 GB según Hugging Face; verifique la integridad de los pesos tras la descarga.
+- Sin garantías de mantenimiento: la model card no indica soporte continuo ni versionado semántico.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/torch-pointcloud/votenet.sunrgbd.mmdet3d
-- Paper (Deep Hough Voting for 3D Object Detection in Point Clouds): https://arxiv.org/abs/1904.09664
-- Repositorio de la librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- MMDetection3D (origen de los pesos): https://github.com/open-mmlab/mmdetection3d
-- DOI de la librería: https://doi.org/10.5281/zenodo.22159632
+- Paper original (Deep Hough Voting for 3D Object Detection in Point Clouds): https://arxiv.org/abs/1904.09664
+- Repositorio MMDetection3D (origen de la conversión): https://github.com/open-mmlab/mmdetection3d
+- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- DOI de torch-pointcloud: https://doi.org/10.5281/zenodo.22159632
+- Dataset SUN RGB-D (paper CVPR 2015): referencia en la model card, sin URL directa proporcionada.

@@ -2,92 +2,105 @@
 
 ## Resumen
 
-Vemana-Base-GGUF es la versión cuantizada en formato GGUF de Vemana-Base, un modelo lingüístico de 278 millones de parámetros entrenado desde cero en idioma telugu por Udgam Labs, un laboratorio de investigación independiente. Se trata de un modelo base (no instruct): su función es continuar texto en telugu, no seguir instrucciones. Su relevancia radica en la escasez de modelos pequeños abiertos entrenados específicamente para telugu, una lengua con cientos de millones de hablantes pero poco representada en los LLM generalistas.
+Vemana-Base-GGUF es la version cuantizada en formato GGUF de Vemana-Base, un modelo de lenguaje de 278 millones de parametros (278.214.226 exactos) entrenado desde cero por Udgam Labs, un laboratorio de investigacion independiente. El modelo esta especializado exclusivamente en telugu (codigo ISO `te`) y se distribuye como modelo base, es decir, no sigue instrucciones: su funcion es continuar texto en telugu a partir de un prompt.
 
-El repositorio incluye dos cuantizaciones (Q8_0 y F16) listas para ejecutarse con llama.cpp, e incluso directamente en el navegador mediante llama.cpp compilado a WebAssembly con la librería wllama, sin que el texto salga del dispositivo. La conversión ha sido verificada contra el modelo original en transformers, con perplejidad prácticamente idéntica (15.764 frente a 15.765 en Q8_0) y tokenización idéntica en 40 páginas de Wikipedia en telugu.
+La relevancia de esta publicacion esta en dos frentes. Por un lado, es un modelo de lenguaje de un idioma de bajos recursos entrenado desde cero, no un fine-tuning de un modelo multilingue existente, lo que lo hace interesante para investigacion sobre modelado de lenguas dravidicas. Por otro, la version GGUF esta disenada para ejecutarse en llama.cpp y en el navegador mediante wllama (llama.cpp compilado a WebAssembly), con ficheros de 297 MB (Q8_0) y 558 MB (F16), lo que permite inferencia completamente local en hardware modesto.
 
-La longitud de contexto entrenada es de 1.024 tokens, un valor modesto pero coherente con el objetivo: un modelo ligero, verificable y desplegable en hardware mínimo para tareas de generación de texto en telugu.
+El modelo usa una arquitectura transformer con atencion completa en todas las capas y una longitud de contexto de entrenamiento de 1.024 tokens. La model card reporta verificaciones de equivalencia entre la version original en transformers (float32) y las conversiones GGUF, con perplexity identica hasta el tercer decimal entre original, F16 y Q8_0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención completa (tipo Gemma según el conversor de llama.cpp) |
-| Parámetros totales | 278.214.226 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer (atencion completa en todas las capas; la conversion GGUF marca la capa 0 como sliding-window de 4.096 tokens por requisito del codigo Gemma 4 de llama.cpp, sin cambio computacional) |
+| Parametros totales | 278.214.226 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1.024 tokens (longitud de entrenamiento) |
-| Tipos de cuantización | Q8_0 (297 MB) y F16 (558 MB) |
-| Idiomas soportados | Telugu (te) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (derivado de safetensors en el modelo base) |
+| Tipos de cuantizacion | Q8_0 y F16 |
+| Idiomas soportados | Telugu (`te`) |
+| Licencia | Apache-2.0 (Copyright 2026 Udgam Labs LLP) |
+| Formato de pesos | GGUF (ficheros `Vemana-Base-Q8_0.gguf` de 297 MB y `Vemana-Base-F16.gguf` de 558 MB); pesos originales en safetensors en el repo base |
+| Tokenizer | SentencePiece (modelo de Vemana, conservado en la conversion) |
+| Tamano del repo | 0,9 GB |
+| Descargas | 793 |
 
 ## Arquitectura y entrenamiento
 
-Vemana-Base es un transformer decoder-only entrenado desde cero sobre corpus de telugu. Según la información del repositorio, utiliza atención completa en todas las capas (sin ventanas deslizantes), lo que obligó a un ajuste de metadatos en la conversión a GGUF: el código de Gemma de llama.cpp exige al menos una capa con sliding-window, por lo que la capa 0 se marca como deslizante con una ventana de 4.096 tokens (mayor que todo el contexto), sin alterar el cálculo real. El tokenizador se almacena como modelo SentencePiece propio de Vemana.
+Vemana-Base es un transformer decoder-only entrenado desde cero sobre texto en telugu. La model card de la version GGUF no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; esa informacion se remite a la model card del modelo base (`udgamlabs/Vemana-Base`). Lo que si se explicita es que todas las capas usan atencion completa, sin capas de sliding-window, y que la longitud de contexto de entrenamiento es de 1.024 tokens, limite que el autor recomienda respetar tanto en el prompt como en la generacion.
 
-No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO (coherente con su naturaleza de modelo base). Los créditos de los datos de entrenamiento están en el archivo `NOTICE` del repositorio. El modelo fue entrenado con una longitud de secuencia de 1.024 tokens.
+La conversion a GGUF se realizo con `convert_hf_to_gguf.py` de llama.cpp en dos precisiones (Q8_0 y F16) y se valido contra el modelo original en transformers con precision float32. Las comprobaciones reportadas el 27 de octubre de 2026 son: tokenizacion identica en 40 de 40 paginas de Wikipedia en telugu; perplexity sobre los mismos 4.080 tokens de 15,764 en el original, 15,764 en F16 y 15,765 en Q8_0; continuaciones greedy de 40 tokens identicas en las cuatro prompts probadas para F16 y en tres de cuatro para Q8_0 (la cuarta diverge tras unas palabras por redondeo de 8 bits). En navegador con wllama 3.6.1, los recuentos de tokens del prompt y dos continuaciones greedy resultaron identicos. Ollama y LM Studio no fueron probados por el autor.
 
 ## Capacidades
 
-- Continuación de texto en telugu: genera texto coherente a partir de un prompt en telugu, con muestreo configurable (temperatura, top-p).
-- No sigue instrucciones: es un modelo base, no alineado; no es adecuado para chat o asistentes sin un ajuste posterior.
-- Tokenización fiel del telugu: SentencePiece propio, verificado como idéntico al original en 40 páginas de Wikipedia en telugu.
-- Ejecución local y en navegador: funciona con llama.cpp y con wllama (WebAssembly), permitiendo inferencia 100 % en el dispositivo.
-- No dispone de tool calling, capacidades de agente, visión ni audio; no se ha anunciado soporte multilingüe más allá del telugu.
+- Generacion y continuacion de texto en telugu: es un modelo base, por lo que completa texto a partir de un prefijo en lugar de responder a instrucciones.
+- Modelado de lenguaje puro: util para calcular perplexity, puntuar texto y generar continuaciones coherentes dentro del dominio telugu.
+- Inferencia local en CPU y en navegador: los ficheros GGUF funcionan con llama.cpp y con wllama (WebAssembly), sin salida de datos del dispositivo.
+- Ejecucion en hardware de consumo: el fichero Q8_0 de 297 MB cabe en memoria de cualquier portatil actual.
+- No dispone de tool calling, function calling, modo thinking, vision, audio ni capacidades de agente.
+- No soporta instrucciones ni conversacion multi-turno en formato chat, al no haber sido alineado.
+- Capacidad multilingue: no disponible; el modelo esta entrenado unicamente para telugu.
 
 ## Casos de uso
 
-- Autocompletado de texto en telugu: integrado en editores o aplicaciones de escritura, el modelo continúa frases y párrafos en telugu con latencias bajas gracias a su tamaño de 278M.
-- Demostraciones de IA local en el navegador: puede cargarse en una página web con wllama y ejecutarse íntegramente en el dispositivo del usuario, útil para educación, privacidad o entornos sin conexión.
-- Investigación en NLP para lenguas de bajos recursos: base ideal para experimentos de fine-tuning (SFT, DPO) orientados a telugu, partiendo de pesos abiertos bajo Apache-2.0.
-- Prototipado en hardware modesto: con 297 MB en Q8_0, cabe en portátiles sin GPU dedicada, Raspberry Pi o móviles, para tareas de generación de texto simple.
-- Generación de contenido literario o creativo en telugu: con muestreo a temperatura 0,8 y top-p 0,95, puede usarse como ayuda creativa para redacción de poesía o prosa (el nombre rinde homenaje al poeta telugu Vemana).
-- Base para clasificadores y extractores: como modelo base ligero, puede afinarse para tareas de etiquetado, resumen extractivo o corrección ortográfica en telugu.
-- Evaluación de cuantizaciones: el repositorio documenta la verificación F16/Q8_0 contra el original, lo que lo hace útil como caso de estudio de conversión GGUF de modelos no estándar.
+- Completado de texto en telugu en entornos sin conectividad: el fichero Q8_0 de 297 MB se ejecuta con llama.cpp en un portatil o en el navegador via wllama, de modo que se puede ofrecer autocompletado de texto telugu sin enviar datos a un servidor.
+- Evaluacion de modelos telugu como referencia: con perplexity verificada de 15,764 sobre 4.080 tokens, sirve como linea base para comparar otros modelos o tokenizadores sobre el mismo corpus.
+- Investigacion sobre modelado de lenguas dravidicas de bajos recursos: al estar entrenado desde cero y no derivar de un modelo multilingue, permite estudiar el comportamiento de un transformer pequeno en un unico idioma sin interferencias de otros.
+- Generacion de texto sintetico en telugu para aumento de datos: se pueden producir continuaciones controladas por temperatura y top-p (por ejemplo `--temp 0.8 --top-p 0.95`) para ampliar corpus de entrenamiento o de prueba.
+- Demostraciones educativas de inferencia en navegador: la integracion con wllama permite montar una pagina web que cargue el GGUF y muestre generacion en telugu en tiempo real, util para talleres y docencia sobre LLM.
+- Pruebas de pipeline de cuantizacion: el par F16/Q8_0 con verificacion de equivalencia documentada sirve como caso de estudio para validar conversiones de safetensors a GGUF en otros modelos.
+- Prototipado de correctores o predictores de siguiente palabra en telugu: dentro del limite de 1.024 tokens, el modelo puede puntuar y proponer continuaciones en editores de texto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El único dato cuantitativo publicado es de verificación de la conversión, medido por los propios autores el 27 de octubre de 2026:
+La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni equivalentes) para este modelo. Los unicos datos cuantitativos reportados son las verificaciones de equivalencia entre formatos:
 
-| Métrica | Original (transformers, fp32) | F16 | Q8_0 |
+| Metrica | Original (float32) | F16 | Q8_0 |
 |---|---|---|---|
-| Perplejidad (4.080 tokens) | 15.764 | 15.764 | 15.765 |
-| Tokenización (40 páginas Wikipedia te) | idéntica | idéntica | idéntica |
-| Continuaciones greedy (4 prompts, 40 tokens) | referencia | idénticas en 4/4 | idénticas en 3/4 |
+| Perplexity (4.080 tokens) | 15,764 | 15,764 | 15,765 |
+| Tokenizacion (40 paginas Wikipedia telugu) | referencia | identica | identica |
+| Continuaciones greedy (4 prompts, 40 tokens) | referencia | identicas en 4/4 | identicas en 3/4 |
+
+Rendimiento de inferencia reportado: aproximadamente 100 tokens por segundo en un Mac mini con Chromium ejecutando wllama. No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 297 MB para Q8_0 y 558 MB para F16, más overhead de contexto; ejecutable sin GPU en CPU convencional.
-- GPU recomendadas: no requiere GPU; cualquier hardware moderno es suficiente dado el tamaño.
-- Consumer GPU: sobrado; cabe con holgura en cualquier GPU desde niveles de entrada (incluso integradas), aunque la ejecución en CPU o navegador es el caso de uso principal.
-- Despliegue: llama.cpp (comando `llama-completion`), wllama en navegador (WebAssembly), y en teoría cualquier runtime GGUF. Ollama y LM Studio no fueron probados por los autores. No consta soporte verificado en vLLM ni TGI.
-- Rendimiento: aproximadamente 100 tokens/segundo en un Mac mini con Chromium usando wllama en el navegador, según datos de los autores. No hay cifras para CPU/GPU nativas.
+- VRAM/memoria estimada: Q8_0 ocupa 297 MB de fichero y F16 558 MB; la memoria necesaria en ejecucion es del orden de esas cifras mas el contexto (1.024 tokens), por lo que cabe holgadamente en cualquier GPU o CPU moderna.
+- GPU recomendadas: no se requieren GPU dedicadas; el modelo esta pensado para CPU y para navegador. Cualquier GPU consumer (por ejemplo, una RTX 4090) puede ejecutarlo, pero esta sobredimensionada para 278M de parametros.
+- GPU de consumo: si, cabe en cualquier GPU consumer y en la mayoria de iGPU y telefonos modernos.
+- Opciones de despliegue: llama.cpp (`llama-completion`), wllama (WebAssembly en navegador). Ollama y LM Studio no fueron probados por el autor.
+- Latencia y throughput: aproximadamente 100 tokens por segundo en un Mac mini con Chromium y wllama.
+- Comando de referencia: `llama-completion -hf udgamlabs/Vemana-Base-GGUF:Q8_0 -p "వర్షాకాలంలో" -n 80 --temp 0.8 --top-p 0.95 -c 1024`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Vemana-Base-GGUF | 278M | 1.024 | Telugu | Apache-2.0 | GGUF (Q8_0, F16), navegador |
-| Sarvam AI modelos pequeños (p. ej. Sarvam-1) | 4B (no comparable en tamaño) | no disponible | Multilingüe indio (incl. telugu) | no disponible | HF |
-| Airavata / modelos indicos instruct | no disponible | no disponible | Multilingüe indio | no disponible | no disponible |
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas. A continuacion se comparan caracteristicas estructurales con modelos pequenos de referencia, indicando cuando un dato no esta disponible.
 
-Nota: existen pocos modelos abiertos entrenados desde cero exclusivamente para telugu en el rango de cientos de millones de parámetros; la mayoría de alternativas (Sarvam, Krutrim, Airavata) son modelos multilingües indios de varios miles de millones de parámetros y naturaleza instruct, por lo que la comparación directa de benchmarks no es posible con los datos disponibles.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Vemana-Base-GGUF | 278M | 1.024 | Telugu | Apache-2.0 | GGUF |
+| Modelos telugu de tipo IndicBERT/IndicBERT v2 (familia IndicNLPSuite) | no disponible en la informacion proporcionada | no disponible | Multiples idiomas indios | no disponible | safetensors |
+| Modelos multilingues pequenos tipo Gemma 2 2B o Qwen2.5 0.5B | 2.000M / 500M aprox. | 8.192 / 32.768 aprox. | Multilingue | licencias propias | safetensors, GGUF |
+
+La comparacion directa con esos modelos no es posible con los datos disponibles: Vemana esta entrenado desde cero y solo en telugu, con contexto de 1.024 tokens, mientras que los modelos multilingues citados cubren decenas de idiomas con contextos mucho mayores. La ventaja de Vemana es su tamano minimo (297 MB en Q8_0) y su ejecucion en navegador; su desventaja es la ausencia de capacidades de instruccion y de contexto largo.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base: no sigue instrucciones ni está alineado; usarlo como chatbot producirá resultados pobres sin fine-tuning posterior.
-- Contexto muy corto: 1.024 tokens entrenados; prompt y salida deben caber en esa ventana.
-- Monolingüe: diseñado para telugu; el rendimiento en otros idiomas no está garantizado ni evaluado.
-- Riesgo de alucinación y sesgos: al ser un modelo base pequeño entrenado con datos públicos (créditos en `NOTICE`), puede reproducir sesgos del corpus y generar contenido inexacto; no se han publicado evaluaciones de sesgo o seguridad.
-- Cuantización Q8_0: una de las cuatro continuaciones greedy verificadas difiere del original tras unas palabras por redondeo de 8 bits; irrelevante en la práctica, pero relevante para reproducción exacta.
-- Ollama y LM Studio no fueron probados por los autores; el comportamiento en esos runtimes no está verificado.
-- Licencia Apache-2.0: permite uso comercial, pero los créditos de datos de entrenamiento en `NOTICE` deben revisarse para cumplir atribuciones.
+- Es un modelo base: no sigue instrucciones, no mantiene conversaciones de chat y no responde preguntas en el sentido habitual. Cualquier uso conversacional requiere un fine-tuning previo.
+- Contexto limitado a 1.024 tokens: el autor recomienda explicitamente mantener prompt y salida dentro de ese limite, ya que es la longitud con la que fue entrenado.
+- Un solo idioma: solo telugu. No hay capacidades multilingues ni traduccion.
+- Riesgo de alucinacion y de generar texto plausible pero incorrecto, inherente a un modelo base pequeno de 278M de parametros.
+- Sesgos: no se documentan analisis de sesgo en la model card; al entrenarse sobre corpus telugu, puede reproducir sesgos presentes en esos datos.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el aviso de copyright indica que los creditos de datos de entrenamiento estan en el fichero `NOTICE` del repositorio, que conviene revisar antes de un despliegue comercial.
+- La conversion GGUF introduce un cambio de metadatos (capa 0 marcada como sliding-window de 4.096 tokens) para satisfacer el codigo de llama.cpp; el autor afirma que el calculo no cambia, pero es una modificacion que conviene tener en cuenta al auditar la equivalencia.
+- Ollama y LM Studio no fueron probados por el autor, por lo que su funcionamiento en esas herramientas no esta verificado.
+- No hay datos publicados de benchmarks estandar, lo que impide comparar su calidad con otros modelos de forma objetiva.
 
 ## Enlaces
 
-- Modelo GGUF: https://huggingface.co/udgamlabs/Vemana-Base-GGUF
-- Modelo base (Vemana-Base): https://huggingface.co/udgamlabs/Vemana-Base
-- Demo en navegador: https://udgamlabs.com/models/vemana#try
-- Repositorio con scripts: https://github.com/udgamlabs/vemana
-- wllama (runtime WebAssembly usado): https://github.com/ngxson/wllama
+- Modelo en Hugging Face (GGUF): https://huggingface.co/udgamlabs/Vemana-Base-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/udgamlabs/Vemana-Base
+- Pagina del modelo en Udgam Labs: https://udgamlabs.com/models/vemana
+- Notas de investigacion: https://udgamlabs.com/research/vemana
+- Repositorio con los scripts: https://github.com/udgamlabs/vemana
+- wllama (llama.cpp en WebAssembly): https://github.com/ngxson/wllama
 - Web de Udgam Labs: https://udgamlabs.com

@@ -5,7 +5,7 @@
   "author": "GinDuck",
   "url": "https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-2-g",
   "created_at": "2026-11-15T07:12:56.000Z",
-  "updated_at": "2026-11-15T07:13:00.000Z",
+  "updated_at": "2026-11-20T13:49:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

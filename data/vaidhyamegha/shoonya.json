@@ -56,25 +56,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Code Generation (Execution-Guided Sandbox)",
-      "dataset": "Shoonya Execution-Guided Python & Rust Suite",
-      "metric": "pass@1",
-      "value": 65.62
-    },
-    {
-      "task": "Code Generation (Execution-Guided Sandbox)",
-      "dataset": "Shoonya Execution-Guided Python & Rust Suite",
-      "metric": "pass@2",
-      "value": 79.17
-    },
-    {
-      "task": "Code Generation (Execution-Guided Sandbox)",
-      "dataset": "Shoonya Execution-Guided Python & Rust Suite",
-      "metric": "pass^2",
-      "value": 55.47
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

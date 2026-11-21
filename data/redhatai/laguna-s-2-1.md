@@ -2,57 +2,58 @@
 
 ## Resumen
 
-Laguna S 2.1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Poolside y distribuido por RedHatAI, disenado especificamente para tareas de codificacion agentica y trabajo de largo horizonte. Con 117.561.977.600 parametros totales (118B) y aproximadamente 8B parametros activos por token, se posiciona en la serie Laguna entre el modelo XS 2.1 (33B-A3B) y el M.1 (225B-A23B), compartiendo la receta arquitectonica de la familia.
+Laguna S 2.1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Poolside y distribuido en el Hub de Hugging Face a través de la organización RedHatAI, que lo ha validado para su uso en el portfolio de productos de Red Hat AI (RHOAI 3.5.1, RHAIIS 3.6.0-fast.2 y vLLM 0.28.0). Con 117.561.977.600 parámetros totales según los pesos en safetensors (118B declarados) y aproximadamente 8B de parámetros activos por token, está disenado especificamente para coding agéntico y tareas de horizonte largo, como la resolucion de issues en repositorios reales o la interaccion con terminales y herramientas externas.
 
-El modelo resuelve el problema de la automatizacion de tareas de ingenieria de software complejas que requieren razonamiento multi-paso, uso de herramientas y contexto extenso. Su ventana de contexto de 1.048.576 tokens (1M) y su soporte nativo de razonamiento intercalado entre llamadas a herramientas lo hacen especialmente adecuado para agentes autonomos que operan sobre bases de codigo grandes.
+El modelo se situa en la serie Laguna entre Laguna XS 2.1 (33B-A3B) y Laguna M.1 (225B-A23B), compartiendo la receta de la familia: router token-choice con gating softplus sobre 256 expertos enrutados mas un experto compartido, grouped-query attention y una disposicion intercalada de atencion global y de ventana deslizante. Su ventana de contexto alcanza 1.048.576 tokens, lo que lo hace adecuado para razonamiento sobre codebases completas.
 
-La relevancia actual del modelo radica en su combinacion de eficiencia (solo 8B parametros activos por token) con un rendimiento competitivo en benchmarks de codificacion agentica, ademas de su licencia OpenMDW-1.1 que permite uso comercial libre. Se distribuye con variantes cuantizadas (FP8, NVFP4, INT4, GGUF) y un modelo draft para decodificacion especulativa.
+Es relevante ahora porque combina una licencia permisiva (OpenMDW-1.1, que permite uso comercial y modificacion), soporte nativo de tool calling y thinking intercalado entre llamadas a herramientas, y variantes cuantizadas oficiales (FP8, NVFP4, INT4, GGUF) que reducen los requisitos de despliegue frente a los aproximadamente 236 GB del checkpoint BF16. La model card solo declara modalidad texto-a-texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) con atencion grouped-query y atencion intercalada full/sliding-window |
+| Arquitectura | Transformer MoE con router token-choice, gating softplus, 256 expertos enrutados (top-10) + 1 experto compartido; grouped-query attention con 8 KV heads y head dim 128 |
 | Parametros totales | 117.561.977.600 (118B) |
 | Parametros activos | ~8B por token |
-| Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | BF16, FP8, NVFP4, INT4, GGUF |
+| Longitud de contexto | 1.048.576 tokens |
+| Tipos de cuantizacion | BF16 (original), FP8, NVFP4, INT4, GGUF |
 | Idiomas soportados | no disponible |
 | Licencia | OpenMDW-1.1 |
-| Formato de pesos | safetensors (BF16); GGUF disponible en variante separada |
+| Formato de pesos | safetensors (transformers, custom_code); GGUF disponible en repo separado |
 
 ## Arquitectura y entrenamiento
 
-Laguna S 2.1 emplea una arquitectura transformer MoE con 48 capas organizadas en una proporcion 1:3 de atencion global a sliding-window (12 capas de atencion global, 36 capas de sliding-window con ventana de 512 tokens). El mecanismo de enrutamiento es token-choice con softplus gating sobre 256 expertos enrutados (top-10) mas un experto compartido. La atencion es grouped-query con 8 cabezas KV, dimension de cabeza 128 y softplus output gating por cabeza, con escalas rotatorias especificas por tipo de capa. El vocabulario es de 100.352 tokens, correspondiente al tokenizer de la familia Laguna.
+Laguna S 2.1 es un transformer MoE de 48 capas con una disposicion 1:3 de atencion global frente a sliding-window: 12 capas de atencion global y 36 capas de ventana deslizante de 512 tokens. Emplea grouped-query attention con 8 cabezas KV y dimension de cabeza 128, con gating softplus por cabeza en la salida y escalas rotatorias especificas por tipo de capa. El router es de tipo token-choice con gating softplus sobre 256 expertos enrutados (top-10 activos) mas un experto compartido, un diseno habitual en MoE modernos para equilibrar capacidad y coste de inferencia. El vocabulario es de 100.352 tokens, propio de la familia Laguna.
 
-El modelo incluye soporte nativo de razonamiento con pensamiento intercalado entre llamadas a herramientas, controlable por peticion mediante el parametro `enable_thinking`. Dispone de un modelo draft DFlash entrenado para decodificacion especulativa que reduce la latencia de servicio. No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
+La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; esa informacion no esta disponible. Entre las innovaciones tecnicas documentadas destacan el soporte nativo de razonamiento intercalado entre llamadas a herramientas (con control por peticion mediante `enable_thinking`) y la decodificacion especulativa mediante un modelo draft entrenado, Laguna S 2.1-DFlash, que se integra en vLLM con `--speculative-config` y 7 tokens especulativos. La arquitectura `laguna` es compartida con Laguna XS 2.1, por lo que las integraciones de motores (vLLM, SGLang, Transformers, TRT-LLM, llama.cpp) son reutilizables.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo de pensamiento intercalado (`enable_thinking`) y pensamiento preservado.
-- Codificacion agentica: resolucion de tareas de ingenieria de software multi-paso sobre bases de codigo.
+- Generacion de texto y razonamiento en modalidad texto-a-texto.
+- Coding agéntico: resolucion de issues, edicion multi-archivo y trabajo sobre codebases de gran tamano gracias al contexto de 1M tokens.
 - Tool calling / function calling nativo, con parser `poolside_v1` y soporte de `--enable-auto-tool-choice` en vLLM.
-- Razonamiento multi-paso con preservacion de contexto entre llamadas a herramientas.
-- Contexto largo de 1M tokens para trabajar con repositorios y documentos extensos.
+- Razonamiento multi-paso con thinking intercalado entre llamadas a herramientas y "preserved thinking".
+- Control del modo de razonamiento por peticion mediante el parametro `enable_thinking`.
+- Interaccion con terminales y entornos de linea de comandos (evaluado en Terminal-Bench 2.1).
+- Preguntas y respuestas sobre codebases (evaluado en SWE Atlas Codebase QnA).
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modalidad texto-a-texto exclusivamente (sin vision ni audio).
-- Decodificacion especulativa mediante modelo draft DFlash.
+- Vision y audio: no soportados (modalidad declarada texto-a-texto).
 
 ## Casos de uso
 
-- Agentes de codificacion autonoma: el modelo puede resolver issues de repositorios reales ejecutando comandos, editando ficheros y validando cambios, como demuestra su 78,5% en SWE-bench Multilingual y 70,2% en Terminal-Bench 2.1.
-- Automatizacion de tareas de terminal y DevOps: con 70,2% en Terminal-Bench 2.1, es adecuado para agentes que operan sobre entornos de linea de comandos, ejecutan scripts y gestionan infraestructura.
-- Revision y comprension de bases de codigo grandes: su contexto de 1M tokens permite cargar repositorios completos y responder preguntas sobre ellos (46,2% en SWE Atlas Codebase QnA).
-- Integracion en pipelines de CI/CD: el soporte de tool calling y los parsers de vLLM/SGLang permiten integrarlo como agente que interpreta fallos de build y propone correcciones.
-- Asistentes de desarrollo en IDE: con decodificacion especulativa DFlash y variantes cuantizadas, puede servirse con baja latencia para autocompletado y refactorizacion asistida.
-- Orquestacion de herramientas empresariales: el 49,7% en Toolathlon Verified indica capacidad para encadenar llamadas a APIs y herramientas externas en flujos multi-paso.
-- Investigacion en agentes: la publicacion de trayectorias de evaluacion en trajectories.poolside.ai facilita la reproducibilidad y el estudio de comportamiento agentico.
+- Resolucion automatica de issues en repositorios: el modelo puede recibir el arbol del repositorio y los ficheros relevantes dentro de su ventana de 1M tokens, razonar sobre el fallo y generar un parche; sus resultados en SWE-bench Multilingual (78,5%) y SWE-Bench Pro (59,4%) lo respaldan para este escenario.
+- Agente de terminal y automatizacion de DevOps: con tool calling nativo y thinking intercalado, puede encadenar comandos de shell, interpretar la salida y corregir el rumbo, tal como se evalua en Terminal-Bench 2.1 (70,2%).
+- Asistente de codigo en IDE con contexto de proyecto completo: la ventana de 1.048.576 tokens permite incluir multiples modulos y documentacion sin truncar, reduciendo la perdida de contexto en refactorizaciones grandes.
+- Migraciones y refactorizaciones multi-archivo: el modelo puede planificar y ejecutar cambios que afectan a decenas de ficheros, usando el modo thinking para descomponer la tarea y el tool calling para aplicar ediciones verificables.
+- Preguntas y respuestas sobre codebases internas (onboarding tecnico): indexacion de la documentacion y el codigo en el contexto para responder consultas de arquitectura, con resultados de 46,2% en SWE Atlas Codebase QnA.
+- Orquestacion de herramientas empresariales: integrable en pipelines con Toolathlon Verified (49,7%) para tareas que combinan APIs, busqueda y ejecucion de codigo.
+- Despliegue en produccion con latencia reducida: las variantes FP8, NVFP4 e INT4 y el draft model DFlash permiten servir el modelo en infraestructura multi-GPU con decodificacion especulativa, manteniendo la licencia permisiva para uso comercial.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Tamano | Terminal-Bench 2.1 | SWE-bench Multilingual | SWE-Bench Pro | DeepSWE | SWE Atlas (Codebase QnA) | Toolathlon Verified |
+| Modelo | Tamano | Terminal-Bench 2.1 | SWE-bench Multilingual | SWE-Bench Pro (Public) | DeepSWE | SWE Atlas (Codebase QnA) | Toolathlon Verified |
 |---|---|---|---|---|---|---|---|
-| **Laguna S 2.1** | 118B-A8B | **70,2%** | **78,5%** | **59,4%** | **40,4%** | **46,2%** | **49,7%** |
+| Laguna S 2.1 | 118B-A8B | 70,2% | 78,5% | 59,4% | 40,4% | 46,2% | 49,7% |
 | Tencent Hy3 | 295B-A21B | 71,7% | 75,8% | 57,9% | - | - | - |
 | Inkling | 975B-A41B | 63,8% | - | 54,3% | - | - | 45,5%* |
 | Nemotron 3 Ultra | 550B-A55B | 56,4% | 67,7% | - | - | - | 34,3%* |
@@ -62,55 +63,55 @@ El modelo incluye soporte nativo de razonamiento con pensamiento intercalado ent
 | Muse Spark 1.1 | - | 80% | - | 61,5% | 53,3% | 42,2%* | 75,6% |
 | Claude Fable 5 | - | 88% | - | 80,3% | 70% | - | - |
 
-Benchmarks a fecha de 21 de julio de 2026. Los valores marcados con * son reportados por terceros (Artificial Analysis para Terminal-Bench 2.1 y DeepSWE; leaderboard oficial de Scale AI para SWE Atlas; leaderboard oficial de Toolathlon Verified).
+Datos a fecha de 21 de julio de 2026 segun la model card. Los valores marcados con asterisco son reportados por terceros (Terminal-Bench 2.1 y DeepSWE via Artificial Analysis; SWE Atlas via el leaderboard oficial de Scale AI; Toolathlon Verified via su leaderboard oficial). El guion indica que el modelo no fue evaluado en esa prueba.
 
 ## Requisitos de hardware
 
-- VRAM estimada para BF16: aproximadamente 236 GB de pesos, requiriendo multiples GPU.
-- Variantes cuantizadas (FP8, NVFP4, INT4, GGUF) reducen sustancialmente los requisitos, aunque no se especifican cifras exactas en la informacion disponible.
-- GPU recomendadas: configuracion multi-GPU con tensor parallelism de 4 (segun los ejemplos oficiales de vLLM y SGLang); GPU de clase A100/H100 para BF16.
-- No cabe en una GPU consumer individual en BF16; las variantes GGUF/INT4 podrian permitir despliegue en configuraciones consumer de gama alta, sin datos confirmados.
-- Opciones de despliegue: vLLM, SGLang, Transformers, TRT-LLM y llama.cpp (mediante fork de poolside, rama `laguna`, con GGUF).
-- Decodificacion especulativa opcional con DFlash (`num_speculative_tokens: 7`, metodo `dflash`) para reducir latencia.
+- VRAM estimada en BF16: aproximadamente 236 GB de pesos, por lo que requiere multiples GPUs (la configuracion de referencia en vLLM usa `--tensor-parallel-size 4`).
+- Variantes cuantizadas oficiales (FP8, NVFP4, INT4, GGUF) reducen sustancialmente el footprint, aunque la model card no publica cifras exactas de VRAM por variante.
+- GPU recomendadas: no disponibles de forma explicita; por el volumen de pesos, el despliegue en BF16 exige GPUs de centro de datos tipo A100/H100 en configuracion multi-GPU. No se especifican modelos concretos en la informacion proporcionada.
+- No cabe en GPUs de consumo en BF16. Las variantes INT4 y GGUF estan pensadas para reducir requisitos, pero no se confirma en la informacion disponible si caben en tarjetas consumer concretas.
+- Opciones de despliegue documentadas: vLLM (con `--tool-call-parser poolside_v1`, `--reasoning-parser poolside_v1` y `--enable-auto-tool-choice`), SGLang (`--tp-size 4`, `--trust-remote-code`), TRT-LLM (`--tool_parser poolside_v1`, `--reasoning_parser laguna`) y llama.cpp mediante los GGUF de `poolside/Laguna-S-2.1-GGUF`. Tambien es compatible con Transformers.
+- Decodificacion especulativa opcional con DFlash: `--speculative-config '{"model":"poolside/Laguna-S-2.1-DFlash","num_speculative_tokens":7,"method":"dflash"}'` para reducir latencia.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | SWE-bench Multilingual | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Laguna S 2.1 | 118B | ~8B | 1M | 78,5% | OpenMDW-1.1 (comercial permitido) | Hugging Face, OpenRouter, Vercel AI Gateway |
-| Tencent Hy3 | 295B | 21B | no disponible | 75,8% | no disponible | no disponible |
-| Qwen 3.7 Max | no disponible | no disponible | no disponible | 78,3% | no disponible | no disponible |
-| DeepSeek-V4-Pro Max | 1.6T | 49B | no disponible | 76,2% | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
+|---|---|---|---|---|---|
+| Laguna S 2.1 | 118B totales / ~8B activos | 1.048.576 | OpenMDW-1.1 (permisiva, uso comercial) | Hugging Face (RedHatAI y poolside), OpenRouter, Vercel AI Gateway | SWE-bench Multilingual 78,5%; SWE-Bench Pro 59,4%; Terminal-Bench 2.1 70,2% |
+| Laguna XS 2.1 | 33B-A3B | no disponible | Laguna (misma familia) | Hugging Face (poolside) | no disponible en la informacion proporcionada |
+| Laguna M.1 | 225B-A23B | no disponible | Laguna (misma familia) | Hugging Face (poolside) | no disponible en la informacion proporcionada |
+| Tencent Hy3 | 295B-A21B | no disponible | no disponible | no disponible | Terminal-Bench 2.1 71,7%; SWE-bench Multilingual 75,8%; SWE-Bench Pro 57,9% |
 
-Laguna S 2.1 ofrece un rendimiento en SWE-bench Multilingual superior al de modelos significativamente mas grandes (Tencent Hy3, DeepSeek-V4-Pro Max) con solo 8B parametros activos, lo que lo hace especialmente atractivo en terminos de coste de inferencia.
+La comparativa se limita a los datos publicados en la model card. Laguna S 2.1 ofrece un rendimiento cercano a modelos mucho mayores (Tencent Hy3 con 295B-A21B, DeepSeek-V4-Pro Max con 1.6T-A49B) con un coste de inferencia menor al activar solo ~8B parametros por token, y supera a Nemotron 3 Ultra (550B-A55B) en todas las pruebas en las que ambos aparecen.
 
 ## Limitaciones y advertencias
 
-- Modalidad exclusivamente texto: no soporta vision ni audio.
-- Idiomas soportados no documentados en la informacion disponible; el rendimiento fuera del ingles no esta verificado.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de codificacion donde puede generar APIs o funciones inexistentes.
 - Sesgos conocidos: no documentados en la informacion proporcionada.
-- El checkpoint BF16 requiere infraestructura multi-GPU (~236 GB), lo que limita el despliegue en entornos con recursos reducidos.
-- Aunque la licencia OpenMDW-1.1 permite uso comercial, se recomienda revisar los terminos completos en el enlace de licencia.
-- El uso de llama.cpp requiere el fork especifico de poolside (rama `laguna`), no la version upstream.
-- Los parsers de razonamiento y tool calling difieren entre motores (vLLM usa `poolside_v1`; TRT-LLM usa `laguna`), lo que puede complicar la portabilidad.
-- El modelo requiere `trust-remote-code` en SGLang y TRT-LLM, con el riesgo de seguridad asociado.
+- Riesgo de alucinacion: no cuantificado en la model card; como en cualquier modelo generativo, las salidas de codigo y las llamadas a herramientas deben validarse antes de aplicarse en produccion.
+- Idiomas soportados: no declarados; no hay garantia de calidad multilingue fuera de los idiomas cubiertos por los benchmarks (predominantemente ingles).
+- El modelo esta orientado a texto; no soporta vision ni audio.
+- Restricciones de licencia: OpenMDW-1.1 permite uso y modificacion comercial y no comercial, pero conviene revisar el texto completo de la licencia enlazado en la model card antes de redistribuir.
+- El acceso al repositorio original de poolside esta sujeto a un formulario gated con tratamiento de datos personales; la copia de RedHatAI esta validada para RHOAI 3.5.1, RHAIIS 3.6.0-fast.2 y vLLM 0.28.0, y fuera de esas versiones el soporte no esta garantizado.
+- El despliegue en BF16 exige infraestructura multi-GPU (~236 GB de pesos); las cifras de VRAM para variantes cuantizadas no se publican.
+- Los benchmarks corresponden a la fecha del 21 de julio de 2026 y algunas puntuaciones proceden de terceros (marcadas con asterisco), por lo que la comparabilidad entre filas no es homogenea.
+- El modelo requiere `trust_remote_code` en varios motores (SGLang, TRT-LLM) y usa codigo personalizado (`custom_code`), lo que implica revisar el codigo remoto antes de ejecutarlo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/RedHatAI/Laguna-S-2.1
-- Modelo original: https://huggingface.co/poolside/Laguna-S-2.1
+- Modelo en Hugging Face (RedHatAI): https://huggingface.co/RedHatAI/Laguna-S-2.1
+- Modelo original en Hugging Face (poolside): https://huggingface.co/poolside/Laguna-S-2.1
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1
-- OpenRouter: https://openrouter.ai/poolside/laguna-s-2.1
-- Vercel AI Gateway: https://vercel.com/ai-gateway/models/laguna-s-2.1
-- Modelo draft DFlash: https://huggingface.co/poolside/Laguna-S-2.1-DFlash
+- Laguna XS 2.1: https://huggingface.co/poolside/Laguna-XS-2.1
+- Draft model DFlash: https://huggingface.co/poolside/Laguna-S-2.1-DFlash
 - Variante FP8: https://huggingface.co/poolside/Laguna-S-2.1-FP8
 - Variante NVFP4: https://huggingface.co/poolside/Laguna-S-2.1-NVFP4
 - Variante INT4: https://huggingface.co/poolside/Laguna-S-2.1-INT4
 - Variante GGUF: https://huggingface.co/poolside/Laguna-S-2.1-GGUF
-- Modelo XS 2.1: https://huggingface.co/poolside/Laguna-XS-2.1
-- Licencia: https://huggingface.co/poolside/Laguna-S-2.1/blob/main/LICENSE.md
-- OpenMDW: https://openmdw.ai/
+- Licencia OpenMDW-1.1: https://huggingface.co/poolside/Laguna-S-2.1/blob/main/LICENSE.md
+- Informacion sobre OpenMDW: https://openmdw.ai/
 - Trayectorias de evaluacion: https://trajectories.poolside.ai
-- Fork de llama.cpp: https://github.com/p (URL truncada en la informacion disponible)
+- Uso en OpenRouter: https://openrouter.ai/poolside/laguna-s-2.1
+- Uso en Vercel AI Gateway: https://vercel.com/ai-gateway/models/laguna-s-2.1
+- Organizacion RedHatAI en Hugging Face: https://huggingface.co/RedHatAI

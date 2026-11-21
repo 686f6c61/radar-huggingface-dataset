@@ -2,51 +2,49 @@
 
 ## Resumen
 
-LFM3-1.7B-Heretic-Abliterated-GGUF es la distribucion en formato GGUF del modelo LFM3-1.7B-Heretic-Abliterated, una variante "abliterated" (con las capas de rechazo atenuadas mediante la tecnica Heretic) del modelo base LiquidAI/LFM3-1.7B de Liquid AI. El modelo original es un transformer de 1.700 millones de parametros construido sobre la arquitectura tri-hibrida de Liquid AI, disenada para despliegue en dispositivos de borde y agentes locales, con una ventana de contexto de 256.000 tokens.
+LFM3-1.7B-Heretic-Abliterated-GGUF es una cuantizacion estatica en formato GGUF del modelo Vortecks/LFM3-1.7B-Heretic-Abliterated, un derivado "abliterated" (sin rechazo condicionado) del modelo base LiquidAI LFM3-1.7B. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF de modelos open source, mientras que la modificacion del comportamiento (eliminacion de capas de rechazo) corresponde a Vortecks. El modelo esta pensado para inferencia en local y en el borde (edge), con un tamano de 1.728.801.600 parametros (aproximadamente 1,7 mil millones).
 
-Este repositorio concreto ha sido generado por mradermacher, un conocido publicador de cuantizaciones GGUF, a partir de los pesos de Vortecks. Incluye 12 variantes de cuantizacion que van desde Q2_K hasta F16, lo que permite ejecutar el modelo en CPU y en GPUs de gama baja. Es relevante para desarrolladores que necesitan un modelo pequeno, con contexto muy largo y sin las restricciones de alineamiento del modelo original, empaquetado listo para llama.cpp u Ollama.
+El modelo hereda la arquitectura y el entrenamiento del LFM3-1.7B original de Liquid AI, un modelo conversacional orientado a despliegue en dispositivos con recursos limitados y con soporte declarado para 16 idiomas (entre ellos espanol, ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, vietnamita, tailandes, indonesio, hindi, ruso y polaco). La variante "Heretic-Abliterated" modifica los pesos para reducir los comportamientos de rechazo, lo que la hace atractiva para experimentacion con prompts y generacion sin filtros, pero tambien plantea riesgos de seguridad y de cumplimiento.
 
-La ficha se limita a lo que puede verificarse en la informacion disponible: la model card del repositorio solo declara la procedencia de los pesos y la lista de cuantizaciones, sin especificaciones detalladas, benchmarks ni condiciones de licencia explicitas.
+Su relevancia actual radica en que ofrece un modelo de 1,7B en cuantizaciones que van desde 0,9 GB (Q2_K) hasta 3,6 GB (f16), lo que permite ejecutarlo en GPUs de consumo, CPUs modernas y dispositivos de borde mediante llama.cpp u Ollama. La licencia es lfm1.0 (no estandar, enlazada al modelo original de LiquidAI), lo que exige revisar las condiciones antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tri-hibrido (arquitectura LFM3 de Liquid AI, segun la fuente del modelo base) |
-| Parametros totales | 1,7 mil millones (1.7B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | 256.000 tokens (segun la fuente del modelo base LFM3-1.7B) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (la fuente secundaria menciona "other licence" sin concretar) |
-| Formato de pesos | GGUF (generado con quantize_version 2, convert_type hf) |
+| Arquitectura | Transformer (familia LFM3 de Liquid AI; detalles completos no disponibles en la informacion proporcionada) |
+| Parametros totales | 1.728.801.600 (1,7B) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
+| Licencia | lfm1.0 (licencia "other", enlazada a LiquidAI/LFM3-1.7B) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); repo de 15,9 GB en total |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-1.7B emplea la arquitectura tri-hibrida de Liquid AI, que combina mecanismos de atencion con componentes de estado recurrente para reducir el coste computacional en contextos largos. Segun la fuente consultada, esta disenado para uso como asistente cotidiano, tool calling, salidas estructuradas, trabajo con contexto largo y despliegue en el borde. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
+El modelo base es LFM3-1.7B de Liquid AI, un transformer conversacional de 1,7 mil millones de parametros disenado para despliegue en el borde. La model card de esta cuantizacion no incluye detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; esa informacion corresponderia a la documentacion del modelo original de LiquidAI, que no se ha proporcionado. La variante Vortecks/LFM3-1.7B-Heretic-Abliterated aplica la tecnica conocida como "abliteration", que consiste en modificar los pesos (tipicamente en las direcciones de activacion asociadas al rechazo) para reducir la probabilidad de respuestas de negativa, sin reentrenar el modelo desde cero.
 
-La variante Heretic-Abliterated aplica la tecnica de abliteration, que identifica y neutraliza las direcciones de activacion asociadas al rechazo de peticiones, de modo que el modelo responde a un espectro mas amplio de instrucciones. Esta modificacion se realizo sobre el modelo base y fue publicada por Vortecks; mradermacher se limita a convertir y cuantizar esos pesos a GGUF. No se documentan en la informacion disponible detalles sobre el proceso de abliteration, el numero de direcciones eliminadas ni el impacto en capacidades.
+La cuantizacion la realiza mradermacher con su pipeline habitual (convert_type hf, quantize_version 2, output_tensor_quantised 1), generando cuantizaciones estaticas K-quants e IQ. Tambien existe una version con cuantizaciones ponderadas/imatrix en el repositorio mradermacher/LFM3-1.7B-Heretic-Abliterated-i1-GGUF, que suele ofrecer mejor calidad por bit que las estaticas equivalentes. No se han documentado innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, orientada a uso como asistente local.
-- Tool calling y function calling, segun las capacidades declaradas del modelo base LFM3-1.7B.
-- Salidas estructuradas (structured outputs) para integracion en pipelines.
-- Trabajo con contexto largo gracias a la ventana de 256.000 tokens del modelo base.
-- Razonamiento multi-paso y uso como agente local, segun la descripcion del modelo base.
-- Respuestas sin las capas de rechazo habituales del modelo original, por efecto de la abliteration.
-- Capacidades multilingues: no disponible.
-- Vision, audio o modo "thinking": no disponible.
+- Generacion de texto conversacional multi-turno, heredada del LFM3-1.7B base.
+- Comportamiento "abliterated": menor tendencia a rechazar peticiones, lo que cambia el perfil de respuestas respecto al modelo original.
+- Soporte multilingue declarado para 16 idiomas, incluido el espanol.
+- Compatibilidad con la libreria transformers y con el ecosistema GGUF (llama.cpp, Ollama, etc.).
+- Tool calling / function calling: no confirmado en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas; el tamano de 1,7B limita el razonamiento complejo.
+- Vision, audio o modo "thinking": no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Agentes locales en portatil: el modelo, cuantizado en Q4_K_M o Q5_K_M, ocupa pocos gigabytes y puede ejecutarse en CPU con llama.cpp u Ollama, lo que permite desplegar un agente personal sin conexion ni GPU dedicada.
-- Procesamiento de documentos largos: con 256.000 tokens de contexto en el modelo base, es adecuado para resumir contratos, informes o expedientes completos en una sola pasada, siempre que la cuantizacion elegida preserve la calidad suficiente.
-- Automatizacion de herramientas y APIs: su soporte de tool calling y salidas estructuradas permite integrarlo como planificador en flujos que invocan funciones externas, por ejemplo consultas a bases de datos o envio de correos.
-- Prototipado rapido en entornos con recursos limitados: las 12 cuantizaciones disponibles permiten ajustar el equilibrio entre VRAM/RAM y calidad, desde Q2_K para pruebas hasta F16 para evaluacion de referencia.
-- Generacion de texto sin filtros en investigacion: la variante abliterated es util para estudiar el comportamiento del modelo ante instrucciones que el original rechazaria, en entornos controlados y con supervision humana.
-- Clasificacion y extraccion de informacion en lote: al ser un modelo pequeno, puede procesar grandes volumenes de texto en CPU con un throughput aceptable, extrayendo entidades o etiquetas en pipelines de datos.
-- Asistente de codigo ligero: puede integrarse en editores o scripts para autocompletado y explicacion de fragmentos, aunque su tamano limita la calidad frente a modelos mayores.
+- Experimentacion con prompts sin filtros: util para investigadores que estudian el comportamiento de modelos abliterated y comparan respuestas frente al LFM3-1.7B original; el formato GGUF permite cargarlo rapidamente en llama.cpp.
+- Prototipado local en portatiles: con cuantizaciones Q4_K_M (1,2 GB) o Q5_K_M (1,4 GB) se puede ejecutar en CPU o en GPUs de consumo, ideal para demos y pruebas de concepto sin infraestructura cloud.
+- Generacion de texto creativo y conversacional: el modelo esta etiquetado como "conversational" y admite 16 idiomas, lo que permite construir chatbots de ficcion o asistentes de escritura en espanol y otras lenguas.
+- Despliegue en dispositivos de borde: el tag "edge" y el tamano reducido (desde 0,9 GB en Q2_K) lo hacen apto para entornos con memoria limitada, como mini-PC o sistemas embebidos con llama.cpp.
+- Evaluacion de sesgos y seguridad: al ser una variante abliterated, sirve como caso de estudio para medir como cambia la tasa de rechazo y la toxicidad respecto al modelo base, util en auditorias de IA.
+- Fine-tuning ligero o destilacion: el checkpoint en transformers (formato safetensors de 1,7B) puede servir como base para LoRA o para generar datos sinteticos en pipelines de investigacion.
 
 ## Benchmarks y rendimiento
 
@@ -54,36 +52,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: aproximadamente 1,1 GB en Q2_K, 1,5 GB en Q4_K_M, 2,0 GB en Q6_K y 3,5 GB en F16 (estimaciones segun el tamano de los pesos de un modelo de 1,7B; no confirmadas en la informacion disponible).
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060) es suficiente; en entornos profesionales, A100 o H100 no aportan ventaja significativa por el reducido tamano del modelo.
-- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos anos, y tambien en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM y TGI requeririan conversion a otro formato.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 1,2-1,5 GB con Q4_K_M, 1,5-2 GB con Q6_K, 2-2,5 GB con Q8_0 y 4-5 GB con f16 (incluyendo overhead de contexto y KV cache).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones bajas; RTX 3060/4060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo es demasiado pequeno para aprovechar GPUs de datacenter.
+- Cabe en GPU de consumo: si, en practicamente todas las GPUs modernas (GTX 1060 6GB en adelante) e incluso en iGPUs con memoria compartida usando cuantizaciones Q4.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el repo incluye el tag endpoints_compatible. Para el checkpoint original en transformers se puede usar la libreria transformers con custom_code.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano, se espera decenas de tokens por segundo en GPU de consumo y varios tokens por segundo en CPU, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Heretic-Abliterated-GGUF (este) | 1,7B | 256K (modelo base) | no disponible | GGUF | Variante sin alineamiento de rechazo |
-| LiquidAI/LFM3-1.7B | 1,7B | 256K | no disponible | safetensors/GGUF | Modelo base original, con alineamiento |
-| Vortecks/LFM3-1.7B-Heretic-Abliterated | 1,7B | 256K (modelo base) | no disponible | safetensors/GGUF | Pesos fuente de esta cuantizacion |
-| Vortecks/LFM3-1.7B-Heretic-Abliterated-i1-GGUF | 1,7B | 256K (modelo base) | no disponible | GGUF (imatrix) | Cuantizacion alternativa con imatrix |
+| LFM3-1.7B-Heretic-Abliterated-GGUF (este) | 1,7B | no disponible | lfm1.0 | GGUF | Variante abliterated, 16 idiomas, cuantizaciones desde 0,9 GB |
+| LiquidAI LFM3-1.7B (base) | 1,7B | no disponible | lfm1.0 | safetensors/GGUF | Modelo original con filtros de rechazo intactos |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors/GGUF | Alternativa de tamano similar con licencia permisiva |
+| Llama 3.2 1B Instruct | 1,2B | 128K (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors/GGUF | Alternativa edge con contexto largo y licencia restrictiva |
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina o atenua las capas de rechazo: el modelo puede generar contenido danino, ofensivo o ilegal sin filtros, lo que exige supervision y politicas de uso estrictas en produccion.
-- No se dispone de informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad de esta variante.
-- Riesgo de alucinacion inherente a un modelo de 1,7B, especialmente en tareas de razonamiento complejo o conocimiento factual.
-- La licencia no esta declarada en el repositorio; la fuente secundaria indica "other licence" sin especificar, por lo que no puede confirmarse el uso comercial.
-- No se documentan los idiomas soportados; el rendimiento en castellano es incierto.
-- El contexto de 256.000 tokens corresponde al modelo base; no se ha verificado que las cuantizaciones de menor precision preserven esa ventana con calidad aceptable.
-- El repositorio no tiene descargas ni likes en el momento de la consulta, lo que reduce la evidencia de validacion por la comunidad.
-- Al ser una modificacion no oficial, no cuenta con el respaldo de Liquid AI ni garantias de mantenimiento.
+- Al ser una variante "abliterated", el modelo puede generar contenido que el LFM3 original rechazaria; no es apto para produccion orientada al publico sin moderacion adicional.
+- Riesgo de alucinacion elevado por el tamano (1,7B): no es fiable para tareas de razonamiento complejo, matematicas avanzadas o codigo de produccion.
+- La licencia lfm1.0 es "other" y remite a la licencia del modelo LiquidAI; es obligatorio revisar sus terminos antes de cualquier uso comercial, ya que puede incluir restricciones de redistribucion o de uso.
+- Los datos de contexto, composicion del entrenamiento y benchmarks no estan documentados en esta ficha; no se deben asumir capacidades no verificadas.
+- El modelo base es de noviembre de 2026 segun la fecha de creacion del repo; verificar la vigencia de la licencia y de las dependencias (transformers, llama.cpp) antes de desplegar.
+- No se ha confirmado soporte de tool calling, agentes ni vision; no disenar arquitecturas que dependan de estas capacidades sin validarlas.
+- El repo pesa 15,9 GB por incluir todas las cuantizaciones; descargar solo el archivo GGUF necesario para evitar consumo innecesario de almacenamiento.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM3-1.7B-Heretic-Abliterated-GGUF
-- Pesos fuente (Vortecks): https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated
-- Cuantizacion imatrix alternativa: https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated-i1-GGUF
-- Ficha en abliteratedmodels.org: https://www.abliteratedmodels.org/lfm3-1.7b-heretic-abliterated/
-- Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Modelo base de la variante: https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/LFM3-1.7B-Heretic-Abliterated-i1-GGUF
+- Modelo original LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
+- Pagina de descargas del autor: https://hf.tst.eu/model#LFM3-1.7B-Heretic-Abliterated-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

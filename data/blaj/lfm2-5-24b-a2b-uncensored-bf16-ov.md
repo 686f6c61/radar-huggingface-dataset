@@ -2,90 +2,90 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-Uncensored-bf16-ov es una exportación a formato OpenVINO IR del modelo LiquidAI/LFM2.5-24B-A2B, un transformer híbrido de tipo Mixture of Experts (MoE) con 40 capas, 64 expertos y enrutamiento top-4. La variante ha sido modificada por el usuario `blaj` fusionando un adaptador LoRA de rango 1 denominado `atomic.abliterate` (referencia `r24-all-14-39-perlayer`) en las capas 14 a 39 con una escala de 1,75, lo que elimina parte de los rechazos del modelo original (técnica conocida como abliteration). El adaptador queda integrado en los pesos, por lo que no se necesita cargar nada adicional en tiempo de ejecución.
+LFM2.5-24B-A2B-Uncensored-bf16-ov es una conversión a OpenVINO IR del modelo LiquidAI/LFM2.5-24B-A2B, publicada por el usuario blaj. El modelo base es un transformer híbrido de tipo Mixture of Experts (MoE) con 24.000 millones de parámetros totales, 40 capas y 64 expertos con enrutamiento top-4, del que no se especifica el número de parámetros activos por token. Esta variante concreta incorpora un adaptador LoRA de rango 1 (`atomic.abliterate`, `r24-all-14-39-perlayer`) fusionado en las capas 14 a 39 con escala 1,75, lo que elimina los mecanismos de rechazo y moderación del modelo original (variante "uncensored" o "abliterated").
 
-El modelo está pensado para ejecutarse en GPUs integradas Intel Arc mediante OpenVINO GenAI. La exportación mantiene el cuerpo en FP16 (convolución, atención, normalización, router, embeddings y proyección de salida sin comprimir) y aplica compresión INT8 asimétrica solo a los pesos de los 38 subgrafos de expertos MoE, de modo que el grafo completo cabe en los 32 GB de memoria compartida de una iGPU Arc. El tamaño del repositorio es de 25,1 GB.
+El interés de esta ficha reside en dos aspectos técnicos. Por un lado, es una exportación optimizada para inferencia en GPU Intel (Arc iGPU) mediante OpenVINO GenAI, con el cuerpo del modelo en FP16 y los pesos de los expertos MoE comprimidos a INT8 asimétrico para ajustarse al límite de 32 GB de memoria de una iGPU Arc. Por otro, documenta un flujo de conversión poco habitual: exportación capa a capa, extracción y compresión de los bloques MoE, y posterior injerto en un único grafo con estado (stateful IR).
 
-Es relevante ahora porque demuestra la viabilidad de ejecutar un modelo MoE de 24B parámetros en hardware consumer integrado, manteniendo una precisión de referencia (cuerpo FP16) y una ruta de inferencia stateful funcional. La licencia es la LFM Open License v1.0, que impone restricciones de uso comercial.
+La relevancia es doble: sirve como referencia para quien necesite desplegar un MoE de 24B en hardware Intel de consumo profesional, y como ejemplo de modificación de alineamiento mediante LoRA fusionado. La licencia del modelo base (LFM Open License v1.0) condiciona su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | Lfm2MoeForCausalLM (transformer híbrido convolución/atención con MoE), 40 capas, 64 expertos, top-4 routing |
-| Parametros totales | no disponible (modelo base identificado como 24B-A2B; el sufijo A2B sugiere ~2B activos) |
-| Parametros activos | no disponible |
+| Parámetros totales | 24 000 millones (24B) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Cuerpo FP16; expertos MoE en INT8 asimétrico weight-only; existen variantes INT4 e INT8 del mismo autor |
+| Tipos de cuantización | FP16 (cuerpo, atención, convolución, normalización, router, embeddings y proyección de salida); INT8 asimétrico weight-only (38 subgrafos de expertos MoE) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (lfm1.0) |
-| Formato de pesos | OpenVINO IR (FP16 + INT8 MoE), acompañado de tokenizer, detokenizer, config HF, generation config, graph.pbtxt y ovms_config.json |
+| Licencia | LFM Open License v1.0 (license: other, license_name: lfm1.0) |
+| Formato de pesos | OpenVINO IR (model IR, tokenizer, detokenizer, HF config, generation config, graph.pbtxt, ovms_config.json) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido que combina capas convolucionales y de atención con bloques MoE de 64 expertos y enrutamiento top-4, organizado en 40 capas. La exportación conserva el estado híbrido de convolución y atención, lo que permite una inferencia stateful en OpenVINO. Los detalles sobre el número de tokens de entrenamiento, la composición del dataset y las fases de RLHF o DPO del modelo original no se incluyen en la información disponible.
+El modelo base LiquidAI/LFM2.5-24B-A2B emplea la arquitectura `Lfm2MoeForCausalLM`, un diseño híbrido que combina capas de convolución con capas de atención y bloques MoE. Según la model card, consta de 40 capas, 64 expertos y enrutamiento top-4, con un total de 24B parámetros. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original.
 
-La modificación principal consiste en la fusión del adaptador LoRA de rango 1 `atomic.abliterate` (referencia `r24-all-14-39-perlayer`) en las capas 14 a 39 con escala 1,75. Este adaptador se ha horneado en los pesos, de modo que el modelo resultante es "abliterated" y "uncensored". La conversión a OpenVINO se realizó capa a capa por limitaciones de memoria (30 GB de RAM en la máquina de exportación), extrayendo los bloques MoE de exportaciones por capa, comprimiendo únicamente sus pesos de expertos y fusionándolos con las capas del cuerpo FP16 en un único IR stateful.
+La innovación técnica de esta publicación no está en el entrenamiento sino en el proceso de conversión y modificación. El adaptador LoRA `atomic.abliterate` de rango 1 se fusionó en las capas 14 a 39 con escala 1,75, quedando integrado en los pesos sin necesidad de cargar el adaptador en tiempo de ejecución. La exportación a OpenVINO se realizó capa a capa porque la exportación en una sola pasada superaba el límite de 30 GB de RAM de la máquina de conversión. Los bloques MoE se extrajeron de exportaciones por capa, se comprimieron únicamente en sus pesos de expertos mediante NNCF (INT8 asimétrico) y se injertaron con las capas del cuerpo en FP16 en un único grafo con estado que preserva el estado híbrido de convolución y atención.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (pipeline `text-generation`, etiqueta `conversational`).
-- Razonamiento y generación de contenido sin los rechazos típicos del modelo base, gracias a la abliteration.
-- Ejecución en GPU Intel Arc mediante OpenVINO GenAI con ruta stateful.
-- Soporte de inferencia en un solo stream (single stream); el batching continuo no está soportado para este modelo híbrido de convolución/estado.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Tool calling, function calling, agentes, visión o audio: no disponibles en la información proporcionada.
+- Generación de texto y conversación multi-turno (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y respuesta a instrucciones heredados del modelo base LFM2.5-24B-A2B.
+- Capacidad MoE con 64 expertos y enrutamiento top-4, que activa un subconjunto de parámetros por token.
+- Variante sin censura: el adaptador abliterate elimina los rechazos y la moderación del modelo original.
+- Inferencia en GPU Intel mediante OpenVINO GenAI (Arc iGPU y dispositivos compatibles).
+- Soporte de tool calling, agentes, modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en equipos con iGPU Intel Arc: el modelo cabe en los 32 GB de memoria de una Arc iGPU gracias a la compresión INT8 de los expertos, lo que permite desplegar un MoE de 24B en hardware integrado sin GPU dedicada.
-- Prototipado de asistentes conversacionales sin filtros: la abliteration elimina parte de los rechazos del modelo base, útil para investigación sobre comportamiento de modelos y generación de contenido creativo sin restricciones excesivas.
-- Evaluación de cuantizaciones: al existir variantes INT4, INT8 y esta BF16-source, sirve para comparar calidad y rendimiento entre niveles de precisión sobre el mismo modelo base.
-- Despliegue con OpenVINO Model Server (OVMS): el repositorio incluye `ovms_config.json` y el layout estándar, lo que facilita servirlo en infraestructura Intel.
-- Investigación sobre modelos híbridos convolución/atención: permite estudiar el comportamiento de la ruta stateful y el enrutamiento MoE top-4 en un entorno controlado.
-- Generación de texto en un solo stream con latencia conocida: con 20,1 tok/s en una Core Ultra 7 258V, es adecuado para aplicaciones interactivas de baja concurrencia.
+- Despliegue en hardware Intel con iGPU Arc: el modelo está empaquetado como OpenVINO IR con un tamaño de 24 GB y un grafo stateful que carga en GPU; se usaría con `openvino_genai.LLMPipeline` para servir generación de texto en estaciones de trabajo o equipos con GPU integrada Intel.
+- Evaluación de modelos sin alineamiento: investigadores que estudian el efecto de la abliteración pueden comparar esta variante con el modelo base LiquidAI/LFM2.5-24B-A2B para analizar cambios en tasas de rechazo y comportamiento.
+- Prototipado de asistentes conversacionales: al ser un modelo conversacional de 24B, sirve para construir demos de chat con contexto multi-turno en entornos controlados donde la ausencia de moderación sea aceptable.
+- Investigación sobre eficiencia MoE: la separación entre cuerpo FP16 y expertos INT8 permite estudiar el impacto de la compresión weight-only en la calidad de salida de un MoE de 64 expertos.
+- Integración con OpenVINO Model Server (OVMS): el repositorio incluye `ovms_config.json` y el layout estándar de OVMS, lo que facilita el despliegue como servicio de inferencia en infraestructura Intel.
+- Benchmarking de latencia en iGPU: con 20,1 tok/s medidos en un Core Ultra 7 258V, es útil como referencia para comparar configuraciones de cuantización (INT4, INT8, FP16) sobre el mismo modelo.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| Throughput (single stream) | 20,1 tok/s |
-| Hardware | Intel Core Ultra 7 258V, Arc iGPU |
-| Runtime | OpenVINO GenAI 2026.4.0 |
-| Configuracion | Generación de 128 tokens, mismo harness que las builds INT4 e INT8 |
+| Métrica | Valor | Entorno |
+|---|---|---|
+| Throughput (single stream) | 20,1 tok/s | Intel Core Ultra 7 258V Arc iGPU, OpenVINO GenAI 2026.4.0, generación de 128 tokens |
+| Continuous batching | No soportado | Modelo híbrido convolución/estado |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 24 GB de tamaño de modelo; requiere una iGPU o GPU con al menos 32 GB de memoria para cargar el grafo completo (la build se diseñó para el límite de 32 GB de la Arc iGPU).
-- GPU recomendadas: Intel Arc iGPU (probado en Core Ultra 7 258V). No hay datos sobre GPUs dedicadas.
-- GPU consumer: cabe en iGPU Intel Arc con 32 GB de memoria compartida; no se dispone de datos para GPUs consumer discretas.
-- Despliegue: OpenVINO GenAI (`openvino_genai.LLMPipeline`) y OpenVINO Model Server (OVMS) mediante el layout incluido.
-- Latencia/throughput: 20,1 tok/s en single stream; el batching continuo no está soportado para este modelo híbrido.
+- VRAM/memoria estimada: 24 GB para el modelo completo en el formato publicado (cuerpo FP16 + expertos INT8).
+- El autor indica que el grafo completo cabe en el límite de 32 GB de memoria de una iGPU Intel Arc.
+- GPU probada: Intel Core Ultra 7 258V con Arc iGPU.
+- GPU recomendadas: iGPU Intel Arc con al menos 32 GB de memoria compartida; no se documenta compatibilidad con A100, H100 o RTX 4090 en esta exportación OpenVINO.
+- No cabe en GPUs de consumo con 8-16 GB de VRAM en este formato.
+- Despliegue: OpenVINO GenAI (`openvino_genai.LLMPipeline`) y OpenVINO Model Server (OVMS). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia/throughput: 20,1 tok/s en single stream; continuous batching no soportado por la naturaleza híbrida convolución/estado del modelo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| blaj/LFM2.5-24B-A2B-Uncensored-bf16-ov | 24B (A2B) | no disponible | OpenVINO IR FP16 + INT8 MoE | lfm1.0 | Variante de referencia, 20,1 tok/s en Arc iGPU |
-| blaj/LFM2.5-24B-A2B-Uncensored-int8-ov | 24B (A2B) | no disponible | OpenVINO IR INT8 | lfm1.0 | Misma base, compresión INT8 completa |
-| blaj/LFM2.5-24B-A2B-Uncensored-int4-ov | 24B (A2B) | no disponible | OpenVINO IR INT4 | lfm1.0 | Misma base, compresión INT4 |
-| LiquidAI/LFM2.5-24B-A2B | 24B (A2B) | no disponible | safetensors (original) | lfm1.0 | Modelo base sin abliteration |
+| LFM2.5-24B-A2B-Uncensored-bf16-ov (este) | 24B totales, MoE 64 expertos top-4 | no disponible | OpenVINO IR (FP16 + INT8 MoE) | LFM Open License v1.0 | Variante abliterated, optimizada para iGPU Intel |
+| LiquidAI/LFM2.5-24B-A2B | 24B totales, MoE 64 expertos top-4 | no disponible | safetensors (presumiblemente) | LFM Open License v1.0 | Modelo base alineado, sin modificación |
+| Otras variantes de cuantización del mismo modelo (INT4, INT8) | 24B totales | no disponible | OpenVINO IR | LFM Open License v1.0 | Referenciadas por el autor como builds comparables en el mismo harness |
+
+No se dispone de información sobre modelos de otros fabricantes comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina rechazos, lo que puede producir contenido inapropiado, ofensivo o dañino; no es recomendable para aplicaciones de cara al público sin moderación adicional.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de fiabilidad en la información disponible.
-- El batching continuo no está soportado para este modelo híbrido de convolución/estado, lo que limita el throughput en escenarios de alta concurrencia.
-- La licencia LFM Open License v1.0 impone restricciones de uso comercial; es necesario revisar el archivo LICENSE antes de cualquier despliegue productivo.
-- El modelo está exportado específicamente para OpenVINO y GPUs Intel; no es portable a otros runtimes sin reconversión.
-- El proceso de exportación se realizó capa a capa por limitaciones de memoria, lo que conviene tener en cuenta para reproducibilidad.
-- No hay información sobre idiomas soportados ni sobre sesgos específicos del modelo base o de la variante abliterated.
+- Modelo sin alineamiento: la fusión del adaptador abliterate elimina los mecanismos de rechazo, por lo que puede generar contenido dañino, ofensivo o ilegal sin filtros. No apto para aplicaciones de cara al público sin capas de moderación externas.
+- Sesgos: no se documentan evaluaciones de sesgo; al derivar de un modelo base sin información sobre su dataset, los sesgos del original persisten y la abliteración puede amplificar respuestas sesgadas.
+- Alucinación: no hay datos publicados sobre tasas de alucinación de esta variante ni del modelo base.
+- Contexto e idiomas: la longitud de contexto y los idiomas soportados no están disponibles en la información proporcionada; no se debe asumir soporte multilingüe sin verificación.
+- Licencia: LFM Open License v1.0 (license: other). Es necesario revisar los términos del archivo LICENSE del repositorio antes de cualquier uso comercial; la licencia del modelo base condiciona la redistribución.
+- Rendimiento: el continuous batching no está soportado, lo que limita el throughput en despliegues con múltiples usuarios concurrentes.
+- Formato cerrado a OpenVINO: los pesos no están en safetensors ni GGUF, por lo que no se pueden cargar directamente en vLLM, llama.cpp u otros runtimes sin reconversión.
+- Proceso de conversión no estándar (exportación capa a capa e injerto manual de bloques MoE): conviene validar la calidad de salida frente al modelo base antes de usarlo en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/blaj/LFM2.5-24B-A2B-Uncensored-bf16-ov
-- Variante INT8: https://huggingface.co/blaj/LFM2.5-24B-A2B-Uncensored-int8-ov
-- Variante INT4: https://huggingface.co/blaj/LFM2.5-24B-A2B-Uncensored-int4-ov
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B

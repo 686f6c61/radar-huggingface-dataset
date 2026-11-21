@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "8 Machine Learning Models Explained in 20 Minutes - DataCamp",
-      "url": "https://www.datacamp.com/blog/machine-learning-models-explained",
-      "snippet": "Sep 16, 2022 · Find out everything you need to know about the types of machine learning models, including what they're used for and …"
-    },
-    {
-      "title": "Machine Learning Algorithms - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-algorithms/",
-      "snippet": "Sep 1, 2026 · Machine learning is commonly categorized into three types: Supervised Learning: Algorithms learn from labeled data, …"
-    },
-    {
-      "title": "Machine Learning Tutorial - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning/",
-      "snippet": "Sep 3, 2026 · Machine learning is a branch of Artificial Intelligence that focuses on developing models and algorithms that let …"
-    },
-    {
-      "title": "12 Machine Learning Models Explained - Dataquest",
-      "url": "https://www.dataquest.io/blog/machine-learning-models-explained/",
-      "snippet": "Jul 29, 2026 · 12 machine learning models explained with Python examples, covering regression, classification, trees, clustering, and …"
-    },
-    {
-      "title": "Machine learning - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Machine_learning",
-      "snippet": "A machine learning model is a type of mathematical model that, once \"trained\" on a given dataset, can be used to make predictions …"
-    }
-  ]
+  "sources": []
 }

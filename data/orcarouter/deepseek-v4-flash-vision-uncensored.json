@@ -63,31 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Balie Gent",
-      "url": "https://baliegent.be/",
-      "snippet": "We zijn er zowel voor de burger als voor de advocaat. Waarmee kan balie Gent u helpen? Advies, pro Deo, bijstand,..."
-    },
-    {
-      "title": "DeepSeek V4 Flash Vision (Exp) Is Live: Vision at Text Prices",
-      "url": "https://www.orcarouter.ai/blog/deepseek-v4-flash-vision-exp-launch",
-      "snippet": "DeepSeek's first API vision model matches V4-Flash on text, adds image input at the same token prices, and pushes multimodal agents close to Opus-4.8."
-    },
-    {
-      "title": "Orde van Vlaamse Balies | Balie Gent",
-      "url": "https://www.ordevanvlaamsebalies.be/nl/kennisbank/overzicht-protocollen/balie-gent",
-      "snippet": "2 days ago · Meld u aan om deze content te bekijken."
-    },
-    {
-      "title": "DeepSeek V4 Flash API — Pricing & Benchmarks · OrcaRouter",
-      "url": "https://www.orcarouter.ai/models/deepseek/deepseek-v4-flash",
-      "snippet": "The model is accessible through OrcaRouter's OpenAI-compatible API, using the model ID \"deepseek/deepseek-v4-flash\". It is billed at provider rates with zero markup, meaning users pay exactly what OrcaRouter pays DeepSeek."
-    },
-    {
-      "title": "Over Balie Gent",
-      "url": "https://baliegent.be/over-balie-gent/",
-      "snippet": "Benieuwd naar een stukje mooie geschiedenis van balie Gent? De structuur van balie Gent. Structuur van de organisatie en …"
-    }
-  ]
+  "sources": []
 }

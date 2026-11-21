@@ -2,111 +2,108 @@
 
 ## Resumen
 
-Aitana-TA-2B-S es un modelo de traduccion automatica especializado en el par de lenguas espanol-valenciano (y catalan), desarrollado por el grupo GPLSI (Language and Information Systems Group) de la Universidad de Alicante junto con el Centro de Inteligencia Digital (CENID). Se trata de un ajuste fino por instrucciones del modelo BSC-LT/salamandraTA-2b-instruct, que a su vez deriva de Salamandra-2b-base del Barcelona Supercomputing Center. El modelo resuelve el problema de la traduccion de alta calidad entre castellano y valenciano a nivel de frase, un par linguistico con recursos limitados en comparacion con otros pares europeos.
+Aitana-TA-2B-S es un modelo de traducción automática instructivo desarrollado por el grupo GPLSI (Language and Information Systems Group) y el CENID de la Universidad de Alicante. Se obtiene mediante ajuste fino por instrucciones del modelo BSC-LT/salamandraTA-2b-instruct, y está especializado en traducción bidireccional entre español y valenciano a nivel de oración. Con 2.253.490.176 parámetros (~2,25B), se posiciona como una alternativa compacta y de licencia permisiva para un par de lenguas con escasa cobertura en los sistemas comerciales.
 
-La arquitectura es un transformer decoder-only de aproximadamente 2.250 millones de parametros, con una ventana de contexto de entrenamiento de 2048 tokens. El modelo emplea la plantilla ChatML para el formateo de instrucciones y esta disenado especificamente para tareas de traduccion bidireccional, no como un modelo de proposito general.
+El modelo emplea una arquitectura transformer decoder-only, heredada de la familia Salamandra, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en productos. Su relevancia actual radica en que cubre el valenciano, una variedad lingüística con pocos recursos y poco representada en los grandes modelos multilingües, con un rendimiento medido en el benchmark IberoBench (tarea Phrases) que supera a su modelo base en la mayoría de métricas.
 
-Su relevancia actual radica en que ofrece un rendimiento superior al de su modelo base en la mayoria de las metricas de traduccion evaluadas sobre el benchmark IberoBench (tarea Phrases), con mejoras notables en BLEU, chrF, COMET y TER para las direcciones espanol-valenciano y valenciano-espanol, manteniendo una licencia Apache 2.0 que permite uso comercial sin restricciones.
+La ficha se basa en la información publicada en Hugging Face y en la model card del autor. No se dispone de datos sobre composición completa del dataset de instrucciones, número total de tokens de entrenamiento ni detalles de alineación adicional más allá de los hiperparámetros declarados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only |
-| Parametros totales | 2.253.490.176 (~2,25B) |
-| Parametros activos | no aplica (no es MoE) |
+| Parámetros totales | 2.253.490.176 (~2,25B) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 2048 tokens (max_seq_length de entrenamiento) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, compatible con cuantizacion estandar via transformers/bitsandbytes) |
-| Idiomas soportados | espanol (es), valenciano/catalan (ca), ingles (en) |
+| Tipos de cuantización | no disponible (pesos en safetensors; cuantizaciones de la comunidad no documentadas) |
+| Idiomas soportados | es, ca, en (entrenamiento específico es-va / va-es) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de tipo Llama, heredado de la familia Salamandra del BSC. Cuenta con 2.253.490.176 parametros y fue entrenado con una longitud maxima de secuencia de 2048 tokens. El ajuste fino se realizo sobre el modelo BSC-LT/salamandraTA-2b-instruct, que ya habia sido instruction-tuned sobre datos paralelos. La unica adaptacion respecto al modelo base consistio en enfocar las instrucciones hacia la traduccion bidireccional entre valenciano y espanol.
+El modelo es un transformer decoder-only de aproximadamente 2,25B de parámetros, derivado de BSC-LT/salamandraTA-2b-instruct, que a su vez procede de un ajuste por instrucciones sobre Salamandra-2b-base. La adaptación de Aitana-TA-2B-S consistió en reorientar las instrucciones hacia la traducción entre valenciano y español en ambos sentidos, manteniendo el mismo patrón de instrucciones del modelo base. El entrenamiento se realizó con código propio sobre PyTorch Lightning (Fabric Lightning), con sharding mediante FSDP, sobre 4 GPU NVIDIA A100 en sistemas DGX.
 
-Los datos de entrenamiento provienen de L'Associacio de Mitjans d'Informacio i Comunicacio (AMIC), a partir de los cuales se construyo un corpus paralelo a nivel de frase. El conjunto de datos para el par valenciano-espanol contiene 738.777 pares de frases, con una longitud media de 165,6 caracteres en el idioma fuente y 168,6 en el destino. El regimen de entrenamiento consistio en 1 epoch con learning rate de 1e-5, betas (0,9; 0,99), weight decay 0, batch global de 64, micro-batch de 2, warmup de 100 pasos y guardado cada 5 pasos. El entrenamiento se ejecuto sobre 4 GPUs NVIDIA A100 en sistemas DGX, utilizando PyTorch Lightning (Fabric) con Fully Sharded Data Parallel (FSDP) para el sharding del modelo.
+Los datos de entrenamiento provienen de L'Associació de Mitjans d'Informació i Comunicació (AMIC), a partir de los cuales se construyó un corpus paralelo a nivel de oración. El conjunto declarado para el par valenciano→español contiene 738.777 pares (longitud media de origen 165,6 y de destino 168,6). Los hiperparámetros son: 1 época, learning rate 1e-5, beta1 0,9, beta2 0,99, weight decay 0, batch global 64, micro-batch 2, warmup de 100 pasos y longitud máxima de secuencia 2048. No se documentan fases de RLHF o DPO ni innovaciones de decodificación específicas.
 
 ## Capacidades
 
-- Traduccion bidireccional espanol-valenciano y valenciano-espanol a nivel de frase.
-- Traduccion entre catalan y valenciano (variedades de la misma lengua) con alto rendimiento.
-- Traduccion desde y hacia espanol en el par espanol-valenciano.
-- Generacion de texto conversacional mediante plantilla ChatML (system/user/assistant).
-- Seguimiento de instrucciones de traduccion con formato explicito ("Translate the following text from X into Y").
-- Soporte de decodificacion con beam search (num_beams=5) y early stopping.
-- Capacidad multilingue limitada a es, ca y en segun los metadatos del modelo.
-- No dispone de soporte documentado de tool calling, function calling, agentes, vision ni audio.
+- Traducción bidireccional español↔valenciano a nivel de oración, con instrucciones explícitas del tipo "Translate the following text from {source} into {target}".
+- Generación de texto conversacional mediante plantilla ChatML (`<|im_start|>` / `<|im_end|>`).
+- Seguimiento de instrucciones heredado del ajuste del modelo base SalamandraTA-2b-instruct.
+- Soporte de conversaciones multi-turno en el formato ChatML.
+- Cobertura declarada de español, catalán/valenciano e inglés, aunque el ajuste específico se centra en el par es-va.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Traduccion de documentacion administrativa: el modelo puede traducir frases y parrafos de documentos oficiales entre castellano y valenciano, aprovechando su entrenamiento sobre corpus periodisticos y su alto chrF (superior a 84 en es-va) para mantener fidelidad terminologica en textos formales.
-- Localizacion de contenido web y aplicaciones: integrado en pipelines de localizacion, permite traducir cadenas de interfaz y textos de ayuda del espanol al valenciano con calidad cercana a la humana (COMET de 0,932 en es-va), reduciendo la revision manual posterior.
-- Generacion de subtitulos y transcripciones: al trabajar a nivel de frase, es adecuado para traducir subtitulos segmentados por lineas, con TER bajo (21,07 en es-va) que indica pocas ediciones necesarias respecto a la referencia.
-- Traduccion en medios de comunicacion: dado que el corpus de entrenamiento proviene de AMIC (asociacion de medios), el modelo esta especialmente alineado con el registro periodistico, lo que lo hace util para redacciones que publican en ambas lenguas.
-- Sistemas de atencion ciudadana bilingue: puede desplegarse como servicio de traduccion en chatbots o formularios administrativos de la Generalitat Valenciana, con inferencia en GPUs consumer gracias a sus 2,25B de parametros.
-- Investigacion en traduccion automatica de lenguas de bajos recursos: sirve como punto de partida para experimentos de fine-tuning en otros pares linguisticos minoritarios, dado su licencia permisiva y su tamano manejable para laboratorios academicos.
-- Traduccion de material educativo: centros de ensenanza pueden emplear el modelo para adaptar materiales didacticos entre castellano y valenciano, con la ventaja de que la licencia Apache 2.0 permite su integracion en plataformas institucionales sin coste.
+- Traducción de documentación administrativa entre español y valenciano: el modelo puede procesar oraciones y párrafos cortos con instrucciones explícitas de dirección, adecuado para la adaptación de formularios y textos oficiales en la Comunidad Valenciana.
+- Localización de contenidos web y blogs: integración en un pipeline que envíe cada oración o bloque al modelo con la plantilla ChatML, aprovechando su ventana de 2048 tokens para párrafos completos.
+- Atención al cliente bilingüe: traducción en tiempo real de mensajes de usuarios entre español y valenciano en sistemas de chat, con la ventaja de un modelo de 2,25B que puede desplegarse en infraestructura modesta.
+- Generación de subtítulos y transcripciones: traducción de segmentos cortos procedentes de ASR, donde el enfoque a nivel de oración del entrenamiento encaja con la segmentación típica de subtítulos.
+- Preservación y difusión del valenciano: traducción de materiales educativos y divulgativos del español al valenciano para medios locales, aprovechando el corpus de AMIC usado en el entrenamiento.
+- Investigación en traducción automática de lenguas de bajos recursos: el modelo sirve como línea base reproducible y de licencia Apache 2.0 para experimentos con el par es-va, comparando con el modelo base salamandraTA-2b-instruct.
+- Traducción en entornos con recursos limitados: al ser un modelo de 2,25B, puede ejecutarse en una sola GPU consumer con cuantización, lo que permite desplegarlo en estaciones de trabajo sin clúster.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre la tarea Phrases de IberoBench, comparados con el modelo base salamandraTA-2b-instruct:
+Resultados publicados en la model card sobre la tarea Phrases de IberoBench, comparados con el modelo base:
 
-| Tarea | Metrica | Aitana-TA-2B-S | salamandraTA-2b-instruct |
+| Tarea | Métrica | Aitana-TA-2B-S | salamandraTA-2b-instruct |
 |---|---|---|---|
-| phrases2_ca-va | BLEU | 80,22 | 76,53 |
-| phrases2_es-va | BLEU | 64,93 | 62,40 |
-| phrases2_va-ca | BLEU | 81,19 | 82,07 |
-| phrases2_va-es | BLEU | 81,40 | 75,49 |
-| phrases2_ca-va | chrF | 91,77 | 89,57 |
-| phrases2_es-va | chrF | 84,23 | 82,18 |
-| phrases2_va-ca | chrF | 92,00 | 91,43 |
-| phrases2_va-es | chrF | 91,22 | 88,15 |
-| phrases2_ca-va | COMET | 0,958 | 0,952 |
-| phrases2_es-va | COMET | 0,932 | 0,927 |
-| phrases2_va-ca | COMET | 0,956 | 0,946 |
-| phrases2_va-es | COMET | 0,952 | 0,946 |
-| phrases2_ca-va | TER | 10,30 | 13,67 |
-| phrases2_es-va | TER | 21,07 | 23,26 |
-| phrases2_va-ca | TER | 9,03 | 10,68 |
-| phrases2_va-es | TER | 11,02 | 15,06 |
+| phrases_ca-va | BLEU | 80,22 | 76,53 |
+| phrases_es-va | BLEU | 64,93 | 62,40 |
+| phrases_va-ca | BLEU | 81,19 | 82,07 |
+| phrases_va-es | BLEU | 81,40 | 75,49 |
+| phrases_ca-va | chrF | 91,77 | 89,57 |
+| phrases_es-va | chrF | 84,23 | 82,18 |
+| phrases_va-ca | chrF | 92,00 | 91,43 |
+| phrases_va-es | chrF | 91,22 | 88,15 |
+| phrases_ca-va | COMET | 0,958 | 0,952 |
+| phrases_es-va | COMET | 0,932 | 0,927 |
+| phrases_va-ca | COMET | 0,956 | 0,946 |
+| phrases_va-es | COMET | 0,952 | 0,946 |
+| phrases_ca-va | TER | 10,30 | 13,67 |
+| phrases_es-va | TER | 21,07 | 23,26 |
+| phrases_va-ca | TER | 9,03 | 10,68 |
+| phrases_va-es | TER | 11,02 | 15,06 |
 
-El modelo supera a su base en 15 de las 16 combinaciones metrica-direccion evaluadas; la unica excepcion es BLEU en va-ca (81,19 frente a 82,07).
+El modelo mejora a su base en la mayoría de combinaciones, con la excepción del BLEU en va-ca (81,19 frente a 82,07). No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 4,5 GB de pesos mas overhead de activaciones y cache KV, en torno a 6-8 GB en total para secuencias cortas.
-- VRAM estimada en cuantizacion de 8 bits: aproximadamente 2,5-3 GB; en 4 bits: aproximadamente 1,5-2 GB.
-- GPU recomendadas para produccion: NVIDIA A100 (40/80 GB), H100 o L40S para despliegues con alto throughput y batching.
-- GPU consumer compatibles: cabe en RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090 sin cuantizacion; en GPUs de 8 GB es recomendable cuantizar a 8 o 4 bits.
-- Opciones de despliegue: transformers (referencia), text-generation-inference (TGI, etiquetado en el modelo), vLLM, llama.cpp y Ollama mediante conversion a GGUF (no se proporcionan pesos GGUF oficiales).
-- Latencia y throughput: no disponibles en la informacion proporcionada; al ser un modelo de 2,25B, se espera un throughput alto en A100/H100 con batching, aunque no se aportan cifras oficiales.
+- VRAM estimada: en bfloat16, aproximadamente 4,5 GB solo para pesos, más overhead de activaciones y KV cache; en torno a 6-8 GB en la práctica para secuencias de 2048 tokens. En cuantización de 8 bits, alrededor de 2,5-3 GB; en 4 bits, en torno a 1,5-2 GB (estimaciones, no publicadas por el autor).
+- GPU recomendadas: A100 o H100 para entrenamiento y despliegue de alto throughput; RTX 4090, RTX 3090 o similares con 24 GB para inferencia en bfloat16 sin problemas.
+- Cabe en GPU consumer: sí, en tarjetas con 8 GB o más en bfloat16 y en tarjetas de 4-6 GB con cuantización de 4 u 8 bits.
+- Opciones de despliegue: transformers (referencia en la model card), vLLM, TGI (el repo incluye la etiqueta text-generation-inference), llama.cpp/Ollama si se generan pesos GGUF (no publicados por el autor).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aitana-TA-2B-S | ~2,25B | 2048 | es, ca, en | Apache 2.0 | Especializado en es-va; mejor COMET en va-es (0,952) |
-| BSC-LT/salamandraTA-2b-instruct | ~2,25B | 2048 | es, ca, en | Apache 2.0 | Modelo base; peor rendimiento global en IberoBench Phrases |
-| Salamandra-2b-base (BSC-LT) | ~2B | no disponible | multilingue (35+ lenguas europeas) | Apache 2.0 | Modelo base generalista, no especializado en traduccion es-va |
+| Aitana-TA-2B-S | ~2,25B | 2048 | Traducción es↔va | Apache 2.0 | Hugging Face |
+| salamandraTA-2b-instruct | ~2B | no disponible | Traducción instructiva (modelo base) | Apache 2.0 | Hugging Face |
+| Salamandra-2b-base | ~2B | no disponible | Modelo base multilingüe | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks de otros modelos comparables de traduccion es-va en la informacion proporcionada para ampliar la comparativa.
+No se dispone de datos comparativos con otros sistemas de traducción es-va (por ejemplo, NLLB o modelos comerciales) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo esta especializado exclusivamente en traduccion espanol-valenciano/catalan; su rendimiento en otras tareas generativas (razonamiento, codigo, matematicas) no esta evaluado y probablemente sea limitado.
-- El contexto maximo de entrenamiento es de 2048 tokens, lo que restringe la traduccion de documentos largos a nivel de frase o parrafo; para textos extensos es necesario segmentar.
-- El corpus de entrenamiento proviene de medios de comunicacion (AMIC), lo que puede introducir sesgos de registro periodistico y menor cobertura de terminologia tecnica, juridica o cientifica especializada.
-- Riesgo de alucinacion y de omision o adicion de contenido en frases ambiguas o muy largas; se recomienda revision humana en entornos de produccion criticos.
-- Aunque los metadatos declaran soporte de es, ca y en, el ajuste fino se centro en es-va; el rendimiento en traduccion desde o hacia ingles no esta documentado.
-- La licencia Apache 2.0 permite uso comercial sin restricciones, pero no se ofrece garantia alguna sobre la calidad en dominios no representados en el corpus de entrenamiento.
-- No se proporcionan pesos cuantizados oficiales (GGUF, AWQ, GPTQ); la cuantizacion debe realizarse por cuenta del usuario.
-- El modelo fue entrenado con 1 sola epoch sobre 738.777 pares de frases; la cobertura de variantes dialectales del valenciano no esta detallada.
+- El ajuste está centrado en traducción a nivel de oración entre español y valenciano; el rendimiento en documentos largos o en otros pares de lenguas puede degradarse.
+- El corpus de entrenamiento proviene de una única fuente (AMIC), lo que puede introducir sesgos de dominio y estilo periodístico.
+- Riesgo de alucinación y de omisiones en oraciones largas o con estructuras sintácticas complejas, habitual en modelos de traducción de este tamaño.
+- La ventana de contexto de 2048 tokens limita la traducción de documentos extensos sin segmentación previa.
+- Aunque declara es, ca y en, el ajuste específico es es-va; el rendimiento en inglés no está evaluado en la model card.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de los datos de origen (AMIC) si se redistribuye el modelo o derivados.
+- No se documentan evaluaciones de sesgo, toxicidad ni robustez frente a entradas adversarias.
+- El modelo no incluye mecanismos de tool calling ni de agente; su uso en pipelines complejos requiere orquestación externa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gplsi/Aitana-TA-2B-S
 - Modelo base: https://huggingface.co/BSC-LT/salamandraTA-2b-instruct
 - GPLSI (Universidad de Alicante): https://gplsi.dlsi.ua.es/
-- CENID (Centro de Inteligencia Digital): https://cenid.es
-- Paper de IberoBench: https://aclanthology.org/2025.coling-main.699/
+- CENID: https://cenid.es
+- Paper de IberoBench (COLING 2025): https://aclanthology.org/2025.coling-main.699/

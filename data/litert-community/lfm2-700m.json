@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/LFM2-700M · Hugging Face",
-      "url": "https://huggingface.co/litert-community/LFM2-700M",
-      "snippet": "LFM2-700M has 742,489,344 parameters in 16 layers (10 convolution + 6 attention); Liquid AI lists English, Arabic, Chinese, French, German, Japanese, Korean and Spanish and states a 32,768-token context (4096 in these files)."
-    },
-    {
-      "title": "LFM2-700M - Liquid Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm2-700m",
-      "snippet": "← Back to Text Models LFM2-700M is a compact model balancing capability and efficiency. Suitable for deployment on a wide range of devices including phones, tablets, and laptops with limited resources."
-    },
-    {
-      "title": "LiquidAI/LFM2-700M · Hugging Face",
-      "url": "https://huggingface.co/LiquidAI/LFM2-700M",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "LFM2 700M — slm.expert",
-      "url": "https://slm.expert/models/lfm2-700m/",
-      "snippet": "Mid-size LFM2 for edge deployment. Claimed 2× inference speed vs Qwen2.5 at comparable accuracy on on-device reasoning and tool use. 0.7B32K ctxLFM Open License v1.0Hybrid Liquid (short-conv + GQA) decoder [model card →] [hugging face →] Spec sheet Family LFM2 Lab Liquid AI Params 0.7B Arch Hybrid Liquid (short-conv + GQA) decoder Context 32K / 32,768 tok License LFM Open License v1.0 ..."
-    },
-    {
-      "title": "LFM2 700M by LiquidAI — VRAM 1.5GB, 125K context | LLM Explorer",
-      "url": "https://llm-explorer.com/model/LiquidAI%2FLFM2-700M,7xhbnbmmXbcMellWyW6c22",
-      "snippet": "LFM2 700M is an open-source language model by LiquidAI. Features: 700m LLM, VRAM: 1.5GB, Context: 125K, License: other, LLM Explorer Score: 0.23."
-    }
-  ]
+  "sources": []
 }

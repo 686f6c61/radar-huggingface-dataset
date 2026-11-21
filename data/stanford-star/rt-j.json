@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Stanford University",
-      "url": "https://www.stanford.edu/",
-      "snippet": "Here you’ll find a place of intellectual expansiveness, wide-ranging perspectives, and freedom to explore new lines of thinking. Alive …"
-    },
-    {
-      "title": "Université Stanford — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford",
-      "snippet": "La Leland Stanford Junior University, plus connue sous le nom d' université Stanford, est une université américaine privée, située …"
-    },
-    {
-      "title": "Stanford University - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Stanford_University",
-      "snippet": "Leland Stanford Junior University, [9][10] commonly referred to as Stanford University, is a private research university in Stanford, …"
-    },
-    {
-      "title": "About Stanford | Stanford University",
-      "url": "https://www.stanford.edu/about",
-      "snippet": "Stanford is proud to be a citizen of Silicon Valley and the Bay Area. Through athletic events, public exhibitions and performances, …"
-    },
-    {
-      "title": "Free Online Courses - Stanford Online",
-      "url": "https://online.stanford.edu/free-courses",
-      "snippet": "Take courses from Stanford faculty and industry experts at no cost to you,. Learn new skills and explore new and emerging topics."
-    }
-  ]
+  "sources": []
 }

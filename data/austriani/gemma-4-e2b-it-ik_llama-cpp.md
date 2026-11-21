@@ -2,83 +2,89 @@
 
 ## Resumen
 
-Austriani/Gemma-4-E2B-it-ik_llama.cpp es una cuantización comunitaria del modelo google/gemma-4-E2B-it, publicada en Hugging Face por el usuario Austriani. No se trata de un modelo nuevo ni de un fine-tuning con reentrenamiento completo, sino de una versión de pesos comprimidos en formato cuantizado (etiquetas IQ4_KS e IQ4_KS_R4) pensada específicamente para ejecutarse con ik_llama.cpp, una bifurcación optimizada de llama.cpp orientada a mejorar el rendimiento de inferencia en CPU y GPU.
+Gemma-4-E2B-it-ik_llama.cpp es una cuantización en formato GGUF del modelo google/gemma-4-E2B-it, publicada por el usuario Austriani. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada al motor de inferencia ik_llama.cpp, una bifurcación de llama.cpp optimizada para cuantizaciones de baja precisión con matrices de importancia (imatrix). El artefacto incorpora cuantizaciones de tipo IQ4_KS e IQ4_KS_R4, pensadas para reducir el uso de memoria manteniendo la calidad del modelo original.
 
-El modelo base, Gemma 4 E2B-it (versión instruida), pertenece a la familia Gemma de Google, una serie de modelos abiertos de tamaño reducido diseñados para ejecutarse en hardware modesto. La variante E2B apunta a un modelo con aproximadamente 2 mil millones de parámetros efectivos, aunque los datos exactos de arquitectura no están disponibles en la ficha original.
+El modelo base es un miembro de la familia Gemma 4 de Google, identificado por el sufijo E2B, que sugiere una variante orientada a eficiencia y despliegue en el borde. Los pesos reales declarados en safetensors suman 4.647.450.147 parámetros, lo que sitúa al modelo en la franja de los 4-5 mil millones de parámetros. El repositorio ocupa 5,1 GB, coherente con una cuantización de 4 bits sobre ese volumen de parámetros.
 
-La relevancia de esta publicación radica en la cuantización de tipo matriz de importancia (imatrix), calculada con el dataset OpenIntelligenceNet/Uncensored-Imatrix-Calibration-Mixed-Data, lo que permite reducir el tamaño de los pesos manteniendo buena calidad de salida. Es útil para desarrolladores que quieren desplegar un modelo ligero localmente con la máxima eficiencia posible de memoria y velocidad.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo de Google con licencia Apache 2.0, una cuantización agresiva para hardware modesto y un ajuste declarado hacia roleplay, escritura creativa y contenido sin censura (etiquetas uncensored y nsfw). Es, por tanto, un artefacto de comunidad para inferencia local en equipos de consumo, no una versión oficial de Google.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma); detalles concretos no disponibles |
-| Parametros totales | no disponible (aprox. 2 mil millones segun la nomenclatura E2B del modelo base) |
+| Arquitectura | no disponible (modelo base Gemma 4; arquitectura transformer según la familia, no confirmada en la información) |
+| Parametros totales | 4.647.450.147 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_KS, IQ4_KS_R4 (cuantizacion de 4 bits con matriz de importancia, variante R4 reempaquetada para ik_llama.cpp) |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | IQ4_KS, IQ4_KS_R4 (generadas con imatrix para ik_llama.cpp) |
+| Idiomas soportados | en (inglés; el resto no disponible) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado para ik_llama.cpp); pesos originales del modelo base en safetensors |
+| Formato de pesos | GGUF (repo de 5,1 GB); el modelo base está en safetensors |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene un modelo entrenado desde cero: es una conversión de los pesos de google/gemma-4-E2B-it a formato GGUF con cuantización IQ4_KS y su variante reempaquetada IQ4_KS_R4. La cuantización con matriz de importancia (imatrix) consiste en medir estadísticamente la activación de cada tensor sobre un dataset de calibración y usar esas medidas para asignar con mayor precisión los pesos más sensibles, reduciendo la pérdida de calidad frente a una cuantización ingenua de 4 bits.
+No se dispone de información detallada sobre la arquitectura interna del modelo base google/gemma-4-E2B-it en los datos proporcionados. Por la nomenclatura de la familia Gemma y el tamaño de 4,65 mil millones de parámetros, se trata presumiblemente de un transformer decoder-only, pero la información disponible no confirma ni el tipo de atención, ni la composición del dataset, ni si hubo fases de RLHF o DPO. Cualquier afirmación al respecto sería especulativa.
 
-El dataset de calibración empleado es OpenIntelligenceNet/Uncensored-Imatrix-Calibration-Mixed-Data, un conjunto mixto sin filtrado de contenido, lo que puede influir en el comportamiento del modelo en temas sensibles. Sobre el proceso de entrenamiento del modelo base (número de tokens, composición del corpus, uso de RLHF o DPO), la información disponible no ofrece detalles; no disponible.
-
-La variante R4 reorganiza internamente los bloques de cuantización para aprovechar las optimizaciones de kernels de ik_llama.cpp, que ofrece mejoras de throughput especialmente en configuraciones híbridas CPU+GPU y en CPU con soporte AVX2/AVX-512.
+Lo que sí está documentado es el proceso de cuantización: el autor ha generado pesos GGUF con el motor ik_llama.cpp empleando matrices de importancia (imatrix) y los esquemas IQ4_KS e IQ4_KS_R4. Estos esquemas pertenecen a la familia de cuantizaciones K-quant con calibración por importancia, que asignan distinta precisión a los tensores según su relevancia para la perplejidad, lo que permite bajar a 4 bits con una pérdida de calidad menor que una cuantización uniforme. El resultado es un único artefacto de 5,1 GB listo para inferencia local.
 
 ## Capacidades
 
-- Generación de texto conversacional en modo instruido, heredada del modelo base Gemma 4 E2B-it.
-- Razonamiento general y tareas de seguimiento de instrucciones propias de un modelo de ~2B parámetros, con limitaciones frente a modelos mayores.
-- Capacidades de código y matemáticas a nivel básico (no disponible un detalle específico en la ficha).
-- Ejecución eficiente local mediante ik_llama.cpp con cuantización de 4 bits.
-- Soporte de tool calling, agentes, visión o audio: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles explícitamente; la familia Gemma suele tener soporte multilingüe, pero no hay confirmación en la ficha.
+- Generación de texto conversacional: el pipeline declarado es text-generation y las etiquetas incluyen conversational, por lo que está orientado a diálogo multi-turno.
+- Escritura creativa y narrativa: etiquetas explícitas de creative-writing, storytelling y roleplay, lo que indica un ajuste o una selección de datos orientada a ficción y personajes.
+- Contenido sin censura: las etiquetas uncensored y nsfw señalan que el modelo no aplica los filtros habituales del modelo base, con las implicaciones éticas y legales que ello conlleva.
+- Despliegue en el borde: etiqueta edge-ai, coherente con un modelo de 4,65 mil millones de parámetros cuantizado a 4 bits.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el GGUF puede servirse a través de APIs compatibles con el ecosistema llama.cpp.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
+- Modo thinking o razonamiento explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Chatbots locales y privados: al ser un modelo de tamaño reducido cuantizado a 4 bits, puede ejecutarse en un portátil o PC de escritorio sin enviar datos a servicios externos, adecuado para asistentes conversacionales sencillos.
-- Prototipado rápido de aplicaciones LLM: el bajo consumo de recursos permite iterar en el desarrollo de aplicaciones con inferencia local antes de escalar a modelos mayores.
-- Inferencia en CPU: ik_llama.cpp está optimizado para CPU, por lo que es adecuado para servidores sin GPU dedicada que necesiten un modelo ligero siempre activo.
-- Pruebas de calidad de cuantizaciones imatrix: útil como caso de estudio para comparar IQ4_KS frente a otras cuantizaciones (Q4_K_M, Q8_0) en modelos pequeños.
-- Automatización de texto de bajo riesgo: resúmenes breves, reformateo y clasificación de texto en flujos locales donde la precisión extrema no es crítica.
-- Entornos con recursos limitados: Raspberry Pi de gama alta, mini PCs o VPS pequeños, gracias al tamaño reducido del GGUF de 4 bits.
+- Roleplay y ficción interactiva en local: el modelo está etiquetado explícitamente para roleplay y storytelling, y su tamaño cuantizado a 4 bits permite ejecutarlo en un portátil con GPU de gama media, manteniendo conversaciones de personaje sin depender de servicios en la nube.
+- Escritura creativa asistida: generación de borradores de relatos, diálogos y descripciones con un estilo narrativo, aprovechando el ajuste hacia creative-writing y la ausencia de censura para temáticas adultas o violentas.
+- Prototipado de chatbots sin restricciones de contenido: útil para investigar comportamientos conversacionales en dominios donde los filtros del modelo base interfieren, siempre con las salvaguardas adecuadas en producción.
+- Inferencia en el borde y dispositivos con poca VRAM: con 5,1 GB de pesos en IQ4_KS, cabe en GPUs de 8 GB y en sistemas con memoria unificada, lo que habilita asistentes offline.
+- Experimentación con cuantizaciones IQ4_KS: sirve como banco de pruebas para comparar la calidad de IQ4_KS frente a IQ4_KS_R4 en tareas generativas, ya que el autor publica ambas variantes.
+- Integración en pipelines de llama.cpp o ik_llama.cpp: el formato GGUF y la etiqueta endpoints_compatible permiten montar un servidor local compatible con la API de OpenAI para pruebas de integración.
+- Generación de contenido para juegos de rol de mesa: el modelo puede actuar como narrador o intérprete de PNJ en herramientas de mesa virtual, gracias a su tamaño reducido y su sesgo hacia la narrativa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otras cuantizaciones del mismo modelo base.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: para un modelo de ~2B parámetros cuantizado a 4 bits (IQ4_KS), el GGUF ocupa aproximadamente entre 1,3 y 1,7 GB, más overhead de contexto (KV cache). No hay cifras oficiales en la ficha: no disponible.
-- GPU recomendadas: cualquier GPU consumer moderna con 4 GB o más de VRAM puede alojar el modelo completo; también funciona íntegramente en CPU gracias a ik_llama.cpp.
-- Consumer GPUs: cabe con holgura en una RTX 3060 de 12 GB, RTX 4060 Ti o superiores; incluso en GPUs de 4 GB es viable con contextos moderados.
-- Opciones de despliegue: ik_llama.cpp (formato nativo de esta conversión, incluida la variante R4 reempaquetada); el GGUF estándar (IQ4_KS sin reempaquetar) debería funcionar también en llama.cpp y Ollama, aunque no está garantizado por el autor. vLLM y TGI no soportan GGUF cuantizado de este tipo.
-- Latencia y throughput: no disponible; al ser un modelo de ~2B con cuantización de 4 bits, se esperan velocidades altas incluso en CPU de gama media.
+- VRAM estimada para inferencia: en torno a 5-6 GB con la cuantización IQ4_KS de 4 bits, dado que el repositorio pesa 5,1 GB y hay que sumar la caché KV; el valor exacto depende de la longitud de contexto, que no está documentada.
+- GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080 y RTX 4090 para margen holgado; en el segmento profesional, A100 o H100 no son necesarias para este tamaño.
+- ¿Cabe en GPU de consumo? Sí: con 5,1 GB de pesos, entra en GPUs de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070) y con holgura en las de 12 GB o más.
+- Opciones de despliegue: ik_llama.cpp es el motor de referencia para estas cuantizaciones; también puede cargarse con llama.cpp si soporta los tipos IQ4_KS e IQ4_KS_R4, y servirse mediante Ollama o un servidor compatible con la API de OpenAI si se convierte o se integra adecuadamente. No se confirma compatibilidad con vLLM ni TGI en la información disponible.
+- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para esta cuantización.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Formato | Licencia | Observaciones |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Austriani/Gemma-4-E2B-it-ik_llama.cpp | ~2B (base) | IQ4_KS / IQ4_KS_R4 | GGUF | apache-2.0 | Optimizado para ik_llama.cpp, imatrix con dataset sin censura |
-| google/gemma-4-E2B-it | ~2B (base) | Sin cuantizar | safetensors | Licencia Gemma (restricciones propias de Google) | Modelo original, máxima calidad, mayor consumo de memoria |
-| Cuantizaciones Q4_K_M equivalentes en llama.cpp | ~2B (base) | Q4_K_M | GGUF | Según modelo base | Cuantización estándar más extendida, sin optimizaciones R4 |
+| Austriani/Gemma-4-E2B-it-ik_llama.cpp | 4.647.450.147 | no disponible | GGUF IQ4_KS | apache-2.0 | Cuantización de comunidad para ik_llama.cpp, orientada a roleplay y edge-ai |
+| google/gemma-4-E2B-it (modelo base) | 4.647.450.147 | no disponible | safetensors | apache-2.0 | Pesos originales de Google; sin las etiquetas de contenido sin censura |
+| Otras cuantizaciones GGUF del mismo base | 4.647.450.147 | no disponible | GGUF (Q4_K_M, Q5_K_M, etc.) | apache-2.0 | Esquemas de cuantización alternativos; no se dispone de comparación de calidad publicada |
+
+No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparativa se limita a parámetros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Al tratarse de una cuantización de 4 bits, existe una pérdida de calidad respecto a los pesos originales en bf16, especialmente en razonamiento complejo, código y matemáticas.
-- El dataset de calibración (Uncensored-Imatrix-Calibration-Mixed-Data) no está filtrado, por lo que el modelo puede mostrar menos restricciones en temas sensibles; conviene aplicar capas de moderación en producción.
-- Riesgo de alucinación propio de modelos pequeños de ~2B parámetros: alto en tareas de hechos específicos y citas; no usar como fuente de verdad sin verificación.
-- La variante IQ4_KS_R4 está reempaquetada específicamente para ik_llama.cpp y puede no ser compatible con llama.cpp estándar u otros runtimes; verificar compatibilidad antes de desplegar.
-- Idiomas soportados, longitud de contexto y capacidades de tool calling no están documentados en la ficha; evaluar antes de uso en producción.
-- El repositorio tiene 0 descargas y 0 likes registrados, sin validación comunitaria; revisar los hashes y probar el modelo antes de uso serio.
-- La licencia apache-2.0 aplica a esta conversión, pero el modelo base (Gemma) puede estar sujeto a los términos de uso de Google; revisar la licencia del modelo original para uso comercial.
+- Sesgos conocidos: no documentados en la información disponible; al ser una cuantización del modelo base, hereda los sesgos de google/gemma-4-E2B-it, que no se detallan.
+- Riesgo de alucinación: inherente a los modelos generativos de este tamaño; no se han publicado evaluaciones específicas de fidelidad factual.
+- Limitaciones de idioma: la única lengua declarada es el inglés (en); el comportamiento en castellano no está garantizado ni evaluado.
+- Restricciones de licencia: la licencia declarada es Apache 2.0, lo que permite uso comercial, pero conviene verificar los términos del modelo base de Google, ya que la cuantización no puede otorgar más derechos que el original.
+- Contenido sin censura: las etiquetas uncensored y nsfw implican que el modelo puede generar material adulto o sensible; requiere moderación y control de acceso en cualquier despliegue público.
+- Contexto desconocido: al no documentarse la longitud de contexto, no se puede planificar el uso en tareas de contexto largo sin pruebas previas.
+- Compatibilidad de motor: las cuantizaciones IQ4_KS e IQ4_KS_R4 están pensadas para ik_llama.cpp; otros motores pueden no soportarlas o degradar el rendimiento.
+- Artefacto de comunidad: no es una publicación oficial de Google y no ha pasado por el mismo proceso de validación que el modelo base.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/Austriani/Gemma-4-E2B-it-ik_llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/Austriani/Gemma-4-E2B-it-ik_llama.cpp
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Dataset de calibración: https://huggingface.co/datasets/OpenIntelligenceNet/Uncensored-Imatrix-Calibration-Mixed-Data
+- Motor ik_llama.cpp: no disponible en la información proporcionada
+- Paper o blog del modelo base: no disponible en la información proporcionada
+- Demos o repositorios adicionales: no disponible en la información proporcionada

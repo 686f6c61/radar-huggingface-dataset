@@ -2,69 +2,55 @@
 
 ## Resumen
 
-QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF es una cuantizacion de 4 bits del modelo multimodal google/gemma-4-E4B-it, publicada por QUASAR-QAT. No es una cuantizacion a posteriori (PTQ) al uso: el checkpoint se ha obtenido mediante entrenamiento consciente de la cuantizacion (QAT) con el metodo QUASAR, que optimiza la reconstruccion en bajo numero de bits durante el entrenamiento y exporta despues a formatos estandar de despliegue sin coste adicional en inferencia. El resultado se distribuye como GGUF nativo Q4_0 con escalas de grupo 64 ya entrenadas, mas un proyector de vision en BF16 sin modificar.
+Gemma 4 E4B es un modelo multimodal de Google (familia Gemma 4) distribuido originalmente en precisión BF16 y con licencia Apache 2.0. Esta ficha cubre la versión publicada por QUASAR-QAT, un checkpoint cuantizado a 4 bits mediante *quantization-aware training* (QAT) nativo y exportado a GGUF con formato Q4_0, listo para llama.cpp, Ollama y LM Studio. El modelo base resuelve tareas de generación de texto, razonamiento con modo *thinking*, visión (image-text-to-text), tool calling y conversación multi-turno con contexto largo.
 
-El problema que resuelve es concreto: la perdida de calidad al comprimir un modelo de ~7,46 mil millones de parametros a 4 bits. Segun la model card, este Q4_0 alcanza una divergencia KL de 0,044 frente al modelo BF16, aproximadamente la mitad que el Q4_0 QAT oficial de Google (0,088) y por debajo de otras alternativas de la comunidad (Unsloth Q4_0 con imatrix, 0,067; LM Studio Q4_K_M, 0,114), manteniendo un tiempo de ejecucion Q4_0 estandar en llama.cpp, Ollama y LM Studio.
+El interés de esta variante no está en el modelo base, sino en la calidad de la cuantización: según la model card, el checkpoint conserva directamente los códigos INT4 entrenados (sin recuantizar tras el entrenamiento), con una divergencia KL frente a BF16 de 0,044, frente a 0,088 del Q4_0 QAT oficial de Google y 0,193 de un Q4_0 estándar sin imatrix. El repositorio ocupa 6,2 GB y el GGUF principal pesa 5,23 GB, más un proyector visual BF16 de 992 MB.
 
-Es relevante ahora porque permite ejecutar un modelo multimodal con ventana de 131.072 tokens, modo de razonamiento y soporte de tool calling en hardware de consumo, con una degradacion medible y acotada respecto al original. El repositorio incluye verificacion de bit-exactitud de los 258 tensores cuantizados contra su gemelo W4A16, lo que aporta trazabilidad poco habitual en este tipo de publicaciones.
+El modelo declara 7.463.013.674 parámetros totales y una ventana de contexto de 131.072 tokens. Está pensado para despliegue local en hardware de consumo y para pipelines que necesiten visión y tool calling sin renunciar a un formato de inferencia estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; derivada de google/gemma-4-E4B-it (pipeline image-text-to-text, multimodal imagen-texto con proyector de vision) |
-| Parametros totales | 7.463.013.674 (aproximadamente 7,46 B, dato de safetensors del modelo base) |
-| Parametros activos | No disponible (el autor no publica configuracion de activacion selectiva) |
+| Arquitectura | Transformer multimodal (Gemma 4 E4B); codificador visual con proyector BF16 separado |
+| Parametros totales | 7.463.013.674 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | Q4_0 INT4 weight-only con escalas group-64 entrenadas; embeddings de tokens en Q6_K; proyector de vision en BF16; existe un gemelo W4A16 G64 para vLLM |
-| Idiomas soportados | en y multilingual (la lista concreta de idiomas no esta disponible) |
-| Licencia | apache-2.0 (el modelo base enlaza a los terminos de google/gemma-4-E4B-it) |
-| Formato de pesos | GGUF (llama.cpp); el gemelo W4A16 usa safetensors con compressed-tensors |
+| Tipos de cuantizacion | Q4_0 nativo (group-64, weight-only INT4); embeddings en Q6_K; proyector visual en BF16; existe variante W4A16-G64 para vLLM |
+| Idiomas soportados | en, multilingual (sin listado completo de idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); variante W4A16 compressed-tensors para vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es google/gemma-4-E4B-it, un transformer multimodal con pipeline image-text-to-text, capacidad declarada de vision, audio en las etiquetas del repositorio, razonamiento con modo thinking, contexto largo y function calling. La model card no detalla el numero de capas, la configuracion de atencion ni si existe activacion selectiva de parametros (la nomenclatura E4B del modelo base sugiere un diseno de parametros efectivos, pero esta informacion no se confirma en la documentacion disponible). Total de parametros segun safetensors: 7.463.013.674.
+El modelo base es un transformer multimodal de la familia Gemma 4 en variante E4B, con capacidad de procesar texto e imágenes (pipeline `image-text-to-text`) e integración de audio según los tags del repositorio. La parte visual se sirve mediante un proyector BF16 sin modificar, extraído de `google/gemma-4-E4B-it`, que se carga de forma independiente al GGUF principal.
 
-El proceso de cuantizacion es el elemento diferencial. QUASAR es un metodo de QAT sensible a la perdida (loss-aware) descrito en el arXiv 2608.13966: durante el entrenamiento se mejora la reconstruccion en bajo numero de bits y posteriormente se exporta a formatos estandar con cero sobrecoste de inferencia. Este checkpoint concreto se "curo" (healing) contra el profesor BF16 durante 626 millones de tokens: una epoca sobre aproximadamente 398.000 prompts autodestilados del Gemma 4 E4B-it en BF16 con el modo thinking activado, pesos maestros en fp32 y cuantizacion INT4 con grupos de 64. El GGUF almacena directamente los codigos INT4 y las escalas entrenadas, sin recuantizacion posterior; los 258 tensores cuantizados se verifican bit a bit contra el gemelo W4A16 (recibo `native_q4_0_receipt.json` y script verificador incluidos).
+El proceso QUASAR descrito en la model card es un QAT *loss-aware*: se parte de los pesos BF16 del profesor y se ajustan los códigos INT4 con pesos maestros en fp32 durante 626M tokens, equivalentes a una época sobre aproximadamente 398.000 prompts auto-destilados del modelo BF16 con el modo *thinking* activado. La cuantización es weight-only con grupos de 64. El GGUF almacena los códigos y escalas INT4 entrenados directamente, sin recuantización posterior; los 258 tensores cuantizados se verifican bit-exactos contra la variante W4A16 gemela. La ventaja declarada es que el coste de inferencia es idéntico al de un Q4_0 estándar.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato instrucciones (modelo `-it`).
-- Modo de razonamiento (thinking) activado por defecto en la plantilla de chat embebida; se desactiva con `--chat-template-kwargs '{"enable_thinking": false}'` en llama-cli y llama-server.
-- Razonamiento matematico y resolucion de problemas: 82,0 en GSM8K y 60,7 en MATH-hard segun la evaluacion del autor.
-- Comprension multimodal de imagenes: el proyector de vision BF16 (992 MB) se incluye y se carga automaticamente en Ollama; en llama.cpp se usa con `llama-mtmd-cli --image`.
-- Soporte declarado de function calling y tool calling.
-- Orientacion a flujos agenticos y razonamiento multi-paso (etiquetas `agentic`, `tool-calling`).
-- Contexto largo de hasta 131.072 tokens, adecuado para documentos extensos e historiales multi-turno.
-- Capacidad multilingue declarada mediante la etiqueta `multilingual`, sin lista explicita de idiomas.
-- La etiqueta `audio` figura en el repositorio, pero la model card solo documenta el pipeline de vision; la capacidades de audio no estan confirmadas en el material disponible.
+- Generación de texto y conversación multi-turno con plantilla de chat embebida en el GGUF.
+- Razonamiento con modo *thinking*, activado por defecto en la plantilla de chat de Gemma 4 y desactivable con `--chat-template-kwargs '{"enable_thinking": false}'`.
+- Comprensión de imágenes (VLM) mediante el proyector BF16; funciona con `llama-mtmd-cli`, Ollama (detección automática del proyector) y LM Studio.
+- Tool calling y function calling, orientado a flujos agénticos.
+- Razonamiento multi-paso y uso como agente.
+- Capacidades matemáticas y de código (evaluadas en GSM8K, MATH-hard e IFEval).
+- Soporte multilingüe declarado, con inglés como idioma principal documentado.
+- Entrada de audio según los tags del repositorio (sin detalle de implementación en la model card).
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: con 131.072 tokens de contexto se puede adjuntar el historial completo de una incidencia, documentacion de producto y transcripciones previas sin truncar, y generar respuestas coherentes multi-turno en local.
-- Analisis de documentos con imagenes: facturas, capturas de pantalla, diagramas o formularios pueden procesarse mediante el proyector de vision BF16, extrayendo informacion estructurada sin enviar los datos a un servicio externo.
-- Generacion y revision de codigo en produccion: el soporte de tool calling permite integrarlo en pipelines de CI/CD como revisor de diffs o generador de pruebas, invocando herramientas externas (linters, ejecutores de tests) desde el propio modelo.
-- Agentes autonomos multi-paso: el modo thinking combinado con function calling habilita planificacion de tareas encadenadas (consulta de APIs, navegacion de repositorios, agregacion de resultados) con bajo coste por token al ejecutarse en 4 bits.
-- Tutoria y verificacion matematica: con 82,0 en GSM8K y 60,7 en MATH-hard puede resolver y comprobar pasos intermedios en problemas de nivel escolar y preuniversitario, mostrando el razonamiento antes de la respuesta final.
-- Despliegue local para datos sensibles: al ocupar 5,23 GB el fichero principal y ejecutarse en Ollama o LM Studio, es viable en un portatil o estacion de trabajo para sectores con requisitos de confidencialidad (sanidad, legal, banca) donde no se permite salida de datos.
-- Extraccion de informacion estructurada sobre textos largos: contratos, informes o articulos de decenas de miles de tokens convertidos a JSON o tablas con instrucciones estrictas, aprovechando el contexto de 131.072 tokens.
-- Investigacion en cuantizacion: el repositorio incluye recibo de verificacion bit-exacta y configuraciones de evaluacion completas, por lo que sirve como referencia reproducible para comparar tecnicas de QAT frente a PTQ.
+- Asistente local con visión: desplegado con Ollama o LM Studio, el modelo puede describir imágenes, extraer texto de capturas o responder preguntas sobre fotografías sin salir del equipo, gracias al proyector BF16 incluido.
+- Agente de soporte técnico con tool calling: la ventana de 131.072 tokens permite mantener historiales largos de incidencias y encadenar llamadas a funciones (consulta de estado, apertura de tickets) en una sola sesión.
+- Procesamiento de documentos extensos: resumen y extracción de datos sobre contratos o informes que superan los 100.000 tokens, con el modo *thinking* activado para tareas que requieren razonamiento encadenado.
+- Generación y revisión de código en local: integrable en editores o scripts mediante llama.cpp, con resultados en GSM8K (82,0) e IFEval (82,6) que lo sitúan por encima del QAT oficial de Google en la misma evaluación.
+- Automatización de back office con imágenes: clasificación y descripción de imágenes en lotes (por ejemplo, inventario o revisión de documentos escaneados) usando `llama-mtmd-cli` en un servidor con una sola GPU.
+- Despliegue en estaciones de trabajo sin GPU dedicada de gama alta: al ocupar 5,23 GB en Q4_0, cabe en GPUs de consumo y permite prototipar aplicaciones multimodales antes de escalar a la variante W4A16 en vLLM.
+- Evaluación comparativa de cuantizaciones: útil como referencia para medir el impacto de QAT nativo frente a cuantización post-entrenamiento en un mismo harness.
 
 ## Benchmarks y rendimiento
 
-Divergencia respecto al modelo BF16 de referencia, medida con el mismo build de llama.cpp, mismos prompts y mismo backend en todas las filas:
-
-| Cuantizacion | KL a BF16 (menor es mejor) | Acuerdo top-1 (mayor es mejor) |
-|---|---:|---:|
-| QUASAR Q4_0 | 0,044 | 92,8 % |
-| Unsloth Q4_0 (imatrix) | 0,067 | 91,1 % |
-| Google QAT Q4_0 | 0,088 | 90,6 % |
-| Unsloth repack de Google QAT (UD-Q4_K_XL) | 0,071 | no disponible |
-| LM Studio Q4_K_M | 0,114 | no disponible |
-
-En el gemelo W4A16 bajo vLLM, el autor reporta KL 0,022 frente a BF16, frente a 0,064 del QAT W4A16 de Google.
-
-Benchmarks downstream, medidos sobre el gemelo W4A16 (que comparte los codigos entrenados), con el mismo arnes de evaluacion:
+Datos publicados en la model card. Los benchmarks de downstream se midieron sobre la variante W4A16 gemela, que según el autor comparte los mismos códigos entrenados.
 
 | Benchmark | QUASAR | Google QAT |
 |---|---:|---:|
@@ -76,58 +62,62 @@ Benchmarks downstream, medidos sobre el gemelo W4A16 (que comparte los codigos e
 | GSM8K | 82,0 | 81,5 |
 | IFEval | 82,6 | 81,9 |
 | MATH-hard | 60,7 | 59,4 |
-| Media | 56,0 | 54,4 |
+| Promedio | 56,0 | 54,4 |
 
-No hay datos publicos de benchmarks para la version GGUF Q4_0 concreta ni cifras de latencia o throughput.
+Calidad de cuantización (KL frente a BF16 y acuerdo top-1, medidos en llama.cpp con el mismo build y backend):
+
+| Formato Q4_0 | KL a BF16 | Acuerdo top-1 |
+|---|---:|---:|
+| QUASAR | 0,044 | 92,8% |
+| Unsloth Q4_0 (imatrix) | 0,067 | 91,1% |
+| Google QAT | 0,088 | 90,6% |
+| Q4_0 estándar (sin imatrix) | 0,193 | 85,7% |
+
+Referencias adicionales citadas: Unsloth Q4_0 repack de Google QAT (0,071) y LM Studio Q4_K_M (0,114). En vLLM, la variante W4A16 registra KL 0,022 frente a 0,064 del W4A16 QAT de Google.
 
 ## Requisitos de hardware
 
-- VRAM estimada (estimacion propia a partir del tamano de los ficheros, no confirmada por el autor): unos 5,2 GB para los pesos Q4_0 mas 0,99 GB del proyector de vision, es decir, aproximadamente 6,2 GB en reposo. Hay que anadir la cache KV, que crece con la longitud de contexto: con 131.072 tokens la demanda puede superar ampliamente el tamano de los pesos.
-- GPU recomendadas para uso comodo: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070/4080/4090 para contextos largos o concurrencia; A100 o H100 cuando se requiere servir multiples peticiones o lotes grandes.
-- Si cabe en GPU de consumo: si, con cuantizacion Q4_0 y contextos moderados cabe en tarjetas de 8 GB con ajustes, y con holgura en modelos de 12 GB o 16 GB. Tambien es viable en Apple Silicon con memoria unificada.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli` para vision), Ollama (`ollama run hf.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF`) y LM Studio. Para vLLM hay que usar el gemelo W4A16 en safetensors, no el GGUF.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: el GGUF principal ocupa 5,23 GB y el proyector visual 992 MB; en total, alrededor de 6,2 GB de pesos, más overhead de contexto KV. Con 131.072 tokens de contexto el consumo de KV crece de forma notable y exige GPU con margen amplio o *offloading* parcial a CPU.
+- GPU recomendadas: A100 o H100 para servir contexto completo y concurrencia; RTX 4090 (24 GB) para uso individual con contexto largo; GPUs de 8-12 GB para contexto moderado.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más para contexto corto; 12-16 GB o más para sesiones multimodales con contexto extendido.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli` para visión), Ollama (`ollama run hf.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF`), LM Studio; la variante W4A16-G64 está pensada para vLLM.
+- Latencia y throughput: no disponibles en la información proporcionada. Al usar el runtime Q4_0 estándar, el coste de decodificación debería ser equivalente al de cualquier GGUF Q4_0 del mismo tamaño.
 
 ## Comparativa con modelos similares
 
-Comparativa dentro de la misma familia y tamano (cuantizaciones 4 bits de Gemma 4 E4B-it):
+| Modelo | Parámetros | Contexto | Formato | KL a BF16 | Licencia |
+|---|---|---:|---|---:|---|
+| QUASAR Gemma 4 E4B Q4_0 | 7,46B | 131.072 | GGUF Q4_0 nativo | 0,044 | Apache 2.0 |
+| Google Gemma 4 E4B QAT Q4_0 | no disponible | no disponible | GGUF Q4_0 | 0,088 | Apache 2.0 |
+| Unsloth Gemma 4 E4B Q4_0 (imatrix) | no disponible | no disponible | GGUF Q4_0 | 0,067 | Apache 2.0 |
+| LM Studio Gemma 4 E4B Q4_K_M | no disponible | no disponible | GGUF Q4_K_M | 0,114 | Apache 2.0 |
 
-| Modelo | Formato | KL a BF16 | Acuerdo top-1 | Licencia | Notas |
-|---|---|---:|---:|---|---|
-| QUASAR Q4_0 (este) | GGUF Q4_0 nativo | 0,044 | 92,8 % | apache-2.0 | QAT con codigos INT4 entrenados, verificacion bit-exacta |
-| Google QAT Q4_0 | GGUF Q4_0 | 0,088 | 90,6 % | apache-2.0 | QAT oficial del fabricante |
-| Unsloth Q4_0 (imatrix) | GGUF Q4_0 | 0,067 | 91,1 % | apache-2.0 | PTQ con matriz de importancia |
-| LM Studio Q4_K_M | GGUF Q4_K_M | 0,114 | no disponible | apache-2.0 | Formato mas expresivo, peor KL en la medicion del autor |
-| google/gemma-4-E4B-it (BF16) | safetensors | referencia | referencia | apache-2.0 | Modelo base sin cuantizar |
-
-No se dispone de comparaciones con modelos de otros fabricantes del mismo orden de tamano en la informacion proporcionada.
+La comparación relevante es de calidad de cuantización dentro de la misma familia: QUASAR obtiene menor KL que las alternativas en formato Q4_0 y también que un Q4_K_M, que en teoría es más expresivo. No se dispone de datos de benchmarks de los modelos comparados más allá de los publicados por el autor frente al QAT de Google.
 
 ## Limitaciones y advertencias
 
-- Aunque la divergencia es baja (KL 0,044), sigue existiendo perdida respecto al BF16; en tareas de razonamiento largo, matematicas complejas o generacion de codigo con dependencias sutiles puede haber degradacion acumulada.
-- Riesgo de alucinacion inherente al modelo base; el propio autor reporta 58,2 en TruthfulQA, un valor que no permite tratar las salidas como hechos verificados.
-- Los benchmarks downstream se midieron sobre el gemelo W4A16, no sobre el GGUF Q4_0; el autor argumenta que comparten los mismos codigos entrenados, pero no hay medicion directa publicada para el fichero GGUF.
-- Cobertura idiomatica no detallada: las etiquetas indican `en` y `multilingual`, sin lista de idiomas ni evaluacion por idioma. El rendimiento en castellano no esta documentado.
-- Contexto de 131.072 tokens declarado, pero sin datos de rendimiento en el extremo de esa ventana (atencion degradada, coste de cache KV, latencia).
-- Licencia declarada apache-2.0, si bien el modelo base enlaza a los terminos de uso de Google para Gemma; conviene revisar las condiciones aplicables al uso comercial antes de integrarlo en produccion.
-- Adopcion muy baja en el momento de la publicacion (25 descargas, 1 me gusta), lo que implica poca validacion independiente por parte de la comunidad.
-- La verificacion bit-exacta y las cifras de KL provienen del propio autor; no se han localizado replicaciones externas en la informacion disponible.
-- La etiqueta `audio` no esta respaldada por documentacion en la model card; no conviene asumir capacidades de audio sin verificarlas.
+- Los benchmarks downstream se midieron sobre la variante W4A16 gemela, no directamente sobre el GGUF Q4_0; el autor afirma que comparten códigos entrenados, pero la cifra no es una medición del archivo GGUF.
+- El harness de evaluación es el del propio autor; no hay replicación independiente de los resultados de KL ni de los benchmarks.
+- Riesgo de alucinación inherente a modelos de 7,46B parámetros, especialmente en NQ-open (4,7), donde el rendimiento absoluto es bajo pese a superar al QAT de Google.
+- Cobertura idiomática declarada como "multilingual" sin listado; el único idioma documentado es el inglés. El rendimiento en castellano no está medido.
+- El contexto de 131.072 tokens es costoso en memoria KV; en GPUs de consumo obliga a reducir la ventana efectiva.
+- El proyector visual se distribuye en BF16 y sin cuantizar, lo que añade ~1 GB y no se beneficia del QAT.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base `google/gemma-4-E4B-it` enlazadas en la model card.
+- El repositorio tiene 862 descargas y 3 likes en el momento de la ficha: validación comunitaria todavía muy limitada.
+- Parte de los resultados de búsqueda web sobre "Quasar" corresponden a proyectos homónimos sin relación (herramienta de administración remota, framework de frontend, objetos astronómicos); no deben asociarse a este modelo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Paper de QUASAR: https://arxiv.org/abs/2608.13966
-- Coleccion Gemma 4 E4B y 12B con QAT de 4 bits de QUASAR: https://huggingface.co/collections/QUASAR-QAT/quasar-native-4-bit-gemma-4-6aa3561770e6e4001271bf1e
-- Detalle de evaluacion (EVAL.md): https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF/blob/main/EVAL.md
-- Recibo de verificacion nativa Q4_0: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF/blob/main/native_q4_0_receipt.json
-- Gemelo W4A16 para vLLM: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-W4A16-G64
-- Version GGUF de 12B con la misma receta: https://huggingface.co/QUASAR-QAT/gemma-4-12B-it-QUASAR-Q4_0-GGUF
+- Variante W4A16 gemela: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-W4A16-G64
+- Paper QUASAR: https://arxiv.org/abs/2608.13966
+- Página del proyecto: https://quasar-qat.github.io/
+- Código: https://github.com/vincentcounathe/quasar-qat
+- Colección Gemma 4 E4B y 12B QUASAR 4-bit QAT: https://huggingface.co/collections/QUASAR-QAT/quasar-native-4-bit-gemma-4-6aa3561770e6e4001271bf1e
+- Evaluación completa (EVAL.md): https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF/blob/main/EVAL.md
+- Recibo de verificación nativa Q4_0: https://huggingface.co/QUASAR-QAT/gemma-4-E4B-it-QUASAR-Q4_0-GGUF/blob/main/native_q4_0_receipt.json
 - Q4_0 QAT oficial de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf
-- QAT W4A16 de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
-- Cuantizacion Q4_0 de Unsloth: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
-- Repack de Unsloth sobre el QAT de Google: https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF
-- Cuantizacion Q4_K_M de LM Studio: https://huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF
-
-Nota: los resultados de busqueda web obtenidos (repositorio Quasar RAT, Quasar Framework, articulos sobre cuasares astronomicos y tienda de scripts de FiveM) no guardan relacion con este modelo y se han descartado por no ser relevantes.
+- W4A16 QAT oficial de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
+- Unsloth GGUF: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
+- LM Studio GGUF: https://huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF

@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "mradermacher/SmolLM2-1.7B-magpie-ultra-v1.0-class-score-431k-GGUF",
+  "slug": "mradermacher-smollm2-1-7b-magpie-ultra-v1-0-class-score-431k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolLM2-1.7B-magpie-ultra-v1.0-class-score-431k-GGUF",
+  "created_at": "2025-09-02T12:45:11.000Z",
+  "updated_at": "2026-11-20T23:48:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 15315756416,
+  "storage_human": "15.3 GB",
+  "context_length": 8192,
+  "base_model": "EleutherAI/SmolLM2-1.7B-magpie-ultra-v1.0-class-score-431k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

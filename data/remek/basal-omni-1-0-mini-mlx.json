@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 812,
+  "downloads_30d": 810,
   "trending_score": 0,
   "parameters": 7463013376,
   "parameters_human": "7.46B",
@@ -58,16 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Remek/basal-omni-1.0-mini-MLX · Hugging Face",
-      "url": "https://huggingface.co/Remek/basal-omni-1.0-mini-MLX",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Remek/basal-omni-1.0-mini-MLX at main - Hugging Face",
-      "url": "https://huggingface.co/Remek/basal-omni-1.0-mini-MLX/tree/main",
-      "snippet": "Instructions to use Remek/basal-omni-1.0-mini-MLX with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Remek/basal-omni-1.0-mini-MLX with MLX:"
-    }
-  ]
+  "sources": []
 }

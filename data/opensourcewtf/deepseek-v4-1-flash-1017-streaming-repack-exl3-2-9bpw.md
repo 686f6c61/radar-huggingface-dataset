@@ -2,50 +2,48 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es un modelo de la familia DeepSeek (desarrollada por DeepSeek, aunque la model card disponible no lo confirma explicitamente) del que este repositorio de Hugging Face contiene una redistribucion cuantizada, no los pesos originales. El repositorio `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw` publica una version con los expertos enrutados (routed experts) cuantizados a 2,9 bits por peso mediante EXL3 EAQ v1, una tecnica de cuantizacion de la organizacion Mia-AiLab, y reorganizados en un diseno de streaming pensado para reducir el espacio en disco y permitir carga por partes.
+Este repositorio de Hugging Face, publicado por el usuario OpensourceWTF, contiene una cuantización a 2,9 bits por peso (bpw) en formato EXL3 del modelo DeepSeek-V4.1-Flash-1017, empaquetada para su uso con mlx-serve. No se trata de un modelo original entrenado por este autor, sino de una conversión de pesos orientada a reducir el espacio en disco y la memoria necesaria para la inferencia en hardware Apple Silicon.
 
-El interes practico de esta ficha es limitado pero concreto: se trata de un artefacto de cuantizacion agresiva (2,9 bpw) de un modelo presumiblemente de gran tamano (el repositorio ocupa 417,8 GB), orientado a despliegues con restricciones severas de VRAM. La model card indica que el contenido ha sido movido a la rama `2.9bpw` del repositorio `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3`, y que el historial de este repositorio se ha compactado para liberar almacenamiento.
+El repositorio está marcado como **deprecated** por el propio autor y, según la model card, ya no contiene ficheros: los pesos se trasladaron a otro repositorio (`OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3`, rama `2.9bpw`) y los anteriores permanecen únicamente en el historial de commits. El tamaño del repo indicado en la ficha (417,8 GB) corresponde al histórico acumulado, no a una descarga utilizable del artefacto actual.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento en la documentacion proporcionada. Todos los datos tecnicos que siguen se limitan a lo que consta en la model card y en los metadatos de Hugging Face; el resto se marca como no disponible.
+La relevancia de esta ficha es, por tanto, limitada y fundamentalmente documental: sirve para identificar el linaje del artefacto, localizar la ubicación vigente de los pesos y advertir de que no debe desplegarse desde esta URL. No hay información publicada sobre arquitectura, datos de entrenamiento, benchmarks ni idiomas del modelo subyacente en la documentación disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer con mezcla de expertos, por la referencia a "routed experts") |
+| Arquitectura | no disponible (corresponde al modelo base DeepSeek-V4.1-Flash-1017, no documentada en la informacion proporcionada) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (MoE inferido, sin cifra publicada) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 EAQ v1 a 2,9 bits por peso en los expertos enrutados; el resto de componentes sin especificar |
+| Tipos de cuantizacion | EXL3 a 2,9 bpw (unica variante publicada en este repo) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | EXL3 (formato de cuantizacion de ExLlamaV3); safetensors no confirmado |
+| Formato de pesos | EXL3 (empaquetado para mlx-serve); no se indica safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo base. La unica referencia tecnica es la presencia de "routed experts", lo que implica una arquitectura de mezcla de expertos (MoE) en la que solo un subconjunto de expertos se activa por token. Los pesos de estos expertos han sido cuantizados por Mia-AiLab con EXL3 EAQ v1 a 2,9 bits por peso (revision `45ee5d0f` del repositorio `Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw`) y posteriormente reempaquetados por OpensourceWTF en un diseno de streaming.
+No se dispone de información sobre la arquitectura del modelo base DeepSeek-V4.1-Flash-1017 en la documentación proporcionada. El artefacto de este repositorio es una cuantización post-entrenamiento en formato EXL3 (familia ExLlamaV3) a 2,9 bits por peso, con un pipeline de "streaming repack" que sugiere una conversión por capas o por bloques para limitar el pico de memoria durante el empaquetado. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF o DPO, ya que el autor del repositorio no entrena el modelo, solo lo cuantiza.
 
-No consta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base paso por fases de RLHF o DPO. Tampoco se documentan innovaciones de decodificacion especulativa ni mecanismos de atencion alternativos. El "streaming repack" hace referencia al formato de almacenamiento y carga, no a una tecnica de inferencia en streaming del modelo base: permite distribuir los pesos en un layout que facilita la carga por partes desde disco, relevante dado el tamano del repositorio (417,8 GB).
+La innovación técnica atribuible a este repositorio es exclusivamente la cuantización agresiva (2,9 bpw) y su integración con mlx-serve, orientada a ejecución en Apple Silicon. No hay información sobre decodificación especulativa, atención lineal ni otras técnicas del modelo base.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: capacidades presumibles del modelo base DeepSeek-V4.1-Flash, no documentadas en esta ficha.
-- Codigo y matematicas: no confirmado en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; los idiomas no constan en los metadatos.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-
-Nota: la cuantizacion a 2,9 bpw puede degradar capacidades sensibles a la precision numerica, como matematicas o generacion de codigo, en comparacion con los pesos originales. No se han publicado evaluaciones que cuantifiquen esta perdida.
+- No hay información publicada sobre las capacidades del modelo base en la documentación de este repositorio.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta cobertura multilingüe.
+- No se documentan modos especiales (thinking mode, visión, audio).
+- El único dato funcional verificable es que el artefacto está empaquetado para mlx-serve en formato EXL3 a 2,9 bpw.
 
 ## Casos de uso
 
-- Despliegue en hardware con VRAM limitada: la cuantizacion a 2,9 bpw reduce el peso de los expertos enrutados aproximadamente a un tercio del de una cuantizacion de 8 bits, lo que permite servir un modelo de gran tamano en GPUs donde los pesos originales no caberian. Adecuado para entornos de investigacion con presupuesto de memoria ajustado.
-- Experimentacion e investigacion sobre cuantizacion: el repositorio sirve como referencia reproducible de la tecnica EXL3 EAQ v1 aplicada a un modelo MoE de gran escala, util para comparar calidad frente a otras cuantizaciones del mismo modelo base.
-- Servicio de inferencia en local con ExLlamaV3: el formato EXL3 esta disenado para el motor ExLlamaV3, de modo que el caso natural es montar un endpoint de generacion de texto en una o varias GPUs consumer o de centro de datos con ese motor.
-- Carga por partes en sistemas con disco limitado: el layout de streaming permite descargar y cargar el modelo de forma fragmentada, util en maquinas donde no es viable mantener 417,8 GB de pesos simultaneamente en un unico volumen rapido.
-- Prototipado de asistentes conversacionales: si el modelo base conserva sus capacidades de conversacion multi-turno, esta version permite validar flujos de chat en hardware modesto antes de escalar a los pesos completos.
-- Evaluacion comparativa de calidad tras cuantizacion agresiva: util para equipos que necesitan decidir si 2,9 bpw es suficiente para su tarea concreta antes de invertir en infraestructura para los pesos originales.
+- **Archivo y trazabilidad de cuantizaciones**: consultar el historial de commits de este repositorio para auditar qué pesos se publicaron y cuándo se migraron al repositorio vigente, útil para reproducibilidad de experimentos previos.
+- **Migración a la ubicación vigente**: usar esta ficha como punto de partida para localizar la rama `2.9bpw` del repositorio `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3`, que es donde residen los ficheros actuales.
+- **Evaluación de compresión extrema en Apple Silicon**: si se recuperan los pesos desde la rama vigente, el formato EXL3 a 2,9 bpw permite probar el equilibrio entre calidad y huella de memoria en equipos con memoria unificada, un escenario habitual en investigación con Mac Studio.
+- **Reproducción de pipelines de "streaming repack"**: el nombre del artefacto documenta una técnica de reempaquetado por streaming que puede servir de referencia para quienes construyan conversiones propias a EXL3.
+- **Inventario de artefactos deprecated**: integrar este repositorio en un catálogo interno de modelos con estado "deprecated" para evitar que pipelines de CI/CD descarguen desde una URL sin ficheros.
+- **Auditoría de licencias**: dado que la licencia declarada es MIT, sirve como caso de estudio de artefactos derivados cuya licencia puede no coincidir con la del modelo base; conviene verificar la licencia del modelo original antes de cualquier uso comercial.
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +51,29 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precision. Como referencia de orden de magnitud, el repositorio ocupa 417,8 GB en disco; una carga completa en VRAM requeriria un volumen del mismo orden, aunque el layout de streaming y la cuantizacion de solo los expertos enrutados pueden reducir la huella efectiva. No se confirma el reparto entre expertos y componentes no cuantizados.
-- GPU recomendadas: no disponible. Por el tamano del artefacto, un despliegue completo probablemente requiere multiples GPUs de centro de datos (A100, H100 o similar); no confirmado.
-- Cabe en GPU consumer: no confirmado. Improbable en una unica GPU consumer dado el tamano del repositorio.
-- Opciones de despliegue: ExLlamaV3 es el motor implicito por el formato EXL3. Otros motores (vLLM, llama.cpp, Ollama, TGI) no estan confirmados para este formato.
-- Latencia y throughput estimados: no disponible.
+- **VRAM/memoria**: no disponible. El tamaño del repo (417,8 GB) corresponde al histórico de commits y no permite estimar la huella de los pesos actuales, que además residen en otro repositorio.
+- **GPU recomendadas**: el formato EXL3 y el destino mlx-serve apuntan a Apple Silicon (familias M1/M2/M3/M4 con memoria unificada), no a GPU NVIDIA.
+- **Compatibilidad con GPU de consumo**: no disponible; depende del tamaño real del modelo base, que no se documenta.
+- **Opciones de despliegue**: mlx-serve (destino declarado). No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (EXL3 EAQ v1 2,9 bpw, este repo) | no disponible | no disponible | 2,9 bpw (expertos) | MIT | Hugging Face, rama `2.9bpw` |
-| DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw (Mia-AiLab) | no disponible | no disponible | 2,9 bpw | no disponible | Hugging Face |
-| DeepSeek-V4.1-Flash-1017 (pesos originales) | no disponible | no disponible | sin cuantizar | no disponible | no disponible en la informacion |
-
-No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparacion cuantitativa con alternativas de la misma categoria.
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (cuantizaciones EXL3 a ~3 bpw de modelos tipo Flash para mlx-serve) con datos verificables de parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 2,9 bits por peso es agresiva y puede introducir degradacion de calidad perceptible, especialmente en tareas que requieren precision numerica o razonamiento largo. No se han publicado evaluaciones que lo cuantifiquen.
-- El repositorio ha sido movido: el contenido vive ahora en la rama `2.9bpw` de `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3`. Este repositorio conserva los mismos bytes en el commit `3ef807df`, pero su historial fue compactado; conviene usar la rama nueva para descargas y actualizaciones.
-- No se documentan sesgos conocidos del modelo base ni del proceso de cuantizacion.
-- Riesgo de alucinacion: no evaluado en la informacion disponible.
-- Idiomas soportados: no constan; no se puede garantizar cobertura multilingue.
-- Licencia MIT declarada, lo que en principio permite uso comercial, pero la cadena de licencias del modelo base DeepSeek no se detalla en la model card; conviene verificar los terminos del modelo original antes de un despliegue comercial.
-- El formato EXL3 limita las opciones de motor de inferencia; no es compatible con ecosistemas como llama.cpp u Ollama sin conversion adicional.
-- El modelo base no esta identificado con certeza por el autor de la model card; "DeepSeek-V4.1-Flash-1017" no aparece documentado en la informacion proporcionada.
+- **Repositorio deprecated sin ficheros**: la model card indica explícitamente que este repo no contiene archivos; cualquier descarga fallará o requerirá recurrir al historial de commits.
+- **Ubicación vigente distinta**: los pesos actuales están en `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3`, rama `2.9bpw`.
+- **Cuantización agresiva**: 2,9 bpw es una compresión muy alta; es esperable degradación de calidad frente a los pesos originales, aunque no se publican métricas que la cuantifiquen.
+- **Licencia**: se declara MIT para el artefacto, pero no se verifica la licencia del modelo base; para uso comercial debe comprobarse la licencia original de DeepSeek-V4.1-Flash-1017.
+- **Sesgos y alucinación**: no documentados en la información disponible.
+- **Idiomas**: no documentados.
+- **Trazabilidad**: el autor es un usuario individual (OpensourceWTF), no el desarrollador del modelo base; no hay garantías de soporte ni mantenimiento.
+- **Fecha de creación futura**: la ficha indica creación en 2026-10-20, dato que conviene contrastar antes de tratarlo como referencia temporal fiable.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw
-- Repositorio con la rama `2.9bpw`: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/tree/2.9bpw
-- Cuantizacion original de Mia-AiLab: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw
-- Licencia: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/blob/2.9bpw/LICENSE
+- Repositorio (deprecated): https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw
+- Repositorio vigente: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3
+- Rama con los pesos actuales (2.9bpw): https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/tree/2.9bpw

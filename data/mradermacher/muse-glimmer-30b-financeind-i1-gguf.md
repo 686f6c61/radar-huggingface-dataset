@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-FinanceIND-i1-GGUF es una cuantizacion en formato GGUF del modelo Rumiii/Muse-Glimmer-30B-FinanceIND, un modelo de lenguaje de aproximadamente 27.850 millones de parametros especializado en finanzas indias y en flujos de trabajo con tool calling y agentes. La cuantizacion la firma mradermacher, un autor habitual en el ecosistema de cuantizaciones GGUF, y emplea el metodo i1 (imatrix) con los tipos de cuantizacion habituales de su catalogo.
+Muse-Glimmer-30B-FinanceIND-i1-GGUF es una recopilación de cuantizaciones GGUF, generadas con la herramienta de cuantización con matriz de importancia (imatrix) de mradermacher, del modelo Rumiii/Muse-Glimmer-30B-FinanceIND. El modelo base es un ajuste fino de 27.854.794.240 parámetros (aproximadamente 30B nominales) especializado en finanzas indias, con capacidades declaradas de tool calling y comportamiento agéntico, entrenado sobre el dataset sintético Gandalf1/indian-finance-synthetic-phase2-cleaned. La relevancia de esta ficha radica en que ofrece el modelo en formatos ejecutables localmente (GGUF) con un abanico de cuantizaciones que va desde 6,6 GB hasta 23,0 GB, lo que permite desplegarlo en hardware muy diverso.
 
-El modelo base se ha afinado sobre el dataset Gandalf1/indian-finance-synthetic-phase2-cleaned, lo que lo orienta a dominios financieros del mercado indio y a tareas conversacionales con invocacion de herramientas. Soporta ingles y hindi, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial con las condiciones habituales de atribucion.
+El repositorio lo mantiene mradermacher, un cuantizador de terceros habitual en el ecosistema, no el autor original del modelo. La licencia declarada es Apache 2.0, lo que facilita el uso comercial, y los idiomas soportados son inglés (en) e hindi (hi). El pipeline no está declarado y no se han publicado resultados de benchmarks en la información disponible.
 
-Su relevancia practica radica en que ofrece una via de despliegue local o en infraestructura propia mediante llama.cpp y derivados, con tamanos de fichero que van desde aproximadamente 10,8 GB en i1-Q2_K hasta las variantes de mayor precision del repositorio, cuyo peso total ronda los 23,5 GB. Esto permite ejecutar un modelo de casi 28.000 millones de parametros en hardware de gama alta de consumo si se aceptan cuantizaciones agresivas.
+Se trata, por tanto, de una variante de distribución más que de un modelo nuevo: su valor está en la disponibilidad de pesos cuantizados con imatrix (etiquetados i1) y en la posibilidad de ejecución con llama.cpp y derivados, no en innovaciones arquitectónicas propias.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base etiquetado como muse_glimmer; el autor no detalla la arquitectura interna) |
-| Parametros totales | 27.854.794.240 (dato real de safetensors del modelo base) |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q2_K_S, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-IQ1_S, i1-IQ1_M, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_S, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_NL, i1-IQ4_XS, i1-Q4_0, i1-Q4_1, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (ademas de fichero imatrix) |
-| Idiomas soportados | Ingles (en) e hindi (hi) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base en safetensors |
+| Arquitectura | no disponible (modelo base transformer; no se detalla en la información) |
+| Parametros totales | 27.854.794.240 (~27,85B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además de un fichero imatrix |
+| Idiomas soportados | en, hi |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (con fichero imatrix auxiliar) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. La etiqueta muse_glimmer sugiere una familia de modelos propia del autor original, pero la model card no especifica si se trata de un transformer denso, un MoE o una arquitectura hibrida. El dato objetivo es el numero de parametros: 27.854.794.240, lo que lo situa en la franja de los 28.000 millones.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Los metadatos indican que se trata de un modelo de transformers con 27.854.794.240 parámetros y que el ajuste fino se realizó sobre el dataset Gandalf1/indian-finance-synthetic-phase2-cleaned, de naturaleza sintética y orientado a finanzas indias. La etiqueta muse_glimmer sugiere una familia de modelos base denominada Muse Glimmer, pero no se detallan capas, tipo de atención ni mecanismos de decodificación.
 
-Respecto al entrenamiento, la model card unicamente indica el dataset de ajuste Gandalf1/indian-finance-synthetic-phase2-cleaned, de caracter sintetico y centrado en finanzas indias. No se documentan el numero de tokens de entrenamiento, la composicion del corpus, ni si hubo fases de RLHF o DPO. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal. La cuantizacion i1 emplea una matriz de importancia (imatrix) generada por mradermacher, que se usa para ponderar la cuantizacion y mejorar la calidad respecto a cuantizaciones estaticas del mismo tamano.
+En cuanto al entrenamiento, la model card del repositorio de cuantización no incluye información sobre número de tokens, composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. Tampoco se documentan innovaciones técnicas del modelo original. La única información técnica relevante de este repositorio es el proceso de cuantización: se han generado cuantizaciones ponderadas con imatrix (versión de cuantización 2, salida tensor-quantised, conversión de tipo hf), lo que habitualmente mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas. El repositorio incluye además cuantizaciones estáticas en un repo hermano.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y hindi.
-- Especializacion en dominio financiero indio, incluyendo terminologia y casuistica del mercado de la India.
-- Soporte de tool calling / function calling, segun las etiquetas del modelo.
-- Orientacion a flujos agenticos y razonamiento multi-paso (etiqueta agentic).
-- Capacidad multimodal: la model card de la cuantizacion indica explicitamente que se trata de un modelo de vision y remite a los ficheros mmproj del repositorio estatico.
-- No se documentan capacidades de audio ni modos de pensamiento explicito (thinking mode).
+- Generación de texto conversacional en inglés e hindi, con especialización declarada en dominio financiero indio.
+- Tool calling / function calling: etiquetado explícitamente en los tags del modelo.
+- Comportamiento agéntico (agentic): soporte declarado para flujos de múltiples pasos.
+- Comprensión y generación en el dominio de finanzas indias, gracias al ajuste fino sobre datos sintéticos específicos.
+- Capacidades multilingües limitadas a inglés e hindi.
+- No se declaran capacidades de visión, audio ni modo de razonamiento extendido (thinking) en la información disponible.
+- Compatibilidad con endpoints (tag endpoints_compatible) para despliegue como servicio.
 
 ## Casos de uso
 
-- Asistencia financiera para el mercado indio: el modelo puede responder consultas sobre productos financieros, terminologia y procedimientos habituales en la India gracias a su ajuste sobre datos financieros sinteticos de ese dominio.
-- Agente de atencion al cliente bilingue: con soporte de ingles e hindi, puede gestionar conversaciones multi-turno en centros de contacto que atienden a usuarios de ambos idiomas.
-- Automatizacion de back-office financiero: mediante tool calling, puede invocar APIs internas para consultar saldos, estados de cuenta o catalogos de productos, integrandose en pipelines existentes.
-- Extraccion y clasificacion de documentos financieros: puede procesar textos y, con el componente de vision, imagenes de documentos para extraer campos estructurados en un pipeline de digitalizacion.
-- Generacion de borradores de informes y resumenes financieros: util para equipos de analisis que necesitan primeras versiones de resumenes sobre datos ya estructurados.
-- Despliegue local con llama.cpp u Ollama: las cuantizaciones i1 permiten ejecutar el modelo en estaciones de trabajo con GPU de gama alta, sin depender de APIs externas, lo que resulta adecuado para entornos con requisitos de privacidad.
-- Prototipado de agentes con tool calling: al ser un modelo abierto y cuantizado, sirve para validar arquitecturas agenticas antes de escalar a modelos mayores.
+- Asistencia financiera en hindi e inglés: el modelo puede atender consultas sobre productos financieros indios, terminología bancaria y procedimientos, aprovechando su ajuste fino sobre el dataset sintético de finanzas indias.
+- Agente de atención al cliente bancaria: gracias al soporte de tool calling, puede invocar APIs de consulta de saldo, estado de transacciones o simulación de productos dentro de un flujo conversacional multi-turno.
+- Automatización de back-office financiero: clasificación y extracción de información de documentos y consultas en inglés e hindi, integrable en pipelines mediante llama.cpp.
+- Despliegue en entornos con hardware limitado: las cuantizaciones i1-Q4_K_S (16,2 GB) e i1-Q4_K_M (17,0 GB) permiten ejecutar un modelo de ~28B en GPUs de consumo de gama alta, algo inviable con los pesos originales en precisión completa.
+- Prototipado de agentes financieros en local: el formato GGUF y la disponibilidad de cuantizaciones desde 6,6 GB facilitan pruebas rápidas en estaciones de trabajo sin infraestructura de servidor.
+- Investigación sobre sesgos y calidad en dominios financieros regionales: al ser un ajuste fino sobre datos sintéticos, sirve como caso de estudio para evaluar la fidelidad de modelos especializados en mercados no anglosajones.
+- Servicio de inferencia con endpoints compatibles: el tag endpoints_compatible indica que puede desplegarse en plataformas de serving que acepten la API de Hugging Face.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 10,8 GB para la cuantizacion i1-Q2_K; las variantes Q4_K_M y superiores requieren bastante mas, en torno a 17-20 GB segun el tipo, y las de mayor precision se acercan al tamano completo del repositorio (23,5 GB).
-- GPU recomendadas: para cuantizaciones bajas, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) son suficientes; para cuantizaciones medias y altas se recomienda A100 40/80 GB o H100.
-- Cabe en GPU de consumo: si, en tarjetas con 24 GB de VRAM usando cuantizaciones i1-Q4 o inferiores; las cuantizaciones Q5/Q6 pueden requerir offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; la model card menciona compatibilidad con endpoints.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada): i1-IQ1_S ~6,6 GB; i1-IQ2_M ~9,9 GB; i1-IQ3_M ~12,9 GB; i1-IQ4_XS ~15,3 GB; i1-Q4_K_M ~17,0 GB; i1-Q5_K_M ~19,9 GB; i1-Q6_K ~23,0 GB. Añadir entre 1 y 4 GB adicionales para KV cache según longitud de contexto.
+- GPU recomendadas: para cuantizaciones Q4, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q5 y Q6, se recomienda A100 40 GB, H100 o RTX 6000 Ada. Para IQ2 e IQ3, una RTX 4080 (16 GB) o RTX 4070 Ti Super (16 GB) puede bastar.
+- Cabe en GPU de consumo: sí, en las cuantizaciones IQ1 a Q4; Q5 y Q6 requieren 24 GB o más.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. No se indica soporte nativo para vLLM o TGI con estos pesos.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-FinanceIND-i1-GGUF | 27,85 B | No disponible | Apache 2.0 | GGUF (i1) | Especializado en finanzas indias, bilingue en/hi, tool calling |
-| Modelo base Rumiii/Muse-Glimmer-30B-FinanceIND | 27,85 B | No disponible | Apache 2.0 | Safetensors | Version sin cuantizar del mismo modelo |
-| Muse-Glimmer-30B-FinanceIND-GGUF (estatico) | 27,85 B | No disponible | Apache 2.0 | GGUF estatico | Misma base, cuantizaciones sin imatrix, incluye mmproj |
+| Muse-Glimmer-30B-FinanceIND-i1-GGUF (este) | ~27,85B | no disponible | Apache 2.0 | GGUF (i1, múltiples cuantizaciones) | Especializado en finanzas indias, tool calling, en/hi |
+| Muse-Glimmer-30B-FinanceIND (base) | ~27,85B | no disponible | Apache 2.0 | safetensors | Pesos originales, sin cuantizar |
+| Muse-Glimmer-30B-FinanceIND-GGUF (estático) | ~27,85B | no disponible | Apache 2.0 | GGUF (estático) | Mismo modelo, cuantizaciones sin imatrix |
 
-No se dispone de informacion sobre modelos alternativos de la misma categoria con la que comparar rendimiento de forma objetiva.
+No se dispone de información sobre otros modelos comparables de la misma categoría (especializados en finanzas indias con tool calling) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El ajuste se ha realizado sobre un dataset sintetico de finanzas indias; es probable que el modelo tenga un conocimiento limitado de otros dominios financieros o de otras jurisdicciones.
-- Riesgo de alucinacion en datos numericos, cifras de mercado y normativa, especialmente en un dominio donde la precision es critica; se recomienda verificacion humana en produccion.
-- Soporte linguistico limitado a ingles y hindi; el rendimiento en castellano no esta garantizado ni documentado.
-- No se documenta la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo con garantias.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base y el dataset de ajuste pueden tener condiciones adicionales que conviene revisar antes de desplegar.
-- Las cuantizaciones de baja precision (Q2, IQ2, IQ1) degradan la calidad de forma notable; para produccion se recomienda Q4_K_M o superior.
-- El repositorio no registra descargas ni interacciones, por lo que no hay evidencia de validacion por parte de la comunidad.
-- La model card indica que es un modelo de vision, pero los ficheros mmproj no estan en este repositorio, sino en el estatico; hay que descargarlos por separado para usar la multimodalidad.
+- El modelo base se entrenó sobre un dataset sintético (indian-finance-synthetic-phase2-cleaned), lo que puede introducir artefactos y una distribución poco representativa de casos reales.
+- Riesgo de alucinación en datos financieros concretos (cifras, normativas, tipos de interés): no se han publicado evaluaciones que lo cuantifiquen.
+- Idiomas limitados a inglés e hindi; el rendimiento en castellano u otros idiomas no está garantizado.
+- Longitud de contexto no documentada: no se puede planificar el uso en conversaciones largas sin verificación empírica.
+- No se han publicado benchmarks, por lo que las afirmaciones de calidad del ajuste fino no están respaldadas por métricas.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base original y del dataset utilizado, ya que el repositorio no detalla restricciones adicionales.
+- Las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "mostly desperate".
+- El repositorio pertenece a un cuantizador de terceros (mradermacher), no al autor original; los problemas de calidad del modelo deben atribuirse al modelo base Rumiii/Muse-Glimmer-30B-FinanceIND.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-i1-GGUF
 - Modelo base: https://huggingface.co/Rumiii/Muse-Glimmer-30B-FinanceIND
-- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Muse-Glimmer-30B-FinanceIND-i1-GGUF
-- Dataset de ajuste: https://huggingface.co/datasets/Gandalf1/indian-finance-synthetic-phase2-cleaned
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Muse-Glimmer-30B-FinanceIND-i1-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/Gandalf1/indian-finance-synthetic-phase2-cleaned
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_re

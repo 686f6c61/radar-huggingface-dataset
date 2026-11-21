@@ -2,92 +2,87 @@
 
 ## Resumen
 
-ThoxOpen-8B-Heretic es una version "abliterada" (con el mecanismo de rechazo atenuado) del modelo Qwen/Qwen3-8B, publicada por Thox-ai (THOX.ai). No se trata de un modelo entrenado desde cero: THOX ha aplicado la herramienta Heretic sobre los pesos originales de Qwen3-8B para reducir la tasa de rechazos ante peticiones que el modelo base declinaria, manteniendo al mismo tiempo la menor divergencia posible (KL) respecto al modelo original. El resultado son pesos modificados, no identicos byte a byte a Qwen3-8B, distribuidos en safetensors y con conversiones GGUF (Q5_K_M y Q4_K_M) generadas con llama.cpp.
+ThoxOpen-8B-Heretic es una versión modificada de Qwen/Qwen3-8B publicada por Thox-ai (THOX.ai) en la que se ha aplicado una "abliteración" —una técnica de edición de pesos que suprime la dirección de activación asociada a las respuestas de rechazo— mediante la herramienta Heretic. El resultado es un modelo de 8.190.735.360 parámetros (8B denso) con un sesgo deliberado hacia el "minimal refusal": el modelo tiende a no declinar peticiones que el modelo base rechazaría por política de seguridad. No se ha reentrenado: los pesos son los de Qwen3-8B modificados in situ.
 
-El modelo conserva la arquitectura y el tamano del Qwen3-8B subyacente: 8.190.735.360 parametros totales (8B densos, sin mezcla de expertos), pesos en safetensors que suman 16,38 GB en cuatro shards. La model card declara licencia Apache 2.0 y un unico idioma soportado, el ingles. El enfasis del autor esta en el despliegue local ("local-first", "laptop") y en un uso sin restricciones de contenido, con las advertencias legales y de sesgo que eso implica.
+La relevancia del modelo es doble. Por un lado, es un ejemplo documentado de abliteración reproducible: el repositorio incluye la configuración exacta de Heretic (`heretic_config.toml`), los hashes SHA-256 de cada shard y los registros de evaluación. Por otro, se distribuye con un enfoque "local-first" explícito, con conversiones GGUF (Q4_K_M, Q5_K_M, Q8_0) generadas con llama.cpp y pensadas para ejecutarse en portátiles. La licencia es Apache 2.0, heredada del modelo base.
 
-Es relevante ahora porque representa una categoria creciente: builds derivados de modelos abiertos populares con el filtro de rechazo eliminado, pensados para desarrolladores que quieren control total sobre el comportamiento del modelo en local. La contrapartida es que THOX no ha entrenado el modelo ni publicado benchmarks propios medidos, por lo que su rendimiento real debe evaluarse a partir del modelo base Qwen3-8B y de las pruebas que el usuario haga por su cuenta.
+La ficha debe leerse con cautela: el modelo hereda la arquitectura y el conocimiento de Qwen3-8B, pero la abliteración degrada alineamiento y seguridad. Los datos de benchmarks propios del autor no están incluidos en la información disponible; solo se mencionan registros de evaluación internos sin cifras públicas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen3-8B; detalles internos de capas no disponibles) |
-| Parametros totales | 8.190.735.360 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | safetensors (BF16/FP16 presumiblemente, no confirmado); GGUF Q5_K_M y Q4_K_M incluidos en el repo |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (4 shards, 16,38 GB) y GGUF (Q5_K_M 5,85 GB; Q4_K_M 5,03 GB) |
+| Arquitectura | Transformer denso (derivado de Qwen3-8B) |
+| Parámetros totales | 8.190.735.360 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantización | safetensors (BF16/FP16 original), GGUF Q8_0, Q5_K_M, Q4_K_M |
+| Idiomas soportados | Inglés (`en` según model card y tags) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (4 shards), GGUF (3 variantes) |
 
 ## Arquitectura y entrenamiento
 
-THOX no entrena el modelo: parte de los pesos de Qwen/Qwen3-8B y aplica una ablacion direccional mediante la herramienta Heretic, que combina la eliminacion de direcciones en el espacio de activaciones con un optimizador de parametros TPE (Tree-structured Parzen Estimator). El objetivo del optimizador es doble: minimizar la tasa de rechazos del modelo y, simultaneamente, minimizar la divergencia KL respecto a los pesos originales, de modo que el comportamiento general se mantenga lo mas cerca posible del modelo base. La configuracion exacta del run se publica en el repositorio como `heretic_config.toml`, y la version de Heretic esta fijada en la seccion de procedencia de la model card.
+El modelo no se ha entrenado desde cero: parte de los pesos de Qwen/Qwen3-8B, un transformer denso de 8B parámetros, y aplica sobre ellos una edición de pesos mediante Heretic, herramienta de abliteración que identifica y sustrae la dirección de rechazo en el espacio de activaciones. El repositorio incluye `heretic_config.toml` con la configuración exacta del proceso, lo que permite reproducibilidad. No hay datos públicos sobre número de tokens de entrenamiento, composición del dataset ni etapas de RLHF/DPO propias: todo el conocimiento proviene del modelo base.
 
-Los pesos resultantes son, por tanto, pesos de Qwen3-8B modificados, no identicos a los originales. El repositorio incluye los ficheros de evaluacion (`results.json`, `eval_log.txt`, `capability_log.txt`) y un manifiesto de hashes SHA-256 (`hashes.json`) que permite verificar la integridad de cada shard y de cada GGUF. Las conversiones GGUF se generaron con llama.cpp (commit `dde879bc4f954b809892fd0d660515f42536394a`) el 2026-11-01, con el registro de conversion en `build/conversion/results.json`. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO, ya que THOX no entrena el modelo y hereda las caracteristicas de Qwen3-8B.
+La innovación técnica destacable no es arquitectónica sino metodológica: la publicación incluye hashes verificables de cada shard safetensors (16.381.516.776 bytes en total), los registros de conversión a GGUF (`build/conversion/results.json`) con el commit exacto de llama.cpp (`dde879bc4f954b809892fd0d660515f42536394a`) y las puertas de validación por cuantización (`run-q8-20261102/host_gate.json`). Esto convierte al modelo en un caso de estudio de cadena de custodia en modelos abliterados.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con el estilo y las capacidades del modelo base Qwen3-8B.
-- Razonamiento y respuesta a preguntas de caracter general, heredadas de Qwen3-8B.
-- Generacion de codigo y matematicas, en la medida en que lo soporte el modelo base (no se aportan datos especificos de este build).
-- Modo de rechazo minimo ("minimal-refusal"): reduce la probabilidad de que el modelo decline peticiones que el Qwen3-8B original rechazaria.
-- Compatible con endpoints (tag `endpoints_compatible` en Hugging Face), lo que sugiere integracion con APIs tipo OpenAI en plataformas de despliegue.
-- Despliegue local en portatiles gracias a las cuantizaciones GGUF Q4_K_M y Q5_K_M.
-- Soporte de tool calling / function calling: no confirmado en la informacion disponible para este build.
-- Capacidades multimodales (vision, audio): no disponibles; el pipeline es text-generation.
-- Capacidades multilingues: limitadas al ingles segun la model card.
+- Generación de texto conversacional en inglés, heredada de Qwen3-8B.
+- Razonamiento y matemáticas de nivel 8B (capacidad del modelo base, no medida en esta build).
+- Generación de código (capacidad del modelo base).
+- Respuestas con rechazo mínimo: el modelo evita declinar peticiones que el base rechazaría, por diseño.
+- Compatibilidad con endpoints (`endpoints_compatible` en tags) y despliegue local vía Ollama y llama.cpp.
+- Soporte de cuantizaciones GGUF listas para usar en hardware de consumo.
+- Capacidades multilingües limitadas: la model card declara solo inglés.
+- No se declara soporte explícito de tool calling, function calling, agentes o modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en portatil: con el GGUF Q4_K_M (5,03 GB) el modelo puede ejecutarse en una maquina de consumo con llama.cpp u Ollama, ofreciendo un chatbot privado sin depender de la nube.
-- Generacion de texto creativo sin filtros editoriales: el build abliterado reduce los rechazos en tareas de ficcion, guiones o narrativa con contenido sensible, lo que lo hace adecuado para escritores que necesitan control total sobre el tono.
-- Prototipado rapido de aplicaciones de texto: al estar en formato safetensors y ser compatible con Transformers, se puede cargar con `AutoModelForCausalLM` y servir mediante vLLM o TGI en un endpoint interno para pruebas de concepto.
-- Investigacion sobre alineacion y seguridad: util como caso de estudio de ablacion direccional y de como afecta la eliminacion de rechazos a las capacidades y sesgos del modelo original, comparando contra Qwen3-8B.
-- Fine-tuning posterior sobre dominio especifico: al ser Apache 2.0 y pesos densos de 8B, sirve como base para ajuste supervisado (SFT) o LoRA en tareas verticales (soporte, documentacion tecnica) en ingles.
-- Evaluacion comparativa de tecnicas de abliteracion: permite medir empíricamente la perdida de capacidad y el cambio en la tasa de rechazos frente a otras herramientas similares, usando los logs incluidos en el repo.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse totalmente en local con llama.cpp, los datos no salen del dispositivo, lo que encaja en escenarios con datos sensibles que no pueden enviarse a APIs externas.
+- Investigación sobre alineamiento y abliteración: el repositorio permite reproducir el proceso con `heretic_config.toml` y comparar comportamiento frente a Qwen3-8B original, útil para estudiar cómo la edición de pesos afecta a la tasa de rechazo.
+- Despliegue local en portátil: la variante Q4_K_M (5.027.783.680 bytes) cabe en GPUs de consumo con 8 GB de VRAM y permite ejecutar el modelo con llama.cpp u Ollama sin conexión.
+- Generación creativa sin filtros editoriales: escritura de ficción, guiones o contenido narrativo donde el modelo base aplicaría rechazos, con la advertencia de revisión humana obligatoria.
+- Prototipado rápido de asistentes conversacionales en inglés: el modelo responde en un único idioma y con contexto limitado, adecuado para demos locales antes de escalar a un modelo mayor.
+- Evaluación comparativa de cuantizaciones: al publicar Q4_K_M, Q5_K_M y Q8_0 con hashes, sirve para medir degradación de calidad por cuantización en un mismo checkpoint.
+- Docencia y formación técnica: ejemplo práctico de cadena de custodia de pesos, hashes y registros de conversión en un repositorio público.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye ficheros de evaluacion (`results.json`, `eval_log.txt`, `capability_log.txt`) generados por THOX, pero sus valores numericos no se detallan en la informacion proporcionada, por lo que no se reproducen cifras. Para estimar el rendimiento cabe remitirse a los benchmarks publicados del modelo base Qwen/Qwen3-8B.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio menciona `eval_log.txt`, `capability_log.txt` y `results.json`, y una "puerta" de validación por cuantización (`host_gate.json`), pero las cifras concretas no se incluyen en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16/FP16: aproximadamente 16 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda 24 GB o mas para contexto largo.
-- Cuantizacion Q5_K_M (5,85 GB): cabe en GPUs de consumo con 8 GB de VRAM (RTX 3060 Ti, RTX 4060 Ti) y en Apple Silicon con 16 GB unificados.
-- Cuantizacion Q4_K_M (5,03 GB): cabe en GPUs de 6-8 GB (RTX 3060, RTX 4060) y en portatiles con 16 GB de RAM mediante CPU.
-- GPU recomendadas para produccion: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para servicio concurrente con contexto amplio.
-- Despliegue: Transformers (safetensors), llama.cpp (GGUF), Ollama (aunque la model card indica que aun no hay listado en Ollama), y potencialmente vLLM o TGI para el formato safetensors.
-- Latencia y throughput: no disponibles en la informacion proporcionada; dependen del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia: ~16 GB en BF16/FP16 (safetensors original), ~8,7 GB en Q8_0, ~5,9 GB en Q5_K_M, ~5,0 GB en Q4_K_M.
+- GPU recomendadas: A100 40 GB o H100 para safetensors en precisión completa; RTX 4090 (24 GB) para Q8_0 con holgura; RTX 3060/4060 (8-12 GB) para Q4_K_M.
+- Cabe en GPU de consumo: sí, en Q4_K_M y Q5_K_M con 6-8 GB de VRAM; Q8_0 requiere 10-12 GB.
+- Opciones de despliegue: llama.cpp (versión con commit `dde879bc4f954b809892fd0d660515f42536394a` o posterior), Ollama (tag `ollama`), Transformers con `subfolder="model"`, y servidores compatibles con endpoints.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| ThoxOpen-8B-Heretic | 8,19B | no disponible | Apache 2.0 | safetensors, GGUF | Build abliterado de Qwen3-8B; solo ingles |
-| Qwen/Qwen3-8B (base) | 8,19B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo original; rechazos estandar; multilingue |
-| Otros builds abliterados de Qwen3-8B | ~8B | no disponible | Apache 2.0 (heredada) | safetensors, GGUF | Alternativas de la comunidad con tecnicas similares; no se dispone de datos concretos en la informacion proporcionada |
+| ThoxOpen-8B-Heretic | 8,19B | No disponible | Apache 2.0 | en | Abliterado, GGUF incluidos |
+| Qwen/Qwen3-8B (base) | ~8B | No disponible | Apache 2.0 | multilingüe | Modelo original con alineamiento estándar |
+| Otras builds abliteradas de Qwen3-8B | ~8B | No disponible | Apache 2.0 | en | No se dispone de datos comparativos verificados |
 
-La comparacion cuantitativa de rendimiento entre estos modelos no esta disponible: no se aportan cifras de benchmarks del build de THOX ni de las alternativas abliteradas.
+La comparación cuantitativa con alternativas no está disponible: no se han publicado cifras de benchmarks en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido modificado para reducir rechazos; puede generar contenido que el Qwen3-8B original declinaria, incluyendo material sensible, ofensivo o potencialmente danino. No hay garantia de seguridad de contenido.
-- Riesgo de alucinacion inherente a los modelos de 8B, agravado por la falta de benchmarks propios que confirmen que la ablacion no ha degradado capacidades factuales.
-- La ablacion direccional puede degradar sutilmente el rendimiento en tareas de razonamiento o instruccion; THOX publica logs de evaluacion, pero sus cifras no se detallan en la informacion disponible.
-- Idioma limitado al ingles segun la model card; no se garantiza un comportamiento correcto en castellano u otros idiomas.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad legal y etica del contenido generado y debe cumplir la legislacion aplicable en su jurisdiccion.
-- El modelo no ha sido entrenado por THOX; los sesgos del Qwen3-8B original persisten y pueden haberse visto alterados por la ablacion de forma no documentada.
-- No hay listado en Ollama todavia, lo que limita el despliegue mas sencillo para usuarios no tecnicos.
-- La model card incluye notas del fundador y de la "Chief Agentic Officer" con caracter promocional; no constituyen garantias tecnicas.
+- La abliteración degrada el alineamiento de seguridad: el modelo puede producir contenido que el Qwen3-8B original rechazaría. No es apto para aplicaciones orientadas al usuario sin filtros adicionales.
+- Riesgo elevado de alucinación, especialmente en dominios técnicos y factuales, al no haberse reentrenado ni evaluado con benchmarks publicados.
+- Solo soporta inglés según la model card; el rendimiento en castellano no está validado.
+- Contexto máximo no documentado en la información disponible; no asumir la ventana de Qwen3-8B sin verificación.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre idoneidad ni sobre cumplimiento normativo en sectores regulados.
+- La model card incluye notas editoriales del fundador y de la CAO que no constituyen especificaciones técnicas; deben tratarse como material promocional.
+- No se declara soporte de tool calling ni de agentes; verificar antes de integrar en pipelines automatizados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxOpen-8B-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Herramienta Heretic: no disponible en la informacion proporcionada
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com
-- Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada
+- No se han encontrado en la información proporcionada enlaces a papers, blogs o demos adicionales.

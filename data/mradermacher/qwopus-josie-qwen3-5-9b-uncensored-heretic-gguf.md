@@ -2,88 +2,92 @@
 
 ## Resumen
 
-Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic-GGUF es una distribucion de pesos cuantizados en formato GGUF generada por mradermacher a partir del modelo base spale04/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic. Se trata, por tanto, de un derivado de terceros: el repositorio no introduce un modelo nuevo, sino una conversion a cuantizaciones de llama.cpp de un modelo ya existente. El nombre sugiere un merge o fine-tuning sobre una base Qwen3.5 de aproximadamente 9.000 millones de parametros, orientado a eliminar los filtros de rechazo (uncensored) y con una variante de "abliteration" o "heretic" destinada a reducir los comportamientos de negativa.
+Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic es un modelo de lenguaje de 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) derivado de la familia Qwen3.5 y distribuido en formato GGUF por el usuario mradermacher. Se trata de un merge de tipo DELLA que combina el modelo base spale04/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic con técnicas de "abliteration" (eliminación de rechazos) y "heretic" (decensurado), orientadas a reducir las negativas del modelo ante peticiones que un modelo alineado estándar rechazaría. El resultado es un modelo conversacional sin censura, con capacidades declaradas de razonamiento y visión (multimodal, según el tag `vision` y los ficheros `mmproj` incluidos).
 
-La relevancia de esta ficha es limitada y debe enmarcarse con cautela: el repositorio no incluye model card descriptiva, no declara licencia, no especifica idiomas y no publica resultados de evaluacion. La informacion disponible se reduce a la lista de cuantizaciones generadas y a la referencia al modelo de origen. Cualquier uso en produccion exige verificar de forma independiente la licencia del modelo base y del modelo original, ya que la cadena de derivacion no documenta permisos.
+El modelo se publica bajo licencia Apache 2.0 y está pensado para su uso con llama.cpp y herramientas compatibles con GGUF (Ollama, LM Studio, etc.). Su relevancia actual radica en que ofrece una alternativa de ~9B parámetros que cabe en GPUs de consumo con cuantizaciones de 4 bits (en torno a 5-6 GB) y que, al estar decensurado, permite experimentación con casos de uso que los modelos alineados bloquean, a costa de asumir riesgos de contenido dañino o sesgado.
 
-Por la nomenclatura, el modelo encaja en la categoria de modelos de ~9B parametros con contexto potencialmente largo (familia Qwen), pero todos los datos tecnicos concretos deben considerarse no verificados hasta consultar el repositorio de origen.
+La información disponible es limitada: la model card del repositorio GGUF es fundamentalmente una ficha de cuantizaciones generada automáticamente, sin datos sobre arquitectura interna, composición del dataset de entrenamiento, benchmarks ni idiomas soportados más allá del inglés declarado. Esta ficha refleja únicamente los datos verificables en la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer decoder-only de la familia Qwen3.5, no confirmado) |
-| Parametros totales | no disponible (el nombre indica 9B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.5; detalles internos no disponibles) |
+| Parámetros totales | 9.197.093.888 (≈9,2B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con llama.cpp) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; además mmproj-Q8_0 y mmproj-f16 para la parte multimodal |
+| Idiomas soportados | inglés (declarado en la model card); resto no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repositorio de cuantizaciones estáticas); también existe versión i1 con cuantizaciones ponderadas/imatrix en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base. El identificador del modelo de origen (Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic) sugiere una base Qwen3.5 de aproximadamente 9B parametros, sobre la que se habrian aplicado procesos de merge y de eliminacion de alineamiento de seguridad (uncensoring / abliteration, etiquetado como "heretic"). No hay datos publicados sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento.
+El modelo es un merge de tipo DELLA (técnica de fusión de modelos que opera sobre las diferencias de pesos entre modelos) a partir del modelo base spale04/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic, que a su vez deriva de la familia Qwen3.5. La model card no proporciona detalles sobre el número de capas, dimensión oculta, mecanismo de atención ni configuración exacta del transformer. Tampoco se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación; de hecho, el propósito declarado del modelo es precisamente el opuesto: eliminar o atenuar los rechazos aprendidos durante el alineamiento mediante técnicas de abliteration y decensurado ("heretic").
 
-El repositorio de mradermacher unicamente documenta el proceso de cuantizacion: metadatos de version de quantize (quantize_version 2), indicador de tensor de salida cuantizado (output_tensor_quantised 1) y tipo de conversion hf. No se incluye informacion sobre decodificacion especulativa, atencion lineal ni otras innovaciones tecnicas.
+La innovación técnica más destacable, según los tags y los ficheros disponibles, es la inclusión de capacidad multimodal (visión) mediante ficheros `mmproj` en Q8_0 y f16, que actúan como suplemento multi-modal para el modelo en llama.cpp. También se declara capacidad de razonamiento (`reasoning`), aunque no se detalla si emplea un modo de pensamiento explícito ni cómo se activa. No hay información sobre decodificación especulativa, atención lineal ni otras optimizaciones de inferencia.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, asumiendo las capacidades heredadas del modelo base Qwen3.5-9B, si bien no estan verificadas en este repositorio.
-- Razonamiento y generacion de codigo: no confirmado por el autor; depende del modelo de origen.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el autor no declara idiomas.
-- Modo "uncensored"/"heretic": el modelo esta explicitamente disenado para reducir rechazos y filtros de seguridad, lo que constituye su caracteristica diferencial declarada en el nombre.
-- Capacidades de vision o audio: no disponibles.
+- Generación de texto conversacional multi-turno, con formato de chat (tag `conversational`).
+- Razonamiento declarado mediante el tag `reasoning`; no se detalla el mecanismo.
+- Capacidad de visión (multimodal) mediante los ficheros `mmproj` incluidos en el repositorio.
+- Modelo decensurado/abliterated: reduce los rechazos ante peticiones que un modelo alineado estándar bloquearía.
+- Compatible con llama.cpp y con endpoints compatibles (tag `endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: solo se declara inglés; el resto no disponible.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar el efecto de tecnicas de abliteration/uncensoring sobre el comportamiento de rechazo en modelos de ~9B, comparando respuestas frente al modelo base original.
-- Evaluacion de robustez de filtros: util para equipos de red teaming que necesitan un modelo con menor tasa de negativas para probar clasificadores de contenido y guardrails propios.
-- Experimentacion local con llama.cpp: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en hardware de consumo, lo que facilita prototipado offline sin dependencia de APIs.
-- Generacion de texto creativo sin restricciones tematicas: escritura de ficcion o guiones donde el modelo base rechazaria ciertos temas; requiere revision humana por la ausencia de filtros.
-- Benchmarking de cuantizaciones: el repositorio ofrece un espectro amplio (de Q2_K a f16) que permite medir la degradacion de calidad frente al tamano en un mismo modelo, util para calibrar pipelines de despliegue.
-- Pruebas de pipelines de inferencia: validacion de integraciones con llama.cpp, Ollama o servidores compatibles OpenAI antes de migrar a modelos con licencia clara.
+- Experimentación en investigación sobre alineamiento y seguridad: el modelo permite estudiar cómo varía el comportamiento de un Qwen3.5 de ~9B tras aplicar abliteration y decensurado, comparándolo con el modelo base alineado en tareas de rechazo y cumplimiento.
+- Generación creativa sin restricciones temáticas: escritura de ficción, guiones o narrativa con temáticas adultas o controvertidas que los modelos alineados suelen rechazar, ejecutada localmente con llama.cpp en una GPU de consumo.
+- Análisis de imágenes en local: gracias a los ficheros `mmproj`, se puede usar el modelo para describir o razonar sobre imágenes en un pipeline de llama.cpp, con la ventaja de que los datos no salen del equipo.
+- Prototipado de asistentes conversacionales privados: despliegue en Ollama o LM Studio para conversaciones multi-turno en inglés, con cuantización Q4_K_M (≈5,9 GB) que cabe en GPUs de 8 GB.
+- Evaluación de robustez y red-teaming: uso del modelo como sujeto de pruebas para medir la eficacia de filtros de contenido o clasificadores de seguridad en producción, al disponer de una variante que tiende a producir contenido que otros modelos evitan.
+- Pruebas de concepto de pipelines multimodales con GGUF: integración del modelo y su mmproj en aplicaciones de escritorio o servidores ligeros donde no se dispone de infraestructura para modelos multimodales de mayor tamaño.
+- Fine-tuning o destilación sobre una base decensurada: uso como punto de partida para ajustes específicos de dominio en los que se quiera evitar que el modelo base imponga rechazos no deseados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~9B en GGUF: Q4_K_M en torno a 5-6 GB, Q5_K_M en torno a 6-7 GB, Q8_0 en torno a 9-10 GB y f16 en torno a 18 GB, sin contar overhead de contexto KV cache.
-- GPU recomendadas: no disponibles por parte del autor. Para cuantizaciones Q4/Q5 bastaria una GPU consumer con 8-12 GB (RTX 3060 12 GB, RTX 4070); para Q8_0 se recomienda 12-16 GB (RTX 4080, RTX 4090); para f16, A100 40 GB, H100 o RTX 4090 24 GB con contexto moderado.
-- Cabe en GPU consumer: probablemente si en cuantizaciones Q4_K_M e IQ4_XS, sujeto a verificacion empirica.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de OpenAI basados en llama.cpp (llama-server). vLLM y TGI no consumen GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ≈ 4,0 GB; Q3_K_S ≈ 4,5 GB; Q3_K_M ≈ 4,8 GB; Q3_K_L ≈ 5,1 GB; IQ4_XS ≈ 5,5 GB; Q4_K_S ≈ 5,6 GB; Q4_K_M ≈ 5,9 GB; Q5_K_S ≈ 6,6 GB; Q5_K_M ≈ 6,7 GB; Q6_K ≈ 7,7 GB; Q8_0 ≈ 9,9 GB; f16 ≈ 18,5 GB. Para visión hay que sumar el mmproj: ≈0,7 GB (Q8_0) o ≈1,0 GB (f16).
+- GPU recomendadas: para Q4_K_M, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4070 de 12 GB son suficientes; para Q8_0 o f16 se recomienda RTX 4090 de 24 GB, A100 o H100. Con cuantizaciones Q3 o Q2 podría caber en GPUs de 6-8 GB, con pérdida de calidad.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más usando Q4_K_M o inferiores; en 6 GB solo con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con servidores de endpoints tipo OpenAI. No se indica soporte de vLLM ni TGI para este formato.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic-GGUF (este) | ~9B (segun nombre) | no disponible | no disponible | GGUF | Derivado uncensored de terceros, sin model card |
-| spale04/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic | ~9B (segun nombre) | no disponible | no disponible | safetensors (presumible) | Modelo de origen del que se generan las cuantizaciones |
-| Qwen3.5-9B (base presumible) | ~9B | no disponible | no disponible en esta ficha | safetensors, GGUF | Modelo original de la familia; licencia y contexto deben consultarse en su repositorio oficial |
+| Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic (este) | ≈9,2B | no disponible | Apache 2.0 | GGUF | Merge DELLA decensurado con visión |
+| Qwen3.5 9B (modelo base de la familia) | ≈9B (según familia) | no disponible | no disponible en esta información | safetensors/GGUF | Modelo alineado estándar; rechaza contenido sensible |
+| Otros GGUF decensurados de ~8-9B (p. ej. variantes abliterated de Llama 3.1 8B) | ≈8B | 128K en Llama 3.1 | Llama 3.1 Community License | GGUF | Alternativa consolidada, sin visión declarada en la información disponible |
 
-No se dispone de datos suficientes para comparar rendimiento, ya que no hay benchmarks publicados para este derivado.
+La comparación cuantitativa de rendimiento no está disponible al no haberse publicado benchmarks para este modelo.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay documentacion sobre entrenamiento, datos, evaluacion ni limitaciones declaradas por el autor.
-- Licencia no especificada: no es posible determinar si el uso comercial esta permitido. La cadena de derivacion (modelo base Qwen, merge, uncensoring y cuantizacion) puede imponer obligaciones adicionales que deben verificarse en cada eslabon.
-- Modelo explicitamente uncensored: reduce o elimina los mecanismos de rechazo, lo que incrementa el riesgo de generar contenido danino, ilegal o difamatorio. No es apto para aplicaciones de cara al publico sin guardrails externos.
-- Riesgo elevado de alucinacion: no hay evaluaciones de fidelidad ni de calibracion; los procesos de abliteration pueden degradar capacidades de razonamiento e instruccion.
-- Idiomas no declarados: no se puede asumir un rendimiento multilingue correcto, especialmente en castellano.
-- Contexto no documentado: planificar el despliegue sin asumir una ventana concreta hasta confirmarla en el modelo de origen.
-- Sin descargas ni likes: repositorio sin validacion comunitaria; no hay evidencia de uso en produccion ni informes de calidad.
-- Fecha de creacion futura en los metadatos (2026-11-18): inconsistencia que sugiere datos de repositorio no fiables o generados automaticamente; tratar la metadata con escepticismo.
-- Cuantizaciones de baja precision (Q2_K) con degradacion notable esperable en un modelo de 9B; no recomendadas para tareas de razonamiento.
+- Modelo decensurado: reduce deliberadamente los rechazos, por lo que puede generar contenido ofensivo, peligroso o ilegal; no es apto para aplicaciones de cara al público sin filtros adicionales.
+- Riesgo elevado de alucinación y de respuestas inseguras al haberse atenuado el alineamiento; no se han publicado evaluaciones de seguridad.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está verificado y probablemente sea inferior.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre la legalidad del contenido generado en jurisdicciones concretas.
+- Es un merge de tercera parte sobre un modelo base no oficial de Qwen3.5; la procedencia y calidad de los datos de entrenamiento del modelo base no están documentadas.
+- El repositorio ocupa 85,1 GB e incluye múltiples cuantizaciones; conviene descargar solo el fichero necesario.
+- Las capacidades multimodales dependen de los ficheros `mmproj` y del soporte de llama.cpp; no se garantiza su funcionamiento en todos los runtimes.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic-GGUF
-- Modelo de origen: https://huggingface.co/spale04/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp (herramienta de cuantizacion e inferencia GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic-GGUF
+- Modelo base: https://huggingface.co/spale04/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwopus-JOSIE-Qwen3.5-9B-UNCENSORED-heretic-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

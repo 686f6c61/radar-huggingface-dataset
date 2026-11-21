@@ -2,84 +2,87 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-heretic-ja es una variante del modelo Ornith-1.5-35B-A3B, un modelo de lenguaje de arquitectura mixta (MoE) desarrollado por el equipo Ornith. Esta version concreta, cuantizada por mradermacher, se ha sometido a un proceso de "abliteracion" para eliminar los rechazos y restricciones de seguridad tipicos de los modelos alineados, dando lugar a una version "uncensored" o "heretica". El modelo base fue entrenado con un enfoque en razonamiento, codigo y capacidades de agente.
+Ornith-1.5-35B-A3B-heretic-ja-GGUF es una cuantizacion estatica en formato GGUF del modelo OS-Software/Ornith-1.5-35B-A3B-heretic-ja, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad. El modelo base es una variante "heretic" (abliterated/decensored) del Ornith 1.5 de ornith-ai, un modelo de 34.660.610.688 parametros totales con nomenclatura A3B que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parametros activos por token, aunque este dato no esta confirmado en la informacion disponible.
 
-Esta ficha se centra en el archivo GGUF, que permite ejecutar el modelo en entornos locales con llama.cpp, Ollama u otros motores compatibles. El modelo cuenta con 34.660 millones de parametros totales pero solo activa alrededor de 3 mil millones por token gracias a su arquitectura MoE, lo que lo hace sorprendentemente eficiente para su tamano. Esta version se publico el 23 de agosto de 2026 y no ha recibido descargas ni "me gusta" en el momento de redactar esta ficha, lo que sugiere que es un lanzamiento reciente o poco difundido.
+El interes de esta publicacion es doble: por un lado, ofrece el modelo en una bateria amplia de cuantizaciones GGUF (desde Q2_K de 13 GB hasta Q8_0 de 37 GB) para ejecucion local con llama.cpp y derivados; por otro, la variante "heretic" elimina los mecanismos de rechazo del modelo original, lo que lo hace adecuado para experimentacion con contenido sin filtros, a costa de asumir riesgos de seguridad y calidad considerables. La licencia declarada es MIT, lo que facilita su uso comercial, si bien el modelo base enlaza a una licencia propia del repositorio de ornith-ai.
+
+La ficha se centra en la cuantizacion GGUF y en lo que se puede verificar a partir de los metadatos y la model card; los detalles de arquitectura, entrenamiento y benchmarks del modelo base no estan documentados en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) |
-| Parametros totales | 34.660.610.688 (34,66 B) |
-| Parametros activos | ~3 B (aproximadamente) |
-| Longitud de contexto | no disponible en la informacion del modelo, pero el modelo base Ornith-1.5-35B-A3B soporta hasta 256k segun fuentes externas |
-| Tipos de cuantizacion | Q2_K, Q4_K_S, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | en (ingles) |
-| Licencia | MIT |
-| Formato de pesos | GGUF (cuantizacion de mradermacher) |
+| Arquitectura | no disponible (nomenclatura A3B sugiere MoE con ~3B activos; no confirmado) |
+| Parametros totales | 34.660.610.688 |
+| Parametros activos | no disponible (la designacion A3B apunta a ~3B, sin confirmar) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ademas mmproj-Q8_0 y mmproj-f16 para multimodal |
+| Idiomas soportados | en (segun metadatos; el sufijo "ja" del nombre no esta explicado en la model card) |
+| Licencia | MIT (con enlace a la licencia del modelo base en ornith-ai/Ornith-1.5-35B-A3B) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors/transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-35B-A3B es un modelo de lenguaje de arquitectura Mixture of Experts con 34,66 mil millones de parametros totales y solo 3 mil millones de parametros activos por token. Esta arquitectura permite un rendimiento superior al de modelos densos de tamano similar, como Gemma 4-31B o Muse Glimmer-30B, con un coste computacional mucho menor. El modelo fue entrenado con un enfasis en codigo, razonamiento y capacidades de agente.
+La informacion disponible no detalla la arquitectura interna del modelo base. El identificador "35B-A3B" sigue la convencion habitual de los modelos de mezcla de expertos, donde el primer numero indica los parametros totales y el segundo los parametros activos por token; el recuento real de safetensors (34.660.610.688) es coherente con esa lectura, pero no se confirma el numero de expertos, la estrategia de enrutamiento ni la dimension del estado oculto. Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-La variante "heretic-ja" ha sido sometida a un proceso de "abliteracion" (abliteration) que elimina los mecanismos de rechazo del modelo, eliminando las barreras de seguridad que impiden generar contenido sensible o prohibido. Ademas, incorpora un ajuste fino con LoRA especifico (ara-lora) para mejorar sus capacidades. El resultado es un modelo que no rechaza peticiones y que puede generar contenido que otros modelos se negarian a producir. La cuantizacion GGUF realizada por mradermacher permite ejecutar el modelo en una variedad de hardware, desde GPU de consumo hasta servidores profesionales.
+El elemento diferencial de esta variante es el proceso "heretic", que en la practica de la comunidad combina tecnicas de abliteration (abliterated) y de adaptadores LoRA de rechazo (ara-lora) para eliminar la direccion de rechazo del espacio de activaciones del modelo. El resultado es un modelo que responde a peticiones que el original declinaria. La cuantizacion la realiza mradermacher con su pipeline habitual (convert_type hf, quantize_version 2, output_tensor_quantised 1) y ofrece una version alternativa con quants ponderados por imatrix en el repositorio Ornith-1.5-35B-A3B-heretic-ja-i1-GGUF.
 
 ## Capacidades
 
-- Generacion de texto de alta calidad, con especial habilidad en tareas de codigo, razonamiento y logica.
-- Razonamiento complejo y resolucion de problemas en varios pasos (multi-step reasoning).
-- Capacidad de agente: puede planificar y ejecutar acciones secuenciales, integrarse con herramientas y APIs.
-- Soporte de tool calling / function calling, lo que permite integrarse en pipelines de automatizacion.
-- Capacidad multimodal: el repositorio incluye archivos mmproj para procesamiento de imagenes, aunque no se especifica el detalle de esta capacidad.
-- Generacion de texto sin censura, gracias al proceso de abliteracion.
-- Soporte de contexto largo, con hasta 256k tokens de contexto (segun fuentes externas).
+- Generacion de texto conversacional en ingles, con el estilo de respuesta de un modelo de gran tamano.
+- Respuesta sin filtros de rechazo gracias a la variante heretic/abliterated, orientada a escenarios de investigacion sobre alineacion y seguridad.
+- Soporte multimodal declarado mediante los ficheros mmproj (Q8_0 y f16), lo que implica capacidad de procesar imagenes junto a texto; no se detalla el alcance exacto.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere integracion con APIs compatibles con OpenAI.
+- Ejecucion local en CPU y GPU mediante llama.cpp y ecosistema GGUF.
+- Capacidades de tool calling, agentes y razonamiento multi-paso: no documentadas en la informacion disponible.
+- Capacidades multilingues: solo se declara ingles; el sufijo "ja" del nombre no se explica en la model card.
 
 ## Casos de uso
 
-- **Asistente de codigo en local**: el modelo puede integrarse en entornos de desarrollo como VSCode o Neovim para proporcionar autocompletado, sugerencias y generacion de codigo, gracias a su eficiencia (solo 3 B parametros activos) que permite ejecutarse en GPU de consumo con cuantizacion Q4.
-- **Agente autonomo de desarrollo**: dado su soporte de tool calling y razonamiento multi-paso, se puede usar para crear agentes que busquen en la web, ejecuten comandos y modifiquen codigo automaticamente, todo sin censura.
-- **Generacion de contenido creativo sin restricciones**: el modelo es adecuado para escribir ficcion, guiones o contenido que explore temas tabu o controvertidos sin los limites habituales de los modelos alineados.
-- **Investigacion academica en IA**: sirve para estudiar el impacto de la abliteracion en el comportamiento de los modelos, comparando su rendimiento con la version original y con otros modelos alineados.
-- **Sistemas de chat y roleplay**: su capacidad de mantener conversaciones largas (hasta 256k tokens) y su naturaleza sin censura lo hacen ideal para aplicaciones de roleplay y chat inmersivo.
-- **Automatizacion de tareas de procesamiento de texto**: puede realizar tareas de resumen, traduccion, extraccion de informacion y clasificacion de texto con un rendimiento notable, gracias a su capacidad de razonamiento.
+- Investigacion sobre alineacion y seguridad: comparar las respuestas del modelo heretic con las del Ornith original permite estudiar como la abliteration altera la distribucion de rechazos y la calidad en tareas sensibles.
+- Despliegue local en estaciones de trabajo: con Q4_K_M (21,3 GB) el modelo cabe en una GPU de 24 GB o en una configuracion CPU+GPU, lo que permite prototipar sin depender de la nube.
+- Generacion creativa sin restricciones: escritura de ficcion con tematicas adultas o controvertidas, donde los filtros del modelo base resultarian limitantes, asumiendo la responsabilidad editorial del contenido.
+- Experimentacion con cuantizaciones: el repositorio permite comparar la degradacion de calidad entre Q2_K, IQ4_XS, Q4_K_M y Q8_0 sobre un mismo modelo, util para calibrar el compromiso tamano/calidad en pipelines propios.
+- Procesamiento multimodal ligero: cargando el mmproj junto al GGUF se pueden explorar tareas de descripcion de imagenes o extraccion de informacion visual en local, sin confirmar el nivel de calidad.
+- Evaluacion de robustez de filtros: usar el modelo como generador adversarial para probar clasificadores de contenido y sistemas de moderacion en produccion.
+- Base para fine-tuning posterior: al ser un GGUF derivado de un modelo MIT, sirve como punto de partida para experimentos de destilacion o adaptacion con LoRA en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta cuantizacion especifica. Sin embargo, el modelo base Ornith-1.5-35B-A3B supera a Qwen 3.6-35B en todos los benchmarks de codigo y agente, y supera a modelos densos como Gemma 4-31B y Muse Glimmer-30B, segun la informacion publica del modelo base. No se proporcionan cifras concretas en la documentacion revisada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos, y tampoco se aportan datos del modelo base.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: la cuantizacion Q4_K_S ocupa aproximadamente 20 GB, por lo que se recomienda una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A5000). La cuantizacion Q8_0 requiere unos 37 GB, por lo que necesita una GPU profesional como A100 o H100, o el uso de CPU con RAM abundante.
-- **GPU recomendadas**: para una experiencia optima con Q4_K_S, una RTX 4090 o A6000 (48 GB) es suficiente. Para Q8_0, se recomienda A100 (80 GB) o H100.
-- **Uso en GPU de consumo**: si, con cuantizaciones Q2_K (13 GB) o Q4_K_S (20 GB) se puede ejecutar en una RTX 3090/4090, aunque con limitaciones de velocidad.
-- **Opciones de despliegue**: el formato GGUF es compatible con llama.cpp, Ollama, LM Studio, text-generation-webui y otros motores de inferencia local. Para despliegue en servidor, se puede usar vLLM con la version original (safetensors).
-- **Latencia y throughput**: no disponible. Se espera que la cuantizacion Q4_K_S ofrezca un rendimiento entre 20 y 40 tokens por segundo en una GPU moderna de gama alta, gracias a la arquitectura MoE.
+- VRAM estimada segun cuantizacion: Q2_K ~13 GB, Q3_K_S ~15,3 GB, Q3_K_M ~16,9 GB, Q3_K_L ~18,2 GB, IQ4_XS ~19 GB, Q4_K_S ~20 GB, Q4_K_M ~21,3 GB, Q5_K_S ~24,1 GB, Q5_K_M ~24,8 GB, Q6_K ~28,6 GB, Q8_0 ~37 GB. A estas cifras hay que sumar el espacio de contexto y, si se usa, el mmproj (0,7-1 GB).
+- GPU recomendadas: RTX 3090/4090 (24 GB) para Q4_K_M o Q5_K_S con contexto moderado; A100 40 GB o H100 para Q6_K y Q8_0; RTX 4060 Ti 16 GB o RTX 4080 para Q3_K_M e inferiores.
+- Cabe en GPU de consumo: si, desde Q2_K en tarjetas de 16 GB y Q4_K_M en tarjetas de 24 GB. Las cuantizaciones Q6_K y Q8_0 requieren GPU profesional o configuraciones multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF; el tag endpoints_compatible sugiere tambien servidores de inferencia con API compatible con OpenAI.
+- Latencia y throughput: no disponibles. Como referencia estructural, un MoE con ~3B activos suele ser notablemente mas rapido que un denso de 35B, pero no hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Puntos fuertes |
-|--------|------------|----------|----------|----------------|
-| Ornith-1.5-35B-A3B-heretic-ja (este) | 34,66 B totales, 3 B activos | 256k | MIT | Sin censura, codigo y agente, eficiencia MoE |
-| Qwen 3.6-35B | 35 B | no disponible | Apache 2.0 | Modelo denso, buen rendimiento general, pero inferior en codigo y agente |
-| Gemma 4-31B | 31 B | no disponible | Gemma license | Modelo denso de Google, bueno en razonamiento, pero inferior a Ornith en codigo |
-| Llama 3.3-70B | 70 B | 128k | Llama license | Modelo denso mas grande, mejor rendimiento bruto pero menos eficiente |
+No disponible. La informacion proporcionada no incluye datos de rendimiento del modelo base ni de alternativas comparables, por lo que cualquier comparacion cuantitativa seria especulativa. Como referencia cualitativa, se puede situar frente a otras cuantizaciones GGUF de modelos MoE de tamano similar (por ejemplo, variantes de la familia Qwen MoE) y frente a modelos densos de 30-35B, pero sin cifras verificables de MMLU, HumanEval o GSM8K no es posible establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- **Contenido sin censura**: este modelo no tiene las barreras de seguridad habituales. Puede generar contenido ofensivo, ilegal, peligroso o eticamente cuestionable. El usuario es el unico responsable del uso que haga del modelo.
-- **Alucinaciones**: como todos los modelos de lenguaje, puede inventar informacion, especialmente en temas desconocidos o poco representados en sus datos de entrenamiento. La abliteracion puede aumentar la frecuencia de alucinaciones.
-- **Sesgos**: al ser un modelo entrenado con datos de internet, puede reproducir los sesgos y prejuicios presentes en los datos.
-- **Idioma**: el modelo esta entrenado principalmente en ingles, por lo que su rendimiento en otros idiomas puede ser inferior.
-- **Contexto**: aunque el modelo base soporta hasta 256k tokens, en la practica el rendimiento puede degradarse con contextos muy largos, y la memoria necesaria aumenta considerablemente.
-- **Licencia**: aunque la licencia es MIT, el modelo ha sido modificado para eliminar las restricciones de seguridad. El uso comercial es posible, pero el usuario debe evaluar las implicaciones eticas y legales.
-- **Reproducibilidad**: el proceso de abliteracion no es estandarizado, por lo que el comportamiento del modelo puede variar y no ser totalmente reproducible.
+- La variante heretic elimina deliberadamente los rechazos de seguridad; puede generar contenido danino, ilegal o sexualmente explicito. No es apta para aplicaciones de cara al publico sin moderacion adicional.
+- El proceso de abliteration suele degradar capacidades generales (razonamiento, codigo, instrucciones complejas) respecto al modelo original; no hay evaluaciones publicadas que cuantifiquen esta perdida.
+- Riesgo elevado de alucinacion, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S) y en tareas de conocimiento factual.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado y el sufijo "ja" del nombre no esta documentado.
+- Longitud de contexto desconocida; no se debe asumir una ventana larga sin probarla.
+- Licencia MIT declarada, pero el modelo base enlaza a la licencia del repositorio ornith-ai; conviene revisar ambas antes de un uso comercial.
+- El repositorio ocupa 238,6 GB por la suma de todas las cuantizaciones; descargar solo el fichero necesario.
+- La fecha de creacion (2026-08-23) y el reducido numero de descargas (783) y likes (1) indican poca validacion comunitaria; no hay reportes independientes de calidad.
+- Los ficheros GGUF de gran tamano pueden estar divididos en varias partes; es necesario concatenarlas segun el procedimiento habitual de llama.cpp.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-GGUF)
-- [Modelo base original (OS-Software)](https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja)
-- [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- [Pagina del modelo en ModelScope](https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B)
-- [Repositorio GitHub con informacion del modelo](https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark/blob/main/README.md)
-- [Analisis del modelo para agentes de codigo](https://wavespeed.ai/blog/ai-models/ornith-1-5-35b-a3b-review/)
+- Repositorio GGUF: https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-GGUF
+- Modelo base: https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja
+- Quants con imatrix: https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-i1-GGUF
+- Pagina de resumen del autor: https://hf.tst.eu/model#Ornith-1.5-35B-A3B-heretic-ja-GGUF
+- Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -2,101 +2,91 @@
 
 ## Resumen
 
-FINER-SQL-3B-v2 es un modelo de generacion de texto especializado en text-to-SQL desarrollado por el usuario de Hugging Face thanhdath. Se trata de un ajuste fino del modelo base Qwen2 de 3B parametros (3.085.938.688 parametros totales segun los pesos en safetensors), entrenado mediante GRPO (Group Relative Policy Optimization) con una recompensa compuesta de formato y ejecucion sobre CoRE-DB, el entorno de base de datos compacto enriquecido con contraejemplos descrito en el trabajo *Small Language Models for Text-to-SQL against Spurious Correctness*. El checkpoint publicado corresponde al step 1000, seleccionado sobre el conjunto de desarrollo.
+FINER-SQL-3B-v2 es un modelo de generacion de texto especializado en la traduccion de lenguaje natural a SQL (text-to-SQL), desarrollado por el usuario thanhdath y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte de la familia Qwen2 y cuenta con 3.085.938.688 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos de aproximadamente 3B. Su proposito es resolver la tarea de convertir preguntas en lenguaje natural sobre esquemas de bases de datos en consultas SQL ejecutables, un problema central en interfaces de acceso a datos y asistentes analiticos.
 
-El modelo aborda un problema concreto y bien delimitado: la generacion de consultas SQL correctas contra esquemas de bases de datos reales, con especial atencion al fenomeno de la "correccion espuria" (consultas que se ejecutan sin error pero devuelven resultados incorrectos). Al estar construido sobre una base de 3B parametros, esta disenado para desplegarse en entornos con recursos limitados, lo que lo hace relevante para equipos que necesitan un generador SQL local sin depender de APIs de modelos frontera.
+El modelo forma parte de una familia de tres tamanos (0.5B, 1.5B y 3B) denominada v2, lo que permite escalar segun los recursos de hardware disponibles. Segun la model card, la variante de 3B alcanza un 68,84 de exactitud de ejecucion (EX) en BIRD Dev, un 86,75 en Spider Dev, un 81,53 en Spider Dev (TS) y un 87,66 en Spider Test, cifras que lo colocan como la variante mas capable de la familia.
 
-La relevancia actual del modelo radica en su enfoque de entrenamiento con refuerzo sobre ejecucion real (execution reward) en lugar de simple imitacion supervisada, y en sus resultados reportados en los benchmarks BIRD y Spider, que lo situan en un rango competitivo para su tamano. La licencia Apache 2.0 facilita su adopcion comercial.
+Es relevante ahora porque el text-to-SQL de alta precision sobre esquemas reales sigue siendo un cuello de botella en herramientas de analitica y agentes de datos, y este modelo ofrece un tamano contenido (3B) que puede desplegarse en infraestructura modesta manteniendo resultados competitivos en los benchmarks de referencia del area.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2) |
+| Arquitectura | Transformer decoder-only basada en Qwen2 |
 | Parametros totales | 3.085.938.688 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors, probablemente bf16/fp16; no se confirman GGUF ni AWQ) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de una arquitectura transformer decoder-only de la familia Qwen2, con 3.085.938.688 parametros totales. No se dispone de informacion detallada sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni longitud de contexto nativa en la informacion proporcionada; estos datos habria que consultarlos en la configuracion del repositorio o en la documentacion del modelo base Qwen2 de 3B.
+La arquitectura es un transformer decoder-only de la familia Qwen2, segun las etiquetas del repositorio, con 3.085.938.688 parametros reales. El modelo esta afinado especificamente para la tarea text-to-SQL, como indica su nombre y la evaluacion sobre los conjuntos BIRD y Spider. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset de afinado, ni si se emplearon tecnicas de RLHF, DPO o aprendizaje supervisado clasico.
 
-El entrenamiento se realizo mediante GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo que compara grupos de muestras generadas para estimar la ventaja relativa de cada respuesta sin necesidad de un modelo critico separado. La funcion de recompensa combina dos componentes: una recompensa de formato, que penaliza salidas que no respetan la estructura esperada de la consulta SQL, y una recompensa de ejecucion, que valora si la consulta generada produce el resultado correcto al ejecutarse contra la base de datos. El entorno de entrenamiento es CoRE-DB, descrito como una base de datos compacta enriquecida con contraejemplos, disenada especificamente para combatir la correccion espuria. El checkpoint publicado es el step 1000, elegido por su rendimiento en el conjunto de desarrollo.
+Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El codigo asociado al proyecto esta disponible en el repositorio https://github.com/thanhdath/core-db, que probablemente contiene los detalles de implementacion y entrenamiento, aunque su contenido no forma parte de la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de consultas SQL a partir de lenguaje natural (text-to-SQL) sobre esquemas de bases de datos relacionales.
-- Razonamiento sobre esquemas: el modelo trabaja contra bases de datos concretas, lo que implica capacidad de interpretar tablas, columnas y relaciones.
-- Entrenamiento orientado a la correccion semantica: la recompensa de ejecucion busca reducir consultas sintacticamente validas pero semanticamente erroneas.
-- Generacion de texto general (pipeline text-generation), aunque el ajuste esta claramente orientado a la tarea SQL.
+- Generacion de consultas SQL a partir de preguntas en lenguaje natural sobre esquemas de bases de datos (text-to-SQL).
+- Especializacion en los benchmarks BIRD y Spider, que cubren consultas sobre esquemas complejos y bases de datos reales.
+- Generacion de texto general heredada de la base Qwen2, aunque el ajuste fino esta orientado a SQL.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Capacidades especiales (thinking mode, vision, audio): no disponibles; el modelo es exclusivamente de texto.
+- Capacidades multilingues: no disponible en la informacion proporcionada (los idiomas no estan declarados en el repositorio).
+- Capacidades especiales (vision, audio, thinking mode): no disponible; el pipeline declarado es text-generation.
 
 ## Casos de uso
 
-- Asistente SQL en herramientas de analitica interna: el modelo traduce preguntas de negocio en lenguaje natural a consultas SQL ejecutables sobre el esquema de un data warehouse, reduciendo la dependencia de analistas para consultas repetitivas. Su entrenamiento con recompensa de ejecucion lo hace adecuado para entornos donde una consulta incorrecta pero valida es especialmente costosa.
-- Generacion de consultas en pipelines de BI: integrado como paso previo a la ejecucion en herramientas de business intelligence, el modelo puede generar y validar consultas contra el esquema antes de lanzarlas, con un coste de inferencia bajo al ser un modelo de 3B.
-- Soporte a desarrolladores en migraciones de bases de datos: dado un esquema nuevo, el modelo puede reescribir consultas existentes o generar equivalentes, util en tareas de refactorizacion de capa de datos.
-- Educacion y formacion en SQL: el modelo puede generar consultas de referencia para ejercicios y comparar con la solucion del estudiante, aprovechando su entrenamiento contra contraejemplos para explicar por que una consulta aparentemente correcta falla.
-- Despliegue local con privacidad de datos: al ser un modelo de 3B con licencia Apache 2.0, puede ejecutarse en infraestructura propia sin enviar esquemas ni datos sensibles a APIs externas, requisito habitual en sectores regulados.
-- Evaluacion automatizada de esquemas y consultas: el modelo puede usarse como generador de consultas candidatas en procesos de test de bases de datos, produciendo consultas que luego se validan por ejecucion contra el entorno CoRE-DB o similar.
-- Prototipado rapido de interfaces de consulta en lenguaje natural: equipos que construyen chatbots sobre bases de datos pueden usar este checkpoint como base para validar la viabilidad de la tarea antes de invertir en modelos mayores.
+- Asistentes de consulta a bases de datos: el modelo traduce preguntas de usuarios no tecnicos a SQL ejecutable sobre el esquema proporcionado, lo que permite construir interfaces de chat sobre bases de datos relacionales sin que el usuario conozca SQL.
+- Herramientas de analitica de autoservicio: integrado en un panel de BI, el modelo genera consultas a partir de preguntas como "ventas por region en el ultimo trimestre", reduciendo la dependencia del equipo de datos.
+- Generacion de SQL en pipelines de datos: el modelo puede producir consultas para tareas ETL o validaciones automatizadas, y su tamano de 3B permite desplegarlo junto al pipeline sin grandes requisitos de GPU.
+- Educacion y formacion en SQL: sirve como generador de ejemplos y soluciones de consultas sobre esquemas didacticos, util en plataformas de aprendizaje.
+- Evaluacion de esquemas y documentacion: dado un esquema, el modelo puede generar consultas de ejemplo que ayuden a documentar el uso de tablas y relaciones.
+- Agentes de datos multi-paso: aunque no se documenta soporte explicito de tool calling, el modelo puede emplearse como componente generador de SQL dentro de un agente orquestado externamente que gestione la ejecucion y la validacion de resultados.
+- Prototipado rapido de APIs de datos: gracias a su licencia Apache 2.0 y su tamano contenido, es adecuado para prototipos y despliegues en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-Los unicos resultados publicados en la informacion disponible son los de la model card, medidos con k = 30 muestras, temperatura T = 1.0, seleccion vote-after-verify y evaluadores oficiales:
+Datos publicados en la model card del autor:
 
-| Benchmark | Metrica | Resultado |
-|---|---|---|
-| BIRD dev | Execution Accuracy (EX) | 68.77 |
-| Spider dev | Execution Accuracy (EX) | 86.75 |
-| Spider dev | Test Suite accuracy (TS) | 81.53 |
+| Modelo | BIRD Dev (EX) | Spider Dev (EX) | Spider Dev (TS) | Spider Test (EX) |
+|---|---:|---:|---:|---:|
+| FINER-SQL-0.5B-v2 | 53,59 | 76,31 | 67,89 | 75,27 |
+| FINER-SQL-1.5B-v2 | 63,82 | 79,98 | 72,44 | 81,79 |
+| FINER-SQL-3B-v2 | 68,84 | 86,75 | 81,53 | 87,66 |
 
-No se han publicado en la informacion disponible resultados comparativos con otros modelos en estos mismos benchmarks bajo identicas condiciones de evaluacion.
+No se han publicado en la informacion disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K, ni comparaciones con modelos externos a la familia FINER-SQL.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16/fp16: aproximadamente 6,2 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica se recomienda un minimo de 8 GB de VRAM para contexto corto.
-- Cuantizacion: no se confirman pesos GGUF ni AWQ en el repositorio; si se generan cuantizaciones de 8 bits o 4 bits, el modelo podria caber en GPUs de 4-6 GB, pero este dato no esta verificado en la informacion disponible.
-- GPU recomendadas: para bf16, una RTX 3090, RTX 4090, A10G, L4 o A100 son suficientes; para despliegues de alto throughput, A100 o H100 con vLLM.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM en bf16 (por ejemplo RTX 3060 Ti 8 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). En 4 bits podria caber en GPUs de 4-6 GB, sujeto a conversion no confirmada.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag endpoints_compatible), y previsiblemente vLLM y llama.cpp/Ollama si se generan los formatos correspondientes, aunque estos ultimos no se confirman.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en precision completa (fp16/bf16): aproximadamente 6,2 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica se recomienda al menos 8-10 GB de VRAM para contexto moderado.
+- Cuantizacion: no se documentan versiones cuantizadas en el repositorio, pero al ser un modelo Qwen2 de 3B es compatible con cuantizaciones GGUF/AWQ/GPTQ generadas por herramientas estandar.
+- GPU recomendadas: una RTX 4090 (24 GB) o RTX 3090 permite ejecutar el modelo en fp16 con margen amplio; una RTX 4060 Ti de 16 GB o una RTX 3060 de 12 GB son suficientes en fp16 o con cuantizacion de 8 bits.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en cuantizacion de 8 bits, y en tarjetas con 12 GB o mas en fp16.
+- Opciones de despliegue: transformers (libreria declarada), y por compatibilidad con Qwen2, tambien vLLM, TGI, llama.cpp y Ollama previa conversion a los formatos correspondientes.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible. A modo orientativo estructural:
+| Modelo | Parametros | Contexto | BIRD Dev (EX) | Spider Dev (EX) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| FINER-SQL-3B-v2 | 3,09B | no disponible | 68,84 | 86,75 | Apache 2.0 | Hugging Face |
+| FINER-SQL-1.5B-v2 | no disponible | no disponible | 63,82 | 79,98 | Apache 2.0 | Hugging Face |
+| FINER-SQL-0.5B-v2 | no disponible | no disponible | 53,59 | 76,31 | Apache 2.0 | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| FINER-SQL-3B-v2 | 3,09B | no disponible | Apache 2.0 | text-to-SQL con GRPO sobre CoRE-DB |
-| Qwen2-3B (base) | ~3B | no disponible en esta ficha | Apache 2.0 | modelo generalista, sin ajuste SQL |
-| Alternativas text-to-SQL de tamano similar | no disponible | no disponible | no disponible | no disponible |
-
-No se han publicado en la informacion disponible resultados de benchmarks de estos modelos bajo las mismas condiciones de evaluacion (k = 30, T = 1.0, vote-after-verify), por lo que no se ofrece comparacion numerica.
+No se dispone en la informacion proporcionada de datos de otros modelos text-to-SQL externos a la familia FINER-SQL para una comparacion directa.
 
 ## Limitaciones y advertencias
 
-- Especializacion estrecha: el ajuste esta orientado a text-to-SQL; su rendimiento en tareas generales de generacion de texto puede degradarse respecto al modelo base Qwen2.
-- Riesgo de alucinacion de esquema: como todo modelo generativo, puede inventar tablas, columnas o funciones SQL que no existen en el esquema real; es imprescindible validar por ejecucion antes de usar la consulta en produccion.
-- Correccion espuria residual: aunque el entrenamiento con contraejemplos busca mitigarla, no se garantiza la eliminacion total; los resultados de BIRD dev (68.77 EX) implican que aproximadamente un tercio de las consultas no son correctas en ese conjunto.
-- Idiomas: no se especifican los idiomas soportados; no hay garantia de buen rendimiento en castellano ni en otros idiomas distintos del ingles, idioma dominante en los benchmarks BIRD y Spider.
-- Longitud de contexto: no disponible; esquemas de bases de datos grandes pueden exceder la ventana del modelo y requerir estrategias de recuperacion o fragmentacion.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero se recomienda revisar las obligaciones de atribucion y las condiciones del modelo base Qwen2 del que deriva.
-- Procedencia del checkpoint: es un checkpoint comunitario con 166 descargas y 0 likes en el momento de la consulta; no hay evidencia de validacion independiente de los resultados reportados.
-- Metodologia de evaluacion: los resultados se obtuvieron con k = 30 muestras y seleccion vote-after-verify, lo que implica un coste de inferencia 30 veces mayor que una generacion unica; el rendimiento en modo de una sola pasada puede ser inferior.
+- Sesgos conocidos: no disponible; no se documentan evaluaciones de sesgo.
+- Riesgo de alucinacion: como todo modelo generativo, puede producir SQL sintacticamente valido pero semanticamente incorrecto o referenciar columnas y tablas inexistentes; se recomienda validacion y ejecucion controlada antes de usar las consultas en produccion.
+- Limitaciones de contexto o idioma: la longitud de contexto no esta documentada y los idiomas soportados no estan declarados; el ajuste fino esta orientado a la tarea text-to-SQL, por lo que su rendimiento en otras tareas puede degradarse.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion, sin restricciones adicionales documentadas.
+- Caveats para produccion: el modelo tiene 847 descargas y 0 likes, lo que indica una adopcion muy limitada y poca validacion externa; conviene auditar su comportamiento sobre el esquema concreto antes de desplegarlo. Ademas, la fecha de creacion registrada (2026-10-30) y la de actualizacion (2026-11-16) deben tratarse con cautela, ya que podrian reflejar metadatos anomalos del repositorio.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/thanhdath/FINER-SQL-3B-v2
-- Prompts de evaluacion: https://huggingface.co/thanhdath/core-db-evaluation-prompts
-- Repositorio de codigo core-db-sql: no se proporciona la URL exacta en la informacion disponible (referenciado como `core-db-sql` en GitHub)
-- Paper de referencia: *Small Language Models for Text-to-SQL against Spurious Correctness* (no se proporciona URL en la informacion disponible)
-- Benchmarks BIRD: no se proporciona enlace en la informacion disponible
-- Benchmarks Spider: no se proporciona enlace en la informacion disponible
+- Hugging Face: https://huggingface.co/thanhdath/FINER-SQL-3B-v2
+- Repositorio de codigo: https://github.com/thanhdath/core-db

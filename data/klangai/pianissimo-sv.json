@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 35,
-  "downloads_30d": 699,
+  "downloads_30d": 993,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Log into Facebook",
-      "url": "https://upload.facebook.com/login/",
-      "snippet": "Email or mobile number PasswordRead more"
-    },
-    {
-      "title": "Facebook",
-      "url": "https://upload.facebook.com/login/identify/",
-      "snippet": "Enter your mobile number or email. Mobile number or email"
-    },
-    {
-      "title": "Borrar archivos temporales (Local\\Temp): Windows 11, 10, Mac - CCM",
-      "url": "https://es.ccm.net/ciberseguridad/guias-de-ciberseguridad/1134-como-eliminar-los-archivos-temporales-appdata-local-temp/",
-      "snippet": "Mar 19, 2024 · Con todas las actividades realizadas diariamente en tu ordenador, cada día se almacenan archivos que sólo ocupan …"
-    },
-    {
-      "title": "Sign into Yahoo: with Facebook, with Google - CCM",
-      "url": "https://ccm.net/apps-sites/email/435-sign-in-to-yahoo-with-facebook-or-google/",
-      "snippet": "Aug 30, 2022 · Yahoo previously allowed users to login to their Yahoo account with their Facebook or Google account and recover it. …"
-    },
-    {
-      "title": "Download audio from Facebook Messenger: on PC, mobile",
-      "url": "https://ccm.net/apps-sites/social-media-instant-messaging/511-facebook-messenger-how-to-download-audio-files/",
-      "snippet": "Jul 14, 2023 · Whilst you can easily save photos and videos to your phone, Facebook doesn't allow you to download audio directly …"
-    }
-  ]
+  "sources": []
 }

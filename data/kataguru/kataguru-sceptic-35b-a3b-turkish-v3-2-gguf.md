@@ -2,103 +2,109 @@
 
 ## Resumen
 
-Kataguru-Sceptic-35B-A3B-Turkish-v3.2-GGUF es la distribucion cuantizada en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-Turkish-v3.2, desarrollado por el usuario kataguru. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 35.505.251.456 parametros totales y 3B parametros activos por token, construido sobre la base Kataguru-Sceptic-35B-A3B-v3.1. Su proposito principal es ofrecer capacidades soberanas de razonamiento, codigo, vision multimodal y traduccion de pagina completa en turco, manteniendo intactas las capacidades del modelo fundacional mediante el congelado de sus 254 expertos originales.
+Kataguru-Sceptic-35B-A3B-Turkish-v3.2-GGUF es la distribucion cuantizada en formato GGUF del modelo Kataguru-Sceptic-35B-A3B-Turkish-v3.2, publicado por Datasein Oy (Finlandia) bajo la direccion de su arquitecto jefe Jari Katajisto. Se trata de un modelo de mezcla de expertos (MoE) de 35.505.251.456 parametros totales con aproximadamente 3.000 millones de parametros activos por token, construido sobre la base Kataguru-Sceptic-35B-A3B-v3.1 y especializado en programacion industrial (PLC y CNC) y en ingenieria de sistemas, con un enfasis explicito en el idioma turco.
 
-La innovacion central de esta version consiste en anadir dos expertos especificos de turco (identificados como #254 y #255) sobre una arquitectura MoE de 256 expertos por capa y 40 capas. El experto #254 se orienta a gramatica, morfologia y terminologia tecnica turca, mientras que el #255 cubre literatura, no ficcion y traduccion bidireccional EN<->TR. El modelo conserva la ventana de contexto de 262.144 tokens, el encoder de vision de 27 capas y la cabeza especulativa MTP de la capa 40 del modelo base.
+El modelo anade dos expertos nativos de turco (expertes #254 y #255) a los 254 expertos congelados del nucleo original, manteniendo intactas las capacidades de razonamiento cientifico, codigo competitivo, vision multimodal y tool calling del modelo base. La model card declara cifras como 96,67 % en su benchmark propio de PLC/CNC industrial, 70,20 % en GPQA Diamond, 39,43 % en LiveCodeBench v6 y 83,67 % en BFCL V4 AST.
 
-Esta distribucion GGUF emplea la denominada "APEX-Trio", con tres niveles de cuantizacion calibrados mediante imatrix especifico para turco sobre los 256 expertos, mas un proyector multimodal separado. Esta pensada para despliegue en llama.cpp, LM Studio y Ollama, lo que facilita su uso en hardware de consumo y en entornos con GPU de 16 GB o superiores.
+Esta variante GGUF se distribuye como suite "APEX-Trio" con tres niveles de cuantizacion (APEX-Small, APEX-Medium, APEX-Good) mas un proyector multimodal mmproj, calibrados con imatrix sobre datos turcos y pensados para ejecucion en GPU de 16 GB. Es relevante para equipos que necesitan un modelo de codigo industrial y automatizacion con capacidad multimodal y soporte de agentes, ejecutable en hardware de consumo o en una unica GPU de 24 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE), 256 expertos por capa, 40 capas, basada en qwen3_5_moe |
+| Arquitectura | Mezcla de expertos (MoE) tipo transformer, 40 capas, 256 expertos por capa (254 congelados + 2 nativos de turco), Top-8 |
 | Parametros totales | 35.505.251.456 |
-| Parametros activos | 3B por token |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF APEX-Trio: APEX-Small (~11,9 GiB), APEX-Medium (~13,6 GiB), APEX-Good (~15,4 GiB); proyector mmproj-f16.gguf (~890 MB); calibracion imatrix turca |
+| Parametros activos | Aproximadamente 3.000 millones por token (A3B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF APEX-Trio (APEX-Small, APEX-Medium, APEX-Good) calibrados con imatrix; el ecosistema incluye tambien BF16, NVFP4 y W4A16-AWQ en repos separados |
 | Idiomas soportados | Ingles (en), turco (tr), finlandes (fi) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp), con mmproj separado para vision |
+| Formato de pesos | GGUF (repositorio de 45,4 GB); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer con capas MoE de 256 expertos. La base Kataguru-Sceptic-35B-A3B-v3.1 aporta 254 expertos congelados (identificados del #0 al #253) que preservan las capacidades de razonamiento cientifico, codigo competitivo y tool calling agentico del modelo original, con un rendimiento declarado de 70,26 % de media en un conjunto de 15 benchmarks, 70,20 % en GPQA Diamond, 39,43 % en LiveCodeBench v6 y 83,67 % en BFCL V4 AST. Sobre esta base se anaden dos expertos nuevos: el #254, especializado en gramatica turca (armonia vocal de 2 y 4 vias, mutacion consonante, cadenas de sufijos derivativos y flexivos) y terminologia tecnica industrial, clinica y legal; y el #255, orientado a prosa literaria, no ficcion, dialogo natural y traduccion fiel EN<->TR.
+El modelo sigue una arquitectura de mezcla de expertos con 40 capas y 256 expertos por capa. La innovacion principal respecto al modelo base v3.1 es la incorporacion de dos expertos nativos de turco (#254 y #255) que coactivan en cada paso de token junto con los ocho expertos seleccionados del nucleo congelado (#0 a #253). Segun la model card, esto permite conservar el 100 % de las capacidades del modelo original (razonamiento cientifico, codigo competitivo, motor de agentes y codificacion industrial) sin sacrificar el rendimiento en turco. El modelo base declara un promedio de 70,26 % en un conjunto de 15 benchmarks.
 
-El entrenamiento de los nuevos expertos se realizo con un conjunto de 4.821 muestras doradas verificadas humanamente, con un 100 % de aprobado en la puerta de calidad mecanica, y una calibracion contrastiva del router con `--moe-mode new_experts_only --recalibrate-router` (r=32, alpha=64). La cuantizacion GGUF se calibro con `imatrix_calibration_tr.txt` sobre los 256 expertos. El modelo conserva el encoder de vision multimodal de 27 capas (333 tensores) y la cabeza especulativa MTP de la capa 40 (785 tensores), lo que habilita decodificacion especulativa. No se detalla en la informacion disponible el volumen total de tokens de entrenamiento ni la composicion completa del dataset fundacional.
+La model card menciona un encoder de vision ViT de 27 capas integrado, lo que habilita la modalidad image-text-to-text. No se detalla en la informacion proporcionada el volumen de tokens de entrenamiento, la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF o DPO. Las cuantizaciones GGUF se han calibrado con imatrix sobre datos turcos, lo que sugiere un ajuste especifico de los pesos cuantizados para preservar el rendimiento en ese idioma.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de nivel graduate en STEM (fisica, quimica, biologia molecular), con 70,20 % en GPQA Diamond.
-- Programacion competitiva y algoritmica, con 39,43 % Pass@1 en LiveCodeBench v6 y 90,70 % en problemas de dificultad facil.
-- Tool calling y function calling nativo con formato `<tool_call>` y deteccion de irrelevancia, con 83,67 % en BFCL V4 AST.
-- Razonamiento multi-paso y agentico, incluyendo deteccion de irrelevancia en llamadas a herramientas.
-- Capacidades multimodales de vision: pipeline image-text-to-text con encoder de 27 capas y proyector mmproj-f16.
-- Traduccion de pagina completa EN<->TR mediante el modo `/translate`, con preservacion de parrafos y cero charla adicional.
-- Modo de razonamiento configurable mediante etiquetas `{REASON:spoon}`, `{REASON:einstein}`, `{REASON:007}`, `{REASON:deep}`, `{REASON:low}` y `{REASON:off}`.
-- Soporte nativo de turco mediante el prefijo `/tr` o `chat_template_kwargs={"response_language": "tr"}`, con plantilla de chat dedicada y cabeceras de razonamiento localizadas.
-- Capacidades multilingues en ingles, turco y finlandes.
-- Decodificacion especulativa mediante cabeza MTP.
+- Generacion de texto y razonamiento cientifico, con resultados declarados de 70,20 % en GPQA Diamond.
+- Programacion industrial PLC: IEC 61131-3, Beckhoff TwinCAT 3 Structured Text, Siemens TIA Portal SCL/S7-1500, bloques de funcion, PID y diagnosticos PROFINET.
+- Programacion CNC y G-code: Fanuc, Siemens Sinumerik 840D y Heidenhain, con compensacion de radio de herramienta, offsets de trabajo y ciclos fijos.
+- Protocolos industriales y fieldbuses: OPC UA, Modbus TCP/RTU, EtherCAT, PROFINET y CANopen.
+- Normativa de seguridad funcional: ISO 13849-1 (PLa-PLe), IEC 62061 / IEC 61508 (SIL 1-SIL 3), Safe Torque Off y enclavamientos de parada de emergencia.
+- Ingenieria de software de sistemas: C++20, Rust, C embebido/RTOS, Python 3.12, C#/.NET, SQL y Bash/Linux.
+- Tool calling y function calling con motor de agentes basado en AST `<tool_call>`, con 83,67 % en BFCL V4 AST y cero errores de sintaxis declarados.
+- Capacidades multimodales de vision: lectura de diagramas P&ID, esquemas electricos, pantallas de error de HMI y graficos de ingenieria mediante el encoder ViT de 27 capas.
+- Capacidades multilingues en ingles, turco y finlandes, con especial refuerzo del turco.
+- Modo de multiples roles conmutables por peticion sin reinicio del servidor (multi-mode 6-en-1 segun la model card).
+- Traduccion y generacion aumentada por recuperacion (RAG).
 
 ## Casos de uso
 
-- Traduccion profesional EN<->TR de pagina completa: el modo `/translate` permite traducir documentos literarios y tecnicos preservando la estructura de parrafos, sin conversacion adicional, adecuado para editoriales y agencias de localizacion.
-- Atencion al cliente en turco: el modelo gestiona conversaciones multi-turno con hasta 262.144 tokens de contexto, lo que permite mantener historiales extensos y documentacion de referencia en la misma ventana.
-- Generacion de codigo en produccion: con tool calling nativo y 39,43 % en LiveCodeBench v6, puede integrarse en pipelines de CI/CD para generacion y revision de codigo, asi como en agentes que invocan herramientas externas.
-- Analisis de documentos tecnicos con vision: el encoder multimodal de 27 capas permite procesar imagenes de planos, esquemas PLC/CNC o documentacion escaneada y extraer informacion estructurada.
-- Asistencia en ingenieria industrial: el experto #254 cubre terminologia de PLC/CNC y medicina clinica, util para consultas tecnicas especializadas en turco.
-- Razonamiento cientifico asistido: con 70,20 % en GPQA Diamond, sirve como apoyo en tareas de fisica, quimica y biologia molecular de nivel graduado.
-- Despliegue local en hardware de consumo: la variante APEX-Medium (~13,6 GiB) cabe en una GPU de 16 GB, lo que permite ejecutar el modelo en estaciones de trabajo sin infraestructura de servidor.
-- Correccion y proofreading de turco: con temperatura 0,2-0,3 y presence_penalty 0,3, el experto #254 puede emplearse para revision morfologica y ortografica.
+- Generacion y auditoria de codigo PLC en produccion: el modelo puede escribir y revisar programas en Structured Text para TwinCAT 3 o SCL para S7-1500, incluyendo maquinas de estados deterministas y control de movimiento, lo que encaja en equipos de automatizacion que trabajan en turco.
+- Post-procesado y validacion de G-code CNC: permite generar y auditar trayectorias multi-eje con compensacion de radio y offsets, verificando cargas de husillo y evitando colisiones antes de enviar el programa a maquina.
+- Diagnostico de redes industriales y SCADA: con soporte de OPC UA, Modbus, EtherCAT y PROFINET, puede ayudar a interpretar trazas y diagnosticos de fieldbus en tareas de mantenimiento y puesta en marcha.
+- Asistente de ingenieria de seguridad funcional: ayuda a redactar y revisar logica de enclavamientos, categorias PLa-PLe y niveles SIL, apoyandose en las normas citadas en la model card.
+- Agente de soporte tecnico con vision: al leer pantallas de error de HMI y esquemas electricos mediante el encoder ViT, puede asistir en la resolucion de incidencias en planta a partir de capturas o fotografias.
+- Desarrollo de software de sistemas y embebido: generacion de codigo en Rust, C++20 y C para RTOS, con soporte de tool calling para integrarse en pipelines de CI/CD y tareas de analisis automatizado.
+- Traduccion tecnica turco-ingles-finlandes: util para documentacion de ingenieria y manuales de maquinaria en entornos industriales finlandeses o turcos.
+- Automatizacion agentica multi-paso: el motor `<tool_call>` basado en AST permite encadenar llamadas a herramientas en flujos de RAG o de orquestacion de tareas de ingenieria.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| Media de 15 benchmarks (fundacional) | 70,26 % | Heredado intacto via expertos congelados #0..#253 |
-| GPQA Diamond | 70,20 % (139/198) | STEM de nivel doctorado |
-| LiveCodeBench v6 (Pass@1) | 39,43 % | Facil: 90,70 % |
-| BFCL V4 Single-Turn AST | 83,67 % | Non-Live: 88,44 %; deteccion de irrelevancia: 80,26 % |
-| Auditoria en vivo turco 10/10 (v3.2) | 10/10 PASS (100 %) | MMLU-TR, ARC-TR, TruthfulQA-TR y traduccion literaria/tecnica EN<->TR |
+| Benchmark | Resultado declarado |
+|---|---|
+| Media de 15 benchmarks (modelo base v3.1) | 70,26 % |
+| GPQA Diamond | 70,20 % |
+| LiveCodeBench v6 | 39,43 % |
+| LiveCodeBench v6 (Easy) | 90,70 % |
+| BFCL V4 AST | 83,67 % |
+| Benchmark industrial PLC/CNC propio | 96,67 % |
 
-No se han publicado resultados de benchmarks adicionales en la informacion disponible.
+No se han publicado en la informacion disponible resultados de benchmarks para esta variante GGUF concreta; las cifras anteriores corresponden al modelo base y al modelo v3.2 segun la model card. No se dispone de comparaciones directas con modelos de referencia en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- BF16 completo: ~72 GB de VRAM, requiere 2x GPU de 48-80 GB.
-- NVFP4 (~24,3 GB): 2x RTX 5090 de 32 GB con TP=2, o 1x GPU de 32 GB.
-- W4A16-AWQ (~25,3 GB): 2x RTX 5090 de 32 GB con TP=2, o 1x GPU de 32 GB.
-- GGUF APEX-Medium (~13,6 GiB): cabe en una sola GPU de 16 GB.
-- GGUF APEX-Small (~11,9 GiB) y APEX-Good (~15,4 GiB): opciones adicionales de la triada; el proyector mmproj-f16 requiere ~890 MB adicionales para vision.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (etiquetas del repo), y variantes compatibles con vLLM mediante los pesos AWQ.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: la model card indica que la suite GGUF APEX-Trio esta preparada para GPU de 16 GB; las variantes NVFP4 (aproximadamente 20,9 GiB) y W4A16-AWQ (aproximadamente 19,5 GiB) caben en una unica GPU de 24 GB.
+- Pesos completos en BF16: aproximadamente 67,5 GB, requieren multiples GPU o una GPU de gran capacidad.
+- GPU recomendadas: RTX 4090, RTX 4080, A100, H100 y GPUs Blackwell para NVFP4. El repositorio GGUF esta pensado para GPUs de consumo de 16 GB o superiores.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB o mas con las cuantizaciones APEX, y en tarjetas de 24 GB con NVFP4 o AWQ.
+- Opciones de despliegue: llama.cpp, LM Studio, Ollama y vLLM (etiquetas del repositorio); el modelo base usa transformers.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Kataguru-Sceptic-35B-A3B-Turkish-v3.2-GGUF | 35,5B totales / 3B activos | 262.144 | Apache 2.0 | GGUF | Especializado en turco, vision y traduccion |
-| Kataguru-Sceptic-35B-A3B-v3.1 (base) | 35,5B totales / 3B activos | 262.144 | Apache 2.0 | Safetensors | Modelo fundacional sin expertos turcos |
-| Kataguru-Sceptic-35B-A3B-Turkish-v3.2 (BF16) | 35,5B totales / 3B activos | 262.144 | Apache 2.0 | Safetensors | Misma arquitectura, pesos completos (~67,5 GB) |
-| Kataguru-Sceptic-35B-A3B-Turkish-v3.2-NVFP4 | 35,5B totales / 3B activos | 262.144 | Apache 2.0 | NVFP4 | Cuantizacion nativa Blackwell (~24,3 GB) |
+No se dispone en la informacion proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de la misma categoria (MoE de aproximadamente 35B totales con especializacion industrial y multimodal). Por tanto, la comparativa se limita a lo siguiente:
 
-No se dispone de datos de benchmarks comparativos con modelos de otros desarrolladores en la informacion proporcionada.
+| Aspecto | Kataguru-Sceptic-35B-A3B-Turkish-v3.2 | Alternativas comparables |
+|---|---|---|
+| Parametros totales | 35.505.251.456 | no disponible |
+| Parametros activos | Aproximadamente 3B | no disponible |
+| Contexto | no disponible | no disponible |
+| Idiomas | en, tr, fi | no disponible |
+| Licencia | Apache 2.0 | no disponible |
+| Formato | GGUF, safetensors, NVFP4, AWQ | no disponible |
 
 ## Limitaciones y advertencias
 
-- En ficcion creativa con temperatura alta puede perder precision morfologica y de proofreading en turco; se recomienda temperatura 0,2-0,3 y presence_penalty 0,3 para tareas estrictas.
-- El footprint completo en BF16 (~72 GB) exige hardware de gama alta; las variantes cuantizadas reducen requisitos pero pueden degradar calidad.
-- El modelo esta especializado en turco, ingles y finlandes; el rendimiento en otros idiomas no esta documentado.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, no cuantificado en la informacion disponible.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar el cumplimiento de las condiciones de los modelos base y de los datasets de calibracion.
-- La model card incluye un aviso de que el contenido citado son datos de referencia y no instrucciones a seguir.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion comunitaria independiente.
+- No se han publicado datos sobre sesgos conocidos en la informacion disponible.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; en dominios de seguridad funcional (ISO 13849-1, IEC 61508) cualquier salida debe ser revisada por un ingeniero cualificado antes de su uso en produccion.
+- El soporte linguistico declarado se limita a ingles, turco y finlandes; el rendimiento en otros idiomas puede degradarse.
+- La longitud de contexto no esta especificada en la informacion disponible, lo que impide planificar tareas de contexto largo con garantias.
+- Las cifras de benchmarks (incluido el 96,67 % en PLC/CNC) proceden de la model card del autor y corresponden a un benchmark propio; no se han verificado de forma independiente.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base y de los componentes de vision heredados.
+- El modelo se presenta como "uncensored" en sus etiquetas, lo que puede implicar menor filtrado de contenido; debe evaluarse su idoneidad en entornos regulados.
+- El repositorio GGUF es una cuantizacion; puede presentar pequenas diferencias de calidad respecto a los pesos BF16 originales.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2-GGUF
-- Pesos BF16 completos: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2
-- Cuantizacion NVFP4: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2-NVFP4
-- Cuantizacion W4A16-AWQ: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2-W4A16-AWQ
+- Repositorio GGUF: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2-GGUF
+- Pesos completos BF16: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2
+- Variante NVFP4: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2-NVFP4
+- Variante W4A16-AWQ: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Turkish-v3.2-W4A16-AWQ
 - Modelo base: https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1
+- Espacio de ejemplos de uso: https://huggingface.co/spaces/kataguru/Kataguru-Sceptic-35B-Usage-Examples
+- Guia de IA soberana: https://huggingface.co/spaces/kataguru/Kataguru-Sovereign-AI-Guide
+- Perfil del autor: https://huggingface.co/kataguru

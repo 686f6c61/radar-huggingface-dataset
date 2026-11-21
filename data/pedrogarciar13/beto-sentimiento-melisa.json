@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "pedrogarciar13/beto-sentimiento-melisa",
+  "slug": "pedrogarciar13-beto-sentimiento-melisa",
+  "author": "pedrogarciar13",
+  "url": "https://huggingface.co/pedrogarciar13/beto-sentimiento-melisa",
+  "created_at": "2026-11-20T21:52:41.000Z",
+  "updated_at": "2026-11-20T21:53:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentiment-analysis",
+    "spanish",
+    "melisa",
+    "text-classification",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109853187,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439436284,
+  "storage_human": "439 MB",
+  "context_length": null,
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

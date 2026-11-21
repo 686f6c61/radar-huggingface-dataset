@@ -2,96 +2,96 @@
 
 ## Resumen
 
-MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-GGUF es la versión cuantizada en formato GGUF publicada por mradermacher del modelo funnygeeker/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic. Se trata de un ajuste fino especializado en la reescritura de prompts (prompt rewriting) con capacidades multimodales de visión e lenguaje, construido sobre una base de la familia Qwen (etiquetada en los tags como qwen3.5 y qwen3.8) con 27.320.697.856 parámetros totales según los pesos safetensors del repositorio. El origen de la cadena es lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA, sobre el que funnygeeker aplicó una variante "heretic" (abliterated/decensored).
+MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-GGUF es la distribucion en formato GGUF del modelo MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic, una variante "abliterated" (decensored) del reescritor de prompts Ref2VA desarrollado originalmente por lightx2v sobre una base Qwen3.8 de 27 000 millones de parametros. El modelo resuelve una tarea muy concreta dentro de pipelines multimodales: reescribir y enriquecer prompts de entrada, presumiblemente para generacion de video o imagen (la nomenclatura Ref2VA sugiere referencia a video/audio), partiendo de referencias visuales. La version aqui descrita ha sido cuantizada por mradermacher, especialista en publicar pesos GGUF listos para llama.cpp y Ollama.
 
-El modelo está pensado para tomar una instrucción o prompt de entrada y reescribirlo de forma más elaborada y estructurada, presumiblemente para alimentar sistemas de generación (el sufijo Ref2VA sugiere referencia a vídeo/audio). Incorpora un componente multimodal (archivos mmproj en GGUF) que le permite procesar imágenes junto con texto, y declara soporte para inglés y chino en los tags. La variante "heretic" implica que se ha reducido o eliminado el comportamiento de rechazo (refusal) del modelo base, lo que lo hace adecuado para entornos donde se necesita baja censura, pero con los riesgos asociados.
+El modelo combina varias senales tecnicas: etiquetas de vision-language y multimodal, soporte declarado de MTP (multi-token prediction), y una base Qwen3.8 que hereda el conocimiento general y el multilingueismo de la familia Qwen. Su interes practico radica en que permite ejecutar localmente un modelo de 27B con capacidades de reescritura de prompts y vision en hardware de consumo, gracias a las cuantizaciones K-quant e IQ disponibles (desde 11 GB en Q2_K hasta 29,1 GB en Q8_0).
 
-La relevancia de esta ficha radica en que ofrece una vía práctica de despliegue local: los cuantizados GGUF estáticos (Q2_K a Q8_0, IQ4_XS) permiten ejecutar un modelo de 27B en hardware de consumo, algo inviable con los pesos completos en safetensors (28,2 GB de repositorio). La licencia Apache 2.0 facilita el uso comercial, aunque el carácter "abliterated" exige revisión de cumplimiento antes de producción.
+Ahora bien, conviene ser cauto: la model card del repositorio es practicamente una plantilla de cuantizacion de mradermacher y no documenta arquitectura, datos de entrenamiento ni benchmarks. Muchos datos tecnicos deben marcarse como no disponibles, y las capacidades inferidas (vision, MTP, tool calling) provienen unicamente de las etiquetas del repositorio, no de una ficha tecnica detallada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (vision-language), etiquetada como qwen3.5/qwen3.8 en los tags; detalles exactos no disponibles |
-| Parámetros totales | 27.320.697.856 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer decoder-only (base Qwen3.8); detalles no disponibles |
+| Parametros totales | 27 320 697 856 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS; además mmproj-Q8_0 y mmproj-f16 para el componente multimodal |
-| Idiomas soportados | inglés (en) y chino (zh) según tags; la model card solo declara en |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en, zh (segun etiquetas del repositorio) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado) y safetensors (modelo base); librería transformers |
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
+| Tamano del repositorio | 190,8 GB (incluye todas las cuantizaciones) |
+| Libreria | transformers (modelo base); llama.cpp/Ollama para GGUF |
+| Modelo base | funnygeeker/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna más allá de las etiquetas del repositorio. Los tags indican una base de la familia Qwen (qwen3.5, qwen3.8) con capacidades multimodales (vision-language) y un componente etiquetado como "mtp" (posiblemente multi-token prediction). El modelo es un ajuste fino del checkpoint lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA, especializado en reescritura de prompts, sobre el que se aplicó posteriormente una modificación "heretic" por parte de funnygeeker para reducir los rechazos.
+No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. Por las etiquetas y el nombre del modelo base se infiere una arquitectura transformer decoder-only derivada de Qwen3.8, con un componente de vision-language (los ficheros mmproj confirman un proyector multimodal) y soporte declarado de MTP (multi-token prediction). El modelo original fue publicado por lightx2v como reescritor de prompts Ref2VA; funnygeeker produjo la variante "heretic" mediante tecnicas de abliteration/decensoring, y mradermacher la cuantizo a GGUF.
 
-No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o similar. Tampoco se detallan innovaciones técnicas como decodificación especulativa o atención lineal. La cuantización la realiza mradermacher con su pipeline habitual (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1) y se indica que los cuantizados ponderados/imatrix no estaban disponibles en el momento de la publicación.
+No hay datos publicados sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplico RLHF, DPO u otra fase de alineamiento. Tampoco se documenta la innovacion concreta del componente Ref2VA (presumiblemente reescritura de prompts condicionada por referencias visuales), por lo que cualquier afirmacion al respecto seria especulativa.
 
 ## Capacidades
 
-- Reescritura y expansión de prompts: tarea principal del modelo, orientada a transformar instrucciones breves en descripciones detalladas y estructuradas.
-- Procesamiento multimodal visión-lenguaje: los archivos mmproj permiten incorporar imágenes como entrada junto al texto.
-- Generación de texto conversacional: etiquetado como "conversational" en los tags.
-- Soporte multilingüe limitado: inglés y chino según los tags del repositorio.
-- Comportamiento "abliterated"/decensored: reducción de rechazos, lo que permite generar contenido que el modelo base rechazaría.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
-- Capacidades de audio: no disponible (el sufijo Ref2VA no se documenta en la model card).
+- Generacion y reescritura de texto orientada a prompts (prompt rewriting), tarea principal del modelo.
+- Procesamiento multimodal vision-language: incluye ficheros mmproj, lo que indica capacidad de procesar imagenes junto al texto.
+- Soporte declarado de MTP (multi-token prediction), que puede acelerar la decodificacion segun la implementacion.
+- Capacidades conversacionales multi-turno (etiqueta conversational).
+- Multilingueismo limitado a ingles y chino segun las etiquetas del repositorio.
+- Variante "abliterated/decensored": se ha reducido o eliminado el rechazo ante contenido sensible, lo que amplia el rango de prompts aceptados pero incrementa el riesgo de contenido inapropiado.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 
 ## Casos de uso
 
-- Reescritura de prompts para pipelines de generación de imágenes o vídeo: el modelo toma una instrucción corta del usuario y la expande en un prompt detallado y estructurado, adecuado para alimentar modelos de difusión o de generación de vídeo (el sufijo Ref2VA apunta a este escenario).
-- Preprocesado de instrucciones en asistentes conversacionales: normalizar y enriquecer las consultas de usuario antes de pasarlas a un modelo generador principal, mejorando la coherencia de las respuestas en sistemas multi-modelo.
-- Descripción de imágenes para generación de prompts visuales: gracias al componente mmproj, puede analizar una imagen de referencia y producir un prompt textual que la describa, útil en flujos de image-to-prompt o reference-to-video.
-- Despliegue local en estaciones de trabajo con GPU de consumo: los cuantizados Q4_K_S (15,9 GB) permiten ejecutar el modelo en GPUs de 24 GB como la RTX 4090, sin depender de servicios en la nube.
-- Investigación sobre alineación y censura: la variante "heretic" permite estudiar el comportamiento del modelo sin rechazos, comparándolo con el base para analizar diferencias en sesgos y seguridad.
-- Prototipado rápido de herramientas de prompt engineering: con llama.cpp u Ollama se puede integrar el GGUF en utilidades de escritorio para reescribir prompts en tiempo real, dado el tamaño manejable de los cuantizados bajos (Q2_K, Q3_K).
-- Generación de contenido en inglés y chino: para equipos que trabajan con ambos idiomas y necesitan reescritura de instrucciones sin censura en flujos creativos.
+- Enriquecimiento de prompts para generacion de video o imagen: el modelo reescribe prompts breves o ambiguos en descripciones detalladas y coherentes, aprovechando su entrenamiento especifico como prompt rewriter; se integraria como paso previo a un modelo generativo.
+- Traduccion y adaptacion de prompts entre ingles y chino: al soportar ambos idiomas, puede normalizar prompts de usuario a un idioma canonico antes de enviarlos a un pipeline de generacion.
+- Preprocesado en pipelines de difusion o video generativo: dado su caracter multimodal, puede recibir una imagen de referencia y producir el prompt textual correspondiente para un modelo de video (la nomenclatura Ref2VA apunta a este escenario).
+- Prototipado local de asistentes conversacionales: con cuantizaciones Q4_K_M de 16,9 GB cabe en GPUs de consumo de 24 GB (RTX 3090/4090) y permite iterar sin coste de API.
+- Investigacion sobre alineamiento y decensoring: la variante heretic permite estudiar el comportamiento de modelos abliterated frente a sus originales, comparando tasas de rechazo y calidad.
+- Generacion de descripciones de imagenes y etiquetado semiautomatico: el componente de vision permite producir texto descriptivo a partir de imagenes en tareas de catalogacion o accesibilidad.
+- Experimentacion con MTP y decodificacion especulativa: util para evaluar el impacto del multi-token prediction en throughput dentro de llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización): Q4_K_S ocupa 15,9 GB en disco y requiere aproximadamente 16-18 GB de VRAM para cargarse completamente en GPU; Q8_0 y f16 requieren del orden de 28-30 GB y 55 GB respectivamente (estimación basada en el tamaño de los pesos, no confirmada por el autor).
-- Componente multimodal adicional: mmproj-Q8_0 (0,7 GB) o mmproj-f16 (1,0 GB) que se suma a los requisitos anteriores.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_S y cuantizados inferiores; A100 40/80 GB o H100 para Q8_0 y f16; configuraciones multi-GPU para los cuantizados mayores.
-- ¿Cabe en GPU de consumo? Sí: Q4_K_S (15,9 GB) y cuantizados menores (Q2_K, Q3_K) caben en RTX 3090/4090 (24 GB) y potencialmente en GPUs de 16 GB con cuantizados Q3 o Q2. Los cuantizados Q6_K, Q8_0 y f16 no caben en GPUs de consumo de una sola unidad.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con GGUF; el modelo base en safetensors es compatible con transformers y, presumiblemente, con vLLM/TGI (no confirmado en la información).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia (pesos + overhead de contexto): Q2_K ~11 GB; Q3_K_M ~13,6 GB; Q4_K_M ~16,9 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB. Anadir 1-3 GB adicionales para el proyector multimodal (mmproj) y la cache KV segun contexto.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M; RTX 3090 (24 GB) equivalente; A100 40/80 GB o H100 para Q8_0 y contextos largos; multiples GPUs para f16.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K/Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors requiere transformers. Para el modelo base sin cuantizar, vLLM o TGI serian las opciones habituales, aunque no se confirma compatibilidad explicita.
+- Latencia y throughput: no disponibles. Como referencia cualitativa, un 27B en Q4_K_M en una RTX 4090 suele moverse en el orden de decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de modelos comparables documentados en la información proporcionada. Como referencia estructural, se puede comparar con el modelo base del que deriva:
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Cuantizado estático, variante heretic |
-| funnygeeker/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic | 27,3B (presumible) | no disponible | Apache 2.0 | safetensors | Modelo base directo, sin cuantizar |
-| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA | 27,3B (presumible) | no disponible | no disponible | safetensors | Modelo original antes del ajuste heretic |
+| MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic (este) | 27,3B | no disponible | Apache 2.0 | GGUF, safetensors | Reescritor de prompts multimodal, decensored |
+| Qwen3.8-27B base (familia Qwen) | ~27B | no disponible | Apache 2.0 (segun familia) | safetensors | Modelo generalista del que deriva; sin fine-tuning de prompt rewriting |
+| MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA (original de lightx2v) | 27,3B | no disponible | Apache 2.0 | safetensors | Version alineada, con rechazos ante contenido sensible |
+| Variante i1-GGUF de mradermacher | 27,3B | no disponible | Apache 2.0 | GGUF (imatrix) | Misma base con cuantizaciones ponderadas de mayor calidad |
 
-No se dispone de información sobre benchmarks que permita comparar el rendimiento con alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Naturaleza "abliterated"/heretic: el modelo ha sido modificado para reducir rechazos, lo que implica un mayor riesgo de generar contenido inapropiado, sesgado o dañino. No es recomendable para aplicaciones orientadas al público sin filtros adicionales.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala; no se han publicado evaluaciones específicas de fidelidad.
-- Idiomas limitados: solo inglés y chino según los tags; el rendimiento en castellano no está documentado y probablemente sea deficiente.
-- Contexto no documentado: se desconoce la longitud máxima de contexto, lo que dificulta planificar casos de uso con entradas largas.
-- Licencia Apache 2.0: permite uso comercial, pero el carácter decensored puede entrar en conflicto con políticas de plataformas o requisitos regulatorios; conviene revisar el cumplimiento antes de desplegar en producción.
-- Cuantizados estáticos sin imatrix: el autor indica que los cuantizados ponderados/imatrix no estaban disponibles, por lo que la calidad de los cuantizados bajos (Q2_K, Q3_K) puede ser inferior a la de variantes con imatrix.
-- Sin datos de benchmarks ni evaluación de sesgos: no hay evidencia publicada sobre su rendimiento real en tareas downstream.
-- Modelo derivado de una cadena de ajustes no documentada: la trazabilidad del entrenamiento es limitada, lo que complica la auditoría.
+- La variante heretic/abliterated elimina o reduce los mecanismos de rechazo: puede generar contenido sensible, ofensivo o inapropiado sin filtros, lo que exige moderacion adicional en produccion.
+- Riesgo de alucinacion inherente a los modelos de 27B; no hay evaluaciones publicadas de fidelidad en la tarea de reescritura de prompts.
+- Idiomas limitados a ingles y chino segun las etiquetas; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- No se documenta la longitud de contexto soportada; asumir contextos largos sin verificacion puede provocar degradacion o errores.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus dependencias (Qwen, MiniMax) deben verificarse por separado; el caracter decensored puede incumplir politicas de plataformas o requisitos regulatorios.
+- La model card no documenta arquitectura, entrenamiento ni benchmarks: no hay garantias formales de calidad para casos de uso criticos.
+- El repositorio ocupa 190,8 GB por incluir todas las cuantizaciones; descargar solo el fichero necesario.
+- El componente multimodal requiere el fichero mmproj correspondiente; sin el, las capacidades de vision no funcionan.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-GGUF
-- Modelo base directo: https://huggingface.co/funnygeeker/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic
-- Modelo original: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA
-- Página de descargas del autor: https://hf.tst.eu/model#MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Gráfico comparativo de cuantizados (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizados (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Repositorio GGUF: https://huggingface.co/mradermacher/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-GGUF
+- Modelo base (heretic): https://huggingface.co/funnygeeker/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic
+- Modelo original (lightx2v): https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

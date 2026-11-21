@@ -2,118 +2,118 @@
 
 ## Resumen
 
-Karar-4B-GGUF son los pesos cuantizados en formato GGUF de Karar-4B, un modelo de 4.205.751.296 parámetros desarrollado por Mert Kaya dentro de Eschatia Labs, un laboratorio independiente sin ánimo de lucro. No es un modelo conversacional de propósito general: está entrenado para recibir un estado en lenguaje natural (por ejemplo, el texto de una reclamación) junto con una pregunta y un conjunto cerrado de opciones, y devolver una probabilidad calibrada para cada opción. Su pipeline declarado en Hugging Face es `text-classification`.
+Karar-4B-GGUF es la versión cuantizada en formato GGUF de Karar-4B, un modelo de lenguaje pequeno (4.205.751.296 parametros) desarrollado por Eschatia Labs, un laboratorio independiente sin animo de lucro liderado por Mert Kaya. A diferencia de un LLM generativo al uso, Karar-4B esta especializado en clasificacion de texto y toma de decisiones estructuradas: recibe un estado (texto de entrada) y un conjunto de preguntas con opciones, y devuelve la opcion seleccionada junto con una distribucion de probabilidad calibrada. Su proposito es actuar como capa de enrutamiento, etiquetado y triaje en turco, ejecutable en CPU.
 
-El interés practico del modelo esta en su coste de despliegue: la cuantizacion Q4_K_M ocupa 2,71 GB en disco y alcanza un pico de 3,03 GB de RAM con contexto de 4k, lo que permite ejecutar decisiones sobre CPU en maquina local o en el borde, sin GPU y sin enviar datos a terceros. El autor declara un 96,8% de acierto en precision completa frente al 87,1% de Kev-4B sobre decisiones en turco reservadas del pipeline de entrenamiento.
+El modelo forma parte del proyecto JevAlt, que agrupa modelos de decision pequenos para ingles, turco y aleman. La version GGUF esta pensada para inferencia local en llama.cpp, Ollama y LM Studio, con un consumo de RAM de 3,03 GB en la cuantizacion Q4_K_M a 4k de contexto. La licencia Apache-2.0 y su tamano contenido lo hacen adecuado para despliegues on-device y entornos sin GPU.
 
-La version GGUF anade un detalle relevante para produccion: las probabilidades del modelo base no se usan en crudo, sino que se aplican a traves del servidor JevAlt, que lee las probabilidades del siguiente token mediante llama-cpp-python y aplica un fichero `calibration.json`. La licencia Apache-2.0 y la disponibilidad en Ollama facilitan su integracion, aunque el alcance linguistico real medido es el turco.
+La relevancia actual reside en la combinacion de tres factores: cuantizacion lista para produccion, un servidor especifico (JevAlt) que expone probabilidades calibradas en lugar de texto generado, y una evaluacion explicita de la concordancia entre cuantizaciones frente al modelo de precision completa. No obstante, el autor advierte que las instrucciones plantadas, el texto largo irrelevante y la aritmetica de fechas siguen siendo casos de fallo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card no detalla la arquitectura; el modelo base tiene 4.205.751.296 parametros) |
-| Parametros totales | 4.205.751.296 (dato real de safetensors del modelo base) |
-| Parametros activos | No aplica (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible (las mediciones del autor se realizan con contexto de 4k) |
-| Tipos de cuantizacion | Q4_K_M (por defecto), Q5_K_M, Q8_0; tag `imatrix` |
-| Idiomas soportados | Turco (tr) e ingles (en) segun metadatos; el entrenamiento y las metricas publicadas son en turco |
+| Arquitectura | no disponible (modelo base Karar-4B; sin detalle de arquitectura en la informacion proporcionada) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | 4k evaluado en las mediciones de RAM; longitud maxima no disponible |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q8_0 |
+| Idiomas soportados | turco (tr), ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base original se distribuye en safetensors |
-| Tamano del repositorio | 10,3 GB |
-| Pipeline declarado | text-classification |
-| Quantized by | mertkayacs |
-| Modelo base | mertkayacs/Karar-4B |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base: no se indica si es un transformer decoder denso, ni el numero de capas, cabezas o dimension oculta, ni el regimen de atencion. Lo que si se documenta es el paradigma de uso: el modelo recibe un estado y una pregunta con criterios (por ejemplo, "¿que equipo debe gestionar esta solicitud?" con las categorias Fatura, Teknik destek, Satis y Hesap) y se leen las probabilidades del siguiente token para cada opcion, que despues se calibran. El autor menciona un modo opcional de razonamiento (`reasoning: off` en el ejemplo del widget, con la posibilidad de que el modelo escriba primero una justificacion breve en turco y luego decida) y un parametro `abstain`.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Karar-4B en la informacion proporcionada: no se especifica si es un transformer denso, el numero de capas, la dimension oculta ni los mecanismos de atencion. Lo que si se documenta es su funcionamiento como modelo de decision: el servidor JevAlt lee las probabilidades del siguiente token a traves de llama-cpp-python y aplica un fichero `calibration.json` para producir decisiones calibradas sobre un conjunto de opciones predefinidas.
 
-El entrenamiento se realizo sobre decisiones en turco del pipeline de datos `mertkayacs/jevalt-data`, con un conjunto reservado para evaluacion. La model card cita el articulo del proyecto como "JevAlt: Small Decision Models for English, Turkish and German", aunque las metricas publicadas en esta ficha corresponden unicamente al turco. La innovacion tecnica destacable no esta en el modelo sino en el envoltorio: el servidor JevAlt aplica una calibracion externa sobre las probabilidades de llama-cpp-python, de modo que los umbrales de decision se puedan reajustar con datos propios sin reentrenar. No se detallan volumen de tokens, composicion del dataset ni si hubo RLHF o DPO.
+El entrenamiento se realizo sobre el dataset `mertkayacs/jevalt-data`, y los resultados de evaluacion se publican en `mertkayacs/jevalt-bench`. El autor indica que la precision del modelo de precision completa es del 96,8% frente al 87,1% de Kev-4B en decisiones turcas retenidas del pipeline de datos de entrenamiento. No se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion se realizo con imatrix, segun los tags del repositorio.
 
 ## Capacidades
 
-- Clasificacion de texto con opciones cerradas: devuelve una distribucion de probabilidad sobre las alternativas definidas en la consulta, no texto libre.
-- Preguntas de tipo eleccion (`choice`) y con criterios descriptivos por opcion, segun el esquema del ejemplo del widget.
-- Razonamiento previo opcional: el modelo puede emitir una justificacion breve en turco antes de la decision (modo `reasoning`).
-- Abstención: parametro `abstain` para los casos en que ninguna opcion es adecuada.
-- Probabilidades calibradas mediante `calibration.json` aplicado por el servidor JevAlt.
-- Ejecucion en CPU y en dispositivo (`on-device`, `local-ai`), sin dependencia de GPU.
-- Integracion con llama.cpp, Ollama y LM Studio; en estos dos ultimos responde con la letra de la opcion elegida.
-- Capacidad multilingue limitada: metadatos en tr y en; sin metricas publicadas para ingles.
+- Clasificacion de texto y toma de decisiones estructuradas: selecciona una opcion entre varias a partir de un estado y un conjunto de preguntas con criterios.
+- Salida con probabilidades calibradas por opcion mediante el servidor JevAlt (no disponible en llama.cpp, Ollama o LM Studio en modo chat, que devuelven texto generado).
+- Enrutamiento y triaje: asignacion de tickets o solicitudes a equipos (facturacion, soporte tecnico, ventas, cuenta) segun el ejemplo del widget.
+- Etiquetado de texto en turco e ingles.
+- Modo `reasoning` configurable (activado/desactivado) y opcion de absteccion (`abstain`) en la peticion.
+- Inferencia en CPU sin GPU, con consumo medido de 3,03 GB de RAM en Q4_K_M a 4k de contexto.
+- Integracion con llama.cpp, Ollama (`ollama run mertkayacs/karar-4b`), LM Studio y el servidor JevAlt.
+- No se documentan capacidades de generacion libre, codigo, matematicas, vision, audio ni tool calling.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: el modelo recibe el texto de la reclamacion y devuelve la probabilidad de que corresponda a facturacion, soporte tecnico, ventas o cuenta. Es el escenario del ejemplo publicado, con 0,9135 de probabilidad para Fatura en un ticket de doble cobro, lo que permite enrutar automaticamente con un umbral definido.
-- Enrutado de correo entrante en un CRM: clasificacion por cola o por equipo antes de que un humano lo lea, usando la opcion de abstención para derivar a revision manual los casos de baja confianza.
-- Etiquetado de resenas y encuestas abiertas: al devolver probabilidades y no texto, el resultado se puede agregar directamente en un cuadro de mando sin post-procesado de lenguaje natural.
-- Clasificacion local con requisitos de privacidad: al caber en 3,03 GB de RAM en CPU, se puede ejecutar en la propia infraestructura del cliente o en un portatil, sin enviar contenido de clientes a una API externa.
-- Pre-filtro en cascada antes de un LLM mayor: usar Karar-4B para descartar o etiquetar el 80-90% del trafico trivial y reservar el modelo grande para los casos ambiguos, reduciendo coste por peticion.
-- Decisiones de agente local: seleccionar la siguiente accion o herramienta entre un conjunto cerrado, manteniendo la autorizacion y los permisos fuera del modelo, como recomienda el autor.
-- Moderacion y taxonomia de contenido en pipelines de datos: clasificacion por categorias predefinidas con umbral calibrado por categoria.
+- Triaje de tickets de soporte: el modelo recibe el texto de la reclamacion y una pregunta de eleccion con criterios por equipo (facturacion, soporte tecnico, ventas, cuenta) y devuelve la opcion con mayor probabilidad. El ejemplo del widget muestra una reclamacion de doble cobro asignada a "Fatura" con 0,9135 de confianza.
+- Enrutamiento en atencion al cliente: clasificacion de mensajes entrantes hacia el departamento correcto antes de que un agente humano los procese, reduciendo el tiempo de primera respuesta.
+- Etiquetado de corpus en turco: clasificacion por lotes de documentos o resenas en categorias predefinidas, ejecutable en CPU y sin dependencia de APIs externas.
+- Moderacion y priorizacion: asignacion de solicitudes a colas de distinta urgencia segun criterios definidos en la pregunta de eleccion.
+- Despliegue on-device: integracion en aplicaciones de escritorio o entornos con recursos limitados gracias a los 3,03 GB de RAM pico en Q4_K_M, sin necesidad de GPU.
+- Clasificacion en pipelines de datos: uso como paso previo de filtrado o enriquecimiento en procesos ETL, con la salida calibrada permitiendo fijar umbrales de confianza.
+- Investigacion sobre calibracion: el modelo y su servidor sirven como banco de pruebas para estudiar la relacion entre cuantizacion y calibracion de probabilidades, dado que el autor publica los gaps de probabilidad por cuantizacion.
 
 ## Benchmarks y rendimiento
 
-Precision en decisiones reservadas del pipeline de entrenamiento (turco):
-
-| Modelo | Precision |
+| Metrica | Valor |
 |---|---|
-| Karar-4B (precision completa) | 96,8% |
-| Kev-4B | 87,1% |
+| Precision, Karar-4B precision completa | 96,8% |
+| Precision, Kev-4B (comparativa del autor) | 87,1% |
+| Concordancia Q4_K_M con precision completa (opcion seleccionada) | 96,7% |
+| Concordancia Q5_K_M con precision completa | 100,0% |
+| Concordancia Q8_0 con precision completa | 100,0% |
+| Gap maximo de probabilidad, Q4_K_M | 0,1430 |
+| Gap maximo de probabilidad, Q5_K_M | 0,1154 |
+| Gap maximo de probabilidad, Q8_0 | 0,0396 |
+| Segundos por peticion, Q4_K_M | 15,74 |
+| Segundos por peticion, Q5_K_M | 28,17 |
+| Segundos por peticion, Q8_0 | 18,56 |
+| RAM pico, Q4_K_M (4k contexto) | 3,03 GB |
+| RAM pico, Q5_K_M | 3,39 GB |
+| RAM pico, Q8_0 | 4,77 GB |
 
-Verificacion de cuantizacion frente a Karar-4B en precision completa (61 decisiones de validacion por cuantizacion; es una comprobacion de cuantizacion, no una puntuacion de benchmark):
-
-| Fichero | Tamano | Coincidencia de opcion | Brecha maxima de probabilidad | Segundos por peticion | Pico de RAM |
-|---|---|---|---|---|---|
-| Q4_K_M | 2,71 GB | 96,7% | 0,1430 | 15,74 | 3,03 GB |
-| Q5_K_M | 3,08 GB | 100,0% | 0,1154 | 28,17 | 3,39 GB |
-| Q8_0 | 4,48 GB | 100,0% | 0,0396 | 18,56 | 4,77 GB |
-
-Los tiempos y la RAM se midieron en un proceso nuevo sobre una maquina de Hugging Face con 8 vCPU, 4 hilos, contexto de 4k, sin mmap y con repacking activado. El autor advierte que mas precision no garantiza mayor coincidencia en una muestra tan pequena. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de proposito general en la informacion disponible.
+La concordancia se midio sobre 61 decisiones de validacion por cuantizacion, por lo que el autor la describe como una comprobacion de cuantizacion y no como una puntuacion de benchmark. Las mediciones de RAM y velocidad se realizaron en una maquina de Hugging Face con 8 vCPU, 4 hilos, contexto de 4k, sin mmap y con repacking activado. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- RAM para CPU: 3,03 GB de pico con Q4_K_M a contexto de 4k; 3,39 GB con Q5_K_M; 4,77 GB con Q8_0.
-- VRAM estimada para GPU: aproximadamente 3,1 GB con Q4_K_M y 4,9 GB con Q8_0, partiendo del tamano de fichero y del pico de RAM medido (estimacion, no medida publicada por el autor).
-- Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090; tambien en iGPU y en placas tipo Raspberry Pi siempre que se disponga de 4-8 GB de RAM libre.
-- GPU de datacenter (A100, H100) innecesarias por tamano; solo tendrian sentido para servir muchas peticiones en paralelo.
-- Despliegue: llama.cpp, Ollama (`ollama run mertkayacs/karar-4b`), LM Studio, llama-cpp-python y servidor JevAlt (`jevalt serve`), que expone `/v1/systemone`. Para obtener probabilidades calibradas hay que usar el servidor JevAlt: los endpoints de chat de llama.cpp, Ollama y LM Studio devuelven texto generado.
-- Rendimiento medido en CPU: 15,74 s por peticion con Q4_K_M (unas 0,06 peticiones por segundo con 4 hilos), 18,56 s con Q8_0 y 28,17 s con Q5_K_M. No hay datos de throughput en GPU.
-- Ajuste de carga recomendado en las pruebas del autor: sin mmap y con repacking activado.
+- RAM pico medida: 3,03 GB (Q4_K_M), 3,39 GB (Q5_K_M) y 4,77 GB (Q8_0), con contexto de 4k, sin mmap y repacking activado.
+- Tamano de fichero: 2,71 GB (Q4_K_M), 3,08 GB (Q5_K_M) y 4,48 GB (Q8_0).
+- Inferencia en CPU: las mediciones se realizaron en una maquina de 8 vCPU con 4 hilos; no se requiere GPU.
+- GPU: no se documentan requisitos ni recomendaciones de GPU (A100, H100, RTX 4090, etc.) en la informacion proporcionada.
+- Cabe en cualquier equipo consumer con al menos 4 GB de RAM libre para Q4_K_M; para Q8_0 se recomienda disponer de al menos 5 GB libres.
+- Opciones de despliegue: llama.cpp, Ollama (`ollama run mertkayacs/karar-4b`), LM Studio y el servidor JevAlt (`jevalt serve`), que es el unico que expone la API de decisiones calibradas en `http://127.0.0.1:8000/v1/systemone`.
+- Latencia medida: 15,74 s por peticion en Q4_K_M, 28,17 s en Q5_K_M y 18,56 s en Q8_0, en el hardware descrito. No se documenta throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision en decisiones turcas | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Karar-4B-GGUF (Q4_K_M) | 4.205.751.296 | 4k en las pruebas del autor | 96,7% de coincidencia con precision completa (96,8% esta) | GGUF, safetensors (base) | Apache-2.0 | Hugging Face, Ollama |
-| Karar-4B (precision completa) | 4.205.751.296 | No disponible | 96,8% | Safetensors | Apache-2.0 | Hugging Face |
-| Kev-4B | No disponible | No disponible | 87,1% | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Precision (decisiones turcas) | Licencia | Formato |
+|---|---|---|---|---|---|
+| Karar-4B-GGUF | 4.205.751.296 | 4k evaluado | 96,8% (precision completa) | Apache-2.0 | GGUF |
+| Kev-4B | no disponible | no disponible | 87,1% | no disponible | no disponible |
+| Otros modelos de clasificacion turca | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la informacion proporcionada de datos comparables de otros modelos de 3-4B de propósito general (Qwen, Llama, Gemma u otros) en esta tarea concreta de decision en turco; cualquier comparacion de ese tipo requeriria ejecutar la misma evaluacion.
+La unica comparacion publicada por el autor es frente a Kev-4B, con una diferencia de 9,7 puntos porcentuales a favor de Karar-4B en precision completa. No se dispone de informacion sobre otros modelos comparables de la misma categoria y tamano en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El entrenamiento y las metricas estan centrados en turco. Aunque los metadatos declaran ingles, no hay resultados publicados en ingles, y el resto de idiomas no esta soportado de forma declarada.
-- El autor identifica como fallos conocidos las instrucciones plantadas en el texto de entrada (prompt injection), el texto largo irrelevante y la aritmetica de fechas. No debe confiarse en el modelo para calculos temporales o de importes.
-- Riesgo de alucinacion: el modelo no genera hechos, pero si puede producir una justificacion (`reasoning`) que no se corresponda con la decision; conviene usar `reasoning: off` en produccion o validar la salida.
-- Las probabilidades no estan calibradas para datos de terceros: el autor recomienda reajustar la calibracion con datos propios antes de fijar umbrales.
-- La autorizacion y los permisos deben mantenerse fuera del modelo; no es un mecanismo de control de acceso ni de validacion de identidad.
-- La coincidencia de cuantizacion se midio sobre solo 61 decisiones por fichero, por lo que las diferencias entre Q4_K_M, Q5_K_M y Q8_0 no son estadisticamente concluyentes.
-- El modelo es lento en CPU (del orden de 15-28 s por peticion en la maquina de referencia); no es adecuado para rutas interactivas de baja latencia sin GPU o sin batching.
-- Licencia Apache-2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y el fichero NOTICE si existe; no se declaran restricciones adicionales de uso aceptable.
-- Proyecto joven: 752 descargas y 0 likes en Hugging Face en el momento de la consulta, 5 estrellas en GitHub, sin validacion independiente de terceros.
+- Las instrucciones plantadas (prompt injection) siguen siendo un caso de fallo documentado; el autor recomienda mantener la autorizacion fuera del modelo.
+- El texto largo irrelevante degrada el rendimiento.
+- La aritmetica de fechas es un caso de fallo reconocido.
+- La calibracion debe reajustarse sobre datos propios antes de fijar umbrales de decision; la calibracion por defecto puede no transferir a otros dominios.
+- La concordancia de cuantizacion se midio sobre solo 61 decisiones por cuantizacion, muestra pequena que el propio autor califica como comprobacion y no como benchmark.
+- Mayor precision no garantiza mayor concordancia en esa muestra pequena (Q4_K_M obtuvo 96,7% y Q5_K_M el 100,0%).
+- El modelo esta orientado a turco e ingles; no se documenta soporte de otros idiomas.
+- En llama.cpp, Ollama y LM Studio en modo chat se obtiene texto generado, no decisiones calibradas; para la API de decisiones es necesario el servidor JevAlt.
+- No se documentan sesgos conocidos en la informacion proporcionada.
+- Licencia Apache-2.0: permite uso comercial, pero se recomienda verificar las condiciones del modelo base y del dataset de entrenamiento.
+- No se dispone de informacion sobre la robustez del modelo fuera del dominio de los datos de entrenamiento.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mertkayacs/Karar-4B-GGUF
-- Modelo base en precision completa: https://huggingface.co/mertkayacs/Karar-4B
-- Repositorio GitHub del proyecto JevAlt: https://github.com/mertkayacs/jevalt
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/mertkayacs/JevAlt
-- Pagina del proyecto: https://jevalt.mertkayacs.com/models/karar-4b/
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mertkayacs/Karar-4B-GGUF
+- Modelo base de precision completa: https://huggingface.co/mertkayacs/Karar-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/mertkayacs/jevalt-data
-- Dataset de benchmarks: https://huggingface.co/datasets/mertkayacs/jevalt-bench
+- Resultados de benchmark: https://huggingface.co/datasets/mertkayacs/jevalt-bench
 - Pagina de benchmarks: https://eschatialabs.com/benchmarks/jevalt-bench/
-- Ficha en Ollama: https://ollama.com/mertkayacs/karar-4b
-- Informe de exportacion y cuantizacion: https://huggingface.co/mertkayacs/Karar-4B-GGUF/blob/main/export-report.json
+- Repositorio GitHub de JevAlt: https://github.com/mertkayacs/jevalt
+- Pagina del proyecto: https://jevalt.mertkayacs.com/models/karar-4b/
+- Demo Emberwick: https://emberwick.mertkayacs.com
+- Pagina del autor: https://mertkayacs.com
 - Eschatia Labs: https://eschatialabs.com
-- Autor: https://mertkayacs.com
+- Pagina en Ollama: https://ollama.com/mertkayacs/karar-4b
+- Informe de exportacion: https://huggingface.co/mertkayacs/Karar-4B-GGUF/blob/main/export-report.json

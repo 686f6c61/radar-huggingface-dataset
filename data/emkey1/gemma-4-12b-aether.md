@@ -2,133 +2,114 @@
 
 ## Resumen
 
-Gemma-4-12B-Aether es un ajuste fino por LoRA del modelo google/gemma-4-12B-it, desarrollado por el usuario emkey1 y publicado en Hugging Face. Su proposito concreto es generar programas en Aether, un lenguaje de programacion pequeno, de tipado estatico, con efectos explicitos (`fx { }`), contratos (`@pre`/`@post`), registros con metodos, arrays bidimensionales, mapas (`Map[Text, T]`) y una API integrada de JSON/TOON. Como Aether es un lenguaje nuevo, los modelos generalistas no lo conocen; este ajuste incorpora ese conocimiento directamente en los pesos, eliminando la necesidad de incluir una guia de aproximadamente 14.000 tokens en cada prompt.
+Gemma-4-12B-Aether es un ajuste fino por LoRA de google/gemma-4-12B-it, desarrollado por el usuario emkey1, especializado en la generación de programas en Aether, un lenguaje de programación pequeño y de tipado estático con efectos explícitos, contratos y una API integrada de JSON/TOON. El modelo parte de la arquitectura Gemma 4 con 11.959.730.224 parámetros totales (aproximadamente 12B) y se distribuye en formato bf16 fusionado, con variantes adicionales en int8 y como adaptador LoRA.
 
-El modelo cuenta con 11.959.730.224 parametros (aproximadamente 12B) en una arquitectura densa derivada de Gemma 4, y se distribuye en formato safetensors bf16 con un tamano de repositorio de 24 GB. La model card indica que a 8 bits ocupa unos 12 GB, lo que lo convierte en el miembro mas pequeno de la familia Aether del autor, que incluye tambien variantes basadas en Qwen3.6-35B-A3B y Qwen3.8-27B.
+El problema que resuelve es concreto: Aether es un lenguaje nuevo que los modelos generales no conocen, y hasta ahora la única forma de obtener resultados aceptables era incluir una guía de unos 14K tokens en cada prompt. Este fine-tune internaliza ese conocimiento en los pesos, de modo que el modelo puede escribir Aether correctamente sin guía en el prompt, lo que reduce drásticamente el coste de contexto y mejora la latencia efectiva.
 
-Es relevante ahora porque demuestra un caso de especializacion extrema: un modelo denso de 12B que supera ampliamente a su base sin guia en las suites principales (67 de 73 tareas frente a 0 de 73 del base sin guia) y se aproxima al rendimiento del base con guia completa, con un coste de memoria y latencia mucho menor en el prompt. La contrapartida es que el ajuste degrada notablemente su capacidad en otros lenguajes como Python, por lo que el autor lo presenta explicitamente como un especialista de un solo dominio.
+Es relevante ahora porque demuestra un patrón útil para lenguajes y DSLs de nicho: en lugar de depender de prompting extenso, se puede especializar un modelo base de tamaño medio mediante LoRA y obtener un especialista que, a 8 bits (12 GB), cabe en hardware de consumo. La contrapartida es que el modelo empeora notablemente en Python y probablemente en otros lenguajes, por lo que es un especialista y no un sustituto del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Gemma 4, tag `gemma4_unified`); sin datos adicionales de capas o atencion |
+| Arquitectura | Transformer decoder-only (familia Gemma 4, tag `gemma4_unified`); detalles internos no disponibles |
 | Parametros totales | 11.959.730.224 (~12B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 32K tokens (mencionado en las pruebas de memoria del autor); no se especifica el maximo oficial |
-| Tipos de cuantizacion | bf16, int8 (q8_0), nvfp4, mxfp4; el autor desaconseja bajar de 8 bits |
-| Idiomas soportados | Ingles (`en`) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (repo principal), int8 (repo `-int8` para Ollama), nvfp4 medido en la primera release (8,0 GB); no se recomienda bajar de 8 bits |
+| Idiomas soportados | ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers); el autor menciona despliegue via Ollama con `q8_0` |
-| Modelo base | google/gemma-4-12B-it |
-| Tipo de ajuste | LoRA fusionado en los pesos base (bf16) |
-| Repositorio asociado | emkey1/Gemma-4-12B-Aether-LoRA (adaptador) |
-| Tamano del repositorio | 24,0 GB |
+| Formato de pesos | safetensors (transformers); variante int8 para Ollama; adaptador LoRA disponible por separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de aproximadamente 12B parametros, derivado de google/gemma-4-12B-it mediante un ajuste LoRA posteriormente fusionado en los pesos base. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se emplearon tecnicas de RLHF o DPO; unicamente indica que se libera el ultimo paso de tres epocas de entrenamiento y que se entreno con una sola semilla (el autor senala que reentrenar la familia produce variaciones de aproximadamente 9 de 126 primeros intentos, por lo que diferencias de pocas tareas no son significativas).
+El modelo es un ajuste fino mediante LoRA sobre google/gemma-4-12B-it, un transformer decoder-only de la familia Gemma 4 con capacidad image-text-to-text segun los tags del repositorio. El repositorio principal contiene los pesos fusionados en bf16 (el adaptador plegado sobre los pesos base); el adaptador LoRA se publica por separado en `emkey1/Gemma-4-12B-Aether-LoRA`. No se detallan en la informacion disponible ni el numero de tokens de entrenamiento, ni la composicion exacta del dataset, ni si hubo RLHF o DPO.
 
-La innovacion tecnica central no esta en la arquitectura sino en el objetivo del ajuste: internalizar en los pesos el conocimiento de Aether que de otro modo requeriria una guia de unos 14.000 tokens en el prompt. El modelo soporta el pipeline `image-text-to-text` segun los tags de Hugging Face, aunque la model card se centra exclusivamente en la generacion de codigo Aether. El autor documenta tambien el uso de rondas de reparacion (hasta dos), en las que el modelo recibe el diagnostico del compilador y la salida observada para corregir el programa, y evalua con el compilador de la version 1.0 de Aether (version de lenguaje 2026-10-30-1), temperatura 0, semilla 42 y una muestra por tarea.
+La innovacion tecnica es el enfoque de destilacion de conocimiento de lenguaje en los pesos: en lugar de inyectar una guia de ~14K tokens en cada prompt, el fine-tune entrena al modelo para escribir Aether directamente. La revision del 2026-11-07 reemplaza la primera release con la misma receta mas 298 pares de entrenamiento adicionales, extraidos de tareas frescas que la primera version fallaba. Segun el autor, apuntar los pares a los fallos mejora el rendimiento en primeras tentativas, aunque no se ha aislado si el beneficio viene de ese enfoque o de anadir pares de ese tipo en general. Las evaluaciones se hicieron con temperatura 0, semilla 42, una muestra por tarea y hasta dos rondas de reparacion con el diagnostico del compilador.
 
 ## Capacidades
 
-- Generacion de programas en Aether: lenguaje de tipado estatico con efectos explicitos (`fx { }`), contratos `@pre`/`@post`, registros con metodos, arrays y arrays bidimensionales, mapas `Map[Text, T]` y API integrada de JSON/TOON.
-- Generacion de codigo sin guia en el prompt: el conocimiento del lenguaje reside en los pesos, lo que reduce drasticamente el coste en tokens de entrada.
-- Reparacion iterativa de codigo: el modelo aprovecha diagnosticos del compilador y salidas observadas para corregir programas en rondas sucesivas.
-- Procesamiento de datos TOON: una de las suites de evaluacion se centra en el procesamiento de datos TOON, con 13 de 14 tareas resueltas en primer intento en bf16.
-- Generacion de texto conversacional: el pipeline declarado es `text-generation` y los tags incluyen `conversational`.
-- Capacidad multimodal declarada: el tag `image-text-to-text` sugiere soporte de entrada imagen-texto heredado del base, aunque no se documenta su uso en la model card.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado especificamente; las rondas de reparacion con feedback del compilador constituyen un bucle iterativo limitado.
-- Capacidades multilingues: solo ingles declarado.
+- Generacion de codigo en Aether: lenguaje estaticamente tipado con efectos explicitos (`fx { }`), contratos (`@pre` / `@post`), records con metodos, arrays y arrays 2D, maps (`Map[Text, T]`) y API integrada de JSON/TOON.
+- Escritura de Aether sin guia en el prompt: la capacidad esta internalizada en los pesos, a diferencia del modelo base que necesita ~14K tokens de guia.
+- Reparacion iterativa de codigo: el modelo aprovecha los diagnosticos del compilador y la salida observada para corregir programas en rondas sucesivas.
+- Procesamiento de datos TOON: suite especifica de procesamiento de datos TOON con resultados destacados (13/14 en bf16 en la suite hard de TOON).
+- Algoritmia: resolucion de tareas algoritmicas en Aether (19/19 en bf16 en la suite de algoritmos).
+- Capacidad image-text-to-text heredada del modelo base (segun tags), aunque no se documenta su rendimiento tras el fine-tune.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la model card.
 
 ## Casos de uso
 
-- Generacion de codigo Aether en produccion: el modelo escribe programas en Aether sin necesidad de incluir la guia de 14K tokens, lo que reduce el coste por peticion y la latencia de prefill en pipelines automatizados de generacion de codigo para este lenguaje.
-- Migracion o traduccion de especificaciones a Aether: dado su rendimiento en la suite de especificacion (6 de 12 tareas en primer intento, 6 tras reparacion en bf16), puede emplearse para convertir descripciones de comportamiento en programas Aether con contratos `@pre`/`@post`.
-- Procesamiento de datos TOON: con 13 de 14 tareas resueltas en primer intento en la suite de procesamiento de datos TOON, es adecuado para tareas de transformacion y manipulacion de este formato mediante la API integrada del lenguaje.
-- Reparacion automatica de codigo con feedback del compilador: integrado en un bucle que ejecute el compilador de Aether y devuelva el diagnostico al modelo, puede corregir programas fallidos; el autor documenta hasta dos rondas de reparacion en su evaluacion.
-- Entornos con memoria limitada: a int8 ocupa unos 12 GB y el autor reporta 15 GB cargados y 21 GB al final de una pasada de evaluacion con contexto de 32K en un Mac de mayor capacidad, por lo que es una opcion para equipos donde las variantes de 35B o 27B no caben.
-- Generacion de algoritmos en Aether: la suite de algoritmos muestra 18 de 19 tareas resueltas en primer intento en bf16 e int8, lo que lo hace util para implementar rutinas algoritmicas en este lenguaje.
-- Desarrollo asistido de la propia biblioteca Aether: util para equipos que trabajan con el lenguaje y necesitan generar ejemplos, tests o programas de referencia sin depender de prompts largos.
+- Generacion de programas Aether en produccion: el modelo escribe codigo Aether valido sin necesidad de incluir la guia de 14K tokens, lo que reduce el coste por peticion y permite integrarlo en pipelines de generacion de codigo donde el contexto es limitado.
+- Migracion o traduccion de logica a Aether: dado que el modelo conoce la sintaxis y las construcciones del lenguaje (efectos, contratos, records, maps), puede usarse para reescribir fragmentos de pseudocodigo o especificaciones en programas Aether compilables.
+- Generacion de codigo con contratos formales: la capacidad de emitir bloques `@pre` / `@post` lo hace adecuado para entornos donde se exige verificación de precondiciones y postcondiciones, como sistemas con requisitos de correccion estrictos.
+- Procesamiento de datos TOON: la suite hard de TOON data processing obtiene 13/14 en bf16, por lo que el modelo es util para tareas de transformacion y manipulacion de datos en formato TOON con la API integrada del lenguaje.
+- Asistente de desarrollo para el ecosistema Aether: integrado en un IDE o en un bucle de compilacion, el modelo puede generar codigo, leer el diagnostico del compilador y reparar errores en rondas sucesivas, tal como se evaluo en el benchmark con dos rondas de reparacion.
+- Despliegue en hardware de consumo: a 8 bits ocupa 12 GB, lo que permite ejecutarlo en una GPU consumer de gama alta o en un Mac, y usarlo como especialista local para tareas de Aether sin depender de la nube.
+- Evaluacion y ensenanza del lenguaje: al ser un especialista que genera Aether de forma consistente, puede emplearse para producir ejemplos y ejercicios del lenguaje para documentacion o formacion.
 
 ## Benchmarks y rendimiento
 
-Resultados de la model card del autor. Todas las puntuaciones sin guia en el prompt, temperatura 0, semilla 42, una muestra por tarea y hasta dos rondas de reparacion. Formato: primer intento (tras reparacion).
+Resultados publicados por el autor. Todas las puntuaciones usan sin guia en el prompt, temperatura 0, semilla 42, una muestra por tarea y hasta dos rondas de reparacion. Columnas: primera tentativa (tras reparacion). Compilador Aether 1.0 (version de lenguaje 2026-10-30-1).
 
-| Suite | Tareas | Base sin guia | Este modelo bf16 | Este modelo int8 | Base + guia 14K |
+| Suite | Tareas | Base sin entrenar, sin guia | Este modelo, bf16 | Este modelo, int8 | Base sin entrenar + guia 14K |
 |---|---:|---:|---:|---:|---:|
 | core | 35 | 0 (3) | 33 (34) | 33 (34) | 29 (35) |
-| hard: procesamiento de datos TOON | 14 | 0 (0) | 13 (13) | 12 (14) | 3 (11) |
-| hard: otros | 5 | 0 (0) | 3 (4) | 2 (4) | 2 (4) |
-| algoritmos | 19 | 0 (1) | 18 (18) | 18 (18) | 14 (17) |
-| **total principal** | **73** | **0 (4)** | **67 (69), 92%** | **65 (70), 89%** | **48 (67)** |
-| held-out: superficie | 15 | 0 (0) | 10 (13) | 10 (13) | 10 (13) |
-| held-out: algoritmico | 14 | 0 (0) | 8 (10) | 9 (11) | 6 (11) |
-| held-out: especificacion | 12 | 0 (0) | 6 (6) | 5 (6) | 6 (8) |
-| held-out: TOON / memory streams | 12 | 0 (0) | 6 (7) | 4 (6) | 4 (9) |
-| **total held-out** | **53** | **0 (0)** | **30 (36), 57%** | **28 (36), 53%** | **26 (41)** |
+| hard: TOON data processing | 14 | 0 (0) | 13 (14) | 12 (14) | 3 (11) |
+| hard: otros | 5 | 0 (0) | 0 (3) | 0 (2) | 2 (4) |
+| algorithms | 19 | 0 (1) | 19 (19) | 18 (18) | 14 (17) |
+| **total principal** | **73** | **0 (4)** | **65 (70), 89%** | **63 (68), 86%** | **48 (67)** |
+| held-out: surface | 15 | 0 (0) | 10 (12) | 10 (11) | 10 (13) |
+| held-out: algorithmic | 14 | 0 (0) | 11 (11) | 10 (11) | 6 (11) |
+| held-out: specification | 12 | 0 (0) | 8 (9) | 8 (8) | 6 (8) |
+| held-out: TOON / memory streams | 12 | 0 (0) | 4 (5) | 4 (4) | 4 (9) |
+| **total held-out** | **53** | **0 (0)** | **33 (37), 62%** | **32 (34), 60%** | **26 (41)** |
 
-Comparativa con cuantizaciones de 4 bits (primer intento, tras reparacion):
+Datos adicionales del autor:
 
-| Cuantizacion | Tamano | Principal (73) | Held-out (53) |
-|---|---:|---|---|
-| bf16 | 24 GB (repo) | 67 (69) | 30 (36) |
-| int8 | ~12 GB | 65 (70) | 28 (36) |
-| nvfp4 | 8,0 GB | 58 (65) | 21 (26) |
-| mxfp4 | 7,7 GB | 55 (59) | 22 (28) |
-| nvfp4 con activaciones 4-bit en vLLM | 8,25 GB | 53 (60) | 16 (23) |
-
-Comparativa con los hermanos mayores de la familia (primer intento, tras reparacion, sin guia):
-
-| Modelo | Tamano en disco | Principal (73) | Held-out (53) | Generacion en el mismo Mac |
-|---|---:|---|---:|---:|
-| Este modelo, int8 | 12 GB | 65 (70) | 28 (36) | 20 tok/s |
-| Qwen3.6-35B-A3B-Aether, mxfp4 | 20,9 GB | 64 (68) | 33 (40) | 85 tok/s |
-| Qwen3.6-35B-A3B-Aether, int8 | 39,1 GB | 65 (70) | 36 (44) | no medido |
-| Qwen3.6-35B-A3B-Aether, bf16 | 67 GB | 65 (70) | 39 (47) | no medido |
-
-Notas del autor: int8 pierde solo 8 de 126 primeros intentos frente a bf16 (2 ganados, 6 perdidos); 4 bits degrada sustancialmente el rendimiento; en bf16, de los fallos en primer intento, 14 son diagnosticos del compilador, 7 codigos de retorno incorrectos y 8 salidas erroneas. Una comparacion previa separada midio 38,8 frente a 217 tok/s (5,6 veces) entre este modelo y el hermano MoE.
+- En 1.026 tareas frescas a int8, dos ejecuciones de esta receta fallan 134 y 141 primeras tentativas, frente a 188 y 163 de dos ejecuciones de la primera release (unas 3,7 puntos menos de media). Con dos rondas de reparacion, 55 de los 134 fallos de este modelo pasan (15 en primera tentativa y 40 mediante reparacion).
+- En las 126 tareas del benchmark, esta version esta a la par de la primera release: 95 frente a 93 en primeras tentativas, 102 frente a 106 tras reparacion, sin diferencias significativas.
+- La cuantizacion a 8 bits apenas penaliza: solo 5 de 126 primeras tentativas difieren del bf16 (1 ganada, 4 perdidas).
+- La cuantizacion a 4 bits penaliza mucho mas: el nvfp4 de Ollama (8,0 GB) de la primera release puntua 58 (dato truncado en la model card).
+- El hermano mayor MoE de 35B a 4 bits (20,9 GB) puntua aproximadamente igual en las 126 tareas del benchmark y genera unas 5,6 veces mas rapido; a tamano completo es claramente mejor en las suites held-out.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 24 GB para bf16 (tamano del repositorio), unos 12 GB a int8, 8,0 GB a nvfp4 y 7,7 GB a mxfp4.
-- Memoria observada: Ollama reporto 15 GB cargados y 21 GB al final de una pasada completa de evaluacion con contexto de 32K en un Mac de mayor capacidad; el autor indica que ni este modelo ni el hermano mxfp4 se han ejecutado en una maquina de 32 GB.
-- GPU recomendadas: no se especifican modelos concretos en la informacion disponible. El autor menciona ejecucion en Mac y en un host con una GPU para la variante nvfp4 con activaciones de 4 bits en vLLM (unas 3 veces la velocidad de 16 bits en ese host).
-- Cabe en GPU de consumo: no confirmado en la informacion proporcionada; a int8 (~12 GB) seria viable en GPUs con 16 GB o mas, pero el autor no lo verifica.
-- Opciones de despliegue: transformers (libreria declarada), Ollama (usado por el autor con `q8_0`) y vLLM (mencionado para nvfp4 con activaciones de 4 bits). llama.cpp y TGI no se mencionan.
-- Throughput: 20 tok/s a int8 en un Mac ocupado; el autor advierte que las cifras absolutas no son fiables por la carga del sistema y que debe usarse la relacion (el hermano MoE mxfp4 alcanzo 85 tok/s en la misma sesion, y en una medicion anterior 217 frente a 38,8 tok/s). La diferencia se atribuye a la arquitectura densa, que lee todos los pesos por token, frente al MoE, que lee aproximadamente un cuarto.
+- VRAM estimada para inferencia: aproximadamente 12 GB a int8 (dato del autor); el repo bf16 completo ocupa 71,8 GB en disco, por lo que en bf16 requiere del orden de 24 GB o mas de VRAM segun overhead.
+- No se recomienda bajar de 8 bits: la cuantizacion a 4 bits degrada notablemente el rendimiento (nvfp4 de 8,0 GB puntua 58 en la primera release).
+- GPU recomendadas: no especificadas por el autor; por tamano, una RTX 4090 (24 GB) permite int8 con holgura y bf16 ajustado; A100 y H100 son adecuadas para bf16.
+- Cabe en GPU consumer: si, a int8 en GPUs de 12-16 GB o superiores; el autor menciona ejecucion en Mac.
+- Opciones de despliegue: transformers (libreria declarada), Ollama mediante el repo `emkey1/Gemma-4-12B-Aether-int8`; el autor menciona que las formas bf16 e int8 difieren en stack de serving.
+- Latencia y throughput: no disponibles de forma absoluta; el autor indica que el hermano MoE de 35B a 4 bits genera unas 5,6 veces mas rapido en el mismo Mac.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Rendimiento documentado |
-|---|---|---|---|---|---|
-| Gemma-4-12B-Aether | ~12B denso | 32K (observado) | Apache 2.0 | Especialista en Aether | 67 (69) principal, 30 (36) held-out en bf16 |
-| google/gemma-4-12B-it (base) | ~12B denso | no disponible | no disponible en esta ficha | Generalista | 0 (4) principal sin guia; 48 (67) con guia de 14K |
-| Qwen3.6-35B-A3B-Aether | 35B totales, 3B activos (MoE) | no disponible | no disponible en esta ficha | Especialista en Aether | 65 (70) principal y 39 (47) held-out en bf16; 64 (68) y 33 (40) en mxfp4 |
-| Qwen3.8-27B-Aether | 27B | no disponible | no disponible en esta ficha | Especialista en Aether | no disponible en la informacion proporcionada |
-
-El modelo se posiciona como la opcion de menor huella de la familia Aether: iguala al hermano MoE de 35B en la suite principal en int8 (65 frente a 64 en mxfp4) pero queda por detras en held-out (28 frente a 33) y es entre 4 y 6 veces mas lento en generacion por su naturaleza densa.
+| Modelo | Parametros | Contexto | Rendimiento en Aether (126 tareas) | Licencia | Disponibilidad |
+|---|---|---:|---|---|---|
+| Gemma-4-12B-Aether (este) | ~12B | no disponible | 95 primeras tentativas / 102 tras reparacion | Apache 2.0 | HF (bf16, int8, LoRA) |
+| google/gemma-4-12B-it (base) | ~12B | no disponible | 0 (4) en total principal sin guia; 48 (67) con guia 14K | no disponible en la informacion | HF |
+| emkey1/Qwen3.6-35B-A3B-Aether | 35B (MoE, A3B) | no disponible | ~igual en las 126 tareas a 4 bits; mejor a tamano completo en held-out | no disponible en la informacion | HF (4 bits, 20,9 GB) |
+| emkey1/Qwen3.8-27B-Aether | 27B | no disponible | no disponible | no disponible en la informacion | HF |
 
 ## Limitaciones y advertencias
 
-- Especializacion extrema: el autor advierte explicitamente que el ajuste escribe Python mucho peor y probablemente peor codigo en otros lenguajes; para cualquier tarea que no sea Aether debe usarse el modelo base.
-- Solo ingles declarado; no hay soporte multilingue documentado.
-- Cuantizacion: no bajar de 8 bits. nvfp4 y mxfp4 pierden entre 5 y 19 tareas en primer intento frente a int8 en la suite principal, y entre 6 y 22 en held-out.
-- Alucinacion y correccion: de los fallos en primer intento en bf16, 8 son salidas erroneas sin diagnostico de compilador, por lo que una ronda de reparacion no puede corregirlas; el autor recomienda usar el compilador y tests propios.
-- Rendimiento en held-out: solo 30 de 53 tareas (57%) en bf16 y 28 de 53 (53%) en int8, lo que indica que las ganancias no se generalizan por completo mas alla de las tareas contra las que se desarrollo el dataset.
-- Variabilidad de entrenamiento: con una sola semilla, reentrenar la familia cambia aproximadamente 9 de 126 primeros intentos, por lo que diferencias pequenas entre modelos no son concluyentes.
-- Memoria: no verificado en maquinas de 32 GB; el consumo observado llega a 21 GB en una pasada con contexto de 32K.
-- Licencia Apache 2.0: permite uso comercial, pero se heredan las condiciones del modelo base google/gemma-4-12B-it, cuyos terminos no se detallan en la informacion proporcionada.
-- Popularidad: 0 descargas y 0 likes en el momento de la consulta, sin validacion externa de la comunidad.
-- Fecha de creacion registrada: 2026-11-03, coherente con la version de lenguaje Aether 2026-10-30-1 citada por el autor.
+- Es un especialista en Aether: el autor advierte que el modelo escribe Python mucho peor y probablemente peor codigo en otros lenguajes. Para cualquier tarea que no sea Aether, debe usarse el modelo base.
+- Solo soporta ingles segun la model card; no hay evidencia de capacidades multilingues.
+- Riesgo de alucinacion en APIs o construcciones de Aether no cubiertas por los datos de entrenamiento; las suites held-out muestran un rendimiento claramente inferior (62% en bf16) frente al total principal (89%).
+- La suite hard de "otros" obtiene 0/5 en primera tentativa (3/5 tras reparacion), lo que indica dificultades en tareas fuera de las categorias entrenadas.
+- El modelo esta pensado para usarse con rondas de reparacion: los resultados en primera tentativa son sensiblemente inferiores a los obtenidos tras dos rondas con el diagnostico del compilador.
+- La cuantizacion por debajo de 8 bits degrada gravemente el rendimiento; no se recomienda su uso en produccion.
+- El autor reconoce incertidumbre sobre la causa de la mejora de la revision 2026-11-07 y que los pesos fueron elegidos sobre las tareas de evaluacion, lo que puede sobreestimar la diferencia frente a la primera release.
+- Consumo de memoria elevado en pasadas de scoring: 29 GB frente a 21 GB de la primera release a 8 bits, con la misma arquitectura.
+- Licencia Apache 2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base google/gemma-4-12B-it, cuyos terminos no se detallan en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/emkey1/Gemma-4-12B-Aether
+- Variante int8 para Ollama: https://huggingface.co/emkey1/Gemma-4-12B-Aether-int8
 - Adaptador LoRA: https://huggingface.co/emkey1/Gemma-4-12B-Aether-LoRA
-- Hermano Qwen3.6-35B-A3B-Aether: https://huggingface.co/emkey1/Qwen3.6-35B-A3B-Aether
-- Hermano Qwen3.8-27B-Aether: https://huggingface.co/emkey1/Qwen3.8-27B-Aether
+- Hermano MoE de 35B: https://huggingface.co/emkey1/Qwen3.6-35B-A3B-Aether
+- Hermano de 27B: https://huggingface.co/emkey1/Qwen3.8-27B-Aether
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio del lenguaje Aether: https://github.com/emkey1/aether

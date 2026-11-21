@@ -60,19 +60,19 @@
       "task": null,
       "dataset": "ARC-Easy",
       "metric": "acc_norm (0-shot)",
-      "value": 33.59
+      "value": 33.12
     },
     {
       "task": null,
       "dataset": "ARC-Challenge",
       "metric": "acc_norm (0-shot)",
-      "value": 24.91
+      "value": 23.04
     },
     {
       "task": null,
       "dataset": "HellaSwag",
       "metric": "acc_norm (0-shot)",
-      "value": 27.07
+      "value": 26.94
     },
     {
       "task": null,
@@ -84,7 +84,7 @@
       "task": null,
       "dataset": "ArithMark-3",
       "metric": "acc_norm (0-shot)",
-      "value": 45
+      "value": 51.2
     }
   ],
   "sources": []

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/mamba-gpt-7b-i1-GGUF",
+  "slug": "mradermacher-mamba-gpt-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mamba-gpt-7b-i1-GGUF",
+  "created_at": "2025-08-31T21:07:24.000Z",
+  "updated_at": "2026-11-21T01:04:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gpt",
+    "llm",
+    "large language model",
+    "en",
+    "base_model:Kailune-AI/mamba-gpt-7b",
+    "base_model:quantized:Kailune-AI/mamba-gpt-7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 655,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 76194024608,
+  "storage_human": "76.2 GB",
+  "context_length": 4096,
+  "base_model": "Kailune-AI/mamba-gpt-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

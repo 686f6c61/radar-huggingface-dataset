@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-GGUF · Hugging Face",
-      "url": "https://huggingface.co/prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-GGUF",
-      "snippet": "Q3.5-9B-DS-v4-Flash-v2.-GGUF Q3.5-9B-DS-v4-Flash-v2. is a reasoning-capable 9B-parameter language model built on top of Qwen/Qwen3.5-9B. The model was trained through a multi-stage training pipeline using approximately 3K long-context DeepSeek V4 Flash reasoning traces, along with additional high-quality reasoning traces, to improve long-form reasoning, mathematical problem solving ..."
-    },
-    {
-      "title": "prithivMLmods (Prithiv Sakthi)",
-      "url": "https://huggingface.co/prithivMLmods",
-      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
-    },
-    {
-      "title": "prithivmlmods",
-      "url": "https://prithivsakthiur.github.io/prithivmlmods/",
-      "snippet": "experience > huggingface ml fellow @ huggingface🤗 [sep 25&#x27; - present] > ai engineer @ polycruz [may 25&#x27; - present] > computer vision collab @ wildy ai [jan 25&#x27; - mar&#x27;25] > swe intern @ mediminds technology [sep 24&#x27; - oct 24&#x27;] > ccsn intern @ directorate of technical education [jul 23&#x27; - aug 23&#x27;] projects > multimodal vlm : vlms for improved reasoning and difficult ocr > computer vision ..."
-    },
-    {
-      "title": "prithivMLmods GGUF Models (13) | GraySoft",
-      "url": "https://graysoft.dev/authors/p/prithivmlmods.html",
-      "snippet": "Browse 38 GGUF models by prithivMLmods on GraySoft. 3,518 total downloads. Run locally with guIDE."
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    }
-  ]
+  "sources": []
 }

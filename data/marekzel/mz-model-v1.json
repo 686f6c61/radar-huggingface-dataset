@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "marekzel/mz-model-v1 · Hugging Face",
-      "url": "https://huggingface.co/marekzel/mz-model-v1",
-      "snippet": "Instructions to use marekzel/mz-model-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use marekzel/mz-model-v1 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"marekzel/mz ..."
-    },
-    {
-      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
-      "url": "https://civitaiarchive.com/",
-      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
-    },
-    {
-      "title": "Models - ONNX Runtime",
-      "url": "https://onnxruntime.ai/models",
-      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
-    },
-    {
-      "title": "AI Model Downloads - 492 Model Examples - AI Models",
-      "url": "https://aimodels.org/ai-models/",
-      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
-    },
-    {
-      "title": "MirrorZ V1.0 API | Text to Image | ModelsLab",
-      "url": "https://modelslab.com/models/modelslab/mirrorz-v1-0",
-      "snippet": "MirrorZ - V1.0 is a text to image AI model by ModelsLab available on ModelsLab. API access starts at $21/month, and open-source models are unlimited on the $149/month plan."
-    }
-  ]
+  "sources": []
 }

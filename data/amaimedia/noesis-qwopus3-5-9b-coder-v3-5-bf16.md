@@ -2,76 +2,93 @@
 
 ## Resumen
 
-NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16 es un modelo de generación de texto especializado en tareas de programación, publicado por AMAImedia como parte de la plataforma NOESIS de doblaje profesional multilingüe. El nombre sugiere que se trata de una adaptación de la serie Qwen3.5, aunque la model card no confirma explícitamente la arquitectura base. El modelo cuenta con 8.953.803.264 parámetros (~9B) y se distribuye en formato BF16, junto con un archivo GGUF Q4_K_M para despliegue local con llama.cpp. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16 es un modelo de lenguaje especializado en código, publicado por AMAImedia como parte de su plataforma NOESIS de automatización de doblaje multilingüe (framework DHCF-FNO). Se trata de un derivado afinado de Qwen/Qwen3.5-9B, construido sobre el checkpoint intermedio Jackrong/Qwopus3.5-9B-v3.5, y distribuido en formato BF16 safetensors junto con un artefacto GGUF Q4_K_M en el subdirectorio `gguf/` del mismo repositorio.
 
-El modelo está orientado a tareas de generación de código, transformación, depuración y asistencia técnica en repositorios. Aunque los metadatos indican soporte para inglés y ruso, la model card declara una cobertura de 201 idiomas y dialectos, heredada de la familia Qwen3.5. Es relevante porque ofrece una alternativa de tamaño medio con capacidades multilingües y enfoque en código, en un momento en que los modelos de programación de 7B-10B son demandados para despliegue en hardware local.
+El modelo cuenta con 8.953.803.264 parámetros (aproximadamente 9B) y está orientado a generación de código, transformación de código, asistencia en depuración, trabajo sobre repositorios y seguimiento de instrucciones técnicas. Hereda la cobertura lingüística declarada de la familia Qwen3.5, que el autor cifra en 201 idiomas y dialectos, con una lista documentada de 119 idiomas procedente de Qwen3 como base transparente.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que combina un tamaño de 9B —desplegable en hardware de consumo con cuantización— con una licencia Apache 2.0 y artefactos tanto en BF16 como en GGUF, lo que facilita su integración en pipelines locales de desarrollo asistido por IA sin depender de API externas. El repositorio tiene 952 descargas y 2 likes en el momento de la consulta.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (nombre sugiere base Qwen3.5, sin confirmar) |
-| Parametros totales | 8.953.803.264 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5, tag `qwen3_5_text`) |
+| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, GGUF Q4_K_M |
-| Idiomas soportados | en, ru (según metadatos); la model card declara 201 idiomas y dialectos |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Tipos de cuantizacion | BF16 (artefacto principal) y GGUF Q4_K_M (en `gguf/`) |
+| Idiomas soportados | Cobertura declarada de 201 idiomas y dialectos (Qwen3.5); lista documentada de 119 idiomas (Qwen3); idiomas destacados en la ficha: en, ru, kk, zh, ja, vi y más |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (BF16) y GGUF (Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna, la composición del dataset de entrenamiento ni el proceso de ajuste. La model card solo indica que el modelo es un "especialista en codificación" y que se enmarca en el framework DHCF-FNO (Deterministic Hybrid Control Framework for Frozen Neural Operators) de la plataforma NOESIS. La referencia al nombre "Qwopus3.5" y a la serie Qwen3.5 sugiere que se trata de un fine-tune de un modelo base de 9B de dicha familia, pero no se aportan datos concretos sobre el número de tokens de entrenamiento, el uso de RLHF o DPO, ni innovaciones técnicas específicas.
+La información disponible no detalla la arquitectura interna más allá de su pertenencia a la familia Qwen3.5 con tag `qwen3_5_text`, lo que implica un transformer decoder-only de tipo texto. No se especifican innovaciones como atención lineal, decodificación especulativa o arquitecturas híbridas SSM. El modelo es un afinamiento en dos etapas: parte de Qwen/Qwen3.5-9B y pasa por Jackrong/Qwopus3.5-9B-v3.5 antes de recibir el ajuste específico de AMAImedia orientado a código.
+
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. El autor indica que el checkpoint BF16 y la variante GGUF se mantienen juntos en el mismo repositorio y no son repacks externos, lo que sugiere control directo sobre el proceso de conversión y cuantización.
 
 ## Capacidades
 
-- Generación de código: puede producir fragmentos de código en diversos lenguajes, aunque no se especifica el conjunto de lenguajes soportados.
-- Transformación de código: refactorización, adaptación de sintaxis y conversión entre estilos de programación.
-- Asistencia en depuración: identificación de errores y sugerencias de corrección.
-- Trabajo con repositorios: apoyo en tareas de mantenimiento de código, documentación y revisión.
-- Seguimiento de instrucciones técnicas: capacidad para ejecutar comandos y seguir especificaciones detalladas.
-- Multilingüismo: la model card declara soporte para 201 idiomas y dialectos, aunque la lista completa no se proporciona.
-- Despliegue dual: disponible en BF16 para frameworks como Transformers y en GGUF para entornos llama.cpp.
+- Generación de código en múltiples lenguajes de programación, orientada a producción y a tareas de transformación de código existente.
+- Asistencia en depuración: análisis de errores, propuesta de correcciones y explicación de causas raíz.
+- Trabajo sobre repositorios: comprensión de estructuras de proyecto y seguimiento de instrucciones técnicas de varios pasos.
+- Seguimiento de instrucciones técnicas complejas, con énfasis en precisión sobre creatividad.
+- Capacidades multilingües heredadas de Qwen3.5, con cobertura declarada de 201 idiomas y dialectos y lista documentada de 119.
+- Conversación multi-turno (tag `conversational`) con plantilla de chat incluida en el repositorio.
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
+- No se documenta soporte explícito de tool calling, function calling, agentes autónomos, visión, audio ni modo de razonamiento extendido (thinking mode) en la información disponible.
 
 ## Casos de uso
 
-- Asistente de programación en IDE: el modelo puede integrarse como autocompletado o chat dentro de editores como VS Code o JetBrains, generando código según el contexto del archivo abierto.
-- Revisión de código automatizada: en un pipeline de CI/CD, el modelo puede analizar diffs y sugerir mejoras de estilo, corrección de bugs o optimizaciones, reduciendo la carga de revisión manual.
-- Documentación técnica automática: a partir de código fuente, el modelo puede generar comentarios, docstrings y manuales de referencia, mejorando la mantenibilidad de proyectos.
-- Depuración interactiva: durante una sesión de depuración, el modelo puede recibir la traza de error y proponer hipótesis de causa raíz y pasos de corrección.
-- Traducción de código entre lenguajes: aunque no se especifica explícitamente, su naturaleza multilingüe y de codificación permite convertir código de un lenguaje a otro (por ejemplo, de Python a JavaScript) con instrucciones claras.
-- Entorno de aprendizaje: como tutor de programación, el modelo puede explicar conceptos, mostrar ejemplos y resolver dudas de estudiantes en múltiples idiomas.
+- Asistencia de código en IDE local: el modelo puede ejecutarse con llama.cpp u Ollama a partir del GGUF Q4_K_M incluido, ofreciendo autocompletado y generación de funciones sin enviar código a servicios externos, lo que resulta adecuado para entornos con requisitos de confidencialidad.
+- Refactorización y transformación de código: dado su enfoque en "code transformation", puede emplearse para migrar código entre versiones de lenguaje o aplicar patrones de diseño de forma sistemática sobre archivos individuales.
+- Depuración asistida en pipelines de CI: integrado como paso de análisis, puede generar explicaciones de fallos a partir de trazas y sugerir parches, aprovechando su entrenamiento en seguimiento de instrucciones técnicas.
+- Generación de documentación técnica: a partir de firmas de funciones y bloques de código, el modelo puede producir docstrings y documentación de API en varios idiomas, apoyándose en su cobertura multilingüe.
+- Automatización de doblaje y localización: dado que nace dentro de la plataforma NOESIS de doblaje multilingüe, encaja en tareas de procesamiento de texto asociadas a localización, como adaptación de guiones o generación de metadatos técnicos.
+- Prototipado rápido en hardware de consumo: con 9B parámetros y una cuantización Q4_K_M, puede desplegarse en equipos con GPU de gama media o incluso en CPU con suficiente RAM, sirviendo como banco de pruebas para flujos de agentes de código antes de escalar a modelos mayores.
+- Educación y revisión de código: puede explicar fragmentos de código y señalar posibles errores en contextos formativos, en varios idiomas gracias a su cobertura lingüística.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K u otras pruebas estándar para este modelo concreto.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 18 GB (8.95B parámetros × 2 bytes por parámetro, más overhead). Esto cabe en GPUs como A100 40GB, RTX 4090 24GB o RTX 3090 24GB.
-- Para el archivo GGUF Q4_K_M, la VRAM necesaria se reduce a aproximadamente 5-6 GB, lo que permite ejecutarlo en GPUs de gama media como RTX 3060 12GB o RTX 4060 8GB.
-- No se especifican GPUs concretas recomendadas por el autor, pero la presencia del artefacto GGUF indica compatibilidad con llama.cpp y Ollama.
-- Opciones de despliegue: Transformers (Python), llama.cpp, Ollama, y cualquier servidor compatible con GGUF.
-- Latencia y throughput no disponibles.
+- VRAM estimada en BF16: aproximadamente 18 GB solo para pesos (8.953.803.264 parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica requiere GPUs de 24 GB o más para contexto moderado.
+- VRAM estimada en GGUF Q4_K_M: aproximadamente 5,5-6 GB para los pesos, con margen adicional para contexto; viable en GPUs de 8 GB.
+- GPUs recomendadas para BF16: A100 40/80 GB, H100, L40S, RTX A6000 o RTX 4090 (24 GB) con contexto limitado.
+- GPUs para cuantización Q4_K_M: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090; también cabe en GPUs de 8 GB con contexto reducido.
+- El autor indica que su hardware local es una RTX 3060 Laptop de 6 GB, suficiente para trabajo con cuantizaciones pequeñas, y que los trabajos de 9B+ requieren GPUs alquiladas tipo H200/Blackwell.
+- Opciones de despliegue: transformers (BF16), llama.cpp y entornos compatibles con GGUF (Ollama, LM Studio); vLLM y TGI no se mencionan explícitamente en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparación cuantitativa con otros modelos de código de 9B (por ejemplo, Llama-3.1-8B-Instruct, Qwen2.5-Coder-7B o DeepSeek-Coder-7B). El modelo no publica benchmarks, por lo que no se pueden establecer comparaciones objetivas de rendimiento. Se puede indicar que es un derivado de la serie Qwen3.5, pero sin datos adicionales.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16 | 8,95B | no disponible | Apache 2.0 | safetensors BF16 + GGUF Q4_K_M | Especializado en código, derivado de Qwen3.5-9B |
+| Qwen/Qwen3.5-9B | aproximadamente 9B | no disponible | no disponible en la informacion | safetensors | Modelo base original; cobertura de 201 idiomas declarada |
+| Jackrong/Qwopus3.5-9B-v3.5 | aproximadamente 9B | no disponible | no disponible en la informacion | safetensors | Checkpoint intermedio sobre el que se afina este modelo |
+
+No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes. La comparativa se limita a linaje, licencia y formatos de distribución.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgos o riesgos de alucinación. Como modelo de código, puede generar código incorrecto o inseguro si no se supervisa.
-- La declaración de soporte para 201 idiomas proviene de la serie Qwen3.5, pero no se ha verificado el rendimiento real en todos ellos. Es probable que el rendimiento en idiomas distintos de inglés y ruso sea inferior.
-- La longitud de contexto no se ha especificado; se recomienda probar con ventanas de 8K a 32K, pero no hay garantía.
-- El modelo está orientado a codificación, por lo que su rendimiento en tareas generales de razonamiento o conversación puede ser limitado.
-- Aunque la licencia Apache 2.0 permite uso comercial, es responsabilidad del usuario verificar que el uso cumple con las condiciones de la licencia y con las normativas locales.
-- No se ha publicado información sobre el proceso de entrenamiento, por lo que no se puede evaluar la calidad de los datos ni posibles sesgos.
+- Es un modelo especializado en código; su rendimiento en tareas generales de conocimiento o conversación abierta puede ser inferior al de modelos de propósito general del mismo tamaño.
+- Riesgo de alucinación inherente a los modelos de lenguaje: puede generar APIs, funciones o dependencias inexistentes, especialmente en lenguajes o frameworks poco representados en su entrenamiento.
+- No se documentan evaluaciones de sesgo; al heredar datos de Qwen3.5, puede reproducir sesgos presentes en corpus web multilingües.
+- La longitud de contexto no está especificada, lo que impide planificar tareas de análisis de repositorios completos sin verificación empírica previa.
+- La cobertura de 201 idiomas es una declaración del autor basada en Qwen3.5; la lista verificable es de 119 idiomas (Qwen3), por lo que el soporte real de los idiomas restantes no está documentado.
+- Aunque la licencia es Apache 2.0, conviene revisar las condiciones del modelo base Qwen3.5 y del checkpoint intermedio antes de un uso comercial a gran escala.
+- El repositorio incluye material promocional y de donaciones en la model card; no afecta al uso del modelo, pero conviene separar esa información de la documentación técnica.
+- No se documenta soporte de tool calling ni de agentes, por lo que integrarlo en flujos agénticos requiere validación adicional.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16
-- Variante PromptEng: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16
-- Variante Translate: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16
-- Repositorio GitHub de Qwopus (agente de código): https://github.com/codespermuted/qwopus
-- Página de Ollama para Qwopus3.5: https://ollama.com/fredrezones55/Qwopus3.5
-- Repositorio de despliegue en T4: https://github.com/ctz168/qwenopus
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Coder-v3.5-BF16
+- Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
+- Checkpoint intermedio: https://huggingface.co/Jackrong/Qwopus3.5-9B-v3.5
+- Organización: https://AMAImedia.com
+- X (Twitter): https://x.com/AMAImediacom
+- LinkedIn: https://www.linkedin.com/in/ilia-bolotnikov
+- Telegram: https://t.me/djbionicl

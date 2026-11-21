@@ -2,76 +2,104 @@
 
 ## Resumen
 
-Kimi K3 es un modelo multimodal agéntico de código abierto (open-weight) desarrollado por Moonshot AI, presentado como su modelo más capaz hasta la fecha. Con 2,8 billones de parámetros (2,8T), es el primer modelo abierto de clase 3T del mundo, diseñado para tareas de inteligencia de frontera como codificación de largo horizonte, trabajo de conocimiento y razonamiento profundo. Incorpora visión nativa y una ventana de contexto de 1 millón de tokens, lo que lo posiciona como una herramienta clave para agentes autónomos que necesitan procesar y razonar sobre grandes volúmenes de información multimodal.
+Kimi K3 es un modelo multimodal nativo de tipo agente, desarrollado por Moonshot AI, que se presenta como el primer modelo abierto de la clase de 3 billones de parametros. Con 2,8 billones de parametros totales y 104.000 millones activados por token, emplea una arquitectura Mixture-of-Experts (MoE) construida sobre Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), junto con un marco Stable LatentMoE que activa 16 de 896 expertos. Incorpora vision nativa y una ventana de contexto de un millon de tokens.
 
-Arquitectónicamente, Kimi K3 se basa en dos innovaciones propias: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), que mejoran la eficiencia y la capacidad de atención sobre secuencias muy largas. Su pipeline es image-text-to-text, lo que confirma su capacidad de entrada visual además de texto. La relevancia actual del modelo radica en que democratiza el acceso a capacidades de nivel frontera en un ecosistema abierto, compitiendo directamente con modelos propietarios de gran escala.
+El modelo esta disenado para tareas de inteligencia de frontera: programacion de largo horizonte (optimizacion de kernels de GPU, desarrollo de compiladores, CAD, diseno de chips), trabajo de conocimiento agentico con investigacion profunda y visualizaciones interactivas, y razonamiento multimodal sobre texto, imagen y video dentro del mismo modelo. Su publicacion como pesos abiertos bajo la licencia Kimi K3 lo convierte en una referencia relevante para investigacion y despliegue en entornos de alta capacidad.
 
-## Especificaciones técnicas
+La relevancia actual reside en su escala (clase 3T) combinada con una eficiencia de escalado declarada de aproximadamente 2,5 veces respecto a Kimi K2, y en la disponibilidad de pesos completos, algo poco habitual en modelos de este tamano. La model card indica ademas una version posterior, Kimi-K3.1-Pro, como `new_version`.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Kimi Delta Attention (KDA) + Attention Residuals (AttnRes), transformer multimodal |
-| Parametros totales | 2,8 billones (2.8T) |
-| Parametros activos | no disponible |
+| Arquitectura | Mixture-of-Experts (MoE) con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes) |
+| Parametros totales | 2.779.931.837.184 (2,8T) |
+| Parametros activos | 104B |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | no disponible (se mencionan tags de 8-bit y compressed-tensors, sin detalle) |
+| Tipos de cuantizacion | 8-bit (tag `8-bit`); otros tipos no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | safetensors |
+| Licencia | Kimi K3 License (identificador `kimi-k3`, categoria `other`) |
+| Formato de pesos | safetensors (tag), con `compressed-tensors`; repo de 1561,0 GB |
+| Capas totales | 93 (1 capa densa) |
+| Composicion de atencion | 69 capas KDA + 24 capas Gated MLA |
+| Dimension oculta de atencion | 7168 |
+| Cabezas de atencion | 96 |
+| Dimension latente MoE | 3584 |
+| Dimension oculta MoE por experto | 3072 |
+| Numero de expertos | 896 (16 activos) |
+| Libreria | transformers (con `custom_code`) |
+| Pipeline | image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-Kimi K3 emplea una arquitectura transformer multimodal con dos innovaciones técnicas principales: Kimi Delta Attention (KDA), que optimiza el mecanismo de atención para manejar secuencias extremadamente largas (hasta 1M tokens) con mayor eficiencia computacional, y Attention Residuals (AttnRes), que introduce conexiones residuales en el módulo de atención para mejorar la estabilidad del entrenamiento y la calidad del modelado. El modelo integra visión nativa, lo que significa que procesa imágenes y texto de forma unificada sin necesidad de adaptadores externos.
+Kimi K3 es un transformer MoE de 93 capas (una de ellas densa) que combina dos mecanismos de atencion: 69 capas de Kimi Delta Attention (KDA) y 24 capas de Gated MLA (Multi-head Latent Attention con compuerta). La dimension oculta de atencion es de 7168 con 96 cabezas. El bloque MoE utiliza un marco Stable LatentMoE con dimension latente de 3584 y 896 expertos de dimension oculta 3072, de los cuales se activan 16 por token, lo que da lugar a los 104B parametros activos. Moonshot AI declara una mejora de eficiencia de escalado de aproximadamente 2,5 veces frente a Kimi K2.
 
-No se han publicado detalles específicos sobre el dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. La información disponible indica que es un modelo open-weight y que Moonshot AI lo enmarca dentro de su compromiso con la ciencia abierta, pero los datos concretos de entrenamiento no están disponibles en las fuentes consultadas.
+El modelo es multimodal nativo: procesa texto, imagenes y video dentro de la misma arquitectura, sin adaptadores externos segun la model card. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican innovaciones adicionales como decodificacion especulativa. La model card menciona que los pesos se distribuyen con `compressed-tensors` y en formato de 8 bits.
 
 ## Capacidades
 
-- Generación de texto avanzada con razonamiento profundo y siempre activo (always-on reasoning), según la documentación de LM Studio.
-- Codificación de largo horizonte: capaz de mantener coherencia y contexto en proyectos de software extensos, con múltiples archivos y dependencias.
-- Visión nativa: procesa imágenes, gráficos, diagramas y documentos escaneados como entrada, integrándolos en el razonamiento textual.
-- Soporte para agentes autónomos: diseñado para tareas multi-paso con planificación y ejecución de acciones, incluyendo tool calling y function calling (implícito en su naturaleza agéntica).
-- Razonamiento matemático y análisis de datos: apto para problemas complejos de matemáticas, estadística y ciencia de datos.
-- Capacidad multilingüe: no confirmada oficialmente; no se dispone de datos sobre idiomas soportados.
-- Contexto de 1M tokens: permite procesar libros completos, bases de código extensas o largas conversaciones sin perder información relevante.
+- Generacion de texto y razonamiento de proposito general, orientado a inteligencia de frontera.
+- Programacion de largo horizonte con supervision humana minima: sesiones de ingenieria prolongadas, navegacion de repositorios masivos y orquestacion de herramientas de terminal.
+- Capacidades multimodales nativas: comprension de texto, imagenes y video en el mismo modelo (pipeline `image-text-to-text`).
+- Trabajo de conocimiento agentico: investigacion profunda, generacion de visualizaciones interactivas, widgets y dashboards, diseno de movimiento y edicion de video.
+- Ventana de contexto de un millon de tokens, adecuada para documentos y codebases extensos.
+- Soporte de tool calling y function calling: la model card describe orquestacion de herramientas de terminal y flujos multi-paso, aunque no se detalla el formato exacto de las llamadas.
+- Capacidades especializadas declaradas: optimizacion de kernels de GPU, desarrollo de compiladores, CAD y diseno de chips.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Desarrollo de software a gran escala: el modelo puede generar, revisar y refactorizar código en repositorios extensos, manteniendo el contexto de múltiples módulos y archivos gracias a su ventana de 1M tokens. Es adecuado para pipelines de CI/CD donde se requiere análisis de código en profundidad.
-- Agentes de automatización empresarial: con su capacidad agéntica y de tool calling, puede orquestar flujos de trabajo complejos como gestión de tickets, generación de informes o integración con APIs internas, ejecutando pasos secuenciales con razonamiento continuo.
-- Análisis de documentos multimodales: al aceptar imágenes y texto, puede extraer información de contratos escaneados, facturas, gráficos financieros o diagramas técnicos, y generar resúmenes o respuestas basadas en el contenido visual y textual.
-- Investigación académica y revisión de literatura: procesa artículos científicos completos, compara metodologías y extrae conclusiones, gracias a su contexto largo y capacidad de razonamiento profundo.
-- Asistencia en ciencia de datos: puede analizar grandes conjuntos de datos descritos en texto, generar código de análisis (Python, SQL) y explicar resultados estadísticos, integrando visualizaciones si se le proporcionan imágenes.
-- Soporte técnico y atención al cliente avanzada: gestiona conversaciones multi-turno con contexto extenso, manteniendo el historial completo de la interacción y resolviendo consultas complejas que requieren consulta de documentación técnica o bases de conocimiento.
+- Programacion agentica en repositorios grandes: el modelo puede sostener sesiones de ingenieria de largo horizonte y navegar codebases masivos gracias a su contexto de un millon de tokens, lo que permite cargar modulos completos y mantener coherencia entre archivos.
+- Optimizacion de kernels de GPU: con capacidad declarada para optimizacion de kernels, puede iterar sobre codigo CUDA o similar, ejecutar pruebas mediante tool calling y refinar resultados en bucles multi-paso.
+- Desarrollo de compiladores y herramientas de sistema: su orientacion a terminal y orquestacion de herramientas lo hace adecuado para tareas de construccion, depuracion y automatizacion de pipelines de compilacion.
+- Investigacion profunda con visualizacion: puede generar informes con dashboards, widgets y graficos interactivos, aprovechando su multimodalidad para interpretar figuras y documentos visuales.
+- Analisis de video y documentos extensos: la ventana de 1M tokens y la entrada de video permiten resumir reuniones, analizar grabaciones largas o extraer informacion de corpus documentales con imagenes intercaladas.
+- Diseno asistido (CAD y diseno de chips): la model card cita explicitamente flujos de vision-in-the-loop para desarrollo de videojuegos, CAD y diseno de chips, donde el modelo interpreta representaciones visuales y propone modificaciones.
+- Edicion de video y diseno de movimiento: capacidad declarada para producir y editar contenido audiovisual dentro de flujos de trabajo de conocimiento.
+- Automatizacion de tareas de conocimiento end-to-end: generacion de informes, extraccion estructurada y sintesis a partir de fuentes multimodales, con soporte de agentes multi-paso.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Las fuentes consultadas (Hugging Face, GitHub, Moonshot AI, LM Studio) no incluyen métricas numéricas como MMLU, HumanEval o GSM8K para este modelo. Se recomienda consultar el repositorio oficial de GitHub para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 2,8T parámetros, incluso en cuantización de 4 bits se requerirían aproximadamente 1,4 TB de VRAM, lo que supera ampliamente la capacidad de cualquier GPU consumer actual. No se dispone de datos oficiales sobre requisitos mínimos.
-- GPUs recomendadas: no disponible. Dado el tamaño, se necesitaría un clúster de GPUs de alta gama (por ejemplo, múltiples H100 o A100 de 80 GB) o soluciones de inferencia distribuida.
-- GPU consumer: no es viable en ninguna GPU de consumo (RTX 4090, etc.) debido a la memoria necesaria.
-- Opciones de despliegue: no confirmadas oficialmente. Dado el formato safetensors y la integración con transformers, es probable que sea compatible con frameworks como vLLM o TGI, pero no se ha verificado.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita. Con 2,8T parametros totales, los pesos en 8 bits ocuparian del orden de 2,8 TB, lo que exige despliegue multi-nodo; el repo ocupa 1561,0 GB, consistente con formatos comprimidos.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por escala, se requiere un cluster multi-GPU de clase H100 o superior; no se confirma ningun modelo concreto.
+- GPU de consumo: no cabe en GPUs consumer (RTX 4090 u otras) dado el tamano del modelo.
+- Opciones de despliegue: la libreria indicada es transformers con `custom_code`; el tag `deploy:sagemaker` sugiere soporte en Amazon SageMaker. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos. Kimi K3 es el primer modelo abierto de clase 3T, por lo que no existen alternativas open-weight de tamaño comparable en el mercado. Los modelos propietarios de escala similar (como los de OpenAI o Anthropic) no son directamente comparables por su naturaleza cerrada. Se recomienda esperar a la publicación de benchmarks oficiales para realizar una comparación rigurosa.
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Kimi K3 | 2,8T | 104B | 1M tokens | Kimi K3 License | Multimodal nativo, KDA + AttnRes, 896 expertos |
+| Kimi K2 | no disponible | no disponible | no disponible | no disponible | Referencia citada por el autor; K3 declara ~2,5x mejor eficiencia de escalado |
+| Kimi-K3.1-Pro | no disponible | no disponible | no disponible | no disponible | Version posterior indicada como `new_version` en la model card |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos alternativos en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa con otras familias.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se han publicado estudios de sesgos específicos para este modelo. Al ser un modelo de gran escala entrenado con datos web, es probable que herede sesgos presentes en dichos datos.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento complejo o con entradas ambiguas. Se recomienda verificación humana en aplicaciones críticas.
-- Limitaciones de contexto: aunque la ventana es de 1M tokens, el rendimiento en los extremos de esa longitud no está documentado; puede degradarse la coherencia o la precisión en secuencias muy largas.
-- Restricciones de licencia: la licencia está etiquetada como "other" y no se especifica en las fuentes. Esto implica incertidumbre sobre el uso comercial, la modificación y la redistribución. Es imprescindible contactar con Moonshot AI o consultar el repositorio oficial antes de usar el modelo en producción.
-- Requisitos de infraestructura: el tamaño del modelo hace que su despliegue sea inviable para la mayoría de organizaciones sin infraestructura de GPU masiva, lo que limita su accesibilidad práctica.
-- Idiomas: no se ha confirmado la cobertura de idiomas; el rendimiento en lenguas distintas del inglés o el chino (idiomas de origen de Moonshot AI) no está garantizado.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: no cuantificado; como modelo generativo de gran escala, es esperable en tareas de conocimiento, pero no hay datos publicados.
+- Limitaciones de contexto o idioma: la ventana es de 1M tokens, pero no se especifican los idiomas soportados ni su calidad relativa.
+- Licencia: la Kimi K3 License es una licencia `other` con nombre propio; es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que no se detallan en la informacion disponible.
+- Requisitos de infraestructura: el tamano (2,8T parametros, repo de 1561,0 GB) hace inviable el despliegue en hardware de consumo y exige infraestructura multi-nodo.
+- Madurez: la model card apunta a Kimi-K3.1-Pro como version posterior, lo que sugiere que K3 puede quedar superado por esa revision.
+- Datos de entrenamiento y evaluacion: no se publican detalles sobre dataset, RLHF/DPO ni resultados de benchmarks en la informacion disponible, lo que dificulta la validacion independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
-- GitHub: https://github.com/MoonshotAI/Kimi-K3
-- Moonshot AI: https://www.moonshot.ai/
-- LM Studio: https://lmstudio.ai/models/kimi-k3
+- Blog tecnico: https://www.kimi.com/blog/kimi-k3
+- Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
+- Repositorio GitHub: https://github.com/MoonshotAI/Kimi-K3
+- Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
+- Chat: https://www.kimi.com
+- Homepage: https://www.moonshot.ai
+- Organizacion en Hugging Face: https://huggingface.co/moonshotai
+- Twitter/X: https://twitter.com/kimi_moonshot
+- Discord: https://discord.gg/TYU2fdJykW
+- ModelScope: https://modelscope.cn/organization/moonshotai

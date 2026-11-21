@@ -2,59 +2,53 @@
 
 ## Resumen
 
-Cyrah es un modelo multimodal "any-to-any" desarrollado por Juan Ignacio Robledo (usuario Lilgarca en Hugging Face) y publicado bajo el identificador `Lilgarca/my-model-v02`. Se presenta como un modelo entrenado desde cero sobre una arquitectura propia denominada `cyrah` (`CyrahAnyToAnyForConditionalGeneration`), un decodificador híbrido de 14 capas y dimensión oculta de 1024 que combina atención lineal, mezcla de expertos y convoluciones cortas en un único bloque. El modelo declara 247,6 millones de parámetros totales según los pesos en safetensors del repositorio.
+Lilgarca/my-model-v02 es un modelo multimodal "any-to-any" desarrollado por el usuario independiente Lilgarca, publicado en Hugging Face bajo una arquitectura propia denominada "cyrah". El modelo se presenta como capaz de procesar y generar texto, imagen, audio y vídeo, además de incluir capacidades de razonamiento y tool calling. Está entrenado desde cero ("from-scratch"), lo que lo diferencia de la mayoría de modelos disponibles, que parten de pesos preentrenados de terceros.
 
-La propuesta central es la unificación de todas las modalidades en un único flujo de tokens: texto, audio, imagen, vídeo, 3D y señal comparten un vocabulario plano de 65.536 entradas y una sola cabeza causal, de modo que cualquier modalidad puede condicionar a cualquier otra sin cabezas separadas por modalidad. El modelo se distribuye con codecs neuronales propios (audio RVQ, imagen VQ, nubes gaussianas y series temporales) que convierten señal continua a tokens y viceversa.
+Con 247.622.828 parámetros totales (aproximadamente 247,6 millones), se trata de un modelo de tamaño compacto, muy por debajo de los grandes modelos multimodales actuales. El repositorio ocupa 481,4 GB, un tamaño desproporcionado respecto al número de parámetros, lo que sugiere que la mayor parte del espacio corresponde a artefactos auxiliares (probablemente codificadores de imagen, audio y vídeo, datasets de entrenamiento o checkpoints intermedios) y no a los pesos del transformer principal.
 
-Es relevante ahora por su enfoque arquitectónico experimental: reúne en un solo bloque ideas que en la literatura abierta suelen aparecer por separado (Gated DeltaNet, MLA con compresión latente, MoE con enrutado suave, atención con ventana deslizante, RoPE parcial e intercalado). No obstante, el repositorio no incluye datos de benchmarks, licencia declarada ni evidencia de calidad de generación publicada, y el modelo no registra descargas ni interacciones en el momento de redactar esta ficha.
+El modelo soporta español e inglés, está etiquetado como compatible con endpoints y conversational, y su acceso es restringido (gated), requiriendo aceptar condiciones en Hugging Face. La licencia no está disponible en la información proporcionada, lo que supone una limitación importante para evaluar su uso comercial. A pesar de su reducido tamaño, la propuesta de cubrir cuatro modalidades de entrada y salida con solo 247 millones de parámetros invita a una evaluación prudente de sus capacidades reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `cyrah` (decodificador híbrido con Gated DeltaNet-2, MLA, MoE, convolución corta dual-gate y atención por ventana deslizante) |
+| Arquitectura | cyrah (arquitectura propia, from-scratch); transformer multimodal any-to-any |
 | Parametros totales | 247.622.828 |
-| Parametros activos | no disponible (la model card indica MoE en la mayoría de capas pero no especifica parámetros activos) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos en safetensors y GGUF) |
 | Idiomas soportados | es, en |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (librería transformers, requiere `trust_remote_code=True`) |
-| Vocabulario | 65.536 tokens (texto, audio, imagen/vídeo, 3D, señal y especiales) |
-| Capas | 14 |
-| Dimension oculta | 1024 |
-| Modalidades | 95 (texto, audio, imagen, vídeo, 3D, ciencia, meta y conversiones) |
-| Tamano del repositorio | 7,6 GB |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El backbone es un decodificador híbrido de 14 capas con dimensión oculta de 1024. La model card describe un plan de capas que alterna convolución corta y atención completa, con atención lineal (Gated DeltaNet-2) y atención deslizante disponibles por configuración. La MLP es densa en la primera capa y mezcla de expertos en el resto, con enrutado suave basado en sqrtsoftplus y sigmoid. Entre los componentes declarados figuran Attention Residuals (camino residual por capa sobre la salida de atención), RoPE parcial con QK-norm, XSA (atención con estado extra compartido entre cabezas), MLA con compresión latente de la caché KV, un indexador DSA para selección dispersa de claves, RoPE intercalado, proyección única para clave y valor (K == V) y softcapping de logits mediante `tanh`.
+La arquitectura se denomina "cyrah" y se describe como una arquitectura propia entrenada desde cero, con pipeline any-to-any. Las etiquetas del modelo indican soporte para texto, imagen, audio y vídeo, tanto en entrada como en salida, además de razonamiento y tool calling. No se dispone de información detallada sobre el tipo de bloques (transformer denso, MoE, híbrido SSM/attention), la composición exacta del encoder/decoder multimodal ni la estrategia de fusión de modalidades.
 
-El entrenamiento se describe como "autónomo y continuo" sobre datasets reales de Hugging Face (chat, razonamiento, matemáticas, tool calling y conocimiento) más un corpus sintético de identidad. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste por preferencias. El tokenizer de texto se reutiliza sin modificaciones y los rangos de modalidad se recortan de la cola del vocabulario, de forma que el embedding y la cabeza de salida permanecen atados. Los codecs neuronales (audio, imagen, gaussianas y señal) requieren un entrenamiento de reconstrucción propio, que la model card indica que se reserva dentro del bucle autónomo.
+Tampoco se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO u otras técnicas de alineación, ni innovaciones concretas como decodificación especulativa o atención lineal. El tamaño del repositorio (481,4 GB) frente a los 247,6 millones de parámetros sugiere la presencia de componentes auxiliares pesados o artefactos de entrenamiento, pero no se detalla su naturaleza en la información disponible.
 
 ## Capacidades
 
-- Generación de texto, razonamiento explícito mediante ` thinking` ... `</think>`, código, matemáticas, traducción, OCR, tablas y grafos.
-- Tool calling con el formato `<|tool_call_start|>[fn(arg='valor')]<|tool_call_end|>`.
-- Generación de audio: voz (TTS), música y efectos, además de edición de audio.
-- Generación y edición de imagen: inpaint, upscale, restauración, estilo, mapas de profundidad y normales.
-- Generación de vídeo a partir de secuencias de fotogramas codificados con el codec de imagen.
-- Modalidades 3D: nubes de puntos gaussianas y mallas.
-- Modalidades de señal: series temporales, sensores y acciones.
-- Conversión entre modalidades ("any-to-any"): entrada y salida pueden ser de cualquier tipo.
-- Control de calidad por petición mediante el parámetro `quality` (`auto`, `minimo`, `bajo`, `medio`, `alto`, `maximo`), que ajusta codebooks de audio, rejilla de imagen, fotogramas y FPS de vídeo, tokens gaussianos, tokens de señal, `top_k` y pasos de entrenamiento.
-- Multilingüe limitado a español e inglés.
-- Identidad propia declarada: responde llamarse Cyrah y atribuye su creación a Juan Ignacio Robledo.
+- Generación de texto conversacional en español e inglés.
+- Generación de imagen a partir de texto (text-to-image).
+- Generación de audio a partir de texto (text-to-audio).
+- Generación de vídeo a partir de texto (text-to-video).
+- Procesamiento de entradas multimodales (audio, imagen, vídeo) según la etiqueta any-to-any.
+- Razonamiento (etiqueta "reasoning"), sin detalle sobre modo thinking explícito.
+- Tool calling / function calling (etiqueta "tool-calling").
+- Extracción de características (feature-extraction).
+- Compatible con endpoints de Hugging Face (endpoints_compatible).
+- Orientado a uso conversacional (conversational).
 
 ## Casos de uso
 
-- Prototipado de investigación en arquitecturas híbridas: el modelo sirve como banco de pruebas para evaluar la combinación de Gated DeltaNet-2, MLA, MoE y convolución corta en un mismo bloque, con un tamaño de 247 M parámetros que permite iterar en hardware modesto.
-- Experimentación multimodal unificada: investigadores que quieran probar un flujo único de tokens para texto, audio e imagen pueden usar los métodos `image_to_tokens`, `audio_to_tokens` y `generate_any` para construir pipelines any-to-any sin cabezas separadas.
-- Generación de voz sintética controlada: mediante `CyrahAudioCodec` (24 kHz, 75 tokens/s por codebook) se puede experimentar con TTS y edición de audio, siempre que el codec se haya entrenado previamente en reconstrucción.
-- Aplicaciones de asistente conversacional bilingüe (es/en) con razonamiento explícito y tool calling, integrando el modelo en un orquestador que interprete los bloques ` thinking` y `<|tool_call_start|>`.
-- Generación y edición de imágenes de baja resolución: el `CyrahImageCodec` opera a 128x128 px con rejilla 16x16 y 256 tokens por imagen, adecuado para pruebas de concepto de generación, inpaint o upscale en entornos de investigación.
-- Conversión entre modalidades en flujos creativos: por ejemplo, describir una escena en texto y obtener tokens de imagen o de audio, o transformar una serie temporal en una representación textual, usando `generate_any` y `decode_any`.
-- Docencia y divulgación: el código y la configuración permiten ilustrar cómo se diseña un vocabulario multimodal plano y cómo se acoplan codecs neuronales a un decodificador causal.
+- Asistentes conversacionales bilingües: el modelo puede gestionar diálogos multi-turno en español e inglés, adecuado para prototipos de atención al cliente o asistentes internos donde el coste computacional debe ser bajo.
+- Generación de imágenes para prototipado rápido: útil para crear bocetos o ilustraciones de baja fidelidad en flujos de diseño, aunque la calidad esperable con 247 millones de parámetros es limitada frente a modelos dedicados.
+- Síntesis de voz para accesibilidad: la capacidad text-to-audio permite generar locuciones en aplicaciones de lectura de textos o avisos, siempre que la calidad del audio resultante sea suficiente tras evaluación.
+- Clips de vídeo cortos para demostraciones: generación de vídeo a partir de texto para contenido promocional breve o pruebas de concepto, con expectativas moderadas dada la escala del modelo.
+- Pipelines de razonamiento con herramientas: el soporte de tool calling permite integrar el modelo en agentes que consulten APIs o bases de datos, usando el modelo como orquestador ligero.
+- Extracción de características y clasificación: la tarea feature-extraction permite usar el modelo como encoder para búsqueda semántica o clustering de documentos en español e inglés.
+- Investigación en arquitecturas from-scratch: útil como base para estudiar el diseño "cyrah" y experimentar con modelos multimodales pequeños en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
@@ -62,38 +56,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 247,6 M parámetros, los pesos en fp16 ocupan aproximadamente 0,5 GB y en fp32 alrededor de 1 GB; a ello hay que sumar la caché KV y los codecs neuronales, por lo que una GPU consumer con 4-8 GB debería ser suficiente para el backbone. No se dispone de cifras oficiales de VRAM.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, RTX 4090) debería poder cargar el modelo; para entrenamiento o generación de vídeo con muchos fotogramas se recomiendan A100 o H100.
-- Cabe en GPU consumer: sí, previsiblemente en la mayoría de tarjetas con 8 GB o más, aunque la model card no publica requisitos oficiales.
-- Opciones de despliegue: la librería declarada es `transformers` con `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y al no haber pesos GGUF la inferencia en CPU requeriría conversión manual.
+- VRAM estimada para inferencia: con 247,6 millones de parámetros, los pesos en FP16 ocupan aproximadamente 0,5 GB; en cuantización de 8 bits, unos 0,25 GB; en 4 bits, unos 0,12 GB. A esto hay que sumar la memoria de los componentes multimodales (imagen, audio, vídeo), cuyo tamaño no se detalla y que podría elevar notablemente los requisitos.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) debería poder alojar los pesos del transformer principal; para los módulos multimodales se recomienda al menos 8-16 GB de VRAM, aunque el dato exacto no está disponible.
+- Cabe en GPU consumer: sí, previsiblemente en la mayoría de GPU con 8 GB o más, a falta de confirmar el coste de los componentes auxiliares.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp/Ollama para los pesos GGUF, y potencialmente vLLM o TGI si la arquitectura custom_code lo permite (no confirmado).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyrah (`Lilgarca/my-model-v02`) | 247,6 M | no disponible | Texto, audio, imagen, vídeo, 3D, señal (95 modalidades) | no disponible | Hugging Face, transformers con código remoto |
-| Qwen2.5-Omni (7B) | 7 B aprox. | 32 K aprox. (no confirmado en esta ficha) | Texto, audio, imagen, vídeo | Apache 2.0 (según versión) | Hugging Face, vLLM, transformers |
-| Llama 3.2 1B | 1,2 B | 128 K | Texto | Llama 3.2 Community License | Hugging Face, llama.cpp, Ollama, vLLM |
-| SmolVLM-256M | 256 M | 8 K aprox. | Texto e imagen | Apache 2.0 | Hugging Face, transformers |
+| Lilgarca/my-model-v02 | 247,6 M | no disponible | texto, imagen, audio, vídeo | no disponible | gated en HF |
+| Qwen2.5-Omni-7B | 7 B (aprox.) | 32 K (aprox.) | texto, audio, imagen, vídeo | Apache 2.0 (según versión) | abierto |
+| AnyGPT | ~7 B | no disponible | texto, imagen, audio, música | investigación | abierto con condiciones |
+| NExT-GPT | ~7 B | no disponible | texto, imagen, audio, vídeo | investigación | abierto con condiciones |
 
-La comparación es orientativa: Cyrah es el único de la lista que declara un vocabulario unificado para audio, imagen, vídeo y 3D, pero también el único sin benchmarks publicados ni licencia declarada, lo que limita su comparación directa en rendimiento.
+La comparación es orientativa: los modelos any-to-any abiertos de referencia se sitúan en el rango de 7.000 millones de parámetros, aproximadamente 28 veces el tamaño de my-model-v02. Esto implica que, aunque la propuesta modal es similar, la capacidad efectiva por modalidad será previsiblemente mucho menor. Los datos de contexto y licencia de my-model-v02 no están disponibles, lo que impide una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que no hay evidencia cuantitativa de calidad en ninguna modalidad.
-- La licencia no está declarada, lo que impide determinar si el uso comercial está permitido; en producción debe tratarse como no autorizado hasta que el autor la especifique.
-- El modelo tiene 247,6 M parámetros, un tamaño muy reducido para tareas de razonamiento complejo, código o matemáticas; es probable que su rendimiento quede por debajo de modelos de 7 B o más en esas áreas.
-- Los codecs de audio e imagen necesitan un entrenamiento de reconstrucción propio antes de que las salidas sean inteligibles; sin ese paso, las modalidades no textuales pueden producir resultados degenerados.
-- La longitud de contexto no está documentada, lo que dificulta planificar conversaciones multi-turno o documentos largos.
-- El soporte multilingüe se limita a español e inglés; no hay evidencia de otros idiomas.
-- Riesgo de alucinación y de respuestas de identidad inventadas: la model card menciona un corpus sintético de identidad, lo que puede sesgar las respuestas sobre sí mismo.
-- El uso requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar el repositorio antes de desplegarlo.
-- El repositorio tiene 0 descargas y 0 likes, sin validación comunitaria ni informes independientes.
-- La fecha de creación indicada (2026-11-07) es futura respecto al momento habitual de consulta, lo que puede indicar un error en los metadatos o una publicación programada.
+- Licencia no disponible: no puede confirmarse el uso comercial; es imprescindible contactar con el autor o revisar las condiciones del acceso gated antes de cualquier despliegue en producción.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la evaluación y reproducibilidad.
+- Escala reducida: con 247,6 millones de parámetros, es esperable un rendimiento limitado en razonamiento complejo, código y generación multimodal de alta fidelidad; la calidad real no está validada por benchmarks públicos.
+- Ausencia de benchmarks: no hay evidencia publicada de MMLU, HumanEval, GSM8K ni métricas multimodales, por lo que las afirmaciones de capacidad no son verificables.
+- Riesgo de alucinación: inherente a los modelos generativos pequeños, especialmente en tareas de razonamiento y respuestas factuales.
+- Sesgos: al estar entrenado desde cero por un autor individual, no se documentan procesos de filtrado de datos ni mitigación de sesgos.
+- Idiomas limitados a español e inglés; el rendimiento fuera de estos idiomas no está garantizado.
+- Arquitectura propietaria ("cyrah") con custom_code: requiere confiar en el código remoto del repositorio, lo que implica riesgos de seguridad y mantenimiento.
+- Tamaño del repositorio (481,4 GB) desproporcionado respecto a los parámetros: la descarga completa es costosa y puede incluir artefactos no necesarios para inferencia.
+- Sin datos de contexto: se desconoce la ventana máxima, lo que limita el diseño de aplicaciones con documentos largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Lilgarca/my-model-v02
 - Perfil del autor: https://huggingface.co/Lilgarca
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Sika-gpt es un modelo de lenguaje publicado en Hugging Face por el usuario sivamani-31 (identificador `sivamani-31/sika-gpt`). La información disponible sobre el modelo es muy escasa: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción, especificaciones técnicas, ni detalles sobre su arquitectura, entrenamiento o capacidades. El repositorio se creó el 31 de octubre de 2026 y no registra descargas ni me gusta en el momento de redactar esta ficha.
+Sika-GPT es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario independiente sivamani-31 en Hugging Face. Se presenta como un modelo generativo de alta eficiencia orientado a razonamiento tecnico, generacion de codigo y conversaciones de baja latencia en hardware de consumo. Con 1.543.714.304 parametros totales (aproximadamente 1.540 millones, coherente con la familia Qwen2.5-1.5B), hereda la arquitectura transformer causal de Qwen2.5 y se distribuye bajo licencia Apache 2.0.
 
-Dado que no hay documentación de origen, no es posible determinar qué problema resuelve el modelo ni qué innovaciones aporta. La única información verificable es su licencia permisiva (Apache 2.0), lo que permite su uso comercial, modificación y redistribución sin restricciones significativas. Cualquier evaluación técnica rigurosa requerirá inspeccionar directamente los archivos del repositorio (configuración, pesos, tokenizador) para determinar su naturaleza real.
+El modelo se entrena mediante QLoRA con rango 16 y alpha 32 sobre las proyecciones de atencion y MLP, en precision NF4 de 4 bits con computo mixto FP16/BF16. El autor indica que el entrenamiento es viable en una unica GPU de gama media (RTX 3060/4060) o en una T4 de Google Colab, lo que lo situa en la categoria de modelos ligeros ajustables con recursos limitados. Su propuesta de valor es la eficiencia: inferencia en CPU, portatiles y GPUs de consumo con cuantizacion de 4 y 8 bits, y compatibilidad declarada con transformers, accelerate, vLLM y Ollama.
+
+La relevancia actual del modelo es limitada pero concreta: ofrece una alternativa permisiva (Apache 2.0) para experimentacion con modelos de 1.500 millones de parametros en entornos con poca VRAM, con soporte declarado de ingles, tamil, malayo, telugu, sanscrito y chino. No obstante, la model card no aporta datos verificables sobre el proceso de entrenamiento, el volumen de datos, la composicion del dataset ni resultados de evaluacion, por lo que debe tratarse como un ajuste comunitario sin validacion independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer autorregresivo causal (Causal LM) con atencion optimizada y SwiGLU, derivado de Qwen2.5-1.5B-Instruct |
+| Parametros totales | 1.543.714.304 (aproximadamente 1.540 millones) |
+| Parametros activos | No aplica (no es un modelo MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-1.5B-Instruct soporta hasta 32.768 tokens, pero el ajuste no lo confirma) |
+| Tipos de cuantizacion | 4 bits NF4 (BitsAndBytes), 8 bits, FP16, BF16 y GGUF (segun la model card) |
+| Idiomas soportados | Ingles (en), tamil (ta), malayo (ml), telugu (te), sanscrito (sa) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | Safetensors (repo de 3,1 GB); se menciona soporte GGUF sin confirmar artefactos publicados |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo. El nombre sugiere que podría basarse en una arquitectura tipo GPT (transformer decoder-only), pero esta suposición no está confirmada por la model card ni por los metadatos del repositorio, por lo que debe tratarse como una hipótesis no verificada.
+Sika-GPT es un ajuste fino del modelo Qwen2.5-1.5B-Instruct, que emplea una arquitectura transformer causal con atencion multi-cabeza, activacion SwiGLU y normalizacion RMSNorm, ademas de codificaciones posicionales rotatorias (RoPE) en el modelo base. El autor describe la arquitectura como "AutoRegressive Transformer / Causal LM" con "atencion optimizada y SwiGLU", sin detallar modificaciones estructurales respecto al modelo original. El ajuste se realiza con QLoRA de rango 16, alpha 32 y dropout 0,05, aplicado a las proyecciones `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`, en precision NF4 de 4 bits con computo mixto FP16/BF16.
 
-Tampoco hay datos sobre el proceso de entrenamiento: número de tokens procesados, composición del corpus, uso de técnicas de alineación como RLHF o DPO, ni innovaciones técnicas destacables. La ausencia total de documentación técnica impide realizar cualquier análisis arquitectónico riguroso.
+No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la procedencia de los datos ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La model card tampoco documenta innovaciones tecnicas propias (decodificacion especulativa, atencion lineal, modos de razonamiento explicito) mas alla de las heredadas del modelo base. La unica informacion verificable sobre el entrenamiento es la configuracion de QLoRA y el requisito de hardware (una RTX 3060/4060 o una T4 de Colab), lo que sugiere un ajuste de alcance modesto y sin validacion publica del proceso.
 
 ## Capacidades
 
-No se han documentado capacidades para este modelo. La model card no describe:
-
-- Generación de texto, razonamiento, código o matemáticas
-- Soporte de tool calling / function calling
-- Soporte de agentes o razonamiento multi-paso
-- Capacidades multilingües
-- Capacidades especiales (visión, audio, thinking mode)
-
-La ausencia de pipeline tag en los metadatos de Hugging Face tampoco permite inferir la tarea para la que fue diseñado.
+- Generacion de texto conversacional multi-turno con plantilla de chat (`apply_chat_template`) y rol de sistema.
+- Generacion de codigo en Python, JavaScript, TypeScript, C++, Go y SQL, segun declara el autor.
+- Razonamiento tecnico y descomposicion de problemas ("deep problem breakdown").
+- Sintesis de resultados de busqueda web ("live web search synthesis"), aunque la model card no documenta el mecanismo de integracion ni herramientas asociadas.
+- Capacidades multilingues declaradas en ingles, tamil, malayo, telugu, sanscrito y chino.
+- Soporte de cuantizacion de 4 y 8 bits para inferencia en entornos con poca memoria.
+- Compatibilidad declarada con `transformers`, `accelerate`, `vLLM` y `Ollama`.
+- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento extendido (thinking mode). Cualquier capacidad de este tipo seria la heredada del modelo base Qwen2.5-1.5B-Instruct, sin confirmacion en este ajuste.
 
 ## Casos de uso
 
-Dada la falta de documentación, no es posible recomendar casos de uso concretos y fiables. Como orientación general, un modelo con licencia Apache 20 como este podría, en principio, emplearse en escenarios tales como:
-
-- Integración en productos comerciales: la licencia Apache 2.0 permite uso comercial, modificación y distribución sin obligación de liberar el código derivado, lo que lo haría adecuado para productos cerrados si el modelo resultara útil.
-- Investigación y experimentación: al ser un modelo sin restricciones de licencia, sirve como punto de partida para fine-tuning o estudios comparativos, siempre que se verifique previamente su calidad.
-- Despliegue local: si los pesos están disponibles en formato estándar (safetensors o GGUF), podría ejecutarse localmente con las herramientas habituales.
-
-Advertencia importante: con cero descargas registradas y sin model card, no existe evidencia de que el modelo funcione o haya sido validado. No se recomienda su uso en producción sin una evaluación previa exhaustiva.
+- Asistente de codigo en local para desarrolladores con GPU de consumo: el modelo puede generar funciones y fragmentos en varios lenguajes y ejecutarse en 4 bits con aproximadamente 4 GB de VRAM, lo que permite integrarlo en un IDE o en un script de terminal sin depender de la nube.
+- Prototipado rapido de chatbots: al ser compatible con la plantilla de chat de Qwen2.5 y con `transformers`, permite montar un servicio conversacional basico con `pipeline("text-generation")` en pocas lineas y desplegarlo en una T4 o en CPU.
+- Educacion y experimentacion con ajuste fino: su configuracion QLoRA documentada (rango 16, alpha 32) sirve como plantilla reproducible para que estudiantes entrenen sus propios ajustes sobre Qwen2.5-1.5B en Colab.
+- Generacion de codigo en pipelines de CI/CD con recursos limitados: puede emplearse para tareas auxiliares como generar docstrings, sugerir tests o resumir diffs, siempre con revision humana, dado su tamano reducido y su licencia permisiva.
+- Procesamiento multilingue para comunidades del sur de la India: el soporte declarado de tamil, malayo, telugu y sanscrito permite experimentar con resumenes o respuestas en estos idiomas, aunque sin datos de evaluacion que respalden la calidad.
+- Despliegue en entornos con CPU o edge: gracias a la cuantizacion GGUF mencionada y a su tamano de 1.500 millones de parametros, es candidato para inferencia en portatiles sin GPU dedicada, con latencias mayores que en GPU pero sin requisitos de hardware especializados.
+- Base para ajustes posteriores: al ser Apache 2.0 y estar disponible en safetensors, puede reutilizarse como punto de partida para fine-tunes especificos de dominio sin restricciones de licencia.
 
 ## Benchmarks y rendimiento
 
@@ -53,30 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Al desconocerse el número de parámetros, la arquitectura y el formato de los pesos, no es posible estimar los requisitos de hardware:
-
-- VRAM estimada para inferencia: no disponible
-- GPU recomendadas: no disponible
-- Compatibilidad con GPUs de consumo: no disponible
-- Opciones de despliegue: no disponibles oficialmente; en caso de que los pesos estén en formato estándar de Hugging Face, podrían ser compatibles con transformers, vLLM, llama.cpp u Ollama, pero esto debe verificarse inspeccionando el repositorio
-- Latencia y throughput: no disponibles
+- VRAM estimada para inferencia: aproximadamente 3,1 GB en FP16 (pesos de 1.540 millones de parametros), en torno a 0,8-1 GB en 4 bits NF4 (el autor afirma que funciona con 4 GB de VRAM en modo 4 bits), y alrededor de 1,6 GB en 8 bits.
+- GPU recomendadas: RTX 3060, RTX 4060, T4 (Google Colab) para entrenamiento QLoRA; cualquier GPU con al menos 4-8 GB de VRAM para inferencia cuantizada; A100 o H100 no son necesarias para este tamano.
+- Cabe en GPU de consumo: si, en tarjetas con 4 GB o mas de VRAM en cuantizacion de 4 bits, y en la mayoria de GPUs modernas de 8 GB o mas en FP16.
+- Opciones de despliegue: `transformers` con `device_map="auto"`, `accelerate`, `vLLM`, `Ollama` y cuantizacion BitsAndBytes; la model card menciona soporte GGUF aunque no se confirma la publicacion de artefactos en el repositorio.
+- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocerse el tamaño, la arquitectura ni la tarea del modelo, no es posible identificar alternativas comparables de forma rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Sika-GPT | 1.540 M | No disponible (heredado de Qwen2.5-1.5B, hasta 32.768 tokens) | Apache 2.0 | Hugging Face, safetensors | Ajuste QLoRA comunitario sin benchmarks publicados |
+| Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Modelo base oficial, con evaluaciones publicadas por el equipo Qwen |
+| Llama 3.2 1B Instruct | 1.240 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF | Licencia con restricciones de uso comercial y de nombrado |
+| Gemma 2 2B IT | 2.600 M | 8.192 tokens | Gemma Terms of Use | Hugging Face, safetensors y GGUF | Mayor tamano y contexto mas corto; licencia con condiciones de uso |
+
+La comparativa se limita a datos estructurales y de licencia, ya que no hay resultados de benchmarks publicados para Sika-GPT que permitan contrastar calidad frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card no contiene información técnica, de entrenamiento ni de uso previsto, lo que impide evaluar el modelo adecuadamente.
-- Sin validación comunitaria: cero descargas y cero me gusta indican que no hay retroalimentación de otros usuarios sobre su funcionamiento o calidad.
-- Riesgo de alucinación: no disponible; al desconocer los datos de entrenamiento y el proceso de alineación, no puede evaluarse la fiabilidad de sus respuestas.
-- Sesgos: no documentados; sin información sobre el corpus de entrenamiento no es posible caracterizar sesgos potenciales.
-- Idiomas: no especificados; no hay garantía de soporte para castellano o cualquier otro idioma.
-- Licencia: Apache 2.0 es permisiva y permite uso comercial, pero incluye la cláusula estándar de patentes y requiere conservar el aviso de licencia en redistribuciones.
-- Advertencia general para producción: no se recomienda desplegar este modelo en entornos de producción sin una auditoría técnica completa de sus pesos, comportamiento y seguridad.
+- Ausencia total de benchmarks y de documentacion del dataset de entrenamiento: no es posible verificar la calidad, la cobertura linguistica ni la robustez del ajuste.
+- Riesgo de alucinacion inherente a un modelo de 1.500 millones de parametros, especialmente en tareas de razonamiento profundo o sintesis de informacion web; la model card no aporta mitigaciones.
+- El soporte multilingue declarado (tamil, malayo, telugu, sanscrito, chino) no esta respaldado por evaluaciones; la calidad real en estos idiomas es desconocida y probablemente inferior a la del ingles.
+- La capacidad de "sintesis de busqueda web" no se documenta tecnicamente: no se especifica si el modelo tiene tool calling nativo o si depende de un pipeline externo del Space de demostracion.
+- La longitud de contexto efectiva del ajuste no se confirma; aunque el modelo base soporta 32.768 tokens, el fine-tune podria no mantener ese rendimiento en contextos largos.
+- Licencia Apache 2.0 permisiva para uso comercial, pero el usuario debe asumir la responsabilidad de validar el modelo en su dominio, dado que no hay garantias de calidad ni soporte del autor.
+- Modelo publicado por un autor individual, sin proceso de revision por pares ni evaluaciones de terceros; la fecha de creacion indicada (2026) y la ausencia de datos de entrenamiento dificultan la trazabilidad.
+- El repositorio es pequeno (3,1 GB) y tiene un numero muy bajo de likes (1) y descargas moderadas (977), lo que sugiere una adopcion limitada y poca validacion por la comunidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/sivamani-31/sika-gpt
-
-No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/sivamani-31/sika-gpt
+- Space de demostracion (chat web): https://huggingface.co/spaces/sivamani-31/sika-gpt-chat
+- Perfil del autor: https://huggingface.co/sivamani-31
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

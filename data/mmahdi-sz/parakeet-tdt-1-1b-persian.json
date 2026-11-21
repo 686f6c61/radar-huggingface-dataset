@@ -56,13 +56,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Speech Recognition",
-      "dataset": "FLEURS (Persian)",
-      "metric": "Test WER",
-      "value": 4.15
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

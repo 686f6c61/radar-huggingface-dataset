@@ -2,98 +2,85 @@
 
 ## Resumen
 
-Chaturanga Pro es un modelo de lenguaje pequeño (SLM) de 100.684.032 parámetros, desarrollado por DireDreadlord (Abhay Tyagi), especializado en generar jugadas de ajedrez en notación algebraica estándar (SAN) a partir de lenguaje natural. Se obtiene por fine-tuning del modelo base SupraLabs/Supra2-100M-Base sobre aproximadamente 600.000 filas del dataset mlabonne/chessllm, un corpus de partidas serializadas en texto. La model card declara arquitectura Llama y un uso previsto meramente experimental como motor de ajedrez conversacional.
+Chaturanga-Pro es un modelo de lenguaje de pequeno tamano (SLM) especializado en la generacion de jugadas de ajedrez en notacion algebraica (SAN) mediante lenguaje natural. Lo desarrolla DireDreadlord y deriva de SupraLabs/Supra2-100M-Base, un modelo base de la familia Supra2, sobre el que se ha realizado un ajuste fino supervisado con aproximadamente 600.000 filas del dataset mlabonne/chessllm. El resultado es un modelo de 100,7 millones de parametros disenado para emitir movimientos legales y coherentes con la posicion, con una huella de memoria minima.
 
-Su relevancia es práctica antes que de rendimiento bruto: con ~100 M de parámetros y un repositorio de 0,4 GB, el modelo cabe en GPUs de portátil e incluso en CPU, lo que lo convierte en un banco de pruebas asequible para investigar generación de notación estructurada, validación de jugadas y pipelines de ajedrez integrados en interfaces conversacionales. Forma parte de una familia escalonada (Nano, Neo, Mini, Pro y Ultra) que el mismo autor publica con tamaños crecientes.
+Su relevancia radica en que demuestra que un modelo de apenas 100 millones de parametros, entrenado con un presupuesto de computo muy reducido (7.000 pasos sobre una RTX 3050 de 4 GB), puede abordar una tarea estructurada como la generacion de jugadas de ajedrez. Esto lo convierte en un caso de estudio util para investigadores interesados en SLM, ajuste fino de bajo coste y evaluacion de alucinaciones en dominios con reglas estrictas. La arquitectura declarada es de tipo Llama, con licencia Apache 2.0 y pesos en formato safetensors.
 
-Conviene señalar que el autor documenta el entrenamiento en una única RTX 3050 de 4 GB de VRAM durante 7.000 pasos, de modo que el modelo es replicable por un particular. No se han publicado resultados de benchmarks, longitud de contexto ni esquemas de cuantización en la información disponible, y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
+El modelo se distribuye como una variante "Pro" dentro de una familia que el autor describe con cinco tamanos (Nano, Neo, Mini, Pro y Ultra). El uso previsto es experimental, orientado a ajedrez y a la integracion en una interfaz grafica incluida en el repositorio (chaturanga_gui.py).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Llama (según model card); las etiquetas del repositorio incluyen además `qwen3`, dato no aclarado por el autor |
-| Parametros totales | 100.684.032 (dato real de safetensors) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Llama (declarada en la model card) |
+| Parametros totales | 100.684.032 |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors; no hay GGUF ni cuantizaciones oficiales) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Modelo base | SupraLabs/Supra2-100M-Base |
-| Dataset de entrenamiento | mlabonne/chessllm (~600.000 filas en SAN) |
-| Pipeline | text-generation |
-| Tamaño del repositorio | 0,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de ~100 M de parámetros con arquitectura declarada como Llama, construido sobre Supra2-100M-Base, un modelo base de la familia Supra de SupraLabs. No se documentan innovaciones en atención, decodificación especulativa ni capas híbridas: el interés técnico está en el ajuste fino sobre un dominio muy restringido y con una gramática de salida fuertemente estructurada (SAN), no en la arquitectura.
+La model card declara una arquitectura de tipo Llama, con aproximadamente 100 millones de parametros, derivada de SupraLabs/Supra2-100M-Base. No se especifican en la informacion disponible detalles sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni longitud de contexto maxima. El ajuste fino se realizo sobre 600.000 filas del dataset mlabonne/chessllm, con las partidas templadas en notacion algebraica (SAN), durante 7.000 pasos y sobre una unica GPU RTX 3050 con 4 GB de VRAM. No se documentan tecnicas de RLHF, DPO ni innovaciones de decodificacion.
 
-El entrenamiento consistió en fine-tuning sobre aproximadamente 600.000 filas del dataset chessllm, con las partidas formateadas mediante plantillas en notación algebraica estándar, durante 7.000 pasos sobre una RTX 3050 de 4 GB. No se especifican hiperparámetros, composición exacta del dataset, número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF o DPO. El ajuste se orienta a que el modelo emita una jugada legal tras un contexto de partida, tarea que por su formato permite evaluar la corrección de forma automática.
+El planteamiento de entrenamiento es de ajuste fino supervisado de bajo coste sobre un modelo base ya preentrenado, lo que explica el tamano reducido del repositorio (0,4 GB) y la orientacion experimental del resultado. No hay informacion publica sobre la composicion exacta del corpus mas alla del dataset citado, ni sobre el numero total de tokens vistos durante el preentrenamiento del modelo base.
 
 ## Capacidades
 
-- Generación de jugadas de ajedrez en notación algebraica estándar (SAN) a partir de una posición o secuencia de jugadas descrita en lenguaje natural.
-- Conversación multi-turno orientada a partidas, según la etiqueta `conversational` del repositorio.
-- Generación de texto general, heredada del modelo base Supra2-100M-Base.
-- Integración con interfaces de usuario: el autor incluye un archivo `chaturanga_gui.py` con el modelo y una GUI de ajedrez en los ficheros subidos.
-- Compatibilidad declarada con text-generation-inference (etiqueta `text-generation-inference`).
-- Soporte de tool calling: no disponible.
-- Capacidades de agente o razonamiento multi-paso: no disponibles.
-- Multilingüismo: solo inglés declarado.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generacion de texto conversacional en ingles, orientada a la tarea de ajedrez.
+- Generacion de jugadas de ajedrez en notacion algebraica (SAN) a partir de lenguaje natural.
+- Produccion de movimientos mayoritariamente legales, segun declara el autor, con capacidad de emitir jugadas "mas completas y no ilogicas" que la variante Mini de 50M.
+- Integracion con una interfaz grafica de ajedrez incluida en el repositorio (chaturanga_gui.py).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidad multilingue limitada al ingles segun el campo `language` del repositorio.
 
 ## Casos de uso
 
-- Prototipado de un motor de ajedrez conversacional: el modelo traduce una posición descrita en texto a una jugada en SAN, lo que permite construir un chatbot de ajedrez sin depender de un motor clásico basado en búsqueda; su tamaño de ~100 M facilita iterar rápido en local.
-- Generación de datos sintéticos de ajedrez: sirve para producir secuencias de jugadas etiquetadas que luego se filtran por legalidad con una librería como python-chess, útil para ampliar datasets de entrenamiento de modelos mayores.
-- Evaluación de robustez en notación estructurada: al ser un SLM entrenado exclusivamente en SAN, es un caso de estudio controlado para medir tasas de formato inválido y alucinación en salidas con gramática rígida.
-- Educación y análisis de partidas: integrado en una GUI o notebook, permite explicar en inglés por qué se sugiere una jugada concreta, siempre con verificación externa de legalidad.
-- Despliegue en entornos con recursos mínimos: al ocupar ~0,4 GB en safetensors y caber cuantizado en menos de 100 MB, puede ejecutarse en CPU o en GPUs de portátil para demos offline o entornos embebidos.
-- Investigación sobre escalado de SLMs en dominios cerrados: la familia Chaturanga (Nano 25 M, Mini 50 M, Pro 100 M) permite estudiar la relación entre parámetros y tasa de jugadas legales con un mismo pipeline de datos.
-- Componente de pruebas en CI: al ser determinista en formato y barato de ejecutar, puede actuar como caso de test en pipelines que validen generación estructurada antes de desplegar modelos mayores.
+- Prototipado de motores de ajedrez basados en lenguaje natural: el modelo permite experimentar con la generacion de jugadas en SAN sin necesidad de un motor clasico, usando una GPU de gama baja o CPU.
+- Educacion y divulgacion: puede emplearse en demostraciones sobre como un SLM aborda un dominio con reglas formales y donde las alucinaciones se detectan facilmente mediante validacion de legalidad.
+- Investigacion sobre alucinacion en dominios estructurados: al ser un modelo de 100M con alta tasa potencial de jugadas ilegales, sirve como banco de pruebas para metodos de verificacion y correccion de salidas.
+- Integracion en interfaces interactivas de ajedrez: el script chaturanga_gui.py incluido permite montar una GUI de juego local con el modelo como generador de jugadas.
+- Evaluacion comparativa de variantes de una familia: al existir versiones Nano, Neo, Mini, Pro y Ultra, permite medir el efecto del tamano sobre la legalidad y coherencia de las jugadas.
+- Despliegue en entornos con recursos muy limitados: con 100M de parametros y pesos safetensors de 0,4 GB, puede ejecutarse en portatiles y dispositivos sin GPU dedicada para pruebas de concepto.
+- Generacion de datos sinteticos de ajedrez para experimentos de ajuste fino o evaluacion de parsers de SAN, siempre con validacion posterior de legalidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de precisión de jugadas legales, perplejidad, MMLU, HumanEval ni GSM8K, ni comparaciones cuantitativas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~0,4 GB en fp32, ~0,2 GB en fp16/bf16, ~0,1 GB en int8 y ~0,05 GB en 4 bits, calculado a partir de los 100.684.032 parámetros (sin contar caché KV, que será reducida dada la ausencia de contexto declarado).
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más; el propio autor entrenó el modelo en una RTX 3050 de 4 GB. Una RTX 4090, A100 o H100 están sobradamente dimensionadas y solo tendrían sentido para servir muchas peticiones en paralelo.
-- Cabe en GPU consumer: sí, en cualquier GPU moderna (GTX 1650, RTX 3050, RTX 4060, etc.) e incluso en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: `transformers` (ruta directa con safetensors), text-generation-inference (etiqueta declarada por el autor), y servidores genéricos compatibles con safetensors. Para llama.cpp u Ollama sería necesaria una conversión a GGUF no publicada por el autor.
-- Latencia y throughput estimados: no disponibles. No se han publicado medidas de tokens por segundo ni de tiempo por jugada.
+- VRAM estimada para inferencia: el modelo tiene 100,7 millones de parametros; en precision completa (fp32) son aproximadamente 0,4 GB de pesos, en fp16 alrededor de 0,2 GB y en cuantizaciones de 8 bits o 4 bits por debajo de 0,15 GB. La VRAM efectiva depende tambien del contexto y del runtime, dato no disponible.
+- GPU recomendadas: el autor entreno el modelo en una RTX 3050 de 4 GB, por lo que GPUs consumer de gama baja son suficientes para inferencia. No se especifican recomendaciones adicionales.
+- Cabe en GPU consumer: si, en tarjetas con 4 GB o mas, y previsiblemente en muchas integradas.
+- Opciones de despliegue: el repositorio incluye `chaturanga_gui.py`; los tags mencionan text-generation-inference. No se documentan configuraciones para vLLM, llama.cpp, Ollama o TGI mas alla del tag.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chaturanga Pro | ~100 M (100.684.032) | no disponible | ~600.000 filas de chessllm, 7.000 pasos | apache-2.0 | safetensors en Hugging Face |
-| Chaturanga Mini | ~50 M | no disponible | fine-tuning sobre chessllm (número de filas no disponible) | no disponible en la información | Hugging Face |
-| Chaturanga Nano | ~25 M | no disponible | 200.000 filas de chessllm | no disponible en la información | Hugging Face |
-| Supra2-100M-Base | ~100 M | no disponible | modelo base generalista, sin fine-tuning de ajedrez | no disponible en la información | Hugging Face (SupraLabs) |
+| Chaturanga-Pro | 100,7 M | no disponible | Ajedrez en SAN | Apache 2.0 | Hugging Face |
+| SupraLabs/Supra2-100M-Base | ~100 M | no disponible | Base de texto | no disponible en la informacion | Hugging Face |
+| Chaturanga Mini (variante del autor) | ~50 M | no disponible | Ajedrez en SAN | Apache 2.0 (segun familia) | Hugging Face |
 
-No se conocen en la información proporcionada otros SLM públicos especializados en generación de jugadas de ajedrez en SAN con los que establecer una comparación cuantitativa. La comparación con modelos generalistas del mismo orden de parámetros resultaría poco informativa, ya que no se han publicado métricas del dominio.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Con solo ~100 M de parámetros, la model card advierte explícitamente de que pueden producirse alucinaciones y jugadas ilegales; toda salida debe validarse con un motor o librería de reglas (por ejemplo, python-chess) antes de usarse.
-- El modelo está pensado únicamente para uso experimental, según indica el propio autor; no debe tratarse como sustituto de un motor de ajedrez clásico.
-- Solo se declara soporte de inglés, lo que limita interfaces en castellano u otros idiomas sin traducción previa.
-- No se documenta longitud de contexto, por lo que se desconoce cuántas jugadas previas puede manejar de forma fiable; en partidas largas es esperable degradación.
-- La licencia apache-2.0 permite uso comercial y modificación con atribución, pero el autor desaconseja explícitamente el uso en producción por la fiabilidad limitada del modelo.
-- Existe una inconsistencia documental: el README se titula "Chaturanga Mini" mientras el repositorio es `Chaturanga-Pro`, y las etiquetas incluyen `qwen3` pese a que la model card declara arquitectura Llama; conviene verificar la arquitectura real antes de integrarla.
-- El repositorio no registra descargas ni valoraciones, y la ruta del logo referenciada (`./chaturanga_pro_logo.png`) puede no estar disponible; el soporte de la comunidad es mínimo.
-- No se han publicado evaluaciones independientes de sesgo, toxicidad o robustez.
+- El modelo solo tiene 100 millones de parametros, por lo que pueden producirse alucinaciones y jugadas ilegales, tal como advierte el autor.
+- Uso experimental unicamente; no esta pensado como motor de ajedrez de produccion ni como sustituto de motores clasicos.
+- Idioma limitado al ingles segun los metadatos del repositorio.
+- No se documenta la longitud de contexto, lo que impide garantizar el manejo de partidas largas o historiales extensos.
+- Riesgo de sesgo derivado del dataset mlabonne/chessllm, cuya composicion y cobertura de aperturas, niveles de juego y estilos no se detalla en la informacion disponible.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, la propia model card restringe el uso previsto a fines experimentales; conviene validar la legalidad de cada jugada antes de cualquier aplicacion real.
+- No se documentan cuantizaciones oficiales ni garantias de compatibilidad con runtimes concretos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DireDreadlord/Chaturanga-Pro
 - Modelo base: https://huggingface.co/SupraLabs/Supra2-100M-Base
-- Colección de la familia Supra2: https://huggingface.co/collections/SupraLabs/supra2
+- Coleccion de la familia Supra2: https://huggingface.co/collections/SupraLabs/supra2
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/chessllm
-- Variante Mini: https://huggingface.co/DireDreadlord/Chaturanga-Mini
-- Variante Nano: https://huggingface.co/DireDreadlord/Chaturanga-Nano
-- Perfil del autor: https://huggingface.co/DireDreadlord
-- Repositorio GitHub con el mismo nombre (proyecto independiente de ajedrez IA vs IA, sin relación confirmada con este modelo): https://github.com/DSiddharth24/Chaturanga

@@ -83,7 +83,7 @@
     "region:us"
   ],
   "likes": 139,
-  "downloads_30d": 775,
+  "downloads_30d": 769,
   "trending_score": 11,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
@@ -122,6 +122,30 @@
       "value": 79.48
     },
     {
+      "task": "Legal Reasoning",
+      "dataset": "LEXam (MCQ",
+      "metric": "Accuracy (majority vote, 4 samples, 32K thinking)",
+      "value": 68.94
+    },
+    {
+      "task": "Legal Reasoning (open-ended)",
+      "dataset": "LEXam-hard",
+      "metric": "Judge score (DeepSeek-R1-0528, single sample)",
+      "value": 45.72
+    },
+    {
+      "task": "Multilingual Document Parsing",
+      "dataset": "MDPBench (public)",
+      "metric": "Overall (official scoring, thinking on)",
+      "value": 83.65
+    },
+    {
+      "task": "Structured Output Compliance",
+      "dataset": "IFStruct v1.0",
+      "metric": "Pass rate (official harness, temperature 0, thinking on)",
+      "value": 98.95
+    },
+    {
       "task": "Competition Mathematics",
       "dataset": "AIME 2026",
       "metric": "Accuracy (majority vote, 16 samples, 131K thinking)",
@@ -146,31 +170,5 @@
       "value": 96.59
     }
   ],
-  "sources": [
-    {
-      "title": "Reading an official Hugging Face leaderboard: protocols, majority ...",
-      "url": "https://dev.to/ai_openfree_b23025ef075cf/reading-an-official-hugging-face-leaderboard-protocols-majority-vote-and-reproducibility-2oon",
-      "snippet": "vor 6 Stunden ... Reproducing. All five benchmarks are public datasets and the weights are open at huggingface.co/FINAL-Bench/Darwin-180B-RSI. Serving requires ..."
-    },
-    {
-      "title": "18 Sep 1954 - Advertising - Trove",
-      "url": "https://trove.nla.gov.au/newspaper/article/18457448",
-      "snippet": "DARWIN N T. 20th and 30th SEPTEMBER and. lit OCTOBER 1954. Commencing each day ... models etc from 25 ai 0 smal. Micro and M»rcury Switches. LX1296 after 12."
-    },
-    {
-      "title": "Models – Hugging Face - qwen",
-      "url": "https://huggingface.co/models?other=qwen",
-      "snippet": "peonist-ai/halogen-qwen3.8-flash-next. Text Generation • Updated in about ... FINAL-Bench/Darwin-180B-RSI. Image-Text-to-Text • 180B • Updated in about 7 ..."
-    },
-    {
-      "title": "Posts - Hugging Face",
-      "url": "https://huggingface.co/posts",
-      "snippet": "FINAL-Bench/pocket-models-6a618ee5d23eafb7e185a5c6 ... Darwin-180B-RSI — an AI that learns from itself and knows when it's right FINAL-Bench/Darwin-180B-RSI"
-    },
-    {
-      "title": "Alan's ASI indicators (first 50) - LifeArchitect.ai",
-      "url": "https://lifearchitect.ai/asi/",
-      "snippet": "Recursive self-improvement (RSI) in production: the model made itself cheaper and faster to run. Via Codex it played an 'instrumental role' across routing, ..."
-    }
-  ]
+  "sources": []
 }

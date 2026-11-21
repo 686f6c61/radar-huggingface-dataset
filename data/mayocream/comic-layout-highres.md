@@ -2,125 +2,108 @@
 
 ## Resumen
 
-Comic Layout HighRes es un modelo de segmentación de instancias basado en RF-DETR Seg 2XL, desarrollado por el usuario mayocream, especializado en el análisis de maquetación de páginas de manga. Predice cajas delimitadoras y máscaras de instancia para cuatro clases: texto, onomatopeyas, bocadillos y viñetas. No realiza OCR ni determina el orden de lectura; su función es exclusivamente estructural, sirviendo como etapa previa en pipelines de traducción, digitalización o remaquetación de cómics.
+Koharu Layout HighRes es un modelo de segmentación de instancias y detección de objetos especializado en el análisis de maquetación (layout analysis) de páginas de manga. Lo desarrolla Mayo Takanashi (usuario `mayocream`) como componente del proyecto Koharu, una herramienta de código abierto para el procesamiento de cómics japoneses. El modelo resuelve un problema muy concreto: localizar y segmentar las regiones fundamentales de una página de manga (texto, onomatopeyas, bocadillos y viñetas) para que puedan procesarse después en flujos de traducción, limpieza o reedición.
 
-El modelo sustituye a la versión anterior `koharu-layout-rfdetr-seg-2xl-1152`, pero no es un reemplazo directo: opera sobre páginas con letterboxing a un lienzo de 1920 × 1920 píxeles, preservando la relación de aspecto original, y emplea embeddings posicionales de mayor tamaño. Cuenta con 46.596.271 parámetros y se distribuye en formato safetensors con pesos en float32 (EMA).
+Técnicamente es un RF-DETR Seg 2XL, es decir, un detector transformer basado en la familia DETR (DEtection TRansformer) afinado para segmentación de instancias, con 46.596.271 parámetros y un peso de repositorio de aproximadamente 0,2 GB. Sucesor del modelo `koharu-layout-rfdetr-seg-2xl-1152`, mejora de forma notable la detección de texto y efectos de sonido gracias a un entrenamiento en dos etapas con resolución de entrada creciente.
 
-Su relevancia radica en la mejora sustancial frente a su predecesor en las clases más difíciles (texto y efectos de sonido), manteniendo un rendimiento prácticamente idéntico en bocadillos y viñetas. Está entrenado exclusivamente con datos de Manga109, por lo que su dominio es el manga japonés.
+Es relevante ahora porque el análisis de maquetación es el primer paso obligatorio en cualquier pipeline de traducción automática de manga: sin una detección fiable de bocadillos, texto y onomatopeyas, ni el OCR ni la reconstrucción de la imagen funcionan bien. El modelo se publica con licencia Apache 2.0, lo que facilita su integración en productos comerciales, y está entrenado específicamente sobre el corpus japonés Manga109.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | RF-DETR Seg 2XL (transformer detector con cabeza de segmentación) |
-| Parametros totales | 46.596.271 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica; resolución de entrada 1920 × 1920 px |
-| Tipos de cuantizacion | no disponible (pesos publicados en float32) |
-| Idiomas soportados | ja (japonés, por el dominio de los datos) |
-| Licencia | all-rights-reserved (other) |
-| Formato de pesos | safetensors |
-| Pipeline | image-segmentation |
-| Libreria | rfdetr (versión 1.7.0) |
-| Detecciones por imagen | hasta 160 |
-| Clases | text, onomatopoeia, bubble, panel |
-| Dataset de entrenamiento | mayocream/manga109-segmentation v3.0.0 |
-| Tamano del repo | 0.2 GB |
+| Arquitectura | RF-DETR Seg 2XL (detector transformer DETR con cabeza de segmentación de instancias) |
+| Parámetros totales | 46.596.271 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de lenguaje) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | japonés (`ja`); el modelo procesa imágenes, no texto |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`model.safetensors`), más `config.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en RF-DETR Seg 2XL, una arquitectura de detección y segmentación de instancias de tipo transformer. La cabeza de predicción produce cajas y máscaras para cuatro clases más un logit adicional que representa la ausencia de clase (el quinto logit). Se emplean embeddings posicionales de mayor resolución que en la variante de 1152 píxeles, lo que permite procesar el lienzo de 1920 × 1920 sin deformar las páginas.
+El modelo parte de RF-DETR Seg 2XL, un detector de la familia DETR que combina un backbone de extracción de características con un decoder transformer que predice conjuntos de cajas y máscaras de instancia de forma directa, sin necesidad de anclas ni de supresión no máxima clásica. La cabeza de segmentación añade predicciones de máscara por instancia, de modo que el modelo devuelve simultáneamente cajas delimitadoras y máscaras para cuatro clases: `text` (diálogo, rótulos y títulos que no son efectos), `onomatopoeia` (efectos de sonido), `bubble` (bocadillos) y `panel` (viñetas).
 
-El entrenamiento utiliza el dataset `manga109-segmentation` en su versión 3.0.0. Las cajas de texto provienen de las anotaciones de Manga109 v2026 (la información disponible se interrumpe en este punto). Las páginas se someten a letterboxing: se redimensiona el lado largo a 1920 px (interpolación por área al reducir, bilinear al ampliar), se coloca la página en la esquina superior izquierda del lienzo y se rellena el resto con blanco. El modelo no ha visto páginas estiradas a un cuadrado, a diferencia de la versión anterior. Los pesos publicados corresponden a la media móvil exponencial (EMA) en float32.
+El entrenamiento se realizó por ajuste fino a partir del modelo `koharu-layout-rfdetr-seg-2xl-1152`, en dos etapas con resolución de entrada creciente, sobre el dataset `mayocream/manga109-segmentation` v3.0.0. Las imágenes de entrenamiento proceden de la release de Manga109 y no se redistribuyen con el modelo. El cómputo empleado fueron 4 GPU NVIDIA H200. No se documentan en la información disponible detalles sobre composición exacta del dataset, número de tokens (no aplica) ni uso de RLHF/DPO, que tampoco procede en un modelo de visión.
 
 ## Capacidades
 
-- Detección de cajas delimitadoras para cuatro clases de elementos de maquetación de manga.
-- Segmentación de instancias con máscaras por píxel para cada detección.
-- Clase `text`: diálogo, rótulos, títulos y otro texto que no sea efecto de sonido.
-- Clase `onomatopoeia`: efectos de sonido (SFX).
-- Clase `bubble`: bocadillos de diálogo y de texto.
-- Clase `panel`: viñetas.
-- Procesamiento de páginas individuales y de dobles páginas (spreads).
-- Umbrales de confianza recomendados por clase, ajustados sobre el conjunto de validación.
-- No realiza OCR: no extrae el contenido textual de las cajas.
-- No determina el orden de lectura de las viñetas ni de los bocadillos.
-- No soporta tool calling ni capacidades de agente; es un modelo puramente perceptivo.
+- Detección de objetos y segmentación de instancias en páginas de manga, con cuatro clases: texto, onomatopeyas, bocadillos y viñetas.
+- Predicción conjunta de cajas delimitadoras (box AP) y máscaras por instancia (mask AP).
+- Manejo tanto de páginas individuales como de dobles páginas (spreads).
+- Funcionamiento a resolución de página completa, con capacidad de hasta 160 detecciones por imagen.
+- Especialización en manga japonés, incluido texto vertical dentro de bocadillos.
+- No realiza OCR ni determina el orden de lectura; es exclusivamente un modelo de maquetación.
+- No dispone de tool calling, razonamiento multi-paso ni capacidades de lenguaje: es un modelo puramente visual.
 
 ## Casos de uso
 
-- Digitalización y catalogación de archivos de manga: el modelo permite indexar automáticamente páginas por viñetas, bocadillos y texto, facilitando la búsqueda y navegación estructural en colecciones digitales de gran volumen.
-- Preprocesado para pipelines de traducción automática: al aislar las cajas de texto y bocadillos, un sistema posterior de OCR y traducción puede procesar únicamente las regiones relevantes, reduciendo errores y coste computacional.
-- Limpieza y retoque (inpainting) de páginas escaneadas: las máscaras de texto y onomatopeyas permiten eliminar o sustituir texto original para su relettering en ediciones localizadas.
-- Remaquetación y reedición: las máscaras de viñetas posibilitan recortar, reordenar o recomponer páginas para formatos alternativos (webtoon, lectura en móvil, impresión a otro tamaño).
-- Análisis editorial y estadísticas de estilo: la detección sistemática de bocadillos, viñetas y SFX permite medir densidad de diálogo, número de viñetas por página o uso de onomatopeyas en corpus de autores y obras.
-- Herramientas de asistencia a traductores y editores: integrado en una interfaz gráfica, el modelo resalta automáticamente las regiones de texto y bocadillos para agilizar la anotación manual y la asignación de traducciones.
-- Control de calidad en escaneos: la detección de viñetas y texto sirve para verificar que las páginas se han digitalizado completas y con la estructura esperada.
+- Pipeline de traducción automática de manga: el modelo actúa como primer eslabón detectando bocadillos y regiones de texto, que después se recortan y se envían a un motor de OCR y a un traductor. La alta precisión en la caja de texto (0,852 en test) reduce los recortes fallidos.
+- Limpieza y reedición de páginas (redrawing): las máscaras de texto y onomatopeyas permiten enmascarar las regiones a borrar y reconstruir el fondo antes de rotular la traducción.
+- Maquetación y reflow de cómics: la detección de viñetas (`panel`) con AP en torno a 0,92–0,95 permite segmentar la página en viñetas para reordenarlas, recortarlas o adaptarlas a formato vertical para lectura en móvil.
+- Indexación y archivado de colecciones: procesar lotes de páginas para extraer metadatos estructurales (número de viñetas, presencia de texto, efectos) y construir índices o sistemas de búsqueda sobre bibliotecas de manga.
+- Herramientas de asistencia a traductores y editores: integrado en Koharu, el modelo preanota las regiones de una página para que el operador humano solo revise y corrija, acelerando el trabajo editorial.
+- Control de calidad y preprocesado en datasets: filtrar o clasificar páginas según su estructura, o generar anotaciones preliminares que se validen manualmente antes de entrenar otros modelos.
+- Análisis académico de corpus de manga: cuantificar la densidad de texto, la proporción de efectos de sonido o la distribución de viñetas en un corpus para estudios de estilo o de evolución gráfica.
 
 ## Benchmarks y rendimiento
 
-Resultados COCO AP 50:95 evaluados contra `manga109-segmentation` v3.0.0 a resolución de página, con hasta 160 detecciones por imagen. El modelo de 1152 se ejecutó con su propia entrada, estirada a 1152.
+Resultados de COCO AP 50:95 frente a `manga109-segmentation` v3.0.0 a resolución de página, con hasta 160 detecciones por imagen, comparando con el modelo predecesor `koharu-layout-rfdetr-seg-2xl-1152`.
 
-Conjunto de test (1.908 páginas individuales y 969 dobles páginas):
+Split de test (1.908 páginas individuales y 969 dobles páginas):
 
 | Vista | Modelo | Box AP | Mask AP | Text box | SFX box | Text mask | SFX mask |
 |---|---|---:|---:|---:|---:|---:|---:|
-| Páginas | 1152 | 0.653 | 0.631 | 0.502 | 0.226 | 0.348 | 0.277 |
-| Páginas | HighRes | 0.824 | 0.701 | 0.852 | 0.556 | 0.536 | 0.365 |
-| Spreads | 1152 | 0.649 | 0.590 | 0.509 | 0.236 | 0.265 | 0.219 |
-| Spreads | HighRes | 0.803 | 0.660 | 0.840 | 0.511 | 0.443 | 0.313 |
+| Páginas | 1152 | 0,653 | 0,631 | 0,502 | 0,226 | 0,348 | 0,277 |
+| Páginas | **este modelo** | **0,824** | **0,701** | **0,852** | **0,556** | **0,536** | **0,365** |
+| Spreads | 1152 | 0,649 | 0,590 | 0,509 | 0,236 | 0,265 | 0,219 |
+| Spreads | **este modelo** | **0,803** | **0,660** | **0,840** | **0,511** | **0,443** | **0,313** |
 
-Conjunto de validación (1.964 páginas y 1.001 spreads):
+Split de validación (1.964 páginas y 1.001 spreads):
 
 | Vista | Modelo | Box AP | Mask AP | SFX box | Text mask | SFX mask |
 |---|---|---:|---:|---:|---:|---:|
-| Páginas | 1152 | 0.669 | 0.626 | 0.220 | 0.354 | 0.227 |
-| Páginas | HighRes | 0.814 | 0.691 | 0.496 | 0.542 | 0.294 |
-| Spreads | 1152 | 0.659 | 0.584 | 0.206 | 0.267 | 0.174 |
-| Spreads | HighRes | 0.790 | 0.651 | 0.437 | 0.447 | 0.250 |
+| Páginas | 1152 | 0,669 | 0,626 | 0,220 | 0,354 | 0,227 |
+| Páginas | **este modelo** | **0,814** | **0,691** | **0,496** | **0,542** | **0,294** |
+| Spreads | 1152 | 0,659 | 0,584 | 0,206 | 0,267 | 0,174 |
+| Spreads | **este modelo** | **0,790** | **0,651** | **0,437** | **0,447** | **0,250** |
 
-Bocadillos y viñetas presentan un AP similar en ambos modelos: caja 0.92–0.95, máscara 0.92–0.97.
-
-Umbrales recomendados y precisión/recall en validación:
-
-| Clase | Umbral | Precisión | Recall |
-|---|---:|---:|---:|
-| text | 0.25 | 0.890 | 0.985 |
-| onomatopoeia | 0.30 | 0.726 | 0.776 |
-| bubble | 0.50 | 0.975 | 0.975 |
-| panel | 0.40 | 0.983 | 0.981 |
+Según la model card, el AP de bocadillos y viñetas es aproximadamente el mismo en ambos modelos: caja 0,92–0,95 y máscara 0,92–0,97. La mejora se concentra en texto y efectos de sonido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 46,6 M de parámetros en float32, los pesos ocupan aproximadamente 186 MB, pero la resolución de 1920 × 1920 y la cabeza de segmentación incrementan notablemente el consumo de memoria de activaciones.
-- GPU recomendadas: no disponible. El autor recomienda encarecidamente el uso de CUDA y calcula los resultados bajo autocast en bfloat16.
-- GPU de consumo: no disponible. No se especifica si cabe en tarjetas consumer; el tamaño de pesos es reducido, pero la resolución de entrada es elevada.
-- Opciones de despliegue: librería `rfdetr` versión 1.7.0, junto con `safetensors`, `huggingface_hub`, `opencv-python` y `pillow`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 46,6 millones de parámetros y pesos en fp32 el modelo ocupa del orden de 0,2 GB, por lo que la VRAM necesaria es modesta y el cuello de botella es la resolución de entrada (páginas completas), no el tamaño del modelo.
+- GPU recomendadas: cualquier GPU con suficiente memoria para procesar imágenes a resolución de página; el entrenamiento se hizo en 4 × NVIDIA H200, pero la inferencia no requiere ese hardware.
+- Cabe en GPU de consumo: sí, con alta probabilidad en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, dado el reducido tamaño del modelo; la viabilidad exacta depende de la resolución de entrada y del tamaño de lote.
+- Opciones de despliegue: la librería indicada es `rfdetr`; no se documentan en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI (no aplican a un modelo de visión de este tipo).
 - Latencia y throughput: no disponible.
-- Nota: en float32, una detección justo en el umbral puede quedar del lado opuesto; se recomienda bfloat16 para reproducir los resultados publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Entrada | Box AP (test, páginas) | Mask AP (test, páginas) | Licencia |
-|---|---|---:|---:|---:|---|
-| Comic Layout HighRes | 46,6 M | 1920 × 1920 con letterbox | 0.824 | 0.701 | all-rights-reserved |
-| koharu-layout-rfdetr-seg-2xl-1152 | no disponible | 1152 × 1152 estirado | 0.653 | 0.631 | no disponible |
+| Modelo | Parámetros | Tarea | Box AP (test, páginas) | Mask AP (test, páginas) | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| **comic-layout-highres** (este) | 46,6 M | Detección + segmentación de layout de manga | 0,824 | 0,701 | Apache 2.0 | Hugging Face |
+| koharu-layout-rfdetr-seg-2xl-1152 | no disponible | Detección + segmentación de layout de manga | 0,653 | 0,631 | no disponible en la información | Hugging Face |
+| Otros modelos de layout de manga | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre otros modelos comparables de análisis de maquetación de manga en la documentación proporcionada.
+La única comparación directa documentada es con su predecesor, sobre el que mejora 17,1 puntos de Box AP y 7,0 puntos de Mask AP en páginas del split de test, con un salto especialmente marcado en detección de texto (de 0,502 a 0,852). No se dispone de datos de benchmarks frente a alternativas de otros autores.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente con Manga109, por lo que su generalización a otros estilos de cómic (occidental, webtoon, manhwa) no está validada.
-- Las etiquetas de entrenamiento dejan sin anotar mucho texto real (encabezados, rótulos, notas del autor, parte del diálogo), lo que hace que los umbrales altos parezcan mejores de lo que son; por eso el umbral de texto se fija en 0,25, por debajo de su óptimo F1 de 0,53.
-- No realiza OCR ni orden de lectura: requiere etapas posteriores para extraer texto y secuenciar la lectura.
-- No es un reemplazo directo del modelo de 1152: exige un preprocesado distinto (letterbox a 1920, página arriba a la izquierda, relleno blanco) y no debe estirarse a un cuadrado.
-- Los resultados en float32 pueden diferir de los publicados en bfloat16 para detecciones cercanas al umbral.
-- Licencia `all-rights-reserved`: restringe el uso comercial y cualquier redistribución; es necesario consultar el archivo LICENSE del repositorio.
-- Riesgo de alucinación inherente a los detectores: pueden aparecer detecciones espurias o duplicadas, mitigadas parcialmente por la supresión de no máximos (NMS) a IoU 0,5 por clase.
-- El modelo se publicó con 0 descargas y 0 likes, por lo que no hay evidencia de uso en producción ni validación independiente.
+- Líneas cortas dentro de bocadillos (por ejemplo «!», «で?» o una sola palabra) a veces se clasifican como onomatopeya en lugar de texto; las etiquetas de entrenamiento incluyen efectos dentro de bocadillos, por lo que el límite es difuso.
+- La misma rotulación puede detectarse dos veces: como texto y como onomatopeya, o como fragmentos anidados dentro de un efecto mayor.
+- Las etiquetas de nombre de personaje y rótulos similares de webcómics en color se pierden en la mayoría de los casos, porque Manga109 no contiene ese tipo de elementos.
+- Números de página, encabezados y líneas de copyright pueden detectarse como texto.
+- En cómics en color, decoraciones como destellos, gotas de sudor o corazones pueden detectarse como onomatopeyas.
+- Entrenado solo con manga japonés: otros estilos de cómic y otros sistemas de escritura pueden comportarse de forma distinta.
+- No realiza OCR ni orden de lectura; debe combinarse con otros componentes para un pipeline completo.
+- Licencia Apache 2.0 permisiva para uso comercial; el aviso de RF-DETR (también Apache 2.0) se incluye en `NOTICE`. Las imágenes de Manga109 no se redistribuyen y siguen sujetas a sus propios términos.
+- Integridad de pesos verificable mediante SHA-256 de `model.safetensors`: `03de2f77281974f5084cdd8652ace2b55dc15ac0378aed66654e62537cdda255`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mayocream/comic-layout-highres
 - Modelo predecesor: https://huggingface.co/mayocream/koharu-layout-rfdetr-seg-2xl-1152
 - Dataset de entrenamiento: https://huggingface.co/datasets/mayocream/manga109-segmentation
+- Proyecto Koharu: https://github.com/koharu-rs/koharu

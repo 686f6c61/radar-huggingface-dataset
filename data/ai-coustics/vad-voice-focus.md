@@ -2,101 +2,109 @@
 
 ## Resumen
 
-VAD Voice Focus es un modelo de detección de actividad de voz (VAD) desarrollado por ai-coustics, orientado específicamente al turn-taking del hablante principal en agentes de voz. A diferencia de un VAD genérico, el modelo decide cuándo habla el interlocutor primario directamente sobre audio de micrófono con ruido, ignorando voces competidoras y habla de fondo. Está diseñado para funcionar sin un denoiser separado, en paralelo o de forma independiente a la mejora de voz, y la propia model card lo sitúa por encima de Silero VAD en precisión, equilibrio y fiabilidad.
+VAD Voice Focus es un modelo de deteccion de actividad de voz (VAD) orientado a produccion, desarrollado por ai-coustics, que decide cuando habla el hablante principal directamente sobre audio de microfono ruidoso, ignorando voces competidoras y habla de fondo. Esta disenado especificamente para la gestion de turnos (turn-taking) de agentes de voz, donde es critico distinguir al usuario principal de otras personas presentes en el entorno. La model card lo posiciona como la opcion preferente frente a encadenar la mejora de voz Quail Voice Focus con VAD Multi Speaker, y afirma que funciona sin un denoiser separado.
 
-El modelo se distribuye a través del paquete `aic-sdk` (Python, Rust, C/C++, Node.js y WebAssembly) y no requiere GPU ni dependencia de ONNX. La inferencia opera sobre bloques de audio mono en float32 sin modificar la señal, solo analizándola, con una latencia declarada de 30 ms. La versión referenciada en los ejemplos de uso es `vad-vf-2.0-s-16khz`, lo que sugiere procesamiento a 16 kHz.
+El modelo no es un LLM ni un transformer generativo: se trata de un detector binario de voz por bloques de audio, con una latencia declarada de 30 ms, sin necesidad de GPU y sin dependencia de ONNX. Su relevancia actual radica en que los pipelines de agentes de voz en produccion necesitan VAD robusto al ruido y selectivo por hablante para evitar activaciones falsas provocadas por voces de fondo, television o conversaciones paralelas.
 
-La relevancia actual del modelo reside en su encaje en stacks de agentes conversacionales en producción: permite un turn-taking robusto en entornos ruidosos sin encadenar un modelo de aislamiento de voz con un VAD multi-hablante, reduciendo la complejidad del pipeline y la latencia acumulada. La información pública disponible no detalla arquitectura interna, número de parámetros ni composición del dataset de entrenamiento.
+La inferencia se ejecuta a traves del paquete `aic-sdk` (disponible en Python, Rust, C/C++, Node.js y WebAssembly), lo que implica una dependencia de SDK propietario y de una clave de licencia para su uso. El modelo se distribuye bajo la ai-coustics-model-license, no como pesos abiertos en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (procesa audio por bloques en tiempo real) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | ai-coustics-model-license (license: other) |
-| Formato de pesos | no disponible; distribución vía `aic-sdk` (modelo descargado con `aic.Model.download`) |
+| Arquitectura | No disponible (detector VAD por bloques de audio; no se especifica la red) |
+| Parametros totales | No disponible |
+| Parametros activos | No aplica (no es un modelo MoE) |
+| Longitud de contexto | No aplica (procesamiento en tiempo real por bloques de audio) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Independiente del idioma (language-agnostic) |
+| Licencia | ai-coustics-model-license (propietaria, enlace: https://ai-coustics.com/legal/model-license) |
+| Formato de pesos | No disponible (consumido a traves de `aic-sdk`; tamano del repo 0.0 GB) |
+| Frecuencias de muestreo | Multiples frecuencias de entrada soportadas (variante `vad-vf-2.1-s-16khz` referenciada) |
+| Latencia | 30 ms (declarada por el autor) |
+| Requisito de GPU | No necesaria |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo (tipo de red, capas, atención, etc.) ni sobre el volumen o composición de los datos de entrenamiento. La model card únicamente describe el comportamiento funcional: detección de actividad del hablante primario sobre entrada de micrófono ruidosa, con rechazo de voces competidoras y habla de fondo.
+La model card no detalla la arquitectura interna de la red neuronal (tipo de capas, tamano, datos de entrenamiento, numero de horas de audio ni proceso de entrenamiento). Lo que si se especifica es el comportamiento funcional: el modelo analiza bloques de audio mono en `float32` y produce una probabilidad de voz por bloque, sin modificar la senal de audio. Expone una probabilidad cruda por bloque (`raw_vad_probability()`) y un retardo de prediccion en muestras (`get_prediction_delay()`) para alinear las decisiones con la linea temporal del audio.
 
-La innovación técnica destacable, según la documentación, es la integración del foco en el hablante primario dentro del propio VAD, lo que evita el encadenamiento de un modelo de aislamiento de voz (Quail Voice Focus) con un VAD multi-hablante (VAD Multi Speaker). El modelo expone además parámetros de control de turn-taking (sensibilidad, duración mínima de habla, retención de habla) y una probabilidad VAD cruda por bloque, así como un retardo de predicción en muestras para alinear las decisiones con la línea temporal del audio.
+La innovacion principal declarada es la selectividad por hablante principal: el detector distingue al hablante primario de voces competidoras y habla de fondo, algo que un VAD convencional no hace. Ademas, esta disenado para operar en paralelo con modulos de mejora de voz sobre el mismo bloque de audio original, sin requerir un denoiser previo. El autor afirma que supera a Silero VAD en precision, equilibrio y fiabilidad, aunque no se aportan cifras en la informacion disponible.
 
 ## Capacidades
 
-- Detección de actividad de voz del hablante principal sobre audio de micrófono con ruido.
-- Rechazo de voces competidoras y habla de fondo durante el turn-taking.
-- Funcionamiento sin denoiser separado; puede ejecutarse en paralelo a un procesador de mejora de voz sobre el mismo bloque original.
-- Procesamiento en tiempo real por bloques de audio mono float32, sin modificar la señal.
-- Parámetros ajustables de turn-taking: `Sensitivity` (umbral de probabilidad 0.0–1.0), `MinimumSpeechDuration` (segundos antes de disparar "habla") y `SpeechHoldDuration` (segundos que se mantiene el estado tras cesar el habla).
-- Acceso a la probabilidad VAD cruda por bloque (`raw_vad_probability()`) y al retardo de predicción en muestras (`get_prediction_delay()`).
-- Ejecución sin GPU y sin dependencia de ONNX.
-- Integración con frameworks de agentes de voz como LiveKit y Pipecat.
-- No se documentan capacidades multilingües, de generación de texto, código, visión ni tool calling: es un modelo puramente de clasificación de actividad de voz.
+- Deteccion de actividad de voz (VAD) en tiempo real sobre audio de microfono ruidoso.
+- Selectividad de hablante principal: ignora voces competidoras y habla de fondo.
+- Gestion de turnos (turn-taking) para agentes de voz.
+- Funcionamiento independiente del idioma.
+- Soporte de multiples frecuencias de muestreo de entrada.
+- Parametros ajustables: sensibilidad (umbral de probabilidad 0.0-1.0), duracion minima de habla y duracion de retencion del habla tras el cese.
+- Exposicion de probabilidad cruda por bloque y retardo de prediccion para alineacion temporal.
+- Operacion en paralelo con modulos de mejora de voz (procesa el audio original, no el mejorado).
+- Ejecucion sin GPU y sin dependencia de ONNX.
+- SDK multi-lenguaje: Python, Rust, C/C++, Node.js y WebAssembly.
+- No realiza generacion de texto, razonamiento, codigo, matematicas, vision ni tool calling.
 
 ## Casos de uso
 
-- Turn-taking en agentes de voz: el modelo decide cuándo el usuario principal está hablando para activar la captura de turno, ignorando conversaciones de fondo en entornos ruidosos como oficinas o espacios públicos.
-- Atención al cliente telefónica automatizada: con 30 ms de latencia y sin GPU, puede desplegarse en servidores de bajo coste para gestionar la detección de habla en llamadas en tiempo real.
-- Asistentes de voz embebidos: la disponibilidad de SDK en C/C++, Rust y WebAssembly permite integrarlo en dispositivos con recursos limitados sin acelerador hardware.
-- Pipelines de transcripción en producción: al ejecutarse en paralelo a la mejora de voz sobre el bloque original, permite segmentar audio para STT sin alterar la señal que recibe el modelo de reconocimiento.
-- Agentes conversacionales en LiveKit y Pipecat: los quickstarts oficiales permiten incorporar el VAD como componente de detección de turno en stacks de voice agents ya existentes.
-- Filtrado de audio en herramientas de reunión o grabación: la detección del hablante primario permite descartar intervenciones de fondo antes de enviar audio a un transcriptor o a un modelo de lenguaje.
-- Diagnóstico de stacks de Voice AI: combinado con Tyto (modelo de ai-coustics para predecir fallos downstream), puede usarse para monitorizar la calidad del turn-taking en producción.
+- Agentes de voz conversacionales: el modelo decide cuando el usuario principal ha empezado o dejado de hablar, permitiendo un turn-taking fiable con 30 ms de latencia y evitando que el agente responda a voces de fondo.
+- Atencion al cliente telefonica: en entornos con ruido ambiental o television de fondo, la selectividad por hablante principal reduce las activaciones falsas y mejora la segmentacion de turnos en conversaciones multi-turno.
+- Integracion en frameworks de voz en tiempo real: existen quickstarts para LiveKit y Pipecat, lo que permite incorporar el VAD en pipelines existentes de agentes de voz sin reescribir la pila de audio.
+- Sistemas de transcripcion con diarizacion previa: al detectar solo al hablante principal, se puede segmentar el audio antes de enviarlo a un motor de speech-to-text, reduciendo transcripciones de voces no deseadas.
+- Asistentes embebidos y edge: al no requerir GPU y ejecutarse via WebAssembly o C/C++, es adecuado para dispositivos con recursos limitados donde no cabe un VAD basado en GPU.
+- Pipelines con mejora de voz en paralelo: el VAD procesa el bloque original mientras un modulo de enhancement procesa el mismo bloque, permitiendo construir cadenas de audio donde la deteccion y la mejora no se interfieren.
+- Deteccion de silencio para control de costes: en servicios de transcripcion o sintesis, el VAD puede usarse para no invocar modelos caros cuando no hay habla del usuario principal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma que el modelo supera a Silero VAD en precisión, equilibrio y fiabilidad, pero no proporciona cifras concretas ni comparativas numéricas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma que el modelo supera a Silero VAD en precision, equilibrio y fiabilidad, pero no aporta cifras concretas (ni tasas de error, ni curvas ROC, ni comparativas numericas).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el modelo no requiere GPU según la documentación.
-- GPU recomendadas: no aplica; ejecución en CPU.
-- Cabe en cualquier hardware con CPU que soporte el SDK (`aic-sdk` para Python, Rust, C/C++, Node.js y WebAssembly).
-- Opciones de despliegue: paquete `aic-sdk` (Python, Rust, C/C++, Node.js, WebAssembly); integración documentada con LiveKit y Pipecat. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia: 30 ms declarados por el autor. Throughput no disponible.
-- Requiere una clave SDK de ai-coustics (prueba gratuita de 30 días sin tarjeta de crédito).
+- VRAM estimada: no aplica; el autor declara que no se necesita GPU.
+- GPU recomendadas: no aplica; el modelo esta pensado para ejecucion en CPU.
+- Cabe en GPU consumer: si, aunque no es necesario; puede ejecutarse en CPU.
+- Opciones de despliegue: exclusivamente a traves del SDK `aic-sdk` (Python, Rust, C/C++, Node.js, WebAssembly). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia: 30 ms declarados por el autor.
+- Throughput: no disponible.
+- Requisito adicional: clave de SDK (trial gratuito de 30 dias en developers.ai-coustics.com).
 
 ## Comparativa con modelos similares
 
-| Modelo | Autor | Función | Latencia | GPU requerida | Licencia |
-|---|---|---|---|---|---|
-| VAD Voice Focus | ai-coustics | VAD del hablante primario para turn-taking | 30 ms | No | ai-coustics-model-license |
-| VAD Multi Speaker | ai-coustics | VAD multi-hablante para audio ruidoso y lejano | no disponible | No | ai-coustics-model-license |
-| Silero VAD | Silero | VAD genérico | no disponible | No | no disponible en la información proporcionada |
+| Modelo | Tipo | Selectividad de hablante | Latencia | GPU | Licencia | Distribucion |
+|---|---|---|---|---|---|---|
+| VAD Voice Focus (ai-coustics) | VAD para hablante principal | Si | 30 ms | No | ai-coustics-model-license (propietaria) | Via SDK `aic-sdk` |
+| VAD Multi Speaker (ai-coustics) | VAD general multi-hablante | No (cualquier hablante) | No disponible | No | ai-coustics-model-license (propietaria) | Via SDK `aic-sdk` |
+| Silero VAD | VAD general | No | No disponible en la informacion | No | No disponible en la informacion | No disponible en la informacion |
 
-La comparativa se limita a los modelos citados en la model card. No se dispone de datos numéricos de rendimiento para establecer una comparación cuantitativa con Silero VAD ni con otros VAD del mercado.
+La informacion proporcionada no incluye datos numericos de rendimiento que permitan una comparacion cuantitativa con Silero VAD u otras alternativas. La distincion funcional principal de VAD Voice Focus frente a VAD Multi Speaker es la selectividad por hablante principal; el autor recomienda VAD Multi Speaker como opcion por defecto para audio ruidoso multi-hablante y VAD Voice Focus para turn-taking de hablante principal en agentes de voz.
 
 ## Limitaciones y advertencias
 
-- La licencia `ai-coustics-model-license` es de tipo "other"; es necesario revisar los términos en https://ai-coustics.com/legal/model-license antes de cualquier uso comercial o en producción.
-- El uso del modelo requiere una clave SDK de ai-coustics, lo que introduce una dependencia de servicio y de sus condiciones de acceso.
-- El modelo está especializado en el hablante primario; no está pensado como VAD genérico multi-hablante (para ello ai-coustics recomienda VAD Multi Speaker).
-- No se documentan idiomas soportados, sesgos conocidos ni tasas de error o alucinación (no aplica generación de texto).
-- No se especifican los requisitos exactos de formato de audio más allá de bloques mono float32 y la variante a 16 kHz (`vad-vf-2.0-s-16khz`).
-- La información pública no incluye detalles de arquitectura, parámetros ni dataset, lo que dificulta una evaluación técnica independiente.
-- Es imprescindible alinear las predicciones con la línea temporal del audio mediante `get_prediction_delay()`; ignorarlo puede desincronizar el turn-taking en producción.
+- La licencia es propietaria (ai-coustics-model-license); el uso comercial esta sujeto a los terminos del enlace de licencia y, en su caso, a licencia enterprise.
+- Requiere una clave de SDK para su uso; el trial gratuito es de 30 dias, lo que implica dependencia de un servicio externo para obtener credenciales.
+- No se distribuyen pesos abiertos en el repositorio de Hugging Face (tamano del repo 0.0 GB); la inferencia esta atada al SDK `aic-sdk`.
+- La arquitectura interna, el tamano del modelo y los datos de entrenamiento no se detallan, lo que limita la evaluacion independiente y la auditoria.
+- No hay benchmarks publicados en la informacion disponible; las afirmaciones de superioridad frente a Silero VAD no estan cuantificadas.
+- El modelo esta disenado para hablante principal; en escenarios donde el hablante relevante cambia dinamicamente o hay multiples hablantes igualmente importantes, puede no ser la opcion adecuada (el autor sugiere VAD Multi Speaker para esos casos).
+- Al ser un detector binario de voz, no proporciona transcripcion, identificacion de hablante ni contenido semantico.
+- Riesgo de sesgos y de alucinacion: no aplica en el sentido generativo, pero si puede haber errores de deteccion (falsos positivos o negativos) en condiciones acusticas no representadas en su entrenamiento, cuyo alcance no se documenta.
+- Dependencia de la plataforma ai-coustics para actualizaciones, soporte y disponibilidad del SDK.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ai-coustics/vad-voice-focus
-- Documentación de VAD Voice Focus: https://docs.ai-coustics.com/models/voice-activity-detection/vad-voice-focus
+- Documentacion de VAD Voice Focus: https://docs.ai-coustics.com/models/voice-activity-detection/vad-voice-focus
 - Quickstart del SDK: https://docs.ai-coustics.com/models/get-started/sdk-quickstart
-- Documentación general: https://docs.ai-coustics.com
-- Quickstart LiveKit: https://docs.ai-coustics.com/models/get-started/livekit-quickstart
-- Ejemplo Pipecat: https://github.com/pipecat-ai/pipecat/blob/main/examples/voice/voice-aicoustics-vad-only.py
+- Documentacion general: https://docs.ai-coustics.com
+- Quickstart de LiveKit: https://docs.ai-coustics.com/models/get-started/livekit-quickstart
+- Ejemplo de Pipecat: https://github.com/pipecat-ai/pipecat/blob/main/examples/voice/voice-aicoustics-vad-only.py
 - Artefactos y checksums: https://artifacts.ai-coustics.io
-- SDK Python en PyPI: https://pypi.org/project/aic-sdk/
-- Clave SDK gratuita: https://developers.ai-coustics.com
+- SDK de Python en PyPI: https://pypi.org/project/aic-sdk/
+- Clave gratuita de SDK: https://developers.ai-coustics.com
+- Licencia enterprise: https://ai-coustics.com/
 - Licencia del modelo: https://ai-coustics.com/legal/model-license
-- Licencia comercial empresarial: https://ai-coustics.com/
-- Modelo relacionado Quail Voice Focus: https://huggingface.co/ai-coustics/quail-voice-focus
-- Modelo relacionado Quail Multi Speaker: https://huggingface.co/ai-coustics/quail-multi-speaker
-- Modelo relacionado Rook Multi Speaker: https://huggingface.co/ai-coustics/rook-multi-speaker
-- Modelo relacionado VAD Multi Speaker: https://huggingface.co/ai-coustics/vad-multi-speaker
-- Modelo relacionado Tyto: https://huggingface.co/ai-coustics/tyto
+- VAD Multi Speaker: https://huggingface.co/ai-coustics/vad-multi-speaker
+- Quail Voice Focus: https://huggingface.co/ai-coustics/quail-voice-focus
+- Quail Multi Speaker: https://huggingface.co/ai-coustics/quail-multi-speaker
+- Rook Multi Speaker: https://huggingface.co/ai-coustics/rook-multi-speaker
+- Tyto: https://huggingface.co/ai-coustics/tyto

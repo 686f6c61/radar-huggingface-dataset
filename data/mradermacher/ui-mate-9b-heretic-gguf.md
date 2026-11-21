@@ -2,82 +2,96 @@
 
 ## Resumen
 
-UI-Mate-9B-heretic-GGUF es una cuantización en formato GGUF del modelo base UI-Mate-9B-heretic, desarrollado por Dingdust. El modelo original es un sistema multimodal (vision-language) de aproximadamente 8.95 mil millones de parámetros, diseñado específicamente para actuar como agente de interfaz gráfica (GUI) en entornos de escritorio. Su propósito principal es interpretar capturas de pantalla y generar acciones de control (ratón, teclado) para automatizar tareas sobre sistemas operativos, con integración explícita con marcos como OSWorld y WindowsAgentArena.
+UI-Mate-9B-heretic-GGUF es la distribucion en formato GGUF del modelo Dingdust/UI-Mate-9B-heretic, un modelo vision-language de aproximadamente 8.950 millones de parametros especializado en actuar como agente de interfaz grafica (computer-use agent). Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que genera versiones estaticas y con imatrix de modelos populares para su uso con llama.cpp y derivados. El modelo base esta orientado a tareas de automatizacion de escritorio: interpretar capturas de pantalla y emitir acciones de raton y teclado (via pyautogui) para completar tareas en sistemas operativos reales.
 
-La versión GGUF, publicada por mradermacher, proporciona pesos cuantizados en múltiples precisiones (desde Q2_K hasta f16) que permiten desplegar el modelo en hardware más modesto sin necesidad de infraestructura de servidor dedicada. La relevancia de este lanzamiento radica en la creciente demanda de agentes de escritorio locales y en la necesidad de ejecutar modelos multimodales en equipos de consumo, algo que la cuantización GGUF facilita al reducir los requisitos de memoria y computación.
+La variante "heretic" indica que el modelo base ha sido sometido a un proceso de ablacion de rechazos (abliterated/decensored), de modo que no aplica las capas de rechazo tipicas de los modelos alineados. Esto resulta relevante para agentes de escritorio, donde las politicas de seguridad genericas pueden bloquear acciones legitimas sobre el sistema operativo, pero introduce riesgos evidentes de uso indebido que deben gestionarse en la capa de aplicacion.
 
-Además, el sufijo "heretic" en el nombre indica que el modelo base fue sometido a un proceso de ablación de rechazo (abliteration), lo que elimina las respuestas de rechazo habituales en los modelos de propósito general y lo convierte en una opción para casos de uso donde se requiere una interacción sin restricciones de contenido.
+El repositorio ofrece 13 cuantizaciones estaticas (de Q2_K a f16) mas dos ficheros mmproj para el codificador visual, con un tamano total de 83 GB. La licencia es Apache 2.0 y el unico idioma declarado es el ingles. La informacion publica disponible no incluye detalles sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo multimodal vision-language, arquitectura exacta no publicada) |
-| Parametros totales | 8.953.803.264 (~8.95B) |
-| Parametros activos | no aplicable (no es un modelo MoE) |
+| Arquitectura | no disponible (modelo multimodal vision-language; transformer, detalles no publicados) |
+| Parametros totales | 8.953.803.264 (~8,95 B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en f16 y Q8_0; variantes imatrix en repo i1 |
 | Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la arquitectura interna del modelo base (número de capas, tipo de attention, etc.). Se sabe que es un modelo multimodal (vision-language) de 9B, orientado a la comprensión de pantallas y la generación de acciones de GUI. El modelo base fue entrenado por Dingdust, pero no se han publicado los detalles del dataset, el número de tokens de entrenamiento ni las técnicas de alineación (RLHF, DPO, etc.) en la documentación disponible.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base Dingdust/UI-Mate-9B-heretic: la model card del repositorio GGUF solo documenta el proceso de cuantizacion. Por el nombre y las etiquetas (multimodal, vision-language, computer-use-agent) se trata de un modelo que combina un codificador visual con un modelo de lenguaje de ~9 B, pero no se detalla el tipo de transformer, la estrategia de fusion multimodal ni la longitud de contexto.
 
-El término «heretic» y las etiquetas «uncensored», «decensored» y «abliterated» sugieren que el modelo base fue sometido a un proceso de abliteración, una técnica que elimina los pesos responsables de los rechazos (refusals) en modelos de lenguaje. Este proceso se aplica para eliminar la censura en las respuestas, lo que permite al modelo generar contenido sin las restricciones típicas de seguridad y moderación de las versiones originales.
-
-La cuantización GGUF fue realizada por mradermacher, que aplicó los formatos estándar de cuantización de llama.cpp. Incluye un proyecto multimodales (mmproj) en dos variantes (f16 y Q8_0) necesario para procesar las imágenes de pantalla que recibe el modelo.
+Tampoco se han publicado datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo fases de RLHF, DPO o ajuste supervisado. La etiqueta "heretic" sugiere que el modelo base ha pasado por un proceso de ablacion de direcciones de rechazo (abliteration), una tecnica de edicion de pesos que elimina selectivamente la direccionalidad asociada a respuestas de negativa, sin reentrenar. El proceso de cuantizacion de mradermacher es estandar: conversion a GGUF con cuantizaciones estaticas K-quant e IQ, y una familia paralela con imatrix (pesos ponderados por importancia) publicada en el repositorio i1.
 
 ## Capacidades
 
-- Agente de GUI de escritorio: el modelo interpreta capturas de pantalla y genera comandos de ratón y teclado para interactuar con aplicaciones, basado en el uso de la librería PyAutoGUI.
-- Integración con marcos de evaluación de agentes: soporta OSWorld y WindowsAgentArena, entornos de benchmark para agentes de GUI en sistemas operativos.
-- Comprensión multimodal: al ser vision-language, puede procesar imágenes de pantalla y extraer información visual para decidir la siguiente acción.
-- Interacción sin restricciones: al estar abliterado, el modelo no muestra patrones de rechazo ni censura en sus respuestas.
-- Soporte de tool calling: no confirmado explícitamente en la documentación, pero su naturaleza de agente de GUI sugiere una capacidad implícita de generar comandos estructurados.
-- Multilingüe: solo inglés (en), sin soporte documentado para otros idiomas.
+- Percepcion visual de interfaces: interpretacion de capturas de pantalla de escritorio para localizar elementos (botones, campos de texto, menus).
+- Generacion de acciones de escritorio: emision de comandos de raton y teclado compatibles con pyautogui (clics, arrastres, escritura, atajos).
+- Automatizacion de tareas multi-paso: planificacion y ejecucion secuencial de acciones sobre el sistema operativo.
+- Soporte declarado para entornos de evaluacion de agentes de escritorio: OSWorld y WindowsAgentArena (etiquetas del repositorio).
+- Conversacion multi-turno (pipeline conversacional declarado en los tags).
+- Capacidades de texto generales heredadas del modelo base de ~9 B (razonamiento, codigo, matematicas): no cuantificadas en la informacion disponible.
+- Sin capa de rechazo (variante heretic/abliterated): responde a peticiones que un modelo alineado rechazaria.
+- Tool calling / function calling: no confirmado explicitamente en la informacion disponible.
+- Idiomas: solo ingles declarado.
 
 ## Casos de uso
 
-- **Automatización de pruebas de software en escritorio**: el modelo puede ejecutar secuencias de interacción con aplicaciones de Windows para verificar flujos de usuario, generando clicks y pulsaciones de teclas de forma autónoma. Su integración con WindowsAgentArena lo hace adecuado para este escenario.
-- **Agente de asistencia remota**: dado que puede interpretar la pantalla y actuar sobre ella, puede usarse para gestionar sesiones de soporte técnico en sistemas locales, realizando tareas como abrir aplicaciones, configurar ajustes o instalar software.
-- **Benchmark de agentes de GUI**: los investigadores pueden usarlo como baseline en OSWorld para comparar el rendimiento de agentes de escritorio en tareas estándar de navegación y manipulación de ventanas.
-- **Automatización de tareas repetitivas en el puesto de trabajo**: el modelo puede encargarse de tareas como rellenar formularios, mover archivos entre carpetas o interactuar con aplicaciones de negocio, a partir de una descripción en lenguaje natural y una captura de pantalla.
-- **Investigación sobre alucinación y comportamiento sin censura**: su carácter abliterado lo convierte en un candidato para estudiar los efectos de la ablación de rechazo en la calidad de las respuestas y en la capacidad de seguir instrucciones.
-- **Prototipado de asistentes de escritorio personalizados**: desarrolladores pueden integrarlo con PyAutoGUI y un framework de agentes para crear asistentes que controlen el ordenador del usuario bajo demanda, siempre que se acepte el riesgo de acciones no supervisadas.
+- Automatizacion de pruebas de aceptacion de interfaces (UI testing): el modelo observa capturas de la aplicacion bajo prueba y genera las acciones necesarias para recorrer flujos de usuario, sustituyendo scripts fragiles basados en selectores.
+- RPA ligera sobre aplicaciones legacy: en entornos sin API, el agente opera la interfaz grafica directamente mediante pyautogui, lo que permite automatizar tareas administrativas en aplicaciones de escritorio antiguas.
+- Agente de soporte remoto asistido: dado un escritorio de usuario, el modelo puede guiar o ejecutar pasos de resolucion de incidencias (abrir paneles de configuracion, comprobar ajustes) a partir de la captura de pantalla.
+- Investigacion en agentes de escritorio: reproduccion de experimentos en OSWorld y WindowsAgentArena con un modelo de ~9 B cuantizado, apto para iterar rapidamente en local sin depender de APIs.
+- Generacion de datasets de trayectorias GUI: uso del modelo para producir secuencias de acciones etiquetadas sobre capturas, que luego sirven para entrenar o evaluar otros agentes.
+- Prototipado de asistentes de escritorio en estaciones de trabajo con GPU de consumo: la cuantizacion Q4_K_M (5,7 GB) permite ejecutar el modelo en una unica GPU de 8-12 GB, lo que viabiliza demos y pruebas internas.
+- Entornos de laboratorio sin restricciones de contenido: al carecer de capa de rechazo, resulta util para investigar comportamientos del agente en escenarios que un modelo alineado bloquearia; siempre en entornos aislados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni de evaluaciones específicas de agentes de GUI (como los de OSWorld o WindowsAgentArena) para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos incluyen puntuaciones en OSWorld, WindowsAgentArena, MMLU, HumanEval u otras evaluaciones, ni comparaciones cuantitativas con modelos similares.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**:
-  - Q2_K (3.9 GB): cabe en GPUs con 4-6 GB de VRAM (p. ej., GTX 1660, RTX 2060).
-  - Q4_K_M (5.7 GB): requiere al menos 6-8 GB de VRAM (p. ej., RTX 3060, RTX 4060).
-  - Q8_0 (9.6 GB): requiere 10-12 GB de VRAM (p. ej., RTX 3080, RTX 4070 Ti).
-  - f16 (18 GB): requiere 20+ GB de VRAM (p. ej., RTX 3090, RTX 4090, A100).
-- **GPU recomendadas**: para uso interactivo en tiempo real se recomienda una GPU con al menos 8 GB de VRAM (RTX 3070 o superior) con la cuantización Q4_K_M. Para cargas de trabajo más pesadas o mayor calidad, una RTX 4090 o A100 con Q8_0 o f16.
-- **Uso en CPU**: es posible ejecutar las cuantizaciones más bajas (Q2_K, Q3_K_M) en CPU mediante llama.cpp, aunque la latencia será alta para tareas de agente en tiempo real.
-- **Opciones de despliegue**: llama.cpp (CLI o servidor), Ollama (si se importa el GGUF), vLLM (con soporte GGUF experimental), text-generation-webui. Para el componente multimodal, es necesario cargar el archivo mmproj junto al modelo.
-- **Latencia y throughput**: no disponible. Depende de la cuantización, hardware y el número de pasos de razonamiento que el agente genere por acción.
+- VRAM estimada para inferencia (solo pesos del LLM): Q2_K ~3,9 GB; Q3_K_M ~4,7 GB; IQ4_XS ~5,3 GB; Q4_K_M ~5,7 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB; Q8_0 ~9,6 GB; f16 ~18 GB.
+- Hay que sumar el codificador visual: mmproj-Q8_0 (~0,7 GB) o mmproj-f16 (~1,0 GB), mas el espacio de cache KV segun contexto.
+- GPU de consumo: Q4_K_M cabe en GPUs de 8 GB (RTX 3060 Ti, RTX 4060) con contexto moderado; Q5_K_M y Q6_K requieren 10-12 GB (RTX 3080, RTX 4070 Ti); Q8_0 encaja en 12-16 GB (RTX 4070 Ti Super, RTX 4080); f16 requiere 24 GB (RTX 3090, RTX 4090).
+- GPU de datacenter: A100 40/80 GB y H100 permiten f16 con contexto amplio y mayor throughput; utiles para servir varias peticiones concurrentes.
+- Despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) son la via natural para GGUF. El soporte multimodal requiere cargar el fichero mmproj junto al modelo. vLLM y TGI no consumen GGUF de forma nativa para vision-language sin conversion.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia estructural, un modelo denso de ~9 B en Q4_K_M en una RTX 4090 suele generar decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-No se dispone de información pública sobre modelos directamente comparables en la misma categoría (agentes de GUI de 9B en formato GGUF). Alternativas generales en el espacio de agentes multimodales incluyen modelos como GPT-4V o Claude con capacidades de visión, pero no son comparables en términos de licencia, tamaño ni formato de pesos. La comparativa con otros modelos abliterados de tamaño similar (p. ej., Dolphin 2.6, WizardLM-uncensored) no está documentada.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| UI-Mate-9B-heretic-GGUF | ~8,95 B | no disponible | Agente GUI multimodal, sin rechazos | Apache 2.0 | GGUF en HF |
+| Dingdust/UI-Mate-9B-heretic (base) | ~8,95 B | no disponible | Mismo modelo en safetensors | Apache 2.0 | HF |
+| UI-TARS (familia, referencia de categoria) | 2 B - 72 B | no disponible en esta ficha | Agente GUI multimodal | Disponible en HF, licencia variable | safetensors/GGUF |
+| Qwen2.5-VL-7B (referencia de categoria) | ~8 B | 128 K (segun model card publica) | Vision-language generalista | Apache 2.0 | safetensors/GGUF |
+
+La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este modelo. Las alternativas citadas se incluyen por categoria y tamano, no por resultados medidos frente a UI-Mate.
 
 ## Limitaciones y advertencias
 
-- **Riesgo de acciones no supervisadas**: al ser un agente de GUI, un mal uso o una instrucción mal formulada puede provocar acciones reales sobre el sistema (mover archivos, cambiar configuraciones, etc.). Es necesario un sandbox o permisos restringidos en entornos de producción.
-- **Idioma limitado**: solo soporta inglés; no se recomienda para interacción en español u otros idiomas.
-- **Modelo abliterado**: la ausencia de rechazo puede generar contenido inapropiado, ofensivo o no seguro, incluso en contextos donde la moderación es necesaria. No es apto para aplicaciones comerciales orientadas al público general sin capas de moderación adicionales.
-- **Contexto desconocido**: la longitud de contexto no se ha publicado, por lo que no se puede garantizar un rendimiento adecuado en tareas que requieran mantener muchas interacciones de pantalla o diálogos largos.
-- **Falta de benchmarks**: no hay datos objetivos de rendimiento, lo que dificulta comparar con otros agentes de GUI o modelos de propósito general.
-- **Licencia Apache-2.0**: permite uso comercial, pero el usuario es responsable del cumplimiento de las normativas sobre contenido generado y sobre el uso de agentes autónomos en sistemas informáticos.
+- Ausencia de capa de rechazo: la variante heretic/abliterated elimina las negativas de seguridad, lo que incrementa el riesgo de que el agente ejecute acciones destructivas o inapropiadas sobre el sistema operativo si no se interponen validaciones externas.
+- Riesgo de alucinacion en coordenadas: los agentes GUI pueden generar clics en posiciones incorrectas o secuencias de acciones invalidas; es imprescindible un bucle de verificacion con captura posterior.
+- Solo ingles declarado: el rendimiento en instrucciones en castellano no esta garantizado ni documentado.
+- Contexto desconocido: no se ha publicado la ventana de contexto, lo que dificulta planificar tareas largas o historiales extensos de capturas.
+- Sin benchmarks: no hay evidencia publicada de calidad en OSWorld, WindowsAgentArena ni tareas generales; cualquier decision de produccion deberia basarse en evaluacion propia.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad legal del comportamiento del agente y de los datos que procese (capturas de pantalla con informacion personal).
+- Cuantizaciones de baja precision (Q2_K, Q3_K_S): degradacion notable de calidad; para agentes GUI, donde la precision en la localizacion de elementos es critica, se recomienda Q4_K_M o superior.
+- Repositorio con 0 likes y 748 descargas en el momento de la consulta: ecosistema limitado, poca validacion comunitaria.
+- Fecha de creacion del repositorio posterior a la de los modelos base habituales de la categoria; verificar compatibilidad con la version actual de llama.cpp para el soporte multimodal.
 
 ## Enlaces
 
-- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/UI-Mate-9B-heretic-GGUF)
-- [Modelo base Dingdust/UI-Mate-9B-heretic](https://huggingface.co/Dingdust/UI-Mate-9B-heretic)
-- [Página de cuantizaciones de mradermacher](https://huggingface.co/mradermacher)
+- Repositorio GGUF: https://huggingface.co/mradermacher/UI-Mate-9B-heretic-GGUF
+- Modelo base: https://huggingface.co/Dingdust/UI-Mate-9B-heretic
+- Cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/UI-Mate-9B-heretic-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#UI-Mate-9B-heretic-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "void-mckenzie/Qwen3.8-Flash-Next-Q4KXL-Q8PLE-Basalt",
+  "slug": "void-mckenzie-qwen3-8-flash-next-q4kxl-q8ple-basalt",
+  "author": "void-mckenzie",
+  "url": "https://huggingface.co/void-mckenzie/Qwen3.8-Flash-Next-Q4KXL-Q8PLE-Basalt",
+  "created_at": "2026-11-21T02:23:06.000Z",
+  "updated_at": "2026-11-21T02:27:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140905397388,
+  "storage_human": "140.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VOID",
+      "url": "https://void.fr/",
+      "snippet": "VOID est une agence digitale indépendante, experte en UX, Drupal, React et Next.js. Nous accompagnons votre transformation …"
+    }
+  ]
+}

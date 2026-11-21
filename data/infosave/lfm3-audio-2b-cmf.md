@@ -2,99 +2,101 @@
 
 ## Resumen
 
-LFM3-Audio-2B-cmf es una reempaquetación cuantizada del modelo de voz LFM3-Audio-2B de Liquid AI, distribuida en formato CMF (ficheros únicos que incluyen el códec de audio) para ejecutarse con `cortiq`, un motor de inferencia escrito en Rust que no depende de Python ni de frameworks de ML. El modelo base combina un codificador de audio causal (entrada a 16 kHz) con el modelo de texto LFM3-1.7B, y genera respuestas en texto o en voz a 24 kHz mediante un depth decoder y el tokenizador LiquidCodec (12 códigos por cada 80 ms).
+LFM3-Audio-2B-cmf es una versión cuantizada y empaquetada del modelo LiquidAI/LFM3-Audio-2B, un modelo de audio de 2B parámetros desarrollado por Liquid AI sobre su arquitectura LFM3. Combina un codificador de audio causal a 16 kHz con el modelo de texto LFM3-1.7B, que genera respuestas en texto o en voz a 24 kHz mediante un decodificador de profundidad y el tokenizador LiquidCodec (12 códigos por cada 80 ms). Cubre reconocimiento de voz, síntesis de voz en 19 idiomas, conversación por voz y comprensión de audio.
 
-El problema que resuelve es doble: por un lado, ofrece reconocimiento de voz (ASR), síntesis de voz (TTS), chat por voz y comprensión de audio en un único modelo compacto de unos 2 mil millones de parámetros; por otro, la versión CMF hace viable su ejecución local en hardware muy variado (GPU NVIDIA, AMD e Intel vía Vulkan/DX12, Apple silicon vía Metal y CPU), con ficheros de entre 1,62 y 2,45 GB que caben en tarjetas gráficas de consumo con solo 3 GB de memoria libre.
+El paquete lo publica el usuario infosave en formato CMF (Cortiq Model File), que integra el códec dentro del propio fichero y permite ejecutar el modelo con `cortiq`, un motor de inferencia escrito en Rust sin Python ni frameworks de ML. Soporta GPUs NVIDIA, AMD e Intel vía Vulkan/DX12, NVIDIA también vía CUDA, Apple Silicon vía Metal y CPU. Se distribuye en dos variantes: `q8_2f` (8 bits para el modelo de lenguaje, 16 bits para el resto, 2,45 GB) y `q4tp` (4 bits, 1,62 GB).
 
-Su relevancia actual radica en la tendencia hacia modelos de voz unificados y ligeros que funcionan sin nube: soporta 19 idiomas para TTS (incluido el castellano), voces masculinas y femeninas, y expone además un servidor compatible con la API de OpenAI, lo que facilita su integración en aplicaciones existentes.
+La relevancia de esta ficha radica en que demuestra un flujo de despliegue de un modelo de audio multimodal en hardware modesto (cabe en cualquier tarjeta con 3 GB de VRAM libre) sin dependencias de Python, lo que simplifica la integración en producción y en entornos embebidos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador de audio causal (16 kHz) + LFM3-1.7B (modelo de texto) + depth decoder + LiquidCodec (24 kHz) |
-| Parametros totales | Aprox. 2B (el modelo base es LFM3-Audio-2B; desglose exacto no disponible) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Codificador de audio causal (16 kHz) + modelo de texto LFM3-1.7B + decodificador de profundidad + códec LiquidCodec (24 kHz) |
+| Parametros totales | 2B (modelo de audio completo); modelo de texto interno de 1,7B |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | q8_2f (modelo de lenguaje a 8 bits, audio a 16 bits) y q4tp (modelo de lenguaje a 4 bits, audio a 16 bits) |
-| Idiomas soportados | 19: aleman, arabe, chino, coreano, danes, espanol (castellano), finlandes, frances, griego, hebreo, ingles (britanico y americano), italiano, japones, koreano, neerlandes, polaco, portugues, sueco y turco |
-| Licencia | lfm1.0 (otra/propia de Liquid AI, con enlace a LICENSE) |
-| Formato de pesos | CMF (fichero unico con pesos cuantizados y el codec LiquidCodec incluido) |
+| Tipos de cuantizacion | q8_2f (8 bits en el LM, 16 bits en encoder/decoder/codec) y q4tp (4 bits en el LM, 16 bits en el resto) |
+| Idiomas soportados | en, ar, da, de, el, fi, fr, he, it, ja, ko, nl, pl, pt, es, sv, tr, zh (19 idiomas) |
+| Licencia | lfm1.0 (licencia "other" con nombre lfm1.0) |
+| Formato de pesos | CMF (Cortiq Model File), con el códec integrado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un pipeline de tres etapas. Primero, un codificador de audio causal procesa la senal de entrada remuestreada a 16 kHz mono y produce caracteristicas log-mel que se proyectan al espacio del modelo de lenguaje. Este es el LFM3-1.7B de Liquid AI, un transformer causal que razona sobre la mezcla de audio y texto. Para generar voz, el modelo produce códigos del tokenizador LiquidCodec (12 códigos por cada 80 ms de audio, es decir, 150 frames por segundo), que un depth decoder expande en tres pasadas por frame antes de que el códec reconstruya el WAV final a 24 kHz. El muestreo recomendado para voz es temperature 1.0, top-k 128 y penalty de repeticion 1.1 sobre 4096 frames.
+El modelo sigue una arquitectura de tres etapas: un codificador de audio causal que procesa audio mono a 16 kHz y extrae características log-mel; el modelo de lenguaje LFM3-1.7B, que recibe esas representaciones y genera texto; y, cuando la respuesta es hablada, un decodificador de profundidad que produce códigos de audio en tres pasadas por frame, que el tokenizador LiquidCodec convierte en voz a 24 kHz (12 códigos cada 80 ms). La generación de voz se muestrea con temperatura 1.0, top-k 128 y penalización de repetición 1.1 sobre 4096 frames, según la recomendación de Liquid.
 
-Sobre el entrenamiento del modelo base (tokens, composicion del dataset, RLHF/DPO) no hay datos en la informacion disponible. En cuanto a la cuantizacion, el autor documenta validaciones numericas: con entrada de voz, las caracteristicas log-mel y las filas del codificador coinciden con coseno 1.000000 y la maxima diferencia entregada al modelo de lenguaje es de 4e-6 frente al checkpoint bf16; en sintesis, una conversion f16 reproduce exactamente los frames de Transformers (42 de 42), mientras que los ficheros cuantizados divergen en códigos greedy tras los primeros frames (empate tecnico sobre 2.017 códigos) pero el habla resultante se transcribe palabra por palabra igual que la frase de entrada.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La model card del paquete CMF se centra en la validación de la cuantización: frente al checkpoint bf16 ejecutado en float32 con Transformers, las características log-mel, las filas del encoder (coseno 1.000000 en todas las filas) y las filas entregadas al modelo de lenguaje (diferencia máxima 4e-6) coinciden; ambos ficheros transcriben los clips de prueba palabra por palabra igual que Transformers. En salida de voz, una conversión a f16 reproduce exactamente los frames de Transformers (42 de 42 frames, todos los códigos); los ficheros cuantizados toman otros códigos greedy tras los primeros frames (casi empate sobre 2.017 códigos) y su voz se transcribe de vuelta a la frase de entrada palabra por palabra.
 
 ## Capacidades
 
-- Reconocimiento automatico de voz (ASR) a partir de ficheros WAV, URLs HTTP(S) o data URLs, con transcripcion fiel en los clips de prueba.
-- Sintesis de voz (TTS) a 24 kHz en 19 idiomas, con seleccion de voz masculina o femenina y de variante de ingles (britanica o americana).
-- Chat por voz: respuestas que intercalan texto y audio (`--speech-mode mixed`).
-- Comprension de audio: preguntas sobre grabaciones (por ejemplo, "que se oye en este clip?").
-- Modo thinking desactivable mediante la opcion `--no-think`.
-- Salida de voz controlada por frames (12,5 frames por segundo de audio generado) con `--max-tokens`.
-- Servidor HTTP compatible con la API de chat completions de OpenAI, aceptando partes de audio en base64, URL o ruta local.
-- Verificacion de integridad del fichero descargado (`cortiq verify`, sha256).
-- No hay informacion disponible sobre tool calling, agentes ni capacidades de vision.
+- Reconocimiento automático de voz (ASR) en 19 idiomas, con entrada de audio WAV, data URL o URL HTTP(S), remuestreada a 16 kHz mono.
+- Síntesis de voz (TTS) a 24 kHz en 19 idiomas (árabe, danés, alemán, griego, inglés británico, inglés americano, finés, francés, hebreo, italiano, japonés, coreano, neerlandés, polaco, portugués, español, sueco, turco y chino), con voz femenina o masculina.
+- Conversación por voz con texto y habla intercalados (`--speech-mode mixed`).
+- Comprensión de audio: responder preguntas sobre el contenido de una grabación.
+- Generación de texto y razonamiento (el modelo de lenguaje LFM3-1.7B subyacente), con modo "think" desactivable mediante `--no-think`.
+- Servidor compatible con la API de OpenAI (`/v1/chat/completions`) con partes de audio en base64, URL HTTP(S), `data:` o ruta local; las respuestas del servidor son en texto.
+- No se documenta soporte de tool calling ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Transcripcion de notas de voz y grabaciones: con `--audio clip.wav` y un system prompt de ASR, el modelo transcribe clips locales o remotos; en un Apple M4 tarda 1,5 s en transcribir un clip de 4,4 s incluyendo la carga.
-- Locucion automatica de contenidos: el TTS en 19 idiomas con voces masculinas y femeninas permite generar audio para videos, podcasts o accesibilidad; 7 s de voz se sintetizan en 3,2 s en un M4.
-- Asistentes de voz locales y privados: el chat por voz con texto y audio intercalados, junto con el tamano reducido (1,62 GB en q4tp), permite construir asistentes que no envian audio a la nube.
-- Atencion al cliente multilingue: el servidor compatible con OpenAI permite integrar el modelo en plataformas existentes de conversacion, aceptando audio del usuario en base64 y respondiendo en texto.
-- Analisis de audio ambiental: la capacidad de responder preguntas sobre grabaciones (que se oye, que ocurre) sirve para catalogacion de archivos sonoros o monitorizacion.
-- Desarrollo multiplataforma sin Python: cortiq se distribuye como binarios precompilados para Linux, macOS y Windows con backends Vulkan, DX12 y Metal, util para embarcar el modelo en aplicaciones de escritorio.
-- Generacion de contenido en varios idiomas: se puede pedir TTS en aleman, japones o castellano con el mismo binario, util para localizacion rapida de mensajes cortos.
+- Transcripción de reuniones y notas de voz: el modelo transcribe clips cortos con baja latencia (1,5 s para un clip de 4,4 s incluyendo la carga en un Apple M4) y puede desplegarse como servidor compatible con OpenAI para integrarse en aplicaciones existentes.
+- Subtitulado y accesibilidad: generación de transcripciones en 19 idiomas con un único modelo, lo que simplifica pipelines multilingües sin depender de servicios externos.
+- Síntesis de voz para asistentes y audiolibros: TTS a 24 kHz con selección de idioma y voz (femenina o masculina), con salida WAV lista para reproducir.
+- Conversación por voz en dispositivos con recursos limitados: el fichero `q4tp` ocupa 1,62 GB y cabe en cualquier GPU con 3 GB de VRAM libre, además de ejecutarse en CPU, lo que permite asistentes de voz locales sin conexión.
+- Análisis de grabaciones: responder preguntas sobre el contenido de un audio (por ejemplo, "¿qué se oye en este clip?") para moderación, etiquetado o inspección de entornos.
+- Integración en pipelines de Rust sin Python: al ejecutarse con `cortiq`, puede embeberse en servicios backend o aplicaciones de escritorio sin arrastrar dependencias de frameworks de ML, reduciendo el tamaño de las imágenes de contenedor y la superficie de ataque.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, WER, etc.) en la informacion disponible. Si hay mediciones de rendimiento de inferencia con cortiq 0.8.50 y cuantizacion q4tp:
+La model card del paquete CMF no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Sí incluye mediciones de rendimiento de inferencia con `cortiq` 0.8.50 y `q4tp`:
 
 | Tarea | NVIDIA A40 (Vulkan) | Apple M4 (Metal) |
 |---|---:|---:|
-| Sintesis de 7,0 s de voz | 5,6 s | 3,2 s |
-| Decodificacion de texto (`cortiq bench --core`) | 204 tok/s (172 con q8_2f) | 79 tok/s |
-| Transcripcion de clip de 4,4 s (incluida la carga) | — | 1,5 s |
+| Síntesis de voz, 7,0 s de habla | 5,6 s | 3,2 s |
+| Decodificación de texto (`cortiq bench --core`) | 204 tok/s (`q8_2f`: 172) | 79 tok/s |
+| Transcripción de un clip de 4,4 s, con carga incluida | — | 1,5 s |
 
-Cada frame de voz implica un paso del modelo de lenguaje en GPU mas tres pasadas del depth decoder en CPU (16-23 ms por frame); la decodificacion final del codec para 7 s de voz cuesta 0,1 s en el M4 y 0,6 s en la CPU del host con A40.
+Con CUDA en una RTX A5000 (24 GB), `cortiq` 0.8.97 y `q4tp`:
+
+| Tarea | CUDA | Vulkan, misma tarjeta |
+|---|---:|---:|
+| Decodificación de texto (`cortiq bench`) | 279–289 tok/s | 159–223 tok/s |
+| Prompt de 4096 tokens | 13.133 tok/s, primer token 0,31 s | 324 tok/s, 15,1 s |
+| Transcripción de un clip corto en inglés: primer token, decodificación | 1,0 s, 198 tok/s | 4,2 s, 169 tok/s |
+
+Cada frame de voz es un paso del modelo de lenguaje (en GPU) más tres pasadas del decodificador de profundidad (en CPU, 16–23 ms por frame); el códec decodifica los frames al final (0,1 s en el M4 y 0,6 s en la CPU del host del A40 para 7 s de habla).
 
 ## Requisitos de hardware
 
-- Ambos ficheros caben en cualquier GPU con 3 GB de memoria libre (q4tp: 1,62 GB; q8_2f: 2,45 GB).
-- GPU NVIDIA, AMD e Intel mediante Vulkan o DX12; en Linux sin entorno grafico hay que instalar `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y definir `XDG_RUNTIME_DIR=/tmp`.
-- Apple silicon: el backend Metal es el predeterminado; un M4 alcanza 79 tok/s de texto y 3,2 s para 7 s de voz.
-- CPU pura: posible con `CMF_GPU=0`, aunque el depth decoder ya se ejecuta en CPU por diseno (16-23 ms por frame).
-- Despliegue: mediante `cortiq run` (CLI) o `cortiq serve` (servidor compatible con OpenAI en el puerto que se indique). No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI.
-- Latencia: transcripcion de un clip de 4,4 s en 1,5 s en Apple M4; throughput de texto de 79-204 tok/s segun hardware.
+- VRAM: ambos ficheros caben en cualquier tarjeta con 3 GB de memoria libre; `q4tp` ocupa 1,62 GB y `q8_2f` 2,45 GB.
+- GPUs compatibles: NVIDIA, AMD e Intel vía Vulkan/DX12; NVIDIA también vía CUDA (requiere driver NVIDIA y bibliotecas CUDA 12.x, con `cargo install cortiq-cli --features cuda` y `CMF_GPU=cuda`); Apple Silicon vía Metal; CPU.
+- En Linux headless para Vulkan se necesitan `libvulkan1 libglvnd0 libegl1 libgl1 libglx0`.
+- Despliegue: `cortiq` (motor Rust, versión 0.8.50 o superior; binarios precompilados para Linux, macOS y Windows en la página de releases) y servidor compatible con OpenAI mediante `cortiq serve`.
+- Latencia y throughput: ver la tabla de benchmarks; en CUDA se alcanzan 279–289 tok/s de decodificación de texto y 13.133 tok/s de prefill con un prompt de 4096 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tamano | Modalidades | Formato/entorno | Licencia |
-|---|---|---|---|---|
-| LFM3-Audio-2B-cmf (esta ficha) | ~2B | ASR, TTS, chat por voz, comprension de audio | CMF + cortiq (Rust, Vulkan/Metal/CPU) | lfm1.0 |
-| LiquidAI/LFM3-Audio-2B (base) | ~2B | ASR, TTS, chat por voz, comprension de audio | Transformers (Python, bf16) | lfm1.0 |
-| Whisper (OpenAI) | 0,1B-1,5B aprox. | Solo ASR | PyTorch / GGML | MIT (modelos) |
-| Kokoro / Piper (TTS ligeros) | decenas de MB | Solo TTS | ONNX / propios | Apache-2.0 / MIT |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia cualitativa, el modelo base es LiquidAI/LFM3-Audio-2B, y esta ficha describe únicamente su empaquetado cuantizado en formato CMF para el motor `cortiq`.
 
-La ventaja diferencial frente a Whisper o a los TTS ligeros es la unificacion de reconocimiento, sintesis, chat por voz y comprension de audio en un solo modelo ejecutable sin Python; frente al checkpoint base de Liquid AI, esta version reduce el fichero a 1,62-2,45 GB y elimina la dependencia del stack de Transformers. No hay datos comparativos de calidad (WER, MOS) entre ellos en la informacion disponible.
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| LFM3-Audio-2B-cmf (este) | 2B | no disponible | lfm1.0 | CMF |
+| LiquidAI/LFM3-Audio-2B (base) | 2B | no disponible | lfm1.0 | safetensors (bf16) |
+| Alternativas de audio de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia lfm1.0 es de tipo "other": conviene revisar el fichero LICENSE antes de cualquier uso comercial, ya que no se trata de una licencia permisiva estandar como Apache-2.0 o MIT.
-- En salida de voz cuantizada, los códigos greedy divergen del checkpoint bf16 tras los primeros frames; la voz generada se transcribe correctamente, pero puede diferir en entonacion o prosodia respecto al modelo original.
-- Las respuestas en texto nunca abren un turno de voz, una restriccion de comportamiento a tener en cuenta en dialogos mixtos.
-- El servidor compatible con OpenAI responde solo en texto; la salida de voz (`--speech-out`), el reconocimiento en streaming y la voz en streaming en el servidor no estan disponibles todavia.
-- La entrada de audio debe ser WAV (otros formatos requieren conversion previa con ffmpeg) y se remuestrea a 16 kHz mono.
-- No hay datos publicos de WER, MOS ni benchmarks academicos, por lo que la calidad en produccion debe validarse sobre el dominio concreto de cada proyecto.
-- El repositorio tiene muy pocas descargas (1) y es una conversion de terceros (infosave), no oficial de Liquid AI; se recomienda verificar los sha256 publicados antes de ejecutar.
-- El numero exacto de parametros, la longitud de contexto y los detalles del entrenamiento del modelo base no constan en la informacion disponible.
+- La licencia lfm1.0 es una licencia "other" con nombre propio; es necesario revisar sus términos antes de un uso comercial, ya que puede imponer restricciones adicionales.
+- No se documentan sesgos conocidos del modelo en la información disponible; al ser un modelo de audio multilingüe, es previsible un rendimiento desigual entre idiomas, pero no hay datos que lo cuantifiquen.
+- Riesgo de alucinación inherente a los modelos de lenguaje: las transcripciones y respuestas pueden contener errores, especialmente con audio ruidoso o acentos no representados en el entrenamiento.
+- La salida de voz cuantizada no reproduce exactamente los códigos greedy de Transformers tras los primeros frames (casi empate sobre 2.017 códigos), aunque la voz resultante se transcribe de vuelta correctamente; para máxima fidelidad puede usarse la conversión a f16.
+- El servidor compatible con OpenAI responde solo en texto; la salida de voz (`--speech-out`), el reconocimiento en streaming y la voz en el servidor son funcionalidades de `run` por ahora.
+- La longitud de contexto no se especifica en la información disponible, lo que impide planificar cargas de audio largas con garantías.
+- Dependencia del motor `cortiq` (versión 0.8.50 o superior) y del formato CMF, lo que limita la portabilidad a otros ecosistemas de inferencia como vLLM, llama.cpp u Ollama.
 
 ## Enlaces
 
-- Ficha del modelo cuantizado: https://huggingface.co/infosave/LFM3-Audio-2B-cmf
-- Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM3-Audio-2B
-- Repositorio de cortiq/CMF (codigo y binarios): https://github.com/infosave2007/cmf
-- Releases con binarios precompilados: https://github.com/infosave2007/cmf/releases
+- Modelo en Hugging Face: https://huggingface.co/infosave/LFM3-Audio-2B-cmf
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
+- Repositorio del formato CMF y del motor cortiq: https://github.com/infosave2007/cmf
+- Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

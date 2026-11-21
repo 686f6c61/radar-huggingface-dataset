@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 795,
-  "downloads_30d": 986,
+  "downloads_30d": 922,
   "trending_score": 15,
   "parameters": null,
   "parameters_human": null,
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Chicken Road demo - crash game online for free with no deposit",
-      "url": "https://chicken-roadcross.com/chicken-road-demo/",
-      "snippet": "Try Chicken Road demo in your browser without sign-up or payment. Play crash-style gameplay on mobile or desktop using virtual …"
-    },
-    {
-      "title": "Chicken Cross - games.upgaming.com",
-      "url": "https://games.upgaming.com/games/chickencross/?companyname=test&integration=demo&lang=en&showbackbutton=show",
-      "snippet": "10 20 50 All in 1"
-    },
-    {
-      "title": "Chicken Road Free Play Online – InOut Games Demo",
-      "url": "https://chickencrossinggame.net/",
-      "snippet": "Play Chicken Road by InOut Games for free online. Enjoy demo mode, test all difficulty levels and features, and play anytime, …"
-    },
-    {
-      "title": "Chicken Cross (Money Game Casino) Play Free & BONUS",
-      "url": "https://roundme.com/blog/chicken-cross",
-      "snippet": "Sep 16, 2024 · Play the trendy Chicken Cross game from Mystake and cross the road without getting run over. Try to win up to …"
-    },
-    {
-      "title": "Juega Gratis a Chicken Cross de Juegos Mystake",
-      "url": "https://casinopearls.com/es/play/chicken-cross/",
-      "snippet": "Juega gratis a Chicken Cross en modo demo en Casino Pearls. Disfruta de esta juego gratis de Juegos Mystake sin descarga y sin …"
-    }
-  ]
+  "sources": []
 }

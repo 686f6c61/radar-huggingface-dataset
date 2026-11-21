@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/d1-Omni-2B-LiteRT · Hugging Face",
-      "url": "https://huggingface.co/litert-community/d1-Omni-2B-LiteRT",
-      "snippet": "d1-Omni-2B for LiteRT This repository is a conversion of LiquidAI/d1-Omni-2B to LiteRT, made with litert-torch 0.10.0 for the CompiledModel API of ai-edge-litert 2.3.0: on an Apple M4 Max with Metal at float32 precision, one question about a 10-second audio clip takes a median 89.0 ms, and one question about the source model card's support ticket 40.9 ms (2026-11-02)."
-    },
-    {
-      "title": "litert-community/d1-2B-LiteRT · Hugging Face",
-      "url": "https://huggingface.co/litert-community/d1-2B-LiteRT",
-      "snippet": "This repository is a conversion of LiquidAI/d1-2B to LiteRT, made with litert-torch 0.10.0 for the CompiledModel API of ai-edge-litert 2.3.0: on an Apple M4 Max with Metal at float32 precision, one question about the source model card's support ticket takes a median 40.9 ms, and three questions ..."
-    }
-  ]
+  "sources": []
 }

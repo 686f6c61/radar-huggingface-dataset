@@ -2,109 +2,101 @@
 
 ## Resumen
 
-SoAIHQ/gemma-4-E2B-it-GGUF es una compilacion de pesos en formato GGUF del modelo google/gemma-4-E2B-it, publicada por SoAI para su uso con llama.cpp. Se trata de la variante mas pequena de la familia Gemma 4 de Google, un modelo denso con embeddings por capa, ventana de contexto de 131.072 tokens (128K) y capacidad multimodal de entrada de texto, imagen y audio. La model card describe el modelo como "any-to-any" y destaca que admite razonamiento configurable (modo thinking activable por peticion) y tool calling con sintaxis nativa.
+`SoAIHQ/gemma-4-E2B-it-GGUF` es la distribucion en formato GGUF del modelo `google/gemma-4-E2B-it` de Google, el miembro mas pequeno de la familia Gemma 4. Lo publica SoAI, un tercero que realiza la conversion y cuantizacion para su uso con llama.cpp y su propia infraestructura. El modelo base es multimodal de tipo any-to-any: acepta texto, imagenes y audio como entrada, y genera texto como salida.
 
-La relevancia de esta ficha esta en el proceso de cuantizacion: SoAI ha generado los ficheros Q4_K_M mediante una matriz de importancia (imatrix) calculada con un corpus de calibracion propio (chat multi-turno en 21 idiomas, ediciones de codigo en 22 lenguajes de programacion, tool calls, matematicas paso a paso y prosa web) en lugar de texto generico. El repositorio incluye Q4_K_M (3,4 GB), Q8_0 (5,0 GB) y un proyector multimodal mmproj en F16 (985,7 MB) necesario para entrada de imagen y audio.
+La arquitectura es un transformer denso con embeddings por capa (per-layer embeddings), con 2.300 millones de parametros efectivos y 5.100 millones contando los embeddings. La ventana de contexto alcanza los 131.072 tokens (128K), lo que lo situa en un rango poco habitual para un modelo de este tamano. Incorpora razonamiento configurable por peticion (thinking mode) y soporte de tool calling, lo que lo hace util para flujos agenticos ligeros.
 
-El modelo base tiene 2,3B de parametros efectivos segun la model card (5,1B incluyendo embeddings), mientras que el recuento de safetensors del modelo base asciende a 4.647.450.147 parametros. Esta discrepancia entre "parametros efectivos" y parametros totales es una convencion habitual en esta gama de modelos y conviene tenerla presente al estimar recursos. El repositorio no registra descargas ni likes en el momento de la consulta.
+La relevancia de esta publicacion concreta esta en la cuantizacion: SoAI emplea una importance matrix (imatrix) calibrada con un corpus propio de chat multi-turno en 21 idiomas, edicion de codigo en 22 lenguajes de programacion, llamadas a herramientas y matematicas paso a paso, en lugar de texto web generico. Se ofrecen dos variantes, Q4_K_M (3,4 GB) y Q8_0 (5,0 GB), mas un proyector multimodal F16 (985,7 MB) necesario para entrada de imagen y audio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Densa, con embeddings por capa (per-layer embeddings) |
-| Parametros totales | 4.647.450.147 (safetensors del modelo base); la model card indica 2,3B efectivos y 5,1B incluyendo embeddings |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer denso con embeddings por capa (per-layer embeddings) |
+| Parametros totales | 4.647.450.147 (dato de safetensors); la model card indica 2,3B efectivos y 5,1B con embeddings |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 131.072 tokens (128K) |
-| Tipos de cuantizacion | Q4_K_M, Q8_0; proyector multimodal mmproj en F16 |
-| Idiomas soportados | 35+ idiomas (preentrenado en 140+, segun la model card) |
-| Licencia | apache-2.0 en metadatos y model card, con enlace a la licencia de Gemma 4 |
-| Formato de pesos | GGUF (llama.cpp) |
-| Tamano del repositorio | 9,4 GB |
-| Tamano de ficheros | Q4_K_M: 3,4 GB; Q8_0: 5,0 GB; mmproj F16: 985,7 MB |
-| Version de llama.cpp referenciada | v0.5.0 |
-| Ajustes de muestreo recomendados | temperature 1.0, top_p 0.95, top_k 64 |
+| Tipos de cuantizacion | Q4_K_M (imatrix) y Q8_0; no se publican cuantizaciones por debajo de 4 bits |
+| Idiomas soportados | 35+ idiomas (preentrenado en 140+); la ficha de HF no detalla la lista |
+| Licencia | Apache 2.0 (con enlace a la licencia especifica de Gemma 4 de Google) |
+| Formato de pesos | GGUF (llama.cpp); proyector multimodal mmproj en F16 |
+| Pipeline | any-to-any (texto, imagen y audio de entrada; texto de salida) |
+| Tamanos de archivo | Q4_K_M: 3,4 GB; Q8_0: 5,0 GB; mmproj F16: 985,7 MB |
+| Version de llama.cpp indicada | v0.5.0 |
+| Modelo base | google/gemma-4-E2B-it |
+| Cuantizado por | SoAI |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una arquitectura densa con embeddings por capa, una tecnica que reduce el coste efectivo de los parametros al distribuir representaciones por capa en lugar de concentrarlas en una unica matriz de embedding de gran tamano. Esto explica la distincion entre parametros efectivos (2,3B) y parametros totales con embeddings (5,1B) que aparece en la model card. El modelo admite una ventana de contexto de 131.072 tokens y entrada multimodal de texto, imagen y audio, gestionada mediante un proyector mmproj que debe cargarse por separado. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo base es un transformer denso con una innovacion estructural relevante: embeddings por capa, un esquema en el que cada capa dispone de su propia representacion de embedding en lugar de compartir una unica tabla de entrada. Esto explica la diferencia entre los 2,3B de parametros efectivos y los 5,1B que se alcanzan contando los embeddings. El dato de safetensors del repositorio (4.647.450.147 parametros) es coherente con esa cifra ampliada, aunque no coincide exactamente con ninguna de las dos cifras de la model card.
 
-El proceso de cuantizacion de SoAI es el elemento diferencial de este repositorio. Q4_K_M se cuantiza con una imatrix calculada sobre un corpus propio formateado con la plantilla de chat nativa del modelo, incluyendo su sintaxis de tool calls; el archivo imatrix se publica en el repositorio junto con una tabla de procedencia que fija la revision original y el commit de llama.cpp para permitir reconstruir los ficheros. Q8_0 se cuantiza sin imatrix, ya que el formato Q8_0 de llama.cpp no la utiliza. Antes de cuantizar, el proceso verifica que los marcadores de chat, thinking y tool calling se almacenen como tokens especiales y que la plantilla de chat incrustada coincida con la original, deteniendo la publicacion si la conversion los importa como texto plano. El modo razonamiento se activa por peticion mediante `"chat_template_kwargs": {"enable_thinking": true}`.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base; la model card de esta publicacion se centra en el proceso de cuantizacion, no en el entrenamiento. Si se documenta el proceso de cuantizacion: Q4_K_M se genera con una importance matrix calculada por SoAI sobre un corpus propio que incluye conversaciones multi-turno en 21 idiomas, edicion de codigo en 22 lenguajes, llamadas a herramientas con sus resultados, matematicas paso a paso y prosa web, todo formateado con la plantilla de chat nativa del modelo, incluida su sintaxis de tool calling. Q8_0 se cuantiza sin imatrix porque el formato de llama.cpp no la utiliza. Antes de publicar, el pipeline verifica que los marcadores de chat, thinking y tool calling se almacenen como tokens especiales y que la plantilla embebida coincida con la original, abortando la conversion si no es asi.
 
 ## Capacidades
 
-- Generacion de texto conversacional en 35+ idiomas.
-- Entrada de imagen: descripcion, comprension visual y tareas any-to-any (requiere el fichero mmproj).
-- Entrada de audio: procesamiento de voz (requiere el fichero mmproj).
-- Razonamiento configurable: modo thinking activable o desactivable por peticion.
-- Tool calling / function calling con sintaxis nativa del modelo.
-- Soporte para flujos de agente y razonamiento multi-paso mediante tool calls.
-- Contexto largo de 131.072 tokens para documentos extensos o conversaciones prolongadas.
-- Edicion y generacion de codigo (el corpus de calibracion incluye 22 lenguajes de programacion).
-- Capacidad de matematicas paso a paso (presente en el corpus de calibracion).
-- Despliegue local con llama.cpp, con API compatible con OpenAI a traves de llama-server.
+- Generacion de texto conversacional multi-turno con contexto de hasta 131.072 tokens.
+- Entrada multimodal: imagenes y audio, siempre que se cargue el proyector `mmproj-gemma-4-E2B-it-f16.gguf` con `--mmproj`.
+- Razonamiento configurable por peticion mediante `chat_template_kwargs: {"enable_thinking": true}`.
+- Tool calling / function calling con sintaxis nativa incluida en la plantilla de chat.
+- Capacidades multilingues: 35+ idiomas soportados, con preentrenamiento en mas de 140.
+- Razonamiento matematico paso a paso, segun el corpus de calibracion empleado.
+- Generacion y edicion de codigo en multiples lenguajes, segun el corpus de calibracion (22 lenguajes).
+- Compatibilidad con endpoints de tipo OpenAI a traves de `llama-server`.
+- Ejecucion en GPU, CPU o con reparto de capas entre ambos.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno extensas y conservar contexto hasta 128K tokens, lo que permite adjuntar historiales completos o bases de conocimiento sin truncar.
-- Asistente local con entrada de imagen: gracias al proyector mmproj, se puede desplegar en un portatil para describir capturas, extraer texto de imagenes o responder preguntas sobre diagramas sin enviar datos a la nube.
-- Procesamiento de audio en el borde: la entrada de voz permite construir interfaces de dictado, resumen de reuniones o transcripcion asistida en equipos sin GPU dedicada.
-- Agente de codigo en local: con tool calling nativo, puede integrarse en un entorno de desarrollo para invocar funciones, consultar repositorios o aplicar ediciones guiadas en pipelines controlados.
-- Analisis de documentos largos: con 131.072 tokens de contexto, es adecuado para resumir contratos, informes tecnicos o expedientes extensos manteniendo la coherencia entre secciones.
-- Razonamiento controlado por coste: al poder desactivar el modo thinking, se puede usar el modelo en tareas simples (clasificacion, extraccion, respuestas directas) y activarlo solo en consultas que requieran razonamiento.
-- Chatbot embebido en aplicaciones de escritorio o moviles mediante llama.cpp, al caber en 3,4 GB con Q4_K_M.
-- Generacion asistida de codigo en CI/CD: procesar diffs y sugerir cambios invocando herramientas externas, con la ventaja de ejecutarse en infraestructura propia.
-- Prototipado multimodal en investigacion: por su tamano reducido, sirve como base para experimentos que requieran entrada combinada de texto, imagen y audio.
+- **Asistente local con entrada de voz e imagen**: cargando el mmproj F16 junto al GGUF, el modelo puede recibir una foto de un documento o un clip de audio y responder en texto, todo en local sin salida a la nube. Adecuado por su naturaleza any-to-any y su tamano reducido.
+- **Atencion al cliente automatizada**: la ventana de 128K permite mantener conversaciones largas con historial extenso y documentacion de producto inyectada en el contexto, sin truncar turnos previos.
+- **Agente con tool calling en local**: la plantilla nativa de llamadas a herramientas y el modo thinking configurable permiten construir agentes de varios pasos sobre `llama-server` con API compatible con OpenAI, integrables en orquestadores existentes.
+- **Asistencia de codigo en estaciones de trabajo sin GPU dedicada**: la variante Q4_K_M (3,4 GB) se ejecuta en CPU o en GPU consumer, lo que permite autocompletado y edicion de codigo en 22 lenguajes segun el corpus de calibracion, sin depender de servicios externos.
+- **Procesamiento de documentos escaneados**: combinando la entrada de imagen y el contexto largo, se pueden pasar varias paginas de un PDF rasterizado y pedir extraccion estructurada o resumen en una sola peticion.
+- **Prototipado rapido de pipelines multimodales**: al ser un GGUF de 3,4-5,0 GB con despliegue en un solo comando (`llama-server -hf`), sirve para validar arquitecturas de producto antes de migrar a infraestructura mayor.
+- **Analisis de reuniones o notas de voz**: la entrada de audio permite transcribir y resumir contenido hablado, con el razonamiento activable para tareas de sintesis estructurada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y los metadatos de Hugging Face no aportan datos de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni comparaciones numericas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM para Q4_K_M: aproximadamente 3,4 GB de pesos. Sumando el mmproj F16 (~1 GB) y una ventana de contexto moderada, se estiman entre 6 y 8 GB de VRAM. Estimacion orientativa, no confirmada por el autor.
-- VRAM para Q8_0: aproximadamente 5,0 GB de pesos. Con mmproj y contexto moderado, se estiman entre 8 y 10 GB. Estimacion orientativa.
-- Contexto: el consumo de memoria de la cache KV crece con la longitud de contexto configurada; con 128K tokens la demanda puede superar con holgura la de los pesos, por lo que se recomienda ajustar `n_ctx` al caso de uso real.
-- GPU de consumo: Q4_K_M cabe en tarjetas de 8-12 GB como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070; Q8_0 requiere preferiblemente 12 GB o mas.
-- GPU de gama alta: A100, H100 y RTX 4090 pueden ejecutar cualquier cuantizacion publicada con contexto amplio y margen para lotes.
-- Despliegue: llama.cpp, llama-server (API compatible con OpenAI y UI de chat integrada), Ollama, LM Studio o Jan, todos ellos consumidores de GGUF. vLLM y TGI no estan optimizados para GGUF en esta distribucion.
-- Descarga directa: `hf download SoAIHQ/gemma-4-E2B-it-GGUF --include "gemma-4-E2B-it-Q4_K_M.gguf" "mmproj-*"`
-- Arranque rapido: `llama-server -hf SoAIHQ/gemma-4-E2B-it-GGUF:Q4_K_M` (descarga el mmproj automaticamente si se usa con entrada multimodal).
-- Latencia y throughput: no disponibles.
+- **VRAM estimada**: Q4_K_M parte de 3,4 GB de pesos; Q8_0, de 5,0 GB. A esto hay que sumar la memoria de la cache KV, que crece con la longitud de contexto configurada. Para uso multimodal hay que anadir 985,7 MB del proyector F16.
+- **GPU recomendadas**: no se especifican en la informacion disponible. Por tamano, cualquier GPU con 6-8 GB de VRAM deberia alojar Q4_K_M con contexto moderado; Q8_0 requiere algo mas de margen.
+- **GPU consumer**: si, el modelo esta disenado para caber en equipos de consumo. La model card indica explicitamente que Q4_K_M "suits most machines" y que llama.cpp puede repartir capas entre GPU y CPU.
+- **Opciones de despliegue**: llama.cpp (version de referencia v0.5.0), `llama-server` con interfaz de chat integrada y API compatible con OpenAI. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
+- **Latencia y throughput**: no disponibles. Dependeran del hardware, del reparto de capas y de la longitud de contexto.
+- **Descarga directa**: `llama-server -hf SoAIHQ/gemma-4-E2B-it-GGUF:Q4_K_M` descarga automaticamente el mmproj cuando es necesario.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodalidad | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| SoAIHQ/gemma-4-E2B-it-GGUF (esta ficha) | 4,65B totales; 2,3B efectivos segun la card | 131.072 tokens | Texto, imagen y audio | apache-2.0 en metadatos; enlace a licencia Gemma 4 | GGUF (Q4_K_M, Q8_0) | Repositorio HF con 0 descargas |
-| google/gemma-4-E2B-it (modelo base) | 4,65B (safetensors) | 131.072 tokens | Texto, imagen y audio | Licencia Gemma 4 (segun enlace del autor) | safetensors (formato original) | Modelo original de Google |
-| google/gemma-3n-E2B-it (generacion anterior, mismo enfoque de parametros efectivos) | no disponible | no disponible | Texto, imagen y audio | Licencia Gemma | safetensors, GGUF de terceros | Ampliamente distribuido |
-| google/gemma-3-4b-it (gama similar sin embeddings por capa) | no disponible | no disponible | Texto e imagen | Licencia Gemma | safetensors, GGUF | Ampliamente distribuido |
+No se dispone de datos de rendimiento del modelo base ni de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa numerica fiable. A continuacion se recogen los datos estructurales conocidos frente al propio modelo base sin cuantizar:
 
-Nota: los datos de rendimiento comparado no estan disponibles en la informacion proporcionada; la comparativa se limita a parametros, contexto, modalidad y licencia.
+| Modelo | Parametros | Contexto | Formato | Licencia | Multimodal |
+|---|---|---|---|---|---|
+| SoAIHQ/gemma-4-E2B-it-GGUF (Q4_K_M) | 2,3B efectivos / 5,1B con embeddings | 128K | GGUF | Apache 2.0 | Si (texto, imagen, audio) |
+| google/gemma-4-E2B-it (original) | 2,3B efectivos / 5,1B con embeddings | 128K | Safetensors (16-bit) | Apache 2.0 | Si (texto, imagen, audio) |
+
+Para el resto de alternativas de la misma categoria (modelos multimodales ligeros con contexto largo): no disponible.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados que respalden el rendimiento del modelo ni de las cuantizaciones, por lo que la calidad real debe validarse en el caso de uso concreto.
-- Q4_K_M introduce perdida de precision respecto a los pesos originales; para tareas sensibles a matices (codigo complejo, matematicas avanzadas) Q8_0 puede ser preferible si la memoria lo permite.
-- El modelo base, con 2,3B parametros efectivos, tiene menor capacidad de razonamiento que modelos de mayor tamano; es probable que falle en tareas de logica larga o conocimiento especializado.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente fuera de los idiomas mejor representados y en dominios tecnicos.
-- La model card afirma soporte de 35+ idiomas, pero no detalla la calidad por idioma; el rendimiento puede degradarse en lenguas minoritarias.
-- Discrepancia de licencia: los metadatos y el README indican apache-2.0, pero la model card enlaza a la licencia de Gemma 4. Antes de uso comercial conviene verificar que licencia se aplica realmente a los pesos derivados.
-- El repositorio presenta 0 descargas y 0 likes, por lo que no existe validacion de la comunidad sobre la calidad de la cuantizacion.
-- La carga multimodal requiere el fichero mmproj adicional; si se omite, el modelo funcionara unicamente con texto aunque la plantilla de chat espere modalidades adicionales.
-- Contexto de 128K: la cache KV correspondiente puede consumir mas memoria que los propios pesos; configurar un `n_ctx` excesivo puede provocar OOM.
-- Los marcadores especiales de chat, thinking y tool calling dependen de una conversion correcta; segun el autor, un fallo en este paso rompe turnos, razonamiento y tool calls sin emitir ningun error.
-- No se dispone de informacion sobre sesgos especificos, composicion del dataset de entrenamiento ni datos de seguridad.
+- **Sesgos**: no documentados en la informacion disponible. Al derivar de un modelo preentrenado en mas de 140 idiomas, es esperable heredar los sesgos del corpus original, pero no hay analisis publicado en esta ficha.
+- **Alucinacion**: no se han publicado evaluaciones especificas de tasa de alucinacion para este modelo ni para su base.
+- **Cuantizacion**: Q4_K_M introduce perdida de calidad respecto a los pesos de 16 bits, aunque la model card la califica de "high quality for its size". SoAI no publica variantes por debajo de 4 bits.
+- **Dependencia del proyector multimodal**: sin cargar `mmproj-gemma-4-E2B-it-f16.gguf` con `--mmproj`, el modelo no procesa imagenes ni audio; solo texto.
+- **Compatibilidad de llama.cpp**: la model card referencia la version v0.5.0. Versiones anteriores pueden no interpretar correctamente los tokens especiales de thinking o tool calling.
+- **Idiomas**: aunque se indican 35+ idiomas soportados, no se detalla la lista ni la calidad por idioma. El castellano no aparece verificado explicitamente en la informacion disponible.
+- **Licencia**: Apache 2.0, pero con enlace a la licencia especifica de Gemma 4 de Google. Conviene revisar los terminos de uso de Gemma antes de un despliegue comercial, ya que pueden imponer condiciones adicionales a las de Apache 2.0 puro.
+- **Contexto largo**: la memoria necesaria para la cache KV crece con la longitud de contexto; usar los 128K completos exige planificacion de memoria aunque los pesos quepan holgadamente.
+- **Reputacion del publicador**: se trata de una cuantizacion de terceros (SoAI), no oficial de Google. La trazabilidad esta documentada con la revision del modelo base y el commit de llama.cpp, pero la validacion de calidad corre a cargo del publicador.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF
-- Ficheros del repositorio: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/tree/main
+- Repositorio GGUF en Hugging Face: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Licencia referenciada de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Sitio de SoAI: https://soai.to
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Descarga directa Q4_K_M: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/resolve/main/gemma-4-E2B-it-Q4_K_M.gguf
-- Descarga directa Q8_0: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/resolve/main/gemma-4-E2B-it-Q8_0.gguf
-- Proyector multimodal mmproj F16: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/resolve/main/mmproj-gemma-4-E2B-it-f16.gguf
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Sitio del publicador: https://soai.to
+- Archivo Q4_K_M: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/resolve/main/gemma-4-E2B-it-Q4_K_M.gguf
+- Archivo Q8_0: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/resolve/main/gemma-4-E2B-it-Q8_0.gguf
+- Proyector multimodal F16: https://huggingface.co/SoAIHQ/gemma-4-E2B-it-GGUF/resolve/main/mmproj-gemma-4-E2B-it-f16.gguf

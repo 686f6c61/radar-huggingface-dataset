@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/LFM2.5-Encoder-230M · Hugging Face",
-      "url": "https://huggingface.co/litert-community/LFM2.5-Encoder-230M",
-      "snippet": "Note the license&#x27;s commercial-use threshold (Section 5). This repository redistributes converted Derivative Works of LiquidAI/LFM2.5-Encoder-230M with modification notices per Section 4; all credit for the model to Liquid AI."
-    },
-    {
-      "title": "litert-community/LFM2.5-Encoder-230M at main - Hugging Face",
-      "url": "https://huggingface.co/litert-community/LFM2.5-Encoder-230M/tree/main",
-      "snippet": "Notebooks Google Colab Kaggle main LFM2.5-Encoder-230M 714 MB Ctrl+K Ctrl+K 1 contributor History:4 commits mlboydaisuke Card: add the measured Pixel 8a rows (GPU vs CPU) that the Android sweep produced 937a287 verifiedabout 1 hour ago .gitattributes Safe 1.52 kBinitial commit9 days ago LFM2.5-Encoder-230M_fp16.tflite 463 MB xet LFM2.5-Encoder-230M LiteRT: int8 (iPhone-verified bit-exact ..."
-    },
-    {
-      "title": "LFM2.5-230M - Liquid Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
-      "snippet": "Ultra-compact 230M parameter model for data extraction and lightweight on-device agentic tasks ← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets."
-    },
-    {
-      "title": "LFM2.5-230M: Built to Run Anywhere | Blog | Liquid AI",
-      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
-      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
-    },
-    {
-      "title": "LFM2.5-Encoder-230M - Liquid Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm25-encoder-230m",
-      "snippet": "230M multilingual bidirectional encoder for fine-tuning into classification, token classification, and retrieval tasks ← Back to Liquid Nanos LFM2.5-Encoder-230M is a multilingual bidirectional encoder built on the LFM2 architecture."
-    }
-  ]
+  "sources": []
 }

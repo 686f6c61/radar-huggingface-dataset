@@ -2,88 +2,107 @@
 
 ## Resumen
 
-K2-Horizon-375B-A23B-FP8 es la versión cuantizada en FP8 del modelo insignia de la familia K2-Horizon de IFM, una empresa que apuesta por la apertura total de sus modelos. Se trata de un modelo de lenguaje de texto únicamente, con arquitectura sparse Mixture-of-Experts (MoE) que almacena 375 mil millones de parámetros totales pero activa solo 23 mil millones por token. Esta característica permite un coste de inferencia relativamente bajo en comparación con un modelo denso del mismo tamaño, manteniendo una capacidad de conocimiento amplia.
+K2-Horizon-375B-A23B-FP8 es la versión cuantizada en FP8 del modelo insignia de la familia K2-Horizon, desarrollada por IFM. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 375.000 millones de parámetros totales y 23.000 millones activos por token, diseñado para cargas de trabajo agénticas de largo horizonte. El repositorio contiene únicamente los pesos en FP8 del modelo base `IFM/K2-Horizon-375B-A23B`, publicado con licencia Apache 2.0 y pesos abiertos.
 
-El modelo destaca por su ventana de contexto nativa de 524.288 tokens (512K), orientada a tareas de razonamiento de largo horizonte y uso agéntico. IFM publica el checkpoint final, y promete liberar también los checkpoints intermedios, los datos de entrenamiento y el código de entrenamiento, lo que lo convierte en un candidato relevante para investigación y desarrollo en entornos que requieren transparencia total. La versión FP8 aquí descrita reduce el footprint de memoria y acelera la inferencia en hardware compatible, manteniendo un rendimiento cercano al modelo BF16 original.
+La relevancia de esta versión radica en la reducción de huella de memoria y el aumento de velocidad de inferencia en hardware compatible con FP8, manteniendo un rendimiento cercano al modelo original en BF16 según las evaluaciones del autor. El modelo declara una ventana de contexto nativa de 524.288 tokens (512K) desde las etapas de midtraining, lo que lo sitúa en la categoría de contexto largo para tareas de agentes, uso de herramientas y flujos de trabajo multi-paso.
 
-La licencia Apache 2.0 permite uso comercial sin restricciones de atribución adicionales, lo que facilita su adopción en entornos empresariales. Sin embargo, su tamaño físico (390,6 GB en FP8) y el requisito de parallelismo de expertos limitan su despliegue a infraestructuras multi-GPU profesionales.
+El modelo está orientado a un público técnico que necesita desplegar un MoE de gran tamaño con requisitos de memoria manejables. La cuantización selectiva (solo las capas lineales de los expertos enrutados) y la necesidad de paralelismo de expertos para servir el modelo son dos detalles críticos que condicionan su despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sparse Mixture-of-Experts (MoE) con enrutamiento por token |
-| Parametros totales | 379.167.159.168 (375B) |
+| Arquitectura | Mixture-of-Experts (MoE) disperso, transformer; librería `transformers` con código personalizado (`k2_horizon`) |
+| Parametros totales | 379.167.159.168 (≈375B) |
 | Parametros activos | 23B por token |
-| Longitud de contexto | 524.288 tokens (512K) |
-| Tipos de cuantizacion | FP8 (solo capas de expertos enrutados), BF16 (resto), disponible tambien en BF16 original |
-| Idiomas soportados | Ingles (en) |
+| Longitud de contexto | 524.288 tokens (512K), nativo desde midtraining |
+| Tipos de cuantizacion | FP8 (pesos estáticos con escala por bloque 128×128; activaciones FP8 dinámicas con escala por grupo 1×128 en el eje de canales de entrada); resto de capas en BF16 |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (compressed-tensors), repo de 390,6 GB |
+| Modelo base | IFM/K2-Horizon-375B-A23B (relación: cuantizado) |
+| Datasets de entrenamiento | IFM/K2-Horizon-Pretrain-Data, IFM/K2-Horizon-Midtrain-Data |
+| Pipeline | text-generation |
+| Descargas / likes | 2.041 / 11 |
+| Fecha de creación / actualización | 2026-09-03 / 2026-11-04 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only con sparse MoE. Los expertos enrutados tienen un tamaño intermedio de 1792, que no es divisible en bloques de cuantizacion de 128 a los tamanos de tensor parallelism habituales (TP=4 o TP=8), por lo que se requiere parallelismo de expertos para servir el modelo. Las capas de atencion, expertos compartidos, routers, las tres primeras capas densas y el lm_head se mantienen en BF16; solo las capas lineales de los expertos enrutados se cuantizan a FP8 estatico (pesos) y FP8 dinamico (activaciones).
+La arquitectura es un transformer MoE disperso con 375B parámetros almacenados y 23B activos por token. La model card no detalla el número de expertos, la proporción de expertos compartidos ni la composición exacta de las capas, pero sí especifica que existen expertos enrutados, expertos compartidos, routers y tres capas densas iniciales. La cuantización FP8 afecta exclusivamente a las capas lineales de los expertos enrutados; atención, expertos compartidos, routers, las tres primeras capas densas y `lm_head` permanecen en BF16.
 
-IFM ha publicado los datasets de pre-entrenamiento y mid-training (IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data) y el codigo de entrenamiento (xllm), aunque no se proporciona el numero total de tokens ni la composicion detallada del corpus. La ventana de contexto de 512K se introduce desde las etapas de mid-training. No se menciona el uso de RLHF o DPO; la informacion disponible no especifica el metodo de alineacion.
+El entrenamiento se realizó en al menos dos fases documentadas: pretraining y midtraining, con datasets publicados en el Hub (`IFM/K2-Horizon-Pretrain-Data` e `IFM/K2-Horizon-Midtrain-Data`). El contexto de 512K se introduce de forma nativa a partir de las etapas de midtraining. El autor anuncia la publicación del código de entrenamiento (`ifm-ai/xllm`), el código de evaluación (`ifm-ai/Eval360`), el navegador de datos (`ifm-ai/DATA_NAVIGATOR`) y checkpoints intermedios, aunque no se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO.
+
+Como innovación destacable, la versión FP8 utiliza pesos estáticos con una escala por bloque de 128×128 y activaciones dinámicas con una escala por grupo de 1×128. El tamaño intermedio de los expertos enrutados (1.792) no es divisible en bloques de cuantización de 128 anchos para los tamaños habituales de paralelismo tensorial (TP=4, TP=8), por lo que el despliegue exige paralelismo de expertos.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de largo alcance gracias a la ventana de 512K tokens.
-- Uso agéntico: tool calling, interaccion con terminal y ejecucion de flujos de trabajo de multiples pasos (long-horizon workflows).
-- Rendimiento competitivo con modelos abiertos de hasta 2,6 veces su tamano en benchmarks de agencia y herramientas.
-- Capacidad multilingue no declarada; el modelo esta entrenado principalmente en ingles.
-- No se mencionan capacidades de vision, audio ni multimodalidad.
-- Soporte de decodificacion especulativa no confirmado en la informacion disponible.
+- Generación de texto conversacional en inglés, con soporte de diálogo multi-turno.
+- Razonamiento agéntico de largo horizonte: la model card destaca rendimiento frontier en uso de herramientas, terminal y flujos de trabajo de largo alcance.
+- Uso de herramientas (tool calling / function calling) y razonamiento multi-paso orientado a agentes.
+- Contexto largo nativo de 512K tokens, adecuado para documentos extensos, repositorios de código y trazas de agentes.
+- Capacidad de ejecución en terminal y entornos de línea de comandos según los benchmarks declarados por el autor.
+- No se documentan capacidades de visión, audio ni modo de pensamiento explícito en la información disponible.
+- Multilingüismo limitado: solo inglés declarado en la model card.
 
 ## Casos de uso
 
-- Agentes autonomos de codificacion: el modelo puede gestionar tareas complejas de desarrollo que requieren leer multiples archivos, ejecutar comandos de terminal y modificar codigo en varios pasos, gracias a su contexto largo y su capacidad de tool calling.
-- Analisis de documentos extensos: procesamiento de contratos, informes financieros o articulos cientificos completos sin necesidad de dividirlos en fragmentos, manteniendo coherencia global del texto.
-- Asistentes de soporte tecnico de nivel avanzado: resolucion de incidencias que requieren consultar bases de conocimiento amplias y seguir procedimientos de diagnostico en multiples turnos.
-- Investigacion academica: estudio de la evolucion de capacidades durante el entrenamiento, ya que IFM liberara checkpoints intermedios y datos, permitiendo analisis de interpretabilidad y dinamicas de aprendizaje.
-- Generacion de documentacion tecnica: redaccion de manuales, guias y especificaciones a partir de repositorios de codigo extensos, aprovechando la ventana de contexto para considerar todo el proyecto.
-- Prototipado de sistemas RAG con contexto ultralargo: integracion en pipelines de recuperacion donde el modelo debe procesar grandes volumenes de informacion recuperada en una sola pasada.
+- Agentes autónomos de terminal: el modelo puede operar en entornos de línea de comandos ejecutando comandos, interpretando salidas y corrigiendo errores en bucles multi-paso, gracias a su ventana de 512K tokens para mantener el historial completo de la sesión.
+- Orquestación de herramientas en producción: con soporte de tool calling, puede integrarse como planificador central que decide qué API invocar, en qué orden y cómo encadenar resultados en flujos de trabajo largos.
+- Análisis de repositorios de código completos: la ventana de 512K permite cargar múltiples archivos y trazas de CI/CD para tareas de revisión, refactorización o generación de parches con contexto global del proyecto.
+- Automatización de soporte técnico de nivel avanzado: conversaciones multi-turno con historial extenso y acceso a herramientas internas (consultas a bases de datos, tickets, logs) mediante function calling.
+- Procesamiento de documentación extensa: resumen, extracción y preguntas sobre contratos, informes o manuales que superan ampliamente el contexto de modelos de 128K.
+- Investigación sobre entrenamiento de MoE: la publicación de checkpoints intermedios, datos y código de entrenamiento permite estudiar la evolución de capacidades a lo largo del entrenamiento, no solo en el checkpoint final.
+- Despliegue en clústeres con FP8: la versión cuantizada reduce la huella de memoria y acelera la inferencia en GPUs con soporte FP8 (H100, H200, B200), lo que facilita servir un MoE de 375B con menos recursos que la versión BF16.
 
 ## Benchmarks y rendimiento
 
-La model card menciona comparaciones cualitativas con modelos abiertos (Nemotron 3 Ultra, Inkling, MiniMax-M3, GLM 5.2) y cerrados (GPT 5.6 Luna, GPT 5.6 Terra, Claude Sonnet5), indicando que K2-Horizon-375B-A23B es competitivo en tareas agénticas, pero no se han proporcionado los valores numericos de los benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. No se pueden reportar cifras concretas sin riesgo de inventar datos.
+La model card incluye una tabla comparativa con modelos abiertos (Nemotron 3 Ultra, Inkling, MiniMax-M3) y cerrados (GLM 5.2, GPT 5.6 Luna, GPT 5.6 Terra, Claude Sonnet5). Sin embargo, en la información proporcionada solo se conserva la fila de número de parámetros de dicha tabla; los valores numéricos de los benchmarks no están disponibles en el extracto. Por tanto:
+
+No se han publicado resultados de benchmarks numéricos en la información disponible. La model card afirma que el modelo iguala o supera a MoE abiertos de hasta 2,6 veces su tamaño en benchmarks agénticos y es competitivo con modelos frontier cerrados, pero no se dispone de las cifras concretas.
 
 ## Requisitos de hardware
 
-- El repositorio FP8 ocupa 390,6 GB, lo que implica un requisito minimo de VRAM de aproximadamente 400 GB para cargar los pesos completos en memoria.
-- Se requiere un cluster multi-GPU profesional. Por ejemplo, 8x NVIDIA H100 80GB (640 GB totales) o 8x A100 80GB (640 GB) serian suficientes para alojar el modelo con margen para activaciones y KV cache.
-- No cabe en ninguna GPU de consumo (RTX 4090, 5090, etc.) de forma individual.
-- El parallelismo de expertos es obligatorio debido al tamano del tensor intermedio de los expertos (1792), que no es compatible con tensor parallelism TP=4 o TP=8 para cuantizacion FP8. Esto limita las opciones de despliegue.
-- Frameworks compatibles: vLLM (con soporte de expert parallelism), TGI, o el codigo de entrenamiento xllm. Para cuantizacion adicional, se podria usar llama.cpp o GGUF, pero no se proporcionan versiones GGUF en el repositorio.
-- Latencia y throughput: no se han publicado datos especificos. Se espera un rendimiento razonable para un MoE de 23B activos, pero la infraestructura necesaria es considerable.
+- VRAM estimada para inferencia: el repo FP8 ocupa 390,6 GB, por lo que se necesita al menos ese espacio en memoria de GPU o en un pool agregado. En BF16 el modelo base requeriría aproximadamente el doble (≈750 GB).
+- GPU recomendadas: GPUs con soporte FP8 nativo, como NVIDIA H100, H200 y B200. Para el modelo BF16 se necesitarían configuraciones multi-GPU de mayor capacidad.
+- No cabe en GPUs de consumo (RTX 4090, 24 GB) ni en una única GPU profesional de 80 GB; requiere despliegue multi-GPU con paralelismo de expertos.
+- Opciones de despliegue: `transformers` con código personalizado (`k2_horizon`), `compressed-tensors` para la carga de pesos cuantizados. El autor no documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Restricción de serving: el tamaño intermedio de los expertos enrutados (1.792) no es divisible en bloques de 128 para TP=4 y TP=8, por lo que es obligatorio el paralelismo de expertos (EP).
+- Latencia y throughput: no disponibles en la información proporcionada. El autor indica que la versión FP8 reduce la huella de memoria y acelera la inferencia en hardware compatible frente a BF16.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Cuantizacion |
-|---|---|---|---|---|---|
-| K2-Horizon-375B-A23B | 375B | 23B | 512K | Apache 2.0 | FP8/BF16 |
-| Mixtral 8x22B | 141B | 39B | 64K | Apache 2.0 | BF16/FP8 |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | BF16/FP8 |
+La model card compara con los siguientes modelos, pero solo se dispone de los datos de parámetros totales:
 
-K2-Horizon ofrece un contexto muy superior (512K frente a 64K o 128K) y una proporcion de parametros activos menor que Mixtral 8x22B, lo que reduce el coste por token. DeepSeek-V3 tiene mas capacidad total y un contexto de 128K, pero su licencia MIT es mas permisiva que Apache 2.0 (aunque ambas permiten uso comercial). No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
+| Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| K2-Horizon-375B-A23B-FP8 | 375B (23B activos) | 512K | Apache 2.0 | Pesos abiertos en HF |
+| Nemotron 3 Ultra | 550B | no disponible | no disponible | no disponible |
+| Inkling (xhigh) | 975B | no disponible | no disponible | no disponible |
+| MiniMax-M3 | no disponible | no disponible | no disponible | no disponible |
+| GLM 5.2 (max) | no disponible | no disponible | no disponible | Cerrado |
+| GPT 5.6 Luna / Terra | no disponible | no disponible | no disponible | Cerrado |
+| Claude Sonnet5 (max) | no disponible | no disponible | no disponible | Cerrado |
+
+No se dispone de datos de rendimiento, contexto ni licencia de los modelos comparados en la información proporcionada, por lo que la comparativa cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo esta entrenado principalmente en ingles; su rendimiento en otros idiomas no esta garantizado.
-- Requisitos de infraestructura: el despliegue requiere un cluster de GPUs con al menos 400 GB de VRAM y soporte de parallelismo de expertos, lo que excluye entornos de desarrollo locales.
-- Riesgo de alucinacion: como todo LLM, puede generar informacion falsa o inconsistente, especialmente en tareas creativas o de conocimiento no cubierto.
-- Sesgos: no se han publicado evaluaciones de sesgo ni de seguridad; se recomienda realizar pruebas especificas antes de uso en produccion.
-- Cuantizacion FP8 parcial: solo los expertos enrutados estan en FP8; el resto del modelo permanece en BF16, lo que implica que el ahorro de memoria no es total y la aceleracion depende del hardware.
-- Dependencia de hardware FP8: para aprovechar la cuantizacion se necesitan GPUs con soporte nativo de FP8 (H100, H200, etc.); en GPUs sin este soporte, el modelo podria no ejecutarse o requerir conversion.
-- Disponibilidad de datos: aunque IFM promete liberar datos y codigo, al momento de esta ficha solo se ha publicado el checkpoint final y los datasets referenciados; la documentacion completa de entrenamiento aun no esta disponible.
+- Idioma: solo se declara inglés; no hay soporte multilingüe documentado, lo que limita su uso en castellano u otros idiomas.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al entrenarse con datasets publicados por el autor, los sesgos de dichos datos son desconocidos.
+- Alucinación: no se proporcionan tasas de alucinación ni evaluaciones de veracidad; como modelo generativo de gran escala, el riesgo persiste y requiere verificación en producción.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base y los datasets deben revisarse por separado; la model card no detalla restricciones adicionales.
+- Despliegue complejo: requiere paralelismo de expertos por la indivisibilidad del tamaño intermedio (1.792) en bloques de 128 para TP=4/TP=8; esto excluye configuraciones estándar de tensor parallelism.
+- Contexto largo: aunque se declaran 512K tokens nativos, no se documentan evaluaciones específicas de degradación en contextos extremos ni latencia asociada.
+- Cuantización: solo los expertos enrutados están en FP8; el resto en BF16, por lo que la reducción de memoria es parcial y el rendimiento puede variar según la carga.
+- Checkpoints intermedios y código de entrenamiento anunciados pero no disponibles en el momento de la ficha; la reproducibilidad completa aún no es posible.
+- Sin datos de benchmarks numéricos verificables en la información disponible; las afirmaciones de rendimiento frontier provienen del autor y no pueden contrastarse con las cifras del extracto.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo FP8: https://huggingface.co/IFM/K2-Horizon-375B-A23B-FP8
-- Repositorio Hugging Face del modelo BF16 original: https://huggingface.co/IFM/K2-Horizon-375B-A23B
-- Blog de presentacion de K2 Horizon: https://ifm.ai/blog/k2
-- Dataset de pre-entrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
-- Dataset de mid-training: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
-- Codigo de entrenamiento (xllm): https://github.com/LLM360/xllm
-- Codigo de evaluacion (Eval360-V2): https://github.com/LLM360/Eval360-V2
+- Hugging Face: https://huggingface.co/IFM/K2-Horizon-375B-A23B-FP8
+- Modelo base: https://huggingface.co/IFM/K2-Horizon-375B-A23B
+- Código de entrenamiento: https://github.com/ifm-ai/xllm
+- Código de evaluación: https://github.com/ifm-ai/Eval360
+- Navegador de datos: https://github.com/ifm-ai/DATA_NAVIGATOR
+- Dataset de pretraining: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data

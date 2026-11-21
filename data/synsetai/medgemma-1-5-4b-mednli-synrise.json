@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "synsetai/medgemma-1.5-4b-mednli-synrise",
+  "slug": "synsetai-medgemma-1-5-4b-mednli-synrise",
+  "author": "synsetai",
+  "url": "https://huggingface.co/synsetai/medgemma-1.5-4b-mednli-synrise",
+  "created_at": "2026-11-20T22:30:36.000Z",
+  "updated_at": "2026-11-20T23:01:49.000Z",
+  "license": "hai-def",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "medical",
+    "natural-language-inference",
+    "mednli",
+    "lora",
+    "research",
+    "en",
+    "base_model:google/medgemma-1.5-4b-it",
+    "base_model:adapter:google/medgemma-1.5-4b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35917596,
+  "storage_human": "36 MB",
+  "context_length": null,
+  "base_model": "google/medgemma-1.5-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

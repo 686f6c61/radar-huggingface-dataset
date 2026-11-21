@@ -2,91 +2,93 @@
 
 ## Resumen
 
-GLM-4.7-Flash-Abliterated-GGUF es la distribucion en formato GGUF del modelo GLM-4.7-Flash sometido a un proceso de "abliteration" (eliminacion del comportamiento de rechazo) por el usuario jsantillana. El modelo original, GLM-4.7-Flash, es un Mixture-of-Experts (MoE) de aproximadamente 30.000 millones de parametros totales con unos 3.000 millones de parametros activos por token, desarrollado por Zhipu AI y Z.ai bajo licencia MIT. Esta version GGUF esta pensada para inferencia local con llama.cpp y Ollama.
+GLM-4.7-Flash Abliterated (Clean Rank-2) en formato GGUF es una versión cuantizada del modelo base `jsantillana/glm-4.7-flash-abliterated`, un derivado de GLM-4.7-Flash al que se le han eliminado selectivamente los mecanismos de rechazo (abliteration) mediante una proyección ortogonal de subespacio de rango 2. El modelo conserva la arquitectura original de tipo Mixture-of-Experts con 64 expertos enrutados, enrutamiento top-4 y un experto compartido, y cuenta con 31.221.488.576 parámetros totales según los pesos en safetensors del modelo base.
 
-La innovacion principal respecto al modelo base es la eliminacion selectiva de rechazos mediante proyeccion ortogonal de rango 1 sobre las capas de rechazo pico (39-46), lo que segun el autor reduce los falsos rechazos en dominios de ciberseguridad en un 47,6 % manteniendo una retencion de utilidad del 98,6 % (ratio de perplejidad 1,014x). El modelo se distribuye en tres cuantizaciones (Q3_K_M, Q4_K_M y Q8_0) orientadas a distintos niveles de VRAM.
+El autor, jsantillana, distribuye tres cuantizaciones GGUF (Q8_0, Q4_K_M y Q3_K_M) pensadas para ejecución con llama.cpp, con el objetivo declarado de servir a investigación de seguridad, red-teaming, ingeniería defensiva en ciberseguridad y evaluación autorizada. La licencia es MIT y el modelo declara soporte para inglés, español y chino.
 
-Este lanzamiento es relevante para investigadores de interpretabilidad mecanica y equipos de red teaming que necesitan ejecutar un modelo MoE de 30B en hardware de consumo, con contexto configurable y pesos listos para llama.cpp, sin depender de infraestructura en la nube. La ficha se centra en la variante GGUF; los datos tecnicos del modelo base provienen de la model card del autor y de busquedas web, y se marcan como no disponibles cuando no constan.
+La relevancia actual del modelo radica en su enfoque técnico de abliteration multilingüe: en lugar de un simple borrado de dirección, aplica una descomposición QR sobre un conjunto disjunto de pares de extracción (210 pares) y evaluación retenida (1058 pares), actuando quirúrgicamente sobre las proyecciones de escritura de atención y las proyecciones descendentes del experto compartido y de los 64 expertos enrutados, en las capas 30 a 46.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con Multi-Head Latent Attention (MLA) |
-| Parametros totales | ~30.000 millones (30B) |
-| Parametros activos | ~3.000 millones por token |
-| Longitud de contexto | no disponible (los ejemplos de la model card usan `-c 8192`) |
-| Tipos de cuantizacion | Q3_K_M, Q4_K_M, Q8_0 |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) con 64 expertos enrutados, top-4 routing y experto compartido |
+| Parametros totales | 31.221.488.576 |
+| Parametros activos | no disponible (top-4 de 64 expertos enrutados; el dato exacto de parámetros activos no se especifica) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (8.5 bpw), Q4_K_M (~4.5 bpw), Q3_K_M (~3.3 bpw) |
 | Idiomas soportados | en, es, zh |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp, Ollama) |
-| Modelo base | jsantillana/glm-4.7-flash-abliterated |
-| Modelo original | GLM-4.7-Flash (Zhipu AI / Z.ai) |
-| Tamano de archivo | ~14,5 GB (Q3_K_M), ~18,5 GB (Q4_K_M), ~32,0 GB (Q8_0) |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del GLM-4.7-Flash original: un transformer con capas MoE y atencion Multi-Head Latent Attention (MLA), con aproximadamente 30B parametros totales y unos 3B activos por token. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; estos datos figuran como no disponibles.
+El modelo base es GLM-4.7-Flash, un transformer de tipo Mixture-of-Experts con 64 expertos enrutados, enrutamiento top-4 y un experto compartido. Sobre esta arquitectura, el autor aplica una metodología de abliteration denominada "Clean Rank-2 Subspace", consistente en una proyección ortogonal de subespacio de rango 2 multilingüe mediante descomposición QR sobre un split disjunto: 210 pares de extracción y 1058 pares de evaluación retenidos.
 
-La modificacion respecto al modelo base es el proceso de abliteration: una proyeccion ortogonal de rango 1 dirigida sobre las capas de rechazo pico (39-46), que elimina la direccion de activacion asociada al comportamiento de rechazo. Segun el autor, esto reduce los falsos rechazos en ciberseguridad un 47,6 % con una retencion de utilidad del 98,6 % (ratio de perplejidad 1,014x). Una busqueda web menciona una variante de huihui-ai con divergencia KL de 0,0065 y reduccion de rechazos de 52/100 a 9/100, pero esos datos corresponden a otro repositorio y no se atribuyen a esta build concreta. Los pesos se han convertido a GGUF para su uso con llama.cpp y Ollama.
+La intervención quirúrgica se aplica en las capas 30 a 46 sobre tres tipos de proyecciones: las proyecciones de escritura de atención (`self_attn.o_proj`), la proyección descendente del experto compartido (`shared_experts.down_proj`) y la proyección descendente de los 64 expertos enrutados (`experts.down_proj`). El autor reporta un colapso de rechazo en inglés del 35,9 % al 5,3 % (-30,6 pp) y en español del 8,9 % al 1,3 % (-7,6 pp), manteniendo un 0 % de falsos rechazos en conjuntos benignos DEF/GRIS/SOC. No se especifican en la información disponible los datos de entrenamiento originales del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO).
 
 ## Capacidades
 
-- Generacion de texto en ingles, castellano y chino.
-- Razonamiento y generacion de codigo, heredados del modelo base GLM-4.7-Flash (no se detallan capacidades especificas en la model card).
-- Comportamiento de rechazo reducido en dominios de ciberseguridad, orientado a red teaming y evaluacion autorizada.
-- Soporte de tool calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades de vision o audio: no disponible en la informacion proporcionada.
-- Modo "thinking" explicito: no disponible en la informacion proporcionada.
-- Inferencia local via llama.cpp (`llama-server`) y Ollama.
+- Generación de texto conversacional en inglés, español y chino.
+- Respuesta a consultas técnicas de ciberseguridad sin rechazos automatizados, según declara el autor.
+- Razonamiento multi-turno y conversacional (pipeline `text-generation`, tag `conversational`).
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Ejecución en llama.cpp con soporte de plantilla Jinja (`--jinja`).
+- Capacidad de red-teaming y evaluación de alineamiento por su colapso de rechazo controlado.
+- No se documentan en la información disponible capacidades de visión, audio, tool calling explícito ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Red teaming y pruebas de penetracion autorizadas: el modelo responde a consultas tecnicas de seguridad que el modelo base rechazaria, lo que permite evaluar defensas y generar escenarios de ataque controlados en entornos de laboratorio.
-- Investigacion de interpretabilidad mecanica: la proyeccion ortogonal sobre capas 39-46 permite estudiar como se representa el rechazo en un MoE de 30B y comparar activaciones antes y despues de la abliteration.
-- Evaluacion de sesgos y robustez de seguridad: al eliminar el filtro de rechazo, sirve para medir la tasa de respuestas nocivas y calibrar clasificadores de seguridad externos.
-- Despliegue local en estaciones de trabajo: con Q4_K_M (~18,5 GB) cabe en una RTX 3090 o 4090 de 24 GB y permite iterar sin coste de API ni dependencia de la nube.
-- Generacion de texto multilingue (en/es/zh): util para prototipos de traduccion o redaccion tecnica en los tres idiomas soportados.
-- Pruebas de pipelines con llama.cpp u Ollama: sirve como banco de pruebas para integraciones de servidores locales, plantillas Jinja (`--jinja`) y configuraciones de sampling recomendadas para arquitecturas MoE de GLM.
+- Investigación de alineamiento y seguridad: el modelo permite estudiar el efecto de la abliteration sobre las tasas de rechazo en inglés y español, con métricas reportadas antes y después de la intervención (35,9 % → 5,3 % en EN; 8,9 % → 1,3 % en ES), lo que facilita experimentos reproducibles sobre mecanismos de rechazo.
+- Red-teaming de sistemas conversacionales: sirve como generador adversario para probar filtros y clasificadores de seguridad en pipelines de moderación, aprovechando su menor tasa de rechazo automatizado.
+- Ingeniería defensiva en ciberseguridad: el autor lo orienta a consultas técnicas de seguridad que otros modelos rechazarían, útil en entornos controlados de análisis de vulnerabilidades y respuesta a incidentes.
+- Evaluación académica de robustez: con 1058 pares de evaluación retenidos en la metodología, permite replicar experimentos de medición de rechazo y preservación de comportamiento benigno (0 % de falsos rechazos en DEF/GRIS/SOC).
+- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M y Q3_K_M permiten ejecutar un modelo de 31,2 mil millones de parámetros en hardware de consumo mediante llama.cpp, reduciendo el peso respecto a los pesos completos.
+- Análisis multilingüe de sesgos de seguridad: al cubrir en, es y zh, permite comparar el comportamiento de rechazo entre idiomas y detectar asimetrías de alineamiento.
+- Prototipado de asistentes conversacionales sin restricciones de contenido para entornos de prueba cerrados, con la advertencia de uso exclusivamente investigador.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo aporta metricas del proceso de abliteration (reduccion de rechazos del 47,6 %, retencion de utilidad del 98,6 %, ratio de perplejidad 1,014x), que no son benchmarks de capacidad estandar (MMLU, HumanEval, GSM8K, etc.).
+No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas internas de abliteration:
+
+| Metrica | Antes | Despues | Delta |
+|---|---|---|---|
+| Tasa de rechazo EN (OFF) | 35,9 % | 5,3 % | -30,6 pp |
+| Tasa de rechazo ES (OFF) | 8,9 % | 1,3 % | -7,6 pp |
+| Falsos rechazos en DEF/GRIS/SOC | no disponible | 0 % | no disponible |
 
 ## Requisitos de hardware
 
-- Q3_K_M (~14,5 GB): recomendado para 16 GB de VRAM (RTX 4080, RTX 4070 Ti Super 16GB, Apple Silicon M-series de 16 GB o mas). Permite offload completo a GPU con bajo coste de perplejidad.
-- Q4_K_M (~18,5 GB): recomendado para 24 GB de VRAM (RTX 3090, RTX 4090, Apple Silicon de 32 GB o mas). Configuracion recomendada para despliegue general.
-- Q8_0 (~32,0 GB): recomendado para 48 GB de VRAM o 64 GB de RAM (dos RTX 3090/4090, Apple Silicon de 64 GB o mas). Precision casi sin perdida.
-- Despliegue: llama.cpp (`llama-server`) y Ollama. vLLM y TGI no se mencionan en la informacion disponible.
-- Parametros de sampling sugeridos por el autor: `--temp 1.0`, `--top-p 0.95`, `--repeat-penalty 1.0` (desactivado, recomendado por Z.ai para arquitecturas MoE de GLM).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con Q8_0 (8,5 bpw) sobre 31,2 mil millones de parámetros, el peso ronda los 33 GB; con Q4_K_M (~4,5 bpw) alrededor de 17-18 GB; con Q3_K_M (~3,3 bpw) en torno a 13 GB. Estas cifras son estimaciones a partir de los bits por peso declarados y no están confirmadas por el autor.
+- GPU recomendadas: para Q8_0 se requiere una GPU de 40-48 GB (A100 40 GB, A6000 48 GB) o reparto en varias GPU; para Q4_K_M una GPU de 24 GB (RTX 3090, RTX 4090, A10G) es suficiente; para Q3_K_M puede caber en GPU de 16 GB (RTX 4080, A4000).
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q4_K_M y en GPUs de 16 GB con Q3_K_M; Q8_0 no cabe en una sola GPU de consumo.
+- Opciones de despliegue: llama.cpp (soporte nativo GGUF y `--jinja`), y por extensión entornos compatibles con GGUF como Ollama o llama-cpp-python; vLLM y TGI no están confirmados para este repositorio en la información disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| jsantillana/glm-4.7-flash-abliterated-GGUF | ~30B | ~3B | no disponible | MIT | GGUF | Esta ficha; abliteration con proyeccion rank-1 en capas 39-46 |
-| wangzhang/GLM-4.7-Flash-abliterated | ~30B | ~3B | no disponible | no disponible | Transformers | Abliteration del mismo base; KL 0,0065 y rechazos de 52/100 a 9/100 segun su model card |
-| huihui-ai GLM-4.7-Flash-abliterated | ~30B | ~3B | no disponible | MIT | Transformers, GGUF (imatrix), MLX | Variante abliterada citada en abliteratedmodels.org |
-| zai-org/GLM-4.7-Flash (original) | ~30B | ~3B | no disponible | MIT | safetensors | Modelo base sin abliterar; mantiene el comportamiento de rechazo |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| jsantillana/glm-4.7-flash-abliterated-GGUF | 31,2 B (MoE, 64 expertos, top-4) | no disponible | MIT | GGUF (Q8_0, Q4_K_M, Q3_K_M) | Abliteration rank-2 multilingüe; orientado a red-teaming |
+| jsantillana/glm-4.7-flash-abliterated | 31,2 B (MoE) | no disponible | MIT (según base) | safetensors | Modelo base sin cuantizar del que derivan los GGUF |
+| GLM-4.7-Flash (original) | 31,2 B (MoE) | no disponible | no disponible | no disponible | Modelo original con mecanismos de rechazo intactos |
+
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina el comportamiento de rechazo: el modelo puede generar contenido nocivo, instrucciones de ataque o material de doble uso sin filtro. El autor restringe su uso a educacion, investigacion de interpretabilidad y red teaming autorizado.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual para esta build; al ser un derivado abliterado, la calibracion puede diferir del original.
-- Idiomas limitados a en, es y zh; el rendimiento fuera de esos idiomas no esta documentado.
-- La longitud de contexto no se especifica en la model card; los ejemplos usan 8192 tokens, pero no se confirma el maximo soportado.
-- El proceso de abliteration puede degradar capacidades en tareas que dependian del filtro de seguridad; la retencion del 98,6 % es una metrica del autor no verificada de forma independiente.
-- Licencia MIT permite uso comercial, pero la responsabilidad legal del uso recae en el desplegador; conviene anadir clasificadores de seguridad externos en produccion.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion comunitaria ni evidencia de uso en produccion.
-- No se documentan capacidades de tool calling, agentes o vision; no asumirlas sin verificacion previa.
+- Modelo explícitamente orientado a investigación y evaluación autorizada; el autor declara que no se hace responsable del mal uso, daños o actividades ilegales derivadas de su utilización.
+- La abliteration elimina rechazos de forma selectiva, lo que puede producir contenido dañino, inseguro o inexacto en dominios sensibles; no debe desplegarse en producción orientada a usuarios finales sin capas de moderación externas.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad factual en la información disponible.
+- Restricciones de licencia: MIT permite uso comercial, pero la advertencia del autor limita el uso a fines educativos, ciberseguridad defensiva, pentesting autorizado e investigación académica de seguridad; conviene revisar la compatibilidad legal con el modelo base original.
+- Cobertura idiomática limitada a inglés, español y chino; el rendimiento en otros idiomas no está documentado.
+- Longitud de contexto no especificada en la información disponible, lo que impide planificar cargas de trabajo con ventanas largas.
+- Las cuantizaciones Q3_K_M y Q4_K_M introducen pérdida de precisión respecto a Q8_0; no se han publicado métricas de degradación por cuantización.
+- El modelo deriva de un modelo base cuya procedencia y términos de licencia originales no se detallan en la información disponible.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/jsantillana/glm-4.7-flash-abliterated-GGUF
-- Modelo base abliterado: https://huggingface.co/jsantillana/glm-4.7-flash-abliterated
-- Variante wangzhang/GLM-4.7-Flash-abliterated: https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated
-- Ficha de GLM-4.7-Flash-abliterated en abliteratedmodels.org: https://www.abliteratedmodels.org/glm-4.7-flash-abliterated/
-- Modelo original (referencia): https://huggingface.co/zai-org/GLM-4.7-Flash
+- Modelo base (abliterated, safetensors): https://huggingface.co/jsantillana/glm-4.7-flash-abliterated
+- llama.cpp (runtime recomendado): https://github.com/ggerganov/llama.cpp
+- No se han encontrado en la información proporcionada papers, blogs, repos adicionales ni demos del autor.

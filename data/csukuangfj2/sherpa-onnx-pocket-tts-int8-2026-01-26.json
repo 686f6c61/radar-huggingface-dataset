@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "csukuangfj2/sherpa-onnx-pocket-tts-int8-2026-01-26",
+  "slug": "csukuangfj2-sherpa-onnx-pocket-tts-int8-2026-01-26",
+  "author": "csukuangfj2",
+  "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-pocket-tts-int8-2026-01-26",
+  "created_at": "2026-01-26T10:45:17.000Z",
+  "updated_at": "2026-11-21T03:39:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207909195,
+  "storage_human": "208 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,106 +2,105 @@
 
 ## Resumen
 
-Kernix-14B es un modelo de lenguaje especializado en optimización de kernels para GPU, desarrollado por Syed Sarim Ahsan (usuario `sarimahsan101` en Hugging Face). Se trata de un fine-tuning del modelo Qwen2.5-Coder-14B-Instruct orientado a una tarea muy concreta: analizar trazas del profiler NVIDIA Nsight Compute (`ncu`) y sintetizar kernels en Triton y CUDA que sean correctos a nivel numérico y mediblemente más rápidos en hardware real. El modelo parte de la familia Qwen2.5, con arquitectura transformer decoder-only y 14.770.033.664 parámetros totales en formato safetensors de 16 bits.
+Kernix-14B es un ajuste fino del modelo Qwen2.5-Coder-14B-Instruct orientado a una tarea muy concreta: la síntesis de kernels de GPU en Triton y CUDA a partir de trazas del perfilador NVIDIA Nsight Compute (`ncu`). Lo desarrolla el usuario sarimahsan101 y se distribuye con licencia Apache 2.0. El modelo parte de la arquitectura transformer densa de Qwen2.5-Coder (14.770.033.664 parámetros) y se especializa en razonar sobre métricas de rendimiento (ocupación, ancho de banda de memoria, stalls) para proponer configuraciones de tiling, unroll y asignación de warps fundamentadas en mediciones reales en silicio.
 
-La propuesta diferencial del modelo es el "grounding" empírico: según su model card, se entrenó sobre trazas profiler-a-kernel recogidas en cuatro microarquitecturas NVIDIA distintas (Turing `sm_75`, Ampere `sm_80`, Ada Lovelace `sm_89` y Blackwell `sm_120`), con una etapa de SFT seguida de DPO sobre pares de preferencia definidos por el tiempo de ejecución medido en silicio. Frente a modelos de código genéricos que eligen tamaños de tile, factores de unroll o asignación de warps mediante heurísticas, Kernix-14B pretende razonar a partir de métricas reales de ocupación, ancho de banda y stalls.
+La propuesta diferencial frente a modelos de código genéricos es que el ajuste se ha realizado sobre ejecuciones empíricas en cuatro microarquitecturas NVIDIA (Turing `sm_75`, Ada Lovelace `sm_89`, Ampere `sm_80` y Blackwell `sm_120`), en lugar de sobre heurísticas. El autor publica un pipeline de SFT más DPO y una suite de verificación física en tres niveles (compilación, paridad numérica frente a `torch.matmul` y medición de speedup con eventos CUDA).
 
-Es relevante ahora porque la optimización de kernels es uno de los cuellos de botella prácticos en el despliegue de modelos y pipelines de alto rendimiento, y porque el modelo se distribuye tanto como pesos fusionados en 16 bits como mediante un adaptador LoRA ligero, lo que facilita su integración en flujos existentes basados en Qwen2.5-Coder. La licencia Apache 2.0 permite uso comercial, aunque el modelo es muy reciente y con escasa tracción pública (0 descargas y 0 likes en el momento de la consulta).
+Es relevante para equipos de ingeniería de rendimiento que quieran automatizar parte del ciclo de optimización de kernels, un nicho donde los modelos generalistas suelen producir código que compila pero no mejora el rendimiento o rompe la corrección numérica. La información pública disponible es limitada: no hay ficha de benchmarks estándar (MMLU, HumanEval), no se detallan idiomas ni la longitud de contexto efectiva tras el ajuste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2.5, tag `qwen2`) |
+| Arquitectura | Transformer denso (Qwen2, decoder-only), ajuste fino del base Qwen2.5-Coder-14B-Instruct |
 | Parametros totales | 14.770.033.664 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-Coder-14B-Instruct, valor no confirmado en esta ficha) |
-| Tipos de cuantizacion | no se documentan cuantizaciones publicadas; pesos distribuidos en 16 bits (bfloat16/float16) y adaptador LoRA |
+| Longitud de contexto | no disponible (heredada del base Qwen2.5-Coder-14B-Instruct; no confirmada en la informacion proporcionada) |
+| Tipos de cuantizacion | no disponible (pesos publicados en 16 bits y adaptador LoRA; no se documentan GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (pesos fusionados 16-bit, posiblemente sharded) y adaptador LoRA (`adapter/adapter_model.safetensors`, `adapter_config.json`) |
+| Formato de pesos | safetensors (modelo fusionado 16-bit, sharded) y adaptador LoRA en `adapter/adapter_model.safetensors` (~275 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del transformer decoder-only de Qwen2.5-Coder-14B-Instruct, con atención por grupos de consultas (GQA) propia de la familia Qwen2.5, aunque los detalles exactos de cabezas, dimensiones y contexto no se detallan en la información disponible. El entrenamiento se realizó en dos etapas: una primera fase de SFT (instruction tuning multi-GPU) sobre trazas de alta resolución profiler-a-kernel recogidas en Ampere, Ada Lovelace, Turing y Blackwell, y una segunda fase de DPO (Direct Preference Optimization) en la que los pares de preferencia se definieron estrictamente por el tiempo de ejecución físico (el kernel ganador es el más rápido, el perdedor el más lento).
+El modelo es un ajuste fino supervisado (SFT) más optimización por preferencias (DPO) sobre Qwen2.5-Coder-14B-Instruct, un transformer decoder-only denso de la familia Qwen2. La distribución incluye tanto los pesos fusionados en 16 bits como el adaptador LoRA, lo que permite cargar el adaptador sobre el modelo base con PEFT y ahorrar almacenamiento.
 
-La innovación técnica destacable es el enfoque "profiler-grounded": el modelo consume observaciones de `ncu` (porcentaje de throughput de cómputo, uso de ancho de banda de memoria, stalls por latencia DRAM, tiempo base) y produce kernels Triton/CUDA con decisiones de tile, unroll y warps justificadas por esas métricas. Según la model card, el pipeline de verificación se organiza en tres niveles: compilación, coincidencia numérica frente a `torch.matmul` en FP16 (diferencia <= 0.125) y speedup medido en hardware real. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición exacta del dataset ni detalles de hiperparámetros de SFT/DPO.
+El entrenamiento se apoya en un dataset propio (`sarimahsan101/Kernix-NCU-dataset`) construido a partir de ejecuciones en GPU en cuatro arquitecturas (T4, L4, A100-SXM4 y RTX PRO 6000). El autor describe el ajuste como "empírico y anclado a la arquitectura": el modelo recibe observaciones del perfilador (throughput de cómputo, ancho de banda, stalls, runtime base) y debe generar kernels que superen una compuerta de verificación física en tres niveles. No se especifican en la información disponible el número exacto de tokens de entrenamiento, la composición detallada del dataset ni los hiperparámetros del DPO.
 
 ## Capacidades
 
-- Generación de código especializado en kernels Triton y CUDA para operaciones tipo GEMM y similares.
-- Razonamiento guiado por métricas de profiler: interpreta trazas de NVIDIA Nsight Compute (`ncu`) y traduce stalls y cuellos de botella en decisiones de optimización.
-- Ajuste de parámetros de kernel: tamaños de tile, factores de unroll, asignación de warps y estrategias de acceso a memoria.
-- Verificación numérica: genera kernels que, según la model card, alcanzan coincidencia exacta frente a `torch.matmul` en FP16.
-- Conocimiento de cuatro microarquitecturas NVIDIA: Turing `sm_75`, Ampere `sm_80`, Ada Lovelace `sm_89` y Blackwell `sm_120`.
-- Conversación multi-turno mediante plantilla de chat compatible con el formato de Qwen2.5-Coder (roles system/user/assistant).
-- Capacidades generales de generación de texto y código heredadas del modelo base Qwen2.5-Coder-14B-Instruct.
-- Soporte de tool calling / function calling: no documentado de forma específica en la información proporcionada.
-- Capacidades de agente multi-step y modos de razonamiento explícito (thinking): no documentados.
-- Capacidades de visión o audio: no disponibles.
+- Generación de kernels en OpenAI Triton y CUDA a partir de descripciones de problema (dimensiones M, N, K, tipo de dato) y métricas del perfilador `ncu`.
+- Razonamiento sobre cuellos de botella de rendimiento: interpreta porcentajes de ocupación, ancho de banda y stalls para justificar decisiones de tiling, unroll y warps.
+- Generación de código con verificación de corrección: el pipeline del autor valida compilación JIT y paridad numérica frente a `torch.matmul`.
+- Especialización por arquitectura objetivo: distingue entre `sm_75`, `sm_80`, `sm_89` y `sm_120`.
+- Formato conversacional con plantilla de chat (`apply_chat_template`) y prompt de sistema para rol de ingeniero de kernels.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no documentadas explícitamente; el flujo descrito es de generación única de kernel.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Optimización de kernels GEMM en producción: dado un problema de dimensiones M, N, K y una traza `ncu` con el porcentaje de throughput y los stalls dominantes, el modelo genera un kernel Triton con tile y warps ajustados a la microarquitectura objetivo, reduciendo el trabajo manual de tuning.
-- Ingeniería de rendimiento asistida en equipos de HPC/ML: el modelo actúa como par de revisión que interpreta informes de profiler y propone reescrituras de kernel justificadas por métricas, útil para equipos sin especialistas dedicados a GPU.
-- Migración entre generaciones de GPU: al conocer las diferencias entre `sm_75`, `sm_80`, `sm_89` y `sm_120`, puede adaptar kernels existentes a una nueva arquitectura cuando cambian las características de memoria y cómputo.
-- Generación de kernels para pipelines de inferencia: integración en flujos que necesitan operadores personalizados (fusiones, layouts específicos) y que se benefician de kernels numéricamente verificados frente a una referencia en PyTorch.
-- Formación y documentación técnica: uso como asistente explicativo que relaciona métricas de profiler con decisiones de diseño de kernel, para material didáctico sobre optimización CUDA/Triton.
-- Automatización de pruebas de rendimiento: generación de variantes de kernel que se evalúan en un banco de pruebas físico (compilación, comparación numérica y medición de tiempo) para seleccionar la más rápida.
-- Prototipado rápido con adaptador LoRA: al cargar solo el adaptador sobre Qwen2.5-Coder-14B-Instruct ya cacheado, se reduce el coste de almacenamiento y se puede mantener una única copia del modelo base para varias tareas.
+- Optimización de GEMM en producción: dado un kernel de multiplicación de matrices con bajo throughput de cómputo y alto ancho de banda de memoria, el modelo propone variantes de tiling y unroll orientadas a eliminar stalls de DRAM, como en el ejemplo de la model card (M=N=K=4096 en FP16 sobre `sm_80`).
+- Portabilidad entre generaciones de GPU: al estar entrenado en cuatro arquitecturas, puede reescribir un kernel pensado para Ampere hacia parámetros adecuados para Ada Lovelace o Blackwell, ajustando tamaños de bloque y asignación de warps.
+- Automatización del ciclo de tuning: integrado en un pipeline que ejecute `ncu`, extraiga métricas y alimente al modelo, se puede reducir el número de iteraciones manuales de prueba y error en la búsqueda de configuraciones.
+- Formación y revisión de código de kernels: sirve como revisor que explica por qué una configuración concreta provoca stalls, útil para equipos que se inician en optimización CUDA/Triton.
+- Generación de kernels de referencia para validación: produce implementaciones que pueden compararse numéricamente contra `torch.matmul` u operadores de PyTorch antes de sustituirlos en un modelo.
+- Investigación en ingeniería de rendimiento asistida por LLM: el dataset y el código de entrenamiento publicados permiten reproducir el ajuste y extenderlo a nuevas microarquitecturas o tipos de kernel.
+- Prototipado rápido de operadores personalizados: para capas no cubiertas por las librerías estándar, el modelo genera un punto de partida compilable que el ingeniero puede refinar.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes provienen exclusivamente de la model card del autor y comparan el modelo ajustado con su base Qwen2.5-Coder-14B-Instruct. No se han verificado de forma independiente.
+Los datos publicados por el autor corresponden a una evaluación física propia sobre NVIDIA A100-SXM4-40GB, no a benchmarks estándar de NLP. Se reproducen tal cual se documentan:
 
-| Benchmark / puerta | Modelo base | Kernix-14B | Estado |
+| Metrica | Base Qwen2.5-Coder-14B | Kernix-14B | Estado |
 |---|---|---|---|
-| Perplejidad en held-out (PPL) | 3,46 | 1,03 (reducción del 70,1 %) | PASS |
-| Precisión de preferencia DPO | 50,0 % | 100,0 % (15/15 pares held-out) | PASS |
-| Margen de recompensa DPO | 0,0 nats | +0,03 nats | PASS |
-| Tier 1: tasa de compilación | ~35,0 % | 100,0 % | PASS |
-| Tier 2: coincidencia numérica | ~30,0 % | Coincidencia exacta vs `torch.matmul` (diff FP16 <= 0,125) | PASS |
-| Tier 3: speedup medido en silicio | 0,75x (stalled) | 1,68x - 1,85x | PASS |
+| Precisión de preferencia DPO (pairwise) | 0,0 % | 100,0 % (5/5) | PASS |
+| Margen medio de recompensa DPO | -0,01 nats | +0,01 nats | PASS |
+| Nivel 1: tasa de compilación Triton | ~35,0 % | 100,0 % (5/5) | PASS |
+| Nivel 2: paridad numérica vs `torch.matmul` | ~30,0 % | 100,0 % (5/5) | PASS |
+| Nivel 3: speedup físico medido | 0,75× | 1,44× – 1,52× | PASS |
+| VRAM pico (A100-40GB) | >56 GB (OOM) | 28,5 GB (liberada a 8,1 MB) | PASS |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Latencia medida por kernel en A100-SXM4: 163,28 µs (1,48×), 160,45 µs (1,51×), 159,32 µs (1,51×), 207,88 µs (1,16×) y 158,75 µs (1,52×), todos con corrección verificada.
+
+Advertencia: la muestra es de cinco kernels y cinco pares de preferencia, por lo que las cifras de 100 % deben interpretarse como resultados preliminares sobre un conjunto reducido. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en 16 bits: aproximadamente 29,5 GB solo para pesos (14,77 mil millones de parámetros a 2 bytes), más overhead de activaciones y caché KV; en la práctica se recomienda disponer de 32 GB o más de VRAM para contexto moderado.
-- El repositorio ocupa 29,8 GB, coherente con pesos fusionados en 16 bits más el adaptador LoRA.
-- GPU recomendadas para 16 bits: A100 80 GB, H100, RTX PRO 6000 Server Edition; en GPUs de 24 GB (RTX 4090, L4) no cabe en 16 bits sin cuantización u offloading.
-- Cabe en GPU de consumo únicamente con cuantización (por ejemplo 8 bits o 4 bits) o con descarga parcial a CPU; no se documentan cuantizaciones publicadas por el autor.
-- Opción ligera: cargar solo el adaptador LoRA (unos 60-240 MB según la model card) sobre Qwen2.5-Coder-14B-Instruct, lo que reduce el almacenamiento pero no la VRAM necesaria para el modelo base.
-- Opciones de despliegue: transformers con `device_map="auto"`, vLLM (el autor lo menciona como recomendado para los pesos fusionados), PEFT para el adaptador; llama.cpp/Ollama requerirían conversión a GGUF no documentada.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM para inferencia en 16 bits: aproximadamente 29,5 GB solo para pesos (14.770.033.664 parámetros × 2 bytes), más overhead de activaciones y caché KV; el autor reporta un pico de 28,5 GB en A100-40GB durante la evaluación, lo que encaja con una carga ajustada.
+- VRAM con el adaptador LoRA: requiere cargar el modelo base Qwen2.5-Coder-14B-Instruct (~29,5 GB en bf16) más el adaptador (~275 MB), sin ahorro significativo de memoria frente al modelo fusionado.
+- GPU recomendadas: A100-SXM4 40 GB u 80 GB, H100, L40S; el modelo fue validado en A100-SXM4-40GB.
+- GPU de consumo: no cabe en 16 bits en GPUs de 24 GB (RTX 4090, 3090). Sería necesario cuantizar a 8 o 4 bits, algo no documentado por el autor.
+- Opciones de despliegue: transformers con PEFT (ruta recomendada por el autor), vLLM (el autor indica compatibilidad de drop-in con los ficheros de configuración), text-generation-inference (etiqueta `text-generation-inference` en el repo). No se documenta soporte de llama.cpp, GGUF u Ollama.
+- Latencia y throughput de inferencia: no disponibles; las latencias publicadas (≈159–208 µs) corresponden a la ejecución de los kernels generados, no a la del modelo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kernix-14B | 14,77 B | no disponible | Optimización de kernels GPU guiada por profiler | Apache 2.0 | Hugging Face (pesos + adaptador LoRA) |
-| Qwen2.5-Coder-14B-Instruct | 14,77 B | no disponible en esta ficha | Generación de código general | Apache 2.0 | Hugging Face, ampliamente desplegado |
-| Modelos de código genéricos de tamaño similar (por ejemplo, CodeLlama 13B Instruct) | ~13 B | no disponible en esta ficha | Generación de código general | Licencia propia de Llama | Hugging Face |
+| Kernix-14B | 14,77 B | no disponible | Kernels Triton/CUDA guiados por `ncu` | Apache 2.0 | Hugging Face (pesos + LoRA) |
+| Qwen2.5-Coder-14B-Instruct | 14,77 B | no disponible en esta ficha | Código generalista | Apache 2.0 | Hugging Face (modelo base) |
+| DeepSeek-Coder-V2-Lite-Instruct | 16 B totales (2,4 B activos, MoE) | no disponible en esta ficha | Código generalista | licencia propia de DeepSeek | Hugging Face |
+| Codestral-22B | 22 B | no disponible en esta ficha | Código generalista | licencia no comercial (MNPL) | Hugging Face |
 
-La comparación con alternativas especializadas en optimización de kernels GPU no está disponible en la información proporcionada. La diferencia principal frente al base es la especialización en trazas `ncu` y la etapa DPO guiada por tiempo de ejecución medido.
+La comparación directa en la tarea de optimización de kernels no está disponible: no existen cifras públicas de los modelos alternativos evaluadas con la misma compuerta física de tres niveles. Frente al base Qwen2.5-Coder-14B-Instruct, el propio autor reporta mejoras de compilación (35 % → 100 %), paridad numérica (30 % → 100 %) y speedup (0,75× → 1,44–1,52×) sobre su conjunto de cinco kernels.
 
 ## Limitaciones y advertencias
 
-- Modelo muy reciente y con escasa validación externa: 0 descargas y 0 likes en el momento de la consulta; los benchmarks proceden únicamente de la model card del autor y no han sido replicados de forma independiente.
-- El alcance está muy acotado: está entrenado para kernels Triton/CUDA guiados por perfiles de `ncu`; fuera de ese dominio puede degradar respecto al modelo base.
-- Riesgo de alucinación en métricas y APIs: puede generar referencias a métricas de profiler o parámetros de compilación inexistentes; toda salida debe pasar por compilación y verificación numérica antes de usarse.
-- Las tasas de compilación del 100 % y los speedups de 1,68x-1,85x corresponden a un conjunto de evaluación concreto del autor; no garantizan el mismo comportamiento en otros problemas, dimensiones o versiones de Triton/CUDA.
-- Sesgos conocidos: no documentados; al heredar de Qwen2.5-Coder arrastra los sesgos del corpus de código del modelo base.
-- Idiomas soportados no documentados; el uso previsto es técnico en inglés, por lo que el rendimiento en castellano no está caracterizado.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe respetarse la licencia del modelo base Qwen2.5-Coder-14B-Instruct y las condiciones de las herramientas mencionadas (Triton, CUDA, Nsight Compute).
-- En producción, el adaptador LoRA requiere mantener el modelo base; los pesos fusionados en 16 bits exigen hardware de gama alta o cuantización no documentada por el autor.
-- No se documentan contexto máximo, cuantizaciones publicadas ni soporte de tool calling, lo que limita la planificación de despliegues a gran escala.
+- Sesgos conocidos: no documentados por el autor; al ser un ajuste sobre un dataset propio de ejecuciones en cuatro GPUs, puede sobreajustarse a los patrones de esas microarquitecturas y generalizar peor en otras.
+- Riesgo de alucinación: el modelo puede generar kernels que compilan pero no mejoran el rendimiento o que rompen la corrección numérica; el propio autor introduce la compuerta de verificación física precisamente para mitigarlo, por lo que no debe usarse sin validación en silicio.
+- Contexto e idioma: la longitud de contexto efectiva tras el ajuste y los idiomas soportados no están documentados.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las obligaciones heredadas del modelo base Qwen2.5-Coder-14B-Instruct (también Apache 2.0).
+- Evidencia limitada: los benchmarks publicados se basan en cinco kernels y cinco pares de preferencia; las cifras de 100 % no deben extrapolarse sin una evaluación independiente a mayor escala.
+- Producción: requiere GPU de 40 GB o superior en 16 bits; no hay cuantizaciones oficiales publicadas, lo que limita el despliegue en hardware de consumo.
+- Fecha de creación del repositorio (2026-11-06) y número de descargas (1077) con cero likes: la adopción comunitaria es aún muy reducida, por lo que falta validación externa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sarimahsan101/Kernix-14B
-- Perfil del autor en Hugging Face: https://huggingface.co/sarimahsan101/models
+- Dataset de entrenamiento: https://huggingface.co/datasets/sarimahsan101/Kernix-NCU-dataset
+- Repositorio GitHub (código de ajuste, SFT + DPO y suite de evaluación): https://github.com/sarimahsan/Kernix
+- Licencia: https://github.com/sarimahsan/Kernix/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
-- NVIDIA Nsight Compute: https://developer.nvidia.com/nsight-compute
-- OpenAI Triton: https://github.com/triton-lang/triton
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada.
+- Referencia del modelo 3B del mismo autor (enlazada en la model card): https://huggingface.co/sarimahsan101/Kernix-3B

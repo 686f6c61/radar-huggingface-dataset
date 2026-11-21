@@ -2,88 +2,107 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo denso de 27B parámetros desarrollado por el equipo Qwen de Alibaba, con capacidades multimodales nativas (imagen y vídeo) y razonamiento configurable. Este repositorio, creado por esatapedico, ofrece dos variantes GGUF compactas del checkpoint cuantizado en NVFP4 por Unsloth, con la particularidad de haber eliminado la cabeza MTP de decodificación especulativa. El objetivo es permitir ejecutar el modelo en tarjetas gráficas Blackwell de 16 GB de VRAM, algo inviable con las versiones completas. La arquitectura es híbrida (Gated DeltaNet + Gated Attention), con contexto nativo de 262.144 tokens, lo que lo hace adecuado para tareas de análisis de documentos extensos y agentes de larga duración.
+Qwen3.8-27B-NVFP4-BUDGET-GGUF es una conversión a formato GGUF del modelo Qwen3.8-27B, un transformer denso de 27B parámetros con capacidades nativas de visión y lenguaje (VLM) y una ventana de contexto nativa de 262.144 tokens. La publica el usuario esatapedico, que parte del checkpoint NVFP4 de unsloth y genera dos variantes de bajo consumo: BUDGET y STARVED, ambas sin la cabeza MTP de decodificación especulativa.
 
-La variante BUDGET, objeto de esta ficha, emplea un backbone NVFP4 de 448 tensores byte-idéntico al de la familia MTP del autor, con la cabeza de salida (lm_head) cuantizada en Q3_K y la embedding de tokens en Q2_K. El archivo pesa 14,72 GB y ha sido probado en una RTX 5070 Ti de 16 GB, alcanzando picos de 15,9 GiB de VRAM. No se ha realizado ningún entrenamiento adicional; se trata de una conversión a GGUF de un modelo ya cuantizado, bajo licencia Apache-2.0.
+El objetivo declarado es permitir servir el modelo en una única GPU Blackwell de 16 GB de VRAM. Para ello se mantiene un backbone NVFP4 de 448 tensores byte-idéntico entre toda la familia y se fijan los tensores de cabeza (lm_head y embeddings) a tipos de cuantización muy agresivos: Q3_K/Q2_K en BUDGET y Q2_K/Q2_K en STARVED. El resultado son ficheros de 14,72 GB y 14,59 GB respectivamente.
 
-## Especificaciones técnicas
+Es relevante porque demuestra una ruta práctica para ejecutar un modelo multimodal de 27B con contexto largo en hardware de consumo, a costa de una segunda cuantización sobre el checkpoint original (que ya venía de FP8) y de una pérdida medible de calidad en benchmarks. La licencia Apache 2.0 facilita su uso comercial.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Gated DeltaNet + Gated Attention (densa, 64 capas) |
+| Arquitectura | Transformer denso híbrido: Gated DeltaNet + Gated Attention, 64 capas, VLM nativo (visión y vídeo) |
 | Parametros totales | 26.895.998.800 (26,9B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens (nativo) |
-| Tipos de cuantizacion | NVFP4 (backbone, 448 tensores), Q3_K lm_head + Q2_K token embedding (BUDGET); Q2_K ambos (STARVED) |
-| Idiomas soportados | inglés, multilingüe (lista completa no disponible) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp, tipo NVFP4 GGML type 40) |
-
-El archivo BUDGET ocupa 14,72 GB; el STARVED, 14,59 GB. Ambos contienen 1.187 tensores: 448 del backbone NVFP4, 737 de normas/escalas/gates en F32 y los dos tensores de cabeza.
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativos |
+| Tipos de cuantizacion | Backbone NVFP4 (448 tensores); BUDGET: lm_head Q3_K + token_embd Q2_K; STARVED: lm_head Q2_K + token_embd Q2_K; 737 tensores F32 (normas, escalas, gates) |
+| Idiomas soportados | en, multilingual (sin listado detallado de idiomas) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (1.187 tensores por fichero); proyector multimodal mmproj-BF16.gguf separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B utiliza una arquitectura híbrida que combina Gated DeltaNet (una capa de atención lineal con estado recurrente) y Gated Attention (atención tradicional con puertas). Es un modelo denso de 27B con 64 capas y contexto nativo de 262.144 tokens. No se dispone de información detallada sobre el dataset de entrenamiento ni el proceso de alineación (RLHF/DPO) en los materiales consultados; el modelo original se publica bajo Apache-2.0.
+El modelo base es un transformer denso de 27B parámetros con un layout híbrido que combina capas Gated DeltaNet (atención lineal con estado recurrente) y capas de Gated Attention clásica, distribuidas en 64 capas. Esta mezcla busca reducir el coste de atención en contextos muy largos, lo que hace viable la ventana nativa de 262.144 tokens. Es un VLM nativo: procesa imágenes y vídeo además de texto, mediante un proyector multimodal que en esta conversión se distribuye como fichero `mmproj-BF16.gguf` aparte.
 
-Este repositorio concreto no ha sido entrenado ni fine-tuneado. Es una conversión a GGUF del checkpoint NVFP4 de Unsloth, que a su vez cuantiza el modelo original de Qwen. La conversión elimina la cabeza MTP (multi-token prediction) usada para decodificación especulativa, reduciendo el tamaño y la huella de memoria. El backbone de 448 tensores NVFP4 es byte-idéntico en toda la familia de repositorios del autor, verificado por tensor con SHA-256. La atención se re-cuantiza a NVFP4 desde el formato F8 original, lo que implica una segunda etapa de cuantización que puede afectar ligeramente a la precisión.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en la información proporcionada. La conversión de esatapedico parte de `unsloth/Qwen3.8-27B-NVFP4` (ya cuantizado a NVFP4 desde FP8) y aplica una segunda cuantización a la ruta de atención y a los tensores de cabeza. Se elimina la cabeza MTP (`qwen35.nextn_predict_layers=0`), de modo que no hay decodificación especulativa y los ficheros cargan en cualquier build de llama.cpp sin la ruta `draft-mtp`. El backbone de 448 tensores es byte-idéntico entre todas las variantes de la familia, verificado con SHA-256 por tensor.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo "thinking" configurable (temperatura 1.0, top_p 0.95, top_k 20) y modo instruct (temperatura 0.7, top_p 0.80, top_k 20).
-- Visión nativa: procesa imágenes y vídeo mediante el proyector multimodal (mmproj) que debe cargarse junto al GGUF con `--mmproj`.
-- Contexto largo de 262.144 tokens, adecuado para documentos extensos y agentes de larga duración.
-- Capacidades multilingües (inglés y otros, sin lista detallada en la información disponible).
-- Sin cabeza MTP: no hay decodificación especulativa en este formato.
-- Compatible con llama.cpp y llama-server, siempre que se use una versión reciente con kernels CUDA NVFP4 y soporte sm_120 (Blackwell).
+- Generación de texto conversacional multi-turno con contexto muy largo (hasta 262.144 tokens).
+- Comprensión de imágenes y vídeo de forma nativa mediante el proyector multimodal (`--mmproj`).
+- Razonamiento y matemáticas: validado con MMLU y GSM8K en la model card.
+- Capacidades multilingües (etiqueta `multilingual`, sin desglose de idiomas).
+- Modo thinking: la model card menciona evaluaciones con "thinking off", lo que implica que el modelo base soporta un modo de razonamiento explícito.
+- Compatibilidad con endpoints (`endpoints_compatible`) para despliegue como servicio.
+- No se documenta soporte explícito de tool calling ni de flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Análisis de documentos extensos: con 262K de contexto, puede procesar informes, contratos o libros completos en una sola pasada, resumiendo o extrayendo información con alta fidelidad. Es adecuado para auditorías legales o revisión de documentación técnica.
-- Asistente de programación con visión: puede leer capturas de pantalla de código, diagramas de arquitectura o esquemas de flujo y generar o corregir código en consecuencia, gracias a su capacidad multimodal.
-- Agentes autónomos de larga duración: el contexto amplio permite mantener historial de conversación y estado durante horas de interacción, útil para automatización multi-paso en entornos de desarrollo o investigación.
-- Atención al cliente multilingüe: puede gestionar conversaciones en varios idiomas con contexto largo, manteniendo el hilo de la interacción y resolviendo incidencias complejas sin perder información previa.
-- Análisis de vídeo: al ser un VLM nativo con soporte de vídeo, puede transcribir y resumir contenido audiovisual, como tutoriales, reuniones grabadas o material de formación.
-- Despliegue en hardware de consumo: al caber en 16 GB de VRAM, permite ejecutar un modelo de 27B con visión en estaciones de trabajo con RTX 5070 Ti o similares, sin necesidad de GPUs de datacenter, lo que facilita prototipado y pruebas locales.
+- Procesamiento de documentos largos en local: con 262.144 tokens de contexto nativo, el modelo puede resumir o extraer información de contratos, informes o expedientes completos en una sola pasada, sin chunking ni recuperación externa.
+- Análisis de vídeo e imagen en estación de trabajo: el proyector multimodal permite describir escenas, transcribir contenido visual o responder preguntas sobre fotogramas, útil en inspección visual o catalogación de archivos multimedia.
+- Asistente conversacional autoalojado: al caber en 16 GB de VRAM, se puede desplegar en una RTX 5070 Ti o similar para atención al cliente o asistencia interna sin depender de APIs externas, con la ventana de contexto cubriendo historiales extensos.
+- Investigación sobre cuantización extrema: los ficheros BUDGET y STARVED sirven como referencia reproducible para estudiar la degradación de calidad al bajar lm_head y embeddings a Q2_K/Q3_K, con métricas publicadas de MMLU, GSM8K y perplejidad.
+- Generación asistida en entornos con GPU de consumo: integrable en llama.cpp u Ollama para tareas de redacción, resumen y Q&A sobre corpus privados en equipos de un solo usuario.
+- Evaluación comparativa de familias de cuantización: al compartir backbone byte-idéntico con los ocho tiers MTP del repositorio hermano, permite aislar el efecto de la cabeza MTP y de los tensores de cabeza en la calidad final.
+- Prototipado de pipelines multimodales en CI: al cargar en llama.cpp sin la ruta `draft-mtp`, se puede automatizar en contenedores con GPU Blackwell de 16 GB para pruebas de regresión de prompts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor proporciona únicamente mediciones de rendimiento de inferencia en una RTX 5070 Ti (16 GB Blackwell) con contexto de 32k, KV en q4_0, documento fuente de 28k tokens y `max_tokens` 2000:
+Datos publicados en la model card, medidos sobre una RTX 5070 Ti (16 GB, Blackwell), contexto de 32k, KV en q4_0, documento fuente de 28k tokens y `max_tokens` 2000. Son ejecuciones únicas e indicativas.
 
-| Tier | Prefill t/s | Decode t/s | req s | content distinct_ratio |
+| Tier | Prefill t/s | Decode t/s | Tiempo por petición (s) | distinct_ratio |
 |---|---|---|---|---|
 | BUDGET (Q3_K / Q2_K) | 2287,3 | 27,05 | 126,5 | 0,9877 |
 | STARVED (Q2_K / Q2_K) | 2289,2 | 27,37 | 98,7 | 1,0 |
 
-Estos números son indicativos de una sola ejecución y no son comparables con otras configuraciones de contexto o hardware. El pico de VRAM observado fue de 15,9 GiB para BUDGET y 15,7 GiB para STARVED.
+Calidad de tarea (suite unificada, 2026-11-11):
+
+| Tier | Tamano | MMLU (n=1000) | GSM8K (n=200) | PPL |
+|---|---|---|---|---|
+| STARVED | 14,59 GB | 79,56% | 0,915 | 3,7429 |
+| BUDGET | 14,72 GB | 80,26% | 0,895 | 3,5689 |
+| VERY-LOW (MTP) | 14,86 GB | 80,26% | 0,900 | 3,5689 |
+| COMPACT-LOW (MTP) | 15,16 GB | 79,92% | 0,905 | 3,4875 |
+| LOW (MTP) | 15,53 GB | 80,75% | 0,920 | 3,5127 |
+
+El resto de tiers MTP (MEDIUM y superiores) no está disponible en la información proporcionada. El autor advierte que las cifras de prefill son promedios que degradan con el crecimiento del contexto y no son comparables con mediciones hechas a otras longitudes de contexto o en otro hardware.
 
 ## Requisitos de hardware
 
-- VRAM mínima: 16 GB (probado en RTX 5070 Ti, pico 15,9 GiB con BUDGET y 15,7 GiB con STARVED a 32k de contexto).
-- GPU recomendadas: cualquier GPU Blackwell con sm_120 (serie RTX 50) y soporte NVFP4 en llama.cpp. No funciona en generaciones anteriores (Ampere, Turing) por el requisito de kernels NVFP4.
-- Opciones de despliegue: llama.cpp / llama-server (con `--mmproj` para visión). El formato GGUF está pensado para este ecosistema; para vLLM o SGLang se necesitaría el checkpoint original.
-- Latencia y throughput: aproximadamente 2288 t/s de prefill y 27 t/s de decode en la configuración descrita (32k contexto, RTX 5070 Ti).
-- Para reducir aún más el consumo de VRAM, se puede cargar el modelo sin el proyector multimodal (texto únicamente), liberando aproximadamente 1 GB.
+- VRAM estimada: BUDGET pico de 15,9 GiB y STARVED pico de 15,7 GiB, medidos en una RTX 5070 Ti de 16 GB. Sin proyector multimodal se liberan aproximadamente 1 GB adicional.
+- GPU recomendadas: RTX 5070 Ti (16 GB, sm_120) es el hardware de referencia; cualquier GPU Blackwell con 16 GB o más debería servir. Para mayor margen de contexto, una RTX 5090 (32 GB) o GPUs de datacenter (A100, H100) permiten contextos mucho mayores.
+- Cabe en GPU de consumo: sí, en tarjetas de 16 GB Blackwell. En GPUs de 16 GB de generaciones anteriores (Ampere, Ada) el soporte de NVFP4 es limitado; el autor recomienda en ese caso las variantes GGUF convencionales de `unsloth/Qwen3.8-27B-GGUF`.
+- Opciones de despliegue: llama.cpp (build estándar, sin necesidad de `draft-mtp`); el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. Ollama y vLLM no se mencionan explícitamente en la información disponible.
+- Latencia y throughput: prefill de ~2288 t/s y decode de ~27 t/s a 32k de contexto en RTX 5070 Ti; una petición de 28k de entrada más 2000 tokens de salida tarda entre 98 y 127 segundos según el tier.
 
 ## Comparativa con modelos similares
 
-El modelo base Qwen3.8-27B pertenece a la familia Qwen3.8, que incluye Qwen3.8-2.4T-A95B (MoE con 95B activos) y Qwen3.8-Max (propietario). No se dispone de datos comparativos de rendimiento en benchmarks estándar entre estas variantes en la información proporcionada. Como referencia de la generación anterior, Qwen3-27B (sin visión) también está disponible bajo Apache-2.0, pero no se han publicado comparativas directas. Se recomienda consultar los repositorios oficiales de Qwen y Unsloth para benchmarks detallados.
+| Modelo | Parametros | Contexto | Formato / tamano | Calidad publicada | Licencia |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-NVFP4-BUDGET (este) | 26,9B denso | 262.144 | GGUF NVFP4, 14,72 GB | MMLU 80,26%, GSM8K 0,895, PPL 3,5689 | Apache 2.0 |
+| Qwen3.8-27B-NVFP4-STARVED (mismo repo) | 26,9B denso | 262.144 | GGUF NVFP4, 14,59 GB | MMLU 79,56%, GSM8K 0,915, PPL 3,7429 | Apache 2.0 |
+| Qwen3.8-27B-NVFP4-LOW (repo MTP) | 26,9B denso | 262.144 | GGUF NVFP4 + MTP, 15,53 GB | MMLU 80,75%, GSM8K 0,920, PPL 3,5127 | Apache 2.0 |
+| unsloth/Qwen3.8-27B-NVFP4 (origen) | 26,9B denso | 262.144 | NVFP4 sin cuantizar a GGUF | no disponible | Apache 2.0 |
+
+No se dispone de datos de benchmarks de modelos de otros desarrolladores (por ejemplo, alternativas de 27B-30B de otras familias) en la información proporcionada, por lo que la comparativa se limita a los tiers de la misma familia.
 
 ## Limitaciones y advertencias
 
-- La cuantización NVFP4 del backbone y la re-cuantización de la atención desde F8 pueden degradar la calidad frente al modelo original en BF16; el autor advierte de "accuracy trade-offs".
-- La cabeza MTP se ha eliminado, por lo que no hay decodificación especulativa; esto puede afectar al throughput en comparación con las versiones con MTP.
-- Requiere hardware Blackwell (sm_120) y una versión reciente de llama.cpp con soporte NVFP4; no funcionará en GPUs más antiguas.
-- El modelo es multilingüe pero no se especifica la lista completa de idiomas; el rendimiento puede variar significativamente fuera del inglés.
-- No se han publicado benchmarks de calidad (MMLU, HumanEval, etc.) para estas variantes GGUF, por lo que el rendimiento real en tareas concretas es incierto.
-- Los números de rendimiento proporcionados son de una sola ejecución y no son comparables con otras configuraciones.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo base puede tener restricciones adicionales de uso (consultar la documentación oficial de Qwen).
+- Doble cuantización: el checkpoint de origen ya era NVFP4 (derivado de FP8) y esta conversión recuantiza la ruta de atención, lo que acumula pérdida de precisión frente al modelo original en BF16.
+- Tensores de cabeza en Q2_K/Q3_K: la perplejidad de STARVED (3,7429) es claramente peor que la de BUDGET (3,5689), y su MMLU cae 0,7 puntos. Para tareas sensibles a la precisión del vocabulario de salida conviene usar BUDGET o tiers superiores.
+- Sin decodificación especulativa: al eliminar la cabeza MTP, se renuncia a la aceleración por drafter; el decode queda en ~27 t/s en RTX 5070 Ti.
+- Soporte de hardware restringido: NVFP4 requiere GPU Blackwell (sm_120) para aprovecharse; en arquitecturas anteriores el rendimiento y la compatibilidad no están garantizados.
+- Riesgo de alucinación: no se documentan evaluaciones de factualidad ni de sesgo en la información disponible; como todo modelo generativo, puede producir contenido incorrecto con apariencia plausible, especialmente en cuantizaciones agresivas.
+- Idiomas: la etiqueta de idiomas es genérica (`en`, `multilingual`) sin listado ni evaluación por idioma; el rendimiento en castellano no está verificado.
+- Contexto efectivo: aunque el contexto nativo es de 262.144 tokens, las mediciones publicadas se hicieron a 32k; el rendimiento y la calidad más allá de esa longitud no están cuantificados en esta ficha.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base original de Qwen y del checkpoint intermedio de unsloth antes de desplegar en producción.
+- Benchmarks de una sola ejecución: los números de rendimiento son indicativos y no comparables con mediciones de otro hardware, contexto o arnés.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF
-- Repositorio hermano con MTP: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF
-- Modelo base NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
-- Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
-- Guía de hardware y ejecución (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
-- Página de LM Studio: https://lmstudio.ai/models/qwen3.8
+- Repositorio hermano con los tiers MTP y el proyector mmproj: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF
+- Checkpoint de origen: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
+- GGUF convencionales del modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Sitio del autor: https://www.esatapedico.com

@@ -2,87 +2,90 @@
 
 ## Resumen
 
-dweep-1.7b-i1-GGUF es una cuantizacion en formato GGUF del modelo dweep-1.7b, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversion de los pesos originales (presumiblemente en safetensors) a una bateria de cuantizaciones de tipo K-quant e I-quant, generadas con la herramienta de cuantizacion de llama.cpp a partir de una matriz de importancia (imatrix) ponderada. El repositorio se creo el 17 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni likes.
+dweep-1.7b-i1-GGUF es una colección de cuantizaciones GGUF del modelo docanan/dweep-1.7b, un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) afinado mediante LoRA sobre un corpus específico de las islas Andamán y Nicobar. El trabajo de cuantización lo firma mradermacher, un conocido publicador de cuantizaciones GGUF de la comunidad, que genera versiones con y sin imatrix para facilitar la inferencia en hardware de consumo. El modelo base está etiquetado con las lenguas inglés, hindi, tamil, bengalí, telugu y malabar (malayalam), y se orienta explícitamente a recursos lingüísticos de bajos recursos.
 
-El modelo base, dweep-1.7b, procede del usuario docanan y, por el nombre, apunta a un transformer de aproximadamente 1.700 millones de parametros. El dato de parametros totales reportado en la informacion disponible (1.034.740) es inconsistente con esa denominacion y probablemente corresponde a un recuento parcial o erroneo, por lo que debe tratarse con cautela.
+La relevancia de esta publicación es doble: por un lado, pone a disposición de la comunidad un modelo pequeño (1,7B) en una amplia gama de cuantizaciones (desde IQ1_S de 0,6 GB hasta Q6_K de 1,5 GB), lo que permite ejecutarlo en portátiles y GPUs modestas; por otro, el corpus de entrenamiento (docanan/andaman-nicobar-corpus) aborda lenguas y variedades poco representadas en los grandes modelos comerciales. La licencia Apache 2.0 facilita el uso comercial y la modificación.
 
-La relevancia de esta ficha es practica: permite ejecutar un modelo de ~1,7B en hardware de consumo mediante cuantizaciones de 1 a 6 bits, con opciones que van desde IQ1_S (minimo consumo de memoria, maxima perdida de calidad) hasta Q6_K (casi sin perdida). No hay informacion publicada sobre arquitectura interna, datos de entrenamiento, licencia ni idiomas soportados.
+No obstante, la información pública disponible es muy limitada: la model card del cuantizador no incluye datos de arquitectura, contexto, benchmarks ni detalles del entrenamiento del modelo base. Esta ficha refleja únicamente lo que consta en la información proporcionada y marca como «no disponible» todo aquello que no se puede verificar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: dweep-1.7b, presumiblemente transformer) |
-| Parametros totales | 1.034.740 segun metadatos safetensors (inconsistente con la denominacion 1.7B; no disponible con certeza) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base docanan/dweep-1.7b; no se detalla en la información) |
+| Parámetros totales | 1.720.574.976 (≈1,7B) |
+| Parámetros activos | no aplica (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de pesos safetensors del modelo base) |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-IQ3_XXS, i1-Q2_K, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de un fichero imatrix) |
+| Idiomas soportados | inglés (en), hindi (hi), tamil (ta), bengalí (bn), telugu (te), malabar/malayalam (ml) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base dweep-1.7b. Por el nombre y el tamano se infiere un transformer decoder-only de aproximadamente 1.700 millones de parametros, pero no hay datos publicados sobre numero de capas, dimension oculta, cabezas de atencion, tipo de atencion (completa, GQA, sliding window) ni funcion de activacion.
+La información disponible no detalla la arquitectura interna del modelo base docanan/dweep-1.7b más allá de que se distribuye a través de la librería transformers y que fue afinado con LoRA (la etiqueta `lora` y el campo `base_model:adapter` así lo indican). El conjunto de datos de afinamiento es docanan/andaman-nicobar-corpus, un corpus orientado a lenguas de bajos recursos de las islas Andamán y Nicobar, con cobertura declarada de inglés, hindi, tamil, bengalí, telugu y malayalam. No consta el número de tokens de entrenamiento, la composición detallada del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco hay informacion sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo, matematicas o multilingue), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion tuning. Lo unico documentado es el proceso de cuantizacion: el autor indica que las cuantizaciones son de tipo "weighted/imatrix", es decir, generadas con una matriz de importancia calculada a partir de datos de calibracion, lo que en llama.cpp suele mejorar la calidad de las cuantizaciones de baja precision (especialmente las de 2 y 3 bits) frente a las cuantizaciones sin imatrix.
+La innovación técnica de esta publicación concreta no está en el modelo sino en el proceso de cuantización: mradermacher emplea cuantizaciones con imatrix (fichero `dweep-1.7b.imatrix.gguf` incluido), lo que mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas. La model card incluye una nota metodológica sobre qué cuantizaciones IQ son preferibles frente a las no-IQ de tamaño similar (por ejemplo, IQ3_S frente a Q3_K*, o IQ4_XS frente a IQ4_NL). También se ofrecen cuantizaciones estáticas en un repositorio paralelo (dweep-1.7b-GGUF).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva (capacidad basica inferida de un modelo de lenguaje, no verificada en la informacion disponible).
-- Razonamiento y respuesta a instrucciones: no confirmado; depende de si el modelo base fue entrenado para ello.
-- Generacion de codigo: no confirmado.
-- Matematicas: no confirmado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Modo "thinking", vision o audio: no disponible.
+- Generación de texto conversacional en inglés, hindi, tamil, bengalí, telugu y malayalam, con orientación declarada a lenguas de bajos recursos.
+- Afinamiento específico sobre el corpus Andamán-Nicobar, lo que puede aportar vocabulario y expresiones propias de esas variedades.
+- Etiquetado como `conversational`, lo que sugiere un uso orientado a diálogo.
+- No consta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
+- No consta soporte multilingüe más allá de las seis lenguas declaradas.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que indica que puede servirse mediante infraestructura compatible con la API de Hugging Face.
 
 ## Casos de uso
 
-- Despliegue en portatiles y equipos sin GPU dedicada: con cuantizaciones IQ2 o Q2_K, el modelo ocupa del orden de 0,5 a 1 GB, por lo que puede ejecutarse en CPU con llama.cpp u Ollama para tareas de generacion de texto de baja latencia.
-- Prototipado rapido de aplicaciones de chat: usar Q4_K_M o Q5_K_M en una GPU de consumo (8 GB) permite iterar sobre prompts y flujos conversacionales sin coste de API, siempre que el modelo base responda bien a instrucciones.
-- Clasificacion y etiquetado de texto por lotes: un modelo de ~1,7B cuantizado a Q4 permite procesar grandes volumenes de documentos en local, con coste energetico bajo y sin enviar datos a terceros.
-- Filtrado y preprocesado en pipelines de datos: generar resumenes cortos, extraer entidades o normalizar texto antes de pasarlo a un modelo mayor, reduciendo coste computacional.
-- Educacion y experimentacion con cuantizacion: el repositorio ofrece 24 variantes de cuantizacion del mismo modelo, lo que permite medir empiricamente el impacto de la precision en la calidad de salida sobre una misma tarea.
-- Evaluacion comparativa de tecnicas imatrix: al ser una publicacion "weighted/imatrix", sirve como referencia para estudiar como afecta la matriz de importancia a las cuantizaciones IQ2/IQ3 frente a las K-quant clasicas.
+- Investigación en lenguas de bajos recursos: el modelo permite experimentar con generación de texto en hindi, tamil, bengalí, telugu y malayalam sin necesidad de infraestructura de gran escala, gracias a sus cuantizaciones de 0,6 a 1,5 GB.
+- Prototipado de asistentes conversacionales en inglés y lenguas índicas: al ser un modelo de 1,7B y estar disponible en GGUF, se puede desplegar en un portátil con llama.cpp u Ollama para validar flujos de diálogo antes de escalar a modelos mayores.
+- Procesamiento de textos del corpus Andamán-Nicobar: generación, resumen o reformulación de contenido en las variedades cubiertas por el dataset de afinamiento, un nicho poco atendido por modelos comerciales.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 24 variantes de cuantización con distintos tamaños y calidades, lo que lo convierte en un banco de pruebas útil para medir el impacto de la cuantización en la calidad de salida de un modelo de 1,7B.
+- Educación y divulgación: su pequeño tamaño permite ejecutarlo en aulas o entornos con hardware limitado para demostrar el funcionamiento de un LLM y el efecto de las técnicas de cuantización.
+- Filtrado y clasificación de textos multilingües: con un contexto no documentado, pero con soporte de seis lenguas, puede emplearse en tareas de etiquetado o moderación ligera en pipelines de bajo coste.
+- Base para afinamiento posterior: al estar bajo Apache 2.0 y con pesos GGUF, sirve como punto de partida para ajustes LoRA adicionales en dominios específicos de lenguas índicas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Para un modelo de ~1,7B, las estimaciones orientativas son: IQ1_S/IQ2_XXS en torno a 0,4-0,7 GB; Q2_K/IQ3 en torno a 0,7-1,0 GB; Q4_K_M en torno a 1,1-1,3 GB; Q5_K_M en torno a 1,3-1,5 GB; Q6_K en torno a 1,5-1,8 GB (cifras calculadas por regla general, no publicadas por el autor).
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para las cuantizaciones Q4 o superiores. Para Q6_K se recomienda 6 GB o mas.
-- Cabe en GPU de consumo: si, en tarjetas como GTX 1650, RTX 3050, RTX 4060, RTX 3060 o superiores. Tambien en Apple Silicon (Metal) y en CPU pura.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui (con backend llama.cpp) y servidores compatibles con GGUF. vLLM y TGI no son la via natural para este formato, aunque existen soportes parciales.
-- Latencia y throughput estimados: no disponibles. En una GPU de consumo moderna, un modelo de 1,7B a Q4 suele superar las decenas de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
+- VRAM estimada para inferencia (según cuantización): desde unos 0,6 GB adicionales al overhead de contexto para i1-IQ1_S hasta aproximadamente 1,5 GB para i1-Q6_K. En la práctica, el consumo total con contexto moderado se sitúa en el rango de 1 a 3 GB según la variante elegida.
+- GPU recomendadas: cualquier GPU de consumo con al menos 2-4 GB de VRAM puede ejecutar las cuantizaciones Q4_K_M o Q5_K_M; tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores no tendrán problema. También es viable en CPU.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones listadas; las variantes IQ1 e IQ2 caben incluso en iGPU y dispositivos con poca memoria.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (importando el GGUF), servidores compatibles con la API de Hugging Face (el tag `endpoints_compatible` lo sugiere), y en general cualquier runtime que soporte GGUF. vLLM y TGI no soportan GGUF de forma nativa para este caso, por lo que requerirían los pesos en safetensors del modelo base.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| dweep-1.7b-i1-GGUF (este) | ~1,7B (dato no confirmado) | no disponible | no disponible | GGUF (24 cuantizaciones) | Hugging Face |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| Llama 3.2-1B-Instruct | 1,2B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| dweep-1.7b (esta ficha) | 1,7B | no disponible | en, hi, ta, bn, te, ml | Apache 2.0 | GGUF (cuantizado) y safetensors (base) |
+| Modelos comparables de 1-2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa es estructural: los tres modelos alternativos tienen licencias y contextos publicados, mientras que para dweep-1.7b no hay datos verificables de contexto, licencia ni rendimiento, lo que dificulta una comparacion tecnica rigurosa.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos alternativos que permitan una comparación rigurosa. Se recomienda consultar la model card del modelo base docanan/dweep-1.7b para obtener más contexto antes de establecer comparaciones.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de informacion sobre la licencia: no se puede asumir uso comercial permitido. Es imprescindible consultar el repositorio del modelo base (docanan/dweep-1.7b) antes de cualquier despliegue en produccion.
-- Inconsistencia en el recuento de parametros: el metadato safetensors (1.034.740) no cuadra con la denominacion "1.7b"; puede tratarse de un error de publicacion o de un recuento parcial. Verificar antes de planificar recursos.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos: desconocidos, al no haber informacion sobre los datos de entrenamiento.
-- Idiomas: no declarados; no se puede garantizar un rendimiento aceptable en castellano.
-- Cuantizaciones de muy baja precision (IQ1_S, IQ2_XXS): degradan notablemente la coherencia y la fidelidad de las respuestas; solo recomendables cuando la memoria es el factor limitante.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de comunidad que haya validado la calidad de las cuantizaciones.
-- Sin datos de contexto: no se puede planificar su uso en tareas de contexto largo.
+- La información pública es muy escasa: no se documentan arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad real.
+- Riesgo de alucinación inherente a un modelo de 1,7B; no se han publicado evaluaciones de fidelidad.
+- El afinamiento se realizó sobre un corpus específico (Andamán-Nicobar), lo que puede producir un comportamiento sesgado hacia ese dominio y un rendimiento inferior en temas generales.
+- Cobertura lingüística limitada a las seis lenguas declaradas; no consta soporte de castellano ni de otras lenguas europeas.
+- Las cuantizaciones IQ1 e IQ2 están etiquetadas por el propio autor como de calidad baja o «para desesperados»; no son adecuadas para producción.
+- Aunque la licencia es Apache 2.0, conviene verificar la licencia y las condiciones del modelo base docanan/dweep-1.7b y del corpus docanan/andaman-nicobar-corpus antes de un uso comercial.
+- No consta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines que requieran function calling.
+- El repositorio ocupa 21,6 GB en total por acumulación de cuantizaciones; conviene descargar solo la variante necesaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/dweep-1.7b-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/dweep-1.7b-i1-GGUF
 - Modelo base: https://huggingface.co/docanan/dweep-1.7b
-- Herramienta de cuantizacion (llama.cpp): https://github.com/ggerganov/llama.cpp
+- Dataset de entrenamiento: https://huggingface.co/datasets/docanan/andaman-nicobar-corpus
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/dweep-1.7b-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#dweep-1.7b-i1-GGUF
+- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Gráfica comparativa de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

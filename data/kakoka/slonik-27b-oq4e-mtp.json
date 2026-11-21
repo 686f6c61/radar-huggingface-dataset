@@ -49,11 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "scottlowry/Qwen3.8-27B-oQ4e-mtp · Hugging Face",
-      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp",
-      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ4e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-mtp scottlowry/Qwen3.8-27B-oQ4e-mtp Notebooks Google ..."
-    }
-  ]
+  "sources": []
 }

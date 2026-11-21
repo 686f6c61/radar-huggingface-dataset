@@ -2,94 +2,94 @@
 
 ## Resumen
 
-Prism Caption 1.5 Micro es un modelo de propósito único desarrollado por VertexAGI que se encarga de una tarea muy concreta: convertir el primer mensaje de una conversación en un título corto y específico para el chat, similar al comportamiento de "nuevo chat" de ChatGPT o Claude. Es la segunda generación de la familia Prism Caption, sucesor de Prism Caption 1 Micro (que se basaba en Gemma-3-1B con solo 339 ejemplos de entrenamiento). Su relevancia actual reside en ofrecer una alternativa ligera y rápida para automatizar el titulado de conversaciones sin necesidad de invocar modelos de frontera, reduciendo costes y latencia en aplicaciones que gestionan muchos hilos de chat.
+Prism Caption 1.5 Micro es un modelo de lenguaje de 596 millones de parámetros desarrollado por VertexAGI, afinado a partir de Qwen/Qwen3-0.6B mediante LoRA para una única tarea: generar un título corto de conversación a partir del primer mensaje del usuario. Replica el comportamiento de autotitulado de asistentes como ChatGPT o Claude, pero ejecutándose en local a un coste computacional mínimo, evitando una llamada a un modelo de frontera solo para nombrar un chat.
 
-El modelo se construye mediante un adaptador LoRA sobre el modelo base Qwen3-0.6B, cuantizado a 4-bit en formato MLX y también disponible en GGUF. Con aproximadamente 93 millones de parámetros en el adaptador y un tamaño de archivo inferior a 400 MB, está pensado para ejecutarse localmente en dispositivos con recursos limitados, como Apple Silicon o CPUs convencionales. El proyecto forma parte de una familia más amplia de modelos "Prism" de propósito único, todos ellos publicados bajo licencia Apache 2.0.
+Forma parte de la familia Prism de modelos pequeños y monoespecíficos y es el sucesor de Prism Caption 1 Micro (basado en Gemma-3-1B y entrenado con 339 ejemplos). La versión 1.5 amplía el corpus a 1000 ejemplos distribuidos en 167 temas y 20 plantillas de formulación, y corrige el fallo metodológico de la evaluación anterior, que muestreaba temas ya vistos en entrenamiento.
 
-## Especificaciones técnicas
+El modelo se distribuye en dos formatos dentro del mismo repositorio: pesos MLX en 4 bits (grupo de 64, 335 MB) para Apple Silicon y un GGUF Q4_K_M (397 MB) para llama.cpp, Ollama y LM Studio. La licencia es Apache 2.0 y el idioma soportado es únicamente inglés.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3-0.6B) con adaptador LoRA fusionado |
-| Parametros totales | 93.188.096 (adaptador LoRA); el modelo base Qwen3-0.6B tiene 0,6 B parámetros |
-| Parametros activos | No disponible (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (heredada de Qwen3-0.6B, no especificada en la documentación) |
-| Tipos de cuantizacion | MLX 4-bit, GGUF Q4_K_M |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer decoder-only (Qwen3), afinado con LoRA |
+| Parametros totales | 596.049.920 |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible (heredada de Qwen3-0.6B; no especificada en la informacion) |
+| Tipos de cuantizacion | 4 bits MLX (group size 64), GGUF Q4_K_M |
+| Idiomas soportados | Ingles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX), GGUF |
 
 ## Arquitectura y entrenamiento
 
-Prism Caption 1.5 Micro parte del modelo base Qwen3-0.6B, sobre el que se aplica un adaptador LoRA de rango 8, escala 20 y 8 capas. El entrenamiento se realiza con el framework MLX sobre Apple Silicon, usando un optimizador Adam con una tasa de aprendizaje constante de 1e-5, un tamaño de lote de 4 y una longitud de secuencia de 256 tokens, durante 1.500 iteraciones. El dataset de entrenamiento consta de 1.000 ejemplos distribuidos en 167 temas y 20 plantillas de redacción, divididos en 900 ejemplos de entrenamiento y 100 de validación. La pérdida de validación final es de 0.209.
+El modelo parte de Qwen3-0.6B, un transformer decoder-only denso de 0,6B parámetros, cargado en su variante cuantizada a 4 bits de `mlx-community/Qwen3-0.6B-4bit`. Sobre esa base se aplica un adaptador LoRA de rango 8, escala 20 y 8 capas, entrenado con el framework MLX (`mlx-lm`) en Apple Silicon. La configuración de entrenamiento usa optimizador Adam con learning rate constante de 1e-5, batch de 4 y longitud de secuencia de 256, durante 1500 iteraciones; el checkpoint publicado corresponde a la iteración 1500 con una pérdida de validación de 0,209.
 
-La generación de los títulos de entrenamiento se realizó mediante destilación a partir de modelos de mayor tamaño a través de NVIDIA NIM. La mayoría de los ejemplos (~957) se generaron con el modelo `nvidia/nemotron-3.5-lightning-30b-a3b`, mientras que aproximadamente 43 ejemplos provienen de `google/diffusiongemma-26b-a4b-it` (debido a límites de tasa de peticiones). El resultado es un corpus mixto con 714 títulos únicos sobre 1.000 ejemplos, lo que evita la memorización de plantillas y favorece la generalización a temas no vistos.
+El corpus consta de 1000 ejemplos (900 de entrenamiento y 100 de validación) repartidos en 167 temas y 20 plantillas de formulación, con 714 títulos únicos en el conjunto total. Los títulos se destilaron a través de NVIDIA NIM con dos profesores: `google/diffusiongemma-26b-a4b-it` generó aproximadamente 43 ejemplos antes de que el límite de peticiones del endpoint devolviera un 82% de errores 429, y los ~957 restantes se generaron con `nvidia/nemotron-3.5-lightning-30b-a3b`. La ampliación del banco de temas de 51 (en la versión 1) a 167 responde a un objetivo explícito: evitar que el modelo memorice el conjunto de plantillas en lugar de aprender la tarea, reduciendo la recurrencia media por tema de ~20 a ~6 ejemplos.
 
 ## Capacidades
 
-- Generación de títulos de chat a partir del primer mensaje de una conversación, siguiendo una especificación de 3 a 6 palabras en formato de título (title case), sin puntuación final ni preámbulos.
-- Salida de texto corto y directo, sin razonamiento intermedio (el modelo hereda el bloque de "thinking" de Qwen3, pero se desactiva en la inferencia).
-- Funciona como un clasificador generativo: dado un mensaje de usuario, produce una etiqueta descriptiva, no un resumen extenso.
-- Soporta el formato de chat de Qwen3 mediante la plantilla de chat correspondiente, tanto en MLX como en GGUF.
-- Compatible con la inferencia local en dispositivos Apple Silicon (MLX) y en herramientas basadas en llama.cpp (Ollama, LM Studio).
-- No soporta tool calling, agentes, visión ni otras modalidades; es un modelo puramente generativo de texto.
+- Generación de títulos de chat de 3 a 6 palabras en formato title case, sin comillas ni puntuación final.
+- Condicionamiento mediante un prompt de sistema que fija el formato de salida; el modelo respeta la instrucción de devolver solo el título.
+- Ejecución local en Apple Silicon vía MLX y en CPU/GPU vía llama.cpp, Ollama y LM Studio con el GGUF Q4_K_M.
+- Compatibilidad con plantillas de chat de Qwen3; en modo no-thinking emite un bloque `<think></think>` vacío que debe eliminarse antes de usar la salida.
+- No soporta tool calling, agentes, visión, audio ni razonamiento multi-paso: es un modelo monoespecífico.
+- Capacidad multilingüe limitada al inglés, tanto por datos de entrenamiento como por declaración del autor.
 
 ## Casos de uso
 
-- Titulado automático de chats en aplicaciones de mensajería: el modelo puede asignar un nombre al nuevo chat en el momento en que el usuario escribe el primer mensaje, eliminando la necesidad de que el usuario lo haga manualmente. Su tamaño reducido permite ejecutarlo localmente en el cliente, sin enviar datos a un servidor.
-- Asistentes virtuales y plataformas de soporte: al iniciar una conversación con un cliente, el sistema genera un título descriptivo que facilita la organización de tickets y su búsqueda posterior. La baja latencia del modelo es adecuada para integrarse en pipelines de atención al cliente en tiempo real.
-- Clientes de correo y herramientas de productividad: cuando un usuario redacta un nuevo borrador o una nota, el modelo puede sugerir un asunto o título para el documento, mejorando la organización de carpetas y proyectos.
-- CRM y gestión de relaciones con clientes: al registrar la primera interacción con un cliente, el modelo crea automáticamente un título que sirve como referencia para el seguimiento del caso, evitando la entrada manual de datos.
-- Aplicaciones de chat interno en empresas: en plataformas como Slack o Teams, el modelo puede generar el nombre de los canales o hilos de discusión a partir del primer mensaje, facilitando la navegación en espacios de trabajo con muchos canales.
-- Entornos de desarrollo y documentación: al iniciar un hilo de discusión técnica en herramientas de gestión de proyectos, el modelo puede producir un título claro y específico, como "Depuración de error de autenticación", que luego se indexa en bases de conocimiento.
+- Autotitulado de conversaciones en asistentes propios: al crear un chat nuevo, se pasa el primer mensaje del usuario al modelo con el prompt de sistema y se obtiene una etiqueta de 3 a 6 palabras, evitando consumir una llamada a un modelo de frontera solo para nombrar la sesión.
+- Historial y listados de chats en aplicaciones de mensajería o productividad: el modelo genera etiquetas compactas que caben en una barra lateral sin truncamiento, con una media de 3,3 palabras.
+- Enrutado y clasificación ligera en pipelines internos: el título generado puede usarse como clave de agrupación o para preclasificar conversaciones antes de un análisis más costoso.
+- Despliegue en el dispositivo: con 335 MB en MLX 4 bits o 397 MB en GGUF Q4_K_M, cabe en portátiles Apple Silicon y en equipos de gama media, lo que permite titulado offline sin enviar el primer mensaje del usuario a un servicio externo.
+- Prototipado y evaluación de sistemas de destilado: sirve como ejemplo reproducible de un pipeline LoRA + MLX + destilado con profesores vía NIM para tareas de formato estricto.
+- Generación de etiquetas en herramientas de soporte o CRM: a partir del primer mensaje de un cliente se obtiene una etiqueta corta para bandejas de entrada compartidas, siempre que el tráfico sea en inglés y se tolere cierta pérdida del sustantivo temático.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para este modelo. La única evaluación disponible es la propia del autor, realizada sobre 24 temas retenidos que no aparecen en el conjunto de entrenamiento. Los resultados se presentan en forma de métricas de comportamiento:
+Evaluación sobre 24 temas reservados que no aparecen en los datos de entrenamiento. Las métricas son de comportamiento, no de precisión exacta, dado que el titulado no tiene una respuesta única correcta.
 
-| Métrica | Base Qwen3-0.6B | Prism Caption 1.5 Micro |
+| Metrica | Qwen3-0.6B base | Prism Caption 1.5 |
 |---|---|---|
 | Problemas de formato (preámbulo, puntuación, multilínea) | 10/24 | 0/24 |
-| Cumplimiento de la especificación de 3-6 palabras | 14/24 | 23/24 |
+| Dentro de la especificación de 3-6 palabras | 14/24 | 23/24 |
 | Comparte palabras de contenido con el mensaje | 24/24 | 21/24 |
-| Longitud media del título | 5,8 palabras | 3,3 palabras |
+| Longitud media | 5,8 palabras | 3,3 palabras |
 
-La evaluación muestra una mejora sustancial en la fiabilidad del formato y la adherencia a la especificación, aunque con una tendencia a la sobre-compresión que puede eliminar el sustantivo clave en algunos casos (por ejemplo, "Shoulder Sleep Matters" en lugar de "Mattress for Side Sleepers").
+El autor reporta como resultado global "0/24 problemas de formato, 23/24 dentro de especificación". El coste declarado es una mayor compresión: algunos títulos omiten el sustantivo temático (por ejemplo, "Shoulder Sleep Matters" para un mensaje sobre colchones, o "Acetone Smell Troubleshooting" para un mensaje sobre masa madre). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño del modelo: 335 MB en formato MLX 4-bit y 378 MB en GGUF Q4_K_M.
-- VRAM estimada para inferencia: inferior a 1 GB (estimación basada en el tamaño de los pesos, no en medidas empíricas publicadas).
-- GPU recomendadas: funciona en Apple Silicon (M1, M2, M3 y superiores) gracias al formato MLX nativo; también puede ejecutarse en GPU NVIDIA con llama.cpp o vLLM, aunque no se han publicado datos específicos de rendimiento.
-- Cabe en tarjetas consumer de gama baja, como NVIDIA GTX 1650, RTX 3050, o en la iGPU de chips Apple Silicon.
-- Opciones de despliegue: `mlx-lm` en macOS, llama.cpp, Ollama y LM Studio para GGUF, y cualquier servidor compatible con la plantilla de chat de Qwen3.
-- Latencia y throughput: no disponibles; al ser un modelo de 0.6B con generación limitada a ~20 tokens, se espera una inferencia muy rápida en hardware moderno, pero no hay datos publicados.
+- VRAM estimada: aproximadamente 0,4 GB para los pesos en 4 bits, más overhead de runtime y caché KV; en la práctica, menos de 1 GB en la mayoría de configuraciones.
+- GPU recomendadas: no requiere GPU dedicada; funciona en Apple Silicon mediante MLX y en CPU mediante llama.cpp. Cualquier GPU con 2 GB o más de VRAM puede alojarlo.
+- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y equivalentes, así como en Mac con chip de la serie M.
+- Opciones de despliegue: `mlx-lm` (formato MLX), llama.cpp, Ollama y LM Studio (GGUF Q4_K_M). El repositorio incluye la etiqueta `endpoints_compatible`.
+- Latencia y throughput: no disponibles en la información proporcionada. El autor solo indica que es "suficientemente pequeño y rápido" para ejecutar la tarea en local, sin cifras.
 
 ## Comparativa con modelos similares
 
-La única comparación directa disponible es con su predecesor y con el modelo base sin ajuste:
-
-| Modelo | Base | Parámetros | Contexto | Licencia | Rendimiento en titulado |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formatos |
 |---|---|---|---|---|---|
-| Prism Caption 1.5 Micro | Qwen3-0.6B | 93 M (adaptador) | No disponible | Apache 2.0 | 0/24 problemas de formato, 23/24 en especificación |
-| Prism Caption 1 Micro | Gemma-3-1B | 1B | No disponible | Apache 2.0 | Evaluado sobre temas del entrenamiento (memorización) |
-| Qwen3-0.6B (base) | — | 0.6B | No disponible | Apache 2.0 | 10/24 problemas de formato, 14/24 en especificación |
+| Prism Caption 1.5 Micro | 0,6B | No disponible | Titulado de chats (LoRA sobre Qwen3-0.6B) | Apache 2.0 | MLX 4-bit, GGUF Q4_K_M |
+| Prism Caption 1 Micro | ~1B (Gemma-3-1B) | No disponible | Titulado de chats, 339 ejemplos | No disponible en la informacion | No disponible en la informacion |
+| Qwen3-0.6B (base) | 0,6B | No disponible en la informacion | Modelo generalista | Apache 2.0 | safetensors, GGUF (variantes de la comunidad) |
 
-No se dispone de datos de comparación con otros modelos de titulado de chat del mercado (por ejemplo, los usados por ChatGPT o Claude). La familia Prism Creative de VertexAGI (prism-creative-1-mini y prism-creative-1-5-mini) se centra en escritura creativa y no en titulado, por lo que no es comparable directamente.
+Frente al modelo base, la comparativa relevante no es de conocimiento general sino de fiabilidad de formato: 0/24 problemas de formato frente a 10/24, y 23/24 dentro de especificación frente a 14/24. Frente a Prism Caption 1 Micro, la versión 1.5 triplica aproximadamente el corpus (1000 frente a 339 ejemplos) y amplía el banco de temas de 51 a 167, además de corregir la evaluación para usar temas no vistos.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo funciona en inglés; no soporta otros idiomas, lo que limita su uso en aplicaciones multilingües.
-- Sobre-compresión: tiende a generar títulos más cortos de lo especificado (media de 3,3 palabras frente a 3-6) y puede omitir el sustantivo principal del mensaje, lo que reduce la precisión en algunos casos.
-- Solo primer mensaje: no está entrenado para renombrar conversaciones a partir de turnos posteriores o transcripciones completas, por lo que no es adecuado para re-titulado dinámico.
-- No es un resumidor: produce etiquetas cortas, no descripciones o resúmenes del contenido de la conversación.
-- Dependencia del modelo base: hereda las limitaciones generales de Qwen3-0.6B, incluyendo su fecha de corte de conocimiento y posibles sesgos.
-- Riesgo de alucinación: como cualquier modelo generativo, puede producir títulos que no reflejen con exactitud el contenido del mensaje, especialmente con temas ambiguos o muy específicos.
-- Licencia Apache 2.0: permite uso comercial sin restricciones, pero el modelo no incluye garantías de exactitud ni de cumplimiento normativo.
+- Modelo de 0,6B parámetros: capacidad general muy limitada fuera de la tarea de titulado; no debe reutilizarse como asistente conversacional.
+- Sobrecompresión: la media de 3,3 palabras queda por debajo del centro del rango 3-6 especificado y en ocasiones se pierde el sustantivo temático, lo que reduce la relevancia de 24/24 a 21/24. Conviene validar con tráfico propio si la interfaz exige preservar el sujeto.
+- Solo inglés: no hay soporte declarado para otros idiomas, ni en datos ni en evaluación.
+- Solo primeros mensajes: no se entrenó para retitular conversaciones a partir de turnos posteriores ni de transcripciones completas.
+- No es un resumidor: produce etiquetas, no descripciones.
+- Hereda el corte de conocimiento y las limitaciones generales de Qwen3-0.6B, incluidos los sesgos presentes en los datos del modelo base y en los títulos generados por los profesores.
+- Riesgo de alucinación en el sentido de títulos que no reflejan el contenido del mensaje cuando este es ambiguo o muy corto.
+- En modo no-thinking, Qwen3 emite un bloque `<think></think>` vacío que debe eliminarse; con llama.cpp hay que usar la plantilla de chat nativa, ya que una plantilla construida a mano degrada el título.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios distintos de los evaluados.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: VertexAGI/prism-caption-1-5-micro](https://huggingface.co/VertexAGI/prism-caption-1-5-micro)
-- [Modelo base: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
-- [Familia Prism: VertexAGI/prism-creative-1-5-mini](https://huggingface.co/VertexAGI/prism-creative-1-5-mini)
-- [Familia Prism: VertexAGI/prism-creative-1-mini](https://huggingface.co/VertexAGI/prism-creative-1-mini)
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/prism-caption-1-5-micro
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Variante cuantizada usada para el entrenamiento: https://huggingface.co/mlx-community/Qwen3-0.6B-4bit

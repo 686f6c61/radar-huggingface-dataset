@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "STAirye/lastbook-meaning-red",
+  "slug": "stairye-lastbook-meaning-red",
+  "author": "STAirye",
+  "url": "https://huggingface.co/STAirye/lastbook-meaning-red",
+  "created_at": "2026-11-21T02:42:37.000Z",
+  "updated_at": "2026-11-21T02:42:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "q8_0",
+    "llama.cpp",
+    "sentence-similarity",
+    "text-classification",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:quantized:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33212160,
+  "parameters_human": "33.2M",
+  "storage_bytes": 36739690,
+  "storage_human": "37 MB",
+  "context_length": 512,
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

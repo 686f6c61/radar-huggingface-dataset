@@ -2,97 +2,100 @@
 
 ## Resumen
 
-El cumulonimbus-cloud-classifier es un modelo de visión por computador desarrollado por el usuario adineo y publicado en Hugging Face. Resuelve una tarea concreta de clasificación binaria de imágenes: distinguir nubes de tipo cumulonimbus (las asociadas a tormentas y precipitaciones intensas) frente a cualquier otro tipo de nube o cielo. La entrada es una imagen RGB redimensionada a 256×256 y la salida es una puntuación sigmoide calibrada que representa P(other).
+El Cumulonimbus Cloud Classifier es un modelo de clasificación de imágenes binario desarrollado por el usuario adineo en el marco de un proyecto de fin de grado (B.Tech) de la University of Engineering & Management de Kolkata. Su tarea es distinguir entre nubes cumulonimbus y cualquier otro tipo de nube o cielo a partir de fotografías tomadas desde el suelo. El modelo se distribuye como un conjunto de pesos en formato nativo de Keras (`.keras`) e incluye varias arquitecturas convolucionales comparadas bajo una misma receta de entrenamiento, además de dos variantes híbridas y un mapa de calibración de Platt.
 
-Técnicamente es un ensemble de tres modelos EfficientNetV2-B0 entrenados con semillas distintas, con aumento de datos en tiempo de test (TTA de cinco vistas), calibración de Platt ajustada sobre validación y explicabilidad mediante Grad-CAM. Se distribuye en formato nativo de Keras (`.keras`) bajo TensorFlow 2.19 y Keras 3.15, con un baseline MobileNetV2 incluido a modo de comparación.
+El repositorio no contiene un único modelo, sino un paquete de modelos: cinco arquitecturas individuales (MobileNetV2, EfficientNetV2-B0, DenseNet121, ResNet50 y ConvNeXtTiny), un ensemble por semillas de EfficientNetV2-B0, una fusión de dos backbones y un ensemble apilado de cuatro arquitecturas. La configuración con mejor rendimiento es el ensemble apilado, con un 95,31 % de accuracy y un 85,67 % de macro-F1 sobre el split de test reservado.
 
-Su relevancia es acotada pero clara: ofrece un punto de partida reproducible y ligero para tareas de meteorología basada en imágenes terrestres, con métricas declaradas sobre un conjunto de test reservado y sin verificación externa. No es un modelo de lenguaje ni un modelo multimodal general; es un clasificador de imagen especializado y de pequeño tamaño (repositorio de 0,2 GB).
+Es relevante para quienes trabajan en visión por computador aplicada a meteorología porque ofrece una comparativa reproducible de arquitecturas CNN bajo condiciones idénticas, incluye calibración de probabilidades y utiliza el Critical Success Index (CSI), la métrica estándar de verificación meteorológica, en lugar de limitarse a accuracy. El conjunto de datos empleado es el CCSN público (2.567 imágenes), lo que facilita la replicabilidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Ensemble de 3 × EfficientNetV2-B0 (transfer learning); baseline MobileNetV2 incluido |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de imagen, entrada 256×256 RGB) |
-| Tipos de cuantización | no disponible (pesos en formato `.keras` de Keras 3) |
-| Idiomas soportados | no aplica (clasificación de imagen, sin componente textual) |
+| Arquitectura | CNN con transfer learning: MobileNetV2, EfficientNetV2-B0, DenseNet121, ResNet50, ConvNeXtTiny; más fusion dual y ensemble apilado |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen 256x256) |
+| Tipos de cuantizacion | no disponible (pesos en formato Keras nativo) |
+| Idiomas soportados | no aplica (clasificación de imágenes; etiquetas en inglés) |
 | Licencia | MIT |
-| Formato de pesos | `.keras` (TensorFlow 2.19 / Keras 3.15); manifiesto JSON y calibración JSON |
+| Formato de pesos | `.keras` (Keras nativo, TensorFlow/Keras) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ensemble de tres instancias de EfficientNetV2-B0 entrenadas con semillas diferentes (42, 1042 y 2042) mediante transfer learning. La inferencia de referencia promedia las salidas de los tres miembros tras aplicar TTA de cinco vistas por miembro y una calibración de Platt (parámetros `a` y `b` en `calibration.json`) ajustada exclusivamente sobre el split de validación. EfficientNetV2-B0 normaliza internamente, por lo que la entrada son flotantes RGB en rango [0, 255] a 256×256.
+El modelo es un clasificador de imágenes binario basado en redes convolucionales con transfer learning. Se entrenaron cinco arquitecturas bajo una receta idéntica: MobileNetV2, EfficientNetV2-B0, DenseNet121, ResNet50 y ConvNeXtTiny. Las imágenes se redimensionan a 256x256 píxeles y se procesan en RGB. Sobre esta base se construyen dos variantes híbridas: una fusión de dos backbones (EfficientNetV2-B0 + DenseNet121) y un ensemble apilado que combina EfficientNetV2-B0, DenseNet121, ResNet50 y ConvNeXtTiny. También se incluye un ensemble por semillas de EfficientNetV2-B0 con tres miembros (semillas 42, 1042 y 2042) y una ablación de MobileNetV2 con la receta original.
 
-Los datos de entrenamiento combinan fotografías propias del autor con la base de datos pública CCSN (2.543 imágenes, Zhang et al., «CloudNet: Ground-Based Cloud Classification With Deep Learning», GRL 2018). Todas las clases de CCSN distintas de cumulonimbus se agrupan en la clase `other`, lo que convierte la tarea en binaria. El split es estratificado y con semilla, en proporción 80/10/10 (entrenamiento 204/1851, validación 25/231, test 25/231 para cumulonimbus/other). El conjunto de test no se usó para entrenamiento, selección de checkpoint, búsqueda de umbral ni calibración.
+El entrenamiento utiliza el dataset CCSN (Zhang et al., 2018), compuesto por 2.567 imágenes de nubes tomadas desde el suelo, más 24 fotografías de campo adicionales. El split es estratificado 80/10/10 con semilla fija; el conjunto de test nunca se usa para entrenamiento, selección ni calibración. Las decisiones de clasificación se calibran mediante un mapa de Platt ajustado sobre validación (a = 1,013752, b = 2,071637), lo que permite obtener probabilidades calibradas en lugar de scores brutos. No se especifica en la información disponible el número de épocas, el optimizador, la función de pérdida ni si hubo aumento de datos más allá de la receta estándar de transfer learning.
 
 ## Capacidades
 
-- Clasificación binaria de imágenes de nubes terrestres: `cumulonimbus` frente a `other`.
-- Salida de una puntuación sigmoide calibrada (P(other)); umbral por defecto 0,5.
-- Aumento de datos en tiempo de test (TTA) con cinco vistas por miembro para la inferencia de referencia.
-- Explicabilidad mediante Grad-CAM.
-- Baseline MobileNetV2 incluido para comparación de rendimiento y coste.
-- No soporta tool calling, agentes, razonamiento multi-paso, texto, audio ni vídeo.
-- No dispone de capacidades multilingües (no procesa lenguaje).
+- Clasificación binaria de imágenes: distingue entre cumulonimbus y otras nubes o cielos.
+- Entrada de imagen RGB redimensionada a 256x256 píxeles.
+- Salida de probabilidad calibrada mediante mapa de Platt, con umbral de decisión en 0,5.
+- Ensemble por semillas y ensemble apilado para mejorar la robustez de la predicción.
+- Fusión de dos backbones (EfficientNetV2-B0 + DenseNet121) como alternativa a un único modelo.
+- Incluye pipeline de Grad-CAM en el repositorio del proyecto para interpretabilidad visual.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües; es un clasificador de imágenes puro.
 
 ## Casos de uso
 
-- Alerta temprana de convección: integrado en una estación meteorológica con cámara terrestre, el clasificador puede marcar fotogramas con probable cumulonimbus y disparar una revisión humana o un aviso preliminar, usando el umbral ajustable para priorizar recall.
-- Filtrado de archivos fotográficos: procesamiento por lotes de repositorios de imágenes de cielo para separar candidatas a cumulonimbus y reducir el volumen que un meteorólogo debe revisar manualmente.
-- Anotación asistida de datasets: preetiquetado de nuevas imágenes antes de la revisión experta, aprovechando la alta precisión en la clase `other` para descartar rápidamente negativos.
-- Educación y divulgación meteorológica: herramienta de demostración que muestra la puntuación del modelo y el mapa Grad-CAM para explicar qué regiones de la imagen sustentan la clasificación.
-- Monitorización de webcams urbanas: despliegue ligero sobre imágenes de cámaras fijas para generar series temporales de probabilidad de cumulonimbus y estudiar su evolución diurna.
-- Investigación comparativa: uso del baseline MobileNetV2 y del ensemble como referencia reproducible en experimentos de clasificación de nubes terrestres con CCSN.
+- **Apoyo a la vigilancia meteorológica en estaciones con cámara**: el modelo puede procesar fotogramas periódicos de una cámara orientada al cielo y generar una alerta cuando la probabilidad calibrada de cumulonimbus supera el umbral, como señal complementaria a los avisos oficiales.
+- **Filtrado previo en datasets de nubes**: dado que clasifica rápidamente imágenes de 256x256, puede usarse para etiquetar o priorizar grandes colecciones de fotografías de cielo antes de una revisión manual, reduciendo el coste de anotación.
+- **Sistemas de alerta temprana de bajo coste**: al ser modelos ligeros (MobileNetV2 y EfficientNetV2-B0) y distribuirse en formato Keras, pueden desplegarse en dispositivos con GPU modesta o en el borde para monitorizar cumulonimbus en tiempo casi real.
+- **Investigación en verificación meteorológica**: el repositorio incluye métricas CSI y mapas de calibración, lo que permite reutilizar la configuración como línea base reproducible para comparar nuevas arquitecturas en clasificación binaria de nubes.
+- **Educación y proyectos académicos**: la comparativa de cinco arquitecturas bajo una misma receta y los scripts de entrenamiento, benchmarking y Grad-CAM sirven como material didáctico para cursos de visión por computador aplicada.
+- **Integración en aplicaciones de observación ciudadana**: una app móvil o web podría enviar fotos del cielo y recibir una clasificación con probabilidad calibrada, usando el ensemble por semillas para mayor estabilidad.
+- **Análisis de riesgo en seguros o agricultura**: la detección temprana de cumulonimbus en imágenes de cámaras locales puede alimentar sistemas de aviso de tormenta para explotaciones agrícolas o instalaciones expuestas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el split de test reservado (256 imágenes); no verificados de forma independiente.
+Resultados sobre el split de test reservado (256 imágenes, decisiones calibradas), según la model card:
 
-| Configuración | Accuracy | Macro-F1 | ROC-AUC | ECE |
+| Modelo | Accuracy | Macro-F1 | ROC-AUC | CSI-macro |
 |---|---|---|---|---|
-| MobileNetV2 (baseline) | 90,62 % | 57,51 % | 0,833 | 0,017 |
-| EfficientNetV2-B0 (1 semilla) | 92,97 % | 74,42 % | 0,894 | 0,018 |
-| Ensemble ×3 + Platt (modelo propuesto) | 93,36 % | 77,46 % | 0,921 | 0,027 |
+| MobileNetV2 | 92,58 % | 74,81 % | 0,925 | 0,644 |
+| EfficientNetV2-B0 | 92,58 % | 74,81 % | 0,915 | 0,644 |
+| DenseNet121 | 92,19 % | 71,57 % | 0,893 | 0,615 |
+| ResNet50 | 92,97 % | 76,66 % | 0,957 | 0,663 |
+| ConvNeXtTiny | 94,53 % | 84,48 % | 0,957 | 0,752 |
+| Seed ensemble x3 (EffNetV2-B0) | 93,36 % | 77,46 % | 0,921 | 0,672 |
+| Hybrid fusion (EffNetV2-B0 + DenseNet121) | 93,75 % | 79,25 % | 0,947 | 0,691 |
+| Hybrid stacked ensemble (EffNetV2-B0 + DenseNet121 + ResNet50 + ConvNeXtTiny) | 95,31 % | 85,67 % | 0,969 | 0,768 |
 
-Matriz de confusión del ensemble en test (filas = real, columnas = predicho; orden `cumulonimbus`, `other`):
-
-|  | cumulonimbus | other |
-|---|---|---|
-| **cumulonimbus** | 12 | 13 |
-| **other** | 4 | 227 |
+El ensemble apilado supera a todas las arquitecturas individuales en todas las métricas. El CSI se define como TP/(TP+FP+FN), la métrica estándar de verificación meteorológica.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño del repositorio (0,2 GB) y la arquitectura EfficientNetV2-B0, la inferencia cabe holgadamente en GPUs de consumo, aunque no se publican cifras concretas.
-- GPU recomendadas: no especificadas por el autor; cualquier GPU con soporte TensorFlow 2.19 es suficiente en principio.
-- Cabe en GPU de consumo: sí, previsiblemente en modelos tipo RTX 3060 o superiores, aunque no hay medición publicada.
-- Opciones de despliegue: TensorFlow 2.19 / Keras 3.15 (formato `.keras`); no se mencionan exportaciones a ONNX, TFLite, vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo salvo conversión manual).
-- Latencia y throughput: no disponibles.
+- **VRAM estimada para inferencia**: no disponible en la información proporcionada. Al tratarse de CNNs de tamaño pequeño a medio con entrada de 256x256, el consumo es moderado, pero no se publican cifras.
+- **GPU recomendadas**: no se especifican. Por el tamaño de los backbones (MobileNetV2, EfficientNetV2-B0, DenseNet121, ResNet50, ConvNeXtTiny), caben previsiblemente en GPUs de consumo, pero esto no está confirmado en la información disponible.
+- **Cabe en GPU de consumo**: probablemente sí para los modelos individuales, pero no hay datos confirmados.
+- **Opciones de despliegue**: TensorFlow/Keras (carga directa con `tensorflow.keras.models.load_model`). No se mencionan exportaciones a ONNX, TensorRT, TFLite ni otros runtimes.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Tarea | Accuracy (test) | Macro-F1 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| cumulonimbus-cloud-classifier (ensemble) | 3 × EfficientNetV2-B0 | Binaria cumulonimbus/other | 93,36 % | 77,46 % | MIT | Hugging Face |
-| EfficientNetV2-B0 (1 semilla, incluido) | EfficientNetV2-B0 | Binaria cumulonimbus/other | 92,97 % | 74,42 % | MIT | Incluido en el repo |
-| MobileNetV2 (baseline, incluido) | MobileNetV2 | Binaria cumulonimbus/other | 90,62 % | 57,51 % | MIT | Incluido en el repo |
+No se dispone de información sobre modelos comparables de clasificación binaria de cumulonimbus en la información proporcionada. La propia model card advierte que la tarea binaria no es comparable con resultados de clasificación de 11 clases sin reentrenamiento. Como referencia interna, la comparativa entre las cinco arquitecturas del propio repositorio se recoge en la sección de benchmarks.
 
-No se dispone de comparación con clasificadores de nubes externos en la información proporcionada.
+| Modelo | Parametros | Contexto/entrada | Accuracy (test) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Cumulonimbus Cloud Classifier (stacked ensemble) | no disponible | imagen 256x256 | 95,31 % | MIT | Hugging Face |
+| EfficientNetV2-B0 (individual) | no disponible | imagen 256x256 | 92,58 % | MIT | Hugging Face |
+| ConvNeXtTiny (individual) | no disponible | imagen 256x256 | 94,53 % | MIT | Hugging Face |
+| ResNet50 (individual) | no disponible | imagen 256x256 | 92,97 % | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Recall bajo en la clase rara: en test se pierden 13 de 25 cumulonimbus (recall ≈ 48 %), aunque la precisión en esa clase es alta; conviene bajar el umbral si prima el recall.
-- Solo validado con fotografías terrestres; no se ha probado con imágenes de satélite, escenas nocturnas ni oclusión intensa.
-- Tarea binaria: la clase `other` agrupa todos los demás géneros de nubes, por lo que no distingue entre ellos.
-- Calibración ajustada sobre un split de validación pequeño (256 imágenes), lo que puede introducir sesgo en las probabilidades.
-- Métricas no verificadas de forma independiente (`verified: false` en el model-index).
-- Riesgo de sobreajuste al conjunto de fotografías propias del autor, no cuantificado en la información disponible.
-- Licencia MIT permite uso comercial, pero la base de datos CCSN conserva sus propios términos en Harvard Dataverse y requiere citar a Zhang et al. (2018) al usar los datos combinados.
+- **Tarea binaria**: el modelo solo distingue cumulonimbus frente al resto; no es comparable con resultados de clasificación de 11 clases sin reentrenamiento.
+- **Test pequeño**: el split de test contiene 256 imágenes y solo 25 de cumulonimbus, por lo que los intervalos de confianza por clase son amplios y las métricas pueden variar con nuevos datos.
+- **Herramienta asistiva**: la model card indica explícitamente que no sustituye a los avisos meteorológicos oficiales.
+- **Sesgos del dataset**: el CCSN está compuesto por fotografías tomadas desde el suelo en condiciones y localizaciones concretas; el rendimiento puede degradarse con cámaras, ángulos, iluminación o regiones geográficas distintas.
+- **Riesgo de alucinación**: como todo clasificador, puede asignar alta probabilidad a la clase equivocada ante imágenes fuera de distribución (cielos nocturnos, nubes artificiales, imágenes no meteorológicas).
+- **Calibración dependiente del contexto**: el mapa de Platt se ajustó sobre validación con este dataset; su validez fuera de esa distribución no está garantizada.
+- **Licencia**: MIT, lo que permite uso comercial, pero se debe citar el dataset CCSN (Zhang et al., 2018) al reutilizarlo.
+- **Formato**: los pesos están en `.keras` nativo; no se ofrecen exportaciones a GGUF, ONNX ni otros formatos, lo que limita el despliegue fuera del ecosistema TensorFlow/Keras.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/adineo/cumulonimbus-cloud-classifier
-- Dataset CCSN (Harvard Dataverse): https://doi.org/10.7910/DVN/CADDPD
-- Referencia del dataset: Zhang et al., «CloudNet: Ground-Based Cloud Classification With Deep Learning», Geophysical Research Letters, 2018.
+- Repositorio del proyecto (pipeline completo, entrenamiento, benchmarking, híbridos, calibración, Grad-CAM y UI web): https://github.com/adineo-cmd/cloud_predict
+- Dataset CCSN (Zhang et al., 2018): https://doi.org/10.7910/DVN/CADDPD

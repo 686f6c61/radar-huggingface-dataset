@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "studio - YouTube",
-      "url": "https://www.youtube.com/studio/dashboard",
-      "snippet": "studio @studio-mo9dz • 28.2K subscribers • 2 videos More about this channel ...more More about this channel ...more ...more"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed/youyoutubestudio",
-      "snippet": "Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to …"
-    },
-    {
-      "title": "YouTube Studio",
-      "url": "https://studio.youtube.com/reauth?app...",
-      "snippet": "Please wait."
-    },
-    {
-      "title": "YouTube Studio",
-      "url": "https://studio.youtube.com/reauth?approve_browser_access=1&approve_browser_access=1",
-      "snippet": "Please wait."
-    },
-    {
-      "title": "YouTube Studio - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator&hl=en-US",
-      "snippet": "The official YouTube Studio app is the best way for you to understand and connect with the people in your community using the …"
-    }
-  ]
+  "sources": []
 }

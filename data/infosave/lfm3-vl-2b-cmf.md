@@ -2,96 +2,106 @@
 
 ## Resumen
 
-LFM3-VL-2B — CMF es una versión cuantizada y empaquetada en formato CMF del modelo vision-language LFM3-VL-2B de Liquid AI, un modelo multimodal de aproximadamente 2 mil millones de parámetros que combina un codificador de visión propio (14 capas de convolución y atención, con procesado a resolución nativa) sobre el modelo de texto LFM3-1.7B, que utiliza convoluciones cortas y atención completa y deslizante. El modelo base piensa antes de responder (thinking activado por defecto) y soporta entrada de imágenes, vídeo y texto.
+LFM3-VL-2B-cmf es una distribucion cuantizada del modelo vision-lenguaje LiquidAI/LFM3-VL-2B, publicada por el usuario infosave en formato CMF (Cortiq Model File). El modelo original lo desarrolla Liquid AI y combina un codificador visual de 14 capas (convoluciones y atencion) que procesa imagenes a resolucion nativa en parches de 16x16 (cada bloque 2x2 equivale a un token de lenguaje) con el modelo de texto LFM3-1.7B, que usa convoluciones cortas y atencion completa y de ventana deslizante. El total ronda los 2.000 millones de parametros.
 
-Esta ficha cubre el empaquetado publicado por el usuario infosave, que distribuye el modelo como archivos CMF únicos cuantizados (8 bits y 4 bits para el modelo de lenguaje, 16 bits para el codificador de visión). Su valor diferencial es el runtime: funciona con `cortiq`, un motor de inferencia en Rust sin Python ni frameworks de ML, que opera sobre NVIDIA, AMD e Intel mediante Vulkan/DX12, Apple silicon mediante Metal y CPU pura. Esto lo hace especialmente atractivo para despliegues en el borde (edge) y entornos sin stack de Python.
+La aportacion de esta ficha no es el modelo en si, sino el empaquetado: dos ficheros unicos (q8_2f de 2,14 GB y q4tp de 1,31 GB) que se ejecutan con `cortiq`, un motor de inferencia escrito en Rust sin Python ni frameworks de machine learning, con soporte para GPU NVIDIA, AMD e Intel via Vulkan/DX12, backend Metal en Apple Silicon y CPU pura. Esto lo hace relevante para despliegues en el borde (edge) y entornos donde instalar PyTorch o CUDA resulta inviable.
+
+El modelo esta pensado para tareas image-text-to-text con modo de razonamiento activado por defecto, soporte de video (muestreo a 2 fps) y 16 idiomas declarados, entre ellos el espanol. La licencia es lfm1.0, que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador de visión convolución+atención (14 capas, parches 16×16, bloques 2×2 por token de lenguaje) sobre LFM3-1.7B (convoluciones cortas, atención completa y sliding-window) |
-| Parametros totales | ~2B (no desglosado en la ficha) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | q8_2f (8 bits lenguaje, 16 bits visión) y q4tp (4 bits lenguaje, 16 bits visión); visión ejecutada en float32 |
+| Arquitectura | Vision encoder de 14 capas (convolucion + atencion) sobre modelo de texto LFM3-1.7B (convoluciones cortas, atencion completa y sliding-window); pipeline image-text-to-text |
+| Parametros totales | Aproximadamente 2.000 millones (modelo base LFM3-VL-2B); fichero q8_2f de 2.135.818.786 bytes, q4tp de 1.306.104.354 bytes |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible de forma explicita; se documentan pruebas con prompts de 4.000 tokens |
+| Tipos de cuantizacion | q8_2f (lenguaje 8 bits, vision 16 bits), q4tp (lenguaje 4 bits, vision 16 bits); encoder visual y proyector siempre en 16 bits, ejecutados en float32 |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (other) |
-| Formato de pesos | CMF (safetensors no disponible en este repo) |
+| Licencia | lfm1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | CMF (Cortiq Model File), ejecutable con `cortiq`; no se distribuyen safetensors ni GGUF en este repositorio |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura consta de dos componentes. El codificador de visión de Liquid AI procesa imágenes a resolución nativa con 14 capas que combinan convolución y atención, usando parches de 16×16 píxeles donde cada bloque de 2×2 parches se convierte en un token de lenguaje: una imagen de 640×480 genera 300 tokens y una de 1296×864 genera 1080. El modelo de lenguaje es LFM3-1.7B, basado en convoluciones cortas combinadas con atención completa y de ventana deslizante, con modo de razonamiento (thinking) activado por defecto.
+El modelo base LFM3-VL-2B es un vision-lenguaje de Liquid AI que empareja un codificador visual de 14 capas con el modelo de texto LFM3-1.7B. El encoder procesa imagenes a resolucion nativa mediante parches de 16x16, donde cada bloque 2x2 se mapea a un unico token de lenguaje; una imagen de 640x480 produce 300 tokens y una de 1296x864 produce 1080. El modelo de texto emplea una mezcla de convoluciones cortas, atencion completa y atencion de ventana deslizante, y tiene el modo de razonamiento (thinking) activado por defecto.
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no se han publicado datos en la información disponible. En cuanto al empaquetado CMF, el codificador de visión y el proyector se mantienen en 16 bits y se ejecutan en float32, lo que permite reproducir exactamente el preprocesado de Transformers sobre imágenes PNG (similitud coseno superior a 0,9999 en todas las filas frente al checkpoint bf16 en float32); los archivos JPEG decodifican ligeramente distinto respecto a PIL, lo que desplaza algunas filas. La validación de equivalencia se hizo comparando 48 tokens greedy de descripciones en cuatro imágenes de prueba.
+Esta distribucion no reentrena el modelo: cuantiza los pesos del checkpoint original. El encoder visual y el proyector se mantienen en 16 bits y se ejecutan en float32 para preservar la fidelidad numerica; en imagenes PNG el preprocesado reproduce exactamente el de Transformers y las filas entregadas al modelo de lenguaje coinciden con el checkpoint bf16 ejecutado en float32 (coseno superior a 0,9999 en todas las filas). En JPEG la decodificacion difiere ligeramente de PIL (unos pocos niveles por pixel), lo que desplaza filas individuales. La comparacion de 48 tokens greedy sobre cuatro imagenes de prueba da coincidencia identica en 3 de 4 imagenes para q8_2f y 0 de 4 para q4tp (mismo contenido, otras palabras). No se dispone de informacion sobre el numero de tokens de entrenamiento, composicion del dataset ni uso de RLHF/DPO.
+
+La innovacion tecnica destacable es el formato CMF y el motor `cortiq`: inferencia sin Python ni framework de ML, con backend Vulkan/DX12, Metal y CPU, y un servidor compatible con la API de OpenAI. El procesado de video sigue el esquema del processor de Liquid: frames a 2 por segundo (entre 4 y 768), dos frames consecutivos por paso visual, cada paso precedido por su marca temporal y un presupuesto de pixeles comun a todos los frames.
 
 ## Capacidades
 
-- Comprensión de imagen-texto (image-text-to-text): descripción de imágenes, lectura de gráficos y valores en charts, comparación de diferencias entre varias imágenes (hasta múltiples `--image` repetibles).
-- Comprensión de vídeo: acepta archivos Y4M locales o directorios de fotogramas con `--video-fps`; muestreo a 2 fps (entre 4 y 768 fotogramas), dos fotogramas consecutivos por paso de visión, cada paso precedido de su marca temporal.
-- Generación de texto pura (sin imagen), heredada de LFM3-1.7B.
-- Modo de razonamiento (thinking) activado por defecto, con opción `--no-think` para respuestas directas; el razonamiento consume el presupuesto de `--max-tokens`.
-- Tool calling en peticiones solo-texto, según la ficha del modelo LFM3-1.7B de referencia.
-- Multilingüe: 16 idiomas, incluido el castellano.
-- Servidor compatible con la API de OpenAI (`cortiq serve`), con soporte de partes de imagen (URL HTTP, data URL o ruta local) y vídeo.
+- Generacion de texto y razonamiento con modo thinking activado por defecto; `--no-think` solicita respuesta directa.
+- Comprension de imagenes a resolucion nativa: descripcion, lectura de graficos, comparacion entre varias imagenes (se admite `--image` repetido).
+- Procesamiento de video: ficheros Y4M locales o directorios de frames con `--video-fps`, muestreo a 2 fps y marcas temporales por paso.
+- Entrada image-text-to-text y texto puro (el mismo fichero funciona sin imagen).
+- Tool calling / function calling en peticiones de solo texto, heredado de LFM3-1.7B.
+- Multilingue en 16 idiomas, incluido el espanol.
+- Servidor compatible con la API de OpenAI (`/v1/chat/completions`) con partes de imagen por URL HTTP(S), data URL o ruta local, y partes de video por ruta local.
+- Control de resolucion mediante `--image-max-pixels` para reducir tokens y acelerar el encoder.
 
 ## Casos de uso
 
-- Despliegue en el borde sin Python: al no requerir Python ni frameworks de ML, es idóneo para dispositivos industriales, kioscos o sistemas embebidos con GPU AMD/Intel donde instalar PyTorch es inviable.
-- Descripción automática de imágenes en aplicaciones de escritorio: con 2 GB de VRAM basta para ejecutar cualquier variante, por lo que cabe en prácticamente cualquier GPU moderna o incluso en CPU.
-- Análisis de vídeo de vigilancia o control de acceso: el muestreo a 2 fps con marcas temporales permite tareas como contar personas que entran en un plano (`--video frames/ --video-fps 30`).
-- Extracción de datos de gráficos y capturas: la opción `--no-think` ofrece respuestas directas al leer valores de charts, útil en pipelines de digitalización documental.
-- Backend multimodal local compatible con OpenAI: `cortiq serve` expone `/v1/chat/completions`, lo que permite integrarlo en aplicaciones existentes que ya hablan con la API de OpenAI sin cambiar código cliente.
-- Comparación visual de imágenes: soporte nativo de múltiples imágenes en un mismo prompt para detectar cambios entre versiones de un diseño, capturas de pantalla o fotogramas.
-- Asistentes locales multilingües: soporte de 16 idiomas y razonamiento por defecto para tareas de consulta general en entornos sin conexión.
-- Verificación de integridad en despliegues regulados: hashes SHA-256 publicados y comando `cortiq verify` para validar el archivo antes de ejecutarlo.
+- Descripcion y etiquetado de imagenes en el borde: con 1,31 GB en q4tp cabe en cualquier GPU con 2 GB libres o en CPU, lo que permite clasificar y describir fotos en dispositivos sin Python ni stack de ML.
+- Lectura de graficos y tablas en informes: el ejemplo de la model card (`--image chart.png --prompt "Read the values of the chart." --no-think`) muestra el uso para extraer valores de figuras, adecuado por el encoder a resolucion nativa y el modo directo sin thinking.
+- Comparacion de imagenes antes/despues: con multiples `--image` en una sola peticion se pueden detectar cambios entre dos capturas, util en control de calidad visual o monitorizacion.
+- Analisis de video ligero: conteo de personas o descripcion de eventos en clips cortos mediante `--video` con muestreo a 2 fps y marcas temporales, apropiado para tareas de vigilancia sencilla o resumen de grabaciones.
+- Asistente multimodal en servidor local: `cortiq serve` expone una API compatible con OpenAI, de modo que aplicaciones existentes pueden enviar imagenes por URL o data URL sin cambiar de cliente.
+- Procesamiento por lotes en CPU: con `CMF_GPU=0` el modelo corre sin GPU, lo que sirve para pipelines de enriquecimiento de imagenes en servidores sin acelerador.
+- Transcripcion descriptiva multilingue: al cubrir 16 idiomas, permite generar descripciones de imagenes en espanol, arabe, chino o japones desde el mismo fichero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, etc.) en la informacion disponible. Sí hay mediciones de rendimiento de inferencia con cortiq 0.8.49 en NVIDIA A40 (48 GB, Vulkan):
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card unicamente aporta mediciones de inferencia con `cortiq`:
 
-| Archivo | Decodificacion (tok/s) | Decodificacion a 4k (tok/s) | Prompt de 4k tokens (tok/s) | Vision 640×480 / 1296×864 |
-|---|---:|---:|---:|---|
-| `q8_2f` | 167 | 127 | 670 | 3,0 s / 7,0 s |
-| `q4tp` | 213 | 162 | 598 | 3,2 s / 6,6 s |
-
-En Apple M4 (Metal, cortiq 0.8.50), `q4tp` decodifica a 82 tok/s; el codificador de visión tarda 0,46 s en una imagen de 640×480 y 1,6 s en una de 1296×864 (GEMMs con Accelerate, atención en Metal).
+| Escenario | q8_2f | q4tp |
+|---|---:|---:|
+| Decodificacion, tok/s (A40, Vulkan) | 167 | 213 |
+| Decodificacion a 4k, tok/s (A40, Vulkan) | 127 | 162 |
+| Prompt de 4k tokens, tok/s (A40, Vulkan) | 670 | 598 |
+| Encoder visual 640x480 / 1296x864 (A40) | 3,0 s / 7,0 s | 3,2 s / 6,6 s |
+| Decodificacion, tok/s (Apple M4, Metal) | no disponible | 82 |
+| Encoder visual 640x480 / 1296x864 (M4) | no disponible | 0,46 s / 1,6 s |
+| Decodificacion, tok/s (RTX A5000, CUDA) | no disponible | 278,4-280,1 |
+| Decodificacion, tok/s (RTX A5000, Vulkan) | no disponible | 263,0-273,3 |
 
 ## Requisitos de hardware
 
-- Ambos archivos caben en cualquier GPU con 2 GB de memoria libre; el repo completo ocupa 3,4 GB.
-- GPU recomendadas: cualquier GPU NVIDIA, AMD o Intel compatible con Vulkan o DX12; probado sobre NVIDIA A40 (Vulkan) y Apple M4 (Metal).
-- Consumer GPUs: dado el requisito de 2 GB, cabe en prácticamente cualquier GPU moderna de consumo (GTX 1650 en adelante, Radeon integradas, Arc).
-- CPU puro: posible con `CMF_GPU=0`; el codificador de visión se ejecuta en CPU en float32 por diseño (la atención en GPU), lo que garantiza exactitud.
-- Despliegue: exclusivamente mediante `cortiq` (CLI `cortiq-cli` vía cargo o binarios precompilados para Linux, macOS y Windows); no compatible con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia/throughput: 167-213 tok/s de decodificación en A40, 82 tok/s en M4; codificación de visión entre 0,46 s y 7 s según resolución y plataforma.
-- En Linux headless: instalar `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y definir `XDG_RUNTIME_DIR=/tmp`.
+- VRAM: ambos ficheros caben en cualquier tarjeta con 2 GB de memoria libre; el q8_2f ocupa 2,14 GB y el q4tp 1,31 GB en disco.
+- GPU recomendadas: NVIDIA A40 (48 GB) y RTX A5000 (24 GB) con resultados medidos; cualquier GPU NVIDIA, AMD o Intel con Vulkan o DX12.
+- Apple Silicon: backend Metal por defecto; medido en Apple M4 con q4tp a 82 tok/s.
+- CPU: `CMF_GPU=0` fuerza ejecucion en CPU; el encoder visual ya corre en CPU en float32 (la atencion va a GPU) para mantener la exactitud.
+- Cabe en GPU de consumo: si, cualquier tarjeta con 2 GB libres, incluidas gamas de entrada.
+- Despliegue: `cortiq` (Rust, sin Python), instalable con `cargo install cortiq-cli`; binarios precompilados para Linux, macOS y Windows; backend CUDA compilado con `--features cuda`; servidor compatible con OpenAI con `cortiq serve`.
+- Latencia: el encoder visual tarda 3,0-3,2 s para 640x480 y 6,6-7,0 s para 1296x864 en A40; 0,46 s y 1,6 s respectivamente en M4 con q4tp. En Linux headless hay que instalar `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y definir `XDG_RUNTIME_DIR=/tmp`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidad | Cuantizacion | Runtime | Licencia |
-|---|---|---|---|---|---|
-| LFM3-VL-2B-cmf (este) | ~2B | imagen, vídeo, texto | 8 y 4 bits (CMF) | cortiq (Rust, Vulkan/Metal/CPU) | lfm1.0 |
-| LiquidAI/LFM3-VL-2B (base) | ~2B | imagen, vídeo, texto | bf16 (safetensors) | Transformers / vLLM | lfm1.0 |
-| Qwen2.5-VL-3B-Instruct | ~3B | imagen, vídeo, texto | bf16 y GGUF comunitarios | Transformers, vLLM, llama.cpp | Qwen (uso comercial con condiciones) |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---:|---|---|---|
+| LFM3-VL-2B-cmf (q4tp) | ~2B | no disponible | CMF (cortiq) | lfm1.0 | 1,31 GB; vision 16 bits; motor Rust sin Python |
+| LFM3-VL-2B-cmf (q8_2f) | ~2B | no disponible | CMF (cortiq) | lfm1.0 | 2,14 GB; casi sin perdida (3 de 4 imagenes identicas) |
+| LiquidAI/LFM3-VL-2B (original) | ~2B | no disponible | safetensors (bf16) | lfm1.0 | Checkpoint de referencia; requiere Transformers/PyTorch |
+| LFM3-1.7B-cmf | ~1,7B | no disponible | CMF (cortiq) | lfm1.0 | Solo texto; misma familia y motor, sin vision |
 
-La ventaja de esta variante frente a la base es el despliegue ligero sin Python y el consumo de memoria (1,31 GB en 4 bits); frente a alternativas como Qwen2.5-VL, la diferencia principal es el ecosistema de runtime, mucho más reducido.
+No se dispone de datos de benchmarks que permitan comparar rendimiento cualitativo con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- La licencia lfm1.0 es de tipo "other": hay que revisar el texto de LICENSE antes de cualquier uso comercial.
-- La cuantización q4tp no reproduce exactamente la salida del original (0 de 4 imágenes con texto greedy idéntico, aunque con el mismo contenido); q8_2f coincide en 3 de 4.
-- Los archivos JPEG decodifican ligeramente distinto que con PIL, lo que introduce pequeñas desviaciones en las filas de visión.
-- El codificador de visión se ejecuta en CPU en float32, lo que limita el throughput de la parte visual en imágenes de alta resolución (hasta 7 s por imagen en A40).
-- El modo thinking consume el presupuesto de `--max-tokens` (por defecto 256), lo que puede truncar respuestas si no se ajusta.
-- No se han publicado benchmarks de calidad estandarizados, por lo que la evaluación de precisión en tareas concretas queda en manos del desarrollador.
-- Repositorio con muy poca tracción (5 descargas, 1 like) y publicado por un tercero, no por Liquid AI: conviene verificar los hashes SHA-256 publicados antes de usarlo.
-- Tool calling solo está confirmado para peticiones solo-texto, no multimodales.
+- La licencia lfm1.0 es de tipo "other": hay que revisar sus terminos antes de cualquier uso comercial; no es una licencia permisiva tipo Apache o MIT.
+- El modo thinking esta activado por defecto y sus tokens consumen el presupuesto de `--max-tokens` (256 por defecto), lo que puede truncar respuestas si no se ajusta.
+- La cuantizacion q4tp altera la salida: en la prueba de 48 tokens greedy sobre cuatro imagenes no coincidio con el original en ninguna, aunque el contenido era equivalente.
+- La decodificacion de JPEG difiere de PIL en unos pocos niveles por pixel, lo que puede desplazar filas del encoder respecto al checkpoint de referencia.
+- El encoder visual corre en CPU en float32, lo que anade latencia perceptible (varios segundos por imagen en A40) frente a un encoder totalmente en GPU.
+- No se han publicado resultados de benchmarks estandar, por lo que no hay evidencia publica de calidad en MMLU, HumanEval o GSM8K para este empaquetado.
+- El repositorio es una distribucion de terceros (infosave), no oficial de Liquid AI; la trazabilidad y el mantenimiento dependen de ese autor y del proyecto cortiq.
+- Riesgo de alucinacion inherente a un modelo de 2B en tareas de lectura precisa de graficos o texto en imagen; conviene validar las salidas.
+- Requiere `cortiq` 0.8.49 o superior y, en Linux headless, dependencias Vulkan adicionales; no es compatible con vLLM, llama.cpp, Ollama ni TGI.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/infosave/LFM3-VL-2B-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/LFM3-VL-2B-cmf
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- Repositorio CMF/cortiq: https://github.com/infosave2007/cmf
-- Releases de cortiq: https://github.com/infosave2007/cmf/releases
-- Variante solo-texto relacionada: https://huggingface.co/infosave/LFM3-1.7B-cmf
+- Version solo texto empaquetada: https://huggingface.co/infosave/LFM3-1.7B-cmf
+- Repositorio del formato CMF y motor cortiq: https://github.com/infosave2007/cmf
+- Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

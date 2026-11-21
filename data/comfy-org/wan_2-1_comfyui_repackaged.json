@@ -19,8 +19,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1050,
-  "downloads_30d": 5025171,
+  "likes": 1051,
+  "downloads_30d": 5186846,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -50,9 +50,9 @@
       "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"
     },
     {
-      "title": "ComfyUI France - La communauté francophone de génération IA",
-      "url": "https://comfyui.fr/",
-      "snippet": "Comfy Registry 800+ custom nodes vérifiés. Trouvez les extensions parfaites pour votre workflow."
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://docs.comfy.org/",
+      "snippet": "Comfy Router Quickstart Call partner models through one API endpoint with a single key"
     }
   ]
 }

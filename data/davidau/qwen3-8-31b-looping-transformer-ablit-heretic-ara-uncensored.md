@@ -1,89 +1,95 @@
 # DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored
 
 ## Resumen
-Este repositorio contiene un ajuste fino del modelo Qwen/Qwen3.8-27B publicado por el usuario DavidAU bajo el identificador Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored. Se trata de una variante experimental que combina tres intervenciones sobre el modelo base: una modificación arquitectónica etiquetada como "looping transformer" (reciclado de capas), un proceso de abliteration ("Ablit", "Heretic") orientado a eliminar los mecanismos de rechazo, y un ajuste adicional denominado "ARA" que el autor no documenta en la información disponible. El resultado es un modelo de 30.825.577.520 parámetros (unos 30,8 mil millones) que, partiendo de un base de 27B, incrementa el cómputo efectivo por token mediante la repetición de bloques.
 
-El pipeline declarado es image-text-to-text, por lo que el modelo conserva la torre visual del base y acepta entradas de imagen junto a texto, aunque la ficha solo declara inglés como idioma soportado y no publica resultados de evaluación. La licencia es Apache-2.0 y los pesos están en safetensors para la librería transformers, con un tamaño de repositorio de 61,7 GB, lo que sitúa la inferencia en FP16 por encima de los 60 GB de VRAM.
+Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored es un fine-tune experimental publicado por DavidAU sobre Qwen/Qwen3.8-27B. El autor ha expandido el modelo base de 27B a aproximadamente 30,83 mil millones de parámetros (30.825.577.520 según los pesos en safetensors) mediante una técnica que denomina "looping transformer": inserta secciones adicionales en puntos concretos de la red para forzar una suerte de "re-ponderación" interna, con el objetivo de generar planes y respuestas más detalladas. Sobre esa base expandida aplica un entrenamiento ligero en varias etapas (que el autor etiqueta como "Cold Fusion", "GAIN Training" y "Multi-stage tuning") para corregir los defectos introducidos por la expansión manual.
 
-Su relevancia ahora es acotada y de perfil experimental: acumula 6 descargas y 23 likes desde su creación el 23 de octubre de 2026, el acceso está restringido (gated) y no hay benchmarks publicados. Resulta interesante como objeto de estudio de técnicas de abliteration y de arquitecturas con reciclado de capas, no como modelo de producción sin una evaluación previa propia.
+El modelo pertenece a la familia de publicaciones "Heretic/Uncensored" del mismo autor: se ha sometido a un proceso de abliteration (eliminación de la dirección de rechazo en el espacio de activaciones) y se distribuye sin los filtros de seguridad habituales del modelo original. Incorpora además el sistema propietario "Turbo Brilliance 50X", que el autor describe como un conjunto de modos de razonamiento e instrucción (27 modos de razonamiento, 27 modos de instrucción, 9 modos "Xhigh", 15 "AI Constructs" y 5 "Super AI Constructs") accesibles escribiendo "help" en el chat. La licencia declarada es Apache 2.0.
 
-## Especificaciones técnicas
+Es relevante ahora porque ejemplifica una corriente de fine-tunes comunitarios que combinan modificación estructural de la arquitectura, abliteration y sistemas de prompts empaquetados, todo ello con licencia permisiva. No obstante, se trata de un prototipo que el propio autor califica de experimental y funcional, con problemas conocidos de repetición y glitches menores, y sin benchmarks publicados.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3.8-27B, con modificación "looping transformer" (reciclado de capas); tag de arquitectura en el repo: qwen3_5 |
-| Parámetros totales | 30.825.577.520 (~30,8 B), dato real de safetensors |
-| Parámetros activos | No disponible; no se documenta una arquitectura MoE |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | No se publican cuantizaciones en el repositorio; pesos en safetensors convertibles a GGUF, AWQ o GPTQ |
-| Idiomas soportados | En (inglés) según la ficha del modelo |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (librería transformers) |
-| Modalidad | Image-text-to-text (visión + lenguaje) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Tamaño del repositorio | 61,7 GB |
-| Modelo base | Qwen/Qwen3.8-27B (finetune) |
-| Descargas / likes | 6 / 23 |
-| Fechas | Creado 2026-10-23; actualizado 2026-10-25 |
+| Arquitectura | Transformer decoder-only (Qwen3.8) con modificaciones "looping transformer": secciones expandidas insertadas manualmente en puntos concretos de la red |
+| Parametros totales | 30.825.577.520 (≈30,83B) |
+| Parametros activos | no disponible (no es MoE según la informacion disponible) |
+| Longitud de contexto | 256k máximo según el autor; mínimo recomendado 32k, sugerido 64k-128k |
+| Tipos de cuantizacion | GGUF (se mencionan Q4KS y variantes imatrix/no-imatrix en el ecosistema del autor); pesos originales en bfloat16 |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas declarados en la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (transformers); GGUF disponible en el árbol de modelos del autor |
 
 ## Arquitectura y entrenamiento
-La información disponible solo permite afirmar que se parte de Qwen/Qwen3.8-27B, un transformer decoder-only con torre visual (el pipeline declarado es image-text-to-text), y que se aplica una modificación de tipo "looping transformer". Esta familia de arquitecturas reutiliza un mismo bloque de capas varias veces por token, de modo que el número de parámetros almacenados crece menos que el cómputo efectivo; de ahí que el modelo declare 30,8 B de parámetros frente a los 27 B del base. No se especifica en la información proporcionada cuántas capas se reciclan, cuántas iteraciones se aplican ni cómo afecta esto a la longitud de contexto efectiva.
 
-Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO o ajuste por preferencias. Las etiquetas "abliterated", "heretic" y "ARA" indican una edición de pesos orientada a suprimir la dirección de rechazo en el espacio de activaciones, una técnica que no requiere reentrenamiento completo y que típicamente se aplica con pares de prompts contrastivos. No hay información pública en esta ficha sobre la metodología exacta, el volumen de datos de calibración ni las métricas de degradación asociadas al proceso.
+La base es un transformer decoder-only de la familia Qwen3.8 (modelo base Qwen/Qwen3.8-27B). La modificación principal consiste en expandir el modelo de 27B a 31B añadiendo secciones en ubicaciones específicas para crear zonas donde el modelo "pondere" y "re-pondere" información, con la intención de producir planes más detallados y profundizar en detalles críticos. El autor reconoce que el proceso manual introduce defectos (repetición de palabras, glitches menores, necesidad ocasional de pulsar "continuar" en salidas complejas) y aplica un entrenamiento ligero en etapas ("Stage 1, very light tune") para corregirlos manteniendo la funcionalidad.
+
+Sobre esa base se aplica la rama abliterated/heretic/uncensored, que elimina el comportamiento de rechazo del modelo original, y se integra el sistema Turbo Brilliance 50X, que no es un cambio de pesos sino un conjunto de modos y "constructs" (personas de sistema) activables mediante comandos en el prompt. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. Tampoco se detalla si la expansión de parámetros usa atención lineal, decodificación especulativa u otras innovaciones de inferencia.
 
 ## Capacidades
-- Generación de texto conversacional multi-turno, con el formato de chat heredado del modelo base.
-- Procesamiento de entradas de imagen junto a texto (pipeline image-text-to-text), incluyendo descripción de imágenes y respuesta a preguntas sobre su contenido.
-- Comportamiento sin alineación de rechazo: el proceso de abliteration elimina los mecanismos de negativa del base, por lo que responde a peticiones que el modelo original declinaría.
-- Reciclado de capas: el autor presenta la arquitectura como "looping transformer", lo que en teoría incrementa la profundidad efectiva sin aumentar los parámetros almacenados.
-- Soporte de tool calling / function calling: no confirmado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado ni documentado.
-- Capacidades multilingües: la ficha solo declara inglés; el comportamiento en otros idiomas no está verificado.
-- Modo "thinking" explícito: no documentado.
+
+- Generación de texto conversacional multi-turno con contexto largo (hasta 256k tokens).
+- Razonamiento explícito en modo "thinking", con 27 modos de razonamiento y 9 modos "Xhigh" de razonamiento extendido.
+- 27 modos de instrucción para ajustar el estilo y el enfoque de la respuesta.
+- 15 "AI Constructs" y 5 "Super AI Constructs" (Brainstorm AI, Brainstorm Business AI, Universal Teacher AI, Agent AI, Coder AI, entre otros), activables por comando.
+- Generación de código y asistencia de programación a través del "Coder AI Construct".
+- Escritura creativa, ficción, narrativa de todos los géneros y roleplaying.
+- Capacidad multimodal declarada por el pipeline image-text-to-text (image-text-to-text); no se detallan en la información disponible los detalles del codificador visual ni su alcance.
+- Capacidades multilingües en 16 idiomas (árabe, chino, inglés, francés, alemán, hindi, indonesio, italiano, japonés, coreano, polaco, portugués, ruso, español, tailandés y vietnamita).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada; el sistema Agent AI Construct sugiere uso agéntico, pero no se documenta una API de herramientas.
+- Sistema de ayuda integrado: escribir "help" en el chat muestra los modos y constructs disponibles.
 
 ## Casos de uso
-- Investigación sobre abliteration: comparar las respuestas de este modelo con las de Qwen/Qwen3.8-27B sobre el mismo conjunto de prompts permite medir empíricamente qué direcciones de activación codifican el rechazo y cuantificar la degradación en tareas de razonamiento.
-- Estudio de arquitecturas con reciclado de capas: al mantener la interfaz de transformers, se puede instrumentar el modelo para registrar activaciones por iteración y analizar si la repetición de bloques mejora la composición de operaciones en tareas de razonamiento aritmético.
-- Generación de datos sintéticos para fine-tuning: su carácter sin filtros permite producir corpus de texto diversos para destilar en modelos más pequeños, siempre que se aplique un filtrado posterior de calidad y seguridad antes de usar el dataset.
-- Escritura creativa y ficción sin restricciones temáticas: útil en entornos editoriales que necesitan tramos de diálogo o narrativa con violencia o contenido adulto que los modelos alineados rechazan sistemáticamente.
-- Red-teaming y evaluación de seguridad: sirve como modelo "no alineado" de referencia para probar clasificadores de contenido, guardarraíles y filtros de salida en pipelines de moderación.
-- Experimentación multimodal autoalojada: al conservar la torre visual, permite prototipar pipelines de descripción de imágenes y extracción de información de documentos escaneados en infraestructura propia, sin depender de API externas.
-- Base para fine-tuning de dominio con licencia permisiva: Apache-2.0 facilita adaptar los pesos a un dominio concreto (legal, técnico, sanitario), aunque conviene verificar las condiciones del modelo base y del acceso gated antes de un uso comercial.
+
+- Planificación de negocio y consultoría estratégica: el "Brainstorm Business AI Construct" está diseñado para generar planes de negocio con tablas y gráficos a partir de una petición simple; el contexto de 64k-128k permite incorporar documentos de mercado y datos financieros en el mismo prompt.
+- Escritura creativa y narrativa larga: con 256k de contexto y modos de escritura para todos los géneros, es adecuado para novelas por capítulos, manteniendo coherencia de personajes y tramas a lo largo de decenas de miles de tokens.
+- Roleplaying y simulación de personajes: los constructs y la rama uncensored permiten sesiones de rol sin las restricciones del modelo base, útil para prototipado de videojuegos narrativos o entrenamiento de guionistas.
+- Generación de código asistida: el Coder AI Construct permite tareas de programación dentro de un contexto amplio, útil para revisar repositorios medianos o explicar código legacy en una sola pasada.
+- Docencia y tutoría: el Universal Teacher AI Construct está pensado para explicar conceptos con profundidad variable; el contexto largo permite adjuntar material didáctico completo y generar ejercicios derivados.
+- Investigación sobre modificación de arquitecturas: el modelo sirve como caso de estudio reproducible de expansión de parámetros ("looping transformer") y de los efectos de la abliteration sobre el comportamiento, para quienes investigan interpretabilidad o ajuste fino.
+- Prototipado de agentes: el Agent AI Construct y los modos de razonamiento extendido permiten experimentar con flujos multi-paso; conviene validar el soporte real de tool calling antes de integrarlo en producción.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM en FP16/BF16: aproximadamente 61,7 GB solo para pesos, más caché KV y el codificador visual; en la práctica requiere 65-70 GB, lo que implica varias GPU o una GPU de 80 GB.
-- VRAM en INT8: en torno a 31 GB de pesos; encaja en A100 40 GB, L40S 48 GB o RTX 6000 Ada 48 GB, dejando margen limitado para contexto largo.
-- VRAM en INT4: aproximadamente 16-18 GB de pesos; cabe en RTX 4090 24 GB, RTX 3090 24 GB o L4 24 GB, con poco espacio para caché KV si se usan contextos amplios.
-- GPU recomendadas: H100 80 GB o A100 80 GB para FP16; A100 40 GB o L40S para INT8; RTX 4090 o RTX 3090 para cuantización de 4 bits.
-- Despliegue: transformers de forma nativa; vLLM y TGI requieren verificar compatibilidad con la arquitectura qwen3_5 y el pipeline multimodal; llama.cpp u Ollama solo tras convertir los pesos a GGUF, conversión no publicada por el autor.
-- Latencia y throughput: no disponibles. El reciclado de capas incrementa el cómputo por token respecto al modelo base, pero la información proporcionada no indica el factor de repetición ni su impacto medido en latencia.
+
+- VRAM estimada en bfloat16: aproximadamente 62 GB solo para pesos (30,83B × 2 bytes), más overhead de activaciones y caché KV; requiere al menos 80 GB para contexto corto y más para contextos de 64k-128k.
+- VRAM estimada en cuantización Q4: en torno a 17-20 GB para pesos, con overhead adicional según contexto; viable en GPUs de 24 GB solo con contexto moderado.
+- GPU recomendadas: A100 80 GB o H100 80 GB para bfloat16 con contexto largo; RTX 4090 (24 GB) o RTX A6000 (48 GB) para cuantizaciones Q4/Q5 con contexto reducido.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con GGUF Q4 y contexto limitado; en GPUs de 16 GB solo con cuantizaciones más agresivas y contexto muy corto.
+- Opciones de despliegue: transformers (formato nativo safetensors), llama.cpp/Ollama y LM Studio mediante los GGUF del árbol de modelos del autor; vLLM y TGI no están confirmados en la información disponible para esta arquitectura modificada.
+- Latencia y throughput: no disponibles. El autor advierte que Q4KS limita la calidad y que el modo "medium" de razonamiento reduce el rendimiento frente a "xhigh".
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Acceso | Benchmarks |
-|---|---|---|---|---|---|---|
-| Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored (DavidAU) | 30,8 B | No disponible | Image-text-to-text | Apache-2.0 | Gated | No publicados |
-| Qwen/Qwen3.8-27B (modelo base) | 27 B | No disponible en la información | Image-text-to-text | No disponible en la información | No disponible en la información | No disponibles en la información |
-| Otras variantes abliterated de la familia Qwen | No disponible | No disponible | No disponible | No disponible | No disponible | No disponibles |
-
-No se dispone de datos de benchmarks ni de especificaciones de contexto de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad. El modelo aquí descrito añade 3,8 B de parámetros respecto al base, presumiblemente por el esquema de reciclado, y se distribuye con acceso restringido y solo 6 descargas, frente a la distribución estándar del base.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored | 30,83B | 256k | Apache 2.0 | Fine-tune experimental con expansión estructural y abliteration; sin benchmarks publicados |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible en la informacion | Apache 2.0 (según modelo base) | Modelo original sin modificar; conserva filtros de seguridad y comportamiento estándar |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO | 27B | no disponible en la informacion | Apache 2.0 | Misma familia Heretic/Uncensored sin la expansión a 31B; referencia directa del autor |
+| DavidAU/Qwen3.8-40B-Ultimate | 40B (proyecto) | no disponible en la informacion | Apache 2.0 | Proyecto anunciado por el autor con mayor expansión; estado no confirmado |
 
 ## Limitaciones y advertencias
-- Solo se declara inglés como idioma soportado; el rendimiento en castellano u otras lenguas no está verificado y el tokenizador del base no garantiza paridad.
-- La abliteration suprime el rechazo de forma deliberada: el modelo puede generar contenido dañino, ilegal o sexual sin filtros, lo que exige guardarraíles externos si se expone a usuarios.
-- Los procesos de abliteration suelen degradar capacidades de razonamiento, matemáticas y seguimiento de instrucciones; no hay benchmarks publicados que permitan cuantificar esa pérdida en esta variante.
-- Riesgo elevado de alucinación: sin evaluación publicada ni datos de entrenamiento documentados, la fiabilidad factual es desconocida.
-- Arquitectura experimental: el esquema "looping transformer" puede no estar soportado por vLLM, TGI u otros servidores de inferencia, y la etiqueta qwen3_5 frente al base Qwen3.8-27B sugiere posibles incompatibilidades de configuración.
-- Longitud de contexto no documentada: no es posible planificar cargas de trabajo con ventanas largas sin medirla empíricamente.
-- Validación comunitaria mínima: 6 descargas y 23 likes desde octubre de 2026 indican que el modelo no ha sido replicado ni auditado por terceros.
-- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede bloquear automatizaciones y despliegues reproducibles.
-- Licencia Apache-2.0 declarada para este repositorio, pero deben verificarse por separado las condiciones del modelo base Qwen/Qwen3.8-27B y las cláusulas adicionales del acceso restringido antes de un uso comercial.
-- Tamaño de 61,7 GB en safetensors: no cabe en una GPU de consumo en FP16 y obliga a cuantización o sharding.
+
+- Modelo experimental: el propio autor advierte de repeticiones de palabras, glitches menores y necesidad ocasional de continuar la generación en salidas complejas, incluso tras el entrenamiento correctivo.
+- Abliteration y uncensored: se ha eliminado la dirección de rechazo, por lo que el modelo puede producir contenido dañino, ilegal o sexualmente explícito; no es apto para aplicaciones orientadas al público sin capas de moderación adicionales.
+- Sesgos: al derivar de Qwen3.8 y de un proceso de abliteration, conserva los sesgos del corpus original y añade un "punto de vista diferente" que el autor menciona explícitamente; no se documentan evaluaciones de sesgo.
+- Alucinación: sin benchmarks publicados ni evaluaciones de fidelidad, el riesgo de alucinación es desconocido y potencialmente elevado en un modelo ajustado para ser más verboso y "profundo".
+- Contexto: aunque se declaran 256k tokens, el autor recomienda 64k-128k y advierte que cuantizaciones Q4 limitan la calidad; el rendimiento real en contextos muy largos no está verificado.
+- Idiomas: la model card declara 16 idiomas, pero la etiqueta de idioma del repo solo lista "en"; la calidad en el resto no está evaluada.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base y los datos de entrenamiento pueden imponer condiciones adicionales; conviene revisar la licencia de Qwen/Qwen3.8-27B y el origen de los datos del fine-tune.
+- Producción: no hay soporte confirmado en vLLM o TGI para la arquitectura modificada, lo que limita el despliegue a transformers o llama.cpp; la falta de benchmarks impide estimar el coste real por token.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Documentación de uso y Turbo Brilliance 50X: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Proyecto Qwen3.8-27B-Ultimate: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate
+- Proyecto Qwen3.8-40B-Ultimate: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate
+- Colección Turbo Brilliance AI Constructs 50X: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo; las búsquedas devolvieron únicamente anuncios de servicios de acompañamiento sin relación con el repositorio, por lo que no se incluyen.

@@ -2,99 +2,93 @@
 
 ## Resumen
 
-WeMM-JEV es un modelo multimodal de decisión desarrollado por Rover00 que responde preguntas tipadas sobre texto e imágenes y devuelve probabilidades en una única pasada por pregunta. No es un modelo generativo conversacional: su salida se organiza en tres modos: `choice` (elección entre opciones), `noul` (probabilidad de una proposición sí/no) y `score` (distribución sobre niveles ordenados).
+WeMM-JEV es un modelo de decisión multimodal de 27B parámetros desarrollado por el usuario Rover00 y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como un derivado de "Qwen3.8-27B" (etiqueta interna `qwen3_5` en los metadatos del repositorio) orientado no a la generación libre de texto, sino a la evaluación probabilística de proposiciones: dado un estado (texto e imágenes) y una pregunta, devuelve probabilidades en una única pasada forward. Soporta tres tipos de pregunta: elección entre opciones (`choice`), estimación de probabilidad de una proposición sí/no (`noul`) y distribución sobre niveles ordenados (`score`).
 
-El repositorio declara 26.085.330.160 parámetros (~26,1B), pesos en safetensors, licencia Apache-2.0 y código de inferencia propio (`D3Engine`). La model card publica un índice propio, Public Decision Index 0.3, con 69,37 en texto y 77,97 en visión, pero no detalla arquitectura, longitud de contexto, idiomas ni datos de entrenamiento.
+El modelo resuelve un problema concreto: integrar capacidades de razonamiento multimodal en bucles de decisión donde se necesita una salida calibrada y comparable, no texto generado. En lugar de pedir al modelo que "responda", se le pide que puntúe alternativas, lo que facilita su uso en sistemas de agentes, filtrado, ranking o control. El repositorio ocupa 52,2 GB y contiene pesos en formato safetensors con código personalizado (`custom_code`), lo que implica que la inferencia requiere el paquete `inference` del propio autor y no es directamente compatible con pipelines estándar de `transformers`.
 
-Su relevancia práctica está en sustituir clasificadores ad hoc por un único modelo multimodal que produce probabilidades para decisiones, con integración vía API HTTP. Al no ser generativo, encaja en pipelines de decisión y anotación, no en chatbots.
+La información pública es escasa: la model card es breve, no detalla la composición del dataset de entrenamiento, no lista idiomas soportados y solo aporta un índice propio ("Public Decision Index 0.3") con dos valores agregados. Con 947 descargas y 3 likes en el momento de la consulta, se trata de un modelo de nicho, probablemente experimental, cuya evaluación independiente aún no está disponible.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal; el tag `qwen3_5` apunta a una base de la familia Qwen3.5, no confirmado en la model card |
+| Arquitectura | Transformer multimodal basado en Qwen3.8-27B (etiqueta `qwen3_5`), con código personalizado |
 | Parámetros totales | 26.085.330.160 (~26,1B) |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible; solo se publican pesos safetensors, sin GGUF, AWQ, GPTQ ni cuantizaciones oficiales |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (pytorch), con `custom_code` |
-| Pipeline de Hugging Face | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería pytorch, `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna. Los tags indican `pytorch`, `safetensors`, `qwen3_5`, `multimodal` y `custom_code`, por lo que cabe esperar un transformer multimodal derivado de la familia Qwen3.5, pero no se confirman capas, mecanismo de atención, fusión visual ni el método exacto para producir probabilidades.
+La model card indica que WeMM-JEV es un modelo multimodal de decisión construido sobre Qwen3.8-27B. La etiqueta `qwen3_5` en los metadatos sugiere una base de la familia Qwen3, pero no se especifica la variante exacta ni el proceso de adaptación (fine-tuning supervisado, RLHF, DPO u otro). El modelo acepta texto y múltiples imágenes como entrada y produce, en una sola pasada forward por pregunta, una distribución de probabilidad sobre las opciones o niveles definidos por el usuario. Esta formulación de "cabeza de decisión" es la innovación principal documentada: convierte la generación en clasificación probabilística condicionada por instrucciones y criterios.
 
-No hay información sobre tokens de entrenamiento, composición del dataset, RLHF/DPO, calibración ni proceso de alineamiento. La innovación declarada es la interfaz de decisión: preguntas tipadas y una pasada por pregunta con salida probabilística, además de un motor de inferencia (`D3Engine`) y un servidor HTTP incluidos en el repositorio.
+No se publican detalles sobre el número de tokens de entrenamiento, la composición del dataset, el uso de datos sintéticos ni las técnicas de alineación empleadas. Tampoco se documenta si se congelaron capas del modelo base, si se añadieron módulos específicos para la cabeza de decisión o cómo se integran las imágenes (proyector, cross-attention, etc.). El repositorio incluye código de inferencia propio (`inference/D3Engine`), lo que confirma que la arquitectura no es estándar y requiere cargar módulos personalizados.
 
 ## Capacidades
 
-- Decisión multimodal texto-imagen: acepta una observación textual y, según la model card, también imágenes.
-- Salida `choice`: selecciona entre opciones suministradas y devuelve probabilidades por opción.
-- Salida `noul`: estima la probabilidad de una proposición sí/no.
-- Salida `score`: devuelve una distribución sobre niveles ordenados.
-- Una única pasada por pregunta, orientada a latencia baja en pipelines de decisión.
-- Integración mediante `D3Engine` y servidor HTTP incluido en el repositorio.
-- Evaluación mediante el Public Decision Index 0.3, con paneles de texto y visión.
-- No se declara generación de texto libre, razonamiento multi-paso, tool calling ni soporte de agentes.
-- No se declaran capacidades multilingües, audio, vídeo ni modo de razonamiento explícito.
+- Evaluación de elección múltiple (`choice`): selecciona entre opciones suministradas por el usuario y devuelve probabilidades por opción.
+- Evaluación binaria (`noul`): estima la probabilidad de que una proposición sea verdadera.
+- Puntuación ordinal (`score`): devuelve una distribución sobre niveles ordenados (por ejemplo, escalas de severidad o calidad).
+- Procesamiento multimodal: acepta texto y múltiples imágenes en una misma consulta.
+- Inferencia en una sola pasada forward por pregunta, lo que reduce coste frente a generación autoregresiva.
+- Integración con servidor HTTP y con el "Decision Index" según la documentación del autor.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso ni modos de razonamiento extendido (thinking).
 
 ## Casos de uso
 
-- Control de calidad visual en fabricación: usar `choice` con opciones como "correcto", "defecto leve" y "defecto grave" sobre imágenes de inspección; una pasada por imagen devuelve la probabilidad de cada clase.
-- Verificación de escenas para conducción o robótica: el ejemplo de la model card usa `noul` para "el semáforo está rojo" y devuelve una probabilidad; adecuado para módulos de percepción que necesitan una creencia probabilística en lugar de una etiqueta opaca.
-- Moderación multimodal: formular proposiciones como "la imagen contiene violencia explícita" y aplicar un umbral sobre la probabilidad; permite auditar el valor devuelto y ajustar el punto de corte por política.
-- Anotación asistida en investigación: usar `score` para escalas ordinales de gravedad, calidad o satisfacción, y `choice` para categorías; útil para preetiquetar grandes lotes y priorizar la revisión humana.
-- Encuestas y estudios con imágenes: respuestas cerradas mediante `choice` o `score`, con probabilidades agregables; el servidor HTTP permite desplegarlo como microservicio interno.
-- Evaluación de modelos multimodales: integrar el Public Decision Index en comparativas internas; el repositorio publica resultados detallados en un dataset aparte.
-- Triaje de imágenes industriales o documentales: priorizar casos con `score` ordinal y probabilidad asociada, manteniendo siempre una revisión humana para decisiones críticas.
+- Moderación de contenido multimodal: dado un texto y una o varias imágenes, usar `score` para obtener una distribución sobre niveles de riesgo y fijar umbrales de revisión humana.
+- Verificación de afirmaciones: emplear `noul` para estimar la probabilidad de proposiciones extraídas de documentos o titulares, con las imágenes asociadas como evidencia.
+- Ranking de candidatos en pipelines de búsqueda o recomendación: usar `choice` para puntuar alternativas y reordenar resultados sin generar texto.
+- Control de agentes: consultar al modelo sobre el estado del entorno (por ejemplo, "¿el semáforo está en rojo?") y usar la probabilidad como señal para la política del agente.
+- Etiquetado asistido en anotación de datasets: predecir etiquetas y niveles de confianza para priorizar la revisión manual.
+- Evaluación automática de respuestas generadas por otros modelos: usar `score` para asignar niveles de calidad a salidas de texto o pares imagen-texto.
+- Filtrado en pipelines de datos: descartar muestras con baja probabilidad de cumplir un criterio definido por instrucciones.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Panel | Resultado |
-|---|---|---:|
-| Public Decision Index 0.3 | Texto | 69,37 |
-| Public Decision Index 0.3 | Visión | 77,97 |
+La model card solo publica el "Public Decision Index 0.3" del autor, sin detallar la composición del panel ni los modelos de comparación:
 
-El Public Decision Index 0.3 es un índice propio del autor y no equivale a MMLU, HumanEval, GSM8K ni a otros benchmarks estándar. No se han publicado resultados de benchmarks estándar en la información disponible. Los resultados detallados están en el dataset `Rover00/WeMM-JEV-Results`.
+| Panel | Public Decision Index 0.3 |
+|---|---:|
+| Texto | 69,37 |
+| Visión | 77,97 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, MMMU, etc.) en la información disponible. Los resultados detallados se remiten al dataset `Rover00/WeMM-JEV-Results`, no incluido en la información proporcionada.
 
 ## Requisitos de hardware
 
-- Pesos en FP16/BF16: 26.085B × 2 bytes ≈ 52,2 GB; el repositorio ocupa 52,2 GB. VRAM estimada para inferencia: 56-64 GB, sin contar contexto largo.
-- Pesos en INT8: ~26,1 GB; VRAM estimada de 30-36 GB. No hay cuantización oficial publicada; es una estimación.
-- Pesos en INT4: ~13,0 GB; VRAM estimada de 16-20 GB. No hay cuantización oficial publicada y requiere soporte del `custom_code`.
-- GPU recomendadas para FP16/BF16: A100 80 GB, H100 80 GB o GPUs con 64 GB o más. Con 2×A100 40 GB haría falta paralelismo, no confirmado por el motor incluido.
-- GPU para INT8: A6000 48 GB, L40S 48 GB o A100 40 GB, siempre que el motor soporte cuantización.
-- GPU de consumo: RTX 4090 o RTX 3090 con 24 GB solo en INT4 y si el código admite cuantización; no está confirmado. En FP16 no cabe en una GPU de consumo.
-- Despliegue: `D3Engine` y servidor HTTP incluidos en `inference/`. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia en fp16/bf16: en torno a 52 GB solo para pesos (26,1B × 2 bytes), más overhead de activaciones y del código personalizado; se recomienda al menos 80 GB.
+- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU (por ejemplo, 2× RTX 4090 24 GB con sharding, si el código de inferencia lo soporta).
+- En consumer GPU: no cabe en una sola RTX 4090 (24 GB) en precisión completa. No se documentan cuantizaciones (GGUF, AWQ, GPTQ) que permitan reducir la huella.
+- Opciones de despliegue: el autor proporciona `inference/D3Engine` (Python) y un servidor HTTP propio; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tipo | Licencia | Rendimiento comparable |
-|---|---:|---|---|---|---|
-| WeMM-JEV | 26,1B | no disponible | Modelo de decisión multimodal | Apache-2.0 | 69,37 texto / 77,97 visión en el índice del autor |
-| Qwen2.5-VL-32B-Instruct | 32,5B | 128K | VLM generativo | Apache-2.0 | no comparable con el índice del autor |
-| Gemma 3 27B | 27B | 128K | VLM generativo | Gemma Terms | no comparable con el índice del autor |
+No se dispone de información sobre modelos directamente comparables en la categoría de "modelo de decisión multimodal" con la misma formulación (choice/noul/score). Como referencia de tamaño y base, se puede comparar con el modelo del que deriva, aunque los datos de este último no están incluidos en la información proporcionada:
 
-No se dispone de una comparativa directa publicada frente a otros modelos de decisión multimodal. Las alternativas de la tabla son modelos generativos y no producen salidas probabilísticas tipadas `choice`/`noul`/`score`, por lo que la comparación de rendimiento no es equivalente.
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
+|---|---|---|---|---|---|
+| WeMM-JEV | ~26,1B | no disponible | Sí (texto + múltiples imágenes) | Apache 2.0 | safetensors + custom_code |
+| Qwen3.8-27B (base declarada) | ~27B | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de decisión multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El Public Decision Index 0.3 es un índice propio del autor; no se ha validado de forma independiente en la información disponible.
-- El repositorio muestra 0 descargas y 0 likes en el momento consultado, lo que limita la evidencia externa sobre su comportamiento.
-- No se especifican longitud de contexto, idiomas soportados ni composición del dataset de entrenamiento.
-- No hay métricas de calibración publicadas, como ECE o Brier score; las probabilidades devueltas pueden estar mal calibradas.
-- Riesgo de estimaciones erróneas o sobreconfiadas en imágenes o textos fuera de la distribución de entrenamiento.
-- El modelo no genera explicaciones ni texto libre; solo devuelve probabilidades, lo que dificulta la auditoría de decisiones individuales.
-- Requiere `custom_code` y el paquete de inferencia del repositorio; conviene revisar el código y las dependencias antes de usarlo en producción.
-- La licencia Apache-2.0 permite uso comercial, pero debe verificarse también la licencia de los datos de evaluación y de cualquier componente de terceros incluido en `inference/`.
-- El tamaño de 26,1B exige hardware de gama alta en FP16; las cuantizaciones INT8/INT4 son estimaciones no oficiales.
+- Documentación muy escasa: no se detallan datos de entrenamiento, idiomas, contexto ni proceso de alineación, lo que dificulta evaluar sesgos y robustez.
+- Riesgo de alucinación y calibración deficiente: las probabilidades devueltas no están validadas de forma independiente; el "Public Decision Index" es una métrica propia del autor sin comparación pública.
+- Idiomas no declarados: no hay garantía de comportamiento correcto fuera del inglés (los ejemplos de la model card están en inglés).
+- Dependencia de código personalizado (`custom_code`): la inferencia requiere el paquete `inference` del repositorio, lo que complica la integración con ecosistemas estándar y la portabilidad.
+- Sin cuantizaciones publicadas: el despliegue en hardware consumer no está soportado de forma documentada.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de un modelo base no identificado con precisión, conviene verificar las obligaciones de la licencia del modelo original.
+- Modelo de nicho con pocas descargas y validación externa limitada; no recomendable para producción crítica sin evaluación propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Rover00/WeMM-JEV
 - Resultados detallados: https://huggingface.co/datasets/Rover00/WeMM-JEV-Results
-- Instrucciones de inferencia: https://huggingface.co/Rover00/WeMM-JEV/blob/main/inference/README.md
-- No se han encontrado paper, blog, repositorio adicional ni demo en la información proporcionada.
+- Documentación de inferencia: `inference/README.md` dentro del repositorio del modelo
+- Paper, blog o demo: no disponibles en la información proporcionada

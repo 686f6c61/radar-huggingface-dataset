@@ -2,118 +2,106 @@
 
 ## Resumen
 
-UnimeType Transliteration 2.0 0.8B (v2.1) es un modelo especializado en transliteración para métodos de entrada multilingües, desarrollado por UnimeType sobre la base de Qwen/Qwen3.5-0.8B. Su función es convertir romanizaciones informales —Pinyin chino, Romaji japonés, Hinglish (hindi romanizado) y Arabizi (árabe romanizado)— a sus escrituras nativas (hanzi, kana/kanji, devanagari y alfabeto árabe), tanto en frases cortas como en oraciones largas de varias cláusulas (60–240+ caracteres).
+UnimeType Transliteration 2.0 0.8B (v2.6) es un modelo especializado de transliteración para motores de entrada (IME) que convierte texto romanizado o escrito en ASCII a escritura nativa en 12 idiomas y 13 modos de salida. Lo desarrolla UnimeType y se distribuye con licencia Apache 2.0. Está afinado a partir de Qwen/Qwen3.5-0.8B y empaquetado en formato MLX de 6 bits para inferencia local en Apple Silicon, con variantes paralelas en BF16 Safetensors y GGUF publicadas por el mismo autor.
 
-El problema que resuelve es muy concreto: los usuarios de teclados móviles escriben idiomas asiáticos y de derecha a izquierda usando el alfabeto latino, y los IMEs (input method editors) tradicionales tienen dificultades con oraciones largas, mezcla de idiomas y formatos protegidos. Este modelo, con solo 752 millones de parámetros, está diseñado para ejecutarse en dispositivos de consumo y preservar intactos los términos técnicos en inglés, menciones (@handles), URLs, fragmentos de código, literales JSON, números, saltos de línea y emojis.
+El modelo no es un chatbot generalista: es un motor determinista de conversión que recibe un objeto JSON compacto como mensaje de usuario con prompt de sistema vacío y temperatura 0. Su objetivo es permitir una única disposición de teclado ASCII para todos los idiomas del usuario, convirtiendo el texto romanizado en el lugar solo cuando se desea escritura nativa, sin cambiar de teclado entre aplicaciones ni a mitad de frase.
 
-La versión v2.1 ("Long-Sentence Upgrade") mejora sustancialmente el manejo de oraciones largas multicláusula respecto a v2.0: la precisión de caracteres en oraciones largas pasa del 69,2 % al 76,5 %, y en el benchmark estándar de 414 casos alcanza un 72,7 % de acierto estricto, superando a DeepSeek V4.1 Flash (70,5 %). Se distribuye en formato MLX 6-bit (también existen variantes BF16 safetensors y GGUF según la model card), con licencia Apache 2.0.
+La versión 2.6 amplía la cobertura de 4 idiomas a 12 (chino, japonés en modos natural y kana, hindi, árabe, ruso, griego, vietnamita, español, francés, portugués, alemán e italiano), introduce recuperación de errores tipográficos por teclas adyacentes en escritura a ciegas y elimina la latencia de tokens de razonamiento mediante una plantilla de chat no pensante. El checkpoint tiene 752.393.024 parámetros reales en safetensors y el repositorio ocupa 1,9 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Qwen3.5-0.8B), afinado para transliteración |
+| Arquitectura | Transformer decoder-only (fine-tune de Qwen/Qwen3.5-0.8B) |
 | Parametros totales | 752.393.024 |
-| Parametros activos | no disponible (no se indica arquitectura MoE) |
-| Longitud de contexto | max_seq_len = 1024 (v2.1); 640 en v2.0 |
-| Tipos de cuantizacion | 6-bit (MLX); también BF16 safetensors y GGUF según la model card |
-| Idiomas soportados | en, zh, ja, hi, ar (transliteración hacia chino, japonés, hindi y árabe) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 6-bit (MLX); variantes del autor en BF16 Safetensors y GGUF Q4_K_M / Q8_0 |
+| Idiomas soportados | en, zh, ja, hi, ar, ru, el, vi, es, fr, pt, de, it (12 idiomas, 13 modos de salida) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX 6-bit); GGUF y BF16 mencionados en la model card |
+| Formato de pesos | safetensors (MLX 6-bit); también BF16 safetensors y GGUF en repos separados |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-0.8B, un transformer decoder-only, al que se le aplica un ajuste especializado para la tarea de transliteración de entrada. La versión v2.1 se entrena con un plan de estudios equilibrado en el que el 67,2 % de las entradas de entrenamiento son oraciones multicláusula de 60 a 240 caracteres (2 a 5 cláusulas), con `max_seq_len=1024`. Los datos cubren romanización con espacios, agrupada por frases y sin espacios, código bilingüe alternado (code-switching), placeholders protegidos, diseños multilínea y ciclado de reconversión ("Another").
+El modelo es un fine-tune del transformer decoder-only Qwen/Qwen3.5-0.8B, partiendo de los pesos en BF16 sin cuantizar y posteriormente cuantizado a 6 bits para el runtime MLX. La model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset, aunque identifica la versión de datos como `dataset_v5.1`. El entrenamiento está orientado a una tarea de conversión cerrada: transliteración de entrada romanizada a escritura nativa, preservando intactos términos en inglés inline, menciones `@handle`, URLs, fragmentos de código, rutas de fichero, números y saltos de línea.
 
-Un detalle técnico relevante es que el modelo incluye una plantilla de chat no-thinking incondicional (`chat_template.jinja` con `<|im_start|>assistant\n<think>\n\n</think>\n\n`), que desactiva la generación de razonamiento intermedio para evitar desperdicio de tokens o truncamientos en LM Studio, mlx-lm y llama.cpp. El protocolo de conversión (`unimetype-convert-short-v3`) es 100 % compatible con los clientes existentes de Transliteration-2.0.
-
-No se ha publicado información sobre el número total de tokens de entrenamiento, la composición detallada del dataset ni el uso de técnicas como RLHF o DPO.
+La innovación principal está en el protocolo de inferencia `unimetype-convert-short-v3`: un mensaje de usuario en JSON compacto de una sola línea con prompt de sistema vacío (0 tokens de prefijo) y temperatura 0, lo que produce una conversión determinista. La plantilla de chat incorpora `<|im_start|>assistant\n<think>\n\n</think>\n\n` de forma incondicional en `chat_template.jinja` para las tres distribuciones (MLX, Safetensors y GGUF), de modo que la salida convertida se emite desde el primer token sin latencia de razonamiento. La versión 2.6 añade recuperación de errores tipográficos por transposición de teclas adyacentes (por ejemplo `shujuuk` → `数据库`, `yanchanghiu` → `演唱会`, `yanuhuo` → `验货`), respeto de entradas dinámicas de `lexicon` para contactos y marcas sin secuestro por homófonos, y emisión limpia de `UNIMETYPE_NO_ALTERNATIVE` cuando se agotan las alternativas de reconversión de conjunto cerrado.
 
 ## Capacidades
 
-- Transliteración de Pinyin chino a caracteres hanzi (zh)
-- Transliteración de Romaji japonés a escritura japonesa (ja)
-- Transliteración de Hinglish / hindi romanizado a devanagari (hi)
-- Transliteración de Arabizi a alfabeto árabe (ar)
-- Manejo de oraciones largas multicláusula (60–240+ caracteres, 2–5 cláusulas), no solo frases cortas
-- Preservación de elementos no transliterables: términos técnicos en inglés, @handles, URLs, fragmentos de código, literales JSON, números, saltos de línea y emojis
-- Manejo de romanización con espacios, agrupada por frases y sin espacios
-- Code-switching bilingüe (mezcla de inglés técnico con el idioma objetivo)
-- Soporte de reconversión cíclica ("Another")
-- Generación de texto conversacional heredada del modelo base (pipeline text-generation)
-- No se ha documentado soporte de tool calling, agentes, visión ni audio
+- Transliteración de entrada romanizada a escritura nativa en 12 idiomas: pinyin chino, romaji japonés (modos `natural` y `kana`), hinglish hindi, arabizi árabe, ruso, griego, vietnamita, español, francés, portugués, alemán e italiano.
+- Preservación de contenido no transliterable: términos en inglés inline, `@handles`, URLs, code spans, rutas de fichero, números y saltos de línea.
+- Recuperación de errores tipográficos por teclas adyacentes en escritura a ciegas.
+- Soporte de `lexicon` dinámico para entradas de contactos y marcas, con control de falsos positivos por homófonos.
+- Reconversión de conjunto cerrado con señal explícita de agotamiento (`UNIMETYPE_NO_ALTERNATIVE`).
+- Plantilla de chat no pensante: salida desde el primer token sin tokens de razonamiento.
+- Compatibilidad drop-in con todos los clientes de `Transliteration-2.0` mediante el protocolo `unimetype-convert-short-v3`.
+- No se documentan capacidades de tool calling, agentes, visión, audio ni razonamiento multi-paso; el modelo está diseñado como motor de conversión cerrado.
 
 ## Casos de uso
 
-- Teclados móviles multilingües (IME): integración como motor de conversión en apps de teclado para usuarios que escriben chino, japonés, hindi o árabe con teclado latino; su tamaño de 0,8B y formato MLX 6-bit (~1,2 GB) lo hacen viable en dispositivos Apple Silicon.
-- Escritura de mensajes largos en dispositivos móviles: gracias a la mejora v2.1 en oraciones multicláusula, permite convertir mensajes completos de 60–240 caracteres sin dividirlos manualmente en fragmentos.
-- Chat y mensajería con code-switching: usuarios que mezclan inglés técnico con su idioma nativo ("envíame el report ASAP por WeChat") obtienen conversión que preserva los términos en inglés intactos.
-- Procesamiento de contenido técnico estructurado: conversión de texto que contiene URLs, menciones, JSON o código sin corromper esos elementos, útil en pipelines de normalización de texto de usuario.
-- Entrada de árabe coloquial (Arabizi): el salto en árabe es notable (27,4 % → 71,4 % en el benchmark estándar respecto a la versión 4B anterior), lo que lo hace especialmente adecuado para este idioma, históricamente el más difícil.
-- Prototipado y pruebas locales de IMEs: al ser un modelo pequeño con formatos MLX, GGUF y BF16, puede ejecutarse en LM Studio, mlx-lm o llama.cpp para validar flujos de entrada antes de producción.
-- Accesibilidad y redacción asistida: usuarios con dificultad para cambiar de distribución de teclado pueden escribir todo en latino y obtener el texto nativo automáticamente.
+- Motor IME de sistema en macOS, Windows, Linux, iOS, Android y ChromeOS: el modelo convierte in-place el texto romanizado en la aplicación activa (Slack, Mail, WhatsApp, WeChat, LINE) sin cambiar de teclado, manteniendo una disposición ASCII limpia para atajos de una tecla.
+- Escritura multilingüe en entornos creativos: conserva los atajos de una tecla en Figma o Blender y los comandos LaTeX en Overleaf mientras permite escribir en escritura nativa cuando se invoca la conversión.
+- Flujos de terminal e IDE: al preservar rutas de fichero, code spans y números, el modelo puede integrarse en editores y terminales sin corromper comandos ni identificadores.
+- Control en juegos: la disposición ASCII se mantiene para WASD y otras teclas de acción, con conversión puntual del texto de chat a escritura nativa.
+- Corrección de errores de tecleo rápido: la recuperación de transposiciones de teclas adyacentes permite reparar entradas como `shujuuk` o `yanchanghiu` sin reescritura manual.
+- Gestión de contactos y marcas: el `lexicon` dinámico permite mantener nombres de contactos y marcas correctos sin que homófonos los sobrescriban.
+- Despliegue local en navegador: la variante de 0,8B está pensada para inferencia WebAssembly en el navegador (playground del autor) y para móvil, con huella de aproximadamente 0,5–0,7 GB.
+- Integración en aplicaciones de terceros: el protocolo JSON compacto con temperatura 0 permite incorporar la conversión a cualquier cliente compatible con `Transliteration-2.0`.
 
 ## Benchmarks y rendimiento
 
-### Benchmark de oraciones largas multicláusula (160 casos · 2–5 cláusulas, 60–240 caracteres)
+La model card proporcionada solo incluye cifras de rendimiento para el tier 9B de la familia, no para este checkpoint de 0,8B. Se reproducen a continuación los datos publicados para el 9B, que no deben atribuirse al modelo de 0,8B:
 
-| Métrica | v2.0 (0.8B) | v2.1 (0.8B) | v2.0 (4B) | v2.1 (4B) |
-|---|---:|---:|---:|---:|
-| Strict pass global (160 casos) | 1 / 160 (0,6 %) | 12 / 160 (7,5 %) | 32 / 160 (20,0 %) | 46 / 160 (28,7 %) |
-| Normalized pass global | 1 / 160 (0,6 %) | 12 / 160 (7,5 %) | 33 / 160 (20,6 %) | 47 / 160 (29,4 %) |
-| Precisión media de caracteres | 69,2 % | 76,49 % | 90,4 % | 93,21 % |
-| Chino Pinyin (zh, 40 casos) | 0 / 40 (61,7 % char) | 1 / 40 (2,5 %) · 66,7 % char | 6 / 40 (92,6 % char) | 9 / 40 (22,5 %) · 92,6 % char |
-| Japonés Romaji (ja, 40 casos) | 0 / 40 (51,7 % char) | 0 / 40 · 63,7 % char | 6 / 40 (86,0 % char) | 9 / 40 (22,5 %) · 91,0 % char |
-| Hindi Hinglish (hi, 40 casos) | 1 / 40 (91,9 % char) | 11 / 40 (27,5 %) · 94,8 % char | 20 / 40 (96,7 % char) | 25 / 40 (62,5 %) · 98,1 % char |
-| Árabe Arabizi (ar, 40 casos) | 0 / 40 (71,6 % char) | 0 / 40 · 80,8 % char | 0 / 40 (86,4 % char) | 3 / 40 (7,5 %) · 91,2 % char |
+| Suite | Resultado 9B | Referencia |
+|---|---|---|
+| `v4`-aligned (708 casos), precisión estricta | 92,09% | +1,27 pp frente a DeepSeek V4.1 Flash (con prompt de sistema de producción de ~2.800 tokens) |
+| `Core-5` | 90,94% | +0,64 pp frente a la nube |
+| `Dogfood-30` | 76,7% | iguala a la nube |
+| `OOD-Unseen-20` (reparación de sonda) | 90,0% (18/20) | no disponible |
 
-### Benchmark estándar de frases cortas y casos límite (414 casos)
-
-| Métrica | Transliteration-4B v1.0 | DeepSeek V4.1 Flash | v2.1 (0.8B) | v2.1 (4B) |
-|---|---:|---:|---:|---:|
-| Strict pass global (414 casos) | 230 / 414 (55,6 %) | 292 / 414 (70,5 %) | 301 / 414 (72,7 %) | 366 / 414 (88,4 %) |
-| Expanded pass global | 242 / 414 (58,5 %) | 297 / 414 (71,7 %) | 301 / 414 (72,7 %) | 366 / 414 (88,4 %) |
-| Chino Pinyin (zh) | 151 / 207 (72,9 %) | 171 / 207 (82,6 %) | 168 / 207 (81,2 %) | 195 / 207 (94,2 %) |
-| Japonés Romaji (ja) | 15 / 52 (28,8 %) | 37 / 52 (71,2 %) | 22 / 52 (42,3 %) | 40 / 52 (76,9 %) |
-| Hindi / Hinglish (hi) | 41 / 71 (57,7 %) | 49 / 71 (69,0 %) | 51 / 71 (71,8 %) | 61 / 71 (85,9 %) |
-| Árabe Arabizi (ar) | 23 / 84 (27,4 %) | 35 / 84 (41,7 %) | 60 / 84 (71,4 %) | 70 / 84 (83,3 %) |
-
-Nota: los benchmarks son publicados por el propio autor del modelo; no existen evaluaciones independientes verificables en la información disponible. No se han publicado resultados de benchmarks genéricos (MMLU, HumanEval, GSM8K, etc.).
+No se han publicado resultados de benchmarks del checkpoint 0,8B en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 752 M de parámetros en 6-bit, el repo ocupa 1,2 GB; se estima que cabe cómodamente en sistemas con 4 GB de memoria unificada o GPU con 4–6 GB de VRAM (estimación basada en el tamaño del repo; el autor no publica cifras oficiales).
-- GPU recomendadas: por su formato MLX, el objetivo principal es Apple Silicon (M1/M2/M3/M4). En formato GGUF puede ejecutarse en cualquier GPU consumer moderna (RTX 3060, RTX 4060 o superiores) o incluso solo en CPU.
-- Consumer GPUs: sí, cabe sobradamente en prácticamente cualquier GPU consumer actual dado su tamaño de ~0,8B parámetros y ~1,2 GB de pesos.
-- Opciones de despliegue: mlx-lm (formato nativo), LM Studio, llama.cpp (GGUF); la model card menciona compatibilidad explícita con estas tres opciones.
-- Latencia y throughput: no disponible; el autor no publica cifras, aunque el tamaño reducido y la plantilla no-thinking (que elimina tokens de razonamiento) sugieren respuestas rápidas en hardware de consumo.
+- VRAM estimada: la variante MLX 6-bit ocupa aproximadamente 0,5–0,7 GB según la model card, lo que la sitúa en el rango de móvil y navegador.
+- GPU recomendadas: el checkpoint está empaquetado para Apple Silicon con MLX; para GPU NVIDIA se recomienda usar la variante BF16 Safetensors o GGUF del mismo autor.
+- Cabe en GPU de consumo: sí, con amplio margen en cualquier GPU consumer actual; también en Apple Silicon de gama baja y en inferencia WebAssembly en navegador.
+- Opciones de despliegue: `mlx-lm` (este repo), llama.cpp, LM Studio, Ollama (con Modelfiles publicados por el autor), vLLM y TGI con la variante BF16 Safetensors.
+- Latencia y throughput: no disponibles de forma numérica; la plantilla no pensante elimina los tokens de razonamiento y la salida se emite desde el primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Benchmark 414 casos (strict) | Licencia | Disponibilidad |
-|---|---|---|---:|---|---|
-| Transliteration 2.0 0.8B v2.1 | 752 M | 1024 | 72,7 % | Apache 2.0 | Hugging Face (MLX 6-bit, GGUF, BF16) |
-| Transliteration 2.0 4B v2.1 | no disponible (misma familia) | 1024 | 88,4 % | Apache 2.0 | Hugging Face (misma familia) |
-| DeepSeek V4.1 Flash | no disponible | no disponible | 70,5 % | no disponible | no disponible |
-| Qwen3.5-0.8B (base) | 752 M aprox. | no disponible | no especializado en transliteración | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Idiomas/modos | Licencia | Formatos |
+|---|---|---|---|---|---|
+| UnimeType Transliteration 2.0 0.8B (este) | 752.393.024 | no disponible | 12 idiomas / 13 modos | Apache 2.0 | MLX 6-bit, BF16 safetensors, GGUF |
+| UnimeType Transliteration 2.0 4B | no disponible en la información | no disponible | 12 idiomas / 13 modos | Apache 2.0 | MLX 6-bit, BF16 safetensors, GGUF |
+| UnimeType Transliteration 2.0 9B | no disponible en la información | no disponible | 12 idiomas / 13 modos | Apache 2.0 | MLX 6-bit, BF16 safetensors, GGUF |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B (clase) | no disponible | multilingüe general | no disponible en la información | safetensors |
 
-La alternativa directa dentro de la misma familia es la variante 4B, que ofrece mayor precisión (88,4 % frente a 72,7 % en el benchmark estándar y 93,21 % frente a 76,49 % de precisión de caracteres en oraciones largas) a costa de un mayor consumo de recursos. DeepSeek V4.1 Flash se cita en la model card como referencia externa superada por la versión 0.8B en el benchmark estándar, aunque se trata de un modelo de propósito general más grande.
+No se dispone de datos de benchmarks del 0,8B que permitan comparar rendimiento con las alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Rendimiento desigual por idioma: en oraciones largas multicláusula, el strict pass en japonés (0/40) y árabe (0/40) es nulo en la versión 0.8B v2.1; la precisión de caracteres es aceptable pero la conversión exacta de la oración completa falla sistemáticamente en esos idiomas.
-- El chino y el japonés son los puntos débiles en frases cortas también (81,2 % y 42,3 % respectivamente en el benchmark estándar), debido en parte a la ambigüedad inherente del Pinyin y el Romaji (homófonos, kanji múltiples).
-- Benchmarks publicados por el propio autor: no hay verificación independiente de las cifras, incluida la comparación con DeepSeek V4.1 Flash.
-- Riesgo de alucinación en la conversión: al ser un modelo generativo, puede producir caracteres incorrectos o inventados en lugar de una transliteración determinista; no es adecuado sin supervisión para textos críticos.
-- Contexto limitado a 1024 tokens: no apto para documentos largos; está diseñado para entrada de teclado y mensajes.
-- Capacidades genéricas degradadas: al ser un modelo afinado para una tarea muy específica, su utilidad como modelo conversacional general está probablemente comprometida.
-- Sesgos: no se ha publicado información sobre sesgos del modelo.
-- Licencia Apache 2.0: permite uso comercial sin restricciones relevantes más allá del aviso de licencia estándar.
-- Distribución centrada en el ecosistema Apple (MLX): los usuarios de CUDA deben recurrir a los formatos GGUF o BF16 mencionados en la model card, no presentes como repos separados en la información proporcionada.
+- No es un chatbot generalista: está diseñado para recibir un JSON compacto con prompt de sistema vacío y temperatura 0; usarlo como modelo conversacional abierto producirá resultados fuera de su dominio.
+- Riesgo de alucinación en la conversión: aunque la tarea es determinista, entradas ambiguas o fuera de distribución pueden producir transliteraciones incorrectas; la señal `UNIMETYPE_NO_ALTERNATIVE` solo cubre la reconversión de conjunto cerrado.
+- Cobertura limitada a 12 idiomas y 13 modos; no se documentan otros idiomas ni escrituras.
+- La longitud de contexto no está publicada, lo que dificulta planificar entradas largas.
+- Sesgos conocidos: no documentados en la información disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-0.8B.
+- El checkpoint de este repositorio es MLX 6-bit; para producción en GPU NVIDIA hay que usar las variantes BF16 o GGUF del autor, no estos pesos.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso; no debe asumirse su disponibilidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- App de teclado UnimeType: https://unimetype.com/download?utm_source=huggingface&utm_medium=referral&utm_campaign=transliteration_2_1
-- Paper, repositorio de código y demo: no disponible
+- Variante BF16 Safetensors: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B-Safetensors
+- Variante GGUF: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B-GGUF
+- Tier 4B (MLX): https://huggingface.co/UnimeType/Transliteration-2.0-4B
+- Tier 9B (MLX): https://huggingface.co/UnimeType/Transliteration-2.0-9B
+- Repositorio GitHub con toolkit de inferencia local: https://github.com/UnimeType/transliteration
+- Playground interactivo: https://huggingface.co/spaces/UnimeType/Transliteration-Playground
+- Descarga de la aplicación de teclado: https://unimetype.com/download
+- Metodología de evaluación y guía de LM Studio: https://unimetype.com/blog/how-we-evaluate-transliteration-models
+- Sitio del autor: https://unimetype.com

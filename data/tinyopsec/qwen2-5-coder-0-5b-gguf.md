@@ -2,52 +2,51 @@
 
 ## Resumen
 
-`tinyopsec/Qwen2.5-Coder-0.5B-GGUF` es una redistribución en formato GGUF del modelo `Qwen/Qwen2.5-Coder-0.5B`, un transformer decoder-only denso de 494.032.768 parámetros (dato real de los safetensors del modelo base) especializado en código y publicado por el usuario `tinyopsec`. No se trata de un modelo entrenado desde cero: es una conversión de pesos a cuantizaciones GGUF generada con llama.cpp, con trece variantes de precisión que van de F16 (1,0 GB) a Q2_K. El problema que resuelve es el de la ejecución local de un modelo de código en hardware muy modesto (CPU, portátiles sin GPU, Raspberry Pi, contenedores pequeños), donde otras alternativas no caben.
+Qwen2.5-Coder-0.5B-GGUF es una distribución de cuantizaciones GGUF del modelo Qwen2.5-Coder-0.5B, publicado por el usuario tinyopsec en Hugging Face. El modelo base es un transformer decoder-only de 494.032.768 parámetros (aproximadamente 0,5 mil millones), desarrollado originalmente por el equipo Qwen de Alibaba como parte de la familia Qwen2.5-Coder, orientada a tareas de generación y comprensión de código. Esta versión concreta no introduce cambios en los pesos ni en el entrenamiento: se limita a empaquetar el modelo original en el formato GGUF mediante llama.cpp para su uso en runtimes de inferencia local.
 
-Su relevancia es práctica: al ser Apache 2.0 y heredar la arquitectura Qwen2, se puede desplegar con llama.cpp, Ollama, LM Studio, koboldcpp o llama-cpp-python sin dependencias de CUDA ni de infraestructura cloud. El precio a pagar es el de un modelo de 0,5B: su capacidad de razonamiento, de instrucciones complejas y de generación de código de calidad producción es muy limitada, y no está pensado como sustituto de modelos de 7B o superiores. Es un modelo para autocompletado ligero, tareas de formato, clasificación y prototipado offline.
+La relevancia de esta ficha es práctica: el modelo base es un checkpoint pequeño y de licencia Apache 2.0 que puede ejecutarse en hardware de consumo, y estas cuantizaciones permiten desplegarlo en CPU o en GPU modestas con herramientas como llama.cpp, Ollama, LM Studio o koboldcpp. El repositorio ofrece trece variantes de cuantización, desde F16 (1,0 GB) hasta Q2_K, lo que abarca un rango amplio de compromisos entre precisión y huella de memoria.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y una antigüedad de minutos (creado el 2026-10-28), por lo que no existe validación comunitaria de las cuantizaciones.
+Conviene subrayar que la información disponible procede de la model card del autor de la cuantización y de los metadatos de Hugging Face; no se incluyen detalles sobre el entrenamiento del modelo base, sus datos, benchmarks ni idiomas soportados. Todo dato no presente en esa información se marca como no disponible.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2; etiqueta `qwen2` en los metadatos GGUF) |
-| Parámetros totales | 494.032.768 (según safetensors del modelo base); los metadatos GGUF del repo oficial de Qwen indican 630,17M de tamaño de modelo empaquetado, diferencia atribuible a embeddings y metadatos |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la información proporcionada; la model card del quantizado no la declara |
+| Arquitectura | Transformer decoder-only (familia Qwen2.5, no se detalla en la información disponible) |
+| Parámetros totales | 494.032.768 |
+| Parámetros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M (recomendada), Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | No disponible (la model card no declara lista de idiomas; campo `language` vacío en Hugging Face) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (13 ficheros `.gguf`, un único fichero por cuantización) |
+| Formato de pesos | GGUF (13 ficheros) |
 
 ## Arquitectura y entrenamiento
 
-La ficha no documenta ningún entrenamiento propio: se trata de una conversión de formato. El modelo subyacente es `Qwen/Qwen2.5-Coder-0.5B`, un transformer decoder-only de la familia Qwen2 con atención causal, empaquetado en un único fichero GGUF por cuantización mediante llama.cpp. Al ser un modelo denso de 494M de parámetros, no hay expertos, ni decodificación especulativa, ni mecanismos híbridos SSM: la innovación aquí es exclusivamente la cuantización k-quant (bloques Q_K) que permite reducir el peso de 1,0 GB en F16 a ~0,2 GB en Q2_K.
+El modelo base es Qwen2.5-Coder-0.5B, un transformer decoder-only de la familia Qwen2.5-Coder de Alibaba, con 494.032.768 parámetros. La model card de esta cuantización no aporta detalles sobre el número de capas, la dimensión oculta, la atención (posible GQA en la familia Qwen2.5) ni la longitud de contexto nativa; toda esa información se marca como no disponible.
 
-No hay información en la documentación proporcionada sobre el número de tokens de entrenamiento, la composición del corpus de código, ni sobre si el modelo base pasó por RLHF, DPO o instrucción supervisada. La model card del repositorio se limita a indicar que deriva de `Qwen/Qwen2.5-Coder-0.5B` y "Built on Qwen/Qwen2.5-0.5B", con la advertencia "Code model. Evaluate before use.". Nótese que el modelo base referenciado (`Qwen2.5-Coder-0.5B`) es la variante base, no la Instruct, por lo que la alineación conversacional no está garantizada por la model card.
+En cuanto al entrenamiento, la información proporcionada no incluye el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas del checkpoint. El único proceso técnico descrito es la conversión a GGUF mediante llama.cpp, que genera trece variantes de cuantización (F16 hasta Q2_K) a partir del modelo original. No se han publicado datos sobre recetas de calibración de las cuantizaciones K-quant más allá de la designación estándar de llama.cpp.
 
 ## Capacidades
 
-- Generación de texto autoregresiva y completado de código (pipeline `text-generation`).
-- Etiquetado como `coding` y `qwen-coder`: orientado a lenguajes de programación, sin lista de lenguajes declarada.
-- Etiquetado como `conversational`, aunque al derivar del checkpoint base y no del Instruct, el comportamiento de chat depende de la plantilla de chat que aplique el runtime.
-- Compatible con endpoints OpenAI (`endpoints_compatible` en los tags), lo que permite servir válvula HTTP compatible con clientes OpenAI a través de llama.cpp server.
-- Ejecutable en runtimes GGUF: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python.
-- Tool calling / function calling: no disponible en la documentación; no se declara soporte.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se declara ni se recomienda para este tamaño.
-- Capacidades multilingües: no disponibles; sin listado de idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles; no se declaran.
+- Generación de texto y código: el modelo está orientado explícitamente a tareas de programación, según los tags del repositorio (`coding`, `qwen-coder`).
+- Conversación: el repositorio incluye el tag `conversational`, lo que indica soporte de formato de chat, aunque la plantilla concreta no se detalla en la información disponible.
+- Inferencia local en CPU y GPU: al estar en formato GGUF, es compatible con llama.cpp y runtimes derivados.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a través de infraestructura compatible con la API de Hugging Face, sin más detalle.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada (los idiomas no están listados).
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Autocompletado de código en editor local: con Q4_K_M (~0,3 GB) se puede integrar en un plugin tipo Continue o similar sobre llama.cpp para sugerencias de línea o bloque en máquinas sin GPU, con latencia de decenas de milisegundos por token en CPU moderna.
-- Formateo y transformación de código en pipelines de CI: usar el modelo para reescribir snippets a un estilo fijo, convertir JSON a estructuras de lenguaje o normalizar imports, ejecutándolo en un contenedor de 1 GB de RAM sin dependencias de CUDA.
-- Clasificación y etiquetado de fragmentos de código en herramientas de análisis estático: identificar el lenguaje, detectar el propósito de una función o generar resúmenes de una línea para índices de búsqueda internos.
-- Generación de tests unitarios triviales y datos de prueba: dadas firmas de funciones pequeñas, producir casos de ejemplo que un humano revisa después, como paso previo a la revisión manual.
-- Enseñanza y demostración de LLMs en el aula o en talleres: el tamaño de 0,5B permite ejecutar el modelo en portátiles de alumnos y explicar cuantización, tokens y decodificación sin infraestructura cloud.
-- Prototipado de producto offline y en el borde: asistentes de documentación técnica o generadores de snippets embebidos en aplicaciones de escritorio o dispositivos con recursos limitados, donde no se puede enviar código a un servicio externo por motivos de confidencialidad.
-- Pruebas de integración de infraestructura LLM: al ser un GGUF pequeño y Apache 2.0, sirve como modelo "dummy" para validar pipelines de serving (llama.cpp server, gateways compatibles con OpenAI) antes de desplegar modelos mayores.
+- Autocompletado de código en el editor: con 0,5 mil millones de parámetros y cuantización Q4_K_M, el modelo puede ejecutarse en local dentro de un IDE o plugin (por ejemplo, mediante llama.cpp u Ollama) para sugerencias de baja latencia sin enviar código a servicios externos.
+- Asistente de código en portátiles sin GPU dedicada: la variante Q4_K_M o Q5_K_M cabe en memoria RAM convencional y permite generar fragmentos de código en CPU, útil para entornos de desarrollo con recursos limitados.
+- Filtrado y clasificación de fragmentos de código: puede usarse para tareas ligeras como etiquetar o resumir snippets en pipelines de análisis estático, dado su sesgo hacia código y su bajo coste de inferencia.
+- Prototipado de asistentes conversacionales técnicos: el tag `conversational` permite construir demos de chat sobre documentación o APIs, con la ventaja de que el despliegue es trivial en LM Studio o koboldcpp.
+- Educación y aprendizaje de programación: al ser pequeño y ejecutable en hardware de consumo, sirve para entornos docentes donde se quiere mostrar generación de código local sin depender de la nube.
+- Pruebas de integración de pipelines GGUF: el repositorio ofrece trece cuantizaciones, lo que lo convierte en un banco de pruebas útil para medir el impacto de la cuantización en la calidad de la generación de código dentro de un mismo modelo.
+- Generación de tests unitarios sencillos: para funciones cortas y bien delimitadas, el modelo puede proponer casos de prueba que el desarrollador revisa después, integrándose en flujos de CI como paso opcional de sugerencia.
 
 ## Benchmarks y rendimiento
 
@@ -55,48 +54,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (calculada a partir del tamaño F16 declarado de 1,0 GB para 494M de parámetros; cifras aproximadas, no publicadas por el autor):
-  - F16: ~1,0 GB de pesos.
-  - Q8_0: ~0,55 GB.
-  - Q6_K: ~0,45 GB.
-  - Q5_K_M: ~0,38 GB.
-  - Q4_K_M (recomendada): ~0,32 GB.
-  - Q3_K_M: ~0,27 GB.
-  - Q2_K: ~0,22 GB.
-  - Añadir a estas cifras la caché KV correspondiente a la longitud de contexto configurada, cuyo coste no se puede calcular con los datos disponibles (no se publican número de capas ni cabezas).
-- GPU recomendadas: el modelo cabe holgadamente en cualquier GPU con más de 2 GB de VRAM; no requiere A100, H100 ni RTX 4090. Una GTX 1650, una RTX 3050 o una iGPU con memoria compartida son suficientes. El caso de uso natural es CPU.
-- Cabe en GPU consumer: sí, en todas las GPU consumer modernas e incluso en placas integradas; también en Raspberry Pi 4/5 y en contenedores con 1 GB de RAM usando Q2_K o Q3_K_S.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server` con API compatible OpenAI), Ollama (importando el GGUF con un Modelfile), LM Studio, koboldcpp, llama-cpp-python como binding de Python. vLLM y TGI no están pensados para GGUF de este tamaño y no se documentan en el repositorio.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM/RAM estimada según cuantización (tamaños de fichero indicados en la model card; F16 = 1,0 GB): F16 ≈ 1,0 GB, Q8_0 ligeramente por debajo, Q6_K y Q5_K_M en el rango de 0,4–0,7 GB, Q4_K_M (recomendada) en torno a 0,3–0,4 GB, Q2_K por debajo de 0,3 GB. Estos valores son estimaciones a partir del tamaño del fichero F16 y de la progresión típica de llama.cpp; la model card solo confirma el tamaño de F16.
+- GPU recomendadas: al tratarse de un modelo de 0,5 B, cualquier GPU con al menos 1–2 GB de VRAM libre es suficiente; tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores lo ejecutan con holgura. También es viable en iGPU y en CPU pura.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones, incluidas tarjetas de gama baja y sistemas integrados.
+- Opciones de despliegue: llama.cpp (referencia en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| `tinyopsec/Qwen2.5-Coder-0.5B-GGUF` (este) | 494M | No disponible | Apache 2.0 | GGUF (13 quants) | Hugging Face, 0 descargas |
-| `Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF` (oficial) | No disponible en la información consultada (los metadatos citados indican 630,17M de tamaño de modelo) | No disponible | Apache 2.0 (según el modelo base) | GGUF | Hugging Face y ModelScope, mantenido por Qwen |
-| `Qwen/Qwen2.5-Coder-0.5B-Instruct` | No disponible en la información consultada | No disponible | Apache 2.0 | Safetensors | Hugging Face |
-| `Qwen2.5-Coder-1.5B` (variante de mayor tamaño de la misma serie) | ~1,5B (según la descripción de la serie) | No disponible | Apache 2.0 | Safetensors y GGUF | Hugging Face, ModelScope |
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|
+| tinyopsec/Qwen2.5-Coder-0.5B-GGUF (esta ficha) | 494 M | no disponible | Apache 2.0 | GGUF, 13 cuantizaciones |
+| Qwen/Qwen2.5-Coder-0.5B (modelo base) | 494 M | no disponible | Apache 2.0 | Safetensors (formato original) |
+| Qwen/Qwen2.5-Coder-1.5B | no disponible en la información | no disponible | Apache 2.0 (según familia Qwen2.5) | Safetensors y GGUF comunitarios |
+| Modelos de código de ~0,5 B de otros fabricantes | no disponible | no disponible | no disponible | no disponible |
 
-Diferencias relevantes: el repositorio oficial de Qwen parte del checkpoint Instruct, mientras que este quantizado declara como base el checkpoint no Instruct, lo que afecta al comportamiento conversacional. La ventaja diferencial de este repo es su número de variantes de cuantización (13, incluidas Q3_K_L y Q5_K_S), frente a una oferta más reducida en el repo oficial. No se dispone de datos de rendimiento comparativos para ninguna de las alternativas.
+La comparación cuantitativa de rendimiento no puede establecerse porque la información proporcionada no incluye benchmarks de ninguno de los modelos. La diferencia principal frente al modelo base es el formato (GGUF frente a safetensors) y la disponibilidad de cuantizaciones; frente a la variante de 1,5 B de la misma familia, esta última ofrece presumiblemente mayor capacidad a costa de más memoria, pero no se dispone de datos que lo confirmen.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no documentados por el autor; al no publicarse la composición del corpus de entrenamiento, no se puede evaluar el sesgo de dominio (lenguajes de programación sobrerrepresentados, licencias de código de origen, etc.).
-- Alucinación: riesgo alto en generación de código, especialmente en APIs y librerías; con 494M de parámetros la tasa de código sintácticamente válido pero semánticamente incorrecto es considerable. No usar sin tests ni revisión humana.
-- Limitación de contexto: la model card no declara la ventana de contexto; no se debe asumir la del modelo base sin verificar la configuración del runtime.
-- Idiomas: no se declara lista de idiomas; el soporte multilingüe no está garantizado y la calidad fuera de inglés/código es incierta.
-- Licencia: Apache 2.0 permite uso comercial, pero la model card incluye la advertencia "Code model. Evaluate before use." y la responsabilidad de evaluar el modelo recae en el usuario. Verificar la licencia del modelo base y de los datos de entrenamiento originales antes de un despliegue comercial.
-- Repositorio sin tracción: 0 descargas y 0 likes; no hay validación de la comunidad sobre la integridad de los ficheros ni sobre posibles errores de conversión. Conviene recalcular hashes y comparar perplejidad con el repo oficial de Qwen.
-- El autor indica "Built on `Qwen/Qwen2.5-0.5B`" en la sección de licencia, mientras que el campo `base_model` apunta a `Qwen2.5-Coder-0.5B`; la discrepancia en la documentación debe tenerse en cuenta.
-- No apto como asistente conversacional de producción ni para razonamiento multi-paso: no se declara soporte de tool calling ni de agentes.
+- Tamaño muy reducido: con 494 M de parámetros, la capacidad de razonamiento y de generación de código complejo es limitada en comparación con modelos de mayor escala de la misma familia.
+- Riesgo de alucinación: como todo modelo generativo, puede producir APIs, funciones o imports inexistentes; la model card recomienda evaluar antes de usar ("Evaluate before use").
+- Sesgos: no se documentan sesgos específicos en la información disponible.
+- Idiomas: no se especifican los idiomas soportados; el rendimiento fuera del inglés y de los lenguajes de programación mayoritarios no está garantizado.
+- Contexto: la longitud de contexto no está indicada, por lo que no debe asumirse una ventana amplia para tareas de comprensión de repositorios completos.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen2.5-Coder-0.5B, ya que la model card de la cuantización cita por error "Qwen/Qwen2.5-0.5B" como base en la sección de licencia, lo que constituye una inconsistencia documental a tener en cuenta.
+- Cuantizaciones agresivas: las variantes Q2_K y Q3 pueden degradar notablemente la calidad de la generación de código; para producción se recomienda Q4_K_M o superior.
+- Sin datos de benchmarks: no hay evidencia publicada en este repositorio sobre la degradación de calidad por cuantización, por lo que cualquier decisión de despliegue debería validarse con una evaluación propia.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen2.5-Coder-0.5B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
-- GGUF oficial de la variante Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF
-- Modelo Instruct (safetensors): https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- GGUF oficial en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF
-- Ficha en ModelScope (resumen): https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF/summary
-- Ficha en Inferix: https://inferix.co/models/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
+- llama.cpp (runtime de referencia): https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai
+- koboldcpp: https://github.com/LostRuins/koboldcpp

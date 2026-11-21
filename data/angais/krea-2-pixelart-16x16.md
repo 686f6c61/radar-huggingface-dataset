@@ -2,102 +2,103 @@
 
 ## Resumen
 
-Krea 2 PixelArt 16x16 es una LoRA (adaptador de bajo rango) para el modelo de difusion de texto a imagen Krea 2, desarrollada por el usuario Angais. Su proposito es muy concreto: generar iconos de videojuego de 16x16 pixeles, con un unico objeto centrado por imagen, contorno oscuro, sombreado plano y fondo magenta plano (#FF00FF) que se elimina con un simple color key, incluidas las oquedades interiores de asas, anillos y bucles. Se entrena sobre krea/Krea-2-Raw y esta pensada para usarse en inferencia sobre krea/Krea-2-Turbo.
+Krea 2 PixelArt 16x16 es un adaptador LoRA para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario Angais y publicado en Hugging Face. Su proposito es generar iconos de videojuego en estilo pixel art de rejilla 16x16, con contornos oscuros y fondo magenta plano, a partir de un render de 512x512 que despues se reduce a la rejilla real muestreando un pixel por bloque de 32x32. El repositorio incluye dos adaptadores independientes: uno para generar un unico icono centrado y otro para producir una hoja de sprites 2x2 con cuatro iconos en una sola imagen.
 
-Tecnicamente es un adaptador de rango 32 y alpha 32, entrenado con ai-toolkit durante 1.000 pasos (unos 14 minutos en una H100) sobre un conjunto de 550 iconos sinteticos de 16x16 ampliados x32 sobre fondo magenta plano. El repo ocupa 0,2 GB y el peso se distribuye como un unico archivo safetensors que se carga con `load_lora_weights` de diffusers.
+El modelo resuelve un problema concreto en el flujo de trabajo de desarrollo de videojuegos: la generacion de assets graficos pequenos y consistentes sin necesidad de un artista pixel por pixel. Al fijar la salida a una rejilla exacta de 16x16 y reservar el magenta como clave de color para el fondo, el adaptador permite extraer sprites con transparencia de forma determinista mediante postprocesado en NumPy, sin depender de segmentacion ni de mascaras aprendidas.
 
-Es relevante para equipos de desarrollo de videojuegos y artistas de pixel art porque convierte un pipeline de difusion generalista en un generador reproducible de sprites con rejilla exacta: la salida a 512x512 es una cuadricula de bloques de 32x32, de modo que tomando el pixel central de cada bloque se obtiene el sprite de 16x16 con fondo ya recortable por color. La licencia es la Krea 2 Community License, con uso comercial restringido a empresas por debajo de 1 millon de dolares de ingresos anuales.
+Es relevante ahora porque se apoya en Krea 2 Turbo, un modelo de difusion que funciona con muy pocos pasos de inferencia (8, y 6 tambien funciona) y guidance 0, lo que reduce el coste por render. El adaptador se entreno sobre Krea 2 Raw con solo 550 iconos sinteticos de dominio publico (CC0) y 1.000 pasos, lo que lo convierte en un ejemplo de ajuste fino barato y reproducible. La licencia es la Krea 2 Community License, no una licencia permisiva generica, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de difusion de texto a imagen Krea 2; la arquitectura interna del modelo base no se detalla en la informacion disponible |
-| Parametros totales | No disponible; el adaptador usa rango 32 y alpha 32, y el repositorio completo ocupa 0,2 GB |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (modelo de generacion de imagen; no se especifica la ventana del codificador de texto) |
-| Tipos de cuantizacion | No se listan variantes cuantizadas; el adaptador se distribuye en safetensors y el modelo base se emplea en bf16 |
-| Idiomas soportados | en |
-| Licencia | krea-2-community-license (Krea 2 Community License Agreement) |
-| Formato de pesos | safetensors (`krea-2-pixelart-16x16.safetensors`), cargable con diffusers |
+| Arquitectura | LoRA sobre modelo de difusion texto-a-imagen Krea 2 (transformer de difusion, detalles no disponibles) |
+| Parametros totales | no disponible (el repo pesa 0,5 GB; el LoRA usa rango 32 / alpha 32) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo texto-a-imagen; no se especifica longitud de prompt) |
+| Tipos de cuantizacion | El LoRA se distribuye en safetensors; el modelo base admite GGUF (ejemplo con IQ4_XS) y bf16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | krea-2-community-license |
+| Formato de pesos | safetensors (adaptadores LoRA); modelo base en safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA de rango 32 y alpha 32 sobre Krea 2. El entrenamiento se hizo con ai-toolkit, partiendo de Krea 2 Raw en bf16, con resolucion de 512x512, batch de 2, optimizador AdamW de 8 bits, learning rate 1e-4, perdida de flow matching y 1.000 pasos, lo que supone aproximadamente 14 minutos en una unica H100. No se especifica en la informacion disponible ningun mecanismo adicional como decodificacion especulativa o atencion lineal, ni se detalla la arquitectura interna del modelo base.
+El adaptador es un LoRA de rango 32 y alpha 32 aplicado sobre Krea 2 Raw en precision bf16. El entrenamiento se realizo con ai-toolkit, a resolucion 512x512, con batch 2, optimizador AdamW de 8 bits, learning rate 1e-4, perdida de flow matching y 1.000 pasos, lo que supone aproximadamente 14 minutos en una sola GPU H100. El dataset de entrenamiento son 550 iconos sinteticos de 16x16 con licencia CC0, cada uno escalado x32 sobre fondo magenta plano y etiquetado con el prompt que lo genero. El dataset esta publicado como Angais/krea-2-pixelart-16x16-synthetic.
 
-El conjunto de datos es Angais/krea-2-pixelart-16x16-synthetic, con 550 iconos de 16x16 pixeles bajo licencia CC0. Cada icono se amplio x32 mediante vecino mas cercano sobre un fondo magenta plano y se etiqueto con el prompt que lo habia generado, lo que da lugar a un prompt de instancia del estilo "pixel art 16x16 game icon". La innovacion practica del adaptador no esta en la arquitectura, sino en el formato de salida: al fijar la rejilla sobre bloques de 32x32 y reservar el magenta como color de fondo, el recorte del sprite y la transparencia se resuelven con una operacion determinista de remuestreo y umbral de color, sin necesidad de segmentacion.
+La innovacion tecnica principal no esta en la arquitectura del LoRA, sino en el diseno del pipeline de salida. El modelo genera una imagen de 512x512 que contiene una rejilla implicita de 16x16 bloques de 32x32 pixeles. Para recuperar el sprite real se toma un pixel del centro de cada bloque (`rgb[16::32, 16::32]`), y el fondo se elimina con una clave de color sobre magenta (#FF00FF) con tolerancia de 90 en distancia maxima por canal. En el caso de la hoja 2x2, cada cuadrante de 256x256 contiene un icono de 16x16 y se muestrea con `quadrant[8::16, 8::16]`. El segundo adaptador se entreno para colocar un objeto por cuadrante en orden de lectura, con etiquetas de posicion explicitas en el prompt.
 
 ## Capacidades
 
-- Generacion de iconos de videojuego en pixel art de 16x16 pixeles, un objeto por imagen y centrado.
-- Estilo consistente: contorno oscuro y sombreado plano, con salida sobre fondo magenta plano (#FF00FF) pensado para color key.
-- Recorte exacto de sprites: la salida a 512x512 es una rejilla de bloques de 32x32; tomando el pixel central se obtiene el sprite de 16x16.
-- Generacion de transparencia real en oquedades interiores de asas, anillos y bucles (13 de 80 renders medidos).
-- Generalizacion a objetos no vistos en el entrenamiento: en las pruebas del autor, objetos como muneco de nieve, ancla, caballo de ajedrez, sushi, helado, casco espacial o tetera funcionan de forma comparable a los objetos entrenados.
-- Seguimiento de un prompt plantilla concreto: "pixel art 16x16 game icon, \<objeto y detalles\>, dark outline, plain magenta background".
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision de entrada, audio ni modo de pensamiento. Es un modelo exclusivamente de texto a imagen.
+- Generacion de iconos pixel art de 16x16 con contornos oscuros y fondo magenta plano, a partir de descripciones textuales en ingles.
+- Generacion de hojas de sprites 2x2 con cuatro objetos distintos en una sola imagen, cada uno en su cuadrante.
+- Generalizacion a objetos no vistos en entrenamiento: la model card reporta que objetos ausentes del dataset (muneco de nieve, ancla, caballo de ajedrez, sushi, cucurucho de helado, casco espacial, tetera) salen con calidad comparable a los entrenados.
+- Extraccion determinista de sprites con transparencia mediante clave de color, sin necesidad de modelos de segmentacion.
+- Compatibilidad con Krea 2 Turbo a 8 pasos (6 tambien funciona) y guidance 0, y con Krea 2 Turbo cuantizado IQ4_XS en stable-diffusion.cpp para entornos de baja VRAM.
+- Soporte de plantillas de prompt estructuradas con etiquetas de posicion (top left, top right, bottom left, bottom right) para la variante de hoja.
+- No soporta tool calling, agentes, razonamiento multi-paso ni otras capacidades de los modelos de lenguaje; es exclusivamente un adaptador de generacion de imagen.
 
 ## Casos de uso
 
-- Generacion de iconos de inventario para videojuegos: se puede producir un conjunto coherente de sprites de objetos (llaves, pociones, monedas, armas) con el mismo estilo y fondo recortable, a partir de un prompt por objeto.
-- Prototipado rapido de assets: en fases de preproduccion, un equipo puede generar decenas de iconos de 16x16 en minutos para evaluar la direccion artistica antes de encargar el arte final.
-- Automatizacion de pipelines de contenido: el recorte por color key y el remuestreo a 16x16 son deterministas, por lo que se pueden integrar en un script de CI o en una herramienta interna que genere sprites por lotes sin intervencion manual.
-- Ampliacion de atlas de sprites existentes: dado un conjunto de objetos ya definidos por el equipo, la LoRA permite generar variantes (versiones oxidadas, con cinta, de distintos materiales) manteniendo la rejilla y el estilo.
-- Assets para juegos con licencia permisiva en el rango de ingresos permitido: estudios pequenos, por debajo del umbral de 1 millon de dolares de ingresos anuales, pueden usar el adaptador comercialmente segun la Krea 2 Community License.
-- Herramientas de creacion asistida para game jams: al necesitar solo 8 pasos de inferencia (6 tambien funciona) y guidance 0 sobre Krea 2 Turbo, encaja en flujos de trabajo con recursos limitados y tiempos de generacion bajos.
-- Preservacion de estilo en secuelas o packs de contenido descargable: el prompt plantilla fijo y el fondo magenta constante permiten reutilizar exactamente el mismo proceso de post-procesado en lotes futuros.
+- Prototipado rapido de assets para videojuegos: un equipo indie puede generar decenas de iconos de inventario (llaves, pociones, armas, comida) en minutos y revisarlos en un editor de sprites, sustituyendo la fase inicial de bocetado manual.
+- Generacion de iconos de inventario y HUD: el adaptador produce un unico objeto centrado por render, ideal para iconos de objetos que se muestran en una rejilla de interfaz con transparencia.
+- Creacion de hojas de sprites para tilesets o menus: la variante 2x2 permite generar cuatro iconos relacionados (por ejemplo, cuatro tipos de moneda o cuatro niveles de una misma arma) en una sola pasada, manteniendo coherencia de estilo.
+- Iteracion de direccion artistica: al aceptar prompts descriptivos en ingles y funcionar con pocos pasos, permite probar variaciones de color, forma y detalle de un mismo objeto rapidamente antes de encargar el asset final a un artista.
+- Relleno de contenido para prototipos y demos: estudios que necesitan placeholders visuales coherentes para vertical slices o pruebas de usabilidad pueden generar un set completo de iconos con estilo uniforme.
+- Pipeline automatizado de assets en CI: el codigo de postprocesado en NumPy permite integrar la generacion y extraccion de sprites en un script reproducible, de modo que cada build pueda regenerar o ampliar el set de iconos con una semilla fija.
+- Despliegue en entornos de baja VRAM: mediante stable-diffusion.cpp con el denoiser IQ4_XS, el text encoder Qwen3-VL-4B-Instruct Q4_K_M y el VAE de Wan 2.1, se puede ejecutar en hardware modesto para generar hojas de sprites sin GPU de datacenter.
 
 ## Benchmarks y rendimiento
 
-El autor publica metricas propias medidas sobre 80 renders no curados (64 prompts variados mas 16 objetos de prueba, 7 de ellos ausentes del conjunto de entrenamiento):
+La model card no incluye benchmarks comparativos con otros modelos, pero si metricas de calidad del propio adaptador medidas sobre 80 renders no curados (64 prompts variados mas 16 objetos de prueba, 7 de ellos ausentes del entrenamiento):
 
 | Metrica | Resultado |
 |---|---|
-| Fondos eliminados limpiamente por color key | 79 / 80 |
-| Distancia mediana del color de fondo respecto a #FF00FF | 5 / 255 |
-| Renders con oquedades interiores visibles (asas, anillos) | 13 / 80 |
-| Pureza de rejilla (proporcion de cada bloque de 32x32 de un solo color), mediana | 0,989 |
+| Fondos eliminados limpiamente por clave de color | 79 / 80 |
+| Distancia mediana del color de fondo a #FF00FF | 5 / 255 |
+| Renders con huecos transparentes (asas, anillos) | 13 / 80 |
+| Pureza de rejilla (fraccion de cada bloque 32x32 de un solo color), mediana | 0,989 |
 
-No se han publicado resultados de benchmarks estandar (tipo MMLU, HumanEval o GSM8K) en la informacion disponible, algo esperable al tratarse de un modelo de generacion de imagen.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que no aplican a un adaptador de generacion de imagen.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. La informacion proporcionada no indica el tamano del modelo base Krea 2 ni sus requisitos de memoria en inferencia.
-- Entrenamiento documentado: Krea 2 Raw en bf16, 512x512, batch 2, 1.000 pasos, completado en unos 14 minutos sobre una H100.
-- Cabe en GPU de consumo: no confirmado en la informacion disponible. El adaptador en si ocupa 0,2 GB, pero el coste real lo determina el modelo base, cuyos requisitos no se detallan.
-- Opciones de despliegue: diffusers, mediante `Krea2Pipeline.from_pretrained("krea/Krea-2-Turbo", torch_dtype=torch.bfloat16)` seguido de `load_lora_weights`. El entrenamiento se realizo con ai-toolkit. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que ademas no son aplicables a un pipeline de difusion de imagen en este formato.
-- Parametros de inferencia recomendados por el autor: 512x512, 8 pasos (6 tambien funciona) y guidance 0.
-- Latencia y throughput: no disponibles; solo se documenta el tiempo de entrenamiento, no el de inferencia.
+- VRAM estimada para inferencia: no disponible de forma explicita. El repo del LoRA pesa 0,5 GB; el modelo base Krea 2 Turbo en bf16 requiere una GPU de gama alta, mientras que la variante IQ4_XS en stable-diffusion.cpp reduce el requisito y permite ejecucion en entornos de baja VRAM.
+- GPU recomendadas: el entrenamiento se realizo en una H100 (14 minutos para 1.000 pasos). Para inferencia se puede usar H100, A100 o GPUs consumer de gama alta con suficiente VRAM para el modelo base; no se especifican modelos concretos de consumer GPU en la informacion disponible.
+- Cabe en consumer GPU: si, segun la model card, mediante la configuracion de baja VRAM con stable-diffusion.cpp (denoiser IQ4_XS, text encoder Qwen3-VL-4B-Instruct Q4_K_M y VAE de Wan 2.1). No se detalla la VRAM minima exacta.
+- Opciones de despliegue: diffusers (Krea2Pipeline con `load_lora_weights`), stable-diffusion.cpp (build master-1047-984eb06 o posterior) y, por compatibilidad con el ecosistema, ComfyUI mediante los repacks de Wan 2.1 VAE; no se confirma soporte nativo en vLLM, llama.cpp u Ollama, que no aplican a difusion.
+- Latencia y throughput: no disponibles de forma numerica. La model card indica 8 pasos de inferencia (6 tambien funciona) con guidance 0 a 512x512, y para el ejemplo en stable-diffusion.cpp se usaron 5 pasos con Euler y text CFG 1.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Contexto / resolucion de trabajo | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Angais/Krea-2-PixelArt-16x16 | LoRA sobre Krea 2 (rango 32 / alpha 32) | 512x512 de salida, rejilla de 16x16 sprites | krea-2-community-license | Hugging Face, diffusers |
-| krea/Krea-2-Raw | Modelo base de texto a imagen | No disponible | krea-2-community-license | Hugging Face |
-| krea/Krea-2-Turbo | Modelo base de texto a imagen (variante turbo) | No disponible | krea-2-community-license | Hugging Face |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada. Como referencia cualitativa, se puede comparar con otros adaptadores LoRA de pixel art para modelos de difusion (por ejemplo, adaptadores para Stable Diffusion o Flux), pero no se dispone de parametros, contexto ni rendimiento medido de esas alternativas en esta busqueda.
 
-No se dispone en la informacion proporcionada de datos comparativos con otras LoRAs de pixel art, ni de resultados de rendimiento de alternativas con los que contrastar las metricas del autor. Las cifras de la tabla de benchmarks son mediciones propias del autor sobre su propio conjunto de 80 renders, no comparaciones externas.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Krea 2 PixelArt 16x16 | LoRA rango 32 sobre Krea 2 | no aplica | metricas propias de rejilla y clave de color | krea-2-community-license | Hugging Face, diffusers y stable-diffusion.cpp |
+| Alternativas LoRA de pixel art | no disponible | no aplica | no disponible | variable | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo genera iconos de 16x16: un unico objeto, centrado, sin escenas ni personajes en poses.
-- El magenta esta reservado para el fondo, por lo que no se deben pedir objetos de color magenta puro.
-- Los colores a veces salen mas oscuros de lo solicitado; el propio autor pone el ejemplo de una "oveja verde esmeralda" que puede aparecer en verde oscuro.
-- Las metricas publicadas proceden de 80 renders no curados y de un conjunto de entrenamiento de solo 550 imagenes sinteticas, lo que limita la variedad de estilos y objetos cubiertos.
-- No se han publicado evaluaciones independientes ni comparaciones con otras LoRAs de pixel art.
-- Las salidas son generadas por IA; donde la ley o la politica de la plataforma lo exija, debe declararse esa circunstancia al publicarlas.
-- Licencia: es un derivado de Krea 2 y se distribuye bajo la Krea 2 Community License Agreement. El uso comercial solo esta permitido a empresas por debajo de 1 millon de dolares de ingresos anuales; conviene leer el acuerdo completo y la Krea Acceptable Use Policy antes de cualquier uso comercial.
-- El proyecto no es un producto oficial de Krea ni cuenta con su respaldo.
-- Sesgos conocidos: no documentados de forma especifica en la informacion disponible.
+- Ambos adaptadores estan disenados exclusivamente para iconos de 16x16. El adaptador de icono unico centra un solo objeto; el de hoja coloca un objeto por cuadrante. No estan pensados para sprites de mayor resolucion ni para animaciones.
+- No se deben pedir objetos de color magenta puro, ya que el magenta esta reservado como clave de color del fondo y se eliminaria en el postprocesado.
+- Los colores a veces salen mas oscuros de lo solicitado: la model card advierte que una "oveja verde esmeralda" puede salir verde oscuro.
+- Riesgo de huecos no deseados: en 13 de 80 renders aparecieron zonas transparentes en asas o anillos, lo que puede requerir revision manual antes de usar el sprite.
+- En la variante de hoja 2x2, los contornos de iconos vecinos pueden tocarse, por lo que conviene revisar los bordes de cada cuadrante antes de recortar.
+- El modelo solo entiende prompts en ingles; no se ha validado su comportamiento en castellano ni en otros idiomas.
+- La licencia es la Krea 2 Community License, no una licencia de codigo abierto permisiva. Es necesario revisar sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- Las salidas son generadas por IA; la model card recuerda que donde la ley o la politica de la plataforma lo exijan, puede ser necesario declarar su origen. La model card original queda truncada en ese punto, por lo que no se dispone del texto completo de esa advertencia.
+- No se han publicado evaluaciones de sesgo ni de alucinacion visual (objetos incoherentes) mas alla de las metricas de rejilla y clave de color.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Angais/Krea-2-PixelArt-16x16
-- Modelo base: https://huggingface.co/krea/Krea-2-Raw
-- Variante usada en inferencia: https://huggingface.co/krea/Krea-2-Turbo
-- Dataset de entrenamiento (550 iconos sinteticos 16x16, CC0): https://huggingface.co/datasets/Angais/krea-2-pixelart-16x16-synthetic
-- Texto de la licencia (Krea 2 Community License Agreement): https://cdn.jsdelivr.net/gh/krea-ai/krea-2@db3984fbc6e13b34c0064990fc2d95ac64d00058/assets/hf_samples/LICENSE.pdf
-- Politica de uso aceptable de Krea: https://www.krea.ai/krea-2-use-policy
-- Archivo NOTICE del repositorio: disponible en el propio repositorio de Hugging Face
-- Los resultados de la busqueda web recibidos no guardan relacion con este modelo (corresponden a la clase Ranger de Divinity: Original Sin) y se han descartado.
+- LoRA de icono unico (safetensors): https://huggingface.co/Angais/Krea-2-PixelArt-16x16/resolve/main/krea-2-pixelart-16x16.safetensors
+- LoRA de hoja 2x2 (checkpoint-1000): https://huggingface.co/Angais/Krea-2-PixelArt-16x16/resolve/main/sheet/checkpoint-1000.safetensors
+- Dataset sintetico de entrenamiento: https://huggingface.co/datasets/Angais/krea-2-pixelart-16x16-synthetic
+- Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
+- Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
+- Licencia Krea 2 Community License: https://cdn.jsdelivr.net/gh/krea-ai/krea-2@db3984fbc6e13b34c0064990fc2d95ac64d00058/assets/hf_samples/LICENSE.pdf
+- Denoiser IQ4_XS para baja VRAM: https://huggingface.co/gguf-org/krea-2-gguf/blob/main/krea2_turbo-iq4_xs.gguf
+- Text encoder Qwen3-VL-4B-Instruct Q4_K_M: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct-GGUF/blob/main/Qwen3-VL-4B-Instruct-Q4_K_M.gguf
+- VAE de Wan 2.1 (repack de ComfyUI): https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/vae/wan_2.1_vae.safetensors
+- stable-diffusion.cpp (release master-1047-984eb06): https://github.com/leejet/stable-diffusion.cpp/releases/tag/master-1047-984eb06

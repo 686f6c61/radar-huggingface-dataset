@@ -2,90 +2,98 @@
 
 ## Resumen
 
-Llama-3.3-8B-Instruct-128K-Jbliterated es un modelo de lenguaje de 8.030 millones de parámetros desarrollado por ApolloRaines, basado en el modelo shb777/Llama-3.3-8B-Instruct-128K, que a su vez es una extensión de contexto de Llama 3.3 8B Instruct de Meta. La principal innovación es la aplicación de la técnica "Jbliteration", un método de ablación geométrica sobre las 32 capas del transformer que elimina el subespacio de rechazo (refusal subspace) del modelo, dando como resultado un asistente que no produce rechazos ante peticiones que el modelo original consideraría inapropiadas.
+Llama-3.3-8B-Instruct-128K-Jbliterated es un fine-tune del modelo shb777/Llama-3.3-8B-Instruct-128K, publicado por el usuario ApolloRaines bajo el marco que el autor denomina "jbliteration". Se trata de una intervención directa sobre los pesos (weight surgery) cuyo objetivo declarado es eliminar la conducta de rechazo (refusal) del modelo sin recurrir a entrenamiento por gradiente ni a system prompts. El modelo conserva la ventana de contexto de 128.000 tokens heredada del modelo base y la arquitectura Transformer decoder-only de la familia Llama 3.3, con 8.030.261.248 parámetros en bfloat16.
 
-El modelo mantiene la ventana de contexto de 128.000 tokens y el soporte multilingüe del original (ocho idiomas), pero con una política de respuesta sin censura. Está pensado para desarrolladores e investigadores que necesitan un modelo de 8B con contexto largo y sin restricciones de contenido, aunque su uso conlleva riesgos éticos y legales importantes. La licencia es la Llama 3.1 Community License, que permite uso comercial con condiciones.
+El problema que aborda es la imposibilidad de que los modelos ajustados con alineamiento de seguridad procesen contenido hostil, lo que el autor sitúa en el ámbito de la seguridad defensiva: revisión de exploits, análisis de malware y reconstrucción de incidentes. La relevancia actual del modelo es limitada y muy específica: no es un modelo de propósito general mejorado, sino una demostración técnica de que la dirección de rechazo puede ablacionarse de forma selectiva, con un benchmark propio de 0 rechazos genuinos sobre 100 prompts y una única medición de retención de capacidad (MMLU 77,89 % frente a 76,84 % del baseline) realizada sobre otro modelo distinto, Sharona (Qwen3.5-27B), no sobre este.
+
+El modelo está etiquetado como "uncensored", acumula 857 descargas y 3 likes en Hugging Face, y se distribuye bajo la licencia Llama 3.1 Community License. Su interés para desarrolladores e investigadores es acotado: sirve como caso de estudio de edición de pesos y como herramienta para pipelines de red team, no como sustituto de un modelo alineado en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.3) |
+| Arquitectura | Transformer decoder-only (familia Llama 3.3), 32 capas modificadas de 32 |
 | Parametros totales | 8.030.261.248 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 128.000 tokens |
-| Tipos de cuantizacion | no disponible (el modelo base se distribuye en bfloat16; se puede cuantizar a int8/int4 con herramientas externas) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (el modelo se publica en bfloat16; el autor menciona GPTQ W4A16 solo para otro modelo de su coleccion) |
 | Idiomas soportados | en, de, fr, it, pt, hi, es, th |
 | Licencia | Llama 3.1 Community License |
-| Formato de pesos | safetensors (tambien incluye tokenizer.json y configuracion) |
+| Formato de pesos | safetensors (bfloat16) |
+| Tamano del repositorio | 16,1 GB |
+| Modelo base | shb777/Llama-3.3-8B-Instruct-128K |
+| Fecha de creacion | 2026-07-20 |
+| Ultima actualizacion | 2026-10-28 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de shb777/Llama-3.3-8B-Instruct-128K, que es una version de Llama 3.3 8B Instruct con la ventana de contexto extendida a 128K tokens mediante interpolacion de posiciones. Sobre esta base, ApolloRaines aplica la tecnica Jbliteration, que consiste en una descomposicion geometrica del subespacio de rechazo del modelo y su posterior ablacion en las 32 capas. El proceso se describe como un "pipeline multi-fase" que refina la separacion entre respuestas genuinas y rechazos, sin anadir entrenamiento adicional sobre datos etiquetados.
+La arquitectura es la de Llama 3.3 en su variante de 8.000 millones de parámetros: Transformer decoder-only con atención causal estándar, sin mezcla de expertos ni componentes híbridos SSM. El autor declara que se han modificado las 32 capas del modelo mediante un pipeline de procesamiento multifase denominado "jBlaze precision neural surgery", que actúa directamente sobre los pesos en bfloat16 sin pasar por entrenamiento por gradiente. La modificación apunta a la dirección de rechazo aprendida durante el alineamiento del modelo base, con la afirmación de que el resto de capacidades queda intacto por diseño.
 
-No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se emplearon tecnicas como RLHF o DPO. La modificacion es puramente estructural sobre los pesos del modelo base, y el autor afirma que es resistente a la reactivacion del rechazo mediante fine-tuning posterior. El modelo se distribuye en bfloat16.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO; el autor afirma explícitamente que no hay entrenamiento por gradiente en el proceso de edición. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal. La única innovación declarada es metodológica: la distinción entre "abliteration" convencional, descrita como burda y con pérdida colateral de capacidad, y "jbliteration", presentada como una edición de precisión que preserva el rendimiento. La evidencia aportada para esa afirmación es una única medición de MMLU sobre un modelo diferente de la misma colección, no sobre este checkpoint.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en ocho idiomas (ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes).
-- Ventana de contexto de 128K tokens, adecuada para documentos largos, transcripciones o historiales de conversacion extensos.
-- Ausencia de rechazos ante peticiones que el modelo original consideraria inapropiadas o peligrosas (segun el benchmark Heretic, 0 rechazos genuinos en 100 prompts).
-- Tratamiento uniforme de todas las formulaciones de un mismo tema, sin "compliance falsa" ni evasivas.
-- Compatible con el pipeline de transformers de Hugging Face y con el framework DeepswapLLM para ejecucion en GPUs con poca memoria.
-- No se documentan capacidades de tool calling, agentes, vision ni audio.
+- Generación de texto conversacional multi-turno con plantilla de chat de Llama 3 (`apply_chat_template`).
+- Contexto largo de hasta 128.000 tokens, heredado del modelo base shb777/Llama-3.3-8B-Instruct-128K.
+- Procesamiento de contenido que los modelos alineados rechazan: análisis de código malicioso, revisión de exploits y discusión de temas sensibles sin rechazo declarado.
+- Multilingüismo limitado a los ocho idiomas etiquetados: inglés, alemán, francés, italiano, portugués, hindi, español y tailandés.
+- El autor afirma resistencia a la reactivación del rechazo mediante fine-tuning posterior.
+- No se documenta soporte de tool calling, function calling, uso de agentes, razonamiento multi-paso explícito, modo thinking, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Generacion de ficcion y narrativa sin restricciones: escritores y creadores de contenido pueden explorar temas tabu o controvertidos sin que el modelo interrumpa la generacion con avisos de seguridad, gracias a la eliminacion del subespacio de rechazo.
-- Analisis de documentos legales o academicos extensos: la ventana de 128K tokens permite procesar contratos, tesis o informes completos en una sola pasada, extrayendo resumenes o respondiendo preguntas sobre el contenido.
-- Asistente de escritura creativa para guiones y novelas: el modelo puede mantener el tono y la coherencia a lo largo de capitulos largos, sin perder el hilo argumental, y sin autocensurarse en escenas violentas o sexuales.
-- Chatbot para comunidades especializadas (por ejemplo, foros de debate sobre temas politicos o religiosos): al no rechazar preguntas incomodas, puede mantener conversaciones profundas y continuadas sobre temas que otros modelos evitarian.
-- Procesamiento de transcripciones de reuniones o entrevistas largas: con 128K de contexto, se pueden resumir horas de audio transcrito en un solo prompt, identificando acuerdos, desacuerdos y acciones.
-- Investigacion en seguridad de IA: el modelo sirve como caso de estudio para analizar como la ablacion de subespacios afecta al comportamiento de rechazo, y para probar tecnicas de red-team en entornos controlados.
+- Análisis de malware en seguridad defensiva: el modelo puede recibir muestras de código ofuscado o cadenas de explotación y describir su comportamiento sin bloquear la petición, algo que el autor documenta como el motivo principal de su publicación. Adecuado por su contexto de 128K, que permite cargar artefactos completos de un incidente en una sola ventana.
+- Red team y pruebas de robustez: sirve como modelo de referencia para evaluar clasificadores de contenido, filtros de salida y sistemas de moderación, generando respuestas que un modelo alineado rechazaría y midiendo si las defensas las detectan.
+- Reconstrucción de incidentes a partir de artefactos del atacante: con 128K de contexto se pueden introducir logs, scripts y volcados parciales de un compromiso y pedir una cronología o un resumen técnico sin que el modelo se niegue a procesar el material.
+- Investigación sobre alineamiento y edición de pesos: como caso de estudio reproducible de ablación de dirección de rechazo, útil para comparar metodologías de edición (abliteration frente a jbliteration) y medir su impacto en benchmarks de capacidad.
+- Generación de documentación técnica sensible: explicación de vulnerabilidades, técnicas de explotación conocidas o procedimientos de respuesta a incidentes para materiales internos de formación en seguridad.
+- Evaluación comparativa de refusal: el pipeline de Heretic y el conjunto mlabonne/harmful_behaviors permiten reproducir la medición de 0 rechazos genuinos sobre 100 prompts y contrastarla con otros modelos de la misma familia.
 
 ## Benchmarks y rendimiento
 
-El unico benchmark reportado es el de rechazos, basado en el conjunto de prompts de Heretic (mlabonne/harmful_behaviors test split, primeros 100 prompts):
+| Benchmark | Este modelo | Referencia |
+|---|---|---|
+| Heretic 100-prompt refusal (mlabonne/harmful_behaviors test[:100]) | 2/100 rechazos, 0/100 rechazos genuinos | no disponible para el modelo base |
+| MMLU | no disponible para este modelo | 77,89 % en Sharona (Qwen3.5-27B) tras la cirugia, frente a 76,84 % del baseline segun el autor |
 
-| Metrica | Resultado |
-|---|---|
-| Rechazos totales | 2/100 (ambos falsos positivos por coincidencia de palabras clave) |
-| Rechazos genuinos | 0/100 |
-
-No se han publicado resultados de benchmarks estandar como MMLU, HumanEval, GSM8K o MT-Bench en la informacion disponible. Tampoco hay datos de latencia o throughput.
+No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) para este checkpoint concreto en la informacion disponible. La cifra de MMLU citada en la model card corresponde a otro modelo de la coleccion del autor y no debe atribuirse a este.
 
 ## Requisitos de hardware
 
-- El modelo en bfloat16 ocupa aproximadamente 16 GB de VRAM (8.03B parametros x 2 bytes). Con cuantizacion int8 se reduce a unos 8 GB, y con int4 a unos 4 GB, aunque no se proporcionan archivos GGUF oficiales.
-- GPU recomendadas: para inferencia en bfloat16 se necesita una GPU con al menos 16 GB (por ejemplo, RTX 4090, A100 40GB, H100). Con cuantizacion int4 puede ejecutarse en GPUs de 6-8 GB como RTX 3060 o RTX 4060.
-- El autor recomienda el uso de DeepswapLLM, un framework que transmite capas entre GPU, RAM y disco, permitiendo ejecutar el modelo en GPUs con menos de 4 GB de VRAM sin cuantizacion, con un rendimiento hasta 4 veces superior a AirLLM.
-- Opciones de despliegue: al ser un modelo Llama, es compatible con vLLM, llama.cpp, Ollama y TGI, aunque no hay configuraciones predefinidas publicadas. Se puede cargar con transformers usando device_map="auto".
-- No se dispone de datos de latencia o throughput medidos.
+- VRAM estimada en bfloat16: aproximadamente 16 GB solo para pesos, más overhead de activaciones y caché KV; con 128K de contexto la caché KV crece de forma significativa y exige GPU de 40-80 GB para secuencias largas.
+- GPU recomendadas para bfloat16 completo: A100 40/80 GB, H100 80 GB, o dos GPU de 24 GB en paralelo con `device_map="auto"`.
+- En GPU de consumo: cabe en RTX 4090 (24 GB) en bfloat16 con contexto moderado; en RTX 3090 (24 GB) de forma similar; en GPU de 16 GB requiere cuantización, no documentada en la información disponible.
+- Despliegue: el autor proporciona ejemplo con `transformers` y `device_map="auto"`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, aunque al ser safetensors de arquitectura Llama son compatibles con las herramientas habituales.
+- Opción del autor para GPU insuficiente: DeepswapLLM, que según la model card hace streaming de capas entre GPU, RAM y disco y afirma ser hasta 4 veces más rápido que AirLLM.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Rechazo | Idiomas |
+| Modelo | Parametros | Contexto | Refusal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.3-8B-Instruct-128K-Jbliterated | 8.03B | 128K | Llama 3.1 | Sin rechazo (0/100) | 8 |
-| Llama 3.1 8B Instruct | 8.03B | 128K | Llama 3.1 | Con rechazo estandar | 8 |
-| Mistral 7B Instruct v0.3 | 7.3B | 32K | Apache 2.0 | Con rechazo estandar | 5 |
+| Llama-3.3-8B-Instruct-128K-Jbliterated | 8,03 B | 128K | 0/100 genuinos (benchmark propio) | Llama 3.1 Community | Hugging Face, safetensors |
+| shb777/Llama-3.3-8B-Instruct-128K (base) | 8,03 B | 128K | alineado, no medido aqui | Llama 3.1 Community | Hugging Face |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128K | alineado | Llama 3.1 Community | Hugging Face, amplio ecosistema |
+| Sharona (Qwen3.5-27B) segun el autor | 27 B (aprox.) | no disponible | reducido | no disponible | coleccion del autor |
 
-La principal diferencia con Llama 3.1 8B Instruct es la eliminacion del rechazo; el resto de caracteristicas (arquitectura, contexto, idiomas) son identicas. Frente a Mistral 7B, ofrece el doble de contexto y mas idiomas, pero con una licencia mas restrictiva y sin garantias de rendimiento en tareas estandar.
+La comparación relevante es con el modelo base: este checkpoint no mejora capacidades, solo elimina el rechazo. Frente a Llama 3.1 8B Instruct de Meta, comparte licencia y tamaño pero difiere en comportamiento de seguridad y en soporte de herramientas de terceros, mucho mayor en el modelo oficial.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido disenado para no rechazar peticiones, lo que incluye contenido potencialmente peligroso, ilegal o eticamente cuestionable. Su uso en produccion sin salvaguardas adicionales puede generar responsabilidades legales y danos reputacionales.
-- No se han evaluado sesgos sociales ni alucinaciones en este modelo concreto; al derivar de Llama 3.3, hereda los sesgos del modelo base, que pueden amplificarse al no existir filtros de seguridad.
-- La ventana de 128K tokens puede degradar la calidad de las respuestas en contextos muy largos, aunque no se han publicado mediciones de "lost in the middle".
-- La licencia Llama 3.1 Community License permite uso comercial, pero exige que los modelos derivados incluyan la atribucion "Built with Llama" y que no se utilicen para ciertos fines restringidos (por ejemplo, mejorar otros modelos de lenguaje grandes sin autorizacion).
-- El metodo Jbliteration no esta documentado academicamente; no hay papers ni evaluaciones independientes que verifiquen las afirmaciones del autor sobre la resistencia al fine-tuning o la precision de la ablacion.
-- El modelo solo soporta los ocho idiomas listados; el espanol esta incluido, pero la calidad en idiomas distintos del ingles puede ser inferior.
+- Eliminación deliberada de la conducta de rechazo: el modelo puede generar contenido dañino, instrucciones operativas para actividades ilícitas o asistencia en ciberataques. El propio autor lo advierte.
+- La evidencia de retención de capacidad es débil: la única medición de MMLU corresponde a otro modelo (Sharona, Qwen3.5-27B), no a este checkpoint, y no hay benchmarks de capacidad publicados para él.
+- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de veracidad ni de tasas de error en tareas factuales.
+- Idiomas limitados a ocho; el rendimiento en español, hindi y tailandés no está medido y probablemente sea inferior al del inglés.
+- La licencia Llama 3.1 Community impone restricciones de uso comercial, obligaciones de atribución ("Built with Llama") y límites de usuarios mensuales para determinados despliegues; debe revisarse antes de cualquier uso en producción.
+- El modelo se distribuye como "demo" según el autor, que declara que sus modelos públicos se publican a fuerza parcial y no a plena capacidad; esto invalida asumir que representa el máximo rendimiento del método.
+- El contexto de 128K exige VRAM elevada y puede degradar la calidad en el extremo superior de la ventana; no se documenta evaluación de aguja en pajar.
+- Uso previsto por el autor: investigación en seguridad, red team y análisis defensivo. No es adecuado como modelo de atención al cliente ni en aplicaciones orientadas al público sin filtros adicionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.3-8B-Instruct-128K-Jbliterated
-- Repositorio de archivos: https://huggingface.co/ApolloRaines/Llama-3.3-8B-Instruct-128K-Jbliterated/tree/main
 - Modelo base: https://huggingface.co/shb777/Llama-3.3-8B-Instruct-128K
-- Framework DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
-- Benchmark Heretic: https://github.com/p-e-w/heretic
-- Analisis de seguridad de Palo Alto Networks: https://insights-db.paloaltonetworks.com/models/ApolloRaines/Llama-3.3-8B-Instruct-128K-Jbliterated/ff79faa096dac6d9272166805c0d33819d0fb977/overview
+- Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
+- Heretic (benchmark de refusal): https://github.com/p-e-w/heretic
+- Dataset mlabonne/harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors
+- Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

@@ -2,114 +2,108 @@
 
 ## Resumen
 
-Quail Multi Speaker es un modelo de mejora de voz (speech enhancement) de tipo speech-to-speech desarrollado por ai-coustics. Su funcion no es generar texto ni audio sintetico, sino limpiar la senal de microfono en tiempo real eliminando ruido y reverberacion antes de enviarla a un motor de reconocimiento de voz (STT/ASR) o a un agente de voz. Esta disenado especificamente para escenarios con multiples hablantes, condiciones de campo lejano (far-field) y entornos ruidosos, donde los sistemas de voz suelen degradarse.
+Quail Multi Speaker es un modelo de mejora de voz (speech enhancement) de tipo audio-a-audio desarrollado por ai-coustics, orientado a eliminar ruido y reverberacion de audio de microfono en tiempo real, preservando a todos los hablantes presentes. No es un modelo de lenguaje ni un sistema ASR: actua como preprocesador o "primer" para pipelines de speech-to-text y agentes de voz, de modo que el motor STT posterior recibe una senal mas limpia. Su propuesta de valor es operar con 30 ms de latencia, sin GPU y sin dependencia de ONNX, lo que facilita su integracion en produccion.
 
-El modelo se distribuye como artefacto propietario que se ejecuta a traves del paquete `aic-sdk` (disponible en Python, Rust, C/C++, Node.js y WebAssembly). No requiere GPU ni dependencia de ONNX, y opera con una latencia de 30 ms. Esta disponible en dos variantes de frecuencia de muestreo: 8 kHz y 16 kHz. Su relevancia actual radica en que ataca el cuello de botella mas comun de los pipelines de Voice AI en produccion: la calidad de la senal de entrada.
+El modelo se ofrece en dos frecuencias de muestreo, 8 kHz y 16 kHz, y se distribuye a traves del paquete `aic-sdk`, disponible para Python, Rust, C/C++, Node.js y WebAssembly. La inferencia se realiza bloque a bloque sobre audio mono float32, lo que lo hace adecuado para procesamiento en streaming con requisitos de tiempo real. Su licencia es propietaria (`ai-coustics-model-license`) y requiere una clave SDK, con una prueba gratuita de 30 dias.
 
-La propuesta de valor declarada por el autor es una reduccion de hasta el 30% en la tasa de error de palabras (WER) en los motores STT, lo que lo posiciona como un preprocesador especializado para pipelines de transcripcion y agentes conversacionales, no como un modelo de lenguaje generativo.
+La relevancia actual del modelo radica en el cuello de botella que introduce el ruido en entornos de campo lejano y con multiples hablantes para los sistemas de reconocimiento de voz y los agentes conversacionales. ai-coustics declara una reduccion de la tasa de error de palabra (WER) de hasta el 30 % en condiciones ruidosas, lo que lo posiciona como una pieza de infraestructura para despliegues de Voice AI en produccion mas que como un modelo generativo de proposito general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo de mejora de voz, inferencia via `aic-sdk`) |
-| Parametros totales | No disponible |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (procesamiento por bloques de audio en tiempo real) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (procesamiento agnostico al idioma de la senal) |
-| Licencia | ai-coustics-model-license (propietaria, enlace: https://ai-coustics.com/legal/model-license) |
-| Formato de pesos | Artefacto propietario descargable via `aic.Model.download`; no se publican safetensors ni GGUF |
+| Arquitectura | no disponible (modelo de mejora de voz audio-a-audio, inferencia bloque a bloque) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (procesamiento por bloques de audio; tamano de bloque definido por `config.block_size`) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | agnostico al idioma (language-agnostic) |
+| Licencia | ai-coustics-model-license (propietaria, requiere clave SDK) |
+| Formato de pesos | pesos gestionados por `aic-sdk` mediante `aic.Model.download` / `aic.Model.from_file`; formatos concretos no disponibles |
 | Frecuencias de muestreo | 8 kHz y 16 kHz |
 | Latencia | 30 ms |
-| Requisito de GPU | No (inferencia en CPU) |
-| Entrada | Audio mono float32, procesado por bloques (`config.block_size`) |
-| Canales | Mono |
+| Canales | mono (float32) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna del modelo (tipo de red, numero de capas, parametros) ni sobre el dataset de entrenamiento, el numero de tokens o el proceso de optimizacion. La model card solo describe su comportamiento funcional: eliminacion de ruido y reverberacion en tiempo real, optimizado para la precision de motores STT en condiciones de multiples hablantes y campo lejano.
+No se dispone de informacion publica sobre la arquitectura interna del modelo (tipo de red, numero de capas o parametros). La model card describe un modelo de speech-to-speech que elimina ruido y reverberacion en tiempo real y que esta optimizado para la precision del STT aguas abajo. El procesamiento es por bloques de tamano fijo (`config.block_size`), lo que encaja con un diseno de streaming de baja latencia y apto para tiempo real.
 
-La innovacion tecnica destacable, segun el autor, es su diseno para inferencia en CPU con latencia de 30 ms y procesamiento por bloques seguro en tiempo real, sin dependencia de ONNX. El modelo expone un parametro ajustable en tiempo de ejecucion (`EnhancementLevel`, rango 0.0-1.0) que permite calibrar la intensidad de la mejora para optimizar contra un motor STT concreto.
+Tampoco se detallan los datos de entrenamiento (numero de horas, composicion del dataset, tecnicas de aumento) ni si se emplearon metodos de alineacion o ajuste fino especificos. La unica innovacion tecnica explicitamente documentada es la ausencia de dependencia de ONNX y la ejecucion sin GPU, junto con un parametro ajustable en tiempo de ejecucion (`ProcessorParameter.EnhancementLevel`, rango 0.0-1.0) que permite calibrar la intensidad de la mejora para un motor STT concreto.
 
 ## Capacidades
 
-- Eliminacion de ruido (denoising) y reverberacion en senal de microfono en tiempo real.
-- Mejora orientada a STT: reduccion declarada de hasta un 30% en WER.
-- Soporte de multiples hablantes y condiciones de campo lejano.
-- Procesamiento por bloques con latencia de 30 ms, apto para pipelines en streaming.
-- Ejecucion en CPU sin GPU ni dependencia de ONNX.
-- Ajuste dinamico de la intensidad de mejora (`EnhancementLevel`) para adaptarse a distintos motores STT.
-- Integracion con frameworks de voz en tiempo real como LiveKit y Pipecat.
+- Mejora de voz audio-a-audio en tiempo real: eliminacion de ruido y reverberacion de audio de microfono.
+- Preservacion de multiples hablantes simultaneos (multi-speaker), a diferencia de los modelos de aislamiento de hablante principal.
+- Optimizacion explicita para precision de speech-to-text, con reduccion declarada de hasta el 30 % de WER.
+- Soporte de dos frecuencias de muestreo: 8 kHz y 16 kHz.
+- Independencia del idioma: al ser un modelo de senal, no esta limitado a un conjunto de lenguas.
+- Ajuste dinamico de la intensidad de mejora mediante `EnhancementLevel` (0.0-1.0).
+- Procesamiento por bloques compatible con streaming y tiempo real (latencia de 30 ms).
+- Ejecucion sin GPU y sin ONNX.
 - SDK multi-lenguaje: Python, Rust, C/C++, Node.js y WebAssembly.
-- No realiza generacion de texto, razonamiento, codigo ni vision; es exclusivamente un preprocesador de audio.
+- No incluye generacion de texto, razonamiento, codigo, vision ni tool calling; su funcion es exclusivamente de preprocesado de audio.
 
 ## Casos de uso
 
-- Transcripcion de reuniones con multiples participantes: el modelo limpia la senal de cada microfono antes de enviarla al motor ASR, reduciendo errores en entornos de sala con reverberacion y habla solapada.
-- Agentes de voz en atencion al cliente: se coloca como etapa previa al STT en el pipeline del agente, de modo que la deteccion de intencion y el reconocimiento de entidades trabajen sobre audio limpio incluso con ruido de fondo.
-- Telefonia y centros de llamadas: al soportar 8 kHz, encaja en pipelines telefonicos tradicionales donde la senal llega degradada y con ruido de canal.
-- Subtitulado en directo y streaming: la latencia de 30 ms permite generar subtitulos casi en tiempo real sin acumular retardo perceptible en la emision.
-- Asistentes de voz en dispositivos de borde (edge): al ejecutarse en CPU sin GPU, puede desplegarse en hardware limitado como raspberry o dispositivos embebidos con SDK en C/C++ o WebAssembly.
-- Preprocesado en pipelines de Voice AI sobre LiveKit o Pipecat: se integra como nodo de mejora antes del STT en arquitecturas de agentes conversacionales en tiempo real.
-- Investigacion en ASR: permite evaluar el impacto de la mejora de senal sobre distintos motores STT ajustando `EnhancementLevel` y midiendo WER de forma controlada.
+- Preprocesado para pipelines ASR en produccion: se coloca delante del motor STT para limpiar el audio de entrada y reducir el WER en entornos ruidosos; su latencia de 30 ms permite mantener la conversacion en tiempo real.
+- Agentes de voz en atencion al cliente: al mejorar la senal de microfono antes del reconocimiento, reduce transcripciones erroneas en llamadas con ruido de fondo o reverberacion, lo que mejora la comprension de intenciones y la respuesta del agente.
+- Reuniones y salas con multiples hablantes: al preservar a todos los hablantes (no aisla uno solo), es adecuado para transcripcion de reuniones y diarizacion aguas abajo en escenarios de campo lejano.
+- Telefonia y VoIP: la variante de 8 kHz encaja con la banda telefonica, por lo que puede integrarse en centralitas y flujos de atencion telefonica para limpiar la senal antes del STT.
+- Captura en dispositivos embebidos o edge: al no requerir GPU y ofrecer SDK para C/C++, Rust y WebAssembly, puede ejecutarse en dispositivos con recursos limitados.
+- Integracion en frameworks de agentes de voz: la documentacion incluye quickstarts para LiveKit y Pipecat, lo que permite incorporarlo como etapa de mejora dentro de pipelines conversacionales existentes.
+- Calibracion por motor STT: mediante `EnhancementLevel` se puede ajustar la agresividad de la mejora para maximizar la precision del motor de reconocimiento concreto usado en cada despliegue.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks detallados (tablas de WER por motor STT, comparativas numericas) en la informacion disponible. El autor declara una reduccion de hasta el 30% en la tasa de error de palabras (WER) en condiciones ruidosas, de campo lejano y con multiples hablantes, pero no se aportan cifras desglosadas por motor ni por dataset.
-
-| Metrica | Valor declarado |
-|---|---|
-| Reduccion de WER | Hasta 30% (sin desglose por motor STT) |
-| Latencia | 30 ms |
-| Frecuencias de muestreo | 8 kHz y 16 kHz |
+No se han publicado resultados de benchmarks detallados en la informacion disponible. La model card unicamente declara una reduccion de la tasa de error de palabra (WER) de hasta el 30 % en condiciones ruidosas, sin tablas de resultados por conjunto de datos ni comparaciones numericas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; la inferencia se ejecuta en CPU.
-- GPU recomendadas: no aplica.
-- Compatibilidad con GPU de consumo: no aplica (no necesita GPU).
-- Despliegue: mediante el paquete `aic-sdk` (Python, Rust, C/C++, Node.js, WebAssembly). No se soportan vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
-- Latencia: 30 ms declarados.
+- VRAM: no aplica; el modelo esta disenado para ejecutarse sin GPU.
+- GPU recomendadas: no necesarias. La inferencia se realiza en CPU.
+- Compatibilidad con GPU de consumo: no aplica, ya que no requiere GPU.
+- Despliegue: mediante el paquete `aic-sdk` (Python, Rust, C/C++, Node.js, WebAssembly); no se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Latencia: 30 ms declarados por el autor.
 - Throughput: no disponible.
-- Requiere una clave SDK (`aic-sdk-key`) para su uso; se ofrece una prueba gratuita de 30 dias sin tarjeta de credito.
+- Requisitos adicionales: clave SDK (`aic-sdk-key`) obtenida en developers.ai-coustics.com; audio de entrada mono en float32 procesado por bloques de `config.block_size`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Familia | Uso previsto | Frecuencias | Latencia | Licencia |
 |---|---|---|---|---|---|
-| Quail Multi Speaker | Quail | STT en entornos ruidosos con multiples hablantes | 8 y 16 kHz | 30 ms | ai-coustics-model-license |
-| Quail Voice Focus | Quail | Aislamiento de hablante principal para agentes de voz | 16 kHz (usable en 8 kHz) | No disponible | ai-coustics-model-license |
-| Rook Multi Speaker | Rook | Mejora perceptiva para escucha humana (conferencias, telefonia) | Hasta 48 kHz | No disponible | ai-coustics-model-license |
-| VAD Multi Speaker | VAD | Deteccion de actividad de voz robusta al ruido | No disponible | No disponible | ai-coustics-model-license |
+| Quail Multi Speaker | Quail | STT en condiciones ruidosas, campo lejano y multiples hablantes; reduccion de WER de hasta 30 % | 8 y 16 kHz | 30 ms | ai-coustics-model-license |
+| Quail Voice Focus | Quail | Aislamiento del hablante principal para agentes de voz; hasta 43 % menos errores de palabra | 16 kHz (usable en 8 kHz) | no disponible | ai-coustics-model-license |
+| Rook Multi Speaker | Rook | Escucha humano-a-humano (conferencias, telefonia); mejora perceptiva de ruido, reverberacion y distorsion | hasta 48 kHz | no disponible | ai-coustics-model-license |
+| VAD Multi Speaker / VAD Voice Focus | VAD | Deteccion de actividad de voz robusta al ruido | no disponible | no disponible | ai-coustics-model-license |
 
-El autor indica explicitamente que Quail Multi Speaker es la opcion recomendada para Voice AI y STT, mientras que Rook Multi Speaker esta pensado para escucha humana y no se recomienda para casos de uso de Voice AI.
+Los tres modelos de la familia Quail/Rook comparten licencia propietaria y ecosistema SDK; la eleccion depende del caso: Quail Multi Speaker para STT multi-hablante, Quail Voice Focus para agentes con un hablante principal y Rook para escucha humana.
 
 ## Limitaciones y advertencias
 
-- Modelo propietario: la licencia `ai-coustics-model-license` restringe el uso comercial; es necesario revisar los terminos en https://ai-coustics.com/legal/model-license y, para uso empresarial, contactar con ai-coustics.
-- Requiere una clave SDK valida para funcionar; sin ella el procesador no opera.
-- Solo acepta entrada mono; no procesa audio estereo o multicanal.
-- No es un modelo de lenguaje: no genera texto, no razona, no responde preguntas ni ejecuta tool calling.
-- No se han publicado detalles de arquitectura, entrenamiento ni sesgos, por lo que no es posible evaluar sesgos conocidos ni riesgo de alucinacion (no aplica en el sentido generativo, pero si puede introducir artefactos de audio en la senal mejorada).
-- No se especifican los idiomas soportados; el procesamiento es sobre senal acustica, pero no hay validacion publicada por idioma.
-- La reduccion de WER del 30% es una cifra declarada por el fabricante sin desglose publico por motor STT ni dataset, por lo que conviene validarla en el pipeline concreto antes de desplegar en produccion.
-- No es compatible con frameworks de inferencia estandar (vLLM, llama.cpp, Ollama, TGI); depende exclusivamente del SDK propietario.
-- El ajuste de `EnhancementLevel` puede afectar negativamente a algunos motores STT si se calibra de forma inadecuada; requiere evaluacion por caso de uso.
+- Modelo propietario con licencia `ai-coustics-model-license`: el uso comercial esta sujeto a los terminos de ai-coustics y requiere clave SDK; no es software libre ni de codigo abierto.
+- Requiere una clave SDK para funcionar; la prueba gratuita es de 30 dias y despues es necesario un plan de pago o licencia empresarial.
+- Entrada limitada a audio mono en float32; no procesa audio estereo o multicanal de forma nativa.
+- Frecuencias de muestreo limitadas a 8 kHz y 16 kHz; no esta pensado para audio de alta fidelidad (para eso ai-coustics remite a Rook Multi Speaker, hasta 48 kHz).
+- No es un modelo de reconocimiento de voz: no transcribe ni genera texto; debe combinarse con un motor STT.
+- No esta disenado para aislamiento de un hablante principal; para ese caso ai-coustics recomienda Quail Voice Focus.
+- No se publican detalles de arquitectura, datos de entrenamiento ni benchmarks completos, lo que limita la evaluacion independiente del rendimiento real.
+- No se dispone de informacion sobre sesgos, robustez frente a tipos concretos de ruido ni comportamiento en idiomas o acentos especificos.
+- La cifra de reduccion de WER (hasta 30 %) es una declaracion del autor y depende del motor STT y de las condiciones acusticas; conviene validarla en el entorno de despliegue propio.
+- No se documentan limitaciones de contexto ni de idioma, ya que el modelo es independiente del idioma y procesa senal, no texto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ai-coustics/quail-multi-speaker
-- Documentacion del modelo: https://docs.ai-coustics.com/models/speech-enhancement/quail-multi-speaker
+- Modelo en Hugging Face: https://huggingface.co/ai-coustics/quail-multi-speaker
+- Documentacion de Quail Multi Speaker: https://docs.ai-coustics.com/models/speech-enhancement/quail-multi-speaker
 - Quickstart del SDK: https://docs.ai-coustics.com/models/get-started/sdk-quickstart
 - Documentacion general: https://docs.ai-coustics.com
 - Quickstart LiveKit: https://docs.ai-coustics.com/models/get-started/livekit-quickstart
 - Ejemplo Pipecat: https://github.com/pipecat-ai/pipecat/blob/main/examples/voice/voice-aicoustics.py
 - Artefactos y checksums: https://artifacts.ai-coustics.io
-- SDK Python (PyPI): https://pypi.org/project/aic-sdk/
+- SDK Python en PyPI: https://pypi.org/project/aic-sdk/
 - Clave SDK gratuita: https://developers.ai-coustics.com
 - Licencia del modelo: https://ai-coustics.com/legal/model-license
-- Sitio del fabricante: https://ai-coustics.com/
+- Licencia empresarial: https://ai-coustics.com/
 - Quail Voice Focus: https://huggingface.co/ai-coustics/quail-voice-focus
 - Rook Multi Speaker: https://huggingface.co/ai-coustics/rook-multi-speaker
 - VAD Multi Speaker: https://huggingface.co/ai-coustics/vad-multi-speaker

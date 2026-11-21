@@ -5,7 +5,7 @@
   "author": "Kaleto",
   "url": "https://huggingface.co/Kaleto/SenseNova-Loop-9B-heretic",
   "created_at": "2026-11-19T15:26:00.000Z",
-  "updated_at": "2026-11-19T16:17:25.000Z",
+  "updated_at": "2026-11-20T19:51:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -17,6 +17,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "sensenova_loop",
     "text-generation",
     "heretic",
@@ -34,18 +35,21 @@
     "base_model:sensenova/SenseNova-Loop-9B",
     "base_model:finetune:sensenova/SenseNova-Loop-9B",
     "license:apache-2.0",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
   ],
   "likes": 0,
   "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 9412959856,
   "parameters_human": "9.41B",
-  "storage_bytes": 41094785405,
-  "storage_human": "41.1 GB",
-  "context_length": null,
+  "storage_bytes": 60282883321,
+  "storage_human": "60.3 GB",
+  "context_length": 524288,
   "base_model": "sensenova/SenseNova-Loop-9B",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

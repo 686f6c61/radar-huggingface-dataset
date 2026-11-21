@@ -2,95 +2,101 @@
 
 ## Resumen
 
-Parakeet-TDT 1.1B Persian es un modelo de reconocimiento automatico del habla (ASR) especializado en persa (farsi), desarrollado por el usuario de Hugging Face mmahdi-sz sobre la arquitectura FastConformer-TDT de NVIDIA NeMo. Con 1.100 millones de parametros, emplea un transductor Token-and-Duration (TDT) que predice simultaneamente tokens y duraciones, lo que se traduce en velocidades de inferencia de 80 a 95 veces en tiempo real segun el autor. El modelo se entreno en una unica GPU NVIDIA RTX PRO 6000 Blackwell con 96 GB de VRAM.
+Parakeet-TDT 1.1B Persian es un modelo de reconocimiento automático del habla (ASR) para farsi, desarrollado por el usuario de Hugging Face mmahdi-sz a partir del modelo base `nvidia/parakeet-tdt-1.1b` de NVIDIA. Emplea la arquitectura FastConformer (encoder) combinada con un decodificador Token-and-Duration Transducer (TDT), un esquema no autorregresivo que predice tanto el token como su duración, lo que elimina el bucle de decodificación autoregresiva típico de modelos como Whisper y reduce drásticamente las alucinaciones ante silencios, ruido o música de fondo.
 
-El problema que aborda es la escasez de sistemas ASR de alta calidad para persa: la mayoria de modelos multilingues cubren este idioma de forma marginal y con tasas de error elevadas. Este modelo declara un WER estricto del 4,15 % en FLEURS (fa_ir) y mas del 80 % de coincidencia exacta a nivel de frase, ademas de un tokenizer SentencePiece especifico de 1.024 tokens que preserva el Zero-Width Non-Joiner (ZWNJ), un caracter critico en la ortografia persa.
+El modelo se ha ajustado sobre aproximadamente 93 horas de audio en farsi, combinando voz de estudio de alta fidelidad y diálogo conversacional extraído y limpiado de películas. Incorpora un tokenizador SentencePiece propio de 1.024 piezas que preserva el Zero-Width Non-Joiner (ZWNJ) nativo del persa, un detalle relevante para la correcta tokenización de palabras compuestas y afijos.
 
-Es relevante por su tamano manejable (inferencia en aproximadamente 2 GB de VRAM en precision media), su licencia permisiva CC-BY-4.0 y su integracion nativa con NeMo, lo que facilita su despliegue en pipelines de transcripcion en produccion. No obstante, el repositorio es de gran tamano (102,4 GB) por la conservacion de multiples checkpoints de entrenamiento.
+Su interés práctico radica en el paquete de cuantización incluido: además de los pesos NeMo nativos, distribuye un paquete ONNX INT8 autónomo que funciona en CPU estándar con menos de 1,6 GB de RAM y latencia inferior al segundo, sin requerir Python, PyTorch ni CUDA. El repositorio incluye además una matriz de benchmarks sobre GPU Blackwell y CPU con AVX-512 VNNI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer-TDT (Token-and-Duration Transducer), NVIDIA NeMo |
-| Parametros totales | 1.1B (aproximadamente 1.100 millones) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de audio; ventana de inferencia por segmento no especificada) |
-| Tipos de cuantizacion | no disponible explicitamente; el autor menciona `model.half()` (FP16, aproximadamente 2 GB de VRAM) |
-| Idiomas soportados | persa (farsi, `fa`) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | `.nemo` (checkpoint NeMo; no se indica safetensors ni GGUF) |
+| Arquitectura | FastConformer (encoder) + Token-and-Duration Transducer (TDT, decoder) |
+| Parametros totales | 1,1 B (heredados del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP32, FP16, BF16, FP8, INT8, INT4, NVFP4; paquete ONNX INT8 |
+| Idiomas soportados | farsi (fa) |
+| Licencia | OpenMDW 1.1 |
+| Formato de pesos | NeMo (.nemo), ONNX (INT8) |
 
 ## Arquitectura y entrenamiento
 
-El modelo usa la arquitectura FastConformer combinada con un decodificador TDT (Token-and-Duration Transducer) de NeMo. El TDT extiende el transductor RNN-T clasico anadiendo una prediccion conjunta de duracion por token, lo que reduce el numero de pasos de decodificacion y permite alcanzar velocidades de 80 a 95 veces tiempo real. El encoder FastConformer emplea atencion con submuestreo de profundidad, un diseno habitual en los modelos Parakeet de NVIDIA para ASR eficiente.
+El modelo sigue la arquitectura Parakeet-TDT de NVIDIA: un encoder FastConformer, variante eficiente del Conformer con atención por bloques y subsampling agresivo, acoplado a un decodificador Transducer que predice conjuntamente el token y su duración (Token-and-Duration Transducer). Este esquema permite saltos explícitos de duración y de token en blanco, lo que evita la generación de texto espurio en tramos sin habla y ofrece un factor de tiempo real muy alto en inferencia.
 
-El tokenizer es un SentencePiece Unigram de 1.024 tokens disenado especificamente para la fonetica persa, conservando el ZWNJ (`\u200c`). Los datos de entrenamiento incluyen `mmahdi-sz/mana-tts-v2-persian` y `google/fleurs` (segun los metadatos del repositorio). El autor indica entrenamiento en una NVIDIA RTX PRO 6000 Blackwell de 96 GB y conserva checkpoints maduros entre los pasos 6.050 y 11.325, con un artefacto final congelado (`parakeet_tdt_1.1b_fa_studio_golden.nemo`). No se especifican en la informacion disponible el numero total de tokens de audio, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF/DPO (poco habituales en ASR).
+El ajuste se realizó en dos fases. La fase 1 ("Golden Studio") se entrenó sobre voz de estudio limpia y alcanza un 3,45 % de WER en habla limpia según la model card. La fase 2 incorpora diálogo conversacional de películas, con un total de 93 horas de audio, usando los conjuntos `mmahdi-sz/mana-tts-v2-persian`, `PerSets/filimo-persian-asr` y `google/fleurs` (este último presumiblemente para evaluación). No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (no aplicables de forma habitual en ASR). El tokenizador es un SentencePiece Unigram de 1.024 piezas entrenado específicamente para farsi, con el token #1 reservado al ZWNJ.
 
 ## Capacidades
 
-- Transcripcion de audio a texto en persa (farsi) con salida de texto plano.
-- Reconocimiento tolerante a caracteres persas complejos gracias a un vocabulario especifico que preserva el ZWNJ.
-- Inferencia rapida: 80-95x tiempo real segun el autor.
-- Soporte de audio a 16 kHz mono (recomendado en la model card).
-- Capacidad de ejecucion en precision media (FP16) con huella de VRAM reducida (aproximadamente 2 GB).
-- No se documenta soporte de tool calling, function calling, agentes, vision ni audio multimodal; es un modelo puramente ASR.
-- Capacidad multilingue limitada al persa.
-- No se documenta modo "thinking" ni razonamiento de multiples pasos.
+- Reconocimiento de voz en farsi (farsi estándar) sobre audio de estudio y conversacional.
+- Decodificación no autorregresiva con TDT, con inmunidad declarada a alucinaciones en silencios, ruido gaussiano y bucles de música de fondo.
+- Preservación del ZWNJ en la salida, relevante para la ortografía correcta de compuestos y afijos persas.
+- Inferencia en GPU con FP16, BF16, FP8, INT8, INT4 y NVFP4, y en CPU mediante ONNX INT8 con AVX-512 VNNI.
+- Paquete ONNX autónomo ejecutable sin Python, PyTorch ni CUDA.
+- No se documentan capacidades de traducción, diarización, timestamps por palabra ni detección de idioma.
 
 ## Casos de uso
 
-- Transcripcion de reuniones y entrevistas en persa: el modelo convierte audio de 16 kHz en texto con WER bajo (4,15 % declarado en FLEURS), adecuado para generar actas y resumenes posteriores con un LLM.
-- Subtitulado automatico de contenido audiovisual en persa: la velocidad de 80-95x tiempo real permite procesar horas de video en minutos en una sola GPU.
-- Atencion al cliente y call centers: transcripcion por lotes de llamadas en persa para analitica, control de calidad y busqueda en conversaciones.
-- Dictado y accesibilidad: integracion en aplicaciones de escritorio o moviles que conviertan voz a texto en persa para usuarios con discapacidad o para productividad.
-- Generacion de corpus y datasets: transcripcion masiva de archivos de audio persas para construir datasets de entrenamiento o fines de investigacion linguistica.
-- Verificacion y moderacion de contenido: transcripcion de audio subido por usuarios en plataformas para su analisis automatizado y cumplimiento normativo.
-- Investigacion en ASR de bajos recursos: base para fine-tuning o comparacion en estudios sobre reconocimiento de habla en lenguas de menos recursos.
+- Subtitulado automático de contenido audiovisual en farsi: el modelo está ajustado específicamente sobre diálogo de películas (conjunto Filimo), por lo que maneja registro conversacional y solapamientos de habla mejor que un ASR genérico; el paquete ONNX INT8 permite procesar horas de vídeo en CPU sin GPU dedicada.
+- Transcripción de reuniones y llamadas: la inmunidad a alucinaciones en silencios y ruido evita inserciones de texto fantasma en pausas, un problema frecuente en modelos autorregresivos como Whisper en audio de baja calidad.
+- Atención al cliente y centros de contacto: el bajo coste de inferencia en CPU (menos de 1,6 GB de RAM) permite desplegar la transcripción en servidores sin acelerador, con latencia inferior al segundo por clip.
+- Generación de corpus y datasets de voz en farsi: el modelo sirve para alinear y transcribir audio masivo destinado a entrenar otros sistemas (TTS, ASR, modelos de lenguaje) con el tokenizador ZWNJ-aware.
+- Accesibilidad: subtitulado en tiempo casi real de retransmisiones o vídeos para usuarios sordos, apoyándose en el RTF de 317,7x en GPU Blackwell o de 16-21x en CPU con AVX-512.
+- Búsqueda y análisis de archivos de audio: indexación de podcasts, archivos históricos o grabaciones judiciales en farsi mediante transcripción por lotes con el paquete ONNX.
+- Integración en pipelines de vídeo bajo demanda: el paquete ONNX sin dependencias de CUDA simplifica el despliegue en contenedores ligeros o en el edge.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados de forma independiente):
+Matriz de cuantización en GPU (NVIDIA RTX PRO 6000 Blackwell, 96 GB, CUDA 13.2), 50 clips idénticos, 787,02 s de audio, N=30 ejecuciones por configuración:
 
-| Benchmark | Dataset | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| ASR persa | FLEURS (fa_ir) | WER (test estricto) | 4,15 % | No |
-| ASR persa | No especificado | WER normalizado | < 2,1 % | No |
-| ASR persa | No especificado | Coincidencia exacta a nivel de frase | > 80 % | No |
+| Formato | Tamano | Tiempo medio (s) | RTF medio | P95 latencia | VRAM pico | WER normalizado (%) | CER normalizado (%) |
+|---|---|---|---|---|---|---|---|
+| FP16 | 1,99 GB | 2,508 | 312,90x | 2,56 s | 2,88 GB | 116,96 | 87,82 |
+| FP32 | 3,99 GB | 2,994 | 262,17x | 3,08 s | 5,74 GB | 116,88 | 87,79 |
+| INT8 | 1,39 GB | 3,688 | 212,72x | 3,74 s | 3,14 GB | 116,96 | 87,81 |
+| FP8 | 1,39 GB | 4,111 | 190,86x | 4,14 s | 3,14 GB | 117,11 | 87,84 |
+| INT4 | 0,96 GB | 4,382 | 179,07x | 4,44 s | 3,14 GB | 116,09 | 87,56 |
+| BF16 | 1,99 GB | 4,810 | 163,11x | 4,86 s | 2,88 GB | 116,80 | 87,81 |
+| NVFP4 | 1,02 GB | 6,756 | 116,13x | 6,87 s | 2,76 GB | 117,11 | 88,10 |
+
+Los valores de WER y CER normalizados superiores al 100 % y 87 % respectivamente no son comparables con un WER estándar: la model card no especifica la normalización aplicada, por lo que deben interpretarse únicamente como referencia interna entre cuantizaciones. La model card declara además un 3,45 % de WER en habla limpia para el modelo de fase 1 y una comparación frente a Whisper-Large-v3 en los ficheros `benchmark_formal_fleurs.json` y `benchmark_conversational_filimo.json`, cuyos valores numéricos no se incluyen en la información disponible. En CPU (AMD EPYC Genoa con AVX-512 VNNI) el RTF declarado es de 16,35x a 21,52x.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 2 GB en FP16 (`model.half()`), segun la model card; en FP32 seria mayor (no cuantificado en la informacion disponible).
-- GPU recomendadas: el modelo se entreno en NVIDIA RTX PRO 6000 Blackwell (96 GB), pero la inferencia en FP16 cabe en GPUs de consumo.
-- Cabe en GPU de consumo: si, en tarjetas con al menos 2-4 GB de VRAM libres (por ejemplo, GTX 1650, RTX 3050, RTX 4060).
-- Opciones de despliegue: NeMo (`EncDecRNNTBPEModel.restore_from`), tal como se documenta. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a LLM, no a este tipo de modelo).
-- Latencia y throughput: 80-95x tiempo real declarado por el autor; no se publican valores absolutos de latencia por segundo de audio ni throughput en unidades de procesamiento.
+- VRAM en GPU: 2,76 GB (NVFP4) a 5,74 GB (FP32) de pico según la matriz de benchmarks; el paquete FP16 ocupa 2,88 GB.
+- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (medido), cualquier GPU con soporte CUDA 13.x; para FP8 y NVFP4 se requiere hardware Blackwell.
+- GPU de consumo: cabe holgadamente en cualquier GPU con 6 GB o más de VRAM (RTX 3060, RTX 4060, RTX 4090); no se han publicado medidas específicas en estas tarjetas.
+- CPU: el paquete ONNX INT8 funciona con menos de 1,6 GB de RAM y requiere AVX-512 VNNI para el rendimiento declarado (16-21x RTF en EPYC Genoa).
+- Despliegue: NeMo (librería nativa), ONNX Runtime para el paquete INT8; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a ASR).
+- Throughput: RTF de 312,90x en FP16 sobre Blackwell; 212,72x en INT8.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Contexto / audio | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| parakeet-tdt-1.1b-persian | 1.1B | Persa | Audio 16 kHz mono | CC-BY-4.0 | Hugging Face (NeMo) |
-| whisper-large-v3 | 1.55B | Multilingue (incluye persa) | Audio 16 kHz, ventanas de 30 s | MIT (pesos) | OpenAI / Hugging Face |
-| NVIDIA Parakeet-TDT-0.6B | 0.6B | Ingles (mayoritariamente) | Audio | CC-BY-4.0 | Hugging Face (NeMo) |
-
-Nota: no se dispone de resultados comparativos de WER entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, idioma y licencia.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Parakeet-TDT 1.1B Persian | 1,1 B | no disponible | fa | OpenMDW 1.1 | NeMo, ONNX | Ajuste específico farsi, paquete INT8 CPU |
+| nvidia/parakeet-tdt-1.1b | 1,1 B | no disponible | en (principal) | no disponible en la informacion | NeMo | Modelo base; sin ajuste a farsi |
+| Whisper-Large-v3 | 1,55 B | 30 s (ventana) | multilingüe | MIT (según el proyecto OpenAI) | safetensors, GGUF, etc. | Autorregresivo; propenso a alucinaciones en silencio; comparado en los benchmarks del autor |
+| Whisper-Large-v3-turbo | 0,81 B | 30 s | multilingüe | MIT | safetensors, GGUF | Variante destilada, menor coste, cobertura farsi limitada |
 
 ## Limitaciones y advertencias
 
-- Modelo mono-idioma: solo persa; no se garantiza rendimiento en otros idiomas ni en code-switching.
-- Los benchmarks son declarados por el autor y no han sido verificados de forma independiente (`verified: false`).
-- Riesgo de alucinacion en audio ruidoso, con acentos no estandar, solapamiento de hablantes o grabaciones de baja calidad; el WER real puede superar el 4,15 % de FLEURS en condiciones adversas.
-- No hay documentacion sobre sesgos (dialectos, genero, edad) ni evaluaciones de robustez.
-- El repositorio incluye multiples checkpoints (102,4 GB en total), lo que complica la descarga y exige seleccionar el artefacto golden.
-- La licencia CC-BY-4.0 permite uso comercial con atribucion, pero requiere revisar los terminos de los datasets de entrenamiento subyacentes (FLEURS y mana-tts-v2-persian).
-- No se especifica soporte para otros formatos de audio, frecuencias de muestreo distintas de 16 kHz ni streaming en tiempo real.
-- Para produccion, conviene evaluar el WER en el dominio especifico (telefonia, video, etc.) antes de desplegar.
+- Solo soporta farsi; no se ha validado en otros idiomas ni en code-switching farsi-inglés.
+- Los valores de WER/CER normalizados de la matriz de cuantización no son directamente interpretables; el 3,45 % de WER corresponde únicamente a habla limpia de estudio y no al conjunto conversacional.
+- El modelo se ha ajustado sobre datos de estudio y diálogo de películas; el rendimiento en acentos regionales, habla infantil, audio telefónico de banda estrecha o ruido industrial no está documentado.
+- La licencia OpenMDW 1.1 debe revisarse antes de uso comercial; la model card no aclara restricciones adicionales derivadas del modelo base de NVIDIA.
+- El repositorio ocupa 120,6 GB, lo que incluye pesos en múltiples formatos y artefactos de benchmark; conviene descargar solo el subdirectorio necesario.
+- El paquete ONNX INT8 depende de AVX-512 VNNI para el rendimiento declarado; en CPU sin esa extensión el throughput será considerablemente menor (no cuantificado en la información disponible).
+- No se documentan sesgos demográficos ni evaluación de equidad; al ser un ajuste sobre corpus limitado (93 h), puede presentar peor precisión en vocabulario técnico, nombres propios o variantes dialectales.
+- La fecha de creación del repositorio (2026-11-03) y el escaso número de descargas (996) y likes (1) sugieren un modelo reciente y poco validado por la comunidad; conviene evaluarlo en el dominio propio antes de producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mmahdi-sz/parakeet-tdt-1.1b-persian
-- Dataset MANA TTS v2 Persian: https://huggingface.co/datasets/mmahdi-sz/mana-tts-v2-persian
-- Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
-- NVIDIA NeMo (repositorio oficial): https://github.com/NVIDIA/NeMo
-- No se proporcionan enlaces adicionales (papers, blogs, demos) en la informacion disponible.
+- Documentación en farsi: https://huggingface.co/mmahdi-sz/parakeet-tdt-1.1b-persian/blob/main/README_FA.md
+- Modelo base: https://huggingface.co/nvidia/parakeet-tdt-1.1b
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Dataset de estudio: https://huggingface.co/datasets/mmahdi-sz/mana-tts-v2-persian
+- Dataset conversacional: https://huggingface.co/datasets/PerSets/filimo-persian-asr
+- Dataset de evaluación: https://huggingface.co/datasets/google/fleurs

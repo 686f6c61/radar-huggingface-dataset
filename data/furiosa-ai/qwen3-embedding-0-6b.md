@@ -2,80 +2,95 @@
 
 ## Resumen
 
-Qwen3-Embedding-0.6B es un modelo de embeddings de texto de 0,6B parámetros, desarrollado por FuriosaAI y publicado en su organización de Hugging Face. Se trata de un empaquetado del modelo original Qwen/Qwen3-Embedding-0.6B, al que se añade un Furiosa Executable Bundle (FXB) para ejecutarlo de forma optimizada en el hardware propietario FuriosaAI RNGD mediante el framework Furiosa-LLM. El modelo mapea texto a representaciones vectoriales densas para tareas de búsqueda semántica, recuperación de información y similitud entre textos, y soporta dimensionalidad reducida gracias a Matryoshka Representation Learning (MRL).
+Qwen3-Embedding-0.6B es un modelo de embeddings de texto de aproximadamente 0,6 mil millones de parametros, construido sobre la arquitectura transformer densa de la familia Qwen3. Convierte texto en representaciones vectoriales densas para busqueda semantica, recuperacion de informacion (retrieval) y comparacion de similitud. El modelo original lo desarrolla Qwen (Alibaba), y esta ficha concreta corresponde a una redistribucion empaquetada por FuriosaAI para su ejecucion en hardware propietario.
 
-La relevancia de esta publicación radica en que ofrece una vía de despliegue de un modelo de embeddings de última generación sobre hardware acelerador específico, con una API compatible con OpenAI para el endpoint de embeddings. El modelo base, Qwen3-Embedding-0.6B, pertenece a la familia Qwen3 y está construido sobre un backbone transformer denso. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio incluye tanto los pesos en formato safetensors como el FXB compilado para RNGD.
+Este repositorio de FuriosaAI incluye los pesos del modelo junto con un Furiosa Executable Bundle (FXB) que permite ejecutarlo en aceleradores RNGD mediante la libreria Furiosa-LLM. El modelo base es identico al upstream Qwen/Qwen3-Embedding-0.6B; lo que anade esta version es el binario precompilado para el hardware de FuriosaAI, con una estrategia de paralelismo de tensor de 8 PEs que ocupa una unica tarjeta RNGD.
+
+Su relevancia radica en que permite desplegar un modelo de embeddings de calidad reconocida sobre aceleradores NPU alternativos a las GPU tradicionales, manteniendo compatibilidad con el endpoint OpenAI `/v1/embeddings`. El modelo soporta Matryoshka Representation Learning (MRL), lo que permite solicitar embeddings de dimensionalidad reducida, y se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3 dense transformer (backbone) |
-| Parametros totales | 595.776.512 (0,6B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16 nativo (sin cuantizacion) |
-| Idiomas soportados | Ingles (segun metadatos del repo); la descripcion menciona cobertura multilingue |
+| Arquitectura | Qwen3 (transformer denso) |
+| Parametros totales | 595.776.512 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | sin cuantizacion; ejecucion en BF16 nativo |
+| Idiomas soportados | en (segun metadatos del repo); cobertura multilingue segun model card upstream |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y FXB (Furiosa Executable Bundle) |
+| Formato de pesos | safetensors; Furiosa Executable Bundle (FXB) |
+| Entrada / salida | texto / embeddings (vector) |
+| Motor de inferencia | Furiosa-LLM |
+| Hardware soportado | FuriosaAI RNGD |
+| Estrategia de paralelismo | tensor-parallel size 8 PEs (una tarjeta RNGD) |
+| Tamano del repo | 1,7 GB |
+| Dimension reducida | si, via parametro `dimensions` (MRL) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura transformer densa de la familia Qwen3, diseñada especificamente para generar embeddings de texto. Incorpora Matryoshka Representation Learning (MRL), que permite solicitar embeddings con dimensionalidad reducida mediante el parametro `dimensions`, manteniendo una calidad razonable en tareas de recuperacion. No se dispone de informacion publica sobre el dataset de entrenamiento, el numero de tokens procesados ni el proceso de optimizacion (RLHF, DPO, etc.) en la documentacion proporcionada. El repositorio de FuriosaAI se limita a empaquetar el modelo base con un FXB compilado para su ejecucion en hardware RNGD; los detalles de entrenamiento corresponden al modelo original de Qwen.
+El modelo se basa en el backbone transformer denso de Qwen3, orientado a la generacion de embeddings de texto en lugar de a la generacion autoregresiva. Al tratarse de un modelo de embedding, su salida es un vector denso que representa semanticamente la entrada, en lugar de tokens generados. La model card de esta redistribucion no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion corresponde al modelo upstream y no se reproduce aqui.
+
+La innovacion tecnica destacable es el soporte de Matryoshka Representation Learning (MRL), que permite truncar la dimensionalidad del embedding resultante mediante el parametro `dimensions` sin reentrenar el modelo, manteniendo la utilidad semantica del vector. En esta version de FuriosaAI, el modelo se ejecuta en precision BF16 nativa (sin cuantizacion) sobre el acelerador RNGD, con un FXB precompilado que se descubre automaticamente al cargar el modelo con la clase `LLM` de Furiosa-LLM.
 
 ## Capacidades
 
-- Generacion de embeddings densos para texto, orientados a similitud semantica, busqueda y recuperacion.
-- Soporte de Matryoshka Representation Learning (MRL) para reducir la dimensionalidad de los vectores de salida.
-- API compatible con OpenAI para el endpoint `/v1/embeddings`, tanto en modo servidor como en modo offline mediante la API Python de Furiosa-LLM.
-- Cobertura multilingue declarada en la descripcion del modelo, aunque los metadatos del repositorio especifican solo ingles.
-- Integracion con frameworks estandar (Sentence Transformers, vLLM, Transformers) al tratarse del mismo modelo base Qwen3-Embedding-0.6B.
-- Ejecucion optimizada en hardware FuriosaAI RNGD mediante el FXB incluido, con tensor-parallel de 8 PEs en una unica tarjeta.
+- Generacion de embeddings densos de texto para similitud semantica y recuperacion.
+- Busqueda semantica y comparacion de similitud entre pares de textos.
+- Embeddings de dimensionalidad reducida mediante el parametro `dimensions` (MRL).
+- Cobertura multilingue segun la model card upstream (los metadatos de este repo declaran `en`).
+- Servicio online mediante endpoint OpenAI-compatible `/v1/embeddings`.
+- Uso offline mediante la API Python de Furiosa-LLM (`LLM.embed`).
+- No soporta generacion de texto, tool calling, agentes ni vision (es un modelo de embeddings).
 
 ## Casos de uso
 
-- Busqueda semantica en bases de conocimiento: el modelo permite indexar documentos y consultas en un mismo espacio vectorial, devolviendo los resultados mas relevantes por similitud coseno. Su tamano reducido (0,6B) lo hace adecuado para despliegues con latencia moderada.
-- Generacion aumentada por recuperacion (RAG): integrado en un pipeline de RAG, convierte fragmentos de documentos y preguntas en vectores para recuperar el contexto mas pertinente antes de la generacion. La API OpenAI-compatible facilita su integracion con frameworks existentes.
-- Deduplicacion de documentos: al comparar embeddings de textos, se pueden identificar duplicados o variantes cercanas en grandes corpus, util para limpieza de datos o gestion de contenidos.
-- Clasificacion de texto por similitud: sin entrenamiento adicional, se pueden agrupar textos por cercania semantica para tareas de categorizacion o moderacion de contenidos.
-- Sistemas de recomendacion basados en contenido: los embeddings de items (articulos, productos, noticias) permiten recomendar elementos similares a partir de la distancia vectorial.
-- Agrupacion (clustering) de documentos: las representaciones densas sirven como entrada para algoritmos de clustering (k-means, HDBSCAN) en tareas de organizacion de corpus o analisis exploratorio.
+- Busqueda semantica en bases de conocimiento: se indexan documentos como vectores y se recuperan los mas proximos a la consulta del usuario, aprovechando la representacion densa del modelo.
+- Sistemas RAG (retrieval-augmented generation): el modelo genera los embeddings de los fragmentos de contexto que alimentan a un LLM generador, integrándose como etapa de recuperacion en el pipeline.
+- Deduplicacion y clustering de documentos: se calculan embeddings de grandes volumenes de textos y se agrupan por similitud coseno para detectar duplicados o tematicas.
+- Recomendacion de contenido: se comparan embeddings de articulos, productos o perfiles para sugerir elementos relacionados semanticamente.
+- Moderacion y clasificacion por similitud: se comparan embeddings de mensajes entrantes contra embeddings de referencia de categorias conocidas.
+- Despliegue sobre NPU FuriosaAI RNGD: organizaciones con aceleradores RNGD pueden servir embeddings mediante `furiosa-llm serve` con endpoint compatible con OpenAI, sin depender de GPU.
+- Reduccion de coste de almacenamiento vectorial: mediante MRL se generan embeddings de menor dimension para indices mas ligeros manteniendo calidad semantica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas de evaluacion (MTEB, MIRACL, etc.) ni comparativas con otros modelos de embeddings. Para datos de rendimiento, se debe consultar la documentacion del modelo base Qwen/Qwen3-Embedding-0.6B.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: FuriosaAI RNGD, con una configuracion de tensor-parallel de 8 PEs que se mapea a una unica tarjeta RNGD (8 PEs por tarjeta).
-- El FXB incluido en el repositorio esta compilado exclusivamente para RNGD; no es portable a otras arquitecturas.
-- El modelo base (sin FXB) puede ejecutarse en otros frameworks como Sentence Transformers, vLLM o Transformers sobre GPUs estandar, aunque no se proporcionan requisitos especificos de VRAM en esta documentacion.
-- No se indican cifras de latencia ni throughput para el despliegue en RNGD.
-- Para uso en entornos sin hardware FuriosaAI, se recomienda utilizar el modelo original de Qwen en lugar de este repositorio.
+- Hardware objetivo de esta redistribucion: FuriosaAI RNGD (una tarjeta, con 8 PEs en paralelo de tensor).
+- Precision de ejecucion: BF16 nativo, sin cuantizacion.
+- Inferencia en GPU: no se detalla en esta model card; el modelo upstream puede ejecutarse con Sentence Transformers, vLLM y Transformers, pero esta version esta empaquetada para RNGD.
+- VRAM estimada para GPU: no disponible en la informacion proporcionada.
+- Despliegue: `furiosa-llm serve` (servidor OpenAI-compatible) o API Python `LLM.embed` de Furiosa-LLM.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| furiosa-ai/Qwen3-Embedding-0.6B | 0,6B | No disponible | Apache 2.0 | safetensors + FXB | Incluye FXB para RNGD |
-| Qwen/Qwen3-Embedding-0.6B | 0,6B | No disponible | Apache 2.0 | safetensors | Modelo base, portable a multiples frameworks |
-| BGE-small-en-v1.5 | 33M | 512 | MIT | safetensors | Modelo de embeddings mas pequeno, sin MRL |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| furiosa-ai/Qwen3-Embedding-0.6B (esta ficha) | 595.776.512 | no disponible | Apache 2.0 | Hugging Face, hardware RNGD |
+| Qwen/Qwen3-Embedding-0.6B (upstream) | 0,6B (aprox.) | no disponible | Apache 2.0 | Hugging Face, GPU/CPU |
+| Otros modelos de embeddings de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a caracteristicas estructurales, ya que no se dispone de datos de rendimiento publicados para el modelo de FuriosaAI. El modelo base de Qwen es identico en parametros y arquitectura, diferenciandose unicamente en el empaquetado FXB. Otros modelos de embeddings de tamano similar (como BGE-small) ofrecen alternativas con menor huella, pero sin soporte MRL ni la integracion con RNGD.
+La diferencia principal entre esta version y el modelo upstream es el empaquetado FXB y el soporte de hardware RNGD; los pesos son los mismos.
 
 ## Limitaciones y advertencias
 
-- Los metadatos del repositorio indican solo ingles (`language: en`), aunque la descripcion menciona cobertura multilingue; se recomienda verificar el comportamiento real en otros idiomas antes de usarlo en produccion.
-- No se proporcionan datos de sesgos, alucinaciones o comportamientos indeseados especificos. Como modelo de embeddings, no genera texto, pero las representaciones pueden reflejar sesgos presentes en los datos de entrenamiento.
-- El FXB incluido solo es compatible con hardware FuriosaAI RNGD; en otros entornos, debe utilizarse el modelo base de Qwen.
-- No se han publicado benchmarks ni evaluaciones de calidad en este repositorio, por lo que el rendimiento en tareas concretas debe validarse de forma independiente.
-- La longitud de contexto no esta documentada en la informacion disponible; se debe consultar la ficha del modelo base para conocer el limite de tokens de entrada.
-- La licencia Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar los terminos del modelo base por si hubiera condiciones adicionales.
+- Modelo de embeddings: no genera texto, no soporta tool calling, agentes ni vision.
+- Los metadatos de este repositorio declaran solo `en` como idioma, aunque la model card upstream menciona cobertura multilingue; conviene validar el comportamiento multilingue antes de usarlo en produccion.
+- No se dispone de datos de benchmarks ni de longitud de contexto en la informacion proporcionada; deben consultarse en la model card upstream.
+- Esta version esta empaquetada especificamente para hardware FuriosaAI RNGD; para GPU/CPU debe usarse el modelo upstream.
+- Riesgo de sesgos y alucinaciones semantica: los embeddings pueden reflejar sesgos presentes en los datos de entrenamiento; la similitud no garantiza correccion factual.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los terminos del modelo upstream y del software Furiosa-LLM.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-Embedding-0.6B
-- Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
-- Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
-- Documentacion del modelo Qwen3-Embedding en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-embedding.html
-- Referencia de Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/qwen3-embedding-0.6b/
+- Modelo upstream: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+- Documentacion Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Servidor Furiosa-LLM (`furiosa-llm serve`): https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
+- Instalacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- FuriosaAI: https://furiosa.ai
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

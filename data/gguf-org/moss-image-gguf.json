@@ -39,31 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GGUF · Hugging Face",
-      "url": "https://huggingface.co/docs/hub/gguf",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GGUF - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/GGUF",
-      "snippet": "GGUF has become the standard format for distributing quantized large language models for local inference and is natively supported …"
-    },
-    {
-      "title": "GGUF-Models (GGUF) - Hugging Face",
-      "url": "https://huggingface.co/GGUF-Models",
-      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space …"
-    },
-    {
-      "title": "localai-org/moss-transcribe.cpp - GitHub",
-      "url": "https://github.com/localai-org/moss-transcribe.cpp",
-      "snippet": "Brought to you by the LocalAI team, the folks behind LocalAI, the open-source AI ... gguf models/moss-transcribe-q4_k.gguf q4_k. Only the large ggml_mul_mat -fed ..."
-    },
-    {
-      "title": "gguf",
-      "url": "https://gguf.org/",
-      "snippet": "🔎 what is gguf? GGUF (GPT-Generated Unified Format) is a successor of GGML (GPT-Generated Model Language); GPT stands for …"
-    }
-  ]
+  "sources": []
 }

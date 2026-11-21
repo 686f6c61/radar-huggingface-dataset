@@ -2,108 +2,117 @@
 
 ## Resumen
 
-Boris-2 es un modelo de lenguaje base de 144,2 millones de parámetros desarrollado por OpenCerebral, un proyecto que entrena modelos desde cero con recursos muy limitados. El modelo se entrenó íntegramente en una única GPU NVIDIA V100 de 32 GB durante 200.000 millones de tokens, seguido de dos etapas finales cortas de ajuste con baja tasa de aprendizaje que suman 40 millones de tokens adicionales. Es la tercera iteración pública tras Boris-2-Preview-1 y Boris-2-Preview-2.
+Boris-2 es un modelo de lenguaje base de 144 millones de parámetros desarrollado por OpenCerebral, entrenado desde cero sobre una única GPU NVIDIA V100. Se trata de un modelo causal decoder-only orientado a la generación de texto y no ajustado para seguir instrucciones ni mantener conversaciones: continúa texto, no responde a prompts conversacionales. Su relevancia radica en que demuestra que es posible entrenar un modelo competitivo en la categoría de modelos pequeños (SLM) con recursos muy limitados, empleando 200.000 millones de tokens de entrenamiento más dos etapas finales cortas de 40 millones de tokens en total.
 
-La relevancia de Boris-2 no reside en su tamaño, sino en la demostración de que es posible entrenar un modelo competitivo en la categoría de modelos pequeños con hardware de una sola GPU, mediante kernels escritos a mano para arquitecturas Volta y un diseño que incorpora dos componentes poco habituales: capas Canon (una convolución causal depthwise de 3 taps sobre la proyección QKV fusionada) y una tabla de n-gramas exacta que recupera vectores aprendidos de rango 64 para bigramas y trigramas.
+El modelo incorpora dos modificaciones arquitectónicas respecto a un decoder transformer estándar: capas Canon, que aplican una convolución causal en profundidad de 3 taps sobre la proyección fusionada de query/key/value, y una tabla de n-gramas que recupera embeddings aprendidos de rango 64 mediante búsqueda exacta sobre los últimos dos y tres tokens. Con 31 capas, tamaño oculto de 512 y una ventana de contexto de 2048 tokens, Boris-2 se posiciona como una alternativa ligera y de licencia permisiva (Apache 2.0) para experimentación e inferencia en hardware modesto.
 
-Es un modelo estrictamente base: continúa texto, no sigue instrucciones ni mantiene conversaciones. Su contexto es de 2048 tokens, su vocabulario de 32.768 tokens BPE a nivel de byte y solo soporta inglés. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+La versión publicada corresponde al checkpoint de 200.000 millones de tokens más dos etapas finales de bajo learning rate, seleccionada entre aproximadamente diez candidatos por su puntuación en cinco benchmarks. El autor advierte que parte de la mejora puede deberse a selección sobre ruido, ya que las puntuaciones de checkpoints individuales varían en torno a ±0,8 puntos del índice agregado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder causal con capas Canon y tabla de n-gramas |
-| Parámetros totales | 144.192.782 (143,7M según model card) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only causal con capas Canon y tabla de n-gramas |
+| Parametros totales | 143,7 M (144.192.782 segun safetensors) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantización | No disponible (entrenado e inferido en float32/bfloat16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Inglés (en) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el repo ocupa 0,6 GB) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (custom_code con transformers) |
+| Formato de pesos | safetensors (libreria transformers, requiere trust_remote_code) |
 
-Desglose adicional de parámetros: 111,9M en bloques transformer, 16,8M en embedding de tokens (atado con la salida) y 15,0M en la tabla de n-gramas. 31 capas, hidden size 512, atención multi-head completa con 8 cabezas de 64 dimensiones, MLP SwiGLU con dimensión interna 1664, RoPE con theta 10.000, vocabulario de 32.768 tokens BPE a nivel de byte entrenado específicamente para el modelo.
+Desglose interno: 111,9 M en bloques transformer, 16,8 M en embedding de tokens (atado con la salida) y 15,0 M en la tabla de n-gramas. 31 capas, tamaño oculto 512, atención multi-cabeza completa con 8 cabezas de 64 dimensiones, MLP SwiGLU con dimensión interna 1664, codificación posicional RoPE con theta 10.000 y vocabulario de 32.768 tokens con BPE a nivel de byte entrenado específicamente para el modelo.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder causal estándar con dos modificaciones. Las capas Canon aplican una convolución causal depthwise de 3 taps a la proyección fusionada de query/key/value, de modo que cada posición mezcla las dos posiciones anteriores antes de la atención. La tabla de n-gramas realiza una búsqueda exacta sobre los últimos dos y tres ids de token (210.938 bigramas y 23.437 trigramas, sin hashing) y recupera un vector aprendido de rango 64 que se suma al flujo residual antes del bloque 2. El entrenamiento empaqueta varios documentos por secuencia, con atención, Canon y búsqueda de n-gramas enmascaradas en los límites de documento (controlado por `eos_resets_context` en la configuración).
+Boris-2 es un transformer decoder-only causal con dos desviaciones respecto al diseño estándar. Las capas Canon aplican una convolución causal en profundidad de 3 taps a la proyección fusionada de query/key/value, de modo que cada posición mezcla las dos posiciones anteriores antes de la atención. La tabla de n-gramas realiza una búsqueda exacta sobre los últimos dos y tres identificadores de token (210.938 bigramas y 23.437 trigramas, sin hashing) y recupera un vector aprendido de rango 64 que se suma al flujo residual antes del bloque 2.
 
-El entrenamiento principal consumió 200.000 millones de tokens en una V100 32GB a unos 59.500 tokens por segundo, con precisión mixta float16 y flujo residual en float32. El batch fue de 524.288 tokens por paso hasta los 170.000 millones, momento en que se duplicó a 1.048.576 tras un piloto que mostró menor pérdida. El optimizador combina Muon para matrices y AdamW para embedding, tabla de n-gramas, normas y Canon. El schedule usa warmup, tasa constante hasta 174.000 millones y decaimiento 1-sqrt hasta cero en 26.000 millones de tokens. La mezcla de datos principal es aproximadamente 89-90% ClimbMix con proporciones crecientes de matemáticas (UltraData-Math L3, Orca-Math, MetaMathQA, Calc-ape210k, Calc-mawps) y, en la fase de decaimiento, Cosmopedia v2 y DCLM-Baseline. Las dos etapas finales de 40M tokens se eligieron entre unas diez candidatas evaluadas en cinco benchmarks; el autor advierte que parte del margen sobre el checkpoint de 200B puede deberse a selección sobre ruido, ya que las puntuaciones individuales varían en torno a ±0,8 puntos del índice.
+El entrenamiento se realizó desde cero sobre una única NVIDIA V100 durante 200.000 millones de tokens, seguido de dos etapas finales cortas de bajo learning rate que suman 40 millones de tokens. El empaquetado de secuencias incluye varios documentos por secuencia con atención, Canon y búsqueda de n-gramas enmascarados en los límites de documento (parámetro `eos_resets_context` en la configuración). Los datos provienen de una mezcla de corpus: karpathy/climbmix-400b-shuffle, HuggingFaceTB/finemath, openbmb/UltraData-Math, microsoft/orca-math-word-problems-200k, meta-math/MetaMathQA, MU-NLPC/Calc-ape210k, MU-NLPC/Calc-mawps, HuggingFaceTB/cosmopedia, HuggingFaceTB/smollm-corpus y mlfoundations/dclm-baseline-1.0. No se documenta en la información disponible el uso de RLHF o DPO; se trata de un modelo base sin ajuste por preferencias.
 
 ## Capacidades
 
-- Generación de texto por continuación: el modelo predice el siguiente token sin seguir instrucciones ni formato conversacional.
-- Razonamiento aritmético básico: el ajuste final con datos matemáticos eleva ArithMark-3 de 42,00 a 45,10, con mejora concentrada en esta tarea.
-- Comprensión lectora y sentido común a nivel de modelo pequeño: HellaSwag 50,26, ARC-Easy 59,81, ARC-Challenge 32,00, PIQA 72,91.
-- Modelado de lenguaje con contexto de 2048 tokens; no hay soporte documentado de ventanas mayores.
-- Sin tool calling, sin function calling y sin soporte de agentes multi-paso: es un modelo base sin post-entrenamiento instructivo.
-- Multilingüismo limitado al inglés; el vocabulario y los datos están orientados a ese idioma.
-- Sin capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
-- Inferencia sin KV cache según la model card, lo que implica recálculo completo en cada paso de generación.
+- Generación de texto autoregresiva: continuación de texto libre, sin ajuste para instrucciones ni diálogo.
+- Razonamiento básico y respuesta a preguntas de sentido común, evaluado en HellaSwag, ARC-Easy y ARC-Challenge.
+- Razonamiento físico cotidiano, evaluado en PIQA.
+- Aritmética y matemáticas elementales, evaluado en ArithMark-3 y entrenado con corpus matemáticos específicos (finemath, MetaMathQA, orca-math, Calc-ape210k, Calc-mawps).
+- Modelado de n-gramas explícito mediante tabla de búsqueda exacta, que aporta información de contexto local a corto plazo.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Tool calling / function calling: no disponible; no es un modelo ajustado para instrucciones.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (visión, audio, modo thinking): no disponibles.
 
 ## Casos de uso
 
-- Investigación en arquitecturas alternativas: las capas Canon y la tabla de n-gramas exacta son componentes poco frecuentes que pueden estudiarse de forma aislada, comparando su efecto frente a un transformer estándar del mismo tamaño en tareas de modelado de lenguaje.
-- Reproducción de entrenamiento a pequeña escala: con 144M parámetros y una sola V100, sirve como banco de pruebas para recetas de optimización (Muon + AdamW), schedules de decaimiento y mezclas de datos matemáticos sin requerir clústeres.
-- Generación de texto asistida y autocompletado en inglés: dado que continúa texto de forma coherente a nivel local, puede emplearse en tareas de completado de frases o párrafos en dominios acotados donde no se requiera instrucción.
-- Evaluación comparativa de modelos pequeños: el autor publica resultados en nueve benchmarks zero-shot y el Open SLM Index, lo que facilita su uso como línea base en estudios de escalado de modelos por debajo de 200M de parámetros.
-- Filtrado y puntuación de texto por perplejidad: un modelo base de este tamaño puede calcular verosimilitudes para clasificar o filtrar documentos en pipelines de curación de datos, un uso habitual de modelos pequeños entrenados con grandes volúmenes de tokens.
-- Experimentación educativa: el código de modelado es PyTorch puro sin dependencias extra ni KV cache, lo que lo hace adecuado para enseñar los detalles internos de un decoder causal, RoPE, atención multi-head y convoluciones causales en un entorno manejable.
-- Prototipado de decodificación y muestreo: al ser pequeño y ejecutable en CPU o GPU consumer, permite probar estrategias de generación (greedy, sampling, beam) con ciclos de iteración rápidos.
+- Experimentación e investigación en arquitecturas: las capas Canon y la tabla de n-gramas son componentes novedosos que pueden estudiarse y ablacionarse en un modelo de 144 M de parámetros que cabe en una GPU consumer, lo que facilita reproducir experimentos.
+- Generación de texto asistida y autocompletado: al ser un modelo base, encaja en tareas de continuación de texto donde se proporciona un prefijo y se espera una continuación coherente, como redacción de borradores o generación de descripciones.
+- Fine-tuning para tareas específicas: con licencia Apache 2.0 y solo 144 M de parámetros, es viable ajustarlo en una sola GPU para clasificación, extracción de información o generación de dominio con datasets pequeños.
+- Evaluación comparativa de modelos pequeños: sirve como referencia en la categoría SLM para medir el efecto de técnicas como el enmascarado en límites de documento o el uso de tablas de n-gramas frente a transformers estándar.
+- Prototipado educativo: su tamaño reducido y el código de modelado incluido en el repositorio permiten estudiar el funcionamiento interno de un transformer causal con atención completa y RoPE sin necesidad de infraestructura grande.
+- Inferencia en entornos con recursos limitados: con 0,6 GB de pesos en safetensors, puede desplegarse en CPU o en GPUs de gama baja para tareas de generación de texto no críticas donde la latencia no sea un requisito estricto.
+- Investigación en tokenización: el vocabulario BPE de 32.768 tokens entrenado específicamente para el modelo permite analizar el impacto de la tokenización en modelos pequeños.
 
 ## Benchmarks y rendimiento
 
-Resultados zero-shot con pesos en float32, según la model card. ArithMark-3 usa el script `bencharithmark-3.py` del leaderboard sin modificar.
+Resultados declarados por el autor en la model card (zero-shot, pesos float32). La columna "Preview-2" corresponde al checkpoint previo y "Boris-2 @200B" al final del entrenamiento principal, antes de las dos etapas finales.
 
-| Benchmark | Métrica | Preview-2 | Boris-2 @200B | Boris-2 |
+| Benchmark | Metrica | Preview-2 | Boris-2 @200B | Boris-2 |
 |---|---|---:|---:|---:|
 | HellaSwag | acc_norm | 46,60 | 50,36 | 50,26 |
 | ARC-Easy | acc_norm | 59,13 | 60,10 | 59,81 |
 | ARC-Challenge | acc_norm | 30,20 | 32,25 | 32,00 |
 | PIQA | acc_norm | 70,84 | 72,91 | 72,91 |
 | ArithMark-3 | acc_norm | 42,20 | 42,00 | 45,10 |
-| Open SLM Index | índice compuesto | 30,58 | 33,59 | 34,19 |
+| Open SLM Index | indice agregado | 30,58 | 33,59 | 34,19 |
 
-El Open SLM Index sigue la fórmula del Open SLM Leaderboard: `(N(HellaSwag,25) + N(mean(ARC-E, ARC-C),25) + N(PIQA,50) + 0,65 * N(ArithMark-3,25)) / 3,65`, con `N(v,c) = 100(v-c)/(100-c)`. La mejora del checkpoint final sobre el de 200B se concentra casi por completo en ArithMark-3 (+3,1 puntos); los otros cuatro benchmarks varían 0,3 puntos o menos. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
+El Open SLM Index se calcula con la fórmula del Open SLM Leaderboard: `(N(HellaSwag,25) + N(mean(ARC-E, ARC-C),25) + N(PIQA,50) + 0,65 * N(ArithMark-3,25)) / 3,65`, donde `N(v,c) = 100(v-c)/(100-c)`. ArithMark-3 se evaluó con el script `bencharithmark-3.py` del leaderboard sin modificaciones y con ajustes por defecto. El autor señala que la mejora sobre el checkpoint de 200B se concentra casi por completo en ArithMark-3 (+3,1 puntos), mientras que los otros cuatro benchmarks varían 0,3 puntos o menos, y que la selección entre candidatos puede introducir parte de la ganancia por ruido de selección.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en float32, unos 0,58 GB solo para pesos (144,2M × 4 bytes), más activaciones y buffers; en bfloat16, unos 0,29 GB para pesos. Cabe holgadamente en cualquier GPU consumer con 4 GB o más.
-- GPU recomendadas: cualquier GPU moderna es suficiente; una RTX 3060, RTX 4060, RTX 4090 o incluso una GTX 1650 pueden ejecutar el modelo. El entrenamiento original usó una V100 32GB, pero la inferencia no requiere ese hardware.
-- Cabe en GPU consumer: sí, en todas las GPU con al menos 4 GB de VRAM, y probablemente en CPU con rendimiento aceptable dado el tamaño.
-- Opciones de despliegue: transformers con `trust_remote_code=True` es la vía documentada. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; la ausencia de KV cache en el código de modelado limita la eficiencia de servidores de inferencia convencionales.
-- Latencia y throughput: no disponibles para inferencia. En entrenamiento se alcanzaron unos 59.500 tokens por segundo en una V100 32GB con kernels escritos a mano para Volta.
+- VRAM estimada para inferencia: en float32, los 144 M de parámetros ocupan aproximadamente 0,58 GB; en float16, unos 0,29 GB; en cuantización de 8 bits, alrededor de 0,15 GB (estimación a partir del recuento de parámetros, no publicada por el autor).
+- GPU recomendadas: el entrenamiento se realizó en una única NVIDIA V100; para inferencia, cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100).
+- Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna e incluso en CPU, dado el reducido tamaño del modelo.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (requerido por el código de modelado personalizado con capas Canon y tabla de n-gramas). Otras opciones como vLLM, llama.cpp, Ollama o TGI no están documentadas en la información disponible y podrían requerir adaptaciones por el código personalizado.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Open SLM Index | Licencia | Disponibilidad |
-|---|---:|---:|---:|---|---|
-| Boris-2 | 144,2M | 2048 | 34,19 | Apache 2.0 | Hugging Face |
-| Boris-2 @200B | 143,7M | 2048 | 33,59 | Apache 2.0 | Checkpoint no publicado como release separado |
-| Boris-2-Preview-2 | no disponible | 2048 | 30,58 | Apache 2.0 | Hugging Face |
-| Boris-2-Preview-1 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+|---|---:|---|---|---|---|
+| Boris-2 | 143,7 M | 2048 | Apache 2.0 | en | Capas Canon y tabla de n-gramas; modelo base |
+| Boris-2-Preview-2 | no disponible | no disponible | Apache 2.0 | en | Checkpoint previo del mismo autor; Open SLM Index 30,58 |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la informacion proporcionada |
 
-La model card menciona una comparación con otros modelos pequeños en nueve benchmarks zero-shot, pero los datos concretos de esos modelos no están incluidos en la información disponible. No se dispone de comparaciones verificadas con SmolLM, Qwen2.5-0.5B, TinyLlama u otros modelos de tamaño similar en esta ficha.
+La model card menciona una comparación de nueve tareas contra otros modelos pequeños, con los números en `benchmarks_comparison.csv`, pero los datos concretos de esos modelos no se incluyen en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin ajuste instructivo: no sigue instrucciones, no responde preguntas de forma directa y no mantiene diálogos. Usarlo como asistente requiere post-entrenamiento adicional.
-- Riesgo elevado de alucinación y de generación de texto factualmente incorrecto, especialmente fuera de los dominios representados en sus datos de entrenamiento (texto web general y matemáticas).
-- Contexto limitado a 2048 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Solo inglés: no hay soporte documentado de otros idiomas, y el vocabulario BPE fue entrenado específicamente para inglés.
-- Sin KV cache en el código de modelado, lo que implica un coste computacional mayor por token generado en secuencias largas y complica el despliegue en servidores de inferencia optimizados.
-- Parte del rendimiento reportado en el checkpoint final puede deberse a selección sobre ruido (±0,8 puntos de índice), según advierte el propio autor.
-- Requiere `trust_remote_code=True` para cargar el modelo, lo que implica ejecutar código personalizado del repositorio; conviene revisarlo antes de usarlo en entornos de producción.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución, sin restricciones adicionales documentadas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica escasa validación por parte de la comunidad.
+- Es un modelo base: no sigue instrucciones ni mantiene conversaciones; usarlo como asistente requiere fine-tuning o prompting de continuación de texto.
+- Ventana de contexto limitada a 2048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Solo soporta inglés; no se han documentado capacidades multilingües.
+- Riesgo de alucinación inherente a un modelo base entrenado sobre corpus web y matemáticos; no hay ajuste por preferencias ni verificación factual.
+- Sesgos potenciales derivados de los corpus de entrenamiento (climbmix, dclm, cosmopedia, smollm-corpus), no evaluados ni documentados en la información disponible.
+- El rendimiento en ARC-Challenge (32,00 acc_norm) es bajo en términos absolutos, lo que limita su uso en razonamiento complejo.
+- La selección del checkpoint publicado entre unos diez candidatos puede introducir sobreajuste a los cinco benchmarks usados para elegir, según advierte el propio autor.
+- El uso requiere `trust_remote_code=True` por el código de modelado personalizado, lo que implica ejecutar código del repositorio y revisarlo antes de usarlo en producción.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las licencias de los datasets de entrenamiento si se redistribuye el modelo o derivados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/opencerebral/Boris-2
 - Perfil del autor en Hugging Face: https://huggingface.co/opencerebral
 - Wiki del proyecto: https://wiki.kunix.org/
-- Sitio de OpenCerebral: https://oc.kunix.org/
-- Boris-2-Preview-1: https://huggingface.co/opencerebral/Boris-2-Preview-1
-- Boris-2-Preview-2: https://huggingface.co/opencerebral/Boris-2-Preview-2
-- Resultados comparativos (CSV): https://huggingface.co/opencerebral/Boris-2/blob/main/benchmarks_comparison.csv
-- Histórico de benchmarks (CSV): https://huggingface.co/opencerebral/Boris-2/blob/main/benchmarks.csv
+- Código fuente: https://git.kunix.org/boris-2
+- Página de OpenCerebral: https://oc.kunix.org/
+- Checkpoint previo Boris-2-Preview-1: https://huggingface.co/opencerebral/Boris-2-Preview-1
+- Checkpoint previo Boris-2-Preview-2: https://huggingface.co/opencerebral/Boris-2-Preview-2
 - Licencia: https://huggingface.co/opencerebral/Boris-2/blob/main/LICENSE
+- Dataset karpathy/climbmix-400b-shuffle: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
+- Dataset HuggingFaceTB/finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath
+- Dataset openbmb/UltraData-Math: https://huggingface.co/datasets/openbmb/UltraData-Math
+- Dataset microsoft/orca-math-word-problems-200k: https://huggingface.co/datasets/microsoft/orca-math-word-problems-200k
+- Dataset meta-math/MetaMathQA: https://huggingface.co/datasets/meta-math/MetaMathQA
+- Dataset MU-NLPC/Calc-ape210k: https://huggingface.co/datasets/MU-NLPC/Calc-ape210k
+- Dataset MU-NLPC/Calc-mawps: https://huggingface.co/datasets/MU-NLPC/Calc-mawps
+- Dataset HuggingFaceTB/cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
+- Dataset HuggingFaceTB/smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+- Dataset mlfoundations/dclm-baseline-1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

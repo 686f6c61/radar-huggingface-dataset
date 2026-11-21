@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Ripple-65B Preview, a Frontier Open-Weight Model | Ricursive Intelligence",
-      "url": "https://www.ricursive.com/ripple",
-      "snippet": "We optimized the model architecture for our training and serving platforms, driving substantial efficiency gains. Today, we release Ripple-65B Preview, a general-purpose variant of the proprietary model that powers our AI chip design platform. The model is pretrained on 12 trillion tokens with support for up to 1M context length."
-    },
-    {
-      "title": "ricursiveAI/Ripple-65B-Preview · Hugging Face",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "snippet": "Machine learning model with 65B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

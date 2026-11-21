@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NFL.com | Official Site of the National Football League",
-      "url": "https://www.nfl.com/",
-      "snippet": "Jul 30, 2007 · The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
-    },
-    {
-      "title": "2026 NFL Division Standings",
-      "url": "https://www.nfl.com/standings/",
-      "snippet": "See the latest NFL Standings by Division, Conference and League. Find current or past season NFL standings by team."
-    },
-    {
-      "title": "NGS | NFL Next Gen Stats",
-      "url": "https://nextgenstats.nfl.com/",
-      "snippet": "NFL’s Next Gen Stats captures real time location data, speed and acceleration for every player, every play on every inch of the field. …"
-    },
-    {
-      "title": "Home [media.nfl.com]",
-      "url": "https://media.nfl.com/",
-      "snippet": "17 hours ago · NFL and the NFL shield design are registered trademarks of the National Football League. The team names, logos …"
-    },
-    {
-      "title": "Find a Youth Football League Near You | NFL Play Football | NFL Play ...",
-      "url": "https://playfootball.nfl.com/find-a-league/",
-      "snippet": "Get in the game! Use NFL Play Football's league locator to find a youth tackle football or flag football league near you."
-    }
-  ]
+  "sources": []
 }

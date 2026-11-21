@@ -2,83 +2,89 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-Vision-Uncensored es una variante del modelo de visión-lenguaje DeepSeek-V4-Flash-Vision-Exp, publicada por el usuario orcarouter con el objetivo explícito de eliminar las negativas del modelo original mediante la técnica de *abliteration* (eliminación de pesos asociados al rechazo de respuestas). El resultado es un modelo multimodal que acepta entrada de imagen y texto, y que está orientado a tareas de *red teaming* y pruebas de seguridad ofensiva, donde se necesita que el modelo responda sin filtros de contenido.
+DeepSeek-V4-Flash-Vision-Uncensored es un ajuste fino del modelo experimental deepseek-ai/DeepSeek-V4-Flash-Vision-Exp, publicado por el usuario orcarouter en Hugging Face. Se trata de una variante "abliterated" (sin censura) que elimina las capas de rechazo y alineacion del modelo original, orientada explicitamente a tareas de red teaming y evaluacion de seguridad de sistemas de IA. El modelo conserva la arquitectura multimodal y de mezcla de expertos del original, con aproximadamente 304.600 millones de parametros totales y soporte de entrada imagen-texto.
 
-El modelo base, DeepSeek-V4-Flash-Vision-Exp, es el primer modelo de visión por API de DeepSeek y, según el anuncio de lanzamiento, iguala el rendimiento en texto de V4-Flash a la vez que añade entrada de imágenes al mismo precio por token. La variante *uncensored* mantiene la arquitectura de mezcla de expertos (MoE) del original, con 304.646.824.126 parámetros totales (aproximadamente 304,6 mil millones), y está disponible bajo licencia MIT, aunque con acceso restringido en Hugging Face.
+El modelo mantiene las capacidades del base: generacion de texto, razonamiento, vision y modo de pensamiento (reasoning), ademas de soporte para decodificacion multi-token (MTP) y cuantizacion en FP4 y FP8. Su relevancia actual radica en que permite a investigadores de seguridad probar comportamientos adversarios sin las barreras de rechazo del modelo alineado, algo util para auditorias de robustez, aunque con riesgos evidentes de uso indebido.
 
-La relevancia de este modelo reside en su doble naturaleza: por un lado, ofrece capacidades de razonamiento multimodal de alto nivel (visión + texto) en una arquitectura MoE eficiente; por otro, al estar *abliterated*, permite explorar los límites de la seguridad de los modelos de lenguaje y generar contenido que normalmente sería rechazado, lo que lo hace útil para equipos de seguridad, investigación de sesgos y pruebas de robustez.
+La licencia MIT facilita su uso, pero el acceso esta restringido (gated) en Hugging Face, lo que exige aceptar condiciones antes de descargarlo. El repositorio ocupa 167,8 GB y esta disponible en formato safetensors para transformers, con etiquetas que indican compatibilidad con endpoints.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) multimodal (vision-lenguaje) |
-| Parametros totales | 304.646.824.126 (aprox. 304,6B) |
+| Arquitectura | Mezcla de expertos (MoE) multimodal, familia deepseek_v4 |
+| Parametros totales | 304.646.824.126 (aprox. 304,6 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | fp4, fp8 (indicados en las etiquetas del repositorio, sin confirmacion de pesos publicados) |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Tipos de cuantizacion | FP4, FP8, 8-bit (segun tags del repositorio) |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del checkpoint base `deepseek-ai/DeepSeek-V4-Flash-Vision-Exp`, que emplea una arquitectura transformer con mezcla de expertos (MoE) y capacidades de visión (image-text-to-text). Las etiquetas del repositorio indican soporte de *multi-token prediction* (MTP), una técnica que predice varios tokens futuros simultáneamente para acelerar la inferencia y mejorar la coherencia. El proceso de *abliteration* aplicado posteriormente elimina selectivamente los pesos responsables de las respuestas de rechazo, sin reentrenar el modelo completo, lo que produce una variante que responde a casi cualquier instrucción, incluido contenido que el modelo original bloquearía.
+El modelo se basa en la arquitectura deepseek_v4 del modelo original DeepSeek-V4-Flash-Vision-Exp, que combina mezcla de expertos (MoE) con capacidades de vision-lenguaje (pipeline image-text-to-text). El ajuste fino aplicado por orcarouter es de tipo abliterated: se eliminan o atenuan las direcciones de activacion asociadas al rechazo de peticiones, de modo que el modelo responde a instrucciones que el modelo alineado rechazaria. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el ajuste.
 
-No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO en el modelo base. El post-procesado de *abliteration* es una técnica de modificación de pesos post-entrenamiento, por lo que no requiere un nuevo ciclo de entrenamiento completo.
+Entre las innovaciones tecnicas heredadas del base destacan el soporte de decodificacion multi-token (MTP, segun los tags), la cuantizacion nativa en FP4 y FP8, y el modo de razonamiento (reasoning) que permite cadenas de pensamiento extendidas. Los tags indican tambien "post-training" y "ai-red-team", lo que sugiere que el ajuste se realizo con fines de evaluacion de seguridad. No hay informacion publica sobre el numero de tokens de entrenamiento ni sobre la composicion del corpus multimodal.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: acepta imágenes como entrada además de texto, y puede describir, analizar y razonar sobre contenido visual.
-- Razonamiento avanzado: al estar basado en la familia V4-Flash, hereda capacidades de razonamiento complejo y resolución de problemas en múltiples pasos.
-- Respuestas sin filtro: el proceso de *abliteration* elimina las negativas del modelo, permitiendo generar contenido que el modelo base rechazaría (por ejemplo, instrucciones peligrosas, contenido explícito o respuestas sobre temas sensibles).
-- Multilingüe: soporta inglés y chino, los dos idiomas declarados en el repositorio.
-- Eficiencia MoE: al ser un modelo de mezcla de expertos, solo se activa un subconjunto de parámetros por token, lo que reduce el coste de inferencia frente a un modelo denso del mismo tamaño.
-- Compatible con pipelines de `transformers`: se integra con la librería estándar de Hugging Face para carga e inferencia.
+- Generacion de texto y razonamiento multi-paso, con modo de pensamiento (reasoning) heredado del modelo base.
+- Comprension de imagenes y texto combinados (image-text-to-text), incluyendo descripcion, analisis y respuesta a preguntas sobre imagenes.
+- Generacion de codigo y matematicas, aunque no se dispone de benchmarks que lo cuantifiquen.
+- Soporte multilingue limitado a ingles y chino.
+- Ausencia de rechazo (uncensored/abliterated): responde a peticiones que el modelo alineado bloquearia, lo que lo hace util para red teaming.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su despliegue en infraestructuras de inferencia.
+- Decodificacion multi-token (MTP) para acelerar la generacion, segun los tags.
+- No se ha confirmado soporte de tool calling ni de function calling en la informacion disponible.
 
 ## Casos de uso
 
-- *Red teaming* y pruebas de seguridad ofensiva: el modelo es idóneo para evaluar la robustez de otros sistemas de IA generando prompts adversariales o contenido que los modelos filtrados rechazarían, permitiendo identificar vulnerabilidades en moderación de contenido.
-- Investigación de sesgos y alineación: al eliminar las negativas, se puede estudiar qué tipo de respuestas produce un modelo sin restricciones y compararlas con las versiones alineadas, útil para investigar sesgos latentes y comportamientos no deseados.
-- Generación de contenido creativo sin restricciones: escritura de ficción con temáticas adultas, humor negro o sátira política que los modelos comerciales censuran, siempre bajo un marco de uso responsable.
-- Análisis de imágenes en dominios sensibles: descripción de imágenes médicas, forenses o de ingeniería donde los modelos alineados pueden rechazar responder por políticas de contenido.
-- Desarrollo de agentes de razonamiento multimodal: aprovechar la combinación de visión + razonamiento + MTP para construir asistentes que procesan capturas de pantalla, diagramas o documentos escaneados y razonan sobre ellos sin las limitaciones de un modelo alineado.
-- Evaluación comparativa de modelos *abliterated*: sirve como referencia para medir el efecto de la *abliteration* sobre el rendimiento en tareas estándar (generación, razonamiento, visión) frente al modelo base sin modificar.
+- Red teaming y auditoria de seguridad: el modelo permite generar respuestas adversarias y probar la robustez de filtros y sistemas de moderacion, ya que su naturaleza abliterated elimina los rechazos que dificultarian estas pruebas.
+- Evaluacion de sesgos y alucinaciones: al no estar alineado, expone de forma mas directa los sesgos latentes del modelo base, lo que ayuda a investigadores a identificar patrones problematicos antes de desplegar sistemas en produccion.
+- Investigacion en alineacion: comparar las respuestas del modelo uncensored con las del base alineado permite estudiar que comportamientos elimina el proceso de alineacion y a que coste.
+- Analisis de imagenes en entornos controlados: su capacidad image-text-to-text sirve para tareas de descripcion y extraccion de informacion de imagenes en laboratorios de investigacion, sin las restricciones de contenido del modelo original.
+- Generacion de datos sinteticos para entrenamiento: investigadores pueden usar el modelo para producir corpus de texto e imagen-texto diversos, incluyendo casos limite que el modelo alineado no generaria.
+- Pruebas de pipelines de inferencia multimodal: con 304,6 mil millones de parametros y soporte FP4/FP8, sirve para validar infraestructuras de despliegue de modelos MoE multimodales a gran escala antes de pasar a produccion.
+- Docencia y formacion en seguridad de IA: permite demostrar en entornos academicos como se comporta un modelo sin alineacion y por que son necesarias las capas de seguridad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta variante *uncensored* en la información disponible. El blog de lanzamiento de OrcaRouter indica que el modelo base DeepSeek-V4-Flash-Vision-Exp iguala el rendimiento en texto de DeepSeek V4-Flash y sitúa a los agentes multimodales cerca de Opus-4.8, pero no proporciona cifras concretas de MMLU, HumanEval u otros tests estandarizados. Tampoco hay datos sobre el impacto de la *abliteration* en el rendimiento respecto al checkpoint original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 167,8 GB en formato safetensors, lo que exige almacenamiento considerable y una infraestructura de múltiples GPUs.
-- Con 304,6 mil millones de parámetros totales, la inferencia en precisión fp8 requeriría aproximadamente 305 GB de VRAM, y en fp4 alrededor de 152 GB, asumiendo una cuantización uniforme.
-- No es viable en GPUs de consumo (RTX 4090, 3090, etc.) de forma directa; se necesitan al menos 4-8 GPUs de alta gama (A100 80GB, H100 80GB) para ejecutar el modelo completo.
-- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, y probablemente con `vLLM` o `TGI` para servir el modelo con eficiencia, aunque no se ha confirmado en la documentación disponible.
-- La cuantización fp8 podría permitir ejecutarlo en un nodo con 4 GPUs H100/A100 de 80GB, mientras que fp4 reduciría el requisito a 2-3 GPUs, pero no hay guías oficiales de despliegue publicadas.
+- VRAM estimada para inferencia: con 304,6 mil millones de parametros, en FP8 se requieren aproximadamente 305 GB de VRAM; en FP4, alrededor de 152 GB; en cuantizacion de 8 bits, un rango similar al FP8. Estas cifras son estimaciones teoricas basadas en el numero de parametros y no en mediciones publicadas.
+- GPU recomendadas: para FP8 se necesitan multiples aceleradores de 80 GB (A100, H100, H200) en configuracion multi-GPU; para FP4 podria ser viable en un nodo con varias GPU de 48-80 GB.
+- No cabe en GPU de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB) ni en configuraciones de una sola GPU consumer, dado el tamano del modelo.
+- Opciones de despliegue: transformers (libreria indicada en el repositorio), con posible integracion en vLLM o TGI si soportan la arquitectura deepseek_v4; llama.cpp y Ollama no estan confirmados para esta arquitectura.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Entrada multimodal | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-Vision-Uncensored | 304,6B (MoE) | no disponible | Si (imagen + texto) | MIT | Acceso restringido en HF |
-| DeepSeek-V4-Flash-Vision-Exp (base) | no disponible | no disponible | Si (imagen + texto) | no disponible | API y pesos (segun DeepSeek) |
-| DeepSeek-V4-Flash | no disponible | no disponible | No (solo texto) | no disponible | API |
+| DeepSeek-V4-Flash-Vision-Uncensored | 304,6 mil millones | no disponible | MIT | Restringido (gated) | Variante abliterated del base |
+| DeepSeek-V4-Flash-Vision-Exp (base) | no disponible | no disponible | no disponible | no disponible | Modelo original alineado, experimental |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de otros modelos comparables en la informacion proporcionada |
 
-No se dispone de información suficiente sobre otros modelos comparables de la misma categoría (MoE multimodal con pesos ablacionados) para establecer una comparativa completa. La variante *uncensored* se distingue principalmente por la eliminación de negativas, un aspecto que no suele documentarse en los modelos comerciales o alineados.
+No se dispone de informacion suficiente para comparar con modelos alternativos de la misma categoria (MoE multimodal de ~300 mil millones de parametros). Los datos del modelo base DeepSeek-V4-Flash-Vision-Exp no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La *abliteration* elimina los mecanismos de rechazo, lo que implica que el modelo puede generar contenido peligroso, ilegal o dañino sin advertencia. Su uso debe limitarse a entornos controlados de investigación y *red teaming*.
-- Riesgo elevado de alucinación: al no estar alineado, el modelo puede inventar información con mayor confianza, especialmente en dominios donde el modelo base tenía restricciones.
-- Idiomas limitados: solo se declaran soporte para inglés y chino; el rendimiento en otros idiomas puede ser deficiente o inexistente.
-- Acceso restringido: el repositorio es *gated*, por lo que se requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
-- Sin contexto documentado: se desconoce la longitud de contexto real del modelo, lo que dificulta planificar su uso en tareas que requieran ventanas largas.
-- Sin benchmarks publicados: no hay datos objetivos de rendimiento para esta variante, por lo que cualquier afirmación sobre su calidad debe tomarse con cautela.
-- Riesgo de uso indebido: la combinación de visión y ausencia de filtros puede facilitar la generación de contenido fraudulento o engañoso (por ejemplo, deepfakes textuales o descripciones manipuladas de imágenes).
+- Modelo sin alineacion (abliterated): puede generar contenido ofensivo, peligroso o ilegal; su uso debe limitarse a entornos de investigacion controlados.
+- Riesgo elevado de alucinacion: al eliminar las capas de rechazo, el modelo puede responder con confianza a preguntas sobre las que no tiene informacion, sin las salvaguardas del modelo alineado.
+- Sesgos conocidos: no se dispone de documentacion sobre sesgos especificos, pero al heredar el modelo base y eliminar la alineacion, es probable que los sesgos latentes se manifiesten con mayor intensidad.
+- Cobertura limitada de idiomas: solo ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
+- Longitud de contexto no disponible: se desconoce la ventana maxima, lo que dificulta planificar su uso en tareas de contexto largo.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su descarga y despliegue.
+- Licencia MIT: permite uso comercial, pero el usuario asume toda la responsabilidad legal y etica sobre el contenido generado.
+- Requisitos de hardware muy elevados: no es viable en GPU de consumo, lo que limita su uso a organizaciones con infraestructura multi-GPU.
+- No se ha confirmado soporte de tool calling ni de function calling, lo que puede limitar su integracion en pipelines de agentes.
+- El modelo base es experimental (sufijo Exp), por lo que su estabilidad y comportamiento en produccion no estan garantizados.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored
-- Blog de lanzamiento de DeepSeek V4 Flash Vision (OrcaRouter): https://www.orcarouter.ai/blog/deepseek-v4-flash-vision-exp-launch
-- Pagina de precios y benchmarks de DeepSeek V4 Flash (OrcaRouter): https://www.orcarouter.ai/models/deepseek/deepseek-v4-flash
+- Hugging Face: https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

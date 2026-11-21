@@ -2,96 +2,91 @@
 
 ## Resumen
 
-gemma-4-31B-it-oQ8e-mtp es un checkpoint cuantizado en formato MLX del modelo google/gemma-4-31B-it, desarrollado por Google DeepMind y distribuido por el usuario Jundot. Se trata de un modelo denso de 30,7B parametros en el backbone de lenguaje, con entrada de texto e imagen, modos de razonamiento configurables y una ventana de contexto de 256.000 tokens. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.1) mediante precision mixta, aplicando la variante Improved oQe Quantization.
+gemma-4-31B-it-oQ8e-mtp es una cuantización de precisión mixta en formato MLX del modelo google/gemma-4-31B-it, desarrollada por el usuario Jundot mediante la herramienta oQ (oMLX v0.8.0). El modelo base es un transformer denso de 30,7B parámetros de la familia Gemma 4 de Google DeepMind, con entrada de texto e imagen, modos de razonamiento configurables y una ventana de contexto de 256K tokens. Esta versión cuantizada conserva el backbone de lenguaje, el codificador visual y una cabeza de predicción multi-token (MTP) fusionada desde google/gemma-4-31B-it-assistant.
 
-El checkpoint resultante pesa 34,7 GB en disco (32,319 GiB) e integra tres componentes: el backbone de lenguaje (30,697B parametros logicos), el codificador de vision (0,576B) y una cabecera de prediccion multi-token (MTP, 0,470B) fusionada desde google/gemma-4-31B-it-assistant. La tasa efectiva es de 8,746 bits por peso para el conjunto del modelo, combinando capas en 8 bits afines con grupo 64 y capas en BF16 seleccionadas por sensibilidad medida.
+La relevancia de este checkpoint radica en que reduce el peso del modelo a 8,746 bits por peso de media (32,319 GiB de almacenamiento frente a los aproximadamente 61 GB que ocuparía en BF16), manteniendo una precisión superior a una cuantización uniforme de 8 bits gracias a una asignación de bits guiada por la sensibilidad medida de cada capa. Está pensado para ejecutarse en hardware Apple Silicon a través del framework MLX, lo que lo hace útil para desarrolladores que quieren desplegar un modelo multimodal de 31B en estaciones de trabajo Mac con memoria unificada.
 
-Su relevancia practica es doble: por un lado, permite ejecutar un modelo multimodal de 31B con contexto de 256K en hardware Apple Silicon con memoria unificada suficiente, algo inviable con los pesos originales en BF16; por otro, la cabecera MTP anadida apunta a acelerar la decodificacion, un aspecto critico cuando se trabaja con ventanas de contexto muy largas. La licencia Apache-2.0, heredada del modelo fuente, facilita su adopcion en entornos comerciales.
+La licencia declarada es Apache-2.0, si bien la model card remite a la licencia específica de Gemma 4 de Google, lo que conviene verificar antes de un uso comercial. El repositorio acumula 839 descargas y fue actualizado el 19 de noviembre de 2026 con una recuantización que reduce el error de cuantización al mismo tamaño y velocidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (texto e imagen) con cabecera de prediccion multi-token (MTP); pesos cuantizados en precision mixta para MLX |
-| Parametros totales | 31.742.607.472 (31,743B): 30,697B backbone de lenguaje, 0,576B codificador de vision, 0,470B cabecera MTP |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 256.000 tokens |
-| Tipos de cuantizacion | Mixta: 8 bits afines con grupo 64 (30,702B pesos logicos, 96,722% del total) y BF16 (1,040B, 3,278%); media efectiva de 8,746 bits/peso |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (sujeta a la Gemma 4 license de Google) |
-| Formato de pesos | safetensors (MLX) |
+| Arquitectura | Transformer denso multimodal (texto + imagen) con cabeza MTP |
+| Parametros totales | 31.742.607.472 (31,743B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 256K tokens |
+| Tipos de cuantizacion | oQ8e mixta: affine 8-bit grupo 64 (96,722% de los pesos) + BF16 (3,278%); 8,500 bits/peso en el backbone y 8,746 bits/peso en el checkpoint completo |
+| Idiomas soportados | No disponible |
+| Licencia | Apache-2.0 (sujeta a la licencia Gemma 4 de Google) |
+| Formato de pesos | safetensors (MLX), 34,7 GB de repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es el miembro denso de 30,7B de la familia Gemma 4 de Google DeepMind, con arquitectura transformer que procesa texto e imagen, modos de pensamiento configurables y un contexto de 256.000 tokens. El autor de la cuantizacion no ha modificado la topologia del modelo original: ha aplicado una cuantizacion de precision mixta con oQ (oMLX v0.7.1), que asigna el numero de bits por capa segun su sensibilidad medida. Cada grupo se redondea usando una matriz de importancia (128 muestras x 512 tokens) y un reajuste por minimos cuadrados ponderados de su escala y sesgo.
+El modelo base es un transformer denso de 30,7B parámetros con codificador visual integrado, lo que le permite procesar entradas image-text-to-text. Incorpora modos de pensamiento (thinking modes) configurables y una ventana de contexto de 256K tokens. Esta versión cuantizada añade una cabeza de predicción multi-token (MTP) de 0,470B parámetros fusionada desde el modelo asistente de Gemma 4, lo que habilita decodificación especulativa y por tanto un aumento del throughput de generación.
 
-La distribucion resultante concentra el 96,722% de los pesos logicos (30,702B) en formato afines de 8 bits con grupo 64, con 8,50 bits/peso efectivos y 30,381 GiB de almacenamiento, mientras que el 3,278% restante (1,040B) se mantiene en BF16 a 16,00 bits/peso, ocupando 1,938 GiB. Ademas, el checkpoint incorpora una cabecera de prediccion multi-token (MTP) de 0,470B parametros fusionada desde google/gemma-4-31B-it-assistant; este tipo de cabecera se emplea habitualmente para decodificacion especulativa, si bien la model card no detalla el mecanismo de integracion ni las tasas de aceleracion obtenidas. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) del modelo original en la informacion proporcionada.
+La cuantización oQ8e asigna bits según la sensibilidad medida de cada capa, redondea cada grupo con una matriz de importancia (128 muestras x 512 tokens) y aplica un reajuste de escala y sesgo por mínimos cuadrados ponderados. El resultado son 30,702B pesos lógicos en affine 8-bit con grupo 64 (30,381 GiB) y 1,040B en BF16 (1,938 GiB). No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional y multimodal: acepta entradas de imagen y texto (pipeline image-text-to-text) y produce respuestas en lenguaje natural.
-- Modos de razonamiento configurables (thinking modes), segun la model card del modelo base.
-- Razonamiento de contexto largo: ventana de 256.000 tokens, adecuada para documentos extensos o conversaciones muy largas.
-- Decodificacion acelerada mediante la cabecera de prediccion multi-token (MTP) fusionada desde el modelo asistente.
-- Comprension de imagenes a traves del codificador de vision de 0,576B parametros incluido en el checkpoint.
-- Ejecucion local en hardware Apple Silicon gracias al formato MLX y a la cuantizacion a 8,746 bits/peso medios.
-- Soporte de tool calling, function calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Cobertura multilingue concreta: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento con modos de pensamiento configurables.
+- Comprensión de imágenes y texto combinados (pipeline image-text-to-text).
+- Procesamiento de contexto largo de hasta 256K tokens.
+- Decodificación especulativa mediante la cabeza MTP fusionada, que acelera la generación.
+- Capacidades multilingües: no se especifican los idiomas soportados.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Analisis de documentos extensos en local: con 256.000 tokens de contexto, el modelo puede procesar informes, expedientes o bases de codigo completas en una sola pasada sobre un Mac con memoria unificada suficiente, sin enviar datos a servicios externos.
-- Asistencia sobre documentacion tecnica con imagenes: al aceptar entrada de imagen y texto, resulta util para interpretar diagramas de arquitectura, capturas de paneles o esquemas junto a la pregunta textual correspondiente.
-- Prototipado e investigacion en Apple Silicon: es una via practica para evaluar el comportamiento del Gemma 4 de 31B en un equipo de sobremesa antes de decidir un despliegue en servidor con los pesos originales.
-- Tareas de razonamiento con trazas explicitas: los modos de pensamiento configurables permiten separar el razonamiento interno de la respuesta final, lo que facilita auditar cadenas de deduccion en entornos analiticos.
-- Generacion de resumenes y extraccion de informacion sobre corpus largos: la combinacion de contexto de 256K y cuantizacion a 8 bits reduce el coste de memoria frente a BF16 para tareas por lotes.
-- Desarrollo asistido por IA en local: el modelo puede integrarse en editores y asistentes de terminal mediante mlx-lm o mlx-vlm, manteniendo el codigo y los datos dentro del equipo del desarrollador.
-- Evaluacion comparativa de tecnicas de cuantizacion: sirve como referencia para medir el impacto de oQ8e frente a otras estrategias (4 bits, 6 bits, GGUF) sobre un mismo modelo base multimodal.
+- Análisis de documentos extensos con imágenes: el modelo puede procesar contratos, informes o papers de hasta 256K tokens junto con sus figuras y tablas, extrayendo conclusiones que combinan texto e información visual.
+- Asistencia técnica sobre capturas de pantalla: un desarrollador puede enviar una imagen de un error junto con el contexto del código y obtener un diagnóstico fundamentado, gracias al codificador visual integrado.
+- Procesamiento por lotes en estaciones de trabajo Mac: con 32,319 GiB de almacenamiento, el checkpoint cabe en equipos Apple Silicon con memoria unificada de 64 GB o superior, permitiendo inferencia local sin GPU dedicada mediante MLX.
+- Generación aumentada por recuperación (RAG) con contexto largo: la ventana de 256K tokens permite inyectar grandes volúmenes de documentación recuperada sin truncar, útil en bases de conocimiento internas.
+- Prototipado de asistentes multimodales: la cabeza MTP acelera la decodificación, lo que resulta adecuado para iterar rápidamente en demos interactivas de chat con imágenes.
+- Investigación en cuantización: el checkpoint sirve como referencia para estudiar el impacto de la cuantización mixta oQ8e frente a cuantizaciones uniformes de 8 bits en tareas multimodales.
+- Evaluación de modelos en entornos con restricciones de privacidad: al ejecutarse localmente en MLX, los datos de texto e imagen no salen del dispositivo, lo que encaja en sectores regulados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del checkpoint cuantizado no incluye metricas de MMLU, HumanEval, GSM8K ni de tareas multimodales, y tampoco ofrece comparaciones frente al modelo base en BF16 para cuantificar la perdida de calidad introducida por la cuantizacion.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos del checkpoint: 34,702 GB en disco (32,319 GiB), de los cuales 30,377 GiB corresponden al backbone de lenguaje, 1,067 GiB al codificador de vision y 0,875 GiB a la cabecera MTP.
-- Memoria unificada necesaria: al menos 40-48 GB para cargar los pesos y disponer de margen para la cache KV; 64 GB o mas es recomendable si se trabaja con contextos cercanos a 256.000 tokens.
-- Equipos compatibles: la libreria es MLX, por lo que el destino natural son Mac con Apple Silicon (familias M1/M2/M3/M4, especialmente variantes Max y Ultra). El formato no es directamente ejecutable en GPU NVIDIA o AMD.
-- GPU consumer: no aplica en el sentido habitual; en el ecosistema Apple Silicon, un Mac Studio o MacBook Pro con 64 GB o mas de memoria unificada es el equivalente practico a una configuracion consumer capaz de mover este modelo.
-- Opciones de despliegue: mlx-lm y mlx-vlm para inferencia y servidor local. vLLM, TGI, llama.cpp y Ollama no consumen pesos MLX de forma nativa; requeririan una conversion previa a GGUF u otro formato, no documentada en la informacion disponible.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni del impacto real de la cabecera MTP en la velocidad de decodificacion.
+- Almacenamiento: 34,7 GB de repositorio; 32,319 GiB de pesos en memoria.
+- VRAM o memoria unificada estimada: al menos 40 GB para cargar el checkpoint completo con margen para el contexto; 64 GB o más recomendable para contextos largos.
+- GPU recomendadas: no aplica GPU CUDA; el formato MLX está orientado a Apple Silicon (M2 Ultra, M3 Max, M4 Max y superiores con memoria unificada amplia). Para GPU NVIDIA sería necesario convertir el modelo a otro formato, no disponible en este repositorio.
+- ¿Cabe en GPU de consumo? No en GPUs consumer de 24 GB; sí en configuraciones Apple Silicon de gama alta con 64 GB o más de memoria unificada.
+- Opciones de despliegue: MLX y oMLX; no se proporcionan instrucciones para vLLM, llama.cpp, Ollama o TGI, y el formato safetensors MLX no es directamente compatible con ellos.
+- Latencia y throughput: no disponibles; la cabeza MTP está diseñada para mejorar la velocidad de decodificación, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento verificados para establecer una comparativa cuantitativa. La tabla siguiente recoge unicamente los datos confirmados en la informacion disponible; el resto se marca como no disponible.
-
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/gemma-4-31B-it-oQ8e-mtp | 31,743B (30,697B backbone) | 256.000 tokens | safetensors MLX, precision mixta 8,746 bits/peso | Apache-2.0 | Hugging Face, 0 descargas |
-| google/gemma-4-31B-it | 30,7B densos (backbone) | 256.000 tokens | safetensors, precision original | Apache-2.0 / Gemma 4 license | Hugging Face |
-| google/gemma-4-31B-it-assistant | no disponible | no disponible | no disponible | no disponible | Hugging Face |
-| Qwen3.8 27b | no disponible | no disponible | no disponible | no disponible | mencionado en discusiones de la comunidad, sin datos verificados |
+| Jundot/gemma-4-31B-it-oQ8e-mtp | 31,743B | 256K | safetensors MLX, 8,746 bits/peso | Apache-2.0 (Gemma 4) | Hugging Face, 839 descargas |
+| google/gemma-4-31B-it | 30,7B | 256K | safetensors BF16 | Apache-2.0 (Gemma 4) | Hugging Face (modelo base) |
+| google/gemma-4-31B-it-assistant | 0,470B (cabeza MTP) | No disponible | safetensors | No disponible | Hugging Face (origen de la cabeza MTP) |
 
-En busquedas web aparece una discusion en Reddit que menciona comparaciones entre Gemma 4 31B, Qwen3.8 27B y otros modelos de tamano similar, pero el hilo no aporta resultados de benchmarks verificables. No se han encontrado, por tanto, cifras contrastadas que permitan situar este checkpoint frente a alternativas de su categoria.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Alucinacion: no hay datos publicados sobre la tasa de alucinacion del modelo base ni sobre como la afecta la cuantizacion a 8,746 bits/peso; en tareas de recuperacion de hechos conviene verificar las salidas.
-- Perdida por cuantizacion: aunque oQ8e preserva en BF16 el 3,278% de los pesos mas sensibles, no se ha publicado ninguna evaluacion comparativa frente al modelo original, por lo que la degradacion real es desconocida.
-- Idiomas: la ficha de Hugging Face no declara idiomas soportados; no se puede asumir un rendimiento uniforme en castellano sin una evaluacion previa.
-- Contexto largo: los 256.000 tokens son una capacidad declarada del modelo base; el consumo de memoria de la cache KV a esa longitud puede superar la memoria disponible en equipos de 48 GB, especialmente con precision alta de cache.
-- Licencia: el checkpoint se distribuye como Apache-2.0, pero hereda las condiciones de la Gemma 4 license de Google. Es imprescindible revisar ese documento antes de un uso comercial, ya que puede imponer obligaciones adicionales de atribucion o restricciones de uso.
-- Ecosistema limitado: al ser un formato MLX, no es ejecutable directamente en infraestructura CUDA. Un despliegue en servidores con NVIDIA exigiria otra conversion, cuyo soporte no esta documentado.
-- Adopcion practica: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad ni un historial de incidencias conocido.
-- Cabecera MTP: no se documenta como se activa ni que ganancia ofrece; su presencia no garantiza por si sola una aceleracion en todos los entornos de inferencia.
-- Fecha de publicacion: el repositorio esta fechado en octubre de 2026 y no se ha actualizado desde entonces, segun los metadatos disponibles.
+- Al ser una cuantización de 8 bits, puede presentar una degradación ligera de precisión frente al modelo base en BF16, especialmente en tareas de razonamiento matemático o código.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de este checkpoint.
+- No se especifican los idiomas soportados, por lo que el rendimiento en castellano no está documentado.
+- La licencia Apache-2.0 remite a la licencia Gemma 4 de Google; es necesario revisar sus términos antes de un uso comercial, ya que pueden imponer restricciones adicionales.
+- El formato MLX limita el despliegue a hardware Apple Silicon; no es portable directamente a ecosistemas CUDA sin conversión.
+- El modelo base es denso, por lo que el coste de inferencia es proporcional a los 31,7B parámetros, sin las ventajas de eficiencia de una arquitectura MoE.
+- La model card advierte de que las copias anteriores al 19 de noviembre de 2026 deben descargarse de nuevo para beneficiarse del redondeo oQe refinado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-31B-it-oQ8e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Modelo asistente (origen de la cabecera MTP): https://huggingface.co/google/gemma-4-31B-it-assistant
-- Repositorio de la herramienta de cuantizacion oQ: https://github.com/jundot/omlx
-- Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385
+- Modelo asistente (cabeza MTP): https://huggingface.co/google/gemma-4-31B-it-assistant
+- Repositorio de oQ/oMLX: https://github.com/jundot/omlx
+- Pull request de mejora oQe: https://github.com/jundot/omlx/pull/4930
+- Pull request de refinamiento del redondeo oQe: https://github.com/jundot/omlx/pull/5292
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Discusion comunitaria sobre comparativas entre Gemma 4 31B y Qwen3.8 27B: https://www.reddit.com/r/LocalLLM/comments/1worubw/any_credible_comparisons_among_gemma_4_31b_qwen38/

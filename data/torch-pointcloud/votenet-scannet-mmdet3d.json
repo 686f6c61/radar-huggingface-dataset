@@ -50,13 +50,13 @@
       "task": null,
       "dataset": "ScanNet",
       "metric": "mAP@0.25",
-      "value": 62.02
+      "value": 61.17
     },
     {
       "task": null,
       "dataset": "ScanNet",
       "metric": "mAP@0.5",
-      "value": 39.94
+      "value": 39.67
     }
   ],
   "sources": []

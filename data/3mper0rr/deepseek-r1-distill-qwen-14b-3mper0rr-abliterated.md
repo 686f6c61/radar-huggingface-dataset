@@ -2,101 +2,91 @@
 
 ## Resumen
 
-Este repositorio contiene una version "abliterated" (modificada para eliminar el comportamiento de rechazo) del modelo DeepSeek-R1-Distill-Qwen-14B, publicada por el usuario 3MPER0RR. La model card es extremadamente escueta: se limita a indicar que se trata de una "version experimental modificada / abliterated", que se han realizado 200 intentos ("Trials: [200]") y que el estado es "probado y guardado". No se documenta el metodo de abliteracion, el dataset utilizado ni ninguna evaluacion posterior.
+DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated es una modificación "abliterated" del modelo DeepSeek-R1-Distill-Qwen-14B, publicada por el usuario 3MPER0RR en Hugging Face. El modelo base es un destilado de DeepSeek-R1 sobre la arquitectura Qwen2 de 14B parámetros, desarrollado originalmente por DeepSeek. La modificación consiste en la eliminación de la dirección de rechazo ("abliteration") mediante la sustracción de vectores de activación asociados a comportamientos de negativa, un procedimiento experimental que el autor documenta de forma muy escueta (200 ensayos, estado "tested and saved").
 
-El modelo base, DeepSeek-R1-Distill-Qwen-14B, es un destilado de DeepSeek-R1 sobre la arquitectura Qwen2 (14.770.033.664 parametros segun los pesos safetensors del repositorio, aproximadamente 14,77 mil millones). El modelo original hereda la capacidad de razonamiento con cadena de pensamiento larga del modelo profesor DeepSeek-R1 y una ventana de contexto de 131.072 tokens, y se distribuye bajo licencia MIT.
+El modelo conserva la arquitectura transformer densa de Qwen2 con 14.770.033.664 parámetros totales, pesos en safetensors y licencia MIT. No se proporcionan datos sobre contexto, idiomas, dataset de entrenamiento ni metodología detallada de la modificación. El repositorio ocupa 29,6 GB y acumula 822 descargas con 0 likes en el momento de la consulta.
 
-La relevancia de esta publicacion es fundamentalmente de investigacion: los modelos abliterated interesan a quienes estudian mecanismos de rechazo, alineamiento y seguridad en modelos de lenguaje, y a quienes necesitan un modelo sin filtros de contenido para tareas creativas o de red-teaming. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y no aporta datos de benchmarks, por lo que su calidad real tras la modificacion no esta verificada de forma independiente.
+Su relevancia es acotada: se trata de un experimento de la comunidad orientado a investigadores interesados en estudiar el comportamiento de modelos destilados de razonamiento sin los filtros de rechazo del modelo original. No es un modelo recomendado para producción sin una evaluación exhaustiva previa, dada la ausencia de documentación técnica y de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Qwen2 (con RoPE y GQA), heredada del modelo base; no se documentan cambios estructurales |
-| Parametros totales | 14.770.033.664 (~14,77 mil millones), dato real de los safetensors |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 131.072 tokens en el modelo base; no documentada para esta version modificada |
-| Tipos de cuantizacion | El repositorio solo contiene pesos safetensors (presumiblemente BF16). No se han publicado cuantizaciones GGUF, AWQ o GPTQ propias |
-| Idiomas soportados | No disponible en la model card; el modelo base esta entrenado principalmente en ingles y chino |
+| Arquitectura | Transformer denso (Qwen2) |
+| Parametros totales | 14.770.033.664 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no documentadas por el autor) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 29,6 GB |
-| Pipeline | text-generation |
-| Uso previsto declarado | Experimental, investigacion y experimentacion |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ni la arquitectura ni el proceso de entrenamiento de esta version. Por herencia del modelo base DeepSeek-R1-Distill-Qwen-14B, se trata de un transformer decoder-only de la familia Qwen2 (aproximadamente 48 capas, atencion con consultas agrupadas y RoPE), que fue destilado por DeepSeek a partir de las salidas del modelo profesor DeepSeek-R1 mediante ajuste supervisado (SFT) sobre un corpus de muestras de razonamiento. Esa destilacion no incluye una fase de RL posterior: el comportamiento de cadena de pensamiento larga se aprende imitando las trazas del profesor, no mediante refuerzo.
+El modelo base DeepSeek-R1-Distill-Qwen-14B emplea la arquitectura Qwen2, un transformer decoder-only denso con normalización RMSNorm, activación SwiGLU y atención con RoPE. El destilado original de DeepSeek se obtuvo entrenando el modelo Qwen2-14B sobre trazas de razonamiento generadas por DeepSeek-R1, lo que le confiere capacidad de generar cadenas de pensamiento largas antes de responder. No se dispone de información sobre el número de tokens de entrenamiento ni la composición del dataset del destilado original en la documentación proporcionada.
 
-La intervencion de 3MPER0RR consiste en una abliteracion, una tecnica que identifica la direccion de activacion asociada al rechazo de peticiones y la elimina del espacio de pesos (habitualmente mediante ortogonalizacion de las matrices de proyeccion). El autor solo indica "Trials: [200]", sin especificar el metodo, el conjunto de prompts utilizado para calcular la direccion de rechazo, las capas afectadas ni el impacto sobre el resto de capacidades. Tampoco se documenta ningun reentrenamiento adicional, calibracion o evaluacion posterior a la ablacion.
+La modificación "abliterated" aplicada por 3MPER0RR consiste, según la práctica habitual de esta técnica, en identificar la dirección de activación asociada a la negativa a responder y restarla de los pesos o activaciones del modelo. El autor indica 200 ensayos y un estado "tested and saved", pero no detalla la metodología exacta, las capas intervenidas, el dataset de calibración ni las métricas de evaluación. No hay información sobre si se aplicó RLHF, DPO u otro ajuste posterior a la abliteración.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato de chat, con soporte del estilo de plantilla de DeepSeek-R1 basado en etiquetas de razonamiento.
-- Razonamiento con cadena de pensamiento larga (long chain-of-thought): el modelo tiende a producir trazas de pensamiento extensas antes de la respuesta final.
-- Resolucion de problemas matematicos y de logica, capacidad heredada del destilado de R1.
-- Generacion y comprension de codigo en tareas de programacion de nivel medio.
-- Ausencia (o reduccion drastica) del comportamiento de rechazo ante peticiones que el modelo original declinaria, que es precisamente el objetivo de la abliteracion.
-- Soporte de tool calling / function calling: no documentado; el modelo base no fue entrenado especificamente para ello.
-- Comportamiento agentico y razonamiento multi-paso: no documentado de forma explicita, aunque el formato de cadena de pensamiento permite encadenar pasos.
-- Capacidades multilingues: no disponibles en la model card; el modelo base esta orientado a ingles y chino, con competencia limitada en otros idiomas.
-- Capacidades multimodales (vision, audio): no disponibles. El modelo es exclusivamente de texto.
+- Generación de texto conversacional y de razonamiento multi-paso, heredadas del destilado de DeepSeek-R1.
+- Razonamiento matemático y lógico con cadenas de pensamiento explícitas (estilo R1).
+- Generación de código, presumiblemente con capacidad de razonamiento previo a la respuesta.
+- Soporte de conversaciones multi-turno en formato chat (pipeline `conversational`).
+- Capacidad reducida o eliminada de rechazo ante peticiones que el modelo original declinaría, por efecto de la abliteración.
+- Tool calling y function calling: no documentado por el autor; el modelo base Qwen2 lo soporta parcialmente, pero no hay confirmación para esta variante.
+- Capacidades de agente y multi-step reasoning: no verificadas en esta variante.
+- Capacidades multilingües: no documentadas.
+- Modo "thinking" explícito: heredado del modelo base, no verificado tras la modificación.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: comparar este modelo con el DeepSeek-R1-Distill-Qwen-14B original para medir en que capas y en que medida desaparece el comportamiento de rechazo, y como afecta eso a las respuestas en dominios sensibles.
-- Red-teaming y evaluacion de robustez: usar el modelo como generador de contenido adversario dentro de una bateria de pruebas controlada, aprovechando que no aplica filtros de rechazo.
-- Escritura creativa sin restricciones: narrativa de ficcion con tematicas adultas, violentas o controvertidas, donde el modelo base rechazaria peticiones por politica de contenido. Requiere revision humana y cumplimiento legal en la jurisdiccion de uso.
-- Asistencia al razonamiento matematico paso a paso en entornos educativos o de investigacion, aprovechando la cadena de pensamiento larga heredada del destilado de R1, siempre que la tarea no dependa de contexto superior a los 131.072 tokens del modelo base.
-- Generacion de codigo en flujos internos de desarrollo: completar funciones, refactorizar o explicar fragmentos, ejecutando el modelo en local para evitar enviar codigo propietario a APIs externas.
-- Analisis de documentos largos en ingles o chino (informes, articulos, transcripciones) aprovechando la ventana de contexto extensa del modelo base, con la advertencia de que no hay evaluacion publicada del rendimiento tras la abliteracion.
-- Base para estudios de destilacion: servir como punto de partida para experimentos de fine-tuning o de nuevas intervenciones sobre pesos en un modelo de 14B manejable en una sola GPU de 24 GB en cuantizacion de 4 bits.
-- Generacion de datos sinteticos para investigacion: producir textos sin las restricciones del modelo original para construir datasets, asumiendo la responsabilidad legal y etica del contenido generado.
+- Investigación sobre alineación y rechazo: el modelo permite estudiar cómo la sustracción de direcciones de activación afecta a la distribución de respuestas y a la utilidad del modelo en tareas sensibles, comparándolo con el modelo base original.
+- Evaluación de robustez de salvaguardas: útil para probar sistemas de moderación externos, ya que genera respuestas que un modelo alineado rechazaría, permitiendo medir la eficacia de filtros posteriores.
+- Generación de razonamiento matemático en entornos controlados: al conservar el estilo de cadena de pensamiento de R1, puede emplearse para generar trazas de razonamiento sintéticas en investigación, siempre con revisión humana.
+- Experimentación con destilados de razonamiento: sirve como punto de comparación para estudiar el efecto de la abliteración sobre la calidad del razonamiento en modelos de 14B.
+- Fine-tuning posterior para dominios específicos: al tener licencia MIT y pesos safetensors, puede servir como base para ajustes supervisados en investigación académica, aunque sin garantías de calidad tras la modificación.
+- Despliegue en entornos de laboratorio aislados: con 14,7B parámetros puede ejecutarse en una GPU de 24 GB en cuantización de 8 bits o en 4 bits para pruebas internas, sin exposición a usuarios finales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye ninguna evaluacion, ni antes ni despues de la abliteracion, y tampoco hay datos de terceros en el repositorio (0 descargas registradas).
-
-Existe una tabla de referencia publicada por DeepSeek para el modelo base DeepSeek-R1-Distill-Qwen-14B (AIME 2024, MATH-500, GPQA Diamond, LiveCodeBench y Codeforces) en el informe tecnico de DeepSeek-R1, pero esos numeros corresponden al modelo sin modificar y no es posible asumir que se mantengan tras la ablacion: la literatura sobre abliteracion describe de forma consistente una degradacion en benchmarks de seguridad y, en algunos casos, una perdida leve en tareas generales. No se reproduce aqui esa tabla porque no forma parte de la informacion proporcionada y no hay verificacion independiente de su aplicabilidad a esta version.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no reporta métricas de MMLU, GSM8K, HumanEval ni evaluaciones de rechazo antes y después de la abliteración, por lo que no es posible cuantificar el impacto de la modificación sobre el rendimiento del modelo base.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: los pesos ocupan aproximadamente 29,6 GB, por lo que la inferencia necesita del orden de 32-36 GB de VRAM contando cache KV y overhead.
-- VRAM en 8 bits (INT8/FP8): aproximadamente 15-16 GB de pesos, con margen adicional para la cache KV.
-- VRAM en 4 bits (GPTQ, AWQ o GGUF Q4_K_M): aproximadamente 9-10 GB de pesos; es el rango practico para GPUs de consumo.
-- GPU recomendadas para BF16: A100 40 GB, A100 80 GB, H100 80 GB, A6000 48 GB o configuraciones multi-GPU con dos RTX 4090 o dos RTX 3090.
-- GPU de consumo compatibles: cabe en RTX 4090, RTX 3090, RTX 4080 y RTX 4070 Ti Super (16 GB) usando cuantizacion de 4 bits o 8 bits; no cabe en BF16 en GPUs de 24 GB o menos.
-- Opciones de despliegue: al ser una arquitectura Qwen2 estandar, es compatible con transformers, vLLM, SGLang, TGI, llama.cpp, Ollama y LM Studio. El repositorio solo publica safetensors, por lo que para llama.cpp u Ollama habria que convertir o usar una cuantizacion GGUF de terceros compatible.
-- Latencia y throughput estimados: no disponibles. No hay mediciones publicadas en el repositorio ni en la informacion proporcionada.
+- VRAM estimada en FP16/BF16: aproximadamente 29,5 GB solo para pesos, más overhead de activaciones y caché KV; requiere GPU de 40 GB o superior (A100 40GB, A100 80GB, H100).
+- VRAM estimada en cuantización de 8 bits: aproximadamente 15-16 GB; cabe en RTX 4090 (24 GB) y A6000 (48 GB).
+- VRAM estimada en cuantización de 4 bits: aproximadamente 8-9 GB; cabe en RTX 3090, RTX 4090, RTX 4080 y GPUs consumer de 12 GB o más.
+- GPU recomendadas: A100 80GB o H100 para FP16 con contexto largo; RTX 4090 o A6000 para 8 bits; RTX 3090/4090 para 4 bits.
+- Opciones de despliegue: vLLM y TGI para safetensors en FP16/BF16; llama.cpp y Ollama requieren conversión previa a GGUF, no publicada por el autor; Transformers con bitsandbytes para carga cuantizada.
+- Latencia y throughput: no disponibles; dependen de la GPU, la cuantización y la longitud de las cadenas de razonamiento generadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Estado | Benchmarks |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated | 14,77B | 131.072 tokens (heredado, no verificado) | MIT | Publicado, 0 descargas, sin evaluacion | No disponible |
-| DeepSeek-R1-Distill-Qwen-14B (original) | 14,77B | 131.072 tokens | MIT | Modelo oficial de DeepSeek, ampliamente validado | Publicados por DeepSeek en el informe de R1 |
-| Qwen2.5-14B-Instruct (base no destilada) | 14,7B | 131.072 tokens | Apache 2.0 (Qwen2.5 en variantes de >=3B) | Modelo oficial de Alibaba, muy desplegado | Publicados por Alibaba |
-| DeepSeek-R1-Distill-Llama-8B | 8B | 131.072 tokens | MIT | Modelo oficial de DeepSeek, menor tamano | Publicados por DeepSeek en el informe de R1 |
+| 3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated | 14,77B | no disponible | MIT | safetensors | Variante abliterated experimental, sin benchmarks |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B | 14,77B | 128K (según documentación del modelo base) | MIT | safetensors | Modelo original alineado, con benchmarks publicados por DeepSeek |
+| Qwen/Qwen2.5-14B-Instruct | 14,7B | 128K | Apache 2.0 | safetensors, GGUF | Modelo generalista alineado, sin modo de razonamiento explícito |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8B | 128K (según documentación del modelo base) | MIT | safetensors | Alternativa más ligera de la familia de destilados de R1 |
 
-La comparacion relevante es contra el modelo original del que deriva: este repositorio no aporta ninguna metrica que demuestre una mejora en ninguna tarea, y su unico cambio verificable es la eliminacion del comportamiento de rechazo. Frente a Qwen2.5-14B-Instruct, el destilado de R1 esta optimizado para razonamiento con cadena de pensamiento larga mas que para dialogo general o uso empresarial con alineamiento.
+La comparativa se limita a parámetros, contexto y licencia; no hay datos de rendimiento de la variante abliterated que permitan comparaciones cuantitativas.
 
 ## Limitaciones y advertencias
 
-- La abliteracion elimina o reduce deliberadamente los mecanismos de rechazo: el modelo puede generar contenido danino, ilegal o inseguro ante peticiones que el original declinaria. La responsabilidad del uso recae por completo en quien lo despliega.
-- No existe ninguna evaluacion publicada del impacto de la ablacion: ni benchmarks de capacidad general, ni mediciones de degradacion, ni analisis de las capas afectadas. Los "200 trials" mencionados no van acompanados de criterios de seleccion ni de resultados.
-- Riesgo elevado de alucinacion, especialmente en un modelo destilado de razonamiento y sin ninguna calibracion posterior documentada.
-- Idiomas: la model card no declara idiomas soportados. El modelo base esta orientado a ingles y chino; el rendimiento en castellano no esta verificado y probablemente sea inferior.
-- Contexto: aunque el modelo base soporta 131.072 tokens, no hay confirmacion de que la modificacion preserve ese limite ni de que la atencion a larga distancia se mantenga funcional.
-- Licencia MIT en el repositorio, lo que en principio permite uso comercial; sin embargo, conviene revisar los terminos del modelo base DeepSeek-R1-Distill-Qwen-14B y la politica de uso de DeepSeek, asi como la legislacion aplicable sobre contenido generado sin filtros (por ejemplo, la normativa europea de IA para sistemas de riesgo).
-- El repositorio tiene 0 descargas y 0 likes, y no ha pasado ninguna revision por pares ni validacion de la comunidad. La fecha de creacion registrada (2026-09-12) es posterior a la fecha habitual de publicacion de DeepSeek-R1 y no se explica en la model card.
-- No se ofrece informacion sobre sesgos del autor, dataset de abliteracion, ni sobre si se ha preservado el tokenizador y la plantilla de chat originales; cambiar la plantilla por error degradaria gravemente las respuestas.
+- La abliteración elimina o reduce los mecanismos de rechazo del modelo, lo que puede producir respuestas a peticiones dañinas, ilegales o inseguras sin advertencia; no debe exponerse a usuarios finales sin moderación externa.
+- No hay evaluación documentada del impacto de la modificación sobre la calidad del razonamiento, la coherencia o la tasa de alucinación; el modelo puede degradarse respecto al original.
+- No se especifican idiomas soportados ni longitud de contexto; asumir los valores del modelo base (128K en la documentación de DeepSeek) sin verificación es arriesgado.
+- El autor no documenta la metodología de abliteración, las capas intervenidas ni el dataset de calibración, lo que impide reproducir el experimento.
+- Licencia MIT permite uso comercial, pero el titular de la modificación no ofrece garantías y la responsabilidad legal por el uso recae en el desplegador.
+- Riesgo de sesgos heredados del modelo base y potencialmente amplificados por la eliminación de rechazos en temas sensibles.
+- Ausencia de cuantizaciones GGUF oficiales y de benchmarks dificulta la integración en pipelines de producción estándar.
+- El repositorio tiene 0 likes y documentación mínima; no hay comunidad que valide su comportamiento en distintos escenarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated
-- Modelo base DeepSeek-R1-Distill-Qwen-14B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
-- Modelo profesor DeepSeek-R1: https://huggingface.co/deepseek-ai/DeepSeek-R1
-- Repositorio oficial de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
-- Informe tecnico de DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
-- Familia Qwen2.5: https://huggingface.co/Qwen
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces recuperados correspondian a un centro educativo sin relacion con el tema.
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+- Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
+- Repositorio de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
+- Documentación de Qwen2: https://huggingface.co/docs/transformers/model_doc/qwen2

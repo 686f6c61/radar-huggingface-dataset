@@ -2,113 +2,87 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct-heretic1x-general es una variante "abliterada" (con los mecanismos de rechazo suprimidos) del modelo Qwen/Qwen2.5-Coder-7B-Instruct, publicada por el investigador Richard J. Young. La edicion se ha realizado con Heretic 1.x (heretic-llm 1.4.0, tag v1.4.0, commit `6ea3b8d`) aplicando una LoRA de rango 1 sobre las proyecciones `o_proj` y `down_proj`, posteriormente fusionada en pesos bf16. El objetivo no es ofrecer un asistente generalista, sino servir como objeto de estudio para la investigacion sobre abliteracion y su evaluacion.
+Qwen2.5-Coder-7B-Instruct-heretic1x-general es un ajuste fino del modelo Qwen/Qwen2.5-Coder-7B-Instruct realizado por el usuario richardyoung. Su particularidad es que ha sido sometido a un proceso de "abliteration" (eliminacion de rechazos o *decensoring*) mediante la tecnica Heretic 1.x, que modifica los pesos del modelo para reducir la tendencia a rechazar peticiones que el modelo original denegaria. El resultado es un modelo orientado a investigacion que mantiene la base de codigo de Qwen2.5-Coder pero con menos restricciones conductuales.
 
-El modelo forma parte del conjunto evaluado en el paper 30 del autor, titulado "The Selection Rule Can Reverse Abliteration Comparisons: A Held-Out, Judge-Based Case Study of Heretic 1.x, Heretic 2.0, External Tools and Community Releases on Qwen2.5". La variante "general" emplea la direccion por defecto de Heretic 1.x, con los conjuntos de prompts `mlabonne/harmful_behaviors` y `mlabonne/harmless_alpaca`, y una busqueda de 200 trials de Optuna. El trial seleccionado fue el numero 182, con 21/100 rechazos en el conjunto de desarrollo y una divergencia KL de 0,0096.
+El modelo conserva la arquitectura transformer decoder-only de Qwen2.5, con 7.615.616.512 parametros totales (aproximadamente 7,6 mil millones) y una ventana de contexto de 32.768 tokens heredada del modelo base. Esta pensado para generacion de texto y codigo en ingles, y su publicacion esta marcada como acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo.
 
-Se trata de un transformer denso de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), derivado de un modelo base Apache-2.0, y distribuido bajo la licencia Apache-2.0 con las restricciones adicionales de OpenRAIL++ v1.0. Su relevancia actual es metodologica: proporciona evidencia empirica sobre como la regla de seleccion de trials puede invertir las conclusiones de comparaciones entre modelos abliterados.
+Su relevancia es doble: por un lado, sirve como ejemplo practico de las tecnicas de abliteration aplicadas a un modelo de codigo; por otro, permite a investigadores estudiar el comportamiento de un modelo decensurado frente al original en tareas de generacion, rechazo y seguridad. La licencia declarada es Apache 2.0, aunque el acceso restringido y las etiquetas de investigacion aconsejan precaucion en despliegues comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen2), derivado de Qwen2.5-Coder-7B-Instruct |
+| Arquitectura | Transformer decoder-only (familia Qwen2) |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en bf16) |
-| Idiomas soportados | en |
-| Licencia | Apache-2.0 (base) con restricciones de uso de OpenRAIL++ v1.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-Coder-7B-Instruct soporta 32.768 tokens) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos en safetensors; el modelo base admite cuantizaciones GGUF/AWQ/GPTQ de la comunidad) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo Qwen2.5-Coder-7B-Instruct: un transformer denso de aproximadamente 7,6 mil millones de parametros, especializado en codigo e instrucciones. Sobre esta base, el autor aplico una edicion de abliteracion mediante Heretic 1.x, que consiste en una LoRA de rango 1 sobre las proyecciones `o_proj` (atencion) y `down_proj` (feed-forward), fusionada posteriormente en los pesos bf16 originales. No se ha realizado un reentrenamiento completo ni un ajuste adicional de seguridad.
+La arquitectura subyacente es la de Qwen2.5-Coder-7B-Instruct: un transformer decoder-only denso con atencion causal, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). El modelo parte de los pesos del instruct de codigo de Qwen y ha sido modificado mediante la tecnica Heretic 1.x, un procedimiento de abliteration que identifica y edita las direcciones de activacion asociadas al rechazo para reducir la tasa de respuestas denegadas. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento adicional, la composicion del dataset de ajuste ni si se aplico RLHF o DPO especifico en este fine-tuning.
 
-El proceso de busqueda utilizo 200 trials de Optuna con los valores por defecto de Heretic 1.x, empleando `mlabonne/harmful_behaviors` como conjunto de prompts daninos y `mlabonne/harmless_alpaca` como conjunto de prompts benignos. La regla de seleccion escogio el trial con menos rechazos en el conjunto de desarrollo entre aquellos con divergencia KL de desarrollo menor o igual a 0,01 (el limite archivado). El trial seleccionado (#182) obtuvo 21/100 rechazos en desarrollo y una KL de 0,0096, evaluado sobre `mlabonne/harmful_behaviors test[:100]`.
-
-El autor documenta que los pesos publicados son identicos bit a bit, tensor por tensor, al modelo evaluado en el paper, y que el repositorio incluye `tensor_hashes.json` con el SHA-256 de cada tensor para verificar la integridad. El codigo, los registros de ejecucion y las etiquetas estan disponibles en el repositorio GitHub `ricyoung/abliteration-studies`.
+La innovacion tecnica destacable es precisamente el proceso de abliteration Heretic 1.x, que actua sobre los pesos sin requerir un reentrenamiento completo. El autor etiqueta el modelo como "heretic-1.x", "abliterated" y "decensored", y lo enmarca explicitamente en el ambito de la investigacion. No hay informacion publicada en la ficha sobre la metodologia exacta (capas intervenidas, magnitud de las ediciones, evaluacion de la degradacion de capacidades).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada de Qwen2.5-Coder-7B-Instruct.
-- Generacion y comprension de codigo en multiples lenguajes de programacion (capacidad propia del modelo base Coder).
-- Razonamiento matematico y resolucion de problemas tipo GSM8K, segun los benchmarks reportados.
-- Seguimiento de instrucciones (IFEval) con un cambio de +0,6 pp respecto al original.
-- Reduccion sustancial de rechazos ante prompts daninos: 10,3% de tasa de rechazo segun el juez WildGuard, frente al 83,2% del modelo original.
-- Reduccion de sobre-rechazo en prompts benignos: 2,3% frente al 22,6% del original.
-- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento extendido en la informacion proporcionada.
+- Generacion de texto y codigo en ingles, heredadas del modelo base Qwen2.5-Coder-7B-Instruct.
+- Razonamiento y resolucion de problemas de programacion, con soporte para multiples lenguajes de programacion segun el modelo base.
+- Generacion de texto conversacional multi-turno (etiqueta "conversational").
+- Comportamiento decensurado: menor tasa de rechazos ante peticiones que el modelo original denegaria.
+- Compatibilidad con text-generation-inference (etiqueta "text-generation-inference") y endpoints compatibles.
+- Soporte de tool calling y function calling: no confirmado en la informacion proporcionada para este fine-tuning concreto (el modelo base lo soporta).
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion proporcionada para este fine-tuning.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma declarada.
 
 ## Casos de uso
 
-- Investigacion sobre abliteracion: el modelo sirve como caso de estudio controlado para analizar como la regla de seleccion de trials (limite de KL) afecta a las comparaciones entre modelos abliterados y a las conclusiones sobre eficacia de la supresion de rechazos.
-- Evaluacion de jueces automaticos: permite reproducir el pipeline de evaluacion con WildGuard y comparar tasas de rechazo medidas por juez frente a marcadores por palabras clave (10,3% vs 18,5% en este modelo).
-- Estudio de sobre-rechazo: util para medir como la abliteracion afecta a la tasa de rechazos en prompts benignos (2,3% frente a 22,6% del original) y calibrar umbrales de utilidad.
-- Verificacion de integridad de pesos: el repositorio incluye hashes SHA-256 por tensor, lo que permite auditar que los pesos publicados coinciden exactamente con los evaluados en el paper.
-- Analisis de degradacion de capacidades: con cambios de -1,4 pp en GSM8K, -0,8 pp en MBPP y -0,6 pp en HumanEval, el modelo es adecuado para estudiar el coste de la abliteracion en tareas de codigo y matematicas.
-- Reproducibilidad de experimentos: combinado con el codigo y los registros publicados en GitHub, permite replicar la busqueda de 200 trials y la seleccion por regla de KL.
-- Comparacion entre variantes de Heretic: al existir variantes como Heretic 2.0 y otras releases comunitarias sobre Qwen2.5, sirve como referencia en estudios comparativos con reglas de seleccion declaradas.
+- Investigacion sobre abliteration y seguridad de modelos: comparar las tasas de rechazo y la calidad de respuesta de este modelo frente al Qwen2.5-Coder-7B-Instruct original en un conjunto controlado de prompts, para medir el coste de la decensura en capacidades y alineacion.
+- Generacion de codigo en entornos de investigacion: usar el modelo para completar funciones, generar tests y traducir entre lenguajes en notebooks y pipelines experimentales, aprovechando su base Coder.
+- Evaluacion de robustez de filtros: emplear el modelo como sujeto de prueba para validar clasificadores de contenido y sistemas de moderacion, dado su comportamiento menos restrictivo.
+- Estudio de degradacion de capacidades: comparar benchmarks de codigo y razonamiento entre el modelo abliterado y el original para cuantificar la perdida de rendimiento asociada a la edicion de pesos.
+- Prototipado de asistentes conversacionales en ingles: desplegar el modelo en entornos de desarrollo con TGI o transformers para iterar sobre prompts sin las restricciones del modelo alineado.
+- Analisis de sesgos y comportamiento: examinar como cambia la distribucion de respuestas del modelo tras la abliteration en temas sensibles, como material para publicaciones academicas.
 
 ## Benchmarks y rendimiento
 
-Evaluacion retenida del paper 30: 972 prompts daninos no usados durante la busqueda, puntuados por el juez WildGuard, y cinco benchmarks de capacidad (cambios en puntos porcentuales, pp, respecto al modelo original).
-
-| Metrica | Este modelo | Original |
-|---|---|---|
-| Tasa de rechazo, juez WildGuard [IC 95%] | 10,3% [8,5%, 12,4%] | 83,2% |
-| Tasa de rechazo, marcadores por palabras clave | 18,5% | 83,6% |
-| Sobre-rechazo en prompts benignos (WildGuard) | 2,3% | 22,6% |
-| Cambio medio de capacidad | -0,35 pp | 0 |
-
-Cambio de capacidad por benchmark (pp):
-
-| Benchmark | Cambio (pp) |
-|---|---|
-| MMLU-Pro | +0,5 |
-| GSM8K | -1,4 |
-| IFEval | +0,6 |
-| HumanEval | -0,6 |
-| MBPP | -0,8 |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 15,2 GB solo para pesos (tamano del repo), mas overhead de activaciones y cache KV; en la practica se recomienda al menos 16-20 GB para contexto corto.
-- Cuantizacion a 8 bits: aproximadamente 8 GB de pesos; a 4 bits: aproximadamente 4 GB de pesos. No se han publicado ficheros GGUF en la informacion disponible, por lo que habria que generarlos a partir de los safetensors.
-- GPU recomendadas para bf16: A100 40/80 GB, H100, L40S, RTX A6000. Para cuantizacion 4/8 bits, RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 4080 (16 GB) son suficientes.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizacion 8 o 4 bits; en bf16 requiere GPU de 24 GB o superior con contexto limitado.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), y previsiblemente vLLM y llama.cpp/Ollama tras conversion a GGUF, aunque esto ultimo no se confirma en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 15,2 GB solo para pesos, mas overhead de KV cache y activaciones; se recomienda un minimo de 16-18 GB.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 8 GB; en 4 bits: aproximadamente 4-5 GB (estimaciones basadas en el tamano de parametros, no verificadas para este fine-tuning).
+- GPU recomendadas para fp16: A100 40/80 GB, H100, L40S, RTX 6000 Ada; para consumer, RTX 4090 (24 GB) o RTX 3090 (24 GB) caben en fp16 con contexto moderado.
+- Cabe en GPU consumer: si, en RTX 4090/3090 en fp16 con contexto limitado, y en GPUs de 8-12 GB si se cuantiza a 4-8 bits.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta), y previsiblemente llama.cpp/Ollama/vLLM mediante conversion a GGUF o cuantizacion, aunque no confirmado en la informacion proporcionada.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tasa de rechazo (WildGuard) | Sobre-rechazo benigno | Licencia |
+| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Heretic 1.x, general) | 7,6 B | no disponible | 10,3% | 2,3% | Apache-2.0 + OpenRAIL++ |
-| Qwen/Qwen2.5-Coder-7B-Instruct (original) | 7,6 B | no disponible | 83,2% | 22,6% | Apache-2.0 |
-| Heretic 2.0 sobre Qwen2.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Otras releases comunitarias sobre Qwen2.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-El paper compara Heretic 1.x, Heretic 2.0, herramientas externas y releases comunitarias sobre Qwen2.5, pero los resultados concretos de esas alternativas no se detallan en la informacion proporcionada. El autor advierte que la variacion entre busquedas es grande (desviacion estandar por semilla de aproximadamente 9 pp), por lo que las diferencias entre modelos individuales no deben sobreinterpretarse.
+| Qwen2.5-Coder-7B-Instruct-heretic1x-general | 7,6 B | no disponible (base: 32.768) | apache-2.0 | restringido (gated) | Fine-tuning abliterado para investigacion |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 | apache-2.0 | abierto | Modelo base alineado, sin decensurar |
+| Qwen2.5-Coder-7B | 7,6 B | 32.768 | apache-2.0 | abierto | Version base sin instruct |
+| Otros fine-tunes abliterados de Qwen2.5-Coder | ~7,6 B | 32.768 | variable | variable | Alternativas de la comunidad con tecnicas similares |
 
 ## Limitaciones y advertencias
 
-- El rechazo se reduce, no se elimina: la tasa residual es del 10,3% segun WildGuard y del 18,5% segun marcadores por palabras clave. El modelo puede seguir produciendo contenido danino.
-- No incorpora ajuste de seguridad adicional; se publica exclusivamente para investigacion sobre abliteracion y su evaluacion, no como asistente de proposito general.
-- La regla de seleccion condiciona los resultados: en Qwen2.5-32B, reseleccionar la misma busqueda con KL de desarrollo menor o igual a 0,1 en lugar de 0,01 redujo el rechazo residual en 61,7 pp. Las comparaciones entre modelos abliterados solo son validas si se declara la regla de seleccion y la divergencia realizada.
-- Alta variabilidad entre busquedas: desviacion estandar por semilla de aproximadamente 9 pp, lo que limita la interpretacion de diferencias entre modelos individuales.
-- Idiomas: solo se declara ingles (`en`); el rendimiento en castellano u otros idiomas no esta documentado.
-- Longitud de contexto: no disponible en la informacion proporcionada; conviene consultar la model card del modelo base Qwen2.5-Coder-7B-Instruct.
-- Restricciones de licencia: aunque los pesos son Apache-2.0, el modelo incorpora las restricciones de uso de OpenRAIL++ v1.0 y no puede desplegarse para los usos prohibidos en dicha licencia. En caso de conflicto, prevalece la licencia base.
-- Riesgo de alucinacion: no cuantificado en la informacion proporcionada; es esperable un comportamiento similar al del modelo base en tareas de codigo y matematicas, con la degradacion medida en GSM8K (-1,4 pp) y MBPP (-0,8 pp).
-- Sesgos: no documentados especificamente; se heredan los del modelo base Qwen2.5-Coder-7B-Instruct.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria independiente.
+- Modelo decensurado: la abliteration reduce los rechazos, lo que aumenta el riesgo de generar contenido inapropiado, ofensivo o peligroso; no es apto para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo de alucinacion: como todo modelo de 7 B, puede inventar APIs, funciones y hechos; la edicion de pesos puede agravar la degradacion de capacidades.
+- Sesgos conocidos: hereda los sesgos del modelo base Qwen2.5-Coder y de sus datos de entrenamiento; no se han publicado evaluaciones de sesgo especificas para este fine-tuning.
+- Limitaciones de idioma: declarado solo para ingles; el rendimiento en castellano no esta garantizado.
+- Restricciones de licencia: la ficha declara apache-2.0, pero el acceso es restringido (gated) y las etiquetas "research" y "decensored" aconsejan revisar las condiciones de uso antes de un despliegue comercial; el autor no ofrece garantias.
+- Caveat de produccion: al ser un fine-tuning de la comunidad con 758 descargas y 1 like, carece de validacion extensa; conviene evaluarlo en el dominio concreto antes de usarlo.
+- La informacion sobre contexto, cuantizaciones y tool calling no esta confirmada para este fine-tuning y se infiere del modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE
-- Repositorio GitHub del autor (codigo, registros y etiquetas): `ricyoung/abliteration-studies`
-- Paper 30 (arXiv pendiente de publicacion segun la model card): no disponible
-- Heretic (herramienta, heretic-llm 1.4.0, tag v1.4.0, commit `6ea3b8d`): no disponible enlace directo en la informacion proporcionada
-- Conjuntos de datos de evaluacion: `mlabonne/harmful_behaviors`, `mlabonne/harmless_alpaca`
+- Repositorio Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder
+- Paper Qwen2.5-Coder: https://arxiv.org/abs/2409.12186
+- Paper Qwen2.5: https://arxiv.org/abs/2412.15115

@@ -24,7 +24,7 @@
   ],
   "likes": 14,
   "downloads_30d": 848,
-  "trending_score": 14,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1017284302,
@@ -43,11 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "A quick Minimax H3 news round-up - 13th September 2026 : r/comfyui",
-      "url": "https://www.reddit.com/r/comfyui/comments/1wf8ypm/a_quick_minimax_h3_news_roundup_13th_september/",
-      "snippet": "13.09.2026 ... -> And finally, Siraxe's detail slider experiments. His sun/depth-fog slider has already been featured here. Now I see he has added sliders for ..."
-    }
-  ]
+  "sources": []
 }

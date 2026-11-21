@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "RedHatAI/Hy4-NVFP4",
+  "slug": "redhatai-hy4-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Hy4-NVFP4",
+  "created_at": "2026-11-21T02:34:19.000Z",
+  "updated_at": "2026-11-21T04:04:15.000Z",
+  "license": "tencent-hy-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v4_vl",
+    "image-text-to-text",
+    "nvfp4",
+    "fp4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "hunyuan",
+    "hy4",
+    "moe",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:tencent/Hy4",
+    "base_model:quantized:tencent/Hy4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774434002142,
+  "parameters_human": "774.43B",
+  "storage_bytes": 479336420096,
+  "storage_human": "479.3 GB",
+  "context_length": null,
+  "base_model": "tencent/Hy4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI",
+      "snippet": "August 2026 Collection of third-party generative AI models validated by Red Hat AI for use across the Red Hat AI Product Portfolio."
+    },
+    {
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/models",
+      "snippet": "RedHatAI/Mistral-Medium-3.5-128B ... RedHatAI/diffusiongemma-26B-A4B-it-NVFP4 ... RedHatAI/diffusiongemma-26B-A4B-it-FP8 …Read more"
+    }
+  ]
+}

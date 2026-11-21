@@ -2,84 +2,95 @@
 
 ## Resumen
 
-El modelo Qwen3.5-35B-A3B-abliterated-GGUF es una cuantización en formato GGUF del modelo Qwen3.5-35B-A3B-abliterated, creada por mradermacher. El modelo original, desarrollado por Alibaba Qwen, es un modelo de lenguaje de arquitectura híbrida que combina atención lineal con una mezcla dispersa de expertos (MoE), con aproximadamente 35 mil millones de parámetros totales y 3 mil millones activos. La versión "abliterated" elimina los mecanismos de rechazo y censura, ofreciendo respuestas sin restricciones de contenido. Esta cuantización GGUF permite ejecutar el modelo en hardware de consumo mediante motores como llama.cpp, Ollama o LM Studio, con múltiples niveles de precisión que van desde Q2_K hasta Q8_0, con tamaños de archivo entre 13 GB y 37 GB.
+`mradermacher/Qwen3.5-35B-A3B-abliterated-GGUF` es una coleccion de cuantizaciones GGUF del modelo `wangzhang/Qwen3.5-35B-A3B-abliterated`, una variante "abliterated" (sin rechazos, tambien llamada uncensored o decensored) de la familia Qwen3.5 en su configuracion 35B-A3B, es decir, un transformer de tipo mixture-of-experts (MoE) con aproximadamente 35.000 millones de parametros totales y 3.000 millones activos por token. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de quants GGUF para llama.cpp, y el modelo base procede del usuario wangzhang.
 
-El repositorio contiene únicamente los pesos cuantizados en formato GGUF, sin el proyector de visión (mmproj), por lo que esta versión funciona exclusivamente como modelo de texto. La licencia Apache 2.0 permite uso comercial y modificación, lo que lo hace atractivo para integraciones en producción. Aunque el modelo original es un modelo de visión-lenguaje nativo, esta cuantización se centra en las capacidades de lenguaje.
+La relevancia practica de este repositorio es doble. Por un lado, ofrece el modelo en once variantes GGUF (desde Q2_K de 13,0 GB hasta Q8_0 de 37,0 GB), lo que permite desplegarlo en hardware de consumo y en entornos con memoria limitada. Por otro, la naturaleza "abliterated" implica que se ha eliminado o atenuado el mecanismo de rechazo del modelo original, de modo que responde a peticiones que el modelo alineado rechazaria; esto lo hace interesante para investigacion sobre alineamiento, red teaming y generacion creativa sin filtros, pero tambien conlleva riesgos evidentes para uso en produccion.
 
-## Especificaciones técnicas
+El modelo se distribuye con licencia Apache 2.0, declara soporte unicamente para ingles y esta pensado para conversacion. No se han publicado en la informacion disponible detalles sobre la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks, por lo que la ficha los marca como no disponibles.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: atención lineal + mezcla dispersa de expertos (MoE) |
-| Parametros totales | 34.660.610.688 (~34,66 mil millones) |
-| Parametros activos | 3 mil millones (según nomenclatura A3B) |
+| Arquitectura | Transformer de tipo mixture-of-experts (MoE), segun la nomenclatura A3B del modelo base; detalles internos no disponibles |
+| Parametros totales | 34.660.610.688 (34,66 B) |
+| Parametros activos | 3 B (deducido de la nomenclatura A3B del modelo base) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | en (inglés) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Tamano del repositorio | 237,1 GB (incluye todas las variantes) |
+| Modelo base | wangzhang/Qwen3.5-35B-A3B-abliterated |
+| Libreria declarada | transformers |
+| Pipeline | no disponible |
 
 ## Arquitectura y entrenamiento
 
-Según la documentación oficial de Alibaba Cloud, el modelo Qwen3.5-35B-A3B es un modelo nativo de visión-lenguaje con una arquitectura híbrida que integra mecanismos de atención lineal y un modelo de mezcla dispersa de expertos, logrando una mayor eficiencia de inferencia en comparación con arquitecturas transformer densas. Su rendimiento general se describe como comparable al del Qwen3.5-27B. La versión "abliterated" ha sido sometida a un proceso de abliteración, que consiste en eliminar las respuestas de rechazo del modelo, permitiendo que responda a cualquier solicitud sin filtros de seguridad. No se dispone de información detallada sobre el entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) en la información proporcionada.
+El modelo base pertenece a la familia Qwen3.5 en su variante 35B-A3B, lo que implica una arquitectura de mezcla de expertos con aproximadamente 34,66 mil millones de parametros totales y unos 3 mil millones activos por token, una configuracion disenada para obtener la capacidad de un modelo grande con el coste computacional de inferencia de uno mucho menor. Los detalles concretos de la arquitectura (numero de capas, numero de expertos, dimension del hidden state, mecanismo de atencion) no estan disponibles en la informacion proporcionada.
+
+El prefijo "abliterated" indica que el modelo ha sido sometido a una tecnica de ablacion de direcciones de rechazo en el espacio de activaciones, un procedimiento habitual en la comunidad para eliminar el comportamiento de negativa sin reentrenar. No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens, la composicion del corpus ni sobre si hubo etapas de RLHF o DPO. La cuantizacion la realiza mradermacher con su pipeline habitual (convert_type hf, quantize_version 2, output_tensor_quantised 1), y existe una version con quants ponderados por imatrix en un repositorio separado.
 
 ## Capacidades
 
-- Generación de texto sin censura: al ser abliterated, el modelo no rechaza solicitudes sobre temas sensibles, violencia, contenido adulto u otros temas que normalmente estarían bloqueados.
-- Razonamiento y resolución de problemas: al ser un modelo de 35B con 3B activos, mantiene capacidades de razonamiento lógico y matemático, aunque no se han publicado benchmarks específicos.
-- Generación de código: probablemente soporta tareas de programación, aunque no hay confirmación explícita en la documentación disponible.
-- Tool calling / function calling: no se menciona en la información proporcionada; se considera no disponible.
-- Capacidades multilingües: la model card solo indica "en", aunque el modelo original podría soportar más idiomas; no confirmado.
-- Capacidades de visión: el modelo original es vision-language, pero esta versión GGUF no incluye el proyector de visión (skip_mmproj), por lo que solo funciona como modelo de texto.
+- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
+- Respuestas sin rechazo a peticiones que el modelo alineado original rechazaria (comportamiento abliterated).
+- Razonamiento y generacion de codigo y matematicas, heredados de la familia Qwen3.5, aunque no se documentan capacidades especificas en la informacion disponible.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma declarada.
+- Capacidades especiales (vision, audio, modo thinking): no disponible en la informacion proporcionada.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegue como API.
 
 ## Casos de uso
 
-- Escritura creativa sin restricciones: el modelo puede generar ficción, guiones, poesía o contenido narrativo con temáticas adultas o controvertidas sin rechazos, gracias a su naturaleza abliterated.
-- Roleplay y simulación de personajes: adecuado para aplicaciones de chat inmersivo donde se requiere que el modelo adopte personalidades sin limitaciones de contenido.
-- Generación de contenido para investigación sociológica: puede producir respuestas sobre temas tabú o sensibles para estudios académicos, siempre que se respeten las normativas éticas.
-- Asistente de programación en entornos aislados: puede ayudar a generar código o explicar conceptos técnicos, aunque se recomienda verificar las salidas por posibles alucinaciones.
-- Prototipado rápido de aplicaciones de chat: al ser un modelo GGUF, se puede integrar fácilmente en aplicaciones locales con llama.cpp u Ollama para pruebas de concepto.
-- Análisis de texto sin filtros: útil para tareas de procesamiento de lenguaje natural donde se necesita una respuesta directa sin evasivas, como resúmenes o extracción de información.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar que tipos de contenido genera un LLM cuando se elimina su mecanismo de rechazo, comparandolo con el modelo alineado original para medir el efecto de la ablacion.
+- Red teaming y evaluacion de filtros: util para probar clasificadores de contenido y sistemas de moderacion, generando respuestas adversarias de forma controlada en un entorno aislado.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que requiera tematicas adultas o controvertidas, donde el modelo alineado rechazaria la peticion.
+- Despliegue local en hardware de consumo: las variantes Q2_K (13,0 GB) y Q4_K_M (21,3 GB) permiten ejecutar un MoE de 35B en equipos con 16-24 GB de VRAM o con memoria unificada, gracias a que solo se activan unos 3 B de parametros por token.
+- Prototipado de asistentes conversacionales en ingles: el modelo puede servir como backend en llama.cpp u Ollama para iterar rapidamente sobre prompts y flujos de dialogo antes de pasar a un modelo alineado.
+- Experimentacion con cuantizacion: el repositorio incluye once variantes, lo que facilita comparar el impacto de la cuantizacion en la calidad y la velocidad de un mismo modelo en distintas configuraciones de memoria.
+- Analisis de sesgos y contenido toxico: como modelo sin filtros, es util para generar datasets de ejemplos negativos con los que entrenar o evaluar clasificadores de toxicidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Se recomienda consultar la documentación del modelo base Qwen3.5-35B-A3B para obtener datos de rendimiento, aunque no se han proporcionado en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según el tamaño de los archivos GGUF, se puede estimar:
-  - Q2_K (13,0 GB): cabe en GPUs con 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090).
-  - Q4_K_M (21,3 GB): requiere al menos 24 GB de VRAM (RTX 3090, RTX 4090, A5000).
-  - Q8_0 (37,0 GB): necesita 40 GB o más (A100 40GB, H100, o múltiples GPUs).
-- GPUs recomendadas: RTX 3090/4090 para cuantizaciones Q4 y superiores; A100 o H100 para Q8_0.
-- Si cabe en consumer GPU: sí, con cuantizaciones Q4_K_M o inferiores en GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, o cualquier motor compatible con GGUF.
-- Latencia y throughput: no se dispone de datos medidos; dependerá del hardware y de la cuantización elegida.
+- VRAM estimada segun cuantizacion: Q2_K ~13,0 GB; Q3_K_S ~15,3 GB; Q3_K_M ~16,9 GB; Q3_K_L ~18,2 GB; IQ4_XS ~19,0 GB; Q4_K_S ~20,0 GB; Q4_K_M ~21,3 GB; Q5_K_S ~24,1 GB; Q5_K_M ~24,8 GB; Q6_K ~28,6 GB; Q8_0 ~37,0 GB. A estas cifras hay que sumar el espacio para el contexto KV cache.
+- GPU recomendadas: para Q8_0 y Q6_K, una A100 40 GB, H100 o dos RTX 4090; para Q5_K_M y Q4_K_M, una RTX 4090 (24 GB) o A6000; para Q3_K_M e inferiores, una RTX 4080/4090 o GPU con 16-24 GB.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con cuantizaciones hasta Q5_K_M y en GPUs de 16 GB con Q3_K_M o inferiores; al ser MoE con 3 B activos, la velocidad de generacion es notablemente superior a la de un denso de 35B.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de OpenAI (tag `endpoints_compatible`); vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Qwen3.5-35B-A3B (original) | ~35B | 3B | no disponible | Apache 2.0 | safetensors |
-| Qwen3.5-35B-A3B-abliterated (base) | ~35B | 3B | no disponible | Apache 2.0 | safetensors |
-| Qwen3.5-35B-A3B-abliterated-GGUF (este) | ~35B | 3B | no disponible | Apache 2.0 | GGUF |
-
-No se dispone de comparativas con otros modelos MoE de tamaño similar (como DeepSeek-V3 o Mixtral) en la información proporcionada. La principal diferencia entre las versiones es el proceso de abliteración y el formato de pesos.
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3.5-35B-A3B-abliterated-GGUF (este) | 34,66 B | ~3 B | no disponible | Apache 2.0 | GGUF | Version sin rechazos, solo ingles |
+| wangzhang/Qwen3.5-35B-A3B-abliterated | 34,66 B | ~3 B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva este |
+| Qwen3.5-35B-A3B (alineado) | 34,66 B | ~3 B | no disponible | Apache 2.0 | safetensors/GGUF | Version con alineamiento y rechazos; referencia de comparacion |
+| mradermacher/Qwen3.5-35B-A3B-abliterated-i1-GGUF | 34,66 B | ~3 B | no disponible | Apache 2.0 | GGUF (imatrix) | Mismos quants pero ponderados con imatrix, mayor calidad a igual tamano |
 
 ## Limitaciones y advertencias
 
-- Contenido sin filtrar: al ser abliterated, el modelo puede generar contenido ofensivo, ilegal o dañino. No debe utilizarse en aplicaciones públicas sin moderación humana.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede inventar hechos o respuestas incorrectas, especialmente en temas especializados.
-- Idioma limitado: solo se confirma soporte para inglés; el rendimiento en otros idiomas no está garantizado.
-- Sin componente de visión: esta versión GGUF no incluye el proyector de visión, por lo que no puede procesar imágenes a pesar de que el modelo original es multimodal.
-- Contexto desconocido: no se ha especificado la longitud máxima de contexto; se recomienda probar con secuencias cortas para evitar degradación.
-- Licencia Apache 2.0: permite uso comercial, pero se debe revisar si el proceso de abliteración cumple con las políticas de uso de la organización.
+- Modelo abliterated: se ha eliminado el mecanismo de rechazo, por lo que puede generar contenido toxico, ilegal o danino; no es apto para uso en produccion orientado a usuarios finales sin moderacion externa.
+- Solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Riesgo elevado de alucinacion, agravado por la ausencia de benchmarks publicados que permitan estimar su fiabilidad real.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo ni sobre el cumplimiento normativo del contenido generado.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad; el propio autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S y Q4_K_M como opciones rapidas.
+- No se dispone de informacion sobre la longitud de contexto efectiva, lo que impide planificar despliegues con ventanas largas.
+- El repositorio ocupa 237,1 GB en total; conviene descargar solo la variante necesaria.
+- La fecha de creacion del repositorio (2026-04-10) y la del modelo base deben verificarse antes de usarlo como dependencia estable.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.5-35B-A3B-abliterated-GGUF
-- Modelo base (abliterated): https://huggingface.co/wangzhang/Qwen3.5-35B-A3B-abliterated
-- Modelo original Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
-- Documentación de Alibaba Cloud: https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-5-35b-a3b
-- Repositorio GitHub de Qwen3.8 (incluye serie Qwen3.5): https://github.com/QwenLM/Qwen3.8
-- Página de Ollama para versiones abliterated: https://ollama.com/huihui_ai/qwen3.5-abliterated
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-35B-A3B-abliterated-GGUF
+- Modelo base (safetensors): https://huggingface.co/wangzhang/Qwen3.5-35B-A3B-abliterated
+- Quants con imatrix: https://huggingface.co/mradermacher/Qwen3.5-35B-A3B-abliterated-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-35B-A3B-abliterated-GGUF
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

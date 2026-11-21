@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/l3.2-3b-63-deg2-GGUF",
+  "slug": "mradermacher-l3-2-3b-63-deg2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/l3.2-3b-63-deg2-GGUF",
+  "created_at": "2025-08-31T22:47:10.000Z",
+  "updated_at": "2026-11-21T01:03:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:semran1/l3.2-3b-63-deg2",
+    "base_model:quantized:semran1/l3.2-3b-63-deg2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 29288881536,
+  "storage_human": "29.3 GB",
+  "context_length": 131072,
+  "base_model": "semran1/l3.2-3b-63-deg2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

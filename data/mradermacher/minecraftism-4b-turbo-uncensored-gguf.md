@@ -2,86 +2,88 @@
 
 ## Resumen
 
-Minecraftism-4B-Turbo-Uncensored-GGUF es un conjunto de cuantizaciones estáticas en formato GGUF del modelo base `mr-sus/Minecraftism-4B-Turbo-Uncensored`, publicadas por el usuario mradermacher. El repositorio no contiene pesos originales ni documentación técnica propia: es un espejo de conversión que empaqueta el modelo de 4B parámetros en distintos niveles de cuantización para su uso con llama.cpp y motores compatibles.
+Minecraftism-4B-Turbo-Uncensored-GGUF es la version cuantizada en formato GGUF del modelo mr-sus/Minecraftism-4B-Turbo-Uncensored, un modelo de lenguaje de 4.022.468.096 parametros (aproximadamente 4B) construido sobre la arquitectura Qwen3 y afinado con Unsloth. El modelo esta especializado en tareas de agente de juego (game-agent) para Minecraft, con etiquetas que indican que ha sido sometido a un proceso de "abliteration" para eliminar los rechazos y filtros de seguridad, de ahi la denominacion "uncensored". La cuantizacion la realiza mradermacher, un conocido publicador de versiones GGUF de modelos open source.
 
-El modelo de origen, por su nombre y procedencia, apunta a un ajuste fino de 4B parámetros orientado a contenido temático de Minecraft y con un proceso de "uncensoring" (eliminación o relajación de los filtros de rechazo del modelo base). No obstante, la model card del repositorio no aporta ningún detalle sobre arquitectura, dataset de entrenamiento, licencia o idiomas, por lo que la mayor parte de las especificaciones quedan como no disponibles.
+El modelo resuelve el problema de desplegar un agente conversacional especializado en Minecraft en hardware de consumo, ofreciendo una amplia gama de cuantizaciones que van desde 1,8 GB (Q2_K) hasta 8,2 GB (f16). Esto permite ejecutarlo en GPUs consumer e incluso en CPU con llama.cpp. Su relevancia actual radica en la creciente demanda de agentes de juego ligeros y ejecutables localmente, aunque su licencia Polyform Noncommercial 1.0.0 restringe severamente el uso comercial.
 
-Su relevancia es limitada y de nicho: resulta útil para quienes quieran ejecutar localmente un modelo de 4B sin restricciones de contenido en hardware de consumo, pero carece de la trazabilidad y garantías que se exigen en entornos de producción. La fecha de creación (noviembre de 2026) y la ausencia total de descargas y likes indican un artefacto reciente y sin validación por parte de la comunidad.
+La informacion disponible sobre el modelo base es limitada: no se detallan la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks. La model card del cuantizador se limita a listar los archivos GGUF generados y a remitir al modelo original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer decoder-only, no confirmado) |
-| Parámetros totales | 4B (según el nombre del modelo) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (basada en Qwen3, segun tags) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponibles |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (segun model card) |
+| Licencia | polyform-noncommercial-1.0.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base. El nombre "4B" sugiere un transformer decoder-only de aproximadamente 4.000 millones de parámetros, pero no hay confirmación en la documentación. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+Segun los tags del repositorio, el modelo se basa en la arquitectura Qwen3 y fue afinado mediante Unsloth, una libreria optimizada para fine-tuning eficiente en memoria. El modelo ha sido sometido a "abliteration", una tecnica que modifica los pesos para eliminar la direccion de rechazo aprendida durante el alineamiento, produciendo un modelo "uncensored" que no se niega a responder peticiones. El sufijo "Turbo" sugiere un ajuste orientado a velocidad de inferencia, aunque no se especifican los detalles tecnicos de dicho ajuste.
 
-El único dato técnico verificable proviene de los metadatos de conversión del repositorio: se generaron cuantizaciones estáticas con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos en formato Hugging Face a GGUF mediante el pipeline habitual de llama.cpp. El sufijo "Turbo" y "Uncensored" en el nombre sugiere un ajuste fino orientado a velocidad de inferencia y a la eliminación de rechazos, pero se trata de una inferencia a partir del nombre, no de información confirmada.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. El modelo esta etiquetado como "game-agent" y "minecraft", lo que indica que el fine-tuning se oriento a tareas de interaccion y control dentro del videojuego Minecraft, presumiblemente mediante el proyecto pymc-bot (minero de Python para Minecraft). No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto autoregresiva (capacidad genérica esperable en un modelo de 4B, no documentada).
-- Contenido temático de Minecraft, según el nombre del modelo; sin documentación que lo confirme.
-- Comportamiento "uncensored": presumiblemente menor tasa de rechazos ante peticiones sensibles, aunque no se especifica el método ni el alcance.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles.
-- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Generacion de texto conversacional en ingles, orientada a interacciones multi-turno.
+- Razonamiento y planificacion de acciones como agente de juego en Minecraft (game-agent).
+- Integracion con pymc-bot para control del personaje dentro del juego.
+- Modelo "uncensored" y "abliterated": no aplica rechazos de seguridad en sus respuestas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes multi-paso: implicito por su naturaleza de game-agent, aunque no se documenta explicitamente.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Experimentación local con modelos de 4B en hardware de consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en GPUs con 4-8 GB de VRAM mediante llama.cpp u Ollama, útil para pruebas de concepto sin infraestructura dedicada.
-- Generación creativa de contenido temático de Minecraft: el ajuste fino apunta a este dominio, por lo que podría emplearse para redactar descripciones de builds, guiones de vídeo o narrativa ambientada en el juego, siempre que se valide la calidad real del ajuste.
-- Investigación sobre alineación y filtros de rechazo: al tratarse de una variante "uncensored", sirve como objeto de estudio para comparar tasas de rechazo frente al modelo base en conjuntos de prompts controlados.
-- Pruebas de pipelines de cuantización: el repositorio incluye doce variantes de cuantización, lo que lo convierte en un banco de pruebas para medir el impacto de Q2_K a Q8_0 en perplejidad y calidad de salida sobre un mismo modelo.
-- Despliegue en entornos aislados sin conectividad: al ser pesos GGUF autónomos, pueden ejecutarse en máquinas sin acceso a APIs externas, por ejemplo en talleres o demos offline.
-- Evaluación comparativa de modelos pequeños: útil como baseline de 4B en pruebas internas de latencia y throughput frente a otros modelos del mismo tamaño, con la advertencia de que su falta de documentación limita la validez de las conclusiones.
+- Agente autonomo en Minecraft: el modelo puede gestionar la logica de decision de un bot que recolecta recursos, construye estructuras y navega el mundo, integrándose con pymc-bot para traducir las decisiones en acciones de juego.
+- Prototipado de agentes de juego en local: gracias a las cuantizaciones de 1,8 a 2,6 GB, un desarrollador puede probar comportamientos de agente en una GPU consumer sin depender de APIs externas.
+- Investigacion sobre abliteration y seguridad: util para estudiar como el proceso de abliteration afecta al comportamiento del modelo en tareas de agente y conversacion, comparando con la version base alineada.
+- Generacion de dialogos de personajes sin restricciones: en proyectos de narrativa interactiva o mods de Minecraft donde se requieren respuestas sin filtros de contenido.
+- Educacion y experimentacion con LLMs pequenos: su tamano de 4B y su amplia gama de cuantizaciones lo hacen adecuado para aprender a desplegar modelos con llama.cpp u Ollama en hardware modesto.
+- Benchmarking de cuantizaciones: el repositorio ofrece 12 variantes de cuantizacion, lo que permite evaluar el impacto de la compresion en la calidad de las respuestas de un agente de juego.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (4B parámetros): aproximadamente 2,5-3 GB en Q4_K_M, 3,5-4,5 GB en Q6_K y 7-8 GB en Q8_0 o f16 (estimaciones basadas en el tamaño típico de pesos para 4B, no confirmadas por el autor).
-- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060, RTX 4060, RTX 4090 o A100 para variantes de mayor precisión.
-- Cabe en GPU de consumo: sí, previsiblemente en GTX 1660 Super (6 GB), RTX 3060 (12 GB) y superiores para Q4_K_M; las variantes Q2_K podrían ejecutarse incluso en GPUs de 4 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no son opciones directas para GGUF sin conversión adicional.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 2,5-3,5 GB con Q4_K_M (2,6 GB de pesos mas overhead de contexto); aproximadamente 4,5-5,5 GB con Q8_0 (4,4 GB de pesos); aproximadamente 8,5-10 GB con f16 (8,2 GB de pesos).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090, A100 o H100 para mayor throughput.
+- Cabe en GPU consumer: si, en practicamente todas las GPUs modernas con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) usando cuantizaciones Q4 o inferiores.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui; vLLM y TGI requeririan conversion a safetensors o soporte GGUF especifico.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Minecraftism-4B-Turbo-Uncensored-GGUF | 4B | no disponible | no disponible | GGUF | Hugging Face |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | safetensors, GGUF | Hugging Face, Ollama |
+| Minecraftism-4B-Turbo-Uncensored-GGUF | 4,02B | no disponible | Polyform Noncommercial 1.0.0 | GGUF | Especializado en Minecraft, uncensored |
+| Qwen3-4B (base) | 4B | no disponible en esta ficha | Apache 2.0 (segun Qwen3) | safetensors, GGUF | Modelo generalista, alineado |
+| Llama 3.2 3B | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Modelo generalista, multilingue |
 
-La comparación se establece por rango de tamaño, no por dominio: los tres modelos alternativos cuentan con documentación completa, licencias claras y benchmarks publicados, mientras que Minecraftism-4B carece de todos esos elementos. Para uso en producción, las alternativas citadas ofrecen garantías que este repositorio no proporciona.
+La comparativa con Qwen3-4B y Llama 3.2 3B es orientativa: el primero comparte arquitectura base, y el segundo es un competidor directo en el segmento de 3-4B parametros. Minecraftism se diferencia por su especializacion en agentes de Minecraft y su naturaleza uncensored, pero carece de la documentacion y el soporte de los modelos generalistas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay model card sustantiva, ni ficha técnica, ni información sobre el dataset o el proceso de ajuste.
-- Licencia no especificada: no puede determinarse si el uso comercial está permitido; en la práctica, esto bloquea su adopción en productos.
-- Riesgo elevado de alucinación y de comportamiento impredecible al tratarse de un ajuste fino "uncensored" sin evaluación publicada.
-- Sesgos desconocidos: al no documentarse la composición del dataset, no es posible evaluar sesgos de género, raza, idioma o dominio.
-- Idiomas no confirmados: no hay garantía de calidad fuera del inglés, que es la suposición por defecto en modelos sin documentación.
-- Contexto desconocido: no se puede planificar su uso en tareas que requieran ventanas largas sin antes medirlo empíricamente.
-- Contenido sin filtros: la variante "uncensored" puede generar material ofensivo, ilegal o inseguro; requiere supervisión y moderación externa en cualquier despliegue público.
-- Artefacto sin validación comunitaria: cero descargas y cero likes en el momento de la consulta, sin evidencia de que las cuantizaciones hayan sido probadas por terceros.
-- Trazabilidad limitada: depende de un modelo base alojado en una cuenta de usuario (`mr-sus`) sin reputación verificable.
+- Sesgos conocidos: al ser un modelo abliterated, se han eliminado los filtros de seguridad, lo que puede producir respuestas toxicas, ofensivas o inapropiadas sin advertencia.
+- Riesgo de alucinacion: elevado, como en cualquier modelo de 4B; la especializacion en Minecraft no garantiza precision factual sobre el juego.
+- Limitaciones de contexto o idioma: solo se documenta ingles; la longitud de contexto no esta especificada, lo que impide planificar conversaciones largas con garantias.
+- Restricciones de licencia: Polyform Noncommercial 1.0.0 prohibe explicitamente el uso comercial; cualquier despliegue en produccion con fines lucrativos requiere licencia adicional del autor.
+- Caveat para produccion: la falta de benchmarks, de documentacion sobre el entrenamiento y de soporte del autor original hace arriesgado su uso en entornos productivos; ademas, el proceso de abliteration puede degradar capacidades de razonamiento y coherencia.
+- El repositorio GGUF no incluye informacion sobre el modelo base mas alla de los tags; se recomienda consultar la model card de mr-sus/Minecraftism-4B-Turbo-Uncensored para obtener detalles adicionales.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Minecraftism-4B-Turbo-Uncensored-GGUF
 - Modelo base: https://huggingface.co/mr-sus/Minecraftism-4B-Turbo-Uncensored
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Minecraftism-4B-Turbo-Uncensored-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Minecraftism-4B-Turbo-Uncensored-GGUF
+- Licencia Polyform Noncommercial 1.0.0: https://polyformproject.org/licenses/noncommercial/1.0.0/
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

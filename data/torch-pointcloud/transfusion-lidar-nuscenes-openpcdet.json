@@ -50,13 +50,13 @@
       "task": null,
       "dataset": "nuScenes",
       "metric": "mAP",
-      "value": 65.32
+      "value": 64.49
     },
     {
       "task": null,
       "dataset": "nuScenes",
       "metric": "NDS",
-      "value": 69.71
+      "value": 69.39
     }
   ],
   "sources": []

@@ -77,31 +77,5 @@
       "value": 53.81
     }
   ],
-  "sources": [
-    {
-      "title": "Aternos | Minecraft servers. Free. Forever.",
-      "url": "https://aternos.org/",
-      "snippet": "Easy to use We don't know, why it could be complicated to own a Minecraft server. At Aternos it is just as easy as pressing a button. …"
-    },
-    {
-      "title": "Login or Sign up | Aternos | Free Minecraft Server",
-      "url": "https://aternos.org/go/",
-      "snippet": "Log in or sign up to Aternos for free Minecraft servers and enjoy playing with your friends."
-    },
-    {
-      "title": "Creating a free Minecraft server with Aternos",
-      "url": "https://support.aternos.org/hc/en-us/articles/12165605063325-Creating-a-free-Minecraft-server-with-Aternos",
-      "snippet": "Aternos makes setting up a free Minecraft server easy and accessible. Whether you're planning to explore together as new …"
-    },
-    {
-      "title": "About us | Aternos GmbH",
-      "url": "https://aternos.gmbh/en/",
-      "snippet": "Aternos GmbH is one of the leading providers for on-demand Minecraft game servers. From a hobby project started by a few …"
-    },
-    {
-      "title": "Aternos",
-      "url": "https://add.aternos.org/example.aternos.me",
-      "snippet": ""
-    }
-  ]
+  "sources": []
 }

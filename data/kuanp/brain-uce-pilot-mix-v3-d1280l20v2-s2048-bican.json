@@ -5,7 +5,7 @@
   "author": "KuanP",
   "url": "https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d1280l20v2-s2048-bican",
   "created_at": "2026-11-19T06:07:48.000Z",
-  "updated_at": "2026-11-19T06:08:04.000Z",
+  "updated_at": "2026-11-20T05:27:51.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 1662713857,
   "parameters_human": "1.66B",

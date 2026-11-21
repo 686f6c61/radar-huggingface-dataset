@@ -1,91 +1,101 @@
 # aikexue170/rewrite3-27b-iq4xs
 
 ## Resumen
-rewrite3-27b-iq4xs es una cuantización GGUF de tipo IQ4_XS del modelo rewrite3-27B, un ajuste fino supervisado (SFT) derivado de Qwen/Qwen3.8-27B especializado en la reescritura de novelas web en chino. Lo publica el usuario aikexue170 bajo licencia Apache 2.0 y su propósito no es la generación libre ni la continuación de texto, sino tomar un borrador degradado por estilo generativo ("八股", fórmula vacía propia de IA) y reescribirlo preservando trama, personajes y eventos, eliminando redundancias y marcas de estilo artificial.
 
-El modelo incorpora dos innovaciones destacables: un modo de razonamiento específico de edición (analiza el texto, señala los problemas y explica el plan de reescritura antes de producir el texto final) y una integración de las puntuaciones JEV, un valor numérico entre corchetes al final de cada frase que proviene de un clasificador externo (jevnovel3 0.8B) e indica la probabilidad de que esa frase suene a texto generado por IA. Además, el autor ha reentrenado el cabezal MTP (multi-token prediction) para decodificación especulativa, con una tasa de aceptación declarada del 56 % con n=3 en decodificación voraz y una aceleración extremo a extremo de aproximadamente 2x.
+rewrite3-27b-iq4xs es una cuantización GGUF IQ4_XS del modelo rewrite3-27B, un modelo de 27 320 697 856 parámetros derivado de Qwen/Qwen3.8-27B y especializado en la reescritura de texto narrativo chino (web-novel). Lo publica el usuario aikexue170 en Hugging Face bajo licencia Apache 2.0, y su propósito declarado es transformar borradores degradados por generación automática (AIGC) en prosa fluida, con estilo de autor y sin copiar literalmente el original.
 
-Esta variante concreta pesa 15,5 GB (14,5 GiB), está pensada para despliegue local con llama.cpp y no requiere GPU de gama alta. El modelo solo declara soporte para chino (zh) y está orientado exclusivamente a la reescritura de ficción web china.
+El modelo incorpora una cabeza MTP (multi-token prediction) embebida (`blk.32.nextn.*`) que actúa como decodificación especulativa, y su entrenamiento se apoya en un clasificador externo de "calidad de frase" (jevnovel3 0.8B) que puntúa la probabilidad de que una oración suene a fórmula automática. El resultado es un modelo de reescrita con modo de razonamiento (cadena de pensamiento) específicamente construido para el dominio de la novela web en chino.
+
+Esta ficha cubre la variante IQ4_XS (15,5 GB, 14,5 GiB), pensada para despliegue local con llama.cpp cuando la VRAM es limitada: según la model card, ofrece un JEV medio de 0,0982 con un tiempo medio de 41 s frente a 71 s del FP8, a costa de una ligera pérdida de fidelidad en la métrica de "desvinculación del original".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3.8-27B) con cabezal MTP reentrenado |
-| Parametros totales | 27B (según denominación del modelo base) |
-| Parametros activos | no disponible (no se declara como MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (el ejemplo de llama.cpp usa `-c 16384`) |
-| Tipos de cuantizacion | IQ4_XS (este repositorio); también existen BF16, FP8 W8A8 y NVFP4 en repositorios hermanos |
+| Arquitectura | Transformer derivado de Qwen/Qwen3.8-27B, con cabeza MTP (multi-token prediction) embebida para decodificación especulativa |
+| Parametros totales | 27 320 697 856 (27,3 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; el ejemplo de la model card arranca llama-server con `-c 16384` |
+| Tipos de cuantizacion | IQ4_XS (GGUF, este repositorio); la familia incluye BF16, Q8_0, FP8 W8A8, NVFP4 W4A4, Q4_K_M, Q3_K_M e IQ3_XS |
 | Idiomas soportados | chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con módulo MTP embebido en `blk.32.nextn.*`) |
+| Formato de pesos | GGUF (repo de 15,5 GB); otras variantes en safetensors/compressed-tensors |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Qwen/Qwen3.8-27B, un transformer decoder-only de 27 000 millones de parámetros, y se somete a un ajuste fino supervisado (SFT) sobre datos de reescritura de novelas web chinas. El conjunto de entrenamiento incorpora cadenas de pensamiento de tipo editorial: el modelo aprende a identificar qué fragmentos suenan a IA, justificar el diagnóstico y describir el plan de reescritura antes de generar el texto final. La entrada de entrenamiento incluye, además del texto original, anotaciones JEV por frase (formato `【0.123】`) producidas por el clasificador independiente jevnovel3 0.8B, de modo que el modelo aprende a priorizar la corrección de las frases con mayor probabilidad de estilo artificial.
 
-Una innovación técnica relevante es el reentrenamiento del cabezal MTP sobre el conjunto de datos v14-sfw: no es el MTP original de Qwen, sino uno ajustado para esta tarea. Con decodificación especulativa `draft-mtp` y `n=3` en modo voraz, el autor reporta una tasa de aceptación del 56 % y una aceleración de aproximadamente 2x de extremo a extremo. El módulo MTP está empaquetado dentro del propio GGUF, por lo que basta con invocar `--spec-type draft-mtp --spec-draft-n-max 3` en llama.cpp (nightly b12374 o superior) para activarlo. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer denso de 27,3 mil millones de parámetros, y añade una cabeza MTP que permite decodificación especulativa con `--spec-type draft-mtp --spec-draft-n-max 3` en llama.cpp (nightly b12374 o superior). La variante IQ4_XS usa cuantización GGUF de 4 bits con imatrix, con los tensores comprimidos mediante compressed-tensors.
+
+El entrenamiento descrito en la model card no es un simple fine-tuning supervisado: se construyó un dataset donde las entradas son textos degradados por AIGC y las salidas son originales humanos, enriquecidos mediante un pipeline de tres etapas. Primero, jevnovel3 0.8B puntúa cada oración con una probabilidad de "mala calidad" (p_bad); después Claude Opus 5.5 realiza una primera expansión de detalles; a continuación jevnovel3 vuelve a puntuar el texto completo y Spark X 2.6 aplica correcciones puntuales; finalmente Kimi K3 hace una última pasada. Con el texto enriquecido, Gemini 4 Argon genera cadenas de pensamiento que explican el tipo de fórmula detectada, la puntuación JEV y la estrategia de reescrita, produciendo un mapeo cot completo. La versión anterior (rewrite2) contaba con 20 000 pares y adolecía de tres problemas: tendencia a acortar el texto, falta de CoT y mala generalización en la detección de fórmulas; el nuevo dataset ataca esos tres frentes.
 
 ## Capacidades
-- Reescritura de ficción en chino: reorganiza párrafos completos en lugar de sustituir sinónimos frase a frase, con el objetivo de preservar trama, personajes y eventos.
-- Razonamiento editorial explícito: produce un análisis previo (detección de estilo artificial, diagnóstico y plan de reescritura) antes del texto final.
-- Consumo de puntuaciones JEV: utiliza los valores `【0.xxx】` insertados por el clasificador externo para localizar y priorizar los fragmentos problemáticos; puede ejecutarse sin dichas puntuaciones, aunque fuera de la distribución de entrenamiento.
-- Eliminación de marcas de estilo generativo ("AI八股"): reduce fórmulas vacías, repeticiones y relleno.
-- Restricción antiplagio: el proyecto impone como restricción dura no copiar más de 15 caracteres consecutivos del original.
-- Decodificación especulativa MTP integrada para acelerar la inferencia.
-- Capacidad limitada al chino; no se declara soporte multilingüe, tool calling, visión ni audio.
-- No es un modelo de continuación ni de creación libre: su ámbito es estrictamente la reescritura.
+
+- Reescrita de prosa narrativa en chino: convierte borradores con "sabor AIGC" en texto legible, con estilo personal y sin copiar literalmente (restricción dura de no superar 15 caracteres consecutivos idénticos al original).
+- Modo de razonamiento (cadena de pensamiento) especializado en reescrita: el modelo razona sobre qué frases son fórmulas vacías antes de producir el texto final.
+- Detección implícita de "八股" (prosa formulaica/relleno): gracias al clasificador jevnovel3 integrado en el pipeline de datos, el modelo aprende a identificar y eliminar muletillas y relleno.
+- Generación de texto en chino con capacidad conversacional (tag `conversational`).
+- Decodificación especulativa MTP integrada: acelera la generación en llama.cpp sin modelo draft separado.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni capacidades multilingües más allá del chino.
 
 ## Casos de uso
-- Limpieza de borradores generados por IA en plataformas de novela web: el modelo recibe el texto con anotaciones JEV y devuelve una versión reescrita con menor densidad de fórmulas artificiales, lo que resulta adecuado por su entrenamiento específico en detección y eliminación de estilo generativo.
-- Edición asistida para autores humanos: el análisis editorial previo permite al autor revisar el diagnóstico (qué frases suenan artificiales y por qué) antes de aceptar la reescritura, útil como herramienta de revisión y no solo de generación.
-- Reducción de redundancia en manuscritos largos: al reorganizar por párrafos y comprimir repeticiones, encaja en flujos de edición de capítulos con presupuesto de longitud fijado mediante instrucciones de "档位" (nivel de recorte).
-- Despliegue local en estaciones de trabajo sin GPU de datacenter: con 15,5 GB en IQ4_XS y aceleración MTP, puede ejecutarse en llama.cpp sobre GPU de consumo con suficiente VRAM, lo que lo hace viable para editores que trabajan con material sensible sin enviarlo a la nube.
-- Preprocesado en pipelines de publicación: integrable como etapa de normalización estilística antes de la revisión humana o de la moderación de contenido en una plataforma de ficción.
-- Evaluación comparativa de cuantizaciones: el repositorio publica métricas JEV, grado de desviación del original y velocidad para FP8, IQ4_XS y NVFP4, lo que permite usar esta variante como referencia para decidir el formato de despliegue en producción.
+
+- Reescrita de capítulos de novela web: el modelo recibe un borrador generado por IA y devuelve una versión pulida; su entrenamiento específico en pares degradado→humano lo hace adecuado para este flujo de trabajo editorial.
+- Limpieza de catálogos de ficción seriada: para plataformas con miles de capítulos producidos con asistencia de IA, el modelo puede normalizar estilo y eliminar fórmulas repetitivas por lotes, con la restricción de copia de 15 caracteres como salvaguarda.
+- Preservación de estilo de autor: el pipeline de datos (expansión con Opus 5.5, corrección con Spark X 2.6 y Kimi K3, CoT de Gemini 4 Argon) está orientado a mantener "voz" autoral, lo que lo hace útil para autores que quieren pulir sin perder identidad.
+- Despliegue local en estaciones de trabajo: al ser IQ4_XS de 15,5 GB, cabe en GPUs de consumo alto y permite trabajar con manuscritos confidenciales sin enviarlos a la nube.
+- Control de longitud en reescrita: la model card indica que se puede fijar la longitud en el prompt para evitar el "relleno para alargar"; útil en encargos con recuento de palabras estricto.
+- Evaluación comparativa de cuantizaciones: como referencia de calidad/velocidad dentro de la familia rewrite3 para decidir entre FP8 (calidad) e IQ4_XS (velocidad y VRAM).
 
 ## Benchmarks y rendimiento
-El autor publica una comparativa de calidad y velocidad entre formatos de cuantización sobre un conjunto de seis prompts, con KV cache en bf16 y midiendo tiempos que incluyen razonamiento y texto final. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
-| Formato | JEV medio ↓ | Desviación del original ↑ | Copia máxima (caracteres) ↓ | Copia total ↓ | Longitud del texto | Muestras demasiado largas | Tiempo medio |
+La model card publica una comparación interna sobre seis prompts, con KV cache en bf16, midiendo JEV (probabilidad de frase "mala", menor es mejor), desvinculación del original, copia literal y tiempo medio:
+
+| Formato | JEV medio ↓ | Desvinculación ↑ | Copia máxima (caracteres) ↓ | Copia total ↓ | Longitud media | Muestras demasiado largas | Tiempo medio |
 |:--|--:|--:|--:|--:|--:|--:|--:|
 | FP8 (W8A8) | 0,0966 | 0,844 | 31,2 | 54,2 | 1036 | 3/6 | 71 s |
 | IQ4_XS (GGUF) | 0,0982 | 0,767 | 25,2 | 86,0 | 1007 | 0/6 | 41 s |
 | NVFP4 (W4A4) | 0,1016 | 0,804 | 25,5 | 70,2 | 944 | 0/6 | 43 s |
 
-Métricas auxiliares definidas por el autor: "desviación del original" es la proporción de ventanas de 5 caracteres del texto reescrito que no aparecen en el original (más alto indica reescritura más profunda); "copia máxima" y "copia total" miden caracteres coincidentes literalmente con el original. Umbrales JEV: por debajo de 0,08 se considera limpio, entre 0,08 y 0,12 es el rango normal de reescritura y por encima de 0,2 predomina el estilo artificial. BF16 se usa como referencia de calidad pero no se evaluó en esta batería de seis prompts; Q3_K_M, Q4_K_M e IQ3_XS no se han probado.
+El autor concluye FP8 > IQ4_XS > NVFP4. BF16 es la referencia de calidad pero no se evaluó en este conjunto de seis prompts; Q3_K_M, Q4_K_M e IQ3_XS no se han probado todavía. No hay resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: aproximadamente 15,5 GB de pesos en IQ4_XS, más KV cache; con contexto de 16 384 tokens y KV en bf16 el consumo adicional es significativo, por lo que conviene reservar margen.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para IQ4_XS con contexto moderado; A100/H100 no son necesarias para esta cuantización, aunque permiten contextos mayores y mayor throughput.
-- Cabe en GPU de consumo: sí, en tarjetas de 24 GB o más con contexto ajustado; en 16 GB es probable que no quepa con KV cache bf16 a 16k de contexto.
-- Opciones de despliegue: llama.cpp (nightly b12374 o superior) con `--spec-type draft-mtp --spec-draft-n-max 3` para activar MTP; para BF16/FP8/NVFP4 el autor remite a vLLM con los repositorios correspondientes.
-- Latencia y throughput: el autor reporta 41 s de media para seis prompts de reescritura con IQ4_XS, frente a 71 s con FP8, en la misma máquina; no se publican tokens por segundo.
+
+- VRAM estimada para inferencia: ~15,5 GB de pesos en IQ4_XS, más KV cache; con `-c 16384` y KV en bf16 el consumo adicional es apreciable, por lo que se recomienda planificar margen sobre 16 GB.
+- GPU recomendadas: A100/H100 para FP8 o BF16; RTX 4090 (24 GB) para IQ4_XS con contexto moderado; GPUs de 16 GB quedan justas (el autor sugiere Q3_K_M o IQ3_XS para ese segmento).
+- Cabe en GPU de consumo: sí, IQ4_XS en RTX 4090/4080 de 24 GB; en 16 GB conviene reducir contexto o bajar a Q3_K_M (13,7 GB) o IQ3_XS (12,3 GB).
+- Opciones de despliegue: llama.cpp (llama-server, nightly b12374 o superior) para GGUF con MTP; vLLM para las variantes BF16/FP8/NVFP4.
+- Latencia y throughput: 41 s de media para las seis muestras de la model card (frente a 71 s en FP8), incluyendo razonamiento y texto final; no se publica throughput en tokens/s.
 
 ## Comparativa con modelos similares
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La comparación más directa disponible es interna, entre las cuantizaciones del mismo modelo:
 
-| Modelo | Parámetros | Contexto | Licencia | Peso | Notas |
-|---|---|---|---|---|---|
-| rewrite3-27b-iq4xs (este) | 27B | no disponible | Apache 2.0 | 15,5 GB | Mejor equilibrio velocidad/calidad según el autor; 41 s medios |
-| rewrite3-27b-fp8 | 27B | no disponible | Apache 2.0 | 35,9 GB | Calidad máxima en la batería publicada; 71 s medios |
-| rewrite3-27b-nvfp4 | 27B | no disponible | Apache 2.0 | no disponible | Ventaja de memoria en Blackwell; JEV ligeramente superior |
-| rewrite3-27b-bf16 | 27B | no disponible | Apache 2.0 | 54,7 GB | Referencia de calidad, sin evaluación en la batería de seis prompts |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|:--|--:|--:|:--|:--|:--|
+| rewrite3-27b-iq4xs (este) | 27,3 B | no disponible | Apache 2.0 | GGUF IQ4_XS | Especializado en reescrita de novela web china; MTP integrado |
+| rewrite3-27b-fp8 | 27,3 B | no disponible | Apache 2.0 | FP8 W8A8 | Mejor JEV (0,0966) y desvinculación (0,844) en la evaluación interna |
+| rewrite3-27b-nvfp4 | 27,3 B | no disponible | Apache 2.0 | NVFP4 W4A4 | Menor huella (19,7 GB); JEV 0,1016 |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | no disponible | no disponible | safetensors | Modelo generalista del que deriva; sin especialización en reescrita |
+
+No se dispone de comparaciones con modelos de propósito general de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
-- Especialización estrecha: solo reescribe ficción web en chino; no es adecuado para generación libre, continuación de texto, código, matemáticas ni tareas generales.
-- Dependencia de las puntuaciones JEV: sin las anotaciones del clasificador jevnovel3 0.8B el modelo opera fuera de la distribución de entrenamiento y la calidad puede degradarse.
-- Riesgo de "inflado" del texto: con instrucciones de recorte, el modelo puede alargar el resultado añadiendo detalles de ambiente, acción o psicología; el autor recomienda fijar el nivel de recorte en el prompt para evitarlo.
-- Riesgo de invención de detalles: aunque se prohíbe inventar escenarios nuevos, la "adición de material" permitida puede introducir elementos no presentes en el original.
-- Sesgos: no se documentan sesgos específicos; al entrenarse sobre novelas web chinas, puede heredar convenciones de género y estereotipos de ese corpus.
-- Alucinación: no se publican evaluaciones específicas de fidelidad factual; la restricción de copia máxima de 15 caracteres consecutivos es una guía de diseño, no una garantía verificada de forma independiente.
-- Idiomas: solo chino; no se declara soporte para castellano ni otras lenguas.
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen arrastra sus propias condiciones; conviene revisar la licencia del modelo base antes de un despliegue comercial.
-- Madurez: repositorio con cero descargas y cero likes en el momento de la consulta, publicado en noviembre de 2026; el soporte de MTP exige versiones nightly de llama.cpp, lo que implica riesgo de inestabilidad en producción.
+
+- Idioma: solo chino; no se documenta rendimiento en castellano ni en otros idiomas.
+- Dominio acotado: entrenado para reescrita de novela web china; su uso como modelo generalista de texto no está validado.
+- Tendencia al alargamiento: la model card advierte que en ocasiones "rellena para ganar longitud"; hay que fijar la longitud en el prompt si es crítico.
+- Riesgo de alucinación: la expansión de detalles se hizo con modelos generativos (Opus 5.5, Spark X 2.6, Kimi K3); aunque se evitó introducir información no inferible del texto, puede aparecer contenido añadido no presente en el original.
+- Dependencia de un clasificador externo (jevnovel3 0.8B) en la construcción del dataset: no se distribuye como parte del modelo y no se puede reproducir la métrica JEV sin él.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B, cuya licencia no se detalla en la información disponible.
+- Compatibilidad: la cabeza MTP requiere llama.cpp nightly b12374 o superior; versiones antiguas no cargarán `blk.32.nextn.*`.
+- Datos de benchmarks limitados: solo seis prompts internos; sin MMLU, HumanEval ni GSM8K, la evaluación objetiva de capacidades generales no está disponible.
 
 ## Enlaces
-- Repositorio Hugging Face: https://huggingface.co/aikexue170/rewrite3-27b-iq4xs
-- Versión BF16: https://huggingface.co/aikexue170/rewrite3-27b-bf16
-- Versión BF16 en ModelScope: https://modelscope.cn/models/alkaid55555/rewrite3-27b-bf16
-- Versión FP8: https://huggingface.co/aikexue170/rewrite3-27b-fp8
-- Versión FP8 en ModelScope: https://modelscope.cn (enlace truncado en la model card)
+
+- Hugging Face (este repositorio): https://huggingface.co/aikexue170/rewrite3-27b-iq4xs
+- ModelScope (espejo): https://modelscope.cn/models/alkaid55555/rewrite3-27b-iq4xs
+- Variante BF16: https://huggingface.co/aikexue170/rewrite3-27b-bf16
+- Variante Q8_0: https://huggingface.co/aikexue170/rewrite3-27b-q8_0
+- Variante FP8: https://huggingface.co/aikexue170/rewrite3-27b-fp8
+- Variante NVFP4: https://huggingface.co/aikexue170/rewrite3-27b-nvfp4
+- Variante Q4_K_M: https://huggingface.co/aikexue170/rewrite3-27b-q4km
+- Variante Q3_K_M: https://huggingface.co/aikexue170/rewrite3-27b-q3km
+- Variante IQ3_XS: https://huggingface.co/aikexue170/rewrite3-27b-iq3xs
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

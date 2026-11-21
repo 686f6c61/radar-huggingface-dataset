@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LFM3-Omni-2B - Liquid AI Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
-      "snippet": "← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech. It is built for on-device use, where one model replaces a separate ASR model, vision-language model, LLM, and TTS model. It is a non-reasoning model."
-    },
-    {
-      "title": "LFM3-Omni-2B-Looped-Latent-v2.1-GGUF - Hugging Face",
-      "url": "https://huggingface.co/Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF/blob/main/chat_template_hidden.jinja",
-      "snippet": "Guilherme34 / LFM3-Omni-2B-Looped-Latent-v2.1-GGUF Like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    }
-  ]
+  "sources": []
 }

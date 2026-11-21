@@ -2,95 +2,86 @@
 
 ## Resumen
 
-WhiskyAKM/Qwen3.8-21B-GGUF es una versión podada (pruned) y cuantizada en formato GGUF del modelo Qwen/Qwen3.8-27B, desarrollado originalmente por el equipo Qwen. La modificación consiste en la eliminación de los bloques 6, 7, 8 y 9 de la red, lo que reduce el total de parámetros desde los 27B del modelo original hasta aproximadamente 20,8 mil millones (20.807.699.328 según los pesos safetensors). El resultado se distribuye en múltiples cuantizaciones GGUF listas para su uso con llama.cpp y runtimes compatibles.
+WhiskyAKM/Qwen3.8-21B-GGUF es una versión podada (pruned) y cuantizada del modelo Qwen/Qwen3.8-27B, desarrollado por el equipo Qwen. El autor de esta ficha, WhiskyAKM, ha eliminado los bloques 3, 9, 10 y 14 del transformer original para reducir el modelo de 27B a aproximadamente 21B parámetros (20.807.699.328 exactos según los pesos en safetensors), manteniendo la arquitectura híbrida de atención (hybrid attention con componentes linear-attention) y la naturaleza multimodal del modelo original.
 
-El modelo hereda las características del Qwen3.8-27B: arquitectura híbrida con atención lineal (linear-attention) y atención completa, capacidades multimodales (aunque la visión no fue validada tras la poda) y soporte multilingüe. La poda de bloques intermedios es una técnica agresiva que busca reducir los requisitos de memoria manteniendo parte de las capacidades del modelo original, a costa de una degradación de calidad que el propio autor documenta.
+El objetivo declarado es puramente de investigación: explorar hasta qué punto se puede comprimir un modelo grande eliminando capas completas con una degradación controlada de la perplejidad (KLD en torno a 1.2-1.3 según la cuantización). El autor advierte explícitamente que, para uso diario, cualquier cuantización del modelo original de 27B rendirá mejor que esta versión podada, por lo que no debe considerarse un sustituto de producción del modelo base.
 
-Es relevante para desarrolladores que necesitan desplegar un modelo de ~21B en hardware con recursos limitados usando llama.cpp, especialmente porque el autor advierte explícitamente sobre qué cuantizaciones degradan más la calidad. No obstante, se trata de un modelo derivado sin benchmarks publicados y con cero descargas en el momento de la consulta, por lo que su validación empírica queda pendiente.
+La relevancia actual reside en que demuestra una técnica de poda no consecutiva (búsqueda de la mejor combinación de capas a eliminar en lugar de bloques contiguos) aplicada a un modelo Qwen3.8 con atención híbrida, y ofrece pesos GGUF listos para llama.cpp con licencia Apache 2.0, lo que facilita su experimentación en hardware de consumo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con atención lineal (linear-attention) y atención completa; modelo base Qwen3.8-27B con bloques 6, 7, 8 y 9 podados |
-| Parámetros totales | 20.807.699.328 (~20,8B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (los ejemplos de uso emplean `-c 32768`) |
-| Tipos de cuantización | Q4_0, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 y BF16 sin cuantizar |
-| Idiomas soportados | multilingüe (sin listado específico) |
+| Arquitectura | Transformer híbrido con hybrid attention y linear-attention (base Qwen3.8-27B), podado en bloques 3, 9, 10 y 14 |
+| Parametros totales | 20.807.699.328 (aprox. 21B; el autor indica 21.7B en la model card) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible de forma oficial; los ejemplos de uso emplean `-c 32768` (32K) |
+| Tipos de cuantizacion | Q4_0, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 y BF16 (sin cuantizar) |
+| Idiomas soportados | Multilingüe (multilingual, sin listado detallado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base original usa safetensors |
+| Formato de pesos | GGUF (llama-cpp); repo de 295 GB con múltiples cuantizaciones |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura transformer híbrida que combina capas de atención lineal con capas de atención completa, según los tags de la model card (`hybrid attention`, `linear-attention`). Esta modificación concreta no entrena el modelo: aplica una poda estructural eliminando los bloques 6, 7, 8 y 9 del modelo original, lo que reduce el número de parámetros de 27B a ~20,8B. No se proporciona información sobre el proceso de poda más allá de los índices de bloque eliminados, ni sobre si hubo recuperación (fine-tuning) posterior a la poda.
+El modelo base Qwen3.8-27B emplea una arquitectura transformer híbrida que combina mecanismos de atención estándar con capas de linear-attention, según indican las etiquetas del repositorio. Esta ficha no ha sido reentrenada: es un proceso de poda estructural sobre los pesos del modelo original, en el que se eliminan los bloques 3, 9, 10 y 14. La innovación metodológica declarada es que el algoritmo de poda busca la mejor combinación de capas a eliminar en lugar de limitarse a bloques consecutivos, lo que según el autor reduce la degradación respecto a podas más ingenuas.
 
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF o DPO en el modelo original. Tampoco se documenta el impacto de la poda en la perplejidad o en tareas específicas. El autor menciona que las capacidades de visión y de predicción multi-token (MTP) no fueron probadas tras la poda, y que el proyector multimodal (`mmproj`) puede obtenerse de cualquier otro repositorio GGUF del Qwen3.8-27B.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si el modelo original pasó por RLHF o DPO. El autor indica que la versión multimodal (vision) y la predicción multi-token (MTP) no fueron probadas tras la poda, y que el `mmproj` puede tomarse de cualquier otro repositorio GGUF de Qwen3.8-27B. Los pesos se actualizaron el 18 de noviembre de 2026 con un KLD en torno a 1.2-1.3 según la cuantización. El modelo se distribuye exclusivamente en GGUF para llama.cpp y runtimes compatibles.
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general, heredada del modelo base.
-- Razonamiento y generación de código: el modelo base se presenta en el blog de Qwen como un avance en coding y cowork, aunque no se validan estas capacidades tras la poda.
-- Capacidades multimodales (visión): el modelo base las soporta, pero el autor indica que no fueron probadas en esta versión podada; requiere un `mmproj` externo.
-- Predicción multi-token (MTP): presente en el modelo base, no probada tras la poda.
-- Soporte multilingüe declarado, sin listado de idiomas concreto.
-- Compatibilidad con API OpenAI mediante `llama-server`.
-- Soporte de tool calling / function calling: no confirmado en la información disponible para esta versión podada.
+- Generación de texto conversacional y multilingüe, heredada del modelo base Qwen3.8-27B.
+- Razonamiento y generación de código: el modelo base está orientado a coding y cowork según el blog de Qwen, aunque la poda puede degradar estas capacidades.
+- Soporte multimodal potencial (vision) mediante un fichero `mmproj` externo, no probado por el autor tras la poda.
+- Compatibilidad con API OpenAI a través de `llama-server` (endpoints_compatible en las etiquetas).
+- Capacidad de predicción multi-token (MTP) presente en la arquitectura base, no verificada tras la poda.
+- Ejecución local en llama.cpp con contexto configurable (los ejemplos usan 32K tokens).
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_M (13 GB) y Q5_K_M (14 GB) permiten ejecutar el modelo en GPUs con 16-24 GB de VRAM mediante llama.cpp, algo inviable con el BF16 de 39 GB.
-- Servicio de API compatible con OpenAI en infraestructura propia: `llama-server` expone un endpoint compatible con el cliente de OpenAI, lo que facilita integrar el modelo en aplicaciones existentes sin cambiar el código de cliente.
-- Prototipado de asistentes conversacionales multi-turno: con `-c 32768` en los ejemplos, el modelo puede mantener conversaciones con contexto amplio en entornos de desarrollo y pruebas.
-- Experimentación con modelos podados: útil para investigadores que quieran medir el impacto de eliminar bloques intermedios en un transformer híbrido, comparando contra el Qwen3.8-27B original.
-- Inferencia en CPU o configuraciones mixtas CPU/GPU: el formato GGUF y las cuantizaciones Q4/Q5 permiten ejecución parcial en CPU cuando la VRAM es insuficiente.
-- Evaluación de pipelines multimodales: cargando un `mmproj` externo del Qwen3.8-27B, se puede probar la integración de visión en `llama-server`, aunque el autor no garantiza su correcto funcionamiento tras la poda.
+- Experimentación académica en técnicas de poda: permite estudiar el impacto de eliminar capas no consecutivas en un transformer híbrido con atención lineal, comparando la perplejidad (KLD 1.2-1.3) frente al modelo original de 27B.
+- Investigación sobre compresión de modelos multimodales: al poder acoplar un `mmproj` externo, sirve para evaluar cómo afecta la poda a la alineación visión-lenguaje en tareas controladas.
+- Despliegue en hardware de consumo con llama.cpp: la cuantización Q4_K_M (13 GB) permite ejecutar el modelo en GPUs con 16 GB de VRAM, útil para prototipos y pruebas de concepto locales.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece siete variantes (de Q4_0 a BF16) para medir la degradación de calidad según el nivel de compresión, incluida la advertencia de que Q4_0 degrada notablemente.
+- Servidor de inferencia compatible con OpenAI: mediante `llama-server` se puede exponer el modelo como API para integrarlo en pipelines de pruebas internas sin depender de servicios en la nube.
+- Docencia y formación: su tamaño manejable (12-21 GB según cuantización) y licencia Apache 2.0 lo hacen adecuado para demostrar el funcionamiento interno de modelos híbridos y el efecto de la poda en entornos educativos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. El único dato de calidad aportado por el autor es la divergencia KL (KLD) en torno a 1.2-1.3 según la cuantización, que mide la degradación respecto al modelo original, no el rendimiento absoluto en tareas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según tamaño de archivo GGUF):
-  - Q4_0 / Q4_K_S: ~12 GB
-  - Q4_K_M: ~13 GB
-  - Q5_K_S / Q5_K_M: ~14 GB
-  - Q6_K: ~16 GB
-  - Q8_0: ~21 GB
-  - BF16: ~39 GB
-- GPU recomendadas: no especificadas por el autor. Por tamaño, las cuantizaciones Q4/Q5 encajan en RTX 4090 (24 GB), RTX 3090 (24 GB) y A100 40 GB; Q8_0 requiere 24 GB o más; BF16 requiere A100 80 GB o H100 80 GB.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantizaciones Q4 y Q5; Q6_K (16 GB) también encaja en 24 GB.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), y por extensión cualquier runtime compatible con GGUF (Ollama, LM Studio, etc., aunque no se mencionan explícitamente).
+- VRAM estimada para inferencia: aproximadamente 12 GB (Q4_K_S), 13 GB (Q4_K_M), 14 GB (Q5_K_S y Q5_K_M), 16 GB (Q6_K), 21 GB (Q8_0) y 39 GB (BF16, sin cuantizar).
+- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 4090 (24 GB) puede ejecutar hasta Q8_0, y una RTX 4080/4070 Ti Super (16 GB) hasta Q6_K.
+- Cabe en GPU de consumo: sí, en modelos con 16 GB o más de VRAM para cuantizaciones Q4 y Q5; Q8_0 requiere 24 GB.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server` con API compatible con OpenAI); no se mencionan vLLM, TGI ni Ollama en la información disponible.
 - Latencia y throughput: no disponibles.
-- Advertencia del autor: la cuantización del KV cache en Q4 y Q5 provoca una degradación significativa de la calidad.
+- Advertencia del autor: la cuantización de la caché KV en Q4 y Q5 causa una degradación significativa de la calidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| WhiskyAKM/Qwen3.8-21B-GGUF | ~20,8B | no disponible | Apache 2.0 | GGUF | Poda de bloques 6-9 del Qwen3.8-27B; sin benchmarks publicados |
-| Qwen/Qwen3.8-27B | 27B | no disponible | Apache 2.0 (según modelo derivado) | safetensors | Modelo base original; capacidades completas incluyendo visión y MTP |
-| Otras cuantizaciones GGUF del Qwen3.8-27B | 27B | no disponible | Apache 2.0 | GGUF | Mantienen todos los bloques; mayor tamaño y VRAM requerida |
+| WhiskyAKM/Qwen3.8-21B-GGUF | ~20.8B | 32K en ejemplos (no oficial) | Apache 2.0 | GGUF | Poda de investigación; KLD 1.2-1.3 |
+| Qwen/Qwen3.8-27B | 27B | no disponible | Apache 2.0 | safetensors (original) | Modelo base; el autor recomienda usarlo para producción |
+| Otras cuantizaciones GGUF de Qwen3.8-27B | 27B | no disponible | Apache 2.0 | GGUF | Mismo tamaño que el original, sin poda; rendimiento superior según el autor |
 
-La comparativa con modelos de otros fabricantes no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento absoluto con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La poda de los bloques 6-9 degrada la calidad respecto al modelo original; el autor no cuantifica la pérdida.
-- El autor desaconseja explícitamente la cuantización Q4_0 por "degradación sorprendentemente grande".
-- La cuantización del KV cache en Q4 y Q5 causa una degradación significativa de la calidad, según advierte el autor.
-- Las capacidades de visión y MTP no fueron probadas tras la poda; el `mmproj` debe obtenerse de otro repositorio y su compatibilidad no está garantizada.
-- No hay benchmarks publicados que permitan validar el rendimiento real del modelo podado.
-- Riesgo de alucinación: no documentado específicamente, pero inherente a los modelos de lenguaje; la poda puede incrementarlo.
-- Sesgos: no documentados en la información disponible.
-- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo derivado conviene verificar las condiciones del modelo base Qwen3.8-27B.
-- Repositorio con cero descargas y cero likes en el momento de la consulta: sin validación por parte de la comunidad.
-- Idioma: se declara multilingüe pero no se especifica qué idiomas están cubiertos ni su calidad tras la poda.
+- El propio autor califica el proyecto como "solo de investigación" y afirma que cualquier cuantización del 27B original rendirá mejor para uso diario.
+- La poda de cuatro bloques introduce una degradación medible (KLD 1.2-1.3), que puede traducirse en peor razonamiento, código y coherencia en comparación con el modelo base.
+- La cuantización Q4_0 no se recomienda por una degradación sorprendentemente grande pese a su tamaño.
+- La cuantización de la caché KV en Q4 y Q5 degrada significativamente la calidad.
+- Las capacidades de visión y MTP no han sido probadas tras la poda; el soporte multimodal es, por tanto, incierto.
+- No se han publicado benchmarks ni evaluaciones de sesgo, alucinación o seguridad para esta versión podada.
+- El listado de idiomas es genérico ("multilingual") sin detalle de cobertura ni calidad por idioma.
+- Licencia Apache 2.0 permite uso comercial, pero al tratarse de un experimento de poda sin validación, no es recomendable para producción sin evaluación propia.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/WhiskyAKM/Qwen3.8-21B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- llama.cpp: https://github.com/ggerganov/llama.cpp
 - Blog de Qwen3.8: https://qwen.ai/blog?id=qwen3.8
+- llama.cpp: https://github.com/ggerganov/llama.cpp

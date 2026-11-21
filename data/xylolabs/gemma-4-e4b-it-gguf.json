@@ -53,11 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Gemma 4 E4B GGUF Download — Official Q4_0 & Community Quants ...",
-      "url": "https://gemma-4.net/download/gemma-4-e4b-gguf",
-      "snippet": "Download Gemma 4 E4B GGUF (8B) for local inference. Use Google's official QAT Q4_0 checkpoint, or compare clearly labelled community quants for llama.cpp and Ollama."
-    }
-  ]
+  "sources": []
 }

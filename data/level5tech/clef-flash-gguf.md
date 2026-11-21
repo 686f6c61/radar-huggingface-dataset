@@ -2,19 +2,19 @@
 
 ## Resumen
 
-clef-flash-GGUF es una compilación cuantizada del modelo Cloudflare/clef-flash, un modelo de 9.075.566.084 parámetros (aproximadamente 9B) publicado por el usuario Level5Tech. El repositorio ofrece los pesos en formato GGUF en tres variantes (BF16, Q8_0 y Q4_K_M) para su uso con llama.cpp a partir de la build b11671. No se trata de un lanzamiento oficial de Cloudflare, sino de una conversión realizada por Level5Tech en el contexto del trabajo "The Noise Floor of a Quantization Comparison" de Aleks Blagojevich y Trevor Sunderland.
+clef-flash-GGUF es una compilación cuantizada del modelo Cloudflare/clef-flash (9B), publicada por Level5Tech. No se trata de un modelo entrenado desde cero, sino de una conversión a formato GGUF en tres variantes (BF16, Q8_0 y Q4_K_M) pensada para su uso con llama.cpp, en concreto con la build b11671. El propósito declarado por los autores es servir como material reproducible para un estudio académico sobre el impacto de la cuantización en modelos de decisión, publicado en arXiv con el identificador 2611.15671 bajo el título "The Noise Floor of a Quantization Comparison".
 
-El modelo base, Cloudflare/clef-flash, aparece etiquetado como "decision-model" y "conversational", lo que sugiere un uso orientado a toma de decisiones y diálogo, aunque la información disponible no detalla su arquitectura interna ni su proceso de entrenamiento. La licencia del modelo base es Apache-2.0, y el repositorio incluye el aviso NOTICE indicando que los pesos han sido modificados mediante cuantización.
+El modelo base tiene 9.075.566.084 parámetros (aproximadamente 9B) y está etiquetado como "decision-model", una categoría que sugiere un uso orientado a tareas de clasificación, enrutamiento o toma de decisiones estructuradas más que a generación libre de texto. La licencia es Apache-2.0, heredada del modelo original, lo que permite uso comercial con las obligaciones habituales de atribución.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de ~9B en hardware de consumo mediante cuantización Q4_K_M, con el interés adicional de que el repositorio acompaña un estudio comparativo de cuantizaciones. Sin embargo, la ausencia de model card detallada, benchmarks e idiomas soportados limita considerablemente la evaluación técnica.
+La relevancia de esta ficha es doble: por un lado, ofrece una vía práctica de desplegar un modelo de 9B en hardware de consumo mediante cuantización a 4 bits; por otro, el repositorio va acompañado de un paper y un conjunto de datos de mediciones que documentan la deriva (drift) introducida por el motor de inferencia, los reinicios, el tamaño de batch y las diferencias entre kernels, comparándola con los efectos de la propia cuantización a 8 y 4 bits. Es, por tanto, un artefacto tanto de ingeniería como de investigación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | no disponible (modelo base Cloudflare/clef-flash; no se detalla en la informacion proporcionada) |
 | Parametros totales | 9.075.566.084 (~9B) |
-| Parametros activos | no aplica (no consta que sea MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, Q8_0, Q4_K_M |
 | Idiomas soportados | no disponible |
@@ -23,57 +23,63 @@ La relevancia de esta ficha radica en que permite ejecutar un modelo de ~9B en h
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Cloudflare/clef-flash en los datos proporcionados. El nombre y las etiquetas ("decision-model", "conversational") apuntan a un modelo orientado a diálogo y toma de decisiones, pero no se confirma si se trata de un transformer denso, un MoE o una arquitectura híbrida. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo base Cloudflare/clef-flash en la documentación proporcionada: no se especifica si es un transformer denso, un MoE, un modelo híbrido o una arquitectura con atención lineal. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Lo único que puede afirmarse con certeza es el recuento de parámetros (9.075.566.084) y la etiqueta "decision-model", que orienta el uso hacia tareas de decisión.
 
-Lo único verificable es el proceso de cuantización: Level5Tech ha generado tres variantes GGUF (BF16, Q8_0 y Q4_K_M) compatibles con llama.cpp b11671. El repositorio asociado (github.com/Level5Tech/clef-quant-bench) contiene las mediciones, recetas y salidas por registro del estudio comparativo de cuantizaciones, que constituye la innovación metodológica principal de esta publicación más que el modelo en sí.
+La innovación técnica documentada en este repositorio no reside en el entrenamiento, sino en la metodología de evaluación de la cuantización. El paper asociado mide la "deriva" (drift) de las salidas frente a perturbaciones que no tienen que ver con la precisión numérica: cambios de motor de inferencia, reinicios del proceso, variación del tamaño de batch y diferencias entre implementaciones de kernels. El objetivo es establecer un "suelo de ruido" contra el que comparar los efectos reales de cuantizar a 8 y 4 bits en dos modelos de decisión. Los autores publican recetas, mediciones y salidas por registro en el repositorio de GitHub clef-quant-bench, lo que permite reproducir el experimento.
 
 ## Capacidades
 
-- Generación de texto conversacional, según la etiqueta "conversational" del modelo base.
-- Orientación a toma de decisiones ("decision-model"), aunque no se detalla el mecanismo concreto.
-- Ejecución local mediante llama.cpp en formato GGUF, con soporte para cuantizaciones BF16, Q8_0 y Q4_K_M.
-- Compatibilidad con endpoints según la etiqueta "endpoints_compatible".
-- Soporte de tool calling, agentes, visión, audio o modo thinking: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible.
+- Generación de texto conversacional: la pipeline declarada es text-generation y el tag "conversational" indica soporte para diálogo multi-turno.
+- Toma de decisiones: el modelo base está etiquetado como "decision-model", lo que sugiere uso en tareas de clasificación, enrutamiento o selección entre opciones.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse a través de infraestructura compatible con endpoints estándar.
+- Inferencia local: al estar en GGUF, es ejecutable con llama.cpp (build b11671) en CPU y GPU.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; los idiomas no están declarados.
+- Capacidades especiales (visión, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Despliegue local en estación de trabajo: la variante Q4_K_M permite ejecutar un modelo de ~9B en GPU de consumo, útil para prototipado de asistentes conversacionales sin depender de la nube.
-- Evaluación de impacto de cuantización: el repositorio adjunto permite reproducir el estudio comparativo entre BF16, Q8_0 y Q4_K_M, midiendo la degradación de calidad por nivel de compresión en tareas conversacionales.
-- Asistente de toma de decisiones en entornos controlados: dada la etiqueta "decision-model", puede emplearse para generar recomendaciones estructuradas en flujos internos, siempre con validación humana.
-- Integración en pipelines con llama.cpp: al ser GGUF compatible con la build b11671, se puede incorporar en servicios locales basados en llama-server para pruebas de concepto.
-- Investigación sobre cuantización: útil para investigadores que estudien la "noise floor" (nivel de ruido) introducida por distintos esquemas de cuantización en modelos de ~9B.
-- Chatbot de soporte offline: en escenarios con requisitos de privacidad, la ejecución local evita enviar datos a terceros, aunque la falta de datos sobre contexto e idiomas obliga a validar previamente su comportamiento.
+- Evaluación de robustez frente a cuantización: el caso de uso principal documentado es reproducir el experimento del paper, ejecutando las variantes BF16, Q8_0 y Q4_K_M sobre el mismo conjunto de entradas y comparando las salidas para medir la deriva introducida por la cuantización frente al ruido del motor.
+- Despliegue en hardware de consumo: la variante Q4_K_M permite ejecutar un modelo de 9B en GPUs de gama alta para consumidores, lo que facilita prototipado local sin depender de infraestructura cloud.
+- Clasificación y enrutamiento de peticiones: dado su carácter de "decision-model", puede emplearse para decidir a qué servicio o cola derivar una consulta dentro de un sistema mayor, con la ventaja de que el formato GGUF permite integrarlo en un servicio ligero.
+- Atención al cliente automatizada: el tag "conversational" y la pipeline text-generation lo hacen apto para gestionar diálogos multi-turno, siempre que se valide la longitud de contexto real del modelo base (no documentada aquí).
+- Investigación reproducible en cuantización: sirve como banco de pruebas para estudiar cómo afectan reinicios, tamaño de batch y kernels a las salidas de un modelo de 9B, gracias a las recetas y mediciones publicadas en GitHub.
+- Inferencia en entornos con restricciones de memoria: las variantes Q8_0 y Q4_K_M reducen el espacio en disco y en VRAM respecto a BF16, lo que permite desplegar el modelo en máquinas donde la versión completa no cabría.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio github.com/Level5Tech/clef-quant-bench contiene mediciones comparativas de cuantización, pero sus cifras no se incluyen en los datos proporcionados y no deben inferirse.
+No se han publicado resultados de benchmarks en la información disponible. El paper asociado (arXiv:2611.15671) mide deriva y efectos de cuantización, no métricas de calidad tipo MMLU, HumanEval o GSM8K, y en la documentación proporcionada no se incluyen cifras de rendimiento downstream.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en BF16, aproximadamente 18 GB solo para pesos (9B × 2 bytes); en Q8_0, en torno a 9-10 GB; en Q4_K_M, alrededor de 5-6 GB, más overhead de contexto y KV cache.
-- GPU recomendadas: A100 o H100 para BF16 con contexto largo; RTX 4090 (24 GB) para BF16 ajustado o Q8_0 con holgura; RTX 3090/4080 para Q8_0; GPUs de 8 GB para Q4_K_M.
-- Cabe en GPU de consumo: sí, especialmente en Q4_K_M (8 GB o más) y Q8_0 (12 GB o más).
-- Opciones de despliegue: llama.cpp (build b11671 o superior), y por extensión Ollama o llama-server si se importa el GGUF. No se confirma soporte en vLLM o TGI para esta conversión.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: BF16 requiere aproximadamente 18 GB solo para pesos; Q8_0 ronda los 9-10 GB; Q4_K_M se sitúa en torno a 5-6 GB para pesos, a lo que hay que sumar la memoria para el contexto KV.
+- GPU recomendadas: para BF16, una A100 40GB o H100; para Q8_0, una RTX 4090 (24 GB) o L40S; para Q4_K_M, una RTX 4090 o incluso una RTX 3090/4080 con margen.
+- ¿Cabe en GPU de consumo? Sí: Q4_K_M cabe en GPUs de 8-12 GB con contexto moderado; Q8_0 requiere 16-24 GB; BF16 no cabe en GPUs de consumo actuales.
+- Opciones de despliegue: llama.cpp (build b11671, la indicada por el autor), y por extensión cualquier runtime compatible con GGUF como Ollama o servidores basados en llama.cpp. vLLM y TGI no soportan GGUF de forma nativa en la mayoría de configuraciones.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware y del tamaño de batch, precisamente las variables que el paper mide.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría ni datos de rendimiento que permitan establecer una comparación rigurosa con alternativas de ~9B.
+No disponible. En la información proporcionada no se identifican modelos comparables de la misma categoría ("decision-model" de 9B) ni se aportan métricas que permitan una comparación rigurosa con alternativas. La comparación más directa posible es con el propio modelo base Cloudflare/clef-flash en safetensors, del que esta compilación es una conversión cuantizada.
 
 ## Limitaciones y advertencias
 
-- No es un lanzamiento oficial de Cloudflare; los pesos han sido modificados mediante cuantización, según el NOTICE incluido.
-- La model card es mínima: no hay información sobre arquitectura, contexto, idiomas ni datos de entrenamiento.
-- Sin benchmarks publicados en la información disponible, no es posible evaluar la degradación de calidad respecto al modelo base.
-- Riesgo de alucinación y sesgos: no documentados, pero inherentes a cualquier modelo de lenguaje; deben evaluarse empíricamente antes de un uso en producción.
-- Las variantes Q8_0 y Q4_K_M introducen pérdida de precisión adicional respecto a BF16.
-- Licencia Apache-2.0 permite uso comercial, pero se recomienda conservar el LICENSE y el NOTICE originales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- No es una release oficial de Cloudflare: los pesos han sido modificados mediante cuantización, tal y como declara el NOTICE incluido en el repositorio.
+- La cuantización introduce degradación: las variantes Q8_0 y Q4_K_M no son equivalentes al BF16; el paper mide esa diferencia, pero no se ofrecen garantías de que la calidad se mantenga en todas las tareas.
+- Sesgos conocidos: no disponibles; el modelo base no documenta sesgos en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la documentación; como todo modelo generativo, existe, y en un "decision-model" puede traducirse en decisiones erróneas difíciles de detectar.
+- Idiomas soportados: no declarados, lo que impide garantizar un comportamiento correcto fuera del idioma o idiomas de entrenamiento del modelo base.
+- Longitud de contexto: no documentada; planificar el despliegue sin asumir una ventana concreta.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero exige conservar el aviso de licencia y el NOTICE de modificación; conviene revisar la licencia del modelo base por si añade condiciones.
+- Dependencia de versión: el autor fija llama.cpp b11671; otras builds pueden producir salidas distintas, precisamente el tipo de deriva que el paper cuantifica.
+- Repositorio con 0 likes y ~1.000 descargas: ecosistema pequeño, sin validación comunitaria amplia; tratar como artefacto de investigación más que como modelo de producción consolidado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Level5Tech/clef-flash-GGUF
+- Hugging Face: https://huggingface.co/Level5Tech/clef-flash-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
-- Repositorio del estudio de cuantización: https://github.com/Level5Tech/clef-quant-bench
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Paper: https://arxiv.org/abs/2611.15671
+- Repositorio de mediciones y recetas: https://github.com/Level5Tech/clef-quant-bench
+- Colección con las seis builds: https://huggingface.co/collections/Level5Tech/the-noise-floor-of-a-quantization-comparison-6afd62e8288cc5e14becefaf
+- Release archivada (Zenodo): https://doi.org/10.5281/zenodo.24184497

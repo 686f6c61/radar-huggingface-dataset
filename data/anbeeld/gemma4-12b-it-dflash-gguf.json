@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 746,
+  "downloads_30d": 738,
   "trending_score": 0,
   "parameters": 727496960,
   "parameters_human": "727.5M",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "google/gemma-4-12B · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-12B",
-      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
-    },
-    {
-      "title": "Anbeeld/gemma-4-31B-it-DFlash-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Anbeeld/gemma-4-31B-it-DFlash-GGUF",
-      "snippet": "DFlash draft model for Gemma 4 31B, made by z-lab. Tested with BeeLlama.cpp v0.2.0 — a llama.cpp fork with advanced DFlash support that enables using these draft models to their full potential. Target model: Gemma 4 31B Q4_K_S Setup: Windows 11, AMD Ryzen 7 5700X3D, 32 GB DDR4 RAM, RTX 3090 24 GB Config: same as in quick start docs, but with reasoning and adaptive DM disabled Baseline is ..."
-    },
-    {
-      "title": "gemma-4-12B-it-DFlash-GGUF huggingface.co api & williamliao gemma-4-12B ...",
-      "url": "https://www.toolify.ai/ai-model/williamliao-gemma-4-12b-it-dflash-gguf",
-      "snippet": "The upstream z-lab/gemma4-12B-it-DFlash and google/gemma-4-12B-it repositories identify their applicable licensing terms. Users should review the upstream model cards and licenses before redistribution or commercial use."
-    },
-    {
-      "title": "Gemma 4 12b It - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it.html",
-      "snippet": "Download Gemma 4 12b It GGUF model. 25.2 GB, 519,916 downloads, 807 likes."
-    },
-    {
-      "title": "GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative ...",
-      "url": "https://github.com/z-lab/dflash",
-      "snippet": "DFlash is a lightweight block diffusion model designed for speculative decoding. It enables efficient and high-quality parallel drafting. Use the Transformers or MLX backends below for their explicitly listed model families. Other checkpoints can be benchmarked through an OpenAI-compatible SGLang or ..."
-    }
-  ]
+  "sources": []
 }

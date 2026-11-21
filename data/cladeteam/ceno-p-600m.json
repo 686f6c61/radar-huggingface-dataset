@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1037,
+  "downloads_30d": 1041,
   "trending_score": 0,
   "parameters": 630794080,
   "parameters_human": "630.8M",
@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "CladeTeam/CENO-P-600M · Hugging Face",
-      "url": "https://huggingface.co/CladeTeam/CENO-P-600M",
-      "snippet": "CENO-P-600M is the multi-species alignment (MSA) post-trained variant of the 600M CENO DNA foundation model, for variant effect prediction (VEP). It carries intra_encoding_pattern in its config and ships the MSA scoring path (modeling_ceno_p.py), which consumes a per-token seq_idx to score packed MSA inputs."
-    },
-    {
-      "title": "GitHub - CladeTeam/CENO",
-      "url": "https://github.com/CladeTeam/CENO",
-      "snippet": "Three sizes (300M / 600M / 1B), e.g. CladeTeam/CENO-P-600M. Every checkpoint bundles this repo's model code, so it loads standalone with trust_remote_code=True — nothing else to set up."
-    }
-  ]
+  "sources": []
 }

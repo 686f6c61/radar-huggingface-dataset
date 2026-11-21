@@ -2,102 +2,89 @@
 
 ## Resumen
 
-NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy es un modelo publicado en Hugging Face por el usuario NasledieLab el 26 de septiembre de 2026, con licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento y sin resultados de evaluacion. No se dispone de pipeline declarado, idiomas soportados ni formatos de pesos publicados.
+Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy es un destilado del modelo base `unsloth/Qwen3.5-0.8B`, publicado por NasledieLab bajo licencia Apache 2.0. Se distribuye principalmente como GGUF cuantizado en Q4_K_M (unos 505 MB para el decodificador de texto) más un codificador visual separado en `mmproj-F16.gguf` (unos 196 MB), lo que permite ejecutarlo en llama.cpp, Ollama, LM Studio, Jan o Docker Model Runner. El modelo es multimodal (`image-text-to-text`) y hereda la arquitectura `qwen35` del modelo base, con 24 capas de texto y 12 capas de visión.
 
-El nombre del repositorio sugiere, sin que haya confirmacion por parte del autor, una destilacion de un modelo base de la familia Qwen3.5 con aproximadamente 0,8 mil millones de parametros, con los sufijos "GPT6-Luna" y "Karpy" posiblemente referidos al pipeline de destilacion o al dataset utilizado. Ninguno de estos extremos esta documentado en la informacion disponible, por lo que deben tratarse como hipotesis de nomenclatura y no como caracteristicas verificadas.
+El interés de esta publicación no reside en una mejora de capacidades frente al modelo base, sino en la corrección del empaquetado GGUF. La model card documenta con detalle que la versión anterior del repositorio estaba rota: arquitectura declarada como `llama` en lugar de `qwen35`, tensores con nombres de Hugging Face, un tensor visual de 5 dimensiones incompatible con GGML, cuantización mal etiquetada (473 tensores en F32, 3,41 GB, presentados como Q4_K_M) y metadatos con un contexto de 4096 y vocabulario de 32000 frente a los 262144 y 248320 del modelo original. La revisión actual reconstruye los ficheros con el conversor oficial de llama.cpp y separa texto y proyector multimodal.
 
-La relevancia del modelo en el momento de redactar esta ficha es limitada: registra cero descargas y cero likes, no tiene documentacion tecnica publicada y no se ha anunciado ningun benchmark. A efectos practicos, se trata de un artefacto de pesos sin trazabilidad metodologica verificable, lo que condiciona cualquier evaluacion seria de su comportamiento.
+Con 752.393.024 parámetros reales en safetensors (aproximadamente 0,75B), es un modelo de bolsillo orientado a despliegue local en hardware modesto, con soporte declarado de contexto largo y capacidades de visión. La información pública disponible es escasa: no hay benchmarks, no se detallan los datos de destilación ni la composición del dataset, y el repositorio tiene un volumen de descargas bajo (777) y un único like en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere una base de la familia Qwen3.5, sin confirmar) |
-| Parametros totales | no disponible (el nombre indica 0,8B, sin confirmar) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | Transformer multimodal `qwen35` (`Qwen3_5ForConditionalGeneration`): decodificador de texto de 24 capas y codificador visual de 12 capas |
+| Parametros totales | 752.393.024 (safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262144 tokens segun la model card (heredado del modelo base) |
+| Tipos de cuantizacion | Q4_K_M para texto (505 MB) y F16 para el proyector multimodal (196 MB); no se documentan otras variantes en el repositorio |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
-
-Metadatos adicionales confirmados: autor NasledieLab, tag de region "us", fecha de creacion 2026-09-26, fecha de ultima actualizacion 2026-09-26, 0 descargas y 0 likes.
+| Formato de pesos | GGUF (texto + `mmproj`), con `config.json` de referencia; el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card no incluye descripcion de la topologia de red, del mecanismo de atencion ni de si se trata de un transformer denso, un modelo de mezcla de expertos o una arquitectura hibrida. Tampoco hay datos sobre la longitud de contexto nativa ni sobre el tokenizador empleado.
+La arquitectura es la del modelo base Qwen3.5-0.8B: un transformer multimodal con un decodificador de texto de 24 capas, dimensión oculta de 1024 y vocabulario de 248320 tokens, junto a un codificador visual de 12 capas con dimensión 768. El contexto declarado es de 262144 tokens. El repositorio se presenta como un destilado del modelo base, pero la model card no especifica el profesor utilizado, el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-Respecto al entrenamiento, no hay informacion sobre el numero de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre el procedimiento de destilacion al que apunta el nombre del repositorio. Se desconoce igualmente si se aplicaron tecnicas de decodificacion especulativa, atencion lineal u otras optimizaciones.
+La contribución técnica documentada es puramente de empaquetado: reconstrucción del GGUF con el conversor oficial de llama.cpp bajo la arquitectura `qwen35`, separación de los 320 tensores de texto y los 154 tensores del proyector multimodal, y reformado del tensor `model.visual.patch_embed.proj.weight` de 5 dimensiones a 4 para cumplir las restricciones de GGML. También se corrige la plantilla de chat para incluir los tokens `<|vision_start|>`, `<|image_pad|>` y `<think>`, además de las llamadas a herramientas. El repositorio incluye scripts de reconstrucción (`REBUILD_GGUF.ps1`, `rebuild_gguf.sh`) y un validador (`validate_gguf.py`).
 
 ## Capacidades
 
-No se ha publicado ninguna lista de capacidades en la informacion disponible. A continuacion se enumeran los apartados que seria necesario verificar antes de cualquier uso en produccion:
-
-- Generacion de texto: no documentada.
-- Razonamiento y matematicas: no documentado.
-- Generacion de codigo: no documentada.
-- Vision: no documentada.
-- Soporte de tool calling o function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas; el campo de idiomas no esta informado.
-- Modo de razonamiento explicito (thinking mode): no documentado.
-- Capacidades de audio: no documentadas.
+- Generación de texto conversacional multi-turno, con plantilla de chat compatible con el formato de Qwen.
+- Comprensión de imágenes mediante el proyector multimodal `mmproj-F16.gguf` (pipeline `image-text-to-text`).
+- Modo de razonamiento explícito mediante el token `<think>`, incluido en la plantilla de chat corregida.
+- Soporte de llamadas a herramientas (tool calling) declarado en la plantilla de chat del repositorio.
+- Contexto largo de hasta 262144 tokens según las especificaciones del modelo base, sujeto a la memoria disponible en inferencia.
+- Despliegue local en llama.cpp, Ollama, LM Studio, Jan y Docker Model Runner.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-Dado que no existe documentacion funcional, los siguientes escenarios son planteamientos genericos para un modelo de aproximadamente 0,8B parametros y quedan sujetos a validacion empirica previa. No deben interpretarse como capacidades confirmadas de este checkpoint concreto.
-
-- Clasificacion de texto y etiquetado de baja latencia: un modelo de este tamano puede desplegarse en CPU para tareas de clasificacion por lotes, siempre que se valide previamente su precision en el dominio objetivo.
-- Enrutamiento de consultas en un sistema multi-modelo: uso como clasificador ligero que decida que consultas requieren un modelo mayor, aprovechando su bajo coste de inferencia.
-- Generacion de texto auxiliar en herramientas de escritura: autocompletado, resumenes cortos o reescritura de frases, con revision humana obligatoria dado el riesgo de alucinacion.
-- Prototipado e investigacion sobre destilacion: util como punto de partida para estudiar el efecto del procedimiento de destilacion indicado en el nombre, comparando con el modelo base declarado.
-- Extraccion de entidades en documentos estructurados: formularios, facturas o registros con plantillas predecibles, donde el espacio de salida esta acotado.
-- Filtrado previo en pipelines de datos: deteccion de contenido irrelevante o duplicado antes de pasar los datos a un modelo mayor, reduciendo coste computacional.
-- Educacion y demostraciones tecnicas: ejemplos de inferencia local en portatiles sin GPU dedicada, dado el reducido tamano de parametros.
+- Asistente conversacional local en equipos de sobremesa: con unos 505 MB en Q4_K_M, el modelo cabe en CPU y en GPUs de gama baja, lo que permite desplegar un chatbot privado sin conexión a servicios externos.
+- Descripción y clasificación de imágenes en local: el par GGUF + `mmproj` permite etiquetar capturas, extraer texto de documentos escaneados o generar descripciones para catálogos pequeños sin enviar datos a la nube.
+- Preprocesado y enrutado en pipelines de agentes: su tamaño reducido y el soporte de tool calling lo hacen adecuado como primer eslabón que clasifica intenciones o decide qué herramienta invocar antes de llamar a un modelo mayor.
+- Prototipado rápido de aplicaciones multimodales: sirve para validar flujos de `image-text-to-text` en llama.cpp u Ollama antes de migrar a modelos de mayor tamaño, con un coste de infraestructura mínimo.
+- Experimentación educativa y de investigación: al ser un destilado de 0,75B con licencia Apache 2.0, es útil para estudiar comportamiento de modelos pequeños, efectos de la cuantización Q4_K_M y del modo de razonamiento.
+- Procesamiento por lotes de documentos con contexto largo: la ventana declarada de 262144 tokens permite resumir o extraer información de documentos extensos, siempre que la memoria del sistema lo permita y se acepte la degradación típica de un modelo de este tamaño.
+- Integración en entornos de escritorio y CI: los comandos de una línea para Ollama y Docker Model Runner facilitan incorporarlo a scripts de automatización o a herramientas internas de desarrollo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ninguna otra metrica, y no se ha localizado ningun informe externo de evaluacion asociado a este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones genericas para un modelo denso de aproximadamente 0,8B parametros. No proceden de mediciones sobre este checkpoint concreto y deben tratarse como orientativas.
-
-- VRAM estimada en FP16: en torno a 2-3 GB, incluyendo pesos (~1,6 GB) y overhead de activaciones y cache KV.
-- VRAM estimada en INT8: aproximadamente 1-1,5 GB.
-- VRAM estimada en cuantizacion de 4 bits: aproximadamente 0,6-1 GB.
-- GPU recomendadas para produccion: cualquier GPU con 8 GB o mas, como RTX 3060, RTX 4060, RTX 4090, L4, A10G o superiores. Para lotes grandes, A100 o H100.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU consumer con 4 GB o mas de VRAM.
-- Inferencia en CPU: viable, con latencias del orden de decenas de milisegundos por token en procesadores modernos.
-- Opciones de despliegue: no confirmadas para este modelo. Requiere verificar la disponibilidad de pesos en formatos compatibles con llama.cpp, Ollama, vLLM o TGI antes de planificar el despliegue.
-- Latencia y throughput: no disponibles. No hay mediciones publicadas para este checkpoint.
+- VRAM estimada para texto en Q4_K_M: en torno a 0,5-1 GB para los pesos, más la caché KV; con contexto completo de 262144 tokens la caché KV crece de forma muy significativa y excede con holgura cualquier GPU de consumo, por lo que en la práctica se usará una fracción del contexto.
+- VRAM estimada con visión: añadir aproximadamente 196 MB del `mmproj-F16.gguf` a la cifra anterior.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente para texto con contexto moderado; para contexto largo se recomienda A100 o H100 por capacidad de memoria. No se publican cifras de latencia ni throughput.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o equivalentes, e incluso en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp (`llama cli`, `llama serve`, `llama-server`), Ollama (`ollama run hf.co/...:Q4_K_M`), LM Studio, Jan y Docker Model Runner.
+- Requisito de versión: es necesario un llama.cpp u Ollama recientes con soporte de la arquitectura `qwen35`; si la carga falla con error de arquitectura desconocida, hay que actualizar.
+- Visión en Ollama: la model card advierte de que la visión a través del flujo `hf.co` de Ollama requiere un GGUF VL de un solo fichero sin tensores de 5 dimensiones; hasta entonces debe usarse llama.cpp o LM Studio.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece con alternativas publicas de la misma franja de tamano. Los datos de este modelo aparecen como no disponibles porque el autor no los ha publicado; los del resto proceden de sus fichas publicas.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy | no disponible (el nombre indica 0,8B) | no disponible | Apache 2.0 | Hugging Face, sin documentacion |
-| Qwen3-0.6B | 0,6B | 32.768 tokens, extensible | Apache 2.0 | Ampliamente disponible |
-| Llama-3.2-1B | 1,23B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible |
-| Gemma-3-1B | 1B | 32.768 tokens | Gemma Terms of Use | Ampliamente disponible |
-
-No se dispone de datos de rendimiento comparativo para el modelo objeto de esta ficha, por lo que no es posible establecer una jerarquia de calidad frente a estas alternativas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy | 752.393.024 | 262144 (declarado) | Apache 2.0 | GGUF (texto + mmproj) | Destilado multimodal con empaquetado corregido; sin benchmarks publicados |
+| unsloth/Qwen3.5-0.8B (modelo base) | no disponible en la informacion | 262144 | no disponible en la informacion | safetensors | Origen del destilado; referencia de pesos sin cuantizar |
+| unsloth/Qwen3.5-0.8B-GGUF | no disponible en la informacion | 262144 | no disponible en la informacion | GGUF (texto + `mmproj-*.gguf`) | Repositorio de referencia citado por el autor para texto y visión |
+| ggml-org/Qwen3.5-0.8B-GGUF | no disponible en la informacion | 262144 | no disponible en la informacion | GGUF (solo texto, arch `qwen35`) | Repositorio de referencia citado por el autor para texto |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card tecnica, ni descripcion de datos de entrenamiento, ni evaluacion publicada. Esto impide auditar sesgos, comportamientos indeseados o cobertura linguistica.
-- Riesgo de alucinacion: desconocido y no medido. En modelos de este tamano, la tasa de fabricacion de hechos suele ser elevada, pero no hay datos especificos para este checkpoint.
-- Sesgos conocidos: no documentados. Al no conocerse la composicion del dataset de entrenamiento, no se puede estimar el sesgo de genero, raza, religion o ideologico.
-- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas de la ficha esta vacio y no se ha declarado la ventana de contexto.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios realizados. No obstante, la licencia del modelo base subyacente, si existe, podria imponer condiciones adicionales que no se han declarado.
-- Trazabilidad: el repositorio muestra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal, lo que sugiere una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad.
-- Uso en produccion: no recomendado sin una evaluacion previa propia. No hay garantia de que los pesos sean funcionales ni de que el modelo complete tareas basicas de generacion.
-- Verificacion de seguridad: no se ha publicado ningun informe de red teaming, evaluacion de toxicidad ni analisis de robustez frente a prompt injection.
+- No se han publicado benchmarks ni evaluaciones independientes; el rendimiento real del destilado frente al modelo base es desconocido.
+- La model card no documenta el proceso de destilación: se desconoce el profesor, el dataset y si hubo alineación posterior, lo que impide evaluar sesgos inducidos.
+- Con 0,75B de parámetros, la tasa de alucinación en tareas de conocimiento factual y razonamiento complejo será previsiblemente alta; no es adecuado para producción sin verificación.
+- El contexto declarado de 262144 tokens no es utilizable en hardware de consumo por el coste de memoria de la caché KV; debe ajustarse a la VRAM disponible.
+- Idiomas soportados no documentados: no hay garantía de calidad fuera del inglés o el chino del modelo base.
+- El repositorio ha tenido ficheros GGUF rotos en el pasado (arquitectura incorrecta, cuantización mal etiquetada, metadatos falsos sobre compatibilidad). Verificar con `validate_gguf.py` antes de confiar en una descarga.
+- La visión no funciona en el flujo `hf.co` de Ollama según la propia model card; requiere llama.cpp o LM Studio con el `mmproj` adjunto.
+- Requiere versiones recientes de llama.cpp u Ollama con soporte `qwen35`; versiones antiguas fallarán al cargar.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un destilado conviene revisar las condiciones del modelo base y de los datos de entrenamiento originales.
 
 ## Enlaces
 
-- Pagina del modelo en Hugging Face: https://huggingface.co/NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy
-- Perfil del autor en Hugging Face: https://huggingface.co/NasledieLab
-- Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy
+- Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
+- GGUF de referencia del modelo base (texto): https://huggingface.co/ggml-org/Qwen3.5-0.8B-GGUF
+- GGUF de referencia del modelo base (texto + visión): https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF

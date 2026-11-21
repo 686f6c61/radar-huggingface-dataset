@@ -2,109 +2,103 @@
 
 ## Resumen
 
-turn-1 es un modelo de deteccion de fin de turno (end-of-turn detection) para agentes de voz conversacionales, desarrollado por p99lab. Su funcion es estimar la probabilidad P(fin de turno) a partir del audio escuchado hasta el momento, de modo que un agente de voz pueda decidir cuando el usuario ha dejado de hablar y empezar a responder. No es un modelo generativo: no produce texto, solo una probabilidad calibrable en cada pausa.
+turn-1 es un modelo especializado en deteccion de fin de turno (end-of-turn detection) para agentes de voz conversacionales, desarrollado por p99lab. Su funcion no es generar texto ni transcribir audio, sino estimar la probabilidad de que el usuario haya terminado de hablar en un momento dado, leyendo los ultimos 8 segundos de audio y, opcionalmente, la ultima frase del agente. Resuelve un problema concreto de los pipelines de voz: decidir cuando el agente debe tomar la palabra sin cortar al usuario ni introducir silencios incomodos.
 
-Tecnicamente es una composicion de cabezas de clasificacion sobre dos codificadores de voz abiertos de terceros. La prediccion final es la media de dos estimaciones de P(fin de turno) calculadas sobre el mismo audio: una procede de una cabeza lineal (`turn-1-head.safetensors`, 18.9M parametros) sobre un codificador grande, y otra de un adaptador LoRA (`turn-1-lora.safetensors`, 14.8M parametros) mas una cabeza sobre un codificador mas pequeno. Las partes propias de p99lab suman 33.7M parametros, pero la inferencia exige ejecutar los dos codificadores completos.
+Tecnicamente no es un transformer unico entrenado desde cero, sino un ensemble de dos estimadores sobre codificadores de voz abiertos de terceros (uno de 2.0B parametros y otro de 0.8B) a los que p99lab anade cabezas de clasificacion y un adaptador LoRA. La salida es una probabilidad calibrable, sin punto de decision fijo, lo que permite al integrador ajustar el umbral segun su tolerancia a los cortes falsos.
 
-El modelo consume los ultimos 8 segundos de audio a 16 kHz mono (filtrado paso bajo a 4 kHz dentro del paquete) y, opcionalmente, la ultima frase del agente como texto. Es relevante para el stack de agentes de voz porque ataca el problema del "endpointing": los umbrales de silencio de los detectores de actividad de voz (VAD) tradicionales provocan cortes prematuros o respuestas lentas, y turn-1 sustituye esa heuristica por una prediccion semantica sobre el habla. La licencia es Apache-2.0 y esta pensado para servidor, no para dispositivo (para ese caso el autor remite a `turn-1-mini`).
+Es relevante porque ataca una metrica de producto (tasa de cortes falsos frente a latencia de respuesta) con un banco publico, eot-bench de LiveKit, y publica intervalos de confianza y una comparacion honesta con alternativas comerciales como Deepgram Flux o JoinIn AI Baton. Su licencia Apache-2.0 y su tamano de repositorio (0.1 GB, ya que los codificadores se descargan aparte) facilitan la reproducibilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Composicion de dos codificadores de voz abiertos de terceros con cabezas propias: una cabeza lineal sobre un codificador (18.9M parametros) y un adaptador LoRA mas cabeza sobre otro (14.8M parametros); salida final como media de ambas probabilidades |
-| Parametros totales | Codificadores de terceros: 2.0B y 0.8B parametros. Partes propias de p99lab: 33.7M parametros (18.9M + 14.8M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | ultimos 8 segundos de audio a 16 kHz mono (filtrado paso bajo a 4 kHz dentro del paquete) |
-| Tipos de cuantizacion | no disponible (ejecucion declarada en float32) |
-| Idiomas soportados | en (ingles); solo se ha medido en ingles |
+| Arquitectura | Ensemble de dos codificadores de voz abiertos (2.0B y 0.8B) con cabezas de clasificacion y un adaptador LoRA; salida como media de dos estimaciones de P(fin de turno) |
+| Parametros totales | 18.9M (cabeza sobre el codificador grande) + 14.8M (LoRA y cabeza sobre el codificador pequeno); los codificadores base suman 2.8B y no se redistribuyen |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 8 segundos de audio de entrada (16 kHz mono, filtrado paso bajo a 4 kHz) |
+| Tipos de cuantizacion | No disponible; el modelo se ejecuta en float32 |
+| Idiomas soportados | Ingles (unico idioma evaluado) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (`turn-1-head.safetensors`, `turn-1-lora.safetensors`) y rueda Python `p99turn1-1.0.0-py3-none-any.whl`; los codificadores no se redistribuyen, se descargan de sus repositorios originales |
+| Formato de pesos | safetensors (`turn-1-head.safetensors`, `turn-1-lora.safetensors`) y paquete Python `p99turn1-1.0.0-py3-none-any.whl` |
 
 ## Arquitectura y entrenamiento
 
-turn-1 no es un transformer entrenado desde cero ni un modelo end-to-end. Es un ensamblado de dos ramas que comparten audio de entrada. La primera rama usa un codificador de voz abierto de 2.0B parametros (propiedad de terceros, Apache-2.0, descargado en una revision fijada y no redistribuido aqui, segun el `NOTICE`) congelado, sobre cuyas caracteristicas se anade `turn-1-head.safetensors`, una cabeza de 18.9M parametros y 76 MB. La segunda rama usa un segundo codificador de voz abierto mas pequeno, de 0.8B parametros, tambien congelado, al que se le anade en tiempo de ejecucion `turn-1-lora.safetensors`, un adaptador de bajo rango de 14.8M parametros y 59 MB, mas una cabeza propia. La salida es la media de las dos estimaciones de P(fin de turno).
+turn-1 combina dos rutas sobre el mismo audio. La primera usa un codificador de voz abierto de 4.7 GB (2.0B parametros) sin modificar, sobre cuyas caracteristicas se entrena una cabeza de 18.9M parametros (`turn-1-head.safetensors`, 76 MB). La segunda usa un codificador mas pequeno de 1.9 GB (0.8B parametros) con pesos base congelados, al que se anade en tiempo de ejecucion un adaptador de bajo rango y una cabeza propia (`turn-1-lora.safetensors`, 14.8M parametros, 59 MB). La prediccion final es la media de las dos probabilidades. Los codificadores se descargan de sus repositorios originales en revisiones fijadas y no se redistribuyen en este repositorio.
 
-El modelo solo consume los ultimos 8 segundos de audio escuchados y, opcionalmente, la ultima frase del agente como texto; nunca usa como texto las palabras del turno actual del usuario, porque las "oye" en el audio. No hay punto de decision fijo: se puede consultar la probabilidad en cualquier momento durante una pausa. Cada uno de los dos modelos se ejecuta una vez por decision y no hay generacion de texto ni procesamiento incremental. No se especifican en la informacion disponible ni el numero de tokens de audio usados en entrenamiento, ni la composicion del dataset, ni si hubo RLHF, DPO u otra etapa de alineamiento. Si se indica que el audio y las etiquetas de eot-bench nunca se usaron para entrenar, seleccionar ni fijar el umbral del modelo, y que se puntuaron dos candidatos de turn-1 sobre el test set, conservandose el segundo bajo una regla fijada antes de puntuarlo.
+La entrada es la ventana de los ultimos 8 segundos de audio recibido, filtrado paso bajo a 4 kHz internamente, junto con la ultima intervencion del agente en texto de forma opcional. El modelo nunca recibe como texto las palabras del turno actual del usuario: las escucha. No genera texto ni es incremental; cada decision implica una pasada completa por ambos codificadores. La model card no detalla el volumen ni la composicion del dataset de entrenamiento, ni si hubo ajuste por RLHF o DPO; indica unicamente que el audio y las etiquetas de eot-bench nunca se usaron para entrenar, seleccionar ni calibrar el modelo.
 
 ## Capacidades
 
-- Deteccion de fin de turno: estima P(fin de turno) sobre los ultimos 8 segundos de audio a 16 kHz mono, con salida continua y sin punto de decision fijo.
-- Decodificacion bajo demanda: permite consultar la probabilidad en cualquier pausa (`stream.score()`) conforme llega el audio con `stream.push(chunk)`.
-- Acondicionamiento por texto del agente: acepta opcionalmente la ultima frase del agente como texto (`agent_text`) para contextualizar la prediccion.
-- Filtrado paso bajo interno a 4 kHz sobre el audio de entrada.
-- Ejecucion determinista en float32 sin generacion de texto.
-- No dispone de tool calling ni function calling.
-- No dispone de razonamiento multi-paso ni comportamiento de agente: es un unico clasificador.
-- No dispone de capacidades de vision, generacion, resumen ni traduccion.
-- Multilingue: no disponible; solo se ha medido en ingles.
+- Deteccion de fin de turno: devuelve P(fin de turno) en cualquier pausa, sin punto de decision fijo.
+- Modo streaming: la API `model.stream()` permite empujar fragmentos de audio y consultar la probabilidad cuando se necesite.
+- Condicionamiento por contexto del agente: acepta la ultima frase del agente (`agent_text`) para desambiguar pausas.
+- Calibracion por umbral: el integrador fija el umbral segun su tolerancia a cortes falsos.
+- No realiza transcripcion, generacion de texto, razonamiento, codigo, matematicas ni vision.
+- No soporta tool calling ni function calling.
+- No esta orientado a razonamiento multi-paso ni a agentes autonemos; su rol es el control de turno en un pipeline de voz.
+- Multilingue: no; solo ingles evaluado.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada por voz: el modelo sustituye los umbrales de silencio de un VAD por una prediccion semantica de fin de turno, reduciendo los cortes prematuros cuando el usuario hace una pausa a mitad de frase (por ejemplo, al dictar un numero de cuenta con pausas).
-- Agentes de voz con barge-in: al consultar la probabilidad en cada pausa, el agente puede responder en cuanto el usuario termina sin esperar un silencio fijo, lo que baja la latencia percibida en conversaciones multi-turno.
-- Endpointing en pipelines de ASR en tiempo real: se integra antes del reconocedor para decidir cuando cerrar el turno y disparar la transcripcion o la respuesta del modelo de lenguaje.
-- Grabacion y analitica de contact center: al aportar una probabilidad continua, se puede segmentar audio de llamadas en turnos y medir tiempos de habla y de silencio con criterio semantico.
-- Evaluacion y comparacion de stacks de voz: sirve como referencia en benchmarks de turn-taking (eot-bench) para medir cortes falsos y latencia de un agente antes de desplegarlo.
-- Asistentes telefonicos/IVR: en entornos SIP o de telefonia, ayuda a decidir cuando el usuario ha acabado de introducir un dato para pasar al siguiente paso de un flujo.
-- Moderacion o monitorizacion de voz: la probabilidad por turno permite detectar patrones de interrupcion y solapamiento en conversaciones, util en supervision de calidad.
+- Endpointing en agentes de voz telefonicos: el modelo se consulta durante las pausas del usuario para decidir si el agente debe responder o esperar, reduciendo cortes en numeros de cuenta, direcciones o frases largas.
+- Sustitucion de temporizadores fijos en IVR: en lugar de esperar 500 o 800 ms ciegamente, el orquestador usa P(fin de turno) y ajusta el umbral para equilibrar latencia y cortes falsos.
+- Agentes de atencion al cliente con contexto de pregunta: al pasar `agent_text` con la pregunta previa, el modelo distingue pausas de duda de pausas finales en respuestas como numeros de telefono o correos.
+- Barge-in controlado en asistentes de escritorio: el pipeline puede decidir si el silencio del usuario es una pausa de reflexion o el final del turno antes de activar la sintesis de respuesta.
+- Evaluacion y benchmarking interno de pipelines de voz: al devolver una probabilidad calibrable, permite trazar curvas de cortes falsos frente a latencia y comparar configuraciones propias con eot-bench.
+- Moderacion de turnos en grabaciones o post-proceso: el modelo puede puntuar pausas en audio almacenado para segmentar conversaciones y medir tiempos de respuesta del agente.
+- Investigacion en turn-taking: sirve como referencia reproducible (Apache-2.0, pesos publicos) para estudiar el compromiso entre latencia y falsos cortes en ingles.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor del modelo (no verificados) sobre `livekit/eot-bench-data`, config `en`, split `validation`, revision `ca9d98a`: 400 turnos y 705 pausas intermedias puntuadas, en float32 y tamano de lote 64. Valores mas bajos son mejores.
+Resultados declarados por el autor sobre `livekit/eot-bench-data`, config `en`, split `validation`, revision `ca9d98a`, harness `9ee21b5`: 400 turnos y 705 pausas intra-turno puntuadas, float32, batch 64. Menor es mejor.
 
-| Modelo | Cortes falsos @ 300 ms | Cortes falsos @ 600 ms | Latencia @ 5% cortes | Latencia @ 10% cortes | AUC (diagnostico) |
+| Modelo | Cortes falsos @ 300 ms | Cortes falsos @ 600 ms | Latencia @ 5% cortes falsos | Latencia @ 10% cortes falsos | AUC (diagnostico) |
 |---|---:|---:|---:|---:|---:|
-| turn-1 | 10.6% (75 de 705) | 4.5% | 553 ms | 322 ms | 0.976 |
-| LiveKit Turn Detector v1 | 9.9% (70 de 705) | 4.5% | 543 ms | 295 ms | 0.969 |
-| JoinIn AI Baton | 12.3% (87 de 705) | 4.8% | 577 ms | 350 ms | 0.958 |
+| turn-1 | 10.6% (75/705) | 4.5% | 553 ms | 322 ms | 0.976 |
+| LiveKit Turn Detector v1 | 9.9% (70/705) | 4.5% | 543 ms | 295 ms | 0.969 |
+| JoinIn AI Baton | 12.3% (87/705) | 4.8% | 577 ms | 350 ms | 0.958 |
 | Deepgram Flux | 12.9% | 9.9% | 1.151 ms | 548 ms | no disponible |
 
-Intervalo de confianza al 95% de turn-1 (bootstrap a nivel de turno, 400 remuestreos): cortes falsos @ 300 ms de 7,7% a 13,8%; @ 600 ms de 2,7% a 6,0%; latencia @ 5% de 399 a 691 ms; latencia @ 10% de 250 a 387 ms.
-
-El propio autor precisa que, frente a las 13 filas del board en ese commit, turn-1 quedaria segundo en cortes falsos a 300 ms, en latencia al 5% y en latencia al 10%, y empatado en primera posicion en cortes falsos a 600 ms (32 de 705, mismo recuento que LiveKit Turn Detector v1). Queda por detras de LiveKit Turn Detector v1 a 300 ms, al 5% y al 10%. No se hizo ninguna prueba pareada contra otras entradas y los intervalos de un solo modelo se solapan. La latencia reportada es silencio muerto elegido por el barrido de politica del benchmark (umbral, retardo de accion y timeout se eligen sobre los mismos 400 turnos que se puntuan), no tiempo de computo.
+Intervalos del 95% para turn-1 (bootstrap a nivel de turno, 400 remuestreos): cortes falsos @ 300 ms de 7.7 a 13.8%; @ 600 ms de 2.7 a 6.0%; latencia @ 5% de 399 a 691 ms; @ 10% de 250 a 387 ms. Segun el autor, turn-1 quedaria segundo en cortes falsos @ 300 ms, latencia @ 5% y latencia @ 10%, y empatado primero en cortes falsos @ 600 ms (32/705, mismo conteo que LiveKit Turn Detector v1). Queda por detras de LiveKit Turn Detector v1 en 300 ms, 5% y 10%, y por delante de JoinIn AI Baton en las cuatro estimaciones puntuales. No se realizo test pareado contra otras entradas y los intervalos de un solo modelo se solapan. Se puntuaron dos candidatos de turn-1 sobre el mismo conjunto; el primero obtuvo 12.9% / 4.8% / 593 ms / 363 ms y se conservo el actual bajo una regla fijada antes de puntuar. La latencia reportada es silencio elegido por el barrido de politicas del benchmark, no tiempo de computo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el autor indica que lo ejecuto en una GPU CUDA con 20 GB. Los codificadores de terceros suman 4,7 GB + 1,9 GB de descarga y la ejecucion declarada es en float32; no se publica un desglose exacto de VRAM por componente.
-- GPU recomendadas: GPU CUDA de clase servidor con al menos 20 GB, como A100 o H100. No se confirma su ejecucion en GPU de consumo.
-- GPU de consumo: no confirmado. Una RTX 4090 (24 GB) esta por encima del umbral de 20 GB citado, pero el autor no lo ha validado ni ha medido latencia o throughput en esa configuracion.
-- Opciones de despliegue: el paquete oficial `p99turn1` (rueda `p99turn1-1.0.0-py3-none-any.whl`) junto con la dependencia `qwen-asr==0.0.6`, que aporta el codigo de los codificadores de voz. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: el tiempo por decision no se ha medido en esta configuracion, segun el autor. El modelo tampoco es incremental: cada uno de los dos codificadores se ejecuta completo una vez por decision.
-- La descarga inicial requiere los pesos de ambos codificadores (4,7 GB + 1,9 GB) mas las partes propias, y descarga los codificadores desde sus repositorios originales en una revision fijada.
+- VRAM estimada: el autor indica una GPU CUDA con 20 GB como configuracion de ejecucion.
+- Codificadores: se descargan dos modelos de 4.7 GB y 1.9 GB, lo que condiciona el espacio en disco y la VRAM en float32.
+- GPU recomendadas: A100, H100 o GPU de consumo con 24 GB o mas (por ejemplo RTX 3090 o RTX 4090) para cubrir los 20 GB indicados.
+- No cabe en GPU de consumo con menos de 20 GB de VRAM en la configuracion reportada.
+- Despliegue: paquete Python `p99turn1` (wheel 1.0.0) con dependencia `qwen-asr==0.0.6` para el codigo de los codificadores; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: el tiempo por decision no ha sido medido en esta configuracion segun la model card; la latencia de benchmark (553 ms @ 5%, 322 ms @ 10%) corresponde a silencio elegido por el barrido, no a computo.
+- El modelo no es incremental: cada decision ejecuta ambos codificadores una vez.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Cortes falsos @ 300 ms | Latencia @ 10% | Licencia | Disponibilidad |
-|---|---|---|---|---:|---|
-| turn-1 | End-of-turn detection sobre codificadores congelados | 10.6% | 322 ms | Apache-2.0 | Hugging Face (p99lab/turn-1) |
-| LiveKit Turn Detector v1 | Detector de turno de LiveKit | 9.9% | 295 ms | no disponible | integrado en LiveKit |
-| JoinIn AI Baton | Detector de turno de JoinIn AI | 12.3% | 350 ms | no disponible | producto de JoinIn AI |
-| Deepgram Flux | Modelo de voz de Deepgram | 12.9% | 548 ms | no disponible | API de Deepgram |
-
-LiveKit Turn Detector v1 supera a turn-1 en tres de las cuatro metricas principales (300 ms, latencia al 5% y latencia al 10%) y empata en la cuarta (600 ms). turn-1 supera a JoinIn AI Baton en las cuatro estimaciones puntuales. No se realizo ninguna prueba pareada contra otras entradas y, segun el autor, los intervalos de un solo modelo se solapan, por lo que las diferencias no deben interpretarse como concluyentes. No se dispone de datos de parametros ni de contexto de los modelos alternativos en la informacion proporcionada.
+| Modelo | Parametros | Contexto de audio | Cortes falsos @ 300 ms | Latencia @ 5% | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| turn-1 | 2.8B en codificadores + 33.7M en cabezas/LoRA | 8 s | 10.6% | 553 ms | Apache-2.0 | Pesos y paquete publicos en Hugging Face |
+| LiveKit Turn Detector v1 | no disponible | no disponible | 9.9% | 543 ms | no disponible | Referencia en eot-bench |
+| JoinIn AI Baton | no disponible | no disponible | 12.3% | 577 ms | no disponible | Referencia en eot-bench |
+| Deepgram Flux | no disponible | no disponible | 12.9% | 1.151 ms | no disponible | Servicio comercial |
+| turn-1-mini | 5.3M | no disponible | no disponible | no disponible | no disponible | Version para dispositivo, en Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Solo se ha medido en ingles. No se ejecuto ningun otro idioma ni se reclama ningun numero multilingue.
-- Modelo pesado: para cada decision se ejecutan dos modelos de voz (2,0B y 0,8B parametros); el autor lo describe explicitamente como un modelo de servidor con GPU.
-- El tiempo por decision no se ha medido en esta configuracion, por lo que no hay cifras fiables de latencia de computo.
-- La latencia reportada en el benchmark es silencio muerto elegido por el barrido de politica, no tiempo de computo: umbral, retardo de accion y timeout se seleccionan sobre los mismos 400 turnos que luego se puntuan.
-- Entrada limitada en banda: todo el audio se filtra paso bajo a 4 kHz dentro del paquete, lo que descarta informacion de alta frecuencia.
-- Se puntuaron dos candidatos sobre el test set y se conservo el segundo bajo una regla fijada antes de puntuarlo; emparejados en los mismos turnos, la diferencia entre ambos incluye cero en las cuatro medidas.
-- No se realizaron pruebas pareadas contra otras entradas del board y los intervalos se solapan: las comparaciones puntuales deben tomarse con cautela.
-- Riesgo de alucinacion: no aplica en el sentido generativo porque el modelo no genera texto, pero si existe riesgo de falsos positivos y falsos negativos en la deteccion de fin de turno (10,6% de cortes falsos a 300 ms en el benchmark).
-- No se especifican sesgos conocidos, ni composicion del dataset de entrenamiento, ni etapas de alineamiento; la informacion sobre entrenamiento es muy limitada.
-- Licencia Apache-2.0 para las partes propias. Los codificadores de terceros no se redistribuyen y se descargan de sus repositorios originales bajo sus propias licencias (Apache-2.0 segun la model card); conviene revisar el `NOTICE` antes de uso comercial.
-- El umbral de decision debe calibrarse sobre el audio propio; no hay punto de decision fijo y los resultados del benchmark dependen del barrido de politica.
-- El modelo descarga dependencias externas en revisiones fijadas, lo que puede afectar a la reproducibilidad si esas revisiones dejan de estar accesibles.
+- Solo se ha medido en ingles; no se reclama ningun resultado multilingue.
+- Modelo pesado: ejecuta dos codificadores (2.0B y 0.8B) por cada decision y requiere una GPU de 20 GB; es un modelo de servidor, no de dispositivo.
+- Entrada limitada a 8 segundos de audio y filtrada a 4 kHz, lo que descarta informacion por encima de esa banda.
+- No es incremental: cada consulta implica una pasada completa por ambos codificadores, con coste computacional no medido publicamente.
+- Los resultados de benchmark son estimaciones puntuales del autor, con intervalos amplios y solapamiento con LiveKit Turn Detector v1; no hay test pareado contra otras entradas.
+- Se puntuaron dos candidatos sobre el mismo conjunto de test, lo que introduce riesgo de seleccion; el autor lo documenta.
+- La latencia reportada es silencio de politica, no latencia de computo; el rendimiento real dependera del hardware y del umbral elegido.
+- Riesgo de alucinacion no aplica en el sentido generativo (no produce texto), pero la probabilidad puede estar mal calibrada en dominios de audio distintos al de evaluacion; el autor recomienda calibrar el umbral sobre audio propio.
+- Licencia Apache-2.0 permite uso comercial; los codificadores de terceros se descargan de sus repositorios con sus propias licencias y deben revisarse en el fichero `NOTICE`.
+- No soporta tool calling, agentes multi-paso ni generacion de texto; su uso esta acotado al control de turno.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/p99lab/turn-1
-- Modelo para dispositivo (variante mini, 5,3M parametros): https://huggingface.co/p99lab/turn-1-mini
-- Dataset de evaluacion: https://huggingface.co/datasets/livekit/eot-bench-data (referenciado como `livekit/eot-bench-data`, revision `ca9d98a`, harness commit `9ee21b5`)
-- Dependencia de codigo de los codificadores: `qwen-asr==0.0.6` (PyPI)
-- Paquete de inferencia: `p99turn1-1.0.0-py3-none-any.whl` (incluido en el repositorio, ruta `dist/`)
-- Web del autor: https://p99lab.com
+- Version para dispositivo turn-1-mini: https://huggingface.co/p99lab/turn-1-mini
+- Sitio del autor: https://p99lab.com
 - Contacto del autor: research@p99lab.com
+- Dataset de evaluacion eot-bench: https://huggingface.co/datasets/livekit/eot-bench-data
+- Paquete Python: https://huggingface.co/p99lab/turn-1/resolve/main/dist/p99turn1-1.0.0-py3-none-any.whl

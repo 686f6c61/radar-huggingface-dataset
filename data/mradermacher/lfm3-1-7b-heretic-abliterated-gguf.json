@@ -65,16 +65,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LFM3-1.7B-Heretic-Abliterated-i1-GGUF - Hugging Face",
-      "url": "https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated-i1-GGUF",
-      "snippet": "LFM3-1.7B is a text model for local agents and specialized applications from Liquid AI, built on their new tri-hybrid architecture. It targets everyday assistant use, tool calling, structured outputs, long-context work, and edge deployment, with a 256K-token context window."
-    },
-    {
-      "title": "LFM3-1.7B-Heretic-Abliterated — Abliterated Model Card",
-      "url": "https://www.abliteratedmodels.org/lfm3-1.7b-heretic-abliterated/",
-      "snippet": "LFM3-1.7B-Heretic-Abliterated is a Heretic-ablated variant of LiquidAI/LFM3-1.7B, published on Hugging Face by Vortecks. It is 1.7B parameters, runs on a laptop CPU class and other licence. It is distributed across 4 repositories in GGUF, Transformers and GGUF (imatrix) formats, totalling 9.5K downloads. Heretic1.7B Other Under 4B ↓ 9,495♥ 6 View on Hugging Face ↗ Base model ↗"
-    }
-  ]
+  "sources": []
 }

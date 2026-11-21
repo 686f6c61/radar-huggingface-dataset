@@ -2,97 +2,91 @@
 
 ## Resumen
 
-Qwen3-0.6B es un modelo de lenguaje de 0,6 mil millones de parametros desarrollado originalmente por Alibaba Qwen. Esta ficha concreta, publicada por Mobilint bajo el identificador `mobilint/Qwen3-0.6B`, no es el modelo original en precision completa, sino una compilacion optimizada y cuantizada del mismo para su despliegue sobre aceleradores NPU de Mobilint, en concreto el objetivo `aries-rb` (familia Aries). El paquete incluye pesos en formato MXQ y se ejecuta a traves del stack propietario de Mobilint (`transformers-mblt` y `qbruntime`), no como un checkpoint de transformers convencional.
+mobilint/Qwen3-0.6B es una compilación y cuantización del modelo Qwen/Qwen3-0.6B de Alibaba, empaquetada por Mobilint para su despliegue sobre aceleradores NPU de la familia Aries (`aries-rb`). No se trata de un modelo nuevo entrenado desde cero, sino de un artefacto de despliegue: los pesos originales en bf16 se han sometido a cuantización post-entrenamiento (PTQ) y se han compilado con `qbcompiler 1.4.1` para ejecutarse sobre la pila de aceleración propietaria de Mobilint.
 
-El interes de esta build radica en que corrige un fallo grave de la version anterior: aquella se colgaba en la mayoria de prompts de mas de unos 3.000 tokens. La build actual, compilada con qbcompiler 1.4.1 el 11 de noviembre de 2026, procesa prompts de hasta 12.500 tokens con una divergencia (KL) frente al modelo original de 0,05 hasta unos 8K tokens y 0,21 a unos 12K, manteniendo una precision MMLU de 0,310 frente a 0,309 del modelo bf16 original.
+El interés de esta ficha es doble. Por un lado, documenta una ruta poco habitual en el ecosistema open source: la distribución de un modelo a través de Hugging Face con `trust_remote_code=True` y una librería propia (`transformers-mblt`) que abstrae el runtime del NPU. Por otro, ofrece una referencia concreta de las cifras que se obtienen al cuantizar un transformer de 0,6 mil millones de parámetros a 8 bits para inferencia en hardware dedicado: pesos de 0,72 GB en formato MXQ frente a los aproximadamente 1,2 GB del original en bf16.
 
-Se trata, por tanto, de un artefacto de despliegue orientado a inferencia en hardware NPU, con ventana de contexto de 16.384 tokens (prompt mas generacion), cuantizacion de 8 bits en pesos y activaciones mixtas, y una licencia Apache 2.0 heredada del modelo base. No aporta mejoras de capacidad respecto a Qwen3-0.6B; su valor esta en la portabilidad y el rendimiento medido sobre Aries.
+El paquete incluye tres modos de ejecución del núcleo (`single`, `global4`, `global8`, siendo `global8` el predeterminado) y una ventana de contexto de 16.384 tokens que cubre prompt y generación. La versión actual corrige el problema de la compilación anterior, que dejaba de responder en prompts de más de unos 3.000 tokens. La licencia es Apache 2.0, heredada del modelo base.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen3-0.6B); compilada para NPU Mobilint Aries |
-| Parametros totales | 155.582.464 (segun safetensors del repo) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (Qwen3), compilado para NPU Aries (`aries-rb`) |
+| Parámetros totales | 155.582.464 (según safetensors del repo) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 16.384 tokens (prompt + generado) |
-| Tipos de cuantizacion | W8 (8 bits en pesos; 8 bits en activaciones a la entrada de atencion y cabeza de salida, 16 bits en el resto). Referencia adicional W4V8 (4 bits pesos / 8 bits activaciones) |
-| Idiomas soportados | no disponible (calibrado con datos multilingues publicos, sin lista explicita) |
+| Tipos de cuantización | PTQ: 8 bits en pesos; 8 bits en activaciones a la entrada de atención y de la cabeza de salida, 16 bits en el resto; rama alternativa `W4V8` (0,35 GB) |
+| Idiomas soportados | no disponibles en la model card; la calibración cubre inglés, coreano, japonés y 14 idiomas de chat vía Aya |
 | Licencia | Apache 2.0 |
-| Formato de pesos | MXQ (`Qwen3-0.6B-W8.mxq`, 0,72 GB); repo de 6,8 GB con safetensors y codigo custom |
+| Formato de pesos | safetensors + MXQ (`Qwen3-0.6B-W8.mxq`, 0,72 GB); requiere `trust_remote_code=True` |
+| Modos de núcleo | `single`, `global4`, `global8` (por defecto `global8`) |
+| Compilador | qbcompiler 1.4.1 |
+| Runtime | `transformers-mblt` (qbruntime) |
+| Hardware objetivo | NPU Mobilint Aries (`aries-rb`) |
+| Tamaño del repo | 6,8 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3-0.6B: un transformer decoder-only denso de 0,6B parametros. Esta build no reentrena el modelo; aplica cuantizacion post-entrenamiento (PTQ) calibrada sobre datos multilingues publicos que incluyen prompts de recuperacion largos (2K-8K tokens), y compila el grafo para el NPU Aries con qbcompiler 1.4.1. Los pesos se empaquetan en formato MXQ (0,72 GB para W8) y las activaciones usan 8 bits en las entradas de atencion y de la cabeza de salida, y 16 bits en el resto.
+La arquitectura subyacente es la del Qwen3-0.6B original: un transformer decoder-only denso de aproximadamente 0,6 mil millones de parámetros, con atención causal estándar y sin mezcla de expertos. Mobilint no ha reentrenado el modelo ni ha aplicado ajuste fino adicional; el trabajo consiste en cuantización post-entrenamiento seguida de compilación estática para el NPU. La calibración se realizó sobre datos públicos multilingües: SQuAD (inglés), KLUE MRC (coreano) y JSQuAD (japonés) para pregunta-respuesta sobre pasajes recuperados; FineWeb y FineWeb-2 para pasajes web y contextos largos de 2K a 8K tokens; el dataset Aya para chat humano en 14 idiomas; MMMLU y MMLU para preguntas de opción múltiple; y GSM8K para problemas matemáticos. Las respuestas de las muestras de QA se generaron con el modelo original en bf16.
 
-La compilacion incluye tres modos de nucleo (`single`, `global4`, `global8`), seleccionables en carga mediante `core_mode`, con `global8` por defecto. Los tamanos de chunk de prefill estan fijados en `config.json` (1.024 / 512 / 256 tokens). La innovacion principal respecto a la build anterior es la calibracion con prompts largos, que elimina el fallo de bloqueo del runtime en prompts de mas de ~3.000 tokens y reduce la divergencia KL a contexto corto (de 0,077 a 0,050 en RAG a ~1K tokens).
+La innovación técnica relevante no está en el modelo sino en el pipeline de despliegue. Los tres modos de núcleo se compilan simultáneamente y se seleccionan en tiempo de carga mediante el parámetro `core_mode`, lo que permite intercambiar configuraciones de ejecución sin recompilar. La compilación actual resuelve el fallo de la versión previa en prompts largos y mantiene la calidad en recuperación y en MMLU multilingüe más cerca del original. El timeout por defecto del runtime (10 s por llamada) es suficiente hasta 16.384 tokens, por lo que no es necesario ajustar `QBRUNTIME_NPU_TIMEOUT_MS` en ese rango.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, con plantilla `apply_chat_template` y soporte de `enable_thinking=False`/`True` heredado de Qwen3.
-- Razonamiento y respuesta a preguntas de conocimiento general (MMLU evaluado).
-- Recuperacion aumentada (RAG) sobre contextos largos: medido con KL estable hasta ~8K tokens y degradacion controlada a ~12K.
-- Procesamiento de prompts largos de hasta 12.500 tokens en las pruebas publicadas, dentro de la ventana de 16.384.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible la lista concreta; la calibracion uso datos multilingues publicos.
-- Capacidades de vision o audio: no disponibles (modelo solo de texto).
+- Generación de texto conversacional multi-turno mediante `apply_chat_template`, con soporte del flag `enable_thinking` (modo de razonamiento desactivable).
+- Pregunta-respuesta sobre pasajes largos (hasta 16.384 tokens), validada en inglés, coreano y japonés.
+- Razonamiento de opción múltiple evaluado sobre MMLU y MMMLU multilingüe durante la calibración.
+- Resolución de problemas matemáticos de enunciado (GSM8K como dato de calibración).
+- Capacidad multilingüe derivada del modelo base y reforzada en la calibración con 14 idiomas de chat.
+- Ejecución sobre NPU Aries con modos de núcleo seleccionables en carga.
+- No se documenta soporte explícito de tool calling, function calling ni comportamiento agéntico multi-paso en la model card.
 
 ## Casos de uso
 
-- RAG sobre documentacion corporativa: el modelo procesa prompts de recuperacion de 2K-8K tokens con KL de 0,05 frente al original, lo que lo hace adecuado para responder preguntas con varios fragmentos recuperados en un solo contexto.
-- Despliegue en edge o en dispositivos con NPU Aries: al estar compilado para el acelerador de Mobilint con un MXQ de 0,72 GB, permite inferencia local sin GPU dedicada.
-- Asistentes conversacionales de bajo coste: 32,4 tok/s de decodificacion a 1K tokens y 0,47 s hasta el primer token sobre Aries, suficiente para chat interactivo.
-- Clasificacion y extraccion de informacion sobre textos largos: la ventana de 16.384 tokens y el prefill completo de 16K en ~34 s (global8) permiten procesar documentos extensos en una sola llamada.
-- Prototipado y evaluacion de pipelines: la licencia Apache 2.0 y la disponibilidad del modelo base facilitan integrarlo en pruebas sin restricciones comerciales.
-- Generacion de resumenes y respuestas extractivas en entornos con requisitos de privacidad: al ejecutarse en hardware local, los datos no salen del dispositivo.
-- Evaluacion comparativa de cuantizacion: la publicacion de metricas W8 frente a W4V8 permite decidir el equilibrio precision/velocidad/tamano para un despliegue concreto.
+- Pregunta-respuesta sobre documentación corporativa: el modelo está calibrado específicamente con pasajes recuperados de SQuAD, KLUE y JSQuAD, lo que lo hace adecuado para pipelines RAG donde se insertan fragmentos de hasta varios miles de tokens y se espera una respuesta extractiva o breve.
+- Asistente conversacional en dispositivo con NPU: al ejecutarse sobre Aries con pesos de 0,72 GB y un runtime de 10 s por llamada, encaja en escenarios de borde donde no hay GPU disponible y se prioriza el consumo energético.
+- Procesamiento de contextos largos (2K–8K tokens): la calibración incluye explícitamente contextos largos de FineWeb, y la compilación actual soporta de forma fiable prompts de hasta 16.384 tokens, lo que habilita resumen y extracción sobre documentos extensos.
+- Atención al cliente multilingüe: la calibración con Aya en 14 idiomas y la validación en coreano, japonés e inglés permiten desplegar un chat de soporte en esos mercados sin ajuste adicional.
+- Evaluación comparativa de cuantización: sirve como referencia para medir la degradación de un transformer de 0,6B al pasar de bf16 a 8 bits con activaciones mixtas 8/16 bits, comparando contra el modelo original.
+- Prototipado de aplicaciones sobre hardware Mobilint: el paquete incluye el `.mxq` precompilado y la integración con `transformers`, lo que reduce el trabajo de portar un modelo a la pila de aceleración para equipos que ya usan Aries.
+- Filtrado y clasificación de texto ligera: con 155 millones de parámetros efectivos y modo `enable_thinking=False`, es viable para tareas de etiquetado o moderación con latencia baja en el NPU.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos en Aries (2026-11-11 y 2026-11-17, qbruntime 1.5.0, core mode global8):
-
-| Build | Contexto | RAG KL ~1K | ~4K | ~8K | ~12K | MMLU acc. | MMLU KL | TTFT 1K / 4K (s) | Decode 1K / 4K (tok/s) | MXQ |
-|---|---|---|---|---|---|---|---|---|---|---|
-| W8 anterior (2026-04-14) | 16.384 | 0,077 | 0,091 (22/90) | 0,759 (28/90) | 2,931 (7/30) | 0,309 | 0,086 | 0,46 / falla | 32,7 / falla | 0,63 GB |
-| W8 esta build (2026-11-11) | 16.384 | 0,050 | 0,049 | 0,051 | 0,211 | 0,310 | 0,076 | 0,47 / 2,74 | 32,4 / 22,7 | 0,72 GB |
-| W4V8 anterior (referencia) | 16.384 | 0,485 | 0,511 (22/90) | 1,525 (28/90) | 4,870 (7/30) | 0,282 | 1,121 | 0,44 / falla | 40,8 / falla | 0,35 GB |
-| W4V8 esta build (referencia) | 16.384 | 0,160 | 0,193 | 0,212 | 0,306 | 0,292 | 0,247 | 0,45 / 2,73 | 39,9 / 26,3 | 0,35 GB |
-| Qwen3-0.6B bf16 (GPU) | — | 0 | 0 | 0 | 0 | 0,309 | 0 | — | — | — |
-
-Notas: KL menor es mejor (mas cercano al original). "(n/90)" indica prompts que la build anterior logro completar; el resto fallaba. La tasa de decodificacion varia ±10 % entre ejecuciones. No se han publicado resultados de benchmarks estandar (MMLU completo, HumanEval, GSM8K) mas alla de la precision MMLU indicada.
+No se han publicado resultados de benchmarks numéricos en la información disponible. La model card indica cualitativamente que la compilación actual está "más cerca del modelo original" que la anterior en todas las longitudes de prompt probadas, tanto en recuperación como en MMLU multilingüe, y que la rama `W4V8` presenta una diferencia mayor respecto al original, pero no se aportan cifras.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: NPU Mobilint Aries (`aries-rb`), no GPU convencional.
-- VRAM estimada: no aplica; el modelo se ejecuta sobre la NPU. Tamano del artefacto W8: 0,72 GB (MXQ); W4V8: 0,35 GB.
-- GPU recomendadas: no disponible; esta build no esta pensada para GPU. El modelo base Qwen3-0.6B puede ejecutarse en GPU consumer de gama baja.
-- Cabe en GPU consumer: no aplica a esta build; el modelo base de 0,6B si cabe en cualquier GPU con 2-4 GB de VRAM en cuantizacion.
-- Opciones de despliegue: `transformers-mblt` (pip) con `AutoModelForCausalLM.from_pretrained(..., trust_remote_code=True)` y `qbruntime` 1.5.x; requiere `model.dispose()` al finalizar.
-- Latencia y throughput medidos: TTFT 0,47 s a 1K tokens y 2,74 s a 4K; decodificacion 32,4 tok/s a 1K y 22,7 tok/s a 4K. Prefill completo de 16K: ~34 s (global8), ~66 s (global4), ~82 s (single).
-- Limite de timeout: el runtime aborta llamadas NPU de mas de 10 s (`QBRUNTIME_NPU_TIMEOUT_MS`); con los chunks por defecto la llamada mas lenta a 16K es de 3,9 s (global8), por lo que no es necesario ajustarlo.
+- Hardware objetivo: NPU Mobilint Aries (`aries-rb`). No está pensado para ejecutarse en GPU de propósito general.
+- VRAM estimada: no aplica; el modelo se ejecuta sobre el NPU. El artefacto MXQ ocupa 0,72 GB (rama `W8`) o 0,35 GB (rama `W4V8`).
+- GPU recomendadas: no disponibles; el paquete requiere el runtime `transformers-mblt` y el NPU Aries.
+- Compatibilidad con GPU de consumo: no disponible; no se documenta ejecución en RTX 4090, A100, H100 ni similares.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` y la librería `transformers-mblt`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El único dato temporal es el timeout por defecto del runtime, 10 s por llamada, suficiente para prompts de hasta 16.384 tokens.
+- Gestión de memoria: la API expone `model.dispose()` para liberar recursos del NPU tras la inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Plataforma |
+| Modelo | Parámetros | Contexto | Licencia | Hardware | Formato |
 |---|---|---|---|---|---|
-| mobilint/Qwen3-0.6B (esta build) | 0,6B | 16.384 | W8 / W4V8 (MXQ) | Apache 2.0 | NPU Aries |
-| Qwen/Qwen3-0.6B | 0,6B | no disponible en la informacion | bf16 y otras | Apache 2.0 | GPU/CPU |
-| mobilint W4V8 (misma familia) | 0,6B | 16.384 | W4V8 (MXQ) | Apache 2.0 | NPU Aries |
+| mobilint/Qwen3-0.6B | 155,6 M (según safetensors) | 16.384 | Apache 2.0 | NPU Aries | safetensors + MXQ |
+| Qwen/Qwen3-0.6B | 0,6 B (nominal) | no disponible en esta ficha | Apache 2.0 | GPU/CPU | safetensors |
+| Rama `W4V8` de este repo | 155,6 M | 16.384 | Apache 2.0 | NPU Aries | MXQ (0,35 GB) |
 
-Frente al modelo base, esta build pierde precision (KL 0,05-0,21 segun contexto) pero gana portabilidad a NPU y reduce el peso a 0,72 GB. Frente a la variante W4V8, es mas precisa (MMLU 0,310 vs 0,292; KL 0,050 vs 0,160 a 1K) a costa de mayor tamano y menor velocidad de decodificacion (32,4 vs 39,9 tok/s). No se dispone de comparativas con otros modelos de 0,6B en la informacion proporcionada.
+La comparación más directa es con el modelo base Qwen/Qwen3-0.6B, del que este paquete deriva: comparten licencia y arquitectura, pero difieren en cuantización, formato y hardware objetivo. No se dispone de datos de benchmarks para establecer una comparación cuantitativa de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Dependencia de hardware propietario: solo funciona sobre NPU Mobilint Aries con el stack `transformers-mblt`/`qbruntime`; no es portable a GPU o CPU sin recompilar.
-- Divergencia respecto al original: la cuantizacion introduce KL de 0,05 a contexto corto y 0,21 a ~12K tokens; no es equivalente bit a bit al modelo bf16.
-- Ventana limitada a 16.384 tokens; prompts por encima no estan soportados.
-- Riesgo de alucinacion: inherente a un modelo de 0,6B; la precision MMLU de 0,310 es baja en terminos absolutos.
-- Sesgos: no documentados en la informacion proporcionada; al derivar de Qwen3-0.6B, hereda los sesgos del modelo base y de los datos de calibracion.
-- Idiomas: no se publica lista explicita; el soporte multilingue real no esta verificado.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el stack de runtime y el compilador de Mobilint pueden tener sus propias condiciones no detalladas aqui.
-- El fallo de prompts largos de builds anteriores esta corregido, pero conviene validar en el hardware concreto antes de produccion.
-- La build se actualiza con frecuencia (ultima actualizacion 2026-11-18); fijar revision para reproducibilidad.
+- Dependencia de hardware propietario: el modelo solo es funcional sobre NPU Mobilint Aries con la pila `transformers-mblt`; no es portable a GPU o CPU sin volver al modelo base.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar antes de usarlo en producción.
+- La cuantización a 8 bits introduce degradación respecto al bf16 original; la propia model card reconoce diferencias, mayores en la rama `W4V8`.
+- Ventana de contexto limitada a 16.384 tokens en total (prompt más generación), inferior a la del modelo base.
+- Idiomas no declarados formalmente en los metadatos; la cobertura real está respaldada por la calibración (inglés, coreano, japonés y 14 idiomas de chat), no por una evaluación exhaustiva.
+- No se documentan evaluaciones de sesgo, toxicidad ni tasas de alucinación; al ser un modelo de 0,6B, la fiabilidad en razonamiento complejo es limitada.
+- No se documenta soporte de tool calling ni de flujos agénticos, lo que restringe su uso en pipelines que dependan de llamadas a funciones.
+- Los datos de calibración no se distribuyen y no se usaron datos de clientes, pero no se detalla el volumen ni el proceso exacto de selección.
+- Licencia Apache 2.0 permite uso comercial, pero la dependencia del runtime y del compilador de Mobilint puede estar sujeta a condiciones adicionales no cubiertas por la licencia de los pesos.
 
 ## Enlaces
 
@@ -100,4 +94,12 @@ Frente al modelo base, esta build pierde precision (KL 0,05-0,21 segun contexto)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
 - Web de Mobilint: https://mobilint.com
-- Logo y assets: https://raw.githubusercontent.com/mobilint/.github/main/assets/Mobilint_Logo_Primary.png
+- Dataset SQuAD: https://huggingface.co/datasets/rajpurkar/squad
+- Dataset KLUE: https://huggingface.co/datasets/klue/klue
+- Dataset JSQuAD: https://huggingface.co/datasets/sbintuitions/JSQuAD
+- Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
+- Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+- Dataset Aya: https://huggingface.co/datasets/CohereLabs/aya_dataset
+- Dataset MMMLU: https://huggingface.co/datasets/openai/MMMLU
+- Dataset MMLU: https://huggingface.co/datasets/cais/mmlu
+- Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

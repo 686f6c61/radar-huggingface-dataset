@@ -1,92 +1,95 @@
 # DaoCloud/Kimi-K3.1-Pro-pruned75
 
 ## Resumen
-Kimi-K3.1-Pro-pruned75 es un checkpoint derivado del modelo multimodal Moonshot Kimi-K3.1-Pro, publicado por DaoCloud. Se trata de una poda de expertos enrutados (expert pruning) aplicada sobre la arquitectura MoE del modelo original: se eliminan el 75% de los expertos enrutados de cada capa, conservando 224 de los 896 originales. La poda es "calibration-free", es decir, no utiliza datos de calibración para decidir qué expertos eliminar, sino que ordena los expertos por la suma con signo de los pesos del router (`sum(router.weight[i])`) de forma independiente en cada capa.
 
-El modelo está pensado para servir con vLLM y para pruebas de humo de evaluación, no para producción. El propio autor lo describe como un prototipo experimental con una regresión de calidad grande respecto al modelo fuente. No es un checkpoint podado con REAP ni con calibración, que es una línea de trabajo separada.
+Kimi-K3.1-Pro-pruned75 es un checkpoint derivado del modelo multimodal Kimi-K3.1-Pro de Moonshot AI, publicado por DaoCloud. Se trata de una poda de expertos enrutados (routed experts) de tipo mixture-of-experts (MoE), en la que se elimina el 75 % de los expertos de cada capa MoE y se reindexan el router y los expertos restantes. El resultado conserva 737.611 millones de parametros totales y un repositorio de unos 475,5 GB distribuido en 96 shards de safetensors.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de compresión de MoE de forma reproducible; por otro, sirve de referencia sobre los límites de la poda sin calibración, ya que el rendimiento en GSM8K cae hasta el 35,33% de precisión.
+El modelo no es un ajuste fino ni una destilacion: es un prototipo experimental pensado para servir con vLLM y para pruebas de humo de evaluacion. La poda es sin calibracion (calibration-free), basada unicamente en el ranking descendente de la suma con signo de los pesos del router por capa, y el propio autor advierte de una regresion de calidad importante respecto al modelo fuente. No debe confundirse con una poda REAP basada en calibracion, que es una linea de trabajo distinta.
+
+Su relevancia es fundamentalmente practica: demuestra que un MoE de gran escala puede reducirse al 25 % de sus expertos manteniendo la estructura del checkpoint cargable en vLLM con un solo nodo de 8 GPU H200 en TP=8, lo que facilita experimentos de evaluacion y despliegue sin necesidad de recalibrar ni deconvertir los pesos MXFP4.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), multimodal image-text-to-text |
-| Parametros totales | no disponible |
+| Arquitectura | Transformer con mixture-of-experts (MoE); pipeline image-text-to-text con vision, atencion/DSA/indexer y proyecciones latent up-down |
+| Parametros totales | 737.611.524.480 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos de expertos en MXFP4 (copiados con su escala y empaquetado intactos, sin dequantizar); no se documentan otras cuantizaciones |
+| Tipos de cuantizacion | pesos de expertos en MXFP4 copiados con su escala y empaquetado intactos; resto de pesos en safetensors (8-bit segun tags); no se documentan otras cuantizaciones |
 | Idiomas soportados | no disponible |
-| Licencia | Kimi K3.1 Pro License (other), heredada del modelo base |
-| Formato de pesos | safetensors (96 shards, indice de pesos incluido) |
-
-Otros datos tecnicos relevantes: expertos por capa MoE en el modelo fuente, 896; expertos retenidos, 224 (25%); tamano en disco, aproximadamente 443 GB.
+| Licencia | kimi-k3.1-pro (Kimi K3.1 Pro License, licencia "other" del modelo base) |
+| Formato de pesos | safetensors (96 shards mas indice de pesos) |
 
 ## Arquitectura y entrenamiento
-El modelo base es un transformer MoE multimodal de Moonshot, con capas de atención, mecanismo DSA/indexer, proyecciones latentes up-down, un MLP denso en la primera capa, expertos compartidos (shared experts) y pesos de visión. La poda aplicada por DaoCloud solo modifica los expertos enrutados: elimina el 75% de ellos y compacta los índices de router y de expertos, actualizando `num_experts` a 224. El resto de componentes (MLP denso de primera capa, expertos compartidos, atención, DSA/indexer, proyecciones latentes, pesos de visión y tokenizer) queda intacto.
 
-No se ha realizado ningún entrenamiento adicional ni ajuste fino posterior a la poda; el checkpoint se genera exclusivamente eliminando tensores y filas del router. No hay datos de calibración, ni de composición del dataset de entrenamiento original, ni de fases de RLHF/DPO en la información disponible. La innovación técnica destacable es precisamente el método de ranking de expertos por suma con signo de los pesos del router, sin calibración, y la preservación del empaquetado MXFP4 de los pesos de expertos supervivientes.
+El modelo base Kimi-K3.1-Pro es un transformer MoE multimodal con capacidad de procesamiento image-text-to-text. La arquitectura incluye una MLP densa en la primera capa, expertos compartidos (shared experts), mecanismos de atencion con DSA e indexer, proyecciones latent up-down y torres de vision. El checkpoint pruned75 modifica exclusivamente los expertos enrutados: reduce de 896 a 224 expertos por capa MoE (25 % retenidos, 75 % eliminados), actualiza `num_experts` a 224 y compacta los indices de router y expertos. Los tensores de expertos eliminados y sus filas correspondientes del router se descartan.
+
+La seleccion de expertos se hace por capa, de forma independiente, ordenando de forma descendente la suma con signo de `router.weight[i]`. No se usa calibracion ni datos de evaluacion para decidir que expertos conservar. Los pesos de expertos en MXFP4 se copian sin dequantizar, preservando escala y empaquetado. El resto de componentes (MLP densa de primera capa, expertos compartidos, atencion/DSA/indexer, proyecciones latent, pesos de vision y tokenizer) quedan intactos. No se documentan en la informacion disponible detalles sobre el dataset de entrenamiento del modelo base, numero de tokens, ni si hubo RLHF/DPO.
 
 ## Capacidades
-- Generación de texto y razonamiento de propósito general, heredados del modelo base, aunque con degradación significativa por la poda.
-- Procesamiento de imagen y texto (pipeline image-text-to-text), ya que los pesos de visión no se han modificado.
-- Matemáticas básicas: el checkpoint obtiene un 35,33% en GSM8K, lo que indica capacidad limitada en razonamiento aritmético multi-paso.
-- Servicio compatible con vLLM mediante el loader por defecto y `--trust-remote-code`.
-- Compatibilidad con endpoints OpenAI (`/v1/models`, `/v1/completions`).
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+
+- Generacion de texto y razonamiento de proposito general, heredados del modelo base Kimi-K3.1-Pro.
+- Procesamiento multimodal image-text-to-text (pipeline declarado `image-text-to-text`), con pesos de vision preservados en la poda.
+- Soporte de tool calling / function calling: no documentado explicitamente en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente en la informacion disponible.
+- Capacidades multilingues: no disponibles (los idiomas no se declaran en la model card).
+- Modo thinking o decodificacion especulativa: no documentado.
+- Servicio compatible con la API OpenAI a traves de vLLM (`/v1/models`, `/v1/completions`).
 
 ## Casos de uso
-- Pruebas de humo de despliegue en vLLM: sirve para validar pipelines de serving, configuración de tensor parallelism y endpoints OpenAI antes de desplegar el modelo completo, ya que ocupa aproximadamente 443 GB en disco y unos 127.797 MiB por GPU con TP=8 en H200.
-- Evaluación comparativa de técnicas de poda: permite medir la caída de calidad de una poda sin calibración frente a métodos con calibración como REAP, usando el mismo harness de GSM8K (5-shot, `max_tokens=256`, `temperature=0`, `seed=42`).
-- Investigación sobre enrutamiento MoE: al conservar el router compactado y los índices remapeados, es útil para estudiar el comportamiento del enrutamiento tras eliminar el 75% de los expertos.
-- Benchmarking de infraestructura: con un tamaño menor que el modelo fuente, permite medir throughput y latencia (2,438 preguntas/s en GSM8K en la configuración validada) en clústeres de 8 GPU sin necesidad de reservar recursos para el modelo completo.
-- Desarrollo de herramientas de compresión: sirve como caso de referencia para implementar poda de expertos en llm-compressor u otras librerías, comparando resultados con y sin calibración.
-- Docencia y divulgación técnica: ilustra de forma concreta el impacto de la poda agresiva en un MoE multimodal, con métricas reproducibles y comandos de despliegue documentados.
+
+- Pruebas de humo de evaluacion en vLLM: el checkpoint esta disenado para cargarse y servirse con el loader por defecto de vLLM en un nodo de 8 GPU H200 con TP=8, lo que permite validar pipelines de evaluacion antes de invertir en el modelo completo.
+- Investigacion sobre poda de MoE: sirve como referencia reproducible de poda sin calibracion (ranking por suma con signo del router) para comparar con metodos calibrados como REAP en llm-compressor.
+- Despliegue de referencia en infraestructura de 8 GPU: con un consumo estable de aproximadamente 127.797 MiB por GPU, es util para dimensionar y validar configuraciones de tensor parallelism en clusters H200.
+- Evaluacion comparativa de checkpoints podados: permite reproducir el harness de GSM8K (1.319 preguntas, 5-shot, `max_tokens=256`, `temperature=0`, `seed=42`) y contrastar con otros checkpoints pruned75 como mgoin/Kimi-K3-pruned75.
+- Experimentos de inferencia multimodal a gran escala: al conservar los pesos de vision y el tokenizer, puede usarse en pruebas de pipelines image-text-to-text sin reentrenar.
+- Benchmarking de latencia y throughput en hardware concreto: el autor reporta 541,028 s para el split completo de GSM8K y 2,438 preguntas/s, lo que sirve como linea base de rendimiento en 8x H200.
 
 ## Benchmarks y rendimiento
 
-| Checkpoint | GSM8K (accuracy) | Correctas | Invalidas | Latencia | Preguntas/s |
-|---|---:|---:|---:|---:|---:|
-| Kimi-K3.1-Pro-pruned75 | 35,3298% | 466/1319 | 0/1319 | 541,028 s | 2,438 |
-| mgoin/Kimi-K3-pruned75 (referencia) | 34,4200% | 454/1319 | 0/1319 | no disponible | no disponible |
+Datos declarados por el autor (model-index y model card), evaluados con servidor local compatible con OpenAI `/v1/completions`, split de test completo de GSM8K, 5-shot, `max_tokens=256`, `temperature=0`, `seed=42`:
 
-Condiciones de evaluación del checkpoint principal: split de test completo de GSM8K (1.319 preguntas), 5-shot, `max_tokens=256`, `temperature=0`, `seed=42`, servidor local compatible con OpenAI `/v1/completions`. El resultado de referencia corresponde a un modelo base distinto y a hardware distinto, por lo que la comparación no es estrictamente equivalente. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, etc.) en la información disponible.
+| Checkpoint | GSM8K accuracy | Correctas | Invalidas | Latencia | Preguntas/s |
+|---|---:|---:|---:|---:|---:|
+| Kimi-K3.1-Pro-pruned75 | 35,3298 % | 466/1319 | 0/1319 | 541,028 s | 2,438 |
+| mgoin/Kimi-K3-pruned75 (referencia, otro modelo base y hardware) | 34,4200 % | 454/1319 | 0/1319 | no disponible | no disponible |
+
+No se han publicado en la informacion disponible resultados de otros benchmarks (MMLU, HumanEval, etc.) para este checkpoint.
 
 ## Requisitos de hardware
-- VRAM estimada: aproximadamente 127.797 MiB por GPU en la configuración validada con TP=8 en 8x NVIDIA H200 (unos 125 GB por GPU).
-- GPU recomendadas: 8x NVIDIA H200 en un solo nodo con tensor parallelism 8; no se documentan otras configuraciones validadas.
-- GPU de consumo: no cabe en GPU de consumo. El tamano en disco de aproximadamente 443 GB y la VRAM por GPU observada descartan RTX 4090 y similares.
-- Opciones de despliegue: vLLM con el loader por defecto, `--tensor-parallel-size 8`, `--trust-remote-code`, `--served-model-name kimi-k3.1-pro-pruned75`, `--host 0.0.0.0`, `--port 8000`. No se documenta soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: en GSM8K, 541,028 s para 1.319 preguntas y 2,438 preguntas/s en la configuración de 8x H200 con TP=8.
+
+- VRAM estimada: el checkpoint ocupa unos 443 GB en disco (96 shards safetensors); en el servicio validado con TP=8 el consumo estable es de aproximadamente 127.797 MiB por GPU.
+- GPU recomendadas: 8x NVIDIA H200 en un solo nodo con TP=8, configuracion validada por el autor.
+- GPU consumer: no cabe en GPU de consumo; el tamano del checkpoint y la memoria por GPU lo descartan.
+- Opciones de despliegue: vLLM con `--trust-remote-code` y `--tensor-parallel-size 8`; no se documentan otras opciones (llama.cpp, Ollama, TGI) en la informacion disponible.
+- Latencia y throughput: 541,028 s para 1.319 preguntas de GSM8K y 2,438 preguntas/s en la configuracion 8x H200 TP=8.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-pruned75 (DaoCloud) | no disponible (224 expertos/capa) | no disponible | 35,3298% | Kimi K3.1 Pro License | Hugging Face, safetensors |
-| Kimi-K3.1-Pro (Moonshot, base) | no disponible (896 expertos/capa) | no disponible | no disponible | Kimi K3.1 Pro License | Hugging Face |
-| mgoin/Kimi-K3-pruned75 | no disponible (75% de expertos eliminados) | no disponible | 34,4200% | no disponible | Hugging Face |
+| DaoCloud/Kimi-K3.1-Pro-pruned75 | 737,6 B | no disponible | 35,3298 % | kimi-k3.1-pro | Hugging Face, vLLM |
+| mgoin/Kimi-K3-pruned75 | no disponible | no disponible | 34,4200 % | no disponible | Hugging Face |
+| moonshotai/Kimi-K3.1-Pro (modelo base) | no disponible | no disponible | no disponible | kimi-k3.1-pro | Hugging Face |
 
-La comparación con el modelo base no es posible en términos de rendimiento porque no se han publicado resultados de benchmarks del Kimi-K3.1-Pro original en la información disponible. La referencia a mgoin/Kimi-K3-pruned75 emplea un modelo base distinto y hardware distinto, por lo que solo sirve como orientación metodológica.
+La comparacion con mgoin/Kimi-K3-pruned75 no es estrictamente equivalente: parte de un modelo base distinto (Kimi-K3 frente a Kimi-K3.1-Pro) y se evaluo en hardware diferente, segun indica el propio autor.
 
 ## Limitaciones y advertencias
-- Regresión de calidad grande respecto al modelo fuente, reconocida explícitamente por el autor; no debe usarse en producción.
-- Poda sin calibración: el ranking por `sum(router.weight[i])` no garantiza preservar los expertos más útiles para tareas concretas.
-- Rendimiento bajo en matemáticas: 35,33% en GSM8K, insuficiente para aplicaciones de razonamiento aritmético fiables.
-- Riesgo elevado de alucinación y de respuestas incoherentes por la eliminación masiva de expertos.
-- No es un checkpoint REAP ni calibrado; la comparación con métodos con calibración requiere evaluación separada.
-- Licencia "other" (Kimi K3.1 Pro License): es necesario revisar el texto de la licencia upstream para uso comercial y para modelos derivados.
-- Idiomas soportados no documentados; no se puede asumir cobertura multilingüe.
-- Longitud de contexto no documentada en la información disponible.
-- Requiere hardware de gama alta (8x H200) para el despliegue validado; no cabe en GPU de consumo.
-- Solo se ha validado el despliegue con vLLM; no hay garantías con otros motores de inferencia.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta; soporte comunitario nulo.
+
+- Regresion de calidad importante: el autor advierte explicitamente de una perdida notable de calidad frente al modelo fuente; es un prototipo experimental, no un checkpoint listo para produccion.
+- Poda sin calibracion: la seleccion de expertos se basa solo en el ranking del router, sin datos de calibracion, lo que puede eliminar expertos relevantes para dominios especificos.
+- GSM8K bajo: 35,3298 % de accuracy en GSM8K es un indicador de la degradacion respecto al modelo base.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero esperable dado el nivel de poda.
+- Idiomas y contexto: no se declaran idiomas soportados ni longitud de contexto en la model card.
+- Licencia: se distribuye bajo la Kimi K3.1 Pro License (licencia "other"); es necesario revisar los terminos del modelo base para uso comercial.
+- Requisitos de infraestructura: no cabe en GPU de consumo; requiere nodo multi-GPU de alta gama (8x H200 validado).
+- Dependencia de `--trust-remote-code` en vLLM por el codigo personalizado del modelo.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/DaoCloud/Kimi-K3.1-Pro-pruned75
+
+- Hugging Face: https://huggingface.co/DaoCloud/Kimi-K3.1-Pro-pruned75
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
-- Checkpoint de referencia de poda: https://huggingface.co/mgoin/Kimi-K3-pruned75
-- REAP en llm-compressor (PR): https://github.com/vllm-project/llm-compressor/pull/2980/
+- Checkpoint de referencia: https://huggingface.co/mgoin/Kimi-K3-pruned75
+- REAP en llm-compressor: https://github.com/vllm-project/llm-compressor/pull/2980/

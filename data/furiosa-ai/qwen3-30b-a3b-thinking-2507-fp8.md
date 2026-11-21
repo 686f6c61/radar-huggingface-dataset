@@ -2,78 +2,97 @@
 
 ## Resumen
 
-Qwen3-30B-A3B-Thinking-2507-FP8 es una versión cuantizada en FP8 del modelo de razonamiento Qwen3-30B-A3B-Thinking-2507, publicada por FuriosaAI en su organización de Hugging Face. Se trata de un transformer autoregresivo de arquitectura Mixture-of-Experts (MoE) con 30.532 millones de parámetros totales, de los cuales aproximadamente 3.300 millones se activan por token. El modelo opera exclusivamente en modo *thinking*: genera una cadena de pensamiento interna antes de ofrecer la respuesta final, lo que le proporciona capacidades sólidas de razonamiento, seguimiento de instrucciones, cobertura multilingüe y uso de herramientas.
+Qwen3-30B-A3B-Thinking-2507-FP8 es la variante de razonamiento (thinking) de la familia Qwen3, publicada por Alibaba Qwen en la actualización de julio de 2025 (sufijo 2507). Se trata de un transformer autorregresivo con arquitectura Mixture-of-Experts (MoE) de 30.532 millones de parámetros totales, de los cuales aproximadamente 3.300 millones se activan por token, lo que reduce de forma notable el coste computacional por inferencia frente a un modelo denso del mismo tamaño.
 
-La relevancia de esta publicación radica en que FuriosaAI no solo distribuye los pesos cuantizados, sino que incluye un Furiosa Executable Bundle (FXB) precompilado para ejecutar el modelo en su hardware RNGD mediante el framework Furiosa-LLM. Esto permite desplegar el modelo con una API compatible con OpenAI y con soporte para *tool calling* y razonamiento separado en campos dedicados. El modelo se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en entornos de producción.
+El repositorio analizado, `furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8`, es una redistribución del checkpoint oficial FP8 de Qwen empaquetada por FuriosaAI junto con un Furiosa Executable Bundle (FXB) para ejecutarse sobre aceleradores FuriosaAI RNGD mediante la librería `furiosa-llm`. Los pesos mantienen la cuantización FP8 estática del release original y las activaciones se cuantizan dinámicamente a FP8 en tiempo de ejecución (per-token / per-block), mientras que la caché KV permanece en 16 bits.
+
+Su relevancia actual es doble: por un lado, ofrece razonamiento explícito con cadena de pensamiento y soporte de tool calling bajo licencia Apache 2.0, lo que lo hace apto para uso comercial sin restricciones; por otro, demuestra la portabilidad del modelo a hardware alternativo a GPU (NPU de FuriosaAI) con un backend compatible con la API de OpenAI, lo que amplía las opciones de despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3-MoE (Mixture-of-Experts) transformer autoregresivo |
-| Parametros totales | 30.532.122.624 (30,5B) |
-| Parametros activos | ~3,3B por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 estatico para pesos, FP8 dinamico para activaciones, KV cache en 16-bit |
-| Idiomas soportados | no disponible (la documentacion indica cobertura multilingue sin especificar) |
+| Arquitectura | Qwen3-MoE (Mixture-of-Experts), transformer autorregresivo |
+| Parametros totales | 30.532.122.624 |
+| Parametros activos | ~3.300 millones por token |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | FP8 estatico en pesos; FP8 dinamico en activaciones (per-token / per-block); KV cache en 16 bits |
+| Idiomas soportados | no disponible (la model card menciona cobertura multilingue sin detallar idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, FXB (Furiosa Executable Bundle) |
+| Formato de pesos | safetensors (repositorio de 60,7 GB) |
+| Entrada / salida | Texto / Texto |
+| Hardware soportado (este repo) | FuriosaAI RNGD (4 tarjetas, tensor-parallel de 32 PEs) |
+| Motores de inferencia compatibles | Furiosa-LLM (principal); vLLM, SGLang y Transformers segun el modelo upstream |
+| Modo de razonamiento | Solo thinking (siempre genera cadena de pensamiento) |
+| Parsers de servido | `qwen3` (reasoning), `hermes` (tool calling) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3-MoE, un transformer autoregresivo con capas de mezcla de expertos. De los 30,5B parámetros totales, solo unos 3,3B se activan por token, lo que reduce el coste computacional por inferencia en comparación con un modelo denso del mismo tamaño. Es una variante de razonamiento (*thinking*) de la serie Qwen3, actualizada a la versión 2507, que siempre genera una cadena de pensamiento antes de la respuesta final.
+La arquitectura es un transformer MoE de la familia Qwen3, con 30.532 millones de parámetros totales y aproximadamente 3.300 millones activados por token. El modelo opera exclusivamente en modo thinking: antes de emitir la respuesta final genera una cadena de razonamiento interna, que Furiosa-LLM puede separar en el campo `reasoning` de la respuesta mediante el parser `qwen3`. Esta separación es relevante en producción porque permite registrar o filtrar el razonamiento sin contaminar la salida entregada al usuario.
 
-La versión publicada por FuriosaAI aplica cuantización FP8 estática a los pesos, siguiendo la release FP8 del modelo base, mientras que las activaciones se cuantizan dinámicamente en FP8 por token y por bloque. La caché KV se mantiene en precisión de 16 bits. No se proporcionan datos sobre el entrenamiento original (número de tokens, composición del dataset, uso de RLHF o DPO) en la información disponible; estos detalles corresponden al modelo base de Qwen.
+El checkpoint deriva del release oficial `Qwen/Qwen3-30B-A3B-Thinking-2507-FP8`, que a su vez aplica cuantización FP8 estática a los pesos. Sobre esa base, la distribución de FuriosaAI añade cuantización dinámica de activaciones a FP8 en tiempo de ejecución y mantiene la caché KV en 16 bits para preservar precisión en el contexto. En RNGD el modelo se despliega con tamaño de tensor-parallel de 32 PEs, lo que corresponde a cuatro tarjetas RNGD (8 PEs por tarjeta). No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO aplicadas por Qwen.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo: produce una cadena de pensamiento interna antes de cada respuesta, lo que mejora la precisión en tareas de lógica, matemáticas y análisis.
-- Seguimiento de instrucciones: diseñado para responder a peticiones en lenguaje natural con formato y contenido adecuados.
-- Tool calling (function calling): soporta invocación de herramientas mediante el parser `hermes`, el estándar de la serie Qwen3.
-- Razonamiento multilingüe: la documentación indica cobertura multilingüe, aunque no se especifican los idiomas concretos.
-- Modo *thinking* exclusivo: no es posible desactivar el razonamiento; el modelo siempre piensa antes de responder.
-- Integración con Furiosa-LLM: el FXB incluido permite servir el modelo con una API compatible con OpenAI, devolviendo el razonamiento en un campo separado (`reasoning`).
+- Generación de texto con razonamiento explícito: el modelo siempre produce una cadena de pensamiento antes de la respuesta final, lo que mejora tareas de lógica, matemáticas y análisis multi-paso.
+- Tool calling / function calling: soportado mediante el parser `hermes`, con elección automática de herramienta (`--enable-auto-tool-choice`).
+- Razonamiento multi-paso y uso en pipelines de agentes, gracias a la separación entre razonamiento y respuesta final.
+- Instrucciones y seguimiento conversacional: pipeline declarado como `text-generation` y `conversational`.
+- Cobertura multilingüe: la model card menciona soporte multilingüe, aunque no se detallan los idiomas concretos.
+- API compatible con OpenAI: el servidor `furiosa-llm serve` expone `/v1/chat/completions` con campos `reasoning` y `delta.reasoning` (streaming).
+- Capacidades multimodales (visión, audio): no disponibles; entrada y salida son exclusivamente texto.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con razonamiento previo, lo que permite respuestas más coherentes y contextualizadas en tareas de soporte técnico o resolución de incidencias.
-- Generación de código con razonamiento: al pensar antes de escribir, es adecuado para tareas de programación complejas, como refactorización, depuración o implementación de algoritmos, donde el razonamiento explícito reduce errores.
-- Agentes autónomos con tool calling: gracias al soporte de *function calling*, puede integrarse en pipelines de agentes que consultan APIs, bases de datos o servicios externos para completar tareas multi-paso.
-- Análisis de datos y generación de informes: su capacidad de razonamiento permite interpretar datos, extraer conclusiones y redactar informes estructurados en varios idiomas.
-- Asistencia en investigación y educación: puede explicar conceptos complejos, resolver problemas matemáticos o redactar resúmenes académicos con cadenas de razonamiento transparentes.
-- Automatización de procesos empresariales: combinado con herramientas externas, puede clasificar documentos, extraer información y tomar decisiones basadas en reglas definidas por el usuario.
+- Razonamiento asistido en atención al cliente: el modelo puede resolver consultas que requieren varios pasos (cálculo de plazos, comparación de condiciones) generando el razonamiento en un campo separado auditable, útil para trazabilidad y control de calidad.
+- Agentes con herramientas en producción: con `--enable-auto-tool-choice` y el parser `hermes`, puede decidir cuándo invocar APIs externas (búsqueda, cálculo, consulta de bases de datos) dentro de un bucle de agente.
+- Generación y revisión de código: el modo thinking permite explicar decisiones de diseño y detectar errores lógicos antes de emitir el parche final; el razonamiento separado facilita la revisión por parte de un humano o de otro modelo.
+- Análisis de documentos largos con razonamiento: para tareas de extracción, resumen y verificación de consistencia sobre textos extensos, aprovechando la ventana de contexto del modelo (no detallada en la información disponible).
+- Despliegue en infraestructura no-GPU: organizaciones con aceleradores FuriosaAI RNGD pueden servir el modelo con cuatro tarjetas y API compatible con OpenAI, sin depender de GPUs NVIDIA.
+- Evaluación comparativa de razonamiento: al exponer la cadena de pensamiento de forma estructurada, es adecuado para experimentos de investigación sobre calidad de razonamiento, detección de atajos y análisis de errores.
+- Sustitución de modelos propietarios en flujos internos: la licencia Apache 2.0 permite integrarlo en productos comerciales sin obligaciones de atribución adicionales más allá de las de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de FuriosaAI no incluye métricas como MMLU, HumanEval o GSM8K, y los resultados de búsqueda web tampoco aportan datos comparativos. Se recomienda consultar la model card del modelo base Qwen/Qwen3-30B-A3B-Thinking-2507-FP8 para posibles referencias de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El despliegue oficial con Furiosa-LLM requiere hardware FuriosaAI RNGD, con una estrategia de paralelismo tensorial de 32 PEs distribuidos en cuatro tarjetas RNGD (8 PEs por tarjeta).
-- No se especifica la VRAM necesaria para inferencia en GPUs convencionales. El tamaño del repositorio es de 47,6 GB, que incluye tanto los pesos safetensors como el FXB.
-- El modelo base también puede ejecutarse en otros frameworks como vLLM, SGLang o Transformers, según indica la documentación, pero no se proporcionan requisitos de memoria para esos entornos.
-- Para GPUs de consumo, un modelo de 30,5B parámetros en FP8 requeriría al menos 32 GB de VRAM para cargar los pesos, aunque no hay datos oficiales de FuriosaAI al respecto.
-- Opciones de despliegue: Furiosa-LLM (servidor con API OpenAI-compatible), vLLM, SGLang, Transformers (para el modelo base sin FXB).
+- VRAM/espacio de pesos: el repositorio ocupa 60,7 GB en FP8, por lo que se necesita al menos esa cantidad de memoria de acelerador distribuida entre dispositivos.
+- Hardware objetivo de este repositorio: FuriosaAI RNGD, con 4 tarjetas en tensor-parallel de 32 PEs (8 PEs por tarjeta).
+- GPUs: no se especifican requisitos de GPU en la información proporcionada; el modelo upstream FP8 puede ejecutarse en vLLM, SGLang y Transformers, pero no se detallan GPUs concretas ni cifras de VRAM para esos backends.
+- GPU de consumo: no disponible; el tamaño en FP8 (60,7 GB) excede la memoria de una RTX 4090 (24 GB) en una sola tarjeta, pero no se confirma ningún escenario consumer en la documentación.
+- Opciones de despliegue: `furiosa-llm serve` (backend principal de este repo); vLLM, SGLang y Transformers mediante el modelo upstream.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa detallada con alternativas de la misma categoría. El modelo comparte arquitectura y tamaño con Qwen3-30B-A3B (versión sin *thinking*), pero no se han publicado métricas comparativas en la información proporcionada. Tampoco se dispone de especificaciones de otros modelos MoE de tamaño similar, como DeepSeek-V3 o Mixtral, en las fuentes consultadas. Se recomienda consultar la documentación oficial de Qwen para obtener datos de rendimiento relativos.
+| Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen3-30B-A3B-Thinking-2507-FP8 (este repo, FuriosaAI) | 30,5B / ~3,3B | no disponible | Apache 2.0 | Hugging Face, backend Furiosa-LLM |
+| Qwen/Qwen3-30B-A3B-Thinking-2507-FP8 (upstream) | 30,5B / ~3,3B | no disponible | Apache 2.0 | Hugging Face, vLLM/SGLang/Transformers |
+| Alternativas de tamaño y categoría similares | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos que permitan una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- El modelo opera únicamente en modo *thinking*: siempre genera una cadena de pensamiento, lo que puede aumentar la latencia y el consumo de tokens en comparación con modelos que permiten desactivar el razonamiento.
-- No se han documentado sesgos específicos, pero al ser un modelo de lenguaje entrenado con datos web, puede reflejar sesgos presentes en esos datos.
-- Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas de hechos o datos no verificados.
-- La longitud de contexto no está especificada en la información disponible; se debe consultar la documentación del modelo base para conocer el límite real.
-- El FXB incluido solo es ejecutable en hardware FuriosaAI RNGD; para otras plataformas es necesario utilizar los pesos safetensors con frameworks compatibles.
-- La cobertura multilingüe no está detallada; no se garantiza un rendimiento uniforme en todos los idiomas.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar el cumplimiento de las condiciones de atribución y las posibles patentes asociadas.
+- Modo thinking obligatorio: el modelo siempre genera cadena de pensamiento, lo que incrementa los tokens de salida y la latencia frente a variantes no thinking; no es adecuado para respuestas de baja latencia sin filtrado del razonamiento.
+- Riesgo de alucinación: como todo modelo generativo, puede producir razonamientos plausibles pero incorrectos; la cadena de pensamiento no garantiza la veracidad de la respuesta final.
+- Idiomas: la cobertura multilingüe se menciona de forma genérica, sin lista de idiomas ni evaluación por lengua en la información disponible.
+- Contexto: la longitud máxima de contexto no se detalla en la documentación proporcionada, por lo que debe verificarse en la model card upstream antes de diseñar flujos con entradas largas.
+- Dependencia de hardware: este repositorio está empaquetado para FuriosaAI RNGD con Furiosa-LLM; para otros backends hay que usar el checkpoint upstream, no este FXB.
+- Precisión numérica: la cuantización FP8 (pesos y activaciones) puede introducir degradación frente al modelo en BF16, especialmente en tareas sensibles a precisión numérica.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio upstream para confirmar condiciones y atribuciones.
+- Sesgos: no se documentan en la información proporcionada evaluaciones de sesgo ni mitigaciones específicas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8
-- Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507-FP8
-- Documentación Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Modelo upstream: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507-FP8
+- Licencia upstream: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507-FP8/blob/main/LICENSE
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
 - Guía de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
-- Referencia del servidor Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
-- Documentación de modelos Qwen3-MoE: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-moe.html
+- Referencia de `furiosa-llm serve`: https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
+- Sitio de FuriosaAI: https://furiosa.ai

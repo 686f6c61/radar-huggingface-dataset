@@ -1,105 +1,113 @@
 # nvidia/parakeet-tdt-0.6b-v2
 
 ## Resumen
-`parakeet-tdt-0.6b-v2` es un modelo de reconocimiento automático del habla (ASR) de NVIDIA, con 600 millones de parámetros, especializado en transcripción de inglés con puntuación, capitalización y marcas de tiempo a nivel de palabra. Forma parte de la familia Parakeet y está pensado para aplicaciones que necesitan transcribir audio de forma precisa y eficiente, no para generación de texto general.
 
-La arquitectura es una variante XL de FastConformer con decodificador TDT y atención completa, lo que le permite procesar segmentos de audio de hasta 24 minutos en una sola pasada. Según la model card, alcanza un RTFx de 3380 en el leaderboard HF-Open-ASR con lote de 128, y se distribuye con licencia CC-BY-4.0, lo que facilita su uso comercial con atribución.
+Parakeet TDT 0.6B V2 es un modelo de reconocimiento automatico del habla (ASR) en ingles desarrollado por NVIDIA, publicado bajo licencia CC-BY-4.0. Se trata de la variante XL de la arquitectura FastConformer combinada con un decodificador TDT (Token-and-Duration Transducer), con aproximadamente 600 millones de parametros, disenada para transcripcion de alta calidad con puntuacion, capitalizacion y marcas de tiempo a nivel de palabra.
 
-Su relevancia actual está en que ofrece una alternativa abierta y ligera para transcripción inglesa de alta calidad, con marcas de tiempo y buen comportamiento en dominios como reuniones, llamadas de resultados, podcasts y audio largo. No es un modelo multilingüe: la versión multilingüe es `parakeet-tdt-0.6b-v3`, disponible por separado.
+El modelo esta pensado para transcribir segmentos de audio de hasta 24 minutos en una sola pasada gracias al uso de atencion completa, y declara un RTFx de 3380 en el leaderboard HF-Open-ASR con batch size de 128. Resuelve el problema de la transcripcion precisa y rapida en produccion, con robustez declarada en numeros hablados y transcripcion de letras de canciones, y esta listo para uso comercial y no comercial segun los terminos del autor.
 
-## Especificaciones técnicas
-| Parámetro | Valor |
+Su relevancia actual radica en que combina un tamano contenido (0,6B) con un rendimiento competitivo en benchmarks de ASR en ingles (WER de 1,69 en LibriSpeech clean y 3,19 en other), lo que lo hace desplegable en infraestructura moderada. NVIDIA ha publicado ademas una version posterior, `nvidia/parakeet-tdt-0.6b-v3`, multilingue para 25 lenguas europeas.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer XL con decodificador TDT (Transducer) |
-| Parámetros totales | 600 millones (0,6B) |
-| Parámetros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | Hasta 24 minutos de audio en una sola pasada; no es una ventana de tokens |
-| Tipos de cuantización | No disponible en la información proporcionada |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | FastConformer XL con decodificador TDT (Token-and-Duration Transducer); atencion completa |
+| Parametros totales | 0,6B (600 millones) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible como ventana de tokens; admite segmentos de audio de hasta 24 minutos en una sola pasada |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | ingles (en) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | PyTorch/NeMo; no se especifica safetensors ni GGUF en la información disponible |
+| Formato de pesos | pesos PyTorch / NeMo (repositorio de 4,9 GB); no se indica GGUF ni safetensors de forma explicita |
 
 ## Arquitectura y entrenamiento
-El modelo combina una variante XL de FastConformer, una arquitectura Conformer orientada a ASR, con un decodificador TDT. La model card indica que se entrenó con atención completa y que puede transcribir segmentos de audio de hasta 24 minutos en una sola pasada, lo que reduce la necesidad de segmentar manualmente grabaciones largas. El decodificador TDT está pensado para predecir tanto tokens como duraciones, lo que encaja con la generación de transcripciones y marcas de tiempo.
 
-Los datos de entrenamiento declarados incluyen los conjuntos `nvidia/Granary` y `nvidia/nemo-asr-set-3.0`. No se detalla el número de tokens, la composición exacta del dataset ni si hubo etapas de RLHF o DPO; en cualquier caso, se trata de un modelo supervisado de ASR, no de un LLM generativo. La información disponible no permite evaluar sesgos por composición demográfica o por dominio de forma cuantitativa.
+El modelo emplea la arquitectura FastConformer en su variante XL, un encoder Conformer con atencion completa (no subsampling con atencion local), acoplada a un decodificador TDT. El decodificador TDT predice conjuntamente tokens y duraciones, lo que permite emisiones no autoregresivas mas eficientes que un transducer clasico y habilita la prediccion precisa de marcas de tiempo a nivel de palabra. La atencion completa es la que permite procesar segmentos largos de audio (hasta 24 minutos) en una unica pasada.
+
+El entrenamiento se realizo sobre los datasets `nvidia/Granary` y `nvidia/nemo-asr-set-3.0`, segun los metadatos de la model card. No se detalla en la informacion disponible el numero exacto de horas de audio, la composicion completa del corpus ni si se aplicaron etapas de RLHF o DPO (no aplicables de forma habitual en ASR). La model card referencia los papers tecnicos de FastConformer y TDT para los detalles de arquitectura y entrenamiento.
 
 ## Capacidades
-- Reconocimiento automático del habla en inglés con salida de texto.
-- Predicción de marcas de tiempo a nivel de palabra.
-- Puntuación y capitalización automáticas.
-- Transcripción de audio largo, hasta 24 minutos en una sola pasada según la model card.
-- Buen comportamiento declarado en números hablados y transcripción de letras de canciones.
-- No soporta tool calling ni function calling.
-- No está diseñado para agentes, razonamiento multi-paso ni generación de texto libre.
-- No ofrece capacidades de visión, audio generativo, diarización de hablantes ni traducción.
-- No es multilingüe: solo inglés. La versión `parakeet-tdt-0.6b-v3` cubre 25 idiomas europeos según la model card.
+
+- Transcripcion de voz a texto en ingles con alta precision.
+- Puntuacion automatica y capitalizacion en la salida.
+- Prediccion de marcas de tiempo a nivel de palabra.
+- Procesamiento de segmentos de audio de hasta 24 minutos en una sola pasada.
+- Robustez declarada en numeros hablados y transcripcion de letras de canciones.
+- Rendimiento declarado de RTFx de 3380 en HF-Open-ASR (batch size 128).
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio mas alla de la propia transcripcion.
+- Capacidad multilingue: no disponible (solo ingles en esta version).
 
 ## Casos de uso
-- Transcripción de reuniones: el modelo puede convertir grabaciones de reuniones en texto con puntuación y marcas de tiempo; su WER declarado en AMI es 11,16 %, y la ventana de audio de hasta 24 minutos reduce la fragmentación de actas.
-- Subtitulado de webinars y podcasts: con marcas de tiempo a nivel de palabra y puntuación automática, encaja en flujos de generación de subtítulos para contenido hablado en inglés; en TED-LIUM v3 declara un WER de 3,38 %.
-- Análisis de llamadas de resultados financieros: puede transcribir `earnings calls` con números hablados y términos financieros; el WER declarado en Earnings-22 es 11,15 % y en SPGI Speech es 2,17 %.
-- Control de calidad en atención al cliente: permite transcribir lotes de llamadas para revisar guiones, cumplimiento y calidad; las marcas de tiempo facilitan localizar fragmentos concretos. No incluye diarización nativa, por lo que los roles de agente y cliente requieren un componente externo.
-- Dictado y notas de voz: al ser un modelo de 0,6B, puede desplegarse en infraestructura modesta y transcribir notas o documentos dictados en inglés con latencia baja en GPUs de consumo.
-- Archivo y búsqueda de grabaciones largas: su capacidad de procesar hasta 24 minutos por pasada permite indexar entrevistas, clases o sesiones de formación con marcas de tiempo para búsqueda posterior.
-- Transcripción de contenido musical o con números: la model card destaca robustez en números hablados y letras de canciones, útil para catalogar audio musical o verificar lecturas de cifras.
+
+- Transcripcion de reuniones y actas: el modelo puede procesar segmentos de hasta 24 minutos en una pasada y generar marcas de tiempo por palabra, lo que facilita la alineacion de hablantes y la generacion de resumenes posteriores con LLM.
+- Subtitulado automatico de video: la salida con puntuacion, capitalizacion y timestamps por palabra encaja directamente en pipelines de generacion de subtitulos SRT/VTT.
+- Analisis de llamadas de atencion al cliente: transcripcion por lotes de grabaciones con RTFx alto (3380 declarado) para alimentar sistemas de analitica y control de calidad.
+- Indexacion y busqueda de contenido audiovisual: convertir podcasts, clases y webinars en texto indexable con marcas temporales para busqueda semantica.
+- Accesibilidad: generacion de transcripciones en tiempo casi real para personas con discapacidad auditiva en entornos en ingles.
+- Documentacion clinica o legal dictada: transcripcion de notas de voz con puntuacion y mayusculas, adecuada para revision humana posterior.
+- Preprocesado para pipelines de IA: alimentar modelos de lenguaje con transcripciones limpias y estructuradas de audio en ingles.
 
 ## Benchmarks y rendimiento
-| Dataset | Configuración/split | WER (%) |
-|---|---|---:|
-| AMI (Meetings test) | `ihm`, test, en | 11,16 |
-| Earnings-22 | test, en | 11,15 |
-| GigaSpeech | test, en | 9,74 |
-| LibriSpeech (clean) | test, en | 1,69 |
-| LibriSpeech (other) | test, en | 3,19 |
-| SPGI Speech | test, en | 2,17 |
-| TED-LIUM v3 | `release1`, test, en | 3,38 |
-| Vox Populi | `en`, test, en | 5,95 |
 
-Los valores anteriores son los declarados por NVIDIA en la `model-index` de la model card y no han sido verificados por el editor. Menor WER indica mejor rendimiento. Además, la model card declara un RTFx de 3380 en el leaderboard HF-Open-ASR con lote de 128; el propio autor advierte que el RTFx puede variar según la duración del audio y el tamaño de lote.
+Resultados declarados por el autor en la model card (WER, menor es mejor; no verificados de forma independiente segun los metadatos `verified: false`):
+
+| Dataset | WER (%) |
+|---|---|
+| LibriSpeech (clean) | 1,69 |
+| LibriSpeech (other) | 3,19 |
+| SPGI Speech | 2,17 |
+| TED-LIUM v3 | 3,38 |
+| Vox Populi (en) | 5,95 |
+| GigaSpeech | 9,74 |
+| Earnings-22 | 11,15 |
+| AMI (Meetings, ihm) | 11,16 |
+
+Ademas, la model card declara un RTFx de 3380 en el leaderboard HF-Open-ASR con batch size de 128, con la advertencia de que el rendimiento puede variar segun la duracion del audio y el tamano de batch.
 
 ## Requisitos de hardware
-- VRAM estimada para pesos: aproximadamente 2,4 GB en FP32 y 1,2 GB en FP16/BF16; con overhead de runtime y audio largo, es razonable reservar entre 2 y 4 GB.
-- No se documentan cuantizaciones oficiales INT8, INT4, GGUF ni formatos ligeros en la información proporcionada.
-- Cabe en GPUs de consumo: una RTX 3060 de 12 GB, RTX 4070 o RTX 4090 es suficiente; para despliegues de alto throughput se recomiendan A100 o H100.
-- Opciones de despliegue documentadas: NeMo. El ecosistema NVIDIA menciona Riva y NIM, pero no se detalla una receta concreta en la información disponible.
-- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI para este modelo ASR.
-- Throughput declarado: RTFx de 3380 con lote de 128 en HF-Open-ASR. No se proporcionan latencias por petición ni throughput en otras configuraciones.
+
+- VRAM estimada para inferencia: no disponible de forma explicita; con 0,6B de parametros, la inferencia en precision completa requiere del orden de pocos GB de VRAM, aunque la cifra exacta no se documenta.
+- GPU recomendadas: no especificadas en la informacion disponible; el modelo esta pensado para despliegue con NeMo y Riva/NIM de NVIDIA.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
+- Opciones de despliegue: NeMo (libreria nativa), NVIDIA Riva, NVIDIA NIM; el tag `deploy:azure` sugiere disponibilidad en Azure. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: RTFx declarado de 3380 en HF-Open-ASR con batch size 128; el resto de metricas de latencia no estan disponibles.
 
 ## Comparativa con modelos similares
-| Modelo | Parámetros | Contexto/audio | WER LibriSpeech clean | Licencia | Disponibilidad |
-|---|---:|---|---:|---|---|
-| `parakeet-tdt-0.6b-v2` | 0,6B | Hasta 24 min | 1,69 % | CC-BY-4.0 | Hugging Face |
-| `parakeet-tdt-0.6b-v3` | 0,6B según el nombre | No disponible | No disponible | No disponible | Hugging Face según la model card |
-| Otras alternativas ASR de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se han proporcionado resultados de benchmarks ni especificaciones de modelos alternativos, por lo que no es posible establecer una comparativa cuantitativa fiable con otros ASR. La única alternativa documentada en la model card es `parakeet-tdt-0.6b-v3`, que añade soporte para 25 idiomas europeos, pero sin métricas ni licencia detalladas en la información disponible.
+| Modelo | Parametros | Idiomas | Contexto de audio | Licencia | Notas |
+|---|---|---|---|---|---|
+| nvidia/parakeet-tdt-0.6b-v2 | 0,6B | Ingles | Hasta 24 min por pasada | CC-BY-4.0 | Version evaluada en esta ficha |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6B | 25 lenguas europeas | no disponible | no disponible en la informacion | Version posterior y multilingue citada por el autor |
+| Otros modelos ASR comparables | no disponible | no disponible | no disponible | no disponible | No se aportan datos de comparacion en la informacion disponible |
 
 ## Limitaciones y advertencias
-- Solo soporta inglés; no es adecuado para transcripción multilingüe sin usar otro modelo.
-- El WER en dominios difíciles es relevante: 11,16 % en AMI y 11,15 % en Earnings-22, por lo que la transcripción puede requerir revisión humana.
-- Puede fallar con ruido, solapamiento de hablantes, acentos marcados, audio de baja calidad o vocabulario muy específico; no se aportan métricas de robustez por subgrupo.
-- Como todo ASR, puede insertar palabras o puntuación incorrecta en silencios, ruido o audio ininteligible; conviene validar las salidas antes de usarlas en producción.
-- Las marcas de tiempo a nivel de palabra pueden desviarse en audio largo o con música de fondo.
-- No incluye diarización de hablantes ni etiquetado de roles; para reuniones o llamadas hace falta un componente adicional.
-- La licencia CC-BY-4.0 permite uso comercial según la model card, pero exige atribución y el cumplimiento de sus términos.
-- No es un modelo de agentes ni soporta tool calling, function calling o razonamiento multi-paso.
-- No se detalla la composición del dataset de entrenamiento, por lo que no se puede evaluar el sesgo demográfico o lingüístico con precisión.
-- El audio puede contener datos personales; el despliegue debe incluir controles de privacidad, retención y acceso.
+
+- Solo soporta ingles; no es adecuado para transcripcion multilingue (para ello el autor remite a la version v3).
+- Los resultados de benchmarks son declarados por el autor y figuran como no verificados (`verified: false`); deben tomarse con cautela.
+- El rendimiento en dominios dificiles es sensiblemente peor: WER de 11,15 en Earnings-22 y 11,16 en AMI (reuniones), frente a 1,69 en LibriSpeech clean.
+- Riesgo de errores en audio con ruido, acentos no representados en el corpus de entrenamiento o solapamiento de hablantes; no se documenta diarizacion.
+- El RTFx puede degradarse con audios de distinta duracion o tamanos de batch diferentes al reportado.
+- Licencia CC-BY-4.0: permite uso comercial con atribucion; deben respetarse los terminos de la licencia.
+- No se documentan sesgos especificos ni evaluaciones de equidad en la informacion disponible.
+- El modelo esta marcado como reemplazado por `nvidia/parakeet-tdt-0.6b-v3` para casos multilingues; conviene evaluar la version mas reciente antes de nuevos despliegues.
+- La cuantizacion y los formatos de despliegue ligeros no estan documentados; la integracion esta orientada al ecosistema NeMo/Riva.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
+- Version multilingue posterior: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v2
-- Versión multilingüe v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Colección NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b-v2
-- Documentación de NeMo ASR: https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/asr/models.html
-- Documentación de FastConformer en NeMo: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#fast-conformer
+- Documentacion de modelos ASR de NeMo: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#fast-conformer
+- Documentacion de NeMo Framework (ASR): https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/asr/models.html
+- Portal de desarrolladores de NVIDIA: https://developer.nvidia.com
+- NVIDIA Riva Speech: https://developer.nvidia.com/riva
+- Nemotron: https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/
+- Paper FastConformer (arXiv:2305.05084): https://arxiv.org/abs/2305.05084
+- Paper relacionado (arXiv:2304.06795): https://arxiv.org/abs/2304.06795
+- Paper relacionado (arXiv:2406.00899): https://arxiv.org/abs/2406.00899
+- Paper relacionado (arXiv:2410.01036): https://arxiv.org/abs/2410.01036
+- Paper relacionado (arXiv:2505.13404): https://arxiv.org/abs/2505.13404
+- Dataset Granary: https://huggingface.co/datasets/nvidia/Granary
+- Dataset NeMo ASR Set 3.0: https://huggingface.co/datasets/nvidia/nemo-asr-set-3.0
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/legalcode.en
-- Paper arXiv 2305.05084: https://arxiv.org/abs/2305.05084
-- Paper arXiv 2304.06795: https://arxiv.org/abs/2304.06795
-- Paper arXiv 2406.00899: https://arxiv.org/abs/2406.00899
-- Paper arXiv 2410.01036: https://arxiv.org/abs/2410.01036
-- Paper arXiv 2505.13404: https://arxiv.org/abs/2505.13404
-- NVIDIA Developer: https://developer.nvidia.com/
-- NVIDIA Riva: https://developer.nvidia.com/riva
-- NVIDIA Nemotron: https://developer.nvidia.com/nemotron

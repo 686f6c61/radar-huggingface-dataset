@@ -2,75 +2,93 @@
 
 ## Resumen
 
-Converse-1.3-GGUF es una republicación en formato GGUF del modelo Converse-1.3, publicada por el usuario mradermacher. El repositorio no incluye model card descriptiva propia: la única información disponible es una nota que indica que se trata de cuantizaciones estáticas del modelo original dgAI202/Converse-1.3, junto con metadatos internos del proceso de conversión. No se dispone de datos sobre arquitectura, tamaño, contexto, licencia ni idiomas en la información proporcionada.
+Converse-1.3-GGUF es la versión cuantizada del modelo dgAI202/Converse-1.3, un modelo de lenguaje conversacional de aproximadamente 1.540 millones de parámetros (1,54 B) publicado por el usuario dgAI202 y cuantizado por mradermacher. El modelo base se etiqueta como orientado a "Low-Cost-Conversations" (conversaciones de bajo coste), lo que sugiere un diseño enfocado en diálogo eficiente y despliegue económico, aunque la model card original no detalla la arquitectura interna ni el proceso de entrenamiento.
 
-El interés de este repositorio reside en que un tercero ha generado versiones cuantizadas del modelo original en múltiples precisiones (desde Q2_K hasta Q8_0, pasando por Q4_K_M, Q5_K_M e IQ4_XS), lo que permite ejecutar el modelo con requisitos de memoria reducidos en entornos con llama.cpp y derivados. Sin embargo, al no publicarse la model card del modelo base ni sus especificaciones, cualquier evaluación técnica rigurosa requiere consultar directamente el repositorio de origen dgAI202/Converse-1.3.
+Esta ficha cubre específicamente la versión GGUF, que permite ejecutar el modelo con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.) en hardware de consumo. El repositorio incluye doce variantes de cuantización desde Q2_K (0,8 GB) hasta f16 (3,2 GB), lo que facilita su despliegue en entornos con recursos limitados.
 
-La ficha que sigue documenta exclusivamente lo que consta en la información disponible y marca explícitamente como "no disponible" todo aquello que no se ha podido verificar, incluyendo parámetros, contexto, licencia y rendimiento.
+La relevancia actual del modelo radica en su tamaño compacto y su licencia Apache 2.0, que permite uso comercial sin restricciones adicionales. No obstante, la información pública disponible es muy escasa: no se han publicado detalles sobre arquitectura, datos de entrenamiento, contexto soportado ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (transformer, segun el tag de transformers) |
+| Parametros totales | 1.543.714.304 (1,54 B) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas derivadas de pesos en formato Hugging Face) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Converse-1.3 (dgAI202/Converse-1.3). La model card del repositorio GGUF no describe si se trata de un transformer denso, un modelo MoE, una arquitectura híbrida o cualquier otra variante, ni tampoco detalla el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o técnicas de alineación.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base dgAI202/Converse-1.3. El tag `transformers` y el nombre de la libreria indican que se trata de un modelo basado en transformer, con 1.543.714.304 parametros totales confirmados a partir de los pesos en safetensors del modelo base. No se especifica si emplea attention lineal, decodificacion especulativa, MoE u otras innovaciones.
 
-Lo único verificable es el proceso de conversión: los metadatos indican `convert_type: hf` y `quantize_version: 2`, lo que sugiere que los pesos se convirtieron desde el formato Hugging Face original y que se aplicó cuantización sobre tensores de salida (`output_tensor_quantised: 1`). Las cuantizaciones listadas son estáticas y cubren un rango amplio de precisiones, desde 2 bits (Q2_K) hasta 8 bits (Q8_0), además de una versión sin cuantizar en FP16 (x-f16).
+Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o fine-tuning supervisado. La unica pista sobre el proposito del modelo es el tag "Low-Cost-Conversations", que sugiere un entrenamiento orientado a dialogos de bajo coste computacional. La cuantizacion fue realizada por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, usando cuantizaciones estaticas (no ponderadas por imatrix), segun indica la propia model card.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas del modelo en la información disponible.
-- No consta soporte verificado de tool calling, function calling ni de razonamiento multi-paso.
-- No consta soporte multilingüe declarado.
-- No consta ningún modo especial (thinking mode, visión, audio) en la documentación proporcionada.
-- La única capacidad inferible del repositorio es la de servir como artefacto de inferencia en formato GGUF para motores compatibles.
+- Generacion de texto conversacional en ingles, segun el tag `conversational` y el idioma declarado (`en`).
+- Dialogo multi-turno, inferido del nombre del modelo y del tag "Low-Cost-Conversations".
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles; solo se declara ingles.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
-- Despliegue en CPU con llama.cpp: al existir cuantizaciones Q4_K_M y Q5_K_M, el modelo puede ejecutarse en equipos sin GPU dedicada usando llama.cpp, siempre que se conozca previamente el tamaño real del modelo base (no disponible en esta ficha).
-- Ejecución en GPUs de gama consumer: las variantes Q3_K_M y Q4_K_S permiten ajustar el uso de VRAM en tarjetas con 8-12 GB, a condición de verificar el número de parámetros del modelo original.
-- Integración en Ollama: los GGUF son el formato nativo de Ollama, por lo que este repositorio puede importarse directamente para pruebas locales de conversación, previa confirmación de la licencia del modelo base.
-- Evaluación comparativa de cuantizaciones: al ofrecer Q2_K, Q3_K, Q4_K, Q5_K, Q6_K y Q8_0 del mismo modelo, permite medir la degradación de calidad frente al tamaño en un pipeline de evaluación propio.
-- Servido con llama.cpp server o similar: útil para prototipos de API local con bajo coste de infraestructura, sujeto a las limitaciones de contexto y rendimiento del modelo base, que no están documentadas aquí.
-- Archivado y reproducibilidad: el repositorio conserva una instantánea de cuantizaciones con fecha de creación y actualización, útil como artefacto de referencia si el modelo original deja de estar disponible.
+- Chatbot de atencion al cliente en ingles: el modelo puede gestionar conversaciones multi-turno basicas en entornos donde el coste por inferencia es critico, dado su tamano de 1,54 B y la disponibilidad de cuantizaciones de ~1 GB que caben en GPUs de consumo.
+- Asistente conversacional embebido en aplicaciones de escritorio o moviles: la variante Q4_K_M (1,1 GB) permite ejecucion local con llama.cpp en equipos sin GPU dedicada, ofreciendo respuestas en ingles sin depender de la nube.
+- Prototipado rapido de interfaces conversacionales: los desarrolladores pueden desplegar el modelo con Ollama o LM Studio en minutos para validar flujos de dialogo antes de migrar a modelos mayores.
+- Generacion de respuestas en entornos de bajo presupuesto: el tag "Low-Cost-Conversations" sugiere que el modelo esta pensado para escenarios donde el coste por token es la restriccion principal, como demos publicas o entornos educativos.
+- Filtrado y clasificacion de conversaciones: aunque no se documenta fine-tuning para clasificacion, el modelo puede usarse para tareas ligeras de procesamiento de texto en ingles con baja latencia.
+- Despliegue en entornos con restricciones de hardware: la variante Q2_K (0,8 GB) permite ejecutar el modelo en dispositivos con menos de 2 GB de RAM/VRAM, util para pruebas en Raspberry Pi o contenedores ligeros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el número de parámetros del modelo base. La estimación depende directamente del tamaño del modelo y de la cuantización elegida.
-- GPU recomendadas: no disponible por la misma razón.
-- Viabilidad en GPU consumer: no verificable sin conocer el tamaño del modelo; las cuantizaciones Q3_K_M y Q4_K_S están pensadas para reducir huella de memoria, pero no se puede confirmar qué tarjetas las admiten.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier motor compatible con GGUF (por ejemplo, llama.cpp server). No consta compatibilidad verificada con vLLM o TGI, que habitualmente requieren pesos en safetensors.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (segun cuantizacion):
+  - Q2_K: ~0,8 GB de pesos, ~1,5-2 GB de VRAM total con contexto moderado.
+  - Q4_K_M: ~1,1 GB de pesos, ~2-2,5 GB de VRAM total.
+  - Q8_0: ~1,7 GB de pesos, ~2,5-3 GB de VRAM total.
+  - f16: ~3,2 GB de pesos, ~4-4,5 GB de VRAM total.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para f16; para cuantizaciones Q4 o inferiores, basta con 2-3 GB. Una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden ejecutar las variantes pequenas.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas, incluidas las de gama baja, y tambien en CPU mediante llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni sobre alternativas comparables en parámetros, contexto, rendimiento o licencia. La única comparación posible es interna al propio repositorio, entre sus distintas cuantizaciones (x-f16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K, IQ4_XS), sin datos de calidad publicados.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Converse-1.3-GGUF | 1,54 B | no disponible | Apache 2.0 | GGUF | Enfocado a conversacion de bajo coste, solo ingles |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Multilingue, benchmarks publicados, ecosistema amplio |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Entrenado con datos publicos, benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,24 B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Contexto muy largo, licencia con restricciones |
+
+La comparativa se basa en caracteristicas publicas de modelos de tamano similar; no se dispone de datos de rendimiento de Converse-1.3 para comparar benchmarks directamente. Qwen2.5-1.5B y SmolLM2-1.7B ofrecen documentacion tecnica detallada y resultados publicados, mientras que Converse-1.3 carece de esa transparencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripción de arquitectura, entrenamiento, sesgos o limitaciones del modelo base en este repositorio.
-- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; es imprescindible consultar la licencia del modelo original dgAI202/Converse-1.3 antes de cualquier despliegue en producción.
-- Idiomas no declarados: no se puede garantizar el comportamiento en castellano ni en ningún otro idioma.
-- Riesgo de alucinación: inherente a los modelos de lenguaje, pero no cuantificado aquí por falta de datos.
-- Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden perder calidad de forma apreciable frente a Q8_0 o x-f16; no hay evaluaciones publicadas que lo midan.
-- Trazabilidad: se trata de una republicación de terceros, no del autor original, por lo que la integridad de los pesos depende del proceso de conversión de mradermacher y no de dgAI202.
-- Fecha de creación futura respecto a la fecha habitual de referencia: el repositorio figura creado el 2026-11-13, dato que conviene verificar directamente en Hugging Face.
+- Ausencia total de documentacion tecnica: no se conocen arquitectura, datos de entrenamiento, contexto maximo ni proceso de alineacion, lo que dificulta evaluar su calidad y seguridad.
+- Solo soporta ingles segun la model card; no hay evidencia de capacidades multilingues.
+- Riesgo de alucinacion desconocido pero probable en un modelo de 1,54 B sin benchmarks publicados.
+- Sesgos desconocidos: al no documentarse la composicion del dataset, no es posible evaluar sesgos de genero, raza o ideologicos.
+- Las cuantizaciones son estaticas (no imatrix), por lo que las variantes de baja calidad (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia.
+- Aunque la licencia Apache 2.0 permite uso comercial, la falta de evaluacion de seguridad hace recomendable auditar el modelo antes de desplegarlo en produccion con usuarios finales.
+- No hay garantia de soporte ni mantenimiento por parte del autor original; el modelo base tiene pocas descargas y cero likes en la fecha de esta ficha.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Converse-1.3-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Converse-1.3-GGUF
 - Modelo base: https://huggingface.co/dgAI202/Converse-1.3
+- Pagina de descargas de mradermacher: https://hf.tst.eu/model#Converse-1.3-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -2,106 +2,116 @@
 
 ## Resumen
 
-Tenet-8B-Llama3.1-Unslop-v1 es un ajuste fino del modelo meta-llama/Llama-3.1-8B-Instruct desarrollado por el autor mr-andrey-isachenko bajo la marca Tenet. El modelo aplica una tecnica propietaria denominada Lancet, descrita por el autor como una cirugia de subespacio con preservacion de norma y proyeccion bidireccional, orientada a eliminar el exceso de rechazos (over-refusals) y el denominado "slop" estilistico (prosa recargada, preambulos moralizantes y vocabulario generico) sin degradar las capacidades de razonamiento, codigo y uso de herramientas del modelo base. Sobre esa cirugia se aplica un pase de GRPO con compuertas de recompensa ("gated unslop GRPO") y se exporta un checkpoint en FP8 (E4M3) listo para proveedores.
+Tenet-8B-Llama3.1-Unslop-v1 es un ajuste fino (fine-tune) del modelo `meta-llama/Llama-3.1-8B-Instruct` publicado por el usuario de Hugging Face `mr-andrey-isachenko` bajo el paraguas de la familia "Tenet". El modelo aplica una tecnica propietaria denominada Lancet, descrita por el autor como "cirugia de subespacios bi-proyectada que preserva la norma", cuyo objetivo es eliminar la direccion de rechazo (refusal) tanto en la proyeccion de entrada (residual stream) como en la de salida (unembedding), restaurando exactamente la norma residual para mantener las activaciones en la variedad original.
 
-El modelo mantiene la arquitectura transformer densa de Llama 3.1 de 8B parametros y una ventana de contexto de hasta 32.768 tokens segun el ejemplo de despliegue en vLLM de la model card. Se distribuye con licencia Apache 2.0 y sin codigo personalizado ni `trust_remote_code`, lo que facilita su integracion directa en vLLM, proveedores de OpenRouter, GGUF y MLX.
+Sobre esa cirugia se aplica un pase de GRPO ("gated unslop GRPO") que penaliza patrones de estilo considerados "slop" (prosa recargada, preambulos moralizantes, vocabulario grandilocuente) solo en las regiones donde la cirugia debilito los circuitos de rechazo, con el objetivo declarado de reforzar razonamiento y codigo en lugar de degradarlos. El checkpoint se distribuye en FP8 (E4M3) y tambien como GGUF, sin codigo personalizado ni `trust_remote_code`, lo que facilita su despliegue directo en vLLM, proveedores de OpenRouter y llama.cpp.
 
-Su relevancia actual radica en el nicho de modelos "abliterated" o "uncensored" orientados a uso agentico y tool calling, donde el autor afirma que las tecnicas de abliteracion ingenua rompen la estructura de salida (JSON, SQL) y degradan el rendimiento. Tenet propone una alternativa quirurgica con metricas internas propias (H9, H10, H11) que, no obstante, no estan validadas por benchmarks publicos estandar.
+El modelo tiene 8.030.261.248 parametros (8B densos, no MoE) y hereda la ventana de contexto de Llama 3.1 (128.000 tokens, aunque este dato no se explicita en la model card y se infiere del modelo base). Su relevancia actual radica en el nicho de modelos "abliterated"/"uncensored" orientados a uso agentico con tool calling y SQL, donde el autor reclama una retencion de capacidades muy superior a la abliteracion ingenua. La licencia es Apache-2.0 segun los metadatos, aunque el modelo base Llama 3.1 tiene su propia licencia comunitaria de Meta, lo que introduce una advertencia importante (ver limitaciones).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Llama 3.1) |
-| Parametros totales | 8B (heredados del modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (segun ejemplo de despliegue en vLLM de la model card) |
-| Tipos de cuantizacion | FP8 (E4M3) exportado; GGUF (CKA-Quant Q4_K_M mencionado); MLX |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (FP8 E4M3), GGUF |
+| Arquitectura | Transformer denso (derivado de Llama 3.1 8B Instruct) |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la model card; el modelo base Llama 3.1 soporta 128.000 tokens |
+| Tipos de cuantizacion | FP8 (E4M3) como checkpoint principal; GGUF (cuantizaciones no detalladas); safetensors BF16/FP8 |
+| Idiomas soportados | no disponible (los del modelo base: predominantemente ingles y multilingue limitado) |
+| Licencia | apache-2.0 (metadatos); sujeto ademas a la licencia comunitaria de Llama 3.1 de Meta por herencia del modelo base |
+| Formato de pesos | safetensors, GGUF; compatible con MLX segun la model card |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Llama-3.1-8B-Instruct, un transformer denso con atención estándar (no se mencionan modificaciones arquitectónicas del backbone). La innovación descrita se sitúa en el post-entrenamiento: el motor Lancet realiza una "cirugia de subespacio con preservacion de norma y proyeccion bidireccional", identificando la direccion de rechazo tanto en la proyeccion de entrada (residual stream) como en la de salida (unembedding), eliminando la componente en ambas direcciones y restaurando exactamente la norma residual para mantener las magnitudes de activacion y las distribuciones de tokens posteriores sobre la variedad original ("on-manifold").
+La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer denso con atencion por cabezas agrupadas (GQA) y RoPE, sin modificaciones estructurales declaradas. La innovacion del release no esta en la arquitectura sino en el pipeline de post-entrenamiento. El autor describe tres etapas: (1) cirugia Lancet, que identifica la direccion de rechazo en las proyecciones de entrada y salida, elimina el componente de forma bidireccional y restaura la norma residual exactamente; (2) GRPO con puertas ("gated unslop GRPO"), una optimizacion de preferencias por grupos cuya recompensa penaliza patrones de "slop" solo donde la cirugia debilito el rechazo; y (3) fusion TIES "subspace-safe" y cuantizacion FP8 (E4M3).
 
-Tras la cirugia se aplica un pase de GRPO (Group Relative Policy Optimization) con compuertas de recompensa que penalizan patrones de "slop" solo en las regiones donde la cirugia debilito los circuitos de rechazo, con el objetivo de reforzar razonamiento y codigo en lugar de danarlos. El autor no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF/DPO adicionales. El checkpoint se exporta en FP8 (E4M3) y se reportan metadatos de estabilidad numerica: factor de cresta maximo por fila de 6,32 y peso absoluto maximo de 0,91.
+Los datos de entrenamiento no se detallan en la informacion disponible: no se indica el numero de tokens, la composicion del dataset ni la procedencia de las preferencias usadas en GRPO. Si se mencionan metricas internas del pipeline (`final_metrics.json`) que miden deriva KL colateral, retencion de capacidades (IFEval), robustez tras cuantizacion FP8 y retencion tras la fusion TIES. El autor no publica detalles del dataset ni del codigo de entrenamiento mas alla del repositorio `tenet-lab` en GitHub. No se declara el uso de RLHF clasico ni DPO; el metodo de alineacion es exclusivamente GRPO con recompensas basadas en reglas y estilo.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en formato chat (chat template de Llama 3.1).
-- Razonamiento estructurado y codificacion, con enfasis declarado en preservar el "subespacio ancla" de razonamiento analitico y de codigo del modelo base.
-- Tool calling / function calling, con ejemplos de la model card orientados a generar llamadas de herramienta validas en JSON y consultas SQL (DuckDB).
-- Uso agentico y flujos multi-paso (tag "agentic").
-- Reduccion de rechazos falsos positivos ante prompts benignos (por ejemplo, triaje de logs de seguridad).
-- Mitigacion de "slop" estilistico: prosa recargada, preambulos moralizantes y vocabulario generico.
-- Capacidades multilingues: no disponible (no se especifican idiomas).
-- Modo thinking, vision o audio: no disponible (no se mencionan).
+- Generacion de texto conversacional multi-turno, heredada de Llama 3.1 8B Instruct.
+- Razonamiento estructurado y codificacion, con refuerzo declarado via GRPO para preservar estas capacidades tras la cirugia.
+- Tool calling y function calling: el autor etiqueta el modelo como "tool-use" y "agentic", y reporta retencion del 0.98 en el subespacio de anclaje tool/SQL.
+- Generacion de SQL y tareas de recuperacion de incidentes SQL (metrica "SQL-Incident Retention" de 0.98).
+- Reduccion de rechazos falsos positivos ante peticiones benignas (supresion de rechazo reportada de 0.99 en BF16 y 1.00 en FP8).
+- Mitigacion de "AI slop" estilistico: prosa recargada, preambulos moralizantes y vocabulario grandilocuente.
+- Capacidades multilingues: no disponibles de forma explicita; las del modelo base (ingles dominante, multilingue limitado).
+- No se declaran capacidades de vision, audio ni modo "thinking" explicito.
 
 ## Casos de uso
 
-- Triaje de logs de seguridad y generacion de consultas SQL: el modelo puede recibir lineas de log (por ejemplo, nginx auth) y devolver una llamada de herramienta DuckDB con SQL valido, evitando el rechazo falso tipico del base y manteniendo el esquema JSON, segun el ejemplo de la model card.
-- Agentes de operaciones (AppSec/DevOps): integracion en pipelines que requieren tool calling fiable y salidas estructuradas, aprovechando la ortogonalidad declarada del ancla de herramientas/SQL respecto a la direccion de rechazo eliminada.
-- Asistente de codigo en produccion: generacion y revision de codigo con menor tasa de preambulos moralizantes, adecuado para entornos donde el estilo conciso importa.
-- Atencion al cliente automatizada: conversaciones multi-turno con contexto de hasta 32.768 tokens, util para historiales largos de tickets.
-- Despliegue en proveedores de inferencia: el checkpoint FP8 (E4M3) sin codigo personalizado encaja en vLLM y en proveedores tipo OpenRouter con una sola orden de servicio.
-- Inferencia en hardware de consumo: la variante GGUF CKA-Quant Q4_K_M permite ejecucion local con llama.cpp para prototipado y pruebas sin GPU de datacenter.
-- Generacion de contenido tecnico sin "slop": documentacion y respuestas concisas donde se quiere evitar prosa recargada y moralizacion.
+- Asistentes conversacionales sin friccion: el modelo reduce rechazos falsos positivos ante peticiones benignas, lo que resulta util en atencion al cliente o asistentes internos donde la abliteracion ingenua degrada la experiencia con negativas innecesarias.
+- Generacion de SQL en produccion: la retencion reportada de 0.98 en el subespacio tool/SQL lo hace candidato para pipelines de text-to-SQL y asistentes de analitica que requieren llamadas a herramientas y consultas estructuradas.
+- Agentes con tool calling: la orientacion "agentic" y la compatibilidad con vLLM y proveedores de OpenRouter permiten integrarlo en orquestadores de agentes que encadenan llamadas a funciones.
+- Asistencia a la programacion: el refuerzo declarado de codigo tras el GRPO lo situa como alternativa a Llama 3.1 Instruct en autocompletado, revision de codigo y generacion de tests, con menor tendencia a preambulos moralizantes.
+- Despliegue en infraestructura propia con vLLM: el checkpoint FP8 (E4M3) sin codigo personalizado se carga directamente en vLLM, lo que simplifica el servicio en produccion con throughput alto.
+- Ejecucion local con llama.cpp u Ollama: la disponibilidad de GGUF permite desplegarlo en estaciones de trabajo y equipos consumer, util para prototipado y evaluacion offline.
+- Generacion de contenido creativo sin "slop": la penalizacion de prosa recargada y vocabulario grandilocuente lo hace adecuado para redaccion asistida donde se busca un estilo sobrio.
 
 ## Benchmarks y rendimiento
 
-La model card reporta unicamente metricas internas propias del autor (H9, H10, H11 y una tabla comparativa), no benchmarks estandar como MMLU, HumanEval o GSM8K.
+Los unicos datos publicados son las metricas internas del pipeline del autor (`final_metrics.json`), no benchmarks estandar de la comunidad. No se han publicado resultados de MMLU, HumanEval, GSM8K ni similares en la informacion disponible.
 
-| Variante | H9 (menor mejor) | H10 (mayor mejor) | H11 (mayor mejor) |
-|---|---|---|---|
-| BF16 | 0,01 | 0,46 | 0,99 |
-| FP8 (E4M3) | 0,04 | 1,00 | 0,43 |
-| Abliteracion ingenua | 0,13 | 0,25 | 0,50 |
+| Metrica (etapa) | Valor | Direccion |
+|---|---|---|
+| Lancet KL Collateral (H9) | 0.01 | Menor es mejor |
+| Naive KL Collateral (H9) | 0.13 | Menor es mejor |
+| KL Reduction Ratio (H9) | 0.90 | Mayor es mejor |
+| Target Suppression Ratio (H9) | 0.99 | Mayor es mejor |
+| Gated GRPO IFEval Score (H10) | 0.81 | Mayor es mejor |
+| Gated vs Naive/Additive Gain (H10) | 0.25 | Mayor es mejor |
+| Slop & Refusal Rate (H10) | 0.04 | Menor es mejor |
+| Post-Merge Suppression Retention (H10) | 1.00 | Mayor es mejor |
+| FP8 Retention Ratio (H11) | 0.99 | Mayor es mejor |
+| FP8 KL Reduction vs Naive (H11) | 0.43 | Mayor es mejor |
+| FP8 Subspace Re-Leakage Lancet (H11) | 0.03 | Menor es mejor |
+| FP8 Subspace Re-Leakage Naive (H11) | 0.50 | Menor es mejor |
+| SQL-Incident Retention (H12) | 0.98 | Mayor es mejor |
+| Unslop Retention (H12) | 1.00 | Mayor es mejor |
+| Subspace-Safe Merge Re-Leakage (H12) | 2.16e-07 | Menor es mejor |
+| TIES Bi-Projected vs Naive Gain (H12) | 0.80 | Mayor es mejor |
 
-| Metrica | Base | Abliteracion ingenua | Tenet (BF16) | Tenet (FP8 E4M3) |
-|---|---|---|---|---|
-| Deriva colateral KL | — | 0,13 | 0,01 | 0,03 |
-| Supresion de rechazo | — | — | 0,99 | 1,00 |
-| Ortogonalidad del ancla Tool/SQL | — | 1,13 | 1,00e-08 | 0,07 |
-| Re-fuga LoRA | — | 1,13 | 0,07 | 0,03 |
-| Re-fuga de subespacio FP8 | — | 0,50 | — | 0,03 |
-| Factor de cresta maximo por fila (< 25,0) | — | — | 6,32 | 6,32 |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El autor menciona ademas una comparativa "Model Fight Card 16" (2026-11-20) en la que el modelo habria quedado primero con 50 HP frente a Llama-3.1-8B, Mistral-7B, Gemma-3-12B, Qwen3-14B y GPT-OSS-20B, pero esa evaluacion es de un sitio de terceros no verificado y no se aportan los resultados numericos por benchmark estandar.
 
 ## Requisitos de hardware
 
-- VRAM estimada: alrededor de 16 GB en BF16 para los 8B parametros; aproximadamente 8-9 GB en FP8 (E4M3); en torno a 5-6 GB en GGUF Q4_K_M.
-- GPU recomendadas: A100, H100 o L40S para servicio FP8 en vLLM con contexto largo; RTX 4090 (24 GB) suficiente para FP8 y para BF16 con contexto moderado.
-- GPU de consumo: cabe en RTX 4090, RTX 3090 y GPUs con 12-16 GB en cuantizacion Q4_K_M; en 8 GB puede requerir cuantizaciones mas agresivas no documentadas.
-- Opciones de despliegue: vLLM (`--quantization fp8`), Transformers (`device_map="auto"`), llama.cpp (GGUF CKA-Quant Q4_K_M), Ollama, MLX, y proveedores tipo OpenRouter.
-- Latencia y throughput: no disponibles.
+- VRAM estimada en BF16: aproximadamente 16 GB de pesos mas overhead de activaciones y cache KV; se recomienda 24 GB o mas para contexto largo.
+- VRAM estimada en FP8 (E4M3): aproximadamente 8-9 GB de pesos; con cache KV para 8.000-32.000 tokens, un rango realista de 16-24 GB.
+- VRAM estimada en GGUF Q4_K_M: aproximadamente 5-6 GB de pesos; cabe en GPUs consumer de 8 GB con contexto moderado.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB, L40S, RTX 4090 (24 GB) para FP8 con contexto amplio; RTX 3090/4080 (16-24 GB) para FP8 con contexto moderado.
+- Cabe en GPU consumer: si, en RTX 4090 (FP8/BF16 con contexto moderado) y en GPUs de 8-12 GB usando GGUF cuantizado.
+- Opciones de despliegue: vLLM (soporte nativo declarado), llama.cpp, Ollama (via GGUF), MLX, Text Generation Inference (tag `text-generation-inference`), proveedores de OpenRouter.
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Tenet-8B-Llama3.1-Unslop-v1 | 8B | 32.768 | De-refusal quirurgico + GRPO, FP8 | Apache 2.0 | Hugging Face |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Instruct generalista | Llama 3.1 Community License | Hugging Face |
-| Abliteracion ingenua de Llama-3.1-8B | 8B | 128.000 | Eliminacion directa de direccion de rechazo | Segun base | Multiples repos comunitarios |
-| Modelos "uncensored" 7-8B de la comunidad | 7-8B | variable | Ajustes sin alineacion | variable | Hugging Face |
+| Tenet-8B-Llama3.1-Unslop-v1 | 8.03B densos | no disponible (base: 128k) | apache-2.0 (metadatos) + licencia Llama 3.1 | Abliteracion quirurgica + GRPO anti-slop + FP8 | Hugging Face, GGUF, vLLM |
+| meta-llama/Llama-3.1-8B-Instruct | 8.03B densos | 128k | Licencia comunitaria Llama 3.1 | Modelo base alineado | Hugging Face, amplio ecosistema |
+| Mistral-7B-Instruct | 7.2B densos | 32k | Apache-2.0 | Modelo generalista alineado | Hugging Face, amplio ecosistema |
+| Qwen3-14B | 14B densos | 32k-128k segun variante | Apache-2.0 | Modelo generalista multilingue | Hugging Face |
 
-Nota: los datos de contexto del modelo base Llama 3.1 son 128.000 tokens; la model card de Tenet solo documenta 32.768 en su ejemplo de vLLM, por lo que el contexto efectivo maximo de este ajuste no esta confirmado.
+No se dispone de comparativas de rendimiento estandar (MMLU, HumanEval) entre estos modelos en la informacion proporcionada; la unica comparacion publicada es la "Model Fight Card 16" del autor, cuyos resultados numericos por benchmark no se detallan.
 
 ## Limitaciones y advertencias
 
-- Las metricas H9, H10 y H11 son internas del autor y no equivalen a benchmarks estandar; no permiten comparacion directa con otros modelos.
-- El modelo ha sido sometido a una eliminacion deliberada de la direccion de rechazo, lo que incrementa el riesgo de generar contenido inapropiado o danino; el autor declara fuera de alcance el uso ofensivo, malware o contenido ilegal, pero la salvaguarda tecnica es reducida.
-- Riesgo de alucinacion no evaluado en la informacion disponible.
-- Idiomas soportados no especificados; el comportamiento multilingue puede diferir del base.
-- El contexto efectivo documentado (32.768 tokens) es inferior al del modelo base (128.000); conviene verificar el limite real antes de usarlo en produccion.
-- El checkpoint se distribuye en FP8 (E4M3); la tabla H11 sugiere que la robustez frente a cuantizacion adicional puede ser limitada (0,43 en FP8 frente a 0,99 en BF16).
-- Licencia Apache 2.0 declarada en el repo, pero el modelo deriva de Llama 3.1, cuya licencia comunitaria impone condiciones adicionales; conviene revisar la compatibilidad para uso comercial.
-- Repo con 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente de la comunidad.
-- El tamano del repo figura como 0,0 GB, lo que sugiere que los pesos pueden no estar publicados o la informacion esta incompleta.
+- La eliminacion de la direccion de rechazo puede aumentar la probabilidad de generar contenido que el modelo base rechazaria; el autor declara explicitamente fuera de alcance el cibercrimen ofensivo, la generacion de malware y el contenido ilegal, pero no se aportan evaluaciones de seguridad independientes.
+- Riesgo de alucinacion: no se han publicado evaluaciones de factualidad ni de calibracion; al ser un fine-tune de 8B, el riesgo es comparable al del modelo base.
+- Las metricas publicadas son internas del pipeline del autor y no han sido verificadas por terceros; la "Model Fight Card 16" procede de un sitio no contrastado.
+- La licencia declarada en metadatos es Apache-2.0, pero al derivar de Llama 3.1 8B Instruct se heredan las restricciones de la licencia comunitaria de Meta (incluida la politica de uso aceptable y la clausula de nomenclatura para productos derivados); conviene revisar ambas antes de uso comercial.
+- No se detallan los idiomas soportados; el modelo base esta optimizado para ingles y su rendimiento en castellano puede ser inferior.
+- No se especifica la longitud de contexto efectiva tras el fine-tune; se asume la del modelo base, pero no hay confirmacion.
+- El modelo tiene muy poca traccion (1 like, ~1.200 descargas) y fue publicado recientemente; no hay evidencia de uso en produccion ni auditorias de robustez.
+- El checkpoint FP8 (E4M3) puede presentar pequenas diferencias de comportamiento frente a BF16; el autor reporta retencion del 0.99, pero no se detallan las condiciones de la medicion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/mr-andrey-isachenko/Tenet-8B-Llama3.1-Unslop-v1
+- Modelo en Hugging Face: https://huggingface.co/mr-andrey-isachenko/Tenet-8B-Llama3.1-Unslop-v1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Repositorio de codigo y reporte tecnico: https://github.com/mrAndreyIsachenko/tenet-lab
+- Space de auditoria (FP8 & Abliteration Inspector): https://huggingface.co/spaces/mr-andrey-isachenko/fp8-abliteration-inspector
+- Coleccion de la familia Tenet v1: https://huggingface.co/mr-andrey-isachenko
+- Discusion con la evaluacion "Peer Eval": https://huggingface.co/mr-andrey-isachenko/Tenet-8B-Llama3.1-Unslop-v1/discussions/1
+- Model Fight Card 16 (sitio de terceros): https://onlymodels.gg/cards/2026-11-20.html
+- Artefactos de la serie House: https://onlymodels.gg/data/card-2026-11-20.json

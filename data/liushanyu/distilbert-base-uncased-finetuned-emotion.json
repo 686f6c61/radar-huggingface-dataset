@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "liushanyu/distilbert-base-uncased-finetuned-emotion",
+  "slug": "liushanyu-distilbert-base-uncased-finetuned-emotion",
+  "author": "liushanyu",
+  "url": "https://huggingface.co/liushanyu/distilbert-base-uncased-finetuned-emotion",
+  "created_at": "2026-11-21T01:43:00.000Z",
+  "updated_at": "2026-11-21T01:46:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "emotion-classification",
+    "sentiment-analysis",
+    "en",
+    "dataset:emotion",
+    "arxiv:1910.01108",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267850265,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "emotion",
+      "metric": "Accuracy",
+      "value": 0.9435
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "emotion",
+      "metric": "Weighted F1",
+      "value": 0.9435
+    }
+  ],
+  "sources": []
+}

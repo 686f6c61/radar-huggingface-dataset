@@ -2,89 +2,84 @@
 
 ## Resumen
 
-LFM3-1.7B-abliterated es una variante del modelo LiquidAI/LFM3-1.7B publicada por el usuario orcarouter en Hugging Face. Se trata de una versión "abliterated" (también conocida como uncensored) del modelo base, en la que se ha aplicado una técnica de edición de pesos orientada a eliminar o reducir los mecanismos de rechazo y las capas de alineación de seguridad del modelo original. El resultado es un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) que mantiene la arquitectura Liquid Foundation Model de tercera generación (lfm3) pero con un comportamiento conversacional menos restrictivo.
+LFM3-1.7B-abliterated es una variante "abliterated" (sin censura) del modelo LiquidAI/LFM3-1.7B, publicada por el usuario orcarouter en Hugging Face. Se trata de un fine-tune del modelo base de Liquid AI, una startup especializada en modelos eficientes para despliegue en el edge. El modelo conserva la arquitectura original de LFM3 (familia "liquid", con código personalizado en transformers) y sus 1.728.801.536 parámetros totales, pero ha sido modificado para eliminar los mecanismos de rechazo y alineación de seguridad del modelo original.
 
-El modelo hereda del LFM3-1.7B base su orientación a despliegue en el edge y su soporte multilingüe para 17 idiomas (inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco, entre otros). La arquitectura se etiqueta como "liquid" y requiere código personalizado (`custom_code`) para su carga en transformers, lo que indica que no es un transformer estándar.
+La relevancia de esta ficha es doble. Por un lado, documenta una práctica creciente en la comunidad open source: la publicación de versiones "abliterated" orientadas a red teaming de IA y a investigación sobre seguridad de modelos. Por otro, permite evaluar las implicaciones técnicas y éticas de redistribuir un modelo sin salvaguardas, especialmente cuando el modelo base está sujeto a una licencia restrictiva (LFM Open License v1.0) y el acceso al repositorio está restringido mediante gating.
 
-Su relevancia radica en dos factores: por un lado, sirve como caso de estudio de las técnicas de abliteration aplicadas a modelos compactos de nueva generación; por otro, su naturaleza "uncensored" lo hace útil para investigación en red teaming y evaluación de seguridad de IA, pero también lo convierte en un modelo con riesgos significativos para uso en producción. El acceso está restringido (gated) en Hugging Face y requiere aceptar condiciones adicionales.
+El modelo está etiquetado explícitamente como "uncensored" y "ai-red-team", soporta 17 idiomas (incluido el castellano) y se distribuye en formato safetensors compatible con transformers, con un tamaño de repositorio de 3,5 GB. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Liquid Foundation Model 3 (lfm3), requiere `custom_code`; no es un transformer denso convencional |
-| Parametros totales | 1.728.801.536 (~1,7 mil millones) |
+| Arquitectura | LFM3 (familia "liquid", transformer con código personalizado; detalles internos no disponibles) |
+| Parametros totales | 1.728.801.536 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo solo contiene safetensors en precisión original; no se listan GGUF ni otras variantes) |
+| Tipos de cuantizacion | no disponible (repo en safetensors; no se listan GGUF ni otras variantes) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (licencia propia de Liquid AI, etiquetada como `license:other`) |
-| Formato de pesos | safetensors (repo de 3,5 GB) |
+| Licencia | lfm1.0 (LFM Open License v1.0), etiquetada como "other" |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura LFM3 (Liquid Foundation Model 3) de Liquid AI, etiquetada en el repo como "liquid" y "edge". Esta familia se caracteriza por diseños híbridos y eficientes orientados a inferencia en dispositivos con recursos limitados, aunque la información disponible no detalla la composición exacta de capas (atención, recurrentes o mixtas) ni la proporción entre ellas. El uso de `custom_code` implica que la implementación depende de código remoto registrado en el repositorio, no de una clase estándar de transformers.
+El modelo base LiquidAI/LFM3-1.7B pertenece a la familia LFM3 de Liquid AI, etiquetada en Hugging Face con los tags "lfm3" y "liquid". La información disponible no detalla la arquitectura interna más allá de que requiere `custom_code` en transformers, lo que implica que la implementación no es un transformer estándar y necesita cargar código específico del repositorio. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base utilizó RLHF, DPO u otras técnicas de alineación.
 
-Sobre el proceso de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) no se ha proporcionado información en los datos disponibles. Respecto a la modificación "abliterated", la información disponible no especifica la técnica concreta empleada (por ejemplo, proyección ortogonal de la dirección de rechazo, edición de capas específicas o fine-tuning con datos no censurados), el número de capas afectadas ni el dataset utilizado para la recalibración. No se dispone de datos sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal en esta variante concreta.
+La modificación "abliterated" consiste en una intervención sobre los pesos orientada a suprimir la dirección de rechazo aprendida durante la alineación, de forma que el modelo deja de negarse a responder a peticiones que el modelo original rechazaría. No se documentan en la información proporcionada los detalles del procedimiento aplicado (por ejemplo, número de capas modificadas, método de ortogonalización o dataset usado para el fine-tune). El resultado es un modelo sin salvaguardas de seguridad, distribuido bajo acceso restringido.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, heredada del modelo base LFM3-1.7B.
-- Comportamiento "abliterated": reducción deliberada de rechazos y respuestas de seguridad ante peticiones que el modelo base rechazaría.
-- Soporte multilingüe para 17 idiomas, incluyendo español, inglés, chino, árabe, hindi y ruso.
-- Orientación a despliegue en edge por su tamaño compacto (~1,7 B parámetros).
-- Capacidad de ejecución mediante `trust_remote_code=True` en transformers, dado el uso de `custom_code`.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles; el pipeline es exclusivamente `text-generation`.
-- Modo "thinking" explícito: no disponible en la información proporcionada.
+- Generación de texto conversacional en 17 idiomas, incluidos castellano, inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Orientado explícitamente a red teaming de IA y a investigación sobre robustez y seguridad de modelos (tags "ai-red-team" y "uncensored").
+- Respuestas sin rechazo a peticiones que el modelo base alineado rechazaría, por diseño del proceso de abliteration.
+- Compatible con el pipeline `text-generation` de transformers y con endpoints compatibles (tag "endpoints_compatible").
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Investigación en red teaming y evaluación de seguridad: el modelo permite a equipos de seguridad de IA probar cómo responde un modelo sin capas de rechazo ante prompts adversarios, comparándolo con el LFM3-1.7B original para medir el impacto de la abliteration en la tasa de cumplimiento de peticiones dañinas.
-- Estudio académico de técnicas de abliteration: al ser una variante pública de un modelo base conocido, sirve para analizar qué capas y direcciones de activación codifican el comportamiento de rechazo en arquitecturas LFM3, y validar metodologías de edición de pesos.
-- Evaluación de robustez de filtros externos: permite probar sistemas de moderación (guardrails) de terceros contra un modelo deliberadamente desalineado, verificando si los filtros de entrada y salida capturan contenido que el modelo generaría sin restricciones internas.
-- Generación de texto creativo sin restricciones temáticas: escritura de ficción, guiones o narrativa que aborde temas sensibles (violencia, contenido adulto) donde el modelo base aplicaría rechazos, siempre que el uso cumpla la legislación aplicable.
-- Desarrollo de datasets de contraste: generar pares de respuestas (modelo base frente a variante abliterated) para entrenar clasificadores de seguridad o modelos de recompensa que detecten respuestas potencialmente dañinas.
-- Pruebas de despliegue en edge con modelos compactos: aprovechar el tamaño de ~1,7 B parámetros para validar pipelines de inferencia local en GPUs de consumo, evaluando el coste de cargar código personalizado (`custom_code`) en entornos controlados.
+- Red teaming de IA: el modelo permite a equipos de seguridad generar respuestas que un modelo alineado bloquearía, facilitando la construcción de conjuntos de evaluación de jailbreaks y el estudio de vectores de ataque sobre sistemas desplegados.
+- Investigación sobre alineación: comparar las respuestas del modelo abliterated con las del LFM3-1.7B original permite analizar qué comportamientos dependen de la dirección de rechazo y cómo se distribuyen en el espacio de activaciones.
+- Evaluación de filtros de moderación: usar el modelo como generador adversario para probar clasificadores de contenido y pipelines de moderación en producción, verificando su tasa de detección ante texto no censurado.
+- Estudio de sesgos multilingües: al cubrir 17 idiomas, permite analizar si la supresión de la alineación afecta de forma desigual a distintas lenguas y culturas, un aspecto poco explorado en la literatura.
+- Experimentación en el edge: con 1,7 mil millones de parámetros y formato safetensors, es viable en GPUs de consumo para prototipos de investigación que requieran un modelo pequeño sin restricciones de contenido.
+- Docencia y formación en seguridad de IA: sirve como ejemplo controlado de modelo sin salvaguardas para ilustrar en cursos y talleres las diferencias entre un modelo alineado y uno abliterated, siempre en entornos aislados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con el modelo base LiquidAI/LFM3-1.7B.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 1.728.801.536 parámetros, en FP16/BF16 se requieren aproximadamente 3,5 GB solo para los pesos, más overhead de activaciones y caché KV; en cuantización de 8 bits, alrededor de 1,8 GB; en 4 bits, alrededor de 1 GB. Estas cifras son estimaciones por tamaño de parámetros, no datos publicados para esta variante.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 (RTX 3060 Ti, RTX 4060, RTX 4070); GPUs de datacenter (A100, H100) no son necesarias para este tamaño.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060, RTX 4060, RTX 4070 y superiores en FP16; en GPUs con 6-8 GB mediante cuantización.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (requerido por `custom_code`); vLLM, llama.cpp, Ollama o TGI solo si existe soporte para la arquitectura LFM3, dato no confirmado en la información disponible. No se listan variantes GGUF en el repo.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 3,5 GB en fp16 (1,73 mil millones de parámetros), alrededor de 1,8 GB en cuantización de 8 bits y en torno a 1 GB en 4 bits, estimaciones teóricas a partir del número de parámetros.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060, RTX 4060, RTX 4090, A100, H100). Para cuantización de 4 u 8 bits bastan GPUs de 4-6 GB.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 6 GB o más de VRAM.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (obligatorio por el código personalizado), vLLM y TGI si soportan la arquitectura LFM3 (no confirmado en la información disponible). No se listan conversiones GGUF ni soporte de Ollama o llama.cpp en el repositorio.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
-|---|---|---|---|---|---|
-| orcarouter/LFM3-1.7B-abliterated | ~1,7 B | no disponible | lfm1.0 | Gated | Variante abliterated, requiere `custom_code` |
-| LiquidAI/LFM3-1.7B | ~1,7 B | no disponible | lfm1.0 | Público (modelo base) | Modelo original alineado; referencia directa para comparar el efecto de la abliteration |
-| Modelos compactos tipo Qwen2.5-1.5B o Llama-3.2-1B | 1-1,5 B | 32K-128K según variante | Apache 2.0 / Llama | Público | Alternativas de tamaño similar con ecosistema estándar de transformers; datos de rendimiento no comparables sin benchmarks publicados de esta variante |
+| Modelo | Parametros | Contexto | Licencia | Estado |
+|---|---|---|---|---|
+| orcarouter/LFM3-1.7B-abliterated | 1,73 B | no disponible | lfm1.0 (other) | Acceso restringido, 813 descargas |
+| LiquidAI/LFM3-1.7B | 1,73 B | no disponible | lfm1.0 | Modelo base, presumiblemente público |
+| Otras variantes abliterated de la familia LFM | no disponible | no disponible | no disponible | No se han identificado en la información proporcionada |
 
-La comparación cuantitativa de rendimiento no está disponible: no se han publicado benchmarks de esta variante ni del LFM3-1.7B base en la información proporcionada, por lo que no es posible establecer diferencias de calidad más allá del comportamiento de rechazo esperado.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento del modelo con alternativas de la misma categoría. La comparación se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Modelo deliberadamente "uncensored": la abliteration reduce los rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o sexualmente explícito ante peticiones que el modelo base bloquearía. No es apto para aplicaciones de cara al público sin filtros externos robustos.
-- Riesgo de alucinación: al ser un modelo de ~1,7 B parámetros, su capacidad de razonamiento y factualidad es limitada en comparación con modelos mayores; la abliteration no mejora esta característica y puede degradar la coherencia en dominios sensibles.
-- Licencia lfm1.0 (etiquetada como `license:other`): es una licencia propia de Liquid AI que puede imponer restricciones adicionales al uso comercial, redistribución o modificación; debe revisarse el texto completo antes de cualquier despliegue en producción. La modificación abliterated puede no estar cubierta explícitamente por los términos del modelo base.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la distribución automatizada.
-- Dependencia de `custom_code`: la carga exige `trust_remote_code=True`, lo que implica ejecutar código remoto del repositorio; riesgo de seguridad en entornos de producción y posible incompatibilidad con frameworks de inferencia estándar.
-- Idiomas: aunque se listan 17 idiomas, no hay datos sobre la calidad relativa por idioma; el rendimiento en lenguas de bajos recursos (tailandés, hindi, vietnamita) puede ser inferior al del inglés.
-- Longitud de contexto no documentada: no es posible planificar cargas de trabajo con ventanas largas sin verificar empíricamente el límite real.
-- Sesgos: no se han publicado evaluaciones de sesgo para esta variante; la edición de pesos puede alterar la distribución de respuestas de formas no medidas.
-- Fecha de creación del repo (2026-11-02) y ausencia de descargas: ecosistema de validación prácticamente nulo; no hay evidencia comunitaria de estabilidad o calidad.
+- Modelo sin salvaguardas: el proceso de abliteration elimina los mecanismos de rechazo, por lo que puede generar contenido dañino, ilegal o explícitamente ofensivo. No debe desplegarse en aplicaciones orientadas al público sin capas adicionales de moderación.
+- Riesgo elevado de alucinación: al tratarse de un modelo de 1,7 mil millones de parámetros, su capacidad de razonamiento y su fiabilidad factual son limitadas en comparación con modelos de mayor tamaño; la supresión de la alineación no mejora la precisión.
+- Licencia restrictiva: la LFM Open License v1.0 impone condiciones de uso que deben revisarse antes de cualquier uso comercial; la etiqueta "other" en Hugging Face indica que no es una licencia estándar permisiva.
+- Acceso restringido: el repositorio está gated y requiere aceptar condiciones en Hugging Face, lo que limita su descarga y despliegue automatizado.
+- Dependencia de código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor del repositorio; conviene auditar dicho código antes de usarlo en entornos de producción.
+- Idiomas: aunque se listan 17 idiomas, no hay datos sobre la calidad relativa por idioma ni sobre el impacto de la abliteration en lenguas distintas del inglés.
+- Sin datos de contexto ni de cuantización: no se puede confirmar la longitud máxima de contexto ni la existencia de conversiones GGUF, lo que complica la planificación de despliegues.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/LFM3-1.7B-abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Repositorio o paper de la arquitectura LFM3: no disponible en la información proporcionada
-- Blog o demo oficial de Liquid AI: no disponible en la información proporcionada
+- Página de Liquid AI: no disponible en la información proporcionada
+- Paper o blog técnico del modelo base: no disponible en la información proporcionada
+- Repositorio de código o demo: no disponible en la información proporcionada

@@ -2,94 +2,109 @@
 
 ## Resumen
 
-Gemma-4-12B-it-Jbliterated-v2 es un modelo de lenguaje de 12 000 millones de parámetros desarrollado por ApolloRaines, derivado de Gemma-4-12B-it de Google mediante un proceso de ablación de rechazos (abliteration) y un ajuste fino supervisado posterior. El modelo base ya había sido sometido a una ablación SVD multi-direccional para eliminar los comportamientos de rechazo de los pesos, y esta versión v2 añade una capa de reparación mediante LoRA que corrige un defecto residual: cuando el canal de razonamiento está activado, el modelo tendía a realizar revisiones de seguridad encubiertas en su cadena de pensamiento y, en una fracción de los casos, entraba en bucles que impedían generar respuesta alguna.
+Gemma-4-12B-it-Jbliterated-v2 es un ajuste fino derivado de Gemma 4 12B instruction-tuned, publicado por el desarrollador independiente ApolloRaines bajo el marco que denomina "jBlaze precision neural surgery". El modelo aplica una eliminación quirúrgica de la dirección de rechazo en los pesos (abliteration) seguida de una pasada de fine-tuning supervisado (SFT) sobre las propias trazas de razonamiento reparadas del modelo v1, con el objetivo de eliminar los espirales de clasificación de seguridad en el canal de pensamiento que provocaban respuestas incompletas o ausentes.
 
-La relevancia de este modelo radica en que ofrece una alternativa "sin censura" de un modelo de la familia Gemma 4, manteniendo la mayor parte de la capacidad del original. Según las mediciones del autor, la tasa de clasificación de seguridad en el razonamiento se reduce del 81,2 % al 35,0 %, y la tasa de respuestas completas aumenta del 61,2 % al 78,8 %, con una caída de solo 0,88 puntos en MMLU. El modelo se distribuye en formato safetensors (bf16) y en cuantizaciones GGUF listas para usar, con una licencia Gemma que permite uso comercial bajo los términos de Google.
+La relevancia del modelo es doble. Por un lado, documenta una técnica concreta para reducir el comportamiento de rechazo sin degradar de forma apreciable las capacidades generales: el autor reporta una caída de 0,88 puntos en MMLU respecto a v1 (77,72% frente a 78,60%) y una mejora en la tasa de respuestas completas del 61,2% al 78,8% sobre 80 prompts retenidos. Por otro, el modelo se presenta explícitamente como herramienta para investigación en seguridad, análisis defensivo y red-teaming, lo que condiciona su uso legítimo.
+
+Arquitectura y entrenamiento: el autor indica que v2 es un checkpoint fusionado y autocontenido que se carga igual que v1, con 11.959.730.224 parámetros totales según los pesos en safetensors. La información disponible no detalla la arquitectura interna más allá de las etiquetas `gemma4_unified` y `gemma4`, ni el volumen o composición exactos del dataset de SFT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atención por grupos de consultas (GQA), 48 capas, tamaño oculto 3840, 16 cabezas de consulta y 8 cabezas clave/valor |
-| Parametros totales | 11 959 730 224 (aprox. 12B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF Q8_0 (11,8 GB) y Q4_K_M (6,9 GB, con imatrix) |
-| Idiomas soportados | Inglés |
-| Licencia | Gemma Terms of Use (Google) |
-| Formato de pesos | Safetensors (bf16) y GGUF |
+| Arquitectura | Transformer (familia Gemma 4; etiqueta `gemma4_unified`), detalles internos no disponibles |
+| Parametros totales | 11.959.730.224 (~12B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (repositorio con archivos GGUF e `imatrix`); cuantizaciones concretas no especificadas |
+| Idiomas soportados | en (inglés) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma-4-12B-it, al que se le aplicó una ablación SVD multi-direccional para eliminar los vectores de rechazo de los pesos (versión v1). Sobre esa base, v2 incorpora un ajuste fino supervisado con una LoRA de rango 32 y alpha 64, aplicada a todas las proyecciones de atención y MLP, con pérdida solo sobre la finalización (el prompt queda enmascarado). El entrenamiento se realizó sobre 320 prompts propios, con objetivos reparados: en los casos donde v1 respondía correctamente, se eliminaban las líneas de clasificación de seguridad del razonamiento; en los casos donde v1 entraba en bucle, se sustituía el trace completo por uno limpio. Se usaron 3 épocas, tasa de aprendizaje 1e-4 con decaimiento coseno, y posteriormente la LoRA se fusionó en los pesos base (merge_and_unload) en bf16.
+El modelo parte de Gemma-4-12B-it-Jbliterated (v1), que a su vez deriva de Gemma 4 12B instruction-tuned. La intervención de v1 es una edición directa de pesos orientada a la dirección de rechazo, sin entrenamiento por gradiente. v2 añade una pasada de fine-tuning supervisado sobre las trazas de razonamiento reparadas del propio v1, dirigida específicamente a suprimir las espirales de clasificación de seguridad en el canal de pensamiento, y posteriormente fusiona el resultado en los pesos base para producir un checkpoint único autocontenido.
 
-El resultado es un modelo autocontenido que carga igual que v1, pero con una cadena de pensamiento significativamente menos propensa a realizar revisiones de seguridad y a auto-sabotearse. El autor reporta que en el conjunto de evaluación (80 prompts no vistos) la tasa de espirales sin respuesta baja del 35,0 % al 21,2 %, y la tasa de respuestas completas sube al 78,8 %.
+El autor corrige explícitamente una afirmación previa de la model card: v2 sí aplica entrenamiento por gradiente, está etiquetado como `sft` y una auditoría espectral independiente midió el delta en rango 189-227 de 256, lo que respalda que se trata de una edición entrenada y no de una construcción. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset de SFT ni si se emplearon RLHF o DPO. El autor menciona además que el SFT se condicionó a la preservación de capacidad, con una tolerancia de caída en MMLU inferior a 1,05 puntos.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés, con seguimiento directo de instrucciones.
-- Razonamiento con cadena de pensamiento (thinking channel) activable, con menor tendencia a clasificaciones de seguridad internas.
-- Comportamiento "sin censura" (uncensored) gracias a la ablación de rechazos: responde directamente a peticiones que el modelo base rechazaría.
-- Compatible con el pipeline de transformers (text-generation) y con cargas mediante trust_remote_code.
-- Disponible en cuantizaciones GGUF para ejecución eficiente con llama.cpp.
-- No se documentan capacidades de tool calling, visión, audio ni multilingüismo más allá del inglés.
+- Generación de texto conversacional y razonamiento con canal de pensamiento (*thinking*) habilitable.
+- Respuesta directa ante peticiones que los modelos alineados estándar rechazarían, incluyendo análisis de código hostil, exploits y artefactos de malware.
+- Reducción medida del comportamiento de rechazo: tasa de clasificación de seguridad en cadena de pensamiento del 35,0% en v2 frente al 81,2% en v1 sobre 80 prompts retenidos.
+- Mayor tasa de respuestas completas: 78,8% en v2 frente a 61,2% en v1, con reducción de espirales sin respuesta del 35,0% al 21,2%.
+- Capacidad general preservada: MMLU del 77,72% (570 ítems estratificados) frente al 78,60% de v1.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente; el canal de pensamiento está presente.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional sin restricciones temáticas: el modelo puede mantener diálogos sobre temas que otros modelos rechazan, útil para investigación en seguridad de IA o análisis de contenido controvertido, siempre con supervisión humana.
-- Generación de texto creativo y narrativo: su capacidad de seguir instrucciones directas permite redactar historias, guiones o contenido literario sin interrupciones por políticas de seguridad.
-- Análisis de documentos y extracción de información: con su ventana de contexto (no especificada, pero típica de Gemma 4) puede procesar textos largos y resumir o extraer datos relevantes.
-- Prototipado de chatbots para entornos controlados: en laboratorios de investigación donde se necesita un modelo que no filtre contenido por defecto, puede servir como base para experimentos de alineación.
-- Evaluación de técnicas de ablación y ajuste fino: al ser un modelo abliterado y reparado, es útil como caso de estudio para comparar metodologías de eliminación de rechazos.
-- Despliegue en hardware modesto: con la cuantización Q4_K_M (6,9 GB) puede ejecutarse en GPUs de 8-12 GB, lo que lo hace accesible para desarrolladores independientes que necesiten un modelo de 12B sin censura.
+- Análisis defensivo de malware: el modelo puede leer y describir el funcionamiento de muestras y artefactos de ataque sin bloquear la petición, lo que permite a un analista de incidentes reconstruir cadenas de compromiso a partir de los propios ficheros del atacante.
+- Revisión de código hostil en auditorías de seguridad: útil para inspeccionar exploits, payloads y pruebas de penetración dentro de un pipeline de revisión, un escenario donde los guardarraíles de los modelos alineados estándar interrumpen el flujo de trabajo.
+- Red-teaming y evaluación de guardarraíles: sirve como modelo de referencia con rechazo reducido para medir la robustez de clasificadores de seguridad propios y comparar su comportamiento frente a modelos alineados.
+- Investigación sobre alineación y edición de pesos: la técnica documentada (cirugía de la dirección de rechazo más SFT correctivo) es un caso de estudio reproducible para estudiar si el rechazo es una disposición aprendida separable de la capacidad.
+- Generación de texto en inglés con contexto conversacional multi-turno: adecuado para prototipos de asistentes en inglés donde se requiera baja tasa de rechazo, con la salvedad de la tasa residual de espirales sin respuesta.
+- Despliegue en hardware limitado: la disponibilidad de GGUF con `imatrix` y la herramienta DeepswapLLM del autor permiten ejecutar el modelo en GPUs con VRAM insuficiente para los 12B en precisión completa, a costa de latencia por el streaming de capas.
 
 ## Benchmarks y rendimiento
 
-El autor proporciona resultados de evaluación propios sobre 80 prompts held-out y una submuestra estratificada de MMLU (570 ítems). No se han publicado resultados en benchmarks estándar adicionales (HumanEval, GSM8K, etc.) en la información disponible.
+Evaluación sobre 80 prompts retenidos, decodificación greedy con *thinking* habilitado, juez determinista de cadena de pensamiento:
 
-| Metrica | v1 (jbliterated) | v2 (+SFT) |
+| Métrica | v1 (jbliterated) | v2 (+SFT) |
 |---|---|---|
-| Tasa de clasificación de seguridad en CoT | 81,2 % | 35,0 % |
-| Tasa de auto-sabotaje (espirales sin respuesta) | 35,0 % | 21,2 % |
-| Tasa de respuesta completa | 61,2 % | 78,8 % |
-| Marcadores de seguridad promedio por trace | 1,65 | 0,49 |
-| MMLU (570 ítems, accuracy) | 78,60 % | 77,72 % |
+| Tasa de clasificación de seguridad en CoT | 81,2% | 35,0% |
+| Tasa de autosabotaje (espirales sin respuesta) | 35,0% | 21,2% |
+| Tasa de respuesta completa | 61,2% | 78,8% |
+| Marcadores de seguridad medios por traza | 1,65 | 0,49 |
 
-La caída de MMLU es de -0,88 puntos, dentro del margen de tolerancia del programa de ablación (< 1,05 puntos).
+Capacidad general:
+
+| Métrica | v1 | v2 |
+|---|---|---|
+| MMLU (570 ítems estratificados, accuracy) | 78,60% | 77,72% |
+| Cambio en MMLU frente a v1 | -- | -0,88 pts |
+
+Dato adicional citado por el autor sobre la técnica, medido en otro modelo (Sharona, Qwen3.5-27B) tras seis fases de cirugía y cuantización GPTQ W4A16: MMLU del 77,89% frente a una línea base de 76,84%, una ganancia de 1,05 puntos. El propio autor advierte que es una medición sobre un modelo concreto y no una garantía por modelo.
+
+No se han publicado resultados de benchmarks estándar adicionales (HumanEval, GSM8K, MMLU-Pro) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 7,4 GB para la cuantización Q4_K_M (según LLM Explorer), ~12 GB para Q8_0, y ~24 GB para los pesos bf16 completos.
-- GPU recomendadas: tarjetas con 8-12 GB de VRAM (p. ej., RTX 3080, RTX 4080, RTX 4070 Ti) para la versión Q4_K_M; para bf16 se requieren GPUs de 24 GB como A100, RTX 4090 o A6000.
-- El modelo cabe en GPUs de consumo con cuantización Q4_K_M, y el autor recomienda esta versión para tarjetas de 8-12 GB.
-- Opciones de despliegue: llama.cpp (con builds recientes de master, ya que la arquitectura Gemma 4 Unified es nueva), transformers con device_map="auto", y la herramienta DeepswapLLM que permite ejecutar el modelo en GPUs más pequeñas de lo necesario mediante streaming de capas.
-- Latencia y throughput: no se proporcionan datos específicos; dependerán del hardware y la cuantización.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 24 GB solo para pesos (12B × 2 bytes), más overhead de activaciones y caché KV; en la práctica se recomienda 32 GB o más.
+- Cuantización GGUF: el repositorio incluye ficheros GGUF con `imatrix`, lo que permite ajustar el modelo a GPUs de 16 GB (Q4-Q5) y de 8-12 GB en cuantizaciones más agresivas, con la consiguiente pérdida de calidad.
+- GPU recomendadas: A100 40/80 GB, H100 para despliegue de alta concurrencia; RTX 4090 (24 GB) viable en cuantización Q4/Q5 o en FP16 con offloading parcial; RTX 3090 con las mismas consideraciones.
+- Cabe en GPU de consumo: sí, en cuantización GGUF; en precisión completa requiere 24 GB o más y no cabe en GPUs de 8-16 GB sin offloading.
+- Opciones de despliegue: llama.cpp y Ollama mediante los GGUF publicados; vLLM y TGI para safetensors en FP16/BF16; DeepswapLLM del propio autor para streaming de capas entre GPU, RAM y disco, que el autor afirma hasta 4 veces más rápido que AirLLM.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Gemma-4-12B-it (base) | ~12B | No disponible | Gemma | Modelo original con rechazos de seguridad |
-| Gemma-4-12B-it-Jbliterated (v1) | ~12B | No disponible | Gemma | Ablación SVD, sin reparación del razonamiento |
-| Gemma-4-12B-it-Jbliterated-v2 (este) | ~12B | No disponible | Gemma | Ablación + SFT, razonamiento reparado |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Notas |
+|---|---|---|---|---|---|
+| Gemma-4-12B-it-Jbliterated-v2 | ~12B | no disponible | Abliteration + SFT correctivo | gemma | MMLU 77,72%; rechazo reducido con espirales residuales del 21,2% |
+| Gemma-4-12B-it-Jbliterated (v1) | ~12B | no disponible | Abliteration sin gradiente | gemma | MMLU 78,60%; espirales sin respuesta del 35,0% |
+| Gemma 4 12B instruction-tuned (base) | ~12B | no disponible | Alineación estándar | gemma | Línea base de la familia; comportamiento de rechazo convencional |
+| Sharona (Qwen3.5-27B) | ~27B | no disponible | Cirugía jBlaze + GPTQ W4A16 | no disponible | MMLU 77,89% frente a 76,84% de línea base; usado por el autor como evidencia de la técnica |
 
-No se dispone de datos comparativos con otros modelos de 12B como Llama 3.1 8B o Mistral 7B en la información proporcionada.
+Los datos de contexto de los modelos comparados no están disponibles en la información proporcionada. La comparación con la línea base Gemma 4 12B-it se infiere de la jerarquía de modelos indicada por el autor, sin cifras de rendimiento publicadas en esta ficha.
 
 ## Limitaciones y advertencias
 
-- El modelo aún presenta espirales sin respuesta en aproximadamente el 21 % de los prompts más difíciles, según el autor.
-- La evaluación del razonamiento se realizó con un juez determinista basado en expresiones regulares, que puede no detectar clasificaciones de seguridad parafraseadas.
-- El entrenamiento se realizó con una única semilla; la reducción de fugas de seguridad no se ha confirmado con múltiples inicializaciones.
-- Al ser un modelo "uncensored", puede generar contenido inapropiado, ofensivo o peligroso. Su uso debe limitarse a entornos de investigación controlados y con supervisión humana.
-- Solo soporta inglés; no se garantiza un rendimiento adecuado en otros idiomas.
-- La licencia Gemma permite uso comercial, pero está sujeta a los términos de uso de Google, que incluyen restricciones sobre usos de alto riesgo y generación de contenido dañino.
-- La arquitectura Gemma 4 Unified es reciente; se requiere software actualizado (llama.cpp desde master) para cargar los GGUF correctamente.
+- El modelo elimina deliberadamente el comportamiento de rechazo: puede producir contenido dañino, instrucciones para actividades ilícitas y análisis operativo de malware. El autor lo publica para investigación en seguridad y análisis defensivo, no para uso general.
+- Tasa residual de autosabotaje del 21,2%: en los prompts más difíciles el modelo sigue entrando en espirales de razonamiento sin producir respuesta completa. No es adecuado si se exige máxima completitud.
+- El juez de cadena de pensamiento empleado es un banco de expresiones regulares determinista y conservador; es reproducible pero no detecta clasificaciones de seguridad parafraseadas, por lo que las métricas de rechazo pueden estar subestimadas.
+- El entrenamiento se realizó con una única semilla; la reducción de fugas en el canal de pensamiento no se ha confirmado con múltiples inicializaciones.
+- Idioma limitado al inglés según la etiqueta del repositorio; no hay evidencia de calidad en castellano u otros idiomas.
+- Licencia Gemma: sujeta a los Gemma Terms of Use, con restricciones de uso comercial y obligaciones de atribución que deben revisarse antes de cualquier despliegue en producción.
+- Riesgo de alucinación no cuantificado en la información disponible; la reducción de rechazo puede aumentar la probabilidad de respuestas plausibles pero incorrectas en dominios sensibles.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- El modelo se distribuye con 1 like y 1019 descargas en el momento de la consulta; no cuenta con validación independiente más allá de la auditoría espectral y los benchmarks del propio autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated-v2
-- Modelo base v1: https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated
-- Herramienta DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
-- Ficha en LLM Explorer: https://llm-explorer.com/model/ApolloRaines%2FGemma-4-12B-it-Jbliterated,67Qomprts2H1ISoT5kdk23
-- Análisis de arquitectura (hfviewer): https://hfviewer.com/ApolloRaines/Gemma-4-12B-it-Jbliterated
-- Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
+- Modelo base (v1): https://huggingface.co/ApolloRaines/Gemma-4-12B-it-Jbliterated
+- Repositorio de la herramienta DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
+- Papers, blogs y demos adicionales: no disponibles en la información proporcionada.

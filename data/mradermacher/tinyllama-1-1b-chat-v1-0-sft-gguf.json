@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/TinyLlama-1.1B-Chat-v1.0-sft-GGUF",
+  "slug": "mradermacher-tinyllama-1-1b-chat-v1-0-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TinyLlama-1.1B-Chat-v1.0-sft-GGUF",
+  "created_at": "2025-08-31T21:57:34.000Z",
+  "updated_at": "2026-11-21T01:03:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "en",
+    "base_model:dpabonc/TinyLlama-1.1B-Chat-v1.0-sft",
+    "base_model:quantized:dpabonc/TinyLlama-1.1B-Chat-v1.0-sft",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 1100052480,
+  "parameters_human": "1.10B",
+  "storage_bytes": 9811268288,
+  "storage_human": "9.8 GB",
+  "context_length": 2048,
+  "base_model": "dpabonc/TinyLlama-1.1B-Chat-v1.0-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

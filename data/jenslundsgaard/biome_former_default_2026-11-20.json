@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "JensLundsgaard/biome_former_default_2026-11-20",
+  "slug": "jenslundsgaard-biome_former_default_2026-11-20",
+  "author": "JensLundsgaard",
+  "url": "https://huggingface.co/JensLundsgaard/biome_former_default_2026-11-20",
+  "created_at": "2026-11-20T21:14:27.000Z",
+  "updated_at": "2026-11-20T21:14:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3205272,
+  "parameters_human": "3.2M",
+  "storage_bytes": 12827541,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

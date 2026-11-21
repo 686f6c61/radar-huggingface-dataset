@@ -2,86 +2,84 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por MiniMax. Con 427.000 millones de parámetros en su torre de texto, 60 capas y 248 GB de pesos, el 93,6% de la masa paramétrica corresponde a expertos enrutados. Este repositorio (`qtum/MiniMax-M3.1-Flash-GGUF`) no contiene el modelo original, sino cuantizaciones GGUF preparadas con llama.cpp para su uso en inferencia local, publicadas por el usuario qtum.
+MiniMax-M3.1-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por MiniMax. Con 426.186.392.064 parámetros totales (unos 427 G), es un modelo de gran escala orientado a generación de texto conversacional en inglés y chino. La versión aquí descrita es una cuantización GGUF publicada por el usuario qtum bajo el identificador `qtum/MiniMax-M3.1-Flash-GGUF`, derivada del checkpoint original `MiniMaxAI/MiniMax-M3.1-Flash`.
 
-La particularidad técnica de esta conversión es que el checkpoint original ya está almacenado en precisión mixta: las capas densas usan MXFP8 y los expertos enrutados NVFP4, lo que da una media de 4,66 bits por peso. Por ese motivo el autor no ofrece los niveles habituales (Q8_0, Q6_K, Q5_K_M, Q4_K_M), que resultarían en archivos más grandes que el original y con más error de cuantización acumulado; en su lugar publica niveles por debajo de 4,66 bpw con las capas no-expertas protegidas en Q8_0.
+La particularidad de esta publicación es que el checkpoint original ya está almacenado en precisión mixta: las capas densas usan MXFP8 y los expertos enrutados usan NVFP4, lo que da una media de 4,66 bits por peso (bpw) y un tamaño de pesos de texto de 248,37 GB. Por ello, las cuantizaciones GGUF publicadas no son las típicas Q8_0/Q6_K/Q5_K_M/Q4_K_M, sino tiers por debajo de ese umbral (IQ1_S, IQ2_XXS, IQ2_XS), con las capas no-expertas protegidas en Q8_0 o F32 para no degradar el enrutamiento ni la atención.
 
-El modelo incorpora atención dispersa (MSA) mediante una proyección `indexer` en cada capa que selecciona bloques de 128 tokens a los que atender. La versión GGUF es exclusivamente de texto: el checkpoint original incluye una torre de visión CLIP que no se ha convertido porque llama.cpp aún no soporta multimodalidad para esta arquitectura.
+El modelo incorpora atención dispersa (MSA) mediante una proyección `indexer` por capa que selecciona bloques de 128 tokens a los que atender, y una arquitectura de 60 capas en la que las 3 primeras son densas (MLP de 12.288 de anchura) y las 57 restantes son MoE con 128 expertos enrutados cada una, 4 activos por token más un experto compartido. Esta ficha cubre exclusivamente la versión GGUF, que es solo texto: no incluye la torre de visión del checkpoint original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atención dispersa (MSA); 60 capas (3 densas + 57 MoE) |
-| Parametros totales | 427.000 millones (torre de texto) |
-| Parametros activos | 4 expertos enrutados de 128 por capa + 1 experto compartido (por token) |
+| Arquitectura | Transformer MoE con atención dispersa (MSA) e indexer por capa; 60 capas (3 densas + 57 MoE) |
+| Parametros totales | 426.186.392.064 (aprox. 427 G) |
+| Parametros activos | 4 expertos enrutados de 128 por capa + 1 experto compartido (número exacto de parámetros activos no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ2_XXS, IQ2_XS (más un draft Q8_0 para decodificación especulativa) |
+| Tipos de cuantizacion | IQ1_S, IQ2_XXS, IQ2_XS (más un draft `dspark-…-Q8_0` de 1,9 GiB) |
 | Idiomas soportados | en, zh |
-| Licencia | minimax-model-agreement (licencia "other") |
-| Formato de pesos | GGUF (llama.cpp); el checkpoint original usa MXFP8 en capas densas y NVFP4 en expertos |
+| Licencia | minimax-model-agreement (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de 60 capas. Las tres primeras son densas, con un MLP de anchura 12.288; las 57 restantes son capas MoE con 128 expertos enrutados cada una, de los cuales se activan 4 por token, más un experto compartido que se ejecuta siempre. La atención es dispersa (MSA): cada capa incorpora una proyección `indexer` adicional que elige qué bloques de 128 tokens reciben atención, en lugar de atender a toda la secuencia. Todo lo que no son expertos suma 16,0 GB de pesos.
+La arquitectura es un transformer MoE de 60 capas. Las tres primeras capas son densas, con un MLP de 12.288 de anchura; las 57 restantes son capas MoE con 128 expertos enrutados cada una, de los cuales 4 se activan por token, más un experto compartido que se ejecuta en todos los tokens. La atención es dispersa (MSA): cada capa incorpora una proyección adicional `indexer` que decide a qué bloques de 128 tokens atender, lo que reduce el coste computacional de la atención en contextos largos. Todo lo que no son expertos suma 16,0 GB de pesos.
 
-El checkpoint original ya está almacenado en precisión mixta: las capas densas en MXFP8 (pesos E4M3 con escalas de bloque E8M0 de 32 columnas) y los expertos enrutados en NVFP4 (dos pesos por byte, una escala FP8 por cada 16 valores y una escala FP32 por experto). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El checkpoint original está almacenado en precisión mixta: las capas densas en MXFP8 (pesos E4M3 con escalas de bloque E8M0 de 32 columnas) y los expertos enrutados en NVFP4 (dos pesos por byte, una escala FP8 por cada 16 valores y una escala FP32 por experto). El desglose de tamaño del modelo de texto es: expertos enrutados 232,38 GB a 4,50 bpw, atención e indexer 6,86 GB a 8,00 bpw, embeddings y lm_head 4,92 GB a 16,00 bpw, experto compartido 3,33 GB a 8,00 bpw, MLP denso de las 3 capas 0,70 GB a 8,00 bpw, router y bias 0,18 GB a 32,00 bpw, y normas a 16,00 bpw; total 248,37 GB a 4,66 bpw. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto en inglés y chino.
-- Razonamiento y matemáticas: no se detalla en la información disponible, pero es esperable en un modelo de esta escala; sin datos confirmados.
-- Generación de código: no disponible en la información proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas a inglés y chino según los metadatos.
-- Visión: no disponible en esta conversión GGUF. El checkpoint original incluye una torre de visión CLIP de 32 capas (hidden 1.280, patch 14, resolución 672×672) con proyector y módulo patch-merge (1,73 GB en 523 tensores), pero llama.cpp no soporta multimodalidad para esta arquitectura y estos GGUF no contienen ningún tensor de visión.
-- Decodificación especulativa: se incluye un draft `dspark-…-Q8_0` de 1,9 GiB aplicable a cualquier nivel de cuantización.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento y respuesta multi-turno (etiqueta `conversational` en el repo).
+- Modelo de texto puro: la versión GGUF no incluye ningún tensor de visión, por lo que no acepta entrada de imágenes.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del repo.
+- Capacidad especial de atención dispersa (MSA) con selección de bloques de 128 tokens mediante el `indexer`.
 
 ## Casos de uso
 
-- Despliegue local de un MoE de gran escala en hardware con suficiente memoria: los niveles IQ2_XXS (113,5 GiB) e IQ2_XS (125,0 GiB) permiten ejecutar un modelo de 427.000 millones de parámetros en estaciones de trabajo con 128 GB de memoria unificada o configuraciones multi-GPU, algo inviable con los pesos originales en BF16.
-- Inferencia con decodificación especulativa: el draft Q8_0 de 1,9 GiB acelera la generación al proponer tokens que el modelo grande verifica, reduciendo la latencia en despliegues con llama.cpp.
-- Procesamiento de documentos largos en inglés o chino: la atención dispersa con indexer por bloques de 128 tokens está diseñada para manejar secuencias largas con coste de atención reducido, adecuada para resumen y extracción sobre corpus extensos.
-- Investigación sobre cuantización extrema: los niveles IQ1_S (1,822 bpw) e IQ2_XXS (2,287 bpw) con capas no-expertas protegidas en Q8_0 sirven para estudiar el impacto de la compresión agresiva en modelos MoE con expertos ya cuantizados en NVFP4.
-- Evaluación comparativa de estrategias de cuantización: el repositorio documenta con detalle por qué Q4_K_M resulta contraproducente en este checkpoint, lo que lo convierte en material de referencia para estudiar recetas de cuantización en llama.cpp.
-- Servicio de texto bilingüe (en/zh) en entornos con requisitos de soberanía de datos: al ejecutarse localmente con llama.cpp no requiere enviar peticiones a APIs externas.
+- Inferencia local de un modelo de 427 G en hardware de gama alta: los tiers IQ2 permiten cargar el modelo en configuraciones con suficiente VRAM/RAM unificada, algo imposible con los pesos originales en BF16 o con cuantizaciones Q4_K_M (251 GB).
+- Despliegue con llama.cpp: los ficheros GGUF están pensados para llama.cpp, lo que facilita servidores de inferencia en CPU/GPU mixtas mediante el backend compatible con GGUF.
+- Conversación multilingüe inglés-chino: el modelo está entrenado y etiquetado para ambos idiomas, adecuado para asistentes y chatbots bilingües.
+- Evaluación de calidad bajo cuantización agresiva: la tabla de perplejidad en wikitext-2 permite comparar tiers (IQ1_S 237,39; IQ2_XXS 148,20; IQ2_XS 144,01 frente a 149,47 del maestro) y elegir el equilibrio tamaño/calidad para un pipeline concreto.
+- Investigación sobre arquitecturas MoE con atención dispersa: el modelo permite estudiar el comportamiento del enrutamiento y del `indexer` en un modelo de gran escala con pesos abiertos.
+- Prototipado de aplicaciones de texto en entornos con restricciones de memoria: los tiers IQ1_S (90,4 GiB) e IQ2_XXS (113,5 GiB) hacen viable probar el modelo en máquinas que no podrían alojar los 248 GB del maestro.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí reporta perplejidad sobre wikitext-2 para cada nivel de cuantización:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor solo proporciona perplejidad en wikitext-2 para comparar tiers de cuantización:
 
-| Nivel | Tamano | bpw | Shards | PPL (wikitext-2) |
+| Tier | Tamano | bpw | Shards | PPL (wikitext-2) |
 |---|---|---|---|---|
-| BF16 master (referencia, no incluido) | 241,3 GiB | 4,863 | — | 149,4654 ± 12,58751 |
+| BF16 master (referencia, no en el repo) | 241,3 GiB | 4,863 | — | 149,4654 ± 12,58751 |
 | IQ1_S | 90,4 GiB | 1,822 | 3 | 237,3906 ± 19,29183 |
 | IQ2_XXS | 113,5 GiB | 2,287 | 3 | 148,1980 ± 12,18542 |
 | IQ2_XS | 125,0 GiB | 2,519 | 3 | 144,0074 ± 12,01536 |
-
-El autor advierte que el bpw del master (4,863) corresponde al checkpoint convertido a BF16 para cuantizar, no al original (4,66 bpw), porque la conversión expande las capas densas MXFP8 a BF16.
+| dspark-…-Q8_0 (draft, cualquier tier) | 1,9 GiB | — | 1 | — |
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: IQ1_S requiere unos 90,4 GiB; IQ2_XXS unos 113,5 GiB; IQ2_XS unos 125,0 GiB. Hay que añadir la memoria del contexto KV y del draft (1,9 GiB) si se usa decodificación especulativa.
-- GPU recomendadas: no disponibles en la información proporcionada. Por volumen de memoria, los niveles IQ2 encajan en configuraciones multi-GPU de 80 GB (por ejemplo, 2× A100/H100 de 80 GB para IQ2_XXS) o en sistemas con memoria unificada de 128 GB.
-- GPU de consumo: no cabe en ninguna GPU consumer individual (RTX 4090 dispone de 24 GB). Requiere configuraciones multi-GPU o memoria unificada de gama alta.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF); soporte de vLLM, Ollama o TGI no disponible en la información proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: al menos 90,4 GiB para IQ1_S, 113,5 GiB para IQ2_XXS y 125,0 GiB para IQ2_XS, más overhead de contexto y del runtime.
+- No cabe en GPU de consumo individual (RTX 4090 con 24 GB, etc.); requiere configuraciones multi-GPU, memoria unificada de gran capacidad o descarga parcial a CPU/RAM.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, se necesitan varios aceleradores de 80 GB (A100/H100) o soluciones con memoria unificada de 128 GB o más.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF); otros runtimes compatibles con GGUF no confirmados.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos de la misma categoría.
+No disponible: la información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Solo texto: estos GGUF no contienen ningún tensor de visión; para entrada de imágenes hay que usar los pesos originales.
-- Idiomas limitados a inglés y chino según los metadatos; el rendimiento en castellano no está documentado.
-- Licencia `minimax-model-agreement`: es necesario revisar sus términos antes de cualquier uso comercial; no es una licencia de código abierto estándar.
-- La cuantización IQ1_S degrada notablemente la perplejidad (237,39 frente a 149,47 del master), lo que sugiere pérdida de calidad significativa; IQ2_XXS e IQ2_XS quedan próximos al master.
-- Los niveles IQ2_XXS e IQ2_XS quedan por debajo de la perplejidad del master, lo que el autor atribuye a la calibración imatrix y a la protección de capas no-expertas; conviene validar con evaluaciones propias antes de producción.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible.
-- Longitud de contexto no especificada en la información proporcionada; verificar en la model card del modelo base antes de planificar despliegues con secuencias largas.
-- El repositorio no tiene descargas ni likes y fue creado recientemente; no hay evidencia de uso en producción.
+- La versión GGUF es solo texto: no incluye la torre de visión (CLIP de 32 capas, hidden 1.280, patch 14, 672×672) del checkpoint original; para entrada de imágenes hay que usar los pesos originales.
+- Los tiers publicados están por debajo de 4,66 bpw del maestro; el autor advierte de que cualquier cuantización adicional introduce error sobre el NVFP4 ya presente. Para calidad casi sin pérdidas recomienda usar los pesos originales.
+- IQ1_S degrada notablemente la perplejidad (237,39 frente a 144,01 de IQ2_XS y 149,47 del maestro), por lo que no es adecuado para producción sensible a la calidad.
+- Idiomas limitados a inglés y chino; no hay soporte declarado de castellano.
+- Licencia `minimax-model-agreement` (etiquetada como `other`): es necesario revisar el acuerdo antes de cualquier uso comercial.
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada.
+- Longitud de contexto no disponible; conviene verificarla en el repositorio del modelo base antes de desplegar.
+- El repositorio ocupa 355,2 GB y los ficheros están divididos en shards (3 por tier), lo que complica la descarga y el almacenamiento.
 
 ## Enlaces
 

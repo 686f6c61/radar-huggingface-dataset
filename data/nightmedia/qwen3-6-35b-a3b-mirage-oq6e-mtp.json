@@ -81,16 +81,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nightmedia/Qwen3.6-35B-A3B-Mirage-mxfp4-mlx at main",
-      "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Mirage-mxfp4-mlx/tree/main",
-      "snippet": "Instructions to use nightmedia/Qwen3.6-35B-A3B-Mirage-mxfp4-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "nightmedia/Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx · Hugging Face",
-      "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx",
-      "snippet": "Instructions to use nightmedia/Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    }
-  ]
+  "sources": []
 }

@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "furiosa-ai/Qwen3-Reranker-8B · Hugging Face",
-      "url": "https://huggingface.co/furiosa-ai/Qwen3-Reranker-8B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3-Reranker — FuriosaAI Developer Center 2026.3.0 documentation",
-      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-reranker.html",
-      "snippet": "FuriosaAI publishes pre-compiled builds of the Qwen3-Reranker models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. For the related embedding model see Qwen3-Embedding; for the dense Qwen3 chat models see Qwen3 (dense). Variants #"
-    },
-    {
-      "title": "Qwen3 Reranker 8B: Specs, Hardware & Live AI Battle | ModelVault",
-      "url": "https://www.modelvault.space/models/furiosa-ai-qwen3-reranker-8b",
-      "snippet": "Qwen3 Reranker 8B is a high-dimensional text embedding and semantic retrieval model developed by Furiosa Ai. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
-    },
-    {
-      "title": "Qwen3 (dense) — FuriosaAI Developer Center 2026.3.0 documentation",
-      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3.html",
-      "snippet": "The simplest way to serve a model is to pass its furiosa-ai/<repo> identifier. Qwen3 dense models are hybrid reasoning models, so add --reasoning-parser qwen3 to have the thinking content parsed into a separate field (see Reasoning below):"
-    },
-    {
-      "title": "furiosa-ai/Qwen3-Reranker-8B at main - Hugging Face",
-      "url": "https://huggingface.co/furiosa-ai/Qwen3-Reranker-8B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

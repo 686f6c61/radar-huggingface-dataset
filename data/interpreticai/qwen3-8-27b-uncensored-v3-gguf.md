@@ -2,117 +2,120 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-v3 es un ajuste fino de NousResearch/Arete-27B, que a su vez es una version post-entrenada de Qwen/Qwen3.8-27B. Lo publica InterpreticAI (Thomas Young) con el objetivo explicito de eliminar la censura politica residual que persiste en los modelos derivados de Qwen cuando se les consulta en chino. Segun la model card, Arete-27B ya reduce la propaganda en ingles pero sigue censurando aproximadamente la mitad de las respuestas a preguntas politicas formuladas en chino; esta version lleva esa tasa al 2,6% sobre el banco de 115 preguntas de Pan y Xu (2026).
+Qwen3.8-27B-Uncensored-v3 es un ajuste fino de NousResearch/Arete-27B, a su vez un post-entrenamiento de Qwen/Qwen3.8-27B, orientado a eliminar la censura política residual que persiste en el modelo base cuando se le consulta en chino. Lo desarrolla InterpreticAI (autor: Thomas Young) y se publica bajo licencia Apache 2.0, conservando la atribución de Qwen y Nous Research. El modelo tiene 26.895.998.464 parámetros totales (aproximadamente 27B) y mantiene la misma arquitectura y disposición de ficheros que Arete-27B.
 
-El modelo conserva la arquitectura y el diseno de ficheros de Arete-27B y se distribuye principalmente como cuantizacion GGUF Q4_K_M (16,6 GB) junto con un proyector de vision F16 (0,93 GB), lo que permite ejecutarlo en una unica GPU de 24 GB. El checkpoint completo en BF16 tiene 26.895.998.464 parametros y esta publicado bajo licencia Apache 2.0.
+El problema que aborda es concreto: Arete-27B ya elimina la mayor parte de la propaganda en inglés, pero en preguntas políticas formuladas en chino seguía censurando cerca de la mitad de las respuestas. Uncensored-v3 reduce esa tasa de censura del 50,4% al 2,6% sobre el banco de 115 preguntas políticamente sensibles de Pan y Xu (2026), y baja la propaganda en inglés del 1,0% al 0,5% sobre las 803 indicaciones de Propaganda_Eval de Nous Research.
 
-Es relevante para investigadores que estudian censura y sesgo en modelos de origen chino, y para desarrolladores que necesitan un modelo multimodal de ~27B con contexto largo y comportamiento menos restrictivo en temas politicos, sin renunciar a la licencia permisiva de la familia Qwen.
+La relevancia actual es doble: por un lado, ofrece una variante con capacidad de visión (pipeline image-text-to-text, con proyector multimodal separado) en cuantización GGUF Q4_K_M que cabe en una sola GPU de 24 GB; por otro, sirve como herramienta de investigación para estudiar sesgos y censura en modelos derivados de Qwen. Esta ficha describe la versión GGUF Q4_K_M, cuantizada a partir del checkpoint BF16 de Uncensored-v3, que es sobre el que se ejecutaron las evaluaciones publicadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.8-27B, sin capa MTP en esta version) |
-| Parametros totales | 26.895.998.464 (~26,9B) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B; detalles de atención y capas no disponibles) |
+| Parametros totales | 26.895.998.464 (aproximadamente 27B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 65.536 tokens (valor usado en el ejemplo de despliegue de la model card) |
-| Tipos de cuantizacion | GGUF Q4_K_M (16,6 GB); GGUF IQ3_XXS disponible en repo separado; BF16 en el repo del modelo base |
-| Idiomas soportados | no disponible (la evaluacion cubre prompts en ingles y chino) |
+| Longitud de contexto | 65.536 tokens (valor usado en el ejemplo de despliegue con `-c 65536`; máximo nativo no disponible) |
+| Tipos de cuantizacion | GGUF Q4_K_M (16,6 GB) e IQ3_XXS (repo hermano); BF16, FP8 y MLX 4-bit en otras variantes del proyecto |
+| Idiomas soportados | no disponible (evaluado en inglés y chino) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_K_M) y proyector de vision GGUF F16; BF16 en el repo no cuantizado |
+| Formato de pesos | GGUF (Q4_K_M) más proyector de visión GGUF F16 (`mmproj`) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna mas alla de indicar que es identica a la de Arete-27B y Qwen3.8-27B, y que esta version concreta carece de capa de prediccion multi-token (MTP), a diferencia de Uncensored-v2. El pipeline declarado es image-text-to-text, con un proyector de vision separado en formato GGUF F16 que se carga mediante `--mmproj` en llama.cpp. El proceso de entrenamiento especifico (composicion del dataset, numero de tokens, uso de RLHF/DPO) no se documenta en la informacion disponible; la model card solo describe el objetivo de eliminar la censura politica residual en chino sobre el modelo base Arete-27B.
+El modelo es un transformer derivado de Qwen3.8-27B a través de NousResearch/Arete-27B. La model card no detalla la arquitectura interna (número de capas, tipo de atención, cabezas, etc.), pero sí confirma que Uncensored-v3 conserva la misma arquitectura y disposición de ficheros que Arete-27B, y que es un checkpoint BF16 completo. No se especifica el número de tokens de entrenamiento ni la composición del dataset de ajuste.
 
-La evaluacion publicada se realizo sobre la release BF16 con decodificacion greedy, modo no-thinking, mismo hardware y mismo juez LLM para los tres modelos comparados (Qwen3.8-27B, Arete-27B y Uncensored-v3). Se utilizo el banco de 145 preguntas politicas en chino de Pan y Xu (2026), reportando sobre las 115 sensibles con un limite de 4.096 tokens de salida, y el conjunto Propaganda_Eval de Nous Research con 803 prompts en ingles.
+La innovación principal no es arquitectónica sino de alineación: se elimina la censura política residual en chino mediante un ajuste fino posterior sobre Arete-27B. La evaluación se hizo en modo no-thinking, decodificación greedy y con un juez LLM idéntico para los tres modelos comparados. Una diferencia técnica relevante respecto a la versión v2 es que esta v3 no incluye capa de predicción multi-token (MTP), por lo que debe servirse con decodificación estándar, sin decodificación especulativa MTP. El paquete incluye un proyector de visión separado (`mmproj`, F16, 0,93 GB) que habilita la entrada de imágenes.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en modo thinking y no-thinking (el modo se controla con `enable_thinking` en la plantilla de chat).
-- Entrada de imagenes mediante el proyector de vision (`mmproj`), con pipeline image-text-to-text.
-- Respuestas a preguntas politicas en chino sin las evasiones ni el alineamiento con talking points del PCC que presentan los modelos base (2,6% de respuestas censuradas frente al 50,4% de Arete-27B).
-- Reduccion de propaganda en ingles: 0,5% de respuestas con propaganda en Propaganda_Eval frente al 1,0% de Arete-27B y el 24,5% de Qwen3.8-27B.
-- Soporte de plantilla de chat Jinja (`--jinja`) en llama.cpp, lo que habilita el formato conversacional nativo del modelo.
-- Capacidades de razonamiento y codigo heredadas de Qwen3.8-27B: no se documentan explicitamente en la model card, pero el modelo base las incluye por su familia.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, con modo thinking y modo no-thinking configurables mediante plantilla de chat.
+- Razonamiento y respuesta a preguntas políticas y de actualidad sin las evasiones típicas del modelo base en chino.
+- Entrada de imágenes (image-text-to-text) mediante el proyector multimodal `mmproj` en F16.
+- Capacidades multilingües: evaluado explícitamente en inglés y chino; el resto de idiomas no está documentado.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags) y uso con plantilla Jinja (`--jinja`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre censura politica en LLM: el modelo sirve como referencia para medir la tasa de respuestas censuradas con el banco de Pan y Xu (2026); su 2,6% de respuestas censuradas y 0,9% de negativas lo convierten en un punto de comparacion util frente a modelos de origen chino.
-- Analisis de sesgo y alineamiento: permite estudiar como cambia el comportamiento del modelo al pasar de Qwen3.8-27B (83,5% censurado) a Arete-27B (50,4%) y a esta version (2,6%), aislando el efecto del post-entrenamiento.
-- Despliegue local en estacion de trabajo con GPU de 24 GB: la cuantizacion Q4_K_M (16,6 GB) mas el proyector F16 (0,93 GB) cabe en una RTX 4090 o similar, con contexto de 65.536 tokens, lo que facilita prototipado sin infraestructura en nube.
-- Procesamiento de documentos con imagenes: al ser image-text-to-text, puede extraer y razonar sobre contenido de capturas, diagramas o escaneos en flujos de analisis documental.
-- Generacion de contenido editorial en ingles y chino: util para redactar borradores sobre temas politicos o historicos sin las autocorrecciones tipicas de modelos alineados con censura estatal.
-- Evaluacion comparativa de jueces LLM: su comportamiento en modo no-thinking con decodificacion greedy y parametros de muestreo publicados lo hace reproducible en pipelines de evaluacion automatica.
-- Asistente conversacional de contexto largo: los 65.536 tokens permiten mantener conversaciones extensas o procesar documentos largos en una sola pasada.
+- Investigación sobre censura y sesgo político en LLM: el modelo permite medir la tasa de evasión y de respuestas alineadas con el Partido Comunista Chino sobre el banco de Pan y Xu (2026), sirviendo como referencia de un modelo con censura casi eliminada (2,6%).
+- Análisis comparativo de alineación: al compartir arquitectura con Arete-27B y Qwen3.8-27B, permite aislar el efecto del ajuste fino sobre la propaganda en inglés (0,5% frente a 1,0% y 24,5%) manteniendo el resto de variables constantes.
+- Despliegue local en una GPU de consumo: la cuantización Q4_K_M (16,6 GB) más el proyector F16 (0,93 GB) cabe en una GPU de 24 GB, lo que facilita experimentación en estaciones de trabajo con RTX 4090.
+- Asistente conversacional con contexto largo: con 65.536 tokens de ventana en el ejemplo de `llama-server`, puede gestionar conversaciones multi-turno o documentos extensos sin truncar.
+- Procesamiento de documentos con imágenes: el pipeline image-text-to-text permite extraer y razonar sobre contenido de capturas, gráficos o páginas escaneadas combinándolo con texto.
+- Evaluación de robustez frente a jailbreaks y prompts adversariales: útil para equipos de seguridad que quieran contrastar el comportamiento de un modelo deliberadamente descensurado frente a uno alineado.
+- Generación de contenido en chino e inglés sin evasivas: para aplicaciones editoriales o de análisis que requieran respuestas directas sobre temas políticamente sensibles, con la advertencia de verificación factual.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (evaluacion sobre la release BF16, modo no-thinking, greedy, mismo juez LLM):
+Los datos publicados corresponden al checkpoint BF16 de Uncensored-v3, no a esta cuantización GGUF Q4_K_M. Se evaluó en modo no-thinking, decodificación greedy y con un único juez LLM.
 
-Censura politica en prompts en chino (Pan y Xu, 2026; 115 preguntas sensibles):
+Censura política en chino (banco de 115 preguntas de Pan y Xu, 2026; menor es mejor salvo donde se indica):
 
-| Metrica | Qwen3.8-27B | Arete-27B | Uncensored-v3 |
+| Métrica | Qwen3.8-27B | Arete-27B | Uncensored-v3 |
 |---|---|---|---|
-| Respuestas censuradas (menor es mejor) | 83,5% | 50,4% | 2,6% |
-| Rechaza o evade (menor es mejor) | 49,6% | 22,6% | 0,9% |
-| Reescribe con talking points del PCC (menor es mejor) | 32,2% | 27,8% | 1,7% |
-| Se alinea con valores del PCC (menor es mejor) | 100% | 30% | 20% |
-| Tema correcto, responde abiertamente (mayor es mejor) | 12,2% | 38,3% | 80,9% |
+| Respuestas censuradas | 83,5% | 50,4% | 2,6% |
+| Rechaza o evade | 49,6% | 22,6% | 0,9% |
+| Reescribe en consignas del PCCh | 32,2% | 27,8% | 1,7% |
+| Se alinea con valores del PCCh | 100% | 30% | 20% |
+| Tema correcto y respuesta abierta (mayor es mejor) | 12,2% | 38,3% | 80,9% |
 
-Propaganda en prompts en ingles (NousResearch/Propaganda_Eval; 803 prompts):
+Propaganda en inglés (Propaganda_Eval de Nous Research, 803 indicaciones; menor es mejor):
 
-| Modelo | Respuestas con propaganda (menor es mejor) |
+| Modelo | Respuestas con propaganda |
 |---|---|
 | Qwen3.8-27B | 24,5% |
 | Arete-27B | 1,0% |
 | Qwen3.8-27B-Uncensored-v3 | 0,5% |
 
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~17,5 GB para Q4_K_M (16,6 GB de pesos + 0,93 GB de proyector de vision) mas la KV cache correspondiente al contexto configurado.
-- Cabe en una GPU consumer de 24 GB (RTX 4090, RTX 3090) segun la propia model card.
-- Para contexto de 65.536 tokens conviene vigilar el consumo de KV cache; en GPUs de 24 GB puede requerir reducir el contexto o usar cuantizacion de cache.
-- Despliegue recomendado: llama.cpp (`llama-server`) con `-ngl 999 -c 65536 --jinja` y `--mmproj` para entrada de imagen; compatible con LM Studio y Ollama segun la model card.
-- No dispone de capa MTP, por lo que no se beneficia de decodificacion especulativa multi-token; para eso debe usarse Uncensored-v2.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: aproximadamente 17,5 GB para Q4_K_M (16,6 GB de pesos más 0,93 GB del proyector de visión), más overhead de contexto KV; el autor indica que cabe en una sola GPU de 24 GB.
+- GPU recomendadas: RTX 4090 (24 GB) o A100/H100 para despliegues con mayor contexto o concurrencia; no se especifican cifras de throughput.
+- Cabe en GPU de consumo: sí, en modelos con 24 GB de VRAM (RTX 4090, RTX 3090) usando Q4_K_M; para IQ3_XXS se reduce el requisito, aunque el tamaño exacto no está disponible en esta ficha.
+- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio y Ollama según el autor; el ejemplo oficial usa `llama-server` con `-ngl 999 -c 65536 --jinja` y `--mmproj` para visión.
+- Latencia y throughput: no disponibles. El modelo no incluye capa MTP, por lo que no admite decodificación especulativa MTP; para ello debe usarse la variante v2.
+- Parámetros de muestreo recomendados: thinking `temperature=1.0, top_p=0.95, top_k=20`; no-thinking `temperature=0.7, top_p=0.8, top_k=20, presence_penalty=1.5`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Censura politica en chino | Propaganda en ingles | Licencia | Formatos |
+| Modelo | Parámetros | Contexto | Censura en chino | Propaganda en inglés | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-v3 | ~26,9B | 65.536 | 2,6% | 0,5% | Apache 2.0 | GGUF Q4_K_M, IQ3_XXS, BF16 |
-| Qwen3.8-27B-Uncensored-v2 | no disponible | no disponible | 3,5% | no disponible | Apache 2.0 | BF16, FP8, GGUF Q4_K_M, GGUF IQ3_XXS |
-| NousResearch/Arete-27B | ~26,9B (derivado) | no disponible | 50,4% | 1,0% | Apache 2.0 | BF16 |
-| Qwen/Qwen3.8-27B | ~26,9B (derivado) | no disponible | 83,5% | 24,5% | Apache 2.0 | BF16 |
+| Qwen3.8-27B-Uncensored-v3 | ~27B | 65.536 (ejemplo) | 2,6% | 0,5% | Apache 2.0 | BF16, GGUF, MLX 4-bit |
+| Arete-27B (Nous Research) | ~27B | no disponible | 50,4% | 1,0% | Apache 2.0 | BF16 (base) |
+| Qwen3.8-27B | ~27B | no disponible | 83,5% | 24,5% | Apache 2.0 | BF16 (base) |
+| Qwen3.8-27B-Uncensored-v2 | ~27B | no disponible | 3,5% | no disponible | Apache 2.0 | BF16, FP8, GGUF, IQ3_XXS |
 
-Uncensored-v2 incorpora capa MTP (decodificacion especulativa) y FP8, con una tasa de censura del 3,5%; Uncensored-v3 prescinde de MTP a cambio de bajar al 2,6%.
+La diferencia clave entre v2 y v3 es la base (v2 parte de Qwen3.8-27B y v3 de Arete-27B) y la presencia de MTP: v2 lo incluye y v3 no. Para menor censura se recomienda v3; para decodificación especulativa MTP y FP8, v2.
 
 ## Limitaciones y advertencias
 
-- Cada modelo se genero una sola vez por benchmark, sin repeticiones, por lo que la varianza de las metricas no esta cuantificada.
-- Una respuesta sustantiva no implica que sea correcta: la model card advierte explicitamente que los usuarios deben verificar las afirmaciones factuales de forma independiente.
-- El modelo esta disenado para reducir la censura politica; su uso en produccion puede generar contenido sensible o controvertido y requiere moderacion propia.
-- No se documentan sesgos mas alla de los politicos medidos, ni el comportamiento en idiomas distintos del ingles y el chino.
-- La ausencia de capa MTP limita el throughput frente a Uncensored-v2 en escenarios de decodificacion especulativa.
-- La licencia Apache 2.0 permite uso comercial, pero se mantienen la atribucion y los terminos de Nous Research y del equipo Qwen; debe revisarse el fichero LICENSE.
-- Los datos de entrenamiento y la composicion del dataset no estan disponibles, lo que dificulta auditar el origen de posibles sesgos residuales.
+- Cada modelo se generó una sola vez por benchmark, por lo que las métricas tienen ruido de muestreo no cuantificado.
+- Una respuesta sustantiva no implica que sea correcta: el propio autor recomienda verificar las afirmaciones factuales de forma independiente.
+- El modelo está deliberadamente descensurado; puede producir contenido político sensible, ofensivo o controvertido sin filtros, lo que exige moderación externa en producción.
+- La evaluación se centra en inglés y chino; el comportamiento en otros idiomas no está documentado.
+- No incluye capa MTP, así que no admite decodificación especulativa MTP; para ello hay que usar la variante v2.
+- Los benchmarks publicados corresponden al checkpoint BF16; el rendimiento de la cuantización Q4_K_M puede diferir.
+- Licencia Apache 2.0 permite uso comercial, pero se deben conservar la atribución y los avisos de Qwen y Nous Research indicados en el fichero LICENSE.
+- Los sesgos conocidos más allá de la censura política no se detallan en la información disponible.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3-GGUF
-- Hugging Face (BF16): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3
-- Version v2: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2
-- Version v2 FP8: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8
-- Version v2 GGUF Q4_K_M: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-GGUF
-- Version v2 GGUF IQ3_XXS: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-IQ3_XXS-GGUF
-- Version v3 GGUF IQ3_XXS: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3-IQ3_XXS-GGUF
+- Modelo en Hugging Face (GGUF): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3-GGUF
+- Checkpoint BF16 de referencia: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3
+- Variante v2 (con MTP y FP8): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2
+- Variante v2 FP8: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8
+- Variante v2 GGUF Q4_K_M: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-GGUF
+- Variante v2 GGUF IQ3_XXS: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-IQ3_XXS-GGUF
+- Variante v3 GGUF IQ3_XXS: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3-IQ3_XXS-GGUF
+- Variante v3 MLX 4-bit: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3-MLX-4bit
 - Modelo base Arete-27B: https://huggingface.co/NousResearch/Arete-27B
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset Propaganda_Eval: https://huggingface.co/datasets/NousResearch/Propaganda_Eval
-- Paper de referencia (Pan y Xu, 2026, PNAS Nexus): https://doi.org/10.1093/pnasnexus/pgag013
-- Blog de Nous Research sobre Arete: https://nousresearch.com/arete
+- Página de Arete (Nous Research): https://nousresearch.com/arete
+- Paper de censura política (Pan y Xu, 2026): https://doi.org/10.1093/pnasnexus/pgag013
 - DOI del modelo: https://doi.org/10.57967/hf/11545

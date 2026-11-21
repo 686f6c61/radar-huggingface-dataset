@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 944,
+  "downloads_30d": 909,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",
@@ -58,31 +58,5 @@
   "renamed_to": "OsaurusAI/Raptor-0.6-4B-JANG_6M",
   "renamed_at": "2026-11-11T03:30:23.868Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/en-us?msockid=27a4c5bde79e64a8024dd26de6a365ba",
-      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
-    },
-    {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "url": "https://account.microsoft.com/account",
-      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
-    },
-    {
-      "title": "Sign in to your account",
-      "url": "https://myaccount.microsoft.com/",
-      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
-    },
-    {
-      "title": "Microsoft products, apps, and devices built to support you",
-      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=27a4c5bde79e64a8024dd26de6a365ba",
-      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
-    },
-    {
-      "title": "Microsoft - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Microsoft",
-      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
-    }
-  ]
+  "sources": []
 }

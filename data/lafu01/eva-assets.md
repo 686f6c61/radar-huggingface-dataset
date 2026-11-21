@@ -2,81 +2,96 @@
 
 ## Resumen
 
-Lafu01/eva-assets es un modelo de lenguaje de pequeño tamaño, con aproximadamente 596 millones de parámetros, publicado por el usuario Lafu01 (Shi) en Hugging Face bajo licencia MIT. El repositorio incluye pesos en formato ONNX y GGUF, lo que sugiere que está orientado a inferencia en entornos de producción con diferentes backends (por ejemplo, llama.cpp, Ollama o runtime ONNX). El tag "conversational" indica que está diseñado para tareas de diálogo, y "imatrix" apunta a que se han incluido cuantizaciones basadas en matrices de importancia para optimizar la precisión en bajas precisiones.
+Eva-assets es un repositorio de pesos publicado por el usuario Lafu01 en Hugging Face bajo licencia MIT. El dato mas relevante es su volumen: 46,2 GB de repositorio frente a los 99.471.200 parametros reales declarados en la metadata de safetensors, una relacion que indica que el contenido principal no son pesos de un unico modelo denso de ese tamano, sino un conjunto de artefactos (ficheros ONNX y GGUF, segun los tags) probablemente asociados a varios componentes o a versiones cuantizadas de un mismo modelo base.
 
-A pesar de su tamaño compacto, la información pública disponible es muy limitada: la model card está vacía salvo la licencia, y no se han publicado detalles sobre arquitectura, datos de entrenamiento, capacidades ni benchmarks. Esto dificulta una evaluación técnica rigurosa. El repositorio ocupa 35.8 GB, lo que sugiere que contiene múltiples variantes cuantizadas y archivos auxiliares, pero no se especifica el número exacto de archivos ni las cuantizaciones concretas.
+La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni indicaciones de uso. Esto limita severamente cualquier evaluacion tecnica rigurosa y obliga a tratar el repositorio como un contenedor de assets cuyo proposito exacto no esta documentado por el autor.
 
-Actualmente, el modelo acumula 269 descargas y 0 likes, lo que indica una adopción baja. Su relevancia radica en ser un ejemplo de modelo pequeño con licencia permisiva y formatos listos para despliegue, aunque sin documentación técnica que permita validar su rendimiento.
+Por su tamano de parametros (aproximadamente 100 millones) y sus formatos de despliegue (ONNX y GGUF), el repositorio encaja en el segmento de modelos pequenos orientados a inferencia en CPU o en GPU de gama baja, no en el de modelos de proposito general de gran escala. La ficha que sigue refleja unicamente lo verificable en la metadata disponible y marca explicitamente como no disponible todo aquello que el autor no ha documentado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 596.049.920 |
-| Parametros activos | no aplicable (no se indica que sea MoE) |
+| Arquitectura | no disponible (la model card no la declara) |
+| Parametros totales | 99.471.200 (dato real de safetensors) |
+| Parametros activos | no aplica (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no especificados (se mencionan tags gguf e imatrix, pero sin detallar) |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | no disponible (el repo incluye artefactos en formato GGUF, lo que sugiere cuantizaciones, pero no se detallan niveles) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | ONNX y GGUF (según tags) |
+| Formato de pesos | ONNX, GGUF y safetensors (tags del repo y metadata de parametros) |
+| Tamano del repositorio | 46,2 GB |
+| Pipeline declarado | no disponible |
+| Descargas | 748 |
+| Likes | 0 |
+| Fecha de creacion | 2026-05-13 |
+| Ultima actualizacion | 2026-11-20 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura del modelo. Los tags indican que se distribuye en formatos ONNX y GGUF, lo que implica que el modelo original ha sido convertido para su uso en diferentes motores de inferencia. El tag "imatrix" sugiere que se han aplicado cuantizaciones con matrices de importancia, una técnica habitual en modelos GGUF para mejorar la calidad en cuantizaciones de baja precisión (por ejemplo, IQ2, IQ3). Sin embargo, no se especifica el tipo de red neuronal (transformer, MoE, etc.), el número de capas, la dimensionalidad ni el vocabulario.
+No hay informacion publicada sobre la arquitectura del modelo. La model card no describe si se trata de un transformer denso, un modelo hibrido, un encoder o un componente auxiliar (tokenizer, vocoder, extractor de caracteristicas). Los tags del repositorio indican presencia de artefactos ONNX y GGUF, lo que es coherente con un modelo pensado para exportacion e inferencia en entornos heterogeneos, pero no permite inferir la familia arquitectonica.
 
-Tampoco hay datos sobre el conjunto de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. La ausencia de una model card detallada impide conocer cualquier innovación técnica concreta.
+Tampoco se documentan datos de entrenamiento: ni numero de tokens, ni composicion del corpus, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. La unica informacion cierta sobre el entrenamiento es indirecta: el recuento de 99.471.200 parametros procede de la metadata de los ficheros safetensors, no de una declaracion del autor. Cualquier afirmacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos) seria especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" sugiere que el modelo está pensado para mantener diálogos, pero no hay ejemplos ni descripción de su comportamiento.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: no disponibles, aunque la ausencia de idiomas listados indica que probablemente esté entrenado principalmente en inglés (sin confirmar).
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generacion de texto: no confirmada; la model card no describe tareas soportadas.
+- Razonamiento y matematicas: no disponible.
+- Generacion de codigo: no disponible.
+- Vision: no disponible.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
+- Capacidades especiales (modo thinking, audio, embeddings): no disponible.
+- Despliegue en formatos ONNX y GGUF: confirmado por los tags del repositorio, lo que habilita inferencia en runtimes como ONNX Runtime y llama.cpp, aunque sin especificar las tareas que cubren dichos artefactos.
 
 ## Casos de uso
 
-Dada la ausencia de información técnica y de benchmarks, los casos de uso son especulativos. Aun así, por su tamaño y formato, podría emplearse en:
-
-- Prototipado rapido de chatbots: al ser un modelo de 0.6B con formato GGUF, puede ejecutarse en CPU o GPU de gama baja para pruebas de concepto.
-- Despliegue en entornos con recursos limitados: su tamaño reducido permite inferencia en dispositivos edge o servidores modestos.
-- Experimentacion con cuantizacion: al incluir variantes imatrix, puede servir para estudiar el equilibrio entre tamaño y calidad en cuantizaciones agresivas.
-- Integracion en pipelines de prueba con ONNX Runtime: el formato ONNX facilita su uso en entornos de produccion con aceleracion hardware variada.
-- Educacion y aprendizaje: como ejemplo de modelo pequeño con licencia MIT para practicar tecnicas de despliegue y evaluacion.
-- Base para fine-tuning: al ser de tamaño reducido, podria ajustarse en hardware modesto para tareas especificas, aunque no hay informacion sobre su capacidad de adaptacion.
-
-Estos casos son hipoteticos y no estan respaldados por documentacion oficial.
+- Inferencia en CPU o entornos sin GPU: el formato GGUF y el tamano de aproximadamente 100 millones de parametros permiten ejecutar el modelo en equipos modestos mediante llama.cpp u Ollama, siempre que se confirme la tarea concreta que realiza.
+- Despliegue en navegador o edge con ONNX Runtime Web: la presencia de artefactos ONNX hace plausible su integracion en aplicaciones web o dispositivos con recursos limitados, previa validacion del grafo exportado.
+- Prototipado rapido de pipelines de NLP: un modelo de este tamano sirve para validar extremo a extremo una arquitectura de servicio (tokenizacion, inferencia, postprocesado) antes de escalar a modelos mayores.
+- Pruebas de cuantizacion y benchmarking de runtimes: al ofrecer variantes en GGUF, el repositorio puede usarse para comparar latencia y calidad entre niveles de cuantizacion en hardware concreto.
+- Fine-tuning ligero sobre dominio especifico: con 99 millones de parametros, el ajuste fino completo o mediante LoRA es viable en una unica GPU de consumo, si bien la licencia MIT permite hacerlo y redistribuirlo.
+- Componente auxiliar dentro de un sistema mayor: si el repositorio contiene un encoder, un tokenizer o un modelo de embeddings, podria integrarse como pieza de un pipeline de recuperacion o clasificacion, algo que requiere inspeccionar los ficheros para confirmarlo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. Tampoco se comparan con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un modelo de 0.6B, una cuantizacion Q8 (8 bits) ocuparia aproximadamente 0.6 GB, y una Q4 alrededor de 0.35 GB. Sin embargo, no se confirman las cuantizaciones disponibles.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, GTX 1650, RTX 2060) podria ejecutarlo en cuantizacion baja. En CPU, un procesador moderno con 8 GB de RAM seria suficiente.
-- Compatibilidad con consumer GPU: si, es viable en GPUs de consumo.
-- Opciones de despliegue: al existir formatos GGUF y ONNX, se puede usar llama.cpp, Ollama, llama-cpp-python, ONNX Runtime o TGI (si se convierte a otro formato). No se menciona compatibilidad con vLLM directamente.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 99,47 millones de parametros, en FP32 el modelo ocupa aproximadamente 0,4 GB; en FP16, unos 0,2 GB; en cuantizacion de 4 bits, alrededor de 0,05-0,1 GB. Estas cifras son calculos a partir del recuento de parametros, no mediciones publicadas.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para FP16; una RTX 3060, RTX 4060 o superior ofrece margen amplio. Para FP32 basta una GTX 1650 o equivalente.
+- GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos, e incluso en iGPU y en CPU pura.
+- Opciones de despliegue: llama.cpp y Ollama para los artefactos GGUF; ONNX Runtime (CPU, CUDA, DirectML o Web) para los artefactos ONNX; vLLM y TGI no estan confirmados para este formato y tamano.
+- Latencia y throughput: no disponibles; no se han publicado mediciones. A modo orientativo, un modelo de 100 millones de parametros en una GPU moderna suele procesar cientos o miles de tokens por segundo, pero no hay dato verificado para este repositorio.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo no tiene benchmarks publicados ni especificaciones de arquitectura, por lo que no es posible contrastarlo con alternativas como TinyLlama (1.1B), Phi-2 (2.7B) o Qwen2-0.5B. La unica diferencia objetiva es el tamaño (0.6B) y la licencia MIT, pero sin datos de rendimiento la comparacion carece de valor.
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
+|---|---|---|---|---|---|
+| Lafu01/eva-assets | 99,47 M | no disponible | MIT | ONNX, GGUF, safetensors | Model card vacia; proposito no documentado |
+| Modelos tipo GPT-2 small (referencia de categoria) | ~124 M | 1.024 tokens | MIT | safetensors, GGUF | Ampliamente documentado y evaluado |
+| Modelos tipo TinyLlama (referencia de categoria) | ~1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Un orden de magnitud mayor; requiere mas VRAM |
+
+La comparativa es necesariamente limitada: al no existir documentacion de arquitectura ni de tarea, no es posible emparejar eva-assets con un modelo equivalente funcional. Las filas de referencia se incluyen solo para situar el orden de magnitud de los parametros.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no hay informacion, pero al ser un modelo no documentado, es probable que herede sesgos de su corpus de entrenamiento (desconocido).
-- Riesgo de alucinacion: alto en modelos pequenos, especialmente sin alineacion documentada.
-- Limitaciones de contexto: se desconoce la longitud de contexto, lo que impide planificar su uso en dialogos largos.
-- Restricciones de licencia: la licencia MIT permite uso comercial, pero al no conocer el origen de los datos de entrenamiento, existe riesgo legal si el modelo fue entrenado con datos con derechos de autor.
-- Carencia de documentacion: la ausencia de model card y benchmarks hace que su uso en produccion sea arriesgado.
-- Mantenimiento: el autor no ha publicado actualizaciones ni notas de version.
+- Documentacion inexistente: la model card no describe arquitectura, entrenamiento, idiomas ni tareas, lo que impide garantizar un comportamiento correcto en produccion.
+- Riesgo de alucinacion: desconocido; no hay evaluaciones publicadas ni declaraciones del autor sobre tasas de error.
+- Sesgos: no evaluables sin informacion sobre el corpus de entrenamiento.
+- Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura linguistica.
+- Licencia: MIT permite uso comercial, modificacion y redistribucion con atribucion y sin garantia; conviene conservar el aviso de copyright original.
+- Coherencia de los artefactos: el desajuste entre 46,2 GB de repositorio y 99,47 millones de parametros sugiere que el repositorio contiene multiples ficheros (posiblemente varias exportaciones y cuantizaciones); es necesario inspeccionar el arbol de ficheros antes de asumir cual es el modelo principal.
+- Fechas de metadata: las fechas de creacion y actualizacion (2026) deben tratarse con cautela y verificarse contra el repositorio real antes de citarlas.
+- Sin garantia de mantenimiento: cero likes y ausencia de documentacion no permiten inferir soporte activo por parte del autor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Lafu01/eva-assets
+- Repositorio en Hugging Face: https://huggingface.co/Lafu01/eva-assets
 - Perfil del autor: https://huggingface.co/Lafu01
-- Listado de modelos del autor: https://huggingface.co/Lafu01/models
-
-No se han encontrado papers, blogs ni demos adicionales relacionados con este modelo.
+- Licencia MIT: https://opensource.org/licenses/MIT
+- Documentacion de llama.cpp (runtime para GGUF): https://github.com/ggerganov/llama.cpp
+- Documentacion de ONNX Runtime: https://onnxruntime.ai/
+- No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la informacion disponible.

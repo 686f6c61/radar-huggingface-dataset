@@ -2,122 +2,99 @@
 
 ## Resumen
 
-Qwen3.5-ANE-CoreML es una conversión no oficial de los modelos de texto Qwen3.5-0.8B, Qwen3.5-2B y Qwen3.5-4B al formato Core ML, publicada por el usuario takanori-ishikawa, con el objetivo explícito de ejecutarlos sobre el Apple Neural Engine (ANE) de los Macs con Apple Silicon. No es un lanzamiento del equipo Qwen y el autor lo declara así de forma explícita; se trata de un trabajo de conversión e ingeniería de despliegue sobre pesos ya entrenados.
+Qwen3.5 ANE CoreML es una conversión no oficial de los modelos Qwen3.5 (0.8B, 2B, 4B y 9B) al formato Core ML, optimizada para ejecutarse sobre la Apple Neural Engine (ANE) de los chips Apple Silicon. La desarrolla el usuario independiente takanori-ishikawa y no tiene vinculación ni respaldo del equipo Qwen. El problema que aborda es la ausencia de artefactos listos para producción que permitan ejecutar modelos Qwen3.5 en hardware Apple aprovechando la NPU en lugar de la GPU o la CPU, con un consumo energético y una latencia sensiblemente menores.
 
-El repositorio incluye artefactos separados por modelo y por longitud de contexto (2048, 8192 y 16384 tokens), con pesos cuantizados en 6 bits mediante palettización k-means con tamaño de grupo 32, más una tabla de embeddings compartida en int8 con escalas fp16. Incorpora decodificación especulativa mediante un borrador MTP (multi-token prediction) y grafos multifunción que exponen una función `decode` de un token y una función `verify` de cuatro tokens compartiendo pesos.
+El repositorio empaqueta nueve combinaciones de modelo y contexto: 0.8B a 2.048 tokens; 2B a 2.048 y 16.384 tokens; y 4B y 9B a 2.048, 8.192 y 16.384 tokens. Los pesos de las capas lineales se comprimen con paletización k-means de 6 bits (group size 32) y las embeddings con cuantización int8 simétrica por filas. Cada paquete incluye un decodificador de un token y un grafo de prefill de cuatro tokens para acelerar el procesamiento del prompt.
 
-Su relevancia práctica es doble: por un lado, permite ejecutar modelos Qwen3.5 de tamano pequeno completamente en local sobre hardware Apple sin GPU dedicada, con implicaciones de privacidad y consumo; por otro, documenta límites reales del ANE (formas estáticas, máximo de 8 actualizaciones dinámicas de slice, imposibilidad de compilar 32K de contexto), lo que lo convierte en una referencia técnica útil para quien trabaje con Core ML a bajo nivel. El runtime Swift del autor y su demo SwiftUI no se distribuyen públicamente.
+Es relevante ahora porque demuestra una vía práctica para inferencia local de LLMs en Mac y dispositivos Apple sin depender de frameworks de servidor, aunque el propio autor advierte de que el repositorio ya no se mantiene: el comportamiento de Core ML depende en gran medida del hardware y de la versión de macOS, lo que dificulta su soporte a largo plazo. Los ficheros permanecen disponibles tal cual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en detalle en la informacion disponible; la model card menciona un grafo de salida DeltaNet (W4p) en la funcion de verificacion. Modelo base Qwen3.5 (transformer denso) |
-| Parametros totales | Tres variantes: 0.8B, 2B y 4B |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 2048, 8192 (solo 2B) y 16384 tokens segun artefacto; 32K no compila para ANE con este grafo |
-| Tipos de cuantizacion | Pesos en 6 bits palettizados (k-means, group size 32, `lut6`); tabla de embeddings int8 simetrica por filas con escalas fp16; formato fp16 crudo conservado como compatibilidad pero excluido de la distribucion |
-| Idiomas soportados | Ingles y japones |
+| Arquitectura | Transformer de Qwen3.5 convertido a Core ML (grafos fragmentados en chunks ejecutables en ANE) |
+| Parametros totales | 0,8B / 2B / 4B / 9B (cuatro variantes) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 2.048; 8.192 (solo 4B y 9B); 16.384 (2B, 4B y 9B) |
+| Tipos de cuantizacion | Paletizacion k-means de 6 bits (LUT6, group size 32) en capas lineales; int8 simetrica por filas en embeddings |
+| Idiomas soportados | en, ja |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.mlpackage` (Core ML) mas tablas de embeddings `.int8.bin` compartidas en la raiz del repositorio; no se publican safetensors ni GGUF |
-
-Datos adicionales de los artefactos:
-
-| Directorio | Modelo | Contexto | Tamano (GiB) | Rol |
-|---|---|---:|---:|---|
-| `qwen3.5-2b_ctx2048_chunks6_multifunction_lut6_kvslice_gqagrouped` | 2B | 2048 | 1.330 | Decode de un token + verify k=4 |
-| `qwen3.5-2b_ctx2048_lut6_mtp_fill_chain3` | 2B | 2048 | 0.1 | Borrador MTP |
-| `qwen3.5-2b_ctx8192_chunks6_lut6_kvslice_gqagrouped_kvsplit` | 2B | 8192 | 1.3 | Decode de un token |
-| `qwen3.5-2b_ctx16384_chunks6_multifunction_lut6_kvslice_gqagrouped` | 2B | 16384 | 1.351 | Decode de un token + verify k=4 |
-| `qwen3.5-2b_ctx16384_lut6_mtp_fill_chain3` | 2B | 16384 | 0.1 | Borrador MTP |
-| `qwen3.5-0.8b_ctx2048_chunks6_multifunction_lut6_kvslice_gqagrouped` | 0.8B | 2048 | 0.540 | Decode de un token + verify k=4 |
-| `qwen3.5-0.8b_ctx2048_lut6_mtp_fill_chain3` | 0.8B | 2048 | 0.1 | Borrador MTP |
-| `qwen3.5-4b_ctx2048_chunks8_multifunction_lut6_kvslice_gqagrouped` | 4B | 2048 | 2.975 | Decode de un token + verify k=4 |
-| `qwen3.5-4b_ctx2048_lut6_mtp_fill_chain3` | 4B | 2048 | 0.438 | Borrador MTP |
-
-Tabla de embeddings compartida (int8, excluida del computo de tamanos de directorio):
-
-| Modelo | Forma | Bytes | MiB | Offset de escalas (bytes) |
-|---|---:|---:|---:|---:|
-| 0.8B | `[248320, 1024]` | 254776320 | 242.97 | 254279680 |
-| 2B | `[248320, 2048]` | 509056000 | 485.47 | 508559360 |
-| 4B | `[248320, 2560]` | 636195840 | 606.72 | 635699200 |
+| Formato de pesos | Core ML `.mlpackage` (fragmentado en chunks) + tabla de embeddings `.int8.bin` en el host |
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre el entrenamiento de estos artefactos: son conversiones de pesos ya entrenados de Qwen3.5-0.8B, Qwen3.5-2B y Qwen3.5-4B, y la model card no describe dataset, número de tokens, ni fases de RLHF o DPO. Tampoco se detalla la arquitectura interna del modelo base más allá de la mención a un grafo de salida DeltaNet empleado en la función de verificación con pre-escalado de proyección de `2^8`. Lo que sí se documenta con precisión es la ingeniería de la conversión.
+La ficha corresponde a una conversión, no a un entrenamiento. El modelo subyacente es la familia Qwen3.5 de Alibaba en sus variantes 0.8B, 2B, 4B y 9B, de arquitectura transformer con atención agrupada por cabezas (GQA), tal como se deduce del sufijo `gqagrouped` de los artefactos. La conversión divide el modelo en 6 chunks (0.8B y 2B) u 8 chunks (4B y 9B) que se ejecutan secuencialmente en la ANE, mientras la tabla de embeddings compartida permanece en el host en lugar de residir en la NPU.
 
-La conversión divide el modelo en paquetes de 4 capas (`chunks6` para 24 capas en el 0.8B y el 2B; `chunks8` para 32 capas en el 4B). Cada paquete multifunción contiene una función `decode` de un token y una función `verify` de cuatro tokens que comparten los pesos almacenados. La caché KV se mantiene como estado de Core ML en el ANE, actualizada por slices, agrupada por grupo GQA y con K y V en estados separados en las funciones de decode; la función de verify mantiene K y V de una capa en un único estado y escribe ambos con una sola actualización de slice por fila, una decisión forzada por el límite del driver del ANE. La cuantización emplea palettización k-means de 6 bits con tamaño de grupo 32, y la tabla de embeddings usa cuantización simétrica por filas (`scale = max(abs(row))/127`, redondeo a par) en int8, recuperable mediante mmap y multiplicación en fp32 con salida fp16.
-
-La decodificación especulativa se apoya en artefactos MTP separados por modelo y contexto, que aportan un borrador `fill` publicado más una cadena de 3 pasos a 32K. El ANE impone formas estáticas: `ctx` es la longitud del búfer KV y el coste de decodificación crece con él con independencia de la longitud real del prompt.
+Cada paquete incorpora dos grafos: un decodificador de un token y un grafo de prefill de cuatro tokens que procesa el prompt en grupos de cuatro; los tokens restantes y todos los generados pasan por el decodificador de un token. El grafo de 9B incluye una conversión numéricamente estable del softplus de DeltaNet, que según el autor elevó la coincidencia top-1 de 111/138 (80,43%) a 127/138 (92,03%) en una secuencia de regresión fija de 138 tokens. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni etapas de RLHF o DPO, ya que corresponden al modelo original y no se reproducen en esta conversión.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés y japonés, con tokenizador y plantilla de chat idénticos a los del modelo original.
-- Decodificación de un token mediante la función `decode` de los paquetes multifunción.
-- Decodificación especulativa MTP: la función `verify` valida 4 tokens por paso y los artefactos MTP aportan el borrador, con una cadena de 3 pasos.
-- Ejecución íntegra sobre el Apple Neural Engine, sin GPU dedicada ni acceso a red.
-- Reutilización de una tabla de embeddings int8 compartida entre los artefactos de decode, verify y MTP de un mismo modelo.
-- No se documentan capacidades de tool calling, function calling, uso de agentes, razonamiento multi-paso explícito, visión ni audio.
-- No se documenta un modo de pensamiento (thinking mode) ni ninguna capacidad multimodal.
-- El driver Python de referencia (`examples/generate.py`) implementa únicamente decodificación greedy de un token.
+- Generación de texto autoregresiva en inglés y japonés, los dos idiomas declarados.
+- Razonamiento y generación de código heredados del modelo Qwen3.5 original, sujetos a la degradación introducida por la cuantización de 6 bits.
+- Prefill por grupos de cuatro tokens para reducir la latencia de procesamiento del prompt.
+- Ejecución íntegra en Apple Silicon con pesos residentes en ANE y embeddings en el host.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
+- No se documenta capacidad multilingüe más allá de inglés y japonés.
 
 ## Casos de uso
 
-- Asistentes de chat locales en aplicaciones macOS: el artefacto de 2B con contexto 2048 ocupa 1.330 GiB y se ejecuta sobre ANE, de modo que puede embeberse en una app de escritorio sin servidor ni conexión a internet.
-- Procesamiento de documentos confidenciales en japonés e inglés: con el artefacto de 2B y contexto 16384 (1.351 GiB) se pueden resumir o extraer información de contratos e informes sin que el texto salga del equipo.
-- Investigación sobre decodificación especulativa en hardware Apple: la combinación de un directorio multifunción y su directorio MTP del mismo modelo y contexto permite medir la tasa de aceptación de la verificación k=4 y el coste de la cadena de 3 pasos.
-- Estudio de cuantización de bajo bit en aceleradores dedicados: la palettización k-means de 6 bits con tamaño de grupo 32 y la tabla de embeddings int8 sirven como caso de referencia reproducible frente al formato fp16 crudo.
-- Prototipado en Python sobre coremltools 9 y numpy: el driver de referencia permite validar la integración de un `.mlpackage` con una tabla de embeddings mmap antes de invertir en un runtime propio.
-- Aplicaciones iOS y macOS con requisitos de eficiencia energética: al delegar todo el cálculo al ANE, el modelo no compite por la GPU y encaja en flujos de trabajo que ya usan Neural Engine para otras tareas.
-- Despliegue en flotas de Macs Apple Silicon (por ejemplo, M4 Pro) para tareas de generación de texto de bajo volumen sin infraestructura GPU.
-- Evaluación comparativa entre las tres tallas: 0.8B (0.540 GiB a contexto 2048), 2B (1.330 GiB) y 4B (2.975 GiB) permiten trazar la curva de calidad frente a memoria y latencia en el mismo acelerador.
+- Inferencia local en Mac con bajo consumo: el paquete de 0.8B a 2.048 tokens ocupa 0,54 GiB más 243 MiB de embeddings, lo que permite ejecutarlo en cualquier Mac con Apple Silicon sin cargar la GPU y con consumo energético contenido al delegar en la ANE.
+- Asistentes de escritura offline en aplicaciones macOS: el paquete de 2B a 16.384 tokens (1,35 GiB más 485 MiB) cubre documentos largos y conversaciones multi-turno sin salir del dispositivo, útil para herramientas que manejan texto confidencial.
+- Procesamiento de texto en japonés e inglés en apps nativas: los dos idiomas declarados permiten integrar resumen o reescritura bilingüe en aplicaciones iOS y macOS distribuidas por App Store.
+- Prototipado de funciones de autocompletado en editores: el decodificador de un token y el prefill de cuatro tokens encajan en un flujo interactivo donde el usuario teclea y el modelo completa fragmentos cortos.
+- Clasificación y extracción de entidades en local: el paquete de 4B a 8.192 tokens (2,99 GiB más 607 MiB) permite procesar lotes de documentos moderadamente largos en un Mac con memoria unificada de 16 GB o más.
+- Validación de pipelines Core ML en CI: los artefactos incluyen `metadata.json` con el orden de ejecución de los chunks y ejemplos de conductor en Python, lo que facilita pruebas de integración en flujos de desarrollo de apps Apple.
+- Evaluación comparativa de cuantización: los informes de coincidencia top-1 (93,75% en 2B, 90,63% en 9B) sirven como referencia para medir el impacto de LUT6 frente a BF16 en tareas concretas antes de adoptar el modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que algunas cifras se obtuvieron con sondas de medida en Python que no se han publicado, y no se incluyen tablas de MMLU, HumanEval, GSM8K ni de latencia o throughput.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo reporta comprobaciones de fidelidad de la conversión, que comparan la elección del siguiente token frente al modelo BF16 original con teacher forcing:
+
+| Modelo | Secuencia | Coincidencia top-1 | Resultado |
+|---|---:|---:|---|
+| 2B, decodificación de un token, LUT6 | 64 tokens | 60/64 (93,75%) | pass |
+| 9B, decodificación de un token, LUT6 | 64 tokens | 58/64 (90,63%) | pass |
+| 9B con softplus DeltaNet estable, secuencia de regresión | 138 tokens | 127/138 (92,03%) | mejora frente a 111/138 (80,43%) |
+
+Ocho de los nueve paquetes superaron una prueba de humo extremo a extremo en Swift/Core ML generando la cadena `Qwen ANE ready.`; el paquete 2B/16K no se incluyó en esa prueba. El autor advierte que estas cifras miden la fidelidad de la conversión, no la calidad en tareas generales.
 
 ## Requisitos de hardware
 
-- Plataforma: Mac con Apple Silicon, con ejecución sobre el Apple Neural Engine. Las medidas declaradas se tomaron en un M4 Pro con macOS 26.5.1, Python 3.12 y coremltools 9.
-- Memoria en disco por artefacto (excluyendo la tabla de embeddings compartida): 0.8B/ctx2048 0.540 GiB; 2B/ctx2048 1.330 GiB; 2B/ctx8192 1.3 GiB; 2B/ctx16384 1.351 GiB; 4B/ctx2048 2.975 GiB; borradores MTP entre 0.1 y 0.438 GiB.
-- Tabla de embeddings compartida: 242.97 MiB (0.8B), 485.47 MiB (2B) y 606.72 MiB (4B).
-- Tamano total del repositorio: 47,3 GB, ya que incluye todas las variantes de modelo y contexto.
-- El artefacto de 0.8B es el unico claramente holgado para equipos con memoria unificada reducida; el de 4B a contexto 2048 (2.975 GiB) exige al menos un Mac con 16 GB de memoria unificada para operar con margen.
-- No cabe en GPU de consumo tipo RTX 4090 en el sentido habitual: los artefactos son Core ML y estan pensados para ANE, no para CUDA.
-- Opciones de despliegue: coremltools 9 y numpy desde Python con el driver `examples/generate.py`; el runtime Swift y la demo SwiftUI del autor no se distribuyen. El soporte de `inference: false` en la model card desaconseja su uso como pipeline estandar de Hugging Face.
-- Latencia y throughput: no disponibles. El coste de decodificación crece con la longitud del búfer KV, que es estatico por artefacto, y no con la longitud del prompt.
+- VRAM/memoria: el paquete de 0.8B/2K requiere 0,54 GiB de pesos Core ML más 243 MiB de embeddings; el de 2B/16K, 1,35 GiB más 485 MiB; el de 4B/16K, 3,00 GiB más 607 MiB; el de 9B/16K, 5,61 GiB más 970 MiB.
+- Memoria unificada recomendada: al menos 8 GB para 0.8B y 2B, 16 GB para 4B y 24 GB o más para 9B, sumando el estado estático de contexto y el resto del sistema.
+- GPU/NPU: requiere Apple Silicon con Apple Neural Engine (serie M1 en adelante en Mac; chips A-series y M-series en iPhone e iPad). No se contempla ejecución en GPU NVIDIA ni AMD.
+- Cabe en hardware de consumo: sí, en cualquier Mac con Apple Silicon; los paquetes de 0.8B y 2B son los más adecuados para equipos con 8 GB.
+- Despliegue: Core ML mediante el runtime propio del autor con los ejemplos en Python incluidos en `examples/**`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que el formato `.mlpackage` es específico de Core ML.
+- Latencia y throughput: no disponibles; dependen del chip, de la versión de macOS y del tamaño de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---:|---|---|---|---|
-| Qwen3.5-ANE-CoreML (0.8B / 2B / 4B) | 0.8B, 2B, 4B | 2048, 8192 y 16384 segun artefacto | `.mlpackage` + embeddings int8 | Apache 2.0 | Publico en Hugging Face (625 descargas); runtime Swift no distribuido |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0.8B | no disponible | no disponible | no disponible | Publico en Hugging Face |
-| Qwen/Qwen3.5-2B (modelo base) | 2B | no disponible | no disponible | no disponible | Publico en Hugging Face |
-| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| Modelo | Parametros | Contexto | Formato | Licencia | Estado |
+|---|---|---|---|---|---|
+| Qwen3.5-ANE-CoreML (2B) | 2B | 2.048 / 16.384 | Core ML, LUT6 | Apache 2.0 | Sin mantenimiento |
+| Qwen/Qwen3.5-2B (original) | 2B | no disponible | safetensors BF16 | Apache 2.0 | Activo |
+| Qwen3.5-ANE-CoreML (9B) | 9B | 2.048 / 8.192 / 16.384 | Core ML, LUT6 | Apache 2.0 | Sin mantenimiento |
+| Qwen/Qwen3.5-9B (original) | 9B | no disponible | safetensors BF16 | Apache 2.0 | Activo |
 
-No se dispone de datos comparativos de rendimiento ni de otras conversiones Core ML equivalentes en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, formato y licencia.
+La comparación con alternativas de terceros no está disponible en la información proporcionada. Frente al modelo original, la conversión ofrece un tamaño mucho menor (5,61 GiB frente a los pesos BF16 equivalentes) y ejecución en ANE, a cambio de una pérdida de fidelidad top-1 de aproximadamente el 6-9% en las pruebas del autor.
 
 ## Limitaciones y advertencias
 
-- Es una conversión no oficial: no está afiliada ni respaldada por el equipo Qwen, y la propia model card lo advierte.
-- La model card declara `inference: false`; el flujo de uso previsto no es el pipeline estandar de Hugging Face.
-- El runtime Swift y la demo SwiftUI que soportan decodificación especulativa MTP no se distribuyen públicamente; el único driver disponible es Python con decodificación greedy de un token. Las sondas de medida tampoco se publican.
-- Formas estáticas: el contexto (`ctx`) es la longitud del búfer KV y el coste de decodificación crece con él aunque el prompt sea corto. 32K no compila para ANE con este grafo.
-- Límite del driver del ANE: desde macOS 26.6.2 / iOS 26.6.1 el kernel rechaza programas con 8 o más actualizaciones dinámicas de slice (`Number of SNE ops exceeded max allowed: 8`, error Core ML -14). Las funciones de verify solo son viables manteniendo K y V en un mismo estado por capa.
-- Idiomas limitados a inglés y japonés según los metadatos; no hay cobertura declarada de castellano.
-- Repositorio de 47,3 GB, lo que obliga a descargar selectivamente el artefacto y la tabla de embeddings correspondientes.
-- No hay benchmarks publicados, por lo que la calidad real frente a los modelos base no puede verificarse con los datos disponibles.
-- Al derivar de Qwen3.5, hereda los sesgos y el riesgo de alucinación del modelo original, no caracterizados en esta ficha.
-- Licencia Apache 2.0, que permite uso comercial, pero el autor no ofrece garantías sobre los artefactos convertidos.
-- La palettización k-means de 6 bits y la cuantización int8 de la tabla de embeddings introducen pérdida de precisión respecto a los pesos originales, no cuantificada en la información disponible.
+- Repositorio sin mantenimiento: el autor detiene el desarrollo y advierte de que el comportamiento de Core ML depende fuertemente del hardware y de la versión del sistema operativo.
+- Conversión no oficial, sin respaldo del equipo Qwen.
+- La cuantización LUT6 y la ejecución en Core ML pueden alterar secuencias generadas, especialmente cuando los logits del modelo original están casi empatados; es necesario validar con prompts propios y en el dispositivo objetivo.
+- No hay comparación de fidelidad publicada para los paquetes de contexto largo (8K y 16K); solo se verificó la integración en ocho de los nueve paquetes.
+- Idiomas limitados a inglés y japonés; el rendimiento en castellano no está documentado.
+- No se documentan capacidades de tool calling, agentes, visión ni audio.
+- Riesgo de alucinación inherente al modelo base, no mitigado por la conversión.
+- Sesgos del modelo original no evaluados en esta ficha.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de mantenimiento y la dependencia de versiones concretas de macOS suponen un riesgo para producción.
+- Algunos paquetes antiguos marcan sus registros de compatibilidad como `legacy_unverified`; solo 4B/8K, 4B/16K, 9B/8K y 9B/16K incluyen metadatos de firma de conversión.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/takanori-ishikawa/Qwen3.5-ANE-CoreML
-- Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
-- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
-- Driver de referencia incluido en el repositorio: `examples/generate.py`
-- No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.
+- Hugging Face: https://huggingface.co/takanori-ishikawa/Qwen3.5-ANE-CoreML
+- Modelo base 0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Modelo base 2B: https://huggingface.co/Qwen/Qwen3.5-2B
+- Modelo base 4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo base 9B: https://huggingface.co/Qwen/Qwen3.5-9B

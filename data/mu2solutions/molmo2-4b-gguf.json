@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "allenai/Molmo2-4B · Hugging Face",
-      "url": "https://huggingface.co/allenai/Molmo2-4B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Molmo | Ai2",
-      "url": "https://allenai.org/molmo",
-      "snippet": "A compact workhorse for multimodal research. Molmo 2 (4B) delivers strong performance on image, captioning, pointing, video understanding, and tracking tasks while staying light enough for workstations and rapid iteration."
-    },
-    {
-      "title": "GitHub - allenai/molmo2: Code for the Molmo2 Vision-Language Model",
-      "url": "https://github.com/allenai/molmo2",
-      "snippet": "Code for the Molmo2 Vision-Language Model. Contribute to allenai/molmo2 development by creating an account on GitHub."
-    },
-    {
-      "title": "reubk/Molmo2-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/reubk/Molmo2-4B-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - allenai/molmo: Code for the Molmo Vision-Language Model",
-      "url": "https://github.com/allenai/molmo",
-      "snippet": "Code for the Molmo Vision-Language Model. Contribute to allenai/molmo development by creating an account on GitHub."
-    }
-  ]
+  "sources": []
 }

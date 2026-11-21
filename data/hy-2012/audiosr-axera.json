@@ -27,7 +27,7 @@
     "base_model:finetune:haoheliu/audiosr_speech",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 64,
   "trending_score": 0,
   "parameters": null,

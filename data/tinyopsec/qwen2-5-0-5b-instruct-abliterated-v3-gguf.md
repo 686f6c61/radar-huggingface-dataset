@@ -2,84 +2,89 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF es un repositorio de cuantizaciones GGUF del modelo `huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3`, elaborado por el usuario tinyopsec con llama.cpp. El modelo base es Qwen2.5-0.5B-Instruct, un modelo conversacional de 494 millones de parámetros de Alibaba, al que se le ha aplicado un proceso de "abliteración": una técnica que suprime las direcciones de rechazo en el espacio de activaciones del modelo, eliminando de facto sus salvaguardas de seguridad sin necesidad de reentrenamiento completo.
+Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF es una distribucion en formato GGUF del modelo huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3, publicado por el usuario tinyopsec. Se trata de una cuantizacion de un fine-tune "abliterated" (sin censura) del Qwen2.5-0.5B-Instruct original de Alibaba, orientada a inferencia local en CPU o GPU de gama baja mediante llama.cpp y runtimes compatibles.
 
-La relevancia de esta ficha radica en el nicho que cubre: un modelo extremadamente pequeño (0,5B), sin filtros y en formato GGUF, capaz de ejecutarse en prácticamente cualquier hardware, incluidas CPUs modestas y dispositivos de borde. Es útil para investigación en alineación y seguridad, red-teaming, pruebas de robustez y casos de uso donde el rechazo del modelo resulta un obstáculo, siempre bajo responsabilidad del usuario.
+El modelo conserva la arquitectura transformer densa del Qwen2.5-0.5B, con aproximadamente 494 millones de parametros, y se ofrece en trece variantes de cuantizacion que van desde F16 (1,0 GB) hasta Q2_K. El repositorio ocupa 5,8 GB en total y acumula 832 descargas en Hugging Face.
 
-El repositorio ofrece trece cuantizaciones, desde F16 (1,0 GB) hasta Q2_K, con Q4_K_M marcada como recomendada por el autor. La licencia es Apache 2.0, heredada del modelo base de Qwen.
+Su relevancia practica reside en que permite ejecutar un modelo de chat ligero en hardware muy modesto, incluso en entornos sin GPU dedicada, con licencia Apache 2.0. La contrapartida es que al ser una version abliterated, las salvaguardas de seguridad del modelo original han sido eliminadas deliberadamente, lo que exige evaluacion previa antes de cualquier uso en produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (familia Qwen2.5) |
-| Parámetros totales | 494.032.768 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el base Qwen2.5-0.5B-Instruct soporta 32.768 tokens, pero no figura en la model card) |
+| Arquitectura | Transformer denso (familia Qwen2) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado con llama.cpp) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder denso de la familia Qwen2.5 de Alibaba, entrenado como modelo conversacional (instruct). Los datos concretos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada.
+La arquitectura subyacente es la del Qwen2.5-0.5B-Instruct: un transformer decoder-only denso con atencion por cabezas y mecanismos propios de la familia Qwen2 (RoPE, normalizacion RMSNorm, activacion SwiGLU). El modelo base huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 se obtiene aplicando la tecnica de abliteration sobre Qwen2.5-0.5B-Instruct, que consiste en proyectar fuera de los pesos las direcciones de activacion asociadas a rechazos de contenido, eliminando asi la tendencia a declinar peticiones consideradas sensibles.
 
-La modificación principal es la abliteración realizada por huihui-ai sobre el modelo base. Esta técnica identifica la dirección en el espacio de activaciones responsable de los rechazos del modelo y la suprime (por ejemplo, proyectando las activaciones de forma ortogonal a dicha dirección), de modo que el modelo deja de negarse a generar contenido que originalmente estaría filtrado. No se trata de un fine-tune con nuevos datos, sino de una intervención directa sobre las activaciones. Las cuantizaciones GGUF del repositorio se generaron con llama.cpp a partir del modelo abliterado; el tamaño del repo es de 5,8 GB en total.
+No se dispone de informacion detallada sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO adicionales. El proceso de cuantizacion se realizo con llama.cpp, generando las trece variantes GGUF listadas. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion linear ni arquitecturas hibridas).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno (pipeline text-generation, tag "chat").
-- Modelo abliterado: responde sin los rechazos de seguridad del modelo original, lo que lo hace apto para investigación en seguridad y red-teaming.
-- Ejecución local con llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, koboldcpp).
-- Amplia gama de cuantizaciones, permitiendo ajustar el equilibrio entre calidad y huella de memoria (desde 1,0 GB en F16 hasta niveles de 2 bits).
-- Capacidades de razonamiento, código o matemáticas: no disponibles como datos específicos en la model card (corresponden al modelo base Qwen2.5-0.5B-Instruct).
-- Tool calling, agentes, visión o audio: no disponible.
+- Generacion de texto conversacional multi-turno, heredada del Qwen2.5-0.5B-Instruct.
+- Razonamiento basico y respuesta a instrucciones simples, limitado por el tamano del modelo.
+- Generacion de codigo y resolucion de problemas matematicos sencillos (capacidad reducida en comparacion con modelos de mayor tamano).
+- Sin modo de pensamiento explicito (thinking mode) ni capacidades de vision o audio.
+- Soporte de tool calling no confirmado en la informacion disponible.
+- Capacidades multilingues no verificadas; el modelo base Qwen2.5 declara soporte multilingue, pero el fine-tune abliterated no especifica idiomas.
+- Comportamiento sin rechazo de contenido (uncensored), que es la caracteristica distintiva de esta variante.
 
 ## Casos de uso
 
-- Investigación en alineación y seguridad: al ser un modelo abliterado, permite estudiar el comportamiento de LLM sin salvaguardas, probar jailbreaks defensivos y evaluar filtros externos en un entorno controlado.
-- Red-teaming y pruebas de robustez: los equipos de seguridad pueden usarlo como punto de partida barato para generar adversarios o probar clasificadores de contenido sin depender de APIs cerradas.
-- Prototipado en hardware mínimo: con ~0,5B de parámetros y cuantizaciones de 4 bits, cabe en CPUs sin GPU dedicada, ideal para pruebas rápidas de pipelines de texto en portátiles o SBCs.
-- Integración en aplicaciones locales de chat: mediante Ollama o LM Studio puede servir como motor conversacional offline en herramientas de escritorio.
-- Experimentación con cuantizaciones: las trece variantes permiten comparar la degradación de calidad entre Q2_K y F16 en un modelo pequeño y de evaluación rápida.
-- Generación de texto en entornos sin conexión: útil para automatización de texto simple (resúmenes, reescrituras) en sistemas aislados donde no se requiere máxima calidad.
+- Chatbot local en dispositivos de gama baja: el modelo en Q4_K_M ocupa aproximadamente 0,3 GB, lo que permite ejecutarlo en CPU de portatiles, Raspberry Pi de gama alta o moviles con llama.cpp, gestionando conversaciones cortas sin conexion a internet.
+- Prototipado rapido de interfaces conversacionales: al cargar en segundos con Ollama o LM Studio, sirve para validar flujos de UI de chat antes de migrar a modelos mayores.
+- Generacion de texto offline en entornos air-gapped: al ser GGUF y Apache 2.0, puede desplegarse en sistemas sin acceso a red ni dependencia de APIs externas.
+- Filtrado y clasificacion de texto ligera: tareas de etiquetado, resumens cortos o extraccion de entidades en pipelines de bajo coste donde la latencia y el consumo energetico son criticos.
+- Educacion e investigacion sobre tecnicas de abliteration: permite estudiar empiricamente como un fine-tune uncensored altera las distribuciones de respuesta respecto al modelo original en un tamano manejable.
+- Generacion de datos sinteticos a pequena escala: util para ampliar datasets de entrenamiento o pruebas de robustez donde no se requiere alta calidad y se prioriza el volumen con coste cero.
+- Demos de agentes simples: con runtimes que soportan plantillas de chat, puede integrarse en flujos de un solo paso para pruebas de concepto de automatizacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 1,0 GB en F16, ~0,5-0,6 GB en Q8_0, ~0,4 GB en Q4_K_M y menos de 0,3 GB en Q2_K (estimaciones a partir del tamaño de parámetros y la cuantización; los tamaños exactos por fichero no están todos detallados en la model card salvo F16).
-- GPU recomendada: no requiere GPU dedicada; cualquier GPU moderna con 2 GB de VRAM o más lo ejecuta con holgura. En CPU, funciona en equipos modestos (4-8 GB de RAM).
-- Consumer GPUs: cabe sin problemas en RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas, en cualquier cuantización.
-- Despliegue: llama.cpp (comando `llama-cli` documentado en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponible; dado el tamaño de 0,5B, se espera inferencia muy rápida incluso en CPU, pero no hay medidas publicadas.
+- VRAM estimada: aproximadamente 1,0 GB en F16, 0,5 GB en Q8_0, 0,35 GB en Q5_K_M, 0,3 GB en Q4_K_M y 0,2 GB en Q2_K (valores aproximados derivados del tamano de los ficheros GGUF; no confirmados explicitamente).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM efectiva; RTX 3050, RTX 4060, GTX 1660 o iGPU modernas son suficientes.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos diez anos, y tambien en CPU exclusivamente.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Licencia | Particularidad |
-|---|---|---|---|---|
-| tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF | 494M | GGUF (13 cuantizaciones) | Apache 2.0 | Abliterado, sin salvaguardas |
-| Qwen/Qwen2.5-0.5B-Instruct | 494M | safetensors | Apache 2.0 | Modelo base con filtros de seguridad |
-| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | 494M | safetensors | no disponible | Origen de la abliteración, sin cuantizaciones GGUF propias en este repo |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF | 494 M | no disponible | Apache 2.0 | GGUF | Version uncensored, 13 cuantizaciones |
+| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | 494 M | no disponible | Apache 2.0 | safetensors | Modelo base del anterior, sin cuantizar |
+| Qwen/Qwen2.5-0.5B-Instruct | 494 M | 32 768 (segun documentacion publica de Qwen2.5) | Apache 2.0 | safetensors | Modelo original con salvaguardas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1 540 M | 32 768 (segun documentacion publica de Qwen2.5) | Apache 2.0 | safetensors | Alternativa de mayor tamano y calidad |
 
-La propuesta de valor de esta ficha frente a las alternativas es la disponibilidad inmediata en GGUF con trece niveles de cuantización del modelo abliterado, mientras que el origen (huihui-ai) distribuye pesos sin cuantizar y el base de Qwen conserva las salvaguardas.
+La comparativa con Qwen2.5-0.5B-Instruct es la mas directa: misma arquitectura y tamano, pero con salvaguardas intactas. El Qwen2.5-1.5B-Instruct ofrece mayor capacidad a costa de aproximadamente el triple de VRAM en cuantizacion equivalente.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado/uncensored: genera contenido sin los rechazos de seguridad originales. Su uso para producir contenido dañino es responsabilidad exclusiva del usuario; el propio autor incluye un disclaimer pidiendo evaluar el modelo antes de usarlo.
-- Al eliminar las salvaguardas mediante intervención en activaciones, puede aumentar el riesgo de alucinaciones y degradación de calidad general respecto al modelo base; no hay evaluaciones publicadas que cuantifiquen esta degradación.
-- Con 0,5B de parámetros, la capacidad de razonamiento, código y matemáticas es limitada en términos absolutos; no es apto para tareas complejas de producción.
-- Cuantizaciones agresivas (Q3, Q2_K) degradan apreciablemente la calidad; el autor recomienda Q4_K_M como equilibrio.
-- Idiomas soportados, longitud de contexto y benchmarks no están documentados en la model card del repo.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el contenido generado carece de garantías y el usuario asume la responsabilidad legal y ética.
-- Repositorio de comunidad con pocas descargas (387) y sin likes: no cuenta con auditoría ni validación de terceros.
+- Modelo abliterated: las salvaguardas del Qwen2.5-0.5B-Instruct original han sido eliminadas, por lo que puede generar contenido que el modelo base rechazaria. Requiere evaluacion y politicas de moderacion externas antes de uso en produccion.
+- Riesgo elevado de alucinacion: con solo 494 millones de parametros, la fidelidad factual y la coherencia en contextos largos son limitadas en comparacion con modelos de mayor tamano.
+- Capacidad de razonamiento y codigo reducida: adecuado para tareas simples, no para razonamiento multi-paso complejo ni generacion de codigo en produccion.
+- Idiomas y longitud de contexto no documentados en la ficha del repositorio; no se puede confirmar el comportamiento multilingue ni la ventana efectiva.
+- Licencia Apache 2.0 permite uso comercial, pero el autor incluye un descargo de responsabilidad ("Evaluate before use") que traslada al usuario la responsabilidad sobre el contenido generado.
+- Al ser una cuantizacion, las variantes de 2 y 3 bits (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de salida; se recomienda Q4_K_M o superior para uso practico.
+- No se dispone de informacion sobre sesgos especificos introducidos por el proceso de abliteration.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Modelo abliterado original: https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
-- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF
+- Modelo base (fine-tune abliterated): https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
+- Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai

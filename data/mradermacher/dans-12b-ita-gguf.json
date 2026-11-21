@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/dans-12b-ita-GGUF",
+  "slug": "mradermacher-dans-12b-ita-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/dans-12b-ita-GGUF",
+  "created_at": "2025-09-03T09:14:51.000Z",
+  "updated_at": "2026-11-20T23:46:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:SeppiaCelata/dans-12b-ita",
+    "base_model:quantized:SeppiaCelata/dans-12b-ita",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692269984,
+  "storage_human": "84.7 GB",
+  "context_length": 131072,
+  "base_model": "SeppiaCelata/dans-12b-ita",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

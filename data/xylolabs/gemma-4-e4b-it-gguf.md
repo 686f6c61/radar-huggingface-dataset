@@ -2,99 +2,116 @@
 
 ## Resumen
 
-Gemma 4 E4B IT es un modelo de lenguaje desarrollado por Google DeepMind, publicado originalmente en formato BF16 y distribuido bajo licencia Apache 2.0. Esta ficha describe la versión cuantizada en GGUF preparada por Xylolabs, que conserva únicamente el decodificador de texto del modelo original: los pesos del codificador de visión y audio, así como sus proyectores, se han omitido deliberadamente, de modo que la ruta evaluada acepta solo entrada de texto.
+Gemma 4 E4B IT GGUF es la distribucion cuantizada en formato GGUF del modelo google/gemma-4-E4B-it, publicada por Xylolabs para su uso con llama.cpp en CUDA, Metal o CPU. El modelo base es la variante instruct de la familia Gemma 4 de Google, con 7.518.069.290 parametros totales segun los pesos en safetensors del modelo original. Esta ficha describe la version cuantizada, no el modelo base.
 
-El repositorio ofrece dos alternativas de cuantización para llama.cpp: una variante IQ4_XS con calibración imatrix y una variante Q4_K_M mixta en la que las 42 matrices de proyección se almacenan en Q8_0. Ambas conservan los 720 tensores del decodificador de texto de 42 capas, incluida la tabla de embeddings atados a la salida, el tokenizador y la plantilla de chat original. El modelo base declara 7.518.069.290 parámetros totales según los safetensors originales.
+El repositorio ofrece ocho niveles de cuantizacion (Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, IQ3_M y Q2_K), cada uno en un unico fichero GGUF que incluye tokenizer y plantilla de chat. Xylolabs documenta metricas de divergencia (KL) y de coincidencia top-1 frente al modelo BF16 sobre tres conjuntos de texto, lo que permite elegir el nivel de cuantizacion con criterios cuantitativos en lugar de heuristicas.
 
-La relevancia de esta ficha es práctica: permite ejecutar un modelo de la familia Gemma 4 en hardware de consumo con un peso de unos 5 GB, a costa de renunciar a las capacidades multimodales del modelo original. La evaluación publicada por el autor se limita a una comprobación de fidelidad relativa frente al BF16 de referencia, no a una batería de benchmarks de tareas.
+La relevancia de esta publicacion radica en la calidad de las cuantizaciones de baja y media profundidad: sus ficheros Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M e IQ3_M presentan divergencias muy inferiores a las de alternativas populares (bartowski, Unsloth) del mismo tamano, lo que hace viable desplegar un modelo de 7.500 millones de parametros en hardware de consumo con perdida de fidelidad acotada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, 42 capas, con embeddings por capa y tabla de salida atada |
-| Parámetros totales | 7.518.069.290 (modelo base) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (la metadatos originales se conservan sin cambios; el ejemplo de uso limita a 2048 tokens) |
-| Tipos de cuantización | IQ4_XS con imatrix; Q4_K_M mixta con proyecciones en Q8_0 |
-| Idiomas soportados | inglés (en), coreano (ko) |
+| Arquitectura | no disponible (modelo base google/gemma-4-E4B-it; no se detalla en la informacion proporcionada) |
+| Parametros totales | 7.518.069.290 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, IQ3_M, Q2_K |
+| Idiomas soportados | en, ko |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (un fichero por cuantizacion, con tokenizer y plantilla de chat incluidos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de 42 capas con embeddings por capa y tabla de embeddings compartida con la proyección de salida. La cuantización conserva los 720 tensores del decodificador de texto, incluidos los parámetros de normalización, el tokenizador y la plantilla de chat original. No se incluye información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información disponible.
+La informacion proporcionada no detalla la arquitectura interna del modelo base google/gemma-4-E4B-it, ni los datos de entrenamiento (numero de tokens, composicion del corpus, fases de RLHF/DPO). Lo unico documentado es que se trata de un modelo instruct de la familia Gemma 4 y que la version de Xylolabs es una cuantizacion del mismo, no un ajuste adicional.
 
-La innovación técnica de esta publicación no está en el entrenamiento, sino en el proceso de cuantización. La variante IQ4_XS-imat emplea una matriz de importancia (imatrix) para calibrar los pesos de baja precisión, mientras que la variante Q4_K_M-proj8 sustituye las 42 matrices `blk.*.proj.weight` por Q8_0 y deja los 678 tensores restantes byte-idénticos a la referencia Q4_K_M. Ambas variantes almacenan las tablas de tokens en Q6_K, lo que eleva el promedio de bits por peso por encima del formato nominal. No se realizó entrenamiento, calibración ni cuantización nueva para la publicación; la calibración imatrix es la existente.
+La innovacion tecnica de esta publicacion reside en el proceso de cuantizacion. Xylolabs emplea imatrix (segun los tags del repositorio) y evalua cada fichero frente a los logits del modelo BF16 en tres regimenes: wikitext-2, texto con formato de chat en ingles, coreano, codigo y matematicas, y un texto crudo reservado (held-out). Las metricas reportadas son la divergencia KL y el porcentaje de coincidencia top-1, lo que permite comparar cuantizaciones de forma objetiva.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y coreano.
-- Razonamiento de un solo turno y multi-turno mediante plantilla de chat Jinja.
-- Modo de razonamiento (thinking) activable o desactivable mediante `--chat-template-kwargs '{"enable_thinking":false}'`.
-- Ejecución local en CPU y GPU a través de llama.cpp.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- No incluye visión ni audio: los pesos del codificador multimodal y del proyector se han omitido.
-- No se documenta soporte de tool calling ni de function calling en la información disponible.
-- No se documenta soporte explícito de agentes o razonamiento multi-paso más allá del modo thinking.
+- Generacion de texto conversacional en ingles y coreano, con plantilla de chat incluida en el fichero GGUF.
+- Inferencia en llama.cpp sobre CUDA, Metal y CPU, lo que cubre GPU dedicadas, Apple Silicon y despliegues sin acelerador.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su integracion en servicios de inferencia.
+- Capacidades del modelo base (razonamiento, codigo, matematicas, tool calling, agentes): no disponibles en la informacion proporcionada; deben consultarse en la model card de google/gemma-4-E4B-it.
+- No se documentan capacidades de vision, audio ni modo de razonamiento explicito para esta version.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede mantener diálogos multi-turno con plantilla de chat Jinja en equipos sin GPU dedicada, gracias a un peso de unos 5 GB y a la compatibilidad con llama.cpp en CPU.
-- Generación de texto en inglés y coreano: útil para aplicaciones bilingües de redacción, resumen o reescritura donde no se requiera multimodalidad.
-- Prototipado rápido en portátiles: la variante IQ4_XS-imat ocupa 5,071 GB de descarga y permite iterar sobre prompts sin infraestructura cloud.
-- Despliegue en entornos con memoria limitada: la variante Q4_K_M-proj8, con proyecciones en Q8_0, ofrece una fidelidad ligeramente superior al BF16 (86,22 % de acuerdo top-1) a cambio de 5,349 GB.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye métricas de KL y acuerdo top-1 frente al BF16, útil para decidir qué variante desplegar en producción.
-- Filtrado y clasificación de texto: tareas de etiquetado o moderación en inglés y coreano que no requieran contexto largo ni capacidades multimodales.
+- Despliegue local en estaciones de trabajo: el fichero Q4_K_M (4,98 GB) o IQ4_XS (4,72 GB) cabe en GPU de consumo con 8 GB de VRAM, lo que permite ejecutar un modelo instruct de 7.500 millones de parametros sin conexion a servicios externos.
+- Servicios de inferencia en CPU: con Q2_K (3,64 GB) o IQ3_M (3,72 GB) se puede servir generacion de texto en servidores sin GPU, manteniendo una coincidencia top-1 superior al 86 % frente al BF16 en wikitext-2.
+- Aplicaciones en coreano e ingles: el modelo base declara soporte para ambos idiomas y las cuantizaciones se evaluan especificamente sobre texto coreano en el conjunto de chat, por lo que es adecuado para asistentes bilingues en ese par de idiomas.
+- Prototipado rapido con llama.cpp: al incluir tokenizer y plantilla de chat en un unico fichero, se puede arrancar un chat funcional con un solo comando, sin pasos de conversion adicionales.
+- Evaluacion comparativa de cuantizaciones: las tablas de KL y top-1 permiten seleccionar el nivel de cuantizacion segun el presupuesto de memoria y la tolerancia a la perdida de fidelidad, por ejemplo Q6_K (KL 0,0056 en wikitext-2) frente a Q2_K (KL 0,1169).
+- Integracion en pipelines de CI/CD o herramientas de desarrollo: si el modelo base soporta tool calling (no confirmado en la informacion disponible), la version GGUF puede ejecutarse en el mismo entorno que el resto del pipeline sin depender de APIs externas.
+- Educacion e investigacion: el formato GGUF y la licencia Apache 2.0 facilitan su uso en entornos academicos y en experimentos reproducibles sobre hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor publica únicamente una comprobación de fidelidad relativa frente al BF16 de referencia sobre 32 secuencias de 512 tokens (16.144 posiciones evaluadas) en inglés y coreano:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente reporta metricas de fidelidad de cuantizacion frente al modelo BF16.
 
-| Variante | KL media | Acuerdo top-1 con BF16 | KL / Q4_K_M | Aciertos / 33 | Rechecks / 7 | Pérdidas contadas |
-|---|---:|---:|---:|---:|---:|---:|
-| Q4_K_M referencia | 0,231174 | 80,23 % | 1,000× | 31/33 | 5/7 | 0 |
-| IQ4_XS-imat | 0,101411 | 86,50 % | 0,439× | 31/33 | 5/7 | 0 |
-| Q4_K_M-proj8 | 0,105274 | 86,22 % | 0,455× | 32/33 | 4/7 | 0 |
+| Cuantizacion | Tamano | KL wikitext-2 | KL chat | KL held-out | Top-1 wikitext-2 | Top-1 chat | Top-1 held-out |
+|---|---|---|---|---|---|---|---|
+| Q6_K | 7,07 GB | 0,0056 | 0,0043 | 0,0045 | 96,96 % | 98,11 % | 97,55 % |
+| Q5_K_M | 5,48 GB | 0,0132 | 0,0107 | 0,0114 | 95,32 % | 96,58 % | 96,25 % |
+| Q4_K_M | 4,98 GB | 0,0228 | 0,0201 | 0,0200 | 94,02 % | 95,41 % | 95,02 % |
+| Q4_K_S | 4,84 GB | 0,0277 | 0,0234 | 0,0247 | 93,28 % | 95,08 % | 94,63 % |
+| IQ4_XS | 4,72 GB | 0,0276 | 0,0277 | 0,0264 | 93,30 % | 94,68 % | 94,30 % |
+| Q3_K_M | 4,06 GB | 0,0645 | 0,0611 | 0,0620 | 89,75 % | 91,86 % | 91,38 % |
+| IQ3_M | 3,72 GB | 0,1015 | 0,0868 | 0,1040 | 87,42 % | 90,87 % | 89,15 % |
+| Q2_K | 3,64 GB | 0,1169 | 0,0980 | 0,1149 | 86,63 % | 90,28 % | 88,62 % |
 
-El autor no reporta velocidad de inferencia ni throughput.
+Comparativa de fidelidad con cuantizaciones de terceros del mismo tamano aproximado:
+
+| Fichero | Tamano | KL wikitext-2 | KL chat | Top-1 wikitext-2 | Top-1 chat |
+|---|---|---|---|---|---|
+| Xylolabs Q6_K | 7,07 GB | 0,0056 | 0,0043 | 96,96 % | 98,11 % |
+| Unsloth Q6_K | 7,07 GB | 0,0106 | 0,0067 | 95,88 % | 97,05 % |
+| Xylolabs Q5_K_M | 5,48 GB | 0,0132 | 0,0107 | 95,32 % | 96,58 % |
+| Unsloth Q5_K_M | 5,48 GB | 0,0321 | 0,0190 | 92,71 % | 95,29 % |
+| Xylolabs Q4_K_M | 4,98 GB | 0,0228 | 0,0201 | 94,02 % | 95,41 % |
+| Unsloth Q4_K_M | 4,98 GB | 0,0990 | 0,0625 | 87,04 % | 91,38 % |
+| bartowski Q4_K_M | 5,41 GB | 0,0805 | 0,0551 | 88,54 % | 92,58 % |
+| Xylolabs Q3_K_M | 4,06 GB | 0,0645 | 0,0611 | 89,75 % | 91,86 % |
+| Unsloth Q3_K_M | 4,06 GB | 0,2690 | 0,1857 | 79,14 % | 85,34 % |
+| bartowski Q3_K_M | 4,90 GB | 0,7254 | 0,4603 | 68,22 % | 78,34 % |
+
+En Q8_0, las cuantizaciones de terceros alcanzan mayor fidelidad que cualquier fichero de Xylolabs (Unsloth UD-Q8_K_XL: KL 0,0023 en wikitext-2, top-1 98,13 %), pero ese nivel de cuantizacion no se ofrece en este repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 5,33 GB solo para el mayor de los pesos GGUF, más espacio para la caché KV y los búferes de trabajo.
-- GPU recomendadas: no se especifican modelos concretos; cualquier GPU con al menos 8 GB de VRAM debería acomodar el peso más la caché KV para contextos moderados.
-- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más (por ejemplo, RTX 3060 Ti, RTX 4060, RTX 4070), aunque el autor no lo confirma explícitamente.
-- Opciones de despliegue: llama.cpp (versión verificada v0.9.0), con `llama-cli`; compatible con endpoints. No se documenta soporte de vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: no reportados por el autor.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero mas el contexto y los buffers de llama.cpp. Q6_K: ~7,1 GB; Q5_K_M: ~5,5 GB; Q4_K_M: ~5,0 GB; IQ4_XS: ~4,7 GB; Q3_K_M: ~4,1 GB; IQ3_M: ~3,7 GB; Q2_K: ~3,6 GB.
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, tarjetas con 8 GB o mas de VRAM pueden alojar las cuantizaciones Q4 e inferiores; las de 12 GB o mas admiten Q6_K con contexto amplio.
+- GPU de consumo: las cuantizaciones Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, IQ3_M y Q2_K caben en tarjetas de 8 GB; Q5_K_M y Q6_K requieren 8-12 GB segun la longitud de contexto.
+- Opciones de despliegue: llama.cpp (referencia explicita de la model card, con build concreto enlazado), y por extension cualquier herramienta basada en llama.cpp. El tag `endpoints_compatible` sugiere compatibilidad con servicios de endpoints, aunque no se detalla cual.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Gemma 4 E4B IT GGUF (Xylolabs) | 7,52 B | no disponible | en, ko | Apache 2.0 | GGUF | Solo texto; dos variantes de cuantización |
-| Gemma 4 E4B IT (Google, BF16) | 7,52 B | no disponible | no disponible | Apache 2.0 | safetensors | Modelo original, multimodal completo |
-| Gemma 4 E4B GGUF QAT Q4_0 (Google) | 8 B (según fuente) | no disponible | no disponible | Apache 2.0 | GGUF | Cuantización oficial QAT |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Xylolabs gemma-4-E4B-it-GGUF | 7.518.069.290 | no disponible | Apache 2.0 | GGUF | Cuantizaciones con KL muy baja en Q4/Q3; 8 niveles disponibles |
+| google/gemma-4-E4B-it | 7.518.069.290 | no disponible | no disponible | safetensors (segun parametros reportados) | Modelo base instruct; referencia BF16 para las metricas |
+| Cuantizaciones Unsloth del mismo base | mismo base | no disponible | no disponible | GGUF | Mayor fidelidad en Q8_0; peor KL en Q3-Q5 que Xylolabs |
+| Cuantizaciones bartowski del mismo base | mismo base | no disponible | no disponible | GGUF | KL notablemente superior en Q3 y Q2; Q8_0 mejor que Xylolabs |
 
-No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
+No se dispone de informacion sobre modelos alternativos de otros desarrolladores con los que comparar rendimiento de tareas.
 
 ## Limitaciones y advertencias
 
-- Modelo solo texto: se han eliminado los pesos de visión y audio, por lo que no puede procesar imágenes ni audio.
-- Idiomas limitados a inglés y coreano; no se documenta soporte de castellano.
-- La evaluación publicada es una comprobación de fidelidad relativa frente al BF16, no una evaluación de tareas; el autor indica explícitamente que una integración debe realizar su propia evaluación de tareas.
-- No se reportan velocidad ni throughput, lo que impide estimar latencia en producción.
-- Riesgo de alucinación inherente al modelo base; no se documentan mitigaciones específicas.
-- Sesgos conocidos: no documentados en la información disponible.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos completos en `LICENSE` y `NOTICE`, que incluyen la atribución a Google/Google DeepMind y a la conversión/cuantización.
-- El modelo se proporciona "as is", sin garantía ni respaldo del upstream.
-- El ejemplo de uso limita el contexto a 2048 tokens; la longitud de contexto real del modelo base no se especifica.
+- Solo se declaran los idiomas ingles y coreano; el rendimiento en castellano no esta documentado y no deberia asumirse.
+- No hay resultados de benchmarks de tareas, por lo que no se puede evaluar la calidad del modelo base en razonamiento, codigo o matematicas a partir de esta ficha.
+- Las cuantizaciones de baja profundidad (Q3_K_M, IQ3_M, Q2_K) degradan la fidelidad de forma apreciable: Q2_K presenta KL de 0,1169 en wikitext-2 y una coincidencia top-1 de 86,63 %, frente al 96,96 % de Q6_K.
+- El repositorio no ofrece Q8_0; si se requiere la maxima fidelidad, las cuantizaciones de terceros (Unsloth UD-Q8_K_XL, Unsloth Q8_0) superan a cualquier fichero de este repositorio.
+- Riesgo de alucinacion y sesgos del modelo base: no documentados en la informacion proporcionada; deben consultarse en la model card de google/gemma-4-E4B-it.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base, cuya licencia no se detalla en la informacion disponible.
+- El repositorio tiene 0 likes y 1.305 descargas en el momento de la consulta; es una publicacion reciente (creada el 14 de noviembre de 2026) sin validacion comunitaria amplia.
+- La longitud de contexto no esta especificada; el consumo de VRAM crecera con el contexto y puede superar las estimaciones basadas solo en el tamano del fichero.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/gemma-4-E4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Licencia oficial de Gemma: https://ai.google.dev/gemma/apache_2
-- Documentación de llama.cpp para GGUF: https://huggingface.co/docs/hub/gguf-llamacpp
-- Repositorio de llama.cpp (commit referenciado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Página de descarga comunitaria de GGUF: https://gemma-4.net/download/gemma-4-e4b-gguf
-- Referencia arXiv del modelo base: arxiv:2607.02770
+- Licencia: https://huggingface.co/Xylolabs/gemma-4-E4B-it-GGUF/blob/main/LICENSE
+- llama.cpp (build referenciado): https://github.com/ggml-org/llama.cpp/tree/e4b620af19f02960dea7a3a81de7c5805aa3a333
+- Paper referenciado en los tags (arXiv 2607.02770): https://arxiv.org/abs/2607.02770
+- Repositorio de Xylolabs (assets): https://github.com/XylolabsInc/tensix-bfp-gptq

@@ -2,45 +2,50 @@
 
 ## Resumen
 
-SkillGate-9B-GGUF es una cuantización en formato GGUF del modelo SkillGate-9B, creada por mradermacher. El modelo base, desarrollado por simonlqy, es un transformer de 9.197 millones de parámetros entrenado mediante aprendizaje por refuerzo (GRPO) para la selección de habilidades y el uso de herramientas en agentes conversacionales. La cuantización permite ejecutar el modelo en hardware más modesto, con opciones que van desde 4 GB hasta 18,5 GB de peso. Está pensado para entornos de inferencia local o en el edge, donde el tamaño y el consumo de memoria son críticos. La licencia es la de Qwen3.5-9B, y el modelo está disponible únicamente en inglés. Su relevancia actual radica en la demanda de modelos de agentes eficientes que puedan desplegarse en infraestructura limitada sin sacrificar la capacidad de razonamiento con herramientas.
+SkillGate-9B es un modelo de lenguaje de 9.197.093.888 parametros (aproximadamente 9,2 mil millones) afinado especificamente para tareas de seleccion de habilidades (skill selection), uso de herramientas (tool use) y comportamiento agentico. El modelo original fue desarrollado por simonlqy y esta construido sobre la arquitectura de la familia Qwen 3.5, segun se desprende del enlace de licencia incluido en la model card. La version aqui descrita es una cuantizacion GGUF realizada por mradermacher, un conocido publicador de cuantizaciones para la comunidad de inferencia local.
 
-## Especificaciones técnicas
+El modelo se entrena mediante aprendizaje por refuerzo, concretamente con GRPO (Group Relative Policy Optimization), una tecnica que optimiza la politica del modelo frente a recompensas verificables sin necesidad de un modelo critico separado. Este enfoque lo orienta a decidir que habilidad o herramienta invocar en cada paso de una tarea, lo que lo hace relevante para pipelines de agentes donde la seleccion correcta de herramientas condiciona el exito de la tarea completa.
+
+La relevancia actual del modelo radica en su enfoque especializado: en lugar de competir en conocimiento general, se centra en el enrutamiento de habilidades dentro de sistemas multi-herramienta. El repositorio GGUF incluye ademas ficheros mmproj, lo que sugiere capacidades multimodales en el modelo base. La licencia es la de Qwen, lo que impone condiciones especificas para uso comercial.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 9.197.093.888 |
+| Arquitectura | Transformer (familia Qwen 3.5, segun license_link); no se detalla en la model card |
+| Parametros totales | 9.197.093.888 (~9,2 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (inglés) |
-| Licencia | qwen (licencia de Qwen3.5-9B, ver enlace) |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-f16 y mmproj-Q8_0 |
+| Idiomas soportados | ingles (en) |
+| Licencia | qwen (license: other, con license_link a Qwen/Qwen3.5-9B) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la documentación proporcionada. El pipeline indicado es `reinforcement-learning` y los tags incluyen `grpo`, lo que sugiere que el modelo fue afinado mediante optimización de política proximal grupal (GRPO) para mejorar la selección de habilidades y el uso de herramientas en entornos de agentes. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La arquitectura subyacente es probablemente un transformer denso, pero este dato no está confirmado.
+La model card no detalla la arquitectura interna mas alla de la referencia a Qwen 3.5 en el enlace de licencia. Por el numero de parametros y la nomenclatura, se trata de un transformer denso de aproximadamente 9,2 mil millones de parametros. El pipeline declarado es reinforcement-learning y las etiquetas incluyen GRPO, lo que indica que el ajuste se realizo mediante aprendizaje por refuerzo con optimizacion de politica relativa a grupos, orientado a tareas de seleccion de habilidades y uso de herramientas.
+
+No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de SFT o DPO. La presencia de ficheros mmproj en el repositorio GGUF sugiere que el modelo base incorpora un proyector multimodal, aunque la model card no describe las capacidades de vision de forma explicita. Las cuantizaciones son estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf); existe ademas una variante con cuantizaciones ponderadas e imatrix en el repositorio SkillGate-9B-i1-GGUF.
 
 ## Capacidades
 
-Según los tags y la descripción de la model card, el modelo está diseñado para:
-
-- Uso en agentes conversacionales que requieren selección de habilidades (skill-selection).
-- Integración con herramientas externas mediante tool-use / function calling.
-- Razonamiento multi-paso en tareas de agente.
-- Conversación en inglés.
-- Posible soporte multimodal (se incluyen archivos `mmproj` en la cuantización, aunque no se detalla su funcionalidad).
-
-No se especifican capacidades adicionales como generación de código, matemáticas o visión en la información disponible.
+- Seleccion de habilidades y herramientas: el modelo esta entrenado para decidir que skill o tool invocar en cada paso de una tarea agentica.
+- Tool calling y function calling: orientado a la integracion con APIs y entornos de ejecucion de herramientas.
+- Razonamiento multi-paso: disenado para flujos de agente con varias etapas de decision.
+- Comportamiento agentico: etiquetado explicitamente como agent en el repositorio.
+- Capacidades multimodales: los ficheros mmproj incluidos sugieren soporte de entrada visual, aunque no se detalla en la model card.
+- Generacion de texto conversacional: el tag conversational indica uso en dialogos multi-turno.
+- Idiomas: soporte declarado unicamente de ingles.
 
 ## Casos de uso
 
-- Asistentes virtuales con selección dinámica de herramientas: el modelo puede elegir entre varias funciones (búsqueda web, calculadora, API externa) según la consulta del usuario, gracias a su entrenamiento en tool-use.
-- Automatización de tareas en entornos empresariales: integración en pipelines que requieren llamadas a APIs o ejecución de comandos, donde la cuantización GGUF permite desplegarlo en servidores con GPU limitada.
-- Chatbots de atención al cliente con acceso a bases de conocimiento: el modelo puede seleccionar la habilidad adecuada para responder consultas específicas, mejorando la precisión.
-- Prototipado rápido de agentes en investigación: al ser ligero en formato GGUF, facilita experimentos en máquinas locales sin necesidad de clústeres.
-- Edge computing en dispositivos con poca memoria: las cuantizaciones pequeñas (Q2_K, Q3_K) permiten ejecutar el modelo en dispositivos con 4-6 GB de RAM.
-- Evaluación de pipelines de RL: sirve como punto de partida para estudiar el impacto de la selección de habilidades en agentes, dado su entrenamiento con GRPO.
+- Enrutamiento de herramientas en agentes: el modelo recibe la descripcion de las herramientas disponibles y la tarea del usuario, y selecciona la habilidad adecuada; su entrenamiento con GRPO sobre seleccion de skills lo hace idoneo para esta funcion de gatekeeper dentro de un orquestador.
+- Automatizacion de soporte tecnico: puede decidir si la consulta requiere busqueda en base de conocimiento, consulta a API de estado o escalado a humano, reduciendo la carga de un modelo mayor en cada paso.
+- Pipelines de CI/CD con agentes: integrado como selector de acciones (ejecutar tests, desplegar, consultar logs) dentro de un agente de operaciones, con tool calling como interfaz.
+- Asistentes de desarrollo: seleccion de la herramienta correcta (lectura de ficheros, ejecucion de comandos, busqueda en repositorio) en entornos tipo IDE o terminal.
+- Sistemas RAG con multiples fuentes: eleccion de la fuente de recuperacion o del indice adecuado segun la consulta, antes de invocar un modelo generador de mayor tamano.
+- Despliegue en local con Ollama o llama.cpp: al estar en GGUF y ocupar entre 4 y 10 GB segun cuantizacion, permite prototipar agentes en estaciones de trabajo sin GPU de datacenter.
+- Evaluacion de politicas de refuerzo: util como referencia para investigacion en GRPO aplicado a seleccion de acciones discretas.
 
 ## Benchmarks y rendimiento
 
@@ -48,33 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada según cuantización (basado en tamaño de archivo, asumiendo overhead de inferencia):
-  - Q2_K (4,0 GB): requiere al menos 6 GB de VRAM.
-  - Q4_K_M (5,9 GB): requiere al menos 8 GB de VRAM.
-  - Q6_K (7,7 GB): requiere al menos 10 GB de VRAM.
-  - Q8_0 (9,9 GB): requiere al menos 12 GB de VRAM.
-  - f16 (18,5 GB): requiere al menos 20 GB de VRAM.
-- GPUs recomendadas: RTX 3060 (12 GB) para cuantizaciones hasta Q6_K; RTX 4090 (24 GB) para Q8_0 o f16; A100/H100 para despliegues de alto rendimiento.
-- Sí cabe en GPUs de consumo (p. ej., RTX 3060, 3080, 4090) dependiendo de la cuantización elegida.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte GGUF), TGI, o cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización.
+- VRAM estimada para inferencia: entre 4 y 6 GB con Q2_K a Q4_K_M; entre 7 y 8 GB con Q6_K; en torno a 10 GB con Q8_0; aproximadamente 18,5 GB con f16. Los ficheros mmproj anaden 0,7 a 1,0 GB si se usa la via multimodal.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090 para cuantizaciones altas; A100 o H100 para despliegues concurrentes en f16.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4_K_M o inferiores.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, aunque no se confirma compatibilidad explicita en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con modelos de la misma categoría (agentes con selección de habilidades). El tamaño de 9B es similar a otros modelos como Qwen3-8B o Llama-3.1-8B, pero no hay datos de rendimiento ni de arquitectura que permitan una comparación rigurosa. Se recomienda consultar el modelo base simonlqy/SkillGate-9B para más detalles.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+|---|---|---|---|---|---|
+| SkillGate-9B (esta ficha) | ~9,2 B | no disponible | Seleccion de skills y tool use con GRPO | qwen | GGUF, safetensors |
+| Qwen 3.5 9B (base referenciada) | ~9 B | no disponible | Modelo generalista | qwen | safetensors |
+| Alternativas de 7-9 B para agentes | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo inglés; no es adecuado para tareas multilingües.
-- Licencia: la licencia `qwen` (de Qwen3.5-9B) puede tener restricciones específicas para uso comercial; se debe revisar el enlace al LICENSE antes de desplegar en producción.
-- Falta de documentación: no hay información pública sobre arquitectura, contexto, entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad para casos concretos.
-- Riesgo de alucinación: como cualquier modelo generativo, puede producir respuestas inventadas, especialmente en tareas de razonamiento complejo.
-- Sesgos: al estar entrenado principalmente en inglés, puede reflejar sesgos culturales y lingüísticos de ese dominio.
-- Cuantizaciones de baja precisión (Q2_K, Q3_K) pueden degradar significativamente la calidad de las respuestas; se recomienda usar Q4_K_M o superior para producción.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta verificado.
+- Especializacion estrecha: el ajuste con GRPO para seleccion de skills puede degradar el rendimiento en generacion generalista frente al modelo base.
+- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad; en tareas de seleccion de herramientas, una eleccion erronea puede propagarse a todo el pipeline del agente.
+- Sesgos: no se documentan analisis de sesgo en la model card.
+- Contexto: la longitud de contexto no esta publicada, lo que impide planificar tareas de contexto largo con garantias.
+- Licencia: la licencia qwen impone condiciones de uso comercial que deben revisarse en el enlace a la licencia de Qwen 3.5 9B antes de desplegar en produccion.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_M degradan la calidad; para produccion se recomienda Q4_K_M o superior.
+- Modelo cuantizado por terceros: la cuantizacion la realiza mradermacher, no el autor original; los resultados pueden diferir de los pesos en safetensors.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/SkillGate-9B-GGUF
 - Modelo base: https://huggingface.co/simonlqy/SkillGate-9B
-- Licencia (Qwen3.5-9B): https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
-- Página de descarga de mradermacher: https://hf.tst.eu/model
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/SkillGate-9B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#SkillGate-9B-GGUF
+- Licencia Qwen 3.5 9B: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

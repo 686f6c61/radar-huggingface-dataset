@@ -2,53 +2,52 @@
 
 ## Resumen
 
-Nalu 2.0-Base es un modelo de lenguaje de tipo decoder denso especializado en generación de código Luau y Roblox, desarrollado por el usuario khtsly bajo el paraguas de la familia LuauCoder 2.0. Con 337,7 millones de parámetros totales (304M no correspondientes a embeddings), es el miembro más pequeño de una familia que también incluye Moana 2B y Kai 0.6B. Su propósito es servir como modelo base para autocompletado y continuación de código en el ecosistema Roblox, un nicho escasamente cubierto por los modelos generalistas.
+Nalu 2.0 Base es un modelo de lenguaje de tipo decoder denso especializado en la generacion de codigo Luau y Roblox, desarrollado por el usuario khtsly. Con 338 millones de parametros totales (304 millones no pertenecientes a embeddings), 24 capas y una ventana de contexto de 65.536 tokens, se posiciona como el miembro mas pequeno de la familia LuauCoder 2.0, que tambien incluye Moana 2B y Kai 0.6B. Su proposito es ofrecer generacion de codigo Luau de calidad en dispositivos con recursos limitados, gracias a su reducido tamano y a su diseno orientado a la inferencia on-device.
 
-Se trata de un modelo base sin plantilla de chat ni ajuste por instrucciones: continúa texto crudo en lugar de seguir órdenes, por lo que debe alimentarse con el inicio del código que se desea completar. Emplea una arquitectura transformer con 24 capas, atención con mezcla de capas RoPE y NoPE, y un diseño de atención poco convencional (CCVHA + DiffAttn V2 + XSA) que busca eficiencia en un tamaño reducido.
+Se trata de un modelo base, sin plantilla de chat ni ajuste por instrucciones, por lo que su funcion es la continuacion de texto: se le proporciona el inicio del codigo y el modelo completa la secuencia. Esto lo hace especialmente adecuado para tareas de autocompletado de codigo dentro de editores y entornos de desarrollo de Roblox Studio, donde el contexto de las APIs de Roblox y la sintaxis de Luau es critico.
 
-Su relevancia radica en dos factores: la especialización vertical en Luau (lenguaje derivado de Lua usado en Roblox) y su orientación a ejecución on-device, lo que lo hace candidato para integrarse en editores o herramientas locales sin depender de infraestructura en la nube. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+La relevancia actual del modelo radica en su enfoque vertical: en lugar de competir en capacidades generales, concentra su entrenamiento de 66.300 millones de tokens en un dominio especifico (Luau y Roblox), lo que permite obtener un rendimiento especializado con una huella de parametros muy reducida. Su licencia Apache 2.0 facilita su integracion comercial y su experimentacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder denso (CCVHA + DiffAttn V2 + XSA) |
-| Parametros totales | 337.689.648 (338M) |
+| Arquitectura | Decoder denso (transformer) con 24 capas |
+| Parametros totales | 338M (304M no-embedding) |
 | Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16 en safetensors) |
-| Idiomas soportados | Ingles (ingles para codigo y texto) |
+| Longitud de contexto | 65.536 tokens |
+| Tipos de cuantizacion | No disponible (pesos en safetensors, bfloat16 segun el ejemplo de uso) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 0,7 GB) |
-
-Otros datos tecnicos relevantes: 24 capas, 18 con RoPE y 6 con NoPE; dimensión oculta 1024; 16 cabezas de consulta (8 computadas) y 2 cabezas KV; dimensión de cabeza 128; dimensión oculta del feed-forward 3072; activación SwiGLU; normalización RMSNorm con QK-Norm; RoPE theta 500.000; vocabulario de 32.768 tokens; embeddings atados; logit soft cap de ±30; conexiones residuales Block AttnRes en 6 bloques de 4 capas.
+| Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
 
-Nalu 2.0-Base es un transformer decoder denso de 24 capas con una composición de atención híbrida: 18 capas usan RoPE y 6 usan NoPE, una combinación que suele emplearse para mejorar la generalización posicional y la extrapolación de contexto. El mecanismo de atención se describe como CCVHA + DiffAttn V2 + XSA, con 16 cabezas de consulta (de las cuales 8 se computan), 2 cabezas KV y dimensión de cabeza de 128. Emplea Grouped-Query Attention de facto (16 Q frente a 2 KV) y convoluciones depthwise (2 taps) más 2 taps por cabeza, junto con un head postmix de rango 2.
+Nalu 2.0 Base es un transformer decoder denso con 24 capas, dimension oculta de 1024 y una dimension de feed-forward de 3072 con activacion SwiGLU. Emplea normalizacion RMSNorm con QK-Norm y un vocabulario de 32.768 tokens con embeddings atados. La composicion de capas de atencion combina 18 capas con RoPE (theta de 500.000) y 6 capas sin RoPE (NoPE), lo que sugiere un diseno hibrido para mejorar la extrapolacion de contexto. El mecanismo de atencion incorpora CCVHA, DiffAttn V2 y XSA, con 16 cabezas de consulta (8 computadas), 2 cabezas KV y 8 cabezas de salida, con dimension de cabeza de 128. Las conexiones residuales usan Block AttnRes en 6 bloques de 4 capas, y se aplica un logit soft cap de ±30. El modelo incluye ademas convoluciones depthwise (2 taps) y un postmix de cabezas de rango 2.
 
-El feed-forward usa SwiGLU con dimensión intermedia de 3072, normalización RMSNorm con QK-Norm y embeddings atados. Las conexiones residuales se organizan en Block AttnRes con 6 bloques de 4 capas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO; al ser un modelo base, es esperable que no haya ajuste por preferencias, pero no está confirmado en la documentación. Tampoco se detalla la innovación de decodificación especulativa ni técnicas de atención lineal más allá de las mencionadas.
+El entrenamiento se realizo sobre 66.300 millones de tokens, aunque la model card no detalla la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (al ser un modelo base, es previsible que no haya ajuste por preferencias, pero no se confirma explicitamente). La innovacion principal reside en la combinacion de atencion con capas RoPE/NoPE y mecanismos como DiffAttn V2 y XSA, orientados a un mejor modelado de secuencias largas de codigo dentro de un presupuesto de parametros muy ajustado.
 
 ## Capacidades
 
-- Generación y continuación de código Luau y Roblox a partir de un prefijo de código.
-- Autocompletado de funciones, tablas y patrones idiomáticos del ecosistema Roblox.
-- Modelo base sin instrucciones: no soporta diálogo ni formato de chat; requiere prompting por continuación.
-- Capacidad multilingüe limitada al inglés (según la model card).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta modo thinking, visión ni audio.
-- Orientado a ejecución on-device por su reducido tamaño (338M parámetros).
+- Generacion y continuacion de codigo Luau y scripts de Roblox.
+- Autocompletado de funciones, estructuras de control y llamadas a APIs de Roblox.
+- Modelo base sin plantilla de chat: no sigue instrucciones, solo continua texto.
+- Capacidad de razonamiento limitada al dominio de codigo (no es un modelo generalista).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: solo ingles (y sintaxis de Luau).
+- Modo thinking, vision o audio: no disponible.
+- Entrenado para inferencia on-device gracias a su reducido tamano.
 
 ## Casos de uso
 
-- Autocompletado en editores de código para Roblox Studio: el modelo continúa el código Luau a partir del prefijo escrito por el desarrollador, integrándose en un plugin de editor mediante inferencia local gracias a sus 338M de parámetros.
-- Generación de boilerplate de scripts Luau: a partir de una firma de función o una estructura de tabla, el modelo completa la implementación típica de patrones Roblox (eventos, servicios, remotes).
-- Herramientas de formación y snippets: un asistente local que sugiere fragmentos de código Luau en documentación o tutoriales, sin coste de API y con latencia baja en CPU o GPU de consumo.
-- Prototipado rápido de lógica de juego: completar funciones auxiliares (interpolación, gestión de inventario, temporizadores) a partir de un comentario o firma inicial.
-- Inferencia en dispositivos de gama baja: al caber en memoria de GPUs integradas o incluso CPU, permite desplegar asistencia de código en entornos sin acceso a la nube.
-- Base para fine-tuning específico: al ser un modelo base con licencia Apache 2.0, sirve como punto de partida para ajuste supervisado en dominios concretos de Roblox (por ejemplo, un estilo de código de un estudio).
-- Filtrado o clasificación de código Luau: mediante continuación condicionada, puede emplearse en tareas auxiliares de generación de ejemplos para tests.
+- Autocompletado de codigo en Roblox Studio: el modelo puede integrarse como motor de sugerencias en el editor, completando lineas y bloques de Luau a partir del contexto previo, gracias a su ventana de 65.536 tokens y su entrenamiento especifico en APIs de Roblox.
+- Generacion de scripts de gameplay: dado un comentario o el inicio de una funcion, el modelo completa la logica de un script (por ejemplo, un sistema de inventario o un controlador de personaje), lo que acelera el prototipado en proyectos de Roblox.
+- Asistente de documentacion de codigo: puede continuar fragmentos de codigo para generar ejemplos de uso de APIs de Roblox, utiles en documentacion tecnica o tutoriales.
+- Herramienta de refactorizacion asistida: al ser un modelo de continuacion, puede emplearse para proponer alternativas de implementacion a partir de un fragmento existente, siempre con supervision humana.
+- Inferencia en dispositivos de bajos recursos: con 338M de parametros, puede desplegarse en portatiles o entornos sin GPU dedicada, lo que permite integrarlo en herramientas locales de desarrollo sin depender de la nube.
+- Generacion de codigo en pipelines de CI para Roblox: puede usarse para producir snippets de prueba o plantillas de scripts en procesos automatizados de generacion de codigo, aunque requiere validacion posterior.
+- Educacion y aprendizaje de Luau: sirve como modelo de continuacion para mostrar patrones de codigo idiomaticos en Roblox, util en entornos de formacion.
 
 ## Benchmarks y rendimiento
 
@@ -56,36 +55,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 0,7 GB de pesos, más overhead de activaciones y caché KV; en la práctica, menos de 2 GB para contextos moderados.
-- En cuantización de 8 bits o 4 bits (si se generan pesos GGUF, no publicados), cabría en menos de 0,5 GB, aunque no se ofrecen cuantizaciones oficiales.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso GPUs integradas; también es viable en CPU.
-- Cabe holgadamente en GPU consumer y en dispositivos con poca memoria.
-- Opciones de despliegue: transformers con `trust_remote_code=True` y `attn_implementation="sdpa"` o `"flash_attention_2"`; no se documenta soporte oficial para vLLM, llama.cpp, Ollama ni TGI, y el uso de código personalizado puede complicar la conversión a GGUF.
-- Latencia y throughput: no disponibles; por tamaño, se espera latencia muy baja en GPU consumer, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: aproximadamente 0,7 GB en bfloat16 (338M parametros), inferior a 0,4 GB en cuantizacion de 8 bits y en torno a 0,2 GB en 4 bits (estimaciones teoricas a partir del numero de parametros; no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060 o superior permite inferencia holgada. Tambien cabe en GPUs de gama baja e incluso en CPU.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer con al menos 1 GB de VRAM, y es viable en CPU.
+- Opciones de despliegue: transformers (con `trust_remote_code=True`), y previsiblemente llama.cpp u Ollama si se generan conversiones GGUF (no confirmado por el autor). El ejemplo de la model card usa `attn_implementation="sdpa"` o `"flash_attention_2"`.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nalu 2.0-Base | 338M | no disponible | Luau / Roblox | Apache 2.0 | Hugging Face (khtsly) |
-| Kai 0.6B (LuauCoder 2.0) | 0,6B (aprox.) | no disponible | Luau / Roblox | no disponible en la informacion | Misma familia |
-| Moana 2B (LuauCoder 2.0) | 2B (aprox.) | no disponible | Luau / Roblox | no disponible en la informacion | Misma familia |
-| Modelos generalistas pequeños (p. ej. Qwen2.5-Coder-0.5B) | 0,5B | 32K (tipico) | Codigo general | Apache 2.0 | Hugging Face |
+| Nalu 2.0 Base | 338M | 65.536 | Luau / Roblox | Apache 2.0 | Hugging Face |
+| Kai 0.6B (LuauCoder 2.0) | 600M (aprox.) | No disponible | Luau / Roblox | No disponible | Hugging Face (familia LuauCoder) |
+| Moana 2B (LuauCoder 2.0) | 2B (aprox.) | No disponible | Luau / Roblox | No disponible | Hugging Face (familia LuauCoder) |
 
-La comparación con modelos generalistas pequeños es aproximada: no se dispone de benchmarks de Nalu 2.0-Base que permitan contrastar rendimiento en Luau frente a alternativas. La ventaja diferencial es la especialización en el ecosistema Roblox y el tamaño reducido para on-device.
+Los datos de Kai y Moana provienen unicamente de la mencion en la model card de Nalu 2.0; no se dispone de sus especificaciones completas ni de benchmarks comparativos.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base: no sigue instrucciones ni mantiene formato de chat; usarlo como asistente conversacional producirá resultados deficientes.
-- Riesgo de alucinación en APIs de Roblox: puede generar llamadas a servicios o métodos inexistentes o con firmas incorrectas.
-- Idiomas: solo inglés documentado; el soporte de otros idiomas no está garantizado.
-- Longitud de contexto no documentada; no se debe asumir una ventana amplia.
-- Sesgos: no se documentan evaluaciones de sesgo; al entrenarse presumiblemente con código, puede reproducir patrones y estilos de repositorios públicos.
-- Licencia Apache 2.0 permite uso comercial, pero el uso de `trust_remote_code=True` implica ejecutar código del autor; conviene auditar el código personalizado antes de desplegarlo en producción.
-- Sin cuantizaciones oficiales publicadas ni integración documentada con runtimes de inferencia populares, lo que puede requerir trabajo adicional de conversión.
-- Modelo con 0 descargas y 0 likes en el momento de la ficha: madurez y soporte comunitario limitados.
+- Es un modelo base sin plantilla de chat: no sigue instrucciones ni mantiene conversaciones; solo continua texto.
+- Entrenado unicamente en ingles y en el dominio de Luau/Roblox; su rendimiento fuera de ese dominio sera limitado.
+- Riesgo de alucinacion en APIs de Roblox: puede generar llamadas a funciones inexistentes o con firmas incorrectas, por lo que requiere validacion.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones de los datos de entrenamiento (no detalladas).
+- Requiere `trust_remote_code=True` por el codigo personalizado de la arquitectura, lo que implica ejecutar codigo del autor.
+- No se han publicado benchmarks, por lo que su calidad real no esta cuantificada de forma publica.
+- El numero de descargas (889) y likes (1) es bajo, lo que sugiere una adopcion limitada y poca validacion comunitaria.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/khtsly/Nalu-2.0-Base
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

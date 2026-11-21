@@ -2,79 +2,83 @@
 
 ## Resumen
 
-El repositorio `Mr-J-369/Fancy-AI` no aloja un modelo de inteligencia artificial, sino un **catálogo de complementos (add-ons)** para la aplicación Android **Fancy AI**, desarrollada por el mismo autor. La app, que se distribuye a través de Google Play, permite la generación de imágenes y el uso de modelos de lenguaje **on-device** (en el dispositivo), apoyándose en el motor de inferencia `llama.cpp` y en la aceleración por NPU de Qualcomm.
+Fancy-AI es un repositorio de Hugging Face publicado por el usuario Mr-J-369 que, pese a declarar 8.036.552.768 parámetros en sus pesos en formato safetensors, no contiene realmente un modelo entrenado por su autor. Según la propia model card, el repositorio funciona como catálogo de complementos (add-on catalog) para una aplicación Android llamada Fancy AI, una app de acompañamiento conversacional que ejecuta modelos de forma local mediante `llama.cpp`. El repositorio aloja principalmente un archivo `manifest.json` que la aplicación lee para listar y descargar modelos de terceros.
 
-El catálogo se materializa en un archivo `manifest.json` que la aplicación lee para ofrecer al usuario una lista de modelos opcionales (por ejemplo, de las familias Qwen y bartowski) que pueden descargarse e instalarse con un solo toque. Los pesos de los modelos **no se re-hospedan en este repositorio**; los enlaces apuntan directamente a los repositorios originales de los creadores, de modo que las descargas se realizan desde la fuente. En consecuencia, este repo no constituye un modelo en sí, sino un mecanismo de distribución y descubrimiento para la app.
+La relevancia de este repositorio no reside en una arquitectura o un entrenamiento propios, sino en su papel como infraestructura de distribución para inferencia en dispositivo. La aplicación descarga pesos de repositorios originales de creadores como Qwen o bartowski, de modo que el modelo servido no es original del autor del repositorio. El tamaño del repositorio, 37,8 GB, es coherente con la presencia de pesos cuantizados en formato GGUF, aunque la model card indica que los pesos no se realojan aquí.
 
-La relevancia de este proyecto radica en su enfoque de **inferencia local en dispositivos móviles**, una tendencia creciente que busca reducir la dependencia de servidores en la nube y mejorar la privacidad. Al estar fechado en junio de 2026 y actualizado en agosto del mismo año, refleja un desarrollo activo en el ecosistema de IA de código abierto para Android.
+La información disponible es escasa: no se especifican licencia concreta más allá de `other`, ni idiomas más allá del inglés, ni pipeline de Hugging Face, ni resultados de benchmarks. Cualquier evaluación técnica debe por tanto tratar este repositorio como un artefacto de distribución y no como un modelo con identidad arquitectónica verificable.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No aplica (repositorio de catálogo, no contiene un modelo) |
-| Parametros totales | No disponible |
-| Parametros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (los modelos referenciados son GGUF, pero no se especifican cuantizaciones concretas) |
-| Idiomas soportados | Ingles (según el frontmatter de la model card) |
-| Licencia | `other` (no especificada en detalle) |
-| Formato de pesos | No aplica (el repo solo contiene `manifest.json`; los pesos externos están en formato GGUF) |
+| Arquitectura | no disponible (el repositorio es un catálogo de add-ons; los pesos apuntan a modelos de terceros) |
+| Parámetros totales | 8.036.552.768 (según metadatos safetensors del repo) |
+| Parámetros activos | no disponible (no se declara que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF (según tags); niveles concretos no disponibles |
+| Idiomas soportados | inglés (`en` en la model card) |
+| Licencia | `other` (sin texto de licencia específico en la información disponible) |
+| Formato de pesos | safetensors (metadatos) y GGUF (tags y tamaño del repo) |
 
 ## Arquitectura y entrenamiento
 
-No procede. Este repositorio no contiene un modelo entrenado ni define una arquitectura. Su función es servir como índice de modelos externos para la aplicación Fancy AI. La app utiliza `llama.cpp` como motor de inferencia, lo que implica que los modelos referenciados son, previsiblemente, transformadores de lenguaje cuantizados en formato GGUF, pero no hay información sobre arquitecturas concretas, datos de entrenamiento o procesos de alineación (RLHF/DPO) en este repositorio.
+No se dispone de información sobre arquitectura interna, composición del dataset de entrenamiento, número de tokens, ni procesos de alineación como RLHF o DPO. La model card no describe un modelo propio: describe un catálogo (`manifest.json`) que la app Fancy AI consume para listar componentes descargables. Los pesos referenciados pertenecen a creadores externos (Qwen, bartowski), por lo que la arquitectura efectiva dependerá del modelo concreto que el usuario descargue a través del catálogo y no de este repositorio.
+
+La innovación técnica declarada es de despliegue, no de modelado: inferencia en dispositivo mediante `llama.cpp` en Android, con descarga bajo demanda de modelos opcionales y activación en un solo toque desde los ajustes de la app. El repositorio se presenta como capa de distribución ("streams optional models on demand") y no como artefacto de entrenamiento.
 
 ## Capacidades
 
-Dado que el repositorio es un catálogo, las capacidades no son propias del mismo, sino de los modelos que referencia. No obstante, la model card indica que la app está diseñada para:
-
-- Generación de imágenes on-device (según el anuncio de Google Play).
-- Ejecución de modelos de lenguaje locales mediante `llama.cpp`.
-- Descarga e instalación de modelos bajo demanda (streaming de modelos opcionales).
-- Integración con NPU de Qualcomm para aceleración de hardware.
-- Soporte de modelos GGUF (formato estándar de llama.cpp).
-
-No se documentan capacidades específicas como tool calling, agentes o razonamiento multi-paso, ya que dependen de cada modelo individual.
+- Generación de texto conversacional: la app se describe como "AI companion app", orientada a diálogo.
+- Ejecución local en dispositivo mediante `llama.cpp`, sin dependencia de servidor.
+- Descarga y activación de modelos bajo demanda desde un catálogo (`manifest.json`).
+- Componentes etiquetados por rol, como `agent` ("Use as Root's brain"), lo que sugiere soporte de agentes dentro de la app.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Capacidades multilingües: solo se declara inglés.
+- Tool calling, visión, audio, modo thinking: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-Aunque el repositorio no es un modelo, la aplicación Fancy AI y su catálogo habilitan los siguientes escenarios prácticos:
-
-- **Asistente de IA offline en Android**: el usuario puede descargar un modelo de lenguaje (p. ej., Qwen) y usarlo sin conexión, ideal para entornos con conectividad limitada o para preservar la privacidad de las conversaciones.
-- **Generación de imágenes en el dispositivo**: la app permite crear imágenes localmente, aprovechando la NPU del teléfono, sin enviar datos a servidores externos.
-- **Prototipado rápido de aplicaciones de IA móvil**: los desarrolladores pueden probar distintos modelos GGUF mediante el catálogo, sin necesidad de empaquetar pesos en sus propias apps.
-- **Aprendizaje y experimentación**: los entusiastas pueden explorar modelos de código abierto directamente en su teléfono, comparando rendimiento y calidad de salida.
-- **Despliegue empresarial de bajo coste**: para casos de uso internos donde no se requiere una infraestructura centralizada, la inferencia local reduce costes de servidor y latencia.
-- **Auditoría y control de datos**: al mantener todo el procesamiento en el dispositivo, se minimiza el riesgo de fuga de información sensible.
+- Asistente conversacional en Android sin conexión: la app ejecuta el modelo con `llama.cpp` en el propio dispositivo, adecuado para escenarios con conectividad limitada o requisitos de privacidad.
+- Distribución de modelos por catálogo: un desarrollador puede replicar el patrón de `manifest.json` para ofrecer descarga selectiva de pesos y evitar empaquetar todos los modelos en el APK.
+- Evaluación de modelos de ~8.000 millones de parámetros en cuantización GGUF: el repositorio permite probar variantes servidas desde fuentes originales (Qwen, bartowski) sin rehosting.
+- Integración de un componente "agent" como núcleo de razonamiento de la app, según la etiqueta `agent` del catálogo.
+- Prototipado de experiencias de acompañamiento conversacional con inferencia local, útil para validar latencia y consumo en hardware móvil.
+- Despliegue en entornos con endpoints compatibles, gracias al tag `endpoints_compatible`, para pruebas de integración con clientes que hablen ese protocolo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no contiene métricas de rendimiento ni comparativas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **Dispositivo**: la app está optimizada para teléfonos Android con NPU de Qualcomm (Snapdragon). No se especifican modelos concretos de SoC.
-- **Memoria**: no se indica la RAM mínima necesaria. Dependerá del tamaño del modelo GGUF que se descargue.
-- **Almacenamiento**: el catálogo en sí ocupa 1,4 GB en el repositorio (probablemente incluye el manifiesto y otros archivos auxiliares), pero los modelos se descargan por separado.
-- **Motor de inferencia**: `llama.cpp` está integrado en la app, por lo que no se requiere instalación adicional.
-- **Opciones de despliegue**: exclusivamente móvil (Android). No se menciona compatibilidad con vLLM, Ollama u otros servidores.
+- VRAM estimada: no disponible de forma directa; para un modelo de ~8.000 millones de parámetros en GGUF, las estimaciones orientativas serían del orden de 5-6 GB en Q4_K_M y 16 GB en FP16, aunque estas cifras no las proporciona la información del repositorio.
+- GPU recomendadas: no disponibles. El caso de uso declarado es Android con `llama.cpp`, es decir, CPU/GPU móvil.
+- GPU de consumo: no confirmado; el destino declarado es dispositivo móvil, no tarjetas de escritorio.
+- Opciones de despliegue: `llama.cpp` (declarado); vLLM, TGI u Ollama no se mencionan.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. Al no tratarse de un modelo, no es posible compararlo directamente con alternativas como Qwen, Llama o Mistral. El repositorio actúa como un punto de distribución para esos modelos, pero no ofrece información comparativa propia.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Fancy-AI (este repo) | 8.036.552.768 (metadatos) | no disponible | `other` | safetensors, GGUF | Catálogo de add-ons para app Android; pesos de terceros |
+| Qwen (familia referenciada) | no disponible en esta ficha | no disponible | no disponible | no disponible | Fuente original citada por el catálogo |
+| bartowski (cuantizaciones) | no disponible en esta ficha | no disponible | no disponible | GGUF | Fuente original citada por el catálogo |
+
+No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo**: el repositorio no contiene pesos ni arquitectura; es solo un catálogo. Cualquier evaluación debe realizarse sobre los modelos individuales que se descargan.
-- **Dependencia de la aplicación**: el catálogo solo es útil dentro de la app Fancy AI; no se proporciona una API independiente.
-- **Licencia ambigua**: la licencia se declara como `other` sin detalle. El uso comercial de los modelos referenciados dependerá de las licencias de los repositorios originales (p. ej., Qwen tiene su propia licencia).
-- **Idiomas**: la model card solo menciona inglés como idioma soportado, aunque los modelos subyacentes pueden ser multilingües.
-- **Riesgo de alucinación y sesgos**: al depender de modelos de terceros, no hay garantías sobre la calidad o imparcialidad de las respuestas.
-- **Fechas futuras**: la fecha de creación (2026-06-01) y actualización (2026-08-15) son posteriores a la fecha actual, lo que sugiere que el proyecto es ficticio o hipotético. Esto debe tenerse en cuenta al evaluar su viabilidad real.
+- El repositorio no contiene un modelo entrenado por su autor: es un catálogo que enlaza a pesos de terceros. No debe citarse como modelo original.
+- La licencia `other` no incluye texto específico en la información disponible; verificar términos antes de cualquier uso comercial.
+- Solo se declara inglés; el rendimiento en castellano no está documentado.
+- No hay benchmarks, por lo que no puede avalarse calidad, sesgos o tasas de alucinación con datos.
+- La discrepancia entre los 8.036.552.768 parámetros declarados en safetensors y la afirmación de que "los pesos no se realojan aquí" requiere verificación manual del contenido del repositorio.
+- El tamaño de 37,8 GB sugiere la presencia de múltiples cuantizaciones GGUF; conviene inspeccionar los archivos antes de descargar.
+- Uso en producción: sin documentación de contexto, licencia ni evaluación, el riesgo de integración es alto.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Mr-J-369/Fancy-AI
-- Repositorio GitHub (app y issues): https://github.com/Mr-J-369/Fancy-Ai
-- App en Google Play: https://play.google.com/store/apps/details?id=com.mrj.fancyai
+- Hugging Face: https://huggingface.co/Mr-J-369/Fancy-AI
+- Repositorio de la app y issues: https://github.com/Mr-J-369/Fancy-Ai

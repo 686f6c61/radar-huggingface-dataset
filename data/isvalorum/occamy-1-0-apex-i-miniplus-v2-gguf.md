@@ -2,96 +2,105 @@
 
 ## Resumen
 
-Occamy-1.0 APEX-I-MiniPlus-V2 GGUF es una cuantización artesanal del modelo multimodal Accio-Lab/occamy-1.0, publicada por el usuario IsValorum. El modelo base es un Mixture-of-Experts (MoE) de 34.660.610.688 parámetros (unos 34,66 mil millones) construido sobre la arquitectura Qwen3.5-MoE, con 256 micro-expertos de grano fino y una combinación híbrida de capas de atención lineal y Mamba SSM. El pipeline declarado es image-text-to-text, por lo que acepta entradas de imagen y de texto.
+Occamy-1.0-APEX-I-MiniPlus-V2-GGUF es una cuantización GGUF del modelo base Accio-Lab/occamy-1.0, publicada por el usuario independiente IsValorum bajo el sello APEX-I. Se trata de una edición "MiniPlus", orientada a preservar una fidelidad de cuantización de clase Q5 a Q6 sin un límite fijo de tamaño de fichero, empleando una asignación tensor por tensor en lugar de una cuantización uniforme. El resultado es un artefacto de 15,3 GB que, según el autor, permite ejecutar el modelo completo con contexto de 256K en GPUs de 24 GB de VRAM.
 
-El problema que aborda esta publicación concreta es el despliegue en hardware modesto. Según el autor, el modelo se ha comprimido a 14,63 GB (13,62 GiB, 3,38 BPW) sin reducir bits por debajo de la arquitectura MiniPlus: cada cuantización lineal estándar se sustituye por su equivalente no lineal `IQ` calibrado con una importance matrix (imatrix) multidominio, y se incluye el proyector visual en Q8_0 (614 MB). El resultado declarado es un modelo que ocupa 13,62 GiB de pesos y permite contexto nativo de 262.144 tokens dentro de 24 GB de VRAM.
+El modelo subyacente es un MoE híbrido con atención lineal y mecanismos SSM (DeltaNet), identificado en las etiquetas como derivado de la familia Qwen3.5-MoE. Cuenta con 34.660.610.688 parámetros totales según los safetensors del modelo base, y es multimodal (image-text-to-text), con un proyector de visión incluido en el paquete GGUF en precisión Q8_0. Soporta doce idiomas declarados y se distribuye bajo licencia Apache 2.0.
 
-Su relevancia práctica es que permite probar un MoE multimodal de ~35B con contexto largo en GPUs de consumo e incluso en portátiles con 4 GB de VRAM y 32 GB de RAM DDR4. Conviene subrayar que todas las cifras de rendimiento y de consumo de memoria proceden de la model card del autor y no de una evaluación independiente.
+Su relevancia actual radica en la combinación de tres factores: una arquitectura MoE eficiente en cómputo por token, una ventana de contexto muy extensa (256K) y una cuantización quirúrgica que busca minimizar la degradación de perplejidad frente a cuantizaciones planas. Está pensado para desarrolladores que quieran desplegar un modelo multimodal de gran contexto en hardware de consumo o en configuraciones con offload a RAM del sistema, usando llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) de grano fino con 256 micro-expertos; híbrida de atención lineal y Mamba SSM (la model card menciona 30 capas de atención lineal); base Qwen3.5-MoE |
-| Parametros totales | 34.660.610.688 (≈34,66 mil millones) |
+| Arquitectura | MoE híbrida con atención lineal, DeltaNet y SSM (etiquetada como qwen35moe); multimodal image-text-to-text |
+| Parametros totales | 34.660.610.688 (34,66 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (256k) nativos |
-| Tipos de cuantizacion | APEX-I-MiniPlus-V2 personalizada (3,38 BPW) para el modelo principal; Q8_0 para el proyector visual (mmproj) |
-| Idiomas soportados | en, es, fr, de, pt, it, ru, ja, ko, vi, zh (11 idiomas) |
+| Longitud de contexto | 256K tokens (según el autor, ejecutable completo en 24 GB de VRAM) |
+| Tipos de cuantizacion | GGUF con cuantización personalizada APEX-I MiniPlus (fidelidad de clase Q5 a Q6, asignación tensor por tensor con imatrix); proyector de visión en Q8_0 |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp), con un GGUF adicional mmproj para visión |
-| Modalidades | Texto e imagen (image-text-to-text) |
-| Tamano del repositorio | 15,3 GB |
-| Modelo base | Accio-Lab/occamy-1.0 (relación: quantized) |
+| Formato de pesos | GGUF (para llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base combina un esquema MoE de grano fino con 256 micro-expertos y una columna vertebral híbrida que alterna capas de atención lineal con capas Mamba SSM (state space model). Según el autor, las 30 capas de atención lineal reducen el coste del prefill y el tamaño del KV cache en comparación con un transformer puro, lo que permite mantener contexto de 256k con un KV cache Q8_0 de solo 2,92 GiB a longitud máxima. La componente multimodal se implementa mediante un proyector visual externo (mmproj) que en esta publicación se distribuye en precisión Q8_0.
+La arquitectura del modelo base es un transformer MoE híbrido que combina capas de atención lineal y mecanismos de espacio de estados (DeltaNet/SSM) con capas de atención convencional, un patrón habitual en la familia Qwen3.5-MoE. Esta hibridación reduce el coste de atención en contextos largos, lo que explica la viabilidad de una ventana de 256K tokens con un presupuesto de memoria contenido. El modelo incorpora además una torre de visión, ya que la pipeline declarada es image-text-to-text.
 
-No hay información disponible sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si el modelo base pasó por fases de RLHF, DPO u otro tipo de ajuste por preferencias. Tampoco se detalla el proceso de calibración de la imatrix más allá de describirse como «multidominio» y «oficial». La innovación técnica que sí documenta esta ficha es la propia cuantización: sustitución 1:1 de cuantizaciones lineales por equivalentes no lineales `IQ`, conservación del proyector visual en alta precisión y un objetivo de 3,38 BPW que mantiene los pesos en 13,62 GiB.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO en el modelo base. La model card del repositorio de cuantización no documenta estos extremos. La innovación técnica destacable de esta publicación concreta no está en el entrenamiento, sino en el proceso de cuantización: el autor aplica una asignación diferenciada por tensor (mapa de cuantización "quirúrgico" auditado desde el propio GGUF), apoyada en imatrix, para preservar la precisión en las capas más sensibles. El paquete incluye el proyector de visión en Q8_0 para no degradar la ruta multimodal.
 
 ## Capacidades
 
-- Generación de texto conversacional en 11 idiomas, incluidos español, inglés, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita y chino.
-- Razonamiento y matemáticas: el autor describe el modelo como núcleo de «language, reasoning, math & agentic», aunque no aporta métricas que lo cuantifiquen.
-- Generación de código: la model card afirma que la cuantización conserva la retención de código de una build I-Compact.
-- Visión y OCR: admite entrada de imagen mediante el proyector mmproj en Q8_0, orientado a OCR, análisis de diagramas y comprensión de documentos.
-- Uso agéntico: la etiqueta `agentic` figura en los tags del repositorio; no se documenta explícitamente el soporte de tool calling ni de function calling.
-- Contexto largo: ventana nativa de 262.144 tokens, con soporte de context checkpoints para mantener el crecimiento lineal de memoria.
-- Modo thinking: no disponible (no se menciona en la información proporcionada).
+- Generación de texto y razonamiento general en un modelo MoE de 34,66 B de parámetros totales.
+- Procesamiento multimodal de imagen y texto (image-text-to-text) mediante el proyector de visión incluido en Q8_0.
+- Ventana de contexto de 256K tokens, apta para documentos extensos y conversaciones de muchos turnos.
+- Soporte multilingüe declarado en trece idiomas: inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible) y con el ecosistema llama.cpp.
+- Capacidad conversacional (etiqueta conversational) para diálogo multi-turno.
+- Según las etiquetas del repositorio, el modelo base está orientado a razonamiento, agentes y uso de herramientas, aunque la model card de esta cuantización no detalla protocolos específicos de tool calling.
 
 ## Casos de uso
 
-- OCR y digitalización de documentos en portátiles económicos: con 3,8 GB de VRAM en una RTX 3050/4050 y 32 GB de DDR4, el modelo puede procesar imágenes de documentos y extraer texto sin necesidad de una estación de trabajo dedicada.
-- Análisis de diagramas y documentación técnica: el proyector visual en Q8_0 está pensado específicamente para el parseo de diagramas y la comprensión de documentos, lo que encaja en flujos de ingeniería que reciben planos, esquemas o capturas.
-- Asistencia multilingüe al cliente: con cobertura de 11 idiomas y contexto de 256k tokens, puede mantener conversaciones multi-turno con historial largo y documentación de producto adjunta sin truncar el contexto.
-- Análisis de bases de código extensas: la ventana de 262.144 tokens permite cargar repositorios o módulos completos para tareas de resumen, búsqueda de patrones y revisión, siempre que el contenido se ajuste al presupuesto de contexto.
-- Procesamiento por lotes de corpus documentales: el prefill declarado de 1.900 a 2.800+ tok/s en una RTX 4090 hace viable la ingesta masiva de documentos densos en pipelines de indexación o extracción de información.
-- Despliegue en el puesto de trabajo del desarrollador: al caber completamente en 24 GB de VRAM con contexto de 256k (19,34 GiB totales según el autor), permite ejecutar localmente un MoE multimodal sin depender de APIs externas.
-- Prototipado de agentes con razonamiento multi-paso: la etiqueta `agentic` y la ventana larga lo hacen candidato para prototipos de agentes, si bien el soporte formal de tool calling no está documentado y habría que verificarlo antes de llevarlo a producción.
-- Evaluación comparativa de técnicas de cuantización: el repositorio documenta de forma explícita la metodología (imatrix, sustitución IQ, BPW) y resulta útil como referencia para investigar el impacto de cuantizaciones quirúrgicas frente a reducciones uniformes.
+- Análisis de documentación extensa: con 256K tokens de contexto, el modelo puede ingerir manuales técnicos, expedientes o bases de código completas en una sola pasada, evitando pipelines de troceado y recuperación.
+- Asistentes de atención al cliente multi-turno: la ventana larga permite mantener el historial completo de una conversación compleja sin resumir, y el soporte de trece idiomas cubre mercados internacionales desde un único despliegue.
+- Procesamiento de documentos escaneados y capturas: la ruta de visión permite extraer información de imágenes y PDFs renderizados, combinándola con el texto del contexto para tareas de extracción estructurada.
+- Despliegue en estaciones de trabajo con GPU de 24 GB: al caber el modelo completo con contexto largo en VRAM según el autor, es adecuado para prototipos y demos locales sin depender de infraestructura cloud.
+- Investigación sobre cuantización: el mapa tensor por tensor y las comparativas de perplejidad publicadas lo convierten en un artefacto útil para estudiar el impacto de distintas estrategias de cuantización en modelos MoE multimodales.
+- Inferencia con offload a RAM del sistema: el diseño está pensado para ejecución total o parcial en memoria del sistema, lo que permite usar el modelo en equipos sin GPU de gama alta, a costa de menor throughput.
+- Traducción y localización multilingüe: la cobertura de idiomas europeos y asiáticos permite tareas de traducción y adaptación de contenido con un solo modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K ni equivalentes) en la información disponible. Los únicos datos numéricos son medidas de velocidad de inferencia declaradas por el autor, que se reproducen a continuación tal cual.
+La model card reporta una evaluación externa independiente realizada por zephel01 con llama.cpp sobre una RTX 5090, con los siguientes resultados:
 
-| Configuracion de hardware | Modo de offload | Generacion (tok/s) | Prefill (tok/s) |
-|---|---|---|---|
-| NVIDIA RTX 4090 (24 GB GDDR6X) | GPU completa (`-ngl 99`) | 80-105+ | 1.900-2.800+ |
-| NVIDIA RTX 3090 (24 GB GDDR6) | GPU completa (`-ngl 99`) | 66-80+ | 1.500-2.100+ |
-| Portátil con RTX 3050/4050 + 32 GB DDR4 | Híbrido (3,8 GB VRAM) | 20-22,5 | 300-410 |
+| Metrica | Resultado reportado |
+|---|---|
+| Resolución L6 | 90,0–93,3 % |
+| Throughput | ~247–251 tok/s |
 
-El autor indica además que estas cifras se obtuvieron en Unsloth Studio y que, con la decodificación especulativa activada en modo de offload híbrido sobre DDR4, el rendimiento cae por debajo de 19 tok/s.
+El autor compara además la perplejidad en WikiText-2 de sus ediciones APEX-I frente a GSQ-RCO IQ3_S (referencia de 7,07), con mejoras porcentuales que van del 9,14 % al 15,01 % según la variante. Estas cifras corresponden a otros modelos de la familia (Qwen3.8 27B y variantes abliterated), no a este Occamy V2 en concreto, por lo que no deben atribuirse directamente a este artefacto.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para este modelo en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos ocupan 13,62 GiB. Con KV cache en Q8_0, el consumo total estimado es de 16,00 GiB a 32k, 16,49 GiB a 64k, 17,42 GiB a 128k y 19,34 GiB a 256k (incluyendo buffers de cómputo).
-- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para offload completo con contexto nativo de 256k. En la práctica, cualquier GPU con 24 GB de VRAM debería bastar según los datos del autor.
-- GPU de consumo: sí cabe en GPUs de portátil de 4-6 GB (RTX 3050, RTX 4050, GTX 1660 Ti) en modo de offload híbrido, con aproximadamente 3,8 GB en VRAM y el resto de los pesos en 32 GB de RAM DDR4 a 3200 MHz.
-- RAM del sistema: 32 GB DDR4 a 3200 MHz como referencia para el modo híbrido declarado.
-- Opciones de despliegue: llama.cpp (formato GGUF nativo), vLLM (mencionado por el autor) y Unsloth Studio (entorno de las pruebas). Ollama y TGI no se mencionan en la información disponible.
-- Latencia y throughput: 20-22,5 tok/s de generación y 300-410 tok/s de prefill en offload híbrido sobre DDR4; 66-105+ tok/s de generación y 1.500-2.800+ tok/s de prefill con offload completo en 24 GB.
-- Ajustes recomendados por el autor: fijar Context Checkpoints a 1, usar KV cache Q8, y desactivar la decodificación especulativa o n-gram (`--spec-type none`) en escenarios de offload híbrido sobre DDR4.
+- VRAM estimada: el paquete GGUF ocupa 15,3 GB, por lo que la inferencia completa requiere al menos ~16 GB de VRAM en el escenario más ajustado; el autor afirma que el modelo completo con 256K de contexto cabe en 24 GB de VRAM.
+- GPU recomendadas: RTX 3090, RTX 4090, RTX 5090 y GPUs profesionales (A100, H100) para máximo throughput. La evaluación externa citada se realizó en una RTX 5090.
+- GPU de consumo: sí cabe en GPUs de 24 GB (RTX 3090/4090/5090). En GPUs de 16 GB requeriría reducir contexto o aplicar offload parcial.
+- Despliegue: llama.cpp es el runtime de referencia (formato GGUF). No se documenta soporte de vLLM, TGI u Ollama en la información disponible.
+- Throughput: ~247–251 tok/s reportados en RTX 5090 con llama.cpp. El autor incluye proyecciones de rendimiento para RTX 30/40/50 y benchmarks en portátiles con DDR4/DDR5, aunque los valores concretos no se detallan en la información proporcionada.
+- Configuración: el autor publica una sección de configuración recomendada y un ejemplo de servidor CLI, así como parámetros de generación oficiales de Accio-Lab y empíricos.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos comparables. La model card menciona de forma genérica «cuantizaciones comunitarias planas» (tipo `IQ3_XXS` o `IQ2`) y afirma que estas superan los 15,8 GiB de pesos y fallan en GPUs de 24 GB al abrir contextos largos, frente a los 13,62 GiB de esta build, pero no nombra modelos concretos ni ofrece cifras verificables de terceros.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Occamy-1.0 APEX-I MiniPlus V2 (este) | 34,66 B (MoE) | 256K | Apache 2.0 | Multimodal, GGUF, cuantización quirúrgica |
+| Qwen3.6-35B-A3B MTP APEX-I MiniPlus V2.1 | 35 B (MoE, 3 B activos) | no disponible | Apache 2.0 (presumible) | Misma familia de cuantización; orientado a razonamiento, agentes y tool calling |
+| Qwen3.8 27B VAL-APEX-I MiniPlus V3 | 27 B (denso) | no disponible | Apache 2.0 (presumible) | Denso, 14,16 GB; referencia de perplejidad frente a IQ3_S |
+| Ornith 1.5 35B-A3B APEX-I MiniPlus V2.1 | 35 B (MoE, 3 B activos) | no disponible | no disponible | Especializado en ingeniería de software y agentes de código |
+
+Las alternativas listadas pertenecen al mismo autor de cuantizaciones y a familias distintas; no son variantes intercambiables del mismo modelo. Los datos de parámetros activos y contexto de las alternativas no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Todas las cifras de rendimiento, consumo de VRAM y velocidades proceden de la model card del autor y no han sido verificadas de forma independiente.
-- El repositorio registra 0 descargas y 0 «likes» en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
-- No hay información sobre sesgos, composición del dataset de entrenamiento ni procesos de alineación del modelo base.
-- Riesgo de alucinación: no cuantificado en la información disponible; es esperable un comportamiento similar al del modelo base sin ajuste específico.
-- La visión requiere distribuir y cargar el archivo mmproj por separado; sin él, el modelo funciona solo con texto.
-- En modo de offload híbrido sobre DDR4, la decodificación especulativa degrada el rendimiento según el autor, lo que obliga a desactivarla.
-- El contexto de 256k solo cabe en VRAM con 24 GB; por debajo de esa cifra hay que reducir la ventana o aceptar offload parcial con la penalización de velocidad correspondiente.
-- Licencia Apache 2.0, que en principio permite uso comercial, pero conviene verificar la licencia y las condiciones del modelo base Accio-Lab/occamy-1.0 antes de un despliegue en producción.
-- El README proporcionado está truncado al final, por lo que pueden existir secciones adicionales (casos de uso, avisos de la comunidad o instrucciones de uso) no recogidas en esta ficha.
-- Los datos de fecha del repositorio (creación y actualización el 15 de septiembre de 2026) resultan anómalos y no se han podido contrastar.
+- Es una cuantización, no un modelo original: la calidad final depende del proceso APEX-I y puede diferir del modelo base en precisión, especialmente en tareas sensibles a pesos de baja magnitud.
+- No se documentan datos de entrenamiento, composición del dataset ni proceso de alineación del modelo base, lo que dificulta evaluar sesgos y comportamientos aprendidos.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de factualidad para este artefacto.
+- El rendimiento en contextos de 256K puede degradarse en las posiciones intermedias pese a que el modelo "quepa" en memoria; no se aportan métricas de recuperación en contexto largo más allá del test externo citado.
+- La cobertura de trece idiomas está declarada por etiquetas; no se especifica el nivel de competencia por idioma ni se aportan evaluaciones multilingües.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Accio-Lab/occamy-1.0 y de los datos subyacentes antes de producción.
+- El soporte de tool calling y agentes se infiere de las etiquetas del repositorio, no de documentación técnica detallada en esta model card.
+- El autor advierte que las cifras de mejora de perplejidad citadas corresponden a otras variantes de la familia, no a este modelo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
-- Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su modelo base (únicamente páginas de ayuda de YouTube y contenidos de Zhihu sin relación).
+- Evaluación externa de zephel01: https://note.com/zephel01/n/n71d3d7e6b70c?hl=en
+- Colección APEX-I Legacy Archive: https://huggingface.co/collections/IsValorum/apex-i-legacy-archive-v1-and-v2-6acfee7a56126a10a6a29954
+- Qwen3.6-35B-A3B MTP APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Qwen3.6-35B-A3B MTP APEX-I-MiniPlus-V2.1 Abliterated: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Ornith 1.5 APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Tiel Coder APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Qwen3.8 27B VAL-APEX-I MiniPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Qwen3.8 27B VAL-APEX-I NanoPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

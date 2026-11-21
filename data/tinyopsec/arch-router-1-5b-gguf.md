@@ -2,84 +2,88 @@
 
 ## Resumen
 
-Arch-Router-1.5B — GGUF es una colección de cuantizaciones en formato GGUF, producidas con llama.cpp por el usuario tinyopsec, del modelo `katanemo/Arch-Router-1.5B` de Katanemo. Se trata de un ajuste fino de Qwen2.5-1.5B-Instruct especializado en enrutamiento de LLM alineado con preferencias: su tarea es decidir qué modelo de un catálogo debe atender una consulta concreta, mediante coincidencia de dominio y acción según las preferencias definidas por el operador.
+Arch-Router-1.5B es un modelo de lenguaje especializado en el enrutamiento de consultas entre modelos (LLM routing) mediante alineamiento de preferencias. Lo desarrolla Katanemo y esta construido como un fine-tuning de Qwen2.5-1.5B-Instruct, por lo que hereda la arquitectura transformer decoder-only de Qwen2. En lugar de generar respuestas finales, el modelo aprende a mapear una consulta del usuario a un dominio y una accion concretos, lo que permite decidir que modelo de un pool (por ejemplo, uno barato y rapido frente a uno grande y caro) debe atenderla.
 
-El problema que resuelve es el del enrutamiento en sistemas multi-modelo: en producción, con decenas de modelos disponibles (distintos costes, capacidades y licencias), hace falta un componente ligero y rápido que asigne cada petición al modelo más adecuado sin recurrir a un LLM grande. Un router de 1,5 mil millones de parámetros ejecutable localmente con llama.cpp u Ollama cubre ese nicho con una latencia y un coste mínimos.
+La version aqui descrita es una cuantizacion GGUF producida por el usuario tinyopsec con llama.cpp, que incluye 13 variantes desde F16 hasta Q2_K. Esto la hace desplegable en entornos con recursos limitados, incluidos portatiles y CPUs, algo relevante para arquitecturas de enrutamiento que deben ejecutarse en cada peticion antes de invocar al modelo final.
 
-Es relevante ahora porque los despliegues multi-modelo se han generalizado y el enrutamiento basado en LLM pequeños es una alternativa práctica a clasificadores entrenados a medida o a heurísticas. El repo pesa 15,3 GB y ofrece trece variantes de cuantización, desde F16 (3,0 GB) hasta Q2_K.
+Su relevancia actual radica en el coste: un router de 1.500 millones de parametros puede clasificar intenciones con una fraccion del coste de un modelo grande, permitiendo pipelines multi-modelo con enrutamiento dinamico. El modelo tiene 1.543.714.304 parametros totales y esta publicado bajo la Katanemo Research License.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (familia Qwen2), fine-tuning de Qwen2.5-1.5B-Instruct |
+| Arquitectura | Transformer decoder-only (Qwen2.5-1.5B-Instruct como base) |
 | Parametros totales | 1.543.714.304 |
-| Parametros activos | no disponible (no es MoE; todos los parametros estan activos) |
-| Longitud de contexto | no disponible (el modelo base Qwen2.5-1.5B-Instruct soporta 32.768 tokens, pero el router no lo documenta) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | Otra (Katanemo Research License) |
-| Formato de pesos | GGUF |
+| Idiomas soportados | No disponible |
+| Licencia | Katanemo Research License (etiquetada como "other") |
+| Formato de pesos | GGUF (cuantizaciones generadas con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-1.5B-Instruct, un transformer decoder denso de la familia Qwen2, y se ha ajustado finamente para la tarea de enrutamiento con alineación de preferencias. Según la model card, el router funciona por coincidencia de dominio y acción (domain/action matching): recibe la consulta del usuario junto con una descripción de los modelos candidatos y sus dominios o capacidades, y devuelve el modelo más adecuado según las preferencias declaradas por el operador del sistema. Esto permite dirigir el tráfico sin reentrenar el router cada vez que cambia el catálogo de modelos, ya que las preferencias se expresan en lenguaje natural.
+El modelo base es Qwen2.5-1.5B-Instruct, un transformer decoder-only denso con 1.543.714.304 parametros. Sobre esa base, Katanemo aplico un fine-tuning orientado a enrutamiento por alineamiento de preferencias (preference-aligned routing), cuyo objetivo es que el modelo puntue o seleccione entre dominios y acciones definidos por el usuario para cada consulta. La model card de la cuantizacion no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas especificas como RLHF o DPO; esa informacion no esta disponible en la documentacion proporcionada.
 
-No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas concretas de alineación (RLHF, DPO) en la información disponible. Lo que sí consta es que las cuantizaciones GGUF se han producido con llama.cpp, lo que habilita su ejecución en CPU y en GPUs de consumo. Al ser un modelo denso de 1,5B de parámetros, no incorpora técnicas de mezcla de expertos ni mecanismos de atención exóticos documentados.
+La innovacion principal no esta en la arquitectura interna, sino en el uso: el modelo actua como clasificador de intencion en pipelines multi-modelo, decidiendo que LLM downstream debe responder. Las cuantizaciones GGUF se generaron con llama.cpp, lo que preserva la compatibilidad con runtimes de inferencia local y permite ejecutar el router en el mismo nodo que atiende la peticion, sin llamadas adicionales a red.
 
 ## Capacidades
 
-- Enrutamiento de consultas LLM: selecciona el modelo más adecuado de un catálogo definido por el usuario, mediante coincidencia de dominio y acción.
-- Alineación con preferencias: las reglas de enrutamiento se expresan en lenguaje natural (por ejemplo, "las consultas legales van al modelo X"), sin necesidad de reentrenamiento.
-- Generación de texto conversacional heredada del modelo base Qwen2.5-1.5B-Instruct, aunque no es su propósito principal.
-- Ejecución local y en dispositivos con recursos limitados gracias al formato GGUF y a su tamaño de 1,5B de parámetros.
-- No disponible: no hay evidencia de capacidades de visión, audio, tool calling, agentes ni modos de razonamiento extendido en la información proporcionada.
+- Enrutamiento de consultas: mapea una peticion de usuario a un dominio y una accion definidos previamente, alineandose con preferencias configuradas.
+- Clasificacion de intencion: util para decidir que modelo, herramienta o flujo debe atender una consulta.
+- Generacion de texto basica: heredada de Qwen2.5-1.5B-Instruct, aunque el fine-tuning la orienta a tareas de routing.
+- Inferencia local: compatible con llama.cpp, Ollama, LM Studio y koboldcpp gracias al formato GGUF.
+- Despliegue ligero: las cuantizaciones de 4 bits y menores permiten ejecucion en CPU y GPU de gama baja.
+- No se documentan capacidades de tool calling, agentes multi-paso, vision, audio ni modo thinking en la informacion disponible.
+- Cobertura multilingue: no disponible en la documentacion.
 
 ## Casos de uso
 
-- Enrutamiento en gateways multi-modelo: como componente de un gateway tipo LLM Router (el caso de uso original de Katanemo con Arch), clasifica cada petición entrante y la dirige al modelo del catálogo que mejor encaje por dominio y coste.
-- Optimización de costes en producción: dirige las consultas simples a modelos pequeños y baratos, y reserva los modelos grandes para peticiones complejas, reduciendo el gasto por token sin reglas escritas a mano.
-- Selección dinámica sin reentrenamiento: cuando se añade o retira un modelo del catálogo, basta con actualizar la descripción en lenguaje natural de los candidatos, sin reentrenar ni recompilar el router.
-- Ejecución en el borde (edge): con la variante Q4_K_M (~1 GB aprox.) puede correr en portátiles, mini-PCs o servidores modestos con llama.cpp u Ollama, útil para prefiltrado local antes de llamar a APIs remotas.
-- Cumplimiento de políticas internas: enruta según preferencias organizativas, por ejemplo forzando que datos sensibles vayan a modelos desplegados internamente y consultas genéricas a proveedores externos.
-- Balanceo semántico de carga: distribuye tráfico entre modelos equivalentes según afinidad temática detectada en la consulta, complementando balanceadores tradicionales que solo miran métricas de infraestructura.
-- Evaluación y prototipado de estrategias de routing: su tamaño permite experimentar con políticas de enrutamiento en local de forma barata antes de escalar a producción.
+- Enrutamiento en pipelines multi-modelo: el router clasifica cada consulta y la dirige al modelo adecuado (por ejemplo, uno pequeno para preguntas simples y uno grande para razonamiento complejo), reduciendo coste medio por peticion.
+- Clasificacion de intenciones en atencion al cliente: se usa para etiquetar la consulta del usuario con un dominio (facturacion, soporte tecnico, ventas) y derivarla al flujo o agente correspondiente.
+- Enrutamiento por coste y latencia: en produccion, el modelo decide si una consulta requiere un LLM grande o puede resolverse con uno pequeno, optimizando el presupuesto de inferencia.
+- Preprocesado en arquitecturas de agentes: actua como primer paso que selecciona la herramienta o sub-agente adecuado antes de ejecutar la tarea.
+- Despliegue en el borde: gracias a las cuantizaciones Q4_K_M y menores, puede ejecutarse en portatiles o servidores sin GPU para enrutar trafico en entornos con recursos limitados.
+- Investigacion sobre routing: sirve como baseline reproducible para experimentos de seleccion de modelos y alineamiento de preferencias en enrutamiento.
+- Moderacion y triaje previo: puede clasificar consultas antes de enviarlas a sistemas mas costosos o con requisitos de seguridad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card original de `katanemo/Arch-Router-1.5B` no está incluida en los datos proporcionados, por lo que no se pueden citar métricas de precisión de enrutamiento ni comparativas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada para inferencia: la variante F16 ocupa 3,0 GB; las cuantizaciones Q8_0 rondan ~1,6 GB, Q4_K_M aproximadamente ~1 GB, y Q2_K menos de 0,7 GB (estimaciones proporcionales al tamaño del repo; los tamaños exactos por archivo no constan salvo el de F16).
-- GPUs recomendadas: no requiere GPU; cualquier GPU moderna con 2-4 GB de VRAM es más que suficiente. Compatible con RTX 3060, RTX 4060 o superiores sin problemas.
-- Consumer GPUs: cabe sobradamente en prácticamente cualquier GPU de consumo; incluso puede ejecutarse íntegramente en CPU gracias a GGUF, con RAM de 4 GB o más.
-- Opciones de despliegue: llama.cpp (ejemplo documentado en la model card: `./llama-cli -m model-Q4_K_M.gguf -p "Your prompt" -n 256`), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponible. Por su tamaño (1,5B de parámetros) se espera latencia baja incluso en CPU, pero no hay cifras publicadas en la información proporcionada.
+- VRAM estimada: aproximadamente 3,0 GB en F16; en torno a 1,0-1,1 GB en Q4_K_M; por debajo de 1 GB en Q2_K (estimaciones basadas en el tamano de los ficheros y el numero de parametros).
+- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM para cuantizaciones de 4 bits; RTX 3060, RTX 4060, RTX 4090, A100 o H100 sobran para este modelo.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con memoria compartida.
+- CPU: viable en cuantizaciones Q4 y menores; el modelo es lo bastante pequeno para inferencia en CPU con latencias aceptables para clasificacion.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la documentacion; al ser un modelo de 1.5B, se espera baja latencia por peticion, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Tarea | Licencia |
-|---|---|---|---|---|
-| Arch-Router-1.5B (GGUF) | 1,54B | GGUF (13 cuantizaciones) | Enrutamiento LLM alineado con preferencias | Katanemo Research License (other) |
-| Qwen2.5-1.5B-Instruct (base) | 1,54B | safetensors, GGUF (comunidad) | Chat y generacion de texto general | Apache 2.0 / Qwen (según version) |
-| RouteLLM (lmsys) | no disponible | no disponible | Enrutamiento LLM (framework con clasificadores y routers basados en embeddings) | Apache 2.0 |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+|---|---|---|---|---|---|
+| Arch-Router-1.5B (esta ficha) | 1.543.714.304 | No disponible | Routing por preferencias | Katanemo Research License | GGUF |
+| Qwen2.5-1.5B-Instruct | ~1.500 millones | No disponible en esta ficha | LLM generalista | No disponible en esta ficha | Safetensors, GGUF |
+| RouteLLM (frameworks de routing) | Variable | No aplica | Enrutamiento entre modelos | No disponible | No aplica |
 
-Nota: la comparativa se centra en alternativas de enrutamiento o en el modelo base. No hay datos de rendimiento comparativo publicados en la información disponible.
+La comparacion con alternativas especificas de routing (como los clasificadores de RouteLLM o modelos de enrutamiento de otros proveedores) no esta disponible con datos verificables en la informacion proporcionada. Frente a Qwen2.5-1.5B-Instruct, la diferencia clave es el fine-tuning para routing, no el tamano ni el contexto.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. Al heredar de Qwen2.5-1.5B-Instruct, puede arrastrar los sesgos de sus datos de preentrenamiento y fine-tuning.
-- Riesgo de alucinación: bajo en su tarea principal (seleccionar entre opciones dadas), pero no es un generador de conocimiento; usarlo para generación de texto general no es su propósito y la model card advierte expresamente: "Routing model. Evaluate before use".
-- Limitaciones de idioma y contexto: no documentadas en la información disponible; la longitud de contexto efectiva del router no se especifica en la model card.
-- Restricciones de licencia: se distribuye bajo la Katanemo Research License ("other" en Hugging Face), no bajo una licencia permisiva estándar. Es imprescindible revisar los términos antes de cualquier uso comercial; puede estar restringido a investigación.
-- Es una cuantización de terceros (tinyopsec), no el release oficial de Katanemo: verificar la fidelidad de las cuantizaciones (especialmente Q3 y Q2_K, que degradan más) antes de producción.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden reducir la precisión del enrutamiento; la propia model card recomienda Q4_K_M como variante por defecto.
-- El modelo depende del formato del prompt con el catálogo de modelos candidatos; cambios en ese formato pueden degradar su comportamiento sin documentación que lo avise.
+- Es un modelo de enrutamiento, no un LLM generalista: no esta pensado para generar respuestas finales de calidad.
+- Riesgo de alucinacion y de clasificacion erronea: puede asignar dominios o acciones incorrectos, lo que desvia la consulta al modelo equivocado.
+- Sesgos: no se documentan sesgos conocidos, pero al derivar de Qwen2.5-1.5B-Instruct puede heredar los de su base.
+- Cobertura de idiomas no documentada; el rendimiento fuera del ingles no esta garantizado.
+- Longitud de contexto no disponible; consultas muy largas pueden truncarse o degradar la clasificacion.
+- Licencia Katanemo Research License: es necesario revisar sus terminos antes de uso comercial, ya que no es una licencia permisiva estandar.
+- La cuantizacion puede introducir perdida de precision en la clasificacion respecto al modelo original en safetensors; conviene evaluar la variante elegida antes de produccion.
+- El autor de la cuantizacion advierte explicitamente: "Routing model. Evaluate before use."
 
 ## Enlaces
 
-- Repositorio en Hugging Face (esta ficha): https://huggingface.co/tinyopsec/Arch-Router-1.5B-GGUF
-- Modelo original (referenciado en la model card): https://huggingface.co/katanemo/Arch-Router-1.5B
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Paper, blog oficial y demos: no disponibles en la información proporcionada.
+- Repositorio GGUF: https://huggingface.co/tinyopsec/Arch-Router-1.5B-GGUF
+- Modelo base: https://huggingface.co/katanemo/Arch-Router-1.5B
+- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- llama.cpp: https://github.com/ggerganov/llama.cpp

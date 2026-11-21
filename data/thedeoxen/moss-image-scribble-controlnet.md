@@ -2,91 +2,89 @@
 
 ## Resumen
 
-MOSS-Image-scribble-controlnet es un adaptador LoRA de tipo ControlNet para el modelo de generación y edición de imágenes MOSS-Image-SFT, desarrollado por el usuario thedeoxen sobre el modelo base del equipo OpenMOSS. Su función es permitir el control estructural de la imagen generada mediante un boceto o garabato (scribble) de trazos blancos sobre fondo negro, de forma que el modelo respeta las masas y trazos principales del dibujo mientras el prompt de texto define identidad, materiales, vestuario y estilo. No se trata del adaptador oficial de concatenación de color/profundidad de MOSS, sino de una LoRA de edición entrenada específicamente para esta tarea.
+MOSS-Image-scribble-controlnet es un adaptador de control tipo LoRA (denominado "controlnet" por el autor, aunque no es un ControlNet completo) para el modelo de generación y edición de imágenes MOSS-Image-SFT del equipo OpenMOSS. Lo desarrolla el usuario independiente thedeoxen y su función es permitir que MOSS-Image-SFT siga un boceto de trazos libres (scribble) como guía estructural: el control aporta las masas y líneas principales, mientras que el prompt de texto define identidad, materiales, ropa y estilo. Resuelve el problema de controlar la composición de una generación de imagen sin necesidad de un mapa de bordes denso, algo útil en fases tempranas de diseño.
 
-El adaptador se distribuye como un único fichero safetensors de aproximadamente 0,3 GB, con rango 64 en capas lineales y rango 16 en convoluciones, y se integra en flujos de trabajo de ComfyUI mediante el nodo Text Encode MOSS-Image Edit con formato de edición `ai-toolkit`. Está pensado para artistas y desarrolladores que necesitan un control laxo de composición antes de aplicar pasadas más estrictas de Canny o lineart.
+El adaptador se distribuye como un fichero safetensors de aproximadamente 0,3 GB (rank 64 en capas lineales y rank 16 en convoluciones) que se carga sobre el UNet de MOSS-Image-SFT con un cargador de LoRA, sin palabra de activación. Está entrenado como adaptador de edición: la imagen de control actúa como referencia y el prompt describe la escena final. El checkpoint publicado corresponde al paso de entrenamiento 5000.
 
-La relevancia de esta ficha radica en que documenta un adaptador de la comunidad, sin métricas publicadas ni validación externa, que amplía las capacidades del ecosistema MOSS-Image con un caso de uso muy concreto: el control por boceto en pipelines de image-to-image. Su licencia Apache 2.0 facilita la experimentación, aunque la ausencia de benchmarks y de tracción en Hugging Face (0 descargas, 0 likes en el momento de la consulta) obliga a tratarlo como un recurso experimental.
+Es relevante ahora porque MOSS-Image-SFT es un modelo reciente de edición de imágenes y este tipo de LoRA de control amplía sus modos de uso hacia flujos de trabajo de ComfyUI, donde ya se incluye un workflow listo para usar. La licencia Apache 2.0 y el formato compatible con diffusers facilitan su integración.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA de control (estilo ControlNet) sobre el modelo de difusion MOSS-Image-SFT |
+| Arquitectura | LoRA de control sobre UNet de MOSS-Image-SFT (rank 64 en capas lineales, rank 16 en convoluciones) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible para la LoRA; el modelo base se distribuye con UNet `moss_image_sft_int8_convrot.safetensors`, text encoder `qwen3.5_9b_w4a8_gptq.safetensors` y VAE `flux2-vae_small.safetensors` |
+| Tipos de cuantizacion | no disponible (el modelo base usa UNet int8 y text encoder w4a8 GPTQ) |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (`moss_image_sft_scribble_control_lora.safetensors`) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es una LoRA de edición con rango 64 en las capas lineales y rango 16 en las convoluciones, entrenada sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT. Se concibe como un adaptador de control de imagen única: la imagen de control actúa como referencia estructural y el prompt describe la imagen a generar. El checkpoint seleccionado corresponde al paso de entrenamiento 5000.
+El adaptador es una LoRA de control que se aplica sobre el UNet del modelo base MOSS-Image-SFT. Según la model card, emplea rank 64 en las capas lineales y rank 16 en las convoluciones. No es un ControlNet completo ni el adaptador oficial de concatenación de color/profundidad de MOSS; se carga con un cargador de LoRA convencional y se le pasa una única imagen de control a través del nodo Text Encode MOSS-Image Edit.
 
-El entrenamiento se realizó con la caché KV activada, lo que obliga a configurar el formato de edición `ai-toolkit` tanto en la codificación positiva como en la negativa durante la inferencia. Los mapas de control de entrenamiento son trazos blancos sobre negro, más gruesos y suaves que los que producen Canny o lineart; el flujo de trabajo incluido usa HED Soft-Edge Lines en modo seguro por ser el más cercano a esa distribución. No se especifican en la información disponible el número de tokens, la composición del dataset ni si hubo etapas de RLHF o DPO.
+Se entrenó como adaptador de edición con el formato `ai-toolkit` y con la caché kv activada, por lo que la model card indica que hay que seleccionar ese formato tanto en la codificación positiva como en la negativa. El checkpoint publicado es el paso 5000. Los datos de entrenamiento (número de imágenes, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada. La guía de uso recomienda generar los mapas de control con HED Soft-Edge Lines en modo seguro, ya que los scribbles de entrenamiento son trazos blancos gruesos y suaves sobre fondo negro, más cercanos a HED que a Canny o lineart fino.
 
 ## Capacidades
 
-- Control estructural por boceto: sigue los trazos y masas principales de un dibujo laxo, sin exigir precisión en los bordes finos.
-- Generación image-to-image condicionada por prompt: la identidad, los materiales, la ropa y el estilo provienen del texto.
-- Integración como adaptador de control de imagen única para MOSS-Image-SFT.
-- Compatibilidad con flujos de ComfyUI mediante el nodo Text Encode MOSS-Image Edit y el formato de edición `ai-toolkit`.
-- Ajuste de intensidad de la LoRA (valor entrenado 1.0; se recomienda bajar a 0.7 si el control resulta demasiado rígido).
-- No requiere palabra de activación (trigger word).
-- Capacidades multimodales adicionales (visión, audio, tool calling, agentes): no disponibles en esta LoRA, que es exclusivamente un adaptador de control para generación de imágenes.
+- Control estructural de imagen a imagen mediante bocetos de trazos libres: sigue las líneas y masas principales, no cada borde fino.
+- Generación guiada por prompt: la identidad, los materiales, la ropa y el estilo se definen en el texto, mientras el control fija la composición.
+- Funciona como adaptador de control de una sola imagen de referencia para MOSS-Image-SFT.
+- Integración con ComfyUI mediante el workflow incluido y el nodo Text Encode MOSS-Image Edit.
+- Sin palabra de activación (no trigger word).
+- Ajuste de intensidad del LoRA (1.0 es el valor entrenado; se puede bajar hacia 0.7 si el control resulta demasiado rígido).
+- Parámetros de muestreo recomendados: 30 pasos, CFG 4, sampler `euler` y scheduler `simple`.
 
 ## Casos de uso
 
-- Bocetos rápidos y storyboards: el adaptador convierte trazos sueltos en imágenes acabadas respetando la composición, lo que agiliza la previsualización de secuencias narrativas antes de producir arte final.
-- Pruebas de composición previas a una pasada estricta: se usa como primera etapa para fijar masas y encuadre, y después se aplica un control más preciso con Canny o lineart sobre la imagen resultante.
-- Dibujo sobre fotografía conservando solo las formas grandes: partiendo de una foto convertida a líneas HED Soft-Edge, el modelo regenera la escena manteniendo la estructura pero sustituyendo texturas y materiales según el prompt.
-- Exploración de estilo y vestuario sobre una misma estructura: al no fijar identidad ni materiales, un mismo boceto sirve para generar variantes de personaje, ropa y ambientación cambiando únicamente el prompt.
-- Previsualización de conceptos para dirección de arte: equipos de diseño pueden validar ideas de escena con trazos mínimos y prompts descriptivos, reduciendo el coste frente a un render completo.
-- Prototipado en ComfyUI para pipelines de producción: el flujo incluido permite encadenar carga de foto, construcción del mapa de control, codificación y muestreo con parámetros fijos (30 pasos, CFG 4, euler + simple), lo que facilita la automatización de pruebas.
-- Docencia y experimentación con adaptadores de control: al ser una LoRA pequeña (0,3 GB) y con licencia Apache 2.0, sirve para estudiar cómo se comporta un control laxo frente a uno estricto en modelos de difusión modernos.
+- Bocetos y storyboards: a partir de trazos rápidos se generan imágenes acabadas que respetan la composición dibujada, útil para previsualizar escenas antes de producir arte final.
+- Pruebas rápidas de composición: sirve como primera pasada para validar encuadre y distribución de masas antes de aplicar un control más estricto con Canny o lineart.
+- Dibujo sobre fotografías: se traza encima de una foto para conservar solo las formas grandes y dejar que el prompt reinvente textura y color, por ejemplo para conceptos de vestuario o escenarios.
+- Generación de ilustraciones con control de pose y silueta: con un boceto de la figura (como el ejemplo del maestro de ceremonias) y un prompt detallado se obtiene una ilustración completa con la postura deseada.
+- Prototipado de entornos y escenarios: dibujar la distribución de un espacio (una cafetería, un puesto de ramen, una estación de metro) y dejar que el prompt defina materiales y atmósfera.
+- Flujos de trabajo en ComfyUI: el workflow incluido carga una foto, construye el mapa de control con HED Soft-Edge Lines, lo codifica junto al prompt y muestrea, lo que permite automatizar pipelines de imagen a imagen en producción.
+- Exploración de estilo sobre una misma estructura: manteniendo el mismo scribble, variar el prompt para obtener distintas interpretaciones de materiales y ambientación sin redibujar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para la LoRA: no disponible de forma aislada; el consumo vendrá determinado por el modelo base MOSS-Image-SFT y su text encoder.
-- El modelo base se distribuye con UNet en int8 (`moss_image_sft_int8_convrot.safetensors`) y text encoder en W4A8 GPTQ (`qwen3.5_9b_w4a8_gptq.safetensors`), lo que reduce los requisitos frente a pesos en precisión completa, aunque no se especifican cifras concretas de VRAM.
+- El adaptador pesa aproximadamente 0,3 GB, pero requiere cargar el modelo base MOSS-Image-SFT completo (UNet int8, text encoder Qwen3.5 9B en w4a8 GPTQ y VAE flux2-vae_small), por lo que la VRAM vendrá determinada por ese modelo base.
+- VRAM estimada para inferencia: no disponible en la información proporcionada para el conjunto base + LoRA.
 - GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible; depende del modelo base y de la cuantización empleada.
-- Opciones de despliegue: ComfyUI (flujo de trabajo incluido) y librería diffusers; no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI, que no aplican a un adaptador de difusión de este tipo.
-- Latencia y throughput: no disponibles. Los parámetros de muestreo recomendados son 30 pasos, CFG 4 y sampler euler + simple.
+- Compatibilidad con GPU de consumo: no disponible; el uso de cuantizaciones int8 y w4a8 en el base sugiere que está pensado para reducir requisitos, pero no se confirman cifras.
+- Opciones de despliegue: ComfyUI (workflow incluido) y diffusers como librería declarada.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Base | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| thedeoxen/MOSS-Image-scribble-controlnet | LoRA de control (scribble) sobre MOSS-Image-SFT | no disponible | no aplica | apache-2.0 | Hugging Face, 0 descargas |
-| Adaptador oficial de color/profundidad de MOSS | Adaptador de concatenación oficial del modelo base | no disponible | no aplica | no disponible | no disponible |
-| ControlNet para Stable Diffusion (scribble) | ControlNet clásico para SD | no disponible en la informacion | no aplica | no disponible | ecosistema amplio |
-| ControlNet para FLUX (scribble) | ControlNet para modelos FLUX | no disponible en la informacion | no aplica | no disponible | ecosistema en crecimiento |
+| thedeoxen/MOSS-Image-scribble-controlnet | LoRA de control (scribble) | MOSS-Image-SFT | Apache 2.0 | safetensors | Rank 64/16, paso 5000, workflow ComfyUI incluido |
+| Adaptador oficial de color/profundidad de MOSS | Adaptador de concatenación | MOSS-Image-SFT | no disponible | no disponible | La model card lo distingue explícitamente de este LoRA |
+| ControlNet estándar (p. ej. para SD) | ControlNet completo | Modelos de difusión tipo SD | variable | safetensors | Requiere arquitectura compatible; no aplicable directamente a MOSS-Image-SFT |
 
-No se dispone de datos de rendimiento ni de parámetros comparables en la información proporcionada para establecer una comparación cuantitativa con alternativas.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay métricas objetivas de fidelidad al boceto, calidad de imagen ni comparación con otros adaptadores.
-- Tracción nula en Hugging Face (0 descargas, 0 likes en el momento de la consulta): no hay validación por parte de la comunidad.
-- El adaptador sigue trazos gruesos y masas, no bordes finos; un mapa de control demasiado detallado (Canny o PiDiNet fino) puede degradar el resultado respecto a HED Soft-Edge.
-- Requiere configuración específica en ComfyUI: formato de edición `ai-toolkit` en codificación positiva y negativa, y la caché KV activada, tal como se entrenó. Un uso incorrecto de estos ajustes puede producir resultados inconsistentes.
-- Dependencia estricta del modelo base OpenMOSS-Team/MOSS-Image-SFT y de sus ficheros concretos (UNet int8, text encoder W4A8 GPTQ, VAE flux2-vae_small); no se garantiza compatibilidad con otras variantes.
-- Idioma soportado únicamente inglés según la model card; el rendimiento con prompts en castellano no está documentado.
-- Riesgo de alucinación visual y de desviación del boceto cuando el prompt es muy detallado o contradictorio con la estructura dibujada.
-- No se documentan sesgos conocidos del adaptador; al heredar el modelo base, podría reproducir sesgos presentes en los datos de entrenamiento de MOSS-Image-SFT.
-- Licencia Apache 2.0 permite uso comercial, pero al ser un adaptador sobre un modelo base de terceros conviene verificar la licencia y condiciones de OpenMOSS-Team/MOSS-Image-SFT antes de producción.
-- El prompt negativo de referencia es `nsfw, worst quality, bad anatomy, watermark, jpeg artifact`; no se especifican filtros de seguridad adicionales.
+- Solo soporta inglés como idioma declarado.
+- El control sigue trazos gruesos y masas, no bordes finos; para precisión de contorno conviene usar Canny o lineart en una pasada posterior.
+- Requiere el formato de edición `ai-toolkit` y la caché kv activada; usar otra configuración puede degradar el resultado.
+- Está entrenado y recomendado únicamente con OpenMOSS-Team/MOSS-Image-SFT; no se garantiza su funcionamiento con otros modelos base.
+- Es un adaptador comunitario de un autor independiente (thedeoxen), no un componente oficial de OpenMOSS; no hay benchmarks publicados que avalen su calidad frente a alternativas.
+- Riesgo de alucinación visual y de desviación del boceto si el prompt contradice la estructura del control o si la intensidad del LoRA es demasiado alta.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar también la licencia del modelo base MOSS-Image-SFT antes de desplegar en producción.
+- El prompt negativo de entrenamiento incluido (`nsfw, worst quality, bad anatomy, watermark, jpeg artifact`) sugiere que el modelo puede producir artefactos o contenido no deseado sin filtrado.
+- No hay información sobre sesgos demográficos ni sobre el dataset de entrenamiento, lo que limita la evaluación de riesgos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/thedeoxen/MOSS-Image-scribble-controlnet
-- Pesos de la LoRA: https://huggingface.co/thedeoxen/MOSS-Image-scribble-controlnet/blob/main/moss_image_sft_scribble_control_lora.safetensors
-- Flujo de trabajo ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-scribble-controlnet/blob/main/moss_image_scribble_control.json
+- Pesos (safetensors): https://huggingface.co/thedeoxen/MOSS-Image-scribble-controlnet/blob/main/moss_image_sft_scribble_control_lora.safetensors
+- Workflow de ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-scribble-controlnet/blob/main/moss_image_scribble_control.json
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

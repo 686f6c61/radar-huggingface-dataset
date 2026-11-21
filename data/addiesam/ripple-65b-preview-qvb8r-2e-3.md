@@ -2,89 +2,95 @@
 
 ## Resumen
 
-Ripple-65B-Preview-QVB8R-2e-3 es un paquete de pesos cuantizados del modelo Ripple-65B-Preview de Ricursive AI, generado por el usuario addiesam mediante la técnica QVB8R (QVB8 con codificación entrópica). No se trata de un modelo entrenado de forma independiente, sino de una compresión con cota certificada L∞: cada peso restaurado queda a una distancia máxima de tau = 0.002 respecto al valor bf16 original. El paquete está pensado para cargarse con el motor de inferencia QVB8, no con `transformers`.
+Ripple-65B-Preview-QVB8R-2e-3 es un paquete de pesos comprimidos del modelo de lenguaje Ripple-65B-Preview (desarrollado por ricursiveAI), publicado por el usuario addiesam. No se trata de un modelo nuevo, sino de una cuantizacion del modelo base bf16 mediante el formato propietario QVB8R (QVB8 con codificacion entropica) a un umbral de error tau = 0,002. El paquete esta disenado exclusivamente para el motor de inferencia QVB8, desarrollado por el mismo autor, y no es cargable directamente en `transformers` ni en otros motores convencionales.
 
-El modelo base, Ripple-65B-Preview, es un modelo de propósito general de Ricursive Intelligence, preentrenado sobre 12 billones de tokens y con soporte de hasta 1M tokens de contexto. Ricursive lo describe como una variante del modelo propietario que alimenta su plataforma de diseño de chips, por lo que su perfil de uso está orientado a razonamiento técnico y contextos muy largos.
+La propuesta tecnica diferencial es la compresion con cota L-infinito certificada: para cada peso restaurado, el error absoluto maximo respecto al valor original en bf16 queda acotado por tau, y ese maximo se registra por tensor en el archivo `manifest.json`. Frente a la cuantizacion tradicional evaluada por medias (perplejidad o benchmarks), este enfoque controla el peor caso, que es el que puede provocar fallos puntuales como palabras erroneas o caracteres de otro idioma en medio de una respuesta.
 
-La relevancia de este paquete concreto reside en su enfoque de compresión: frente a cuantizaciones habituales que no garantizan el error por peso, QVB8R registra el error máximo por tensor en `manifest.json` y asegura que ninguno supera tau. El resultado ocupa 35,5 GiB en disco con una media de 4,70 bits por peso en los 642 tensores comprimidos, lo que facilita el despliegue del modelo de 65B en infraestructuras más modestas sin renunciar a una cota de error verificable.
+El paquete ocupa 38,1 GB en disco, comprime 642 tensores con una media de 4,70 bits por peso y esta certificado tanto para fp16 como para bf16. La licencia es Apache 2.0. No se dispone de informacion sobre arquitectura, contexto, idiomas ni datos de entrenamiento del modelo base en la documentacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer de propósito general; detalles no publicados) |
-| Parametros totales | 65B (modelo base); el paquete safetensors declara 1.664.080 parámetros en metadatos, dato no representativo del modelo completo |
+| Arquitectura | no disponible (modelo base: ricursiveAI/Ripple-65B-Preview) |
+| Parametros totales | 1.664.080 (segun safetensors del repo); el nombre del modelo base sugiere 65B, no confirmado |
 | Parametros activos | no disponible |
-| Longitud de contexto | hasta 1M tokens (modelo base) |
-| Tipos de cuantizacion | QVB8R (QVB8 con codificación entrópica), tau = 0.002, media de 4,70 bits por peso en tensores comprimidos |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | QVB8R (QVB8 con codificacion entropica), tau = 0,002; media de 4,70 bits por peso en los 642 tensores comprimidos |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors con `custom_code`, empaquetado QVB8R; requiere el motor QVB8, no cargable directamente en `transformers` |
+| Licencia | Apache 2.0 |
+| Formato de pesos | QVB8R (safetensors como contenedor), cargable solo con el motor QVB8 v1.1.0 o superior |
 
 ## Arquitectura y entrenamiento
 
-El paquete no incluye información sobre la arquitectura interna del modelo base; la model card de Ricursive menciona únicamente que la arquitectura fue optimizada para sus plataformas de entrenamiento y servicio, sin detallar si se trata de un transformer denso, MoE o una variante híbrida. El preentrenamiento del modelo base cubre 12 billones de tokens y soporta contextos de hasta 1M tokens. No se han publicado datos sobre composición del dataset, uso de RLHF o DPO, ni innovaciones técnicas concretas más allá de la optimización arquitectónica mencionada.
+No se dispone de informacion sobre la arquitectura del modelo base Ripple-65B-Preview (transformer, MoE, hibrido u otra), ni sobre el volumen o composicion de sus datos de entrenamiento, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del paquete comprimido no documenta estos aspectos del modelo original.
 
-La innovación destacable de este paquete es el proceso de compresión QVB8R: cada matriz de pesos se empaqueta con un ancho de bits por fila y se verifica tras el empaquetado, registrando el error máximo (`max_err`) por tensor en `manifest.json`. El proceso no utiliza datos de calibración, depende solo de los pesos, y garantiza que ningún tensor supera tau = 0.002 respecto al valor bf16 original. Se comprimen 642 tensores con una media de 4,70 bits por peso. El autor respalda el método con dos artículos sobre compresión con cota L∞ certificada.
+Lo que si esta documentado es el proceso de compresion. Cada matriz de pesos se empaqueta con un ancho de bits por fila y se verifica despues del empaquetado: el error maximo entre el valor restaurado y el peso original en bf16 se registra por tensor en `manifest.json` (`max_err`) y ningun tensor supera tau = 0,002. El empaquetado no utiliza datos de calibracion; depende unicamente de los pesos. La descompresion se realiza en la GPU dentro de los kernels CUDA del motor QVB8, lo que permite ejecutar el modelo en hardware mas pequeno que el que exigiria el modelo en bf16. El motor v1.1.0 anade soporte multi-GPU en una misma maquina (`--pipeline cuda:0,cuda:1`), un worker remoto para varias maquinas, offload de la cache KV a RAM del sistema (`--kv-window` / `--kv-host`) y kernels CUDA precompilados para DGX Spark (sm_121a) y V100 (sm_70).
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general, heredada del modelo base Ripple-65B-Preview.
-- Procesamiento de contextos muy largos, de hasta 1M tokens según las especificaciones del modelo base.
-- Uso orientado a razonamiento técnico y diseño de chips, según el posicionamiento de Ricursive para el modelo original.
-- Compresión con error certificado: cada peso restaurado queda dentro de tau del original, lo que permite auditar la fidelidad del paquete tensor a tensor.
-- Soporte de decodificación con drafter: el motor QVB8 acepta un paquete `MODEL` y un paquete `DRAFT`, lo que sugiere decodificación especulativa.
-- Tool calling, function calling, capacidades de agente, multilingüismo, visión o audio: no disponible en la información proporcionada.
+- Generacion de texto y conversacion: el pipeline declarado es `text-generation` y las etiquetas incluyen `conversational`.
+- Decodificacion especulativa: existe un modelo draft DFlash2 (packs separados de 4,1 GB en qvb8 y 3,4 GB en qvb8r) que se pasa como `DRAFT` junto al pack objetivo como `MODEL`, lo que indica soporte de decodificacion especulativa en el motor.
+- Compresion certificada: cada peso restaurado tiene un error acotado por tau, verificable mediante `manifest.json`.
+- Compatibilidad fp16 y bf16: el pack esta certificado para ambos formatos (`restore: fp16+bf16`), con una lista de escapes (`escape_tables.json`) para pesos que requieren tratamiento especial.
+- Capacidades de razonamiento, codigo, matematicas, vision, tool calling, agentes o multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue de un modelo de 65B en hardware con menos memoria: el paquete ocupa 35,5 GiB en disco frente al peso bf16 del modelo original, lo que permite servirlo en GPUs de 48 GB o en configuraciones multi-GPU más ajustadas, usando el motor QVB8.
-- Procesamiento de documentos extensos: con hasta 1M tokens de contexto en el modelo base, es adecuado para analizar bases de código completas, expedientes largos o corpus documentales en una sola pasada.
-- Asistencia en diseño de hardware: al derivar del modelo que alimenta la plataforma de diseño de chips de Ricursive, encaja en flujos de generación y revisión de especificaciones técnicas, RTL o documentación de ingeniería.
-- Investigación sobre compresión de modelos: el paquete sirve como referencia reproducible para estudiar cuantización con cota L∞, comparando `max_err` por tensor con otras técnicas de cuantización.
-- Evaluación de motores de inferencia alternativos: permite probar el motor QVB8 y su modo con drafter en cargas de trabajo reales de generación de texto.
-- Auditoría de fidelidad de pesos: en entornos donde se exige trazabilidad del error de cuantización, el `manifest.json` permite verificar que ningún tensor excede tau antes de desplegar.
-- Generación de texto conversacional en producción: con licencia Apache-2.0 y un pipeline declarado de text-generation, puede integrarse en servicios de chat siempre que se valide el comportamiento del modelo base.
+- Despliegue de un modelo de 65B en hardware limitado: el motor QVB8 descomprime los pesos en la GPU dentro de sus kernels, de modo que un modelo que en bf16 ocuparia decenas de GB puede ejecutarse con un pack de 38,1 GB, reduciendo el requisito de VRAM frente al modelo original.
+- Servicio de generacion de texto conversacional: el pipeline `text-generation` y la etiqueta `conversational` permiten usarlo como backend de chat multi-turno a traves del servidor del motor QVB8, cuyo cliente de terminal se conecta a un servidor en ejecucion.
+- Inferencia multi-GPU en una sola maquina: con `--pipeline cuda:0,cuda:1` se reparte el modelo entre varias GPU, util para estaciones de trabajo con dos o mas aceleradores y poca VRAM por tarjeta.
+- Despliegue distribuido entre maquinas: el worker de etapa remota del motor v1.1.0 permite repartir la inferencia en varios nodos, adecuado para laboratorios con clústeres pequenos.
+- Reduccion de latencia con decodificacion especulativa: emparejar este pack objetivo con el draft DFlash2 QVB8R-5e-3 (3,4 GB) para acelerar la generacion mediante verificacion especulativa de tokens.
+- Escenarios con requisitos estrictos de fidelidad de pesos: cuando se necesita garantizar que ningun peso se desvia del original mas de un umbral conocido (tau), por ejemplo en evaluaciones reproducibles o en auditorias de cuantizacion, el `manifest.json` aporta la cota por tensor.
+- Ejecucion en DGX Spark o V100: el motor incluye kernels precompilados para sm_121a y sm_70, lo que permite desplegar el pack en esas plataformas sin compilar kernels.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye datos de MMLU, HumanEval, GSM8K ni perplejidad, ni comparaciones numericas con el modelo base sin cuantizar.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el paquete ocupa 35,5 GiB en disco; se requiere al menos esa cantidad de memoria para cargar los pesos comprimidos, más overhead del motor QVB8 para caché KV y activaciones.
-- La caché KV para contextos de hasta 1M tokens puede dominar el consumo de memoria; no se dispone de cifras concretas de VRAM para ese escenario.
-- GPU recomendadas: no disponible. Por tamaño, encaja en GPUs de 48 GB (A6000, L40S) o en configuraciones multi-GPU de 24 GB (RTX 4090, A5000); no se confirma compatibilidad ni rendimiento en ninguna de ellas.
-- No cabe en GPUs de consumo de 8-16 GB en su totalidad; requeriría particionado u offload, no documentado.
-- Opciones de despliegue: exclusivamente el motor QVB8 (https://github.com/addiesam/qvb8). No es compatible con vLLM, llama.cpp, Ollama ni TGI según la model card.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma explicita. El pack ocupa 38,1 GB en disco; el motor descomprime los pesos en la GPU, por lo que el requisito de VRAM depende de la implementacion del motor y del offload de cache KV, no solo del tamano del pack.
+- Offload de cache KV: el motor v1.1.0 permite volcar la cache KV a RAM del sistema (`--kv-window` / `--kv-host`), lo que reduce la VRAM necesaria a costa de memoria host y latencia.
+- Multi-GPU: soportado en una misma maquina mediante `--pipeline cuda:0,cuda:1`; tambien soporta un worker de etapa remota para varias maquinas.
+- GPU con kernels precompilados: DGX Spark (sm_121a) y V100 (sm_70) incluyen kernels CUDA empaquetados en el motor v1.1.0.
+- GPU consumer: no disponible; no se documenta si el pack cabe en tarjetas consumer como la RTX 4090.
+- Opciones de despliegue: exclusivamente el motor QVB8 v1.1.0 o superior (https://github.com/addiesam/qvb8). No es compatible con vLLM, llama.cpp, Ollama, TGI ni `transformers`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Despliegue |
+| Modelo | Parametros | Contexto | Formato | Licencia | Motor |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-QVB8R-2e-3 | 65B (base) | 1M (base) | QVB8R, 35,5 GiB | Apache-2.0 | Motor QVB8 |
-| ricursiveAI/Ripple-65B-Preview | 65B | 1M | bf16 | Apache-2.0 | `transformers` y ecosistema estándar |
-| Otras cuantizaciones del mismo modelo base | 65B | 1M | no disponible | Apache-2.0 | no disponible |
+| Ripple-65B-Preview-QVB8R-2e-3 (este pack) | 1.664.080 segun safetensors; nombre sugiere 65B | no disponible | QVB8R, tau 0,002, 38,1 GB | Apache 2.0 | Solo QVB8 v1.1.0+ |
+| Ripple-65B-Preview-QVB8R-1e-3 | idem | no disponible | QVB8R, tau 0,001, 47 GB | Apache 2.0 | Solo QVB8 v1.1.0+ |
+| Ripple-65B-Preview-QVB8R-2.5e-3 | idem | no disponible | QVB8R, tau 0,0025, 35,5 GB | Apache 2.0 | Solo QVB8 v1.1.0+ |
+| Ripple-65B-Preview (bf16, original) | no disponible | no disponible | bf16 | no disponible | `transformers` y otros motores estandar |
 
-No se dispone de datos de rendimiento del modelo base ni de alternativas comparables en la información proporcionada, por lo que la comparación se limita a formato, tamaño y vía de despliegue.
+La comparacion con modelos de otras familias (Llama, Qwen, Mistral, etc.) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El paquete no es cargable con `transformers`; depende del motor QVB8, lo que limita la integración con herramientas estándar y añade un punto único de dependencia.
-- El error de cuantización está acotado por tensor (tau = 0.002), pero no se documenta el impacto agregado de esos errores en la calidad de generación.
-- La media de 4,70 bits por peso implica una compresión agresiva; conviene validar la calidad frente al modelo bf16 en las tareas objetivo.
-- El número de parámetros declarado en los metadatos safetensors (1.664.080) no coincide con el tamaño del modelo base (65B); hay que tratarlo con cautela al planificar recursos.
-- No se especifican idiomas soportados, sesgos conocidos ni tasas de alucinación del modelo base.
-- La licencia Apache-2.0 se hereda del modelo base y del motor, pero el autor no ofrece garantía alguna; revisar el disclaimer del README del motor antes de usarlo en producción.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia comunitaria de funcionamiento en distintos entornos.
-- La fecha de creación del repositorio (2026-11-07) y la falta de documentación independiente sobre el modelo base limitan la verificación externa de las afirmaciones de la model card.
+- Dependencia total del motor QVB8: el pack no carga en `transformers` ni en otros motores; sin el motor propietario (v1.1.0 o superior) los pesos son inutilizables.
+- La cota L-infinito cubre solo los pesos almacenados: no garantiza que las respuestas del modelo sean identicas a las del original ni correctas. Incluso con pesos fp16 sin cuantizar, distintos motores, tamanos de lote u orden de operaciones en coma flotante producen salidas ligeramente distintas por la no asociatividad de la aritmetica GPU.
+- Compromiso tau-tamano: tau mayor implica archivo mas pequeno y mayor perplejidad; tau menor implica archivo mayor y perplejidad mas cercana al original. Este pack (tau 0,002) es un punto intermedio de la familia.
+- Discrepancia en el recuento de parametros: el campo de safetensors indica 1.664.080 parametros, incompatible con el nombre "65B" del modelo base; conviene verificar el modelo original antes de planificar el despliegue.
+- Sin datos de sesgo, alucinacion ni idiomas: no se documentan sesgos conocidos, tasas de alucinacion ni cobertura linguistica.
+- Licencia Apache 2.0 en el pack: permite uso comercial del paquete, pero la licencia del modelo base (ricursiveAI/Ripple-65B-Preview) debe verificarse por separado.
+- Modelo "Preview": la denominacion sugiere un estado no final del modelo base; no se documenta su estabilidad.
+- Fecha de creacion futura en los metadatos (2026-11-07): conviene tratar las fechas del repo con cautela.
 
 ## Enlaces
 
-- Paquete en Hugging Face: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8R-2e-3
-- Modelo base en Hugging Face: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- Página del modelo base en Ricursive: https://www.ricursive.com/ripple
-- Motor de inferencia QVB8: https://github.com/addiesam/qvb8
-- Paper I (DOI): https://doi.org/10.5281/zenodo.23815007
-- Paper II (DOI): https://doi.org/10.5281/zenodo.23816044
+- Pack en Hugging Face: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8R-2e-3
+- Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Motor QVB8: https://github.com/addiesam/qvb8
+- Release del motor v1.1.0: https://github.com/addiesam/qvb8/releases/tag/v1.1.0
+- Pack QVB8R tau 1e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8R-1e-3
+- Pack QVB8 tau 1e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8-1e-3
+- Pack QVB8 tau 2e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8-2e-3
+- Pack QVB8 tau 2.5e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8-2.5e-3
+- Pack QVB8R tau 2.5e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8R-2.5e-3
+- Draft DFlash2 QVB8 tau 5e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-DFlash2-QVB8-5e-3
+- Draft DFlash2 QVB8R tau 5e-3: https://huggingface.co/addiesam/Ripple-65B-Preview-DFlash2-QVB8R-5e-3

@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1014,
+  "downloads_30d": 1024,
   "trending_score": 0,
   "parameters": 1192098816,
   "parameters_human": "1.19B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1 · Hugging Face",
-      "url": "https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1",
-      "snippet": "🧠 Qwen3Loop-.6B-Instruct (SFT Deep Supervision v1) Qwen3Loop-.6B-Instruct (v1) é um Modelo de Linguagem Recursivo ultra-compacto de 596M de parâmetros físicos, capaz de executar 56 passagens virtuais através de uma arquitetura de loop inspirada no paradigma de raciocínio profundo do Nanbeige 4.5. O modelo foi treinado com Supervised Fine-Tuning (SFT) e Deep Supervision Intermediária ..."
-    },
-    {
-      "title": "Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1 at main",
-      "url": "https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1/tree/main",
-      "snippet": "Instructions to use Lordnyx/qwen3loop-.6b-sft-deep-supervision-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Lordnyx/qwen3loop-.6b-sft-deep-supervision-v1 with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "Qwen3loop 0.6b Sft Deep Supervision V1 - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1",
-      "snippet": "Registry entry for model Qwen3loop 0.6b Sft Deep Supervision V1; source metadata pending."
-    },
-    {
-      "title": "Fine-Tune a Tool-Calling LLM with Qwen3-0.6B and LoRA: Full…",
-      "url": "https://lumienai.com/news/fine-tune-tool-calling-llm-qwen3-lora-xyz-aquila-sft",
-      "snippet": "A new tutorial from Marktechpost walks through a complete supervised fine-tuning (SFT) pipeline that teaches Qwen3-0.6B, a compact open-weight language model, to make structured tool calls. The pipeline uses the XYZ-Aquila-SFT dataset, Hugging Face Transformers, PEFT (Parameter-Efficient Fine-Tuning), and PyTorch. Key parameters include LoRA rank 16, a 1e-4 learning rate, 30 training steps ..."
-    },
-    {
-      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
-      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
-      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
-    }
-  ]
+  "sources": []
 }

@@ -98,16 +98,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/models",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "LFM3-Omni-2B - Liquid AI Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
-      "snippet": "2B omni model that understands text, images, video, and audio, and answers in text, speech, or both ← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech."
-    }
-  ]
+  "sources": []
 }

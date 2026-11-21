@@ -2,101 +2,106 @@
 
 ## Resumen
 
-GLM-4.6V-Flash-Text-GGUF es una cuantización GGUF del decodificador de texto del modelo multimodal GLM-4.6V-Flash, desarrollado originalmente por el equipo GLM de Z.ai (zai-org). El modelo base pertenece a la familia GLM-V, una serie de modelos multimodales orientados a razonamiento versátil mediante aprendizaje por refuerzo escalable. Esta versión concreta, publicada por Xylolabs, elimina el codificador de visión y el proyector multimodal, conservando únicamente la torre de texto, y la empaqueta en formato GGUF para su uso con llama.cpp.
+GLM-4.6V-Flash-Text-GGUF es una cuantizacion en formato GGUF del modelo zai-org/GLM-4.6V-Flash, publicada por Xylolabs para su uso con llama.cpp sobre CUDA, Metal o CPU. El modelo base pertenece a la familia GLM-V de Zhipu AI (Z.ai), orientada al razonamiento multimodal, y esta cuantizacion elimina la torre de vision para conservar unicamente el modelo de lenguaje, de ahi el sufijo "Text" en el nombre. El resultado es un modelo de ~9.400 millones de parametros en un unico fichero de 5,26 GB que puede ejecutarse en hardware de consumo.
 
-El modelo cuenta con 9.400.279.040 parámetros totales (aproximadamente 9,4 mil millones), organizados en 40 capas de decodificador de texto, más embeddings y cabeza de salida. La cuantización publicada es IQ4_XS con importance matrix, con un tamaño de descarga de 5,262 GB y un promedio de 4,470 bits por peso. El repositorio ocupa 5,3 GB en total.
+La relevancia de esta publicacion es practica: ofrece una ruta de despliegue local y ligera de un modelo de la familia GLM-4.6V, con una unica cuantizacion documentada (IQ4_XS con importance matrix) y con metricas de degradacion medidas frente al pase BF16 de referencia. El autor reporta una divergencia KL media de 0,0292 y una coincidencia top-1 del 91,79% sobre 16.248 posiciones de texto en ingles y coreano.
 
-La relevancia de esta ficha radica en que permite ejecutar localmente, en hardware de consumo, un modelo de la familia GLM-4.6V en su faceta puramente textual, sin necesidad de infraestructura para visión. La licencia es MIT, lo que facilita su adopción comercial. No obstante, se trata de un derivado de cuantización sin nuevos datos de entrenamiento ni calibración, y su evaluación se limita a comprobaciones de referencia relativas frente al modelo original en BF16.
+La licencia es MIT, lo que facilita el uso comercial, aunque el modelo base procede de un proyecto de terceros con el que Xylolabs declara no tener afiliacion. La informacion publicada no detalla la longitud de contexto nativa del modelo base ni sus datos de entrenamiento, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (torre de texto de un modelo multimodal GLM-4.6V-Flash); 40 capas de decodificador |
-| Parametros totales | 9.400.279.040 (aproximadamente 9,4 B) |
+| Arquitectura | Transformer (familia GLM-4.6V, variante solo texto); detalles internos no disponibles |
+| Parametros totales | 9.400.279.040 (~9,4 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (la metadatos originales se conservan sin cambios; el ejemplo de la model card limita a 2.048 tokens) |
-| Tipos de cuantizacion | IQ4_XS con importance matrix; tipos mixtos: F32 (281 tensores), IQ4_NL (40), IQ4_XS (161), Q5_K (40), Q6_K (1) |
-| Idiomas soportados | ingles (en), coreano (ko) |
+| Longitud de contexto | no disponible en la informacion publicada; el ejemplo de ejecucion usa `-c 8192` |
+| Tipos de cuantizacion | IQ4_XS con importance matrix (`-imat`); unica variante publicada |
+| Idiomas soportados | ingles (en) y coreano (ko) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (un fichero por cuantizacion, con tokenizer y chat template incluidos) |
+| Tamano del fichero | 5,26 GB (IQ4_XS-imat) |
+| Tamano del repo | 5,3 GB |
+| Modelo base | zai-org/GLM-4.6V-Flash |
+| Libreria / runtime | llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior) |
+| Descargas | 941 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-4.6V-Flash es un modelo multimodal de la familia GLM-V, que combina un codificador de visión con un decodificador de lenguaje y se entrena con aprendizaje por refuerzo escalable para razonamiento versátil, según el paper de la familia (arXiv:2507.01006). Esta exportación concreta conserva únicamente la torre de texto: 523 tensores correspondientes a las 40 capas del decodificador, el embedding, la cabeza de salida, el tokenizador y la plantilla de chat original. No incluye pesos del codificador de imagen ni del proyector.
+La informacion disponible no describe la arquitectura interna del modelo base mas alla de su pertenencia a la familia GLM-4.6V, documentada en el paper GLM-V (arXiv:2507.01006), que cubre GLM-4.5V y GLM-4.1V-Thinking y su enfoque de razonamiento multimodal con aprendizaje por refuerzo escalable. Esta cuantizacion concreta conserva unicamente el modelo de lenguaje: la model card indica que cada fichero contiene "the full language model plus the original tokenizer and chat template", sin mencionar pesos de vision.
 
-La conversión y cuantización fue realizada por Xylolabs con llama.cpp, reutilizando una importance matrix existente. La model card indica explícitamente que no se realizó entrenamiento, calibración ni cuantización nuevos para la publicación; los nombres de fichero de calibración históricos son etiquetas de metadatos y no se incluye ningún dataset. La cuantización IQ4_XS emplea tipos mixtos (IQ4_NL, IQ4_XS, Q5_K, Q6_K y F32) para preservar la precisión en tensores sensibles. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni las etapas de alineacion (RLHF, DPO) del modelo base. La unica informacion tecnica propia de esta publicacion es el proceso de cuantizacion: conversion de pesos a GGUF y cuantizacion a IQ4_XS empleando una importance matrix, con evaluacion de la degradacion frente al pase BF16 en transformers sobre 16.248 posiciones de texto en ingles y coreano.
 
 ## Capacidades
 
-- Generación de texto conversacional y de un solo turno, con soporte de plantilla de chat original (formato jinja).
-- Razonamiento textual: la model card menciona elementos de razonamiento recuperables activando el modo thinking (`enable_thinking`).
-- Capacidad multilingüe limitada a inglés y coreano según los metadatos del autor.
-- Conversión compatible con endpoints y con llama.cpp (tag `endpoints_compatible`).
-- Capacidad de visión: no disponible en esta exportación (el codificador de imagen y el proyector se han omitido deliberadamente).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de audio: no disponible.
+- Generacion de texto conversacional en ingles y coreano.
+- Razonamiento de un solo turno y multiturno mediante el chat template original del modelo base.
+- Hereda del modelo base su orientacion al razonamiento, aunque la model card no documenta capacidades especificas verificadas para esta variante.
+- No incluye vision: la torre multimodal del modelo base no forma parte de esta cuantizacion.
+- Soporte de tool calling y function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
+- Capacidades multilingues limitadas a los idiomas declarados (en, ko); el resto no esta garantizado.
 
 ## Casos de uso
 
-- Asistente conversacional local en inglés o coreano: el modelo puede gestionar diálogos de un solo turno o multi-turno con la plantilla de chat original, ejecutándose en llama.cpp con un consumo de pesos de aproximadamente 5,25 GB, adecuado para equipos de consumo con GPU de 8 GB o más.
-- Generación de texto en pipelines de CI/CD o herramientas de línea de comandos: al ser un GGUF compatible con llama.cpp, puede integrarse en scripts y flujos automatizados para tareas de redacción, resumen o transformación de texto sin depender de servicios en la nube.
-- Prototipado de aplicaciones de razonamiento textual: el modo thinking permite activar cadenas de razonamiento para tareas que requieren pasos intermedios, útil en entornos de investigación que necesitan un modelo local de aproximadamente 9,4 B parámetros.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente y con licencia MIT, es apto para procesar texto sensible sin enviar datos a terceros.
-- Evaluación y comparación de cuantizaciones: sirve como referencia para estudiar el impacto de IQ4_XS con importance matrix frente a Q4_K_M en un modelo de la familia GLM, con métricas KL documentadas.
-- Filtrado y clasificación de texto en inglés y coreano: puede emplearse para tareas de etiquetado o moderación de contenido en esos dos idiomas, aunque sin garantías de rendimiento fuera de ellos.
-- Base para experimentos de destilación o ajuste fino ligero sobre la torre de texto, dado que los pesos están en GGUF y la licencia MIT lo permite.
+- Despliegue local de un asistente conversacional en ingles o coreano: con 5,26 GB en IQ4_XS, el modelo cabe en GPUs de consumo y permite ejecutar `llama-server` como backend compatible con la API de OpenAI para prototipos y uso personal.
+- Traduccion y atencion al cliente en coreano: el modelo declara soporte nativo de coreano, lo que lo hace util para clasificacion de consultas, resumenes y respuestas en ese idioma sin depender de servicios en la nube.
+- Generacion de texto en entornos con requisitos de privacidad: al ejecutarse integramente en local con llama.cpp, los datos no salen de la infraestructura propia, lo que encaja en sectores con restricciones de tratamiento de datos.
+- Procesamiento por lotes en CPU: la cuantizacion IQ4_XS esta pensada para inferencia en CPU ademas de CUDA y Metal, lo que permite trabajos de generacion masiva sin GPU dedicada.
+- Evaluacion comparativa de cuantizaciones: las metricas KL y top-1 publicadas frente a BF16 permiten usar este modelo como referencia para estudiar el impacto de la cuantizacion en modelos de ~9B.
+- Base para fine-tuning ligero o experimentacion: la licencia MIT y el formato GGUF facilitan su integracion en pipelines de investigacion sobre modelos de razonamiento de tamano medio.
+- Integracion en herramientas de escritorio: al ser un unico fichero compatible con llama.cpp, puede incorporarse en aplicaciones de escritorio o plugins que ya usan ese runtime.
 
 ## Benchmarks y rendimiento
 
-La model card no presenta resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). En su lugar, documenta una evaluación de referencia relativa frente al modelo original en BF16 y frente a una cuantización Q4_K_M:
+La model card solo publica metricas de fidelidad de la cuantizacion frente al pase BF16 de referencia, no resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros).
 
-| Metrica | BF16 (original) | Q4_K_M | IQ4_XS (este fichero) |
-|---|---|---|---|
-| Respuestas correctas (conjunto 33) | 26/33 | 27/33 | 25/33 |
-| Respuestas correctas (conjunto 7) | 6/7 | 7/7 | 7/7 |
-| Perdidas contadas | no disponible | 0 | 1 (`ko-fact-hangul`) |
-| KL media frente a BF16 | referencia | 0,024092 | 0,029230 (1,213x) |
+| Metrica | Valor |
+|---|---|
+| Cuantizacion evaluada | IQ4_XS-imat |
+| Tamano | 5,26 GB |
+| KL media vs BF16 | 0,0292 |
+| Coincidencia top-1 vs BF16 | 91,79% |
+| Corpus de evaluacion | 16.248 posiciones de texto en ingles y coreano |
 
-La evaluación cubre 16 secuencias emparejadas de 1.024 tokens (16.248 posiciones puntuadas) en grupos de inglés y coreano, texto plano y chat, con contexto de 8.192 tokens. La comprobación estricta de cero pérdidas falla; la comprobación relativa permite una pérdida contada más que Q4_K_M. No se reportan datos de velocidad ni de throughput.
+No se han publicado resultados de benchmarks de capacidad en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 5,25 GB solo para los pesos del decodificador de texto en IQ4_XS, más espacio para la caché KV y buffers de trabajo.
-- GPU recomendadas: no especificadas por el autor; por tamaño, cabe en GPU de consumo con 8 GB o más (por ejemplo, RTX 3060 Ti, RTX 4060 Ti, RTX 3070) y en GPU profesionales como A100 o H100 sin problema.
-- Cabe en GPU de consumo: sí, en modelos con al menos 8 GB de VRAM, dejando margen para la caché KV según la longitud de contexto.
-- Opciones de despliegue: llama.cpp (verificado con v0.9.0 según la model card); otras herramientas compatibles con GGUF no están confirmadas en la información disponible.
-- Latencia y throughput: no disponibles; la model card indica explícitamente que no se reporta velocidad.
+- VRAM estimada para inferencia: aproximadamente 5,5-6 GB con la cuantizacion IQ4_XS (5,26 GB de pesos mas overhead de contexto KV); con contexto de 8.192 tokens el consumo adicional de KV cache debe sumarse segun la configuracion de llama.cpp.
+- GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para contexto moderado; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, A100 y H100 funcionan con holgura. En GPUs de 6 GB puede requerir reducir contexto u offload parcial a CPU.
+- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM; tambien puede ejecutarse total o parcialmente en CPU.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`) con el commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior; el autor no menciona soporte verificado en Ollama, vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion publicada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| GLM-4.6V-Flash-Text-GGUF (este) | 9,4 B | no disponible | MIT | GGUF IQ4_XS | Solo texto; sin codificador de visión |
-| GLM-4.6V-Flash (base) | no disponible | no disponible | MIT | safetensors (presumible) | Multimodal completo (visión + texto) |
-| Q4_K_M del mismo modelo | 9,4 B | no disponible | MIT | GGUF Q4_K_M | Referencia de cuantización en la evaluación del autor; KL 0,024092 |
+No se dispone de datos de benchmarks del modelo base ni de esta cuantizacion que permitan una comparacion cuantitativa fiable. A continuacion se comparan solo caracteristicas verificables de formato y licencia con alternativas de tamano similar en el ecosistema GGUF.
 
-No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| GLM-4.6V-Flash-Text-GGUF (esta ficha) | ~9,4B | no disponible (ejemplo a 8192) | GGUF IQ4_XS-imat | MIT | Solo texto; en y ko |
+| zai-org/GLM-4.6V-Flash (modelo base) | no disponible | no disponible | safetensors (pesos originales) | no disponible en esta informacion | Multimodal completo |
+| Alternativas GGUF de ~7-9B (p. ej. familias Llama, Qwen, Mistral) | ~7-9B | variable segun modelo | GGUF | variable segun modelo | Comparacion de rendimiento no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo es solo texto: el codificador de visión y el proyector se han eliminado, por lo que no puede procesar imágenes a pesar de provenir de un modelo multimodal.
-- Idiomas limitados a inglés y coreano según los metadatos; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
-- La evaluación es de referencia relativa y de alcance reducido (16 secuencias, 33+7 elementos); no sustituye una evaluación de tareas real. La model card advierte que una integración necesita su propia evaluación de tareas.
-- Pérdida contada en `ko-fact-hangul`: la comprobación estricta de cero pérdidas falla, aunque la comprobación relativa la permite.
-- Riesgo de alucinación: no cuantificado en la información disponible; aplicable como en cualquier modelo generativo de este tamaño.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Licencia MIT permite uso comercial, pero la model card se ofrece "as is", sin garantía ni respaldo del autor original (Z.ai); el fichero NOTICE identifica el origen GLM Team / Z.ai y la conversión de Xylolabs.
-- No se realizó calibración ni cuantización nueva para esta publicación; los nombres de calibración son etiquetas de metadatos y no se incluye dataset.
-- Longitud de contexto original no especificada; el ejemplo de la model card usa 2.048 tokens y la evaluación usa 8.192, pero no se confirma el máximo soportado.
+- La cuantizacion IQ4_XS introduce degradacion medible: 91,79% de coincidencia top-1 y KL media de 0,0292 frente a BF16, evaluado solo sobre texto en ingles y coreano.
+- No incluye capacidades de vision pese a derivar de un modelo multimodal; cualquier caso de uso con imagenes queda fuera del alcance de esta variante.
+- Idiomas declarados limitados a ingles y coreano; el rendimiento en castellano no esta documentado ni garantizado.
+- La longitud de contexto nativa no se especifica; el ejemplo del autor usa 8.192 tokens, y valores superiores no estan validados en la model card.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se publican evaluaciones de fidelidad factual para esta cuantizacion.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- La licencia MIT se aplica a esta conversion, pero el modelo base pertenece a un tercero (Zhipu AI / Z.ai); conviene revisar los terminos del modelo original antes de un uso comercial en produccion.
+- Xylolabs declara no estar afiliada ni respaldada por los autores del modelo original.
+- Requiere un commit concreto o posterior de llama.cpp; versiones antiguas pueden no cargar el modelo correctamente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Xylolabs/GLM-4.6V-Flash-Text-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Xylolabs/GLM-4.6V-Flash-Text-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
-- Paper de la familia GLM-V: https://arxiv.org/abs/2507.01006
-- Documentación de llama.cpp para GGUF: https://huggingface.co/docs/hub/gguf-llamacpp
-- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Licencia MIT del repositorio: https://huggingface.co/Xylolabs/GLM-4.6V-Flash-Text-GGUF/blob/main/LICENSE
+- Paper GLM-V (arXiv:2507.01006): https://arxiv.org/abs/2507.01006
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Commit recomendado de llama.cpp: https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
 - Repositorio de herramientas de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Licencia del modelo: https://huggingface.co/Xylolabs/GLM-4.6V-Flash-Text-GGUF/blob/main/LICENSE

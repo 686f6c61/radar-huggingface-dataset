@@ -44,11 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
-      "url": "https://huggingface.co/litert-community",
-      "snippet": "We recommend first trying our models in our Google AI Edge Gallery app on Android and iOS. Community's Picks of the Week. EmbeddingGemma v2 ( Embedding ): ..."
-    }
-  ]
+  "sources": []
 }

@@ -2,50 +2,50 @@
 
 ## Resumen
 
-HiveCoder3-GGUF es una conversión a formato GGUF del modelo HiveCoder3, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estáticas de modelos open source para su uso con llama.cpp y herramientas compatibles. El modelo original lo desarrolla theailearner, y esta ficha describe únicamente la versión cuantizada, ya que el repositorio no incluye la model card completa del modelo base.
+HiveCoder3-GGUF es la distribucion en formato GGUF del modelo HiveCoder3, desarrollado por The AI Learner (repositorio base `theailearner/HiveCoder3`) y cuantizado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 27.320 millones de parametros (27,3B) orientado a tareas de codigo y flujos agenticos, construido sobre la arquitectura de la familia Qwen3 segun las etiquetas del autor. La version GGUF permite ejecutar el modelo en hardware de consumo y en entornos con llama.cpp, ampliando su accesibilidad mas alla de la inferencia en GPU de datacenter.
 
-El modelo cuenta con 27.320.697.856 parámetros (aproximadamente 27,3 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande, adecuados para despliegues en GPU de gama alta o servidores con múltiples aceleradores. El repositorio ocupa 28,2 GB e incluye un conjunto amplio de cuantizaciones estáticas (desde Q2_K hasta F16), lo que facilita elegir el equilibrio entre calidad y requisitos de memoria.
+El modelo se distribuye con las etiquetas `abliterated` y `uncensored`, lo que indica que se ha aplicado una tecnica de ablacion de direcciones de rechazo para eliminar los comportamientos de negativa del modelo alineado original. Esto lo hace adecuado para entornos de investigacion y para aplicaciones donde se requiere un control estricto del comportamiento sin rechazos por defecto, pero implica riesgos adicionales de seguridad y sesgo que deben gestionarse en produccion. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-La relevancia de esta publicación radica en que permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp, Ollama o servidores compatibles con la API de endpoints de Hugging Face. No obstante, la información pública disponible sobre el modelo original (arquitectura, datos de entrenamiento, benchmarks, licencia) es muy escasa en el repositorio, por lo que muchos campos de esta ficha se marcan como no disponibles.
+La relevancia actual del modelo radica en su combinacion de tamano moderado (27B), vocacion de codigo y agentes, y disponibilidad en cuantizaciones que van desde 11 GB (Q2_K) hasta 29,1 GB (Q8_0), lo que permite desplegarlo desde estaciones de trabajo con una sola GPU consumer hasta servidores con multiples aceleradores. El repositorio incluye ademas un proyector multimodal (`mmproj`) que sugiere capacidades de vision, aunque la informacion disponible no detalla su alcance.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27.320.697.856 (aproximadamente 27,3 B) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer (familia Qwen3, segun etiquetas del autor) |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas con llama.cpp) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en (ingles; no se detallan otros) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública en el repositorio sobre la arquitectura del modelo base HiveCoder3 (si es un transformer denso, un modelo de mezcla de expertos, híbrido o de otro tipo), ni sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de alineación como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del autor, que identifican el modelo como perteneciente a la familia Qwen3. Se trata por tanto de un transformer decoder-only de 27,3B parametros, sin indicios de que sea un modelo de mezcla de expertos (MoE), dado que no se declaran parametros activos distintos de los totales. El modelo base es `theailearner/HiveCoder3`, y esta version es una cuantizacion estatica realizada por mradermacher con `convert_type: hf` y `output_tensor_quantised: 1`.
 
-Lo único verificable es que se trata de una conversión a GGUF realizada por mradermacher a partir de los pesos originales en formato Hugging Face (el campo `convert_type` de los metadatos indica `hf`), con cuantización estática de los tensores de salida (`output_tensor_quantised: 1`). El nombre del modelo sugiere una especialización en generación de código, pero no hay documentación que lo confirme en la información disponible.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o RL para codigo. La etiqueta `abliterated` indica que se ha aplicado una ablacion de la direccion de rechazo en el espacio de activaciones, una tecnica que modifica los pesos para eliminar el comportamiento de negativa aprendido durante el alineamiento. La presencia de un proyector multimodal (`mmproj`) en el repositorio sugiere que el modelo base incorpora o soporta entrada de imagenes, aunque no se especifica el mecanismo ni los datos de entrenamiento multimodal.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está pensado para diálogo multi-turno.
-- Generación de código: el nombre "HiveCoder" sugiere capacidades de programación, aunque no se documenta el alcance ni los lenguajes soportados.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto y codigo en ingles, con orientacion a tareas de programacion segun la nomenclatura del modelo (HiveCoder).
+- Comportamiento `uncensored` y `abliterated`: el modelo no aplica los rechazos tipicos del alineamiento original, lo que permite generar contenido que el modelo base rechazaria.
+- Soporte multimodal potencial: el repositorio incluye proyectores `mmproj-Q8_0` y `mmproj-f16`, lo que indica capacidad de procesar imagenes junto con texto, aunque no se detalla su alcance.
+- Orientacion agentica: las etiquetas `agenticbees` y `hivecoder` sugieren un entrenamiento orientado a flujos de agentes y uso de herramientas, aunque no se confirma explicitamente el soporte de tool calling.
+- Conversacional: el pipeline declarado es `conversational`, lo que indica formato de chat multi-turno.
+- Capacidades multilingues: solo se declara ingles (`en`); no hay evidencia de soporte de otros idiomas.
+- Modo de razonamiento extendido: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local: al estar disponible en GGUF, puede ejecutarse con llama.cpp u Ollama en una estación de trabajo con GPU de gama alta, ofreciendo autocompletado y explicación de código sin enviar datos a servicios externos.
-- Despliegue en servidores compatibles con la API de endpoints de Hugging Face: la etiqueta `endpoints_compatible` permite servirlo como API HTTP para integrarlo en aplicaciones existentes.
-- Prototipado de chatbots conversacionales: la naturaleza conversacional del modelo permite construir asistentes multi-turno para pruebas internas antes de escalar a un modelo mayor.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye doce variantes (desde Q2_K hasta F16), lo que permite medir la degradación de calidad frente al ahorro de memoria en un caso de uso concreto.
-- Generación de documentación técnica: un modelo de 27 B puede redactar y resumir documentación de proyectos, siempre que se valide la salida por el riesgo de alucinación.
-- Investigación sobre eficiencia de inferencia: útil para estudiar el rendimiento de distintas cuantizaciones estáticas en hardware consumer y profesional.
-- Fine-tuning posterior: los pesos en GGUF no son adecuados para reentrenamiento; para ello habría que partir del modelo original en safetensors.
+- Generacion de codigo en produccion: el modelo puede integrarse en pipelines de CI/CD para autocompletar, refactorizar o generar tests, con la ventaja de su tamano de 27B que permite ejecutarlo en una sola GPU con cuantizacion Q4_K_M (16,9 GB) y obtener latencias aceptables para tareas por lotes.
+- Asistente de programacion local y privado: al distribuirse en GGUF y con licencia Apache 2.0, puede desplegarse en estaciones de trabajo sin conexion a internet, lo que resulta adecuado para entornos con requisitos de confidencialidad del codigo.
+- Investigacion sobre alineamiento y seguridad: al ser un modelo `abliterated`, sirve como objeto de estudio para analizar como la ablacion afecta a la utilidad, el sesgo y la tasa de rechazo en comparacion con el modelo alineado original.
+- Agentes autonomos de codigo: las etiquetas `agenticbees` sugieren un uso previsto en sistemas multiagente; el modelo puede emplearse como generador de planes y acciones en bucles de razonamiento multi-paso, siempre que se valide externamente el soporte de tool calling.
+- Procesamiento de documentacion tecnica con imagenes: gracias a los proyectores multimodales incluidos, puede emplearse para extraer informacion de diagramas, capturas de pantalla o documentacion escaneada y generar codigo o explicaciones a partir de ellas.
+- Generacion de contenido sin restricciones para investigacion creativa: en entornos controlados, el caracter `uncensored` permite explorar generacion de texto tecnico sin los rechazos del alineamiento, util para estudiar sesgos o para tareas de redaccion tecnica que el modelo base bloquearia.
+- Fine-tuning y destilacion: al estar disponible en safetensors (modelo base) y GGUF, puede servir como punto de partida para ajuste fino con LoRA en tareas de codigo especificas del dominio.
 
 ## Benchmarks y rendimiento
 
@@ -53,34 +53,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según el tamaño de los ficheros GGUF de un modelo de 27 B):
-  - F16: en torno a 54 GB (no cabe en una sola GPU consumer).
-  - Q8_0: en torno a 29 GB.
-  - Q6_K: en torno a 22 GB.
-  - Q5_K_M: en torno a 19 GB.
-  - Q4_K_M: en torno a 16-17 GB.
-  - Q3_K_M: en torno a 13 GB.
-  - Q2_K: en torno a 10-11 GB.
-- GPU recomendadas: A100 80 GB o H100 para F16 y Q8_0; RTX 4090 (24 GB) o A6000 (48 GB) para Q4_K_M y Q5_K_M; RTX 3090/4090 para cuantizaciones Q3 y Q2.
-- Cabe en GPU consumer: sí, en cuantizaciones Q2_K a Q5_K_M en tarjetas con 16-24 GB de VRAM, con margen ajustado en las variantes mayores.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de endpoints de Hugging Face y cualquier runtime que cargue GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K: ~11 GB de pesos; requiere al menos 12-14 GB de VRAM para contexto corto.
+  - Q4_K_M: ~16,9 GB de pesos; requiere ~18-20 GB de VRAM para contexto moderado.
+  - Q5_K_M: ~19,6 GB de pesos; requiere ~21-23 GB de VRAM.
+  - Q6_K: ~22,5 GB de pesos; requiere ~24-26 GB de VRAM.
+  - Q8_0: ~29,1 GB de pesos; requiere ~31-33 GB de VRAM.
+- GPU recomendadas:
+  - Q4_K_M y Q5_K_M: RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto limitado.
+  - Q6_K y Q8_0: A100 40 GB, H100 80 GB o dos GPU consumer de 24 GB.
+  - Q2_K y Q3_K: RTX 4080 (16 GB) o RTX 4070 Ti Super (16 GB) con contexto reducido.
+- Cabe en GPU consumer: si, en modelos con 16 GB o mas de VRAM usando cuantizaciones Q2_K a Q4_K_S; en 24 GB caben Q4_K_M y Q5_K_M con margen para contexto.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de endpoints (`endpoints_compatible`). Para el modelo base en safetensors, vLLM o TGI si el modelo base es compatible.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia orientativa no verificada, un modelo de 27B en Q4_K_M en una RTX 4090 suele generar del orden de 20-40 tokens/s, pero este dato no procede de la informacion facilitada y debe medirse en el hardware concreto.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente sobre el modelo base (licencia, contexto, benchmarks) para establecer una comparativa fiable con alternativas de la misma categoría. Se indica como no disponible.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| HiveCoder3-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF | Abliterated, uncensored, orientado a codigo y agentes |
+| Qwen3-32B (referencia de familia) | 32,8B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Modelo base de la familia; alineado y con benchmarks publicos |
+| Qwen2.5-Coder-32B | 32,8B | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Especializado en codigo, con benchmarks publicos de HumanEval y similares |
+
+La comparativa se ofrece a nivel de categoria y familia; no se dispone de datos de rendimiento de HiveCoder3 que permitan una comparacion cuantitativa directa con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en el repositorio, por lo que no se puede confirmar si se permite uso comercial; es imprescindible consultar la licencia del modelo original (theailearner/HiveCoder3) antes de desplegarlo en producción.
-- No hay información sobre sesgos, idiomas soportados ni calidad multilingüe.
-- Riesgo de alucinación inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad, especialmente en tareas de código y razonamiento.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
-- Los pesos GGUF no son aptos para fine-tuning; para reentrenar hay que usar el modelo original en safetensors.
+- Al ser un modelo `abliterated` y `uncensored`, carece de las salvaguardas del alineamiento original: puede generar contenido toxico, sesgado o inseguro sin filtros, lo que exige moderacion externa en cualquier despliegue de produccion.
+- Riesgo elevado de alucinacion en tareas de codigo y tecnicas, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S), donde la perdida de precision degrada la calidad.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- No se dispone de la longitud de contexto oficial, lo que impide planificar aplicaciones que dependan de ventanas largas sin una validacion empirica previa.
+- No hay benchmarks publicados en la informacion disponible, por lo que no puede confirmarse su calidad relativa frente a modelos de codigo establecidos.
+- La licencia Apache 2.0 permite uso comercial, pero el caracter uncensored traslada al integrador toda la responsabilidad legal y etica sobre el contenido generado.
+- El repositorio ocupa 190,8 GB e incluye multiples cuantizaciones y proyectores multimodales; conviene descargar solo el archivo necesario para evitar consumo innecesario de almacenamiento.
+- La fecha de creacion indicada (2026-11-07) es posterior a la fecha actual de redaccion de esta ficha y debe tratarse con cautela; verificar la procedencia y autenticidad del repositorio antes de usarlo en produccion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/HiveCoder3-GGUF
-- Modelo original: https://huggingface.co/theailearner/HiveCoder3
-- Repositorio de peticiones del cuantizador: https://huggingface.co/mradermacher/model_requests
+- Modelo base: https://huggingface.co/theailearner/HiveCoder3
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/HiveCoder3-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#HiveCoder3-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

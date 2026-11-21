@@ -2,122 +2,113 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-REAP-2bit-MLX es un artefacto experimental de solo texto publicado por el proyecto Rapid-MLX que adapta el modelo DeepSeek-V4.1-Flash de DeepSeek a un formato empaquetado nativo de MLX con cuantizacion afin de 2 bits y grupo de 64. Partiendo de la conversion de 2 bits de Vontra (DeepSeek-V4.1-Flash-MLX-2bit-MTP), este repositorio reempaqueta los expertos enrutados para permitir ejecucion por lotes nativa y aplica un pruning de saliencia de enrutamiento (REAP) que conserva 336 de los 384 expertos enrutados por capa.
+DeepSeek-V4.1-Flash-REAP-2bit-MLX es un artefacto experimental de investigacion publicado por rapid-mlx: una conversion a MLX nativo, cuantizada a 2 bits y podada mediante REAP (routing-saliency pruning) del modelo base deepseek-ai/DeepSeek-V4.1-Flash. El objetivo no es ofrecer un modelo listo para produccion, sino demostrar la viabilidad de ejecutar una arquitectura DeepSeek V4.1 completa en Apple Silicon con memoria unificada, preservando los valores afines 2-bit/group-64 del origen y apilando los expertos enrutados para ejecucion batcheada nativa.
 
-El resultado es un modelo de aproximadamente 680.500 millones de parametros totales cuyo payload tensorial ocupa 212.930.051.680 bytes (~199 GiB) y que exige una maquina Apple silicon con 256 GiB de memoria unificada para cargarse. Segun la propia model card, es un artefacto de investigacion, no un producto cualificado: no alcanza el suelo de 12 tok/s fijado por Rapid-MLX (se queda un 34,0% por debajo) y requiere un cargador experimental incluido en el PR #3301 del proyecto, por lo que los cargadores estandar no son compatibles.
+El artefacto conserva 336 de los 384 expertos enrutados por capa (87,5%), con una masa de enrutamiento retenida media del 99,9949% y un peor caso por capa del 99,8564%. El tensor payload ocupa 212.930.051.680 bytes (~199 GiB) y requiere un Mac con 256 GiB de memoria unificada. La evaluacion de calificacion se hizo en un Apple M3 Ultra de 60 nucleos GPU con MLX 0.32.2: carga estricta residente en 239,44 segundos, pico de memoria MLX de 213,51 GB y decodificacion codiciosa de 7,31 tok/s (techo de 7,92 tok/s en decodificacion corta).
 
-Su relevancia es acotada y fundamentalmente metodologica: documenta con mediciones concretas el coste de llevar un modelo MoE de gran tamano a 2 bits sobre memoria unificada Apple, y publica el artefacto exclusivamente para reproducibilidad y optimizacion posterior. Vision y MTP (multi-token prediction) quedan omitidos, por lo que la variante distribuida aqui es estrictamente text-only.
+Es relevante ahora porque documenta con cifras concretas los limites actuales de la inferencia local de modelos MoE de gran escala en hardware de consumo profesional: el artefacto incumple el suelo de producto de Rapid-MLX de 12 tok/s en un 34,0% y se publica unicamente por reproducibilidad y para seguir optimizando. No es un modelo cualificado para catalogo, servidor ni soporte de escritorio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); artefacto de solo texto (vision y MTP omitidos) |
-| Parámetros totales | 680.537.125.744 (~680,5 B) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (no cualificada en este artefacto) |
-| Tipos de cuantización | afín de 2 bits con grupo de 64 (2-bit/group-64), valores preservados del origen |
+| Arquitectura | Transformer MoE DeepSeek V4.1 (attention, MoE, engram, hyper-connections, indexer, sparse attention) |
+| Parametros totales | 680.537.125.744 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (no cualificada) |
+| Tipos de cuantizacion | Afin 2-bit con grupo de 64 (valores del origen preservados) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors en formato MLX (41 shards, ~212,9 GB de repositorio) |
+| Formato de pesos | safetensors empaquetado nativo MLX (41 shards) |
+| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash (via Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP) |
+| Expertos enrutados retenidos | 336 / 384 por capa |
+| Tamano del repo | 212,9 GB |
+| Libreria | MLX 0.32.2 (loader experimental de Rapid-MLX 0.14.1) |
+| Modalidad | Solo texto (vision y MTP omitidos) |
 
 ## Arquitectura y entrenamiento
 
-No se describe en la informacion disponible un proceso de entrenamiento propio: este repositorio es una conversion cuantizada y un reempaquetado del modelo base deepseek-ai/DeepSeek-V4.1-Flash, que fue disenado y entrenado por DeepSeek. La arquitectura del artefacto es un transformer con mezcla de expertos (se mencionan 384 expertos enrutados por capa), adaptado a MLX y limitado a procesamiento de texto al omitirse los componentes de vision y de prediccion multi-token (MTP).
+El modelo base es un transformer con mezcla de expertos (MoE) de la familia DeepSeek V4.1, que integra atencion, capas MoE, engram, hyper-connections, indexer y atencion dispersa. Esta conversion no reentrena el modelo: parte de Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP, que a su vez deriva de deepseek-ai/DeepSeek-V4.1-Flash, y aplica dos transformaciones. Primero, poda REAP de expertos enrutados guiada por saliencia de enrutamiento, calibrada con 2.048 tokens causales reales divididos en dos mitades disjuntas (solapamiento de conjuntos retenidos entre mitades del 92,1354%). Segundo, apilado de los expertos enrutados supervivientes para ejecucion batcheada nativa en MLX, conservando los valores cuantizados afines 2-bit/group-64 del origen.
 
-La innovacion tecnica del artefacto es doble. Por un lado, preserva los valores afin de 2 bits con grupo de 64 del origen mientras apila los expertos enrutados para una ejecucion por lotes nativa en MLX. Por otro, aplica un pruning de saliencia de enrutamiento (REAP) que retiene 336 de 384 expertos por capa, con una masa de enrutamiento media retenida del 99,9949% y una peor capa del 99,8564%. La calibracion REAP uso 2048 tokens causales reales divididos en dos mitades disjuntas, con un solapamiento del 92,1354% en el conjunto de expertos conservados entre ambas mitades, lo que sirve como control de estabilidad de la seleccion.
+El runtime es una implementacion MLX nativa de la arquitectura V4.1 escrita especificamente para esta calificacion, con generador de streaming y chunked-prefill, incluida en Rapid-MLX 0.14.1 bajo `scripts/deepseek_v41_native/`. Las comprobaciones de paridad sobre configuracion tiny dieron diferencias relativas de prefill/decode/chunked-prefill de como maximo 1,4e-6 y 100% de acuerdo en argmax de siguiente token; los casos de cuantizar/descuantizar fueron bit-exactos. No se dispone de informacion sobre datos de entrenamiento, RLHF o DPO adicionales, ni sobre innovaciones de decodificacion especulativa en este artefacto (MTP omitido).
 
 ## Capacidades
 
-- Generacion de texto: el unico caso validado de forma explicita es una respuesta factual de una frase ("The capital of France is Paris." seguida de EOS), con el enmarcado de roles requerido por el modelo.
-- Razonamiento, codigo, matematicas y otras tareas: no evaluadas ni reclamadas por el artefacto.
-- Tool calling / function calling: no evaluado y no reclamado.
-- Soporte de agentes y razonamiento multi-paso: no evaluado.
-- Capacidades multilingues: no disponibles.
-- Capacidad especial de thinking mode: la plantilla de prompt usa un marcador `</think>`, pero su comportamiento no se cualifica en la informacion proporcionada.
-- Vision: explicitamente omitida en este artefacto.
-- MTP (multi-token prediction): explicitamente omitido.
-- Contexto largo: no evaluado y no cualificado.
+- Generacion de texto en modo chat con marcadores de rol obligatorios (`<｜begin▁of▁sentence｜>`, `<｜User｜>`, `<｜Assistant｜>`, `<think>`).
+- Razonamiento basico verificado en un caso factual de una frase ("The capital of France is Paris." seguido de EOS).
+- Decodificacion codiciosa estable: la misma cadena de tokens se reprodujo en intervalos de evaluacion 4, 20 y 40.
+- Ejecucion nativa en MLX sobre Apple Silicon con memoria unificada, mediante loader experimental.
+- Capacidades no evaluadas ni reclamadas: vision, tool calling, uso de agentes, contexto largo y multilingue.
+- El modo thinking del modelo base no esta cualificado en este artefacto.
 
 ## Casos de uso
 
-- Investigacion en cuantizacion extrema: permite estudiar el comportamiento de un MoE de ~680 B con pesos afin de 2 bits y grupo de 64, midiendo fidelidad de tensores (los casos quantize/dequantize fueron bit-exactos) y estabilidad de decodificacion.
-- Estudio de pruning por saliencia de enrutamiento: el artefacto conserva 336 de 384 expertos por capa con una masa de enrutamiento retenida del 99,9949%, lo que permite analizar empiricamente la relacion entre expertos podados y calidad resultante.
-- Reproduccion de la cadena de conversion: sirve para replicar el pipeline Vontra (2-bit) -> REAP repack de Rapid-MLX, incluyendo la carga estricta de los 41 shards sin parametros faltantes ni inesperados.
-- Validacion de paridad numerica en MLX: util para comparar prefill, decode y prefill troceado en configuraciones pequenas (diferencias relativas <= 1,4e-6 y 100% de acuerdo de argmax en la bateria de comparacion).
-- Experimentacion con inferencia MoE en memoria unificada Apple: documenta el comportamiento en un Apple M3 Ultra de 60 nucleos GPU y 256 GiB, con 213,51 GB de pico de memoria MLX.
-- Base para optimizacion de decodificacion: dado que la decodificacion conservadora alcanza 7,31 tok/s y el techo en decodificacion corta 7,92 tok/s, es un punto de partida para trabajar en mejoras de velocidad en MLX.
-- Evaluacion de viabilidad de hardware: sirve como referencia de que un modelo de este tamano no es desplegable por debajo de 256 GiB de memoria unificada.
+- Reproduccion de investigacion en cuantizacion extrema: sirve para replicar el pipeline REAP + 2-bit sobre un MoE de 680B parametros y medir la perdida de calidad frente al modelo base, usando el script `scripts/qualify_deepseek_v41_native.py` con el commit v0.14.1.
+- Validacion de runtimes MLX: util para desarrolladores que implementan o depuran kernels de atencion, MoE, indexer y sparse attention en MLX, comparando paridad numerica con la configuracion tiny (diferencias <= 1,4e-6).
+- Estudio de poda de expertos: permite analizar el impacto de retener 336 de 384 expertos por capa con 99,9949% de masa de enrutamiento media, y contrastar el solapamiento de conjuntos entre mitades de calibracion (92,1354%).
+- Benchmarking de hardware Apple: referencia reproducible de throughput (7,31 tok/s) y pico de memoria (213,51 GB) en M3 Ultra de 60 nucleos GPU, util para planificar requisitos de memoria en futuros ports.
+- Pruebas de carga y memoria: escenario para medir tiempos de carga estricta (239,44 s) y comportamiento del asignador MLX con 41 shards y 256 GiB de memoria unificada.
+- Docencia y divulgacion tecnica: ejemplo documentado de los limites de la inferencia local de MoE a gran escala y de por que un artefacto que incumple el suelo de 12 tok/s no se publica como producto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card reporta unicamente mediciones de cualificacion y controles de paso/fallo, que se reproducen a continuacion.
-
-Mediciones de cualificacion (Apple M3 Ultra, 60 nucleos GPU, 256 GiB de memoria unificada, MLX 0.32.2):
-
 | Medicion | Resultado |
 |---|---:|
-| Payload tensorial | 212.930.051.680 bytes (~199 GiB) |
+| Tensor payload | 212.930.051.680 bytes (~199 GiB) |
 | Carga estricta residente | 239,44 s |
 | Pico de memoria MLX | 213,51 GB |
 | Decodificacion conservadora | 7,31 tok/s |
 | Techo en decodificacion corta | 7,92 tok/s |
 | Expertos enrutados retenidos | 336 / 384 por capa |
-| Masa de enrutamiento media retenida | 99,9949% |
+| Masa de enrutamiento retenida media | 99,9949% |
 | Peor capa, masa retenida | 99,8564% |
+| Solapamiento de conjuntos entre mitades | 92,1354% |
+| Paridad prefill/decode/chunked-prefill | <= 1,4e-6 de diferencia relativa |
+| Acuerdo argmax siguiente token (tiny) | 100% |
+| Cumplimiento del suelo de producto (12 tok/s) | Incumple en un 34,0% |
 
-Controles de paso/fallo:
-
-| Control | Resultado | Evidencia |
-|---|---|---|
-| Chat factual de una frase | Pasa | Salida "The capital of France is Paris." seguida de EOS |
-| Estabilidad greedy | Pasa | Intervalos de evaluacion 4, 20 y 40 con secuencia de tokens identica |
-| Paridad numerica prefill/decode | Pasa | Diferencias relativas <= 1,4e-6 en configuracion pequena |
-| Paridad de siguiente token | Pasa | 100% de acuerdo de argmax |
-| Fidelidad de tensores cuantizados | Pasa | Casos quantize/dequantize bit-exactos |
-| Carga completa del artefacto | Pasa | Los 41 shards cargan de forma estricta |
-| Vision, tool use, contexto largo | No evaluado | No reclamado por el artefacto |
-
-Segun el autor, el artefacto no alcanza el suelo de producto de 12 tok/s fijado por Rapid-MLX, quedando un 34,0% por debajo.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria: requiere 256 GiB de memoria unificada en Apple silicon para cargarse. El pico de memoria MLX medido es de 213,51 GB, por lo que hay que reservar margen adicional para macOS y el crecimiento del contexto. No es apto para maquinas por debajo de 256 GiB.
-- GPU recomendadas: el unico hardware cualificado es un Apple M3 Ultra con 60 nucleos GPU. No hay datos para otras GPU.
-- GPU de consumo: no cabe en ninguna GPU de consumo convencional (RTX 4090, etc.) segun la informacion disponible; el destino es Apple silicon de gama alta con 256 GiB unificados.
-- Opciones de despliegue: solo MLX, mediante el cargador experimental del PR #3301 del repositorio Rapid-MLX. Los cargadores estandar no son compatibles. No se indica soporte para vLLM, llama.cpp, Ollama, TGI ni similares.
-- Latencia y throughput: carga estricta residente de 239,44 s; decodificacion conservadora de 7,31 tok/s y techo de 7,92 tok/s en decodificacion corta, con generacion greedy y `(N-1)/elapsed` excluyendo el prefill.
+- Memoria unificada: 256 GiB minimo; el artefacto no es apto para maquinas por debajo de ese umbral.
+- Hardware de referencia: Apple M3 Ultra, 60 nucleos GPU, 256 GiB, MLX 0.32.2.
+- Pico de memoria MLX medido: 213,51 GB; se recomienda dejar margen sustancial para macOS y crecimiento de contexto.
+- No cabe en GPUs de consumo (RTX 4090, etc.) ni en Macs de memoria unificada inferior a 256 GiB.
+- Despliegue: exclusivamente mediante el loader experimental de Rapid-MLX 0.14.1; los loaders estandar no son compatibles.
+- Throughput medido: 7,31 tok/s en decodificacion codiciosa, 7,92 tok/s como techo en decodificacion corta; el prefill se excluye del calculo.
+- Tiempo de carga estricta: 239,44 s.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar el artefacto con su modelo de origen y con la conversion intermedia dentro de la misma cadena. No se aportan datos de modelos alternativos de terceros.
+| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-REAP-2bit-MLX (este) | 680.537.125.744 | 2-bit group-64, REAP 336/384 | no disponible | MIT | MLX experimental, 256 GiB |
+| Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP | no disponible | 2-bit | no disponible | no disponible | MLX |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | no disponible | completa | no disponible | no disponible | HF |
 
-| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| rapid-mlx/DeepSeek-V4.1-Flash-REAP-2bit-MLX | 680.537.125.744 | no disponible | 2-bit/group-64 + REAP (336/384 expertos) | MIT | safetensors MLX (41 shards) | Solo texto; pico 213,51 GB; 7,31 tok/s en M3 Ultra |
-| Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP | no disponible | no disponible | 2-bit/group-64 | no disponible | MLX | Fuente directa del repack; incluye MTP |
-| deepseek-ai/DeepSeek-V4.1-Flash | no disponible | no disponible | pesos originales (no indicada) | MIT | no disponible | Modelo base entrenado por DeepSeek; incluye vision y MTP |
-
-No se dispone de modelos comparables de otros proveedores con datos verificables en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo con alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigacion experimental: no es un modelo cualificado como producto y su publicacion no implica soporte en catalogo, servidor ni escritorio de Rapid-MLX.
-- Rendimiento por debajo del objetivo: se queda un 34,0% por debajo del suelo de 12 tok/s de Rapid-MLX.
-- Dependencia de un cargador no estandar: requiere el PR #3301 del repositorio Rapid-MLX; los cargadores habituales no funcionan.
-- Cuantizacion agresiva y pruning: la propia model card advierte de que la cuantizacion a 2 bits y el pruning de expertos pueden reducir la calidad.
-- Contexto largo no cualificado: no se ha validado su comportamiento con contextos extensos.
-- Capacidades no evaluadas: tool use y vision no se evaluan ni se reclaman; vision y MTP estan omitidos.
-- Alucinacion y sesgos: no hay datos publicados sobre sesgos ni tasas de alucinacion; la unica evidencia factual es un unico prompt de una frase.
-- Enmarcado obligatorio: las peticiones sin los marcadores de rol (`<｜begin▁of▁sentence｜>`, `<｜User｜>`, `<｜Assistant｜>`, `</think>`) producen diagnosticos invalidos y no cuentan como evaluacion.
-- Hardware muy restrictivo: no es viable por debajo de 256 GiB de memoria unificada, lo que excluye la mayoria de entornos de produccion y de consumo.
-- Licencia: MIT heredada de la publicacion original; el diseno y el entrenamiento pertenecen a DeepSeek y sus contribuidores. Conviene revisar el archivo NOTICE para la revision de origen fijada.
+- Artefacto experimental de investigacion: no es un modelo cualificado por Rapid-MLX y no cuenta con soporte de catalogo, servidor ni escritorio.
+- Incumple el suelo de producto de 12 tok/s en un 34,0%; no apto para uso interactivo en produccion.
+- La cuantizacion 2-bit y la poda de expertos pueden degradar la calidad respecto al modelo base; las comprobaciones publicadas son evidencia acotada de aprobado/fallo, no una puntuacion de calidad general.
+- Vision, tool calling, contexto largo y seguridad no han sido evaluados ni reclamados; el contexto largo no esta cualificado.
+- Vision y MTP estan omitidos en esta conversion.
+- Requiere marcadores de rol especificos; prompts sin ellos producen diagnosticos invalidos y no cuentan como evaluacion.
+- Requiere 256 GiB de memoria unificada y el loader experimental de Rapid-MLX 0.14.1; los loaders estandar no funcionan.
+- Licencia MIT, lo que permite uso comercial del artefacto, pero sin garantias implicitas y con las limitaciones tecnicas descritas.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-REAP-2bit-MLX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Fuente intermedia 2-bit (Vontra): https://huggingface.co/Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP
-- PR experimental con el cargador: https://github.com/raullenchai/Rapid-MLX/pull/3301
+- Origen de la conversion MLX: https://huggingface.co/Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP
+- Release Rapid-MLX 0.14.1: https://github.com/raullenchai/Rapid-MLX/releases/tag/v0.14.1
 - Repositorio Rapid-MLX: https://github.com/raullenchai/Rapid-MLX
-- La busqueda web no devolvio enlaces adicionales relevantes sobre este modelo.
+- Blog del autor: https://rapidmlx.com/blog/deepseek-v41-on-a-mac-and-the-router-problem
+- Documentacion de agentes: https://rapidmlx.com/docs/agents
+- Descarga de la app de escritorio: https://rapidmlx.com/download
+- Instalador: https://rapidmlx.com/install.sh

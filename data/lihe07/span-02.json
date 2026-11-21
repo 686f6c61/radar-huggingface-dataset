@@ -50,31 +50,5 @@
   "renamed_to": "respanai/span-02",
   "renamed_at": "2026-11-11T06:02:39.201Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "lihe07/span-02 · Hugging Face",
-      "url": "https://huggingface.co/lihe07/span-02",
-      "snippet": "span-02 is a decision model: it answers typed questions about a state (JSON or text, plus up to 4 images) with a full probability distribution over the options, in the Decision Index /v1/systemone wire format. It is a fine-tune of Gemma 4 26B-A4B (mixture of experts, about 4B active parameters per ..."
-    },
-    {
-      "title": "lihe07 (Harvey Li) · GitHub",
-      "url": "https://github.com/lihe07",
-      "snippet": "GATech &#x27;29 CS | ML, RE and Web. lihe07 has 72 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "lihe07 (He Li) - Hugging Face",
-      "url": "https://huggingface.co/lihe07/models",
-      "snippet": "lihe07 Follow isospin0&#x27;s profile picture 1 follower · 1 following https://harvey-l.com HeLi07784212 lihe07"
-    },
-    {
-      "title": "lihe07 (Harvey Li) / Projects · GitHub",
-      "url": "https://github.com/lihe07?tab=projects",
-      "snippet": "GATech &#x27;29 CS | ML, RE and Web. lihe07 has 70 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "lihe - GitLab",
-      "url": "https://gitlab.com/lihe07",
-      "snippet": "lihe - GitLab ... GitLab.com"
-    }
-  ]
+  "sources": []
 }

@@ -78,5 +78,11 @@
       "value": 6.0882
     }
   ],
-  "sources": []
+  "sources": [
+    {
+      "title": "SAP for Me: Sign In",
+      "url": "https://me.sap.com/roadmapviewer",
+      "snippet": "Sign in to SAP for Me to access the SAP Activate Roadmap Viewer and explore implementation roadmaps, phases, deliverables, …"
+    }
+  ]
 }

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen2-VL-72B-Instruct-GGUF",
+  "slug": "mradermacher-qwen2-vl-72b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2-VL-72B-Instruct-GGUF",
+  "created_at": "2024-12-15T17:33:02.000Z",
+  "updated_at": "2026-11-21T04:26:53.000Z",
+  "license": "tongyi-qianwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "en",
+    "base_model:Qwen/Qwen2-VL-72B-Instruct",
+    "base_model:quantized:Qwen/Qwen2-VL-72B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 526,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 521804353856,
+  "storage_human": "521.8 GB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2-VL-72B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

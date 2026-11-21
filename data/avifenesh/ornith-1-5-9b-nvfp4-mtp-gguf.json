@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 816,
+  "downloads_30d": 800,
   "trending_score": 0,
   "parameters": 32768,
   "parameters_human": "32768",
@@ -49,42 +49,16 @@
   "benchmarks": [
     {
       "task": "MTP speculative decode, greedy K=3, chat-templated probes (exactness harness; spec stream gated token-identical to plain decode)",
-      "dataset": "memra run-spec probes (deterministic, greedy)",
+      "dataset": "tiyuvta run-spec probes (deterministic, greedy)",
       "metric": "draft acceptance, embedded grafted MTP head, K=3 (chat-templated code probe)",
       "value": 0.594
     },
     {
       "task": "MTP speculative decode, greedy K=3, chat-templated probes (exactness harness; spec stream gated token-identical to plain decode)",
-      "dataset": "memra run-spec probes (deterministic, greedy)",
+      "dataset": "tiyuvta run-spec probes (deterministic, greedy)",
       "metric": "draft acceptance, FR-Spec masked head (top-32768 own-gen SXC ranks), K=3",
       "value": 0.556
     }
   ],
-  "sources": [
-    {
-      "title": "Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF - Hugging Face",
-      "url": "https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
-      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
-      "snippet": "We publish separate GGUF builds for it. Ornith 1.5 9B is the dense vision-language model this guide is about, and the smallest of the three: it fits an 8 GB GPU or a 16 GB MacBook, the cheapest way to run Ornith locally."
-    },
-    {
-      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
-      "url": "https://ornith.ai/ornith_1_5.html",
-      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
-    },
-    {
-      "title": "GitHub - avifenesh/avifenesh",
-      "url": "https://github.com/avifenesh/avifenesh",
-      "snippet": "I like machines close to the metal and results you can measure. By day I build in-memory data systems at AWS ElastiCache; the rest of the time I train and compress small fast models, write CUDA, and maintain open-source tools people actually run. Research notes and working papers live at avifenesh.ai. Issues, questions, and counterexamples are always welcome."
-    },
-    {
-      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
-      "url": "https://benchlm.ai/model-updates",
-      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
-    }
-  ]
+  "sources": []
 }

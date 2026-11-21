@@ -2,124 +2,90 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-ONNX es una conversión a formato ONNX del modelo Qwen2.5-0.5B-Instruct, publicada por el usuario JasonYANG170. No incorpora ningún ajuste fino: se trata de un reempaquetado de los pesos originales (revisión `7ae557604adf67be50417f59c2c2f167def9a775`) para que puedan ejecutarse directamente en el navegador o en Node mediante Transformers.js. El repositorio ocupa 3,8 GB e incluye las variantes fp32 y fp16, además de los scripts de exportación, cuantización y validación numérica.
+Qwen2.5-0.5B-Instruct-ONNX es una exportación no oficial a formato ONNX del modelo Qwen/Qwen2.5-0.5B-Instruct, publicada por el usuario JasonYANG170. No se trata de un modelo nuevo ni de un fine-tuning: es una conversión directa de los pesos originales de Qwen (revisión `7ae557604adf67be50417f59c2c2f167def9a775`) a ONNX, pensada para ejecución en navegador y en local mediante Transformers.js y ONNX Runtime, con soporte declarado para WebGPU.
 
-La relevancia de esta ficha es práctica más que algorítmica: demuestra un flujo reproducible de exportación ONNX con verificación numérica explícita. El autor publica la similitud coseno de cada variante frente al FP32 original y descarta las cuantizaciones que no superan sus umbrales (INT8 dinámico y las variantes Q4, incluida una HQQ de precisión mixta). Es un ejemplo poco habitual de publicación con criterio de rechazo documentado.
+El modelo base es un transformer decoder-only de 0,5 mil millones de parámetros desarrollado por Alibaba Qwen, la variante más pequeña de la familia Qwen2.5 Instruct. Su interés radica en que permite desplegar generación de texto conversacional en entornos sin GPU dedicada, incluido el propio navegador del usuario, con una ventana de contexto de 32.768 tokens y licencia Apache 2.0.
 
-En cuanto a capacidad, conviene ser claro: se trata de un modelo denso de aproximadamente 0,5 B de parámetros, orientado a generación de texto conversacional ligera. Su valor está en el despliegue en cliente (WebGPU, WASM o CPU) sin servidor, no en tareas de razonamiento complejo. El repositorio solo declara validación en chino y no publica ningún benchmark de calidad.
+La relevancia de esta ficha es práctica: quien necesite inferencia en cliente web, prototipos offline o aplicaciones edge con requisitos mínimos de hardware encontrará aquí una opción lista para Transformers.js. Conviene tener presente que el autor solo declara el idioma chino (`zh`) en los metadatos y que la exportación incluye únicamente precisiones fp32 y fp16, sin cuantizaciones INT8 ni Q4.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2.5), según la documentación del modelo base. La conversión no modifica la arquitectura |
-| Parametros totales | 0,5 B (denominación del modelo base Qwen2.5-0.5B-Instruct; el repositorio de conversión no publica el recuento exacto) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No indicada en el repositorio de conversión. La documentación del modelo base declara 32 768 tokens; no verificado en esta ficha |
-| Tipos de cuantizacion | fp32 y fp16 publicados. INT8/Q8 omitido (la cuantización dinámica probada no pasó los controles numéricos). Q4 y q4f16 omitidos (no alcanzaron el umbral de coseno 0,98) |
-| Idiomas soportados | El repositorio declara únicamente `zh` (chino). La validación numérica se hizo con seis entradas en chino de longitudes distintas. El modelo base se distribuye como multilingüe, pero esta conversión no aporta validación en otros idiomas |
-| Licencia | apache-2.0 (los pesos conservan la licencia del modelo base; la conversión no la altera) |
-| Formato de pesos | ONNX (`onnx/model.onnx` + `onnx/model.onnx_data`). Plantilla de chat original de Qwen embebida en `tokenizer_config.json` |
-| Tamano del repositorio | 3,8 GB |
-| Libreria de despliegue | transformers.js (probado con la versión 4.0.1) |
-| Backends soportados | WebGPU (`device: 'webgpu'`), WASM (`device: 'wasm'`, fp32) y CPU nativa en Node (`device: 'cpu'`) |
-| Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
-| Revision de origen | `7ae557604adf67be50417f59c2c2f167def9a775` |
-| Fecha de creacion / actualizacion | 14 de septiembre de 2026 (misma fecha en ambos campos, según metadatos de Hugging Face) |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer decoder-only (familia Qwen2), exportado a ONNX |
+| Parametros totales | 0,5 mil millones (aproximado, según el nombre del modelo base) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | fp32 y fp16; INT8 y Q4 no incluidos |
+| Idiomas soportados | chino (`zh`) según metadatos del autor; el modelo base Qwen2.5 es multilingüe, pero no se detalla en esta exportación |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (`onnx/model.onnx` + `onnx/model.onnx_data` para fp32; `onnx/model_fp16.onnx` para fp16); tokenizer y configuración en la raíz del repositorio |
 
 ## Arquitectura y entrenamiento
 
-Esta publicación no entrena ningún modelo. Es una exportación a ONNX de un checkpoint ya existente, sin ajuste fino posterior, del Qwen2.5-0.5B-Instruct. Por tanto, la arquitectura es la del modelo base (transformer decoder-only denso de la familia Qwen2.5, con atención causal) y los detalles de entrenamiento —número de tokens, composición del dataset, fases de ajuste por instrucciones y alineación— no se detallan en el repositorio: el autor remite al fichero `UPSTREAM_README.md`, que conserva la documentación original de Qwen. Toda cifra sobre preentrenamiento o postentrenamiento debe consultarse ahí, no en esta ficha.
+La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct: un transformer decoder-only denso con atención causal estándar, sin mezcla de expertos ni mecanismos híbridos SSM. Esta exportación no introduce cambios arquitectónicos; se limita a convertir los pesos a ONNX con la tarea `text-generation-with-past`, es decir, con caché de clave-valor para decodificación autoregresiva eficiente.
 
-Lo técnicamente reseñable está en el proceso de conversión y su verificación. El autor exporta dos variantes de precisión (fp32 y fp16), configura los tipos del KV-cache por cada `dtype` y publica la similitud coseno mínima frente al FP32 original sobre seis entradas en chino de longitudes diferentes. Los umbrales fijados fueron 0,999 para fp32/fp16 y 0,98 para las variantes cuantizadas. Los informes incluyen error absoluto máximo y, en generación, coincidencia de siguiente token. El autor advierte explícitamente de que la similitud de salida no establece corrección factual.
-
-El intento con Q4 merece mención aparte. Se evaluaron cuantización por bloques ordinaria y HQQ; la variante final (HQQ selectivo, bloques de peso de 4 bits con tamaño 16, manteniendo en punto flotante las proyecciones *down*, la primera y la última capa y la cabeza de salida, además de los embeddings) quedó en aproximadamente 0,9729 de coseno en una de las seis entradas, por debajo del umbral de 0,98. Los ficheros q4 (≈1825 MB) y q4f16 (≈979 MB) existen pero se omitieron de la publicación. Los ficheros no serían uniformemente de 4 bits: son de precisión mixta. La trazabilidad se cubre con `build-manifest.json` (versiones de paquetes y sumas SHA-256) y con los scripts `export_models.py` y `quantize_q4.py`.
+No se dispone en la información proporcionada de datos sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF, DPO) del modelo original. La model card de esta exportación remite explícitamente a la model card de Qwen/Qwen2.5-0.5B-Instruct para los detalles de entrenamiento y licencia. El repositorio incluye artefactos de procedencia y verificación: `build-manifest.json`, `SHA256SUMS`, informes de validación en `validation/` y scripts auxiliares en `tools/`, lo que facilita auditar la conversión.
 
 ## Capacidades
 
-- Generación de texto conversacional: es la función principal del modelo base, con plantilla de chat de Qwen preservada en el tokenizador.
-- Respuesta a instrucciones de formato corto: reescritura, resumen breve, clasificación de texto y extracción simple de campos en entradas de baja complejidad.
-- Ejecución en cliente: inferencia en navegador vía WebGPU o WASM, y en Node sobre CPU, sin necesidad de servidor.
-- Idiomas: validado numéricamente solo en chino (seis entradas). El modelo base es multilingüe, pero esta conversión no documenta ni valida comportamiento en otros idiomas.
-- Razonamiento multi-paso, matemáticas complejas y generación de código: no hay ninguna validación publicada en el repositorio para estas capacidades, y el tamaño del modelo (0,5 B) limita su fiabilidad.
-- Tool calling / function calling: no verificado en esta conversión. No hay evidencia en la información disponible.
-- Modo *thinking*, visión o audio: no soportado. Es un modelo exclusivamente de texto.
-- Latencia y *throughput*: no medidos ni publicados. Solo se documenta el entorno de prueba (Transformers.js 4.0.1 y ONNX Runtime Node 1.24.3 con WebGPU nativo sobre una RTX 5080 Laptop).
+- Generación de texto conversacional multi-turno, con plantilla de chat instruct.
+- Razonamiento básico y respuesta a instrucciones, heredado del ajuste instruct de Qwen2.5.
+- Generación de código y tareas sencillas de matemáticas, limitadas por el tamaño de 0,5B parámetros.
+- Ejecución en navegador mediante Transformers.js con backend WebGPU o CPU (ONNX Runtime).
+- Decodificación con caché de clave-valor (`text-generation-with-past`), lo que reduce el coste por token generado.
+- Contexto largo de hasta 32.768 tokens, útil para resúmenes y conversaciones extensas.
+- Capacidades multilingües del modelo base no verificadas en esta exportación; los metadatos solo declaran chino.
+- Soporte de tool calling y agentes: no disponible en la información proporcionada para esta exportación.
 
 ## Casos de uso
 
-- Asistente conversacional embebido en navegador sin backend: cargando la variante fp16 con `device: 'webgpu'`, el modelo se ejecuta íntegramente en el cliente. Es adecuado porque los pesos ocupan 1299,9 MB y no requieren infraestructura de servidor, lo que elimina coste por token y desplazamiento de datos.
-- Funciones de privacidad por diseño: en aplicaciones donde el texto del usuario no puede salir del dispositivo (sanitario, legal interno, educación), la inferencia local con WASM o WebGPU evita cualquier envío a una API externa.
-- Prototipado de pipelines Transformers.js: sirve como modelo de prueba para validar la integración, el manejo de `dtype`, la carga de `onnx/model.onnx_data` y la configuración del KV-cache antes de escalar a un modelo mayor de la misma familia con el mismo código.
-- Clasificación y enrutado previo (*pre-routing*): usar el modelo para etiquetar la intención de una consulta y decidir si se responde con un modelo pequeño o se deriva a uno mayor. El coste computacional es mínimo al ejecutarse en cliente.
-- Autocompletado y reescritura en editores web: sugerencias de continuación y reformulación de frases cortas en interfaces de escritura, con latencia aceptable al no haber salto de red.
-- Aplicaciones de escritorio con Electron o Node: ejecución con `device: 'cpu'` y la variante fp32 o fp16, útil para herramientas ofimáticas o asistentes locales que deben funcionar sin conexión.
-- Demostraciones educativas y docencia: el repositorio incluye informes de validación numérica y scripts reproducibles, lo que lo convierte en un material didáctico útil para explicar exportación ONNX, precisión de pesos y criterios de aceptación numérica.
-- Chatbot de nicho en chino dentro de una web: dado que es el único idioma validado, encaja en interfaces orientadas a público chino con requisitos de despliegue ligero.
+- Asistente conversacional embebido en una web: cargando los pesos fp16 con Transformers.js y WebGPU, el modelo atiende un chat de soporte básico sin enviar datos a un servidor, lo que simplifica el cumplimiento de privacidad.
+- Prototipado rápido de interfaces de chat: al ejecutarse en el navegador, permite iterar sobre la UX y el prompt de sistema sin montar infraestructura de inferencia.
+- Aplicaciones offline o de escritorio: integrado en un runtime ONNX local, sirve para asistentes de documentación o ayuda contextual en entornos sin conectividad.
+- Clasificación y extracción de información ligera: con prompts instruct, puede resumir textos cortos, extraer campos de correos o etiquetar tickets dentro de un pipeline, con coste computacional mínimo.
+- Filtrado y preprocesado en edge: como primera etapa de un sistema mayor, genera reformulaciones de consultas o respuestas candidatas antes de invocar un modelo mayor en la nube.
+- Educación y demos técnicas: su tamaño reducido y licencia Apache 2.0 lo hacen adecuado para talleres sobre inferencia en navegador, cuantización y despliegue ONNX.
+- Generación de texto auxiliar en herramientas internas: borradores de respuestas, textos de ayuda o mensajes de error contextualizados, donde la latencia local importa más que la calidad máxima.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye MMLU, HumanEval, GSM8K ni ninguna otra evaluación de calidad, y advierte expresamente de que la similitud de salida no establece corrección factual. La nota de búsqueda web utilizada no devolvió resultados relevantes sobre este modelo.
-
-Lo único publicable son los datos de validación numérica incluidos en la model card:
-
-| dtype | Tamano (grafo + pesos) | Coseno minimo de salida frente al FP32 original |
-|---|---|---|
-| fp32 | 2521,8 MB | 1,000000 |
-| fp16 | 1299,9 MB | 0,999994 |
-
-| Variante descartada | Tamano | Coseno minimo observado | Motivo del descarte |
-|---|---|---|---|
-| q4 (HQQ selectivo, precision mixta) | ≈1825 MB | ≈0,9729 en una de seis entradas | Por debajo del umbral 0,98 |
-| q4f16 | ≈979 MB | No disponible en la información proporcionada | Mismo criterio de rechazo |
-| INT8 / Q8 | No disponible | No disponible | La cuantización dinámica probada no superó los controles numéricos |
-
-Estos valores proceden de seis entradas en chino de longitudes distintas y constituyen una prueba de humo numérica, no una evaluación de precisión ni de recuperación de información.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta exportación no incluye métricas de MMLU, HumanEval, GSM8K ni comparativas de latencia o throughput; solo remite a la model card del modelo base.
 
 ## Requisitos de hardware
 
-- Peso de los ficheros: 2521,8 MB en fp32 y 1299,9 MB en fp16. El repositorio completo ocupa 3,8 GB porque incluye ambos conjuntos.
-- VRAM estimada para inferencia: con fp16, el modelo cabe holgadamente en cualquier GPU con 2 GB libres; en fp32 requiere del orden de 3 GB. A estas cifras hay que sumar el KV-cache, cuyo tamaño crece de forma lineal con la longitud de contexto y con el número de secuencias concurrentes.
-- GPU recomendadas: no hay una lista oficial. El autor probó fp16 en WebGPU con una RTX 5080 Laptop GPU. Cualquier GPU moderna con soporte WebGPU (serie RTX 20 o superior, Radeon RX 6000 o superior, Apple Silicon) es suficiente por tamaño de modelo.
-- Cabe en GPU de consumo: sí, sin ninguna duda, en cualquier GPU de consumo de los últimos ocho años. También se ejecuta sin GPU, sobre WASM en navegador o CPU nativa en Node.
-- Opciones de despliegue: Transformers.js 4.0.1 con WebGPU, WASM o CPU; ONNX Runtime (probado en Node con la versión 1.24.3 y WebGPU nativo). No hay evidencia de despliegue probado con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles. El autor no publica medidas de tokens por segundo ni de tiempo de primera respuesta.
-- Nota operativa: para importación offline hay que descargar el repositorio completo y mantener `onnx/model.onnx_data` junto a `onnx/model.onnx`. Un cliente en línea que fije `q8` no podrá cargar este repositorio, porque esa variante no está publicada. El runtime de navegador de EasyEDA no se probó directamente.
+- VRAM estimada: en fp32, los pesos ocupan aproximadamente 2 GB (0,5B parámetros × 4 bytes); en fp16, alrededor de 1 GB. Hay que sumar la memoria de la caché KV, que crece con la longitud de contexto.
+- GPU recomendadas: cualquier GPU con soporte WebGPU en navegador (por ejemplo, integradas modernas o dedicadas de gama media); en servidor, GPU con al menos 4 GB de memoria para fp32 con contexto moderado.
+- GPU de consumo: cabe holgadamente en tarjetas con 4-8 GB de VRAM, e incluso en muchos casos en CPU.
+- Despliegue: Transformers.js con ONNX Runtime (WebGPU o WASM); también es posible usar ONNX Runtime nativo en Python, C++ o Node.js. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en esta exportación.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del backend (WebGPU frente a WASM) y del dtype seleccionado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de este repositorio. La comparación se limita a formato, tamaño, licencia y disponibilidad; las cifras de parámetros de las alternativas se indican como aproximadas y no proceden de la información proporcionada.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX | 0,5 B | No disponible en el repositorio | ONNX fp32 / fp16 para Transformers.js | apache-2.0 | Publicado; 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen2.5-0.5B-Instruct (upstream) | 0,5 B | Según la documentación del modelo base, 32 768 tokens | safetensors (PyTorch) | apache-2.0 | Ampliamente distribuido; requiere runtime Python o conversión propia |
-| Qwen/Qwen2.5-1.5B-Instruct | ≈1,5 B | No disponible en la información proporcionada | safetensors (PyTorch) | apache-2.0 | Mayor capacidad a cambio de más memoria; no hay conversión ONNX equivalente documentada aquí |
-| Otras conversiones ONNX de la familia Qwen2.5 o de modelos pequeños tipo SmolLM2 | No disponible | No disponible | ONNX | No disponible | No se han identificado en la información proporcionada |
+| JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX | 0,5B | 32.768 | ONNX (fp32, fp16) | Apache 2.0 | Exportación para Transformers.js/WebGPU |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | safetensors | Apache 2.0 | Modelo original en PyTorch |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | safetensors | Apache 2.0 | Misma familia, mayor calidad a mayor coste |
+| SmolLM2-360M-Instruct | 0,36B | 8.192 (según versión) | safetensors, GGUF | Apache 2.0 | Alternativa pequeña orientada a edge; datos de contexto a verificar en su model card |
 
-La diferencia relevante frente al modelo base no es de calidad, sino de empaquetado: esta versión evita la conversión manual y fija una revisión concreta con sumas de verificación. Como contrapartida, carece de variante de 4 bits, que sí suelen ofrecer otras conversiones comunitarias.
+La comparación con alternativas en formato ONNX para navegador no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Tamaño: 0,5 B de parámetros es un modelo muy pequeño. Es previsible un razonamiento limitado, alta tasa de alucinación en preguntas factuales y errores frecuentes en matemáticas y código. No hay evaluación publicada que matice esto.
-- Cobertura de idiomas: el repositorio declara únicamente `zh` y toda la validación numérica se hizo en chino. No hay evidencia de calidad en castellano ni en ningún otro idioma, pese a que el modelo base se distribuya como multilingüe.
-- Ausencia total de benchmarks: no se puede afirmar nada sobre su rendimiento en MMLU, HumanEval, GSM8K o similares. La similitud coseno mide fidelidad numérica respecto al original, no corrección de las respuestas; el propio autor lo advierte.
-- Sin cuantización de 4 bits ni de 8 bits: quien necesite Q4 o Q8 no puede usar este repositorio y debe buscar otra conversión. Los ficheros q4 y q4f16 existen en el proceso de construcción pero se descartaron tras fallar el umbral de 0,98, no por una limitación intrínseca del formato.
-- Compatibilidad de cliente: una aplicación que fije `q8` en la llamada a `pipeline` fallará al cargar este repositorio. Hay que seleccionar el `dtype` explícitamente.
-- Licencia: apache-2.0, que permite uso comercial, modificación y redistribución siempre que se conserven los avisos de licencia y el fichero LICENSE del modelo base. Los pesos mantienen la licencia upstream.
-- Trazabilidad y madurez: el repositorio no tiene descargas ni likes y se creó y actualizó el mismo día, lo que implica ausencia de validación por parte de terceros. La revisión del modelo base está fijada, lo que es positivo para reproducibilidad.
-- Dependencia experimental: la ruta WebGPU depende de Transformers.js 4.0.1 y ONNX Runtime Node 1.24.3. Otras versiones pueden comportarse de forma distinta; no se documentan pruebas de compatibilidad hacia atrás.
-- Reproducción: los scripts `export_models.py` y `quantize_q4.py` esperan una estructura de directorios concreta (`sources/<model-name>` y `repos/<model-name>-ONNX`) y el script JS de validación asume el árbol de dependencias del espacio de trabajo de EasyEDA o una importación equivalente de Transformers.js 4.0.1.
+- Modelo de 0,5B parámetros: capacidad de razonamiento, matemáticas y código claramente inferior a modelos de 7B o superiores; propenso a errores en tareas de varios pasos.
+- Riesgo de alucinación inherente a los modelos de lenguaje pequeños, especialmente con contexto largo o preguntas factuales.
+- Los metadatos solo declaran chino como idioma; el rendimiento en castellano no está verificado y puede ser deficiente pese al multilingüismo del modelo base.
+- La ventana de 32.768 tokens es nominal; la calidad de atención sobre contextos muy largos en un modelo de este tamaño no está validada en la información disponible.
+- Exportación no oficial: no está mantenida por Qwen; conviene verificar los hashes (`SHA256SUMS`) antes de usarla en producción.
+- Solo se ofrecen fp32 y fp16; no hay cuantizaciones INT8 o Q4, lo que limita el despliegue en dispositivos con poca memoria.
+- La licencia Apache 2.0 permite uso comercial, pero debe respetarse la atribución y las condiciones del modelo base.
+- No se documenta soporte de tool calling ni de modo thinking; no asumir estas capacidades en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX
+- Repositorio Hugging Face: https://huggingface.co/JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Revisión concreta del modelo base usada en la conversión: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/tree/7ae557604adf67be50417f59c2c2f167def9a775
-- Documentación original del modelo base preservada en el repositorio: `UPSTREAM_README.md`
-- Manifiesto de construcción con versiones y sumas SHA-256: `build-manifest.json`
-- Script de exportación: `export_models.py`
-- Script de cuantización Q4: `quantize_q4.py`
-- Informe del intento Q4 descartado: `q4-trial-validation.json`
-- Búsqueda web: no se encontraron enlaces relevantes sobre este modelo. Los resultados devueltos correspondían a medios de noticias generalistas y no guardaban relación con la ficha.
+- Transformers.js: https://github.com/huggingface/transformers.js
+- ONNX Runtime: https://onnxruntime.ai/
+- WebGPU: https://developer.chrome.com/docs/web-platform/webgpu

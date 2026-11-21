@@ -49,16 +49,5 @@
   "renamed_to": "jankowal2323/cieslar-qwen-v1-test",
   "renamed_at": "2026-11-11T05:45:06.479Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen models: The complete guide to Alibaba's open LLMs",
-      "url": "https://datasciencedojo.com/blog/the-evolution-of-qwen-models/",
-      "snippet": "Qwen models have rapidly become a cornerstone in the open-source large language model (LLM) ecosystem. Developed by Alibaba Cloud, these models have evolved from robust, multilingual LLMs to the latest Qwen 3 series, which sets new standards in reasoning, efficiency, and agentic capabilities. Whether you’re a data scientist, ML engineer, or AI enthusiast, understanding the Qwen models ..."
-    },
-    {
-      "title": "Qwen Timeline: Model & Product Release History",
-      "url": "https://www.scriptbyai.com/qwen-timeline/",
-      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
-    }
-  ]
+  "sources": []
 }

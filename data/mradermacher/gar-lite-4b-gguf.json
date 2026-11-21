@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/GAR-Lite-4B-GGUF",
+  "slug": "mradermacher-gar-lite-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GAR-Lite-4B-GGUF",
+  "created_at": "2026-11-20T23:59:37.000Z",
+  "updated_at": "2026-11-21T00:14:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "region-understanding",
+    "multimodal",
+    "grasp-any-region",
+    "qwen3.5",
+    "en",
+    "base_model:laolida-w/GAR-Lite-4B",
+    "base_model:quantized:laolida-w/GAR-Lite-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 40197931264,
+  "storage_human": "40.2 GB",
+  "context_length": 262144,
+  "base_model": "laolida-w/GAR-Lite-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

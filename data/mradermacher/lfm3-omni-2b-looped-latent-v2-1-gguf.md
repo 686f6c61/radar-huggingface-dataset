@@ -2,106 +2,107 @@
 
 ## Resumen
 
-LFM3-Omni-2B-Looped-Latent-v2.1 es un modelo ómnido (texto, imagen, vídeo y audio como entrada; texto y voz como salida) desarrollado originalmente por Liquid AI y publicado en su variante base por el usuario Guilherme34 en Hugging Face. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y compatibles. El modelo es de tipo "no razonador" (non-reasoning) y está pensado para despliegue en dispositivo (on-device), sustituyendo en una sola pieza a un ASR, un modelo visión-lenguaje, un LLM y un TTS.
+LFM3-Omni-2B-Looped-Latent-v2.1-GGUF es una cuantizacion estatica en formato GGUF del modelo base Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1, publicada por el usuario mradermacher. El modelo base pertenece a la familia LFM3 Omni de 2B parametros, con un total real de 2.702.390.080 parametros segun los pesos en safetensors, y esta disenado para tareas conversacionales multimodales (el repositorio incluye ficheros mmproj, lo que indica soporte de entrada de imagen o audio junto al texto). La cuantizacion la realiza mradermacher, un publicador habitual de versiones GGUF de modelos open source, no el autor original del modelo.
 
-El checkpoint base cuenta con 2.702.390.080 parámetros (aproximadamente 2,7 mil millones), lo que lo sitúa en la gama pequeña y lo hace viable en GPUs de consumo con cuantizaciones de 4 bits. La arquitectura concreta (transformer denso, híbrido o SSM) no está especificada en la información disponible; el nombre "Looped-Latent" sugiere un esquema de capas recurrentes o latentes compartidas, pero no se confirma en la documentación proporcionada.
+El interes practico de esta publicacion es que permite ejecutar un modelo multimodal de ~2,7B parametros en hardware de consumo mediante llama.cpp y derivados (Ollama, LM Studio, etc.), con un rango amplio de cuantizaciones que van desde Q2_K (1,2 GB) hasta f16 (5,5 GB), mas los ficheros mmproj necesarios para el procesamiento multimodal. El modelo esta etiquetado unicamente para ingles y la licencia no esta declarada en la informacion disponible, lo que constituye una limitacion relevante para uso comercial.
 
-La relevancia actual del modelo radica en su carácter multimodal end-to-end y su tamaño contenido: permite construir asistentes de voz y visión en tiempo real sin depender de la nube. No obstante, la información pública disponible es escasa (0 descargas, 0 likes en el momento de la ficha, sin benchmarks ni licencia declarada), por lo que debe evaluarse con cautela antes de usarlo en producción.
+No se dispone de informacion publicada sobre arquitectura interna, contexto, datos de entrenamiento ni benchmarks en la informacion proporcionada; esta ficha se limita a los datos verificables del repositorio y advierte explicitamente alli donde el dato no esta disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo ómnido multimodal; nombre comercial "Looped-Latent") |
-| Parámetros totales | 2.702.390.080 (≈2,7 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (familia LFM3 Omni; transformer multimodal presumiblemente, sin confirmar) |
+| Parametros totales | 2.702.390.080 (~2,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (más mmproj Q8_0 y f16 para la parte multimodal) |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas) y safetensors en el modelo base |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
+| Tamano del repo | 25,9 GB |
+| Modelo base | Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1 |
+| Cuantizador | mradermacher |
+| Descargas | 828 |
+| Libreria declarada | transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El nombre del checkpoint base ("LFM3-Omni-2B-Looped-Latent-v2.1") y la descripción de Liquid AI indican un modelo ómnido end-to-end que procesa texto, imagen, vídeo y audio, y genera texto, voz o texto y voz intercalados. La etiqueta "Looped-Latent" apunta a un mecanismo de capas recurrentes o latentes compartidas, pero no se confirma ni se detalla en las fuentes consultadas.
+No se ha publicado informacion sobre la arquitectura interna del modelo base en la informacion disponible. El nombre del modelo ("Looped-Latent") sugiere algun tipo de mecanismo de capas recurrentes o latentes compartidas, pero no hay documentacion que lo confirme. La presencia de ficheros mmproj en el repositorio GGUF indica que el modelo base incorpora un proyector multimodal, por lo que cabe esperar entrada de imagen o audio ademas de texto, aunque no se especifica que modalidades exactas ni como se combinan con el decodificador de texto.
 
-Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. La model card de la cuantización GGUF es únicamente un README de conversión y no incluye información sobre el entrenamiento del modelo original. La única indicación relevante es que se trata de un modelo "non-reasoning", es decir, sin modo de razonamiento explícito ni cadena de pensamiento.
+Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El autor del modelo base (Guilherme34) no aporta esa informacion en la model card citada, que corresponde integramente al trabajo de cuantizacion de mradermacher. Cualquier afirmacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, etc.) seria especulativa y no se incluye.
 
 ## Capacidades
 
-- Comprensión multimodal de entrada: texto, imágenes, vídeo y audio en un único modelo end-to-end.
-- Generación de salida multimodal: texto, voz (speech) o texto y voz intercalados.
-- Reconocimiento automático de voz (ASR) integrado, al sustituir a un modelo ASR dedicado.
-- Síntesis de voz (TTS) integrada, al sustituir a un modelo TTS dedicado.
-- Comprensión visión-lenguaje (VLM) integrada para imágenes y vídeo.
-- Conversación multi-turno (etiqueta "conversational" en Hugging Face).
-- Compatible con endpoints de inferencia (etiqueta "endpoints_compatible").
-- Modelo no razonador: no dispone de modo de pensamiento explícito ni cadena de razonamiento.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
-- Capacidades multilingües: solo inglés declarado.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Procesamiento multimodal: el repositorio incluye ficheros `mmproj` (Q8_0 y f16), necesarios para cargar el proyector multimodal en llama.cpp; la modalidad exacta (vision, audio o ambas) no esta documentada en la informacion disponible.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
+- Ejecucion local via llama.cpp y ecosistema GGUF (Ollama, LM Studio, llama-cpp-python).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad declarada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Modo thinking, vision, audio: no confirmado mas alla de la presencia del proyector multimodal.
 
 ## Casos de uso
 
-- Asistentes de voz en dispositivo: el modelo unifica ASR, LLM y TTS en una sola pieza de 2,7 B, lo que permite construir un asistente conversacional por voz que funcione sin conexión en un portátil o un dispositivo embebido con GPU integrada.
-- Transcripción y resumen de reuniones: al combinar ASR y generación de texto, puede transcribir audio y producir resúmenes o actas en una sola pasada, reduciendo la latencia frente a pipelines con varios modelos.
-- Descripción de imágenes y vídeo para accesibilidad: la entrada visual integrada permite generar descripciones en texto o en voz de imágenes y clips cortos, útil en aplicaciones de lectores de pantalla.
-- Interfaces conversacionales con respuesta hablada: la salida de voz intercalada con texto permite construir agentes de atención al cliente que respondan hablando, con un coste de hardware muy inferior al de un pipeline multimodal en la nube.
-- Prototipado rápido de aplicaciones multimodales: las cuantizaciones Q4_K_S y Q4_K_M (1,7-1,8 GB) permiten iterar en local con llama.cpp u Ollama sin infraestructura dedicada.
-- Análisis de contenido audiovisual en el borde (edge): al ser un modelo pequeño y multimodal, puede desplegarse en dispositivos con recursos limitados para clasificar o resumir audio y vídeo en tiempo real.
-- Investigación en modelos ómnidos: sirve como referencia ligera para estudiar la integración de modalidades en un único transformer, aunque la falta de documentación sobre arquitectura y entrenamiento limita su uso académico riguroso.
+- Prototipado local de asistentes conversacionales multimodales: con la cuantizacion Q4_K_M (1,8 GB) el modelo cabe en GPUs de consumo de 4-8 GB de VRAM, lo que permite montar un chatbot con entrada de imagen en un portatil para pruebas de concepto sin coste de API.
+- Experimentacion con modelos pequenos en investigacion: el rango de cuantizaciones (de Q2_K a f16) permite estudiar el impacto de la cuantizacion en la calidad de salida de un modelo multimodal de ~2,7B, comparando variantes con el mismo prompt.
+- Despliegue en entornos con recursos limitados: la version Q2_K (1,2 GB) o Q3_K_S (1,4 GB) permite ejecutar inferencia en CPU o en GPUs integradas, adecuado para demos offline o dispositivos edge donde no cabe un modelo mayor.
+- Integracion en pipelines de procesamiento de documentos con imagen: usando el fichero mmproj junto con una cuantizacion Q5_K_M o Q6_K, se puede alimentar el modelo con capturas o imagenes y obtener descripciones o respuestas en ingles, siempre que la tarea no requiera alta precision.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes de pesos mas dos proyectores, lo que facilita medir perplejidad y latencia por cuantizacion en un mismo hardware antes de fijar una version para produccion.
+- Base para fine-tuning o destilacion posterior: al estar disponible el modelo base en safetensors (via Guilherme34), se puede partir de el para ajuste con LoRA y luego cuantizar de nuevo a GGUF con el flujo de mradermacher.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+- VRAM estimada para inferencia (solo pesos, sin contar KV cache ni el proyector multimodal):
   - Q2_K: ~1,2 GB
-  - Q3_K_S: ~1,4 GB
-  - IQ4_XS: ~1,6 GB
-  - Q4_K_S: ~1,7 GB
-  - Q4_K_M: ~1,8 GB
-  - Q5_K_M: ~2,0 GB
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~1,4-1,6 GB
+  - IQ4_XS / Q4_K_S / Q4_K_M: ~1,6-1,8 GB
+  - Q5_K_S / Q5_K_M: ~2,0 GB
   - Q6_K: ~2,3 GB
   - Q8_0: ~3,0 GB
   - f16: ~5,5 GB
-- Componente multimodal adicional: mmproj Q8_0 (~0,6 GB) o mmproj f16 (~1,0 GB) para entrada de imagen, vídeo y audio.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones de 4 bits; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son válidas, aunque para un modelo de 2,7 B las consumer son suficientes.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs modernas con 4 GB o más de VRAM; también en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). vLLM y TGI no se confirman para este formato.
-- Latencia y throughput estimados: no disponibles.
+- Proyector multimodal adicional: mmproj-Q8_0 (~0,6 GB) o mmproj-f16 (~1,0 GB).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o A100/H100 para f16 y para mayor margen de contexto y batch.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas desde 4 GB de VRAM con Q4_K_M; en CPU es viable con Q2_K-Q4_K_S.
+- Opciones de despliegue: llama.cpp (referencia para GGUF), Ollama, LM Studio, llama-cpp-python; vLLM y TGI no soportan GGUF de forma nativa, por lo que para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones comparables de modelos de la misma categoría en la información proporcionada. Como referencia cualitativa, la familia LFM2 de Liquid AI incluye modelos de 1,2 B y 2,6 B orientados a dispositivo, pero no se confirman sus especificaciones ni su rendimiento relativo a este checkpoint.
+No se dispone de datos de rendimiento ni de especificaciones completas (contexto, licencia) de este modelo que permitan una comparacion rigurosa. Se ofrece una comparacion estructural con alternativas de tamano similar en formato GGUF:
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-Looped-Latent-v2.1 (este) | 2,7 B | no disponible | no disponible | GGUF, safetensors | Ómnido (texto/imagen/vídeo/audio) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
+| LFM3-Omni-2B-Looped-Latent-v2.1 (este) | ~2,7B | no disponible | no disponible | GGUF + safetensors | Multimodal (mmproj), solo ingles |
+| Gemma 2 2B (Google) | ~2,6B | 8K | Gemma license | GGUF + safetensors | Texto, multilingue, ampliamente testeado |
+| Qwen2.5 3B (Alibaba) | ~3,1B | 32K | Apache 2.0 | GGUF + safetensors | Texto, multilingue, tool calling |
+| Phi-3 Mini (Microsoft) | ~3,8B | 4K-128K | MIT | GGUF + safetensors | Texto, razonamiento, ingles centrico |
+
+La comparacion es estructural: no hay benchmarks publicados de este modelo que permitan afirmar superioridad o inferioridad en calidad frente a las alternativas.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es un riesgo legal relevante para producción.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad en MMLU, HumanEval, GSM8K ni tareas multimodales.
-- Modelo no razonador: no dispone de modo de pensamiento ni cadena de razonamiento, lo que limita tareas de razonamiento complejo o multi-paso.
-- Riesgo de alucinación: inherente a los modelos generativos de este tamaño; no hay evaluación específica publicada.
-- Sesgos: no documentados; al entrenarse presumiblemente con datos en inglés, es probable un sesgo cultural y lingüístico hacia ese idioma.
-- Contexto: longitud no disponible, lo que impide planificar cargas de trabajo con ventanas largas.
-- Checkpoint de terceros: la versión GGUF la publica mradermacher a partir de un checkpoint de Guilherme34, no de Liquid AI directamente; la fidelidad al modelo original no está verificada.
-- Madurez: 0 descargas y 0 likes en el momento de la ficha, sin comunidad ni validación externa.
-- Cuantizaciones estáticas únicamente: no hay cuantizaciones ponderadas/imatrix disponibles, lo que puede degradar la calidad en bits bajos (Q2_K, Q3_K_S).
+- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; verificar la licencia del modelo base (Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1) antes de cualquier despliegue en produccion.
+- Solo ingles: el modelo esta etiquetado unicamente para ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
+- Modelo de 2,7B parametros: capacidad de razonamiento y conocimiento factual limitados en comparacion con modelos de 7B o superiores; riesgo elevado de alucinacion en tareas de conocimiento especializado.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad; cualquier decision de adopcion deberia basarse en evaluacion propia.
+- Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan la calidad de forma notable; el propio autor recomienda Q4_K_S o Q4_K_M como equilibrio velocidad/calidad.
+- Multimodalidad no documentada en detalle: se desconoce que modalidades soporta exactamente el proyector mmproj y con que calidad.
+- Repositorio de 25,9 GB: incluye todas las cuantizaciones; descargar solo los ficheros necesarios para no saturar el disco.
+- Sin informacion sobre sesgos: no hay documentacion sobre el dataset de entrenamiento ni evaluaciones de sesgo.
+- Modelo base de autor individual: menor garantia de mantenimiento, soporte y actualizaciones que modelos de laboratorios consolidados.
 
 ## Enlaces
 
-- Hugging Face (esta cuantización): https://huggingface.co/mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF
 - Modelo base: https://huggingface.co/Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1
-- Variante GGUF del autor del base: https://huggingface.co/Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF
-- Documentación oficial de Liquid AI sobre LFM3-Omni-2B: https://docs.liquid.ai/lfm/models/lfm3-omni-2b
-- Página de descargas del cuantizador: https://hf.tst.eu/model#LFM3-Omni-2B-Looped-Latent-v2.1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#LFM3-Omni-2B-Looped-Latent-v2.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

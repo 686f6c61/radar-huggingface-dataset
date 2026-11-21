@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "saggamer/orchestrator-v1.5-GGUF · Hugging Face",
-      "url": "https://huggingface.co/saggamer/orchestrator-v1.5-GGUF",
-      "snippet": "This text-model export contains the backbone and all five trained channels from Orchestrator v1.5: control, browser, MCP, coding and presentation. It preserves the original F32 low-rank expert weights and routers, with 16 experts in each of decoder layers 39–41 and two selected per token."
-    },
-    {
-      "title": "saggamer/orchestrator-v1.5 · Hugging Face",
-      "url": "https://huggingface.co/saggamer/orchestrator-v1.5",
-      "snippet": "Orchestrator v1.5 is Kira Superapp's local, Apple Silicon research-preview model bundle for everyday assistance, browser work, and multi-step agentic tasks. It combines a Gemma 4 E4B instruction base with task-routed MLX adapters and Kira's bounded execution controller. Kira handles tool execution and returns observations to the model before it continues."
-    }
-  ]
+  "sources": []
 }

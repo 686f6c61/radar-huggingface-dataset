@@ -5,7 +5,7 @@
   "author": "13fragments",
   "url": "https://huggingface.co/13fragments/ner-german-historic-large",
   "created_at": "2026-11-18T14:37:27.000Z",
-  "updated_at": "2026-11-19T10:41:49.000Z",
+  "updated_at": "2026-11-20T22:48:21.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 558850057,
   "parameters_human": "558.9M",

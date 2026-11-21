@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Frost Cyber Mini Uncensored v1.1 — GGUF - Hugging Face",
-      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1-GGUF",
-      "snippet": "By Vatsal Bajpai (@xblack) · FrostWolfAI Labs — GGUF quants of Frost-Cyber-Mini-Uncensored-v1.1, a compact, fast, local cybersecurity and software-engineering assistant with an agentic tool-use phase, for red-team, OSINT, CTI, secure coding and agentic workflows."
-    },
-    {
-      "title": "FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF · Hugging Face",
-      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF",
-      "snippet": "Frost Cyber Mini 1.0 is an uncensored (abliterated) offensive-security model. Its safety filtering is substantially reduced and it will produce exploit code, payloads, and attacker tradecraft on request."
-    }
-  ]
+  "sources": []
 }

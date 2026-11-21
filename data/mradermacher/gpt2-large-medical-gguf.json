@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gpt2-large-medical-GGUF",
+  "slug": "mradermacher-gpt2-large-medical-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gpt2-large-medical-GGUF",
+  "created_at": "2025-02-26T00:56:00.000Z",
+  "updated_at": "2026-11-21T03:20:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "en",
+    "dataset:BI55/MedText",
+    "dataset:pubmed_qa",
+    "base_model:Locutusque/gpt2-large-medical",
+    "base_model:quantized:Locutusque/gpt2-large-medical",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 238,
+  "trending_score": 0,
+  "parameters": 838366720,
+  "parameters_human": "838.4M",
+  "storage_bytes": 7718074720,
+  "storage_human": "7.7 GB",
+  "context_length": 1024,
+  "base_model": "Locutusque/gpt2-large-medical",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

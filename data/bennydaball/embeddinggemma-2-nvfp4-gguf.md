@@ -2,101 +2,101 @@
 
 ## Resumen
 
-EmbeddingGemma-2-NVFP4-GGUF es una cuantizacion en formato GGUF del modelo de embeddings google/embeddinggemma-2, desarrollado originalmente por Google DeepMind y convertido por el usuario BennyDaBall. No se ha reentrenado ni ajustado nada: el repositorio unicamente cambia como se almacenan los pesos, aplicando una mezcla por tensor de NVFP4 (formato de 4 bits de NVIDIA para arquitectura Blackwell) y Q8_0, con el objetivo de reducir el peso del modelo a aproximadamente un tercio del original sin degradar la calidad de los embeddings.
+EmbeddingGemma-2-NVFP4-GGUF es una cuantización en formato NVFP4 del modelo de embeddings google/embeddinggemma-2, desarrollado originalmente por Google DeepMind y redistribuido por BennyDaBall. Se trata de un modelo de extracción de características (feature-extraction) de 271.002.794 parámetros totales que proyecta texto, imágenes, vídeo y audio en un espacio vectorial común de 768 dimensiones, lo que lo hace apto para búsqueda semántica, recuperación de información y similitud de frases en entornos multilingües.
 
-El modelo base tiene 271.002.794 parametros (unos 271 M) y produce representaciones de 768 dimensiones. Segun la model card del cuantizador, los codificadores de vision y audio se incluyen sin modificar en BF16, de modo que texto, imagenes, video y audio caen en el mismo espacio vectorial. La licencia Apache 2.0 se mantiene intacta.
+La relevancia de esta versión concreta reside en la compresión: el autor aplica una mezcla por tensor de NVFP4 y Q8_0 en lugar de un 4-bit uniforme, reduciendo el archivo principal a 184 MiB frente a los 532 MiB del BF16 original, con una pérdida de calidad mínima según las métricas reportadas. Los codificadores de visión y audio se mantienen intactos en BF16 en un archivo mmproj separado de 937 MiB.
 
-Es relevante ahora por dos motivos: permite ejecutar busqueda semantica multilingue y multimodal en hardware de consumo con un consumo de disco inferior a 200 MiB para el modelo de texto, y explota el formato NVFP4, que es especifico de las GPU Blackwell. La model card reporta una perdida de calidad minima frente al BF16 original en recuperacion (nDCG@10 de 75,51 frente a 76,06) y en busqueda de imagenes (R@1 de 86,2 frente a 86,7).
+El modelo está pensado para ejecutarse en llama.cpp (versión b11658 o superior) y LM Studio, con soporte específico para GPUs Blackwell mediante NVFP4, aunque el autor indica que otras GPUs deberían funcionar a través de los kernels de respaldo de llama.cpp. La licencia es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en la informacion proporcionada (modelo de embeddings derivado de google/embeddinggemma-2, familia Gemma; la model card no detalla la arquitectura interna) |
-| Parametros totales | 271.002.794 (aproximadamente 271 M) |
-| Parametros activos | no aplica: no es un modelo MoE |
-| Longitud de contexto | no disponible de forma explicita; la model card menciona un valor por defecto de 262.144 tokens en LM Studio y recomienda cargar con 2048 u 8192 |
-| Tipos de cuantizacion | NVFP4 por tensor combinado con Q8_0 en las capas sensibles; codificadores de vision y audio en BF16; activaciones de 8 bits |
-| Idiomas soportados | multilingue (idiomas concretos no detallados en la informacion disponible) |
+| Arquitectura | Transformer de embeddings (modelo base google/embeddinggemma-2); codificadores de visión y audio en mmproj separado |
+| Parametros totales | 271.002.794 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (la model card menciona un valor por defecto de 262.144 en LM Studio y recomienda cargar con 2048 u 8192) |
+| Tipos de cuantizacion | NVFP4 mixto con Q8_0 por tensor; codificadores multimodal en BF16 |
+| Idiomas soportados | multilingüe |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
+| Formato de pesos | GGUF (archivos: embeddinggemma-2-NVFP4.gguf, embeddinggemma-2-NVFP4-compact.gguf, mmproj-embeddinggemma-2-BF16.gguf) |
+| Dimension del embedding | 768 |
+| Tamano del repo | 1.4 GB |
+| Pipeline | feature-extraction |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no entrena ni ajusta ningun modelo. La arquitectura, el entrenamiento y el espacio de embeddings multimodal corresponden integramente a google/embeddinggemma-2, desarrollado por Google DeepMind. Lo unico que cambia aqui es la representacion de los pesos: se aplica una mezcla por tensor en la que cada tensor del modelo de texto se evalua individualmente para decidir si soporta NVFP4. Los tensores robustos pasan a NVFP4 y los sensibles (la proyeccion de salida final, las proyecciones de valor de la atencion, las puertas y proyecciones de entrada de cada capa, y las FFN al principio y al final de la red) se mantienen en Q8_0.
+El modelo base es google/embeddinggemma-2, desarrollado por Google DeepMind. Esta ficha describe únicamente la cuantización: el autor declara explícitamente que no se ha entrenado ni ajustado nada, y que la arquitectura, el entrenamiento, el espacio de embeddings multimodal y los prompts de tarea son obra de Google. Por tanto, los detalles de composición del dataset, número de tokens de entrenamiento y técnicas de alineación (RLHF/DPO) no están disponibles en la información proporcionada y deben consultarse en la model card del modelo original.
 
-La cuantizacion NVFP4 emplea escalado de dos niveles: una escala FP32 por tensor sobre una escala FP8 por cada 16 pesos, eligiendo en cada bloque la escala que minimiza el error en lugar del valor por defecto. Ademas, todos los tensores NVFP4 se marcan con activaciones de 8 bits dentro del propio archivo, porque los embeddings rinden mejor con 8 bits que con los 4 bits que Blackwell usa habitualmente en las matmul NVFP4. No se aplico RLHF, DPO ni ninguna fase de ajuste posterior; el pipeline declarado es feature-extraction.
+La innovación técnica de esta versión es el esquema de cuantización. En lugar de aplicar 4 bits de forma uniforme, el autor inspecciona cada tensor del modelo de texto y decide su precisión: los tensores que toleran bien NVFP4 se cuantizan a 4 bits, mientras que la proyección de salida final, las proyecciones de valor de atención, las compuertas y proyecciones de entrada por capa y las FFN de los extremos de la red se mantienen en Q8_0. El escalado NVFP4 es de dos niveles (una escala FP32 por tensor sobre una escala FP8 por cada 16 pesos), con la escala de cada bloque elegida para minimizar el error. Las activaciones se fijan a 8 bits mediante un flag en el propio archivo, que llama.cpp lee sin necesidad de variables de entorno.
 
 ## Capacidades
 
-- Generacion de embeddings de texto para similitud semantica y recuperacion de informacion (retrieval).
-- Embeddings multimodales: segun la model card, texto, imagenes, video y audio se proyectan en el mismo espacio de 768 dimensiones.
-- Busqueda de imagenes a partir de consultas de texto (evaluada sobre Flickr-1k con R@1).
-- Recuperacion de codigo, con CosQA incluido en la evaluacion de retrieval del autor.
-- Soporte multilingue, con evaluacion STS sobre 11 pares de idiomas y recuperacion en aleman, bengali y perso.
-- Soporte de prompts de tarea de Google (por ejemplo, `task: search result | query: ` para consultas y `title: none | text: ` para documentos).
-- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso, y no dispone de modo de pensamiento.
+- Generación de embeddings de texto para similitud semántica y recuperación de información.
+- Embeddings multimodales: texto, imágenes, vídeo y audio se proyectan en el mismo espacio de 768 dimensiones.
+- Búsqueda de imágenes a partir de texto (text-to-image) y viceversa.
+- Recuperación multilingüe, con evaluación reportada en alemán, bengalí y persa, además de pares de idiomas en STS17.
+- Recuperación de código (evaluada con CosQA).
+- Soporte de prompts de tarea de Google (por ejemplo, `task: search result | query: ` para consultas y `title: none | text: ` para documentos), necesarios para obtener el rendimiento esperado.
+- Compatible con endpoints estilo OpenAI (`/v1/embeddings`) mediante llama-server.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Busqueda semantica multilingue sobre documentacion interna: indexando el corpus con el prefijo `title: none | text: ` y las consultas con `task: search result | query: `, el modelo permite recuperar fragmentos relevantes en varios idiomas desde un unico indice de 768 dimensiones, con un coste de almacenamiento de vectores muy bajo.
-- Busqueda de imagenes por texto en bibliotecas de producto o archivos fotograficos: cargando el mmproj en BF16 y fijando el presupuesto de 280 tokens por imagen, el modelo alcanza un R@1 de 86,2 en Flickr-1k, suficiente para filtrado visual y catalogacion asistida.
-- Deduplicacion y agrupacion de corpus: al ser un modelo de 271 M que embebe a decenas de miles de tokens por segundo, resulta viable calcular embeddings de millones de documentos y aplicar clustering o deteccion de near-duplicates en una sola GPU.
-- RAG ejecutado en local o en el borde: con 184 MiB de modelo de texto, el componente de recuperacion cabe en un portatil o en un equipo sin GPU dedicada, lo que permite montar un pipeline de recuperacion que no envia datos a servicios externos.
-- Enrutamiento de consultas y clasificacion por similitud: comparando el embedding de la consulta con embeddings de referencia de cada categoria se puede clasificar intencion o derivar a un flujo concreto sin entrenar un clasificador adicional.
-- Recuperacion sobre repositorios de codigo: el modelo esta evaluado en CosQA, por lo que es adecuado para buscar fragmentos de codigo a partir de descripciones en lenguaje natural dentro de asistentes de desarrollo.
-- Moderacion y filtrado por similitud: comparar entradas contra un conjunto de embeddings de referencia permite bloquear o marcar contenido cercano a patrones conocidos.
-- Indexacion de archivos de audio o video: gracias a los codificadores multimodales incluidos, se pueden generar embeddings de pistas de audio o fotogramas y habilitar busqueda sobre archivos no textuales.
+- Búsqueda semántica en documentación técnica: indexar manuales y artículos con los prompts de tarea de Google y consultar mediante similitud vectorial; el modelo cabe en 184 MiB, por lo que puede desplegarse en el mismo nodo que la base de datos vectorial.
+- Motor de recuperación para RAG: generar embeddings de fragmentos de documentos y de consultas de usuario en pipelines de generación aumentada, con calidad de recuperación (nDCG@10 de 75,51) muy próxima al BF16 original (76,06).
+- Búsqueda de imágenes en catálogos: usar el archivo mmproj en BF16 junto con los flags `--image-min-tokens 280 --image-max-tokens 280` para indexar imágenes y recuperarlas por descripción textual, con un R@1 de 86,2 en Flickr-1k.
+- Deduplicación y clustering de contenido multilingüe: calcular embeddings de artículos o tickets en varios idiomas y agrupar por similitud; el modelo mantiene un rendimiento de STS multilingüe de 82,49, ligeramente superior al BF16 reportado (82,46).
+- Búsqueda sobre código fuente: indexar repositorios y recuperar fragmentos relevantes a partir de descripciones en lenguaje natural, aprovechando la evaluación incluida sobre CosQA.
+- Despliegue en estaciones de trabajo con GPU de consumo: al ocupar 184 MiB en el archivo principal, el modelo deja VRAM libre para el modelo generativo en arquitecturas RAG locales; el autor reporta entre 85.000 y 90.000 tokens por segundo en una RTX 5090.
+- Filtrado y moderación semántica por similitud: comparar embeddings de mensajes entrantes contra un conjunto de referencia de contenido permitido o problemático, sin necesidad de un modelo generativo.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card del cuantizador (no son evaluaciones independientes):
+Datos reportados por el autor de la cuantización en la model card:
 
-| Modelo | Tamano | Retrieval (nDCG@10) | STS multilingue | Busqueda de imagenes (R@1) |
-|---|---:|---:|---:|---:|
-| Original BF16 | 532 MiB | 76,06 | 82,46 | 86,7 |
-| embeddinggemma-2-NVFP4 | 184 MiB | 75,51 | 82,49 | 86,2 |
-| embeddinggemma-2-NVFP4-compact | 169 MiB | 75,62 | 82,48 | 86,2 |
+| Metrica | Original BF16 (532 MiB) | NVFP4 (184 MiB) | NVFP4-compact (169 MiB) |
+|---|---:|---:|---:|
+| Retrieval (nDCG@10) | 76,06 | 75,51 | 75,62 |
+| Multilingual STS | 82,46 | 82,49 | 82,48 |
+| Image search (R@1, Flickr-1k) | 86,7 | 86,2 | 86,2 |
 
-Segun la model card, el valor de retrieval es la media sobre SciFact, NFCorpus, ArguAna, CosQA (codigo) y recuperacion en Wikipedia en aleman, bengali y perso; el valor de STS corresponde a STS17 sobre 11 pares de idiomas; y la busqueda de imagenes es text-to-image sobre Flickr-1k. El autor indica ademas que el modelo embebe a unos 85.000-90.000 tokens por segundo en una RTX 5090, tanto en BF16 como en esta cuantizacion, porque a este tamano los 4 bits no aportan ganancia de velocidad.
+La métrica de retrieval es la media sobre SciFact, NFCorpus, ArguAna, CosQA y recuperación en Wikipedia en alemán, bengalí y persa. La métrica de STS corresponde a STS17 sobre 11 pares de idiomas. No se han publicado en la información disponible resultados de MMLU, HumanEval o GSM8K, que no aplican a un modelo de embeddings.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo de texto ocupa 184 MiB (169 MiB la variante compact), y el mmproj multimodal anade 937 MiB, por lo que el conjunto completo ronda 1,1 GiB mas el espacio de cache y activaciones.
-- GPU recomendadas: NVIDIA RTX 5090 para el formato NVFP4 nativo; cualquier GPU con al menos 2 GB de VRAM puede alojar el modelo de texto.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en CPU, dado el tamano del archivo.
-- Nota sobre compatibilidad: NVFP4 es un formato de Blackwell. Otras GPU pueden ejecutarlo mediante los kernels de respaldo de llama.cpp, pero el autor indica que no lo ha probado.
-- Opciones de despliegue: llama.cpp (version b11658 o superior) con `llama-server` y endpoint compatible con `/v1/embeddings`; LM Studio, ajustando la longitud de contexto a 2048 u 8192.
-- Latencia y throughput: aproximadamente 85.000-90.000 tokens por segundo en una RTX 5090, segun el autor. No hay datos de latencia para otras GPU.
-- Parametros de ejecucion relevantes: hay que aumentar `-ub` y `-b` de forma conjunta si se embeben documentos largos, y mantener los flags `--image-min-tokens 280` y `--image-max-tokens 280` cuando se trabaje con imagenes.
+- VRAM estimada: el archivo principal ocupa 184 MiB (169 MiB en la variante compact); con el mmproj multimodal en BF16 se añaden 937 MiB. En total, menos de 1,2 GiB para el modo multimodal completo.
+- GPU recomendadas: el autor construyó y probó el modelo en una RTX 5090 (Blackwell), la arquitectura que soporta NVFP4 de forma nativa. Otras GPUs pueden ejecutarlo mediante los kernels de respaldo de llama.cpp, aunque el autor no lo ha verificado.
+- Cabe holgadamente en cualquier GPU de consumo con suficiente VRAM para el runtime de llama.cpp; el cuello de botella es el modelo generativo que lo acompañe, no el embedding.
+- Opciones de despliegue: llama.cpp (versión b11658 o superior) mediante `llama-server` con `--embedding --pooling mean`, y LM Studio. El endpoint expuesto es compatible con la API de embeddings de OpenAI (`/v1/embeddings`).
+- Rendimiento: aproximadamente 85.000 a 90.000 tokens por segundo en una RTX 5090, tanto en el original como en la versión NVFP4; el autor señala que a este tamaño la cuantización no aporta velocidad, solo reducción de espacio en disco y descarga.
+- Notas de configuración: usar `-ub 2048 -b 2048` (o valores que cubran la entrada más larga, ya que el modelo lee cada entrada en una sola pasada); en LM Studio, fijar la longitud de contexto a 2048 u 8192, porque el valor por defecto de 262.144 impide cargar cualquier GGUF de EmbeddingGemma 2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tamano en disco | Retrieval (nDCG@10) | Licencia | Disponibilidad |
-|---|---:|---:|---:|---|---|
-| google/embeddinggemma-2 (BF16) | 271 M | 532 MiB | 76,06 | Apache 2.0 | Hugging Face, safetensors |
-| embeddinggemma-2-NVFP4 | 271 M | 184 MiB | 75,51 | Apache 2.0 | Hugging Face, GGUF |
-| embeddinggemma-2-NVFP4-compact | 271 M | 169 MiB | 75,62 | Apache 2.0 | Hugging Face, GGUF |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| EmbeddingGemma-2-NVFP4 (esta ficha) | 271 M | no disponible | GGUF NVFP4/Q8_0 | Apache 2.0 | 184 MiB; multimodal con mmproj; requiere llama.cpp b11658+ |
+| google/embeddinggemma-2 (BF16) | 271 M | no disponible | safetensors | Apache 2.0 | 532 MiB; referencia de calidad; sin dependencia de kernels NVFP4 |
+| embeddinggemma-2-NVFP4-compact | 271 M | no disponible | GGUF NVFP4/Q8_0 | Apache 2.0 | 169 MiB; misma familia, ligeramente menor calidad en retrieval |
 
-No hay en la informacion disponible datos de comparacion con otros modelos de embeddings de la misma categoria (por ejemplo, alternativas de terceros). Los unicos datos comparativos publicados son los de las tres variantes anteriores, todos ellos procedentes de la model card del cuantizador.
+No se dispone en la información proporcionada de datos sobre otros modelos de embeddings comparables (por ejemplo, de otras familias) para ampliar la comparativa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: solo produce embeddings. No puede usarse para generar texto, razonar de forma multi-paso ni invocar herramientas.
-- Los unicos benchmarks disponibles proceden de la model card del autor de la cuantizacion, no de una evaluacion independiente ni de Google.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad ni evidencia de uso en produccion.
-- La model card advierte de que el modelo base ve cada imagen con un presupuesto fijo de 280 tokens; omitir los flags de imagen en llama.cpp empeora de forma perceptible la busqueda de imagenes. La advertencia se aplica a cualquier GGUF de este modelo, no solo a esta cuantizacion.
-- En LM Studio es necesario bajar la longitud de contexto a 2048 u 8192, porque el valor por defecto de 262.144 impide cargar cualquier GGUF de EmbeddingGemma 2.
-- Requiere llama.cpp b11658 o superior para leer correctamente las marcas de activaciones de 8 bits.
-- NVFP4 depende de hardware Blackwell para funcionar de forma nativa; en otras GPU se usan kernels de respaldo no verificados por el autor, con comportamiento y rendimiento desconocidos.
-- Es imprescindible usar los prompts de tarea de Google para obtener la calidad reportada; usarlos de forma incorrecta degrada los resultados.
-- No se documentan sesgos especificos de esta cuantizacion. Cualquier sesgo presente proviene del modelo base google/embeddinggemma-2 y no se analiza en esta ficha.
-- Riesgo de falsos positivos en tareas de similitud y deduplicacion: la proximidad en el espacio de embeddings no garantiza equivalencia semantica real.
-- Licencia Apache 2.0, que permite uso comercial, modificacion y redistribucion siempre que se conserve la atribucion correspondiente.
-- No se detallan los idiomas concretos soportados mas alla de la etiqueta "multilingual", ni la composicion del dataset de entrenamiento original.
+- No es un modelo generativo: no produce texto, no razona y no soporta tool calling; su uso se limita a la producción de vectores.
+- El rendimiento depende de usar los prompts de tarea de Google; omitirlos degrada la calidad de recuperación.
+- El modo multimodal requiere pasar los flags `--image-min-tokens 280 --image-max-tokens 280` en llama.cpp; sin ellos, las imágenes pequeñas se procesan a resolución nativa y la búsqueda de imágenes empeora. El autor advierte que esto afecta a todos los GGUF de este modelo.
+- En LM Studio es obligatorio reducir la longitud de contexto al cargar; el valor por defecto provoca fallo de carga en cualquier GGUF de la familia.
+- NVFP4 es un formato de Blackwell: en GPUs anteriores funciona mediante kernels de respaldo no verificados por el autor, con posible degradación de rendimiento.
+- La cuantización no aporta ganancia de velocidad a este tamaño; solo reduce el espacio en disco y la descarga.
+- Riesgo de sesgos y alucinaciones: no se documentan en la información disponible para esta cuantización; deben evaluarse en la model card del modelo base de Google.
+- Licencia Apache 2.0, que permite uso comercial; se recomienda conservar la atribución a Google DeepMind como autor del modelo original y a BennyDaBall como autor de la cuantización.
+- El repositorio tiene 0 likes y 783 descargas en el momento de la consulta, por lo que la validación comunitaria es limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/EmbeddingGemma-2-NVFP4-GGUF
+- Repositorio de la cuantización: https://huggingface.co/BennyDaBall/EmbeddingGemma-2-NVFP4-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
-- Perfil del autor de la cuantizacion: https://x.com/BennyDaBall_OG
+- Perfil del autor en X: https://x.com/BennyDaBall_OG
+- Apoyo al autor: https://ko-fi.com/bennydaball

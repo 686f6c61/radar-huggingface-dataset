@@ -44,25 +44,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Ground-based cloud classification",
-      "dataset": "CCSN + author photos (binary cumulonimbus vs. other)",
-      "metric": "Accuracy (held-out test)",
-      "value": 0.9336
-    },
-    {
-      "task": "Ground-based cloud classification",
-      "dataset": "CCSN + author photos (binary cumulonimbus vs. other)",
-      "metric": "Macro-F1 (held-out test)",
-      "value": 0.7746
-    },
-    {
-      "task": "Ground-based cloud classification",
-      "dataset": "CCSN + author photos (binary cumulonimbus vs. other)",
-      "metric": "ROC-AUC (held-out test)",
-      "value": 0.921
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

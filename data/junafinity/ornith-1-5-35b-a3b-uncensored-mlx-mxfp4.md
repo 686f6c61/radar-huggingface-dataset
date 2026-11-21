@@ -2,96 +2,97 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-uncensored-MLX-MXFP4 es una versión **abliterated** (uncensored) del modelo multimodal Ornith-1.5-35B-A3B, publicada por el usuario junafinity en Hugging Face. El modelo base, desarrollado por ornith-ai, es un Mixture-of-Experts (MoE) de 35 mil millones de parámetros con ~3 mil millones activos por token, basado en la arquitectura Qwen3.5-MoE. Esta versión concreta ha sido sometida a una técnica de abliteración (abliterix) para eliminar la dirección de rechazo de la red neuronal, reduciendo los rechazos en un conjunto de pruebas dañinas de 100 a 9. Además, se ha cuantizado a formato **MXFP4** (4-bit) mediante `mlx-vlm`, orientado a ejecución en Apple Silicon con memoria unificada.
+Ornith-1.5-35B-A3B-uncensored-MLX-MXFP4 es una cuantizacion en formato MLX del modelo abliterado Ornith-1.5-35B-A3B, un modelo de lenguaje y vision de tipo Mixture-of-Experts (MoE) con 35.107.181.936 parametros totales. Lo publica el usuario junafinity bajo la marca VeriSafe.Live, que se dedica a fine-tuning, cuantizacion y servicio de modelos de pesos abiertos. El modelo base es ornith-ai/Ornith-1.5-35B-A3B, etiquetado en el ecosistema Qwen3.5, y esta version concreta aplica una ablacion de la direccion de rechazo (abliteration) sobre los pesos originales.
 
-La relevancia de este modelo reside en su uso como instrumento de investigación en **red teaming y ciberseguridad defensiva**: permite medir el techo de capacidad real de los pesos sin la interferencia de los rechazos entrenados, y sirve como mitad de tratamiento en pares controlados contra el modelo base para evaluar sistemas de moderación y filtros. Su licencia Apache 2.0 permite uso comercial, aunque el autor advierte de la necesidad de capas de moderación independientes si se despliega en producción.
+La relevancia de esta ficha esta en que combina tres cosas poco habituales en un mismo artefacto: un modelo MoE multimodal con torre de vision preservada, una edicion de pesos que elimina parte de los rechazos aprendidos, y una cuantizacion MXFP4 de 4.402 bits por peso pensada para ejecutarse en Apple Silicon mediante la libreria mlx-vlm. El repositorio ocupa 19,3 GB y acumula 910 descargas y 3 likes en el momento de la consulta.
 
-## Especificaciones técnicas
+El autor declara explicitamente que el uso previsto es la investigacion en red teaming y ciberseguridad defensiva, y advierte de que no debe exponerse como endpoint publico sin una capa de moderacion independiente. La licencia declarada es Apache 2.0, lo que facilita el uso comercial segun los terminos de esa licencia, aunque las condiciones del modelo base deben verificarse por separado.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) basada en Qwen3.5-MoE |
-| Parametros totales | 35 B (según card del autor) |
-| Parametros activos | ~3 B por token |
-| Longitud de contexto | 262 K tokens (según BenchLM para el modelo base) |
-| Tipos de cuantizacion | MXFP4 (4-bit, 4.402 bits por peso, grupo de 32) |
+| Arquitectura | MoE multimodal (vision-language), familia Qwen3.5, etiqueta qwen3_5_moe |
+| Parametros totales | 35.107.181.936 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | MXFP4 (4.402 bits por peso, group-size 32, dtype bfloat16); existe variante MLX 8-bit y GGUF Q8_0 en la misma familia |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | MLX (safetensors) con cuantización MXFP4 |
+| Formato de pesos | MLX (safetensors), cuantizacion MXFP4, checkpoint mlx-vlm con torre de vision incluida |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-35B-A3B es un MoE con aproximadamente 3 mil millones de parámetros activos por token. Su entrenamiento sigue el paradigma de **self-scaffolding y self-improvement** de la serie Ornith-1.5, donde el modelo propone nuevas tareas, genera scaffolds específicos y produce soluciones para aprendizaje por refuerzo. La arquitectura incluye un vision tower (encoder de imagen) integrado en el checkpoint, lo que lo convierte en un modelo multimodal de imagen-texto.
+El modelo base es un transformer de tipo Mixture-of-Experts con vision, identificado por la etiqueta qwen3_5_moe, con 35.107 millones de parametros totales y una denominacion A3B que sugiere del orden de 3.000 millones de parametros activos por token, aunque el dato exacto de parametros activos no se detalla en la informacion disponible. La model card menciona que el modelo base incorpora MTP (multi-token prediction) nativo, una tecnica de decodificacion especulativa integrada en el checkpoint original. Esta version MLX descarta los tensores mtp.* durante la conversion, por lo que pierde esa capacidad; el autor remite a su variante GGUF de 8 bits para conservar el MTP nativo.
 
-La versión abliterated se ha obtenido mediante la herramienta **Abliterix** (versión 1.12.2), que edita los parámetros de atención (q/k/v/o), `mlp.down_proj` y los parámetros de expertos/routers del MoE para eliminar la dirección de rechazo. La abliteración no afecta al vision tower ni a los tensores `mtp.*` (multi-token prediction). La cuantización a MXFP4 se realizó con `mlx-vlm` (conversión con `-q --q-mode mxfp4 --q-group-size 32 --dtype bfloat16`), que es un formato de precisión reducida de 4 bits optimizado para Apple Silicon. Esta cuantización es más agresiva que la de 8 bits, por lo que puede degradar ligeramente el rendimiento numérico.
+Sobre el entrenamiento del modelo base no hay informacion en la documentacion proporcionada: no se indica el volumen de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. La edicion aplicada por VeriSafe.Live es una abliteration, es decir, la eliminacion de la direccion de rechazo en los componentes del modelo, un procedimiento que segun el autor suprime la manifestacion del rechazo pero no la capacidad subyacente. La conversion a MLX se realizo con el comando mlx-vlm con los parametros -q --q-mode mxfp4 --q-group-size 32 --dtype bfloat16, resultando en 4.402 bits por peso. La torre de vision se conserva dentro del checkpoint, algo que el autor destaca como diferenciador frente a otras conversiones.
 
 ## Capacidades
 
-- **Texto e imagen (multimodal)**: acepta entradas de imagen y texto, generando texto como respuesta. El vision tower se conserva dentro del checkpoint.
-- **Generación de texto y razonamiento**: hereda las capacidades del modelo base para tareas de razonamiento complejo, análisis y generación de contenido.
-- **Generación de código**: el modelo base supera a Qwen 3.6-35B en benchmarks de codificación, por lo que esta versión conserva esa capacidad (aunque la cuantización puede afectarla).
-- **Soporte para tareas agenticas**: según la búsqueda web, el modelo base destaca en benchmarks de agentes, lo que sugiere que puede manejar flujos de trabajo multi-step.
-- **Multilingüismo**: no se especifican idiomas soportados; probablemente siga el alcance del modelo base, pero no se dispone de datos.
-- **Sin MTP**: el formato MLX elimina los tensores `mtp.*`, por lo que no se dispone de multi-token prediction en esta versión.
+- Generacion de texto y razonamiento conversacional multi-turno, con soporte de system prompt.
+- Procesamiento de imagen y texto de forma conjunta (pipeline image-text-to-text), con torre de vision preservada en el checkpoint.
+- Capacidad de seguir instrucciones y mantener conversaciones multi-turno.
+- Capacidad de razonamiento y generacion de codigo: no se detalla explicitamente en la model card, pero es coherente con la familia Qwen3.5; el dato concreto no esta disponible.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; el repositorio no declara lista de idiomas.
+- Modo thinking explicito: no disponible.
+- Ausencia parcial de rechazos por abliteration, con supervivencia de algunos rechazos en rutas de vision, reafirmacion multi-turno y direccionamiento por system prompt.
 
 ## Casos de uso
 
-- **Red teaming de sistemas de IA**: el modelo permite probar la robustez de filtros de entrada y clasificadores de salida sin que el propio modelo genere rechazos. Se usa como mitad de tratamiento en pares controlados frente al modelo base.
-- **Evaluación de capas de moderación**: al eliminar los refusals, se puede evaluar la efectividad de moderadores externos (APIs, filtros) en un entorno donde el modelo no contribuye con su propia seguridad.
-- **Investigación en interpretabilidad**: la comparación entre el modelo base y esta versión permite estudiar el efecto de la ablación de direcciones de rechazo en el comportamiento interno.
-- **Generación de datos etiquetados para clasificadores**: se pueden generar completaciones no censuradas para entrenar o evaluar modelos de detección de contenido abusivo o dañino.
-- **Aislamiento de superficies de ataque**: en pruebas de inyección de prompts, abuso de herramientas o exfiltración de datos, este modelo permite aislar el control bajo prueba sin interferencias de rechazos.
-- **Evaluación de techo de capacidad**: para entender qué puede generar realmente un modelo en un dominio específico, sin el sesgo de los rechazos entrenados.
+- Red teaming controlado de sistemas defensivos: el modelo actua como mitad de tratamiento frente a su base original para medir el techo de capacidad real de los pesos en un dominio, independientemente de los rechazos que el modelo base muestra. El par base/abliterado constituye un control experimental limpio.
+- Evaluacion de pilas de moderacion: al no contribuir con rechazos propios, el modelo permite probar filtros de entrada, clasificadores de salida, defensas frente a prompt injection y APIs de moderacion, y detectar huecos en el plano de control defensivo.
+- Aislamiento de superficie de ataque: en bucles automatizados de red teaming, un objetivo que no rechaza evita que el bucle se detenga por rechazos no relacionados y permite aislar el control bajo prueba (inyeccion, abuso de herramientas, rutas de exfiltracion de datos, evasion de politicas).
+- Generacion de datos etiquetados para entrenamiento y evaluacion de clasificadores de abuso: el modelo puede producir completaciones etiquetadas que sirvan para entrenar o comparar modelos de deteccion de contenido.
+- Investigacion en interpretabilidad del rechazo residual: al ser la abliteration una edicion especificada sobre componentes conocidos del modelo, el par base/abliterado permite estudiar que rechazos sobreviven y por que.
+- Analisis de imagenes en entornos de investigacion sobre Apple Silicon: gracias a la torre de vision preservada y al formato MLX, puede ejecutarse localmente en un Mac para tareas de descripcion de imagenes, extraccion de texto en capturas o analisis de documentos escaneados sin salir del equipo.
+- Despliegue local en estaciones de trabajo Apple: la cuantizacion MXFP4 de 4.402 bits por peso y los 19,3 GB del repositorio permiten ejecutar un MoE de 35B en hardware Apple Silicon con memoria unificada suficiente, algo inviable en bf16 en la mayoria de equipos de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para esta versión cuantizada en concreto. Los datos de rendimiento disponibles se refieren al modelo base o a la versión bf16 del proceso de abliteración. La card indica que la abliteración se midió en el padre bf16, no en este checkpoint cuantizado, y advierte que MXFP4 es una transformación numérica más lossy que el 8-bit, por lo que los resultados pueden variar.
-
-| Metrica | Valor |
-|---|---|
-| Refusals en conjunto dañino (padre bf16) | 100 → 9 (9%) |
-| Divergencia KL respecto al base | 0.3985 |
-| Herramienta | Abliterix 1.12.2 |
-| Trial seleccionado | #17 |
-| Steering | per-layer attn q/k/v/o + `mlp.down_proj` |
-| MoE expert steering | n_suppress=4, router_bias=-2.72, expert_ablation_weight=4.31 |
-
-Según BenchLM (para el modelo base Ornith-1.5-35B-A3B), obtiene un score de 49.22/100 y ocupa el puesto #137 de 224 en el leaderboard público. No hay datos de MMLU, HumanEval o GSM8K para esta versión cuantizada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalentes, ni comparaciones numericas con el modelo base o con otras cuantizaciones de la familia.
 
 ## Requisitos de hardware
 
-- **Memoria**: el checkpoint cuantizado ocupa 19.3 GB. Se recomienda un Mac con al menos 24 GB de memoria unificada (por ejemplo, M3 Pro/Max, M2 Max, M4 Pro) para cargar el modelo y ejecutar inferencia con margen.
-- **GPU**: no es compatible con GPUs NVIDIA/AMD; está diseñado para Apple Silicon con Metal.
-- **Despliegue**: se usa con la librería `mlx-vlm` (no `mlx-lm`, que eliminaría el vision tower). También existe una versión GGUF (Q8_0) para `llama.cpp` que incluye el MTP head.
-- **Latencia y throughput**: no se disponen de datos medidos. La inferencia dependerá de la cantidad de memoria unificada y del número de núcleos de la GPU integrada. En un Mac con M3 Max (128 GB) se podría esperar una velocidad moderada para 35B activos, pero no hay cifras publicadas.
+- VRAM o memoria unificada estimada: el repositorio ocupa 19,3 GB, por lo que la inferencia en MXFP4 requiere del orden de 20 GB de memoria disponible para pesos, mas overhead de contexto y de la torre de vision. No hay cifras oficiales de memoria pico.
+- GPU recomendadas: el formato MLX esta disenado para Apple Silicon (familias M1, M2, M3 y M4 con memoria unificada suficiente). No es un formato para CUDA; para GPUs NVIDIA o AMD debe usarse la variante GGUF de la familia.
+- Cabe en GPU de consumo: en el ecosistema Apple, si cabe en equipos con 24 GB o mas de memoria unificada, con margen ajustado en configuraciones de 24 GB. En GPUs de consumo tipo RTX 4090 (24 GB) no es directamente compatible por el formato MLX; la variante GGUF Q8_0 de 8 bits de la misma familia es la via adecuada, aunque su huella es mayor.
+- Opciones de despliegue: mlx-vlm para Apple Silicon; para otras plataformas, las variantes GGUF de la familia con llama.cpp u Ollama. vLLM y TGI no soportan el formato MLX de este checkpoint.
+- Latencia y throughput: no disponibles. Al ser un MoE con una fraccion de parametros activos por token, el throughput deberia ser superior al de un modelo denso de 35B, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye datos detallados de otros modelos comparables. Según la búsqueda web, el modelo base Ornith-1.5-35B-A3B supera a Qwen 3.6-35B en benchmarks de código y agentes, y a los modelos densos Gemma 4-31B y Muse Glimmer-30B por márgenes amplios. Sin embargo, no se disponen de métricas numéricas para esta versión cuantizada.
-
-| Modelo | Parámetros | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (base) | 35B | ~3B | 262K | Apache 2.0 | Safetensors, GGUF, MLX |
-| Esta versión MXFP4 | 35B | ~3B | 262K | Apache 2.0 | MLX (MXFP4) |
-| Qwen 3.6-35B | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Gemma 4-31B | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Muse Glimmer-30B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ornith-1.5-35B-A3B-uncensored-MLX-MXFP4 (este) | 35,1B totales | no disponible | MLX MXFP4 (4.402 bpw) | Apache 2.0 | Abliterado, vision preservada, sin MTP |
+| Ornith-1.5-35B-A3B-uncensored-MLX-8bit | 35,1B totales | no disponible | MLX 8-bit | Apache 2.0 | Misma familia, mayor precision, mayor huella |
+| Ornith-1.5-35B-A3B-uncensored-GGUF-8bit | 35,1B totales | no disponible | GGUF Q8_0 | Apache 2.0 | Conserva MTP nativo, compatible con llama.cpp |
+| ornith-ai/Ornith-1.5-35B-A3B (base) | 35,1B totales | no disponible | safetensors | no disponible en esta ficha | Modelo original con rechazos intactos |
+
+No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Modelo uncensored**: al eliminar los rechazos, el modelo puede generar contenido que el modelo base rechazaría. No debe exponerse como endpoint público sin una capa de moderación independiente. El autor recomienda reportar siempre el delta contra el modelo base.
-- **Riesgo de alucinación**: no se han evaluado los efectos de la cuantización MXFP4 en la calidad de las respuestas. La pérdida numérica puede aumentar la frecuencia de errores o alucinaciones.
-- **MTP no disponible**: el formato MLX elimina los bloques `mtp.*`, por lo que no se puede usar la predicción multi-token en esta versión. Si se necesita MTP, usar la versión GGUF.
-- **Idiomas**: no se ha especificado el soporte multilingüe; se asume que sigue el del modelo base, pero no hay confirmación.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el autor recomienda un uso responsable y solo para investigación de seguridad. La responsabilidad de la moderación recae en quien despliega.
-- **Sesgos**: no se han documentado sesgos específicos, pero al ser un modelo de pesos completos, hereda los sesgos del entrenamiento original. La abliteración no corrige sesgos de contenido.
+- La abliteration elimina una direccion de rechazo, no una politica: sobreviven rechazos en rutas de vision, en reafirmacion multi-turno y bajo direccionamiento por system prompt. El comportamiento no es equivalente a un modelo sin alineamiento.
+- Riesgo elevado de producir contenido danino si se expone sin moderacion. El propio autor exige no publicar los pesos como endpoint publico sin una capa de moderacion independiente.
+- Sesgos conocidos: no documentados en la model card. Al heredar los del modelo base y aplicar una edicion de pesos, los sesgos del base persisten y pueden quedar mas expuestos al desaparecer parte de los rechazos.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; es esperable el comportamiento tipico de un modelo de 35B en tareas de conocimiento factual, sin datos especificos.
+- Perdida de MTP: la conversion a mlx-vlm descarta los tensores mtp.*, por lo que se pierde la decodificacion especulativa nativa del modelo base y el throughput puede ser inferior al de la variante GGUF de 8 bits.
+- Limitaciones de contexto e idioma: la longitud de contexto y la lista de idiomas no estan declaradas en el repositorio.
+- Restricciones de licencia: la licencia declarada es Apache 2.0, que permite uso comercial con atribucion y avisos, pero debe verificarse la licencia del modelo base ornith-ai/Ornith-1.5-35B-A3B, que no se detalla en esta ficha.
+- Compatibilidad limitada: el formato MLX restringe el despliegue a Apple Silicon; no es portable a CUDA sin reconvertir.
+- El autor recomienda medir siempre el delta frente al modelo base y reevaluar con prompts propios antes de cualquier uso en produccion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: [junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-MXFP4](https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-MXFP4)
-- Modelo base: [ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- Colección de variantes uncensored: [https://huggingface.co/collections/junafinity/ornith-15-uncensored-6a896c737cf40ad660af2ebd](https://huggingface.co/collections/junafinity/ornith-15-uncensored-6a896c737cf40ad660af2ebd)
-- Versión GGUF (con MTP): [Ornith-1.5-35B-A3B-uncensored-GGUF-8bit](https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit)
-- Versión MLX 8-bit: [Ornith-1.5-35B-A3B-uncensored-MLX-8bit](https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit)
-- Herramienta Abliterix: [https://github.com/wuwangzhang1216/abliterix](https://github.com/wuwangzhang1216/abliterix)
-- Página de Ornith-1.5: [https://ornith.ai/ornith_1_5.html](https://ornith.ai/ornith_1_5.html)
+- Repositorio Hugging Face: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-MXFP4
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Coleccion de la familia Ornith 1.5 uncensored: https://huggingface.co/collections/junafinity/ornith-15-uncensored-6a896c737cf40ad660af2ebd
+- Variante MLX 8-bit: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit
+- Variante GGUF 8-bit con MTP: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit
+- Variante 9B safetensors bf16: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
+- Variante 9B MLX 8-bit: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-MLX-8bit
+- Variante 9B GGUF Q8_0: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-GGUF-8bit
+- Sitio del autor: https://verisafe.live
+- Contacto del autor: info@verisafe.live

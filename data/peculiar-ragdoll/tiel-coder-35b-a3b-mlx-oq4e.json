@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF - Hugging Face",
-      "url": "https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF/discussions/1",
-      "snippet": "I&#x27;m considering using this model, but I&#x27;m stuck between this and KAT Coder V2.5 Dev, as they&#x27;re both based on Qwen3.6 35B A3B."
-    },
-    {
-      "title": "peculiar-ragdoll (Saga) - Hugging Face",
-      "url": "https://huggingface.co/peculiar-ragdoll/models",
-      "snippet": "peculiar-ragdoll 35 Follow pestouille&#x27;s profile picturebenoe&#x27;s profile picture 2 followers · 3 following peculiar-ragdoll"
-    },
-    {
-      "title": "peculiar-ragdoll · GitHub",
-      "url": "https://github.com/peculiar-ragdoll",
-      "snippet": "AI researcher. GitHub is where peculiar-ragdoll builds software."
-    },
-    {
-      "title": "peculiar-ragdoll--Nail-Qwen3.6-35B-A3B-MLX - omlx.ai",
-      "url": "https://omlx.ai/benchmarks/performance/78ked94l",
-      "snippet": "740.3 PP tok/s, 56.9 TG tok/s — peculiar-ragdoll--Nail-Qwen3.6-35B-A3B-MLX (4bit) on M4 Pro (16c) 48GB"
-    },
-    {
-      "title": "peculiar-ragdoll (peculiar-ragdoll) / Repositories · GitHub",
-      "url": "https://github.com/peculiar-ragdoll?tab=repositories",
-      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
-    }
-  ]
+  "sources": []
 }

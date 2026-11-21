@@ -2,100 +2,91 @@
 
 ## Resumen
 
-Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF es un conjunto de cuantizaciones GGUF generadas por mradermacher a partir del modelo mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16, una variante "abliterated" (con los mecanismos de rechazo atenuados o eliminados mediante edición de pesos) de un modelo denso de 34.660.610.688 parámetros (≈34,7B). El repositorio no contiene pesos en formato transformers, sino únicamente ficheros GGUF cuantizados con el método i1 de mradermacher, que combina una matriz de importancia (imatrix) con tipos de cuantización de llama.cpp para preservar mejor la perplejidad a igual tamaño de fichero.
+Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16. Se trata de un modelo de lenguaje de aproximadamente 34.660 millones de parámetros (34,66 B), derivado a su vez de un modelo base sometido a un proceso de "abliteration", una técnica de modificación de pesos que elimina o atenúa los mecanismos de rechazo aprendidos durante el alineamiento, de modo que el modelo responde a peticiones que un modelo alineado convencional rechazaría.
 
-La relevancia de esta publicación es doble: por un lado, permite ejecutar un modelo de ~35B en hardware de consumo mediante cuantizaciones que van de 8,3 GB (i1-IQ1_M) a 28,6 GB (i1-Q6_K); por otro, al tratarse de una variante abliterated, el modelo no incorpora los filtros de rechazo habituales, lo que lo hace interesante para investigación sobre alineamiento, red-teaming y experimentación con modelos sin censura, y problemático para despliegues de cara al público sin capas de seguridad adicionales.
+El repositorio no contiene el modelo original en precisión completa, sino un conjunto de ficheros GGUF cuantizados con la técnica i1 (imatrix) de mradermacher, que emplea una matriz de importancia para preservar mejor la calidad en cada nivel de compresión. Los cuantizados van desde IQ1_S (7,6 GB) hasta Q6_K (28,6 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con poca VRAM hasta estaciones de trabajo con 24 GB o más.
 
-La información pública es escasa: el autor de la cuantización no documenta arquitectura, contexto, datos de entrenamiento ni resultados de benchmarks, y la model card se limita a listar los ficheros generados. El repositorio se publicó el 26 de octubre de 2026, con licencia MIT, idioma declarado inglés y un tamaño total de 274,9 GB (los pesos BF16 del modelo base más los ficheros cuantizados).
+La relevancia de esta ficha radica en que documenta una variante "abliterated" de un modelo de ~35 B, un tamaño que en 2026 resulta manejable en GPUs de consumo mediante cuantización agresiva, pero que requiere advertencias claras sobre sesgos, alucinación y ausencia de salvaguardas. La licencia MIT del modelo base facilita su uso comercial, si bien el proceso de abliteration elimina parte de las protecciones de seguridad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el autor no la documenta; el recuento de parámetros es consistente con un transformer decoder-only denso, sin confirmar) |
-| Parametros totales | 34.660.610.688 (≈34,7B, dato real de safetensors del modelo base) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Arquitectura | no disponible (modelo transformer, derivado de mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16) |
+| Parametros totales | 34.660.610.688 (~34,66 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1 (imatrix): IQ1_M, IQ2_XXS, IQ2_XS, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q6_K; se incluye además el fichero imatrix (0,5 GB) para generar cuantizaciones propias. Existen cuantizaciones estáticas en el repositorio hermano `-GGUF` |
-| Idiomas soportados | en (inglés), según la model card |
+| Tipos de cuantizacion | GGUF i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; también disponible la matriz de importancia (imatrix) suelta |
+| Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (únicamente); los pesos originales en BF16 están en el repositorio del modelo base |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en BF16 |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del modelo base en la documentación disponible. El nombre del repositorio indica que se trata de una variante "abliterated" de Sage-A1.5: la técnica de abliteration identifica las direcciones de activación asociadas al rechazo (típicamente mediante diferencias de medias entre prompts dañinos y benignos) y las proyecta fuera de la matriz de pesos, de modo que el modelo pierde parte de su comportamiento de negativa sin reentrenar. El autor de la cuantización no detalla qué componentes se modificaron ni con qué metodología exacta.
+No se dispone de información detallada sobre la arquitectura interna del modelo base mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16 en la documentación proporcionada. Por el número de parámetros (34,66 B) y la nomenclatura, se trata de un transformer denso de gran tamaño, pero no se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni la longitud de contexto nativa.
 
-El proceso aplicado en este repositorio concreto es una cuantización post-entrenamiento con llama.cpp usando matrices de importancia (imatrix), generadas a partir de un corpus de calibración. Los cuantos i1 se caracterizan por asignar distinto número de bits por tensor según su impacto en la perplejidad, lo que permite que un i1-Q4_K_M de 21,3 GB rinda por encima de un Q4_K_M estático de tamaño similar. No se dispone de datos sobre tokens de entrenamiento, composición del dataset, RLHF/DPO ni innovaciones técnicas del modelo original.
+El proceso de "abliteration" aplicado al modelo base consiste en identificar las direcciones en el espacio de activaciones asociadas a la negativa a responder y proyectar los pesos para eliminar esa dirección, lo que produce un modelo que responde a un espectro más amplio de peticiones. No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo original. Las cuantizaciones i1 de mradermacher emplean una matriz de importancia (imatrix) calculada sobre un corpus de calibración para mejorar la fidelidad de los pesos cuantizados respecto al modelo BF16 original.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con formato de chat (etiqueta `conversational` en el repositorio).
-- Modelo sin censura (abliterated): no aplica los filtros de rechazo típicos, lo que incluye responder a peticiones que un modelo alineado estándar declinaría.
-- La model card de la cuantización incluye la nota genérica "This is a vision model", pero el repositorio i1 no contiene ficheros `mmproj`; cualquier capacidad de visión dependería de que existan dichos ficheros en el repositorio estático `mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-GGUF`. No confirmado.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el GGUF funciona con el servidor compatible con OpenAI de llama.cpp y con infraestructura de Hugging Face.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: limitadas al inglés según la model card; el comportamiento en castellano no está evaluado.
-- Modo "thinking" o razonamiento explícito: no disponible (no documentado).
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Razonamiento general y respuesta a instrucciones, heredado del modelo base.
+- Generación de código y tareas de escritura técnica (capacidad esperable en un modelo de ~35 B, aunque no verificada con benchmarks).
+- Respuesta a peticiones que los modelos alineados convencionalmente rechazan, debido al proceso de abliteration.
+- Capacidades multilingües limitadas: la model card declara únicamente inglés.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineamiento y abliteration: comparar las respuestas del modelo base alineado frente a esta variante ablacionada permite medir cuánto del comportamiento de rechazo reside en direcciones lineales de activación, usando el mismo prompt set en ambos modelos.
-- Red-teaming y evaluación de seguridad: al carecer de filtros, sirve como generador de completaciones adversarias para probar clasificadores de contenido, guardrails o sistemas de moderación antes de desplegarlos.
-- Escritura creativa sin restricciones temáticas: narrativa, guion y ficción con temáticas oscuras o controvertidas, donde los modelos alineados suelen añadir negativas o autocensura; el formato GGUF permite ejecutarlo localmente en una estación de trabajo con 24 GB de VRAM (i1-Q4_K_M, 21,3 GB).
-- Asistente conversacional autoalojado en inglés: despliegue con llama.cpp u Ollama en una máquina con una RTX 3090/4090 para conversaciones multi-turno sin enviar datos a terceros; la licencia MIT facilita su integración en productos internos.
-- Generación de datos sintéticos para fine-tuning: producir corpus en inglés con estilo y temática controlados, incluidos dominios que los modelos alineados rechazan, para después filtrar y curar el dataset.
-- Experimentación con cuantización extrema: los ficheros de 8,3 GB (i1-IQ1_M) y 9,6 GB (i1-IQ2_XXS) permiten estudiar la degradación de calidad de un modelo de ~35B en GPUs de 8-12 GB, usando el resto de la familia como curva de referencia.
-- Base para fine-tuning de estilo o dominio: partir de los pesos BF16 del modelo base (no de los GGUF) y aplicar LoRA sobre ellos, aprovechando que la licencia MIT no impone restricciones de uso comercial.
+- Investigación sobre alineamiento y seguridad: el modelo permite estudiar cómo el proceso de abliteration altera la distribución de respuestas y los mecanismos de rechazo, comparándolo con el modelo base alineado en experimentos controlados.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles y que un modelo alineado rechazaría, en entornos de investigación o creación de contenido para adultos.
+- Despliegue local en GPU de consumo: con el cuantizado IQ4_XS (18,8 GB) o Q4_K_M (21,3 GB) el modelo cabe en una RTX 4090 de 24 GB, permitiendo inferencia privada sin conexión a servicios en la nube.
+- Experimentación con cuantización: la disponibilidad de 23 niveles de cuantización i1 permite medir empíricamente la degradación de calidad frente al tamaño de fichero, útil para estudios de compresión de modelos.
+- Fine-tuning posterior sobre el modelo BF16 base: al ser un modelo de ~35 B con licencia MIT, puede servir como punto de partida para ajuste fino en dominios especializados (legal, médico, técnico) sin restricciones de licencia comercial.
+- Evaluación comparativa de técnicas de abliteration: comparar esta variante con otras versiones abliterated del mismo modelo base para cuantificar el impacto en benchmarks de razonamiento y en la tasa de rechazo.
+- Prototipado de asistentes conversacionales en inglés: gracias a su tamaño y a la disponibilidad de cuantizados ligeros (Q3_K_M, 16,9 GB), puede ejecutarse en estaciones de trabajo con una sola GPU para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de cuantizaciones no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos. Tampoco se dispone de datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada (regla práctica: tamaño del fichero + 1-3 GB de caché KV y overhead según contexto):
-  - i1-IQ1_M (8,3 GB): ~10-11 GB → RTX 3060 12 GB, RTX 4070 12 GB.
-  - i1-IQ2_M (11,8 GB) / i1-Q2_K (13,0 GB): ~13-15 GB → RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB.
-  - i1-IQ3_M (15,5 GB) / i1-Q3_K_M (16,9 GB): ~17-19 GB → GPU de 24 GB con contexto moderado.
-  - i1-Q4_K_S (20,0 GB) / i1-Q4_K_M (21,3 GB): ~22-24 GB → RTX 3090, RTX 4090, L4 24 GB; en 24 GB conviene limitar el contexto.
-  - i1-Q5_K_S (24,1 GB) / i1-Q6_K (28,6 GB): ~26-31 GB → A6000 48 GB, L40S, A100 40 GB, o dos GPU de 24 GB con reparto por capas.
-- ¿Cabe en GPU de consumo? Sí, desde una RTX 3060 12 GB con las cuantizaciones IQ1/IQ2 (calidad degradada) hasta una RTX 4090 24 GB con Q4_K_M, que es el punto de equilibrio razonable.
-- Opciones de despliegue: llama.cpp (`llama-server` con API compatible con OpenAI), Ollama, LM Studio, koboldcpp. vLLM y TGI no admiten GGUF de forma nativa: para esos motores habría que usar los pesos BF16 del modelo base (≈69 GB en FP16), lo que exige una A100 80 GB o varias GPU.
-- Latencia y throughput estimados: no disponibles; dependen de la GPU, del cuanto elegido y de la longitud de contexto. Como referencia cualitativa, los cuantos Q4 con decodificación en memoria de vídeo son los que ofrecen mayor velocidad; los IQ1/IQ2 reducen el ancho de banda necesario pero con pérdida de calidad apreciable.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más el overhead de contexto. Los cuantizados van de 7,6 GB (IQ1_S) a 28,6 GB (Q6_K).
+- Cuantizados ligeros (IQ1_S a IQ2_M, 7,6–11,8 GB): caben en GPUs de 12 GB como la RTX 3060 o la RTX 4070, con calidad muy degradada.
+- Cuantizados medios (IQ3_XXS a IQ4_XS, 13,7–18,8 GB): caben en GPUs de 16 GB (RTX 4060 Ti 16 GB, RTX 4080) y en 24 GB con margen para contexto.
+- Cuantizados altos (Q4_K_M a Q6_K, 21,3–28,6 GB): requieren 24 GB (RTX 4090) para Q4_K_M y Q5_K_M; Q6_K (28,6 GB) no cabe en 24 GB y requiere GPUs de 32 GB o más (A100 40 GB, H100, RTX 5090 si dispone de suficiente VRAM).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M; A100 40 GB u H100 para Q6_K y para el modelo BF16 completo (que requiere ~70 GB).
+- Despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no cargan GGUF de forma nativa para este tamaño sin conversión.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks del modelo, por lo que la comparación se limita a la clase de tamaño, contexto documentado y licencia. Las cifras de los modelos alternativos provienen de sus especificaciones públicas, no de una evaluación conjunta.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Sage-A1.5-Ablitrex-abliterated (i1-GGUF) | 34,7B | no disponible | MIT | GGUF (i1 y estáticos); BF16 en el repo base | Sin censura; cuantizaciones desde 8,3 GB |
-| Qwen3-32B | 32,8B | 32k nativo (ampliable con YaRN) | Apache-2.0 | Safetensors, GGUF, AWQ/GPTQ | Con modo thinking; ecosistema de cuantizaciones muy amplio |
-| Gemma 3 27B | 27B | 128k | Gemma Terms of Use | Safetensors, GGUF | Multimodal (visión) y multilingüe; licencia con restricciones de uso |
-| Mistral Small 3.1 24B | 24B | 128k | Apache-2.0 | Safetensors, GGUF | Multimodal, orientado a latencia baja; muy desplegado en producción |
+| Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF (este) | 34,66 B | no disponible | MIT | GGUF i1 (23 niveles) | Variante abliterated cuantizada por mradermacher |
+| mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16 | 34,66 B | no disponible | MIT | BF16 (safetensors) | Modelo base del que derivan estas cuantizaciones |
+| mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-GGUF | 34,66 B | no disponible | MIT | GGUF estático | Cuantizaciones estáticas (sin imatrix) del mismo modelo base |
 
-Frente a estas alternativas, la ventaja de Sage-A1.5-Ablitrex es la ausencia de filtros de rechazo y una licencia MIT sin cláusulas adicionales; la desventaja es la opacidad total sobre arquitectura, contexto, idiomas y calidad, además de un soporte multilingüe aparentemente inexistente.
+No se dispone de información sobre otros modelos comparables de la misma categoría (abliterated, ~35 B) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de alineamiento de seguridad: al ser una variante abliterated, el modelo no rechaza peticiones dañinas. No debe exponerse directamente a usuarios finales sin moderación de entrada y salida.
-- Riesgo de alucinación: no cuantificado; sin benchmarks publicados no hay forma de estimar su fiabilidad factual frente a modelos de la misma clase.
-- Idiomas: la model card solo declara inglés. El rendimiento en castellano es desconocido y probablemente deficiente; no se recomienda para producción en español sin evaluación previa.
-- Contexto desconocido: no se documenta la ventana máxima, lo que impide planificar casos de uso con documentos largos.
-- Calidad de las cuantizaciones extremas: los ficheros IQ1 e IQ2 (8-12 GB) degradan notablemente la coherencia; el propio autor los etiqueta como "mostly desperate" o "very low quality". Para uso real conviene Q4_K_M o superior.
-- Capacidad de visión no confirmada: la nota sobre visión de la model card es una plantilla genérica del cuantizador; este repositorio no incluye `mmproj`.
-- Licencia: MIT permite uso comercial y modificación, pero no exime del cumplimiento de la normativa aplicable (por ejemplo, obligaciones de moderación de contenido en la UE) ni de las responsabilidades derivadas de generar contenido dañino.
-- Trazabilidad: no se documenta el proceso de abliteration ni el dataset empleado, y el repositorio tiene un uso prácticamente nulo (0 descargas, 1 like), sin validación por parte de la comunidad.
-- Fecha de creación del repositorio: 26 de octubre de 2026.
+- El proceso de abliteration elimina o atenúa los mecanismos de rechazo del modelo base, por lo que puede generar contenido dañino, ilegal o éticamente problemático sin las salvaguardas habituales. No es apto para despliegues orientados al público sin moderación externa.
+- Riesgo elevado de alucinación: no se han publicado evaluaciones de fidelidad factual para este modelo ni para su base.
+- Sesgos conocidos: no documentados en la información disponible, pero heredados del corpus de entrenamiento del modelo base, no especificado.
+- Limitación de idioma: la model card declara únicamente inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificar experimentalmente el límite efectivo.
+- Los cuantizados por debajo de Q3 (especialmente IQ1 e IQ2) presentan degradación de calidad significativa; la propia model card advierte de que IQ1_S es "para desesperados" y Q2_K_S es de "calidad muy baja".
+- Licencia MIT: permite uso comercial, pero el usuario asume toda la responsabilidad legal y ética sobre las salidas del modelo.
+- El repositorio ocupa 371 GB en total; descargar todos los cuantizados no es práctico. Se recomienda descargar solo el fichero necesario.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones i1 (este modelo): https://huggingface.co/mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Listado de modelos GGUF en Hugging Face: https://huggingface.co/models?sort=modified&search=gguf
-- Peticiones de cuantización y FAQ del autor: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de calidad de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-GGUF
+- Página de descargas de mradermacher para este modelo: https://hf.tst.eu/model#Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF
+- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

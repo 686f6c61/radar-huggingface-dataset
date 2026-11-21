@@ -2,81 +2,91 @@
 
 ## Resumen
 
-`mradermacher/bella-bartender-qwen3.5-4b-i1-GGUF` es una publicación de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `juiceb0xc0de/bella-bartender-qwen3.5-4b`. No se trata de un modelo entrenado desde cero, sino de un artefacto de distribución: el repositorio contiene ficheros en formato GGUF pensados para su uso con llama.cpp y herramientas compatibles, además de un fichero imatrix empleado para generar cuantizaciones con matrices de importancia. El autor del modelo original no está documentado en la información disponible más allá del identificador de usuario de Hugging Face.
+bella-bartender-qwen3.5-4b-i1-GGUF es una recopilación de cuantizaciones GGUF (con y sin imatrix) del modelo base juiceb0xc0de/bella-bartender-qwen3.5-4b, publicada por el usuario mradermacher, especializado en la distribución de pesos cuantizados para llama.cpp. El modelo original parte de la familia Qwen 3.5, con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones) según los pesos en safetensors, y está orientado a tareas conversacionales en inglés. El repositorio incluye 26 variantes de cuantización, desde IQ1_S (1,5 GB) hasta Q6_K (3,6 GB), además del fichero imatrix para generar cuantizaciones propias.
 
-El nombre sugiere un modelo derivado de la familia Qwen 3.5 con aproximadamente 4.000 millones de parámetros, pero esta inferencia procede únicamente del nombre del repositorio y no está confirmada por la model card. La model card del cuantizador es una plantilla genérica de mradermacher que no aporta detalles sobre arquitectura, entrenamiento ni evaluación del modelo base. El dato de parámetros totales reportado por Hugging Face (1.797.272) corresponde a los tensores del repositorio de cuantización y no al modelo completo, por lo que no debe interpretarse como el tamaño real del modelo.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 4B en hardware de consumo con un consumo de VRAM muy contenido, manteniendo la compatibilidad con el ecosistema llama.cpp y con la API de transformers. No obstante, el autor del modelo base no ha publicado información detallada sobre arquitectura, datos de entrenamiento, licencia ni benchmarks, por lo que muchos apartados técnicos deben marcarse como no disponibles. La model card del cuantizador menciona además que se trata de un modelo de visión, con ficheros mmproj (si existen) alojados en el repositorio estático paralelo.
 
-La relevancia de esta ficha es limitada y fundamentalmente práctica: sirve para localizar una versión cuantizada ejecutable en hardware de consumo de un modelo del que apenas hay información pública verificable. Cualquier evaluación de calidad, licencia o idoneidad para producción requiere consultar el repositorio del modelo base, que en el momento de redactar esta ficha no aporta datos en la información proporcionada.
+El modelo se distribuye bajo el identificador mradermacher/bella-bartender-qwen3.5-4b-i1-GGUF, con 3.041 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 17 de noviembre de 2026. La ventana de contexto, el pipeline y la licencia no aparecen especificados en la información disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere familia Qwen 3.5, sin confirmar) |
-| Parametros totales | no disponible (el nombre sugiere ~4B; el dato de 1.797.272 del repo corresponde a los tensores de la cuantizacion, no al modelo) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base derivado de la familia Qwen 3.5) |
+| Parámetros totales | 4.205.751.296 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_L, IQ4_XS, IQ4_NL (small), Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones ponderadas con imatrix) |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (i1/imatrix) |
 | Idiomas soportados | en |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (mas fichero imatrix en formato GGUF para generar cuantizaciones propias) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre la arquitectura del modelo base en la documentación proporcionada. La model card del repositorio de cuantización es la plantilla estándar de mradermacher y no describe el transformer subyacente, el esquema de atención, la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron técnicas de alineación como RLHF, DPO o similares. El nombre del repositorio incluye "qwen3.5", lo que apunta a una arquitectura de la familia Qwen, pero no se confirma en ningún campo estructurado.
+No se dispone de información sobre la arquitectura interna del modelo base juiceb0xc0de/bella-bartender-qwen3.5-4b. Por el nombre se infiere que deriva de la familia Qwen 3.5, pero no se confirma si se trata de un transformer denso, un MoE o una arquitectura híbrida. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste fino supervisado. El tamaño de 4,2 mil millones de parámetros y el pipeline conversacional sugieren un modelo denso de escala pequeña, pero es una inferencia, no un dato confirmado.
 
-El único detalle técnico verificable es el proceso de cuantización: mradermacher ha generado cuantizaciones "weighted/imatrix" a partir del modelo base, empleando un fichero imatrix (`bella-bartender-qwen3.5-4b.imatrix.gguf`, 0,1 GB) para ponderar la importancia de los tensores durante la cuantización. La model card indica además que se trata de un modelo de visión y que los ficheros `mmproj` (proyector multimodal), si existen, se encuentran en el repositorio estático hermano `mradermacher/bella-bartender-qwen3.5-4b-GGUF`. No se documenta ninguna innovación arquitectónica adicional.
+La innovación técnica documentada en este repositorio es la cuantización con imatrix (i1), que utiliza una matriz de importancia calculada a partir de un corpus de calibración para asignar más bits a los tensores más sensibles. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamaño similar, y que i1-Q4_K_M es la opción recomendada por equilibrio entre velocidad y calidad. El repositorio incluye también el fichero imatrix.gguf (0,1 GB) para que el usuario pueda generar sus propias cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto en inglés, según el campo `language: en` del repositorio.
-- Procesamiento de imágenes: la model card del cuantizador califica explícitamente el modelo como "vision model" y remite a los ficheros `mmproj` del repositorio estático, aunque no se detalla el tipo de tareas visuales soportadas.
-- Inferencia local mediante llama.cpp y ecosistema GGUF (Ollama, LM Studio, koboldcpp y similares), gracias al formato de pesos publicado.
-- Creación de cuantizaciones propias a partir del fichero imatrix incluido.
-- Soporte de tool calling, function calling, agentes, modo thinking, audio y capacidades multilingües adicionales: no disponible en la información proporcionada.
+- Generación de texto conversacional en inglés, con formato de chat multi-turno.
+- Compatibilidad con el ecosistema transformers y con endpoints compatibles (tag endpoints_compatible).
+- Ejecución en llama.cpp y derivados gracias al formato GGUF.
+- Posible soporte de visión: la model card del cuantizador indica que es un modelo de visión y que los ficheros mmproj, si existen, se encuentran en el repositorio estático paralelo.
+- No se documenta soporte de tool calling, function calling, agentes o razonamiento multi-paso.
+- No se documenta modo thinking, audio ni otras capacidades especiales.
+- Capacidad multilingüe limitada al inglés según el campo language.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones de baja precisión (Q2_K, IQ2_XXS, IQ3_S) permiten ejecutar un modelo de aproximadamente 4B parámetros en GPUs con 4-8 GB de VRAM o incluso en CPU, lo que facilita pruebas locales sin infraestructura dedicada.
-- Prototipado de aplicaciones de visión: si el modelo base confirma sus capacidades multimodales mediante los ficheros `mmproj`, podría emplearse para experimentar con descripción de imágenes o extracción de información visual en entornos con recursos limitados.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece más de veinte variantes de cuantización, lo que permite medir el impacto de la precisión en la perplejidad y la calidad de salida sobre un mismo modelo base.
-- Integración en pipelines de llama.cpp: al ser GGUF compatible con `llama-server`, puede exponerse como API compatible con OpenAI para pruebas de integración en aplicaciones existentes.
-- Experimentación con modelos derivados o fine-tunes: útil para investigadores que quieran evaluar un fine-tune concreto (bella-bartender) sin necesidad de convertirlo a GGUF por su cuenta.
-- Generación de cuantizaciones personalizadas: el fichero imatrix incluido permite a otros usuarios producir sus propias variantes con parámetros de cuantización ajustados a su hardware.
+- Asistente conversacional local en inglés: el modelo puede desplegarse con llama.cpp u Ollama en un equipo de sobremesa y mantener diálogos multi-turno sin conexión a internet, gracias a su tamaño de 4B y a las cuantizaciones de 2-3 GB.
+- Prototipado rápido de chatbots: al ser un modelo pequeño y con formato GGUF, permite iterar sobre prompts y flujos conversacionales en local antes de migrar a un modelo mayor en producción.
+- Evaluación de cuantizaciones: el repositorio ofrece 26 variantes, lo que lo convierte en un banco de pruebas útil para medir el impacto de IQ1 a Q6_K en perplejidad y calidad de respuesta sobre el mismo modelo base.
+- Generación de texto creativo y de rol: el nombre "bella-bartender" y el pipeline conversacional sugieren un ajuste orientado a personajes o narrativa; puede usarse para generar diálogos de ficción o respuestas con personalidad definida.
+- Inferencia en hardware de gama baja: las variantes IQ1_S e IQ2_XXS (1,5-1,6 GB) permiten ejecutar el modelo en GPUs con 4 GB de VRAM o en CPU con RAM limitada, útil para entornos embebidos o portátiles antiguos.
+- Experimentación con visión (si se confirma el mmproj): el modelo podría emplearse para tareas de descripción de imágenes o VQA en local, siempre que se descarguen los ficheros mmproj del repositorio estático y se valide su funcionamiento.
+- Filtrado y clasificación de texto: con un contexto no documentado pero presumiblemente moderado, puede emplearse para tareas de etiquetado o moderación de contenido en inglés dentro de pipelines ligeros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa basada en el tamaño nominal de ~4B parámetros, las cuantizaciones Q4_K_M ocuparían del orden de 2,5-3 GB y las Q8 rondarían 4-4,5 GB, aunque estas cifras no están confirmadas por el autor.
-- GPU recomendadas: no disponible. Por tamaño, cualquier GPU consumer con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070) debería poder alojar las cuantizaciones de 4 bits; las variantes IQ2/IQ3 podrían caber en GPUs de 4 GB.
-- Cabe en GPU consumer: previsiblemente sí, en la mayoría de modelos con 4 GB o más de VRAM, aunque no hay confirmación oficial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime que soporte GGUF. El repositorio declara compatibilidad con `endpoints_compatible` y la librería `transformers` para el modelo base.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: entre 1,5 GB (i1-IQ1_S) y 3,6 GB (i1-Q6_K) solo para los pesos; hay que añadir el espacio de contexto KV cache, que depende de la longitud de contexto no documentada.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para despliegues con mayor concurrencia; cualquier GPU con 4-6 GB de VRAM puede ejecutar las cuantizaciones IQ2 e IQ3.
+- Cabe en GPU de consumo: sí, en tarjetas con 4 GB o más de VRAM usando cuantizaciones IQ1-IQ3, y en 6-8 GB con Q4_K_M o Q5_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; también es posible usar transformers con el modelo base en safetensors.
+- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida. Como referencia cualitativa, el autor describe Q4_0 como "fast, low quality" y Q4_K_M como "fast, recommended".
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones verificables del modelo base, por lo que no es posible establecer una comparación rigurosa con alternativas de la misma categoría.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| bella-bartender-qwen3.5-4b-i1-GGUF | 4,2 B | no disponible | no disponible | GGUF | 26 cuantizaciones, imatrix, posible visión |
+| Qwen2.5-3B-Instruct (referencia de familia) | 3,1 B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 (según documentación pública) | safetensors, GGUF | Modelo denso ampliamente cuantizado, con benchmarks publicados |
+| Llama 3.2 3B Instruct (referencia de escala) | 3,2 B | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | safetensors, GGUF | Multilingüe, con benchmarks publicados |
+| Phi-3.5-mini-instruct (referencia de escala) | 3,8 B | 128.000 tokens (según documentación pública de Microsoft) | MIT | safetensors, GGUF | Orientado a razonamiento y código |
+
+La comparación con modelos de la misma escala es aproximada: no se dispone de datos de contexto, licencia ni benchmarks del modelo evaluado, por lo que la elección frente a alternativas consolidadas debe basarse en pruebas propias. Los datos de los modelos comparados provienen de su documentación pública y no de la información proporcionada en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación sobre el modelo base: no se conocen arquitectura, datos de entrenamiento, licencia ni evaluación, lo que impide valorar su idoneidad para producción.
-- Licencia no disponible: no puede confirmarse si el uso comercial está permitido; debe consultarse el repositorio `juiceb0xc0de/bella-bartender-qwen3.5-4b` antes de cualquier despliegue.
-- Riesgo elevado de alucinación y sesgos: sin información sobre alineación ni dataset, no hay garantías sobre el comportamiento del modelo.
-- Idiomas: el repositorio declara únicamente inglés; el rendimiento en castellano no está documentado y probablemente sea deficiente.
-- Las cuantizaciones de muy baja precisión (IQ1, IQ2) degradan la calidad de forma notable; deben reservarse para pruebas, no para uso final.
-- El dato de parámetros del repositorio (1.797.272) no refleja el tamaño del modelo y puede inducir a error si se interpreta literalmente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validación por parte de la comunidad.
-- La fecha de creación indicada (2026-11-17) es posterior a la fecha habitual de publicación de modelos Qwen 3.5; conviene verificar la autenticidad y procedencia del modelo base.
+- Sesgos conocidos: no documentados; al no publicarse la composición del dataset ni el proceso de alineación, no es posible evaluar sesgos de género, raza o ideología.
+- Riesgo de alucinación: inherente a los modelos de 4B; sin benchmarks publicados no se puede cuantificar su fiabilidad factual.
+- Limitaciones de idioma: el campo language solo declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Limitaciones de contexto: la longitud de contexto no está documentada, lo que impide planificar despliegues con ventanas largas.
+- Restricciones de licencia: la licencia no está disponible; no se debe asumir uso comercial permitido sin consultar al autor del modelo base.
+- Caveat de producción: al ser una cuantización IQ1/IQ2, la calidad puede degradarse notablemente; el propio autor etiqueta IQ1_S como "for the desperate" y Q2_K_S como "very low quality".
+- Caveat de visión: la model card indica que es un modelo de visión, pero los ficheros mmproj no están en este repositorio; sin ellos, las capacidades multimodales no estarán operativas.
+- Caveat de trazabilidad: el repositorio tiene 0 likes y no se han publicado resultados de evaluación; se recomienda validar el modelo en el caso de uso concreto antes de integrarlo.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-i1-GGUF
-- Repositorio de cuantizaciones estáticas (incluye posibles ficheros mmproj): https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-i1-GGUF
 - Modelo base: https://huggingface.co/juiceb0xc0de/bella-bartender-qwen3.5-4b
-- Página de descargas del cuantizador: https://hf.tst.eu/model#bella-bartender-qwen3.5-4b-i1-GGUF
-- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-GGUF
+- Página de descarga del cuantizador: https://hf.tst.eu/model#bella-bartender-qwen3.5-4b-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Art

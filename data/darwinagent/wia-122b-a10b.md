@@ -1,108 +1,101 @@
 # darwinagent/WIA-122B-A10B
 
 ## Resumen
+WIA-122B-A10B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por darwinagent dentro del proyecto World Intelligence Agent (WIA). No es un asistente conversacional general, sino un "world model" orientado a predecir observaciones condicionadas por acciones en entornos digitales: Android, MCP, sistemas operativos de escritorio, busqueda web, ingenieria de software (SWE), terminal y web. Con 125.914.628.848 parametros totales y aproximadamente 10B activos, se inicializa directamente desde Qwen3.5-122B-A10B y se entrena exclusivamente con reinforcement learning (RL), sin pasar por las fases de continued pre-training (CPT) ni de supervised fine-tuning (SFT) del resto de la familia WIA-WM.
 
-WIA-122B-A10B es el identificador con el que el usuario `darwinagent` publica en Hugging Face una copia de los pesos de Qwen3.5-122B-A10B, un modelo de lenguaje causal multimodal (texto e imagen) desarrollado por el equipo Qwen de Alibaba. La model card del repositorio es la de Qwen3.5 y describe un modelo de arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet) con capas de atención completa, intercaladas con mezcla de expertos dispersa (MoE). El resultado es un modelo de 122 000 millones de parámetros totales que solo activa 10 000 millones por token, lo que reduce el coste de inferencia hasta niveles de un modelo denso de ~10B.
+La relevancia del modelo reside en su enfoque: en lugar de optimizar para conversacion, se optimiza para modelar la dinamica de entornos digitales, lo que lo hace util para evaluacion de agentes y research en world models. Su licencia Apache 2.0 y su compatibilidad con transformers facilitan su uso en pipelines de investigacion, aunque su tamano (repo de 255,2 GB) y su naturaleza especializada lo alejan del uso generalista.
 
-La propuesta de valor es doble. Por un lado, unifica visión y lenguaje en un único entrenamiento con fusión temprana de tokens, de modo que el mismo modelo cubre razonamiento, código, agentes y comprensión visual sin necesidad de un adaptador separado. Por otro, ofrece una ventana de contexto nativa de 262 144 tokens, extensible hasta 1 010 000, y cobertura declarada de 201 idiomas y dialectos.
-
-Es relevante ahora porque compite directamente con alternativas abiertas de su segmento (Qwen3-235B-A22B, GPT-OSS-120B) superándolas en MMLU-Pro según los datos de la propia model card (86,7 frente a 84,4 y 80,8), con menos parámetros totales y bajo licencia Apache 2.0. Conviene señalar que este repositorio concreto acumula 0 descargas y 0 likes y fue creado el 24 de octubre de 2026: es una redistribución de terceros, no el repositorio oficial de Qwen.
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del autor; los datos no presentes se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal híbrido con encoder de visión; capas Gated DeltaNet (atención lineal) + Gated Attention, con MoE en cada capa |
-| Parametros totales | 122 000 millones |
-| Parametros activos | 10 000 millones (8 expertos enrutados + 1 compartido de 256) |
-| Longitud de contexto | 262 144 tokens nativa; extensible hasta 1 010 000 |
-| Tipos de cuantizacion | No disponible en la información proporcionada. El repositorio solo publica `safetensors`; la model card no especifica esquema de cuantización (los 45,7 GB del repo implican pesos por debajo de BF16) |
-| Idiomas soportados | 201 idiomas y dialectos según la model card (el metadato de Hugging Face no declara idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | `safetensors` (compatible con Transformers, vLLM, SGLang y KTransformers) |
-
-Datos arquitectónicos adicionales: dimensión oculta 3072, 48 capas, embedding de tokens de 248 320 (con padding), salida LM de 248 320. Layout: 12 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)). Gated DeltaNet con 64 cabezas lineales para V y 16 para QK, dimensión de cabeza 128. Gated Attention con 32 cabezas Q y 2 KV, dimensión de cabeza 256 y RoPE de 64 dimensiones. Dimensión intermedia de experto 1024.
+| Arquitectura | Mixture-of-experts (MoE) basada en Qwen3.5; tag `qwen3_5_moe` |
+| Parametros totales | 125.914.628.848 (~122B) |
+| Parametros activos | ~10B (segun denominacion A10B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (segun model card); resto no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo emplea una arquitectura transformer con mezcla de expertos (MoE), heredada de Qwen3.5-122B-A10B, con aproximadamente 122B parametros totales y unos 10B activos por token. La model card lo describe como una variante "RL-only": se inicializa directamente desde Qwen3.5-122B-A10B y no utiliza ni WIA-CPT ni el SFT de world model que si emplean otras escalas de la familia WIA-WM.
 
-El modelo es un transformer causal con encoder de visión y entrenamiento conjunto de tokens multimodales ("early fusion"), lo que según la model card le permite igualar a la generación Qwen3 en texto y superar a Qwen3-VL en razonamiento, código, agentes y comprensión visual. La innovación estructural principal es el layout híbrido: por cada bloque de cuatro subcapas hay tres que usan Gated DeltaNet (atención lineal con estado recurrente, 64 cabezas para V y 16 para QK) y una que usa Gated Attention clásica con solo 2 cabezas KV, lo que reduce drásticamente el coste de caché KV en contextos largos. Todas las subcapas llevan emparejada una capa MoE de 256 expertos, de los que se activan 8 enrutados más 1 compartido, con dimensión intermedia de 1024.
-
-El entrenamiento pasa por pre-entrenamiento y post-entrenamiento, e incluye un objetivo MTP (multi-token prediction) entrenado con varios pasos, lo que habilita decodificación especulativa nativa. La model card destaca RL a gran escala sobre "millones de entornos de agentes" con distribuciones de tareas progresivamente más complejas, así como una infraestructura asíncrona de RL. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se usaron RLHF o DPO, aunque la mención explícita de RL a escala de agentes apunta a un post-entrenamiento con refuerzo.
+El entrenamiento por reinforcement learning utiliza un conjunto RL-v1 filtrado y rebalanceado, rollouts en modo "think" y una recompensa compuesta que combina la puntuacion de un juez LLM (peso 0,9) con similitud semantica (peso 0,1). No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
-
-- Generación de texto y razonamiento general, con resultados de MMLU-Pro de 86,7.
-- Comprensión visual e imagen-texto: el pipeline declarado es `image-text-to-text`, con encoder de visión integrado en el entrenamiento conjunto.
-- Código y matemáticas: la model card menciona paridad o mejora frente a Qwen3 en benchmarks de código y razonamiento.
-- Capacidades de agente: RL entrenado sobre entornos multiagente y benchmarks de agentes; la etiqueta `conversational` y el soporte declarado en vLLM/SGLang indican plantillas de chat utilizables en bucles de herramientas (la plantilla concreta de tool calling no se detalla en la información disponible).
-- Multilingüismo amplio: 201 idiomas y dialectos declarados, con "comprensión cultural y regional" según el autor.
-- Contexto largo: 262 144 tokens nativos y hasta 1 010 000 extensibles, útil para documentos completos y repositorios.
-- Decodificación multi-token (MTP) entrenada, que permite decodificación especulativa para acelerar la inferencia.
-- No se mencionan en la información disponible capacidades de audio ni modo "thinking" explícito.
+- Prediccion de observaciones condicionadas por acciones en siete dominios: Android, MCP, OS de escritorio, Search, SWE, Terminal y Web.
+- Modelado de world model para evaluacion de agentes digitales y research.
+- Generacion de texto y razonamiento en modo "think" (rollouts con thinking mode durante el RL).
+- Capacidades multimodales de entrada: el tag `image-text-to-text` sugiere soporte de entrada imagen-texto, aunque no se detalla en la model card.
+- Soporte de tool calling / function calling: no disponible explicitamente en la informacion proporcionada.
+- Soporte de agentes multi-paso: orientado por diseno a entornos de agentes, aunque sin detalle de API.
+- Capacidades multilingues: limitadas a ingles segun la model card.
+- No esta disenado como asistente conversacional general.
 
 ## Casos de uso
-
-- Análisis de documentos extensos y contratos: con 262 144 tokens nativos se puede ingerir un contrato completo más su histórico de enmiendas y anexos en una sola pasada, sin troceado ni pérdida de referencias cruzadas.
-- Procesamiento de facturas y formularios con visión: al aceptar entrada imagen-texto, un pipeline OCR + razonamiento puede extraer campos estructurados directamente de escaneos y validar totales contra el texto extraído.
-- Agentes de automatización de back-office: el entrenamiento con RL sobre entornos de agentes y el soporte en vLLM/SGLang permiten bucles multi-paso con llamadas a herramientas contra APIs internas (ERP, CRM) manteniendo el estado en contexto.
-- Asistencia a desarrollo en producción: la ventana de 1M tokens extensible permite indexar un monorepo o un conjunto de servicios y responder preguntas de arquitectura con referencias a ficheros concretos; la activación de 10B parámetros mantiene el coste por token contenido.
-- Atención al cliente multilingüe: los 201 idiomas declarados permiten atender consultas en castellano, catalán, euskera, gallego y lenguas de mercados internacionales con un único modelo, evitando enrutado por idioma.
-- Búsqueda aumentada (RAG) sobre base documental técnica: la combinación de contexto largo y capacidad multimodal permite indexar manuales con diagramas y responder citando la página y la figura.
-- Moderación y clasificación de contenido con matices culturales: el ajuste declarado por región facilita reglas distintas por mercado sin desplegar modelos separados.
-- Investigación en eficiencia de inferencia: al ser híbrido MoE + atención lineal, sirve como banco de pruebas para medir degradación de latencia y calidad al escalar contexto.
+- Evaluacion de agentes digitales: el modelo predice la observacion resultante de una accion en Android, OS, Terminal o Web, lo que permite construir simuladores de entorno para medir politicas de agentes sin ejecutar acciones reales.
+- Research en world models: sirve como referencia RL-only para estudiar el efecto de prescindir de CPT y SFT en la calidad del modelado de dinamica de entornos.
+- Simulacion de interacciones con APIs MCP: permite anticipar respuestas de servidores MCP ante llamadas de un agente, util para pruebas de integracion.
+- Generacion de trayectorias sinteticas para SWE: predice estados intermedios de un repositorio tras comandos de terminal o ediciones, apoyando la generacion de datos de entrenamiento para agentes de codigo.
+- Benchmarking comparativo: con sus resultados en WIA-Bench OOD e ID, sirve para comparar familias de modelos en tareas de prediccion de observaciones.
+- Analisis de busqueda web: modela la evolucion de resultados y paginas tras consultas, util para estudiar estrategias de navegacion de agentes.
+- Validacion de pipelines de agentes en CI: al predecir observaciones, permite detectar divergencias entre el comportamiento esperado y el real antes de desplegar un agente.
 
 ## Benchmarks y rendimiento
+Resultados de WIA-Bench segun la model card (escala 0-100, juez DeepSeek-V4-Pro; Avg ponderado por muestra, MAvg media macro sobre siete dominios).
 
-Datos de la model card (sección de conocimiento). El resto de la tabla de benchmarks venía truncado en la información proporcionada, por lo que no se reproduce.
+WIA-Bench OOD:
 
-| Benchmark | GPT-5-mini 2025-08-07 | GPT-OSS-120B | Qwen3-235B-A22B | Qwen3.5-122B-A10B | Qwen3.5-27B | Qwen3.5-35B-A3B |
-|---|---|---|---|---|---|---|
-| MMLU-Pro | 83,7 | 80,8 | 84,4 | 86,7 | 86,1 | 85,3 |
-| MMLU-Redux | 93,7 | 91,0 | 93,8 | no disponible (truncado) | no disponible (truncado) | no disponible (truncado) |
+| Modelo | Android | MCP | OS | Search | SWE | Terminal | Web | Avg | MAvg |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| WIA-122B-A10B | 50,59 | 40,00 | 64,71 | 58,18 | 60,46 | 64,62 | 53,59 | 57,35 | 56,02 |
+| WIA-WM-35B-A3B | 48,76 | 43,72 | 63,86 | 51,33 | 59,19 | 62,52 | 54,95 | 55,72 | 54,90 |
+| WIA-WM-27B | 50,51 | 52,53 | 63,42 | 46,36 | 59,92 | 60,73 | 54,52 | 55,45 | 55,43 |
+| Qwen3.5-122B-A10B* | 43,92 | 32,43 | 41,86 | 34,93 | 48,65 | 55,70 | 44,15 | 44,07 | 43,09 |
+| GPT-5.6-sol | 49,39 | 45,75 | 59,70 | 39,99 | 58,61 | 63,63 | 55,00 | 53,58 | 53,15 |
+| Claude-Opus-4.8 | 48,98 | 53,97 | 63,02 | 39,10 | 58,15 | 57,93 | 55,26 | 53,40 | 53,77 |
 
-El resto de resultados (razonamiento, código, matemáticas, agentes, visión) no se han podido recuperar de la información disponible; no se han inventado cifras.
+WIA-Bench ID:
+
+| Modelo | Android | MCP | OS | Search | SWE | Terminal | Web | Avg | MAvg |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| WIA-122B-A10B | 41,44 | 64,33 | 33,01 | 86,66 | 57,74 | 71,43 | 66,21 | 61,16 | 60,12 |
+| WIA-WM-35B-A3B | 43,49 | 67,45 | 34,39 | 89,30 | 64,18 | 76,36 | 71,86 | 65,04 | 63,86 |
+| WIA-WM-27B | 43,21 | 67,74 | 35,28 | 88,54 | 66,24 | 80,85 | 73,84 | 66,41 | 65,10 |
+| Qwen3.5-122B-A10B* | no disponible en la tabla ID | | | | | | | | |
+| Claude-Opus-4.8 | 41,59 | 59,08 | 33,00 | 63,50 | 56,46 | 65,91 | 66,21 | 55,76 | 55,11 |
+| GPT-5.6-sol | 43,62 | 61,02 | 33,08 | 50,66 | 53,11 | 59,96 | 62,38 | 52,04 | 51,98 |
 
 ## Requisitos de hardware
-
-- VRAM para pesos en BF16: ~244 GB (estimación calculada a partir de 122 000 millones de parámetros; no publicada por el autor).
-- VRAM para pesos en FP8: ~122 GB. En INT4/NF4: ~65 GB.
-- Los 45,7 GB del repositorio implican pesos almacenados a una precisión efectiva de ~3 bits por parámetro, de modo que tal cual se publican cabrían en una GPU de 48 GB (RTX 6000 Ada, L40S) con poco margen, o cómodamente en una de 80 GB.
-- GPU recomendadas: H100 80 GB o A100 80 GB en FP8 para producción; en BF16 harían falta al menos 4×H100 80 GB. Para la versión de 45,7 GB, una sola H100/L40S es suficiente en memoria, aunque el throughput óptimo se obtiene con tensor parallelism en 2–4 GPU.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) sin cuantización agresiva y offload a CPU; con el repo de 45,7 GB haría falta una GPU de 48 GB o repartir entre dos de 24 GB.
-- Opciones de despliegue confirmadas en la model card: Hugging Face Transformers, vLLM, SGLang y KTransformers. Soporte en llama.cpp/Ollama no confirmado en la información disponible (la atención lineal Gated DeltaNet complica su implementación).
-- Caché KV: solo 12 de las 48 subcapas usan atención completa con 2 cabezas KV de dimensión 256, por lo que el coste de caché por token es muy inferior al de un transformer denso equivalente; las 36 subcapas restantes mantienen estado recurrente de tamaño constante.
-- Latencia y throughput: no disponibles. Como referencia estructural, el coste de cómputo por token se aproxima al de un modelo denso de 10B, mientras que el ancho de banda de memoria viene marcado por los 122B totales.
+- VRAM estimada para inferencia: con 125,9B parametros totales y ~10B activos, en BF16 el peso completo ronda los 250 GB; en cuantizacion de 8 bits ~126 GB; en 4 bits ~63 GB. Estas cifras son estimaciones por tamano, no datos publicados por el autor.
+- GPU recomendadas: para BF16 se requieren multiples aceleradores (varios H100 80 GB o A100 80 GB); para 4 bits podria caber en una configuracion de 2x RTX 4090 (48 GB) o una H100 80 GB, segun la implementacion.
+- Cabe en consumer GPU: solo con cuantizacion agresiva y reparto entre varias GPU; no en una unica GPU de consumo de forma holgada.
+- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama o TGI no estan confirmados en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | MMLU-Pro | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Licencia | WIA-Bench OOD Avg | WIA-Bench ID Avg |
 |---|---|---|---|---|---|---|
-| Qwen3.5-122B-A10B (este repo) | 122B | 10B | 262 144 nativo / 1 010 000 extensible | 86,7 | Apache 2.0 | Pesos en HF (repo de terceros, 0 descargas) |
-| Qwen3-235B-A22B | 235B | 22B | no disponible en la información proporcionada | 84,4 | no disponible en la información proporcionada | no disponible en la información proporcionada |
-| GPT-OSS-120B | 120B | no disponible en la información proporcionada | no disponible en la información proporcionada | 80,8 | no disponible en la información proporcionada | no disponible en la información proporcionada |
-| Qwen3.5-35B-A3B | 35B | 3B | no disponible en la información proporcionada | 85,3 | Apache 2.0 (misma familia) | no disponible en la información proporcionada |
-| Qwen3.5-27B (denso) | 27B | 27B (denso) | no disponible en la información proporcionada | 86,1 | Apache 2.0 (misma familia) | no disponible en la información proporcionada |
-| GPT-5-mini 2025-08-07 | no disponible (propietario) | no disponible | no disponible | 83,7 | propietaria | solo API |
-
-Lectura: el modelo supera a Qwen3-235B-A22B con la mitad de parámetros totales y menos de la mitad de activos, y supera ligeramente a sus hermanos pequeños de la misma generación. Frente a GPT-5-mini la comparación es solo de conocimiento (MMLU-Pro), no de capacidades agénticas.
+| WIA-122B-A10B | ~122B | ~10B | no disponible | Apache 2.0 | 57,35 | 61,16 |
+| WIA-WM-27B | 27B | denso | no disponible | no disponible | 55,45 | 66,41 |
+| WIA-WM-35B-A3B | 35B | ~3B | no disponible | no disponible | 55,72 | 65,04 |
+| Qwen3.5-122B-A10B | ~122B | ~10B | no disponible | no disponible | 44,07 | no disponible |
 
 ## Limitaciones y advertencias
-
-- Repositorio no oficial: `darwinagent/WIA-122B-A10B` es una redistribución, con 0 descargas y 0 likes, creada el 24 de octubre de 2026. La licencia enlazada apunta al repositorio de Qwen. Verificar checksums y procedencia antes de usarlo en producción.
-- La model card está heredada de Qwen3.5 y no documenta el proceso de repackaging: se desconoce si los pesos son idénticos al original o han sido modificados, podados o recuantizados.
-- El esquema de cuantización de los 45,7 GB publicados no se declara; una cuantización agresiva puede degradar razonamiento y comprensión visual de forma no medida.
-- Riesgo de alucinación: no se han publicado tasas de factualidad ni evaluaciones de calibración en la información disponible; los benchmarks presentados son de conocimiento y capacidad, no de veracidad.
-- Sesgos: no hay información sobre composición del dataset ni sobre evaluaciones de sesgo. La cobertura de 201 idiomas es una declaración del autor sin métricas por idioma; el rendimiento en lenguas con pocos recursos (p. ej. euskera o gallego) no está cuantificado.
-- Contexto: los 1 010 000 tokens son una extensión sobre los 262 144 nativos; el degradado de calidad más allá del contexto nativo no se documenta.
-- Tool calling y agentes: la model card menciona entrenamiento en entornos de agentes, pero no se detalla el formato de plantilla ni los benchmarks de function calling en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero persisten obligaciones de atribución y de inclusión de avisos; conviene revisar el texto exacto enlazado.
-- El soporte en llama.cpp/Ollama no está confirmado; desplegar en entornos de consumo puede requerir trabajo de implementación de las capas Gated DeltaNet.
-- Fecha de creación del repositorio (2026) posterior a la fecha de conocimiento habitual de muchas herramientas: comprobar compatibilidad de versiones de Transformers, vLLM y SGLang antes de fijar dependencias.
+- No es un asistente conversacional general: la model card lo restringe a evaluacion de world models e investigacion.
+- Rendimiento inferior a otras escalas WIA-WM en WIA-Bench ID (61,16 frente a 66,41 del 27B y 65,04 del 35B-A3B), pese a su mayor tamano.
+- El dominio MCP en OOD es debil (40,00), por debajo de casi todos los modelos comparados.
+- Idiomas: solo ingles declarado; no se garantiza calidad en castellano.
+- Riesgo de alucinacion en la prediccion de observaciones no evaluado en la informacion disponible.
+- Sesgos conocidos: no disponibles.
+- Licencia Apache 2.0 permite uso comercial, pero la naturaleza especializada del modelo limita su aplicabilidad fuera de world modeling.
+- Longitud de contexto no documentada, lo que dificulta planificar despliegues con trayectorias largas.
+- Repo de 255,2 GB: requiere almacenamiento y ancho de banda considerables.
 
 ## Enlaces
-
-- Repositorio en Hugging Face: https://huggingface.co/darwinagent/WIA-122B-A10B
-- Licencia referenciada: https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/main/LICENSE
-- Repositorio original de referencia (según la licencia enlazada): https://huggingface.co/Qwen/Qwen3.5-122B-A10B
-- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
-- Qwen Chat: https://chat.qwen.ai
+- Hugging Face: https://huggingface.co/darwinagent/WIA-122B-A10B
+- Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.

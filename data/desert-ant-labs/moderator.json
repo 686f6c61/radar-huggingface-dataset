@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "desert-ant-labs/moderator · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/moderator",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "desert-ant-labs (Desert Ant Labs) - Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs",
-      "snippet": "Org profile for Desert Ant Labs on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "Desert Ant Labs - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs",
-      "snippet": "Desert Ant Labs is a European AI lab building small, opinionated on-device models."
-    },
-    {
-      "title": "On-device AI Models for JavaScript and TypeScript | Desert Ant Labs",
-      "url": "https://desertant.com/js/",
-      "snippet": "The JavaScript and TypeScript packages run in Node and the browser, scoped under @desert-ant-labs on npm. The packages run the models through transformers.js, ONNX Runtime Web, or LiteRT.js."
-    }
-  ]
+  "sources": []
 }

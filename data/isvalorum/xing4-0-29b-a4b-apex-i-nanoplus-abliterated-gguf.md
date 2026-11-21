@@ -1,108 +1,97 @@
 # IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF
 
 ## Resumen
+Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF es una cuantización GGUF del modelo Xing4.0-29B-A4B, un Mixture-of-Experts (MoE) de 29.000 millones de parámetros totales con aproximadamente 4.000 millones activados por token. El modelo original lo desarrolla XingChen-AGI y esta versión concreta la publica IsValorum, que parte del checkpoint abliterado (sin rechazos) de huihui-ai y lo comprime a 11,74 GB mediante una asignación de precisión tensor a tensor denominada APEX-I-NanoPlus. El objetivo es claro: ofrecer calidad práctica de un cuantizado Q4_K_M en un tamaño que deja margen para offload parcial en GPU y ventanas de contexto amplias.
 
-Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF es una cuantizacion GGUF de tipo "handcrafted" (artesanal, tensor por tensor) del checkpoint huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated, que a su vez es una version sin rechazos (abliterated) del modelo oficial XingChen-AGI/Xing4.0-29B-A4B. El autor de la cuantizacion es el usuario IsValorum, que publica esta edicion bajo la etiqueta APEX-I-NanoPlus y la distribuye con licencia Apache 2.0. No se trata por tanto de un modelo nuevo: es una compresion agresiva de un MoE de 29B nominales (31.215.031.088 parametros reales en safetensors) con aproximadamente 4B de parametros activos por token.
+La relevancia de esta ficha está en su relación calidad/tamaño. Frente a los 62,40 GB del BF16 original, NanoPlus reduce el peso a 11,74 GB (3,01 bits por peso) con un incremento de perplejidad en WikiText-2 de +1,0137 puntos (+13,87 %) respecto a la referencia. La arquitectura subyacente combina mHC (manifold-constrained Hyper-Connections), Multi-head Latent Attention (MLA) y una capa Multi-Token Prediction (MTP), con 256K de contexto nativo ampliable a 512K.
 
-El valor diferencial del release esta en el compromiso entre tamano y fidelidad. El fichero final ocupa 11,74 GB (10,94 GiB, 2,92 bits por peso de media), frente a los 62,40 GB del BF16 de origen, conservando segun el autor una calidad practica de la clase Q4_K_M / Q4_K_S. Para conseguirlo, la asignacion de precision concentra bits en las proyecciones residuales, las dos capas densas de entrada, MLA, mHC, los routers y la ruta de salida, y rebaja las proyecciones gate/up de los expertos enrutados. Esto lo hace util para GPUs de consumo con poca VRAM o para despliegues hibridos CPU/GPU donde 2 GB extra de margen cambian por completo el offload posible.
-
-El modelo base hereda la arquitectura de Xing4.0: mHC (manifold-constrained Hyper-Connections), Multi-head Latent Attention (MLA) y una capa Multi-Token Prediction (MTP), con 262.144 tokens de contexto nativo (256K) y extension documentada hasta 512K. Los idiomas declarados son ingles y chino, y el pipeline es text-generation. En el momento de redactar esta ficha, el repositorio acumula 856 descargas y 1 like, con licencia Apache 2.0 tanto en el GGUF como en el modelo base.
+Es un modelo pensado para inferencia local con llama.cpp, para tareas de razonamiento, código y flujos agénticos, y con la salvedad importante de que la variante abliterada elimina los mecanismos de rechazo del modelo base. La licencia Apache 2.0 facilita el uso comercial, aunque la naturaleza del checkpoint abliterado exige controles adicionales en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con mHC (manifold-constrained Hyper-Connections), MLA (Multi-head Latent Attention) y 1 capa MTP |
-| Parametros totales | 31.215.031.088 (segun safetensors del modelo base); denominacion comercial "29B" |
-| Parametros activos | ~4B por token (A4B); 4 expertos enrutados de 64 + 1 experto compartido siempre activo |
-| Longitud de contexto | 262.144 tokens nativos (256K); ampliable a 512K segun el autor de Xing4.0 |
-| Tipos de cuantizacion | GGUF APEX-I-NanoPlus (2,92 BPW, 11,74 GB); variante APEX-I-MiniPlus V2.1 (3,42 BPW, 13,76 GB); referencia BF16 (16,00 BPW, 62,40 GB) |
-| Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
+| Arquitectura | Transformer MoE con mHC (manifold-constrained Hyper-Connections), MLA (Multi-head Latent Attention) y una capa MTP (Multi-Token Prediction) |
+| Parametros totales | 31.215.031.088 (31,2B) |
+| Parametros activos | Aproximadamente 4B por token (64 expertos enrutados, 4 seleccionados por token, más 1 experto compartido siempre activo) |
+| Longitud de contexto | 262.144 tokens nativos (256K), ampliable a 512K según documentación del modelo original |
+| Tipos de cuantizacion | GGUF con cuantización personalizada APEX-I-NanoPlus (3,01 BPW); también existe la variante APEX-I-MiniPlus V2.1 (3,42 BPW) del mismo autor |
+| Idiomas soportados | Inglés (en) y chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
+El modelo base es un MoE de 40 capas transformer principales. Las capas 0 y 1 son capas FFN densas (`first_k_dense_replace: 2`); las capas 2 a 39 son capas MoE con 64 expertos enrutados, 4 seleccionados por token y un experto compartido siempre activo. Se añade un bloque MTP adicional almacenado como `blk.40` en el GGUF. La combinación de mHC y MLA está orientada a eficiencia en el uso de memoria y a la estabilidad del entrenamiento en contextos largos.
 
-La arquitectura subyacente de Xing4.0-29B-A4B no es un MoE uniforme de 40 capas. Las capas 0 y 1 son capas FFN densas (`first_k_dense_replace: 2`), mientras que las capas 2 a 39 son capas MoE con 64 expertos enrutados, 4 seleccionados por token y un experto compartido siempre activo. Ademas, existe un bloque MTP adicional almacenado como `blk.40` en el GGUF. El modelo oficial se entreno sobre la pila Ascend NPU / MindSpore, y el checkpoint intermedio usado aqui es la variante abliterated de huihui-ai, generada con un flujo de abliteracion basado en Sumandora/remove-refusals-with-transformers. Esta cuantizacion GGUF no aplica ningun procedimiento adicional de eliminacion de rechazos.
+El entrenamiento original, según XingChen-AGI, se realizó sobre la pila Ascend NPU / MindSpore, con 256K de contexto nativo y extensión documentada a 512K. La información proporcionada no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El checkpoint abliterado de huihui-ai aplica un procedimiento de eliminación de rechazos basado en `Sumandora/remove-refusals-with-transformers`; esta cuantización GGUF no realiza ningún procedimiento adicional de eliminación de rechazos, solo comprime el checkpoint ya modificado.
 
-Sobre el entrenamiento original (numero exacto de tokens, composicion del dataset, uso de RLHF o DPO) no hay datos en la informacion disponible; el autor de la cuantizacion solo describe el proceso de compresion. Ese proceso se apoya en una matriz de calibracion imatrix propia y en una asignacion quirurgica de precision por tensor, auditada contra el GGUF resultante. La innovacion tecnica del release no esta en el modelo, sino en el esquema de cuantizacion: precision alta en routers, MLA, mHC, capas densas de entrada y ruta de salida, y precision mas baja en las proyecciones gate/up de los expertos, que es donde el ahorro de espacio tiene menor impacto en perplejidad.
+La innovación técnica de esta publicación es la asignación de precisión por tensor: NanoPlus concentra bits en las proyecciones residuales de salida, las dos capas densas de entrada, MLA, mHC, los routers y la ruta de salida, mientras reduce la precisión de determinadas proyecciones gate/up de los expertos enrutados para alcanzar los 11,74 GB. El autor reporta que la perplejidad se midió directamente sobre los binarios GGUF con `llama-perplexity` sobre WikiText-2 (contexto 2048, batch 512, 10 chunks).
 
 ## Capacidades
-
-- Generacion de texto conversacional y de proposito general, con pipeline text-generation.
-- Razonamiento (reasoning) y resolucion de problemas en varios pasos, incluyendo modo de pensamiento segun la etiqueta declarada por el autor.
-- Generacion de codigo, con etiquetas explicitas de coding.
-- Flujos agenticos (agentic) y planificacion de tareas con multiples pasos.
-- Uso de herramientas: la ficha declara soporte de tool use como una de las capacidades del modelo base.
-- Contexto largo: 256K tokens nativos, con extension documentada a 512K, adecuado para documentos extensos o historiales largos.
-- Multilingue limitado a ingles y chino; no se declara soporte de castellano.
-- Variante abliterated, por lo que el modelo evita los rechazos tipicos de un checkpoint alineado.
-- Capacidad de prediccion multi-token gracias a la capa MTP, que puede aprovecharse para decodificacion especulativa en llama.cpp.
-
-No se declaran capacidades de vision, audio ni otras modalidades.
+- Generación de texto y conversación multi-turno en inglés y chino.
+- Razonamiento (el modelo está posicionado para reasoning, según los tags del autor).
+- Generación y asistencia en código (tag `coding`).
+- Planificación agéntica y uso de herramientas (tag `agentic`).
+- Contexto largo: hasta 256K tokens nativos, ampliable a 512K según el modelo original.
+- Decodificación con Multi-Token Prediction (MTP) para acelerar la generación en implementaciones que lo soporten.
+- Variante abliterada: no aplica rechazos por contenido, lo que permite respuestas sin las restricciones del modelo alineado original.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
+- No se documentan capacidades de visión, audio ni otros modos multimodales en la información disponible.
 
 ## Casos de uso
-
-- Despliegue local en GPU de consumo: con 11,74 GB de pesos, el modelo entra en tarjetas de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti Super, RTX 4080) dejando espacio parcial para cache KV, algo que el BF16 de 62,40 GB hace inviable.
-- Asistente de codigo en el IDE: el modelo esta etiquetado como orientado a coding y razonamiento, por lo que puede integrarse en flujos de autocompletado, revision de diffs o generacion de tests dentro del editor.
-- Agentes autonomos con uso de herramientas: el soporte de tool calling declarado permite construir bucles de razonamiento multi-paso que invoquen APIs, ejecuten comandos o consulten bases de datos.
-- Analisis de documentos largos: con 256K tokens nativos se pueden procesar contratos, informes tecnicos o repositorios completos en una sola pasada, sin necesidad de chunking agresivo.
-- Despliegue hibrido CPU/GPU: el ahorro de ~2 GB frente a MiniPlus permite mantener mas capas en VRAM y derivar el resto a RAM en equipos con GPU modesta, mejorando el throughput frente a configuraciones con mas offload.
-- Pipelines de generacion de contenido en ingles y chino: traduccion tecnica, redaccion asistida o resumen para audiencias en esos dos idiomas, que son los unicos declarados.
-- Investigacion sobre cuantizacion: el release incluye mediciones de perplejidad propias y un mapa de cuantizacion por tensor, lo que lo convierte en un caso de estudio util para comparar estrategias de compresion en MoE con MLA.
-- Entornos sin censura para pruebas de robustez y red teaming: al ser abliterated, permite evaluar respuestas del modelo ante prompts que un checkpoint alineado rechazaria, siempre dentro de un marco etico y legal.
+- Asistencia de código en local: con 4B de parámetros activos por token y 11,74 GB de peso, se puede desplegar en una estación de trabajo con GPU de consumo y usarse como copiloto de programación integrado en el editor, manteniendo contexto de varios ficheros gracias a la ventana de 256K.
+- Agentes autónomos con herramientas: el modelo está etiquetado como agéntico y soporta contextos largos, lo que permite mantener el historial de pasos, resultados de herramientas y planes intermedios sin truncar en flujos multi-step.
+- Análisis de documentos extensos: resumen y extracción de información sobre contratos, informes o bases de código que superen los 100K tokens, aprovechando el contexto nativo de 256K.
+- Atención al cliente automatizada en inglés y chino: conversaciones multi-turno con memoria de contexto amplia y despliegue en servidores modestos gracias al reducido tamaño del cuantizado.
+- Investigación sobre alineación y seguridad: al ser una variante abliterada, sirve para estudiar el comportamiento de modelos sin rechazos, comparar respuestas frente al modelo alineado y evaluar sesgos residuales.
+- Prototipado rápido en entornos con VRAM limitada: NanoPlus deja unos 2 GB de margen frente a MiniPlus V2.1, lo que permite ampliar la ventana de contexto o el offload parcial en configuraciones híbridas RAM/GPU.
+- Generación de contenido y redacción técnica: la ausencia de rechazos permite trabajar con temáticas sensibles (ficción, seguridad, análisis de contenido) sin bloqueos, siempre con revisión humana.
 
 ## Benchmarks y rendimiento
+Los únicos datos medidos y publicados en la información disponible son de perplejidad sobre WikiText-2:
 
-El autor no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.). La unica metrica reportada es la perplejidad sobre WikiText-2, medida con `llama-perplexity` en una configuracion homogenea de 2048 tokens de contexto, batch 512 y 10 chunks:
-
-| Metrica | BF16 origen | APEX-I-NanoPlus | APEX-I-MiniPlus V2.1 |
+| Metrica | BF16 fuente | APEX-I-NanoPlus | APEX-I-MiniPlus V2.1 |
 |---|---|---|---|
 | Perplejidad WikiText-2 | 7,3060 +/- 0,18633 | 8,3197 +/- 0,21528 | 7,7238 +/- 0,19671 |
-| Delta de perplejidad | 0 | +1,0137 (+13,87%) | +0,4178 (+5,71%) |
-| Tamano del GGUF | 62,40 GB | 11,74 GB | 13,76 GB |
-| BPW medio | 16,00 | 2,92 | 3,42 |
-| Calidad practica objetivo | Precision completa | Clase Q4_K_M / Q4_K_S | Clase Q5_K_M |
+| Delta frente a BF16 | 0 | +1,0137 (+13,87 %) | +0,4178 (+5,71 %) |
+| Tamano GGUF | 62,40 GB | 11,74 GB | 13,76 GB |
+| BPW medio | 16,00 | 3,01 | 3,42 |
+| Calidad práctica objetivo | Precisión completa | Clase Q4_K_M / Q4_K_S | Clase Q5_K_M |
 
-No se han publicado resultados de benchmarks de tareas (razonamiento, codigo, matematicas) en la informacion disponible.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para los pesos: 11,74 GB en el fichero NanoPlus; 13,76 GB en MiniPlus V2.1. A ello hay que sumar la cache KV, cuyo tamano depende del contexto efectivo y de la configuracion de llama.cpp, por lo que en contextos de 256K puede exigir decenas de GB adicionales o cuantizacion de la propia KV.
-- GPU recomendadas por el autor: no se especifican en la informacion disponible. Por tamano de pesos, encajan GPUs de 16 GB o mas (RTX 4080, RTX 4090, A100 40 GB, H100) para ejecucion integra en VRAM con contexto moderado.
-- Cabe en GPU de consumo: si, en modelos con 12 GB o mas de VRAM, siempre que se limite el contexto o se cuantice la cache KV y se acepte cierto offload a RAM.
-- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, llama-cpp-python, servidores con endpoints compatibles). El autor incluye una seccion de quickstart de llama.cpp en la model card.
-- Latencia y throughput: la model card menciona una seccion de "Hardware Throughput: GPU Projections & Tested RAM Offload", pero su contenido no esta incluido en la informacion disponible, por lo que no se pueden citar cifras concretas. Al tener solo ~4B parametros activos por token, el coste de computo por token es notablemente inferior al de un modelo denso de 31B.
+- VRAM estimada para inferencia: el fichero pesa 11,74 GB; con overhead de contexto y caché KV, se recomienda al menos 14-16 GB de VRAM para offload completo del modelo, y más si se usan ventanas de contexto muy largas.
+- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 (40/80 GB), H100 (80 GB) para despliegues con contexto largo o concurrencia.
+- GPU de consumo: cabe en tarjetas de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) con contexto moderado; en tarjetas de 12 GB requiere offload parcial a RAM.
+- Despliegue: llama.cpp es el runtime principal (formato GGUF); también es compatible con entornos de endpoints según los tags del autor. No se documenta soporte explícito de vLLM o TGI para este cuantizado.
+- Latencia y throughput: no disponibles en la información proporcionada. El autor menciona una sección de "Hardware Throughput: GPU Projections & Tested RAM Offload" en la model card, pero no se incluyen cifras en el extracto disponible.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar con las otras ediciones de la misma familia. No hay datos de modelos externos comparables en el material proporcionado.
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Xing4.0-29B-A4B APEX-I-NanoPlus (este) | 31,2B | ~4B | 256K (512K ampliable) | Apache 2.0 | GGUF 3,01 BPW | Variante abliterada, 11,74 GB |
+| Xing4.0-29B-A4B APEX-I-MiniPlus V2.1 | 31,2B | ~4B | 256K (512K ampliable) | Apache 2.0 | GGUF 3,42 BPW | Variante abliterada, 13,76 GB, mejor PPL (7,72) |
+| Huihui-Xing4.0-29B-A4B-abliterated | 31,2B | ~4B | 256K (512K ampliable) | Apache 2.0 | Safetensors (BF16) | Checkpoint fuente abliterado, 62,40 GB |
+| XingChen-AGI/Xing4.0-29B-A4B | 29B (nominal) | ~4B | 256K (512K ampliable) | Apache 2.0 | Safetensors | Modelo original alineado, sin abliterar |
 
-| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Tamano | Licencia |
-|---|---|---|---|---|---|
-| APEX-I-NanoPlus (este) | 31,2B totales / ~4B activos | 256K nativos | 8,3197 | 11,74 GB | apache-2.0 |
-| APEX-I-MiniPlus V2.1 | 31,2B totales / ~4B activos | 256K nativos | 7,7238 | 13,76 GB | apache-2.0 |
-| Xing4.0-29B-A4B BF16 | 31,2B totales / ~4B activos | 256K nativos | 7,3060 | 62,40 GB | apache-2.0 |
-| Otros MoE de tamano similar (por ejemplo, Qwen3-30B-A3B) | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- Alucinacion: es un modelo de lenguaje sin mecanismo de verificacion factual; la cuantizacion a 2,92 BPW incrementa la perplejidad un 13,87% respecto al BF16, lo que puede aumentar la tasa de errores en tareas sensibles.
-- Idiomas: solo se declaran ingles y chino. No hay soporte garantizado de castellano ni de otros idiomas, y el rendimiento fuera de en y zh puede degradarse de forma notable.
-- Perdida de calidad: NanoPlus se situa por debajo de MiniPlus V2.1 en fidelidad. Si la tarea es sensible a la precision (codigo complejo, matematicas, razonamiento encadenado largo), conviene valorar MiniPlus o una cuantizacion de mayor precision.
-- Modelo abliterated: al proceder de un checkpoint sin rechazos, puede generar contenido inapropiado, ofensivo o inseguro sin las salvaguardas habituales. Es responsabilidad del desplegador anadir filtros propios si el caso de uso lo requiere.
-- Licencia: Apache 2.0 permite uso comercial, pero el desplegador debe verificar las condiciones del modelo base y del modelo original de XingChen-AGI, ya que se encadenan tres niveles (Xing4.0 oficial, abliterated de huihui-ai y cuantizacion de IsValorum).
-- Contexto: aunque se anuncian 256K tokens nativos y 512K con extension, en la practica el coste de la cache KV limita el contexto util en hardware de consumo; no se aportan mediciones de rendimiento a contexto largo.
-- Reproducibilidad y soporte: se trata de una cuantizacion artesanal mantenida por un autor individual, no de un release oficial; la metodologia exacta de asignacion por tensor y la matriz imatrix no estan publicadas en la informacion disponible.
-- Madurez del ecosistema: el modelo base pertenece a la familia Xing4.0, con un ecosistema mas reducido que otras familias, lo que puede implicar menos herramientas, ejemplos y soporte comunitario.
+- La variante abliterada elimina los mecanismos de rechazo del modelo original; puede generar contenido dañino, ofensivo o inseguro sin filtros, lo que exige moderación externa en producción.
+- La cuantización a 3,01 BPW incrementa la perplejidad un 13,87 % frente a BF16; se espera degradación en tareas sensibles a precisión, como matemáticas complejas o código de baja tolerancia a errores.
+- Riesgo de alucinación inherente a los modelos de lenguaje, agravado por la compresión agresiva y por la ausencia de alineación en la variante abliterada.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- El contexto de 256K consume gran cantidad de memoria en caché KV; en configuraciones de 12-16 GB habrá que reducirlo o usar cuantización de la caché.
+- La licencia Apache 2.0 permite uso comercial, pero el despliegue de un modelo sin rechazos puede incumplir políticas de plataformas o normativas sectoriales; se recomienda revisión legal.
+- No hay benchmarks de tareas publicados; las etiquetas de calidad ("Q4_K_M-class") son estimaciones del autor basadas en perplejidad, no en evaluaciones funcionales.
+- El modelo base se entrenó sobre Ascend NPU / MindSpore; no se documentan detalles de dataset ni de fases de alineación, lo que dificulta evaluar sesgos concretos.
 
 ## Enlaces
-
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF
-- Variante APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
-- Modelo base abliterated (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated
-- Modelo oficial de XingChen-AGI: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
-- Metodo de abliteracion de referencia: https://github.com/Sumandora/remove-refusals-with-transformers
-- Contribuciones del autor (Ko-fi): https://ko-fi.com/isvalorum
-
-No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.
+- Hugging Face (este modelo): https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF
+- Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated
+- Modelo original: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- Variante MiniPlus V2.1 del mismo autor: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Método de abliteración referenciado: https://github.com/Sumandora/remove-refusals-with-transformers
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

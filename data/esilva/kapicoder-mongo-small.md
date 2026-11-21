@@ -2,127 +2,109 @@
 
 ## Resumen
 
-KapiCoder-Mongo-Small es un modelo de autocompletado de código de unos 1.500 millones de parámetros, afinado a partir de `Qwen/Qwen2.5-Coder-1.5B` por el usuario esilva para una tarea muy concreta: completar consultas de MongoDB en la posición del cursor mediante *fill-in-the-middle* (FIM). No es un modelo conversacional ni un agente: recibe el texto anterior y posterior al cursor junto con una cabecera de contexto (`editor-context-v1`) y propone una continuación corta, limitada a 32 tokens por el editor que lo integra. Está diseñado para el editor *Kapibara Studio* y cubre el dialecto MongoDB Console JavaScript (`ConnectionPool.<conn>.<db>.<collection>.find(...)`, pipelines de agregación, etapas `$search`, definiciones de índices) y pipelines JSON.
+KapiCoder-Mongo-Small es un modelo de autocompletado de código de aproximadamente 1.500 millones de parámetros, obtenido por ajuste fino (fine-tuning) de Qwen/Qwen2.5-Coder-1.5B. Lo desarrolla el autor identificado como esilva para el editor Kapibara Studio, y su especialidad es completar consultas de MongoDB en el punto del cursor mediante relleno de huecos (fill-in-the-middle, FIM), incluso cuando el cursor está dentro de una llamada a `find`, `update` o `aggregate`. Resuelve un problema muy concreto: sugerir fragmentos cortos de JavaScript de consola de Mongo y de pipelines JSON que encajen sintácticamente con el texto previo y posterior al cursor.
 
-El modelo se publica como **preview experimental** (etiqueta de repositorio `v0.1.0-preview`, pesos v3) y el propio autor lo desaconseja para producción. Su interés técnico está en la especialización extrema: un modelo pequeño, con licencia Apache 2.0, entrenado sobre datos sintéticos generados por un LLM (Qwen3-14B) y plantillas gramaticales, con un contrato de prompt explícito y un conjunto de evaluación de homologación fuera de distribución construido sobre 28 esquemas de telecomunicaciones y adtech nunca vistos en entrenamiento.
+El modelo se publica en estado de vista previa experimental (etiqueta de repositorio `v0.3.0-preview`, pesos v4b) y el propio autor advierte de que no está pensado para producción. No es un modelo conversacional ni un agente: no sigue instrucciones, no mantiene diálogo, no llama a herramientas y no ejecuta consultas; solo propone texto. Su contrato de prompt es específico (`editor-context-v2`), que incluye una cabecera con el esquema de la colección destino (línea `TARGET FIELDS`), y fue entrenado con una ventana de 8.000 tokens.
 
-La relevancia práctica es la de un corrector de autocompletado local y barato, que cabe en GPUs de consumo, frente a alternativas generalistas mucho mayores. La contrapartida es una evaluación íntegramente sintética, sin conjunto escrito por personas y con una única semilla de entrenamiento, lo que limita seriamente cualquier conclusión sobre su comportamiento con consultas reales.
+Es relevante ahora porque demuestra un patrón de especialización vertical muy estrecho sobre un modelo base pequeño y con licencia Apache 2.0, orientado a la asistencia en editores y a un dominio de base de datos concreto. La evaluación es interna y sobre datos sintéticos, sin conjunto ciego escrito por humanos, lo que condiciona la interpretación de sus cifras.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2, derivada de `Qwen/Qwen2.5-Coder-1.5B`); detalles internos de capas y cabezas no disponibles |
-| Parámetros totales | 1.543.714.304 (1,5 B) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (no declarada en la model card; no verificada en esta ficha) |
-| Tipos de cuantización | no disponible (el repositorio solo publica pesos en safetensors; no se distribuyen GGUF ni cuantizaciones oficiales) |
-| Idiomas soportados | en, pt (según las etiquetas del repositorio) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repositorio de 3,1 GB), librería `transformers` |
-| Pipeline | text-generation |
-| Tarea específica | FIM / autocompletado en MongoDB Console JavaScript y pipelines JSON |
-| Contrato de prompt | `editor-context-v1` (texto antes del cursor, texto después del cursor y cabecera de contexto) |
-| Límite de salida recomendado | 32 tokens por sugerencia (impuesto por el editor) |
-| Versión de pesos | v3, etiqueta de repositorio `v0.1.0-preview` |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer decoder-only (Qwen2), ajuste fino de Qwen/Qwen2.5-Coder-1.5B |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | ventana de entrenamiento de 8k tokens; el IDE solicita como maximo 128 tokens de continuacion |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, pt |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parámetros. Sobre esa base se aplica un ajuste fino supervisado orientado a FIM, es decir, el modelo aprende a rellenar el hueco entre un prefijo y un sufijo de código en lugar de continuar texto libre. La model card no detalla el número de tokens de entrenamiento, la composición exacta del corpus, ni si se aplicaron etapas de RLHF o DPO; únicamente indica que el corpus es sintético, generado por un LLM (Qwen3-14B) y por plantillas gramaticales sobre distintos esquemas de colecciones MongoDB, y que se aplicó un proceso de decontaminación eliminando cortes de entrenamiento que compartían n-gramas largos con el conjunto de evaluación.
+El modelo parte de Qwen2.5-Coder-1.5B, un transformer decoder-only, y se ajusta mediante fine-tuning supervisado para la tarea de FIM en el dominio de MongoDB. El entrenamiento se basa en datos sinteticos generados (el autor menciona datos escritos por LLM y por gramatica) y esta orientado al contrato de prompt `editor-context-v2`: una cabecera con lenguaje, comandos disponibles, nombres conocidos y, de forma destacada, una linea `TARGET FIELDS` con los campos y tipos de la coleccion destino. La regla de salida incluye cerrar el objeto interno que la sugerencia deja abierto.
 
-La innovación destacable no está en la arquitectura sino en el contrato de contexto y en el protocolo de evaluación. El prompt `editor-context-v1` transporta el prefijo, el sufijo y una cabecera con los nombres de campo de la colección cuando están disponibles (`context_kind=full`), lo que permite medir por separado el efecto de ver el esquema. La evaluación combina un split de validación interno del generador (n=2000) con un conjunto de homologación fuera de distribución (n=6030, 28 esquemas de telecomunicaciones y adtech no vistos en entrenamiento), escrito también por un LLM y por la gramática, no por personas. Se entrenó una única ejecución por modelo (una sola semilla) y se evaluó con una única pasada greedy, sin estimación de varianza entre ejecuciones.
+Se publicaron dos ejecuciones de entrenamiento con semillas distintas, y los pesos publicados corresponden a la primera. El autor no documenta el volumen de tokens de entrenamiento ni si hubo RLHF o DPO; no disponible. La innovacion tecnica principal no es arquitectonica, sino de contrato de contexto: inyectar el esquema de la coleccion en la cabecera mejora de forma marcada la fundamentacion de los campos citados (99,2 % de campos existentes con cabecera frente a 50,0 % sin ella).
 
 ## Capacidades
 
-- Autocompletado FIM en la posición del cursor para MongoDB Console JavaScript: llamadas `find(...)` sobre `ConnectionPool.<conn>.<db>.<collection>`, filtros, proyecciones y opciones.
-- Generación de etapas de pipelines de agregación y de etapas `$search`.
-- Generación de definiciones de índices y de pipelines en formato JSON.
-- Condicionamiento por esquema: acepta una cabecera de contexto con los nombres de campo de la colección (`context_kind=full`), lo que reduce —sin eliminar— la invención de campos.
-- Conserva cierta capacidad genérica de JavaScript: 0,606 de FIM accuracy en un conjunto interno de cortes FIM sobre paquetes npm permisivos (n=500), usado como control de regresión.
-- Sugerencias cortas: el diseño asume un tope de 32 tokens por continuación.
-- **No** soporta tool calling ni function calling.
-- **No** es un modelo de agentes ni de razonamiento multi-paso.
-- **No** sigue instrucciones, no mantiene conversaciones y no explica código (pese a la etiqueta `conversational` del repositorio, la propia model card lo desmiente explícitamente).
-- **No** ejecuta consultas: solo sugiere texto; cualquier ejecución corresponde a la aplicación anfitriona.
-- Capacidades multilingües: no acreditadas más allá de las etiquetas `en` y `pt`; no hay evaluación por idioma en la información disponible.
-- Sin modo *thinking*, visión ni audio.
+- Autocompletado FIM de consultas MongoDB en JavaScript de consola (`db.<collection>.find(...)`, `ConnectionPool.<conn>.<db>.<collection>...`, pipelines de agregacion, documentos de actualizacion, definiciones de indices).
+- Autocompletado de pipelines JSON de agregacion.
+- Sugerencias con el cursor dentro de una llamada (`find`, `update`, `aggregate`), no solo al final.
+- Cierre del objeto interno abierto por la sugerencia segun la regla de salida de `editor-context-v2`.
+- Fundamentacion de campos cuando se proporciona el esquema destino en la cabecera.
+- Generacion de texto corto (hasta 128 tokens solicitados por el IDE).
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- No es un modelo conversacional ni sigue instrucciones.
+- Capacidades multilingues limitadas a en y pt segun la model card.
 
 ## Casos de uso
 
-- **Autocompletado en el editor para desarrolladores de MongoDB**: el modelo recibe el prefijo y el sufijo del buffer más la cabecera con los campos de la colección y propone la continuación del filtro o de la etapa de agregación; encaja porque la latencia y el coste son mínimos con 1,5 B de parámetros y 32 tokens de salida, y porque el desarrollador revisa cada inserción.
-- **Asistencia en pipelines de agregación largos**: al rellenar etapas intermedias (`$match`, `$group`, `$lookup`, `$search`) en un pipeline ya iniciado, el modelo aprovecha el sufijo para mantener la coherencia sintáctica con las etapas posteriores, algo que un modelo de continuación pura no hace.
-- **Autocompletado de índices en tareas de modelado de datos**: dado el nombre de la colección y los campos visibles en el contexto, sugiere la definición de índice; útil en equipos que escriben muchos `createIndex` repetitivos y quieren reducir tecleo.
-- **Generación de esqueletos de consultas JSON para herramientas internas**: integrado en un panel de administración que produce pipelines JSON a partir de un contexto de esquema, con revisión humana antes de guardar.
-- **Prototipado de asistentes de consulta dentro de un IDE o notebook**: sirve como pieza de autocompletado en un plugin experimental, aceptando la tasa de campos inventados como tolerable mientras se valida contra el esquema antes de ejecutar.
-- **Evaluación comparativa de técnicas de FIM sobre dialectos de bases de datos**: el par (modelo, protocolo `editor-context-v1`) y sus conjuntos sintéticos sirven como línea base reproducible para quien investigue autocompletado especializado en un DSL concreto.
-- **Ahorro de coste frente a modelos generalistas en entornos con GPU de consumo**: al caber en una GPU de 8-12 GB, permite autocompletado on-premise sin enviar código a un servicio externo, siempre que se acepte su estado de preview.
+- Autocompletado en editor de consultas MongoDB: el modelo recibe el texto previo y posterior al cursor mas la cabecera `editor-context-v2` y propone una continuacion corta que mantiene valido el documento en el 94,9 % de los casos en la suite interna de cursor dentro de llamada. Adecuado porque esta entrenado especificamente para ese contrato y ese lenguaje.
+- Asistencia en pipelines de agregacion: dado un esqueleto de `aggregate([...])` y el esquema de la coleccion, sugiere etapas o campos que encajan sintacticamente y citan campos existentes (99,2 % con cabecera completa). Util para acelerar la escritura de etapas repetitivas.
+- Relleno de documentos de actualizacion: con el cursor dentro de un `update`, propone operadores (`$set`, `$inc`, etc.) que son legales en esa posicion (94,8 % en la metrica `op_valid_in_position`). Apropiado para editores que validan despues la sugerencia.
+- Generacion de definiciones de indices: completa llamadas de creacion de indices sobre colecciones conocidas, usando los nombres y campos declarados en la cabecera.
+- Integracion en IDE o herramienta interna de bases de datos: al ser un modelo de 1,5 B con licencia Apache 2.0 y pesos safetensors, puede desplegarse en infraestructura propia junto al editor y servirse mediante transformers o text-generation-inference (el repositorio incluye la etiqueta `endpoints_compatible`).
+- Prototipado de asistentes de consulta para equipos de datos: sirve para experimentar con autocompletado especializado antes de invertir en un modelo mayor, aceptando que las cifras son de evaluacion interna y sintetica.
+- Sugerencia de campos en formularios o constructores de consultas visuales: dado el esquema en la cabecera, el modelo puede proponer nombres de campo validos, lo que resulta util para autocompletar selectores en interfaces no textuales.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor del modelo (`verified: false`), sobre conjuntos internos y sintéticos.
+Resultados declarados por el autor (evaluacion interna sobre datos sinteticos, `verified: false`).
 
-| Conjunto de evaluación | Métrica | Valor |
+| Tarea / conjunto | Metrica | Valor |
 |---|---|---|
-| KapiCoder v2c validation split, interno y sintético (n=2000) | FIM accuracy (exact match normalizado) | 0,4100 |
-| KapiCoder v2c validation split (n=2000) | Exec-valid (la continuación parsea y se ejecuta en solo lectura) | 0,6015 |
-| KapiCoder v2c validation split (n=2000) | Exec-valid dividido por el techo del validador (0,6255) | 0,9616 |
-| KapiCoder v2c validation split (n=2000) | Syntax-valid | 0,9980 |
-| KapiCoder v2c validation split (n=2000) | Campos inexistentes con esquema visible (`context_kind=full`), porcentaje | 1,21 % |
-| Cortes FIM sobre JavaScript de npm permisivo, interno (n=500) | FIM accuracy (control de regresión genérica) | 0,6060 |
-| Homologación OOD v1, sintética (n=6030, 28 esquemas no vistos) | FIM accuracy (exact match normalizado) | 0,4537 |
-| Homologación OOD v1 (n=6030) | Exec-valid | 0,8307 |
-| Homologación OOD v1 (n=6030) | Exec-valid dividido por el techo del validador (0,9307) | 0,8926 |
-| Homologación OOD v1 (n=6030) | Campos inexistentes con esquema visible, porcentaje | 7,50 % |
+| Autocompletado MongoDB con cursor dentro de llamada (editor-context-v2), suite cursor-in-call v1, n=1200, esquemas reservados | Documento parsea tras insertar la sugerencia (64 tokens, post-proceso v2) | 0,9492 |
+| Igual | Todo operador es legal en su posicion (64 tokens, post-proceso v2) | 0,9483 |
+| Igual | Campos citados existen en la coleccion destino, esquema en cabecera (context_kind=full) | 0,9917 |
+| FIM autocomplete MongoDB (editor-context-v1), split de validacion v2c, n=2000 | FIM accuracy (exact match normalizado) | 0,399 |
+| Igual | Exec-valid (la completacion parsea y se ejecuta en solo lectura) | 0,5815 |
+| FIM en esquemas no vistos (editor-context-v1), homologacion OOD v1, n=6030 | FIM accuracy (exact match normalizado) | 0,4461 |
+| Igual | Exec-valid (parsea y se ejecuta en solo lectura) | 0,8426 |
 
-Comparación de la métrica de campos inexistentes con esquema visible sobre el conjunto de homologación, según la model card:
-
-| Modelo | Campos inexistentes (esquema visible) |
-|---|---|
-| KapiCoder-Mongo-Small (v3, publicado) | 7,50 % |
-| `Qwen/Qwen2.5-Coder-1.5B` zero-shot (base) | 7,15 % |
-| Checkpoint interno previo (no publicado) | 9,19 % |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Comparaciones declaradas por el autor en la model card: en la suite cursor-in-call con prompt v2, el documento se mantiene valido el 94,9 % de las veces frente al 87,8 % de v3. Con el prompt anterior `editor-context-v1` y en homologacion OOD, la FIM accuracy es 44,61 % frente a 45,37 % de v3, y la exec-valid 84,26 % frente a 83,07 %. Sin cabecera, solo el 50,0 % de los campos citados existen (v3: 54,5 %). Entre las dos semillas de entrenamiento, con la segunda las comprobaciones cursor-in-call caen aproximadamente 1 punto por debajo de v4, superando el margen de no inferioridad de 1 punto; con la semilla publicada no ocurre.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia** (estimación a partir del recuento de parámetros, no de mediciones publicadas): ~3,1 GB de pesos en fp16/bf16 más caché KV; ~1,6 GB en int8; ~0,9-1,0 GB en 4 bits. Con ventanas de contexto cortas y salidas de 32 tokens, la caché KV es marginal.
-- **GPU recomendadas**: cualquier GPU con al menos 8 GB para bf16 con holgura (RTX 3060 Ti, RTX 4060 Ti, RTX 3070, L4); A100/H100 no aportan ventaja relevante a este tamaño y solo se justifican por agregación de peticiones.
-- **Cabe en GPU de consumo**: sí, previsiblemente en tarjetas de 6-8 GB en bf16 y en tarjetas de 4 GB con cuantización de 4 bits, aunque no hay mediciones publicadas que lo confirmen.
-- **Opciones de despliegue**: `transformers` (librería declarada) y Text Generation Inference (etiqueta `text-generation-inference`), además de endpoints compatibles (etiqueta `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI con cuantizaciones no están confirmados en la información disponible; el repositorio no incluye ficheros GGUF.
-- **Latencia y throughput**: no disponibles. Como referencia de diseño, el editor limita la salida a 32 tokens y la evaluación se hizo con decodificación greedy única, sin mediciones de latencia ni de tokens por segundo.
+- VRAM estimada para inferencia en fp16: en torno a 3 GB solo para pesos (1,54 B parametros), mas cache KV; con ventana de 8k tokens el consumo adicional puede ser de varios cientos de MB a mas de 1 GB segun batch y configuracion.
+- Cuantizacion: no se documentan tipos soportados; al ser un modelo transformers/Qwen2, es plausible convertirlo a GGUF o AWQ/GPTQ, pero el autor no lo garantiza ni lo evalua.
+- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060, 4060, 4070, 4090) deberia bastar en fp16 para uso interactivo; en entornos de servidor, A100 o H100 no son necesarias para este tamano.
+- Cabe en GPU consumer: si, con margen amplio en fp16 y aun mas con cuantizacion de 8 o 4 bits.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`). No se documenta soporte oficial de llama.cpp, Ollama ni vLLM.
+- Latencia y throughput: no disponible; el autor no publica mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KapiCoder-Mongo-Small | 1,54 B | no disponible | FIM accuracy 0,41 en validación interna; 0,4537 en homologación OOD | Apache 2.0 | Público en HF, preview, 0 descargas |
-| `Qwen/Qwen2.5-Coder-1.5B` (base) | 1,54 B | no disponible en esta ficha | Uso como referencia zero-shot: 7,15 % de campos inexistentes en homologación; resto de métricas no disponibles | Apache 2.0 | Público en HF |
-| Checkpoint interno previo del mismo autor | no disponible | no disponible | 9,19 % de campos inexistentes en homologación | no disponible | No publicado |
-| Otros modelos especializados en FIM para MongoDB | no disponible | no disponible | no disponible | no disponible | No se han identificado en la información proporcionada |
+| KapiCoder-Mongo-Small (v4b) | 1,54 B | entrenado a 8k | FIM MongoDB, contrato editor-context-v2 | apache-2.0 | Hugging Face, preview |
+| Qwen2.5-Coder-1.5B (base) | 1,54 B | no disponible en la informacion | generacion de codigo general | no disponible en la informacion | Hugging Face |
+| KapiCoder-Mongo-Small v3 (`v0.1.0-preview`) | 1,54 B | no disponible | FIM MongoDB con contrato editor-context-v1 | apache-2.0 | Hugging Face, tag previo |
+| KapiCoder-Mongo-Small v4 (`v0.2.0-preview`) | 1,54 B | no disponible | FIM MongoDB con contrato editor-context-v2 | apache-2.0 | Hugging Face, tag previo |
 
-La comparación honesta es contra el modelo base: la mejora medida se limita a la tasa de campos inexistentes en el conjunto de homologación (7,50 % frente a 7,15 % del base), es decir, prácticamente indistinguible, y el propio autor advierte que el conjunto no es plenamente independiente de los datos de entrenamiento v3.
+No se dispone de datos de benchmarks de los modelos base ni de alternativas especializadas en MongoDB en la informacion proporcionada, por lo que la comparacion se limita a parametros, contrato y licencia.
 
 ## Limitaciones y advertencias
 
-- **Estado preview/experimental**: el autor indica explícitamente que no es para uso en producción; se publica para inspección y retroalimentación.
-- **Evaluación exclusivamente sintética**: todos los números provienen de datos generados por un LLM (Qwen3-14B) y por plantillas gramaticales; no hay ningún conjunto escrito por personas ni evaluación ciega.
-- **El conjunto de homologación no es plenamente independiente**: el corpus v3 contiene consultas del mismo generador LLM y de las mismas plantillas gramaticales sobre otros esquemas, por lo que la ganancia en consultas escritas por LLM probablemente sobreestima la ganancia en consultas humanas.
-- **Invención de nombres de campo**: con el esquema visible, el 7,50 % de las sugerencias en homologación usan un campo inexistente (frente al 7,15 % del base). Hay que validar los nombres de campo antes de ejecutar cualquier sugerencia.
-- **Sugerencias destructivas posibles**: una continuación puede ser sintácticamente válida (0,998 de syntax-valid) y aun así ser incorrecta o destructiva si se ejecuta sin revisión; el modelo nunca ejecuta nada, pero tampoco valida semántica ni permisos.
-- **Sin estimación de varianza**: una sola semilla de entrenamiento y una sola pasada de evaluación greedy; no hay intervalos de confianza ni repetibilidad medida.
-- **Alcance funcional muy estrecho**: solo MongoDB Console JavaScript y pipelines JSON en los dialectos descritos; cualquier otro dialecto queda fuera de alcance. No sirve para chat, revisión de código ni explicaciones, a pesar de la etiqueta `conversational`.
-- **Sin soporte de tool calling ni de agentes**: no puede integrarse en flujos multi-paso que requieran seguir instrucciones.
-- **Idiomas**: las etiquetas declaran `en` y `pt`, pero no hay evaluación por idioma; se desconoce el comportamiento real en portugués y no hay indicios de soporte de castellano.
-- **Licencia**: Apache 2.0 permite uso comercial y modificaciones, pero el modelo base también es Apache 2.0 y se mantienen sus condiciones; al ser un preview sin garantías, el riesgo de calidad recae en quien lo despliega.
-- **Advertencia de producción**: no debe usarse para ejecutar o modificar datos en producción de forma desatendida, ni para decisiones de seguridad, cumplimiento o control de acceso.
+- Estado de vista previa experimental: el autor indica explicitamente que no es para produccion.
+- Evaluacion interna sobre datos sinteticos, sin conjunto ciego escrito por humanos; las cifras no son directamente comparables con benchmarks publicos.
+- No es un modelo conversacional ni un agente: no sigue instrucciones, no llama a herramientas y no explica codigo.
+- No ejecuta consultas; cualquier ejecucion la realiza la aplicacion anfitriona, con el riesgo asociado de sugerencias destructivas.
+- No es un validador: una sugerencia puede ser sintacticamente valida y aun asi ser incorrecta o referirse a campos inexistentes.
+- Sin la cabecera `TARGET FIELDS`, la fundamentacion de campos cae al 50,0 %; es imprescindible validar nombres de campo antes de ejecutar.
+- Dependencia estricta del contrato `editor-context-v2`: editores sin ese contrato rechazan el paquete y deben usar el tag `v0.1.0-preview`.
+- Variabilidad entre semillas: con la segunda semilla, algunas metricas caen alrededor de 1 punto por debajo de v4.
+- Idiomas limitados a en y pt; no se documenta soporte de castellano.
+- Riesgo de alucinacion de campos, operadores o estructuras no presentes en el esquema, especialmente en esquemas no vistos.
+- Sesgos conocidos: no disponible.
+- Licencia Apache 2.0 permite uso comercial, pero el estado de preview y la ausencia de evaluacion humana desaconsejan su uso en produccion sin validacion adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/esilva/KapiCoder-Mongo-Small
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
-- Referencia arXiv declarada en las etiquetas del repositorio: https://arxiv.org/abs/2409.12186
-- Repositorio con la etiqueta de versión `v0.1.0-preview`: https://huggingface.co/esilva/KapiCoder-Mongo-Small/tree/v0.1.0-preview
-- Documentación de Text Generation Inference: no disponible en la información proporcionada
-- Blog, paper o demo del autor: no disponible en la información proporcionada
+- Modelo base Qwen2.5-Coder-1.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
+- Tag v4 (`v0.2.0-preview`): https://huggingface.co/esilva/KapiCoder-Mongo-Small/tree/v0.2.0-preview
+- Tag v3 (`v0.1.0-preview`): https://huggingface.co/esilva/KapiCoder-Mongo-Small/tree/v0.1.0-preview
+- Paper referenciado en las etiquetas (arXiv:2409.12186): https://arxiv.org/abs/2409.12186

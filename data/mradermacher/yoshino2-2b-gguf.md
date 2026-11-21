@@ -2,94 +2,98 @@
 
 ## Resumen
 
-Yoshino2-2B-GGUF es un conjunto de cuantizaciones estáticas en formato GGUF del modelo base en5yme/Yoshino2-2B, publicadas por mradermacher. El modelo original es un modelo de 1.942.653.248 parámetros (aproximadamente 2B) orientado a razonamiento y destilación, entrenado sobre el dataset en5yme/Nemotron-Lightning-30B-A3B-Distill. Este repositorio no contiene los pesos originales en safetensors, sino las versiones cuantizadas listas para su uso con llama.cpp y herramientas compatibles.
+Yoshino2-2B-GGUF es la version cuantizada en formato GGUF del modelo Yoshino2-2B, un modelo de lenguaje de aproximadamente 1.940 millones de parametros desarrollado por el usuario en5yme y distribuido por mradermacher. El modelo base se presenta como un modelo de razonamiento obtenido mediante destilacion a partir de Nemotron-3.5-Lightning-30B-A3B-Distill, segun los metadatos de la model card. Esta version GGUF facilita la ejecucion local en hardware modesto mediante llama.cpp y herramientas compatibles.
 
-La relevancia de este repositorio es práctica: permite ejecutar un modelo de razonamiento de ~2B parámetros en hardware de consumo gracias a los cuantizados de 1,1 a 4,0 GB. Al estar etiquetado con `endpoints_compatible` y `conversational`, está pensado para inferencia local y despliegues ligeros. La licencia MIT facilita su uso comercial y su integración en productos.
+El repositorio ofrece un conjunto amplio de cuantizaciones estaticas que van desde Q2_K (1,1 GB) hasta f16 (4,0 GB), ademas de suplementos multimodales mmproj en Q8_0 y f16, lo que sugiere que el modelo base podria tener capacidad de procesamiento de vision, aunque la model card no lo detalla explicitamente. La licencia MIT permite uso comercial sin restricciones significativas.
 
-No se dispone de información publicada sobre arquitectura interna, longitud de contexto ni proceso de entrenamiento más allá de las etiquetas de destilación y razonamiento y del dataset de destilación citado. Los datos que siguen se limitan a lo declarado en la model card y en los metadatos del repositorio.
+Su relevancia actual radica en que permite desplegar un modelo de razonamiento de ~2B parametros en equipos de consumo, con un rango de cuantizaciones que equilibra tamano y calidad, y con soporte para inferencia conversacional. No obstante, la informacion publicada es escasa: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base etiquetado como transformers; sin detalle de arquitectura) |
-| Parametros totales | 1.942.653.248 (~2B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base transformer, inferido por el pipeline de transformers) |
+| Parametros totales | 1.942.653.248 (~1,94B) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; adicionalmente mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors solo en el modelo base original) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Tamano del repo | 19,6 GB |
+| Dataset de destilacion | en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill |
+| Modelo base | en5yme/Yoshino2-2B |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura del modelo base en5yme/Yoshino2-2B en los datos disponibles. Los metadatos lo describen como un modelo de tipo transformer compatible con la librería `transformers` y con aproximadamente 1.942 millones de parámetros. Las etiquetas `distillation` y `reasoning` indican que fue entrenado mediante destilación, presumiblemente a partir de un modelo mayor, y que está orientado a tareas de razonamiento.
+La informacion disponible no detalla la arquitectura interna del modelo base Yoshino2-2B. Por el pipeline declarado (transformers) y el proceso de cuantizacion a GGUF, se trata de un modelo transformer de ~1,94B parametros. Los tags del repositorio indican "distillation" y "reasoning", y el dataset asociado es en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill, lo que sugiere que el modelo fue entrenado mediante destilacion de conocimiento a partir de un modelo mayor (Nemotron-3.5-Lightning-30B-A3B) para transferir capacidades de razonamiento a un modelo pequeno.
 
-El dataset de entrenamiento declarado es en5yme/Nemotron-Lightning-30B-A3B-Distill, lo que sugiere que el modelo base se destiló a partir de las salidas de un modelo Nemotron de 30B con arquitectura MoE (30B-A3B). No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni sobre si se aplicaron fases de RLHF, DPO o ajuste supervisado adicional. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal.
+No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de pensamiento explicitos. La model card del repositorio GGUF es generica y se limita a describir el proceso de cuantizacion estatica realizado por mradermacher.
 
 ## Capacidades
 
-- Generación de texto conversacional, según la etiqueta `conversational`.
-- Razonamiento: el modelo está etiquetado explícitamente con `reasoning`, lo que indica entrenamiento orientado a cadenas de razonamiento o tareas de lógica.
-- Destilación de conocimiento: derivado de un modelo mayor mediante el dataset Nemotron-Lightning-30B-A3B-Distill.
-- Soporte multimodal potencial: el repositorio incluye archivos `mmproj` (Q8_0 y f16), lo que sugiere la posibilidad de entrada visual si el modelo base lo soporta, aunque no se detalla en la información disponible.
-- Idiomas: únicamente inglés declarado (`language: en`).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles, segun el tag "conversational".
+- Razonamiento: el modelo se presenta como un modelo de razonamiento destilado, orientado a tareas que requieren cadenas de pensamiento.
+- Destilacion: capacidad heredada del modelo profesor Nemotron-3.5-Lightning-30B-A3B, segun los metadatos.
+- Posible soporte multimodal: el repositorio incluye suplementos mmproj (Q8_0 y f16), lo que sugiere capacidad de vision, aunque no se documenta explicitamente.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el tag "reasoning" sugiere cierta capacidad, pero sin detalles.
+- Capacidades multilingues: limitadas al ingles segun el campo language.
+- Modo thinking explicito, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Razonamiento local en hardware de consumo: con cuantizados Q4_K_M (1,4 GB) el modelo puede ejecutarse en GPUs con 4-6 GB de VRAM o incluso en CPU, lo que permite prototipar tareas de razonamiento sin infraestructura en la nube.
-- Asistentes conversacionales ligeros en inglés: el modelo está etiquetado como `conversational` y puede integrarse en aplicaciones de chat con llama.cpp u Ollama para conversaciones de dominio general en inglés.
-- Destilación y experimentación académica: al ser un modelo de ~2B destilado de un Nemotron de 30B, sirve como caso de estudio para investigar la transferencia de capacidades de razonamiento desde modelos MoE grandes a modelos densos pequeños.
-- Despliegue en entornos con recursos limitados: la licencia MIT y el formato GGUF permiten incrustar el modelo en aplicaciones de escritorio, dispositivos edge o contenedores sin dependencias de GPU de gama alta.
-- Generación de datos sintéticos de razonamiento: el modelo puede emplearse para producir trazas de razonamiento en inglés que alimenten pipelines de entrenamiento de modelos menores.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantización (de Q2_K a f16), lo que facilita estudios de degradación de calidad frente a tamaño en tareas de razonamiento.
-- Pruebas de concepto multimodales: los archivos `mmproj` permiten experimentar con entrada de imagen en llama.cpp si el modelo base conserva dicha capacidad, aunque esto no está confirmado en la documentación.
+- Prototipado local de asistentes conversacionales: con cuantizaciones Q4_K_M (1,4 GB) el modelo puede ejecutarse en portatiles con 8 GB de RAM, permitiendo iterar sobre prompts y flujos conversacionales sin coste de API.
+- Razonamiento ligero en el borde (edge): al ser un modelo de ~2B con enfoque en razonamiento, es adecuado para tareas de clasificacion, extraccion de entidades o respuesta a preguntas simples en dispositivos con recursos limitados.
+- Educacion e investigacion: sirve como caso de estudio de destilacion de modelos grandes a pequenos, permitiendo comparar el comportamiento de un 2B destilado frente a su profesor en tareas controladas.
+- Generacion de texto en ingles embebida en aplicaciones: con la licencia MIT y pesos GGUF, se puede integrar en aplicaciones de escritorio o moviles mediante llama.cpp sin restricciones comerciales.
+- Filtrado y resumen de documentos cortos: la ventana de contexto es desconocida, pero para textos breves el modelo puede resumir o reformular contenido en ingles con latencia baja en CPU.
+- Experimentacion con cuantizaciones: el repositorio ofrece 12 variantes de cuantizacion, lo que permite evaluar el compromiso entre calidad y tamano en un mismo modelo, util para calibrar pipelines de despliegue.
+- Base para fine-tuning ligero: al ser un modelo pequeno con licencia permisiva, puede servir como punto de partida para ajuste en dominios especificos en ingles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 1,1 GB (Q2_K) y 4,0 GB (f16) solo para los pesos; añadir aproximadamente 0,5-0,8 GB si se usa el suplemento multimodal `mmproj`.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizados Q4_K_M o superiores; RTX 3060, RTX 4060, RTX 4090 y GPUs de datacenter como A100 o H100 pueden ejecutarlo con holgura, aunque el modelo es demasiado pequeño para aprovechar su capacidad.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer con 4 GB o más de VRAM; los cuantizados Q2_K y Q3_K_S (1,1 GB) permiten incluso ejecución en iGPU o CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo Hugging Face. No se documenta soporte explícito para vLLM o TGI en formato GGUF.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM/RAM estimada para inferencia segun cuantizacion: Q2_K ~1,1 GB; Q4_K_M ~1,4 GB; Q6_K ~1,7 GB; Q8_0 ~2,2 GB; f16 ~4,0 GB. A estos valores hay que sumar el overhead del contexto y del runtime (tipicamente 0,5-2 GB adicionales).
+- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM para cuantizaciones Q4-Q5; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor throughput. En entornos profesionales, A100 o H100 no son necesarias para este tamano, pero pueden usarse para servir muchas peticiones concurrentes.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas con 4 GB o mas de VRAM; tambien en CPU con 8 GB de RAM usando Q4_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. En terminos cualitativos, un modelo de ~2B en Q4_K_M sobre CPU moderna suele generar decenas de tokens por segundo, pero no se aportan mediciones oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Yoshino2-2B-GGUF (este) | ~2B | no disponible | MIT | GGUF | Destilado de Nemotron-Lightning-30B-A3B; solo inglés |
-| mradermacher/continual-ai-2b-GGUF | ~2B | no disponible | no disponible | GGUF | Otra cuantización de un modelo de 2B del mismo autor de cuantizados |
-| Modelo base en5yme/Yoshino2-2B | ~2B | no disponible | MIT | safetensors | Pesos originales sin cuantizar |
+| Yoshino2-2B-GGUF | ~1,94B | no disponible | MIT | GGUF | Destilado de Nemotron-3.5-Lightning-30B-A3B; solo ingles |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32K (segun model card oficial) | Apache 2.0 | safetensors, GGUF | Multilingue, ampliamente soportado |
+| Llama-3.2-1B-Instruct | ~1,2B | 128K (segun model card oficial) | Llama 3.2 Community License | safetensors, GGUF | Multilingue, requiere aceptar licencia |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8K (segun model card oficial) | Apache 2.0 | safetensors, GGUF | Enfoque en eficiencia, solo ingles |
 
-No se dispone de datos de benchmarks ni de contexto para establecer una comparación de rendimiento con alternativas. La comparativa se limita a parámetros, licencia y formato.
+Nota: los datos de contexto y licencia de los modelos comparables provienen de sus model cards publicas y no de la informacion proporcionada para Yoshino2-2B. No se dispone de benchmarks que permitan comparar rendimiento de forma cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte de inglés (`language: en`); no se garantiza un rendimiento aceptable en castellano ni en otros idiomas.
-- Sesgos conocidos: no disponibles en la información proporcionada; al ser un modelo destilado de un dataset no documentado, se recomienda evaluar sesgos antes de usarlo en producción.
-- Riesgo de alucinación: no cuantificado; los modelos de ~2B destilados para razonamiento suelen presentar alucinaciones en tareas de conocimiento factual.
-- Contexto: se desconoce la longitud máxima de contexto, lo que impide planificar su uso en tareas de contexto largo.
-- Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución con atribución; no obstante, el modelo base y el dataset de destilación podrían tener condiciones adicionales no reflejadas en este repositorio.
-- Cuantizaciones de baja calidad: los cuantizados Q2_K y Q3_K_M están marcados por el autor como de menor calidad; para producción se recomienda Q4_K_M o superior.
-- Sin cuantizados ponderados/imatrix: el autor indica que no hay cuantizados con imatrix disponibles en el momento de la publicación, lo que puede afectar a la calidad en comparación con otras publicaciones del mismo autor.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026; no hay evidencia de uso en producción ni validación externa.
-- Soporte multimodal incierto: la presencia de archivos `mmproj` no confirma que el modelo base procese imágenes correctamente; no se documenta en la model card.
+- Solo soporta ingles segun el campo language; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- La longitud de contexto no esta especificada, lo que impide planificar su uso en tareas de contexto largo.
+- No hay benchmarks publicados, por lo que no se puede verificar la calidad del razonamiento ni compararla con alternativas.
+- Riesgo de alucinacion inherente a modelos de ~2B, especialmente en tareas de conocimiento factual.
+- La model card no documenta sesgos conocidos ni la composicion del dataset de destilacion, lo que dificulta evaluar riesgos de sesgo.
+- El proceso de destilacion puede introducir artefactos o comportamientos del modelo profesor no deseados.
+- Aunque la licencia es MIT, el modelo base deriva de un dataset vinculado a Nemotron, cuyos terminos de uso no se detallan en la informacion disponible; conviene revisar la licencia del modelo base en5yme/Yoshino2-2B antes de uso comercial.
+- La presencia de suplementos mmproj sugiere capacidades multimodales no documentadas; su funcionamiento no esta garantizado.
+- El repositorio tiene 0 likes y ~953 descargas, lo que indica adopcion limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Yoshino2-2B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Yoshino2-2B-GGUF
 - Modelo base: https://huggingface.co/en5yme/Yoshino2-2B
-- Dataset de destilación: https://huggingface.co/datasets/en5yme/Nemotron-Lightning-30B-A3B-Distill
-- Página de descargas del autor: https://hf.tst.eu/model#Yoshino2-2B-GGUF
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Perfil del autor: https://huggingface.co/mradermacher
-- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica de calidad de cuantizados (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset de destilacion: https://huggingface.co/datasets/en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Yoshino2-2B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Yoshino2-2B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

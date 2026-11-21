@@ -20,6 +20,8 @@
     "hebbian-plasticity",
     "neuro-symbolic",
     "text-generation",
+    "base_model:Kai9987kai/supermix-v97",
+    "base_model:finetune:Kai9987kai/supermix-v97",
     "license:mit",
     "region:us"
   ],

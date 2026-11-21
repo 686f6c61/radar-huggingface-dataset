@@ -2,83 +2,89 @@
 
 ## Resumen
 
-Esta ficha corresponde a una cuantización EXL3 de DeepSeek-V4.1-Flash-1017, un modelo multimodal (texto e imagen a texto) publicado por deepseek-ai y cuantizado por el usuario turboderp. El repositorio no contiene el modelo original, sino versiones comprimidas en formato EXL3 destinadas a ejecutarse con el motor de inferencia ExLlamaV3, optimizado para GPUs NVIDIA con altas velocidades de generación.
+DeepSeek-V4.1-Flash-1017-exl3 es una cuantización EXL3 del modelo DeepSeek-V4.1-Flash-1017, publicada por turboderp, el desarrollador de ExLlamaV3. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a reducir drásticamente el espacio en VRAM necesario para ejecutar el modelo original en GPUs de consumo y estaciones de trabajo. El repositorio ocupa 677,7 GB e incluye tres variantes de cuantización: 1,68, 2,25 y 2,68 bits por peso.
 
-El modelo base, DeepSeek-V4.1-Flash-1017, forma parte de la familia DeepSeek V4.1 y está orientado a ofrecer inferencia rápida ("Flash") manteniendo capacidades multimodales. La cuantización EXL3 permite reducir drásticamente los requisitos de memoria: el repositorio completo ocupa 553,9 GB, con variantes de 2,25 y 2,68 bits por peso disponibles, lo que sugiere un modelo de gran tamaño cuyo despliegue en hardware de consumo resulta inviable, pero que puede ejecutarse en estaciones de trabajo multi-GPU.
+El modelo base pertenece a la familia DeepSeek-V4.1-Flash, con pipeline declarado image-text-to-text, lo que indica capacidades multimodales de entrada (imagen y texto). La model card del repositorio no detalla arquitectura, número de parámetros ni longitud de contexto del modelo original; esa información no está disponible en la documentación proporcionada.
 
-Es relevante para desarrolladores que ya utilizan el ecosistema ExLlamaV3 y necesitan servir este modelo localmente con la máxima eficiencia de VRAM posible, dado que las alternativas tradicionales (GGUF, AWQ) pueden no estar disponibles o ser menos eficientes para modelos de esta escala.
+La relevancia de esta publicación radica en que permite ejecutar un modelo de gran tamaño con requisitos de memoria muy inferiores a los de los pesos originales, manteniendo un rendimiento casi idéntico en benchmarks de razonamiento según los datos aportados por el autor de la cuantización. Requiere ExLlamaV3 v1.6.6 o la rama `dev`.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (multimodal, image-text-to-text) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible |
+| Arquitectura | no disponible (modelo base DeepSeek-V4.1-Flash-1017) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | EXL3 a 2,25 bpw y 2,68 bpw (más cuantizaciones anunciadas) |
+| Tipos de cuantizacion | EXL3 SC en 1,68, 2,25 y 2,68 bits por peso |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | EXL3 (safetensors gestionados por ExLlamaV3) |
+| Formato de pesos | EXL3 (ExLlamaV3) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio cuantizado no documenta la arquitectura interna del modelo base. Al tratarse de una cuantización EXL3, los pesos originales de DeepSeek-V4.1-Flash-1017 se han comprimido mediante el esquema de cuantización de ExLlamaV3, que soporta precisiones no estándar (por ejemplo, 2,25 y 2,68 bits por peso) con decompresión eficiente en GPU durante la inferencia. El pipeline image-text-to-text indica que el modelo acepta entradas combinadas de imagen y texto y genera texto.
+La información disponible no describe la arquitectura interna del modelo base. Se sabe que DeepSeek-V4.1-Flash-1017 acepta entradas de imagen y texto (pipeline image-text-to-text), lo que implica algún tipo de codificador visual conectado a un modelo de lenguaje, pero no se detallan componentes, número de capas, mecanismo de atención ni datos de entrenamiento (tokens, composición del corpus, uso de RLHF o DPO).
 
-No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre procesos de RLHF, DPO u otras técnicas de alineación aplicadas al modelo base. Tampoco se describen innovaciones técnicas específicas en la model card del cuantizador.
+Respecto a la cuantización, turboderp aplica su esquema EXL3 con variantes SC (single-column, según la nomenclatura de ExLlamaV3) a 1,68, 2,25 y 2,68 bits por peso. La model card incluye gráficas de KLD y de perplejidad frente a VRAM, lo que sugiere una evaluación de degradación por cuantización, aunque los valores numéricos de esas gráficas no están disponibles en el texto. El autor advierte que los cuantizados requieren ExLlamaV3 v1.6.6 o la rama `dev`.
 
 ## Capacidades
 
-- Generación de texto a partir de entradas de texto e imagen (pipeline image-text-to-text).
-- Comprensión multimodal: procesa imágenes junto con instrucciones textuales.
-- Al tratarse de un cuantizado de un modelo base de DeepSeek, cabe esperar capacidades generales de razonamiento y código, aunque no están documentadas en este repositorio.
-- No hay información disponible sobre tool calling, agentes, thinking mode, audio ni soporte multilingüe explícito.
+- Generación de texto y razonamiento: los resultados en AIME-25 y GPQA-Diamond indican capacidad de razonamiento matemático y científico de alto nivel.
+- Entrada multimodal: el pipeline image-text-to-text implica procesamiento de imágenes junto con texto.
+- Razonamiento matemático: 96,7-100 % en AIME-25 según la variante de cuantización.
+- Razonamiento científico: aproximadamente 90 % en GPQA-Diamond.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Servir el modelo localmente en servidores multi-GPU: EXL3 con ExLlamaV3 está diseñado para maximizar tokens por segundo en GPUs NVIDIA, útil para quien quiere autoalojar la inferencia sin depender de APIs de terceros.
-- Experimentación con cuantización extrema: las variantes de 2,25 y 2,68 bpw permiten estudiar el impacto de cuantizaciones muy agresivas en la calidad de salida de modelos multimodales de gran tamaño.
-- Descripción y análisis de imágenes integrado en aplicaciones: dado el pipeline image-text-to-text, puede emplearse para generar descripciones, responder preguntas sobre imágenes o extraer información de documentos visualmente complejos.
-- Chat multimodal autoalojado: integrable en interfaces de conversación que combinen texto e imágenes, manteniendo el control total sobre los datos al ejecutarse en infraestructura propia.
-- Evaluación comparativa de backends de inferencia: útil como banco de pruebas para comparar ExLlamaV3 frente a vLLM, TGI o llama.cpp en términos de throughput y uso de VRAM con modelos de gran escala.
-- Prototipado de agentes multimodales: en combinación con frameworks de orquestación, puede actuar como motor de razonamiento para flujos que requieran interpretar capturas de pantalla, gráficos o imágenes de usuario.
+- Razonamiento matemático asistido: el modelo puede resolver problemas de competición (AIME-25) con una precisión declarada del 96,7-100 %, útil en herramientas de tutoría avanzada o verificación de demostraciones.
+- Preguntas de nivel experto en ciencia: con alrededor del 90 % en GPQA-Diamond, es adecuado para asistentes de investigación que respondan consultas de posgrado en física, química o biología.
+- Análisis de documentos con imágenes: al aceptar imagen y texto, puede extraer información de figuras, tablas o capturas y razonar sobre ellas en un mismo turno.
+- Despliegue en estaciones de trabajo con VRAM limitada: las variantes de 1,68 y 2,25 bits permiten ejecutar un modelo de gran tamaño en hardware que no admitiría los pesos originales, por ejemplo para prototipado interno.
+- Evaluación comparativa de cuantizaciones: útil para investigadores que quieran medir la degradación de un modelo前沿 al bajar de 2,68 a 1,68 bits usando las gráficas de KLD y perplejidad del autor.
+- Inferencia local con ExLlamaV3: integrable en aplicaciones de escritorio o servidores propios que ya usen el ecosistema de turboderp, con control total sobre los pesos y sin dependencia de API externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del cuantizador indica que se añadirán más cuantizaciones "junto con benchmarks", pero en el momento de redacción de esta ficha no existen datos.
+| Cuantización | AIME-25 | GPQA-Diamond |
+|---|---:|---:|
+| 1,68 bpw | 96,7 % | 90,4 % |
+| 2,25 bpw | 100 % | 90,4 % |
+| 2,68 bpw | 100 % | 89,9 % |
+| Baseline (referencia) | 100 % (asumido) | 90,2 % (OpenRouter) |
+
+El autor indica que el 100 % de AIME-25 en el baseline es una suposición basada en los resultados de las cuantizaciones, ya que no encontró una fuente directa. El dato de GPQA-Diamond del baseline procede de OpenRouter. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. Con un repositorio de 553,9 GB repartido entre variantes de 2,25 y 2,68 bpw, la variante de 2,68 bpw podría rondar del orden de 300 GB o más, y la de 2,25 bpw en torno a 250 GB, lo que exige configuraciones multi-GPU (por ejemplo, 4-6 GPUs de 80 GB como A100 o H100). Estas cifras son estimaciones aproximadas a partir del tamaño del repositorio, no datos oficiales.
-- GPUs recomendadas: A100 80 GB, H100 80 GB u otras GPUs de datacenter en configuración multi-GPU. ExLlamaV3 requiere GPUs NVIDIA modernas.
-- Consumer GPU: no es viable; ninguna GPU de consumo (RTX 4090 con 24 GB, RTX 5090 con 32 GB) puede alojar el modelo ni siquiera en la cuantización más baja disponible.
-- Despliegue: exclusivamente mediante ExLlamaV3, concretamente la versión 1.6.6 o superior (o la rama `dev`). No es compatible con llama.cpp, Ollama, vLLM ni TGI en este formato.
-- Latencia y throughput: no disponibles. ExLlamaV3 suele ofrecer alta velocidad de generación en GPUs compatibles, pero no hay mediciones publicadas para este modelo.
+- VRAM estimada: no disponible de forma explícita; el repositorio completo ocupa 677,7 GB, pero cada variante de cuantización ocupa una fracción. Las gráficas de perplejidad frente a VRAM de la model card permiten estimar el consumo, aunque sus valores no se recogen en el texto.
+- GPU recomendadas: no disponible. El tamaño del repositorio sugiere que las variantes de bits bajos están pensadas para GPUs de consumo de gama alta o estaciones de trabajo, pero no se especifican modelos concretos.
+- ¿Cabe en GPU de consumo? No disponible con precisión; la existencia de variantes de 1,68 y 2,25 bits apunta a que el objetivo es acercarse a ese escenario.
+- Opciones de despliegue: ExLlamaV3 v1.6.6 o rama `dev`, exclusivamente, al ser pesos EXL3.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Formato | Cuantización | Licencia | Multimodal | Disponibilidad |
-|---|---|---|---|---|---|
-| turboderp/DeepSeek-V4.1-Flash-1017-exl3 | EXL3 | 2,25 / 2,68 bpw | MIT | Sí (image-text-to-text) | Hugging Face, requiere ExLlamaV3 1.6.6+ |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | Sin cuantizar | MIT (según tags) | Sí | Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de información suficiente sobre el modelo base (tamaño en parámetros, contexto, benchmarks) para una comparativa detallada con otros modelos multimodales de gran escala.
+No disponible. La información proporcionada no incluye datos de otros modelos comparables en tamaño, contexto o rendimiento, más allá de la referencia al baseline del propio DeepSeek-V4.1-Flash-1017.
 
 ## Limitaciones y advertencias
 
-- El propio cuantizador advierte de que, si se observa salida corrupta en prompts cortos, probablemente se trata de un modo de fallo del modelo base, no de la cuantización; existe un hilo de discusión en el repositorio de deepseek-ai al respecto.
-- Las cuantizaciones disponibles (2,25 y 2,68 bpw) son extremadamente agresivas; la degradación de calidad respecto al modelo original puede ser significativa, y no hay benchmarks que cuantifiquen esa pérdida.
-- Requiere ExLlamaV3 v1.6.6 o superior, lo que limita el ecosistema de despliegue y excluye herramientas habituales como vLLM o llama.cpp.
-- El tamaño del modelo hace inviable su ejecución en hardware de consumo; se necesita infraestructura multi-GPU de gama alta.
-- No hay información publicada sobre sesgos, riesgo de alucinación, idiomas soportados ni longitud de contexto, por lo que deben consultarse los recursos del modelo base.
-- La licencia MIT del cuantizado es permisiva, pero conviene verificar los términos de la licencia del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017 antes de uso comercial.
-- Repositorio con muy poca tracción (56 descargas, 10 likes) y reciente: la madurez y el soporte comunitario son limitados.
+- El autor advierte que si se obtiene salida corrupta en prompts cortos, es probablemente un fallo del propio modelo base y no de la cuantización, con enlace a una discusión del repositorio original.
+- La cuantización a 1,68 bits reduce la precisión: AIME-25 baja del 100 % al 96,7 % y GPQA-Diamond varía ligeramente entre variantes.
+- Requiere una versión concreta de ExLlamaV3 (v1.6.6 o `dev`); otras versiones pueden no cargar los pesos.
+- No se dispone de información sobre sesgos, riesgo de alucinación, idiomas soportados ni restricciones adicionales del modelo base.
+- La licencia MIT se hereda del repositorio de cuantización, pero conviene verificar la licencia del modelo original antes de un uso comercial.
+- El tamaño del repositorio (677,7 GB) implica requisitos de almacenamiento considerables para descargar todas las variantes.
 
 ## Enlaces
 
-- Repositorio cuantizado EXL3: https://huggingface.co/turboderp/DeepSeek-V4.1-Flash-1017-exl3
-- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Repositorio de la cuantización: https://huggingface.co/turboderp/DeepSeek-V4.1-Flash-1017-exl3
+- Variante 1,68 bpw: https://huggingface.co/turboderp/DeepSeek-V4.1-Flash-1017-exl3/tree/1.68bpw
 - Variante 2,25 bpw: https://huggingface.co/turboderp/DeepSeek-V4.1-Flash-1017-exl3/tree/2.25bpw
 - Variante 2,68 bpw: https://huggingface.co/turboderp/DeepSeek-V4.1-Flash-1017-exl3/tree/2.68bpw
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Discusión sobre salidas corruptas en el modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/discussions/33
+- Benchmarks GPQA-Diamond en OpenRouter: https://openrouter.ai/benchmarks/gpqa-diamond

@@ -2,49 +2,50 @@
 
 ## Resumen
 
-HeartMuLa-oss-3B es un modelo de generación de audio a partir de texto (text-to-audio) especializado en música, desarrollado por el equipo HeartMuLa (MulaLabs) y publicado con licencia Apache 2.0. Forma parte de la familia HeartMuLa de modelos fundacionales de música de código abierto, presentada en el paper arXiv 2601.10547, y se distribuye junto a otros dos componentes del ecosistema: HeartCodec-oss (códec de audio) y HeartTranscriptor-oss (transcriptor). El modelo resuelve la tarea de convertir descripciones textuales y letras en audio musical, incluyendo la creación de canciones a partir de letras, covers y remezclas.
+HeartMuLa-oss-3B es un modelo fundacional de generación de música (text-to-audio) desarrollado por el equipo HeartMuLa, presentado en el artículo "HeartMuLa: A Family of Open Sourced Music Foundation Models" (arXiv:2601.10547). El modelo convierte texto (letras de canciones y descripciones) en audio musical, y forma parte de un ecosistema más amplio que incluye HeartCodec-oss (códec de audio) y HeartTranscriptor-oss (transcriptor). Con 3.938.113.536 parámetros (~3,9B) y un repositorio de 15,8 GB en safetensors, se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones de atribución restrictivas.
 
-Con 3.938.113.536 parámetros (aproximadamente 3,9 mil millones) en formato safetensors y un repositorio de 15,8 GB, el modelo está diseñado para ejecutarse en infraestructura de gama media, lo que lo hace accesible para desarrolladores e investigadores que necesitan generar música sin depender de servicios propietarios. Soporta cinco idiomas declarados (chino, inglés, japonés, coreano y español) además de la etiqueta multilingüe.
+El modelo resuelve el problema de la generación musical controlable y de alta fidelidad a partir de texto, un ámbito donde la mayoría de los sistemas punteros son propietarios. Su carácter abierto y su soporte multilingüe (chino, inglés, japonés, coreano y español) lo hacen relevante para desarrolladores que necesitan integrar generación musical en pipelines propios, así como para investigadores que quieran reproducir o extender el trabajo.
 
-Su relevancia actual radica en que ofrece una alternativa abierta y permisiva (Apache 2.0 permite uso comercial) en un ámbito, el de la generación musical, donde predominan modelos cerrados. La integración con la herramienta MuLa Studio para edición de pasajes concretos de una canción y la disponibilidad de un servicio online con créditos diarios gratuitos completan una propuesta tanto para investigación como para producto.
+La relevancia actual del modelo radica en tres factores: la licencia permisiva, el tamaño manejable (apto para despliegue en hardware de gama alta de consumo con cuantización) y la disponibilidad de un stack completo de código abierto (códec, transcriptor y librería de inferencia) que cubre el ciclo completo de generación musical.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de audio; el paper describe una familia de modelos fundacionales de música, sin detalle de arquitectura en la información proporcionada) |
-| Parametros totales | 3.938.113.536 (~3,9 B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo fundacional de música text-to-audio; detalles en el paper arXiv:2601.10547) |
+| Parametros totales | 3.938.113.536 (~3,9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | multilingüe; zh, en, ja, ko, es |
-| Licencia | Apache 2.0 |
+| Idiomas soportados | multilingual, zh, en, ja, ko, es |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo (tipo de transformer, mecanismo de atención, diseño del decodificador de audio ni integración con el códec). El modelo se presenta como parte de una familia de modelos fundacionales de música de código abierto, y su pipeline declarado es text-to-audio, lo que implica una etapa de codificación del texto y una etapa de generación de audio. Para conocer los detalles de arquitectura, composición del dataset, número de tokens de entrenamiento y uso de técnicas como RLHF o DPO, es necesario consultar el paper arXiv 2601.10547, que no se incluye en la información proporcionada.
+La información disponible no detalla la arquitectura interna del modelo más allá de su naturaleza de modelo fundacional de música con pipeline text-to-audio. El artículo de referencia (arXiv:2601.10547) es la fuente primaria para conocer la arquitectura exacta, la composición del dataset de entrenamiento, el número de tokens de audio utilizados y si se emplearon técnicas de alineación como RLHF o DPO. El modelo se integra en un ecosistema con un códec de audio dedicado (HeartCodec-oss) y un transcriptor (HeartTranscriptor-oss), lo que sugiere una arquitectura de generación en el espacio latente del códec.
 
-El ecosistema se organiza en tres piezas: HeartMuLa-oss-3B como modelo generador, HeartCodec-oss como códec de audio (previsiblemente para la representación discreta del audio) y HeartTranscriptor-oss como transcriptor. La innovación destacable documentada es la capacidad de edición de pasajes concretos de una canción en MuLa Studio, así como la generación de covers y remezclas, aunque los detalles técnicos de cómo se implementan no están disponibles.
+No se dispone de información sobre innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.) en la documentación proporcionada. La librería de inferencia oficial es heartlib (GitHub: HeartMuLa/heartlib), que ofrece el quickstart y las instrucciones de despliegue local.
 
 ## Capacidades
 
-- Generación de audio musical a partir de texto (text-to-audio), incluyendo la creación de canciones a partir de letras.
-- Creación de covers y remezclas de canciones existentes.
-- Edición de pasajes concretos de una canción en MuLa Studio.
-- Soporte multilingüe declarado para chino, inglés, japonés, coreano y español.
-- Orientado a aplicaciones artísticas y musicales (tags "music" y "art").
-- No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio de entrada o modo de pensamiento (thinking mode) en la información proporcionada.
+- Generación de música a partir de texto: creación de canciones a partir de letras y descripciones textuales.
+- Generación de covers y remixes (según la model card, funcionalidad disponible en la plataforma MuLa Studio).
+- Edición de pasajes concretos de una canción (edición localizada de fragmentos).
+- Soporte multilingüe en la entrada: chino, inglés, japonés, coreano y español.
+- Integración con códec de audio propio (HeartCodec-oss) para la síntesis de la señal de audio.
+- Integración con transcriptor propio (HeartTranscriptor-oss) para tareas de transcripción de audio.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes ni modos de razonamiento extendido, lo cual es coherente con un modelo de generación de audio.
 
 ## Casos de uso
 
-- Generación de canciones a partir de letras: el modelo convierte un texto de letra en audio musical, lo que permite a compositores y creadores de contenido prototipar rápidamente ideas musicales sin necesidad de instrumentos ni producción manual.
-- Creación de covers y remezclas: a partir de una canción existente, el modelo puede generar versiones alternativas o remezclas, útil para sellos discográficos, creadores de contenido y plataformas de música que quieran ofrecer variantes de un tema.
-- Edición musical por pasajes en MuLa Studio: la integración con la herramienta de edición permite modificar una sección concreta de una canción sin regenerar el resto, lo que resulta adecuado para flujos de producción musical iterativos.
-- Generación de música de fondo para vídeo y podcasts: creadores que necesitan bandas sonoras libres de derechos pueden generar pistas originales con licencia Apache 2.0, evitando problemas de licencias de música comercial.
-- Prototipado en investigación musical y académica: al ser un modelo abierto con paper asociado, permite a investigadores reproducir experimentos, hacer fine-tuning y estudiar la generación musical en cinco idiomas.
-- Aplicaciones educativas y de aprendizaje musical: estudiantes pueden explorar cómo descripciones textuales se traducen en audio, o generar ejemplos para analizar estructuras musicales.
-- Integración en plataformas de creación musical con créditos gratuitos: el servicio online heartmula.com ofrece créditos diarios gratuitos, lo que facilita la evaluación del modelo antes de un despliegue local.
+- Producción musical asistida: compositores y productores pueden generar borradores de canciones a partir de letras y descripciones de estilo, acelerando la fase de ideación antes de la producción final en un DAW.
+- Generación de bandas sonoras para contenido audiovisual: creación de música de fondo para vídeos, podcasts o videojuegos a partir de descripciones textuales, con la ventaja de la licencia Apache 2.0 para uso comercial.
+- Creación de covers y remixes: el modelo permite transformar canciones existentes en nuevas versiones, útil para sellos discográficos y creadores de contenido que quieran explorar variaciones de un tema.
+- Edición musical localizada: modificar un pasaje concreto de una canción (por ejemplo, un estribillo) sin regenerar la pieza completa, lo que reduce el coste computacional y preserva el resto de la composición.
+- Aplicaciones educativas de música: generar ejemplos auditivos de estilos, progresiones o estructuras para clases de producción musical y teoría.
+- Prototipado rápido en estudios de sonido: generar múltiples variantes de una idea musical en minutos para evaluar direcciones creativas antes de invertir en grabación con músicos.
+- Localización de contenido musical: generar versiones de una canción en distintos idiomas soportados (zh, en, ja, ko, es) para mercados internacionales.
 
 ## Benchmarks y rendimiento
 
@@ -52,33 +53,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Con ~3,9 B parámetros y pesos en safetensors (repositorio de 15,8 GB), una estimación orientativa en FP16 sería de aproximadamente 8 GB solo para los pesos, más memoria para el códec y el estado de inferencia; en cuantizaciones de 8 bits o 4 bits podría reducirse sustancialmente, aunque no se confirman cuantizaciones oficiales.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, cabría esperar que funcione en GPUs de consumo con suficiente VRAM (por ejemplo, RTX 3090 o RTX 4090 de 24 GB) y en GPUs de datacenter como A100 o H100, pero esto no está confirmado por el autor.
-- ¿Cabe en consumer GPU?: probablemente sí en GPUs de 24 GB o más, pero no confirmado.
-- Opciones de despliegue: el repositorio GitHub (github.com/HeartMuLa/heartlib) ofrece quickstart y despliegue local; no se especifican integraciones con vLLM, llama.cpp, Ollama o TGI (estas herramientas están orientadas a LLM y no necesariamente aplican a un modelo text-to-audio).
+- VRAM estimada para inferencia: no disponible de forma explícita. Como referencia orientativa por tamaño, un modelo de ~3,9B parámetros en precisión FP16 requiere aproximadamente 8 GB solo para los pesos, más el overhead de activaciones y del códec de audio asociado; en cuantizaciones de 8 bits o 4 bits el requisito de pesos baja a ~4 GB y ~2 GB respectivamente, aunque estas cifras no están confirmadas por el autor.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, cabría esperar viabilidad en GPUs de consumo de gama alta (por ejemplo, RTX 4090 con 24 GB) y en GPUs de datacenter (A100, H100) para inferencia en producción.
+- ¿Cabe en GPU de consumo? Probablemente sí en GPUs con 16-24 GB de VRAM, aunque el requisito real depende del códec y de la longitud de audio generada; no confirmado por el autor.
+- Opciones de despliegue: la vía oficial es la librería heartlib (GitHub: HeartMuLa/heartlib). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, lo cual es esperable en un modelo de audio y no de texto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada que permitan una comparación rigurosa. Se indica "no disponible".
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| HeartMuLa-oss-3B | ~3,9B | no disponible | Apache 2.0 | Pesos abiertos en HF | Text-to-audio musical, multilingüe (zh, en, ja, ko, es) |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación proporcionada |
+
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos en la información proporcionada; al ser un modelo generativo de música, puede reproducir estilos o patrones presentes en sus datos de entrenamiento.
-- Riesgo de alucinación y de generar audio de baja calidad o incoherente con el texto de entrada; no hay métricas publicadas que lo cuantifiquen.
-- La longitud de contexto no está disponible, por lo que se desconoce cuánta letra o descripción puede procesar de una vez.
-- El soporte de idiomas se limita a los declarados (zh, en, ja, ko, es); el rendimiento en otros idiomas no está garantizado.
-- La licencia Apache 2.0 permite uso comercial, pero deben revisarse las condiciones de los componentes auxiliares (HeartCodec-oss, HeartTranscriptor-oss) y de los datos de entrenamiento, no detalladas.
-- No hay información sobre cuantizaciones oficiales ni sobre requisitos mínimos de hardware, lo que dificulta planificar un despliegue en producción.
-- El modelo está orientado a audio musical; no debe esperarse que realice tareas de LLM (razonamiento textual, código, matemáticas) ni de visión.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse con datos musicales, puede reflejar sesgos de estilo, género o cultura presentes en el corpus.
+- Riesgo de alucinación: en generación de audio, el equivalente es la generación de pasajes musicales incoherentes o letras mal pronunciadas; no cuantificado por el autor.
+- Limitaciones de contexto o idioma: el soporte multilingüe se limita a zh, en, ja, ko y es; otros idiomas no están garantizados.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución y aviso de cambios; no se documentan restricciones adicionales, pero conviene revisar el texto completo de la licencia y las condiciones de uso de los datasets de entrenamiento.
+- Caveats para producción: no se documentan requisitos de hardware, latencia ni throughput; la integración depende de la librería heartlib y del códec HeartCodec-oss, lo que añade complejidad al pipeline. La fecha de creación (enero de 2026) y la actualización (noviembre de 2026) indican un modelo relativamente reciente con posible evolución activa.
+- Dependencia del ecosistema: el modelo no funciona de forma aislada; requiere el códec y, para ciertas tareas, el transcriptor, lo que incrementa los requisitos de despliegue.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
+- Modelo en Hugging Face: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
 - Paper: https://arxiv.org/abs/2601.10547
-- GitHub: https://github.com/HeartMuLa/heartlib
-- Web oficial: https://heartmula.com
+- Repositorio GitHub (heartlib): https://github.com/HeartMuLa/heartlib
+- Web oficial: https://heartmula.com/
 - Demo: https://heartmula.github.io/
-- HeartCodec-oss: https://huggingface.co/HeartMuLa/HeartCodec-oss
-- HeartTranscriptor-oss: https://huggingface.co/HeartMuLa/HeartTranscriptor-oss
-- Contacto: contact@mulalabs.ai
+- Códec de audio (HeartCodec-oss): https://huggingface.co/HeartMuLa/HeartCodec-oss
+- Transcriptor (HeartTranscriptor-oss): https://huggingface.co/HeartMuLa/HeartTranscriptor-oss

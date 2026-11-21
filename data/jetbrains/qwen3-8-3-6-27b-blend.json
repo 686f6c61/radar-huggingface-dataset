@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 43,
-  "downloads_30d": 899,
+  "downloads_30d": 853,
   "trending_score": 11,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -60,14 +60,14 @@
       "snippet": "JetBrains est un éditeur de logiciels innovant, spécialisé dans la création d'outils de développement intelligents, tels qu'IntelliJ IDEA, …Read more"
     },
     {
-      "title": "JetBrains - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/JetBrains",
-      "snippet": "JetBrains AI Assistant is offered in most JetBrains IDEs as a set of AI-assisted software development tools. The assistant uses …Read more"
-    },
-    {
       "title": "JetBrains Account",
       "url": "https://account.jetbrains.com/login",
-      "snippet": "JetBrains Account provides easy access to your JetBrains products and makes upgrades and migration to new hardware smooth.Read more"
+      "snippet": "JetBrains Account provides easy access to your JetBrains products and makes upgrades and migration to new hardware smooth."
+    },
+    {
+      "title": "JetBrains - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JetBrains",
+      "snippet": "JetBrains ... JetBrains is a multinational software company founded in Prague in 2000 and headquartered in Amsterdam. [3][4] It …Read more"
     },
     {
       "title": "JetBrains — Wikipédia",

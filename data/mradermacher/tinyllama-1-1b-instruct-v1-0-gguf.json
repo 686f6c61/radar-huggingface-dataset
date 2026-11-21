@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/TinyLlama-1.1B-Instruct-v1.0-GGUF",
+  "slug": "mradermacher-tinyllama-1-1b-instruct-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TinyLlama-1.1B-Instruct-v1.0-GGUF",
+  "created_at": "2025-08-31T22:31:12.000Z",
+  "updated_at": "2026-11-21T01:03:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "en",
+    "base_model:deepakkr/TinyLlama-1.1B-Instruct-v1.0",
+    "base_model:quantized:deepakkr/TinyLlama-1.1B-Instruct-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": 1100068864,
+  "parameters_human": "1.10B",
+  "storage_bytes": 9811430464,
+  "storage_human": "9.8 GB",
+  "context_length": 2048,
+  "base_model": "deepakkr/TinyLlama-1.1B-Instruct-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,90 +2,94 @@
 
 ## Resumen
 
-10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED es un checkpoint de pesos del transformer de vídeo de MiniMax-H3, reconvertido al árbol de módulos de diffusers por el usuario ibyteohdear. No es un modelo entrenado desde cero ni un LoRA: son los pesos completos del transformer de un fine-tune comunitario (10Eros-Max, a partir de multimodalart/MiniMax-H3-Pruned) reorganizados para cargarse directamente con `AutoModel.from_pretrained(..., trust_remote_code=True)` en diffusers. El repositorio contiene unos 20.111 millones de parámetros en safetensors, con un tamaño total de 40,2 GB.
+10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED es un modelo de difusión para generación de vídeo (text-to-video, image-to-video y audio-vídeo) publicado por el usuario `ibyteohdear` en Hugging Face. Se trata de un derivado de la familia MiniMax-H3, construido como un *fine-tune* del checkpoint `10Eros-Max-Transformer_8stepTURBO_beta7`, sobre el que se ha fusionado estáticamente la LoRA `H3_VBVR_Pro-V2` con fuerza 1. El resultado es un único conjunto de pesos que ya incorpora tanto el delta TURBO (destilación para muestreo en 8 pasos) como el efecto de la LoRA, sin necesidad de cargar adaptadores en tiempo de ejecución.
 
-El problema que resuelve es de ingeniería de formato: el checkpoint original venía con nombres de módulos propios, proyecciones QKV fusionadas, el MLP en orden `[gate | value]` y las proyecciones AdaLN plegadas. Este repo renombra bloques, desfusiona la atención, reordena el SwiGLU a `[value | gate]`, conserva las proyecciones AdaLN de rango 8 con sesgo en float32 y elimina `rope.inv_freq`. El resultado se carga sin merge, sin fold ni parcheo en tiempo de ejecución.
+Con 20.111.462.920 parámetros (aproximadamente 20,1 mil millones) y un repositorio de 42,7 GB en formato safetensors, el modelo se integra en el ecosistema `diffusers` mediante `AutoModel.from_pretrained(..., trust_remote_code=True)`. Su relevancia radica en la fusión determinista de pesos: el autor documenta un registro de fusión con 312 tensores afectados, verificación de conjuntos de claves exactos y conservación de dtypes por clave, lo que facilita la reproducibilidad frente a la carga dinámica de LoRAs.
 
-Es relevante para quien quiera ejecutar el pipeline MiniMax-H3 (texto a vídeo, imagen a vídeo y audio-vídeo) apuntando el componente `transformer` a este repositorio, manteniendo VAE, codificador de texto y schedulers del repo base. La model card advierte de que la aproximación AdaLN es exacta solo en la rejilla de timesteps del sampler (1025 pasos), por lo que no debe muestrearse fuera de esa rejilla si se espera reproducir el comportamiento del modelo liberado.
+La model card advierte de que el modelo está etiquetado como `not-for-all-anchored` (contenido no apto para todas las audiencias) y que la fuerza de la LoRA está "horneada" en los pesos, por lo que no existe un parámetro para atenuarla. Está pensado para experimentación en generación de vídeo con muestreo rápido en 8 pasos sobre la rejilla de 1025 pasos del sampler.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer 3D para difusión de vídeo (MiniMax-H3 pruned), con AdaLN de rango 8 y token refiner; clase `MiniMaxH3PrunedTransformer3DModel` |
-| Parametros totales | 20.111.462.920 |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Arquitectura | Transformer de difusión (MiniMax-H3), con codificadores de texto y audio; pipeline modular `diffusers` |
+| Parámetros totales | 20.111.462.920 (~20,1 B) |
+| Parámetros activos | no disponible (no es MoE según la información) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no especificados en el repo; el código de ejemplo usa `TorchAoConfig` con `Int8WeightOnlyConfig` |
+| Tipos de cuantización | Int8WeightOnly (torchao) y BitsAndBytes referenciados en el código de ejemplo; no se documentan otras |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (árbol de módulos diffusers, `trust_remote_code=True`) |
+| Formato de pesos | safetensors (repo de 42,7 GB); integración vía `diffusers` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer 3D de difusión para generación de vídeo, derivado de MiniMax-H3 en su variante podada (`multimodalart/MiniMax-H3-Pruned`). Incluye bloques `transformer_blocks` y un `token_refiner` con `refiner_blocks`, proyecciones de parche, salida y condicionamiento, atención con proyecciones Q/K/V separadas y un MLP SwiGLU en orden `[value | gate]`. El condicionamiento temporal usa AdaLN con proyecciones de rango 8, un `time_embedder.table` de 1025×8 y las matrices `adaln_basis` / `adaln_mean` incluidas en el propio fichero. Las proyecciones AdaLN aproximan la curva `silu(time_embedder(time_proj(t)))` con un error relativo RMS de ~1.5e-5 en la rejilla de 1025 pasos.
+El modelo pertenece a la familia MiniMax-H3, un transformer de difusión para vídeo con pipeline modular en `diffusers` que incluye etapas separadas de preparación de latentes, layout, timesteps, codificación de texto, denoising y decodificación. El código de ejemplo referencia componentes específicos: `AutoencoderKLMiniMaxH3`, `AutoencoderKLMiniMaxH3Audio`, `MiniMaxH3TextEncoderStep`, `MiniMaxH3DenoiseStep`, `MiniMaxH3DecodeStep` y `MiniMaxH3AutoKeyframeVaeEncoderStep`, lo que confirma soporte para vídeo, audio y keyframes automáticos. El codificador de texto empleado en el ejemplo es `Qwen3VLForConditionalGeneration`, un modelo visión-lenguaje.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. El autor indica que este repositorio es una conversión de formato del checkpoint `TenStrip/10Eros-Max/10Eros_Max_h3_hybrid_beta5.safetensors`, con validación contra la referencia: conjunto exacto de claves, coseno por tensor en pesos muestreados, evaluación del intercambio SwiGLU en ambos sentidos, `folded_bias` y consistencia de gauge entre pesos y tabla. La base AdaLN de este fichero difiere de la referencia `adaln_affine.safetensors` en el signo por columna (`++++----`), lo que es arbitrario en la SVD y no altera el cálculo. No se ha horneado ningún delta TURBO; los LoRA turbo habituales siguen siendo aplicables.
+El checkpoint es un *fine-tune* del modelo base `10Eros-Max-Transformer_8stepTURBO_beta7`, que a su vez incorpora un delta TURBO para muestreo en 8 pasos. Sobre esa base se ha fusionado la LoRA `H3_VBVR_Pro-V2` con fuerza 1 (alpha/rank × strength; rank [128], alpha por clave de 208). La fusión se realizó desde pesos prístinos el 4 de noviembre de 2026, afectando a 312 tensores sin descartar ninguno. El autor verifica que el conjunto de claves coincide exactamente con el base, que el dtype por clave se mantiene y que los tensores no fusionados son bit-idénticos al base. La tabla AdaLN de rango 8 es exacta en la rejilla de 1025 pasos del sampler y aproximada fuera de ella, por lo que se recomienda muestrear en rejilla. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (text-to-video) mediante el pipeline MiniMax-H3.
-- Generación de vídeo a partir de imagen (image-to-video), pipeline declarado en el repo.
-- Generación de audio-vídeo, según las etiquetas del repositorio (`audio-video`).
-- Integración como componente `transformer` de un pipeline modular de diffusers, con VAE (`AutoencoderKLMiniMaxH3`), VAE de audio (`AutoencoderKLMiniMaxH3Audio`) y codificador de texto Qwen3-VL.
-- Carga directa con `AutoModel.from_pretrained` y `trust_remote_code=True`, sin merge ni parcheo en tiempo de ejecución.
-- Compatibilidad con LoRA turbo externos (no incluidos en el checkpoint).
-- No se documentan tool calling, agentes, razonamiento multi-paso ni capacidades multilingües propias; el soporte de idioma depende del codificador de texto del pipeline base.
+- Generación de vídeo a partir de texto (text-to-video).
+- Generación de vídeo a partir de imagen (image-to-video), con pipeline declarado como `image-to-video`.
+- Generación de audio-vídeo conjunto, según los tags `audio-video` y los autoencoders de audio referenciados.
+- Muestreo rápido en 8 pasos gracias al delta TURBO fusionado.
+- Control de keyframes automáticos mediante `MiniMaxH3AutoKeyframeVaeEncoderStep`.
+- Codificación de texto con `Qwen3VLForConditionalGeneration`, lo que aporta comprensión visión-lenguaje al condicionamiento.
+- Integración con `diffusers` mediante `AutoModel` y `trust_remote_code=True`.
+- Cuantización Int8WeightOnly (torchao) y BitsAndBytes en el código de ejemplo para reducir huella de memoria.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo explícito.
 
 ## Casos de uso
 
-- Generación de clips de vídeo a partir de prompts de texto: se carga este transformer como componente del pipeline MiniMax-H3 y se mantienen VAE, codificador de texto y schedulers del repo base, lo que permite sustituir únicamente el transformer sin reescribir el pipeline.
-- Animación de imágenes fijas (image-to-video): útil para convertir storyboards o fotografías en clips con movimiento, aprovechando que el pipeline declarado es `image-to-video`.
-- Producción de vídeo con audio sincronizado: las etiquetas `audio-video` y el uso de `AutoencoderKLMiniMaxH3Audio` en el código de ejemplo indican soporte para generar pistas de audio junto al vídeo.
-- Investigación sobre conversión de checkpoints: el repositorio documenta paso a paso el renombrado, desfusión de QKV, reordenado SwiGLU y plegado AdaLN, y sirve como referencia reproducible para portar otros checkpoints de MiniMax-H3 a diffusers.
-- Evaluación de fine-tunes comunitarios: al ser un fine-tune de 10Eros-Max sobre MiniMax-H3-Pruned, permite comparar el comportamiento del fine-tune frente al base manteniendo el mismo pipeline.
-- Despliegue en entornos con cuantización: el código de ejemplo aplica `TorchAoConfig` con `Int8WeightOnlyConfig`, lo que facilita ejecutar el transformer en GPUs con menos VRAM que la requerida en bfloat16.
-- Pruebas de compatibilidad de LoRA: al no incluir deltas TURBO, se puede aplicar LoRA turbo externos y verificar su efecto sobre este checkpoint convertido.
+- Generación de clips cortos a partir de prompts de texto: el modelo permite crear vídeo mediante el pipeline `MiniMaxH3TextEncoderStep` + `MiniMaxH3DenoiseStep` + `MiniMaxH3DecodeStep`, adecuado para prototipado rápido de ideas visuales con 8 pasos de muestreo.
+- Animación de imágenes fijas (image-to-video): usando el pipeline declarado `image-to-video`, se puede tomar una imagen de referencia y generar movimiento coherente, útil para storyboards y previsualización.
+- Generación de vídeo con audio sincronizado: los autoencoders `AutoencoderKLMiniMaxH3Audio` y las etapas de audio permiten producir clips con pista sonora, aplicable a demos musicales o contenido promocional.
+- Investigación en destilación y fusión de LoRAs: el registro de fusión (312 tensores, verificación bit a bit) sirve como caso de estudio reproducible para estudiar el efecto de fusionar adaptadores con fuerza 1 en modelos de difusión.
+- Evaluación de cuantización en vídeo: el código de ejemplo con `TorchAoConfig` e `Int8WeightOnlyConfig` permite medir el impacto de la cuantización Int8 en calidad y latencia sobre un modelo de ~20 B.
+- Despliegue en Hugging Face Spaces con GPU Zero: el script incluye decoradores `spaces.GPU(duration=1500)` y gestión de `SPACES_ZERO_GPU`, lo que facilita demos públicas con GPU efímera.
+- Experimentación con keyframes automáticos: la etapa `MiniMaxH3AutoKeyframeVaeEncoderStep` permite explorar interpolación y control temporal en la generación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bfloat16: con 20.111 millones de parámetros, los pesos ocupan aproximadamente 40 GB, por lo que la inferencia en bf16 requiere del orden de 40 GB solo para el transformer, más la memoria del VAE, el VAE de audio, el codificador de texto Qwen3-VL y las activaciones.
-- Cuantización int8 weight-only: el código de ejemplo usa `TorchAoConfig` con `Int8WeightOnlyConfig`, lo que reduce los pesos a unos 20 GB aproximadamente, aunque no se documentan cifras oficiales de VRAM ni de latencia.
-- GPU recomendadas: no disponibles de forma oficial; por tamaño, el transformer en bf16 no cabe en GPUs de consumo de 24 GB y requiere aceleradores de 40-80 GB (A100 80 GB, H100) o configuraciones multi-GPU. Con cuantización int8 podría intentarse en GPUs de 24-32 GB, pero no hay confirmación del autor.
-- Cabe en consumer GPU: no en bf16; en int8 es posible en teoría en tarjetas de 24 GB o más, sin datos verificados.
-- Opciones de despliegue: diffusers con `AutoModel` y `trust_remote_code=True`, pipeline modular `minimax_h3` de diffusers, y `torchao` para cuantización. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un transformer de difusión de vídeo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial; con ~20,1 B de parámetros, en bf16 se requieren del orden de 40 GB solo para pesos, más memoria para activaciones y autoencoders (vídeo y audio), por lo que se recomienda al menos 48-80 GB.
+- Con cuantización Int8WeightOnly (torchao) o BitsAndBytes, la huella de pesos baja aproximadamente a la mitad (~20 GB), aunque las activaciones y los VAE siguen consumiendo memoria adicional.
+- GPU recomendadas: A100 80 GB, H100 80 GB o GPUs con 48 GB o más para bf16; para Int8 puede considerarse una RTX 4090 de 24 GB solo si se ajustan resolución y duración del clip.
+- No cabe con holgura en GPUs de consumo de 24 GB en bf16; en cuantizado puede intentarse con limitaciones.
+- Opciones de despliegue: `diffusers` con `AutoModel` y `trust_remote_code=True`; el código de ejemplo usa `snapshot_download`, `torchao` y `BitsAndBytesConfig`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de vídeo).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED | 20.111 M | no disponible | Transformer de difusión de vídeo (MiniMax-H3 pruned) | no disponible | Hugging Face, 101 descargas |
-| multimodalart/MiniMax-H3-Pruned | no disponible | no disponible | Transformer de difusión de vídeo (base podado) | no disponible | Hugging Face (repo base) |
-| MiniMax-H3 (original) | no disponible | no disponible | Transformer de difusión de vídeo | no disponible | no disponible en la información proporcionada |
+| 10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED | ~20,1 B | no disponible | Difusión vídeo/audio (MiniMax-H3) | no disponible | Hugging Face, `diffusers` |
+| ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7 (base) | no disponible | no disponible | Difusión vídeo (MiniMax-H3, TURBO) | no disponible | Hugging Face |
+| MiniMax-H3 (familia original) | no disponible | no disponible | Difusión vídeo/audio | no disponible | No confirmado en la información |
+| larryvrh/MiniMax-H3-Turbo-Lora | no disponible (LoRA) | no disponible | Adaptador TURBO | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, tipo y disponibilidad.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La aproximación AdaLN de rango 8 es exacta solo en la rejilla de 1025 timesteps del sampler; muestrear fuera de esa rejilla (por ejemplo, sigmas desplazadas entre puntos de la rejilla) no reproduce el comportamiento del modelo liberado.
-- La base AdaLN de este fichero difiere de la referencia en el signo por columna; es consistente internamente, pero debe tenerse en cuenta al mapear LoRA AdaLN de checkpoints liberados.
-- No se ha horneado ningún delta TURBO; si se esperaba un modelo acelerado, hay que aplicar LoRA turbo externos.
-- Requiere `trust_remote_code=True` porque la clase no está en `MODEL_MAPPING` de diffusers; esto implica ejecutar código del repositorio y revisar `modeling_minimax_h3_pruned.py` antes de usarlo en producción.
-- Licencia no disponible: no se puede confirmar el uso comercial ni las restricciones de redistribución.
-- Idiomas soportados no disponibles; el comportamiento multilingüe depende del codificador de texto del pipeline base.
-- Riesgo de alucinación y sesgos: no documentados por el autor; al ser un fine-tune comunitario de vídeo, los sesgos dependerán del dataset de fine-tune, no especificado.
-- El repositorio tiene 0 likes y 101 descargas, y fue creado y actualizado en noviembre de 2026; no hay evidencia de validación independiente más allá de la del propio autor.
-- El código de ejemplo de la model card está incompleto (cortado a mitad de la definición de `MLP_FILENAME`) y hace referencia a ficheros auxiliares (`mmh3-8b-ClipProj-v3.1.safetensors`) que no se detallan por completo.
+- Contenido etiquetado como `not-for-all-anchored`: no apto para todas las audiencias; requiere revisión antes de uso público.
+- La fuerza de la LoRA está fusionada con valor 1 y no puede atenuarse; si el efecto es demasiado intenso, debe usarse otro repositorio.
+- No se debe apilar otra LoRA TURBO (por ejemplo `larryvrh/MiniMax-H3-Turbo-Lora` o `lightx2v`) sobre estos pesos, ya que el delta TURBO ya está incluido y se aplicaría dos veces.
+- La tabla AdaLN de rango 8 solo es exacta en la rejilla de 1025 pasos del sampler; fuera de ella es aproximada, por lo que hay que muestrear en rejilla.
+- Licencia no disponible: no puede confirmarse el uso comercial sin consultar al autor.
+- Idiomas soportados no disponibles; el comportamiento multilingüe del codificador de texto no está documentado en la ficha.
+- Riesgo de alucinación visual y artefactos propios de modelos de difusión de vídeo; no se documentan sesgos específicos.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; revisar antes de desplegar en producción.
+- El repositorio depende de componentes externos (`NicoLab28/ClipProj-MiniMax-H3`, LoRA `h3Lora`) y de versiones concretas de `diffusers` con pipelines modulares MiniMax-H3, lo que puede romper la reproducibilidad si cambian.
+- No se documentan limitaciones de longitud de contexto ni de duración máxima de clip en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED
-- Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
-- Checkpoint de origen citado en la model card: `TenStrip/10Eros-Max/10Eros_Max_h3_hybrid_beta5.safetensors` (no se proporciona URL directa)
-- Documentación de diffusers: https://huggingface.co/docs/diffusers
-- Referencia `adaln_affine.safetensors` citada en la model card (no se proporciona URL directa)
+- Modelo en Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED
+- Modelo base (8stepTURBO_beta7): https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7
+- Repositorio de LoRAs `h3Lora`: https://huggingface.co/ibyteohdear/h3Lora
+- ClipProj MiniMax-H3: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- LoRA TURBO alternativa (no apilar): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora

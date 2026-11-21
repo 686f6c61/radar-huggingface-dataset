@@ -2,106 +2,116 @@
 
 ## Resumen
 
-Qwen3.8-27B-QSA-MM2-BF16 es una conversión de investigación publicada por el usuario higa2515 sobre el modelo base Qwen/Qwen3.8-27B. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional: los 18 shards originales del backbone, el codificador visual y el módulo MTP se mantienen byte a byte idénticos al checkpoint oficial, y la modificación consiste en añadir 52.434.944 parámetros FP32 de indexación (QSA, *Query Sparse Attention*) sobre las 16 capas de atención completa. Las otras 48 capas del decodificador conservan la arquitectura Gated DeltaNet original.
+Qwen3.8-27B-QSA-BF16 es una variante experimental del modelo multimodal Qwen3.8-27B de Alibaba Qwen, publicada por el usuario independiente higa2515. El modelo mantiene intactos los pesos originales del backbone, el codificador de visión, el proyector y las cabezas MTP, y añade un mecanismo de atención dispersa (QSA, *Query-Sparse Attention*) implementado mediante un indexador entrenado por separado que decide qué porciones del contexto reciben atención completa en 16 de las 64 capas del decodificador. El objetivo es habilitar recuperación fiable de información en contextos muy largos (hasta 262.144 tokens) reduciendo el coste computacional de la atención densa.
 
-El modelo tiene 27.833.862.896 parámetros totales en BF16, un repositorio de 56 GB y se distribuye con licencia Apache-2.0. Su pipeline declarado es `image-text-to-text`, por lo que cubre entrada multimodal de imagen y vídeo además de texto. La relevancia de esta ficha es doble: por un lado documenta un experimento de atención dispersa aplicada a un transformer híbrido de gran tamaño; por otro, advierte de que el wrapper de Transformers incluido es solo una referencia de corrección y de que el despliegue real requiere un motor llama.cpp modificado publicado aparte.
+La arquitectura subyacente combina 48 capas con Gated DeltaNet (atención lineal con estado recurrente) y 16 capas de atención completa, sobre las que se injerta el indexador QSA. El modelo tiene 27.833.862.896 parámetros totales y se distribuye en BF16 (repositorio de 56,4 GB), con licencia Apache 2.0. La versión actual del indexador (v2, publicada el 19 de noviembre de 2026) mejora sustancialmente la recuperación estructurada a 128k de contexto respecto a la v1: 215/240 aciertos frente a 169/240 con el modo de razonamiento desactivado, cerrando el 79,3% de la brecha respecto a la atención densa.
 
-Es importante subrayar que el autor no reporta mejoras de calidad: la evaluación en BF16 sobre 32.766 tokens da una perplejidad densa de 7,072960 frente a 7,071384 en la ruta dispersa, una diferencia que el propio autor califica de no concluyente. La model card es explícita sobre los límites de verificación en contexto largo y sobre el hecho de que QSA no comprime la caché KV.
+Es relevante ahora porque demuestra que es posible aproximar el comportamiento de la atención densa en contextos de 128k con un presupuesto de atención de apenas el 1,6% del contexto (K=2.048 tokens), usando un indexador de solo 52,4 millones de parámetros entrenado por destilación. No obstante, se trata de un artefacto de investigación: requiere código personalizado (`qwen3_5_qsa`), un runtime específico derivado de llama.cpp y no ha sido validado en calidad multimodal con el indexador v2.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 48 capas con Gated DeltaNet y 16 capas de atención completa con indexadores QSA añadidos; codificador visual y módulo MTP incluidos |
-| Parámetros totales | 27.833.862.896 (BF16), de los cuales 52.434.944 son parámetros FP32 de indexación QSA |
-| Parámetros activos | no disponible (no se declara arquitectura MoE) |
-| Longitud de contexto | hasta 262.144 tokens según la model card; verificación multimodal limitada hasta 64k y razonamiento en contexto largo no verificado |
-| Tipos de cuantización | BF16 en este repositorio; existe una release GGUF separada (Qwen3.8-27B-QSA-MM2-GGUF) con motor llama.cpp propio |
+| Arquitectura | Híbrida: 48 capas Gated DeltaNet + 16 capas de atención completa con indexador QSA (sparse attention); vision encoder y proyector heredados de Qwen3.8-27B |
+| Parametros totales | 27.833.862.896 (de los cuales 52.434.944 son parámetros FP32 del indexador QSA) |
+| Parametros activos | no disponible (no es un modelo MoE según la información proporcionada) |
+| Longitud de contexto | Hasta 262.144 tokens en el runtime de referencia; evaluación de recuperación realizada a 128k |
+| Tipos de cuantizacion | BF16 en este repo; serie GGUF paralela (incluye Q8_0 usado en las evaluaciones) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (pesos originales y añadidos QSA); el código nativo de llama.cpp mantiene MIT |
-| Formato de pesos | safetensors (BF16) con código custom (`trust_remote_code=True`); GGUF en la release alternativa |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (BF16) + `indexers/qsa_indexers.pt` (formato trainer) y `qsa-indexers.safetensors` (F32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte del Qwen3.8-27B original, un transformer híbrido en el que la mayor parte de las capas (48) usan Gated DeltaNet, un mecanismo de estado recurrente lineal, mientras que 16 capas emplean atención completa. Sobre esas 16 capas el autor inserta indexadores QSA que implementan atención dispersa por bloques: QSA opera con bloques de cuatro tokens y una ventana fija K=2.048 más el bloque actual. El 12,5% que cita la model card corresponde a la proporción de claves atendidas a 16k de contexto, no a una ratio constante en todas las longitudes. Todos los pares KV originales se conservan, de modo que no hay compresión de caché.
+El modelo parte de Qwen3.8-27B, un transformer multimodal con 64 capas de decodificador, de las cuales 48 usan Gated DeltaNet (una forma de atención lineal con estado recurrente y decaimiento) y 16 mantienen atención completa. Sobre esas 16 capas se añade un indexador QSA que, dado el contexto y la consulta, selecciona un subconjunto de bloques de tokens (presupuesto K=2.048 tokens, aproximadamente el 1,6% de un contexto de 128k) sobre los que se aplica atención densa. El indexador consta de proyecciones q/k, normalizaciones y una normalización por bloques, con 52,4 millones de parámetros en FP32.
 
-El único componente entrenado es el checkpoint `mm2_16k/qsa_indexers.pt`, procedente del repositorio higa2515/qwen38-27b-qsa-indexers, entrenado durante 300 pasos con longitud 16.384, una mezcla multimodal del 50% y tareas sintéticas de OCR, tablas y formas geométricas. No se entrenó ningún peso del backbone, del codificador visual, del proyector ni del MTP. La model card incluye el snapshot del código de entrenamiento y el checkpoint original bajo `research/` e `indexers/`, lo que facilita la reproducibilidad.
-
-Hay dos rutas de ejecución diferenciadas. El wrapper de Transformers de este repositorio es una referencia de corrección: el texto usa máscara SDPA, las conversaciones con imagen y vídeo usan atención densa y la ejecución MTP no está implementada, por lo que no ofrece la velocidad de los kernels dispersos nativos. La release GGUF emplea un motor llama.cpp modificado con QSA nativo para texto, imagen y vídeo, M-RoPE, MTP con hasta dos tokens de borrador y reutilización de prefix-cache; llama.cpp estándar no soporta estos ficheros QSA.
+El entrenamiento del indexador es independiente del modelo base y se realizó por destilación de la atención densa. La v1 se entrenó únicamente a longitud 16.384 (primero destilación de texto, después 300 pasos con una mezcla multimodal del 50% y tareas sintéticas de OCR, tablas y formas). La v2 continúa desde la v1 en dos etapas solo de texto: 300 pasos a 16.384 tokens añadiendo dos términos a la destilación (masa de atención sobre los registros necesarios y margen frente a señuelos similares), y 300 pasos a 65.536 tokens etiquetando todos los tokens de los registros necesarios y señuelos, con mayor peso en el margen de señuelos y en tipos de pregunta propensos a confusiones. El backbone, el encoder de visión, el proyector y los pesos MTP no se modificaron.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno sobre el backbone Qwen3.8-27B.
-- Comprensión de imagen y vídeo mediante el codificador visual y el proyector originales, con pipeline `image-text-to-text`.
-- Tareas de OCR, análisis de tablas y reconocimiento de formas, reforzadas en el entrenamiento sintético de los indexadores.
-- Ejecución con MTP (multi-token prediction) de hasta dos tokens de borrador, únicamente en el motor llama.cpp nativo.
-- Reutilización de prefix-cache en la ruta nativa, útil para prompts largos repetidos.
-- Atención dispersa QSA en texto, imagen y vídeo en la ruta nativa; atención densa en el wrapper de Transformers.
-- Capacidades de tool calling y function calling: no disponibles en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generación de texto y razonamiento multimodal: pipeline `image-text-to-text`, con soporte de imágenes y vídeo heredado de Qwen3.8-27B (aunque la calidad multimodal con el indexador v2 no se ha medido).
+- Recuperación estructurada en contexto largo: capacidad central del indexador QSA, evaluada con 240 preguntas de *recall* estructurado sobre ~127k tokens de libros PG-19.
+- Modo de razonamiento configurable: el chat template admite `reasoning_effort` (por ejemplo, `"low"`), que activa un bloque de razonamiento previo a la respuesta.
+- Decodificación especulativa: las cabezas MTP (multi-token prediction) del modelo base se conservan, y el runtime de referencia usa MTP con borrador de 2 tokens.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación en atención dispersa: el repositorio permite comparar la ruta densa y la dispersa sobre el mismo backbone con los mismos pesos, usando el wrapper de Transformers como referencia de corrección y el motor nativo para medir latencia real.
-- Procesamiento de documentos escaneados: el entrenamiento de los indexadores incluye tareas sintéticas de OCR y tablas, y el modelo acepta imagen y texto, por lo que encaja en pipelines de extracción de campos en facturas o formularios con contexto largo.
-- Análisis de vídeo con contexto extenso: la ruta nativa soporta vídeo con QSA y M-RoPE, adecuada para resúmenes de grabaciones o inspección visual de secuencias largas, con la cautela de que la verificación multimodal solo llega a 64k.
-- Evaluación de motores de inferencia: sirve como banco de pruebas para validar kernels dispersos, reutilización de prefix-cache y decodificación especulativa MTP frente a implementaciones densas estándar.
-- Reproducción de experimentos: al incluir `research/` e `indexers/` con el snapshot de entrenamiento, permite reproducir el entrenamiento de 300 pasos de los indexadores y auditar la conversión.
-- Recuperación del modelo original: el script `restore_original.py` verifica los hashes LFS y genera un snapshot HF denso estándar, útil para equipos que quieran partir del Qwen3.8-27B sin modificaciones.
-- Despliegue con contexto largo en texto: la model card reporta mediciones de throughput hasta 261.120 tokens de entrada, aplicable a pipelines de resumen o búsqueda sobre corpus extensos, sin que ello implique precisión de razonamiento en contexto largo.
+- Análisis de documentación extensa con recuperación estructurada: el modelo puede localizar registros concretos (entradas de tablas, campos de formularios, claves) dentro de contextos de 128k tokens, un escenario donde la v2 reduce un 64,8% los errores de la v1. Adecuado para auditoría documental y extracción de datos de contratos o informes largos.
+- Procesamiento de libros y corpus literarios completos: la evaluación se realizó sobre libros PG-19 de ~127k tokens, por lo que el modelo está calibrado para preguntas de comprensión sobre obras completas o colecciones de capítulos en una sola pasada.
+- Asistentes de investigación sobre repositorios de conocimiento: con 262.144 tokens de contexto en el runtime de referencia, permite cargar bases de conocimiento medianas y consultarlas sin recuperación externa (RAG), reduciendo la latencia de pipeline.
+- Extracción de información de documentos escaneados y tablas: la v1 se entrenó con tareas sintéticas de OCR, tablas y formas; combinado con el encoder de visión, sirve para digitalizar y consultar formularios y tablas complejas (siempre que se valide la calidad multimodal con v2, no medida).
+- Evaluación comparativa de mecanismos de atención dispersa: útil como banco de pruebas reproducible para investigadores que estudien sparse attention, dado que el indexador es un módulo separable de 52,4M de parámetros con pesos publicados y versiones v1/v2.
+- Despliegue en una sola GPU de 80 GB para tareas de contexto largo: el runtime de referencia (llama.cpp modificado, GGUF Q8_0, KV en FP16) se ejecutó en una A100 80GB con contexto de 262.144 tokens, lo que lo hace viable para prototipos de investigación en infraestructura única.
+- Generación de código y matemáticas: no disponible en la información proporcionada; no se han publicado evaluaciones de estas capacidades para esta variante.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Ruta densa | Ruta dispersa QSA | Notas |
-|---|---|---|---|
-| Perplejidad BF16 (32.766 tokens) | 7,072960 | 7,071384 | Muestra pequeña; el autor no lo considera evidencia de mejora |
-| DocVQA, sonda de 50 ítems y cuatro opciones | 50/50 | 50/50 | Prueba construida, no scoring estándar de DocVQA |
-| Throughput de texto | no disponible | medido hasta 261.120 tokens de entrada | Metodología en la model card de la release GGUF |
-| Precisión de razonamiento en contexto largo | no verificada | no verificada | 128k y 262k sin verificar en multimodal general |
+Los únicos datos publicados corresponden a una prueba interna de recuperación estructurada (240 preguntas, 8 tipos × 10 profundidades × 3, plantadas en ~127k tokens de PG-19 no usados en entrenamiento). Configuración: GGUF Q8_0, runtime `pentaCoxian/Qwen-QSA-llama.cpp` en `70b4e14`, A100 80GB, contexto 262.144, KV FP16, MTP draft 2, K=2.048, decodificación greedy, salida máxima 65.536 tokens.
+
+| Indexer | Thinking off | Thinking low |
+|---|---:|---:|
+| v1 | 169/240 (70,4%) | 185/240 (77,1%) |
+| v2 etapa 1 sola (no publicada) | 191/240 (79,6%) | 211/240 (87,9%) |
+| v2 (publicada) | 215/240 (89,6%) | 218/240 (90,8%) |
+| Atención densa (referencia superior) | 227/240 (94,6%) | 232/240 (96,7%) |
+
+Mejora de v2 sobre v1:
+
+| Medida | Thinking off | Thinking low |
+|---|---:|---:|
+| Respuestas correctas | +46 (+27,2%) | +33 (+17,8%) |
+| Precisión | +19,2 puntos | +13,8 puntos |
+| Respuestas incorrectas | 71 → 25 (−64,8%) | 55 → 22 (−60,0%) |
+| Brecha v1–densa cerrada | 79,3% | 70,2% |
+
+Comparación pareada (McNemar exacto, solo preguntas acertadas por un lado): v2 vs v1, 55 vs 9 (p = 3,5e-9) con thinking off y 39 vs 6 (p = 5,4e-7) con thinking low; v2 vs densa, 7 vs 19 (p = 0,029) y 6 vs 20 (p = 0,009). La atención densa sigue siendo significativamente mejor. Con thinking off, los errores por registro señuelo cayeron de 26 (v1) a 9 (densa: 5) y los errores de conjunto incorrecto de 25 a 9 (densa: 2). Cada modelo se ejecutó una vez; con los mismos pesos, unas 6 de 240 respuestas cambian entre ejecuciones repetidas.
 
 No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: en torno a 56 GB solo para pesos, más caché KV y activaciones; se necesita al menos una GPU de 80 GB para texto y más para multimodal con contexto largo.
-- Cuantizaciones GGUF: la release Qwen3.8-27B-QSA-MM2-GGUF permite reducir huella, aunque el motor requerido es un llama.cpp modificado y no el estándar.
-- GPU recomendadas: A100 80 GB, H100 80 GB o H200 para BF16; configuraciones multi-GPU con `device_map="auto"` en el wrapper de Transformers.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) en BF16; solo sería viable con cuantización agresiva en la ruta GGUF, dato no confirmado en la información disponible.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` y `attn_implementation="sdpa"` como referencia de corrección; llama.cpp modificado del repositorio GGUF para producción. vLLM, TGI y Ollama no están soportados según la información disponible.
-- Entorno de referencia: torch 2.14.1+cu126 y torchvision 0.29.1+cu126 capturados, con runtime CUDA nativo 12.9.
-- Latencia y throughput: solo se reporta medición de throughput de texto hasta 261.120 tokens de entrada; no hay cifras de latencia por token publicadas.
+- VRAM estimada para inferencia: el repositorio BF16 ocupa 56,4 GB, por lo que requiere al menos ~60 GB de VRAM para pesos en BF16 sin cuantizar; la serie GGUF permite reducir el requisito (el Q8_0 se ejecutó en una A100 80GB con contexto de 262.144 y KV en FP16).
+- GPU recomendadas: A100 80GB (configuración validada por el autor), H100 80GB para mayor margen de contexto y throughput.
+- GPU de consumo: no disponible; con 27,8B parámetros en BF16 no cabe en GPU de consumo de 24 GB. La serie GGUF paralela podría permitir cuantizaciones menores, pero no se han publicado requisitos ni resultados para ellas.
+- Opciones de despliegue: runtime personalizado derivado de llama.cpp (`kuraneko1/Qwen3.8-27B-QSA-llama.cpp`, con build desde fuente y guía de runtime); el repo declara `custom_code` para Transformers, y el autor advierte que los resultados de la evaluación no provienen del wrapper de referencia de Transformers. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles. Solo se documenta que la evaluación usó decodificación greedy, MTP con borrador de 2 tokens y salida máxima de 65.536 tokens en una A100 80GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Recuperación estructurada (240 preguntas, thinking off) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-QSA-MM2-BF16 | 27,83B (52,4M añadidos) | hasta 262.144 | Híbrido Gated DeltaNet + atención completa con QSA | Apache-2.0 | HF, requiere código custom |
-| Qwen/Qwen3.8-27B | 27,78B (aprox., sin indexadores) | no disponible en la información | Híbrido Gated DeltaNet + atención completa | Apache-2.0 | HF oficial |
-| Qwen3.8-27B-QSA-MM2-GGUF | mismo backbone | hasta 262.144 | Igual, con motor llama.cpp modificado | Apache-2.0 / MIT en código | HF, release separada |
-| Otras alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-27B-QSA-BF16 (este) | 27,8B (+52,4M indexador) | 262.144 | 215/240 (89,6%) | Apache 2.0 | Hugging Face (BF16 y GGUF) |
+| Qwen3.8-27B con atención densa | 27,8B | 262.144 | 227/240 (94,6%) | Apache 2.0 | Hugging Face (modelo base) |
+| Qwen3.8-27B-QSA v1 | 27,8B (+52,4M indexador) | 262.144 | 169/240 (70,4%) | Apache 2.0 | Hugging Face (revisión `v1`) |
+| Otros modelos de ~27B con contexto largo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación relevante es contra el modelo base: los pesos del backbone son idénticos y la única diferencia medible son los indexadores QSA y el motor de ejecución. No se dispone de datos para comparar con modelos de otros fabricantes en la misma franja de tamaño.
+La comparación con alternativas de la misma categoría (modelos densos de ~27B con contexto ≥128k) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El wrapper de Transformers no implementa MTP ni kernels dispersos nativos: no representa el rendimiento real del modelo y solo sirve como referencia de corrección.
-- llama.cpp estándar no soporta los ficheros QSA; usar la release GGUF con su motor propio es obligatorio para producción.
-- La evaluación de calidad es muy limitada: perplejidad sobre 32.766 tokens y una sonda DocVQA construida de 50 ítems y cuatro opciones, sin benchmarks estándar.
-- La verificación multimodal solo llega a 64k de contexto; el comportamiento en 128k y 262k no está verificado.
-- Las mediciones de throughput hasta 261.120 tokens no implican precisión de razonamiento en contexto largo.
-- QSA no comprime la caché KV: todos los pares KV originales se conservan, por lo que el ahorro es de cómputo en atención, no de memoria.
-- El repositorio incluye código custom y requiere `trust_remote_code=True`; la model card recomienda inspeccionarlo antes de habilitarlo.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible, pero heredados del modelo base Qwen3.8-27B.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe más allá de la del modelo base.
-- Licencia Apache-2.0 permite uso comercial de los pesos, pero el código nativo de llama.cpp mantiene MIT con avisos de terceros que deben respetarse.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta: no hay validación comunitaria independiente.
+- La atención densa supera significativamente al indexador v2 en recuperación estructurada (227 vs 215 aciertos con thinking off, p = 0,029); QSA es una aproximación, no una sustitución equivalente.
+- La calidad multimodal con el indexador v2 no se ha medido: las dos etapas de entrenamiento de v2 fueron solo de texto. En el wrapper de referencia de Transformers, las conversaciones de imagen y vídeo usan atención densa, por lo que el comportamiento con QSA en multimodal es desconocido.
+- El conjunto de evaluación es interno (240 preguntas, no publicado) y cada modelo se ejecutó una sola vez; con los mismos pesos, ~6 de 240 respuestas varían entre ejecuciones, lo que introduce ruido en las comparaciones.
+- Requiere código personalizado (`qwen3_5_qsa`, `custom_code`) y un runtime derivado de llama.cpp; no es compatible con pilas estándar de Transformers sin el wrapper, y los resultados publicados no provienen de ese wrapper.
+- El indexador está entrenado solo hasta 65.536 tokens (etapa 2 de v2); su comportamiento más allá de esa longitud dentro del contexto de 262.144 no está validado.
+- Riesgo de errores por registros señuelo: con thinking off, v2 todavía produce 9 errores de este tipo frente a 5 de la atención densa, y 9 errores de conjunto incorrecto frente a 2. Relevante en extracción de datos donde claves similares (una letra de diferencia) son frecuentes.
+- No hay información sobre sesgos, idiomas soportados ni alucinación en dominios abiertos; no se han publicado evaluaciones de MMLU, HumanEval o GSM8K.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-27B y el runtime derivado de llama.cpp deben verificarse por separado; el autor no documenta garantías de producción.
+- Artefacto de investigación con 845 descargas y 15 likes en el momento de la consulta; no hay evidencia de validación independiente.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-BF16
-- Release GGUF con motor llama.cpp modificado: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-GGUF
-- Checkpoint de indexadores: https://huggingface.co/higa2515/qwen38-27b-qsa-indexers/tree/b51b8d15e4342f2bc11ad8419abc18e3be6a8c8a
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada.
+- Hugging Face (BF16): https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16
+- Serie GGUF: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Paper QSA: https://arxiv.org/abs/2608.30320
+- GitHub del runtime: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp
+- Guía de runtime: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp/blob/main/qsa27b/RUNTIME.md
+- Entrenamiento del indexador: https://github.com/kuraneko1/qsa-indexer-forge
+- Runtime usado en la evaluación: https://github.com/pentaCoxian/Qwen-QSA-llama.cpp/tree/70b4e14a830a4ec78d1ac97087cd9fac02429d37
+- Licencia: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16/blob/main/LICENSE
+- X del autor: https://x.com/_ryu15_

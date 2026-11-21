@@ -2,102 +2,120 @@
 
 ## Resumen
 
-MAPLE (Manifold-Activated Pruning of Latent Experts) es una técnica de compresión estructural para modelos de mezcla de expertos (MoE) desarrollada por Aman Sachan (Independent Systems Research). Esta ficha describe la implementación de referencia publicada sobre `google/gemma-4-26B-A4B-it`, que reduce el modelo original de 9,92 GB a 4,75 GB mediante la poda de 80 de sus 128 expertos, seleccionados a partir del perfil de activación empírico sobre un corpus técnico (algoritmos en Python, estructuras de datos y lógica STEM). El resultado es un GGUF IQ2_XXS que cabe íntegramente en la VRAM de una GPU de portátil de 6 GB (RTX 4050) y alcanza 45,4 tokens por segundo.
+MAPLE es una compresión estructural del modelo Gemma 4 26B-A4B-it de Google, publicada por Aman Sachan (AmSach) bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de una poda selectiva de expertos sobre la arquitectura MoE original: de los 128 expertos del modelo base se conservan 48, elegidos por su masa de probabilidad acumulada en el router para dominios técnicos (código, matemáticas, STEM). El resultado se distribuye en formato GGUF con cuantización IQ2_XXS y un tamaño de 4,75 GB.
 
-El modelo base Gemma 4 26B-A4B es un transformer MoE con 25,6B parámetros físicos y 4B activos por token, con 128 expertos de grano fino. MAPLE no es una cuantización convencional: es una poda de expertos que enmascara los logits del router de los expertos eliminados a -inf para mantener la estabilidad numérica del softmax. El contenedor físico resultante tiene 10,95B parámetros (los parámetros reportados en safetensors), lo que equivale a 3,47 bits por peso en el contenedor y 1,48 bits efectivos por parámetro respecto al modelo sin podar.
+El objetivo declarado es permitir la ejecución íntegra en VRAM de GPUs de consumo con 6 GB, como una RTX 4050 Laptop, evitando el paginado por PCIe que lastra las cuantizaciones de 2 bits del modelo completo. Según la model card, el contenedor físico alberga 10.952.640.446 parámetros a 3,47 bits por peso, lo que equivale a 1,48 bits efectivos por parámetro si se mide contra los 25,6B del modelo sin podar.
 
-La relevancia de esta publicación es doble. Por un lado, demuestra que es posible ejecutar un MoE de 26B en hardware de consumo con fidelidad funcional del 100% en tareas de código dentro del dominio de calibración. Por otro, presenta MAPLE como una formulación portable a otras familias MoE (Mixtral, DeepSeek, Qwen 2.5 MoE, LFM-24B), lo que la convierte en una metodología de compresión reutilizable más que en un artefacto aislado.
+La propuesta es relevante para el despliegue en el borde (edge AI) y para entornos con hardware muy limitado, pero introduce un compromiso explícito y severo: el modelo pierde capacidad multilingüe casi por completo, ya que la poda elimina los expertos inactivos en inglés. La model card reporta una perplejidad multilingüe de 572,4 frente a 98,9 del contenedor IQ2_XXS sin podar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture-of-experts) de grano fino, 128 expertos, top-k routing (base Gemma 4 26B-A4B) |
-| Parametros totales | 10.952.640.446 en el contenedor podado (25,6B en el modelo base sin podar) |
-| Parametros activos | 4B por token (heredado del modelo base A4B) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), poda selectiva de expertos sobre Gemma 4 26B-A4B-it |
+| Parámetros totales | 10.952.640.446 (contenedor físico tras poda); base sin podar: 25,6B |
+| Parámetros activos | no disponible (el modelo base es A4B, pero la card no detalla los activos tras la poda) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF IQ2_XXS (3,47 BPW en el contenedor; 1,48 bits efectivos por parámetro respecto al base) |
-| Idiomas soportados | en (inglés); el autor advierte de mayor perplejidad fuera de dominio en tareas multilingües |
+| Tipos de cuantización | IQ2_XXS (3,47 BPW); calibración con imatrix |
+| Idiomas soportados | inglés (los expertos multilingües fueron eliminados en la poda) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con 128 expertos de grano fino y 4B parámetros activos por token sobre un total de 25,6B. MAPLE no reentrena el modelo: aplica una poda estructural sobre el espacio de expertos. El procedimiento perfilá la manifold de activación empírica sobre un corpus de calibración específico de dominio (síntesis de algoritmos en Python, estructuras de datos y razonamiento lógico-STEM), identifica 80 expertos inactivos para ese dominio y los elimina, conservando 48. Los logits del router correspondientes a los expertos eliminados se enmascaran a -inf para que el softmax siga siendo numéricamente estable tras la poda.
+El modelo base, Gemma 4 26B-A4B-it, es un transformer de mezcla de expertos de grano fino con 128 expertos y enrutamiento disperso. MAPLE no reentrena ni destila pesos en el sentido clásico: aplica una poda estructural de expertos guiada por el análisis de la distribución de enrutamiento. El autor argumenta que en modelos MoE entrenados con más de 100 idiomas el router sigue una distribución de ley de potencias (tipo Zipf): para tokens técnicos, de programación y matemáticos, los 48 expertos principales concentran el 94,7% de la masa de probabilidad softmax acumulada, mientras que los 80 restantes se invocan menos del 0,02% de las veces.
 
-El resultado es un modelo de dominio estrecho pero funcional: el autor reporta 100% de fidelidad de ejecución en pruebas unitarias de código Python dentro del dominio de calibración, con un margen de generación de 512 tokens. El trade-off explícito es un aumento de la perplejidad fuera de dominio, especialmente en tareas multilingües y de conocimiento general, donde los expertos podados sí tenían carga funcional. La metodología se presenta como determinista y reproducible, pero dependiente del corpus de calibración: calibrar sobre diálogo multilingüe retendría entre 88 y 108 expertos (ahorro del 15-30%), y calibrar sobre corpus especializados (biomédico, financiero, legal) preservaría subconjuntos distintos. La formulación matemática se declara portable a Mixtral, DeepSeek-V2/V3, Qwen 2.5 MoE y LFM-24B.
+La innovación técnica declarada es el teorema de invariancia del softmax bajo enmascaramiento de logits: al eliminar expertos no se reindexan los pesos del router ni se alteran las probabilidades relativas de los expertos supervivientes, de modo que la distribución de enrutamiento se preserva. La cuantización se realiza con calibración imatrix y se empaqueta en un único GGUF IQ2_XXS. La card menciona "destilación en variedad de 48 expertos", aunque no se detalla el procedimiento de ajuste posterior a la poda ni el volumen de datos empleado.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, orientada a dominio técnico.
-- Generación de código Python: síntesis de algoritmos, estructuras de datos y lógica de resolución de problemas, con fidelidad de ejecución del 100% en el benchmark de calibración según el autor.
-- Razonamiento deductivo y STEM dentro del dominio de calibración.
-- Compatible con endpoints de inferencia estándar (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
-- Capacidades multilingües degradadas: el modelo está etiquetado solo para `en` y el autor advierte de mayor perplejidad fuera de dominio.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode) para esta variante podada.
+- Generación de texto conversacional en inglés, con etiqueta `conversational` en el repositorio.
+- Razonamiento técnico y general: la card reporta resultados en MMLU, ARC-Challenge y HellaSwag.
+- Generación de código: evaluado en HumanEval y MBPP.
+- Razonamiento matemático: evaluado en GSM8K y MATH con cadena de pensamiento.
+- Ejecución íntegra en VRAM en GPUs de 6 GB, sin paginado por PCIe.
+- Compatibilidad con llama.cpp y con endpoints compatibles según los tags del repositorio.
+- Capacidad multilingüe: prácticamente eliminada por la poda; la perplejidad fuera de dominio se dispara.
+- Soporte de tool calling y de agentes multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia en GPU de portátil de 6 GB: el caso de uso central de la publicación. El modelo cabe al 100% en VRAM de una RTX 4050 de 6 GB y entrega 45,4 tokens por segundo, frente a los 6,9 TPS que se obtienen al hacer offload por PCIe con el modelo sin comprimir. Adecuado para asistentes de código locales sin conexión.
-- Asistencia de programación en el borde: generación de funciones Python, estructuras de datos y algoritmos en un portátil sin GPU dedicada de gama alta. La fidelidad del 100% en pruebas unitarias dentro del dominio de calibración lo hace viable para autocompletado y generación de snippets verificables.
-- Prototipado y demostraciones en hardware restringido: útil para investigadores que necesitan evaluar el comportamiento de un MoE de 26B en equipos de consumo, sin acceso a A100/H100, aceptando la restricción de dominio.
-- Educación y entornos docentes: despliegue local de un modelo de razonamiento lógico y algorítmico en aulas con portátiles de 6 GB, donde el coste de infraestructura cloud es un factor limitante.
-- Prueba de concepto de la metodología MAPLE: el artefacto sirve como referencia reproducible para validar la técnica de poda sobre otros MoE (Mixtral, DeepSeek, Qwen) antes de aplicarla a corpus propios.
-- Compresión de dominio para pipelines embebidos: en escenarios donde el tráfico es predeciblemente técnico (generación de código, parsing lógico), el modelo podado puede integrarse en servicios de borde con latencia baja y sin dependencia de red.
+- Asistencia de código en portátiles con GPU de 6 GB: el modelo cabe entero en VRAM y ofrece autocompletado y generación de funciones en inglés con una retención del 98,2% en HumanEval respecto al contenedor IQ2_XXS sin podar, lo que lo hace viable en estaciones de trabajo sin GPU dedicada de gama alta.
+- Tutor de matemáticas y STEM en local: con retención del 97,8% en GSM8K y 97,0% en MATH frente al IQ2_XXS completo, puede resolver problemas de nivel escolar y universitario sin conexión a la nube.
+- Prototipado y demos en ferias o entornos aislados: al ocupar 4,75 GB en disco y caber en 6 GB de VRAM, se puede distribuir en un único archivo GGUF y ejecutar con llama.cpp en hardware modesto.
+- Procesamiento de documentación técnica en inglés: clasificación, resumen y extracción de información de manuales y código fuente, aprovechando el sesgo de los expertos conservados hacia dominios técnicos.
+- Evaluación comparativa de técnicas de compresión: sirve como referencia reproducible para investigadores que estudien poda de MoE, con DOI en Zenodo y Kaggle y resultados publicados en benchmarks canónicos.
+- Chatbot de soporte técnico en inglés con latencia baja: los 45,4 tokens por segundo medidos en una RTX 4050 Laptop permiten conversaciones interactivas sin esperas perceptibles.
+- Inferencia en dispositivos embebidos o mini-PC con GPU integrada de 6 GB: el modelo evita el intercambio de memoria y mantiene un rendimiento estable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor reporta métricas propias de despliegue y fidelidad funcional:
+Resultados reportados en la model card. La columna de retención compara MAPLE con el contenedor IQ2_XXS sin podar (128 expertos).
 
-| Metrica | Valor reportado |
-|---|---|
-| Tamano del modelo base (sin podar) | 9,92 GB |
-| Tamano tras poda MAPLE | 4,75 GB |
-| Bits por peso en el contenedor | 3,47 BPW |
-| Bits efectivos por parámetro (vs. base 25,6B) | 1,48 |
-| Throughput en RTX 4050 6 GB (100% VRAM) | 45,4 tokens/s |
-| Throughput con offload por PCIe (modelo sin comprimir) | 6,9 tokens/s |
-| Fidelidad en pruebas unitarias Python (dominio de calibración, -n 512) | 100% |
+| Benchmark | Protocolo | Base FP16 | Q4_K_M | IQ2_XXS (128 exp.) | MAPLE (48 exp.) | Retención |
+|---|---|---|---|---|---|---|
+| HumanEval | 0-shot Pass@1 | 64,6% | 63,8% | 61,6% | 60,5% | 98,2% |
+| MBPP | 3-shot Pass@1 | 68,2% | 66,5% | 63,8% | 62,1% | 97,3% |
+| GSM8K | 8-shot CoT | 78,4% | 76,8% | 72,5% | 70,9% | 97,8% |
+| MATH | 4-shot CoT | 42,6% | 40,8% | 36,2% | 35,1% | 97,0% |
+| MMLU | 5-shot | 75,2% | 73,9% | 68,7% | 66,4% | 96,7% |
+| ARC-Challenge | 25-shot | 69,8% | 68,4% | 64,5% | 63,2% | 98,0% |
+| HellaSwag | 10-shot | 86,4% | 85,1% | 81,2% | 79,5% | 97,9% |
+| Perplejidad multilingüe | texto reservado | 42,1 | 46,8 | 98,9 | 572,4 | no aplica |
+
+Datos de sistema medidos en una NVIDIA GeForce RTX 4050 Laptop de 6 GB (backend CUDA, Windows 11):
+
+| Métrica | Q4_K_M | IQ2_XXS (128 exp.) | MAPLE (48 exp.) |
+|---|---|---|---|
+| Tamaño en disco | 16,4 GB | 9,92 GB | 4,75 GB |
+| Capas residentes en VRAM | 33,3% | 46,7% | 100% (30/30) |
+| Velocidad de generación | 3,2 TPS | 6,9 TPS | 45,4 TPS |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 4,75 GB para el GGUF IQ2_XXS, más overhead de contexto y KV cache; cabe en GPUs de 6 GB.
-- GPU objetivo declarada: NVIDIA RTX 4050 Laptop de 6 GB, con ejecución 100% en VRAM.
-- Cabe en GPUs de consumo de 6 GB o más (RTX 4050, 3060, 4060, 4070, etc.); no requiere A100 ni H100.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), y por extensión cualquier frontend compatible como Ollama o LM Studio; no se documenta soporte nativo en vLLM o TGI para esta variante.
-- Latencia y throughput: 45,4 tokens/s en RTX 4050 6 GB; 6,9 tokens/s con offload PCIe del modelo sin comprimir (referencia comparativa del autor).
+- VRAM: aproximadamente 4,75 GB para el único archivo IQ2_XXS, más overhead del contexto; la card confirma ejecución al 100% en VRAM en una GPU de 6 GB.
+- GPU recomendadas: RTX 4050 Laptop 6 GB (medida de referencia), RTX 3050 6 GB, RTX 4060 Laptop, RTX 2060 6 GB; cualquier GPU con 6 GB o más de VRAM.
+- GPU de gama alta (A100, H100, RTX 4090): funcionará, pero el modelo está dimensionado para hardware de consumo y no aprovechará la capacidad adicional.
+- Despliegue: llama.cpp (formato nativo GGUF); los tags indican compatibilidad con endpoints. vLLM, TGI y Ollama no se mencionan en la información disponible.
+- Rendimiento: 45,4 tokens por segundo en RTX 4050 Laptop con 30 de 30 capas en VRAM; 6,57 veces más rápido que el IQ2_XXS sin podar en el mismo hardware.
+- Latencia: no disponible de forma desagregada (solo throughput).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Tamaño en disco | Licencia | Notas |
 |---|---|---|---|---|---|
-| MAPLE Gemma-4-26B-A4B (esta ficha) | 10,95B en contenedor (25,6B base, 4B activos) | no disponible | GGUF IQ2_XXS | Apache 2.0 | Poda de expertos de dominio técnico; 4,75 GB; 45,4 TPS en 6 GB VRAM |
-| google/gemma-4-26B-A4B-it (base) | 25,6B (4B activos) | no disponible | safetensors y GGUF | Apache 2.0 | Modelo sin podar; 9,92 GB; requiere offload o GPU de mayor VRAM |
-| Cuantizaciones GGUF convencionales del base (Q4_K_M, Q5_K_M, etc.) | 25,6B (4B activos) | no disponible | GGUF | Apache 2.0 | Reducción por cuantización, no por poda estructural; no disponibles los detalles en la información proporcionada |
-| Otros MoE podados con MAPLE (Mixtral, DeepSeek, Qwen) | no disponible | no disponible | no disponible | no disponible | El autor declara portabilidad metodológica, pero no se publican artefactos en la información disponible |
+| MAPLE (Gemma 4 26B-A4B, 48 exp.) | 10,95B en contenedor | no disponible | 4,75 GB | Apache 2.0 | 100% en VRAM en 6 GB; 45,4 TPS en RTX 4050 |
+| Gemma 4 26B-A4B-it IQ2_XXS (128 exp.) | 25,6B base | no disponible | 9,92 GB | Apache 2.0 (heredada) | 46,7% de capas en 6 GB; 6,9 TPS |
+| Gemma 4 26B-A4B-it Q4_K_M | 25,6B base | no disponible | 16,4 GB | Apache 2.0 (heredada) | 33,3% de capas en 6 GB; 3,2 TPS |
+| Gemma 4 26B-A4B-it FP16 | 25,6B base | no disponible | 52,0 GB | Apache 2.0 (heredada) | No cabe en 6 GB (OOM) |
+
+No se dispone de datos de otros modelos de la misma categoría (compresiones de MoE de terceros) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio estrecho: la poda se calibró sobre código Python y lógica STEM; el rendimiento fuera de ese dominio (conocimiento general, diálogo abierto, otras lenguas) se degrada y el autor lo reconoce explícitamente.
-- Multilingüe degradado: la model card solo declara `en`; el autor advierte de mayor perplejidad fuera de dominio en tareas multilingües, y los expertos podados incluían clusters especializados en idiomas no ingleses y traducción.
-- No es una cuantización reversible: la poda elimina expertos de forma estructural; no se puede recuperar la capacidad completa sin volver al modelo base.
-- Dependencia del corpus de calibración: los resultados son deterministas pero específicos del manifold usado; calibrar sobre otro corpus produce un modelo distinto con subconjuntos de expertos diferentes.
-- Riesgo de alucinación: no se documentan evaluaciones de factualidad ni de alucinación en la información disponible; al ser un modelo podado de dominio, el riesgo fuera de dominio es presumiblemente mayor.
-- Sesgos: no se documentan análisis de sesgo en la información disponible; hereda los del modelo base Gemma 4 26B-A4B, no evaluados aquí.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base (`google/gemma-4-26B-A4B-it`) y sus términos de uso, que pueden imponer condiciones adicionales.
-- No se documentan capacidades de tool calling, agentes, visión ni audio para esta variante; no asumir paridad funcional con el modelo base.
-- El rendimiento de 45,4 TPS y la fidelidad del 100% son cifras reportadas por el autor en su hardware y benchmark; no hay validación independiente en la información disponible.
+- Pérdida multilingüe severa: la perplejidad en texto no inglés sube de 98,9 a 572,4; el modelo es efectivamente monolingüe en inglés.
+- La poda está sesgada hacia dominios técnicos; el rendimiento en tareas creativas, culturales o de conocimiento general puede degradarse más allá de lo que reflejan los benchmarks publicados.
+- Riesgo de alucinación inherente a un modelo de 2 bits por peso; la cuantización IQ2_XXS agresiva amplifica la pérdida de fidelidad.
+- Los benchmarks son autoinformados por el autor; no se han verificado de forma independiente en la información disponible.
+- Longitud de contexto no especificada; no se puede garantizar el comportamiento en conversaciones largas.
+- Sin datos sobre tool calling, agentes o modo thinking; no se debe asumir su disponibilidad.
+- Licencia Apache 2.0 declarada, pero el modelo base Gemma tiene sus propios términos de uso; conviene verificar la compatibilidad para uso comercial.
+- El rendimiento de 45,4 TPS se midió en un hardware concreto (RTX 4050 Laptop, Windows 11, CUDA); en otras configuraciones puede variar.
+- El repositorio tiene pocas descargas (4551) y likes (10), por lo que la validación comunitaria es limitada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF
-- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Descarga directa del GGUF: https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF/resolve/main/gemma-4-26B-A4B-MAPLE-IQ2_XXS.gguf?download=true
 - Repositorio GitHub: https://github.com/AmSach/maple
 - Sitio oficial: https://amsach.github.io/maple/
-- DOI Zenodo: https://doi.org/10.5281/zenodo.24042480
+- DOI Zenodo: https://doi.org/10.5281/zenodo.24344372
 - DOI Kaggle: https://doi.org/10.34740/KAGGLE/M/786779
-- Discusión llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/31894
-- PitchHut: https://www.pitchhut.com/project/maple-moe-pruning
-- LaunchNest: https://launchnest.io/p/maple
 - Google Scholar del autor: https://scholar.google.com/citations?user=dfgiWLYAAAAJ&hl=en
-- Descarga directa GGUF: https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF/resolve/main/gemma-4-26B-A4B-MAPLE-IQ2_XXS.gguf?download=true
+- Hacker News (Show HN): https://news.ycombinator.com/item?id=50463281
+- PitchHut: https://www.pitchhut.com/project/maple-moe-pruning
+- Discusión en llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/31894
+- LaunchNest: https://launchnest.io/p/maple
+- LinkedIn del autor: https://linkedin.com/in/theamansachan
+- Instagram del autor: https://instagram.com/i.amsach

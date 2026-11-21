@@ -2,104 +2,106 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi-adapted es un adaptador LoRA desarrollado por harness-hub sobre el modelo base Qwen/Qwen3.8-27B, entrenado mediante aprendizaje por refuerzo (GRPO asíncrono con TRL) para funcionar como el modelo subyacente del agente de programación pi en tareas de ingeniería de software y de terminal. El adaptador no es un modelo independiente: requiere cargar el modelo base y aplicar los pesos LoRA para su uso. El repositorio ocupa 0,7 GB, lo que corresponde únicamente a los pesos del adaptador en formato safetensors.
+Qwen3.8-27B-pi-adapted es un adaptador LoRA sobre el modelo multimodal Qwen/Qwen3.8-27B, publicado por harness-hub y entrenado con aprendizaje por refuerzo (GRPO asíncrono vía TRL) para funcionar como el modelo subyacente del agente de programación pi (earendil-works/pi) en tareas de ingeniería de software y terminal. El adaptador no modifica la arquitectura del modelo base: se distribuye como pesos PEFT en safetensors (repo de 0,7 GB) y requiere cargar el modelo base Qwen3.8-27B para su uso.
 
-El problema que resuelve es concreto: el modelo base, cuando opera dentro de un arnés de agente, tiende a entrar en bucles de búsqueda y reejecución de fragmentos de código hasta agotar el límite de pasos. El adaptador corrige ese comportamiento y mejora sustancialmente la tasa de éxito en Terminal-Bench 2.1 (de 39,5% a 55,8%) y en SWE-bench Pro hard 51 (de 29,4% a 62,7%), reduciendo además el número de llamadas a herramientas por tarea entre un 55% y un 62%.
+El objetivo declarado es reducir el coste de inferencia manteniendo la precisión: con el modo thinking desactivado, el adaptador alcanza resultados cercanos a los del modelo base con thinking a máximo esfuerzo (xhigh) en Terminal-Bench 2.1 (56,6% frente a 54,2%) y se queda a 10 puntos en SWE-bench Pro (64,7% frente a 74,5%), generando aproximadamente 4,5 veces menos tokens por tarea. Frente al modelo base sin thinking, las mejoras son de +25,5 puntos en SWE-bench Pro (hard 51) y +16,3 puntos en Terminal-Bench 2.1.
 
-La relevancia actual del modelo reside en su enfoque: no se trata de un ajuste supervisado clásico, sino de un adaptador entrenado específicamente para un arnés de agente concreto (pi), con evaluación pareada contra el modelo base y publicación de la receta completa. Esto lo convierte en un caso de estudio sobre cómo adaptar modelos grandes a flujos agénticos reales sin reentrenar desde cero.
+Es relevante ahora porque ejemplifica una línea de trabajo emergente: adaptar mediante RL agentes de código a un harness concreto para obtener la mayor parte del rendimiento del razonamiento extendido a una fracción del coste en tokens. La licencia es Apache 2.0 y el pipeline declarado es image-text-to-text, aunque en la evaluación publicada la torre de visión no se sirve y las pruebas son solo de texto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre Qwen/Qwen3.8-27B; el modelo base es un transformer híbrido (según la referencia a `--mamba-cache-mode align` en la configuración de vLLM) |
-| Parámetros totales | No disponible para el adaptador; el modelo base es de 27B (según el nombre) |
-| Parámetros activos | No disponible |
-| Longitud de contexto | 131.072 tokens (configuración de evaluación con `--max-model-len 131072`) |
-| Tipos de cuantización | No disponible en la información proporcionada; existe una versión GGUF en el repositorio hermano |
-| Idiomas soportados | No disponible |
+| Arquitectura | Adaptador LoRA (PEFT) sobre transformer multimodal Qwen/Qwen3.8-27B; arquitectura interna del base no detallada en la informacion disponible |
+| Parametros totales | No disponible para el adaptador (repo de 0,7 GB); parametros del modelo base no disponibles en la informacion proporcionada |
+| Parametros activos | No disponible (no se indica que el modelo base sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponibles en la model card; existe version GGUF publicada en harness-hub/Qwen3.8-27B-pi-adapted-GGUF |
+| Idiomas soportados | No disponibles (el campo de idiomas no esta poblado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador LoRA PEFT); existe versión GGUF en `harness-hub/Qwen3.8-27B-pi-GGUF` |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA); GGUF disponible en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena con aprendizaje por refuerzo mediante GRPO asíncrono (async-grpo), implementado con la librería TRL. Se trata de un adaptador LoRA de rango máximo 32 (según la configuración de vLLM `--max-lora-rank 32`), aplicado sobre el modelo base Qwen/Qwen3.8-27B. El entrenamiento se realizó con el razonamiento (thinking) desactivado, y el adaptador nunca fue entrenado con thinking activado, lo que constituye una restricción importante para su uso.
+El adaptador se construye sobre Qwen/Qwen3.8-27B, un modelo multimodal image-text-to-text, mediante LoRA. El entrenamiento usa aprendizaje por refuerzo con GRPO asíncrono (async-grpo) a través de la librería TRL, con recompensas derivadas de la ejecución de tareas reales en entornos de terminal y repositorios de código (tags harbor y openenv). Los datasets declarados son harness-hub/scale800-harbor, harness-hub/harness-adapters, harness-hub/termgrade-train-harbor y ai-and/termgrade-environments. El checkpoint publicado corresponde al paso 160, seleccionado según las puntuaciones en SWE-bench Pro y en un subconjunto de 18 tareas de Terminal-Bench 2.1 monitorizadas durante el entrenamiento.
 
-Los datos de entrenamiento provienen de dos conjuntos del propio autor: `harness-hub/scale800-harbor` y `harness-hub/termgrade-train-harbor`. El checkpoint utilizado en las evaluaciones es el paso 160, seleccionado según las puntuaciones en SWE-bench Pro y en un subconjunto de 18 tareas de Terminal-Bench 2.1 monitorizado durante el entrenamiento. La receta completa se publicará en el blog de lanzamiento `harness-hub/harness-adapters-at-scale`. El modelo base es un transformer híbrido, como indica la necesidad de usar `--mamba-cache-mode align` para el cacheo de prefijos en vLLM.
+La innovación principal no está en la arquitectura sino en el procedimiento: el adaptador se ajusta contra el harness pi concreto (presupuesto de 100 pasos por tarea, muestreo a temperatura 0,8 y top-p 1,0, thinking desactivado salvo que se indique lo contrario) y el resultado es un modelo que resuelve tareas con menos turnos y menos tokens. Según la model card, en las tareas que ambos resuelven el adaptador necesita menos de la mitad de turnos que el modelo base. La receta completa de entrenamiento se anuncia para el blog de lanzamiento del proyecto.
 
 ## Capacidades
 
-- Generación de texto y razonamiento orientado a tareas de ingeniería de software.
-- Edición de código y corrección de bugs en repositorios reales, con ejecución de tests.
-- Uso de terminal y herramientas de línea de comandos dentro de un arnés de agente.
-- Soporte de tool calling / function calling, con parser `qwen3_xml` en vLLM.
-- Razonamiento multi-paso y comportamiento agéntico: el adaptador reduce drásticamente el número de llamadas a herramientas necesarias para resolver una tarea.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking: no soportado; el adaptador fue entrenado y evaluado con thinking desactivado.
-- Visión y audio: no disponible en la información proporcionada.
+- Generación de código y edición de repositorios en tareas de ingeniería de software (parches, corrección de funciones, ejecución de tests).
+- Operación de terminal: ejecución de comandos, lectura de salidas, iteración sobre errores dentro de un bucle de agente.
+- Uso de herramientas (tool calling) en el bucle del agente pi, con llamadas encadenadas y verificación mediante tests.
+- Razonamiento multi-paso orientado a agentes: planificación, búsqueda en el código, edición y validación.
+- Modo thinking opcional heredado del modelo base; el adaptador rinde también con thinking desactivado, que es su configuración de entrenamiento.
+- Capacidad multimodal image-text-to-text declarada en el pipeline, aunque la torre de visión no se sirve en la evaluación publicada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Reparación automática de bugs en repositorios de producción: el adaptador puede localizar la función defectuosa, editarla, ejecutar los tests y corregir el último caso fallido en unas 8 llamadas a herramientas, como demuestra el ejemplo de la tarea de Ansible en SWE-bench Pro. Es adecuado porque fue entrenado específicamente para ese flujo.
-- Agente de terminal para tareas de administración de sistemas: con 131.072 tokens de contexto y soporte de tool calling, puede gestionar sesiones largas de terminal con historial extenso, reduciendo las llamadas redundantes un 62% frente al modelo base.
-- Integración en pipelines de CI/CD: sirviéndolo con vLLM y el parser `qwen3_xml`, puede conectarse a un servidor OpenAI-compatible y ejecutar tareas de corrección automática sobre fallos de test detectados en integración continua.
-- Asistente de programación local con pi: instalando pi (Node.js 22.19 o superior) y apuntándolo al servidor vLLM local, el adaptador actúa como modelo de codificación en el editor o terminal del desarrollador.
-- Evaluación y research sobre adaptadores de arnés: al publicarse la receta completa, sirve como referencia para construir adaptadores propios sobre otros modelos base con GRPO asíncrono.
-- Despliegue en macOS con llama.cpp o Llama.app: la existencia de una versión GGUF permite ejecutar el adaptador en entornos locales sin GPU dedicada, aunque con las limitaciones de rendimiento propias de la cuantización.
-- Automatización de tareas de refactorización con verificación: el modelo ejecuta tests tras cada edición y corrige los fallos restantes, lo que encaja en flujos donde la verificación automática es obligatoria.
+- Reparación automática de bugs en producción: el adaptador localiza la función afectada, aplica el parche y ejecuta la suite de tests en un bucle de hasta 100 pasos, con un coste en tokens aproximadamente 4,5 veces menor que el modelo base en modo thinking.
+- Agente de CI/CD para pull requests: integrado en el harness pi, puede resolver tareas de SWE-bench Pro con un 64,7% de éxito sin thinking, lo que lo hace viable para triaje y corrección automática de issues en pipelines.
+- Automatización de tareas de administración de sistemas: ejecución y depuración de comandos de terminal con verificación de resultados, adecuado para Terminal-Bench 2.1 (55,8% de éxito en la evaluación pareada).
+- Asistente de desarrollo en IDE o CLI: al necesitar menos turnos por tarea resuelta, reduce la latencia percibida y el coste por sesión en herramientas de codificación interactivas.
+- Generación de scripts y utilidades de línea de comandos: el entrenamiento sobre entornos de terminal favorece la producción de comandos correctos y su validación inmediata.
+- Evaluación y ajuste de harnesses propios: sirve como referencia para construir adaptadores RL sobre otros agentes, ya que la receta se publica y los datasets de entrenamiento están disponibles.
+- Despliegue en hardware limitado: la versión GGUF permite ejecutar el modelo cuantizado en llama.cpp o Llama.app en macOS, útil para pruebas locales del agente.
 
 ## Benchmarks y rendimiento
 
-Evaluación con el arnés pi, un intento por tarea, temperatura 0,8, thinking desactivado, pareado contra el modelo base en las mismas tareas. Intervalo de confianza del 95%; valor p de test de signos exacto.
+Resultados publicados en la model card, bajo el harness pi, un intento por tarea, presupuesto de 100 pasos, solo texto y muestreo a temperatura 0,8 con top-p 1,0. La columna de thinking corresponde al esfuerzo xhigh.
 
-| Benchmark | Tareas | Modelo base | Adaptador (paso 160) | Diferencia (puntos) | Nuevas resueltas / perdidas | Llamadas a herramientas por tarea | Llamadas, tareas resueltas por ambos |
-|---|---|---|---|---|---|---|---|
-| Terminal-Bench 2.1 | 86 | 39,5% | 55,8% | +16,3 ± 9,1 | 16 / 2 (p = 0,0013) | -62% | -48% (32) |
-| Terminal-Bench 2.1, 68 tareas no usadas para elegir checkpoint | 68 | 39,7% | 55,9% | +16,2 ± 10,6 | 13 / 2 (p = 0,0074) | -64% | -32% (25) |
-| SWE-bench Pro (hard 51) | 51 | 29,4% | 62,7% | +33,3 ± 14,2 | 18 / 1 (p = 7,6e-05) | -55% | -59% (14) |
+| Benchmark | Qwen3.8-27B | Qwen3.8-27B, xhigh thinking | Qwen3.8-27B-pi-adapted | Qwen3.8-27B-pi-adapted, xhigh thinking |
+|---|---|---|---|---|
+| SWE-bench Pro (hard 51) | 39,2% | 74,5% | 64,7% | 74,5% |
+| Terminal-Bench 2.1 | 41,0% | 54,2% | 56,6% | 56,6% |
 
-Terminal-Bench 2.1 se evaluó sobre las 89 tareas del conjunto `harborframework/terminal-bench-2.1`, con 1 hora y 100 pasos de agente por tarea. SWE-bench Pro (hard 51) se evaluó sobre las 51 tareas más difíciles de `harness-hub/swebench-pro-v2-hard51-harbor`, con 2 horas y 100 pasos de agente por tarea.
+Resultados pareados frente al modelo base, thinking desactivado, con intervalos de confianza al 95% y test de signos exacto:
+
+| Benchmark | Tareas | Base | Adaptador (paso 160) | Diferencia (puntos) | Nuevas resueltas / perdidas |
+|---|---|---|---|---|---|
+| SWE-bench Pro (hard 51) | 51 | 39,2% | 64,7% | +25,5 ± 14,2 | 15 / 2 (p = 0,0023) |
+| Terminal-Bench 2.1 | 86 | 39,5% | 55,8% | +16,3 ± 9,1 | 16 / 2 (p = 0,0013) |
+| Terminal-Bench 2.1, 68 tareas no usadas para elegir checkpoint | 68 | 39,7% | 55,9% | +16,2 ± 10,6 | 13 / 2 (p = 0,0074) |
+
+Los autores advierten que estas cifras no son comparables con las de la model card de Qwen3.8-27B, que usa otros harnesses (Terminus, Claude Code), thinking a máximo esfuerzo, presupuestos mayores y el SWE-bench Pro completo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Depende del modelo base de 27B y de la cuantización elegida; como referencia orientativa, un modelo de 27B en bfloat16 requiere del orden de 54 GB solo para pesos, más caché KV y overhead.
-- GPU recomendadas: no especificadas por el autor. Por tamaño del modelo base, se necesitan GPUs de clase A100 80 GB o H100 para bfloat16 sin cuantizar; para cuantizaciones de 4 bits podrían caber en GPUs consumer de 24 GB, aunque este dato no está confirmado en la información disponible.
-- Cabe en GPU consumer: no confirmado para el adaptador; la versión GGUF del repositorio hermano sugiere que sí es posible en configuraciones cuantizadas.
-- Opciones de despliegue: vLLM (configuración de referencia con `--enable-lora --max-lora-rank 32 --lora-modules`, `--language-model-only`, `--enable-prefix-caching`, `--mamba-cache-mode align`, `--enable-auto-tool-choice`, `--tool-call-parser qwen3_xml`, `--reasoning-parser qwen3`, `--max-model-len 131072`); transformers serve (servidor OpenAI-compatible ligero, con `--dtype bfloat16 --continuous-batching --reasoning off`); llama.cpp y Llama.app mediante la versión GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; depende del modelo base Qwen3.8-27B y de la cuantización elegida. El adaptador LoRA en sí ocupa 0,7 GB.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Viabilidad en GPU de consumo: no confirmada; existe una versión GGUF que sugiere despliegue en hardware más modesto y en macOS mediante Llama.app, pero no se publican requisitos mínimos.
+- Opciones de despliegue documentadas: transformers (PEFT), vLLM, llama.cpp, Llama.app y fusión del adaptador con el modelo base mediante PEFT.
+- Latencia y throughput: no se publican cifras absolutas; la model card indica aproximadamente 4,5 veces menos tokens generados por tarea y menos de la mitad de turnos que el modelo base en tareas resueltas por ambos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento en Terminal-Bench 2.1 | Licencia | Formato |
+| Modelo | Parametros | Contexto | Rendimiento (SWE-bench Pro hard 51 / Terminal-Bench 2.1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-pi-adapted (este) | 27B (base) + LoRA | 131.072 | 55,8% (bajo pi) | Apache 2.0 | safetensors (LoRA), GGUF |
-| Qwen/Qwen3.8-27B (base) | 27B | 131.072 (config. de evaluación) | 39,5% (bajo pi) | Apache 2.0 | safetensors |
-| Otros adaptadores de arnés de harness-hub | No disponible | No disponible | No disponible | Apache 2.0 | safetensors |
+| Qwen3.8-27B-pi-adapted | Adaptador LoRA sobre Qwen3.8-27B | No disponible | 64,7% / 56,6% (sin thinking) | Apache 2.0 | Hugging Face (PEFT y GGUF) |
+| Qwen3.8-27B (base) | No disponible | No disponible | 39,2% / 41,0% (sin thinking); 74,5% / 54,2% (xhigh) | No disponible en la información | Hugging Face |
+| Alternativas de la misma categoría (otros adaptadores de agente) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparación más directa y documentada es contra el modelo base sin adaptador, que es el punto de referencia pareado de todas las evaluaciones. No se dispone de datos de benchmarks de otros adaptadores o modelos comparables en la información proporcionada.
+No se dispone de datos de otros adaptadores comparables en la información proporcionada; la comparación más directa es contra el modelo base bajo el mismo harness.
 
 ## Limitaciones y advertencias
 
-- El adaptador no es un modelo autónomo: requiere cargar Qwen/Qwen3.8-27B y aplicar los pesos LoRA; no puede usarse solo.
-- El adaptador fue entrenado y evaluado con thinking desactivado; no se ha entrenado con thinking activo y su comportamiento con él es desconocido.
-- La configuración de evaluación usa `"api": "openai-completions"` en pi; sin esa opción, pi usa la Responses API, con la que el adaptador no fue entrenado ni evaluado.
-- El cacheo de prefijos en este modelo híbrido requiere `--mamba-cache-mode align` en vLLM; sin ello, cada turno del agente relee todo su historial, con la penalización de latencia correspondiente.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado en la información proporcionada; como todo modelo generativo, existe riesgo en la edición de código y en la interpretación de resultados de tests.
-- Limitaciones de idioma: no se especifican los idiomas soportados; el entrenamiento se orienta a tareas de software y terminal, predominantemente en inglés técnico.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen/Qwen3.8-27B, que no se detalla en la información proporcionada.
-- El checkpoint seleccionado (paso 160) se eligió con un subconjunto de 18 tareas de Terminal-Bench 2.1, lo que introduce un posible sesgo de selección; el autor mitiga esto reportando resultados en las 68 tareas no usadas para la selección.
-- No hay datos publicados sobre latencia, throughput ni requisitos de VRAM del adaptador.
+- Los resultados están medidos exclusivamente bajo el harness pi con un presupuesto de 100 pasos; el rendimiento puede degradarse con otros agentes, prompts o presupuestos distintos.
+- Las cifras no son comparables con las de la model card del modelo base, que emplea otros harnesses y configuraciones.
+- La evaluación publicada es solo de texto: la torre de visión no se sirve, por lo que el rendimiento multimodal del adaptador no está validado.
+- El checkpoint fue seleccionado usando parte de Terminal-Bench 2.1; la model card reporta resultados en las 68 tareas no usadas para la selección (+16,2 puntos), pero persiste el riesgo de sobreajuste al benchmark.
+- No se documentan sesgos conocidos, tasas de alucinación ni comportamiento multilingüe.
+- El adaptador requiere el modelo base Qwen3.8-27B; su licencia y condiciones de uso deben verificarse por separado, ya que la información disponible solo confirma Apache 2.0 para el adaptador.
+- Al ser un adaptador entrenado con RL sobre entornos de ejecución, puede producir comandos destructivos si se despliega sin sandbox; se recomienda ejecución aislada en producción.
+- No se publican requisitos de hardware ni latencias absolutas, lo que dificulta la planificación de capacidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Modelo en Hugging Face: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Versión GGUF: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Versión GGUF: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-GGUF
-- Blog de lanzamiento con la receta: https://huggingface.co/blog/harness-hub/harness-adapters-at-scale
 - Agente pi: https://github.com/earendil-works/pi
-- Dataset de entrenamiento: https://huggingface.co/datasets/harness-hub/scale800-harbor
-- Dataset de entrenamiento: https://huggingface.co/datasets/harness-hub/termgrade-train-harbor
-- Dataset de evaluación Terminal-Bench 2.1: https://huggingface.co/datasets/harborframework/terminal-bench-2.1
-- Dataset de evaluación SWE-bench Pro hard 51: https://huggingface.co/datasets/harness-hub/swebench-pro-v2-hard51-harbor
-- Documentación de transformers serve: https://huggingface.co/docs/transformers/en/serve-cli/serving
+- Blog de lanzamiento (receta de entrenamiento): https://huggingface.co/blog/harness-hub/harness-adapters-at-scale
+- Dataset SWE-bench Pro hard 51: https://huggingface.co/datasets/harness-hub/swebench-pro-v2-hard51-harbor
+- Dataset Terminal-Bench 2.1: https://huggingface.co/datasets/harborframework/terminal-bench-2.1
+- Datasets de entrenamiento: https://huggingface.co/datasets/harness-hub/scale800-harbor, https://huggingface.co/datasets/harness-hub/harness-adapters, https://huggingface.co/datasets/harness-hub/termgrade-train-harbor, https://huggingface.co/datasets/ai-and/termgrade-environments

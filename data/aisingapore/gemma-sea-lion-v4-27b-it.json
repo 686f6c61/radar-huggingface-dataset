@@ -77,31 +77,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "aisingapore/Gemma-SEA-LION-v4-27B · Hugging Face",
-      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B",
-      "snippet": "Gemma-SEA-LION-v4-27B is based on Gemma 3 (which supports over 100 languages) and is a multilingual model which has undergone continued pre-training on approximately 500B tokens sampled from a bucket of over one trillion tokens across 11 SEA languages: Burmese, English, Indonesian, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese."
-    },
-    {
-      "title": "aisingapore/Gemma-SEA-LION-v4-27B-IT · Hugging Face",
-      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT",
-      "snippet": "As of 25 Aug 2025, Gemma-SEA-LION-v4-27B-IT excels at Southeast Asian (SEA) tasks when compared to other open models with fewer than 200 billion parameters and demonstrates performance comparable to that of larger and top closed models."
-    },
-    {
-      "title": "Gemma-SEA-LION-v4-27B | SEA-LION Documentation",
-      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b",
-      "snippet": "Gemma-SEA-LION-v4-27B is based on Gemma 3 (which supports over 100 languages) and is a multilingual model that has undergone continued pre-training on approximately 500B tokens, sampled from a pool of 1 trillion tokens across 11 SEA languages: Burmese, English, Indonesia, Khmer, Lao, Malay, Mandarin, Tagalog, Tamil, Thai and Vietnamese, to ..."
-    },
-    {
-      "title": "sealion/models/sea-lion-v4/gemma-sea-lion-v4-27B.md at main ... - GitHub",
-      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/gemma-sea-lion-v4-27B.md",
-      "snippet": "Continued pretrained and finetuned from model: Gemma-3-27B-IT As of 25 Aug 2025, Gemma-SEA-LION-v4-27B-IT excels at Southeast Asian (SEA) tasks when compared to other open models with fewer than 200 billion parameters and demonstrates performance comparable to that of larger and top closed models."
-    },
-    {
-      "title": "SEA-LION v4 | SEA-LION Documentation - docs.sea-lion.ai",
-      "url": "https://docs.sea-lion.ai/models/sea-lion-v4",
-      "snippet": "Gemma-SEA-LION-v4-27B-VL Our powerful vision-language model, expertly trained to interpret both images and text with a deep, nuanced understanding of Southeast Asian cultural contexts."
-    }
-  ]
+  "sources": []
 }

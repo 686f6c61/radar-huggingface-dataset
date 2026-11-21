@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-FP8-block es una version cuantizada a FP8 del modelo multimodal Muse-Glimmer-30B desarrollado por Muse (Meta), publicada por RedHatAI. Se trata de un modelo image-text-to-text que acepta texto e imagenes como entrada y genera texto, con una arquitectura denominada MuseGlimmerForConditionalGeneration y 29.776.626.688 parametros totales (aproximadamente 29,8 mil millones).
+Muse-Glimmer-30B-FP8-block es una versión cuantizada a FP8 del modelo multimodal Muse-Glimmer-30B, desarrollado originalmente por Muse (Meta) y optimizado por RedHatAI para su despliegue en producción con vLLM. El modelo acepta entradas de texto e imagen y genera texto, lo que lo sitúa en la categoría de image-text-to-text, con soporte explícito de tool calling y parsing de razonamiento.
 
-La relevancia de esta ficha concreta reside en la optimizacion: RedHatAI ha aplicado cuantizacion de pesos y activaciones a FP8 con esquema de bloques (W8A8 block) mediante LLM Compressor, reduciendo el numero de bits por parametro de 16 a 8. Esto disminuye el tamano en disco y los requisitos de memoria de GPU en aproximadamente un 50 por ciento, manteniendo el modelo listo para servir con vLLM.
+La cuantización reduce el peso de cada parámetro de 16 a 8 bits, lo que disminuye aproximadamente un 50% el tamaño en disco y los requisitos de memoria GPU respecto al modelo original en precisión completa. Solo se cuantizan los pesos y activaciones de los operadores lineales dentro de los bloques transformer, dejando intactas las capas de visión, el lm_head y los embeddings.
 
-El modelo esta publicado bajo licencia Apache 2.0, lo que facilita su uso comercial, y cuenta con soporte validado para tool calling mediante el parser `muse_glimmer`. Con 22.432 descargas y 13 likes en Hugging Face, es un artefacto orientado a despliegue en produccion mas que a investigacion de arquitecturas novedosas.
+Con 29.776 millones de parámetros y un repositorio de 34,4 GB, el modelo está pensado para servir cargas multimodales y agentes con tool calling sobre infraestructura vLLM, y ha sido validado por Red Hat en RHOAI 3.5.1, RHAIIS 3.6.0-fast.2 y vLLM 0.28.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MuseGlimmerForConditionalGeneration (transformer multimodal) |
-| Parametros totales | 29.776.626.688 (aproximadamente 29,8 B) |
-| Parametros activos | no disponible |
+| Arquitectura | MuseGlimmerForConditionalGeneration (transformer multimodal texto-imagen) |
+| Parametros totales | 29.776.626.688 (~29,8 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 W8A8 con esquema de bloques (FP8_BLOCK); el modelo base esta en BF16/FP16 |
+| Tipos de cuantizacion | FP8 W8A8 con esquema FP8_BLOCK (pesos y activaciones de capas lineales) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors en formato compressed-tensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es MuseGlimmerForConditionalGeneration, un modelo transformer multimodal que procesa entradas de texto e imagen y produce salida de texto. La cuantizacion se aplica exclusivamente a los pesos y activaciones de los operadores lineales dentro de los bloques del transformer; quedan excluidos de la cuantizacion el modulo de vision (`re:.*vision.*`), la cabeza de lenguaje (`lm_head`) y los embeddings (`re:.*embed_tokens.*`), segun la receta de creacion publicada.
+El modelo base Muse-Glimmer-30B emplea la arquitectura MuseGlimmerForConditionalGeneration, un transformer multimodal que procesa texto e imágenes como entrada y produce texto como salida. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron fases de RLHF o DPO. Tampoco se especifican innovaciones de atención o decodificación más allá de lo que implica el soporte de parsing de razonamiento en vLLM.
 
-El proceso de cuantizacion se realizo con LLM Compressor mediante post-training quantization sin datos de calibracion (model-free PTQ), con el esquema FP8_BLOCK, y se exporto en formato compressed-tensors. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base utilizo RLHF o DPO.
+La versión FP8-block se generó mediante cuantización post-entrenamiento sin datos de calibración (model-free PTQ) con LLM Compressor, aplicando el esquema FP8_BLOCK y exportando en formato compressed-tensors. Se excluyeron de la cuantización las capas de visión, el lm_head y los embeddings, de modo que la pérdida de precisión se concentra en las proyecciones lineales de los bloques transformer.
 
 ## Capacidades
 
-- Generacion de texto condicionada por imagen (image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y razonamiento sobre contenido grafico.
-- Tool calling / function calling: soportado y validado, con parser dedicado `muse_glimmer` en vLLM y el flag `--enable-auto-tool-choice`.
-- Razonamiento multi-paso: el despliegue recomendado incluye `--reasoning-parser muse_glimmer`, lo que indica soporte de modos de razonamiento estructurado.
-- Conversacion multi-turno: el tag `conversational` confirma uso en dialogos.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponible.
+- Generación de texto condicionada por imagen y texto (image-text-to-text).
+- Comprensión de imágenes combinada con instrucciones en lenguaje natural.
+- Tool calling y function calling, con parser dedicado `muse_glimmer` y soporte de `--enable-auto-tool-choice` en vLLM.
+- Parsing de razonamiento (`--reasoning-parser muse_glimmer`), lo que sugiere modos de razonamiento explícito en la generación.
+- Conversación multi-turno en formato chat.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Despliegue compatible con endpoints y con Azure según los tags del repositorio.
 
 ## Casos de uso
 
-- Atencion al cliente multimodal: el modelo puede recibir capturas de pantalla o fotos enviadas por el usuario junto con texto y responder en conversaciones multi-turno, gracias a su pipeline image-text-to-text y al tag conversational.
-- Automatizacion de soporte tecnico con tool calling: integrado en vLLM con `--enable-auto-tool-choice` y el parser `muse_glimmer`, el modelo puede invocar funciones para consultar estado de pedidos, abrir tickets o recuperar datos de sistemas internos.
-- Extraccion de datos de documentos e imagenes: procesamiento de facturas, formularios o capturas para extraer campos estructurados mediante generacion de texto condicionada por imagen.
-- Agentes de razonamiento multi-paso: el parser de razonamiento permite construir pipelines donde el modelo planifica, invoca herramientas y sintetiza resultados en varios pasos.
-- Analisis de imagenes en flujos de moderacion o inspeccion: clasificacion y descripcion de contenido visual con salida textual que alimenta sistemas de decision.
-- Despliegue en produccion con coste reducido: al ocupar aproximadamente la mitad de memoria que el modelo base en BF16, permite servir un modelo de 30 B multimodales en una unica GPU de 80 GB o en configuraciones multi-GPU mas economicas mediante vLLM.
-- Asistentes de accesibilidad: descripcion de imagenes y respuesta a preguntas sobre contenido visual para usuarios con discapacidad visual.
+- Agentes con tool calling en producción: el modelo puede invocar funciones externas mediante el parser `muse_glimmer` integrado en vLLM, lo que permite construir asistentes que consultan APIs, bases de datos o servicios internos sin capas adicionales de orquestación.
+- Análisis de documentos con imágenes: al aceptar entradas image-text-to-text, puede extraer información de capturas, formularios escaneados o gráficos combinándolos con instrucciones textuales.
+- Asistencia técnica multimodal: un usuario puede adjuntar una captura de error y recibir diagnóstico y pasos de resolución en una conversación multi-turno.
+- Automatización de soporte al cliente: con tool calling y razonamiento, el modelo puede clasificar la consulta, consultar sistemas de ticketing y responder con contexto.
+- Moderación y descripción de contenido visual: generación de descripciones textuales de imágenes para indexación o accesibilidad.
+- Pipelines de razonamiento multi-paso: el parser de razonamiento permite separar la cadena de pensamiento de la respuesta final en aplicaciones que requieren trazabilidad.
+- Despliegue en infraestructura Red Hat AI: validado en RHOAI y RHAIIS, adecuado para entornos empresariales que ya operan sobre esa plataforma.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos FP8 (8 bits por parametro) y aproximadamente 29,8 B de parametros, los pesos ocupan alrededor de 30 GB; sumando activaciones, cache KV y overhead de vLLM, se recomienda un minimo de 40-48 GB de VRAM.
-- GPU recomendadas: A100 80 GB, H100 80 GB, H200, o GPUs profesionales con 48 GB o mas (por ejemplo, L40S 48 GB o A6000 48 GB).
-- Cabe en consumer GPU: no de forma holgada; una RTX 4090 con 24 GB no es suficiente para los pesos completos en FP8. Seria necesario cuantizar mas agresivamente (por ejemplo, a INT4) o usar offloading, no soportado directamente por esta publicacion.
-- Opciones de despliegue: vLLM es el backend validado, con la imagen `vllm/vllm-openai:muse-glimmer` y los flags `--generation-config auto`, `--enable-auto-tool-choice`, `--tool-call-parser muse_glimmer` y `--reasoning-parser muse_glimmer`. Compatible con endpoints estilo OpenAI. El soporte en llama.cpp, Ollama o TGI no esta confirmado en la informacion disponible.
+- VRAM estimada: al tratarse de FP8 W8A8, el peso de los parámetros ocupa aproximadamente 8 bits por parámetro, es decir, alrededor de 30 GB solo para pesos; el repositorio completo ocupa 34,4 GB en disco.
+- GPU recomendadas: H100, H200, A100 80GB y GPUs con soporte nativo de FP8 (arquitecturas Hopper o superior). El despliegue de referencia usa `--tensor-parallel-size 1`, lo que implica que cabe en una sola GPU de gran capacidad.
+- GPU de consumo: no se dispone de datos que confirmen su funcionamiento en GPUs consumer; el soporte FP8 en estas es limitado y el tamaño de pesos dificulta su ajuste en tarjetas de 24 GB.
+- Opciones de despliegue: vLLM (imagen `vllm/vllm-openai:muse-glimmer`), con argumentos `--generation-config auto`, `--enable-auto-tool-choice`, `--tool-call-parser muse_glimmer` y `--reasoning-parser muse_glimmer`. No se indica soporte de llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-FP8-block (RedHatAI) | 29,8 B | no disponible | Texto + imagen a texto | Apache 2.0 | safetensors FP8 (compressed-tensors) |
-| Muse-Glimmer-30B (meta-models) | 30 B | no disponible | Texto + imagen a texto | no disponible | BF16/FP16 |
-| Alternativas de ~30 B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
+| RedHatAI/Muse-Glimmer-30B-FP8-block | ~29,8 B | no disponible | FP8 W8A8 block | Apache 2.0 | vLLM |
+| meta-models/Muse-Glimmer-30B (base) | ~29,8 B | no disponible | BF16/FP16 | Apache 2.0 | transformers, vLLM |
+| RedHatAI/diffusiongemma-26B-A4B-it-FP8 | ~26 B (A4B, MoE) | no disponible | FP8 | no disponible | vLLM |
+| RedHatAI/Mistral-Medium-3.5-128B | ~128 B | no disponible | no disponible | no disponible | vLLM |
 
-La comparacion principal disponible es con el modelo base sin cuantizar, del que esta version reduce el espacio en disco y la memoria de GPU en aproximadamente un 50 por ciento. No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
+La comparación se limita a datos de catálogo; no hay información de rendimiento comparado entre estos modelos.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion FP8 puede introducir una degradacion pequena pero no nula de la calidad respecto al modelo base en BF16; no se han publicado evaluaciones que cuantifiquen esa perdida.
-- Solo se cuantizan los operadores lineales de los bloques del transformer; el modulo de vision, `lm_head` y los embeddings permanecen en mayor precision, por lo que el ahorro de memoria es algo inferior al 50 por ciento teorico.
-- Riesgo de alucinacion inherente a los modelos generativos, especialmente en tareas de descripcion de imagenes o extraccion de datos de documentos.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- Limitaciones de contexto e idioma: no disponibles; no se especifica la longitud de contexto ni la lista de idiomas soportados.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; conviene revisar los terminos del modelo base `meta-models/Muse-Glimmer-30B`.
-- El despliegue esta validado para vLLM; otros runtimes pueden no soportar el formato compressed-tensors FP8_BLOCK.
-- No se han publicado datos de latencia ni throughput, por lo que la planificacion de capacidad en produccion requiere pruebas propias.
+- Al ser una cuantización FP8, puede presentar una degradación de precisión frente al modelo base en tareas sensibles a cuantización, especialmente en razonamiento numérico o generación de código.
+- Las capas de visión no están cuantizadas, por lo que el consumo de memoria del codificador visual se mantiene en su precisión original.
+- Riesgo de alucinación inherente a los modelos generativos, no cuantificado en la información disponible.
+- Idiomas soportados no especificados; no se garantiza un rendimiento homogéneo fuera de los idiomas principales del modelo base.
+- Longitud de contexto no documentada, lo que impide planificar cargas con ventanas largas sin verificación previa.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base y de los datos de entrenamiento originales.
+- Requiere versiones específicas de vLLM (validado en 0.28.0) y argumentos de CLI concretos; un despliegue con configuración incorrecta puede desactivar el tool calling o el parsing de razonamiento.
+- No se documentan sesgos conocidos en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Muse-Glimmer-30B-FP8-block
-- Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- Guia de uso con vLLM: https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B
-- LLM Compressor: https://github.com/vllm-project/llm-compressor
-- Licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/
+- [RedHatAI/Muse-Glimmer-30B-FP8-block en Hugging Face](https://huggingface.co/RedHatAI/Muse-Glimmer-30B-FP8-block)
+- [Modelo base meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
+- [Guía de uso de Muse-Glimmer 30B en vLLM](https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B)
+- [LLM Compressor](https://github.com/vllm-project/llm-compressor)
+- [Organización RedHatAI en Hugging Face](https://huggingface.co/RedHatAI)
+- [Licencia Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)

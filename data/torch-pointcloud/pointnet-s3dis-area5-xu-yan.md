@@ -2,98 +2,104 @@
 
 ## Resumen
 
-PointNet es un modelo de segmentación semántica de nubes de puntos 3D, concretamente la implementación publicada por el proyecto torch-pointcloud bajo el identificador `pointnet.s3dis-area5.xu-yan`. No es un modelo de lenguaje: procesa conjuntos de puntos (coordenadas XYZ más color RGB) y asigna una etiqueta semántica a cada punto, con 13 clases de interior. Está entrenado sobre el dataset S3DIS, evaluado en el área 5, y es una conversión de la implementación de referencia de yanx27 (`Pointnet_Pointnet2_pytorch`) al formato de la librería torch-pointcloud.
+PointNet es una red neuronal para segmentación semántica de nubes de puntos 3D, publicada originalmente por Charles R. Qi, Hao Su, Kaichun Mo y Leonidas J. Guibas en CVPR 2017 (arXiv:1612.00593). Este checkpoint concreto, `pointnet.s3dis-area5.xu-yan`, es una conversión al formato de la librería `torch-pointcloud` de la implementación de referencia de Yan Xu (repositorio `yanx27/Pointnet_Pointnet2_pytorch`), entrenada sobre el dataset S3DIS con partición Area 5 como conjunto de test.
 
-El modelo es relevante como pieza de referencia y línea base reproducible: PointNet (Qi et al., CVPR 2017) es el trabajo fundacional que demostró que una red puede consumir nubes de puntos sin voxelización previa, usando transformaciones de entrada y de características junto con una agregación simétrica (max pooling) para lograr invariancia a permutaciones. Con solo 3,5 millones de parámetros y pesos en safetensors, es un candidato práctico para prototipado, docencia y comparaciones frente a arquitecturas posteriores (PointNet++, KPConv, Point Transformer).
+El modelo resuelve la asignación de una clase semántica a cada punto de una nube 3D, con 13 clases de mobiliario y estructura propios de interiores (suelo, pared, silla, mesa, etc.). No es un modelo de lenguaje: es un modelo de visión 3D puro, con 3,5 millones de parámetros, entrada de 6 canales (coordenadas XYZ más color RGB) y salida de logits por punto.
 
-La ficha describe un checkpoint de segmentación por punto, no un modelo generativo: no hay contexto de tokens, ni idiomas, ni tool calling. La licencia MIT y el tamaño reducido del repositorio facilitan su integración en pipelines de PyTorch existentes.
+Su relevancia actual es la de un baseline clásico y ligero para tareas de segmentación de interiores, útil como referencia de comparación frente a arquitecturas posteriores (PointNet++, RandLA-Net, KPConv, Point Transformer) y como pieza de bajo coste computacional en pipelines de digitalización de espacios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | PointNet (MLP compartida por punto con transformaciones de entrada y de características, agregación por max pooling) |
+| Arquitectura | PointNet (MLP compartida por punto con transformaciones de entrada y de características) |
 | Parametros totales | 3.541.718 (3,5 M) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (no es un modelo de lenguaje; entrada de nube de puntos, el ejemplo de la model card usa 8192 puntos) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, sin variantes GGUF/INT8 publicadas) |
-| Idiomas soportados | no disponible (no aplica; tarea de visión 3D) |
+| Longitud de contexto | no aplica (nube de puntos; el ejemplo de la model card usa 8192 puntos) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de visión 3D, sin capacidades lingüísticas) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Canales de entrada | 6 (XYZ + RGB) |
-| Clases de salida | 13 (segmentación semántica S3DIS) |
-| Dimensión de características | 1088 |
-| Dataset de entrenamiento/evaluación | S3DIS, área 5 como test |
-| Librería | torch-pointcloud |
+| Clases de salida | 13 |
+| Dimension de caracteristicas | 1088 |
+| Dataset de entrenamiento | S3DIS, partición Area 5 |
+| Libreria | torch-pointcloud |
 
 ## Arquitectura y entrenamiento
 
-PointNet aplica una MLP compartida de forma independiente a cada punto, precedida por una red T-Net que predice una transformación afín 3x3 sobre las coordenadas de entrada y otra de 64x64 sobre las características intermedias, con el objetivo de alcanzar invariancia a transformaciones rígidas. La agregación global se realiza mediante max pooling simétrico, lo que garantiza invariancia al orden de los puntos. La cabeza de segmentación concatena la característica global con las características por punto y produce logits por clase para cada punto. La entrada declarada tiene 6 canales (posición y color) y la salida cubre 13 clases de interior.
+PointNet procesa la nube de puntos como un conjunto desordenado aplicando una MLP compartida punto a punto, seguida de una operación de agregación simétrica (max-pooling global) que garantiza invariancia a permutaciones. El modelo incorpora dos módulos T-Net: una transformación de entrada (3x3) que alinea la nube de forma canónica y una transformación de características (64x64) que alinea el espacio latente antes de la agregación. Para segmentación, concatena la característica global con las características locales por punto y aplica capas fully-connected hasta los 13 logits por punto. La dimensión de características indicada en la model card es 1088, coherente con la concatenación de la representación local (64) y la global (1024).
 
-El checkpoint se ha entrenado sobre S3DIS (Stanford 3D Indoor Spaces), un dataset de habitaciones de interior escaneadas con 13 categorías semánticas, y se evalúa sobre el área 5, el protocolo estándar de generalización de habitación no vista del benchmark. La model card no detalla el número de épocas, la composición exacta de aumentos de datos ni si se aplicó algún esquema de regularización adicional; esos datos figuran como no disponibles. El modelo se distribuye como conversión de los pesos de yanx27/Pointnet_Pointnet2_pytorch a la interfaz de torch-pointcloud, que expone `create_model`, `forward_features` y `reset_classifier`.
+El entrenamiento se realizó sobre S3DIS (Stanford 3D Indoor Spaces), un dataset de escaneos RGB-D de seis áreas de edificios de oficinas y educativos con anotaciones semánticas a nivel de punto. La partición Area 5 se usa como test, una convención habitual en la literatura. No se dispone de información sobre número de tokens equivalentes, composición exacta del dataset, aumentos de datos aplicados ni si hubo etapas de refinamiento posteriores; la model card no los detalla. El checkpoint es una conversión directa de la implementación de Yan Xu, por lo que hereda su receta de entrenamiento original.
 
 ## Capacidades
 
-- Segmentación semántica por punto: asigna una de 13 clases a cada punto de una nube de puntos de interior.
-- Consumo directo de nubes de puntos sin voxelización: entrada como tensor de posiciones, colores y vector de batch.
-- Extracción de características: `forward_features` devuelve descriptores de 1088 dimensiones por punto, reutilizables para tareas aguas abajo.
-- Clasificación por punto con cabeza sustituible: `reset_classifier(num_classes=0)` permite usar el modelo como extractor puro.
-- Invariancia a permutaciones y, por diseño, robustez parcial a transformaciones rígidas mediante las T-Net.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión 2D, audio ni capacidades multilingües.
+- Segmentación semántica por punto en nubes 3D de interiores con 13 clases.
+- Entrada multimodal a nivel de punto: coordenadas XYZ más color RGB (6 canales).
+- Extracción de características globales y por punto (vector de 1088 dimensiones) mediante `forward_features`.
+- Posibilidad de reinicializar el clasificador (`reset_classifier(num_classes=0)`) para usar el modelo como extractor de características en tareas downstream.
+- Invariancia a permutaciones del conjunto de puntos por diseño arquitectónico.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: no es un modelo generativo de texto.
+- No tiene capacidades multilingües ni de visión 2D convencional.
+- No dispone de modo de razonamiento (thinking), audio ni vídeo.
 
 ## Casos de uso
 
-- Segmentación de escenas de interior para robótica móvil: el modelo etiqueta suelo, paredes, sillas o mesas en una nube de puntos capturada por LiDAR o RGB-D, proporcionando un mapa semántico por punto que un planificador puede consumir para navegación.
-- Línea base reproducible en investigación: con 3,5 M de parámetros y licencia MIT, sirve como referencia inferior para comparar PointNet++, KPConv o Point Transformer en el mismo protocolo S3DIS área 5.
-- Docencia y prototipado rápido: la API de torch-pointcloud (`create_model`, `collate`, `forward_features`) permite montar un pipeline completo de segmentación en pocas líneas.
-- Preetiquetado asistido de datos 3D: usar el modelo para generar etiquetas iniciales sobre nuevas nubes de puntos y revisarlas manualmente, reduciendo el coste de anotación en proyectos de interior.
-- Extracción de descriptores para búsqueda o clustering: los vectores de 1088 dimensiones por punto pueden alimentar un índice de similitud o un agrupamiento no supervisado de regiones.
-- Verificación de pipelines de conversión de pesos: útil como caso de prueba para validar la integración de safetensors y la interfaz de torch-pointcloud antes de migrar modelos mayores.
-- Detección de mobiliario en escaneos de edificios: clasificación por punto para inventariado de elementos en levantamientos 3D de interiores.
+- Segmentación de escaneos de interiores para modelado BIM: el modelo etiqueta cada punto de una nube capturada con LiDAR o fotogrametría, permitiendo separar suelo, paredes, techo y mobiliario antes de la reconstrucción semántica.
+- Digitalización de espacios para realidad aumentada: al clasificar por punto los elementos de una habitación, se pueden anclar objetos virtuales sobre superficies identificadas (suelo, mesas, paredes) con un coste computacional muy bajo gracias a sus 3,5 M de parámetros.
+- Preprocesado en robótica móvil indoor: un robot puede usar el modelo para distinguir obstáculos estructurales (paredes) de mobiliario y suelo, alimentando capas de navegación con etiquetas semánticas a nivel de punto.
+- Baseline de referencia en investigación: por su tamaño reducido y su licencia MIT, es un punto de comparación estándar al evaluar arquitecturas más recientes sobre S3DIS Area 5 con la métrica mIoU.
+- Extracción de características para clasificación de escenas: usando `forward_features` se obtiene un descriptor global de 1088 dimensiones que puede alimentar un clasificador ligero para categorizar habitaciones o edificios.
+- Etiquetado asistido y control de calidad de anotaciones: el modelo puede preanotar nubes nuevas y un revisor humano corrige los errores, acelerando la creación de datasets propios de interiores.
+- Prototipado en hardware modesto: al ser un modelo de 3,5 M de parámetros y pesos safetensors de tamaño reducido, se puede ejecutar en CPU o en GPUs de gama baja para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados, `verified: false`) sobre S3DIS, área 5:
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Metrica | Valor |
-|---|---|
-| mIoU | 43,88 |
-| OA (accuracy global) | 79,39 |
+| Metrica | Dataset | Valor |
+|---|---|---|
+| mIoU | S3DIS (Area 5) | 43,79 |
+| OA (accuracy global) | S3DIS (Area 5) | 79,06 |
 
-No se han publicado en la información disponible resultados adicionales (por clase, por categoría o frente a otros modelos) ni mediciones de latencia o throughput.
+No se han publicado en la información disponible resultados adicionales de benchmarks (por clase, latencia o throughput).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 3,5 M de parámetros los pesos ocupan del orden de 14 MB en FP32 y 7 MB en FP16. El consumo dominante es la nube de puntos de entrada y las activaciones intermedias, no los pesos.
-- GPU recomendadas: cualquier GPU con soporte CUDA es suficiente; una RTX 3060, RTX 4090, A100 o H100 funcionan sin problema. También es viable en CPU para nubes de puntos de tamaño moderado.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer con al menos 2-4 GB de VRAM disponible para el batch completo, dependiendo del número de puntos por muestra.
-- Opciones de despliegue: PyTorch nativo con la librería torch-pointcloud; no hay soporte declarado para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: inferior a 1 GB para lotes pequeños; el modelo tiene 3,5 M de parámetros y pesos en safetensors de tamaño reducido (el repositorio ocupa 0,0 GB según Hugging Face).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; no requiere A100 ni H100. Una RTX 4090 o una T4 están sobredimensionadas para este modelo.
+- Cabe en cualquier GPU de consumo actual e incluso en iGPU y en CPU para inferencia por lotes pequeños.
+- Opciones de despliegue: la librería nativa es `torch-pointcloud` (`pip install torch-pointcloud`), con carga vía `tp.create_model(..., pretrained=True)`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada. El coste dominante en producción será el preprocesado de la nube (muestreo a un número fijo de puntos, p. ej. 8192) más que el forward pass.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | mIoU S3DIS (área 5) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| pointnet.s3dis-area5.xu-yan | 3,5 M | nube de puntos, 6 canales | 43,88 (declarado, no verificado) | MIT | Hugging Face, torch-pointcloud |
-| PointNet++ (referencia yanx27) | no disponible en la información | nube de puntos | no disponible en la información | MIT (repo de origen) | GitHub |
-| KPConv | no disponible en la información | nube de puntos | no disponible en la información | no disponible en la información | no disponible en la información |
+| Modelo | Parametros | Entrada | Clases | mIoU S3DIS Area 5 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| PointNet (este checkpoint) | 3,5 M | XYZ + RGB (6 canales) | 13 | 43,79 | MIT | Hugging Face, torch-pointcloud |
+| PointNet++ | no disponible en la informacion | XYZ + RGB | 13 | no disponible en la informacion | MIT (implementacion yanx27) | Repositorio GitHub yanx27 |
+| RandLA-Net | no disponible en la informacion | XYZ + RGB | 13 | no disponible en la informacion | MIT (implementacion original) | Repositorio GitHub |
+| KPConv | no disponible en la informacion | XYZ + RGB | 13 | no disponible en la informacion | Licencia del proyecto original | Repositorio GitHub |
 
-No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada; la comparación cuantitativa queda limitada al resultado declarado del propio checkpoint.
+No se dispone de cifras de benchmarks de los modelos alternativos en la información proporcionada; la comparación cuantitativa de rendimiento queda por tanto limitada al dato de mIoU de este checkpoint.
 
 ## Limitaciones y advertencias
 
-- Los resultados de mIoU y OA están marcados como no verificados en la model card; deben tomarse como referencia del autor, no como cifra auditada.
-- PointNet es una arquitectura de 2017; su precisión por punto es inferior a la de métodos posteriores (PointNet++, KPConv, Point Transformer) en el mismo benchmark.
-- El modelo está entrenado exclusivamente en interiores S3DIS con 13 clases; no generaliza a exteriores, vehículos autónomos ni otras taxonomías sin reentrenamiento.
-- Espera un esquema de entrada concreto (posición, color, `norm_pos`) y un transformador específico de la librería; usarlo fuera de torch-pointcloud requiere replicar ese preprocesado.
-- No hay información sobre sesgos del dataset ni sobre el impacto de la iluminación o del sensor de captura en las predicciones.
-- La licencia MIT permite uso comercial, pero la atribución a los trabajos originales (PointNet y S3DIS) es recomendable en publicaciones y productos derivados.
-- No apto para tareas de lenguaje, razonamiento, código, visión 2D o agentes; cualquier uso en esos dominios queda fuera de su ámbito.
+- El modelo está entrenado exclusivamente en interiores de tipo oficina y educativo (S3DIS); su generalización a exteriores, industria o escenas urbanas no está garantizada.
+- Sensible a la densidad y al ruido de la nube: PointNet original no explota estructura local, lo que penaliza en escenas con objetos pequeños o densidades heterogéneas frente a arquitecturas jerárquicas.
+- Requiere un número fijo de puntos por muestra (el ejemplo usa 8192); el submuestreo o remuestreo puede alterar los resultados.
+- Depende del color RGB como canal de entrada; en nubes sin color (solo geometría) el rendimiento esperado cae y no se documenta un modo de solo geometría.
+- mIoU de 43,79 es un valor moderado para S3DIS Area 5 en el estado del arte actual; no es adecuado como solución de producción de alta precisión sin fine-tuning o sustitución por un modelo más moderno.
+- Riesgo de alucinación en el sentido de etiquetas incorrectas en puntos ambiguos (bordes, objetos ocluidos), sin mecanismo de calibración de confianza documentado.
+- Licencia MIT: permite uso comercial y modificación, pero se recomienda conservar la atribución a los autores originales de PointNet, al repositorio de Yan Xu y a la librería torch-pointcloud.
+- No hay información sobre sesgos de género, etnia u otros sesgos sociales, ya que el modelo no procesa datos personales ni texto.
+- La fecha de creación indicada en Hugging Face (2026-10-30) y la referencia de la librería en la cita sugieren un empaquetado reciente del checkpoint original de 2017; conviene verificar la versión de `torch-pointcloud` antes de desplegar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnet.s3dis-area5.xu-yan
-- Paper PointNet: https://arxiv.org/abs/1612.00593
-- Repositorio de origen de los pesos: https://github.com/yanx27/Pointnet_Pointnet2_pytorch
+- Paper original PointNet (arXiv:1612.00593): https://arxiv.org/abs/1612.00593
+- Repositorio de la implementación de referencia (Yan Xu): https://github.com/yanx27/Pointnet_Pointnet2_pytorch
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - DOI de la librería: https://doi.org/10.5281/zenodo.22159632
+- Dataset S3DIS (paper CVPR 2016): https://arxiv.org/abs/1604.03829

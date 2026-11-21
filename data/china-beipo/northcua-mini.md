@@ -2,66 +2,63 @@
 
 ## Resumen
 
-NorthCUA-Mini es un modelo de tipo *computer-use* (agente que opera interfaces gráficas) de 35.107 millones de parámetros totales y 3.000 millones de parámetros activos, construido sobre la arquitectura Qwen3.5 en configuración de mezcla de expertos (MoE). Lo desarrolla el colectivo china-beipo y forma parte de una familia de tres modelos —Nano (9B denso), Mini (35B MoE) y Pro (397B MoE)— publicada bajo licencia Apache 2.0. El modelo recibe peticiones del usuario, capturas de pantalla e historial de interacción, y genera razonamiento, respuestas y llamadas a herramientas para un entorno de escritorio o navegador.
+NorthCUA-Mini es un modelo multimodal de tipo image-text-to-text especializado en agentes de uso de ordenador (computer-use), desarrollado por china-beipo (beipo-ai) y publicado bajo licencia Apache-2.0. Se construye sobre la arquitectura Qwen3.5 en configuración de mezcla de expertos (MoE), con 35.107 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. Su función es recibir instrucciones del usuario, capturas de pantalla e historial de interacción, y generar razonamiento, respuestas y llamadas a herramientas para operar entornos de escritorio y navegador.
 
-El problema que aborda es la automatización de tareas sobre software real: el modelo no solo describe lo que ve en una pantalla, sino que produce acciones ejecutables (clics, escritura, navegación) en un espacio de coordenadas normalizado de 0 a 1000, que el arnés oficial convierte a píxeles en tiempo de ejecución. Su relevancia actual reside en que combina *grounding* visual, razonamiento multi-paso y verificación de resultados en un único modelo de pesos abiertos, un perfil que hasta hace poco estaba dominado por modelos propietarios.
+El modelo forma parte de una familia de tres tamaños: NorthCUA-Nano (9B denso), NorthCUA-Mini (35B MoE, 3B activos) y NorthCUA-Pro (397B MoE, 17B activos). Está diseñado para ejecutarse conjuntamente con el NorthCUA Harness, un runtime oficial que gestiona prompts, llamadas a herramientas, observaciones y ejecución de acciones. Una convención crítica del modelo es el contrato de coordenadas `normalized_1000`: todas las acciones GUI usan un espacio normalizado de 0 a 1000, no píxeles brutos, y el Harness se encarga de la conversión a píxeles en tiempo de ejecución.
 
-La información pública disponible es la model card del autor y el informe técnico citado en ella. No se detallan la longitud de contexto, los idiomas soportados ni la composición exacta del dataset de entrenamiento, por lo que esos campos se marcan como no disponibles.
+Su relevancia actual radica en que aborda el problema de los agentes que operan software real de forma sostenida, aprendiendo de trayectorias completas de trabajo con verificación de resultados. El modelo se distribuye en formato safetensors con un repositorio de 70,2 GB y acumula 855 descargas y 17 likes en Hugging Face desde su publicación el 1 de noviembre de 2026.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), basada en Qwen3.5 |
+| Arquitectura | Transformer MoE basada en Qwen3.5 (qwen3_5_moe) |
 | Parámetros totales | 35.107.181.936 (35B) |
-| Parámetros activos | 3B por token |
+| Parámetros activos | ~3B por token |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers) |
-| Pipeline | image-text-to-text (multimodal) |
-| Tamaño del repositorio | 70,2 GB |
-| Coordenadas de acción | espacio normalizado 0–1000 (`normalized_1000`) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-NorthCUA-Mini es un transformer de mezcla de expertos con 35B parámetros totales y 3B activos por token, lo que implica que la memoria necesaria para cargar los pesos completos es la de un modelo de 35B mientras que el coste computacional por token se aproxima al de un modelo de 3B. El autor indica que está construido sobre Qwen3.5, aunque no se especifican el número de expertos, el tamaño de cada uno ni la política de enrutamiento.
+NorthCUA-Mini emplea una arquitectura transformer de mezcla de expertos (MoE) derivada de Qwen3.5, con 35B parámetros totales y unos 3B activos por token, lo que reduce el coste computacional por paso de inferencia frente a un modelo denso del mismo tamaño. El modelo es multimodal: procesa texto e imágenes (capturas de pantalla) y genera texto estructurado con razonamiento y llamadas a herramientas. La model card indica que el entrenamiento combina aprendizaje supervisado (SFT) para el anclaje visual (grounding) y un posterior aprendizaje por refuerzo (RL) conjunto sobre entornos de escritorio y web para la finalización de tareas. El entrenamiento se apoya en "trayectorias completas de trabajo" que enseñan pasos dependientes, artefactos intermedios y verificación de resultados, según describe el autor.
 
-El entrenamiento se organiza en dos fases descritas en el informe técnico: un ajuste supervisado (SFT) que dota al modelo de *grounding* visual —localización de elementos en pantalla— y una fase posterior de aprendizaje por refuerzo conjunto sobre entornos de escritorio y web, orientada a la finalización de tareas. El autor denomina a este esquema "experience loop", compuesto por el arnés de ejecución, un ciclo de experiencia acumulada y un aprendizaje por etapas. No se publican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de DPO. Tampoco se documentan innovaciones de inferencia como decodificación especulativa o atención lineal.
+La innovación técnica destacada es el contrato estricto de coordenadas `normalized_1000` para todas las acciones GUI, junto con la integración obligatoria con el NorthCUA Harness, que separa el razonamiento del modelo de la ejecución de acciones en el entorno. No se dispone de información sobre el número exacto de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- *Grounding* visual sobre capturas de pantalla de aplicaciones de escritorio y flujos web.
-- Generación de acciones GUI en coordenadas normalizadas 0–1000, convertidas a píxeles por el arnés.
-- Razonamiento multi-paso con historial de interacción para tareas dependientes de estados anteriores.
-- Llamadas a herramientas (*tool calling*) integradas en el bucle del arnés oficial.
-- Verificación de resultados intermedios y finales dentro de trayectorias largas.
-- Procesamiento conjunto de texto e imagen (pipeline image-text-to-text).
-- Capacidades multilingües: no disponibles en la información publicada.
+- Generación de texto y razonamiento multimodal a partir de instrucciones, capturas de pantalla e historial de interacción.
+- Anclaje visual (visual grounding) para localizar elementos de interfaz en aplicaciones de escritorio y flujos web.
+- Generación de llamadas a herramientas (tool calling / function calling) para ejecutar acciones sobre el entorno.
+- Operación de agentes multi-paso con razonamiento encadenado sobre estados cambiantes de software.
+- Verificación de resultados e incorporación de artefactos intermedios en trayectorias largas.
+- Soporte de interacción sostenida multi-turno dentro de un runtime de computer-use.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- **Automatización de tareas de escritorio repetitivas**: el modelo recibe capturas del escritorio y el historial de acciones para completar flujos como renombrar ficheros, mover documentos o rellenar formularios en aplicaciones nativas, aprovechando su *grounding* de 87,94 % en OSWorld-G.
-- **Agentes de navegación web**: con 70,43 % de éxito en WebArena-Verified, puede ejecutar tareas de varios pasos en sitios reales (búsqueda, compra, consulta de datos) dentro del límite de 100 pasos del protocolo de evaluación.
-- **Pruebas de regresión de interfaces**: el modelo puede actuar como usuario sintético que recorre una aplicación y verifica que los elementos esperados están presentes y son accionables, útil en pipelines de QA.
-- **Extracción de datos de aplicaciones sin API**: cuando un sistema legado solo expone interfaz gráfica, el modelo puede leer la pantalla y transcribir la información mediante acciones controladas.
-- **Asistencia a operadores en soporte técnico**: dado un historial de interacción y capturas del problema del usuario, el modelo genera pasos de resolución y llamadas a herramientas del arnés para ejecutarlos.
-- **Automatización de back-office con verificación**: la fase de RL del modelo está orientada a comprobar el resultado de cada tarea, lo que encaja en procesos donde no basta con ejecutar la acción sino confirmar su efecto (por ejemplo, validar que un registro se guardó).
-- **Generación de trayectorias sintéticas para entrenamiento**: sus salidas de razonamiento y acción pueden registrarse como datos de entrenamiento para modelos más pequeños de la misma familia.
+- Automatización de tareas de escritorio: el modelo recibe capturas de pantalla y genera acciones en coordenadas normalizadas para operar aplicaciones nativas, adecuado por su anclaje visual entrenado sobre OSWorld-G y ScreenSpot-Pro.
+- Automatización de flujos web: puede navegar y completar tareas en navegador con verificación de resultado, respaldado por sus resultados en WebArena-Verified (70,43% de éxito tras RL).
+- Agentes de soporte técnico que reproducen pasos en un entorno real: el modelo interpreta la instrucción del usuario, observa el estado de la pantalla y ejecuta la secuencia de acciones necesaria.
+- Pruebas de regresión de interfaces (UI testing): el agente puede ejecutar guiones de prueba sobre aplicaciones y verificar el estado final, aprovechando su capacidad de razonamiento multi-paso.
+- Extracción de datos de aplicaciones legacy: el modelo opera la interfaz gráfica para localizar y transcribir información cuando no existe API disponible.
+- Orquestación de tareas administrativas repetitivas: rellenado de formularios, gestión de ficheros y flujos ofimáticos, con el Harness gestionando la ejecución de acciones y la conversión de coordenadas.
+- Investigación en agentes computer-use: su tamaño MoE de 3B activos lo hace viable para experimentación con pesos abiertos bajo Apache-2.0.
 
 ## Benchmarks y rendimiento
 
-Resultados del informe técnico del autor. El propio autor advierte que corresponden a checkpoints de investigación y no a una medición exacta de los ficheros de este repositorio.
+Resultados reportados en el informe técnico de NorthCUA (el autor advierte que no están vinculados a una exportación exacta de checkpoint y no son mediciones nuevas de los ficheros de este repositorio).
 
-| Benchmark | Métrica | Nano · 9B | Mini · 35B | Pro · 397B |
+| Benchmark | Etapa / métrica | Nano · 9B | Mini · 35B | Pro · 397B |
 |---|---|---|---|---|
 | ScreenSpot-Pro | SFT · precisión (%) | 72,87 | 92,41 | 93,30 |
 | OSWorld-G | SFT · precisión (%) | 82,98 | 87,94 | 90,96 |
 | OSWorld-Verified | RL · éxito (%) | 78,90 | 85,30 | 88,64 |
 | WebArena-Verified | RL · éxito (%) | 67,16 | 70,43 | 73,89 |
 
-Comparación SFT frente a RL del mismo modelo:
+Comparativa SFT frente a RL del propio modelo:
 
 | Modelo | OSWorld SFT | OSWorld RL | WebArena SFT | WebArena RL |
 |---|---|---|---|---|
@@ -69,44 +66,44 @@ Comparación SFT frente a RL del mismo modelo:
 | Mini | 83,29 | 85,30 | 67,98 | 70,43 |
 | Pro | 85,87 | 88,64 | 69,58 | 73,89 |
 
-Condiciones de evaluación declaradas: ScreenSpot-Pro con 1.581 ejemplos y una predicción por captura sin búsqueda iterativa de zoom; OSWorld-G con 564 instrucciones refinadas y mejor de tres ejecuciones completas (temperatura 0,7, top-p 0,95, top-k 40, 1.024 tokens de salida); OSWorld-Verified con 361 tareas y WebArena-Verified con 812 tareas, ambas con límite de 100 pasos. El informe también cita un 66,80 % de crédito parcial medio para Pro en OSWorld 2.0 (108 tareas, límite de 500 pasos), sin resultados de Mini en esa tabla.
+Condiciones de evaluación: ScreenSpot-Pro con 1.581 ejemplos y una predicción por captura; OSWorld-G con 564 instrucciones y mejor de tres ejecuciones completas (temperatura 0,7, top-p 0,95, top-k 40, 1.024 tokens de salida, coordenadas normalizadas 0–1000); OSWorld-Verified con 361 tareas y WebArena-Verified con 812 tareas, ambas con límite de 100 pasos.
 
 ## Requisitos de hardware
 
-- **VRAM para pesos completos**: 70,2 GB en safetensors, lo que exige al menos 80 GB de VRAM en precisión original; una GPU A100 de 80 GB o H100 de 80 GB es el mínimo práctico para cargar el modelo sin cuantizar.
-- **Cuantización**: no se publican recetas oficiales de cuantización. Al ser un MoE de 35B con 3B activos, una cuantización a 4 bits reduciría el peso a unos 18–20 GB, lo que permitiría ejecución en GPUs de consumo de 24 GB (RTX 4090, RTX 3090) siempre que el runtime soporte el enrutamiento de expertos.
-- **GPU recomendadas**: H100 o A100 80 GB para despliegue en producción; RTX 4090 para pruebas con cuantización.
-- **Opciones de despliegue**: transformers como librería de referencia; vLLM y TGI son candidatos naturales para servir el modelo, aunque no se confirman en la documentación. llama.cpp y Ollama no están verificados para esta arquitectura en la información disponible.
-- **Latencia y throughput**: no disponibles.
-- **Dependencia obligatoria**: el uso previsto requiere el NorthCUA Harness oficial, que gestiona prompts, llamadas a herramientas y ejecución de acciones.
+- VRAM estimada para inferencia: el repositorio pesa 70,2 GB en safetensors; en precisión de 16 bits requiere aproximadamente 70 GB de VRAM solo para pesos. En cuantización de 8 bits se estiman unos 35 GB; en 4 bits, unos 18-20 GB (estimación, no confirmada por el autor).
+- GPU recomendadas: para FP16, A100 80 GB o H100 80 GB; para cuantización 8 bits, A100 40 GB o H100; para cuantización 4 bits, RTX 4090 24 GB podría ser viable, aunque no está confirmado.
+- ¿Cabe en consumer GPU? Posiblemente en RTX 4090 (24 GB) con cuantización de 4 bits, sin confirmación oficial.
+- Opciones de despliegue: transformers (librería indicada), junto con el NorthCUA Harness para la ejecución de acciones. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | OSWorld-Verified | Licencia |
-|---|---|---|---|---|
-| NorthCUA-Mini | 35B / 3B | no disponible | 85,30 % | Apache 2.0 |
-| NorthCUA-Nano | 9B / 9B (denso) | no disponible | 78,90 % | Apache 2.0 |
-| NorthCUA-Pro | 397B / 17B | no disponible | 88,64 % | Apache 2.0 |
+| Modelo | Parámetros totales | Activos | Arquitectura | Contexto | Licencia | Benchmarks clave |
+|---|---|---|---|---|---|---|
+| NorthCUA-Mini | 35B | ~3B | MoE (Qwen3.5) | no disponible | Apache-2.0 | OSWorld 85,30 / WebArena 70,43 |
+| NorthCUA-Nano | 9B | 9B | Denso | no disponible | Apache-2.0 | OSWorld 78,90 / WebArena 67,16 |
+| NorthCUA-Pro | 397B | 17B | MoE | no disponible | Apache-2.0 | OSWorld 88,64 / WebArena 73,89 |
 
-La comparación con modelos de otros desarrolladores (por ejemplo, agentes de *computer use* propietarios o de pesos abiertos de tamaño similar) no está disponible en la información proporcionada. Dentro de la propia familia, Mini ofrece un equilibrio entre el coste de Nano y la precisión de Pro: gana 6,4 puntos de éxito en OSWorld-Verified respecto a Nano y cede 3,3 puntos frente a Pro, con un coste de memoria muy inferior al de este último.
+No se dispone de datos de modelos externos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Dependencia del arnés**: el modelo está diseñado para funcionar con el NorthCUA Harness; usarlo con otro runtime puede romper el contrato de coordenadas y las llamadas a herramientas.
-- **Contrato de coordenadas estricto**: todas las acciones deben expresarse en el espacio normalizado 0–1000; mezclar píxeles y coordenadas normalizadas produce fallos silenciosos.
-- **Resultados no verificados en este repositorio**: el autor advierte que las cifras de benchmarks provienen de checkpoints de investigación y no de los ficheros publicados.
-- **Riesgo de alucinación**: no se documentan tasas de alucinación ni evaluaciones de fiabilidad fuera de los benchmarks de tareas.
-- **Sesgos**: no se publica ninguna evaluación de sesgos ni de comportamiento en dominios sensibles.
-- **Idiomas**: no se especifican los idiomas soportados, lo que impide garantizar calidad fuera del inglés sin pruebas propias.
-- **Contexto**: la longitud de contexto no está documentada, lo que complica el dimensionamiento de memoria en producción.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar el fichero LICENSE del repositorio.
-- **Madurez**: el repositorio registra 0 descargas y 2 *likes* en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- Requiere el NorthCUA Harness oficial para funcionar correctamente; no está pensado para uso aislado sin ese runtime.
+- Contrato de coordenadas estricto (`normalized_1000`): usar píxeles brutos rompe la interacción modelo-Harness.
+- Los resultados de benchmarks provienen del informe técnico y no están vinculados a un checkpoint exacto exportado; el autor advierte que no son mediciones nuevas de los ficheros publicados.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: inherente a los modelos generativos; no cuantificado por el autor.
+- Limitaciones de contexto e idioma: no disponibles.
+- Licencia Apache-2.0 permite uso comercial, pero el autor no documenta restricciones adicionales ni garantías.
+- Los resultados de WebTestBench están marcados como pendientes en el informe.
+- El modelo está orientado a computer-use; su rendimiento en tareas de texto general no está documentado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/china-beipo/NorthCUA-Mini
+- Hugging Face: https://huggingface.co/china-beipo/NorthCUA-Mini
 - Página del proyecto: https://beipo.top/blog/northcua/
-- Arnés oficial (GitHub): https://github.com/china-qijizhifeng/NorthCUA-Harness
-- Familia de modelos: https://huggingface.co/beipo-ai/NorthCUA-Pro
-- Modelo Nano: https://huggingface.co/beipo-ai/NorthCUA-Nano
+- Repositorio Harness (GitHub): https://github.com/china-qijizhifeng/NorthCUA-Harness
+- NorthCUA-Nano: https://huggingface.co/beipo-ai/NorthCUA-Nano
+- NorthCUA-Pro: https://huggingface.co/beipo-ai/NorthCUA-Pro
 - Licencia: https://huggingface.co/beipo-ai/NorthCUA-Mini/blob/main/LICENSE
+- arXiv (referencia en tags): arxiv:2611.02102

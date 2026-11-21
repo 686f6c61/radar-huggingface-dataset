@@ -2,103 +2,103 @@
 
 ## Resumen
 
-VIGOR-27B (Vision Intelligence and Guardrail Oriented Reasoning) es un modelo multimodal de 27.320.697.856 parámetros (denso, no MoE) desarrollado por prithivMLmods y publicado en Hugging Face bajo licencia Apache 2.0. Está construido sobre Qwen/Qwen3.8-27B y su propósito es la clasificación de seguridad de contenido visual: analiza imágenes para determinar si son seguras (Safe) o no seguras (NSFW), con un umbral conservador orientado a control parental y protección de menores. La versión aquí descrita, VIGOR-27B-GGUF, es la cuantización en formato GGUF del modelo original, publicada el 1 de noviembre de 2026.
+VIGOR-27B (Vision Intelligence and Guardrail Oriented Reasoning) es un modelo multimodal denso de 27.320.697.856 parámetros, desarrollado por prithivMLmods, especializado en clasificación de seguridad de contenido visual. Está construido sobre Qwen/Qwen3.8-27B y se distribuye en formato GGUF para inferencia local con llama.cpp. Su función principal es el análisis estructurado de imágenes para determinar si su contenido es seguro o NSFW, con un umbral conservador orientado a control parental y protección de menores.
 
-El modelo resuelve un problema concreto de moderación multimodal: la necesidad de un clasificador que no solo etiquete, sino que razone y describa por qué una imagen es sensible, analizando ropa, exposición corporal, poses, encuadre y contexto. Es relevante ahora porque integra decodificación especulativa mediante Multi-Token Prediction (MTP) directamente en los pesos del GGUF, lo que acelera la inferencia local sin requerir un modelo draft separado, y porque ofrece un pipeline de clasificación estructurada en JSON listo para integrarse en guardarraíles de producción.
+El modelo realiza un análisis detallado de vestimenta, códigos de indumentaria, exposición corporal, poses, encuadre y contexto de la escena, y devuelve la clasificación en JSON estricto con campos como `scene_description`, `is_nsfw`, `classification_reason`, `nsfw` y `safe`. Incorpora decodificación especulativa mediante Multi-Token Prediction (MTP) integrada en los pesos del propio GGUF, lo que evita la necesidad de un modelo borrador separado.
 
-La ficha se centra en la variante GGUF, que incluye un fichero de proyección multimodal (mmproj) y cuantizaciones desde BF16 hasta Q3_K_L. El modelo está pensado para investigación y clasificación de seguridad de contenido, no como generador de propósito general.
+Es relevante ahora porque ofrece una alternativa open source (Apache 2.0) y desplegable localmente para pipelines de moderación visual, en un momento en el que los filtros de contenido multimodales suelen depender de APIs propietarias. La model card lo etiqueta explícitamente como experimental y lo restringe a investigación y clasificación de seguridad de contenido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal denso basado en Qwen/Qwen3.8-27B (visión + lenguaje) |
+| Arquitectura | Qwen3.5 (familia Qwen3.8-27B), transformer multimodal con proyección visual (mmproj) y cabezas MTP para decodificación especulativa |
 | Parametros totales | 27.320.697.856 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 16.384 tokens en la prueba de referencia publicada (no se especifica el máximo oficial) |
-| Tipos de cuantizacion | BF16, Q3_K_L, Q4_K_M, Q5_K_M, Q6_K; proyección multimodal mmproj-bf16 |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con fichero mmproj separado para visión) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 16.384 tokens en la prueba documentada (no se especifica el máximo arquitectónico) |
+| Tipos de cuantizacion | BF16, Q3_K_L, Q4_K_M, Q5_K_M, Q6_K, mmproj-bf16 |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (transformers, llama-cpp) |
 
 ## Arquitectura y entrenamiento
 
-VIGOR-27B es un transformer denso de 27.320 millones de parámetros que combina un codificador visual con un modelo de lenguaje Qwen/Qwen3.8-27B. La variante GGUF incorpora Multi-Token Prediction (MTP): cabezas de salida adicionales dentro de la arquitectura principal que predicen varios tokens futuros en una sola pasada, actuando como decodificación especulativa integrada sin necesidad de un modelo draft externo. El pipeline es image-text-to-text: recibe imagen y prompt, y devuelve texto estructurado.
+VIGOR-27B es un modelo transformer denso multimodal basado en Qwen/Qwen3.8-27B, con un proyector visual (mmproj) en BF16 de 931 MB que conecta la torre de visión con el modelo de lenguaje. La variante GGUF incluye cabezas de Multi-Token Prediction (MTP) que permiten decodificación especulativa sin modelo borrador externo: la arquitectura predice varios tokens futuros en un solo forward pass. En la prueba documentada se usó `draft_n_max=2`.
 
-No se dispone de información publicada sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. La model card indica que el modelo está orientado a clasificación de seguridad visual y que se debe usar con un prompt estándar que fuerza salida JSON con claves fijas (`scene_description`, `is_nsfw`, `classification_reason`, `nsfw`, `safe`). Los tags mencionan soporte de plantillas con "thinking off" (por defecto) y "thinking on" (razonamiento).
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card únicamente indica que el modelo se orienta a clasificación Safe/NSFW conservadora y que se distribuye como experimental, recomendando el uso del modelo base en Transformers frente al GGUF.
 
 ## Capacidades
 
-- Análisis visual detallado de imágenes: descripción objetiva de sujeto, ropa, exposición corporal, pose y contexto.
-- Clasificación binaria Safe / NSFW con umbral conservador (ante la duda, NSFW).
-- Salida estructurada en JSON con esquema fijo, adecuada para pipelines automatizados.
-- Razonamiento sobre el motivo de la clasificación (`classification_reason`).
-- Detección de contenido sensible: desnudos, ropa reveladora, lencería, trajes de baño sugerentes, ropa transparente, arte anime ecchi/hentai, poses sexualizadas y actos sexuales explícitos.
-- Decodificación especulativa MTP integrada para acelerar inferencia local.
-- Modo de razonamiento opcional mediante plantilla (thinking on/off).
-- Capacidades multimodales imagen-texto a texto (pipeline image-text-to-text).
-- Soporte de inferencia vía llama.cpp y text-generation-inference según los tags del repositorio.
+- Generación de texto y análisis visual de imágenes (pipeline `image-text-to-text`).
+- Clasificación de seguridad de contenido: Safe / NSFW con umbral conservador ("ante la duda, NSFW").
+- Análisis detallado de vestimenta, exposición corporal, poses, encuadre y contexto de escena.
+- Salida estructurada en JSON estricto con claves predefinidas (`scene_description`, `is_nsfw`, `classification_reason`, `nsfw`, `safe`).
+- Detección de contenido NSFW en imágenes fotorrealistas, anime, ecchi, hentai e ilustraciones 2D/3D.
+- Decodificación especulativa MTP integrada en los pesos.
+- Modo thinking configurable mediante plantilla (thinking off por defecto, thinking on para razonamiento).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-step: no disponible en la información proporcionada.
+- Capacidades multilingües: solo inglés.
 
 ## Casos de uso
 
-- Moderación de contenido en plataformas de imágenes y vídeo: el modelo recibe cada imagen y devuelve un JSON con `is_nsfw`, `nsfw` y `safe`, permitiendo filtrado automático previo a revisión humana. Su umbral conservador encaja en flujos donde un falso negativo es más costoso que un falso positivo.
-- Control parental y protección de menores: el prompt estándar está diseñado explícitamente para este escenario, clasificando como NSFW cualquier desnudo, desnudo parcial, lencería o pose sugerente, lo que permite bloquear contenido en entornos infantiles.
-- Guardarraíl previo a generación de imágenes o vídeo: integrado como clasificador de entrada en pipelines de difusión, evita que prompts o imágenes de referencia sensibles entren en el sistema.
-- Auditoría y revisión de datasets de visión: el modelo puede procesar lotes de imágenes y generar descripciones objetivas junto con la etiqueta de seguridad, facilitando la limpieza de corpus antes del entrenamiento.
-- Cumplimiento normativo y trust & safety: la salida JSON con razón de clasificación sirve como registro auditable de por qué una imagen fue marcada, útil para informes de moderación y revisiones de cumplimiento.
-- Moderación de comunidades de fan art y manga: detecta arte anime ecchi, hentai y poses sexualizadas 2D/3D, un caso que los clasificadores genéricos suelen fallar.
-- Filtrado en foros y redes sociales con despliegue local: gracias a las cuantizaciones GGUF (desde 14,6 GB en Q3_K_L) y al MTP, puede ejecutarse en hardware propio sin depender de APIs externas, reduciendo costes y manteniendo la privacidad de las imágenes.
+- Moderación de contenido en plataformas UGC: el modelo analiza cada imagen subida y devuelve un JSON con `is_nsfw` y `classification_reason`, apto para integrarse en un pipeline de aprobación automática o de escalado a revisión humana.
+- Control parental en dispositivos domésticos: desplegado en local con llama.cpp, filtra imágenes antes de mostrarlas a menores sin enviar datos a servicios en la nube, gracias a su licencia Apache 2.0 y a la disponibilidad de cuantizaciones desde 14,6 GB.
+- Filtrado previo en datasets de entrenamiento: clasificación masiva de corpus de imágenes para eliminar contenido no apto antes de usarlos en el entrenamiento de otros modelos.
+- Moderación de comunidades de arte y fan art: el modelo cubre explícitamente anime, ecchi, hentai e ilustraciones 2D/3D, lo que lo hace adecuado para foros y galerías de arte digital.
+- Auditoría de catálogos de e-commerce: detección de imágenes de producto con exposición inadecuada o ropa interior/lencería que incumpla las políticas del marketplace.
+- Guardrail en generación de imágenes: integración como clasificador posterior a un modelo text-to-image para bloquear o marcar salidas antes de su publicación.
+- Cumplimiento normativo en redes sociales: generación de registros estructurados (JSON) con justificación de cada decisión de moderación, útiles para auditoría y trazabilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo incluye una prueba de rendimiento de inferencia con el fichero BF16:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card únicamente documenta métricas de inferencia en una prueba con `VIGOR-27B.BF16.gguf` y `VIGOR-27B.mmproj-bf16.gguf` sobre NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB VRAM), con `llama-cli`, `-ngl 99`, contexto de 16.384 tokens, KV cache `q8_0`, semilla 42 y MTP con `draft_n_max=2`:
 
 | Métrica | Valor |
 |---|---|
 | Velocidad media de procesamiento de prompt | 1.009,28 tokens/s |
 | Velocidad media de generación | 48,97 tokens/s |
-| Tiempo total de pared | 52,4 s |
-| Longitud de contexto | 16.384 tokens |
-| Caché KV (K) | q8_0 |
-| GPU | NVIDIA RTX PRO 6000 Blackwell Server Edition |
-| VRAM de GPU | 96 GB |
-| Pico de VRAM usada | 52,17 GiB |
-| Uso pico de GPU | 98% |
-| Capas offloaded | 99 (`-ngl 99`) |
-| Semilla | 42 |
-| Decodificación especulativa | MTP (`draft_n_max=2`) |
-| Repeticiones | 3 |
+| Tiempo total de ejecución | 52,4 segundos |
+| VRAM pico | 52,17 GiB |
+| Utilización de GPU pico | 98% |
+| Capas offloaded | 99 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización (tamaño de fichero): BF16 54,7 GB; Q6_K 22,4 GB; Q5_K_M 19,5 GB; Q4_K_M 16,8 GB; Q3_K_L 14,6 GB. Añadir aproximadamente 931 MB para el fichero mmproj-bf16.
-- En la prueba publicada con BF16 y contexto de 16.384 tokens, el pico de VRAM fue de 52,17 GiB, por lo que se necesita una GPU de al menos 64 GB para BF16 con ese contexto.
-- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB) validada por el autor; para BF16 también encajan A100 80 GB, H100 80 GB y H200. Para Q4_K_M y Q5_K_M, una RTX 4090 (24 GB) o RTX 5090 (32 GB) pueden alojar el modelo con offloading parcial o total según contexto.
-- Cabe en GPU de consumo: sí, en cuantizaciones Q3_K_L, Q4_K_M y Q5_K_M con GPUs de 24 GB o más, dependiendo de la longitud de contexto y del número de capas offloaded.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server) con `-ngl 99` y MTP (`draft_n_max=2`), text-generation-inference y transformers según los tags. El autor recomienda el setup basado en Transformers y considera el GGUF experimental.
-- Latencia y throughput: 48,97 tokens/s de generación y 1.009,28 tokens/s de procesamiento de prompt en la configuración de referencia (RTX PRO 6000 Blackwell, BF16, contexto 16.384, KV q8_0, MTP activo).
+- VRAM estimada para inferencia (según cuantización): BF16 ≈ 54,7 GB de pesos más KV cache y proyector visual; Q6_K ≈ 22,4 GB; Q5_K_M ≈ 19,5 GB; Q4_K_M ≈ 16,8 GB; Q3_K_L ≈ 14,6 GB. Añadir el mmproj-bf16 (931 MB) y la KV cache del contexto configurado.
+- En la prueba documentada con BF16 y contexto de 16.384 tokens se observó un pico de 52,17 GiB en una GPU de 96 GB.
+- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (validada), A100 80 GB, H100 80 GB para BF16; GPUs de 24 GB como RTX 4090 pueden alojar cuantizaciones Q4_K_M o Q5_K_M con contexto reducido.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q3_K_L, Q4_K_M o Q5_K_M en GPUs de 16-24 GB, asumiendo recortes de contexto y posible offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp / `llama-cli` (validado), Ollama y otros frontends compatibles con GGUF; el modelo base está pensado para Transformers y text-generation-inference.
+- Latencia y throughput: 48,97 tokens/s de generación y 1.009,28 tokens/s de procesamiento de prompt en la configuración BF16 probada; no hay datos para cuantizaciones menores.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de comparativas publicadas en la información proporcionada para establecer una comparación cuantitativa con alternativas de la misma categoría (clasificadores multimodales de seguridad). Se indica "no disponible". Cualitativamente, la propuesta se distingue por ser un modelo denso de 27B con salida JSON estructurada y MTP integrado en GGUF, frente a clasificadores más pequeños de tipo CLIP o modelos de moderación propietarios, pero no hay cifras que permitan contrastar rendimiento.
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| VIGOR-27B-GGUF | 27,3 B (denso) | 16.384 (probado) | Imagen + texto | Apache 2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27 B aprox. | no disponible | Imagen + texto | no disponible | Hugging Face |
+| Alternativas de moderación visual de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre benchmarks comparativos con otros clasificadores de seguridad visual, por lo que no es posible establecer una comparación de rendimiento cuantitativa.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés; el prompt estándar y la salida están en ese idioma.
-- Riesgo de alucinación en la descripción de escenas y en la justificación de la clasificación; la salida JSON debe validarse antes de actuar sobre ella.
-- Umbral conservador deliberado: clasifica como NSFW ante la duda, lo que puede generar falsos positivos en imágenes legítimas (playa, arte, ropa de baño no sexualizada).
-- Sesgos no documentados: no se han publicado análisis de sesgos por género, etnia, edad percibida o cultura; un clasificador de este tipo puede sobrerreaccionar ante determinados cuerpos o vestimentas.
-- La variante GGUF es experimental según el propio autor, que recomienda el setup basado en Transformers para uso serio.
-- Licencia Apache 2.0 permite uso comercial, pero el autor declara que el modelo es solo para investigación y clasificación de seguridad, y descarga toda responsabilidad sobre las salidas generadas.
-- No se especifica la longitud máxima de contexto oficial; la prueba se hizo con 16.384 tokens.
-- No se han publicado datos de entrenamiento, composición del dataset ni proceso de alineación, lo que dificulta evaluar su robustez fuera del dominio de moderación.
-- El rendimiento medido corresponde a una GPU de gama muy alta (RTX PRO 6000 Blackwell, 96 GB); en GPUs de consumo el throughput será menor.
+- Modelo etiquetado como experimental por el autor; se recomienda usar la versión en Transformers frente al GGUF.
+- Solo soporta inglés; no hay capacidades multilingües documentadas.
+- Umbral deliberadamente conservador ("ante la duda, NSFW"), lo que puede generar falsos positivos en imágenes legítimas con ropa ajustada, trajes de baño o arte.
+- Riesgo de alucinación en las descripciones de escena (`scene_description`) y en las justificaciones de clasificación.
+- Sesgos conocidos: no documentados en la información disponible; al estar entrenado sobre Qwen3.8-27B hereda los sesgos del modelo base, no cuantificados aquí.
+- La licencia Apache 2.0 permite uso comercial, pero la model card restringe la finalidad a investigación y clasificación de seguridad de contenido y declina toda responsabilidad sobre las salidas.
+- El rendimiento medido corresponde a una única configuración de hardware de gama alta (96 GB VRAM); no hay datos de latencia para GPUs de consumo.
+- El contexto máximo arquitectónico no está documentado; la prueba se realizó con 16.384 tokens.
+- No se documenta soporte de tool calling ni de agentes multi-step.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-27B
-- Fichero BF16: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.BF16.gguf
-- Fichero Q4_K_M: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.Q4_K_M.gguf
-- Fichero mmproj: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.mmproj-bf16.gguf
-- Modelo Qwen base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo Qwen de referencia: https://huggingface.co/Qwen/Qwen3.8-27B
+- Pesos BF16: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.BF16.gguf
+- Cuantización Q4_K_M: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.Q4_K_M.gguf
+- Proyector visual: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.mmproj-bf16.gguf

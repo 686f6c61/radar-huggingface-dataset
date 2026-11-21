@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Desert-Ant-Labs/gist - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs/gist",
-      "snippet": "Model & size gist is ~74 MB, so by default it downloads once from Hugging Face (desert-ant-labs/gist) and is cached; offline bundling is opt-in (Swift BundledModel trait, ai.desertant:gist-tflite-resources on Android)."
-    },
-    {
-      "title": "Gist: Content topic tagging on device | Desert Ant Labs",
-      "url": "https://desertant.com/models/gist/",
-      "snippet": "Add Gist from Desert Ant Labs to this project. On-device topic tagging that reads a title or a post and tells you its topics, in 101 languages, with no server call."
-    },
-    {
-      "title": "desert-ant-labs/gist · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/gist",
-      "snippet": "Instructions to use desert-ant-labs/gist with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LiteRT How to use desert-ant-labs/gist with LiteRT:"
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "gist/README.md at main · Desert-Ant-Labs/gist · GitHub",
-      "url": "https://github.com/Desert-Ant-Labs/gist/blob/main/README.md",
-      "snippet": "Model & size gist is ~74 MB, so by default it downloads once from Hugging Face (desert-ant-labs/gist) and is cached; offline bundling is opt-in (Swift BundledModel trait, ai.desertant:gist-tflite-resources on Android)."
-    }
-  ]
+  "sources": []
 }

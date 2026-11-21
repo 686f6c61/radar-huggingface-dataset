@@ -5,7 +5,7 @@
   "author": "FINAL-Bench",
   "url": "https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF",
   "created_at": "2026-07-24T21:55:56.000Z",
-  "updated_at": "2026-11-15T09:56:05.000Z",
+  "updated_at": "2026-11-20T08:30:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,7 +42,7 @@
     "imatrix"
   ],
   "likes": 62,
-  "downloads_30d": 152814,
+  "downloads_30d": 143749,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

@@ -51,11 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - adventists-ai/sophon-realtime: Sophon-Realtime v1: open full ...",
-      "url": "https://github.com/adventists-ai/sophon-realtime",
-      "snippet": "Sophon-Realtime v1 is an open full-duplex voice model: it listens while you talk, hears how you say things, and answers with a voice that carries tone of its own. 🚀 Coming soon. Weights, code and docs go live on November 9, 2026 at 10:00 Beijing time (13:00 Melbourne · Nov 8, 18:00 San Francisco). ⭐ Star this repo, or Watch → Custom → Releases, to be notified the moment it's out."
-    }
-  ]
+  "sources": []
 }

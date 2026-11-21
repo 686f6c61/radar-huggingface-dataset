@@ -2,88 +2,98 @@
 
 ## Resumen
 
-Frost-Cyber-Mini-Uncensored-v1.1-GGUF es la distribucion en formato GGUF del modelo Frost-Cyber-Mini-Uncensored-v1.1, publicado por el usuario mradermacher como cuantizacion estatica del original alojado en FrostWolfAI. Se trata de un modelo compacto orientado a ciberseguridad ofensiva y a ingenieria de software, descrito por su autor como un asistente local rapido con una fase de uso de herramientas agentico, pensado para tareas de red team, OSINT, inteligencia de amenazas (CTI), codigo seguro y flujos de trabajo con agentes. La version 1.1 pertenece a la familia Frost-Cyber-Mini, cuyo predecesor 1.0 se define explicitamente como un modelo "abliterated" (sin censura) que reduce sustancialmente el filtrado de seguridad.
+Frost-Cyber-Mini-Uncensored-v1.1-GGUF es la versión cuantizada en formato GGUF del modelo Frost-Cyber-Mini-Uncensored-v1.1, desarrollado originalmente por FrostWolfAI y cuantizado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 4.112 millones de parámetros (4,1 B) especializado en ciberseguridad, con un ajuste orientado a eliminar restricciones de rechazo (abliterated/uncensored) y con capacidades declaradas de uso de herramientas (tool-use) y razonamiento agéntico. La licencia es Apache 2.0.
 
-El repositorio es unicamente un conjunto de cuantizaciones: no contiene pesos originales ni informacion adicional sobre arquitectura, datos de entrenamiento o evaluacion. La model card se limita a listar los tipos de cuantizacion generados y a enlazar al modelo base. Por tanto, la mayor parte de las especificaciones tecnicas (parametros, contexto, licencia, idiomas) no estan disponibles en la informacion proporcionada y deben consultarse en el repositorio del modelo original.
+El modelo parte de una base etiquetada como "spark2_5" y ha sido sometido a un proceso de fusión de LoRA (lora-merged), lo que sugiere un ajuste fino sobre una arquitectura transformer preentrenada. Su propósito declarado es servir como asistente conversacional y agéntico en tareas de seguridad ofensiva y defensiva, así como en escenarios donde se requiere un modelo que no aplique filtros de contenido restrictivos.
 
-La relevancia de esta ficha radica en su caracter practico: permite ejecutar localmente un modelo especializado en seguridad ofensiva en hardware de consumo mediante llama.cpp u Ollama, algo que los formatos originales (safetensors) no facilitan. Ahora bien, su naturaleza sin censura y la ausencia de datos verificables sobre licencia y rendimiento exigen cautela antes de cualquier uso en produccion.
+Esta ficha se centra en la versión GGUF, que permite su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy escasa; los apartados correspondientes lo indican explícitamente cuando no hay datos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con quantize_version 2, convert_type hf) |
+| Arquitectura | Transformer (detalles no disponibles; etiquetado como "spark2_5") |
+| Parámetros totales | 4.112.079.360 (4,1 B) |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. El repositorio de mradermacher solo indica que se trata de cuantizaciones estaticas del modelo FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1, generadas a partir de pesos en formato Hugging Face (convert_type: hf) y con la version 2 del pipeline de cuantizacion. No hay datos sobre numero de parametros, tipo de transformer, composicion del dataset, numero de tokens de entrenamiento ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta "spark2_5" y la indicación de que se trata de un transformer. El modelo base Frost-Cyber-Mini-Uncensored-v1.1 ha sido sometido a una fusión de LoRA (lora-merged), lo que indica un ajuste fino mediante adaptadores de bajo rango posteriormente integrados en los pesos. La etiqueta "abliterated" sugiere que se ha aplicado una técnica de ablación de direcciones de rechazo en el espacio de activaciones para reducir la tendencia del modelo a negarse a responder.
 
-El autor del modelo original lo describe como un asistente compacto y rapido con una fase de uso de herramientas agentico. La version 1.0 de la familia se presenta como un modelo "abliterated", lo que implica que se han eliminado o reducido las capas de rechazo del modelo base mediante tecnicas de abliteration. No se especifica cual es el modelo fundacional sobre el que se aplico este proceso.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal. El repositorio cuantizado por mradermacher incluye tanto cuantizaciones estáticas como cuantizaciones ponderadas/imatrix en un repositorio separado (i1-GGUF), lo que permite elegir entre tamaño y calidad según el caso de uso.
 
 ## Capacidades
 
-- Generacion de texto orientada a ciberseguridad ofensiva: el autor indica que el modelo puede producir codigo de explotacion, payloads y tacticas de atacante bajo peticion.
-- Red team y pruebas de penetracion: asistencia en la generacion de tecnicas de ataque y tradecraft.
-- OSINT e inteligencia de amenazas (CTI): procesamiento y sintesis de informacion de fuentes abiertas.
-- Codigo seguro y desarrollo de software: asistencia en ingenieria de software con enfasis en seguridad.
-- Uso de herramientas agentico: el autor menciona una fase de tool-use, lo que sugiere soporte de function calling o llamadas a herramientas en flujos multi-paso.
-- Flujos de trabajo con agentes: capacidad declarada para integrarse en pipelines agenticos.
-- Capacidades multilingues: no disponible.
-- Modo thinking, vision o audio: no disponible.
+- Generación de texto conversacional en inglés, orientada a dominios de ciberseguridad.
+- Modo "uncensored"/"abliterated": menor tendencia a rechazar peticiones relacionadas con seguridad ofensiva, análisis de vulnerabilidades o contenido sensible.
+- Soporte declarado de tool-use / function calling (etiqueta "tool-use").
+- Capacidades agénticas y de razonamiento multi-paso (etiqueta "agentic").
+- Especialización en ciberseguridad (etiqueta "cybersecurity").
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan capacidades de visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Laboratorios de red team controlados: el modelo puede generar payloads y tecnicas de ataque para entornos de prueba aislados, aprovechando su entrenamiento orientado a seguridad ofensiva y su ausencia de filtrado.
-- Analisis de inteligencia de amenazas: sintesis de informes CTI y correlacion de indicadores de compromiso en un asistente local que no envia datos a la nube.
-- Revision de codigo con enfoque de seguridad: deteccion de patrones vulnerables y propuesta de remediaciones en pipelines de desarrollo, ejecutando el modelo en local para no exponer codigo propietario.
-- Automatizacion de tareas OSINT: extraccion y resumen de informacion de fuentes abiertas en investigaciones acotadas, con el modelo desplegado en una maquina aislada.
-- Formacion y concienciacion en seguridad: generacion de escenarios de ataque realistas para ejercicios de formacion de equipos defensivos, siempre en entornos sandbox.
-- Asistente de ingenieria de software local: autocompletado y generacion de codigo en un IDE mediante llama.cpp u Ollama, sin dependencia de APIs externas.
-- Investigacion sobre alineacion y seguridad: estudio del comportamiento de modelos abliterated y de su propension a generar contenido danino, en un contexto academico controlado.
+- Asistente de análisis de vulnerabilidades: el modelo puede ayudar a interpretar informes de escaneo, priorizar hallazgos y sugerir mitigaciones, aprovechando su ajuste en ciberseguridad y su menor tendencia a rechazar consultas técnicas sensibles.
+- Generación de scripts de automatización de seguridad: puede redactar scripts de reconocimiento, parsing de logs o tareas de respuesta a incidentes, integrándose en pipelines mediante tool calling.
+- Formación y concienciación en seguridad: útil para generar escenarios de phishing simulado, ejercicios de mesa o material de formación, con la ventaja de que el modelo no bloquea contenido de simulación ofensiva.
+- Agente conversacional para SOC (Security Operations Center): puede gestionar conversaciones multi-turno con contexto de alertas y tickets, aunque la longitud de contexto no está documentada y debe validarse empíricamente.
+- Análisis de código y revisión de seguridad: el modelo puede revisar fragmentos de código en busca de patrones inseguros y proponer correcciones, aprovechando sus capacidades de tool-use para integrarse con linters o analizadores estáticos.
+- Despliegue en entornos con recursos limitados: gracias a las cuantizaciones GGUF (desde 1,9 GB en Q2_K hasta 4,5 GB en Q8_0), puede ejecutarse en estaciones de trabajo sin GPU dedicada o con GPU de consumo, lo que facilita su uso en laboratorios de seguridad y entornos air-gapped.
+- Prototipado de agentes autónomos: su soporte declarado de tool-use y razonamiento multi-paso permite construir agentes que consulten APIs, ejecuten comandos y encadenen acciones en tareas de automatización de seguridad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el numero de parametros del modelo. Como referencia, las cuantizaciones ofrecidas van desde Q2_K (la mas agresiva) hasta x-f16 (sin perdida), lo que permite ajustar el consumo de memoria en un rango amplio.
-- GPU recomendadas: no disponible. La disponibilidad de cuantizaciones Q4_K_M, Q4_K_S e IQ4_XS sugiere que el modelo esta pensado para ejecutarse en hardware de consumo, pero no se confirma el tamano.
-- Compatibilidad con GPU de consumo: probable en las cuantizaciones bajas (Q2_K a Q4_K_M) si el modelo es de tipo "mini", aunque no se dispone de cifras concretas.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (LM Studio, koboldcpp). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización):
+  - Q2_K: ~1,9 GB de pesos; ~3-4 GB de VRAM con contexto moderado.
+  - Q4_K_M: ~2,7 GB de pesos; ~4-5 GB de VRAM con contexto moderado.
+  - Q8_0: ~4,5 GB de pesos; ~6-7 GB de VRAM con contexto moderado.
+  - f16: ~8,3 GB de pesos; ~10-12 GB de VRAM con contexto moderado.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4/Q5 (RTX 3060, RTX 4060, RTX 2070); para f16 se recomienda RTX 3080/4070 o superior. En entornos de servidor, A100 o H100 son sobredimensionadas para este tamaño, pero válidas para alto throughput.
+- Cabe en GPU de consumo: sí, en la mayoría de GPU modernas con 8 GB o más para cuantizaciones Q4_K_M y superiores; las cuantizaciones Q2/Q3 caben en GPU con 4-6 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (llama-cpp-python, KoboldCpp). Para el modelo base en safetensors: transformers, vLLM y TGI (previa conversión o carga del repo original).
+- Latencia y throughput estimados: no disponibles en la información proporcionada. Dado el tamaño de 4,1 B, se espera un throughput alto en GPU de consumo (decenas de tokens por segundo en Q4_K_M), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Frost-Cyber-Mini-Uncensored-v1.1-GGUF | no disponible | no disponible | no disponible | GGUF | Especializado en ciberseguridad ofensiva, abliterated |
-| Frost-Cyber-Mini-1.0-GGUF | no disponible | no disponible | no disponible | GGUF | Version anterior de la misma familia, tambien abliterated |
-| Frost-Cyber-Mini-Uncensored-v1.1 (original) | no disponible | no disponible | no disponible | safetensors | Pesos originales en FrostWolfAI |
+No se dispone de datos de benchmarks ni de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría. Se indica a continuación una comparación estructural basada únicamente en datos disponibles de la model card y conocimiento general de la categoría, marcando como "no disponible" los campos sin datos verificables.
 
-No se dispone de informacion suficiente para comparar con alternativas de otros desarrolladores en parametros, contexto o rendimiento.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Frost-Cyber-Mini-Uncensored-v1.1 (GGUF) | 4,1 B | No disponible | Apache 2.0 | Ciberseguridad, uncensored, agéntico | GGUF en HF |
+| Modelos de ~4 B de propósito general (p. ej., familia Llama 3.2 3B, Qwen2.5 3B) | ~3-4 B | 128K en algunos casos | Licencias variables (Llama, Apache 2.0) | Propósito general | Safetensors, GGUF |
+| Modelos especializados en ciberseguridad de tamaño similar | No disponible | No disponible | No disponible | Ciberseguridad | No disponible |
+
+La comparativa directa con alternativas concretas no es posible sin datos de rendimiento publicados. Se recomienda evaluar el modelo en las tareas objetivo antes de adoptarlo en producción.
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura (abliterated): el filtrado de seguridad esta sustancialmente reducido y puede generar codigo de explotacion, payloads y tacticas de atacante. Su uso debe limitarse a entornos autorizados y controlados.
-- Riesgo legal: la generacion o uso de codigo malicioso puede infringir legislacion en funcion de la jurisdiccion. No se especifica ninguna restriccion de uso en la licencia, que ademas es desconocida.
-- Licencia no disponible: no se puede confirmar si se permite el uso comercial. Antes de cualquier despliegue en produccion debe verificarse la licencia en el repositorio del modelo original.
-- Ausencia de datos de evaluacion: no hay benchmarks publicados, por lo que no se puede valorar su calidad frente a alternativas.
-- Idiomas no confirmados: se desconoce si el modelo tiene un rendimiento equilibrado fuera del ingles.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; en el dominio de seguridad, una alucinacion puede traducirse en codigo de explotacion incorrecto o en indicadores de amenaza falsos.
-- Sesgos: no documentados, pero al ser un modelo abliterated es probable que presente sesgos derivados del modelo base y del proceso de eliminacion de rechazos.
-- Repositorio de cuantizaciones: este repositorio no contiene informacion tecnica del modelo; cualquier dato debe consultarse en FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1.
+- El ajuste "uncensored"/"abliterated" implica que el modelo puede generar contenido ofensivo, peligroso o legalmente sensible; su uso en producción requiere salvaguardas externas y revisión legal.
+- Riesgo de alucinación inherente a modelos de 4 B; especialmente en dominios técnicos donde puede inventar CVEs, comandos o referencias.
+- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada; no debe asumirse una ventana larga sin validación empírica.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado y el cumplimiento normativo (por ejemplo, en ciberseguridad ofensiva) son responsabilidad del usuario.
+- La model card no documenta sesgos, datos de entrenamiento ni evaluaciones de seguridad; la trazabilidad es limitada.
+- El repositorio tiene pocas descargas (958) y cero likes en el momento de la consulta, lo que sugiere poca validación comunitaria.
+- Al ser una cuantización, las versiones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-GGUF
-- Modelo original: https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1
-- GGUF del autor original: https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1-GGUF
-- Version anterior 1.0: https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-1.0-GGUF
+- Modelo base: https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Frost-Cyber-Mini-Uncensored-v1.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de perplejidad por cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

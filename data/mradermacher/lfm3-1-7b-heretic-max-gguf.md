@@ -2,89 +2,89 @@
 
 ## Resumen
 
-LFM3-1.7B-Heretic-Max-GGUF es una cuantización estática del modelo LFM3-1.7B-Heretic-Max, publicada por mradermacher, un perfil conocido en Hugging Face por convertir modelos a formato GGUF para su uso con llama.cpp y herramientas compatibles. El modelo base es un ajuste fino de LFM3-1.7B de Liquid AI, un modelo de texto de 1.700 millones de parámetros diseñado para agentes locales y aplicaciones especializadas, con una ventana de contexto de 256K tokens y soporte nativo de tool calling.
+LFM3-1.7B-Heretic-Max-GGUF es una cuantizacion en formato GGUF del modelo MihaiPopa-1/LFM3-1.7B-Heretic-Max, un derivado "abliterated" (o "decensored") del modelo LFM3 de 1.700 millones de parametros de Liquid AI. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de versiones GGUF de la comunidad, que ofrece el modelo en doce variantes de cuantizacion que van desde Q2_K (0,9 GB) hasta f16 (3,6 GB). El modelo base pertenece a la familia LFM3 (Liquid Foundation Model 3), disenada para despliegue en el borde (edge) con arquitectura propia de Liquid AI y capacidades conversacionales.
 
-El interés de esta ficha reside en dos capas: por un lado, LFM3-1.7B emplea la arquitectura tri-híbrida de la familia LFM3 de Liquid AI, pensada para reducir el coste computacional del contexto largo manteniendo capacidades de agente; por otro, la variante "Heretic-Max" es un ajuste fino comunitario (publicado por MihaiPopa-1) del que no se documentan detalles de entrenamiento en la información disponible. La versión GGUF facilita el despliegue en CPU y GPU de consumo mediante cuantizaciones de 2 a 8 bits.
+El modelo resuelve el problema de ejecutar un LLM de 1,7 mil millones de parametros en hardware modesto, incluyendo CPU y GPUs de consumo, manteniendo el soporte de conversacion multilingue en dieciseis idiomas (ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco). La variante "Heretic" implica que se ha aplicado una tecnica de abliteracion para eliminar los rechazos del modelo afinado por alineamiento, lo que lo hace atractivo para investigacion sobre seguridad y para casos donde se requiere baja censura, pero tambien conlleva riesgos importantes.
 
-La relevancia actual del artefacto es práctica: ofrece un modelo pequeño con contexto muy amplio en un formato listo para inferencia local, lo que lo hace candidato para prototipos de agentes en hardware modesto. No obstante, la model card del repositorio GGUF es mínima y no incluye licencia, idiomas ni benchmarks, por lo que buena parte de las especificaciones se marcan como no disponibles.
+La relevancia actual radica en la combinacion de tres factores: un tamano reducido que cabe en cualquier GPU de consumo, un contexto conversacional utilizable y el formato GGUF que permite ejecucion local con llama.cpp y Ollama. El repositorio acumula 762 descargas y 0 likes desde su creacion en noviembre de 2026, lo que sugiere un interes moderado y reciente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tri-híbrido (LFM3, según documentación de Liquid AI del modelo base) |
-| Parametros totales | 1,7 mil millones (1.7B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 256K tokens (modelo base LFM3-1.7B) |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas, quantize_version 2) |
+| Arquitectura | Transformer (familia LFM3 de Liquid AI; detalles de atencion no disponibles) |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
+| Licencia | lfm1.0 (otra, segun la model card) |
+| Formato de pesos | GGUF (tambien disponible el base en transformers/safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-1.7B pertenece a la familia LFM3 de Liquid AI y, según su documentación, se apoya en una arquitectura "tri-híbrida" orientada a agentes locales y aplicaciones especializadas, con 256K tokens de contexto y tool calling nativo. No se dispone de detalles sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron fases de RLHF o DPO en la información proporcionada.
+El modelo base es un transformer de 1.728.801.600 parametros perteneciente a la familia LFM3 de Liquid AI, orientada a inferencia en el borde. La model card del repositorio cuantizado no detalla la arquitectura interna (tipo de atencion, numero de capas, dimension del modelo ni estrategia de posicionamiento) ni los datos de entrenamiento: numero de tokens, composicion del corpus, uso de RLHF/DPO o tecnicas de alineamiento. Tampoco se especifica la innovacion tecnica concreta de LFM3 mas alla de la etiqueta "edge" y "conversational".
 
-La variante Heretic-Max es un ajuste fino publicado por MihaiPopa-1 sobre LFM3-1.7B, del que la información disponible no detalla metodología, datos ni objetivos. La contribución de mradermacher se limita a la conversión a GGUF: los metadatos de la model card indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, es decir, una cuantización estática de los tensores de salida con la herramienta habitual del autor. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal más allá de lo que implique la arquitectura tri-híbrida del base.
+La variante "Heretic-Max" del autor MihaiPopa-1 aplica tecnicas de abliteracion, un procedimiento que modifica los pesos para eliminar direcciones de activacion asociadas a rechazos y respuestas de seguridad. El resultado es un modelo "uncensored" o "decensored" que responde a solicitudes que el modelo original rechazaria. No se dispone de informacion sobre el metodo exacto de abliteracion empleado, el numero de capas intervenidas ni las metricas de degradacion de capacidades tras el proceso. La cuantizacion realizada por mradermacher es estatica (quantize_version 2), con tensor de salida cuantizado y conversion desde formato Hugging Face.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredadas del modelo base LFM3-1.7B.
-- Tool calling / function calling nativo, según la documentación de Liquid AI para LFM3-1.7B.
-- Orientación a agentes locales y aplicaciones especializadas (perfil declarado del modelo base).
-- Ventana de contexto de 256K tokens, adecuada para conversaciones largas y documentos extensos.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
-- Razonamiento multi-paso y agentes: plausible por el perfil del modelo base, pero no verificado en la información disponible para esta variante.
+- Generacion de texto conversacional multilingue en dieciseis idiomas, incluido el espanol.
+- Razonamiento basico y respuesta a instrucciones, heredado del modelo LFM3 base.
+- Capacidad "uncensored": responde a solicitudes que el modelo alineado rechazaria, util para investigacion sobre seguridad y red teaming.
+- Soporte de conversacion multi-turno (etiqueta "conversational" en la model card).
+- Despliegue en el borde: tamano reducido compatible con CPU y GPUs de consumo.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo "thinking" en la informacion disponible.
 
 ## Casos de uso
 
-- Agentes locales en hardware de consumo: un modelo de 1,7B en GGUF Q4_K_M ocupa del orden de 1 GB, por lo que puede ejecutarse en portátiles sin GPU dedicada y actuar como agente con tool calling en tareas de automatización personal.
-- Procesamiento de documentos largos: la ventana de 256K tokens del modelo base permite resumir o extraer información de contratos, informes o transcripciones extensas sin fragmentación agresiva, aunque en la práctica el coste de atención crece con el contexto.
-- Asistente de código en editor: integrado vía llama.cpp u Ollama, puede ofrecer autocompletado y explicaciones de fragmentos en un entorno de desarrollo local, sin enviar código a servicios externos.
-- Prototipado rápido de pipelines RAG: su tamaño reducido y su formato GGUF permiten iterar sobre recuperación y generación en una sola máquina antes de escalar a modelos mayores.
-- Chatbot de soporte con contexto conversacional largo: el contexto de 256K facilita mantener historiales multi-turno extensos, siempre que el backend de inferencia soporte esa longitud.
-- Evaluación de ajustes finos comunitarios: la variante Heretic-Max permite comparar el comportamiento del base frente a un fine-tune alternativo en tareas de razonamiento y generación, usando las distintas cuantizaciones para medir el impacto de la compresión.
-- Experimentación educativa: servir como modelo de referencia para estudiar arquitecturas híbridas y el efecto de la cuantización en la calidad de salida.
+- Investigacion sobre seguridad y alineamiento: el modelo permite estudiar como responde un LLM sin capas de rechazo, comparando su comportamiento con el modelo original alineado para analizar sesgos y riesgos de jailbreak.
+- Despliegue local en portatiles y equipos sin GPU dedicada: la variante Q4_K_M (1,2 GB) se ejecuta en CPU con llama.cpp, permitiendo un asistente conversacional offline en espanol sin conexion a la nube.
+- Prototipado rapido de chatbots: con 1,7 mil millones de parametros y contexto conversacional, sirve para validar flujos de dialogo antes de migrar a modelos mayores.
+- Educacion e investigacion academica: su tamano permite ejecutar experimentos de fine-tuning y evaluacion en una unica GPU de consumo, con coste computacional bajo.
+- Generacion de texto creativo sin restricciones tematicas: escritura de ficcion, guiones o contenido donde el modelo alineado impondria filtros, siempre con supervision humana.
+- Aplicaciones embebidas y edge computing: integracion en dispositivos con recursos limitados (Raspberry Pi, mini-PC) mediante llama.cpp u Ollama para tareas de clasificacion y generacion de texto breve.
+- Traduccion y asistencia multilingue ligera: cobertura de dieciseis idiomas para tareas de traduccion informal o resumen en entornos con restricciones de privacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): aproximadamente 0,5 GB en Q2_K, 0,9-1,0 GB en Q4_K_M, 1,3 GB en Q6_K y 1,8 GB en Q8_0, para 1,7B parámetros.
-- Con contexto largo, la caché KV puede superar ampliamente el tamaño de los pesos; a 256K tokens el consumo adicional es significativo y depende del backend y de la cuantización de la caché.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM para cuantizaciones Q4/Q5 con contexto moderado; RTX 3060, RTX 4060, RTX 4090, A100 o H100 para contextos muy largos o mayor throughput.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 4-8 GB de VRAM para cuantizaciones de 4-8 bits con contexto estándar; también en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui; vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían los pesos originales en safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1 GB para Q2_K (0,9 GB de pesos), 1,2-1,4 GB para Q4_K_M/Q5_K_M, 1,5 GB para Q6_K, 1,9 GB para Q8_0 y 3,6 GB para f16, mas overhead de contexto.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060); en GPUs de 8 GB o mas (RTX 3070, RTX 4070, RTX 4090) cabe holgadamente incluso en f16.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. El modelo base en transformers requiere `custom_code` y la libreria transformers.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por tamano, se espera inferencia en tiempo real en GPU de consumo y velocidad moderada en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Heretic-Max (GGUF, este) | 1,7B | 256K (base) | no disponible | GGUF | Cuantización comunitaria de un fine-tune |
-| LFM3-1.7B (base, Liquid AI) | 1,7B | 256K | no disponible en la información | safetensors (presumible) | Modelo original con tool calling nativo |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa pequeña ampliamente soportada |
-| Llama 3.2 1B Instruct | 1,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Alternativa de tamaño similar con ecosistema maduro |
+| LFM3-1.7B-Heretic-Max-GGUF | 1,73 B | no disponible | lfm1.0 | GGUF | Variante abliterated, 16 idiomas |
+| Modelo base LFM3-1.7B (Liquid AI) | 1,73 B | no disponible | lfm1.0 | safetensors | Version alineada, sin abliteracion |
+| MihaiPopa-1/LFM3-1.7B-Heretic-Max | 1,73 B | no disponible | lfm1.0 | safetensors | Modelo origen de esta cuantizacion |
 
-La comparativa se basa en características públicas de los modelos alternativos; no se dispone de datos de rendimiento comparado para esta variante concreta.
+No se dispone de datos de benchmarks ni de modelos comparables de otros fabricantes con especificaciones verificadas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio GGUF es mínima: no declara licencia, idiomas ni pipeline, lo que impide confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia del modelo base LFM3-1.7B y del fine-tune Heretic-Max antes de usarlo en producción.
-- Al ser un fine-tune comunitario sin documentación de entrenamiento, no se conocen los sesgos introducidos ni la calidad de alineación respecto al base.
-- Riesgo de alucinación inherente a un modelo de 1,7B: su capacidad de razonamiento y de seguir instrucciones complejas es limitada en comparación con modelos mayores.
-- El contexto de 256K es una capacidad del modelo base; su uso efectivo depende del backend, de la memoria disponible y de la degradación de calidad en contextos muy largos.
-- Las cuantizaciones de 2 y 3 bits (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de salida; para uso real se recomienda Q4_K_M o superior.
-- No hay información sobre idiomas soportados; el rendimiento en castellano no está verificado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria del artefacto.
+- La abliteracion elimina los rechazos de seguridad: el modelo puede generar contenido danino, ofensivo o ilegal sin filtros, lo que lo desaconseja para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo elevado de alucinacion: con 1,7 mil millones de parametros, la capacidad de razonamiento y la fiabilidad factual son limitadas en comparacion con modelos de mayor tamano.
+- La licencia lfm1.0 ("other") puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE del modelo base antes de desplegarlo en produccion.
+- No se documentan sesgos especificos, pero la abliteracion puede amplificar sesgos presentes en los datos de entrenamiento originales.
+- Longitud de contexto no disponible: no se puede garantizar el rendimiento en conversaciones largas o documentos extensos.
+- La model card no detalla la degradacion de capacidades tras la abliteracion; es probable una perdida de calidad en tareas de razonamiento e instrucciones complejas.
+- El repositorio tiene 0 likes y 762 descargas, con validacion comunitaria escasa; no hay evaluaciones independientes publicadas.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/LFM3-1.7B-Heretic-Max-GGUF
-- Modelo base del fine-tune: https://huggingface.co/MihaiPopa-1/LFM3-1.7B-Heretic-Max
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Documentación de LFM3-1.7B (Liquid AI): https://docs.liquid.ai/lfm/models/lfm3-1.7b
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM3-1.7B-Heretic-Max-GGUF
+- Modelo base: https://huggingface.co/MihaiPopa-1/LFM3-1.7B-Heretic-Max
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/LFM3-1.7B-Heretic-Max-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#LFM3-1.7B-Heretic-Max-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png

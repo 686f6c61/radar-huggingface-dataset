@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Alpina Micro 2.0 (Picalp) es un modelo de lenguaje denso de tipo Llama entrenado desde pesos aleatorios por Convergent-ch, con un total de 15.008 parámetros únicos. Se trata de un experimento de investigación y no de un asistente general útil: el propio autor lo describe como un modelo de personaje de quince mil parámetros, no de quince millones, que sobreajusta su identidad hasta el punto de responder con su nombre a preguntas no relacionadas, como una cuestión de Python.
+Alpina-Micro-2.0-15K es un modelo de lenguaje denso de tipo Llama entrenado desde pesos aleatorios por el desarrollador Convergent-ch. Su característica definitoria es su escala extrema: 15.008 parámetros únicos, es decir, quince mil parámetros, no quince millones. Se trata, por tanto, de un experimento de juguete y no de un asistente de propósito general. El autor lo presenta explícitamente como una prueba de concepto centrada en la personalidad del modelo, que sobreajusta su identidad hasta el punto de responder con su propio nombre ante preguntas no relacionadas, como una consulta de Python.
 
-El modelo se distribuye con pesos completos en Safetensors y tokenizador incluido, junto con una versión GGUF en F16 para su uso con Ollama. Su relevancia es fundamentalmente didáctica: sirve para estudiar el comportamiento de un transformer minúsculo, el sobreajuste extremo de identidad y el proceso de conversión a GGUF sin reentrenamiento. No está pensado para producción ni para tareas reales de generación de texto.
+El modelo emplea la arquitectura Llama estándar en configuración densa, se distribuye con licencia Apache-2.0, está orientado a inglés y se publica en formatos safetensors y GGUF (F16). Su relevancia no reside en capacidades funcionales, sino en servir como caso límite para estudiar sobreajuste de identidad, tokenización mínima y comportamiento de modelos de escala ínfima. La model card advierte de que las comprobaciones de identidad superadas (2/2) no deben interpretarse como indicador de calidad en benchmarks.
 
-La ventana de contexto, el número de tokens de entrenamiento y los detalles de la arquitectura interna no se detallan en la información disponible. La licencia es Apache-2.0 y el único idioma declarado es el inglés, con un rango de entrada limitado a ASCII en inglés según la model card.
+La ficha se elabora a partir de la información pública disponible en Hugging Face y la model card del autor; los datos no confirmados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso de tipo Llama (detalles internos no disponibles) |
+| Arquitectura | Transformer denso tipo Llama |
 | Parametros totales | 15.008 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF F16 incluido; otras cuantizaciones no disponibles |
-| Idiomas soportados | Inglés (rango de entrada limitado a ASCII en inglés) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | F16 (GGUF incluido); otras cuantizaciones no disponibles |
+| Idiomas soportados | Inglés (rango de entrada ASCII) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors y GGUF (F16) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer densa con cabecera de modelado causal de lenguaje, etiquetada como Llama en los tags del repositorio. Fue entrenado desde pesos inicializados aleatoriamente, sin partir de un modelo preentrenado, y el resultado es un modelo de 15.008 parámetros que sobreajusta fuertemente su identidad. La model card indica que las comprobaciones de identidad aciertan 2 de 2, pero advierte explícitamente de que no debe inferirse calidad de benchmark a partir de esas respuestas correctas.
+El modelo sigue una arquitectura transformer densa con la estructura de Llama, entrenado desde inicialización aleatoria (no es un fine-tuning de un modelo base). Cuenta con 15.008 parámetros únicos y un vocabulario de caracteres representado como byte BPE con una fusión inalcanzable; los identificadores de token y los pesos se conservan íntegros y no se realizó reentrenamiento durante la conversión a GGUF.
 
-Los datos de entrenamiento incluyen prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado con criterios permisivos, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). No se especifica el número total de tokens vistos ni si hubo fases de RLHF o DPO. La conversión a GGUF no implicó reentrenamiento: se preservan los IDs de token y los pesos, y el vocabulario de caracteres se representa como byte BPE con una fusión inalcanzable.
+Los datos de entrenamiento provienen de prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). No se especifican el número de tokens, la composición exacta del dataset ni si hubo etapas de RLHF o DPO. La innovación técnica destacable es, en realidad, la escala: un modelo de quince mil parámetros que sobreajusta su identidad hasta contaminar respuestas a preguntas ajenas, lo que lo convierte en un objeto de estudio sobre memorización y sesgo de identidad en modelos mínimos.
 
 ## Capacidades
 
-- Generación de texto causal en inglés, limitada a un rango de entrada ASCII en inglés.
-- Respuesta a comprobaciones de identidad: el modelo declara ser Alpina Micro 2.0 en 2 de 2 comprobaciones reportadas.
-- Sobrecorrección de identidad: responde con su propio nombre incluso ante preguntas no relacionadas, como una consulta de Python.
-- Conversación mediante plantilla de chat con roles de sistema y usuario, tal como se muestra en el ejemplo de uso.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se documenta capacidad multilingüe más allá del inglés.
-- No se documentan capacidades de visión, audio ni modo de pensamiento.
+- Generación de texto en inglés dentro de un rango de entrada ASCII.
+- Conversación multi-turno mediante plantilla de chat entrenada (formato con saltos de línea LF).
+- Respuesta a comprobaciones de identidad (2/2 superadas según el autor).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés; otros idiomas no soportados.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Docencia sobre transformers minúsculos: permite ejecutar un modelo completo de 15.008 parámetros en un cuaderno para ilustrar el flujo de `AutoTokenizer` y `AutoModelForCausalLM` sin coste computacional apreciable.
-- Estudio del sobreajuste de identidad: sirve como caso controlado para analizar cómo un modelo pequeño puede fijar su nombre y responder con él a preguntas ajenas, comparando con el comportamiento de modelos mayores.
-- Pruebas de plantillas de chat: útil para validar el formato de mensajes con roles de sistema y usuario y la generación con `apply_chat_template` en un entorno mínimo.
-- Validación de pipelines de conversión a GGUF: el repositorio incluye el F16 GGUF y un Modelfile con el formato de chat entrenado y saltos de línea LF, lo que permite probar el flujo de conversión sin reentrenamiento.
-- Pruebas de integración con Ollama: el comando `ollama run girgineron/alpina-micro-2.0:15k` permite verificar el despliegue local de un modelo de este tamaño en entornos de test.
-- Verificación de compatibilidad con text-generation-inference y endpoints compatibles: los tags del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, lo que facilita probar el despliegue en infraestructura estándar con un modelo de huella mínima.
-- Reproducción de experimentos de tokenización byte BPE: el vocabulario de caracteres con una fusión inalcanzable permite estudiar el comportamiento del tokenizador en un caso límite documentado.
+- Estudio de sobreajuste de identidad: el modelo permite analizar cómo un entrenamiento mínimo hace que el modelo responda con su propio nombre ante preguntas no relacionadas, útil en investigación sobre memorización.
+- Pruebas de tokenización byte BPE mínima: sirve para validar pipelines de tokenización con vocabulario de caracteres y una fusión inalcanzable en entornos de investigación.
+- Verificación de conversión a GGUF: el repositorio incluye el F16 GGUF y el Modelfile, lo que permite probar el flujo de conversión y despliegue en Ollama sin reentrenamiento.
+- Docencia sobre escalas de modelos: útil como ejemplo didáctico de las diferencias entre miles, millones y miles de millones de parámetros en arquitecturas transformer.
+- Pruebas de integración con transformers y text-generation-inference: permite validar el pipeline de carga con `AutoTokenizer` y `AutoModelForCausalLM` en entornos de CI.
+- Evaluación de robustez de plantillas de chat: el formato entrenado con LF permite comprobar el comportamiento de `apply_chat_template` en modelos con plantillas personalizadas.
+- Referencia de línea base en experimentos de alineación: sirve como punto de comparación de modelos de juguete frente a asistentes reales en estudios de evaluación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta comprobaciones de identidad con 2 de 2 aciertos y advierte de que no debe inferirse calidad de benchmark a partir de ellas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no debe inferirse calidad en benchmarks a partir de las respuestas correctas de identidad (2/2) y remite a `evaluation.json` para las respuestas generadas reales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cualquier cuantización razonable, dado el tamaño de 15.008 parámetros y un repositorio de 0,0 GB.
-- GPU recomendadas: cualquier GPU con soporte de transformers o llama.cpp; no se requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier GPU de consumo e incluso en CPU; el cuello de botella es el lanzamiento del runtime, no el modelo.
-- Opciones de despliegue: transformers, llama.cpp mediante el GGUF F16 incluido, Ollama con el tag `girgineron/alpina-micro-2.0:15k` y text-generation-inference por los tags del repositorio.
-- Latencia y throughput: no disponibles; con este tamaño serán dominados por el overhead del framework y no por el cómputo del modelo.
+- VRAM estimada para inferencia: inferior a 1 GB en cualquier cuantización; el modelo pesa del orden de decenas de kilobytes en safetensors y el F16 GGUF es igualmente mínimo.
+- GPU recomendadas: cualquier GPU, incluida CPU; no requiere aceleradores dedicados.
+- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, integradas) y en CPU.
+- Opciones de despliegue: transformers, text-generation-inference (endpoints compatibles), Ollama mediante `ollama run girgineron/alpina-micro-2.0:15k`, y llama.cpp a través del GGUF.
+- Latencia y throughput estimados: no disponibles; por el tamaño, la latencia será despreciable en cualquier hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Alpina Micro 2.0 (Picalp) | 15.008 | No disponible | Apache-2.0 | Safetensors y GGUF F16 en Hugging Face | Experimento de personaje con sobreajuste de identidad |
-| SmolLM2-135M | 135 M | No disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo pequeño de propósito general; usado como fuente de datos por Alpina |
-| Modelos de juguete tipo TinyStories | Variable, típicamente millones | No disponible | Variable | Hugging Face | Enfocados a narrativa simple; no comparables en identidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Alpina-Micro-2.0-15K | 15.008 | no disponible | Apache-2.0 | Hugging Face, GGUF, Ollama |
+| SmolLM (familia) | desde 135M | no disponible | Apache-2.0 | Hugging Face |
+| TinyLlama | 1.1B | no disponible | Apache-2.0 | Hugging Face |
+| Modelos de juguete tipo nanoGPT | variable (miles) | no disponible | variable | repositorios de investigación |
 
-La comparación con alternativas de la misma categoría es limitada: no se dispone de datos de benchmarks ni de contexto para Alpina Micro 2.0, y su naturaleza experimental de personaje lo aleja de los modelos pequeños de propósito general.
+La comparativa es orientativa: Alpina-Micro-2.0-15K se sitúa tres o cuatro órdenes de magnitud por debajo de los modelos pequeños habituales, por lo que no es funcionalmente comparable a SmolLM o TinyLlama en tareas de asistente. No se dispone de datos de rendimiento comparables.
 
 ## Limitaciones y advertencias
 
-- No es un asistente general útil: el autor lo califica explícitamente de experimento de juguete.
-- Sobreajuste extremo de identidad: responde con su nombre a preguntas no relacionadas, lo que invalida su uso en tareas reales.
-- Evaluación muy limitada: solo se reportan comprobaciones de identidad, sin benchmarks de calidad.
-- Riesgo de alucinación elevado por el tamaño y el régimen de entrenamiento; no debe usarse en producción.
-- Contexto e idioma restringidos: solo inglés y, en la práctica, entrada ASCII en inglés según la model card.
-- No se documentan salvaguardas frente a sesgos; el corpus de entrenamiento incluye datos filtrados de forma permisiva cuyo sesgo no se analiza.
-- Licencia Apache-2.0 permite uso comercial del artefacto, pero las licencias y avisos de los datasets de origen (ODC-BY, Apache-2.0) siguen aplicando a los datos, que no se redistribuyen.
-- Las afirmaciones de identidad describen la personalización y no alteran la autoría del modelo original; no se implica afiliación con Qwen ni con los autores de los datasets.
+- Modelo de juguete: el autor lo describe como un experimento y no como un asistente útil de propósito general.
+- Sobreajuste severo de identidad: responde con su propio nombre ante preguntas no relacionadas, incluida una consulta de Python.
+- Riesgo de alucinación: muy elevado por la escala y el sobreajuste; las respuestas no son fiables.
+- Limitación idiomática: solo inglés en rango ASCII; no soporta otros idiomas ni caracteres fuera de ASCII.
+- Longitud de contexto: no documentada; no debe asumirse una ventana amplia.
+- Evaluación muy limitada: la model card advierte de que las comprobaciones de identidad no indican calidad en benchmarks.
+- Licencia Apache-2.0: permite uso comercial, pero el modelo carece de utilidad práctica en producción.
+- Atribución: las afirmaciones de identidad describen la personalización y no alteran la autoría del modelo original; no se implica afiliación con Qwen ni con los autores de los datasets.
+- Datasets de origen: no se redistribuyen; se aplican sus avisos y licencias originales (ODC-BY, Apache-2.0).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Micro-2.0-15K
-- Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
-- Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
-- Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
-- Dataset self-oss-instruct-sc2-exec-filter-50k: https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k
-- Tag de Ollama: `girgineron/alpina-micro-2.0:15k`
+- Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Micro-2.0-15K
+- Ollama: https://ollama.com/girgineron/alpina-micro-2.0
+- SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+- CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
+- Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
+- self-oss-instruct-sc2-exec-filter-50k: https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k

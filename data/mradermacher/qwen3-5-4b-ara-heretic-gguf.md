@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Qwen3.5-4B-ARA-heretic-GGUF es una cuantizacion estatica en formato GGUF del modelo richardyoung/Qwen3.5-4B-ARA-heretic, publicada por mradermacher. El modelo base deriva de la familia Qwen3.5 de 4B parametros (4.205.751.296 parametros reales segun los safetensors) y ha sido sometido a un proceso de "abliteration" o decensurado, que elimina total o parcialmente los mecanismos de rechazo y alineacion de seguridad del modelo original. El resultado es un modelo conversacional sin filtros de contenido, etiquetado como heretic, uncensored, decensored y abliterated.
+Qwen3.5-4B-ARA-heretic-GGUF es una distribucion en formato GGUF del modelo richardyoung/Qwen3.5-4B-ARA-heretic, publicada por el usuario mradermacher, conocido en el ecosistema por generar cuantizaciones estaticas de modelos abiertos. El modelo base deriva de la familia Qwen3.5 de Alibaba (variante de 4B), sobre la que se ha aplicado una tecnica de "abliteration" o "heretic" orientada a eliminar los mecanismos de rechazo del modelo original, dando lugar a una variante descensurada y sin filtros de seguridad conversacionales. El repositorio incluye unicamente pesos cuantizados estaticos (sin versiones imatrix, que se publican en un repositorio separado).
 
-La relevancia de esta publicacion es practica: mradermacher ofrece el modelo en una bateria completa de cuantizaciones GGUF (desde Q2_K hasta f16, pasando por IQ4_XS y Q8_0), lo que permite ejecutarlo en hardware de consumo con llama.cpp y derivados. El repositorio ocupa 39,9 GB en total, aunque cada fichero individual pesa entre 2,0 GB (Q2_K) y 8,5 GB (f16). Incluye ademas ficheros mmproj, lo que indica que el modelo base conserva capacidad multimodal de vision.
+El modelo cuenta con 4.205.751.296 parametros totales segun los datos de safetensors del modelo base, lo que lo situa en la categoria de modelos pequenos y desplegables en hardware de consumo. La licencia declarada es Apache 2.0, aunque la model card incluye ademas la etiqueta openrail++ y enlaza a la licencia del Qwen3.5-4B original. El idioma declarado es exclusivamente ingles.
 
-La licencia declarada es Apache 2.0, heredada del Qwen3.5-4B original. No obstante, la naturaleza decensurada del modelo implica riesgos de contenido que deben evaluarse antes de cualquier despliegue en produccion. El modelo solo declara soporte para ingles.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo de la generacion Qwen3.5 (posterior a Qwen3), un proceso de abliteration documentado como reproducible, y una bateria completa de cuantizaciones GGUF listas para llama.cpp y derivados. Su publico objetivo son desarrolladores que necesitan un modelo pequeno, sin restricciones de contenido y ejecutable en local, con la advertencia de que la eliminacion de salvaguardas tiene implicaciones eticas y legales importantes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5), no se detalla la variante exacta |
+| Arquitectura | no disponible (modelo base Qwen3.5-4B; arquitectura transformer, sin confirmar detalles) |
 | Parametros totales | 4.205.751.296 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no aplica (no es MoE, segun el conteo de parametros) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Licencia | apache-2.0 (la model card tambien etiqueta openrail++) |
+| Formato de pesos | GGUF (transformers como libreria declarada) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.5-4B, un transformer de 4.205.751.296 parametros. La model card de esta cuantizacion no aporta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original; esos datos corresponderian a la documentacion de Qwen3.5-4B, no incluida en la informacion disponible. La presencia de ficheros mmproj (multi-modal supplement) en el repositorio sugiere que el modelo base incorpora un proyector multimodal, presumiblemente para entrada de imagenes, aunque la model card no lo detalla.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. El conteo de parametros (4.205.751.296) corresponde a un transformer denso de aproximadamente 4B parametros, coherente con la nomenclatura Qwen3.5-4B. No se confirma si incorpora mecanismos de atencion lineal, decodificacion especulativa u otras innovaciones de la familia Qwen3.5.
 
-La innovacion tecnica principal de esta publicacion es el proceso de abliteration aplicado por richardyoung sobre Qwen3.5-4B, que elimina las direcciones de activacion asociadas al rechazo de peticiones. mradermacher realiza despues la cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) a partir del modelo en safetensors. El autor indica que las cuantizaciones ponderadas con imatrix estan en un repositorio separado (Qwen3.5-4B-ARA-heretic-i1-GGUF). La model card menciona que el proceso es "reproducible", aunque no se documentan los pasos concretos.
+El proceso de entrenamiento del modelo base original no esta documentado en esta ficha. Lo que si se documenta es el post-procesado: el modelo ha sido sometido a una tecnica de abliteration (etiquetada como "heretic", "uncensored", "decensored", "abliterated" y "reproducible"), que tipicamente consiste en identificar y neutralizar las direcciones de activacion asociadas a la negativa a responder, preservando el resto de capacidades. El autor del modelo base (richardyoung) declara el proceso como reproducible, aunque no se detallan los pasos exactos ni los datos utilizados en esta informacion.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles.
-- Razonamiento y respuesta a instrucciones sin los filtros de rechazo del modelo original (comportamiento decensurado).
-- Capacidad multimodal probable (entrada de imagen) gracias a los ficheros mmproj incluidos, aunque no se detalla en la model card.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: solo se declara ingles.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en ingles, con formato de chat (tag "conversational").
+- Respuestas sin rechazo a peticiones que el modelo original filtraria, fruto del proceso de abliteration.
+- Soporte multimodal: el repositorio incluye ficheros mmproj (Q8_0 y f16), lo que indica que el modelo base incorpora capacidad de vision y que puede procesar imagenes en llama.cpp.
+- Capacidades de razonamiento, codigo y matematicas: no confirmadas explicitamente en la informacion disponible, aunque plausibles por herencia de la familia Qwen3.5.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma declarada.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el efecto de la abliteration comparando sus respuestas con las de Qwen3.5-4B original en conjuntos de prompts sensibles, en un entorno controlado y aislado.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa con tematicas adultas o controvertidas que los modelos alineados rechazarian; la cuantizacion Q4_K_M (2,8 GB) permite ejecutarlo en un portatil con GPU de 6-8 GB.
-- Prototipado local en hardware de consumo: con Q2_K (2,0 GB) o Q4_K_S (2,7 GB) se puede desplegar en llama.cpp u Ollama en equipos sin GPU dedicada, para pruebas de concepto de chatbots.
-- Analisis de contenido multimodal en local: usando los ficheros mmproj junto con la cuantizacion principal, se pueden procesar imagenes en entornos sin conexion, siempre que se valide primero la calidad real del proyector.
-- Evaluacion de robustez de filtros: util como caso negativo en pipelines de moderacion, para comprobar que un clasificador de contenido detecta respuestas que un modelo alineado bloquearia.
-- Experimentacion con tecnicas de cuantizacion: el repositorio ofrece doce variantes del mismo modelo, lo que permite medir el impacto de cada tipo de cuantizacion (Q2_K frente a Q8_0) sobre la perplejidad y la coherencia en una tarea concreta.
+- Experimentacion con modelos descensurados en local: el modelo permite investigar el comportamiento de un LLM sin capas de rechazo en un entorno controlado, util para estudiar sesgos, alineacion y robustez de filtros de seguridad en el ambito academico.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que aborde temas sensibles o violentos, donde un modelo con filtros convencionales bloquearia partes del texto. El tamano de 4B permite iterar rapidamente en un portatil.
+- Prototipado de asistentes conversacionales en ingles: gracias a su formato conversacional y a la cuantizacion Q4_K_M (2,8 GB), puede desplegarse en un portatil con GPU modesta para validar flujos de dialogo antes de pasar a modelos mayores.
+- Procesamiento de imagenes con modelos pequenos: los ficheros mmproj permiten usar el modelo como VLM ligero en llama.cpp para tareas de descripcion de imagenes o extraccion de informacion visual, con la ventaja de su bajo consumo de VRAM.
+- Evaluacion comparativa de tecnicas de abliteration: al ser un modelo "reproducible" y con cuantizaciones publicas, sirve como referencia para medir el impacto de la abliteration en benchmarks frente al Qwen3.5-4B original.
+- Despliegue en entornos con recursos muy limitados: la cuantizacion Q2_K (2,0 GB) permite ejecutar el modelo en dispositivos con 4 GB de RAM o VRAM, util para demos en Raspberry Pi o telefonos de gama alta mediante llama.cpp.
+- Generacion de datos sinteticos para fine-tuning: puede emplearse para producir corpus de texto en ingles sin las restricciones de contenido del modelo base, siempre que el uso final cumpla la legalidad aplicable.
 
 ## Benchmarks y rendimiento
 
@@ -52,31 +53,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (peso de los pesos, sin contar KV cache): Q2_K ~2,0 GB; Q3_K_M ~2,4 GB; IQ4_XS ~2,6 GB; Q4_K_M ~2,8 GB; Q5_K_M ~3,2 GB; Q6_K ~3,6 GB; Q8_0 ~4,6 GB; f16 ~8,5 GB.
-- GPU recomendadas: para Q4_K_M basta una RTX 3060 de 12 GB o una RTX 4060 de 8 GB; para Q8_0 se recomienda una RTX 4070/4080 de 12-16 GB; para f16, una RTX 4090 de 24 GB o una A100/H100 si se busca throughput alto.
-- Cabe en GPU de consumo: si, en todas las cuantizaciones hasta Q8_0; f16 requiere 12 GB o mas de VRAM libre.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los tags del repositorio incluyen endpoints_compatible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: entre 2,5 GB (Q2_K) y 9 GB (f16) segun cuantizacion; Q4_K_M requiere aproximadamente 3,5-4 GB incluyendo overhead de contexto.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060) para cuantizaciones Q4; RTX 4090 o A100 no son necesarias y estarian sobredimensionadas para este modelo.
+- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida para cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF; la model card menciona "endpoints_compatible" y la libreria transformers para el formato original.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano, se espera un throughput alto en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-ARA-heretic-GGUF (este) | 4,2B | no disponible | Apache 2.0 | GGUF (12 cuantizaciones) | Decensurado, solo ingles, con mmproj |
-| mradermacher/Qwen3.5-4B-heretic-GGUF | 4,2B | no disponible | Apache 2.0 | GGUF | Variante heretic del mismo Qwen3.5-4B, cuantizada por el mismo autor |
-| mradermacher/Qwen3.5-4B-ARA-heresy-v2-GGUF | 4,2B | no disponible | no disponible | GGUF | Otra variante ARA/heretic del mismo modelo base |
-| Qwen3.5-4B (original) | 4,2B | no disponible | Apache 2.0 | safetensors | Modelo alineado de referencia, con filtros de seguridad |
+| Qwen3.5-4B-ARA-heretic-GGUF (este) | 4,2B | no disponible | Apache 2.0 | GGUF | Abliterated, vision via mmproj, solo ingles |
+| richardyoung/Qwen3.5-4B-ARA-heretic | 4,2B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva este |
+| Qwen3.5-4B (original) | ~4B | no disponible | Apache 2.0 | safetensors | Version con filtros de seguridad, multilingue |
+| mradermacher/Qwen3.5-4B-ARA-heretic-i1-GGUF | 4,2B | no disponible | Apache 2.0 | GGUF (imatrix) | Misma base con cuantizaciones ponderadas |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo decensurado: la abliteration elimina los mecanismos de rechazo, por lo que puede generar contenido ofensivo, peligroso o ilegal sin advertir. No es apto para aplicaciones de cara al publico sin moderacion externa.
-- Riesgo de alucinacion: no hay datos especificos publicados para esta variante; al ser un modelo de 4B, la tasa de alucinacion es previsiblemente superior a la de modelos mayores.
-- Solo ingles declarado: el rendimiento en castellano no esta garantizado ni documentado.
-- Longitud de contexto no documentada en la model card; conviene verificarla en la configuracion del modelo base antes de usarla en produccion.
-- La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas locales o las politicas de las plataformas de despliegue; la responsabilidad recae en el integrador.
-- El proceso de abliteration puede degradar capacidades generales (razonamiento, coherencia) respecto al modelo original; no se aportan mediciones que lo cuantifiquen.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion comunitaria.
-- La model card no detalla el pipeline de transformers ni la configuracion del tokenizer; para uso con transformers habria que recurrir al modelo base richardyoung/Qwen3.5-4B-ARA-heretic.
+- Modelo abliterated: las salvaguardas de seguridad han sido eliminadas deliberadamente, por lo que puede generar contenido danino, ilegal o eticamente cuestionable sin rechazo. No debe desplegarse en aplicaciones de cara al publico sin filtros externos.
+- Riesgo elevado de alucinacion: al ser un modelo de 4B, su capacidad de razonamiento y factualidad es limitada en comparacion con modelos mayores; la abliteration puede agravar este comportamiento al reducir la cautela en las respuestas.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta verificado y probablemente sea deficiente.
+- Contexto: no se ha publicado la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo.
+- Licencia: aunque se declara Apache 2.0, la model card incluye la etiqueta openrail++ y enlaza a la licencia del Qwen3.5-4B original; conviene verificar la compatibilidad antes de uso comercial, especialmente por la clausula de uso aceptable de OpenRAIL.
+- Origen de los datos: la model card no documenta el dataset de entrenamiento ni el proceso exacto de abliteration, lo que dificulta auditar sesgos o comportamiento.
+- Sin likes ni validacion de la comunidad: el repositorio tiene 0 likes y 1.203 descargas en el momento de la consulta, lo que sugiere poca validacion independiente.
+- Uso responsable: la eliminacion de filtros puede entrar en conflicto con las politicas de plataformas de despliegue (Hugging Face, proveedores cloud) y con la legislacion de la UE sobre IA.
 
 ## Enlaces
 
@@ -84,9 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Modelo base: https://huggingface.co/richardyoung/Qwen3.5-4B-ARA-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.5-4B-ARA-heretic-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-4B-ARA-heretic-GGUF
-- Variante heretic alternativa: https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF
-- Variante heresy-v2: https://huggingface.co/mradermacher/Qwen3.5-4B-ARA-heresy-v2-GGUF
-- Licencia del modelo Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
+- Licencia del Qwen3.5-4B original: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

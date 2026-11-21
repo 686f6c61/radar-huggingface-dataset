@@ -2,88 +2,84 @@
 
 ## Resumen
 
-`kabachuha/DeepSeek-V4.1-Flash-1017-control-vectors` es una colección de vectores de control (control vectors) para escritura creativa, publicados como adaptador sobre el modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional: son direcciones de activación que, aplicadas durante la inferencia, desplazan el comportamiento del modelo en ejes de personalidad y estilo sin modificar sus pesos. El autor es `kabachuha`, y el artefacto se distribuye bajo licencia CC-BY-4.0.
+DeepSeek-V4.1-Flash-1017-control-vectors es un conjunto de vectores de control (control vectors / steering vectors) para el modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicado por el usuario kabachuha en Hugging Face. No se trata de un modelo generativo completo, sino de un adaptador de interpretabilidad mecanicista que permite modular la activación interna del modelo base para orientar su comportamiento estilístico y de personalidad sin reentrenamiento.
 
-La propuesta es relevante para quienes trabajan en interpretabilidad mecanicista y en control fino de la generación: en lugar de reentrenar o recurrir a prompting, se inyectan vectores sobre las activaciones internas para modular tono narrativo, foco en personajes y registro lingüístico. Los ejes publicados son optimismo frente a nihilismo, compasión frente a sadismo, empatía frente a sociopatía, honestidad frente a maquiavelismo, humildad frente a narcisismo y un eje de lenguaje simple frente a ornamentado.
+El repositorio contiene pares de vectores que definen ejes bipolares de comportamiento (optimismo frente a nihilismo, compasión frente a sadismo, empatía frente a sociopatía, honestidad frente a maquiavelismo, humildad frente a narcisismo, lenguaje simple frente a ornamentado y un eje experimental cálido frente a moralizante). Cada vector se aplica en inferencia ajustando activaciones en una dirección concreta, lo que permite sintonizar el tono narrativo, el foco en los personajes y elementos estilísticos en tareas de escritura creativa y roleplay.
 
-El repositorio es muy ligero (0,0 GB) y declara 194.560 parámetros en safetensors, coherente con un conjunto de vectores y no con un modelo completo. La generación se realiza con el modelo base; estos vectores solo se aplican a través de Project Maya (fork del autor o mainline) o, en teoría, de llama.cpp y backends específicos para DSV4.1, aunque el autor indica que estas dos últimas rutas no están probadas.
+El interés actual del repositorio reside en que ofrece una vía práctica de control conductual sobre un modelo de gran tamaño sin fine-tuning, con vectores calibrados contra el modelo desbiaseado y compatibles con el fork Project Maya de llama.cpp. El modelo base pertenece a la familia DeepSeek-V4.1-Flash-1017 y el adaptador declara licencia CC-BY-4.0 y soporte únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vectores de control (steering vectors) sobre las activaciones de un transformer; no es una arquitectura propia |
-| Parametros totales | 194.560 (según safetensors del repo; corresponde a los vectores, no al modelo base) |
+| Arquitectura | adaptador de vectores de control sobre transformer (modelo base DeepSeek-V4.1-Flash-1017); arquitectura exacta del base no disponible |
+| Parametros totales | 194.560 (dato real de safetensors del adaptador); parametros del modelo base no disponibles |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible para los vectores; el ejemplo de configuración del autor usa `--max-context 1048576` en el modelo base |
-| Tipos de cuantizacion | GGUF para los vectores; el modelo base se usa en GGUF (ruta de ejemplo `DeepSeek-V4.1-Flash-1017-GGUF`) |
+| Longitud de contexto | no disponible para el adaptador; en la configuracion de ejemplo de Project Maya se usa `--max-context 1048576` sobre el base |
+| Tipos de cuantizacion | vectores en formato GGUF (debias y ejes positivos/negativos); cuantizaciones del modelo base no disponibles |
 | Idiomas soportados | en |
 | Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors y GGUF |
+| Formato de pesos | GGUF (vectores de control); safetensors presente en el repo (194.560 parametros) |
 
 ## Arquitectura y entrenamiento
 
-Los vectores se construyen a partir de tripletes de muestras que contrastan un polo positivo y uno negativo de cada rasgo, y se calibran contra una versión "debiased" del modelo base. El autor indica que empleó varios cientos de tripletes en lugar de los ~4000 recomendados, por lo que los vectores pueden presentar algo de ruido. El eje de nihilismo se publica en dos variantes: 128 tripletes (sufijo "fuzzy", algo ruidosa pero funcional) y 512 tripletes (sin sufijo, refinada y recomendada, aunque con posiblemente menos grados de libertad). El resto de vectores se construyen con 256 tripletes.
+El adaptador no es un modelo entrenado de forma autonoma, sino un conjunto de vectores de direccion calculados a partir de tripletas de muestras sobre el modelo base DeepSeek-V4.1-Flash-1017. Segun la model card, los vectores se construyeron con varios cientos de tripletas en lugar de las ~4000 recomendadas, por lo que pueden presentar cierto ruido. El vector de nihilismo se publica en dos variantes: una de 128 muestras (sufijo "fuzzy", algo ruidosa pero funcional) y otra de 512 muestras (refinada y recomendada, con posiblemente menos grados de libertad); el resto de vectores se generaron con 256 tripletas.
 
-El uso requiere aplicar siempre el vector de debias con peso 1.0 junto con el vector del polo positivo o negativo correspondiente; los vectores no funcionan por separado y, si se aplican ambos polos del mismo eje a la vez, se anulan entre sí. La integración se realiza mediante `--control-vector-scaled` en Project Maya, con la sintaxis `ruta/debias.gguf:1.0,ruta/polo.gguf:<peso>`. En Project Maya el argumento debe ir en el fichero de configuración `.json` y no en `setup.sh`/`maya.sh`, ya que estos scripts sobrescriben la configuración. El autor recomienda copiar la configuración a un fichero propio (por ejemplo `maya-ds4-ablate-cv.json`) para evitar pérdidas por actualizaciones.
+Cada eje se compone de un vector de desviacion (debias) y dos direcciones opuestas (positiva y negativa). El debias debe aplicarse siempre con fuerza 1.0 junto al eje positivo o negativo correspondiente, ya que los vectores estan calibrados contra el modelo desbiaseado y no funcionan de forma aislada. La aplicacion simultanea de ambos extremos de un eje provoca cancelacion mutua. La implementacion de referencia es el fork `cvector-creator-ds4` del proyecto Project Maya de mw00, y se indica compatibilidad teorica con llama.cpp estandar y backends dedicados a DSV4.1, aunque no verificada.
 
 ## Capacidades
 
-- Modulación de tono narrativo en ejes de optimismo/nihilismo, compasión/sadismo, empatía/sociopatía, honestidad/maquiavelismo y humildad/narcisismo.
-- Alteración del registro lingüístico entre lenguaje simple y ornamentado.
-- Aplicación de los conceptos más allá de la escritura: el autor muestra que también afectan a la generación de SVG y a la elección de temática visual (ejemplo de un gato generado en baseline, con nihilismo +1.5 y con optimismo +1.5).
-- Escritura creativa y roleplay con control de personalidad del personaje sin reentrenamiento.
-- Compatibilidad declarada con Project Maya (fork del autor y mainline vía `--control-vector-scaled`) y compatibilidad teórica, no probada, con llama.cpp vanilla y backends dedicados a DSV4.1.
-- Interpretabilidad mecanicista: los vectores sirven como herramienta de análisis de direcciones de activación asociadas a rasgos.
-- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking propias de estos vectores; dependen del modelo base.
+- Escritura creativa y narrativa: modulacion del tono (optimismo/nihilismo), del foco en personajes y de elementos estilisticos.
+- Roleplay conversacional: ajuste de la personalidad del personaje mediante ejes de compasion, empatia, honestidad, humildad y narcisismo.
+- Control de estilo linguistico: eje de lenguaje simple frente a ornamentado.
+- Control experimental de tono conversacional: eje `warm_vs_moralizing`, con efectos en chat directo a fuerzas ~1.5-2.5 y efecto de mayor cordialidad en roleplay a 0.5.
+- Generacion de artefactos visuales: los conceptos de los vectores se transfieren a dominios como generacion de SVG y temas de interfaz, segun los ejemplos de la model card.
+- Interpretabilidad mecanicista: inspeccion y manipulacion de activaciones internas del modelo base.
+- No incluye tool calling, function calling, agentes ni capacidades multimodales propias; estas dependen exclusivamente del modelo base.
 
 ## Casos de uso
 
-- Escritura creativa con control de tono: aplicar el eje optimismo/nihilismo con pesos como 1.5 permite generar relatos con un tono marcadamente positivo o pesimista sin cambiar el prompt, útil para generar variantes de un mismo texto y comparar registros.
-- Roleplay y personajes consistentes: los ejes de humildad/narcisismo y honestidad/maquiavelismo permiten fijar la personalidad de un personaje (por ejemplo, un antagonista maquiavélico) y mantenerla a lo largo de una conversación multi-turno.
-- Generación de ficción oscura o de terror: el vector de nihilismo, con la advertencia del autor sobre contenido NSFL, sirve para producir narrativa de tono sombrío de forma controlada y reproducible.
-- Adaptación de registro para distintos públicos: el eje lenguaje simple/ornamentado permite generar la misma historia en estilo llano o barroco, útil para materiales dirigidos a lectores de distinta edad o para localización estilística.
-- Investigación en interpretabilidad: los vectores permiten experimentos de activación controlada para estudiar cómo se representan rasgos de personalidad y estilo en el espacio de activaciones del modelo base.
-- Generación de interfaces y SVG con sesgo temático: el ejemplo del autor muestra que los vectores afectan también a la generación de código SVG, por lo que pueden usarse para explorar cómo el tono del modelo se filtra en tareas de diseño generativo.
-- Prototipado de asistentes conversacionales con personalidad configurable: combinando varios ejes con pesos distintos se puede ajustar el comportamiento del asistente sin reentrenar, aunque con la cautela de que el modelo base ya es muy negativo y antisicofántico.
+- Roleplay con SillyTavern: aplicar el eje `warm_vs_moralizing` a fuerza 0.5 para que las partidas multturno resulten mas cordiales y menos cortantes, aprovechando que el vector actua sobre el tono sin reentrenar el modelo.
+- Ficcion con tono controlado: usar los ejes de optimismo y nihilismo a fuerzas de 1.5 para generar relatos con registro emocional coherente y reproducible, como en el ejemplo de la model card sobre una nina que gana un premio.
+- Generacion de personajes antagonistas: aplicar el eje `honesty_vs_machiavellianism` en direccion negativa para producir dialogos de villanos manipuladores con un grado de maquiavelismo calibrado.
+- Escritura de prosa ornamentada: activar el eje de lenguaje simple frente a ornamentado para adaptar el registro de textos literarios o de marketing a un estilo mas recargado o mas directo.
+- Generacion de SVG y temas de interfaz coherentes con una atmosfera: usar los ejes de optimismo o nihilismo para que los artefactos visuales generados (iconos, ilustraciones, paletas) acompanen el tono del producto.
+- Investigacion en interpretabilidad: estudiar como rasgos de personalidad se representan como direcciones lineales en el espacio de activaciones de un modelo de gran tamano, y comparar variantes de 128, 256 y 512 tripletas.
+- Auditoria de sesgos conductuales: medir la amplificacion de rasgos negativos al subir la fuerza del vector de nihilismo para documentar riesgos de contenido NSFL en despliegues de escritura creativa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo aporta ejemplos cualitativos (SVG de un gato y un relato corto en baseline frente a variantes con vectores), sin métricas cuantitativas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible para los vectores (el repo ocupa 0,0 GB); el consumo real lo determina el modelo base DeepSeek-V4.1-Flash-1017 en GGUF, cuyo tamaño y cuantización no se detallan en la información disponible.
-- GPU recomendadas: no disponible. El ejemplo de configuración del autor usa `--tp 2`, lo que implica despliegue con tensor parallelism en al menos dos GPU, sin especificar modelo.
-- ¿Cabe en GPU consumer?: no disponible; depende del modelo base y de la cuantización elegida, no de los vectores.
-- Opciones de despliegue: Project Maya (fork `cvector-creator-ds4` del autor o mainline con `--control-vector-scaled`); compatibilidad teórica con llama.cpp vanilla y backends dedicados a DSV4.1, no probada.
-- Latencia y throughput: no disponibles. El autor no publica mediciones.
+- VRAM estimada para inferencia: no disponible para el adaptador; depende del modelo base DeepSeek-V4.1-Flash-1017 y de su cuantizacion, dato no disponible.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Viabilidad en GPU de consumo: no disponible; el ejemplo de configuracion de Project Maya usa `--tp 2`, lo que sugiere despliegue multi-GPU para el modelo base.
+- Opciones de despliegue: fork Project Maya (`cvector-creator-ds4`), mainline Project Maya con `--control-vector-scaled`, y compatibilidad teorica con llama.cpp estandar y backends dedicados a DSV4.1 (no verificada).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| kabachuha/DeepSeek-V4.1-Flash-1017-control-vectors | Vectores de control sobre DSV4.1 | 194.560 (vectores) | no disponible (base: 1.048.576 en el ejemplo) | cc-by-4.0 | Hugging Face, 0 descargas, 1 like |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 | Modelo base | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
-| Project Maya (mw00) | Framework de inferencia con soporte de control vectors | no aplica | no disponible | no disponible | GitHub |
-
-No se dispone de información sobre otros conjuntos de control vectors comparables en la documentación proporcionada.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de vectores de control comparables.
 
 ## Limitaciones y advertencias
 
-- Los vectores se construyeron con varios cientos de tripletes en lugar de los ~4000 recomendados, por lo que pueden ser algo ruidosos; el autor los considera utilizables.
-- El vector de debias debe aplicarse siempre con peso 1.0 junto al polo positivo o negativo; no funcionan de forma aislada y los polos opuestos del mismo eje se anulan.
-- El modelo base DeepSeek-V4.1 es descrito por el autor como muy negativo y antisicofántico; amplificar rasgos no positivos (nihilismo, sadismo, etc.) puede producir contenido NSFL explícito. El propio autor advierte de ello.
-- Idiomas: solo se declara inglés (`en`); no hay evidencia de comportamiento correcto en castellano.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero conviene verificar las condiciones del modelo base, cuya licencia no se detalla en la información disponible.
-- Compatibilidad limitada: probado en el fork de Project Maya del autor; el soporte en llama.cpp vanilla y backends DSV4.1 es teórico y no verificado.
-- En Project Maya, pasar `--control-vector-scaled` en `setup.sh`/`maya.sh` sobrescribe la configuración; hay que editar el `.json` y no relanzar esos scripts.
-- El repositorio tiene 0 descargas y 1 like, por lo que no hay validación comunitaria ni reportes de uso en producción.
-- No hay benchmarks publicados que cuantifiquen la fidelidad o estabilidad de los ejes de control.
+- Los vectores se construyeron con varios cientos de tripletas en lugar de las ~4000 recomendadas, por lo que pueden ser ruidosos; el vector de nihilismo de 128 muestras es explicitamente descrito como "fuzzy".
+- El debias debe aplicarse siempre con fuerza 1.0 junto al eje positivo o negativo; usarlo de forma aislada no es valido.
+- Aplicar simultaneamente los dos extremos de un eje provoca cancelacion mutua.
+- DeepSeek-V4.1 ya es un modelo muy negativo y antisicofantico; subir el nihilismo u otros rasgos no positivos amplifica enormemente el efecto y puede producir contenido NSFL explicito, segun advierte el autor.
+- El eje `warm_vs_moralizing` es experimental: a fuerzas de 2.5 rompe la coherencia y solo muestra efectos claros en chat directo.
+- Compatibilidad con llama.cpp estandar y backends dedicados a DSV4.1 no verificada; solo Project Maya esta probado.
+- En Project Maya, `--control-vector-scaled` no debe pasarse en `setup.sh/maya.sh` ni junto a el, sino en el fichero `.json` de configuracion; relanzar `setup.sh/maya.sh` sobrescribe la configuracion.
+- Soporte unicamente en ingles.
+- Licencia CC-BY-4.0: permite uso comercial con atribucion, pero conviene revisar las condiciones del modelo base DeepSeek-V4.1-Flash-1017, cuya licencia no se detalla en la informacion disponible.
+- Riesgo de alucinacion: no documentado en la informacion disponible.
+- Sesgos conocidos: no documentados en la informacion disponible, mas alla de la amplificacion de rasgos negativos descrita.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kabachuha/DeepSeek-V4.1-Flash-1017-control-vectors
+- Repositorio Hugging Face: https://huggingface.co/kabachuha/DeepSeek-V4.1-Flash-1017-control-vectors
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Fork de Project Maya del autor: https://github.com/kabachuha/project-maya/tree/cvector-creator-ds4
-- Project Maya (original, mw00): no disponible en la información proporcionada
+- Fork de Project Maya para creacion de vectores: https://github.com/kabachuha/project-maya/tree/cvector-creator-ds4
+- Project Maya (proyecto original de mw00): no disponible URL directa en la informacion proporcionada

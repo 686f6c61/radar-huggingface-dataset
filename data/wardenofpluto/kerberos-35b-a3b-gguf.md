@@ -2,113 +2,113 @@
 
 ## Resumen
 
-Kerberos 35B-A3B 0.1 es un ajuste fino (post-entrenamiento) del modelo Qwen3.6-35B-A3B de Alibaba, desarrollado por WardenOfPluto. Su proposito concreto es convertir una especificacion de construccion (build spec) escrita en lenguaje natural en codigo funcional que supere los tests definidos en esa misma especificacion, ejecutandose localmente en un Mac. El modelo no pretende competir como asistente generalista, sino como motor de construccion local dentro de un flujo agente (shell, lectura, edicion y escritura de ficheros) en el que una especificacion aprobada se ejecuta sin salir de la maquina del usuario.
+Kerberos 35B-A3B 0.1 es un modelo derivado de Qwen3.6-35B-A3B, ajustado por WardenOfPluto mediante supervisión fina (SFT) para convertir una especificación de construcción escrita (build spec) en código funcional, ejecutándose localmente en hardware de consumo tipo Mac. El objetivo es permitir que un modelo de frontera redacte la especificación mientras Kerberos ejecuta la construcción en la máquina del usuario, manteniendo el repositorio, las pruebas y el proceso de build fuera de servicios en la nube.
 
-La version 0.1 se distribuye unicamente como GGUF cuantizado en UD-IQ3_XXS (13,2 GB), pensado para equipos con 24-31 GB de memoria unificada. El modelo base es un Mixture of Experts con 34.660.610.688 parametros totales y aproximadamente 3.000 millones activos por token (la designacion A3B del nombre), lo que explica que un modelo de ese tamano pueda ejecutarse en hardware de consumo.
+Se distribuye exclusivamente en formato GGUF con cuantización UD-IQ3_XXS (13,2 GB), pensada para Macs con 24-31 GB de memoria unificada. El modelo base es un transformer MoE (Mezcla de Expertos) de Qwen con 34.660.610.688 parámetros totales, del que se activan aproximadamente 3.000 millones por token (de ahí la denominación A3B). La licencia es Apache 2.0 y el idioma declarado es inglés.
 
-Es relevante ahora porque ejemplifica una tendencia practica: especializar un modelo abierto grande mediante SFT ligero (LoRA, rango 32, dos epocas) sobre tareas reales de repositorios, y publicar los resultados con intervalos de confianza en lugar de cifras de benchmark aisladas. Su ganancia medida es marginal en tasa de exito, pero el cambio observado esta en la eficiencia de terminacion de los bucles agente.
+La versión 0.1 es temprana: según la model card, en tareas no vistas durante el entrenamiento el rendimiento es estadísticamente equivalente al modelo base (61,5% frente a 61,1% en pruebas upstream), con una mejora observada en la tasa de finalización de ejecuciones (menos timeouts: 33 de 161 intentos frente a 51 de 162 del base). Es relevante ahora porque demuestra un flujo de trabajo agéntico local para ingeniería de software asistida, con evaluación honesta de incertidumbre estadística.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture of Experts (heredada de Qwen3.6-35B-A3B) |
+| Arquitectura | Transformer MoE (derivado de Qwen3.6-35B-A3B) |
 | Parametros totales | 34.660.610.688 |
-| Parametros activos | aproximadamente 3.000 millones (designacion A3B) |
-| Longitud de contexto | 65.536 tokens (valor usado en el comando de ejemplo con `-c 65536`); maximo nativo del modelo base no disponible |
-| Tipos de cuantizacion | UD-IQ3_XXS (13,2 GB), unica publicada; receta identica a la de Unsloth para el modelo base |
-| Idiomas soportados | ingles (declarado en la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); pesos fusionados a precision completa antes de recuantizar, no publicados |
+| Parametros activos | ~3B (denominación A3B; cifra exacta no disponible) |
+| Longitud de contexto | 65.536 tokens (configuración de ejemplo con `-c 65536`) |
+| Tipos de cuantizacion | UD-IQ3_XXS (13,2 GB); recipe de Unsloth con importance matrix |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); pesos base en safetensors |
+| Libreria | gguf / llama.cpp |
 | Modelo base | Qwen/Qwen3.6-35B-A3B |
-| Metodo de ajuste | SFT, 2 epocas, LoRA rango 32 sobre Tinker, fusion a precision completa |
-| Fecha de publicacion | 14 de noviembre de 2026 |
+| Tamano del repo | 13,2 GB |
+| Descargas | 860 |
+| Fecha de creación | 2026-11-14 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3.6-35B-A3B: un transformer con capas de mezcla de expertos, con 34.660 millones de parametros totales y alrededor de 3.000 millones activos por token. El autor no documenta detalles adicionales de la arquitectura (numero de capas, numero de expertos, atencion, etc.), por lo que esos datos deben consultarse en la model card de Qwen. El contexto operativo documentado es de 65.536 tokens, configurado explicitamente en el comando de llama.cpp con `--jinja -c 65536 -fa on` (flash attention activada).
+El modelo hereda la arquitectura del Qwen3.6-35B-A3B, un transformer con capas de mezcla de expertos (MoE) que activa aproximadamente 3.000 millones de parámetros por token sobre un total de 34.660 millones, lo que permite inferencia relativamente económica en memoria frente a modelos densos del mismo tamaño. Kerberos no modifica la arquitectura: parte de los pesos del modelo base y aplica un ajuste supervisado (SFT) sobre ellos.
 
-El entrenamiento consistio en SFT durante 2 epocas con LoRA de rango 32 sobre la plataforma Tinker, fusionado despues en los pesos base a precision completa y recuantizado con la receta UD-IQ3_XXS de Unsloth (matriz de importancia y tipos por tensor identicos). Los datos son 75 cambios reales fusionados de 44 repositorios Python con licencias MIT, Apache 2.0 o BSD, cada uno reproducido desde el commit anterior. Las especificaciones fueron redactadas por GLM 5.3 servido por Together y solo se conservaron las que pasaban comprobaciones objetivas (rutas y nombres reales, tests que cargan y fallan sobre el codigo previo al cambio). Los objetivos de entrenamiento son 75 intentos del propio modelo base cuyo codigo supero los tests de la especificacion; los intentos agotados por tiempo se descartan y no se incluye ninguna salida de modelo cerrado. No se documenta RLHF ni DPO.
+El entrenamiento se realizó sobre 75 cambios reales fusionados en 44 repositorios Python con licencias MIT, Apache 2.0 o BSD, cada uno reproducido desde el commit anterior. Las especificaciones de construcción fueron redactadas por GLM 5.3 (servido por Together) y filtradas mediante comprobaciones objetivas (rutas y nombres reales, tests que cargan y fallan sobre el código previo). Los objetivos de entrenamiento fueron 75 intentos del propio modelo base cuyo código superó los tests de la especificación; las ejecuciones con timeout se descartaron y no se incluyó salida de modelos cerrados. El método fue SFT durante 2 épocas sobre Tinker (LoRA, rango 32), con fusión en los pesos base a precisión completa y posterior recuantización con la receta de Unsloth para Qwen3.6-35B-A3B UD-IQ3_XXS (misma importance matrix y tipos por tensor).
 
 ## Capacidades
 
-- Generacion de codigo guiada por especificacion: implementa cambios descritos en un documento de build spec, respetando ficheros a modificar y ficheros a dejar intactos.
-- Ejecucion en bucle agente con herramientas de shell, lectura, edicion y escritura de ficheros.
-- Escritura de tests primero y ejecucion de los mismos hasta que pasan, con criterio de parada explicito.
-- Soporte de tool calling / function calling (verificado en la comprobacion de regresion: 20 de 24 frente a 22 de 24 del base).
-- Conversacion multi-turno (chat: 24 de 24 en la comprobacion de regresion).
-- Capacidad multilingue limitada: entrenado y evaluado en Python; JavaScript, TypeScript, PHP y shell solo cubiertos por la comprobacion de regresion.
-- No entrenado para redactar especificaciones ni para planificar cambios grandes de forma autonoma.
+- Generación de código Python a partir de una especificación de construcción escrita (build spec), con seguimiento fiel de archivos, firmas y comportamiento descritos.
+- Ejecución de bucles agénticos multi-paso con herramientas de shell, lectura, edición y escritura de archivos.
+- Ejecución de tests y finalización autónoma al detectar que las comprobaciones pasan (menor tasa de timeouts que el base).
+- Conversación multi-turno (chat) y llamadas a herramientas (tool calling), según la comprobación de regresión de la model card.
+- Construcción de parches sobre repositorios existentes respetando restricciones de "archivos a cambiar" y "archivos a dejar intactos".
+- Capacidades generales heredadas del base (razonamiento, matemáticas, código) no evaluadas de forma específica en esta ficha.
+- Idiomas: inglés (declarado); cobertura de otros lenguajes solo mediante la comprobación de regresión (JavaScript, TypeScript, PHP, shell).
+- No entrenado para redactar especificaciones ni para planificar cambios grandes de forma autónoma.
 
 ## Casos de uso
 
-- Construccion local de cambios de codigo a partir de una especificacion aprobada: el modelo recibe la spec y el repositorio, ejecuta los tests del proyecto y termina cuando pasan. Adecuado porque su entrenamiento se hizo exactamente sobre ese bucle y porque los datos no salen de la maquina.
-- Flujo hibrido nube-local: un modelo frontier (por ejemplo, via Warden) redacta el plan y la spec, y Kerberos construye en un worktree local con cada llamada a herramienta validada contra politicas. Encaja por su tamano (13,2 GB en IQ3_XXS) y su contexto de 65.536 tokens.
-- Implementacion de funciones pequenas con tests derivados de una tabla de comportamiento (por ejemplo, parsers de duraciones, validadores de entrada): la spec define entradas y resultados esperados y el modelo genera test y codigo en el orden indicado.
-- Correccion de tests fallidos en integracion continua local: dado un repositorio y una spec que describa el fallo y el comportamiento esperado, el modelo edita los ficheros necesarios y ejecuta `pytest` hasta que la suite pasa.
-- Prototipado en portatiles Apple Silicon: con 24-31 GB de memoria unificada se ejecuta mediante llama.cpp, Ollama o LM Studio, sin GPU dedicada, lo que permite trabajar en entornos sin acceso a la nube.
-- Automatizacion de tareas de mantenimiento de repositorios Python pequenos (anadir exportaciones en `__init__.py`, crear modulos nuevos, ajustar firmas) cuando existe una spec concreta y tests que validen el resultado.
-- Evaluacion de flujos agente en local: util como banco de pruebas para medir tasas de terminacion y consumo de tiempo en bucles agente sin coste de API.
+- Construcción local de parches desde una especificación: un modelo de frontera redacta el build spec y Kerberos lo implementa en un worktree local, manteniendo el código y las pruebas en la máquina del usuario. Adecuado por su entrenamiento específico en seguir specs y por su formato GGUF de 13,2 GB que cabe en un Mac de 24 GB.
+- Ingeniería asistida con privacidad de código: repositorios propietarios que no pueden enviarse a la nube se construyen localmente con Kerberos, evitando la exposición del código fuente a servicios externos.
+- Automatización de tareas de mantenimiento en Python: añadir funciones, exportar símbolos y escribir tests que fallan primero, siguiendo el orden de tareas de la spec, con validación mediante pytest.
+- Integración en pipelines de CI/CD locales: el modelo puede ejecutarse con llama.cpp u Ollama en runners con GPU de consumo o Apple Silicon para aplicar cambios menores y verificar tests antes de fusionar.
+- Prototipado rápido de utilidades y módulos: para desarrolladores que quieren pasar de una tabla de comportamiento (entradas y resultados) a código funcional con tests sin escribir manualmente el boilerplate.
+- Agente de build en escritorio: en la próxima versión de Warden (anunciada pero no publicada), Kerberos se ofrece como modelo local de construcción con todas las llamadas a herramientas verificadas contra políticas del usuario.
+- Evaluación comparativa de modelos agénticos: servir como referencia local reproducible (misma cuantización y runtime) para medir tasas de éxito en tareas de ingeniería de software.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor sobre 54 tareas retenidas de 32 repositorios Python de codigo abierto (commits fusionados reproducidos, tres intentos por tarea, misma cuantizacion de 3 bits y mismo runtime para todos los modelos):
+Evaluación sobre 54 tareas retenidas de 32 repositorios Python de código abierto, tres intentos por tarea, misma cuantización de 3 bits y mismo runtime para todos los modelos.
 
 | Medida | Modelo base | Kerberos 0.1 | Cambio (puntos) | Intervalo 95% | Tareas / repos |
 |---|---|---|---|---|---|
-| Tests del proyecto (evaluacion) | 61,1% | 61,5% | +0,3 | -6,2 a +6,9 | 54 / 32 |
+| Tests upstream (evaluación) | 61,1% | 61,5% | +0,3 | -6,2 a +6,9 | 54 / 32 |
 | Tests de la spec | 56,8% | 57,8% | +0,9 | -3,2 a +5,2 | 54 / 32 |
+| Timeouts (intentos) | 51 de 162 | 33 de 161 | — | — | — |
 
-| Metrica de proceso | Modelo base | Kerberos 0.1 |
-|---|---|---|
-| Intentos agotados por tiempo | 51 de 162 | 33 de 161 |
+Comprobación de regresión contra el base (72 intentos en JavaScript, TypeScript, PHP y shell, chat y tool calls): builds 23 de 24 en ambos; chat 24 de 24 frente a 23; tool calls 20 de 24 frente a 22 (caída en el límite, dos ítems con un intento cada uno).
 
-Comprobacion de regresion contra el base (72 intentos en JavaScript, TypeScript, PHP y shell, chat y tool calls):
+Referencia de frontera: 39 de 54 tareas (72%) superadas con un parche por tarea (Claude escribiendo el parche desde la misma spec y repositorio, solo evaluación).
 
-| Categoria | Modelo base | Kerberos 0.1 |
-|---|---|---|
-| Builds | 23 de 24 | 23 de 24 |
-| Chat | 23 de 24 | 24 de 24 |
-| Tool calls | 22 de 24 | 20 de 24 |
-
-Referencia frontier, solo para escala: 39 de 54 tareas (72%) superan los tests del proyecto con un unico parche por tarea, generado por un modelo frontier a partir de la misma spec y repositorio. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria: 13,2 GB para el unico fichero publicado (UD-IQ3_XXS). El autor lo orienta a Macs con 24-31 GB de memoria unificada.
-- GPU dedicadas: no se documentan requisitos ni pruebas en A100, H100 o RTX 4090. Por tamano del fichero, cabe en GPUs consumer con 16 GB o mas de VRAM, aunque el autor no lo certifica.
-- Consumer GPU: si, en tarjetas con al menos 16 GB de VRAM para el fichero IQ3_XXS; en Macs con 24 GB o mas de memoria unificada segun el autor.
-- Despliegue: llama.cpp (`llama-server`), Ollama (`ollama run hf.co/WardenOfPluto/Kerberos-35B-A3B-GGUF:UD-IQ3_XXS`) y LM Studio. No se documentan vLLM ni TGI para este GGUF.
-- Parametros de inferencia recomendados por el autor: `--jinja -c 65536 -fa on --temp 0.6 --top-k 20 --top-p 0.95 --min-p 0`.
-- Latencia y throughput: no disponibles. Si se documenta que en tareas largas sobre un Mac de 24 GB se agota el tiempo en 33 de 161 intentos.
+- VRAM/memoria: 13,2 GB para el archivo GGUF UD-IQ3_XXS; recomendado Mac con 24-31 GB de memoria unificada según la model card.
+- GPU: no se especifican modelos concretos de GPU en la información disponible; el archivo está pensado para Apple Silicon con memoria unificada.
+- Consumer GPU: cabe en GPUs de consumo con al menos 16 GB de VRAM efectiva para el archivo, aunque la model card solo cita Macs de 24-31 GB; no se confirma compatibilidad con RTX 4090 u otras en la información disponible.
+- Despliegue: llama.cpp (`llama-server`), Ollama (`ollama run hf.co/WardenOfPluto/Kerberos-35B-A3B-GGUF:UD-IQ3_XXS`), LM Studio (búsqueda por `WardenOfPluto/Kerberos-35B-A3B-GGUF`). vLLM y TGI no se mencionan.
+- Configuración recomendada: `--jinja -c 65536 -fa on --temp 0.6 --top-k 20 --top-p 0.95 --min-p 0`.
+- Latencia y throughput: no disponibles. La model card advierte que tareas largas pueden agotar el tiempo en un Mac de 24 GB (33 de 161 intentos con timeout).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en la evaluacion del autor | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento en tareas retenidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kerberos 35B-A3B 0.1 | 34,66 B totales / ~3 B activos | 65.536 tokens (configurado) | 61,5% tests del proyecto; 57,8% tests de spec | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3.6-35B-A3B (base) | 34,66 B totales / ~3 B activos | mismo que Kerberos | 61,1% tests del proyecto; 56,8% tests de spec | Apache 2.0 | Pesos completos y GGUF de terceros (Unsloth) |
-| Modelo frontier de referencia (sin identificar) | no disponible | no disponible | 72% tests del proyecto (un parche por tarea) | no disponible | API en la nube |
+| Kerberos 35B-A3B 0.1 | 34,66B totales / ~3B activos | 65.536 | 61,5% upstream; 57,8% spec | Apache 2.0 | GGUF en HF (860 descargas) |
+| Qwen3.6-35B-A3B (base) | 34,66B totales / ~3B activos | no disponible | 61,1% upstream; 56,8% spec | Apache 2.0 (según base) | safetensors + GGUF |
+| Claude (referencia de frontera) | no disponible | no disponible | 72% (39/54) | propietaria | API en nube |
 
-No se dispone de datos para comparar con otras alternativas de la misma categoria (ajustes finos orientados a agentes de codigo) en la informacion proporcionada.
+No se dispone de datos de otros modelos locales comparables (por ejemplo, derivados agénticos de Qwen) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado y evaluado exclusivamente en Python; otros lenguajes solo estan cubiertos por la comprobacion de regresion, con una caida en tool calls (20 de 24 frente a 22 de 24 del base).
-- No esta entrenado para escribir especificaciones ni para planificar cambios grandes de forma autonoma; depende de una spec externa.
-- La cuantizacion de 3 bits introduce perdida de calidad frente al modelo a precision completa, tanto en el base como en Kerberos.
-- En tareas largas sobre un Mac de 24 GB puede agotar el tiempo: 33 de 161 intentos retenidos frente a 51 de 162 del base.
-- La mejora medida esta dentro del ruido estadistico (+0,3 puntos, intervalo de -6,2 a +6,9); no debe interpretarse como una ganancia de capacidad demostrada.
-- Un intento de los 162 se perdio por un error del arnes de evaluacion (fichero con bytes crudos), ya corregido.
-- Riesgo de alucinacion no cuantificado en la informacion disponible; el modelo opera sobre repositorios reales y tests ejecutables, lo que mitiga pero no elimina el riesgo de ediciones incorrectas.
-- Sesgos conocidos: no documentados.
-- Licencia Apache 2.0, permisiva para uso comercial; el autor no impone restricciones adicionales mas alla de las del modelo base.
-- Version 0.1 temprana, con descargas y valoraciones nulas en el momento de la consulta; sin benchmark publico con scorer reproducible (anunciado para una version posterior).
+- Entrenado y evaluado exclusivamente en tareas Python; otros lenguajes solo cubiertos por la comprobación de regresión.
+- No entrenado para escribir especificaciones ni para planificar cambios grandes de forma autónoma; requiere una spec previa.
+- Cuantización de 3 bits: se pierde algo de calidad respecto al modelo a precisión completa, tanto en el base como en Kerberos.
+- Tareas largas pueden agotar el tiempo en Macs de 24 GB (33 de 161 intentos retenidos con timeout).
+- La mejora medida está dentro del ruido estadístico (+0,3 puntos con intervalo de -6,2 a +6,9); no debe presentarse como ganancia de rendimiento.
+- Caída observada en tool calls en la regresión (20 de 24 frente a 22 de 24), en el límite del check; conviene vigilarla.
+- Un intento de 162 se perdió por un error del harness de puntuación (archivo con bytes crudos), ya corregido.
+- Idioma declarado solo inglés; sesgos no documentados en la información disponible.
+- Riesgo de alucinación no cuantificado en la información disponible; al operar sobre repositorios reales, validar siempre con los tests del proyecto.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de entrenamiento imponen sus propias condiciones (repositorios MIT, Apache 2.0 y BSD).
+- Versión 0.1 temprana; el benchmark público con scorer reproducible aún no se ha publicado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/WardenOfPluto/Kerberos-35B-A3B-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Receta de cuantizacion de referencia (Unsloth, Qwen3.6-35B-A3B UD-IQ3_XXS): no disponible como enlace directo en la informacion proporcionada
-- Plataforma de entrenamiento Tinker: no disponible como enlace directo en la informacion proporcionada
-- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada
+- [Hugging Face: WardenOfPluto/Kerberos-35B-A3B-GGUF](https://huggingface.co/WardenOfPluto/Kerberos-35B-A3B-GGUF)
+- [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
+- [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [Ollama](https://ollama.com)
+- [LM Studio](https://lmstudio.ai)
+- [Tinker (plataforma de fine-tuning)](https://thinkingmachines.ai/tinker/)
+- [Unsloth (receta de cuantización)](https://unsloth.ai)
+- [Together AI (servicio de GLM 5.3)](https://www.together.ai)

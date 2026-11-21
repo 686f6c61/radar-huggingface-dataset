@@ -5,7 +5,7 @@
   "author": "RakshithFury",
   "url": "https://huggingface.co/RakshithFury/Maatu-15m-base",
   "created_at": "2026-11-20T11:50:40.000Z",
-  "updated_at": "2026-11-20T12:06:59.000Z",
+  "updated_at": "2026-11-20T14:40:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "dataset:ai4bharat/sangraha",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 15040622,

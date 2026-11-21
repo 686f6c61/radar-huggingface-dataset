@@ -2,98 +2,88 @@
 
 ## Resumen
 
-Esta ficha cubre `lfm2.5-2.6b-fable5-coding-agent-GGUF`, un repositorio de cuantizaciones GGUF publicado por el usuario tinyopsec a partir del modelo `AyoubChLin/lfm2.5-2.6b-fable5-coding-agent`. Este, a su vez, es un ajuste fino (SFT de parametros completos) orientado a agentes de programacion construido sobre `LiquidAI/LFM2.5-2.6B`, el modelo denso de 2,7 B parametros de Liquid AI disenado para cargas de trabajo agenticas con ventana de contexto de 131K tokens y tool calling nativo.
+`tinyopsec/lfm2.5-2.6b-fable5-coding-agent-GGUF` es un conjunto de cuantizaciones GGUF del checkpoint `AyoubChLin/lfm2.5-2.6b-fable5-coding-agent`, un ajuste fino supervisado de parámetros completos (full-parameter SFT) sobre el modelo base `LiquidAI/LFM2.5-2.6B`. El modelo está especializado en tareas de agente de programación: generación de código y uso de herramientas (tool calling) dentro de flujos de trabajo multi-paso. Lo publica el usuario `tinyopsec`, que no es el autor del ajuste fino original sino quien produce y distribuye las cuantizaciones en formato GGUF mediante llama.cpp.
 
-El valor del repositorio esta en su portabilidad: ofrece 13 cuantizaciones distintas (de F16 a Q2_K) producidas con llama.cpp, lo que permite ejecutar el modelo en portatiles, mini-PC y GPUs de consumo. El modelo base se promociona como capaz de planificar, llamar herramientas y ejecutar tareas multi-paso a 220 tok/s ocupando menos de 2,5 GB, lo que lo situa en la categoria de modelos agenticos on-device.
+El interés práctico de esta publicación es la disponibilidad del checkpoint en un rango amplio de cuantizaciones (desde F16 hasta Q2_K), lo que permite ejecutar un modelo de 2.697.198.592 parámetros en hardware de consumo. El repositorio ocupa 26,3 GB en total porque incluye todas las variantes de cuantización, aunque cada archivo individual es mucho más pequeño (el F16 son 5,2 GB).
 
-Es relevante porque los agentes de codigo pequenos y autoalojados son una tendencia creciente: permiten automatizar tareas de desarrollo sin depender de APIs de pago ni enviar codigo a la nube. Conviene tener en cuenta que se trata de un checkpoint comunitario sin evaluaciones publicadas, cuyo propio autor advierte que debe evaluarse antes de usarse.
+La información pública es escasa: no se detallan idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks. La licencia es la LFM Open License v1.0, heredada del modelo base, y el autor advierte explícitamente que se trata de un checkpoint de agente de programación que debe evaluarse antes de usarse.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida (bloques convolucionales de alcance corto + bloques de atencion), densa, familia LFM2.5 de Liquid AI |
-| Parametros totales | 2.697.198.592 (≈2,7 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens (131K, heredada del modelo base) |
+| Arquitectura | no disponible (modelo base LFM2.5 de LiquidAI; no se detalla en la model card) |
+| Parametros totales | 2.697.198.592 |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | No disponible |
+| Idiomas soportados | no disponible |
 | Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | GGUF (13 ficheros cuantizados; tamano total del repositorio: 26,3 GB) |
+| Formato de pesos | GGUF (generado con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, LFM2.5-2.6B, pertenece a la familia Liquid Foundation Models (LFM) de Liquid AI. Emplea una arquitectura hibrida densa que combina bloques convolucionales de alcance corto con bloques de atencion agrupada, un diseno pensado para inferencia eficiente en dispositivos de borde. Segun la documentacion oficial, es un modelo de razonamiento que "siempre piensa antes de responder" (emite un bloque de razonamiento previo a la respuesta final) y esta entrenado para funcionar de forma fiable dentro de harnesses de agentes como Hermes Agent, OpenClaw o Pi, con soporte nativo de tool calling.
+El modelo es un ajuste fino de parámetros completos (full-parameter SFT) del checkpoint `LiquidAI/LFM2.5-2.6B`, orientado a tareas de agente de programación y uso de herramientas. La model card no especifica la arquitectura interna del modelo base (transformer, híbrido u otra variante), ni el número de tokens de entrenamiento, ni la composición del dataset de SFT. Tampoco se documenta si hubo etapas de RLHF, DPO u otras fases de alineamiento posteriores al SFT.
 
-Sobre este base se aplico un ajuste fino SFT de parametros completos (full-finetune) especializado en tareas de agente de codigo, segun indica la model card. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens, ni sobre el uso de tecnicas posteriores como RLHF o DPO: no disponible. Las cuantizaciones GGUF fueron generadas con llama.cpp.
+La contribución técnica de este repositorio concreto es la conversión a GGUF mediante llama.cpp y la publicación de trece variantes de cuantización, desde F16 hasta Q2_K, con Q4_K_M marcada como recomendada por el autor. No se documentan innovaciones arquitectónicas propias ni técnicas de decodificación especulativa en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline text-generation, etiqueta conversational).
-- Comportamiento como agente de codigo: planificacion de tareas, uso de herramientas (tool-use) y ejecucion de tareas multi-paso.
-- Razonamiento previo a la respuesta (thinking mode heredado del modelo base, que siempre razona antes de contestar).
-- Tool calling nativo, entrenado para integrarse en harnesses de agentes (Hermes Agent, OpenClaw, Pi).
-- Ventana de contexto de 131K tokens, util para trabajar con bases de codigo o documentos extensos.
-- Ejecucion local via llama.cpp y runtimes GGUF compatibles (Ollama, LM Studio, koboldcpp).
-- Capacidades multilingues: no disponible.
-- Vision, audio u otras modalidades: no disponibles.
+- Generación de texto y código en el contexto de tareas de programación.
+- Uso de herramientas (tool calling / function calling), según las etiquetas `tool-use` y `coding-agent` del repositorio.
+- Comportamiento orientado a agentes, con razonamiento multi-paso implícito en el ajuste fino para tareas de codificación.
+- Ejecución en runtimes compatibles con GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y otros.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no documentados.
 
 ## Casos de uso
 
-- **Agente de programacion local en CLI o editor:** gracias al tool calling nativo y al SFT especifico en agentes de codigo, puede integrarse en harnesses como Hermes Agent u OpenClaw para leer ficheros, ejecutar comandos y editar codigo sin salir de la maquina local.
-- **Automatizacion de tareas multi-paso:** el modelo base esta optimizado para planificar y encadenar llamadas a herramientas, por lo que sirve para flujos tipo "buscar en el repositorio, aplicar un cambio, ejecutar tests e informar del resultado".
-- **Revision de codigo y pull requests grandes:** la ventana de 131K tokens permite cargar ficheros largos o conjuntos de diffs completos en contexto antes de pedir analisis o refactorizaciones.
-- **Despliegue en dispositivos de borde:** con cuantizaciones Q4 ocupa en torno a 1,7 GB y el modelo base se promociona a 220 tok/s en menos de 2,5 GB, lo que lo hace viable en portatiles, mini-PC o SBCs sin GPU dedicada.
-- **Prototipado de agentes sin coste de API:** al ser pesos abiertos ejecutables con Ollama o LM Studio, permite experimentar con bucles agenticos sin gastar tokens de pago ni exponer codigo propietario a servicios externos.
-- **Chatbot de soporte tecnico interno autoalojado:** su tamano reducido y el formato GGUF facilitan montar un asistente conversacional con acceso a herramientas en infraestructura propia, util cuando la privacidad del codigo es un requisito.
-- **Integracion en pipelines de CI/CD:** puede emplearse como paso automatizado para generar mensajes de commit, documentacion o casos de test a partir del diff, ejecutandose en el runner si este dispone de al menos 2-3 GB de memoria.
-- **Generacion y depuracion de codigo en hardware modesto:** la cuantizacion Q4_K_M (recomendada por el autor) ofrece un equilibrio entre calidad y huella que cabe en GPUs de 4-6 GB de VRAM.
+- Asistente de codificación en local: con la cuantización Q4_K_M se puede desplegar un agente de programación en un portátil o estación de trabajo sin GPU dedicada de gama alta, usando llama.cpp u Ollama, para autocompletar, explicar y refactorizar código.
+- Integración en editores e IDE: el modelo puede conectarse a extensiones que consuman una API compatible con OpenAI (el tag `endpoints_compatible` lo sugiere) para ofrecer sugerencias de código con contexto del proyecto.
+- Automatización de tareas de agente con herramientas: al estar ajustado para tool use, puede orquestar llamadas a funciones (lectura de ficheros, ejecución de comandos, consultas a APIs) en pipelines de automatización de desarrollo.
+- Prototipado rápido de agentes de código: su tamaño reducido permite iterar en local sobre prompts y flujos de agente antes de escalar a modelos mayores, reduciendo coste y latencia de experimentación.
+- Entornos con restricciones de privacidad: al ejecutarse íntegramente en local, es adecuado para procesar código propietario sin enviarlo a servicios externos.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye trece variantes, lo que facilita medir el impacto de la cuantización en la calidad de generación de código para un mismo checkpoint.
+- Docencia y experimentación: sirve para estudiar el comportamiento de un agente de código pequeño y ajustado por SFT completo en entornos académicos con hardware limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este ajuste fino (ni MMLU, HumanEval, GSM8K ni metricas agenticas). El unico dato de rendimiento disponible procede del anuncio del modelo base por parte de Liquid AI: 220 tok/s de throughput en menos de 2,5 GB de huella para cargas agenticas. No hay comparativas publicadas contra otros modelos para este checkpoint concreto, por lo que no se pueden citar numeros sin inventarlos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM/RAM estimada para inferencia** (tamano aproximado del fichero GGUF para 2,7 B parametros; valores orientativos):
-  - F16: 5,2 GB (dato de la model card) — recomendables 6-8 GB de memoria.
-  - Q8_0: ≈2,9 GB.
-  - Q6_K: ≈2,3 GB.
-  - Q5_K_M / Q5_K_S: ≈1,9-2,0 GB.
-  - Q4_K_M / Q4_K_S / Q4_0: ≈1,6-1,7 GB (Q4_K_M es la recomendada por el autor).
-  - Q3_K_L/M/S: ≈1,4-1,5 GB.
-  - Q2_K: ≈1,1 GB (calidad notablemente degradada).
-- **GPU recomendadas:** cualquier GPU moderna de consumo es suficiente; con Q4_K_M caben en tarjetas de 4 GB, y con holgura en RTX 3060 12 GB, RTX 4060 8 GB o RTX 4090. La inferencia solo por CPU tambien es viable dado el tamano reducido.
-- **Consumer GPUs:** si, es uno de los puntos fuertes del modelo; Liquid AI indica que el base funciona en dispositivos de borde con menos de 2,5 GB.
-- **Opciones de despliegue:** llama.cpp (comando de ejemplo en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. No se menciona soporte para vLLM o TGI en este repositorio (al ser GGUF, la via natural es el ecosistema llama.cpp).
-- **Latencia y throughput:** el modelo base se promociona a 220 tok/s en dispositivos de borde segun Liquid AI; no hay mediciones publicadas para este ajuste fino ni para hardware concreto: no disponible.
+- VRAM estimada para inferencia según cuantización (basada en el tamaño de los ficheros publicados y el número de parámetros): F16 ≈ 5,2 GB; Q8_0 ≈ 2,9 GB; Q6_K ≈ 2,2 GB; Q5_K_M ≈ 1,9 GB; Q4_K_M ≈ 1,6 GB; Q3_K_M ≈ 1,3 GB; Q2_K ≈ 1,0 GB. Estas cifras son estimaciones a partir del tamaño del modelo y deben verificarse con el tamaño real de cada fichero.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para las cuantizaciones de 4 bits; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes con holgura. El modelo también puede ejecutarse en CPU.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones de 4 bits o inferiores con GPUs de 4 GB o más; las variantes de 8 bits y F16 requieren 6-8 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| LFM2.5-2.6B (base de este ajuste) | 2,7 B (denso) | 131K | LFM Open License v1.0 | Agente on-device, tool calling nativo, razonamiento |
-| Qwen2.5-Coder-3B-Instruct | 3,1 B | 32K (ampliable a 128K con YaRN) | Apache 2.0 | Especializado en codigo |
-| Phi-4-mini-instruct (3.8B) | 3,8 B | 128K | MIT | Uso general con razonamiento |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| tinyopsec/lfm2.5-2.6b-fable5-coding-agent-GGUF | 2,7 B | no disponible | Agente de código / tool use | LFM Open License v1.0 | GGUF |
+| LiquidAI/LFM2.5-2.6B (base) | 2,7 B | no disponible | Propósito general | LFM Open License v1.0 | safetensors |
+| AyoubChLin/lfm2.5-2.6b-fable5-coding-agent (original) | 2,7 B | no disponible | Agente de código / tool use | no disponible | safetensors |
 
-Comparacion qualitativa: frente a Qwen2.5-Coder-3B, este modelo ofrece una ventana de contexto mucho mayor de serie y un entrenamiento explicito para bucles agenticos con herramientas, mientras que el modelo de Qwen tiene una licencia mas permisiva (Apache 2.0) y un historial de benchmarks publicados en tareas de codigo. Frente a Phi-4-mini, la ventaja esta en la orientacion agenticay en la eficiencia de la arquitectura hibrida; la desventaja, en la madurez y trazabilidad de las evaluaciones. No hay numeros de benchmark que permitan una comparacion cuantitativa directa: no disponible.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La comparación se limita a parámetros, licencia y formato de distribución.
 
 ## Limitaciones y advertencias
 
-- **Checkpoint comunitario sin validacion publica:** el ajuste fino no publica benchmarks, tiene 0 descargas y 0 likes en el momento de redactar la ficha, y la propia model card incluye el aviso "Coding-agent checkpoint. Evaluate before use". No se recomienda uso en produccion sin evaluacion propia.
-- **Riesgo de alucinacion:** tipico de modelos de ~2,7 B parametros, agravado en tareas de codigo donde errores sintacticos o APIs inventadas son frecuentes en modelos pequenos. Mantener supervision humana o validacion por tests.
-- **Cuantizaciones agresivas:** Q2_K y la familia Q3 degradan sensiblemente la calidad, especialmente en generacion de codigo; priorizar Q4_K_M o superior.
-- **Licencia no estandar:** la licencia es LFM Open License v1.0 (etiqueta "other"), no Apache 2.0 ni MIT; revisar sus terminos antes de cualquier uso comercial. Ademas, existe una discrepancia: el repositorio GGUF del autor original (AyoubChLin) aparece etiquetado como apache-2.0, mientras que este repositorio declara LFM Open License v1.0; conviene aclarar la licencia aplicable antes de desplegar.
-- **Idiomas:** las capacidades multilingues no estan documentadas para este ajuste fino; el rendimiento en castellano no esta garantizado y probablemente el modelo este optimizado para ingles.
-- **Contexto largo:** aunque la ventana es de 131K tokens, no hay datos publicados sobre la calidad del modelo en posiciones lejanas del contexto; verificar empiricamente en casos de uso con repositorios grandes.
-- **Thinking mode:** al ser un modelo que siempre razona antes de responder, consume tokens adicionales por respuesta, lo que reduce el contexto util y aumenta la latencia percibida en respuestas cortas.
+- La model card advierte explícitamente que es un checkpoint de agente de programación y que debe evaluarse antes de su uso en producción.
+- No se documentan sesgos conocidos, pero al ser un ajuste fino sobre un modelo base sin información pública sobre su dataset, no se puede descartar la presencia de sesgos heredados.
+- Riesgo de alucinación: no cuantificado; al ser un modelo de 2,7 B parámetros, la fiabilidad en tareas de código complejo es limitada en comparación con modelos mayores.
+- No se especifican los idiomas soportados ni la longitud de contexto, lo que impide garantizar un comportamiento correcto en castellano o en contextos largos.
+- La licencia LFM Open License v1.0 impone condiciones que deben revisarse antes de un uso comercial; la etiqueta "other" en Hugging Face indica que no es una licencia estándar de código abierto.
+- El repositorio incluye trece cuantizaciones en un único espacio de 26,3 GB; conviene descargar solo el fichero necesario.
+- No hay información sobre el proceso de conversión a GGUF ni sobre posibles degradaciones de calidad en las cuantizaciones más agresivas (Q2_K, Q3_K_S).
 
 ## Enlaces
 
-- Repositorio de esta ficha (GGUF): https://huggingface.co/tinyopsec/lfm2.5-2.6b-fable5-coding-agent-GGUF
-- Modelo original ajustado (safetensors): https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent
-- Repositorio GGUF alternativo del autor original: https://huggingface.co/AyoubChLin/LFM2.5-2.6B-fable5-coding-agent-GGUF
-- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Blog oficial de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
-- Documentacion oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-2.6b
-- Ficha en LLM Explorer: https://llm-explorer.com/model/AyoubChLin%2Flfm2.5-2.6b-fable5-coding-agent,2Mhb3ILfg1Hy4HpJEryJjc
+- Repositorio GGUF: https://huggingface.co/tinyopsec/lfm2.5-2.6b-fable5-coding-agent-GGUF
+- Modelo base del ajuste fino: https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent
+- Modelo original de LiquidAI: https://huggingface.co/LiquidAI/LFM2.5-2.6B
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai
+- koboldcpp: https://github.com/LostRuins/koboldcpp

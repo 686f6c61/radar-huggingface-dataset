@@ -2,85 +2,100 @@
 
 ## Resumen
 
-`gpt-oss-20b-keep30-MXFP4-GGUF` es un derivado estructural del modelo open-weight `openai/gpt-oss-20b`, publicado por el usuario Joakimpalm-Zen. A diferencia de una cuantización convencional, este artefacto aplica una poda de expertos: cada capa del mezcla de expertos (MoE) reduce su roster de 32 a 30 expertos, seleccionados a partir de datos de routing medidos. Los tensores de los expertos conservan su formato nativo MXFP4, sin requantizar, y el enrutamiento top-4 se mantiene intacto.
+gpt-oss-20b-keep30-MXFP4-GGUF es un derivado estructural del modelo openai/gpt-oss-20b, publicado por el autor independiente Joakimpalm-Zen dentro de su proyecto de investigación Xyntetik sobre poda y cuantización. El modelo conserva 30 de los 32 expertos por capa del MoE original (elimina 2 expertos por capa) manteniendo los pesos de los supervivientes en formato MXFP4, y se distribuye únicamente como GGUF para su uso con motores de inferencia locales. Con 19.719.810.576 parámetros totales y un repositorio de 11,5 GB, se posiciona como una variante algo más ligera del modelo base de OpenAI.
 
-El archivo resultante, en formato GGUF, ocupa 11,5 GB y está diseñado para ejecutarse en máquinas con aproximadamente 12 GB de memoria. Su principal caso de uso es el despliegue local de un modelo de razonamiento con capacidades de tool calling, especialmente en entornos con presupuesto de tokens limitado, gracias al motor de inferencia `xyntetik-runner` que incorpora recuperación de truncamiento forzado en llamadas a herramientas.
+La relevancia de esta ficha no está en su calidad —el propio autor la describe como un «artefacto de investigación, no un lanzamiento de propósito general»— sino en su valor documental: es el primer derivado estructuralmente podado que el proyecto publicó y se conserva como «near-miss» con las métricas de fidelidad a la vista tras una remedición. El autor indica explícitamente que el modelo no supera el listón de fidelidad frente a su modelo padre, por lo que debe tratarse como un primo más pequeño del original, no como un equivalente funcional.
 
-El autor publica una nota de estado medido (2026-08-15) indicando que el artefacto no supera el umbral de calidad actual: el top-1 re-gated es de 89,0% (98,5% con margen cualificado) frente al 97,5% originalmente reportado, con una divergencia KLD media de 0,062 contra un límite de 0,05. A pesar de ello, se mantiene publicado con sus números abiertos como un "casi aprobado" medido.
+El modelo está pensado para servirse con xyntetik-runner, un motor de inferencia en C11 sin dependencias con servidor compatible con OpenAI, cuya característica diferencial es la recuperación de truncamiento forzado en tool calls. La licencia es Apache 2.0, heredada del modelo base.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) con poda estructural de expertos (30 de 32 por capa) |
-| Parametros totales | 19.719.810.576 (~19,7B) |
-| Parametros activos | no disponible |
+| Arquitectura | MoE (mezcla de expertos) derivada de gpt-oss-20b, con poda de expertos (30 de 32 por capa) |
+| Parámetros totales | 19.719.810.576 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 nativo (tensores de expertos sin requantizar) |
+| Tipos de cuantización | MXFP4 (pesos de los expertos supervivientes sin recuantizar); GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con tensores MXFP4) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (fichero `gpt-oss-20b-keep30-MXFP4.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `gpt-oss-20b` de OpenAI es un transformer de mezcla de expertos con 32 expertos por capa y enrutamiento top-4, post-entrenado con cuantización MXFP4 de los pesos MoE para reducir su huella de memoria. Este derivado aplica una modificación estructural: cada capa MoE reduce su roster de expertos de 32 a 30, seleccionados a partir de datos de routing medidos. Los tensores de los expertos permanecen en su formato MXFP4 nativo, sin requantizar, y el enrutamiento top-4 se conserva. El número reducido de expertos se declara en los metadatos GGUF, lo que permite que runtimes que resuelven `num_experts` desde el archivo lo carguen sin cambios; aquellos que asumen "gpt-oss ⇒ 32 expertos" fallarán.
+El modelo parte de openai/gpt-oss-20b, un transformer con arquitectura de mezcla de expertos (MoE). La modificación aplicada es una poda estructural a nivel de experto: se conservan 30 de los 32 expertos de cada capa y se descartan los 2 restantes, sin recuantizar los pesos de los expertos que sobreviven, que permanecen en MXFP4. No se ha realizado un reentrenamiento posterior a la poda; se trata de una transformación directa del checkpoint del modelo base.
 
-No se ha realizado un entrenamiento adicional sobre el modelo base; la poda es puramente estructural basada en datos de routing. El autor no proporciona detalles sobre el dataset de entrenamiento original, que corresponde al modelo base de OpenAI.
+El autor documenta el método en la propia model card y en el dataset de evidencia del proyecto (informe de frontera de poda sobre un tercer checkpoint, Nemotron). No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO, ya que el modelo hereda el entrenamiento del padre y no se ha reentrenado. La innovación técnica destacable no está en el modelo sino en el ecosistema que lo acompaña: el motor xyntetik-runner implementa decodificación restringida que mantiene la forma de las tool calls bajo cuantización y recuperación de truncamiento forzado, cerrando un documento JSON a la terminación legal más pequeña cuando se agota el presupuesto de tokens.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: al ser un derivado de `gpt-oss-20b`, hereda las capacidades de razonamiento del modelo base, que según OpenAI supera a modelos abiertos de tamaño similar en tareas de razonamiento.
-- Tool calling / function calling: el modelo es compatible con llamadas a herramientas, y el motor `xyntetik-runner` implementa recuperación de truncamiento forzado: cuando una llamada a herramienta excede su presupuesto de tokens, el runner cierra el documento JSON al esquema más pequeño legal, garantizando que los argumentos sean parseables.
-- Compatibilidad con agentes y razonamiento multi-paso: el modelo base está diseñado para uso de herramientas y razonamiento, lo que se traslada a este derivado.
-- Despliegue flexible: al ser GGUF, puede ejecutarse con distintos runtimes (llama.cpp, Ollama, etc.) siempre que resuelvan correctamente el número de expertos desde los metadatos.
+- Generación de texto conversacional y respuesta a instrucciones, heredadas del modelo base gpt-oss-20b.
+- Soporte de tool calling / function calling mediante el protocolo Harmony, nativo en el modelo base y en el runner recomendado.
+- Compatibilidad con decodificación restringida por esquema: el runner garantiza la conformidad de forma de la tool call hasta Q4_0 (conformidad de esquema y selección de herramienta al 100% en la escalera de cuantización medida; la coincidencia de argumentos decae al 50%).
+- Recuperación de truncamiento forzado en tool calls cuando se sirve con xyntetik-runner: devuelve argumentos parseables aunque se agote el presupuesto.
 - Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo de razonamiento (thinking), visión o audio: no disponibles en la información proporcionada.
+- Compatibilidad con cualquier release de Runner (protocolo Harmony nativo).
 
 ## Casos de uso
 
-- Despliegue local en hardware de consumo: con un archivo de 11,5 GB y un requisito de ~12 GB de memoria, puede ejecutarse en portátiles con Apple Silicon (16 GB) o GPUs de gama media (RTX 3060 12 GB, RTX 4060 Ti 16 GB) para prototipado y desarrollo.
-- Agentes autónomos con tool calling en entornos de contexto limitado: gracias a la recuperación de truncamiento forzado del runner, los agentes pueden completar llamadas a herramientas incluso cuando el presupuesto de tokens se agota, evitando reintentos desde cero.
-- Servidor OpenAI-compatible local: el runner expone un endpoint `/v1` compatible con la API de OpenAI, permitiendo integrar el modelo en aplicaciones existentes con mínimos cambios.
-- Evaluación de técnicas de poda de expertos: este artefacto sirve como caso de estudio para medir el impacto de eliminar expertos en un MoE, con métricas de calidad publicadas abiertamente.
-- Generación de código asistida en entornos sin conexión: el modelo base tiene capacidades de código, y el formato GGUF permite su uso en herramientas de autocompletado locales.
-- Investigación en cuantización MXFP4 y poda estructural: los metadatos y la documentación permiten reproducir el proceso y comparar con otros derivados.
+- Investigación sobre poda de expertos en MoE: el modelo sirve como punto de referencia reproducible para estudiar el impacto de eliminar 2 de 32 expertos por capa sobre la fidelidad respecto al padre, con métricas de KLD y top-1 publicadas.
+- Evaluación de motores de inferencia locales: permite comparar el comportamiento de xyntetik-runner frente a vLLM, llama.cpp, Ollama, TensorRT-LLM y SGLang en escenarios de truncamiento de tool calls, usando un modelo de ~20B como carga de trabajo realista.
+- Pruebas de agentes con presupuesto de tokens ajustado: el runner cierra las tool calls truncadas a un documento legal, lo que permite validar bucles de agente que terminan en lugar de reintentar desde cero cuando el contexto es escaso.
+- Docencia y divulgación sobre cuantización MXFP4 y formatos GGUF: el repositorio de 11,5 GB y la documentación de la escalera de cuantización facilitan demostraciones prácticas en hardware de gama alta de consumo.
+- Validación de pipelines de decodificación restringida: útil para verificar que la conformidad de esquema se mantiene a través de cuantizaciones sucesivas antes de desplegar un modelo mayor en producción.
+- Benchmarking de fidelidad estructural: las tablas de KLD y top-1 cualificado por margen permiten calibrar umbrales de aceptación para futuros derivados podados del mismo proyecto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para este derivado específico en la información disponible. El autor reporta una métrica propia de calidad top-1 en 400 posiciones re-gated: 89,0% plain / 98,5% margin-qualified, con KLD media de 0,062 contra un límite de 0,05. También indica que la conformidad de esquema y la selección de herramientas se mantienen al 100% hasta Q4_0 en una escalera de cuantización, aunque el acuerdo de argumentos decayó al 50%. Estos datos provienen de la model card y no son benchmarks comparativos con otros modelos.
+| Métrica | Resultado | Umbral del autor |
+|---|---|---|
+| KLD medio (43.209 posiciones puntuadas, split held-out descontaminado, remedición 2026-08-28) | 0,07629 | 0,05 |
+| Top-1 cualificado por margen | 96,37% | 97% |
+
+El autor indica que el artefacto no supera el listón de calidad actual y falla ambos términos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo GGUF pesa 11,5 GB, por lo que se recomienda al menos 12 GB de memoria disponible (RAM o VRAM) para cargar el modelo completo.
-- GPUs recomendadas: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 o superiores; también compatible con Apple Silicon (M1 Pro/Max o superior) y CPUs con suficiente RAM.
-- En consumer GPU: sí, cabe en GPUs de 12 GB o más, aunque con cuantización MXFP4 nativa el uso de VRAM puede ser ajustado; se recomienda verificar con el runtime específico.
-- Opciones de despliegue: `xyntetik-runner` (motor C11 de un solo binario, CPU/CUDA/Metal), llama.cpp, Ollama u otros runtimes compatibles con GGUF que resuelvan `num_experts` desde metadatos.
-- Latencia y throughput: no disponibles; dependen del hardware y del runtime utilizado.
+- VRAM estimada para inferencia: el repositorio pesa 11,5 GB en MXFP4/GGUF, por lo que se necesita al menos ese espacio en memoria o VRAM para cargar los pesos, más overhead de contexto y caché KV.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, cabe en GPUs de 16 GB o más en MXFP4; para contexto largo se recomienda 24 GB o superior.
+- Cabe en GPU de consumo: sí, en modelos con 16 GB o más de VRAM (por ejemplo, RTX 4080/4090 o superiores), asumiendo que el contexto quepa en el espacio restante.
+- Opciones de despliegue: xyntetik-runner (recomendado por el autor, binario único C11 con CPU/CUDA/Metal y servidor compatible con OpenAI); también es un GGUF estándar, por lo que debería poder cargarse en llama.cpp u Ollama, aunque el autor solo valida el runner.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Expertos/capa | Routing | Formato | Tamaño archivo | Licencia |
-|---|---|---|---|---|---|---|
-| openai/gpt-oss-20b (original) | MoE | 32 | top-4 | MXFP4 (safetensors) | ~12,1 GB (GGUF) | Apache-2.0 |
-| **gpt-oss-20b-keep30-MXFP4-GGUF** | MoE podado | 30 | top-4 | GGUF (MXFP4) | 11,5 GB | Apache-2.0 |
-| Qwen3-Coder-30B-A3B-Instruct-keep120 (otro derivado del autor) | MoE | 120 (de 128) | no disponible | GGUF | no disponible | no disponible |
+| Modelo | Parámetros totales | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| gpt-oss-20b-keep30-MXFP4 (este) | 19.719.810.576 | no disponible | Apache 2.0 | GGUF (MXFP4) | 30/32 expertos por capa; falla umbral de fidelidad |
+| openai/gpt-oss-20b (padre) | no disponible | no disponible | Apache 2.0 | safetensors y otros | Modelo de referencia; 32/32 expertos |
+| Nemotron-3.5-Lightning-30B-A3B (usado como evidencia de poda) | no disponible | no disponible | no disponible | no disponible | Tercer checkpoint del estudio de frontera de poda |
 
-La principal diferencia con el original es la reducción de 2 expertos por capa, lo que reduce el tamaño del archivo en ~0,6 GB. El autor recomienda este derivado solo si se supera el umbral de calidad; en caso contrario, sugiere alternativas como `Qwen3-Coder-30B keep-120` o `gemma-4-E2B-it-Q4_0` para máquinas más pequeñas.
+No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El artefacto no pasa el estándar de calidad actual del autor: el top-1 re-gated es 89,0% (frente al 97,5% originalmente reportado) y la KLD media de 0,062 supera el límite de 0,05. Esto indica una posible degradación en la fidelidad de salida respecto al modelo base.
-- La poda de expertos puede afectar el rendimiento en tareas que dependen de los expertos eliminados, aunque el autor no detalla qué tareas específicas se ven más afectadas.
-- Riesgo de alucinación y sesgos: no se proporcionan datos específicos, pero al ser un modelo de lenguaje generativo, estos riesgos están presentes.
-- Compatibilidad con runtimes: cualquier runtime que asuma "gpt-oss ⇒ 32 expertos" fallará al cargar el archivo; solo funcionarán aquellos que lean `num_experts` desde los metadatos GGUF.
-- La licencia Apache-2.0 permite uso comercial, pero se debe revisar la política de uso de OpenAI para el modelo base.
-- El autor recomienda verificar el estado de calidad antes de usar en producción, dado que el artefacto se publica como "casi aprobado" y no como un derivado completamente validado.
+- El propio autor declara que el modelo no supera el listón de fidelidad actual: KLD 0,07629 frente a un límite de 0,05 y top-1 cualificado por margen del 96,37% frente a un límite del 97%.
+- No es un lanzamiento de propósito general: debe tratarse como un primo más pequeño del padre, no como un equivalente.
+- Al ser una poda sin reentrenamiento, es esperable una degradación de calidad respecto al modelo base, especialmente en tareas que dependían de los expertos eliminados.
+- Riesgo de alucinación: no cuantificado en la información disponible; se hereda el del modelo base y probablemente se incrementa por la poda.
+- Sesgos conocidos: no documentados en la información proporcionada; se heredan los del modelo base de OpenAI.
+- Idiomas soportados: no disponibles; no se ha verificado el rendimiento multilingüe tras la poda.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor desaconseja su uso en producción por la falta de fidelidad.
+- El soporte está validado únicamente con xyntetik-runner; otros motores pueden presentar comportamiento distinto en tool calling y truncamiento.
+- La fecha de creación del repositorio (2026-08-05) y la de actualización (2026-10-27) son posteriores a la remedición del 2026-08-28, lo que sugiere que el autor mantiene el artefacto publicado de forma deliberada como evidencia negativa.
 
 ## Enlaces
 
-- [Hugging Face: Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF](https://huggingface.co/Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF)
-- [GitHub: xyntetik-runner](https://github.com/Joakimpalm-Zen/xyntetik-runner)
-- [Documentación del benchmark de truncamiento](https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md)
-- [Modelo base: openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
-- [Model card de gpt-oss (OpenAI)](https://openai.com/index/gpt-oss-model-card/)
-- [Anuncio de gpt-oss (OpenAI)](https://openai.com/index/introducing-gpt-oss/)
-- [Repositorio GitHub de OpenAI gpt-oss](https://github.com/openai/gpt-oss)
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF
+- Modelo base: https://huggingface.co/openai/gpt-oss-20b
+- Colección del experimento (Pruning and Quantization Frontiers): https://huggingface.co/collections/Joakimpalm-Zen/xyntetik-research-pruning-and-quantization-frontiers-6aa98badc3307048c060ebe2
+- Dataset de evidencia (frontera de poda Nemotron): https://huggingface.co/datasets/Joakimpalm-Zen/Nemotron-3.5-Lightning-30B-A3B-prune-frontier-report
+- Repositorio del runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Fila de validación en el roster de soporte: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md#gpt-oss-20b-keep30-mxfp4
+- Documentación de conversión y poda: https://github.com/Joakimpalm-Zen/xyntetik-runner#models-and-conversion
+- Benchmark de truncamiento: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md
+- Formulario de solicitud de modelos: https://github.com/Joakimpalm-Zen/xyntetik-runner/issues/new?template=model_request.yml
+- Formulario de reporte de resultados: https://github.com/Joakimpalm-Zen/xyntetik-runner/issues/new?template=result_report.yml
+- Perfil del autor en Hugging Face: https://huggingface.co/Joakimpalm-Zen

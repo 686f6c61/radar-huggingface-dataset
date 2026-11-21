@@ -2,88 +2,91 @@
 
 ## Resumen
 
-Raon-1 nano es un modelo de lenguaje denso de 3,2 mil millones de parámetros desarrollado por KRAFTON AI, la división de inteligencia artificial de la editora surcoreana de videojuegos KRAFTON. El modelo está disenado para seguir instrucciones, mantener contexto conversacional y ejecutar llamadas a herramientas (tool calling) tanto en coreano como en inglés, y se distribuye bajo licencia Apache 2.0. Esta ficha concreta corresponde a la variante MLX, una cuantización a 4 bits con GPTQ (group size 64) pensada para ejecución en Apple Silicon.
+Raon-1 nano es un modelo de lenguaje denso de 3,2 mil millones de parámetros desarrollado por KRAFTON AI, diseñado para seguir instrucciones, mantener contexto conversacional y ejecutar llamadas a herramientas tanto en coreano como en inglés. Se distribuye bajo licencia Apache 2.0 y forma parte de la familia de modelos Raon. Esta ficha concreta describe la variante `KRAFTON/Raon-1-nano-mlx`, una conversión de los pesos originales al formato MLX para Apple Silicon, cuantizada a 4 bits con GPTQ (group size 64).
 
-La arquitectura es un transformer denso híbrido con 24 capas: 18 capas de Raon Delta Attention (atención lineal con delta-rule y estado recurrente de tamano fijo) y 6 capas de Gated MLA (atención completa con KV cache). Incorpora innovaciones propias como Raon-mHC (una versión optimizada de las manifold-constrained hyper-connections de DeepSeek) y embeddings por capa de 256 dimensiones. El contexto es de 262.144 tokens, con codificación posicional NoPE.
+La arquitectura es híbrida: combina 18 capas de atención lineal Raon Delta Attention (RDA) con 6 capas de Gated MLA, sobre un total de 24 capas. Emplea residuales Raon-mHC con cuatro flujos, embeddings por capa de 256 dimensiones y un vocabulario de 259.840 tokens. La ventana de contexto alcanza los 262.144 tokens, lo que la sitúa en la gama alta de modelos de su tamaño para tareas de contexto largo.
 
-Su relevancia actual radica en combinar contexto largo, tool calling y despliegue en dispositivo (on-device) en un modelo de tan solo 3,2B parámetros. La existencia de pesos en GGUF, MLX y LiteRT-LM, además de soporte en Transformers y vLLM, lo posiciona como candidato para asistentes locales y agentes ligeros. La variante MLX que aquí se documenta ocupa 1,9 GB en el repositorio.
+Su relevancia actual radica en dos factores: por un lado, ofrece contexto largo y soporte de tool calling en un modelo compacto que puede ejecutarse en hardware de consumo; por otro, la disponibilidad de pesos en MLX, GGUF (llama.cpp) y LiteRT-LM facilita el despliegue en dispositivos muy diversos, desde portátiles con Apple Silicon hasta servidores con GPU NVIDIA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso híbrido (18 capas Raon Delta Attention + 6 capas Gated MLA) |
-| Parametros totales | 3.130.797.136 (3,2B, incluye 1,6B de tabla de embeddings por capa) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Parametros totales | 3.130.797.136 (3,2B, incluye tabla de embeddings por capa de 1,6B) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | 4 bits GPTQ (group size 64) en esta variante MLX; BF16 y GGUF disponibles en el ecosistema |
+| Tipos de cuantizacion | 4 bits GPTQ (group size 64) en esta variante MLX; exportación BF16 disponible |
 | Idiomas soportados | Coreano e inglés |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX); GGUF y LiteRT-LM disponibles en otros repositorios |
 
+Otros datos técnicos: 24 capas, hidden size de 1.536, FFN intermedio de 6.144, activación SwiGLU, 16 cabezas de atención para RDA (dimensión 128) y 32 para Gated MLA (192 QK / 128 V), rango LoRA de query/KV de 512/512, codificación posicional NoPE, LM head atado al embedding de entrada, vocabulario de 259.840 tokens y tamaño de repositorio de 1,9 GB.
+
 ## Arquitectura y entrenamiento
 
-Raon-1 nano emplea una arquitectura densa de 24 capas con hidden size de 1.536 y FFN intermedio de 6.144 con activación SwiGLU. La atención es híbrida en proporción 3:1: 18 capas de Raon Delta Attention (atención lineal con regla delta, puertas separadas de borrado y escritura, y estado recurrente de tamano fijo) y 6 capas de Gated MLA (atención completa con LoRA rank 512 tanto en query como en KV). Solo las capas MLA mantienen KV cache, aproximadamente 7 KiB por token en BF16. Las cabezas son 16 para RDA y 32 para Gated MLA, con dimensión 128 en RDA y 192 QK / 128 V en MLA. El modelo no usa codificación posicional (NoPE).
+Raon-1 nano emplea una arquitectura densa con atención híbrida. Dieciocho de las 24 capas usan Raon Delta Attention (RDA), una atención lineal con regla delta con puertas de borrado y escritura separadas y un estado recurrente de tamaño fijo. Las seis capas restantes usan Gated MLA, que mantienen una caché KV de aproximadamente 7 KiB por token en BF16. Esta combinación reduce el coste de memoria en contextos largos frente a un transformer de atención completa equivalente.
 
-Dos innovaciones destacan sobre la arquitectura base: Raon-mHC, que reduce el coste computacional de las manifold-constrained hyper-connections de DeepSeek mediante cuatro flujos residuales, y los embeddings por capa, un vector aprendido de 256 dimensiones por token y capa que cada capa usa para ajustar su salida tras el MLP. El vocabulario es de 259.840 tokens y el LM head está atado a los embeddings de entrada. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; esa información no está disponible.
+El modelo incorpora dos innovaciones destacadas: Raon-mHC, una variante optimizada de las manifold-constrained hyper-connections de DeepSeek que reduce el coste computacional y acelera el entrenamiento, y embeddings por capa de 256 dimensiones que cada capa usa para ajustar su salida tras el MLP. El modelo no usa codificación posicional (NoPE). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la documentación proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno con ventana de 262.144 tokens.
-- Modo "thinking" activado por defecto en la plantilla de chat; el límite de tokens de salida incluye tanto el razonamiento como la respuesta final.
-- Tool calling / function calling, con ajustes de muestreo específicos para uso agéntico (temperature 1.0).
-- Seguimiento de instrucciones y respuesta a preguntas de conocimiento general.
-- Capacidades bilingües coreano-inglés.
-- Ejecución local en dispositivo mediante MLX, GGUF (llama.cpp) y LiteRT-LM.
-- No se documentan capacidades de visión, audio ni otras modalidades.
+- Generación de texto y razonamiento conversacional multi-turno en coreano e inglés.
+- Seguimiento de instrucciones y respuesta a preguntas de conocimiento.
+- Llamada a herramientas (tool calling / function calling) para integrarse en flujos agénticos.
+- Modo thinking activado por defecto en la plantilla de chat, con límite de tokens que incluye tanto el razonamiento como la respuesta final.
+- Contexto largo de hasta 262.144 tokens, adecuado para documentos extensos y conversaciones prolongadas.
+- Capacidades de código y tareas agénticas, con parámetros de muestreo recomendados específicos (temperature 1.0, presence_penalty 0.0).
+- Despliegue en dispositivo: pesos MLX para Apple Silicon, GGUF para llama.cpp y bundle LiteRT-LM.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: la variante MLX de 4 bits ocupa 1,9 GB y se ejecuta en Apple Silicon sin GPU dedicada, lo que permite asistentes privados que no envían datos a la nube.
-- Agente con tool calling en pipelines de automatización: con temperature 1.0 y soporte de function calling, puede encadenar llamadas a APIs y razonamiento multi-paso en tareas de extracción o enrutamiento.
-- Procesamiento de documentos largos: el contexto de 262.144 tokens permite resumir o consultar contratos, informes o transcripciones extensas en una sola pasada, con un KV cache reducido gracias a las capas RDA.
-- Atención al cliente bilingüe coreano-inglés: el modelo mantiene contexto conversacional y puede integrarse en un servidor compatible con OpenAI (vLLM) para gestionar sesiones multi-turno.
-- Generación y asistencia de código en entornos agénticos: el ajuste de muestreo recomendado para código y agentes (temperature 1.0) sugiere uso en tareas de autocompletado o edición guiada por herramientas.
-- Despliegue en dispositivos de borde: el bundle LiteRT-LM y los pesos GGUF permiten ejecutar el modelo en CPU, NVIDIA, AMD y Apple Silicon dentro de aplicaciones locales con requisitos de latencia moderados.
+- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a sus 262.144 tokens de ventana, manteniendo el hilo de la conversación y llamando a herramientas de consulta de pedidos o estado de cuenta.
+- Generación de código en producción: soporta tool calling y puede integrarse en pipelines de CI/CD para autocompletar, revisar o generar pruebas, con parámetros de muestreo ajustados para tareas agénticas.
+- Asistentes agénticos multi-paso: el modo thinking y la llamada a funciones permiten encadenar razonamiento y acciones sobre APIs externas en flujos de automatización.
+- Procesamiento de documentos largos: con 262.144 tokens de contexto puede resumir, extraer información o responder preguntas sobre contratos, informes o bases de conocimiento extensas.
+- Despliegue en portátiles Apple Silicon: la variante MLX de 4 bits (1,9 GB) permite ejecutar el modelo localmente en Macs con memoria unificada, útil para prototipado y aplicaciones de privacidad.
+- Aplicaciones bilingües coreano-inglés: adecuado para servicios de traducción, soporte o contenido dirigido a ambos mercados sin necesidad de modelos separados.
+- Inferencia en el borde con LiteRT-LM: el bundle LiteRT-LM permite desplegar el modelo en entornos con recursos limitados donde no hay GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una imagen con resultados de benchmarks (`raon-1-nano-benchmark.png`), pero los valores numéricos no están disponibles en el texto proporcionado. No se han publicado resultados de benchmarks en la información disponible.
+La model card incluye una imagen con resultados de benchmarks (`raon-1-nano-benchmark.png`), pero los valores numéricos no están disponibles en el texto proporcionado. No se han publicado resultados de benchmarks en la información disponible en formato tabular.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 2 GB para la variante MLX de 4 bits (repo de 1,9 GB); en BF16 el modelo completo ronda los 6,3 GB de pesos.
-- GPU recomendadas: cualquier Apple Silicon para la variante MLX; GPU NVIDIA o AMD para GGUF y vLLM; CPU para llama.cpp.
-- Cabe en GPU de consumo: sí, en tarjetas con 4-8 GB de VRAM en cuantización de 4 bits (por ejemplo RTX 3060, RTX 4060, RTX 4090 con margen amplio).
-- Opciones de despliegue: Transformers (`trust_remote_code=True`), vLLM, llama.cpp, MLX y LiteRT-LM.
+- VRAM estimada: la variante MLX de 4 bits ocupa 1,9 GB en disco, por lo que la inferencia requiere aproximadamente 2-3 GB de memoria unificada o VRAM, más la caché KV (unos 7 KiB por token en BF16 solo en las capas MLA).
+- GPU recomendadas: Apple Silicon (M1/M2/M3/M4) para la variante MLX; GPU NVIDIA (A100, H100, RTX 4090) y AMD para la variante GGUF con llama.cpp; CPU también soportada vía llama.cpp.
+- Cabe en GPU de consumo: sí, con la cuantización de 4 bits es viable en GPUs consumer con 8 GB o más de VRAM y en Macs con memoria unificada.
+- Opciones de despliegue: Transformers (con `trust_remote_code=True`), vLLM, llama.cpp, MLX y LiteRT-LM. Se puede lanzar un servidor compatible con OpenAI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Raon-1 nano (MLX) | 3,2B denso | 262.144 | Apache 2.0 | Hugging Face (MLX, GGUF, LiteRT-LM, Transformers, vLLM) |
+| Raon-1 nano (MLX) | 3,2B | 262.144 | Apache 2.0 | MLX, GGUF, Transformers, LiteRT-LM |
 | Alternativas de ~3B | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada para establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se documentan coreano e inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Riesgo de alucinación: no se documentan evaluaciones de veracidad ni tasas de alucinación.
-- Sesgos: no se publica información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- Contexto: aunque la ventana es de 262.144 tokens, no se documenta el rendimiento en tareas de recuperación en contexto largo (needle-in-a-haystack).
-- Modo thinking: activado por defecto, lo que incrementa el consumo de tokens de salida; hay que ajustar `max_new_tokens` en consecuencia.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero conviene verificar las condiciones de los artefactos derivados (GGUF, LiteRT-LM) por si difieren.
-- Esta variante MLX está cuantizada a 4 bits con GPTQ, lo que puede degradar ligeramente la calidad frente a BF16; la model card indica que existe una exportación BF16 para MLX.
+- Idiomas limitados a coreano e inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de fidelidad factual.
+- Sesgos conocidos: no disponibles en la documentación proporcionada.
+- El modo thinking está activado por defecto y consume tokens del límite de generación; es necesario ajustar `max_new_tokens` para respuestas largas.
+- La variante MLX está cuantizada a 4 bits con GPTQ, lo que puede introducir una ligera degradación de calidad frente a los pesos BF16 originales.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base y de las dependencias (Transformers, vLLM, llama.cpp).
+- Para producción en contextos largos, la caché KV de las capas MLA (unos 7 KiB por token) debe dimensionarse adecuadamente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/KRAFTON/Raon-1-nano-mlx
+- Hugging Face (variante MLX): https://huggingface.co/KRAFTON/Raon-1-nano-mlx
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-nano
-- Playground: https://raon-console.krafton.ai/playground/guest
 - Página de KRAFTON AI: https://krafton.ai/en/
-- Organización en Hugging Face: https://huggingface.co/KRAFTON
-- X (Twitter) de KRAFTON AI: https://x.com/Krafton_AI
-- Discord de la comunidad: https://discord.gg/sDG7mmZPnc
+- Perfil de KRAFTON en Hugging Face: https://huggingface.co/KRAFTON
+- Playground de Raon: https://raon-console.krafton.ai/playground/guest
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- X de KRAFTON AI: https://x.com/Krafton_AI
+- Discord de la comunidad: https://discord.gg/sDG7mmZPnc

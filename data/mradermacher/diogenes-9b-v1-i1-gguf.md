@@ -2,78 +2,98 @@
 
 ## Resumen
 
-Diogenes-9B-v1-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Diogenes-9B-v1, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene el modelo original, sino una serie de versiones comprimidas generadas con cuantizacion ponderada (weighted/imatrix) a partir de los pesos publicados por TendieLabs. Esta orientado a su uso con motores de inferencia que consumen GGUF, como llama.cpp u Ollama.
+Diogenes-9B-v1-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix, del modelo Diogenes-9B-v1 desarrollado por TendieLabs. El repositorio lo mantiene mradermacher, un cuantizador de referencia en la comunidad de llama.cpp, y su propósito es hacer desplegable en hardware de consumo un modelo de 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) que de otro modo requeriría pesos BF16 de unos 18 GB. El modelo base se apoya en la arquitectura Qwen 3.5, según las etiquetas de la model card, y se distribuye como un merge con adaptadores LoRA entrenados mediante supervisión (SFT) sobre el dataset NousResearch/arete-data-pairs.
 
-La informacion disponible sobre el modelo es muy limitada. La model card del repositorio se limita a listar los tipos de cuantizacion generados y a indicar el origen de los pesos; no incluye datos sobre arquitectura, entrenamiento, licencia, idiomas ni capacidades. El autor del modelo original (TendieLabs) no aparece descrito en la informacion proporcionada.
+La relevancia de esta ficha es doble. Por un lado, documenta un modelo de investigación orientado a la transferencia de comportamiento (behavior transfer) y al ajuste conversacional en inglés, con etiquetas que mencionan MTP (multi-token prediction) y un origen experimental. Por otro, ejemplifica el flujo habitual de la comunidad: un modelo base publicado por un laboratorio pequeño se cuantiza en más de veinte variantes (desde Q2_K de 4,0 GB hasta Q6_K de 7,7 GB) para que pueda ejecutarse en GPUs de consumo, CPUs con RAM suficiente o incluso portátiles con 8-16 GB de memoria unificada.
 
-El repositorio registra 0 descargas y 0 likes, y fue creado el 13 de noviembre de 2026. El campo de parametros totales reportado (2.559.128) no es coherente con el nombre "9B" del modelo, por lo que debe interpretarse con cautela: probablemente corresponde a un recuento parcial o erroneo del repositorio y no al tamano real del modelo.
+Conviene subrayar que la información pública disponible es escasa: no hay model card detallada del modelo base en los datos proporcionados, no se declaran benchmarks, no se especifica licencia y el idioma declarado es únicamente inglés. Esta ficha refleja fielmente esa limitación y marca como "no disponible" todo aquello que no puede verificarse.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el dato reportado, 2.559.128, no es coherente con la denominacion "9B") |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de safetensors del modelo original) |
+| Arquitectura | Transformer basada en Qwen 3.5 (según etiquetas de la model card); detalles de capas y atención no disponibles |
+| Parametros totales | 9.197.093.888 (~9,2 B) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF: i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además hay cuantizaciones estáticas en mradermacher/Diogenes-9B-v1-GGUF |
+| Idiomas soportados | Inglés (declarado en la model card); otros idiomas no disponibles |
+| Licencia | No disponible |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye presumiblemente en safetensors/BF16, aunque no se confirma en los datos aportados |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo original Diogenes-9B-v1. El nombre sugiere un modelo de aproximadamente 9.000 millones de parametros, pero no se confirma en la informacion proporcionada. No hay datos sobre el tipo de transformer, atencion, capas, cabezas, funcion de activacion ni sobre el tokenizador.
+El modelo base TendieLabs/Diogenes-9B-v1 se presenta como un merge de un modelo Qwen 3.5 con adaptadores LoRA, según las etiquetas `merged`, `lora`, `supervised-fine-tuning` y `behavior-transfer`. El entrenamiento supervisado se realizó sobre el dataset NousResearch/arete-data-pairs, un corpus de pares de conversación orientado a instrucciones y comportamiento conversacional. La etiqueta `mtp` sugiere el uso de multi-token prediction, una técnica de entrenamiento que predice varios tokens futuros por paso para mejorar la eficiencia de muestreo, aunque no se detalla su implementación ni el número de tokens de entrenamiento.
 
-Tampoco se dispone de informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) o innovaciones tecnicas. La unica informacion tecnica concreta es que las cuantizaciones se han generado con el metodo weighted/imatrix, una tecnica que pondera las matrices de cuantizacion segun la importancia de los pesos para preservar mejor la calidad en compresiones agresivas.
+No se dispone de información sobre el número total de tokens de entrenamiento, la composición detallada del dataset, la existencia de fases de RLHF o DPO, ni innovaciones arquitectónicas específicas más allá de la base Qwen 3.5. Tampoco se documenta la longitud de contexto nativa ni si se aplicó algún tipo de extensión de contexto. La cuantización i1 con imatrix de mradermacher aplica una matriz de importancia calculada sobre un corpus de calibración para preservar mejor los pesos relevantes en cuantizaciones agresivas (Q2, Q3), lo que en la práctica mejora la perplejidad frente a cuantizaciones estáticas del mismo tamaño.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la informacion disponible.
-- No se confirma soporte de generacion de codigo, matematicas, vision, audio ni modo de razonamiento explicito.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirma el conjunto de idiomas soportados.
-- La unica capacidad verificable es la de ejecucion en motores compatibles con GGUF (llama.cpp, Ollama y derivados).
+- Generación de texto conversacional en inglés, con foco en instrucciones y diálogo multi-turno.
+- Razonamiento de propósito general heredado de la base Qwen 3.5, sin benchmarks publicados que lo confirmen.
+- Capacidad de código y matemáticas: no confirmada explícitamente en la información disponible.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según la model card; otros idiomas no declarados.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Etiqueta `endpoints_compatible` en Hugging Face, lo que indica compatibilidad con la API de inferencia de Hugging Face.
 
 ## Casos de uso
 
-- Inferencia local en CPU o GPU de gama consumer: al estar distribuido en GGUF con cuantizaciones desde Q2 hasta Q6, puede ejecutarse en equipos con recursos limitados usando llama.cpp u Ollama, aunque el rendimiento real depende del modelo base, que no esta documentado.
-- Experimentacion con cuantizacion: el repositorio permite comparar la degradacion de calidad entre distintos niveles de cuantizacion (Q2_K frente a Q6_K) sobre el mismo modelo base.
-- Despliegue en entornos con memoria restringida: las variantes IQ1, IQ2 y Q2 permiten cargar el modelo en hardware muy limitado, a costa de una perdida de calidad no cuantificada en la informacion disponible.
-- Evaluacion comparativa de metodos de cuantizacion: util para investigadores que estudien el impacto de las cuantizaciones ponderadas (imatrix) frente a las estandar.
-- Prototipado rapido de aplicaciones de texto: si el modelo base resulta adecuado, las variantes Q4_K_M o Q5_K_M ofrecen un equilibrio razonable entre tamano y fidelidad para pruebas de concepto.
-- Uso educativo: el repositorio sirve como ejemplo practico de publicacion de cuantizaciones GGUF derivadas de un modelo original.
+- Asistente conversacional autoalojado en inglés: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo con 8-16 GB de VRAM usando i1-Q4_K_M (5,9 GB), ofreciendo un asistente privado sin dependencia de APIs externas.
+- Prototipado de investigación en transferencia de comportamiento: al ser un merge LoRA sobre Qwen 3.5 entrenado con SFT, sirve para estudiar cómo se transfieren estilos y comportamientos desde adaptadores al modelo fusionado, comparando las distintas cuantizaciones i1 frente a las estáticas.
+- Evaluación de calidad de cuantizaciones: el repositorio incluye el fichero imatrix y más de veinte variantes, lo que permite medir la degradación de perplejidad y calidad conversacional entre Q2_K y Q6_K en un mismo modelo.
+- Generación de texto en pipelines de CI para pruebas de regresión: al ser GGUF y ejecutable en CPU, puede integrarse en tests automatizados que verifiquen respuestas del modelo sin requerir GPU dedicada.
+- Despliegue en hardware con memoria unificada: en equipos Apple Silicon con 16 GB, la variante i1-Q4_K_S (5,6 GB) deja margen suficiente para contexto y sistema, permitiendo uso interactivo local.
+- Fine-tuning posterior o destilación: las cuantizaciones de mayor precisión (Q6_K, 7,7 GB) o los pesos BF16 del modelo base permiten usar Diogenes como profesor en destilación o como punto de partida para nuevos adaptadores LoRA en inglés.
+- Chat de bajo consumo en entornos educativos: con i1-IQ3_M (4,6 GB) puede ejecutarse en GPUs de 6-8 GB para demostraciones de inferencia local en cursos de IA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision, ya que no se confirma el numero real de parametros. Para un modelo de aproximadamente 9.000 millones de parametros, las estimaciones orientativas serian: Q2_K en torno a 3-4 GB, Q4_K_M en torno a 5-6 GB, Q6_K en torno a 7-8 GB y pesos sin cuantizar en torno a 18 GB en FP16.
-- GPU recomendadas: no disponible. Como referencia general, las variantes Q4 y Q5 podrian caber en GPU consumer con 8-12 GB de VRAM; las variantes Q6 requeririan 12 GB o mas; las variantes sin cuantizar requeririan GPU profesionales como A100 o H100.
-- Cabe en GPU consumer: probablemente si en las cuantizaciones bajas y medias, sujeto a confirmacion del tamano real del modelo.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF (por ejemplo, LM Studio o servidores basados en llama.cpp). No se confirma compatibilidad con vLLM o TGI para este formato.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (pesos + overhead de contexto y KV cache):
+  - i1-Q2_K: ~4,0 GB de pesos; ~5-6 GB totales con contexto moderado.
+  - i1-IQ3_M / i1-Q3_K_M: ~4,6-4,8 GB de pesos; ~6-7 GB totales.
+  - i1-Q4_K_M: ~5,9 GB de pesos; ~7-8 GB totales.
+  - i1-Q5_K_M: ~6,7 GB de pesos; ~8-9 GB totales.
+  - i1-Q6_K: ~7,7 GB de pesos; ~9-10 GB totales.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090 para las variantes Q5/Q6 con contexto largo; A100/H100 no son necesarias para un modelo de 9 B, pero permiten mayor throughput por batch.
+- Cabe en GPU de consumo: sí, desde una RTX 3060 12 GB o RTX 4060 8 GB con cuantizaciones Q3/Q4; también en Apple Silicon con 16 GB de memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF; el modelo base es compatible con transformers (etiqueta `transformers`).
+- Latencia y throughput estimados: no disponibles en la información proporcionada; dependerá del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no identifica modelos comparables de la misma categoria, mismo tamano o misma tarea, ni ofrece datos de rendimiento que permitan una comparacion rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Diogenes-9B-v1 (este) | ~9,2 B | No disponible | No disponible | GGUF (i1 y estáticas) | Merge LoRA sobre Qwen 3.5, SFT con arete-data-pairs, solo inglés |
+| Qwen 3.5 (base) | Variable según variante | No disponible | No disponible en esta ficha | Safetensors, GGUF en la comunidad | Modelo original del que deriva Diogenes; referencia arquitectónica |
+| Llama 3.1 8B | ~8 B | 128 K tokens (según documentación pública de Meta) | Llama 3.1 Community License | Safetensors, GGUF | Alternativa de tamaño similar con ecosistema amplio y benchmarks publicados |
+| Mistral 7B / Ministral 8B | ~7-8 B | 32 K / variable | Apache 2.0 (Mistral 7B) | Safetensors, GGUF | Alternativa con licencia permisiva y buen soporte de cuantizaciones |
+
+La comparación es aproximada: no hay benchmarks de Diogenes-9B-v1 que permitan situarlo frente a estas alternativas en MMLU, HumanEval o GSM8K. La principal ventaja de Diogenes es su naturaleza experimental (transferencia de comportamiento, MTP) y la disponibilidad de cuantizaciones i1 con imatrix; su principal desventaja es la falta de licencia declarada y de documentación sobre contexto y rendimiento.
 
 ## Limitaciones y advertencias
 
-- La informacion sobre el modelo original es practicamente inexistente: no se conocen arquitectura, entrenamiento, licencia ni idiomas.
-- El dato de parametros totales reportado (2.559.128) es incoherente con la denominacion "9B"; no debe usarse como referencia fiable.
-- La licencia no esta disponible, por lo que no se puede confirmar si se permite el uso comercial. Antes de usarlo en produccion, debe verificarse la licencia del modelo original en TendieLabs/Diogenes-9B-v1.
-- Las cuantizaciones agresivas (Q2, IQ1, IQ2) pueden degradar de forma notable la calidad de las respuestas; se recomienda validar la variante elegida con evaluaciones propias.
-- Riesgo de alucinacion: no cuantificado, pero inherente a los modelos de lenguaje; sin datos de entrenamiento ni evaluaciones, no puede acotarse.
-- Sesgos conocidos: no disponibles.
-- Limitaciones de contexto e idioma: no disponibles.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
-- La fecha de creacion (2026) y la ausencia de metadatos completos aconsejan tratar el repositorio con precaucion y verificar su integridad antes de usarlo.
+- Sesgos conocidos: no documentados; al entrenarse sobre un dataset de pares conversacionales en inglés, es probable que herede sesgos del corpus y de la base Qwen 3.5, pero no se han publicado análisis.
+- Riesgo de alucinación: no cuantificado; como modelo de 9 B sin benchmarks públicos, se recomienda validación humana en usos sensibles.
+- Limitaciones de contexto e idioma: solo se declara inglés; la longitud de contexto no está disponible, lo que impide planificar aplicaciones con documentos largos.
+- Restricciones de licencia: la licencia no está disponible en la información proporcionada, por lo que no puede confirmarse el uso comercial. Es imprescindible consultar el repositorio del modelo base (TendieLabs/Diogenes-9B-v1) antes de desplegarlo en producción.
+- Caveat de cuantización: las variantes Q2_K e IQ2 pueden degradar notablemente la calidad; mradermacher recomienda IQ3_XXS o IQ3_S frente a Q2_K, y Q4_K_M como opción equilibrada.
+- Modelo de investigación: las etiquetas `research` y `behavior-transfer` sugieren que no está optimizado para producción ni sometido a evaluaciones de seguridad.
+- Fecha de creación futura (2026-11-13) en los metadatos de Hugging Face: conviene verificar la vigencia y el estado del repositorio antes de depender de él.
+- Sin garantías de soporte: el mantenedor es un cuantizador independiente, no el autor del modelo; los problemas del modelo base deben reportarse a TendieLabs.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Diogenes-9B-v1-i1-GGUF
-- Modelo original: https://huggingface.co/TendieLabs/Diogenes-9B-v1
+- Repositorio GGUF i1: https://huggingface.co/mradermacher/Diogenes-9B-v1-i1-GGUF
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Diogenes-9B-v1-GGUF
+- Modelo base: https://huggingface.co/TendieLabs/Diogenes-9B-v1
+- Dataset de entrenamiento: https://huggingface.co/datasets/NousResearch/arete-data-pairs
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Diogenes-9B-v1-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

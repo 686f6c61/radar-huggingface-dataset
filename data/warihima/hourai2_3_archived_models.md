@@ -2,52 +2,50 @@
 
 ## Resumen
 
-`WariHima/hourai2_3_archived_models` es un repositorio de modelos archivados de la familia Hourai, publicados por el usuario WariHima en Hugging Face. No se trata de un modelo unico, sino de un contenedor que agrupa varios checkpoints descartados o retirados de uso activo por el autor, tal como indica la model card (en japones): modelos de embedding y modelos de tareas NLP (clasificacion de sentimiento, subjetividad, toxicidad y NER) de las generaciones hourai2 y hourai3.
+`WariHima/hourai2_3_archived_models` es un repositorio de modelos archivados del proyecto Hourai, publicado por el usuario WariHima en Hugging Face. No se trata de un modelo único, sino de una colección de pesos de modelos pequeños (embeddings, clasificadores de tareas NLP y prototipos de conversión de texto japonés) que el autor ha retirado de uso activo porque han sido superados por alternativas más recientes dentro de su propio ecosistema.
 
-El repositorio incluye pesos en formato safetensors y GGUF, con un total declarado de 9.725.008 parametros en safetensors, aunque ese dato corresponde a la suma o al mayor de los checkpoints incluidos y no a un unico modelo coherente. El tamano del repo es de 0,8 GB. No se declara pipeline, licencia ni idiomas soportados de forma explicita.
+El repositorio contiene pesos en formato safetensors y GGUF, con un total de 9.725.008 parámetros en el conjunto de tensores safetensors y un tamaño de repo de 3,3 GB. La model card está redactada en japonés y describe los motivos de archivo de cada familia de modelos: los embeddings fueron reemplazados por modelos RWKV de 20k a 60k parámetros con rendimiento superior; los clasificadores NLP (sentimiento, subjetividad, toxicidad, NER) fueron superados por un modelo `moderbert wmm 10m` y sus derivados; y los prototipos de conversión kanji-lectura y kana-kanji dejaron de ser necesarios al existir correctores específicos de homófonos y homógrafos.
 
-La relevancia de este repositorio es limitada: su interes es documental o arqueologico para quien siga la evolucion de la familia Hourai, no como modelo listo para produccion. El propio autor indica que estos modelos fueron sustituidos por alternativas de mayor rendimiento (modelos de embedding basados en RWKV de 20k a 60k parametros y un modelbert wmm de 10m para tareas NLP), por lo que se archivan como referencia.
+Por su naturaleza de repositorio de archivo, no es un modelo pensado para uso en producción ni para evaluación comparativa. Su relevancia es documental: permite trazar la evolución del proyecto Hourai y entender qué aproximaciones se descartaron. No se dispone de información sobre licencia, idiomas soportados ni pipeline de uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no especifica arquitectura por checkpoint) |
-| Parametros totales | 9.725.008 (dato agregado de safetensors) |
-| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Arquitectura | no disponible (la model card menciona modelos tipo embedding, clasificadores NLP y prototipos de conversión, sin detallar arquitectura) |
+| Parametros totales | 9.725.008 (suma de tensores safetensors del repo) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (presente en varios checkpoints); niveles concretos no disponibles |
-| Idiomas soportados | no disponible (varios checkpoints llevan sufijo `-ja`, lo que sugiere japones) |
+| Tipos de cuantizacion | GGUF (presente en el repo); niveles concretos no disponibles |
+| Idiomas soportados | no disponible (la model card y los nombres de modelo sugieren japonés: sufijos `-ja`, tareas de kanji/kana) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna de cada checkpoint. La model card lista nombres de modelos que permiten inferir la composicion del repositorio: modelos de embedding (`hourai2-10m-embedding`, `hourai2-50m-embedding`, `hourai3-7m-embedding-ja`), variantes con dimension reducida (`hourai2-10m-64dim-embedding`, `hourai2-pl-2m-32dim`), modelos base (`hourai2-50m-base`, `hourai3-7m-base-ja`), un encoder a nivel de telefono (`hourai2-pl-*`) y clasificadores de tareas NLP de 90m (`hourai3-ja-sentiment-binary-90m-v1`, `hourai3-ja-subjectivity-90m-v1`, `hourai3-ja-toxicity-90m-v1`, `hourai3-ner-ja-90m-v1`).
+No se dispone de información sobre la arquitectura interna de los modelos del repositorio. La model card únicamente enumera los modelos archivados y los motivos por los que se retiraron, sin describir capas, mecanismos de atención, tipo de transformer ni detalles de entrenamiento. Los nombres de los modelos indican tamaños que van desde 2 millones hasta 90 millones de parámetros (`hourai2-pl-2m-32dim`, `hourai3-ja-sentiment-binary-90m-v1`, etc.), lo que sugiere una familia de modelos pequeños orientados a tareas específicas de NLP en japonés.
 
-No se especifican datos de entrenamiento (numero de tokens, composicion del dataset), ni si hubo RLHF, DPO o cualquier otra fase de ajuste. Tampoco se documentan innovaciones tecnicas. El unico dato contextual relevante es el motivo de archivo: los modelos de embedding fueron reemplazados por modelos RWKV de 20k a 60k parametros con rendimiento superior, y los clasificadores NLP fueron sustituidos por un modelbert wmm de 10m. La model card menciona ademas un `hourai4-unused-draft` sin detallar.
+Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. La única información técnica indirecta es la mención a modelos RWKV como alternativa superior para embeddings, lo que indica que el autor experimentó con arquitecturas recurrentes además de transformers.
 
 ## Capacidades
 
-- Generacion de embeddings de frases y de telefonos (checkpoints `*-embedding` y `*-pl-*`), en varias dimensiones (32, 64 y dimension completa).
-- Clasificacion de sentimiento binario en japones (`hourai3-ja-sentiment-binary-90m-v1`).
-- Deteccion de subjetividad en japones (`hourai3-ja-subjectivity-90m-v1`).
-- Deteccion de toxicidad en japones (`hourai3-ja-toxicity-90m-v1`).
-- Reconocimiento de entidades nombradas en japones (`hourai3-ner-ja-90m-v1`).
-- Modelos base de 7m y 50m parametros (`hourai3-7m-base-ja`, `hourai2-50m-base`) para ajuste posterior.
-- Soporte de tool calling, function calling, agentes y razonamiento multi-paso: no disponible.
-- Capacidades de vision o audio: no disponibles.
-- Capacidades multilingues: no documentadas; los sufijos `-ja` apuntan a un foco en japones.
+- Generación de embeddings de frases y de nivel telefónico (modelos `hourai2-*-embedding`, `hourai2-pl-*`).
+- Clasificación de sentimiento binario en japonés (`hourai3-ja-sentiment-binary-90m-v1`).
+- Clasificación de subjetividad en japonés (`hourai3-ja-subjectivity-90m-v1`).
+- Detección de toxicidad en japonés (`hourai3-ja-toxicity-90m-v1`).
+- Reconocimiento de entidades nombradas en japonés (`hourai3-ner-ja-90m-v1`).
+- Conversión de kanji a lectura (prototipo `hourai yomi`).
+- Conversión de kana a kanji (prototipo `hourai zenz`).
+- No se documenta soporte de tool calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Recuperacion semantica en japones con modelos ligeros: los checkpoints de embedding de 7m a 50m parametros permiten indexar y buscar documentos en un corpus japones con un coste computacional minimo, aunque el autor los considera inferiores a sus sustitutos RWKV.
-- Clasificacion de sentimiento en resenas o tickets: `hourai3-ja-sentiment-binary-90m-v1` puede etiquetar polaridad binaria en texto japones en pipelines de analitica de opinion.
-- Moderacion de contenido en japones: `hourai3-ja-toxicity-90m-v1` sirve como filtro preliminar de toxicidad, siempre que se valide su calidad frente al modelbert que lo sustituyo.
-- Extraccion de entidades en documentos japoneses: `hourai3-ner-ja-90m-v1` permite identificar personas, organizaciones y lugares en textos estructurados o no estructurados.
-- Deteccion de subjetividad para curación de datasets: `hourai3-ja-subjectivity-90m-v1` ayuda a separar opiniones de hechos al construir corpus de entrenamiento.
-- Investigacion sobre la evolucion de modelos pequenos: el repositorio sirve como referencia historica para comparar checkpoints de 7m a 90m parametros de la familia Hourai y entender que configuraciones fueron descartadas y por que.
-- Despliegue en entornos con recursos muy limitados: las variantes GGUF de pocos millones de parametros pueden ejecutarse en CPU o en GPUs de gama baja para pruebas de concepto, sin garantias de calidad de produccion.
+- Archivado y trazabilidad de experimentos: el repositorio sirve para conservar versiones descartadas del proyecto Hourai y poder reproducir decisiones técnicas pasadas. Es adecuado porque agrupa pesos y motivos de archivo en un único lugar.
+- Investigación sobre embeddings japoneses de baja dimensión: los modelos `hourai2-pl-2m-32dim` y `hourai2-10m-64dim-embedding` permiten estudiar el comportamiento de embeddings de 32 y 64 dimensiones en frases cortas, aunque el autor los considera superados.
+- Análisis de sentimiento en japonés como referencia histórica: `hourai3-ja-sentiment-binary-90m-v1` puede usarse para comparar contra `moderbert wmm 10m` y medir la mejora que motivó el archivo.
+- Detección de toxicidad en foros o comentarios japoneses: el clasificador de 90M podría integrarse en un filtro previo, siempre que se acepte que su rendimiento es inferior al de los modelos que lo reemplazaron.
+- NER en japonés para pipelines de extracción de entidades: `hourai3-ner-ja-90m-v1` ofrece una base de 90M parámetros para prototipado rápido en entornos con pocos recursos.
+- Estudio de conversión kanji-lectura y kana-kanji: los prototipos `hourai yomi` y `hourai zenz` documentan aproximaciones basadas en modelos de lenguaje que el autor descartó en favor de correctores específicos de homófonos.
 
 ## Benchmarks y rendimiento
 
@@ -55,34 +53,28 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma agregada; los checkpoints individuales van de 2m a 90m parametros, por lo que en fp32 un modelo de 90m ocupa aproximadamente 0,36 GB y uno de 10m unos 0,04 GB, sin contar overhead.
-- GPU recomendadas: no disponibles; por tamano, cualquier GPU consumer moderna (RTX 3060 o superior) o incluso CPU es suficiente para los checkpoints mas pequenos.
-- Cabe en GPU consumer: si, con amplio margen, dado el tamano reducido de los checkpoints.
-- Opciones de despliegue: llama.cpp u Ollama para las variantes GGUF; safetensors requiere frameworks de inferencia estandar (PyTorch, transformers) aunque no se documenta compatibilidad.
+- VRAM estimada: no disponible con precisión. Con 9,7 millones de parámetros en safetensors, la inferencia en fp32 requeriría aproximadamente 39 MB de pesos; en fp16, unos 19 MB. El tamaño del repo (3,3 GB) incluye múltiples modelos y variantes GGUF, no un único checkpoint.
+- GPU recomendadas: cualquier GPU consumer moderna puede alojar los modelos individuales, dado su tamaño reducido (2M a 90M parámetros). No se dispone de recomendaciones del autor.
+- Cabe en GPU consumer: sí, previsiblemente en cualquier GPU con al menos 1-2 GB de VRAM libre, aunque no se documenta el consumo real.
+- Opciones de despliegue: los pesos GGUF sugieren compatibilidad con llama.cpp y derivados (Ollama, etc.); los safetensors permiten carga con `transformers` o `safetensors`. No se documenta soporte de vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| hourai2_3_archived_models | 9.725.008 (agregado) | no disponible | no disponible | Hugging Face | Repositorio de modelos archivados, sin benchmarks |
-| Sustitutos citados por el autor (RWKV 20k-60k) | 20k-60k | no disponible | no disponible | no disponible en el repo | Segun el autor, rendimiento superior en embedding |
-| modelbert wmm 10m | 10m | no disponible | no disponible | no disponible en el repo | Sustituto de los clasificadores NLP de 90m |
-
-No se dispone de datos suficientes para comparar con alternativas publicas de la misma categoria.
+No disponible. No se conocen modelos comparables directos para este repositorio de archivo, y la model card no ofrece datos de rendimiento que permitan una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Repositorio de modelos archivados: el autor los retira por haber sido superados por alternativas propias, por lo que no se recomienda su uso en produccion.
-- Ausencia de licencia declarada: no se puede asumir permiso para uso comercial ni redistribucion.
-- Sin informacion sobre sesgos, evaluacion de calidad ni datos de entrenamiento.
-- Riesgo de alucinacion no evaluado en los modelos base; los clasificadores pueden producir falsos positivos y negativos sin metricas publicadas.
-- Cobertura idiomatica no documentada; el foco parece ser el japones, con posible rendimiento pobre en castellano u otros idiomas.
-- Contexto maximo desconocido, lo que impide planificar su uso en documentos largos.
-- El dato de parametros totales (9.725.008) es agregado y no representa un unico modelo; conviene tratarlo con cautela.
-- La model card esta en japones y no incluye instrucciones de uso, plantillas de prompt ni ejemplos de inferencia.
+- Repositorio de archivo: los modelos están retirados por rendimiento inferior a alternativas del propio autor; no deben usarse como base para producción.
+- Licencia no disponible: no se puede determinar si el uso comercial está permitido; conviene contactar con el autor antes de cualquier uso.
+- Idiomas no declarados formalmente: aunque los nombres y la model card apuntan al japonés, no hay una declaración explícita de cobertura lingüística.
+- Sin información sobre sesgos: no se documentan sesgos conocidos ni evaluación de equidad.
+- Riesgo de alucinación: no evaluable, ya que no se describen tareas generativas ni datos de evaluación.
+- Sin benchmarks: no hay métricas publicadas que permitan estimar calidad o comparar con alternativas.
+- Model card en japonés: la documentación puede requerir traducción para equipos no japoneses.
+- Mezcla de modelos en un solo repo: el tamaño de 3,3 GB corresponde a múltiples checkpoints, no a un modelo único; hay que seleccionar los archivos concretos antes de desplegar.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/WariHima/hourai2_3_archived_models
-- No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

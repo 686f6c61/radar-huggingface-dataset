@@ -5,9 +5,9 @@
   "author": "Kausp11",
   "url": "https://huggingface.co/Kausp11/standard-wiki-360m",
   "created_at": "2026-11-20T12:10:25.000Z",
-  "updated_at": "2026-11-20T12:10:50.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-20T12:57:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -19,6 +19,7 @@
     "llama",
     "text-generation",
     "en",
+    "license:apache-2.0",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

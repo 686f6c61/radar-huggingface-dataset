@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 779,
+  "downloads_30d": 769,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
@@ -48,31 +48,5 @@
   "renamed_to": "AdarshSingh7647/Eklav-Passage-8B",
   "renamed_at": "2026-11-11T02:13:10.911Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3-8B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-8B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "unsloth/Qwen3-8B · Hugging Face",
-      "url": "https://huggingface.co/unsloth/Qwen3-8B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3",
-      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
-    },
-    {
-      "title": "qwen3:8b - ollama.com",
-      "url": "https://ollama.com/library/qwen3:8b",
-      "snippet": "The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro."
-    },
-    {
-      "title": "Qwen3 Technical Report - arXiv.org",
-      "url": "https://arxiv.org/pdf/2505.09388",
-      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
-    }
-  ]
+  "sources": []
 }

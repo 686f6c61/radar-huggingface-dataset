@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "tfjack/Qwen3.8-27B-oQ6e-fp16-mtp · Hugging Face",
-      "url": "https://huggingface.co/tfjack/Qwen3.8-27B-oQ6e-fp16-mtp",
-      "snippet": "Card generation: This model card was drafted with the assistance of an AI coding interface. All technical content — quantization details, sampling parameters, output-length guidance, and the citation — is reproduced from the official Qwen/Qwen3.8-27B model card and the quantization configuration."
-    },
-    {
-      "title": "Jundot/Qwen3.8-27B-oQ6e-mtp · Hugging Face",
-      "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-mtp",
-      "snippet": "This model was quantized using oQ (oMLX v0.6.1) mixed-precision quantization ..."
-    }
-  ]
+  "sources": []
 }

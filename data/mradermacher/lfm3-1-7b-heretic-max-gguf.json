@@ -66,16 +66,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "LFM3-1.7B - Liquid AI Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
-      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
-    }
-  ]
+  "sources": []
 }

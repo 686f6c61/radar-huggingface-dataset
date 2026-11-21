@@ -2,106 +2,104 @@
 
 ## Resumen
 
-qwen3.8-4b-empero-v21-Hermes-agentic-subagent-toolcalls es un modelo de lenguaje de 4.326 millones de parámetros (4,3B) afinado mediante LoRA SFT sobre la base empero-ai/Qwen3.8-4B-Distill, desarrollado por el usuario de Hugging Face ferry-el-kom. Su propósito no es la generación de texto generalista, sino actuar como subagente especializado en tool calling y function calling dentro del protocolo del arnés de agentes Hermes, es decir, bucles multi-turno con llamadas a herramientas, respuestas de herramientas y verificación de resultados.
+qwen3.8-4b-empero-v21-Hermes-agentic-subagent-toolcalls es un modelo de lenguaje de 4.326 millones de parámetros derivado de empero-ai/Qwen3.8-4B-Distill mediante LoRA SFT. Lo desarrolla el usuario independiente ferry-el-kom dentro de la familia "empero" y está especializado en actuar como subagente de tool calling bajo el protocolo del harness Hermes Agent. Su propósito no es la conversación generalista, sino ejecutar bucles multi-turno de llamadas a herramientas (terminal, lectura/escritura de ficheros, patch y búsqueda) con verificación de estado antes de declarar una tarea completada.
 
-La relevancia del modelo radica en su enfoque de destilación desde profesores en la nube (GLM-5.2/5.3 y DeepSeek Pro) sobre trayectorias reales del arnés, complementadas con 140 trayectorias doradas verificadas por replay en las que cada comando se ejecutó de verdad y se capturaron los errores reales. El autor documenta resultados verificados sobre artefactos, no autoinformados: 11/12 en el canary agent-loop12 frente a 9/12 de la línea base y de la versión anterior v20, con una media de 3,2 turnos.
+El modelo se entrenó sobre aproximadamente 2.921 ventanas de entrenamiento destiladas de profesores en la nube (GLM-5.2/5.3 y DeepSeek Pro) más 140 trayectorias "golden" verificadas por replay real, es decir, comandos efectivamente ejecutados con sus errores capturados. La model card declara resultados de 11/12 en el canary agent-loop12 y un promedio de 3,2 turnos por tarea, con cero casos de fabricación de valores en una suite de 30 tareas.
 
-Se distribuye con licencia Apache 2.0 en safetensors (f16 y bf16) y cuantizaciones GGUF (q8_0, q6_K, q4_K_M), e incluye plantilla de chat para tool calls y un Modelfile de Ollama. Está pensado para desplegarse en hardware modesto: el propio autor lo entrenó en una única RX 6800 XT de 16 GB. Los idiomas declarados son inglés y rumano.
+Es relevante ahora porque ofrece un subagente de 4B orientado a operaciones reales de sistema (shell, ficheros, hardware embebido) que cabe en GPUs de consumo y se distribuye con cuantizaciones GGUF y plantilla de chat de tool calling. La versión v21 está marcada como DISCONTINUED por el autor, sustituida por la v24 de la misma familia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5_text`); no se detalla variante exacta |
-| Parámetros totales | 4.326.350.848 (4,3B) |
-| Parámetros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible en la model card; recomendación de servicio `num_ctx 64k` |
-| Tipos de cuantización | GGUF q8_0, q6_K, q4_K_M; safetensors f16 y bf16 |
-| Idiomas soportados | inglés (en), rumano (ro) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5_text`); ajuste LoRA sobre el modelo base |
+| Parametros totales | 4.326.350.848 (4,33B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 64k recomendado en serving (`num_ctx 64k`); contexto nativo del base no disponible |
+| Tipos de cuantizacion | q8_0, q6_K, q4_K_M, f16, bf16 |
+| Idiomas soportados | en, ro |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (f16/bf16) y GGUF; incluye `chat_template.jinja` y `Modelfile.ollama` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de empero-ai/Qwen3.8-4B-Distill, una destilación de la familia Qwen3.5 con 4,3B parámetros. Sobre esa base se aplicó un LoRA fresco (sin apilar adaptadores previos) con r=32, alpha=64, configuración all-linear, 396 pasos, 2 épocas, learning rate 2e-5 y batch de 16. El conjunto de entrenamiento consta de 2.921 ventanas de entrenamiento (frente a las 1.953 de v20), con un 41% de ventanas en modo "think" y un 12% sin herramienta (no_tool), fruto de un ajuste de think-gating.
+El modelo parte de empero-ai/Qwen3.8-4B-Distill, un transformer de la familia Qwen3.5 con 4,33B parámetros, y se ajusta con un LoRA fresco (no apilado sobre adaptadores previos) de rango 32, alpha 64 y aplicación all-linear. El entrenamiento consistió en 396 pasos, 2 épocas, learning rate 2e-5 y batch 16, ejecutado en una única GPU RX 6800 XT de 16 GB mediante el pipeline Hermes Agent. La configuración de datos incluye 2.921 ventanas (frente a 1.953 en v20), de las cuales 140 son trayectorias golden verificadas por replay, con un 41% de ventanas con "think" y un 12% sin llamada a herramienta.
 
-Los datos proceden de sesiones de profesores locales (dspro, glm-5.3), sesiones de producción de spectrof, ejemplos verificados por oráculo de megabit y singleshots de hermes-function-calling, además de 140 trayectorias doradas verificadas por replay con comandos realmente ejecutados y errores reales capturados. La innovación técnica principal es la normalización del lado de los datos: rutas normalizadas, lecturas sin sudo, disciplina de stdin con /dev/null, think-gating y garantía de identidad de máquina cero (rutas, IPs y hostnames normalizados). El dataset de entrenamiento es privado por revisión de licencias de profesores y se ofrece bajo petición a contribuidores serios.
+La innovación principal no está en la arquitectura sino en la disciplina de datos: normalización de rutas, IPs y hostnames para eliminar identidad de máquina, lecturas sin sudo, disciplina de stdin con `/dev/null`, think-gating ajustado y ejemplos golden con errores reales. El entrenamiento usa un system prompt distinto por categoría de tarea (code, files, searching, hardware, general) y expone cinco herramientas con esquema: `terminal`, `read_file`, `write_file`, `patch` y `search_files`. Los datos de entrenamiento son privados por revisión de licencias de los profesores y están disponibles bajo petición a colaboradores.
 
 ## Capacidades
 
-- Generación de texto conversacional orientada a tareas de agente.
-- Tool calling y function calling con plantilla de chat específica (`chat_template.jinja`).
-- Bucles multi-turno de herramientas: llamada, respuesta de herramienta y verificación dentro del protocolo del arnés Hermes.
-- Razonamiento multi-paso con modo "think" conmutable (think-gating), activo en aproximadamente el 41% de las ventanas de entrenamiento.
-- Modo sin herramienta (no_tool) para turnos puramente conversacionales.
-- Disciplina de ejecución de comandos: lecturas sin sudo, gestión de stdin no interactivo, evitación de valores fabricados.
-- Capacidades multilingües limitadas a inglés y rumano según la model card.
-- No se declaran capacidades de visión, audio ni matemáticas avanzadas.
+- Generación de texto orientada a ejecución de tareas, no a conversación abierta.
+- Tool calling / function calling con esquema JSON y una llamada por turno.
+- Bucles de agente multi-turno con lectura de respuestas de herramienta y verificación de estado.
+- Operación de shell: ejecución de comandos en un workdir con cwd fijado.
+- Manipulación de ficheros: lectura con numeración de líneas, escritura, parcheo por sustitución de cadenas y búsqueda por patrón o por nombre.
+- Identificación dinámica de hardware (`lsusb`, `/dev/serial/by-id`) sin asumir números de puerto.
+- Capacidad declarada por el autor para tareas de nivel sistema: sudo, parcheo de firmware, flasheo de MCU/ECU, construcción de ROMs y sistemas embebidos (heredada de los profesores, con advertencia explícita).
+- Multilingüe limitado a inglés y rumano.
+- Modo "think" con gating (41% de ventanas de entrenamiento).
 
 ## Casos de uso
 
-- Subagente de tool calling en pipelines de agentes: el modelo está entrenado sobre el protocolo real del arnés Hermes (bucles multi-turno con respuestas de herramienta y verificación), por lo que encaja como ejecutor de herramientas dentro de un agente orquestador mayor, con una media de 3,2 turnos por tarea.
-- Automatización de tareas de sistema en entornos controlados: las lecturas sin sudo y la disciplina de stdin con /dev/null reducen el riesgo de bloqueos por programas interactivos y de escaladas de privilegios accidentales, un problema documentado en la versión anterior v20.
-- Verificación de artefactos y checklists: en la suite de 30 tareas el modelo logró 0 aciertos de fabricación (B7) y 0 fallos de lista perdida (B9), con 10/10 en checklist con artefactos reales, lo que lo hace apto para tareas donde hay que comprobar resultados contra evidencias.
-- Despliegue en hardware de consumo: con cuantización q4_K_M y 4,3B parámetros cabe en GPUs de 8-16 GB; el autor lo entrenó en una RX 6800 XT de 16 GB, por lo que sirve para prototipado local de agentes sin coste de API.
-- Integración en Ollama mediante el Modelfile incluido (`ollama create empero-4b-tools-v21 -f Modelfile.ollama`), útil para entornos de desarrollo donde se quiere un subagente de herramientas reproducible y local.
-- Evaluación de protocolos de agentes: al documentar el autor canaries, smoke suites y veredictos sobre artefactos, el modelo sirve como referencia para comparar variantes de entrenamiento en tareas de tool use con métricas verificables.
-- Asistencia en flujos con idioma rumano o inglés: es uno de los pocos modelos de 4B con soporte declarado de rumano en tareas de agente, útil para automatizaciones localizadas en esos idiomas.
+- Automatización de operaciones en servidor: el modelo ejecuta comandos de shell en un workdir y verifica resultados antes de reportar, adecuado para tareas de mantenimiento repetitivas con guardarraíles externos.
+- Subagente de un orquestador mayor: se integra como worker de 4B que recibe una tarea acotada y devuelve artefactos verificados, reduciendo coste frente a un modelo grande en el bucle interno.
+- Edición de código asistida por parcheo: usa `patch` con `old_string`/`new_string` y `search_files` para localizar el punto de cambio, encajable en pipelines de CI/CD con revisión humana.
+- Diagnóstico de hardware embebido: identifica dispositivos por `lsusb` y rutas de serial, comprueba versiones y permisos, útil en laboratorios de prototipado con MCU y dispositivos Android/Linux.
+- Auditoría de sistemas de ficheros: recorrido con `search_files` y lectura con `read_file` para localizar configuraciones o patrones y citar rutas y recuentos reales.
+- Generación de informes de ejecución: produce artefactos en disco tras completar una tarea, aunque el autor documenta fallos de disciplina de entrega (ruta o nombre incorrectos).
+- Entornos de investigación sobre agentes: base pequeña y reproducible para estudiar tool calling, verificación y modos de fallo (sudo reflex, stdin hang) en un modelo que cabe en una GPU de consumo.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son los publicados por el autor, medidos sobre el arnés real y con artefactos verificados (no autoinforme):
-
-| Evaluación | Resultado |
-|---|---|
-| Canary agent-loop12 | 11/12 (línea base 9/12; v20 9/12) |
-| Turnos medios por tarea | 3,2 (el más eficiente de la familia, según el autor) |
-| Smoke suite de 30 tareas | 13 pass / 15 fail / 2 INVALID (re-puntuado sobre artefactos) |
-| B7 fabricación | 0 aciertos en 30 tareas |
-| B9 lista perdida | 0 fallos; 10/10 checklist con artefactos reales |
-| B3 reflejo sudo | 1 acierto (SM20), límite conocido |
-| B11 cuelgue por stdin | 1 acierto (SM22), límite conocido |
-| Disciplina de entregables | ~7 fallos: trabajo correcto pero archivo de informe no persistido o nombre mal escrito |
+| Prueba | Resultado | Referencia |
+|---|---|---|
+| Canary agent-loop12 | 11/12 | baseline 9/12; v20 = 9/12 |
+| Turnos medios (canary) | 3,2 | el más eficiente de la familia |
+| Smoke suite 30 tareas | 13 pass / 15 fail / 2 INVALID | re-scored sobre artefactos |
+| B7 fabricación | 0 hits | sin valores inventados en 30 tareas |
+| B9 lost-list | 0 hits | checklist 10/10 con artefactos reales |
+| B3 sudo reflex | 1 hit (SM20) | límite conocido |
+| B11 stdin hang | 1 hit (SM22) | límite conocido |
+| Disciplina de entrega | ~7 fallos | trabajo correcto, fichero en ruta o nombre erróneo |
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8-9 GB en q8_0, 5-6 GB en q6_K y 3-4 GB en q4_K_M para un modelo de 4,3B; en f16/bf16 en torno a 9 GB.
-- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para mayor throughput; el autor entrenó en una RX 6800 XT de 16 GB, lo que confirma viabilidad en gama media-alta.
-- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o más con cuantización q4_K_M o q6_K; en 6 GB solo con cuantizaciones más agresivas no listadas.
-- Opciones de despliegue: Ollama (Modelfile incluido), llama.cpp para GGUF, vLLM o TGI para safetensors, y el stack Hermes del autor.
-- Parámetros de servicio recomendados por el autor: temperatura 0,3, num_ctx 64k, num_predict 1024.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: ~2,5-3 GB en q4_K_M, ~3,5-4 GB en q6_K, ~4,5-5 GB en q8_0, ~8,7 GB en f16/bf16 para los 4,33B parámetros.
+- Cabe en GPUs de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090; el autor lo entrenó en una RX 6800 XT de 16 GB.
+- GPU de datacenter (A100, H100) no necesarias por tamaño; útiles solo para servir muchas instancias en paralelo.
+- Despliegue: llama.cpp y Ollama (incluye `Modelfile.ollama`, `ollama create empero-4b-tools-v21 -f Modelfile.ollama`); vLLM y TGI no confirmados en la información disponible.
+- Parámetros de serving recomendados por el autor: temperatura 0,3, `num_ctx` 64k, `num_predict` 1024.
+- Latencia y throughput no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Notas |
 |---|---|---|---|---|---|
-| qwen3.8-4b-empero-v21-Hermes | 4,3B | no disponible (recomendado 64k) | Tool calling y subagente Hermes | Apache 2.0 | HF, safetensors y GGUF |
-| empero-ai/Qwen3.8-4B-Distill (base) | 4,3B | no disponible | Destilación generalista | no disponible | HF |
-| v20 de la misma familia | 4,3B | no disponible | Tool calling y subagente Hermes | no disponible | HF |
-| Qwen3.5 4B (familia base) | ~4B | no disponible | Generación generalista | no disponible | HF |
-
-La comparativa se limita a los modelos citados en la información disponible; no se han podido verificar datos de contexto, rendimiento ni licencia de las alternativas más allá de lo indicado.
+| qwen3.8-4b-empero-v21 (este) | 4,33B | 64k recomendado | Subagente tool calling Hermes | apache-2.0 | 11/12 canary, 3,2 turnos medios; v21 discontinued |
+| empero-ai/Qwen3.8-4B-Distill | ~4B | no disponible | Base destilado generalista | no disponible | Modelo base sin ajuste de herramientas |
+| qwen3.8-4b-empero-v20 | ~4B | no disponible | Subagente tool calling | apache-2.0 | 9/12 canary, 1.953 ventanas |
+| qwen3.8-4b-empero-v24 | ~4B | no disponible | Subagente tool calling | apache-2.0 | Sucesor declarado de v21; datos no disponibles |
 
 ## Limitaciones y advertencias
 
-- Disciplina de entregables: el fallo principal restante (~7 de 30 tareas) es que el modelo completa el trabajo correctamente pero no persiste el archivo de informe solicitado o lo guarda con el nombre mal escrito; en producción hay que validar la existencia y el nombre de los artefactos.
-- Reflejo sudo: persiste un caso conocido (SM20) de intento de uso de sudo pese a la normalización de datos; requiere sandboxing y permisos mínimos.
-- Cuelgue por stdin: un caso conocido (SM22) con programas interactivos alimentados por stdin; conviene forzar stdin no interactivo a nivel de infraestructura.
-- Errores de unidades KB/MB documentados como límite conocido que abordará la versión v23.
-- Riesgo de alucinación: aunque la suite reporta 0 aciertos de fabricación en 30 tareas, el modelo sigue siendo un LM de 4B y puede inventar valores fuera de las condiciones evaluadas.
-- Idiomas: solo inglés y rumano declarados; el rendimiento en castellano no está verificado.
-- Contexto: la model card no publica la longitud de contexto nativa; la recomendación de servicio de 64k debe validarse empíricamente.
-- Licencia: Apache 2.0 permite uso comercial, pero la base empero-ai/Qwen3.8-4B-Distill debe revisarse por separado, ya que su licencia figura como no disponible en la información recogida.
-- Dataset de entrenamiento privado por revisión de licencias de profesores; la reproducibilidad completa no es posible sin solicitarlo al autor.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validación independiente por la comunidad.
+- Modelo marcado como DISCONTINUED por el autor; la v24 lo sustituye.
+- Entrenado y probado solo en Ubuntu 22.04; comportamiento en otros sistemas operativos desconocido.
+- "Sudo reflex": puede intentar comandos con privilegios root y parcheo o reflasheo de firmware; requiere guardarraíles externos y sandbox.
+- Cuelgues con programas interactivos que leen de stdin (caso SM22 documentado).
+- Disciplina de entrega deficiente: ~7 fallos por escribir el informe final en ruta o con nombre incorrectos, o responder en chat en lugar de crear el fichero.
+- Errores de unidades KB/MB documentados como límite conocido.
+- Sensible al prompt: los resultados varían con system prompts distintos al de evaluación.
+- Multilingüe limitado a inglés y rumano; sin soporte declarado de castellano.
+- Riesgo de alucinación mitigado en la suite (0 hits B7) pero no eliminado; verificar artefactos siempre.
+- Datos de entrenamiento privados; reproducibilidad limitada.
+- Licencia apache-2.0 permite uso comercial, pero el autor restringe explícitamente a pruebas, investigación y desarrollo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-v21-Hermes-agentic-subagent-toolcalls
+- Hugging Face: https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-v21-Hermes-agentic-subagent-toolcalls
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
-- Dataset de entrenamiento (privado, bajo petición): https://huggingface.co/ferry-el-kom/hermes-agentic-tooluse-v21-sft-dataset
-- Perfil del autor en Hugging Face: https://huggingface.co/ferry-el-kom
-- Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.
+- Dataset de entrenamiento (privado, bajo petición): ferry-el-kom/hermes-agentic-tooluse-v21-sft-dataset
+- Sucesor v24: qwen3.8-4b-Hermes-agentic-subagent-toolcalls (v24)
+- Resultados de smoke suite: SMOKE-RESULTS.md (referenciado en la model card)

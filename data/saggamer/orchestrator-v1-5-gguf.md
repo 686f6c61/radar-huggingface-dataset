@@ -2,89 +2,92 @@
 
 ## Resumen
 
-Orchestrator v1.5 es un modelo experimental de tipo mixture-of-experts desarrollado por el usuario saggamer, pensado como backend local para la aplicación Kira Superapp en Apple Silicon. Parte de una base instructiva Gemma 4 E4B (convertida a MLX) y le añade cinco bancos de adaptadores enrutados por tarea: control, browser, MCP, coding y presentation. El modelo resuelve el problema de orquestar tareas agénticas de múltiples pasos en local, combinando un backbone compartido con expertos de bajo rango seleccionados por token. Esta ficha describe la exportación GGUF del modelo, publicada como `saggamer/orchestrator-v1.5-GGUF`.
+Orchestrator v1.5 GGUF es una exportación experimental en formato GGUF del modelo agéntico Orchestrator v1.5, desarrollado por el usuario saggamer en el contexto del ecosistema Kira Superapp. Se trata de un modelo de lenguaje de aproximadamente 7.666 millones de parámetros (según los safetensors del repo base) que incorpora una arquitectura de mezcla de expertos (MoE) de baja dimensión sobre un backbone de tipo Gemma 4 E4B. El modelo conserva cinco "bancos de canales" entrenados (control, browser, MCP, coding y presentation) que se seleccionan al cargar el runtime, no por turno.
 
-La exportación GGUF contiene el backbone y los cinco canales entrenados, con 16 expertos en cada una de las capas del decodificador 39 a 41 y dos expertos seleccionados por token. El backbone se codifica en Q8_0 (tras dequantizar desde el MLX original en 4-bit afín), mientras que los bancos de adaptadores y routers se conservan en F32 bit a bit. El modelo tiene 7.666.139.690 parámetros totales y un tamaño de repositorio de 8,6 GB.
+La relevancia de esta ficha es doble. Por un lado, documenta una propuesta poco habitual: un modelo base compartido con adaptadores de expertos enrutados por capas específicas (capas 39 a 41 del decoder, 16 expertos por capa, 2 activos por token). Por otro, advierte de una restricción crítica: el GGUF solo funciona con un runtime llama.cpp parcheado por el autor ("Kira-patched llama.cpp") y no es compatible con llama.cpp estándar, LM Studio ni Ollama.
 
-Es relevante ahora porque demuestra un patrón de "upcycling" de un modelo denso pequeño hacia un MoE con enrutado por tarea, manteniendo un único backbone en lugar de duplicar cinco modelos completos. Ahora bien, es una exportación experimental con requisitos estrictos de runtime: no funciona con llama.cpp estándar, LM Studio ni Ollama, y requiere el binario parcheado que el autor distribuye.
+El modelo se distribuye bajo licencia Apache 2.0, está etiquetado como experimental y solo declara soporte para inglés. No se han publicado resultados de benchmarks en la información disponible, y el propio autor indica que las verificaciones incluidas son pruebas de conversión y humo funcional, no evaluaciones de capacidad agéntica o de navegador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder con MoE de bajo rango sobre Gemma 4 E4B; 16 expertos en capas 39-41, 2 seleccionados por token |
+| Arquitectura | Transformer con backbone Gemma 4 E4B y mezcla de expertos de baja dimensión (MoE) en capas 39-41 del decoder |
 | Parametros totales | 7.666.139.690 |
-| Parametros activos | no disponible (el autor no publica el recuento de activos) |
+| Parametros activos | 16 expertos por capa en capas 39-41, 2 seleccionados por token (no se especifica el total de parámetros activos) |
 | Longitud de contexto | no disponible (el ejemplo de ejecución usa `-c 4096`) |
-| Tipos de cuantizacion | Backbone GGUF Q8_0; adaptadores y routers en F32 |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | Backbone en GGUF Q8_0; bancos de adaptadores y routers en F32. El base original era MLX affine 4-bit |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (con runtime parcheado propio); modelo base en MLX |
+| Formato de pesos | GGUF (con runtime propietario parcheado); base original en MLX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder derivado de Gemma 4 E4B al que se le incorpora un esquema MoE de bajo rango: un FFN compartido más proyecciones de expertos de bajo rango seleccionadas por token. Concretamente, hay 16 expertos en cada una de las capas del decodificador 39 a 41, y se seleccionan dos por token. Los logits del router seleccionado pasan por una softmax. El autor documenta una simplificación matemática: como cada referencia de experto congelado es igual al FFN compartido, la expresión `shared + 0.5 * sum(w * (expert-reference))` se reduce a `0.5 * (shared + sum(w * expert))`. Las actualizaciones de bajo rango se evalúan en sus posiciones originales antes y después de las no linealidades, no se promedian en un adaptador estático.
+La arquitectura parte de un backbone Gemma 4 E4B Instruction (modelo de Google) convertido a MLX y posteriormente dequantizado a GGUF Q8_0. Sobre ese backbone se añaden cinco bancos de adaptadores de expertos de baja dimensión (control, browser, MCP, coding y presentation), cada uno con 16 expertos en cada una de las capas 39, 40 y 41 del decoder, de los cuales se seleccionan 2 por token mediante routers con softmax. Los pesos de expertos y routers se conservan en F32 bit a bit respecto al original. El grafo personalizado implementa la FFN compartida más las proyecciones de expertos de baja dimensión, evaluadas en sus posiciones originales antes y después de las no linealidades, no promediadas en un adaptador estático.
 
-En cuanto al entrenamiento, la información disponible no detalla el número de tokens, la composición del dataset ni si hubo RLHF o DPO. El modelo base MLX ya estaba en cuantización afín de 4 bits; en esta exportación el backbone se dequantiza y se recodifica como GGUF Q8_0, lo que limita cuantizaciones más agresivas pero no recupera la precisión perdida en el base original. Los cinco bancos de adaptadores y routers se preservan en F32 bit a bit. La innovación destacable es el enrutado por canal (control, browser, MCP, coding, presentation) sobre un único backbone, seleccionable al cargar el runtime mediante `--override-kv kira.channel=str:browser` (o `mcp`, `coding`, `presentation`); el canal por defecto es control. El enrutado automático de tareas entre turnos requiere un controlador anfitrión y no lo hace el CLI autónomo.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. El autor indica explícitamente que cambiar el formato de archivo no aporta nueva formación ni ganancia de capacidad, y que las diferencias numéricas respecto a MLX son posibles por los kernels de codificación y cómputo. La selección de canal se realiza al cargar el runtime (por defecto `control`, modificable con `--override-kv kira.channel=str:browser|mcp|coding|presentation`); el enrutamiento automático de tareas entre canales requiere un controlador anfitrión y no está soportado por el CLI incluido.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés sobre la base instructiva Gemma 4 E4B.
-- Cinco canales de comportamiento entrenados: control, browser, MCP, coding y presentation, seleccionables al cargar el runtime.
-- Planificación estructurada de herramientas mediante la gramática `kira-tool-plan.gbnf`, que restringe la salida al esquema JSON de ruta y propósito de Kira.
-- Soporte de tool calling y function calling a nivel de planificación (el modelo elige ruta y propósito; la ejecución la realiza el controlador anfitrión).
-- Razonamiento multi-paso y tareas agénticas acotadas por el controlador de ejecución de Kira (ejecución de navegador, conexiones MCP, creación de PDF, permisos y memoria son funciones de la aplicación, no del GGUF).
-- Capacidades multilingües: solo inglés declarado.
-- Sin soporte de visión ni audio: es una exportación solo texto, sin proyectores.
-- Modo de razonamiento desactivable en el ejemplo de ejecución (`--reasoning off`).
+- Generación de texto conversacional en inglés sobre el backbone Gemma 4 E4B.
+- Planificación estructurada de herramientas mediante gramática GBNF (`source/kira-tool-plan.gbnf`) para el esquema JSON de ruta/propósito de Kira; la gramática restringe el formato, pero el modelo elige ruta y propósito.
+- Cinco bancos de canal entrenados: control, browser, MCP, coding y presentation, seleccionables al cargar el runtime.
+- Soporte de decodificación con razonamiento (`--reasoning off` en el ejemplo) y modo de un solo turno (`--single-turn`).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags).
+- No incluye proyectores de visión ni audio: es una exportación solo texto.
+- Las capacidades de ejecución de navegador, conexiones MCP, creación de PDF, permisos, memoria y orquestación Diagonal son funciones de la aplicación Kira Superapp, no del GGUF por sí mismo.
 
 ## Casos de uso
 
-- Asistencia local en Apple Silicon: el modelo puede ejecutarse en un Mac con M4 mediante el runtime parcheado incluido, ofreciendo conversación y planificación sin salir del dispositivo, lo que resulta adecuado para escenarios de privacidad.
-- Planificación de rutas de herramientas: usando la gramática `kira-tool-plan.gbnf` con `llama-completion`, el modelo genera JSON de ruta y propósito que un controlador externo puede validar y ejecutar, útil para pipelines de agentes con validación estricta de esquema.
-- Automatización de navegador asistida: el canal browser está entrenado para tareas de navegación, y el controlador de Kira devuelve observaciones al modelo para continuar el bucle; encaja en flujos de extracción y rellenado de formularios supervisados.
-- Integración con servidores MCP: el canal mcp permite al modelo planificar llamadas a herramientas expuestas por servidores Model Context Protocol, adecuado para entornos de desarrollo que ya usan MCP.
-- Asistencia de programación: el canal coding está orientado a tareas de código dentro del ecosistema Kira, útil para generar y revisar fragmentos en flujos de trabajo locales.
-- Generación de presentaciones: el canal presentation está entrenado para tareas de creación de contenido de presentaciones, aprovechable en flujos de documentación y elaboración de materiales.
-- Investigación sobre upcycling MoE: al preservar routers y expertos en F32 y publicar el parche de llama.cpp y el código de conversión, sirve como referencia reproducible para estudiar enrutado por tarea sobre un backbone denso pequeño.
+- Exploración e inspección de arquitecturas MoE enrutadas: el modelo permite examinar cómo se comportan routers y expertos de baja dimensión en capas concretas, gracias a que los pesos F32 se conservan bit a bit y el runtime y el código de evaluación son inspeccionables.
+- Planificación de rutas de herramientas en un pipeline agéntico: usando la gramática GBNF se puede forzar la salida JSON de ruta/propósito para que un controlador externo decida qué herramienta invocar; adecuado porque el modelo fue entrenado con el banco de control y el esquema está documentado.
+- Integración en la Kira Superapp como backend alternativo de chat local: el modelo encaja en el flujo conversacional de la aplicación, que aporta herramientas, memoria y permisos; útil para probar la pila completa en Apple Silicon con el runtime incluido.
+- Pruebas de conversión y validación de formatos: sirve como caso de estudio para verificar la fidelidad de una conversión MLX affine 4-bit a GGUF Q8_0 con adaptadores F32, comparando salidas con el bundle MLX original.
+- Desarrollo de asistentes de codificación experimentales: el banco `coding` puede seleccionarse al cargar el runtime para tareas de generación de código en inglés dentro de un entorno controlado; adecuado para prototipos, no para producción sin evaluación adicional.
+- Investigación sobre selección de canal y enrutamiento: permite estudiar el efecto de cambiar de banco (`control`, `browser`, `mcp`, `coding`, `presentation`) sobre las mismas entradas, ya que el canal se fija en carga y el comportamiento es reproducible.
+- Evaluación de decodificación restringida: útil para medir la tasa de fallos de parseo en salidas greedy frente a salidas con gramática, dado que el autor documenta tres respuestas con dos puntos iniciales en su suite de humo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que `verification.json` contiene comprobaciones de conversión y pruebas funcionales limitadas (smoke tests), no puntuaciones de benchmarks agénticos o de navegador, y que no se reclama ninguna ganancia de capacidad por cambiar de formato. En la suite fija de smoke tests, la decodificación greedy en crudo añadió dos puntos al inicio de tres respuestas JSON de planificación de herramientas, que seleccionaron las rutas correctas pero fallaron el parseo estricto; por ello se exige decodificación restringida para esa interfaz.
+No se han publicado resultados de benchmarks en la información disponible. El autor indica que `verification.json` contiene comprobaciones de conversión y humo funcional medidas, no puntuaciones de benchmarks agénticos o de navegador, y que no se reclama ninguna ganancia de capacidad por el cambio de formato.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el repositorio ocupa 8,6 GB; el backbone en Q8_0 más adaptadores en F32 requiere en torno a esa cifra de memoria unificada para cargar el modelo completo.
-- GPU recomendadas: el runtime distribuido es para macOS ARM64 (Apple Silicon); probado en un Apple M4. No se documentan requisitos para GPU NVIDIA o AMD.
-- Cabe en consumer GPU: no hay información sobre GPUs de consumo tipo RTX 4090; el soporte documentado es exclusivamente Apple Silicon con macOS 27 o superior.
-- Opciones de despliegue: únicamente el runtime parcheado `runtime-macos-arm64.tar.gz` incluido, o bien compilar llama.cpp en el commit exacto de `source/LLAMA_CPP_REVISION` aplicando `source/kira-upcycling.patch` con CMake. No es compatible con llama.cpp estándar, LM Studio ni Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: el repo pesa 8,6 GB y el archivo principal es Q8_0, por lo que se necesita aproximadamente ese orden de magnitud de memoria unificada o VRAM; no se dispone de cifras oficiales por cuantización adicional.
+- GPU recomendadas: no disponibles en la información proporcionada. El runtime incluido es para macOS ARM64 (Apple Silicon) y fue probado en un Apple M4.
+- Compatibilidad con GPU de consumo: no confirmada; el autor solo documenta ejecución en Apple Silicon con su runtime parcheado.
+- Opciones de despliegue: únicamente el runtime Kira-patched llama.cpp incluido (`runtime-macos-arm64.tar.gz`) o compilando llama.cpp en el commit exacto de `source/LLAMA_CPP_REVISION` con el parche `source/kira-upcycling.patch`. No es compatible con llama.cpp estándar, LM Studio ni Ollama.
+- Requisito de sistema: macOS 27 o superior para el binario incluido; para otras versiones o hardware hay que compilar el código fuente suministrado.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| orchestrator-v1.5-GGUF | 7.666.139.690 | no disponible | apache-2.0 | GGUF con runtime propio | MoE de bajo rango, 5 canales, solo Apple Silicon |
-| Gemma 4 E4B (base) | no disponible | no disponible | terminos de Google | amplia | Modelo denso instructivo upstream; sin canales ni enrutado |
-| Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
+| Orchestrator v1.5 GGUF | 7,67 B (MoE en capas 39-41) | no disponible | Apache 2.0 | GGUF con runtime parcheado | Experimental, solo inglés, cinco bancos de canal |
+| Gemma 4 E4B (upstream) | no disponible en la información | no disponible | términos de Google (ver THIRD_PARTY_NOTICES) | MLX y otros | Modelo base instruction citado como componente upstream |
+| Orchestrator v1.5 (base MLX) | 7,67 B | no disponible | Apache 2.0 | MLX | Bundle soportado por Kira Superapp; backend de referencia |
 
-La comparación cuantitativa con otros MoE de tamaño similar no está disponible en la información proporcionada. El único punto de referencia documentado es Gemma 4 E4B, del que este modelo hereda el backbone y al que añade los cinco bancos de adaptadores enrutados.
+No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Requiere el runtime parcheado del autor: no funciona con llama.cpp estándar, LM Studio ni Ollama, lo que limita su portabilidad y su uso en infraestructura existente.
-- Solo Apple Silicon: el binario distribuido es macOS ARM64, requiere macOS 27 o superior y se probó en un Apple M4; para otro hardware hay que compilar desde el código fuente.
-- Solo inglés: el campo de idiomas declara únicamente `en`.
-- Solo texto: no incluye proyectores de visión ni audio.
-- Las funciones de navegador, MCP, PDF, permisos, memoria y orquestación Diagonal son características de la aplicación Kira, no del GGUF; abrir el modelo en un CLI de generación de texto no las proporciona.
-- El enrutado automático entre canales requiere un controlador anfitrión; el CLI autónomo no cambia de canal entre turnos.
-- La decodificación greedy sin restricciones produjo fallos de parseo en la suite de smoke tests de planificación de herramientas; se exige decodificación restringida por gramática para esa interfaz, y el autor no reclama cero regresiones en salida no restringida.
-- La cuantización Q8_0 del backbone no recupera la precisión perdida en el base MLX original de 4 bits, y limita cuantizaciones más agresivas.
-- Riesgo de alucinación: no cuantificado en la información disponible; el autor no publica evaluaciones de fiabilidad más allá de los smoke tests.
-- Sesgos conocidos: no documentados en la información disponible.
-- Licencia apache-2.0 para el modelo, pero los términos y la atribución de Google para Gemma 4 E4B y su conversión MLX siguen aplicándose según `THIRD_PARTY_NOTICES.md`; conviene revisarlos antes de un uso comercial.
+- El GGUF no funciona con llama.cpp estándar, LM Studio ni Ollama; requiere el runtime parcheado del autor o compilar el parche correspondiente.
+- El binario incluido exige macOS 27 o superior y se probó en un Apple M4; no hay soporte documentado para otras plataformas sin compilación manual.
+- Es una exportación solo texto: no incluye proyectores de visión ni audio.
+- Solo declara soporte de inglés.
+- El canal se fija al cargar el runtime; el cambio automático entre canales por turno requiere un controlador anfitrión que no se incluye.
+- La decodificación greedy sin restricciones produjo tres respuestas JSON de planificación de herramientas con dos puntos iniciales en la suite de humo; se requiere decodificación restringida con gramática para esa interfaz.
+- El backbone se dequantizó desde MLX affine 4-bit a Q8_0, lo que limita cuantizaciones más agresivas y no recupera la precisión perdida en el base original.
+- Pueden aparecer diferencias numéricas respecto a MLX por los kernels de codificación y cómputo.
+- Las funciones de navegador, MCP, PDF, permisos, memoria y orquestación son de la aplicación Kira Superapp, no del modelo; no se deben atribuir al GGUF.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; al ser un modelo experimental sin benchmarks publicados, no hay evidencia de capacidad de nivel frontera.
+- Uso comercial: la licencia Apache 2.0 aplica al proyecto, pero los términos y atribuciones de Gemma 4 E4B y su conversión MLX siguen vigentes según `THIRD_PARTY_NOTICES.md`; conviene revisarlos antes de un despliegue comercial.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/saggamer/orchestrator-v1.5-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/saggamer/orchestrator-v1.5
+- Modelo en Hugging Face: https://huggingface.co/saggamer/orchestrator-v1.5-GGUF
+- Modelo base: https://huggingface.co/saggamer/orchestrator-v1.5
+- Kira Superapp: https://kira-superapp.vercel.app/
+- GitHub e instalación: https://github.com/saggamer/KIRA-Superapp
+- Código de Diagonal Browser: https://github.com/saggamer/KIRA-Superapp/tree/main/diagonal_browser

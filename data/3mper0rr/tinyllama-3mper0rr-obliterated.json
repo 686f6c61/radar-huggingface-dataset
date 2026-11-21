@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1021,
+  "downloads_30d": 1065,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
@@ -42,31 +42,5 @@
   "renamed_to": "3MPER0RR/TinyLlama-3MPER0RR-abliterated",
   "renamed_at": "2026-11-11T02:06:47.161Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "3MPER0RR (3MPER0R) - Hugging Face",
-      "url": "https://huggingface.co/3MPER0RR",
-      "snippet": "Cosmicengine3 ⚡ Estimate token usage, cost and test LLM models 3MPER0RR about 2 hours ago"
-    },
-    {
-      "title": "abliterated · Ollama",
-      "url": "https://ollama.com/search?q=abliterated",
-      "snippet": "Cipher-Abliterated is an adaptive conversational AI system designed for flexible interaction, enhanced creative reasoning, and less restrictive conversational behavior while maintaining structured output and technical usability."
-    },
-    {
-      "title": "Uncensor any LLM with abliteration - Hugging Face",
-      "url": "https://huggingface.co/blog/mlabonne/abliteration",
-      "snippet": "A Blog post by Maxime Labonne on Hugging Face"
-    },
-    {
-      "title": "Ollama Models Cheat Sheet 2026 | ComputingForGeeks",
-      "url": "https://computingforgeeks.com/ollama-models-cheat-sheet/",
-      "snippet": "Ollama models cheat sheet 2026: gpt-oss, Qwen3-Coder, DeepSeek, Llama and Gemma compared, with pull commands, VRAM math and real RTX 4090 benchmarks."
-    },
-    {
-      "title": "tinyllama",
-      "url": "https://ollama.com/library/tinyllama",
-      "snippet": "TinyLlama is a compact model with only 1.1B parameters. This compactness allows it to cater to a multitude of applications demanding a restricted computation and memory footprint."
-    }
-  ]
+  "sources": []
 }

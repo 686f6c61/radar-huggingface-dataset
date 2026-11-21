@@ -2,85 +2,92 @@
 
 ## Resumen
 
-Esta ficha describe una cuantizacion GGUF experimental del modelo Nanbeige4.3-33B, publicada por el usuario eaddario en Hugging Face. No se trata de un modelo original, sino de una conversion a formato GGUF con una estrategia de cuantizacion orientada a un objetivo global de bits por peso (target bits-per-weight), calibrada con el dataset eaddario/imatrix-calibration. El modelo base es Nanbeige/Nanbeige4.3-33B, un modelo de 33 mil millones de parametros del que esta publicacion no aporta la model card completa, ya que el autor indica que la subida estaba en curso en el momento de crear el repositorio.
+Nanbeige4.3-33B es un modelo de lenguaje de tipo transformer denso con 33.118.977.024 parametros (aproximadamente 33B), desarrollado por Nanbeige como modelo "teacher" de su familia Nanbeige4.3. Su proposito declarado es servir de base para destilar capacidades agenticas avanzadas en modelos mas pequenos (como el futuro Nanbeige4.3-3B) y, al mismo tiempo, ofrecer un modelo desplegable para tareas de programacion compleja y trabajo profesional colaborativo. La model card del autor original lo posiciona como estado del arte en rendimiento agentico entre modelos abiertos de la clase ~30B.
 
-La relevancia de esta publicacion es practica: ofrece una via para ejecutar un modelo de 33B en entornos con recursos limitados mediante llama.cpp y derivados (Ollama, LM Studio, etc.), a costa de una perdida de precision que el autor etiqueta explicitamente como experimental. El repositorio ocupa 66,2 GB, lo que corresponde al conjunto de ficheros GGUF con distintas cuantizaciones, no a un unico fichero.
+La ficha que nos ocupa, sin embargo, no es el modelo original sino una cuantizacion GGUF experimental publicada por el usuario eaddario bajo el identificador `eaddario/Nanbeige4.3-33B-GGUF`. Esta version aplica una tecnica propia de seleccion automatica de recetas de cuantizacion orientada a un objetivo global de bits por peso (bpw), usando un fork no estandar de llama.cpp y una imatrix de calibracion propia. El repositorio ocupa 282,7 GB e incluye multiples variantes de cuantizacion.
 
-Hay que subrayar que la informacion disponible es muy escasa: la model card esta incompleta ("Upload in progress..."), no hay resultados de benchmarks, no se detalla la composicion del dataset de calibracion y el unico idioma declarado es el ingles. Todo lo que no consta se marca como no disponible en esta ficha.
+Es relevante ahora porque ejemplifica una linea de trabajo centrada en optimizar la inferencia de LLM en hardware de consumo (escritorio, portatil, edge), y porque el modelo base Nanbeige4.3-33B representa una alternativa abierta de tamano medio con enfasis en capacidades agenticas y de codigo. La licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Nanbeige4.3-33B; arquitectura no detallada en la informacion proporcionada) |
-| Parametros totales | 33B (por el nombre del modelo base; no confirmado en la model card) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con cuantizacion global orientada a target bits-per-weight (niveles concretos no especificados) |
-| Idiomas soportados | en (unico idioma declarado en los metadatos) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors solo en el modelo base original, no incluido en este repo) |
+| Arquitectura | Transformer denso (detalles internos no disponibles en la informacion proporcionada) |
+| Parametros totales | 33.118.977.024 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Multiples variantes GGUF generadas con objetivo global de bpw (recetas concretas no detalladas en la informacion disponible) |
+| Idiomas soportados | Ingles (declarado en la model card y en los tags) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo con cuantizaciones); el modelo base original se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Nanbeige4.3-33B en los datos proporcionados: no se especifica si es un transformer denso, un MoE o un modelo hibrido, ni el numero de capas, dimensiones ocultas o mecanismos de atencion. El tamano de 33B se deduce del nombre del modelo, no de una ficha tecnica verificada.
+El modelo base Nanbeige4.3-33B es un transformer denso de aproximadamente 33B parametros. La informacion disponible no detalla la composicion del dataset de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento. La model card original menciona que el modelo se disena como "teacher" de alta capacidad para anclar posteriormente la destilacion de capacidades agenticas en modelos mas pequenos de la misma familia.
 
-Respecto al proceso de cuantizacion, la model card indica una estrategia de "global target bits-per-weight quantization": se fija un objetivo global de bits por peso y se distribuye el presupuesto de bits entre las distintas capas o tensores para minimizar el error, calibrando con el dataset eaddario/imatrix-calibration (probablemente matrices de importancia tipo imatrix de llama.cpp, aunque el autor no lo detalla). No se indica el numero de tokens de calibracion, la composicion del dataset ni si se aplicaron tecnicas adicionales como decodificacion especulativa o attention lineal. Tampoco consta si el modelo base fue entrenado con RLHF o DPO.
+La contribucion tecnica de esta ficha concreta es el proceso de cuantizacion, no el entrenamiento. El autor convierte los safetensors originales a GGUF F16, estima la perplejidad de referencia sobre `wikitext-2-raw-v1`, genera una imatrix a partir de su dataset de calibracion `eaddario/imatrix-calibration` y ejecuta un `llama-quantize` modificado con `--target-bpw` para seleccionar automaticamente la receta de cuantizacion de menor error que alcanza un bpw global objetivo. La imatrix pondera el error de cuantizacion segun estadisticas de activacion, penalizando mas el error en direcciones consideradas importantes. El autor valida cada modelo BF16 antes de la conversion para descartar degradacion por clipping de pesos, y senala que la conversion a F16 es entre un 15 y un 30 por ciento mas rapida que a BF16, con una diferencia de inferencia del 3 al 6 por ciento.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es text-generation, por lo que la capacidad principal es la generacion autoregresiva de texto en ingles.
-- Razonamiento y codigo: no disponible; la informacion proporcionada no detalla capacidades especificas del modelo base mas alla de la generacion de texto.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun los metadatos; no se declaran otros idiomas.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generacion de texto conversacional y de proposito general.
+- Razonamiento de multiples pasos orientado a tareas agenticas, segun la descripcion del modelo base.
+- Programacion y tareas de codigo complejas, destacadas por el autor original como punto fuerte del modelo.
+- Tareas de "cowork" profesional (flujos de trabajo colaborativos y de asistencia).
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
+- Capacidades multilingues: limitadas al ingles segun la model card y los tags.
+- Vision, audio o modo "thinking": no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local de un modelo de 33B en estaciones de trabajo: gracias al formato GGUF y a la cuantizacion con objetivo de bits por peso, el modelo puede ejecutarse en llama.cpp o Ollama en maquinas con GPU consumer de gama alta o incluso solo con CPU y RAM suficiente, algo inviable con los pesos originales en safetensors.
-- Prototipado de aplicaciones de generacion de texto en ingles: al ser un artefacto GGUF ligero (relativo a los 33B originales), permite iterar rapidamente en demos y pruebas de concepto sin montar infraestructura de servidores GPU dedicados.
-- Evaluacion de estrategias de cuantizacion: el repositorio se etiqueta como experimental y con target_bpw, por lo que resulta util para investigadores que quieran comparar la calidad de esta cuantizacion global frente a cuantizaciones estandar (Q4_K_M, Q5_K_M, etc.) del mismo modelo base.
-- Integracion en pipelines de inferencia con llama.cpp: el formato GGUF es compatible con servidores ligeros y bindings de Python, lo que facilita incorporarlo en scripts de generacion por lotes o servicios internos.
-- Investigacion sobre calibracion con imatrix: el uso del dataset eaddario/imatrix-calibration permite estudiar como la calibracion afecta la perplexity en modelos de 33B, comparando con calibraciones alternativas.
-- Educacion y experimentacion: al estar bajo licencia apache-2.0, puede usarse en cursos y talleres para mostrar el flujo completo de cuantizacion de un modelo grande y su ejecucion en hardware modesto.
+- Asistente de programacion en local: desplegado con llama.cpp u Ollama sobre una estacion de trabajo, el modelo puede resolver tareas de generacion y refactorizacion de codigo sin depender de la nube, aprovechando su tamano de 33B para mantener calidad en tareas de codigo complejas.
+- Prototipado de agentes en hardware de consumo: las variantes GGUF de bajo bpw permiten ejecutar un modelo de clase 30B en equipos de escritorio, lo que facilita iterar sobre disenos de agentes antes de pasar a infraestructura mayor.
+- Generacion de codigo en pipelines internos: integrable mediante llama.cpp o servidores compatibles con la API de OpenAI (el repo incluye el tag `endpoints_compatible`) para automatizar tareas de generacion de tests o documentacion.
+- Evaluacion comparativa de cuantizaciones: util para investigadores que quieran medir el impacto de distintas recetas bpw sobre perplejidad, KL divergence y benchmarks (ARC, GPQA-Diamond, HellaSwag, MMLU-Redux, TruthfulQA, WinoGrande) usando las metricas que reporta el autor.
+- Destilacion y ajuste fino como modelo teacher: al ser el modelo docente de la familia Nanbeige4.3, sirve para generar datos sinteticos o supervisar el entrenamiento de modelos mas pequenos.
+- Despliegue en entornos con recursos limitados: portatiles, mini-PC o dispositivos edge donde no cabe el modelo en F16 pero si una cuantizacion agresiva, gracias al enfoque del autor en optimizar inferencia en hardware de consumo.
+- Analisis de documentos y conversacion multi-turno en ingles: uso conversacional general, siempre que la ventana de contexto (no disponible) sea suficiente para el caso.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card esta incompleta y no incluye metricas de perplexity, MMLU, HumanEval, GSM8K ni comparaciones con otras cuantizaciones del modelo base.
+La model card original de Nanbeige4.3-33B referencia una figura de benchmarks (`nanbeige43-benchmarks.png`) pero no incluye cifras numericas en el texto proporcionado. El autor de la cuantizacion menciona que calcula Perplexity, KL Divergence, ARC (Easy+Challenge), GPQA-Diamond, HellaSwag, MMLU-Redux, TruthfulQA y WinoGrande para cada variante, pero no se han facilitado los valores en la informacion disponible.
+
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta porque no se especifican los niveles de cuantizacion incluidos. Como referencia orientativa, un modelo de 33B en GGUF suele requerir entre 18 y 22 GB para cuantizaciones de 4-5 bits y entre 30 y 40 GB para cuantizaciones de 8 bits; estas cifras son estimaciones genericas y no estan confirmadas por el autor.
-- GPU recomendadas: no disponible en la informacion proporcionada. Para un 33B cuantizado a 4-5 bits, GPUs con 24 GB (RTX 4090, A10G, L4) o 40-80 GB (A100, H100) son opciones habituales, pero el autor no lo especifica.
-- ¿Cabe en GPU consumer? Previsiblemente si, en GPUs de 24 GB con cuantizaciones bajas y descarga parcial de capas a CPU, pero no hay confirmacion en la model card.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no son la via natural para GGUF, aunque vLLM tiene soporte parcial para algunos formatos GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma exacta; como referencia orientativa, un modelo denso de 33B en F16 requiere del orden de 66 GB de pesos, y las cuantizaciones de menor bpw reducen esa cifra proporcionalmente (el autor no publica la tabla de bpw por variante en la informacion disponible).
+- GPU recomendadas: no especificadas en la informacion proporcionada. Para el modelo completo en precision alta se requeriria hardware de clase A100/H100 o multiples GPU; las cuantizaciones agresivas estan pensadas para GPU de consumo.
+- Cabe en GPU de consumo: el objetivo declarado del autor es precisamente habilitar el despliegue en hardware de consumo, escritorio, portatil y edge, mediante cuantizaciones de bajo bpw; no se detallan que modelos concretos de GPU lo soportan.
+- Opciones de despliegue: llama.cpp (el autor usa un fork propio para la cuantizacion; la inferencia es compatible con llama.cpp estandar en formato GGUF), y por extension Ollama y otros runners GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo API de OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| eaddario/Nanbeige4.3-33B-GGUF (esta ficha) | 33B (segun nombre) | no disponible | apache-2.0 | GGUF | Cuantizacion experimental con target bpw; model card incompleta |
-| Nanbeige/Nanbeige4.3-33B (modelo base) | 33B (segun nombre) | no disponible | apache-2.0 (heredada) | safetensors (presumiblemente) | Modelo original; arquitectura y benchmarks no disponibles en la informacion proporcionada |
-| Otras cuantizaciones GGUF del mismo modelo base | 33B | no disponible | apache-2.0 | GGUF | No se dispone de datos sobre otras cuantizaciones de Nanbeige4.3-33B en la informacion proporcionada |
+| Nanbeige4.3-33B (esta ficha, GGUF) | 33,1B | No disponible | Apache 2.0 | GGUF | Cuantizacion experimental con objetivo bpw e imatrix propia |
+| Nanbeige4.3-33B (original) | 33,1B | No disponible | Apache 2.0 | Safetensors | Modelo base sin cuantizar, referencia de calidad |
+| Alternativas de la clase ~30B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de informacion suficiente para comparar con alternativas de la misma categoria (por ejemplo, modelos de 30-35B como Qwen, Llama o Yi) en terminos de rendimiento o contexto, ya que faltan los datos del modelo base.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Model card incompleta: el autor indica "Upload in progress..." y no detalla arquitectura, contexto, niveles de cuantizacion ni resultados de evaluacion, lo que impide validar la calidad del artefacto.
-- Perdida de precision por cuantizacion: la cuantizacion introduce degradacion respecto al modelo base en safetensors, especialmente en tareas sensibles a precision numerica como matematicas o codigo; no hay datos que cuantifiquen esa perdida.
-- Etiqueta "experimental": el propio autor marca el artefacto como experimental, por lo que no es recomendable para produccion sin una evaluacion propia.
-- Idioma: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta documentado.
-- Sesgos y alucinaciones: no hay informacion sobre los sesgos del modelo base ni sobre su tendencia a alucinar; al ser un modelo de 33B sin evaluacion publicada, el riesgo debe asumirse como desconocido.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Nanbeige4.3-33B por si impone condiciones adicionales no reflejadas en este repositorio.
-- Contexto: se desconoce la longitud de contexto soportada, lo que limita el diseno de aplicaciones con ventanas largas.
-- Cero descargas y bajo numero de likes en el momento de la consulta: el artefacto no ha sido validado por la comunidad.
+- Version experimental: el propio autor advierte explicitamente de que estas cuantizaciones son experimentales y usan un fork no estandar de llama.cpp; pueden presentar comportamientos distintos a las cuantizaciones convencionales.
+- Idiomas: el modelo esta declarado unicamente en ingles; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Contexto: la longitud de contexto no esta disponible en la informacion proporcionada, lo que impide validar casos de uso con ventanas largas.
+- Alucinacion: no hay informacion sobre tasas de alucinacion ni sobre fases de alineamiento del modelo base; debe asumirse el riesgo habitual de un LLM de su clase.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible.
+- Tool calling: no confirmado; no debe asumirse soporte nativo de function calling sin verificacion previa.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original y de los datasets de calibracion utilizados.
+- Repositorio de gran tamano (282,7 GB): la descarga completa es costosa; conviene seleccionar solo la variante de cuantizacion necesaria.
+- Fecha de creacion del repo (2026-11-05): verificar la vigencia y el mantenimiento del fork de llama.cpp referenciado antes de usarlo en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/eaddario/Nanbeige4.3-33B-GGUF
-- Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
-- Dataset de calibracion: https://huggingface.co/datasets/eaddario/imatrix-calibration
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/eaddario/Nanbeige4.3-33B-GGUF
+- Modelo base original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
+- Dataset de calibracion imatrix: https://huggingface.co/datasets/eaddario/imatrix-calibration
+- Paper de referencia sobre cuantizacion (arxiv:2311.12022): https://arxiv.org/abs/2311.12022
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Pull request de integracion del metodo bpw en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/15550

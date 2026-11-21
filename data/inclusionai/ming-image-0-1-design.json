@@ -48,29 +48,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Contact Us - Microsoft Support",
-      "url": "https://support.microsoft.com/en-gb/contactus",
-      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
-    },
-    {
-      "title": "Anmelden bei Hotmail | Microsoft Support",
-      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
-      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
-    },
-    {
-      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
-      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
-    },
-    {
-      "title": "Sign in to your account - techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
-      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
-    },
-    {
-      "title": "Mettre à jour les pilotes via Gestionnaire de périphériques dans ...",
-      "url": "https://support.microsoft.com/fr-fr/windows/mettre-%C3%A0-jour-les-pilotes-via-gestionnaire-de-p%C3%A9riph%C3%A9riques-dans-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
-      "snippet": "Découvrez comment mettre à jour ou réinstaller des pilotes dans Windows à l’aide de Gestionnaire de périphériques."
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
     }
   ]
 }

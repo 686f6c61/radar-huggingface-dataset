@@ -2,53 +2,51 @@
 
 ## Resumen
 
-Quyet-1.0-Large es un modelo de decisión (decision model) desarrollado por Chinh Nguyen (usuario chinhnc en Hugging Face) y publicado bajo licencia Apache-2.0. A diferencia de un modelo generativo convencional, recibe un estado (texto libre, JSON o una conversación) y una o varias preguntas tipadas, y devuelve una opción por pregunta junto con probabilidades calibradas. Los tres tipos de pregunta soportados son `choice` (elegir una etiqueta), `score` (una escala ordenada) y `noul` (verdadero/falso).
+Quyet-1.0-Large es un modelo de decisión desarrollado por Chinh Nguyen (chinhnc) como un fine-tune del modelo base google/gemma-4-31B-it. A diferencia de un modelo conversacional al uso, su función es recibir un estado (texto libre, JSON o una conversación) junto con una o varias preguntas tipadas y devolver, para cada pregunta, una opción seleccionada acompañada de probabilidades calibradas. Admite tres tipos de pregunta: `choice` (elegir una etiqueta entre un conjunto), `score` (un nivel dentro de una escala ordenada) y `noul` (verdadero/falso).
 
-El modelo es un fine-tune de google/gemma-4-31B-it mediante una LoRA fusionada de rango 16, con 31.273.088.876 parámetros totales (30,7B correspondientes a texto) y un peso en disco de aproximadamente 62,5 GB en bf16. La entrada admite estados de hasta 6.000 tokens dentro de un prompt de 8.000 tokens.
+El modelo forma parte de la familia Quyet 1.0 (Large, Medium, Small, Small-EN y Tiny) y se distribuye bajo licencia Apache-2.0. Cuenta con 31.273.088.876 parámetros totales (30,7B de texto según la model card) y un peso de 62,5 GB en bf16. Su innovación principal es el mecanismo de lectura de decisiones: en lugar de generar texto libre, el modelo responde leyendo las probabilidades del siguiente token correspondientes a las letras de las opciones (A, B, ...) tras un prompt fijo, y el paquete `quyet` aplica temperaturas calibradas para convertir esas probabilidades en confianzas utilizables.
 
-Su relevancia actual radica en que empaqueta una tarea de clasificación y scoring calibrado dentro de un modelo de 31B, exponiéndola mediante una librería propia (`quyet`) y una configuración (`quyet_config.json`) que fija el prompt de decisión y las temperaturas calibradas. Forma parte de la familia Quyet 1.0, que incluye las variantes Large, Medium, Small, Small-EN y Tiny.
+Es relevante ahora porque ofrece una alternativa determinista y calibrada a los LLM generativos en tareas de clasificación y enrutamiento en producción: en lugar de pedir a un modelo que "responda" una etiqueta y parsear la salida, se obtiene directamente una distribución de probabilidad tipada y estructurada, con un formato de respuesta estable (la forma TypeSafe `/v1/systemone`) y un límite de 10 opciones por pregunta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma-4-31B-it con fine-tune LoRA fusionado (rango 16) y prompt de decisión con lectura de letras |
-| Parametros totales | 31.273.088.876 (31,3B; 30,7B de texto) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | Gemma-4-31B-it con fine-tune LoRA fusionado (rango 16), prompt de decisión con lectura de letras |
+| Parametros totales | 31.273.088.876 (30,7B de texto) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | prompt de 8.000 tokens; estado de entrada de hasta 6.000 tokens |
-| Tipos de cuantizacion | bf16 (no se han publicado versiones GGUF ni cuantizaciones de menor precision) |
-| Idiomas soportados | ingles; ajustado tambien para vietnamita. Otros idiomas funcionan con menor precision |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
+| Idiomas soportados | inglés; también ajustado para vietnamita; otros idiomas funcionan con menor precisión |
 | Licencia | Apache-2.0 (conservar el archivo NOTICE) |
-| Formato de pesos | safetensors (bf16, 62,5 GB) |
+| Formato de pesos | safetensors (62,5 GB en bf16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-4-31B-it, un transformer de 31B parámetros de la familia Gemma 4, y sobre él se aplica un fine-tune mediante LoRA de rango 16 que posteriormente se fusiona en los pesos base. No se especifica en la información disponible la composición exacta del dataset de ajuste, el número de tokens utilizados ni si se emplearon técnicas de RLHF o DPO; estos datos figuran como no disponibles.
+El modelo parte de google/gemma-4-31B-it, un transformer de 31,3B parámetros, sobre el que se aplica un fine-tune LoRA de rango 16 cuyos adaptadores se fusionan en los pesos finales, dando como resultado un checkpoint con la misma arquitectura que el modelo base. La capa de decisión no se implementa mediante generación autoregresiva libre, sino mediante un prompt fijo de "letter-readout": el modelo recibe el estado y las preguntas y se leen las probabilidades del siguiente token asociadas a las letras de las opciones (A, B, ...). El paquete `quyet` construye ese prompt y aplica las temperaturas calibradas almacenadas en `quyet_config.json`.
 
-La innovación técnica principal es el mecanismo de lectura por letras: el modelo responde leyendo las probabilidades del siguiente token correspondientes a las letras de las opciones (A, B, ...) tras un prompt fijo. La librería `quyet` construye ese prompt y aplica las temperaturas calibradas definidas en `quyet_config.json`. La versión de prompt empleada es la 2, que elimina el mensaje de sistema y la línea de cierre, y representa los estados estructurados como JSON compacto, reduciendo unas 68 tokens de entrada por decisión; las temperaturas se reajustaron específicamente para esta versión. El modelo admite como máximo 10 opciones por pregunta y solo trunca el estado (las conversaciones conservan los turnos más recientes; otros estados conservan el inicio).
+La versión del prompt es la 2: el prompt entrenado sin el mensaje de sistema ni la línea de cierre, con estados estructurados en JSON compacto, lo que reduce aproximadamente 68 tokens de entrada por decisión; las temperaturas se recalibraron para esta versión. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. El modelo se puede cargar con `transformers` y servir con vLLM como un checkpoint estándar de arquitectura gemma-4-31B-it, aunque el prompt de decisión y las temperaturas residen en el paquete y en el archivo de configuración.
 
 ## Capacidades
 
-- Clasificación de decisión con etiquetas discretas mediante preguntas de tipo `choice`, devolviendo la opción elegida, su confianza y el desglose de probabilidades.
-- Puntuación en escalas ordenadas mediante preguntas de tipo `score`, con nivel esperado, probabilidades y leyenda asociada.
-- Decisiones booleanas mediante preguntas de tipo `noul`, que devuelve la probabilidad P(verdadero).
-- Procesamiento de estados heterogéneos: texto libre, JSON estructurado o listas de conversación multi-turno.
-- Respuesta a múltiples preguntas tipadas en una sola llamada (por ejemplo, intención, urgencia y estado de ánimo del cliente de forma simultánea).
-- Capacidad multilingüe: optimizado para inglés y vietnamita; otros idiomas funcionan con precisión inferior.
-- Salida conforme a la forma TypeSafe `/v1/systemone` para los tres tipos de pregunta.
-- Carga como checkpoint estándar de arquitectura gemma-4-31B-it en transformers y servicio mediante vLLM, aunque el prompt de decisión y las temperaturas residen en el paquete `quyet`.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, visión o audio.
+- Clasificación de decisión tipada: `choice` (selección de una etiqueta entre opciones, con distribución de probabilidades), `score` (nivel esperado en una escala ordenada, con probabilidades y leyenda) y `noul` (probabilidad de verdadero/falso).
+- Salida calibrada: devuelve confianzas y distribuciones de probabilidad, no solo la etiqueta elegida.
+- Entrada de estado flexible: texto libre, JSON estructurado o listas de conversación multi-turno.
+- Procesamiento de hasta 10 opciones por pregunta y estados de hasta 6.000 tokens dentro de un prompt de 8.000 tokens.
+- Truncado controlado del estado: en conversaciones se conservan los turnos más recientes; en otros estados se conserva el inicio.
+- Multilingüe con foco en inglés y vietnamita; otros idiomas con menor precisión.
+- Compatibilidad con `transformers` y servicio mediante vLLM como checkpoint estándar.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Enrutamiento de intenciones en atención al cliente: dado el mensaje de un usuario, el modelo clasifica la intención con `choice` (por ejemplo, cancelar tarjeta, cambiar límite u otra) y devuelve probabilidades calibradas que permiten fijar umbrales de derivación a un humano.
-- Priorización de tickets de soporte: combinando preguntas `noul` de urgencia y `score` de enfado del cliente, se puede ordenar automáticamente una cola de incidencias y activar escalados según la probabilidad estimada.
-- Moderación de contenido y políticas: preguntas de tipo `noul` sobre si un texto incumple una política concreta, con probabilidad calibrada para decidir entre bloqueo automático o revisión manual.
-- Clasificación de documentos y formularios: interpretación de estados en JSON estructurado para asignar categorías administrativas o etiquetas de negocio sin necesidad de un modelo generativo adicional.
-- Análisis de sentimiento y satisfacción con escala ordenada: uso de preguntas `score` para convertir conversaciones en niveles de satisfacción (por ejemplo, calmado, molesto, enfadado) con una distribución de probabilidad en lugar de una etiqueta única.
-- Automatización de decisiones en pipelines de datos: integración del modelo como componente de scoring en un flujo de procesamiento por lotes, aprovechando el formato de salida estructurado y el prompt compacto de la versión 2 para reducir coste por decisión.
-- Evaluación de conversaciones multi-turno: al conservar los turnos más recientes en el truncado, puede usarse para auditar diálogos largos y extraer señales de intención, urgencia o riesgo.
-- Enrutamiento de consultas en un sistema RAG o de agentes: decidir a qué herramienta o base de conocimiento derivar una consulta antes de invocar un modelo generativo, reduciendo el coste total del sistema.
+- Enrutamiento de intenciones en atención al cliente: el modelo recibe el mensaje del cliente y devuelve la intención (`choice`), la urgencia (`noul`) y el nivel de enfado (`score`) en una sola llamada, con probabilidades que permiten derivar a un agente humano cuando la confianza es baja.
+- Moderación y triaje de contenido: clasificación de tickets o mensajes en categorías con umbral de confianza calibrado, aprovechando la salida de probabilidades para decidir si se escala a revisión manual.
+- Extracción de señales en pipelines de datos: dado un JSON de evento, responder preguntas booleanas y de escala sobre el mismo (por ejemplo, si es fraudulento o su severidad) de forma estructurada y repetible.
+- Enrutamiento de consultas en sistemas RAG: decidir qué índice o herramienta corresponde a una consulta del usuario mediante preguntas `choice` con distribución de probabilidad, integrándolo antes del paso de recuperación.
+- Clasificación de conversaciones multi-turno: análisis de transcripts de soporte conservando los turnos recientes gracias al truncado controlado de conversaciones, para etiquetar resultado, sentimiento y motivo de contacto.
+- Evaluación automática de calidad: puntuar respuestas generadas por otros modelos en escalas ordenadas (`score`) con confianza asociada, como componente de un pipeline de evaluación o de un juez automático.
+- Automatización de decisiones en back office: dado un formulario o expediente en JSON, responder preguntas tipadas sobre elegibilidad, categoría o riesgo con probabilidades auditables.
 
 ## Benchmarks y rendimiento
 
@@ -56,38 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 62,5 GB solo para los pesos, más el overhead de activaciones y caché KV; en la práctica conviene disponer de al menos 70-80 GB.
-- GPU recomendadas: una GPU de 80 GB (por ejemplo, A100 80 GB o H100 80 GB) es suficiente para ejecutar el modelo en bf16 según la model card.
-- Configuraciones multi-GPU: soportadas mediante `device_map="auto"` con el extra `quyet[multi-gpu]`.
-- Viabilidad en GPU de consumo: no cabe en GPU de consumo habituales (24 GB o menos) en bf16, y no se han publicado cuantizaciones GGUF que permitan reducir el requisito de memoria.
-- Opciones de despliegue: paquete `quyet` (`pip install quyet`) para la carga y predicción, transformers para carga estándar y vLLM para servido. No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
-- Memoria de disco: el repositorio ocupa 62,6 GB.
+- VRAM estimada: los pesos en bf16 ocupan 62,5 GB, por lo que la inferencia en bf16 requiere al menos 80 GB de VRAM (la model card indica que funciona en una GPU de 80 GB).
+- GPU recomendadas: una A100 80 GB o H100 80 GB para bf16 en una sola tarjeta; también es posible el reparto en varias GPU con `device_map="auto"` (paquete `quyet[multi-gpu]`).
+- GPU de consumo: no cabe en GPU de consumo convencionales (RTX 4090 con 24 GB, etc.) en bf16; la información disponible no documenta cuantizaciones que permitan reducir el requisito.
+- Opciones de despliegue: paquete `quyet` (`pip install quyet`), `transformers` y vLLM como checkpoint estándar de arquitectura gemma-4-31B-it.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quyet-1.0-Large | 31,3B | prompt de 8.000 tokens; estado de 6.000 tokens | Modelo de decision (choice, score, noul) con LoRA fusionada | Apache-2.0 | Hugging Face (chinhnc/Quyet-1.0-Large), libreria `quyet` |
-| google/gemma-4-31B-it | 31B (aproximado; dato no confirmado en la informacion disponible) | no disponible | Modelo instructivo generativo, base del anterior | Apache-2.0 | Hugging Face (google/gemma-4-31B-it) |
-| Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Quyet-1.0-Large | 31,3B | prompt 8.000 tokens / estado 6.000 tokens | Modelo de decisión calibrado (fine-tune de Gemma-4-31B-it) | Apache-2.0 | Hugging Face (`chinhnc/Quyet-1.0-Large`) |
+| google/gemma-4-31B-it | 31,3B | no disponible | LLM generativo instruct | Apache-2.0 | Hugging Face |
+| Quyet-1.0-Medium | no disponible | no disponible | Modelo de decisión calibrado (misma familia) | Apache-2.0 | Hugging Face |
+| Quyet-1.0-Small | no disponible | no disponible | Modelo de decisión calibrado (misma familia) | Apache-2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables adicionales en la informacion proporcionada, por lo que la comparativa se limita al modelo base.
+La información disponible no incluye datos de rendimiento comparativo frente a estos modelos; la comparación se limita a parámetros, contexto, enfoque y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la información disponible, pero al derivar de Gemma 4 hereda los sesgos potenciales del modelo base.
-- Riesgo de alucinación: el modelo no genera texto libre, sino que selecciona entre opciones predefinidas; el riesgo se traslada a una posible elección incorrecta con confianza alta y a una calibración imperfecta de las probabilidades.
-- Límite de opciones: como máximo 10 opciones por pregunta.
-- Truncado de entrada: solo el estado se trunca (conversaciones por los turnos más recientes, otros estados por el inicio), lo que puede descartar información relevante en entradas largas.
-- Limitaciones de idioma: optimizado para inglés y vietnamita; otros idiomas operan con precisión reducida.
-- Dependencia del ecosistema: el prompt de decisión y las temperaturas calibradas viven en el paquete `quyet` y en `quyet_config.json`, por lo que cargar el modelo con transformers o vLLM sin ese paquete no reproduce el comportamiento de decisión esperado.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero es obligatorio conservar el archivo NOTICE (que comienza con "Quyet by Chinh Nguyen") al redistribuir el modelo o cualquier derivado.
-- Advertencia para producción: no hay benchmarks publicados que respalden el rendimiento del modelo, ni datos de latencia o throughput, por lo que se recomienda una evaluación propia antes de desplegarlo.
+- El modelo está diseñado exclusivamente para decisiones tipadas; no es un modelo conversacional ni de generación libre de texto.
+- Límite de 10 opciones por pregunta y de un estado de hasta 6.000 tokens dentro de un prompt de 8.000 tokens; el estado se trunca (turnos recientes en conversaciones, inicio en otros estados).
+- Idiomas: precisión menor fuera de inglés y vietnamita.
+- La calibración de probabilidades depende de las temperaturas del paquete `quyet` y de la versión del prompt (versión 2); usarlo fuera del paquete o con prompts distintos puede invalidar la calibración.
+- Riesgo de alucinación y sesgos heredados del modelo base google/gemma-4-31B-it; no se documentan evaluaciones de sesgo específicas.
+- Licencia Apache-2.0 con obligación de conservar el archivo NOTICE ("Quyet by Chinh Nguyen") al redistribuir el modelo o derivados.
+- Requisito de hardware elevado (80 GB de VRAM en bf16); no se documentan cuantizaciones oficiales para reducir el coste de despliegue.
+- No se documentan capacidades de tool calling, agentes ni visión; no deben asumirse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chinhnc/Quyet-1.0-Large
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Contacto indicado en la model card: email@chinh.com
-- Cita BibTeX: Quyet 1.0: calibrated decision models, Chinh Nguyen, 2026, https://huggingface.co/chinhnc/Quyet-1.0-Large
+- Página del proyecto: https://quyet.ai
+- Contacto: email@quyet.ai

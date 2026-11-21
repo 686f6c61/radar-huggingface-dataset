@@ -77,31 +77,5 @@
       "value": 54.71
     }
   ],
-  "sources": [
-    {
-      "title": "iLovePDF | Herramientas PDF online gratis",
-      "url": "https://www.ilovepdf.com/es",
-      "snippet": "iLovePDF es un servicio online para trabajar con archivos PDF completamente gratuito y fácil de usar. ¡Unir, dividir, comprimir y …"
-    },
-    {
-      "title": "iLovePDF | Online PDF tools for PDF lovers",
-      "url": "https://www.ilovepdf.com/",
-      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office …"
-    },
-    {
-      "title": "iLovePDF | 為PDF愛好者提供的PDF文檔在線轉換工具",
-      "url": "https://www.ilovepdf.com/zh-tw",
-      "snippet": "iLovePDF網站提供PDF文檔的線上轉換服務。它完全免費，而且使用方便。無論是合併PDF、拆分PDF、壓縮PDF、Office文檔轉換 …"
-    },
-    {
-      "title": "iLovePDF | Online-Tools für PDF-Liebhaber",
-      "url": "https://www.ilovepdf.com/de",
-      "snippet": "iLovePDF ist ein kostenloser und leicht zu bedienender Service, mit welchem PDF-Dateien bearbeitet werden können. PDFs …"
-    },
-    {
-      "title": "Convertire PDF in EXCEL. Converti PDF in XLS online - iLovePDF",
-      "url": "https://www.ilovepdf.com/it/pdf_in_excel",
-      "snippet": "Trasforma automaticamente tutti i dati in tabelle PDF a tabelle EXCEL modificabili. PDF in Excel online e gratuito"
-    }
-  ]
+  "sources": []
 }

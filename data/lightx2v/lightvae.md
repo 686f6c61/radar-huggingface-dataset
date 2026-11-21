@@ -2,96 +2,100 @@
 
 ## Resumen
 
-LightVAE es una familia de autocodificadores (VAE) de vídeo destilados y comprimidos que funcionan como reemplazo directo de los VAE originales de Wan2.1, Wan2.2 y MiniMax-H3, preservando la interfaz latente de los modelos base. Lo desarrolla el equipo de lightx2v (ModelTC), y su objetivo es reducir el coste computacional y de memoria de la etapa de codificación/decodificación de latentes en pipelines de generación de vídeo, que suele ser uno de los cuellos de botella en inferencia. Se publica bajo licencia Apache 2.0 y se distribuye como checkpoints de un solo archivo en formato safetensors, con variantes adaptadas al nodo personalizado de ComfyUI.
+LightVAE es un conjunto de autoencoders de vídeo (VAE) compactados y destilados, desarrollado por el equipo lightx2v (proyecto ModelTC), que reduce el coste computacional y de memoria de los VAE utilizados en pipelines de generación de vídeo (text-to-video e image-to-video). A diferencia de un modelo generativo completo, LightVAE actúa como componente auxiliar: sustituye al encoder y/o decoder originales de los backbones Wan2.1, Wan2.2 y MiniMax-H3, preservando la interfaz latente original para que los componentes comprimidos puedan combinarse con los originales sin reentrenar el modelo de difusión.
 
-Tecnicamente no es un modelo generativo ni un modelo de lenguaje: es un componente de infraestructura para pipelines de text-to-video e image-to-video. La compresion se logra mediante compresion temporal de bajo rango (temporal low-rank compression) y poda por bloques (block pruning), lo que da lugar a dos variantes por backbone: Pro, que conserva la profundidad original del decodificador para mayor fidelidad de reconstruccion, y Lite, que aplica poda adicional para una inferencia mas rapida. El repositorio completo ocupa 11,8 GB e incluye decodificadores Pro y Lite para Wan2.1 y Wan2.2, y decodificador Lite y codificador Lite para MiniMax-H3.
+La propuesta central es la compresión del autoencoder sin alterar el espacio latente: los checkpoints "Pro" mantienen la profundidad original del decoder con compresión temporal de bajo rango, mientras que los "Lite" añaden poda de bloques. Para MiniMax-H3 se publican además un encoder y un decoder Lite podados de forma independiente, con integración nativa en ComfyUI y un decoder opcional cuantizado ConvRot-INT8.
 
-El interes actual del proyecto reside en que permite acelerar workflows de generacion de video ya existentes (ComfyUI, scripts de Python) sin reentrenar ni sustituir el modelo de difusion, solo cambiando el VAE. El repositorio tiene 184 descargas y 14 likes en Hugging Face, con creacion registrada el 2026-10-10 y ultima actualizacion el 2026-10-12, por lo que se trata de una publicacion reciente y con adopcion todavia limitada.
+Es relevante ahora porque los VAE de vídeo de alta resolución son un cuello de botella en VRAM y latencia de decodificación en pipelines de difusión de vídeo. LightVAE permite reducir ese coste manteniendo compatibilidad con los pesos originales, lo que facilita su adopción en flujos existentes de ComfyUI y en el ecosistema LightX2V. El repositorio ocupa 12,8 GB y acumula 819 descargas y 40 likes en Hugging Face, con licencia Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Autocodificador variacional (VAE) de video con compresion temporal de bajo rango y poda por bloques |
+| Arquitectura | Autoencoder de vídeo (VAE) con compresión temporal de bajo rango y poda de bloques; variantes Pro y Lite |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible; no aplica como ventana de contexto. En el ejemplo del repositorio procesa 81 fotogramas a 480x832 |
-| Tipos de cuantizacion | no disponible; los checkpoints se distribuyen en safetensors y el nodo de ComfyUI expone un parametro de precision configurable en modo auto |
-| Idiomas soportados | no disponible (no aplica: el texto de prompt lo procesa el modelo de difusion asociado, no el VAE) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje; procesa vídeo por fotogramas) |
+| Tipos de cuantizacion | FP16 para checkpoints estándar; ConvRot-INT8 para el decoder Lite de MiniMax-H3 (solo ComfyUI) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, con dos exportaciones por checkpoint: estandar (Python) y `-comfy.safetensors` para ComfyUI |
+| Formato de pesos | safetensors (checkpoints LightVAE); los VAE originales de Wan se distribuyen como .pth |
 
 ## Arquitectura y entrenamiento
 
-LightVAE no introduce un modelo nuevo desde cero, sino que acelera autocodificadores de video ya entrenados mediante dos tecnicas combinadas: compresion temporal de bajo rango, que reduce el coste de las operaciones sobre la dimension temporal del latente, y poda por bloques, que elimina estructuras completas de la red. El requisito de diseno central es preservar la interfaz latente del VAE original, de modo que el checkpoint resultante pueda insertarse en un pipeline existente sin modificar el modelo de difusion ni reentrenar el resto de componentes. La model card etiqueta el trabajo como destilacion, compresion y poda aplicadas sobre el VAE preentrenado.
+LightVAE no es un transformer generativo, sino un autoencoder de vídeo cuyo objetivo es comprimir y reconstruir vídeo en el espacio latente que consumen los modelos de difusión. La familia se organiza en dos niveles de compresión. Las variantes Pro conservan la profundidad original del decoder e introducen compresión temporal de bajo rango (low-rank), mientras que las variantes Lite añaden poda de bloques sobre esa base. Para Wan2.1 y Wan2.2, los decoders Pro y Lite se emparejan con el encoder original del backbone; para MiniMax-H3 se publican encoder y decoder Lite podados de forma independiente.
 
-La familia cubre tres backbones. Para Wan2.1 y Wan2.2 se publican decodificadores Pro y Lite, manteniendo los codificadores originales del modelo base. Para MiniMax-H3 se publican un decodificador Lite y un codificador Lite, y el modelo puede usar tanto su codificador original como el codificador Lite proporcionado. Existe una regla de compatibilidad relevante: Wan2.2 14B utiliza el VAE de Wan2.1, mientras que Wan2.2 5B TI2V utiliza el VAE de Wan2.2, por lo que la eleccion del decodificador debe hacerse en consecuencia. En todos los casos, el VAE de audio de MiniMax-H3 y sus conexiones deben permanecer sin cambios. Los detalles de entrenamiento, el numero de tokens o fotogramas vistos, la composicion del dataset y si se emplearon tecnicas de alineacion como RLHF o DPO no se detallan en la informacion disponible.
+La innovación clave es la preservación de la interfaz latente: al mantener las dimensiones y la semántica del espacio latente original, los componentes comprimidos son intercambiables con los originales (por ejemplo, encoder original de Wan2.1 con decoder LightVAE-Lite) sin necesidad de ajustar el modelo de difusión. La model card indica que el trabajo se basa en destilación y compresión, e incluye un decoder cuantizado ConvRot-INT8 para H3 con aceleración nativa en CUDA 13.0+ mediante PyTorch. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF/DPO.
 
 ## Capacidades
 
-- Decodificacion de latentes de video a video: reconstruye video a partir de representaciones latentes generadas por el modelo de difusion asociado.
-- Codificacion de video a latentes: disponible en la variante Lite del codificador para MiniMax-H3; en Wan2.1 y Wan2.2 se conserva el codificador original.
-- Sustitucion directa (drop-in) del VAE original: mantiene la interfaz latente, por lo que no requiere cambios en el modelo de difusion.
-- Dos perfiles de fidelidad/velocidad: Pro, que conserva la profundidad del decodificador para mayor fidelidad de reconstruccion, y Lite, que poda adicionalmente para priorizar velocidad.
-- Integracion con ComfyUI mediante el nodo personalizado Load LightVAE (TLR), con conexion directa a los nodos de VAE Decode y de codificacion de referencia.
-- Integracion en Python mediante la API de linea de comandos del repositorio (`infer.py`) con seleccion de modelo, variante, codificador y decodificador.
-- Soporte de flujos image-to-video y text-to-video a traves del pipeline subyacente, incluidos los modos FL2V y REF2V de MiniMax-H3.
-- Seleccion automatica de precision, backend y dispositivo en la integracion con ComfyUI (parametro en modo auto).
-- No se documentan capacidades de tool calling, agentes, vision de propósito general ni modo de razonamiento, al no tratarse de un modelo de lenguaje.
+- Compresión y reconstrucción de vídeo en el espacio latente para pipelines de difusión de vídeo.
+- Sustitución intercambiable de encoder y/o decoder manteniendo el espacio latente original.
+- Compatibilidad con Wan2.1 (decoders Pro y Lite emparejados con encoder original).
+- Compatibilidad con Wan2.2: los modelos de 14B usan el VAE de Wan2.1 y TI2V-5B usa el VAE de Wan2.2.
+- Soporte de MiniMax-H3 con encoder y decoder Lite podados de forma independiente.
+- Integración nativa en ComfyUI mediante el nodo "Load H3 LightVAE", sin kernels Triton ni paquetes adicionales.
+- Flujos soportados en ComfyUI: FL2V (primer y último fotograma), REF2V con referencias de imagen y REF2V con referencia de vídeo.
+- Cuantización ConvRot-INT8 del decoder H3 Lite para ComfyUI con aceleración CUDA.
+- Script de inferencia en Python (`infer.py`) que acepta checkpoints de encoder y decoder independientes y genera un informe JSON.
+- No dispone de tool calling, razonamiento multi-paso ni capacidades de lenguaje: es un componente de compresión de vídeo, no un modelo conversacional.
 
 ## Casos de uso
 
-- Aceleracion de pipelines text-to-video en produccion: sustituir el decodificador original de Wan2.1 o Wan2.2 por la variante Lite reduce el coste de la fase de decodificacion de latentes, que se ejecuta en cada generacion, sin tocar el modelo de difusion ni los prompts.
-- Reduccion de memoria en servidores de inferencia de video: al emplear checkpoints podados en lugar de los VAE originales, el proceso de decodificacion ocupa menos recursos, lo que permite mantener mas workers concurrentes en la misma GPU o ejecutar el pipeline en GPUs con menos VRAM.
-- Workflows de ComfyUI para creadores: instalando el nodo Load LightVAE (TLR) se puede reemplazar el decodificador en grafos existentes de Wan o MiniMax-H3 y mantener el resto del workflow intacto, incluidos los nodos de codificacion de primer y ultimo fotograma.
-- Post-produccion y recomposicion en espacio latente: al preservar la interfaz latente, un latente generado o interpolado con otras herramientas puede decodificarse con LightVAE para obtener el video final, util en tareas de edicion, interpolacion o mezcla de trayectorias latentes.
-- Flujos image-to-video con referencia (REF2V) en MiniMax-H3: sustituyendo tambien el codificador por el Lite, se acelera la codificacion de la imagen o video de referencia ademas de la decodificacion, manteniendo el VAE de audio sin cambios.
-- Prototipado e investigacion sobre compresion de VAE de video: el repositorio incluye codigo de inferencia y ejemplos que permiten comparar reconstrucciones entre variantes Pro y Lite y medir el compromiso entre fidelidad y velocidad.
-- Despliegue de demos interactivas de generacion de video: el ahorro de tiempo por decodificacion es acumulativo en aplicaciones donde el usuario genera multiples clips, lo que mejora la latencia percibida en interfaces de demostracion.
+- Acelerar la decodificación en pipelines text-to-video: sustituir el decoder original de Wan2.1 o Wan2.2 por un decoder Lite reduce el coste de decodificación manteniendo la compatibilidad con el modelo de difusión existente.
+- Reducir la VRAM en inferencia de image-to-video en ComfyUI: el nodo "Load H3 LightVAE" permite usar componentes Lite de MiniMax-H3 en flujos FL2V y REF2V sin instalar paquetes adicionales.
+- Optimizar flujos de referencia de imagen y vídeo: en REF2V se puede sustituir el encoder, el decoder o ambos, lo que permite ajustar el ahorro según el cuello de botella del pipeline.
+- Despliegue en hardware con recursos limitados: la variante ConvRot-INT8 del decoder H3 Lite reduce el coste de memoria de decodificación en ComfyUI con GPUs NVIDIA compatibles con CUDA 13.0+.
+- Evaluación de calidad de reconstrucción: `infer.py` permite reconstruir vídeos con combinaciones de encoder y decoder y guardar un informe JSON para comparar variantes Pro y Lite.
+- Integración en el ecosistema LightX2V: usar LightVAE como componente de compresión dentro de pipelines de generación de vídeo gestionados por LightX2V.
+- Investigación sobre compresión de autoencoders de vídeo: la separación entre compresión temporal de bajo rango (Pro) y poda de bloques (Lite) sirve como base para experimentos de destilación de VAE.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card indica que el repositorio de GitHub incluye benchmarks y comparaciones visuales entre variantes, pero no reproduce cifras en el texto proporcionado. Tampoco se detallan tasas de compresion concretas, numero de parametros eliminados por la poda ni factor de aceleracion medido. Las unicas afirmaciones cuantitativas disponibles son el tamano del repositorio (11,8 GB, agregado de todos los checkpoints) y las estadisticas de Hugging Face (184 descargas, 14 likes).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al repositorio de GitHub de LightVAE para consultar benchmarks y comparaciones visuales, pero no incluye cifras en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. No se publican cifras de memoria por variante ni por resolucion.
-- GPU recomendadas: no disponible. No se especifica hardware de referencia en la model card ni en el fragmento de repositorio proporcionado.
-- Ejecucion en GPU de consumidor: no confirmada en la informacion disponible. Al tratarse de un VAE de video y no de un modelo de difusion completo, su huella es previsiblemente menor que la del modelo generativo asociado, pero no hay datos publicados que lo cuantifiquen.
-- Ejemplo de carga de trabajo documentado: reconstruccion con el decodificador Lite de Wan2.1 sobre un video de 81 fotogramas a 480x832, usando el codificador original de Wan2.1.
-- Opciones de despliegue: ComfyUI mediante el nodo personalizado Load LightVAE (TLR); Python mediante el repositorio ModelTC/LightVAE con `pip install` y el script `infer.py`; descarga de pesos con `huggingface_hub`.
-- Latencia y throughput: no disponibles. No se publican mediciones de tiempo por fotograma ni comparativas de velocidad frente a los VAE originales en la informacion facilitada.
-- Formatos de despliegue compatibles: los checkpoints `-comfy.safetensors` requieren el nodo Load LightVAE (TLR) y no deben cargarse con el nodo estandar Load VAE / VAELoader de ComfyUI.
+- VRAM estimada para inferencia: no disponible de forma numérica; el repositorio completo ocupa 12,8 GB, pero cada checkpoint individual es un subconjunto de ese tamaño.
+- GPU recomendadas: no disponibles en la información proporcionada. El decoder ConvRot-INT8 requiere una build de PyTorch con CUDA 13.0+ y un driver compatible para la aceleración nativa en NVIDIA.
+- GPU de consumo: no se especifica compatibilidad con GPUs consumer; la viabilidad depende del backbone de difusión de vídeo con el que se combine el VAE.
+- Opciones de despliegue: ComfyUI (nodo "Load H3 LightVAE", solo para MiniMax-H3), scripts Python del repositorio (`infer.py`) y pipelines LightX2V.
+- Latencia y throughput: no disponibles. La model card advierte que el soporte de backend y el rendimiento dependen del entorno.
+- Restricción de despliegue: el checkpoint INT8 es exclusivo de ComfyUI; con los scripts Python independientes deben usarse checkpoints estándar no INT8.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Backbones cubiertos | Variantes | Interfaz latente | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| LightVAE | VAE de video comprimido por poda y bajo rango | Wan2.1, Wan2.2, MiniMax-H3 | Pro y Lite (decodificador); Lite (codificador, solo H3) | Compatible con la original (drop-in) | Apache 2.0 | Hugging Face lightx2v/LightVAE y GitHub ModelTC/LightVAE |
-| VAE original de Wan2.1 | VAE de video de referencia | Wan2.1 | Decodificador y codificador completos | Referencia | la del modelo base | Wan-AI/Wan2.1-T2V-1.3B en Hugging Face |
-| VAE original de Wan2.2 | VAE de video de referencia | Wan2.2 (5B TI2V) | Decodificador y codificador completos | Referencia | la del modelo base | repositorio de Wan2.2 |
-| VAE original de MiniMax-H3 | VAE de video de referencia | MiniMax-H3 | Codificador, decodificador y VAE de audio | Referencia | la del modelo base | repositorio de MiniMax-H3 |
+| Modelo | Tipo | Backbones soportados | Compresión | Licencia | Integración |
+|---|---|---|---|---|---|
+| LightVAE | VAE de vídeo compactado | Wan2.1, Wan2.2, MiniMax-H3 | Low-rank temporal + poda de bloques; INT8 opcional | Apache 2.0 | ComfyUI, Python, LightX2V |
+| Wan2.1 VAE (original) | VAE de vídeo | Wan2.1 | Sin compresión | no disponible en la información | ComfyUI, scripts |
+| Wan2.2 VAE (original) | VAE de vídeo | Wan2.2 TI2V-5B | Sin compresión | no disponible en la información | ComfyUI, scripts |
+| MiniMax-H3 VAE (original) | VAE de vídeo | MiniMax-H3 | Sin compresión | no disponible en la información | ComfyUI nativo |
 
-No se dispone de datos numericos de parametros, VRAM ni velocidad para ninguna de las alternativas en la informacion proporcionada, por lo que la comparativa se limita a cobertura, variantes y licencia.
+No se dispone de datos de rendimiento comparado entre LightVAE y los VAE originales en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Las variantes Lite aplican poda adicional sobre el decodificador, lo que puede degradar la fidelidad de reconstruccion respecto a las variantes Pro y al VAE original; el repositorio remite a comparaciones visuales, no a metricas objetivas.
-- Los checkpoints con sufijo `-comfy.safetensors` no son cargables con el nodo estandar Load VAE / VAELoader de ComfyUI; requieren el nodo Load LightVAE (TLR). Usarlos con el nodo incorrecto provoca fallos de carga.
-- Regla de compatibilidad critica: Wan2.2 14B emplea el VAE de Wan2.1 y Wan2.2 5B TI2V emplea el VAE de Wan2.2. Elegir el decodificador equivocado rompe la coherencia del pipeline.
-- El VAE de audio de MiniMax-H3 y sus conexiones deben mantenerse intactos en todos los escenarios; LightVAE solo cubre la parte de video.
-- En Wan2.1 y Wan2.2 no se proporciona un codificador alternativo: la codificacion sigue dependiendo del codificador original, por lo que la aceleracion se concentra en la decodificacion salvo en MiniMax-H3.
-- No hay datos publicados de sesgos, tasas de alucinacion ni comportamiento en dominios concretos. Al no ser un modelo de lenguaje, las advertencias habituales de sesgo textual no aplican directamente, pero si lo hace la posible aparicion de artefactos de reconstruccion en el video decodificado.
-- No se documentan idiomas soportados. La cobertura linguistica del sistema depende enteramente del modelo de difusion y del codificador de texto asociado, no de LightVAE.
-- Licencia Apache 2.0, que permite uso comercial y modificacion, pero se recomienda verificar las licencias de los modelos base (Wan2.1, Wan2.2, MiniMax-H3) cuyos VAE se sustituyen, ya que LightVAE no las modifica ni las sustituye.
-- Adopcion limitada: 184 descargas y 14 likes en el momento de la consulta, con publicacion muy reciente, lo que reduce la evidencia empirica disponible sobre su comportamiento en produccion.
-- El numero de parametros, los requisitos de VRAM y las cifras de latencia no estan publicados, lo que dificulta el dimensionamiento previo de infraestructura.
+- No es un modelo generativo: no produce vídeo por sí mismo, solo comprime y reconstruye en el espacio latente de un backbone de difusión.
+- Los checkpoints deben emparejarse con su backbone correcto: en Wan2.2, los modelos de 14B usan el VAE de Wan2.1 y TI2V-5B usa el VAE de Wan2.2.
+- El nodo de ComfyUI solo soporta MiniMax-H3 en la versión documentada.
+- El decoder ConvRot-INT8 es exclusivo de ComfyUI y requiere CUDA 13.0+; no debe usarse con los scripts Python estándar.
+- El VAE de audio de H3 no se modifica; LightVAE solo afecta al vídeo.
+- No se documentan sesgos, tasas de alucinación ni limitaciones idiomáticas porque el modelo no procesa lenguaje.
+- La licencia Apache 2.0 permite uso comercial, pero deben respetarse las licencias de los backbones originales (Wan2.1, Wan2.2, MiniMax-H3) con los que se combine.
+- No se especifican requisitos de VRAM ni latencias, por lo que el dimensionamiento en producción requiere pruebas propias.
+- Los flujos de ComfyUI publicados son de modelo base, no de turbo-LoRA de 4 u 8 pasos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/lightx2v/LightVAE
-- Repositorio de codigo y ejemplos: https://github.com/ModelTC/LightVAE
-- Guia y workflows de ejemplo para ComfyUI: https://github.com/ModelTC/LightVAE/tree/main/comfyui
-- Proyecto LightX2V relacionado: https://github.com/ModelTC/LightX2V
-- VAE original de Wan2.1 (usado como codificador en los ejemplos): https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
-- Paper citado como "LightVAE: Towards Compact and Efficient Video Autoencoders": enlace no disponible en la informacion proporcionada.
+- [Hugging Face: lightx2v/LightVAE](https://huggingface.co/lightx2v/LightVAE)
+- [Paper (arXiv 2610.14726)](https://huggingface.co/papers/2610.14726)
+- [Repositorio de código LightVAE](https://github.com/ModelTC/LightVAE)
+- [Integración ComfyUI](https://github.com/ModelTC/LightVAE/tree/main/comfyui)
+- [Guía de workflows ComfyUI](https://github.com/ModelTC/LightVAE/tree/main/comfyui/workflows)
+- [Workflow primer y último fotograma](https://github.com/ModelTC/LightVAE/blob/main/comfyui/workflows/h3_fl2v_lightvae.json)
+- [Workflow referencias de imagen](https://github.com/ModelTC/LightVAE/blob/main/comfyui/workflows/h3_ref_image_lightvae.json)
+- [Workflow referencia de vídeo](https://github.com/ModelTC/LightVAE/blob/main/comfyui/workflows/h3_ref_video_lightvae.json)
+- [LightX2V](https://github.com/ModelTC/LightX2V)
+- [Archivos y versiones del repositorio](https://huggingface.co/lightx2v/LightVAE/tree/main)
+- [MiniMax-H3 VAE original en Comfy-Org](https://huggingface.co/Comfy-Org/MiniMax-H3)

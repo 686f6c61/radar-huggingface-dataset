@@ -5,10 +5,10 @@
   "author": "KosmoResearch",
   "url": "https://huggingface.co/KosmoResearch/Kosmo-GFM",
   "created_at": "2026-11-05T10:08:05.000Z",
-  "updated_at": "2026-11-13T13:48:31.000Z",
+  "updated_at": "2026-11-20T15:04:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "depth-estimation",
+  "pipeline_tag": "image-to-3d",
   "library": "pytorch",
   "languages": [
     "en"
@@ -21,14 +21,14 @@
     "point-tracking",
     "scene-flow",
     "image-matching",
-    "depth-estimation",
+    "image-to-3d",
     "en",
     "arxiv:2611.16840",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 48,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Kosmo-Research/Kosmo-GFM",
+  "renamed_at": "2026-11-21T03:41:36.998Z",
   "benchmarks": [],
   "sources": []
 }

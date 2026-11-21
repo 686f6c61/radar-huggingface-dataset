@@ -1,102 +1,105 @@
 # MaagDeveloper/NeoLM-Small-Base
 
 ## Resumen
+NeoLM-Small-Base es un modelo de lenguaje causal (decoder-only) de 61.356.032 parámetros entrenado desde cero por MaagDeveloper con PyTorch y Hugging Face Transformers. Se publica en la rama `main` como checkpoint base de la etapa "Stage 1 Foundation Continued 30K", en formato bfloat16 y safetensors. No es un modelo ajustado por instrucciones ni un asistente conversacional: es un modelo de predicción del siguiente token, pensado como base para experimentación y para posteriores etapas de ajuste.
 
-NeoLM-Small-Base es un modelo de lenguaje de tipo decoder-only publicado por el desarrollador independiente MaagDeveloper bajo el identificador `MaagDeveloper/NeoLM-Small-Base`. Se trata de un checkpoint de la fase 1 (Foundation) de un proyecto propio de preentrenamiento desde cero, entrenado con PyTorch y la librería Transformers. Con 61.356.032 parámetros únicos (embeddings atados), 12 capas y una dimensión oculta de 512, es un modelo pequeño orientado exclusivamente al inglés y a la predicción del siguiente token, no a instrucciones ni a conversación.
+La arquitectura es un transformer decoder-only de 12 capas, dimensión oculta 512, 8 cabezas de consulta y 2 cabezas KV (GQA), MLP SwiGLU con tamaño intermedio 1.536, normalización RMSNorm con QK Norm, codificación posicional RoPE y embeddings atados. La longitud de contexto es de 1.024 tokens y el vocabulario es un ByteLevel BPE propio de 49.152 entradas, entrenado exclusivamente sobre el split de entrenamiento de NeoCorpus.
 
-El modelo emplea una arquitectura transformer causal con innovaciones habituales en modelos modernos: atención con GQA (8 cabezas de consulta y 2 de clave/valor), MLP SwiGLU con tamaño intermedio de 1.536, normalización RMSNorm con QK Norm y codificación posicional RoPE. Su contexto es de solo 1.024 tokens y utiliza un tokenizador ByteLevel BPE propio de 49.152 entradas entrenado específicamente sobre el corpus del proyecto, sin reutilizar tokenizadores de terceros.
-
-La relevancia de esta ficha es acotada: se trata de un checkpoint de investigación de un autor individual, con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin resultados de benchmarks publicados. Es útil como referencia para quienes estudian el preentrenamiento de modelos pequeños desde cero o quieran reproducir la arquitectura, pero no está pensado para producción ni para tareas que requieran seguimiento de instrucciones. El propio autor advierte que el modelo base puede no responder de forma fiable a preguntas factuales ni realizar razonamiento multi-paso.
+Su relevancia es la de un modelo pequeño, reproducible y con trazabilidad completa del pipeline de datos y tokenizador, útil para estudiar el comportamiento de modelos fundacionales a pequeña escala, validar recetas de entrenamiento y servir como punto de partida para fine-tuning. El checkpoint publicado corresponde a una continuación de 30K pasos de optimizador sobre el checkpoint Foundation original, con una mejora medida muy pequeña en perplejidad respecto al checkpoint de 20K.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal con GQA, SwiGLU, RMSNorm, QK Norm y RoPE |
+| Arquitectura | Transformer decoder-only causal, con GQA, SwiGLU, RMSNorm, QK Norm y RoPE |
 | Parametros totales | 61.356.032 (embeddings atados) |
-| Parametros activos | No aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | No disponible (el repo solo publica pesos en BF16; no se documentan cuantizaciones oficiales) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | No disponible |
-| Formato de pesos | Safetensors en BF16 |
+| Tipos de cuantizacion | no disponible (solo se publican pesos BF16 en safetensors) |
+| Idiomas soportados | en (ingles) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors en bfloat16; implementacion custom `NeoLMForCausalLM` con `trust_remote_code=True` |
 | Capas | 12 |
 | Dimension oculta | 512 |
 | Cabezas de consulta / KV | 8 / 2 (GQA) |
-| Tamano intermedio MLP | 1.536 |
+| Tamano intermedio MLP | 1.536 (SwiGLU) |
 | Vocabulario | 49.152 (ByteLevel BPE propio) |
-| Tokens especiales | EOS `<|endoftext|>` ID 0, PAD `<|pad|>` ID 1, sin BOS |
-| Implementacion | `NeoLMForCausalLM` personalizada (`trust_remote_code=True`) |
-| Tamano del repositorio | 0,1 GB |
+| Tokens especiales | EOS `<\|endoftext\|>` ID 0; PAD `<\|pad\|>` ID 1; sin BOS |
+| Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer decoder-only de 12 capas con dimensión oculta 512 y 8 cabezas de atención con 2 cabezas KV (GQA), lo que reduce el coste de memoria de la caché KV en inferencia. Usa MLP SwiGLU con tamaño intermedio 1.536, RMSNorm con QK Norm, RoPE para posiciones y embeddings de entrada y salida atados. La implementación es código custom (`NeoLMForCausalLM`), por lo que requiere `trust_remote_code=True` para cargarse.
 
-La arquitectura es un transformer decoder-only estándar con varias decisiones de diseño propias de modelos recientes pero aplicadas a una escala muy reducida: 12 capas, dimensión oculta 512, GQA con 8 cabezas de consulta y 2 de clave/valor, MLP SwiGLU de tamaño intermedio 1.536, RMSNorm con QK Norm y RoPE para la posición. Los embeddings de entrada y salida están atados, lo que explica que el recuento de parámetros únicos sea de 61,36 millones. La implementación no usa el código estándar de Transformers, sino una clase `NeoLMForCausalLM` propia que requiere `trust_remote_code=True` para cargarse.
+El entrenamiento parte del dataset NeoCorpus, configuración `foundation`, derivada de un subconjunto filtrado centrado en inglés de Karpathy ClimbMix Shuffle (a su vez basado en NVIDIA Nemotron-ClimbMix). El split de entrenamiento contiene 1.889.952 documentos y 1.147.218.931 tokens contados con el tokenizador de esta release, incluyendo separadores EOS entre documentos. El split de validación tiene 5.000 documentos y 3.084.132 tokens; el de test, 20.000 documentos y 12.094.582 tokens, ambos reservados fuera del preentrenamiento. El tokenizador ByteLevel BPE de 49.152 entradas se entrenó solo sobre el split de entrenamiento, con pre-tokenización regex estilo GPT y grupos de 1 a 3 dígitos.
 
-El preentrenamiento se realizó sobre la configuración `foundation` del corpus NeoCorpus, derivado de un subconjunto filtrado en inglés de Karpathy ClimbMix Shuffle, a su vez basado en NVIDIA Nemotron-ClimbMix. El split de entrenamiento contiene 1.889.952 documentos y 1.147.218.931 tokens contados con el tokenizador de esta release (incluyendo separadores EOS por documento). El tokenizador ByteLevel BPE se entrenó exclusivamente sobre esos documentos de entrenamiento, excluyendo validación y test, con pre-tokenización estilo GPT y agrupación de 1 a 3 dígitos. El autor indica explícitamente que este es un checkpoint de entrenamiento publicado y no una versión convergida: el calendario previsto de tres épocas no se completó y no se documentan el paso exacto del checkpoint ni la perplejidad completa de validación y test. No se mencionan fases de RLHF, DPO ni ajuste por instrucciones en esta release.
+El checkpoint Foundation original se entrenó aproximadamente 202K pasos de optimizador antes de una interrupción del sistema. La continuación seleccionada añadió 20K pasos y luego 10K más desde ese checkpoint, sumando unos 232K pasos en la trayectoria elegida; el calendario original de tres épocas no se completó. El preentrenamiento consume flujos contiguos de tokens en `uint16` con EOS entre documentos y ventanas de 1.024 tokens con stride 1.023 (solapamiento de un token). No se documenta RLHF, DPO ni ajuste por instrucciones en esta etapa.
 
 ## Capacidades
-
-- Generación de texto autoregresiva en inglés mediante predicción del siguiente token.
-- Completado de texto y continuación de prompts, con soporte de decodificación por muestreo (temperatura, top-p) y penalización por repetición.
-- Generación en streaming mediante `TextStreamer` de Transformers.
-- Tokenizador propio cargable de forma independiente, sin necesidad de cargar los pesos del modelo.
-- Capacidad demostrada de adaptación a tareas de QA y clasificación de texto mediante fine-tuning posterior, según indica el autor en la model card (sin resultados numéricos publicados).
-- No soporta tool calling ni function calling de forma nativa.
-- No soporta razonamiento multi-paso ni modo "thinking".
-- No dispone de capacidades de visión, audio ni multimodalidad.
-- No es un modelo de chat: no hay formato de roles ni plantilla de conversación.
+- Generación de texto autoregresiva y predicción del siguiente token en inglés.
+- Modelo base sin ajuste por instrucciones: no sigue instrucciones ni mantiene formato conversacional de forma fiable.
+- Razonamiento y conocimiento factual limitados por su tamaño (61M de parámetros) y por el volumen de entrenamiento.
+- Sin soporte documentado de tool calling ni function calling.
+- Sin soporte documentado de agentes ni razonamiento multi-paso estructurado.
+- Capacidades multilingües: solo inglés según la model card.
+- Sin capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
+- Tokenizador propio cargable de forma independiente, sin cargar los pesos del modelo.
 
 ## Casos de uso
-
-- Investigación sobre preentrenamiento desde cero: el modelo sirve como referencia reproducible para estudiar el efecto de decisiones arquitectónicas (GQA, QK Norm, SwiGLU) a escala pequeña, con un tokenizador propio entrenado sobre un corpus documentado.
-- Experimentos académicos de tokenización: al incluir un ByteLevel BPE de 49.152 entradas entrenado solo sobre el split de entrenamiento, permite analizar el impacto del vocabulario en la perplejidad y en la eficiencia de codificación sin depender de tokenizadores ajenos.
-- Fine-tuning para clasificación de texto en inglés: el autor reporta que la arquitectura se adapta a clasificación y QA tras ajuste fino, por lo que puede usarse como base ligera para tareas de clasificación con presupuesto de cómputo mínimo.
-- Generación de texto de completado en entornos con recursos muy limitados: con 61 millones de parámetros y pesos en BF16 de aproximadamente 0,1 GB, cabe en CPU y en GPUs de gama baja para experimentos de continuación de texto.
-- Docencia y divulgación: útil para explicar el funcionamiento interno de un transformer causal (atención con GQA, RoPE, RMSNorm) con un modelo cuyo código y configuración son inspeccionables.
-- Pruebas de infraestructura de despliegue: por su tamaño reducido, sirve para validar pipelines de carga con `trust_remote_code`, streaming y decodificación antes de escalar a modelos mayores.
-- Baseline en estudios de escalado: puede actuar como punto de comparación de perplejidad frente a modelos del mismo orden de magnitud entrenados con otros corpus o tokenizadores.
+- Investigación sobre entrenamiento de modelos fundacionales a pequeña escala: sirve para reproducir y analizar curvas de pérdida, selección de checkpoints y estabilidad del entrenamiento con un presupuesto de cómputo reducido.
+- Fine-tuning supervisado para tareas concretas en inglés: al ser un checkpoint base de 61M, es un punto de partida barato para ajustar clasificación de texto, generación de resúmenes cortos o extracción de información con datasets específicos.
+- Experimentación con tokenizadores: el ByteLevel BPE propio de 49.152 entradas y su pipeline de entrenamiento permiten estudiar el impacto del tokenizador en modelos pequeños sin depender de vocabularios ajenos.
+- Generación de texto de relleno o completado en contextos de 1.024 tokens: adecuado para prototipos de autocompletado y pruebas de integración en pipelines de `transformers`.
+- Validación de infraestructura de inferencia: su tamaño permite desplegarlo en CPU y en GPUs de consumo para probar servidores, cuantizaciones posteriores y herramientas de evaluación antes de escalar a modelos mayores.
+- Docencia y divulgación: modelo pequeño, con arquitectura y datos documentados, útil para explicar el funcionamiento de un transformer causal y el ciclo completo de preentrenamiento.
+- Baseline en experimentos comparativos: sirve como referencia de perplejidad (26,25 en validación) para comparar recetas de entrenamiento con el mismo corpus.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona únicamente una disminución de la pérdida de siguiente token en entrenamiento y validación durante el preentrenamiento, sin cifras concretas, y advierte que los resultados de tareas posteriores tras fine-tuning no deben confundirse con la perplejidad del modelo base. No se documentan MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar.
+| Checkpoint | Perdida validacion completa | PPL validacion completa | Perdida test | PPL test |
+|---|---:|---:|---:|---:|
+| Foundation continued 20K | 3,2685 | 26,27 | 3,2498 | 25,78 |
+| Foundation continued 30K | 3,2677 | 26,25 | 3,2489 | 25,76 |
+
+| Version de pesos | Perdida validacion rapida (256 bloques) | PPL validacion rapida |
+|---|---:|---:|
+| FP32 origen | 3,236623 | 25,4476 |
+| Exportacion BF16 | 3,236627 | 25,4477 |
+
+La mejora del checkpoint de 30K sobre el de 20K es de aproximadamente 0,0008 en pérdida de validación completa; el autor la describe como una mejora medida pequeña, no como un salto cualitativo de capacidades. La comparación FP32 frente a BF16 es una comprobación de paridad sobre un subconjunto rápido (diferencia de +0,000004 en pérdida), no una validación completa. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 0,12 GB en BF16 (61,36 M de parámetros × 2 bytes), más el overhead de activaciones y del runtime de PyTorch. En FP32 sería de unos 0,25 GB.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; el modelo cabe holgadamente en GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 y H100.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna e incluso en iGPU con memoria compartida.
-- CPU: es viable en CPU; el autor recomienda usar `dtype=torch.float32` si la CPU no soporta BF16 correctamente.
-- Opciones de despliegue: carga estándar con `transformers` y `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y la implementación personalizada dificulta su uso en esos motores sin conversión previa.
-- Latencia y throughput: no disponibles. Por el tamaño del modelo se espera una latencia muy baja en GPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en BF16: aproximadamente 0,12 GB solo para pesos (61,36M parámetros × 2 bytes), más caché KV y activaciones; el uso real es de unos pocos cientos de MB.
+- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs con 4 GB o menos.
+- Ejecución viable en CPU para prototipos y pruebas, dado el reducido número de parámetros y el contexto de 1.024 tokens.
+- Despliegue mediante `transformers` con `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos GGUF publicados limita el uso directo en llama.cpp/Ollama sin conversión previa.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- El repositorio ocupa 0,2 GB, por lo que la descarga y el almacenamiento son triviales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| NeoLM-Small-Base | 61,36 M | 1.024 | Inglés | No disponible | Hugging Face, requiere `trust_remote_code` |
-| GPT-2 small | 124 M | 1.024 | Inglés | MIT (pesos publicados por OpenAI) | Hugging Face, integrado en Transformers |
-| Pythia-70M | 70 M | 2.048 | Inglés | Apache 2.0 | Hugging Face, EleutherAI |
-| TinyLlama-1.1B | 1,1 B | 2.048 | Inglés | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---:|---:|---|---|---|
+| NeoLM-Small-Base | 61,36M | 1.024 | no disponible | safetensors BF16, código custom | Base en inglés, tokenizador propio, PPL validación 26,25 |
+| GPT-2 small | 124M | 1.024 | MIT (pesos publicados por OpenAI) | safetensors/PyTorch | Base en inglés, ampliamente soportado por el ecosistema |
+| Pythia-70M | 70M | 2.048 | Apache 2.0 | safetensors | Base multilingüe parcial, con checkpoints intermedios publicados |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | safetensors, GGUF | Base mayor, con versiones chat; requiere más recursos |
 
-La comparación se limita a parámetros, contexto y licencia, ya que no hay benchmarks publicados de NeoLM-Small-Base que permitan contrastar rendimiento. Frente a GPT-2 small y Pythia-70M, NeoLM ofrece un contexto menor (1.024 frente a 2.048 de Pythia) y una licencia sin declarar, lo que supone una desventaja clara para uso comercial frente a alternativas con licencias permisivas. Su interés es fundamentalmente académico y de reproducibilidad.
+La comparación se basa en características públicas de estos modelos; no se dispone de resultados de benchmarks comunes que permitan comparar rendimiento de forma directa con NeoLM-Small-Base.
 
 ## Limitaciones y advertencias
-
-- No es un modelo de instrucciones ni de chat: puede no seguir instrucciones, responder preguntas factuales de forma fiable ni realizar razonamiento multi-paso, tal como advierte el autor.
-- Contexto muy limitado: 1.024 tokens restringen tareas que requieran documentos largos o conversaciones multi-turno.
-- Solo inglés: no se ha entrenado ni evaluado en castellano ni en otros idiomas.
-- Licencia no disponible: la ausencia de licencia declarada impide asumir permisos de uso comercial; es necesario contactar con el autor antes de cualquier uso en producción.
-- Checkpoint no convergido: el calendario de tres épocas no se completó y no se documentan la perplejidad de validación ni el paso exacto del checkpoint, por lo que su calidad final es incierta.
-- Riesgo de alucinación: como modelo base pequeño entrenado con un corpus filtrado, es esperable que genere contenido plausible pero incorrecto; no se han publicado evaluaciones de factualidad.
-- Sesgos: no se documentan análisis de sesgo; el corpus deriva de ClimbMix, por lo que puede heredar sesgos presentes en datos web filtrados en inglés.
-- Dependencia de código remoto: requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; el autor recomienda revisarlo antes de habilitarlo.
-- Sin soporte de tool calling ni agentes: no dispone de mecanismos nativos para integración con herramientas o pipelines agénticos.
-- Ecosistema limitado: sin integraciones documentadas con vLLM, llama.cpp, Ollama o TGI, y con cero descargas y likes en el momento de la consulta, lo que reduce la validación comunitaria.
+- Modelo base sin ajuste por instrucciones: no debe usarse como asistente conversacional sin fine-tuning previo.
+- Contexto limitado a 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Solo inglés; no se documenta soporte de otros idiomas.
+- Riesgo elevado de alucinación y de generar contenido factualmente incorrecto, propio de un modelo de 61M de parámetros entrenado con aproximadamente 1.147 millones de tokens.
+- Sesgos potenciales heredados del corpus ClimbMix filtrado en inglés; no se documenta ninguna mitigación.
+- Licencia no disponible: no se puede confirmar el uso comercial ni las condiciones de redistribución; conviene contactar con el autor antes de usarlo en producción.
+- Requiere `trust_remote_code=True` por la implementación custom, lo que implica ejecutar código del repositorio; hay que revisarlo antes de habilitarlo.
+- Sin BOS token y con EOS ID 0 y PAD ID 1; hay que ajustar los pipelines que asuman convenciones distintas.
+- El calendario de entrenamiento original no se completó y la mejora del checkpoint de 30K sobre el de 20K es marginal; no debe interpretarse como un salto de capacidades.
+- No se han publicado benchmarks estándar ni evaluaciones de seguridad.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/MaagDeveloper/NeoLM-Small-Base
 - Dataset NeoCorpus: https://huggingface.co/datasets/MaagDeveloper/NeoCorpus
-- Dataset Karpathy ClimbMix Shuffle (origen de los datos): https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
-- Dataset NVIDIA Nemotron-ClimbMix (origen subyacente): https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix
+- Dataset Karpathy ClimbMix Shuffle: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
+- Dataset NVIDIA Nemotron-ClimbMix: https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix

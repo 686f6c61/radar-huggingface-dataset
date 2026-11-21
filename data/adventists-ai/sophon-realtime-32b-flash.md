@@ -2,79 +2,72 @@
 
 ## Resumen
 
-Sophon-Realtime-32B-Flash es un modelo de voz full-duplex de 32 000 millones de parametros desarrollado por adventists-ai. Se sirve como un unico modelo vLLM-Omni que escucha al usuario, redacta una respuesta (opcionalmente con etiquetas de sonido como `[laughter]`, `[cough]`, `[sigh]` o `[breath]`) y habla mientras escribe, emitiendo un fotograma de audio cada 80 ms. La etapa de voz realiza las etiquetas en lugar de leerlas en voz alta.
+Sophon-Realtime-32B-Flash es un modelo de voz a voz (speech-to-speech) full-duplex desarrollado por adventists-ai, servido como un unico modelo en vLLM-Omni. El modelo escucha al usuario de forma continua, redacta la respuesta mientras el usuario habla (opcionalmente con etiquetas de sonido como `[laughter]`, `[cough]`, `[sigh]` o `[breath]`) y emite audio mientras escribe, con un frame de voz cada 80 ms. La variante Flash comparte el "cerebro" de 32B con la build Tag; solo cambia la etapa de voz, que es autorregresiva con un unico forward pass por paso, lo que reduce el tiempo hasta el primer audio y aumenta la concurrencia.
 
-Forma parte de la familia Sophon-Realtime v1, compuesta por tres variantes que comparten el mismo "cerebro" de 32B (el modelo que escucha, decide los turnos y redacta la respuesta). Flash se diferencia de la variante Tag unicamente en la etapa de voz: su etapa de voz es autorregresiva con una sola pasada hacia delante por paso, lo que reduce la latencia del primer audio y aumenta la concurrencia. Frente a Tag, sacrifica expresividad (0.63/0.77 en NVV-SuperBench en ingles/chino, frente a 0.80/0.86) a cambio de 0.31 s hasta el primer audio y 40 usuarios concurrentes por GPU de 80 GB.
+El modelo pertenece a la familia Sophon-Realtime v1, compuesta por tres builds (Tag, Flash y E2E) que comparten el mismo modelo de 32B para escuchar, decidir turnos y escribir la respuesta. Flash esta pensado para despliegues con muchos usuarios simultaneos: alcanza 0,31 s hasta el primer audio y hasta 40 usuarios concurrentes por GPU de 80 GB. La version documentada es la 1.2.0 (13 de noviembre de 2026), con licencia Apache-2.0.
 
-El modelo esta pensado para despliegues de voz en tiempo real con requisitos estrictos de latencia y densidad por GPU. La licencia es Apache-2.0 tanto para el codigo como para los pesos, y soporta chino e ingles.
+Su relevancia actual radica en que combina un cerebro de 32B con capacidad paralinguistica (interpreta emocion, enfasis, sarcasmo, risas y suspiros en la voz del usuario) y un rendimiento en benchmarks de audio conversacional que el autor situa como el mejor entre los modelos full-duplex abiertos, a la altura de GPT-4o-mini-Audio en VoiceBench. Todo ello con licencia permisiva para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Full-duplex speech-to-speech con thinker de 32B y etapa de voz autorregresiva (una pasada por paso); servido mediante vLLM-Omni |
-| Parametros totales | 32 000 millones (thinker); tamano de la etapa de voz no disponible |
+| Arquitectura | Modelo full-duplex speech-to-speech servido en vLLM-Omni; cerebro de 32B (transformer, detalles no disponibles) mas etapa de voz autorregresiva con un forward pass por paso |
+| Parametros totales | 32B (cerebro); parametros de la etapa de voz no disponibles |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | thinker en FP8; otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | FP8 (build principal); BF16 disponible en build separada (Sophon-Realtime-32B-Flash-BF16) |
 | Idiomas soportados | chino (zh) e ingles (en) |
-| Licencia | Apache-2.0 (codigo y pesos; ver `NOTICE` para fuentes) |
-| Formato de pesos | safetensors (`config.json`, `thinker/` en FP8, `talker/`, `voices/`) |
-| Tamano del repositorio | 40.9 GB |
-| Pipeline | any-to-any |
-| Voces disponibles | `chelsie` (por defecto), `brand` |
-| Frecuencia de audio de salida | 24 kHz (WAV en base64) |
-| Fotograma de audio | uno cada 80 ms |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (libreria vLLM) |
 
 ## Arquitectura y entrenamiento
 
-Sophon-Realtime-32B-Flash se estructura en dos etapas sobre un unico modelo vLLM-Omni. El thinker, un modelo de 32B en FP8, escucha la entrada de audio del usuario, decide los turnos de conversacion y redacta la respuesta en texto, incluyendo etiquetas de sonido cuando corresponde. La etapa de voz (talker) convierte esa respuesta etiquetada en audio de forma autorregresiva, con una unica pasada hacia delante por paso, lo que explica su menor latencia frente a la variante Tag. El modelo fue ajustado con un system prompt especifico (`config/system_prompt.json`); sin el se generan menos etiquetas.
+Sophon-Realtime-32B-Flash se sirve como un unico modelo en vLLM-Omni con pipeline any-to-any. La familia v1 separa el sistema en dos etapas: un "cerebro" de 32B que escucha, decide los turnos de palabra y escribe la respuesta (con soporte de etiquetas de sonido), y una etapa de voz que convierte esa respuesta en audio. En la build Flash, la etapa de voz es autorregresiva con un unico forward pass por paso, lo que la hace mas ligera y rapida que la de la build Tag, a costa de una expresividad algo menor (NVV-SuperBench 0,63 en ingles y 0,77 en chino frente a 0,80/0,86 de Tag). La etapa de voz emite un frame cada 80 ms y las etiquetas se interpretan vocalmente, nunca se leen en voz alta.
 
-La familia v1 comparte el mismo thinker entre las tres variantes (Tag, Flash y E2E); solo cambia el mecanismo que transforma la respuesta en sonido. En Flash, un modelo de voz mas ligero y rapido interpreta la respuesta etiquetada; en Tag lo hace un modelo de voz expresivo; en E2E (preview) un talker interno al modelo de 32B sustituye al modelo de voz separado. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
+El modelo funciona en full-duplex real: escucha durante toda la intervencion del usuario, redacta la respuesta sobre la marcha, retoma cuando el usuario termina, se detiene si le interrumpen y continua si el usuario solo emite confirmaciones como "mm-hm". El autor indica que el ajuste fino de persona, tono y conocimiento de dominio puede hacerse con ms-swift. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Conversacion de voz full-duplex: escucha al usuario mientras habla y responde sin esperar a que termine el turno, decidiendo por si mismo cuando el usuario ha acabado.
-- Salida simultaneous speech-to-speech: emite audio mientras redacta el texto de la respuesta.
-- Etiquetas de sonido paralinguisticas: `[laughter]`, `[cough]`, `[sigh]`, `[breath]`, `<laughter>…</laughter>` y `<strong>…</strong>`; las etiquetas se interpretan, nunca se leen en voz alta.
-- Comprension paralinguistica: segun el repositorio GitHub, el modelo "escucha como dices las cosas", es decir, procesa informacion paralinguistica de la entrada.
-- Salida multimodal texto + audio en la misma peticion (`"modalities": ["text","audio"]`).
-- Soporte de API compatible con OpenAI: `/v1/chat/completions` y `/v1/realtime` (estilo OpenAI Realtime, con `input_audio_buffer.append`).
-- Multilingue en chino e ingles, seleccionable mediante el parametro `language`.
-- Seleccion de voz (`chelsie`, `brand`).
-- Soporte de VAD incluido en la configuracion de despliegue.
+- Generacion de voz a voz full-duplex: escucha continua, deteccion de turnos, interrupciones y solapamiento conversacional.
+- Comprension paralinguistica: interpreta emocion, enfasis, sarcasmo, risas y suspiros en la voz del usuario (puntuacion de 48,6 en el agregado LISTEN, StressTest y MSPB segun el autor).
+- Etiquetas de sonido expresivas: `[laughter]`, `[cough]`, `[sigh]`, `[breath]`, `<laughter>…</laughter>` y `<strong>…</strong>`, interpretadas vocalmente y nunca leidas.
+- Tool calling en modo full-duplex: Full-Duplex-Bench v3 con Pass@1 del 48% y tasa de respuesta del 100%; modo live compatible con la interfaz OpenAI GPT-Live.
+- API compatible con OpenAI Realtime (hosted API) y con `/v1/chat/completions` en vLLM-Omni.
+- Capacidades multilingues limitadas a chino e ingles.
+- Clonacion de voz zero-shot (introducida en v1.1, segun el video de demostracion del repositorio).
+- Ajuste fino de persona, tono y dominio con ms-swift.
 
 ## Casos de uso
 
-- Atencion al cliente por voz en tiempo real: el modelo mantiene conversaciones full-duplex con deteccion automatica de fin de turno, lo que permite interrupciones naturales; con 40 flujos concurrentes por GPU de 80 GB es adecuado para centros de contacto con alta densidad.
-- Asistentes de voz para aplicaciones moviles o web: la latencia de 0.31 s hasta el primer audio en un solo flujo hace viable una experiencia conversacional fluida mediante la API `/v1/realtime`.
-- Agentes telefonicos automatizados: la licencia Apache-2.0 y el despliegue sobre vLLM permiten integrar el modelo en infraestructura propia sin restricciones de uso comercial.
-- Generacion de audio expresivo para contenido: las etiquetas de sonido (risa, tos, suspiro) permiten producir respuestas habladas con matices paralinguisticos para doblaje, audiolibros interactivos o personajes virtuales.
-- Transcripcion y respuesta con tono en ingles y chino: util para servicios bilingues de soporte o asistencia donde se requiere cambiar de idioma mediante el parametro `language`.
-- Investigacion en modelos de voz full-duplex: al ser codigo y pesos abiertos, sirve como base para experimentar con etapas de voz alternativas, ya que la familia comparte el thinker y permite sustituir solo el talker.
-- Despliegue de alta concurrencia en produccion: con unos 55 GB de memoria por instancia y hasta 40 flujos recomendados por GPU de 80 GB, se puede escalar horizontalmente con una instancia por GPU tras un balanceador de carga.
+- Atencion al cliente automatizada: con hasta 40 usuarios concurrentes por GPU de 80 GB y 0,31 s hasta el primer audio, el modelo puede gestionar conversaciones telefonicas multi-turno con interrupciones naturales y deteccion de turnos, reduciendo la latencia percibida frente a pipelines STT-LLM-TTS encadenados.
+- Asistentes en vehiculo: el full-duplex real permite que el modelo siga escuchando mientras el conductor habla, se detenga al ser interrumpido y responda a confirmaciones breves, algo critico en entornos manos libres.
+- Agentes de voz con tool calling: el modo live compatible con la interfaz OpenAI GPT-Live y el Pass@1 del 48% en Full-Duplex-Bench v3 permiten integrar el modelo en flujos donde debe consultar APIs o sistemas externos durante la conversacion.
+- Analisis de tono y emocion en tiempo real: la puntuacion paralinguistica permite aplicaciones de triaje en centros de llamadas que detecten frustracion o sarcasmo en la voz del cliente y escalen la conversacion.
+- Generacion de contenido de audio expresivo: las etiquetas de sonido (risas, tos, suspiros) con tasas de acierto del 77-100% en varios casos permiten producir locuciones con matices para doblaje, audiolibros o personajes interactivos.
+- Despliegue de bajo coste por usuario: al compartir el cerebro de 32B y usar una etapa de voz mas ligera, Flash maximiza usuarios por GPU, adecuado para servicios con muchos usuarios simultaneos y presupuesto de hardware limitado.
+- Investigacion en interaccion conversacional: la API y los scripts de despliegue de una sola orden facilitan experimentos de deteccion de turnos, interrupciones y comportamiento full-duplex.
 
 ## Benchmarks y rendimiento
 
-Resultados de NVV-SuperBench (ingles / chino) y latencia, segun la model card:
+| Benchmark | Sophon-Realtime-32B-Flash | Referencia |
+|---|---|---|
+| VoiceBench | 82,8 | Nivel de GPT-4o-mini-Audio (segun el autor) |
+| Big Bench Audio | 81,8% | #1 entre modelos full-duplex abiertos (segun el autor) |
+| Paralinguistico (LISTEN, StressTest, MSPB) | 48,6 | Gemini 3.8 Flash: 46,9; Qwen3-Omni: 44,6 |
+| NVV-SuperBench (en / zh) | 0,63 / 0,77 | Tag: 0,80 / 0,86; E2E: 0,75 / 0,85 |
+| Full-Duplex-Bench v3 tool calling (Pass@1) | 48% | Grok: 43% |
 
-| Metrica | Flash | Tag (referencia) | E2E (referencia) |
-|---|---|---|---|
-| NVV-SuperBench en / zh | 0.63 / 0.77 | 0.80 / 0.86 | 0.60 / 0.77 |
-| Primer audio, un usuario | 0.31 s | ~0.6 s | ~1 s |
-| Usuarios por GPU de 80 GB (recomendado) | 40 | 16 | 4-5 |
-| GPUs necesarias | 1 | 1 | 2 |
-
-Rendimiento con un H100 de 80 GB, thinker en FP8, via `/v1/chat/completions` (audio del usuario hasta primer fragmento de audio):
+Rendimiento de servicio (una H100 80 GB, thinker FP8, `/v1/chat/completions`, voz del usuario hasta primer chunk de audio):
 
 | Carga | Primer audio mediana / P90 | Stall (mediana) |
 |---|---|---|
-| 1 flujo | 0.31 / 0.34 s | 0 |
-| 20 flujos (llegando en 10 s) | 0.45 / 0.52 s | 0.09 s |
-| 40 flujos (en 10 s) | 0.58 / 0.67 s | 0.37 s |
-| 64 flujos (en 8 s) | 0.84 / 1.03 s | 1.9 s (encolamiento) |
+| 1 stream | 0,31 / 0,34 s | 0 |
+| 20 streams (en 10 s) | 0,45 / 0,52 s | 0,09 s |
+| 40 streams (en 10 s) | 0,58 / 0,67 s | 0,37 s |
+| 64 streams (en 8 s) | 0,84 / 1,03 s | 1,9 s (cola) |
 
-Precision de etiquetas de sonido (conjunto held-out, voz Chelsie, evaluado por DuplexJev):
+Tasas de acierto de etiquetas de sonido (conjunto held-out, voz Chelsie, evaluado por DuplexJev):
 
 | Etiqueta | zh | en |
 |---|---|---|
@@ -82,47 +75,53 @@ Precision de etiquetas de sonido (conjunto held-out, voz Chelsie, evaluado por D
 | `<laughter>…</laughter>` (reir mientras habla) | 78% | 71% |
 | `[cough]` | 90% | 50% (8 items) |
 | `[sigh]` (AST) | 90% | 100% |
-| Tasa media de error de caracteres / palabras | 0.9% | 1.0% |
-
-No se han publicado resultados de benchmarks de razonamiento o codigo (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Tasa media de error de caracteres / palabras | 0,9% | 1,0% |
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 55 GB por instancia en FP8; el repositorio de pesos ocupa 40.9 GB.
-- GPU recomendada: una H100 de 80 GB por instancia; el rendimiento publicado se ha medido en ese hardware.
-- Cabe en GPU de consumo: no disponible; con 55 GB de memoria por instancia no cabe en GPU de consumo convencionales (hasta 24-32 GB), aunque no se confirma oficialmente.
-- Escalado: hasta unos 40 flujos concurrentes por GPU de 80 GB; para mas carga, una instancia por GPU tras un balanceador de carga.
-- Despliegue: vLLM 0.30 y vLLM-Omni 0.30 con el plugin `sophon_realtime`; scripts de un solo comando (`install.sh`, `start.sh`, `stop.sh`) en el repositorio de GitHub.
-- Tiempo de arranque: la primera vez compila kernels (unos 10 minutos); arranques posteriores tardan 5-8 minutos.
-- Latencia: 0.31 s de mediana hasta el primer audio con un flujo; 0.58 s de mediana con 40 flujos.
-- Otros motores (llama.cpp, Ollama, TGI): no disponible.
+- VRAM estimada: aproximadamente 55 GB por instancia en FP8; la build BF16 ocupa unos 64 GB y suele requerir dos dispositivos.
+- GPU recomendada: una H100 de 80 GB para el despliegue de referencia con hasta 40 streams concurrentes.
+- Cabe en GPU consumer: la build de 32B no cabe en GPUs consumer de 24 GB; el autor ofrece Sophon-Realtime-4B-Flash para una unica GPU de 24 GB (con menor conocimiento).
+- Opciones de despliegue: vLLM-Omni (libreria oficial, con plugin y scripts de una sola orden en el repositorio de GitHub); API alojada compatible con OpenAI Realtime.
+- Latencia y throughput: 0,31 s de mediana hasta el primer audio con 1 stream y 0,58 s con 40 streams; se recomienda un maximo de unos 40 streams concurrentes por GPU de 80 GB y, para mas carga, una instancia por GPU detras de un balanceador.
+- Arranque: la primera ejecucion compila kernels (unos 10 minutos); los arranques posteriores tardan 5-8 minutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Primer audio | Usuarios por GPU 80 GB | NVV-SuperBench (en / zh) | Licencia |
 |---|---|---|---|---|---|
-| Sophon-Realtime-32B-Flash | 32B (thinker) | no disponible | Full-duplex speech-to-speech, etapa de voz rapida | Apache-2.0 | Pesos en Hugging Face |
-| Sophon-Realtime-32B-Tag | 32B (thinker) | no disponible | Full-duplex speech-to-speech, etapa de voz expresiva | Apache-2.0 | Pesos en Hugging Face |
-| Sophon-Realtime E2E (preview) | 32B (thinker) | no disponible | Talker interno al modelo, sin modelo de voz separado | Apache-2.0 | En pruebas, proximamente |
+| Sophon-Realtime-32B-Flash | 32B | 0,31 s | 40 | 0,63 / 0,77 | Apache-2.0 |
+| Sophon-Realtime-32B-Tag | 32B | ~0,6 s | 16 | 0,80 / 0,86 | Apache-2.0 |
+| Sophon-Realtime-32B-E2E | 32B (talker de ~350M) | ~0,25 s | 16 | 0,75 / 0,85 | Apache-2.0 |
+| Sophon-Realtime-4B-Flash | 4B | no disponible | 1 GPU de 24 GB | no disponible | Apache-2.0 |
 
-No se dispone de informacion sobre otros modelos de voz full-duplex comparables en la busqueda realizada.
+Frente a alternativas externas, el autor situa a Flash por delante de Grok en tool calling full-duplex (48% frente a 43% de Pass@1) y por delante de Gemini 3.8 Flash (46,9) y Qwen3-Omni (44,6) en la puntuacion paralinguistica agregada de 48,6. No se dispone de datos comparativos adicionales en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La etiqueta `<strong>` (enfasis) es debil en esta version; se anuncia mejora en la siguiente build.
-- La deteccion de `[cough]` en ingles solo alcanza el 50% sobre un conjunto de 8 elementos, frente al 90% en chino.
-- Sin etiqueta, el modelo rara vez se rie por si solo; el uso del system prompt incluido es necesario para que se generen etiquetas con la frecuencia esperada.
-- La expresividad es inferior a la de la variante Tag (NVV-SuperBench 0.63/0.77 frente a 0.80/0.86).
-- Idiomas limitados a chino e ingles; no se declara soporte de otros idiomas.
-- Longitud de contexto no documentada; no se puede evaluar su idoneidad para conversaciones de muy largo alcance.
-- A partir de 64 flujos se produce encolamiento con stalls de 1.9 s de mediana; el limite recomendado es de unos 40 flujos por GPU de 80 GB.
-- No se han publicado datos sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad.
-- El primer arranque requiere compilar kernels (unos 10 minutos), lo que complica el escalado elastico.
-- Licencia Apache-2.0 sin restricciones conocidas para uso comercial, pero debe revisarse el fichero `NOTICE` por las fuentes de los pesos.
+- Solo soporta chino e ingles; no hay soporte documentado de otros idiomas.
+- La expresividad es inferior a la build Tag (NVV-SuperBench 0,63/0,77 frente a 0,80/0,86): las etiquetas de sonido se interpretan con menor fidelidad.
+- La etiqueta `<strong>` (enfasis) es debil en esta build; el autor anuncia mejoras en la siguiente version.
+- Sin etiqueta explicita, el modelo rara vez se rie por si solo.
+- La tasa de acierto de `[cough]` en ingles es solo del 50% sobre 8 items, un conjunto muy pequeno.
+- Riesgo de alucinacion no cuantificado en la informacion disponible; como todo modelo generativo, puede producir respuestas incorrectas, especialmente en tool calling (Pass@1 del 48% implica que mas de la mitad de los intentos fallan en el primer intento).
+- A partir de 40 streams concurrentes la cola crece (1,9 s de stall con 64 streams), lo que degrada la experiencia conversacional.
+- El arranque inicial requiere compilar kernels (unos 10 minutos), lo que complica el escalado elastico.
+- Licencia Apache-2.0: permite uso comercial, pero se deben respetar las obligaciones de atribucion y las condiciones de la licencia.
+- No se detallan sesgos conocidos ni la composicion del dataset de entrenamiento, lo que limita la evaluacion de riesgos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash
+- Build BF16: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash-BF16
+- Build Tag: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Tag
+- Build E2E: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-E2E
+- Build de 4B: https://huggingface.co/adventists-ai/Sophon-Realtime-4B-Flash
+- Coleccion de la familia: https://huggingface.co/collections/adventists-ai/sophon-realtime-6afb357253a3a8905ad758b0
+- Pagina de la familia v1: https://huggingface.co/adventists-ai/Sophon-Realtime-v1
 - Repositorio GitHub: https://github.com/adventists-ai/sophon-realtime
-- Codigo de despliegue Flash: https://github.com/adventists-ai/sophon-realtime/tree/main/flash
-- Variante Tag: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Tag
+- Changelog: https://github.com/adventists-ai/sophon-realtime/blob/main/CHANGELOG.md
+- Demo en video (v1.1): https://github.com/adventists-ai/sophon-realtime#zero-shot-voice-cloning-new-in-v11
+- API alojada (consola): https://api.adventists.ai/console/
+- Documentacion de la API: https://api.adventists.ai/console/docs
+- Demo en ModelScope Studio: https://www.modelscope.ai/studios/AdventistsAI/Sophon-Realtime

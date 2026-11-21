@@ -50,7 +50,7 @@
       "task": null,
       "dataset": "ScanNet (20 classes)",
       "metric": "mIoU",
-      "value": 76.54
+      "value": 76.55
     },
     {
       "task": null,

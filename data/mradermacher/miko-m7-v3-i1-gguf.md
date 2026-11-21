@@ -2,91 +2,106 @@
 
 ## Resumen
 
-Miko-M7-V3-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo Miko-M7-V3, publicada por el usuario mradermacher en Hugging Face. El modelo base, alojado en el repositorio ricer0ll/Miko-M7-V3, cuenta con 7.241.732.096 parámetros según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 7B. Esta versión i1 emplea cuantización con imatrix (importance matrix), una técnica que calibra la pérdida de precisión durante la cuantización para preservar mejor la calidad en comparaciones con cuantizaciones estándar.
+Miko-M7-V3-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base ricer0ll/Miko-M7-V3, un modelo de lenguaje conversacional de aproximadamente 7.240 millones de parámetros (7,24 B). El repositorio no contiene un modelo original, sino una batería de ficheros GGUF en cuantizaciones estáticas e imatrix (i1) pensadas para ejecución local con llama.cpp y derivados (Ollama, LM Studio, koboldcpp). El modelo base se etiqueta como "mistral", lo que sugiere una arquitectura transformer derivada de la familia Mistral, y se distribuye únicamente en inglés.
 
-El repositorio ofrece un abanico amplio de niveles de cuantización, desde IQ1_S e IQ2_XXS hasta Q6_K, lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de gama de entrada con poca VRAM hasta configuraciones más holgadas. El tamaño total del repositorio es de 74,0 GB, coherente con la suma de todas las variantes publicadas.
+La relevancia de esta ficha es práctica: permite a desarrolladores e investigadores desplegar un modelo conversacional de 7 B en hardware de consumo con un abanico de cuantizaciones que va desde 1,7 GB (i1-IQ1_S) hasta 6,0 GB (i1-Q6_K). Las cuantizaciones i1 incorporan una matriz de importancia (imatrix) generada sobre el propio modelo, lo que en la práctica de llama.cpp suele traducirse en una degradación de perplejidad menor que las cuantizaciones estáticas equivalentes en tamaño.
 
-La información pública disponible es muy limitada: no se especifican licencia, idiomas soportados, arquitectura detallada ni datos de entrenamiento en la model card. La ficha que sigue refleja exclusivamente los datos verificables del repositorio y marca como "no disponible" todo aquello que no consta en la información proporcionada.
+Conviene señalar desde el principio que el modelo está marcado como `not-for-all-audiences` y que su dataset de entrenamiento declarado es `anthracite-org/stheno-filtered-v1.1`, un corpus de rol y conversación sin filtros de seguridad. Esto condiciona fuertemente su uso en producción: es un modelo para experimentación y generación creativa, no un asistente corporativo al uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer presumible por el tamano, sin confirmar) |
-| Parametros totales | 7.241.732.096 |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
-| Tamano del repositorio | 74,0 GB (todas las variantes) |
-| Metodo de cuantizacion | imatrix (importance matrix), quantize_version 2 |
+| Arquitectura | Transformer (etiquetado "mistral" en la model card; detalles no disponibles) |
+| Parametros totales | 7.241.732.096 (7,24 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (todas con imatrix) |
+| Idiomas soportados | Ingles (segun la model card) |
+| Licencia | No disponible |
+| Formato de pesos | GGUF (multiples ficheros por cuantizacion); el modelo base original esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Miko-M7-V3 en la documentación proporcionada. El recuento de parámetros (7.241.732.096) es consistente con un modelo denso de aproximadamente 7B, pero no se confirma si emplea atención estándar, atención lineal, mezcla de expertos u otra variante. Tampoco constan detalles sobre el corpus de entrenamiento, el número de tokens procesados ni si se aplicaron fases de ajuste fino supervisado, RLHF o DPO.
+La model card del repositorio cuantizado no describe la arquitectura interna del modelo base. La única pista es la etiqueta `mistral`, que apunta a un transformer decoder-only con atención de tipo Mistral (probablemente con sliding window attention en el modelo original, aunque no se confirma). El recuento de parámetros real de safetensors es de 7.241.732.096, consistente con un modelo de ~7 B de la familia Mistral/Llama 2.
 
-Lo único documentado en esta ficha es el proceso de cuantización: la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversión desde pesos Hugging Face a GGUF mediante la herramienta de cuantización de llama.cpp, con cuantizaciones ponderadas por imatrix. La etiqueta `tags: nicoboss` aparece en los metadatos de la model card, pero no se aclara su significado técnico.
+En cuanto a datos de entrenamiento, la model card declara `anthracite-org/stheno-filtered-v1.1` como dataset. Este corpus es conocido en la comunidad por estar orientado a roleplay y conversación sin censura, filtrado pero no alineado con políticas de seguridad estándar. No se documentan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, ni si hubo fases de RLHF, DPO o fine-tuning supervisado adicionales. Tampoco se detalla ninguna innovación técnica específica (decodificación especulativa, atención linear, etc.) más allá de la propia cuantización imatrix aplicada por mradermacher.
 
 ## Capacidades
 
-- Generación de texto: el modelo es un modelo de lenguaje de ~7B parámetros, por lo que se espera capacidad de generación de texto general, aunque no hay documentación que detalle su calidad.
-- Razonamiento y matemáticas: no disponible; no se documentan capacidades específicas.
-- Generación de código: no disponible; no se documenta soporte explícito.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se listan idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Compatibilidad de despliegue: al estar en formato GGUF, es compatible con llama.cpp y con endpoints compatibles (etiqueta `endpoints_compatible`).
+- Generación de texto conversacional multi-turno en inglés, orientada a diálogo abierto y roleplay.
+- Generación creativa: ficción, narrativa y continuación de texto con estilo libre.
+- Conversación sin restricciones de contenido (marcado `not-for-all-audiences`), lo que incluye material para adultos.
+- Soporte de plantillas de chat conversacionales (tag `conversational`), compatible con el formato de chat del modelo base.
+- Ejecución local en CPU y GPU mediante llama.cpp y frontales compatibles (Ollama, LM Studio, koboldcpp, text-generation-webui).
+- Compatibilidad con endpoints compatibles (`endpoints_compatible`), lo que permite servir el modelo con infraestructura tipo TGI/OpenAI-compatible en GGUF.
+- Capacidades de tool calling, function calling, agentes o razonamiento multi-paso: no disponibles / no documentadas.
+- Capacidades multilingües: no disponibles más allá del inglés declarado.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Despliegue en hardware de gama de entrada: las variantes IQ1_S, IQ2_XXS e IQ2_M permiten ejecutar un modelo de ~7B en GPUs con 4-6 GB de VRAM o incluso en CPU con RAM limitada, útil para prototipado y pruebas locales.
-- Inferencia en CPU con llama.cpp: las cuantizaciones Q4_0, Q4_1 y Q4_K_S son adecuadas para ejecución en CPU con buen equilibrio entre tamaño y calidad, por ejemplo en estaciones de trabajo sin GPU dedicada.
-- Servicios de generación de texto autoalojados: el formato GGUF y la etiqueta `endpoints_compatible` permiten integrar el modelo en servidores compatibles con la API de llama.cpp para tareas de generación de texto genérica.
-- Evaluación comparativa de cuantizaciones: al ofrecer 24 variantes, el repositorio sirve para medir el impacto de la cuantización con imatrix en la calidad de salida de un mismo modelo base.
-- Experimentación académica con modelos de ~7B: útil para investigadores que necesitan un modelo pequeño y desplegable en local para pruebas de prompting, evaluación de sesgos o análisis de comportamiento.
-- Sustitución de modelos propietarios en entornos con restricciones de red: al poder ejecutarse completamente en local, encaja en escenarios donde no se permite enviar datos a APIs externas, siempre que la licencia del modelo base lo permita (licencia no disponible, verificar antes de uso comercial).
+- Roleplay y narrativa interactiva local: el modelo está entrenado sobre un corpus de rol (stheno-filtered), por lo que es adecuado para motores de historias conversacionales en los que el usuario controla personajes y el modelo mantiene el tono y la coherencia. La cuantización i1-Q4_K_M (4,5 GB) ofrece un equilibrio razonable entre calidad y huella de memoria para este fin.
+- Experimentación con cuantizaciones imatrix: investigadores que quieran medir la degradación de perplejidad entre i1-IQ2_M (2,6 GB) e i1-Q6_K (6,0 GB) sobre un mismo modelo base tienen aquí una batería completa de variantes para hacerlo con llama.cpp y `llama-perplexity`.
+- Generación creativa sin filtros en estaciones de trabajo aisladas: escritura de ficción adulta o guiones donde los modelos alineados rechazan el contenido. El marcado `not-for-all-audiences` y la licencia no disponible obligan a un uso estrictamente interno y no comercial.
+- Prototipado de frontales de chat: desarrolladores que construyen interfaces conversacionales pueden usar el modelo como backend local barato (cabe en 8 GB de VRAM en Q4_K_M) para validar UX de chat multi-turno antes de pasar a modelos mayores.
+- Fine-tuning y destilación sobre el modelo base: las cuantizaciones no sirven para entrenar, pero el repositorio base ricer0ll/Miko-M7-V3 (safetensors) sí puede usarse como punto de partida para LoRA/QLoRA en una sola GPU de 24 GB.
+- Evaluación comparativa de calidad de cuantización: dado que mradermacher publica tanto cuantizaciones estáticas (Miko-M7-V3-GGUF) como imatrix (este repositorio), es un caso de estudio útil para comparar ambos esquemas sobre el mismo modelo y dataset.
+- Despliegue en entornos sin GPU: con i1-Q4_K_S (4,2 GB) el modelo corre en CPU en un portátil moderno con 16 GB de RAM, útil para demos offline o entornos air-gapped.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio cuantizado no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica de calidad, y tampoco se han encontrado datos del modelo base en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño de cuantización y overhead de contexto):
-  - IQ1_S / IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: en torno a 2-3 GB para los pesos, más overhead de contexto; apto para GPUs de 4-6 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L / IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M: en torno a 3-4 GB para los pesos; apto para GPUs de 6-8 GB.
-  - Q4_0 / Q4_1 / Q4_K_S / Q4_K_M / IQ4_XS / small-IQ4_NL: en torno a 4-5 GB para los pesos; apto para GPUs de 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 3070).
-  - Q5_K_S / Q5_K_M: en torno a 5-6 GB para los pesos; apto para GPUs de 8-12 GB.
-  - Q6_K: en torno a 6-7 GB para los pesos; recomendable GPU de 12 GB o más (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080).
-- GPU recomendadas: no hay datos oficiales; por tamaño, una RTX 4090 (24 GB) o A100/H100 permiten ejecutar cualquier variante con contexto amplio, mientras que una RTX 3060 de 12 GB cubre hasta Q6_K con margen limitado.
-- ¿Cabe en GPU de consumo? Sí, la mayoría de variantes caben en GPUs de consumo de 8-12 GB; las variantes IQ1/IQ2 caben incluso en GPUs de 4-6 GB.
-- Opciones de despliegue: llama.cpp (nativo), Ollama (importando el GGUF), servidores compatibles con la API de llama.cpp, y cualquier runtime que acepte GGUF.
-- Latencia y throughput: no disponible; no se han publicado mediciones.
+- VRAM estimada para inferencia (modelo + overhead de contexto, aproximada):
+  - i1-IQ1_S: ~1,7 GB de pesos; ~2,5-3 GB con contexto moderado.
+  - i1-IQ2_M: ~2,6 GB de pesos; ~3,5-4 GB en uso real.
+  - i1-IQ3_M: ~3,4 GB de pesos; ~4,5-5 GB en uso real.
+  - i1-Q4_K_M: ~4,5 GB de pesos; ~5,5-6,5 GB en uso real.
+  - i1-Q5_K_M: ~5,2 GB de pesos; ~6,5-7,5 GB en uso real.
+  - i1-Q6_K: ~6,0 GB de pesos; ~7,5-8,5 GB en uso real.
+- GPU recomendadas:
+  - Consumer: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 (cualquier cuantización hasta Q6_K con contexto amplio).
+  - Profesional: A100 40/80 GB, H100 80 GB (sobredimensionadas para 7 B; útiles solo para servir muchas instancias en paralelo).
+- ¿Cabe en consumer GPU? Sí. Incluso una GTX 1660 6 GB puede ejecutar i1-IQ3_M; una RTX 3060 12 GB ejecuta Q6_K con contexto largo. En CPU, 16 GB de RAM son suficientes para Q5_K_M.
+- Opciones de despliegue: llama.cpp (referencia), Ollama, LM Studio, koboldcpp, text-generation-webui con loader llama.cpp, y servidores compatibles con la API de OpenAI que acepten GGUF (p. ej. llama-cpp-python, llama.cpp server). vLLM y TGI no soportan GGUF de forma nativa; para esos motores habría que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles. Como referencia cualitativa, un 7 B en Q4_K_M en una RTX 4090 suele superar las decenas de tokens por segundo, pero no se han publicado mediciones específicas para este modelo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre el modelo base Miko-M7-V3 ni sobre sus características (contexto, licencia, rendimiento), por lo que no es posible establecer una comparativa fiable con alternativas de la misma categoría. Se indica "no disponible".
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Miko-M7-V3-i1-GGUF (este) | 7,24 B | No disponible | No disponible | GGUF (i1) | Fine-tune conversacional sin filtros, solo inglés |
+| ricer0ll/Miko-M7-V3 (base) | 7,24 B | No disponible | No disponible | Safetensors | Modelo original; necesario para fine-tuning y para vLLM/TGI |
+| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 | Apache 2.0 | Safetensors, GGUF | Referencia alineada, multilingüe, uso comercial permitido |
+| Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community | Safetensors, GGUF | Más reciente, contexto muy superior, alineado |
+| Zephyr-7B-beta | 7,24 B | 32.768 | MIT | Safetensors, GGUF | Alternativa alineada de la misma familia |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Miko-M7-V3-i1-GGUF | 7.241.732.096 | no disponible | no disponible | GGUF |
-| Alternativa comparable | no disponible | no disponible | no disponible | no disponible |
+La comparación con Mistral-7B-Instruct y Llama-3.1-8B-Instruct es la más directa por tamaño y familia. Miko-M7-V3 se diferencia por su orientación a conversación sin filtros y por la ausencia de licencia declarada, lo que lo descarta para uso comercial. Frente a Zephyr-7B-beta, la diferencia principal es la alineación: Zephyr es seguro por defecto, Miko no.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base (ricer0ll/Miko-M7-V3) antes de cualquier despliegue en producción.
-- Idiomas no documentados: se desconoce qué idiomas cubre el modelo y con qué calidad; no se debe asumir un buen rendimiento en castellano.
-- Sin benchmarks: no hay datos de MMLU, HumanEval, GSM8K ni similares, por lo que la calidad real del modelo es desconocida.
-- Riesgo de alucinación: al no documentarse el entrenamiento ni las fases de alineación, no se puede evaluar la fiabilidad factual del modelo.
-- Cuantizaciones agresivas: las variantes IQ1_S, IQ2_XXS e IQ2_XS pueden degradar notablemente la calidad de salida; conviene validar la variante elegida con tareas representativas antes de usarla.
-- Repositorio de cuantizaciones, no modelo original: este repositorio es una derivación de terceros; los problemas de calidad o comportamiento deben contrastarse con el modelo base.
-- Metadatos escasos: la model card no incluye información sobre sesgos, contexto máximo ni uso previsto, lo que dificulta una evaluación de riesgos rigurosa.
-- Fecha de creación futura en los metadatos (2026-11-17): conviene verificar la integridad y procedencia del repositorio antes de confiar en él.
+- Licencia no disponible: sin una licencia explícita, no se puede asumir permiso de uso comercial. Tratar el modelo como no comercial y de uso interno hasta que el autor del modelo base aclare la licencia.
+- Contenido no apto para todas las audiencias: el tag `not-for-all-audiences` y el dataset stheno-filtered implican que el modelo puede generar contenido adulto, violento u ofensivo sin filtros. No desplegar en aplicaciones de cara al público sin una capa de moderación externa.
+- Sesgos conocidos: no documentados en la información disponible, pero al estar entrenado sobre un corpus de rol en inglés, es esperable un sesgo hacia registros narrativos y una cobertura limitada de dominios técnicos.
+- Riesgo de alucinación: alto en tareas de conocimiento factual, dado que el modelo está orientado a conversación y no a recuperación de hechos. No usar como fuente de verdad.
+- Limitación de idioma: solo inglés declarado; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto desconocida: no se puede planificar un caso de uso con contexto largo sin verificar experimentalmente el límite del modelo base.
+- Cuantizaciones de muy baja calidad: i1-IQ1_S, i1-IQ1_M e i1-Q2_K_S están marcadas por el propio autor como "for the desperate", "mostly desperate" o "very low quality"; no usarlas en producción.
+- Repositorio de 81,7 GB: descargar solo los ficheros GGUF necesarios, no el repositorio completo.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas; cualquier decisión de producción debería basarse en una evaluación propia.
+- Fecha de creación futura en los metadatos (2026-11-17): dato anómalo que conviene verificar antes de citar el modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Miko-M7-V3-i1-GGUF
+- Repositorio Hugging Face (este): https://huggingface.co/mradermacher/Miko-M7-V3-i1-GGUF
 - Modelo base: https://huggingface.co/ricer0ll/Miko-M7-V3
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Miko-M7-V3-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Miko-M7-V3-i1-GGUF
+- Dataset declarado: https://huggingface.co/datasets/anthracite-org/stheno-filtered-v1.1
+- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

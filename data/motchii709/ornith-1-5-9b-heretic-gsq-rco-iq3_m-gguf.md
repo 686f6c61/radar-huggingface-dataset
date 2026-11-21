@@ -2,87 +2,98 @@
 
 ## Resumen
 
-Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M es una cuantización comunitaria en formato GGUF del modelo Ornith-1.5-9B en su variante "heretic" (abliterada), publicada por el usuario motchii709 en Hugging Face. El modelo base original es ornith-ai/Ornith-1.5-9B, desarrollado por DeepReinforce AI (Ornith AI), y la versión abliterada fue creada por Thunder13240 mediante la herramienta Heretic, que elimina la alineación de seguridad del modelo mediante ablación direccional. Esta build concreta combina los pesos de la versión heretic de Thunder13240 (cuantizada desde un archivo Q8_0) con la tabla de asignación de tipos de cuantización por tensor extraída de la build IQ3_M de abenzerps, siguiendo el estilo "GSQ-RCO" popularizado por la investigación de ISTA-DASLab.
+Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M es una cuantización GGUF en formato IQ3_M del modelo Ornith-1.5-9B, un transformer de aproximadamente 8.950 millones de parámetros desarrollado originalmente por DeepReinforce AI (Ornith AI) bajo licencia MIT. Esta versión concreta, publicada por el usuario motchii709, parte de un build "abliterated" (es decir, con el alineamiento de seguridad eliminado deliberadamente) creado por Thunder13240 mediante la herramienta Heretic, y aplica sobre él una asignación de tipos de cuantización por tensor heredada de otro build comunitario de estilo GSQ-RCO.
 
-El resultado es un archivo de unos 4,25 GB con 427 tensores y arquitectura `qwen35` (lo que indica que Ornith-1.5-9B se basa en la familia Qwen 3.5), orientado a ejecución local con llama.cpp en hardware modesto. Es un modelo de generación de texto conversacional, bilingüe (inglés y japonés), con razonamiento por defecto en bloques `<think>` y soporte de entrada de imagen mediante un proyector de visión (mmproj) que se distribuye por separado. Su relevancia radica en ofrecer una versión sin guardarrails y muy comprimida (IQ3_M con matriz de importancia) para usuarios que necesitan el máximo rendimiento posible en GPUs o CPUs con poca memoria, aunque su uso conlleva responsabilidades éticas y legales significativas al tratarse de un modelo deliberadamente desalineado.
+El modelo base emplea una arquitectura híbrida identificada en el GGUF como `qwen35`, que combina atención con componentes de estado recurrente (tensores `ssm_alpha`), y está orientado a generación de texto conversacional con modo de razonamiento interno mediante bloques `<think>`. El archivo contiene únicamente el modelo de texto (427 tensores); la entrada de imagen requiere un proyector de visión `mmproj` distribuido por separado en el repositorio de Thunder13240.
+
+La relevancia de esta ficha es doble: por un lado, documenta un caso típico de cuantización comunitaria de bajo bit (IQ3_M, unos 4,25 GB) pensada para ejecución en hardware de consumo con llama.cpp; por otro, advierte de que el modelo ha sido sometido a abliteración, carece de guardarraíles de seguridad y no debe tratarse como un modelo alineado para producción sin controles externos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen35` (familia Qwen 3.5, con componentes SSM según los tensores `ssm_alpha`; hibrido transformer/SSM aparente, no confirmado oficialmente) |
-| Parametros totales | 8.953.803.264 (≈ 8,95 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible (el ejemplo de la model card usa 8192 tokens con llama-server; el máximo nativo no está documentado) |
-| Tipos de cuantizacion | IQ3_M principal (asignación por tensor heredada del donante GSQ-RCO, con overrides a F32 en `ssm_alpha` y Q6_K en `attn_output` de bloques alternos); origen Q8_0 |
-| Idiomas soportados | Inglés, japonés |
+| Arquitectura | Transformer híbrido con componentes de estado recurrente (SSM); arquitectura declarada en el GGUF: `qwen35` |
+| Parametros totales | 8.953.803.264 (≈ 8,95 mil millones) |
+| Parametros activos | No aplica (no es un modelo MoE) |
+| Longitud de contexto | No disponible en la información proporcionada; el ejemplo de servidor del autor usa `-c 8192` |
+| Tipos de cuantizacion | IQ3_M (este archivo); el ecosistema del modelo base incluye Q8_0 y otros builds GGUF del repositorio de Thunder13240 |
+| Idiomas soportados | Inglés (en) y japonés (ja) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con matriz de importancia imatrix incluida; mmproj de visión distribuido por separado) |
+| Formato de pesos | GGUF (427 tensores, solo modelo de texto; sin tensores MTP/nextn) |
+| Tamano del archivo | 4.252.508.672 bytes (≈ 4,25 GB) |
+| Imatrix incluida | `imatrix.gguf`, 10.307.808 bytes (≈ 10,3 MB) |
+| Descargas | 1031 |
+| Fecha de creacion | 2026-10-29 |
+| Ultima actualizacion | 2026-11-03 |
 
 ## Arquitectura y entrenamiento
 
-El archivo GGUF declara arquitectura `qwen35`, lo que sitúa a Ornith-1.5-9B dentro de la familia de arquitecturas de Qwen 3.5. La presencia de tensores `ssm_alpha.weight` en los 32 bloques del modelo sugiere una arquitectura híbrida que incorpora componentes de espacio de estados (SSM) junto a la atención estándar, aunque la model card no lo detalla explícitamente. El modelo original incluye un bloque MTP (multi-token prediction) para decodificación especulativa, pero la conversión GGUF ascendente lo eliminó, por lo que esta build no puede usar `--spec-type draft-mtp` en llama.cpp.
+El modelo base es un transformer de 8,95 mil millones de parámetros con una arquitectura que el GGUF etiqueta como `qwen35` y que incorpora tensores de estado recurrente (`blk.*.ssm_alpha.weight`), lo que indica un diseño híbrido entre atención y mecanismos de estado tipo SSM. El modelo razona por defecto dentro de bloques `<think>`, comportamiento heredado del modelo base y documentado en la model card del build heretic de origen.
 
-Respecto al proceso de creación de esta cuantización: no es una recomputación GSQ/RCO desde cero, sino una transferencia de asignación. El autor extrajo los tipos de cuantización por tensor (274 tensores 2D) de la cabecera del GGUF IQ3_M donante de abenzerps, generó una matriz de importancia local con `llama-imatrix` usando un conjunto de calibración mixto (wikitext-2 en inglés más Wikipedia japonesa 20231101, 200 fragmentos de 512 tokens de contexto) y ejecutó `llama-quantize` con `--allow-requantize` sobre el archivo Q8_0 de los pesos heretic. El resultado coincide con el donante en 242 de 274 tensores; los 32 restantes fueron elevados a mayor precisión por el propio cuantizador (24 tensores `ssm_alpha` a F32 y 8 tensores `attn_output` a Q6_K), sin que ninguno se degradara, con un coste de aproximadamente un 1,3 % más de tamaño. No hay datos públicos sobre el preentrenamiento del modelo base (tokens, composición del dataset ni post-entrenamiento RLHF/DPO).
+Esta ficha concreta no documenta el entrenamiento original del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO): esa información no está disponible en el material proporcionado. Lo que sí está documentado es el proceso de cuantización de esta release, que es una transferencia de asignación de tipos por tensor y no un recálculo GSQ/RCO desde cero. Se extrajeron los tipos de cuantización por tensor del GGUF IQ3_M donante (`abenzerps/Ornith-1.5-9B-GSQ-RCO-GGUF`, 274 tensores bidimensionales), se generó una importance matrix local con `llama-imatrix` sobre un conjunto mixto de wikitext-2 en inglés y Wikipedia japonesa (20231101), con 200 fragmentos de 512 tokens de contexto, y se ejecutó `llama-quantize --tensor-type-file … --allow-requantize --imatrix …` usando el archivo Q8_0 heretic como entrada.
+
+La fidelidad de la asignación no es exacta: 242 de 274 tensores 2D coinciden con el donante, y los 32 restantes fueron sobrescritos por el cuantizador con tipos de mayor precisión (`ssm_alpha.weight` de BF16 a F32 en 24 tensores; `attn_output.weight` de IQ2_S/IQ3_S/IQ4_XS a Q6_K en 8 tensores, bloques 3, 7, 11, 15, 19, 23, 27 y 31). Ningún tensor fue degradado, y el archivo resultante es 55.443.456 bytes (≈ 1,3 %) mayor que un build con coincidencia exacta. La abliteración se realizó con Heretic (Philipp Emanuel Weidmann), basada en ablación direccional según Arditi et al. 2024.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y japonés, verificada con pruebas de humo en ambos idiomas con salidas fluidas y coherentes.
-- Razonamiento por defecto mediante bloques `<think>`, desactivable mediante los controles de razonamiento del runtime.
-- Soporte de entrada de imagen (multimodalidad de visión) mediante el proyector mmproj, distribuido en el repositorio de Thunder13240 (no incluido en este archivo).
-- Ejecución con llama.cpp (llama-cli y llama-server), con soporte de descarga completa a GPU (`-ngl 99`).
-- Sin guardarrails ni rechazos: la abliteración upstream reporta 0/100 rechazos genuinos en su medición.
-- No disponible en este archivo: decodificación especulativa vía MTP (los tensores nextn se perdieron en la conversión upstream).
-- No hay información sobre tool calling, function calling ni capacidades de agente en la documentación disponible.
+- Generación de texto conversacional en inglés y japonés, con continuaciones fluidas verificadas mediante pruebas de humo con `llama-cli` a temperatura 0.
+- Razonamiento interno en modo "thinking": el modelo emite su cadena de razonamiento dentro de bloques `<think>` por defecto, desactivable mediante los controles de razonamiento del runtime.
+- Capacidad de visión condicionada: el modelo base admite entrada de imagen, pero requiere el proyector `mmproj` que no se incluye en este repositorio y debe obtenerse del repositorio de Thunder13240.
+- Sin alineamiento de seguridad: la abliteración eliminó los rechazos, con una medición de 0/100 rechazos genuinos según la model card upstream citada.
+- No dispone de decodificación especulativa MTP: el GGUF no contiene tensores MTP/nextn, por lo que `--spec-type draft-mtp` no está disponible.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente en la información proporcionada, aunque el modo `<think>` es compatible con flujos de razonamiento encadenado.
 
 ## Casos de uso
 
-- Chatbot local sin filtros para investigación de alineación: permite estudiar el comportamiento de un modelo desalineado en un entorno controlado y aislado, gracias a su tamaño reducido (4,25 GB) que facilita su despliegue en sandboxes.
-- Inferencia en GPUs de gama baja o portátiles: con unos 4,25 GB de pesos, cabe en GPUs con 6-8 GB de VRAM, lo que lo hace adecuado para experimentación local en hardware de consumo.
-- Procesamiento de texto en japonés en local: el conjunto de calibración incluye Wikipedia japonesa específicamente para preservar la calidad en ese idioma tras la cuantización agresiva.
-- Experimentación con cuantizaciones de precisión mixta: la inclusión del archivo `imatrix.gguf` y la documentación detallada de la asignación por tensor lo convierten en un buen caso de estudio para quien investiga técnicas de cuantización GSQ-RCO y transferencia de asignaciones.
-- Asistente multimodal ligero: combinando este GGUF con el mmproj del repositorio de Thunder13240, se puede montar un asistente local con entrada de imágenes para descripción de imágenes o OCR básico.
-- Pruebas comparativas de abliteración: al derivar de la build heretic de Thunder13240 (0/100 rechazos), sirve como sujeto de prueba para evaluar el impacto de la ablación direccional (método de Arditi et al. 2024) sobre la calidad de generación.
+- Inferencia local en hardware de consumo: el archivo de 4,25 GB en IQ3_M permite ejecutar un modelo de 9B en GPU con 6-8 GB de VRAM o en CPU con suficiente RAM, usando `llama-cli` o `llama-server` con `-ngl 99` para descargar todas las capas en GPU.
+- Servicio de chat autoalojado: `llama-server -m … -ngl 99 -c 8192` levanta un endpoint compatible con la API de OpenAI, adecuado para prototipos internos de conversación en inglés o japonés sin dependencia de la nube.
+- Investigación sobre abliteración y seguridad: el modelo sirve como sujeto de estudio para medir el efecto de la ablación direccional sobre la tasa de rechazos y la calidad de las respuestas, comparándolo con el modelo base alineado.
+- Evaluación de técnicas de cuantización: al incluir la imatrix y documentar la desviación respecto al donante, es un caso reproducible para estudiar el impacto de las asignaciones por tensor y de las sobrescrituras del cuantizador en la perplejidad y la coherencia.
+- Generación de texto creativo sin filtros: para aplicaciones de ficción, guiones o role-play donde los rechazos del modelo base resultan un obstáculo, con la advertencia de que el contenido generado no está moderado.
+- Procesamiento de texto en japonés: el conjunto de calibración incluyó Wikipedia japonesa y las pruebas de humo verificaron coherencia en ese idioma, lo que lo hace utilizable para tareas de generación y resumen en japonés en entornos locales.
+- Canalización con visión (con matiz): si se descarga el `mmproj` del repositorio de Thunder13240, puede emplearse para descripción de imágenes o respuesta a preguntas visuales, aunque esta release no incluye el proyector.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se reclaman números de perplejidad ni benchmarks para este archivo concreto; la verificación se limitó a comparación de cabeceras GGUF y pruebas de humo con `llama-cli`.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no reclama cifras de perplejidad ni de benchmarks para este archivo concreto; solo se documentan pruebas de humo cualitativas (fluidez y coherencia en inglés y japonés, sin garbling) con razonamiento desactivado y temperatura 0.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 4,25 GB solo de pesos; con contexto de 8192 tokens y buffers, aproximadamente 5-6 GB de VRAM con descarga completa a GPU.
-- Cabe cómodamente en GPUs de consumo con 6 GB o más: RTX 3060 de 6/12 GB, RTX 4060, RTX 4070 y superiores; también ejecutable parcial o totalmente en CPU dado el formato GGUF.
-- GPU recomendadas: cualquier GPU moderna con 6-8 GB de VRAM basta; no se requieren A100 ni H100 para este tamaño cuantizado.
-- Despliegue: llama.cpp es la vía principal (llama-cli para uso puntual, llama-server para servir con API); por ser GGUF es compatible indirectamente con Ollama, LM Studio y otros runtimes que consuman GGUF; no hay soporte documentado para vLLM o TGI con este formato.
-- Latencia y throughput: no disponibles; la ausencia de tensores MTP impide la decodificación especulativa draft-mtp, lo que puede reducir el throughput respecto a builds que sí la incluyen.
-- Parámetros de muestreo recomendados heredados de la model card upstream: temperature 0,6, top-p 0,95, top-k 20, repeat-penalty 1,05 (valor óptimo para esta familia; 1,0 puede provocar bucles y 1,1 truncamientos). La decodificación greedy no se recomienda.
+- VRAM estimada para inferencia: aproximadamente 4,5-5,5 GB con el archivo IQ3_M de 4,25 GB, más overhead de contexto KV; con `-c 8192` el consumo adicional de caché depende de la arquitectura híbrida y no está cuantificado en la información disponible.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para carga completa; tarjetas de 8 GB como la RTX 3060 Ti o RTX 4060 son suficientes; A100 y H100 quedan sobredimensionadas para este tamaño, salvo por agregación de concurrencia.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM; también puede ejecutarse parcialmente en CPU con offload parcial de capas.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`); el formato GGUF es compatible con otros runners basados en llama.cpp, pero la información proporcionada solo documenta explícitamente llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada. El entorno de construcción fue una T4 gratuita de Google Colab, lo que da una referencia mínima de que la cuantización se completó en hardware de gama media.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M (este) | 8,95 B | GGUF IQ3_M (4,25 GB) | no disponible | MIT | Abliterado, sin mmproj incluido, sin MTP |
-| ornith-ai/Ornith-1.5-9B (base) | 8,95 B | no disponible (safetensors según dato de repo) | no disponible | MIT | Modelo original con alineación de seguridad intacta |
-| Thunder13240/Ornith-1.5-9B-heretic-GGUF | 8,95 B | GGUF (Q8_0 y otras) | no disponible | MIT (siguiendo la base) | Misma variante heretic; distribuye el mmproj para visión |
+| Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M (esta ficha) | 8,95B | No disponible (ejemplo a 8192) | IQ3_M, 4,25 GB | MIT | Abliterado, solo texto, sin MTP |
+| Thunder13240/Ornith-1.5-9B-heretic-GGUF (origen de pesos) | 8,95B | No disponible | Q8_0 y otros | MIT | Incluye `mmproj` para visión; abliterado |
+| abenzerps/Ornith-1.5-9B-GSQ-RCO-GGUF (donante de asignación) | 8,95B | No disponible | IQ3_M y otros | MIT | Build GSQ-RCO de referencia; no abliterado |
+| ornith-ai/Ornith-1.5-9B (modelo base) | 8,95B | No disponible | Safetensors (original) | MIT | Alineado, con rechazos; punto de partida de la cadena |
 
-No se incluyen modelos de otras familias en la comparativa porque la model card no aporta datos de rendimiento que permitan una comparación fundamentada y no inventar cifras.
+La comparación con modelos de otras familias (por ejemplo, Qwen, Llama o Mistral de tamaño similar) no está disponible en la información proporcionada, y no se aportan cifras de rendimiento que permitan un contraste cuantitativo.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado sin guardarrails: la alineación de seguridad fue eliminada deliberadamente upstream (0/100 rechazos genuinos reportados). El usuario asume toda la responsabilidad legal y ética de su uso. No debe desplegarse en producción orientada a usuarios finales sin controles externos.
-- Riesgo de alucinación elevado al tratarse de un modelo de 9B cuantizado a IQ3_M (≈3,4 bits efectivos por parámetro en la mayor parte de los tensores); no hay mediciones de perplejidad ni de degradación para este archivo concreto.
-- Cuantización agresiva: la transferencia de asignación no reproduce exactamente al donante (32 tensores con override a mayor precisión); aunque el autor lo considera aceptable, el rendimiento puede diferir de otras builds IQ3_M.
-- Idiomas limitados a inglés y japonés; el rendimiento en castellano u otros idiomas no está documentado y puede ser pobre.
-- Sin tensores MTP/nextn: la decodificación especulativa draft-mtp de llama.cpp no está disponible con este archivo.
-- El proyector de visión (mmproj) no está incluido; hay que descargarlo del repositorio de Thunder13240 para usar entrada de imagen.
-- La decodificación greedy no se recomienda y repeat-penalty 1,0 puede provocar bucles; hay que ajustar el muestreo según la guía upstream.
-- Licencia MIT en los pesos derivados del modelo base, pero la model card advierte que la licencia metadata del repositorio donante de abenzerps no pudo verificarse; si algún repositorio upstream declara términos distintos, prevalecen esos términos. Verificar antes de redistribuir.
-- La longitud de contexto máxima nativa no está documentada en la información disponible.
+- Modelo abliterado sin guardarraíles: el alineamiento de seguridad fue eliminado deliberadamente upstream, con 0/100 rechazos genuinos medidos por el autor del build heretic. No es apto para aplicaciones de cara al público sin moderación externa.
+- Riesgo de alucinación: no se han publicado métricas de fidelidad factual ni de perplejidad para este archivo; la cuantización IQ3_M introduce pérdida de precisión adicional respecto al Q8_0 de origen.
+- Idiomas limitados: solo inglés y japonés declarados; el rendimiento en castellano u otros idiomas no está evaluado y probablemente sea deficiente.
+- Contexto no especificado: la longitud máxima de contexto del modelo base no se documenta en la información disponible; el ejemplo del autor usa 8192 tokens, que no debe interpretarse como el límite arquitectónico.
+- Sin decodificación especulativa MTP: la ausencia de tensores MTP/nextn impide usar `--spec-type draft-mtp` en llama.cpp, lo que limita las optimizaciones de latencia disponibles.
+- Desviación de la asignación donante: 32 tensores 2D no coinciden con el build GSQ-RCO de referencia; aunque la desviación va hacia mayor precisión y fue aceptada por el constructor, invalida comparaciones bit a bit con el donante.
+- Visión incompleta: el archivo no incluye el proyector `mmproj`; sin él, el modelo es solo de texto.
+- Muestreo delicado: se recomienda `repeat-penalty 1.05` (1.0 puede provocar bucles y 1.1 truncamientos) y se desaconseja la decodificación greedy.
+- Licencia MIT: permite uso comercial y redistribución, pero no exime al usuario de responsabilidad legal sobre el contenido generado sin filtros.
 
 ## Enlaces
 
-- Ficha del modelo (este GGUF): https://huggingface.co/motchii709/Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M-GGUF
-- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Build heretic de origen (pesos y mmproj): https://huggingface.co/Thunder13240/Ornith-1.5-9B-heretic-GGUF
-- Build donante de la asignación GSQ-RCO: https://huggingface.co/abenzerps/Ornith-1.5-9B-GSQ-RCO-GGUF
-- Herramienta de abliteración Heretic (Philipp Emanuel Weidmann): https://github.com/p-e-w/heretic
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/motchii709/Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M-GGUF
+- Build heretic de origen (pesos y `mmproj`): https://huggingface.co/Thunder13240/Ornith-1.5-9B-heretic-GGUF
+- Donante de la asignación GSQ-RCO: https://huggingface.co/abenzerps/Ornith-1.5-9B-GSQ-RCO-GGUF
+- Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Herramienta de abliteración Heretic: https://github.com/p-e-w/heretic
+- llama.cpp: https://github.com/ggml-org/llama.cpp

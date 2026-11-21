@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 993,
+  "downloads_30d": 998,
   "trending_score": 0,
   "parameters": 29635526896,
   "parameters_human": "29.64B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Oriven Labs — AI Models & Custom Architectures",
-      "url": "https://orivenlabs.com/",
-      "snippet": "We build AI models based on custom architectures. Explore Oriven Labs&#x27; approach to architecture research, model development, and evaluation."
-    },
-    {
-      "title": "Oriven Labs - GitHub",
-      "url": "https://github.com/Oriven-Labs",
-      "snippet": "We build AI models based on custom architectures. At Oriven Labs, research starts with how a model is designed—not just how it is used. - Oriven Labs"
-    },
-    {
-      "title": "PrismML — Concentrating intelligence",
-      "url": "https://prismml.com/",
-      "snippet": "PrismML builds 1-bit and ternary Bonsai models that pack advanced reasoning, tool use, and multimodal AI into phones, laptops, and efficient data centers."
-    },
-    {
-      "title": "Google&#x27;s Gemma C2S-Scale 27B AI Model Discovers Novel ... - WinBuzzer",
-      "url": "https://winbuzzer.com/2025/10/16/googles-gemma-c2s-scale-27b-ai-model-discovers-novel-cancer-therapy-pathway-in-lab-breakthrough-xcxwbn/",
-      "snippet": "Google&#x27;s new Gemma-based AI, C2S-Scale, discovered a novel cancer therapy pathway that was then successfully validated in laboratory experiments."
-    },
-    {
-      "title": "Run a 27B AI Model on Your Laptop & Phone (Bonsai 27B)",
-      "url": "https://www.youtube.com/watch?v=X5ku8GgfSj8",
-      "snippet": "Can you run a massive 27-billion parameter AI model entirely offline on a smartphone? Normally, a 27B model (like Qwen 3.6) takes up 54GB of RAM and requires..."
-    }
-  ]
+  "sources": []
 }

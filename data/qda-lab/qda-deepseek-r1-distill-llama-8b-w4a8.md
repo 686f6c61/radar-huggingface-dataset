@@ -2,98 +2,100 @@
 
 ## Resumen
 
-QDA-DeepSeek-R1-Distill-Llama-8B-W4A8 es un checkpoint cuantizado del modelo DeepSeek-R1-Distill-Llama-8B, publicado por el laboratorio qda-lab. Se trata de una versión con cuantización de pesos a 4 bits y activaciones a 8 bits (W4A8) en formato compressed-tensors, diseñada para cargarse directamente en vLLM sin conversión adicional. El modelo base es un destilado denso de 8.030.261.248 parámetros (aproximadamente 8B) derivado de DeepSeek-R1 sobre la arquitectura Llama, orientado a razonamiento, matemáticas y generación de código.
+QDA-DeepSeek-R1-Distill-Llama-8B-W4A8 es una versión cuantizada del modelo de razonamiento DeepSeek-R1-Distill-Llama-8B, publicada por el laboratorio qda-lab. Se trata de una cuantización de pesos a 4 bits (INT4) con activaciones en 8 bits (FP8), lo que reduce el tamaño del checkpoint de 16,1 GB en BF16 a 5,7 GB, un factor de 2,8× de compresión, manteniendo según el autor el 95,1 % de la precisión del modelo original.
 
-La relevancia de este checkpoint reside en su enfoque metodológico: según la model card, los archivos corresponden a una búsqueda de diseño de cuantización realizada con agentes LLM en el marco del trabajo "QDA: Closed-Loop Quantization Design with LLM Agents" (sometido a MLSys 2027, búsqueda `r-78b7cf12`, entrega manual `h4`). El repositorio ocupa 5,7 GB, lo que permite desplegar un modelo de razonamiento de 8B en hardware con menos VRAM que la versión en bf16.
+El modelo base es la destilación de DeepSeek-R1 sobre la arquitectura Llama de 8B parámetros, un transformer decoder-only denso (sin mezcla de expertos) especializado en razonamiento de cadena larga mediante modo "thinking". La cuantización emplea el formato compressed-tensors con GPTQ sobre una copia rotada con Hadamard, con la rotación plegada en los pesos para evitar transformaciones en tiempo de ejecución.
 
-El modelo hereda las capacidades del destilado original de DeepSeek-R1: razonamiento en cadena, matemáticas competitivas y código, con un contexto heredado de la familia Llama. No obstante, la información pública disponible sobre esta variante cuantizada es muy limitada (0 descargas, 0 likes en el momento de la consulta) y la licencia e idiomas no están declarados en la model card.
+Su relevancia práctica radica en que permite desplegar un modelo de razonamiento de 8B en una única GPU Hopper con requisitos de memoria muy inferiores, a costa de una restricción importante: el kernel W4A8 de vLLM exige compute capability 9.0, por lo que solo funciona en H100 y H200. La licencia MIT facilita su uso comercial y su integración en pipelines existentes.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Llama), destilado de DeepSeek-R1 |
-| Parámetros totales | 8.030.261.248 (~8B) |
-| Parámetros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | W4A8 (pesos 4 bits, activaciones 8 bits), formato compressed-tensors |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
+| Arquitectura | Transformer decoder-only denso (Llama), destilado de DeepSeek-R1 |
+| Parametros totales | 8.030.261.248 (8,03B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | W4A8: pesos INT4 en grupos de 128, activaciones FP8 dinamicas; formato compressed-tensors |
+| Idiomas soportados | No disponible (multiidioma heredado del modelo base, sin listado explicito) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base DeepSeek-R1-Distill-Llama-8B es un transformer denso de la familia Llama, obtenido por destilación del modelo de razonamiento DeepSeek-R1. DeepSeek publicó seis modelos densos destilados a partir de DeepSeek-R1 sobre bases Llama y Qwen; este es el de 8B sobre Llama. El proceso de destilación transfiere las capacidades de razonamiento del modelo profesor (generación de cadenas de pensamiento largas) al estudiante denso.
+El modelo base DeepSeek-R1-Distill-Llama-8B es un transformer denso de 8B parámetros con arquitectura Llama, obtenido por destilación del modelo de razonamiento DeepSeek-R1. Está entrenado para producir cadenas de razonamiento extensas en modo "thinking", delimitadas por la etiqueta `</think>`. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el modelo base.
 
-Sobre esa base, qda-lab aplica una cuantización W4A8 en formato compressed-tensors, cuyos parámetros de escalado y esquema fueron encontrados mediante una búsqueda automatizada con agentes LLM (QDA). La model card indica que los archivos publicados son exactamente los evaluados en el artículo, con el identificador de búsqueda `r-78b7cf12` y la entrega manual `h4`. No se dispone de información sobre el número de tokens de entrenamiento del destilado, la composición del dataset ni si hubo RLHF o DPO en esta variante cuantizada.
+La innovación técnica de esta ficha es el proceso de cuantización. Los pesos se cuantizan a INT4 en grupos de 128 mediante GPTQ sobre una copia del modelo rotada con una transformación de Hadamard; la rotación se pliega en los propios pesos, de modo que no hay coste de transformación en inferencia. Las activaciones se cuantizan dinámicamente a FP8. La receta fue seleccionada por búsqueda automática del sistema QDA (Closed-Loop LLM Quantization Design with Agents, arXiv:2611.23388). El proceso de construcción se dividió en tres partes ejecutadas sobre H100 de 80 GB, seguidas de un "soup" (promediado de pesos) de las tres partes.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en cadena de pensamiento, heredado del destilado de DeepSeek-R1.
-- Razonamiento matemático competitivo (evaluado en AIME 2025 y HMMT Feb 2026).
-- Razonamiento científico de nivel experto (evaluado en GPQA-Diamond).
-- Generación de código (evaluado en LiveCodeBench v6).
-- Seguimiento de instrucciones (evaluado en IFEval).
-- Compatibilidad nativa con vLLM mediante `vllm serve`.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y multi-step reasoning: no disponible explícitamente, aunque el modelo base está orientado a razonamiento.
-- Capacidades multilingües: no disponible.
-- Capacidades de visión o audio: no disponibles (modelo de texto).
+- Generación de texto y razonamiento de cadena larga en modo "thinking", con cierre explícito en `</think>`.
+- Razonamiento matemático de competición (AIME, HMMT) y resolución de problemas científicos de nivel avanzado (GPQA-Diamond).
+- Generación de código y resolución de problemas algorítmicos (evaluado en LiveCodeBench).
+- Seguimiento de instrucciones verificable (evaluado en IFEval).
+- Conocimiento general y multidisciplinar (evaluado en MMLU-Pro).
+- Conversación multi-turno con plantilla de chat compatible con text-generation-inference y endpoints compatibles.
+- No se documenta soporte explícito de tool calling, function calling, visión, audio ni capacidades de agente en la información proporcionada.
 
 ## Casos de uso
 
-- Razonamiento matemático asistido: el modelo puede resolver problemas de competición y demostraciones paso a paso, adecuado para herramientas educativas o de verificación de cálculos, dado su rendimiento de 27,5 en el agregado AIME 2025 + HMMT Feb 2026.
-- Generación de código en pipelines de CI/CD: con 36,5 en LiveCodeBench v6, puede integrarse en revisión de código, generación de tests o explicación de errores, siempre con validación humana.
-- Respuestas a preguntas científicas de nivel experto: su 46,7 en GPQA-Diamond lo hace útil para asistentes de investigación en dominios de física, química y biología, con supervisión.
-- Despliegue en hardware limitado: al ser un checkpoint W4A8 de 5,7 GB, permite servir un modelo de razonamiento de 8B en GPUs de gama media o en entornos con VRAM restringida mediante vLLM.
-- Seguimiento de instrucciones en asistentes internos: con 61,5 en IFEval, puede emplearse en tareas de formato estructurado, extracción y transformación de texto.
-- Evaluación de técnicas de cuantización: el checkpoint sirve como referencia reproducible para investigar el impacto de W4A8 en tareas de razonamiento, al estar vinculado a un artículo con configuración de evaluación explícita (vLLM 0.27.1, GH200, temperatura 0,6, top_p 0,95).
+- Razonamiento matemático asistido: el modelo puede resolver problemas de competición y demostraciones paso a paso en modo thinking, adecuado para herramientas educativas o de verificación formal donde el coste por consulta importa y el despliegue en H100 está disponible.
+- Generación y revisión de código en producción: con resultados en LiveCodeBench cercanos al modelo BF16, puede integrarse en pipelines de revisión o generación de parches, siempre que la infraestructura cuente con GPUs Hopper.
+- Evaluación científica y QA de dominio: su rendimiento en GPQA-Diamond (46,2 frente a 48,7 en BF16) lo hace utilizable para asistentes de investigación que requieran razonamiento sobre preguntas de nivel posgrado.
+- Despliegue con restricciones de memoria: al ocupar 5,7 GB, permite servir el modelo en una H100 compartida con otros procesos o con mayor concurrencia que la versión BF16 de 16,1 GB, reduciendo el coste por token en entornos con múltiples réplicas.
+- Seguimiento de instrucciones en agentes de flujo fijo: su puntuación en IFEval (61,9) lo hace apto para tareas de formato estricto y extracción estructurada, aunque no se documenta tool calling nativo.
+- Sustitución de la versión BF16 en entornos vLLM existentes: al usar compressed-tensors y ser servible con `vllm serve`, se puede adoptar como reemplazo directo en despliegues ya basados en vLLM sobre Hopper, con una pérdida media de 2,1 puntos en los benchmarks publicados.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card del checkpoint, evaluados con vLLM 0.27.1 sobre GH200, batching estático, muestreo `{"temperature": 0.6, "top_p": 0.95}` y semillas 17+j:
+Resultados publicados por el autor (modo thinking, pass@1 promediado sobre 1–32 semillas, 32.768 tokens nuevos máximos por ítem):
 
-| Benchmark | Puntuación (%) |
-|---|---|
-| Math (AIME 2025 + HMMT Feb 2026) | 27,5 |
-| GPQA-Diamond | 46,7 |
-| LiveCodeBench v6 | 36,5 |
-| IFEval | 61,5 |
-| **Media** | **43,1** |
+| Benchmark | BF16 (16,1 GB) | QDA W4A8 (5,7 GB) |
+|---|---|---|
+| AIME 2025 | 33,6 | 31,7 |
+| HMMT Feb 2026 | 24,9 | 23,9 |
+| GPQA-Diamond | 48,7 | 46,2 |
+| IFEval | 63,4 | 61,9 |
+| MMLU-Pro | 49,4 | 46,0 |
+| LiveCodeBench | 38,3 | 36,1 |
+| Media | 43,0 | 40,9 |
 
-No se han publicado en la información disponible resultados comparativos con el modelo base sin cuantizar ni con otras alternativas.
+Configuración de evaluación: temperatura 0,6, top-p 0,95, top-k -1, min-p 0, sin penalización de presencia ni repetición; thinking activado; sin decodificación especulativa. Las respuestas de MMLU-Pro se extrajeron con las reglas lenient oficiales porque el modelo no sigue el formato estándar de respuesta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 5,7 GB en W4A8; se recomienda al menos 8-10 GB de VRAM para pesos y overhead de KV cache en contextos moderados.
-- GPU recomendadas: la model card cita evaluación en GH200; por tamaño, cabría en A100, H100, L40S y GPUs consumer de gama alta.
-- Compatibilidad con GPU consumer: probable en RTX 4090 (24 GB) y RTX 4080/4070 Ti (16 GB); en GPUs de 8 GB requeriría contextos cortos y verificación empírica.
-- Opciones de despliegue: vLLM es el soporte nativo indicado (`vllm serve qda-lab/QDA-DeepSeek-R1-Distill-Llama-8B-W4A8`); otros motores no están confirmados para este formato compressed-tensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 5,7 GB de pesos más overhead de activaciones FP8 y caché KV; el modelo cabe holgadamente en una GPU de 24 GB, pero el kernel W4A8 de vLLM exige compute capability 9.0.
+- GPU compatibles: exclusivamente NVIDIA Hopper, es decir, H100 y H200 (sm90). No funciona en A100, RTX 4090 ni otras arquitecturas según la model card.
+- GPU de consumo: no compatible (las RTX 4090 son sm89 y no soportan el kernel W4A8 de vLLM).
+- Opciones de despliegue: vLLM (`vllm serve qda-lab/QDA-DeepSeek-R1-Distill-Llama-8B-W4A8`), transformers y text-generation-inference según los tags; no se documenta soporte de llama.cpp u Ollama.
+- Latencia y throughput: no disponibles. Como referencia de coste de construcción, un paso `scale_kd` de la parte 1 tardó 106 s en H100 de 80 GB y 254–281 s en A100.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Media benchmarks | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| qda-lab/QDA-DeepSeek-R1-Distill-Llama-8B-W4A8 | ~8B | no disponible | W4A8 | no disponible | Hugging Face (vLLM) |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8B | no disponible | bf16 original | no disponible en la información | Hugging Face |
-| mozilla-ai/DeepSeek-R1-Distill-Llama-8B-llamafile | ~8B | no disponible | llamafile | no disponible en la información | Hugging Face |
+| QDA-DeepSeek-R1-Distill-Llama-8B-W4A8 | 8,03B | No disponible | 40,9 | MIT | vLLM solo Hopper |
+| DeepSeek-R1-Distill-Llama-8B (BF16) | 8,03B | No disponible | 43,0 | MIT | vLLM, transformers, TGI, llama.cpp |
+| Qwen2.5-7B-Instruct | 7,6B | No disponible | No disponible | Apache 2.0 | Multiples backends |
+| Llama-3.1-8B-Instruct | 8,0B | No disponible | No disponible | Llama 3.1 Community | Multiples backends |
 
-La comparativa de rendimiento entre estas variantes no está disponible en la información proporcionada.
+La comparativa directa con Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct no puede establecerse con los datos proporcionados, ya que no se incluyen sus resultados en los mismos benchmarks ni con la misma configuración de evaluación. La comparación más fiable es contra el propio modelo base BF16, donde la versión cuantizada pierde 2,1 puntos de media.
 
 ## Limitaciones y advertencias
 
-- La model card no declara licencia, lo que impide confirmar si el uso comercial está permitido; debe verificarse con el autor y con la licencia del modelo base.
-- No se declaran los idiomas soportados; el comportamiento multilingüe no está garantizado.
-- Riesgo de alucinación inherente a los modelos de razonamiento destilados, especialmente en dominios fuera de matemáticas y código.
-- La cuantización W4A8 puede degradar la precisión respecto al modelo en bf16; la model card no ofrece comparación directa con el original.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado recientemente; no hay validación independiente de la comunidad.
-- La evaluación se realizó con una configuración concreta (vLLM 0.27.1, GH200, muestreo específico); los resultados pueden no reproducirse con otros ajustes.
-- El soporte está limitado a vLLM en formato compressed-tensors; otros motores de inferencia no están confirmados.
-- El artículo asociado (QDA, MLSys 2027) está en estado de sometimiento, por lo que la metodología no ha sido revisada por pares de forma pública.
+- Restricción de hardware severa: solo funciona en GPUs Hopper (H100/H200) con el kernel W4A8 de vLLM; no es desplegable en A100, RTX 4090 ni GPUs de consumo.
+- Pérdida de precisión medible: 2,1 puntos de media frente a BF16, con la mayor caída en MMLU-Pro (3,4 puntos) y la menor en HMMT (1,0 punto).
+- El modelo no sigue el formato estándar de respuesta de MMLU-Pro, lo que obliga a usar reglas de extracción lenient y puede complicar la evaluación automatizada en producción.
+- Riesgo de alucinación inherente a los modelos de razonamiento destilados; no se documentan evaluaciones de factualidad ni de calibración.
+- Idiomas soportados no documentados explícitamente; el comportamiento multilingüe se hereda del modelo base sin garantías.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines que dependan de function calling.
+- La reconstrucción con las recetas publicadas no produce pesos idénticos bit a bit a este checkpoint, lo que dificulta la auditoría reproducible.
+- La licencia MIT del checkpoint no exime de verificar las condiciones del modelo base DeepSeek-R1-Distill-Llama-8B, también MIT según la model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-DeepSeek-R1-Distill-Llama-8B-W4A8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
-- Variante llamafile de mozilla-ai: https://huggingface.co/mozilla-ai/DeepSeek-R1-Distill-Llama-8B-llamafile
+- Paper QDA: https://arxiv.org/abs/2611.23388
+- Repositorio QDA: https://github.com/humanfia/qda
+- Recetas e inputs de cuantización: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/tree/main/QDA-DeepSeek-R1-Distill-Llama-8B-W4A8

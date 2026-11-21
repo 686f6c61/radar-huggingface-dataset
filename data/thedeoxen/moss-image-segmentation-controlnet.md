@@ -2,51 +2,51 @@
 
 ## Resumen
 
-MOSS-Image-segmentation-controlnet es un adaptador LoRA de tipo ControlNet para el modelo de edicion de imagen MOSS-Image-SFT, desarrollado por OpenMOSS-Team y distribuido por el usuario thedeoxen. El adaptador permite controlar la generacion de imagenes mediante un mapa de segmentacion de colores planos: el modelo respeta los limites y las masas de las regiones del mapa, mientras que el prompt de texto decide que se representa en cada region (identidad, materiales, ropa, estilo y entorno).
+MOSS-Image-segmentation-controlnet es un adaptador de tipo ControlNet implementado como LoRA sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT, un modelo de generación y edición de imágenes. Lo desarrolla el usuario thedeoxen y su función es condicionar la generación de imágenes a un mapa de segmentación de regiones en colores planos: el modelo respeta los límites y las masas del mapa de control, mientras que el prompt de texto determina la identidad, los materiales, la ropa y el estilo de cada región.
 
-Tecnicamente es un LoRA de rango 64 en capas lineales y rango 16 en convoluciones, entrenado como adaptador de edicion sobre el checkpoint del paso 4500. No es el adaptador oficial de concatenacion de color/profundidad de MOSS, sino un adaptador de edicion que se carga con un cargador LoRA y recibe una unica imagen de control a traves del nodo Text Encode MOSS-Image Edit.
+El adaptador se entrenó como un adaptador de edición: la imagen de control actúa como referencia estructural y el prompt describe la imagen a generar. No es un ControlNet completo ni el adaptador oficial de concatenación de color/profundidad de MOSS, sino una LoRA que se carga con un cargador de LoRA y recibe una única imagen de control a través del nodo Text Encode MOSS-Image Edit de ComfyUI.
 
-Es relevante para flujos de trabajo de edicion controlada de imagen en ComfyUI, donde se necesita fijar la composicion espacial (personas, mobiliario, fondo) y dejar que el texto defina la apariencia final. El repositorio ocupa 0,3 GB e incluye los pesos en safetensors y un workflow de ComfyUI listo para usar.
+El checkpoint publicado corresponde al paso de entrenamiento 4500. La LoRA tiene rango 64 en capas lineales y rango 16 en convoluciones, y se distribuye bajo licencia Apache 2.0 con pesos en formato safetensors. Es relevante para flujos de trabajo de composición controlada por regiones, blocking de escenas y color scripts donde solo se decide la forma y el prompt define el contenido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de edicion tipo ControlNet) sobre MOSS-Image-SFT; rank 64 en capas lineales y rank 16 en convoluciones |
-| Parametros totales | no disponible (adaptador LoRA; el modelo base no reporta cifra en la informacion disponible) |
+| Arquitectura | LoRA de control (estilo ControlNet) sobre el modelo base MOSS-Image-SFT; rango 64 en capas lineales y rango 16 en convoluciones |
+| Parametros totales | no disponible (el repo ocupa 0,3 GB; el numero de parametros del adaptador no se especifica) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible para el LoRA; el modelo base se distribuye con UNet en int8 y text encoder en w4a8 GPTQ |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | no disponible para el adaptador; el modelo base se usa con UNet int8 (`moss_image_sft_int8_convrot.safetensors`) y text encoder `qwen3.5_9b_w4a8_gptq.safetensors` |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (moss_image_sft_segmentation_control_lora.safetensors) |
+| Formato de pesos | safetensors (`moss_image_sft_segmentation_control_lora.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de edicion entrenado sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT. Se aplica sobre el UNet del modelo base (fichero moss_image_sft_int8_convrot.safetensors) con una fuerza de 1.0, mientras que el text encoder es qwen3.5_9b_w4a8_gptq.safetensors (tipo moss_image) y el VAE es flux2-vae_small.safetensors. El LoRA emplea rank 64 en las capas lineales y rank 16 en las convoluciones, y fue entrenado como adaptador de edicion con la cache KV activada; por ello el formato de edicion debe fijarse en ai-toolkit tanto en la codificacion positiva como en la negativa.
+El adaptador es una LoRA de control que se acopla al UNet del modelo base MOSS-Image-SFT. Según la model card, se entrena como un adaptador de edición en el que la imagen de control es la referencia y el prompt describe la imagen a generar. La LoRA emplea rango 64 en las capas lineales y rango 16 en las convoluciones, y el checkpoint publicado corresponde al paso 4500 del entrenamiento. Se entrenó con la caché KV activada (kv cache on), lo que obliga a configurar el formato de edición `ai-toolkit` tanto en la codificación positiva como en la negativa.
 
-El checkpoint publicado corresponde al paso de entrenamiento 4500. Los mapas de control usados en el entrenamiento son de colores planos completamente rellenos, sin grandes areas negras sin etiquetar; los colores representan identificadores de region, no los colores que se desean en el resultado. No se detalla en la informacion disponible el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+Los mapas de control de entrenamiento son mapas de segmentación semántica con colores planos completamente rellenos, sin grandes zonas negras sin etiquetar. Los colores del mapa son identificadores de región, no los colores que aparecerán en el resultado. El flujo de trabajo incluido utiliza el segmentador semántico UniFormer, cuyos mapas encajan mejor con estos pesos que los de un segmentador que deja el fondo en negro. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Edicion de imagen guiada por mapa de segmentacion: respeta los limites y las masas de las regiones de color plano del mapa de control.
-- Control de identidad, materiales, ropa y estilo mediante prompt de texto, sin palabra de activacion.
-- Adaptador de control de una sola imagen para MOSS-Image-SFT, integrable en el nodo Text Encode MOSS-Image Edit.
-- Compatibilidad con ComfyUI mediante workflow incluido (moss_image_segmentation_control.json).
-- Integracion con el segmentador semantico UniFormer para construir el mapa de control.
-- Reestilizado de escenas manteniendo la composicion espacial de personas, mobiliario y fondo.
-- Generacion de layouts de guion de color donde solo se deciden las formas.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni vision mas alla del control por imagen.
+- Generación y edición de imágenes condicionada por un mapa de segmentación de regiones en colores planos.
+- Respeto de los límites y las masas del mapa de control, con relleno de cada región según el prompt de texto.
+- Control de identidad, materiales, ropa y estilo mediante el prompt, sin palabra de activación (no trigger word).
+- Funciona como adaptador de control de imagen única para MOSS-Image-SFT.
+- Integración con ComfyUI mediante el nodo Text Encode MOSS-Image Edit y el cargador de LoRA.
+- Soporte de prompt negativo (en las muestras de entrenamiento se usó `nsfw, worst quality, bad anatomy, watermark, jpeg artifact`).
+- Capacidad de ajustar la rigidez del control bajando la fuerza de la LoRA hacia 0,7 (el valor entrenado es 1,0).
+- Idioma de los prompts: inglés.
 
 ## Casos de uso
 
-- Bloqueo de escenas por regiones y reestilizado: se construye un mapa de segmentacion con masas planas de personas, objetos y fondo, y el prompt define el nuevo estilo y los materiales de cada region; el adaptador mantiene la estructura espacial mientras cambia la apariencia.
-- Previsualizacion de composicion en produccion audiovisual: se fija el layout de personajes y decorados con un mapa de colores y se generan variantes de render para revisar la composicion antes de producir assets definitivos.
-- Guion de color para animacion o ilustracion: se define unicamente la forma de cada region y el prompt asigna la paleta y los materiales finales, lo que permite iterar sobre el color sin rehacer el dibujo base.
-- Edicion de fotografias manteniendo el layout: a partir de un mapa de segmentacion de una foto, se cambia el sujeto, la ropa o el entorno mediante prompt conservando las masas y los limites originales.
-- Generacion de variantes de escena para catalogos o storyboards: se reutiliza un mismo mapa de control con distintos prompts para obtener multiples versiones coherentes en composicion de una misma escena.
-- Integracion en pipelines de ComfyUI para artistas tecnicos: el workflow incluido permite encadenar segmentacion UniFormer, codificacion de texto con formato ai-toolkit y muestreo con 30 pasos, CFG 4 y sampler euler/simple, facilitando la automatizacion de ediciones controladas.
-- Prototipado rapido de conceptos visuales: con un mapa de regiones simple y un prompt descriptivo se generan conceptos de personajes o entornos en los que la posicion y la silueta estan fijadas de antemano.
+- Blocking de escenas por regiones: se construye un mapa de segmentación con las masas principales (personajes, mobiliario, fondo) y el prompt reestiliza cada región, lo que permite iterar sobre la composición sin rehacer el layout.
+- Color scripts y previsualización de layouts: útil en preproducción de animación o ilustración, donde solo se decide la forma de las regiones y el prompt define la apariencia final.
+- Cambio de render manteniendo el layout: se conserva la disposición de personas, objetos y fondo de una imagen y se cambia el estilo de renderizado mediante el prompt.
+- Restyling de una escena existente: a partir de un mapa de segmentación derivado de una foto (por ejemplo con UniFormer), se genera una nueva versión con otro sujeto y otro estilo respetando las fronteras originales.
+- Generación de variaciones controladas: con un mismo mapa de control y distintos prompts se obtienen múltiples resultados coherentes en estructura, útil para explorar direcciones visuales.
+- Integración en pipelines de ComfyUI: el flujo incluido carga una foto, construye el mapa de control, lo codifica con el prompt y muestrea, lo que facilita automatizar la generación por lotes con segmentadores semánticos.
+- Edición guiada por regiones en producción gráfica: para sustituir materiales o vestuario en zonas concretas indicándolo en el prompt, manteniendo la silueta y la posición de cada masa.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El repositorio del LoRA ocupa 0,3 GB; el modelo base MOSS-Image-SFT debe cargarse adicionalmente con su UNet en int8, text encoder Qwen de 9B en w4a8 GPTQ y VAE flux2-vae_small.
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada; depende del modelo base completo, no solo del adaptador.
+- VRAM estimada para inferencia: no disponible de forma explícita; depende del modelo base MOSS-Image-SFT, que se carga con UNet en int8 y text encoder en W4A8 GPTQ, lo que reduce los requisitos frente a una carga en precisión completa. El adaptador en sí ocupa 0,3 GB en disco.
 - GPU recomendadas: no disponible en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no disponible; el adaptador por si solo es ligero, pero el modelo base condiciona el requisito real de VRAM.
-- Opciones de despliegue: ComfyUI (workflow incluido), con cargador LoRA y nodo Text Encode MOSS-Image Edit; libreria diffusers como formato de publicacion.
-- Latencia y throughput: no disponible en la informacion proporcionada; el workflow de referencia usa 30 pasos de muestreo con CFG 4, sampler euler y scheduler simple.
+- ¿Cabe en GPU de consumo? No disponible; el uso de cuantización int8 en el UNet y W4A8 en el text encoder sugiere que está pensado para reducir huella de memoria, pero no se confirman modelos concretos de GPU.
+- Opciones de despliegue: ComfyUI (flujo de trabajo incluido `moss_image_segmentation_control.json`); la librería declarada es diffusers.
+- Latencia y throughput estimados: no disponible. Los ajustes de muestreo típicos del flujo son 30 pasos, CFG 4, sampler `euler` con scheduler `simple`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thedeoxen/MOSS-Image-segmentation-controlnet | LoRA de control por segmentacion sobre MOSS-Image-SFT | no disponible | no disponible | apache-2.0 | Hugging Face, workflow ComfyUI incluido |
-| Adaptador oficial de color/profundidad de MOSS-Image | Adaptador de concatenacion del modelo base | no disponible | no disponible | no disponible | Referenciado en la model card como alternativa oficial |
-| Otros adaptadores ControlNet para difusion de imagen | Adaptadores de control (canny, depth, segmentation) | no disponible | no disponible | variable segun autor | Ecosistema diffusers/ComfyUI |
+| thedeoxen/MOSS-Image-segmentation-controlnet | LoRA de control (segmentación) sobre MOSS-Image-SFT | no disponible (repo 0,3 GB) | no disponible | apache-2.0 | Hugging Face, 957 descargas |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo base de generación/edición de imágenes | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| Adaptador oficial de concatenación color/profundidad de MOSS | Adaptador de control oficial | no disponible | no disponible | no disponible | Referenciado en la model card como alternativa distinta |
 
-La informacion disponible no permite comparar metricas de rendimiento con alternativas; la comparativa se limita a tipo de adaptador, licencia y forma de distribucion.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El adaptador esta entrenado y recomendado exclusivamente con OpenMOSS-Team/MOSS-Image-SFT; usarlo con otro modelo base puede degradar el resultado.
-- Requiere fijar el formato de edicion en ai-toolkit en la codificacion positiva y negativa, ya que fue entrenado con cache KV activada.
-- Los mapas de control deben ser de colores planos y solidos; gradientes y texturas confunden las regiones.
-- El color de una region no se traduce al color del resultado: los colores son identificadores de region y el material debe indicarse en el prompt.
-- Los mapas generados con UniFormer se ajustan mejor a estos pesos que los de segmentadores que dejan el fondo en negro.
-- Si el control resulta demasiado rigido, se recomienda bajar la fuerza del LoRA hacia 0,7; el valor entrenado es 1.0.
-- Idioma soportado: unicamente ingles en la metadata del modelo.
-- Riesgo de alucinacion y sesgos: no se documentan en la informacion disponible; al ser un adaptador de imagen, los sesgos dependen del modelo base y de los datos de entrenamiento de este.
-- Licencia apache-2.0 para el adaptador; las restricciones del modelo base deben consultarse en su propia model card.
-- No se documentan limitaciones de contexto ni de longitud de prompt en la informacion disponible.
+- El adaptador está entrenado y recomendado exclusivamente con OpenMOSS-Team/MOSS-Image-SFT; su uso con otros modelos base no está soportado.
+- Requiere configurar el formato de edición `ai-toolkit` en la codificación positiva y negativa, y se entrenó con la caché KV activada; una configuración incorrecta degrada los resultados.
+- Los mapas de control deben tener colores planos y sólidos, completamente rellenos; los degradados y las texturas confunden las regiones.
+- No debe esperarse que el color de una región se convierta en ese color en la imagen resultante: el material debe indicarse en el prompt.
+- Los mapas de UniFormer encajan mejor que los de un segmentador que deja el fondo en negro.
+- Con fuerza de LoRA 1,0 el control puede resultar demasiado rígido; se sugiere bajarla hacia 0,7.
+- Idioma de prompts limitado al inglés según la model card.
+- Riesgo de alucinación visual y de artefactos propios de los modelos generativos; no se documentan sesgos específicos en la información disponible.
+- Licencia Apache 2.0, que permite uso comercial, pero conviene verificar las condiciones del modelo base MOSS-Image-SFT, cuya licencia no se detalla en la información proporcionada.
+- No se han publicado benchmarks ni métricas cuantitativas de calidad o fidelidad al mapa de control.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet
-- Pesos del LoRA: https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet/blob/main/moss_image_sft_segmentation_control_lora.safetensors
-- Workflow de ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet/blob/main/moss_image_segmentation_control.json
+- Modelo en Hugging Face: https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet
+- Pesos (safetensors): https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet/blob/main/moss_image_sft_segmentation_control_lora.safetensors
+- Flujo de trabajo de ComfyUI: https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet/blob/main/moss_image_segmentation_control.json
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

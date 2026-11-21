@@ -2,126 +2,93 @@
 
 ## Resumen
 
-Este repositorio contiene un conjunto de exportaciones a ExecuTorch del modelo SmolLM2-135M-Instruct, preparadas por el usuario experimentalmachines para inferencia local en dispositivos Android arm64. No se trata de un modelo nuevo: es un reempaquetado del modelo de 135 millones de parametros de HuggingFaceTB, cuantizado y compilado en ficheros .pte que se ejecutan con el runtime de ExecuTorch 1.4.0, por ejemplo mediante la aplicacion Android openweights. Cada fichero fija una ventana de contexto concreta (2.048, 4.096, 8.192, 16.384 o 32.768 tokens) y un backend de ejecucion determinado.
+SmolLM2-135M-Instruct-ExecuTorch es una exportación del modelo HuggingFaceTB/SmolLM2-135M-Instruct a formato ExecuTorch (.pte), preparada por el usuario experimentalmachines para inferencia en dispositivo (on-device) en Android. No se trata de un modelo nuevo entrenado desde cero, sino de una compilación cuantizada del modelo base de 135 millones de parámetros de Hugging Face, empaquetada con múltiples backends de ejecución (XNNPACK para CPU, Vulkan para GPU, QNN para NPU de Qualcomm y NeuroPilot para NPU de MediaTek) y distintas ventanas de contexto fijas.
 
-La relevancia del paquete es fundamentalmente practica: cubre tres rutas de aceleracion en movil (CPU con XNNPACK, GPU con Vulkan y NPU MediaTek NeuroPilot sobre MT6991 / Dimensity 9400) y permite escoger el binario en funcion del hardware y de la memoria disponible en el telefono. Los tamanos van de 0,04 GB por fragmento en la NPU a 0,17 GB en la variante Vulkan de 32k, con cuantizaciones 8da4w GPTQ y a16w8.
+El interés de esta ficha radica en que demuestra el flujo de despliegue de un LLM pequeño en hardware móvil de gama alta, con variantes que cubren desde cualquier dispositivo arm64 hasta aceleradores específicos como el Snapdragon 8 Elite (SM8750) y el Dimensity 9400 (MT6991). Cada archivo .pte incorpora una ventana de contexto fija (2k, 4k, 8k, 16k o 32k tokens) y una cuantización 8da4w con GPTQ para los backends XNNPACK y Vulkan, o esquemas híbridos/a16w8 para los backends NPU.
 
-El modelo subyacente sigue siendo un transformer decoder-only de 135 millones de parametros, con las limitaciones de conocimiento, razonamiento y fidelidad propias de esa escala. Su valor esta en el despliegue on-device, no en la calidad de generacion.
+Es relevante ahora porque el ecosistema ExecuTorch 1.5.1 permite ejecutar modelos de lenguaje directamente en teléfonos sin conexión, con tamaños de archivo de entre 0,04 GB y 0,21 GB según backend y ventana, lo que lo hace apto para aplicaciones Android con presupuesto de memoria ajustado (la propia model card menciona un presupuesto de referencia de 5 GB).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, heredada del modelo base SmolLM2-135M-Instruct y exportada a ExecuTorch |
-| Parametros totales | 135 millones (segun el nombre del modelo base) |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | Fija dentro de cada fichero: 2.048, 4.096, 8.192, 16.384 o 32.768 tokens |
-| Tipos de cuantizacion | 8da4w GPTQ (pesos de 4 bits con activaciones dinamicas de 8 bits) en XNNPACK y Vulkan; a16w8 (pesos de 8 bits con activaciones de 16 bits) en MediaTek NeuroPilot |
-| Idiomas soportados | No disponible en la informacion proporcionada |
+| Arquitectura | Transformer decoder-only (heredada de SmolLM2-135M-Instruct) |
+| Parametros totales | 135 millones (modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Fija por archivo: 2.048, 4.096, 8.192, 16.384 o 32.768 tokens (según backend) |
+| Tipos de cuantizacion | 8da4w con GPTQ (XNNPACK, Vulkan); híbrida QNN (Qualcomm); a16w8 (MediaTek NeuroPilot) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | .pte (formato de programa de ExecuTorch) |
-| Backends incluidos | XNNPACK (CPU), Vulkan (GPU), MediaTek NeuroPilot (NPU MT6991) |
-| Runtime minimo | ExecuTorch 1.4.0 |
-| Arquitecturas destino | arm64 (Android); NPU limitada a MediaTek MT6991 (Dimensity 9400) |
-| Tamano del repositorio | 3,3 GB |
-| Modelo base | HuggingFaceTB/SmolLM2-135M-Instruct (revision 12fd25f77366) |
+| Formato de pesos | ExecuTorch (.pte) |
 
 ## Arquitectura y entrenamiento
 
-El modelo exportado es un transformer decoder-only de 135 millones de parametros. El repositorio no modifica la arquitectura del modelo base: se limita a cuantizarlo y compilarlo para distintos backends de ExecuTorch. En el caso de los binarios XNNPACK y Vulkan se emplea una cuantizacion 8da4w con GPTQ (4 bits en los pesos, activaciones dinamicas de 8 bits, segun la convencion habitual de ExecuTorch y TorchAO), mientras que los binarios para NeuroPilot usan a16w8 (8 bits en los pesos, 16 bits en las activaciones). Cada fichero incorpora una ventana de contexto fija en el momento de la exportacion, de modo que el runtime reserva la totalidad del KV cache al cargar el modelo.
+El modelo subyacente es SmolLM2-135M-Instruct, un transformer decoder-only de 135 millones de parámetros desarrollado por Hugging Face. Esta ficha no aporta información sobre la composición del dataset de entrenamiento, el número de tokens vistos ni si hubo etapas de RLHF o DPO en el modelo base; esos detalles deben consultarse en la model card original de HuggingFaceTB/SmolLM2-135M-Instruct.
 
-No se proporciona informacion sobre el proceso de entrenamiento en la model card del export: ni numero de tokens, ni composicion del dataset, ni si hubo etapas de RLHF, DPO u otra forma de alineacion. El modelo base fue entrenado por HuggingFaceTB (SmolLM2-135M-Instruct), pero los detalles de su entrenamiento no figuran en la informacion disponible en este repositorio.
+La innovación técnica de esta exportación reside en el pipeline de compilación a ExecuTorch 1.5.1 y en la segmentación por backend. Los archivos XNNPACK y Vulkan usan cuantización 8da4w con GPTQ (pesos de 4 bits, activaciones de 8 bits), mientras que los de Qualcomm QNN emplean un esquema híbrido y los de MediaTek NeuroPilot usan a16w8 (activaciones de 16 bits, pesos de 8 bits) y se dividen en tres fragmentos (chunk1of3, chunk2of3, chunk3of3) por limitaciones del runtime. La ventana de contexto está fijada dentro del archivo: el runtime reserva la totalidad del KV cache al cargar, por lo que debe elegirse el archivo con la ventana más grande que el dispositivo pueda sostener. Cada carpeta incluye un campo `fits_phone_budget` en su `config.json` como estimación frente a un presupuesto de 5 GB.
 
 ## Capacidades
 
-- Generacion de texto y seguimiento basico de instrucciones, heredados del modelo base en su variante Instruct.
-- Conversacion de uno o pocos turnos con indicaciones sencillas y directas.
-- Generacion de texto corto: continuaciones, respuestas breves, reformulaciones y listas simples.
-- Inferencia completamente local en el dispositivo, sin llamadas a red ni envio de datos a servicios externos.
-- Ejecucion sobre tres backends distintos (CPU arm64, GPU Vulkan y NPU MediaTek MT6991) con el mismo modelo subyacente.
-- No hay soporte documentado de tool calling ni function calling en la informacion disponible.
-- No hay soporte documentado de agentes ni de razonamiento multi-paso.
-- No hay capacidades de vision ni de audio.
-- No se documenta modo de razonamiento extendido (thinking mode).
-- Cobertura multilingue: no disponible en la informacion proporcionada.
+- Generación de texto conversacional e instrucciones, heredadas del modelo Instruct base.
+- Inferencia on-device en Android sin conexión a red.
+- Ejecución sobre CPU arm64 genérica mediante XNNPACK.
+- Aceleración GPU mediante Vulkan en dispositivos arm64 compatibles.
+- Aceleración NPU en Qualcomm Snapdragon 8 Elite (SM8750) mediante QNN HTP.
+- Aceleración NPU en MediaTek Dimensity 9400 (MT6991) mediante NeuroPilot.
+- Selección de ventana de contexto según memoria disponible (2k a 32k en CPU/GPU; 2k a 8k en QNN; 2k a 8k en MediaTek).
+- Integración con la aplicación Android openweights y con cualquier runtime ExecuTorch 1.5.1.
+- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Autocompletado de texto en teclados Android: con el fichero XNNPACK de 2.048 tokens basta para el contexto de un mensaje corto, y sus 0,11 GB permiten ejecutarlo en CPU sin depender de la GPU ni de la NPU.
-- Clasificacion y etiquetado de texto en el dispositivo: categorizar notificaciones, correos o mensajes entrantes con prompts de formato fijo, aprovechando que no hay coste de red ni exposicion de datos.
-- Asistente conversacional offline en aplicaciones Android: la app openweights o cualquier integracion con ExecuTorch 1.4.0 puede ofrecer un chat de demostracion que funciona sin conectividad.
-- Generacion de textos muy cortos en flujos creativos o de marketing: esloganes, pies de foto, titulares y variaciones breves de una frase semilla.
-- Reescritura y normalizacion de frases: cambiar el tono, corregir mayusculas o reformatear una linea de texto antes de mostrarla en la interfaz.
-- Prototipado y evaluacion de backends ExecuTorch: sirve como banco de pruebas para medir XNNPACK frente a Vulkan y NeuroPilot antes de portar modelos de mayor tamano al mismo pipeline.
-- Escenarios con requisitos estrictos de privacidad: al ejecutarse integramente en el telefono, el contenido del usuario no sale del dispositivo.
-- Aplicaciones sin conectividad: entornos industriales, zonas rurales o modos avion donde no hay acceso a modelos en la nube.
-- Validacion de integracion en CI de proyectos Android: los ficheros .pte permiten comprobar que el runtime carga y genera tokens correctamente antes de publicar una version.
-
-Conviene ser realista: por su escala, este modelo no es adecuado para razonamiento complejo, generacion de codigo en produccion, matematicas, tareas de agentes ni resumenes largos y fieles.
+- Asistentes de texto offline en Android: el modelo puede ejecutarse íntegramente en el dispositivo con XNNPACK y un archivo de 0,11 GB, ofreciendo generación de texto sin conexión para aplicaciones de notas, correo o chat básico.
+- Autocompletado y sugerencias en teclados móviles: con ventanas de 2k o 4k tokens y un footprint de 0,11 GB, encaja en el presupuesto de memoria de un teclado que necesita respuestas de baja latencia.
+- Clasificación y etiquetado de texto en el borde: al ser un modelo Instruct pequeño, puede usarse para tareas de extracción o categorización de mensajes sin enviar datos a la nube, útil por privacidad.
+- Prototipado de aplicaciones ExecuTorch: sirve como referencia para validar pipelines de exportación y despliegue en los backends XNNPACK, Vulkan, QNN y NeuroPilot antes de pasar a modelos mayores.
+- Demostraciones de inferencia acelerada por NPU: los archivos QNN para SM8750 y NeuroPilot para MT6991 permiten evaluar el rendimiento de LLMs en aceleradores móviles de gama alta.
+- Educación y experimentación: al ser Apache 2.0 y de tamaño reducido, es adecuado para cursos y talleres sobre despliegue de modelos en dispositivos.
+- Pruebas de integración en CI para apps Android: los archivos .pte de 0,04 a 0,21 GB permiten incluir pruebas de humo de generación de texto en pipelines automatizados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio solo incluye los resultados de las pruebas de humo (smoke test) realizadas durante la exportacion, resumidos en la siguiente tabla.
-
-| Backend | Destino | Ventana (tokens) | Tamano | Resultado de la prueba |
-|---|---|---|---|---|
-| XNNPACK (CPU) | Cualquier arm64 | 2.048 | 0,11 GB | Superada (respuesta "Paris") |
-| XNNPACK (CPU) | Cualquier arm64 | 4.096 | 0,11 GB | Superada (respuesta "Paris") |
-| XNNPACK (CPU) | Cualquier arm64 | 8.192 | 0,11 GB | Superada (respuesta "Paris") |
-| XNNPACK (CPU) | Cualquier arm64 | 16.384 | 0,11 GB | Superada (respuesta "Paris") |
-| XNNPACK (CPU) | Cualquier arm64 | 32.768 | 0,12 GB | Superada (respuesta "Paris") |
-| Vulkan (GPU) | Cualquier arm64 con Vulkan | 2.048 | 0,13 GB | Solo verificacion estructural |
-| Vulkan (GPU) | Cualquier arm64 con Vulkan | 4.096 | 0,14 GB | Solo verificacion estructural |
-| Vulkan (GPU) | Cualquier arm64 con Vulkan | 8.192 | 0,14 GB | Solo verificacion estructural |
-| Vulkan (GPU) | Cualquier arm64 con Vulkan | 16.384 | 0,15 GB | Solo verificacion estructural |
-| Vulkan (GPU) | Cualquier arm64 con Vulkan | 32.768 | 0,17 GB | Solo verificacion estructural |
-| NeuroPilot | MT6991 (Dimensity 9400) | 2.048 | 0,15 GB (3 fragmentos) | Solo verificacion estructural |
-| NeuroPilot | MT6991 (Dimensity 9400) | 4.096 | 0,15 GB (3 fragmentos) | Solo verificacion estructural |
-| NeuroPilot | MT6991 (Dimensity 9400) | 8.192 | 0,15 GB (3 fragmentos) | Solo verificacion estructural |
-| NeuroPilot | MT6991 (Dimensity 9400) | 16.384 | 0,17 GB (3 fragmentos) | Solo verificacion estructural |
-
-No hay cifras publicadas de latencia, tokens por segundo ni consumo energetico.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta pruebas de humo (smoke tests): los archivos XNNPACK superaron la prueba generando "Paris"; los archivos Vulkan, QNN y MediaTek fueron únicamente verificados estructuralmente, sin runtime NPU en el host de compilación.
 
 ## Requisitos de hardware
 
-- Inferencia en dispositivo, no en servidor: todos los ficheros estan compilados para arm64 y requieren un runtime ExecuTorch 1.4.0.
-- XNNPACK (CPU): funciona en cualquier dispositivo arm64. Ocupa entre 0,11 y 0,12 GB en disco y no necesita GPU ni NPU.
-- Vulkan (GPU): requiere un dispositivo arm64 con soporte Vulkan. Ocupa entre 0,13 y 0,17 GB.
-- MediaTek NeuroPilot: exclusivo de la NPU MT6991 (Dimensity 9400). Cada ventana se distribuye en tres fragmentos .pte que suman entre 0,15 y 0,17 GB.
-- Memoria: el runtime reserva el KV cache completo al cargar el modelo, por lo que conviene escoger la ventana mas grande que el dispositivo pueda sostener. El campo `fits_phone_budget` de cada `config.json` es la estimacion del autor contra un presupuesto de 5 GB.
-- VRAM: no aplica el concepto de VRAM de GPU de escritorio, ya que el destino es un SoC movil con memoria compartida. No se proporcionan cifras de memoria por backend.
-- No cabe plantear despliegue en A100, H100 o RTX 4090: el formato .pte esta pensado para movil y no se distribuye una version de servidor en este repositorio.
-- Opciones de despliegue: aplicacion openweights para Android o cualquier runtime ExecuTorch 1.4.0. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que no consumen ficheros .pte.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM/RAM estimada: entre 0,04 GB y 0,21 GB por archivo .pte, más la reserva del KV cache completa al cargar (dependiente de la ventana elegida). El repo completo ocupa 5,2 GB.
+- CPU: cualquier dispositivo arm64 para los archivos XNNPACK.
+- GPU: cualquier dispositivo arm64 con soporte Vulkan para los archivos Vulkan.
+- NPU Qualcomm: Snapdragon 8 Elite (SM8750) para los archivos QNN.
+- NPU MediaTek: Dimensity 9400 (MT6991) para los archivos NeuroPilot.
+- No aplica a GPU de escritorio (A100, H100, RTX 4090): el formato .pte está orientado a móvil y no se documenta despliegue en esas plataformas.
+- Opciones de despliegue: runtime ExecuTorch 1.5.1 y la app Android openweights. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Dentro del propio repositorio se pueden comparar las tres rutas de ejecucion, que comparten modelo y cuantizacion de base pero difieren en backend, ventana y tamano.
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| SmolLM2-135M-Instruct-ExecuTorch | 135 M | 2k-32k (fijo por archivo) | .pte | Apache 2.0 | On-device Android con múltiples backends |
+| SmolLM2-135M-Instruct (base) | 135 M | no disponible en esta ficha | safetensors | Apache 2.0 | Modelo original para servidor/GPU |
+| Otras exportaciones ExecuTorch de SmolLM2 | 135 M | no disponible | .pte | Apache 2.0 | No se dispone de datos comparativos en la información proporcionada |
 
-| Variante | Backend | Destino | Ventana | Tamano | Cuantizacion | Validacion |
-|---|---|---|---|---|---|---|
-| XNNPACK | CPU | Cualquier arm64 | 2k a 32k | 0,11-0,12 GB | 8da4w GPTQ | Prueba de humo superada |
-| Vulkan | GPU | Cualquier arm64 con Vulkan | 2k a 32k | 0,13-0,17 GB | 8da4w | Solo estructura |
-| NeuroPilot | NPU | MT6991 (Dimensity 9400) | 2k a 16k | 0,15-0,17 GB | a16w8 | Solo estructura |
-
-Respecto al modelo de origen, la diferencia principal es el formato y el destino: SmolLM2-135M-Instruct se distribuye en pesos PyTorch/safetensors para ejecucion en CPU o GPU convencionales, mientras que estas exportaciones solo funcionan en el runtime de ExecuTorch sobre arm64. No se dispone de datos de rendimiento comparativos frente a otras alternativas de la misma categoria en la informacion proporcionada.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de esta exportación con alternativas.
 
 ## Limitaciones y advertencias
 
-- Con 135 millones de parametros, la tasa de alucinacion es alta en preguntas factuales y el modelo no sostiene razonamiento de varios pasos, matematicas ni codigo de calidad.
-- La ventana de contexto esta fijada dentro de cada fichero .pte. No se puede ampliar en tiempo de ejecucion: hay que cargar otro binario.
-- El runtime reserva el KV cache completo al cargar el modelo, de modo que elegir una ventana grande consume memoria desde el primer token, independientemente del uso real.
-- Las pruebas de humo solo se superaron en los ficheros XNNPACK (prompt con respuesta "Paris"). Los binarios Vulkan y NeuroPilot unicamente se verificaron a nivel estructural, sin ejecucion real, porque no habia runtime de NPU en la maquina de exportacion.
-- La ruta NeuroPilot esta restringida al chip MT6991 (Dimensity 9400) y requiere cargar tres fragmentos por ventana.
-- La lista de idiomas soportados no esta documentada en el repositorio; el comportamiento multilingue no puede darse por garantizado.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar tambien la licencia y las condiciones del modelo base SmolLM2-135M-Instruct del que deriva.
-- El repositorio ocupa 3,3 GB, muy por encima del tamano de cada binario individual, por lo que conviene descargar solo los ficheros necesarios.
-- El modelo tiene 108 descargas y 0 likes en Hugging Face, lo que indica una validacion muy limitada por parte de la comunidad.
-- No se ofrecen garantias de precision en produccion: cualquier integracion deberia incluir filtros, validacion de salida y expectativas de calidad ajustadas a la escala del modelo.
+- El modelo base de 135 M tiene capacidad limitada de razonamiento y conocimiento factual; es propenso a errores y alucinaciones en tareas complejas.
+- La ventana de contexto es fija por archivo y el KV cache se reserva completo al cargar; elegir una ventana mayor de la que el dispositivo soporta puede provocar fallos de memoria.
+- Los archivos Vulkan, QNN y MediaTek solo han sido verificados estructuralmente, no ejecutados en hardware real durante la compilación; su funcionamiento en dispositivo no está validado en la model card.
+- Los archivos MediaTek están fragmentados en tres partes y requieren el runtime NeuroPilot adecuado.
+- No se documentan idiomas soportados ni sesgos conocidos; debe consultarse la model card del modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base y de las dependencias de ExecuTorch.
+- No apto para cargas de producción en servidor: el formato .pte y los backends están orientados exclusivamente a Android.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/SmolLM2-135M-Instruct-ExecuTorch
-- Modelo base SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
-- Aplicacion openweights para Android: https://github.com/alpharomercoma/openweights
-- Runtime ExecuTorch (documentacion y repositorio): https://github.com/pytorch/executorch
+- Hugging Face: https://huggingface.co/experimentalmachines/SmolLM2-135M-Instruct-ExecuTorch
+- Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
+- App openweights: https://github.com/alpharomercoma/openweights
+- ExecuTorch: no disponible en la información proporcionada
+- Paper: no disponible en la información proporcionada
+- Blog o demo: no disponible en la información proporcionada

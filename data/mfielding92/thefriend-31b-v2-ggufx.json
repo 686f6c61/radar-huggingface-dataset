@@ -39,7 +39,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:41:07.276Z",
-  "removal_pattern": "account_gone",
+  "removal_pattern": "author_purge",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 914,
+  "downloads_30d": 928,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
@@ -38,19 +38,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Adapter-to-merged greedy equivalence",
-      "dataset": "ReceiptAgent v2 owner-run chat-template prompts",
-      "metric": "Greedy-output exact-match rate (5/5)",
-      "value": 1
-    },
-    {
-      "task": "Adapter-to-merged greedy equivalence",
-      "dataset": "ReceiptAgent v2 owner-run chat-template prompts",
-      "metric": "Exact matching outputs",
-      "value": 5
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

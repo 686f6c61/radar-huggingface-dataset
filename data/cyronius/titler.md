@@ -2,86 +2,115 @@
 
 ## Resumen
 
-El modelo **titler** es un generador de títulos a partir del primer mensaje de una conversación de chat, desarrollado por Cyronius (Cyrus Attoun). Se trata de un modelo T5 de 7,61 millones de parámetros, entrenado desde cero mediante destilación, con el objetivo de ser extremadamente ligero y eficiente para ejecutarse en el navegador, Node.js o Python sin necesidad de GPU ni llamadas a API. Su tamaño es de aproximadamente 10,3 MB en formato int8 ONNX, y genera títulos de 3 a 8 palabras en unos 100-160 ms en una CPU de portátil convencional.
+titler es un modelo minúsculo especializado en una única tarea: convertir un prompt de usuario en un título corto de 3 a 8 palabras en formato Title Case. Lo desarrolla Cyronius y se publica en Hugging Face bajo licencia Apache 2.0 (con doble licencia MIT/Apache 2.0 según la model card). No es un modelo de propósito general: no resume, no traduce y no responde preguntas; su función es generar etiquetas legibles para conversaciones, hilos o historiales de chat.
 
-El modelo está diseñado para resolver el problema de etiquetar automáticamente conversaciones de chat, sentencias SQL, documentos pegados, errores y logs, entre otros. Su relevancia radica en que ofrece una alternativa de tamaño reducido frente a modelos pequeños de propósito general (de cientos de MB) para una tarea muy específica, lo que permite su despliegue en entornos con recursos limitados, como dispositivos edge o aplicaciones cliente. Está licenciado bajo Apache 2.0 y soporta únicamente inglés.
+El repositorio contiene dos generaciones. La v2 es un modelo con arquitectura Llama de 8 capas, vocabulario de 4.352 tokens y 5,84 millones de parámetros, distribuido como GGUF Q4_K_M de 4,1 MB. La v1.5, conservada por compatibilidad, es un T5 encoder-decoder de 3+3 capas, vocabulario de 8.192 tokens y 7,61 millones de parámetros (el dato de safetensors del repositorio, 7.606.784), con variantes ONNX y GGUF.
 
-## Especificaciones técnicas
+Su relevancia está en el extremo opuesto a los modelos grandes: inferencia en CPU, offline, sin telemetría, con unos 25 MB de memoria tras la carga y latencias de decenas de milisegundos. Está pensado para integrarse en aplicaciones de escritorio, extensiones de navegador o servicios ligeros donde no tiene sentido invocar un LLM de miles de millones de parámetros solo para titular una conversación.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | T5 (encoder-decoder) |
-| Parametros totales | 7.606.784 (7,61 M) |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | 512 tokens (según el código de ejemplo) |
-| Tipos de cuantizacion | int8 ONNX, GGUF (f16, q8_0, q6_k, q4_0) |
-| Idiomas soportados | Inglés (best-effort para otros) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, ONNX, GGUF |
+| Arquitectura | v2: Llama (decoder-only), 8 capas. v1.5: T5 encoder-decoder, 3+3 capas |
+| Parametros totales | v2: 5,84 M. v1.5: 7,61 M (7.606.784 en safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | v2: lee los primeros 256 tokens de entrada (unos 1.000 caracteres en inglés). v1.5: truncado a 512 tokens en el ejemplo de uso |
+| Tipos de cuantizacion | v2: Q4_K_M. v1.5: F16, Q8_0, Q6_K, Q4_0 (GGUF) e int8 (ONNX) |
+| Idiomas soportados | inglés únicamente (el resto de idiomas no está soportado) |
+| Licencia | Apache 2.0 (doble licencia MIT o Apache 2.0, a elección) |
+| Formato de pesos | v2: GGUF. v1.5: safetensors, ONNX y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura T5 (Text-to-Text Transfer Transformer), un modelo encoder-decoder de la familia Transformer. Ha sido entrenado desde cero mediante destilación, utilizando como profesor un modelo más grande (no especificado en la información disponible). Los datos de entrenamiento provienen de los datasets allenai/WildChat-1M, OpenAssistant/oasst2, lmsys/chatbot_arena_conversations y lmsys/lmsys-chat-1m, que contienen conversaciones de chat reales. El proceso de destilación permite transferir el conocimiento del modelo profesor a este modelo compacto, manteniendo un rendimiento adecuado para la tarea de generación de títulos.
+La v2 es un transformer decoder-only con la arquitectura Llama estándar, 8 capas, vocabulario de 4.352 tokens y cuantización Q4_K_M. Al ser un GGUF convencional, cualquier runtime basado en llama.cpp puede cargarlo, aunque el autor advierte que los resultados medidos dependen de su motor `titler`, que aporta la tokenización, la búsqueda por haces (beam search) y la limpieza posterior del título. Sin ese motor hay que implementar tokenización y postprocesado propios, y los títulos diferirán de los reportados. La generación usa por defecto 4 haces; con 1 haz el tiempo se reduce aproximadamente a la mitad con una calidad algo inferior.
 
-No se mencionan innovaciones técnicas específicas más allá de la destilación y la optimización para inferencia en edge. El modelo está disponible en formatos ONNX (int8) y GGUF, lo que facilita su ejecución en diferentes entornos.
+El entrenamiento de la v1.5 se hizo desde cero sobre unas 481.000 parejas prompt → título. Para la v2, los prompts (sin las respuestas del modelo) provienen de WildChat, OpenAssistant (oasst2), Chatbot Arena y LMSYS-Chat-1M, con una etapa de texto general usando FineWeb-Edu. Los títulos de entrenamiento los generó Qwen3-14B, y OpenAI gpt-6-luna escribió unos miles adicionales. Se eliminaron las filas con contenido sexual que involucra a menores. No se documentan en la información disponible detalles sobre RLHF, DPO ni el número total de tokens de entrenamiento.
 
 ## Capacidades
 
-- Generación de títulos de 3 a 8 palabras a partir del primer mensaje de una conversación de chat.
-- Etiquetado de sentencias SQL, asignando títulos descriptivos a consultas de bases de datos.
-- Etiquetado de documentos pegados, como notas markdown, README, PRDs, changelogs y párrafos de prosa.
-- Etiquetado de errores y logs, generando títulos temáticos para trazas de pila y registros.
-- Detección pasiva de prompt-injection: al ser un modelo encoder-decoder pequeño, no sigue instrucciones maliciosas, sino que las titula (por ejemplo, "Ignore Previous Instructions and System Prompt").
-- Soporte de generación con beam search (num_beams=2) y sin repetición de n-gramas.
-- Ejecución en navegador, Node.js y Python mediante transformers.js y ONNX Runtime.
+- Generación de títulos cortos (3 a 8 palabras) en Title Case a partir de un prompt.
+- Salida determinista: la misma entrada produce siempre la misma salida.
+- Procesamiento de los primeros 256 tokens del texto de entrada, suficiente para prompts típicos de chat.
+- Inferencia en CPU, offline y sin telemetría, con unos 25 MB de memoria tras la carga.
+- Distribución multiplataforma mediante el motor `titler`: crate de Rust, biblioteca C (C, C++, C#, Go, Swift, Java), wheel de Python, paquete npm `titler-wasm` y comando de shell.
+- Ejecución en navegador mediante WebAssembly (v2) y mediante Transformers.js con backend WASM (v1.5, pipeline `text2text-generation`).
+- No soporta tool calling, function calling, razonamiento multi-paso, visión ni audio.
+- No es multilingüe: solo inglés.
 
 ## Casos de uso
 
-- **Titulación automática de conversaciones en aplicaciones de chat**: el modelo puede etiquetar cada conversación con un título corto y descriptivo, mejorando la navegación en el historial. Su bajo coste computacional permite ejecutarlo en el cliente sin enviar datos a un servidor.
-- **Etiquetado de consultas SQL en herramientas de bases de datos**: al pegar o ejecutar una consulta, el modelo genera un título como "SQL Query for Revenue Customer Orders", facilitando la organización de consultas guardadas.
-- **Organización de documentos en gestores de notas**: al pegar un documento (README, PRD, changelog), el modelo genera un título temático, útil para sistemas de archivo automático.
-- **Clasificación de errores y logs en sistemas de monitorización**: el modelo convierte trazas de pila y mensajes de log en títulos concisos, ayudando a identificar problemas rápidamente.
-- **Etiquetado de mensajes en foros o sistemas de soporte**: el primer mensaje de un hilo puede titularse automáticamente para mejorar la indexación y búsqueda.
-- **Prevención de prompt-injection en sistemas de chat**: al titular mensajes que contienen intentos de inyección, el modelo no los ejecuta, sino que los describe, actuando como una capa de seguridad pasiva.
+- Titulado automático de conversaciones en asistentes de chat: al abrir un hilo nuevo, el modelo genera una etiqueta legible a partir del primer mensaje del usuario en decenas de milisegundos, sin coste de API ni envío de datos a terceros.
+- Historiales y barras laterales de aplicaciones de mensajería: permite nombrar sesiones de forma consistente y determinista, de modo que la misma conversación conserva siempre el mismo título entre recargas.
+- Extensiones de navegador y aplicaciones web: la variante WebAssembly ejecuta el modelo localmente en el cliente (50–175 ms típicos), lo que encaja con requisitos de privacidad estrictos.
+- Organización de registros de soporte técnico: titula tickets o correos a partir de la primera línea del usuario para facilitar el triaje y la búsqueda en paneles internos.
+- Etiquetado de datasets y logs de conversación: al procesar lotes de prompts de forma offline, genera títulos homogéneos para anotar o indexar grandes volúmenes de interacciones.
+- Aplicaciones de escritorio y utilidades CLI: la biblioteca C, el crate de Rust o el comando de shell permiten integrar el titulado en herramientas nativas sin dependencias de Python ni GPU.
+- Prototipado y demos educativas: con 4,1 MB y arquitectura Llama estándar, sirve para ilustrar pipelines de inferencia en CPU, cuantización GGUF y despliegue WASM.
 
 ## Benchmarks y rendimiento
 
-El modelo incluye una evaluación en un conjunto de prueba de 100 prompts, comparando diferentes cuantizaciones GGUF contra el baseline fp16. Los resultados de ROUGE-L frente al modelo profesor son:
+| Metrica | v2 | v1.5 |
+|---|---|---|
+| Victoria en comparación por pares frente a v1.5 | ~65% de los pares con ganador | referencia |
+| ROUGE-L frente al profesor | no disponible | 0,513 |
+| Cumplimiento de formato | no disponible | 99,8% |
+| Latencia en llama.cpp (4 haces) | 18 ms típica; 48 ms en el 5% más lento | no disponible |
+| Latencia nativa en Rust, un hilo | 40–70 ms típica; 200–275 ms en el 5% más lento | no disponible |
+| Latencia en navegador (WebAssembly) | 50–175 ms | no disponible |
+| Latencia en CPU (int8 ONNX) | no disponible | ~160–220 ms |
 
-| Cuantización | Tamaño | ROUGE-L vs teacher | Salidas diferentes de f16 |
-|---|---|---|---|
-| f16 (baseline) | 15,4 MB | 0,484 | — |
-| q8_0 (recomendado) | 8,3 MB | 0,485 | 6/100 (solo paráfrasis) |
-| q6_k | 6,4 MB | 0,490 | 11/100 (solo paráfrasis) |
-| q4_0 | 5,0 MB | 0,465 | 29/100 (paráfrasis, artefactos y algunos cambios de tema) |
+Rendimiento de las cuantizaciones GGUF de la v1.5 frente a la línea base F16 en un conjunto de 100 prompts reservados (greedy, temperatura 0):
 
-Además, el tiempo de inferencia es de aproximadamente 100-160 ms por título en una CPU de portátil convencional, con el modelo int8 ONNX. No se proporcionan benchmarks estándar como MMLU o HumanEval, ya que el modelo no está diseñado para tareas generales.
+| Cuantizacion | Tamano | ROUGE-L vs profesor | Salidas distintas de F16 |
+|---|---:|---:|---|
+| F16 | 15,4 MB | 0,484 | línea base |
+| Q8_0 | 8,3 MB | 0,485 | 6/100, solo paráfrasis |
+| Q6_K | 6,4 MB | 0,490 | 11/100, solo paráfrasis |
+| Q4_0 | 5,0 MB | 0,465 | 29/100, mayoritariamente paráfrasis, algunas desviaciones de tema |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM**: no requiere GPU; puede ejecutarse en CPU. El modelo int8 ONNX ocupa 10,3 MB, por lo que cabe en cualquier dispositivo con memoria suficiente.
-- **GPU recomendadas**: no aplica, aunque puede ejecutarse en GPU si se desea, pero no es necesario.
-- **Compatibilidad con GPU de consumo**: sí, cualquier GPU moderna puede ejecutarlo, pero no es necesario.
-- **Opciones de despliegue**: transformers.js (navegador, Node.js), ONNX Runtime (Python), llama.cpp (GGUF), Lemonade (según la búsqueda web).
-- **Latencia**: ~100-160 ms por título en CPU de portátil; con beam search (num_beams=2) se añaden ~150 ms adicionales.
-- **Throughput**: no se especifica, pero dado el tamaño, puede procesar múltiples títulos por segundo en CPU.
+- VRAM: no requiere GPU; la inferencia está pensada para CPU.
+- Memoria: unos 25 MB tras la carga del modelo v2.
+- Tamaño en disco: 4,1 MB para el GGUF Q4_K_M de la v2; 5–15 MB para los artefactos de la v1.5 (10,3 MB el ONNX int8, 15,4 MB el GGUF F16).
+- GPU recomendadas: no aplica; cualquier GPU sería sobredimensionada para este modelo.
+- Cabe en cualquier GPU de consumo y en dispositivos de gama baja, pero su uso previsto es CPU.
+- Despliegue: llama.cpp (recomendado para la v2 y para la v1.5), ONNX Runtime con Optimum para la v1.5, Transformers.js con backend WASM en navegador o Node, y el motor `titler` (Rust, C, Python, npm, CLI).
+- LM Studio y Ollama no ejecutan correctamente el modelo T5 de la v1.5; para esa versión hay que usar llama.cpp.
+- Latencia: 18 ms típica y 48 ms en el percentil 95 más lento con llama.cpp; 50–175 ms en navegador con WebAssembly.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos directamente comparables en la documentación proporcionada. Sin embargo, se puede mencionar que, frente a modelos pequeños de propósito general como DistilBERT o TinyBERT, este modelo está especializado en generación de títulos y es mucho más ligero. No obstante, al no tener datos de comparación, se indica "no disponible".
+| Modelo | Parametros | Contexto | Tarea | Licencia | Notas |
+|---|---|---|---|---|---|
+| Cyronius/titler v2 | 5,84 M | 256 tokens de entrada | Titulado de prompts | MIT/Apache 2.0 | GGUF de 4,1 MB, CPU, determinista |
+| Cyronius/titler v1.5 | 7,61 M | 512 tokens (truncado en el ejemplo) | Titulado de prompts | MIT/Apache 2.0 | T5, ONNX y GGUF, ~160–220 ms en CPU int8 |
+| LLM de propósito general (p. ej. Qwen3-14B) | miles de millones | miles de tokens | Múltiple, incluido titulado | variable | Usado aquí como profesor para generar títulos; coste y latencia muy superiores |
+| Modelos T5 pequeños tipo t5-small | ~60 M | 512 tokens | Traducción, resumen, generación | Apache 2.0 | 10 veces más parámetros y sin especialización en titulado |
+
+No se dispone de comparaciones publicadas con otros modelos específicos de generación de títulos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Idioma**: solo soporta inglés de forma fiable; otros idiomas se procesan con calidad limitada (best-effort).
-- **Longitud de salida**: limitado a títulos de 3-8 palabras; no es adecuado para resúmenes abstractivos más largos.
-- **Riesgo de alucinación**: al ser un modelo pequeño, puede generar títulos plausibles pero incorrectos en algunos casos, especialmente con entradas ambiguas.
-- **Sensibilidad a la decodificación**: con greedy decoding, puede producir palabras corruptas en la cuantización int8; se recomienda usar beam search (num_beams=2).
-- **Cuantización q4_0**: puede degradar la calidad, con cambios de tema en aproximadamente 1 de cada 3 casos; solo recomendada si el tamaño es crítico.
-- **Licencia**: Apache 2.0 permite uso comercial, pero se debe mantener la atribución.
-- **Sin soporte para WebGPU**: en transformers.js, la cuantización q8 para seq2seq no es compatible con WebGPU; usar backend WASM.
+- Solo titula: no resume, no traduce y no responde preguntas.
+- Solo inglés; otros idiomas no están soportados.
+- Lee únicamente los primeros 256 tokens de entrada, por lo que prompts largos o con contexto relevante al final pueden producir títulos pobres.
+- Entradas difíciles, como logs pegados o frases vagas de una línea, generan títulos peores que los prompts ordinarios.
+- Puede omitir apóstrofos en posesivos (por ejemplo, "Nick Wildes Judy Hopp Dialog Line"); ocurrió en 1 de 1.064 títulos evaluados.
+- Riesgo de alucinación bajo en la práctica por la naturaleza de la tarea, pero puede introducir temas o términos no presentes en la entrada cuando el prompt es ambiguo.
+- La calidad medida depende del motor `titler`; usar el GGUF directamente con otra tokenización o sin limpieza produce resultados distintos a los reportados.
+- La v1.5 no funciona correctamente en LM Studio ni en Ollama; requiere llama.cpp.
+- Licencia permisiva (MIT o Apache 2.0), sin restricciones conocidas para uso comercial; los datasets de entrenamiento no se redistribuyen en el repositorio y sus licencias se detallan en NOTICE.md.
+- El modelo se publicó con fecha de creación 2026-08-31 y actualización 2026-10-20 según los metadatos del repositorio.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/Cyronius/titler)
-- [Perfil del autor en Hugging Face](https://huggingface.co/Cyronius)
-- [Datasets del autor](https://huggingface.co/Cyronius/datasets)
+- Hugging Face: https://huggingface.co/Cyronius/titler
+- Código fuente, aplicaciones y documentación: https://github.com/Cyronius/model-experiments/tree/main/titler
+- Demo en navegador (WebAssembly): https://cyronius.github.io/model-experiments/titler/
+- Guía de integración del motor: https://github.com/Cyronius/model-experiments/blob/main/titler/app/EMBEDDING.md
+- Historial de experimentos: https://github.com/Cyronius/model-experiments/blob/main/titler/EXPERIMENTS.md
+- Releases (biblioteca C, wheel de Python, npm, CLI): https://github.com/Cyronius/model-experiments/releases

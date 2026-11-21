@@ -5,7 +5,7 @@
   "author": "KINOQ",
   "url": "https://huggingface.co/KINOQ/gemma-4-26B-A4B-it-XeFP4",
   "created_at": "2026-11-17T14:10:45.000Z",
-  "updated_at": "2026-11-17T14:17:33.000Z",
+  "updated_at": "2026-11-20T05:33:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

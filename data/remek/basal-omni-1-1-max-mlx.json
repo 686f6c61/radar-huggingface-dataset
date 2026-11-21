@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 873,
+  "downloads_30d": 866,
   "trending_score": 0,
   "parameters": 11907350272,
   "parameters_human": "11.91B",
@@ -59,16 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Remek/basal-omni-1.1-max-MLX · Hugging Face",
-      "url": "https://huggingface.co/Remek/basal-omni-1.1-max-MLX",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Remek/basal-omni-1.1-max · Hugging Face",
-      "url": "https://huggingface.co/Remek/basal-omni-1.1-max",
-      "snippet": "It is better at the tasks and slightly behind 1.0-max on general decisions, so basal-omni-1.0-max stays the default model; use 1.1-max when the tasks are your main use, and check it on your own data."
-    }
-  ]
+  "sources": []
 }

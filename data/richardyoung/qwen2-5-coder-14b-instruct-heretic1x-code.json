@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Authorization - Telegram",
-      "url": "https://my.telegram.org/apps",
-      "snippet": "Sign in to Telegram Core Manage your API apps or delete your account. We’ll send a code to your Telegram app, not by SMS."
-    },
-    {
-      "title": "Login",
-      "url": "https://core.telegram.org/blackberry/login",
-      "snippet": "After the Intro, users arrive on the login page, where they are invited to enter their mobile phone number and country code…"
-    }
-  ]
+  "sources": []
 }

@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "The Official Sonder Wiki! - Fandom",
-      "url": "https://www.fandom.com/articles/226-the-official-sonder-wiki",
-      "snippet": "Mar 5, 2014 · When information becomes available, the Official Sonder Wiki will be the community compendium for hosting …"
-    },
-    {
-      "title": "Games - Fandom",
-      "url": "https://www.fandom.com/topics/games",
-      "snippet": "4 days ago · The entertainment site where fans come first. Your daily source for all things TV, movies, and games, including Star …"
-    },
-    {
-      "title": "Movies - Fandom",
-      "url": "https://www.fandom.com/topics/movies",
-      "snippet": "4 days ago · The entertainment site where fans come first. Your daily source for all things TV, movies, and games, including Star …"
-    },
-    {
-      "title": "PC Gaming | Fandom",
-      "url": "https://www.fandom.com/topics/pc-gaming",
-      "snippet": "Oct 13, 2026 · The entertainment site where fans come first. Your daily source for all things TV, movies, and games, including Star …"
-    },
-    {
-      "title": "TV - Fandom",
-      "url": "https://www.fandom.com/topics/tv",
-      "snippet": "4 days ago · The entertainment site where fans come first. Your daily source for all things TV, movies, and games, including Star …"
-    }
-  ]
+  "sources": []
 }

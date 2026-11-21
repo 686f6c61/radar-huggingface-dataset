@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "kazzy1337/qwen3.8-27b-turbo-fable-cold-fusion-735-slim-56L-w12288",
+  "slug": "kazzy1337-qwen3-8-27b-turbo-fable-cold-fusion-735-slim-56l-w12288",
+  "author": "kazzy1337",
+  "url": "https://huggingface.co/kazzy1337/qwen3.8-27b-turbo-fable-cold-fusion-735-slim-56L-w12288",
+  "created_at": "2026-11-21T00:50:02.000Z",
+  "updated_at": "2026-11-21T00:55:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19908559792,
+  "parameters_human": "19.91B",
+  "storage_bytes": 39840010687,
+  "storage_human": "39.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "muse-models/Muse-Prompt-Shield-1-50M",
+  "renamed_at": "2026-11-21T04:03:19.539Z",
   "benchmarks": [],
   "sources": []
 }

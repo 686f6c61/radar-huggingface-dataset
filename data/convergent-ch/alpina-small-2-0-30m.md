@@ -2,89 +2,91 @@
 
 ## Resumen
 
-Alpina Small 2.0 (Alpa) es un modelo de lenguaje denso de tipo Llama, con 29.699.712 parámetros, desarrollado por Convergent y publicado como versión experimental de investigación. Se ha entrenado desde pesos aleatorios (no es un fine-tuning de un modelo base existente) y se distribuye con pesos completos en Safetensors, así como en formato GGUF F16. Su propósito declarado es servir como release de investigación con evaluación muy limitada, orientado a conversación en inglés.
+Alpina Small 2.0 (Alpa) es un modelo de lenguaje denso de tipo Llama, con 29.699.712 parámetros, desarrollado por Convergent (Convergent-ch) y entrenado **desde pesos aleatorios**, no mediante fine-tuning sobre un modelo base preexistente. Se distribuye con licencia Apache 2.0 y pesos completos en Safetensors, además de una cuantización F16 en GGUF para su uso con Ollama. Su orientación es exclusivamente experimental y de investigación.
 
-La relevancia del modelo es acotada y de carácter experimental: se trata de un modelo de escala muy reducida (aproximadamente 30 millones de parámetros), pensado para explorar el entrenamiento desde cero con datos de instrucción y conversacionales, no para competición con modelos de producción. La propia model card advierte que las respuestas no relacionadas con la identidad muestran repeticiones y errores factuales, y que no se ha superado ni reclamado ningún benchmark de código.
+El modelo está pensado como una release de investigación con evaluación muy limitada. La propia model card advierte de que las respuestas no relacionadas con la identidad muestran repeticiones y errores factuales, y que la utilidad general es reducida. No se ha superado ni reclamado ningún benchmark de código. Por tanto, su relevancia no reside en el rendimiento, sino en servir como artefacto reproducible de entrenamiento a pequeña escala con dataset y procedencia documentados.
 
-El modelo se publica bajo licencia Apache 2.0, con soporte exclusivo del idioma inglés y compatibilidad con el ecosistema Transformers, text-generation-inference y endpoints compatibles. Su tamaño de repositorio es de 0,1 GB, lo que lo hace trivial de desplegar en hardware muy modesto, aunque con expectativas de calidad muy limitadas.
+El contexto de uso realista es acotado: pruebas de pipelines de entrenamiento, experimentos de formato conversacional, validación de conversiones a GGUF y ejercicios didácticos sobre modelos Llama de muy pequeño tamaño. No es un modelo apto para producción ni para tareas que requieran precisión factual.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso tipo Llama |
-| Parámetros totales | 29.699.712 |
-| Parámetros activos | no aplica (modelo denso) |
+| Parametros totales | 29.699.712 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | F16 (GGUF incluido); cuantizaciones adicionales no disponibles |
+| Tipos de cuantizacion | F16 (GGUF incluido); otras cuantizaciones no disponibles |
 | Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y GGUF (F16) |
+| Formato de pesos | safetensors, GGUF (F16) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer denso con estructura de tipo Llama, entrenado desde pesos inicializados aleatoriamente, es decir, sin partir de un checkpoint preentrenado. El modelo cuenta con 29.699.712 parámetros únicos, según los pesos Safetensors publicados. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni la existencia de fases de RLHF o DPO.
+El modelo es un transformer denso con arquitectura Llama, entrenado desde cero (from random weights) y no derivado de otro checkpoint. Cuenta con 29.699.712 parámetros únicos, lo que lo sitúa en la franja de los modelos extremadamente pequeños, por debajo de la mayoría de modelos de juguete habituales. No se especifican en la información disponible el número de capas, dimensión oculta, número de cabezas de atención ni la longitud de contexto nativa.
 
-Las fuentes de entrenamiento declaradas incluyen prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). El modelo utiliza un formato de chat entrenado, con plantilla de conversación aplicable mediante `apply_chat_template`, y la conversión a GGUF se realizó sin reentrenamiento, empleando un Modelfile con el formato de chat entrenado y saltos de línea LF. No se documentan innovaciones técnicas destacables como decodificación especulativa o atención lineal.
+Los datos de entrenamiento provienen de prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache 2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). No se indica el número total de tokens vistos ni si hubo etapas de RLHF o DPO. La model card menciona comprobaciones de identidad (2/2) y un formato de chat entrenado con saltos de línea LF, empleado también en el Modelfile de Ollama. No se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto en inglés con formato conversacional multi-turno mediante plantilla de chat.
-- Respuesta a consultas de identidad: la model card indica 2/2 comprobaciones de identidad superadas.
-- Capacidad de instrucción básica a partir de datos conversacionales (Smol-SmolTalk) y de instrucciones de código (self-oss-instruct-sc2-exec-filter-50k), aunque sin benchmark de código superado ni reclamado.
+- Generación de texto en inglés en formato conversacional con plantilla de chat (`apply_chat_template`).
+- Respuesta a preguntas de identidad dentro del formato entrenado (2/2 comprobaciones de identidad según el autor).
+- Generación de texto genérica con calidad limitada: la model card reporta repeticiones y errores factuales en respuestas no relacionadas con la identidad.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: limitadas al inglés; no se declaran otros idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Código y matemáticas: no se ha superado ni reclamado ningún benchmark de código.
 
 ## Casos de uso
 
-- Experimentación educativa sobre entrenamiento desde cero: el modelo permite estudiar el comportamiento de un transformer de 30M parámetros entrenado desde pesos aleatorios con datos de instrucción, útil en cursos y laboratorios de aprendizaje automático.
-- Pruebas de pipelines de inferencia y plantillas de chat: sirve para validar integraciones con Transformers, text-generation-inference y endpoints compatibles antes de escalar a modelos mayores, gracias a su reducido tamaño de 0,1 GB.
-- Despliegue en hardware embebido o de muy bajos recursos: con 30M de parámetros y pesos F16, puede ejecutarse en CPU y en dispositivos con memoria muy limitada mediante llama.cpp u Ollama, para demos de generación de texto.
-- Evaluación de formatos de conversión GGUF: el repositorio incluye el GGUF F16 y un Modelfile con el formato de chat entrenado, lo que facilita probar flujos de conversión y despliegue con Ollama (`ollama run girgineron/alpina-small-2.0:30m`).
-- Investigación sobre identidad y personalización de modelos: las comprobaciones de identidad documentadas permiten estudiar cómo el ajuste conversacional afecta a las respuestas sobre la propia identidad del modelo.
-- Banco de pruebas de robustez y repetición: dado que la model card advierte de repeticiones y errores factuales en respuestas no relacionadas con la identidad, puede emplearse como caso de estudio de estos fenómenos en modelos pequeños.
+- Validación de pipelines de entrenamiento desde cero: sirve para comprobar que un flujo completo de tokenización, entrenamiento y exportación a safetensors funciona de extremo a extremo con un coste computacional mínimo.
+- Pruebas de integración con `transformers`: permite verificar plantillas de chat, `apply_chat_template` y generación con `model.generate` en entornos de CI sin consumir recursos significativos.
+- Conversión y validación de GGUF: el repositorio incluye el F16 GGUF y un Modelfile, lo que lo hace útil para probar el flujo de conversión y despliegue en Ollama (`ollama run girgineron/alpina-small-2.0:30m`).
+- Docencia y experimentación sobre arquitecturas Llama: su tamaño de ~30M parámetros permite inspeccionar pesos, capas y comportamiento en un portátil o en CPU.
+- Pruebas de formato conversacional: útil para estudiar cómo un modelo diminuto responde a system prompts y turnos de usuario, y para medir degradación por repetición.
+- Baseline negativo en evaluación: puede emplearse como referencia de baja calidad en comparativas internas de modelos pequeños, dado que el autor documenta explícitamente sus fallos.
+- Pruebas de latencia y throughput en hardware modesto: al caber en cualquier GPU consumer e incluso en CPU, sirve para calibrar infraestructura de inferencia antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no se ha superado ni reclamado ningún benchmark de código, que la evaluación es muy limitada y que no debe inferirse calidad de benchmark a partir de las respuestas correctas sobre identidad. Se remite a `evaluation.json` para consultar las respuestas generadas reales.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se ha superado ni reclamado ningún benchmark de código y que la evaluación es muy limitada; las comprobaciones de identidad (2/2) no deben interpretarse como indicador de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en F16 (29,7M de parámetros, aproximadamente 60 MB de pesos); en cuantizaciones de 8 bits o 4 bits, aún menor.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en GTX 1650, RTX 3060, RTX 4090 o superiores, e incluso en CPU.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU con más de 1 GB de memoria, y también en CPU.
-- Opciones de despliegue: Transformers (AutoModelForCausalLM), llama.cpp, Ollama (imagen `girgineron/alpina-small-2.0:30m`), text-generation-inference y endpoints compatibles.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: en F16, aproximadamente 60 MB para los pesos (29,7M parámetros × 2 bytes), más overhead de activaciones y KV cache; en la práctica, menos de 1 GB en cualquier configuración.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; también funciona en CPU. No requiere A100, H100 ni RTX 4090.
+- Cabe holgadamente en GPU consumer: GTX 1650, RTX 3060, RTX 4060, e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: `transformers` (referencia), Ollama mediante el tag `girgineron/alpina-small-2.0:30m`, y llama.cpp a partir del GGUF F16. vLLM y TGI son compatibles a nivel de arquitectura Llama, aunque no se documenta su uso con este checkpoint.
+- Latencia y throughput: no disponibles de forma medida; por el tamaño, se espera generación en tiempo real o superior en CPU y muy alta en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Small 2.0 30M | 29,7M | no disponible | Apache 2.0 | Hugging Face, GGUF, Ollama | Experimental, entrenado desde cero, solo inglés |
-| SmolLM-135M | 135M | no disponible en la información | Apache 2.0 | Hugging Face | Modelo base de mayor escala; no comparable directamente por tamaño |
-| Modelos tipo GPT-2 small | 124M | 1024 tokens (referencia general) | MIT (referencia general) | Hugging Face | Alternativa clásica de escala similar; datos no verificados en esta ficha |
+| Alpina Small 2.0 30M | 29,7M | no disponible | Apache 2.0 | HF, GGUF, Ollama | Entrenado desde cero; evaluación muy limitada |
+| SmolLM-135M | 135M | no disponible en esta ficha | Apache 2.0 | HF | Modelo base de referencia en la franja pequeña; usado como fuente de datos por Alpina |
+| Modelos Llama de juguete (~30M) | variable | variable | variable | HF | Alternativas comunitarias de tamaño similar; rendimiento no comparable sin benchmarks |
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa fiable con alternativas de la misma categoría.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación anterior es estructural (tamaño, licencia y disponibilidad), no de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con evaluación muy limitada; la model card advierte de repeticiones y errores factuales en respuestas no relacionadas con la identidad.
-- No se ha superado ni reclamado ningún benchmark de código; no debe asumirse calidad de benchmark por las respuestas correctas de identidad.
-- Idiomas: únicamente inglés; no se declaran capacidades multilingües.
-- Longitud de contexto no documentada; riesgo de degradación en conversaciones largas.
-- Sesgos conocidos: no documentados explícitamente, pero los datos de entrenamiento (SmolLM-Corpus, CodeParrot, Smol-SmolTalk, self-oss-instruct) pueden introducir sesgos propios de sus fuentes.
-- Riesgo de alucinación elevado dado el tamaño y la limitada evaluación.
-- Licencia Apache 2.0 permite uso comercial, pero las licencias y avisos de los datasets de origen (ODC-BY, Apache-2.0) siguen aplicando a los datos fuente, que no se redistribuyen.
-- Las afirmaciones de identidad describen la personalización y no alteran la autoría original del modelo; no se implica afiliación con Qwen ni con los autores de los datasets.
-- Para producción, no se recomienda su uso en tareas que requieran precisión factual o razonamiento complejo.
+- Calidad muy limitada: la model card reporta repeticiones y errores factuales en respuestas no relacionadas con la identidad.
+- Riesgo elevado de alucinación: al ser un modelo de ~30M parámetros entrenado desde cero, la fidelidad factual es baja por diseño.
+- Solo inglés: no se declaran capacidades en otros idiomas, incluido el castellano.
+- Longitud de contexto no documentada: no debe asumirse una ventana amplia.
+- Sin soporte documentado de tool calling, agentes ni razonamiento multi-paso.
+- No apto para producción: release de investigación con evaluación muy limitada; el autor lo indica explícitamente.
+- Licencia Apache 2.0 permite uso comercial, pero las licencias y avisos de los datasets de origen (ODC-BY, Apache 2.0) siguen aplicando a los datos fuente, que no se redistribuyen en el repositorio.
+- Las comprobaciones de identidad no implican calidad de benchmark; no deben usarse como métrica de rendimiento.
+- Sin afiliación con Qwen ni con los autores de los datasets, según la model card.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Small-2.0-30M
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Small-2.0-30M
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
-- Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
+- Dataset CodeParrot (clean train): https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Dataset self-oss-instruct-sc2-exec-filter-50k: https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k
-- Imagen Ollama: `girgineron/alpina-small-2.0:30m`
+- Tag de Ollama: `girgineron/alpina-small-2.0:30m`

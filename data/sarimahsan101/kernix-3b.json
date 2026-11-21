@@ -52,11 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "sarimahsan101 (Syed Sarim Ahsan) - Hugging Face",
-      "url": "https://huggingface.co/sarimahsan101/models",
-      "snippet": "LLM Fine-Tuning (LoRA, QLoRA), Multilingual Reasoning Models, Efficient Inference (4-bit/8-bit Quantization), NLP, Applied Machine Learning, AI System Design, Retrieval-Augmented Generation (RAG)"
-    }
-  ]
+  "sources": []
 }

@@ -2,66 +2,88 @@
 
 ## Resumen
 
-A11OY-MINI es un modelo de generación de texto en formato GGUF, publicado por SZLHOLDINGS como una cuantización de su modelo padre `SZLHOLDINGS/chaski`, cuyo "silhouette base" declarado en prosa es `Qwen/Qwen3.5-0.8B`. Con aproximadamente 773 millones de parámetros, se distribuye exclusivamente en formato GGUF para su uso con llama.cpp, y su licencia es Apache-2.0. El modelo está pensado para integrarse en el ecosistema de orquestación de agentes de SZL Holdings, aunque no se han publicado evaluaciones ni resultados de benchmarks en esta versión.
+A11OY-MINI es un modelo de generacion de texto publicado por SZLHOLDINGS bajo licencia Apache 2.0, distribuido en formato GGUF y derivado del modelo base Qwen/Qwen3.5-0.8B. Con 772.845.888 parametros totales (aproximadamente 0,77 mil millones), se situa en el segmento de modelos ultra-ligeros, pensado para inferencia en hardware modesto y para despliegues conversacionales de baja latencia. El repositorio ocupa 2,9 GB y acumula 1085 descargas desde su creacion en agosto de 2026.
 
-La relevancia de este lanzamiento radica en su carácter de artefacto intermedio dentro de un flujo de gobernanza de IA: la propia model card indica que no es un entrenamiento nuevo, sino una conversión de pesos existentes, y que no es elegible para publicación ni para carga en laboratorio. Esto lo posiciona como una pieza técnica dentro de un pipeline más amplio, más que como un modelo final listo para producción.
+La model card del autor es deliberadamente parca: se limita a describir el artefacto como parte de un "estate" de IA gobernada con resultados verificables mediante recibos de auditoria, y declara explicitamente que cualquier cifra de entrenamiento o evaluacion no documentada en dichos recibos debe considerarse desconocida. No se publican detalles sobre la composicion del dataset, el numero de tokens de entrenamiento ni el proceso de alineacion.
+
+Su relevancia practica reside en tres factores: el linaje sobre Qwen3.5-0.8B, un tamano que permite ejecucion en CPU y GPUs de consumo, y una licencia permisiva sin restricciones de uso comercial. Para desarrolladores que necesitan un modelo conversacional pequeno y desplegable localmente, es una opcion a considerar, aunque la ausencia de benchmarks publicados obliga a evaluarlo empiricamente antes de llevarlo a produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (base declarada en prosa: Qwen/Qwen3.5-0.8B) |
+| Arquitectura | no disponible (derivado de Qwen/Qwen3.5-0.8B) |
 | Parametros totales | 772.845.888 |
-| Parametros activos | no disponible |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q4_K_M |
+| Tipos de cuantizacion | no disponible (el repo distribuye pesos GGUF; no se detallan los niveles) |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. La model card indica que se trata de una cuantizacion (clase `QUANT_OF_SZL_ORIGINAL`) de un shard fusionado de `SZLHOLDINGS/chaski`, con base declarada en prosa como `Qwen/Qwen3.5-0.8B`. No se menciona ningun proceso de entrenamiento nuevo, ni datos de entrenamiento, ni tecnicas como RLHF o DPO. El unico proceso aplicado es la conversion a GGUF mediante llama.cpp, primero en F16 y posteriormente a Q4_K_M. Tampoco se especifica el tamaño del contexto ni el volumen de tokens de entrenamiento.
+La informacion proporcionada no detalla la arquitectura interna del modelo. El unico dato estructural disponible es su modelo base, Qwen/Qwen3.5-0.8B, del que hereda el diseno y sobre el que SZLHOLDINGS habria realizado un ajuste posterior. No se especifica si se trata de un transformer denso convencional, ni se documentan innovaciones como atencion lineal, decodificacion especulativa o capas hibridas.
+
+Tampoco se publican datos sobre el entrenamiento: ni el volumen de tokens, ni la composicion del corpus, ni si hubo fases de RLHF, DPO o ajuste supervisado. La model card indica que las afirmaciones de entrenamiento y evaluacion residen en ficheros de recibos del "estate" del autor, fuera de la propia tarjeta, y que todo lo no documentado alli debe tratarse como desconocido. En consecuencia, cualquier afirmacion sobre calidad de ajuste o datos utilizados carece de verificacion publica en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto: el modelo es capaz de producir texto en ingles, segun su pipeline de text-generation.
-- Integracion con el ecosistema a11oy: segun los repositorios y paginas web de SZL Holdings, el modelo se enmarca en un sistema de orquestacion de agentes y "command center" gobernado, aunque no se documentan capacidades especificas de tool calling, agentes o razonamiento multi-paso en esta ficha.
-- No se ha publicado informacion sobre soporte de vision, audio, thinking mode u otras modalidades.
+- Generacion de texto conversacional: el pipeline declarado es text-generation y la etiqueta del repositorio es "conversational", lo que indica un ajuste orientado a dialogo multi-turno.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere integracion con infraestructura de inferencia tipo Hugging Face Endpoints o APIs compatibles.
+- Ejecucion local en formato GGUF: los pesos estan empaquetados para motores de inferencia optimizados para CPU y GPU de gama baja.
+- Capacidades multilingues: limitadas al ingles segun el campo de idiomas del repositorio.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Razonamiento multi-paso y modo "thinking": no disponible en la informacion proporcionada.
+- Vision, audio u otras modalidades: no disponible; el modelo es exclusivamente de texto.
 
 ## Casos de uso
 
-No se han documentado casos de uso concretos en la informacion disponible. Dado su tamano (773M parametros) y su formato GGUF, podria emplearse en entornos con recursos limitados, como inferencia en CPU o GPUs de baja capacidad, pero esta posibilidad no esta confirmada por el autor. La model card advierte explicitamente que no es elegible para publicacion, no tiene evaluaciones y no debe cargarse en el laboratorio interno, lo que limita su uso recomendado a fines tecnicos internos o de validacion de procesos.
+- Asistentes conversacionales embebidos en aplicaciones de escritorio o moviles: con menos de 800 millones de parametros, el modelo puede ejecutarse en el propio dispositivo mediante llama.cpp u Ollama, eliminando la dependencia de APIs externas y los costes por token en escenarios de alto volumen de consultas.
+- Clasificacion y enrutado de intenciones en pipelines de atencion al cliente: su tamano reducido permite procesar cada consulta en milisegundos en una GPU de consumo, lo que lo hace adecuado como primera capa que decide si derivar a un modelo mayor o resolver la peticion directamente.
+- Prototipado rapido de productos conversacionales: al estar disponible en GGUF y con licencia Apache 2.0, un equipo puede validar la experiencia de usuario de un chatbot sin negociar licencias ni aprovisionar GPUs de datacenter.
+- Generacion de respuestas en entornos con requisitos de privacidad: el despliegue totalmente local garantiza que los datos del usuario no salgan de la infraestructura propia, algo relevante en sectores regulados como salud o legal.
+- Tareas de reescritura y resumen de textos cortos: para parrafos, correos o mensajes, el modelo puede generar reformulaciones o resumenes en ingles con latencia baja en CPU, integrable en herramientas de productividad.
+- Educacion y practica de ingles: como tutor conversacional simple, el modelo puede mantener intercambios en ingles sobre temas acotados, ejecutandose en un portatil sin conexion.
+- Filtrado y preprocesamiento en pipelines de datos: puede emplearse para normalizar, etiquetar o limpiar texto antes de pasarlo a modelos mayores, reduciendo el coste computacional global del sistema.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica `evals: none-this-run` y `publication_eligible: false`, por lo que no existen datos de MMLU, HumanEval, GSM8K ni otras metricas estandar.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo que una auditoria fechada haya medido, y no se incluye ninguna medicion en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- Tamanos de archivo: F16 de 1.557.662.240 bytes (aprox. 1,56 GB) y Q4_K_M de 541.903.392 bytes (aprox. 542 MB).
-- Estimacion de VRAM: para el archivo F16, se necesitarian aproximadamente 1,6 GB de VRAM, mas overhead del runtime, lo que cabria en GPUs consumer con 2 GB o mas. Para Q4_K_M, unos 0,5 GB de VRAM, compatible con GPUs de 1 GB o incluso CPU.
-- GPU recomendadas: no hay indicaciones oficiales; por tamano, cualquier GPU moderna con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) podria ejecutar la version Q4_K_M, y la F16 en GPUs con 4 GB o mas.
-- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato. Tambien puede usarse con vLLM si se convierte a safetensors, aunque la model card prohibe la conversion directa a Ollama desde safetensors.
-- Latencia y throughput: no se han publicado datos oficiales.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano, un modelo de 0,77 mil millones de parametros en cuantizacion de 4 bits ocupa aproximadamente 0,5 GB de pesos, y en FP16 alrededor de 1,5 GB; estas cifras son estimaciones genericas por tamano, no datos publicados por el autor.
+- GPU recomendadas: no disponible. Por tamano, el modelo es compatible con GPUs de consumo como RTX 3060, RTX 4060 o superiores, y con GPUs de datacenter (A100, H100) si se busca maximo throughput, aunque no se han publicado mediciones.
+- Cabe en GPU de consumo: si, segun el tamano del modelo; no se especifican modelos concretos ni requisitos oficiales.
+- Opciones de despliegue: llama.cpp y Ollama son los motores naturales para pesos GGUF; tambien cabria su uso via endpoints compatibles segun la etiqueta del repositorio. vLLM y TGI no se mencionan en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos. Aunque se menciona como base a `Qwen/Qwen3.5-0.8B`, no hay datos de rendimiento ni de contexto que permitan contrastarlo con alternativas como Llama 3.2 1B, Gemma 2 2B u otros modelos de tamano similar.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| A11OY-MINI | 772.845.888 | no disponible | Apache 2.0 | GGUF | Derivado de Qwen3.5-0.8B; solo ingles; sin benchmarks publicados |
+| Qwen/Qwen3.5-0.8B | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible | Modelo base del que deriva A11OY-MINI |
+| Alternativas de menos de 1B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion con otros modelos de la misma categoria |
+
+La comparacion cuantitativa con alternativas del segmento sub-1B no puede completarse con rigor: la informacion proporcionada no incluye especificaciones de contexto, rendimiento ni terminos de licencia de modelos competidores, y la propia model card de A11OY-MINI evita afirmar cifras no auditadas.
 
 ## Limitaciones y advertencias
 
-- No tiene evaluaciones publicadas (`evals: none-this-run`), por lo que su calidad no esta verificada.
-- No es elegible para publicacion ni para uso en laboratorio segun la model card (`publication_eligible: false`, `lab_load: forbidden`).
-- No es un entrenamiento nuevo, sino una cuantizacion; no se garantiza que el proceso de conversion haya preservado todas las capacidades del modelo original.
-- Solo soporta ingles (`language: en`).
-- No se ha especificado la longitud de contexto ni el comportamiento ante entradas largas.
-- Existe una advertencia de que no debe tratarse como un "modelo final" para produccion: la propia documentacion lo califica como "advisory, never a theorem".
+- Idioma: el repositorio declara unicamente ingles como idioma soportado; el rendimiento en castellano u otras lenguas no esta garantizado ni documentado.
+- Ausencia de benchmarks: no hay mediciones publicas de MMLU, HumanEval, GSM8K ni de ninguna otra tarea, lo que impide estimar su calidad relativa frente a alternativas sin evaluacion propia.
+- Opacidad del ajuste: no se documentan datos de entrenamiento, proceso de alineacion ni cambios respecto al modelo base Qwen3.5-0.8B, por lo que no puede evaluarse que mejora aporta el ajuste de SZLHOLDINGS.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; con 0,77 mil millones de parametros, la capacidad de razonamiento factual es limitada y la probabilidad de generar contenido incorrecto con apariencia de veracidad es alta.
+- Sesgos: no se ha publicado ninguna evaluacion de sesgos; al desconocerse la composicion del corpus de ajuste, no puede descartarse la presencia de sesgos heredados del modelo base o introducidos en el ajuste.
+- Contexto: se desconoce la longitud de ventana soportada, lo que impide planificar su uso en tareas que requieran documentos largos.
+- Uso comercial: la licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el comprador debe verificar de forma independiente las obligaciones derivadas del modelo base Qwen3.5-0.8B.
+- Madurez del artefacto: cero "likes" y una model card generada de forma automatica por herramientas del propio autor sugieren poca validacion por parte de la comunidad; conviene tratarlo como experimental hasta realizar una evaluacion propia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/A11OY-MINI
-- Repositorio GitHub de a11oy: https://github.com/szl-holdings/a11oy
-- Consola a11oy: https://a-11-oy.com/console
-- Plataforma a11oy (agente): https://a-11-oy.com/agent
-- Espacio Hugging Face de la plataforma: https://huggingface.co/spaces/SZLHOLDINGS/a11oy-platform
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/A11OY-MINI
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Organizacion en GitHub (fuente canonica citada en la model card): https://github.com/szl-holdings
+- Herramienta de generacion de model cards del autor: https://github.com/szl-holdings/estate-cards
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

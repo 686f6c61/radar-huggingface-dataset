@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Epstein-GGUF",
+  "slug": "mradermacher-epstein-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Epstein-GGUF",
+  "created_at": "2025-08-31T15:46:40.000Z",
+  "updated_at": "2026-11-21T01:06:48.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Pclanglais/Epstein",
+    "base_model:quantized:Pclanglais/Epstein",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801911744,
+  "storage_human": "88.8 GB",
+  "context_length": 4096,
+  "base_model": "Pclanglais/Epstein",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

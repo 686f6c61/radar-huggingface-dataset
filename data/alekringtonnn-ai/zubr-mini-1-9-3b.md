@@ -2,106 +2,90 @@
 
 ## Resumen
 
-Zubr Mini 1.9 3B es un modelo de lenguaje publicado por el usuario alekringtonnn-ai en Hugging Face. Segun los metadatos del repositorio, cuenta con 3.429.006.336 parametros totales (aproximadamente 3,43 mil millones) y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 17,2 GB e incluye pesos en formato GGUF segun las etiquetas del modelo, ademas de pesos en safetensors segun la fuente del recuento de parametros.
+Zubr Mini 1.9 3B es un modelo de lenguaje multimodal (visión) de 3.429.006.336 parámetros desarrollado por alekringtonnn-ai, obtenido mediante fine-tuning de Ministral-3-3B-Instruct-2512 de Mistral AI. Está orientado a tareas image-text-to-text (imagen y texto como entrada, texto como salida) y se distribuye principalmente en formato GGUF, lo que permite su ejecución en CPU, portátiles, dispositivos móviles y servidores sin necesidad de GPU dedicada.
 
-La model card publicada no contiene ninguna descripcion tecnica: unicamente la linea de licencia, sin informacion sobre arquitectura, datos de entrenamiento, longitud de contexto o idiomas soportados. Las etiquetas asociadas indican tres rasgos relevantes: `conversational` (orientado a dialogo), `imatrix` (las cuantizaciones GGUF se habrian generado con matrices de importancia) y `endpoints_compatible` (compatible con el despliegue mediante endpoints de Hugging Face). No consta pipeline declarado ni idiomas listados.
+El modelo amplía la cobertura lingüística de su base de 26 a 48 idiomas, incluyendo ruso, bielorruso, ucraniano y una larga lista de lenguas europeas y asiáticas. Se presenta como una opción ligera para inferencia local con licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales. El repositorio incluye ocho variantes de cuantización GGUF, desde Q2_K (~1,46 GB) hasta Q8_0 (~3,65 GB), además de una versión MLX separada para Apple Silicon.
 
-Su relevancia actual es limitada y debe interpretarse con cautela: es un modelo de muy reciente creacion (3 de octubre de 2026, con actualizacion el mismo dia), sin descargas registradas (0) y un unico "like". No hay benchmarks, paper ni documentacion tecnica asociada. A efectos practicos, se trata de un modelo de 3B en formato GGUF para inferencia local en hardware de gama de consumo, pero cualquier evaluacion de su calidad requiere pruebas propias por parte del usuario.
+Su relevancia actual radica en la combinación de multimodalidad, multilingüismo amplio y despliegue en hardware modesto, un perfil poco frecuente en modelos de 3B. No obstante, la información pública disponible sobre arquitectura interna, datos de entrenamiento y resultados de benchmarks es muy limitada, por lo que muchas especificaciones deben considerarse no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 3.429.006.336 (unos 3,43 mil millones) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer multimodal (visión-lenguaje), derivada de Ministral-3-3B-Instruct-2512; detalles internos no disponibles |
+| Parámetros totales | 3.429.006.336 |
+| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el tag `imatrix` sugiere cuantizaciones GGUF generadas con importance matrix) |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (etiqueta del repositorio) y safetensors (origen del recuento de parametros) |
-
-Otros metadatos del repositorio: autor alekringtonnn-ai, tamano del repositorio 17,2 GB, 0 descargas, 1 like, creado el 2026-10-03 y actualizado el 2026-10-03, region:us, pipeline no disponible.
+| Tipos de cuantización | Q2_K, Q2_K_L, IQ3_XS, Q3_K_L, Q4_0, Q4_K_M, Q6_K, Q8_0 (GGUF); versión MLX separada |
+| Idiomas soportados | 48 idiomas, entre ellos ru, be, en, es, fr, de, nl, ja, it, pl, da, ro, el, uk, br, ar, fa, tr, bn, id, hi, ne, pa, ta, te, zh, pt, ga, uz, tg, tk, lt, sr, bg, sv, fi, ca, gl, is, mr, kn, kk, bs, he, ur, cy, rm, mn |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (principal); MLX en repositorio separado; safetensors presentes en el repo (3.429.006.336 parámetros) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un transformer con mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco se indica el tipo de atencion (completa, lineal o sliding window), la funcion de activacion, la estrategia de normalizacion ni la inicializacion de pesos.
+El modelo parte de Ministral-3-3B-Instruct-2512, la variante instructiva de la familia Ministral 3 de Mistral AI, y ha sido ajustado por alekringtonnn-ai. La model card describe el resultado como un modelo multimodal con capacidad de reconocimiento de imágenes y tareas image-text-to-text, con un vocabulario ampliado y un ajuste profundo de instrucciones. No se detalla la arquitectura interna (número de capas, dimensión oculta, mecanismo de atención, codificador visual) ni el proceso exacto de entrenamiento.
 
-Respecto al entrenamiento, se desconoce por completo el corpus utilizado: no consta el numero de tokens, la composicion del dataset, la distribucion de idiomas, ni si hubo fases de ajuste por instrucciones, RLHF, DPO u otra tecnica de alineamiento. El tag `conversational` apunta a un ajuste orientado a dialogo, pero no se aporta ningun detalle verificable. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, destilacion, poda o similar).
+No se especifican el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa o atención lineal. La información disponible se limita a la genealogía del modelo (base → instruct → GGUF → fine-tune) y a la ampliación de cobertura lingüística de 26 a 48 idiomas.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno: el tag `conversational` indica que el modelo esta orientado a dialogo, si bien no se documentan capacidades concretas.
-- No se ha confirmado soporte de tool calling ni function calling.
-- No se ha confirmado soporte de agentes ni de razonamiento multi-paso.
-- Capacidades multilingues: no disponibles. No hay lista de idiomas en los metadatos.
-- Capacidades especiales (modo thinking, vision, audio, codigo, matematicas): no disponibles.
-- Compatibilidad declarada con endpoints de Hugging Face (tag `endpoints_compatible`).
-- Distribucion en GGUF con cuantizaciones generadas mediante `imatrix`, lo que sugiere la intencion de facilitar inferencia local con llama.cpp y derivados.
-
-Todas las capacidades enumeradas mas alla de la generacion de texto conversacional son inferencias a partir de etiquetas, no hechos documentados por el autor.
+- Generación de texto conversacional con ajuste de instrucciones.
+- Procesamiento multimodal: reconocimiento de imágenes y tareas image-text-to-text.
+- Soporte multilingüe en 48 idiomas, con especial presencia de lenguas eslavas (ruso, bielorruso, ucraniano) y europeas.
+- Ejecución local en CPU y GPU mediante GGUF (Ollama, llama.cpp, vLLM, LM Studio).
+- Compatibilidad con endpoints (etiqueta endpoints_compatible en Hugging Face).
+- Cuantizaciones con técnica imatrix para las variantes de baja precisión.
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-Nota previa: no se han publicado evaluaciones de este modelo, por lo que los casos siguientes son escenarios plausibles derivados de su tamano (3,43B), su licencia Apache-2.0 y su formato GGUF, no capacidades verificadas.
-
-- Asistente conversacional local en portatil: con pesos GGUF y unos 3,43B parametros, el modelo puede ejecutarse integramente en CPU o en una GPU de consumo (por ejemplo, una RTX 3060 de 12 GB) mediante llama.cpp u Ollama, sin enviar datos a servicios externos. Es adecuado cuando la privacidad del contenido de la conversacion es un requisito.
-- Prototipado rapido de interfaces de chat: al publicarse en GGUF y con licencia Apache-2.0, puede integrarse en una demo interna en minutos usando Ollama o llama.cpp, sin coste de licencia, para validar flujos de producto antes de migrar a un modelo mayor.
-- Generacion de texto asistida en aplicaciones de escritorio: redaccion de borradores, reescritura de parrafos y resumen de notas en herramientas ofimaticas o editores, con inferencia en el propio equipo y sin dependencia de red.
-- Clasificacion y extraccion de informacion sobre texto corto: etiquetado de tickets, extraccion de entidades simples o enrutado de consultas en un pipeline previo a un modelo mayor, siempre que una evaluacion propia confirme una precision suficiente en la tarea concreta.
-- Chatbot de dominio acotado: con ajuste adicional (fine-tuning LoRA) sobre un corpus especifico, el tamano de 3,43B es manejable en una unica GPU de 24 GB, lo que permite adaptar el modelo a un vertical concreto (por ejemplo, atencion interna de una organizacion).
-- Despliegue en entornos con recursos limitados o sin conectividad: al existir pesos cuantizados, el modelo puede ejecutarse en equipos de campo, dispositivos de borde o entornos aislados donde no es viable servir un modelo de mayor tamano.
-- Nodo auxiliar en pipelines multi-modelo: uso como modelo economico para tareas de filtrado, reformulacion de prompts o generacion de borradores que despues valida o reescribe un modelo mayor.
+- Asistente conversacional local en portátiles: con la cuantización Q4_K_M (~2,15 GB) el modelo puede ejecutarse en equipos con unos 8 GB de RAM sin GPU, útil para prototipos de chat sin conexión.
+- Descripción y análisis de imágenes en dispositivos de borde: la capacidad image-text-to-text permite generar descripciones o responder preguntas sobre imágenes en móviles o Raspberry Pi, usando Q2_K o IQ3_XS.
+- Procesamiento multilingüe en atención al cliente: la cobertura de 48 idiomas permite atender consultas en ruso, bielorruso, ucraniano, árabe o hindi con un único modelo ligero.
+- Generación de texto en pipelines de CI/CD: la compatibilidad con llama.cpp y vLLM permite integrar el modelo en scripts automatizados para resúmenes, clasificación o extracción de información.
+- Aplicaciones de privacidad estricta: al ejecutarse completamente en local, es adecuado para procesar documentos sensibles sin enviar datos a servicios externos.
+- Educación y experimentación: su tamaño reducido y licencia Apache 2.0 lo hacen apropiado para entornos docentes, investigación académica y pruebas de concepto de modelos multimodales.
+- Despliegue en Apple Silicon: la versión MLX permite aprovechar la GPU unificada de los chips M1–M4 para inferencia más rápida que en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, ni de ninguna otra evaluacion, ni comparaciones con modelos de tamano similar. Cualquier cifra de rendimiento deberia obtenerse mediante evaluacion propia.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones aritmeticas derivadas del recuento de parametros (3,43B) y de los tamanos tipicos por peso, no datos publicados por el autor:
-
-- Prevision orientativa de memoria para pesos: unos 6,9 GB en FP16, unos 3,6 GB en cuantizacion de 8 bits y en torno a 2,0-2,2 GB en cuantizacion de 4 bits (Q4_K_M).
-- A esos valores hay que sumar el espacio para el contexto (KV cache), que crece con la longitud de contexto configurada y que no puede dimensionarse sin conocer la arquitectura y el numero de cabezas de atencion.
-- GPU de gama de consumo: el modelo cabe con holgura en tarjetas de 8 GB o mas (RTX 3060 Ti, 3070, 4060, 4070) usando cuantizaciones de 4 u 8 bits. En FP16 requeriria al menos 8-10 GB considerando overhead.
-- GPU de centro de datos: A100, H100 o L40S son sobredimensionadas para un modelo de este tamano, salvo que se desplieguen muchas instancias concurrentes o se use para fine-tuning.
-- CPU: viable con cuantizaciones de 4 bits, aunque la latencia dependera del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, servidores GGUF compatibles y, para los pesos en safetensors, frameworks como vLLM o TGI (no confirmado por el autor). El tag `endpoints_compatible` indica compatibilidad con endpoints gestionados de Hugging Face.
-- Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM/RAM estimada según cuantización: Q2_K ~1,46 GB; Q2_K_L ~1,56 GB; IQ3_XS ~1,58 GB; Q3_K_L ~1,93 GB; Q4_0 ~2,05 GB; Q4_K_M ~2,15 GB; Q6_K ~2,82 GB; Q8_0 ~3,65 GB.
+- La model card recomienda al menos el doble de RAM que el tamaño del archivo de cuantización (por ejemplo, ~4 GB para Q2_K y ~16 GB para Q8_0).
+- CPU con soporte AVX/AVX2 o ARM; GPU opcional. Para vLLM se requiere GPU NVIDIA (o Apple Silicon) y Linux/macOS.
+- Cabe en GPU de consumo: cualquier tarjeta con 4 GB o más de VRAM puede alojar Q4_K_M; para Q8_0 se recomiendan 8 GB o más (RTX 3060, RTX 4060, RTX 4090, etc.).
+- Opciones de despliegue: Ollama (`ollama run hf.co/alekringtonnn-ai/zubr-mini-1.9-3b:Q4_K_M`), llama.cpp (`llama-cli -hf ...`), vLLM, LM Studio y MLX en Apple Silicon.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento de Zubr Mini 1.9 3B que permitan una comparacion funcional. La tabla siguiente recoge unicamente los rasgos estructurales publicos de alternativas del mismo rango de tamano (los datos de los modelos alternativos provienen de sus model cards publicas y deben verificarse en la fuente original):
+| Modelo | Parámetros | Contexto | Multimodal | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Zubr Mini 1.9 3B | 3,43B | no disponible | Sí (visión) | 48 | Apache 2.0 | GGUF, MLX, safetensors |
+| Ministral-3-3B-Instruct-2512 (base) | ~3B | no disponible | no disponible | 26 (según la model card) | no disponible en la información | GGUF, safetensors |
+| Zubr Mini 1.9 8B (versión superior del mismo autor) | ~8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Zubr Mini 1.9 3B | 3,43B | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
-| Qwen2.5-3B | ~3,1B | 32.768 tokens (ampliable) | Apache-2.0 | Hugging Face |
-| Llama 3.2 3B | ~3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face |
-| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face |
-
-Comparacion de rendimiento, calidad conversacional y capacidades multilingues: no disponible.
+La comparativa se limita a los modelos mencionados en la información proporcionada; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de terceros.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card no describe arquitectura, datos de entrenamiento, contexto, idiomas ni proceso de alineamiento. Esto impide predecir su comportamiento en produccion.
-- Capacidades sin verificar: no hay evidencia publica de soporte de tool calling, agentes, codigo, matematicas ni vision. Cualquier uso de estas funciones debe validarse empiricamente.
-- Riesgo de alucinacion: desconocido y no medido. Un modelo de 3,43B sin evaluacion publicada y sin datos de alineamiento tiene un riesgo elevado de generar contenido incorrecto con aparente seguridad, especialmente en dominios especializados.
-- Sesgos: no evaluados. Al desconocerse la composicion del corpus de entrenamiento, no puede estimarse el sesgo de genero, etnico, politico o cultural.
-- Idiomas: no disponibles en los metadatos. No debe asumirse un buen desempeno en castellano sin pruebas propias.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide dimensionar el KV cache y planificar despliegues con conversaciones o documentos largos.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion sin obligacion de compartir derivados. No obstante, el autor no ofrece garantias sobre el origen licito de los datos de entrenamiento, un riesgo que el usuario asume.
-- Madurez del repositorio: creado y actualizado el mismo dia (2026-10-03), con 0 descargas y 1 like. No hay historial de versiones ni comunidad que haya reportado problemas; cabe esperar cambios o incluso la retirada del repositorio.
-- Verificacion de integridad: al no existir informacion sobre el proceso de conversion a GGUF ni sobre las cuantizaciones, conviene comprobar los hashes de los ficheros descargados antes de usarlos en produccion.
-- Formato de pesos heterogeneo: coexisten GGUF y safetensors, pero no se especifica que variantes exactas contiene el repositorio de 17,2 GB ni si los pesos safetensors son la referencia sin cuantizar.
+- La información pública sobre arquitectura, contexto y entrenamiento es muy escasa; la evaluación rigurosa requiere pruebas propias.
+- Las cuantizaciones de 2 y 3 bits (Q2_K, Q2_K_L, IQ3_XS) degradan la calidad de forma notable según la propia model card.
+- Riesgo de alucinación inherente a modelos de 3B, especialmente en tareas de razonamiento complejo o matemáticas.
+- No se documentan sesgos conocidos, pero la ampliación a 48 idiomas sin datos de evaluación pública impide descartar sesgos por idioma.
+- La longitud de contexto no está especificada, lo que dificulta planificar casos de uso con documentos largos.
+- Aunque la licencia Apache 2.0 permite uso comercial, conviene verificar las condiciones de la licencia del modelo base (Ministral-3-3B-Instruct-2512), no detalladas en la información disponible.
+- El repositorio tiene un tamaño de 17,2 GB y solo 737 descargas y 1 like en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
+- La model card advierte de que existe una versión superior de 8B, lo que sugiere que el modelo de 3B puede quedar desactualizado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-3b
-- Paper: no disponible
-- Repositorio de codigo: no disponible
-- Blog o anuncio del autor: no disponible
-- Demo: no disponible
-- Datos de benchmarks: no disponible
-
-No se han encontrado otros enlaces relevantes en la informacion disponible.
+- Hugging Face: https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-3b
+- Versión MLX: https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-3b-mlx
+- Versión 8B: https://huggingface.co/Zubr-AI/zubr-mini-1.9-8b
+- Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF
+- Ollama: https://ollama.com
+- Sitio del proyecto: https://zubrmax.site

@@ -2,59 +2,56 @@
 
 ## Resumen
 
-DAMS 27B es un ajuste fino de parámetros completos del modelo Qwen3.8-27B desarrollado por Oriven Labs, presentado como el primer miembro de su familia DAMS (Dynamic Associative Memory System) orientada a ingeniería de software y trabajo con agentes de horizonte largo. El modelo conserva la arquitectura híbrida del base (Gated DeltaNet / Gated Attention, 64 capas) y añade 16 capas de memoria asociativa DAMS de aproximadamente 1.850 millones de parámetros, una rama residual de memoria después de cada capa de atención completa. El resultado es un checkpoint de 29.635.526.896 parámetros (29,6B, aunque se comercializa con el nombre "27B") en bf16 safetensors, con 262.144 tokens de contexto nativo y licencia Apache 2.0.
+DAMS 27B es un modelo de lenguaje de 29.635.526.896 parámetros (aproximadamente 29,6 mil millones) desarrollado por Oriven Labs, presentado como el primer lanzamiento de su familia DAMS (Dynamic Associative Memory System), orientada a ingeniería de software y trabajo agéntico de largo horizonte. Se construye mediante un ajuste fino de parámetros completos sobre Qwen/Qwen3.8-27B, un transformer híbrido que combina capas de atención completa con capas Gated DeltaNet (atención lineal) a lo largo de 64 capas, y añade 16 capas de memoria asociativa DAMS (unos 1.850 millones de parámetros adicionales) insertadas como ramas residuales tras cada capa de atención completa.
 
-El entrenamiento se realizó con RL de parámetros completos (GRPO) partiendo del modelo base sin modificar, con recompensas derivadas exclusivamente de la ejecución real de tests en repositorios de software, más términos anti-manipulación de tests y de honestidad. El checkpoint publicado es `it6`, la mejor iteración retenida del run según el autor. La propuesta diferencial es la memoria asociativa por petición integrada en la arquitectura, aunque el propio autor advierte que en esta versión las ramas de memoria están ligeramente entrenadas y su contribución es pequeña.
+La innovación central es el mecanismo de memoria DAMS v2, inicializado a cero de forma que en el paso 0 el modelo es idéntico al base, y entrenado con GRPO de parámetros completos sobre un currículo de tareas reales de repositorios de software, donde las recompensas provienen únicamente de que pasen los tests del repositorio (con términos anti-manipulación de tests y de honestidad). El resultado es un modelo que mejora al base en programación competitiva y razonamiento científico, aunque retrocede en tareas agénticas de SWE y en seguimiento de instrucciones en esta iteración.
 
-Es relevante ahora porque compite en la franja de modelos de ~27-30B especializados en código y agentes, con resultados publicados en LiveCodeBench v6 (88,15), SWE-bench Verified (85,2%), DeepSWE v1.1 (39,8%) e IFBench strict (72,0). No obstante, requiere código de modelado propio: `transformers` y vLLM estándar ignoran silenciosamente las capas `dams_mem`, por lo que sin el plugin incluido no se ejecuta el modelo evaluado.
+Es relevante ahora porque se distribuye con pesos abiertos bajo licencia Apache 2.0, soporta contexto nativo de 262.144 tokens y está pensado para servirse con vLLM mediante un plugin específico incluido en el repositorio. La memoria, no obstante, es por petición y no persiste entre solicitudes, y sus ramas están ligeramente entrenadas en esta versión, por lo que su contribución es pequeña.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida Gated DeltaNet / Gated Attention (64 capas) + 16 capas de memoria asociativa DAMS v2 |
-| Parámetros totales | 29.635.526.896 (~29,6B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer híbrido (atención completa + Gated DeltaNet / Gated Attention), 64 capas, con 16 capas de memoria asociativa DAMS v2 |
+| Parámetros totales | 29.635.526.896 (~29,6B); de ellos ~1,85B corresponden a las capas de memoria DAMS |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | 262.144 tokens (nativo) |
-| Tipos de cuantización | No se han publicado cuantizaciones oficiales; checkpoint en bf16. El autor no valida variantes GGUF, AWQ ni GPTQ |
-| Idiomas soportados | No disponibles (no declarados en la model card) |
+| Tipos de cuantización | No disponible (checkpoint publicado en bf16 safetensors; no se documentan cuantizaciones oficiales) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors en bf16; pesos de memoria en `model-dams-mem.safetensors` separado; requiere el código de modelado incluido en el repo |
+| Formato de pesos | safetensors (bf16); pesos de memoria en `model-dams-mem.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer híbrido de 64 capas que combina capas de atención completa con capas de atención lineal Gated DeltaNet. Sobre esa base, Oriven Labs inserta 16 capas de memoria asociativa DAMS v2, una tras cada capa de atención completa listada en `text_config.dams_mem_layers`. La operación es `x' = x + GDN_mem(RMSNorm_mem(x))`, donde `GDN_mem` es un mezclador Gated DeltaNet nativo de Qwen con la misma geometría de cabezas que las capas de atención lineal del base; los pesos se almacenan bajo `model.language_model.layers.{i}.dams_mem.*`. Las capas se añaden con `out_proj` inicializado a cero, de modo que en el paso 0 el modelo es exactamente el base. El encoder de visión proviene del checkpoint original y no fue entrenado ni evaluado.
+El modelo parte de Qwen3.8-27B, un transformer híbrido de 64 capas que intercala atención completa con mezcladores Gated DeltaNet (atención lineal). Sobre esa base, Oriven Labs añade 16 capas de memoria asociativa DAMS v2: tras cada capa de atención completa `i` listada en `text_config.dams_mem_layers`, se aplica `x' = x + GDN_mem(RMSNorm_mem(x))`, donde `GDN_mem` es un mezclador Gated DeltaNet nativo de Qwen con la misma geometría de cabezas que las capas de atención lineal del base. Las ramas se inicializan con `out_proj = 0`, de modo que el modelo arranca siendo exactamente el base. Los pesos residen en `model-dams-mem.safetensors` bajo `model.language_model.layers.{i}.dams_mem.*`, y el módulo de referencia es `dams_mem_v2.py`.
 
-El entrenamiento consistió en GRPO de parámetros completos (sin LoRA) con la memoria siempre activa, sobre un currículo de tareas reales de ingeniería de software en repositorios. Las recompensas proceden únicamente de tests que pasan, con términos adicionales anti-edición de tests y de honestidad, y la selección de checkpoint se hizo sobre un conjunto SWE retenido. El autor declara datos de entrenamiento descontaminados, con licencias comerciales y sin destilación de modelos cerrados. La memoria es por petición: no se persiste entre peticiones separadas, y las ramas están ligeramente entrenadas en esta release.
+El entrenamiento consiste en RL de parámetros completos con GRPO (sin LoRA), con la memoria siempre activa, sobre un currículo de tareas de ingeniería de software de repositorios reales. Las recompensas se obtienen de que pasen los tests, más términos anti-edición-de-tests y de honestidad; la selección de checkpoint se hace sobre un conjunto SWE reservado. El checkpoint publicado es `it6`, la mejor iteración reservada del run. Los datos de entrenamiento se declaran decontaminados, con licencias comerciales y sin destilación de modelos cerrados. El codificador de visión proviene del checkpoint base, pero DAMS se entrenó y evaluó solo en texto.
 
 ## Capacidades
 
-- Generación de texto y razonamiento, con parser de razonamiento `qwen3` soportado en el despliegue vLLM recomendado.
-- Generación y edición de código orientada a repositorios reales, incluyendo resolución de incidencias verificables mediante tests.
-- Razonamiento científico y preguntas de opción múltiple de nivel experto (GPQA Diamond).
-- Tool calling / function calling: el comando de referencia activa `--enable-auto-tool-choice` con `--tool-call-parser qwen3_coder`.
-- Trabajo agéntico multi-paso: los benchmarks se ejecutaron con mini-SWE-agent (250 pasos) y con el harness de Claude Code (3 horas por tarea).
-- Contexto largo nativo de 262.144 tokens, útil para recorrer repositorios completos o trazas extensas.
-- Memoria asociativa por petición (no persistente entre peticiones) integrada en la arquitectura.
-- Capacidad de visión: los pesos del encoder están presentes en el checkpoint, pero no fueron entrenados ni evaluados; el despliegue recomendado usa `--language-model-only`.
-- Cobertura multilingüe: no declarada en la model card.
+- Generación de texto conversacional y razonamiento general.
+- Programación y resolución de problemas de código, con mejora medida en LiveCodeBench v6 (88,15 frente a 84,83 del base).
+- Razonamiento científico y de conocimiento (GPQA Diamond 89,96 en avg@8).
+- Tool calling / function calling: el despliegue recomendado incluye `--enable-auto-tool-choice` y `--tool-call-parser qwen3_coder`.
+- Trabajo agéntico multi-paso sobre repositorios (SWE-bench Verified, DeepSWE), con harness tipo mini-SWE-agent y Claude Code.
+- Modo de razonamiento con parser `qwen3` (`--reasoning-parser qwen3`).
+- Memoria asociativa por petición (no persistente entre solicitudes), con contribución pequeña en esta versión.
+- Capacidades multilingües: no disponibles (los idiomas no se documentan).
+- Visión: los pesos del codificador existen en el checkpoint, pero no se entrenaron ni evaluaron.
 
 ## Casos de uso
 
-- Resolución automática de incidencias en repositorios: el modelo puede recibir un issue, explorar el árbol de ficheros, aplicar parches y validar con la suite de tests, replicando el escenario de SWE-bench Verified (85,2%) con harness agéntico de hasta 250 pasos.
-- Agente de integración continua: integrado en pipelines de CI/CD mediante tool calling para leer logs de fallo, proponer parches y ejecutar tests, con el parser `qwen3_coder` gestionando las llamadas a herramientas.
-- Asistencia en programación competitiva y algoritmia: con 88,15 en LiveCodeBench v6, es adecuado para generar soluciones en un solo intento y para tareas de optimización con restricciones algorítmicas.
-- Análisis de repositorios completos: la ventana de 262.144 tokens permite cargar varios módulos, contratos de API y tests en una sola petición para tareas de migración, refactor o auditoría de dependencias.
-- Razonamiento técnico y científico: responde preguntas de nivel experto en física, química y biología (GPQA Diamond 89,96 avg@8), útil en herramientas internas de soporte a investigación.
-- Agentes de horizonte largo con memoria de trabajo: la rama DAMS mantiene estado asociativo dentro de una misma petición, lo que ayuda en sesiones de depuración prolongadas, siempre que se asuma que el estado no persiste entre peticiones.
-- Servicio self-hosted de asistencia a desarrollo: desplegado con vLLM 0.31 y prefix caching para reutilizar contexto de repositorio entre llamadas de un mismo flujo.
-- Base de investigación para arquitecturas híbridas con memoria: el código `dams_mem_v2.py` sirve como referencia reproducible para estudiar la inserción de mezcladores Gated DeltaNet como ramas residuales.
+- Resolución de incidencias en repositorios: el modelo puede recibir un issue y el árbol del repositorio, razonar en varios pasos y proponer un parche que se valida ejecutando la suite de tests, gracias a su entrenamiento con recompensas basadas en tests reales.
+- Generación de código en producción: con tool calling habilitado y parser `qwen3_coder`, se integra en pipelines de CI/CD para generar parches, tests o refactorizaciones acotadas, con contexto de 262.144 tokens para incluir varios ficheros.
+- Programación competitiva y entrenamiento de algoritmia: su mejor rendimiento relativo está en LiveCodeBench v6, por lo que encaja en entornos de evaluación de problemas algorítmicos y generación de soluciones.
+- Asistentes de ingeniería con contexto largo: la ventana nativa de 262.144 tokens permite cargar documentación extensa, trazas o múltiples módulos en una sola petición con prefix caching activado.
+- Razonamiento científico y QA técnico: GPQA Diamond con avg@8 lo sitúa como opción para preguntas de dominio científico con verificación por muestreo múltiple.
+- Agentes de automatización de tareas de desarrollo con harness externo: se puede desplegar con vLLM y conectarlo a harness tipo mini-SWE-agent o Claude Code para tareas de varias horas, aunque conviene validar el rendimiento en SWE frente al base.
+- Evaluación de instrucciones estrictas y formato: IFBench estricto mide su seguimiento de instrucciones, útil para generar salidas con formato fijo, aunque en esta versión queda por debajo del base.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por Oriven Labs, pass@1 salvo indicación, con harness idénticos para ambos modelos y servidos con vLLM a 262.144 tokens de contexto:
-
-| Benchmark | DAMS 27B (it6) | Qwen3.8-27B (base) |
+| Benchmark (pass@1) | DAMS 27B (it6) | Qwen3.8-27B (base) |
 |---|---|---|
 | LiveCodeBench v6 | 88,15 | 84,83 |
 | GPQA Diamond (avg@8) | 89,96 | 89,2* |
@@ -62,50 +59,43 @@ Resultados publicados por Oriven Labs, pass@1 salvo indicación, con harness id�
 | DeepSWE v1.1 | 39,8% (45/113) | 44,2% (50/113) |
 | IFBench (strict) | 72,0 | 79,5 |
 
-\* La puntuación de GPQA del base es la publicada por Qwen, no medida en el mismo harness; la comparación en esa fila no es estrictamente equivalente. El autor reporta las victorias y derrotas tal cual: DAMS 27B mejora en programación competitiva y razonamiento científico, y queda por detrás del base en SWE agéntico e instrucciones. No se han publicado resultados de benchmarks adicionales ni mediciones independientes en la información disponible.
+LiveCodeBench, SWE-bench Verified (mini-SWE-agent, 250 pasos) y DeepSWE (harness Claude Code, 3 h por tarea) fueron ejecutados por Oriven Labs con harness idénticos para ambos modelos, servidos con vLLM a contexto nativo de 262.144 tokens. *La puntuación de GPQA del base es la publicada por Qwen.
 
 ## Requisitos de hardware
 
-- Peso del checkpoint en bf16: 59,3 GB (tamaño del repo), coherente con 29,6B parámetros a 2 bytes.
-- VRAM estimada para inferencia: un mínimo de ~65-70 GB para pesos más overhead en contexto corto; en la práctica se necesita una GPU de 80 GB (H100, A100 80GB) o H200 para contexto moderado.
-- Contexto completo de 262.144 tokens: requiere paralelismo de tensor (2-4 GPU de 80 GB) por el state de Gated DeltaNet y la caché de atención; el autor indica que las capas de memoria añaden aproximadamente un 33% más de estado GDN por secuencia.
-- GPU consumer: no cabe en bf16 en RTX 4090 (24 GB) ni en RTX 5090 (32 GB). No hay cuantizaciones oficiales de 4 bits y las capas `dams_mem` no están soportadas por llama.cpp, por lo que la ejecución en consumer no es viable con los artefactos publicados.
-- Despliegue recomendado: vLLM 0.31 con el plugin `vllm_dams` del repo (`pip install ./DAMS-27B/vllm_dams`), `--language-model-only --max-model-len 262144 --enable-prefix-caching --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder`.
-- Ajuste de memoria: si el motor falla al reservar, reducir `--max-num-seqs` (por ejemplo de 256 a 192). El plugin se puede desactivar con `DAMS_VLLM_PLUGIN=0`, lo que ejecuta el modelo sin memoria.
-- Transformers: `dams_mem_v2.py` es una referencia de arquitectura; no se proporciona ni se ha probado una ruta de carga con `trust_remote_code` para inferencia.
-- Latencia y throughput: no publicados. Como referencia de configuración, el autor recomienda temperature 1.0, top_p 0.95 y top_k 20.
+- VRAM estimada para inferencia en bf16: el checkpoint ocupa 59,3 GB en el repositorio, por lo que se necesita aproximadamente esa cifra más overhead de KV cache y estado de memoria; con cuantización de 8 bits o 4 bits (no documentada oficialmente) bajaría, pero no hay cifras publicadas.
+- GPU recomendadas: para bf16 a contexto largo, GPUs de 80 GB o más (A100 80GB, H100 80GB) o multi-GPU; no se documentan configuraciones oficiales.
+- GPU de consumo: no disponible; no se confirma que quepa en RTX 4090 (24 GB) en bf16.
+- Despliegue: vLLM 0.31 con el plugin `vllm_dams/` incluido en el repo (ruta usada en todos los benchmarks); `transformers` solo como referencia de arquitectura, sin ruta `trust_remote_code` probada para inferencia.
+- Nota de memoria: las capas DAMS añaden ~33% más estado Gated DeltaNet por secuencia; si el motor falla al asignar, bajar `--max-num-seqs` (por ejemplo de 256 a 192). El plugin se puede desactivar con `DAMS_VLLM_PLUGIN=0`, lo que ejecuta el modelo sin memoria.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | LiveCodeBench v6 | SWE-bench Verified | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| DAMS 27B (it6) | 29,6B | 262.144 | 88,15 | 85,2% (426/500) | Apache 2.0 | Pesos abiertos en Hugging Face; requiere plugin vLLM propio |
-| Qwen3.8-27B (base) | ~27B (nominal) | 262.144 | 84,83 | 86,6% (433/500) | Apache 2.0 | Pesos abiertos; soporte estándar en transformers y vLLM |
-| Otros modelos de ~27B de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| DAMS 27B (it6) | ~29,6B | 262.144 | 85,2% | Apache 2.0 | Pesos abiertos en HF |
+| Qwen3.8-27B (base) | no disponible | 262.144 (según repo DAMS) | 86,6% | Apache 2.0 | Pesos abiertos en HF |
+| Alternativas de mismo tamaño | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación directa solo es posible con el modelo base, ya que la información proporcionada no incluye datos verificables de otras alternativas de tamaño o tarea equivalentes. Frente al base, DAMS 27B gana 3,32 puntos en LiveCodeBench v6 y 0,76 en GPQA Diamond (avg@8, con la salvedad de harness distinto), y pierde 1,4 puntos en SWE-bench Verified, 4,4 en DeepSWE v1.1 y 7,5 en IFBench strict.
+La comparación directa disponible es con su modelo base Qwen3.8-27B: DAMS gana en LiveCodeBench v6 y GPQA Diamond, y pierde en SWE-bench Verified, DeepSWE v1.1 e IFBench estricto. No se dispone de datos de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La memoria DAMS no persiste entre peticiones: es estado por petición, no un mecanismo de memoria a largo plazo entre llamadas.
-- Las ramas de memoria están ligeramente entrenadas en esta release; el propio autor califica su contribución como pequeña y anuncia memoria persistente más fuerte para versiones posteriores.
-- Ejecutar el modelo sin el plugin (transformers o vLLM estándar) omite `model-dams-mem.safetensors` y produce un modelo distinto al evaluado, sin aviso explícito.
-- El plugin está escrito y probado para vLLM 0.31; versiones distintas pueden requerir adaptación.
-- Retroceso frente al base en tareas agénticas de SWE (DeepSWE v1.1: 39,8% frente a 44,2%) y en seguimiento de instrucciones estrictas (IFBench: 72,0 frente a 79,5).
-- La puntuación de GPQA del base procede de la publicación de Qwen, no del mismo harness; la comparación en esa fila no es equivalente.
-- Todos los benchmarks son autoinformados por Oriven Labs, sin verificación independiente en la información disponible; el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
-- Visión no entrenada ni evaluada: aunque los pesos del encoder estén presentes, no hay garantía de calidad multimodal y el despliegue recomendado es solo texto.
-- Idiomas no declarados: no hay información sobre cobertura multilingüe ni sobre calidad fuera del inglés técnico.
-- Riesgo de alucinación inherente a modelos de lenguaje en código y en citas de API; la verificación mediante tests es parte del diseño del entrenamiento, pero no elimina el riesgo en producción.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe conservarse el aviso de licencia y atribución al base Qwen3.8-27B.
-- Fecha del repositorio muy reciente (29 de octubre de 2026) y ecosistema de tooling limitado al plugin propio; no hay soporte en llama.cpp, Ollama ni TGI con los artefactos publicados.
+- La memoria DAMS es por petición y no persiste entre solicitudes; no hay memoria a largo plazo entre llamadas.
+- Las ramas de memoria están ligeramente entrenadas en esta versión, por lo que su contribución es pequeña; se anuncia memoria persistente más fuerte para versiones posteriores.
+- Retrocede frente al base en tareas agénticas de SWE (SWE-bench Verified 85,2% frente a 86,6%; DeepSWE 39,8% frente a 44,2%) y en seguimiento de instrucciones estricto (IFBench 72,0 frente a 79,5).
+- Requiere el plugin de vLLM incluido en el repo: `transformers` y vLLM estándar ignoran `model-dams-mem.safetensors` y ejecutan el modelo sin memoria, que no es el evaluado.
+- El codificador de visión está presente pero no se entrenó ni evaluó; no debe asumirse capacidad visual.
+- Idiomas soportados no documentados; no hay garantías multilingües declaradas.
+- No se publican datos de sesgos, tasas de alucinación ni cuantizaciones oficiales.
+- El chat template incluye un system prompt por defecto que identifica el modelo como DAMS-27B y le indica que reconozca no saber más allá de unos hechos fijados; un system message propio lo reemplaza.
+- Licencia Apache 2.0, permisiva para uso comercial, sujeta a los términos del fichero `LICENSE` del repositorio.
+- Solo 1 like y 998 descargas en el momento de la consulta: ecosistema pequeño, poca validación externa independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Oriven-Labs/DAMS-27B
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Sitio de Oriven Labs: https://orivenlabs.com/
-- Organización en GitHub: https://github.com/Oriven-Labs
+- Hugging Face: https://huggingface.co/Oriven-Labs/DAMS-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Contacto del autor: alexander@orivenlabs.com
-- Paper técnico: no disponible
-- Demo o espacio interactivo: no disponible
+- Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

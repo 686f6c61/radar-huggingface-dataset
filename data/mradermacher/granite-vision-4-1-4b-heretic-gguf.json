@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/granite-vision-4.1-4b-heretic-GGUF",
+  "slug": "mradermacher-granite-vision-4-1-4b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/granite-vision-4.1-4b-heretic-GGUF",
+  "created_at": "2026-11-20T23:26:30.000Z",
+  "updated_at": "2026-11-20T23:39:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:heretic-org/granite-vision-4.1-4b-heretic",
+    "base_model:quantized:heretic-org/granite-vision-4.1-4b-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 579129072,
+  "parameters_human": "579.1M",
+  "storage_bytes": 1911763520,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": "heretic-org/granite-vision-4.1-4b-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,54 +1,51 @@
 # oroboros-labs/claude-sonnet-5
 
-# oroboros-labs/claude-sonnet-5
-
 ## Resumen
 
-`oroboros-labs/claude-sonnet-5` es un modelo de pesos abiertos publicado en Hugging Face por el usuario comunitario `oroboros-labs`. A pesar del nombre, que imita deliberadamente la nomenclatura comercial de Anthropic, no existe ninguna indicacion de que este modelo haya sido desarrollado por Anthropic ni de que sea un derivado autorizado de su familia Claude. Se trata, por tanto, de un modelo de terceros con un nombre potencialmente confuso que conviene tratar con cautela.
+Claude Sonnet 5, publicado por el usuario oroboros-labs en Hugging Face, es un repositorio que empaqueta un archivo de pesos en formato GGUF (5,0 GB) junto con un `Modelfile` de Ollama diseñado para habilitar tool calling y comportamiento agéntico "out of the box". Según la model card, los pesos corresponden a la base de Claude Sonnet 5 "sin modificar", y el valor añadido del repositorio reside en la plantilla de chat con soporte de funciones y en un `SYSTEM` prompt que incorpora un núcleo de identidad, lógica de enrutamiento y un contrato de herramientas con servidores MCP locales.
 
-El unico dato tecnico solido disponible es el recuento de parametros: 8.190.735.360 parametros (~8,2 mil millones), registrado a partir de los archivos safetensors del repositorio. El repositorio ocupa 5,0 GB y esta etiquetado como `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere un modelo orientado a conversacion distribuido en formato GGUF y compatible con endpoints de inferencia.
+El dato objetivo disponible en los metadatos es de 8.190.735.360 parámetros (aproximadamente 8,2 mil millones), lo que contradice la denominación comercial "Sonnet 5" y sugiere que se trata de un modelo de escala muy inferior a la de los modelos frontera que evoca el nombre. No hay información verificable sobre arquitectura, datos de entrenamiento, tokenizador ni benchmarks. La licencia declarada es Apache 2.0.
 
-La relevancia de la ficha es mas bien critica que promocional: el modelo acumula 333 descargas y 0 likes, no declara licencia, idiomas ni pipeline, y no hay resultados de benchmarks publicados. Antes de considerarlo para cualquier uso, es imprescindible verificar la procedencia de los pesos y los terminos legales aplicables, que aqui figuran como no disponibles.
+La relevancia de este repositorio es fundamentalmente práctica para quien quiera experimentar con un flujo agéntico local vía Ollama, pero debe abordarse con cautela: la atribución a Anthropic no está respaldada por los metadatos, el nombre del modelo puede inducir a confusión y no se dispone de evaluación independiente alguna.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 8.190.735.360 (~8,2 mil millones) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Parametros totales | 8.190.735.360 (~8,2 B) |
+| Parametros activos | no aplica (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (lista exacta de cuantizaciones no disponible) |
+| Tipos de cuantizacion | GGUF (cuantización concreta no especificada en la información disponible) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF; el recuento de parametros procede de safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (`model.gguf`) y `Modelfile` para Ollama |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. Por el tamano (8,2 mil millones de parametros) y el formato de publicacion (GGUF, orientado a inferencia local mediante llama.cpp y similares), es plausible que se trate de un transformer decoder de tipo denso, pero esto no puede confirmarse con la informacion proporcionada y no debe darse por sentado.
+No se dispone de información sobre la arquitectura interna del modelo: la model card no detalla si es un transformer denso, un modelo con atención lineal, una mezcla de expertos o una arquitectura híbrida. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o similares.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste (SFT, RLHF, DPO) ni sobre innovaciones tecnicas concretas. La etiqueta `conversational` apunta a un ajuste orientado a dialogo, pero se desconoce su alcance. Toda la seccion queda marcada como no disponible.
+El único componente técnico documentado es el `Modelfile`, que define tres elementos: una directiva `FROM` que apunta al archivo de pesos del propio repositorio, una `TEMPLATE` de chat con soporte de function calling (entrada y salida de llamadas a herramientas) y un bloque `SYSTEM` que concatena un núcleo de identidad "sonnet-5", un bloque `[DEEPLOGIC CORE]` de enrutamiento y disciplina de razonamiento, y un `[THE AGENT + TOOL CONTRACT]` con el conjunto de herramientas de CLI y servidores MCP. La model card afirma que los pesos no han sido modificados respecto a la base, pero no aporta trazabilidad sobre el origen de esa base.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta orientado a mantener dialogos, aunque no hay detalle sobre calidad ni alcance.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse mediante infraestructura de endpoints de Hugging Face.
-- Capacidades de razonamiento, codigo, matematicas o vision: no disponibles.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (no se declaran idiomas).
-- Modo thinking, audio u otras capacidades especiales: no disponibles.
+- Generación de texto conversacional multi-turno, según la etiqueta `conversational` del repositorio.
+- Tool calling / function calling mediante la plantilla de chat incluida en el `Modelfile`.
+- Comportamiento agéntico: la model card declara un contrato de herramientas con conjunto de herramientas de CLI y servidores MCP accesibles en local (127.0.0.1).
+- Integración con Ollama mediante `ollama create` y `ollama run`.
+- Integración con una CLI propietaria ("Oroboros-Anthropic Claude CLI") según la documentación del autor.
+- Capacidades multilingües: no disponible.
+- Razonamiento explícito, matemáticas, código, visión o audio: no disponible (no se documentan).
 
 ## Casos de uso
 
-Dado que no hay informacion verificable sobre capacidades, contexto o licencia, los casos de uso solo pueden plantearse como hipotesis a validar, nunca como recomendaciones establecidas.
-
-- Prototipado de asistentes conversacionales locales: el formato GGUF permite ejecutar el modelo en equipos de gama de consumo mediante llama.cpp u Ollama, util para experimentar con dialogos sin depender de la nube, siempre que la licencia lo permita.
-- Pruebas de integracion en pipelines de inferencia: la compatibilidad declarada con endpoints permitiria desplegarlo detras de una API tipo OpenAI para evaluar su comportamiento en tareas de generacion.
-- Evaluacion comparativa interna: puede usarse como referencia adicional en una bateria de pruebas propia frente a modelos de ~8B, dado que no existen benchmarks publicos.
-- Experimentacion academica: util como objeto de estudio sobre modelos comunitarios con nombres que imitan marcas comerciales y sus implicaciones eticas y legales.
-- Chat de bajo coste en hardware modesto: con cuantizacion agresiva (Q4/Q5) cabria en GPU de 8-12 GB, adecuado para demos o uso personal no critico.
-- Generacion de texto auxiliar: borradores, resumenes o reformulacion en entornos donde la precision no sea critica, sujeto a validacion de calidad y licencia.
+- Prototipado de agentes locales con Ollama: el `Modelfile` ya incorpora plantilla de tool calling y un contrato de herramientas, lo que permite arrancar un bucle agente sin escribir el prompt de sistema desde cero.
+- Automatización de tareas de línea de comandos: el contrato de herramientas descrito sugiere uso con utilidades de CLI, adecuado para scripts de operación sobre el sistema local.
+- Integración con servidores MCP: el repositorio declara soporte de MCP, lo que facilita conectar el modelo a fuentes de datos y herramientas externas en un entorno controlado.
+- Experimentación con prompts de sistema complejos: el bloque `[DEEPLOGIC CORE]` sirve como caso de estudio de ingeniería de prompts para enrutamiento y disciplina de razonamiento.
+- Evaluación comparativa de plantillas de function calling: útil para medir cómo afecta la plantilla y el prompt de sistema a la tasa de llamadas correctas en un modelo de ~8 B.
+- Despliegue en hardware de consumo: con 8,2 B de parámetros en GGUF y un repositorio de 5,0 GB, es viable en GPU de gama media para pruebas de concepto, no para producción crítica.
+- Docencia y formación: permite ilustrar el ciclo completo de un agente local (plantilla, herramientas, ejecución) sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
@@ -56,45 +53,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones derivadas del recuento de parametros (8,2B) y del tamano estandar de las cuantizaciones; no proceden de mediciones del repositorio.
-
-- VRAM estimada para inferencia:
-  - FP16 / BF16: aproximadamente 16,4 GB solo de pesos, con overhead en torno a 18-20 GB.
-  - Q8_0: aproximadamente 8,7 GB, con overhead en torno a 10 GB.
-  - Q5_K_M: aproximadamente 5,7 GB, con overhead en torno a 7 GB.
-  - Q4_K_M: aproximadamente 4,9 GB, con overhead en torno a 6 GB.
-  - Q3_K_M / Q2_K: en torno a 4,0 GB y 3,0 GB respectivamente, con perdida notable de calidad.
-- GPU recomendadas: para FP16, A100 40 GB, H100 o RTX 4090 24 GB; para Q4/Q5, RTX 3060 12 GB, RTX 4070, RTX 4090 o equivalentes.
-- Consumer GPU: si, en cuantizaciones Q4/Q5 cabe en GPUs de 8-12 GB (RTX 3060, 4060, 4070, Apple Silicon con memoria unificada suficiente).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y text-generation-webui para GGUF; el tag `endpoints_compatible` sugiere despliegue mediante endpoints de Hugging Face. El soporte en vLLM o TGI no esta confirmado.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: el repositorio ocupa 5,0 GB, lo que sugiere una cuantización de aproximadamente 4-5 bits para 8,2 B de parámetros; la inferencia requerirá en torno a 5-6 GB de VRAM para el archivo de pesos más el espacio de contexto (estimación orientativa, no confirmada por el autor).
+- GPU recomendadas: no disponible. Por tamaño, una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB deberían acomodar el modelo con contexto moderado.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 8 GB o más de VRAM para cuantizaciones de 4 bits.
+- Opciones de despliegue: Ollama es la vía documentada (`ollama create` + `ollama run`). llama.cpp es compatible por el formato GGUF. vLLM y TGI no están documentados para este repositorio.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento del modelo objeto de la ficha, por lo que la comparacion se limita a parametros, contexto y licencia de alternativas de tamano comparable. Todas las celdas del modelo analizado corresponden a datos no disponibles salvo el recuento de parametros.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| oroboros-labs/claude-sonnet-5 | ~8,2 B | no disponible | Apache 2.0 | GGUF | Repositorio con Modelfile agéntico; sin benchmarks |
+| Llama 3.1 8B Instruct | 8 B | 128 K | Llama 3.1 Community | safetensors, GGUF | Referencia abierta de escala similar con evaluación publicada |
+| Qwen2.5 7B Instruct | 7,6 B | 128 K | Apache 2.0 | safetensors, GGUF | Alternativa Apache 2.0 con soporte de tool calling documentado |
+| Mistral 7B Instruct | 7,2 B | 32 K | Apache 2.0 | safetensors, GGUF | Base habitual para despliegues ligeros en Ollama |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| oroboros-labs/claude-sonnet-5 | ~8,2B | no disponible | no disponible | Hugging Face (comunitaria) |
-| Meta Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Hugging Face, amplia adopcion |
-| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | Hugging Face, amplia adopcion |
-| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (segun variante) | Hugging Face, amplia adopcion |
-
-No es posible comparar rendimiento (MMLU, HumanEval, GSM8K u otros) porque el modelo analizado no publica resultados y no deben inferirse.
+La comparación con estos modelos es por escala de parámetros y licencia, no por rendimiento medido, ya que no hay benchmarks publicados para el modelo del repositorio. Los datos de contexto de las alternativas provienen de sus respectivas documentaciones públicas.
 
 ## Limitaciones y advertencias
 
-- Nombre potencialmente enganoso: el identificador `claude-sonnet-5` imita la marca de Anthropic sin evidencia de relacion alguna. Puede inducir a error sobre su origen y calidad.
-- Licencia no declarada: sin licencia explicita, el uso comercial es juridicamente arriesgado y debe aclararse antes de cualquier despliegue en produccion.
-- Procedencia incierta de los pesos: al no haber informacion sobre entrenamiento ni linaje, no puede descartarse que los pesos deriven de otro modelo con condiciones de uso incompatibles.
-- Riesgo de alucinacion: sin datos de evaluacion no puede acotarse; debe asumirse un riesgo estandar o superior al de modelos con ajuste documentado.
-- Sesgos conocidos: no disponibles.
-- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados, lo que impide garantizar un comportamiento multilingue correcto.
-- Soporte nulo de la comunidad: 0 likes y 333 descargas indican escasa validacion externa; no hay issues, demos ni documentacion adicionales.
-- Ausencia de benchmarks: imposible verificar calidad, seguridad o robustez frente a alternativas conocidas.
-- Advertencia general para produccion: no se recomienda su uso en sistemas criticos sin una evaluacion propia exhaustiva y sin resolver las dudas de licencia y procedencia.
+- El nombre "Claude Sonnet 5" y la referencia a Anthropic en la model card no están respaldados por los metadatos de Hugging Face ni por documentación oficial de Anthropic; trátese como un repositorio de terceros sin afiliación verificada.
+- El número de parámetros (8,2 B) es incompatible con la escala esperable de un modelo denominado "Sonnet 5"; la denominación puede inducir a error sobre sus capacidades reales.
+- No hay información sobre el origen de los pesos, los datos de entrenamiento ni el proceso de alineación, lo que impide evaluar sesgos, toxicidad o calidad.
+- Riesgo de alucinación: no cuantificado; sin benchmarks ni evaluaciones publicadas.
+- Longitud de contexto e idiomas soportados no documentados; no se debe asumir soporte multilingüe ni ventanas largas.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar de forma independiente la procedencia legítima de los pesos antes de usarlos en producción.
+- La ejecución con `--dangerously-skip-permissions` que sugiere la model card otorga al agente permisos sin confirmación; es un riesgo de seguridad relevante en entornos locales.
+- El repositorio tiene 977 descargas y 0 likes en el momento de la consulta, sin señales de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/oroboros-labs/claude-sonnet-5
-- No se han encontrado en la busqueda web enlaces relevantes al modelo, su paper, repositorio o demo; los resultados obtenidos corresponden unicamente al simbolo ouroboros (Wikipedia), a Oroboros Instruments y a contenidos no relacionados.
+- Repositorio en Hugging Face: https://huggingface.co/oroboros-labs/claude-sonnet-5
+- Ollama (runtime documentado): https://ollama.com
+- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

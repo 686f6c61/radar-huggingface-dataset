@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 751,
+  "downloads_30d": 766,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -42,11 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LLM Leaderboard: Benchmarks & API Prices | EvalLedger",
-      "url": "https://evaledger.com/",
-      "snippet": "LLM Leaderboard: Compare AI Models by Benchmark and Price Updated: 2026-10-27"
-    }
-  ]
+  "sources": []
 }

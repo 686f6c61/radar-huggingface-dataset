@@ -2,88 +2,101 @@
 
 ## Resumen
 
-Qwen3.8-27B-Kimiko-2-BF16-GGUF es una cuantizacion en formato GGUF del modelo Qwen3.8-27B-Kimiko-2-BF16, un merge creado por AMAImedia a partir de la familia Qwen3.8. El modelo base, Qwen3.8-27B, es un modelo denso de 27.000 millones de parametros desarrollado por Alibaba Cloud, con una arquitectura de atencion hibrida que combina atencion completa y lineal, y una ventana de contexto nativa de 262.144 tokens. Es un modelo de lenguaje y vision (vision-language) orientado a tareas de codificacion, trabajo profesional, investigacion y tareas agenciales de largo horizonte.
+Qwen3.8-27B-Kimiko-2-BF16-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo AMAImedia/Qwen3.8-27B-Kimiko-2-BF16, un merge de modelos de la familia Qwen 3 (etiquetado por el autor como qwen3_5, qwen3_6 y qwen3_8) construido con mergekit. El trabajo de cuantización lo firma mradermacher, un publicador habitual de GGUF derivados de modelos abiertos, que en este caso ofrece el modelo en BF16 junto con una matriz de cuantizaciones desde Q2_K hasta Q8_0, además de dos ficheros mmproj para el componente multimodal.
 
-La version GGUF, publicada por mradermacher, ofrece 13 cuantizaciones diferentes que van desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB), lo que permite desplegar el modelo en una amplia gama de hardware, desde GPU de consumo hasta servidores profesionales. Incluye ademas dos ficheros mmproj (multi-modal projector) en f16 y Q8_0 para habilitar las capacidades de vision del modelo. La relevancia de esta publicacion radica en que facilita el uso del modelo en entornos de inferencia local mediante herramientas como llama.cpp u Ollama, sin necesidad de infraestructura cloud.
+El modelo base cuenta con 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), lo que lo sitúa en la franja de modelos densos de gran tamaño ejecutables en hardware de consumo con cuantizaciones agresivas, y en GPUs profesionales con cuantizaciones de mayor calidad. El repositorio ocupa 187,9 GB, coherente con la suma de todas las variantes publicadas, y la model card declara únicamente el idioma inglés.
 
-## Especificaciones tecnicas
+La relevancia de esta ficha es doble: por un lado, documenta una alternativa práctica para desplegar un modelo de ~27B en local mediante llama.cpp u Ollama sin necesidad de infraestructura de centro de datos; por otro, advierte de que se trata de un merge de procedencia comunitaria, sin licencia declarada en el repositorio, sin benchmarks publicados y sin model card técnica detallada, lo que exige cautela antes de usarlo en producción.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido (atencion completa + atencion lineal) |
-| Parametros totales | 26.895.998.464 (26,9 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens (nativo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | Ingles (segun model card) |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (safetensors disponible en el repositorio base) |
+| Arquitectura | no disponible (modelo base etiquetado como qwen3_5/qwen3_6/qwen3_8; merge con mergekit) |
+| Parámetros totales | 26.895.998.464 (~26,9B) |
+| Parámetros activos | no disponible (no se declara que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | F16/BF16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors/BF16 |
+| Tamaño del repositorio | 187,9 GB |
+| Modelo base | AMAImedia/Qwen3.8-27B-Kimiko-2-BF16 |
+| Librería declarada | transformers |
+| Descargas / likes | 707 / 0 |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B es un modelo denso de 27.000 millones de parametros que utiliza una arquitectura de atencion hibrida, compartiendo el mismo backbone que el modelo MoE flagship de 2,4 billones de parametros de la familia Qwen3.8. La capa de mezcla es el aspecto mas interesante: solo 16 de las 64 capas ejecutan atencion completa (con un intervalo de atencion completa de 4), mientras que las otras 48 capas utilizan atencion lineal con un estado recurrente constante. Esta combinacion permite manejar contextos muy largos (262K tokens) con un coste computacional reducido en comparacion con la atencion completa tradicional.
+No se dispone de información técnica sobre la arquitectura interna del modelo base en la documentación proporcionada. Los tags del repositorio indican que se trata de un merge construido con mergekit a partir de modelos de la familia Qwen 3 (referidos como qwen3_5, qwen3_6 y qwen3_8), y el nombre del modelo base conserva el sufijo BF16, lo que sugiere que el autor publicó los pesos en precisión bfloat16 antes de la cuantización. No se detalla la receta de merge (tipo de combinación, pesos por capa ni modelo de tokenizador adoptado).
 
-El modelo Kimiko-2 es un merge creado por AMAImedia utilizando mergekit, que combina pesos de diferentes modelos de la familia Qwen3.8 (qwen3_5, qwen3_6, qwen3_8). No se dispone de informacion detallada sobre el dataset de entrenamiento, el proceso de alineacion (RLHF/DPO) ni las tecnicas de optimizacion especificas empleadas en el merge. La cuantizacion GGUF fue realizada por mradermacher mediante conversion estatica de los pesos originales en BF16.
+Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si hubo etapas de ajuste fino supervisado, RLHF o DPO. La presencia de ficheros mmproj en el repositorio de cuantizaciones indica que el modelo base incorpora un componente multimodal (proyección de visión), aunque no se especifica qué codificador visual utiliza ni qué resolución de imagen admite.
+
+En el plano de la cuantización, mradermacher publica cuantizaciones estáticas (no imatrix) en este repositorio, y remite a un repositorio hermano (Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF) para las variantes ponderadas con imatrix, que suelen ofrecer mejor relación calidad/tamaño en bits bajos. No se documenta ningún mecanismo especial de decodificación especulativa, atención lineal ni técnicas híbridas SSM.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: modelo de lenguaje generalista con capacidades de razonamiento configurable (modo thinking opcional).
-- Codificacion: orientado a tareas de programacion, con soporte para multiples lenguajes.
-- Vision-language: incluye ficheros mmproj que habilitan la comprension de imagenes (multimodal).
-- Tareas agenciales: disenado para tareas de largo horizonte y uso como agente autonomo.
-- Ventana de contexto larga: 262K tokens nativos, adecuado para documentos extensos y conversaciones multi-turno.
-- Tool calling / function calling: no se confirma explicitamente en la informacion disponible, aunque es una capacidad comun en la familia Qwen3.8.
-- Multilingue: la model card indica solo ingles, aunque el modelo base Qwen3.8 soporta multiples idiomas.
+- Generación de texto conversacional: el tag `conversational` y el pipeline declarado apuntan a un uso principal como modelo de chat multi-turno.
+- Procesamiento multimodal: la presencia de ficheros mmproj (Q8_0 y f16) confirma soporte de entrada de imágenes en el modelo base, aunque no se detallan las capacidades exactas de visión.
+- Razonamiento y código: no disponible; no hay documentación que confirme capacidades específicas en matemáticas, código o razonamiento de varios pasos.
+- Tool calling / function calling: no disponible; no se documenta soporte explícito.
+- Agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según la model card; no se declara soporte de castellano ni de otros idiomas.
+- Modo thinking o razonamiento extendido: no disponible.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante infraestructura compatible con la API de Hugging Face.
 
 ## Casos de uso
 
-- Asistente de codificacion en produccion: el modelo puede integrarse en IDE o pipelines de CI/CD para generar, revisar y refactorizar codigo. Su ventana de 262K tokens permite procesar repositorios completos o archivos muy extensos en una sola pasada.
-- Analisis de documentos legales y tecnicos: gracias a su contexto largo, puede resumir, extraer informacion y responder preguntas sobre contratos, patentes o especificaciones tecnicas de cientos de paginas.
-- Agente autonomo para automatizacion de tareas: su capacidad para tareas de largo horizonte lo hace adecuado para agentes que deben planificar y ejecutar multiples pasos, como gestion de correo, organizacion de archivos o scraping web.
-- Comprension de imagenes y documentos escaneados: con los ficheros mmproj, puede procesar capturas de pantalla, diagramas, graficos y documentos escaneados para extraer informacion o transcribir contenido.
-- Chatbot de atencion al cliente con contexto largo: puede mantener conversaciones prolongadas recordando todo el historial, lo que mejora la coherencia en interacciones de soporte tecnico.
-- Investigacion academica: util para revisar literatura cientifica, resumir articulos extensos y ayudar en la redaccion de trabajos, gracias a su capacidad de razonamiento y procesamiento de documentos largos.
-- Despliegue local en entornos con restricciones de privacidad: al estar disponible en GGUF, puede ejecutarse en infraestructura propia sin enviar datos a servicios cloud, cumpliendo requisitos de confidencialidad.
+- Asistente conversacional local en inglés: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo con una única GPU de 24 GB usando Q4_K_M (16,6 GB), lo que permite conversaciones multi-turno sin depender de servicios en la nube.
+- Procesamiento de documentos con imágenes: gracias a los ficheros mmproj, puede emplearse para tareas de descripción de imágenes o extracción de información visual en pipelines internos, siempre que se valide la calidad real del componente multimodal.
+- Prototipado de agentes y evaluación de merges: resulta útil como banco de pruebas para comparar el comportamiento de un merge comunitario frente al modelo Qwen original, antes de decidir si merece la pena integrarlo en un producto.
+- Generación de texto creativo y redacción en inglés: con Q6_K (22,2 GB) o Q8_0 (28,7 GB) en GPUs de 32-48 GB se obtiene la máxima calidad disponible en este repositorio para tareas de redacción.
+- Inferencia en entornos con VRAM limitada: las variantes Q2_K (10,8 GB) y Q3_K_S (12,2 GB) permiten ejecutar el modelo en GPUs de 12-16 GB, a costa de una pérdida de calidad que debe medirse empíricamente.
+- Investigación sobre cuantización: la disponibilidad de doce variantes de cuantización en un mismo repositorio facilita estudios comparativos de perplejidad y calidad entre esquemas K-quant e IQ.
+- Despliegue en servidores sin GPU dedicada: las cuantizaciones bajas permiten inferencia en CPU con llama.cpp, útil para pruebas de integración o demos de baja concurrencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye datos de evaluacion comparativa (MMLU, HumanEval, GSM8K, etc.) para esta version cuantizada ni para el modelo base Kimiko-2. Para referencia, el modelo Qwen3.8-27B original de Alibaba Cloud ha sido evaluado en benchmarks como MathVision, pero esos resultados no son directamente aplicables a este merge cuantizado.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Q2_K (10,8 GB) cabe en GPU de 12 GB; Q4_K_M (16,6 GB) requiere GPU de 20-24 GB; Q8_0 (28,7 GB) necesita GPU de 32 GB o mas.
-- GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones Q4/Q5; A100 40/80 GB o H100 para Q6/Q8 y contexto largo; GPU de 12-16 GB (RTX 3060, RTX 4070) para Q2_K/Q3_K con contexto reducido.
-- En consumer GPU: si, con cuantizaciones Q2_K a Q5_K_M en GPU de 16-24 GB, aunque la velocidad dependera del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM (con conversion a formato compatible), TGI.
-- Latencia y throughput: no disponible. Dependera de la GPU, la cuantizacion y la longitud del contexto. La arquitectura hibrida con atencion lineal deberia ofrecer mejor rendimiento en contexto largo que un transformer denso equivalente.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~10,8 GB; Q3_K_S ~12,2 GB; Q3_K_M ~13,4 GB; Q3_K_L ~14,4 GB; IQ4_XS ~15,3 GB; Q4_K_S ~15,7 GB; Q4_K_M ~16,6 GB; Q5_K_S ~18,8 GB; Q5_K_M ~19,3 GB; Q6_K ~22,2 GB; Q8_0 ~28,7 GB. Hay que añadir el espacio para el contexto KV cache, que crece con la longitud de contexto y no está documentado.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) en las mismas variantes; A100 40/80 GB o H100 para Q8_0 y para contextos largos; GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 4060 Ti 16 GB) para Q2_K y Q3_K_S.
+- ¿Cabe en GPU de consumo? Sí: las variantes Q2_K a Q4_K_M caben en GPUs de 12-24 GB, y Q8_0 requiere 32 GB o más (RTX 5090, A6000, A100).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, aunque no se documenta compatibilidad verificada.
+- Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 26,9 B | 262K | Hibrida (full + linear attention) | Apache 2.0 (segun Qwen) | safetensors |
-| Qwen3.8-27B-Kimiko-2-BF16 | 26,9 B | 262K | Hibrida (merge) | No disponible | safetensors, GGUF |
-| Qwen3.5-27B | 27 B | no disponible | Transformer denso | Apache 2.0 | safetensors |
-| Llama 3.3-70B | 70 B | 128K | Transformer denso | Llama 3.3 | safetensors, GGUF |
+| Qwen3.8-27B-Kimiko-2-BF16-GGUF (este) | ~26,9B | no disponible | no disponible | GGUF | Merge comunitario, solo inglés, sin benchmarks |
+| Qwen2.5-32B-Instruct (referencia de la familia Qwen) | ~32,8B | 32.768 tokens (ampliable) | Apache 2.0 (según versión) | safetensors, GGUF | Modelo oficial con benchmarks publicados y licencia clara |
+| Gemma 2 27B | ~27B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | Tamaño comparable, licencia con restricciones de uso |
+| Mistral Small 24B | ~24B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamaño similar con soporte multilingüe |
 
-La comparativa se basa en datos publicos de los modelos base. No se dispone de benchmarks que permitan comparar el rendimiento real del merge Kimiko-2 frente a estas alternativas.
+La comparación debe tomarse con cautela: los datos de los modelos alternativos corresponden a sus versiones oficiales y no se han verificado contra la información de este repositorio, que no publica contexto ni licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se especifica la licencia del modelo Kimiko-2 ni de esta cuantizacion. Esto genera incertidumbre legal para uso comercial. Se recomienda contactar con AMAImedia antes de usar el modelo en produccion.
-- Idioma limitado: la model card indica solo ingles. Aunque el modelo base Qwen3.8 soporta mas idiomas, el merge puede haber alterado el comportamiento multilingue.
-- Riesgo de alucinacion: como todo LLM, puede generar informacion falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
-- Sesgos: no se dispone de informacion sobre evaluaciones de sesgo o seguridad para este merge especifico.
-- Cuantizaciones de baja precision: las versiones Q2_K y Q3_K pueden degradar significativamente la calidad de las respuestas. Se recomienda Q4_K_M o superior para uso profesional.
-- Modelo merge sin validacion independiente: al ser un merge de la comunidad, no ha pasado por el mismo proceso de evaluacion y alineacion que el modelo original de Alibaba Cloud.
-- Fecha de creacion futura: el repositorio indica fecha de creacion en agosto de 2026, lo que sugiere que la informacion puede ser especulativa o de un escenario hipotetico.
+- Licencia no declarada: el repositorio no especifica licencia, lo que impide determinar si el uso comercial está permitido. Es un bloqueante para producción hasta aclararlo con el autor.
+- Procedencia del merge: al ser un merge comunitario de modelos Qwen, hereda las obligaciones de las licencias de los modelos originales, que no se detallan.
+- Idiomas: la model card solo declara inglés; no hay evidencia de calidad en castellano ni en otros idiomas.
+- Sin benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni de perplejidad, por lo que la calidad real del merge es desconocida y debe evaluarse internamente.
+- Riesgo de alucinación: inherente a los modelos generativos de esta escala; sin datos de evaluación no puede acotarse.
+- Sesgos: no documentados; al desconocerse la composición del dataset de los modelos base, no pueden evaluarse sesgos específicos.
+- Contexto desconocido: la longitud de contexto no está publicada, lo que complica el dimensionamiento de la KV cache y el diseño de aplicaciones con documentos largos.
+- Cuantizaciones estáticas: este repositorio no incluye variantes imatrix; para bits bajos (Q2, Q3) las versiones i1 del repositorio hermano pueden ofrecer mejor calidad.
+- Componente multimodal sin documentar: se desconoce qué codificador visual usa y qué tareas de visión soporta con garantías.
+- Fecha de creación futura (2026-08-27) y escaso respaldo comunitario (0 likes, 707 descargas): señales de un modelo poco validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Kimiko-2-BF16-GGUF
-- Modelo base (BF16): https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16
-- Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Pagina de recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
-- Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen3.8
-- Guia de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Kimiko-2-BF16-GGUF
+- Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Kimiko-2-BF16-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

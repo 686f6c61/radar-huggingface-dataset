@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 763,
+  "downloads_30d": 776,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Breaking News, Latest News and Videos | CNN",
-      "url": "https://www.cnn.com/",
-      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
-    },
-    {
-      "title": "CNN All Access with Optimum | Stream Live News & Originals",
-      "url": "https://www.optimum.com/articles/tv/cnn-all-access-stream-live-news",
-      "snippet": "Nov 19, 2025 · CNN All Access is the single destination where you can find trusted journalism, breaking news, and the exclusive …"
-    },
-    {
-      "title": "CNN: Live & Breaking News - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone&hl=en-US",
-      "snippet": "The CNN app is your destination for unrivaled, fact-based reporting. Stay informed at every turn as the story breaks through short …"
-    },
-    {
-      "title": "CNN - Facebook",
-      "url": "https://www.facebook.com/cnn/",
-      "snippet": "Although AI CEOs Sam Altman and Elon Musk, among others, agreed with Dario Amodei's proposal to work together to slow down …"
-    },
-    {
-      "title": "World news - breaking news, video, headlines and opinion | CNN",
-      "url": "https://www.cnn.com/world",
-      "snippet": "View CNN world news today for international news and videos from Europe, Asia, Africa, the Middle East and the Americas."
-    }
-  ]
+  "sources": []
 }

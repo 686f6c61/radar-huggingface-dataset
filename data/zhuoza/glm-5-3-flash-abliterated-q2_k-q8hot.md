@@ -2,86 +2,88 @@
 
 ## Resumen
 
-GLM-5.3-Flash-abliterated-Q2_K-q8hot es una cuantización GGUF de tipo "repack" publicada por el usuario ZHUOZA sobre el modelo huihui-ai/Huihui-GLM-5.3-Flash-abliterated, a su vez una variante "abliterated" (sin los mecanismos de rechazo alineados) de GLM-5.3-Flash. El autor restaura a Q8 determinadas rutas críticas del grafo (expertos compartidos y cabeza de salida) que en las cuantizaciones UD-Q2_K_XL e IQ2_XXS de huihui-ai quedaban en precisión baja, con el objetivo declarado de mejorar la escritura de formato largo. El resultado es un artefacto de 217,4 GB con 320.759.404.382 parámetros totales según los safetensors de referencia, empaquetado en GGUF para inferencia local.
+GLM-5.3-Flash-abliterated-Q2_K-q8hot es una re-cuantización GGUF publicada por el usuario ZHUOZA a partir de la versión abliterated de GLM-5.3-Flash distribuida por huihui-ai. El modelo base pertenece a la familia GLM (Zhipu AI / Z.ai) y la variante "abliterated" implica que se han eliminado o atenuado las direcciones de rechazo en el espacio de activaciones, de modo que el modelo responde a peticiones que el modelo original declinaría. Esta ficha describe únicamente el artefacto publicado en Hugging Face, no el modelo original, del cual no se aportan especificaciones en la información disponible.
 
-El modelo resuelve un problema muy concreto: permitir ejecutar un modelo de escala muy grande (~320B) en equipos con 128 GB de memoria unificada o VRAM, manteniendo contexto muy largo. Según la model card, con menos de 3 GiB de uso del sistema operativo y MTP activado, la variante Q2 cabe en un dispositivo de 128 GB con 0,5M de contexto, y la variante IQ2 cabe con `-ub 128` y contexto completo de 1M.
+El interés técnico del repositorio reside en el repack: el autor ha restaurado a cuantización Q8 las "hot paths" del modelo (expertos compartidos y cabeza de salida) que en los GGUF de origen estaban en UD-Q2_K_XL e IQ2_XXS, mejorando según la model card el rendimiento en escritura de formato largo. El resultado es un GGUF de 164,6 GB que, según el autor, con menos de 3 GiB de uso del sistema operativo y MTP activado, cabe en un dispositivo de 128 GB con 0,5 M de contexto (versión Q2) o con contexto completo de 1 M si se reduce la precisión de la caché K (versión IQ2).
 
-Es relevante ahora porque combina tres tendencias: cuantizaciones de muy baja precisión con "hot paths" en Q8 (técnica de imatrix selectiva), modelos de escala frontera comprimidos para hardware de consumo profesional, y variantes abliterated que eliminan el alineamiento de seguridad. La licencia es MIT, lo que facilita su uso comercial, aunque el modelo base y su procedencia plantean advertencias importantes.
+El dato de parámetros totales declarado en safetensors es de 320.759.404.382 (aproximadamente 321 mil millones), lo que sitúa al modelo en la categoría de modelos grandes, presumiblemente con arquitectura MoE dado el contexto de "expertos compartidos" mencionado en la model card, aunque no se confirma el número de parámetros activos. La licencia es MIT y el repositorio acumula 919 descargas en el momento de la consulta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base GLM-5.3-Flash; presumiblemente transformer con expertos, no confirmado en la informacion proporcionada) |
-| Parametros totales | 320.759.404.382 |
-| Parametros activos | no disponible |
-| Longitud de contexto | hasta 1M tokens en la variante IQ2 con `-ub 128`; 0,5M en la variante Q2 (según model card) |
-| Tipos de cuantizacion | GGUF Q2_K (repack con hot paths en Q8); se mencionan también UD-Q2_K_XL e IQ2_XXS del repo de origen |
+| Arquitectura | no disponible (la model card menciona expertos compartidos, lo que sugiere MoE, sin confirmación) |
+| Parámetros totales | 320.759.404.382 (~321 B, dato de safetensors) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | hasta 1 M tokens según el autor (0,5 M en configuración Q2 con 128 GB; 1 M en IQ2 con caché K de menor precisión) |
+| Tipos de cuantización | GGUF Q2_K con hot paths en Q8; variante IQ2_XXS con hot paths en Q8 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con imatrix) |
+| Formato de pesos | GGUF (repositorio de 164,6 GB); el dato de parámetros proviene de safetensors del modelo de referencia |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base GLM-5.3-Flash en la documentación proporcionada. La model card menciona explícitamente la existencia de "expertos compartidos" (shared experts), lo que apunta a una arquitectura de mezcla de expertos (MoE) con expertos compartidos entre capas, un patrón habitual en la familia GLM. También se menciona MTP (multi-token prediction), lo que sugiere decodificación especulativa o predicción multi-token como mecanismo de aceleración.
+No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. La model card del repack menciona "shared experts" (expertos compartidos) y "output head", lo que es coherente con una arquitectura de mezcla de expertos (MoE) con expertos compartidos, patrón habitual en la familia GLM, pero no se confirma el número de expertos, el enrutador ni los parámetros activos por token.
 
-El entrenamiento original corresponde a huihui-ai y al desarrollador del modelo GLM-5.3-Flash; esta ficha solo documenta el repack. La innovación técnica de este artefacto es la restauración selectiva a Q8 de las rutas críticas (expertos compartidos y cabeza de salida) sobre una base Q2_K, técnica que preserva la calidad en capas sensibles mientras mantiene el peso total bajo. No hay información sobre número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO.
+Tampoco se documentan los datos de entrenamiento del modelo original (número de tokens, composición del corpus, fases de RLHF/DPO) ni el proceso de abliteration aplicado por huihui-ai. La innovación técnica documentada en este repositorio es exclusivamente de cuantización: la restauración a Q8 de los expertos compartidos y de la cabeza de salida, que en los GGUF de origen estaban en UD-Q2_K_XL e IQ2_XXS, con el objetivo declarado de mejorar la escritura de formato largo. El autor menciona además MTP (multi-token prediction) como mecanismo disponible para reducir el uso de memoria en el despliegue.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato multi-turno (tag `conversational`).
-- Escritura de formato largo, explícitamente mejorada por el repack según el autor.
-- Razonamiento y generación de código: capacidades heredadas del modelo base GLM-5.3-Flash, no verificadas en la información disponible.
-- Soporte de contexto muy largo: hasta 0,5M tokens en Q2 y 1M en IQ2 según la model card.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita el despliegue como servicio.
-- Variante abliterated: ausencia de mecanismos de rechazo alineados, lo que cambia el comportamiento en consultas sensibles.
-- Tool calling, function calling, agentes y capacidades multimodales: no disponible en la información proporcionada.
+- Generación de texto conversacional: el tag `conversational` del repositorio indica uso previsto para diálogo multi-turno.
+- Escritura de formato largo: la model card justifica el repack precisamente por la mejora en "long form writing performance" al restaurar hot paths a Q8.
+- Contexto extenso: el autor reporta funcionamiento con 0,5 M de contexto en 128 GB y hasta 1 M con caché K de menor precisión en la variante IQ2.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el artefacto puede servirse mediante infraestructura de endpoints compatible con GGUF.
+- Modo sin rechazos (abliterated): la variante responde a peticiones que el modelo alineado rechazaría; esta es la característica definitoria de la familia abliterated.
+- Capacidades de tool calling, agentes, visión, audio o modo thinking: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Escritura de formato largo en local: el repack restaura expertos compartidos y cabeza de salida a Q8, lo que según el autor mejora la coherencia en documentos extensos; adecuado para generar informes, artículos o documentación técnica de decenas de miles de tokens en un solo equipo.
-- Procesamiento de corpus extensos con contexto de 0,5M-1M tokens: análisis de libros completos, expedientes o bases de código monolíticas sin fragmentación, aprovechando la ventana extendida de las variantes Q2 e IQ2.
-- Despliegue en estaciones de trabajo con 128 GB de memoria unificada: el modelo cabe con MTP activado y menos de 3 GiB de uso del SO, lo que permite inferencia local de un modelo de ~320B en hardware tipo Apple Silicon de gama alta o servidores con VRAM agregada.
-- Experimentación en investigación sobre alineamiento y seguridad: la variante abliterated permite estudiar el comportamiento del modelo sin capas de rechazo, útil para análisis de sesgos y robustez en entornos controlados.
-- Servicio conversacional autoalojado: con `endpoints_compatible` puede exponerse tras una API compatible con OpenAI para prototipos internos, siempre que el hardware soporte la cuantización.
-- Generación asistida con contexto largo en pipelines de documentación: integración en flujos que requieren resumir o transformar grandes volúmenes de texto manteniendo coherencia global gracias a la ventana extendida.
+- Escritura creativa y de formato largo: el repack está optimizado explícitamente para esta tarea al mantener en Q8 los expertos compartidos y la cabeza de salida, que son los módulos más sensibles a la degradación por cuantización agresiva en generaciones extensas.
+- Procesamiento de documentos muy largos en local: con 0,5 M de contexto en un equipo de 128 GB, el modelo puede ingerir libros completos, expedientes o bases de código extensas en una sola pasada, algo inviable en modelos de contexto corto.
+- Investigación sobre alineación y seguridad: al ser una variante abliterated, sirve para estudiar qué comportamientos se eliminan al ablacionar direcciones de rechazo y cómo afecta a la utilidad y a los sesgos residuales.
+- Despliegue en hardware de gama alta de consumo o estaciones de trabajo: la cuantización Q2_K permite ejecutar un modelo de ~321 B en un dispositivo de 128 GB de memoria unificada, escenario típico de estaciones con Apple Silicon de gama alta o servidores con gran cantidad de RAM.
+- Experimentación con decodificación multi-token: el MTP mencionado por el autor permite probar estrategias de predicción especulativa en un modelo grande cuantizado.
+- Generación de datos sintéticos sin restricciones de rechazo: para pipelines de aumento de datos donde el modelo alineado filtraría respuestas, la variante abliterated puede producir el volumen necesario, con la advertencia de revisión posterior.
+- Servicio conversacional autoalojado: con licencia MIT y formato GGUF, puede integrarse en un endpoint propio compatible con la API de chat sin dependencia de proveedores externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente afirma una mejora cualitativa en escritura de formato largo respecto a los GGUF de origen, sin cifras.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repo pesa 217,4 GB; la variante Q2 cabe en un dispositivo de 128 GB según el autor (con MTP y <3 GiB de uso del SO), lo que implica que el archivo efectivo en disco es mayor que la memoria necesaria en ejecución solo si se usa mapeo parcial, pero la afirmación del autor sugiere que la variante Q2 está pensada para 128 GB de memoria unificada.
-- La variante IQ2 requiere `-ub 128` para caber con contexto completo de 1M en el mismo tipo de dispositivo.
-- GPU recomendadas: no disponible de forma explícita; por tamaño, se requiere hardware con 128 GB de memoria (Apple Silicon de gama alta con memoria unificada, o configuraciones multi-GPU con VRAM agregada). No cabe en GPUs de consumo de 24 GB.
-- Cabe en consumer GPU: no, salvo configuraciones de memoria unificada de 128 GB.
-- Opciones de despliegue: llama.cpp (formato GGUF, parámetros `-ub` y MTP mencionados), y potencialmente otros runners compatibles con GGUF; vLLM, TGI u Ollama no están confirmados en la información disponible.
-- Latencia y throughput: no disponible.
+- VRAM/memoria estimada: el repositorio ocupa 164,6 GB en disco; el autor indica que la versión Q2 cabe en un dispositivo de 128 GB con menos de 3 GiB de uso del sistema operativo y MTP activado, a 0,5 M de contexto.
+- La variante IQ2_XXS cabe en el mismo dispositivo de 128 GB con contexto completo de 1 M si se reduce la precisión de la caché K.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, el despliegue requiere memoria unificada o agregada de al menos 128 GB, lo que excluye GPUs de consumo con 24 GB o 48 GB en configuración completa.
+- Cabe en consumer GPU: no en tarjetas individuales convencionales; sí en estaciones con memoria unificada de 128 GB o más según el autor.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; el tag `endpoints_compatible` sugiere servidores de endpoints compatibles. vLLM y TGI no están confirmados para este artefacto.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-abliterated-Q2_K-q8hot (este) | ~320,8B | 0,5M-1M | MIT | GGUF | Repack con hot paths en Q8 |
-| Huihui-GLM-5.3-Flash-abliterated-GGUF (UD-Q2_K_XL / IQ2_XXS) | ~320,8B (presumible) | no disponible | MIT | GGUF | Origen del repack; hot paths en precisión baja |
-| GLM-5.3-Flash (base) | no disponible | no disponible | no disponible | no disponible | Modelo original sin abliteration |
+| ZHUOZA/GLM-5.3-Flash-abliterated-Q2_K-q8hot | ~321 B (totales) | hasta 1 M (según autor) | GGUF Q2_K/IQ2 con hot paths Q8 | MIT | Repack con hot paths restaurados a Q8 |
+| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | no disponible | no disponible | GGUF UD-Q2_K_XL, IQ2_XXS | no disponible | Origen del repack; hot paths en cuantización baja |
+| Modelo base GLM-5.3-Flash (Zhipu AI) | no disponible | no disponible | no disponible | no disponible | Versión alineada de referencia |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La cuantización Q2_K es extremadamente agresiva: aunque se restauran rutas críticas a Q8, la calidad global puede degradarse frente al modelo en FP16/BF16, especialmente en razonamiento complejo y matemáticas.
-- La variante abliterated elimina los mecanismos de rechazo alineados: puede producir contenido dañino, sesgado o inapropiado sin las salvaguardas habituales; no es adecuada para aplicaciones de cara al público sin filtros adicionales.
-- Riesgo de alucinación elevado en contextos largos y en cuantizaciones de baja precisión; no hay datos publicados de evaluación que lo cuantifiquen.
-- Idiomas soportados no documentados; el rendimiento multilingüe no está verificado.
-- La licencia MIT del repo no exime de las posibles restricciones del modelo base GLM-5.3-Flash ni de las condiciones de uso de huihui-ai; conviene revisar la licencia original antes de uso comercial.
-- El autor del repack es un usuario individual (ZHUOZA) con 59 descargas y 0 likes: no hay garantías de mantenimiento, soporte ni verificación independiente de la calidad del repack.
-- Las afirmaciones sobre contexto de 0,5M/1M y ajuste en 128 GB provienen únicamente de la model card y no han sido verificadas de forma independiente.
-- El tamaño del repo (217,4 GB) implica requisitos de almacenamiento y tiempos de carga considerables.
+- La abliteration elimina los mecanismos de rechazo: el modelo puede producir contenido dañino, ilegal o sexualmente explícito sin las salvaguardas del modelo original. No es apto para aplicaciones orientadas al público sin filtros externos.
+- La cuantización Q2_K es agresiva: aunque los hot paths estén en Q8, el resto de pesos sufre pérdida de precisión que puede degradar razonamiento, matemáticas y fidelidad factual frente al modelo en BF16.
+- Riesgo elevado de alucinación, no cuantificado en la información disponible.
+- Idiomas soportados no documentados; no hay garantía de calidad en castellano ni en otros idiomas distintos del inglés o chino.
+- La licencia MIT del repositorio no aclara los términos del modelo base ni del proceso de abliteration; conviene verificar la licencia de GLM-5.3-Flash antes de uso comercial.
+- El contexto de 1 M depende de reducir la precisión de la caché K, lo que puede afectar a la calidad en recuperación de información dentro de ventanas muy largas.
+- Los requisitos de memoria (128 GB) limitan el despliegue a hardware de gama alta; no es viable en GPUs de consumo estándar.
+- Repositorio con 0 me gusta y autor individual: no hay validación comunitaria de la calidad del repack más allá de la model card.
+- No se documentan sesgos específicos ni evaluaciones de seguridad del artefacto.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/ZHUOZA/GLM-5.3-Flash-abliterated-Q2_K-q8hot
-- Modelo de origen (abliterated): https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated
-- Cuantizaciones GGUF de origen: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ZHUOZA/GLM-5.3-Flash-abliterated-Q2_K-q8hot
+- Modelo de origen del repack: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Variante sin GGUF de huihui-ai: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated
+- Paper, blog o demo del modelo base: no disponibles en la información proporcionada.

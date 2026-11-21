@@ -2,113 +2,103 @@
 
 ## Resumen
 
-InternVL3_5-1B en formato LiteRT-LM es una conversión del modelo vision-language compacto InternVL3.5-1B de OpenGVLab al formato `.litertlm`, empaquetado por la comunidad litert-community para inferencia local en dispositivos (on-device) mediante el runtime LiteRT-LM de Google. El modelo combina un codificador visual InternViT con un decodificador de lenguaje Qwen3-0.6B, lo que permite responder preguntas sobre imágenes sin conexión a servicios en la nube.
+InternVL3_5-1B es un modelo de visión-lenguaje (VLM) compacto desarrollado originalmente por OpenGVLab y convertido al runtime LiteRT-LM por la comunidad litert-community para inferencia totalmente en dispositivo (on-device). Combina un codificador visual InternViT con un decodificador de lenguaje Qwen3-0.6B, unidos mediante pixel-shuffle y un proyector MLP. El resultado es un modelo de aproximadamente 1B de parámetros que acepta una imagen de 448×448 píxeles (convertida en 256 tokens visuales) junto con texto, y genera respuestas fundamentadas en la imagen sin necesidad de conexión a la nube.
 
-El bundle ocupa aproximadamente 0,82 GB y aplica cuantización agresiva: pesos int8 en el codificador visual y int4 (blockwise-32 con OCTAV) en el decodificador, además de embeddings de entrada en INT8. Está pensado para ejecutarse en CPU y GPU (Metal en Apple, LiteRT GPU en Android) en portátiles, móviles y equipos de escritorio, con una ventana de contexto de 2048 tokens y entrada de imagen fija a 448×448 píxeles.
+La relevancia de esta conversión reside en su formato de despliegue: un único archivo `model.litertlm` de unos 0.82 GB con pesos cuantizados (int8 en la torre visual, int4 en el decodificador) y cómputo entero, pensado para ejecutarse en GPUs móviles y CPUs de escritorio. En una Galaxy S26 alcanza 77.0 tokens/s en decodificación y 1.338 tokens/s en prefill de 1.024 tokens, según la model card. En un Apple M4 Max con backend Metal logra 176,2 tokens/s de decodificación.
 
-Su relevancia actual radica en que demuestra que un VLM funcional puede desplegarse íntegramente en hardware de consumo y dispositivos móviles con licencia Apache-2.0, manteniendo la fidelidad del codificador visual (correlación ≈ 1.0 frente a la referencia en float) y un rendimiento de decodificación de 176 tok/s en GPU Metal sobre un Apple M4 Max.
+El modelo hereda la licencia Apache-2.0 del modelo base y está orientado a aplicaciones de borde donde la privacidad, la latencia y el coste de infraestructura son críticos: asistentes visuales, accesibilidad, inspección de imágenes y automatización local. Su ventana de contexto está limitada a 2.048 tokens de caché KV, lo que restringe las conversaciones multi-turno largas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision-language: InternViT (encoder) + pixel-shuffle + proyector MLP + Qwen3-0.6B (decoder) |
-| Parametros totales | no disponible (el decoder es Qwen3-0.6B; el encoder InternViT no se cuantifica en el nombre) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 2048 (KV cache) |
-| Tipos de cuantizacion | Vision: int8; decoder: int4 simetrico blockwise-32 + OCTAV; input embedding: INT8 |
+| Arquitectura | VLM: codificador InternViT + pixel-shuffle + proyector MLP + decodificador Qwen3-0.6B |
+| Parámetros totales | ~1B (decodificador Qwen3-0.6B + torre visual InternViT) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 tokens (caché KV) |
+| Tipos de cuantización | Visión: int8; decodificador: int4 simétrico (blockwise-32 + OCTAV optimal-clipping); embedding de entrada: int8 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors |
-| Tamano del bundle | ~0,82 GB (`model.litertlm`) |
-| Entrada de imagen | 448×448, normalizacion ImageNet integrada; 256 tokens de imagen |
-| Computo | entero (integer) |
+| Formato de pesos | `.litertlm` (LiteRT-LM, ~0.82 GB) |
+| Cómputo | entero (integer) |
+| Entrada de imagen | redimensionada a 448×448, normalización ImageNet integrada en el codificador |
+| Tokens por imagen | 256 |
 | Modelo base | OpenGVLab/InternVL3_5-1B |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura InternVL: un codificador visual InternViT procesa una única imagen de 448×448, aplica pixel-shuffle para reducir la secuencia espacial y un proyector MLP que alinea los tokens visuales (256) con el espacio del decodificador. El decodificador es Qwen3-0.6B, sustituyendo al Qwen2.5-1.5B de la generación InternVL3-2B, lo que reduce el coste computacional manteniendo capacidad de razonamiento textual. La conversión a LiteRT-LM usa la ruta `fast_vlm` del runtime, con pesos int8 en visión e int4 en el decodificador.
+La arquitectura sigue el patrón clásico de InternVL: un codificador visual InternViT que procesa la imagen, seguido de una operación de pixel-shuffle para reducir la resolución espacial de los tokens visuales y un proyector MLP que adapta la dimensionalidad al espacio del decodificador de lenguaje. El decodificador es Qwen3-0.6B, un transformer denso que sustituye al Qwen2.5-1.5B empleado en la variante InternVL3-2B, lo que reduce el cómputo manteniendo una base lingüística moderna.
 
-No se detallan en la información disponible los datos de entrenamiento (número de tokens, composición del dataset ni si hubo RLHF/DPO); esos datos corresponden al modelo base OpenGVLab/InternVL3_5-1B y no se reproducen aquí. La innovación técnica destacable es la conversión bit-fiel del codificador visual (correlación extremo a extremo ≈ 1.0, diferencia máxima absoluta ~1e-4, sin operaciones FLEX/CUSTOM de respaldo) y la receta de cuantización int4 blockwise-32 + OCTAV, que en el build hermano Ministral-3-3B-Reasoning alcanza 90,7% en GSM8K.
+La conversión a LiteRT-LM aplica cuantización agresiva pero controlada: int8 en la torre visual (preservando la fidelidad de la fundamentación visual, con correlación end-to-end ≈ 1.0 frente a la referencia en float y diferencia absoluta máxima ~1e-4) e int4 con blockwise-32 y optimal-clipping OCTAV en el decodificador. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. La model card indica que el grafo de prefill/decode fue reescrito para GPU mediante un script separado, sin modificar los pesos.
 
 ## Capacidades
 
-- Generación de texto condicionada por imagen (image-text-to-text): descripción, respuesta a preguntas visuales (VQA) y grounding básico.
-- Procesamiento de una imagen de 448×448 por consulta, con normalización ImageNet integrada en el encoder.
-- Soporte de múltiples imágenes por conversación en el backend CPU (el backend GPU limita a una imagen por chat).
-- Chat interactivo multi-turno mediante el runtime LiteRT-LM.
-- API local compatible con OpenAI a través de `litert-lm serve`.
-- Ejecución multiplataforma: macOS, Linux y Windows con el mismo fichero; Swift runtime para iPhone/macOS.
-- Capacidades de razonamiento y matemáticas heredadas del decodificador Qwen3-0.6B (no verificadas de forma independiente en este bundle).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y multi-step reasoning: no disponible en la información proporcionada.
-- Soporte multilingüe: no disponible en la información proporcionada.
-- Modo thinking, audio: no disponible.
+- Generación de texto condicionada por imagen (image-text-to-text): descripción de escenas, respuesta a preguntas visuales (VQA) y fundamentación visual.
+- Procesamiento de una o varias imágenes en la misma conversación (el CLI acepta `--attachment` múltiples veces).
+- Razonamiento visual básico: identificación de objetos, relaciones espaciales y atributos en la imagen.
+- Conversación interactiva multi-turno dentro del límite de 2.048 tokens de contexto.
+- Ejecución totalmente local, sin llamadas a API externa.
+- API local compatible con OpenAI mediante `litert-lm serve`.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Descripción automática de imágenes en local: el modelo genera descripciones de una frase o detalladas (por ejemplo, "Two tabby cats are lying on a pink couch, with remote controls nearby") sin enviar datos a la nube, adecuado para aplicaciones de privacidad estricta.
-- Asistencia a personas con discapacidad visual: un móvil Android o iPhone ejecuta el bundle y responde a preguntas sobre el entorno capturado por la cámara, con latencia de primera token de 0,08 s en GPU Metal.
-- Etiquetado y moderación de contenido visual en pipelines de ingestión: clasificación y descripción de imágenes a gran escala en servidores sin GPU dedicada, gracias al backend CPU con 338 tok/s de prefill.
-- Prototipado de aplicaciones VLM en portátiles: desarrolladores que validan flujos de image-text-to-text con `litert-lm run` y la API OpenAI-compatible antes de invertir en infraestructura.
-- Procesamiento de documentos escaneados o capturas: extracción de información textual a partir de imágenes de formularios, tickets o pantallas, con contexto de 2048 tokens suficiente para preguntas y respuestas cortas.
-- Aplicaciones de campo sin conectividad: inspección visual en entornos remotos (agricultura, mantenimiento industrial) donde el dispositivo no tiene red y se requiere inferencia íntegramente local.
-- Educación y accesibilidad en dispositivos de gama media: integración en apps móviles mediante el runtime Swift de LiteRT-LM para responder preguntas sobre material visual didáctico.
+- Asistencia visual para accesibilidad: describir fotografías o escenas a personas con discapacidad visual en el propio dispositivo, con latencia baja y sin enviar imágenes a servidores externos.
+- Automatización de inventario o inspección: capturar una imagen de un producto o estantería y generar una descripción estructurada localmente en un dispositivo móvil o embebido.
+- Moderación de contenido visual en el borde: clasificar o describir imágenes antes de subirlas, reduciendo el tráfico y preservando la privacidad del usuario.
+- Asistentes de campo sin conectividad: técnicos que trabajan en zonas sin red pueden fotografiar equipos y obtener descripciones o pistas de diagnóstico en el dispositivo.
+- Prototipado rápido de aplicaciones VLM: el archivo único y el CLI `litert-lm run` permiten validar un flujo imagen-pregunta en macOS, Linux o Windows en minutos.
+- Educación y lectura de imágenes: responder preguntas sobre diagramas, mapas o fotografías en aplicaciones educativas offline.
+- Integración en aplicaciones móviles Android mediante LiteRT-LM, aprovechando el backend GPU de la Galaxy S26 con 77 tokens/s de decodificación.
 
 ## Benchmarks y rendimiento
 
-Rendimiento de inferencia medido con `litert-lm benchmark` (litert-lm 0.15.0) en Apple M4 Max, `-p 256 -d 256 --runs 3`, max-num-tokens 4096, warm-up descartado, máquina inactiva. Solo ruta de texto; el encoder visual no está incluido.
+Datos publicados en la model card (medidos sobre una versión anterior del archivo para el benchmark de escritorio; la sección Galaxy S26 corresponde al archivo actual):
 
-| Dispositivo | Backend | Prefill (256) | Decode | TTFT |
+| Dispositivo | Backend | Prefill | Decode | TTFT |
 |---|---|---|---|---|
-| Apple M4 Max (macOS) | CPU | 338 tok/s | 43,7 tok/s | 0,84 s |
-| Apple M4 Max (macOS) | GPU (Metal) | 3878 tok/s | 176,2 tok/s | 0,08 s |
+| Apple M4 Max (macOS) | CPU | 338 tok/s (256 tokens) | 43,7 tok/s | 0,84 s |
+| Apple M4 Max (macOS) | GPU (Metal) | 3.878 tok/s (256 tokens) | 176,2 tok/s | 0,08 s |
+| Galaxy S26 | GPU | 1.338 tok/s (1.024 tokens) | 77,0 tok/s | no disponible |
 
-Prueba en Samsung Galaxy S26 (SM-S942Q / SM8850, Android 16) con `litert_lm_advanced_main` de litert-lm 0.16.0, `--backend=gpu --sampler_backend=cpu`, prompt "What is the capital of France?": el bundle ejecuta en GPU con delegación 3840/3840 operaciones en 3 subgrafos sobre LiteRT GPU y pico de memoria de 628 MB. No se publican cifras de velocidad para este dispositivo.
+Notas: el benchmark de escritorio usa `litert-lm benchmark` (v0.15.0) con `-p 256 -d 256 --runs 3`, max-num-tokens 4096 y warm-up descartado; cubre solo la ruta de texto, no el codificador visual. Las cifras de Galaxy S26 corresponden a LiteRT-LM v0.19.0 (2026-11-14) con prefill de 1.024 tokens y generación de 256 tokens. La model card menciona como expectativa (no medición de esta build) ~20 tok/s en CPU y ~45 tok/s en GPU de iPhone 17 Pro para VQA de una sola imagen.
 
-Rendimiento esperado on-device (no medido de forma independiente para este build): ~20 tok/s en CPU y ~45 tok/s en GPU en iPhone 17 Pro para VQA de una imagen, en línea con el build InternVL3-2B.
-
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) específicos para este bundle en la información disponible. La model card cita 90,7% en GSM8K para el build hermano Ministral-3-3B-Reasoning con la misma receta de cuantización int4, no para este modelo.
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K, etc.) para esta conversión en la información disponible. La model card cita que la receta int4 blockwise-32 + OCTAV alcanza 90,7% en GSM8K en la build Ministral-3-3B-Reasoning, pero no aporta una cifra equivalente para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el bundle pesa ~0,82 GB; el pico de memoria medido en Samsung Galaxy S26 con backend GPU es de 628 MB. En CPU se requiere al menos ~1 GB libre para pesos y estado del runtime.
-- GPU recomendadas: Apple Silicon con Metal (M4 Max medido), GPU integradas en Android compatibles con LiteRT GPU (Samsung Galaxy S26 medido). No se especifican modelos NVIDIA/AMD; el runtime LiteRT-LM está orientado a edge.
-- Cabe en GPU de consumo: sí, en Apple Silicon y móviles Android de gama alta; no se documenta soporte para RTX 4090, A100 o H100.
-- Opciones de despliegue: `litert-lm run` (CLI), `litert-lm serve` (API local compatible con OpenAI), runtime Swift de LiteRT-LM para iPhone/macOS, `litert_lm_advanced_main` en Android.
-- Latencia y throughput: TTFT de 0,08 s (GPU Metal) y 0,84 s (CPU) en M4 Max; decode de 176,2 tok/s (GPU) y 43,7 tok/s (CPU); prefill de 3878 tok/s (GPU) y 338 tok/s (CPU).
-- Almacenamiento: ~0,82 GB para el fichero `model.litertlm`; el repo completo ocupa 4,1 GB.
+- Tamaño del archivo: ~0.82 GB (`model.litertlm`), lo que permite almacenarlo en cualquier dispositivo móvil moderno.
+- VRAM/RAM estimada: no disponible de forma explícita; por el tamaño del archivo y el cómputo entero, el modelo está diseñado para ejecutarse en memoria unificada de móviles y en CPUs de escritorio.
+- GPU recomendadas: GPU móvil de Galaxy S26 (medido); Apple M4 Max con Metal (medido); se espera funcionamiento en iPhone 17 Pro (no medido en esta build).
+- Cabe en GPU de consumo: sí, por tamaño; no se han publicado mediciones en RTX 4090, A100 o H100.
+- Opciones de despliegue: runtime LiteRT-LM (`litert-lm run`, `litert-lm serve` con API compatible con OpenAI, `litert-lm benchmark`); el mismo archivo funciona en macOS, Linux y Windows.
+- Limitación conocida: con `--vision-backend gpu` el delegado GPU no soporta dos operaciones del codificador visual (BROADCAST_TO y GATHER_ND), por lo que en macOS no responde a imágenes con esa configuración; debe dejarse `--vision-backend` sin definir.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato/despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| litert-community/InternVL3_5-1B | Decoder Qwen3-0.6B + InternViT | 2048 | `.litertlm` | Apache-2.0 | Bundle on-device con int4/int8; GPU Metal y LiteRT GPU |
-| litert-community/FastVLM-0.5B | no disponible | no disponible | `.litertlm` | no disponible | Mismo runtime; reproduce la truncación multi-imagen en GPU |
-| OpenGVLab/InternVL3_5-1B | no disponible | no disponible | safetensors | Apache-2.0 | Modelo base sin cuantizar; requiere runtime estándar (transformers) |
-| InternVL3-2B (build previo) | Decoder Qwen2.5-1.5B + InternViT | no disponible | `.litertlm` | no disponible | Generación anterior; ~20 tok/s CPU y ~45 tok/s GPU en iPhone 17 Pro |
+| InternVL3_5-1B (LiteRT-LM) | ~1B | 2.048 | `.litertlm`, on-device | Apache-2.0 | Conversión comunitaria; 77 tok/s decode en Galaxy S26 |
+| InternVL3-2B (build LiteRT-LM) | ~2B | no disponible | `.litertlm`, on-device | Apache-2.0 (base) | Usa Qwen2.5-1.5B como decodificador; ~20 tok/s CPU y ~45 tok/s GPU en iPhone 17 Pro (expectativa) |
+| OpenGVLab/InternVL3_5-1B (original) | ~1B | no disponible | safetensors (formato original) | Apache-2.0 | Modelo base sin cuantizar; requiere runtime de PyTorch/Transformers |
 
-No se dispone de datos de benchmarks de calidad para establecer comparaciones de rendimiento entre estos modelos en la información proporcionada.
+No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- En el backend GPU (Metal), una segunda imagen en la misma conversación trunca la respuesta; es una limitación del runtime `fast_vlm` en GPU, no del modelo. Para multi-imagen fiable, usar el backend CPU.
-- Contexto limitado a 2048 tokens de KV cache, insuficiente para conversaciones largas o documentos extensos.
-- Entrada de imagen fija a 448×448; imágenes de alta resolución pierden detalle tras el redimensionado.
-- No hay información sobre idiomas soportados; el comportamiento multilingüe no está verificado.
-- Riesgo de alucinación inherente a modelos de 0,6B de decodificador en tareas de razonamiento complejo o VQA con imágenes ambiguas.
-- Sesgos conocidos: no documentados en la información disponible.
-- La cuantización int4 del decodificador puede degradar tareas de matemáticas y razonamiento frente al modelo base en float; no se han publicado evaluaciones específicas.
-- Licencia Apache-2.0 permite uso comercial, pero se debe verificar la licencia y condiciones del modelo base OpenGVLab/InternVL3_5-1B y de los datos de entrenamiento.
-- El soporte de tool calling, agentes y modo thinking no está documentado; no asumir su disponibilidad en producción.
-- Las cifras de rendimiento on-device para este build concreto no se han medido de forma independiente; la model card recomienda verificación antes de citar números exactos.
+- Contexto muy limitado: 2.048 tokens de caché KV restringen conversaciones multi-turno y prompts con muchas imágenes.
+- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe más allá del comportamiento heredado del modelo base.
+- Riesgo de alucinación visual: como todo VLM de ~1B, puede describir objetos o relaciones inexistentes, especialmente con imágenes ambiguas o de baja resolución (entrada fija de 448×448).
+- La cuantización int4 del decodificador puede degradar ligeramente el razonamiento y la coherencia frente al modelo base en float.
+- En macOS, `--vision-backend gpu` no funciona con este archivo por operaciones no soportadas por el delegado GPU; hay que usar la configuración por defecto.
+- Problemas conocidos del CLI de LiteRT-LM (0.14.0–0.19.2): descargas incompletas en caché que no se revalidan y ejecución de versiones antiguas del archivo si no se borra manualmente la caché tras la actualización del 2026-11-14.
+- Licencia Apache-2.0: permite uso comercial, pero debe conservarse el aviso de licencia y la atribución correspondiente.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no es adecuado para pipelines que requieran invocación de funciones.
+- Para producción en móvil, medir el rendimiento real en el dispositivo objetivo: las cifras de iPhone son expectativas, no mediciones de esta build.
 
 ## Enlaces
 
-- Hugging Face (bundle LiteRT-LM): https://huggingface.co/litert-community/InternVL3_5-1B
-- Ficheros del repositorio: https://huggingface.co/litert-community/InternVL3_5-1B/tree/main
+- Modelo en Hugging Face: https://huggingface.co/litert-community/InternVL3_5-1B
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-1B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Build hermano Ministral-3-3B-Reasoning: https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512
-- Guía GPU para Android: https://github.com/john-rocky/hf-to-litertlm/blob/main/docs/android-gpu.md
-- Modelo de referencia del runtime: https://huggingface.co/litert-community/FastVLM-0.5B
+- Build de referencia Ministral-3-3B-Reasoning (receta int4): https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512

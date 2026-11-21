@@ -2,84 +2,102 @@
 
 ## Resumen
 
-`mradermacher/gemma-4-26B-A4B-agentic-i1-GGUF` es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo `ManniX-ITA/gemma-4-26B-A4B-agentic`. Se trata, por tanto, de un artefacto de distribución y compresión de pesos, no de un modelo entrenado desde cero por el autor del repositorio. El modelo base es una variante de la familia Gemma con arquitectura de mezcla de expertos (MoE), como indica el sufijo `A4B` (aproximadamente 4 mil millones de parámetros activos) y los 25.233.142.046 parámetros totales declarados en los safetensors del modelo original.
+`mradermacher/gemma-4-26B-A4B-agentic-i1-GGUF` es una colección de cuantizaciones GGUF (con fichero imatrix) del modelo `ManniX-ITA/gemma-4-26B-A4B-agentic`, un ajuste fino de tipo SFT sobre la familia Gemma 4 con arquitectura Mixture-of-Experts (MoE). El modelo base parte de una arquitectura Gemma 4 con 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones) y una designación "26B-A4B" que sugiere del orden de 4 mil millones de parámetros activos por token, aunque este dato no se confirma de forma explícita en la información disponible. El autor de las cuantizaciones es mradermacher, un perfil conocido en el ecosistema GGUF por publicar versiones optimizadas de modelos populares.
 
-El propósito del repositorio es ofrecer los pesos en formato GGUF con múltiples niveles de cuantización (desde IQ1_S hasta Q6_K), lo que permite ejecutar el modelo en hardware con recursos limitados mediante llama.cpp y derivados. La etiqueta `agentic` en el nombre sugiere que el modelo base ha sido ajustado para tareas de agentes, aunque la model card no documenta el proceso de ajuste ni los datos utilizados.
+El propósito declarado del modelo es el uso "agentic": tool calling, razonamiento multi-paso, generación de código y resolución de tareas de ingeniería de software. Para ello se ha entrenado con una mezcla de datasets de SFT que incluye trazas de agentes (Hermes, Kimi), datasets de NVIDIA Nemotron orientados a agentes, código, SWE, programación competitiva, matemáticas, ciencia, instrucciones multilingües y razonamiento con herramientas. La licencia es Apache 2.0, lo que facilita su uso comercial, y el formato GGUF permite desplegarlo en hardware de consumo mediante llama.cpp u Ollama.
 
-La relevancia del repositorio es práctica: facilita el despliegue local de un modelo MoE de ~25B parámetros totales con solo ~4B activos, lo que reduce el coste computacional por token en inferencia. Sin embargo, la información publicada es muy escasa y no se dispone de datos verificables sobre licencia, idiomas, benchmarks ni composición del entrenamiento.
+La relevancia actual reside en la combinación de tres factores: un modelo MoE de ~25B con activación dispersa (coste de inferencia más cercano a un modelo de ~4B), un ajuste específico para agentes y tool calling, y una disponibilidad inmediata en cuantizaciones que van desde ~8,4 GB (IQ1_S) hasta ~22,7 GB (Q6_K). Esto permite ejecutar un modelo de razonamiento agentico en GPUs de consumo de gama alta con 24 GB de VRAM en cuantizaciones Q4 o Q5.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) tipo transformer, según el sufijo `A4B` del nombre; detalles no disponibles |
-| Parámetros totales | 25.233.142.046 (según safetensors del modelo base) |
-| Parámetros activos | ~4B (inferido del sufijo `A4B`; no confirmado en la model card) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (cuantizaciones con imatrix/weighted) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), familia Gemma 4 |
+| Parametros totales | 25.233.142.046 (~25,2 B) |
+| Parametros activos | no disponible (la nomenclatura "A4B" sugiere ~4 B activos, sin confirmar) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K, i1-Q2_K_S, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_1, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (más fichero imatrix) |
+| Idiomas soportados | en (inglés declarado; el dataset incluye un set multilingüe de Nemotron, sin lista oficial de idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del modelo base más allá del nombre `gemma-4-26B-A4B-agentic`, que apunta a un transformer con mezcla de expertos de la familia Gemma, con aproximadamente 25B parámetros totales y ~4B activos por token. No se especifican el número de expertos, la estrategia de enrutamiento, la longitud de contexto nativa ni la composición del dataset de entrenamiento.
+El modelo subyacente es un transformer de tipo Mixture-of-Experts de la familia Gemma 4, con 25,2 mil millones de parámetros totales. La designación "26B-A4B" indica una arquitectura dispersa en la que solo una fracción de los expertos se activa por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamaño. No se dispone de detalles oficiales sobre el número exacto de expertos, el número de expertos activos por token, la dimensión oculta ni la longitud de contexto nativa, ya que la model card del repositorio GGUF no los incluye.
 
-El repositorio en sí documenta únicamente el proceso de cuantización: cuantizaciones ponderadas con imatrix (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), generadas a partir del modelo `ManniX-ITA/gemma-4-26B-A4B-agentic`. No hay información sobre RLHF, DPO, ajuste para agentes ni innovaciones técnicas de decodificación. Cualquier detalle adicional sobre el entrenamiento del modelo base debe consultarse en el repositorio original de ManniX-ITA, no en esta ficha.
+El ajuste fino se realizó mediante SFT (supervised fine-tuning) sobre una mezcla amplia de datasets: trazas de agentes propietarias (`ManniX-ITA/gemma-4-26B-A4B-agentic-sft`, `ManniX-ITA/hermes-agent-kimi-traces-gemma4-31b`), datasets de NVIDIA Nemotron para agentes, OpenCode, SWE, programación competitiva, instrucciones conversacionales, matemáticas, ciencia y multilingüe, además de trazas de razonamiento con herramientas de Hermes (`interstellarninja/hermes_reasoning_tool_use`, `lambda/hermes-agent-reasoning-traces`). Los tags indican entrenamiento "on-policy" y el uso de "omk-model-optimizer". No se documenta en la información disponible si hubo etapas de RLHF o DPO posteriores al SFT. Las cuantizaciones i1 de mradermacher emplean un fichero imatrix generado a partir del modelo base para preservar mejor la calidad en cuantizaciones agresivas.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` figura entre los tags del repositorio.
-- Orientación a tareas de agentes: el sufijo `agentic` del modelo base sugiere ajuste para uso en agentes, aunque no se documentan detalles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que los GGUF pueden servirse mediante endpoints compatibles con llama.cpp.
-- Capacidades multilingües: no disponibles.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Razonamiento multi-paso: no documentado.
-- Visión, audio u otras modalidades: no disponibles.
+- Generación de texto conversacional multi-turno.
+- Razonamiento explícito y trazas de razonamiento (el modelo está ajustado sobre datasets de reasoning traces).
+- Tool calling / function calling, con formato compatible con endpoints de inferencia.
+- Comportamiento agentico multi-paso: planificación, uso de herramientas y ejecución de tareas encadenadas.
+- Generación de código, incluyendo tareas de ingeniería de software (SWE) y programación competitiva.
+- Razonamiento matemático y científico (datasets Nemotron Math v3 y Science v1).
+- Seguimiento de instrucciones conversacionales (Nemotron Instruction-Following Chat v1 y v2).
+- Capacidades multilingües parciales, derivadas del dataset `Nemotron-SFT-Multilingual-v1`; el único idioma declarado oficialmente es el inglés.
+- No se documenta soporte de visión, audio ni otras modalidades en la información disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar un MoE de ~25B totales y ~4B activos en GPUs de consumo, con un coste por token mucho menor que un modelo denso del mismo tamaño total.
-- Servicio de chat en CPU/GPU híbrido: las variantes Q3_K_M o Q4_0 pueden servirse con llama.cpp en equipos sin GPU dedicada, a costa de cierta pérdida de calidad.
-- Prototipado de agentes conversacionales: el ajuste `agentic` del modelo base lo hace candidato para pipelines de agentes, aunque conviene validar el comportamiento real antes de producción.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece una matriz amplia de niveles (IQ1_S a Q6_K), útil para medir la degradación de calidad frente al tamaño en un MoE con expertos poco activos.
-- Investigación sobre eficiencia de MoE: al tener ~4B activos sobre ~25B totales, sirve para estudiar el equilibrio entre VRAM ocupada y velocidad de decodificación en entornos con memoria limitada.
-- Integración en herramientas de escritorio: al ser GGUF, puede cargarse en Ollama, LM Studio o llama.cpp para asistentes locales sin dependencia de la nube.
+- Agentes autónomos de desarrollo de software: el modelo puede recibir una tarea de repositorio, inspeccionar ficheros mediante tool calling y proponer parches, gracias al entrenamiento sobre datasets SWE y OpenCode. Adecuado para integrarse en pipelines de CI/CD como generador de parches o revisor automático.
+- Asistentes de coding en IDE: con cuantización Q4_K_M (~16,9 GB) puede ejecutarse en una RTX 4090 y ofrecer autocompletado, explicación de código y refactorización con tool calling para consultar documentación o ejecutar tests.
+- Automatización de atención al cliente con herramientas: el modelo puede gestionar conversaciones multi-turno y llamar a APIs internas (consulta de pedidos, estado de tickets) gracias a su soporte de function calling y su ajuste sobre trazas de agentes.
+- Razonamiento matemático asistido: útil para tutores automáticos o verificación de cálculos, apoyándose en el entrenamiento con Nemotron Math v3 y trazas de razonamiento paso a paso.
+- Orquestación de agentes en local para privacidad: al ser GGUF y Apache 2.0, puede desplegarse en estaciones de trabajo sin enviar datos a la nube, adecuado para entornos con requisitos de confidencialidad.
+- Generación de código en programación competitiva y pruebas técnicas: el ajuste sobre Nemotron Competitive Programming v2 permite usarlo para generar soluciones, explicar algoritmos o evaluar candidatos en procesos de selección.
+- Prototipado de pipelines agenticos con llama.cpp u Ollama: las cuantizaciones pequeñas (IQ2/IQ3, ~9-12 GB) permiten experimentar en GPUs de 12-16 GB antes de escalar a cuantizaciones mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantización. Como referencia orientativa para ~25B parámetros totales: Q4_K_M en torno a 15-16 GB, Q5_K_M en torno a 18 GB, Q6_K en torno a 21 GB, Q3_K_M en torno a 12 GB e IQ2_M en torno a 9-10 GB. Son estimaciones por tamaño de pesos, no medidas publicadas.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M completos en GPU; A100 40/80 GB o H100 para Q6_K y contextos largos; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) para Q4_K_S o Q3_K_L.
-- ¿Cabe en GPU de consumo? Sí, las cuantizaciones Q4 y Q5 caben en GPUs de 16-24 GB; las de gama baja (IQ1/IQ2) caben en 8-12 GB con pérdida de calidad apreciable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de llama.cpp; vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que requerirían los pesos originales en safetensors.
-- Latencia y throughput: no disponibles. Al ser un MoE con ~4B activos, se espera una velocidad de decodificación superior a la de un denso de 25B, pero no hay cifras publicadas.
+- VRAM estimada según cuantización (tamaño de fichero, sin contar overhead de contexto KV):
+  - i1-IQ1_S: ~8,4 GB (calidad muy degradada, solo para pruebas).
+  - i1-IQ2_M: ~10,5 GB.
+  - i1-IQ3_S: ~12,3 GB (mejor relación calidad/tamaño en el rango bajo).
+  - i1-IQ4_XS: ~14,0 GB.
+  - i1-Q4_K_S: ~15,6 GB.
+  - i1-Q4_K_M: ~16,9 GB (recomendado por el autor como "fast, recommended").
+  - i1-Q5_K_M: ~19,2 GB.
+  - i1-Q6_K: ~22,7 GB (prácticamente equivalente a Q6_K estático).
+- GPU recomendadas:
+  - RTX 4090 (24 GB): Q4_K_M, Q5_K_M y Q6_K con contexto moderado; IQ4_XS y Q4_K_S con margen amplio.
+  - RTX 4080 / 4070 Ti Super (16 GB): IQ3_S, IQ4_XS o Q4_K_S con contexto limitado.
+  - RTX 3090 / 4090: Q5_K_M y Q6_K viables.
+  - A100 40/80 GB y H100: cualquier cuantización con contexto largo y mayor throughput.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones IQ2 a Q4 caben en GPUs de 12-16 GB; Q4_K_M y Q5_K_M caben en 24 GB; Q6_K requiere 24 GB con contexto ajustado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, aunque la información disponible no confirma compatibilidad explícita.
+- Latencia y throughput: no disponibles. Al ser MoE con ~4 B activos (según nomenclatura), se espera un throughput superior al de un modelo denso de 25 B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-4-26B-A4B-agentic (este, vía GGUF) | ~25,2B | ~4B (inferido) | No disponible | No disponible | GGUF |
-| Mixtral 8x7B | ~46,7B | ~12,9B | 32k | Apache 2.0 | safetensors, GGUF |
-| Qwen1.5-MoE-A2.7B | ~14,3B | ~2,7B | 32k | Apache 2.0 | safetensors, GGUF |
-| Gemma 2 27B (denso) | ~27B | ~27B | 8k | Gemma Terms | safetensors, GGUF |
+| gemma-4-26B-A4B-agentic-i1-GGUF (este) | ~25,2 B totales, MoE | no disponible | Apache 2.0 | GGUF (i1) | Ajuste agentico y tool calling; cuantizaciones de 8,4 a 22,7 GB |
+| ManniX-ITA/gemma-4-26B-A4B-agentic | ~25,2 B totales, MoE | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva este repositorio |
+| mradermacher/gemma-4-26B-A4B-agentic-GGUF | ~25,2 B totales, MoE | no disponible | Apache 2.0 | GGUF (estático) | Cuantizaciones estáticas del mismo modelo, sin imatrix |
+| Modelos densos de ~24-27 B (p. ej. Gemma 2 27B, Qwen2.5 32B) | 24-32 B densos | variable | variable | safetensors/GGUF | Mayor coste de inferencia por token al no ser MoE; comparación cualitativa, sin benchmarks disponibles |
 
-La comparativa es aproximada: no se dispone de datos de contexto, licencia ni benchmarks del modelo de esta ficha, por lo que la comparación se limita a tamaño y formato.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Información muy escasa: la model card no documenta licencia, idiomas, contexto ni datos de entrenamiento; no debe asumirse ningún uso comercial permitido sin verificar la licencia del modelo base.
-- Repositorio derivado: es una cuantización de un modelo de terceros; los problemas de calidad, sesgos o alucinaciones provienen del modelo base y no se corrigen con la cuantización.
-- Degradación por cuantización: las variantes IQ1/IQ2 y Q2_K pueden degradar notablemente el razonamiento y la fidelidad en tareas de agentes; para producción se recomienda Q4_K_M o superior.
-- Riesgo de alucinación: no evaluado en la información disponible; todo modelo generativo presenta este riesgo y aquí no hay benchmarks que lo acoten.
-- Sesgos: no documentados.
-- Sin métricas de rendimiento: no hay benchmarks publicados que permitan comparar con alternativas.
-- Fecha de creación futura en los metadatos (2026-11-13): conviene verificar la integridad y procedencia del repositorio antes de usarlo en producción.
+- Sesgos: no documentados en la información disponible; al entrenarse mayoritariamente con datos en inglés y datasets sintéticos de agentes, es probable un sesgo hacia ese dominio y hacia estilos de respuesta de trazas de agentes.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; el ajuste sobre trazas de razonamiento puede producir cadenas de pensamiento plausibles pero incorrectas, especialmente en matemáticas y código.
+- Contexto e idioma: la longitud de contexto no está documentada; el único idioma declarado es el inglés, aunque el dataset multilingüe de Nemotron puede aportar cierta cobertura adicional no garantizada.
+- Cuantizaciones agresivas: IQ1 e IQ2 degradan notablemente la calidad; el propio autor advierte que IQ1_S es "for the desperate" y Q2_K_S es de "very low quality". Para producción se recomienda Q4_K_M o superior.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los datasets de entrenamiento (Nemotron, Hermes) y del modelo base Gemma 4, que pueden imponer restricciones adicionales.
+- Producción: no hay benchmarks publicados ni garantías de estabilidad; el modelo es un ajuste comunitario (ManniX-ITA) y no un modelo oficial de Google, por lo que el soporte y la documentación son limitados.
+- Repositorio de 301 GB: incluye todas las cuantizaciones; la descarga debe hacerse fichero a fichero.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-26B-A4B-agentic-i1-GGUF
 - Modelo base: https://huggingface.co/ManniX-ITA/gemma-4-26B-A4B-agentic
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/gemma-4-26B-A4B-agentic-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#gemma-4-26B-A4B-agentic-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

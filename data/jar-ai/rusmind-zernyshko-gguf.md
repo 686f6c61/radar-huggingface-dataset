@@ -2,53 +2,49 @@
 
 ## Resumen
 
-RusMind-Zernyshko-GGUF es la versión cuantizada en formato GGUF del modelo base DICPlay/RusMind-Zernyshko-1.6, publicada por el usuario Jar-ai en Hugging Face. Se trata de un modelo de lenguaje de pequeño tamano (SLM, *small language model*) orientado a ruso e inglés, con una arquitectura de tipo LLaMA y aproximadamente 83 millones de parámetros (10 capas con dimensión oculta de 768). El modelo emplea un tokenizador BPE personalizado de 16.000 tokens y una longitud de contexto de 1.024 tokens.
+RusMind-Zernyshko-GGUF es la versión cuantizada en formato GGUF del modelo base DICPlay/RusMind-Zernyshko-1.6, publicada por el usuario Jar-ai. Se trata de un modelo de lenguaje de tamano muy reducido (aproximadamente 83 millones de parametros, con 10 capas y dimension oculta de 768), disenado especificamente para ruso e ingles. Su proposito es ofrecer una alternativa ligera y ejecutable en hardware modesto para generacion de texto conversacional.
 
-La relevancia de esta publicación es acotada: no introduce innovaciones arquitectónicas ni de entrenamiento, sino que ofrece los pesos del modelo base en distintos niveles de cuantización (F32, F16/BF16 y Q8_0) para facilitar su ejecución con llama.cpp y herramientas compatibles con GGUF. El propio autor advierte de que las cuantizaciones por debajo de Q8_0 degradan la calidad hasta producir texto incoherente.
+El modelo emplea una arquitectura tipo LLaMA con una configuracion modificada y un tokenizador BPE propio de 16000 tokens. Con una longitud de contexto de solo 1024 tokens, esta pensado para tareas acotadas y despliegues con recursos limitados, no para razonamiento complejo ni contextos extensos. Su publicacion como cuantizacion no oficial implica que el autor original no respalda esta distribucion, tal como se indica de forma explicita en la model card.
 
-Por su tamano y contexto, el modelo está pensado para pruebas locales, experimentación con SLM en ruso y despliegues en hardware muy limitado. La model card es explícitamente escéptica sobre la calidad del modelo ("if you dare", "expect absolute gibberish"), lo que debe tenerse en cuenta antes de considerarlo para cualquier uso en producción.
+La relevancia de esta ficha radica en documentar con rigor un artefacto de la comunidad: un SLM (small language model) ruso cuantizado en varios formatos (F32, F16, BF16, Q8_0) que puede ejecutarse localmente con llama.cpp u Ollama. Es importante senalar desde el principio que se trata de una conversion no oficial y que la licencia es personalizada (rusmind-license), lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LLaMA (configuración modificada, según el autor) |
-| Parametros totales | ~83 M (10 capas × 768 de dimensión oculta) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | F32, F16, BF16, Q8_0 (el autor desaconseja cuantizaciones inferiores) |
-| Idiomas soportados | Ruso (ru), inglés (en) |
-| Licencia | Apache 2.0 |
+| Arquitectura | LLaMA (configuracion modificada), transformer denso |
+| Parametros totales | 83.083.008 (~83M) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 1024 tokens |
+| Tipos de cuantizacion | F32, F16, BF16, Q8_0 |
+| Idiomas soportados | Ruso (ru), ingles (en) |
+| Licencia | rusmind-license (other) |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
-| Tokenizador | BPE personalizado, 16.000 tokens |
-| Modelo base | DICPlay/RusMind-Zernyshko-1.6 |
-| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de tipo LLaMA con 10 capas y dimensión oculta de 768, lo que arroja aproximadamente 83 millones de parámetros. El autor describe la configuración como "hacked config", sin detallar las modificaciones concretas respecto a una configuración LLaMA estándar. El tokenizador es un BPE propio de 16.000 tokens, más pequeno que los vocabularios habituales de modelos LLaMA (32.000 o más), lo que reduce el tamano del embedding pero limita la granularidad de la tokenización.
+El modelo sigue una arquitectura transformer de tipo LLaMA con una configuracion modificada respecto al estandar: 10 capas y una dimension oculta de 768, lo que da lugar a los aproximadamente 83 millones de parametros. Utiliza un tokenizador BPE personalizado con un vocabulario de 16000 tokens. La model card no proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO; estos datos deben considerarse no disponibles.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card no documenta innovaciones técnicas (atención lineal, decodificación especulativa, mezcla de expertos, etc.). La contribución de esta publicación se limita a la conversión a GGUF y a la generación de las distintas cuantizaciones a partir del modelo base.
+La innovacion tecnica de esta publicacion no reside en el modelo en si, sino en el proceso de cuantizacion: se ofrecen pesos sin cuantizar (F32, F16, BF16) y una version Q8_0, lo que permite elegir entre fidelidad y tamano. La model card advierte de forma explicita que se trata de una conversion no oficial y que el autor original mostro su desacuerdo con la presentacion del README. No se documentan tecnicas como decodificacion especulativa ni atencion lineal.
 
 ## Capacidades
 
-- Generación de texto en ruso e inglés, con foco declarado en ruso.
-- Modelo de tipo *base*: no está afinado para instrucciones ni para diálogo, por lo que no cabe esperar un comportamiento fiable de asistente sin ajuste adicional.
-- No se documenta soporte de *tool calling* ni de *function calling*.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No dispone de modo de razonamiento (*thinking mode*), visión ni audio.
-- Capacidad multilingüe limitada a ruso e inglés según los metadatos; no se declaran otros idiomas.
-- Contexto muy corto (1.024 tokens), lo que restringe tareas que requieran contexto extenso.
+- Generacion de texto conversacional en ruso e ingles.
+- Razonamiento basico y respuestas de formato corto, limitado por el tamano del modelo y el contexto de 1024 tokens.
+- Capacidad multilingue restringida a los dos idiomas declarados (ru, en).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No dispone de vision, audio ni modo de pensamiento (thinking mode).
+- Adecuado para tareas de texto simples, no para codigo o matematicas de cierta complejidad.
 
 ## Casos de uso
 
-- Experimentación con SLM en ruso: el modelo permite probar pipelines de generación de texto en ruso en hardware mínimo, útil para validar infraestructura antes de pasar a modelos mayores.
-- Pruebas de cuantización con llama.cpp: sirve como banco de pruebas para comparar el comportamiento de F32, F16/BF16 y Q8_0 en un modelo pequeno y observar la degradación de calidad.
-- Entornos educativos: adecuado para demostrar el funcionamiento interno de un transformer LLaMA de pocas capas y un tokenizador BPE reducido.
-- Prototipado de completado de texto en ruso: con 1.024 tokens de contexto puede generar continuaciones cortas de frases o párrafos en dominios acotados, siempre con revisión humana.
-- Despliegue en dispositivos con recursos muy limitados: sus ~83 M de parámetros permiten ejecución en CPU y en GPUs de gama baja, útil para demos offline.
-- Base para *fine-tuning* ligero: al ser un modelo base de licencia Apache 2.0, puede servir como punto de partida para ajustes específicos en ruso con coste computacional bajo.
-- Generación de texto de relleno o sintético para pruebas de sistemas: útil para generar datos de prueba en pipelines que necesiten texto en ruso sin requisitos de calidad alta.
+- Generacion de texto local en dispositivos con recursos limitados: al ocupar poco espacio en sus versiones cuantizadas, puede ejecutarse en CPU y ofrecer respuestas conversacionales basicas sin conexion.
+- Prototipado rapido de pipelines de NLP en ruso: sirve para validar integraciones con llama.cpp u Ollama antes de escalar a modelos mayores.
+- Clasificacion y etiquetado de textos cortos: con contexto de 1024 tokens puede procesar fragmentos breves para tareas de categorizacion simple.
+- Chatbots de demostracion y entornos educativos: su tamano minimo permite desplegarlo en aulas o talleres para ilustrar el funcionamiento de un SLM.
+- Filtrado o reformulacion de frases en ruso: util para tareas de normalizacion de texto donde no se requiere alta calidad generativa.
+- Pruebas de infraestructura de inferencia: sirve como modelo de referencia para medir latencia y throughput en configuraciones de hardware modesto.
 
 ## Benchmarks y rendimiento
 
@@ -56,38 +52,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en F16/BF16 (~166 MB de pesos) y en torno a 90-100 MB en Q8_0; el consumo real depende del backend y del contexto reservado.
-- Cabe holgadamente en cualquier GPU de consumo, incluidas GTX 1050, RTX 3050, RTX 4060 o superiores; también en CPU.
-- GPU profesionales (A100, H100) no aportan ventaja significativa para este tamano de modelo.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama y cualquier runtime compatible con GGUF; no se documenta soporte específico para vLLM o TGI.
-- El autor indica que para probar el modelo debe colocarse en `C:\` y ejecutarse con `llama-cli.exe`, pasando `--override-kv tokenizer.ggml.pre=str:llama-bpe` para forzar el pre-tokenizador, lo que sugiere problemas de compatibilidad del tokenizador personalizado con las herramientas estándar.
-- Latencia y throughput: no disponibles; por el tamano del modelo se espera latencia muy baja en CPU y GPU, pero no hay cifras publicadas.
+- VRAM estimada: inferior a 1 GB en Q8_0 y en torno a 330 MB en F16/BF16 (83M parametros); en F32, aproximadamente 330 MB adicionales respecto a F16.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe en CPU y en GPUs integradas. No requiere A100 ni H100.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, GTX 1650) y en la mayoria de sistemas con CPU.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; los tags indican compatibilidad con endpoints.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| RusMind-Zernyshko-GGUF | ~83 M | 1.024 | ru, en | Apache 2.0 | GGUF |
-| Qwen2.5-0.5B | ~494 M | 32.768 | multilingüe | Apache 2.0 | safetensors, GGUF |
-| SmolLM2-135M | ~135 M | 8.192 | en (principalmente) | Apache 2.0 | safetensors, GGUF |
-| TinyLlama-1.1B | ~1.100 M | 2.048 | en (principalmente) | Apache 2.0 | safetensors, GGUF |
+| RusMind-Zernyshko-GGUF | ~83M | 1024 | ru, en | rusmind-license | GGUF |
+| DICPlay/RusMind-Zernyshko-1.6 (base) | ~83M | 1024 | ru, en | rusmind-license | safetensors |
+| Alternativas SLM rusos de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación se ofrece como referencia de categoria (SLM de licencia permisiva); no se dispone de datos de rendimiento de RusMind-Zernyshko-GGUF que permitan una comparación cuantitativa. Frente a alternativas como SmolLM2-135M o Qwen2.5-0.5B, este modelo ofrece un tamano menor y foco en ruso, pero un contexto mucho más corto y sin documentación de calidad.
+No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Calidad dudosa: el propio autor advierte que las cuantizaciones por debajo de Q8_0 producen "absolute gibberish", y recomienda Q8_0 solo "if you dare".
-- Modelo base sin alineación: no está ajustado para seguir instrucciones ni para mantener conversaciones; su uso como asistente requiere ajuste previo.
-- Contexto muy corto (1.024 tokens): insuficiente para documentos largos, conversaciones multi-turno extensas o razonamiento con contexto amplio.
-- Tokenizador personalizado de 16.000 tokens: requiere el parámetro `--override-kv tokenizer.ggml.pre=str:llama-bpe` en llama.cpp, lo que indica problemas de compatibilidad y riesgo de tokenización incorrecta en otras herramientas.
-- Riesgo elevado de alucinación y de texto incoherente, especialmente con cuantizaciones bajas o fuera de los idiomas declarados.
-- Idiomas limitados a ruso e inglés; no se garantiza un comportamiento aceptable en castellano.
-- Licencia Apache 2.0: permite uso comercial, pero la calidad del modelo hace desaconsejable su uso en producción sin evaluación exhaustiva.
-- Procedencia y mantenimiento: publicación con 0 descargas y 0 likes en el momento de la consulta; el autor de la cuantización no es el autor del modelo base, y no se documenta proceso de validación de los pesos convertidos.
-- Sin benchmarks publicados: no hay evidencia objetiva de rendimiento que respalde su uso frente a alternativas.
+- Conversion no oficial: el autor original no respalda esta cuantizacion, segun se indica en la propia model card.
+- Contexto muy limitado (1024 tokens), insuficiente para conversaciones largas o documentos extensos.
+- Alto riesgo de alucinacion y baja calidad generativa por el reducido numero de parametros.
+- Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento.
+- Licencia personalizada (rusmind-license): es imprescindible revisar los terminos antes de cualquier uso comercial.
+- Solo soporta ruso e ingles; no hay soporte para castellano.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no es apto para pipelines complejos.
+- El modelo base no incluye informacion sobre alineacion (RLHF/DPO), lo que puede afectar a la calidad de las respuestas en produccion.
 
 ## Enlaces
 
-- Hugging Face (esta cuantización): https://huggingface.co/Jar-ai/RusMind-Zernyshko-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/Jar-ai/RusMind-Zernyshko-GGUF
 - Modelo base: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
-- llama.cpp (runtime recomendado por el autor): https://github.com/ggml-org/llama.cpp
+- Licencia: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6/raw/main/LICENSE

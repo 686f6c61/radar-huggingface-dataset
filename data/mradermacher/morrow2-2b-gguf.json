@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Gemma-2-2b-All-in-One-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Gemma-2-2b-All-in-One-GGUF",
-      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
-    },
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    }
-  ]
+  "sources": []
 }

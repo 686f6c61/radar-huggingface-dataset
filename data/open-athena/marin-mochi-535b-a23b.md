@@ -2,92 +2,91 @@
 
 ## Resumen
 
-Marin-Mochi-535B-A23B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por open-athena y publicado en Hugging Face bajo el identificador `open-athena/Marin-Mochi-535B-A23B`. Se trata de un modelo base (no instruido ni alineado) orientado a generación de texto, con un total de 535.000 millones de parámetros de los cuales 23.000 millones se activan por token, lo que sitúa la inferencia en un régimen de coste computacional comparable a un modelo denso de ~23B. La nomenclatura interna lo asocia a la familia «marin» y a la variante de arquitectura «grug_moe».
+Marin Mochi 535B-A23B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por el proyecto open-athena dentro de la iniciativa Marin. Se trata de un artefacto de investigación: no es un modelo afinado para instrucciones, sino un export de pesos en BF16 de checkpoints de preentrenamiento retenidos de la fase denominada "Hero". El modelo almacena 535.477.106.688 parámetros totales y activa aproximadamente 22,76B de parámetros no pertenecientes a embeddings por token, de ahí la nomenclatura A23B.
 
-El modelo resulta relevante por su escala: combina un número total de parámetros muy elevado con una activación dispersa relativamente baja, lo que permite desplegarlo en clústeres multi-GPU sin alcanzar el coste de un denso de 500B. Al ser un modelo base, está pensado como punto de partida para fine-tuning y para tareas de continuación de texto, no como asistente conversacional listo para producción.
+La arquitectura GrugMoe combina 48 capas con un ancho oculto de 6144, 384 expertos enrutados (ocho seleccionados por token) y dos expertos compartidos, sobre un espacio latente de 3072 dimensiones. El checkpoint por defecto (`main`) usa una ventana de contexto de 65.536 tokens con atención deslizante de 2048 tokens, si bien el repositorio incluye checkpoints con contextos de 4K, 16K, 65K y 262K según la fase de entrenamiento.
 
-La información pública disponible es muy limitada: el repositorio está restringido (gated), no se han publicado idiomas soportados, resultados de benchmarks ni detalles del dataset de entrenamiento en la información proporcionada. El tamaño del repositorio (aproximadamente 4 TB) es coherente con pesos en precisión completa o bf16 para un modelo de este número de parámetros.
+Su relevancia actual es doble: por un lado, publica una familia completa de 57 checkpoints intermedios de preentrenamiento (del paso 6000 al 393491), lo que facilita la investigación sobre dinámicas de entrenamiento a gran escala; por otro, su despliegue exige un fork específico de vLLM con un cargador de expertos divididos, lo que lo convierte en un caso de estudio sobre los retos de servir modelos MoE de gran tamaño fuera de los ecosistemas estándar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE), etiqueta «grug_moe», familia «marin» |
-| Parámetros totales | 535B |
-| Parámetros activos | 23B por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
+| Arquitectura | GrugMoe (mixture-of-experts, transformer con atención local/global híbrida) |
+| Parametros totales | 535.477.106.688 |
+| Parametros activos | ~22,76B no-embedding por token (redondeado a 23B) |
+| Longitud de contexto | 65.536 tokens por defecto; checkpoints con 4K, 16K, 65K y 262K |
+| Tipos de cuantizacion | no disponible (solo se publican pesos BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | OpenMDW 1.1 |
-| Formato de pesos | no disponible (repo de ~4 TB, presumiblemente safetensors) |
+| Formato de pesos | safetensors (BF16, 193 shards, ~1,071 TB de payload) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con capas de mezcla de expertos (MoE), identificada en los metadatos como «grug_moe» dentro de la familia «marin». La proporción de activación es de aproximadamente el 4,3 % del total de parámetros (23B de 535B), un ratio típico de los MoE de gran escala que buscan desacoplar capacidad del coste de inferencia. No se dispone de información sobre el número de expertos, el tamaño de cada experto, el mecanismo de enrutamiento ni la estrategia de balanceo de carga.
+El modelo es un transformer MoE de 48 capas con ancho oculto de 6144. Cada capa contiene 384 expertos enrutados de los que se seleccionan ocho por token, más dos expertos compartidos, operando sobre un espacio latente de 3072 dimensiones. La atención emplea 48 cabezas de consulta con dimensión de cabeza 128; las capas locales usan 12 cabezas clave/valor, mientras que cada cuarta capa y la capa final emplean atención causal completa con seis cabezas clave/valor. Se incluyen convoluciones cortas aprendidas en las posiciones de clave, atención y MLP. El checkpoint por defecto aplica un multiplicador consulta/clave de 1,66 sobre las consultas normalizadas.
 
-Tampoco se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del corpus, la longitud de contexto nativa ni si hubo fases de RLHF, DPO o instrucción. El modelo se etiqueta explícitamente como `base-model`, por lo que se asume entrenamiento exclusivamente de modelado de lenguaje autorregresivo (next-token prediction) sin alineación posterior. Cualquier innovación técnica adicional (atención lineal, decodificación especulativa, etc.) no está documentada en la información disponible.
+Los pesos del checkpoint `main` son el promedio de 11 checkpoints (pasos 385500 a 390000 en intervalos de 500, más el paso 390251) con rescalado de norma hyperball. El repositorio retiene 57 checkpoints de preentrenamiento en ramas `step-N`. Las fases tempranas usan contexto de 4K, las posteriores 16K, los pasos 378000, 384000 y 390251 usan 65K, y los pasos 390500 a 393491 usan 262K con esquema de artefacto GrugMoe 3 y escalado logarítmico de consultas en capas globales. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO; el modelo se describe explícitamente como base model sin ajuste de instrucciones.
 
 ## Capacidades
 
-- Generación de texto autorregresiva y continuación de documentos largos.
-- Razonamiento y conocimiento factual heredado del preentrenamiento a gran escala (no verificado con benchmarks públicos).
-- Capacidad potencial de few-shot prompting y aprendizaje en contexto, propia de modelos base.
-- Punto de partida para fine-tuning supervisado y para alineación posterior (SFT, DPO, RLHF).
-- Soporte de tool calling: no confirmado; al ser un modelo base sin instrucción, no se garantiza.
-- Soporte de agentes y razonamiento multi-paso: no confirmado.
+- Generación de texto por completación: el modelo es un base model, por lo que debe usarse con prompts de continuación y no con formato de chat, pese a incluir una plantilla de chat.
+- Razonamiento y conocimiento general derivados del preentrenamiento a gran escala, sin evaluación publicada que lo cuantifique.
 - Capacidades multilingües: no disponibles en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Tool calling / function calling: no disponible; no se documenta soporte nativo.
+- Soporte de agentes y razonamiento multi-paso: no disponible; al no estar afinado para instrucciones, no se recomienda su uso directo en pipelines de agentes.
+- Capacidad de contexto largo: el checkpoint final (`step-393491`) soporta 262K tokens; el checkpoint por defecto, 65.536.
+- Checkpoints intermedios: 57 puntos de control que permiten estudiar la evolución de capacidades durante el preentrenamiento.
 
 ## Casos de uso
 
-- Fine-tuning supervisado para dominios verticales: el modelo sirve como base para adaptar un MoE de gran capacidad a tareas específicas (legal, médico, financiero) con un coste de inferencia contenido gracias a sus 23B parámetros activos.
-- Investigación en escalado de MoE: útil para estudiar dinámicas de enrutamiento, balanceo de expertos y eficiencia de activación en modelos de más de 500B parámetros.
-- Generación de código tras fine-tuning: al no estar instruido, requiere una fase de SFT sobre corpus de código antes de integrarse en pipelines de CI/CD o asistentes de programación.
-- Continuación de texto y generación de documentación técnica: aprovechable directamente en tareas de autocompletado o síntesis de documentos extensos si la ventana de contexto resulta suficiente (dato no confirmado).
-- Destilación de conocimiento: un modelo de este tamaño puede emplearse como profesor para destilar capacidades en modelos más pequeños y desplegables en producción.
-- Evaluación comparativa de arquitecturas MoE: sirve como referencia en estudios académicos que comparen MoE frente a densos de tamaño equivalente en tareas de razonamiento y generación.
-- Generación de datos sintéticos: puede producir corpus de entrenamiento a gran escala para otros modelos, sujeto a verificación de calidad y a los términos de la licencia.
+- Investigación sobre dinámicas de preentrenamiento: los 57 checkpoints retenidos permiten analizar cómo evolucionan las representaciones y las capacidades a lo largo de los pasos, comparando fases de 4K, 16K, 65K y 262K de contexto.
+- Experimentos de continuación de preentrenamiento: al ser un base model con pesos BF16 y manifiestos de procedencia verificados, sirve como punto de partida para fine-tuning sobre dominios específicos.
+- Evaluación de infraestructura de serving MoE: su requisito de un fork de vLLM con cargador de expertos divididos lo hace útil para validar despliegues de MoE de gran escala y comparar estrategias de paralelismo de expertos.
+- Procesamiento de documentos largos en investigación: el checkpoint de 262K tokens permite experimentar con tareas de summarización o recuperación sobre corpus extensos, siempre en modo completación.
+- Estudio de enrutamiento de expertos: con 384 expertos y ocho activos por token, es un banco de pruebas para analizar balanceo de carga, especialización de expertos y técnicas de poda.
+- Generación de texto sintético para investigación: puede emplearse para producir corpus de completación controlados, con la advertencia de revisar sesgos y alucinaciones antes de usarlos.
+- Reproducibilidad de merges de checkpoints: el recetario de promedio de 11 checkpoints con rescalado hyperball documentado en el repositorio sirve como referencia metodológica para otros equipos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card remite a la issue del repositorio de Marin con detalles de merge y resultados de evaluación, pero no se incluyen cifras en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16/fp16: aproximadamente 1,07 TB solo para pesos (535B × 2 bytes), más overhead de activaciones y caché KV.
-- VRAM estimada en cuantización de 8 bits: en torno a 535 GB para pesos.
-- VRAM estimada en cuantización de 4 bits: en torno a 270 GB para pesos; la viabilidad depende de si el formato de cuantización soporta correctamente el enrutamiento MoE.
-- GPU recomendadas: clústeres multi-GPU con H100 80 GB (mínimo 8-16 unidades para bf16), A100 80 GB o H200; no cabe en una GPU consumer.
-- GPU consumer: no es viable en RTX 4090, RTX 3090 ni similares por el tamaño del modelo, incluso con cuantización agresiva.
-- Opciones de despliegue: presumiblemente vLLM, TGI o SGLang para servir MoE en multi-GPU; llama.cpp/Ollama no son realistas a esta escala.
+- VRAM estimada para inferencia en BF16: el payload de pesos es de 1,071 TB, por lo que se requiere un clúster multi-GPU; no cabe en una sola GPU convencional.
+- GPU recomendadas: no disponibles de forma explícita; por tamaño, se necesitan nodos con múltiples aceleradores de alta gama (A100, H100 o equivalentes) y paralelismo de expertos.
+- GPU de consumo: no viable. El modelo no cabe en RTX 4090 ni en ninguna GPU consumer individual, ni siquiera con cuantización extrema, dado el tamaño total de parámetros.
+- Opciones de despliegue: exclusivamente el fork de vLLM de Marin con su cargador de expertos divididos; los checkpoints de 262K con esquema 3 requieren además soporte de escalado logarítmico de consultas globales. La carga con Transformers genérico no está validada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Marin-Mochi-535B-A23B | 535B / 23B | no disponible | OpenMDW 1.1 | Gated en Hugging Face |
-| DeepSeek-V3 (referencia MoE) | 671B / 37B | 128K | MIT (código) / licencia propia | Abierto |
-| Qwen3-235B-A22B (referencia MoE) | 235B / 22B | 128K | Apache 2.0 | Abierto |
-| Llama 4 Maverick (referencia MoE) | ~400B / 17B | 1M | Llama Community License | Abierto con condiciones |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Estado |
+|---|---|---|---|---|---|
+| Marin Mochi 535B-A23B | 535B | ~23B | 65K (hasta 262K) | OpenMDW 1.1 | Artefacto de investigación, sin benchmarks publicados |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Los datos de los modelos comparables se incluyen como referencia de categoría; no se dispone de benchmarks del modelo evaluado que permitan una comparación de rendimiento directa.
+No se dispone en la información proporcionada de modelos de referencia con los que establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin alineación: no está instruido ni ajustado con RLHF/DPO, por lo que puede producir contenido sesgado, tóxico o incoherente en formato conversacional.
-- Riesgo elevado de alucinación en tareas factuales al no haber pasado por fases de verificación o preferencia humana.
-- Idiomas soportados no documentados: no se puede garantizar calidad fuera del inglés sin evaluación previa.
-- Longitud de contexto no publicada: limita la planificación de casos de uso con documentos largos.
-- Licencia OpenMDW 1.1: es necesario revisar los términos exactos para uso comercial, redistribución y obligaciones de atribución antes de integrar el modelo en productos.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede retrasar la adopción en entornos corporativos.
-- Tamaño del repositorio (~4 TB): el almacenamiento y la transferencia de pesos suponen un coste logístico significativo.
-- Ausencia de benchmarks públicos: no es posible validar el rendimiento frente a alternativas sin evaluación propia.
-- Sin información sobre cuantizaciones oficiales: la viabilidad de despliegue en hardware limitado no está garantizada.
+- El autor declara explícitamente que el modelo no ha sido probado ni evaluado adecuadamente y que no es necesariamente seguro; su uso en producción es bajo responsabilidad del usuario.
+- Es un base model: la plantilla de chat incluida no implica ajuste de instrucciones, por lo que las respuestas conversacionales pueden ser incoherentes o no seguir formatos.
+- Riesgo de alucinación no cuantificado: al no existir evaluaciones publicadas, no hay estimaciones de fiabilidad factual.
+- Sesgos desconocidos: no se documenta la composición del dataset de entrenamiento ni análisis de sesgos.
+- Idiomas soportados no documentados; el rendimiento fuera del inglés (si el corpus fue mayoritariamente inglés) es incierto.
+- Restricciones de licencia: OpenMDW 1.1; debe revisarse el texto completo de la licencia antes de cualquier uso comercial.
+- Despliegue frágil: requiere un fork específico de vLLM y un cargador concreto; los cargadores GrugMoe antiguos rechazan el esquema 3, y la paridad numérica con el entrenamiento no está establecida.
+- Tamaño prohibitivo: 1,071 TB en BF16 y 193 shards dificultan el almacenamiento, la transferencia y el serving.
+- Contexto variable según rama: usar el checkpoint equivocado con la configuración de contexto esperada puede degradar resultados; cada rama tiene su propio `config.json` y model card.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/open-athena/Marin-Mochi-535B-A23B
-- Licencia OpenMDW 1.1: no disponible enlace directo en la información proporcionada
-- Paper, blog o repositorio oficial: no disponible
-- Demos: no disponible
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Marin-Mochi-535B-A23B
+- Rama de checkpoints fusionados: https://huggingface.co/open-athena/Marin-Mochi-535B-A23B/tree/merged
+- Checkpoint final de 262K: https://huggingface.co/open-athena/Marin-Mochi-535B-A23B/tree/step-393491
+- Detalles de merge y evaluación: https://github.com/marin-community/marin/issues/8435#issuecomment-6676769570
+- Fork de vLLM de Marin: https://github.com/marin-community/vllm
+- Cargador de expertos divididos (PR): https://github.com/marin-community/vllm/pull/77
+- Soporte de escalado logarítmico de consultas globales (PR): https://github.com/marin-community/vllm/pull/121
+- Tokenizer: https://huggingface.co/marin-community/marin-tokenizer

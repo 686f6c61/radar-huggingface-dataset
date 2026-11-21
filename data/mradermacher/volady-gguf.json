@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/volady-GGUF",
+  "slug": "mradermacher-volady-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/volady-GGUF",
+  "created_at": "2025-08-31T22:43:30.000Z",
+  "updated_at": "2026-11-21T01:03:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "milady",
+    "orpheus",
+    "text-to-speech",
+    "tts",
+    "en",
+    "base_model:theycallmeloki/volady",
+    "base_model:quantized:theycallmeloki/volady",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 3300867136,
+  "parameters_human": "3.30B",
+  "storage_bytes": 30292467264,
+  "storage_human": "30.3 GB",
+  "context_length": 131072,
+  "base_model": "theycallmeloki/volady",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

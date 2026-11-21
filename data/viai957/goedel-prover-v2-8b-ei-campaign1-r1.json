@@ -62,6 +62,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Lean 4 whole-proof generation (kernel-verified)",
+      "dataset": "miniF2F valid (226 supported statements)",
+      "metric": "pass@1 (n=8, 30k-token cap, seed 0)",
+      "value": 71.9
+    },
+    {
+      "task": "Lean 4 whole-proof generation (kernel-verified)",
+      "dataset": "miniF2F valid (226 supported statements)",
+      "metric": "pass@8 / solved@8 (188 of 226, seed 0)",
+      "value": 83.2
+    }
+  ],
   "sources": []
 }

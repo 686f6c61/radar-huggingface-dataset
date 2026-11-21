@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 951,
+  "downloads_30d": 1026,
   "trending_score": 10,
   "parameters": 3130797136,
   "parameters_human": "3.13B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "home | KRAFTON",
-      "url": "https://www.krafton.com/en/",
-      "snippet": "KRAFTON will further expand our original IPs and build immersive, virtual worlds, where our fans play together and share fun …"
-    },
-    {
-      "title": "Krafton - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Krafton",
-      "snippet": "Krafton ... KRAFTON, Inc. (Korean: 주식회사 크래프톤) is a South Korean video game publisher and holding company based in …"
-    },
-    {
-      "title": "KRAFTON",
-      "url": "https://accounts.krafton.com/",
-      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
-    },
-    {
-      "title": "Games - KRAFTON",
-      "url": "https://www.krafton.com/en/games/",
-      "snippet": "Action, Adventure PC Console inZOI"
-    },
-    {
-      "title": "Krafton — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Krafton",
-      "snippet": "Krafton Inc. (anciennement Bluehole Studio et Bluehole) est une entreprise sud-coréenne de développement et d' édition de jeux …"
-    }
-  ]
+  "sources": []
 }

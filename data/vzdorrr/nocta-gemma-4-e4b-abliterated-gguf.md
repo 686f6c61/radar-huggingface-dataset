@@ -2,95 +2,103 @@
 
 ## Resumen
 
-Nocta-Gemma-4-E4B-abliterated-GGUF es una recuantización en formato GGUF del modelo Gemma 4 E4B en su variante abliterated (sin rechazos), publicada por el usuario Vzdorrr para la aplicación de acompañamiento en dispositivo Nocta. Parte de los pesos QAT (quantization-aware training) de `google/gemma-4-E4B-it`, pasados por el proceso de abliteración de huihui-ai, y se recuantizan con una matriz de importancia (imatrix) para obtener un GGUF Q4_0 más pequeño y rápido que el Q4_K_M habitual sin degradar la calidad de chat.
+Nocta-Gemma-4-E4B-abliterated-GGUF es una recuantización en formato GGUF del modelo Gemma 4 E4B instruction-tuned de Google, pasada previamente por un proceso de abliteration (eliminación de la dirección de rechazo en el espacio de activaciones) a cargo de huihui-ai. El autor de esta ficha, Vzdorrr, la publica como artefacto optimizado para una aplicación de compañero conversacional en dispositivo (Nocta), con el objetivo explícito de reducir tamaño y aumentar velocidad frente a un Q4_K_M convencional sin degradar la calidad de chat.
 
-El objetivo declarado es doble: reducir el peso en disco y memoria frente a las cuantizaciones estándar (4,16 GB frente a 6,29 GB del Q4_K_M con proyector de visión) y mantener la calidad conversacional, medida con un banco de pruebas propio de 30 turnos. La receta aplica Q4_0 al conjunto del modelo, Q2_K a las tablas de embedding por capa (`per_layer_token_embd`, unos 2.820 millones de parámetros según la model card) y Q8_0 al proyector de visión.
+El modelo conserva la modalidad image-text-to-text del original (incluye un proyector visual cuantizado a Q5_0) y una arquitectura Gemma 4 de aproximadamente 6.750 millones de parámetros totales, de los cuales una parte relevante corresponde a tablas de embedding por capa que son meras búsquedas y por tanto toleran cuantización agresiva. La receta emplea cuantización Q4_0 guiada por importance matrix (imatrix) sobre texto de calibración multilingüe, Q2_K para el embedding por capa, y un recorte de vocabulario de 262.144 a 208.339 tokens.
 
-Es relevante para desarrolladores que necesiten un modelo multimodal pequeño, sin censura y ejecutable en hardware de consumo o en dispositivos ARM, con licencia Apache 2.0. Conviene señalar que el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y que la cifra de parámetros totales reportada en safetensors (478.088.384) no cuadra con los 2.820 millones de parámetros de embedding que menciona la propia model card, por lo que debe tomarse con cautela.
+Su relevancia práctica es doble: por un lado demuestra una técnica de compresión orientada a despliegue en CPU ARM (kernels rápidos de Q4_0), y por otro ejemplifica el ecosistema de variantes "abliterated" y "uncensored" que eliminan los mecanismos de rechazo del modelo original. La licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Gemma 4 E4B), con proyector de visión separado; detalles de atención no disponibles |
-| Parametros totales | 478.088.384 según safetensors; la model card cita 2.820 millones solo en `per_layer_token_embd` (dato inconsistente, ver limitaciones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 8192 tokens en las mediciones publicadas (ventana máxima no disponible) |
-| Tipos de cuantizacion | GGUF Q4_0 con imatrix (modelo principal), Q2_K para `per_layer_token_embd`, Q4_0 para `token_embd`; proyector de visión en Q8_0 |
-| Idiomas soportados | no disponible oficialmente; la calibración imatrix usó textos en ru, en, zh, es, fr, pt y de |
-| Licencia | Apache 2.0 |
+| Arquitectura | Transformer denso (Gemma 4 E4B), multimodal image-text-to-text; no se detalla configuración de capas ni atención en la información disponible |
+| Parametros totales | 6.746.761.514 |
+| Parametros activos | no disponible (no es MoE según la información aportada) |
+| Longitud de contexto | no disponible en la model card; las mediciones se realizaron con ctx 8192 en llama.cpp |
+| Tipos de cuantizacion | GGUF: Q4_0 con importance matrix para el modelo principal; Q2_K para `per_layer_token_embd`; Q4_0 para `token_embd`; Q5_0 para el proyector visual (mmproj) |
+| Idiomas soportados | No declarados formalmente; calibración y evaluación en ru, en, zh, es, fr, pt, de; vocabulario recortado elimina escrituras como devanagari, árabe, kana japonés y tailandés |
+| Licencia | apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Gemma 4 E4B en su variante instruct, con pesos entrenados con quantization-aware training (QAT) a Q4_0 por Google. Sobre esa base, huihui-ai aplicó abliteración, una técnica que elimina la dirección de rechazo en el espacio de activaciones para que el modelo deje de negarse a responder. Vzdorrr recuantiza después esos pesos BF16 con `llama-imatrix` y `llama-quantize`, usando un corpus de calibración compuesto por diálogos de rol y prompts de estilo aplicación en siete idiomas (ruso, inglés, chino, español, francés, portugués y alemán) con contexto de 512 tokens.
+El modelo parte de `google/gemma-4-E4B-it` en su variante QAT (quantization-aware training) publicada por Google, que huihui-ai convirtió a BF16 sin cuantizar y sometió a abliteration. Sobre esa base, Vzdorrr aplica una recuantización con `llama-imatrix` y `llama-quantize`: el tensor principal va en Q4_0 (coherente con el entrenamiento QAT original y con kernels rápidos en ARM), el embedding por capa (`per_layer_token_embd`, 2.820 millones de parámetros) va en Q2_K porque son búsquedas directas sin cómputo, y el embedding de tokens (`token_embd`) en Q4_0.
 
-La innovación técnica principal es la asignación selectiva de precisión: las tablas de embedding por capa (`per_layer_token_embd`) se cuantizan a Q2_K porque son búsquedas directas y su degradación afecta poco a la calidad de chat, mientras que el resto del modelo va a Q4_0 para coincidir con el entrenamiento QAT y aprovechar los kernels rápidos de ARM. El proyector de visión se mantiene en Q8_0 partiendo de BF16. No hay información sobre el volumen de tokens de entrenamiento original, la composición del dataset de Gemma 4 ni si hubo RLHF o DPO; esos datos corresponden a la model card de Google, no incluida en la información disponible.
+La novedad técnica principal es el recorte de vocabulario: se eliminan 53.805 tokens correspondientes a escrituras no usadas por la aplicación (devanagari, árabe, kana, tailandés y otras), conservando latín, cirílico, ideogramas CJK, coreano, emoji y todos los tokens especiales. Según el autor, la tokenización sobre los textos de la app es idéntica a la del modelo sin recortar y la generación greedy en ru/zh/es/en es palabra por palabra la misma. La calibración de la imatrix se hizo con diálogos de rol y prompts de estilo aplicación en siete idiomas (ru, en, zh, es, fr, pt, de). El proyector visual se cuantizó desde el mmproj F16 de mradermacher a Q5_0. No se documentan detalles adicionales sobre RLHF/DPO ni sobre el volumen de datos de preentrenamiento en la información disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, orientada a diálogos de rol con memoria de contexto y persona.
-- Comprensión de imágenes mediante el proyector de visión (`mmproj`), con pipeline `image-text-to-text`.
-- Modo sin rechazos (abliterated): no aplica las negativas alineadas del modelo original.
-- Multilingüismo derivado de Gemma 4 y reforzado en calibración para ruso, inglés, chino, español, francés, portugués y alemán.
-- Soporte de formato de chat instruct (variante `-it`).
-- No hay información disponible sobre tool calling, function calling, razonamiento multi-paso, modo thinking ni capacidades de audio.
+- Generación de texto conversacional multi-turno, orientada a diálogos de rol con memoria y persona.
+- Procesamiento de imagen y texto (pipeline image-text-to-text) mediante el proyector visual incluido en Q5_0.
+- Multilingüismo efectivo en ruso, inglés, chino, español, francés, portugués y alemán según los datos de calibración y evaluación; otras escrituras quedan degradadas por el recorte de vocabulario.
+- Comportamiento "abliterated": se eliminan los rechazos del modelo original, lo que permite respuestas sin filtros de seguridad aprendidos.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso con agentes en la información disponible.
+- No se documenta modo de pensamiento (thinking), audio ni otras modalidades más allá de imagen y texto.
 
 ## Casos de uso
 
-- Aplicación de acompañamiento en dispositivo: es el caso para el que se creó (app Nocta); el tamaño de 4,16 GB con visión y los 32 tok/s de generación en un Mac M5 Pro permiten ejecución local sin GPU dedicada.
-- Diálogos de rol persistentes: el banco de pruebas del autor es precisamente un diálogo de 30 turnos con memoria, persona y comprobaciones de formato, lo que valida el modelo para este escenario con contexto de 8192 tokens.
-- Asistente personal offline con entrada de imágenes: el proyector Q8_0 permite describir o interpretar capturas y fotos en local, sin enviar datos a la nube.
-- Prototipado de aplicaciones multimodales en ARM: los kernels Q4_0 están optimizados para ARM, lo que facilita desplegar en portátiles Apple Silicon, dispositivos Android de gama alta o placas SBC.
-- Investigación sobre alineación y abliteración: al ser una variante sin rechazos con licencia Apache 2.0, sirve para estudiar el comportamiento del modelo ante prompts que el original rechazaría, en entornos controlados.
-- Generación de contenido creativo sin filtros: escritura de ficción, guiones o narrativa interactiva donde las negativas del modelo base resultan un obstáculo.
-- Evaluación comparativa de cuantizaciones: la model card publica KL frente a BF16 y un bench propio, útil como referencia para decidir entre Q4_0 imatrix y Q4_K_M.
+- Compañero conversacional en dispositivo: es el caso de uso declarado; el tamaño de 3,71 GB (modelo más visión) y los kernels Q4_0 en ARM permiten ejecución local en hardware de consumo con latencia aceptable.
+- Roleplay y narrativa interactiva: la calibración con diálogos de rol y la evaluación con un bench de 30 turnos con memoria y persona lo hacen adecuado para personajes persistentes en aplicaciones móviles o de escritorio.
+- Asistencia visual offline: el proyector Q5_0 permite describir imágenes y responder preguntas sobre ellas sin conexión, útil en aplicaciones de accesibilidad o catalogación local.
+- Prototipado de aplicaciones multilingües en es/ru/zh/en: el modelo mantiene tokenización y generación equivalentes al original en esas lenguas, lo que facilita iterar sin reentrenar.
+- Investigación sobre abliteration y seguridad: sirve como referencia para estudiar cómo la eliminación de la dirección de rechazo afecta a la calidad conversacional y a la robustez.
+- Despliegue en entornos con recursos limitados: la combinación Q4_0 + Q2_K en embeddings reduce el peso en disco y memoria frente a Q4_K_M, útil en dispositivos embebidos o contenedores pequeños.
+- Evaluación comparativa de cuantizaciones: el autor publica métricas de KL y un bench propio, lo que permite reproducir y comparar recetas de cuantización.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (llama.cpp, Mac M5 Pro CPU, contexto 8192):
+Datos publicados por el autor (llama.cpp, Mac M5 Pro CPU, contexto 8192):
 
-| Modelo | Tamano (modelo + vision) | KL vs BF16 | Bench (0-100) | Gen / prefill (tok/s) |
+| Modelo | Tamaño (modelo + visión) | KL vs BF16 | Bench (0-100) | Gen / prefill tok/s |
 |---|---|---|---|---|
-| mradermacher Q4_K_M + mmproj f16 | 6,29 GB | 0,052 | 84 | 27 / 90 |
-| Nocta Q4_0 imatrix + mmproj Q8_0 | 4,16 GB | 0,077 | 86 (6 semillas) | 32 / 102 |
+| mradermacher Q4_K_M + mmproj F16 | 6,29 GB | 0,052 | 84 | 27 / 90 |
+| Mismo, vocabulario sin recortar | 3,99 GB | 0,077 | 86 (6 semillas); 81 / 95 / 80 (3 semillas) | 32 / 102 |
+| Este modelo (vocabulario recortado) | 3,71 GB | no disponible | 82 / 89 / 87 (3 semillas) | no disponible |
 
-El banco de pruebas es un diálogo de rol en ruso de 30 turnos con memoria, persona, robustez, visión, sondas sí/no y comprobaciones de formato. La divergencia KL aumenta (0,077 frente a 0,052), pero la puntuación del bench no baja. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Proyector visual (parte de visión del bench, 2 semillas):
+
+| mmproj | Tamaño | Puntuación de visión |
+|---|---|---|
+| Q8_0 | 0,56 GB | 88 / 100 |
+| Q5_0 (este) | 0,38 GB | 75 / 100 |
+| Q4_0 | no disponible | 75 y 88 en las dos semillas |
+
+El bench es un diálogo de rol en ruso de 30 turnos con pruebas de memoria, persona, robustez, visión, preguntas sí/no y formato. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: unos 4,16 GB para modelo más proyector de visión en Q4_0/Q8_0; el archivo principal pesa 3,60 GB y el `mmproj` 0,56 GB.
-- Cabe en GPU de consumo con 6 GB o más de VRAM (RTX 3060, RTX 4060, RTX 2060 de 6 GB); con 8 GB hay margen para contexto amplio.
-- Ejecutable en CPU y en Apple Silicon: las mediciones del autor son en Mac M5 Pro solo con CPU, con 32 tok/s de generación y 102 tok/s de prefill a contexto 8192.
-- Despliegue mediante llama.cpp (formato nativo GGUF); compatible con frontends que consuman GGUF como Ollama o LM Studio, aunque no se documenta una receta específica.
-- GPU de datacenter (A100, H100) no son necesarias para este tamaño; el modelo está pensado para inferencia en dispositivo.
-- Latencia y throughput en otras plataformas no disponibles.
+- VRAM/RAM estimada: el modelo principal ocupa 3,33 GB y el proyector visual 0,38 GB; con contexto 8192 conviene reservar al menos 5-6 GB de memoria total para pesos, caché KV y overhead.
+- Cabe en GPUs de consumo con 8 GB o más (RTX 3060, 4060, 4070, etc.) y en equipos Apple Silicon con memoria unificada; el autor lo midió en un Mac M5 Pro en CPU.
+- GPUs de datacenter (A100, H100) no son necesarias para este tamaño; su uso tendría sentido solo para servir muchas peticiones concurrentes.
+- Despliegue: llama.cpp es el runtime de referencia (formato GGUF, imatrix, mmproj); también puede servirse mediante Ollama u otros frontends compatibles con GGUF. vLLM y TGI no se mencionan en la información disponible para este artefacto.
+- Throughput medido en Mac M5 Pro CPU: 32 tok/s de generación y 102 tok/s de prefill para la variante sin recortar; no se publican cifras para la versión recortada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| Nocta-Gemma-4-E4B-abliterated (este) | 478 M según safetensors (inconsistente) | 8192 en pruebas | Q4_0 imatrix + Q2_K PLE | 4,16 GB con visión | Apache 2.0 | Abliterated, bench propio 86 |
-| mradermacher Q4_K_M del mismo base | mismo base | no disponible | Q4_K_M + mmproj f16 | 6,29 GB con visión | Apache 2.0 | Bench 84, KL 0,052 |
-| huihui-ai Huihui-gemma-4-E4B-it-qat-q4_0-unquantized-abliterated | mismo base | no disponible | BF16 (sin cuantizar) | no disponible | Apache 2.0 | Modelo base de esta recuantización |
-| google/gemma-4-E4B-it | mismo base | no disponible | QAT Q4_0 original | no disponible | Gemma license (no Apache 2.0) | Modelo original con alineación intacta |
-
-No hay datos de benchmarks estándar para comparar con otros modelos pequeños multimodales de la misma categoría; la comparación disponible se limita a variantes del mismo modelo base.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Nocta-Gemma-4-E4B-abliterated (este) | 6.746.761.514 | no disponible | GGUF Q4_0/Q2_K/Q5_0 | Apache 2.0 | Vocabulario recortado, abliterated, visión incluida |
+| mradermacher Q4_K_M del mismo base | mismo base | no disponible | GGUF Q4_K_M | Apache 2.0 | 6,29 GB con visión F16, sin recorte de vocabulario |
+| huihui-ai Huihui-gemma-4-E4B-it-qat-q4_0-unquantized-abliterated | mismo base | no disponible | BF16 / GGUF | Apache 2.0 | Modelo fuente sin recuantizar ni recortar |
+| google/gemma-4-E4B-it | mismo base | no disponible | safetensors / GGUF | Gemma license (no confirmada en la información disponible) | Modelo original con rechazos intactos |
 
 ## Limitaciones y advertencias
 
-- Inconsistencia en el recuento de parámetros: safetensors reporta 478.088.384, mientras que la model card habla de 2.820 millones solo en embeddings por capa. Verificar antes de dimensionar despliegues.
-- Modelo abliterated: se han eliminado los rechazos, por lo que puede generar contenido dañino, ofensivo o inexacto sin filtro; requiere moderación externa en producción.
-- Riesgo de alucinación propio de un modelo pequeño, agravado por la cuantización Q2_K en las tablas de embedding y por la pérdida de fidelidad frente a BF16 (KL 0,077).
-- La cuantización Q4_0 con imatrix está calibrada con diálogos de rol en siete idiomas; el rendimiento en otros dominios (código, matemáticas, texto técnico) no está medido.
-- Idiomas oficialmente soportados no disponibles; el multilingüismo se infiere de la calibración, no de una evaluación publicada.
-- Repositorio sin descargas ni validación de la comunidad (0 descargas, 0 likes); no hay garantía de mantenimiento ni de integridad de los pesos más allá de lo que declara el autor.
-- Aunque la licencia es Apache 2.0, el modelo deriva de Gemma 4, cuyos términos originales de Google pueden imponer restricciones adicionales al uso comercial; conviene revisar la licencia de Gemma antes de desplegar.
-- Sin información sobre tool calling ni agentes; no asumir soporte de function calling en producción.
+- El recorte de vocabulario degrada la tokenización en escrituras eliminadas (devanagari, árabe, kana japonés, tailandés y otras); para esos idiomas debe usarse el modelo sin recortar.
+- La abliteration elimina los rechazos aprendidos, lo que aumenta el riesgo de generar contenido dañino, sesgado o inexacto; no es apto para producción sin filtros externos.
+- No hay datos publicados de sesgos, tasas de alucinación ni evaluaciones de seguridad para esta variante.
+- La licencia Apache 2.0 se declara en la model card, pero conviene verificar la licencia del modelo Gemma original de Google antes de uso comercial, ya que la información disponible no la confirma.
+- El bench propio del autor (diálogo de rol en ruso) no equivale a evaluaciones estándar; el rendimiento en tareas de código, matemáticas o razonamiento formal no está medido.
+- El contexto máximo no se documenta; las pruebas se hicieron a 8192 tokens y no hay garantía de comportamiento más allá.
+- El proyector visual Q5_0 pierde algo de calidad frente a Q8_0 (75 frente a 88 en el bench de visión), aunque el autor lo atribuye a la variabilidad entre semillas.
+- No se documenta soporte de tool calling ni de agentes, por lo que no debe asumirse en pipelines que dependan de ello.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Vzdorrr/Nocta-Gemma-4-E4B-abliterated-GGUF
-- Modelo base (huihui-ai, abliterated): https://huggingface.co/huihui-ai/Huihui-gemma-4-E4B-it-qat-q4_0-unquantized-abliterated-GGUF
-- Modelo original (Google): https://huggingface.co/google/gemma-4-E4B-it
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Hugging Face: https://huggingface.co/Vzdorrr/Nocta-Gemma-4-E4B-abliterated-GGUF
+- Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-gemma-4-E4B-it-qat-q4_0-unquantized-abliterated-GGUF
+- mmproj de referencia (mradermacher): https://huggingface.co/mradermacher/Huihui-gemma-4-E4B-it-qat-q4_0-unquantized-abliterated-GGUF
+- Modelo original de Google: `google/gemma-4-E4B-it` (no se proporciona URL directa en la información disponible)
+- Repositorio de llama.cpp: no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponible

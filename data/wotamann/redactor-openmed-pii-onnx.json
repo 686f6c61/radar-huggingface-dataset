@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "wotamann/redactor-openmed-pii-onnx",
+  "slug": "wotamann-redactor-openmed-pii-onnx",
+  "author": "wotamann",
+  "url": "https://huggingface.co/wotamann/redactor-openmed-pii-onnx",
+  "created_at": "2026-11-20T23:52:32.000Z",
+  "updated_at": "2026-11-20T23:53:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "token-classification",
+    "pii",
+    "privacy",
+    "fp16",
+    "en",
+    "de",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1136314561,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

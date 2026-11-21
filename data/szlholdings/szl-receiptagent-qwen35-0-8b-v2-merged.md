@@ -2,99 +2,89 @@
 
 ## Resumen
 
-szl-receiptagent-qwen35-0.8b-v2-merged es un modelo derivado publicado por SZLHOLDINGS que consiste en la fusión del adaptador LoRA ReceiptAgent v2 sobre el modelo multimodal Qwen3.5-0.8B de Unsloth. El artefacto es la forma "runtime" del adaptador: pesos completos en safetensors listos para cargar con transformers, sin necesidad de aplicar el adaptador PEFT por separado. Cuenta con 852.985.920 parámetros y una arquitectura Qwen3_5ForConditionalGeneration (texto más visión), aunque el repositorio no incluye los ficheros de preprocesado de imagen necesarios para cargar entradas visuales.
+SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2-merged es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-0.8B, publicado por la organizacion SZLHOLDINGS dentro de su catalogo de modelos, datasets y Spaces orientados a IA gobernada y trazable. El modelo se distribuye ya fusionado (merged), es decir, los pesos del adaptador estan integrados en el checkpoint final, y se ofrece en formato safetensors con licencia Apache 2.0. Cuenta con 852.985.920 parametros totales y esta etiquetado para la tarea de generacion de texto.
 
-El modelo se presenta explícitamente como un artefacto de investigación "proposal-only", con doctrina interna v11-LOCKED y disposición de producción en HOLD. Su única evidencia declarada es una prueba de fidelidad de fusión: comparar las salidas greedy del adaptador original contra las del modelo fusionado sobre 5 prompts del propietario, con un resultado de 5/5 coincidencias exactas. No hay benchmarks de capacidad (MMLU, HumanEval, GSM8K) ni evaluación independiente.
+El nombre del artefacto ("receiptagent") sugiere un uso orientado a agentes que generan o procesan recibos y documentacion financiera, aunque la model card no documenta explicitamente el dataset de entrenamiento ni las capacidades concretas adquiridas. La model card es deliberadamente escueta en cuanto a rendimiento: el autor declara que cualquier cifra de entrenamiento o evaluacion no incluida en sus ficheros de recibo se considera desconocida (UNKNOWN), y no se afirma ningun resultado de benchmark en la propia tarjeta.
 
-Es relevante ahora como ejemplo de publicación gobernada y trazable: cada decisión (revisión base, hashes de dataset y scripts, estado de licencia) queda documentada en la model card y en el repositorio szl-forge. Para desarrolladores, sin embargo, su utilidad práctica es limitada: es un modelo de 0,85B en inglés, sin licencia en fichero y sin autorización de uso en producción según su propio autor.
+Su relevancia practica reside en el tamano reducido (menos de mil millones de parametros), que permite desplegarlo en hardware de consumo, y en el linaje Qwen3.5, que aporta una arquitectura moderna con soporte de contexto amplio. Ahora bien, la documentacion publica es muy limitada, por lo que cualquier evaluacion en produccion debe hacerse por cuenta del integrador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal texto+visión, model_type qwen3_5) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5, segun tag `qwen3_5`); detalles internos no disponibles |
 | Parametros totales | 852.985.920 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en float32 según config.json) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 declarada en frontmatter; fichero LICENSE no disponible en el repositorio |
-| Formato de pesos | safetensors (model.safetensors, 3.412.002.208 bytes) |
+| Tipos de cuantizacion | no disponible en la model card; al ser safetensors, admite conversion a GGUF/AWQ/GPTQ mediante herramientas externas |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo de 3.4 GB, incluye pesos fusionados) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una fusión de pesos: se parte de unsloth/Qwen3.5-0.8B en la revisión 23c69c53358a07516b5827588b3fdb12ae78fd65 y se integra el adaptador LoRA ReceiptAgent v2 en los pesos base, generando un checkpoint completo. La arquitectura subyacente es Qwen3.5, un transformer multimodal con configuración de texto y visión, registrada con transformers_version 5.17.0. Los pesos se almacenan en float32, lo que explica el tamaño de 3,4 GB para menos de mil millones de parámetros.
+El modelo es un fine-tune del checkpoint unsloth/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5 con aproximadamente 0,85 mil millones de parametros. El repositorio se publica con la libreria `peft`, lo que indica que el ajuste se realizo mediante tecnicas de parametros eficientes (LoRA o similar) y que posteriormente los pesos del adaptador se fusionaron en el modelo base para dar lugar al checkpoint final. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron etapas de RLHF, DPO o SFT adicionales mas alla del ajuste supervisado.
 
-No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset del adaptador, ni si hubo RLHF o DPO. La única evidencia de calidad es la prueba de fidelidad de fusión: 5 prompts con plantilla de chat del propietario, generación greedy, comparación exacta entre adaptador y modelo fusionado, con resultado 5/5. Esa prueba no mide capacidad del modelo, solo que la fusión no alteró las salidas en ese conjunto reducido. El dataset, el script y el recibo están versionados con hashes SHA-256 en el repositorio szl-forge, pero la vinculación con la revisión del Hub figura como NOT_ESTABLISHED.
+La model card no documenta innovaciones tecnicas propias. Las caracteristicas arquitectonicas heredadas del modelo base (mecanismos de atencion, posibles modos de razonamiento extendido, tokenizador multilingue) no se detallan en la informacion proporcionada y deben consultarse en la ficha del modelo Qwen3.5-0.8B original. El autor enfatiza un enfoque de trazabilidad ("receipted results") en el que las afirmaciones de entrenamiento y evaluacion se remiten a ficheros de auditoria externos, no incluidos en esta tarjeta.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo base Qwen3.5-0.8B.
-- Procesamiento de entradas imagen-texto a nivel de arquitectura (image-text-to-text), aunque el repositorio no incluye preprocessor_config.json ni processor_config.json, por lo que las entradas de imagen no son cargables solo con este repositorio.
-- Orientación declarada a tareas de "receipt agent" (procesamiento de recibos y documentos), sin evidencia de capacidad publicada más allá de la prueba de fidelidad.
-- Soporte de tool calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según el campo language.
-- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
+- Generacion de texto autoregresiva en ingles, tarea principal declarada en el pipeline (`text-generation`).
+- Especializacion probable en tareas de agente relacionadas con recibos y documentacion financiera, inferida del nombre del artefacto; no confirmada en la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes multi-paso: no documentado explicitamente; el nombre "receiptagent" sugiere orientacion a flujos de agente, sin evidencia tecnica en la tarjeta.
+- Capacidades multilingues: limitadas al ingles segun el campo de idiomas del repositorio.
+- Modo de razonamiento extendido (thinking), vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigación sobre fusión de adaptadores LoRA: el modelo sirve como referencia reproducible para estudiar cómo se comporta un merge de adapter a pesos completos y comparar salidas greedy contra el adaptador original, dado que el autor publica scripts y hashes.
-- Auditoría de publicaciones gobernadas: equipos que diseñan pipelines de publicación de modelos pueden usar la model card y los recibos de szl-forge como plantilla de trazabilidad (revisiones, hashes, estados de elegibilidad).
-- Prototipado de agentes de recibos en inglés: con 0,85B parámetros, el modelo cabe en cualquier GPU consumer y permite iterar rápidamente sobre prompts de extracción de datos de recibos, siempre que se asuma que no hay benchmarks de capacidad que respalden su precisión.
-- Evaluación comparativa de artefactos derivados: útil para verificar que un checkpoint fusionado reproduce el comportamiento del adaptador antes de desplegarlo en un pipeline interno.
-- Docencia y experimentación con modelos multimodales pequeños: permite cargar un transformer texto+visión de menos de mil millones de parámetros en transformers 5.17.0 para estudiar su configuración interna, aunque la parte visual requiere ficheros de preprocesado ausentes.
-- Pruebas de integración con transformers: sirve para validar que un entorno con transformers 5.17.0 carga correctamente arquitecturas qwen3_5 y plantillas de chat personalizadas (chat_template.jinja de 8.149 bytes).
+- Extraccion y estructuración de datos de recibos: el modelo puede recibir texto OCR de un ticket o factura y devolver un JSON con campos normalizados (fecha, comercio, importe, impuestos). Su tamano reducido permite ejecutarlo en local dentro de un pipeline de contabilidad sin enviar documentos financieros a terceros.
+- Clasificacion de gastos en aplicaciones de finanzas personales: dado un conjunto de lineas de recibo, asignar categorias contables de forma consistente, con la ventaja de que el modelo cabe en una GPU de consumo y el coste por inferencia es bajo.
+- Asistente conversacional de soporte para reclamaciones: gestionar conversaciones multi-turno sobre devoluciones o discrepancias de facturacion; la ventana de contexto efectiva debe validarse empiricamente, ya que no esta documentada.
+- Preprocesamiento en pipelines de auditoria: como primer eslabon que transforma documentos no estructurados en registros verificables antes de pasarlos a un modelo mayor o a un sistema de reglas, reduciendo el coste total del flujo.
+- Prototipado rapido de agentes documentales: servir de base para experimentar con tool calling y flujos multi-paso en entornos de desarrollo, dado que la licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+- Despliegue en el borde (edge) o en entornos con recursos limitados: al tener menos de mil millones de parametros, puede ejecutarse en CPU o en GPUs integradas para tareas de extraccion de informacion en tiempo real dentro de aplicaciones moviles o de escritorio.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son los del model-index del autor, que miden fidelidad de fusión, no capacidad:
-
-| Benchmark | Metrica | Resultado | Verificado |
-|---|---|---|---|
-| ReceiptAgent v2 owner-run chat-template prompts (eval, 5 muestras) | Exact-match rate de salidas greedy (adaptador vs fusionado) | 1.0 (5/5) | No (verified: false) |
-| ReceiptAgent v2 owner-run chat-template prompts (eval, 5 muestras) | Numero de salidas coincidentes | 5 | No (verified: false) |
-
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El propio autor declara `capability_benchmark: false` e `independent_evaluation: false`.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de rendimiento mas alla de las medidas en auditorias fechadas, y que los datos no incluidos en los ficheros de recibo se consideran desconocidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en float32 ocupan aproximadamente 3,4 GB, por lo que se necesitan al menos 4-5 GB de VRAM en FP32. En FP16 serían unos 1,7 GB y en cuantización de 4 bits alrededor de 0,5-1 GB, aunque el repositorio no publica versiones cuantizadas.
-- GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060, RTX 4060, RTX 4090) es suficiente para FP32; para mayor throughput, A100 o H100 si se sirve en lote.
-- Cabe en GPU consumer: sí, en todas las GPU consumer modernas con 6-8 GB de VRAM o más.
-- Opciones de despliegue: transformers (versión 5.17.0 según config.json) es la vía documentada. vLLM, llama.cpp, Ollama o TGI no están mencionados en la información disponible; la compatibilidad con ellos no está confirmada.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,7 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, entre 2 y 3 GB para contextos cortos.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,9-1,2 GB.
+- VRAM estimada en cuantizacion de 4 bits: alrededor de 0,5-0,8 GB.
+- GPU recomendadas: cualquier GPU consumer moderna con 4 GB o mas de VRAM (RTX 3050, RTX 4060, RTX 4090); tambien cabe en GPUs de datacenter (A100, H100) aunque estan sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU discretas actuales e incluso en CPU mediante llama.cpp.
+- Opciones de despliegue: vLLM, TGI, llama.cpp y Ollama tras convertir los pesos a GGUF; el formato nativo safetensors es compatible con Transformers y con las librerias de inferencia estandar.
+- Latencia y throughput estimados: no disponibles; al tratarse de un modelo de 0,85 mil millones de parametros, se espera un throughput alto en GPU consumer, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Evidencia publicada | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| szl-receiptagent-qwen35-0.8b-v2-merged | 852.985.920 | no disponible | apache-2.0 declarada (sin fichero LICENSE) | Solo fidelidad de fusión 5/5, no verificada | Pesos safetensors en Hugging Face |
-| unsloth/Qwen3.5-0.8B (base) | ~0,8B | no disponible | según el repositorio base | Benchmarks del modelo base, no detallados aquí | Pesos en Hugging Face |
-| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2 (adaptador PEFT) | adaptador LoRA sobre 0,8B | no disponible | apache-2.0 declarada | Predecesor congelado, comparator | Pesos PEFT en Hugging Face |
-| Familia ReceiptAgent 1.5B de SZLHOLDINGS | ~1,5B | no disponible | no disponible | no disponible | Repositorios de la organización SZLHOLDINGS |
+| szl-receiptagent-qwen35-0.8b-v2-merged | 852.985.920 | no disponible | Apache 2.0 | en | Fine-tune fusionado de Qwen3.5-0.8B; sin benchmarks publicados |
+| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8 mil millones | no disponible en esta ficha | segun modelo base | no disponible | Referencia directa; el fine-tune hereda su arquitectura |
+| Qwen2.5-0.5B / 1.5B (generacion anterior) | 0,5 / 1,5 mil millones | 32.768 tokens (familia Qwen2.5) | Apache 2.0 | multilingue | Alternativa consolidada de tamano comparable; datos de contexto de la familia Qwen2.5 |
+| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | multilingue | Alternativa de tamano similar con contexto amplio y licencia con restricciones |
+
+La comparacion con Qwen2.5 y Llama 3.2 se ofrece como referencia de categoria; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- El propio autor marca el artefacto como `proposal-only`, con `publication_eligible: false`, `autonomy_eligible: false` y `production_disposition: HOLD`. No está autorizado para uso en producción según su model card.
-- La evidencia de calidad es mínima: 5 muestras, ejecución del propietario, sin verificación independiente y sin benchmark de capacidad. No permite inferir precisión en tareas reales de extracción de recibos.
-- La vinculación entre los recibos de evaluación y la revisión concreta del Hub figura como NOT_ESTABLISHED.
-- No hay fichero LICENSE en el repositorio; la licencia apache-2.0 solo consta en el frontmatter, lo que genera incertidumbre jurídica para uso comercial.
-- Faltan preprocessor_config.json y processor_config.json: las entradas de imagen no son cargables solo con este repositorio, pese a la arquitectura multimodal.
-- Idioma limitado al inglés; no hay evidencia de rendimiento en castellano u otros idiomas.
-- Riesgo de alucinación inherente a un modelo de 0,85B sin ajuste documentado de alineamiento; no se dispone de datos sobre sesgos.
-- Longitud de contexto no documentada, lo que impide planificar casos de uso con documentos largos.
-- El nombre del modelo base canónico del adaptador (Qwen/Qwen3.5-0.8B) difiere del usado en la fusión (unsloth/Qwen3.5-0.8B), y el autor declara `base_repos_byte_identical: UNKNOWN`.
+- Documentacion muy escasa: la model card no detalla el dataset de entrenamiento, el proceso de ajuste ni las capacidades reales, lo que dificulta evaluar su idoneidad antes de desplegarlo.
+- Ausencia de benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni de tareas de extraccion documental, por lo que el rendimiento debe medirse internamente.
+- Riesgo de alucinacion: como todo modelo generativo de este tamano, puede inventar campos, importes o fechas en tareas de extraccion; se recomienda validacion posterior con reglas o esquemas.
+- Limitacion idiomatica: el campo de idiomas solo declara ingles, por lo que el rendimiento en castellano no esta garantizado ni documentado.
+- Contexto desconocido: al no documentarse la longitud de contexto, los flujos con documentos largos requieren validacion empirica.
+- Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones adicionales, pero no exime de cumplir las obligaciones de atribucion correspondientes.
+- Trazabilidad declarativa: las afirmaciones de rendimiento se remiten a ficheros de recibo externos que no acompanan al repositorio; conviene verificar su existencia antes de confiar en cualquier cifra.
+- Especializacion incierta: la orientacion a "receipt agent" se deduce del nombre, no de una descripcion funcional detallada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2-merged
-- Adaptador predecesor (v2 PEFT): https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
-- Modelo base de la fusión: https://huggingface.co/unsloth/Qwen3.5-0.8B
-- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS
-- Repositorio de evidencia (szl-forge): https://github.com/szl-holdings/szl-forge
-- Recibo de fidelidad de fusión: https://github.com/szl-holdings/szl-forge/blob/f7231bd0b604ed85b28d258e8c8d19b3d400f2b2/receiptagent-v2/qual_v2_salvage_receipt.20260913.json
-- Registro candidato de la fusión: https://github.com/szl-holdings/szl-forge/blob/main/frontier/qwen35-receiptagent-v2-merged/candidate.json
-- Organización en GitHub: https://github.com/szl-holdings
-- Sitio de producto: https://a-11-oy.com
-- Portal de pruebas: https://a11oy.net
+- Organizacion SZLHOLDINGS en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
+- Organizacion en GitHub (referenciada en la model card): https://github.com/szl-holdings
+- Repositorio de generacion de tarjetas (referenciado en la model card): https://github.com/szl-holdings/estate-cards

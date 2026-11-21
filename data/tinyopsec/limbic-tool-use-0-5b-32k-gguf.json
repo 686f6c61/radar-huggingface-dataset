@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "quotientai/limbic-tool-use-0.5B-32K · Hugging Face",
-      "url": "https://huggingface.co/quotientai/limbic-tool-use-0.5B-32K",
-      "snippet": "Limbic-Tool-Use MCP Function Call Evaluator This model is a fine-tuned version of Qwen2.5-.5B-Instruct specifically designed for evaluating function calls in the context of Model Context Protocol (MCP) tools. It can assess whether a function call is correct, uses the wrong tool, has incorrect parameter names, or has incorrect parameter values."
-    },
-    {
-      "title": "DevQuasar/quotientai.limbic-tool-use-0.5B-32K-GGUF · Hugging Face",
-      "url": "https://huggingface.co/DevQuasar/quotientai.limbic-tool-use-0.5B-32K-GGUF",
-      "snippet": "Instructions to use DevQuasar/quotientai.limbic-tool-use-.5B-32K-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Run Limbic-tool-use-0.5B-32K API (Easy Deployment & Flat-Rate Pricing)",
-      "url": "https://featherless.ai/models/quotientai/limbic-tool-use-0.5B-32K",
-      "snippet": "Limbic-Tool-Use MCP Function Call Evaluator quotientai/limbic-tool-use-.5B-32K is a highly specialized model developed by QuotientAI, fine-tuned from the Qwen2.5-.5B-Instruct base model. Its core purpose is to evaluate the correctness of function calls made by other language models in the context of Model Context Protocol (MCP) tools. This model is not designed for generating responses but ..."
-    },
-    {
-      "title": "limbic-tool-use-0.5B-32K — quotientai agent · MeshKore",
-      "url": "https://meshkore.com/agent/quotientai-limbic-tool-use-05b-32k",
-      "snippet": "This model is a fine-tuned version of Qwen2.5-.5B-Instruct specifically designed for evaluating function calls in the context of Model Context Protocol (MCP) tools. It can assess whether a function call is correct, uses the wrong tool, has incorrect parameter names, or has incorrect parameter values. Indexed · not connecteddata Use this agent → Copy canonical URL"
-    },
-    {
-      "title": "Limbic Tool Use 0.5B 32K by quotientai - llm-explorer.com",
-      "url": "https://llm-explorer.com/model/quotientai%2Flimbic-tool-use-0.5B-32K,3lQgqmWLqTgn0kDwaa4lBA",
-      "snippet": "Limbic Tool Use 0.5B 32K is an open-source 0.5b LLM by quotientai. VRAM 1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    }
-  ]
+  "sources": []
 }

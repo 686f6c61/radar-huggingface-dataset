@@ -2,97 +2,90 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct-heretic1x-code-GGUF es la distribucion en formato GGUF del modelo richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code, una version "abliterada" (con los mecanismos de rechazo eliminados) de Qwen/Qwen2.5-Coder-7B-Instruct, el modelo de codigo de 7.600 millones de parametros de Alibaba Qwen. La abliteracion se realizo con Heretic 1.x (heretic-llm 1.4.0), aplicando ablacion direccional de rango 1 con direcciones de rechazo derivadas de codigo. El autor, Richard J. Young, publica estos ficheros como material de investigacion sobre eliminacion de rechazos y su evaluacion, no como asistente de proposito general.
+`richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code-GGUF` es una cuantización en formato GGUF de un derivado del modelo Qwen2.5-Coder-7B-Instruct de Alibaba, publicada por el usuario richardyoung. El modelo de origen ha sido modificado mediante la técnica conocida como "abliteration" (etiquetada como *heretic*), un procedimiento que elimina o atenúa la dirección de rechazo en el espacio de activaciones del transformer para reducir las negativas del modelo ante peticiones que el modelo original rechazaría. El resultado se distribuye como un modelo "uncensored" orientado a investigación.
 
-El modelo conserva la arquitectura y los pesos del Qwen2.5-Coder-7B-Instruct original, con la unica modificacion de la ablacion direccional, y se distribuye en cuantizaciones GGUF para su uso con llama.cpp y Ollama. El repositorio ocupa 12,8 GB e incluye Q4_K_M (4,7 GB), Q8_0 (8,1 GB) y una importance matrix de 9 MB; el autor anuncia la incorporacion progresiva de IQ3_M, IQ4_XS, Q5_K_M y Q6_K. La relevancia actual es metodologica: forma parte del conjunto de modelos evaluados en un articulo sobre como la regla de seleccion puede invertir las comparativas entre herramientas de abliteracion (Heretic 1.x, Heretic 2.0, OBLITERATUS y publicaciones de la comunidad).
+El modelo conserva la arquitectura y el tamaño del Qwen2.5-Coder-7B-Instruct original (7.615.616.512 parámetros reales según safetensors), por lo que mantiene sus capacidades de generación de código, razonamiento y conversación multi-turno. La versión publicada es exclusivamente GGUF, pensada para su uso con llama.cpp y Ollama, con cuantizaciones generadas mediante imatrix. El repositorio ocupa 32,3 GB y acumula 745 descargas y 3 likes en el momento de la consulta.
 
-La ficha se centra en la informacion disponible en el repositorio y en la model card; los datos de arquitectura, entrenamiento y capacidades del modelo base no se detallan en la informacion proporcionada y se marcan como no disponibles cuando corresponde.
+La relevancia de esta ficha es doble: por un lado, documenta una variante de un modelo de código ampliamente utilizado; por otro, advierte de que se trata de un modelo modificado para eliminar salvaguardas, con acceso restringido (gated) y con implicaciones éticas y de licencia que deben evaluarse antes de cualquier uso en producción. El modelo solo declara soporte para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-Coder-7B-Instruct; detalles no disponibles en la informacion proporcionada) |
-| Parametros totales | 7.615.616.512 (7,6 B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q4_K_M, Q8_0 (publicadas); IQ3_M, IQ4_XS, Q5_K_M, Q6_K (anunciadas como pendientes); importance matrix (imatrix) |
-| Idiomas soportados | en (segun metadatos del repositorio) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se publica en safetensors |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-Coder-7B-Instruct; detalles finos no disponibles) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el Qwen2.5-Coder-7B-Instruct original soporta 32.768 tokens, pero no se confirma para esta variante) |
+| Tipos de cuantizacion | GGUF (multiples niveles; el repo incluye cuantizaciones generadas con imatrix; niveles exactos no disponibles) |
+| Idiomas soportados | Ingles (unico idioma declarado) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp / Ollama) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una modificacion post-entrenamiento del Qwen2.5-Coder-7B-Instruct. La tecnica aplicada es abliteracion con Heretic 1.x (heretic-llm 1.4.0): ablacion direccional de rango 1 usando direcciones de rechazo derivadas de codigo. El proceso de seleccion consistio en 200 ensayos y eligio la variante con menos rechazos en el conjunto de desarrollo sujeto a una divergencia KL de primer token respecto al original menor o igual a 0,01; el ensayo seleccionado presenta una KL de 0,0092 y 26 rechazos por palabra clave sobre los 100 prompts de ajuste.
+El modelo es un transformer decoder-only de 7.615.616.512 parámetros, heredado del Qwen2.5-Coder-7B-Instruct. La modificación principal respecto al original es el proceso de *abliteration* (denominado "heretic1x"), que consiste en identificar la dirección de activación asociada al rechazo de peticiones y restarla o proyectarla fuera de las representaciones internas del modelo. Este procedimiento se aplica típicamente sobre los pesos y no requiere un reentrenamiento completo, aunque puede degradar ligeramente capacidades generales. No se dispone de información sobre el dataset exacto, el número de tokens de entrenamiento ni si se aplicaron fases de RLHF o DPO en esta variante concreta.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF o DPO en el modelo base; esos datos no aparecen en la informacion proporcionada. Los ficheros GGUF se generaron con llama.cpp (commit 468fde9): conversion con convert_hf_to_gguf.py en outtype bf16 y cuantizacion con llama-quantize sobre CPU, verificando cada fichero de pesos safetensors contra su SHA-256. Las cuantizaciones IQ3_M, IQ4_XS, Q4_K_M y Q5_K_M usan la importance matrix (calibration_datav3, 128 fragmentos de 512 tokens, calculada sobre la build Q8_0); Q6_K y Q8_0 son estaticas. Cada fichero Q4_K_M se cargo y respondio a un prompt de prueba antes de la subida.
+La versión publicada es una cuantización GGUF, lo que implica que los pesos han sido convertidos desde el formato original (probablemente safetensors) y cuantizados, en este caso con la técnica imatrix para mejorar la calidad de las cuantizaciones bajas. El tag `endpoints_compatible` sugiere que el modelo puede servirse a través de la infraestructura de Hugging Face Inference Endpoints, aunque al ser GGUF el despliegue habitual será con llama.cpp u Ollama. No se dispone de información sobre innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.) más allá de las propias del Qwen2.5-Coder original.
 
 ## Capacidades
 
-- Generacion de texto y codigo: hereda las capacidades del Qwen2.5-Coder-7B-Instruct original, orientado a tareas de programacion.
-- Conversacion multi-turno: el repositorio esta etiquetado como conversational.
-- Eliminacion de rechazos: el modelo cumple muchas peticiones que el original rechaza (tasa de rechazo del 62,2% frente al 83,2% del original sobre 972 prompts daninos retenidos, segun el articulo y para el modelo en precision completa).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: los metadatos solo declaran ingles (en).
-- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
+- Generación de texto y conversación multi-turno en inglés.
+- Generación y razonamiento sobre código (el modelo base Qwen2.5-Coder está especializado en tareas de programación).
+- Razonamiento matemático y lógico básico, heredado del modelo base.
+- Reducción de rechazos ante peticiones que el modelo original denegaría (comportamiento "uncensored").
+- Soporte de cuantizaciones GGUF para inferencia en CPU y GPU con llama.cpp y Ollama.
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
+- No se declara soporte de tool calling, function calling, agentes, visión ni audio en la información proporcionada.
+- Capacidades multilingües limitadas al inglés según los tags del repositorio.
 
 ## Casos de uso
 
-- Investigacion sobre abliteracion: el modelo sirve como sujeto de estudio para medir la eliminacion de rechazos, comparar herramientas (Heretic 1.x, Heretic 2.0, OBLITERATUS) y reproducir los resultados del articulo del autor.
-- Evaluacion de defensas frente a la eliminacion de rechazos: permite probar clasificadores, filtros de salida y mecanismos de moderacion contra un modelo con rechazos reducidos.
-- Estudio del efecto de la cuantizacion en el comportamiento de rechazo: la model card advierte que la cuantizacion puede alterar la conducta de rechazo, por lo que los ficheros Q4_K_M y Q8_0 permiten comparar ese efecto frente al modelo en bf16.
-- Despliegue local con llama.cpp: el fichero Q4_K_M (4,7 GB) se ejecuta con llama-cli sobre hardware de consumo, util para pruebas de inferencia en entornos controlados.
-- Experimentos con Ollama: el autor publica instrucciones de uso con ollama run, lo que facilita la integracion en flujos de investigacion locales.
-- Analisis de divergencia respecto al original: el modelo permite estudiar el impacto de la ablacion en la distribucion de salida (KL de primer token de 0,0092 en el ensayo seleccionado).
-- Generacion de codigo en entornos de investigacion: al conservar la base Qwen2.5-Coder, puede usarse para tareas de programacion en laboratorios, siempre dentro de los usos previstos por el autor.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la abliteration afecta a la tasa de rechazo y a la calidad de las respuestas, comparándolo con el Qwen2.5-Coder-7B-Instruct original en experimentos controlados.
+- Generación de código en entornos de investigación: puede utilizarse para autocompletar y generar fragmentos de código en inglés, aprovechando la especialización del modelo base y su despliegue ligero en GGUF.
+- Despliegue local en hardware de consumo: al ser GGUF, puede ejecutarse con llama.cpp u Ollama en equipos con GPU de gama media o incluso en CPU, lo que facilita pruebas offline sin infraestructura cloud.
+- Evaluación de robustez de filtros: sirve para probar sistemas de moderación y detección de contenido, ya que genera respuestas que un modelo alineado rechazaría, permitiendo validar clasificadores de seguridad.
+- Prototipado de asistentes conversacionales en inglés: su formato conversacional y su tamaño de 7B permiten iterar rápidamente en demos de chatbot sin grandes costes de inferencia.
+- Estudio de degradación por cuantización: al ofrecer múltiples niveles GGUF con imatrix, permite comparar la pérdida de calidad entre cuantizaciones y el modelo original en tareas de código.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible son los de la model card para el modelo en precision completa (bf16), no para los ficheros GGUF:
-
-| Metrica | Original | Este modelo |
-|---|---|---|
-| Rechazo sobre 972 prompts daninos retenidos (juez WildGuard) | 83,2% | 62,2% (605/972) |
-| Rechazos por palabra clave sobre los 100 prompts de ajuste (ensayo seleccionado) | no disponible | 26 |
-| Divergencia KL de primer token respecto al original (ensayo seleccionado) | no disponible | 0,0092 |
-
-Regla de seleccion: menos rechazos en desarrollo con KL menor o igual a 0,01 (200 ensayos). No se han publicado resultados de benchmarks de codigo (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: Q4_K_M requiere aproximadamente 4,7 GB de pesos mas overhead de contexto; Q8_0 requiere aproximadamente 8,1 GB mas overhead.
-- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano, Q4_K_M es apto para GPUs de consumo con 6-8 GB de VRAM y Q8_0 para GPUs con 10-12 GB o mas.
-- Cabe en GPU de consumo: si, en el caso de Q4_K_M en GPUs con al menos 6-8 GB de VRAM; Q8_0 requiere una GPU de gama alta de consumo o superior.
-- Opciones de despliegue: llama.cpp (llama-cli), Ollama (ollama run con la etiqueta del repositorio o hf.co) y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 7,6B en GGUF, las cuantizaciones de 4 bits suelen requerir en torno a 4-6 GB de VRAM, las de 8 bits en torno a 8-10 GB y FP16 en torno a 15-16 GB (estimaciones orientativas, no confirmadas para esta variante).
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cabría esperar compatibilidad con RTX 3060/4060 (12 GB) en cuantizaciones bajas, RTX 4090, A100 y H100 en cuantizaciones altas o FP16.
+- Compatibilidad con GPU de consumo: probable en cuantizaciones de 4-5 bits en GPUs con 8 GB o más, aunque no se confirma oficialmente.
+- Opciones de despliegue: llama.cpp y Ollama (formato GGUF), y potencialmente Hugging Face Inference Endpoints (tag `endpoints_compatible`).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos (972 prompts, WildGuard) | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (heretic1x-code) | 7,6 B | no disponible | 62,2% | apache-2.0 | GGUF |
-| Qwen/Qwen2.5-Coder-7B-Instruct (original) | 7,6 B | no disponible | 83,2% | apache-2.0 | safetensors |
-| Heretic 2.0 sobre Qwen2.5-Coder | no disponible | no disponible | no disponible | no disponible | no disponible |
-| OBLITERATUS sobre Qwen2.5-Coder | no disponible | no disponible | no disponible | no disponible | no disponible |
+| richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code-GGUF | 7,6B | No disponible | Apache 2.0 | GGUF | Variante abliterated, solo inglés, acceso gated |
+| Qwen2.5-Coder-7B-Instruct (original) | 7,6B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | Safetensors, GGUF | Modelo alineado, multilingüe, base de esta variante |
+| Otras variantes abliterated de Qwen2.5-Coder | ~7,6B | Variable | Apache 2.0 | GGUF, safetensors | Múltiples autores publican variantes similares; no se dispone de comparación de rendimiento |
 
-Los modelos Heretic 2.0 y OBLITERATUS se mencionan en el articulo citado como alternativas evaluadas, pero sus cifras concretas no aparecen en la informacion proporcionada; se indican como no disponibles.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de esta variante con el modelo original ni con otras alternativas.
 
 ## Limitaciones y advertencias
 
-- El autor declara explicitamente que los ficheros se publican para investigacion sobre abliteracion y su evaluacion, no como asistente de proposito general.
-- El modelo cumple muchas peticiones que el original rechaza; la tasa de rechazo baja del 83,2% al 62,2% en el modelo completo, lo que implica un riesgo mayor de generar contenido danino.
-- Las cifras de rechazo y KL corresponden al modelo en bf16; la model card advierte que la cuantizacion puede cambiar el comportamiento de rechazo y que los ficheros GGUF no fueron evaluados en el articulo.
-- Idiomas: los metadatos solo declaran ingles; el comportamiento en castellano no esta documentado.
-- Longitud de contexto: no disponible en la informacion proporcionada.
-- Riesgo de alucinacion y sesgos conocidos: no documentados en la informacion proporcionada.
-- Licencia apache-2.0, con las mismas restricciones de uso que el modelo de origen; el usuario es responsable del uso legal.
-- El modelo base es una modificacion de Qwen2.5-Coder-7B-Instruct; cualquier limitacion del original no documentada aqui debe consultarse en su model card.
+- Modelo modificado para reducir rechazos: puede generar contenido que el modelo original evitaría, con implicaciones éticas y de seguridad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
+- Solo declara soporte para inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Riesgo de alucinación inherente a los modelos de 7B, potencialmente agravado por la modificación de pesos.
+- La abliteration puede degradar capacidades generales (razonamiento, coherencia) respecto al modelo original; no se han publicado evaluaciones que lo cuantifiquen.
+- Licencia Apache 2.0 permite uso comercial, pero el uso de un modelo "uncensored" en producción puede incumplir políticas de plataformas, normativas sectoriales o términos de servicio de proveedores cloud.
+- No se dispone de información sobre sesgos específicos introducidos o amplificados por la modificación.
+- El repositorio es de un autor individual (richardyoung), no de un laboratorio oficial; la reproducibilidad y el soporte son limitados.
+- No se confirma la longitud de contexto efectiva de esta variante; conviene validarla empíricamente antes de usarla con contextos largos.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code-GGUF
-- Modelo base (abliterado, safetensors): https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code
-- Modelo original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
-- Licencia del modelo original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE
-- Articulo citado: Young, R. J., *The Selection Rule Can Reverse LLM Abliteration Tool Comparisons: Heretic 1.x, Heretic 2.0, OBLITERATUS and Community Releases on Qwen2.5 and Qwen2.5-Coder* (enlace arXiv pendiente de publicacion)
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code-GGUF
+- Modelo base de la cuantización: https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-code
+- Modelo original de referencia (Qwen2.5-Coder-7B-Instruct): no se proporciona enlace en la información disponible; puede localizarse en el espacio oficial de Qwen en Hugging Face.
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

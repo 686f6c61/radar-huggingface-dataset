@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "hmkz-1981/gemma-4-e4b-agentic-rl-think-r5-GGUF",
+  "slug": "hmkz-1981-gemma-4-e4b-agentic-rl-think-r5-gguf",
+  "author": "hmkz-1981",
+  "url": "https://huggingface.co/hmkz-1981/gemma-4-e4b-agentic-rl-think-r5-GGUF",
+  "created_at": "2026-11-20T16:25:27.000Z",
+  "updated_at": "2026-11-20T16:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "grpo",
+    "tool-use",
+    "instruction-following",
+    "instruction-hierarchy",
+    "agent",
+    "llama.cpp",
+    "text-generation",
+    "ja",
+    "en",
+    "dataset:allenai/IF_multi_constraints_upto5",
+    "dataset:nvidia/Nemotron-RL-instruction_following",
+    "dataset:openai/ih-challenge",
+    "base_model:hmkz-1981/gemma-4-e4b-agentic-rl-think-r5",
+    "base_model:quantized:hmkz-1981/gemma-4-e4b-agentic-rl-think-r5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 19999405536,
+  "storage_human": "20.0 GB",
+  "context_length": 131072,
+  "base_model": "hmkz-1981/gemma-4-e4b-agentic-rl-think-r5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How difficult would it be to learn french if you speak both ... - Reddit",
+      "url": "https://www.reddit.com/r/French/comments/4f77y7/how_difficult_would_it_be_to_learn_french_if_you/",
+      "snippet": "Apr 17, 2016 · Grammar is also very similar to Spanish and there are words that are similar to English but in general I think speaking …"
+    }
+  ]
+}

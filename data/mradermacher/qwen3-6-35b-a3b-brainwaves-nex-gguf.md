@@ -2,100 +2,93 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-GGUF` contiene una coleccion de cuantizaciones en formato GGUF del modelo `nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex`, un modelo de lenguaje de 35.505.251.456 parametros totales (35,5 B) construido mediante tecnicas de mezcla (merge/mergekit) y destilacion sobre la familia Qwen. El autor de las cuantizaciones es mradermacher, un publicador habitual de versiones GGUF de modelos abiertos, mientras que el modelo original procede del usuario nightmedia.
+Qwen3.6-35B-A3B-Brainwaves-Nex-GGUF es la versión cuantizada en formato GGUF del modelo nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex, un modelo de lenguaje de tipo Mixture of Experts (MoE) con 35.505.251.456 parámetros totales y 3.000 millones de parámetros activos por token (según el sufijo A3B del nombre). El modelo original deriva de la familia Qwen3.5/Qwen3.6 y ha sido sometido a un proceso de destilación, ajuste fino supervisado (SFT) con LoRA e instruction tuning orientado a razonamiento con cadenas de pensamiento largas (long-CoT). La cuantización la firma mradermacher, un autor habitual en el ecosistema GGUF.
 
-El nombre del modelo sigue la nomenclatura `A3B` habitual en arquitecturas de mezcla de expertos (MoE) de la familia Qwen, lo que sugiere en torno a 3.000 millones de parametros activos por token sobre un total de 35,5 B. Esta interpretacion no aparece confirmada de forma explicita en la model card, por lo que debe tomarse como inferencia a partir de la nomenclatura y no como un dato verificado. La model card si documenta que se trata de una variante orientada a razonamiento con cadenas de pensamiento largas (long-cot), ajustada mediante SFT y LoRA, con soporte multilingue para ingles, chino, japones y castellano.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de 35.000 millones de parámetros en hardware de consumo gracias a la arquitectura MoE, que solo activa una fracción de los parámetros en cada paso de inferencia. El repositorio incluye además un suplemento multimodal (mmproj), lo que sugiere capacidades de visión, y cubre cuatro idiomas: inglés, chino, japonés y español.
 
-La relevancia de esta ficha es practica: el repositorio esta etiquetado como experimental y cuenta con cero descargas y un solo "like" en el momento de la consulta, ademas de haberse publicado el 11 de septiembre de 2026. Se trata, por tanto, de una variante de nicho sin validacion comunitaria amplia, cuyo interes principal es la disponibilidad de cuantizaciones GGUF que permiten ejecutar un modelo de 35,5 B en hardware de consumo, con tamanos de archivo de 13,3 GB (Q2_K) y 20,5 GB (Q4_K_S).
+Se trata de un modelo experimental (etiquetado como "merge" y "experimental" por el autor) y su uso en producción debe evaluarse con cautela, ya que no se han publicado resultados de benchmarks verificables en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (nombre y etiquetas sugieren transformer con mezcla de expertos; sin confirmar en la model card) |
-| Parametros totales | 35.505.251.456 (35,5 B, dato real de safetensors) |
-| Parametros activos | aproximadamente 3 B segun la nomenclatura `A3B` del nombre; no confirmado en la documentacion |
+| Arquitectura | Transformer Mixture of Experts (MoE), derivada de Qwen3.5/Qwen3.6 |
+| Parametros totales | 35.505.251.456 (35,5 B) |
+| Parametros activos | 3.000 millones (según sufijo A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; ademas mmproj-Q8_0 y mmproj-f16 (proyector multimodal) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; también mmproj-Q8_0 y mmproj-f16 |
 | Idiomas soportados | en, zh, ja, es |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); safetensors en el modelo base |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo original. Las etiquetas del repositorio apuntan a un proceso de construccion basado en `merge` y `mergekit` (mezcla de pesos de modelos), combinado con `distillation`, `sft` y `lora`, sobre una base de la familia Qwen etiquetada simultaneamente como `qwen3_5` y `qwen3_6`. La presencia de la etiqueta `long-cot` y de `chain-of-thought` indica un ajuste orientado a generar cadenas de razonamiento extensas antes de la respuesta final. El numero de tokens de entrenamiento, la composicion exacta del dataset y el uso de RLHF o DPO no se documentan en la model card, por lo que se marcan como no disponibles.
+La arquitectura es un transformer con mezcla de expertos (MoE): de los 35,5 mil millones de parámetros totales, solo unos 3 mil millones se activan por token, lo que reduce el coste computacional de la inferencia manteniendo una capacidad de representación propia de un modelo mucho mayor. El modelo base, nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex, se construyó mediante un pipeline que combina destilación, ajuste fino supervisado (SFT) con adaptadores LoRA e instruction tuning, con especial énfasis en razonamiento de cadena de pensamiento larga (long-CoT). Las etiquetas del repositorio mencionan también mergekit, lo que indica que el modelo resultante es una fusión de pesos de distintos checkpoints o adaptadores.
 
-Un elemento destacable es la inclusion de ficheros `mmproj` (proyector multimodal) junto a las cuantizaciones de texto. Estos ficheros, de 0,7 GB (Q8_0) y 1,0 GB (f16), son el componente que permite conectar un codificador visual con el modelo de lenguaje en el ecosistema llama.cpp. Su presencia es un indicio fuerte de soporte multimodal, aunque la model card no describe explicitamente capacidades de vision ni la arquitectura del codificador asociado. Las etiquetas `mxfp8`, `mxfp4` y `mlx` apuntan a trabajos derivados para formatos de precision reducida en hardware Apple, ajenos a este repositorio concreto.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. Tampoco se documenta ninguna innovación técnica adicional como decodificación especulativa o atención lineal. La presencia de archivos mmproj (multi-modal supplement) en el repositorio de cuantizaciones sugiere que el modelo incorpora un proyector multimodal para entrada de imágenes, aunque el autor no detalla su funcionamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional e instruccional, con ajuste declarado sobre SFT y LoRA.
-- Razonamiento explicito con cadenas de pensamiento largas (long-cot), segun las etiquetas `reasoning` y `chain-of-thought`.
-- Capacidades declaradas en matematicas (`math`), areas STEM (`stem`) y programacion (`coding`).
-- Soporte multilingue para ingles, chino, japones y castellano.
-- Posible soporte multimodal (vision) por la presencia de ficheros `mmproj`, no confirmado en la documentacion.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita, aunque el modo de razonamiento largo es compatible con este tipo de flujos.
-- Capacidad especial de modo "thinking": no disponible como declaracion formal, aunque el etiquetado de razonamiento lo sugiere.
+- Generación de texto conversacional multi-turno con instruction tuning.
+- Razonamiento explícito mediante cadenas de pensamiento largas (long-CoT), incluyendo modos de "thinking".
+- Resolución de problemas matemáticos y de ciencia, tecnología, ingeniería y matemáticas (STEM).
+- Generación y asistencia en programación (coding).
+- Capacidades multilingües en inglés, chino, japonés y español.
+- Posible entrada multimodal (visión) gracias a los ficheros mmproj incluidos en el repositorio de cuantizaciones.
+- Soporte de tool calling / function calling: no documentado explícitamente en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el énfasis en long-CoT es compatible con flujos de razonamiento extendido.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido: el modelo esta ajustado con datos de matematicas y modo de pensamiento largo, por lo que puede emplearse para resolver problemas paso a paso y auditar el razonamiento intermedio, util en herramientas educativas o de verificacion de calculos.
-- Generacion y revision de codigo: con etiquetas de `coding` y `stem`, encaja en asistentes de programacion que explican el razonamiento antes de proponer el parche, integrables en revisiones de pull requests.
-- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_S (20,5 GB) y Q2_K (13,3 GB) permiten ejecutar un modelo de 35,5 B en equipos con 24 GB o 16 GB de VRAM respectivamente, sin depender de APIs externas.
-- Procesamiento de documentacion multilingue: al cubrir ingles, chino, japones y castellano, sirve para traducir, resumir y extraer informacion de conjuntos documentales mixtos en esas cuatro lenguas.
-- Prototipado de investigacion sobre mezclas de expertos: al ser un modelo de origen comunitario con etiquetas `merge`, `mergekit` y `experimental`, resulta util como objeto de estudio para analisis de calidad de mezclas y destilaciones.
-- Atencion al cliente en idioma castellano o japones: el soporte declarado de ambos idiomas permite construir asistentes conversacionales localizados, siempre que se valide previamente la calidad real en esos idiomas.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes de cuantizacion mas dos proyectores multimodales, lo que permite medir el impacto de la precision en tareas concretas sobre un mismo modelo base.
+- Asistencia en programación en local: con cuantizaciones Q4_K_M de 21,8 GB, el modelo puede ejecutarse en una GPU de consumo de gama alta y emplearse como copiloto de código en entornos sin conexión, aprovechando su entrenamiento en coding y su modo de razonamiento.
+- Razonamiento matemático y STEM en investigación: el ajuste long-CoT permite plantear problemas paso a paso y revisar la traza de razonamiento, útil para validación de demostraciones o ejercicios docentes.
+- Atención al cliente multilingüe: al cubrir inglés, chino, japonés y español, puede gestionar conversaciones multi-turno en cuatro mercados con un único despliegue, siempre que se valide la longitud de contexto real (no disponible).
+- Análisis de documentos e imágenes: la presencia de mmproj permite procesar capturas, diagramas o documentos escaneados junto con texto, por ejemplo para extracción de datos en flujos internos.
+- Prototipado de agentes con razonamiento extendido: su naturaleza long-CoT lo hace adecuado para experimentar con pipelines de razonamiento multi-paso en local antes de escalar a modelos mayores.
+- Despliegue en estaciones de trabajo con una sola GPU: las cuantizaciones Q4_K_S (20,5 GB) y Q4_K_M (21,8 GB) caben en GPUs de 24 GB de VRAM, lo que permite ofrecer un asistente interno sin depender de la nube.
+- Evaluación comparativa de modelos MoE: útil para investigadores que quieran medir el comportamiento de un MoE de 35B con 3B activos frente a modelos densos del mismo tamaño en tareas de razonamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizaciones no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalentes, y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a paginas de matematicas escolares en polaco, sin relacion con el objeto de esta ficha). El unico dato de rendimiento indirecto es el grafico de perplejidad de ikawrakow enlazado por el autor, que compara tipos de cuantizacion de baja calidad de forma generica y no es especifico de este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en funcion del fichero: Q2_K ocupa 13,3 GB, Q4_K_S ocupa 20,5 GB. A estas cifras hay que sumar la cache KV del contexto elegido y el consumo del runtime, por lo que conviene reservar entre 1 y 3 GB adicionales segun la longitud de contexto.
-- Si se usa el componente multimodal, hay que anadir 0,7 GB (mmproj-Q8_0) o 1,0 GB (mmproj-f16) al presupuesto de memoria.
-- GPU de consumo: la cuantizacion Q4_K_S (20,5 GB) cabe en tarjetas de 24 GB como la RTX 3090 o la RTX 4090; la Q2_K (13,3 GB) puede caber en tarjetas de 16 GB como la RTX 4080 o la RTX 4060 Ti de 16 GB, con margen reducido.
-- GPU profesionales: A100 40/80 GB, H100, L40S o RTX A6000 ejecutan con holgura las cuantizaciones altas (Q8_0, Q6_K) y contextos amplios.
-- Despliegue: el formato GGUF es compatible con llama.cpp, Ollama, LM Studio, koboldcpp y llama-cpp-python. vLLM y TGI tienen soporte parcial de GGUF y estan mas orientados a safetensors; para servirlos en produccion a traves de esas herramientas conviene partir del modelo base.
-- Latencia y throughput: no disponibles. Al tratarse presumiblemente de una arquitectura de mezcla de expertos con unos 3 B de parametros activos, la velocidad de decodificacion deberia ser notablemente superior a la de un modelo denso de 35,5 B con la misma cuantizacion, pero este extremo no esta verificado con mediciones publicadas.
-- Almacenamiento: el repositorio completo ocupa 153,4 GB, aunque basta con descargar el fichero de cuantizacion deseado.
+- VRAM estimada para inferencia según cuantización: Q2_K 13,3 GB; Q3_K_S 15,6 GB; Q3_K_M 17,3 GB; Q3_K_L 18,7 GB; IQ4_XS 19,5 GB; Q4_K_S 20,5 GB; Q4_K_M 21,8 GB; Q5_K_S 24,7 GB; Q5_K_M 25,4 GB; Q6_K 29,3 GB; Q8_0 37,9 GB. Añadir aproximadamente 0,7-1,0 GB si se usa el proyector multimodal.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q4_K_S; RTX 3090 (24 GB) para las mismas cuantizaciones; A100 40/80 GB o H100 para Q6_K y Q8_0; GPUs de 16 GB solo con Q2_K o Q3_K_S.
+- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090 y GPUs de 24 GB con cuantizaciones Q4; en GPUs de 16 GB con Q2_K/Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en safetensors es compatible con transformers.
+- Latencia y throughput estimados: no disponibles. Al ser un MoE con 3B parámetros activos, el throughput debería ser superior al de un modelo denso de 35B, pero no se han publicado cifras.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece frente a modelos de la misma familia y rango de tamano, tomando los datos publicos de sus fichas oficiales como referencia aproximada. Los valores del modelo de esta ficha no estan verificados en la documentacion y se marcan como tales.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Brainwaves-Nex (este) | 35,5 B | aproximadamente 3 B (sin confirmar) | no disponible | apache-2.0 | GGUF en este repositorio; 0 descargas |
-| Qwen3-30B-A3B | 30,5 B (referencia publica) | 3,3 B (referencia publica) | 128 K (referencia publica) | apache-2.0 | safetensors y multiples GGUF; ampliamente desplegado |
-| Qwen2.5-32B | 32,5 B (referencia publica) | denso | 128 K (referencia publica) | apache-2.0 (salvo variantes) | safetensors y GGUF |
-| Mixtral 8x7B | 46,7 B (referencia publica) | 12,9 B (referencia publica) | 32 K (referencia publica) | apache-2.0 | safetensors y GGUF |
+| Qwen3.6-35B-A3B-Brainwaves-Nex (este) | 35,5 B | 3 B | no disponible | Apache 2.0 | GGUF, safetensors |
+| Modelo denso de ~30-35B de la familia Qwen | no disponible | no aplica | no disponible | no disponible | no disponible |
+| MoE de ~30B con ~3B activos de otras familias | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Nota: los datos de las filas comparativas provienen de las fichas publicas de dichos modelos y se incluyen como orientacion; no se han verificado contra el modelo objeto de esta ficha, cuya model card no aporta cifras equivalentes. No se dispone de comparativas de rendimiento (benchmarks) entre estos modelos y el modelo analizado.
+No se dispone de datos verificables de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado explicitamente como `experimental`: no ha pasado una validacion comunitaria amplia (0 descargas y 1 like en el momento de la consulta) y su comportamiento real no esta documentado con evaluaciones.
-- Procedencia parcialmente opaca: es una mezcla y destilacion de origen comunitario, sin publicacion de dataset, numero de tokens de entrenamiento ni detalles del pipeline de RLHF o DPO.
-- La interpretacion de 3 B de parametros activos procede unicamente de la nomenclatura del nombre y no esta confirmada; si la arquitectura no fuese de mezcla de expertos, los requisitos de memoria y velocidad serian muy distintos.
-- Riesgo de alucinacion: no cuantificado por el autor. Los modelos con modo de razonamiento largo pueden producir cadenas de pensamiento plausibles pero incorrectas, especialmente en matematicas y codigo.
-- Sesgos conocidos: no documentados. Al derivar de la familia Qwen con datos mayoritariamente en ingles y chino, es previsible un sesgo de representacion en otros idiomas y culturas, incluido el castellano.
-- Cobertura idiomatica declarada de cuatro lenguas (en, zh, ja, es); no consta validacion de calidad por idioma.
-- Longitud de contexto no especificada: no es posible garantizar el comportamiento en conversaciones o documentos largos sin probarlo.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero la licencia se hereda del modelo base y de los modelos mezclados; conviene verificar la procedencia de todos los componentes antes de un despliegue comercial.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan de forma notable la calidad, especialmente en tareas de razonamiento y codigo; la model card no incluye perplejidad medida para este modelo concreto.
-- Los ficheros `mmproj` sugieren soporte multimodal, pero no se documenta el codificador visual asociado ni su calidad; no debe asumirse vision fiable en produccion.
-- El autor indica que las cuantizaciones ponderadas con imatrix no estan disponibles y que podrian no llegar a publicarse.
+- Modelo experimental y resultado de una fusión (merge): el comportamiento puede ser menos estable que el de un checkpoint oficial de la familia Qwen.
+- No hay benchmarks publicados: no es posible verificar el rendimiento real frente a alternativas.
+- Longitud de contexto no documentada: no se debe asumir una ventana larga sin comprobación empírica.
+- Riesgo de alucinación inherente a los modelos de lenguaje, agravado por el modo long-CoT, que puede producir trazas de razonamiento plausibles pero incorrectas.
+- Sesgos desconocidos: no se documenta la composición del dataset ni los filtros aplicados.
+- Cobertura idiomática limitada a en, zh, ja y es; el rendimiento en español no está cuantificado.
+- La licencia Apache 2.0 permite uso comercial, pero al ser un modelo derivado conviene revisar las condiciones del modelo base y de los checkpoints fusionados.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; para producción se recomienda Q4_K_M o superior.
+- El soporte de tool calling y de agentes no está documentado, por lo que no debe asumirse en integraciones críticas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex
-- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Brainwaves-Nex-GGUF
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Sitio del patrocinador (nethype GmbH): https://www.nethype.de/
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Brainwaves-Nex-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

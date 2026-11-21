@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Inference Guide Qwen3.8-Flash-Next: Architecture, Memory &",
-      "url": "https://intuitionlabs.ai/pdfs/qwen3-8-flash-next-architecture-memory-348c4023169e52db.pdf",
-      "snippet": "Executive Summary Qwen3.8-Flash-Next is an open-weight, multimodal mixture-of-experts model that Alibaba's Qwen team released on August 26, 2026, positioned as an experimental preview of the architecture that will underpin the future Qwen4 generation rather than a conventional production model. Its backbone totals 125 billion parameters with 6 billion activated per token, alongside a 51 ..."
-    },
-    {
-      "title": "local-inference-lab/Qwen3.8-Flash-Next-FLARE · Hugging Face",
-      "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-FLARE",
-      "snippet": "This repository provides an alpha-quality prepared runtime package for Qwen3.8-Flash-Next( built exclusively for a community preview of Flare. It includes model weights, compiled CUDA kernels, and captured execution graphs. These files require Flare; they cannot be loaded directly by Transformers ..."
-    }
-  ]
+  "sources": []
 }

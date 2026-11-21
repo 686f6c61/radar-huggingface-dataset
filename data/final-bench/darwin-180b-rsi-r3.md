@@ -2,131 +2,130 @@
 
 ## Resumen
 
-Darwin-180B-RSI-R3 es un modelo de lenguaje multimodal (imagen y texto) de tipo mixtura de expertos (MoE) con aproximadamente 180.000 millones de parametros totales, desarrollado por FINAL-Bench. Se presenta como la segunda ronda de mejora recursiva a nivel de modelo sobre Darwin-180B-RSI (conocido como R1), del que hereda la receta de entrenamiento: el propio modelo resuelve problemas verificables, conserva unicamente las soluciones que superan la comprobacion automatica y entrena sobre ellas, sin trazas de razonamiento ni soluciones escritas por humanos. Segun la model card, el modelo deriva de la familia Qwen (etiqueta qwen3.8) y su modelo padre declarado es Qwen3.8-Flash-Next.
+Darwin-180B-RSI-R3 es un modelo de lenguaje multimodal (texto e imagen) de tipo Mixture-of-Experts desarrollado por VIDRAFT y publicado en Hugging Face bajo la organización FINAL-Bench. Con 179.999.981.459 parámetros totales y una arquitectura MoE de 512 expertos con atención híbrida (lineal y completa), está diseñado para razonamiento de largo alcance, extracción estructurada de documentos y tareas de razonamiento matemático y científico. Su ventana de contexto alcanza los 262.000 tokens y su linaje parte de Qwen3.8-Flash-Next, del que hereda las capas de expertos mientras reconstruye atención y expertos compartidos mediante un proceso de auto-mejora recursiva (RSI, *recursive self-improvement*).
 
-El modelo combina atencion hibrida (hibrida + lineal), una ventana de contexto de 262.000 tokens, vision integrada y un modo de razonamiento explicito (thinking) con salida estructurada. Su interes inmediato para desarrolladores e investigadores es doble: por un lado, encabeza el ranking oficial de Hugging Face de ExtractBench con 90,29 puntos (por delante de los 89,88 de su propio padre), y por otro, la linea Darwin-180B-RSI acumula diez primeros puestos oficiales en leaderboards de Hugging Face, nueve de ellos obtenidos por R1 y uno por R3. Ademas, existe una version cuantizada a 4 bits en GGUF (111 GB) que, segun el autor, se ejecuta en un portatil con 8 GB de GPU y 32 GB de RAM, o solo con CPU a 18-21 tokens por segundo.
+El modelo se posiciona como un sistema de razonamiento con modo *thinking*, salida estructurada y soporte de tool calling, orientado a pipelines de agentes y extracción documental. Según la model card, R3 lidera el leaderboard de ExtractBench con 90.29 y ocupa el tercer puesto en EvasionBench con 77.83; la línea Darwin-180B-RSI acumula diez primeros puestos oficiales en Hugging Face, nueve de ellos de la revisión R1.
 
-El atractivo principal es la combinacion de tamano (180B), contexto largo (262K), multimodalidad y un pipeline de automejora verificable, empaquetado con una licencia de comunidad Qwen y compatibilidad declarada con vLLM y API compatible con OpenAI.
+La relevancia actual del modelo radica en tres factores: su condición de pesos abiertos en una categoría dominada por modelos propietarios, su especialización en extracción estructurada y razonamiento verificable, y la disponibilidad de una cuantización GGUF de 4 bits (POCKET-Darwin-180B-GGUF, 111 GB) que permite ejecución en hardware de consumo. La licencia es `qwen-community-1.0`, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE disperso (512 expertos), atencion hibrida (hibrida + lineal), vision-language |
-| Parametros totales | 179.999.981.459 (~180B) |
+| Arquitectura | Transformer MoE disperso con atención híbrida (lineal + completa); vision-language |
+| Parametros totales | 179.999.981.459 (≈180B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.000 tokens (262K) |
-| Tipos de cuantizacion | BF16 (safetensors del repo principal); GGUF de 4 bits en el repo POCKET-Darwin-180B-GGUF; no se detallan otros niveles |
-| Idiomas soportados | en, ko, zh, ja, multilingual (coreano, ingles, chino, japones y multilingue) |
-| Licencia | qwen-community-1.0 (declarada como license: other con license_link a LICENSE) |
-| Formato de pesos | safetensors (transformers) y GGUF (4 bits, repo separado) |
+| Longitud de contexto | 262.144 tokens (262K) |
+| Tipos de cuantizacion | BF16 (pesos originales); GGUF 4 bits (POCKET-Darwin-180B-GGUF, 111 GB) |
+| Idiomas soportados | en, ko, zh, ja, multilingual (coreano e inglés como idiomas principales) |
+| Licencia | qwen-community-1.0 (license: other) |
+| Formato de pesos | safetensors (repo de 360 GB); GGUF disponible en repo separado |
 | Pipeline | image-text-to-text |
-| Tamano del repositorio | 360,0 GB |
-| Fecha de creacion | 2026-10-01 |
-| Ultima actualizacion | 2026-10-05 |
-| Descargas / likes | 271 / 17 |
+| Libreria | transformers |
+| Expertos | 512 (MoE disperso) |
+| Compatibilidad de despliegue | vLLM, API compatible con OpenAI |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de mixtura de expertos dispersa (sparse MoE) con 512 expertos y atencion hibrida, que combina mecanismos de atencion lineal con atencion convencional para sostener ventanas de contexto de hasta 262.000 tokens. El modelo es multimodal (procesa imagen y texto, pipeline image-text-to-text) e incorpora un modo de razonamiento explicito con salida estructurada. La ficha tecnica no especifica el numero de parametros activos por token, la distribucion de expertos por capa ni el numero de capas, por lo que esos datos figuran como no disponibles. La etiqueta qwen3.8 y la mencion a Qwen3.8-Flash-Next como modelo padre indican que la base arquitectonica proviene de la familia Qwen.
+Darwin-180B-RSI-R3 es un transformer de mezcla de expertos dispersa con 512 expertos y atención híbrida que combina capas de atención lineal con capas de atención completa, una elección habitual para sostener contextos de 262K tokens sin un coste cuadrático prohibitivo. El modelo es multimodal: procesa imagen y texto en un pipeline `image-text-to-text`. La model card indica que hereda las capas de expertos de Qwen3.8-Flash-Next y reconstruye únicamente las capas de atención y los expertos compartidos mediante un proceso de auto-mejora recursiva (RSI), una técnica que la organización denomina *model-level RSI*. No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO.
 
-En cuanto al entrenamiento, el autor describe un proceso de mejora recursiva a nivel de modelo (model-level recursive self-improvement) en tres rondas. R3 continua el entrenamiento desde R1 con la misma receta: el modelo resuelve problemas verificables, se filtran sus propias soluciones mediante comprobacion automatica de correccion y solo esas soluciones se utilizan como datos de entrenamiento. No se emplean soluciones ni trazas de razonamiento escritas por humanos. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO, datos que quedan como no disponibles en la informacion proporcionada. El modelo tambien introduce el concepto ZTC (zero-token-confidence), citado en las etiquetas pero sin descripcion tecnica en el material disponible.
+La innovación declarada por el autor es doble: por un lado, el ciclo de auto-mejora recursiva que regenera componentes del modelo a partir de evaluaciones propias; por otro, la incorporación de ZTC (*zero-token-confidence*), un mecanismo de confianza sin tokens asociado a la salida estructurada y a la extracción documental. La model card también menciona soporte de modo *thinking* y salida estructurada como capacidades de primera clase. No se han publicado en la información proporcionada detalles sobre decodificación especulativa, composición del corpus de preentrenamiento ni recetas de alineación.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento explicito con modo thinking, con resultados declarados de primer puesto en GPQA Diamond (94,44), MMLU-Pro (88,12), AIME 2026 (100,0) y HMMT Feb 2026 (100,0) para la ronda R1.
-- Razonamiento matematico y de competicion, segun los resultados citados en AIME 2026 y HMMT Feb 2026.
-- Comprension multimodal de imagen y texto (pipeline image-text-to-text), con 79,48 en MMMU-Pro para R1.
-- Extraccion de documentos y salida estructurada, con 90,29 en ExtractBench para R3 y soporte declarado de structured output.
-- Razonamiento juridico segun los leaderboards citados: LEXam (68,94) y LEXam-hard (45,72).
-- Adherencia a formatos e instrucciones estructuradas: 98,95 en IFStruct y 83,65 en MDPBench (ronda R1).
-- Capacidades multilingues en ingles, coreano, chino y japones, con etiqueta multilingual adicional.
-- Compatibilidad declarada con vLLM y con API compatible con OpenAI (openai-compatible), lo que habilita integracion en tool calling y agentes a traves de interfaces estandar.
-- Soporte de contexto largo de hasta 262.000 tokens, adecuado para documentos extensos y conversaciones multi-turno de gran duracion.
-- No se menciona en la informacion disponible soporte de audio ni de otros modales fuera de imagen y texto.
+- Generación de texto y razonamiento multi-paso con modo *thinking* explícito.
+- Razonamiento matemático y científico de alto rendimiento (según SuperCLUE Nov 2026 y benchmarks propios de la línea R1).
+- Comprensión de imagen y texto (pipeline `image-text-to-text`), incluyendo documentos, gráficos y capturas.
+- Extracción estructurada de documentos: liderazgo declarado en ExtractBench (90.29).
+- Salida estructurada con mecanismo ZTC (*zero-token-confidence*) para señalar confianza en extracciones.
+- Soporte de tool calling y function calling, con endpoints compatibles con la API de OpenAI.
+- Capacidad de agentes y razonamiento multi-paso.
+- Multilingüe con foco en coreano, inglés, chino y japonés.
+- Contexto largo de 262K tokens para documentos extensos y conversaciones multi-turno.
+- Despliegue en vLLM y en entornos de consumo mediante GGUF de 4 bits.
 
 ## Casos de uso
 
-- Extraccion de datos de documentos largos: con 262K tokens de contexto y salida estructurada, el modelo puede procesar contratos, informes o expedientes completos sin trocear y devolver campos normalizados en JSON. Su resultado de 90,29 en ExtractBench lo situa como referencia para este escenario.
-- Procesamiento de facturas y formularios escaneados: al ser multimodal, puede recibir la imagen del documento y extraer campos concretos, integrandose en un pipeline de contabilidad o ERP mediante su API compatible con OpenAI.
-- Analisis de documentacion tecnica y normativa: la ventana de 262K permite cargar manuales extensos o normativa juridica completa y responder consultas con trazabilidad de la fuente.
-- Razonamiento cientifico y tecnico asistido: los resultados declarados en GPQA Diamond (94,44) y MMLU-Pro (88,12) lo hacen util para responder preguntas de nivel experto en dominios de fisica, quimica, biologia y matematicas dentro de herramientas internas de investigacion.
-- Tutoria y resolucion de problemas matematicos: con 100,0 en AIME 2026 y HMMT Feb 2026 (ronda R1), es adecuado para sistemas de ayuda al estudio y verificacion de soluciones paso a paso.
-- Automatizacion de tareas legales: el rendimiento citado en LEXam y LEXam-hard permite usarlo en busqueda de precedentes, resumen de expedientes y clasificacion de clausulas, siempre con revision humana.
-- Agentes con tool calling: la compatibilidad con API compatible con OpenAI y vLLM facilita conectarlo a funciones externas (busqueda, bases de datos, calculadoras) en flujos multi-paso.
-- Despliegue en entornos con recursos limitados: la version GGUF de 4 bits (111 GB) permite ejecutar el modelo en un portatil con 8 GB de GPU y 32 GB de RAM, o en CPU a 18-21 tok/s, habilitando prototipado local sin infraestructura de centro de datos.
-- Generacion de codigo y consultas tecnicas: aunque la model card no publica resultados especificos de codigo, la combinacion de razonamiento y salida estructurada permite integrarlo en asistentes de desarrollo.
+- Extracción estructurada de documentos: el modelo convierte facturas, contratos e informes en JSON validado aprovechando su liderazgo en ExtractBench y el mecanismo ZTC para marcar campos de baja confianza antes de enviarlos a revisión humana.
+- Automatización de back-office legal y financiero: con 262K tokens de contexto puede procesar expedientes completos y responder preguntas de razonamiento sobre cláusulas, importes y fechas en una sola pasada.
+- Agentes de atención al cliente multi-turno: el soporte de tool calling y la compatibilidad con la API de OpenAI permiten integrarlo en orquestadores existentes para consultar sistemas internos y mantener conversaciones largas.
+- Análisis de documentos con imágenes: al ser vision-language, puede leer capturas, escaneos y tablas en imagen y extraer datos tabulares sin un OCR separado.
+- Razonamiento matemático y científico asistido: adecuado para tutores, validación de cálculos y generación de explicaciones paso a paso en dominios STEM, respaldado por sus resultados en SuperCLUE y benchmarks de matemáticas.
+- Generación de código y pipelines de CI/CD: el soporte de function calling permite integrarlo en herramientas que consultan APIs, ejecutan tests y proponen parches dentro de un flujo automatizado.
+- Despliegue en entornos con hardware limitado: la variante GGUF de 4 bits (111 GB) permite ejecutar el modelo en un mini PC de 128 GB o en un portátil con 8 GB de GPU y 32 GB de RAM a 18–21 tok/s en CPU, útil para prototipos y entornos air-gapped.
+- Moderación y detección de evasión: su tercer puesto en EvasionBench (77.83) lo hace apto para clasificar intentos de elusión de políticas en contenido generado por usuarios.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes proceden de la model card y de los leaderboards oficiales de Hugging Face citados por el autor. Se indica la ronda que obtuvo cada resultado, ya que R3 solo aporta nuevos numeros en ExtractBench y EvasionBench.
+Resultados publicados en la model card (no verificados de forma independiente por el editor de esta ficha):
 
-| Benchmark | Resultado | Ronda | Posicion declarada |
-|---|---|---|---|
-| ExtractBench (370 documentos) | 90,29 | R3 (este modelo) | #1 |
-| EvasionBench | 77,83 | R3 (este modelo) | #3 |
-| GPQA Diamond (198) | 94,44 | R1 | #1 |
-| MMLU-Pro (12.032) | 88,12 | R1 | #1 |
-| MMLU-Pro (verificacion BF16 y GGUF 4 bits) | 87,65 | R3 | no disponible |
-| AIME 2026 (30) | 100,0 | R1 | #1 |
-| HMMT Feb 2026 (33) | 100,0 | R1 | #1 |
-| MMMU-Pro (vision, 1.730) | 79,48 | R1 | #1 |
-| LEXam (derecho, opcion multiple, 1.655) | 68,94 | R1 | #1 |
-| LEXam-hard | 45,72 | R1 | #1 |
-| IFStruct | 98,95 | R1 | #1 |
-| MDPBench | 83,65 | R1 | #1 |
+| Benchmark | Darwin-180B-RSI-R3 | Referencia / comparativa |
+|---|---|---|
+| ExtractBench | 90.29 (#1) | Qwen3.8-Flash-Next: 89.88 |
+| EvasionBench | 77.83 (#3) | no disponible |
+| SuperCLUE Nov 2026, matemáticas y ciencia | 73.68 (#1 open-weight, #2 global) | GPT-6.1-Sol: 76.32; Gemini-4-Argon: 71.05; DeepSeek-V4.1-Flash: 71.05; Qwen3.8-Flash: 57.89 |
+| SuperCLUE Nov 2026, índice global | 43.08 (9.º de 19; 5.º open-weight) | Qwen3.8-Flash: 39.81 (15.º) |
+| MMLU-Pro (R1) | 88.12% (#1) | no disponible |
+| GPQA Diamond (R1) | 94.44% (#1) | no disponible |
+| MMMU-Pro (R1) | 79.48% (#1) | no disponible |
+| AIME 2026 (R1) | 100% (#1) | no disponible |
+| HMMT Feb 2026 (R1) | 100% (#1) | no disponible |
+| LEXam (R1) | 68.94% (#1) | no disponible |
+| LEXam-hard (R1) | 45.72 (#1) | no disponible |
+| IFStruct (R1) | 98.95% (#1) | no disponible |
+| MDPBench (R1) | 83.65 (#1) | no disponible |
+| MMLU-Pro (R3, GGUF 4 bits) | 87.65% (idéntico a BF16) | no disponible |
 
-Comparacion directa disponible en la informacion: en ExtractBench, R3 obtiene 90,29 frente a los 89,88 de su modelo padre Qwen3.8-Flash-Next. No se han publicado en la informacion disponible otros resultados comparativos con modelos de terceros.
+Los resultados marcados como R1 corresponden a la revisión anterior de la línea y no a R3; se incluyen porque la model card los presenta como parte del historial de la familia. No se han publicado en la información disponible resultados de HumanEval, GSM8K ni benchmarks de código para R3.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: el repositorio safetensors ocupa 360,0 GB, por lo que la inferencia en BF16 requiere del orden de 360 GB de memoria, lo que implica multiples GPU de 80 GB (A100 80GB, H100 80GB) o nodos con memoria unificada de gran capacidad.
-- Version cuantizada GGUF de 4 bits (POCKET-Darwin-180B-GGUF): 111 GB de pesos. Segun el autor, se ejecuta en un portatil con 8 GB de GPU y 32 GB de RAM, en un mini PC de 128 GB o en una DGX Spark.
-- Ejecucion solo con CPU: el autor declara 18-21 tokens por segundo con la version GGUF de 4 bits.
-- Compatibilidad con GPU de consumo: la informacion disponible indica que la version de 4 bits funciona con una GPU de 8 GB apoyandose en RAM del sistema; no se detallan otras configuraciones de consumo.
-- Opciones de despliegue mencionadas: transformers, vLLM, API compatible con OpenAI y formato GGUF. No se confirman explicitamente llama.cpp, Ollama ni TGI en la informacion disponible.
-- Calidad tras cuantizacion: el autor afirma que MMLU-Pro con la version de 4 bits es identico al de BF16 (87,65 %).
-- Throughput y latencia en GPU: no disponibles. El unico dato de velocidad publicado es el de CPU indicado arriba.
+- Pesos BF16: repositorio de 360 GB; inferencia requiere aproximadamente 360 GB de VRAM o memoria unificada, lo que implica nodos multi-GPU (por ejemplo, 8×H100 80 GB o 4×A100 80 GB con paralelismo de tensor).
+- Cuantización GGUF de 4 bits: 111 GB; ejecutable en un mini PC de 128 GB, una DGX Spark o un portátil con 8 GB de GPU y 32 GB de RAM.
+- Rendimiento en CPU con GGUF 4 bits: 18–21 tokens por segundo, según la model card.
+- GPU recomendadas: H100, A100 o H200 para BF16; consumer GPU viable solo con la variante GGUF y descarga parcial a CPU.
+- Despliegue: vLLM (soportado explícitamente), llama.cpp/Ollama para GGUF, y endpoints compatibles con la API de OpenAI.
+- Latencia y throughput en BF16: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | ExtractBench | Licencia | Disponibilidad |
+| Modelo | Desarrollador | Parámetros | Contexto | Licencia | Pesos abiertos | Nota |
 |---|---|---|---|---|---|---|
-| Darwin-180B-RSI-R3 | ~180B (MoE, 512 expertos) | 262K | Imagen + texto | 90,29 | qwen-community-1.0 | Hugging Face (safetensors y GGUF 4 bits) |
-| Darwin-180B-RSI (R1) | ~180B (MoE) | 262K | Imagen + texto | no disponible | qwen-community-1.0 | Hugging Face |
-| Qwen3.8-Flash-Next (padre declarado) | no disponible | no disponible | no disponible | 89,88 | no disponible | no disponible |
+| Darwin-180B-RSI-R3 | VIDRAFT / FINAL-Bench | 180B (MoE, 512 expertos) | 262K | qwen-community-1.0 | Sí | #1 ExtractBench (90.29); 73.68 en SuperCLUE math & science |
+| Qwen3.8-Flash-Next | Alibaba | no disponible | no disponible | no disponible | Sí | Modelo padre; 89.88 en ExtractBench y 57.89 en SuperCLUE math & science |
+| DeepSeek-V4.1-Flash | DeepSeek | no disponible | no disponible | no disponible | Sí | 71.05 en SuperCLUE math & science |
+| GLM-5.3 | Zhipu AI | no disponible | no disponible | no disponible | Sí | 65.79 en SuperCLUE math & science |
+| Kimi-K3.1-Pro | Moonshot | no disponible | no disponible | no disponible | Sí | 63.16 en SuperCLUE math & science |
 
-Solo se dispone de datos comparativos frente al modelo padre y a la ronda anterior de la misma linea. No hay informacion en el material proporcionado sobre alternativas de otros desarrolladores (por ejemplo, otros MoE multimodales de ~180B), por lo que la comparativa con terceros queda como no disponible.
+La comparativa se limita a los datos publicados en la model card; no se dispone de parámetros, contexto ni licencia de los modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: la model card y la informacion disponible no documentan una evaluacion de sesgos. Al entrenarse sobre problemas verificables autogenerados, la distribucion de datos queda sesgada hacia dominios con verificacion automatica (matematicas, extraccion, formato), en detrimento de tareas abiertas.
-- Riesgo de alucinacion: no se publican tasas de alucinacion ni evaluaciones de factualidad fuera de los benchmarks citados. Los resultados elevados en pruebas de opcion multiple no garantizan fidelidad en generacion libre.
-- Limitaciones de idioma: los idiomas declarados son ingles, coreano, chino, japones y multilingue. El castellano no figura entre los idiomas soportados explicitamente, por lo que el rendimiento en espanol no esta garantizado.
-- Restricciones de licencia: la licencia es qwen-community-1.0, declarada como license: other. Es una licencia de comunidad con condiciones especificas; conviene revisar el archivo LICENSE antes de cualquier uso comercial, ya que puede incluir clausulas de atribucion o restricciones de despliegue.
-- Parametros activos no publicados: sin este dato no es posible estimar con precision el coste computacional por token ni el throughput esperado en GPU.
-- Cifras autorreportadas: los resultados de ExtractBench y EvasionBench los publica el propio autor del modelo, que tambien es propietario de FINAL-Bench; la model card afirma explicitamente que se publica para que terceros descarguen, ejecuten y verifiquen los numeros. Se recomienda replicar la evaluacion antes de tomar decisiones de produccion.
-- Mezcla de rondas en los benchmarks: buena parte de los primeros puestos (GPQA, MMLU-Pro, AIME, HMMT, MMMU-Pro, LEXam, IFStruct, MDPBench) corresponden a R1 y no a R3, por lo que no deben atribuirse directamente al modelo descrito aqui.
-- Dependencia de infraestructura: el despliegue en BF16 exige hardware muy costoso (multiples GPU de 80 GB); el despliegue practico pasa por la cuantizacion de 4 bits, con la perdida de calidad que ello pueda implicar en tareas distintas de MMLU-Pro.
-- Nomenclatura propia: conceptos como ZTC (zero-token-confidence) o model-level RSI se citan en las etiquetas sin definicion tecnica en la informacion disponible, lo que dificulta su evaluacion independiente.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre corpus multilingües de gran escala es previsible un sesgo cultural y lingüístico hacia las lenguas dominantes del dataset (inglés, chino, coreano).
+- Riesgo de alucinación: no cuantificado; el modo *thinking* y la salida estructurada con ZTC mitigan parcialmente el problema en extracción, pero no lo eliminan. En producción conviene validar los campos extraídos contra esquemas.
+- Cobertura idiomática: la model card declara en, ko, zh, ja y multilingüe; el rendimiento en castellano no está documentado y no debería asumirse equiparable al de inglés o coreano.
+- Licencia: `qwen-community-1.0` (license: other) impone condiciones específicas para uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en producto.
+- Los benchmarks de la familia R1 (GPQA, AIME, HMMT, LEXam, IFStruct) no corresponden a R3 y no deben extrapolarse a esta revisión.
+- El rendimiento en BF16 exige infraestructura multi-GPU; la variante GGUF de 4 bits degrada ligeramente la calidad en tareas distintas de MMLU-Pro, aunque la model card solo reporta paridad en esa métrica.
+- La condición de "auto-mejora recursiva" es una afirmación del autor sin validación externa publicada en la información disponible; conviene tratarla como característica declarada, no verificada.
+- No se han publicado detalles sobre alineación, filtros de seguridad ni evaluación de contenido dañino.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
-- Ronda anterior (R1): https://huggingface.co/FINAL-Bench/Darwin-180B-RSI
-- Version GGUF de 4 bits: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
-- Coleccion de la familia Darwin: https://huggingface.co/collections/FINAL-Bench/darwin-family
-- Paper de la familia Darwin: https://arxiv.org/abs/2605.14386
-- Paper Latin Square: https://huggingface.co/papers/2609.20269
-- Sitio del autor: https://vidraft.net
-- Dataset ExtractBench: https://huggingface.co/datasets/llamaindex/ExtractBench
-- Dataset EvasionBench: https://huggingface.co/datasets/FutureMa/EvasionBench
-- Dataset GPQA: https://huggingface.co/datasets/Idavidrein/gpqa
-- Dataset MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
-- Dataset MMMU-Pro: https://huggingface.co/datasets/MMMU/MMMU_Pro
-- Dataset AIME 2026: https://huggingface.co/datasets/MathArena/aime_2026
-- Dataset HMMT Feb 2026: https://huggingface.co/datasets/MathArena/hmmt_feb_2026
-- Dataset LEXam: https://huggingface.co/datasets/LEXam-Benchmark/LEXam
-- Dataset LEXam-hard: https://huggingface.co/datasets/joelniklaus/LEXam-hard
-- Dataset IFStruct: https://huggingface.co/datasets/LiquidAI/ifstruct-v1.0
-- Dataset MDPBench: https://huggingface.co/datasets/Delores-Lin/MDPBench
+- Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
+- Repositorio GGUF 4 bits: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
+- Web del desarrollador: https://vidraft.net
+- SuperCLUE: https://www.superclueai.com/homepage
+- ExtractBench: https://huggingface.co/datasets/llamaindex/ExtractBench
+- EvasionBench: https://huggingface.co/datasets/FutureMa/EvasionBench
+- GPQA: https://huggingface.co/datasets/Idavidrein/gpqa
+- MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
+- MMMU-Pro: https://huggingface.co/datasets/MMMU/MMMU_Pro
+- AIME 2026: https://huggingface.co/datasets/MathArena/aime_2026
+- HMMT Feb 2026: https://huggingface.co/datasets/MathArena/hmmt_feb_2026
+- LEXam: https://huggingface.co/datasets/LEXam-Benchmark/LEXam
+- LEXam-hard: https://huggingface.co/datasets/joelniklaus/LEXam-hard
+- IFStruct: https://huggingface.co/datasets/LiquidAI/ifstruct-v1.0
+- MDPBench: https://huggingface.co/datasets/Delores-Lin/MDPBench
+- Paper citado (arXiv 2605.14386): https://arxiv.org/abs/2605.14386
+- Paper citado (arXiv 2609.20269): https://arxiv.org/abs/2609.20269

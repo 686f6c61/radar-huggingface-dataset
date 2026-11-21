@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "flicker-ai/flicker-flash-gguf",
+  "slug": "flicker-ai-flicker-flash-gguf",
+  "author": "flicker-ai",
+  "url": "https://huggingface.co/flicker-ai/flicker-flash-gguf",
+  "created_at": "2026-11-21T02:18:18.000Z",
+  "updated_at": "2026-11-21T02:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "wllama",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1036151488,
+  "storage_human": "1.0 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : flicker - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/flicker/34157",
+      "snippet": "flicker - Définitions Français : Retrouvez la définition de flicker, ainsi que les synonymes... - synonymes, homonymes, difficultés, …Read more"
+    },
+    {
+      "title": "Flicker — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Flicker",
+      "snippet": "Le mot d'origine anglophone « flicker » (clignotement) peut désigner : En électricité, un anglicisme pour le papillotement, une …Read more"
+    }
+  ]
+}

@@ -2,94 +2,99 @@
 
 ## Resumen
 
-Qwen3-Coder-30B-A3B-Instruct en formato LiteRT-LM es una conversión del modelo de código de Qwen (Qwen3-Coder-30B-A3B-Instruct) al runtime LiteRT-LM de Google AI Edge, empaquetada por la comunidad litert-community. El modelo original es un transformer de tipo Mixture-of-Experts con 48 capas, 128 expertos por capa y 8 expertos activados por token, lo que resulta en 30.500 millones de parámetros totales de los que solo 3.300 millones se activan en cada paso de inferencia. Está diseñado específicamente para generación de código y soporte de tool calling.
+Qwen3-Coder-30B-A3B-Instruct en formato LiteRT-LM es una conversión del modelo de código de Qwen (Qwen/Qwen3-Coder-30B-A3B-Instruct) realizada por la comunidad litert-community, empaquetada con `litert-lm-builder` 0.19.0 para su ejecución con el runtime LiteRT-LM de Google AI Edge. El modelo original es un transformer de tipo Mixture-of-Experts con 30,5 mil millones de parámetros totales y 3,3 mil millones activos por token, diseñado específicamente para generación de código y tool calling, y distribuido bajo licencia Apache 2.0.
 
-La conversión a LiteRT-LM permite ejecutar el modelo fuera de los stacks habituales (PyTorch/Transformers), con kernels optimizados para CPU (XNNPACK) y GPU (ML Drift/WebGPU), lo que abre la puerta a despliegues en entornos con restricciones de dependencias. Los artefactos publicados usan cuantización mixta: expertos en int4 con bloques de 32 y escalas fp32, atención y lm_head en int8 por canal, router y normas en fp32, con caché KV en fp32.
+La conversión produce dos artefactos `.litertlm` de 20,65 GB cada uno que difieren en la ventana de contexto (2.048 y 4.096 tokens) y en la cuantización de las capas de atención y `lm_head` (int4 blockwise en el archivo de 2.048, int8 por canal en el de 4.096). Según las mediciones del autor, el archivo de 2.048 tokens decodifica 101,57 tokens/s en un Apple M4 Max con WebGPU, mientras que el de 4.096 tokens alcanza 80,33 tokens/s.
 
-Es relevante ahora porque demuestra la viabilidad de llevar un MoE de 30B a un runtime ligero con rendimiento medido (54,9 tokens/s de decodificación en un Apple M4 Max con WebGPU para la variante de 2.048 tokens de contexto), aunque con la advertencia importante de que requiere una compilación de LiteRT con parches específicos que aún no están en la release estable.
+La relevancia de esta ficha es doble: por un lado, documenta una ruta de despliegue on-device de un modelo de código MoE de gran tamaño mediante LiteRT-LM; por otro, advierte de una dependencia crítica: los archivos requieren un runtime LiteRT-LM compilado desde fuente con dos pull requests abiertos (soporte de activación SiLU en el kernel `moe`), ya que la versión 0.19.2 publicada en PyPI no los ejecuta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), 48 capas, 128 expertos por capa, 8 activos por token |
-| Parametros totales | 30,5B |
-| Parametros activos | 3,3B |
-| Longitud de contexto | 2.048 o 4.096 tokens (según artefacto; caché KV fp32) |
-| Tipos de cuantizacion | Mixta: expertos int4 blockwise (bloque 32, escalas fp32); atención q/k/v/o y lm_head int8 por canal; router, normas y tabla de tokens fp32 |
-| Idiomas soportados | Inglés (declarado en la model card) |
+| Arquitectura | Transformer Mixture-of-Experts (48 capas, 128 expertos por capa, top-8 por token) |
+| Parametros totales | 30,5 B |
+| Parametros activos | 3,3 B |
+| Longitud de contexto | 2.048 tokens (archivo `ekv2048`) o 4.096 tokens (archivo `ekv4096`) |
+| Tipos de cuantizacion | Expertos int4 blockwise (bloque 32, escalas fp32); atención q/k/v/o y `lm_head` int4 blockwise (bloque 32, escalas fp16) en el archivo 2.048, o int8 por canal en el archivo 4.096; router, normas y tabla de tokens en fp32; KV cache fp32 |
+| Idiomas soportados | Inglés (`en`) según la model card |
 | Licencia | Apache 2.0 |
-| Formato de pesos | LiteRT-LM (`.litertlm`), empaquetado con litert-lm-builder 0.19.0 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors en el repo de Qwen |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only con arquitectura Mixture-of-Experts: 48 capas, cada una con 128 expertos y un router que selecciona los 8 expertos con mayor puntuación por token (top-8), con renormalización de pesos. Solo esos 8 expertos se computan por token, lo que reduce el coste de inferencia a los 3,3B parámetros activos. La model card de la conversión no detalla la composición del dataset de entrenamiento ni si hubo RLHF/DPO; esa información corresponde a la model card del modelo original de Qwen, no incluida en la información proporcionada.
+El modelo base es un transformer MoE con 48 capas, 128 expertos por capa y enrutamiento top-8 por token, lo que da 30,5 B de parámetros totales con solo 3,3 B activos por token. La model card del autor de la conversión no detalla la composición del dataset de entrenamiento ni si hubo RLHF/DPO; el modelo soporta únicamente modo no-thinking (las respuestas no incluyen bloque de razonamiento). La referencia arXiv 2505.09388 aparece en los tags del repo.
 
-La innovación técnica de esta conversión reside en el pipeline de exportación: el decoder se escribe tensor a tensor con la API LiteRT Tensor desde el checkpoint bf16 (revisión `b2cff646`), evitando materializar un grafo fp32 completo. Los 128 expertos de cada capa se agrupan en una única custom op `moe` con activación SiLU, ejecutada con XNNPACK en CPU y ML Drift en GPU. Se aplica un truco de fusión (`--moe_fusion_guard`) que reescribe la suma residual como `(x + moe) + moe * 0` para impedir que ML Drift fusione la suma en el kernel moe, lo que rompería la compilación de shaders en WebGPU y Metal. Las activaciones se declaran en fp32 porque con fp16 las respuestas en GPU se corrompen (respuestas vacías o patrones repetidos). El sampler replica `generation_config.json` del original (top_p 0.8, top_k 20, temperature 0.7), aunque la repetition_penalty de 1.05 no se puede representar en los metadatos de LiteRT-LM.
+La innovación técnica de esta conversión es el grafo reescrito para GPU: RMSNorm, la normalización q/k con RoPE, la escritura en KV cache y las matmuls de atención se agrupan en operaciones compuestas `odml.*`; el router aplica softmax solo sobre los 8 logits superiores; y cada capa de expertos se implementa como una única operación custom `moe` con activación SiLU. El archivo de 2.048 tokens declara activaciones fp16 (`prefer_activation_type`) y su atención usa `odml.sdpa_transposed`, mientras que el de 4.096 solicita activaciones fp32. La reescritura del grafo aportó, según mediciones del autor en WebGPU, un 35,7 % más de velocidad de decodificación en el archivo de 2.048 y un 55,6 % en el de 4.096 (actualización de 2026-11-12); la actualización posterior de 2026-11-14 añadió otro 23,3 % de decodificación y 17,6 % de prefill en el archivo de 2.048.
 
 ## Capacidades
 
-- Generación de código en modo instruct (non-thinking): el modelo no emite trazas de razonamiento.
-- Tool calling / function calling: el modelo emite llamadas en formato XML (`<tool_call>`, `<function=…>`, `<parameter=…>`), y los metadatos declaran `supports_function_calling` con un `tool_call_config` que permite extraer nombre de función y argumentos.
-- Razonamiento multi-paso orientado a tareas de programación y uso de herramientas.
-- Generación de texto general en inglés.
-- No soporta modo thinking (el modelo original es solo instruct).
-- Capacidades multilingües limitadas al inglés según la model card.
-- No se declaran capacidades de visión ni audio.
+- Generación de código en múltiples lenguajes de programación, heredada del modelo Qwen3-Coder.
+- Tool calling / function calling, con prompts de prueba específicos validados por el autor de la conversión.
+- Razonamiento multi-turno: se valida una conversación de 3 turnos en las pruebas de precisión.
+- Modo no-thinking exclusivamente: no genera bloque de razonamiento explícito.
+- Capacidad multilingüe limitada al inglés según la model card (`language: en`).
+- Inferencia on-device en CPU y GPU (WebGPU) mediante LiteRT-LM.
+- No se documentan capacidades de visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Asistencia de código en IDE o editor: el modelo genera código a partir de instrucciones en lenguaje natural y puede invocar herramientas del entorno (por ejemplo, ejecutar tests o consultar documentación) mediante el formato XML de tool calls, integrándose en extensiones de editor que parseen ese formato.
-- Automatización de pipelines CI/CD: dado su soporte de function calling, puede generar parches, sugerir comandos de build o invocar herramientas de linting/testing dentro de un agente que ejecute las llamadas emitidas por el modelo.
-- Despliegue en dispositivos con runtime ligero: la conversión LiteRT-LM permite ejecutar el modelo en entornos donde no se dispone de PyTorch o CUDA, usando WebGPU o CPU con XNNPACK, útil para prototipos en portátiles Apple Silicon o estaciones sin GPU dedicada.
-- Agentes de refactorización acotada: con contexto de 2.048 o 4.096 tokens, adecuado para tareas sobre ficheros individuales o fragmentos de código, no para repositorios completos.
-- Generación de tests unitarios: el modelo puede producir casos de prueba a partir de firmas de funciones y docstrings, con la ventaja de que el tool calling permite validar la ejecución de los tests generados en un bucle agéntico.
-- Evaluación comparativa de runtimes: sirve como banco de pruebas para medir el rendimiento de LiteRT-LM frente a vLLM o llama.cpp con el mismo modelo base, gracias a las métricas publicadas de prefill y decode.
+- Asistente de código en el navegador: el archivo de 2.048 tokens con WebGPU permite autocompletado y generación de funciones en un editor web sin enviar código a un servidor, gracias a sus 101,57 tokens/s de decodificación en Apple M4 Max.
+- Automatización de tareas de refactorización local: con 4.096 tokens de contexto y tool calling, el modelo puede encadenar lecturas de archivos y ediciones en un pipeline de agente local.
+- Generación de tests unitarios en CI: integrado vía LiteRT-LM en un runner con GPU, el modelo produce tests a partir de firmas y documentación de funciones.
+- Enseñanza y demos de modelos MoE on-device: útil para experimentar con cuantización mixta int4/int8 y comparar rendimiento CPU frente a GPU en hardware de consumo.
+- Prototipado de asistentes de terminal: un CLI que invoque LiteRT-LM puede usar el modelo para explicar errores de compilación y proponer parches con contexto de 2.048 o 4.096 tokens.
+- Evaluación de tool calling en entornos restringidos: al ejecutarse sin conexión, sirve para probar flujos de function calling en dispositivos sin acceso a APIs externas.
+- Investigación sobre cuantización de MoE: los dos artefactos permiten medir el impacto de int4 frente a int8 en atención y `lm_head` sobre la misma base de expertos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible para esta conversión. Los únicos datos de rendimiento publicados son de velocidad de inferencia en un Apple M4 Max (128 GB) con WebGPU:
+No se han publicado resultados de benchmarks en la informacion disponible (MMLU, HumanEval, GSM8K u otros). El autor solo reporta métricas de velocidad y pruebas de precisión cualitativas (12 preguntas, conversación de 3 turnos y dos prompts de tool calling, en modo greedy).
 
-| Artefacto | Contexto | Decode (tokens/s) | Prefill (tokens/s) |
-|---|---:|---:|---:|
-| `qwen3_coder_30b_a3b_mixed_int4_ekv2048.litertlm` | 2.048 | 54,9 | 1.038 |
-| `qwen3_coder_30b_a3b_mixed_int4_ekv4096.litertlm` | 4.096 | 44,7 | 706 |
-
-Medición del 2026-11-09. Con activaciones fp16 declaradas, el decode mejora entre un 9 % y un 17 %, pero ninguna de las preguntas de verificación obtiene respuesta correcta, por lo que se descarta esa configuración.
+| Metrica | Archivo 2.048 | Archivo 4.096 | Hardware |
+|---|---|---|---|
+| Decodificacion (WebGPU) | 101,57 tok/s | 80,33 tok/s | Apple M4 Max |
+| Prefill (CPU, referencia) | no disponible | 55,41 tok/s (frente a 59,03 tok/s del archivo anterior) | Apple M4 Max |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: los artefactos pesan 20,65 GB cada uno; se necesita al menos esa cantidad de memoria unificada o de sistema para cargar los pesos, más el espacio de la caché KV fp32 (2.048 o 4.096 tokens) y activaciones.
-- GPU recomendadas: Apple Silicon con memoria unificada amplia (el benchmark se hizo en M4 Max de 128 GB); GPUs con soporte WebGPU o ML Drift. No se han publicado mediciones en A100, H100 o RTX 4090.
-- GPU de consumo: cabe en equipos con 24 GB o más de memoria unificada o VRAM, aunque no hay datos publicados de rendimiento en RTX 4090 u otras consumer.
-- Despliegue: exclusivamente mediante LiteRT-LM. La release 0.19.1 de PyPI no ejecuta estos ficheros porque sus kernels `moe` solo aceptan GELU y el modelo usa SiLU; es necesario compilar LiteRT desde fuente con los PRs #11192 (GPU) y #11188 (XNNPACK/CPU). No compatible con vLLM, llama.cpp, Ollama ni TGI en este formato.
-- Latencia y throughput: ver tabla de benchmarks (54,9 tokens/s decode, 1.038 tokens/s prefill en M4 Max con WebGPU, contexto 2.048).
+- Almacenamiento: 20,65 GB por archivo `.litertlm`; el repo completo ocupa 103,3 GB.
+- VRAM/RAM estimada: no se publica un mínimo oficial; por el tamaño del archivo, se necesita al menos ~21 GB de memoria disponible para cargar los pesos, más el KV cache fp32 de 2.048 o 4.096 tokens.
+- GPU recomendadas: el autor mide en Apple M4 Max con WebGPU; no se documentan pruebas en A100, H100 ni RTX 4090.
+- GPU de consumo: no confirmado; un RTX 4090 (24 GB) podría alojar los pesos, pero no hay mediciones publicadas.
+- Despliegue: exclusivamente LiteRT-LM compilado desde fuente con los PR #11192 (kernel GPU de `moe` con SiLU) y #11188 (kernel XNNPACK/CPU) de LiteRT; LiteRT-LM 0.19.2 de PyPI falla con `moe node #23 unsupported activation='silu'` en CPU y con `moe only supports activation='gelu_tanh'` en GPU.
+- Latencia y throughput: ver tabla de benchmarks; no hay datos de latencia por token publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato / runtime | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3-Coder-30B-A3B-Instruct (LiteRT-LM, esta ficha) | 30,5B / 3,3B | 2.048 o 4.096 | Apache 2.0 | LiteRT-LM | Requiere build con parches; solo inglés |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct (original) | 30,5B / 3,3B | no disponible en la información proporcionada | Apache 2.0 | safetensors / Transformers | Modelo fuente; soporta el mismo tool calling XML |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
+| Este modelo (LiteRT-LM) | 30,5 B totales / 3,3 B activos | 2.048 o 4.096 | `.litertlm` | Apache 2.0 | Requiere runtime desde fuente |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5 B totales / 3,3 B activos | no disponible en la informacion | safetensors | Apache 2.0 | Modelo base original |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos de otros modelos comparables |
 
 ## Limitaciones y advertencias
 
-- La release estable de LiteRT-LM (0.19.1) no ejecuta estos ficheros: los kernels `moe` solo aceptan GELU, y el modelo usa SiLU. Se requiere compilar desde fuente con los PRs abiertos #11192 y #11188, lo que implica un riesgo de mantenimiento y de cambios en la API.
-- Las activaciones deben ser fp32; con fp16 las respuestas en GPU se corrompen (respuestas vacías, un solo `*` o patrones repetidos), lo que limita optimizaciones de memoria.
-- Contexto muy reducido (2.048 o 4.096 tokens) en comparación con el modelo original y con alternativas modernas; inadecuado para repositorios completos o conversaciones largas.
-- Solo inglés declarado; no se garantiza calidad en castellano u otros idiomas.
-- Modo non-thinking únicamente: no hay trazas de razonamiento, lo que puede penalizar tareas que requieran planificación explícita.
-- La repetition_penalty de 1.05 del `generation_config.json` original no se puede representar en los metadatos de LiteRT-LM, por lo que el sampling difiere ligeramente del original.
-- El CLI de LiteRT-LM no acepta herramientas: el soporte de tool calling se ha verificado a nivel de formato de salida, pero el parseo de llamadas por parte del runtime no se ha ejecutado en las pruebas publicadas.
-- Riesgo de alucinación inherente a modelos de código; no se han publicado evaluaciones de sesgo ni de robustez para esta conversión.
-- Licencia Apache 2.0 permite uso comercial, pero la cadena de responsabilidad sobre la conversión recae en litert-community, no en Qwen.
+- Dependencia de un runtime no publicado: los archivos no funcionan con LiteRT-LM 0.19.2 de PyPI; requieren compilar desde fuente con dos pull requests abiertos, lo que añade riesgo de mantenimiento.
+- Contexto muy reducido: 2.048 o 4.096 tokens, insuficiente para tareas de código con repositorios grandes o conversaciones largas.
+- Solo inglés según la model card; el rendimiento en castellano no está documentado.
+- Modo no-thinking únicamente: no dispone de razonamiento explícito, lo que puede limitar tareas de depuración compleja.
+- Riesgo de alucinación de APIs y funciones inexistentes, inherente a los modelos de código; requiere validación con compilador o tests.
+- Sesgos no documentados en la información disponible; el modelo base puede heredar sesgos de su dataset de entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero la licencia del runtime LiteRT-LM y de los kernels modificados debe verificarse por separado.
+- Conversión comunitaria: no es un artefacto oficial de Qwen ni de Google; las mediciones de velocidad provienen de un único dispositivo (Apple M4 Max).
+- El archivo de 4.096 tokens usa int8 por canal en atención y `lm_head`, con posible degradación de calidad frente a la versión original en fp16/bf16, no cuantificada en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3-Coder-30B-A3B-Instruct
+- Hugging Face: https://huggingface.co/litert-community/Qwen3-Coder-30B-A3B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE
-- Paper de referencia (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
-- PR LiteRT #11192 (kernel GPU moe con SiLU): https://github.com/google-ai-edge/LiteRT/pull/11192
-- PR LiteRT #11188 (kernel XNNPACK CPU moe con SiLU): https://github.com/google-ai-edge/LiteRT/pull/11188
+- Mediciones: https://huggingface.co/litert-community/Qwen3-Coder-30B-A3B-Instruct/blob/main/MEASUREMENTS.md
+- Script de cuantización de atención: https://github.com/john-rocky/hf-to-litertlm/blob/main/qwen3_30b_a3b_work/int4_attention.py
+- Script de reescritura de decodificación: https://github.com/john-rocky/hf-to-litertlm/blob/main/qwen3_30b_a3b_work/decode_rewrite.py
+- Script de tipo de activación: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/set_activation_type_inplace.py
+- Script de reescritura GPU: https://github.com/john-rocky/hf-to-litertlm/blob/main/qwen3_30b_a3b_work/gpu_rewrite.py
+- PR LiteRT #11192 (kernel GPU `moe` con SiLU): https://github.com/google-ai-edge/LiteRT/pull/11192
+- PR LiteRT #11188 (kernel XNNPACK CPU): https://github.com/google-ai-edge/LiteRT/pull/11188
+- Paper referenciado: arXiv:2505.09388

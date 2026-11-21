@@ -2,105 +2,100 @@
 
 ## Resumen
 
-Esta ficha describe `randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4`, una cuantizacion de 4 bits en formato MXFP4 realizada por el usuario randmaru sobre el modelo `JetBrains/Mellum2.1-12B-A2.5B-Thinking`. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos para inferencia nativa en Apple Silicon mediante MLX (Metal). El resultado es un unico fichero `model.safetensors` de 6,46 GB, con un promedio de unos 4,25 bits por peso, grupo de cuantizacion de tamano 32 y puertas del router conservadas en 8 bits (grupo 64).
+Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4 es una cuantización MXFP4 del modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicada por el usuario randmaru en Hugging Face. El modelo base es un decoder de arquitectura mixture-of-experts (MoE) desarrollado por JetBrains, con 12.149.923.072 parámetros totales y unos 2.500 millones de parámetros activos por token, distribuidos en 64 expertos con enrutamiento top-8 y 28 capas. Su ventana de contexto alcanza los 128.000 tokens.
 
-El modelo base es un decodificador de tipo mezcla de expertos (MoE) con 12.149.923.072 parametros totales y aproximadamente 2.500 millones de parametros activos por token. La configuracion anunciada por el autor es de 64 expertos con top-8, 28 capas y una ventana de contexto de 128.000 tokens, con combinacion de capas de atencion de ventana deslizante y atencion completa. Incorpora un modo de razonamiento explicito (thinking) que emite cadena de pensamiento antes de la respuesta final, y las etiquetas del repositorio lo vinculan a tareas de prediccion de ediciones y sugerencia de siguiente edicion, tipicas del ecosistema de IDE de JetBrains.
+El propósito de esta ficha es documentar la variante cuantizada, no el modelo original. Esta versión está pensada para inferencia nativa en Apple Silicon mediante MLX y Metal, y empaqueta los pesos en un único archivo `model.safetensors` de 6,46 GB con una media de aproximadamente 4,25 bits por peso. Los pesos se cuantizan a 4 bits en formato MXFP4 con tamaño de grupo 32, mientras que las compuertas del router se mantienen en 8 bits con grupo 64 para preservar la calidad del enrutamiento entre expertos.
 
-Su relevancia es practica: permite ejecutar un MoE de 12B con licencia Apache 2.0 en un Mac con memoria unificada, ocupando 1,6 GB menos que la cuantizacion GGUF `Q4_K_M` del mismo modelo base (8,07 GB), a cambio de un bit-rate efectivo inferior (4,25 frente a ~5,3 bpw). Es, por tanto, una opcion de despliegue local orientada a tamano y portabilidad, no a maxima fidelidad numerica.
+La relevancia de esta publicación radica en que permite ejecutar un modelo MoE de 12B con contexto de 128K en hardware de consumo de Apple con un peso de descarga sensiblemente inferior al de la alternativa GGUF Q4_K_M (≈8,07 GB, ≈5,3 bits por peso). El modelo base está orientado a generación de texto, razonamiento y predicción de ediciones de código (next-edit-suggestion), y se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder con mezcla de expertos (MoE), 64 expertos, top-8; mezcla de capas de atencion de ventana deslizante y atencion completa; 28 capas |
+| Arquitectura | Transformer decoder mixture-of-experts (MoE), 64 expertos, top-8, 28 capas |
 | Parametros totales | 12.149.923.072 |
-| Parametros activos | Aproximadamente 2.500 millones por token |
-| Longitud de contexto | 128.000 tokens segun la model card del cuantizador; una referencia externa indica 131.000 |
-| Tipos de cuantizacion | MXFP4: 4 bits en coma flotante con microscaling, grupo 32, exponente compartido E8M0; puertas del router en 8 bits, grupo 64; media efectiva de 4,25 bits por peso. Tipos de tensor: U32 (pesos empaquetados), U8 (escalas) y BF16 |
-| Idiomas soportados | no disponible (la model card de este repositorio no declara idiomas; un repositorio equivalente de la comunidad MLX etiqueta solo ingles) |
+| Parametros activos | ≈2.500 millones (2.5B) |
+| Longitud de contexto | 128.000 tokens (128K) |
+| Tipos de cuantizacion | MXFP4 (4 bits, grupo 32, exponente compartido E8M0) para pesos; router gates en 8 bits (grupo 64); BF16 para escalas y tensores auxiliares |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors para MLX (un unico `model.safetensors` de 6.457.111.871 bytes); descarga total aproximada de 6.464.259.055 bytes |
+| Formato de pesos | safetensors (MLX), un único `model.safetensors` de 6.457.111.871 bytes |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un decodificador autorregresivo con arquitectura de mezcla de expertos: 12B de parametros totales repartidos en 64 expertos, de los que se activan 8 por token, lo que deja unos 2,5B de parametros activos y reduce el coste de computo por token respecto a un denso equivalente. Segun la informacion disponible, combina capas de atencion de ventana deslizante con capas de atencion completa, un patron habitual para abaratar el coste del contexto largo manteniendo recuperacion global. El modelo incorpora un modo de razonamiento explicito: genera cadena de pensamiento antes de la respuesta final.
+El modelo base es un decoder transformer con arquitectura mixture-of-experts: 28 capas, 64 expertos y enrutamiento top-8, lo que da lugar a unos 2.500 millones de parámetros activos sobre un total de 12.149.923.072. La ventana de contexto es de 128.000 tokens, adecuada para tareas de edición de código y conversaciones de varios turnos con repositorios extensos. El modelo incorpora un modo de razonamiento explícito, indicado por el sufijo "Thinking" en su nombre.
 
-Sobre el entrenamiento no hay datos en la informacion proporcionada: no se especifican tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. La innovacion tecnica de este repositorio concreto es la cuantizacion: pesos a MXFP4 con microscaling (exponente compartido E8M0 y grupo de 32) y router a 8 bits para no degradar el enrutado de expertos, un detalle relevante porque las puertas de un MoE son sensibles a la cuantizacion agresiva. El autor advierte que el bit-rate mayor de `Q4_K_M` tiende a preservar mejor la precision en valores atipicos, por lo que la eleccion es un compromiso explicito entre huella en disco/memoria y calidad.
+La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron técnicas de RLHF, DPO o ajuste por preferencias. Tampoco se documentan innovaciones de decodificación (por ejemplo, decodificación especulativa) ni mecanismos de atención lineal. La model card de esta variante se centra exclusivamente en el proceso de cuantización: pesos en MXFP4 con microscaling y grupo 32, compuertas del router preservadas en 8 bits y escalas en BF16, lo que resulta en un promedio de 4,25 bits por peso. Esta decisión de mantener el router en mayor precisión busca limitar la degradación del enrutamiento entre expertos, que es el punto más sensible a la cuantización agresiva en arquitecturas MoE.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de texto, con pipeline declarado `text-generation`.
-- Razonamiento explicito en modo thinking: emite cadena de pensamiento antes de la respuesta final, lo que permite inspeccionar el proceso intermedio.
-- Prediccion de ediciones y sugerencia de siguiente edicion (`edit-prediction`, `next-edit-suggestion` en las etiquetas), orientado a asistencia dentro de entornos de desarrollo.
-- Uso en tareas de codigo y agentes segun referencias externas al modelo base, aunque no se detallan capacidades concretas de tool calling o function calling en la informacion disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas en este repositorio.
-- Vision y audio: no disponibles; las etiquetas no indican ninguna modalidad distinta de texto.
-- Compatible con `text-generation-inference` como etiqueta, si bien el formato de pesos de este repositorio es MLX.
+- Generación de texto conversacional y continuaciones de contexto largo, con ventana de hasta 128.000 tokens.
+- Razonamiento explícito en modo "thinking", heredado del modelo base.
+- Predicción de ediciones de código (edit-prediction y next-edit-suggestion), capacidad declarada en las etiquetas del repositorio.
+- Generación de código y asistencia en entornos de desarrollo, dado el origen del modelo base en JetBrains.
+- Compatibilidad con text-generation-inference según las etiquetas del repositorio.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; no se especifican idiomas soportados.
+- Capacidades de visión o audio: no disponibles; el pipeline es text-generation.
 
 ## Casos de uso
 
-- Asistente de codigo en local sobre Mac: al ser un MoE de 2,5B activos cuantizado a 6,46 GB, se puede mantener cargado en un portatil Apple Silicon y usarlo para completar, refactorizar o explicar fragmentos sin enviar codigo a un servicio externo.
-- Sugerencia de siguiente edicion en un editor: las etiquetas `next-edit-suggestion` y `edit-prediction` apuntan a integracion en flujos tipo IDE, donde el modelo propone la proxima modificacion sobre el buffer actual.
-- Razonamiento sobre repositorios con contexto largo: los 128.000 tokens de ventana permiten pasar varios ficheros o un modulo completo en una sola peticion para tareas de analisis y respuesta con trazabilidad del razonamiento.
-- Despliegue offline en entornos con requisitos de confidencialidad: la licencia Apache 2.0 y la ejecucion local sin red encajan en equipos donde no se permite enviar datos a APIs de terceros.
-- Prototipado e investigacion en Apple Silicon mediante MLX: sirve para medir el impacto de MXFP4 frente a GGUF `Q4_K_M` en la misma tarea, comparando calidad con una diferencia de 1,6 GB de peso.
-- Generacion de documentacion tecnica y resumenes de issues: el modo thinking permite obtener borradores con pasos intermedios que se pueden revisar antes de publicar.
-- Evaluacion comparativa de cuantizaciones: como artefacto reproducible, es util para estudiar como afecta el bit-rate y el trato del router a la calidad de un MoE en tareas de codigo.
+- Asistente de edición de código en el IDE: el modelo está etiquetado para next-edit-suggestion, por lo que puede integrarse en un plugin que, dado el contexto del archivo y la edición reciente del usuario, proponga la siguiente modificación. Los 128K de contexto permiten incluir varios archivos del proyecto en la ventana.
+- Refactorización asistida sobre repositorios medianos: con 128.000 tokens de contexto se pueden pasar fragmentos amplios de código junto con instrucciones de refactorización, y el modo thinking permite razonar sobre dependencias antes de emitir el parche.
+- Desarrollo local en Mac con Apple Silicon: al ejecutarse en MLX sobre Metal, el modelo cabe en un único archivo de 6,46 GB y permite trabajar sin conexión ni envío de código a servicios externos, lo que resulta relevante para código propietario.
+- Generación de documentación técnica: el modelo puede resumir módulos y generar docstrings o guías a partir de bloques de código extensos aprovechando el contexto largo.
+- Prototipado de agentes de código en local: la licencia Apache 2.0 y el tamaño reducido de la cuantización permiten desplegar el modelo en estaciones de trabajo para experimentar con pipelines de edición automática antes de escalar a infraestructura mayor.
+- Revisión de cambios en pull requests: dado un diff y el contexto del repositorio, el modelo puede generar comentarios de revisión o detectar inconsistencias, aprovechando la ventana de 128K para incluir archivos relacionados.
+- Evaluación comparativa de cuantizaciones: este repositorio sirve como referencia para medir la degradación de calidad de MXFP4 frente a Q4_K_M en una misma tarea de edición de código, ya que ambas versiones están publicadas para el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica numerica, y tampoco se aportan datos de latencia o throughput. La unica comparacion cuantitativa ofrecida por el autor es de tamano y bit-rate entre esta cuantizacion y la alternativa GGUF:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente compara tamaño y tasa de bits efectiva entre MXFP4 y GGUF Q4_K_M, sin métricas de calidad (MMLU, HumanEval, GSM8K u otras).
 
-| Parametro | MXFP4 (este repositorio, MLX) | 4 bits GGUF `Q4_K_M` |
+| Metrica | MXFP4 (este repo) | GGUF Q4_K_M (repo oficial) |
 |---|---|---|
-| Tamano del fichero de pesos | 6.457.111.871 bytes (aprox. 6,46 GB) | 8.071.295.264 bytes (aprox. 8,07 GB) |
-| Descarga total | 6.464.259.055 bytes (aprox. 6,46 GB) | 8.071.295.264 bytes (aprox. 8,07 GB) |
-| Bits efectivos por peso | 4,25 | aproximadamente 5,3 |
-| Formato de cuantizacion | Coma flotante de 4 bits con microscaling, grupo 32, exponente compartido E8M0 | k-quant de 4 bits con bloques mixtos de 4/6 bits |
-| Router | Mantenido a 8 bits, grupo 64 | Incluido en el k-quant |
-| Runtime | MLX (`mlx-lm`) | llama.cpp, LM Studio, Ollama |
-| Soporte de hardware | GPU de Apple Silicon via Metal | Metal, CUDA, ROCm, CPU |
+| Tamano de pesos | ≈6,46 GB (6.457.111.871 bytes) | ≈8,07 GB (8.071.295.264 bytes) |
+| Bits efectivos por peso | 4,25 | ≈5,3 |
+| Router gates | 8 bits (grupo 64) | Integrados en el k-quant |
+| Runtime | mlx-lm y similares | llama.cpp y similares |
+| Hardware | GPU de Apple Silicon via Metal | Metal, CUDA, ROCm, CPU |
 
 ## Requisitos de hardware
 
-- VRAM o memoria unificada: los pesos ocupan aproximadamente 6,46 GB, a los que hay que sumar cache KV y overhead del runtime. En la practica, se recomienda un Mac con 16 GB de memoria unificada o mas para contexto corto, y 24-32 GB para aprovechar la ventana de 128.000 tokens.
-- GPU compatibles: exclusivamente GPU de Apple Silicon (M1, M2, M3, M4 y variantes Pro, Max y Ultra) a traves de Metal y MLX. No hay soporte CUDA ni ROCm en este repositorio.
-- Cabe en GPU de consumo: si, en cualquier Mac con memoria unificada suficiente. En 8 GB de memoria unificada la carga es muy ajustada y deja poco margen para cache KV.
-- Opciones de despliegue: `mlx-lm` como runtime de referencia. Este repositorio no es directamente utilizable en vLLM, TGI, llama.cpp, LM Studio u Ollama por el formato de pesos; para esos entornos hay que usar la variante GGUF del modelo base, incluida la `MXFP4_MOE` de 7,03 GB y aproximadamente 4,6 bits por peso.
-- Latencia y throughput: no disponibles. Dependen del chip concreto, del backend, del tamano de lote y de la implementacion de la cuantizacion, tal y como advierte el propio autor.
+- VRAM/unified memory estimada: al menos 7-8 GB libres para cargar los 6,46 GB de pesos más overhead de contexto y caché KV; con contexto de 128K la memoria necesaria crece de forma apreciable y conviene reservar 16 GB o más en equipos Apple Silicon.
+- GPU recomendadas: Apple Silicon con GPU integrada (series M1 Pro/Max, M2 Pro/Max/Ultra, M3 Pro/Max, M4 Pro/Max) mediante MLX y Metal. No está pensado para CUDA ni ROCm en este formato.
+- Cabe en GPU de consumo: sí, en equipos Apple con memoria unificada; no aplica a GPU discretas NVIDIA o AMD en este formato (para esas plataformas existe la variante GGUF).
+- Opciones de despliegue: `mlx-lm` y el ecosistema MLX; la etiqueta text-generation-inference aparece en el repositorio, aunque el runtime principal es MLX. Para llama.cpp, Ollama o vLLM debe usarse la variante GGUF del modelo base.
+- Latencia y throughput: no disponibles. La model card indica que la velocidad depende del backend, la GPU, el tamaño de lote y la implementación de la cuantización, sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion y tamano | Runtime | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4` (este) | 12B totales, 2,5B activos | 128.000 tokens | MXFP4, 6,46 GB, 4,25 bpw | MLX | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
-| `JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF` (`Q4_K_M`) | 12B totales, 2,5B activos | 128.000 tokens | k-quant 4 bits, 8,07 GB, ~5,3 bpw | llama.cpp, LM Studio, Ollama | Apache 2.0 | Hugging Face, repositorio de JetBrains |
-| `JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-MXFP4_MOE` | 12B totales, 2,5B activos | 128.000 tokens | MXFP4 MoE, 7,03 GB, ~4,6 bpw | llama.cpp y derivados (Metal, CUDA, ROCm, CPU) | Apache 2.0 | Hugging Face, repositorio de JetBrains |
-| `mlx-community/Mellum2-12B-A2.5B-Thinking-mxfp4` | 12B totales, 2,5B activos | 128.000 tokens | MXFP4, MLX | MLX | Apache 2.0 | Hugging Face, comunidad MLX, etiquetado en ingles |
+| randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4 | 12,15B | ≈2,5B | 128K | safetensors MLX (MXFP4, 4,25 bpw) | Apache 2.0 | Hugging Face |
+| JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF (Q4_K_M) | 12,15B | ≈2,5B | 128K | GGUF (≈5,3 bpw) | Apache 2.0 | Hugging Face |
+| JetBrains/Mellum2.1-12B-A2.5B-Thinking (original) | 12,15B | ≈2,5B | 128K | safetensors BF16/FP | Apache 2.0 | Hugging Face |
+| Mellum2.1-12B-A2.5B-Thinking-MXFP4_MOE (GGUF) | 12,15B | ≈2,5B | 128K | GGUF (≈4,6 bpw, 7,03 GB) | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de rendimiento que permitan comparar calidad entre estas variantes; la unica diferencia documentada es el tamano, el bit-rate efectivo y el ecosistema de ejecucion.
+No se dispone de datos de rendimiento comparativo entre estas variantes más allá del tamaño y la tasa de bits efectiva. La comparación con modelos de otros fabricantes (por ejemplo, otros MoE de 12B orientados a código) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo original: es una cuantizacion de terceros. Cualquier limitacion del modelo base se hereda, y ademas se anade la perdida de precision propia de los 4 bits.
-- El autor reconoce que `Q4_K_M` (aproximadamente 5,3 bits por peso) tiende a retener algo mas de precision en valores atipicos; MXFP4 prioriza un tamano menor. Conviene evaluar en la tarea concreta antes de adoptarlo en produccion.
-- El router se mantiene a 8 bits, pero el resto de pesos a 4,25 bits efectivos, por lo que el enrutado de expertos y la calidad de las respuestas pueden degradarse en dominios poco representados.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; el modo thinking reduce la opacidad del proceso, pero no garantiza la veracidad de las afirmaciones.
-- Idiomas soportados: no disponibles. No hay declaracion oficial en este repositorio; un repositorio equivalente de la comunidad MLX solo etiqueta ingles, por lo que el rendimiento en castellano no esta verificado.
-- Contexto largo: la ventana de 128.000 tokens es nominal; el rendimiento real en contextos muy extensos depende de la memoria disponible y puede degradarse mucho antes de agotar la ventana.
-- Compatibilidad de despliegue: al estar en formato MLX, queda restringido a Apple Silicon. No se puede servir con vLLM, TGI o llama.cpp sin cambiar de artefacto.
-- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion y conservacion de avisos, sin clausulas de uso aceptable adicionales en la informacion disponible. Verificar el repositorio original de JetBrains por si hubiera condiciones adicionales.
-- Madurez: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion ni validacion por parte de la comunidad.
-- Fechas del repositorio: creado el 8 de octubre de 2026 y actualizado el mismo dia, con dos horas de diferencia; no consta mantenimiento posterior.
+- La cuantización MXFP4 a 4,25 bits por peso implica una pérdida de precisión frente al modelo original en BF16; la propia model card reconoce que Q4_K_M, con ≈5,3 bits por peso, tiende a preservar mejor la precisión en valores atípicos. Es necesario evaluar la calidad en la tarea concreta antes de usarlo en producción.
+- Las compuertas del router se mantienen en 8 bits para mitigar el daño al enrutamiento, pero no se han publicado métricas que cuantifiquen la degradación real del modelo cuantizado.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan medidas específicas de mitigación en la información disponible.
+- Sesgos conocidos: no disponibles; la model card no incluye análisis de sesgos.
+- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas distintos del inglés sin evaluación previa.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; conviene conservar el aviso de licencia y el reconocimiento al modelo base de JetBrains.
+- Dependencia de plataforma: este formato solo es utilizable en Apple Silicon vía MLX; para CUDA, ROCm o CPU hay que recurrir a la variante GGUF.
+- El repositorio tiene un volumen de descargas bajo (823) y un único "like", lo que sugiere poca validación comunitaria; conviene verificar la integridad de los pesos y reproducir la cuantización si la trazabilidad es crítica.
+- El consumo de memoria crece con la longitud de contexto; usar los 128K tokens completos en equipos con memoria unificada limitada puede provocar swapping o fallos de asignación.
 
 ## Enlaces
 
-- Repositorio de esta cuantizacion: https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
-- Variante GGUF del modelo base citada por el autor: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
-- Variante GGUF MXFP4 MoE: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-MXFP4_MOE
-- Cuantizacion equivalente de la comunidad MLX: https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Thinking-mxfp4
-- Arbol de ficheros de la version MLX comunitaria: https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Thinking-mxfp4/tree/main
-- Referencia del modelo con contexto declarado de 131k: https://www.llmreference.com/model/mellum2-1-12b-thinking
-- Ficha y valoraciones en LLM Explorer: https://llm-explorer.com/model/mlx-community%2FMellum2-12B-A2.5B-Thinking-mxfp4,4dlvM7NturXWL8GgD4jyRm
-- Panorama del modelo base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-thinking-jetbrains
+- Variante GGUF oficial: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
+- Librería MLX: https://github.com/ml-explore/mlx
+- mlx-lm: https://github.com/ml-explore/mlx-lm

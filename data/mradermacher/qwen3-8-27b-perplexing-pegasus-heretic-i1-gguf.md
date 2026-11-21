@@ -2,88 +2,92 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-27B-Perplexing-Pegasus-Heretic-i1-GGUF` es una publicación de cuantizaciones GGUF generadas por mradermacher, un autor conocido en Hugging Face por convertir modelos de terceros a formatos optimizados para inferencia local. El repositorio deriva del modelo base `webbrain-one/Qwen3.8-27B-Perplexing-Pegasus-Heretic`, un modelo de 27 mil millones de parámetros según la nomenclatura del nombre, aunque la model card no aporta detalles sobre su arquitectura, entrenamiento o procedencia real.
+Qwen3.8-27B-Perplexing-Pegasus-Heretic-i1-GGUF es una cuantizacion en formato GGUF del modelo webbrain-one/Qwen3.8-27B-Perplexing-Pegasus-Heretic, un derivado de la familia Qwen 3.5 (segun la etiqueta `qwen3_5` de la model card) con 27.320.697.856 parametros totales. Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, y su proposito principal es ofrecer versiones ligeras y ejecutables en hardware de consumo de un modelo de gran tamano que, en su formato original en safetensors, resulta dificil de desplegar.
 
-La ficha técnica disponible es extremadamente escasa: el repositorio no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva más allá de los metadatos de cuantización. Los datos reales de safetensors indican 6.789.424 parámetros, una cifra incompatible con el "27B" del nombre, lo que sugiere que el tensor inspeccionado corresponde a un componente parcial (posiblemente un módulo de visión o un tensor auxiliar) y no al modelo completo.
+El modelo base incorpora las etiquetas `heretic`, `abliterated`, `uncensored` y `decensored`, lo que indica que ha sido sometido a un proceso de "abliteration" (eliminacion o reduccion de los mecanismos de rechazo del modelo original). Tambien aparecen etiquetas como `typed-decisions`, `mtp`, `systemone`, `conversational` y `multimodal`, que sugieren capacidades conversacionales y de vision. La licencia declarada es Apache 2.0.
 
-Su relevancia es limitada y debe interpretarse con cautela: se trata de un artefacto de cuantización de un modelo derivado de la familia Qwen, con modificaciones no documentadas (los sufijos "Perplexing-Pegasus-Heretic" sugieren ajustes de fine-tuning o ablaciones de alineamiento no verificadas). No hay evidencia publicada de benchmarks, evaluación de calidad ni garantías de funcionamiento, por lo que su uso en producción no está recomendado sin una validación independiente.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 27B en GPUs de consumo mediante cuantizacion GGUF con imatrix, manteniendo un equilibrio entre calidad y requisitos de memoria. El repositorio ocupa 218,6 GB e incluye 15 variantes de cuantizacion desde i1-Q2_K (11,0 GB) hasta i1-Q6_K (22,5 GB).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, derivada de Qwen, sin confirmar) |
-| Parámetros totales | 27B según el nombre del repositorio; 6.789.424 según safetensors (dato parcial, no representativo del modelo completo) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen 3.5, segun etiqueta `qwen3_5`; detalles no disponibles) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, small-IQ4_NL, IQ4_XS, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base presumiblemente en safetensors |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, imatrix |
+| Idiomas soportados | en (segun model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base. El nombre "Qwen3.8-27B" sugiere una variante de la familia Qwen con 27 mil millones de parámetros, pero no hay confirmación oficial de que corresponda a una arquitectura transformer densa, MoE o híbrida. Los sufijos "Perplexing-Pegasus-Heretic" apuntan a un modelo derivado mediante fine-tuning o modificaciones de alineamiento no documentadas, probablemente orientadas a reducir restricciones de rechazo (el término "Heretic" se usa en la comunidad para modelos con alineamiento alterado), pero esto es una inferencia y no un dato confirmado.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de la etiqueta `qwen3_5`, que lo situa en la familia Qwen 3.5 de Alibaba. Se trata, por tanto, de un transformer con 27.320.697.856 parametros totales. Las etiquetas `mtp` (multi-token prediction) y `typed-decisions` sugieren innovaciones tecnicas en la generacion, pero no se aportan detalles sobre su implementacion.
 
-Respecto al entrenamiento, no se especifican tokens, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas. La model card únicamente documenta los parámetros de la herramienta de cuantización (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) y la lista de cuantizaciones generadas, con cuantizaciones ponderadas por imatrix. No hay información sobre decodificación especulativa, atención lineal ni otras optimizaciones.
+En cuanto al entrenamiento, no se dispone de informacion sobre el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF o DPO. El proceso de "abliteration" (etiquetas `heretic`, `abliterated`, `uncensored`, `decensored`) implica una modificacion post-entrenamiento orientada a eliminar los comportamientos de rechazo, pero no se documenta la metodologia concreta empleada por webbrain-one. La cuantizacion de mradermacher utiliza tecnicas de imatrix (importance matrix) para mejorar la calidad de las versiones de baja precision, y se ofrece el fichero imatrix para que otros usuarios puedan generar sus propias cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto: capacidad presumible por herencia de la familia Qwen, no verificada en este repositorio.
-- Razonamiento y matemáticas: no disponible.
-- Generación de código: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (idiomas no declarados).
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generacion de texto conversacional multi-turno (etiqueta `conversational`).
+- Capacidades multimodales (etiqueta `multimodal`; la model card indica que es un modelo de vision y que los ficheros mmproj, si existen, estan en el repositorio estatico).
+- Comportamiento sin censura o con rechazo reducido (etiquetas `uncensored`, `decensored`, `abliterated`).
+- Prediccion multi-token (etiqueta `mtp`).
+- Soporte de "typed decisions" (etiqueta `typed-decisions`), sin mas detalle disponible.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Idiomas: unicamente ingles declarado.
 
 ## Casos de uso
 
-- Inferencia local en hardware de consumo: las cuantizaciones Q4_K_M e IQ4_XS permiten, en teoría, ejecutar un modelo de 27B en GPUs con 16-24 GB de VRAM mediante llama.cpp u Ollama, aunque la calidad real no está validada.
-- Experimentación con modelos derivados: útil para investigadores interesados en estudiar el efecto de modificaciones de alineamiento ("Heretic") sobre el comportamiento del modelo, siempre con evaluación propia.
-- Pruebas de cuantización extrema: las variantes IQ1_S e IQ2_XXS permiten analizar la degradación de calidad en regímenes de muy baja precisión, un caso de interés para investigación en compresión de modelos.
-- Despliegue en entornos aislados: al ser un GGUF autocontenido, puede ejecutarse offline en máquinas sin acceso a servicios en la nube, aunque sin garantías de soporte.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece más de 20 variantes, lo que facilita estudios de trade-off entre tamaño y perplejidad si se dispone de un conjunto de evaluación.
-- Prototipado de chatbots: solo tras validación manual, dado que no hay benchmarks ni documentación de comportamiento.
+- Prototipado de asistentes conversacionales sin restricciones: el modelo, al estar "abliterated", responde sin los filtros habituales de rechazo, lo que resulta util para investigacion sobre seguridad, red teaming y estudio de comportamientos no alineados.
+- Investigacion en alineacion y seguridad: permite comparar respuestas del modelo base frente a la version "heretic" para analizar el efecto del proceso de abliteration en la utilidad y los sesgos.
+- Despliegue en hardware de consumo: las cuantizaciones i1-Q4_K_M (16,9 GB) o i1-Q3_K_M (13,6 GB) permiten ejecutar un modelo de 27B en GPUs con 16-24 GB de VRAM mediante llama.cpp u Ollama, algo inviable con los pesos en safetensors.
+- Generacion de texto creativo y roleplay: el caracter conversacional y la ausencia de censura lo hacen adecuado para narrativa, juegos de rol y generacion de dialogos sin restricciones tematicas.
+- Procesamiento de imagenes y texto combinados: gracias a la etiqueta `multimodal` y a los ficheros mmproj, puede emplearse en tareas de descripcion de imagenes o respuesta a preguntas visuales, siempre que se use el repositorio estatico para los proyectores.
+- Experimentacion con cuantizacion imatrix: el fichero imatrix incluido permite a investigadores generar sus propias cuantizaciones y evaluar el impacto de la matriz de importancia en la calidad.
+- Fine-tuning y destilacion sobre respuestas: al ser un modelo sin censura, puede servir como generador de datos sinteticos para entrenar modelos mas pequenos en dominios donde los filtros estorban.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión. Para un modelo de 27B, las estimaciones orientativas serían aproximadamente 16-20 GB en Q4_K_M, 10-12 GB en Q2_K y 22-26 GB en Q6_K, pero estas cifras son extrapolaciones y no datos confirmados del repositorio.
-- GPU recomendadas: no disponible. Para un 27B en Q4 se requerirían GPUs con 24 GB o más (RTX 3090/4090, A5000, A6000) o configuraciones multi-GPU.
-- Compatibilidad con GPU de consumo: posible en RTX 3090/4090 con cuantizaciones Q4 o inferiores, sujeto a verificación.
-- Opciones de despliegue: llama.cpp, Ollama, y potencialmente vLLM o TGI si se dispone del modelo base en safetensors (no incluido en este repositorio).
+- VRAM estimada segun cuantizacion: i1-Q2_K ~11 GB, i1-Q3_K_S ~12,4 GB, i1-IQ3_M ~12,9 GB, i1-Q3_K_M ~13,6 GB, i1-IQ4_XS ~15,4 GB, i1-Q4_K_S ~15,9 GB, i1-Q4_K_M ~16,9 GB, i1-Q5_K_M ~19,6 GB, i1-Q6_K ~22,5 GB. Hay que anadir el espacio para el contexto KV cache y, en su caso, el proyector multimodal.
+- GPU recomendadas: para cuantizaciones Q4 y superiores, RTX 4090 (24 GB) o RTX 3090 (24 GB); para Q5/Q6, A100 40 GB, H100 o RTX 6000 Ada. Las cuantizaciones Q2/Q3 pueden caber en GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080).
+- Cabe en GPU de consumo: si, en las cuantizaciones bajas y medias (hasta Q4_K_M en 24 GB; Q3 en 12-16 GB). Las versiones Q5 y Q6 requieren 24 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). El modelo base es compatible con transformers. No se confirma soporte en vLLM o TGI para esta cuantizacion GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| mradermacher/Qwen3.8-27B-Perplexing-Pegasus-Heretic-i1-GGUF | 27B (según nombre) | no disponible | no disponible | GGUF en HF |
-| Qwen2.5-32B-Instruct (referencia de la familia) | 32B | 128K (según documentación oficial de Qwen) | Apache 2.0 (según documentación oficial) | safetensors y GGUF comunitarios |
-| Gemma-2-27B-it | 27B | 8K | Gemma Terms of Use | safetensors y GGUF comunitarios |
-| Mistral-Small-24B-Instruct | 24B | 32K | Apache 2.0 | safetensors y GGUF comunitarios |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Perplexing-Pegasus-Heretic-i1-GGUF (este) | 27,3B | no disponible | Apache 2.0 | GGUF | Version abliterated, multimodal, solo ingles |
+| Qwen3.8-27B-Perplexing-Pegasus-Heretic (base) | 27,3B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| Qwen3.8-27B-Perplexing-Pegasus-Heretic-GGUF (estatico) | 27,3B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estaticas del mismo autor, incluye mmproj |
 
-La comparación es orientativa: no hay datos de rendimiento del modelo evaluado, por lo que no puede establecerse una comparación cuantitativa con las alternativas.
+No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card descriptiva: no hay información sobre arquitectura, entrenamiento, datos ni evaluación.
-- Licencia no declarada: riesgo legal para uso comercial; debe consultarse la licencia del modelo base `webbrain-one/Qwen3.8-27B-Perplexing-Pegasus-Heretic` antes de cualquier despliegue.
-- Discrepancia de parámetros: el nombre indica 27B pero safetensors reporta 6.789.424, lo que impide confirmar el tamaño real y las necesidades de hardware.
-- Modificaciones de alineamiento no verificadas: el sufijo "Heretic" sugiere alteraciones que podrían reducir salvaguardas, con riesgo de contenido inapropiado o sesgado.
-- Sin benchmarks ni evaluación de calidad: no hay evidencia de que las cuantizaciones preserven el rendimiento del modelo base.
-- Riesgo de alucinación: no evaluado; en modelos derivados sin documentación, este riesgo es especialmente alto.
-- Idiomas no declarados: no puede garantizarse un rendimiento multilingüe correcto.
-- Repositorio con 0 descargas y 0 likes: sin validación por parte de la comunidad.
-- Fecha de creación futura (2026-11-16): metadato anómalo que sugiere posibles errores en la publicación.
+- El modelo esta disenado explicitamente para eliminar los mecanismos de rechazo (`uncensored`, `abliterated`), lo que implica un riesgo elevado de generar contenido danino, ofensivo o ilegal. No es apto para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo de alucinacion: no cuantificado, pero inherente a los modelos de lenguaje de este tamano; la cuantizacion agresiva (Q2, Q3) puede incrementar la perdida de calidad.
+- Idiomas: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- Longitud de contexto: no documentada, lo que impide planificar despliegues con ventanas largas.
+- La licencia Apache 2.0 permite uso comercial, pero el caracter "abliterated" puede entrar en conflicto con politicas de plataformas, terminos de servicio de proveedores cloud y normativa sobre contenido.
+- La model card no documenta la metodologia de abliteration ni los datos de entrenamiento, lo que dificulta evaluar sesgos y procedencia.
+- El repositorio ocupa 218,6 GB; la descarga completa es costosa, aunque pueden descargarse solo las cuantizaciones necesarias.
+- Los ficheros mmproj para vision no estan en este repositorio, sino en el estatico; hay que descargarlos por separado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Perplexing-Pegasus-Heretic-i1-GGUF
-- Modelo base citado en la model card: https://huggingface.co/webbrain-one/Qwen3.8-27B-Perplexing-Pegasus-Heretic
-- Perfil del autor: https://huggingface.co/mradermacher
-- Listado de modelos GGUF en Hugging Face: https://huggingface.co/models?sort=modified&search=gguf
+- Modelo base: https://huggingface.co/webbrain-one/Qwen3.8-27B-Perplexing-Pegasus-Heretic
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Perplexing-Pegasus-Heretic-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Perplexing-Pegasus-Heretic-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

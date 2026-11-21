@@ -2,50 +2,51 @@
 
 ## Resumen
 
-SenseNova-Loop-9B es un modelo multimodal de generación de texto a partir de imagen y texto desarrollado por SenseNova (SenseTime). Se distribuye en Hugging Face bajo una arquitectura denominada "looped-transformer" con un componente identificado como "mhc", y emplea código personalizado (`custom_code`, `sensenova_loop`) que requiere confiar en implementación remota para cargarlo con Transformers. Cuenta con 9.412.963.952 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de los 9B, y su repositorio ocupa 18,9 GB.
+SenseNova-Loop-9B es un modelo multimodal image-text-to-text desarrollado por SenseNova (SenseTime) que introduce una arquitectura de transformer con bucles (looped transformer) combinada con un mecanismo denominado MHC. Con 9.656 millones de parametros, el modelo procesa entradas de imagen y texto para generar respuestas conversacionales, y se distribuye bajo licencia Apache 2.0 con pesos en safetensors para la libreria transformers.
 
-El modelo está etiquetado para las tareas de `text-generation` y `image-text-to-text`, es decir, cubre tanto generación de texto puro como entrada multimodal imagen-texto. Soporta los idiomas inglés y chino según los metadatos, y se publica bajo licencia Apache 2.0, lo que facilita su uso comercial. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
+El modelo se posiciona en la franja de 9B parametros, un tamano que permite despliegue en hardware relativamente asequible mientras mantiene capacidades multimodales. Su interes tecnico principal reside en la arquitectura looped transformer, un diseno que reutiliza bloques de computo de forma iterativa para aumentar la profundidad efectiva sin incrementar proporcionalmente el numero de parametros.
 
-La relevancia de este lanzamiento reside en la propuesta arquitectónica: los transformers con bucles (looped transformer) reutilizan bloques de cómputo de forma iterativa para aumentar la profundidad efectiva sin incrementar proporcionalmente el número de parámetros. No obstante, la información pública disponible en la ficha de Hugging Face es muy limitada y no se han publicado detalles sobre datos de entrenamiento, benchmarks ni configuración de despliegue.
+El acceso esta restringido (gated) en Hugging Face: es necesario aceptar las condiciones del repositorio antes de descargar los pesos. Los idiomas declarados son ingles y chino. No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset ni resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Looped transformer (etiqueta `sensenova_loop`, componente `mhc`), multimodal |
-| Parametros totales | 9.412.963.952 |
+| Arquitectura | Looped transformer multimodal (image-text-to-text) con mecanismo MHC |
+| Parametros totales | 9.656.254.576 (9,66B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se publican GGUF ni cuantizaciones oficiales) |
-| Idiomas soportados | en, zh |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con `custom_code` para carga en Transformers) |
+| Formato de pesos | safetensors (custom_code, requiere `trust_remote_code`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe en los metadatos como "looped-transformer", un diseño en el que un conjunto de bloques se aplica repetidamente en bucle para incrementar la profundidad computacional efectiva sin multiplicar el número de parámetros. El modelo incorpora además un componente etiquetado como "mhc" y requiere código personalizado (`sensenova_loop`) para su carga, lo que implica que la implementación no es estándar dentro de Transformers y exige `trust_remote_code=True`. Es un modelo multimodal, orientado a la combinación de imagen y texto como entrada.
+La arquitectura se describe en las etiquetas del repositorio como "looped-transformer" con "mhc". Un looped transformer aplica de forma iterativa un mismo bloque (o conjunto de bloques) sobre las representaciones internas, de modo que la profundidad efectiva del modelo puede superar el numero de capas fisicas. Esto permite aumentar la capacidad de razonamiento por paso de computo con un coste de parametros menor que el de apilar capas adicionales. El termino "MHC" aparece como componente propio del modelo, pero no se detalla su significado ni su funcion en la informacion disponible.
 
-No se dispone de información pública sobre el volumen de tokens de entrenamiento, la composición del dataset, si se aplicaron técnicas de alineación como RLHF o DPO, ni sobre innovaciones adicionales en decodificación o atención. Tampoco se detalla la configuración del codificador visual ni la forma en que se fusionan las modalidades. Todos estos aspectos deben considerarse no disponibles a partir de la información proporcionada.
+El modelo es multimodal: recibe pares imagen-texto y genera texto (pipeline image-text-to-text). El repositorio incluye codigo personalizado (`sensenova_loop`, `custom_code`), por lo que la carga requiere `trust_remote_code=True` en transformers. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y chino.
-- Comprensión de imágenes y respuesta en formato imagen-texto a texto (`image-text-to-text`).
-- Generación de texto multimodal: descripción, respuesta a preguntas sobre imágenes y diálogo con soporte visual.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües limitadas a inglés y chino según los metadatos.
-- Modo de razonamiento explícito (thinking mode), visión, audio u otras capacidades especiales: no disponible.
+- Generacion de texto conversacional a partir de entradas de imagen y texto (image-text-to-text).
+- Procesamiento de imagenes combinadas con instrucciones en lenguaje natural.
+- Conversacion multi-turno (etiqueta "conversational").
+- Soporte de ingles y chino.
+- Arquitectura looped que puede favorecer el razonamiento iterativo, aunque no se documentan modos explicitos de "thinking".
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional con imágenes: el modelo puede recibir una imagen junto con una pregunta del usuario y responder en lenguaje natural, adecuado para aplicaciones de soporte que requieran interpretar capturas, fotos o documentos escaneados.
-- Descripción automática de contenido visual: generación de pies de foto y descripciones para catálogos, bibliotecas de imágenes o plataformas de accesibilidad, aprovechando su pipeline `image-text-to-text`.
-- Extracción de información de documentos: dado que acepta imagen y texto, puede emplearse para responder preguntas sobre facturas, formularios o capturas de pantalla en flujos de digitalización.
-- Atención al cliente bilingüe (inglés/chino): conversaciones multi-turno en ambos idiomas, útil para mercados donde se requiere soporte en chino e inglés con el mismo modelo.
-- Moderación y análisis de contenido visual: clasificación y descripción de imágenes enviadas por usuarios en plataformas comunitarias, con generación de informes textuales.
-- Prototipado de aplicaciones multimodales: al ser un modelo de 9B con licencia Apache 2.0, sirve para experimentación e integración en productos que necesiten entrada visual sin depender de APIs propietarias.
-- Investigación en arquitecturas looped transformer: su diseño poco habitual lo hace útil como base para estudiar el impacto del cómputo iterativo en tareas multimodales.
+- Descripcion y analisis de imagenes en ingles o chino: el modelo recibe una imagen y una pregunta y genera una descripcion o respuesta, util para catalogacion automatica de imagenes en entornos bilinguales.
+- Asistentes conversacionales con entrada visual: integracion en chatbots que necesiten interpretar capturas de pantalla o fotos enviadas por el usuario y mantener conversaciones multi-turno.
+- Extraccion de informacion de documentos escaneados: dado que procesa imagen y texto, puede emplearse para responder preguntas sobre facturas, formularios o capturas, siempre que el contexto lo permita (longitud de contexto no publicada).
+- Moderacion de contenido visual asistida: clasificacion y descripcion de imagenes con justificacion textual en ingles o chino para pipelines de revision.
+- Prototipado de investigacion en arquitecturas looped: al ser Apache 2.0 y con codigo custom disponible, sirve como base para estudiar transformers con bucles en tareas multimodales.
+- Educacion y accesibilidad: generacion de descripciones textuales de imagenes para lectores de pantalla en ingles y chino.
+- Analisis de imagenes tecnicas o de producto: respuesta a preguntas sobre diagramas o fotografias en flujos de soporte tecnico.
 
 ## Benchmarks y rendimiento
 
@@ -53,33 +54,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precisión completa (BF16/FP16): aproximadamente 19 GB solo para pesos, más overhead de activaciones y caché KV, por lo que se recomienda al menos 24 GB de VRAM.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para BF16 en el límite; para cuantizaciones de 8 bits o 4 bits se requeriría menos VRAM, aunque no se publican pesos cuantizados oficiales.
-- ¿Cabe en GPU de consumo? Sí, en RTX 4090 (24 GB) en BF16 ajustado o con cuantización; en GPUs de 16 GB solo con cuantización agresiva no oficial.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` (requerido por `custom_code`); compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada en la información disponible.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 19-20 GB solo para los pesos (9,66B parametros), mas overhead de activaciones y del codificador visual; en la practica, se recomienda un minimo de 24 GB.
+- En cuantizacion de 8 bits: en torno a 10-12 GB de pesos; en 4 bits, en torno a 5-7 GB, aunque no se confirman tipos de cuantizacion soportados oficialmente.
+- GPU recomendadas: A100 40/80 GB o H100 para despliegue en BF16 con margen; RTX 4090 (24 GB) puede ser suficiente en BF16 con contexto corto o en cuantizacion.
+- GPU de consumo: cabe en RTX 4090 y potencialmente en GPUs de 16 GB si se cuantiza, sujeto a que la implementacion custom lo permita.
+- Opciones de despliegue: transformers con `trust_remote_code=True`; vLLM, llama.cpp, Ollama o TGI no estan confirmados en la informacion disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B | 9,41B | no disponible | Sí (imagen-texto) | Apache 2.0 | Gated en Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| SenseNova-Loop-9B | 9,66B | no disponible | imagen-texto | Apache 2.0 | Gated en HF |
+| Alternativas de ~9-10B multimodales | no disponible | no disponible | imagen-texto | no disponible | no disponible |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría; los datos de rendimiento, contexto y arquitectura de alternativas no se han proporcionado.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
 - Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
-- Requiere `trust_remote_code=True` por el uso de `custom_code`, lo que implica ejecutar código remoto del autor; conviene auditar la implementación antes de usarla en producción.
-- Idiomas limitados a inglés y chino según los metadatos; el rendimiento en castellano no está documentado y probablemente sea inferior.
-- No se publican datos sobre sesgos, alineación ni evaluación de seguridad; el riesgo de alucinación es inherente a los modelos generativos y no ha sido cuantificado.
-- Longitud de contexto desconocida: no es posible planificar casos de uso con documentos largos sin verificar experimentalmente el límite real.
-- Ausencia de benchmarks oficiales: no hay evidencia pública de rendimiento frente a modelos comparables.
-- Aunque la licencia Apache 2.0 permite uso comercial, la falta de documentación sobre procedencia de datos y evaluación de riesgos exige validación propia antes de desplegarlo en entornos regulados.
-- No se ofrecen pesos cuantizados oficiales (GGUF, AWQ, GPTQ), lo que puede complicar el despliegue en hardware limitado.
+- Requiere `trust_remote_code=True`: el modelo incluye codigo personalizado (`sensenova_loop`), lo que implica ejecutar codigo del autor; conviene auditar el codigo antes de usarlo en produccion.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
+- No se publican datos sobre sesgos, tasa de alucinacion ni evaluaciones de seguridad.
+- Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones o documentos largos.
+- Sin benchmarks publicados en la informacion disponible, no es posible validar el rendimiento frente a alternativas.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), las condiciones adicionales del acceso gated deben revisarse.
+- La novedad de la arquitectura looped implica menor madurez del ecosistema (herramientas de cuantizacion, soporte en servidores de inferencia) en comparacion con transformers estandar.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Paper, blog, repositorio o demo: no disponible en la información proporcionada.

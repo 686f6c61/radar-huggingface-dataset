@@ -2,86 +2,91 @@
 
 ## Resumen
 
-`gemma-4-31B-it-abliterated-Japanese-RP` es un ajuste fino (finetune) del modelo `wangzhang/gemma-4-31B-it-abliterated`, que a su vez es una version "abliterated" (con los mecanismos de rechazo eliminados o atenuados) del modelo Gemma 4 de 31.000 millones de parametros en su variante instruct. El autor del repositorio es el usuario `anaaaaaa13421312`, que publica el modelo bajo licencia Apache 2.0 y lo etiqueta como `not-for-all-audiences` y especializado en roleplay en japones.
+`gemma-4-31B-it-abliterated-Japanese-RP` es un ajuste fino por LoRA (fusionado en bfloat16) del modelo `wangzhang/gemma-4-31B-it-abliterated`, publicado por el usuario de Hugging Face anaaaaaa13421312. Está especializado en roleplay japonés multijugador y de formato largo, con un formato de salida propio que alterna líneas de narración (`@*...*`) y turnos de personaje (`@NombrePersonaje,diálogo`). El modelo hereda la arquitectura Gemma 4 de 31B parámetros con encoder de visión y una ventana de contexto de 262.144 tokens.
 
-El modelo se presenta como un derivado orientado a generacion creativa y conversacional en japones, sin filtros de seguridad reforzados, lo que lo hace relevante para quienes investigan el comportamiento de modelos sin alineamiento restrictivo o para aplicaciones de ficcion interactiva. No obstante, la informacion publicada es extremadamente escasa: la model card se limita a metadatos y no incluye detalles sobre el proceso de ajuste, los datos utilizados ni evaluaciones.
+El interés del modelo es doble: por un lado, demuestra un flujo de trabajo completo de ajuste fino con Unsloth sobre un modelo abliterated (es decir, con los mecanismos de rechazo eliminados), incluyendo versiones cuantizadas en GGUF Q4_K_M, INT8 W8A8 y FP8 Dynamic; por otro, expone de forma explícita en su model card las limitaciones de su dataset (sesgo hacia perspectivas de personaje femenino y usuario masculino) y una advertencia de deprecación sobre el checkpoint publicado (CP75 frente a CP50).
 
-Por su tamano (31B) y su naturaleza derivada de Gemma, se situa en la categoria de modelos de gran formato que requieren hardware de gama alta para inferencia, y su utilidad practica queda condicionada por la falta de documentacion tecnica verificable.
+Es relevante ahora porque ejemplifica una tendencia creciente: modelos derivados de pesos abiertos con fines de rol conversacional, publicados con múltiples formatos de cuantización y con documentación inusualmente transparente sobre sesgos y evaluación. No obstante, su naturaleza abliterated y su etiqueta `not-for-all-audiences` lo sitúan fuera de casos de uso comerciales convencionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de Gemma 4, presumiblemente transformer decoder-only) |
-| Parametros totales | 31B (segun el nombre del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | japones (especialidad declarada); resto no disponible |
+| Arquitectura | Transformer decoder-only multimodal (`Gemma4ForConditionalGeneration`) con 60 capas de texto (50 `sliding_attention` + 10 `full_attention`) y encoder de visión de 27 capas |
+| Parametros totales | 31.273.086.512 (31,27 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens (`max_position_embeddings`) |
+| Tipos de cuantizacion | BF16 (principal), GGUF Q4_K_M, INT8 W8A8, FP8 Dynamic |
+| Idiomas soportados | Japonés (ja) e inglés (en) según la model card; el campo `language` de los metadatos de Hugging Face no está disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
+| Formato de pesos | safetensors (BF16, 2 shards, 58,25 GiB), GGUF, cuantizaciones INT8/FP8; checkpoints LoRA en fp32 (~0,912 GiB cada uno, 244.858.880 parámetros) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo mas alla de su nombre, que indica que deriva de Gemma 4 de 31B en variante instruct. No se documenta si se trata de un transformer decoder-only clasico, si emplea atencion lineal, mezcla de expertos u otra innovacion. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset de ajuste fino, ni si se aplicaron tecnicas de RLHF, DPO o similares.
+El modelo parte de la arquitectura Gemma 4 de 31B en configuración `Gemma4ForConditionalGeneration`, con `bfloat16` como precisión nativa. El backbone de texto consta de 60 capas que combinan atención deslizante (`sliding_attention`) y atención completa (`full_attention`), un vocabulario de 262.144 tokens y una ventana de contexto máxima de 262.144 posiciones. Incluye además un encoder de visión de 27 capas; en esta versión de 31B no hay encoder de audio (`audio_config: null`). El ajuste fino se aplicó exclusivamente sobre las capas de lenguaje mediante LoRA, manteniendo el encoder de visión congelado, y posteriormente se fusionó en pesos BF16 nativos.
 
-El unico dato tecnico inferible es la relacion de dependencia: el modelo parte de `wangzhang/gemma-4-31B-it-abliterated`, un modelo ya modificado para reducir los rechazos de seguridad, y sobre el se aplica un ajuste fino adicional orientado a roleplay en japones. No se detalla la metodologia de "abliteration" empleada en el modelo base ni el volumen de datos japoneses utilizados en este finetune.
+El entrenamiento se realizó con Unsloth sobre el modelo base abliterated de wangzhang, con un dataset de conversaciones de roleplay japonés centrado en personajes femeninos y perspectiva de usuario masculino: según la model card, 6 de 171 conversaciones multijugador tenían personajes masculinos y 0 de 171 conversaciones uno a uno eran de personaje masculino. Se generaron checkpoints intermedios en los pasos 25, 50 y 75, más un checkpoint final. La model card advierte que la evaluación comparativa por checkpoint se omitió inicialmente al publicar CP75 y que los resultados provisionales sugieren que CP50 podría superar a CP75 en conjunto, por lo que el README podría quedar deprecado. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional y creativo, con especial enfasis en roleplay en japones.
-- Reduccion o eliminacion de rechazos de seguridad heredada del modelo base "abliterated", lo que permite generar contenido que otros modelos filtrarian.
-- Capacidades multilingues limitadas: el japones es el idioma declarado como objetivo; no se confirma soporte para otros idiomas.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo "thinking".
-- No se dispone de informacion sobre capacidades de codigo o matematicas.
+- Generación de texto conversacional en japonés e inglés, con formato de roleplay estructurado: narración en `@*...*` y turnos de personaje en `@NombrePersonaje,diálogo` con acciones inline en `*...*`.
+- Roleplay multijugador (varios personajes en una misma escena) y de formato largo, con separación de personas y cumplimiento de formato en turnos cortos.
+- Modo de razonamiento configurable mediante `enable_thinking` (True/False) en la plantilla de chat, heredado de la especificación IT de Gemma 4.
+- Procesamiento de entradas imagen-texto gracias al encoder de visión de 27 capas, aunque el ajuste fino no modificó dicho encoder.
+- Conversación multi-turno con contexto muy largo (hasta 262.144 tokens).
+- Compatibilidad con endpoints (`endpoints_compatible` en los metadatos).
+- No se documenta soporte explícito de tool calling, function calling ni comportamiento agéntico multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Roleplay conversacional en japones: el modelo esta ajustado especificamente para mantener personajes y narrativas interactivas en japones, lo que lo hace adecuado para plataformas de ficcion interactiva o chatbots de entretenimiento en ese idioma.
-- Investigacion sobre alineamiento y seguridad: al derivar de un modelo "abliterated", permite estudiar como se comporta un modelo de 31B sin los filtros habituales, comparando respuestas con la version original de Gemma.
-- Generacion de narrativa creativa sin restricciones tematicas: util para escritores que necesitan explorar tramas o dialogos que otros modelos rechazarian, siempre con revision humana posterior.
-- Prototipado de asistentes de personaje en japones: integrable en aplicaciones de chat donde se requiera consistencia de personalidad y estilo, aunque sin garantias de calidad por falta de evaluaciones.
-- Datos sinteticos para ajuste fino: puede emplearse para generar dialogos japoneses de estilo roleplay que sirvan como corpus de entrenamiento para modelos menores.
-- Pruebas de robustez y sesgo: su condicion de modelo sin filtros lo convierte en un caso de estudio para medir sesgos y toxicidad en modelos de gran tamano.
+- Roleplay japonés de formato largo: el modelo mantiene escenas multi-turno con narración y diálogo separados gracias a su formato de salida dedicado y a la ventana de 262.144 tokens, adecuado para sesiones extensas con memoria de contexto amplia.
+- Simulación de personajes en ficción interactiva: la alternancia `@*...*` / `@Personaje,...` permite integrar la salida directamente en motores de novela visual o frontends de rol sin postprocesado complejo.
+- Escenas multijugador con varios personajes: el ajuste incluye conversaciones con varios personajes (aunque con sesgo hacia personajes femeninos), útil para narrativa ramificada con reparto coral.
+- Prototipado de investigación sobre abliteration: sirve como caso de estudio de cómo un ajuste fino por LoRA sobre un modelo abliterated afecta al cumplimiento de formato y a la coherencia de personaje, con checkpoints intermedios comparables (CP25, CP50, CP75).
+- Evaluación de pipelines de cuantización: las versiones GGUF Q4_K_M, INT8 W8A8 y FP8 Dynamic permiten comparar calidad y latencia entre formatos sobre el mismo ajuste, útil para laboratorios que estudian despliegue eficiente.
+- Generación bilingüe japonés-inglés para contenido narrativo: la model card incluye un prompt equivalente en inglés (SFW) que permite usar el modelo en escenarios de ficción en ambos idiomas.
+- Experimentación con entradas multimodales: aunque el encoder de visión está congelado, el modelo conserva la capacidad imagen-texto de la base, aprovechable para prototipos de narrativa asistida por imágenes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona métricas de RP obtenidas con la cuantización GGUF Q4_K_M, pero no proporciona los valores numéricos en el extracto disponible, y señala que la inferencia BF16 extremo a extremo no se ha evaluado directamente en `transformers` porque los pesos superan los 58,25 GiB de VRAM.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 62 GB solo para pesos, mas overhead de activaciones y cache KV, por lo que se recomienda un minimo de 80 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 31-35 GB, viable en una A100 de 40 GB o en dos RTX 4090.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 16-20 GB, potencialmente ejecutable en una RTX 4090 de 24 GB, aunque con perdida de calidad no evaluada.
-- GPU recomendadas: A100 80 GB, H100 80 GB para FP16; A100 40 GB o configuraciones multi-GPU para 8 bits; RTX 4090 para cuantizaciones agresivas.
-- Opciones de despliegue: no documentadas por el autor; por el formato probable se podria usar vLLM, TGI o llama.cpp si los pesos estan en formatos compatibles, pero no esta confirmado.
-- Latencia y throughput: no disponibles.
+- VRAM para BF16: los pesos solos ocupan 58,25 GiB, por lo que se necesitan al menos 64 GB de VRAM (por ejemplo, una A100 80 GB o H100 80 GB) para inferencia completa; con overhead de activaciones y caché KV para contexto largo, el requisito crece por encima de 80 GB en configuraciones de contexto muy extenso.
+- Cuantización Q4_K_M (GGUF): reduce el peso a aproximadamente 16-18 GB, lo que permite ejecución en una RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto moderado.
+- INT8 W8A8 y FP8 Dynamic: orientadas a GPUs con soporte de FP8 (H100, L40S) o INT8 (A100, L4), con pesos en torno a 31 GB en INT8.
+- Cabe en GPU de consumo: sí, en formato GGUF Q4_K_M en GPUs de 24 GB; en BF16 no cabe en ninguna GPU de consumo actual.
+- Opciones de despliegue: `transformers` (>= 5.17.0 según la model card, con `Gemma4ForConditionalGeneration` y `AutoProcessor` para visión), llama.cpp/Ollama mediante el GGUF publicado, y presumiblemente vLLM/TGI para los formatos INT8/FP8, aunque la información disponible no confirma compatibilidad explícita con estos últimos.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| gemma-4-31B-it-abliterated-Japanese-RP | 31B | no disponible | Apache 2.0 | Finetune de roleplay japones sin filtros; sin benchmarks |
-| wangzhang/gemma-4-31B-it-abliterated | 31B | no disponible | no disponible | Modelo base del que deriva; misma familia sin filtros |
-| Gemma 4 31B instruct (original) | 31B | no disponible | licencia Gemma (no Apache) | Version oficial con alineamiento y filtros de seguridad |
-| Modelos de roleplay japones de 7-13B | 7-13B | variable | variable | Menor tamano, menor requisito de VRAM, calidad no comparable sin datos |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| gemma-4-31B-it-abliterated-Japanese-RP | 31,27 B | 262.144 | Apache 2.0 | Roleplay japonés, abliterated, LoRA fusionado | HF (BF16, GGUF, INT8, FP8) |
+| wangzhang/gemma-4-31B-it-abliterated (base) | 31,27 B | 262.144 | No disponible en la información | Abliterated generalista, sin ajuste de rol | HF |
+| google/gemma-4-31b-it | 31 B (aprox.) | 262.144 | No disponible en la información | Modelo instructivo multimodal original | HF |
 
-No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
+La comparación con alternativas de otros ecosistemas (por ejemplo, ajustes de rol sobre Llama o Mistral) no está disponible en la información proporcionada. El modelo base y el original de Google comparten arquitectura y contexto; la diferencia principal es el ajuste de rol y la abliteration, que no vienen acompañados de benchmarks públicos en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks y evaluaciones: no hay evidencia publica de calidad, coherence ni seguridad.
-- Modelo "abliterated": se han eliminado o atenuado los rechazos de seguridad, lo que implica riesgo elevado de generar contenido toxico, ilegal o danino sin advertencia.
-- Etiqueta `not-for-all-audiences`: no apto para uso general ni para menores.
-- Sesgos desconocidos: al no documentarse el dataset de ajuste, no se pueden evaluar sesgos de genero, raza, religion u otros.
-- Riesgo de alucinacion no cuantificado, agravado por la falta de evaluaciones.
-- Especializacion en japones: el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
-- Licencia Apache 2.0 declarada, pero la cadena de modelos base (Gemma) puede imponer restricciones adicionales no reflejadas; conviene verificar la licencia del modelo original de Gemma antes de uso comercial.
-- Sin soporte documentado de tool calling ni agentes, lo que limita su uso en pipelines automatizados.
-- Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
+- Sesgo de dataset documentado por el autor: el ajuste se entrenó principalmente con conversaciones de personaje femenino y perspectiva de usuario masculino (6 de 171 multijugador con personaje masculino; 0 de 171 uno a uno). La usabilidad a largo plazo con perspectiva de usuario femenino no se ha evaluado en profundidad.
+- Advertencia de deprecación: el autor indica que CP50 podría superar a CP75 (checkpoint publicado por defecto) y que el README podría ser reemplazado; conviene verificar la versión antes de desplegar.
+- Modelo abliterated: la eliminación de mecanismos de rechazo implica que puede generar contenido sensible sin las salvaguardas del modelo original; la etiqueta `not-for-all-audiences` lo confirma.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad; en roleplay el riesgo es menor, pero en usos informativos es alto.
+- Cobertura lingüística limitada a japonés e inglés según la model card; el rendimiento en castellano no está documentado.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado y la naturaleza abliterated pueden entrar en conflicto con políticas de plataforma o requisitos regulatorios; se recomienda revisión legal y filtros adicionales en producción.
+- La inferencia BF16 no se ha validado extremo a extremo en `transformers` según el autor; las métricas de calidad provienen de la versión GGUF Q4_K_M.
+- El encoder de visión está congelado: las capacidades multimodales no se han ajustado al dominio de rol y pueden degradarse en ese contexto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP
+- Modelo en Hugging Face: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP
+- README en japonés: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP/blob/main/README_ja.md
+- GGUF Q4_K_M: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP-GGUF
+- INT8 W8A8: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP-INT8-W8A8
+- FP8 Dynamic: https://huggingface.co/anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP-FP8-Dynamic
 - Modelo base: https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.
+- Modelo original de Google: https://huggingface.co/google/gemma-4-31b-it

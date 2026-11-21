@@ -2,99 +2,95 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B es un modelo de reconocimiento automático del habla (ASR) desarrollado por el equipo Qwen (Alibaba) y distribuido en este repositorio por la comunidad litert-community en formato LiteRT-LM. Se trata de una conversión cuantizada del checkpoint original `Qwen/Qwen3-ASR-1.7B-hf` pensada para inferencia en dispositivo (on-device), con un único fichero `.litertlm` que acepta audio y devuelve texto. El modelo resuelve dos tareas simultáneas: identificación del idioma y transcripción, con soporte declarado para 30 idiomas y 22 dialectos chinos.
+Qwen3-ASR-1.7B es un modelo de reconocimiento automático del habla (ASR) desarrollado por Qwen (Alibaba) y convertido al formato LiteRT-LM por la comunidad litert-community para su ejecución en dispositivos locales (on-device). El modelo original combina un codificador de audio de 24 capas con un modelo de lenguaje Qwen3 de 28 capas y 2,04 mil millones de parámetros totales; esta versión empaqueta ambos componentes en un único archivo `.litertlm` que recibe audio PCM de 16 kHz y devuelve texto transcrito junto con la etiqueta de idioma detectado.
 
-La arquitectura combina un codificador de audio de 24 capas que alimenta un modelo de lenguaje Qwen3 de 28 capas y 2,04 mil millones de parámetros. El modelo es relevante porque demuestra que un ASR de calidad competitiva puede ejecutarse en hardware de consumo (se muestran pruebas en un Galaxy S26) sin depender de servicios en la nube, con licencia Apache 2.0 que permite uso comercial.
+La relevancia de esta conversión reside en que permite ejecutar un sistema ASR multilingüe completo sin conexión a red ni servidores externos, sobre hardware móvil y de borde mediante el runtime LiteRT-LM de Google. El modelo cubre identificación y reconocimiento de 30 idiomas, además de 22 dialectos chinos, e incluye mecanismos para forzar el idioma de salida cuando se conoce de antemano.
 
-Este repositorio concreto no es el modelo original, sino su empaquetado para el runtime LiteRT-LM de Google, con pesos del LM en int8 dinámico y el codificador de audio en fp16 con cómputo fp32. Existen dos variantes: una con ventana de audio de 30 segundos y otra de 15 segundos, ambas de aproximadamente 2,7 GB.
+Esta ficha describe la variante LiteRT-LM, que se distribuye en dos ficheros (ventana de audio de 15 s y de 30 s) con los mismos pesos cuantizados a int8 en el modelo de lenguaje y fp16 en el codificador de audio. La licencia Apache 2.0 facilita su integración en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador de audio de 24 capas + LM Qwen3 de 28 capas |
-| Parametros totales | 2,04 B (1,7 B nominales) |
+| Arquitectura | Codificador de audio de 24 capas + modelo de lenguaje Qwen3 de 28 capas (transformer) |
+| Parametros totales | 2,04 B (1,7 B en el modelo de lenguaje) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | KV cache de 1024 tokens; ventana de audio de 15 s o 30 s según fichero |
-| Tipos de cuantizacion | LM int8 dinámico con tabla de embeddings int8; codificador de audio fp16 (cómputo fp32) |
-| Idiomas soportados | 30 idiomas y 22 dialectos chinos (zh, en, yue, ar, de, fr, es, pt, id, it, ko, ru, th, vi, ja, tr, hi, ms, nl, sv, da, fi, pl, cs, fil, fa, el, hu, mk, ro) |
+| Longitud de contexto | KV cache de 1024 tokens; ventana de audio de 15 s (195 tokens de audio) o 30 s (390 tokens de audio) |
+| Tipos de cuantizacion | LM int8 dynamic con tabla de embeddings int8; codificador de audio fp16 con cómputo fp32 |
+| Idiomas soportados | 30 idiomas (zh, en, yue, ar, de, fr, es, pt, id, it, ko, ru, th, vi, ja, tr, hi, ms, nl, sv, da, fi, pl, cs, fil, fa, el, hu, mk, ro) y 22 dialectos chinos |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); checkpoint original en safetensors |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors (`Qwen/Qwen3-ASR-1.7B-hf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un diseño encoder-decoder secuencial: un front-end log-mel (STFT, banco de filtros Slaney y normalización del extractor original), un codificador de audio de 24 capas y un proyector que entrega representaciones al LM Qwen3 de 28 capas. El LM genera la respuesta con el formato `language <nombre><asr_text><transcripción>`, lo que integra identificación de idioma y transcripción en una sola secuencia de salida. El codificador convierte cada ventana de audio en un número fijo de tokens (390 para la variante de 30 s, 195 para la de 15 s), de modo que el coste de codificación y prefill es constante independientemente de la duración del clip dentro de la ventana.
+El modelo sigue una arquitectura de dos etapas típica en ASR neuronal moderno: un codificador de audio de 24 capas procesa la señal y un modelo de lenguaje Qwen3 de 28 capas genera la transcripción de forma autorregresiva. El front-end de log-mel (STFT, banco de filtros Slaney y normalización) está integrado dentro del propio grafo del codificador, de modo que el runtime solo debe entregar PCM de 16 kHz troceado en tramas de 10 ms. La salida del modelo tiene un formato estructurado fijo: `language <nombre><asr_text><transcripción>`, lo que permite separar la identificación de idioma del texto transcrito.
 
-Según el repositorio oficial, la familia Qwen3-ASR se entrena con datos de habla a gran escala y aprovecha la capacidad de comprensión de audio del modelo base Qwen3-Omni. No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. La conversión a LiteRT-LM preserva los pesos originales y añade metadatos de plantilla de prompt, tokens de parada y parámetros de audio.
+La conversión a LiteRT-LM reorganiza los grafos en tres secciones: `tf_lite_audio_encoder_hw` (front-end, codificador y proyector, 637 MB), `tf_lite_prefill_decode` (modelo de lenguaje int8 con KV cache de 1024 tokens, 1,74 GB en el fichero de 30 s y 1,75 GB en el de 15 s) y `tf_lite_embedder` (tabla de embeddings int8, 313 MB). El fichero de 30 s fue reescrito el 17 de noviembre de 2026 para que los grafos de prefill y decode se ejecuten en GPU sin modificar ningún peso. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Reconocimiento automático del habla con salida de transcripción en texto.
-- Identificación automática del idioma en la misma respuesta (`language <nombre>`).
-- Soporte de idioma forzado mediante un ítem de texto `language <nombre><asr_text>` en el mismo mensaje, tras el cual el modelo emite solo la transcripción.
-- Cobertura declarada de 30 idiomas y 22 dialectos chinos, incluyendo cantonés (yue).
-- Procesamiento de audio PCM a 16 kHz fragmentado en tramas de 10 ms por el runtime.
-- Manejo de clips de hasta 15 s en una ventana (fichero de 15 s) o hasta 30 s (fichero de 30 s); clips más largos que la ventana se procesan en varias ventanas.
-- Ejecución on-device en CPU (y opcionalmente LM en GPU vía WebGPU/Metal) sin conexión a red.
-- No se documentan en la información disponible capacidades de tool calling, agentes, visión ni audio más allá del ASR.
+- Reconocimiento automático del habla (audio a texto) en 30 idiomas y 22 dialectos chinos.
+- Identificación automática del idioma del audio, emitida como etiqueta `language <nombre>` antes de la transcripción.
+- Forzado de idioma: si se añade un elemento de texto `language <nombre><asr_text>` en el mismo mensaje, el modelo transcribe sin emitir la etiqueta de idioma (verificado en 11 de 11 clips de mandarín y japonés).
+- Procesamiento de clips de hasta 15 s con el fichero de 15 s y de hasta 30 s con el de 30 s; clips más largos de 15 s se procesan en dos ventanas con el fichero de 15 s.
+- Ejecución completamente local en dispositivos móviles y de borde mediante LiteRT-LM, sin dependencia de red.
+- Integración mediante la API Kotlin `Conversation` (`litertlm-android`) y mediante `litert-lm-api`.
+- No se documentan capacidades de tool calling, agentes, visión ni audio en streaming en la información disponible.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz en el dispositivo: el modelo procesa clips de hasta 15 o 30 segundos por ventana en CPU, lo que permite transcribir grabaciones sin enviar audio a la nube y sin coste de API.
-- Subtitulado multilingüe en aplicaciones móviles: con 30 idiomas soportados y detección automática, se puede generar subtítulos para contenido en inglés, mandarín, japonés, español u otros sin seleccionar el idioma manualmente.
-- Asistentes de voz offline: al ejecutarse en un Galaxy S26 con CPU y modo avión, encaja en aplicaciones de dictado o comandos por voz que deben funcionar sin conectividad.
-- Investigación lingüística de campo: la cobertura de 22 dialectos chinos y de idiomas como yue, fil o mk permite recoger y transcribir muestras en entornos con recursos limitados.
-- Preprocesado de audio en pipelines de datos: la salida estructurada `language <nombre><asr_text><transcripción>` facilita el filtrado y la indexación automática de transcripciones por idioma.
-- Aplicaciones de accesibilidad: transcripción local de conversaciones para personas con discapacidad auditiva, con latencia controlada y sin dependencia de servicios externos.
-- Prototipado en edge con LiteRT-LM: el formato `.litertlm` y las APIs Kotlin (`litertlm-android`) y Python permiten integrar ASR en apps Android y scripts de escritorio con un solo fichero.
+- Transcripción de notas de voz en aplicaciones móviles: el fichero de 15 s procesa clips cortos con la mitad del coste de codificador y prefill que el de 30 s, lo que lo hace adecuado para dictado y mensajería de voz en el propio teléfono sin enviar audio a la nube.
+- Subtitulado y actas de reuniones en dispositivos de borde: con el fichero de 30 s se pueden transcribir intervenciones de hasta 30 s por ventana, encadenando ventanas para grabaciones más largas, en un portátil o mini-PC sin GPU dedicada.
+- Asistentes de voz multilingües: la detección automática de idioma entre 30 lenguas permite enrutar la conversación al módulo de respuesta adecuado sin que el usuario seleccione idioma manualmente.
+- Aplicaciones de accesibilidad para personas con discapacidad auditiva: transcripción local en tiempo casi real en un teléfono, con la privacidad que supone no enviar el audio a servidores externos.
+- Cumplimiento y privacidad en entornos regulados: al ejecutarse íntegramente on-device, el audio no abandona el dispositivo, lo que facilita el cumplimiento de requisitos de protección de datos en sanidad, banca o administración pública.
+- Transcripción de contenido audiovisual en varios idiomas: el soporte de 30 idiomas y 22 dialectos chinos permite procesar material de archivo heterogéneo con un solo modelo, forzando el idioma cuando se conoce para evitar errores de etiquetado.
+- Integración en aplicaciones Android nativas: mediante `litertlm-android` y la API `Conversation`, el modelo se puede incorporar a una app Kotlin existente sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre FLEURS test, 50 clips por idioma, decodificación greedy, comparando el modelo original en PyTorch fp32 con las conversiones LiteRT-LM:
+Los datos disponibles corresponden a evaluaciones sobre clips del conjunto FLEURS (frase de test 1698 y 28 clips de 15,1 a 29,3 s) y a medidas de velocidad en un Galaxy S26 (SM-S942Q). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
-| Ejecución | WER inglés | CER mandarín | CER japonés |
-|---|---|---|---|
-| Original PyTorch fp32 (plantilla de este fichero) | 4,35 % (50/1150) | 6,04 % (118/1954) | 5,24 % (141/2689) |
-| Original PyTorch fp32 (chat template del checkpoint) | 4,35 % (50/1150) | 6,86 % (134/1954) | 5,50 % (148/2689) |
-| Fichero 15 s, LiteRT-LM 0.18.0, CPU (Apple M4 Max) | 4,35 % (50/1150) | 6,19 % (121/1954) | 5,84 % (157/2689) |
-| Fichero 15 s, LiteRT-LM 0.18.0, LM en GPU WebGPU/Metal | 4,44 % (51/1150) | 6,24 % (122/1954) | 5,21 % (140/2689) |
-
-Con la chat template propia del checkpoint, el fichero LiteRT-LM obtuvo CER de 6,65 % en mandarín y 6,06 % en japonés. En la prueba con plantilla propia, 8 de 50 clips en mandarín se etiquetaron erróneamente como `English` (con transcripción en chino). En la prueba con la plantilla de este fichero, todos los clips de mandarín y japonés se etiquetaron correctamente; uno de inglés (dos en la ejecución con GPU) devolvió `language None`. El repositorio oficial de Qwen3-ASR indica que la versión de 1,7 B alcanza rendimiento state-of-the-art entre modelos ASR de código abierto, aunque no se aportan cifras adicionales en la información disponible.
+| Metrica | Resultado | Condiciones |
+|---|---|---|
+| CER mandarín | 6,65 % | Plantilla de chat del checkpoint (turno de sistema vacío) |
+| CER japonés | 6,06 % | Plantilla de chat del checkpoint (turno de sistema vacío) |
+| Etiquetado de idioma | 100 % correcto en mandarín y japonés | Clips FLEURS evaluados |
+| Etiquetado de idioma en inglés | 1 clip (2 en ejecución GPU) devuelto como `language None` con transcripción en inglés | Clips FLEURS evaluados |
+| Decodificación en GPU (fichero 30 s nuevo) | 28,5 a 28,8 tokens/s | Galaxy S26 GPU, primera de tres iteraciones, tras prefill de 512 tokens, LiteRT-LM v0.19.0 |
+| Decodificación en GPU (fichero 30 s anterior) | 25,4 a 26,4 tokens/s | Mismas condiciones |
 
 ## Requisitos de hardware
 
-- Tamaño del fichero: 2,70 GB (variante 15 s) y 2,69 GB (variante 30 s); el repositorio completo ocupa 5,4 GB.
-- Desglose: codificador de audio 637 MB, LM int8 con KV cache de 1024 tokens 1,74–1,75 GB, tabla de embeddings 313 MB, tokenizer 2,1 MB.
-- VRAM/RAM estimada para inferencia: en torno a 3 GB o algo más durante la ejecución, dado el tamaño de los pesos y el estado del runtime.
-- GPU recomendadas: no se especifican modelos concretos; se documenta ejecución en CPU de Apple M4 Max y en GPU vía WebGPU/Metal. Para servidores, se puede asumir una GPU con al menos 4 GB de memoria, aunque no hay datos oficiales.
-- Cabe en GPU de consumo: sí, por tamaño (2,7 GB de pesos); se ha validado en un smartphone Galaxy S26 (SM-S942Q) con CPU de 4 hilos.
-- Opciones de despliegue: runtime LiteRT-LM (Python y Kotlin `litertlm-android`), versiones 0.17.1 y 0.18.0 documentadas. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia: no se publican cifras de throughput ni de latencia por segundo de audio en la información disponible; la model card muestra capturas con tiempos de transcripción en el dispositivo, pero sin valores numéricos en el texto extraído.
+- VRAM/RAM estimada: el fichero de 30 s ocupa 2,69 GB en disco y el de 15 s 2,70 GB; en ejecución hay que sumar el estado del runtime y el KV cache de 1024 tokens, por lo que se recomienda al menos 3 GB de memoria disponible.
+- GPU recomendadas: no se especifican modelos de GPU de escritorio; las pruebas documentadas se realizaron en la GPU de un Galaxy S26 (móvil) y en CPU de cuatro hilos del mismo dispositivo.
+- Cabe en hardware móvil y de borde: verificado en Galaxy S26 con CPU de 4 hilos y en modo avión, con el modelo de lenguaje y el codificador de audio en CPU.
+- Opciones de despliegue: runtime LiteRT-LM (versiones 0.17.1 a 0.19.2 documentadas), API Kotlin `litertlm-android` y `litert-lm-api`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 28,5 a 28,8 tokens/s en GPU de Galaxy S26 para el fichero de 30 s nuevo; las iteraciones posteriores de algunas ejecuciones se vieron limitadas por el límite térmico de la GPU del teléfono. El coste de codificación y prefill es fijo por ventana (390 tokens de audio en el fichero de 30 s, 195 en el de 15 s), independientemente de la duración real del clip.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto/ventana | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto / ventana de audio | Idiomas | Licencia | Formato on-device |
 |---|---|---|---|---|---|
-| Qwen3-ASR-1.7B (este) | 2,04 B | Ventana de audio 15/30 s, KV 1024 | 30 idiomas + 22 dialectos | Apache 2.0 | `.litertlm` |
-| Qwen3-ASR-0.6B | no disponible | no disponible | 52 idiomas y dialectos (familia) | no disponible | no disponible |
-| Whisper large-v3 | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
+| Qwen3-ASR-1.7B (LiteRT-LM) | 2,04 B | KV cache 1024 tokens; ventana de 15 s o 30 s | 30 idiomas y 22 dialectos chinos | Apache 2.0 | `.litertlm` |
+| Qwen3-ASR-1.7B-hf (modelo base) | 2,04 B | no disponible | 30 idiomas y 22 dialectos chinos | Apache 2.0 | safetensors |
+| Whisper (variantes de OpenAI) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
-La información disponible solo permite comparar con Qwen3-ASR-0.6B, el otro miembro de la familia, del que se indica que comparte el soporte de 52 idiomas y dialectos pero no se detallan parámetros, contexto ni licencia. No se dispone de datos de benchmarks frente a Whisper u otros ASR en la documentación consultada.
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada que permitan una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Un mensaje contiene un solo clip; el runtime rellena con ceros la ventana restante, por lo que clips más largos que 15 s o 30 s requieren varias ventanas y no se probaron clips de más de 30 s.
-- El etiquetado de idioma puede fallar: se observó `language None` en clips de inglés y, con la chat template del checkpoint, clips de mandarín etiquetados como `English`.
-- El modelo solo se evaluó en inglés, mandarín y japonés en la model card; el rendimiento en los otros 27 idiomas declarados no está verificado con métricas.
-- La plantilla de prompt de este fichero difiere de la chat template del checkpoint original y produce resultados distintos; los mensajes de sistema son ignorados por la plantilla.
-- Riesgo de alucinación en transcripciones no cuantificado en la información disponible; no se documentan sesgos específicos.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y del runtime LiteRT-LM.
-- El formato `.litertlm` está ligado al runtime LiteRT-LM; no es directamente compatible con ecosistemas como transformers, vLLM o llama.cpp sin conversión.
-- El repositorio está mantenido por la comunidad litert-community (3 likes, 1069 descargas), no por el equipo Qwen; la estabilidad y el soporte a largo plazo no están garantizados.
+- Un mensaje contiene un único clip: el runtime rellena con ceros la ventana posterior al clip, por lo que no se pueden enviar varios clips en el mismo mensaje.
+- Los clips de más de 30 s no se probaron con ninguno de los dos ficheros; con el de 15 s, los clips de más de 15 s requieren dos ventanas.
+- El etiquetado automático de idioma puede fallar: se observaron clips en inglés devueltos como `language None` (con transcripción correcta en inglés) y, con la plantilla de chat del checkpoint, 8 de 50 clips en mandarín etiquetados como `English` con transcripción en chino.
+- La plantilla de chat propia del checkpoint añade un turno de sistema vacío y saltos de línea que empeoran los resultados frente a la plantilla de exportación de litert-torch; los mensajes de sistema son ignorados por la plantilla.
+- El fichero de 30 s con grafo GPU solo se probó con LiteRT-LM 0.19.0 a 0.19.2; no se verificó con runtimes anteriores.
+- El rendimiento en GPU puede degradarse por límite térmico del dispositivo en ejecuciones prolongadas.
+- No se documentan sesgos conocidos, tasas de alucinación ni restricciones adicionales de la licencia Apache 2.0 más allá de las habituales de atribución.
+- La información sobre datos de entrenamiento, composición del dataset y técnicas de alineación no está disponible.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/litert-community/Qwen3-ASR-1.7B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3-ASR-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
-- Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

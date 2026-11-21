@@ -1,100 +1,103 @@
 # logic65/Qwen3.8-Whittle-Next-19.8B-A10B-base
 
 ## Resumen
+Qwen3.8-Whittle-Next-19.8B-A10B-base es un artefacto de investigación experimental publicado por el desarrollador independiente logic65 (David A.) bajo licencia Apache 2.0. No es un modelo entrenado desde cero, sino el resultado de una cirugía de pesos sobre un modelo denso comprimido de 14,7B (Qwen3.8-Whittle-tri-14.7B, a su vez derivado por fusión de capas de un Qwen3.8-27B): se le practica un "carve" estilo ExpertWeaver para convertirlo en un MoE de 240 expertos (k=58 más 2048 compartidos), se le añaden hyper-connections y proyecciones PLE, y se le acopla una tabla de memoria n-gram de 4.000 millones de parámetros. El total son 19.774.844.179 parámetros con aproximadamente 10B activos por token.
 
-Qwen3.8-Whittle-Next-19.8B-A10B-base es un artefacto de investigacion publicado por logic65 (David Aylward) que explora la construccion de una arquitectura MoE moderna mediante cirugia de modelos en lugar de pretraining. Partiendo del modelo denso comprimido Qwen3.8-Whittle-tri-14.7B (obtenido por compresion layer-merge de Qwen3.8-27B), el autor aplica un carve estilo ExpertWeaver con alineacion DOT-MoE, lo envuelve en hyper-connections de 4 streams, anade proyecciones per-layer embeddings (PLE) y acopla una tabla n-gram de 4 mil millones de parametros. El resultado es un modelo de 19.8B parametros totales con aproximadamente 10B activos por token, ejecutable de extremo a extremo en llama.cpp mediante un parche de una linea.
+La tesis del autor es comprar capacidad con memoria en lugar de con FLOPs: la tabla n-gram añade 4B de parámetros pero solo recoge unas 5.000 filas por token. El modelo corre de extremo a extremo en llama.cpp (hay builds GGUF Q4_K_M de 12,31 GiB) y en safetensors en 9 shards, con un repositorio total de 103 GB.
 
-La tesis central del experimento es que se puede comprar capacidad con memoria en lugar de FLOPs: la tabla n-gram anade 4B parametros pero solo requiere unas miles de filas gather por token. Las mediciones en wikitext-2 muestran una caida de perplexidad de 73.46 a 33.18 al activar la tabla, aunque el propio autor advierte que esa mejora es mayoritariamente memorizacion del corpus de entrenamiento (en texto cientifico no visto, la ganancia es solo del 1.5%). El modelo no ha completado el ajuste por instrucciones ni tiene trabajo de seguridad: el chat esta roto y falla aproximadamente el 80% de un test de bucle conversacional estandar. Se publica como registro reproducible de un experimento, no como modelo desplegable.
+Es relevante ahora únicamente como objeto de estudio reproducible: el propio autor advierte que falla aproximadamente el 80% de un test de bucle conversacional estándar, que no ha completado el instruction tuning ni el trabajo de seguridad, y que está superado por sus sucesores Whittle-Next-27B-A3B y Whittle-Qwen-3.8-35B-A3B. No debe desplegarse delante de usuarios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixtura de expertos) con hyper-connections, memoria n-gram, per-layer embeddings (estilo qwen4_exp / Qwen3.8-Flash-Next) |
-| Parametros totales | 19.774.844.179 (≈19.8B) |
-| Parametros activos | ≈10.0B (9.03B del MoE + 0.86B hyper-connections + 0.03B QSA + 0.13B PLE + ~5K de la tabla n-gram) |
-| Longitud de contexto | no disponible (no especificada en la model card) |
-| Tipos de cuantizacion | GGUF (tipos no especificados en la card; el repo contiene archivos .gguf) y safetensors |
-| Idiomas soportados | no disponible (no declarados; los datos de entrenamiento son mayoritariamente ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y GGUF |
+| Arquitectura | Transformer MoE con carve de expertos sobre modelo denso, hyper-connections (4 streams, rango 320), indexer QSA, proyecciones PLE y tabla de memoria n-gram |
+| Parametros totales | 19.774.844.179 |
+| Parametros activos | ~10,0B por token (MoE: 9,03B; hyper-connections: 0,86B; QSA: 0,03B; PLE: 0,13B; n-gram: ~5K) |
+| Longitud de contexto | No disponible (el indexer QSA usa atención completa cuando el presupuesto es mayor o igual que el contexto) |
+| Tipos de cuantizacion | GGUF Q4_K_M (12,31 GiB); safetensors en precisión original |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (9 shards) y GGUF (Q4_K_M, dos variantes: root y wakeHC) |
 
 ## Arquitectura y entrenamiento
+La arquitectura se etiqueta como `qwen4_exp` ("Qwen3.8-Flash-Next-style") y se construye por cirugía, no por preentrenamiento. La cadena es: Qwen3.8-27B → Whittle-tri-14.7B (compresión por fusión de capas) → carve de expertos estilo ExpertWeaver con alineación DOT-MoE (referencias arXiv 2602.15521 y 2606.01666) → retrofit de hyper-connections y PLE. El MoE resultante tiene 240 expertos con k=58 más 2048 expertos compartidos (14,76B de parámetros, 9,03B activos). Las hyper-connections usan 4 streams con rango 320 (0,86B). El indexer QSA (0,03B) degrada a atención completa cuando el presupuesto cubre el contexto.
 
-La arquitectura es un MoE de 240 expertos con k=58 activos mas 2048 expertos compartidos, derivado por cirugia del modelo denso Qwen3.8-Whittle-tri-14.7B. Sobre ese carve se anaden hyper-connections de 4 streams con rango 320 (0.86B parametros), un indexador QSA que garantiza atencion completa cuando el presupuesto es mayor o igual al contexto (0.03B), proyecciones PLE (0.13B) y una tabla n-gram de 4B parametros organizada en 8 cabezas por orden de gramo, con 781.312 filas de 640 dimensiones. La tabla n-gram es el componente central: anade capacidad sin incrementar los FLOPs, solo con operaciones gather.
+La tabla n-gram tiene 8 cabezas × 781.312 filas × 640 dimensiones (4,00B de parámetros). Según las notas del autor, `heads_per_ngram` es por orden de gram, de modo que el total de cabezas es `(ngram−1) × heads_per_ngram`; el hash PLE se verificó bit a bit (una única matriz multiplicadora compartida, `mixed = Σ⊕ ctx[j]·m[j]` por orden, cabezas diferenciadas por `% vocab + offset`, EOS reinicia la ventana). Los datos de entrenamiento de la tabla y adaptadores fueron wikitext-2, fineweb-edu, cosmopedia/openstax, open-web-math, wikihow y código delimitado (code_x_glue, Magicoder-OSS, CodeFeedback): unos pocos millones de tokens, muy por debajo del corpus previsto. El SFT (ultrachat multi-turno más trazas de razonamiento) estaba en curso cuando se cerró la ventana de GPU; el checkpoint publicado recoge su mejor estado seleccionado por gate. No se documenta RLHF ni DPO.
 
-El entrenamiento se realizo sobre unos pocos millones de tokens (muy por debajo de un corpus completo) procedentes de wikitext-2, fineweb-edu, cosmopedia/openstax, open-web-math, wikihow y codigo con fences (code_x_glue, Magicoder-OSS, CodeFeedback). No se completo el ajuste por instrucciones: el SFT con ultrachat multi-turn y trazas de razonamiento estaba en progreso cuando se agoto el presupuesto de GPU. El checkpoint publicado conserva el mejor estado seleccionado por las puertas. Entre los hallazgos tecnicos destacan: la necesidad de un parche silu-gate en llama.cpp (el GDN de qwen4exp usa sigmoid, pero los pesos derivados de Qwen3.5 requieren silu), la correccion del pliegue de +1 en hc_norm.weight, la verificacion bit a bit del hash PLE, y dos deadlocks de inicializacion que silenciosamente desactivaban el entrenamiento (el PLE devolvia solo su camino convolucional y la init identidad de hyper-connections anulaba ambos gradientes).
+El autor reporta hallazgos técnicos relevantes: el gate GDN de `qwen4exp` en llama.cpp usa sigmoide mientras que los pesos GDN derivados de Qwen3.5 necesitan silu (perplejidad 36.138 con sigmoide frente a 85,02 con silu); el conversor pliega `+1` en `hc_norm.weight`, por lo que un retrofit identidad debe almacenar `2(1+w)−1` (guardar `2(1+w)` multiplica por 16 la perplejidad); y dos bloqueos de gradiente en la inicialización (PLE devolvía solo la ruta conv; la init identidad de HC con `down=0, up=0` anula mutuamente ambos gradientes, dejando los 64 módulos de mezcla con `|down|=|up|=0.000`).
 
 ## Capacidades
-
-- Generacion de texto basica: el modelo puede producir texto coherente a nivel de continuacion, pero no mantiene conversaciones (el chat esta roto).
-- Reduccion de perplexidad in-domain: la tabla n-gram reduce drasticamente la perplexidad en wikitext-2 (de 73.46 a 33.18), aunque es mayoritariamente memorizacion.
-- Mejora de degeneracion: en un test de 94 generaciones en bucle, la tabla n-gram redujo los fallos de 86 a 79 y los bucles de 42 a 31.
-- Ejecucion en llama.cpp: funciona de extremo a extremo con el parche silu-gate incluido en el kit.
-- Sin soporte de tool calling, function calling, agentes ni razonamiento multi-paso: no ha recibido entrenamiento para ello.
-- Capacidades multilingues: no evaluadas ni declaradas.
-- Sin modo thinking, vision ni audio: es un modelo solo de texto.
+- Generación de texto y conversación multi-turno, aunque con fiabilidad muy baja: falla aproximadamente el 80% de un test de bucle conversacional estándar.
+- Memoria n-gram asociativa: recupera filas de una tabla de 4B de parámetros por token, lo que mejora la perplejidad en dominio (wikitext-2) y reduce la degeneración en el test de bucles (fallos de 86 a 79, looping de 42 a 31 frente al mismo modelo con la tabla desactivada).
+- Razonamiento y código: el SFT incluyó trazas de razonamiento y corpus de código, pero sin tuning completado; no hay evaluación publicada de estas capacidades.
+- Capacidad factual limitada: en la variante `wake/` (ruta de mezcla HC activa) la batería de 5 sondas factuales alcanza 5/5, con repetición greedy de 4-gramas de 0,056; el cierre de secuencia (EOS) sigue siendo débil.
+- Sin soporte documentado de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Capacidades multilingües: no disponibles (no se declaran idiomas).
 
 ## Casos de uso
-
-- Investigacion en compresion de modelos: estudiar como un modelo denso comprimido puede transformarse en un MoE funcional mediante cirugia, sin pretraining, y que perdidas de calidad introduce cada paso del proceso.
-- Analisis de memorizacion en memorias n-gram: el contraste entre la caida del 55% en perplexidad in-domain y la ganancia del 1.5% en texto cientifico no visto ofrece un caso de estudio claro sobre los limites de la memorizacion frente a la generalizacion.
-- Reproduccion de experimentos: el kit asociado (logic65/mini-next-a100-kit) incluye todos los scripts de entrenamiento, logs, sondas y parches, lo que permite replicar el experimento completo en una A100.
-- Desarrollo de parches para llama.cpp: el parche silu-gate (patches/qwen4exp-silu-gate.patch) es un punto de partida para contribuidores que quieran anadir soporte oficial de la compuerta silu en el backend qwen4exp.
-- Benchmarking de perplexidad: el modelo puede usarse como referencia para comparar tecnicas de compresion y carving en wikitext-2 con contexto 512.
-- Educacion en arquitecturas de modelos: hyper-connections, per-layer embeddings, MoE carving y memorias n-gram son conceptos que este repo ilustra con codigo ejecutable y mediciones reales.
-- Base para experimentos de SFT: el autor planea completar el ajuste por instrucciones; el checkpoint actual puede servir como punto de partida para quien quiera continuar ese trabajo.
+- Estudio de arquitecturas MoE construidas por carve: cargar el checkpoint y comparar la perplejidad del MoE aislado (86,62), con hyper-connections identidad (85,02), con HC y atención entrenados sin n-gram (73,46) y con la tabla activa (33,18) para analizar el efecto de cada componente.
+- Investigación sobre memorias n-gram externas: usar la tabla de 8 cabezas × 781.312 filas para medir cuánto de la mejora en dominio es memorización y cuánto capacidad generalizada (el autor reporta 27,53 frente a 27,96, un 1,5%, en texto científico no visto).
+- Reproducción de los hallazgos de compatibilidad con llama.cpp: aplicar los parches de silu frente a sigmoide en el gate GDN y la corrección `2(1+w)−1` en `hc_norm.weight` para validar la reproducibilidad de las cifras de perplejidad.
+- Docencia y divulgación técnica: ilustrar con un modelo ejecutable en llama.cpp conceptos como hyper-connections, PLE, indexado QSA y alineación DOT-MoE, usando el GGUF Q4_K_M de 12,31 GiB en una GPU de consumo.
+- Depuración de bloqueos de gradiente: estudiar los dos casos documentados (PLE que solo devuelve la ruta conv y la init identidad de HC que anula ambos gradientes) como ejemplo de fallos silenciosos en entrenamiento de adaptadores.
+- Comparación de checkpoints: evaluar la diferencia entre el checkpoint root y `wake/` en sondas factuales y repetición greedy para entender el impacto de activar la ruta de mezcla HC.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card reporta exclusivamente perplexidad en wikitext-2 (test, contexto 512, 24 chunks, misma sesion):
-
-| Etapa | PPL |
+| Etapa | Perplejidad (wikitext-2 test, ctx 512, 24 chunks) |
 |---|---|
-| MoE carve solo (qwen3_5_moe) | 86.62 |
-| + hyper-connections identidad (2 bugs de exportacion corregidos) | 85.02 |
-| + HC/atencion entrenados, n-gram desactivado | 73.46 |
-| + tabla n-gram de 4B activada | 33.18 |
+| MoE carve solo (`qwen3_5_moe`) | 86,62 |
+| + hyper-connections, identidad | 85,02 |
+| + HC/atención entrenados, n-gram off | 73,46 |
+| + n-gram de 4B activado | 33,18 |
 
-En texto cientifico no visto por la tabla, la perplexidad con n-gram activado frente a desactivado es 27.53 frente a 27.96 (ganancia del 1.5%), lo que confirma que la mejora in-domain es mayoritariamente memorizacion. En el test de degeneracion de 94 generaciones, la tabla n-gram mejoro los fallos de 86 a 79 y los bucles de 42 a 31.
+| Métrica adicional | Valor |
+|---|---|
+| Perplejidad en texto científico no visto (n-gram on / off) | 27,53 / 27,96 (mejora del 1,5%) |
+| Test de bucles (94 generaciones): fallos, n-gram off → on | 86 → 79 |
+| Test de bucles: looping, n-gram off → on | 42 → 31 |
+| Batería factual de 5 sondas (`wake/`) | 5/5 |
+| Repetición greedy de 4-gramas (`wake/`) | 0,056 |
+| Perplejidad con gate sigmoide frente a silu | 36.138 frente a 85,02 |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: no disponible en la informacion proporcionada. El repo en safetensors ocupa 52.8 GB; con cuantizacion GGUF el requisito sera menor, pero no se especifican los tipos de cuantizacion ni sus tamanos.
-- GPU recomendadas: el autor utilizo una GPU de 79 GB (probablemente A100 80GB) para el entrenamiento, y menciona cuota semanal gratuita de T4 para proximas epocas. Para inferencia, una GPU con al menos 24 GB podria ser suficiente con cuantizacion agresiva, pero no esta confirmado.
-- Compatibilidad con GPU de consumo: no confirmada. Dado el tamano de 19.8B parametros, con cuantizacion GGUF de 4 bits podria caber en una RTX 3090/4090 (24 GB), pero no hay datos publicados al respecto.
-- Opciones de despliegue: llama.cpp con el parche silu-gate (recomendado por el autor). No se mencionan vLLM, TGI ni Ollama. La carga con transformers de Hugging Face no esta probada.
+- VRAM estimada en Q4_K_M: unos 12,31 GiB de pesos más overhead de contexto y caché KV; en la práctica, 14-16 GiB para contexto moderado.
+- VRAM estimada en safetensors (precisión original, ~19,8B parámetros): aproximadamente 40 GB en FP16 solo para pesos, más estado de inferencia.
+- GPU recomendadas: A100 40/80 GB o H100 para los safetensors; RTX 4090 (24 GB) o superior para el GGUF Q4_K_M.
+- Cabe en GPU de consumo: sí, la build Q4_K_M de 12,31 GiB cabe en RTX 4090, RTX 3090 y tarjetas de 16 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp es la vía soportada de extremo a extremo (requiere los parches del kit para el gate GDN); los safetensors se cargan con `subfolder="wake"` para la variante wake. No se documenta soporte de vLLM, TGI, Ollama ni SGLang.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Estado |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Estado |
 |---|---|---|---|---|---|
-| Qwen3.8-Whittle-Next-19.8B-A10B-base (este) | 19.8B | ≈10B | no disponible | Apache-2.0 | Artefacto de investigacion, chat roto |
-| Qwen3.8-Whittle-MoE-27B-A17.8B | 26.9B | 17.8B | 256K (segun llm-explorer) | Apache-2.0 | Modelo conversacional funcional (v2.1) |
-| Qwen3.8-Whittle-tri-14.7B | 14.7B | 14.7B (denso) | no disponible | Apache-2.0 | Modelo base comprimido |
+| Qwen3.8-Whittle-Next-19.8B-A10B-base | 19,8B | ~10B | No disponible | Apache 2.0 | Experimental, falla ~80% del test conversacional |
+| Whittle-Next-27B-A3B (mismo autor) | 27B | 3B | No disponible | No disponible en la información | Sucesor declarado, padre de Whittle-Qwen-3.8-35B-A3B |
+| Whittle-Qwen-3.8-35B-A3B (mismo autor) | 35B | 3B | No disponible | No disponible en la información | Sucesor actual según el autor |
+| Qwen3.8-27B (origen de la cadena) | 27B | Denso | No disponible | No disponible en la información | Modelo denso de partida |
 
-El hermano mayor Qwen3.8-Whittle-MoE-27B-A17.8B es el resultado de la misma linea de investigacion pero con SFT completado: mantiene conversaciones reales, escribe codigo funcional y tiene una tasa de bucles medida en digitos simples. Este modelo Next, en cambio, es un experimento intermedio que prioriza la validacion arquitectonica sobre la usabilidad. No se dispone de datos de rendimiento comparativo en benchmarks estandar entre ambos.
+No se dispone de datos de benchmarks comparativos con modelos externos a la familia Whittle en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- Chat roto: falla aproximadamente el 80% de un test de bucle conversacional estandar. No debe ponerse frente a usuarios.
-- Sin ajuste por instrucciones completado: el SFT estaba en progreso y el checkpoint no representa un estado final.
-- Sin trabajo de seguridad: no se han realizado evaluaciones de sesgos, toxicidad ni alineacion.
-- Memorizacion en la tabla n-gram: la caida de perplexidad in-domain es mayoritariamente memorizacion del corpus de entrenamiento, no capacidad generalizada.
-- Requiere parche en llama.cpp: sin el parche silu-gate, la perplexidad se dispara a 36.138 (frente a 85.02 con el parche).
-- Carga con transformers no probada: el autor indica que la carga de esta exportacion qwen4_exp solo texto con HF transformers no ha sido verificada.
-- Riesgo de alucinacion: alto, al no haber recibido entrenamiento de instrucciones ni refuerzo.
-- Limitaciones de idioma: no declaradas; los datos de entrenamiento son mayoritariamente ingles, por lo que el rendimiento en otros idiomas es incierto.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo no es apto para produccion por su estado experimental.
+- Artefacto de investigación, no un asistente: el autor indica explícitamente que no debe ponerse delante de usuarios.
+- Falla aproximadamente el 80% de un test de bucle conversacional estándar; el cierre de secuencia (EOS) es débil.
+- Sin instruction tuning completado (el SFT estaba en curso al cerrarse la ventana de GPU) y sin ningún trabajo de seguridad.
+- La mejora de perplejidad en dominio (de 73,46 a 33,18) es en gran medida memorización del corpus de entrenamiento: la tabla solo ha visto ~2% de una época de su corpus mixto, y en texto científico no visto la ganancia cae al 1,5%.
+- Riesgo de alucinación y degeneración elevado; el propio autor mide fallos y looping en el test de 94 generaciones.
+- Idiomas soportados no declarados; no hay evaluación multilingüe.
+- Licencia Apache 2.0 permite uso comercial, pero el estado experimental y la ausencia de trabajo de seguridad lo desaconsejan en producción.
+- Requiere parches específicos en llama.cpp (silu en el gate GDN, corrección en `hc_norm.weight`) para reproducir las cifras; sin ellos la perplejidad se dispara.
+- El kit de scripts, logs y parches (`logic65/mini-next-a100-kit`) estaba privado en el momento de redactar la model card.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.8-Whittle-Next-19.8B-A10B-base
-- Kit de experimentos (scripts, logs, parches): https://huggingface.co/datasets/logic65/mini-next-a100-kit
-- Coleccion de la familia Qwen3.8 Whittle: https://huggingface.co/collections/logic65/qwen38-whittle-family
-- Modelo hermano Qwen3.8-Whittle-MoE-27B-A17.8B: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
-- Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Ficha en llm-explorer del modelo hermano: https://llm-explorer.com/model/logic65%2FQwen3.8-Whittle-MoE-27B-A17.8B,372feFSodtnWdsRYHJ9LW5
-- Ficha en AI Market Cap del modelo hermano: https://aimarketcap.tech/models/logic65-qwen3-8-whittle-moe-27b-a17-8b
-- Referencias arXiv citadas en la card: arXiv 2602.15521 y 2606.01666 (alineacion DOT-MoE)
+- Modelo base: https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B
+- Sucesor Whittle-Next-27B-A3B: https://huggingface.co/logic65/Whittle-Next-27B-A3B
+- Sucesor Whittle-Qwen-3.8-35B-A3B: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
+- Kit de entrenamiento, logs y parches: https://huggingface.co/datasets/logic65/mini-next-a100-kit
+- Apoyo al autor: https://ko-fi.com/davida81328
+- Referencias citadas en la model card: arXiv 2602.15521 y arXiv 2606.01666 (ExpertWeaver / DOT-MoE)

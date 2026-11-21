@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "pictograph/pg-sceneparse150-2xl",
+  "slug": "pictograph-pg-sceneparse150-2xl",
+  "author": "pictograph",
+  "url": "https://huggingface.co/pictograph/pg-sceneparse150-2xl",
+  "created_at": "2026-10-20T13:42:16.000Z",
+  "updated_at": "2026-11-21T04:16:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "image-segmentation",
+    "rf-detr-seg-2xlarge",
+    "pictograph",
+    "dataset:pictograph/ade-20k",
+    "arxiv:2511.09554",
+    "base_model:Roboflow/rf-detr-seg-xxlarge",
+    "base_model:finetune:Roboflow/rf-detr-seg-xxlarge",
+    "license:bsd-3-clause",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141002461,
+  "storage_human": "141 MB",
+  "context_length": null,
+  "base_model": "Roboflow/rf-detr-seg-xxlarge",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ADE-20K",
+      "metric": "mAP",
+      "value": 0.2827
+    },
+    {
+      "task": null,
+      "dataset": "ADE-20K",
+      "metric": "mAP@50",
+      "value": 0.4334
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pictograph - Definition, Example | How to Make Pictograph?",
+      "url": "https://www.cuemath.com/data/pictographs/",
+      "snippet": "In mathematics, a pictograph, also known as a pictogram, is the pictorial representation of data using images, icons, or symbols. We …Read more"
+    },
+    {
+      "title": "Pictogram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pictogram",
+      "snippet": "A pictogram (also pictogramme, pictograph, or simply picto[1]) is a graphic symbol that conveys meaning through its visual …Read more"
+    },
+    {
+      "title": "Online Pictograph Maker - Free Pictogram Examples | Canva",
+      "url": "https://www.canva.com/graphs/pictograms/?msockid=1f8c8b59fdbe672826a99341fc44664b",
+      "snippet": "A pictogram or pictograph is a simple and popular data visualization tool for ratings, progress, scores, and survey results. It uses …Read more"
+    },
+    {
+      "title": "Marquage Publicitaire | Pictographik | France",
+      "url": "https://pictographik.com/",
+      "snippet": "Décoration de bureaux, signalétique, marquage de véhicules,... Pictographik intervient de l'étude du dossier jusqu'à la pose sur site."
+    }
+  ]
+}

@@ -2,98 +2,99 @@
 
 ## Resumen
 
-Qwen3.8-27B-INT4 es una versión cuantizada a INT4 del modelo multimodal Qwen/Qwen3.8-27B, desarrollada por RedHatAI (equipo vinculado a Red Hat y al ecosistema vLLM/Neural Magic). El modelo original, obra de Qwen (Alibaba), es un modelo de generación condicional de tipo `Qwen3_5ForConditionalGeneration` que acepta texto e imágenes como entrada y produce texto, con 27.356 millones de parámetros totales. Esta versión reduce los pesos de los operadores lineales de los bloques transformer a 4 bits manteniendo las activaciones en su precisión original (esquema W4A16), lo que disminuye el espacio en disco y los requisitos de memoria de GPU en aproximadamente un 75%.
+Qwen3.8-27B-INT4 es una versión cuantizada a INT4 del modelo multimodal Qwen/Qwen3.8-27B, publicada por RedHatAI el 17 de agosto de 2026. El modelo original, desarrollado por Qwen (Alibaba), acepta entradas de texto e imagen y genera texto, con una arquitectura `Qwen3_5ForConditionalGeneration` y 27.356.728.592 parámetros totales. La versión de RedHatAI mantiene las activaciones en su precisión original (esquema W4A16), cuantiza únicamente los operadores lineales dentro de los bloques del transformer y utiliza una caché KV en FP8, lo que reduce el espacio en disco y los requisitos de VRAM en aproximadamente un 75% respecto al modelo en BF16.
 
-La relevancia de esta ficha radica en que permite desplegar un modelo multimodal de casi 27.000 millones de parámetros en infraestructura más modesta que la necesaria para el modelo en BF16, manteniendo una recuperación de precisión muy alta respecto al original según las evaluaciones publicadas. Está empaquetada en formato `compressed-tensors` y preparada para servirse con vLLM, con soporte de caché KV en FP8, parser de razonamiento `qwen3` y parser de tool calling `qwen3_xml`.
+La relevancia de esta ficha radica en que permite desplegar un modelo multimodal de ~27B parámetros en infraestructura más modesta sin renunciar de forma significativa a la calidad: según la model card, la recuperación frente al modelo BF16 es muy alta en tareas de instrucciones (IFEval: 91,93% frente a 92,24%). Está pensada para servirse con vLLM (versiones validadas: RHOAI 3.5.1, RHAIIS 3.6.0-fast.2 y vLLM 0.28.0) y admite decodificación especulativa mediante un modelo draft DSpark publicado por el mismo autor.
 
-La licencia Apache 2.0 del modelo base y de la cuantización facilita su uso comercial, y el modelo incluye compatibilidad con decodificación especulativa mediante un modelo borrador DSpark publicado por el mismo autor.
+La licencia es Apache 2.0, lo que facilita su uso comercial, y el formato de pesos es safetensors con cuantización en compressed-tensors. El repositorio ocupa 38,1 GB y acumula 228.132 descargas y 70 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal, entrada texto/imagen, salida texto) |
+| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal texto/imagen) |
 | Parámetros totales | 27.356.728.592 |
-| Parámetros activos | no disponible |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | INT4 en pesos (W4A16), activaciones sin cuantizar, caché KV en FP8; exportado en compressed-tensors |
-| Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
+| Tipos de cuantización | INT4 en pesos (W4A16), activaciones sin cuantizar, caché KV en FP8 |
+| Idiomas soportados | inglés (en) y chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors con compressed-tensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización del Qwen/Qwen3.8-27B original, que emplea la arquitectura `Qwen3_5ForConditionalGeneration`, un transformer multimodal que procesa texto e imágenes. La cuantización se realizó con LLM Compressor aplicando un recetario combinado: primero un `AWQModifier` con `duo_scaling="both"` y después un `GPTQModifier` con esquema W4A16 sobre los operadores `Linear`, ignorando explícitamente las capas visuales (`visual.*`, `model.visual.*`), `lm_head`, `embed_tokens` y las proyecciones `linear_attn.in_proj_a` e `linear_attn.in_proj_b`. La caché KV se cuantizó a FP8 de forma simétrica y estática (`static_minmax`, estrategia tensor).
+El modelo base es un transformer multimodal de la familia Qwen3.5 que procesa texto e imágenes y produce texto. La versión INT4 conserva la arquitectura original y solo modifica los pesos de las capas lineales de los bloques del transformer, dejando intactos el codificador visual (`visual.*`), el `lm_head`, los `embed_tokens` y las proyecciones `linear_attn.in_proj_a` y `linear_attn.in_proj_b`. La cuantización se realizó con LLM Compressor aplicando suavizado AWQ (`duo_scaling="both"`) y el esquema GPTQ W4A16, con 512 muestras de calibración del dataset `mlabonne/open-perfectblend`, longitud máxima de secuencia de 4096 y `moe_calibrate_all_experts=True`. La caché KV se cuantizó a FP8 simétrico por tensor con observador `static_minmax`.
 
-El proceso de calibración utilizó 512 muestras del dataset `mlabonne/open-perfectblend` con longitud máxima de secuencia de 4096 tokens, y se activó `moe_calibrate_all_experts=True` en la llamada a `oneshot`. No se dispone de información sobre el número de tokens de entrenamiento del modelo base, la composición de su dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación destacable de esta versión es la preparación para decodificación especulativa con el modelo borrador `RedHatAI/Qwen3.8-27B-speculator.dspark` (método `dspark`, hasta 7 tokens especulativos) y con el método MTP nativo (3 tokens especulativos).
+No se dispone de información sobre el número de tokens de entrenamiento del modelo base, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detalla si la arquitectura incorpora atención lineal u otras innovaciones más allá de la mención a `linear_attn` en las capas excluidas de la cuantización. La model card sí documenta soporte para decodificación especulativa mediante el método MTP (3 tokens especulativos) o mediante el draft model `RedHatAI/Qwen3.8-27B-speculator.dspark` (7 tokens especulativos, método `dspark`).
 
 ## Capacidades
 
-- Generación de texto y razonamiento, con parser de razonamiento `qwen3` para separar el modo de pensamiento de la respuesta final.
-- Comprensión de imágenes (image-text-to-text): el pipeline declarado es `image-text-to-text`, por lo que acepta entradas visuales junto a texto.
-- Tool calling / function calling: soporte nativo mediante `--enable-auto-tool-choice` y parser `qwen3_xml` en vLLM.
-- Razonamiento multi-paso y uso como agente, apoyado por el modo de razonamiento y el tool calling.
-- Capacidades multilingües limitadas a inglés y chino según los metadatos de la model card.
-- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegue como API compatible con OpenAI a través de vLLM.
-- Decodificación especulativa para acelerar la inferencia (MTP o DSpark).
+- Generación de texto a partir de entradas de texto e imagen (pipeline `image-text-to-text`).
+- Razonamiento y resolución de problemas matemáticos, evaluado en GSM8K Platinum, MATH-500, GPQA Diamond y AIME 2025.
+- Seguimiento de instrucciones, evaluado en IFEval e MMLU-Pro.
+- Soporte de tool calling / function calling, con parser `qwen3_xml` en vLLM y flag `--enable-auto-tool-choice`.
+- Modo de razonamiento explícito, con parser `qwen3` (`--reasoning-parser qwen3`).
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del modelo.
+- Compatibilidad con endpoints OpenAI a través de vLLM.
 
 ## Casos de uso
 
-- Asistente conversacional multi-turno: el modelo puede mantener diálogos con historial gracias a su naturaleza conversacional y al parser de razonamiento, adecuado para atención al cliente o asistentes internos donde se requiere separar el razonamiento de la respuesta final.
-- Automatización de soporte con imágenes: al aceptar entradas de imagen y texto, puede procesar capturas de pantalla, documentos escaneados o fotos de producto en flujos de soporte técnico.
-- Agentes con herramientas: la combinación de tool calling (`qwen3_xml`) y razonamiento multi-paso permite construir agentes que consulten APIs, bases de datos o servicios externos antes de responder.
-- Generación y revisión de código: el modelo está evaluado en tareas de razonamiento e instrucciones (IFEval, MMLU-Pro, MATH-500, GPQA Diamond, AIME 2025), lo que respalda su uso en asistentes de programación y revisión automatizada, aunque no se han publicado resultados específicos de HumanEval en la información disponible.
-- Despliegue en infraestructura con VRAM limitada: la cuantización INT4 reduce el peso en memoria aproximadamente un 75 % frente a BF16, lo que permite servir el modelo en GPUs de menor capacidad que las necesarias para el modelo completo.
-- Servicio de API compatible con OpenAI: mediante `vllm serve` se puede exponer el modelo como endpoint compatible, integrándolo en aplicaciones existentes que ya consumen la API de OpenAI.
-- Aceleración de inferencia en producción: el uso del modelo especulador DSpark o del método MTP reduce la latencia en cargas de generación largas, útil en aplicaciones interactivas.
+- Asistencia conversacional multimodal: el modelo puede recibir capturas de pantalla, diagramas o fotografías junto con texto y responder en inglés o chino, lo que lo hace adecuado para soporte técnico que requiera interpretar imágenes adjuntas.
+- Automatización de documentación técnica: extracción de información de figuras, tablas e imágenes de manuales y generación de resúmenes textuales, aprovechando la entrada image-text-to-text.
+- Agentes con tool calling: integración en flujos multi-paso donde el modelo invoca funciones externas (APIs, bases de datos) mediante el parser `qwen3_xml` de vLLM y el flag de auto tool choice.
+- Razonamiento matemático y analítico: resolución de problemas cuantitativos en entornos educativos o de análisis financiero, respaldado por los resultados en MATH-500, GSM8K Platinum y AIME 2025.
+- Despliegue en infraestructura con VRAM limitada: al reducir el peso de los pesos un 75% respecto a BF16, permite servir un modelo de ~27B en GPUs que no admitirían la versión completa, manteniendo la caché KV en FP8 para optimizar memoria.
+- Generación de código y tareas de instrucción estricta: uso en pipelines de CI/CD o asistentes de desarrollo donde se requiere un cumplimiento alto de formato, dado el 91,93% en IFEval prompt-level strict.
+- Servicio de inferencia de baja latencia: combinado con el draft model DSpark y decodificación especulativa, adecuado para aplicaciones interactivas que necesitan reducir el tiempo por token.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados en la model card comparan la versión INT4 con el modelo BF16 original. La evaluación se realizó con lm-evaluation-harness y lighteval sobre vLLM (API compatible con OpenAI), con 3 semillas (1234, 2345, 3456) y 8 semillas para AIME 2025, promediando los resultados. La recuperación se calcula respecto al modelo BF16.
+Resultados publicados en la model card (media de 3 semillas: 1234, 2345, 3456; 8 semillas para AIME 2025), servidos con vLLM y API compatible con OpenAI:
 
 | Categoría | Benchmark | Qwen3.8-27B (BF16) | Qwen3.8-27B-INT4 | Recuperación |
 |---|---|---|---|---|
-| Seguimiento de instrucciones | IFEval (0-shot, prompt-level strict) | 92,24 % | 91,93 % | 99,67 % |
-| Seguimiento de instrucciones | MMLU-Pro (exact-match) | no disponible (dato truncado en la información) | no disponible (dato truncado en la información) | no disponible |
+| Instruction Following | IFEval (0-shot, prompt-level strict) | 92,24% | 91,93% | no disponible en el extracto |
 
-No se han publicado en la información disponible el resto de resultados de MMLU-Pro, MATH-500, GPQA Diamond, AIME 2025 ni GSM8K Platinum, por lo que no se presentan cifras adicionales.
+El extracto de la model card proporcionado solo incluye la primera fila de la tabla de evaluación. Los resultados de MMLU-Pro, MATH-500, GPQA Diamond, GSM8K Platinum y AIME 2025 no están disponibles en la información suministrada, por lo que no se reproducen aquí.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 38,1 GB en disco; con pesos INT4, el modelo requiere aproximadamente esa cantidad de memoria para los pesos, más la caché KV en FP8 y el overhead del runtime. En BF16 el requisito sería aproximadamente cuatro veces mayor (en torno a 55 GB solo de pesos, más caché y overhead).
-- GPU recomendadas: no se especifican en la información disponible. Por tamaño, una GPU de 48 GB (A6000, L40S) o 80 GB (A100, H100) es el entorno natural; en GPUs consumer de 24 GB (RTX 4090) no cabría con comodidad sin técnicas adicionales de offloading, que no se documentan.
-- Cabe en GPU consumer: no disponible con certeza; el tamaño del repo (38,1 GB) supera la VRAM de las consumer actuales de 24 GB.
-- Opciones de despliegue: vLLM es el runtime soportado y documentado (`vllm serve RedHatAI/Qwen3.8-27B-INT4`), con soporte de `--reasoning-parser qwen3`, `--enable-auto-tool-choice`, `--tool-call-parser qwen3_xml` y configuración de decodificación especulativa. El formato compressed-tensors está pensado para vLLM; no se documenta soporte de llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles. Se documenta la posibilidad de acelerar con decodificación especulativa (MTP con 3 tokens o DSpark con 7 tokens), sin cifras de mejora publicadas.
+- VRAM estimada para inferencia: el repositorio ocupa 38,1 GB, por lo que los pesos en INT4 requieren aproximadamente esa cifra de memoria, más el espacio para la caché KV en FP8 y las activaciones en precisión original. La model card indica una reducción de ~75% frente a los 16 bits.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible. Por tamaño, el modelo encaja en GPUs de 48 GB o más (A6000, L40S, A100 80 GB, H100) y requiere evaluación adicional para GPUs de 40 GB o menos.
+- ¿Cabe en GPU de consumo? No confirmado. Con 38,1 GB de pesos, no cabría en GPUs de 24 GB (RTX 4090) sin técnicas adicionales de offloading; sería necesario verificar configuraciones con tensor parallelism o partición de capas.
+- Opciones de despliegue: vLLM es el runtime validado (RHOAI 3.5.1, RHAIIS 3.6.0-fast.2, vLLM 0.28.0). El formato compressed-tensors está pensado para vLLM; no se menciona soporte de llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. Se documenta la posibilidad de usar decodificación especulativa con MTP (3 tokens) o con el draft model DSpark (7 tokens) para mejorar el rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedHatAI/Qwen3.8-27B-INT4 | 27,36 B | no disponible | INT4 (W4A16), KV FP8 | apache-2.0 | Hugging Face, vLLM |
-| Qwen/Qwen3.8-27B (BF16) | 27,36 B | no disponible | BF16 | apache-2.0 | Hugging Face |
-| RedHatAI/Qwen3.8-27B-speculator.dspark | no disponible (modelo borrador) | no disponible | no disponible | no disponible | Hugging Face |
+| RedHatAI/Qwen3.8-27B-INT4 | 27,36B | no disponible | INT4 W4A16, KV FP8 | Apache 2.0 | Hugging Face, validado en vLLM |
+| Qwen/Qwen3.8-27B (BF16) | 27,36B | no disponible | BF16 | no disponible en la información | Hugging Face |
+| RedHatAI/Mistral-Medium-3.5-128B | 128B (según nombre) | no disponible | no disponible | no disponible | Hugging Face (RedHatAI) |
+| RedHatAI/diffusiongemma-26B-A4B-it-FP8 | 26B (A4B, según nombre) | no disponible | FP8 | no disponible | Hugging Face (RedHatAI) |
 
-La comparación con alternativas de otros fabricantes del mismo tamaño no está disponible en la información proporcionada. El competidor directo más evidente es el propio modelo base en BF16, del que esta versión es una cuantización con recuperación del 99,67 % en IFEval.
+La información disponible no incluye datos de rendimiento de los modelos alternativos, por lo que la comparación se limita a parámetros, licencia y disponibilidad. No se dispone de una comparativa cuantitativa con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La cuantización INT4 introduce una pérdida de precisión respecto al modelo BF16; la recuperación publicada es del 99,67 % en IFEval, pero no se dispone de datos para el resto de benchmarks, por lo que el impacto en tareas de razonamiento matemático o científico no está cuantificado en la información disponible.
-- Idiomas soportados limitados a inglés y chino; no se garantiza un rendimiento adecuado en castellano.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan medidas específicas de mitigación.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Longitud de contexto no disponible; conviene verificar en la documentación del modelo base antes de diseñar flujos con contextos largos.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base Qwen/Qwen3.8-27B por si hubiera condiciones adicionales.
-- El despliegue está orientado a vLLM con formato compressed-tensors; otros runtimes (llama.cpp, Ollama, TGI) no están documentados y pueden no ser compatibles.
-- El uso de decodificación especulativa requiere descargar y servir un modelo borrador adicional, lo que incrementa los requisitos de memoria y la complejidad operativa.
+- La cuantización INT4 puede degradar ligeramente la calidad frente al modelo BF16; la model card solo reporta la recuperación en IFEval, sin datos del resto de benchmarks en el extracto disponible.
+- El modelo solo declara soporte de inglés y chino; el rendimiento en castellano no está documentado.
+- No se dispone de información sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad del modelo base.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan medidas específicas de mitigación.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen/Qwen3.8-27B, cuya licencia no se detalla en la información proporcionada.
+- El despliegue está validado únicamente en vLLM; otros runtimes no están confirmados.
+- La longitud de contexto no está especificada, lo que impide planificar casos de uso con ventanas largas.
+- El modelo está etiquetado como `image-text-to-text`, pero no se detallan limitaciones del codificador visual ni resolución de imagen soportada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Modelo borrador para decodificación especulativa: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
+- Modelo draft para decodificación especulativa: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
+- Organización RedHatAI en Hugging Face: https://huggingface.co/RedHatAI
+- Listado de modelos RedHatAI: https://huggingface.co/RedHatAI/models
 - LLM Compressor: https://github.com/vllm-project/llm-compressor
-- lm-evaluation-harness (Neural Magic): https://github.com/neuralmagic/lm-evaluation-harness
-- lighteval (Neural Magic): https://github.com/neuralmagic/lighteval
+- lm-evaluation-harness (fork Neural Magic): https://github.com/neuralmagic/lm-evaluation-harness
+- lighteval (fork Neural Magic): https://github.com/neuralmagic/lighteval
 - Licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/
-- README del modelo: https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4/blob/main/README.md

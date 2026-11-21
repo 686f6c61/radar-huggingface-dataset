@@ -5,7 +5,7 @@
   "author": "Elpriser",
   "url": "https://huggingface.co/Elpriser/denmark-price-forecast",
   "created_at": "2026-07-30T19:17:23.000Z",
-  "updated_at": "2026-11-19T12:21:45.000Z",
+  "updated_at": "2026-11-20T12:30:07.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -44,29 +44,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Elpriser (Elpriser.org) - Hugging Face",
-      "url": "https://huggingface.co/Elpriser",
-      "snippet": "Elpriser.org tracks electricity spot prices and helps users understand price patterns. We&#x27;re interested in time-series forecasting for electricity price prediction, and in machine learning applicat..."
+      "title": "Dagens spotpris på el - Elpriser idag per kWh - elen.nu",
+      "url": "https://elen.nu/",
+      "snippet": "1 day ago · Vill du veta mer om elpriser, elavtal och hur du kan sänka dina elkostnader, lär mer här. Elen.nu visar aktuella spotpriser …Read more"
     },
     {
-      "title": "GitHub - Ivo196/denmark-electricity-price-forecasting",
-      "url": "https://github.com/Ivo196/denmark-electricity-price-forecasting",
-      "snippet": "Machine learning and quantitative research project for forecasting day-ahead electricity spot prices in Denmark&#x27;s DK2 bidding zone and evaluating a battery arbitrage strategy. This repository is built as a quant-engineering portfolio project. It combines real market data, time-series feature engineering, predictive modelling, walk-forward validation, economic backtesting, risk analysis, tests ..."
+      "title": "Elpris idag - dagens spotpris på el per kWh | Elbruk.se",
+      "url": "https://www.elbruk.se/",
+      "snippet": "1 day ago · Se elpris idag och aktuella spotpriser för alla elområden i Sverige. Jämför elpris just nu och se morgondagens elpriser för …Read more"
     },
     {
-      "title": "Energi Data Service",
-      "url": "https://www.energidataservice.dk/",
-      "snippet": "Welcome to Energi Data Service Open energy data from Energinet to society"
+      "title": "Elpriser | Følg elpris time for time live med strømudsigten",
+      "url": "https://andelenergi.dk/el/timepris/",
+      "snippet": "Se elpriser time for time i dette døgn med strømudsigten. Brug strømmen, når den er billigst, og spar strøm, når den koster mere."
     },
     {
-      "title": "GitHub - x2q/elpriser-mcp: MCP server for Danish electricity prices ...",
-      "url": "https://github.com/x2q/elpriser-mcp",
-      "snippet": "MCP server for Danish electricity prices — current spot price, cheapest hours, and a 7-day forecast for DK1 and DK2, straight from elpriser.org. A Model Context Protocol server that lets an LLM (Claude Desktop, etc.) answer questions like: \"Hvad er elprisen lige nu?\" / \"What does electricity cost right now in Denmark?\" \"Hvornår er strøm billigst i morgen?\" — find the cheapest hours to ..."
+      "title": "Hvad er elprisen lige nu? Se de aktuelle elpriser her - Norlys",
+      "url": "https://norlys.dk/el/elpriser/",
+      "snippet": "Nov 6, 2026 · Find elpriserne lige nu og se, hvornår du skal bruge strømmen. Du kan også se, hvordan elpriserne har udviklet sig …Read more"
     },
     {
-      "title": "Elpriser - Forsyningstilsynet",
-      "url": "https://forsyningstilsynet.dk/analyser-og-tal/forbrugerpriser/elpriser",
-      "snippet": "På denne side har du mulighed for at følge den månedlige udvikling i de beregnede elpriser. Priserne er opgivet i øre/kWh og beregnes ud fra et årligt forbrug på 4000 kWh, inklusive abonnement. Alle oplysninger er baseret på data fra Forsyningstilsynet, som beregner elpriserne ud fra elhandlernes indberetninger til Elpris.dk."
+      "title": "Elpris idag – spotpris just nu i SE1–SE4 (öre/kWh) | Elprisr",
+      "url": "https://elprisr.se/",
+      "snippet": "5 days ago · Vanliga frågor Allt du undrar om elpriser Hur ofta uppdateras elpriserna? Vad är skillnaden mellan elområdena? Visas …Read more"
     }
   ]
 }

@@ -2,109 +2,107 @@
 
 ## Resumen
 
-GRT-30M-Curriculum es un modelo de lenguaje causal de muy pequeno tamano (29,8 millones de parametros almacenados, de los cuales solo 9,74 millones corresponden al backbone no-embedding) desarrollado por MatterWaveAI. Se trata de la tercera iteracion de una familia de modelos basados en la arquitectura Geometric Rotation Transformer (GRT), una variante de transformer que sustituye parte de las operaciones lineales por rotaciones geometricas parametrizadas. El modelo se obtiene por destilacion de conocimiento desde Qwen 3, reutilizando su vocabulario BPE de 151.669 tokens para permitir una alineacion directa token a token entre profesor y alumno.
+GRT-30M-Curriculum es un modelo de lenguaje causal de pequeno tamano (SLM) desarrollado por MatterWaveAI, construido sobre una arquitectura propietaria denominada Geometric Rotation Transformer (GRT). Se trata de un ajuste fino por curriculo de multiples rondas del checkpoint base `MatterWaveAI/grt-30m`, que a su vez es el resultado de una destilacion de 24 horas desde la familia Qwen 3. El modelo almacena 29,84 millones de parametros totales, de los cuales solo 9,74 millones corresponden al backbone no-embedding distribuido en 12 bloques rotacionales, con un hidden size de 256 y una ventana de contexto de 2.048 tokens.
 
-La relevancia de esta release radica en su metodologia de optimizacion: partiendo del mismo checkpoint de 29,3M de parametros que `MatterWaveAI/grt-30m`, aplica un curriculum multi-ronda con el optimizador `HuygensSymplecticAdam`, lo que eleva la precision media macro en la suite SLM-Bench de 39,61% (baseline PairAdam) a 47,16%, una mejora absoluta de 7,55 puntos. El modelo entrena 10,79B de tokens en 24 horas sobre 8 GPU A100-80GB, con un throughput sostenido de 123.900 tokens por segundo.
+El modelo resuelve el problema de mejorar el rendimiento de un SLM destilado mediante optimizacion curricular avanzada en lugar de aumentar el numero de parametros. Su innovacion principal es el uso del optimizador `HuygensSymplecticAdam`, que aplica una fase de torque de splay de Huygens seguida de un curriculo de no-compresion simplectica, consiguiendo una mejora de +8,46 puntos porcentuales en la suite de multiple choice SLM-Bench respecto al baseline `PairAdam` sobre el mismo checkpoint de partida.
 
-Con un contexto de solo 2.048 tokens y entrenamiento exclusivamente en ingles, esta pensado como banco de pruebas de investigacion para arquitecturas alternativas y tecnicas de curriculum learning en modelos pequenos, no como modelo de produccion generalista. La licencia Apache 2.0 permite uso comercial sin restricciones.
+Es relevante ahora porque demuestra que tecnicas de optimizacion geometrica y curriculos multi-ronda pueden extraer rendimiento adicional significativo de modelos muy pequenos sin cambiar la arquitectura ni el presupuesto de parametros, lo que resulta interesante para despliegues en hardware de bajos recursos. El modelo esta publicado bajo licencia Apache 2.0 y solo soporta ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GRTForCausalLM (`model_type: "grt"`, config `grt30m_kd`), transformer causal con bloques rotacionales |
-| Parametros totales | 29.844.597 (29,84M); 29.305.498 segun model card |
-| Parametros activos | no disponible (no es MoE; equivalente denso 55,68M) |
+| Arquitectura | GRTForCausalLM (`model_type: "grt"`, `grt30m_kd`), transformer rotacional de 12 bloques |
+| Parametros totales | 29.844.597 (29,84M); backbone no-embedding: 9.740.197 (9,74M) |
+| Parametros activos | no disponible (modelo denso) |
 | Longitud de contexto | 2.048 tokens (`max_position_embeddings`) |
-| Tipos de cuantizacion | GGUF f32 publicado (`grt-30m-f32.gguf`, 340 MB); otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | FP32 (GGUF base en el repo `grt-30m`); no se documentan otras cuantizaciones para este checkpoint |
 | Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`, 116 MB) y GGUF (`grt-30m-f32.gguf`, 340 MB) |
+| Formato de pesos | safetensors (`model.safetensors`, 116 MB) |
+
+Otros parametros tecnicos: `hidden_size` (d_model) = 256, `num_hidden_layers` = 12, `num_attention_heads` = 4 (`head_dim` = 64), `intermediate_size` (d_ff) = 1.024, `n_qkv_rotations` = 11, `n_mixer_rotations` = 1, `ffn_n_rotations` = 21, vocabulario de 151.669 tokens (BPE de Qwen 3, cabeza polar coseno atada). Parametros densos equivalentes: 55.680.446 (55,68M).
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura Geometric Rotation Transformer, un transformer causal de 12 bloques con `hidden_size = 256`, 4 cabezas de atencion (`head_dim = 64`) e `intermediate_size = 1.024`. La particularidad esta en el uso de rotaciones geometricas parametrizadas: 11 rotaciones QKV, 1 rotacion de mixer y 21 rotaciones en el bloque FFN. La cabeza de salida es una "polar cosine head" atada al embedding, representado mediante `phase_angles [151669, 128]` y `log_magnitude [151669]`. Esta tabla de embedding supone 19,57M de parametros (66,8% del total almacenado), dejando 9,74M para el backbone de 12 capas.
+La arquitectura GRT (Geometric Rotation Transformer) es un transformer causal con bloques rotacionales: en lugar de la atencion estandar, emplea rotaciones geometricas parametrizadas (`n_qkv_rotations` = 11, `n_mixer_rotations` = 1, `ffn_n_rotations` = 21). La tabla de embeddings polar atada (`phase_angles [151669, 128]` + `log_magnitude [151669]`) consume 19,57M parametros, el 66,8% de los pesos almacenados, lo que deja los 9,74M restantes para el backbone de 12 capas. El vocabulario completo de Qwen 3 se mantiene a `hidden_size` = 256 para permitir destilacion alineada por token directamente desde Qwen 3.
 
-El entrenamiento consistio en destilacion de conocimiento desde Qwen 3 sobre una mezcla de corpus: fineweb-edu (45%), cosmopedia-v2 (20%), wikipedia (15%), finemath (12%) y stack-edu (8%). Se procesaron 10.789.404.672 tokens (20.580 pasos) con batch global de 524.288 tokens por paso, learning rate pico de 1e-3 con schedule WSD, sobre 8 NVIDIA A100-SXM4-80GB con DDP y kernels CUDA fusionados de Givens. La innovacion principal de esta release es el curriculum multi-ronda con el optimizador `HuygensSymplecticAdam`, que parte del checkpoint de `grt-30m` y aplica rondas sucesivas de optimizacion. El resultado final en validacion FineWeb-Edu es `val_loss = 4,4776` y `val_ppl = 88,02` con precision top-1 del 27,20%.
+El checkpoint base `grt-30m` se entreno durante 24 horas (86.969 s) en 8x NVIDIA A100-SXM4-80GB con DDP y kernels Givens CUDA fusionados, procesando 10.789.404.672 tokens (10,79B) en 20.580 pasos a 123.900 tok/s. La mezcla del corpus fue fineweb-edu (45%), cosmopedia-v2 (20%), wikipedia (15%), finemath (12%) y stack-edu (8%). El optimizador base fue `PairAdam` (LR pico 1e-3, schedule WSD), con `val_loss` = 4,4776 y `val_ppl` = 88,02. Sobre ese checkpoint, este modelo aplica un curriculo multi-ronda con `HuygensSymplecticAdam`, que combina una etapa de torque de splay de Huygens con un curriculo de no-compresion simplectica. No se documentan fases de RLHF ni DPO.
 
 ## Capacidades
 
-- Generacion de texto causal en ingles, con decodificacion greedy reproducible token a token en cuatro backends distintos (PyTorch ROCm, llama.cpp CPU AVX2, llama.cpp Vulkan y llama.cpp ROCm).
-- Razonamiento basico de sentido comun y respuesta a preguntas de opcion multiple (BoolQ, ARC, OpenBookQA, PIQA).
-- Verificacion numerica de 4 opciones en GSM8K con una tasa reportada del 99,20% (PPL 7,60).
-- Capacidad multilingue: no disponible; solo ingles.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo thinking, vision o audio: no disponible.
-- Destilacion alineada con el tokenizador de Qwen 3 (151.669 tokens), lo que facilita comparaciones directas con el profesor.
+- Generacion de texto causal en ingles mediante decodificacion autorregresiva.
+- Razonamiento basico de sentido comun y respuesta a preguntas de multiple choice (BoolQ, ARC-Easy, ARC-Challenge, OpenBookQA, PIQA).
+- Verificacion numerica en GSM8K en formato de 4 opciones (99,20% de acierto reportado).
+- Razonamiento matematico elemental gracias a la inclusion de finemath en el corpus de destilacion.
+- Generacion de codigo basica derivada del subconjunto stack-edu del entrenamiento (no se documenta tool calling).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso explicito.
+- Capacidades multilingues limitadas al ingles (unico idioma declarado).
+- No se documenta modo thinking, vision ni audio.
 
 ## Casos de uso
 
-- Investigacion en arquitecturas alternativas: sirve como banco de pruebas reproducible para evaluar variantes de transformer rotacional frente a transformers convencionales con el mismo presupuesto de parametros y tokens.
-- Experimentos de curriculum learning: el checkpoint permite comparar directamente el efecto de PairAdam frente a HuygensSymplecticAdam y frente al curriculum multi-ronda sobre la misma inicializacion.
-- Destilacion de conocimiento a escala reducida: util como referencia para estudiar como un modelo de 9,74M de parametros no-embedding absorbe senales de un profesor mucho mayor (Qwen 3) en 24 horas de entrenamiento.
-- Validacion de portabilidad entre backends: los kernels Givens fusionados y la paridad exacta entre PyTorch, llama.cpp CPU, Vulkan y ROCm lo hacen util para verificar implementaciones de inferencia.
-- Educacion y demostraciones: su tamano (116 MB en safetensors, 340 MB en GGUF f32) permite ejecutarlo en hardware modesto para ilustrar conceptos de destilacion y decodificacion.
-- Evaluacion de suites SLM-Bench: punto de comparacion para modelos pequenos en tareas de opcion multiple con contexto corto (2.048 tokens).
+- Clasificacion y respuesta a preguntas de multiple choice en ingles: el modelo esta optimizado especificamente para tareas tipo SLM-Bench (BoolQ, ARC, OpenBookQA, PIQA), por lo que encaja en pipelines de evaluacion o filtrado de preguntas con opciones cerradas.
+- Verificacion aritmetica ligera: con un 99,20% de acierto en GSM8K de 4 opciones, puede emplearse como verificador de respuestas numericas en un pipeline mayor, seleccionando la opcion correcta entre candidatos generados por otro modelo.
+- Prototipado e investigacion de optimizadores: sirve como banco de pruebas reproducible para estudiar el efecto de `HuygensSymplecticAdam` y curriculos multi-ronda frente a `PairAdam` sobre un checkpoint fijo de 29,3M parametros.
+- Despliegue en hardware de bajos recursos: con 116 MB en safetensors FP32 y 9,74M parametros de backbone, cabe en CPU y en GPUs integradas; el repo base ofrece GGUF FP32 para llama.cpp.
+- Experimentos de destilacion de conocimiento: al compartir el tokenizador completo de Qwen 3 (151.669 tokens) a hidden size 256, es util como estudiante de referencia en investigaciones de destilacion token-aligned.
+- Educacion y demostraciones de arquitecturas alternativas: la naturaleza rotacional de los bloques permite ilustrar variantes geometricas de atencion en cursos o articulos tecnicos.
+- Generacion de texto corto en ingles con contexto de hasta 2.048 tokens para tareas de completado simple, siempre que no se requiera alta calidad factua.
 
 ## Benchmarks y rendimiento
 
-Resultados en la suite SLM-Bench (9 tareas de opcion multiple, 13.144 ejemplos held-out), comparando el baseline PairAdam, la pasada unica con HuygensSymplecticAdam y el curriculum multi-ronda:
+Resultados en la suite SLM-Bench de multiple choice (9 tareas principales, 13.144 ejemplos held-out). Se comparan el checkpoint destilado zero-shot, el baseline `PairAdam`, el pase unico con `HuygensSymplecticAdam` y el curriculo multi-ronda (este modelo):
 
-| Tarea (SLM-Bench) | Split (n) | Aleatorio | Zero-shot | PairAdam | Huygens single-pass | Curriculum |
+| Tarea (SLM-Bench) | Split (n) | Random | Zero-Shot (GRT-30M) | PairAdam | Single-Pass (HuygensSymplectic) | Multi-Round Curriculum |
 |---|---|---:|---:|---:|---:|---:|
-| BoolQ | val (3.270) | 50,00% | 51,41% | 60,55% | 62,23% | 64,43% |
-| ARC-Easy | test (2.376) | 25,00% | 29,59% | 28,96% | 36,32% | 40,19% |
-| ARC-Challenge | test (1.172) | 25,00% | 20,82% | 23,55% | 25,68% | 29,69% |
-| OpenBookQA | test (500) | 25,00% | 28,20% | 30,00% | 35,80% | 42,40% |
-| PIQA | val (1.838) | 50,00% | 55,28% | 54,08% | no disponible | no disponible |
-| Media macro (9 tareas) | 13.144 | no disponible | no disponible | 39,61% | 43,87% | 47,16% |
+| BoolQ | val (3.270) | 50,00% | 51,41% | 60,55% | 62,23% | 65,72% |
+| ARC-Easy | test (2.376) | 25,00% | 29,59% | 28,96% | 36,32% | 40,57% |
+| ARC-Challenge | test (1.172) | 25,00% | 20,82% | 23,55% | 25,68% | 30,80% |
+| OpenBookQA | test (500) | 25,00% | 28,20% | 30,00% | 35,80% | 42,80% |
+| PIQA | val | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Otros datos reportados:
-
-| Metrica | Valor |
-|---|---|
-| GSM8K verificacion numerica 4-way | 99,20% (PPL 7,60, frente a 27,99 del baseline) |
-| Validacion FineWeb-Edu (loss / PPL) | 4,4776 / 88,02 |
-| Precision top-1 de token | 27,20% |
-| Throughput de entrenamiento | 123.900 tok/s (15.490 tok/s/GPU) |
+Macro-promedio en las 9 tareas: 37,56% (zero-shot) → 39,61% (`PairAdam`) → 43,86% (pase unico) → 48,07% (curriculo multi-ronda, +8,46% vs. `PairAdam`). En GSM8K, la verificacion numerica de 4 opciones alcanza 99,20% con `PPL` = 7,60 (frente a 27,99 en el checkpoint previo, una reduccion de 3,68x). Los datos completos de PIQA y del resto de tareas de la suite no se incluyen en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en f32 (116 MB de pesos safetensors), por lo que cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; probado en AMD Strix Halo (gfx1151) con PyTorch ROCm y llama.cpp (Vulkan y ROCm). Tambien funciona en CPU x86_64 con AVX2.
-- Cabe en GPU consumer: si, en cualquier RTX, GTX o iGPU moderna; incluso en Raspberry Pi y dispositivos embebidos por su reducido tamano.
-- Opciones de despliegue: transformers (PyTorch), llama.cpp (CPU, Vulkan, ROCm), y por extension cualquier runtime compatible con GGUF. No se ha publicado integracion con vLLM, TGI u Ollama.
-- Latencia y throughput: no se han publicado mediciones de latencia en inferencia; el throughput de entrenamiento fue de 123.900 tok/s en 8 A100-80GB.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 (116 MB de pesos + overhead de activaciones); en la practica cabe en cualquier GPU consumer.
+- GPU recomendadas: no requiere GPU dedicada; funciona en CPU x86_64 con AVX2 y en GPUs integradas (se valido en AMD Strix Halo, `gfx1151`).
+- Cabe en GPU consumer: si, en cualquier modelo (RTX 4090, RTX 3060, e incluso iGPU).
+- Opciones de despliegue: `transformers` (PyTorch), llama.cpp en CPU, Vulkan y ROCm. Se reporta paridad exacta token a token en generacion greedy (`temperature` = 0, 16 tokens nuevos) entre PyTorch ROCm, llama.cpp CPU, llama.cpp Vulkan y llama.cpp ROCm sobre el checkpoint base.
+- Latencia y throughput: no disponible para este checkpoint; el entrenamiento base reporto 123.900 tok/s en 8x A100-80GB, dato no extrapolable a inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| GRT-30M-Curriculum | 29,84M (9,74M backbone) | 2.048 | Apache 2.0 | en | Arquitectura GRT rotacional, destilado de Qwen 3, curriculum multi-ronda |
-| MatterWaveAI/grt-30m | 29,3M (9,74M backbone) | 2.048 | Apache 2.0 | en | Checkpoint base del que parte esta release; sin curriculum multi-ronda |
-| Qwen 3 (profesor) | no disponible en la informacion | no disponible | no disponible | no disponible | Profesor de la destilacion; tokenizador compartido de 151.669 tokens |
-| Otros SLM de ~30M | no disponible | no disponible | no disponible | no disponible | No se han proporcionado comparativas con modelos de terceros |
+| GRT-30M-Curriculum (este) | 29,84M (9,74M backbone) | 2.048 | Apache 2.0 | en | 48,07% macro en SLM-Bench; arquitectura rotacional propia |
+| MatterWaveAI/grt-30m | 29,31M (9,74M backbone) | 2.048 | Apache 2.0 | en | Checkpoint base destilado, 37,56% macro en SLM-Bench |
+| Qwen 3 (profesor) | no disponible | no disponible | no disponible | no disponible | Familia profesora usada para destilacion; tokenizador compartido |
+| Otros SLM de ~30M | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+
+No se dispone de comparaciones con alternativas de terceros de tamano similar en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo solo entiende y genera ingles; no se ha entrenado ni evaluado en otros idiomas.
-- Ventana de contexto muy limitada (2.048 tokens), insuficiente para conversaciones largas, documentos extensos o tareas de agente multi-paso.
-- La generacion greedy mostrada en la model card es incoherente semanticamente (repeticiones como "the first to be the first to be..."), lo que evidencia una calidad de generacion abierta muy baja pese a los resultados en tareas de opcion multiple.
-- Riesgo alto de alucinacion: con 9,74M de parametros no-embedding y 10,79B tokens de entrenamiento, la capacidad de conocimiento factual es muy limitada.
-- La precision media macro del 47,16% en SLM-Bench sigue siendo baja en terminos absolutos; no es apta para produccion en tareas de razonamiento general.
-- El 66,8% de los parametros corresponden a la tabla de embedding heredada de Qwen 3, lo que infla el recuento total y reduce la capacidad efectiva del backbone.
-- No hay soporte documentado de tool calling, agentes, vision, audio ni modo thinking.
-- La licencia Apache 2.0 permite uso comercial, pero la ausencia de garantias y la baja calidad de generacion desaconsejan su uso en produccion sin validacion exhaustiva.
-- El modelo se publico con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de adopcion ni de validacion independiente.
+- Solo soporta ingles; no se declaran otros idiomas.
+- Ventana de contexto limitada a 2.048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Riesgo elevado de alucinacion y de generacion incoherente: los ejemplos de continuacion greedy del checkpoint base muestran repeticiones y texto sin sentido ("the first to be the first to be...").
+- El rendimiento en tareas abiertas es bajo: 48,07% de macro-promedio en multiple choice, lejos de modelos de mayor tamano.
+- El 66,8% de los parametros son embeddings; el backbone real es de solo 9,74M, lo que limita la capacidad de razonamiento.
+- No se documenta soporte de tool calling, agentes ni modo thinking.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), la calidad del modelo hace desaconsejable su uso en produccion orientada a usuarios finales.
+- El checkpoint base fue entrenado en 8x A100 durante 24 horas; no se documentan evaluaciones de sesgo, toxicidad ni seguridad.
+- La paridad de backends reportada se valida sobre el checkpoint base, no explicitamente sobre este checkpoint curricular.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-curriculum
-- Checkpoint base: https://huggingface.co/MatterWaveAI/grt-30m
+- Hugging Face (este modelo): https://huggingface.co/MatterWaveAI/grt-30m-curriculum
+- Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset cosmopedia-v2: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia-v2
 - Dataset wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath
 - Dataset smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
-- Suite SLM-Bench: referenciada en la model card como `training/slm_bench.py` / `grt-slm-bench` (sin URL publica disponible)
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

@@ -2,116 +2,92 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct-ExecuTorch es un export del modelo meta-llama/Llama-3.2-1B-Instruct (revision `9213176726f5`) preparado por el usuario experimentalmachines para inferencia en dispositivo con el runtime ExecuTorch 1.4.0. No se trata de un modelo nuevo ni de un reentrenamiento: es un artefacto de despliegue que empaqueta los pesos del modelo base de Meta en formato `.pte`, cuantizados y compilados para ejecutarse en CPU arm64 mediante el backend XNNPACK, sin necesidad de GPU ni de conectividad de red.
+Llama-3.2-1B-Instruct-ExecuTorch es una exportación del modelo meta-llama/Llama-3.2-1B-Instruct (revisión `9213176726f5`) al formato ExecuTorch, publicada por el usuario experimentalmachines. No se trata de un modelo nuevo entrenado desde cero, sino de un conjunto de artefactos `.pte` listos para inferencia en dispositivo (on-device) en Android, con backends específicos para CPU (XNNPACK), GPU (Vulkan), NPU de Qualcomm (QNN HTP sobre Snapdragon 8 Elite) y NPU de MediaTek (NeuroPilot sobre Dimensity 9400). El objetivo es permitir ejecutar un modelo de 1.000 millones de parámetros en teléfonos móviles sin conexión a la nube.
 
-El problema que resuelve es el de llevar un modelo de lenguaje instruccional de ~1.000 millones de parametros a telefonos y dispositivos embebidos Android. Para ello ofrece cinco variantes por ventana de contexto (2.048, 4.096, 8.192, 16.384 y 32.768 tokens), cada una en un fichero independiente de entre 0,96 GB y 0,98 GB, con la ventana fija grabada dentro del fichero y la cache KV reservada por completo en el momento de la carga. El autor incluye un campo `fits_phone_budget` en el `config.json` de cada carpeta como estimacion frente a un presupuesto de 5 GB.
+El repositorio ofrece ventanas de contexto fijas por archivo, desde 2.048 hasta 32.768 tokens según backend, con cuantización GPTQ 8da4w (8 bits para pesos, 4 bits para activaciones) en los backends XNNPACK y Vulkan, y esquemas híbridos o a16w8 en los backends NPU. Los tamaños de los artefactos van desde 0,28 GB por fragmento en MediaTek hasta 1,39 GB en Qualcomm QNN, lo que los hace viables en presupuestos de memoria de teléfonos de gama alta.
 
-Su relevancia es practica: permite prototipar asistentes de texto totalmente offline en Android con una integracion directa con la aplicacion openweights, o con cualquier runtime ExecuTorch 1.4.0. El repositorio no tiene descargas ni likes registrados y no publica resultados de benchmarks, por lo que debe evaluarse como un artefacto de infraestructura mas que como un modelo con rendimiento validado.
+Su relevancia actual radica en que facilita el despliegue de LLM en Android con aceleración por NPU, un área donde la fragmentación de runtimes y formatos es un obstáculo importante. Al estar basado en Llama 3.2 1B Instruct, hereda las capacidades conversacionales y multilingües del modelo original, aunque con las limitaciones propias de su tamaño y de la cuantización agresiva.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada del modelo base Llama-3.2-1B-Instruct), exportada a formato ExecuTorch `.pte` |
-| Parametros totales | 1B segun la denominacion del modelo base; el recuento exacto no figura en la informacion proporcionada |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 2.048, 4.096, 8.192, 16.384 o 32.768 tokens, segun el fichero elegido; la ventana queda fija dentro del `.pte` |
-| Tipos de cuantizacion | 8da4w: activaciones int8 dinamicas y pesos de 4 bits en grupos de 32, embeddings int8 per-channel; cache KV en fp32 |
-| Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | llama3.2 (derivado cuantizado del modelo base, distribuido bajo los mismos terminos) |
-| Formato de pesos | `.pte` (ExecuTorch 1.4.0); no se distribuyen safetensors ni GGUF |
-| Tokenizer | `tokenizer.json`, copiado sin cambios del repositorio de origen |
-| Backend | XNNPACK (CPU) para cualquier arm64, con operaciones extendidas |
-| Tamano del repositorio | 4,8 GB |
-| Version de ExecuTorch | 1.4.0 (`export_llm`) |
-| Fecha de creacion / actualizacion | 2026-09-13 / 2026-09-13 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer decoder-only (heredada de Llama-3.2-1B-Instruct) |
+| Parámetros totales | 1.000 millones (aproximado, según el modelo base) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | Fija por archivo: 2.048, 4.096, 8.192, 16.384 o 32.768 tokens según backend |
+| Tipos de cuantización | GPTQ 8da4w (XNNPACK, Vulkan); híbrida QNN (Qualcomm); a16w8 (MediaTek NeuroPilot) |
+| Idiomas soportados | no disponible en la información proporcionada |
+| Licencia | llama3.2 |
+| Formato de pesos | `.pte` (ExecuTorch) |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene entrenamiento propio. Se limita a la exportacion del modelo base meta-llama/Llama-3.2-1B-Instruct, un transformer decoder-only de la familia Llama 3.2, mediante la herramienta `export_llm` de ExecuTorch 1.4.0. La conversion aplica cuantizacion de 8 bits en activaciones de forma dinamica, pesos de 4 bits agrupados en bloques de 32 elementos y embeddings int8 per-channel, con un tamano de chunk de prefill de 2.048 tokens y cache KV en fp32. El objetivo declarado es el backend XNNPACK con operaciones extendidas para cualquier CPU arm64.
+El modelo subyacente es Llama-3.2-1B-Instruct, un transformer decoder-only de Meta con aproximadamente 1.000 millones de parámetros, ajustado con instrucciones. Esta publicación no incluye información sobre el entrenamiento original (número de tokens, composición del dataset, uso de RLHF o DPO), por lo que esos datos deben consultarse en la model card del modelo base de Meta.
 
-La innovacion tecnica relevante no esta en el modelo, sino en el empaquetado: se generan exportaciones independientes para cada ventana de contexto que el runner pudo construir, de 2k a 32k, con la ventana incrustada en el fichero. Esto implica que el runtime reserva la totalidad de la cache KV al cargar el modelo, con un coste de 65.536 bytes por token en fp32: 134.217.728 bytes para 2.048 tokens, 268.435.456 para 4.096, 536.870.912 para 8.192, 1.073.741.824 para 16.384 y 2.147.483.648 para 32.768. Cada carpeta de backend incluye un `config.json` con todas las variantes y sus metadatos, y un `export-report-<window>.json` por fichero con el registro completo de la exportacion. El proceso se ejecuto en la accion de GitHub referenciada en la model card (run 1 del repositorio executorch-model-exporter). No se documentan datos de entrenamiento, composicion del dataset, ni fases de RLHF o DPO, ya que corresponden al modelo base y no a este export.
+La innovación técnica de esta exportación reside en el pipeline de compilación a ExecuTorch 1.5.1 y en la cuantización específica por backend. Los artefactos XNNPACK y Vulkan emplean GPTQ con esquema 8da4w: pesos en 8 bits y activaciones en 4 bits, lo que reduce el tamaño a menos de 1 GB en CPU. Los artefactos para Qualcomm QNN usan un esquema híbrido orientado al HTP (Hexagon Tensor Processor) del Snapdragon 8 Elite, y los de MediaTek NeuroPilot emplean a16w8 (activaciones 16 bits, pesos 8 bits) fragmentados en cuatro chunks para el Dimensity 9400. La ventana de contexto está fijada dentro del archivo: el runtime reserva toda la caché KV al cargar, de modo que el usuario debe elegir la ventana más grande que el dispositivo pueda sostener. Cada carpeta incluye un `config.json` con el campo `fits_phone_budget`, que estima la viabilidad frente a un presupuesto de 5 GB.
 
 ## Capacidades
 
-- Generacion de texto instruccional en ingles, con el comportamiento del modelo Llama-3.2-1B-Instruct original.
-- Inferencia totalmente local y offline sobre CPU arm64, sin acceso a GPU ni a servicios en la nube.
-- Cinco configuraciones de ventana de contexto seleccionables en tiempo de carga (2k, 4k, 8k, 16k y 32k tokens).
-- Integracion directa con la aplicacion Android openweights y con cualquier runtime ExecuTorch 1.4.0.
-- Prueba de humo superada en las cinco variantes: los ficheros responden correctamente a una consulta basica devolviendo "Paris".
-- Compatibilidad con cuantizacion mixta 8da4w para reducir el peso del modelo a menos de 1 GB por fichero.
-- Soporte de tool calling o function calling: no documentado en la informacion proporcionada para este export.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion proporcionada para este export.
-- Capacidades multilingues: no disponibles en la informacion proporcionada; solo se confirma el comportamiento del modelo base.
-- Capacidades de vision o audio: no disponibles (el modelo base es exclusivamente de texto).
-- Modo thinking explicito: no disponible.
+- Generación de texto conversacional e instruccional, heredada de Llama-3.2-1B-Instruct.
+- Razonamiento básico y respuesta a preguntas en formato chat.
+- Generación de código y tareas sencillas de matemáticas, limitadas por el tamaño de 1B parámetros.
+- Soporte multilingüe heredado del modelo base (no detallado en esta publicación).
+- Inferencia totalmente local y offline en Android, sin dependencia de servidores.
+- Ejecución acelerada por GPU (Vulkan) y NPU (Qualcomm QNN, MediaTek NeuroPilot) además de CPU (XNNPACK).
+- Integración con la aplicación Android openweights y con cualquier runtime ExecuTorch 1.5.1.
+- No se documenta soporte explícito de tool calling, function calling ni modo thinking en esta publicación.
 
 ## Casos de uso
 
-- Asistente de texto offline en Android: la aplicacion openweights carga el `.pte` de 2k o 4k directamente en el telefono, de modo que el usuario dispone de generacion de texto sin enviar datos a ningun servidor ni requerir conexion.
-- Aplicaciones de notas y dictado con privacidad estricta: el modelo puede resumir o reformular notas personales en el propio dispositivo, sin que el contenido salga del terminal, algo critico en entornos sanitarios, juridicos o corporativos con requisitos de residencia de datos.
-- Resumen de documentos largos en movilidad: la variante de 32.768 tokens permite procesar actas, informes o hilos de correo extensos en un solo paso, a cambio de reservar 2 GB de cache KV al cargar el modelo.
-- Sustitucion de APIs de pago en prototipos: equipos que desarrollan funciones de generacion de texto pueden validar la experiencia de usuario con coste marginal cero antes de migrar a un servicio en la nube.
-- Kioscos y terminales industriales con SoC arm64: el backend XNNPACK funciona en cualquier arm64, de modo que el modelo puede incrustarse en paneles interactivos, maquinas de punto de venta o dispositivos de campo con conectividad intermitente.
-- Procesamiento por lotes en el borde (edge): en un dispositivo con presupuesto de memoria de 5 GB es viable mantener cargada la ventana de 2k (0,96 GB de pesos mas 128 MB de KV) y procesar entradas cortas de forma continua, por ejemplo clasificacion de incidencias o normalizacion de texto.
-- Educacion y accesibilidad: limpieza de transcripciones, generacion de preguntas de practica o simplificacion de textos sin conexion, util en aulas o entornos con red restringida.
-- Evaluacion de la propia cadena de exportacion: el repositorio incluye informes de exportacion por ventana, lo que sirve como referencia reproducible para equipos que quieran construir sus propios artefactos ExecuTorch con `export_llm`.
+- Asistentes conversacionales offline en Android: el modelo puede gestionar diálogos multi-turno dentro de la ventana fijada (hasta 32.768 tokens en XNNPACK y Vulkan), sin enviar datos a la nube, lo que resulta adecuado para aplicaciones de privacidad estricta.
+- Autocompletado y redacción en teclados móviles: con artefactos de menos de 1 GB en CPU, se puede integrar en un IME para sugerencias contextuales en tiempo real sin coste de servidor.
+- Resumen de notas y mensajes locales: la ventana de 8k o 16k permite procesar conversaciones o documentos cortos directamente en el dispositivo.
+- Clasificación y extracción de información en aplicaciones de campo: útil en entornos sin conectividad (logística, inspección, salud rural) donde se requiere procesar texto localmente.
+- Prototipado de aplicaciones LLM en Android: sirve como referencia para desarrolladores que quieran evaluar ExecuTorch con backends CPU, GPU y NPU antes de invertir en modelos mayores.
+- Demostraciones de aceleración por NPU: los artefactos QNN y NeuroPilot permiten medir el rendimiento de Snapdragon 8 Elite y Dimensity 9400 en cargas de decodificación autoregresiva.
+- Filtrado y moderación de contenido en el dispositivo: un modelo de 1B puede actuar como primera capa de clasificación de texto sensible antes de recurrir a un modelo mayor en servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica evidencia de funcionamiento es la prueba de humo declarada en la model card, superada en las cinco variantes con una respuesta correcta ("Paris") a una consulta basica. No se proporcionan cifras de MMLU, HumanEval, GSM8K, latencia, tokens por segundo ni consumo energetico.
-
-| Prueba | Resultado | Notas |
-|---|---|---|
-| Smoke test 2k, 4k, 8k, 16k, 32k | Superado | Respuesta "Paris" en las cinco variantes |
-| Benchmarks academicos | No disponible | No publicados en la informacion proporcionada |
-| Throughput y latencia | No disponible | No publicados en la informacion proporcionada |
+No se han publicado resultados de benchmarks en la información disponible. La model card solo indica que las pruebas de humo (smoke tests) de los artefactos XNNPACK generaron la palabra "Paris" correctamente; los artefactos Vulkan, QNN y MediaTek solo fueron verificados estructuralmente, sin ejecución en runtime NPU real.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; la inferencia es exclusivamente en CPU arm64 mediante XNNPACK, sin GPU.
-- Pesos en disco y en memoria: 0,96 GB para las ventanas de 2k a 8k, 0,97 GB para 16k y 0,98 GB para 32k.
-- Cache KV en fp32, reservada por completo al cargar: 134 MB (2k), 268 MB (4k), 537 MB (8k), 1,07 GB (16k) y 2,15 GB (32k).
-- Presupuesto total de memoria: el `config.json` de cada carpeta incluye `fits_phone_budget`, estimado contra un presupuesto de 5 GB; consultar ese campo antes de elegir la variante.
-- GPU: ninguna compatible. No se contemplan A100, H100 ni RTX 4090, ya que el formato `.pte` esta pensado para CPU arm64.
-- Dispositivos objetivo: telefonos y dispositivos Android arm64, asi como cualquier plataforma con un runtime ExecuTorch 1.4.0.
-- Opciones de despliegue: aplicacion openweights para Android (recomendada por el autor) o cualquier runtime ExecuTorch 1.4.0. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que esperan safetensors o GGUF.
-- Latencia y throughput estimados: no disponibles. Dependen del SoC, del ancho de banda de memoria y de la ventana elegida, factores que el autor no documenta.
+- VRAM/RAM estimada: entre 0,96 GB (XNNPACK, 2k) y 1,39 GB (QNN SM8750, 16k) para los pesos; la caché KV se reserva completa al cargar y crece con la ventana elegida. El presupuesto de referencia de la model card es de 5 GB.
+- GPU recomendadas: no aplica para GPU de escritorio; el objetivo son GPU integradas en SoC Android vía Vulkan.
+- NPU soportadas: Qualcomm Hexagon HTP en SM8750 (Snapdragon 8 Elite) y MediaTek NeuroPilot en MT6991 (Dimensity 9400).
+- CPU: cualquier arm64 con backend XNNPACK.
+- ¿Cabe en hardware de consumo? Sí, en teléfonos Android de gama alta con al menos 5 GB de memoria disponible; los artefactos XNNPACK de 0,96 GB son los más ligeros.
+- Opciones de despliegue: runtime ExecuTorch 1.5.1, aplicación Android openweights (https://github.com/alpharomercoma/openweights). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son compatibles con el formato `.pte`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion en la busqueda web sobre exportaciones comparables del mismo modelo base para otros runtimes, por lo que la comparativa se limita al modelo de origen y a referencia de formato.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Orientacion |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Instruct-ExecuTorch (este) | 1B | 2.048 a 32.768 tokens, fijo por fichero | `.pte` (ExecuTorch 1.4.0) | llama3.2 | Inferencia en CPU arm64 y Android |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | No disponible en la informacion proporcionada | safetensors | llama3.2 | Entrenamiento, ajuste e inferencia en GPU |
-| Alternativas en formato GGUF o exportaciones equivalentes | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos en la informacion proporcionada |
+| Llama-3.2-1B-Instruct-ExecuTorch | ~1B | 2k–32k (fijo por archivo) | `.pte` (ExecuTorch) | llama3.2 | Hugging Face, 1.043 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | ~1B | 128k (según model card de Meta) | safetensors | llama3.2 | Hugging Face |
+| Gemma 2 2B (Google) | ~2B | 8k | safetensors, GGUF | Gemma Terms | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32k | safetensors, GGUF | Apache 2.0 | Hugging Face |
+
+La comparativa se limita a datos públicos de los modelos base; no se dispone de benchmarks comparativos de esta exportación frente a las alternativas. La ventaja diferencial de esta publicación es el formato ExecuTorch con backends NPU para Android, que los modelos anteriores no ofrecen de forma nativa.
 
 ## Limitaciones y advertencias
 
-- El modelo base tiene 1B de parametros: la calidad de razonamiento, la coherencia en cadenas largas y la precision factual son inherentemente inferiores a las de modelos de mayor tamano.
-- Riesgo de alucinacion: al ser un modelo instruccional pequeno, tiende a inventar datos cuando no dispone de contexto suficiente; no debe usarse como fuente de verdad sin verificacion externa.
-- La ventana de contexto esta fijada dentro del fichero `.pte`. No es posible cambiarla en tiempo de ejecucion: hay que cargar otra variante, lo que implica reiniciar el modelo y volver a reservar la cache.
-- La cache KV se asigna completa en la carga, en fp32. La variante de 32k exige 2,15 GB solo para la cache, ademas de los 0,98 GB de pesos, lo que puede provocar fallos de asignacion en dispositivos de gama media.
-- La cuantizacion 8da4w (activaciones int8 dinamicas y pesos de 4 bits en grupos de 32) puede degradar la calidad respecto al modelo original en fp16 o bf16. No se han publicado mediciones de esa perdida.
-- No se documentan los idiomas soportados por este export. El modelo base de Meta declara capacidad multilingue, pero esta ficha no dispone del listado ni de evaluaciones por idioma.
-- No hay soporte documentado de tool calling, function calling ni flujos de agente multi-paso en este export.
-- Sesgos conocidos: no se documentan evaluaciones de sesgo, toxicidad o seguridad especificas para este artefacto; hereda los del modelo base sin que el autor aporte analisis.
-- Licencia llama3.2: es una licencia con condiciones, no de dominio publico. Su uso comercial esta sujeto a los terminos de Meta y a la politica de uso aceptable (`USE_POLICY.md`). En repositorios con mas de 700 millones de usuarios mensuales se requiere una licencia aparte.
-- El repositorio incluye `NOTICE` con la atribucion exigida por la licencia; es obligatorio conservarla en cualquier redistribucion.
-- Los ficheros estan vinculados a ExecuTorch 1.4.0; versiones distintas del runtime pueden no ser compatibles.
-- Advertencia de madurez: el repositorio registra 0 descargas y 0 likes, y no hay benchmarks ni validacion independiente. Conviene tratarlo como artefacto experimental.
-- Se han detectado discrepancias en la busqueda web: los resultados devueltos para este modelo correspondian a contenidos no relacionados (Stripe, conectores LED, documentacion de Domo), por lo que no aportan informacion verificable.
+- Modelo de 1B parámetros: capacidad de razonamiento y conocimiento factual limitada; propenso a errores en tareas complejas.
+- Cuantización agresiva (8da4w, a16w8): puede degradar la calidad respecto al modelo en precisión completa; no se han publicado evaluaciones de calidad tras la cuantización.
+- Ventana de contexto fija por archivo: no se puede ampliar en tiempo de ejecución; hay que elegir el artefacto adecuado antes del despliegue.
+- Los artefactos Vulkan, QNN y MediaTek solo se verificaron estructuralmente, no en ejecución real sobre NPU; el rendimiento y la corrección en dispositivo no están validados por el autor.
+- Idiomas soportados no documentados en esta publicación; deben consultarse en la model card de Meta.
+- Licencia llama3.2: impone restricciones de uso comercial y obligaciones de atribución; revisar los términos de Meta antes de usar en producción.
+- Riesgo de alucinación inherente a los LLM de este tamaño, especialmente en dominios especializados.
+- Sesgos conocidos del modelo base no documentados en esta publicación.
+- El repositorio ocupa 38,7 GB por incluir múltiples variantes y ventanas; la descarga completa no es necesaria si solo se usa un backend.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Llama-3.2-1B-Instruct-ExecuTorch
+- Hugging Face: https://huggingface.co/experimentalmachines/Llama-3.2-1B-Instruct-ExecuTorch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-- Arbol de ficheros del modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/tree/main
-- Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
-- Ejecucion de exportacion (GitHub Actions, run 1): https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/34753844928
-- Licencia: `LICENSE.txt` (en el repositorio del modelo)
-- Politica de uso: `USE_POLICY.md` (en el repositorio del modelo)
-- Atribucion requerida: `NOTICE` (en el repositorio del modelo)
+- Aplicación Android openweights: https://github.com/alpharomercoma/openweights
+- ExecuTorch (repositorio oficial): no disponible en la información proporcionada

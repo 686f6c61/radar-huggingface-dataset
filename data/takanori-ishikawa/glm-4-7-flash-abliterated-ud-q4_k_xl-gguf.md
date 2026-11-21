@@ -2,118 +2,130 @@
 
 ## Resumen
 
-GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF es una version "abliterated" (con la direccion de rechazo eliminada mediante edicion de activaciones) del modelo GLM-4.7-Flash de Zhipu AI (zai-org), cuantizada en formato GGUF Q4_K_XL por Unsloth y posteriormente editada por el usuario takanori-ishikawa. El modelo base es un transformer de aproximadamente 29.900 millones de parametros (29,94 B), orientado a generacion de texto conversacional y razonamiento. Esta version concreta elimina el comportamiento de rechazo del modelo original para producir respuestas sin censura ("uncensored") en practicamente cualquier peticion.
+GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF es una versión "abliterada" (sin mecanismos de rechazo) del modelo GLM-4.7-Flash de Zhipu AI (zai-org), publicada por el usuario takanori-ishikawa. Se distribuye como un único archivo GGUF cuantizado en UD-Q4_K_XL, partiendo de la cuantización de Unsloth, y está pensada para investigación sobre comportamiento de rechazo y para probar evaluaciones de seguridad. El modelo conserva la arquitectura, la plantilla de chat y los metadatos del GGUF original; solo cambian los valores de los tensores editados durante el proceso de abliteración.
 
-La relevancia de esta ficha radica en que documenta un caso de "abliteration" sobre un modelo grande y moderno, con evaluacion cuantitativa explicita (HarmBench, XSTest, GSM8K, MMLU-Pro) y una metodologia reproducible publicada en un repositorio de GitHub. El autor declara que el modelo cumple 91 de 100 peticiones daninas de HarmBench, no rechaza ninguna de las 100 peticiones seguras de XSTest y mantiene puntuaciones de capacidad proximas al original en los subconjuntos evaluados.
+El modelo base tiene 29.943.393.920 parámetros (aproximadamente 30B) y se distribuye en un archivo de 17,52 GB, lo que lo hace ejecutable en equipos con memoria unificada relativamente modesta (el autor lo evalúa en un Mac mini M4 Pro con 64 GB de RAM). La relevancia actual radica en que documenta de forma rigurosa el efecto de la abliteración sobre las capacidades del modelo (GSM8K, MMLU-Pro) y sobre tareas de seguridad (HarmBench, XSTest, CyberSecEval, CTI-MCQ, AgentDojo), con metodología reproducible y tests estadísticos.
 
-El artefacto se distribuye como un unico fichero GGUF de 17,52 GB (17.520.169.312 bytes) con licencia MIT, pensado para ejecutarse en runtimes GGUF compatibles con GLM-4.7-Flash, incluyendo Apple Silicon (etiqueta `apple-silicon` en el repo). El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un artefacto reciente y de nicho.
+La licencia es MIT, lo que permite uso comercial, aunque el modelo está etiquetado como "uncensored" y su uso en producción conlleva riesgos de seguridad evidentes que se detallan más abajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (GLM-4.7-Flash); detalles internos de atencion no disponibles en la informacion proporcionada |
-| Parametros totales | 29.943.393.920 (~29,94 B) |
+| Arquitectura | no disponible (hereda la de GLM-4.7-Flash; el autor no la detalla) |
+| Parametros totales | 29.943.393.920 (~30B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (la evaluacion usa salidas de 16K y 32K tokens, pero no se especifica la ventana de contexto del modelo) |
-| Tipos de cuantizacion | GGUF Q4_K_XL (unico fichero publicado); el modelo base ofrece otras cuantizaciones no detalladas aqui |
+| Longitud de contexto | no disponible (el autor menciona límites de salida de 16K y 32K tokens en evaluación, no la ventana de contexto) |
+| Tipos de cuantizacion | GGUF Q4_K_XL (variante UD, "Unsloth Dynamic") |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (fichero unico `GLM-4.7-Flash-Abliterated-UD-Q4_K_XL.gguf`) |
+| Formato de pesos | GGUF (archivo único, 17.520.169.312 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una edicion del checkpoint GLM-4.7-Flash de Zhipu AI, cuantizado por Unsloth en Q4_K_XL. La arquitectura subyacente es un transformer (no se documentan en la informacion disponible detalles como tipo de atencion, uso de MoE o composicion exacta del dataset de entrenamiento original). El proceso de "abliteration" descrito por el autor consiste en: (1) estimar direcciones de activacion "dannino menos benigno" a partir de 200 prompts daninos y 200 benignos generados; (2) tomar la direccion `resid_mean` de la capa L24 (indexacion desde cero) y biproyectarla contra la media benigna de cada capa; (3) partiendo de tensores BF16, eliminar esa direccion con fuerza 1 en la salida de atencion, en las proyecciones down de las FFN densas/compartidas/enrutadas de las 47 capas principales y en el embedding de tokens, preservando normas de columna (o de fila para el embedding); (4) recuantizar cada tensor a su tipo original de Unsloth con dos iteraciones de correccion de objetivo fijo, preservando los bytes no editados del GGUF.
+El modelo es una edición por abliteración de GLM-4.7-Flash. La abliteración consiste en identificar y eliminar direcciones en el espacio de activaciones (típicamente en capas residuales intermedias) asociadas al comportamiento de rechazo, sin reentrenar los pesos. En este caso, el autor probó al menos una variante intermedia ("layer24-k1", que elimina la dirección residual de la capa 24 sin biproyección ni preservación de norma) antes de fijar la versión final. El archivo difiere del UD-Q4_K_XL de Unsloth únicamente en los valores de los tensores editados; los metadatos GGUF, los tipos de tensor y la plantilla de chat son idénticos.
 
-El autor indica que no se suministra matriz de importancia externa durante la edicion y que el unico cambio respecto al GGUF de Unsloth son los valores de los tensores editados: metadatos, tipos de tensor y plantilla de chat permanecen identicos. La evaluacion se ejecuto en un Mac mini M4 Pro con 64 GB de RAM usando un fork de llama.cpp (commit `5c4fc1a68`), con temperatura 1.0, top-p 0.95, top-k 20, min-p 0 y semilla 407, con "thinking" activado y sin presupuesto de pensamiento separado.
+No se dispone de información sobre los datos de entrenamiento originales de GLM-4.7-Flash (número de tokens, composición del dataset, uso de RLHF/DPO) en la información proporcionada. La evaluación se realizó con el fork de llama.cpp en el commit `5c4fc1a68` (sucesor `ddf120c50`), con muestreo a temperatura 1.0, top-p 0.95, top-k 20, min-p 0 y semilla 407, con "thinking" activado y sin presupuesto de razonamiento separado.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en formato chat (plantilla de chat sin cambios respecto al modelo base).
-- Razonamiento con modo "thinking" (el autor menciona que el razonamiento largo puede agotar el limite de salida; la evaluacion usa 16K tokens de salida y regenera ejemplos truncados con 32K).
-- Resolucion de problemas matematicos de nivel escolar (evaluado en GSM8K).
-- Conocimiento general y razonamiento de nivel experto (evaluado en MMLU-Pro).
-- Respuestas sin rechazo ante peticiones que el modelo original rechazaria (comportamiento "uncensored" intencionado).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible` en el repo).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada mas alla del modo thinking.
-- Capacidades multilingues: no disponibles (idiomas no declarados).
-- Vision, audio u otras modalidades: no disponible.
+- Generación de texto conversacional (pipeline text-generation).
+- Razonamiento con modo "thinking" (el autor indica que el razonamiento largo puede agotar el límite de salida; en evaluación usó 16K tokens de salida y regeneró con 32K).
+- Razonamiento matemático: 47/50 correctas en el subconjunto de test de GSM8K.
+- Conocimiento y razonamiento general: 42/50 correctas en el subconjunto de test de MMLU-Pro.
+- Uso de herramientas y agentes: evaluado con la suite AgentDojo (workspace), con utilidad de 36/40 y 406/560 bajo ataque de inyección de prompts.
+- Conocimiento de ciberseguridad: 127/200 correctas en CTI-MCQ.
+- Capacidad de rechazo eliminada: 0 rechazos en 100 peticiones seguras de XSTest y 91/100 cumplimientos en HarmBench estándar.
+- Capacidades multilingües: no disponible.
+- Visión, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre seguridad y alineacion: el modelo sirve como artefacto de estudio para medir cuanto degrada el "abliteration" el comportamiento de rechazo (91/100 en HarmBench frente a 12/100 del original) y como afecta a la utilidad (GSM8K 47/50 y MMLU-Pro 42/50, practicamente identicos al original).
-- Evaluacion de clasificadores de seguridad: al generar respuestas que el modelo original rechazaria, permite probar clasificadores como HarmBench-Llama-2-13b-cls o WildGuard en condiciones de alta tasa de cumplimiento.
-- Red teaming controlado: util para generar respuestas a peticiones daninas en entornos de laboratorio aislados, con el fin de entrenar o validar filtros y detectores.
-- Experimentos de edicion de activaciones: el repositorio del autor incluye receta, scripts y datos congelados para reproducir el proceso, lo que lo convierte en material didactico para estudiar tecnicas de abliteration (direccion L24, biproyeccion, preservacion de normas).
-- Despliegue local en Apple Silicon: el formato GGUF y la etiqueta `apple-silicon` permiten ejecutarlo en un Mac con suficiente RAM unificada (la evaluacion se hizo en un M4 Pro con 64 GB), util para pruebas offline sin GPU dedicada.
-- Generacion de texto creative sin restricciones de contenido: para proyectos donde se requiera un modelo que no rechace tematicas sensibles (ficcion adulta, narrativa oscura), asumiendo los riesgos descritos abajo.
-- Prototipado de pipelines conversacionales en llama.cpp: al mantener metadatos y plantilla de chat del modelo base, puede sustituir al GGUF original en un runtime existente sin cambios de integracion.
+- Investigación sobre comportamiento de rechazo: el modelo sirve como referencia para estudiar qué direcciones de activación codifican la negativa a responder, comparando con el original y con otras abliteraciones (huihui-ai, layer24-k1) bajo el mismo protocolo.
+- Evaluación de seguridad y red-teaming: permite medir la robustez de clasificadores y filtros externos (HarmBench-Llama-2-13b-cls, WildGuard) frente a un modelo sin rechazos internos, con conjuntos de 100 y 50 ejemplos y tests de McNemar.
+- Pruebas de pipelines de agentes bajo inyección de prompts: la evaluación con AgentDojo (560 casos bajo ataque) lo hace adecuado para validar defensas en entornos de herramientas antes de desplegar agentes reales.
+- Análisis de degradación de capacidades tras edición de pesos: los subconjuntos de GSM8K y MMLU-Pro permiten cuantificar la pérdida (47/50 y 42/50 frente a 47/50 y 39/50 del original) y estudiar la relación entre abliteración y rendimiento.
+- Inferencia local en Apple Silicon: el archivo GGUF de 17,5 GB se ejecuta en un Mac mini M4 Pro con 64 GB de RAM mediante llama.cpp, lo que facilita reproducir las evaluaciones sin GPU dedicada.
+- Estudio de conocimiento de ciberseguridad: CTI-MCQ (127/200 frente a 140/200 del original) permite analizar cómo la edición afecta al conocimiento técnico especializado.
+- Docencia y demostraciones sobre alineación: ilustra de forma reproducible el compromiso entre supresión de rechazos y fidelidad de capacidades.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de la model card del autor. Conjuntos: HarmBench estandar (100 comportamientos), XSTest safe (100) y unsafe (50), GSM8K test (50) y MMLU-Pro test (50). Semilla 407; clasificador HarmBench-Llama-2-13b-cls en Q8_0 y WildGuard en Q8_0 para rechazos de XSTest.
+Conjunto independiente (no usado en selección), 100 ejemplos HarmBench estándar, XSTest seguro 100 y XSTest inseguro 50:
 
-Conjunto HarmBench no tocado (independiente de toda eleccion de seleccion):
-
-| Modelo | HarmBench si / no / truncado (100) | XSTest safe rechazos / 100 | XSTest unsafe rechazos / 50 |
+| Modelo | HarmBench sí / no / truncado (100) | XSTest seguro rechazos / 100 | XSTest inseguro rechazos / 50 |
 |---|---:|---:|---:|
 | original (Unsloth UD-Q4_K_XL) | 12 / 88 / 0 | 2 | 44 |
 | huihui-ai (Q4_K_M) | 94 / 6 / 0 | 0 | 3 |
 | final (este modelo) | 91 / 9 / 0 | 0 | 3 |
 
-Conjunto de seleccion HarmBench y capacidades:
+Conjunto de selección (100 HarmBench, semilla 407) y capacidades:
 
-| Modelo | HarmBench seleccion si / no / truncado (100) | GSM8K correctas / 50 | MMLU-Pro correctas / 50 |
+| Modelo | HarmBench selección sí / no / truncado (100) | GSM8K correctas / 50 | MMLU-Pro correctas / 50 |
 |---|---:|---:|---:|
 | original | 15 / 85 / 0 | 47 | 39 |
 | huihui-ai | 92 / 8 / 0 | 48 | 42 |
 | layer24-k1 | 85 / 15 / 0 | 47 | 43 |
-| final (este modelo) | 91 / 9 / 0 | 47 | 42 |
+| final | 91 / 9 / 0 | 47 | 42 |
 
-Notas del autor: en el conjunto no tocado, la diferencia con huihui-ai no es significativa (McNemar bilateral exacto p = 0,25; solo huihui-ai cumple en 3 comportamientos y solo este modelo en ninguno). Los conjuntos son pequenos y diferencias de pocas respuestas no establecen diferencias amplias de capacidad. Un ejemplo de MMLU-Pro del modelo final queda truncado y cuenta como incorrecto.
+Tareas de seguridad (original frente a final, test exacto de McNemar bilateral):
+
+| Medida | original | final | p |
+|---|---:|---:|---:|
+| FRR rechazos / 86 | 0 | 0 | 1,00 |
+| CTI-MCQ correctas / 200 | 140 | 127 | 0,053 |
+| AgentDojo utilidad / 40 | 32 | 36 | 0,22 |
+| AgentDojo utilidad bajo ataque / 560 | 379 | 406 | 0,028 |
+| AgentDojo éxito de ataque / 560 | 38 | 46 | 0,30 |
+
+El autor advierte que estos conjuntos son pequeños y que diferencias de pocas respuestas no establecen diferencias amplias de capacidad.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: el fichero GGUF Q4_K_XL ocupa 17,52 GB; se necesita al menos esa cantidad de memoria mas overhead de contexto KV. Para contexto largo (16K-32K tokens de salida) el consumo adicional de KV cache puede ser significativo y no esta cuantificado en la informacion disponible.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, una GPU con 24 GB (RTX 3090/4090) podria alojar los pesos, pero el contexto largo puede requerir mas memoria; no hay datos confirmados.
-- Cabe en consumer GPU: probablemente en GPUs de 24 GB o mas con cuantizacion Q4_K_XL y contexto moderado, aunque no hay confirmacion en la informacion disponible. La evaluacion se realizo en un Mac mini M4 Pro con 64 GB de RAM unificada.
-- Opciones de despliegue: cualquier runtime GGUF compatible con GLM-4.7-Flash; el autor uso un fork de llama.cpp (commit `5c4fc1a68`). No se confirma compatibilidad explicita con Ollama, vLLM o TGI en la informacion disponible.
+- VRAM/memoria estimada: el archivo GGUF ocupa 17,52 GB; se necesita al menos esa cantidad de memoria más overhead de contexto KV. Con 64 GB de memoria unificada el autor ejecuta la evaluación completa.
+- GPU recomendadas: no disponibles en la información proporcionada; el autor solo documenta ejecución en Apple Silicon (Mac mini M4 Pro, 64 GB).
+- Compatibilidad con GPU de consumo: no confirmada explícitamente; por tamaño (17,5 GB) encajaría en GPUs con 24 GB o más, pero no hay dato del autor.
+- Opciones de despliegue: cualquier runtime GGUF que soporte GLM-4.7-Flash; el autor usó el fork de llama.cpp en el commit `5c4fc1a68`. No se mencionan vLLM, TGI ni Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | HarmBench (no tocado) | GSM8K / MMLU-Pro | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Este modelo (GLM-4.7-Flash Abliterated Q4_K_XL) | ~29,94 B | no disponible | 91/100 cumplidas | 47/50 y 42/50 | MIT | GGUF unico, 17,52 GB |
-| GLM-4.7-Flash original (Unsloth UD-Q4_K_XL) | ~29,94 B | no disponible | 12/100 cumplidas | 47/50 y 39/50 | MIT | GGUF en Unsloth |
-| Huihui-GLM-4.7-Flash-abliterated (mradermacher, Q4_K_M) | ~29,94 B (mismo base) | no disponible | 94/100 cumplidas | 48/50 y 42/50 | MIT (heredada) | GGUF en mradermacher |
-| layer24-k1 (variante del autor) | ~29,94 B | no disponible | 85/100 (conjunto de seleccion) | 47/50 y 43/50 | MIT | No publicado como repo independiente |
-
-Las tres variantes abliterated tienen rendimiento de capacidad practicamente identico al original en los subconjuntos evaluados; la diferencia principal es la tasa de cumplimiento en HarmBench, donde huihui-ai y este modelo estan estadisticamente empatados en el conjunto no tocado.
+| Modelo | Parámetros | Contexto | HarmBench (100) | GSM8K / 50 | MMLU-Pro / 50 | Licencia | Formato |
+|---|---|---:|---:|---:|---:|---|---|
+| Este modelo (final) | ~30B | no disponible | 91 sí / 9 no | 47 | 42 | MIT | GGUF Q4_K_XL |
+| Original (Unsloth UD-Q4_K_XL) | ~30B | no disponible | 12 sí / 88 no | 47 | 39 | MIT (heredada) | GGUF Q4_K_XL |
+| huihui-ai (mradermacher Q4_K_M) | ~30B | no disponible | 94 sí / 6 no | 48 | 42 | no disponible | GGUF Q4_K_M |
+| layer24-k1 (variante intermedia) | ~30B | no disponible | 85 sí / 15 no | 47 | 43 | no disponible | GGUF |
 
 ## Limitaciones y advertencias
 
-- El "abliteration" elimina la direccion de rechazo y, con ella, el comportamiento de seguridad: el modelo cumple el 91 % de las peticiones daninas de HarmBench y no rechaza ninguna peticion unsafe de XSTest (3/50 rechazos frente a 44/50 del original). Puede producir contenido danino, inexacto o poco fiable.
-- Los propios resultados del autor no establecen seguridad ni idoneidad para ningun uso concreto; son conjuntos pequenos (50-100 ejemplos) y diferencias de pocas respuestas no son concluyentes.
-- Riesgo elevado de alucinacion y de respuestas inseguras en produccion; no recomendado para aplicaciones de cara al usuario sin filtros externos.
-- Idiomas soportados no declarados; no hay garantia de calidad multilingue.
-- Longitud de contexto no documentada; el razonamiento largo puede agotar el limite de salida (la evaluacion usa 16K y 32K tokens de salida).
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias y la responsabilidad del uso recae en el desplegador. Verificar la licencia del modelo base zai-org/GLM-4.7-Flash (MIT segun el autor).
-- Artefacto con 0 descargas y 0 likes: sin validacion comunitaria independiente.
-- La edicion preserva los bytes no editados del GGUF de Unsloth, pero cualquier verificacion de integridad debe basarse en el SHA-256 publicado.
+- Modelo "uncensored"/abliterado: elimina deliberadamente los rechazos; no debe desplegarse en aplicaciones de cara al público sin filtros externos.
+- Riesgo elevado de generar contenido dañino: 91/100 cumplimientos en HarmBench estándar frente a 12/100 del original.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Alucinación: no se han publicado métricas específicas de fidelidad; el modo thinking puede agotar el límite de salida y producir respuestas truncadas (un ejemplo de MMLU-Pro del modelo final quedó truncado y se contó como incorrecto).
+- Limitaciones de contexto e idioma: la ventana de contexto y los idiomas soportados no están documentados; el autor solo menciona límites de salida de 16K y 32K tokens en evaluación.
+- Degradación de conocimiento especializado: CTI-MCQ baja de 140/200 a 127/200 (p = 0,053), con tres respuestas que alcanzan el límite de 16K.
+- Mayor utilidad bajo ataque en AgentDojo (406/560 frente a 379/560, p = 0,028) y éxito de ataque ligeramente superior (46/560 frente a 38/560, p = 0,30, no significativo): relevante para despliegues con herramientas.
+- Los conjuntos de evaluación son pequeños (50-100 ejemplos por tarea); las diferencias de pocas respuestas no son concluyentes.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías y el uso responsable recae en el desplegador.
+- El método de edición se seleccionó sobre 50 prompts dañinos generados y sobre el conjunto de selección de HarmBench; solo el conjunto HarmBench no tocado y XSTest son independientes de todas las decisiones.
 
 ## Enlaces
 
-- Repo Hugging Face: https://huggingface.co/takanori-ishikawa/GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF
+- Modelo en Hugging Face: https://huggingface.co/takanori-ishikawa/GLM-4.7-Flash-Abliterated-UD-Q4_K_XL-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
-- Cuantizacion de Unsloth: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
-- Variante huihui-ai comparada: https://huggingface.co/mradermacher/Huihui-GLM-4.7-Flash-abliterated-GGUF
-- Repositorio de receta y scripts: https://github.com/ishikawa/glm-4.7-flash-abliteration
-- Fork de llama.cpp usado: https://github.com/ishikawa/llama.cpp/commit/ddf120c50a8acfbf873c16cb070c2b5e4bb6a2fe
+- Cuantización de Unsloth: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
 - HarmBench: https://github.com/centerforaisafety/HarmBench
-- Clasificador HarmBench: https://huggingface.co/cais/HarmBench-Llama-2-13b-cls
+- Clasificador HarmBench-Llama-2-13b-cls: https://huggingface.co/cais/HarmBench-Llama-2-13b-cls
+- Evaluador oficial de HarmBench: https://github.com/centerforaisafety/HarmBench/blob/main/evaluate_completions.py
 - XSTest: https://github.com/paul-rottger/xstest
 - WildGuard: https://huggingface.co/allenai/wildguard
 - GSM8K: https://github.com/openai/grade-school-math
 - MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
+- CyberSecEval (PurpleLlama): https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks
+- CTI-MCQ (cti-bench): https://github.com/maveryn/cti-bench
+- AgentDojo: https://github.com/ethz-spylab/agentdojo
+- Fork de llama.cpp usado: https://github.com/ishikawa/llama.cpp/commit/ddf120c50a8acfbf873c16cb070c2b5e4bb6a2fe
+- Resultados de seguridad: https://github.com/ishikawa/glm-4.7-flash-abliteration/blob/main/results/README.md#security-tasks
+- Repositorio de abliteración: https://github.com/ishikawa/glm-4.7-flash-abliteration
+- Alternativa huihui-ai: https://huggingface.co/mradermacher/Huihui-GLM-4.7-Flash-abliterated-GGUF

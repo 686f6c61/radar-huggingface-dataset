@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 931,
+  "downloads_30d": 690,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
@@ -59,6 +59,12 @@
   "benchmarks": [
     {
       "task": "Text Generation",
+      "dataset": "ARC-Challenge (0-Shot)",
+      "metric": "normalized accuracy",
+      "value": 33.02
+    },
+    {
+      "task": "Text Generation",
       "dataset": "IFEval (0-Shot)",
       "metric": "strict accuracy",
       "value": 30.71
@@ -71,9 +77,9 @@
     },
     {
       "task": "Text Generation",
-      "dataset": "MATH Lvl 5 (4-Shot)",
-      "metric": "exact match",
-      "value": 0
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 7.75
     },
     {
       "task": "Text Generation",
@@ -89,36 +95,10 @@
     },
     {
       "task": "Text Generation",
-      "dataset": "MMLU-PRO (5-shot)",
-      "metric": "accuracy",
-      "value": 7.75
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 0
     }
   ],
-  "sources": [
-    {
-      "title": "Réservation parking - Aéroport Marseille Provence",
-      "url": "https://store.marseille.aeroport.fr/fr_FR/reservation/parking/stationnement/",
-      "snippet": "Nov 8, 2016 · Réservez votre place de parking sécurisée à l'Aéroport Marseille Provence. Profitez d'un stationnement sûr et facile …"
-    },
-    {
-      "title": "Aéroport Marseille Provence : Tarifs & Plans",
-      "url": "https://www.marseille.aeroport.fr/parkings-et-acces/parkings/tarifs-plans",
-      "snippet": "Possibilité de payer par carte bancaire en sortie de parking. Les parkings étant situés à proximité des aérogares, ils ne sont pas …"
-    },
-    {
-      "title": "Aéroport Marseille Provence : Chèque parking, Parking SuperEco ou …",
-      "url": "https://www.marseille.aeroport.fr/parkings-et-acces/parkings/parkings-economiques",
-      "snippet": "Profitez des parkings officiels de l'aéroport marseille : Parkings SuperEco (chèque parking) ou P3. Réservez maintenant et …"
-    },
-    {
-      "title": "AMP Store : Réservation et Services - Aéroport Marseille Provence",
-      "url": "https://store.marseille.aeroport.fr/",
-      "snippet": "Nov 7, 2016 · Découvrez les services à réserver à l'Aéroport Marseille Provence : parking, bus, services VIP (salons, accueil) et …"
-    },
-    {
-      "title": "Parking Aéroport Marseille » Meilleurs Prix dès 4,07 €/jour",
-      "url": "https://parkos.fr/parking-aeroport-marseille/",
-      "snippet": "Comparez et réservez les meilleurs parkings à l'Aéroport Marseille Provence (MRS) avec Parkos. Solutions sécurisées et proches …"
-    }
-  ]
+  "sources": []
 }

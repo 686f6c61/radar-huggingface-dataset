@@ -74,31 +74,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "知乎 - 有问题，就会有答案",
-      "url": "https://www.zhihu.com/",
-      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
-    },
-    {
-      "title": "how can I login anonymously with ftp (/usr/bin/ftp)?",
-      "url": "https://stackoverflow.com/questions/3936911/how-can-i-login-anonymously-with-ftp-usr-bin-ftp",
-      "snippet": "I'm trying to connect to an FTP server which allows anonymous access, I don't know how to specify the appropriate …"
-    },
-    {
-      "title": "话题广场 - 知乎",
-      "url": "https://www.zhihu.com/topics",
-      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
-    },
-    {
-      "title": "java.sql.SQLException: - ORA-01000: maximum open cursors exceeded",
-      "url": "https://stackoverflow.com/questions/12192592/java-sql-sqlexception-ora-01000-maximum-open-cursors-exceeded",
-      "snippet": "Aug 30, 2012 · I am getting an ORA-01000 SQL exception. So I have some queries related to it. Are maximum open cursors exactly …"
-    },
-    {
-      "title": "HTTPSConnectionPool Max retries exceeded - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/16230850/httpsconnectionpool-max-retries-exceeded",
-      "snippet": "Apr 26, 2013 · Show us your requests code and nginx configuration. In fact, you can try setup a static html and have nginx points to it, …"
-    }
-  ]
+  "sources": []
 }

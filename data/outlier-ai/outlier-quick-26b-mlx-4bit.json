@@ -5,7 +5,7 @@
   "author": "Outlier-Ai",
   "url": "https://huggingface.co/Outlier-Ai/Outlier-Quick-26B-MLX-4bit",
   "created_at": "2026-04-30T19:35:18.000Z",
-  "updated_at": "2026-11-08T06:36:26.000Z",
+  "updated_at": "2026-11-20T13:17:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -89,7 +89,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 83,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": 25805936206,
   "parameters_human": "25.81B",

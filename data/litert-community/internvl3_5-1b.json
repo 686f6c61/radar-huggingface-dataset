@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/InternVL3_5-1B · Hugging Face",
-      "url": "https://huggingface.co/litert-community/InternVL3_5-1B",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "litert-community/InternVL3_5-1B at main - Hugging Face",
-      "url": "https://huggingface.co/litert-community/InternVL3_5-1B/tree/main",
-      "snippet": "like 0 Follow LiteRT Community (FKA TFLite) 7.55k Image-Text-to-Text LiteRT-LM LiteRT litertlm on-device edge vlm multimodal vision-language License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

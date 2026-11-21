@@ -2,108 +2,105 @@
 
 ## Resumen
 
-Gemma-4-E4B-it-ultra-uncensored-heretic-GGUF es la version cuantizada en formato GGUF de un modelo multimodal derivado de `google/gemma-4-E4B-it`. El autor, el contribuyente independiente llmfan46, ha aplicado tecnicas de "abliteration" (eliminacion selectiva de direcciones de rechazo en el espacio de activaciones) para reducir drasticamente la tasa de negativas del modelo original, manteniendo al mismo tiempo la coherencia funcional. El resultado se distribuye bajo el pipeline `any-to-any`, con soporte declarado de entrada imagen-texto a texto.
+`llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF` es una versión decensurada (abliterated) del modelo multimodal `google/gemma-4-E4B-it` de Google, distribuida en formato GGUF por el contribuidor independiente llmfan46. El objetivo declarado es reducir drásticamente las negativas del modelo original (de 99/100 a 3/100 en el conjunto de evaluación del autor) manteniendo la calidad base, con una divergencia KL de 0,0076 respecto al modelo de partida. La ablación se realizó con la herramienta Heretic v1.2.0 aplicando el método Arbitrary-Rank Ablation (ARA) sobre las capas 7 a 36 y sobre el componente `attn.o_proj`.
 
-El modelo parte de los 7.518.069.290 parametros reales (≈7,5 B) del checkpoint original en safetensors, aunque la nomenclatura "E4B" hace referencia a la convencion de parametros efectivos de la familia Gemma. La intervencion se realizo con la herramienta Heretic v1.2.0 empleando el metodo Arbitrary-Rank Ablation (ARA) sobre la capa de proyeccion de salida de atencion (`attn.o_proj`). Segun la model card, la tasa de rechazos pasa de 99/100 en el modelo original a 3/100 en esta version, con una divergencia KL de 0,0076 respecto al original.
+El modelo conserva la pipeline `any-to-any` y la capacidad `image-text-to-text` del Gemma 4 original, por lo que mantiene entrada multimodal (texto e imagen) y salida de texto. Cuenta con 7.518.069.290 parámetros totales según los tensores en safetensors del modelo base, y se distribuye con licencia Apache 2.0 (con enlace adicional a la licencia de Gemma 4 de Google). El repositorio GGUF ocupa 47,1 GB e incluye cuantizaciones desde BF16 hasta Q4_K_M, además de un proyector de visión independiente.
 
-Su relevancia actual radica en dos factores: por un lado, ofrece una alternativa de pesos abiertos (licencia declarada apache-2.0 en Hugging Face) para desarrolladores que necesitan un modelo multimodal ligero y desplegable en GPU de consumo; por otro, documenta un caso de estudio reproducible de ablacion de rechazos con metricas de degradacion (PIQA, MMLU) que permiten evaluar el coste real de este tipo de modificaciones.
+Su relevancia actual radica en dos factores: por un lado, ofrece una alternativa con muchas menos restricciones de contenido sobre una arquitectura Gemma 4 reciente; por otro, la metodología Heretic/ARA permite comparar de forma cuantificable el coste en calidad (KL y benchmarks) de eliminar el comportamiento de rechazo. Es un modelo pensado para investigación sobre alineamiento, evaluación de sesgos y aplicaciones donde las negativas del modelo base resultan un obstáculo, no para despliegues comerciales sensibles sin revisión adicional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (variante de la familia Gemma 4; pipeline `any-to-any` / image-text-to-text) |
-| Parametros totales | 7.518.069.290 (≈7,5 B, segun safetensors del modelo base) |
-| Parametros activos | No confirmado como MoE. La nomenclatura "E4B" sugiere ~4B parametros efectivos (convencion Gemma), pero no hay datos explicitos en la informacion disponible. |
+| Arquitectura | Transformer multimodal (hereda la de `google/gemma-4-E4B-it`); detalles internos no disponibles en la informacion proporcionada |
+| Parametros totales | 7.518.069.290 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M (y proyector de vision en BF16) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (metadatos Hugging Face); la model card enlaza a la licencia oficial de Gemma 4 (https://ai.google.dev/gemma/docs/gemma_4_license), lo que genera ambiguedad |
-| Formato de pesos | GGUF (cuantizado); el modelo base se publica en safetensors |
+| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-Se trata de una derivacion por ablacion de `google/gemma-4-E4B-it`, un transformer multimodal que acepta entradas combinadas de imagen y texto. No se ha reentrenado el modelo: en su lugar se aplico una tecnica de edicion de pesos conocida como abliteration o ablacion de direcciones de rechazo, en este caso mediante la implementacion Arbitrary-Rank Ablation (ARA) disponible en Heretic v1.2.0. Los parametros de la ablacion declarados son: `start_layer_index=7`, `end_layer_index=36`, `preserve_good_behavior_weight=0.5783`, `steer_bad_behavior_weight=0.0001`, `overcorrect_relative_weight=0.9986` y `neighbor_count=15`. El componente intervenido es unicamente `attn.o_proj`.
+El modelo es una ablación del Gemma 4 E4B instruct de Google. No se ha reentrenado: la modificación consiste en una edición de pesos mediante *abliteration* con Heretic v1.2.0 y el método Arbitrary-Rank Ablation (ARA). Los parámetros de la ablación publicados son: `start_layer_index` = 7, `end_layer_index` = 36, `preserve_good_behavior_weight` = 0,5783, `steer_bad_behavior_weight` = 0,0001, `overcorrect_relative_weight` = 0,9986 y `neighbor_count` = 15. El único componente objetivo declarado es `attn.o_proj`.
 
-La motivacion del metodo es preservar el comportamiento util del modelo mientras se elimina la tendencia a rechazar peticiones (rechazos, objeciones, moralizacion, censura, suavizado o evasivas). El autor reporta una divergencia KL de 0,0076 frente al original, lo que indica una desviacion baja pero no nula de la distribucion de salida. No se documentan en la informacion disponible los datos de entrenamiento originales (numero de tokens, composicion del dataset, uso de RLHF/DPO) del modelo base Gemma 4, ni detalles de la tokenizacion o el mecanismo de atencion. Tampoco se especifica cuantas muestras ni que pipeline se uso para calibrar la ablacion.
+La arquitectura subyacente es la del Gemma 4 E4B, un transformer multimodal con capacidad image-text-to-text, pero la model card no detalla el número de capas, la dimensión oculta, el tipo de atención ni la composición del dataset de entrenamiento original. Tampoco se documenta si el Gemma 4 base usó RLHF, DPO u otra técnica de alineamiento; solo se indica que la ablación busca eliminar el comportamiento de rechazo aprendido. La innovación técnica destacable es precisamente el pipeline Heretic/ARA, que permite medir el compromiso entre reducción de negativas y preservación de capacidades mediante divergencia KL y benchmarks estandarizados.
 
 ## Capacidades
 
-- Generacion de texto conversacional en modo chat (tag `conversational`).
-- Procesamiento multimodal de entrada: el tag `image-text-to-text` y el pipeline `any-to-any` indican soporte de imagenes ademas de texto (incluye un "Vision Projector" en la model card, si bien el contenido esta truncado en la informacion proporcionada).
-- Reduccion drastica de rechazos: 3 de cada 100 solicitudes generan negativa, frente a 99 de cada 100 en el modelo original.
-- Razonamiento de sentido comun fisico y conocimiento general (validado en PIQA y MMLU, ver seccion de benchmarks).
-- Se distribuye en multiples cuantizaciones GGUF, lo que amplia las opciones de despliegue en CPU/GPU.
-- No hay datos explicitos sobre soporte de tool calling, function calling, agentes, multi-step reasoning ni thinking mode en la informacion disponible.
-- Cobertura multilingue: no disponible.
+- Generación de texto conversacional multi-turno, heredada del Gemma 4 E4B instruct.
+- Entrada multimodal imagen-texto (pipeline `any-to-any`, tag `image-text-to-text`), con proyector de visión separado en el repo GGUF.
+- Razonamiento de sentido común y conocimiento general, evaluado por el autor con PIQA y MMLU.
+- Reducción drástica de rechazos: 3/100 negativas frente a 99/100 del modelo original en el conjunto de prueba del autor.
+- Capacidad de seguir instrucciones con menor tendencia a sermonear, suavizar o desviar respuestas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada (el modelo base Gemma suele ser multilingüe, pero no se confirma en esta ficha).
+- Modo thinking explícito, audio u otras modalidades: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Generacion creativa sin restricciones: el modelo esta pensado para tareas de escritura donde el modelo original tenderia a rechazar peticiones (ficcion adulta, narrativa de genero, dialogos con contenido sensible), gracias a la reduccion de rechazos medida por el autor (3/100 frente a 99/100).
-- Asistente conversacional multimodal: puede integrarse en aplicaciones que reciben imagenes y texto y devuelven texto, aprovechando la naturaleza `any-to-any` e `image-text-to-text` del pipeline.
-- Despliegue en hardware de consumo: la disponibilidad de cuantizaciones Q4_K_M y Q5_K_S permite ejecutarlo en GPU con 6-8 GB de VRAM y en CPU via llama.cpp, algo inviable con la version BF16.
-- Investigacion sobre alineacion y seguridad: sirve como caso de estudio reproducible de abliteration con metricas de coste (KL divergence, PIQA, MMLU) para comparar el impacto de distintas tecnicas de ablacion.
-- Prototipado rapido de chatbots locales: al ser un GGUF ligero, se puede levantar con Ollama o LM Studio en un portatil para demos y pruebas internas.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye seis niveles de cuantizacion (BF16 a Q4_K_M) que permiten medir el trade-off entre calidad y consumo de memoria en un mismo modelo.
-- Analisis de sesgos de rechazo: util para estudiar que tipo de peticiones deja de rechazar el modelo tras la ablacion y cuales sigue bloqueando, en el contexto de auditorias de seguridad.
+- Investigación sobre alineamiento y abliteration: permite comparar el comportamiento del Gemma 4 E4B original con su versión ablacionada usando las métricas publicadas (KL 0,0076, PIQA 85,85 % frente a 86,02 %, MMLU 68,60 % frente a 69,46 %) para estudiar el coste de eliminar los rechazos.
+- Evaluación de sesgos y robustez: al reducirse las negativas, el modelo expone con más frecuencia respuestas que el original filtraría, lo que facilita auditar contenido sensible en entornos controlados de investigación.
+- Generación creativa sin fricción: escritura de ficción, guiones o narrativa con temáticas adultas o controvertidas donde el modelo base rechazaría peticiones legítimas.
+- Asistente conversacional especializado en dominios sensibles (salud, legal, seguridad): útil cuando el modelo base añade advertencias o derivaciones no deseadas, siempre con revisión humana y políticas de uso claras.
+- Procesamiento de documentos con imágenes: gracias a la pipeline image-text-to-text y al proyector de visión incluido, puede extraer y comentar información de capturas, diagramas o documentos escaneados en local.
+- Despliegue local con llama.cpp u Ollama: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en equipos de consumo, útil para prototipos y pruebas de concepto sin depender de la nube.
+- Análisis de conversaciones y moderación inversa: estudiar qué tipo de peticiones generan negativas en modelos alineados y cómo se comporta un modelo ablacionado ante ellas.
 
 ## Benchmarks y rendimiento
 
-El autor publica dos conjuntos de resultados comparando la version ablacionada con el modelo original.
+Datos publicados por el autor en la model card:
 
-| Benchmark | Modelo original (gemma-4-E4B-it) | Este modelo (Heretic/ARA) | Delta |
-|---|---|---|---|
-| PIQA (1838 preguntas, aciertos) | 1581 (86,02 %) | 1578 (85,85 %) | −0,17 pp |
-| MMLU (14.042 preguntas, aciertos) | 9753 (69,46 %) | 9633 (68,60 %) | −0,86 pp |
-| Rechazos | 99/100 | 3/100 | −96 pp |
-| Divergencia KL (frente al original) | 0 (por definicion) | 0,0076 | — |
+| Benchmark | Modelo original (gemma-4-E4B-it) | Este modelo (Heretic/ARA) |
+|---|---|---|
+| MMLU (14.042 preguntas) | 69,46 % (9.753 correctas) | 68,60 % (9.633 correctas) |
+| PIQA (1.838 preguntas) | 86,02 % (1.581 correctas) | 85,85 % (1.578 correctas) |
+| Rechazos (conjunto del autor) | 99/100 | 3/100 |
+| Divergencia KL vs. original | 0 (por definición) | 0,0076 |
 
-Desglose MMLU (original → Heretic): professional_law 52,87 % → 52,67 %; moral_scenarios 43,91 % → 41,23 %; miscellaneous 81,61 % → 82,12 %; professional_psychology 75,16 % → 73,86 %; high_school_psychology 89,17 % → 90,09 %; high_school_macroeconomics 72,82 % → 71,28 %; elementary_mathematics 65,87 % → 63,76 %; moral_disputes 68,21 % → 69,08 %; prehistory 75,31 % → 75,00 %; philosophy 70,74 % → 70,74 %.
+Desglose MMLU por asignaturas (original → Heretic): professional_law 52,87 % → 52,67 %; moral_scenarios 43,91 % → 41,23 %; miscellaneous 81,61 % → 82,12 %; professional_psychology 75,16 % → 73,86 %; high_school_psychology 89,17 % → 90,09 %; high_school_macroeconomics 72,82 % → 71,28 %; elementary_mathematics 65,87 % → 63,76 %; moral_disputes 68,21 % → 69,08 %; prehistory 75,31 % → 75,00 %; philosophy 70,74 % → 70,74 %.
 
-No se han publicado en la informacion disponible resultados de otros benchmarks (HumanEval, GSM8K, MMBench, etc.) ni comparaciones con modelos de terceros.
+No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, MMLU-Pro, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-Estimaciones a partir del numero de parametros (≈7,5 B) y los tamanos GGUF publicados. No incluyen la huella del proyector de vision, que anade consumo adicional.
-
-- Q4_K_M (≈4,7-5 GB en disco): cabe en GPU de 6 GB (RTX 3060 6 GB, GTX 1660 Super 6 GB) con contexto moderado; tambien fluido en CPU.
-- Q5_K_S / Q5_K_M (≈5,3-5,7 GB): recomendable 8 GB de VRAM (RTX 3060 Ti, RTX 2070, RX 6600 XT).
-- Q6_K (≈6,2 GB): 8-10 GB de VRAM (RTX 3070, RTX 4060 Ti 16 GB con margen).
-- Q8_0 (≈8-8,5 GB): 10-12 GB de VRAM (RTX 3080, RTX 4070).
-- BF16 (≈15 GB): 16-24 GB de VRAM (RTX 4090, RTX 3090, A100 40 GB); en GPU profesional se puede servir con mayor batch.
-- Despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp), llama-cpp-python. Para vLLM o TGI el soporte de GGUF es parcial o requiere conversion; el modelo base en safetensors seria la via preferida para servidores de alto throughput.
-- Latencia y throughput: no disponibles. Dependen en gran medida de la cuantizacion, la GPU y el backend.
+- VRAM estimada para inferencia: con 7.518 millones de parámetros, en Q4_K_M se estima alrededor de 4,5–5,5 GB de pesos más overhead de contexto y proyector de visión; en Q5_K_M en torno a 5,5–6,5 GB; en Q6_K aproximadamente 6,5–7,5 GB; en Q8_0 cerca de 8–9 GB; en BF16 unos 15–16 GB.
+- GPU recomendadas: para BF16, una RTX 4090 (24 GB) o A100/H100; para Q8_0, una RTX 4080/4090 o GPU de 12–16 GB; para Q4_K_M, una RTX 3060 de 12 GB o superior.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 con cuantizaciones Q4_K_M a Q8_0; en GPUs de 8 GB conviene usar Q4_K_M con contexto moderado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI, aunque no se detalla.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; dependerán del hardware, la cuantización y la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Rechazos | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| Este modelo (gemma-4-E4B-it-ultra-uncensored-heretic-GGUF) | ≈7,5 B | no disponible | Si (imagen-texto) | 3/100 | apache-2.0 (metadata) / Gemma 4 (model card) | GGUF |
-| google/gemma-4-E4B-it (original) | ≈7,5 B | no disponible | Si | 99/100 | Gemma 4 license | safetensors |
-| llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic (base del GGUF) | ≈7,5 B | no disponible | Si | 3/100 | apache-2.0 (metadata) | safetensors |
-| zecanard/gemma-4-E4B-it-uncensored-heretic-MLX-4bit-mixed_4_6 | no disponible | no disponible | Si | no disponible | no disponible | MLX (Apple Silicon) |
-| FreedomAISVR/Gemma-4-E4B-it-... | no disponible | no disponible | Si | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | MMLU | Licencia | Formato |
+|---|---|---|---|---|---|
+| Este modelo (gemma-4-E4B-it ultra-uncensored heretic GGUF) | 7.518 M | no disponible | 68,60 % | Apache 2.0 | GGUF |
+| google/gemma-4-E4B-it (original) | 7.518 M | no disponible | 69,46 % | Gemma 4 license | safetensors |
+| llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic (base de esta cuantización) | 7.518 M | no disponible | no disponible | Apache 2.0 | safetensors |
 
-No hay informacion suficiente para comparar con modelos de otros autores de la misma categoria (por ejemplo, derivados abliterated de Llama o Qwen de tamano similar). Los datos de estos modelos comparables figuran como "no disponible" por no aparecer en la informacion proporcionada.
+No se dispone de datos de otros modelos comparables de la misma categoría (por ejemplo, otras variantes abliterated de Gemma o modelos multimodales de ~7-8B) en la información proporcionada; por tanto, esa comparación se indica como no disponible.
 
 ## Limitaciones y advertencias
 
-- La reduccion de rechazos implica que el modelo puede generar contenido sensible, ofensivo o inapropiado sin filtros. No es apto para despliegues publicos sin moderacion adicional.
-- La edicion por abliteration puede degradar sutilmente el comportamiento en tareas donde el rechazo actuaba como senal de seguridad. La caida de MMLU (−0,86 pp) y PIQA (−0,17 pp) es pequena pero real, y la divergencia KL de 0,0076 confirma que la distribucion de salida no es identica al original.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion especificas; al tratarse de un modelo de ~7,5 B, la tasa esperable es mayor que en modelos de mayor tamano.
-- Ambiguedad de licencia: los metadatos de Hugging Face indican apache-2.0, pero la model card enlaza a la licencia oficial de Gemma 4, que impone restricciones de uso (incluidas clausulas de uso aceptable). Antes de un uso comercial es imprescindible verificar cual aplica realmente al modelo base.
-- No se dispone de informacion sobre idiomas soportados, longitud de contexto ni comportamiento multilingue; conviene validar estos extremos en el caso de uso concreto.
-- El autor advierte en la propia model card que ha alcanzado el limite de almacenamiento gratuito de Hugging Face y que podria no publicar nuevos modelos; esto afecta a la sostenibilidad y al mantenimiento del repositorio.
-- El modelo original Gemma 4 incorpora un proyector de vision, pero la informacion proporcionada esta truncada, por lo que no se puede confirmar el alcance exacto del soporte multimodal en esta version cuantizada.
-- La fecha de actualizacion del repositorio (2026-05-28) y su elevado numero de descargas (65.217) sugieren cierta adopcion, pero no sustituyen una validacion propia.
+- La ablación elimina parte del comportamiento de rechazo del modelo original, lo que puede hacer que genere contenido dañino, ilegal o éticamente problemático sin las salvaguardas habituales. No debe desplegarse en producción orientada al público sin filtros y moderación adicionales.
+- El propio autor reporta una caída de calidad medible: MMLU baja 0,86 puntos y PIQA 0,17 puntos respecto al original; la divergencia KL de 0,0076 indica que los pesos se han modificado de forma no trivial.
+- La mayor tasa de respuestas sin filtro aumenta el riesgo de alucinación en temas sensibles, ya que el modelo puede afirmar con seguridad contenido que el original habría rechazado o matizado.
+- El método ARA actúa solo sobre `attn.o_proj` en las capas 7–36; la efectividad de la ablación puede ser desigual entre tipos de peticiones y no garantiza la eliminación total de negativas.
+- La licencia declarada es Apache 2.0, pero se enlaza también la licencia de Gemma 4 de Google; conviene revisar ambas antes de un uso comercial, ya que los términos de Gemma pueden imponer restricciones adicionales.
+- No se documentan los idiomas soportados ni la longitud de contexto; no se debe asumir el contexto del Gemma 4 original sin verificarlo.
+- El repositorio ocupa 47,1 GB y el autor advierte que ha alcanzado el límite de almacenamiento gratuito de Hugging Face, lo que puede afectar a la disponibilidad futura de archivos o actualizaciones.
+- El modelo base no documenta en esta ficha el proceso de alineamiento original (RLHF/DPO), por lo que no se puede caracterizar con precisión qué comportamiento se ha eliminado.
+- El uso de un modelo "uncensored" puede incumplir políticas de plataformas, proveedores cloud o marcos regulatorios; es responsabilidad del desplegador evaluar el cumplimiento normativo.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF
-- Modelo base (safetensors): https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic
+- Repositorio Hugging Face (GGUF): https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF
+- Modelo base de esta cuantización: https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it
-- Herramienta Heretic (v1.2.0): https://github.com/p-e-w/heretic
-- Pull request de Arbitrary-Rank Ablation (ARA): https://github.com/p-e-w/heretic/pull/211
-- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Patreon del autor: https://patreon.com/LLMfan46
-- Ko-fi del autor: https://ko-fi.com/llmfan46
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Pull request del método ARA: https://github.com/p-e-w/heretic/pull/211
+- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Apoyo al autor (Ko-fi): https://ko-fi.com/llmfan46
+- Apoyo al autor (Patreon): https://patreon.com/LLMfan46

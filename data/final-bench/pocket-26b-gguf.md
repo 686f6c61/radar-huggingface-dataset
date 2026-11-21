@@ -2,104 +2,91 @@
 
 ## Resumen
 
-POCKET-26B-GGUF es una cuantización en formato GGUF del modelo google/gemma-4-26B-A4B-it, publicada por FINAL-Bench (VIDRAFT). Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 25.233.142.046 parámetros totales y aproximadamente 4.000 millones de parámetros activos por token, orientado a inferencia local en dispositivos con recursos limitados (CPU, móvil, edge). El paquete aplica una cuantización "Korean-tuned" sobre el checkpoint original sin podar, y ofrece dos builds principales: Q2_K (~11 GB) y Q4_K_M (~17 GB).
+POCKET-26B-GGUF es una cuantización en formato GGUF del modelo google/gemma-4-26B-A4B-it, publicada por FINAL-Bench (equipo VIDRAFT). Se trata de una mezcla de expertos (MoE) de 25.233.142.046 parámetros totales con aproximadamente 4.000 millones de parámetros activos por token, orientada a inferencia local en dispositivos de borde: CPU, portátiles, mini-PC y, según el autor, móviles de gama alta con memoria suficiente. El paquete llega con ajuste específico para coreano y una build recomendada Q2_K de unos 11 GB.
 
-El modelo resuelve el problema de ejecutar un LLM de gran tamaño en hardware de consumo mediante cuantización mixta y un camino de ejecución solo-CPU a través de llama.cpp. Es relevante ahora por la popularidad de los despliegues on-device (Ollama, LM Studio) y por la reducción de requisitos de memoria que permite el esquema MoE: aunque el modelo completo ocupa decenas de gigabytes, solo una fracción de los expertos se activa por token.
+El problema que aborda es el de ejecutar un modelo de razonamiento y conversación de escala media en hardware sin GPU dedicada o con GPU de consumo, manteniendo una calidad aceptable mediante cuantización mixta con imatrix. El repositorio ocupa 27,9 GB e incluye varias builds, entre ellas una Q4_K_M de 16,8 GB que el autor cita como opción principal para Ollama, LM Studio y llama.cpp.
 
-La ficha se basa únicamente en la información pública disponible en Hugging Face y en la model card. Los datos de rendimiento proceden de mediciones del editor con condiciones específicas de dispositivo, y no se han verificado de forma independiente. La licencia declarada es Apache-2.0.
+Es relevante ahora porque la familia Gemma 4 con arquitectura MoE reduce el coste por token al activar solo una fracción de los parámetros, lo que hace viable el despliegue local de un modelo de 25B con licencia Apache-2.0. La model card incluye además material promocional cruzado de otros modelos de VIDRAFT (POCKET-27B, Darwin-180B) que conviene tratar con cautela.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), derivada de Gemma 4 |
-| Parametros totales | 25.233.142.046 (~25,2 B) |
-| Parametros activos | ~4 B por token (según model card) |
+| Arquitectura | Transformer MoE (mixture-of-experts), derivada de google/gemma-4-26B-A4B-it |
+| Parámetros totales | 25.233.142.046 (dato de safetensors del modelo base) |
+| Parámetros activos | ~4B por token (según model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K (~11 GB, recomendada), Q4_K_M (~17 GB); cuantización mixta con imatrix |
-| Idiomas soportados | no disponible (la model card menciona ajuste para coreano y resúmenes en coreano, chino y japonés; no se declara lista oficial) |
+| Tipos de cuantización | Q2_K (~11 GB, recomendada), Q4_K_M (16,8 GB), cuantización mixta con imatrix; otras builds en el repo (27,9 GB total) |
+| Idiomas soportados | no disponible en la metadata; el autor indica ajuste específico para coreano y etiqueta multilingual |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es google/gemma-4-26B-A4B-it, un transformer con capas de mezcla de expertos (MoE) que activa aproximadamente 4.000 millones de parámetros por token sobre un total de 25,2 mil millones. Esta configuración reduce el coste computacional por token respecto a un modelo denso del mismo tamaño, lo que facilita la inferencia en CPU y en dispositivos edge. El paquete POCKET-26B-GGUF no modifica el checkpoint de origen (no se poda) y aplica una cuantización mixta con matriz de importancia (imatrix) etiquetada como "Korean-tuned".
+El modelo base es un transformer con mezcla de expertos: 25,2B parámetros totales con unos 4B activos por token, lo que sitúa el coste computacional de la inferencia en el rango de un modelo denso de 4B. Esta publicación no entrena el modelo desde cero: parte del checkpoint google/gemma-4-26B-A4B-it y aplica un proceso de cuantización propio de VIDRAFT, descrito como "Korean-tuned quantization" con matrices de importancia (imatrix) y precisión mixta entre capas. El autor afirma explícitamente que el modelo no está podado (unpruned).
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si el modelo base utilizó RLHF, DPO u otras técnicas de alineación. Tampoco se documentan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.) más allá de la propia arquitectura MoE del modelo base. Los detalles de entrenamiento del checkpoint original deben consultarse en la model card de google/gemma-4-26B-A4B-it.
+No se detallan en la información disponible el número de tokens de entrenamiento del modelo base, la composición del dataset, ni si hubo etapas de RLHF o DPO. Tampoco se especifica qué capas reciben mayor precisión en el esquema mixto ni el método exacto de calibración del imatrix. La model card incluye referencias a otros modelos de la familia (POCKET-27B, POCKET-27B-Pi, Darwin-180B-RSI) y a resultados de SuperCLUE de noviembre de 2026 para Darwin-180B, que no son resultados de este modelo y no deben atribuírsele.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato chat (pipeline text-generation, tag conversational).
-- Razonamiento y respuesta a preguntas: la model card reporta un resultado de GPQA para el build Q2_K (ver sección de benchmarks).
-- Capacidades multilingües: la model card incluye resúmenes en coreano, chino y japonés, y etiquetas multilingual y korean-llm; no se especifica la lista completa de idiomas.
-- Ejecución on-device: compatible con llama.cpp, Ollama y LM Studio según las etiquetas del repositorio.
-- Ejecución solo-CPU: se declara un camino de ejecución sin GPU.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, con etiqueta `conversational` en la metadata.
+- Razonamiento y asistencia local: el autor lo describe como "local text assistance".
+- Capacidades multilingües declaradas mediante la etiqueta `multilingual`, con ajuste declarado para coreano.
+- Ejecución en CPU sin GPU (etiqueta `cpu`, ruta de ejecución solo-CPU disponible).
+- Compatibilidad con endpoints (`endpoints_compatible` en la metadata) y con los runtimes Ollama, LM Studio y llama.cpp.
+- No se documentan en la información disponible capacidades de visión, audio, tool calling, function calling ni modos de razonamiento extendido (thinking mode) para esta build.
 
 ## Casos de uso
 
-- Asistencia de texto local en escritorio: ejecutar el build Q4_K_M (~17 GB) con llama.cpp u Ollama en un equipo con suficiente RAM para tareas de redacción, resumen y reescritura sin enviar datos a la nube.
-- Procesamiento en CPU sin GPU: usar el camino solo-CPU declarado para desplegar el modelo en servidores sin acelerador, aceptando menor throughput a cambio de independencia de hardware especializado.
-- Prototipado rápido con LM Studio: cargar el GGUF y validar flujos conversacionales antes de invertir en infraestructura, gracias a la integración directa con LM Studio y Ollama.
-- Aplicaciones en coreano: aprovechar el ajuste "Korean-tuned" de la cuantización para tareas de generación y asistencia en coreano en entornos locales.
-- Despliegue en dispositivos de memoria limitada: el build Q2_K (~11 GB) permite explorar inferencia en equipos con menos RAM, siempre que se reserve margen para el sistema operativo, el runtime y el contexto (la model card advierte que 11 GB de archivo no garantizan funcionamiento en un móvil de 12 GB).
-- Evaluación comparativa de cuantizaciones: usar los dos builds para medir el impacto de Q2_K frente a Q4_K_M en calidad de respuesta y consumo de memoria dentro de un mismo pipeline.
+- Asistente de texto en portátil sin GPU dedicada: con la build Q2_K (~11 GB) y llama.cpp en modo CPU se puede mantener un asistente conversacional local sin enviar datos a la nube; la arquitectura MoE con ~4B activos mantiene el coste por token contenido.
+- Despliegue en mini-PC o estación de trabajo con 16 GB de RAM/VRAM: la build Q4_K_M (16,8 GB) encaja en equipos con memoria unificada o GPU de 24 GB, sirviendo como asistente de redacción y resumen en local.
+- Procesamiento de texto en coreano: el ajuste declarado para coreano lo hace adecuado para tareas de asistencia y generación en ese idioma, aunque la cobertura multilingüe real no está documentada.
+- Prototipado rápido con Ollama o LM Studio: al ser un GGUF compatible con estos runtimes, permite validar prompts y flujos conversacionales en minutos antes de escalar a infraestructura mayor.
+- Entornos con requisitos de privacidad: al ejecutarse íntegramente en local bajo licencia Apache-2.0, es apto para procesar documentación sensible sin salida de datos.
+- Integración en aplicaciones de escritorio o de borde: la etiqueta `on-device` y `edge` sugiere su uso embebido en aplicaciones que requieren inferencia offline; conviene verificar la compatibilidad exacta de versión de llama.cpp con soporte Gemma4 antes de producción.
 
 ## Benchmarks y rendimiento
 
-La model card menciona un "reported GPQA result" para el build Q2_K, pero no incluye la cifra concreta en la información disponible. No se han publicado tablas de MMLU, HumanEval, GSM8K ni otros benchmarks en la información proporcionada.
-
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| GPQA (Q2_K) | no disponible (cifra no incluida en el texto) | La model card indica que existe un resultado reportado por el editor |
-| MMLU | no disponible | — |
-| HumanEval | no disponible | — |
-| GSM8K | no disponible | — |
-
-No se han publicado resultados de benchmarks completos en la información disponible. Los datos de la model card sobre SuperCLUE corresponden a Darwin-180B-RSI-R3, un modelo distinto de la familia del editor, y no son aplicables a POCKET-26B.
+No se han publicado resultados de benchmarks en la información disponible. La model card enlaza a una sección de evaluación, pero los únicos números citados en el material proporcionado corresponden a otros modelos de la familia (POCKET-27B-Pi en Terminal-Bench 2.1 y Darwin-180B-RSI en SuperCLUE), no a POCKET-26B-GGUF.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: Q2_K ~11 GB de archivo; Q4_K_M ~17 GB de archivo. Son tamaños de fichero en GB decimales redondeados, no mediciones de memoria de proceso; hay que añadir margen para sistema operativo, contexto y buffers del runtime.
-- GPU recomendadas: no disponible (no se especifican modelos de GPU en la información proporcionada).
-- ¿Cabe en GPU de consumo? No disponible como dato verificado. El tamaño de Q2_K (~11 GB) es compatible con GPUs de 12-16 GB solo si se dispone de margen adicional; la model card no confirma este escenario.
-- Ejecución solo-CPU: sí, se declara un camino de ejecución CPU-only.
-- Opciones de despliegue: llama.cpp (con soporte Gemma4), Ollama, LM Studio. La compatibilidad exacta de versión de aplicación debe verificarse.
-- Latencia y throughput: no disponible.
+- VRAM/RAM estimada: ~11 GB para Q2_K y ~16,8 GB para Q4_K_M, más memoria de trabajo adicional por encima del tamaño del fichero (el autor lo indica explícitamente).
+- GPU recomendadas: no disponibles de forma específica; por tamaño, una GPU de 24 GB (RTX 3090/4090, A10, L4) cubre la build Q4_K_M con margen para contexto.
+- GPU de consumo: la build Q2_K puede caber en GPUs de 12-16 GB; la Q4_K_M encaja en 24 GB. El autor no confirma un ajuste medido en móviles de 12 GB.
+- Ejecución solo-CPU: soportada mediante llama.cpp; el rendimiento dependerá del número de núcleos y del ancho de banda de memoria.
+- Opciones de despliegue: llama.cpp (runtime de referencia), Ollama, LM Studio y endpoints compatibles. No se menciona soporte de vLLM ni TGI para GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| POCKET-26B-GGUF (este) | ~25,2 B | ~4 B | no disponible | Apache-2.0 | GGUF | Hugging Face |
-| google/gemma-4-26B-A4B-it | ~25,2 B | ~4 B | no disponible | no disponible en esta ficha | safetensors (checkpoint original) | Hugging Face |
-| POCKET-35B-GGUF (mismo editor) | no disponible | no disponible | no disponible | no disponible | GGUF | Hugging Face |
-| POCKET-Darwin-180B-GGUF (mismo editor) | no disponible | no disponible | no disponible | no disponible | GGUF | Hugging Face |
-
-La comparación con alternativas de otros desarrolladores no está disponible en la información proporcionada. El modelo base google/gemma-4-26B-A4B-it es la referencia directa: POCKET-26B-GGUF es una cuantización del mismo, por lo que la comparación relevante es de precisión y consumo de memoria, no de capacidad intrínseca.
+| POCKET-26B-GGUF | 25,2B | ~4B | no disponible | Apache-2.0 | GGUF | Cuantización coreano-ajustada de Gemma 4 26B-A4B |
+| google/gemma-4-26B-A4B-it | 25,2B | ~4B | no disponible | no disponible en la información | safetensors | Modelo base original; mayor precisión, más memoria |
+| POCKET-27B-GGUF (VIDRAFT) | no disponible | no disponible | no disponible | no disponible | GGUF (Q6_K, 22,43 GB) | Basado en Qwen3.8-27B según la model card |
+| POCKET-27B-Pi-GGUF (VIDRAFT) | no disponible | no disponible | no disponible | no disponible | GGUF (16,5 GB) | Especialista en código, 29 tareas resueltas en Terminal-Bench 2.1 según el autor |
 
 ## Limitaciones y advertencias
 
-- La model card advierte explícitamente que el paquete no garantiza soporte universal en aplicaciones, no constituye una medición verificada de funcionamiento en móviles de 12 GB y no es un paquete MLX.
-- Los tamaños de archivo son GB decimales redondeados; no son mediciones de memoria de proceso. Un archivo de 11 GB no asegura operación fiable en un dispositivo de 12 GB.
-- Los resultados de calidad son mediciones del editor con condiciones específicas de dispositivo y no han sido verificados de forma independiente.
-- La cuantización Q2_K implica una pérdida de precisión mayor que Q4_K_M; el impacto exacto en calidad no está cuantificado en la información disponible.
-- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones idiomáticas específicas.
-- La licencia Apache-2.0 permite uso comercial, pero debe verificarse la licencia y los términos del modelo base google/gemma-4-26B-A4B-it, que no se detallan en esta ficha.
-- La compatibilidad exacta con versiones de llama.cpp, Ollama y LM Studio debe comprobarse antes de desplegar en producción.
-- No se dispone de información sobre tool calling, agentes ni contexto máximo, lo que limita su uso en pipelines que dependan de estas capacidades.
+- La cuantización Q2_K implica una pérdida de calidad notable frente al modelo base; el autor la recomienda como primera build por tamaño, no por fidelidad.
+- El ajuste "coreano" no viene acompañado de evaluación publicada en la información disponible; el rendimiento en castellano u otros idiomas es incierto.
+- La model card contiene material promocional cruzado de otros modelos (Darwin-180B, POCKET-27B) con cifras de terceros que no deben interpretarse como resultados de este modelo.
+- Riesgo de alucinación inherente a modelos de lenguaje; no se documentan mitigaciones específicas (RLHF, filtros) en esta publicación.
+- No se especifica la longitud de contexto soportada, lo que impide planificar cargas con ventanas largas.
+- La compatibilidad exacta con versiones de llama.cpp, Ollama y LM Studio debe verificarse: el autor advierte que se requiere soporte Gemma4 y que la compatibilidad de app/versión no está garantizada.
+- El autor niega explícitamente que se trate de un paquete MLX o de un ajuste medido para móviles de 12 GB; no debe asumirse.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base google/gemma-4-26B-A4B-it, cuya licencia no se detalla en la información proporcionada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF
-- Archivos del repositorio: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF/tree/main
-- Build Q2_K: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF/resolve/main/POCKET-26B-Q2_K.gguf
-- Build Q4_K_M: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF/resolve/main/POCKET-26B-Q4_K_M.gguf
-- Guía de configuración del editor: https://vidraft.net/p/pocket.html?model=pocket_26b
+- Ficheros y descargas: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF/tree/main
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Guía de instalación del autor: https://vidraft.net/p/pocket.html?model=pocket_26b
 - POCKET-35B: https://huggingface.co/FINAL-Bench/POCKET-35B-GGUF
+- POCKET-27B: https://huggingface.co/FINAL-Bench/POCKET-27B-GGUF
+- POCKET-27B-Pi: https://huggingface.co/FINAL-Bench/POCKET-27B-Pi-GGUF
 - POCKET-Darwin-180B: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
 - Darwin-180B-RSI-R3: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
 - Leaderboard SuperCLUE: https://www.superclueai.com/homepage

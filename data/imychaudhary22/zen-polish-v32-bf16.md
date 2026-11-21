@@ -2,110 +2,106 @@
 
 ## Resumen
 
-ZenPolish v3.2 4B (bf16) es un ajuste fino de Qwen3-4B-Instruct-2507 especializado en una única tarea: limpiar dictado procedente de reconocimiento automático de voz (ASR). El modelo recibe texto transcrito en bruto, con muletillas, falsos arranques y puntuación ausente, y devuelve el mismo contenido en forma escrita: corrige mayúsculas y puntuación, elimina ruido conversacional, restaura formas escritas de números, fechas, horas, importes, URL y correos electrónicos, y conserva el significado y las palabras del hablante. Lo publica el autor `imYChaudhary22` bajo el paraguas del proyecto ZenVoice.
+Kanso Satori 1.0 (publicado originalmente como zen-polish-v32-bf16) es un modelo de limpieza y formateo de dictado desarrollado por BuilderHelm AI para ZenVoice, una aplicación de dictado para macOS. Se trata de un fine-tuning mediante LoRA del modelo Qwen3-4B-Instruct-2507, cuyo objetivo es transformar transcripciones crudas de voz a texto en texto escrito bien formateado: corrige puntuación y mayúsculas, elimina muletillas y falsos arranques, y restaura las formas escritas de números, fechas, horas, importes, URL y direcciones de correo electrónico sin alterar el significado ni la formulación original del hablante.
 
-Técnicamente es un transformer denso de 4.022.468.096 parámetros (8,04 GB de pesos en bf16, repartidos en dos shards), construido fusionando un adaptador LoRA de rango 32 sobre los pesos originales del modelo base mediante `mlx_lm fuse`. Este repositorio es el maestro en precisión completa desde el que se generaron las builds cuantizadas de 4 y 3 bits orientadas a ejecución en dispositivo, y el punto de partida recomendado para cualquier cuantización futura.
+El modelo tiene 4.022.468.096 parámetros en precisión completa bf16 (8,04 GB en dos shards) y está empaquetado en formato MLX, por lo que su ejecución está pensada para Apple Silicon. La relevancia de esta variante bf16 es que constituye el maestro de precisión completa desde el que se derivan las compilaciones cuantizadas para uso en dispositivo (la versión de 4 bits DWQ de 2,26 GB y la de 3 bits de 1,76 GB), y el punto de partida para cualquier cuantización futura.
 
-Su relevancia es acotada pero clara: demuestra que un modelo de 4B puede resolver la capa de "post-procesado de dictado" con una tasa de error de palabra del 5,1 % en un conjunto de evaluación de 500 dictados, a 15 tok/s en un Apple M5 con 8,2 GB de memoria, y que la versión de 4 bits mantiene la calidad (4,7 % WER) a 47 tok/s. No es un asistente general: es un componente de pipeline.
+El modelo no es un asistente generalista: es una herramienta especializada de post-procesado de ASR. Su utilidad práctica radica en que un modelo de 4B puede superar en calidad de formateo a alternativas más pequeñas (la variante Lite de 1,7B) manteniendo una latencia aceptable en hardware de consumo Apple, aunque a costa de un mayor consumo de memoria (8,2 GB) y una velocidad de decodificación notablemente inferior (15 tok/s frente a 47 tok/s de la versión de 4 bits en un M5).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3), ajuste fino con LoRA fusionada sobre Qwen3-4B-Instruct-2507 |
-| Parámetros totales | 4.022.468.096 |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No indicada en la model card; el entrenamiento de la LoRA usó una longitud máxima de 1.024 tokens. El modelo base Qwen3-4B-Instruct-2507 declara 262.144 tokens en su documentación pública |
-| Tipos de cuantización | bf16 (este repositorio), 4-bit DWQ (`zen-polish-v32-4bit`, 2,26 GB) y 3-bit (`zen-polish-v32-3bit`, 1,76 GB); todas en formato MLX |
-| Idiomas soportados | No disponibles (el campo de idiomas no está declarado; la model card, el prompt de sistema y los ejemplos están en inglés) |
-| Licencia | Apache-2.0 (heredada del modelo base Qwen3-4B-Instruct-2507) |
-| Formato de pesos | safetensors en bf16 (MLX, dos shards, 8,04 GB), más `chat_template.jinja` y ficheros de tokenizer incluidos |
+| Arquitectura | Transformer decoder-only denso (Qwen3), fine-tuning LoRA fusionado |
+| Parametros totales | 4.022.468.096 (4B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (entrenamiento con max length 1.024) |
+| Tipos de cuantizacion | bf16 (esta version); derivadas oficiales de 4 bits DWQ y 3 bits |
+| Idiomas soportados | No disponible en la informacion proporcionada |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors en formato MLX (libreria mlx), dos shards, 8,04 GB |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3-4B-Instruct-2507, un transformer denso de 4B parámetros. Sobre él se entrenó una LoRA de rango 32, alpha 64 y escala 2.0, con dropout 0.05, aplicada a las 36 capas y a todos los módulos lineales. El entrenamiento se ejecutó sobre `mlx-community/Qwen3-4B-Instruct-2507-4bit` (revisión `50d4277`), con schedule de decaimiento coseno de 1e-4 a 1e-6 durante 3.400 pasos, batch de 2, 3.500 iteraciones, longitud máxima de 1.024 tokens y gradient checkpointing. El checkpoint final (paso 3500) se seleccionó sobre un conjunto de validación retenido y se fusionó después en los pesos bf16 originales.
+El modelo parte de Qwen3-4B-Instruct-2507, un transformer decoder-only denso de 4B parámetros, y le aplica un adaptador LoRA de rango 32, alpha 64, escala 2.0 y dropout 0.05 sobre las 36 capas y todos los módulos lineales. El entrenamiento se ejecutó sobre la versión de 4 bits del modelo base (`mlx-community/Qwen3-4B-Instruct-2507-4bit`, revisión `50d4277`) con un schedule de decaimiento coseno de 1e-4 a 1e-6 durante 3.400 pasos, batch de 2, 3.500 iteraciones, longitud máxima de 1.024 tokens y gradient checkpointing. El checkpoint final (paso 3500) se seleccionó sobre un conjunto de validación reservado, y el adaptador se fusionó posteriormente en los pesos bf16 originales con `mlx_lm fuse`.
 
-Los datos proceden del corpus ZenPolish v2.2, compuesto por 10 fuentes y 86.524 pares de entrenamiento (dictado bruto → texto limpio); las fuentes son exclusivamente MIT, Apache-2.0, CC-BY-4.0 y CC0, con lista de atribuciones en el repositorio ZenVoice. No se documenta ninguna fase de RLHF o DPO adicional. La innovación operativa del modelo no está en la arquitectura sino en el formato: v3.2 se entrenó con un bloque de pensamiento vacío (`<think>\n\n</think>\n\n`) al inicio de cada respuesta, de modo que el `chat_template.jinja` incluido cierra el prompt de generación con ese bloque. Usar la plantilla estándar de Qwen3-4B-Instruct-2507 degrada la salida, porque no reproduce el formato visto en entrenamiento. Por el mismo motivo deben conservarse los ficheros de tokenizer incluidos, que son los empleados durante el ajuste.
+Los datos de entrenamiento provienen del corpus de la versión v2.2, compuesto por 86.524 pares de entrenamiento extraídos de 10 fuentes con licencias MIT, Apache-2.0, CC-BY-4.0 y CC0. Una innovación relevante para la reproducibilidad es que el adaptador se entrenó con un bloque de pensamiento vacío (`<think>\n\n</think>\n\n`) al inicio de cada respuesta, de modo que el `chat_template.jinja` incluido en el repositorio difiere del template estándar de Qwen3-4B-Instruct-2507 y debe usarse obligatoriamente junto con los ficheros de tokenizer empaquetados; de lo contrario, las filas de entrenamiento se renderizan de forma distinta a la vista durante el ajuste.
 
 ## Capacidades
 
-- Reescritura de dictado ASR: corrección de puntuación, mayúsculas y espaciado sobre transcripciones en bruto.
-- Eliminación de muletillas, titubeos y falsos arranques ("so um", "like", "uh") sin alterar el contenido semántico.
-- Normalización de formas escritas: números, fechas, horas, importes monetarios, URL y direcciones de correo.
-- Adaptación de registro y capitalización según una línea de contexto `app:` incluida en el prompt de sistema (por ejemplo, para ajustar el tono al cliente de destino).
-- Generación de texto conversacional estándar por herencia del modelo base, aunque no es el comportamiento para el que fue ajustado.
-- Modo sin razonamiento explícito: el modelo emite un bloque de pensamiento vacío y responde directamente, lo que reduce latencia y evita tokens desperdiciados.
-- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni matemáticas avanzadas en la información disponible.
+- Formateo de dictado: corrección de puntuación, mayúsculas y espaciado en transcripciones ASR crudas.
+- Eliminación de muletillas, falsos arranques y repeticiones propias del habla espontánea.
+- Normalización de formas escritas: números, fechas, horas, importes monetarios, URL y direcciones de correo electrónico.
+- Adaptación de tono y capitalización al contexto de una aplicación indicada mediante una línea `app:` en el prompt de sistema.
+- Generación de texto conversacional general, heredada del modelo base Qwen3-4B-Instruct-2507.
+- Modo sin pensamiento explícito (`enable_thinking=False`), con el bloque de pensamiento vacío inyectado por el template.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, visión ni audio; el modelo es exclusivamente de texto.
 
 ## Casos de uso
 
-- Post-procesado en pipelines de dictado médico o legal: el modelo recibe la transcripción bruta de un motor ASR y devuelve texto punteado y normalizado listo para revisión, manteniendo la terminología del hablante. La ventana de 1.024 tokens usada en entrenamiento cubre dictados de varios minutos por segmento.
-- Integración en aplicaciones de notas de voz: sobre la build de 4 bits (2,26 GB, 47 tok/s en M5) el modelo cabe en un portátil Apple Silicon y permite limpiar el dictado en el propio dispositivo sin enviar audio ni transcripciones a la nube.
-- Corrección de correos y mensajes dictados: con una línea `app:` en el prompt de sistema se ajusta la capitalización y el tono al contexto (correo formal, chat interno, mensaje a cliente), lo que evita reescribir manualmente cada borrador.
-- Normalización de datos en formularios y CRM: conversión de horas, importes y fechas dictados oralmente a sus formas escritas canónicas antes de insertarlos en un campo estructurado.
-- Enriquecimiento de subtítulos y transcripciones: aplicar el modelo sobre segmentos de una transcripción larga para recuperar puntuación y párrafos antes de publicar el texto.
-- Etapa de preprocesado en sistemas RAG: limpiar consultas dictadas por voz antes de pasarlas a un recuperador, de modo que la query llegue sin muletillas y con entidades bien formateadas.
-- Evaluación comparativa de motores ASR: usar el modelo como normalizador fijo para que las diferencias de WER entre motores reflejen errores reales de reconocimiento y no diferencias de formato.
+- Post-procesado de dictado en aplicaciones de voz a texto: el modelo recibe la transcripción cruda del ASR y devuelve texto limpio y puntuado, integrándose como etapa final del pipeline de ZenVoice en macOS sobre Apple Silicon con MLX.
+- Generación de actas y notas de reunión: a partir de transcripciones de voz, produce texto legible con puntuación correcta y sin muletillas, adecuado para revisión humana posterior.
+- Redacción de correos dictados: la normalización de direcciones de correo y URL, junto con la adaptación de tono mediante la línea `app:`, permite generar mensajes listos para enviar desde un cliente de correo.
+- Introducción de datos estructurados por voz: la restauración de fechas, horas e importes en su forma escrita facilita el registro de citas, gastos o eventos dictados en aplicaciones de productividad.
+- Accesibilidad: usuarios con movilidad reducida que dependen del dictado obtienen texto con calidad de escritura sin necesidad de corrección manual posterior.
+- Maestro para cuantización y despliegue en dispositivo: al ser la fuente bf16 de las compilaciones de 4 y 3 bits, sirve como referencia para evaluar la pérdida de calidad introducida por la cuantización y para generar nuevas variantes con `mlx_lm.convert` o `mlx_lm dwq`.
+- Evaluación de modelos de formateo: su conjunto de evaluación eval_v500 (500 dictados con control de fuga) y sus métricas WER, exact match y Punct F1 permiten comparar sistemáticamente alternativas de post-procesado ASR.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre `eval_v500` (500 dictados, con control de fuga de datos), decodificación greedy, máximo 200 tokens, Apple M5 y MLX 0.32.2:
+Evaluación sobre eval_v500 (500 dictados, con control de fuga de datos), decodificación greedy, máximo 200 tokens, Apple M5, MLX 0.32.2:
 
-| Métrica | v3.2 bf16 (este modelo) | v3.2 4-bit DWQ | v3.2 forma entrenada (base 4-bit + adaptador en vivo) | v2.2 Lite (1,7B) |
+| Metrica | v3.2 bf16 (este modelo) | v3.2 4-bit DWQ | v3.2 forma entrenada (base 4-bit + adaptador en vivo) | v2.2 Lite (1,7B) |
 |---|---|---|---|---|
-| WER | 5,1 % | 4,7 % | 5,0 % | 5,5 % |
-| Exact match | 65,6 % | 67,2 % | 65,2 % | 65,8 % |
+| WER | 5,1% | 4,7% | 5,0% | 5,5% |
+| Exact match | 65,6% | 67,2% | 65,2% | 65,8% |
 | Punct F1 | 0,849 | 0,859 | 0,861 | 0,863 |
-| Peso de los pesos | 8,04 GB | 2,26 GB | 2,40 GB | 1,05 GB |
-| Velocidad de decodificación | 15 tok/s | 47 tok/s | 36 tok/s | 73 tok/s |
+| Pesos | 8,04 GB | 2,26 GB | 2,40 GB | 1,05 GB |
+| Velocidad de decodificacion | 15 tok/s | 47 tok/s | 36 tok/s | 73 tok/s |
 
-El autor indica que las cuatro variantes están dentro del ruido estadístico en esta suite. La ventaja del 4B frente a Lite se observa en datos retenidos de v2.2: la build de 4 bits obtiene +3,6 puntos de exact match (IC del 95 %: +0,4 a +6,8). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, y el modelo no está pensado para esas tareas.
+Según el autor, las cuatro variantes están dentro del ruido estadístico en este conjunto. La ventaja del 4B sobre la variante Lite se manifiesta en datos reservados de v2.2: la compilación de 4 bits obtiene +3,6 puntos de exact match (IC 95% de +0,4 a +6,8). No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en bf16: 8,2 GB de memoria según el autor; 8,04 GB de pesos en dos shards.
-- Inferencia con la build de 4 bits: 2,26 GB de pesos; la recomendada para uso en dispositivo.
-- Inferencia con la build de 3 bits: 1,76 GB de pesos.
-- GPU: la librería es MLX, por lo que el soporte nativo es Apple Silicon (series M). El benchmark se ejecutó en un Apple M5. No se documenta soporte para A100, H100 ni RTX 4090 en la información proporcionada.
-- ¿Cabe en GPU de consumo? Las builds de 4 y 3 bits caben en equipos Apple con 8 GB de memoria unificada; la bf16 requiere unos 8,2 GB, por lo que encaja en Mac con 16 GB o más.
-- Despliegue: `mlx_lm` (`load`, `generate`, `make_sampler`). El autor menciona `mlx_lm.convert` y `mlx_lm dwq` para cuantizar. No se documentan rutas para vLLM, llama.cpp, Ollama ni TGI; ejecutar los pesos MLX fuera del ecosistema MLX requeriría una conversión no descrita en la model card.
-- Rendimiento: 15 tok/s en bf16 y 47 tok/s en 4 bits sobre Apple M5 con MLX 0.32.2 y decodificación greedy. No hay datos de throughput con batches ni de latencia con prompt largo.
-- Requisito obligatorio de plantilla: cargar el `chat_template.jinja` y los ficheros de tokenizer incluidos en el repositorio; usar los del modelo base altera el formato de generación.
+- VRAM/memoria unificada estimada para esta versión bf16: 8,2 GB según el autor.
+- Hardware de referencia: Apple M5 con MLX 0.32.2, donde decodifica a 15 tok/s.
+- Para uso en dispositivo se recomienda la compilación de 4 bits (2,26 GB, 47 tok/s en M5) o la de 3 bits (1,76 GB); esta versión bf16 es el maestro de precisión completa, no la compilación óptima para producción en dispositivo.
+- Al estar empaquetado para MLX, el despliegue previsto es Apple Silicon; no se documenta soporte para GPU NVIDIA (A100, H100, RTX 4090) ni para backends CUDA en la información disponible.
+- Opciones de despliegue documentadas: `mlx_lm` (carga y generación) y `mlx_lm.convert` / `mlx_lm dwq` para cuantización. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Throughput y latencia: 15 tok/s en decodificación greedy sobre M5; no se proporcionan datos de latencia de prefill ni de throughput en lote.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | WER (eval_v500) | Peso | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | WER (eval_v500) | Exact match | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zen-polish-v32-bf16 (este) | 4,02B | No indicado en la card (1.024 tokens en entrenamiento) | 5,1 % | 8,04 GB | Apache-2.0 | Hugging Face, MLX |
-| zen-polish-v32-4bit | 4,02B | Igual que el maestro | 4,7 % | 2,26 GB | Apache-2.0 | Hugging Face, MLX |
-| zen-polish-v32-3bit | 4,02B | Igual que el maestro | No publicado | 1,76 GB | Apache-2.0 | Hugging Face, MLX |
-| zen-polish-v22-lite (1,7B) | ~1,7B | No disponible | 5,5 % | 1,05 GB | Apache-2.0 | Hugging Face, MLX |
-| Qwen3-4B-Instruct-2507 (base) | 4,02B | 262.144 tokens (según documentación de Qwen) | No aplica: no es un modelo de limpieza de dictado | ~8 GB en bf16 | Apache-2.0 | Hugging Face |
+| Kanso Satori 1.0 bf16 (este) | 4B | No disponible | 5,1% | 65,6% | Apache-2.0 | Hugging Face, formato MLX |
+| Kanso Satori 1.0 (4-bit DWQ) | 4B | No disponible | 4,7% | 67,2% | Apache-2.0 | Hugging Face, 2,26 GB |
+| Kanso Satori 1.0 3-bit | 4B | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face, 1,76 GB |
+| Kanso Koi 1.0 / v2.2 Lite | 1,7B | No disponible | 5,5% | 65,8% | Apache-2.0 | Hugging Face, 1,05 GB |
 
-Frente al modelo base, la comparación relevante no es de benchmarks generales sino de comportamiento: Qwen3-4B-Instruct-2507 no está ajustado para devolver únicamente el texto limpio sin comentarios, que es exactamente lo que aporta el ajuste de ZenVoice. No se dispone de datos de benchmarks de terceros para establecer comparaciones con otros modelos especializados en post-procesado de ASR.
+La comparación con modelos de propósito general del mismo tamaño (por ejemplo, el propio Qwen3-4B-Instruct-2507 sin fine-tuning) no está disponible en la información proporcionada, ya que no se han publicado métricas de formateo de dictado para ellos en esta fuente.
 
 ## Limitaciones y advertencias
 
-- Modelo de propósito muy estrecho: está entrenado para limpiar dictado y devolver solo el texto final. Usarlo como asistente general, para código o para razonamiento multi-paso producirá resultados pobres y no evaluados.
-- Tasa de error residual: 5,1 % de WER y 65,6 % de exact match implican que aproximadamente un tercio de las salidas no coincide exactamente con la referencia. En dominios sensibles (importes, dosis, direcciones) requiere revisión humana.
-- Riesgo de pérdida de contenido: al eliminar muletillas y falsos arranques, el modelo puede descartar información que el hablante sí quería conservar. No se ha publicado una evaluación específica de fidelidad semántica.
-- Dependencia estricta de la plantilla: usar el `chat_template.jinja` del modelo base en lugar del incluido en el repositorio rompe el formato de entrenamiento (bloque de pensamiento vacío) y degrada la salida.
-- Idiomas no declarados: la card no especifica cobertura lingüística y todos los ejemplos y el prompt de sistema están en inglés. El comportamiento con dictado en castellano no está documentado ni evaluado.
-- Sesgos: no se han publicado evaluaciones de sesgo, toxicidad ni comportamiento diferencial por variedad dialectal o acento. El corpus de 86.524 pares procede de 10 fuentes abiertas y su distribución demográfica es desconocida.
-- Ecosistema restringido: los pesos son MLX. No hay builds GGUF, ni integración documentada con vLLM, TGI, llama.cpp u Ollama.
-- Contexto práctico: aunque el modelo base soporte ventanas muy largas, el ajuste se hizo con longitud máxima de 1.024 tokens y la evaluación con 200 tokens de salida; no hay garantías de calidad más allá de ese régimen.
-- Licencia: Apache-2.0 permite uso comercial, pero las atribuciones del corpus de entrenamiento deben conservarse según lo indicado en el repositorio ZenVoice. El enlace de licencia apunta al fichero LICENSE del modelo base.
-- Madurez del proyecto: el repositorio registra 0 descargas y 0 likes en el momento de la ficha, con creador y actualización del 24 de octubre de 2026; no hay validación independiente de los resultados.
+- Modelo especializado: su rendimiento óptimo se limita a la tarea de limpieza de dictado; no está diseñado como asistente generalista ni para razonamiento complejo.
+- Riesgo de alucinación: al reescribir texto puede alterar el significado o la formulación original del hablante; el prompt de sistema insiste en preservar el significado y las palabras, pero no hay garantía formal.
+- Dependencia estricta del template: usar el `chat_template.jinja` y los ficheros de tokenizer empaquetados es obligatorio; el template estándar de Qwen3-4B-Instruct-2507 no incluye el bloque de pensamiento vacío con el que se entrenó y degrada los resultados.
+- Idiomas soportados no documentados: no se especifica qué lenguas cubre el corpus de entrenamiento ni su calidad fuera del inglés.
+- Longitud de contexto no documentada; el entrenamiento usó una longitud máxima de 1.024 tokens, lo que limita los dictados largos.
+- Formato MLX: no hay soporte documentado para CUDA, vLLM, llama.cpp u otros backends, lo que restringe el despliegue a Apple Silicon.
+- La licencia Apache-2.0 permite uso comercial, pero los datos de entrenamiento solo proceden de fuentes MIT, Apache-2.0, CC-BY-4.0 y CC0; la lista de atribuciones está en el repositorio de ZenVoice.
+- Esta versión bf16 consume 8,2 GB de memoria y decodifica a 15 tok/s, por lo que no es adecuada para dispositivos con memoria limitada; para ello existen las compilaciones cuantizadas.
+- No se documentan sesgos específicos del fine-tuning; los sesgos heredados del modelo base Qwen3-4B-Instruct-2507 no están evaluados en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/imYChaudhary22/zen-polish-v32-bf16
-- Build de 4 bits: https://huggingface.co/imYChaudhary22/zen-polish-v32-4bit
-- Build de 3 bits: https://huggingface.co/imYChaudhary22/zen-polish-v32-3bit
-- Modelo de referencia del corpus de entrenamiento: https://huggingface.co/imYChaudhary22/zen-polish-v22-lite
-- Build previa de 4 bits de la serie v2.2: https://huggingface.co/imYChaudhary22/zen-polish-v22-4bit
+- Repositorio de la organización: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-bf16
+- Compilación de 4 bits recomendada: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
+- Compilación de 3 bits: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-3bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
-- Repositorio ZenVoice (lista de atribuciones de datos, referenciado en la card, sin URL directa en la información disponible)
-- Registro de la variante v3 de 4 bits en free2aitools: https://free2aitools.com/model/imychaudhary22/zen-polish-v3-4bit
-- Ficha de la variante v2.1 1.7B de 4 bits en LLM Explorer: https://llm-explorer.com/model/imYChaudhary22%2Fzen-polish-v2-1.7b-4bit,56AROxVWtO1FYoLTMr3YHg
+- Corpus de entrenamiento (Kanso Koi 1.0): https://huggingface.co/BuilderHelm/Kanso-Koi-1.0
+- Página de ZenVoice: https://getzenvoice.com
+- Descarga de ZenVoice para Mac: https://getzenvoice.com/download
+- Organización BuilderHelm en Hugging Face: https://huggingface.co/BuilderHelm
+- Licencia Apache-2.0 del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE

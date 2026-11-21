@@ -2,102 +2,103 @@
 
 ## Resumen
 
-CLAP2-M es un modelo contrastivo audio-texto desarrollado por LAION, presentado como parte de la familia CLAP2 (cinco tamanos entre 27M y 340M parametros). Su funcion es proyectar clips de audio y descripciones textuales en ingles a un espacio de embeddings compartido, lo que permite tareas de recuperacion audio-texto, clasificacion zero-shot de audio y extraccion de embeddings de audio de proposito general. Este repositorio concreto corresponde al tamano medio, con 152,8 millones de parametros sumando ambas torres.
+CLAP2-M es un modelo contrastivo audio-texto desarrollado por LAION que proyecta clips de audio y descripciones textuales en ingles a un espacio de embeddings compartido. Forma parte de la familia CLAP2, compuesta por cinco variantes (de 27M a 340M parametros), y se distribuye tanto en formato OpenCLIP como en Transformers. Con 152,8 millones de parametros totales (suma de las dos torres), se posiciona como la variante intermedia de la familia, ofreciendo un equilibrio entre coste computacional y calidad de representacion.
 
-El modelo se entrena desde cero sobre LAION-Audio-XL, un corpus de 366 millones de pares audio-texto, durante 1.024 millones de muestras vistas con un schedule de learning rate WSD. Frente a CLAP original, la innovacion principal es la torre de audio: un vision transformer NaFlex que opera sobre parches de log-mel y acepta audio de cualquier duracion sin recorte ni padding a una longitud fija, generando un unico embedding por clip.
+El modelo resuelve tareas de recuperacion audio-texto, clasificacion zero-shot de audio y extraccion de embeddings de audio para clasificadores posteriores. Su torre de audio es un transformer de vision NaFlex que opera sobre parches de espectrograma log-mel, lo que le permite aceptar audio de cualquier duracion sin recortes ni padding a una longitud fija, generando un unico embedding por clip.
 
-Es relevante ahora porque ofrece una alternativa Apache 2.0 a modelos audio-texto previos, con soporte en OpenCLIP (rama `main`) y un formato Transformers (`Clap2Model`, `Clap2Processor`) cuyo soporte en la libreria esta pendiente de release. Los resultados publicados en MAEB-30 (52,3%), HEAR-17 (81,4%) y MSEB (29,4%) lo sitúan muy cerca del modelo grande de la familia con la mitad de parametros.
+Es relevante porque se entrena desde cero sobre LAION-Audio-XL, un corpus de 366 millones de pares audio-texto, y porque su rendimiento en los benchmarks MAEB-30, HEAR-17 y MSEB es competitivo con modelos mas grandes de la misma familia. La licencia Apache 2.0 facilita su adopcion en entornos comerciales y de investigacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Contrastiva dual-tower: vision transformer NaFlex sobre parches de log-mel (audio) + torre de texto |
-| Parametros totales | 152.766.656 (ambas torres) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Audio de cualquier duracion; en evaluacion se limitan a los primeros 30 s (`max_num_patches=1504`). Contexto de texto: no disponible |
-| Tipos de cuantizacion | No disponible (pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Ingles (texto) |
+| Arquitectura | Transformer de dos torres (audio + texto); torre de audio NaFlex ViT sobre parches log-mel |
+| Parametros totales | 152.766.656 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Audio: clips de hasta 30 s entrenados (acepta mas, no evaluado); texto: 256 tokens |
+| Tipos de cuantizacion | no disponible (pesos en float32 en el ejemplo; entrenamiento con autocast bf16) |
+| Idiomas soportados | Ingles (texto); audio de habla en multiples idiomas segun el corpus, pero la torre de texto solo procesa ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (OpenCLIP y Transformers, mismos pesos); tamano del repo 1,2 GB |
+| Formato de pesos | safetensors (repo de 1,8 GB), compatible con OpenCLIP y Transformers |
 
 ## Arquitectura y entrenamiento
 
-CLAP2-M es un modelo contrastivo de dos torres. La torre de audio es un vision transformer NaFlex que procesa un espectrograma log-mel de 128 bins (50 Hz a 16 kHz, ventana de 320 muestras) troceado en parches; al no fijar la longitud de entrada, produce un embedding por clip independientemente de su duracion, con padding enmascarado mediante `patch_valid` cuando se procesan lotes de clips de distinta longitud. La torre de texto mapea frases en ingles al mismo espacio, y el entrenamiento contrastivo alinea ambas modalidades con una `logit_scale` aprendida.
+CLAP2-M sigue una arquitectura contrastiva de dos torres. La torre de audio es un transformer de vision NaFlex que procesa espectrogramas log-mel de 128 bins (50 Hz a 16 kHz, hop de 320 muestras), cortados en parches no solapados de 16x16, lo que produce 50 tokens por segundo de audio. La torre de texto emplea un tokenizador BPE estilo GPT-2 con contexto de 256 tokens. Ambas torres se entrenan para alinear sus embeddings mediante una perdida contrastiva.
 
-El entrenamiento se realizo desde cero sobre LAION-Audio-XL (366M pares audio-texto) durante 1.024M muestras vistas, con schedule WSD y checkpoint final. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa (no aplicables a un modelo de embeddings). El preprocesado integra la mezcla a mono y el remuestreo a 32 kHz, de modo que el modelo acepta cualquier frecuencia de muestreo y numero de canales de entrada.
+El entrenamiento se realizo desde cero sobre LAION-Audio-XL (366 millones de pares audio-texto), con 1.024 millones de muestras vistas y un schedule de learning rate WSD (warmup-stable-decay), tomando el ultimo checkpoint. Los clips de entrenamiento se agruparon en buckets de longitud de 6,9, 9,0, 13,0, 22,6 y 30,1 segundos. No se menciona el uso de RLHF ni DPO; el objetivo es puramente contrastivo.
 
 ## Capacidades
 
-- Extraccion de embeddings de audio de proposito general (un vector por clip, normalizable).
-- Recuperacion audio-texto bidireccional (audio a texto y texto a audio) por similitud coseno.
-- Clasificacion zero-shot de audio mediante prompts textuales en ingles.
-- Clasificacion de pares (pair classification) y clustering sobre embeddings de audio.
-- Procesamiento de audio de duracion variable sin recorte fijo, incluyendo lotes con clips de distinta longitud.
-- Cobertura de dominios de habla, musica y sonidos ambientales segun los benchmarks reportados (MAEB-30, HEAR-17).
-- No soporta tool calling, agentes, generacion de texto ni razonamiento multi-paso: es un modelo de representacion, no generativo.
-- Capacidades multilingues limitadas al ingles en la torre de texto.
+- Recuperacion audio-texto: dado un clip, recuperar las descripciones textuales mas probables, y viceversa.
+- Clasificacion zero-shot de audio: asignar etiquetas a clips usando prompts textuales en lenguaje natural.
+- Extraccion de embeddings de audio: representaciones vectoriales por clip para clasificadores downstream.
+- Extraccion de embeddings de texto: representaciones vectoriales de descripciones en ingles.
+- Procesamiento de audio de duracion variable: acepta cualquier sample rate y numero de canales (se promedia a mono y se remuestrea a 32 kHz).
+- Procesamiento por lotes con padding enmascarado (`patch_valid`), que preserva la equivalencia con la codificacion individual.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto; es un modelo de representacion, no generativo.
+- Capacidades multilingues limitadas: la torre de texto solo procesa ingles.
 
 ## Casos de uso
 
-- Busqueda semantica en archivos de audio: indexar los embeddings de una fonoteca y recuperar clips mediante consultas en lenguaje natural ("una puerta que se cierra de golpe"), aprovechando que el modelo acepta clips de cualquier duracion sin recorte.
-- Etiquetado automatico de grandes corpus de audio: clasificacion zero-shot con prompts descriptivos por clase, util para pre-anotar datasets de sonido ambiental o musica antes de una revision humana.
-- Moderacion y triaje de contenido sonoro: detectar categorias de audio en pipelines de subida de contenido comparando embeddings contra un conjunto de prompts de referencia.
-- Deduplicacion y agrupamiento de audio: clustering sobre los embeddings normalizados para agrupar grabaciones similares en un catalogo musical o de efectos de sonido.
-- Analisis de habla y musica a escala: obtener representaciones para alimentar clasificadores ligeros aguas abajo (deteccion de musica de fondo, segmentacion por tipo de contenido) sin entrenar un encoder propio.
-- Investigacion en representaciones audio-texto: linea base Apache 2.0 de 152,8M parametros para experimentos de alineamiento multimodal, con pesos disponibles en formato OpenCLIP y Transformers.
-- Sistemas de recomendacion basados en descripcion: emparejar descripciones textuales de un usuario con embeddings de fragmentos de audio de un catalogo.
+- Etiquetado automatico de archivos de audio: clasificar clips de efectos de sonido, musica o habla en categorias predefinidas mediante prompts textuales, sin necesidad de entrenar un clasificador especifico.
+- Curacion de datasets de audio: filtrar o rankear grandes colecciones de audio por consultas textuales (por ejemplo, "un perro ladra" o "lluvia sobre un tejado") usando similitud de embeddings.
+- Busqueda semantica en archivos multimedia: indexar los embeddings de audio de una videoteca y permitir busquedas por descripcion textual en lenguaje natural.
+- Clasificacion de eventos sonoros en entornos urbanos o industriales: usar los embeddings como features para un clasificador ligero entrenado con pocas muestras etiquetadas.
+- Deteccion de contenido en plataformas: identificar musica, habla o efectos concretos en subidas de usuarios para moderacion o catalogacion automatica.
+- Analisis de grabaciones de campo para bioacustica: segmentar grabaciones largas en ventanas de hasta 30 s y comparar embeddings para detectar especies o patrones acusticos.
+- Sistemas de recomendacion musical o de podcasts: representar clips y descripciones en un espacio comun para sugerir contenido similar a partir de consultas textuales.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (porcentajes, mayor es mejor). MAEB-30 es la media sobre 30 tareas del Massive Audio Embedding Benchmark; HEAR-17 la media sobre 17 tareas HEAR; MSEB la media sobre 62 puntuaciones MSEB en ingles.
+Resultados publicados en la model card (porcentajes, mayor es mejor):
 
 | Modelo | Parametros | MAEB-30 | HEAR-17 | MSEB |
 |---|---|---|---|---|
 | CLAP2-L | 340,1M | 53,6 | 81,9 | 30,3 |
-| **CLAP2-M (este)** | **152,8M** | **52,3** | **81,4** | **29,4** |
+| **CLAP2-M** | **152,8M** | **52,3** | **81,4** | **29,4** |
 | CLAP2-S | 103,9M | 51,8 | 81,8 | 29,8 |
 | CLAP2-XS | 48,3M | 49,1 | 80,6 | 27,6 |
 | CLAP2-XXS | 27,3M | 46,2 | 79,1 | 28,0 |
 
-No se han publicado en la informacion disponible comparaciones numericas con modelos audio-texto de otros autores; la model card remite al paper para dichas comparaciones.
+MAEB-30 es la media sobre 30 tareas del Massive Audio Embedding Benchmark (habla, musica y sonido; clasificacion, zero-shot, pair classification, clustering y retrieval). HEAR-17 es la media sobre 17 tareas HEAR (todas excepto Beehive y Maestro 5h). MSEB es la media sobre 62 puntuaciones MSEB en ingles. Los resultados se calculan usando solo los primeros 30 s de cada clip.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,6 GB solo para pesos (152,8M parametros); en fp16/bf16, unos 0,3 GB. El consumo real depende del tamano del lote y de la longitud de los clips, ya que la torre NaFlex procesa un numero variable de parches.
-- Cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU para cargas moderadas.
-- GPU recomendadas para throughput alto: A100, H100 o L40S para indexar corpus grandes por lotes; RTX 4090 para prototipado y servicio de baja latencia.
-- Despliegue via OpenCLIP (rama `main`, no en releases de PyPI) o via Transformers una vez publicado el soporte de `Clap2Model`/`Clap2Processor`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: con 152,8M parametros en float32, los pesos ocupan aproximadamente 611 MB; sumando activaciones y buffers, se puede ejecutar con comodidad en GPUs de 4-8 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; para lotes grandes o procesamiento por lotes de clips de 30 s, se recomienda RTX 4090, A100 o H100.
+- Cabe en GPU consumer: si, en practicamente todas las GPUs con al menos 4 GB de VRAM.
+- Opciones de despliegue: OpenCLIP (`open_clip_torch>=4.2.1`) y Transformers; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo de embeddings).
+- Latencia y throughput: no disponibles en la informacion proporcionada. El coste crece de forma cuadratica con la longitud del audio debido a la atencion completa, por lo que se recomienda segmentar grabaciones largas en ventanas de hasta 30 s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto de audio | MAEB-30 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| CLAP2-M | 152,8M | Cualquier duracion (evaluado a 30 s) | 52,3 | Apache 2.0 | Hugging Face, OpenCLIP main |
-| CLAP2-L | 340,1M | Cualquier duracion (evaluado a 30 s) | 53,6 | Apache 2.0 | Hugging Face, OpenCLIP main |
-| CLAP2-S | 103,9M | Cualquier duracion (evaluado a 30 s) | 51,8 | Apache 2.0 | Hugging Face, OpenCLIP main |
-| CLAP original (LAION) | No disponible en la informacion | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto audio | Licencia | MAEB-30 | HEAR-17 | MSEB |
+|---|---|---|---|---|---|---|
+| CLAP2-M | 152,8M | hasta 30 s (entrenado) | Apache 2.0 | 52,3 | 81,4 | 29,4 |
+| CLAP2-L | 340,1M | hasta 30 s (entrenado) | Apache 2.0 | 53,6 | 81,9 | 30,3 |
+| CLAP2-S | 103,9M | hasta 30 s (entrenado) | Apache 2.0 | 51,8 | 81,8 | 29,8 |
+| CLAP2-XS | 48,3M | hasta 30 s (entrenado) | Apache 2.0 | 49,1 | 80,6 | 27,6 |
 
-La comparacion con modelos audio-texto de otros autores (por ejemplo, variantes de CLAP previas o modelos propietarios) no esta disponible en la informacion proporcionada; el paper referenciado en la model card contiene dichas comparaciones.
+No se dispone de datos de benchmarks de otros modelos audio-texto comparables en la informacion proporcionada. La model card remite al paper (arXiv:2611.11592) para comparaciones con otros modelos audio-texto.
 
 ## Limitaciones y advertencias
 
-- La torre de texto solo entiende ingles; el rendimiento en otros idiomas no esta garantizado ni documentado.
-- Las similitudes coseno son bajas en terminos absolutos; deben compararse entre textos para un mismo audio, no contra un umbral fijo. Para probabilidades, aplicar `logit_scale.exp()` y softmax.
-- La clasificacion zero-shot es sensible a la redaccion de los prompts: la model card recomienda frases completas descriptivas, evitar etiquetas desnudas y negaciones, promediar varios prompts por clase y restar la media por clase antes de elegir la etiqueta.
-- Riesgo de sesgo heredado de LAION-Audio-XL: la composicion del corpus (366M pares) condiciona el vocabulario y los dominios sonoros bien representados; no se documentan analisis de sesgo en la informacion disponible.
-- Riesgo de alucinacion en sentido estricto no aplica (no genera texto), pero si de falsos positivos en clasificacion zero-shot cuando las clases son acusticamente cercanas.
-- En evaluacion se limitan los clips a los primeros 30 s (`max_num_patches=1504`); para clips mas largos, el embedding cubre solo esa ventana salvo que se trocee manualmente.
-- El soporte en OpenCLIP requiere la rama `main` (no hay release en PyPI) y el soporte en Transformers esta pendiente de publicacion; esto complica la integracion en produccion con versiones fijadas.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del corpus de entrenamiento para casos de uso sensibles.
+- La torre de texto solo procesa ingles; el corpus contiene habla en varios idiomas, pero las consultas y descripciones deben escribirse en ingles.
+- El tokenizador distingue mayusculas y minusculas; los textos escritos integramente en mayusculas se tokenizan en piezas raras y obtienen peores puntuaciones. Se recomienda escribir en minusculas o convertir a minusculas los textos en mayusculas de al menos tres palabras.
+- Riesgo de alucinacion en el sentido de asignaciones erroneas: la clasificacion zero-shot puede producir puntuaciones altas para clases incorrectas si los prompts no cubren bien las variantes del sonido.
+- Se recomienda usar varias descripciones por clase en frases completas, evitar etiquetas escuetas y negaciones, promediar los embeddings de los prompts y restar la puntuacion media de cada clase antes de elegir la clase top.
+- Los clips de mas de 30 s no estan evaluados; el coste crece de forma cuadratica con la longitud, por lo que conviene segmentar y agregar embeddings.
+- Los pesos se distribuyen en float32; no se documentan cuantizaciones oficiales.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar el cumplimiento de las condiciones del corpus de entrenamiento y de las licencias de los datos de audio que procese.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/laion/clap2-medium-audioxl-s1B
-- Modelo grande (CLAP2-L): https://huggingface.co/laion/clap2-large-audioxl-s1B
-- Modelo pequeno (CLAP2-S): https://huggingface.co/laion/clap2-small-audioxl-s1B
-- Modelo XS (CLAP2-XS): https://huggingface.co/laion/clap2-xs-audioxl-s1B
-- Modelo XXS (CLAP2-XXS): https://huggingface.co/laion/clap2-xxs-audioxl-s1B
-- Repositorio OpenCLIP: https://github.com/mlfoundations/open_clip
-- Paper de CLAP2: no disponible en la informacion proporcionada (referenciado en la model card)
+- Hugging Face: https://huggingface.co/laion/clap2-medium-audioxl-s1B
+- Paper: https://arxiv.org/abs/2611.11592
+- Codigo: https://github.com/LAION-AI/clap2
+- Pagina del proyecto: https://projects.laion.ai/clap2/
+- Modelo CLAP2-L: https://huggingface.co/laion/clap2-large-audioxl-s1B
+- Modelo CLAP2-S: https://huggingface.co/laion/clap2-small-audioxl-s1B
+- Modelo CLAP2-XS: https://huggingface.co/laion/clap2-xs-audioxl-s1B
+- Modelo CLAP2-XXS: https://huggingface.co/laion/clap2-xxs-audioxl-s1B

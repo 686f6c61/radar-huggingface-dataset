@@ -2,56 +2,53 @@
 
 ## Resumen
 
-vsp-persona-qwen-0.5b es un ajuste fino de tipo LoRA, fusionado en los pesos completos, sobre Qwen/Qwen2.5-0.5B-Instruct. Lo desarrolla el usuario de Hugging Face vishnusureshperumbavoor y su objetivo es conversar adoptando la persona de Vishnu Suresh Perumbavoor, es decir, reproducir su estilo conversacional, vocabulario, ritmo tecnico y tono sin necesidad de system prompt.
+vsp-persona-qwen-0.5b es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct de Alibaba, desarrollado por vishnusureshperumbavoor, cuyo objetivo es conversar adoptando la persona de "Vishnu Suresh Perumbavoor", es decir, reproducir su estilo conversacional, vocabulario, ritmo tecnico y tono. No es un modelo de proposito general, sino un modelo de personaje (persona) concebido para integrarse en asistentes conversacionales de marca personal, como el bot de portfolio V-S-P del propio autor.
 
-El modelo parte de la arquitectura Qwen2 de 0,5B parametros (494.032.768 parametros reales segun safetensors) y se ha entrenado nativamente con sintaxis ChatML, de modo que el rol de persona queda codificado en los pesos y no en el prompt de sistema. Esto lo hace especialmente adecuado para asistentes de portafolio o bots personales embebidos en navegador, donde el espacio y la latencia son criticos.
+Tecnicamente se trata de un transformer decoder-only de aproximadamente 494 millones de parametros, derivado del modelo base de 0.5B de la familia Qwen2.5, con una ventana de contexto heredada del modelo original. El ajuste se realizo mediante LoRA (r=16, alpha=32, aplicado a todas las capas de proyeccion lineal) y posteriormente se fusiono en los pesos completos, de modo que el resultado es un modelo denso estandar sin adaptadores separados.
 
-Su relevancia es acotada: no es un modelo generalista de proposito multiple, sino una specializacion de nicho. El interes tecnico esta en el formato de publicacion (safetensors y GGUF q4_k_m de aproximadamente 380 MB) y en la demostracion de un pipeline de ajuste LoRA sobre un modelo pequeno para despliegue in-browser con WebAssembly/WebGPU y llama.cpp.
+Su relevancia actual es limitada pero concreta: demuestra un patron de despliegue de modelos de persona de muy bajo coste, con version cuantizada GGUF q4_k_m de unos 380 MB que puede ejecutarse directamente en el navegador mediante WebAssembly/WebGPU (wllama) o llama.cpp, sin necesidad de infraestructura de servidor. Esta pensado para conversaciones cortas y coherentes con una identidad fija, no para tareas de razonamiento complejo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only Qwen2 (modelo base Qwen2.5-0.5B-Instruct) |
-| Parametros totales | 494.032.768 (aproximadamente 0,5B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada del base Qwen2.5-0.5B-Instruct, no confirmada en la model card) |
-| Tipos de cuantizacion | GGUF q4_k_m incluido en el repo; safetensors en precision completa (se menciona fp16 en el ejemplo de uso) |
+| Arquitectura | Transformer decoder-only (Qwen2) |
+| Parametros totales | 494.032.768 (~0,5B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-0.5B-Instruct) |
+| Tipos de cuantizacion | GGUF q4_k_m (version publicada, ~380 MB); safetensors en fp16 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors y GGUF |
-| Metodo de ajuste | PEFT / LoRA (r=16, alpha=32, todas las capas de proyeccion lineal), fusionado en pesos completos |
-| Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
-| Tamano del repo | 1,4 GB |
-| Formato de prompt | ChatML (`<|im_start|>user ... <|im_end|><|im_start|>assistant ... <|im_end|>`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen2, heredado de Qwen2.5-0.5B-Instruct. Sobre esa base se aplico un ajuste fino con PEFT/LoRA de rango 16 y alpha 32 sobre todas las capas de proyeccion lineal, y posteriormente los adaptadores se fusionaron en los pesos completos para producir un checkpoint autonómo. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO adicionales.
+El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de la familia Qwen2. El ajuste fino se realizo con PEFT/LoRA con rango r=16 y alpha=32, aplicado a todas las capas de proyeccion lineal, y posteriormente los adaptadores se fusionaron en los pesos completos, generando un checkpoint denso convencional. No se especifica en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO adicionales.
 
-La innovacion principal es de caracter metodologico: el entrenamiento se realizo nativamente sin system prompts, usando la sintaxis ChatML para que el modelo adopte el estilo de la persona de forma automatica. Esto elimina la necesidad de ingenieria de prompts para mantener el rol y simplifica el despliegue en entornos con recursos limitados. Ademas, el repositorio incluye una cuantizacion GGUF q4_k_m de aproximadamente 380 MB pensada para ejecucion in-browser mediante @wllama/wllama, WebAssembly, WebGPU y llama.cpp.
+La innovacion principal es de caracter metodologico: el modelo se entreno de forma nativa sin system prompt, usando la sintaxis ChatML (`<|im_start|>user ... <|im_end|><|im_start|>assistant ... <|im_end|>`), de modo que adopta el estilo de la persona de forma automatica sin necesidad de ingenieria de prompts. Ademas, se publica una version GGUF q4_k_m optimizada para ejecucion en navegador con WebAssembly y WebGPU mediante `@wllama/wllama`, lo que permite desplegarlo en clientes sin backend.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con estilo de persona fijado en los pesos.
-- Adopcion automatica de tono, vocabulario y ritmo tecnico sin system prompt.
-- Conversacion en formato ChatML con turnos de usuario y asistente.
-- Ejecucion in-browser mediante GGUF q4_k_m y @wllama/wllama (WebAssembly/WebGPU).
-- Compatibilidad con llama.cpp y con el pipeline text-generation de Transformers.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (no se documentan idiomas).
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generacion de texto conversacional multi-turno con identidad de persona fija.
+- Adopcion automatica de estilo, tono y vocabulario del personaje sin system prompt.
+- Soporte de sintaxis ChatML para estructurar turnos de usuario y asistente.
+- Ejecucion en navegador mediante GGUF q4_k_m y wllama (WebAssembly/WebGPU).
+- Compatibilidad con llama.cpp para inferencia local.
+- Integracion como endpoint de text-generation (tag `endpoints_compatible`).
+- Capacidades de razonamiento, codigo y matematicas limitadas por el tamano del modelo base (0.5B); no se documentan mejoras especificas en estas areas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Bot de portafolio personal en navegador: el modelo se integra como asistente del sitio web mediante el GGUF q4_k_m y @wllama/wllama, respondiendo en el estilo del autor sin necesidad de backend ni de system prompt, gracias a sus aproximadamente 380 MB en cuantizacion q4_k_m.
-- Demo de conversacion con la persona en paginas estaticas: al ejecutarse en WebAssembly/WebGPU, permite ofrecer una experiencia conversacional sin servidor, reduciendo costes de infraestructura y latencia de red.
-- Prototipado rapido de asistentes con personalidad: sirve como plantilla para validar pipelines de ajuste LoRA sobre modelos de 0,5B antes de escalar a modelos mayores.
-- Asistente de FAQ tecnico con voz propia: para responder preguntas sobre proyectos y trayectoria del autor manteniendo un tono consistente, siempre que se acote el dominio y se validen las respuestas.
-- Evaluacion de tecnicas de persona encoding: util en investigacion para comparar el enfoque sin system prompt frente a alternativas con prompt de sistema en modelos pequenos.
-- Despliegue en entornos con recursos muy limitados: cabe en CPU y en GPUs de gama baja, lo que permite ejecutarlo en dispositivos de borde o en contenedores sin acelerador dedicado.
-- Generacion de respuestas conversacionales de bajo coste: adecuado para tareas de chat simple donde no se requiere razonamiento complejo ni conocimiento factual extenso.
+- Bot de portfolio personal: el modelo puede gestionar conversaciones sobre proyectos y trayectoria del autor manteniendo un tono consistente, integrandose en la web como asistente embebido gracias a su GGUF de ~380 MB y su ejecucion via WebAssembly.
+- Demostracion de tecnicas de persona fine-tuning: sirve como ejemplo reproducible de como adaptar un modelo pequeno con LoRA y fusion de pesos para crear un personaje conversacional sin system prompt.
+- Asistente de atencion en landing pages: al ejecutarse en el cliente, permite ofrecer respuestas conversacionales sin coste de servidor ni latencia de red, adecuado para volumenes moderados de visitantes.
+- Prototipado rapido de agentes conversacionales: su tamano reducido permite iterar sobre prompts, temperaturas y flujos de dialogo en una GPU de consumo o incluso en CPU.
+- Educacion y talleres: util como caso practico en cursos sobre fine-tuning con PEFT/LoRA, cuantizacion GGUF y despliegue en navegador.
+- Pruebas de integracion de endpoints compatibles: el tag `endpoints_compatible` permite usarlo como modelo de prueba en pipelines que consumen APIs de text-generation antes de escalar a modelos mayores.
+- Chatbot de bajo consumo en dispositivos: su huella de memoria permite desplegarlo en entornos con recursos limitados donde un modelo mayor no cabria.
 
 ## Benchmarks y rendimiento
 
@@ -59,38 +56,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: en torno a 1 GB para los pesos (0,5B parametros), mas overhead de activaciones y cache KV.
-- VRAM estimada en GGUF q4_k_m: aproximadamente 380 MB de pesos, ejecutable en CPU sin GPU dedicada.
-- GPU recomendadas: cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien funciona en CPU.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU con 2 GB o mas de VRAM, y en CPU.
-- Opciones de despliegue: Transformers (fp16), llama.cpp, @wllama/wllama (WebAssembly/WebGPU) y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 1 GB en fp16 para los ~494M de parametros; en torno a 0,4-0,6 GB con cuantizacion q4_k_m.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problema, aunque el modelo esta sobredimensionado para estas ultimas.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: transformers (fp16), llama.cpp, `@wllama/wllama` (WebAssembly/WebGPU), endpoints compatibles con la API de Hugging Face; Ollama y vLLM no se mencionan explicitamente en la informacion disponible.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vsp-persona-qwen-0.5b | 494M | no disponible | apache-2.0 | safetensors, GGUF | Ajuste de persona sobre Qwen2.5-0.5B-Instruct |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | apache-2.0 | safetensors, GGUF | Modelo base generalista, sin persona fijada |
-| Otros ajustes de persona sobre modelos pequenos | variable | variable | variable | variable | No disponible comparativa concreta en la informacion proporcionada |
+| vsp-persona-qwen-0.5b | ~494M | no disponible | Apache 2.0 | HF (safetensors + GGUF) | Fine-tuning de persona sobre Qwen2.5-0.5B-Instruct |
+| Qwen/Qwen2.5-0.5B-Instruct | ~494M | no disponible | Apache 2.0 | HF | Modelo base, proposito general, requiere system prompt |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | no disponible | Apache 2.0 | HF | Mayor capacidad de razonamiento, mayor huella |
+| SmolLM2-360M-Instruct | ~360M | no disponible | Apache 2.0 | HF | Alternativa de tamano similar para despliegue en el borde |
 
-La comparacion directa con alternativas de la misma categoria (ajustes de persona sobre modelos de 0,5B) no esta disponible en la informacion proporcionada. El unico contraste fiable es con su modelo base, que carece de la especializacion de persona y requiere system prompt para adoptar un rol.
+La comparacion con modelos de persona especificos no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de nicho: su proposito es encarnar una persona concreta, no resolver tareas generales de razonamiento, codigo o matematicas con calidad competitiva.
-- Riesgo de alucinacion elevado: al ser un modelo de 0,5B y estar especializado en estilo, puede generar afirmaciones factuales incorrectas sobre la persona o sobre temas tecnicos.
-- Sesgos conocidos: no documentados en la informacion disponible; al derivar de Qwen2.5-0.5B-Instruct puede heredar sesgos del modelo base.
-- Idiomas soportados: no documentados; el entrenamiento parece orientado al ingles por los ejemplos de la model card.
-- Longitud de contexto: no confirmada en la model card; conviene verificar el limite efectivo del base antes de usarlo en conversaciones largas.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero el contenido de la persona y los datos de entrenamiento pueden estar sujetos a otras consideraciones no documentadas.
-- Caveat para produccion: la personalidad fijada en los pesos dificulta el control fino del comportamiento; no se documentan mecanismos de moderacion ni de refusal.
-- Ausencia de benchmarks y de adopcion (0 descargas, 0 likes en el momento de la consulta): no hay evidencia publica de calidad ni de robustez en produccion.
+- Modelo de persona: no es un asistente de proposito general; su comportamiento esta sesgado hacia la identidad y el estilo de una persona concreta, lo que puede producir respuestas fuera de lugar en dominios ajenos.
+- Riesgo de alucinacion elevado: con ~494M de parametros, la capacidad de razonamiento y de verificacion factica es limitada; puede inventar datos sobre la persona o sobre temas tecnicos.
+- Sesgos conocidos: no documentados en la informacion disponible; al derivar de Qwen2.5-0.5B-Instruct hereda los sesgos del modelo base, no evaluados en esta ficha.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan documentados; el entrenamiento parece orientado a conversacion en ingles segun los ejemplos de la model card.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el contenido generado ni sobre el uso de la identidad de la persona representada.
+- Caveat para produccion: sin benchmarks publicados ni evaluacion de calidad, no se recomienda su uso en produccion para tareas criticas sin una evaluacion previa propia.
+- El modelo se entreno sin system prompt; introducir uno puede alterar el comportamiento esperado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/vishnusureshperumbavoor/vsp-persona-qwen-0.5b
+- Hugging Face: https://huggingface.co/vishnusureshperumbavoor/vsp-persona-qwen-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Repositorio del bot de portafolio V-S-P: https://github.com/vishnusureshperumbavoor/V-S-P
-- @wllama/wllama (runtime in-browser): no disponible enlace directo en la informacion proporcionada
-- Paper o blog del modelo: no disponible
+- Repositorio del bot de portfolio V-S-P: https://github.com/vishnusureshperumbavoor/V-S-P
+- Libreria wllama (ejecucion en navegador): no disponible en la informacion proporcionada
+- Paper o blog tecnico del modelo: no disponible en la informacion proporcionada

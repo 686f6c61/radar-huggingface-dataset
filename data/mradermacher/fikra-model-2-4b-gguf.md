@@ -2,94 +2,89 @@
 
 ## Resumen
 
-Fikra-Model-2-4B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo base Fikra-Model-2-4B, publicado por el usuario zabibutechnika en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido en la comunidad por generar cuantizaciones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 4.205.751.296 parámetros según los pesos en safetensors, lo que lo sitúa en la categoría de 4B.
+Fikra-Model-2-4B es un modelo de lenguaje de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) desarrollado originalmente por Zabibu Technika y distribuido en formato GGUF por mradermacher. Esta disenado con un enfoque claro hacia el despliegue en dispositivo (on-device) y el funcionamiento sin conexion (offline-first), con atencion especial al contexto africano, concretamente a Kenia y al idioma suajili. La model card lo etiqueta como derivado de la familia Qwen3.5, lo que sugiere una arquitectura transformer densa heredada de dicha base.
 
-La relevancia de esta publicación es práctica: facilita ejecutar un modelo de 4B en hardware de consumo mediante cuantizaciones de 2 a 8 bits, sin necesidad de disponer de los pesos originales en precisión completa. El paquete incluye un conjunto amplio de variantes (Q2_K, Q3_K_S/M/L, Q4_K_S/M, Q5_K_S/M, Q6_K, Q8_0, IQ4_XS y x-f16), lo que permite ajustar el equilibrio entre calidad y consumo de memoria.
+El modelo resuelve el problema de disponer de un asistente conversacional ligero que pueda ejecutarse localmente en hardware modesto, sin depender de conectividad a Internet ni de infraestructura en la nube. Es relevante ahora porque la demanda de modelos pequenos, multilingues y desplegables en el borde (edge) crece en regiones con conectividad limitada, y porque el ecosistema GGUF permite ejecutarlo con llama.cpp y herramientas derivadas en equipos de consumo.
 
-No obstante, la información pública disponible es muy limitada: no se detallan arquitectura, datos de entrenamiento, licencia ni idiomas soportados. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño total del repo es de 38,9 GB, coherente con incluir múltiples cuantizaciones y una versión f16.
+Este repositorio concreto no contiene los pesos originales, sino cuantizaciones estaticas generadas por mradermacher a partir de `zabibutechnika/Fikra-Model-2-4B`. La licencia Apache 2.0 facilita su uso comercial y su integracion en productos. Los idiomas declarados son ingles y suajili (en, sw).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 4.205.751.296 |
-| Parámetros activos | no aplica (no consta que sea MoE) |
+| Arquitectura | Transformer denso (derivado de Qwen3.5, segun la model card) |
+| Parametros totales | 4.205.751.296 (aprox. 4,2 mil millones) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles (en) y suajili (sw) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Fikra-Model-2-4B. Por el número de parámetros (4,2B) y el pipeline declarado como conversacional, se trata presumiblemente de un transformer decoder-only orientado a diálogo, pero este dato no está confirmado en la documentación proporcionada. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La informacion disponible indica que el modelo base es `zabibutechnika/Fikra-Model-2-4B` y que la model card lo etiqueta con el tag `qwen3.5`, lo que apunta a una arquitectura transformer densa heredada de la familia Qwen3.5. No se dispone de detalles sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni configuracion exacta del tokenizador en la informacion proporcionada.
 
-Respecto al proceso de cuantización, la model card del repositorio indica que se han generado cuantizaciones estáticas (quantize_version 2) a partir de los pesos convertidos a formato HF (convert_type: hf) del modelo original de zabibutechnika. Se incluyen variantes K-quant clásicas e IQ4_XS, lo que sugiere el uso de la herramienta de cuantización de llama.cpp con imatrix opcional, aunque este extremo no se detalla.
+Tampoco hay datos publicados sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Las etiquetas `africa`, `kenya`, `swahili`, `on-device` y `offline-first` sugieren un enfasis en datos y casos de uso regionales, pero no se especifica la metodologia de entrenamiento ni innovaciones tecnicas concretas. Este repositorio es una conversion a GGUF con cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) realizada por mradermacher.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es "conversational", por lo que el modelo está orientado a diálogo multi-turno.
-- Ejecución local en formato GGUF mediante llama.cpp y runtimes compatibles (Ollama, LM Studio, entre otros).
-- Compatibilidad declarada con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles.
-- El resto de capacidades específicas (tool calling, razonamiento multi-paso, matemáticas, código, visión, multilingüismo) no están documentadas y no pueden confirmarse.
+- Generacion de texto conversacional en ingles y suajili.
+- Razonamiento y respuesta a instrucciones de caracter general, heredado de la base Qwen3.5.
+- Capacidades multilingues limitadas a los idiomas declarados (en, sw); no se confirma soporte de otros idiomas.
+- Orientacion a despliegue on-device y funcionamiento offline-first.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision, audio o modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales: al tratarse de un modelo de 4B en GGUF, puede desplegarse en un portátil o estación de trabajo sin GPU dedicada usando la cuantización Q4_K_M, ofreciendo respuestas de chat con un consumo de memoria moderado.
-- Prototipado rápido de chatbots: la disponibilidad de múltiples cuantizaciones permite iterar entre calidad (Q8_0) y velocidad (Q2_K) según la fase de desarrollo, sin cambiar de modelo.
-- Integración en aplicaciones de escritorio: herramientas como LM Studio o Ollama pueden cargar directamente los ficheros GGUF, lo que simplifica la incorporación del modelo en aplicaciones de escritorio con inferencia offline.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye prácticamente toda la escala de bits, lo que lo hace útil para medir la degradación de calidad de un modelo de 4B al reducir la precisión.
-- Entornos con recursos limitados: las variantes Q2_K y Q3_K_S permiten ejecutar el modelo en dispositivos con 2-3 GB de RAM libre, útil para pruebas en hardware embebido o contenedores pequeños.
-- Filtrado y clasificación de texto en local: para tareas sencillas de etiquetado o resumen de textos cortos, un modelo de 4B cuantizado puede bastar y evita el envío de datos a servicios externos.
+- Asistente conversacional offline en dispositivo: el modelo puede ejecutarse localmente en un movil o mini-PC mediante llama.cpp con cuantizaciones Q4_K_M (2,8 GB), sin necesidad de conexion, adecuado para entornos con conectividad intermitente.
+- Atencion al cliente en suajili e ingles: permite gestionar conversaciones multi-turno en ambos idiomas en kioscos o terminales de autoservicio desplegados en Kenia y Africa Oriental.
+- Traduccion asistida y mediacion linguistica: util para traduccion informal entre ingles y suajili en aplicaciones educativas o de salud comunitaria, dado el soporte bilingue declarado.
+- Procesamiento de texto en el borde para ONGs y administraciones: clasificacion, resumen y extraccion de informacion de documentos en escenarios con recursos de red limitados.
+- Prototipado rapido de aplicaciones conversacionales: su tamano (2-4,6 GB en GGUF) permite iterar en portatiles de consumo con GPU modestas o incluso en CPU.
+- Educacion y tutoria local: asistente de practica de idiomas o apoyo educativo desplegado en aulas sin infraestructura cloud, gracias a la licencia Apache 2.0 y al bajo coste de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (aproximada según el tamaño de fichero típico de cada cuantización para 4,2B parámetros):
-  - Q2_K: en torno a 1,8-2,2 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L: en torno a 2,2-2,8 GB.
-  - Q4_K_S / Q4_K_M: en torno a 2,8-3,2 GB.
-  - Q5_K_S / Q5_K_M: en torno a 3,2-3,6 GB.
-  - Q6_K: en torno a 3,6-4,0 GB.
-  - Q8_0: en torno a 4,5-5,0 GB.
-  - x-f16: en torno a 8,5-9,0 GB.
-- GPU recomendadas: cualquier GPU con 6 GB o más de VRAM puede ejecutar las cuantizaciones Q4 y Q5 (RTX 3060, RTX 4060, RTX 2070). Para Q8_0 se recomienda 8 GB o más (RTX 3070, RTX 4060 Ti, RTX 4070). Para f16, 12 GB o más (RTX 4070 Ti, RTX 4080, A10).
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas actuales con 6-8 GB de VRAM usando cuantizaciones Q4/Q5.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para servidores, llama.cpp con servidor HTTP o vLLM si se dispone de los pesos en safetensors (vLLM no carga GGUF de forma nativa en todas sus versiones).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 2,0 GB (Q2_K), 2,8 GB (Q4_K_M), 3,6 GB (Q6_K) y 4,6 GB (Q8_0), segun los tamanos de fichero publicados; el f16 ocupa 8,5 GB.
+- GPU recomendadas: cualquier GPU consumer con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070) es suficiente para las cuantizaciones Q4-Q8; para f16 se recomienda 10-12 GB (RTX 3080, RTX 4070 Ti).
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 6 GB o mas para Q4_K_M; tambien puede ejecutarse en CPU.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el modelo base original usa transformers. La model card indica compatibilidad con endpoints.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparación rigurosa. A modo orientativo por tamaño, podría situarse junto a otros modelos de ~4B en GGUF como Qwen2.5-3B, Llama-3.2-3B o Phi-3.5-mini, pero no hay información que permita afirmar equivalencias de calidad.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Fikra-Model-2-4B (este) | 4,2 B | no disponible | en, sw | Apache 2.0 | GGUF, safetensors |
+| Qwen2.5-3B / Qwen3 (familia base) | ~3-4 B | no disponible | multilingue amplio | Apache 2.0 (segun variante) | safetensors, GGUF |
+| Llama 3.2 3B | 3,2 B | 128 K (segun ficha oficial) | multilingue | Llama 3.2 Community License | safetensors, GGUF |
+| Gemma 2 2B | 2,6 B | 8 K (segun ficha oficial) | multilingue | Gemma Terms of Use | safetensors, GGUF |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Fikra-Model-2-4B | 4,2B | no disponible | no disponible | GGUF |
-| Qwen2.5-3B | 3,1B | 32K (modelo base) | Apache 2.0 (modelo base) | safetensors, GGUF |
-| Llama-3.2-3B | 3,2B | 128K (modelo base) | Llama 3.2 Community License | safetensors, GGUF |
-| Phi-3.5-mini | 3,8B | 128K (modelo base) | MIT | safetensors, GGUF |
-
-Los datos de los modelos comparativos corresponden a sus respectivas fichas públicas y se incluyen solo como referencia de categoría; no implican comparación de rendimiento con Fikra-Model-2-4B.
+Nota: los datos de los modelos comparativos provienen de sus fichas publicas conocidas; los de Fikra se limitan a lo indicado en la informacion disponible. No se dispone de comparativas de rendimiento (benchmarks) para Fikra, por lo que la comparacion se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Información insuficiente: no se documentan arquitectura, datos de entrenamiento, idiomas ni licencia, lo que impide evaluar su idoneidad para producción.
-- Licencia desconocida: al no indicarse la licencia del modelo base, no puede confirmarse el uso comercial. Es imprescindible verificar la licencia del modelo original (zabibutechnika/Fikra-Model-2-4B) antes de cualquier despliegue.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de este tamaño; sin benchmarks ni model card detallada no puede acotarse su fiabilidad.
-- Idiomas: no se especifican los idiomas soportados; el rendimiento en castellano es desconocido.
-- Contexto: se desconoce la longitud de contexto, lo que limita el diseño de aplicaciones que dependan de ventanas largas.
-- Madurez: el repositorio tiene 0 descargas y 0 likes, y fue creado recientemente; no hay evidencia de uso en la comunidad ni validación independiente.
-- Cuantizaciones agresivas: las variantes Q2_K y Q3_K pueden degradar notablemente la coherencia en modelos pequeños de 4B; se recomienda Q4_K_M o superior para uso real.
-- Procedencia: es una cuantización de terceros; conviene contrastar la integridad de los ficheros con el modelo original antes de usarlos en entornos críticos.
+- No se han publicado datos sobre sesgos; al estar orientado a Kenia y suajili, puede reflejar sesgos de los datos regionales empleados, pero no se documentan.
+- Riesgo de alucinacion inherente a modelos de 4 B; no hay evaluaciones publicadas de fidelidad.
+- Longitud de contexto no documentada: planificar el despliegue sin asumir ventanas largas hasta confirmarlo con el modelo base.
+- Soporte limitado a ingles y suajili; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar la procedencia y los terminos del modelo base `zabibutechnika/Fikra-Model-2-4B` antes de produccion.
+- Este repositorio contiene solo cuantizaciones GGUF; para fine-tuning o uso con transformers hay que acudir al modelo base original.
+- El tag `qwen3.5` sugiere herencia de una base Qwen, pero no se detalla la version exacta ni posibles restricciones adicionales de dicha familia.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Fikra-Model-2-4B-GGUF
 - Modelo base: https://huggingface.co/zabibutechnika/Fikra-Model-2-4B
-- Repositorio GGUF alternativo del autor original: https://huggingface.co/zabibutechnika/Fikra-Model-2-4B-GGUF
-- Perfil del cuantizador: https://huggingface.co/mradermacher/models
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Fikra-Model-2-4B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Fikra-Model-2-4B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

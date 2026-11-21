@@ -2,122 +2,106 @@
 
 ## Resumen
 
-DeepSeek-V4.1-1017-Ablitrated-Efficient es un ajuste fino derivado de `deepseek-ai/DeepSeek-V4.1-Flash-1017` cuyo objetivo es eliminar la práctica totalidad de los rechazos duros (refusals) manteniendo las puntuaciones de referencia del modelo base. Lo publica el usuario `pentacoxian-dev` partiendo de un checkpoint intermedio de `Hikari07jp`, al que se le añade una ablación direccional por capas, una reparación del modo de razonamiento y una re-cuantización a FP8.
+DeepSeek-V4.1-1017-Ablitrated-Efficient es un ajuste fino (finetune) del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicado por el usuario `pentacoxian-dev` en Hugging Face. Se trata de una versión "abliterated", es decir, con las respuestas de rechazo (refusals) eliminadas mediante edición selectiva de capas, manteniendo —según el autor— las puntuaciones de referencia del modelo original. El checkpoint tiene 763.205.315.794 parámetros totales y se distribuye en formato safetensors con cuantización FP8, lo que reduce el espacio en disco a unos 515,3 GB.
 
-El modelo es un transformer de mezcla de expertos (MoE, con expertos compartidos visibles en las matrices `ffn.shared_experts.w2`) de 763.205.315.794 parámetros totales según los safetensors del repositorio, lo que lo sitúa en la gama de modelos abiertos de gran escala. No se documenta el número de parámetros activos, la longitud de contexto ni el reparto de expertos.
+El modelo está pensado para despliegue en producción con vLLM, con decodificación especulativa (dspark) y caché KV en FP8. La innovación principal que declara el autor es un método de ablación no uniforme: se aplica una ablación más agresiva en las capas tempranas y más suave en las capas tardías, que son las que concentran conocimiento, para evitar la pérdida de puntos en MMLU que provoca una edición uniforme. Además, esta revisión (v2, `wf_dbroad_eth`) corrige un fallo de bucle de re-verificación en modo "thinking" que afectaba al checkpoint de partida.
 
-Su relevancia es doble: por un lado, es un caso de estudio de ablación selectiva por capas (dosis mayor en capas tempranas, menor en las tardías que concentran el recuerdo factual) con evaluación de rechazos sobre 500 prompts dañinos y 350 benignos; por otro, documenta y parchea un fallo de no terminación en modo *thinking* que afecta al linaje del que procede, con mediciones antes/después sobre 48 trazas greedy.
+La relevancia actual del modelo radica en su enfoque de "desbloqueo" de un modelo grande manteniendo el rendimiento en benchmarks, algo que suele ser el punto débil de las ablaciones. El autor insiste en que el checkpoint está medido y debe servirse con un system prompt concreto, que según sus datos reduce la tasa de respuestas evasivas del ~9,5 % a 0-0,2 % y mantiene el MMLU completo en torno al 86,5 %. La licencia es MIT y el único idioma declarado es el inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) con expertos compartidos; edición sobre `attn.wo_b` y `ffn.shared_experts.w2` |
-| Parametros totales | 763.205.315.794 (dato real de safetensors, ~763,2B) |
+| Arquitectura | MoE (Mixture of Experts) de tipo transformer; tag `deepseek_v41`, tag `moe` |
+| Parametros totales | 763.205.315.794 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (8 bits) en safetensors; no se publican GGUF, AWQ ni GPTQ |
+| Tipos de cuantizacion | FP8 (pesos en 8 bits); caché KV en FP8 |
 | Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (FP8, 8 bits) |
-| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 y Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel |
-| Tamano del repositorio | 513,8 GB |
-| Libreria y pipeline | transformers, text-generation; compatible con endpoints y con vLLM |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de partida es un transformer MoE de DeepSeek (la edición toca explícitamente las matrices de salida de atención y de los expertos compartidos de la FFN). Sobre ese sustrato, el autor aplica **ablación direccional en el flujo residual a 40 capas**: para cada capa estima una dirección de rechazo `u_l` como la diferencia de medias de activaciones residuales entre prompts dañinos y prompts inocuos, normalizada a longitud unitaria, y proyecta las matrices de escritura fuera de esa dirección mediante `W' = W − k · u(uᵀW)`, aplicado a `attn.wo_b` y `ffn.shared_experts.w2`, con re-cuantización posterior a FP8.
+El modelo es un transformer con arquitectura de mezcla de expertos (MoE), según las etiquetas `moe` y `deepseek_v41` de la model card. El checkpoint se deriva del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017` mediante un proceso de "abliteración": una edición de pesos orientada a eliminar las respuestas de rechazo. El autor describe que la edición es selectiva por capas —más intensa en las capas tempranas y más suave en las capas tardías que portan conocimiento—, lo que según sus mediciones evita la caída en MMLU típica de una ablación uniforme.
 
-El horario de dosis es la pieza que, según el autor, protege la capacidad: `k = 2,5` en las capas 0–24 y `k = 2,0` en las capas 25–39 (un 20 % menos de edición en las capas tardías, donde se concentra el recuerdo factual). Se añaden dos términos auxiliares de *steering* (una corrección de capa media deconfundida y vectores de fin de razonamiento y de frontera de respuesta) para restaurar la longitud de generación y el comportamiento de parada que una proyección simple acorta.
-
-Además, el autor repara dos patologías del checkpoint de partida escribiendo direcciones en la cabeza de salida, obtenidas con sondas logísticas sin intercepto (`d_loop`, `d_recheck`, `d_eos`) ajustadas sobre estados ocultos finales capturados, con validación por pliegues que retienen prompts completos: `W'[end_of_thought] += 16·d_loop + 16·d_recheck` y `W'[EOS] += 8·d_eos`. Las direcciones de rechazo se ortogonalizan contra las tres (|cos| máximo de 0,022 por capa) para que la edición de rechazo no deshaga el arreglo de terminación. No se documentan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en esta build.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo base. La revisión v2 (`wf_dbroad_eth`) introduce cambios de dosis en dos proyecciones respecto a la receta v1 (`ablit_ls25_20`), y corrige un fallo de bucle de re-verificación en modo "thinking": el checkpoint de partida (`Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel`) re-verificaba hechos ya establecidos y no emitía `</think>`, agotando el límite de tokens. Según el autor, en 48 trazas de thinking greedy con presupuesto de 16.384 tokens y esfuerzo 100, el checkpoint de partida perdía 8 de 48 trazas por el límite, con un tramo repetido de hasta 56.500 caracteres; esta versión pierde 0 de 48, con una repetición máxima de 2.000 caracteres.
 
 ## Capacidades
 
-- Generación de texto en inglés con el perfil de razonamiento y código heredado del modelo base DeepSeek-V4.1-Flash-1017.
-- Modo *thinking* de esfuerzo variable, con presupuesto de tokens ampliable (la evaluación del autor usa 16.384 tokens y esfuerzo 100).
-- Modo no-thinking para respuestas directas (las métricas de MMLU 0-shot se miden en ese régimen).
-- Respuesta a prompts dañinos con una tasa de rechazo del 5,2 % en la batería de 500, es decir, comportamiento prácticamente sin rechazos.
-- Baja tasa de rechazo en prompts benignos (0,57 %), lo que reduce los falsos positivos en tareas legítimas.
-- Terminación fiable del razonamiento: 0 de 48 trazas greedy agotaron el presupuesto de tokens, frente a 8 de 48 en el checkpoint de partida.
-- Soporte de *tool calling* / *function calling*: no documentado en la información disponible.
-- Capacidades de agente multietapa: no documentadas específicamente para esta build.
-- Multilingüismo: limitado al inglés según la model card; no se declaran otros idiomas.
-- Visión, audio u otras modalidades: no documentadas para esta build (el pipeline declarado es `text-generation`).
+- Generación de texto y razonamiento en inglés, con modo "thinking" (razonamiento extendido) y modo sin thinking.
+- Razonamiento multi-paso y comportamiento agéntico: el autor reporta una tasa de éxito del 98,3 % en bucles agénticos con 0,0 % de casos atascados y una mediana de 949 tokens.
+- Eliminación de rechazos: la tasa de rechazo ante prompts dañinos es del 1,2-1,5 % (10-13 de 850) en la batería del autor.
+- Reducción de respuestas evasivas ("hedging") y disclaimers: 0,0-0,2 % de respuestas evasivas y 0,1-0,4 % de disclaimers con el system prompt recomendado.
+- Capacidad multilingüe limitada al inglés según la model card.
+- Soporte de decodificación especulativa (dspark, `num_speculative_tokens` 7) en vLLM.
+- No se documentan capacidades de visión, audio ni tool calling en la información disponible.
 
 ## Casos de uso
 
-- **Investigación en seguridad y *red-teaming***: el modelo sirve como sujeto de prueba para medir la eficacia de clasificadores de contenido y de capas de moderación externas, ya que su tasa de rechazo del 5,2 % garantiza que las pruebas lleguen a material sensible sin que el modelo se auto-censure.
-- **Generación de datos sintéticos para entrenar clasificadores de seguridad**: con 0,57 % de rechazos benignos, se pueden generar grandes volúmenes de pares instrucción-respuesta en inglés sobre temas límite sin perder ejemplos por rechazo, y usar el filtrado posterior con un clasificador aparte.
-- **Estudio de ablación y alineación**: el método por capas con dosis diferenciada (k=2,5 frente a k=2,0) y la comparación de MMLU 0-shot (85,3 % frente a 86,8 % del base) lo convierten en un banco de pruebas reproducible para investigar el compromiso entre supresión de rechazos y retención de conocimiento factual.
-- **Evaluación de fallos de razonamiento en modelos grandes**: el parche de no terminación y de re-verificación permite estudiar bucles de razonamiento a escala de 763B parámetros con trazas controladas, algo difícil de reproducir en modelos pequeños.
-- **Escritura creativa y *roleplay* sin fricción**: para aplicaciones de ficción, narrativa interactiva o simulación de personajes donde los rechazos interrumpen la experiencia, siempre que exista una capa de política de uso y revisión humana en el producto.
-- **Destilación y ajuste sobre un modelo docente sin rechazos**: generar corpus de razonamiento en inglés para destilar en modelos de 7B–30B desplegables en hardware de consumo, aprovechando que el docente no bloquea dominios.
-- **Despliegue autoalojado con vLLM en inglés**: la build está etiquetada como compatible con vLLM y con endpoints, lo que permite servirla en clústeres propios con pesos FP8 y evitar dependencias de API de terceros.
-- **Auditoría de linajes de modelos abliterados**: sirve para comparar recetas (esta, la de `Hikari07jp` y la de OrcaRouter) sobre las mismas baterías de rechazo y MMLU, con métricas publicadas y guion de clasificación (`repro/refusal_classifier.py`).
+- Investigación sobre alineación y rechazos: el modelo permite estudiar el comportamiento de un LLM grande sin las respuestas de rechazo por defecto, comparando su tasa de rechazo (1,2-1,5 %) con la del modelo base, útil para analizar qué información subyace a las capas de seguridad.
+- Evaluación de métodos de ablación: sirve como referencia para comparar técnicas de edición de pesos (ablación selectiva por capas frente a uniforme) midiendo el coste en MMLU y la tasa de respuestas evasivas.
+- Generación de texto en inglés a gran escala: con 763.205 millones de parámetros totales y despliegue en vLLM con FP8, es adecuado para tareas de generación y razonamiento donde se requiera un modelo grande servido con throughput alto.
+- Pipelines agénticos multi-paso: el autor reporta 98,3 % de éxito en bucles agénticos con mediana de 949 tokens, lo que lo hace apto para flujos de razonamiento encadenado en inglés sin el lastre de rechazos intermedios.
+- Modo thinking de esfuerzo máximo: la corrección del bucle de re-verificación (0 de 48 trazas perdidas frente a 8 de 48 del checkpoint de partida) permite usar razonamiento extendido con presupuestos de 16.384 tokens sin que el turno termine por el límite.
+- Despliegue con decodificación especulativa: la configuración recomendada (dspark con 7 tokens especulativos y caché KV en FP8) está pensada para servir el modelo en producción con latencia reducida en vLLM.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card. Todas las cifras de rechazo son en modo greedy, sin *thinking*, 64 tokens nuevos, evaluadas con un clasificador basado en reglas.
+Datos del autor, protocolo con system prompt, decodificación greedy (temperatura 0, top_p 1), 850 prompts (500 dañinos, 350 benignos), decodificación especulativa dspark y caché KV FP8:
 
-| Metrica | Este modelo | Base (DeepSeek-V4.1-Flash-1017) | Abliteration de OrcaRouter |
-|---|---:|---:|---:|
-| Rechazo en prompts dañinos (500) | 5,2 % | 87,6 % | 7,4 % |
-| Rechazo en dañinos, held-out (660) | 3,9 % | no disponible | no disponible |
-| Rechazo en prompts benignos (350) | 0,57 % | 4,6 % | 0,6 % |
-| Respuesta con salvedad previa, dañinos (500) | 6,2 % | no disponible | ~36–61 % |
-| MMLU completo (13.868, 0-shot) | 85,3 % | 86,8 % | no disponible |
-| MMLU (300 preguntas, thinking) | 89,0 % | 89,3 % | 92,0 % (BF16, 300 preguntas) |
-
-Prueba de terminación en modo *thinking* (48 trazas greedy, presupuesto de 16.384 tokens, esfuerzo 100):
-
-| Metrica | Checkpoint de partida | Este modelo |
+| Métrica (con system prompt) | v2 `wf_dbroad_eth` | v1 `ablit_ls25_20` |
 |---|---:|---:|
-| Trazas que agotan el presupuesto de tokens | 8 de 48 | 0 de 48 |
-| Span repetido más largo | 56.500 caracteres | 2.000 caracteres |
-| Precisión en la batería de grading | 30 de 32 | 30 de 32 |
+| Rechazo ante prompts dañinos (850) | 10-13 (1,2-1,5 %), 3 ejecuciones | — |
+| Respuestas evasivas (850) | 0,0-0,2 % | 13,8 % |
+| Aciertos de léxico ético | 0,4-0,9 % | 6,4 % |
+| Disclaimers | 0,1-0,4 % | 3,5 % |
+| MMLU completo (13.868, 0-shot) | 86,5 % (11.995/13.868) | 85,7 % |
+| Bucles agénticos / éxito | 0,6 % / 98,3 %, 0,0 % atascado, mediana 949 tokens | 1,7 % / 95,0 % |
+
+Efecto del system prompt a pesos fijos (`wf_dbroad_eth`):
+
+| Métrica | Sin prompt | Con prompt |
+|---|---:|---:|
+| Respuestas evasivas (primeros 1.200 caracteres) | 9,3-9,6 % | 0,0-0,2 % |
+| Aciertos de léxico ético | 5,3-5,9 % | 0,6 % |
+| Disclaimers | 2,8-3,3 % | 0,0-0,2 % |
+| Rechazos / 850 | 15-19 | 10-15 |
+| MMLU completo | 85,7 % | 86,5-86,7 % |
+
+El autor advierte que la diferencia de MMLU entre condiciones de prompt está en el margen de variación entre ejecuciones y debe interpretarse como "sin coste", no como ganancia. No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- **Peso de los pesos**: 763,2B parámetros en FP8 implican aproximadamente 763 GB solo de pesos, antes de caché KV y activaciones. En BF16 serían unos 1,53 TB.
-- **GPU de centro de datos**: para FP8 con margen operativo, un nodo de 16×H100 80 GB (1,28 TB) o 8×H200 141 GB (1,13 TB). En BF16 se necesitan del orden de 24×H100 80 GB.
-- **Cuantización adicional**: a 4 bits el peso baja a unos 380–400 GB, lo que permitiría 8×H100 80 GB o 4×H200; no se publican pesos de 4 bits en el repositorio.
-- **GPU de consumo**: no cabe en ninguna GPU de consumo actual, ni siquiera en configuraciones multi-GPU de 4×RTX 4090 (96 GB), que quedan muy por debajo incluso del mínimo a 4 bits.
-- **Despliegue**: vLLM (etiqueta explícita en el repositorio y `endpoints_compatible`), transformers como vía de referencia. llama.cpp y Ollama no son viables a esta escala sin cuantizaciones publicadas; TGI no está documentado para esta arquitectura.
-- **Discrepancia a verificar**: el repositorio declara 513,8 GB, por debajo de los ~763 GB que exigiría una copia FP8 completa de 763,2B parámetros. Conviene inspeccionar el índice de shards antes de aprovisionar hardware.
-- **Latencia y throughput**: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: el repositorio ocupa 515,3 GB en safetensors con pesos FP8; se necesita un nodo multi-GPU con al menos ~515 GB de memoria agregada para cargar los pesos, más espacio para caché KV FP8 y activaciones.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, requiere múltiples aceleradores de centro de datos (clase H100/H200/B200 o A100 de 80 GB en número suficiente). No cabe en una GPU de consumo.
+- Consumer GPU: no cabe en ninguna GPU de consumo (RTX 4090, 3090, etc.).
+- Opciones de despliegue: vLLM es el motor recomendado por el autor, con decodificación especulativa dspark (`num_speculative_tokens` 7) y caché KV en FP8. La librería declarada es transformers. No se documentan opciones GGUF, llama.cpp ni Ollama.
+- Latencia y throughput: no disponibles de forma numérica; el autor reporta una mediana de 949 tokens en tareas agénticas y una tasa de bucles del 0,6 %.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | MMLU (300q, thinking) | Rechazo en dañinos | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Este modelo | 763,2B | no disponible | 89,0 % | 5,2 % | MIT | Hugging Face, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible en la informacion (fuentes externas citan ~552B) | no disponible | 89,3 % | 87,6 % | no disponible | Hugging Face oficial |
-| Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel | no disponible | no disponible | no disponible (30/32 en grading propio) | no disponible | no disponible | Hugging Face |
-| Abliteration de OrcaRouter | no disponible | no disponible | 92,0 % (BF16, 300 preguntas) | 7,4 % | no disponible | no disponible |
+| Modelo | Parámetros totales | Contexto | MMLU | Licencia | Idiomas |
+|---|---:|---|---:|---|---|
+| DeepSeek-V4.1-1017-Ablitrated-Efficient (v2) | 763.205.315.794 | no disponible | 86,5 % (full, con prompt) | MIT | en |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Frente al base, este modelo reduce el rechazo en dañinos 16,8 veces (87,6 % → 5,2 %) a costa de 1,5 puntos de MMLU 0-shot (86,8 % → 85,3 %) y 0,3 puntos en MMLU con *thinking* (89,3 % → 89,0 %). Frente a la ablación de OrcaRouter, reduce el rechazo (5,2 % frente a 7,4 %) y las salvedades previas (6,2 % frente a ~36–61 %), pero queda 3 puntos por debajo en MMLU con *thinking* (89,0 % frente a 92,0 %, aunque la comparación es BF16 contra FP8 y con distinto tamaño de batería).
+La información proporcionada solo permite comparar con el modelo base y con el checkpoint de partida de la ablación, sin datos de benchmarks publicados para estos. No se dispone de datos de otras alternativas de la misma categoría en la información disponible.
 
 ## Limitaciones y advertencias
 
-- **Riesgo de seguridad por diseño**: la eliminación de rechazos es intencionada (5,2 % en dañinos). No es un modelo apto para aplicaciones de cara al público sin una capa de moderación externa y una política de uso explícita.
-- **Licencia MIT**: permisiva y permite uso comercial, pero traslada al desplegador toda la responsabilidad legal y de cumplimiento sobre el contenido generado.
-- **Solo inglés**: la model card declara únicamente `en`; el rendimiento en castellano u otros idiomas no está evaluado y puede degradarse respecto al base.
-- **Alucinación**: no se publican mediciones de veracidad ni de calibración; el modelo base DeepSeek es propenso a errores factuales en dominios especializados, y la ablación en capas tardías (donde reside el recuerdo factual) puede agravar este punto pese al ajuste de dosis.
-- **Bucles de razonamiento**: el parche reduce el problema (0 de 48 trazas agotan presupuesto), pero el span repetido máximo sigue siendo de 2.000 caracteres, y el autor indica que la patología requiere condiciones concretas (greedy y esfuerzo alto) para reproducirse.
-- **Receta de reproducción incompleta**: la model card proporcionada se corta a mitad de frase en la sección de reproducción ("The pathology needs *both* greed"), de modo que el procedimiento exacto no está disponible en su totalidad.
-- **Discrepancia de parámetros**: los safetensors declaran 763,2B parámetros mientras fuentes externas atribuyen ~552B al modelo base DeepSeek-V4.1-Flash-1017; además, el tamaño del repositorio (513,8 GB) no cuadra con una copia FP8 completa. Verificar el contenido real antes de usarlo en producción.
-- **Sin validación comunitaria**: 0 descargas y 0 likes, creado y actualizado el mismo día (25 de octubre de 2026). Es un artefacto de investigación sin evidencia de uso en producción.
-- **Sesgos**: no se documenta ninguna evaluación de sesgos demográficos, políticos o culturales; la ablación de rechazos puede alterar la distribución de respuestas en temas sensibles de forma no medida.
-- **Sin datos de contexto ni de tool calling**: no se puede asumir un comportamiento fiable en agentes o en ventanas largas sin pruebas propias.
+- El modelo está diseñado explícitamente para eliminar los rechazos de seguridad; su uso en producción conlleva riesgos de generar contenido dañino, y el autor reporta un 1,2-1,5 % de rechazos residuales frente a prompts dañinos.
+- Solo soporta inglés según la model card; no se garantiza calidad en otros idiomas.
+- El autor advierte que el checkpoint está medido y pensado para servirse con un system prompt concreto; sin él, la tasa de respuestas evasivas sube al 9,3-9,6 % y los rechazos a 15-19 de 850.
+- Riesgo de alucinación: no se documenta de forma específica, pero es inherente a un modelo de este tamaño; el fallo de bucle de re-verificación en modo thinking se corrige en esta versión, aunque el autor reconoce que los números de bucles varían entre ejecuciones.
+- La ablación selectiva por capas puede degradar capacidades no medidas en los benchmarks del autor (código, matemáticas, multilingüismo); no hay datos al respecto.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo en dominios sensibles.
+- El tamaño del repositorio (515,3 GB) y el requisito de múltiples GPUs de centro de datos limitan su despliegue a infraestructura especializada.
+- No se documentan parámetros activos ni longitud de contexto, lo que dificulta planificar el dimensionamiento de caché KV y el coste de inferencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient
-- Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Repositorio de inferencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/main/inference
-- Checkpoint de partida (Hikari07jp): https://huggingface.co/Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel
-- Ficha del modelo base en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Análisis de DeepSeek V4.1 Flash 1017: https://unlimitedai.org/2026/10/19/deepseek-v4-1-flash-1017/
-- Análisis técnico y benchmarks del base: https://local-ai-zone.github.io/blog/deepseek-v4-1-flash-1017-deep-dive.html
-- Resumen de características del base: https://www.iweaver.ai/blog/deepseek-v4-1-flash-1017/
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Checkpoint de partida de la ablación: https://huggingface.co/Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel

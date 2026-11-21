@@ -5,7 +5,7 @@
   "author": "LucidPosition",
   "url": "https://huggingface.co/LucidPosition/lcd1.0",
   "created_at": "2026-11-20T18:23:29.000Z",
-  "updated_at": "2026-11-20T18:48:23.000Z",
+  "updated_at": "2026-11-20T19:02:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,13 @@
   "languages": [],
   "tags": [
     "gguf",
+    "fine-tuned",
+    "qwen2.5",
+    "concise",
+    "instruction-following",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -26,7 +33,7 @@
   "storage_bytes": 1929900768,
   "storage_human": "1.9 GB",
   "context_length": 32768,
-  "base_model": null,
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
   "formats": [
     "gguf"
   ],

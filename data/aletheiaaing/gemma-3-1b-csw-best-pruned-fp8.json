@@ -5,9 +5,9 @@
   "author": "AletheiaAING",
   "url": "https://huggingface.co/AletheiaAING/gemma-3-1b-csw-best-pruned-fp8",
   "created_at": "2026-11-15T04:52:41.000Z",
-  "updated_at": "2026-11-16T00:49:41.000Z",
-  "license": "commercial-use-with-attribution",
-  "license_family": "unknown",
+  "updated_at": "2026-11-20T22:23:47.000Z",
+  "license": "other",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [

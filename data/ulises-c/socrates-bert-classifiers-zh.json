@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "ulises-c/socrates-bert-classifiers-zh",
+  "slug": "ulises-c-socrates-bert-classifiers-zh",
+  "author": "ulises-c",
+  "url": "https://huggingface.co/ulises-c/socrates-bert-classifiers-zh",
+  "created_at": "2026-11-20T21:46:59.000Z",
+  "updated_at": "2026-11-20T21:47:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "education",
+    "socratic-teaching",
+    "bert",
+    "kele",
+    "zh",
+    "dataset:ulises-c/SocratDataset",
+    "base_model:BAAI/bge-small-zh-v1.5",
+    "base_model:finetune:BAAI/bge-small-zh-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191730064,
+  "storage_human": "192 MB",
+  "context_length": null,
+  "base_model": "BAAI/bge-small-zh-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ulises - Módulo del Estudiante",
+      "url": "https://gf.libertadores.edu.co/ulises/",
+      "snippet": ""
+    }
+  ]
+}

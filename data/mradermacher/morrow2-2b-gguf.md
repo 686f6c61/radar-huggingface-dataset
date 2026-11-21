@@ -2,86 +2,87 @@
 
 ## Resumen
 
-Morrow2-2B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base Morrow2-2B, publicado por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino una conversion y cuantizacion del modelo original alojado en noumenon-labs/Morrow2-2B, orientada a su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. El modelo base tiene 2.000 millones de parametros, segun se deduce de su nombre.
+Morrow2-2B-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo Morrow2-2B, desarrollado originalmente por noumenon-labs y cuantizado por mradermacher. El modelo base es un transformer de tipo decoder-only con 1.728.801.600 parámetros reales (etiquetado comercialmente como "2B"), afinado para diálogo conversacional y "behavioral-tuning", según las etiquetas de la model card. Su propósito es ofrecer un modelo de conversación ligero, ejecutable en hardware de consumo mediante llama.cpp y derivados.
 
-La relevancia de este repositorio es practica: facilita el despliegue del modelo en hardware de consumo mediante multipliples niveles de cuantizacion (desde Q2_K hasta Q8_0, pasando por variantes K e IQ). Sin embargo, la informacion disponible es muy limitada: la model card del repositorio de cuantizacion no incluye datos sobre arquitectura, licencia, idiomas, contexto ni capacidades del modelo original.
+La relevancia de esta ficha radica en que el repositorio GGUF es la vía práctica para desplegar el modelo en entornos sin GPU de datacenter: ofrece 12 cuantizaciones distintas (desde Q2_K de 0,9 GB hasta f16 de 3,6 GB), lo que permite ajustar el equilibrio entre calidad y huella de memoria en un rango muy amplio. El repositorio acumula 813 descargas y fue creado el 8 de noviembre de 2026, con actualización al día siguiente.
 
-No se dispone de informacion sobre benchmarks, datos de entrenamiento ni detalles tecnicos del modelo base en la informacion proporcionada. Esta ficha se limita a documentar lo que consta en los metadatos y en la model card del repositorio de cuantizacion, marcando como "no disponible" todo aquello que no se puede verificar.
+No se dispone de información pública sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la documentación proporcionada. La licencia figura como "other", lo que obliga a consultar los términos del modelo base antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 2B (inferido del nombre del modelo) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer decoder-only (deducido de la librería transformers y el formato GGUF; no detallado en la model card) |
+| Parametros totales | 1.728.801.600 (dato real de safetensors) |
+| Parametros activos | no disponible (no es MoE según los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales en formato HF segun el campo convert_type |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (inglés; único idioma declarado en la model card) |
+| Licencia | other |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Morrow2-2B (transformer, MoE, SSM u otra). La model card del repositorio de cuantizacion unicamente indica que se trata de "static quants" del modelo noumenon-labs/Morrow2-2B, con convert_type hf, lo que sugiere que el modelo original esta en formato Hugging Face (probablemente safetensors) y fue convertido a GGUF antes de cuantizarse.
+La información disponible no detalla la arquitectura interna más allá de lo inferible del repositorio: se trata de un transformer decoder-only compatible con la librería transformers y convertido a GGUF. El recuento exacto de parámetros (1.728.801.600) corresponde al modelo base en safetensors. Las etiquetas de la model card indican "conversational", "dialogue" y "behavioral-tuning", lo que sugiere un ajuste fino orientado a comportamiento conversacional, pero no se especifican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF, DPO o similares.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni sobre innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.). Toda esta informacion deberia consultarse en la model card del modelo base original.
+El repositorio es una cuantización estática generada por mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf). Existe además una variante con cuantizaciones ponderadas/imatrix en el repositorio Morrow2-2B-i1-GGUF del mismo autor, que suele ofrecer mejor calidad por tamaño que las estáticas equivalentes. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- No se dispone de informacion verificada sobre las capacidades del modelo en la documentacion proporcionada.
-- Por su naturaleza de modelo de lenguaje de 2B parametros, cabe esperar generacion de texto basica, pero no se confirma en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno según las etiquetas del modelo.
+- Ajuste de comportamiento ("behavioral-tuning"): el modelo está afinado para seguir un estilo o conducta conversacional concreta, no solo para completar texto.
+- No hay evidencia en la documentación de soporte de tool calling, function calling ni agentes multi-paso.
+- No hay evidencia de capacidades de visión, audio ni modo "thinking" explícito.
+- Capacidad multilingüe limitada al inglés declarado; no se documentan otros idiomas.
+- Razonamiento, código y matemáticas: no documentados en la información disponible.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de 2B parametros en GPUs con 4-6 GB de VRAM o en CPU mediante llama.cpp, lo que facilita prototipado local sin infraestructura dedicada.
-- Experimentacion con llama.cpp u Ollama: el formato GGUF es directamente compatible con estos motores, lo que permite integrar el modelo en flujos de trabajo locales de forma inmediata.
-- Pruebas comparativas de cuantizacion: al ofrecer 12 variantes de cuantizacion, el repositorio permite evaluar el compromiso entre calidad y tamano para un mismo modelo base en tareas concretas.
-- Fine-tuning ligero sobre cuantizaciones: aunque el fine-tuning sobre GGUF es limitado, las variantes de mayor precision (x-f16, Q8_0) pueden servir como referencia para validar el comportamiento del modelo antes de invertir en entrenamiento.
-- Evaluacion de modelos de 2B para tareas de generacion de texto corto: con las debidas reservas por la falta de datos, el modelo puede probarse en tareas de resumen, clasificacion o generacion asistida en entornos controlados.
-- Integracion en pipelines de CI para pruebas de regresion: un modelo pequeno en GGUF puede incorporarse a tests automatizados que verifiquen el comportamiento del motor de inferencia sin coste elevado de computo.
+- Chatbot conversacional ligero en local: con cuantizaciones Q4_K_M de 1,2 GB, el modelo cabe en cualquier portátil moderno y permite desplegar un asistente de diálogo sin conexión ni coste de API, usando llama.cpp u Ollama.
+- Prototipado rápido de interfaces conversacionales: al ser un modelo pequeño y con cuantizaciones de menos de 1,5 GB, se puede iterar sobre prompts y flujos de diálogo en minutos, antes de migrar a un modelo mayor en producción.
+- Simulación de personajes o agentes de rol: el ajuste por comportamiento ("behavioral-tuning") lo hace adecuado para experimentar con personalidades y estilos de respuesta consistentes en entornos de investigación.
+- Evaluación de pipelines de cuantización: sirve como caso de estudio para comparar la degradación de calidad entre Q2_K, Q4_K_M y Q8_0 en una tarea conversacional concreta, dado el amplio abanico de cuantizaciones publicadas.
+- Despliegue en dispositivos con recursos muy limitados: la variante Q2_K (0,9 GB) permite ejecución en CPU en equipos con poca RAM, útil para demos embebidas o entornos educativos.
+- Generación de respuestas en aplicaciones de escritorio offline: integrable en herramientas de escritorio mediante llama.cpp, sin dependencia de servicios en la nube, para tareas de conversación de baja latencia en inglés.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 2B parametros, las cuantizaciones Q4_K_M suelen ocupar del orden de 1,5-2 GB y las Q8_0 en torno a 2-2,5 GB, aunque estas cifras son estimaciones generales y no datos confirmados para este modelo.
-- GPU recomendadas: no disponible; por tamano, cabria esperar compatibilidad con GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no se confirma en la documentacion.
-- Compatibilidad con GPU de consumo: probable por el tamano de 2B parametros, sin confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF; vLLM y TGI no estan confirmados para este formato.
-- Latencia y throughput estimados: no disponible.
+- VRAM/RAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto): Q2_K ~0,9 GB; Q3_K_S ~1,0 GB; Q4_K_M ~1,2 GB; Q5_K_M ~1,4 GB; Q6_K ~1,5 GB; Q8_0 ~1,9 GB; f16 ~3,6 GB.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM puede ejecutar las cuantizaciones Q4_K_M o superiores; una RTX 3060 de 12 GB o superior permite Q8_0 o f16 con contexto amplio. En A100/H100 el modelo es sobredimensionado para la GPU y el cuello de botella será la CPU o el ancho de banda.
+- Cabe en GPU consumer: sí, en todas las cuantizaciones, incluidas tarjetas de gama baja con 4-6 GB de VRAM.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no son la vía natural para GGUF, aunque el modelo base en safetensors podría servirse con transformers.
+- Latencia y throughput: no disponibles en la información proporcionada; en CPU con Q4_K_M se espera un rendimiento de decenas de tokens por segundo en hardware moderno, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Morrow2-2B-GGUF | 2B (inferido) | no disponible | no disponible | GGUF | Hugging Face |
-| Gemma-2-2b (cuantizado por mradermacher) | 2B | no disponible en la informacion | no disponible en la informacion | GGUF | Hugging Face |
-| Otros modelos de 2B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Morrow2-2B-GGUF | 1,73 B | no disponible | other | GGUF | Afinado para diálogo y comportamiento; solo inglés |
+| Qwen2.5-1.5B-Instruct (GGUF) | 1,54 B | 32.768 (según su model card pública) | Apache 2.0 | GGUF, safetensors | Multilingüe, licencia permisiva, benchmarks publicados |
+| Llama-3.2-1B-Instruct (GGUF) | 1,24 B | 131.072 (según su model card pública) | Llama 3.2 Community License | GGUF, safetensors | Multilingüe, contexto largo, ecosistema amplio |
+| SmolLM2-1.7B-Instruct (GGUF) | 1,71 B | 8.192 (según su model card pública) | Apache 2.0 | GGUF, safetensors | Entrenado en inglés, benchmarks publicados |
 
-La comparativa es limitada porque no se dispone de datos de rendimiento ni de licencia del modelo Morrow2-2B. El unico punto de referencia claro en la informacion es el repositorio mradermacher/Gemma-2-2b-All-in-One-GGUF, que sigue el mismo patron de cuantizacion estatica, pero no se dispone de datos para comparar calidad.
+La comparativa se basa en datos públicos de los modelos alternativos; para Morrow2-2B no hay benchmarks ni contexto declarados, por lo que la comparación de rendimiento no es posible con la información disponible.
 
 ## Limitaciones y advertencias
 
-- La informacion disponible sobre el modelo base es minima: no se conocen arquitectura, licencia, idiomas ni contexto, lo que impide evaluar su idoneidad para produccion.
-- La licencia no esta declarada en el repositorio de cuantizacion; antes de cualquier uso comercial debe verificarse la licencia del modelo original en noumenon-labs/Morrow2-2B.
-- Riesgo de alucinacion: no evaluado por falta de benchmarks y de documentacion.
-- Sesgos conocidos: no disponible.
-- Limitaciones de contexto o idioma: no disponible.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda validar cada variante en la tarea objetivo.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que no ha sido validado por la comunidad.
-- No se debe asumir que el modelo base esta entrenado o alineado para uso en produccion sin consultar su model card original.
+- Sesgos conocidos: no documentados; al ser un modelo entrenado principalmente en inglés, es previsible un sesgo cultural y lingüístico hacia ese idioma.
+- Riesgo de alucinación: no cuantificado por el autor; en modelos de este tamaño el riesgo es elevado en tareas de conocimiento factual.
+- Limitaciones de contexto e idioma: solo se declara inglés; la longitud de contexto no está especificada, lo que impide planificar aplicaciones de contexto largo.
+- Restricciones de licencia: la licencia "other" obliga a revisar los términos del modelo base noumenon-labs/Morrow2-2B antes de uso comercial; no se puede asumir permisividad.
+- Caveat de producción: al ser una cuantización estática, las variantes Q2_K y Q3_K_M pueden degradar notablemente la calidad conversacional; se recomienda Q4_K_M o superior, o bien las cuantizaciones imatrix del repositorio i1-GGUF.
+- Sin benchmarks publicados: no hay evidencia objetiva de calidad frente a alternativas, por lo que no se recomienda para producción sin evaluación propia.
 
 ## Enlaces
 
-- Repositorio de cuantizacion: https://huggingface.co/mradermacher/Morrow2-2B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Morrow2-2B-GGUF
 - Modelo base: https://huggingface.co/noumenon-labs/Morrow2-2B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Ejemplo de otro repositorio GGUF del mismo autor: https://huggingface.co/mradermacher/Gemma-2-2b-All-in-One-GGUF
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Morrow2-2B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Morrow2-2B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

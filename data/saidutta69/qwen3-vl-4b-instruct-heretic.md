@@ -2,101 +2,96 @@
 
 ## Resumen
 
-Qwen3-VL-4B-Instruct-heretic es una variante "decensored" del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicada por el usuario saidutta69 en Hugging Face. El modelo base pertenece a la rama vision-lenguaje de la familia Qwen3-VL, que acepta entrada de imagen, video y OCR con anclaje espacial (spatial grounding). La modificacion no consiste en un reentrenamiento, sino en una ablacion direccional ("abliteration") aplicada con la herramienta Heretic v1.4.0, que edita direcciones concretas de pesos para suprimir el comportamiento de rechazo.
+Qwen3-VL-4B-Instruct-heretic es una variante "abliterada" (decensored) del modelo vision-language Qwen/Qwen3-VL-4B-Instruct, publicada por el usuario saidutta69 (bajo el alias "RACER IS OP"). El modelo conserva la arquitectura original de Qwen3-VL —un transformer multimodal que procesa imagen, video y OCR con grounding espacial— pero se han editado quirúrgicamente las direcciones de pesos responsables del comportamiento de rechazo, de modo que el modelo deja de negarse a responder ante peticiones que el modelo base rechazaría. El proceso se realizó con Heretic v1.4.0, una herramienta de abliteración direccional basada en Optuna.
 
-La edicion se realiza sobre las proyecciones de salida de atencion (`attn.o_proj`) y las proyecciones descendentes del MLP (`mlp.down_proj`), sin tocar el resto de la red. Segun el autor, las negativas (refusals) caen de 97/100 a 8/100 en un conjunto de evaluacion de contenido nocivo, mientras que la torre de vision y el anclaje espacial se mantienen cercanos al original (divergencia KL de 0.0396).
+Con 4.437.815.808 parámetros totales (4,44B), el modelo incluye tanto el backbone de texto como el codificador visual en los pesos safetensors en BF16. Es la variante intermedia de una colección de tres (2B, 4B y 8B) orientada a despliegue en una única GPU de consumo. Su relevancia actual radica en que ofrece capacidades de OCR, grounding espacial y agente visual sin las restricciones de rechazo del modelo original, manteniendo una divergencia KL baja (0,0396) respecto al base.
 
-Se distribuye con 4.437.815.808 parametros totales (4,44B) en safetensors BF16, que incluyen el encoder de vision, y una escalera de cuantizaciones GGUF que deja fuera el encoder de vision y sirve solo para texto. No es una mejora de capacidades respecto al modelo base: es el mismo modelo con las barreras de rechazo eliminadas, orientado a despliegue en una sola GPU de consumo.
+La licencia es Apache 2.0 y los pesos están disponibles en safetensors (BF16, con visión) y en una escalera de cuantizaciones GGUF (solo texto, sin codificador visual). El modelo está etiquetado únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer vision-lenguaje (Qwen3-VL, `arch=qwen3vl`) con encoder de vision y backbone de texto |
-| Parametros totales | 4.437.815.808 (4,44B); el backbone de texto en GGUF tiene 4,02B y 398 tensores |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible de forma explicita; el autor menciona bloques de 32K en la estimacion de memoria (~1 GB por 32K de contexto) |
-| Tipos de cuantizacion | BF16 (safetensors), GGUF F16, Q4_K_M, Q5_K_M, Q6_K y Q8_0 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (BF16) y GGUF |
+| Arquitectura | Transformer multimodal Qwen3-VL (backbone de texto + codificador visual), arch `qwen3vl` |
+| Parametros totales | 4.437.815.808 (4,44B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (la model card menciona ~1 GB adicional por cada 32K de contexto, sin especificar el maximo nativo) |
+| Tipos de cuantizacion | BF16 (safetensors); GGUF F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (BF16, con vision) y GGUF (solo texto, sin vision) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-VL-4B-Instruct, un transformer multimodal de la familia Qwen3-VL que combina un encoder de vision con un backbone de texto y ofrece entrada de imagen, video y OCR con anclaje espacial. El autor no ha realizado ningun entrenamiento adicional: la unica intervencion es una ablacion direccional con Heretic v1.4.0, aplicada en el trial 120 de una ejecucion de 200 trials con semilla `3485018052`. La tecnica identifica direcciones de pesos responsables del rechazo y las atenua, en lugar de superponer una persona "servicial" mediante fine-tuning, lo que evita degradar la coherencia del modelo original.
+El modelo parte de Qwen3-VL-4B-Instruct, un transformer multimodal de la familia Qwen que acepta imagen, video y OCR como entrada y produce texto, con capacidad de grounding espacial. No se ha reentrenado ni ajustado con fine-tuning: la modificación consiste en una abliteración direccional aplicada con Heretic v1.4.0, que localiza las direcciones de pesos asociadas al comportamiento de rechazo y las edita en las proyecciones de salida de atención (`attn.o_proj`) y en las proyecciones descendentes del MLP (`mlp.down_proj`). El resto de la red queda intacto, preservando el conocimiento vision-language y el seguimiento de instrucciones del modelo base.
 
-Los parametros concretos de la ablacion son: `direction_index` 19.43; en `attn.o_proj`, `max_weight` 1.49 (posicion 21.65), `min_weight` 0.92 (distancia 9.30); en `mlp.down_proj`, `max_weight` 1.12 (posicion 25.61), `min_weight` 0.11 (distancia 15.41). El repositorio incluye un directorio `reproduce/` con el `config.toml`, el `requirements.txt`, el diario del estudio Optuna y las sumas SHA-256, de modo que el modelo puede regenerarse bit a bit con `heretic --reproduce reproduce/reproduce.json`. No se documentan en la informacion disponible los datos ni el proceso de entrenamiento original del modelo base.
+Los parámetros concretos de la abliteración corresponden al ensayo 120 de una ejecución de 200 ensayos con semilla `3485018052`: `direction_index` 19,43; `attn.o_proj.max_weight` 1,49 en posición 21,65 y `min_weight` 0,92 a distancia 9,30; `mlp.down_proj.max_weight` 1,12 en posición 25,61 y `min_weight` 0,11 a distancia 15,41. El autor incluye un directorio `reproduce/` con `config.toml`, `requirements.txt`, el journal del estudio Optuna y sumas SHA-256 para regenerar el modelo bit a bit mediante `heretic --reproduce reproduce/reproduce.json`. No se dispone de datos sobre el volumen de tokens de entrenamiento del modelo base ni sobre su pipeline de RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada del backbone Qwen3-VL-4B-Instruct.
-- Entrada de imagen, video y OCR, con anclaje espacial (spatial grounding) cuando se usan los pesos safetensors.
-- Capacidad de agente de vision / GUI, segun indica el autor al describir el modelo base.
-- Supresion de negativas: el comportamiento de rechazo se reduce de 97/100 a 8/100 en el conjunto de evaluacion de contenido nocivo.
-- La torre de vision y el comportamiento de anclaje se mantienen cercanos al original (divergencia KL de 0.0396).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de razonamiento multi-paso o modo "thinking": no disponibles en la informacion proporcionada.
-- Multilingue: limitado a ingles segun la etiqueta `language: en`; no se documentan otros idiomas.
+- Generación de texto conversacional e instrucciones multi-turno.
+- Comprensión de imagen, video y OCR (solo con pesos safetensors; los GGUF son solo texto).
+- Grounding espacial: localización de elementos en imágenes (bounding boxes, referencias a regiones).
+- Capacidades de agente visual y GUI: interpretación de capturas de pantalla e interacción con interfaces.
+- Comportamiento de rechazo reducido: de 97/100 a 8/100 en el conjunto de evaluación de peticiones dañinas del autor.
+- Despliegue on-device en GPU de consumo mediante cuantizaciones GGUF.
+- Idiomas: únicamente inglés según la model card.
+- No se documenta en la información disponible soporte explícito de tool calling, function calling ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- OCR y digitalizacion de documentos: con los pesos safetensors y `Qwen3VLForConditionalGeneration` + `AutoProcessor`, el modelo puede extraer texto de imagenes y documentos escaneados, aprovechando la capacidad OCR de la rama Qwen3-VL.
-- Anclaje espacial en aplicaciones de vision: el modelo conserva el spatial grounding del original (KL 0.0396), util para localizar objetos o regiones en una imagen y devolver coordenadas.
-- Agentes GUI y automatizacion de interfaces: la capacidad de agente de vision permite interpretar capturas de pantalla y decidir acciones sobre elementos de interfaz.
-- Analisis de imagenes y video en pipelines internos: al usar safetensors, el modelo procesa entrada visual completa; la eliminacion de negativas facilita el analisis de contenido que el modelo base rechazaria.
-- Generacion de texto en ingles en produccion: mediante las cuantizaciones GGUF (solo texto) se puede desplegar en llama.cpp, LM Studio o Jan para tareas de generacion y conversacion.
-- Despliegue en una sola GPU de consumo: con Q4_K_M (2,33 GB) funciona en tarjetas de 6-8 GB, e incluso en CPU o Apple Silicon, lo que permite prototipos locales sin infraestructura dedicada.
-- Evaluacion de tecnicas de abliteration: el directorio `reproduce/` permite reproducir la intervencion, util como caso de estudio metodologico.
+- Extracción de texto de documentos e imágenes (OCR): el modelo puede procesar capturas, escaneos o fotografías y devolver el texto estructurado; requiere los pesos safetensors porque el codificador visual no está en los GGUF.
+- Automatización de agentes GUI: interpretación de capturas de pantalla para identificar botones, campos y regiones interactivas mediante grounding espacial, útil en pipelines de automatización de escritorio o pruebas de interfaz.
+- Análisis de video para moderación o etiquetado: descripción y localización de contenido en fotogramas, con la salvedad de que el comportamiento de rechazo está atenuado y requiere filtros propios de seguridad.
+- Asistente visual local en estación de trabajo: despliegue con Q4_K_M (2,33 GB) en una RTX 4060 de 8 GB para tareas de texto, o con safetensors BF16 en una GPU de 24 GB para tareas multimodales completas.
+- Investigación sobre alineación y abliteración: el paquete `reproduce/` permite regenerar el modelo bit a bit y estudiar el efecto de la edición direccional sobre el comportamiento de rechazo con una divergencia KL medible (0,0396).
+- Procesamiento de documentos con referencias espaciales: localización de tablas, firmas o sellos en imágenes escaneadas combinando OCR y grounding.
+- Generación de descripciones de imágenes o videos en inglés para catalogación de contenido, con control de salida propio al no contar con guardarraíles de rechazo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente aporta metricas comparativas frente al modelo original:
-
-| Metrica | Este modelo | Modelo original (Qwen/Qwen3-VL-4B-Instruct) |
+| Metrica | Este modelo | Qwen/Qwen3-VL-4B-Instruct |
 |---|---|---|
-| Divergencia KL | 0.0396 | 0 (por definicion) |
-| Negativas (refusals) | 8/100 | 97/100 |
+| Divergencia KL | 0,0396 | 0 (por definición) |
+| Rechazos (conjunto dañino, /100) | 8/100 | 97/100 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, tamano nativo 4,44B): F16 7,50 GB; Q8_0 3,99 GB; Q6_K 3,08 GB; Q5_K_M 2,69 GB; Q4_K_M 2,33 GB. Anadir ~1 GB por cada 32K de contexto.
-- GPU de 24 GB (RTX 3090, 4090, 5090): cuantizacion recomendada Q8_0.
-- GPU de 16 GB (RTX 4080, 5080, 4060 Ti 16G): cuantizacion recomendada Q6_K.
-- GPU de 12 GB (RTX 3060, 4070, 5070): cuantizacion recomendada Q5_K_M.
-- GPU de 8 GB (RTX 4060, 3070): cuantizacion recomendada Q4_K_M.
-- GPU de 6 GB (GTX 1660 Super, 2060, 3050 laptop): cuantizacion recomendada Q4_K_M.
-- CPU-only o Apple Silicon: Q4_K_M (2,33 GB) cabe en memoria del sistema.
-- Opciones de despliegue: las cuantizaciones GGUF cargan de forma nativa en llama.cpp, LM Studio y Jan (solo texto), por ejemplo con `llama serve -hf saidutta69/Qwen3-VL-4B-Instruct-heretic:Q4_K_M`. Para uso con vision hay que usar los safetensors con transformers (`Qwen3VLForConditionalGeneration` + `AutoProcessor`). No se documentan opciones como vLLM o TGI en la informacion proporcionada.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada (solo pesos, según la model card): Q4_K_M 2,33 GB; Q5_K_M 2,69 GB; Q6_K 3,08 GB; Q8_0 3,99 GB; F16 GGUF 7,50 GB. Añadir aproximadamente 1 GB por cada 32K de contexto.
+- Pesos safetensors BF16: 4,65 GB + 3,62 GB (unos 8,27 GB) más el codificador visual incluido; requiere más VRAM que los GGUF al no estar cuantizados.
+- GPU recomendadas por el autor: RTX 3090/4090/5090 (24 GB) con Q8_0; RTX 4080/5080/4060 Ti 16G con Q6_K; RTX 3060/4070/5070 (12 GB) con Q5_K_M; RTX 4060/3070 (8 GB) y GTX 1660 Super/2060/3050 laptop (6 GB) con Q4_K_M.
+- CPU-only y Apple Silicon: Q4_K_M (2,33 GB) cabe en RAM del sistema.
+- Opciones de despliegue: transformers con `Qwen3VLForConditionalGeneration` + `AutoProcessor` (visión completa, safetensors); llama.cpp, LM Studio y Jan para texto con GGUF (`llama serve -hf saidutta69/Qwen3-VL-4B-Instruct-heretic:Q4_K_M`). No se documenta soporte de vLLM o TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Vision | Licencia | Notas |
-|---|---|---|---|---|
-| saidutta69/Qwen3-VL-4B-Instruct-heretic | 4,44B | Si (solo en safetensors; GGUF sin encoder de vision) | apache-2.0 | Variante abliterada, negativas 8/100 |
-| Qwen/Qwen3-VL-4B-Instruct | 4,44B | Si | apache-2.0 | Modelo base; negativas 97/100 |
-| saidutta69/Qwen3-VL-2B-Instruct-heretic | no disponible | no disponible | no disponible | Escalon inferior de la coleccion, segun el autor |
-| saidutta69/Qwen3-VL-8B-Instruct-heretic | no disponible | no disponible | no disponible | Escalon superior de la coleccion, segun el autor |
-
-No se dispone de datos de contexto ni de rendimiento de las variantes 2B y 8B en la informacion proporcionada.
+| Modelo | Parametros | Vision | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3-VL-4B-Instruct-heretic (este) | 4,44B | Si (solo safetensors) | No disponible | Apache 2.0 | Rechazos 8/100, KL 0,0396 |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | Si | No disponible | Apache 2.0 | Modelo base; rechazos 97/100 |
+| Qwen3-VL-2B-Instruct-heretic | 2B | Si | No disponible | Apache 2.0 | Variante menor de la misma colección |
+| Qwen3-VL-8B-Instruct-heretic | 8B | Si | No disponible | Apache 2.0 | Variante mayor de la misma colección |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al ser una variante abliterada, el comportamiento de rechazo esta deliberadamente reducido, lo que puede facilitar salidas inapropiadas o daninas.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; se mantiene el riesgo inherente al modelo base al generar texto e interpretar imagenes.
-- Las cuantizaciones GGUF son solo texto: no incluyen el encoder de vision (398 tensores, `arch=qwen3vl`, cero tensores de vision). Para imagen, video u OCR hay que usar obligatoriamente los pesos safetensors.
-- Idioma: soporte limitado a ingles segun la etiqueta `language: en`; el rendimiento en castellano no esta documentado.
-- Longitud de contexto: no se especifica de forma explicita, lo que dificulta planificar cargas de trabajo con contextos largos.
-- Licencia: apache-2.0 permite uso comercial, pero el autor no ofrece garantias; revisar las condiciones del modelo base Qwen/Qwen3-VL-4B-Instruct antes de desplegar en produccion.
-- Reputacion del repositorio: 0 descargas y 0 likes en el momento de la consulta, con escasa validacion externa de los resultados declarados (8/100 de negativas, KL 0.0396).
-- La supresion de rechazos puede afectar a la seguridad en produccion; se recomienda filtrado adicional en aplicaciones expuestas a usuarios finales.
+- Modelo abliterado: el comportamiento de rechazo está suprimido deliberadamente. No incorpora guardarraíles de seguridad del modelo base, por lo que en producción es necesario añadir filtros y moderación propios.
+- Los GGUF son solo texto: no incluyen el codificador visual (398 tensores, 4,02B parámetros, cero tensores de visión). Para imagen, video u OCR hay que usar los safetensors.
+- Idioma: únicamente inglés según la model card; el rendimiento en castellano u otros idiomas no está documentado.
+- Riesgo de alucinación: no cuantificado en la información disponible; la abliteración introduce una divergencia KL de 0,0396 respecto al base, que puede afectar a la coherencia en algunos dominios.
+- La edición de pesos puede degradar sutilmente capacidades no medidas; el autor solo reporta rechazos y KL, sin benchmarks de tareas.
+- Sesgos: no documentados por el autor; hereda los del modelo base Qwen3-VL.
+- Licencia Apache 2.0 permite uso comercial, pero el despliegue de un modelo sin rechazos conlleva responsabilidad legal y ética sobre el contenido generado.
+- El repositorio tiene 792 descargas y 0 likes en el momento de la consulta; es un artefacto de la comunidad, no una publicación oficial de Qwen.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen3-VL-4B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
-- Repositorio de Heretic: https://github.com/p-e-w/heretic
-- Articulo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
+- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
+- Artículo sobre abliteración: https://huggingface.co/blog/mlabonne/abliteration
+- Variante 2B de la colección: https://huggingface.co/saidutta69/Qwen3-VL-2B-Instruct-heretic
+- Variante 8B de la colección: https://huggingface.co/saidutta69/Qwen3-VL-8B-Instruct-heretic
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Variante 2B: https://huggingface.co/saidutta69/Qwen3-VL-2B-Instruct-heretic
-- Variante 8B: https://huggingface.co/saidutta69/Qwen3-VL-8B-Instruct-heretic

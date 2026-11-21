@@ -58,15 +58,15 @@
   "benchmarks": [
     {
       "task": "Blender scene generation from a text request",
-      "dataset": "Maris3D 180-request benchmark",
+      "dataset": "Maris3D 180-request benchmark (measured on 0.2.0)",
       "metric": "full-scene pass %",
-      "value": 27.2
+      "value": 23.3
     },
     {
       "task": "Blender scene generation from a text request",
-      "dataset": "Maris3D 180-request benchmark",
+      "dataset": "Maris3D 180-request benchmark (measured on 0.2.0)",
       "metric": "usable scene %",
-      "value": 75.6
+      "value": 75
     }
   ],
   "sources": []

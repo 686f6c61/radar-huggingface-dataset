@@ -2,100 +2,104 @@
 
 ## Resumen
 
-WeVisOne-VL-2B es un modelo vision-language (VLM) de 2.000 millones de parametros desarrollado por WeChat Vision (Tencent), construido sobre la arquitectura de Qwen3-VL. Esta diseñado para responder tareas de percepcion visual —deteccion de objetos, comprension de expresiones de referencia, recuento de objetos, pointing y OCR— mediante texto estructurado, devolviendo cajas y puntos como tokens de coordenadas `<0>`…`<1000>` (milesimas del ancho y alto de la imagen). Su relevancia radica en que convierte tareas que tradicionalmente requieren modelos de deteccion especializados en algo resoluble por un unico modelo generativo compacto.
+WeVisOne-VL-2B es un modelo de visión-lenguaje de 2.000 millones de parámetros desarrollado por WeChat Vision (Tencent) sobre la base de Qwen3-VL. Resuelve tareas de percepción visual estructurada: detección de objetos, comprensión de expresiones referenciales, señalamiento por puntos (point-grounding), conteo de objetos y reconocimiento óptico de caracteres (OCR). A diferencia de un VLM conversacional genérico, devuelve las coordenadas como texto estructurado mediante los tokens `<0>` a `<1000>`, que representan milésimas del ancho y alto de la imagen.
 
-Esta ficha cubre la conversion del modelo a LiteRT-LM publicada por litert-community, pensada para ejecucion en dispositivos moviles y de escritorio (on-device). El repositorio ofrece dos ficheros `.litertlm`: una version int8 (con el decoder de 28 capas y el token embedder cuantizados a int8, y el vision encoder y adapter en float16) y una version float16 completa. En un Galaxy S26 con GPU, la version int8 genera el primer token tras 1,26 segundos y decodifica 21,1 tokens por segundo, con un pico de memoria de 2,70 GB, lo que la hace viable en telefonos actuales.
+La ficha que nos ocupa no es el modelo original, sino una conversión del repositorio `tencent/WeVisOne-VL-2B` al formato LiteRT-LM de Google, publicada por la comunidad `litert-community`. El objetivo es la inferencia en dispositivo (on-device) sobre móviles y equipos de escritorio, sin depender de servidores. Se distribuyen dos artefactos: una versión int8 de 2,91 GB y una versión float16 de 4,90 GB, ambas con un contexto de 2.048 tokens para prompt y respuesta.
 
-Cabe destacar que los ficheros `.litertlm` no incluyen el pixel decoder de 9,5 millones de parametros del modelo original, por lo que no pueden realizar segmentacion ni matting; solo las tareas de texto estructurado (cajas, puntos, OCR, recuento). El contexto por defecto en esta conversion es de 2.048 tokens para prompt y respuesta combinados.
+La relevancia actual radica en que demuestra que un VLM de 2B con capacidades de grounding puede ejecutarse en un Galaxy S26 a 21,1 tokens por segundo con un pico de memoria de 2,70 GB, o en un Mac M4 Max a 113,3 tokens por segundo. La licencia Apache 2.0 facilita su integración comercial, aunque la conversión no incluye el decodificador de píxeles de 9,5 millones de parámetros del modelo original, por lo que no realiza segmentación ni matting.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | VLM basado en Qwen3-VL (vision encoder + adapter + decoder transformer de 28 capas) |
-| Parametros totales | 2B (aproximado, no disponible el dato exacto); el pixel decoder excluido tiene 9,5M de parametros |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | 2.048 tokens (prompt + respuesta, en la conversion LiteRT-LM) |
-| Tipos de cuantizacion | int8 (decoder y token embedder) + float16 (vision encoder y adapter); variante float16 completa |
+| Arquitectura | Transformer vision-lenguaje (VLM) basado en Qwen3-VL; codificador visual + adaptador + decodificador de 28 capas |
+| Parametros totales | 2B (aproximado, segun nombre del modelo); el decodificador de pixeles del modelo original (9,5M) no esta incluido en la conversion |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 tokens (prompt + respuesta) |
+| Tipos de cuantizacion | int8 (decodificador y token embedder) + float16 (codificador visual y adaptador); float16 en todos los grafos |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM / TFLite); el modelo base esta en el repositorio de origen |
+| Formato de pesos | `.litertlm` (LiteRT-LM); int8: 2.914.025.472 bytes; f16: 4.899.179.008 bytes |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue el esquema tipico de un VLM: un vision encoder que procesa la imagen, un adapter que proyecta los embeddings visuales al espacio del LLM, y un decoder transformer de 28 capas (heredado de Qwen3-VL) que genera texto. Cada fichero `.litertlm` empaqueta los cuatro componentes junto con el `tokenizer.json` del repositorio original. La salida estructurada usa tokens de coordenadas especiales `<0>` a `<1000>`, que representan milesimas de las dimensiones de la imagen, permitiendo expresar cajas delimitadoras y puntos de referencia como texto plano.
+La conversion parte de `tencent/WeVisOne-VL-2B`, un VLM construido sobre Qwen3-VL. El grafo empaquetado contiene cuatro componentes: el codificador visual, el adaptador visual, el token embedder y un decodificador de 28 capas. En la variante int8, el decodificador y el embedder están cuantizados a int8, mientras que el codificador visual y el adaptador permanecen en float16; la variante f16 mantiene todos los grafos en float16. Ambos ficheros comparten los mismos bytes en el codificador visual y el adaptador. El modelo se declara como tipo `fast_vlm` de LiteRT-LM, lo que restringe la entrada a una sola imagen por petición.
 
-Sobre el entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO) no hay informacion disponible en la model card. En cuanto a la conversion, se realizo con litert-torch 0.10.0 para LiteRT-LM 0.18.1. Los ficheros no declaran tipo de activacion, por lo que en GPU el decoder se ejecuta con activaciones float16 por defecto y el vision encoder en float32. Un detalle tecnico importante: LiteRT-LM 0.18.1 redimensiona imagenes de otro tamano a 512 × 512 con el filtro Catmull-Rom de stb, lo que produce respuestas distintas a las obtenidas con el preprocesado recomendado (Pillow BICUBIC tras corregir la orientacion EXIF), llegando a divergir en 20 de 29 preguntas de prueba en GPU de Mac.
+La conversión se realizó con litert-torch 0.10.0 para LiteRT-LM 0.18.1. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original, más allá de que WeChat Vision lo entrenó para producir salidas estructuradas de detección, referencias, puntos, conteo y OCR. Una particularidad técnica relevante es el tratamiento de la imagen: el modelo espera 512 × 512 píxeles, y el pipeline recomienda aplicar la orientación EXIF y redimensionar con el filtro BICUBIC de Pillow antes de enviar la imagen, porque el redimensionado interno de LiteRT-LM 0.18.1 (Catmull-Rom de stb) degrada la coincidencia de respuestas con el modelo PyTorch original (9 de 29 preguntas en GPU y 1 de 29 en CPU, según la model card). Las coordenadas de salida son tokens `<0>`–`<1000>` que representan milésimas de ancho y alto de la imagen.
 
 ## Capacidades
 
-- Deteccion de objetos: localiza instancias y devuelve cajas delimitadoras como texto estructurado (`<ref>truck</ref><box><60><359><608><951></box>`).
-- Comprension de expresiones de referencia (referring expression comprehension): identifica el objeto que corresponde a una descripcion en lenguaje natural.
-- Point grounding: devuelve puntos de referencia sobre la imagen con el mismo esquema de coordenadas.
-- Recuento de objetos (object counting).
-- OCR: extraccion de texto de imagenes.
-- Respuesta a preguntas sobre imagenes (image-text-to-text) con una sola imagen por peticion.
-- No soporta segmentacion ni matting en esta conversion (requieren el pixel decoder de 9,5M parametros no incluido).
-- Soporte de tool calling / agentes: no disponible en la informacion proporcionada.
+- Detección de objetos con cajas delimitadoras expresadas como tokens de coordenadas `<0>`–`<1000>`.
+- Comprensión de expresiones referenciales: localizar instancias descritas en lenguaje natural (por ejemplo, "truck", "crane").
+- Point-grounding: señalar puntos concretos de la imagen mediante coordenadas normalizadas.
+- Conteo de objetos presentes en la imagen.
+- OCR: reconocimiento de texto en imágenes.
+- Salida estructurada en texto con etiquetas `<ref>` y `<box>`, apta para parseo programático.
+- Procesamiento de una única imagen por petición (tipo `fast_vlm`).
+- No realiza segmentación ni matting: requiere el decodificador de píxeles de 9,5M del modelo original, ausente en esta conversión.
+- Soporte de tool calling, agentes o razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Deteccion de objetos en movil sin servidor: una app Android puede ejecutar el fichero int8 localmente (2,70 GB de pico de memoria en Galaxy S26) para detectar camiones, gruas u otras clases descritas por texto, sin enviar imagenes a la nube.
-- OCR en documentos en dispositivos de gama media: el modelo extrae texto de fotografias de documentos con latencias aceptables en CPU (aunque lenta: 13,58 s al primer token en Pixel 8a).
-- Busqueda visual por descripcion: dado un catalogo de imagenes, generar cajas de los objetos que coinciden con una consulta en lenguaje natural para indexar o verificar contenido.
-- Verificacion de contenido generado: comprobar que una imagen contiene los elementos anunciados (recuento y localizacion) antes de publicarla, todo on-device.
-- Anotacion asistida de datasets: preetiquetar cajas y puntos en imagenes para tareas de supervision, revisando las salidas estructuradas del modelo.
-- Accesibilidad: describir la posicion de objetos relevantes en la escena (mediante coordenadas que se traducen a posiciones relativas) para aplicaciones de asistencia visual.
-- Prototipado rapido en portatiles Mac: en un M4 Max la version int8 alcanza 113,3 tokens/s con 0,29 s al primer token, adecuada para iterar prompts de grounding sin GPU dedicada.
+- Detección de objetos en aplicaciones móviles: el fichero int8 se ejecuta en un Galaxy S26 GPU con 1,26 s hasta el primer token y 21,1 tokens/s, lo que permite integrar detección en tiempo casi interactivo dentro de una app Android sin conexión a servidor.
+- Asistencia a personas con discapacidad visual: el modelo puede describir y localizar objetos ("truck", "crane") en una foto capturada por el móvil, devolviendo cajas normalizadas que una app puede convertir en indicaciones de posición relativa.
+- Inventario y conteo automatizado: dado que soporta conteo de objetos y devuelve coordenadas estructuradas, se puede usar para contar existencias en estanterías o almacenes a partir de una foto, con el conteo derivado del número de cajas devueltas.
+- Digitalización de documentos y OCR en dispositivo: el soporte de OCR permite extraer texto de imágenes en un Pixel 8a a 8,0 tokens/s en CPU, útil para escanear recibos o etiquetas sin enviar datos a la nube.
+- Análisis de imágenes satelitales o aéreas: la model card demuestra la localización de un camión y una grúa en una foto de la NASA (KSC-08pd3809), un escenario aplicable a inspección de infraestructuras o logística.
+- Automatización de control de calidad visual: la salida con cajas delimitadoras normalizadas permite verificar la presencia y posición de componentes en una imagen de línea de producción, integrándola en un pipeline que parsee `<ref>` y `<box>`.
+- Prototipado de agentes visuales en escritorio: en un Mac M4 Max la variante int8 alcanza 113,3 tokens/s con 3,85 GB de memoria, adecuado para iterar rápidamente en herramientas de anotación o demos locales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, etc.) en la informacion disponible. La model card si reporta mediciones de latencia y una evaluacion interna de correccion (44 puntos sobre 29 preguntas de prueba; la version f16 reproduce 35 puntos en Galaxy S26 GPU frente a 28 de la int8).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card proporciona mediciones de latencia, throughput y memoria, así como una métrica de fidelidad respecto al modelo PyTorch original:
 
-| Dispositivo / backend | Fichero | Primer token | Tokens/s | Memoria pico |
+| Plataforma | Fichero | Primer token | Throughput | Memoria pico |
 |---|---|---:|---:|---:|
-| Galaxy S26 (GPU) | int8 | 1,26 s | 21,1 | 2,70 GB |
-| Galaxy S26 (GPU) | f16 | 1,54 s | 12,9 | 6,86–6,90 GB |
-| Pixel 8a (CPU) | int8 | 13,58 s | 8,0 | no disponible |
-| Mac M4 Max (GPU) | int8 | 0,29 s | 113,3 | 3,85 GB |
-| Mac M4 Max (GPU) | f16 | 0,30 s | 81,4 | 8,0 GB |
-| Mac M4 Max (CPU) | int8 | 4,64 s | 26,8 | 7,6 GB (pico CPU) |
-| Mac M4 Max (CPU) | f16 | 4,85 s | 12,6 | no disponible |
+| Galaxy S26 (GPU) | int8 | 1,26 s | 21,1 tok/s | 2,70 GB |
+| Galaxy S26 (GPU) | f16 | 1,54 s | 12,9 tok/s | 6,86–6,90 GB |
+| Pixel 8a (CPU) | int8 | 13,58 s | 8,0 tok/s | no disponible |
+| Mac M4 Max (GPU) | int8 | 0,29 s | 113,3 tok/s | 3,85 GB |
+| Mac M4 Max (GPU) | f16 | 0,30 s | 81,4 tok/s | 8,0 GB |
+| Mac (CPU) | int8 | 4,64 s | 26,8 tok/s | no disponible |
+| Mac (CPU) | f16 | 4,85 s | 12,6 tok/s | no disponible |
+
+En fidelidad respecto al modelo original, de los 44 puntos posibles en 29 preguntas de test, la variante f16 reproduce 35 en Galaxy S26 GPU y la int8 reproduce 28. En las preguntas con respuesta conocida, la int8 acierta al menos con la misma frecuencia que la f16.
 
 ## Requisitos de hardware
 
-- Version int8 (2,91 GB en disco): pico de 2,70 GB de memoria en Galaxy S26 GPU; cabe en telefonos con 8 GB de RAM (verificado en Pixel 8a en CPU, con 8,0 tokens/s).
-- Version f16 (4,90 GB en disco): necesita ~6,9 GB en GPU de Galaxy S26 y 8,0 GB en Mac M4 Max; no arranca en un telefono de 8 GB como el Pixel 8a.
-- GPU recomendadas en movil: GPU de gama alta reciente (Galaxy S26 verificado); en GPU de Pixel 8a la creacion del motor int8 se aborto por falta de memoria libre.
-- Escritorio: Mac con Apple Silicon (M4 Max verificado) via backend GPU o CPU; en CPU el pico es de 7,6 GB de memoria y genera 5,11 GB de ficheros de cache junto al modelo.
-- Despliegue: LiteRT-LM 0.18.1 (`pip install litert-lm==0.18.1`), con backends `gpu` y `cpu` tanto para el LLM como para la vision (`--backend`, `--vision-backend`); no consta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Preprocesado obligatorio: corregir orientacion EXIF y redimensionar a 512 × 512 con Pillow BICUBIC sin padding ni recorte; usar otros filtros o rutas de redimensionado degrada gravemente la correccion de las respuestas.
+- VRAM/memoria estimada: 2,70 GB en Galaxy S26 GPU (int8) y 3,85 GB en Mac M4 Max GPU (int8); 6,86–6,90 GB en Galaxy S26 GPU y 8,0 GB en Mac M4 Max GPU (f16).
+- GPU recomendadas: GPU integrada de Galaxy S26 (int8), GPU de Mac M4 Max (int8 y f16). No se han probado A100, H100 ni RTX 4090 en la información disponible.
+- Cabe en consumer GPU: sí, al menos en hardware móvil y Apple Silicon; en un Pixel 8a de 8 GB solo se validó la variante int8 en CPU, ya que en su GPU el script de medición detuvo la creación del motor al bajar la memoria libre del límite.
+- Opciones de despliegue: LiteRT-LM 0.18.1 con backend GPU o CPU (`--backend gpu --vision-backend gpu` o `--backend cpu --vision-backend cpu`). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: ver tabla de benchmarks. En CPU del Mac, las coordenadas de la variante int8 varían algunos milésimos entre procesos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato on-device | Licencia |
-|---|---|---|---|---|
-| WeVisOne-VL-2B (LiteRT-LM) | 2B | 2.048 tokens (conversion) | `.litertlm` int8 / f16 | Apache 2.0 |
-| Qwen3-VL (base de origen) | 2B (familia) | no disponible | PyTorch / safetensors | no disponible |
-| PaliGemma / SmolVLM (categoria VLM compacto) | ~2–3B | no disponible | GGUF / safetensors | no disponible |
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada. La comparación más directa posible es entre las dos variantes publicadas:
 
-No hay datos de rendimiento comparativo publicados frente a estos alternativos en la informacion disponible; la comparacion se limita a la categoria y al formato de despliegue. La ventaja diferencial de esta conversion es el soporte nativo de grounding (cajas, puntos, recuento) en formato LiteRT-LM para movil, algo que la mayoria de VLM genericos no ofrece sin heads adicionales.
+| Modelo | Parámetros | Contexto | Throughput (Galaxy S26 GPU) | Memoria | Licencia |
+|---|---|---|---|---|---|
+| WeVisOne-VL-2B int8 | 2B | 2.048 | 21,1 tok/s | 2,70 GB | Apache 2.0 |
+| WeVisOne-VL-2B f16 | 2B | 2.048 | 12,9 tok/s | 6,86–6,90 GB | Apache 2.0 |
+
+Frente a otros VLM de 2B del ecosistema (por ejemplo, Qwen2-VL-2B o SmolVLM), no hay datos de rendimiento comparables en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Sin segmentacion ni matting: los ficheros `.litertlm` no contienen el pixel decoder de 9,5M parametros; para esas tareas hay que usar el modelo original de Tencent.
-- Contexto reducido a 2.048 tokens (prompt + respuesta) en la conversion; el contexto del modelo original no esta especificado.
-- Sensibilidad extrema al preprocesado: si la imagen no se redimensiona a 512 × 512 con Pillow BICUBIC tras exif_transpose, las respuestas pueden divergir sustancialmente (solo 9/29 coincidencias en Mac GPU con el redimensionado interno de LiteRT-LM).
-- La version int8 pierde correccion frente a la f16 (28 frente a 35 puntos sobre 44 en 29 preguntas de prueba en Galaxy S26 GPU).
-- En CPU las coordenadas de la version int8 varian unas milesimas entre ejecuciones (no determinismo numerico).
-- No hay informacion sobre sesgos, riesgos de alucinacion ni idiomas soportados; al ser un modelo base cuantizado sin ajuste de alineamiento documentado, conviene validar las salidas en produccion.
-- Licencia Apache 2.0: sin restricciones relevantes para uso comercial.
-- Consumo de disco adicional: hasta 5,11 GB de ficheros de cache generados junto al modelo en Mac.
-- Rendimiento en CPU de movil muy limitado (8 tokens/s, 13,58 s al primer token en Pixel 8a): desaconsejado para interaccion en tiempo real en gama media.
+- No realiza segmentación ni matting: carece del decodificador de píxeles de 9,5M del modelo original.
+- Procesa una sola imagen por petición y con un contexto de solo 2.048 tokens, insuficiente para conversaciones multi-turno largas o documentos extensos.
+- El pipeline de imagen es frágil: exige orientación EXIF aplicada y redimensionado a 512 × 512 con BICUBIC de Pillow; otros redimensionados o JPEG a 512 × 512 no fueron probados y degradan la coincidencia con el modelo original.
+- En CPU, las coordenadas de la variante int8 presentan variación de algunos milésimos entre ejecuciones.
+- Las mediciones de la variante int8 se realizaron antes del 10 de noviembre de 2026 sobre ficheros anteriores; no se repitieron sobre el fichero int8 actual, aunque los pesos son los mismos.
+- En un Pixel 8a de 8 GB, la variante int8 no se pudo iniciar en GPU por límite de memoria; la f16 no se probó en ese dispositivo.
+- Idiomas soportados no disponibles; riesgo de alucinación y sesgos no documentados en la información proporcionada.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base `tencent/WeVisOne-VL-2B` para el uso de los pesos originales.
+- El repositorio ocupa 17,4 GB, aunque los ficheros individuales son de 2,91 GB y 4,90 GB.
 
 ## Enlaces
 
-- Modelo convertido (LiteRT-LM): https://huggingface.co/litert-community/WeVisOne-VL-2B
-- Modelo base (Tencent / WeChat Vision): https://huggingface.co/tencent/WeVisOne-VL-2B
-- Repositorio LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Imagen de ejemplo usada en la model card (NASA): https://images-assets.nasa.gov/image/KSC-08pd3809/KSC-08pd3809~orig.jpg
+- Repositorio Hugging Face de la conversión: https://huggingface.co/litert-community/WeVisOne-VL-2B
+- Modelo base original: https://huggingface.co/tencent/WeVisOne-VL-2B
+- LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM
+- Imagen de ejemplo de la NASA (KSC-08pd3809): https://images-assets.nasa.gov/image/KSC-08pd3809/KSC-08pd3809~orig.jpg

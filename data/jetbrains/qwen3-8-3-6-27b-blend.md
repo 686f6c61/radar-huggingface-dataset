@@ -2,121 +2,110 @@
 
 ## Resumen
 
-Qwen3.8-3.6-27B-blend es un modelo derivado publicado por JetBrains que consiste en la fusión lineal 50/50 de los checkpoints Qwen/Qwen3.6-27B y Qwen/Qwen3.8-27B, ambos desarrollados por Alibaba Cloud. El resultado es un único checkpoint de 27.781.427.952 parámetros (unos 27,8 B) que conserva la configuración, el tokenizer, el processor y la plantilla de chat de Qwen3.8-27B. Se trata de un modelo no oficial: JetBrains declara explícitamente que la publicación no está afiliada, patrocinada ni respaldada por Alibaba Cloud ni por Alibaba Group.
+Qwen3.8-3.6-27B-blend es un modelo derivado no oficial publicado por JetBrains que combina, mediante interpolación lineal de pesos, dos checkpoints de la familia Qwen: Qwen3.6-27B y Qwen3.8-27B, ambos desarrollados por Alibaba Cloud. El resultado es un modelo de 27.781.427.952 parámetros (aproximadamente 27,8 mil millones) con arquitectura transformer de la familia Qwen 3.5/3.6/3.8, orientado a tareas de imagen-texto-a-texto y conversación, y distribuido bajo licencia Apache 2.0.
 
-La operación de mezcla se realizó interpolando parámetros con acumulación en float32 (0,5 × Qwen3.6-27B + 0,5 × Qwen3.8-27B), sin entrenamiento ni fine-tuning adicional y sin utilizar datos nuevos. La licencia Apache 2.0 del material original se mantiene, igual que los avisos de copyright de Alibaba Cloud. La pipeline declarada es image-text-to-text, por lo que el modelo hereda capacidad de entrada multimodal (imagen y texto) del checkpoint base.
+La relevancia del modelo no reside en un entrenamiento nuevo —no se realizó ninguno— sino en el procedimiento de merge: una media aritmética 50/50 de los parámetros de ambos checkpoints con acumulación en float32. JetBrains documenta que el objetivo es mejorar la eficiencia en tokens de salida en tareas de código, y publica evaluaciones sobre un benchmark interno de 100 tareas de programación, además de artefactos auxiliares como un modelo draft DFlash2 para decodificación especulativa, versiones GGUF, MLX 4-bit y MTP MLX 4-bit.
 
-Su relevancia actual viene de que JetBrains lo emplea como motor de "Junie Local", su asistente de código ejecutado en local, y acompaña la publicación con evaluaciones internas centradas en la relación entre calidad de código y tokens de salida consumidos. Se distribuye en BF16, GGUF, MLX 4-bit y una variante MTP MLX 4-bit, lo que cubre tanto servidores con GPU como equipos Apple Silicon. Con 436 descargas y 11 likes en el momento de la consulta, es un modelo de nicho orientado a desarrolladores que buscan inferencia local eficiente en tareas de programación.
+El modelo se distribuye con la configuración, tokenizer, processor y chat template heredados de Qwen3.8-27B, e incluye un draft model DFlash2 afinado sobre trayectorias de código de Junie (el agente de JetBrains). Es, por tanto, una pieza pensada para despliegue local en flujos de asistencia a la programación, no un modelo generalista con entrenamiento propio verificable.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle. Modelo derivado de Qwen3.8-27B (etiquetado `qwen3_5`); pipeline `image-text-to-text` |
-| Parámetros totales | 27.781.427.952 (≈27,8 B) |
-| Parámetros activos | No disponible (no se indica que la arquitectura sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | BF16 (original), GGUF (cuantizaciones no detalladas), MLX 4-bit, MTP MLX 4-bit |
-| Idiomas soportados | No disponible |
-| Licencia | Apache License 2.0 |
-| Formato de pesos | Safetensors (BF16), GGUF, MLX |
-| Modelos base | Qwen/Qwen3.6-27B (rev. `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`) y Qwen/Qwen3.8-27B (rev. `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`) |
-| Método de fusión | Linear merge 50/50 con acumulación en float32 |
-| Tamaño del repositorio | 55,6 GB |
-| Librería | transformers |
-| Descargas / likes | 436 / 11 |
-| Fecha de creación | 15 de septiembre de 2026 |
-| Última actualización | 21 de septiembre de 2026 |
+| Arquitectura | Transformer de la familia Qwen 3.5/3.6/3.8 (tag `qwen3_5`); merge lineal de dos checkpoints |
+| Parametros totales | 27.781.427.952 (27,8 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 (repo principal), GGUF, MLX 4-bit, MTP MLX 4-bit |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo principal), GGUF, MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo no incorpora ninguna innovación arquitectónica propia: es el resultado de una interpolación lineal de parámetros entre dos checkpoints de la familia Qwen3, con peso 0,5 para cada uno y acumulación en float32. Los componentes no relacionados con los pesos (configuración, tokenizer, processor y plantilla de chat) se toman íntegramente de Qwen3.8-27B, de modo que el comportamiento conversacional y el formato de prompt esperado son los del modelo más reciente de la pareja. La etiqueta `qwen3_5` asociada al repositorio y la pipeline `image-text-to-text` indican que la familia subyacente es multimodal, aunque la model card no detalla la arquitectura interna (número de capas, tipo de atención, uso o no de mezcla de expertos).
+El modelo es un transformer de la familia Qwen (etiquetado `qwen3_5` en los tags del repositorio) con 27,8 mil millones de parámetros. No se trata de un modelo entrenado desde cero ni afinado: la model card indica explícitamente que no se realizó entrenamiento adicional ni se utilizaron datos nuevos. La preparación consistió en la interpolación lineal de los parámetros de Qwen3.6-27B (revisión `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`) y Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`), con la fórmula `0.5 * Qwen3.6-27B + 0.5 * Qwen3.8-27B` y acumulación en float32. Los detalles exactos de revisiones y ajustes del merge se registran en `merge-manifest.json`.
 
-No se realizó entrenamiento, fine-tuning, RLHF ni DPO adicionales, y no se emplearon datos de entrenamiento nuevos: la preparación consistió únicamente en la fusión de checkpoints y, cuando corresponde, la extracción, conversión de formato y cuantización descritas en el fichero CHANGES.md del repositorio. Los detalles exactos de revisiones de origen y parámetros de la mezcla quedan registrados en `merge-manifest.json`. Para información sobre los datos de entrenamiento de los modelos originales, JetBrains remite a las model cards oficiales de Qwen y al resumen de datos de entrenamiento publicado por Qwen, que no identifica los conjuntos exactos usados en estos dos checkpoints.
+La innovación técnica destacable no está en el modelo objetivo sino en el ecosistema que lo acompaña: un draft model DFlash2 incluido en el subdirectorio `DFlash2/`, con los mismos pesos que el repositorio independiente `JetBrains/Qwen3.8-3.6-27B-blend-DFlash2`, afinado a partir del drafter público `incoai/Qwen3.8-27B-DFlash2` sobre trayectorias de código de Junie. Este draft se verifica contra el modelo objetivo durante decodificación especulativa y es un checkpoint independiente, no parte del modelo principal. También se publican variantes MTP (multi-token prediction) en MLX 4-bit.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con la plantilla de chat heredada de Qwen3.8-27B.
-- Entrada multimodal de imagen y texto, según la pipeline declarada `image-text-to-text`.
+- Generación de texto conversacional multi-turno, con chat template heredado de Qwen3.8-27B.
+- Procesamiento de imagen y texto como entrada (`image-text-to-text`), según el pipeline declarado.
 - Generación y asistencia en código, evaluada por JetBrains en un benchmark interno de 100 tareas de programación.
-- Capacidad de razonamiento con configuraciones variables: la nota metodológica del benchmark interno indica que los ajustes de razonamiento difieren entre configuraciones comparadas.
-- Soporte de tool calling / function calling: no disponible de forma explícita en la información proporcionada (depende del modelo base Qwen3.8-27B).
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita; JetBrains orienta el modelo a flujos de asistencia de código integrados en IDE.
-- Capacidades multilingües: no disponibles (no se enumeran idiomas soportados).
-- Capacidad especial de eficiencia: variante MTP (multi-token prediction) en formato MLX 4-bit, orientada a reducir el coste por token generado.
-- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`) y con la librería `transformers`.
+- Eficiencia en tokens de salida: la propuesta de valor del merge es completar tareas con menos tokens generados, según las gráficas publicadas por JetBrains.
+- Decodificación especulativa mediante el draft DFlash2 incluido, orientada a reducir latencia en inferencia local.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su exposición como servicio.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Idiomas soportados: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local dentro del IDE: el modelo se integra en Junie Local para autocompletado, explicación de código y refactorizaciones sin enviar el código fuente a servicios externos, lo que resulta adecuado para entornos con requisitos estrictos de confidencialidad.
-- Generación de parches y correcciones en pipelines de CI/CD: puede conectarse a un runner que, ante un fallo de tests, solicite al modelo un parche candidato y lo valide automáticamente antes de abrir una pull request.
-- Revisión de código automatizada: análisis de diffs y detección de patrones problemáticos aprovechando la ventana conversacional del modelo para mantener el contexto del repositorio durante la revisión.
-- Documentación técnica a partir de código: generación de docstrings, guías de API y notas de versión a partir de ficheros fuente, con la ventaja de poder ejecutarse localmente sobre código propietario.
-- Conversión de capturas de interfaz a código: gracias a la entrada image-text-to-text, el modelo puede recibir una captura de una UI o un diagrama y proponer el marcado o los componentes correspondientes.
-- Investigación en técnicas de model merging: al publicar el manifiesto de fusión y las revisiones exactas de origen, el checkpoint sirve como caso reproducible para estudiar interpolación lineal de parámetros y su efecto sobre tareas de código.
-- Despliegue on-premise en equipos de desarrollo: con las variantes GGUF y MLX 4-bit, un equipo puede ejecutar el modelo en estaciones de trabajo con una sola GPU o en portátiles Apple Silicon, evitando costes de API por token.
-- Optimización de coste por token en agentes de codificación: la variante MTP MLX 4-bit y el enfoque de eficiencia de tokens del benchmark interno lo hacen adecuado para agentes que ejecutan muchas iteraciones cortas sobre el mismo repositorio.
+- Asistencia de código en IDE local: el modelo está pensado para integrarse en Junie Local y flujos similares, donde un modelo de 27,8 B en BF16 o cuantizado 4-bit puede ejecutarse en hardware de desarrollador y completar tareas de programación con un presupuesto de tokens de salida reducido.
+- Autocompletado y generación de parches en pipelines de CI/CD: la variante GGUF y las versiones MLX permiten desplegar el modelo en runners con GPU consumer o Apple Silicon, generando diffs y correcciones sobre el código del repositorio.
+- Revisión de código asistida: con contexto conversacional multi-turno, puede mantener hilos de revisión sobre fragmentos de código y comentarios, aunque la longitud de contexto no está documentada y debe validarse empíricamente.
+- Servicio de inferencia compatible con endpoints: el tag `endpoints_compatible` sugiere su uso detrás de una API HTTP para equipos que quieran un endpoint de código autoalojado bajo Apache 2.0.
+- Inferencia de baja latencia en estación de trabajo: combinando el modelo con el draft DFlash2 se puede montar decodificación especulativa para reducir el tiempo por token en tareas de generación larga, como documentación técnica o tests.
+- Procesamiento de capturas y diagramas: al declarar pipeline `image-text-to-text`, puede emplearse para extraer información de imágenes de interfaz, diagramas de arquitectura o capturas de error y convertirlas en texto o código.
+- Evaluación comparativa de merges: como artefacto reproducible (manifest de merge incluido), sirve para investigar el efecto de la interpolación de checkpoints en eficiencia de tokens y calidad de código.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye únicamente una figura del benchmark interno de 100 tareas de codificación de JetBrains, que representa tareas completadas frente a tokens de salida, pero los valores concretos no se han proporcionado en forma de tabla y la propia nota metodológica advierte que los ajustes de razonamiento difieren entre configuraciones comparadas, por lo que no es posible extraer cifras directamente comparables.
+La model card referencia un benchmark interno de JetBrains de 100 tareas de programación, presentado como gráfica de tareas completadas frente a tokens de salida, con la advertencia de que los ajustes de razonamiento difieren entre configuraciones. No se proporcionan valores numéricos en la información disponible.
 
-| Benchmark | Resultado |
-|---|---|
-| MMLU | No disponible |
-| HumanEval | No disponible |
-| GSM8K | No disponible |
-| Benchmark interno de codificación de JetBrains (100 tareas) | Publicado solo como gráfico en el blog; sin valores numéricos en la información disponible |
+| Benchmark | Resultado | Notas |
+|---|---|---|
+| Benchmark interno de código de JetBrains (100 tareas) | no disponible (solo gráfica publicada) | Metodología en el blog de JetBrains; ajustes de razonamiento variables |
+| MMLU | no disponible | No publicado en la información proporcionada |
+| HumanEval | no disponible | No publicado en la información proporcionada |
+| GSM8K | no disponible | No publicado en la información proporcionada |
+
+No se han publicado resultados de benchmarks numéricos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 55,6 GB solo de pesos (2 bytes por parámetro × 27,78 B), más caché KV y activaciones, lo que en la práctica exige GPUs de 80 GB o particionado en varias GPU.
-- VRAM estimada en cuantización de 4 bits: del orden de 14-16 GB de pesos, más el overhead de contexto, lo que la sitúa en el rango de una RTX 4090, RTX 3090 o similar con 24 GB.
-- VRAM estimada en cuantización de 8 bits: del orden de 28-30 GB, por encima de una GPU de consumo de 24 GB y al alcance de una A6000 de 48 GB o de configuraciones multi-GPU.
-- GPU recomendadas: A100 80 GB, H100 80 GB o A6000 48 GB para BF16; RTX 4090, RTX 3090 o L40S para cuantizaciones de 4 bits.
-- Compatibilidad con GPU de consumo: sí, en cuantizaciones de 4 bits y con contexto moderado. En BF16 no cabe en ninguna GPU de consumo actual de 24 GB.
-- Apple Silicon: la publicación incluye formatos MLX 4-bit y MTP MLX 4-bit, pensados para ejecución nativa en chips de Apple.
-- Opciones de despliegue: `transformers` (según la librería declarada), llama.cpp u Ollama y LM Studio para GGUF, MLX para Apple Silicon, vLLM o TGI para servir los pesos completos, y endpoints de Hugging Face (etiqueta `endpoints_compatible`).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada en BF16: aproximadamente 55,6 GB solo para pesos (27,78 B × 2 bytes), más overhead de activaciones y KV cache; requiere GPU de 80 GB (A100, H100) para contexto amplio.
+- VRAM estimada en 4-bit (MLX 4-bit): del orden de 14-16 GB para pesos, más overhead; viable en GPUs consumer de 24 GB (RTX 4090, RTX 3090) y en Apple Silicon con memoria unificada de 24 GB o más.
+- VRAM estimada en GGUF Q4/Q5: aproximadamente 16-20 GB según cuantización; cabe en RTX 4090 de 24 GB y en configuraciones de 32 GB.
+- GPU recomendadas: A100 80 GB y H100 para BF16 con contexto largo; RTX 4090/3090 y Apple Silicon (M-series con 32 GB o más) para cuantizaciones 4-bit.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp/Ollama vía GGUF, MLX para Apple Silicon (incluida la variante MTP MLX 4-bit), y servidores compatibles con endpoints.
+- Decodificación especulativa: el draft DFlash2 incluido en `DFlash2/` permite acelerar la generación verificando candidatos contra el modelo objetivo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de terceros que permitan una comparación cuantitativa. La comparación se limita a las relaciones declaradas en la información disponible.
-
-| Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-3.6-27B-blend | Modelo analizado | 27.781.427.952 | No disponible | Apache 2.0 | Safetensors (BF16), GGUF, MLX 4-bit, MTP MLX 4-bit |
-| Qwen/Qwen3.6-27B | Modelo base (50 % de la mezcla) | No disponible | No disponible | No disponible en la información proporcionada | Checkpoint original de Qwen |
-| Qwen/Qwen3.8-27B | Modelo base (50 % de la mezcla); aporta configuración, tokenizer, processor y plantilla de chat | No disponible | No disponible | No disponible en la información proporcionada | Checkpoint original de Qwen |
-| Otros modelos densos de ~27 B de la misma categoría | Comparación cuantitativa | No disponible | No disponible | No disponible | No disponible |
+| JetBrains/Qwen3.8-3.6-27B-blend | 27,8 B | no disponible | Apache 2.0 | HF (BF16, GGUF, MLX 4-bit, MTP MLX 4-bit, DFlash2) | Merge 50/50 de dos checkpoints Qwen; sin entrenamiento adicional |
+| Qwen/Qwen3.6-27B | 27 B (aprox.) | no disponible | no disponible en la información | HF | Checkpoint upstream; base del merge |
+| Qwen/Qwen3.8-27B | 27 B (aprox.) | no disponible | no disponible en la información | HF | Checkpoint upstream; aporta config, tokenizer y chat template |
+| incoai/Qwen3.8-27B-DFlash2 | no disponible | no disponible | no disponible en la información | HF | Drafter público del que deriva el DFlash2 de JetBrains |
+
+Los datos de rendimiento comparado no están disponibles; la única comparación publicada es la gráfica interna de JetBrains frente a tokens de salida, sin cifras en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo no oficial: no está afiliado, patrocinado ni respaldado por Alibaba Cloud ni por Alibaba Group, según declara el propio JetBrains.
-- No se realizó ningún entrenamiento ni ajuste posterior a la fusión, por lo que cualquier sesgo o carencia presente en los checkpoints originales de Qwen se hereda sin corrección.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de tasas de alucinación para este checkpoint fusionado.
-- La interpolación lineal de parámetros puede degradar capacidades específicas respecto a cada modelo de origen; no se aportan datos comparativos que cuantifiquen esa posible pérdida más allá del gráfico interno de JetBrains.
-- Idiomas soportados no documentados: se desconoce la cobertura multilingüe real del derivado, más allá de lo que herede de Qwen3.8-27B.
-- Longitud de contexto no documentada: sin este dato no es posible dimensionar la caché KV ni garantizar el comportamiento en contextos largos.
-- Ausencia de benchmarks públicos: no hay resultados de MMLU, HumanEval, GSM8K ni de evaluaciones de terceros que permitan validar el rendimiento declarado.
-- La evaluación de código publicada es un benchmark interno de JetBrains, con ajustes de razonamiento no homogéneos entre configuraciones, por lo que los resultados no son directamente extrapolables a otros entornos.
-- Licencia Apache 2.0: permite uso comercial, pero se mantienen los avisos de copyright de Alibaba Cloud y los términos de la licencia original de Qwen, que deben conservarse en redistribuciones.
-- Aviso de uso aceptable: la model card recuerda que utilizar el modelo o sus salidas para infringir derechos de propiedad intelectual de terceros puede violar la legislación aplicable, con independencia de los términos de la licencia.
-- El repositorio pesa 55,6 GB, lo que implica tiempos de descarga y requisitos de almacenamiento considerables si se quieren conservar varias cuantizaciones.
+- Modelo derivado no oficial: no está afiliado, patrocinado ni respaldado por Alibaba Cloud ni Alibaba Group; la atribución y los cambios se documentan en `NOTICE` y `CHANGES.md`.
+- Sin entrenamiento adicional: el merge puede degradar capacidades respecto a los checkpoints originales en tareas no evaluadas; no hay garantía de que la interpolación preserve el rendimiento en razonamiento, matemáticas o multilingüismo.
+- Sin datos verificables de benchmarks públicos (MMLU, HumanEval, GSM8K): la única evaluación es interna de JetBrains y no numérica en la información disponible.
+- Longitud de contexto e idiomas soportados no documentados: debe validarse antes de usarlo en producción con contextos largos o idiomas distintos del inglés.
+- Riesgo de alucinación inherente a los modelos generativos; en código puede producir APIs inexistentes o parches incorrectos, por lo que requiere verificación en CI.
+- Sesgos: no documentados en la información proporcionada; al heredar los datos de entrenamiento de Qwen, arrastra los sesgos de los checkpoints originales.
+- Licencia Apache 2.0 permite uso comercial, pero el aviso de uso aceptable recuerda que emplear el modelo para infringir derechos de propiedad intelectual de terceros puede violar la ley.
+- El draft DFlash2 es un checkpoint independiente y debe servirse junto al modelo objetivo; no forma parte de los pesos del modelo principal.
+- Repositorio de 59,4 GB: el despliegue en BF16 exige almacenamiento y memoria considerables; las variantes cuantizadas son la vía práctica para hardware consumer.
+- Fecha de creación y actualización (septiembre-octubre de 2026) y métricas de comunidad (853 descargas, 43 likes) indican adopción limitada; no hay evidencia de validación independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend
-- Versión GGUF: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF
-- Versión MLX 4-bit: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-MLX-4bit
-- Versión MTP MLX 4-bit: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-MTP-MLX-4bit
-- Artículo de JetBrains sobre Junie Local, evaluaciones de código y experimentos con MTP: https://blog.jetbrains.com/junie/2026/09/smarter-local-al/
-- Manifiesto de la fusión: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend/blob/main/merge-manifest.json
-- Descripción de modificaciones: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend/blob/main/CHANGES.md
-- Aviso de atribución: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend/blob/main/NOTICE
-- Licencia del repositorio: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend/blob/main/LICENSE
-- Model card de Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
-- Model card de Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Variante GGUF: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF
+- Variante MLX 4-bit: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-MLX-4bit
+- Variante MTP MLX 4-bit: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-MTP-MLX-4bit
+- Draft DFlash2: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-DFlash2
+- Drafter público de origen: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Blog de JetBrains sobre Junie Local y eficiencia de tokens: https://blog.jetbrains.com/junie/2026/09/smarter-local-al/
 - Resumen de datos de entrenamiento de Qwen: https://qwen.ai/training-data-summary
-- Sitio de JetBrains: https://www.jetbrains.com/
-- JetBrains en Wikipedia: https://en.wikipedia.org/wiki/JetBrains
+- Web de JetBrains: https://www.jetbrains.com/

@@ -2,102 +2,104 @@
 
 ## Resumen
 
-bit-jev-2b-distilled es un modelo de decisión estructurada, no un modelo generativo de lenguaje. Se construye a partir del backbone de Microsoft BitNet b1.58 2B (arquitectura tipo transformer con pesos ternarios de 1,58 bits) mediante ajuste fino con LoRA y la incorporación de una cabeza de puntero (pointer head) que puntúa directamente las opciones candidatas presentes en la entrada. El resultado no es una respuesta en lenguaje natural, sino una selección, una probabilidad o un orden de preferencia sobre un conjunto de candidatos.
+bit-jev-2b-distilled es un modelo de decisión estructurada desarrollado por el usuario jinghao1632 (organización Zeaulo) a partir de Microsoft BitNet b1.58 2B. A diferencia de un modelo generativo convencional, no produce tokens de respuesta: recibe un estado compartido (`state`) y una o varias preguntas con candidatos, y un cabezal de puntero (pointer head) puntúa directamente cada opción de entrada, devolviendo selección, probabilidad o nivel ordenado. Soporta tres tipos de tarea: `choice` (elegir entre opciones), `noul` (sí/no) y `score` (gradación ordinal con valor esperado).
 
-El proyecto lo desarrolla el autor identificado como Zeaulo (repositorio jinghao1632 en Hugging Face) y su rasgo diferencial es la orientación a inferencia en CPU nativa: el paquete se distribuye como un GGUF cuantizado en formato I2_S más una cabeza de puntero en float32, pensado para un runner de CPU propio, sin necesidad de GPU. El modelo cuenta con 2.412.820.480 parámetros totales y el repositorio ocupa aproximadamente 1,2 GB, lo que lo sitúa en el rango de modelos que caben cómodamente en hardware de consumo.
+El modelo se construye mediante LoRA y entrenamiento del cabezal sobre el backbone BitNet, seguido de una destilación completa del alumno usando los logits de candidatos de un profesor Kev 9B, y finalmente una exportación cuantizada I2_S en formato GGUF. El resultado es un artefacto de aproximadamente 1,19 GB que puede ejecutarse en CPU nativa o en GPU vía Vulkan/CUDA con el paquete Python `bit-jev`, sin necesidad de toolchain de compilación en Windows x64 con AVX2.
 
-Es relevante ahora porque explora una vía distinta a la generación token a token para tareas de decisión: en lugar de que el modelo redacte una respuesta, la cabeza de puntero compara candidatos y devuelve una distribución de probabilidad, lo que reduce la superficie de alucinación en escenarios de clasificación y elección. El entrenamiento se realiza por destilación de conocimiento a partir de un profesor Kev 9B y se apoya en un conjunto de datos de decisión multi-fuente (`decision-v7`) que incluye reseñas de Yelp, dato que condiciona el régimen de licencia (ver "Limitaciones y advertencias").
+Su relevancia actual reside en la combinación de pesos ternarios (BitNet b1.58) con un paradigma de salida estructurada en lugar de generación libre, orientado a tareas de enrutamiento, clasificación y decisión con latencias de milisegundos en hardware modesto. No obstante, la licencia del checkpoint no está concedida de forma abierta y el autor reconoce pendiente una autorización de Yelp sobre los datos de entrenamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con pesos ternarios (BitNet b1.58) y cabeza de puntero (pointer head) |
+| Arquitectura | Transformer BitNet b1.58 (pesos ternarios en BitLinear) con cabezal de puntero para decisión estructurada |
 | Parametros totales | 2.412.820.480 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | I2_S (backbone en GGUF); cabeza en float32 |
+| Tipos de cuantizacion | I2_S (GGUF, backbone); cabezal en float32 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el modelo no tiene licencia de pesos abiertos propia; la Apache-2.0 del repositorio de código no se aplica al checkpoint) |
-| Formato de pesos | GGUF (backbone `backbone-i2_s.gguf`), `head.f32` y `pointer.json`; no se publican safetensors BF16 |
-| Modelo base | microsoft/bitnet-b1.58-2B-4T-bf16 |
-| Temperatura de la cabeza | 2,35 (indicada en `pointer.json`) |
+| Licencia | no disponible (sin licencia de pesos abierta; el Apache-2.0 del repositorio de código no cubre el checkpoint) |
+| Formato de pesos | GGUF (`backbone-i2_s.gguf`), cabezal `head.f32`, metadatos `pointer.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone de Microsoft BitNet b1.58 2B, una arquitectura transformer cuyos pesos son ternarios (valores {-1, 0, 1}, equivalentes a 1,58 bits por peso), lo que abarata la inferencia en CPU. Sobre ese backbone se aplica un ajuste fino con LoRA y se entrena una cabeza de puntero que opera sobre las representaciones de los tokens candidatos del propio contexto, en lugar de generar texto de salida. Después, el conjunto completo se somete a una destilación sobre las logits de candidatos de un profesor Kev 9B, y finalmente se exporta la cuantización I2_S.
+El backbone es Microsoft BitNet b1.58 2B, un transformer con pesos ternarios (-1, 0, +1) en las capas BitLinear, lo que reduce drásticamente el coste de memoria y cómputo. Sobre él se añade un cabezal de puntero que opera sobre representaciones de los candidatos presentes en la entrada y emite puntuaciones directas, sin decodificación autoregresiva de texto. El pipeline documentado es: LoRA y entrenamiento del cabezal sobre el BitNet BF16, destilación completa del alumno con los logits de candidatos de un profesor Kev 9B, y exportación a I2_S GGUF con cabezal en float32.
 
-Los hiperparámetros registrados en la configuración de entrenamiento son: 3.144 pasos, 2 épocas, precisión BF16, ratio de aprendizaje 2e-5, tamaño de lote 2, acumulación de gradiente 4, temperatura de destilación 2,0 y peso de destilación 1,0. La cabeza de puntero opera con temperatura 2,35, definida en `pointer.json`. El modelo no genera tokens de lenguaje natural: la salida es una puntuación sobre los candidatos de entrada, por lo que métricas como tokens/s no son aplicables. La innovación técnica destacable es precisamente esta cabeza de decisión estructurada sobre un backbone ternario orientado a CPU.
+La configuración de entrenamiento registrada incluye 3.144 pasos, 2 épocas, precisión BF16, tasa de aprendizaje 2e-5, batch 2, acumulación de gradiente 4, temperatura de destilación 2,0 y peso 1,0. La temperatura del cabezal en inferencia es 2,35 según `pointer.json`. Los datos provienen del conjunto local `decision-v7`, de múltiples fuentes e incluyendo registros de reseñas de Yelp. No se publican pesos BF16 en safetensors, ni datos de entrenamiento, ni logs, ni reseñas originales.
 
 ## Capacidades
 
-- Decisión estructurada en tres modalidades: `choice` (elegir entre un conjunto de opciones, devolviendo selección, score y probabilidad), `noul` (preguntas de sí/no con dos clases de score y probabilidad) y `score` (niveles ordenados, devolviendo score de nivel, valor esperado y probabilidad).
-- Procesamiento de una entrada compartida `state` junto con uno o varios problemas, con puntuación directa de los candidatos mediante la cabeza de puntero.
-- Salida determinista y acotada al conjunto de candidatos, lo que limita la generación libre de texto.
-- Inferencia nativa en CPU mediante el runner propio del proyecto (`bit-jev-cpu`), con soporte de ejecución multihilo y por lotes.
-- No se documentan capacidades de tool calling, function calling, uso de agentes, razonamiento multi-paso autónomo, visión, audio ni modo de razonamiento explícito ("thinking mode").
-- No se especifican capacidades multilingües ni idiomas soportados.
+- Decisión estructurada tipo `choice`: selecciona entre un conjunto de opciones con instrucciones y criterios, devolviendo opción, score y probabilidad.
+- Decisión binaria tipo `noul`: responde preguntas de sí/no con puntuaciones y probabilidades para ambas clases.
+- Gradación ordinal tipo `score`: asigna niveles ordenados con score, valor esperado y probabilidad.
+- Puntuación directa de candidatos mediante cabezal de puntero, sin generación de lenguaje natural.
+- Ejecución en CPU nativa (AVX2 en Windows x64) y en GPU vía Vulkan o CUDA.
+- Reutilización de modelo residente en memoria mediante `infer()`, con devolución de logits, probabilidades y latencia nativa.
+- Soporte de múltiples preguntas por petición sobre un `state` compartido (aunque el runner CPU actual reprocesa el estado por pregunta).
+- No soporta tool calling, function calling, agentes, visión, audio ni modos de razonamiento extendido: su salida es exclusivamente estructurada sobre los candidatos dados.
 
 ## Casos de uso
 
-- Clasificación de opiniones y moderación de reseñas: entrenado sobre un conjunto de decisión multi-fuente que incluye reseñas de Yelp, el modelo puede puntuar categorías, niveles de valoración o etiquetas de sentimiento presentando los candidatos como opciones y leyendo la probabilidad devuelta por la cabeza de puntero.
-- Triage y encaminamiento de tickets: dado el texto de una incidencia como `state` y un conjunto de categorías o equipos como candidatos, el modelo devuelve la opción más probable, adecuado para enrutado automático en atención al cliente.
-- Encuestas y formularios con respuesta cerrada: la modalidad `score` permite asignar un nivel ordenado (por ejemplo, una escala de satisfacción) con valor esperado y probabilidad, útil para agregar respuestas y medir incertidumbre.
-- Sistemas de recomendación por elección entre alternativas: dado un conjunto de productos, rutas o contenidos como candidatos y el contexto del usuario como `state`, el modelo elige la opción con mayor score.
-- Validación de reglas de negocio y decisiones binarias: la modalidad `noul` admite preguntas de sí/no (por ejemplo, aprobar o denegar una solicitud) con dos clases de probabilidad, integrable en flujos con revisión humana.
-- Evaluación de candidatos en procesos de selección estructurados: puntuación ordenada de perfiles descritos en el contexto frente a criterios definidos como niveles, siempre con validación sobre datos propios y revisión humana.
-- Despliegue en entornos sin GPU: al ejecutarse en CPU nativa con un paquete de ~1,2 GB y un consumo de memoria de proceso en torno a 1,6 GiB, encaja en servidores sin acelerador o en estaciones de trabajo modestas.
-- Procesamiento por lotes de decisiones repetitivas: el runner admite entrada JSONL y ejecución con múltiples hilos, adecuado para puntuar grandes volúmenes de solicitudes con estructura fija.
+- Enrutamiento de tickets de soporte: dado el texto de una incidencia y un conjunto de equipos (facturación, logística, etc.), el modelo devuelve el equipo asignado con probabilidad asociada. El ejemplo de la model card ilustra exactamente este escenario.
+- Triaje de reclamaciones: clasificación binaria (`noul`) de si una reclamación requiere revisión humana o puede resolverse automáticamente, con umbral de confianza basado en la probabilidad devuelta.
+- Priorización ordinal de incidencias: uso de `score` para asignar severidad (baja, media, alta, crítica) con valor esperado, útil en colas de atención al cliente.
+- Moderación o etiquetado de reseñas: selección entre categorías predefinidas (spam, ofensiva, legítima) sobre textos de opinión, aprovechando el entrenamiento con datos de Yelp.
+- Encuestas y formularios estructurados: mapear respuestas libres a opciones cerradas con probabilidad, para pipelines de análisis de datos.
+- Despliegue en entornos con hardware limitado: inferencia en CPU de un solo nodo con ~1,6 GB de RSS observado en EPYC 9654, adecuado para servicios de clasificación de bajo coste sin GPU.
+- Sistemas de decisión con abstención: usar la probabilidad del cabezal para derivar a revisión humana cuando la confianza es baja, en lugar de aceptar la predicción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks comparables (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor indica explícitamente que no existen informes públicos de Accuracy, Brier, NLL, ECE ni intervalos de confianza sobre un conjunto de retención, y advierte que los benchmarks del BitNet original de Microsoft corresponden a otra medición y no son atribuibles a este modelo.
-
-La única medición publicada es un caso de una sola pregunta de desarrollo (703 tokens de entrada, 77 candidatos) en AutoDL con Xeon Gold 6459C y RTX 5090, sin contar el tiempo de carga:
+No se han publicado resultados de benchmarks de calidad (Accuracy, Brier, NLL, ECE) en la información disponible. El autor indica explícitamente que no existen informes públicos sobre conjuntos de retención verificables. Los únicos datos publicados son de latencia y memoria en una única pregunta de desarrollo (703 tokens de entrada, 77 candidatos):
 
 | Ruta | Tiempo medio de inferencia | Repeticiones | Memoria observada |
 |---|---:|---:|---:|
-| CPU, 8 hilos | 3.127,88 ms | 3 | RSS de pico del proceso 1.622,74 MiB |
-| CPU, 16 hilos | 1.972,17 ms | 3 | RSS de pico del proceso 1.624,52 MiB |
-| RTX 5090 | 86,56 ms | 5 | Asignación de pico en GPU 4.935,53 MiB |
+| EPYC 9654, 32 núcleos / 32 hilos, I2_S | 1.954,46 ms | 6 | RSS pico 1.625,88 MiB |
+| Xeon Gold 6459C, 8 hilos (histórico) | 3.127,88 ms | 3 | RSS pico 1.622,74 MiB |
+| Xeon Gold 6459C, 16 hilos (histórico) | 1.972,17 ms | 3 | RSS pico 1.624,52 MiB |
+| RTX 5090, FP16 (ruta PyTorch, otra máquina) | 86,56 ms | 5 | Asignación GPU pico 4.935,53 MiB |
 
-El propio autor advierte que la ruta de CPU y la de GPU usan formatos de peso y precisión distintos, que la ratio de latencia (~22,8 entre 16 hilos y GPU) no es una medida pura de aceleración hardware, y que RSS de CPU y asignación de GPU no son magnitudes comparables. Se trata de una única pregunta con pocas repeticiones, sin valor extrapolable a throughput ni a precisión general.
+El autor advierte que las cifras de CPU y GPU provienen de máquinas distintas, con formatos de peso y precisión diferentes, por lo que no constituyen una comparación de aceleración pura. El modelo no genera tokens, así que la métrica tokens/s no aplica.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la ruta experimental en GPU reporta una asignación de pico de 4.935,53 MiB (aproximadamente 4,8 GiB) para una entrada de 703 tokens y 77 candidatos; el valor puede variar con la longitud de entrada y el número de candidatos.
-- Memoria en CPU: el proceso alcanza un RSS de pico de ~1,62 GiB en las pruebas publicadas (8 y 16 hilos).
-- GPU recomendadas: no se especifican oficialmente; la única medida reportada usa una RTX 5090 mediante una ruta experimental FP16 en PyTorch. Otros modelos de la misma generación o superiores (A100, H100, RTX 4090) no han sido probados ni documentados.
-- Cabe en GPU de consumo: con ~4,8 GiB de asignación observada, cabría en tarjetas con 8 GB o más de VRAM, aunque no se ha publicado una validación formal en hardware de consumo distinto de la RTX 5090.
-- Despliegue: la ruta soportada es el runner nativo de CPU del proyecto (`bit-jev-cpu`, binario en `core/build/bit-jev-cpu/`), invocado mediante `python -m bit_jev.cpu` con parámetros de hilos y lote. La ruta GPU es experimental (FP16 mixta en PyTorch). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: en el caso publicado, 1,97 s por pregunta en CPU a 16 hilos y 86,56 ms en RTX 5090. No se reporta throughput agregado. Al no generar tokens, la métrica de tokens/s no es aplicable.
+- VRAM/RAM estimada: ~1,19 GB de pesos; RSS de proceso observado de ~1,6 GB en CPU.
+- GPU: la ruta Vulkan funciona con drivers que expongan `vulkan-1.dll`; la ruta CUDA requiere compilación desde fuente con CUDA Toolkit. Se ha probado una RTX 5090 con ~4,9 GB de asignación en la ruta FP16 PyTorch (no equivalente al GGUF).
+- CPU: Windows x64 con AVX2 tiene runners precompilados en el wheel de PyPI; otras plataformas requieren Git, CMake 3.28+ y compilador C++17.
+- Cabe en GPU de consumo: sí, por tamaño de pesos; la ruta Vulkan/CUDA no está validada en la model card para GPUs de consumo concretas más allá del caso RTX 5090 mencionado.
+- Despliegue: paquete `bit-jev` (versión 0.13.13) con API Python `BitJev.from_pretrained`, CLI y demo; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia: ~1,95 s por pregunta en EPYC 9654 con 32 hilos; ~3,13 s con 8 hilos en Xeon Gold 6459C; 86,56 ms en RTX 5090 (ruta distinta). El runner CPU actual procesa una secuencia causal por pregunta, por lo que las peticiones multi-pregunta repiten el coste del estado compartido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Paradigma de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bit-jev-2b-distilled | 2.412.820.480 | no disponible | Decisión estructurada (puntero) | no disponible | GGUF I2_S + head.f32 |
-| microsoft/bitnet-b1.58-2B-4T-bf16 (modelo base) | ~2B | no disponible | Generación de lenguaje | Licencia de modelos de Microsoft (aplicable solo al modelo base) | Safetensors BF16 |
-| Kev 9B (profesor de destilación) | ~9B | no disponible | Logits de candidatos (profesor) | Licencia de código fuente propia (no aplicable al derivado) | no disponible como paquete de inferencia del estudiante |
+| bit-jev-2b-distilled | 2,41 B | no disponible | Decisión estructurada (pointer head) | no disponible | GGUF + paquete `bit-jev` |
+| microsoft/bitnet-b1.58-2B-4T | ~2 B | no disponible en la información | Generación de texto | Licencia de Microsoft (no verificada aquí) | Pesos BF16 en Hugging Face |
+| Kev 9B (profesor) | 9 B | no disponible | Logits de candidatos (destilación) | no disponible | Referenciado como fuente de supervisión |
 
-No se dispone de información sobre otros modelos de decisión estructurada con cabeza de puntero comparables directamente. La comparación con el modelo base y con el profesor es únicamente de origen arquitectónico, no de rendimiento, ya que no se han publicado métricas de precisión reproducibles para este checkpoint.
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a arquitectura, tamaño y licencia.
 
 ## Limitaciones y advertencias
 
-- Riesgo de sesgo procedente de los datos de entrenamiento: el conjunto `decision-v7` incluye reseñas de Yelp, por lo que los sesgos de esa fuente pueden trasladarse a las decisiones del modelo.
-- Alucinación no aplicable en el sentido generativo (no produce texto libre), pero la selección puede ser incorrecta: los resultados dependen del fraseo, el orden y la longitud de los candidatos y de la distribución de entrenamiento.
-- Ausencia de métricas públicas de precisión, calibración (ECE, Brier) o NLL: no hay evidencia reproducible de calidad sobre un conjunto de retención.
-- Restricción de licencia grave: el modelo no tiene licencia de pesos abiertos propia; la Apache-2.0 del repositorio de código, la licencia de modelos base de Microsoft y la licencia del código de Kev se aplican cada una a su obra y no al checkpoint derivado. Además, existe una solicitud de permiso a Yelp sobre pesos derivados sin respuesta escrita a fecha de 2026-09-28.
-- Uso comercial sujeto a revisión legal: el descargador debe comprobar los términos aplicables a los datos de Yelp y su efecto sobre los pesos derivados antes de cualquier uso en producción.
-- Limitación de eficiencia en peticiones multi-pregunta: el runner nativo de CPU ejecuta una secuencia causal por pregunta, por lo que en solicitudes con varias preguntas se reprocesa el `state` compartido.
-- Extrapolación limitada de las medidas de rendimiento: la única medición proviene de una sola pregunta de desarrollo con pocas repeticiones, sin cobertura de entradas largas, múltiples preguntas ni otro hardware.
-- El repositorio no incluye safetensors BF16, datos de entrenamiento, registros de entrenamiento ni reseñas originales, lo que dificulta la reproducibilidad y la auditoría.
-- Sin información de idiomas soportados ni de contexto máximo, por lo que no puede garantizarse su comportamiento fuera de la distribución de entrenamiento.
-- Para decisiones sensibles se recomienda validación sobre datos propios y revisión humana obligatoria.
+- No hay licencia de pesos abierta: el Apache-2.0 del repositorio de código no se aplica al checkpoint; el uso comercial queda sujeto a revisión legal.
+- Dependencia de datos de Yelp sin autorización escrita confirmada (solicitud enviada, sin respuesta a 2026-09-28); los usuarios deben evaluar las condiciones de Yelp sobre pesos derivados.
+- Sin métricas de calidad publicadas (Accuracy, Brier, NLL, ECE); no es posible validar su fiabilidad sin evaluación propia.
+- Los resultados dependen de la redacción, el orden y la longitud de los candidatos, así como de la distribución de entrenamiento.
+- El runner CPU actual reprocesa el estado compartido en peticiones con varias preguntas, lo que degrada la latencia.
+- No genera texto libre: no sirve para tareas de generación, resumen o diálogo abierto.
+- Riesgo de alucinación estructural: el cabezal puede asignar alta probabilidad a opciones incorrectas si la entrada se aleja de la distribución de entrenamiento; se recomienda validación en datos propios y revisión humana en decisiones críticas.
+- Idiomas soportados no documentados; el material está mayoritariamente en chino e inglés.
+- Los benchmarks de latencia provienen de una única pregunta de desarrollo con pocas repeticiones; no son extrapolables a otros entornos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/jinghao1632/bit-jev-2b-distilled
-- Repositorio de código del proyecto: https://github.com/Zeaulo/bit-jev
-- Guía rápida de CPU (chino): https://github.com/Zeaulo/bit-jev/blob/main/docs/CPU_QUICKSTART.zh-CN.md
+- Modelo en Hugging Face: https://huggingface.co/jinghao1632/bit-jev-2b-distilled
+- Repositorio de código: https://github.com/Zeaulo/bit-jev
+- Paquete PyPI: https://pypi.org/project/bit-jev/
+- Espejo en ModelScope: https://www.modelscope.cn/models/JingHao9616/bit-jev-2b-distilled
+- Demo online: https://jinghao9616-bit-jev-demo.ms.show/
+- Space bilingüe en Hugging Face: https://huggingface.co/spaces/jinghao1632/bit-jev-demo
+- Guía de instalación GGUF: https://github.com/Zeaulo/bit-jev/blob/main/docs/GGUF_PACKAGE.zh-CN.md
+- Datos de benchmark EPYC 9654: https://github.com/Zeaulo/bit-jev/blob/main/docs/benchmark-data/bit-jev-epyc9654-cpu32-2026-09-28.json
 - Modelo base: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T-bf16

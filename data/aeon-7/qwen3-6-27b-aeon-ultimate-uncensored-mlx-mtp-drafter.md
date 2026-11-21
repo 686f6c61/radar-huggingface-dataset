@@ -2,117 +2,102 @@
 
 ## Resumen
 
-Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter es un modelo auxiliar de decodificación especulativa publicado por AEON-7. No es un modelo conversacional: se trata de la cabeza nativa de predicción multi-token (MTP, *multi-token prediction*) extraída del modelo AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 y empaquetada como *drafter* independiente con `model_type` `qwen3_5_mtp`. Su función es proponer bloques de hasta tres tokens a partir del último estado oculto del modelo objetivo, que después los verifica en una única pasada. Al ser el propio objetivo quien valida cada token contra su distribución, el resultado es idéntico al de ejecutar el modelo objetivo en solitario: se trata de una optimización de velocidad sin pérdida de calidad.
+Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter es un modelo borrador (*drafter*) de decodificación especulativa, no un modelo conversacional. Lo publica el usuario AEON-7 en Hugging Face y consiste en la cabeza nativa de predicción multi-token (MTP, *multi-token prediction*) extraída del modelo `AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16` y empaquetada como modelo auxiliar independiente para MLX. Su función es proponer bloques de tokens que un modelo objetivo completo verifica después, acelerando la generación sin alterar la distribución de salida.
 
-El repositorio ocupa 0,9 GB y contiene 424.699.392 parámetros (~425 M) en formato MLX safetensors, con un tamano declarado de 821 MB para los pesos del *drafter*. La cabeza MTP se conserva siempre en BF16 y nunca se cuantiza, ni siquiera cuando el modelo objetivo se sirve en FP4 o en 8 bits. El modelo se distribuye para Apple Silicon a través de la librería MLX y se integra en el servidor `mlx-vlm` mediante los indicadores `--draft-model`, `--draft-kind mtp` y `--draft-block-size`.
+El modelo resuelve un problema muy concreto: la latencia de decodificación en Apple Silicon. Al ser una cabeza MTP entrenada de forma nativa por la familia Qwen (tipo `qwen3_5_mtp`), acepta propuestas más profundas que un borrador genérico, y según el autor alcanza 1,78× de velocidad de decodificación sin pérdida de calidad con `block_size 3` sobre el objetivo FP4. Es relevante para quienes despliegan modelos Qwen de 27B en Mac con MLX y quieren aumentar el throughput sin sacrificar fidelidad.
 
-Su relevancia actual es doble. Por un lado, demuestra una ganancia medida de 1,78× en velocidad de decodificación sin pérdida, muy por encima del 1,1-1,2× típico de cabezas MTP genéricas, gracias a que Qwen entrena esta cabeza de forma nativa en la arquitectura. Por otro, el propio autor marca esta línea como superada por Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED, por lo que este repositorio se mantiene principalmente por motivos históricos y para quienes necesiten inferencia en dispositivo bajo el árbol Qwen3.6.
+Con 424,7 millones de parámetros y un repositorio de 0,9 GB, es un artefacto ligero que se carga junto al modelo objetivo. No debe usarse de forma autónoma: no responde prompts ni genera texto por sí mismo. La model card indica además que esta línea ha quedado superada por la release Qwen3.8 del mismo autor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Cabeza de predicción multi-token (MTP) de un transformer Qwen3.5/3.6, `model_type` `qwen3_5_mtp`; `block_size` 3 |
-| Parámetros totales | 424.699.392 (≈425 M) |
-| Parámetros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible; heredada del modelo objetivo con el que se empareja |
-| Tipos de cuantización | BF16 (la cabeza MTP no se cuantiza nunca); se usa junto a objetivos en FP4 o 8 bits |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Cabeza de predicción multi-token (MTP) sobre transformer, tipo `qwen3_5_mtp` |
+| Parametros totales | 424.699.392 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Pesos en BF16 (la cabeza no se cuantiza en los objetivos MLX); repo en safetensors |
+| Idiomas soportados | en |
 | Licencia | other |
-| Formato de pesos | safetensors (formato MLX); tamano del repo 0,9 GB, pesos del drafter 821 MB |
-| Funcion | modelo *drafter* de decodificación especulativa (no genera respuestas por sí solo) |
-| Modelo base | AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 (relación: quantized) |
-| Descargas / likes | 1269 / 3 |
-| Fecha de creación / actualización | 2026-06-23 / 2026-09-12 |
+| Formato de pesos | safetensors (librería mlx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es la cabeza MTP en pesos (`mtp.*`) del modelo completo, extraída y publicada de forma independiente para que el servidor pueda cargarla como modelo lateral ligero. La cabeza, condicionada por el estado oculto del objetivo, predice varios tokens de golpe. El ciclo de decodificación especulativa es el siguiente: el *drafter* propone un bloque de hasta tres tokens desde el último estado oculto del objetivo; el objetivo completo ejecuta una única pasada hacia delante sobre el bloque propuesto y lo verifica contra su propia distribución de siguiente token; los tokens aceptados se conservan y la primera rechazo trunca el bloque, usando el token propio del objetivo. Dado que la verificación la realiza el propio objetivo contra sí mismo, la distribución de salida es idéntica a la de ejecutar el objetivo en solitario, por lo que la especulación se describe como sin pérdida.
+Se trata de la cabeza MTP nativa del modelo base Qwen3.6-27B de AEON-7, extraída y distribuida como modelo borrador independiente. La cabeza está condicionada al estado oculto del modelo objetivo y predice de golpe los siguientes tokens; el servidor la carga como modelo lateral ligero. El `block_size` de referencia es 3, que el autor identifica como el punto óptimo medido. Los pesos se mantienen en BF16 y no se cuantizan en las recetas de los objetivos MLX.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada. La innovación destacable es precisamente el uso de una cabeza MTP entrenada de forma nativa por Qwen en esta arquitectura: esto permite que la tasa de aceptación se mantenga alta (94,7 % con `block_size` 3, 97,3 % con `block_size` 2) en lugar del 1,1-1,2× habitual de cabezas MTP genéricas. Los pesos de la cabeza se mantienen en BF16 en ambas compilaciones MLX del objetivo, tal y como indica la receta de cuantización de los modelos objetivo.
+El entrenamiento de la cabeza proviene del modelo base Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16; no se detalla en la información disponible el número de tokens, la composición del dataset ni si hubo RLHF o DPO. La innovación destacable es el uso de autospeculación: el objetivo verifica cada token propuesto contra su propia distribución, de modo que la salida es idéntica a ejecutar el objetivo solo. El autor afirma que, al estar la cabeza entrenada de forma nativa por Qwen, la tasa de aceptación supera el 94 % con `block_size 3`, frente al 1,1–1,2× típico de cabezas MTP genéricas.
 
 ## Capacidades
 
-- No es un modelo conversacional: no debe cargarse por sí solo ni se le deben enviar prompts, ya que no tiene capacidad de responder.
-- Predicción multi-token: propone bloques de hasta tres tokens condicionados por el estado oculto del modelo objetivo.
-- Decodificación especulativa sin pérdida con `--draft-kind mtp` y `--draft-block-size 3`.
-- Aceleración de la generación en el objetivo con el que se empareja, tanto en FP4 (donde rinde mejor) como en 8 bits.
-- Compatibilidad con el servidor `mlx-vlm` (rama `main` de GitHub) sobre MLX y Metal.
-- Ejecución en dispositivo (*on-device*) en Apple Silicon.
-- Soporte de muestreo: la especulación se mantiene sin pérdida bajo muestreo, ya que el objetivo verifica cada token propuesto contra su propia distribución.
-- Capacidades multimodales: no aplican al *drafter* en sí; el objetivo FP4 con el que se empareja se publica bajo la etiqueta `mlx-vlm` y el nombre "Multimodal", pero la información disponible no detalla las capacidades del objetivo.
-- *Tool calling*, agentes y razonamiento multi-paso: no disponible en la información proporcionada para este *drafter*.
+- Predicción multi-token: propone bloques de hasta 3 tokens a partir del estado oculto del modelo objetivo.
+- Decodificación especulativa sin pérdida: cada token propuesto se verifica contra la distribución del objetivo.
+- Autospeculación (*self-speculation*): no requiere un modelo borrador externo de otra familia.
+- Compatibilidad con objetivos MLX de la familia Qwen3.6-27B de AEON-7 (FP4 y 8 bits).
+- Integración con `mlx-vlm` mediante los flags `--draft-model`, `--draft-kind mtp` y `--draft-block-size`.
+- No soporta generación de texto autónoma, tool calling, agentes, visión ni audio por sí mismo; esas capacidades residen en el modelo objetivo.
 
 ## Casos de uso
 
-- Aceleración de la inferencia local en Mac: emparejar el *drafter* con el objetivo FP4 y obtener 26,5 tok/s frente a los 14,9 tok/s de la línea base, con la misma distribución de salida, para asistentes locales que deben responder de forma fluida en un portátil.
-- Servicio de chat en dispositivo con requisitos de latencia ajustados: al elevar el rendimiento de decodificación un 1,78× sin pérdida, permite sostener conversaciones interactivas en un MacBook Pro M4 Pro de 48 GB sin recurrir a GPU dedicadas.
-- Comparación de fidelidad frente a velocidad: usar el objetivo de 8 bits (máxima fidelidad, 8,2 tok/s) o el objetivo FP4 con este *drafter* (26,5 tok/s), eligiendo según la tolerancia al compromiso de cuantización del objetivo.
-- Evaluación de decodificación especulativa: sirve como referencia reproducible para medir tasas de aceptación y rendimiento neto en distintos `block_size` (2, 3 y 4) sobre hardware Apple.
-- Integración en pipelines de generación por lotes en local: al reducir el coste por token en la decodificación, abarata tareas de generación larga ejecutadas en un único equipo Apple Silicon.
-- Reproducción de resultados y auditoría de la metodología MTP: al ser una cabeza extraída y publicada aparte, permite inspeccionar cómo se comporta la especulación nativa de Qwen sin cargar el modelo completo dos veces.
-- Pruebas de compatibilidad de `mlx-vlm`: el repositorio documenta el uso de tres indicadores concretos del servidor, por lo que resulta útil para validar versiones de la librería y de la rama `main`.
+- Aceleración de inferencia local en Mac: se adjunta al objetivo FP4 en `mlx_vlm.server` para elevar el throughput de 14,9 a 26,5 tok/s en un M4 Pro de 48 GB, según las mediciones del autor.
+- Servicio de chat de baja latencia en Apple Silicon: al mantener la distribución del objetivo, se puede usar en producción sin recalibrar evaluaciones de calidad.
+- Despliegue de modelos de 27B en equipos de sobremesa con memoria unificada: permite servir el objetivo 8 bits o FP4 con mayor velocidad sin GPU dedicada.
+- Evaluación comparativa de técnicas de decodificación especulativa: sirve como referencia de cabeza MTP nativa frente a borradores genéricos.
+- Prototipado de pipelines de generación larga: con `temperature 1.0`, `top_p 0.95` y `top_k ~64`, reduce el tiempo total en cargas de generación extensa.
+- Investigación sobre aceptación de bloques: permite barrer `block_size` (2, 3, 4) y medir tasa de aceptación y tokens aceptados por ronda.
+- Integración en herramientas de desarrollo con MLX: se configura como flag del servidor, sin cambios en el código de la aplicación cliente.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son de velocidad de decodificación, medidos en un MacBook Pro con M4 Pro y 48 GB de memoria unificada, con `mlx-vlm` en la rama `main`, muestreo greedy y tras el calentamiento. El *drafter* se midió contra el objetivo FP4 y todos los tokens fueron verificados (sin pérdida).
+Mediciones del autor en MacBook Pro M4 Pro de 48 GB, `mlx-vlm` git main, decodificación greedy tras calentamiento, objetivo FP4:
 
-| Configuración | tok/s | Factor vs. base | Tasa de aceptación | Tokens aceptados por ronda |
+| Configuracion | tok/s | Incremento | Tasa de aceptacion | Tokens aceptados/ronda |
 |---|---:|---:|---:|---:|
-| Objetivo FP4 (línea base) | 14,9 | 1,00× | — | — |
-| Objetivo FP4 + MTP, `bs=2` | 23,5 | 1,58× | 97,3 % | 1,97 |
-| Objetivo FP4 + MTP, `bs=3` (óptimo) | 26,5 | 1,78× | 94,7 % | 2,89 |
-| Objetivo FP4 + MTP, `bs=4` | 25,4 | 1,70× | 86,9 % | 3,61 |
-| Objetivo MLX 8 bits (sin MTP) | 8,2 | — | — | — |
+| FP4 baseline | 14,9 | 1,00× | — | — |
+| + MTP bs=2 | 23,5 | 1,58× | 97,3 % | 1,97 |
+| + MTP bs=3 (optimo) | 26,5 | 1,78× | 94,7 % | 2,89 |
+| + MTP bs=4 | 25,4 | 1,70× | 86,9 % | 3,61 |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible, lo que es coherente con la naturaleza del modelo: al ser un *drafter* verificado por el objetivo, no produce respuestas propias que puedan evaluarse de forma independiente.
+El autor indica que el objetivo 8 bits rinde 8,2 tok/s, por lo que la combinación FP4 + MTP bs=3 supone aproximadamente 3,2× esa cifra. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, lo cual es coherente con que el artefacto sea un borrador y no un modelo evaluable de forma autónoma.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el *drafter*: 821 MB de pesos en BF16 (repositorio total de 0,9 GB); el consumo real de memoria del sistema incluye además el modelo objetivo.
-- El entorno de medida documentado es un MacBook Pro con M4 Pro y 48 GB de memoria unificada. No se especifica un mínimo de memoria unificado en la información disponible.
-- GPU recomendadas: Apple Silicon (el modelo es específico de MLX y Metal). No hay soporte declarado para CUDA en este repositorio.
-- Cabe en GPU de consumo: sí, siempre que se trate de hardware Apple Silicon con memoria unificada suficiente para alojar el objetivo (FP4 o 8 bits) más los 821 MB del *drafter*.
-- Opciones de despliegue: servidor `mlx-vlm` (rama `main` de GitHub) ejecutado con `uv --python 3.12`; los indicadores relevantes son `--draft-model`, `--draft-kind mtp` y `--draft-block-size 3`. El autor menciona además contenedores unificados `ghcr.io/aeon-7/aeon-vllm-ultimate:latest` (Spark / GB10) y `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest` (RTX discretas) en el aviso de sucesión, asociados a la línea Qwen3.8.
-- Latencia y throughput: hasta 26,5 tok/s con el objetivo FP4 y `bs=3`, frente a 14,9 tok/s de la línea base FP4 y 8,2 tok/s del objetivo de 8 bits, en el hardware de referencia.
-- Nota de muestreo: el servidor MLX usa greedy por defecto (`temperature` 0), lo que puede provocar bucles en prompts largos; la familia está ajustada para `temperature` 1.0, `top_p` 0.95 y `top_k` ≈64, que deben pasarse en cada petición.
-- El indicador `--prefill-step-size` queda inerte bajo MTP, según la model card.
+- VRAM o memoria unificada: el repositorio ocupa 0,9 GB; se suma al objetivo (27B) que se cargue en paralelo.
+- GPU recomendadas: Apple Silicon con Metal; el autor mide en M4 Pro de 48 GB. No hay datos para A100, H100 ni RTX 4090, ya que el formato es MLX.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente para alojar el objetivo más el borrador.
+- Opciones de despliegue: `mlx-vlm` (servidor) con Python 3.12 y `uv`; flags `--draft-model`, `--draft-kind mtp` y `--draft-block-size 3`.
+- Latencia y throughput: 26,5 tok/s con objetivo FP4 y bs=3 en M4 Pro de 48 GB; 23,5 tok/s con bs=2; 25,4 tok/s con bs=4.
+- Nota: `--prefill-step-size` no tiene efecto bajo MTP.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de otros *drafters* MTP comparables de terceros. La comparación posible es con las dos compilaciones MLX del objetivo con las que el *drafter* se empareja y con la propia línea base sin especulación:
-
-| Configuración | Parámetros | Contexto | Rendimiento de decodificación | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este *drafter* + objetivo MLX FP4 | 425 M (drafter) | no disponible | 26,5 tok/s (1,78× sin pérdida, `bs=3`) | other | Hugging Face, MLX |
-| Objetivo MLX 8 bits sin *drafter* | no disponible | no disponible | 8,2 tok/s | other | Hugging Face, MLX |
-| Objetivo MLX FP4 sin *drafter* | no disponible | no disponible | 14,9 tok/s | other | Hugging Face, MLX |
+| Qwen3.6-27B-AEON-MLX-MTP-Drafter | 424,7 M | no disponible | Borrador MTP para MLX | other | Hugging Face |
+| Cabeza MTP generica (otras familias) | no disponible | no disponible | Borrador MTP | variable | variable |
+| Modelo borrador externo de otra familia | variable | variable | Decodificacion especulativa | variable | variable |
 
-Alternativas de la misma categoría (*drafter* de decodificación especulativa) fuera de esta familia: no disponible.
+No se dispone de datos comparativos de rendimiento con alternativas concretas en la información proporcionada. El autor sí contrasta cualitativamente con cabezas MTP genéricas, a las que atribuye un incremento de 1,1–1,2× frente al 1,78× de esta.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat: cargarlo de forma aislada o enviarle prompts directamente no produce respuestas útiles; está pensado exclusivamente como modelo lateral de especulación.
-- Requiere un modelo objetivo compatible (`qwen3_5` / `qwen3_5_mtp`) y la rama `main` de `mlx-vlm`; no funciona como sustituto autónomo.
-- La licencia es "other" y el contenido declarado es "uncensored": es imprescindible revisar los términos completos antes de cualquier uso comercial y evaluar las implicaciones del ajuste sin censura del modelo base.
-- Idiomas soportados: únicamente inglés (`en`) según los metadatos, lo que limita su uso en castellano u otros idiomas.
-- Riesgo de alucinación: la verificación sin pérdida garantiza que la distribución coincide con la del objetivo, pero no reduce el riesgo de alucinación propio del modelo objetivo.
-- Sesgos: no se documentan sesgos específicos en la información disponible; al heredar el comportamiento del modelo base sin censura, los sesgos de este se trasladan sin atenuación.
-- Ajuste de muestreo crítico: usar el valor greedy por defecto puede provocar bucles en prompts largos; deben aplicarse `temperature` 1.0, `top_p` 0.95 y `top_k` ≈64.
-- `block_size` 3 es el punto óptimo medido: con 4 la tasa de aceptación cae al 86,9 % y el rendimiento neto retrocede a 25,4 tok/s.
-- Repositorio superado: el autor recomienda migrar a Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED y mantener esta exportación MLX solo si se necesita inferencia en dispositivo Apple bajo el árbol Qwen3.6.
-- Limitación de contexto: no se especifica longitud de contexto propia; depende enteramente del objetivo.
-- Uso de `--trust-remote-code` en el arranque del servidor, lo que implica ejecutar código del repositorio remoto.
+- No es un modelo de chat: cargarlo solo no produce respuestas útiles; requiere un objetivo MLX compatible.
+- Solo funciona con objetivos de la familia Qwen3.6-27B de AEON-7 (FP4 u 8 bits); no es portable a otros modelos.
+- Dependencia de `mlx-vlm` desde git main y de Python 3.12; posibles roturas por cambios en la librería.
+- El modo greedy por defecto puede entrar en bucles en prompts largos; el autor recomienda `temperature 1.0`, `top_p 0.95` y `top_k ~64`.
+- Licencia "other": es necesario revisar los términos del autor antes de uso comercial.
+- Idiomas: solo inglés declarado.
+- Riesgo de alucinación y sesgos: heredados del modelo objetivo, no del borrador.
+- Modelo marcado como superado por la release Qwen3.8 del mismo autor; se mantiene solo por histórico y descargas existentes.
+- No hay información sobre contexto máximo, datos de entrenamiento ni evaluaciones de calidad estándar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
-- Modelo base (BF16): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
+- Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
+- Modelo base: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
 - Objetivo MLX FP4: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4
 - Objetivo MLX 8 bits: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit
-- Sucesor recomendado por el autor: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
-- Servidor mlx-vlm (rama main): https://github.com/Blaizzy/mlx-vlm
-- Contenedor unificado para Spark / GB10: ghcr.io/aeon-7/aeon-vllm-ultimate:latest
-- Contenedor unificado para RTX discretas: ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest
-- Instalador de uv: https://astral.sh/uv/install.sh
-- Paper, blog o demo adicionales: no disponible en la información proporcionada.
+- Release sucesora (Qwen3.8 NVFP4-MIXED): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
+- Repositorio de recetas del autor: https://github.com/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED
+- `mlx-vlm`: https://github.com/Blaizzy/mlx-vlm
+- Contenedor de servicio (Spark/GB10): ghcr.io/aeon-7/aeon-vllm-ultimate:latest
+- Contenedor de servicio (RTX): ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest

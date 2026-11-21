@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MFANNv0.22.1-GGUF",
+  "slug": "mradermacher-mfannv0-22-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MFANNv0.22.1-GGUF",
+  "created_at": "2025-03-09T14:58:08.000Z",
+  "updated_at": "2026-11-20T21:30:39.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:netcat420/MFANN",
+    "base_model:netcat420/MFANNv0.22.1",
+    "base_model:quantized:netcat420/MFANNv0.22.1",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 215,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820236928,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "netcat420/MFANNv0.22.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

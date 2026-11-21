@@ -5,17 +5,18 @@
   "author": "PolarisDane",
   "url": "https://huggingface.co/PolarisDane/sciworld-qwen2.5-7b-aflora-k3",
   "created_at": "2026-10-12T21:11:39.000Z",
-  "updated_at": "2026-10-12T21:11:42.000Z",
+  "updated_at": "2026-11-14T10:55:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -23,7 +24,9 @@
   "storage_human": "67.4 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

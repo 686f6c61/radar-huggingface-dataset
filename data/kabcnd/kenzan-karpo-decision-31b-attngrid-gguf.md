@@ -2,102 +2,105 @@
 
 ## Resumen
 
-Kenzan-Karpo-Decision-31B-AttnGrid-GGUF es una cuantizacion GGUF de precision mixta del modelo `MachinePulseAI/karpo-decision-31B`, un derivado de `google/gemma-4-31B-it` con 30.697.345.596 parametros (30,70B) y arquitectura `Gemma4ForConditionalGeneration` de 60 capas (50 de atención de ventana deslizante y 10 de atención completa). El autor, kabcnd, lo publica como un motor de decisión "System-One": no es un generador autoregresivo de chat, sino un clasificador de una sola pasada que proyecta el estado oculto de un token `<mask>` mediante una cabeza lineal externa (`readout.safetensors`, matriz `[255, 5376]` en float32) para producir una decisión de enrutamiento o clasificación.
+Kenzan-Karpo-Decision-31B-AttnGrid-GGUF es una cuantización GGUF de precisión extrema del modelo MachinePulseAI/karpo-decision-31B, un derivado de google/gemma-4-31B-it (Gemma4ForConditionalGeneration, 30.697.345.596 parámetros, 60 capas). El autor, kabcnd, lo publica como un motor de decisión "System-One" de un solo pase: en lugar de generar texto de forma autorregresiva, el modelo procesa una entrada y produce un estado oculto de la última capa que se proyecta mediante una cabeza de lectura externa (`readout.safetensors`, matriz `[255, 5376]` en float32) para clasificar entre opciones discretas. Está empaquetado junto con `decision_config.json` y un cliente Python listo para ejecutar sobre `llama-server`.
 
-La relevancia del artefacto es de ingeniería de cuantizacion: comprime los 58,29 GiB en BF16 hasta 12,09 GiB (3,38 bpw, factor 4,8x) con una receta de cuantizacion por capas calibrada con una imatrix nativa de 30 chunks (`karpo_imatrix.gguf`), de modo que el modelo cabe en el conjunto de trabajo Metal de 15.032,39 MB de un Apple Mac mini M6 con 16 GB de memoria unificada. El autor reporta 204,35 ± 1,51 t/s en `pp512` y una latencia de decisión de extremo a extremo de 1,05-1,17 s.
+El objetivo declarado es hacer viable un modelo de 31B en un Apple Mac mini M6 con 16 GB de memoria unificada. Pasa de 58,29 GiB en BF16 a 12,09 GiB (3,38 bpw, factor de compresión 4,8×), apoyándose en que 50 de las 60 capas usan Sliding Window Attention (menor coste de KV cache) y en una matriz de importancia nativa de 30 fragmentos (`karpo_imatrix.gguf`) para decidir qué tensores proteger con más bits. El resultado cabe en el conjunto de trabajo Metal de 15.032,39 MB.
 
-El modelo esta pensado para clasificacion y enrutamiento determinista (por ejemplo, enrutado de consultas de ciberseguridad entre tres rutas), con verificacion de invariancia al orden de las opciones (`P(A) = 1.0000` / `P(B) = 0.0000` bajo permutacion). No debe confundirse con un modelo conversacional: requiere un servidor configurado en modo embeddings con pooling desactivado y un cliente que aplique la cabeza de lectura.
+Es relevante ahora por dos motivos: demuestra que la cuantización por debajo de 3 bits por peso puede preservar una función de decisión con clasificación verificada del 100% en una batería de calibración, y expone un patrón de despliegue poco habitual (uso de `--embeddings --pooling none` para extraer estados ocultos en lugar de tokens). No es un modelo conversacional: es un clasificador de enrutamiento de un solo pase.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer `Gemma4ForConditionalGeneration` (60 capas: 50 Sliding Window Attention + 10 Full Attention) |
+| Arquitectura | Transformer decoder-only derivado de Gemma 4 (Gemma4ForConditionalGeneration); 60 capas = 50 Sliding Window Attention + 10 Full Attention; cabeza de lectura lineal externa `[255, 5376]` |
 | Parametros totales | 30.697.345.596 (30,70B) |
-| Parametros activos | no disponible (no se describe como MoE) |
-| Longitud de contexto | 4096 tokens en la configuracion de referencia (`-c 4096`); ventana nativa no disponible |
-| Tipos de cuantizacion | IQ2_XXS (mayoria de `ffn_gate`/`ffn_up`), IQ3_XXS (`ffn_down` de las 48 SWA restantes y `ffn_up`/`ffn_gate` de blk.5, 11, 58, 59), Q4_0 (`attn_q`, `attn_output`, `output.weight`, `ffn_down` de anclas), Q5_K (`token_embd.weight`, `attn_q`/`attn_output` en blk.53-59), Q6_K (`attn_k`, `attn_v`); tamano final 12,09 GiB a 3,38 bpw |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens en la configuración de referencia (`-c 4096`); el modelo base declara ventana nativa no especificada en la información disponible |
+| Tipos de cuantizacion | GGUF mixto: `IQ2_XXS` (mayoría de `ffn_gate`/`ffn_up`), `IQ3_XXS` (48 `ffn_down` de SWA), `Q4_0` (`attn_q`, `attn_output`, `output.weight`, 12 `ffn_down` ancla), `Q5_K` (`token_embd`, `attn_q`/`attn_output` en `blk.53–59`), `Q6_K` (`attn_k`, `attn_v`); media 3,38 bpw |
 | Idiomas soportados | en, ru |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (un fichero principal) + `readout.safetensors` (float32, `[255, 5376]`) + `decision_config.json` |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (12,09 GiB / 12.383,76 MiB) + `readout.safetensors` (float32) + `decision_config.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer Gemma 4 de 60 capas con atencion hibrida: 50 capas usan Sliding Window Attention y 10 usan atencion completa. Esa proporcion es la que permite mantener una cache KV reducida y operar en 16 GB de memoria unificada. La cabeza de decision no forma parte del grafo generativo: el modelo expone el estado oculto de la ultima capa (dimension 5376) para el token `<mask>`, y una matriz lineal externa `readout.safetensors` de forma `[255, 5376]` lo proyecta a 255 clases. El pipeline de inferencia se ejecuta con `llama-server` en modo `--embeddings --pooling none --embd-normalize -1`, devolviendo estados ocultos sin normalizar.
+El modelo base es un transformer decoder-only de 60 capas con atención híbrida: 50 capas de Sliding Window Attention y 10 de Full Attention, lo que reduce drásticamente el KV cache y explica que 12 GiB quepan en memoria unificada de 16 GB. La innovación funcional es la separación entre el cuerpo del modelo y la cabeza de decisión: el cuerpo produce estados ocultos de la última capa de dimensión 5376 y `readout.safetensors` (`[255, 5376]`) los proyecta a 255 clases de decisión. El autor describe el modelo como "System-One", es decir, inferencia de un solo pase sin cadena de razonamiento ni generación token a token.
 
-El trabajo del autor se centra en la cuantizacion, no en el entrenamiento. Genero una imatrix nativa de 30 chunks a partir de la conversion `Q8_0` y detecto picos de sensibilidad en las fronteras de atencion completa (`blk.5 = 6,32e5`, `blk.11 = 6,70e5`, `blk.29 = 3,24e5`, `blk.47 = 2,18e5`) y en `blk.1`/`blk.58`, que protegio asignando Q4_0 a los `ffn_down` de las anclas y IQ3_XXS a los SwiGLU de los bloques pico y cola. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni si hubo RLHF o DPO en el modelo base.
+El proceso de cuantización se guió por un análisis de sensibilidad: se calculó una matriz de importancia nativa de 30 fragmentos (`karpo_imatrix.gguf`) a partir de la conversión Q8_0 y se detectaron picos en los límites de Full Attention (`blk.5 = 6,32e5`, `blk.11 = 6,70e5`, `blk.29 = 3,24e5`, `blk.47 = 2,18e5`) y en `blk.1`/`blk.58`. Sobre esa base se asignaron `Q4_0` a los 10 `ffn_down` de Full Attention más los picos de SWA, `IQ3_XXS` al resto de `ffn_down` de SWA y a los `ffn_up`/`ffn_gate` de `blk.5`, `blk.11`, `blk.58` y `blk.59`, y `IQ2_XXS` al resto de SwiGLU. No se dispone de información sobre el dataset de entrenamiento, número de tokens, ni sobre si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Clasificacion de una sola pasada: mapea una entrada a una de 255 clases mediante la cabeza de lectura externa, sin generacion autoregresiva de tokens.
-- Enrutamiento de decisiones (router dispatch): el autor documenta un clasificador de tres rutas con 92,84% de confianza en enrutado de ciberseguridad.
-- Invariancia al orden de opciones: clasificacion estable bajo permutacion de alternativas (`P(A) = 1.0000` / `P(B) = 0.0000` con margen de logit de 13-17).
-- Decodificacion de estados ocultos: expone representaciones de ultima capa de 5376 dimensiones via endpoint de embeddings.
-- Soporte bilingue limitado a ingles y ruso.
-- No soporta tool calling, function calling, agentes multi-paso ni modo thinking: la model card lo define explicitamente como "not an autoregressive chat generator".
-- No se documentan capacidades de vision, audio ni matematicas.
+- Clasificación de decisiones de un solo pase: dado un contexto, devuelve una distribución de probabilidad sobre las clases definidas en `readout.safetensors` (255 salidas).
+- Enrutamiento de tres rutas verificado en la model card con probabilidades `[0,0559, 0,9284, 0,0157]`.
+- Clasificación invariante al orden: la model card reporta `P(A) = 1,0000` / `P(B) = 0,0000` con margen de logit de 13–17 bajo permutación de opciones.
+- Extracción de estados ocultos vía API de embeddings (`--embeddings --pooling none --embd-normalize -1`), sin normalización, para alimentar la cabeza externa.
+- Soporte bilingüe limitado a inglés y ruso según los metadatos del repositorio.
+- No soporta generación de texto autorregresiva como caso de uso previsto, ni tool calling, ni razonamiento multi-paso, ni visión o audio en esta variante.
+- Compatible con endpoints de `llama-server` (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
-- Enrutamiento de consultas en produccion: el modelo clasifica una peticion entrante en una de las 255 clases (o en las tres rutas documentadas) en una sola pasada de ~1,1 s, lo que permite derivar trafico a distintos backends sin invocar un LLM generativo completo.
-- Filtrado de seguridad y moderacion: como clasificador determinista, se puede colocar delante de un chatbot para bloquear o etiquetar entradas antes de que lleguen al modelo conversacional, con coste de inferencia muy inferior al de una generacion.
-- Clasificacion de documentos en pipelines ETL: procesar lotes de textos cortos (hasta 4096 tokens) en un Mac mini M6 para asignar categorias, aprovechando los 204 t/s de procesamiento de prompt.
-- Enrutado de tickets de soporte: asignar cada ticket a un equipo o cola concreta mediante la cabeza de lectura, con la ventaja de que el resultado es una distribucion de probabilidad sobre clases y no texto libre.
-- Gatekeeping en sistemas RAG: decidir si una consulta requiere recuperacion de documentos o puede responderse directamente, usando la decision binaria con margen de logit verificable.
-- Despliegue local en hardware de consumo: prototipado de clasificadores de 30B en un Mac mini de 16 GB sin GPU dedicada, util para entornos de desarrollo o demos sin coste de nube.
-- Evaluacion de robustez de clasificadores: la invariancia al orden de opciones lo hace util como componente de referencia en pruebas de sesgo posicional de otros sistemas de decision.
+- Enrutamiento de peticiones en un servidor de inferencia: el modelo clasifica cada consulta entrante en una de N rutas (por ejemplo, modelo pequeño, modelo grande o rechazo) en un solo pase, con latencia de 642–656 ms en servidor usando caché de prefijo LCP, y puede integrarse delante de un gateway de modelos.
+- Filtrado de seguridad y moderación: clasificación binaria permitir/bloquear con calibración verificada (100% en 20 ejecuciones de la batería de calibración), adecuada para prefiltrar tráfico antes de llamar a un LLM generativo más caro.
+- Clasificación de intenciones en asistentes de voz o chat: dado un turno de usuario, decidir la acción o el dominio con una pasada, evitando el coste de generar texto.
+- Automatización de decisiones en pipelines de CI/CD: evaluar metadatos de un cambio (diff, logs, etiquetas) y decidir si se aprueba, se bloquea o requiere revisión humana, con inferencia local en un Mac mini M6 sin GPU dedicada.
+- Prototipado de investigación en "System-One": banco de pruebas para estudiar cabezas de lectura lineales sobre estados ocultos de modelos grandes sin necesidad de GPUs de datacenter.
+- Despliegue en entornos con memoria restringida: cualquier escenario donde se necesite un modelo de 30B en 16 GB de memoria unificada, como estaciones de trabajo Apple Silicon o mini-PCs, para tareas de clasificación por lotes.
+- Evaluación A/B de prompts y opciones: la invariancia al orden permite usar el modelo para comparar dos alternativas de prompt o configuración sin sesgo posicional apreciable (sesgo medido de -0,5224 logits).
 
 ## Benchmarks y rendimiento
 
-Medidos por el autor en Apple Mac mini M6 (Metal 4), `llama.cpp` commit `ed26f2f`, `-ngl 99 -fa on -ctk q4_0 -ctv q4_0`:
+Datos medidos por el autor en Apple Mac mini M6 con Metal 4, `llama.cpp` commit `ed26f2f`, `-ngl 99 -fa on -ctk q4_0 -ctv q4_0`:
 
 | Prueba | Resultado |
 |---|---|
-| `llama-bench` `pp512` | 204,35 ± 1,51 t/s (12,09 GiB, 30,70B parametros) |
-| Latencia de decision extremo a extremo | 1,05-1,17 s por decision (1.054,5-1.166,3 ms) |
-| Caso 1 (A=Block+2FA, B=Allow) | logits `[37,493, 24,532]` → P(A)=1,0000, P(B)=0,0000 |
-| Caso 2 (A=Allow, B=Block+2FA) | logits `[27,644, 44,994]` → P(A)=0,0000, P(B)=1,0000 |
-| Router de tres rutas (ciberseguridad) | 92,84% de confianza |
+| `llama-bench` `pp512` | 204,35 ± 1,51 t/s |
+| Latencia extremo a extremo de enrutamiento (un solo pase) | ~1,05–1,17 s |
+| Latencia de despacho de router (3 rutas, sin estado) | 1.054,5–1.718,2 ms |
+| Latencia con caché de prefijo LCP (`f_keep = 0,825–0,839`) | 642–656 ms en servidor; 766,6–783,1 ms extremo a extremo |
+| Precisión de calibración (10 escenarios × 2 permutaciones A/B = 20 ejecuciones) | 100,0% (20/20) |
+| Sesgo posicional (`A - B`) | -0,5224 logits |
+| Escalado de temperatura | `T_cal = 0,5124`, `Bias = [0,0128, -0,0095]`, NLL 0,0002 → 0,0000 |
+| Caso 1 (A=Block+2FA, B=Allow) | logits `[37,493, 24,532]` → `P(A)=1,0000`, `P(B)=0,0000` |
+| Caso 2 (A=Allow, B=Block+2FA) | logits `[27,644, 44,994]` → `P(A)=0,0000`, `P(B)=1,0000` |
 
-No se han publicado resultados en MMLU, HumanEval, GSM8K ni benchmarks estandar de comprension en la informacion disponible.
+No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, lo cual es coherente con que el modelo no sea un generador de texto.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: 12,09 GiB de pesos; el autor indica que encaja en el conjunto de trabajo Metal de 15.032,39 MB de un Mac mini M6 de 16 GB de memoria unificada.
-- GPU recomendadas: Apple Silicon (Mac mini M6 con Metal 4 es el objetivo declarado); no se documentan pruebas en A100, H100 ni RTX 4090.
-- GPU de consumo: si cabe en un Mac mini de 16 GB; para GPU discretas haria falta al menos ~13-14 GB de VRAM considerando cache KV en q4_0, por lo que encajaria en RTX 4090 (24 GB) y A100/H100, aunque no hay mediciones publicadas.
-- Despliegue: `llama-server` de `llama.cpp` compilado con `-DGGML_METAL=ON`, flags `--embeddings --pooling none --embd-normalize -1 -ngl 99 -fa on -np 1 -c 4096 -ctk q4_0 -ctv q4_0 --cache-ram 2048`. Requiere el cliente Python `examples/karpo_decision_client.py` para aplicar `readout.safetensors`.
-- Throughput: 204,35 t/s en `pp512`; latencia de decision de ~1,1 s en M6.
-- No se documenta compatibilidad con vLLM, TGI u Ollama.
+- VRAM/memoria: 12,09 GiB (12.383,76 MiB) para los pesos GGUF; el conjunto de trabajo Metal medido es de 15.032,39 MB, lo que deja margen ajustado en 16 GB de memoria unificada.
+- GPU recomendadas: Apple Mac mini M6 (16 GB de memoria unificada, Metal 4) es el objetivo declarado y probado; no hay datos de rendimiento en GPU NVIDIA o AMD.
+- Cabe en GPU consumer: sí, en equipos Apple Silicon de 16 GB; no hay datos sobre RTX 4090 u otras GPU de consumo con 16–24 GB de VRAM.
+- Opciones de despliegue: `llama-server` de `llama.cpp` con `--embeddings --pooling none --embd-normalize -1`, `-ngl 99 -fa on -np 1 -c 4096 -ctk q4_0 -ctv q4_0 --cache-ram 2048`. El autor menciona `llama-clover` (Metal 4) como runtime especializado. No se documenta soporte en vLLM, TGI ni Ollama.
+- Latencia y throughput: 204,35 t/s en `pp512`; 642–656 ms por decisión con caché de prefijo; el autor estima que compactando el prefijo de sistema a ~35–45 tokens y devolviendo embeddings float32 binarios se podría bajar a ~350–400 ms.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Kenzan-Karpo-Decision-31B-AttnGrid-GGUF | 30,70B | 4096 (config. de referencia) | GGUF IQ2_XXS/IQ3_XXS mixto | Apache 2.0 | Clasificador System-One con cabeza externa |
-| MachinePulseAI/karpo-decision-31B | 30,70B | no disponible | safetensors (BF16, 58,29 GiB) | no disponible | Modelo base de decision, mismo proposito |
-| google/gemma-4-31B-it | ~31B | no disponible | safetensors | Gemma (terminos propios) | LLM generativo instructivo |
-| Bonsai-2 (Prism ML) | no disponible | no disponible | no disponible | no disponible | Referencia citada en cuantizacion extrema de bajo bit |
+| Kenzan-Karpo-Decision-31B-AttnGrid | 30,70B | 4096 (config. de referencia) | GGUF 3,38 bpw + readout safetensors | apache-2.0 | Clasificador System-One de un solo pase |
+| MachinePulseAI/karpo-decision-31B (base) | 30,70B | no disponible | safetensors (BF16, 58,29 GiB) | no disponible en la información proporcionada | Mismo clasificador, sin cuantizar |
+| google/gemma-4-31B-it (raíz) | ~31B | no disponible | safetensors | no disponible en la información proporcionada | LLM instructivo generativo |
+| Bonsai-2 (Prism ML, citado como inspiración) | no disponible | no disponible | no disponible | no disponible | Cuantización extrema de bajo bit |
 
-La comparacion directa con LLMs generativos no es significativa: este artefacto no genera texto. Frente a su modelo base, la diferencia es el tamano (12,09 GiB frente a 58,29 GiB) y la receta de cuantizacion calibrada por capas.
+La comparación con alternativas de la misma categoría (clasificadores de enrutamiento de 30B) no está disponible en la información proporcionada. Frente a su base sin cuantizar, la variante Kenzan reduce el peso 4,8× a costa de una cuantización mixta agresiva; frente a Gemma 4 instructivo, cambia el paradigma de uso (clasificación frente a generación).
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: no genera texto y no debe usarse como chatbot; requiere la cabeza `readout.safetensors` y un servidor en modo embeddings.
-- Solo soporta ingles y ruso; no hay soporte documentado de castellano.
-- La ventana de contexto practica es de 4096 tokens en la configuracion de referencia; textos mas largos requieren truncado o segmentacion.
-- El conjunto de clases (255) esta fijado por la cabeza de lectura; no se puede reutilizar para categorias nuevas sin reentrenar `readout.safetensors`.
-- Las cifras de rendimiento y precision provienen unicamente del autor y de un unico dispositivo (Mac mini M6); no hay replicacion independiente.
-- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de calibracion: una confianza alta (92,84%) no garantiza correccion fuera de la distribucion de entrenamiento.
-- La licencia Apache 2.0 se declara sobre el artefacto, pero el modelo base deriva de `google/gemma-4-31B-it`, cuyos terminos de uso deben verificarse antes de un despliegue comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion de la comunidad.
-- No se documentan sesgos especificos ni evaluaciones de seguridad del clasificador.
+- No es un modelo conversacional: no genera texto autorregresivamente y requiere la cabeza `readout.safetensors` y un cliente específico (`karpo_decision_client.py`) para funcionar.
+- Dependencia de runtime: el autor indica que usa una cabeza de lectura "System-One" que requiere `llama-clover` (Metal 4); el soporte en `llama.cpp` estándar se limita a la extracción de embeddings.
+- Idiomas limitados a inglés y ruso; no hay evaluación en castellano.
+- La cuantización a 3,38 bpw con `IQ2_XXS` en la mayoría de SwiGLU puede degradar decisiones fuera de la distribución de calibración; la validación reportada cubre solo 10 escenarios × 2 permutaciones.
+- Riesgo de alucinación no aplica en el sentido habitual (no genera texto), pero sí de calibración excesiva: probabilidades de 1,0000 en la batería de calibración sugieren posible sobreajuste a ese conjunto.
+- Sesgo posicional medido de -0,5224 logits, pequeño pero no nulo; conviene mantener el orden de opciones estable en producción.
+- El rendimiento está medido exclusivamente en Apple Mac mini M6 con Metal 4; no hay datos en otras plataformas.
+- Licencia apache-2.0 declarada, pero el modelo base (Gemma 4) puede tener términos adicionales; conviene verificar la licencia de `google/gemma-4-31B-it` antes de uso comercial.
+- El repositorio tiene 0 likes y 1.037 descargas en el momento de la consulta; es un artefacto de un solo autor sin validación independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/kabcnd/Kenzan-Karpo-Decision-31B-AttnGrid-GGUF
 - Modelo base: https://huggingface.co/MachinePulseAI/karpo-decision-31B
-- Modelo original: https://huggingface.co/google/gemma-4-31B-it
-- Prism ML (inspiracion, Bonsai-2): https://huggingface.co/prism-ml
-- Cliente de decision: `examples/karpo_decision_client.py` (incluido en el repositorio)
+- Modelo raíz: https://huggingface.co/google/gemma-4-31B-it
+- Inspiración (Prism ML / Bonsai-2): https://huggingface.co/prism-ml
+- Cliente de ejemplo: `examples/karpo_decision_client.py` dentro del repositorio
 - Apoyo al autor: https://ko-fi.com/kabcpc

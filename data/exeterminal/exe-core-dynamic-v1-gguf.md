@@ -2,90 +2,98 @@
 
 ## Resumen
 
-Exe Core Dynamic v1 es un modelo de lenguaje especializado en el uso de herramientas de terminal, desarrollado por el usuario exeterminal como parte del proyecto Exe AI Terminal. Se basa en el modelo Qwen/Qwen3.8-27B, un transformer de 27 mil millones de parámetros, y ha sido afinado mediante una adaptador LoRA de rango 16 sobre 1241 ejemplos distribuidos en 19 grupos de comportamiento. El objetivo del entrenamiento es que el modelo aprenda a seleccionar y llamar correctamente las herramientas del terminal —leyendo sus esquemas, respetando las reglas del sistema y decidiendo cuándo responder sin invocar ninguna herramienta— en lugar de adivinar. El modelo se distribuye en formato GGUF con una amplia gama de cuantizaciones, desde bf16 (54,6 GB) hasta IQ1_S experimental, y hereda una ventana de contexto de hasta 262 000 tokens del modelo base. Su relevancia radica en que está diseñado específicamente para agentes de terminal, donde mejora la precisión en la selección de herramientas de un 79 % a un 93 % en casos de evaluación held-out, sin retroceder en ningún grupo de comportamiento.
+Exe Core Dynamic v1 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.8-27B, desarrollado por exeterminal, orientado especificamente al uso como agente conversacional con capacidad de invocar herramientas (tool calling). Su proposito no es responder preguntas generales, sino decidir que herramienta llamar, con que parametros y cuando conviene no llamar a ninguna, dentro del ecosistema de la aplicacion Exe AI. El modelo parte de una base de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) y se distribuye unicamente en formato GGUF, con cuantizaciones desde bf16 hasta Q2_K.
+
+La relevancia de esta ficha esta en que se trata de un derivado especializado, no de un modelo fundacional: el autor declara explicitamente que fuera de un agente con herramientas el modelo es simplemente la base con un "acento leve", por lo que su interes practico se limita a despliegues de agentes sobre servidores compatibles con la API de OpenAI, como `llama-server`. La licencia Apache-2.0 permite uso comercial, modificacion y redistribucion, siempre citando el origen del modelo base.
+
+El repositorio ocupa 212,7 GB en total (suma de todas las cuantizaciones publicadas) y acumula 1131 descargas y 1 like en el momento de la consulta. La documentacion del autor es inusualmente detallada en cuanto a metodo de entrenamiento, evaluacion y limitaciones conocidas, lo que facilita la evaluacion tecnica pero tambien deja claro el alcance acotado del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen3.8-27B) |
-| Parametros totales | 27 000 millones (27B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 262 000 tokens (heredado de la base) |
-| Tipos de cuantizacion | bf16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, IQ3_M, IQ3_S, Q2_K, IQ2_M, IQ2_S, IQ2_XS, IQ1_M, IQ1_S |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con matriz de importancia imatrix) |
+| Arquitectura | Transformer (derivada de Qwen/Qwen3.8-27B); detalles internos de la base no disponibles en la informacion proporcionada |
+| Parametros totales | 27.320.697.856 (aproximadamente 27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta 262 144 tokens (262k), heredada del modelo base |
+| Tipos de cuantizacion | bf16 (16 bits), Q8_0 (8), Q6_K (6,5), Q5_K_M (5,5), Q4_K_M (4,8), Q4_K_S (4,5), IQ4_XS (4,25), Q3_K_L (4,0), Q3_K_M (3,9), Q2_K (3,0) |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache-2.0 (base y derivado) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer denso con arquitectura Qwen3, y se ha afinado mediante un adaptador LoRA de rango 16 sobre el modelo base en bf16. El entrenamiento se realizó durante dos épocas sobre 1241 ejemplos organizados en 19 grupos de comportamiento, con la máscara de pérdida aplicada al prompt para que el modelo aprenda el comportamiento en lugar de memorizar el texto del prompt. El adaptador se fusionó posteriormente en el modelo base bf16, y todas las cuantizaciones GGUF se generaron a partir de ese modelo fusionado. Cada cuantización incluye una matriz de importancia (imatrix) calculada con el mismo conjunto de calibración utilizado para el modelo Exe Guard Dynamic. La pérdida de validación held-out descendió de forma monótona hasta 0,0107 sin signos de sobreajuste. El modelo hereda la torre de visión del modelo base, pero no fue entrenado ni evaluado en tareas de imagen.
+El modelo es un fine-tune del Qwen/Qwen3.8-27B mediante un adaptador LoRA de rango 16 aplicado sobre la base completa en bf16. El entrenamiento consistio en dos epocas sobre 1241 ejemplos distribuidos en 19 grupos de comportamiento, con la parte del prompt enmascarada en la funcion de perdida, de modo que el modelo aprende la conducta (que herramienta invocar y cuando) y no la repeticion literal del prompt. El adaptador se fusiono posteriormente en la base bf16 y todas las compilaciones GGUF publicadas derivan de ese modelo fusionado. La perdida de validacion en datos reservados descendio de forma monotona hasta 0,0107, sin repuntes.
+
+El contenido del entrenamiento cubre cada herramienta integrada con cada parametro, las reglas del system prompt de Exe AI y, de forma destacable, la capacidad de leer un esquema de herramienta nunca visto y llamarlo correctamente. Esto ultimo es relevante porque los usuarios anaden servidores MCP y skills propias, de modo que una lista fija de herramientas quedaria obsoleta en cuanto se extendiera la configuracion. No se menciona en la informacion disponible el uso de RLHF o DPO, ni innovaciones de decodificacion especulativa o atencion lineal; el autor solo documenta el proceso de LoRA supervisado descrito. La torre de vision de la base se conserva intacta pero no fue entrenada ni evaluada.
 
 ## Capacidades
 
-- Uso de herramientas (tool calling) en terminal: selecciona la herramienta adecuada entre las integradas, leyendo sus parámetros y reglas del sistema.
-- Lectura de esquemas de herramientas desconocidas: puede interpretar y llamar correctamente herramientas MCP o skills añadidas por el usuario, sin necesidad de una lista fija.
-- Ejecución de comandos en segundo plano: inicia procesos largos en background en lugar de bloquear la conversación.
-- Manejo de contexto largo: ventana de hasta 262 000 tokens, adecuada para sesiones de terminal extensas.
-- Decisión de cuándo no llamar herramientas: responde directamente cuando la petición no requiere invocar ninguna función.
-- Multilingüe: solo inglés (aunque el modelo base soporta más idiomas, el fine-tune está orientado a inglés).
-- Sin capacidades de visión medidas: la torre de visión del base está presente pero no ha sido entrenada ni evaluada.
+- Decision de invocacion de herramientas: selecciona la herramienta adecuada entre las integradas, con sus parametros correctos, y evita atajos como resolver lectura de ficheros con una linea de shell.
+- Lectura de esquemas de herramientas no vistas: puede interpretar un esquema nuevo (por ejemplo, de un servidor MCP anadido por el usuario) y emitir la llamada correcta.
+- Gestion de ejecuciones en segundo plano: inicia procesos largos en background en lugar de bloquear la conversacion.
+- Tratamiento de salidas de herramientas como datos: no interpreta el texto devuelto por una herramienta como instrucciones, lo que reduce el riesgo de inyeccion de prompt indirecta.
+- Clarificacion ante ambiguedad: formula una pregunta corta cuando la peticion es genuinamente ambigua, aunque el autor senala que esta conducta mejora solo parcialmente.
+- Conversacion multi-turno: etiquetado como conversational, con contexto de hasta 262k tokens heredado de la base.
+- Capacidades generales de la base (generacion de texto, razonamiento, codigo) presentes pero no reforzadas; el autor recomienda usar la base para chat general.
+- Vision: la torre de vision existe pero no fue entrenada ni medida; no debe considerarse una capacidad soportada.
+- Multilingue: limitado a ingles segun la model card.
 
 ## Casos de uso
 
-- Asistente de terminal para desarrolladores: el modelo puede gestionar conversaciones multi-turno en una sesión de terminal, leyendo archivos con la herramienta adecuada en lugar de usar comandos shell improvisados, y ejecutando comandos en background cuando la tarea es larga.
-- Automatización de tareas de administración de sistemas: permite delegar operaciones rutinarias como inspección de logs, gestión de procesos o configuración de entornos, con la seguridad de que el modelo respeta las reglas del sistema.
-- Integración con servidores MCP personalizados: al poder leer esquemas de herramientas nunca vistas, el modelo se adapta a extensiones del usuario sin necesidad de reentrenamiento.
-- Generación de comandos shell y scripts: dado un objetivo en lenguaje natural, el modelo produce el comando o script correcto, eligiendo la herramienta apropiada en lugar de un one-liner arbitrario.
-- Resolución de problemas en entornos de desarrollo: puede diagnosticar errores de compilación, fallos de dependencias o problemas de configuración, inspeccionando el sistema con las herramientas adecuadas.
-- Agente autónomo para pipelines de CI/CD: integrado tras un servidor compatible con OpenAI (como llama-server), puede ejecutar pasos de build, test y despliegue, decidiendo cuándo intervenir y cuándo responder sin llamar herramientas.
-- Soporte técnico en terminales de producto: como modelo de chat principal de Exe AI Terminal, ofrece respuestas precisas sobre el uso de las herramientas integradas y las reglas del sistema.
+- Agente de escritorio o IDE con acceso a ficheros: el modelo elige la herramienta de ficheros en lugar de comandos shell, lo que reduce errores y mejora la trazabilidad de las operaciones sobre el sistema de archivos. El autor reporta una mejora de 0/4 a 4/4 en las pruebas de herramientas de fichero.
+- Orquestacion de tareas largas en segundo plano: para procesos de build, entrenamiento o scraping de larga duracion, el modelo lanza la ejecucion en background y continua la conversacion, evitando bloqueos del hilo. Mejora medida de 2/4 a 4/4 en este grupo.
+- Integracion de servidores MCP personalizados: al saber leer esquemas de herramientas no vistas, puede operar con herramientas anadidas por el usuario sin reentrenamiento, lo que lo hace adecuado para entornos donde el catalogo de herramientas cambia con frecuencia.
+- Backend de chat para aplicaciones compatibles con la API de OpenAI: se puede desplegar como modelo principal detras de `llama-server` u otro servidor compatible, sin cambios en el cliente.
+- Automatizacion con datos no confiables: al tratar las salidas de herramientas como datos y no como instrucciones, es adecuado para pipelines donde las herramientas devuelven contenido de terceros (correo, web, tickets) y se quiere limitar el riesgo de inyeccion de prompt.
+- Asistente de operaciones con reglas estrictas: el entrenamiento incorpora las reglas del system prompt de Exe AI, por lo que encaja en flujos donde hay que respetar restricciones de carpetas, limites y convenciones de la aplicacion.
+- Despliegue en hardware de consumo: la cuantizacion Q4_K_M (16,8 GB) cabe en una GPU de 24 GB, lo que permite ejecutar un agente de 27B en una unica RTX 3090 o 4090.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor proporciona una evaluacion especifica sobre 72 casos held-out de terminal a temperatura 0,1:
+El autor publica una evaluacion propia sobre 72 casos reservados de Exe AI a temperatura 0,1, comparando la base sin entrenar con el modelo ajustado:
 
-| Modelo | Aciertos | Porcentaje |
+| Metrica | Base Qwen3.8-27B | Exe Core Dynamic v1 |
 |---|---|---|
-| Qwen3.8-27B (base sin entrenar) | 57 / 72 | 79 % |
-| Exe Core Dynamic v1 | 67 / 72 | 93 % |
+| Casos resueltos (72) | 57 / 72 (79 %) | 67 / 72 (93 %) |
+| Herramientas de fichero | 0 / 4 | 4 / 4 |
+| Ejecuciones en segundo plano | 2 / 4 | 4 / 4 |
+| Grupos de comportamiento que empeoran | — | 0 |
 
-Las mayores mejoras se dieron en herramientas de archivo (de 0/4 a 4/4) y en ejecucion en segundo plano (de 2/4 a 4/4). Ningun grupo de comportamiento empeoro. El autor reconoce dos debilidades persistentes: nombrar el entorno Python propio del proyecto y formular una pregunta corta en lugar de inspeccionar primero.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La evaluacion es interna, sobre casos propios y solo en texto; no es comparable con puntuaciones publicas de terceros.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo bf16 ocupa 54,6 GB, por lo que requiere al menos 56 GB de VRAM para cargarlo sin cuantizar. Las cuantizaciones reducen el requisito: Q8_0 aproximadamente 30 GB, Q4_K_M alrededor de 16-18 GB, e IQ2_S en torno a 8-10 GB (estimaciones basadas en el tamaño tipico para 27B; los tamanos exactos de cada archivo no estan publicados).
-- GPU recomendadas: para bf16 o Q8_0 se necesitan GPU profesionales como A100 (80 GB), H100 (80 GB) o RTX 6000 Ada. Para Q4_K_M o inferiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente. Las cuantizaciones IQ2_S e inferiores pueden caber en GPUs de 12-16 GB como RTX 4070 Ti o RTX 3080.
-- Opciones de despliegue: el formato GGUF es compatible con llama.cpp, llama-server, Ollama y cualquier servidor compatible con OpenAI. El autor recomienda usarlo con llama-server.
-- Latencia y throughput: no se han publicado datos especificos. En una RTX 4090 con Q4_K_M, se puede esperar una generacion de 20-40 tokens por segundo para un modelo de 27B, pero es una estimacion orientativa.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero mas overhead de contexto KV. Referencias del autor: bf16 54,7 GB; Q8_0 29,0 GB; Q6_K 22,4 GB; Q5_K_M 19,5 GB; Q4_K_M 16,8 GB; Q4_K_S 15,8 GB; IQ4_XS 15,4 GB; Q3_K_L 14,6 GB; Q3_K_M 13,5 GB; Q2_K 10,9 GB.
+- GPU recomendadas: no especificadas por el autor. Por tamano, Q4_K_M encaja en GPU de 24 GB (RTX 3090, RTX 4090, A10G 24 GB); Q8_0 y superiores requieren 32 GB o mas (A100 40 GB, H100, L40S 48 GB); bf16 requiere 80 GB o reparto multi-GPU.
+- Cabe en GPU de consumo: si, en Q4_K_M y cuantizaciones inferiores con 24 GB; Q2_K (10,9 GB) cabe en tarjetas de 12-16 GB, aunque el autor advierte que pierde precision en las decisiones de herramienta mas dificiles.
+- Opciones de despliegue: llama.cpp y `llama-server` (mencionados por el autor), cualquier servidor compatible con la API de OpenAI; Ollama y vLLM no se mencionan en la informacion disponible, aunque el formato GGUF es compatible con el primero.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicadas con otros modelos de la misma categoria (agentes de terminal). Como referencia, se compara con su modelo base y con el otro modelo del mismo autor:
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+|---|---|---|---|---|---|
+| Exe Core Dynamic v1 | 27,3 B | 262k | Agente y tool calling especializado | Apache-2.0 | GGUF |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | 262k | Chat general y vision | Apache-2.0 (segun el autor) | safetensors y otros |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
-|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262k | Chat general, sin especializacion en terminal | Apache-2.0 |
-| Exe Core Dynamic v1 | 27B | 262k | Agente de terminal con tool use | Apache-2.0 |
-| Exe Guard Dynamic (del mismo autor) | No disponible | No disponible | Guardian de flujos de trabajo extendidos | Apache-2.0 |
-
-No hay datos de rendimiento comparativo entre estos modelos en benchmarks estandar.
+La unica comparacion documentada es contra el propio modelo base: mismo tamano y contexto, pero la base obtiene 57/72 frente a 67/72 en los casos de agente. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Especialista de terminal: fuera del ambito de uso de herramientas en terminal, el modelo se comporta como el modelo base con un "acento leve"; no es adecuado para chat general.
-- Debilidades conocidas: no mejora en nombrar el entorno Python propio del proyecto ni en formular una pregunta corta ante ambiguedad; tiende a inspeccionar antes de actuar.
-- Vision no evaluada: la torre de vision del modelo base esta presente pero no ha sido entrenada ni medida; no se debe confiar en capacidades de imagen.
-- Idioma: solo entrenado y evaluado en ingles; el uso en otros idiomas puede degradar el rendimiento.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar comandos o respuestas incorrectas; se recomienda supervisar en entornos de produccion.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero exige nombrar el origen del modelo base (Qwen3.8-27B).
-- Cuantizaciones de 1 bit (IQ1_M, IQ1_S) son experimentales y no recomendadas para uso real.
+- Especializacion estrecha: fuera de un agente con herramientas rinde como la base con un "acento leve"; el autor recomienda usar la base para chat general.
+- Debilidades conocidas no corregidas: nombrar el entorno Python propio del proyecto y formular una pregunta corta en lugar de inspeccionar primero. La causa raiz se redujo pero no se elimino: el modelo sigue prefiriendo inspeccionar antes de actuar.
+- Vision no validada: la torre de vision se conserva congelada y no fue entrenada ni medida; no debe asumirse soporte de imagenes.
+- Solo ingles: la model card declara unicamente `en`; el rendimiento en castellano u otros idiomas no esta evaluado.
+- Evaluacion limitada: 72 casos internos, solo texto, sin benchmarks publicos; no hay garantia de transferencia a otros dominios de herramientas.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; como todo modelo generativo, puede emitir llamadas con parametros incorrectos o inventar herramientas.
+- Cuantizaciones sin imatrix: IQ4_XS se construyo sin imatrix y queda por debajo de su potencial; las I-quants de IQ3 o inferiores se omitieron deliberadamente. Q2_K puede fallar en las decisiones de herramienta mas dificiles.
+- Licencia: Apache-2.0 permite uso comercial, modificacion, rebranding y redistribucion, con la obligacion de nombrar el origen del modelo base.
+- Fecha de creacion y actualizacion (2026) y ausencia de benchmarks externos: conviene validar el modelo en el dominio propio antes de llevarlo a produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Modelo relacionado del mismo autor (Exe Guard Dynamic): https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF
-- Discusiones del modelo relacionado: https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF/discussions
-- Directorio de modelos GGUF (no especifico de este modelo): https://local-ai-zone.github.io/
-- Cargador GGUF con modo agente (no especifico de este modelo): https://ggufloader.github.io/ y https://github.com/GGUFloader/gguf-loader
+- Sitio del autor: https://exe-hq.net

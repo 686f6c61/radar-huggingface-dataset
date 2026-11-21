@@ -2,84 +2,101 @@
 
 ## Resumen
 
-QDA-Qwen3-Coder-30B-A3B-W4A16 es una cuantizacion de solo pesos (weight-only) del modelo Qwen/Qwen3-Coder-30B-A3B-Instruct, publicada por el laboratorio qda-lab bajo licencia Apache 2.0. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) de la familia Qwen3, especializado en generacion de codigo y tareas de agente, con 30.532.122.624 parametros totales y una arquitectura qwen3_moe. Esta version reduce el peso de los pesos a 4 bits y 8 bits enteros manteniendo las activaciones en 16 bits, lo que disminuye de forma notable el espacio en disco (17,8 GB en el repositorio) y los requisitos de memoria para inferencia.
+QDA-Qwen3-Coder-30B-A3B-W4A16 es una cuantizacion de 4 bits de los pesos del modelo Qwen/Qwen3-Coder-30B-A3B-Instruct, desarrollada por qda-lab. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) de Qwen con 30.532.122.624 parametros totales, orientado a generacion de texto y, por su nombre, especializado en tareas de codigo. Esta version cuantizada reduce el peso de 61,1 GB en BF16 a 17,8 GB, un factor de 3,4x, manteniendo segun el autor el 99,5% de la precision del modelo original.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de codigo de 30B con arquitectura MoE en infraestructura mas modesta que la version en bf16, manteniendo el formato compressed-tensors, compatible con motores de inferencia como vLLM. No obstante, se trata de una publicacion preliminar (pre-release): el autor indica que la evaluacion esta pendiente y que la version completa con resultados de evaluacion esta prevista para el 20 de noviembre de 2026. Por tanto, no hay datos de benchmarks verificados en la informacion disponible.
+La relevancia de esta ficha radica en que permite ejecutar un modelo MoE de 30B con calidad cercana a BF16 en hardware mucho mas modesto, lo que facilita su despliegue en produccion. La cuantizacion emplea GPTQ con grupos de 64, proyecciones de atencion en 8 bits y un ajuste fino de las escalas de grupo mediante destilacion, con un recetario reproducible publicado por el autor.
 
-Al derivar directamente del modelo base de Qwen, hereda sus capacidades de generacion de codigo, razonamiento multi-paso y tool calling, pero cualquier afirmacion sobre su rendimiento tras la cuantizacion debe tratarse con cautela hasta que se publiquen las evaluaciones anunciadas.
+El modelo se distribuye con licencia Apache-2.0, la misma que el modelo base, y esta pensado para su uso con vLLM y transformers. Los benchmarks publicados en la model card muestran una media de 40,1 frente a 40,3 del BF16 en un conjunto de seis pruebas, lo que situa la perdida de calidad en un margen muy reducido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (qwen3_moe) |
+| Arquitectura | Transformer MoE (qwen3_moe) |
 | Parametros totales | 30.532.122.624 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A16: pesos a 4 bits enteros asimetricos en grupos de 64; pesos a 8 bits enteros simetricos en grupos de 64; activaciones en 16 bits |
+| Tipos de cuantizacion | W4A16 (pesos INT4 en grupos de 64, activaciones de 16 bits); proyecciones de atencion en 8 bits |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
+| Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion de solo pesos del checkpoint Qwen/Qwen3-Coder-30B-A3B-Instruct. La arquitectura subyacente es un transformer con capas Mixture-of-Experts (identificador qwen3_moe), con 30.532.122.624 parametros totales. La cuantizacion aplicada es W4A16: los pesos se almacenan en 4 bits enteros con esquema asimetrico en grupos de 64, y adicionalmente en 8 bits enteros con esquema simetrico en grupos de 64, mientras que las activaciones permanecen en 16 bits. El resultado se guarda en el formato compressed-tensors, que permite su carga en motores compatibles con esta libreria.
+El modelo base es un transformer de tipo Mixture-of-Experts de la familia Qwen3-Coder, con 30.532.122.624 parametros totales. La model card no detalla el numero de parametros activos por token, la composicion del dataset de entrenamiento ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo original Qwen/Qwen3-Coder-30B-A3B-Instruct y no se reproducen en la informacion disponible.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si el modelo base utilizo RLHF, DPO u otras tecnicas de alineacion, ya que la model card de esta cuantizacion no detalla esos aspectos. Tampoco se documentan innovaciones tecnicas adicionales mas alla del propio esquema de cuantizacion. El autor indica que la evaluacion esta pendiente y que la version completa con resultados se publicara el 20 de noviembre de 2026.
+La innovacion tecnica de esta version es el proceso de cuantizacion. Los pesos se almacenan como enteros de 4 bits en grupos de 64, cuantizados con GPTQ; las proyecciones de atencion se mantienen en 8 bits y las escalas de grupo se ajustan finamente mediante destilacion. El recetario fue seleccionado por una busqueda automatizada de QDA, descrita en el paper "QDA: Closed-Loop LLM Quantization Design with Agents" (arXiv:2611.23388). El proceso se ejecuto en 2x H100 de 80 GB, con el paso `scale_kd` (300 rondas) tomando 53 minutos. Una reconstruccion de los pesos no es bit-identica al checkpoint publicado: la KL medida es 0,00701 en la reconstruccion frente a 0,00704 en este checkpoint, una diferencia del -0,4%.
 
 ## Capacidades
 
-- Generacion de texto y codigo: hereda del modelo base Qwen3-Coder-30B-A3B-Instruct la capacidad de generar codigo en multiples lenguajes y completar tareas de programacion.
-- Razonamiento multi-paso: el modelo base esta orientado a tareas de agente y razonamiento encadenado.
-- Tool calling / function calling: el modelo base Qwen3-Coder soporta integracion con herramientas; esta capacidad se hereda, aunque no se verifica de forma independiente en esta cuantizacion.
-- Soporte de agentes: el modelo base esta disenado para flujos de agente y ejecucion de tareas multi-paso.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modo thinking, vision o audio: no disponible en la informacion proporcionada para esta cuantizacion.
+- Generacion de texto y razonamiento general, con evaluacion en MMLU-Pro, GPQA-Diamond e IFBench.
+- Razonamiento matematico, evaluado en AIME 2025 y HMMT Feb 2026.
+- Generacion de codigo, evaluada en LiveCodeBench.
+- Modelo no-thinking: las evaluaciones se realizaron con el marcador de thinking desactivado.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: no disponibles.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistencia de programacion en IDE: el modelo puede integrarse en extensiones de editor para autocompletado y generacion de funciones, aprovechando su especializacion en codigo y su tamano de 30B con arquitectura MoE.
-- Generacion de codigo en pipelines de CI/CD: puede usarse para generar tests, parches o documentacion tecnica de forma automatizada, con la ventaja de que la cuantizacion W4A16 reduce los requisitos de memoria frente al checkpoint en bf16.
-- Agentes autonomas de resolucion de tareas: el modelo base soporta tool calling y razonamiento multi-paso, lo que permite construir agentes que consulten APIs, ejecuten comandos y verifiquen resultados.
-- Migracion y refactorizacion de codigo: puede emplearse para transformar fragmentos de codigo entre lenguajes o frameworks, tarea habitual en equipos de ingenieria.
-- Despliegue en infraestructura con GPU de memoria limitada: al ocupar 17,8 GB en disco y usar pesos de 4 y 8 bits, es viable en GPUs consumer de gama alta o en nodos con menos VRAM que los necesarios para el modelo completo.
-- Evaluacion comparativa de tecnicas de cuantizacion: util para investigadores que quieran medir el impacto de W4A16 en un modelo de codigo MoE, una vez se publiquen las evaluaciones anunciadas.
-- Generacion de documentacion tecnica y explicaciones de codigo: el modelo puede resumir repositorios y explicar funciones, aprovechando su entrenamiento orientado a codigo.
+- Despliegue de asistencia a programadores en produccion: el modelo puede servir sugerencias y generacion de codigo en un servidor con vLLM, aprovechando su tamano reducido de 17,8 GB para liberar VRAM frente al BF16 de 61,1 GB.
+- Evaluacion de calidad de codigo en pipelines de CI: al mantener el 99,5% de la precision del BF16 segun el autor, puede sustituir al modelo original en tareas de revision automatica donde el coste de GPU es limitado.
+- Razonamiento matematico asistido: con resultados de 27,1 en AIME 2025 y 18,2 en HMMT Feb 2026, es adecuado para tutoria o verificacion de problemas matematicos en entornos con presupuesto de hardware ajustado.
+- Investigacion en cuantizacion: el recetario reproducible y los datos de calibracion publicados en `qda-lab/qda-recipe-inputs` permiten reproducir y estudiar el efecto de la cuantizacion W4A16 sobre un MoE de 30B.
+- Despliegue en GPUs de gama profesional: el autor indica compatibilidad con NVIDIA H100, A100, RTX Pro 6000 y B200, lo que permite servir el modelo en estaciones de trabajo con una sola GPU de 24-48 GB.
+- Sustitucion de modelos BF16 en entornos con restricciones de memoria: la reduccion de 3,4x en el peso del checkpoint facilita alojar el modelo junto a otros servicios en el mismo nodo.
+- Benchmarking comparativo de tecnicas de cuantizacion: la model card incluye comparacion directa con cyankiwi AWQ-4bit (18,1 GB), util para evaluar metodos de cuantizacion alternativos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la evaluacion esta pendiente y que la version completa con resultados se publicara el 20 de noviembre de 2026.
+Resultados publicados en la model card. Pass@1 promediado sobre 1-32 semillas, modelo no-thinking, mismas condiciones para todos los modelos.
+
+| Benchmark | BF16 (61,1 GB) | QDA W4A16 (17,8 GB) | cyankiwi AWQ-4bit (18,1 GB) |
+|---|---|---|---|
+| AIME 2025 | 25,8 | 27,1 | 25,1 |
+| HMMT Feb 2026 | 19,8 | 18,2 | 17,5 |
+| GPQA-Diamond | 52,5 | 53,3 | 51,9 |
+| IFBench | 34,6 | 34,3 | 32,3 |
+| MMLU-Pro | 70,9 | 70,2 | 69,6 |
+| LiveCodeBench | 38,4 | 37,8 | 37,6 |
+| Media | 40,3 | 40,1 | 39,0 |
+
+Configuracion de evaluacion: temperatura 0,7, top-p 0,8, top-k 20, min-p 0, presence penalty 0, repetition penalty 1,05; thinking desactivado; sin MTP ni decodificacion especulativa. Max new tokens por item: 81.920 en AIME 2025, HMMT Feb 2026, GPQA-Diamond, IFBench y LiveCodeBench; 32.768 en MMLU-Pro. Repeticiones: 32 semillas en AIME 2025 y HMMT Feb 2026, 16 en GPQA-Diamond e IFBench, 1 en MMLU-Pro, 4 en LiveCodeBench.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 17,8 GB en disco; la VRAM necesaria para cargar los pesos cuantizados sera del orden de esa cifra mas el overhead de activaciones y cache KV, aunque no se proporciona una estimacion oficial.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Viabilidad en GPU consumer: no confirmada oficialmente; por el tamano del checkpoint (17,8 GB) podria caber en GPUs consumer con 24 GB de VRAM, pero no hay datos que lo verifiquen.
-- Opciones de despliegue: el formato compressed-tensors es compatible con motores como vLLM; no se documentan otras opciones (llama.cpp, Ollama, TGI) en la informacion disponible.
+- VRAM estimada para inferencia: el checkpoint ocupa 17,8 GB en disco; en vLLM se recomienda reservar VRAM adicional para cache KV y overhead, aunque la cifra exacta no esta disponible.
+- GPUs validadas por el autor: NVIDIA H100, A100, RTX Pro 6000 y B200.
+- Cabe en GPU de consumo: no confirmado; el autor no menciona RTX 4090 ni otras GPUs consumer. Con 17,8 GB de pesos, una GPU de 24 GB podria alojarlo en teoria, pero no hay validacion publicada.
+- Opciones de despliegue: vLLM (comando `VLLM_DISABLED_KERNELS=MacheteLinearKernel vllm serve qda-lab/QDA-Qwen3-Coder-30B-A3B-W4A16`) y transformers. No se mencionan llama.cpp, Ollama ni TGI.
+- Nota de entorno: en H100 y H200 sin CUDA 13, la compilacion del kernel al arrancar falla (`failed to open libnvrtc-builtins.so.13.0`); hay que anadir las librerias NVIDIA del venv a `LD_LIBRARY_PATH`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Media benchmark | Licencia | Formato |
 |---|---|---|---|---|---|
-| QDA-Qwen3-Coder-30B-A3B-W4A16 | 30.532.122.624 | no disponible | W4A16 (4/8 bits, grupos de 64) | Apache 2.0 | Hugging Face (pre-release) |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | no disponible | no disponible | bf16 (original) | Apache 2.0 | Hugging Face |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de datos de rendimiento comparado para esta cuantizacion, ya que las evaluaciones estan pendientes de publicacion.
+| QDA-Qwen3-Coder-30B-A3B-W4A16 | 30,53B totales | no disponible | 40,1 | Apache-2.0 | safetensors W4A16 |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct (BF16) | 30,53B totales | no disponible | 40,3 | Apache-2.0 | safetensors BF16 |
+| cyankiwi AWQ-4bit | no disponible | no disponible | 39,0 | no disponible | safetensors AWQ 4-bit |
 
 ## Limitaciones y advertencias
 
-- Publicacion preliminar: el autor indica que la evaluacion esta pendiente; no hay resultados que confirmen la calidad del modelo tras la cuantizacion.
-- Posible degradacion por cuantizacion: la reduccion a 4 y 8 bits puede afectar a la precision en tareas de codigo y razonamiento, aunque no se han publicado mediciones.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se documenta una evaluacion especifica para esta cuantizacion.
-- Limitaciones de contexto e idioma: no disponibles en la informacion proporcionada.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar el texto de la licencia incluido en el repositorio, copiado del modelo base.
-- Compatibilidad: el formato compressed-tensors requiere motores de inferencia compatibles; no se garantiza su funcionamiento en todas las herramientas.
-- Fecha de creacion y actualizacion del repositorio: 11 de noviembre de 2026, con version completa prevista para el 20 de noviembre de 2026.
+- La cuantizacion introduce una perdida de calidad medida de 0,2 puntos de media en los seis benchmarks publicados (40,1 frente a 40,3); en HMMT Feb 2026 la caida es mayor (18,2 frente a 19,8).
+- Los resultados de benchmarks se obtuvieron con thinking desactivado; el comportamiento con thinking activado no esta documentado.
+- No hay informacion sobre sesgos, riesgo de alucinacion ni limitaciones idiomaticas especificas de esta cuantizacion.
+- La longitud de contexto no se especifica en la informacion disponible; conviene consultar la model card del modelo base.
+- El despliegue en vLLM requiere desactivar `MacheteLinearKernel` y, en H100/H200 sin CUDA 13, ajustar `LD_LIBRARY_PATH`, lo que anade complejidad operativa.
+- La licencia Apache-2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen/Qwen3-Coder-30B-A3B-Instruct.
+- La reconstruccion de los pesos no es bit-identica al checkpoint publicado; diferencias de KL de -0,4% entre reconstruccion y checkpoint.
+- No hay validacion publicada en GPUs de consumo (RTX 4090, etc.); el soporte se limita a las GPUs indicadas por el autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3-Coder-30B-A3B-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+- Paper: https://arxiv.org/abs/2611.23388
+- Repositorio QDA: https://github.com/humanfia/qda
+- Datos de recetario y calibracion: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs
+- Recetario YAML: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/blob/main/QDA-Qwen3-Coder-30B-A3B-W4A16/qwen3-coder-30b-a3b-w4a16.yaml

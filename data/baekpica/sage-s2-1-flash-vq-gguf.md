@@ -2,94 +2,115 @@
 
 ## Resumen
 
-Sage-S2.1-Flash-VQ-GGUF es una conversión cuantizada del modelo multimodal internlm/Sage-S2.1-Flash, publicada por el usuario Baekpica. Se trata de una cuantización vectorial con método hVQ (Hessian-guided vector quantization) orientada a ejecutar el modelo en un único DGX Spark, empleando el runtime ds4-dfm-rs y su ruta GVQ1 para modelos GLM. El modelo base es un transformer con mezcla de expertos (MoE) de 45 bloques troncales, 288 expertos enrutados por bloque MoE, una torre de visión de 24 bloques, una cabeza de borrador MTP (multi-token prediction) de una capa y una ventana de contexto configurada de 1.048.576 tokens.
+Sage-S2.1-Flash-VQ-GGUF es una conversión cuantizada del modelo multimodal internlm/Sage-S2.1-Flash, publicada por el usuario Baekpica. Se distribuye en formato GGUF y está pensada para su despliegue con el runtime ds4-dfm-rs sobre una única estación NVIDIA DGX Spark, manteniendo el contexto nativo de 1.048.576 tokens. El checkpoint incorpora una torre de visión de 24 bloques, un drafter MTP de una capa y nueve proyectores científicos originales, lo que lo orienta a cargas de trabajo image-text-to-text con prompts largos.
 
-La relevancia de esta ficha radica en el enfoque de compresión: en lugar de aplicar una cuantización uniforme, el autor distribuye el presupuesto de bits de forma desigual entre capas, reservando índices de mayor precisión para los expertos de determinadas capas y aplicando Q4_K a 316 matrices seleccionadas. El objetivo declarado es reducir el error de salida manteniendo el mismo presupuesto de índices, usando activaciones enrutadas del propio checkpoint para calibrar los errores correlacionados de entrada.
+La innovación principal es el esquema de cuantización vectorial denominado hVQ (hessian vector quantization), que combina codebooks E4M3 propios con retroalimentación de error correlacionado estimada a partir de 566.932 tokens de calibración en 828 secuencias. Frente a la cuantización VQ estándar, el autor reporta una reducción del 20,4 % en la KL de siguiente token y un aumento de 4,70 puntos porcentuales en la coincidencia top-1 con el modelo fuente, a costa de un aumento del NLL y de la perplejidad en su corpus de evaluación.
 
-Es importante señalar que, en el momento de los datos disponibles, la conversión está en curso: la model card indica explícitamente "Conversion in progress" y que los pesos aún no se han subido. Por tanto, no hay resultados de evaluación held-out ni validación de hardware publicados, y los datos de rendimiento y memoria son referencias de planificación, no mediciones efectivas.
+El resultado es un directorio GGUF de 56 partes y 88,00 GiB (94.483.348.344 bytes de payload tensorial) que cabe en la memoria unificada de una DGX Spark. Es relevante para equipos que quieran servir un modelo de mezcla de expertos con visión y contexto de un millón de tokens en hardware de un solo nodo, asumiendo las limitaciones de fidelidad que introduce una cuantización tan agresiva (1,625 y 2,625 bits por peso en las capas enrutadas).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con torre de visión y cabeza MTP; 45 bloques troncales, 288 expertos enrutados por bloque MoE, torre de visión de 24 bloques |
-| Parametros totales | no disponible (la model card referencia el release GLM de 94,49 GB / 88,00 GiB) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer con mezcla de expertos (MoE) y torre de visión; 45 bloques troncales, 288 expertos por bloque enrutado, drafter MTP de una capa |
+| Parámetros totales | 634.388.480 (según safetensors del modelo base); el autor no publica el recuento del checkpoint cuantizado |
+| Parámetros activos | no disponible |
 | Longitud de contexto | 1.048.576 tokens (configurado) |
-| Tipos de cuantizacion | GVQ1 (hVQ): índice base de 13 bits + índice residual de 8 bits por cada ocho pesos (2,625 bits/peso) en expertos enrutados de capas 3–17, 22, 27, 41 y 44; índice de 13 bits por cada ocho pesos (1,625 bits/peso) en las otras 23 capas enrutadas; Q4_K en 316 matrices seleccionadas del tronco y salida; tensores dedicados para embeddings de entrada, torre de visión, enrutamiento y estado |
-| Idiomas soportados | no disponible |
+| Tipos de cuantización | GVQ1 con capas R13+8 (2,625 bits por peso) y R13 (1,625 bits por peso); Q4_K en 316 matrices no experto; E4M3 para codebooks |
+| Idiomas soportados | no disponible (la model card menciona streaming en coreano en las pruebas HTTP) |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (56 partes, 88,00 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE) de 45 bloques troncales, con 288 expertos enrutados por bloque MoE, una torre de visión de 24 bloques para entrada image-text-to-text y una cabeza de borrador MTP de una capa orientada a decodificación especulativa. La ventana de contexto configurada es de 1.048.576 tokens. El modelo incluye además nueve proyectores científicos ("scientific projectors") cuyo flujo de trabajo upstream proporciona embeddings de prompt precalculados; este camino de entrada se gestiona por separado de la torre de visión GLM.
+El modelo base es un transformer de mezcla de expertos con 45 bloques troncales y 288 expertos por bloque enrutado, complementado por una torre de visión de 24 bloques, un drafter MTP de una capa (capa 45) para decodificación especulativa y nueve proyectores científicos. La conversión preserva la torre de visión y el drafter en precisión completa, mientras que las capas enrutadas se comprimen con dos perfiles: R13+8 (2,625 bits por peso) en las capas 3-17, 22, 27, 41 y 44, y R13 (1,625 bits por peso) en las otras 23 capas enrutadas. La selección de capas sigue un estudio de sensibilidad previo del autor sobre modelos GLM.
 
-Sobre el entrenamiento del modelo base no se dispone de información en los datos proporcionados (número de tokens, composición del dataset, uso de RLHF/DPO u otras técnicas). La innovación técnica documentada corresponde a la cuantización: hVQ utiliza activaciones enrutadas del propio checkpoint para estimar errores correlacionados de entrada y asigna vectores en orden de canal de entrada, de modo que el error de una elección previa influye en las siguientes. El objetivo es obtener menor error de salida con el mismo presupuesto de índices. La comparación se plantea contra una línea base weight-only del mismo modelo y con los mismos tokens held-out; el autor advierte que las puntuaciones públicas de GLM y DeepSeek pertenecen a checkpoints distintos y no son directamente comparables.
+El proceso de cuantización hVQ entrena codebooks E4M3 específicos para cada checkpoint y utiliza las entradas enrutadas de 566.932 tokens en 828 secuencias para estimar correlaciones de entrada completas. Dos pasadas secuenciales de asignación propagan el error de cada bloque a las columnas de entrada posteriores y reajustan las ganancias de fila almacenadas. En la evaluación sobre 34 secuencias retenidas, hVQ obtiene una KL media de 0,7169 frente a 0,9009 de la VQ estándar, y una coincidencia top-1 del 78,54 % frente al 73,84 %, aunque con peor NLL (2,7428 frente a 2,4214) y peor perplejidad (15,531 frente a 11,262). El autor no documenta la composición del dataset de entrenamiento del modelo original ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en un modelo de gran contexto (1.048.576 tokens configurados).
-- Procesamiento image-text-to-text mediante torre de visión de 24 bloques (pipeline declarado en Hugging Face).
-- Entrada multimodal científica mediante nueve proyectores que aceptan embeddings de prompt precalculados.
-- Decodificación especulativa mediante cabeza MTP de una capa (borrador).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking u otras capacidades especiales: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno con contexto de hasta 1.048.576 tokens.
+- Entrada image-text-to-text: la torre de visión de 24 bloques procesa imágenes y las integra en la conversación.
+- Razonamiento separado: el servidor expone un canal de razonamiento distinto del texto de respuesta.
+- Llamada a herramientas (tool calling) y gestión de la petición de seguimiento asociada.
+- Soporte de los endpoints HTTP de completions, messages y responses en el runtime ds4-dfm-rs.
+- Decodificación especulativa mediante el drafter MTP de una capa, con modos `--mtp-mode on` y `--mtp-draft 3`.
+- Capacidades científicas a través de los nueve proyectores originales, incluido el flujo de trabajo CIF para estructuras de silicio.
+- Streaming de texto, verificado en coreano durante las pruebas del autor.
+- Procesamiento de vídeo proyectado por el cliente, con continuaciones reproducidas respecto al host de conversión.
 
 ## Casos de uso
 
-- Procesamiento de documentos científicos multimodales: el modelo incorpora nueve proyectores científicos y una torre de visión, lo que permite alimentar figuras, tablas y texto junto con embeddings precalculados de prompts del dominio; adecuado para pipelines de extracción y resumen de literatura técnica en un único nodo DGX Spark.
-- Análisis de contexto largo en un solo dispositivo: con 1.048.576 tokens configurados y un presupuesto de memoria planificado de unos 116,2 GiB, el modelo puede abordar corpus extensos (informes completos, bases de código, expedientes) sin fragmentación, siempre que la admisión en contexto nativo se valide en runtime.
-- Inferencia local en hardware de estación de trabajo: la cuantización GVQ1 está diseñada para caber en un DGX Spark, lo que habilita despliegues on-premise de un MoE multimodal sin clúster multi-GPU.
-- Investigación en cuantización: el checkpoint sirve como referencia reproducible para comparar hVQ frente a líneas base weight-only con los mismos tokens held-out y el mismo profesor, útil para estudiar el impacto del presupuesto de bits por capa.
-- Evaluación de decodificación especulativa: la cabeza MTP de una capa permite experimentar con borradores y medir aceleración en el runtime ds4-dfm-rs, comparando con decodificación autoregresiva estándar.
-- Prototipado de asistentes con entrada de imagen y texto: la pipeline image-text-to-text permite construir demos de pregunta-respuesta sobre imágenes con contexto conversacional largo, sujeto a la validación de entrada de medios en el runtime.
+- Análisis de documentos extensos: con 1.048.576 tokens de contexto, el modelo puede ingerir informes completos, expedientes o bases de código y responder preguntas sobre ellos sin fragmentación; el autor verificó la recuperación literal de un identificador situado en el centro de un prompt de 900.068 tokens.
+- Asistencia conversacional multimodal: la torre de visión permite adjuntar capturas, diagramas o figuras y mantener un diálogo multi-turno sobre ellas, aprovechando la reutilización de caché (633 de 641 tokens reutilizados en una prueba de seguimiento).
+- Agentes con tool calling: el modelo emite llamadas a herramientas y gestiona la respuesta de seguimiento, lo que permite integrarlo en flujos de automatización con APIs externas.
+- Procesamiento de literatura científica: los nueve proyectores científicos y el flujo CIF permiten trabajar con representaciones de estructuras cristalinas y materiales dentro de la misma sesión conversacional.
+- Despliegue en hardware de un solo nodo: al caber en una DGX Spark con 88,00 GiB, sirve para prototipado y validación de pipelines MoE multimodales sin clúster multi-GPU.
+- Transcripción y análisis de vídeo proyectado: el modelo reproduce continuaciones sobre vídeo proyectado por el cliente, útil para resúmenes de secuencias visuales.
+- Atención al cliente especializada: el contexto largo y el razonamiento separado permiten mantener historiales extensos y mostrar solo la respuesta final al usuario.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que los resultados held-out y la validación de hardware se añadirán junto con las partes convertidas, y que las cifras de memoria son referencias de planificación.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas de fidelidad de cuantización frente al checkpoint original:
+
+| Métrica | VQ estándar | hVQ | hVQ − VQ (intervalo 95 % pareado) |
+|---|---:|---:|---|
+| KL de siguiente token vs fuente (menor es mejor) | 0,9009 | 0,7169 | -0,1840 [-0,2511, -0,1249] |
+| Coincidencia top-1 con la fuente (mayor es mejor) | 73,84 % | 78,54 % | +4,70 pp [+4,00, +5,36] |
+| NLL de siguiente token (menor es mejor) | 2,4214 | 2,7428 | +0,3214 [+0,1868, +0,4617] |
+| Perplejidad (menor es mejor) | 11,262 | 15,531 | +4,269 [+1,599, +10,232] |
+| Coseno del estado oculto final (mayor es mejor) | 0,8200 | 0,8748 | +0,0547 [+0,0498, +0,0602] |
+| Error L2 relativo de salida enrutada (menor es mejor) | 0,4335 | 0,3581 | -0,0754 |
+
+Desglose por grupo de secuencias retenidas:
+
+| Grupo | Casos | Tokens puntuados | KL VQ | KL hVQ | Top-1 VQ | Top-1 hVQ |
+|---|---:|---:|---:|---:|---:|---:|
+| Texto general | 9 | 6.217 | 1,153 | 0,994 | 69,2 % | 73,3 % |
+| Chat e instrucciones | 8 | 5.542 | 0,491 | 0,347 | 77,7 % | 82,4 % |
+| Matemáticas, ciencia y razonamiento | 7 | 5.258 | 0,649 | 0,543 | 80,5 % | 84,0 % |
+| Código y SWE | 7 | 5.150 | 1,314 | 1,035 | 69,3 % | 75,1 % |
+| Uso de herramientas y prompts de agente | 3 | 2.557 | 0,862 | 0,561 | 72,5 % | 78,6 % |
+
+Rendimiento en DGX Spark (medianas de 2K a 64K de contexto): mejora del 12,0 % en prefill incremental y del 8,6 % en decodificación respecto a la versión anterior; la decodificación mejora en 23 de 32 fronteras. En la prueba de prompt de 900.068 tokens, el tiempo hasta el primer token fue de 873,9 segundos.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el autor referencia un presupuesto de contexto completo de aproximadamente 116,2 GiB para pesos, caché, dos borradores, scratch y reserva, sobre un release de 94,49 GB (88,00 GiB). Son cifras de planificación, no medidas para esta conversión.
-- Hardware objetivo: un único DGX Spark, con el runtime ds4-dfm-rs y la ruta GVQ1 basada en directorios.
-- GPU recomendadas: DGX Spark (objetivo declarado); no se documentan otras GPU en la información disponible.
-- ¿Cabe en GPU de consumo? No disponible; el presupuesto de memoria indicado excede la VRAM típica de GPU de consumo.
-- Opciones de despliegue: ds4-dfm-rs (loader GVQ1). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: no disponibles. La admisión en contexto nativo, la entrada de medios y la decodificación con borrador requieren comprobaciones de runtime separadas.
+- Memoria: el directorio GGUF ocupa 88,00 GiB, por lo que requiere al menos esa cantidad de memoria unificada o VRAM; el autor lo ejecuta en una única DGX Spark.
+- GPU recomendadas: NVIDIA DGX Spark (caso validado por el autor). No se documentan pruebas en A100, H100 ni RTX 4090.
+- GPU de consumo: no hay evidencia de que quepa en tarjetas consumer de 24 GB o 48 GB; el tamaño del checkpoint lo impide en configuraciones de una sola GPU convencional.
+- Despliegue: runtime ds4-dfm-rs con los parámetros `--mtp-mode on --mtp-draft 3 --mem-floor-gb 4` y prefill en trozos de 2.048 filas.
+- Latencia: tiempo hasta el primer token de 873,9 segundos para un prompt de 900.068 tokens sin caché; no se publican cifras de throughput absoluto, solo las mejoras relativas del 12,0 % en prefill y 8,6 % en decodificación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sage-S2.1-Flash-VQ-GGUF (esta ficha) | no disponible (MoE, 45 bloques, 288 expertos/bloque) | 1.048.576 | sin benchmarks publicados | MIT | conversión en curso |
-| internlm/Sage-S2.1-Flash (base) | no disponible | 1.048.576 | no disponible en esta información | MIT | publicado en Hugging Face |
-| Baekpica/GLM-5.3-Flash-VQ-GGUF | no disponible (release de 94,49 GB / 88,00 GiB) | no disponible | no disponible | no disponible en esta información | publicado en Hugging Face |
-| Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF | no disponible | no disponible | no disponible | no disponible en esta información | publicado en Hugging Face |
+| Sage-S2.1-Flash-VQ-GGUF (este) | 634.388.480 (base) | 1.048.576 | GGUF GVQ1, 88,00 GiB | MIT | Hugging Face, runtime ds4-dfm-rs |
+| internlm/Sage-S2.1-Flash (base) | 634.388.480 | 1.048.576 | safetensors (BF16) | MIT | Hugging Face |
+| Baekpica/GLM-5.3-Flash-VQ-GGUF | no disponible | no disponible | GGUF | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparables entre estos checkpoints; el autor advierte que las puntuaciones públicas de GLM y DeepSeek pertenecen a checkpoints distintos.
+No se dispone de datos de benchmarks comparativos con otras alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Conversión incompleta: la model card indica "Conversion in progress" y que los pesos se subirán más adelante; el repositorio puede no contener aún los tensores utilizables.
-- Sin evaluación publicada: no hay resultados held-out ni validación de hardware; las cifras de memoria son estimaciones de planificación.
-- Compatibilidad de runtime limitada: el formato GVQ1 requiere el loader específico de ds4-dfm-rs; no se documenta soporte en ecosistemas estándar como llama.cpp o vLLM.
-- Riesgo de degradación por cuantización: el esquema asigna tan solo 1,625–2,625 bits/peso de índices en los expertos enrutados, con Q4_K en 316 matrices; el impacto real en calidad no está medido.
-- Idiomas soportados no documentados: no es posible garantizar cobertura multilingüe ni evaluar sesgos lingüísticos.
-- Sesgos y alucinación: no hay información sobre sesgos conocidos ni tasas de alucinación del modelo base en los datos proporcionados.
-- Entrada de medios y contexto nativo pendientes de validación: la model card señala que la admisión en contexto nativo, la entrada de medios y la decodificación con borrador requieren comprobaciones de runtime separadas.
-- Licencia: MIT para los pesos fuente según el autor, con atribuciones adicionales del código de cuantización vectorial derivado de YoungAi (aviso en LICENSE-YoungAi); conviene revisar dichas atribuciones antes de uso comercial.
+- La cuantización introduce degradación medible: el NLL y la perplejidad empeoran respecto a la VQ estándar, y el error L2 relativo de salida enrutada se sitúa en 0,3581.
+- El modelo de visión cometió un error de reconocimiento de color en una prueba de 112 píxeles (identificó un cuadrado azul sólido como negro), lo que indica fragilidad en imágenes pequeñas.
+- El servidor aceptó el CIF de silicio proyectado pero generó una continuación distinta a la del host de conversión, por lo que los flujos científicos requieren validación adicional.
+- El tiempo hasta el primer token en prompts de casi un millón de tokens es de 873,9 segundos, lo que limita su uso interactivo en ese régimen.
+- No se documentan los idiomas soportados ni la composición del dataset de entrenamiento del modelo base, lo que dificulta evaluar sesgos lingüísticos.
+- No hay información sobre sesgos conocidos ni sobre tasas de alucinación medidas.
+- La licencia MIT permite uso comercial, pero el autor no ofrece garantías sobre la fidelidad del checkpoint cuantizado en dominios distintos del corpus de calibración.
+- El despliegue está validado únicamente con ds4-dfm-rs sobre DGX Spark; no se ha verificado en vLLM, llama.cpp, Ollama ni TGI.
+- El repositorio tiene 0 likes y 1.120 descargas, con una única revisión publicada el mismo día de creación y actualización, lo que reduce la evidencia de uso en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Baekpica/Sage-S2.1-Flash-VQ-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Baekpica/Sage-S2.1-Flash-VQ-GGUF
 - Modelo base: https://huggingface.co/internlm/Sage-S2.1-Flash
-- Revisión upstream referenciada: https://huggingface.co/internlm/Sage-S2.1-Flash/tree/76f4513db7464485605a002a06a6190de0460574
-- Flujo de proyectores científicos: https://huggingface.co/internlm/Sage-S2.1-Flash#inference-with-scientific-projectors
-- Licencia upstream: https://huggingface.co/internlm/Sage-S2.1-Flash#license
-- Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
-- Método hVQ (referencia): https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF
-- Asignación y estimación de memoria GLM: https://huggingface.co/Baekpica/GLM-5.3-Flash-VQ-GGUF#memory-on-dgx-spark
-- Aviso YoungAi: LICENSE-YoungAi (en el repositorio del modelo)
+- Estudio de sensibilidad GLM citado: https://huggingface.co/Baekpica/GLM-5.3-Flash-VQ-GGUF
+- Registro de calibración: calibration-summary.json (en el repositorio)
+- Receta de conversión: recipe.json (en el repositorio)
+- Resultados de evaluación: evaluation.json (en el repositorio)
+- Guía de compilación y servicio: RUNTIME.md (en el repositorio)
+- Sumas de verificación: SHA256SUMS (en el repositorio)

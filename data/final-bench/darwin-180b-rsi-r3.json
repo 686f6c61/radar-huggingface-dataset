@@ -5,7 +5,7 @@
   "author": "FINAL-Bench",
   "url": "https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3",
   "created_at": "2026-10-01T04:41:07.000Z",
-  "updated_at": "2026-11-13T02:43:47.000Z",
+  "updated_at": "2026-11-20T09:14:13.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -67,8 +67,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 48,
-  "downloads_30d": 1000,
+  "likes": 49,
+  "downloads_30d": 1011,
   "trending_score": 12,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
@@ -88,31 +88,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/francais/final/33788",
-      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
-    },
-    {
-      "title": "final - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
-      "url": "https://dictionnaire.lerobert.com/definition/final",
-      "snippet": "Définition, exemples et prononciation de final : Qui est à la fin, qui sert de fin (contraire initi…"
-    },
-    {
-      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/francais/final/33790",
-      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
-    },
-    {
-      "title": "final — Wiktionnaire, le dictionnaire libre",
-      "url": "https://fr.wiktionary.org/wiki/final",
-      "snippet": "Tout ou partie de cet article a été extrait du Dictionnaire de l’Académie française, huitième édition, 1932-1935 (final), mais l’article a …"
-    },
-    {
-      "title": "« Finals » ou « finaux » ? [pluriel de final] | La langue française",
-      "url": "https://www.lalanguefrancaise.com/orthographe/finals-ou-finaux",
-      "snippet": "Aug 23, 2023 · Règle : le pluriel de l’adjectif « final » au masculin peut s’écrire des deux formes : « finals » ou « finaux ». Ce double …"
-    }
-  ]
+  "sources": []
 }

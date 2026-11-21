@@ -1,116 +1,93 @@
 # Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1
 
 ## Resumen
+Qwen3Loop-0.6B-Tool-Calling-SFT es un modelo de lenguaje de 1.192.098.816 parámetros (etiquetado comercialmente como 0.6B) desarrollado por el usuario Lordnyx, especializado en tool calling y function calling en entornos agénticos. Parte de la arquitectura Qwen3 y se distribuye como un checkpoint "desenrollado" (`unrolled`) de 56 capas lógicas a partir de un origen recurrente de 28 bloques físicos, con el objetivo de ser compatible con `transformers`, `llama.cpp`, vLLM, Ollama y LM Studio sin necesidad de `trust_remote_code`.
 
-Qwen3Loop-0.6B-Tool-Calling-SFT (v1) es un modelo especializado en invocación de herramientas (tool calling) desarrollado por el usuario Lordnyx y publicado en Hugging Face. Se construye sobre la arquitectura recurrente Qwen3Loop, un transformer compacto de 596.049.920 parámetros físicos que, mediante el esquema denominado LoopSplit, ejecuta 56 pasadas de capa lógicas: 7 capas de prefijo (una sola vez), un stack intermedio de 14 capas que se recorre 3 veces y 7 capas de sufijo (una sola vez). El modelo es un ajuste fino completo (no LoRA) sobre un currículo curado de 1.983 muestras estrictas de tool calling en formato Qwen Hermes `<tool_call>`, con diálogos de un solo turno `user → assistant(tool_calls)` y correcciones a mitad de trayectoria.
+El modelo aborda un problema concreto: la fiabilidad en la llamada a herramientas en modelos pequeños. Para ello combina un ajuste supervisado (SFT) con refuerzo L2 en el paso 61, una reparación quirúrgica de atención en la capa 49 (`E001`) que elimina un colapso de "late-pass" del checkpoint RL en bruto, y una optimización de pesos en el `lm_head` mediante bundles Pareto-KKT ortogonales (`E002`–`E013`) que tocan solo 6.144 de los 1.192.098.816 parámetros (0,000515%).
 
-El problema que aborda es concreto: dotar a un modelo de menos de 1.000 millones de parámetros de una tasa de acierto alta en la selección y el formateo de herramientas conocidas, de forma que pueda desplegarse localmente en hardware de consumo (la model card reporta mediciones en una RTX 3060 con cuantización Q8_0) o en el edge. En su batería de evaluación de 121 elementos en inglés alcanza un 70,2% de precisión estricta global, con un 100% en la categoría de herramienta única con argumentos conocidos (L1) y un 85,4% en discriminación entre múltiples herramientas (L2), lo que lo sitúa por delante de Qwen3-0.6B estándar en corrección multiturno (66,7% frente a 41,7%).
-
-Su relevancia actual radica en dos factores. Por un lado, explora una vía arquitectónica poco habitual en modelos pequeños: la recurrencia con profundidad efectiva variable, incluyendo una sonda de halting basada en entropía (`latent_halting_probe.pt`) que permite saltarse pasadas recurrentes en peticiones sencillas. Por otro, publica artefactos listos para motores estándar (GGUF "desenrollado" compatible con llama.cpp, Ollama y LM Studio) junto a los pesos nativos en bucle y el código de modelado, lo que facilita su evaluación sin infraestructura especial. El autor es explícito sobre sus límites: es un invocador fiable de herramientas conocidas en un solo turno, no todavía un agente autónomo.
+Es relevante ahora porque demuestra que intervenciones de peso extremadamente pequeñas y dirigidas pueden elevar sustancialmente el rendimiento agéntico de un modelo sub-1B, con licencia Apache 2.0 y artefactos GGUF listos para desplegar. Su orientación es claramente inglesa y su punto dulce de precisión está en F32/BF16, no en cuantizaciones de 4 bits.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer recurrente Qwen3Loop (LoopSplit): 28 bloques físicos, stack intermedio recorrido 3 veces |
-| Parametros totales | 596.049.920 (físicos); 56 capas lógicas efectivas |
-| Parametros activos | No aplica (no es MoE); 3 pasadas recurrentes sobre el stack medio (14 capas x 3) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0 y F16 en GGUF; safetensors en precisión completa (FP16, 1,11 GB) |
-| Idiomas soportados | Inglés (en); aproximadamente el 99% del entrenamiento es en inglés |
+| Arquitectura | Transformer decoder-only `Qwen3ForCausalLM` (checkpoint desenrollado de 56 capas lógicas desde 28 bloques físicos recurrentes) |
+| Parametros totales | 1.192.098.816 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 40.960 tokens (`max_position_embeddings`) |
+| Tipos de cuantizacion | F32, BF16, F16, Q8_0, Q4_K_M (GGUF); safetensors en precisión completa |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF (variantes desenrollada y nativa en bucle), `latent_halting_probe.pt` |
-
-Detalles de configuración física: `hidden_size: 1024`, `intermediate_size: 3072`, 16 cabezas de atención, 28 bloques. Reparto lógico: capas 0..6 (una vez) + capas 7..20 (3 pasadas = 42) + capas 21..27 (una vez) = 56 capas lógicas.
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
+El modelo es un `Qwen3ForCausalLM` estándar con `model_type: qwen3`, `hidden_size: 1024`, `intermediate_size: 3072`, 16 cabezas de atención y 8 cabezas KV. Su particularidad es el origen recurrente: 28 bloques físicos desenrollados en la pila media (7 de prefijo + 14 × 3 pasadas de bucle + 7 de sufijo) hasta 56 capas lógicas. La pila triple del medio (capas 7..20, 21..34 y 35..48) permanece idéntica en pesos (`max_diff = 0.0`), mientras que la capa 49 (física 21, fuera del bucle) fue reparada por `E001`. El `lm_head` está destado (`tie_word_embeddings: false`) porque los bundles `E002`–`E013` optimizan 43 filas de `lm_head.weight` de forma independiente de `model.embed_tokens.weight`.
 
-La arquitectura es un transformer recurrente de tipo "looped": en lugar de apilar 56 bloques independientes, el modelo mantiene 28 bloques físicos y reutiliza el stack intermedio (capas 7 a 20) tres veces mediante el esquema LoopSplit. Esto da como resultado 56 pasadas de capa lógicas (7 + 14x3 + 7) con el coste de memoria de 28 bloques, un compromiso entre profundidad efectiva y huella de parámetros. La model card de la línea base (`qwen3loop-0.6b-sft-deep-supervision-v1`) indica que el diseño está inspirado en el paradigma de razonamiento profundo de Nanbeige 4.5. El repositorio incluye el código de modelado propio (`engine/qwen3loop_python/modeling_qwen3loop.py`, `configuration_qwen3loop.py`, `modeling_qwen3loop_minimal.py`) y una referencia de parche para el cargador de llama.cpp (`engine/llamacpp_patch/`) que permite ejecutar la variante nativa en bucle; alternativamente se publican GGUF "desenrollados" con arquitectura `qwen3` y 56 bloques, consumibles por motores estándar.
-
-El entrenamiento consistió en un ajuste fino completo (no LoRA) durante 1 época sobre un currículo congelado de 1.983 muestras estrictas de tool calling, en formato `<tool_call>` de Qwen Hermes, con 2xT4 en DDP. El conjunto cubre llamadas de un solo turno `user → assistant(tool_calls)`, correcciones a mitad de trayectoria y llamadas de tipo terminal, memoria y API. No se documenta en la información disponible el uso de RLHF, DPO ni la composición completa del dataset más allá de estas 1.983 muestras. Un elemento técnico destacable es la sonda de halting `latent_halting_probe.pt`, una cabeza MLP ultraligera entrenada sobre estados intermedios de prefill que estima por petición la entropía o complejidad y decide saltarse las pasadas recurrentes cuando no son necesarias, reduciendo a un paso más superficial en peticiones fáciles. El autor advierte que la precisión de enrutado del 91,5% citada corresponde a la sonda de la línea base SFT y no se ha vuelto a medir en este checkpoint, por lo que debe tratarse como una heurística de velocidad a validar en cada carga de trabajo.
+El entrenamiento combina SFT y RL L2 (paso 61) sobre llamadas a herramientas multi-paso, abstención y recuperación a mitad de trayectoria. Sobre esa base se aplican los bundles Pareto-KKT ortogonales en espacio de pesos del `lm_head`, que editan seis filas de salida (19, 1703, 12509, 17453, 23657, 46254) con normas L2 de entre 0,0168 y 0,2710 por fila. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
-
-- Generacion de texto conversacional con plantilla de chat propia (`chat_template.jinja`).
-- Tool calling y function calling en formato Qwen Hermes `<tool_call>`, con argumentos estructurados.
-- Seleccion de herramienta entre un catalogo: 100% en herramienta unica conocida (L1) y 85,4% en discriminacion entre multiples herramientas (L2) segun la model card.
-- Correccion multiturno: dado un error observado, el modelo reintenta y amplia la consulta (8/12 en la bateria de correccion, el unico de los tres evaluados que reintenta de forma identica ante un timeout).
-- Razonamiento con Python como herramienta: capacidad parcial, con un 33,3% (10/30) en la bateria L3 y fallo documentado del disparador en aproximadamente un tercio de los prompts cuantitativos.
-- Abstención ante consultas que no requieren herramienta: capacidad poco fiable, 50% (10/20) en la bateria L4.
-- Profundidad adaptativa mediante la sonda de halting basada en entropia (skip de pasadas recurrentes).
-- Idiomas: únicamente inglés de forma fiable; la propia model card reporta una degradación de aproximadamente 15 puntos porcentuales al repetir la batería en portugués.
-- No se documentan capacidades de visión, audio ni modo de razonamiento explícito del tipo "thinking mode" más allá de los preámbulos `<think>` observados como sesgo estilístico.
+- Generación de texto conversacional y razonamiento orientado a tareas.
+- Tool calling y function calling multi-paso, con validación específica en escenarios agénticos.
+- Abstención explícita cuando la herramienta o los argumentos no son adecuados.
+- Recuperación a mitad de trayectoria (mid-trajectory recovery) tras errores de llamada.
+- Soporte de agentes con planificación multi-turno, aunque con profundidad limitada por el tamaño.
+- Compatibilidad nativa con `llama.cpp`, vLLM, Ollama y LM Studio sin parches de runtime.
+- Capacidad multilingüe limitada: entrenamiento y validación mayoritariamente en inglés.
 
 ## Casos de uso
-
-- Enrutado de herramientas en asistentes de atención al cliente en inglés: el modelo decide qué función invocar y genera los argumentos en formato Hermes. Es adecuado por su 100% en herramienta única conocida, siempre que el catálogo de herramientas sea fijo y esté dentro de las 15 herramientas del entrenamiento.
-- Automatización de operaciones sobre sistemas y ficheros: llamadas a herramientas de terminal, gestión de ficheros o consultas a APIs internas en pipelines de automatización, aprovechando el sesgo de entrenamiento hacia Python con heredoc basado en ficheros.
-- Ejecución de código en sandbox: integración como paso previo a un ejecutor aislado que valide y corra el código generado; conviene complementarlo con un disparador externo, dado que el modelo omite la llamada a `execute_python` en aproximadamente un tercio de los prompts cuantitativos.
-- Inferencia local en portátiles y equipos sin GPU dedicada: con el GGUF Q8_0 de 1,03 GB o el F16 de 1,94 GB puede ejecutarse en llama.cpp, Ollama o LM Studio con huella de memoria mínima, lo que lo hace apto para prototipos offline y demos.
-- Componente de un agente con controlador externo: dado que la abstención no es fiable (50%), el modelo encaja como "invocador" dentro de un orquestador que aplique un gate de coste o de efectos secundarios antes de ejecutar cada llamada.
-- Extracción de parámetros estructurados hacia APIs de terceros: generación de payloads de llamada a servicios REST a partir de lenguaje natural, con validación posterior del esquema, para tareas de integración de sistemas.
-- Recuperación de memoria y búsquedas en bases de conocimiento: el modelo emite llamadas de tipo memoria o búsqueda, con la salvedad documentada de que tiende a generar búsquedas de memoria con consulta vacía como sesgo heredado del entrenamiento.
-- Investigación sobre transformers recurrentes: replicar y medir el efecto de las pasadas recurrentes y de la sonda de halting sobre la precisión, usando los artefactos de modelado y el parche de llama.cpp incluidos en el repositorio.
+- Automatización de agentes de soporte: el modelo puede encadenar llamadas a APIs de consulta de pedidos, estado de cuenta y devoluciones dentro de una ventana de 40.960 tokens, con abstención cuando falta un dato obligatorio.
+- Orquestación de herramientas en asistentes de desarrollo: invocación de funciones de búsqueda de código, ejecución de tests y consulta de documentación en pipelines locales, gracias a su soporte nativo de function calling.
+- Enrutamiento de intenciones en backends de bajo coste: clasificación de peticiones y selección de la herramienta adecuada en un servicio con presupuesto de VRAM reducido (BF16 en 2,39 GB).
+- Prototipado de agentes en estaciones de trabajo con GPU de consumo: ejecutable en una RTX 3060 con `llama-server --jinja -ngl 999 -c 16384 --flash-attn on`, según la evaluación del autor.
+- Validación de esquemas de herramientas en CI: uso del modelo para comprobar que descripciones y parámetros de funciones producen llamadas correctas antes de desplegar un agente mayor.
+- Recuperación de trayectorias fallidas: integrado como "recovery step" en un agente mayor, el modelo puede reformular una llamada rechazada o corregir argumentos mal extraídos.
+- Asistente conversacional local con herramientas ligeras (calendario, clima, conversión de unidades) en entornos sin conectividad, usando GGUF Q8_0 (1,73 GB).
 
 ## Benchmarks y rendimiento
+Evaluación del autor con `tool-eval-bench` (seed 42, 69 escenarios, contexto de 16k) en una RTX 3060 vía `llama-server`:
 
-Batería de retención de 121 elementos en inglés (50 herramientas, 8 dominios), evaluada en Q8_0 sobre RTX 3060 con `temperature=0.0`:
+| Artefacto / precisión | Tamano | Puntuacion | Puntos | Pass / Partial / Fail | Avisos de seguridad |
+|---|---|---|---|---|---|
+| Step 61 baseline (`E000`, F32) | — | 24% | 33/136 | — | 3 |
+| `E013` F32 | 4,77 GB | 66% | 90/136 | 35 / 20 / 14 | 0 |
+| `E013` BF16 | 2,39 GB | 65% | 88/136 | 34 / 20 / 15 | 0 |
+| `E013` F16 | 2,39 GB | 64% | 87/136 | 34 / 19 / 16 | 0 |
+| `E013` Q8_0 (con `output.weight` en F32) | 1,73 GB | 59% | 80/136 | 32 / 16 / 21 | 0 |
+| `E013` Q4_K_M | 0,75 GB | 48% | 66/138 | 23 / 20 / 26 | 2 |
 
-| Particion | Puntuacion | Lectura del autor |
-|---|---|---|
-| Herramienta unica precisa (L1) | 30/30 (100%) | Herramienta conocida con argumentos: resuelto |
-| Discriminacion multi-herramienta (L2) | 35/41 (85,4%) | Solido; falla en senuelos financieros proximos |
-| Razonamiento en Python (L3) | 10/30 (33,3%) | Disparador debil |
-| Abstencion en negativos (L4) | 10/20 (50,0%) | Poco fiable |
-| Precision estricta global | 85/121 (70,2%) | Adherencia de formato 83,5%; seleccion de herramienta 81,8% |
-
-Batería de corrección multiturno de 12 elementos (observación de error fija, mismos prompts, misma GPU):
-
-| Modelo | Puntuacion |
-|---|---|
-| Este checkpoint (tool-SFT) | 8/12 (66,7%) |
-| Qwen3-0.6B stock, Q8_0 | 5/12 (41,7%) |
-| Base SFT previo al ajuste de herramientas (misma linea) | 3/12 (25,0%) |
-
-Según la model card, el ajuste de tool calling recuperó la capacidad de uso de herramientas que el SFT base había prácticamente suprimido, con una mejora de 42 puntos porcentuales respecto a su propia base. No se publican resultados de MMLU, HumanEval, GSM8K ni de otras baterías generalistas en la información disponible.
+Desglose del F32 canónico: `deployability` 73, `responsiveness` 89, sin regresiones frente a `E011` (80/136) ni `E012` (82/136). Puntos por categoría: A=6/6, B=4/6, C=3/8, D=6/6, E=2/6, F=4/6, G=4/6, H=7/8, I=10/20, J=5/6, K=17/26, L=6/8, M=3/6, N=4/6, O=9/12. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
-
-- Huella de pesos: 0,64 GB (Q8_0 nativo en bucle), 1,03 GB (Q8_0 desenrollado), 1,12 GB (F16 nativo), 1,94 GB (F16 desenrollado), 1,11 GB (safetensors en precisión completa). El repositorio completo ocupa 6,2 GB.
-- VRAM estimada para inferencia: inferior a 2 GB solo para pesos en las variantes desenrolladas; hay que sumar la caché KV, que depende de la longitud de contexto efectiva (no documentada). En la practica cabe con holgura en cualquier GPU consumer con 4 GB o mas.
-- GPU validadas por el autor: 2xT4 para el entrenamiento (DDP) y RTX 3060 para la evaluacion en Q8_0.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, 4060, 4090) es suficiente; tambien A100/H100 si se despliega en lote dentro de un servicio, aunque el modelo esta claramente sobredimensionado para ese hardware.
-- Despliegue en CPU: viable con llama.cpp y con Ollama/LM Studio usando los GGUF desenrollados, gracias a su tamano inferior a 2 GB.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio para los GGUF desenrollados (arquitectura `qwen3`, 56 bloques); motor propio de PyTorch (`engine/qwen3loop_python/`) para los pesos safetensors; el parche `engine/llamacpp_patch/` es necesario para la variante nativa en bucle. El repositorio esta marcado como `endpoints_compatible`. No se documenta soporte especifico de vLLM o TGI.
-- Latencia y throughput: no disponibles. La unica afirmacion cuantitativa es cualitativa: la sonda de halting busca mayor throughput en peticiones faciles al saltarse pasadas recurrentes.
+- VRAM estimada: unos 4,8 GB en F32, 2,4 GB en BF16/F16, 1,73 GB en Q8_0 y 0,75 GB en Q4_K_M, más el overhead de contexto KV (8 cabezas KV, contexto de hasta 40.960 tokens).
+- GPU recomendadas: RTX 3060 (validada por el autor), RTX 4090, A100 o H100 para despliegues concurrentes; cualquier GPU con 2,5 GB libres puede ejecutar BF16.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070 y superiores; en GPUs de 4 GB conviene Q8_0.
+- Opciones de despliegue: `llama.cpp` (`llama-server` con `--jinja`, `-ngl 999`, `--flash-attn on`), Ollama, LM Studio, vLLM y `transformers`.
+- Latencia y throughput: no disponibles de forma numérica en la información proporcionada; la evaluación se realizó con contexto de 16k en una RTX 3060.
+- Advertencia de despliegue: al usar `llama.cpp -hf` sin tag explícito suele seleccionarse `:Q4_K_M`; pasar siempre `:BF16`, `:F32` o `:Q8_0`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Datos disponibles |
-|---|---|---|---|---|
-| Qwen3Loop-0.6B-Tool-Calling-SFT v1 (este) | 596 M fisicos, 56 capas logicas | No disponible | Apache 2.0 | 8/12 en correccion multiturno; 70,2% estricto global en bateria propia de 121 elementos |
-| Qwen3Loop-0.6B-SFT deep supervision v1 (linea base) | 596 M fisicos | No disponible | No disponible en la informacion proporcionada | 3/12 en correccion multiturno segun este modelo |
-| Qwen3-0.6B stock (Q8_0) | ~0,6 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | 5/12 en correccion multiturno segun este modelo |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3Loop-0.6B-Tool-Calling-SFT | 1.192.098.816 | 40.960 | Tool calling agéntico especializado | Apache 2.0 | HF (safetensors + GGUF) |
+| Qwen3 base (0.6B) | no disponible en la informacion | no disponible en la informacion | Modelo generalista | Apache 2.0 | HF |
+| Alternativas sub-1B de tool calling | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Las tres entradas de comparacion disponibles provienen de la propia model card, que solo publica la puntuacion de la bateria de correccion multiturno para los tres modelos. No se dispone de comparaciones con alternativas como Qwen3-0.6B ajustados con LoRA para tool calling, ya que no hay datos de benchmark en la informacion proporcionada.
+No se dispone en la información proporcionada de datos de benchmarks comparativos con otras alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
-
-- Solo ingles: aproximadamente el 99% del entrenamiento esta en ingles; los prompts en otros idiomas degradan mediblemente la seleccion y el disparo de herramientas (la misma bateria en portugues puntuo unos 15 puntos porcentuales menos en una ejecucion parcial).
-- Abstencion no fiable: invoca herramientas cuando deberia permanecer en silencio en aproximadamente el 50% de los casos negativos (los 5 elementos de sonda de abstencion fallaron). Es obligatorio aplicar un gate externo si las llamadas tienen coste o efectos secundarios.
-- Disparador de codigo ausente: en aproximadamente un tercio de los prompts cuantitativos directos responde en prosa en lugar de llamar a `execute_python`; el modelo se entreno con Python en heredoc basado en ficheros, no con fragmentos sueltos de `print()`.
-- Herramientas no vistas: las herramientas financieras (`get_stock_quote` frente a `get_company_financials`) y cualquier herramienta fuera del catalogo de 15 del entrenamiento provocan selecciones erroneas o ausencia de llamada. La invocacion dentro de distribucion es del 100%; la transferencia no.
-- Validado solo en un turno: el comportamiento multiturno se midio sobre 12 elementos; los bucles agenticos largos no estan probados.
-- Techo de capacidad de 0,6B: los fallos con flags de Unix poco comunes, senuelos de grano fino y nombres de entidades inventados (por ejemplo, variantes de cmdlets alucinadas) reflejan limites de capacidad, no solo de datos.
-- Sesgos estilisticos: preambulos `<think>` verbosos y busquedas de memoria con consulta vacia reproducen los priors del entrenamiento; son inofensivos pero ensucian los registros.
-- Riesgo de alucinacion: documentado de forma explicita en forma de nombres de comandos o variantes de herramientas inventadas cuando la tarea queda fuera de la distribucion de entrenamiento.
-- Restricciones de licencia: licencia Apache 2.0, que permite uso comercial sin restricciones adicionales conocidas; conviene verificar la licencia del modelo base de la linea (Qwen3Loop-0.6B SFT) antes de un despliegue en produccion.
-- Ambito de uso declarado por el autor: invocador fiable de herramientas conocidas en un solo turno, no un especialista autonomo en herramientas. Una hipotetica V2 abordaria abstencion, disparo de codigo y discriminacion de senuelos financieros.
+- Sensibilidad a la cuantización: los bundles `E002`–`E013` dependen de ediciones finas en float32 del `lm_head`; Q4_K_M desplaza la geometría de estados ocultos y dispara avisos de seguridad (`TC-48`, `TC-49`). Usar F32 o BF16 siempre que la memoria lo permita.
+- Modos de fallo residuales en 0.6B: en F32 con seed 42, 14 de 69 escenarios fallan y 20 reciben crédito parcial, principalmente por extracción compleja de argumentos, profundidad de planificación multi-turno y esquemas de herramientas desconocidos.
+- Idioma: entrenamiento y validación abrumadoramente en inglés; las instrucciones en otros idiomas degradan la fiabilidad del tool calling.
+- Riesgo de alucinación y de llamadas prematuras: se recomienda gating externo a nivel de aplicación antes de acciones irreversibles (escrituras destructivas, pagos, correos salientes).
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento en producción.
+- Tamaño del repositorio: 29,2 GB, lo que incluye múltiples precisiones y artefactos; conviene descargar solo el fichero necesario.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1
-- Linea base de la familia (SFT deep supervision v1): https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1
-- Arbol de ficheros del modelo base: https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1/tree/main
-- Ficha de registro en free2aitools: https://free2aitools.com/model/lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1
-- Tutorial de referencia sobre ajuste fino de Qwen3-0.6B para tool calling con LoRA (contexto general, no especifico de este modelo): https://lumienai.com/news/fine-tune-tool-calling-llm-qwen3-lora-xyz-aquila-sft
+- Hugging Face: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1
+- GGUF BF16: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1/blob/main/qwen3loop-0.6b-tool-calling-sft-v1-BF16.gguf
+- GGUF F32: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1/blob/main/qwen3loop-0.6b-tool-calling-sft-v1-F32.gguf
+- GGUF F16: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1/blob/main/qwen3loop-0.6b-tool-calling-sft-v1-F16.gguf
+- GGUF Q8_0: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1/blob/main/qwen3loop-0.6b-tool-calling-sft-v1-Q8_0.gguf
+- GGUF Q4_K_M: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1/blob/main/qwen3loop-0.6b-tool-calling-sft-v1-Q4_K_M.gguf
+- Convención de nombres GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md#gguf-naming-convention

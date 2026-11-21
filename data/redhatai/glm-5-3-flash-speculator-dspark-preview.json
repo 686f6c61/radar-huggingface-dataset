@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 7,
-  "downloads_30d": 727,
+  "downloads_30d": 770,
   "trending_score": 0,
   "parameters": 2539312001,
   "parameters_human": "2.54B",
@@ -47,29 +47,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "RedHatAI/GLM-5.3-Flash · Hugging Face",
-      "url": "https://huggingface.co/RedHatAI/GLM-5.3-Flash",
-      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI",
+      "snippet": "August 2026 Collection of third-party generative AI models validated by Red Hat AI for use across the Red Hat AI Product Portfolio."
     },
     {
       "title": "RedHatAI (Red Hat AI) - Hugging Face",
-      "url": "https://huggingface.co/RedHatAI",
-      "snippet": "OpenSource and AI August 2026 Collection of third-party generative AI models validated by Red Hat AI for use across the Red Hat AI Product Portfolio."
-    },
-    {
-      "title": "glm-5-3-flash Model by Z-ai | NVIDIA NIM",
-      "url": "https://build.nvidia.com/z-ai/glm-5-3-flash/modelcard",
-      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series. With 320B total parameters and 18B active per token, it outperforms GLM-5.2 across benchmarks and real-world workloads at roughly one-tenth the price, approaching Claude Opus 4.8 on coding and agentic benchmarks."
-    },
-    {
-      "title": "GLM 5.3 Flash API - Demo - DeepInfra",
-      "url": "https://deepinfra.com/zai-org/GLM-5.3-Flash",
-      "snippet": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead."
-    },
-    {
-      "title": "GLM-5.3-Flash NVFP4 + DFlash2 on 2x NVIDIA DGX Spark - GitHub",
-      "url": "https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-DFlash2-2x-DGX-Spark",
-      "snippet": "Default checkpoint: RedHatAI/GLM-5.3-Flash-NVFP4. Ungated, same Glm5NextForConditionalGeneration arch, drop-in — no flag changes (--moe-backend marlin, DFlash2 k=7, fp8 KV all identical), just repoint the model path."
+      "url": "https://huggingface.co/RedHatAI/models",
+      "snippet": "RedHatAI/Mistral-Medium-3.5-128B ... RedHatAI/diffusiongemma-26B-A4B-it-NVFP4 ... RedHatAI/diffusiongemma-26B-A4B-it-FP8 …"
     }
   ]
 }

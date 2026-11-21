@@ -1,88 +1,104 @@
 # UnimeType/Transliteration-4B-Safetensors
 
-Basándome en la información proporcionada, aquí tienes la ficha técnica del modelo **Qwen3-235B-A22B**.
-
 ## Resumen
 
-Qwen3-235B-A22B es un modelo de lenguaje de gran escala desarrollado por el equipo Qwen de Alibaba. Se trata de una arquitectura Mixture of Experts (MoE) con 235.000 millones de parámetros totales, de los cuales solo 22.000 millones se activan por token. Esto permite un rendimiento comparable a modelos densos de mayor tamaño, pero con un coste de inferencia mucho menor. El modelo soporta una ventana de contexto de 131.072 tokens (128K) y está optimizado para tareas multilingües, incluyendo español, inglés, chino, árabe, entre otros.
+Transliteration-4B es un modelo de 4.205.751.296 parámetros desarrollado por UnimeType, un ajuste fino del modelo base Qwen/Qwen3.5-4B orientado a una tarea muy concreta: convertir texto escrito con caracteres latinos (pinyin, romaji, hindi romanizado, hinglish y arabizi) a los sistemas de escritura nativos correspondientes (chino, japonés, hindi y árabe). No es un modelo de traducción ni de razonamiento general, sino una herramienta de transliteración que debe preservar intactos los elementos que no forman parte de la conversión: palabras inglesas claras, URLs, código, números, puntuación y saltos de línea.
 
-Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo hace especialmente atractivo para empresas que necesitan desplegar modelos de gran capacidad en producción. Además, incorpora un modo de pensamiento (thinking mode) que activa razonamiento extendido en problemas complejos, y soporta tool calling y flujos de agentes. Es relevante ahora porque ofrece un equilibrio entre capacidad y eficiencia, reduciendo los requisitos de hardware frente a modelos densos equivalentes.
+El modelo se publica en varios formatos (safetensors, GGUF Q8_0 para llama.cpp y una versión MLX de 6 bits para Apple Silicon) y está pensado para ejecutarse en local, incluso en un portátil. La model card advierte explícitamente de que no hay una puntuación de precisión completa para esta release safetensors y de que existen errores conocidos en entradas cortas ambiguas en inglés, en la elección de dialecto y ortografía del árabe, y en la preservación de puntuación y emojis en japonés.
 
-## Especificaciones tecnicas
+Es relevante ahora porque cubre un nicho poco atendido por los modelos generalistas (la transliteración de teclado) y porque su tamaño de 4B permite despliegue en hardware de consumo. El autor indica además que existe una generación más reciente, Transliteration 2.0 (v2.1), con mejores métricas declaradas.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE |
-| Parametros totales | 235B |
-| Parametros activos | 22B |
-| Longitud de contexto | 131.072 tokens (128K) |
-| Tipos de cuantizacion | FP8, BF16, GGUF |
-| Idiomas soportados | en, zh, ja, ko, ar, es, fr, de, it, pt, ru, etc. |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5, tipo `qwen3_5_text`) |
+| Parámetros totales | 4.205.751.296 |
+| Parámetros activos | no disponible (no consta que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | safetensors en punto flotante (BF16/FP32), GGUF Q8_0, MLX 6 bits |
+| Idiomas soportados | en, zh, ja, hi, ar |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors (402 tensores BF16 y 24 FP32), GGUF, MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza una arquitectura Transformer con capas de Mixture of Experts (MoE). En lugar de activar todos los parámetros para cada token, se seleccionan 22B de los 235B totales, lo que reduce drásticamente el coste computacional por token. Según la información proporcionada, el entrenamiento se realizó con un corpus de 35T tokens y se aplicaron técnicas de alineación como RLHF y DPO. Además, el modelo soporta un modo de pensamiento (thinking mode) que permite razonamiento extendido antes de generar la respuesta final, lo que mejora el rendimiento en tareas de lógica y matemáticas.
+El modelo es un transformer decoder-only derivado de Qwen3.5-4B, cargado mediante la clase `Qwen3_5ForCausalLM` de Transformers o mediante el loader `qwen3_5` de MLX-LM. El ajuste fino se realizó con LoRA sobre una base Qwen3.5-4B cuantizada a 4 bits, seguida de una fusión en punto flotante. La model card subraya que el almacenamiento en punto flotante no recupera la precisión previa a la cuantización del modelo base original.
+
+El checkpoint exportado conserva 426 tensores (402 en BF16 y 24 en FP32) y pasó una comprobación exacta de ida y vuelta contra la fuente ajustada retenida. No se registró la revisión exacta del snapshot base original; el archivo PROVENANCE.json identifica la fuente retenida por SHA-256. El modelo es solo de texto y no incluye pesos de visión ni auxiliares MTP. El dataset de entrenamiento no se ha publicado: el repositorio contiene pesos, documentación, procedencia, sumas de verificación y licencia, pero no datos, scripts de generación de datos, código de entrenamiento ni registros de entrenamiento. No se detalla el número de tokens de entrenamiento ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto de alta calidad en múltiples idiomas, incluido español.
-- Razonamiento avanzado y resolución de problemas matemáticos.
-- Generación de código en varios lenguajes de programación.
-- Soporte de tool calling / function calling para integrarse con APIs y herramientas externas.
-- Soporte de agentes y razonamiento multi-paso.
-- Modo de pensamiento (thinking mode) que activa razonamiento extendido en problemas complejos.
-- Capacidades multilingües amplias, con más de 10 idiomas.
+- Transliteración de pinyin a chino simplificado.
+- Transliteración de romaji a japonés (hiragana).
+- Transliteración de hindi romanizado e hinglish a devanagari.
+- Transliteración de arabizi a escritura árabe.
+- Preservación (no garantizada) de palabras inglesas claras, URLs, código, números, puntuación y saltos de línea durante la conversión.
+- Conversión orientada a tarea única: la model card indica que el modelo es para "Convert", no para "Polish" ni "Explain".
+- Formato conversacional con plantilla de chat (`apply_chat_template`) y soporte de `enable_thinking=False`.
+- Multilingüe en el sentido de que maneja pares latino→escritura nativa para en, zh, ja, hi y ar.
+- No dispone de tool calling, function calling, capacidades de agente, visión ni audio según la información disponible.
 
 ## Casos de uso
 
-- **Atención al cliente automatizada**: gracias a su ventana de contexto de 128K y soporte de tool calling, puede gestionar conversaciones multi-turno complejas, consultar bases de datos y resolver incidencias sin intervención humana.
-- **Generación de código en producción**: con soporte de function calling, puede integrarse en pipelines de CI/CD para autocompletar, revisar y refactorizar código, reduciendo el tiempo de desarrollo.
-- **Análisis de documentos extensos**: su contexto de 128K permite procesar contratos, informes o artículos científicos completos, extrayendo información clave y generando resúmenes en varios idiomas.
-- **Asistentes virtuales multilingües**: al soportar español, inglés, chino y otros idiomas, puede desplegarse como asistente en plataformas globales, manteniendo coherencia cultural y lingüística.
-- **Agentes autónomos para tareas de investigación**: gracias a su capacidad de razonamiento multi-paso y tool calling, puede planificar y ejecutar tareas complejas, como búsquedas web, análisis de datos y generación de informes.
-- **Traducción y localización de contenido**: su capacidad multilingüe y su gran contexto permiten traducir y adaptar contenido manteniendo el tono y el estilo, ideal para equipos de marketing y documentación técnica.
+- Teclados y métodos de entrada en móvil y escritorio: el modelo puede integrarse en la app de teclado de UnimeType para convertir lo que el usuario escribe en caracteres latinos a la escritura nativa en tiempo de escritura, con un modelo de 4B que cabe en hardware moderado.
+- Conversión por lotes de mensajes de chat: procesar historiales de conversación donde los usuarios escriben en pinyin, romaji, hinglish o arabizi y generar versiones en escritura nativa preservando enlaces y código.
+- Preprocesado de datos para NLP multilingüe: normalizar corpus de redes sociales escritos en transliteración latina antes de alimentar pipelines de análisis de sentimiento o clasificación en chino, japonés, hindi o árabe.
+- Herramientas web de conversión sin instalación: el autor ofrece conversores online (pinyin a chino, romaji a hiragana, inglés a hindi, translit a cirílico) que pueden apoyarse en este modelo para la conversión en servidor.
+- Asistencia a hablantes de la diáspora: usuarios que escriben su lengua materna con caracteres latinos pueden obtener la forma nativa para publicar en redes o enviar mensajes, manteniendo el inglés y los enlaces intactos.
+- Automatización de soporte multilingüe: en un sistema de atención al cliente, convertir mensajes de entrada romanizados a la escritura nativa antes de pasarlos a un modelo o a un agente humano que trabaje en esa escritura.
 
 ## Benchmarks y rendimiento
 
-Presentamos los resultados de benchmarks según la información proporcionada:
-
-| Benchmark | Qwen3-235B-A22B | Qwen3-30B-A3B | DeepSeek-V3 |
-|---|---|---|---|
-| MMLU | 86.1 | 79.2 | 88.5 |
-| HumanEval | 92.7 | 85.3 | 90.2 |
-| GSM8K | 96.3 | 91.1 | 95.0 |
-
-Nota: Estos datos provienen de la información disponible y pueden variar según la evaluación.
+No se han publicado resultados de benchmarks en la información disponible para esta release safetensors. La model card indica explícitamente que no hay una puntuación de precisión de suite completa para esta versión y que las puntuaciones de las versiones MLX 6 bits y GGUF Q8_0 no establecen su precisión. Como referencia del autor (no de este checkpoint), la generación Transliteration 2.0 (v2.1) declara un 88,4 % de precisión estricta en 4 idiomas y un 93,2 % de precisión de caracteres en frases largas multiclausura, con una mejora de +32,8 % sobre v1.0. No se ofrecen cifras de latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 235GB en FP8, 470GB en BF16.
-- GPU recomendadas: 4x A100 80GB o 4x H100 80GB para FP8.
-- No es viable en GPUs de consumo (RTX 4090, etc.) para la carga completa en FP8/BF16; se necesitaría cuantización agresiva (GGUF 4-bit) y aun así es muy grande.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial; el autor no hace ninguna afirmación de memoria mínima ni de velocidad. Por el tamaño (4,2B parámetros), en BF16 se necesitan aproximadamente 8,4 GB solo para pesos, más overhead de contexto y activaciones.
+- GPU recomendadas: no disponible. El autor no especifica GPU NVIDIA o AMD recomendadas.
+- Consumer GPU: no verificado oficialmente. El modelo se cargó y ejecutó en un Apple M5 Pro con 48 GB de memoria usando MLX-LM 0.31.3 / MLX 0.32.2.
+- Opciones de despliegue: MLX-LM (Apple Silicon), Transformers 5.16.1 con PyTorch 2.11.0 (carga verificada, sin benchmark de inferencia), llama.cpp mediante el GGUF Q8_0. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles. La inferencia en NVIDIA CUDA, AMD ROCm, iOS y Android no está verificada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | MMLU | HumanEval | Licencia |
-|---|---|---|---|---|---|---|
-| Qwen3-235B-A22B | 235B | 22B | 128K | 86.1 | 92.7 | Apache 2.0 |
-| Qwen3-30B-A3B | 30B | 3B | no disponible | 79.2 | 85.3 | no disponible |
-| DeepSeek-V3 | no disponible | no disponible | no disponible | 88.5 | 90.2 | no disponible |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| UnimeType Transliteration-4B | 4,2B | no disponible | Transliteración latino→nativo | Apache 2.0 | Safetensors, GGUF, MLX |
+| UnimeType Transliteration-2.0-4B | no disponible | no disponible | Transliteración (v2.1, más reciente) | no disponible en la información | Safetensors |
+| UnimeType Transliteration-2.0-0.8B | no disponible | no disponible | Transliteración ultraligera | no disponible en la información | no disponible |
+| Qwen/Qwen3.5-4B (base) | 4B (clase) | no disponible | Generación de texto general | Apache 2.0 | Hugging Face |
+
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación: como todo modelo generativo, puede producir contenido falso o inventado, especialmente en temas de nicho.
-- Sesgos: el modelo puede reflejar sesgos presentes en los datos de entrenamiento, especialmente en cuestiones culturales o de género.
-- Limitaciones de contexto: aunque soporta 128K, la calidad puede degradarse en tramos muy largos, especialmente en la recuperación de información al inicio del contexto.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe incluir la atribución y el aviso de licencia en distribuciones del modelo.
-- Requisitos de hardware: no es desplegable en GPUs de consumo sin cuantización agresiva, lo que limita su uso en entornos edge.
+- No hay puntuación de precisión completa para esta release safetensors; las métricas de otras versiones no son extrapolables.
+- Errores conocidos en entradas cortas ambiguas en inglés.
+- Errores en la elección de dialecto y ortografía del árabe.
+- Problemas de preservación de puntuación y emojis en japonés.
+- En una prueba de producción con contexto árabe, el modelo devolvió un salto de línea extra y falló la comprobación de formato de salida; el GGUF BF16 reprodujo el mismo fallo.
+- La preservación de enlaces, código, números, puntuación y saltos de línea no está garantizada; hay que revisar la salida antes de aceptarla.
+- El ajuste fino partió de una base cuantizada a 4 bits; el almacenamiento en punto flotante no restaura la precisión original del modelo base.
+- El dataset de entrenamiento no es público, lo que limita la auditoría de sesgos y composición.
+- Aunque la licencia es Apache 2.0, conviene verificar los términos del modelo base Qwen3.5-4B incluidos en LICENSE antes de uso comercial.
+- Modelo solo de texto: no soporta visión, audio ni tool calling.
+- La inferencia en CUDA, ROCm, iOS y Android no está verificada por el autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Qwen/Qwen3-235B-A22B
-- Blog oficial de Qwen: https://qwenlm.github.io/blog/qwen3/
-- Repositorio de GitHub: https://github.com/QwenLM/Qwen3
-- Paper: no disponible
+- Modelo en Hugging Face: https://huggingface.co/UnimeType/Transliteration-4B-Safetensors
+- Versión GGUF: https://huggingface.co/UnimeType/Transliteration-4B-GGUF/tree/main
+- Versión MLX: https://huggingface.co/UnimeType/Transliteration-4B/tree/main
+- Generación más reciente 2.0-4B: https://huggingface.co/UnimeType/Transliteration-2.0-4B-Safetensors
+- Versión ultraligera 2.0-0.8B: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B
+- Playground interactivo: https://huggingface.co/spaces/UnimeType/Transliteration-Playground
+- Descarga de la app de teclado: https://unimetype.com/download
+- Conversor pinyin a chino: https://unimetype.com/tools/pinyin-to-chinese
+- Conversor romaji a hiragana: https://unimetype.com/tools/romaji-to-hiragana
+- Conversor inglés a hindi: https://unimetype.com/tools/english-to-hindi
+- Conversor translit a cirílico: https://unimetype.com/tools/translit-to-cyrillic
+- Guía de MLX: https://unimetype.com/docs/ai-service-models-and-credits
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
+- Web del autor: https://unimetype.com/

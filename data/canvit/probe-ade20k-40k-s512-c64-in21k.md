@@ -2,103 +2,86 @@
 
 ## Resumen
 
-CanViT ADE20K 64 × 64 es una sonda lineal (linear probe) de segmentación semántica entrenada sobre las características congeladas del canvas de 64 × 64 del modelo base CanViT-B/16. Lo desarrolla el equipo de CanViT (Yohaï-Eliel Berreby, Sabrina Du, Audrey Durand y B. Suresh Krishna) y se publica como artefacto complementario del artículo «CanViT: Toward Active-Vision Foundation Models» (NeurIPS 2026). No es un modelo generativo ni un modelo de lenguaje: es un cabezal de evaluación que demuestra hasta qué punto las representaciones de un backbone de visión activa son útiles para una tarea densa como la segmentación de 150 clases de ADE20K.
+`canvit/probe-ade20k-40k-s512-c64-in21k` es una sonda lineal (linear probe) de segmentación semántica sobre ADE20K, construida sobre las características congeladas del modelo base CanViT-B/16, un vision transformer de visión activa desarrollado por el equipo CanViT (Yohaï-Eliel Berreby, Sabrina Du, Audrey Durand y B. Suresh Krishna) y presentado en NeurIPS 2026. No es un modelo generativo ni un modelo de lenguaje: es un artefacto de evaluación que demuestra la calidad de las representaciones aprendidas por CanViT sobre un lienzo (canvas) de 64 × 64.
 
-CanViT, el Canvas Vision Transformer, es un modelo de visión activa: percibe una escena mediante una secuencia de «vistazos» (glimpses) de 128 px y va memorizando la información en un canvas de alcance completo. Este repositorio concreto contiene únicamente los pesos de la sonda, de muy reducido tamaño (159.894 parámetros según los safetensors), y depende del checkpoint base para funcionar. Su relevancia actual es metodológica: sirve como protocolo reproducible para medir la calidad de las características del backbone sin reentrenar el modelo completo.
+El modelo resuelve un problema concreto de investigación: medir si las características de un foundation model de visión activa, que observa la escena mediante una secuencia de glimpses y la reconstruye en un canvas global, son lo bastante ricas como para soportar una tarea densa de segmentación con solo una cabeza lineal entrenada encima. La sonda se entrena sobre el checkpoint preentrenado `canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16`, destilado de DINOv3, y se libera con licencia MIT.
 
-El interés práctico es acotado pero claro: permite reproducir el protocolo de sondeo del artículo, comparar entre distintos tamaños de canvas (existen variantes con canvas de 8, 12, 32 y 64) y validar si el canvas completo de 64 × 64 conserva suficiente detalle espacial para segmentación densa. La licencia MIT facilita su uso y reutilización incluso en contextos comerciales.
+Es relevante ahora porque CanViT propone un paradigma alternativo al procesamiento de imagen completa: visión activa con memoria espacial explícita. Esta sonda permite a desarrolladores e investigadores reproducir la evaluación del paper y comparar representaciones sin reentrenar el backbone. El repositorio es muy ligero (0,0 GB) y las descargas registradas son 821.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Sonda lineal (LayerNorm, dropout, BatchNorm y convolucion 1 × 1) sobre caracteristicas congeladas de un Vision Transformer (CanViT-B/16) |
-| Parametros totales | 159.894 (aprox. 0,16 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (no es un modelo de lenguaje; opera sobre un canvas de 64 × 64 y escenas de 512 px) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (modelo de vision) |
-| Licencia | MIT |
+| Arquitectura | Vision transformer (CanViT-B/16) con sonda lineal: LayerNorm, dropout, BatchNorm y convolución 1 × 1 |
+| Parámetros totales | 159.894 (pesos del repositorio según safetensors; el backbone CanViT-B/16 se carga aparte desde el repo base) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica; canvas de 64 × 64 posiciones y escenas de entrada de 512 px |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | No disponible (modelo de visión, sin procesamiento de lenguaje) |
+| Licencia | MIT (el backbone se destila de DINOv3, sujeto a la DINOv3 License) |
 | Formato de pesos | safetensors |
-| Modelo base | canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02 |
-| Dataset de entrenamiento | scene_parse_150 (ADE20K) |
-| Tarea (pipeline) | image-segmentation (150 clases) |
-| Libreria | canvit-pytorch (>= 0.2) |
-| Descargas / likes | 17 descargas / 0 likes |
 
 ## Arquitectura y entrenamiento
 
-La sonda se compone de una LayerNorm, dropout (0,1), BatchNorm y una convolucion 1 × 1 que proyecta las características del canvas de 64 × 64 a 150 clases de ADE20K. Se entrena con las características del backbone totalmente congeladas, siguiendo el protocolo de sondeo del artículo. El backbone subyacente es CanViT-B/16, un transformer de visión activa que procesa la escena a traves de vistazos de 128 px sobre escenas de 512 px y acumula la informacion en un canvas global.
+El modelo base CanViT (Canvas Vision Transformer) es un transformer de visión con un mecanismo de visión activa: recibe una secuencia de glimpses de 128 px muestreados en viewpoints concretos y acumula la información en un canvas de 64 × 64 que actúa como memoria espacial de la escena. La sonda añadida es una cabeza de segmentación semántica compuesta por LayerNorm, dropout (0,1), BatchNorm y una convolución 1 × 1 que proyecta las características congeladas del canvas a las 150 clases de ADE20K.
 
-El entrenamiento de la sonda consta de 40.000 pasos con batch size 16, optimizador AdamW con learning rate maxima de 0,0003 y weight decay de 0,001, programacion de 1.500 pasos de warmup lineal seguida de decaimiento coseno, precision bfloat16 (autocast) y aumento de datos con recortes aleatorios de escala 0,5 a 2 y volteos horizontales. Los rollouts de entrenamiento usan 10 vistazos de 128 px con puntos de vista R-IID sobre escenas de 512 px. La salida del modelo es un tensor de logits de forma [1, 150, 64, 64].
-
-La innovacion subyacente es la propia formulacion de vision activa de CanViT: en lugar de procesar la imagen completa de una vez, el modelo selecciona secuencialmente regiones (vistazos) y mantiene una representacion global en el canvas, lo que reduce el coste computacional del backbone y plantea un paradigma distinto al de los ViT densos convencionales.
+El entrenamiento de la sonda se realizó con 40.000 pasos, batch size 16, optimizador AdamW con learning rate máximo de 0,0003 y weight decay de 0,001, con 1.500 pasos de warmup lineal seguidos de decaimiento coseno, en precisión bfloat16. Cada rollout consta de 10 glimpses de 128 px con viewpoints R-IID sobre escenas de 512 px. Se aplicaron las transformaciones de segmentación de DINOv3: scale jitter de factor 0,5 a 2, recortes aleatorios de 512 px con rechazo por ratio de clase, volteos horizontales con probabilidad 0,5 y distorsión fotométrica. Los pesos liberados corresponden al paso 35.500, seleccionado por mIoU en validación de ADE20K.
 
 ## Capacidades
 
-- Segmentacion semantica densa en las 150 clases de ADE20K a partir del canvas de 64 × 64.
-- Evaluacion por sondeo (linear probing) de la calidad de las caracteristicas congeladas de un backbone de vision activa.
-- Procesamiento de escenas de 512 px mediante secuencias de vistazos de 128 px (vision activa).
-- Salida de mapas de etiquetas por pixel (argmax sobre las 150 clases) con nombres de clase expuestos via CLASS_NAMES.
-- Compatibilidad con la integracion canvit_pytorch.from_pretrained_with_probe para cargar conjuntamente backbone y sonda.
-- No soporta tool calling ni function calling (no es un modelo de lenguaje).
-- No soporta agentes ni razonamiento multi-paso en el sentido de los LLM.
-- No tiene capacidades multilingues (modelo puramente visual).
-- No dispone de modo «thinking», entrada de audio ni generacion de texto.
+- Segmentación semántica densa sobre 150 clases de ADE20K a resolución de canvas 64 × 64.
+- Extracción de características congeladas de CanViT-B/16 sobre un canvas de memoria espacial.
+- Procesamiento de escenas mediante secuencias de glimpses con viewpoints arbitrarios (visión activa).
+- Evaluación reproducible del protocolo de probing del paper de CanViT.
+- Integración con la librería `canvit-pytorch` (>= 0.2) mediante `CanViTForSemanticSegmentation.from_pretrained_with_probe`.
+- No soporta generación de texto, tool calling, agentes ni capacidades multilingües.
 
 ## Casos de uso
 
-- Reproduccion del protocolo de sondeo del articulo: cargar el backbone CanViT-B/16 congelado y esta sonda para verificar los resultados de segmentacion publicados en «CanViT: Toward Active-Vision Foundation Models» de forma independiente.
-- Comparacion de tamanos de canvas: dado que existen sondas equivalentes para canvas de 8, 12, 32 y 64, este checkpoint permite medir el impacto del tamano del canvas en la calidad de la segmentacion densa con un protocolo identico.
-- Evaluacion de backbones de vision activa: usar la sonda como referencia para decidir si las caracteristicas de un backbone de vision activa son competitivas frente a alternativas densas antes de invertir en fine-tuning completo.
-- Prototipado de segmentacion de escenas interiores y exteriores: etiquetar imagenes de escenas ADE20K (habitaciones, paisajes urbanos, interiores) para generar mascaras semanticas de 150 clases.
-- Investigacion en eficiencia computacional: analizar si un paradigma de vistazos con canvas reducido puede sustituir a un ViT denso en tareas densas a un coste menor.
-- Generacion de pseudo-etiquetas para preentrenamiento: emplear las mascaras de la sonda como etiquetas aproximadas en pipelines de investigacion que alimenten modelos de segmentacion mayores.
-- Demostraciones docentes: ilustrar el concepto de «sonda lineal» y de evaluacion de representaciones congeladas en cursos de vision por computador, dado el reducido tamano (0,16 M de parametros) y la licencia permisiva.
+- Evaluación de representaciones de visión activa: investigadores que quieran medir la calidad de las características de CanViT sobre una tarea densa sin reentrenar el backbone, usando directamente esta sonda con el protocolo del paper.
+- Reproducción de resultados de NeurIPS 2026: permite replicar la métrica de segmentación ADE20K del paper CanViT cargando el checkpoint base y esta sonda con `from_pretrained_with_probe`.
+- Baseline para nuevas sondas: sirve como referencia para comparar cabezas de segmentación alternativas entrenadas sobre el mismo canvas de 64 × 64 y el mismo conjunto de rollouts.
+- Prototipado de pipelines de segmentación con memoria espacial: útil para experimentar con la API de estado (`init_state`, `Viewpoint.full_scene`, `sample_at_viewpoint`) antes de invertir en un fine-tuning completo.
+- Investigación en eficiencia de muestreo: al fijar 10 glimpses de 128 px por escena de 512 px, permite estudiar el compromiso entre número de observaciones y calidad de segmentación.
+- Docencia y divulgación: ejemplo compacto de linear probing sobre un foundation model de visión, con receta de entrenamiento y transformaciones documentadas de forma explícita.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la information disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica que el checkpoint liberado se seleccionó por mIoU en validación de ADE20K en el paso 35.500, pero no se proporciona el valor numérico de dicha métrica ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- La sonda en si ocupa menos de 1 MB (0,16 M de parametros), por lo que su almacenamiento y carga son triviales.
-- El coste real de inferencia lo determina el backbone CanViT-B/16 a 512 px con secuencias de vistazos, no la sonda.
-- VRAM estimada: no publicada. Al tratarse de un ViT-Base con escenas de 512 px, la inferencia en bfloat16 deberia caber holgadamente en GPUs de consumo (por ejemplo, RTX 3060 12 GB o superiores), aunque no se han documentado cifras exactas.
-- GPU recomendadas: no especificadas por el autor; cualquier GPU moderna con soporte bfloat16 es suficiente. Tambien es viable en CPU para pruebas puntuales dado el reducido tamano del backbone.
-- Opciones de despliegue: la libreria oficial canvit-pytorch (>= 0.2); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- VRAM estimada: no disponible en la información proporcionada; el repositorio de la sonda ocupa 0,0 GB y los 159.894 parámetros son despreciables, pero el backbone CanViT-B/16 se carga aparte y domina el consumo.
+- GPU recomendadas: no disponible; el ejemplo oficial usa tensores de entrada de 512 px y bfloat16 autocast, lo que sugiere GPU con soporte de bfloat16 (Ampere o posterior).
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; un backbone B/16 en bfloat16 es plausible en GPUs de consumo con suficiente VRAM, pero no hay cifras publicadas.
+- Opciones de despliegue: `canvit-pytorch` >= 0.2 (instalación con `uv add "canvit-pytorch>=0.2"`); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Categoria | Parametros del cabezal | Licencia | Rendimiento |
-|---|---|---|---|---|
-| canvit/probe-ade20k-40k-s512-c64-in21k | Sonda lineal sobre vistazos (canvas 64 × 64) | 159.894 | MIT | no disponible |
-| Sondas CanViT para canvas 8, 12 y 32 | Sondas lineales equivalentes del mismo equipo | no disponible | MIT | no disponible |
-| Sondas lineales sobre DINOv2 / MAE para segmentacion | Sondas lineales sobre ViT denso | no disponible | variable | no disponible |
-| SegFormer-B0 (segmentacion supervisada) | Modelo de segmentacion entrenado de extremo a extremo | no disponible | Apache-2.0 u otras | no disponible |
-
-Nota: no se dispone de cifras de mIoU publicadas en la informacion proporcionada para ninguna de las alternativas, por lo que la comparacion cuantitativa queda pendiente de los resultados del articulo CanViT.
+No disponible. La información proporcionada no incluye otros probes de segmentación sobre canvases de visión activa ni resultados numéricos que permitan una comparación rigurosa con alternativas como sondas lineales sobre DINOv3 o sobre ViT-B/16 estándar.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: requiere el checkpoint base canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02 para funcionar.
-- Al estar entrenada sobre caracteristicas congeladas, la calidad de la segmentacion esta acotada por el backbone y no mejora con mas entrenamiento de la sonda.
-- Solo cubre las 150 clases de ADE20K: cualquier objeto fuera de ese vocabulario se etiquetara de forma incorrecta o ambigua.
-- El canvas de 64 × 64 impone una resolucion espacial limitada; objetos pequenos pueden perder detalle.
-- No es un modelo de lenguaje, por lo que no procede hablar de alucinacion textual, tool calling, agentes ni capacidades multilingues; el riesgo equivalente son errores de clasificacion por pixel.
-- Sesgos potenciales heredados del dataset scene_parse_150 (ADE20K): sobrerrepresentacion de escenas interiores y exteriores de determinadas regiones, con menor cobertura de otras culturas y entornos.
-- Licencia MIT: permite uso comercial, pero conviene verificar las condiciones del modelo base y del dataset subyacente por separado.
-- En produccion, tratarlo como componente de investigacion o de evaluacion, no como un segmentador listo para tareas criticas sin validacion adicional.
-- La revision canvit-pytorch-0.1 requiere pasar revision="canvit-pytorch-0.1" al cargar; con canvit-pytorch >= 0.2 no es necesario.
+- No es un modelo de propósito general: solo produce segmentación semántica ADE20K sobre el canvas de 64 × 64 del backbone CanViT-B/16 concreto; no funciona de forma autónoma.
+- Dependencia estricta del checkpoint base `canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02`; las características congeladas deben coincidir con las usadas en el entrenamiento.
+- Resolución de salida limitada: 64 × 64 posiciones para escenas de 512 px, lo que restringe la precisión en objetos pequeños.
+- Entrenado con 10 glimpses de 128 px y viewpoints R-IID; el rendimiento puede degradarse con otras políticas de muestreo o números de glimpses.
+- Riesgo de sesgos heredados de ADE20K y de los datos de preentrenamiento de DINOv3, no cuantificado en la información disponible.
+- Riesgo de alucinación de clases en regiones ambiguas, inherente a la segmentación densa; no se documentan métricas de calibración.
+- Licencia MIT para la sonda, pero el backbone se destila de DINOv3 y queda sujeto a la DINOv3 License; conviene revisar sus términos antes de uso comercial.
+- Cambio de API entre versiones: con `canvit-pytorch` < 0.2 es necesario pasar `revision="canvit-pytorch-0.1"` a `from_pretrained`.
+- Sin soporte de lenguaje, tool calling ni agentes; no debe evaluarse con criterios de modelos LLM.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k
+- Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
-- Articulo (arXiv 2603.22570): https://arxiv.org/abs/2603.22570
-- Codigo: https://github.com/m2b3/CanViT
-- Pagina del proyecto: https://m2b3.github.io/CanViT/
-- Coleccion de checkpoints CanViT: https://huggingface.co/canvit
-- Sonda relacionada (canvas 8): https://huggingface.co/canvit/probe-ade20k-40k-s512-c8-in21k
-- Sonda relacionada (canvas 32): https://huggingface.co/canvit/probe-ade20k-40k-s512-c32-in21k
+- Paper (NeurIPS 2026): https://openreview.net/forum?id=cnV9GA4pKU
+- arXiv: https://arxiv.org/abs/2603.22570
+- Código: https://github.com/m2b3/CanViT
+- Página del proyecto: https://m2b3.github.io/CanViT/
+- Todos los checkpoints: https://huggingface.co/canvit
+- Dataset: https://huggingface.co/datasets/zhoubolei/scene_parse_150
+- DINOv3: https://github.com/facebookresearch/dinov3
+- Licencia DINOv3: https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md

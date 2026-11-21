@@ -2,102 +2,106 @@
 
 ## Resumen
 
-gaggle-nanochat-pretrained-climbmix-20260924 es un modelo de lenguaje base de 3.286.633.962 parametros, decoder-only, desarrollado por la organizacion castorini y entrenado desde cero con el framework nanochat de Andrej Karpathy. Se trata de un modelo causal puro, sin post-entrenamiento: no ha pasado por instruction tuning ni por RLHF, por lo que su comportamiento es el de continuar texto en lugar de seguir instrucciones. Emplea una arquitectura transformer de profundidad 34 con anchura 2.176, 17 cabezas de atencion de dimension 128 y una ventana de contexto de 2.048 tokens.
+gaggle-nanochat-pretrained-climbmix-20260924 es un modelo de lenguaje base de 3.290 millones de parámetros desarrollado por el grupo castorini (asociado a la Universidad de Waterloo y conocido por proyectos de recuperación de información como Anserini y Pyserini). Se trata de un transformer decoder-only entrenado desde cero con el framework nanochat de Andrej Karpathy sobre una pasada completa del dataset ClimbMix (287.000 millones de tokens). Forma parte del trabajo descrito en el paper "Project Greenhouse: Progress Toward Fully Open and Sovereign Agentic Search" (arXiv:2610.11922), orientado a construir infraestructura de búsqueda agéntica completamente abierta.
 
-El modelo se entrena con una sola pasada sobre ClimbMix (287.000 millones de tokens) y esta pensado como pieza de investigacion reproducible en la seccion de pre-entrenamiento del articulo de sus autores. Su interes practico esta en que las mismas pesos se cargan de tres formas distintas (transformers con `trust_remote_code=True`, vLLM mediante un plugin y el codigo original de nanochat), lo que lo convierte en un banco de pruebas util para estudiar arquitecturas poco convencionales dentro del ecosistema estandar.
+El modelo emplea la arquitectura nanochat de profundidad 34, con 34 capas, anchura de 2.176, 17 cabezas de atención de dimensión 128 y una ventana de contexto de 2.048 tokens. Incorpora innovaciones como embeddings de valor en capas alternas, normalización QK, RMSNorm sin parámetros, MLP con ReLU al cuadrado y soft-capping de logits. Es un modelo estrictamente base: no ha recibido ajuste por instrucciones ni RLHF, por lo que su función es continuar texto, no seguir órdenes. La versión conversacional derivada se publica por separado como gaggle-nanochat-ift-climbmix-20261031.
 
-Los resultados publicados son modestos en terminos absolutos (CORE 0.458, MMLU 0.493, MMLU-Pro 0.178), coherentes con un presupuesto de computo de aproximadamente 1.600 horas de H100 y un contexto corto de 2.048 tokens. Su relevancia no reside en el rendimiento bruto, sino en ser un artefacto de investigacion abierto (licencia MIT) que documenta una arquitectura nanochat con value embeddings en capas alternas y atencion con sliding window en tres de cada cuatro capas.
+Su relevancia actual radica en que ofrece un punto de partida totalmente reproducible y abierto (licencia MIT, código y datos públicos) para investigación en preentrenamiento eficiente y para construir sistemas agénticos soberanos, con pesos cargables en transformers, vLLM, llama.cpp y Ollama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only nanochat depth-34 (34 capas, anchura 2.176, 17 cabezas de atencion de dimension 128) |
-| Parametros totales | 3.286.633.962 (3,29 B) |
-| Parametros activos | No aplica (no es MoE). Computo por token equivalente a un modelo denso de ~2 B, porque los value embeddings son tablas de busqueda |
+| Arquitectura | nanochat depth-34, transformer decoder-only |
+| Parametros totales | 3.286.633.962 (3,29B) |
+| Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | No disponible (el modelo se publica en safetensors; en la informacion no se documentan cuantizaciones GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | GGUF (disponible en el repo); otras cuantizaciones no especificadas |
+| Idiomas soportados | ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (requiere codigo personalizado: `configuration_gaggle.py` y `modeling_gaggle.py`) |
-
-Desglose de parametros por componente: 1,93 B en los bloques del transformer, 1,21 B en las tablas de value embeddings y 0,14 B en los embeddings de entrada y salida (no atados).
+| Formato de pesos | safetensors, GGUF |
+| Capas | 34 |
+| Anchura del modelo | 2.176 |
+| Cabezas de atencion | 17 cabezas de dimension 128 |
+| Tokenizer | BPE a nivel de byte, 32.768 entradas |
+| Ventana deslizante | 512 tokens en 3 de cada 4 capas |
+| Desglose de parametros | 1,93B en bloques transformer; 1,21B en tablas de value embeddings; 0,14B en embeddings de entrada y salida |
+| Framework de entrenamiento | karpathy/nanochat (commit 92d63d4) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de 34 capas con una anchura de 2.176 y 17 cabezas de atencion de dimension 128. Incorpora rotary position embeddings (RoPE), normalizacion QK, RMSNorm sin parametros, MLP con activacion squared-ReLU, embeddings de entrada y salida no atados y logit soft-capping. Dos elementos la distinguen: en primer lugar, cada dos capas incorpora un value embedding adicional, y esas tablas de busqueda suman 1,21 B de parametros (por eso el coste por token es el de un modelo denso de ~2 B pese a tener 3,29 B); en segundo lugar, tres de cada cuatro capas aplican una sliding window de 512 tokens en lugar de atencion completa sobre los 2.048 tokens de contexto. El tokenizador es un byte-level BPE de 32.768 entradas, entrenado sobre los primeros 2.000 millones de caracteres del split de entrenamiento. El codigo de referencia es `karpathy/nanochat` en el commit `92d63d4`.
+El modelo sigue sin modificaciones la arquitectura nanochat de profundidad 34: un transformer decoder-only con embeddings posicionales rotatorios (RoPE), normalización QK, RMSNorm sin parámetros, MLP con activación ReLU al cuadrado, embeddings de entrada y salida no compartidos y soft-capping de logits. Una particularidad destacable es la presencia de un value embedding en capas alternas: 1,21B de los 3,29B de parámetros corresponden a tablas de búsqueda, de modo que el cómputo por token equivale al de un modelo denso de unos 2B de parámetros. Además, 3 de cada 4 capas utilizan una ventana deslizante de 512 tokens, lo que reduce el coste de atención sobre el contexto de 2.048 tokens.
 
-El entrenamiento usa ClimbMix (`karpathy/climbmix-400b-shuffle`) con una unica pasada de 287.000 millones de tokens; el ultimo de los 6.543 shards se reserva para validacion. Los documentos se empaquetan en secuencias de 2.048 tokens con el BOS-aligned best-fit packing de nanochat. El optimizador es el de nanochat sin cambios: Muon para las matrices de pesos de los bloques del transformer y AdamW para embeddings y parametros escalares, con un calentamiento breve, tasa constante y decaimiento lineal posterior. La unica modificacion respecto a nanochat es el tamano de batch, que crece de 262.144 a 2.097.152 tokens, manteniendo los valores pico de learning rate sin reescalarlos con la raiz cuadrada del batch. El computo total fue de un nodo de ocho GPUs NVIDIA H100 con multiplicaciones matriciales en FP8, aproximadamente 1.600 horas de H100. El checkpoint publicado corresponde al paso 227.158, tras 283.000 millones de tokens, elegido por ser el de mayor CORE medido durante el entrenamiento (el checkpoint final, a 287.000 millones de tokens, obtuvo 0,004 menos).
+El entrenamiento se realizó sobre ClimbMix (karpathy/climbmix-400b-shuffle), con una pasada de 287.000 millones de tokens empaquetados en secuencias de 2.048 tokens mediante el empaquetado best-fit alineado a BOS de nanochat; el último de los 6.543 shards se reservó para validación. Se usó el optimizador Muon para las matrices de peso de los bloques y AdamW para embeddings y parámetros escalares, con un schedule de warmup breve, tasa constante y decaimiento lineal. La única modificación respecto a nanochat fue el tamaño de batch, que crece de 262.144 a 2.097.152 tokens manteniendo las tasas de aprendizaje máximas originales (en lugar de escalarlas con la raíz cuadrada del batch). El cómputo total fue de aproximadamente 1.600 horas de H100 en un nodo de ocho NVIDIA H100 con multiplicaciones en FP8. El checkpoint publicado corresponde al paso 227.158 (283B tokens), el de mayor CORE durante el entrenamiento; el checkpoint final (287B tokens) obtuvo 0,004 menos.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles, en modo continuacion de texto (modelo base, no ajustado a instrucciones).
-- Razonamiento en contexto: la evaluacion CORE mide 22 tareas de in-context learning con 500 ejemplos cada una.
-- Conocimiento enciclopedico limitado evaluado mediante MMLU y MMLU-Pro en modo 5-shot, puntuando por verosimilitud de la letra de respuesta.
-- Calculo de log-verosimilitud de continuaciones, util para puntuacion, ranking y evaluacion de hipotesis.
-- Carga y ejecucion en tres runtimes distintos: transformers, vLLM (mediante plugin) y el codigo original de nanochat.
-- No dispone de soporte documentado de tool calling ni de function calling.
-- No dispone de soporte documentado de agentes ni de razonamiento multi-paso entrenado.
-- No dispone de modo "thinking", vision, audio ni otras modalidades.
-- Capacidad multilingue: solo ingles declarado; no hay datos de rendimiento en otros idiomas.
+- Generación de texto autoregresiva y continuación de secuencias en inglés.
+- Evaluación de verosimilitud de continuaciones (log-probabilidad de secuencias), útil para scoring y ranking.
+- Aprendizaje en contexto (in-context learning) en tareas de formato few-shot, según los 22 benchmarks de CORE.
+- Respuesta a preguntas de conocimiento general y académico en formato de opción múltiple (MMLU, MMLU-Pro) mediante scoring por log-verosimilitud.
+- Soporte de tool calling / function calling: no disponible (modelo base sin post-entrenamiento).
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma nativa; requiere la versión IFT.
+- Capacidades multilingües: solo inglés.
+- Capacidades especiales: no dispone de modo thinking, visión ni audio.
+- Compatibilidad de despliegue con transformers (trust_remote_code), vLLM (plugin), llama.cpp y Ollama (GGUF, mediante parche de arquitectura).
 
 ## Casos de uso
 
-- Investigacion en pre-entrenamiento reproducible: el modelo permite reproducir y auditar una arquitectura nanochat concreta con licencia MIT, comparando el efecto del presupuesto de tokens sobre el CORE frente al checkpoint oficial de nanochat d34.
-- Puntuacion y ranking de textos: usando el calculo de log-verosimilitud de continuaciones, se puede emplear como scorer para seleccion de candidatos, filtrado de datos sinteticos o reranking, aprovechando que el modelo devuelve logits en fp32.
-- Generacion de datos sinteticos para otros modelos: al ser un modelo base, resulta adecuado para producir continuaciones de documentos y aumentar corpus de entrenamiento en ingles, siempre con revision posterior por su tendencia a repetir.
-- Pruebas de infraestructura de inferencia: sirve como caso de validacion de soporte de arquitecturas personalizadas en pipelines con transformers y vLLM, ya que las mismas pesos se cargan en ambos runtimes.
-- Estudio de arquitecturas eficientes en atencion: las capas con sliding window de 512 tokens y los value embeddings en capas alternas permiten medir empiricamente el equilibrio entre coste por token y calidad.
-- Experimentos academicos de comparacion de tokenizadores y empaquetado: el uso de BPE de 32.768 entradas y del BOS-aligned best-fit packing facilita analisis de eficiencia de tokenizacion y de utilizacion de secuencias.
-- Base para fine-tuning downstream: al ser un modelo base de 3,29 B con licencia permisiva, puede servir de punto de partida para ajuste supervisado en tareas especificas en ingles, aunque el contexto de 2.048 tokens limita tareas de documento largo.
+- Investigación en preentrenamiento: reproducir el pipeline completo de nanochat con datos y código abiertos para estudiar el efecto del tamaño de batch, el schedule de learning rate o el empaquetado de secuencias en modelos de escala ~3B.
+- Modelo base para ajuste fino supervisado: punto de partida para SFT o DPO en dominios concretos (legal, biomédico, atención al cliente) partiendo de un checkpoint con pérdida de validación de 0,596 bits por byte.
+- Scoring y reranking de documentos: calcular la log-verosimilitud de continuaciones permite puntuar candidatos en pipelines de recuperación de información, terreno natural del grupo castorini (Anserini, Pyserini).
+- Generación de datos sintéticos: al ser un modelo base, puede emplearse para producir continuaciones de texto a gran escala que sirvan como corpus de entrenamiento o aumentación de datos.
+- Búsqueda agéntica soberana: integrado en la pila de Project Greenhouse como componente generativo local, sin dependencia de APIs propietarias, gracias a su licencia MIT y a su despliegue en vLLM u Ollama.
+- Experimentos de eficiencia de inferencia: su mezcla de atención con ventana deslizante y value embeddings en capas alternas lo convierte en un banco de pruebas para medir throughput y latencia con kernels de atención distintos (Flash Attention frente a scaled_dot_product_attention).
+- Evaluación comparativa de arquitecturas: referencia abierta para contrastar recetas de preentrenamiento frente a nanochat d34 con los mismos benchmarks (CORE, MMLU, MMLU-Pro).
 
 ## Benchmarks y rendimiento
 
 | Modelo | Tokens de entrenamiento | CORE | MMLU (5-shot) | MMLU-Pro (5-shot) |
 |---|---:|---:|---:|---:|
-| This model | 283 B | 0,458 | 0,493 | 0,178 |
-| nanochat d34 | 89 B | 0,338 | 0,257 | 0,115 |
+| gaggle-nanochat-pretrained-climbmix-20260924 | 283B | 0,458 | 0,493 | 0,178 |
+| nanochat d34 | 89B | 0,338 | 0,257 | 0,115 |
 
-CORE es la precision media centrada de nanochat sobre 22 tareas de in-context learning con 500 ejemplos cada una; MMLU y MMLU-Pro se puntuan con el LM Evaluation Harness por verosimilitud de la letra de respuesta. La perdida de validacion en el shard reservado de ClimbMix es de 0,596 bits per byte. Todas las cifras proceden de la evaluacion de los autores, salvo el CORE de nanochat d34, que es la cifra publicada por su autor. No se han publicado en la informacion disponible resultados de HumanEval, GSM8K ni otros benchmarks estandar, por lo que no se incluyen.
+Pérdida de validación en el shard reservado de ClimbMix: 0,596 bits por byte. CORE es la precisión centrada media sobre 22 tareas de aprendizaje en contexto con 500 ejemplos cada una; MMLU y MMLU-Pro se puntúan por log-verosimilitud de la letra de respuesta con LM Evaluation Harness. Todos los números proceden de la evaluación de los autores, salvo el CORE de nanochat d34, que es el valor publicado.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 6,6 GB solo para pesos, mas activaciones y cache KV para 2.048 tokens; en la practica, unos 8-10 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 3,3-4 GB de pesos; en 4 bits, alrededor de 1,8-2,5 GB. No obstante, no hay cuantizaciones publicadas ni documentadas para este checkpoint.
-- GPU recomendadas: el entrenamiento se realizo en ocho NVIDIA H100 con FP8; para inferencia se documenta una ejecucion de ejemplo en una NVIDIA H200. Cualquier GPU con al menos 10-12 GB de VRAM es suficiente en bf16.
-- Compatibilidad con GPU de consumo: si, cabe en tarjetas como RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4080 y RTX 4090, asi como en GPUs de 16 GB o mas, siempre que se use bf16 y se limite la longitud de secuencia a 2.048 tokens.
-- Opciones de despliegue: transformers (`>=4.57` con `torch>=2.5` y `trust_remote_code=True`), vLLM mediante un plugin de la propia organizacion, y el codigo original de nanochat cargando los ficheros de checkpoint originales. No hay evidencia de soporte de llama.cpp, Ollama, TGI ni formatos GGUF.
-- Latencia y throughput: no disponible. La model card no publica medidas de latencia ni de tokens por segundo; el unico dato de rendimiento es el coste de entrenamiento de unas 1.600 horas de H100.
-- Nota de precision: nanochat ejecuta la atencion con Flash Attention 3 en GPUs Hopper cuando el kernel esta disponible, mientras que este port usa siempre `scaled_dot_product_attention` de PyTorch. Con el mismo kernel los logits son identicos bit a bit; entre kernels, el redondeo en bf16 altera ligeramente las log-probabilidades.
+- VRAM estimada en bfloat16: aproximadamente 6,6 GB solo para pesos (3,29B × 2 bytes), más overhead de activaciones y caché KV; en la práctica, unos 8-10 GB.
+- VRAM estimada en cuantización GGUF de 8 bits: en torno a 3,5-4 GB; en 4 bits, aproximadamente 2-2,5 GB (estimaciones a partir del tamaño de parámetros, no publicadas por el autor).
+- GPU recomendadas: el autor cita una H200 para el ejemplo de generación; para entrenamiento se usaron ocho H100 con FP8. Para inferencia, cualquier GPU con al menos 8 GB en bf16 (RTX 3060 de 12 GB, RTX 4070, RTX 4090) es suficiente.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más en bf16 y en GPUs de 4-6 GB con cuantización GGUF.
+- Opciones de despliegue: transformers (requiere trust_remote_code=True y transformers>=4.57, torch>=2.5), vLLM mediante plugin, llama.cpp y Ollama mediante parche de arquitectura, y el código original de nanochat con los checkpoints sin modificar.
+- Latencia y throughput: no disponibles de forma publicada; el autor solo indica que el ejemplo de generación se ejecutó en una H200.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tokens de entrenamiento | CORE | MMLU | MMLU-Pro | Licencia | Disponibilidad |
-|---|---:|---:|---:|---:|---:|---:|---|---|
-| gaggle-nanochat-pretrained-climbmix-20260924 | 3,29 B | 2.048 | 283 B | 0,458 | 0,493 | 0,178 | MIT | Hugging Face, transformers y vLLM |
-| nanochat d34 | no disponible en la informacion | no disponible | 89 B | 0,338 | 0,257 | 0,115 | no disponible en la informacion | Hugging Face (`karpathy/nanochat-d34`) |
-| Otros modelos base de ~3 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | CORE | MMLU | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| gaggle-nanochat-pretrained-climbmix-20260924 | 3,29B | 2.048 | 0,458 | 0,493 | MIT | Hugging Face (safetensors, GGUF) |
+| nanochat d34 (karpathy) | ~3,3B (misma arquitectura) | 2.048 | 0,338 | 0,257 | MIT | Hugging Face |
+| gaggle-nanochat-ift-climbmix-20261031 | 3,29B | 2.048 | no disponible | no disponible | MIT | Hugging Face |
 
-La unica comparacion con datos verificables es contra nanochat d34, del mismo autor y con la misma arquitectura de base, que con 89.000 millones de tokens obtiene cifras muy inferiores en las tres metricas, lo que refleja principalmente la diferencia de presupuesto de entrenamiento (283 B frente a 89 B). No se dispone en la informacion proporcionada de resultados comparables de otras familias de modelos de tamano similar.
+La comparación directa con nanochat d34 muestra una mejora sustancial atribuible al mayor volumen de entrenamiento (283B frente a 89B tokens): +0,120 en CORE, +0,236 en MMLU y +0,063 en MMLU-Pro. Frente a modelos base de tamaño similar de otras familias (por ejemplo, Llama 3.2 3B o Qwen2.5 3B), no se han publicado comparaciones en la información disponible, y las diferencias de tokenizer, datos y contexto (2.048 frente a 128K tokens) hacen que la comparación directa requiera evaluación propia.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin post-entrenamiento: no sigue instrucciones, no responde a formatos de dialogo y no ha pasado por RLHF ni DPO. No debe usarse como asistente conversacional sin ajuste previo.
-- Riesgo alto de repeticion degenerativa: el propio ejemplo de la model card muestra la salida "The capital of France is Paris." repetida varias veces con decodificacion greedy.
-- Ventana de contexto muy corta (2.048 tokens), lo que impide tareas de documento largo, resumen de articulos extensos o conversaciones multi-turno prolongadas.
-- Solo se declara soporte de ingles; no hay evaluacion de rendimiento en castellano ni en otros idiomas.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad ni alineacion. Al entrenarse con un corpus web a gran escala, es esperable la presencia de sesgos y contenido problematico no filtrado.
-- Alucinacion: como modelo base entrenado solo para predecir el siguiente token, no tiene mecanismo de abstencion ni de verificacion de hechos; puede producir afirmaciones falsas con fluidez.
-- Requiere ejecutar codigo remoto (`trust_remote_code=True`) para cargar la arquitectura, ya que nanochat no forma parte de transformers. Conviene auditar `configuration_gaggle.py` y `modeling_gaggle.py` antes de usarlos en produccion.
-- Las secuencias deben comenzar obligatoriamente con el token `<|bos|>`, tal como durante el entrenamiento; omitirlo degrada la calidad de la generacion.
-- Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion con atribucion, sin clausulas de uso aceptable documentadas.
-- El checkpoint publicado no es el final del entrenamiento: corresponde al paso 227.158 (283 B tokens) por criterio de CORE, no al ultimo paso.
-- Las cifras de MMLU y MMLU-Pro se obtienen por verosimilitud de la letra de respuesta, no por generacion libre, por lo que no son directamente comparables con evaluaciones generativas de modelos instruct.
+- Es un modelo base sin ajuste por instrucciones ni RLHF: no sigue órdenes y produce continuaciones de texto; para uso conversacional debe emplearse la variante IFT.
+- Contexto muy corto (2.048 tokens), insuficiente para documentos largos, conversaciones multi-turno extensas o tareas de recuperación aumentada con muchos pasajes.
+- Solo entrenado en inglés; el rendimiento en castellano u otros idiomas será deficiente.
+- Riesgo elevado de alucinación y de generar contenido factualmente incorrecto, agravado por la ausencia de post-entrenamiento y de alineación.
+- Sesgos potenciales heredados de ClimbMix (corpus web filtrado), sin mitigación conocida; no se han publicado análisis de sesgo.
+- Requiere que las secuencias empiecen con el token BOS `<|bos|>`; su omisión degrada la calidad de la generación.
+- Diferencias numéricas en los logits según el kernel de atención empleado (Flash Attention 3 frente a scaled_dot_product_attention); los resultados publicados usan el segundo.
+- Licencia MIT: permite uso comercial sin restricciones, pero el autor no ofrece garantías ni soporte; conviene validar el comportamiento en el dominio de producción.
+- El repo ocupa 33,8 GB, lo que incluye múltiples formatos de pesos; conviene descargar solo los ficheros necesarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
-- Codigo de nanochat: https://github.com/karpathy/nanochat (commit `92d63d4`)
+- Modelo conversacional derivado: https://huggingface.co/castorini/gaggle-nanochat-ift-climbmix-20261031
+- Paper Project Greenhouse: https://arxiv.org/abs/2610.11922
+- PDF del paper: https://arxiv.org/pdf/2610.11922
+- Repositorio nanochat: https://github.com/karpathy/nanochat
 - Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
-- Checkpoint de referencia nanochat d34: https://huggingface.co/karpathy/nanochat-d34
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al paper ni a demos en la busqueda realizada.
+- Modelo nanochat d34 de referencia: https://huggingface.co/karpathy/nanochat-d34
