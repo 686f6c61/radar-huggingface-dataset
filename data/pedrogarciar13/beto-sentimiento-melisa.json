@@ -5,7 +5,7 @@
   "author": "pedrogarciar13",
   "url": "https://huggingface.co/pedrogarciar13/beto-sentimiento-melisa",
   "created_at": "2026-11-20T21:52:41.000Z",
-  "updated_at": "2026-11-20T21:53:28.000Z",
+  "updated_at": "2026-11-20T22:10:20.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -14,6 +14,7 @@
     "es"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "bert",
     "sentiment-analysis",
@@ -22,7 +23,7 @@
     "text-classification",
     "es",
     "base_model:dccuchile/bert-base-spanish-wwm-cased",
-    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:quantized:dccuchile/bert-base-spanish-wwm-cased",
     "license:cc-by-4.0",
     "region:us"
   ],
@@ -31,11 +32,12 @@
   "trending_score": 0,
   "parameters": 109853187,
   "parameters_human": "109.9M",
-  "storage_bytes": 439436284,
-  "storage_human": "439 MB",
+  "storage_bytes": 550118162,
+  "storage_human": "550 MB",
   "context_length": null,
   "base_model": "dccuchile/bert-base-spanish-wwm-cased",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

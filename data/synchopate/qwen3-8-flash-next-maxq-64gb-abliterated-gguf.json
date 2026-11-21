@@ -5,7 +5,7 @@
   "author": "Synchopate",
   "url": "https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-Abliterated-GGUF",
   "created_at": "2026-11-16T18:15:00.000Z",
-  "updated_at": "2026-11-18T00:15:52.000Z",
+  "updated_at": "2026-11-20T21:22:06.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 6584,
+  "downloads_30d": 7090,
   "trending_score": 0,
   "parameters": 210290858624,
   "parameters_human": "210.29B",

@@ -5,7 +5,7 @@
   "author": "zapell",
   "url": "https://huggingface.co/zapell/gloop-dnabert2",
   "created_at": "2026-11-20T17:38:37.000Z",
-  "updated_at": "2026-11-20T17:43:19.000Z",
+  "updated_at": "2026-11-20T20:37:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

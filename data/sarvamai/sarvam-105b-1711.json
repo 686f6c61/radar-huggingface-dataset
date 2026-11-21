@@ -5,7 +5,7 @@
   "author": "sarvamai",
   "url": "https://huggingface.co/sarvamai/sarvam-105b-1711",
   "created_at": "2026-11-15T07:24:07.000Z",
-  "updated_at": "2026-11-18T09:09:24.000Z",
+  "updated_at": "2026-11-21T10:42:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 192,
+  "downloads_30d": 270,
   "trending_score": 0,
   "parameters": 56102772608,
   "parameters_human": "56.10B",

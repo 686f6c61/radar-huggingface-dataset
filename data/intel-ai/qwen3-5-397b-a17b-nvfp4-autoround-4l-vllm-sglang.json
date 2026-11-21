@@ -5,7 +5,7 @@
   "author": "intel-ai",
   "url": "https://huggingface.co/intel-ai/Qwen3.5-397B-A17B-NVFP4-AutoRound-4L-vLLM-SGLang",
   "created_at": "2026-11-18T08:22:54.000Z",
-  "updated_at": "2026-11-20T06:56:34.000Z",
+  "updated_at": "2026-11-20T07:21:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 28153458432,
   "parameters_human": "28.15B",

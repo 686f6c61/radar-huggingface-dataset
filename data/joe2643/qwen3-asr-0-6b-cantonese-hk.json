@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 115,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 782426112,
   "parameters_human": "782.4M",
@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "koelony/Qwen3-ASR-0.6B-Cantonese-HK",
+  "renamed_at": "2026-11-21T08:07:50.497Z",
   "benchmarks": [],
   "sources": []
 }

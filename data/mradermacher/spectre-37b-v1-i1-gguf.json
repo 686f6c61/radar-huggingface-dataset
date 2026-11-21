@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Spectre-37B-v1-i1-GGUF",
   "created_at": "2026-11-08T05:44:42.000Z",
-  "updated_at": "2026-11-08T11:00:05.000Z",
+  "updated_at": "2026-11-20T10:54:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 2852,
+  "downloads_30d": 2967,
   "trending_score": 0,
   "parameters": 36554956360,
   "parameters_human": "36.55B",

@@ -18,8 +18,8 @@
     "antigen",
     "cdr",
     "esm2",
-    "base_model:facebook/esm2_t12_35M_UR50D",
-    "base_model:finetune:facebook/esm2_t12_35M_UR50D",
+    "base_model:biohub/esm2_t12_35M_UR50D",
+    "base_model:finetune:biohub/esm2_t12_35M_UR50D",
     "license:mit",
     "region:us"
   ],

@@ -2,120 +2,98 @@
 
 ## Resumen
 
-asr4all-l es un modelo de reconocimiento automatico del habla (ASR) desarrollado por FUTO (futo-org), publicado en Hugging Face bajo la licencia futo-model-weights-ethical-use-1.0. Se trata de un modelo de 96.999.005 parametros totales (segun los pesos en safetensors; la model card desglosa 91,5 millones en el modulo acustico y 5,3 millones en un modulo PCEC de puntuacion, capitalizacion y correccion de errores). Su objetivo no es competir en precision bruta con los modelos ASR mas grandes, sino ofrecer una eficiencia muy alta en CPU, movil y dispositivos edge, con inferencia en streaming y factor de tiempo real (RTFx) muy superior al de modelos de tamano comparable.
+asr4all-l es un modelo de reconocimiento automático del habla (ASR) desarrollado por FUTO (futo-org), pensado para inferencia en el extremo (edge), movil y CPU. Con 97 millones de parametros totales (91,5 M acusticos mas 5,3 M del modulo PCEC), se posiciona como una alternativa eficiente a los modelos ASR de tamano comparable, con un factor de tiempo real (RTFx) significativamente mayor gracias a una arquitectura propia optimizada para operaciones SIMD y NEON vectorizadas.
 
-La arquitectura es propietaria y esta basada en CTC, optimizada explicitamente para operaciones vectorizadas SIMD y NEON, con un modelo auxiliar de lenguaje pequeno para puntuacion, capitalizacion y correccion ligera, ademas de un detector de actividad de voz (VAD) ultraligero. Los mismos pesos admiten modos de streaming de baja y alta latencia, configurables en tiempo de ejecucion, lo que la convierte en una opcion interesante para transcripcion continua en dispositivos sin GPU.
+El modelo es de tipo CTC, soporta inferencia en streaming con latencia configurable en tiempo de ejecucion (modos de baja y alta latencia desde los mismos pesos) y se distribuye acompanado de un modelo secundario ligero que aplica puntuacion, mayusculas y correccion ligera de errores (PCEC), ademas de un detector de actividad de voz (VAD) ultraligero. Solo soporta ingles.
 
-El modelo solo soporta ingles. Es relevante ahora porque cubre el nicho de ASR en dispositivo (on-device) con huella de memoria inferior a 400 MB en precision completa, exportaciones listas para ONNX y ExecuTorch, y un regimen de licencia que permite uso comercial con restricciones eticas (por ejemplo, prohibicion de vigilancia masiva). En el momento de redactar esta ficha, el repositorio acumula 69 descargas y 1 like, por lo que se trata de una publicacion muy reciente y con poca validacion externa.
+Su relevancia actual radica en que permite desplegar ASR de calidad competitiva en dispositivos sin GPU, con un repo de 4,8 GB que incluye exportaciones a multiples formatos y cuantizaciones (ONNX, ExecuTorch, safetensors). La licencia permite uso comercial con restricciones eticas (por ejemplo, prohibicion de vigilancia masiva).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CTC con arquitectura propia del autor; encoder acustico + modulo PCEC (modelo de lenguaje pequeno) + VAD ultraligero |
-| Parametros totales | 96.999.005 (91,5 M acusticos + 5,3 M PCEC) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no aplica; ASR en streaming con latencia configurable en tiempo de ejecucion (configuracion de referencia en los benchmarks: c256r64) |
-| Tipos de cuantizacion | no disponible el detalle; el autor indica que exporta pesos en varios formatos y cuantizaciones |
+| Arquitectura | CTC con arquitectura propia optimizada para CPU (91,5 M acusticos + 5,3 M PCEC) |
+| Parametros totales | 96.999.005 (97 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de audio en streaming, no basado en ventana de tokens) |
+| Tipos de cuantizacion | multiples cuantizaciones exportadas para ONNX y ExecuTorch (detalle exacto no disponible en la informacion proporcionada) |
 | Idiomas soportados | ingles (en) |
-| Licencia | futo-model-weights-ethical-use-1.0 (etiquetada como "other"; permite uso comercial con restricciones eticas) |
-| Formato de pesos | safetensors, ONNX y ExecuTorch (tambien compatible con transformers) |
-
-Otros datos: tamano del repositorio 4,7 GB; pipeline `automatic-speech-recognition`; requiere `custom_code` (Trust Remote Code); creado el 2026-08-08 y actualizado el 2026-10-06.
+| Licencia | futo-model-weights-ethical-use-1.0 (uso comercial permitido con restricciones eticas) |
+| Formato de pesos | safetensors, ONNX, ExecuTorch |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura CTC propia, no un transformer encoder-decoder tipo Whisper. La model card la describe como una arquitectura "personalizada y unica" disenada para maximizar el RTFx, con delegacion limpia de operaciones a instrucciones SIMD y NEON, lo que explica su orientacion a CPU y a entornos de bajo consumo. Sobre el modulo acustico se anade un segundo modelo pequeno (PCEC) de 5,3 millones de parametros que aplica puntuacion, capitalizacion y correccion ligera de errores sobre la salida del reconocedor, y un VAD ultraligero para aplicaciones que necesitan deteccion de actividad de voz de bajo consumo. Los mismos pesos soportan inferencia en streaming de baja y alta latencia, con la latencia configurable en tiempo de ejecucion.
+El modelo emplea una arquitectura CTC personalizada y exclusiva, disenada para maximizar el rendimiento en CPU mediante delegacion limpia a operaciones SIMD y NEON vectorizadas. Consta de un componente acustico de 91,5 M de parametros y un modulo PCEC de 5,3 M que anade puntuacion, mayusculas y correccion ligera de errores. Los mismos pesos permiten tanto inferencia de baja latencia como de alta latencia en modo streaming, con la latencia configurable en tiempo de ejecucion. Se incluye ademas un VAD ultraligero para aplicaciones que requieren deteccion de voz de bajo consumo.
 
-Los datos de entrenamiento declarados en la model card proceden de 14 corpus: espnet/yodas, MLCommons/peoples_speech, mozilla-foundation/common_voice_25_0, openslr/librispeech_asr, pkufool/libriheavy, facebook/voxpopuli, edinburghcstr/ami, qmeeus/slurp, distil-whisper/earnings22, Revai/earnings21, edinburghcstr/edacc, farukclk/voxpopuli-en-accented-split, ylacombe/english_dialects y apptek-com/apptek_callcenter_dialogues. Esto cubre lectura de libros, habla espontanea, reuniones, discurso parlamentario, llamadas de centro de contacto, dominios financieros (earnings calls) y variedades dialectales del ingles. El numero total de horas o tokens de entrenamiento, la composicion exacta del dataset y si hubo etapas de RLHF o DPO no se detallan en la informacion disponible.
+Los datos de entrenamiento provienen de un conjunto amplio de datasets publicos: espnet/yodas, MLCommons/peoples_speech, mozilla-foundation/common_voice_25_0, openslr/librispeech_asr, pkufool/libriheavy, facebook/voxpopuli, edinburghcstr/ami, qmeeus/slurp, distil-whisper/earnings22, Revai/earnings21, edinburghcstr/edacc, farukclk/voxpopuli-en-accented-split, ylacombe/english_dialects y apptek-com/apptek_callcenter_dialogues. El numero exacto de horas de audio, la composicion porcentual del dataset y si hubo etapas de ajuste fino supervisado adicionales no estan disponibles en la informacion proporcionada.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en ingles con arquitectura CTC y salida token a token.
-- Inferencia en streaming con dos modos (baja latencia y alta latencia) desde los mismos pesos, con latencia configurable en tiempo de ejecucion.
-- Puntuacion, capitalizacion y correccion ligera de errores mediante el modulo PCEC incluido.
-- Deteccion de actividad de voz (VAD ultraligero, etiquetado como "wake" en la model card).
-- Optimizacion para CPU, movil y edge: uso intensivo de SIMD y NEON, con RTFx superior al de modelos ASR de tamano comparable segun el autor.
-- Exportaciones multiruntime: transformers, ONNX y ExecuTorch, con distintas cuantizaciones.
-- Aceleracion en GPU: la model card incluye una seccion especifica de "GPU acceleration", aunque los datos concretos no se recogen en la informacion disponible.
-- No se declara soporte de tool calling, function calling, agentes, vision, audio generativo ni capacidades multimodales. El modelo es exclusivamente ASR monolingue.
+- Reconocimiento automatico del habla en ingles con salida CTC.
+- Inferencia en streaming con dos modos de latencia (baja y alta) configurables en tiempo de ejecucion desde los mismos pesos.
+- Puntacion, capitalizacion y correccion ligera de errores mediante el modulo PCEC asociado.
+- Deteccion de actividad de voz (VAD) ultraligera integrada para activacion por voz.
+- Inferencia optimizada para CPU, movil y edge, con exportaciones a ONNX y ExecuTorch.
+- Factor de tiempo real (RTFx) elevado en comparacion con modelos ASR de tamano similar.
+- No soporta tool calling, agentes, vision, audio multimodal ni capacidades multilingues mas alla del ingles.
 
 ## Casos de uso
 
-- Transcripcion en tiempo real en moviles y dispositivos edge: con unos 97 millones de parametros y pesos cuantizables, el modelo puede ejecutarse localmente sin depender de la nube, lo que reduce latencia y preserva la privacidad del audio del usuario.
-- Subtitulado en directo de reuniones y videollamadas: el modo streaming de baja latencia esta pensado para emitir texto parcial mientras se habla; para reuniones grabadas puede usarse el modo de alta latencia con mejores resultados.
-- Asistentes de voz y dictado por voz en aplicaciones de escritorio: el VAD ultraligero permite activar la captura solo cuando hay habla, reduciendo consumo energetico en dispositivos portatiles.
-- Transcripcion de llamadas de centro de contacto: el corpus apptek_callcenter_dialogues forma parte del entrenamiento, y el modulo PCEC facilita salidas legibles para sistemas de analitica y control de calidad.
-- Notas y actas de reuniones empresariales: los datasets AMI, Earnings-21/Earnings-22 y SLURP cubren dominios de reunion y de llamadas financieras, adecuados para generar actas y resumenes previos a un LLM.
-- Accesibilidad y subtitulado en aplicaciones de sistema: al ser on-device y no requerir GPU, se puede integrar en sistemas operativos, navegadores o lectores de pantalla con un coste de memoria bajo.
-- Procesamiento por lotes en servidores solo-CPU: para pipelines de transcripcion masiva donde no hay GPUs disponibles, el enfoque en SIMD y el RTFx elevado permiten alto paralelismo horizontal a bajo coste.
-- Preprocesado para pipelines de PLN: transcripcion de audio a texto como primer paso de sistemas de indexacion, busqueda semantica o analisis de sentimiento sobre contenido hablado.
+- Transcripcion en dispositivos moviles sin GPU: el modelo esta optimizado para CPU y bajo consumo, por lo que puede ejecutarse en telefonos y portatiles integrando la exportacion ExecuTorch o ONNX, con el modulo PCEC para entregar texto puntuado directamente al usuario.
+- Dictado y notas de voz en aplicaciones de productividad: el modo streaming de baja latencia permite mostrar texto parcial mientras el usuario habla, y el VAD ultraligero activa la captura solo cuando hay voz, reduciendo el consumo energetico.
+- Subtitulado en tiempo real en entornos con hardware limitado: el modo de alta latencia ofrece mayor precision con una ventana algo mayor, adecuado para generar subtitulos sincronizados en equipos sin acelerador dedicado.
+- Transcripcion de reuniones y actas: el modelo se ha evaluado en AMI (WER 9,94 %), corpus de reuniones multiparticipe, por lo que puede emplearse para generar transcripciones de sala con puntuacion y mayusculas gracias a PCEC.
+- Analisis de llamadas de centro de contacto: el dataset apptek-com/apptek_callcenter_dialogues figura entre los datos de entrenamiento, lo que lo hace adecuado para transcribir conversaciones telefonicas y alimentar analitica posterior en CPU.
+- Procesamiento por lotes de audio en servidores sin GPU: al ser un modelo CTC de 97 M con exportacion ONNX, puede ejecutarse en contenedores CPU para transcribir grandes volumenes de audio con un coste energetico bajo y alto RTFx.
+- Asistentes por voz con activacion local: combinando el VAD integrado y el modo streaming, se puede construir un pipeline de wake word y transcripcion totalmente en el dispositivo, sin enviar audio a la nube.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de la model card (WER en %, normalizacion Whisper, configuracion c256r64, menor es mejor). Todos los valores estan marcados como `verified: false`, es decir, no verificados de forma independiente.
+Resultados declarados por el autor en la model card (WER %, normalizacion Whisper, configuracion c256r64, menor es mejor). No estan verificados de forma independiente segun el model-index.
 
-| Dataset | Valor WER (%) |
+| Dataset | WER (%) |
 |---|---|
 | LibriSpeech clean | 2,38 |
 | LibriSpeech other | 5,94 |
-| VoxPopuli (cleaned, aa) | 4,05 |
+| VoxPopuli (cleaned) | 4,05 |
 | SPGISpeech | 4,61 |
 | Monsoon en-IN | 7,40 |
 | Earnings-22 (cleaned, chunked) | 9,15 |
 | GigaSpeech (cleaned) | 9,84 |
 | AMI (cleaned) | 9,94 |
 
-Datos adicionales de rendimiento: la model card presenta graficas de RTFx por plataforma y backend (imagenes `hw_backends.png` y `bench_table.png`) en hilos unicos, pero los valores numericos no estan disponibles en el texto proporcionado. No se han facilitado resultados comparativos con otros modelos en la informacion disponible.
+La model card incluye ademas graficos de RTFx por backend y plataforma en ejecucion mono-hilo, pero los valores numericos concretos de esos graficos no estan disponibles en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos (calculo a partir de 96,999 millones de parametros): aproximadamente 390 MB en FP32, unos 195 MB en FP16/BF16 y unos 97 MB en INT8. Son estimaciones de peso puro, sin contar activaciones ni buffers de runtime.
-- El destino principal es CPU, no GPU: el modelo esta disenado para inferencia en CPU, movil y edge, con soporte explicito de SIMD y NEON.
-- Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, etc., e incluso en GPUs integradas con varios GB de memoria compartida. Tambien cabe en dispositivos moviles modernos a traves de ExecuTorch.
-- GPU de centro de datos (A100, H100) no son necesarias para este modelo; su uso tendria sentido solo para servir muchas peticiones concurrentes.
-- Opciones de despliegue: transformers (Python), ONNX Runtime, ExecuTorch y los backends que el autor exporta en el repositorio. No se menciona soporte de GGUF, vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: la model card afirma un RTFx significativamente superior al de modelos ASR de tamano comparable y publica graficas por backend y plataforma, pero no se proporcionan cifras concretas en la informacion disponible.
+- VRAM estimada: no disponible; el modelo esta disenado para CPU y edge, no requiere GPU.
+- GPU recomendadas: no aplica como requisito; la model card menciona una seccion de aceleracion por GPU, pero no especifica modelos concretos en la informacion disponible.
+- Cabe en cualquier GPU consumer y en dispositivos sin GPU: con 97 M de parametros y un repo de 4,8 GB (que incluye todas las exportaciones), el peso efectivo de una sola variante cuantizada es muy reducido.
+- Opciones de despliegue: transformers (uso puntual y streaming), ONNX Runtime, ExecuTorch; tambien se mencionan exportaciones a multiples formatos y cuantizaciones.
+- Latencia y throughput: la model card destaca un RTFx significativamente superior a modelos ASR de tamano comparable y modos de streaming con latencia configurable; los valores numericos concretos no estan disponibles en el texto proporcionado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. La propia model card indica que existen tres tamanos dentro de la familia asr4all, pero solo se documentan aqui las especificaciones de la variante large.
+No se dispone de datos de comparacion directa con alternativas concretas en la informacion proporcionada. Como referencia cualitativa, la model card situa el modelo frente a otros ASR de tamano comparable en RTFx y WER, y ofrece tres tamanos dentro de la propia familia asr4all, pero no incluye cifras de modelos de terceros.
 
-| Modelo | Parametros | Idiomas | Licencia | Rendimiento comparado |
-|---|---|---|---|---|
-| futo-org/asr4all-l | 96.999.005 (91,5 M acusticos + 5,3 M PCEC) | en | futo-model-weights-ethical-use-1.0 (uso comercial con restricciones eticas) | WER 2,38-9,94 % en ocho conjuntos del Open ASR Leaderboard (no verificado) |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| asr4all-l | 97 M | no disponible (streaming) | WER 2,38-9,94 segun dataset | futo-model-weights-ethical-use-1.0 | Hugging Face |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo monolingue: solo soporta ingles. No hay soporte declarado de castellano ni de otros idiomas.
-- Benchmarks no verificados: todos los resultados del model-index aparecen con `verified: false`, es decir, son cifras autodeclaradas por el autor y no reproducidas por terceros. El numero de descargas (69) y de likes (1) es muy bajo, lo que limita la evidencia de la comunidad.
-- Rendimiento degradado en audio dificil: el WER sube a 9,94 % en AMI y 9,84 % en GigaSpeech, y a 7,40 % en Monsoon en-IN, lo que indica perdida de precision en habla espontanea, ruidosa o con acento no estadounidense/britanico estandar.
-- Sesgos de dominio en los datos: el entrenamiento esta sesgado hacia ingles de lectura de libros, reuniones y llamadas corporativas o financieras; el rendimiento en jerga tecnica, dialectos poco representados o audio de muy baja calidad no esta documentado.
-- Riesgo de alucinacion: aunque los modelos CTC no generan texto libre como los decoder-only, pueden producir sustituciones, omisiones y repeticiones en audio ruidoso o con silencios; el modulo PCEC puede introducir correcciones erroneas al "arreglar" transcripciones.
-- Restricciones de licencia: la licencia futo-model-weights-ethical-use-1.0 permite uso comercial, pero prohibe actividades concretas como la vigilancia masiva. Es imprescindible revisar el texto completo de la licencia antes de un despliegue en produccion.
-- Requiere `custom_code`: el uso con transformers implica ejecutar codigo personalizado del autor con `trust_remote_code=True`, lo que anade una superficie de riesgo de seguridad en entornos no controlados.
-- Puntuacion dependiente de un modulo auxiliar: la capitalizacion, puntuacion y correccion no provienen del modelo acustico, sino del modulo PCEC de 5,3 M de parametros; si se despliega solo el modulo acustico, la salida carece de formato.
-- Sin informacion sobre cuantizaciones concretas ni sobre latencias medidas de forma independiente, no es posible garantizar objetivos de SLA en produccion sin una evaluacion propia.
+- Solo soporta ingles; no hay capacidades multilingues.
+- Riesgo de alucinacion y errores en audio con ruido, acentos marcados o solapamiento de hablantes, comun en modelos CTC; los WER en AMI (9,94 %) y GigaSpeech (9,84 %) reflejan esta dificultad en dominios complejos.
+- Los resultados de benchmarks son declarados por el autor y estan marcados como no verificados en el model-index.
+- La licencia futo-model-weights-ethical-use-1.0 permite uso comercial pero prohibe actividades concretas, como la vigilancia masiva; es necesario revisar el texto completo de la licencia antes de un despliegue en produccion.
+- El modulo PCEC anade puntuacion y correccion, pero puede introducir cambios no deseados en transcripciones literales o en dominios con vocabulario muy especifico.
+- La arquitectura es propia y requiere codigo personalizado (custom_code); la integracion con ecosistemas estandar puede necesitar pasos adicionales frente a modelos transformer convencionales.
+- No dispone de tool calling, agentes ni razonamiento multi-paso; es exclusivamente un modelo ASR.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/futo-org/asr4all-l
-- Licencia (referenciada como LICENSE en el repositorio): https://huggingface.co/futo-org/asr4all-l/blob/main/LICENSE
-- Paper referenciado en las etiquetas del modelo (arXiv 2607.25870): https://arxiv.org/abs/2607.25870
-- Datasets declarados en la model card:
-  - https://huggingface.co/datasets/espnet/yodas
-  - https://huggingface.co/datasets/MLCommons/peoples_speech
-  - https://huggingface.co/datasets/mozilla-foundation/common_voice_25_0
-  - https://huggingface.co/datasets/openslr/librispeech_asr
-  - https://huggingface.co/datasets/pkufool/libriheavy
-  - https://huggingface.co/datasets/facebook/voxpopuli
-  - https://huggingface.co/datasets/edinburghcstr/ami
-  - https://huggingface.co/datasets/qmeeus/slurp
-  - https://huggingface.co/datasets/distil-whisper/earnings22
-  - https://huggingface.co/datasets/Revai/earnings21
-  - https://huggingface.co/datasets/edinburghcstr/edacc
-  - https://huggingface.co/datasets/farukclk/voxpopuli-en-accented-split
-  - https://huggingface.co/datasets/ylacombe/english_dialects
-  - https://huggingface.co/datasets/apptek-com/apptek_callcenter_dialogues
-- Busqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos por la busqueda no guardan relacion con el modelo ni con ASR y no se incluyen.
+- Licencia: https://huggingface.co/futo-org/asr4all-l/blob/main/LICENSE
+- Paper referenciado en los tags (arxiv:2607.25870): https://arxiv.org/abs/2607.25870
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

@@ -1,0 +1,110 @@
+{
+  "schema": 2,
+  "id": "alkove-ai/alkove-focus-1",
+  "slug": "alkove-ai-alkove-focus-1",
+  "author": "alkove-ai",
+  "url": "https://huggingface.co/alkove-ai/alkove-focus-1",
+  "created_at": "2026-11-21T11:23:05.000Z",
+  "updated_at": "2026-11-21T11:23:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "alkove",
+  "languages": [],
+  "tags": [
+    "alkove",
+    "speech-enhancement",
+    "noise-suppression",
+    "voice-isolation",
+    "target-speaker-extraction",
+    "real-time",
+    "webassembly",
+    "int8",
+    "4-bit",
+    "audio-to-audio",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2320032,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice isolation",
+      "dataset": "Another voice in the room, Common Voice test sets, 11 languages",
+      "metric": "SI-SDR of the target, with a print (dB)",
+      "value": 10.64
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "Another voice in the room, Common Voice test sets, 11 languages",
+      "metric": "Level of the other voice speaking alone, with a print (dB)",
+      "value": -33.45
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset microphone, 134 windows (VoxLock protocol)",
+      "metric": "Word error rate, with a print (Whisper large-v3 turbo)",
+      "value": 16.83
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset microphone, 134 windows (VoxLock protocol)",
+      "metric": "Words from other voices per minute, with a print",
+      "value": 2.26
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "STOI",
+      "value": 0.892
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "SI-SDR (dB)",
+      "value": 13.26
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "DNSMOS P.835 overall",
+      "value": 3.07
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "DNSMOS P.808",
+      "value": 3.42
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "DNS Challenge 3 blind test set, 600 clips",
+      "metric": "DNSMOS P.808",
+      "value": 3.31
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "DNS Challenge 3 blind test set, 600 clips",
+      "metric": "DNSMOS P.835 overall",
+      "value": 2.7
+    }
+  ],
+  "sources": []
+}

@@ -2,100 +2,106 @@
 
 ## Resumen
 
-Edge0-Cyber-Uncensored-nvfp4 es una derivacion comunitaria del modelo Edge0-145B-NVFP4, publicada por el usuario SargeDev. Se trata de una version "abliterated" en la que se ha eliminado el comportamiento de rechazo (refusal) mediante una proyeccion a nivel de pesos, sin vectores de control ni parches en tiempo de ejecucion. El cambio afecta exclusivamente al fichero `model-skeleton.gguf`, la parte siempre residente del modelo, mientras que el resto del paquete (pool de expertos NVFP4, tabla de n-gramas, proyecciones latentes, tokenizer y cabeza de borrador MTP) permanece byte a byte identico al modelo base.
+Edge0-Cyber-Uncensored-nvfp4 es una derivación comunitaria del modelo Edge0-145B-NVFP4, publicada por el usuario SargeDev. Se trata de un build "abliterado": se ha eliminado el comportamiento de rechazo mediante una proyección a nivel de pesos (abliteration) aplicada sobre el fichero `model-skeleton.gguf`, la parte del modelo que permanece siempre residente en memoria. El resto del paquete (el pool de expertos NVFP4 de 47,6 GB, la tabla de n-gramas de 51,2 GB, las proyecciones latentes, el tokenizer y la cabeza de borrador MTP) es idéntico byte a byte al modelo base.
 
-El modelo hereda la arquitectura latent-MoE de Edge0, descendiente a su vez de Qwen3.8-Flash-Next, y se distribuye en formato NVFP4 de 4 bits con un peso total en repositorio de 113,8 GB. Aunque la model card lo denomina "145B", los datos reales de safetensors indican 4.947.698.560 parametros totales, una discrepancia que conviene tener en cuenta. El contexto, los idiomas y los parametros activos no estan documentados en la informacion disponible.
+El modelo pertenece a la familia Edge0, una arquitectura MoE latente cuantizada en NVFP4 y orientada a inferencia en el borde (edge inference). Según los safetensors, el recuento de parámetros totales es de 4.947.698.560 (aproximadamente 4,95 mil millones), aunque el nombre comercial "145B" y el tamaño del repositorio (113,8 GB) apuntan a una estructura con un pool de expertos externo al grafo denso que no se refleja en ese recuento. La longitud de contexto no está especificada en la información disponible.
 
-Su relevancia es doble: por un lado, demuestra una tecnica de abliteration reproducible sobre un modelo MoE de gran tamano; por otro, su naturaleza descensurada lo convierte en una herramienta de investigacion sobre alineamiento y seguridad, no en un modelo recomendable para despliegues de produccion convencionales.
+La relevancia de esta ficha es doble: por un lado, documenta un caso de abliteración sobre un modelo MoE cuantizado en 4 bits con resultados medidos sobre el conjunto mlabonne (520 prompts dañinos y 520 inofensivos); por otro, ilustra las implicaciones de seguridad y licencia de distribuir derivaciones sin salvaguardas. El modelo está pensado para investigación y desarrollo educativo según su autor, y se distribuye bajo la licencia `edge0-community-model-1.0`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Latent-MoE (descendiente de Qwen3.8-Flash-Next) |
-| Parametros totales | 4.947.698.560 (segun safetensors); la model card indica "145B" |
+| Arquitectura | MoE latente (latent-MoE), descendiente de la familia Edge0; pesos en NVFP4 (4 bits) |
+| Parametros totales | 4.947.698.560 (según safetensors); el nombre comercial indica 145B |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (4 bits) en el pool de expertos; skeleton en GGUF |
+| Tipos de cuantizacion | NVFP4 (4 bits); el paquete incluye `model-skeleton.gguf` y pool de expertos NVFP4 |
 | Idiomas soportados | no disponible |
-| Licencia | Edge0 Community Model License 1.0 + Qwen Community License 1.0 |
-| Formato de pesos | GGUF (`model-skeleton.gguf`), pool de expertos NVFP4, `mmproj-BF16.gguf` para vision |
+| Licencia | edge0-community-model-1.0 (license: other) |
+| Formato de pesos | GGUF (`model-skeleton.gguf`), NVFP4, safetensors, `mmproj-BF16.gguf` para visión |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer con arquitectura latent-MoE, es decir, un mezcla de expertos en el que las proyecciones se realizan sobre un espacio latente. El paquete se divide en un "skeleton" siempre residente (que incluye atencion lineal, atencion estandar, down-projection del experto compartido y embeddings de tokens) y un pool de expertos de 47,6 GB en NVFP4, ademas de una tabla de n-gramas de 51,2 GB, proyecciones latentes, tokenizer y una cabeza de borrador MTP (multi-token prediction) para decodificacion especulativa.
+El modelo es un MoE latente cuantizado en NVFP4, derivado de Edge0/Edge0-145B-NVFP4. La arquitectura separa una parte siempre residente (`model-skeleton.gguf`, que contiene atención lineal, salida de atención, down-projection del experto compartido y embeddings de tokens) de un pool de expertos de 47,6 GB y una tabla de n-gramas de 51,2 GB que se cargan de forma dinámica. Incluye además una cabeza de borrador MTP (multi-token prediction) para decodificación especulativa y un helper de visión (`strata-vision`) con proyector `mmproj-BF16.gguf`.
 
-No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base. La innovacion tecnica destacable de esta derivacion es la abliteration: se proyecta fuera de las matrices de pesos que escriben en el residual stream una "direccion de rechazo" medida. Concretamente, se aplican 47 vectores unitarios por capa de 2560 dimensiones, tomados de la direccion de rechazo publicada de Qwen3.8-Flash-Next y transferidos a los pesos de Edge0, ya que el motor de Edge0 no emite un volcado de residuales del que derivar una direccion propia. El cambio afecta a 97 tensores, con una variacion relativa por tensor de entre el 1,68 % y el 4,22 % de la norma (mediana 2,09 %), y λ = 1,0. La direccion se verifico empiricamente, no se asumio.
+El entrenamiento original de Edge0-145B-NVFP4 no se detalla en la información proporcionada (número de tokens, composición del dataset, uso de RLHF/DPO: no disponible). La modificación de este build consiste en una abliteración: se tomaron 47 vectores unitarios por capa de 2560 dimensiones correspondientes a la "dirección de rechazo" publicada de Qwen3.8-Flash-Next y se proyectaron fuera de 97 tensores del esqueleto (salida de atención lineal, salida de atención, down-projection del experto compartido y embedding de tokens). El cambio relativo por tensor es de mínimo 1,68 %, mediana 2,09 % y máximo 4,22 % de la norma del tensor. El resto del paquete es byte-idéntico al upstream, verificado mediante `CHECKSUMS.txt`.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno.
-- Razonamiento y generacion de codigo (el tag `coding` figura en la model card).
-- Capacidades de agente y tool calling: se sirve con endpoints compatibles con OpenAI y Anthropic, lo que facilita su integracion en frameworks de agentes.
-- Vision: soportada mediante `mmproj-BF16.gguf` y el helper `strata-vision`, igual que en el modelo base.
-- Decodificacion especulativa mediante cabeza de borrador MTP.
-- Comportamiento descensurado: se elimina el rechazo en peticiones de ambito cyber/seguridad (port scanning, phishing, cracking de ZIP, floods de peticiones).
-- Capacidad multilingue: no documentada en la informacion disponible.
-- Modo "thinking" desactivable (las pruebas de la model card se realizaron con thinking off).
+- Generación de texto conversacional multi-turno.
+- Razonamiento y codificación (tags `agent`, `coding`).
+- Soporte de tool calling y function calling a través de endpoints compatibles con OpenAI y Anthropic servidos por `edge0-infer`.
+- Capacidades de agente y razonamiento multi-paso (tag `agent`).
+- Visión: soportada mediante `mmproj-BF16.gguf` y el helper `strata-vision`, igual que el modelo upstream.
+- Modo de pensamiento (thinking) configurable; las mediciones de abliteración se realizaron con thinking desactivado y 256 tokens.
+- Comportamiento de rechazo reducido: en el conjunto mlabonne de 520 prompts dañinos, pasa de 519 rechazos (modelo base) a 319 (este build) y 307 rechazos "reales" de seguridad según la lectura completa del texto.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como la proyeccion de una direccion de rechazo afecta al comportamiento en un MoE de gran tamano, con un harness de 99 prompts (`abliteration/refusal_probe.py`) incluido para medir la tasa de rechazo.
-- Red teaming y evaluacion de robustez: util para generar ataques y prompts adversarios en entornos controlados de seguridad ofensiva autorizada, dado que no rechaza peticiones de ambito cyber.
-- Analisis de sesgos y comportamiento descensurado: comparar las respuestas del modelo abliterated frente al base para cuantificar el efecto de la intervencion en pesos.
-- Desarrollo de agentes con tool calling: los endpoints compatibles con OpenAI y Anthropic permiten conectarlo a orquestadores de agentes existentes sin adaptadores.
-- Procesamiento de documentos con vision: el soporte de `mmproj-BF16.gguf` habilita tareas de comprension de imagenes en pipelines locales.
-- Experimentacion con decodificacion especulativa: la cabeza MTP permite medir ganancias de throughput en inferencia local sobre hardware GB10-class.
+- Investigación sobre alineación y abliteración: el paquete incluye `abliteration/results/` con el texto completo de cada respuesta de cada ejecución, lo que permite reproducir y auditar la metodología de proyección de la dirección de rechazo sobre un MoE cuantizado.
+- Evaluación de seguridad de derivaciones comunitarias: comparar los conjuntos mlabonne (520+520), el set de seguridad de 25 prompts, el de química de 25 y el de objetivos de 22 para medir qué categorías de rechazo se eliminan y cuáles persisten.
+- Despliegue en estaciones de trabajo con una sola GPU de 24 GB: según las cifras del upstream, el build NVFP4 se ejecuta en una tarjeta GDDR de 24 GB, lo que permite servir el modelo en hardware consumer de gama alta.
+- Inferencia en cajas con memoria unificada: el build completo ocupa ~58,6 GiB en un equipo GB10 de 121 GiB de memoria unificada, adecuado para prototipos en estaciones ARM (aarch64) con CUDA 13.
+- Integración en pipelines de agentes y coding: los endpoints compatibles con OpenAI y Anthropic (nombre de modelo `edge0_145b`) permiten conectarlo a frameworks de agentes existentes sin adaptadores.
+- Servicio de chat interactivo local: `edge0-infer chat` abre una sesión interactiva para pruebas de conversación multi-turno con visión opcional.
+- Estudio de decodificación especulativa: la cabeza MTP incluida permite analizar el rendimiento de la generación con borrador en un MoE latente cuantizado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card unicamente reporta una prueba puntual de nueve prompts sobre el skeleton distribuido (thinking off, sin vector en tiempo de ejecucion):
+Los únicos datos publicados en la información disponible son las mediciones de abliteración sobre conjuntos de prompts, no benchmarks estándar (MMLU, HumanEval, GSM8K). Se reproducen a continuación.
 
-| Categoria | Prompts | Resultado |
-|---|---|---|
-| Normales (receta, bomba de calor, ordenacion en Python) | 3 | 3/3 entregados y coherentes |
-| Cyber / seguridad (port scanner, phishing, zip cracking, flood) | 4 | 4/4 entregados, sin rechazo |
-| CBRN - arma quimica | 1 | rechazado |
-| CBRN - artefacto explosivo | 1 | entregado tras preambulo de descargo |
+| Conjunto | Modelo base (stock) | Este build | v2 |
+|---|---|---|---|
+| mlabonne, 520 dañinos (rechazos) | 519 | 319 | 329 |
+| mlabonne, 520 inofensivos (rechazos) | 15 | 15 | 16 |
+| Rechazos reales de seguridad (520 dañinos) | 517 | 307 | 314 |
+| No rechazos de ese tipo | 2 | 12 | 15 |
+| Set de seguridad, 25 prompts | no disponible | 25/25 entregados | no disponible |
+| Set de química, 25 prompts | no disponible | 18/18 de química real entregada; de 7 que deberían contenerse, 4 se contienen y 3 se abren | no disponible |
+| Set de objetivos, 22 prompts | no disponible | 7/8 cyber, 5/8 bio, 6/6 normal | no disponible |
 
-El autor advierte explicitamente que se trata de spot checks y no de un benchmark, y recomienda medir el comportamiento sobre los prompts propios.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el build completo ocupa aproximadamente 58,6 GiB en una maquina con 121 GiB de memoria unificada (clase GB10). Una tarjeta GDDR de 24 GB puede ejecutarlo segun las cifras del modelo base.
-- GPU recomendadas: NVIDIA exclusivamente; el build NVFP4 es solo CUDA (CUDA 13, Linux o Windows, incluido aarch64). No se documentan modelos concretos como A100 o H100 en la informacion disponible.
-- Cabe en consumer GPU: si, en tarjetas de 24 GB GDDR segun las cifras del upstream, aunque el paquete completo requiere descargar unos 114 GB.
-- Opciones de despliegue: motor propietario `edge0-strata` con front end `edge0-infer`; servidor en `http://127.0.0.1:8000` con endpoints compatibles con OpenAI y Anthropic (nombre de modelo `edge0_145b`), o modo interactivo con `edge0-infer chat`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el build completo ocupa ~58,6 GiB en un equipo con 121 GiB de memoria unificada (GB10). Una tarjeta GDDR de 24 GB puede ejecutarlo según las cifras del upstream.
+- GPU recomendadas: NVIDIA con CUDA 13 en Linux o Windows (incluido aarch64); el build NVFP4 es solo CUDA. No se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
+- Cabe en GPU consumer: sí, en una tarjeta de 24 GB según las cifras del upstream; el requisito exacto de VRAM por componente no está detallado.
+- Opciones de despliegue: motor propietario `edge0-strata` (engine) y frontend `edge0-infer`, que expone endpoints compatibles con OpenAI y Anthropic en `http://127.0.0.1:8000` con nombre de modelo `edge0_145b`. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Edge0-Cyber-Uncensored-nvfp4 | 4.947.698.560 (segun safetensors) | no disponible | Edge0 Community 1.0 + Qwen 1.0 | Hugging Face, motor propio | Derivacion abliterated, solo CUDA |
-| Edge0-145B-NVFP4 (base) | no disponible | no disponible | Edge0 Community 1.0 | Hugging Face, motor propio | Modelo original con rechazo intacto |
-| Qwen3.8-Flash-Next | no disponible | no disponible | Qwen Community 1.0 | Hugging Face | Ancestro arquitectonico; fuente de la direccion de rechazo |
+| SargeDev/Edge0-Cyber-Uncensored-nvfp4 | 4,95B según safetensors (nombre comercial 145B) | no disponible | NVFP4 | edge0-community-model-1.0 | Hugging Face, 924 descargas |
+| SargeDev/Edge0-Cyber-Uncensored-nvfp4-v2 | no disponible | no disponible | NVFP4 | edge0-community-model-1.0 | Hugging Face |
+| Edge0/Edge0-145B-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | Hugging Face (modelo base) |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Modelo descensurado: no rechaza peticiones de ambito cyber/seguridad, lo que lo hace inadecuado para despliegues de atencion al cliente o produccion general sin filtros externos.
-- La pared CBRN-quimica se mantiene de forma deliberada, pero la de explosivos no; el autor lo describe como una linea de corte intencionada, no un fallo.
-- Riesgo elevado de alucinacion y de generar contenido danino: el autor declara explicitamente que no se responsabiliza de las salidas ni del uso que se haga de ellas.
-- Sesgos conocidos: no documentados en la informacion disponible; la abliteration puede alterar el comportamiento mas alla del rechazo.
-- Restricciones de licencia: uso personal, de investigacion y de modificacion libre; las salidas son del usuario y pueden usarse comercialmente, pero vender una oferta comercial del modelo en si requiere autorizacion de Edge0. Redistribucion permitida bajo la seccion 5, con textos de licencia y avisos incluidos.
-- Dependencia de un motor propietario (`edge0-strata` + `edge0-infer`) y de CUDA 13; no hay soporte para ecosistemas estandar como llama.cpp o vLLM.
-- Discrepancia entre el nombre "145B" y los 4.947.698.560 parametros de safetensors; conviene verificar el dato antes de planificar recursos.
-- El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en 2026-11-17, por lo que no hay validacion comunitaria independiente.
+- El autor declara explícitamente que es una derivación comunitaria, no un lanzamiento oficial de Edge0, y que se publica para investigación y desarrollo educativo.
+- La abliteración elimina rechazos ante solicitudes dañinas: de 519 rechazos del modelo base ante 520 prompts dañinos se pasa a 319 (307 rechazos reales de seguridad). Persisten rechazos ante autolesión, contenido infantil, contenido sexual, odio, violencia y fabricación de armas, pero se abren respuestas ante solicitudes de ciberataque y química peligrosa (por ejemplo, dispositivo explosivo, patógeno y TNT con descargo previo y respuesta completa).
+- Riesgo de alucinación: no cuantificado en la información disponible; el autor señala que las respuestas del conjunto inofensivo incluyen límites del modelo (sin tiempo real, sin audio, sin imagen, sin búsqueda) y falsos positivos del marcador.
+- Restricciones de licencia: `edge0-community-model-1.0` (license: other); no se detallan los términos de uso comercial en la información disponible.
+- El build NVFP4 es exclusivamente CUDA (NVIDIA, CUDA 13, Linux o Windows, incluido aarch64); no hay ruta de ejecución en CPU ni en otras aceleradoras documentada.
+- El despliegue requiere compilar el motor `edge0-strata` y el frontend `edge0-infer` desde el repositorio de GitHub; no es compatible con runtimes estándar de Hugging Face.
+- El paquete pesa ~114 GB y debe mantenerse con la estructura de carpetas intacta, ya que los parámetros del motor viven en `model.json` y no en la línea de comandos.
+- Idiomas soportados y longitud de contexto no documentados, lo que impide garantizar comportamiento multilingüe o conversaciones de contexto largo.
+- El autor declina responsabilidad por las salidas del modelo y por las acciones tomadas a partir de ellas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SargeDev/Edge0-Cyber-Uncensored-nvfp4
+- Build v2: https://huggingface.co/SargeDev/Edge0-Cyber-Uncensored-nvfp4-v2
 - Modelo base: https://huggingface.co/Edge0/Edge0-145B-NVFP4
 - Repositorio del motor: https://github.com/Edge0-AI/Edge0
-- Documentacion del motor (`edge0-strata/EDGE0.md`): dentro del repositorio anterior
-- Guia del front end (`edge0-infer/docs/getting-started.md`): dentro del repositorio anterior
-- Metodologia de abliteration (`abliteration/README.md`): dentro del repositorio del modelo
-- Harness de evaluacion de rechazo (`abliteration/refusal_probe.py`): dentro del repositorio del modelo
-- Licencia Qwen upstream (`third-party/Qwen-LICENSE.txt`): dentro del repositorio del modelo
+- Documentación del motor: `edge0-strata/EDGE0.md` (dentro del repositorio)
+- Guía del frontend: `edge0-infer/docs/getting-started.md` (dentro del repositorio)
+- Resultados de abliteración: `abliteration/results/` y `abliteration/README.md` (dentro del repositorio del modelo)
+- Checksums de verificación: `CHECKSUMS.txt` (dentro del repositorio del modelo)
+- Licencia: `LICENSE` (dentro del repositorio del modelo)

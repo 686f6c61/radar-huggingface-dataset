@@ -2,90 +2,92 @@
 
 ## Resumen
 
-LucetV3-2B-Frontier es un modelo de lenguaje de 2.000 millones de parámetros construido sobre la arquitectura Tri-Hybrid de Liquid AI (la familia LFM3), que combina convoluciones cortas con compuerta (Gated Short Convolutions), atención de ventana deslizante (Sliding Window Attention) y atención global con GQA. El modelo, desarrollado por el usuario mohommed, se entrena mediante Next-Concept Modeling (NCM) e incorpora protocolos R-Tuning orientados a la reducción de alucinaciones (edición "Anti-Hallucination & NCM").
+LucetV3-2B-Frontier-GGUF es la version cuantizada en formato GGUF del modelo mohommed/LucetV3-2B-Frontier, publicada por el usuario mradermacher, especializado en generar cuantizaciones estaticas de modelos open source. El modelo base pertenece a la familia Lucet, construida sobre la arquitectura LFM3 de Liquid AI, y se distribuye con licencia Apache 2.0. Con 1.728.801.600 parametros reales (aproximadamente 1,7 mil millones, comercializado como "2B"), esta pensado para inferencia local en hardware de consumo.
 
-La ficha que nos ocupa corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, un repositorio de conversión estática que reproduce los pesos del modelo original en distintos niveles de cuantización (desde Q2_K hasta F16). No se trata de un modelo nuevo, sino de una redistribución en formatos ligeros pensada para inferencia en CPU y GPU de consumo mediante llama.cpp y herramientas compatibles.
+La model card del autor etiqueta el modelo con terminos como "uncensored", "next-concept-modeling" (NCM), "multi-dimensional-training", "anti-hallucination" y "512k-context", lo que sugiere un enfoque de entrenamiento orientado a reducir rechazos y alucinaciones, con una ventana de contexto declarada de 512.000 tokens. No obstante, la informacion disponible no incluye detalles verificables sobre el dataset de entrenamiento ni resultados de benchmarks.
 
-Su relevancia es limitada y muy específica: cubre el nicho de modelos pequeños (2B) con contexto teórico de 512k tokens y orientación a razonamiento autónomo, generación de código y tareas de sistemas, además de un enfoque declarado contra las alucinaciones. No obstante, la información pública es muy escasa: no hay benchmarks, no consta licencia en el repositorio GGUF y no hay datos de descargas ni validación externa.
+La relevancia de esta publicacion es practica: ofrece el modelo en once variantes de cuantizacion (desde Q2_K de 0,9 GB hasta f16 de 3,6 GB), lo que permite ejecutarlo en GPUs consumer, CPUs y dispositivos con poca memoria. El repositorio acumula 726 descargas desde su creacion el 8 de noviembre de 2026.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Tri-Hybrid de Liquid AI: Gated Short Convolutions + Sliding Window Attention + Global GQA (base LFM3) |
-| Parámetros totales | 2B (según nombre del modelo) |
-| Parámetros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | 512k tokens (según etiqueta del modelo original; no verificado) |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible en el repositorio GGUF; el modelo original se etiqueta como inglés |
-| Licencia | no disponible en el repositorio GGUF (el modelo original LucetV2 figura como apache-2.0) |
-| Formato de pesos | GGUF (cuantización estática, convert_type: hf, quantize_version: 2, output_tensor_quantised: 1) |
+| Arquitectura | LFM3 (Liquid AI), segun tags del autor; detalles no disponibles |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 512.000 tokens (declarado en tags; no verificado) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (tag `en` en la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (transformers como libreria declarada) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se apoya en la arquitectura Tri-Hybrid de Liquid AI, empleada en la familia LFM3. Esta combina tres mecanismos de secuencia: convoluciones cortas con compuerta para capturar dependencias locales de forma eficiente, atención de ventana deslizante para el contexto intermedio y atención global con GQA (Grouped Query Attention) para la información de largo alcance. El resultado es un modelo compacto de 2B parámetros con un coste de atención reducido frente a un transformer denso equivalente, lo que facilita su despliegue en hardware modesto.
+El modelo base se etiqueta como LFM3, la familia de modelos de Liquid AI, aunque la informacion proporcionada no especifica si se trata de un transformer convencional, un modelo de estado espacio (SSM) o una arquitectura hibrida. Tampoco se detallan el numero de capas, dimensiones ocultas, cabezas de atencion ni el mecanismo exacto de atencion.
 
-El entrenamiento declarado por el autor incluye Next-Concept Modeling (NCM) y protocolos R-Tuning Anti-Hallucination, orientados a mejorar la coherencia y reducir la fabricación de datos. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni detalles del proceso de ajuste. La conversión a GGUF la realiza mradermacher con cuantización estática (quantize_version 2) e imatrix, según las etiquetas del modelo original.
+En cuanto al entrenamiento, los tags mencionan "next-concept-modeling" (NCM), "multi-dimensional-training" y "anti-hallucination", lo que apunta a una metodologia propietaria del autor del modelo base orientada a mejorar la coherencia conceptual y reducir fabricaciones. No se dispone del numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similar. Esta publicacion concreta es una cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) realizada con la herramienta de mradermacher; existe una version con cuantizaciones ponderadas/imatrix en el repositorio LucetV3-2B-Frontier-i1-GGUF.
 
 ## Capacidades
 
-- Generación de texto y razonamiento autónomo, según la descripción del modelo original.
-- Generación de código y tareas relacionadas con sistemas.
-- Protocolos anti-alucinación declarados (R-Tuning), sin validación pública disponible.
-- Contexto largo teórico de hasta 512k tokens (etiqueta del modelo original, no verificado en la versión GGUF).
-- Conversación multi-turno (etiqueta "conversational" en la versión V2).
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (orientación al inglés).
-- Capacidades especiales (visión, audio, thinking mode): no disponible.
+- Generacion de texto conversacional en ingles, segun el tag `conversational` y el pipeline declarado.
+- Entrenamiento orientado a modo "uncensored": menor tendencia a rechazar peticiones, segun los tags del autor.
+- Ventana de contexto declarada de 512.000 tokens, adecuada para documentos largos (no verificada en la informacion disponible).
+- Enfoque "anti-hallucination" declarado por el autor, sin metricas que lo respalden en la informacion proporcionada.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: solo se declara ingles.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Inferencia local en equipos sin GPU dedicada: al estar en GGUF y con 2B parámetros, puede ejecutarse en CPU con llama.cpp usando cuantizaciones Q4_K_M o Q5_K_M, útil para prototipos y pruebas offline.
-- Asistente de código en entornos con recursos limitados: su orientación declarada a coding y sistemas permite integrarlo en editores o CLI locales donde no cabe un modelo mayor.
-- Despliegue en dispositivos de borde: el tamaño reducido y la arquitectura Tri-Hybrid facilitan su ejecución en mini-PC, Raspberry Pi de gama alta o portátiles sin GPU.
-- Procesamiento de documentos largos: el contexto declarado de 512k tokens permitiría, en teoría, resumir o consultar documentos extensos, aunque requiere validación práctica por la falta de benchmarks.
-- Filtrado y clasificación de texto en pipelines: su bajo coste de inferencia lo hace apto para tareas de etiquetado, extracción o moderación a gran escala en local.
-- Base para ajuste fino experimental: al ser un modelo pequeño y con pesos GGUF, sirve como punto de partida para investigación sobre NCM y anti-alucinación, aunque la conversión a otros formatos requeriría los pesos originales.
-- Chat conversacional ligero en aplicaciones embebidas: con cuantización Q4_K_S o Q2_K puede integrarse en demos de chatbot con requisitos mínimos de memoria.
+- Procesamiento de documentos largos en local: con una ventana declarada de 512k tokens, el modelo podria resumir o extraer informacion de contratos, informes o transcripciones extensas sin fragmentacion, siempre que la ventana se confirme en pruebas reales.
+- Asistentes conversacionales en dispositivos con poca memoria: las cuantizaciones Q4_K_S y Q4_K_M (1,2 GB) permiten desplegar un chatbot en un portatil o en una Raspberry Pi con suficiente RAM, con latencia baja por el reducido numero de parametros.
+- Prototipado rapido de aplicaciones de IA generativa: al ser un modelo de 1,7B parametros con licencia Apache 2.0, es adecuado para validar pipelines de inferencia (llama.cpp, Ollama) antes de escalar a modelos mayores.
+- Generacion de texto creativo sin filtros estrictos: el tag "uncensored" lo hace util para experimentacion con narrativa, guiones o dialogos donde los modelos alineados suelen rechazar contenido.
+- Educacion y experimentacion academica: investigadores pueden estudiar el efecto de las tecnicas NCM y "multi-dimensional-training" en un modelo pequeno y ejecutable en una sola GPU.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse completamente en local, permite procesar datos sensibles sin enviarlos a APIs externas, con un coste de hardware minimo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (2B parámetros): aproximadamente 1,5 GB en Q4_K_M, 2,5 GB en Q8_0 y 4 GB en F16, sin contar el espacio de contexto.
-- GPU recomendadas: cualquier GPU con 4-8 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo está sobredimensionado para GPUs de datacenter.
-- Cabe en GPU de consumo: sí, en prácticamente todas las GPU modernas con 4 GB o más; también en iGPU y CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa sin conversión.
-- Latencia y throughput: no disponible; no se han publicado mediciones.
+- VRAM estimada para inferencia (aproximada, segun cuantizacion): Q2_K ~0,9 GB; Q4_K_M ~1,2 GB; Q6_K ~1,5 GB; Q8_0 ~1,9 GB; f16 ~3,6 GB. A estas cifras hay que sumar el espacio para el contexto KV, que crece con la longitud de la ventana utilizada.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones bajas (GTX 1650, RTX 3050); RTX 3060/4060 o superiores para Q6_K/Q8_0 con contexto amplio; A100/H100 no son necesarias para este tamano.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas con 4 GB o mas; tambien en CPU con 8 GB de RAM para cuantizaciones Q4.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no estan optimizados para GGUF de forma nativa.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LucetV3-2B-Frontier (GGUF) | 2B | 512k (declarado) | no disponible | GGUF | Hugging Face |
-| LiquidAI LFM2-1.2B | 1,2B | 32k | LFM Open License | safetensors, GGUF | Hugging Face |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | safetensors, GGUF | Hugging Face |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| LucetV3-2B-Frontier-GGUF | 1,73B | 512k (declarado) | Apache 2.0 | GGUF | Uncensored, NCM, anti-hallucination |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | safetensors, GGUF | Multilingue, muy extendido |
+| Llama 3.2 1B Instruct | 1,24B | 128k | Llama 3.2 Community | safetensors, GGUF | Multilingue, ecosistema amplio |
+| SmolLM2-1.7B-Instruct | 1,71B | 8k | Apache 2.0 | safetensors, GGUF | Entrenado en 11 billones de tokens |
 
-La comparación es orientativa: no hay benchmarks públicos de LucetV3-2B-Frontier que permitan contrastar calidad frente a estos modelos. La ventaja declarada del modelo es el contexto de 512k tokens y el enfoque anti-alucinación; la desventaja es la falta de licencia clara y de validación externa.
+La comparativa se basa en datos publicos de los modelos alternativos; no se dispone de benchmarks del modelo Lucet para establecer comparaciones de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada en el repositorio GGUF: no se puede garantizar el uso comercial sin consultar el modelo original.
-- Ausencia total de benchmarks: no hay evidencia pública de rendimiento en MMLU, HumanEval, GSM8K ni otras tareas.
-- El contexto de 512k tokens es una etiqueta del modelo original y no está verificado en la conversión GGUF; el rendimiento real en contextos largos puede degradarse.
-- Riesgo de alucinación: aunque el modelo declara protocolos anti-alucinación, no hay validación independiente que lo respalde.
-- Idiomas: la información disponible apunta a un enfoque en inglés; el soporte multilingüe no está confirmado.
-- Modelo de nicho con 0 descargas y 0 likes en el momento de la ficha: sin comunidad ni soporte.
-- Fecha de creación futura (2026-11-08) en los metadatos, lo que sugiere posible error de registro o republicación.
-- No se recomienda para producción sin evaluación previa en el caso de uso concreto.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea limitado.
+- El tag "uncensored" implica que el modelo puede generar contenido que otros modelos rechazan; requiere moderacion adicional en produccion.
+- La ventana de 512k tokens es una declaracion del autor sin verificacion independiente; el rendimiento real en contextos muy largos puede degradarse.
+- Las afirmaciones "anti-hallucination" y "multi-dimensional-training" no vienen acompanadas de metricas; deben tratarse como marketing hasta su validacion.
+- Riesgo de alucinacion inherente a un modelo de 1,7B parametros, especialmente en tareas de conocimiento factual.
+- No hay informacion sobre sesgos del dataset de entrenamiento ni sobre evaluaciones de seguridad.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base es de terceros (mohommed/LucetV3-2B-Frontier); conviene verificar la cadena de licencias.
+- El repositorio tiene 0 likes y 726 descargas, lo que indica escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/LucetV3-2B-Frontier-GGUF
-- Modelo original: https://huggingface.co/mohommed/LucetV3-2B-Frontier
-- Versión anterior GGUF: https://huggingface.co/mradermacher/LucetV2-2B-Frontier-GGUF
-- Liquid AI (arquitectura base): https://www.liquid.ai/
+- Modelo base: https://huggingface.co/mohommed/LucetV3-2B-Frontier
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/LucetV3-2B-Frontier-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#LucetV3-2B-Frontier-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

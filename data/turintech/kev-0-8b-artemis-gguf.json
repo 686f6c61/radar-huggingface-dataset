@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 7,
-  "downloads_30d": 723,
+  "downloads_30d": 769,
   "trending_score": 0,
   "parameters": 752917824,
   "parameters_human": "752.9M",
@@ -54,7 +54,7 @@
     {
       "task": "Agreement with the original",
       "dataset": "Final set",
-      "metric": "Same as BF16 (%)",
+      "metric": "Same answer (%)",
       "value": 95.1
     },
     {
@@ -64,7 +64,7 @@
       "value": 0
     },
     {
-      "task": "Agreement with the original",
+      "task": "Typed decisions",
       "dataset": "Final set",
       "metric": "Accuracy (%)",
       "value": 46.8

@@ -5,7 +5,7 @@
   "author": "gpillon",
   "url": "https://huggingface.co/gpillon/Qwen3.8-27B-trellis-2.8bpw-abliterated-ignis",
   "created_at": "2026-11-20T23:46:34.000Z",
-  "updated_at": "2026-11-20T23:49:34.000Z",
+  "updated_at": "2026-11-21T01:08:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

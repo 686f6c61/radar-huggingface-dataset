@@ -5,7 +5,7 @@
   "author": "edededdy",
   "url": "https://huggingface.co/edededdy/dilmac-en-tr-28m",
   "created_at": "2026-11-20T10:44:38.000Z",
-  "updated_at": "2026-11-20T10:45:28.000Z",
+  "updated_at": "2026-11-20T12:06:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "dilmac",
     "feature-extraction",
@@ -37,11 +38,12 @@
   "trending_score": 0,
   "parameters": 28099584,
   "parameters_human": "28.1M",
-  "storage_bytes": 112405568,
-  "storage_human": "112 MB",
+  "storage_bytes": 262818763,
+  "storage_human": "263 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

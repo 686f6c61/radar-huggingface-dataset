@@ -54,8 +54,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "blackpirates/nanohat-qwen3-0.6b-final",
+  "renamed_at": "2026-11-21T06:21:33.916Z",
   "benchmarks": [],
   "sources": []
 }

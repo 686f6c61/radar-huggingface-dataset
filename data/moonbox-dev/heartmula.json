@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "moonbox-dev/HeartMuLa-oss-3B-MLX-PyTorch",
+  "renamed_at": "2026-11-21T09:08:22.583Z",
   "benchmarks": [],
   "sources": []
 }

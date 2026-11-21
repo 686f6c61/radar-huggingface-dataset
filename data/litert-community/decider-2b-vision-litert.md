@@ -2,107 +2,100 @@
 
 ## Resumen
 
-decider-2b-vision-LiteRT es una conversión de terceros al formato LiteRT-LM del modelo Mapika/decider-2b-vision (revisión 863e2908), publicada por el colectivo litert-community. No se trata de un modelo de chat: recibe una imagen y una o varias preguntas con opciones etiquetadas con letras, y devuelve una probabilidad calibrada para cada opción. No genera texto de respuesta; lee los logits de las letras en una posición de respuesta por pregunta y los normaliza a probabilidades. Está pensado para decisiones de "Sistema 1" de un solo paso.
+decider-2b-vision-LiteRT es una conversión de terceros al formato LiteRT-LM del modelo Mapika/decider-2b-vision, un modelo de decisión multimodal de 2.000 millones de parámetros derivado de Qwen3.5-2B. A diferencia de un modelo generativo convencional, no produce texto libre: recibe una imagen y una pregunta con opciones etiquetadas con letras, y devuelve una distribución de probabilidad sobre cada opción leyendo los logits de las letras en una posición de respuesta fija. Está pensado para agentes que necesitan seleccionar acciones discretas (por ejemplo, control de un paddle en Pong) con confianza calibrada.
 
-El modelo subyacente fue construido por Mapika a partir del modelo visión-lenguaje Qwen3.5-2B con los pesos de texto decider-2b v5, sobre la base Qwen/Qwen3.5-2B-Base. El decodificador tiene 24 capas: 18 de atención lineal gated-delta y 6 de atención completa, lo que lo sitúa en la categoría de arquitecturas híbridas. El codificador visual tiene 24 bloques y un fusionador 2×2, de modo que una imagen de 256×256 se reduce a 64 tokens.
+El modelo combina un decodificador híbrido de 24 capas (18 de atención lineal gated-delta y 6 de atención completa) con un codificador visual de 24 bloques y un merger 2×2 que comprime una imagen de 256×256 en 64 tokens. Esta conversión, publicada por litert-community, mantiene los pesos y el tokenizador del modelo original y solo cambia el formato de empaquetado, ofreciendo tres variantes (fp16, fp16 con vocabulario int8 e int8 completo) optimizadas para CPU, GPU de escritorio y móviles.
 
-Esta conversión concreta solo cambia el formato de fichero y añade variantes cuantizadas (fp16, fp16 con vocabulario int8 e int8 dinámico) para su ejecución en CPU y GPU de escritorio y en móviles mediante LiteRT-LM. Es relevante ahora porque permite desplegar un modelo de decisión con salida estructurada y probabilidades calibradas en hardware de consumo, incluidos teléfonos, sin depender de torch ni transformers.
+Su relevancia actual radica en que demuestra un patrón poco habitual: modelos pequeños especializados en decisión estructurada con salida probabilística, desplegables en dispositivos móviles mediante LiteRT-LM. La licencia Apache 2.0 y la disponibilidad de artefactos verificables con SHA-256 lo hacen apto para integración en producción, aunque con matices importantes de precisión según el backend.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: decodificador de 24 capas (18 de atención lineal gated-delta + 6 de atención completa) con codificador visual de 24 bloques y fusionador 2×2 |
-| Parametros totales | ~2 000 millones (según la denominación "2b"); no se publica el desglose exacto |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | caché de 4096 tokens |
-| Tipos de cuantizacion | fp16; fp16 con cabeza de salida y embedding de tokens en int8; int8 dinámico (pesos FC en int8, embedding de tokens int8 por canal) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | .litertlm (LiteRT-LM); tres ficheros: fp16, fp16-int8vocab e int8 |
-| Resolucion de imagen | 256×256 (una imagen por petición) |
-| Plantilla de prompt | identidad, sin marcadores de rol; sin token de inicio; token de parada 248044 |
-| Modelo base | Mapika/decider-2b-vision (revisión 863e290863655f1d6b69324d77d09ac972d21609); a su vez derivado de Qwen/Qwen3.5-2B-Base |
-| Tamano del repositorio | 13,2 GB |
-| Idioma del pipeline | image-text-to-text |
+| Arquitectura | Transformer híbrido con decodificador de 24 capas (18 gated-delta linear attention + 6 full attention) y codificador visual de 24 bloques con merger 2×2 |
+| Parametros totales | 2B (aproximado, según nombre del modelo; no se detalla el desglose exacto) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Caché de 4096 tokens; una imagen de 256×256 ocupa 64 tokens |
+| Tipos de cuantizacion | fp16, fp16 con cabeza de salida int8 dinámica y embedding int8 (channelwise), int8 dinámico completo con embedding int8; codificador visual y adaptador siempre en fp16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | .litertlm (LiteRT-LM); tres ficheros: fp16 (5.509.356.416 B), fp16-int8vocab (4.498.210.816 B), int8 (3.171.155.968 B) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer híbrido. El decodificador combina 18 capas de atención lineal gated-delta con 6 capas de atención completa, un patrón habitual para reducir el coste de la atención manteniendo capacidad de modelado. El componente visual consta de 24 bloques y un fusionador 2×2 que convierte una imagen de 256×256 píxeles en 64 tokens, que se inyectan al decodificador a través de un adaptador. Los tres bundles incluyen metadatos de prompt idénticos, ExecutorMetadata para 48 búferes de estado y preferencia de activaciones en fp32 para el decodificador.
+El decodificador sigue un diseño híbrido: 18 de sus 24 capas emplean gated-delta linear attention, que reduce el coste computacional frente a la atención cuadrática, y las 6 restantes usan atención completa. El codificador visual consta de 24 bloques con un merger 2×2, de modo que una imagen de 256×256 se tokeniza en 64 tokens visuales. El modelo base se construyó a partir de Qwen3.5-2B con los pesos de texto decider-2b v5, según indica la model card del repositorio de conversión.
 
-El entrenamiento corresponde al modelo original de Mapika, no a esta conversión: Mapika construyó decider-2b-vision a partir del modelo visión-lenguaje Qwen3.5-2B con los pesos de texto decider-2b v5. El número de tokens de entrenamiento, la composición del dataset y si hubo RLHF o DPO no se detallan en la información disponible. La innovación funcional del modelo es el modo de salida: en lugar de generar texto libre, lee los logits de las letras en una posición de respuesta por pregunta y los convierte en probabilidades por opción, lo que permite obtener una distribución calibrada sobre alternativas discretas.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esos datos remiten a la model card del modelo original (Mapika/decider-2b-vision). La innovación principal no es arquitectónica sino de interfaz: el modelo lee los logits de las letras de las opciones en un slot de respuesta por pregunta y los normaliza en probabilidades, sin generar texto. El prompt usa una plantilla de identidad sin marcadores de rol, sin token de inicio y con token de parada 248044.
 
 ## Capacidades
 
-- Decisión de un solo paso a partir de una imagen y una pregunta con opciones etiquetadas con letras.
-- Salida de probabilidades por opción (salida estructurada), no texto generado.
-- Entrada multimodal imagen-texto: una imagen de 256×256 por petición.
-- Múltiples preguntas por petición, cada una con su propio conjunto de opciones.
-- Soporte de preguntas con respuesta única entre alternativas cerradas.
-- Ejecución en CPU y GPU de escritorio y en GPU/CPU de móvil mediante LiteRT-LM.
-- Idiomas: únicamente inglés.
-- No soporta tool calling, function calling ni razonamiento multi-paso según la información disponible; el diseño es de una pasada.
-- No dispone de modo "thinking", audio ni generación de texto libre.
+- Decisión multimodal con salida probabilística: dada una imagen y una o varias preguntas con opciones etiquetadas, devuelve una probabilidad por opción.
+- Salida estructurada determinista: no genera texto libre, lo que elimina el riesgo de respuestas mal formateadas o divagaciones.
+- Procesamiento de imágenes de 256×256, tokenizadas en 64 tokens visuales.
+- Soporte de múltiples preguntas por petición (cada una con su propio slot de respuesta).
+- Capacidad de operar sobre frames de videojuegos y entornos visuales simples (el ejemplo publicado es Pong de Atari).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, audio ni modo de razonamiento extendido.
+- Capacidades multilingües limitadas al inglés.
 
 ## Casos de uso
 
-- Control de agentes en entornos de juego: dada una captura de pantalla, el modelo devuelve la probabilidad de cada acción discreta (por ejemplo, en Pong, "move paddle up", "move paddle down" o "stay"), lo que permite construir políticas con umbrales de confianza.
-- Selección de acciones en robótica con opciones finitas: a partir de una imagen de cámara, el modelo puntúa cada acción candidata de un conjunto predefinido y el sistema elige la de mayor probabilidad.
-- Enrutamiento de decisiones en pipelines de agentes: usar la distribución de probabilidades como señal para derivar una consulta a un modelo mayor cuando la confianza es baja.
-- Inspección visual con categorías cerradas: clasificación de imágenes en un conjunto fijo de etiquetas devolviendo, además de la etiqueta, la probabilidad asociada para umbralizar falsos positivos.
-- Despliegue en el borde: la variante int8 está probada en un Galaxy S26 (CPU y GPU), de modo que puede integrarse en aplicaciones móviles que necesiten decidir localmente sin enviar imágenes a la nube.
-- Anotación asistida con probabilidades calibradas: preetiquetar imágenes con opciones y usar las probabilidades como medida de acuerdo entre anotadores o para priorizar revisión humana.
-- Investigación en modelos "System One": banco de pruebas para estudiar decisiones de una pasada con probabilidades frente a modelos generativos de varios pasos.
-- Moderación o triaje de contenido visual: asignar probabilidad a un conjunto reducido de categorías para decidir si una imagen requiere revisión adicional.
+- Control de agentes en entornos visuales discretos: seleccionar la siguiente acción (subir, bajar, quedarse) a partir de un frame, como en el ejemplo de Pong; la salida probabilística permite aplicar umbrales de confianza o políticas exploratorias.
+- Automatización de pruebas de interfaz gráfica: dado un screenshot, elegir entre acciones predefinidas (pulsar botón, desplazar, esperar) con una probabilidad asociada que sirve de señal de fiabilidad.
+- Clasificación visual guiada por lenguaje: plantear preguntas cerradas sobre una imagen ("¿qué objeto se muestra?", "¿qué estado tiene?") y obtener una distribución sobre las opciones en lugar de una respuesta textual.
+- Sistemas de decisión en el borde (edge): el fichero int8 de 3,17 GB está probado en un Galaxy S26, lo que permite ejecutar decisiones visuales en el propio dispositivo sin enviar imágenes a la nube.
+- Enrutamiento y triaje multimodal: usar la confianza por opción para decidir si un caso se resuelve automáticamente o se escala a un modelo mayor o a un humano.
+- Investigación en calibración de modelos de decisión: la disponibilidad de tres cuantizaciones con lecturas de referencia y comparación de desviaciones (max |Δp|) facilita estudiar el impacto de la cuantización en las probabilidades.
+- Selección de acciones en robótica sencilla o simulación: elegir entre un conjunto discreto de comandos motores a partir de la observación visual, con probabilidad como medida de incertidumbre.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (ni MMLU, ni HumanEval, ni GSM8K, ni equivalentes).
+No se han publicado resultados de benchmarks en la información disponible. La model card sí reporta mediciones de fidelidad frente al modelo original en fp32 sobre el frame publicado de Pong (pregunta "What should you do right now?" con tres opciones):
 
-La model card sí documenta una validación cualitativa sobre un fotograma de Pong (game_pong_atari_up, 160×210). Ante la pregunta "What should you do right now?" con las opciones "move paddle up", "move paddle down" y "stay", el modelo upstream en fp32 asigna 0.99986 a "move paddle up" sobre una entrada de 256×256; las variantes fp16 y fp16-int8vocab devuelven el mismo valor hasta cinco dígitos decimales en la lectura de referencia sobre CPU de Mac. Esta cifra no constituye un benchmark estandarizado.
+| Variante / backend | Coincidencia de respuesta | max abs(delta p) | p95 abs(delta p) |
+|---|---|---|---|
+| fp16 / fp16-int8vocab (Mac CPU, lectura de referencia) | misma probabilidad 0,99986 a cinco dígitos | no disponible | no disponible |
+| fp16-int8vocab (Mac GPU, Metal) | no disponible | 0,0085 | no disponible |
+| int8 (Mac GPU, Metal, un chunk por slot) | 52/53 | 0,032 | 0,011 |
+| int8 (CPU, cuantización dinámica de activaciones) | 51/53 | 0,429 | 0,164 |
+| int8 (CPU, un chunk rellenado) | no disponible | 0,233 | no disponible |
+| int8 (Galaxy S26, CPU y GPU) | primera letra correcta en 6/6 filas | no medido (el runtime devuelve solo texto) | no disponible |
 
 ## Requisitos de hardware
 
-- Tamaño de los ficheros de pesos: fp16 5 509 356 416 B (~5,5 GB); fp16-int8vocab 4 498 201 472 B (~4,5 GB); int8 3 171 081 088 B (~3,2 GB).
-- Memoria en CPU con XNNPACK: XNNPACK expande los pesos fp16 a fp32, de modo que la caché de CPU de un bundle ocupa 7 540 052 280 B (decodificador fp16), 6 016 360 768 B (fp16-int8vocab) o 1 896 902 288 B (int8), más 1 312 687 576 B del codificador visual y el adaptador.
-- Memoria en GPU (Mac, Metal): pico de RSS de 7,0 GB para fp16-int8vocab frente a 15,6 GB para fp16.
-- GPU de escritorio: la variante fp16-int8vocab está pensada para GPU de escritorio a aproximadamente la mitad de memoria que fp16.
-- Viabilidad en GPU de consumo: no se especifican modelos concretos (RTX 4090, A100, H100); los datos disponibles se refieren a Mac con Metal y a un Galaxy S26, no a GPU NVIDIA.
-- Móvil: la variante int8 se probó en un Galaxy S26 con LiteRT-LM v0.16.0 (CPU y GPU). El fichero fp16 no es apto para teléfonos (XNNPACK lo expande a 7,5 GB) y no se probó en el S26. La variante fp16-int8vocab no cabía en la GPU del Galaxy S26.
-- Caché de programa en GPU: el decodificador genera una caché de programa que creció 270 663 680 B en cada creación de motor en las pruebas realizadas (821 634 912 B tras tres), más una caché de pesos de 508 563 920 B para la cabeza int8 del fichero fp16-int8vocab.
-- Opciones de despliegue: LiteRT-LM 0.17.1 (probado en Mac, CPU y GPU; la variante int8 también en LiteRT-LM v0.16.0 en Galaxy S26) y la lectura de referencia mediante ai-edge-litert 2.2.0, numpy, Pillow y tokenizers. No utiliza torch ni transformers.
-- Latencia y throughput: no disponibles; no se publican cifras de latencia ni de tokens por segundo.
+- VRAM/RAM estimada: fp16 requiere 5,51 GB de pesos, pero XNNPACK los expande a fp32 (7,5 GB) en CPU; la caché de CPU de LiteRT-LM ocupa 7.540.052.280 B para el decodificador fp16, 6.016.360.768 B para fp16-int8vocab y 1.896.902.288 B para int8, más 1.312.687.576 B del codificador visual y adaptador.
+- GPU de escritorio: la variante fp16-int8vocab alcanza un pico de RSS de 7,0 GB en GPU de Mac frente a 15,6 GB del fp16, aproximadamente la mitad de memoria.
+- Móvil: el fichero int8 (3,17 GB) está probado en un Galaxy S26 con CPU y GPU; el fp16-int8vocab no cupo en la GPU del S26.
+- Consumer GPU: no se documentan pruebas en RTX 4090 ni similares; los datos disponibles son de Apple M4 Max (CPU y GPU Metal) y Galaxy S26.
+- Despliegue: LiteRT-LM 0.17.1 (Mac, CPU y GPU) y LiteRT-LM v0.16.0 (Galaxy S26). La lectura de referencia requiere ai-edge-litert 2.2.0, numpy, Pillow y tokenizers, sin torch ni transformers. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Salida | Disponibilidad |
+| Modelo | Parámetros | Contexto | Salida | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| litert-community/decider-2b-vision-LiteRT | ~2 000 M (denominación "2b") | 4096 tokens | .litertlm (fp16, fp16-int8vocab, int8) | Apache 2.0 | Probabilidades por opción | LiteRT-LM (escritorio y móvil) |
-| Mapika/decider-2b-vision (upstream) | ~2 000 M (denominación "2b") | no disponible | no disponible | Apache 2.0 | Probabilidades por opción | Modelo original de referencia |
-| litert-community/decider-0.8b-LiteRT | ~0,8 B (denominación "0.8b") | no disponible | LiteRT-LM | Apache 2.0 | Salida estructurada / decisión | LiteRT-LM |
-| Qwen/Qwen3.5-2B-Base | ~2 000 M (denominación "2b") | no disponible | no disponible | no disponible en la información consultada | Texto generado | Base de texto del modelo visión-lenguaje |
+| decider-2b-vision-LiteRT | 2B | 4096 tokens, imagen 256×256 en 64 tokens | Probabilidades sobre opciones (sin texto) | en | apache-2.0 | .litertlm |
+| Mapika/decider-2b-vision (original) | 2B | no disponible | Probabilidades sobre opciones | en | no disponible en la información | safetensors (presumible, no confirmado) |
+| Qwen3.5-2B-Base (modelo de partida) | 2B | no disponible | Texto generativo | no disponible | no disponible en la información | no disponible |
 
-No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con otras alternativas de la misma categoría (modelos de decisión visual con salida probabilística), por lo que la comparación se limita a parámetros, contexto, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Solo admite inglés; no hay soporte multilingüe declarado.
-- No genera texto libre: únicamente devuelve probabilidades sobre opciones predefinidas, por lo que no sirve para tareas generativas.
-- La cuantización int8 en CPU degrada la calibración: en las preguntas publicadas coinciden 51 de 53 respuestas con el modelo upstream, con un |Δp| máximo de 0,429 y un p95 de 0,164. El resultado además depende de cómo se divida el prompt en fragmentos de prefill (|Δp| máximo de 0,233 con un único fragmento rellenado).
-- En GPU de Mac (Metal, un fragmento rellenado por posición de respuesta) la variante int8 calcula los pesos en coma flotante y mejora la coincidencia: 52 de 53, con |Δp| máximo de 0,032 y p95 de 0,011.
-- Las probabilidades en el móvil no se midieron porque el runtime devuelve solo texto; en el Galaxy S26 el primer token coincidió con la letra de respuesta del upstream en 6 de 6 filas en ambos backends.
-- La variante fp16 no cabe en teléfonos: XNNPACK expande sus pesos a 7,5 GB, y no se probó en el Galaxy S26.
-- Es una conversión de terceros que cambia únicamente el formato de fichero; el entrenamiento y las limitaciones del modelo son las del modelo upstream de Mapika.
-- La lectura de referencia requiere ai-edge-litert 2.2.0 y no utiliza torch ni transformers, lo que condiciona la integración en entornos existentes.
-- Riesgo de alucinación y sesgos: no se documentan en la información disponible; al tratarse de un modelo de decisión sobre opciones cerradas, el riesgo principal es una calibración deficiente bajo cuantización, no la generación de texto inventado.
-- Licencia Apache 2.0, que permite uso comercial; conviene verificar las condiciones del modelo base Qwen3.5-2B y del modelo upstream por separado.
+- Solo inglés: el tokenizador y los prompts de entrenamiento están en inglés; no se garantiza comportamiento correcto en castellano.
+- No es un modelo generativo: no produce explicaciones ni texto; solo probabilidades sobre opciones predefinidas. No sirve para diálogo abierto ni para tareas fuera de la selección entre alternativas.
+- Sensibilidad a la cuantización en CPU: la variante int8 con cuantización dinámica de activaciones desvía hasta 0,429 en probabilidad respecto al original y depende de cómo se fragmenta el prompt en chunks de prefill, lo que puede alterar decisiones en producción.
+- Resolución de imagen fija de 256×256 y una sola imagen por petición; detalles finos pueden perderse tras el merger 2×2.
+- En móvil, el runtime devuelve solo texto y no expone las probabilidades, lo que limita el uso de la confianza calibrada en esos dispositivos.
+- Riesgo de alucinación no aplica en el sentido habitual (no genera texto), pero sí existe riesgo de asignar alta confianza a opciones incorrectas si la imagen o la pregunta difieren de la distribución de entrenamiento.
+- Sesgos: no documentados en la información disponible; al derivar de Qwen3.5-2B y entrenarse sobre frames de juegos, cabe esperar un dominio estrecho.
+- Licencia Apache 2.0 permite uso comercial, pero la model card del modelo base debe consultarse para condiciones adicionales de los pesos originales.
+- El repositorio ocupa 20,8 GB y las cachés de LiteRT-LM en disco pueden superar los 7,5 GB por fichero; conviene planificar el almacenamiento en despliegues embebidos.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/litert-community/decider-2b-vision-LiteRT
-- Modelo upstream: https://huggingface.co/Mapika/decider-2b-vision
-- Repositorio GitHub de Mapika: https://github.com/Mapika/decider
-- Modelo base de texto: https://huggingface.co/Qwen/Qwen3.5-2B-Base
-- Conversión relacionada: https://huggingface.co/litert-community/decider-0.8b-LiteRT
-- Ficha en gradually.ai: https://www.gradually.ai/en/ai-models/decider-2b-vision/
-- Ficha en LLM Explorer: https://llm-explorer.com/model/Mapika%2Fdecider-2b-vision,1SUvHpABlJ7CDk3W3he1HT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/decider-2b-vision-LiteRT
+- Modelo base: https://huggingface.co/Mapika/decider-2b-vision
+- Modelo de partida textual: https://huggingface.co/Qwen/Qwen3.5-2B-Base
+- Checksums: https://huggingface.co/litert-community/decider-2b-vision-LiteRT/blob/main/SHA256SUMS
+- Petición de ejemplo: https://huggingface.co/litert-community/decider-2b-vision-LiteRT/blob/main/reference/example_request.json
+- Script de lectura de referencia: https://huggingface.co/litert-community/decider-2b-vision-LiteRT/blob/main/reference/decider_litert.py

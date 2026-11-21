@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 728,
+  "downloads_30d": 683,
   "trending_score": 0,
   "parameters": 317184,
   "parameters_human": "317184",
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "andyoneal (Andy O&#x27;Neal) - Hugging Face",
-      "url": "https://huggingface.co/andyoneal/models",
-      "snippet": "andyoneal&#x27;s models6 Sort: Recently updated andyoneal/Plainspeak-Dial-Gemma-4-26B-A4B 81.7k•Updated 17 days ago• 65 • 10"
-    },
-    {
-      "title": "andyoneal (Andy O&#x27;Neal) - Hugging Face",
-      "url": "https://huggingface.co/andyoneal",
-      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
-    },
-    {
-      "title": "AI Model Directory — 649 AI Models by Provider | Free.ai",
-      "url": "https://free.ai/models/",
-      "snippet": "Browse every AI model on Free.ai — 649 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
-    },
-    {
-      "title": "Free AI Vectorizer | Adobe Firefly",
-      "url": "https://www.adobe.com/products/firefly/features/ai-graphic-design-generator/vectorizer.html",
-      "snippet": "An AI vectorizer uses artificial intelligence to generate graphics from a text description. Adobe Firefly will turn your prompt into clean lines, shapes, and colors that scale to any size without losing quality, ready for logos, icons, and illustrations."
-    },
-    {
-      "title": "Realistic AI Model Generator for Image & Video | Anyloops",
-      "url": "https://www.anyloops.ai/",
-      "snippet": "Anyloops lets you create photorealistic AI characters called AI Models, give each one a reusable visual identity, and generate consistent images and videos."
-    }
-  ]
+  "sources": []
 }

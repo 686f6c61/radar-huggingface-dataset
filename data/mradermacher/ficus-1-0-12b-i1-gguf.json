@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ficus-1.0-12B-i1-GGUF",
   "created_at": "2026-11-18T05:29:07.000Z",
-  "updated_at": "2026-11-18T09:44:00.000Z",
+  "updated_at": "2026-11-20T10:52:02.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 7564,
+  "downloads_30d": 10598,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

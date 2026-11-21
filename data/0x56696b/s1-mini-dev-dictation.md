@@ -2,98 +2,91 @@
 
 ## Resumen
 
-S1-mini-dev-dictation es un ajuste fino (fine-tune) del modelo S1-mini de Superwhisper, que a su vez deriva de Qwen/Qwen3-0.6B. Lo desarrolla el usuario 0x56696B y su propósito es especializar el post-procesado de transcripciones ASR (dictado) en el dominio del desarrollo de software, DevOps y herramientas de IA. El modelo no transcribe audio: recibe una transcripción en bruto generada por un sistema ASR y devuelve el texto limpio, con puntuación, mayúsculas correctas, normalización de identificadores técnicos (rutas, nombres de ficheros, siglas) y eliminación de muletillas.
+S1-mini-dev-dictation es un fine-tune de LoRA sobre S1-mini de Superwhisper, que a su vez deriva de Qwen3-0.6B. Lo desarrolla el usuario 0x56696B y su proposito es el post-procesado de transcripciones ASR en el ambito de la ingenieria de software, DevOps y herramientas de IA: convierte dictado crudo (con tartamudeos, muletillas, reinicios y terminos deletreados) en texto limpio, con puntuacion, mayusculas correctas y nomenclatura tecnica preservada.
 
-Arquitectura transformer de tipo decoder-only con 596.049.920 parámetros totales (aproximadamente 0,6 mil millones), heredada íntegramente de Qwen3-0.6B. El cambio introducido es un LoRA de rango 16 fusionado en los pesos bf16 originales, por lo que la arquitectura, el vocabulario, el tokenizer y la plantilla de chat son idénticos a los del modelo base. Es un reemplazo directo (drop-in replacement) de S1-mini: mismo prompt de sistema, misma línea de control y misma forma de invocación.
+El modelo no transcribe audio: recibe texto ASR y devuelve texto normalizado. Con 596 millones de parametros y arquitectura transformer decoder-only heredada de Qwen3, es un modelo pequeno pensado para ejecutarse en local o en el borde, como componente de un pipeline de dictado. Mantiene el formato de entrada, el estilo de salida y la linea de control de S1-mini, por lo que es un reemplazo directo (drop-in) del modelo base.
 
-Su relevancia radica en que aborda un problema concreto y medible: la brecha entre lo que un ASR produce y lo que un desarrollador espera al dictar código, rutas o comandos. Frente al modelo base, el autor reporta una mejora de 32,2% a 84,7% en coincidencia exacta sobre un conjunto de validación de 59 casos, lo que lo hace útil como etapa de limpieza en pipelines de dictado técnico.
+Es relevante porque ataca un problema concreto y mal cubierto: los asistentes de dictado genericos no entienden jerga como `~/.omp/agent/WATCHDOG.yml`, `--verbose` o `Qwen3.5-4B`, y ademas arrastran muletillas y repeticiones. Este fine-tune se entrena especificamente sobre ese dominio, con un conjunto de datos pequeno pero muy curado y verificado fila a fila.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3-0.6B), fine-tune LoRA fusionado |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-0.6B), 28 bloques |
 | Parametros totales | 596.049.920 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | bf16 (pesos fusionados), GGUF Q8_0 y Q4_K_M |
+| Tipos de cuantizacion | bf16 (pesos fusionados), GGUF Q8_0 y Q4_K_M; el adaptador LoRA se entrena en rank 16 |
 | Idiomas soportados | en (ingles) |
-| Licencia | s1-mini-license (Apache 2.0 con clausula adicional de atribucion de nombre) |
+| Licencia | s1-mini-license (Apache 2.0 con clausula adicional de atribucion del nombre) |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo conserva la arquitectura transformer decoder-only de Qwen3-0.6B sin modificaciones estructurales. El ajuste se realizó con LoRA de rango 16, escala 4.0 y dropout 0.05 aplicado a todas las capas lineales de los 28 bloques del modelo, entrenado con mlx-lm durante 4 épocas, con tasa de aprendizaje 1e-4 y tamaño de lote 8. El adaptador se fusionó posteriormente en los pesos bf16. La función de pérdida cubre únicamente el texto limpio de salida: el prompt de sistema, la línea de control, la transcripción de entrada y el bloque `<think>` vacío quedan enmascarados. Las conversiones a GGUF (Q8_0 y Q4_K_M) se generaron desde los pesos fusionados con llama.cpp.
+El modelo conserva la arquitectura, el vocabulario, el tokenizer, la plantilla de chat y el system prompt originales de S1-mini (Qwen3-0.6B). Sobre esa base se aplica un fine-tune LoRA de rango 16, escala 4.0 y dropout 0.05 en todas las capas lineales de los 28 bloques, entrenado con mlx-lm a batch size 8 en dos rondas. La ronda 1 hizo 4 epocas a learning rate 1e-4; la ronda 2 continuo desde el adaptador de la ronda 1 a 5e-5 con gradient checkpointing, configurada para 2 epocas (553 iteraciones), aunque el adaptador publicado es el checkpoint de la iteracion 300 (aproximadamente 1,1 epocas, con perdida de validacion minima de 0.269 y final de 0.305). El adaptador se fusiona en los pesos bf16.
 
-El conjunto de entrenamiento consta de 1.248 pares de transcripción ASR cruda y texto limpio (1.123 para entrenamiento, 125 para validación). Se compone de 249 pares redactados con asistente de IA sobre los casos de fallo objetivo, 564 filas generadas a partir de plantillas de frase rellenadas con un vocabulario de formas escritas, formas habladas y categoría (con muletillas y autocorrecciones inyectadas), 36 transcripciones limpiadas por Qwen3.5-9B con un prompt de instrucción fijo y 399 transcripciones sintéticas generales no técnicas limpiadas por el S1-mini original para mitigar el olvido catastrófico. La distribución de estilos es 1.013 semi-formal, 81 formal, 78 casual y 76 semi-casual, con 175 filas de contexto email y 69 con listas de viñetas. Cada fila supera cuatro comprobaciones automáticas: ningún número que la transcripción no diga, ausencia de "um"/"uh"/"er", ausencia de viñetas bajo `Structure: prose` y ausencia de "so" inicial en estilos semi-formal y formal.
+Los datos de entrenamiento son pares de transcripcion ASR cruda y texto limpio. La ronda 1 uso 1.248 filas (1.123 de entrenamiento, 125 de validacion): 249 pares de casos de fallo redactados con un asistente de IA, 564 filas de plantillas de frases rellenadas desde un vocabulario con formas habladas y escritas, 36 transcripciones limpiadas por Qwen3.5-9B y revisadas manualmente, y 399 transcripciones sinteticas generales limpiadas por S1-mini original para evitar olvido catastrofico. La ronda 2 anadio 86 pares escritos a mano, filas de 52 plantillas nuevas con ruido inyectado y varios cientos de dictados reales del autor anonimizados. La perdida se calcula solo sobre el texto limpio; el system prompt, la linea de control, la transcripcion y el bloque `<think>` vacio estan enmascarados. No se menciona RLHF ni DPO.
 
 ## Capacidades
 
-- Limpieza y normalización de transcripciones ASR en inglés: puntuación, mayúsculas (truecasing), eliminación de muletillas y autocorrecciones.
-- Normalización inversa de texto (ITN) para identificadores técnicos: siglas deletreadas ("a d o" a "ADO"), versiones habladas ("queen three point five four b" a "Qwen3.5-4B"), rutas ("tilde slash dot omp slash agent slash watchdog dot yml" a `~/.omp/agent/WATCHDOG.yml`) y nombres de fichero con extensión.
-- Control de estilo mediante línea de control con tres ejes: `Styling` (semi-formal, formal, casual, semi-casual), `Structure` (prose, list) y `Context` (general, email).
-- Generación de listas con viñetas cuando la línea de control lo solicita.
-- Modo de razonamiento desactivable (`enable_thinking=False`); el modelo está entrenado para emitir un bloque `<think>` vacío.
-- No responde a peticiones dictadas: las limpia. No ejecuta instrucciones contenidas en la transcripción.
-- Sin soporte de tool calling, function calling, agentes, visión ni audio documentado en la información disponible.
-- Multilingüe: no; únicamente inglés.
+- Normalizacion de texto ASR: puntuacion, mayusculas (truecasing) y eliminacion de muletillas (`um`, `uh`, `er`, `om`, `hmm`, etc.).
+- Eliminacion de tartamudeos y reinicios (`the the`, `dep deploy`), preservando repeticiones con significado (`really really`, `that that`, `--`).
+- Preservacion de nomenclatura tecnica dictada letra a letra o con palabras: `a d o` a `ADO`, `tilde slash dot omp` a `~/.omp/...`, `dash dash verbose` a `--verbose`.
+- Limpieza de peticiones dictadas sin responderlas: el modelo limpia, nunca ejecuta la instruccion.
+- Cuatro estilos de salida: casual, semi-casual, semi-formal y formal.
+- Soporte de contexto de correo (`Context: email`) y de listas con vinetas.
+- Control mediante linea de control y system prompt heredados de S1-mini.
+- No dispone de tool calling, function calling, vision, audio ni modo thinking funcional (el bloque `<think>` va vacio).
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Post-procesado en pipelines de dictado para desarrolladores: el modelo se coloca como etapa final tras el ASR y normaliza la salida antes de insertarla en el editor, corrigiendo siglas, rutas y nombres de fichero que el ASR transcribe literalmente letra a letra.
-- Generación de documentación técnica a partir de notas de voz: con `[Context: email]` o `[Structure: list]`, convierte un dictado desordenado sobre una incidencia en un correo o una lista de pasos con puntuación y mayúsculas correctas.
-- Registro de incidencias en herramientas como Azure DevOps o Jira: transforma "so the a d o ticket needs the m c p config" en "The ADO ticket needs the MCP config.", listo para pegar en el campo de descripción sin retoque manual.
-- Dictado de comandos y rutas en terminal: normaliza transcripciones de rutas con `~`, barras y extensiones, reduciendo errores de ejecución por rutas mal transcritas.
-- Asistencia a la revisión de código por voz: permite dictar referencias a ficheros y funciones (`whisper.cpp with the DER metric`) que el modelo devuelve con el formato exacto esperado por el revisor.
-- Integración en herramientas de escritorio de dictado (estilo superwhisper): el modelo es un reemplazo directo del base, por lo que puede sustituirse en la configuración existente sin cambiar el prompt de sistema ni la plantilla de chat.
-- Limpieza por lotes de transcripciones de reuniones técnicas: al ser un modelo de 0,6B y con builds GGUF Q4_K_M, puede ejecutarse localmente sobre lotes de transcripciones sin coste de API.
+- Dictado de codigo y comandos en el editor: el modelo convierte "tilde slash dot omp slash agent slash watchdog dot yml" en `~/.omp/agent/WATCHDOG.yml`, lo que permite dictar rutas y flags de CLI sin correccion manual posterior.
+- Post-procesado en pipelines ASR locales: se inserta entre el motor de reconocimiento (whisper.cpp, sherpa-onnx) y la aplicacion final para anadir puntuacion, mayusculas y limpiar muletillas antes de mostrar el texto.
+- Redaccion de tickets y mensajes de commit: limpia dictados semi-formales y formales, elimina reinicios y deja frases coherentes listas para pegar en un issue tracker o en un mensaje de commit.
+- Asistencia a reuniones y notas tecnicas: con el estilo semi-formal y soporte de listas, transforma transcripciones habladas en notas con vinetas.
+- Correos dictados: el contexto `Context: email` adapta el registro y la puntuacion al formato de correo electronico.
+- Herramientas de accesibilidad para desarrolladores: dictado manos libres en entornos donde el teclado no es practico, con preservacion de identificadores tecnicos.
+- Integracion en asistentes de voz para DevOps: limpieza de comandos dictados antes de pasarlos a un shell o a un agente, evitando que muletillas o repeticiones rompan la ejecucion.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre un conjunto de validación de 59 casos nunca vistos en entrenamiento, con el GGUF Q4_K_M ejecutado en Ollama y decodificación greedy:
-
-| Modelo | Casos | Coincidencia exacta | Precisión por palabra | Precisión por caracter |
-|---|---|---|---|---|
-| S1-mini (base) | 59 | 32,2% | 78,2% | 91,0% |
-| S1-mini-dev-dictation | 59 | 84,7% | 93,8% | 97,3% |
-
-Además, sobre los diez ejemplos de la model card de S1-mini (estilos semi-formal, formal y casual, más una lista y un correo), este modelo coincide con la salida de la card en 9 de 10 casos y con el build Q4_K_M del base en 7 de 10. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo declara objetivos de comportamiento de entrenamiento (pares hablado/escrito) y una perdida de validacion de 0.269 en el checkpoint publicado, sin comparaciones con MMLU, HumanEval, GSM8K ni metricas ASR como WER o DER.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: en torno a 1,2 GB solo para pesos, más overhead de activaciones y caché KV; cabe holgadamente en cualquier GPU consumer con 4 GB o más.
-- VRAM estimada en GGUF Q8_0: aproximadamente 0,7 GB de pesos; en Q4_K_M, alrededor de 0,4 GB.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; para despliegue en servidor, A100 o H100 no son necesarias pero funcionan sin problema.
-- Cabe en CPU: los builds GGUF permiten inferencia en CPU con llama.cpp u Ollama, con latencia mayor pero viable para post-procesado por lotes.
-- Opciones de despliegue: transformers (con `enable_thinking=False`), llama.cpp (`llama-server` con plantilla jinja), Ollama (Modelfile con bloque think vacío, `temperature 0` y `repeat_penalty 1`), y text-generation-inference por los tags del repo.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: aproximadamente 1,2 GB en bf16 (596 M parametros), en torno a 0,6-0,7 GB en GGUF Q8_0 y 0,4 GB en Q4_K_M, mas overhead de contexto y runtime.
+- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, asi como en Apple Silicon via mlx.
+- Tambien puede ejecutarse en CPU con llama.cpp u Ollama para los builds GGUF, con latencia mayor pero suficiente para post-procesado de dictado.
+- Opciones de despliegue: transformers (pesos safetensors), llama.cpp (GGUF), Ollama, y text-generation-inference por compatibilidad de endpoints.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S1-mini-dev-dictation | 596 M | no disponible | Limpieza de dictado técnico (EN) | s1-mini-license | Hugging Face, GGUF |
-| S1-mini (base) | 596 M | no disponible | Limpieza de dictado general (EN) | Apache 2.0 con cláusula de nombre | Hugging Face |
-| Qwen3-0.6B | 596 M | no disponible | Generación de texto general | Apache 2.0 | Hugging Face |
+| S1-mini-dev-dictation | 596 M | no disponible | Post-procesado ASR para ingenieria de software | s1-mini-license | Hugging Face |
+| superwhisper/s1-mini | 596 M (base Qwen3-0.6B) | no disponible | Post-procesado ASR generico | s1-mini-license | Hugging Face |
+| Qwen/Qwen3-0.6B | 596 M | no disponible | LLM generalista | Apache 2.0 | Hugging Face |
 
-Frente a S1-mini, este fine-tune mejora la coincidencia exacta de 32,2% a 84,7% en el conjunto de validación del autor, a costa de especializarse en vocabulario técnico. Frente a Qwen3-0.6B, no es un modelo de propósito general: está entrenado exclusivamente para normalizar transcripciones y no debe usarse como asistente conversacional. No se dispone de datos de benchmarks comparativos con otras alternativas de post-procesado ASR en la información proporcionada.
+No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, licencia y proposito.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: el modelo no está entrenado ni evaluado para otros idiomas.
-- Es un modelo de limpieza, no de respuesta: si la transcripción contiene una pregunta o una instrucción, el modelo la reformatea pero no la responde. No debe usarse como asistente.
-- Riesgo de alucinación en cifras y nombres: aunque el entrenamiento incluye una comprobación de que no aparezcan números no dictados, no hay garantía formal en producción; conviene validar la salida en dominios críticos.
-- Sesgos: el conjunto de entrenamiento está redactado a partir del estilo de dictado de un único autor y de plantillas generadas con asistente de IA, lo que puede introducir sesgo hacia ese registro y vocabulario técnico concreto.
-- Licencia: la s1-mini-license añade a Apache 2.0 la obligación de identificar el modelo como "S1-mini" de "Superwhisper" con esa capitalización exacta en cualquier uso, distribución o producto derivado, con independencia del nombre comercial. Es una restricción de atribución que debe revisarse antes de uso comercial.
-- El modelo base S1-mini es a su vez un fine-tune de Qwen3-0.6B; se heredan las limitaciones de conocimiento y razonamiento de un modelo de 0,6B.
-- El conjunto de validación es pequeño (59 casos) y fue puntuado por el propio autor; los resultados deben interpretarse con cautela.
-- La fecha de creación del repositorio (2026-11-10) y el uso de Qwen3.5-9B en la generación de datos no son verificables desde la información disponible; conviene contrastar la procedencia antes de adoptarlo en producción.
+- Solo soporta ingles; no hay capacidades multilingues declaradas.
+- Entrenado sobre un conjunto de datos pequeno (poco mas de 1.300 filas en la ronda 1 mas ampliaciones en la ronda 2), lo que puede limitar la generalizacion fuera del dominio de ingenieria de software y DevOps.
+- Riesgo de alucinacion o de "limpiar" en exceso contenido que deberia preservarse, especialmente con repeticiones ambiguas.
+- No transcribe audio: requiere un motor ASR previo; su calidad depende de la calidad de la transcripcion de entrada.
+- La licencia s1-mini-license impone una clausula de atribucion: cualquier uso, distribucion o integracion debe identificar el modelo como "S1-mini" de "Superwhisper" con esa capitalizacion exacta, incluso en productos derivados. Conviene revisar el texto completo antes de un uso comercial.
+- El modelo limpia dictados pero no responde peticiones; no debe usarse como asistente conversacional.
+- No dispone de tool calling ni de agentes; el bloque `<think>` esta vacio por diseno.
+- Los objetivos de comportamiento de la model card son objetivos de entrenamiento, no resultados medidos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/0x56696B/S1-mini-dev-dictation
-- Modelo base S1-mini: https://huggingface.co/superwhisper/s1-mini
-- Licencia del modelo base: https://huggingface.co/superwhisper/s1-mini/blob/main/LICENSE
+- Hugging Face: https://huggingface.co/0x56696B/S1-mini-dev-dictation
+- Modelo base: https://huggingface.co/superwhisper/s1-mini
+- Licencia S1-mini: https://huggingface.co/superwhisper/s1-mini/blob/main/LICENSE
 - Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm
-- Paper de referencia (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
+- Paper Qwen3 (arxiv:2505.09388): https://arxiv.org/abs/2505.09388
+- mlx-lm: https://github.com/ml-explore/mlx-lm

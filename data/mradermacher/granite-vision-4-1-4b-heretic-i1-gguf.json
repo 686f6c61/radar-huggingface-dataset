@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/granite-vision-4.1-4b-heretic-i1-GGUF",
+  "slug": "mradermacher-granite-vision-4-1-4b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/granite-vision-4.1-4b-heretic-i1-GGUF",
+  "created_at": "2026-11-21T11:13:56.000Z",
+  "updated_at": "2026-11-21T11:14:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1887800,
+  "parameters_human": "1.9M",
+  "storage_bytes": 7631200,
+  "storage_human": "8 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

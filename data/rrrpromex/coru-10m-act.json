@@ -5,7 +5,7 @@
   "author": "rrrpromex",
   "url": "https://huggingface.co/rrrpromex/CORU-10M-ACT",
   "created_at": "2026-11-19T15:56:39.000Z",
-  "updated_at": "2026-11-20T04:39:55.000Z",
+  "updated_at": "2026-11-21T06:35:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 9995264,
   "parameters_human": "10.0M",

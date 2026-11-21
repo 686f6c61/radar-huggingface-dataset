@@ -2,141 +2,105 @@
 
 ## Resumen
 
-Whale-call-detector es un modelo de clasificación de audio desarrollado por el usuario davethaler y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer (AST) preentrenado sobre AudioSet con 527 clases de sonidos generales. El modelo resultante clasifica fragmentos de audio en ocho categorías acústicas: Water, Resident, Transient, Humpback, Vessel, Jingle, Human y Bird, combinando llamadas de distintas especies de cetáceos con fuentes de ruido ambiental y antropogénico.
+whale-call-detector es un modelo de clasificación de audio obtenido mediante fine-tuning supervisado del checkpoint MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer (AST) preentrenado sobre AudioSet. Lo publica el usuario davethaler en Hugging Face y su propósito declarado es detectar y clasificar llamadas de ballena junto con otras clases acústicas (embarcaciones, sonidos humanos, aves y ruido de tipo "jingle"). El modelo parte de una arquitectura transformer aplicada directamente a espectrogramas de Mel, con 86.194.952 parámetros totales en formato safetensors.
 
-El modelo resuelve un problema concreto de bioacústica marina: la detección y discriminación automática de vocalizaciones de ballenas frente a ruido de fondo, tráfico marítimo u otras fuentes sonoras. Con 86.194.952 parámetros (aproximadamente 86 M, en el rango típico de un AST base), es un modelo compacto que puede ejecutarse en hardware modesto, incluida CPU o GPUs de gama de consumo.
+La relevancia práctica del modelo reside en su especialización: parte de un backbone genérico de clasificación de audio y lo ajusta a un conjunto etiquetado de ocho clases de interés bioacústico y antropogénico. El autor reporta en la model card una accuracy de 0,9208, precision de 0,9274, recall de 0,9208 y F1 de 0,9121 sobre el conjunto de evaluación, con F1 por clase que oscila entre 0,88 (Transient) y 0,9474 (Water). Es, por tanto, un modelo pequeño y desplegable en hardware modesto, orientado a tareas de monitorización acústica pasiva.
 
-Es relevante en el contexto actual de monitorización acústica pasiva (PAM) marina, donde la cantidad de grabaciones generadas por boyas, hidrófonos y planeadores submarinos supera con creces la capacidad de análisis manual. Un clasificador ligero con una accuracy declarada de 0,9368 en el conjunto de evaluación permite filtrar y etiquetar automáticamente horas de audio en el borde (edge computing) o en centros de datos pequeños. La licencia BSD-3-Clause facilita su integración en proyectos comerciales y de investigación sin las restricciones de licencias copyleft.
+No obstante, la documentación es muy incompleta: la model card indica explícitamente "More information needed" en descripción, usos previstos, limitaciones y datos de entrenamiento, y el campo de idiomas no está disponible (es un modelo de audio, no de texto). El repositorio ocupa 136,4 GB, un tamaño desproporcionado respecto a los 86 millones de parámetros, lo que sugiere la presencia de artefactos adicionales (checkpoints intermedios, logs o datasets) más allá de los pesos finales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Audio Spectrogram Transformer (AST), transformer de visión aplicado a espectrogramas mel |
-| Parametros totales | 86.194.952 (aproximadamente 86 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada; la arquitectura AST del modelo base procesa habitualmente ventanas de audio de 10 s a 16 kHz |
-| Tipos de cuantizacion | no disponible; al ser safetensors puede cuantizarse a fp16, int8 o int4 con herramientas externas (ONNX Runtime, Optimum, PyTorch) |
-| Idiomas soportados | no aplica (modelo de audio); idiomas no disponibles |
+| Arquitectura | Audio Spectrogram Transformer (AST), transformer sobre espectrogramas de Mel |
+| Parametros totales | 86.194.952 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de audio; ventana dependiente del preprocesado de espectrogramas, no documentada) |
+| Tipos de cuantizacion | no disponible (el autor no documenta cuantizaciones; al ser safetensors FP32/FP16 es cuantificable a 8 y 4 bits con herramientas estándar) |
+| Idiomas soportados | no disponible (modelo de audio, no lingüístico) |
 | Licencia | BSD-3-Clause |
-| Formato de pesos | safetensors (libreria transformers) |
-| Numero de clases de salida | 8 (Water, Resident, Transient, Humpback, Vessel, Jingle, Human, Bird) |
-| Modelo base | MIT/ast-finetuned-audioset-10-10-0.4593 |
-| Tamano del repositorio | 111,5 GB |
-| Descargas | 547 |
-| Likes | 0 |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura Audio Spectrogram Transformer del checkpoint MIT/ast-finetuned-audioset-10-10-0.4593. AST es un transformer sin convoluciones que trata el espectrograma mel de audio como una imagen: divide la representacion tiempo-frecuencia en parches solapados, los proyecta linealmente y los procesa con bloques de auto-atencion, anadiendo un token de clasificacion (CLS) cuya representacion final alimenta la cabeza de clasificacion. Este diseno fue introducido por Gong et al. (2021) y alcanza resultados de estado del arte en AudioSet, superando a arquitecturas convolucionales previas. El ajuste fino anade una cabeza de clasificacion de 8 clases sobre el backbone preentrenado.
+El modelo es un fine-tuning de MIT/ast-finetuned-audioset-10-10-0.4593, un Audio Spectrogram Transformer que procesa espectrogramas de Mel como si fueran imágenes y aplica auto-atención sobre parches del espectrograma. El backbone original se preentrenó en AudioSet (10 segundos de audio, 10 clases de nivel superior según la nomenclatura del checkpoint base), y este fine-tuning lo adapta a ocho clases específicas: Water, Resident, Transient, Humpback, Vessel, Jingle, Human y Bird. No se documenta la composición del dataset de ajuste ni el número de ejemplos utilizados.
 
-El entrenamiento se realizo con el Trainer de Hugging Face y los siguientes hiperparametros: learning rate 3e-05, batch de entrenamiento y evaluacion de 8, 5 epocas, semilla 42, optimizador AdamW fused (betas 0,9 y 0,999, epsilon 1e-08), scheduler lineal con 24 pasos de warmup y 240 pasos totales (48 pasos por epoca). El dataset de entrenamiento aparece como "None" en la model card, por lo que no se dispone de informacion sobre su composicion, numero de muestras, procedencia geografica ni tecnicas de aumento de datos. No se documenta uso de RLHF, DPO ni decodificacion especulativa, algo esperable en un modelo discriminativo de clasificacion. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.23.2.
+El entrenamiento se realizó con el Trainer de Transformers (generated_from_trainer) durante 8 épocas, con batch size de 8, learning rate 3e-05, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 40 pasos de warmup y semilla 42. La pérdida de entrenamiento cae de 0,6763 en la época 1 a 0,0003 en la época 8, mientras que la pérdida de validación se estabiliza alrededor de 0,37-0,39 desde la época 6, lo que indica un ajuste muy agresivo sobre el conjunto de entrenamiento y un posible sobreajuste a partir de ese punto. No se documenta el uso de RLHF, DPO ni técnicas de aumento de datos.
 
 ## Capacidades
 
-- Clasificacion de audio en 8 categorias discretas: Water, Resident, Transient, Humpback, Vessel, Jingle, Human y Bird.
-- Deteccion de vocalizaciones de ballenas: distingue entre llamadas de tipo Resident, Transient, Humpback y Jingle, correspondientes a distintos ecotipos y especies.
-- Discriminacion de ruido antropogenico: la clase Vessel permite identificar presencia de embarcaciones en la grabacion.
-- Deteccion de fuentes biologicas no cetaceas: clase Bird para vocalizaciones de aves.
-- Deteccion de actividad humana: clase Human (F1 de 1,0 en evaluacion).
-- Clasificacion de ruido ambiental: clase Water para sonido de fondo oceanico.
-- Integracion con el pipeline audio-classification de Transformers y con endpoints de Hugging Face (etiqueta endpoints_compatible).
-- Soporte de tool calling, agentes, razonamiento multi-paso, vision o audio generativo: no disponible (no son capacidades de este modelo).
-- Capacidades multilingues: no aplica, el modelo opera sobre senal acustica, no sobre texto.
+- Clasificación de audio en ocho clases: Water, Resident, Transient, Humpback, Vessel, Jingle, Human y Bird.
+- Detección de llamadas de ballena, incluyendo las categorías Resident, Transient y Humpback según la nomenclatura de la model card.
+- Discriminación de fuentes antropogénicas y ambientales: embarcaciones (Vessel), sonidos humanos (Human), aves (Bird) y ruido de tipo Jingle.
+- Pipeline de audio-classification compatible con la librería transformers y endpoints_compatible.
+- No soporta tool calling, function calling ni razonamiento multi-step: es un clasificador, no un modelo generativo.
+- No dispone de capacidades multilingües ni de generación de texto.
+- No se documentan modos especiales (thinking, visión, audio generativo) más allá de la clasificación.
 
 ## Casos de uso
 
-- Monitorizacion acustica pasiva marina (PAM): el modelo procesa grabaciones continuas de hidrofonos y etiqueta cada fragmento con la clase correspondiente, permitiendo a los investigadores filtrar horas de audio y quedarse solo con los segmentos que contienen llamadas de interes.
-- Mitigacion de colisiones entre buques y cetaceos: integrado en sistemas de boyas o planeadores autonomos, detecta en tiempo real la presencia de ballenas y activa alertas para que las embarcaciones reduzcan velocidad o modifiquen rumbo en zonas de riesgo.
-- Estimacion de exposicion al ruido antropogenico: la clase Vessel permite cuantificar la presencia de trafico maritimo en un entorno acustico, dato util para estudios de impacto ambiental y regulacion del ruido submarino.
-- Etiquetado y curacion de grandes corpus de bioacustica: el modelo puede usarse como preanotador para acelerar la construccion de datasets etiquetados de sonidos marinos, con revision humana posterior.
-- Investigacion sobre distribucion y estacionalidad de especies: procesando archivos historicos de distintas ubicaciones, se pueden generar mapas de presencia temporal de ecotipos como Resident o Transient.
-- Educacion y divulgacion cientifica: integrado en aplicaciones o demos interactivas que clasifican en directo un flujo de audio submarino, mostrando al usuario que tipo de fuente sonora se esta captando.
-- Investigacion en bioacustica comparada: el analisis de las clases Bird y Water permite separar senales no cetaceas y estudiar la superposicion de nichos acusticos en un mismo entorno.
-- Despliegue en edge computing: con 86 M de parametros, el modelo puede ejecutarse en dispositivos embarcados o con CPU dentro de una boya, clasificando localmente y transmitiendo solo los eventos relevantes para ahorrar ancho de banda.
+- Monitorización acústica pasiva de cetáceos: el modelo puede procesar grabaciones de hidrófonos y etiquetar segmentos como Resident, Transient o Humpback, lo que permite inventariar presencia de especies sin revisión manual continua. Es adecuado por su tamaño reducido y su F1 por clase superior a 0,88 en todas las categorías de ballena.
+- Detección de tráfico marítimo en reservas marinas: la clase Vessel (F1 0,9091) permite identificar presencia de embarcaciones en ventanas de audio, útil para correlacionar ruido antropogénico con perturbaciones en el comportamiento de cetáceos.
+- Filtrado y curación de datasets bioacústicos: el modelo puede preetiquetar grandes archivos de audio antes de una revisión humana, reduciendo el coste de anotación en proyectos de investigación marina.
+- Sistemas de alerta temprana en boyas o plataformas: al ser un modelo de 86 M de parámetros, cabe en GPUs de consumo y puede desplegarse en estaciones de borde con procesamiento por lotes de espectrogramas.
+- Análisis de impacto ambiental: la clasificación conjunta de ballenas, embarcaciones y sonidos humanos permite construir indicadores de presión antrópica sobre hábitats marinos a partir de registros acústicos pasivos.
+- Investigación en ecología acústica comparada: las clases Bird, Human y Jingle permiten descartar falsos positivos y separar fuentes biológicas de fuentes artificiales en estudios de paisaje sonoro.
+- Educación y divulgación: el modelo puede integrarse en demos interactivas que clasifiquen fragmentos de audio marino en tiempo casi real, dado su bajo coste computacional.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el conjunto de evaluacion, en la ultima epoca (epoca 5):
+Los resultados declarados por el autor en la model card (conjunto de evaluación no documentado) son los siguientes:
 
 | Metrica | Valor |
 |---|---|
-| Loss (evaluacion) | 0,2307 |
-| Accuracy | 0,9368 |
-| Precision | 0,9425 |
-| Recall | 0,9368 |
-| F1 global | 0,9073 |
+| Loss | 0,3843 |
+| Accuracy | 0,9208 |
+| Precision | 0,9274 |
+| Recall | 0,9208 |
+| F1 | 0,9121 |
+| F1 Water | 0,9474 |
+| F1 Resident | 0,9231 |
+| F1 Transient | 0,88 |
+| F1 Humpback | 0,9333 |
+| F1 Vessel | 0,9091 |
+| F1 Jingle | 0,9333 |
+| F1 Human | 0,9412 |
+| F1 Bird | 0,9091 |
 
-F1 por clase en la evaluacion final (epoca 5):
-
-| Clase | F1 |
-|---|---|
-| Water | 0,9474 |
-| Resident | 0,9362 |
-| Transient | 0,8571 |
-| Humpback | 0,9286 |
-| Vessel | 0,9524 |
-| Jingle | 0,9231 |
-| Human | 1,0 |
-| Bird | 0,9565 |
-
-Evolucion por epoca de las metricas globales y de perdida:
-
-| Epoca | Paso | Loss entrenamiento | Loss validacion | Accuracy | Precision | Recall | F1 |
-|---|---|---|---|---|---|---|---|
-| 1 | 48 | 0,8467 | 0,4200 | 0,8737 | 0,8905 | 0,8737 | 0,8104 |
-| 2 | 96 | 0,0743 | 0,3359 | 0,8842 | 0,8908 | 0,8842 | 0,9134 |
-| 3 | 144 | 0,0112 | 0,2514 | 0,9158 | 0,9245 | 0,9158 | 0,8755 |
-| 4 | 192 | 0,0015 | 0,2303 | 0,9368 | 0,9425 | 0,9368 | 0,9073 |
-| 5 | 240 | 0,0007 | 0,2312 | 0,9368 | 0,9425 | 0,9368 | 0,9073 |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de texto, ya que no son aplicables a un modelo de clasificacion de audio. El model-index del repositorio no contiene entradas de resultados adicionales.
+El model-index del repositorio no contiene resultados adicionales (`results: []`). No se han publicado comparaciones con otros modelos de clasificación bioacústica en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en fp32: aproximadamente 345 MB solo para pesos, mas activaciones y buffers de inferencia (del orden de 1-2 GB en total).
-- VRAM estimada en fp16: aproximadamente 172 MB de pesos.
-- VRAM estimada en int8: aproximadamente 86 MB de pesos.
-- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o CPU. No requiere A100 ni H100.
-- Puede ejecutarse en CPU con latencias aceptables para procesado por lotes offline; para streaming en tiempo real se recomienda GPU o aceleradores tipo NVIDIA Jetson.
-- Opciones de despliegue: pipeline audio-classification de Transformers, Hugging Face Inference Endpoints (el repositorio esta marcado como endpoints_compatible), TorchServe, Triton Inference Server, ONNX Runtime mediante Optimum, y exportacion a formatos moviles/lite para edge.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 0,35 GB en FP32 (86 M de parámetros × 4 bytes), alrededor de 0,17 GB en FP16 y menos de 0,1 GB en cuantización de 8 bits, sin contar activaciones ni buffers de espectrograma.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo está sobredimensionado para estas últimas.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 en adelante) e incluso en CPU para procesamiento por lotes con latencia aceptable.
+- Opciones de despliegue: transformers con pipeline de audio-classification, endpoints de Hugging Face (marcado como endpoints_compatible), ONNX Runtime y TorchScript. No se documenta soporte nativo en vLLM ni llama.cpp (no aplica a este tipo de modelo).
+- Latencia y throughput: no disponibles en la información proporcionada; dependen del tamaño de la ventana de audio y del hardware. Al tratarse de un transformer de 86 M de parámetros, se espera un throughput alto en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davethaler/whale-call-detector | 86 M | no disponible; ventana tipica AST de 10 s a 16 kHz | Accuracy 0,9368, F1 0,9073 en 8 clases (datos del autor) | BSD-3-Clause | Hugging Face |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | aproximadamente 87 M (AST base) | 10 s a 16 kHz, espectrograma mel de 128 x 1024 | mAP 0,4593 en AudioSet (527 clases) | BSD-3-Clause | Hugging Face |
-| BEATs (Microsoft) | no disponible | audio general, preentrenado con destilacion | no disponible para deteccion de cetaceos | MIT (segun publicacion) | GitHub y Hugging Face |
-| PaSST | no disponible | espectrograma con parches desplazados | no disponible para deteccion de cetaceos | no disponible | GitHub |
-| YAMNet (Google) | aproximadamente 3,7 M | 0,975 s a 16 kHz | AudioSet, 521 clases, sin clases de cetaceos especificas | Apache-2.0 | TensorFlow Hub |
+| davethaler/whale-call-detector | 86,19 M | espectrogramas de audio (ventana no documentada) | F1 0,9121; accuracy 0,9208 en evaluación propia | BSD-3-Clause | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 (modelo base) | ~86 M | espectrogramas de audio de 10 s | preentrenado en AudioSet; métricas específicas no disponibles en esta ficha | no disponible en la información proporcionada | Hugging Face |
+| Modelos de clasificación bioacústica especializados | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de comparativas publicadas entre whale-call-detector y otros clasificadores de bioacustica marina bajo un mismo conjunto de prueba, por lo que la comparacion de rendimiento entre modelos queda como no disponible.
+No se dispone de información suficiente para comparar con alternativas especializadas en detección de ballenas; la comparación más directa es con el checkpoint base del que deriva, que ofrece un espacio de etiquetas genérico de AudioSet en lugar de las ocho clases específicas de este fine-tuning.
 
 ## Limitaciones y advertencias
 
-- El dataset de entrenamiento aparece como "None" en la model card: se desconoce su composicion, tamano, procedencia geografica y balance de clases, lo que impide evaluar sesgos y generalizacion.
-- Riesgo de sesgo geografico y de especie: al no documentarse la procedencia de los datos, es probable que el modelo rinda peor en poblaciones o cuencas oceanicas distintas de las usadas para el ajuste fino.
-- Las clases Resident y Transient corresponden a ecotipos de orca del Pacifico noroeste; su aplicacion a otras regiones puede no ser valida.
-- La clase Jingle es especifica de un tipo de vocalizacion de la ballena franca del Atlantico norte; el modelo puede confundirla con otras senales en aguas donde esa especie no esta presente.
-- Riesgo de falsos positivos y negativos en condiciones de ruido extremo, solapamiento de fuentes o baja relacion senal-ruido.
-- La clase Human alcanza F1 de 1,0 en el conjunto de evaluacion, lo que sugiere un posible desequilibrio o una facilidad excesiva de esa clase; conviene verificar con datos externos.
-- La clase Transient presenta el F1 mas bajo (0,8571), lo que indica mayor dificultad de discriminacion frente a otras clases.
-- La ventana de audio del modelo no se documenta; la arquitectura AST base suele requerir entradas de duracion fija (habitualmente 10 s), lo que limita la clasificacion de eventos mas cortos o mas largos sin segmentacion previa.
-- No hay resultados de benchmarks externos ni evaluaciones independientes; todas las metricas son las declaradas por el autor.
-- La licencia BSD-3-Clause permite uso comercial y modificacion, pero exige conservar el aviso de copyright y la clausula de exencion de responsabilidad; ademas, al derivar del checkpoint de MIT, conviene verificar los terminos del modelo base.
-- El tamano del repositorio (111,5 GB) es desproporcionado respecto al numero de parametros (86 M), probablemente por copias de checkpoints; hay que revisar antes de descargar.
-- No hay informacion sobre calibracion de probabilidades, umbrales de decision recomendados ni comportamiento en distribuciones fuera de dominio.
+- La model card está generada automáticamente y contiene secciones sin completar ("More information needed") en descripción, usos previstos, limitaciones y datos de entrenamiento, lo que impide evaluar la representatividad del conjunto de evaluación.
+- El conjunto de evaluación no está documentado: las métricas reportadas no pueden contextualizarse ni reproducirse sin acceso al dataset.
+- Riesgo de sobreajuste: la pérdida de entrenamiento cae a 0,0003 mientras la de validación se mantiene en torno a 0,38, y las métricas se estancan desde la época 6, lo que sugiere que el modelo puede no generalizar bien fuera de la distribución de entrenamiento.
+- No se documentan sesgos conocidos, pero al derivar de AudioSet el backbone hereda los sesgos de dicho corpus en cuanto a fuentes, geografías y condiciones de grabación.
+- Riesgo de alucinación en sentido de clasificación: al ser un clasificador de ocho clases, siempre asignará una de ellas a cualquier entrada, incluidas señales fuera de distribución, sin mecanismo de rechazo documentado.
+- El campo de idiomas no está disponible y no aplica; el modelo no procesa texto.
+- La licencia BSD-3-Clause permite uso comercial con atribución y sin garantías, pero el modelo base MIT/ast-finetuned-audioset-10-10-0.4593 debe verificarse por separado para confirmar compatibilidad.
+- El tamaño del repositorio (136,4 GB) es muy superior al de los pesos del modelo, lo que puede complicar la descarga y el despliegue; conviene descargar únicamente los archivos safetensors necesarios.
+- No hay información sobre el preprocesado exacto (frecuencia de muestreo, número de mel bins, duración de ventana), lo que dificulta reproducir la inferencia tal como se entrenó.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/davethaler/whale-call-detector
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
-- Paper del Audio Spectrogram Transformer (Gong et al., 2021): https://arxiv.org/abs/2104.01778
-- Repositorio oficial de AST de MIT: https://github.com/YuanGongND/ast
-- AudioSet (Google): https://research.google.com/audioset/
-- Paper de BEATs (Chen et al., 2022): https://arxiv.org/abs/2212.01845
-- Repositorio de BEATs: https://github.com/microsoft/unilm/tree/master/beats
-- PaSST: https://github.com/kkoutini/PaSST
-- YAMNet en TensorFlow Hub: https://tfhub.dev/google/yamnet/1
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

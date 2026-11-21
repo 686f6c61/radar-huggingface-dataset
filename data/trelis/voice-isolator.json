@@ -5,7 +5,7 @@
   "author": "Trelis",
   "url": "https://huggingface.co/Trelis/voice-isolator",
   "created_at": "2026-11-18T10:34:57.000Z",
-  "updated_at": "2026-11-19T20:47:00.000Z",
+  "updated_at": "2026-11-20T19:50:41.000Z",
   "license": "polyform-small-business-1.0.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 6,
+  "downloads_30d": 28,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,

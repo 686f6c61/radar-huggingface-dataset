@@ -2,122 +2,92 @@
 
 ## Resumen
 
-Step-5-Preview es un modelo de lenguaje de tipo Mixture-of-Experts desarrollado por StepFun, distribuido en esta ficha a traves de una conversion GGUF mantenida por el usuario smalinin a partir del checkpoint BF16 de TypeSafeAI. El modelo declara aproximadamente 601.000 millones de parametros totales y unos 27.000 millones de parametros activos por token, con 92 capas de texto, 352 expertos enrutados (8 seleccionados por token) y una ventana de contexto anunciada de 1.000.000 de tokens basada en Sparse GQA con fusion de tokens por bloques. Esta orientado a codigo, razonamiento y flujos de agentes, y acepta entradas de texto, imagen y video.
+Step-5-Preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por StepFun, con aproximadamente 600.000 millones de parametros totales y 27.000 millones de parametros activos por token. Esta disenado especificamente para tareas de programacion, razonamiento y flujos de trabajo con agentes, e incorpora capacidades multimodales (entrada de imagen y texto). El modelo base publica una ventana de contexto de hasta 1 millon de tokens, lo que lo situa en la categoria de modelos de contexto extendido orientados a aplicaciones agenticas de largo alcance.
 
-La relevancia de esta publicacion concreta no esta en el modelo en si, sino en el trabajo de reconstruccion de la cuantizacion: las siete partes Q3_K_M de TypeSafeAI no incluian los tensores del indexador disperso (`sparse_indexer_*` y `ssmax_s`), y esta ficha anade 184 tensores extraidos del checkpoint INT4-g128 de NeuroSenko en una octava parte del GGUF, preservando sus tipos originales BF16/F32. El resultado es un conjunto de 8 partes y 1783 tensores, con el identificador de arquitectura `step35`.
+La ficha que nos ocupa, `smalinin/Step-5-Preview-GGUF`, no es el modelo original sino una coleccion de cuantizaciones GGUF calibradas en precision mixta, derivadas del checkpoint oficial FP8 de StepFun. Estas cuantizaciones estan pensadas para su uso con una bifurcacion experimental de llama.cpp (rama `my_build`) que anade soporte para la arquitectura `step35`, incluyendo las capas CSA (atención con indice comprimido) y las tres cabezas MTP (Multi-Token Prediction) del modelo original. Es, por tanto, material de interes para quienes quieran ejecutar localmente un modelo de 600B en hardware con VRAM limitada, a costa de una calidad de cuantizacion agresiva.
 
-Se trata de un artefacto marcado explicitamente como experimental. El autor advierte de que el soporte completo de CSA/Sparse GQA no esta implementado, que la inferencia de contexto largo usa un modo denso de reserva sobre las capas de atencion completa, y que el runtime solo ha sido validado en configuracion CUDA (incluido offload a CPU). Las pruebas locales cubren prompts de hasta aproximadamente 60.000 tokens con una asignacion de contexto de 64.000, sin que ello demuestre equivalencia con el modelo original ni soporte real de su contexto de 1M de tokens.
+La relevancia actual radica en que permite explorar un MoE de gran escala con contexto de hasta 1M tokens y capacidades multimodales en entornos locales, algo historicamente reservado a infraestructura de datacenter. No obstante, se trata de pesos experimentales: el autor advierte que la inferencia del modelo completo solo se ha probado con GPUs CUDA, incluyendo offload de expertos a CPU, y que la calidad de las cuantizaciones Q2 e IQ3 no ha sido evaluada de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atencion hibrida: 23 capas de atencion completa y 69 de ventana deslizante (ventana de 512 tokens), Sparse GQA con block-wise token merging, 3 capas MTP embebidas |
-| Parametros totales | 600.991.912.608 (aprox. 601B) |
-| Parametros activos | Aprox. 27B por token (352 expertos enrutados, 8 seleccionados por token) |
-| Longitud de contexto | 1.000.000 de tokens declarados por el modelo original; el runtime experimental de esta ficha solo ha sido validado hasta aprox. 60K tokens con asignacion de 64.000 tokens |
-| Tipos de cuantizacion | Q3_K_M para el texto, con tensores de sparse indexer restaurados en BF16 y F32 (no requantizados); existe tambien una variante INT4-g128 del modelo base |
-| Idiomas soportados | en, zh, multilingue |
-| Licencia | stepfun-community-license (etiquetada como "other") |
-| Formato de pesos | GGUF en 8 partes (1783 tensores); el modelo base esta en safetensors BF16; el codificador de vision es independiente y requiere un GGUF `mmproj` |
-
-Otros parametros de configuracion del checkpoint original:
-
-| Componente | Configuracion |
-|---|---|
-| Capas de texto principales | 92 |
-| Tamano oculto | 4096 |
-| Expertos enrutados / seleccionados | 352 / 8 por token |
-| Cabezas de atencion / cabezas KV | 64 / 4 |
-| Dimension de cabeza de atencion | 192 |
-| Patron de atencion | 23 capas de atencion completa y 69 de ventana deslizante |
-| Ventana deslizante | 512 tokens |
-| Dimensiones rotatorias | 64 en atencion completa; 192 en atencion de ventana |
-| Capas MTP embebidas | 3, despues de las capas de texto principales |
+| Arquitectura | Transformer MoE disperso (identificador GGUF `step35`), con atencion hibrida CSA + sliding window |
+| Parametros totales | 600.991.912.608 (~600B) |
+| Parametros activos | ~27B por token (8 de 352 expertos enrutados) |
+| Longitud de contexto | Hasta 1M tokens segun el modelo base; validacion local no especificada |
+| Tipos de cuantizacion | Q2 Antirez-like (IQ2_XXS-GU-Q2_K-Down), IQ3_M AntirezLike, Q2_K-Protected2 (planificada) |
+| Idiomas soportados | Ingles, chino, multilingue |
+| Licencia | stepfun-model-license-1.0 (licencia propia de StepFun) |
+| Formato de pesos | GGUF (8 partes por receta), vision tower en BF16 y Q8_0 `mmproj` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE con atencion hibrida. De las 92 capas de texto, 23 emplean atencion completa y 69 usan atencion de ventana deslizante de 512 tokens, lo que reduce el coste de atencion en secuencias largas. El mecanismo de atencion declarado por el modelo original es Sparse GQA con fusion de tokens por bloques (block-wise token merging), con 64 cabezas de consulta y 4 cabezas KV, dimension de cabeza 192 y dimensiones rotatorias diferenciadas (64 en capas de atencion completa, 192 en capas de ventana). Se anaden 3 capas MTP (multi-token prediction) embebidas tras las capas principales.
+El modelo base es un transformer MoE disperso con 92 capas de texto principales, tamano oculto de 4096, 64 cabezas de atencion y 4 cabezas KV, con dimension de cabeza de 192. La atencion es hibrida: 23 capas usan CSA (atencion con indice comprimido) y 69 capas usan sliding window de 512 tokens. Las dimensiones rotatorias son 64 para atencion completa/CSA y 192 para sliding attention. Incorpora tres capas MTP embebidas tras las capas principales, lo que habilita decodificacion especulativa multi-token. Los detalles sobre datos de entrenamiento (numero de tokens, composicion del corpus, uso de RLHF/DPO) no estan disponibles en la informacion proporcionada.
 
-No se dispone en la informacion proporcionada de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF, DPO u otras tecnicas de alineamiento del modelo original. Tampoco se detalla el proceso de destilacion o preentrenamiento. Lo unico documentado en esta ficha es el proceso de reconstruccion del GGUF: se partio de las siete partes Q3_K_M de TypeSafeAI (1599 tensores) y se identificaron los tensores ausentes del indexador disperso en las 23 capas de atencion completa (8 por capa, 184 en total). Esos tensores se extrajeron de los shards safetensors de NeuroSenko mediante peticiones HTTP con rangos de bytes, se mapearon a nombres GGUF y se escribieron en una octava parte, conservando tipos y bytes de carga util. Los tensores restaurados suman 874.326.784 bytes (aprox. 833,8 MiB): 69 tensores BF16 y 115 F32. Solo se actualizaron `split.count` y `split.tensors.count` en las siete cabeceras originales; ningun peso original fue requantizado ni reemplazado.
+Las cuantizaciones de esta ficha se generaron desde cero a partir del checkpoint oficial FP8, convirtiendolo primero a intermedios BF16 GGUF aplicando las escalas de bloque FP8. Se construyo una nueva imatrix local con CSA activada: el calibrado del modelo principal proceso 262.144 tokens en 32 fragmentos con contexto 8192, y las tres cabezas MTP se calibraron adicionalmente en modo teacher-forced. La imatrix combinada contiene 1.210 entradas, incluidas las 30 matrices cuantizables de MTP. Se retuvieron los 1.783 tensores de texto/MTP, incluidos 184 tensores CSA y 51 de las cabezas MTP. La cobertura de calibrado alcanzo el 99,893% de pares capa/experto enrutados; los 33 pares restantes usan el fallback neutral del cuantizador. La torre de vision se exporto por separado como `mmproj` en BF16 y Q8_0.
 
 ## Capacidades
 
-Las siguientes capacidades corresponden a las declaradas por el modelo original (Step-5-Preview de StepFun), no necesariamente verificadas en este runtime experimental:
-
-- Generacion de texto y razonamiento con esfuerzo de razonamiento configurable.
-- Generacion y comprension de codigo, orientada a flujos de trabajo de programacion.
-- Entrada multimodal: texto, imagen y video.
-- Llamada a herramientas en paralelo (parallel tool calling) y salida estructurada.
-- Flujos de agente y razonamiento multi-paso.
-- Capacidades multilingues, con soporte nativo de ingles y chino.
-- Contexto largo anunciado de hasta 1.000.000 de tokens mediante Sparse GQA con fusion de tokens por bloques.
-- Capas MTP embebidas, que habilitan prediccion de multiples tokens.
-
-Capacidades efectivamente validadas en el runtime experimental de esta ficha:
-
-- Inferencia de texto en configuracion CUDA con offload a CPU.
-- Prompts de hasta aproximadamente 60.000 tokens con asignacion de contexto de 64.000 tokens, mediante un modo denso de reserva en las capas de atencion completa.
-- El codificador de vision se distribuye aparte y requiere un GGUF `mmproj` para funcionar.
+- Generacion de texto y razonamiento multi-paso, con soporte de modo de pensamiento segun el modelo base.
+- Generacion de codigo y tareas de programacion, uno de los objetivos declarados del modelo.
+- Razonamiento matematico y resolucion de problemas complejos.
+- Capacidades multimodales de entrada imagen-texto (pipeline `image-text-to-text`), con torre de vision exportada como `mmproj`.
+- Soporte de tool calling / function calling, orientado a flujos agenticos.
+- Capacidades multilingues: ingles, chino y otros idiomas.
+- Decodificacion especulativa mediante las tres cabezas MTP embebidas.
+- Contexto extendido de hasta 1M tokens en el modelo base, adecuado para documentos largos y conversaciones multi-turno prolongadas.
 
 ## Casos de uso
 
-- Asistencia a la programacion en repositorios grandes: con 92 capas y un contexto declarado de 1M de tokens, el modelo esta pensado para razonar sobre bases de codigo extensas. En la practica, con este GGUF conviene limitarse a ventanas de decenas de miles de tokens, dado que el modo disperso no esta implementado.
-- Agentes autonomos con llamada a herramientas: el soporte de parallel tool calling y salida estructurada permite construir agentes que consulten APIs, ejecuten comandos y encadenen pasos intermedios, siempre que se instancie sobre el runtime CUDA validado.
-- Pipelines de revision de codigo en CI/CD: el modelo puede integrarse como paso de analisis que detecte errores, sugiera parches y genere mensajes de commit estructurados a partir de diffs.
-- Analisis de documentacion tecnica multilingue: al cubrir ingles, chino y otros idiomas, resulta util para extraer y resumir informacion de manuales y especificaciones en entornos internacionales.
-- Investigacion sobre cuantizacion extrema: el propio artefacto es un caso de estudio para medir el impacto de Q3_K_M y de la ausencia de tensores de indexador disperso en la calidad de un MoE de 601B de parametros.
-- Experimentacion con arquitecturas MoE de activacion dispersa: permite estudiar en local el comportamiento de un modelo con 352 expertos y 8 activos por token, comparando modos denso y disperso.
-- Procesamiento de entradas con imagen para prototipos: gracias al pipeline image-text-to-text, se puede usar con un GGUF `mmproj` para tareas de descripcion o extraccion de informacion de capturas y diagramas.
+- Asistencia de programacion en local: el modelo puede generar y revisar codigo en pipelines de desarrollo, aprovechando su entrenamiento orientado a coding y su soporte de tool calling para integrarse con linters, compiladores o APIs de CI/CD.
+- Agentes autonomos multi-paso: gracias a las cabezas MTP y al soporte de function calling, puede planificar y ejecutar secuencias de acciones con llamadas a herramientas, adecuado para automatizacion de tareas de oficina o investigacion.
+- Analisis de documentos extensos: con contexto de hasta 1M tokens, puede procesar contratos, informes o bases de codigo completas en una sola pasada, resumiendo y extrayendo informacion estructurada.
+- Atencion al cliente multilingue: gestiona conversaciones multi-turno en ingles, chino y otros idiomas, con capacidad de mantener contexto largo y derivar a herramientas externas cuando sea necesario.
+- Procesamiento de imagenes con texto (image-text-to-text): la torre de vision permite describir imagenes, extraer texto de capturas o responder preguntas sobre diagramas tecnicos, util en soporte y documentacion.
+- Razonamiento matematico asistido: resolucion de problemas paso a paso con verificacion intermedia, apropiado para entornos educativos o de investigacion que requieran trazabilidad del razonamiento.
+- Despliegue en hardware con VRAM limitada: las cuantizaciones Q2 e IQ3 permiten ejecutar un MoE de 600B en estaciones de trabajo con GPUs consumer o de gama profesional, con offload de expertos a CPU, para prototipado e investigacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni para el modelo original ni para esta cuantizacion. Tampoco se aportan mediciones de throughput o latencia mas alla de la indicacion de que las pruebas locales alcanzaron prompts de unos 60.000 tokens.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otros modelos; solo se documenta la cobertura de calibrado (99,893% de pares capa/experto) y la integridad de los tensores, que no equivalen a calidad de modelo.
 
 ## Requisitos de hardware
 
-- Tamano del repositorio: 291,3 GB, correspondiente al conjunto Q3_K_M de 8 partes mas los tensores restaurados en BF16/F32 (833,8 MiB). Es el orden de magnitud del espacio en disco y de memoria total necesaria para cargar los pesos.
-- VRAM/RAM estimada: del orden de 290 GB o mas para los pesos, mas la memoria adicional de la cache KV segun contexto y lote. No se dispone de cifras oficiales de consumo por contexto en la informacion proporcionada.
-- No cabe en GPU de consumo: una RTX 4090 con 24 GB no puede alojar el modelo completo. Seria viable unicamente con offload masivo a RAM del sistema y con la penalizacion de rendimiento correspondiente.
-- GPU recomendadas: configuraciones multi-GPU de clase数据中心 con al menos 320 GB de VRAM agregada, por ejemplo 4x H100 80 GB o 4x A100 80 GB. No se especifica una configuracion oficialmente soportada.
-- Backend validado: exclusivamente CUDA, incluido el offload a CPU, con la rama experimental `smalinin/llama.cpp#my_step5`. Otros backends de GPU y la ejecucion completa en CPU no han sido validados.
-- Opciones de despliegue: llama.cpp con la rama indicada. No hay informacion sobre compatibilidad con vLLM, TGI, Ollama u otros servidores de inferencia para este GGUF concreto.
-- Latencia y throughput: no disponible. El autor no publica mediciones de tokens por segundo.
+- VRAM estimada para inferencia: las recetas publicadas ocupan 182,472 GB (Q2 Antirez-like) y 271,609 GB (IQ3_M AntirezLike) en disco; la Q2_K-Protected2 planificada ocupa 229,670 GB. El requisito de VRAM depende del offload de expertos a CPU y del contexto configurado; no se especifica una cifra exacta en la informacion disponible.
+- GPU recomendadas: la inferencia del modelo completo solo se ha desarrollado y probado con GPUs CUDA, incluyendo offload de expertos a CPU. No se detallan modelos concretos (A100, H100, RTX 4090) en la informacion disponible.
+- Cabida en GPU consumer: no confirmado; el tamano de las cuantizaciones (182 GB en el mejor caso) excede la VRAM de cualquier GPU consumer individual, por lo que requeriria offload a CPU o configuraciones multi-GPU.
+- Opciones de despliegue: bifurcacion experimental `smalinin/llama.cpp`, rama `my_build`, con el commit probado `425badfe8`. No se garantiza soporte en builds upstream arbitrarios de llama.cpp.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks del modelo en la informacion proporcionada, por lo que la comparacion de rendimiento no puede establecerse. La comparacion se limita a caracteristicas estructurales publicas de modelos MoE de escala similar.
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Step-5-Preview (base) | ~600B | ~27B | Hasta 1M | stepfun-model-license-1.0 | FP8, BF16 |
+| Step-5-Preview-GGUF (esta ficha) | ~600B | ~27B | Hasta 1M (segun base) | stepfun-model-license-1.0 | GGUF cuantizado |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia |
-|---|---|---|---|---|
-| Step-5-Preview (esta ficha) | Aprox. 601B | Aprox. 27B | 1M declarados; validado aprox. 60K en esta cuantizacion | stepfun-community-license |
-| Alternativas de la misma categoria | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
-
-No se han incluido cifras de otros modelos porque la busqueda proporcionada no contiene datos verificables de alternativas comparables, y este documento no debe incorporar numeros no contrastados.
+No se dispone de datos de rendimiento ni de modelos comparables identificados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado experimental: el runtime que soporta este GGUF solo ha sido validado en configuracion CUDA. No hay validacion en backends de GPU distintos ni en ejecucion completa sobre CPU.
-- Sparse GQA incompleto: la atencion dispersa completa (CSA/Sparse GQA) no esta implementada. La inferencia de contexto largo recurre a un modo denso de reserva sobre las capas de atencion completa, lo que puede alterar el comportamiento respecto al modelo original.
-- Contexto no verificado a 1M: las pruebas locales llegan a unos 60.000 tokens con una asignacion de 64.000. No esta establecido que el modelo funcione correctamente con el contexto de 1M de tokens que anuncia la model card original.
-- Procedencia mixta de los pesos: los tensores del indexador disperso provienen de un checkpoint distinto (NeuroSenko, INT4-g128) del que aporta el resto de los pesos. Solo se verifico la coincidencia exacta con el BF16 original en la primera capa de atencion completa (capa 3), no en las 23.
-- Riesgo de alucinacion: no se dispone de evaluaciones de fidelidad ni de tasas de alucinacion en la informacion proporcionada. Como en cualquier modelo generativo de gran escala, el riesgo existe y debe mitigarse con verificacion externa.
-- Sesgos: no hay informacion sobre los datos de entrenamiento ni sobre analisis de sesgo, por lo que no pueden caracterizarse sesgos concretos.
-- Idiomas: el soporte declarado se centra en ingles, chino y uso multilingue generico. No se garantiza un rendimiento homogeneo en castellano ni en otras lenguas no listadas.
-- Licencia: se trata de la stepfun-community-license, una licencia "other" con condiciones especificas. Debe revisarse el texto completo antes de cualquier uso comercial; no se puede asumir equivalencia con una licencia permisiva tipo Apache 2.0 o MIT.
-- Capacidades multimodales incompletas en este paquete: el codificador de vision no esta incluido y requiere un GGUF `mmproj` aparte.
-- Madurez del artefacto: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el mismo dia. No cuenta con validacion comunitaria.
+- Pesos experimentales: el autor advierte que la inferencia del modelo completo solo se ha probado con GPUs CUDA y una bifurcacion concreta de llama.cpp; no se garantiza funcionamiento en otras configuraciones.
+- Calidad de cuantizacion no evaluada: las recetas Q2 e IQ3 son agresivas y no se han publicado evaluaciones de calidad independientes; el calibrado cubre el 99,893% de pares capa/experto, pero la calidad general requiere evaluacion separada.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de gran escala; no se documentan mitigaciones especificas.
+- Sesgos conocidos: no se documentan en la informacion disponible.
+- Limitaciones de contexto e idioma: aunque el modelo base anuncia hasta 1M tokens, no se especifica la validacion local de esa ventana; los idiomas soportados son ingles, chino y multilingue, sin detalle de cobertura.
+- Restricciones de licencia: la licencia `stepfun-model-license-1.0` es propia de StepFun y puede imponer condiciones para uso comercial; debe revisarse el texto completo antes de produccion.
+- Dependencia de un fork no oficial de llama.cpp: el uso en produccion queda condicionado al mantenimiento de la rama `my_build` y a la compatibilidad con el commit probado.
+- Tamano de despliegue elevado: incluso la cuantizacion mas pequena (182 GB) requiere infraestructura significativa y estrategias de offload.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/smalinin/Step-5-Preview-GGUF
-- Modelo base en BF16: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16
-- Configuracion del checkpoint base: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16/blob/main/config.json
-- Revision concreta del checkpoint BF16 usada en la verificacion: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16/tree/e7746ba676c6a0391fce0d54d0a4f392d293dc07
-- GGUF Q3_K_M original de TypeSafeAI: https://huggingface.co/TypeSafeAI/Step-5-Preview-GGUF
-- Checkpoint INT4-g128 donante de los tensores restaurados: https://huggingface.co/NeuroSenko/Step-5-Preview-Int4-g128
-- Revision concreta del donante: https://huggingface.co/NeuroSenko/Step-5-Preview-Int4-g128/tree/fbc1415911951ad94736c1720a97a607829adb7c
-- Licencia: https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16/blob/main/LICENSE
-- Rama experimental de llama.cpp: https://github.com/smalinin/llama.cpp/tree/my_step5
+- Repositorio GGUF: https://huggingface.co/smalinin/Step-5-Preview-GGUF
+- Modelo base: https://huggingface.co/stepfun-ai/Step-5-Preview
+- Checkpoint BF16 del modelo base: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
+- Configuracion del modelo base: https://huggingface.co/stepfun-ai/Step-5-Preview/blob/main/config.json
+- Licencia: https://huggingface.co/stepfun-ai/Step-5-Preview/blob/main/LICENSE.txt
+- Fork de llama.cpp: https://github.com/smalinin/llama.cpp/tree/my_build
+- Commit probado: https://github.com/smalinin/llama.cpp/commit/425badfe8c1c286a8984a454e991f045bb3008b2
+- Directorio Q2_a: https://huggingface.co/smalinin/Step-5-Preview-GGUF/tree/main/Q2_a

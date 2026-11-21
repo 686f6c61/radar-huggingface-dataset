@@ -2,53 +2,52 @@
 
 ## Resumen
 
-Orion 26B A4B v1 es un ajuste fino (finetune) del modelo google/gemma-4-31B-it, desarrollado por TheDrummer, un ingeniero de software conocido en la comunidad por sus modelos orientados a creatividad, escritura y entretenimiento. El modelo parte de una arquitectura Gemma 4 con 25.805.936.206 parámetros totales (aproximadamente 25,8 mil millones) y un tamaño de repositorio de 51,6 GB en formato safetensors. La nomenclatura "A4B" sugiere un diseño de mezcla de expertos con aproximadamente 4 mil millones de parámetros activos, aunque la información disponible no confirma explícitamente esta arquitectura.
+Orion-26B-A4B-v1 es un ajuste fino (finetune) del modelo google/gemma-4-26B-A4B-it, desarrollado por TheDrummer, un ingeniero de software conocido en la comunidad de Hugging Face por sus modelos orientados a creatividad, escritura y entretenimiento. El modelo parte de una arquitectura Gemma 4 con 25.805.936.206 parámetros totales y un esquema de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parámetros activos, tal como indica el sufijo "A4B" de su nombre. El repositorio ocupa 51,6 GB en formato safetensors.
 
-El modelo está diseñado para usos creativos y de entretenimiento, priorizando cualidades como la calidad de escritura, el dinamismo narrativo, la imaginación y un comportamiento menos alineado que los modelos fundacionales. Según el autor, el objetivo no es maximizar la inteligencia o la corrección, sino ofrecer una experiencia más libre para escritura creativa, roleplay y generación de contenido sin las restricciones típicas de los modelos comerciales.
+El objetivo declarado del autor no es maximizar la inteligencia o la corrección factual, sino mejorar la experiencia en usos creativos y escenarios que requieren poca o ninguna alineación: escritura literaria, narración dinámica, exploración de temas complejos y control fino del formato de respuesta. Para ello, el modelo incorpora modos de razonamiento configurables (thinking y non-thinking) y permite definir estilos de pensamiento personalizados mediante el prompt de sistema.
 
-Es relevante en el ecosistema open source porque ofrece una alternativa de ajuste fino sobre Gemma 4 con soporte para modos de razonamiento ("thinking") flexibles, incluyendo bloques personalizados como `<thinking>`, `<think>` o `<evil_think>`, y porque está disponible tanto en formato safetensors como en GGUF (a través de repositorios separados y de terceros como bartowski), lo que facilita su despliegue local.
+El modelo resulta relevante para desarrolladores e investigadores interesados en modelos de gran contexto con activación dispersa, que ofrecen un coste de inferencia mucho menor que un modelo denso de tamaño equivalente, y que además permiten un control explícito sobre el comportamiento de razonamiento y el tono. Su disponibilidad a través de una API serverless de pago por uso (Kitani) facilita la evaluación sin infraestructura propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (transformer, posiblemente MoE según nomenclatura A4B; no confirmado) |
-| Parametros totales | 25.805.936.206 (≈25,8 B) |
-| Parametros activos | no disponible (la nomenclatura "A4B" sugiere ~4 B activos, sin confirmación oficial) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la información proporcionada; existen versiones GGUF en repositorios separados |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (repo principal); GGUF en repositorios separados |
+| Arquitectura | Transformer con mezcla de expertos (MoE), basada en Gemma 4 |
+| Parametros totales | 25.805.936.206 |
+| Parametros activos | Aproximadamente 4.000 millones (según nomenclatura A4B; no confirmado en la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF disponible en repositorio separado; cuantizaciones concretas no disponibles |
+| Idiomas soportados | No disponible |
+| Licencia | No disponible |
+| Formato de pesos | safetensors (repositorio principal); GGUF (repositorio secundario) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en google/gemma-4-31B-it, un modelo de la familia Gemma 4 de Google con 31 mil millones de parámetros nominales según el nombre del modelo base, aunque el recuento real de safetensors es de 25,8 mil millones. La nomenclatura "A4B" es característica de los modelos de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos, pero la información proporcionada no detalla la arquitectura interna ni confirma esta estructura. El ajuste fino se realizó sobre el modelo instructivo de Gemma 4, presumiblemente mediante técnicas de fine-tuning supervisado y posiblemente preferencias, aunque no se especifican los detalles del dataset, el número de tokens de entrenamiento ni la composición de los datos.
+El modelo se construye sobre google/gemma-4-26B-A4B-it, un transformer con mezcla de expertos que activa una fracción reducida de sus parámetros por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso de 26.000 millones de parámetros. TheDrummer ha realizado un ajuste fino adicional sobre esta base, pero la información proporcionada no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La model card tampoco especifica innovaciones arquitectónicas propias más allá de la base Gemma 4.
 
-La innovación técnica destacable es el soporte flexible para modos de razonamiento: el modelo puede operar con la plantilla estándar de Gemma 4 en modo thinking o non-thinking, y también acepta bloques de pensamiento personalizados como `<thinking></thinking>`, `<think></think>` o incluso `<evil_think></evil_think>`, que pueden describirse en el system prompt. Esta flexibilidad permite al usuario controlar el estilo y la profundidad del razonamiento sin necesidad de cambiar de plantilla. No se dispone de información sobre el uso de RLHF, DPO u otras técnicas de alineación, aunque el autor declara explícitamente que sus modelos priorizan la creatividad sobre la alineación.
+La innovación más destacable del ajuste es el control del razonamiento: el modelo admite el template de Gemma 4 31B tanto en modo thinking como non-thinking, y permite activar bloques de pensamiento mediante etiquetas `<thinking></thinking>` o `<think></think>` sobre el template no-thinking. Además, el autor indica que se pueden definir estilos de pensamiento personalizados (por ejemplo, `<evil_think></evil_think>`) o describirlos en el prompt de sistema, lo que otorga un control poco habitual sobre el proceso de razonamiento.
 
 ## Capacidades
 
-- Generación de texto creativo: escritura narrativa, ficción, diálogo y roleplay con énfasis en calidad literaria y dinamismo.
-- Razonamiento configurable: soporte de modo thinking estándar de Gemma 4 y modos personalizados mediante bloques `<thinking>`, `<think>` o etiquetas definidas por el usuario.
-- Instrucciones flexibles: capacidad de seguir system prompts que definen estilos de pensamiento y personalidad.
-- Formateo adaptable: el autor destaca la capacidad del modelo para crear formatos novedosos y efectivos en las respuestas.
-- Conocimiento del mundo: conocimiento tanto ficticio como no ficticio, según los criterios de evaluación del autor.
-- Percepción de matices: manejo de complejidad, lógica y temas difíciles o ambiguos.
-- Menor alineación corporativa: el modelo está diseñado para evitar rechazos innecesarios y sesgos de positividad forzada, lo que facilita temas adultos o controvertidos.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto creativo: escritura literaria, narrativa y estilos variados, con énfasis declarado en calidad de prosa y dinamismo.
+- Razonamiento configurable: modos thinking y non-thinking, con soporte de etiquetas de pensamiento estándar y personalizadas.
+- Control de formato: capacidad de adoptar formatos de respuesta novedosos y de mantener o romper convenciones según se indique.
+- Instrucciones y adherencia al prompt: el autor incluye la adherencia como criterio de calidad, aunque no publica métricas.
+- Conocimiento del mundo: heredado del modelo base Gemma 4, sin datos específicos sobre cobertura o actualización.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidades de visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Escritura creativa y narrativa: el modelo puede generar relatos, novelas cortas y guiones con un estilo literario cuidado, gracias a su entrenamiento orientado a la calidad de escritura y dinamismo narrativo. Es adecuado para autores que buscan un asistente con menos restricciones creativas.
-- Roleplay y juegos de rol conversacionales: su capacidad para mantener personalidades definidas en el system prompt y su menor alineación lo hacen idóneo para personajes complejos, incluidos antagonistas o tramas oscuras, sin rechazos automáticos.
-- Generación de contenido para entretenimiento: guiones para vídeos, podcasts o videojuegos, donde la imaginación y la capacidad de explorar múltiples posibilidades narrativas son prioritarias sobre la corrección factual.
-- Asistente de escritura con razonamiento configurable: el usuario puede activar modos de pensamiento personalizados (`<evil_think>`, etc.) para generar borradores con distintos enfoques estilísticos o morales, útil en ejercicios de escritura experimental.
-- Prototipado de personajes y diálogos para chatbots de ficción: integrable en aplicaciones de ocio o comunidades de rol, donde se requiere un modelo que no imponga una moral corporativa y que mantenga coherencia en conversaciones multi-turno (siempre que el contexto lo permita).
-- Investigación sobre alineación y comportamiento: al ser un modelo deliberadamente menos alineado, puede servir para estudiar cómo los ajustes finos afectan a los rechazos, la moralidad expresada y la percepción del usuario, en entornos controlados de investigación.
-- Despliegue local con GGUF: gracias a las versiones GGUF (repositorio propio y de bartowski), puede ejecutarse en hardware de consumo para experimentación creativa sin depender de APIs externas.
+- Escritura creativa y narrativa: el modelo está ajustado explícitamente para generar prosa literaria y dinámica, por lo que encaja en la generación de relatos, diálogos y descripciones con control de tono mediante el prompt de sistema.
+- Roleplay y personajes: la posibilidad de definir estilos de pensamiento personalizados y de modular la alineación permite construir personajes coherentes con voces y motivaciones propias, algo útil en plataformas de entretenimiento conversacional.
+- Generación de ficción interactiva: con un contexto amplio (no cuantificado en la información disponible) y modos de razonamiento, puede mantener tramas ramificadas y recordar decisiones previas del usuario en sesiones largas.
+- Prototipado de asistentes con poca alineación: equipos que necesitan un modelo que no rechace temas incómodos para investigación creativa o análisis de guiones pueden usar este ajuste, con las cautelas legales y éticas correspondientes.
+- Exploración de estilos de razonamiento: investigadores interesados en cómo distintas etiquetas de pensamiento afectan a la calidad de la respuesta pueden usar el modelo para experimentar con variantes de thinking sin reentrenar.
+- Evaluación de modelos MoE en producción: gracias a sus aproximadamente 4.000 millones de parámetros activos, es un candidato para desplegar en entornos con presupuesto de GPU limitado y comparar su comportamiento frente a modelos densos de tamaño similar.
+- Integración vía API: el acceso serverless de pago por uso en Kitani permite incorporar el modelo a aplicaciones sin gestionar infraestructura, útil para demos y pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
@@ -56,41 +55,42 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño (25,8 B parámetros), en FP16 requeriría aproximadamente 51,6 GB de VRAM; en cuantizaciones de 8 bits, alrededor de 26 GB; en 4 bits, aproximadamente 13-15 GB. Estas cifras son estimaciones generales y no están confirmadas por el autor.
-- GPU recomendadas: para FP16, GPU profesionales como A100 80 GB o H100; para cuantizaciones de 8 bits, A100 40 GB o RTX 6000 Ada; para 4 bits, RTX 4090 (24 GB) o RTX 3090 (24 GB) podrían ser suficientes.
-- ¿Cabe en consumer GPU? Probablemente en cuantización de 4 bits en GPUs con 24 GB (RTX 3090/4090), aunque no hay confirmación oficial.
-- Opciones de despliegue: llama.cpp y Ollama a través de los GGUF disponibles; vLLM o TGI para safetensors si se confirma compatibilidad con la arquitectura Gemma 4. No se dispone de datos de latencia ni throughput.
-- El autor indica que ya no sube GGUFs a su repositorio principal por limitaciones de almacenamiento, pero mantiene un repositorio GGUF separado y recomienda la versión iMatrix de bartowski.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, los pesos en safetensors ocupan 51,6 GB, por lo que en precisión completa se requiere más de 52 GB de VRAM; las cuantizaciones GGUF reducen sustancialmente este requisito, pero no se detallan los tamaños concretos.
+- GPU recomendadas: no disponible. Por el tamaño del repositorio, un despliegue en precisión completa requeriría GPU de clase A100 80 GB o H100; las cuantizaciones podrían permitir GPUs de 24-48 GB.
+- Compatibilidad con GPU de consumo: no confirmada. Con cuantizaciones GGUF agresivas podría caber en tarjetas de 24 GB, pero no hay datos publicados que lo verifiquen.
+- Opciones de despliegue: llama.cpp y Ollama mediante los GGUF publicados (incluida la variante iMatrix de bartowski); vLLM y TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orion 26B A4B v1 | 25,8 B (¿~4 B activos?) | no disponible | no disponible | safetensors, GGUF | Finetune creativo de Gemma 4 31B, menos alineado |
-| google/gemma-4-31B-it | 31 B (nominal) | no disponible | Gemma license (no confirmada en la info) | safetensors | Modelo base instructivo, alineado para uso general |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación proporcionada |
+| TheDrummer/Orion-26B-A4B-v1 | 25,8 B | ~4 B (según nomenclatura) | No disponible | No disponible | HF (safetensors y GGUF) |
+| google/gemma-4-26B-A4B-it | 25,8 B (base) | ~4 B (según nomenclatura) | No disponible | No disponible en esta ficha | HF |
+| Modelos densos de ~27 B | ~27 B | ~27 B | No disponible | Variable | HF |
 
-No se dispone de datos de rendimiento comparativo ni de otros modelos de la misma categoría en la información proporcionada.
+La comparación con alternativas concretas no está disponible en la información proporcionada; el único comparable directo identificable es el modelo base google/gemma-4-26B-A4B-it, del que Orion hereda arquitectura y tamaño.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: el autor declara explícitamente que el modelo está menos alineado y puede expresar opiniones o actitudes no corporativas; esto puede incluir sesgos de todo tipo presentes en los datos de entrenamiento y en el ajuste fino.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas factuales; el autor prioriza creatividad sobre corrección.
-- Limitaciones de contexto e idioma: no se dispone de información sobre la longitud de contexto ni sobre los idiomas soportados; se desconoce si el ajuste fino degrada el rendimiento multilingüe del modelo base.
-- Restricciones de licencia: la licencia no está disponible en la información proporcionada; es imprescindible verificar la licencia del modelo base (Gemma) y la del propio ajuste antes de cualquier uso comercial.
-- Caveat para producción: el modelo está orientado a creatividad y entretenimiento, no a tareas de alta precisión; no se recomienda para aplicaciones que requieran corrección factual, seguridad estricta o alineación corporativa.
-- El autor no garantiza soporte de tool calling ni capacidades multimodales; no hay información sobre su comportamiento en agentes multi-paso.
-- El repositorio principal no incluye GGUFs; para despliegue local hay que acudir a repositorios separados, lo que puede implicar dependencia de terceros.
+- El autor declara explícitamente que la inteligencia, la corrección y la resolución de problemas no son prioritarias; el modelo está orientado a creatividad y entretenimiento, no a tareas de alta precisión.
+- El ajuste busca reducir la alineación y los rechazos, lo que puede producir contenido inapropiado, sesgado o controvertido; no es adecuado para aplicaciones orientadas al usuario sin filtros adicionales.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad; al ser un modelo creativo, la probabilidad de afirmaciones inventadas es relevante en usos informativos.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; debe verificarse antes de cualquier despliegue en producción.
+- Idiomas soportados no disponibles: no se puede garantizar un rendimiento adecuado fuera del inglés sin evaluación previa.
+- Longitud de contexto no disponible: no se puede planificar el uso en tareas de contexto largo sin medirla empíricamente.
+- El autor ha dejado de subir GGUFs a su cuenta principal por limitaciones de almacenamiento; las cuantizaciones dependen de repositorios de terceros (bartowski), lo que añade un punto de dependencia externa.
+- El modelo se distribuye sin pipeline declarado ni idiomas declarados en Hugging Face, lo que dificulta la integración automática en herramientas que dependen de esos metadatos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1
 - GGUF del autor: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1-GGUF
-- GGUF iMatrix recomendado (bartowski): https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1-GGUF
-- Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Discord del autor: https://discord.gg/BeaverAI
-- Patreon: https://www.patreon.com/TheDrummer
-- Enlaces del autor: https://linktr.ee/thelocaldrummer
+- GGUF iMatrix (recomendado por el autor): https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1-GGUF
+- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - API serverless (Kitani): https://kitani.ai/
-- Hoja de samplers colaborativa: https://docs.google.com/spreadsheets/d/1wil6YEHTnQP3DO9EF35ImQMY3lbmRt5_ns-LJavUqwQ
+- Discord del autor (BeaverAI): https://discord.gg/BeaverAI
+- Patreon del autor: https://www.patreon.com/TheDrummer
+- Enlaces del autor: https://linktr.ee/thelocaldrummer
+- Hoja de samplers de la comunidad: https://docs.google.com/spreadsheets/d/1wil6YEHTnQP3DO9EF35ImQMY3lbmRt5_ns-LJavUqwQ
 - Formulario para compartir samplers: https://docs.google.com/forms/d/e/1FAIpQLSfeiOeLbNt-xc8tr0BopJ4KawMm3YrLGD5mYLjZqg8ehl35BQ/viewform

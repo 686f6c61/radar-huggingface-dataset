@@ -2,81 +2,91 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-27B-unsycophantic-GGUF` es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base `jbowman512/Qwen3.8-27B-unsycophantic`, publicada por el usuario mradermacher, conocido en el ecosistema por convertir modelos a GGUF para su uso con llama.cpp y derivados. El repositorio contiene unicamente los pesos cuantizados, no el modelo original ni documentacion sobre su entrenamiento.
+Qwen3.8-27B-unsycophantic-GGUF es una compilación de cuantizaciones estáticas en formato GGUF del modelo jbowman512/Qwen3.8-27B-unsycophantic, publicada por el usuario mradermacher, conocido en Hugging Face por producir versiones cuantizadas de modelos abiertos listas para inferencia local. El modelo subyacente es un transformer denso de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones), derivado de la familia Qwen3.8 y ajustado específicamente para reducir el comportamiento sicofántico (no-sycophancy) y, según las etiquetas del autor, con rasgos de "heretic" y reproducibilidad.
 
-El nombre comercial sugiere un modelo de la familia Qwen3 con 27.000 millones de parametros, pero los datos reales del repositorio contradicen esa etiqueta: el campo de parametros totales en safetensors indica 460.730.096 parametros (aproximadamente 0,46 mil millones), lo que corresponde a un modelo mucho mas pequeno. Esta discrepancia entre el nombre y las metricas reales es la caracteristica mas relevante de la ficha y debe tenerse en cuenta antes de cualquier evaluacion.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de ~27B en hardware de consumo mediante cuantizaciones que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), además de complementos multimodales (mmproj) que sugieren capacidades de visión. El repositorio incluye 11 cuantizaciones estáticas y dos archivos mmproj, con un tamaño total de repo de 190,8 GB.
 
-La relevancia de esta publicacion es limitada: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y sin pipeline especificado. Se trata de una cuantizacion reciente (creada y actualizada el 18 de noviembre de 2026) de un modelo del que no se dispone de model card tecnica mas alla de los metadatos de conversion.
+No se dispone de información publicada sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la información proporcionada. La licencia es Apache 2.0, lo que facilita el uso comercial, y el idioma declarado es inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer de la familia Qwen3, sin confirmar) |
-| Parametros totales | 460.730.096 (segun safetensors); el nombre indica 27B, dato no verificado |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer denso (según tags y base_model; detalles no disponibles) |
+| Parametros totales | 27.320.697.856 (~27,3B) |
+| Parametros activos | no disponible (no es MoE según los datos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con quantize_version 2, output_tensor_quantised 1, convert_type hf) |
-| Tamano del repositorio | 1,6 GB |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo original `jbowman512/Qwen3.8-27B-unsycophantic`. El nombre sugiere una variante de Qwen3 con 27.000 millones de parametros y un ajuste orientado a reducir la adulacion (sycophancy), pero no hay model card, paper ni documentacion que lo confirme. Los metadatos de conversion indican que se partio de pesos en formato Hugging Face (`convert_type: hf`) y que se aplico cuantizacion estatica de tensor de salida con la version 2 del pipeline de conversion de mradermacher.
+La información disponible no detalla la arquitectura interna del modelo base jbowman512/Qwen3.8-27B-unsycophantic más allá de que se trata de un transformer denso de ~27,3B parámetros, con pesos en safetensors en su versión original y cuantizaciones GGUF en este repositorio. El nombre sugiere una variante de la familia Qwen3.8, pero no se confirman detalles de capas, atención ni activaciones.
 
-El dato de parametros totales registrado en safetensors (460.730.096) es incompatible con un modelo de 27B y apunta a que el repositorio contiene un modelo de aproximadamente 0,46 mil millones de parametros, o bien a un error en los metadatos. No hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones arquitectonicas.
+El ajuste declarado se orienta a reducir la sicofancia (no-sycophancy), es decir, a evitar que el modelo valide o refuerce afirmaciones incorrectas del usuario. Las etiquetas "heretic" y "reproducible" indican que el autor del modelo base documenta el proceso de ajuste de forma reproducible. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. Los archivos mmproj incluidos en el repositorio apuntan a capacidades multimodales (visión), aunque no se detalla su entrenamiento.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, sin confirmacion documental.
-- Razonamiento y codigo: no disponible.
-- Matematicas: no disponible.
-- Vision: no disponible; el repositorio no incluye proyector multimodal (`skip_mmproj` vacio y sin menciones a mmproj).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (sin idiomas declarados).
-- Modo thinking: no disponible, aunque el nombre de la familia Qwen3 lo sugeriria; sin confirmar.
-- Ajuste anti-adulacion: el nombre del modelo base sugiere un entrenamiento orientado a reducir respuestas complacientes, pero no hay documentacion que lo verifique.
+- Generación de texto conversacional en inglés, con un ajuste explícito para reducir respuestas sicofánticas.
+- Capacidades multimodales: la presencia de archivos mmproj-Q8_0 y mmproj-f16 sugiere soporte de entrada de imágenes, aunque no se documenta el alcance exacto.
+- Razonamiento y respuesta a instrucciones (inferido del pipeline conversacional y los tags, sin benchmarks disponibles).
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles.
+- Reproducibilidad del ajuste declarada por el autor del modelo base.
+- No se documenta soporte explícito de tool calling, function calling, agentes multi-paso, audio ni modo thinking.
 
 ## Casos de uso
 
-- Despliegue en entornos con recursos muy limitados: dado el tamano real del repositorio (1,6 GB) y las cuantizaciones disponibles desde Q2_K hasta Q8_0, el modelo podria ejecutarse en CPU o en GPUs de gama baja mediante llama.cpp, siempre que se valide primero su calidad real.
-- Pruebas de concepto de generacion de texto local: util para experimentar con inferencia offline en portatiles sin GPU dedicada, usando las variantes Q4_K_M o Q5_K_M como compromiso entre tamano y fidelidad.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes, lo que permite medir el impacto de la cuantizacion en la perplejidad y en la calidad de salida sobre un mismo modelo base.
-- Investigacion sobre sycophancy: si el ajuste anti-adulacion del modelo base es real, podria emplearse en estudios sobre calibracion de respuestas y resistencia a la presion del usuario, aunque la falta de documentacion exige validacion previa.
-- Integracion en pipelines de llama.cpp u Ollama: el formato GGUF permite cargar el modelo en herramientas estandar de inferencia local, util para prototipos rapidos.
-- Filtrado o clasificacion ligera de texto: con un modelo de este tamano, es viable usarlo en tareas de etiquetado o resumen corto en entornos con restricciones de memoria, sujeto a evaluacion empirica.
+- Asistencia conversacional con postura crítica: el ajuste no-sicofántico lo hace adecuado para entornos donde el modelo debe señalar errores del usuario en lugar de validarlos, como tutorías o revisión de decisiones técnicas.
+- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) permiten ejecutar el modelo en GPUs de consumo con 24 GB de VRAM, útil para prototipos sin conexión.
+- Análisis de documentos con imágenes: los archivos mmproj permiten procesar entradas multimodales en pipelines de extracción de información, siempre que se valide el soporte real de visión.
+- Evaluación de sesgos y sicofancia en investigación: al ser un modelo ajustado específicamente contra la sicofancia, sirve como referencia en estudios comparativos de comportamiento.
+- Generación de contenido en inglés para blogs y documentación técnica: con contexto conversacional multi-turno, aunque la longitud de contexto no está documentada.
+- Integración en servicios compatibles con endpoints: el tag "endpoints_compatible" facilita su exposición como API en infraestructuras de inferencia estándar.
+- Pruebas de reproducibilidad: al declararse reproducible, puede emplearse para replicar experimentos de ajuste conductual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de 460 millones de parametros, las cuantizaciones Q4_K_M ocuparian aproximadamente 0,3-0,4 GB y Q8_0 alrededor de 0,5-0,6 GB, mas overhead de contexto; si el modelo real fuese de 27B, las cifras serian de 16-18 GB en Q4_K_M y 28-30 GB en Q8_0. No hay confirmacion del tamano real.
-- GPU recomendadas: no disponible. Para el tamano de 0,46B, cualquier GPU consumer moderna (RTX 3060 en adelante) seria suficiente; para un 27B, se requeririan A100 40GB, H100 o RTX 4090 con cuantizacion agresiva.
-- Cabe en GPU consumer: probablemente si en el escenario de 0,46B (incluso en iGPU); en el escenario de 27B, solo con cuantizaciones Q2_K a Q4_K_M en GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponible.
+- VRAM estimada según cuantización: Q2_K ~11,0 GB; Q3_K_S ~12,4 GB; Q3_K_M ~13,6 GB; Q3_K_L ~14,7 GB; IQ4_XS ~15,5 GB; Q4_K_S ~15,9 GB; Q4_K_M ~16,9 GB; Q5_K_S ~19,1 GB; Q5_K_M ~19,6 GB; Q6_K ~22,5 GB; Q8_0 ~29,1 GB.
+- Complementos multimodales: mmproj-Q8_0 ~0,7 GB y mmproj-f16 ~1,0 GB adicionales si se usa visión.
+- GPU recomendadas: para Q4_K_M y Q5_K_M, GPUs con 24 GB de VRAM (RTX 3090, RTX 4090) son suficientes; para Q8_0 se recomienda 32 GB o más (A100 40GB, H100, o configuraciones multi-GPU).
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones Q4 y Q5; las Q2/Q3 caben en GPUs de 12-16 GB con margen ajustado.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag "endpoints_compatible" sugiere soporte en servidores de inferencia tipo endpoint. vLLM y TGI no se confirman para GGUF en esta información.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones verificables del modelo base, y la discrepancia entre el nombre (27B) y los parametros reales (0,46B) impide establecer una comparacion fiable con alternativas de la misma categoria.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-unsycophantic-GGUF (este) | ~27,3B | no disponible | Apache 2.0 | GGUF | Ajuste no-sicofántico, multimodelo vía mmproj |
+| Modelo base jbowman512/Qwen3.8-27B-unsycophantic | ~27,3B | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar |
+| Versión i1 (imatrix) de mradermacher | ~27,3B | no disponible | Apache 2.0 | GGUF | Cuantizaciones ponderadas, disponibles en repositorio separado |
+
+No se dispone de datos de rendimiento para comparar con alternativas de la misma categoría; la comparativa se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica entre el nombre del modelo (27B) y los parametros reales declarados en safetensors (460.730.096); debe verificarse el contenido del repositorio antes de usarlo.
-- Ausencia total de model card tecnica: sin informacion sobre arquitectura, datos de entrenamiento, alineacion ni evaluaciones.
-- Licencia no declarada: riesgo legal para uso comercial; no se puede asumir herencia de la licencia de Qwen3 sin confirmacion.
-- Idiomas no declarados: no se puede garantizar calidad en castellano ni en otros idiomas.
-- Cero descargas y cero likes: sin senales de validacion por parte de la comunidad.
-- Riesgo de alucinacion y sesgos: no evaluado; cualquier uso en produccion requiere pruebas propias.
-- Repositorio de cuantizacion, no del modelo original: los errores de conversion o los pesos corruptos no se pueden diagnosticar sin acceso al modelo base.
-- El ajuste "unsycophantic" no esta documentado; no hay evidencia de que reduzca la adulacion de forma medible.
+- Idioma: el modelo declara únicamente inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no disponible: no se puede planificar su uso en tareas de contexto largo sin validación previa.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; el ajuste no-sicofántico no elimina la posibilidad de generar información incorrecta.
+- Sesgos: no se documentan análisis de sesgo; el ajuste conductual puede introducir sesgos propios no evaluados.
+- Capacidades multimodales no verificadas: la presencia de mmproj no confirma el alcance ni la calidad del soporte de visión.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base y de los datos de ajuste, no documentadas aquí.
+- Producción: sin benchmarks ni datos de latencia/throughput, el modelo requiere evaluación propia antes de un despliegue en producción.
+- El repositorio tiene 867 descargas y 0 likes, lo que indica adopción limitada y poca validación comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-unsycophantic-GGUF
-- Modelo base referenciado: https://huggingface.co/jbowman512/Qwen3.8-27B-unsycophantic
+- Hugging Face (este repositorio): https://huggingface.co/mradermacher/Qwen3.8-27B-unsycophantic-GGUF
+- Modelo base: https://huggingface.co/jbowman512/Qwen3.8-27B-unsycophantic
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-unsycophantic-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-unsycophantic-GGUF
+- README de referencia para GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

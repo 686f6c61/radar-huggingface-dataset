@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 645,
+  "downloads_30d": 760,
   "trending_score": 0,
   "parameters": 756871277,
   "parameters_human": "756.9M",
@@ -53,14 +53,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "GitHub - Valen-Team/Valen: Open, lightweight multimodal decision models ...",
-      "url": "https://github.com/Valen-Team/Valen",
-      "snippet": "Open, lightweight multimodal decision models for text, images, and video. Train and run them yourself. - Valen-Team/Valen"
+      "title": "Baskets artisanales en cuir & streetwear | Martin Valen",
+      "url": "https://martinvalen.com/fr/",
+      "snippet": "De notre studio aux rues du monde entier, Martin Valen incarne une mode contemporaine avec du caractère. Singulière mais facile à …Read more"
     },
     {
-      "title": "Valen-Team/Valen-0.8B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Valen-Team/Valen-0.8B-GGUF",
-      "snippet": "Valen-Team / Valen-0.8B-GGUF Like 0 Follow Valen 6 Image-Text-to-Text Transformers GGUF English Chinese valen_qwen feature-extraction valen qwen3_5 decision-making decision-model image-text-to-typed-output structured-output video shared-state full-finetuning conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet ..."
+      "title": "Valen - Aston Martin",
+      "url": "https://www.astonmartin.com/en/models/valen",
+      "snippet": "Valen is defined by design cues you rarely see in Aston Martin front-mid engine models. From the full carbon fibre body exterior to …Read more"
+    },
+    {
+      "title": "Valen - Aston Martin FR",
+      "url": "https://www.astonmartin.com/fr/models/valen",
+      "snippet": "Valen se définit par un design que l'on voit rarement sur les modèles à moteur avant-central d’Aston Martin. De la carrosserie …Read more"
+    },
+    {
+      "title": "GitHub - Valen-Team/Valen: Open multimodal decision models, 0.8B …",
+      "url": "https://github.com/Valen-Team/Valen",
+      "snippet": "Use Valen’s probabilities to choose which tickets to route automatically and which need human review. Compare 0.8B, 2B and 4B by …Read more"
+    },
+    {
+      "title": "Valen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Valen",
+      "snippet": "This disambiguation page lists articles associated with the title Valen. If an internal link incorrectly led you here, you may wish to …Read more"
     }
   ]
 }

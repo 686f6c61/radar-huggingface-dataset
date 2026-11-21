@@ -43,7 +43,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-11-16T04:31:40.453Z",
-  "removal_pattern": "isolated",
+  "removal_pattern": "account_gone",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

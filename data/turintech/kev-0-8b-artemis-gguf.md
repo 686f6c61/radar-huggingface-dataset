@@ -2,102 +2,106 @@
 
 ## Resumen
 
-Kev-0.8B-Artemis-GGUF es una versión cuantizada en formato GGUF del modelo Kev-0.8B, desarrollada por TurinTech a partir del modelo base jaredpalmer/kev-0.8b. No se trata de un modelo conversacional, sino de un "decision model": un modelo especializado en tareas de enrutado y triaje que responde preguntas tipificadas (elección entre opciones, sí o no, puntuación en una escala) en una sola pasada, devolviendo una probabilidad para cada respuesta posible.
+Kev-0.8B-Artemis-GGUF es una version cuantizada en formato GGUF del modelo Kev-0.8B de Jared Palmer, publicada por TurinTech a traves de su pipeline Artemis. No es un modelo conversacional generico: es un modelo de decision disenado para responder preguntas tipadas (si/no, eleccion unica o puntuacion en una escala) devolviendo una probabilidad por cada respuesta en una sola pasada. Con 752.917.824 parametros totales y un repositorio de 0,6 GB, esta pensado para tareas de enrutamiento y triaje de bajo coste.
 
-El problema que resuelve es la necesidad de tomar decisiones estructuradas de bajo coste en pipelines de producción: clasificar tickets, enrutar peticiones a equipos o agentes, detectar urgencia o intenciones, sin necesidad de desplegar un LLM grande. Con 752,9 millones de parámetros y un archivo por defecto de solo 0,62 GB (Q6_K), cabe con holgura en GPUs de consumo y ofrece latencias mínimas.
+El modelo se sirve a traves del endpoint `/v1/systemone` de `llama-server` (llama.cpp), no mediante chat completions convencional. Requiere llama.cpp b11540 o superior. Su propuesta de valor es la eficiencia: un modelo por debajo de los 1.000 millones de parametros que ofrece respuestas estructuradas con distribucion de probabilidad, adecuado para clasificacion y enrutamiento en produccion donde un LLM grande resultaria sobredimensionado.
 
-Su relevancia actual radica en el creciente interés por modelos pequeños dedicados a "routing" y "triage" dentro de arquitecturas multi-agente. Se ejecuta mediante llama.cpp (versión b11540 o superior) a través del endpoint dedicado `/v1/systemone` de llama-server, o mediante Ollama, y la cuantización con imatrix mantiene un acuerdo del 95,10 % con el modelo original en BF16 sobre 1.000 decisiones del conjunto de evaluación "final set".
+La licencia es Apache 2.0 y el modelo esta disponible tambien en Ollama y LM Studio. La relevancia actual radica en la tendencia hacia modelos pequenos y especializados para tareas de decision deterministas, donde la latencia y el coste importan mas que la generacion abierta de texto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Decision model basado en transformer (detalle exacto no disponible); inferencia vía llama.cpp con endpoint `/v1/systemone` |
-| Parámetros totales | 752.917.824 (~0,75 B) |
-| Parametros activos | No aplicable (no es MoE) |
-| Longitud de contexto | No disponible (contexto de entrenamiento no publicado; en inferencia se recomienda `-c 16384` para no reservar memoria del contexto completo) |
-| Tipos de cuantización | Q6_K (archivo por defecto, 0,620 GB); cuantización con imatrix |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer (derivado de jaredpalmer/kev-0.8b); detalles internos no disponibles |
+| Parametros totales | 752.917.824 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16.384 tokens (configuracion de servidor recomendada: `-c 16384`) |
+| Tipos de cuantizacion | GGUF cuantizado; se menciona Q6_K y Q8_0 (ggml-org) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (compatible llama.cpp y Ollama) |
+| Formato de pesos | GGUF (safetensors como base del modelo original) |
 
 ## Arquitectura y entrenamiento
 
-Kev-0.8B-Artemis-GGUF deriva del modelo base jaredpalmer/kev-0.8b y ha sido cuantizado por TurinTech usando su herramienta Artemis, con estimación de matriz de importancia (imatrix) para preservar la fidelidad de las respuestas tras la cuantización. El modelo funciona como clasificador de texto: en lugar de generar texto libre, evalúa un "estado" (un texto de entrada) contra un conjunto de preguntas tipificadas y produce, en una sola pasada (0 tokens de salida), probabilidades calibradas por cada opción.
+La informacion disponible no detalla la arquitectura interna del modelo base `jaredpalmer/kev-0.8b` mas alla de que es un transformer de aproximadamente 753 millones de parametros. La version publicada por TurinTech es una compresion mediante su pipeline Artemis, que produce pesos en formato GGUF optimizados para llama.cpp. El modelo emplea tecnicas de cuantizacion con `imatrix` (matriz de importancias) para preservar la calidad de las decisiones tras la compresion.
 
-Los tres tipos de pregunta soportados son: `choice` (elegir una opción entre varias con criterios nombrados), `noul` (probabilidad de sí/no) y `score` (nivel esperado sobre una escala definida por el usuario, con distribución de probabilidades por nivel y una medida de confianza). El modelo cuantizado fue validado contra el original en BF16 sobre el dataset LocalLLaMA/typed-decisions ("Final set"), alcanzando un acuerdo del 95,10 % en 1.000 decisiones y cero cambios en respuestas de alta confianza. Los detalles del entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no están disponibles.
+No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La innovacion tecnica destacable es el modo de inferencia: en lugar de generar texto autoregresivamente, el modelo evalua un `state` (contexto) junto con preguntas tipadas (`choice`, `noul`, `score`) y devuelve probabilidades calibradas para cada opcion en una sola pasada. Este diseno elimina la variabilidad de la generacion libre y produce salidas deterministas y estructuradas.
 
 ## Capacidades
 
-- Clasificación de texto estructurada: responde preguntas tipificadas (`choice`, `noul`, `score`) con probabilidades por cada respuesta, en una sola pasada sin generación de tokens.
-- Enrutado y triaje: asignación de entradas (tickets, mensajes, peticiones) a categorías, equipos o agentes definidos por el usuario.
-- Detección binaria: cálculo de la probabilidad de que una afirmación sea cierta sobre un texto dado (tipo `noul`).
-- Puntuación en escalas: estimación del nivel esperado sobre escalas personalizadas (por ejemplo, urgencia baja/media/alta) con distribución completa de probabilidades.
-- Medida de confianza: cada respuesta incluye un valor de confianza, útil para escalar a un modelo mayor o a revisión humana cuando la confianza es baja.
-- Ejecución local: funciona en GPU propia vía llama.cpp (`llama-server` con endpoint `/v1/systemone`) o mediante Ollama.
-- No soporta: generación de texto conversacional, tool calling, agentes multi-paso, visión ni audio. No es un modelo de chat y no debe ejecutarse como tal.
+- Decision tipada: responde preguntas de tipo `choice` (elegir una opcion entre varias), `noul` (si/no con probabilidad) y `score` (nivel esperado en una escala).
+- Clasificacion con probabilidades: devuelve una distribucion de probabilidad sobre las opciones, no solo la etiqueta ganadora.
+- Enrutamiento y triaje: disenado especificamente para asignar casos a equipos o categorias.
+- Evaluacion de urgencia y prioridad mediante preguntas de tipo `score`.
+- Inferencia en una sola pasada: no requiere decodificacion autoregresiva multi-turno.
+- No soporta conversacion abierta ni generacion de texto libre.
+- No se documenta soporte de tool calling, agentes multi-paso ni capacidades multimodales.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasificar cada ticket entrante al equipo adecuado (facturación, técnico, ventas) con una sola petición al endpoint `/v1/systemone`, usando el campo `choice` con criterios personalizados; con 0,75 B de parámetros, el coste por decisión es mínimo.
-- Detección de urgencia en mensajes de clientes: mediante preguntas tipo `score` con escalas definidas (bajo/medio/alto), priorizando automáticamente colas de atención al cliente.
-- Filtrado de intenciones antes de un LLM grande: usar Kev como primer filtro para decidir si un mensaje requiere refund, escalado humano o respuesta automática, ahorrando llamadas a modelos costosos.
-- Moderación y triaje de contenido: clasificación binaria (`noul`) de si un texto incumple una política concreta, con probabilidad calibrada para establecer umbrales.
-- Orquestación multi-agente: como router de bajo coste que decide qué agente especializado debe atender cada petición dentro de un sistema de agentes, gracias a su latencia mínima y su bajo consumo de memoria (pico de 5,2 GiB).
-- Clasificación en dispositivos o servidores modestos: el archivo Q6_K de 0,62 GB permite desplegar clasificación semántica en GPUs de consumo o incluso en entornos con VRAM limitada.
-- Análisis de feedback a escala: puntuar miles de comentarios de usuarios (satisfacción, categoría, prioridad) en lotes, con una única pasada de inferencia por elemento.
+- Triaje de tickets de soporte: el modelo recibe el texto de una incidencia como `state` y responde preguntas de tipo `choice` para asignar el equipo (facturacion, tecnico, ventas) y de tipo `score` para la urgencia, tal como muestra el ejemplo de la model card.
+- Enrutamiento de correos entrantes: clasificar mensajes en departamentos con una distribucion de probabilidad que permite umbrales de confianza y derivacion a revision humana cuando la confianza es baja.
+- Moderacion binaria de contenido: usar preguntas `noul` para decidir si un texto cumple o no una politica concreta, aprovechando la probabilidad devuelta como medida de riesgo.
+- Priorizacion en colas de atencion: preguntas de tipo `score` para estimar el nivel de urgencia de cada solicitud y ordenar la cola de trabajo.
+- Validacion de formularios y datos: decidir si un campo cumple criterios definidos mediante preguntas si/no con probabilidad asociada.
+- Clasificacion de intenciones en asistentes: determinar la intencion del usuario entre un conjunto cerrado de opciones antes de derivar a un LLM mayor, reduciendo coste y latencia.
+- Filtrado previo en pipelines RAG: decidir si un documento es relevante para una consulta antes de invocar un modelo generativo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (TurinTech) sobre el dataset LocalLLaMA/typed-decisions ("Final set", 1.000 decisiones), comparando la versión cuantizada con el modelo original en BF16:
+Resultados declarados por el autor (no verificados) sobre el dataset `LocalLLaMA/typed-decisions`, conjunto final:
 
-| Métrica | Valor |
-|---|---|
-| Acuerdo con el original BF16 (mismas respuestas) | 95,10 % |
-| Cambios en respuestas de alta confianza | 0 |
-| Accuracy del modelo | 46,8 % |
+| Tarea | Metrica | Valor |
+|---|---|---|
+| Concordancia con el original | Misma respuesta (%) | 95,1 |
+| Concordancia con el original | Cambios en respuestas confiadas | 0 |
+| Decisiones tipadas | Precision (%) | 46,8 |
 
-Como referencia declarada en la model card, la cuantización Q8_0 de ggml-org (0,812 GB) alcanza un acuerdo del 98,20 % con el original. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Ademas, la model card indica que la cuantizacion Q8_0 de ggml-org alcanza un 98,20 % de concordancia con el modelo original, frente al 95,10 % de la version publicada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: pico de 5,2 GiB medido en una NVIDIA A100-SXM4-80GB con la configuración recomendada (`-c 16384 -ub 4096 -b 4096 -np 1`); el archivo Q6_K pesa 0,620 GB, por lo que gran parte de la memoria corresponde al contexto y buffers de llama.cpp.
-- GPU recomendada: cualquier GPU CUDA moderna; los datos publicados provienen de una NVIDIA A100-SXM4-80GB. No se han publicado mediciones en otras GPUs.
-- Consumer GPUs: por tamaño (0,62 GB de pesos y pico de 5,2 GiB en inferencia), debería funcionar sin problemas en GPUs de consumo con 6 GB de VRAM o más (por ejemplo, RTX 3060, RTX 4060 o superiores), aunque no hay mediciones oficiales en estas tarjetas.
-- Despliegue: llama.cpp (versión b11540 o posterior, probado en el commit `1e6f04a`, compilado para CUDA) mediante `llama-server` y el endpoint `/v1/systemone`; también disponible paquete oficial en Ollama (`turintech/kev-0.8b-artemis:q6_k`). No se recomienda ejecutarlo como modelo de chat vía el botón de llama.cpp de Hugging Face; LM Studio requiere importar el archivo con los ajustes de contexto y batch manuales.
-- Latencia y throughput: no disponibles como cifras concretas; el modelo produce respuestas en una sola pasada con 0 tokens de salida, lo que implica latencias muy bajas.
+- VRAM estimada: 5,2 GiB segun la model card (para la configuracion de referencia).
+- Tamano de descarga: 0,620 GB.
+- GPU recomendadas: el ejemplo de la model card se ejecuto en una NVIDIA A100 con llama.cpp compilado para CUDA; por su tamano cabe en cualquier GPU consumer moderna.
+- Cabe en GPU consumer: si, con holgura (menos de 6 GiB de VRAM), incluidas RTX 3060, RTX 4060, RTX 4090 y similares.
+- Opciones de despliegue: `llama-server` de llama.cpp (b11540 o superior), Ollama (`turintech/kev-0.8b-artemis`), LM Studio (`turintech/kev-0.8b-artemis`).
+- Configuracion recomendada: `-c 16384 -ub 4096 -b 4096 -np 1` (un solo slot de peticion; otros valores de `-np` no fueron probados).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Característica | Kev-0.8B-Artemis-GGUF | Kev-0.8B Q8_0 (ggml-org) | LLM generalista pequeño (p. ej. Qwen2.5-0.5B) |
-|---|---|---|---|
-| Parámetros | 752,9 M | 752,9 M | ~500 M |
-| Tamaño del archivo | 0,620 GB (Q6_K) | 0,812 GB (Q8_0) | ~0,4–1 GB según cuantización |
-| Tarea | Clasificación tipificada (decision model) | Clasificación tipificada (decision model) | Generación de texto general |
-| Acuerdo con BF16 | 95,10 % | 98,20 % | No aplicable |
-| Salida | Probabilidades por respuesta, 0 tokens generados | Probabilidades por respuesta, 0 tokens generados | Texto libre, requiere parsing |
-| Licencia | Apache 2.0 | No disponible | Apache 2.0 (Qwen2.5) |
-| Ejecución | llama.cpp `/v1/systemone`, Ollama | llama.cpp | Universal (llama.cpp, vLLM, TGI, etc.) |
+No se dispone de datos de benchmarks comparativos con otros modelos de clasificacion o decision en la informacion proporcionada. Como referencia estructural:
 
-Frente a un LLM generalista pequeño, Kev-0.8B no genera texto sino probabilidades estructuradas en una pasada, lo que elimina el parsing y reduce la latencia, a costa de no servir para tareas conversacionales.
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Kev-0.8B-Artemis-GGUF | 752,9 M | 16.384 | GGUF | Apache 2.0 | Decision tipada |
+| jaredpalmer/kev-0.8b (base) | ~0,8 B | no disponible | safetensors | no disponible | Modelo original |
+| LLMs genericos pequenos (p. ej. familia 0,5-1 B) | 0,5-1 B | variable | GGUF/safetensors | variable | Generacion de texto |
+
+La comparacion cuantitativa de rendimiento con alternativas no esta disponible.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: no genera texto libre y no debe ejecutarse como modelo de chat; requiere el endpoint `/v1/systemone` de llama.cpp b11540 o superior, o el paquete de Ollama.
-- Accuracy moderada: el 46,8 % de accuracy declarado sobre el dataset typed-decisions indica que, aunque es consistente con su versión BF16, su capacidad de clasificación absoluta es limitada; conviene validar sobre el dominio propio antes de producción.
-- La métrica de acuerdo del 95,10 % no está verificada de forma independiente ("verified: false") y proviene del propio autor.
-- Sesgos conocidos: no disponibles; al ser un modelo derivado de jaredpalmer/kev-0.8b, hereda los sesgos de sus datos de entrenamiento, que no están documentados.
-- Riesgo de alucinación: no aplicable en el sentido clásico (no genera texto), pero las probabilidades pueden estar mal calibradas fuera del dominio de entrenamiento.
-- Idiomas soportados no documentados; las instrucciones y criterios de los ejemplos están en inglés, por lo que el rendimiento en castellano es desconocido y debería evaluarse.
-- Longitud de contexto de entrenamiento no publicada; en despliegue se recomienda limitar el contexto a 16384 tokens para controlar el consumo de memoria.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones relevantes.
-- La configuración publicada se probó con un único slot de petición (`-np 1`); otros valores no fueron testeados por el autor.
+- No es un modelo conversacional: no genera texto libre ni mantiene dialogos multi-turno; solo responde preguntas tipadas.
+- La precision en decisiones tipadas reportada es del 46,8 %, lo que limita su uso en escenarios donde se requiera alta exactitud sin supervision humana.
+- Los benchmarks son declarados por el autor y no estan verificados (`verified: false`).
+- No hay informacion sobre sesgos, composicion del dataset de entrenamiento ni evaluaciones de robustez.
+- Idiomas soportados no documentados; no se puede asumir buen rendimiento fuera del idioma o idiomas de entrenamiento.
+- Requiere una version especifica de llama.cpp (b11540 o superior) y el endpoint `/v1/systemone`, lo que limita la compatibilidad con stacks de inferencia estandar.
+- Los numeros de rendimiento se midieron con un unico slot (`-np 1`); el comportamiento con concurrencia no esta caracterizado.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de `jaredpalmer/kev-0.8b` conviene verificar las condiciones del modelo base.
+- Riesgo de alucinacion en el sentido de calibracion: las probabilidades devueltas deben validarse en el dominio de despliegue antes de confiar en umbrales automaticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/turintech/Kev-0.8B-Artemis-GGUF
 - Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
-- Web de TurinTech: https://turintech.ai
-- Hilo de feedback de TurinTech: https://huggingface.co/spaces/turintech/README/discussions/1
-- Sección de resultados de la model card: https://huggingface.co/turintech/Kev-0.8B-Artemis-GGUF#results
-- Dataset de evaluación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Ollama: https://ollama.com/turintech/kev-0.8b-artemis
+- LM Studio: https://lmstudio.ai/turintech/kev-0.8b-artemis
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
+- Resultados declarados: https://huggingface.co/turintech/Kev-0.8B-Artemis-GGUF#results

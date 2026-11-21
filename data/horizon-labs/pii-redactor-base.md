@@ -2,133 +2,110 @@
 
 ## Resumen
 
-pii-redactor-base es un modelo de clasificacion de tokens (token classification) desarrollado por Horizon-Labs, especializado en detectar y etiquetar informacion personal identificable (PII) y secretos en texto. Se construye mediante fine-tuning de jhu-clsp/mmBERT-base, un encoder transformer multilingue de tipo ModernBERT, y cuenta con 307.575.611 parametros (aproximadamente 308M). Su proposito no es generar texto, sino actuar como filtro previo: marcar que fragmentos de un texto deben enmascararse antes de que ese texto llegue a logs, prompts de LLM, datos de entrenamiento o APIs de terceros.
+PII Redactor (base) es un modelo de clasificación de tokens desarrollado por Horizon-Labs, especializado en la detección y el etiquetado de información personal identificable (PII) y secretos (claves de API, contraseñas, cadenas de conexión) en texto multilingüe. Su propósito es servir de barrera de redacción antes de que los datos lleguen a logs, prompts de LLM, conjuntos de entrenamiento o APIs de terceros. Con 307,6 millones de parámetros y una licencia Apache-2.0 sin restricciones de acceso, se posiciona como una alternativa ligera y permisiva a los filtros de privacidad propietarios.
 
-El modelo etiqueta 29 tipos de entidad que cubren nombres, datos de contacto, direcciones, identificadores gubernamentales, datos financieros, credenciales y claves de API, asi como identificadores de red y de dispositivo. Soporta mas de 30 idiomas, con alfabetos latinos y no latinos, y esta publicado bajo licencia Apache-2.0, sin gating y entrenado, segun el autor, solo con datos con licencias permisivas. Su tamano contenido lo hace apto para ejecucion en CPU, y dispone de exportacion a ONNX y soporte de transformers.js para su uso en navegador y en el borde.
+El modelo deriva de `jhu-clsp/mmBERT-base`, un encoder de la familia ModernBERT multilingüe, y se distribuye en formatos safetensors y ONNX, lo que permite su ejecución en CPU, en el navegador mediante transformers.js y en el borde de la red. Etiqueta 29 tipos de entidad que cubren nombres, datos de contacto, direcciones, identificadores gubernamentales, datos financieros, credenciales, identificadores de red y de dispositivo, entre otros.
 
-Su relevancia actual se explica por dos factores. Primero, la inspeccion de PII en tiempo real se ha vuelto un requisito operativo en aplicaciones que envian datos de usuarios a modelos de terceros. Segundo, el autor publica una evaluacion comparativa honesta frente a alternativas abiertas (modelos de 44M, 141M y 1.5B de parametros) en cuatro benchmarks externos mas un conjunto propio, reconociendo explicitamente que no es el mejor en todas las pruebas. Esta transparencia, junto a la integracion con Presidio y LLM Guard, es lo que lo diferencia de detectores de PII menos documentados.
+Su relevancia actual radica en la combinación de tres factores: cobertura de más de 30 idiomas (incluidos alfabetos no latinos como árabe, hindi, chino, japonés, coreano, tailandés y vietnamita), un tamaño contenido que lo hace viable en infraestructura modesta y una evaluación publicada sobre cuatro benchmarks externos que no formaron parte de su entrenamiento, con métricas de recall y precisión de redacción en lugar de F1 por entidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer bidireccional tipo ModernBERT (fine-tuning de jhu-clsp/mmBERT-base, variante multilingue) |
-| Parametros totales | 307.575.611 (aproximadamente 308M, dato real de safetensors) |
-| Parametros activos | No aplica (modelo denso, no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada; el script redact.py del repositorio gestiona documentos largos mediante ventanas solapadas |
-| Tipos de cuantizacion | No se documentan tipos de cuantizacion especificos; se publican pesos safetensors y exportacion ONNX |
-| Idiomas soportados | 35 idiomas declarados: en, de, fr, es, it, nl, pt, pl, cs, sk, sl, hr, sr, bg, ro, hu, el, da, sv, fi, et, lv, lt, ru, uk, tr, ar, hi, zh, ja, ko, vi, id, ms, tl, th (la model card indica "30+ idiomas") |
+| Arquitectura | Transformer encoder (ModernBERT / mmBERT-base) para clasificación de tokens |
+| Parametros totales | 307.575.611 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (se distribuyen safetensors y ONNX; el repo incluye variantes ONNX cuantizadas para transformers.js, sin detallar los esquemas) |
+| Idiomas soportados | 30+ idiomas: en, de, fr, es, it, nl, pt, pl, cs, sk, sl, hr, sr, bg, ro, hu, el, da, sv, fi, et, lv, lt, ru, uk, tr, ar, hi, zh, ja, ko, vi, id, ms, tl, th |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX (tambien compatible con transformers.js) |
-| Tamano del repositorio | 3,1 GB |
-| Tarea (pipeline) | token-classification |
-| Modelo base | jhu-clsp/mmBERT-base |
-| Fecha de creacion (repositorio) | 2026-09-23 |
-| Ultima actualizacion (repositorio) | 2026-09-23 |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de un encoder transformer bidireccional de la familia ModernBERT, en su variante multilingue mmBERT desarrollada por jhu-clsp. No se trata de un modelo generativo ni de una arquitectura MoE, SSM o hibrida: la cabeza de salida es de clasificacion de tokens, y cada token recibe una etiqueta de entidad o la etiqueta de "no entidad". Esto condiciona todo su comportamiento: el modelo no redacta por si mismo, sino que produce los tramos de texto que un script posterior (redact.py, incluido en el repositorio) convierte en sustituciones como [PERSON] o [EMAIL].
+El modelo es un encoder transformer de la familia ModernBERT, concretamente un ajuste fino de `jhu-clsp/mmBERT-base`, orientado a clasificación de tokens (token-classification). No emplea mezcla de expertos ni arquitecturas híbridas SSM: es un encoder denso de 308M de parámetros que produce una etiqueta BIO por token, con 29 tipos de entidad definidos (`PERSON`, `EMAIL`, `PHONE`, `CREDIT_CARD`, `SECRET`, `IP_ADDRESS`, `MAC_ADDRESS`, `IBAN`-equivalente vía `BANK_ACCOUNT`, `PASSPORT`, `NATIONAL_ID`, `TAX_ID`, `MEDICAL_ID`, `DRIVER_LICENSE`, `LICENSE_NUMBER`, `VEHICLE_ID`, `DEVICE_ID`, `USERNAME`, `PASSWORD`, `URL`, `COORDINATE`, `DATE_OF_BIRTH`, `AGE`, `ORGANIZATION`, `STREET_ADDRESS`, `POSTCODE`, `LOCATION`, `ACCOUNT_ID`, entre otros).
 
-En cuanto a los datos, la model card declara entrenamiento exclusivamente sobre conjuntos con licencias permisivas: ai4privacy/pii-masking-openpii-1.5m, nvidia/Nemotron-PII y gretelai/gretel-pii-masking-en-v1. No se especifica el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de ajuste con RLHF o DPO (tecnicas, por otra parte, propias de modelos generativos y no de un clasificador de entidades). Como innovaciones tecnicas destacables, la ficha del autor menciona el manejo de subpalabras con fusion de piezas, el recorte de espacios en blanco y el procesado de documentos largos mediante ventanas solapadas, ademas de utilidades de integracion con Presidio y con el escaner Anonymize de LLM Guard. No se documentan innovaciones de atencion (como atencion lineal) ni decodificacion especulativa.
+El entrenamiento se realizó exclusivamente sobre datos con licencia permisiva, según declara el autor, combinando tres conjuntos: `ai4privacy/pii-masking-openpii-1.5m`, `nvidia/Nemotron-PII` y `gretelai/gretel-pii-masking-en-v1`. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron fases de RLHF o DPO (poco habituales en un modelo de etiquetado). La model card indica que la evaluación se hizo sobre benchmarks externos no vistos durante el entrenamiento, además de dos conjuntos de retención propios del autor. El repositorio incluye utilidades específicas (`redact.py`, `llm_guard_conf.py`) que gestionan la fusión de subpalabras, el recorte de espacios y el procesamiento de documentos largos mediante ventanas solapadas, lo que sugiere que el contexto efectivo se gestiona a nivel de pipeline y no de una ventana nativa extendida.
 
 ## Capacidades
 
-- Deteccion de PII y secretos como tarea de clasificacion de tokens (NER), sin generacion de texto.
-- Etiquetado de 29 tipos de entidad: ACCOUNT_ID, AGE, BANK_ACCOUNT, COORDINATE, CREDIT_CARD, CREDIT_CARD_CVV, DATE, DATE_OF_BIRTH, DEVICE_ID, DRIVER_LICENSE, EMAIL, IP_ADDRESS, LICENSE_NUMBER, LOCATION, MAC_ADDRESS, MEDICAL_ID, NATIONAL_ID, ORGANIZATION, PASSPORT, PASSWORD, PERSON, PHONE, POSTCODE, SECRET, STREET_ADDRESS, TAX_ID, URL, USERNAME y VEHICLE_ID.
-- La etiqueta SECRET cubre claves de API, tokens, claves privadas, cadenas de conexion y cookies de sesion.
-- La etiqueta ORGANIZATION se reserva a empleadores o empresas vinculadas a una persona.
-- Cobertura multilingue declarada de 30+ idiomas, con alfabetos latinos y no latinos (incluye arabe, hindi, chino, japones, coreano, tailandes y griego, entre otros).
-- Ejecucion en CPU y despliegue en el borde o en navegador mediante ONNX y transformers.js.
-- Integracion como recognizer de Presidio AnalyzerEngine.
-- Integracion como escaner Anonymize de LLM Guard, con mapeo de etiquetas propio (llm_guard_conf.py) y soporte de vault para sustituciones reversibles.
-- Redaccion de documentos largos mediante ventanas solapadas con el script redact.py.
-- Capacidades no soportadas: no hay tool calling, ni function calling, ni razonamiento multi-paso, ni modo "thinking", ni vision, ni audio, ni generacion de codigo. Tampoco se etiquetan el genero ni otros atributos sensibles (religion, condiciones de salud).
+- Detección y etiquetado de 29 tipos de entidad PII y secretos en texto libre.
+- Reconocimiento de credenciales y secretos: claves de API (incluye formatos tipo `sk-proj-...`), tokens, claves privadas, cadenas de conexión a bases de datos y cookies de sesión.
+- Identificadores financieros: tarjetas de crédito, CVV, IBAN/cuentas bancarias, identificadores de cuenta.
+- Identificadores gubernamentales y administrativos: pasaporte, documento nacional de identidad, número fiscal, permiso de conducir, identificador médico.
+- Datos de contacto y localización: email, teléfono, dirección postal, código postal, ubicación, coordenadas.
+- Identificadores de red y dispositivo: direcciones IP, direcciones MAC, identificadores de dispositivo y de vehículo.
+- Capacidad multilingüe real sobre más de 30 idiomas, con cobertura de alfabetos latino, cirílico, árabe, devanagari, han, kana, hangul, tailandés y vietnamita.
+- Integración con Presidio como reconocedor personalizado y con LLM Guard en el escáner `Anonymize`.
+- Ejecución en navegador y en el borde mediante ONNX y transformers.js.
+- No soporta tool calling, function calling ni razonamiento multi-paso: es un modelo discriminativo de etiquetado, no generativo.
+- No detecta atributos sensibles como género, religión o condiciones de salud en esta versión.
 
 ## Casos de uso
 
-- Saneado de prompts antes de enviar datos a APIs de terceros: el modelo se coloca como paso previo al envio de una peticion a un LLM externo, de modo que nombres, correos, telefonos, IBAN o claves de API se sustituyen por marcadores antes de salir de la infraestructura propia. Su tamano de 308M permite ejecutarlo en la misma ruta de peticion sin anadir una GPU dedicada.
-- Redaccion de logs de aplicacion: los sistemas de logging suelen capturar cuerpos de peticion completos, incluidos correos, tokens de sesion o cabeceras con secretos. El modelo, ejecutado sobre cada linea o cada bloque de log, permite enmascarar esos campos antes de que lleguen al almacen de logs o a una plataforma de observabilidad.
-- Limpieza de datasets de entrenamiento: antes de reutilizar datos scrapeados, tickets historicos o conversaciones, el detector marca las entidades presentes para que se anonimicen. La licencia Apache-2.0 y el entrenamiento declarado sobre datos permisivos facilitan su uso en pipelines de datos internos.
-- Cumplimiento del RGPD en atencion al cliente: en colas de tickets y transcripciones de chat, el modelo enmascara identificadores personales antes del tratamiento o del analisis por parte de equipos internos, con sustituciones reversibles mediante el vault de LLM Guard cuando se necesita recuperar el dato original.
-- Deteccion de secretos en repositorios y ficheros de configuracion: la etiqueta SECRET cubre claves de API, tokens, claves privadas, cadenas de conexion y cookies, lo que permite integrarlo como comprobacion previa a un commit o como paso de un pipeline de CI para bloquear credenciales antes de que se publiquen.
-- Anonimizacion de documentos legales y administrativos: los benchmarks incluidos por el autor evaluan formularios, cartas, programas docentes y sentencias del TEDH, lo que situa al modelo en el escenario de procesar expedientes con identificadores directos antes de su publicacion o de su analisis por terceros.
-- Enmascaramiento en pipelines RAG: antes de indexar documentos en una base vectorial, el detector elimina la PII del texto que se va a chunkear y almacenar, reduciendo el riesgo de que un sistema de recuperacion devuelva datos personales en respuestas futuras.
-- Filtros en formularios y aplicaciones de navegador: mediante la exportacion ONNX y transformers.js, el modelo puede ejecutarse en el cliente para avisar o bloquear el envio de datos sensibles sin que el texto abandone el dispositivo.
-- Analisis de datos en entornos regulados (salud, banca): las etiquetas MEDICAL_ID, BANK_ACCOUNT, CREDIT_CARD, TAX_ID y NATIONAL_ID permiten construir capas de saneado especificas de sector antes de que los datos lleguen a un equipo de analitica.
+- Redacción previa a logs de aplicación: interceptar mensajes de log antes de escribirlos en disco o enviarlos a un agregador (ELK, Loki, Datadog) y sustituir emails, teléfonos, IPs y credenciales por marcadores como `[EMAIL]` o `[SECRET]`, reduciendo el riesgo de filtraciones en sistemas de observabilidad.
+- Saneamiento de prompts hacia LLMs de terceros: colocar el modelo como paso previo a una llamada a una API externa para eliminar PII del contexto del usuario, con integración directa vía el escáner `Anonymize` de LLM Guard y su bóveda (`Vault`) para reidentificación posterior.
+- Limpieza de conjuntos de entrenamiento: procesar corpus multilingües antes de usarlos en ajuste fino, aprovechando la cobertura de 30+ idiomas y la capacidad de manejar documentos largos con ventanas solapadas mediante `redact.py`.
+- Cumplimiento de RGPD en pipelines de datos: anonimizar exportaciones de bases de datos o ficheros de atención al cliente antes de compartirlos con equipos internos o proveedores, cubriendo identificadores fiscales, direcciones y datos bancarios.
+- Detección de secretos en repositorios y ficheros de configuración: escanear ficheros `.env`, YAML de despliegue y volcados de configuración para localizar claves de API, contraseñas y cadenas de conexión antes de un commit o de adjuntar un fichero a un ticket.
+- Anonimización en el navegador: desplegar la variante ONNX con transformers.js para redactar formularios o textos en el cliente antes de enviarlos al servidor, sin coste de infraestructura y sin que el texto original abandone el dispositivo.
+- Procesamiento de documentos legales o judiciales: aplicar el modelo sobre resoluciones y expedientes para localizar identificadores directos, un escenario para el que el autor reporta métricas específicas sobre el benchmark TAB de sentencias del TEDH.
+- Filtrado en herramientas de atención al cliente: redactar transcripciones de chat o correo antes de almacenarlas o de pasarlas a un sistema de análisis de calidad.
 
 ## Benchmarks y rendimiento
 
-El autor evalua el modelo en cuatro benchmarks externos mas un conjunto sintetico propio de retencion, ninguno de los cuales se uso en el entrenamiento de los modelos comparados. La comparacion ignora los conjuntos de etiquetas de cada modelo y mide dos magnitudes propias de la redaccion: recall de redaccion (proporcion de caracteres que deben enmascararse y quedan enmascarados) y precision de redaccion (proporcion de caracteres enmascarados que son realmente PII). Todos los modelos se ejecutaron a traves del mismo pipeline de token-classification de transformers, con un maximo de 600 documentos por benchmark.
+El autor publica métricas de recall y precisión de redacción (proporción de caracteres que deben redactarse y quedan enmascarados, y proporción de caracteres enmascarados que son realmente PII), evaluadas sobre benchmarks externos no vistos en entrenamiento. La comparación ignora los tipos de entidad porque cada modelo usa su propio conjunto de etiquetas. Todos los modelos se ejecutaron con el mismo pipeline de `transformers`, con un máximo de 600 documentos por benchmark.
 
-Recall / precision de redaccion:
-
-| Benchmark | este modelo | small (141M) | OpenAI Privacy Filter (1.5B) | gravitee bert-small | OpenMed PII Small 44M |
+| Benchmark | Este modelo (308M) | small (141M) | OpenAI Privacy Filter (1.5B) | gravitee bert-small | OpenMed PII Small 44M |
 |---|---|---|---|---|---|
-| RedactionBench (formularios, cartas y programas docentes de estilo real; tramos "mandatory") | 0,19 / 0,74 | 0,24 / 0,73 | 0,10 / 0,85 | 0,06 / 0,76 | 0,11 / 0,76 |
-| TonicAI Privacy-Bench (hilos de correo corporativo) | 0,81 / 0,94 | 0,76 / 0,95 | 0,78 / 0,97 | 0,87 / 0,76 | 0,86 / 0,82 |
-| TAB: sentencias del TEDH (identificadores DIRECT) | 0,74 / 0,88 | 0,61 / 0,85 | 0,38 / 0,97 | 0,53 / 0,71 | 0,45 / 0,71 |
-| Benchmark ruso de PII (redmadrobot) | 0,71 / 0,90 | 0,72 / 0,88 | 0,67 / 0,76 | 0,64 / 0,54 | 0,71 / 0,81 |
-| Secretos, codigo, configuraciones y chats en 36 idiomas (conjunto sintetico propio, retenido) | 0,76 / 0,73 | 0,75 / 0,73 | 0,78 / 0,72 | 0,46 / 0,50 | 0,65 / 0,61 |
+| RedactionBench (formularios, cartas, programas; spans obligatorios) | 0,19 / 0,74 | 0,23 / 0,74 | 0,10 / 0,85 | 0,07 / 0,76 | 0,12 / 0,76 |
+| TonicAI Privacy-Bench (hilos de correo corporativo) | 0,81 / 0,94 | 0,76 / 0,95 | 0,78 / 0,96 | 0,88 / 0,76 | 0,86 / 0,82 |
+| TAB: sentencias del TEDH (identificadores DIRECT) | 0,74 / 0,88 | 0,60 / 0,84 | 0,38 / 0,97 | no disponible | no disponible |
 
-F1 de redaccion (media armonica de recall y precision):
-
-| Benchmark | este modelo | small (141M) | OpenAI Privacy Filter (1.5B) | gravitee bert-small | OpenMed PII Small 44M |
-|---|---|---|---|---|---|
-| RedactionBench | 0,306 | no disponible | no disponible | no disponible | no disponible |
-| TonicAI Privacy-Bench | no disponible | no disponible | no disponible | no disponible | no disponible |
-| TAB: sentencias del TEDH | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Benchmark ruso de PII | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Conjunto propio de secretos y configuraciones | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-Nota: la tabla de F1 esta truncada en la informacion disponible; solo se ha podido recuperar el valor de la primera fila. El autor indica explicitamente que el modelo no es el mejor en todos los benchmarks y que la tabla debe leerse como una medicion honesta, no como un ranking favorable.
+El autor reconoce explícitamente que el modelo no es el mejor en todos los benchmarks. En RedactionBench obtiene un recall bajo (0,19) pese a una precisión alta (0,74); en TonicAI Privacy-Bench logra el mejor recall de la comparativa (0,81) con una precisión de 0,94; y en TAB supera ampliamente al filtro de OpenAI en recall (0,74 frente a 0,38) a costa de menor precisión (0,88 frente a 0,97). No se publican resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generativos, que no aplican a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 307,6M de parametros, no publicada por el autor): aproximadamente 1,2 GB en FP32, unos 0,6 GB en FP16/BF16 y del orden de 0,3 GB en cuantizacion int8. El repositorio ocupa 3,1 GB porque incluye varias copias de pesos y la exportacion ONNX.
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM es suficiente; no se requiere A100 ni H100. Una RTX 3060, RTX 4060, RTX 4090 o similares sobran para este modelo, y una GPU integrada o incluso CPU puede ser suficiente para cargas moderadas.
-- Cabe en GPU de consumo: si, con margen amplio, en practicamente cualquier GPU de consumo de los ultimos anos, y tambien en CPU. El propio autor lo describe como "CPU-friendly".
-- Opciones de despliegue: pipeline de transformers (token-classification con aggregation_strategy simple), ONNX Runtime, transformers.js para navegador y borde, Hugging Face Inference Endpoints (el repositorio esta marcado como endpoints_compatible), y como recognizer dentro de Presidio o como escaner Anonymize dentro de LLM Guard.
-- Latencia y throughput estimados: no disponibles. No se han publicado cifras de latencia, tokens por segundo ni consumo de memoria medidos.
-- Consideracion de pipeline: al ser un modelo de clasificacion de tokens, su coste de inferencia escala con la longitud del texto de entrada; para documentos largos el repositorio recomienda ventanas solapadas, lo que incrementa el numero de pasadas sobre el mismo documento.
+- VRAM estimada para inferencia en FP16: aproximadamente 0,6 GB solo para los pesos (308M parámetros × 2 bytes), más overhead de activaciones y del pipeline; en la práctica, menos de 2 GB en total.
+- En FP32: alrededor de 1,2 GB para los pesos.
+- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU y CPU.
+- La model card destaca explícitamente que es apto para CPU ("CPU-friendly"), lo que lo hace viable en contenedores sin GPU.
+- Despliegue posible con la pipeline `token-classification` de transformers, con ONNX Runtime, con transformers.js en navegador y en el borde, y a través de las integraciones de Presidio y LLM Guard.
+- El repositorio ocupa 3,1 GB, lo que incluye pesos en safetensors y variantes ONNX.
+- No se publican cifras de latencia ni de throughput en la información disponible.
 
 ## Comparativa con modelos similares
 
-La comparacion se limita a las alternativas que el propio autor incluye en su evaluacion. Los datos de parametros, contexto y licencia de los competidores no estan disponibles en la informacion proporcionada.
-
-| Modelo | Parametros | Redaccion (recall) en TAB/TEDH | Redaccion (recall) en TonicAI | Redaccion (recall) en conjunto propio multiidioma | Licencia |
+| Modelo | Parámetros | Idiomas | Licencia | Enfoque | Rendimiento destacado |
 |---|---|---|---|---|---|
-| Horizon-Labs/pii-redactor-base | 307,6M | 0,74 | 0,81 | 0,76 | Apache-2.0 |
-| Alternativa "small" | 141M | 0,61 | 0,76 | 0,75 | no disponible |
-| OpenAI Privacy Filter | 1,5B | 0,38 | 0,78 | 0,78 | no disponible |
-| gravitee bert-small | no disponible | 0,53 | 0,87 | 0,46 | no disponible |
-| OpenMed PII Small | 44M | 0,45 | 0,86 | 0,65 | no disponible |
+| PII Redactor base (este modelo) | 308M | 30+ | Apache-2.0 | Etiquetado de 29 entidades PII + secretos | Mejor recall en TonicAI (0,81) y TAB (0,74) de la comparativa publicada |
+| PII Redactor small | 141M | No disponible en la información | Apache-2.0 (misma familia) | Misma tarea, menor tamaño | Mejor recall que base en RedactionBench (0,23 frente a 0,19) |
+| OpenAI Privacy Filter | 1.5B | No disponible | No disponible | Filtro de privacidad | Mejor precisión en RedactionBench (0,85) y TAB (0,97), peor recall en TAB (0,38) |
+| gravitee bert-small | No disponible | No disponible | No disponible | Detección PII | Mejor recall en TonicAI (0,88) con precisión baja (0,76) |
+| OpenMed PII Small | 44M | No disponible | No disponible | Detección PII | Recall 0,86 en TonicAI con precisión 0,82 |
 
-Lectura de la tabla: pii-redactor-base lidera en recall sobre sentencias del TEDH (0,74 frente a 0,38-0,61 del resto) y en el conjunto multilingue de secretos y configuraciones (0,76, empatado en la practica con OpenAI Privacy Filter y ligeramente por encima del modelo de 141M), pero queda por detras en hilos de correo corporativo (0,81 frente a 0,87 de gravitee bert-small y 0,86 de OpenMed). En RedactionBench, su recall de 0,19 es bajo en terminos absolutos y solo supera al filtro de OpenAI (0,10). En el benchmark ruso esta en linea con el resto (0,71).
+La ventaja diferencial de este modelo frente a las alternativas es la combinación de licencia Apache-2.0 sin restricciones, cobertura de más de 30 idiomas y detección de secretos y credenciales además de PII clásica. El filtro de OpenAI, con cinco veces más parámetros, obtiene mayor precisión pero un recall notablemente inferior en identificadores directos de documentos judiciales.
 
 ## Limitaciones y advertencias
 
-- Recall bajo en documentos de estilo real: 0,19 en RedactionBench (formularios, cartas, programas docentes). En ese escenario, mas del 80% de los caracteres que deberian enmascararse no se enmascaran. No es adecuado como unico mecanismo de redaccion en documentos de ese tipo.
-- Precision imperfecta: entre 0,73 y 0,94 segun benchmark. Un 6-27% de los caracteres enmascarados no son PII, lo que produce sobrerredaccion y puede degradar la utilidad del texto resultante.
-- No etiqueta genero ni atributos sensibles como religion o condiciones de salud. No sirve, por tanto, para anonimizacion completa en terminos de categorias especiales del RGPD.
-- La etiqueta ORGANIZATION se limita a empleadores o empresas vinculadas a una persona; no cubre cualquier mencion de una organizacion.
-- Riesgo de alucinacion no aplica en el sentido generativo (el modelo no produce texto libre), pero si existe riesgo de falsos positivos y falsos negativos en la clasificacion de entidades.
-- Idiomas: aunque se declaran 30+ idiomas, el rendimiento no es uniforme. El benchmark ruso arroja 0,71 de recall y 0,90 de precision, por debajo de sus mejores cifras. No hay evaluaciones publicadas por idioma mas alla de las incluidas.
-- Sesgos conocidos: no se ha publicado ninguna evaluacion de sesgo ni auditoria por subgrupos. Es un dato ausente, no una garantia de neutralidad.
-- El modelo se entreno sobre conjuntos sinteticos y con licencias permisivas; el propio autor advierte de que la comparacion externa se hizo sobre benchmarks no vistos, lo que reduce pero no elimina el riesgo de sobreajuste al dominio de entrenamiento.
-- Adopcion temprana: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que existe poca validacion independiente de la comunidad sobre su comportamiento en produccion.
-- Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion sin gating. No obstante, el cumplimiento normativo (RGPD, HIPAA u otras) depende de la validacion propia del pipeline, no de la licencia del modelo.
-- Para produccion, el autor no publica cifras de latencia, throughput ni consumo de memoria medidos, por lo que el dimensionamiento debe hacerse mediante pruebas propias.
-- El uso de ventanas solapadas para documentos largos implica procesar varias veces los mismos tramos, con el consiguiente coste adicional.
+- El recall en RedactionBench es bajo (0,19): en documentos con formato de formulario, cartas o programas académicos puede dejar sin enmascarar una parte importante de los spans obligatorios. No es adecuado como única capa de protección en entornos de alto riesgo sin una revisión o un filtro complementario.
+- Riesgo de falsos positivos: la precisión en RedactionBench es 0,74, lo que implica que aproximadamente una cuarta parte de los caracteres enmascarados no son PII. En producción esto puede degradar la legibilidad de logs y textos.
+- No detecta atributos sensibles como género, religión o condiciones de salud; la model card lo señala explícitamente como limitación de esta versión.
+- El modelo es un etiquetador, no un generador: no razona, no sigue instrucciones ni soporta tool calling. No debe confundirse con un modelo conversacional.
+- La longitud de contexto nativa no se documenta; el manejo de documentos largos depende del script `redact.py` y de ventanas solapadas, lo que puede introducir pérdidas en los límites de ventana.
+- La cobertura de idiomas se declara por lista, pero no se publican métricas desagregadas por idioma; el rendimiento en idiomas de bajos recursos dentro de la lista (por ejemplo, estonio, letón, lituano o tagalo) no está cuantificado.
+- Aunque la licencia Apache-2.0 permite uso comercial sin restricciones, la responsabilidad sobre el cumplimiento normativo (RGPD, HIPAA u otras) recae en el integrador: el modelo es una ayuda técnica, no una garantía de anonimización legal.
+- El modelo se entrenó solo con datos de licencia permisiva según el autor, pero no se detalla la composición ni el volumen, lo que limita la auditoría independiente del sesgo.
+- La fecha de creación del repositorio (2026-09-23) y la de actualización (2026-10-31) indican un modelo reciente con 730 descargas y 0 likes en el momento de la consulta: el ecosistema de terceros que lo valide es todavía reducido.
 
 ## Enlaces
 
-- Pagina del modelo en Hugging Face: https://huggingface.co/Horizon-Labs/pii-redactor-base
-- Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/pii-redactor
-- Coleccion Agent I/O Guards: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669
-- Modelo complementario Prompt Injection Guard: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
-- Modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/pii-redactor-base
+- Demo en el navegador: https://huggingface.co/spaces/Horizon-Labs/pii-redactor
+- Colección Agent I/O Guards: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669
+- Prompt Injection Guard (modelo hermano): https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
+- Código fuente (datos, entrenamiento, evaluación): https://github.com/horizon-ai-labs/agent-io-guards
+- Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Dataset ai4privacy/pii-masking-openpii-1.5m: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1.5m
 - Dataset nvidia/Nemotron-PII: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - Dataset gretelai/gretel-pii-masking-en-v1: https://huggingface.co/datasets/gretelai/gretel-pii-masking-en-v1
-- Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo (corresponden a una formacion politica francesa, un medio local y una emisora de radio) y no se han incluido. No se han encontrado papers, blogs tecnicos ni repositorios de terceros asociados a este modelo en la informacion disponible.

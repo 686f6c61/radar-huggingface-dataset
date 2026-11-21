@@ -5,7 +5,7 @@
   "author": "zazeen123",
   "url": "https://huggingface.co/zazeen123/Qwen3.5-0.8B-Mew-Surgeon",
   "created_at": "2026-11-19T07:59:59.000Z",
-  "updated_at": "2026-11-19T22:39:36.000Z",
+  "updated_at": "2026-11-20T23:51:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 187,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": 704327232,
   "parameters_human": "704.3M",

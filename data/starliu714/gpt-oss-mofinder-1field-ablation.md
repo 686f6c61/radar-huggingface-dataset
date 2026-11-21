@@ -2,107 +2,106 @@
 
 ## Resumen
 
-GPT-oss-MOFinder-1field-ablation es un ajuste fino de tipo LoRA sobre el modelo abierto openai/gpt-oss-20b, desarrollado por StarLiu714 en el contexto del proyecto MOFinder (zzhenglab). El modelo está especializado en química de redes metal-orgánicas (MOF, Metal-Organic Frameworks) y resuelve una tarea muy concreta: predecir si una síntesis experimental de un MOF tendrá éxito o fracasar a partir de las condiciones de reacción descritas en lenguaje natural.
+GPT-oss-MOFinder-1field-ablation es un ajuste fino (LoRA fusionado) del modelo abierto GPT-oss-20b de OpenAI, desarrollado por el usuario StarLiu714 en el contexto del proyecto MOFinder (laboratorio zzheng). El modelo está especializado en química de estructuras metalorgánicas (MOF, Metal-Organic Frameworks) y su tarea concreta es clasificar si una síntesis experimental descrita en la literatura tendrá éxito o fracasará (predicción P/N, positiva/negativa) a partir de las condiciones de reacción y los campos químicos disponibles.
 
-Este checkpoint no es un modelo de propósito general, sino una ablación experimental. Su objetivo es medir hasta qué punto el modelo depende de registros de entrenamiento que difieren de un experimento exitoso en un único campo (los llamados "P→N flips" de un solo campo). Para ello, el conjunto de entrenamiento elimina esos registros de fallo de campo único y se compara el rendimiento resultante con variantes de eliminación aleatoria de negativos emparejados (seeds 101 a 505). Es, por tanto, una pieza de un estudio metodológico sobre robustez y sesgo de datos en modelos de lenguaje aplicados a química.
+Este checkpoint concreto no es el modelo principal, sino una rama de ablación: se ha entrenado eliminando de forma deliberada uno de cada ocho campos (el "single-field flip") de los registros de experimentos fallidos, para evaluar si el modelo mantiene su rendimiento sin depender de un único campo químico durante el entrenamiento. El repositorio incluye comparaciones frente a variantes con eliminación aleatoria de negativos (seeds 101 a 505), lo que permite analizar la robustez del ajuste fino ante información química incompleta.
 
-El modelo hereda la arquitectura y el tamaño del gpt-oss-20b de OpenAI (20.914.757.184 parámetros según safetensors) y se distribuye con pesos en BF16 y safetensors, licencia GPL-3.0 para el ajuste y Apache-2.0 para el modelo base. Su relevancia es acotada pero clara: sirve como referencia reproducible para investigadores que trabajen en predicción de síntesis de materiales y quieran entender el impacto de la composición del dataset de entrenamiento.
+Es relevante para investigadores que trabajen en extracción de conocimiento químico, predicción de síntesis y evaluación de robustez de LLM en dominios científicos con datos estructurados y escasos. El modelo conserva la arquitectura y el tamaño del GPT-oss-20b original (unos 20.900 millones de parámetros) y se distribuye con licencia GPL-3.0, mientras que el modelo base mantiene su licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (hereda la de openai/gpt-oss-20b; detalles internos de la arquitectura base no disponibles en la informacion proporcionada) |
-| Parametros totales | 20.914.757.184 |
+| Arquitectura | Transformer causal (gpt_oss), ajuste fino LoRA fusionado sobre openai/gpt-oss-20b |
+| Parametros totales | 20.914.757.184 (20,9 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (se distribuye un export de pesos en BF16) |
+| Tipos de cuantizacion | no disponible (el repositorio incluye exportación de pesos en BF16) |
 | Idiomas soportados | en (inglés) |
-| Licencia | GPL-3.0 para el ajuste; Apache-2.0 para el modelo base |
-| Formato de pesos | safetensors (BF16) |
+| Licencia | GPL-3.0 (modelo base: Apache-2.0) |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de openai/gpt-oss-20b, un transformer causal de aproximadamente 20,9 mil millones de parámetros, y se ajusta mediante LoRA específico de dominio sobre datos de síntesis de MOF. El autor describe el proceso como un ajuste fino con LoRA ("domain-specific LoRA finetuning") cuyos cambios se fusionan en el modelo base y se exportan en BF16. La model card no detalla el número de tokens de entrenamiento, la composición completa del dataset ni si se emplearon técnicas de RLHF o DPO; esa información no está disponible.
+El modelo parte de openai/gpt-oss-20b, un transformer causal de aproximadamente 20.900 millones de parámetros, y se ha especializado mediante un ajuste fino con LoRA sobre un corpus de química de MOF. El entrenamiento se centra en una tarea de clasificación binaria (síntesis exitosa o fallida) a partir de registros experimentales estructurados, con un conjunto de datos que contiene 1.320 ejemplos positivos y 1.275 negativos en el conjunto de evaluación holdout.
 
-La innovación metodológica de este checkpoint es la ablación sobre la composición del conjunto de entrenamiento. En la variante principal se eliminan los registros de experimentos fallidos que se generan cambiando un único campo respecto a las condiciones de un experimento exitoso (los "P→N flips" de un solo campo). El objetivo es comprobar si el modelo mantiene un rendimiento sólido sin depender de esa señal artificial. Como control, se comparan variantes con eliminación aleatoria de negativos emparejados (seeds 101, 202, 303, 404 y 505). El conjunto de test contiene 1.320 positivos y 1.275 negativos, más un conjunto pequeño de 22 preguntas (11 positivas y 11 negativas).
+La innovación metodológica de este checkpoint es la ablación de campos: en lugar de entrenar con todos los campos químicos disponibles (el modelo principal MOFinder usa el conjunto completo de datos PN), aquí se elimina uno de cada ocho campos para simular información química incompleta. El autor justifica esta variante porque algunas síntesis son más sensibles a una única variable que otras, y el objetivo es comprobar si el modelo mantiene un rendimiento fuerte sin depender de un único campo en los registros de experimentos fallidos. El repositorio incluye además variantes de control con eliminación aleatoria de negativos (seeds 101, 202, 303, 404 y 505) para comparar el efecto de la eliminación selectiva frente a la aleatoria.
 
 ## Capacidades
 
-- Predicción de éxito o fracaso de síntesis de MOF a partir de condiciones experimentales descritas en texto.
-- Clasificación binaria orientada a química de materiales (positivo/negativo de síntesis).
-- Generación de texto causal y conversación en inglés, heredadas del modelo base gpt-oss-20b.
-- Razonamiento sobre variables experimentales (temperatura, disolventes, reactivos, tiempos, etc.) en el dominio de síntesis de MOF.
-- Soporte de tool calling / function calling: no confirmado en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Modo "thinking", visión o audio: no disponible en la información proporcionada.
+- Clasificación binaria de éxito/fracaso de síntesis de MOF a partir de condiciones experimentales y campos químicos.
+- Generación de texto causal y conversacional en inglés, heredada del modelo base GPT-oss-20b.
+- Razonamiento sobre datos químicos estructurados (campos de reacción, variables experimentales).
+- Soporte de tool calling y function calling heredado del modelo base (no verificado específicamente en este checkpoint).
+- Capacidades de agente y razonamiento multi-paso heredadas del modelo base (no verificadas en la model card).
+- Capacidades multilingües limitadas: el modelo está etiquetado únicamente para inglés.
+- Modo de razonamiento (thinking) del GPT-oss original: no disponible en la información proporcionada para este ajuste.
 
 ## Casos de uso
 
-- Filtrado previo de experimentos de síntesis de MOF: dado un protocolo experimental descrito en texto, el modelo estima la probabilidad de éxito antes de ejecutar el experimento en laboratorio, lo que permite priorizar recursos y reducir ensayos fallidos.
-- Estudio de robustez de datasets químicos: este checkpoint sirve como referencia para investigar cuánto depende un modelo de clasificación química de registros negativos generados por perturbación de un solo campo, comparando con las variantes de eliminación aleatoria (seeds 101-505).
-- Reproducción de experimentos de ablación: investigadores que quieran replicar el análisis de "leave-one-field-out" pueden usar este checkpoint junto con el modelo principal MOFinder para contrastar resultados.
-- Asistencia en la redacción de protocolos: el modelo puede integrarse en un flujo de revisión de condiciones de síntesis para detectar combinaciones atípicas o potencialmente problemáticas.
-- Evaluación comparativa de ajustes LoRA en dominios científicos: sirve como caso de estudio de cómo el ajuste fino de dominio sobre un modelo generalista de 20B afecta a una tarea de clasificación binaria especializada.
-- Docencia y experimentación en química computacional: permite a grupos de investigación con recursos moderados experimentar con un modelo de 20B especializado sin partir de cero, gracias a la disponibilidad de pesos en safetensors y a la compatibilidad con transformers.
+- Predicción de éxito de síntesis en laboratorio: dado un conjunto de condiciones experimentales de un MOF, el modelo estima la probabilidad de que la síntesis funcione, lo que permite priorizar experimentos antes de consumir reactivos y tiempo de banco.
+- Filtrado de literatura científica: integrado en un pipeline de extracción de entidades, el modelo puede clasificar automáticamente registros de síntesis extraídos de artículos como positivos o negativos, ayudando a construir bases de datos químicas curadas.
+- Análisis de robustez de modelos científicos: la propia naturaleza de ablación del checkpoint lo hace útil como referencia para estudiar cómo afecta la información incompleta al rendimiento de LLM en dominios especializados.
+- Detección de variables críticas: comparando las salidas de este checkpoint con el modelo principal MOFinder, un investigador puede identificar qué campos químicos son más determinantes para el éxito de una síntesis.
+- Asistencia en diseño experimental: el modelo puede señalar condiciones de reacción con alta probabilidad de fracaso, permitiendo al químico descartar combinaciones problemáticas antes de ejecutarlas.
+- Evaluación comparativa de estrategias de aumento de datos: los resultados con distintas seeds de eliminación aleatoria permiten a equipos de ML decidir cómo construir conjuntos de entrenamiento negativos para tareas de clasificación química.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la model card son los de la propia ablación. La tabla compara la variante "drop 1-field flipped N entries" con eliminaciones aleatorias emparejadas:
+Los datos publicados en la model card corresponden a la tarea de clasificación de síntesis de MOF:
 
-| Configuracion de entrenamiento | Conjunto de test | Tamano | Accuracy | Precision |
+| Configuracion | Conjunto | Tamano | Accuracy | Precision |
 |---|---|---|---|---|
-| Drop 1-field 'flipped' N | Holdout | 1320P + 1275N | 0.73141 | 0.67087 |
-| Drop 1-field 'flipped' N | 22 preguntas | 11P + 11N | 14/22 | 0.5789 |
-| Random drop N, seed 101 | Holdout | 1320P + 1275N | 0.71676 | 0.67277 |
-| Random drop N, seed 101 | 22 preguntas | 11P + 11N | 16/22 | 0.6471 |
-| Random drop N, seed 202 | Holdout | 1320P + 1275N | 0.68092 | 0.67060 |
-| Random drop N, seed 202 | 22 preguntas | 11P + 11N | 15/22 | 0.6429 |
-| Random drop N, seed 303 | Holdout | 1320P + 1275N | 0.72177 | 0.70938 |
-| Random drop N, seed 303 | 22 preguntas | 11P + 11N | 16/22 | 0.6667 |
-| Random drop N, seed 404 | Holdout | 1320P + 1275N | 0.71175 | 0.67397 |
-| Random drop N, seed 404 | 22 preguntas | 11P + 11N | 14/22 | 0.5789 |
-| Random drop N, seed 505 | Holdout | 1320P + 1275N | 0.70482 | 0.66567 |
-| Random drop N, seed 505 | 22 preguntas | 11P + 11N | 16/22 | 0.6471 |
+| drop 1-field 'flipped' N | Holdout | 1320P + 1275N | 0,73141 | 0,67087 |
+| drop 1-field 'flipped' N | 22 preguntas | 11P + 11N | 14/22 | 0,5789 |
+| random drop N, seed 101 | Holdout | 1320P + 1275N | 0,71676 | 0,67277 |
+| random drop N, seed 101 | 22 preguntas | 11P + 11N | 16/22 | 0,6471 |
+| random drop N, seed 202 | Holdout | 1320P + 1275N | 0,68092 | 0,67060 |
+| random drop N, seed 202 | 22 preguntas | 11P + 11N | 15/22 | 0,6429 |
+| random drop N, seed 303 | Holdout | 1320P + 1275N | 0,72177 | 0,70938 |
+| random drop N, seed 303 | 22 preguntas | 11P + 11N | 16/22 | 0,6667 |
+| random drop N, seed 404 | Holdout | 1320P + 1275N | 0,71175 | 0,67397 |
+| random drop N, seed 404 | 22 preguntas | 11P + 11N | 14/22 | 0,5789 |
+| random drop N, seed 505 | Holdout | 1320P + 1275N | 0,70482 | 0,66567 |
+| random drop N, seed 505 | 22 preguntas | 11P + 11N | 16/22 | 0,6471 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en BF16 (20,9B parámetros), se necesitan aproximadamente 42 GB solo para los pesos, más overhead de activaciones y caché KV; en la práctica, al menos 48-80 GB de VRAM para una ejecución cómoda.
-- Cuantización: la información disponible no detalla cuantizaciones GGUF/AWQ/GPTQ publicadas para este checkpoint; el repo ocupa 245,2 GB, lo que sugiere múltiples artefactos además de los pesos BF16.
-- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU (por ejemplo, 2× RTX 4090 de 24 GB con paralelismo de tensor) para BF16.
-- GPU de consumo: no cabe en una sola GPU de consumo de 24 GB en BF16; requeriría cuantización (no publicada en la información disponible) o sharding multi-GPU.
-- Opciones de despliegue: transformers con `device_map="auto"` (método indicado en la model card); vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en BF16: aproximadamente 42 GB solo para pesos (20,9 mil millones de parámetros × 2 bytes), más memoria para el contexto y el tokenizador; en la práctica se recomienda al menos 48 GB.
+- En cuantización de 8 bits: unos 21 GB de VRAM; en 4 bits: unos 11-12 GB, aunque el repositorio no documenta cuantizaciones oficiales.
+- GPU recomendadas: A100 80 GB, H100 80 GB o dos RTX 4090 (24 GB cada una) para BF16; una única RTX 4090 es suficiente en cuantización de 4 bits.
+- Cabe en GPU de consumo (RTX 3090, RTX 4090, RTX 5090) solo con cuantización agresiva; en BF16 no cabe en una GPU de 24 GB.
+- Opciones de despliegue: transformers (documentado en la model card con `AutoModelForCausalLM` y `device_map="auto"`); vLLM, llama.cpp, Ollama y TGI no están documentados para este checkpoint concreto.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-oss-MOFinder-1field-ablation | 20,9B | no disponible | Clasificación de síntesis MOF (ablación) | GPL-3.0 (ajuste) / Apache-2.0 (base) | Hugging Face |
-| GPT-oss-MOFinder (modelo principal) | 20,9B (base gpt-oss-20b) | no disponible | Clasificación de síntesis MOF (entrenado con datos PN completos) | según repo principal | Hugging Face |
-| openai/gpt-oss-20b | 20,9B | no disponible | Generación de texto generalista | Apache-2.0 | Hugging Face |
+| GPT-oss-MOFinder-1field-ablation | 20,9 mil millones | no disponible | Clasificación de síntesis MOF (ablación) | GPL-3.0 | Hugging Face |
+| GPT-oss-MOFinder (principal) | 20,9 mil millones | no disponible | Clasificación de síntesis MOF (datos completos) | GPL-3.0 | Hugging Face |
+| openai/gpt-oss-20b | 20,9 mil millones | no disponible | Generación de texto general | Apache-2.0 | Hugging Face |
+| Variantes random-drop (seeds 101-505) | 20,9 mil millones | no disponible | Clasificación de síntesis MOF (control) | GPL-3.0 | Hugging Face |
 
-No se dispone de información sobre otros modelos especializados en predicción de síntesis de MOF con los que comparar directamente en la información proporcionada.
+No se dispone de información sobre otros modelos especializados en predicción de síntesis de MOF en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de nicho: no es un asistente general; su utilidad está restringida a la predicción de éxito/fracaso de síntesis de MOF.
-- Idioma: solo inglés según la model card; no se garantiza un comportamiento correcto en castellano u otros idiomas.
-- Riesgo de alucinación: como todo modelo generativo, puede producir justificaciones plausibles pero incorrectas sobre condiciones experimentales; no debe usarse como única fuente de decisión en laboratorio.
-- Sesgo de dataset: el propio diseño del experimento muestra que el modelo es sensible a la composición del conjunto de entrenamiento (diferencias de accuracy entre 0,68 y 0,73 según la variante), lo que indica dependencia de artefactos del dataset.
-- Precisión limitada: la precisión publicada ronda 0,58-0,71, insuficiente para sustituir la validación experimental humana.
-- Licencia GPL-3.0 para el ajuste: puede imponer restricciones de copyleft a productos derivados; el modelo base conserva Apache-2.0, pero la combinación debe evaluarse con cuidado para uso comercial.
-- Requisitos de hardware elevados: 20,9B parámetros en BF16 exigen GPUs de gama alta o multi-GPU; no hay cuantizaciones publicadas en la información disponible.
-- Fecha de creación (2026-10-03) y actualización (2026-11-02): verificar la vigencia y posibles revisiones del repo antes de usarlo en producción.
-- Sin datos de benchmarks estándar ni de evaluación independiente; el rendimiento solo está avalado por la ablación del propio autor.
+- El modelo está entrenado exclusivamente en inglés y para una tarea muy concreta de química de MOF; su uso fuera de ese dominio producirá resultados poco fiables.
+- Es un checkpoint de ablación, no el modelo principal: su rendimiento (accuracy 0,73 en holdout) está por debajo de lo esperado para un modelo de producción y no debe usarse como referencia de calidad del proyecto MOFinder.
+- El conjunto de evaluación de 22 preguntas es muy pequeño, por lo que las métricas de precisión tienen alta varianza y no son concluyentes.
+- Riesgo de alucinación inherente al modelo base GPT-oss-20b, especialmente al generar texto libre fuera de la tarea de clasificación.
+- La licencia GPL-3.0 es copyleft fuerte: cualquier uso comercial o distribución de productos derivados obliga a liberar el código bajo la misma licencia, lo que puede ser incompatible con productos propietarios. El modelo base conserva Apache-2.0, pero este checkpoint fusionado se distribuye como GPL-3.0.
+- El repositorio ocupa 245,2 GB, lo que incluye múltiples artefactos y exportaciones; conviene verificar qué ficheros se descargan antes de clonar.
+- No hay documentación sobre sesgos específicos del ajuste fino ni sobre el proceso de anotación de los datos de entrenamiento.
+- El autor indica que el código de MOFinder tiene licencia MIT separada, pero los pesos de este repositorio son GPL-3.0.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/StarLiu714/GPT-oss-MOFinder-1field-ablation
 - Modelo principal MOFinder: https://huggingface.co/StarLiu714/GPT-oss-MOFinder
-- Modelo base gpt-oss-20b: https://huggingface.co/openai/gpt-oss-20b
-- Repositorio MOFinder (zzhenglab): https://github.com/zzhenglab/MOFinder
-- Cita del proyecto MOFinder: https://github.com/zzhenglab/MOFinder/blob/main/CITATION.cff
+- Modelo base GPT-oss-20b: https://huggingface.co/openai/gpt-oss-20b
+- Repositorio de código MOFinder: https://github.com/zzhenglab/MOFinder
+- Citación del proyecto MOFinder: https://github.com/zzhenglab/MOFinder/blob/main/CITATION.cff

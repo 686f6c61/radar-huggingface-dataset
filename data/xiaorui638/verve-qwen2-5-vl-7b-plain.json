@@ -5,7 +5,7 @@
   "author": "xiaorui638",
   "url": "https://huggingface.co/xiaorui638/VERVE-Qwen2.5-VL-7B-plain",
   "created_at": "2026-09-04T20:24:23.000Z",
-  "updated_at": "2026-09-04T20:25:35.000Z",
+  "updated_at": "2026-11-20T15:49:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 8292166656,
   "parameters_human": "8.29B",

@@ -2,119 +2,100 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-27b-Terse-Coder-GGUF` es una publicacion de cuantizaciones en formato GGUF del modelo `Shockem/Qwen3.8-27b-Terse-Coder`, un ajuste fino orientado a razonamiento y codigo. El autor de esta ficha es mradermacher, un cuantizador conocido por publicar versiones GGUF de modelos de terceros para su uso en herramientas de inferencia local. No se trata de un modelo entrenado desde cero, sino de una redistribucion optimizada del modelo base.
+Qwen3.8-27b-Terse-Coder-GGUF es la distribucion en formato GGUF del modelo Shockem/Qwen3.8-27b-Terse-Coder, un ajuste fino (fine-tuning) derivado de la familia Qwen3 orientado a razonamiento y generacion de codigo, con un entrenamiento adicional de DPO (Direct Preference Optimization) segun las etiquetas de la model card. El modelo cuenta con 27.320.697.856 parametros totales y se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las obligatorias de la licencia.
 
-El modelo base tiene 27.320.697.856 parametros (27,3 mil millones) y esta etiquetado como modelo de razonamiento y codigo, con indicios de un ajuste adicional mediante DPO. El repositorio incluye doce cuantizaciones estaticas que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), ademas de dos suplementos multimodales (`mmproj`), lo que sugiere la existencia de un codificador visual en el modelo original.
+El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF de modelos abiertos, que ofrece un abanico de 11 cuantizaciones estaticas (desde Q2_K hasta Q8_0, incluyendo IQ4_XS) mas dos ficheros mmproj para el componente multimodal, lo que sugiere que el modelo base incorpora capacidades de vision. El repositorio ocupa 190,8 GB en total y acumula 657 descargas desde su creacion en septiembre de 2026.
 
-Su relevancia practica radica en que permite ejecutar un modelo de 27B en hardware de consumo con cuantizaciones de 4 bits (15,9-16,9 GB), algo inasumible con los pesos completos. La informacion disponible es limitada: el repositorio no incluye resultados de benchmarks, no detalla la arquitectura interna ni la longitud de contexto, y el modelo base acumula cero descargas y cero "me gusta" en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 27.000 millones de parametros en hardware de consumo mediante cuantizacion, algo imposible con los pesos en precision completa. La existencia de variantes Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) lo situa en el rango de GPUs con 24 GB de VRAM, mientras que las variantes Q2_K y Q3 permiten desplegarlo en equipos mas modestos a costa de calidad. No obstante, la informacion publicada por el autor es muy escasa: no hay datos de benchmarks, contexto ni composicion del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre del modelo base apunta a la familia Qwen3; la model card no especifica si es transformer denso, MoE o hibrido) |
+| Arquitectura | no disponible (derivada de la familia Qwen3, transformer) |
 | Parametros totales | 27.320.697.856 (27,3 mil millones) |
-| Parametros activos | no disponible (no se declara que sea un modelo MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 (la lista de etiquetas menciona tambien x-f16, sin fichero detallado en la tabla) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones estaticas derivadas de los pesos del modelo base en safetensors) |
-| Modelo base | Shockem/Qwen3.8-27b-Terse-Coder |
-| Autor de la cuantizacion | mradermacher |
-| Tamano del repositorio | 190,8 GB |
-| Fecha de publicacion | 2026-09-19 (ultima actualizacion: 2026-09-19) |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica sobre la arquitectura en la documentacion proporcionada. La model card del repositorio GGUF se limita a indicar que se trata de "static quants" del modelo `Shockem/Qwen3.8-27b-Terse-Coder`, sin describir el tipo de red, el mecanismo de atencion ni la estrategia de decodificacion. El nombre del modelo base sugiere una base de la familia Qwen3, pero no hay confirmacion explicita en el material consultado.
+La model card no detalla la arquitectura interna mas alla de las etiquetas, que apuntan a la familia Qwen3 (transformer denso, no se menciona mezcla de expertos) y a un proceso de ajuste con DPO para alinear las preferencias de razonamiento y codigo. El modelo base es Shockem/Qwen3.8-27b-Terse-Coder, un fine-tuning comunitario sobre Qwen3 que no aporta en su card informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni la metodologia de RLHF/DPO empleada. La etiqueta "Terse" sugiere un entrenamiento orientado a respuestas concisas, aunque no se documenta formalmente.
 
-Tampoco se detallan los datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni la naturaleza exacta del ajuste. Las etiquetas del repositorio incluyen `reasoning`, `coding` y `dpo`, lo que indica que el modelo base fue afinado con optimizacion por preferencias directa (DPO) sobre datos orientados a razonamiento y generacion de codigo. La presencia de ficheros `mmproj` (proyector multimodal) sugiere que el modelo base incorpora capacidades de vision, aunque la model card no lo confirma ni describe el codificador visual. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.). Las cuantizaciones se generaron con el metodo de version 2 de mradermacher y con cuantizacion por tensor de salida activada; no hay cuantizaciones ponderadas ni con imatrix disponibles.
+La innovacion tecnica principal de esta publicacion no esta en el modelo sino en el proceso de cuantizacion: mradermacher genera cuantizaciones estaticas con la herramienta de llama.cpp, e indica que las versiones ponderadas con imatrix estan disponibles en un repositorio separado (Qwen3.8-27b-Terse-Coder-i1-GGUF). La presencia de ficheros mmproj en Q8_0 y f16 confirma que el modelo base incorpora un proyector multimodal para entrada de imagenes, aunque la model card no describe el entrenamiento de esa capacidad.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio incluye la etiqueta `conversational`, por lo que esta preparado para dialogos multi-turno.
-- Razonamiento: etiquetado explicitamente como modelo de razonamiento (`reasoning`) y afinado con DPO, lo que apunta a un entrenamiento orientado a mejorar la calidad de las respuestas en tareas de logica y analisis.
-- Generacion de codigo: la etiqueta `coding` y el propio nombre del modelo ("Terse-Coder") indican especializacion en codigo, con salidas concisas.
-- Capacidades multimodales: los ficheros `mmproj-Q8_0` y `mmproj-f16` son suplementos multimodales, lo que sugiere soporte de entrada de imagenes; la model card no lo detalla ni especifica que tareas cubre.
-- Multilinguismo: limitado al ingles segun el campo `language` de la model card.
-- Tool calling / function calling: no disponible (no se menciona en la informacion proporcionada).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta explicitamente, aunque la etiqueta `reasoning` es compatible con estos flujos).
-- Modo de pensamiento explicito: no disponible.
+- Generacion de texto y razonamiento: las etiquetas "reasoning" y "qwen3" indican soporte de cadenas de razonamiento, aunque no se documenta un modo "thinking" explicito.
+- Generacion de codigo: etiqueta "coding" y el nombre "Terse-Coder" apuntan a un ajuste especifico para programacion.
+- Entrada multimodal: la presencia de ficheros mmproj (Q8_0 y f16) indica soporte de vision por imagen, sin detalle sobre resolucion o tareas soportadas.
+- Conversacion multi-turno: la etiqueta "conversational" sugiere uso en chat.
+- Alineacion por preferencias: entrenamiento DPO segun las etiquetas del autor.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara ingles ("en"); no se confirma soporte de castellano.
 
 ## Casos de uso
 
-- Asistencia de programacion en local: con la cuantizacion Q4_K_M (16,9 GB) el modelo cabe en una GPU de 24 GB, lo que permite integrarlo en un editor o CLI de desarrollo sin enviar codigo propietario a servicios externos.
-- Refactorizacion y generacion de tests: el ajuste orientado a codigo y su estilo "terse" (conciso) lo hacen adecuado para producir parches y casos de prueba donde se prioriza la brevedad sobre la explicacion larga.
-- Atencion al cliente automatizada en ingles: al ser un modelo conversacional, puede gestionar dialogos multi-turno; la longitud de contexto real debe verificarse antes de desplegarlo en produccion, ya que no se documenta en la ficha.
-- Procesamiento de documentacion tecnica con imagenes: la presencia de ficheros `mmproj` abre la posibilidad de extraer informacion de diagramas o capturas en flujos de documentacion, siempre que se confirme el soporte multimodal con una prueba directa.
-- Analisis de razonamiento en entornos aislados (air-gapped): al distribuirse en GGUF y ejecutarse con llama.cpp u Ollama, es desplegable en equipos sin conexion, algo relevante en sectores con requisitos de confidencialidad.
-- Prototipado e investigacion de tecnicas de cuantizacion: el repositorio ofrece un rango amplio de cuantizaciones del mismo modelo (de Q2_K a Q8_0), util para medir el impacto de la compresion en la calidad de generacion de codigo.
-- Despliegue en estaciones de trabajo con una sola GPU consumer: la version Q3_K_M (13,6 GB) o Q4_K_S (15,9 GB) permite servir el modelo en una RTX 4090 o RTX 3090 con contexto moderado, para tareas internas de resumen, clasificacion o generacion de fragmentos de codigo.
+- Asistencia de programacion en local: con la cuantizacion Q4_K_M (16,9 GB) el modelo cabe en una GPU de 24 GB y puede integrarse en un editor o IDE mediante un servidor compatible con la API de OpenAI, ofreciendo autocompletado y generacion de funciones sin enviar codigo a la nube.
+- Revision de codigo en pipelines de CI/CD: el modelo puede analizar diffs y sugerir correcciones en un paso previo al merge, ejecutandose en un runner con GPU o incluso en CPU con Q2_K (11 GB) si la latencia no es critica.
+- Generacion de tests unitarios: dado un fichero de codigo, el modelo puede producir casos de prueba; su tamano de 27.000 millones de parametros permite manejar funciones de varios cientos de lineas dentro del contexto disponible (longitud exacta no documentada).
+- Prototipado de razonamiento paso a paso: la etiqueta "reasoning" y el ajuste DPO lo hacen adecuado para tareas de analisis que requieren descomposicion en pasos, como depuracion de errores logicos o explicacion de algoritmos.
+- Procesamiento de documentacion tecnica con imagenes: gracias al proyector multimodal (mmproj), puede recibir capturas de diagramas de arquitectura o pantallazos de errores y generar explicaciones o parches, siempre que se use un runtime que soporte el componente mmproj.
+- Despliegue en estaciones de trabajo sin conexion: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en entornos air-gapped, util para equipos con requisitos de confidencialidad que no pueden usar APIs externas.
+- Experimentacion academica con cuantizacion: el abanico de 11 cuantizaciones permite estudiar la degradacion de calidad entre Q2_K y Q8_0 en tareas de codigo, comparando perplejidad y exactitud funcional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los resultados de la busqueda web incluyen valores de MMLU, HumanEval, GSM8K, LiveCodeBench o cualquier otra metrica comparable. Tampoco se aportan mediciones de latencia, throughput o perplejidad de las distintas cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la pagina de Hugging Face no aporta evaluaciones del modelo base Shockem/Qwen3.8-27b-Terse-Coder.
 
 ## Requisitos de hardware
 
-Los tamanos siguientes son los declarados en la tabla de cuantizaciones de la model card; hay que sumar la cache KV y el overhead del runtime (habitualmente 1-3 GB adicionales, mas segun la longitud de contexto configurada).
-
-- VRAM estimada para inferencia (solo pesos):
-  - Q2_K: 11,0 GB
-  - Q3_K_S: 12,4 GB
-  - Q3_K_M: 13,6 GB
-  - Q3_K_L: 14,7 GB
-  - Q4_K_S: 15,9 GB
-  - Q4_K_M: 16,9 GB
-  - Q5_K_S: 19,1 GB
-  - Q5_K_M: 19,6 GB
-  - Q6_K: 22,5 GB
-  - Q8_0: 29,1 GB
-  - mmproj-Q8_0: 0,7 GB / mmproj-f16: 1,0 GB (suplemento multimodal, se suma si se usa vision)
-- GPU recomendadas:
-  - Consumer: RTX 3090 o RTX 4090 (24 GB) para Q4_K_S y Q4_K_M con margen; Q5 y Q6 entran en 24 GB pero con poco espacio para cache KV.
-  - Consumer de gama alta: RTX 5090 o similares con 32 GB para Q8_0 (29,1 GB), muy ajustado.
-  - Profesional: A100 40 GB, A100 80 GB, H100 80 GB o L40S 48 GB para Q8_0 con contexto amplio, o para los pesos sin cuantizar.
-  - Multi-GPU: dos GPU de 24 GB permiten repartir Q5/Q6/Q8 con mayor ventana de contexto.
-- Cabe en GPU de consumo: si, en cuantizaciones de 2 a 6 bits sobre GPU de 24 GB o superiores. Las cuantizaciones Q4_K_S y Q4_K_M son las marcadas como "fast, recommended" por el autor. Las variantes Q2_K y Q3_K estan pensadas para equipos con 12-16 GB de VRAM, con la perdida de calidad asociada.
-- Opciones de despliegue: llama.cpp, Ollama (mediante Modelfile), LM Studio, koboldcpp y text-generation-webui para el formato GGUF. vLLM y TGI soportan GGUF de forma experimental o parcial; para un despliegue de alta concurrencia es preferible partir de los pesos safetensors del modelo base. Los ficheros GGUF multiparte, si existen, deben concatenarse antes de usarse.
-- Latencia y throughput estimados: no disponible. El autor no publica mediciones y el repositorio no incluye datos de tokens por segundo.
+- VRAM estimada para inferencia (pesos mas overhead de contexto y KV cache):
+  - Q2_K: 11,0 GB de pesos; ~12-14 GB de VRAM en total.
+  - Q3_K_M: 13,6 GB de pesos; ~15-17 GB en total.
+  - IQ4_XS: 15,5 GB de pesos; ~17-19 GB en total.
+  - Q4_K_M: 16,9 GB de pesos; ~19-21 GB en total.
+  - Q5_K_M: 19,6 GB de pesos; ~22-24 GB en total.
+  - Q6_K: 22,5 GB de pesos; ~25-27 GB en total.
+  - Q8_0: 29,1 GB de pesos; ~32-34 GB en total.
+- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q6_K y Q8_0 con contexto largo; RTX 4080 (16 GB) solo para Q3_K_S o IQ4_XS con contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4 y Q5; en GPUs de 16 GB con Q3; en GPUs de 12 GB solo con Q2_K y contexto muy limitado.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, y servidores compatibles con GGUF como llama-cpp-python. vLLM y TGI no soportan GGUF de forma nativa, por lo que requeririan el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles; dependen de la GPU, la cuantizacion y la longitud de contexto, ninguno de los cuales se documenta.
 
 ## Comparativa con modelos similares
 
-Los resultados de la busqueda web no aportaron informacion sobre modelos comparables, y la model card no incluye comparaciones. La unica comparacion verificable con los datos disponibles es entre el modelo base y esta redistribucion cuantizada:
-
-| Modelo | Parametros | Formato | Licencia | Contexto | Benchmarks |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.8-27b-Terse-Coder-GGUF | 27.320.697.856 | GGUF (12 cuantizaciones) | apache-2.0 | no disponible | no disponible |
-| Shockem/Qwen3.8-27b-Terse-Coder (base) | no disponible en la informacion (la cuantizacion conserva 27.320.697.856) | safetensors | apache-2.0 | no disponible | no disponible |
-| Alternativas de la misma categoria (por ejemplo, modelos de codigo de ~30B en GGUF) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-27b-Terse-Coder (este) | 27,3 B | no disponible | Apache 2.0 | GGUF | Fine-tuning DPO con vision (mmproj); sin benchmarks publicados |
+| Qwen3-32B | 32,8 B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Modelo oficial de la familia; benchmarks publicados por Alibaba |
+| Qwen3-30B-A3B | 30,5 B totales / 3,3 B activos | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Variante MoE, mucho mas rapida en inferencia |
+| Gemma 3 27B | 27 B | 128.000 tokens | Gemma Terms | safetensors, GGUF | Alternativa de Google con contexto largo y vision |
 
-No se dispone de datos contrastados de otras alternativas, por lo que cualquier comparacion de rendimiento con modelos de tamano similar seria especulativa y no se incluye.
+La comparacion con Qwen3-32B y Qwen3-30B-A3B es pertinente por tamano y familia; sin embargo, no hay datos de rendimiento del modelo de esta ficha que permitan establecer una comparacion cuantitativa. La ventaja principal frente a los modelos oficiales es la cuantizacion GGUF ya preparada y el ajuste especifico para codigo; la desventaja es la ausencia total de evaluaciones publicadas y de documentacion sobre contexto y entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validacion externa: el repositorio registra 0 descargas y 0 "me gusta", y no hay benchmarks publicados. No existe evidencia independiente de la calidad del modelo ni de su comportamiento en produccion.
-- Riesgo de alucinacion: no se documenta ningun mecanismo de mitigacion y no se aportan evaluaciones de fidelidad, por lo que debe asumirse el riesgo habitual de los modelos generativos, especialmente en tareas de razonamiento y codigo.
-- Sesgos: no se publica informacion sobre composicion del dataset ni evaluaciones de sesgo. Al estar afinado principalmente en ingles, es probable que su comportamiento en otros idiomas sea deficiente, pero este extremo no esta medido.
-- Limitacion idiomatica: la model card declara unicamente `en`. No hay soporte declarado de castellano.
-- Perdida por cuantizacion: las cuantizaciones Q2_K y Q3_K degradan la calidad de forma notable. El propio autor marca Q3_K_M como "lower quality" y las variantes Q4 como las recomendadas. Para tareas de codigo con requisitos estrictos de correccion conviene usar Q6_K o Q8_0, o los pesos originales.
-- Sin cuantizaciones ponderadas ni imatrix: el autor indica que no hay cuantizaciones weighted/imatrix disponibles en el momento de publicar. Estas suelen ofrecer mejor relacion calidad/tamano en el mismo espacio de bits.
-- Restricciones de licencia: el repositorio se publica bajo apache-2.0, lo que en principio permite uso comercial. No obstante, el modelo base es un ajuste de la comunidad y el material consultado no confirma la licencia del modelo original subyacente ni posibles condiciones adicionales heredadas de la familia Qwen. Conviene verificar la licencia de `Shockem/Qwen3.8-27b-Terse-Coder` antes de un uso comercial.
-- Inconsistencias a revisar: la lista de cuantizaciones de las etiquetas menciona `x-f16`, pero la tabla de ficheros no incluye un fichero f16. Los ficheros `mmproj` sugieren vision, pero la model card no documenta ninguna capacidad multimodal.
-- Caveat de despliegue: la cuantizacion es estatica (sin imatrix), y la longitud de contexto efectiva tras la cuantizacion no se especifica; hay que validarla empiricamente con la herramienta de inferencia elegida antes de dimensionar la cache KV.
-- Fecha de publicacion: el repositorio esta fechado en septiembre de 2026, con una unica revision de README (`readme_rev: 1`), lo que indica escasa madurez del artefacto.
+- Ausencia de benchmarks: no hay ninguna evaluacion publicada que permita estimar la calidad del modelo en codigo, razonamiento o matematicas; el rendimiento real es desconocido.
+- Documentacion insuficiente: la model card no especifica longitud de contexto, composicion del dataset, numero de tokens de entrenamiento ni detalles del DPO.
+- Idioma: solo se declara ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Riesgo de alucinacion: inherente a los modelos de 27.000 millones de parametros sin evaluacion publicada; en generacion de codigo puede producir APIs inexistentes o funciones con errores sutiles.
+- Sesgos: no documentados por el autor; al ser un fine-tuning comunitario sin card detallada, no hay analisis de sesgos disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base es un fine-tuning comunitario cuyo cumplimiento de las condiciones de Qwen3 no se detalla en la informacion disponible.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_S degradan notablemente la coherencia en tareas de codigo; no se recomiendan para produccion.
+- Soporte multimodal limitado: los ficheros mmproj existen, pero no se documenta que tareas de vision estan entrenadas ni con que calidad.
+- Mantenimiento: 0 likes y un unico publicador de cuantizaciones; no hay garantia de actualizaciones o correcciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-GGUF
 - Modelo base: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
-- Pagina de resumen de descargas del autor para este modelo: https://hf.tst.eu/model#Qwen3.8-27b-Terse-Coder-GGUF
-- Peticiones de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests
-- Grafica comparativa de perplejidad entre tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion GGUF: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Empresa que soporta al autor: https://www.nethype.de/
-- Paper, blog tecnico, repositorio de codigo o demo del modelo: no disponible en la informacion proporcionada.
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-i1-GGUF
+- Pagina de descargas del publicador: https://hf.tst.eu/model#Qwen3.8-27b-Terse-Coder-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de calidad de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

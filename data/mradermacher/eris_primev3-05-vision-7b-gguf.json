@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Eris_PrimeV3.05-Vision-7B-GGUF",
+  "slug": "mradermacher-eris_primev3-05-vision-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Eris_PrimeV3.05-Vision-7B-GGUF",
+  "created_at": "2024-12-24T07:58:58.000Z",
+  "updated_at": "2026-11-21T06:38:08.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:ChaoticNeutrals/Eris_PrimeV3.05-Vision-7B",
+    "base_model:quantized:ChaoticNeutrals/Eris_PrimeV3.05-Vision-7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 185,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929816960,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "ChaoticNeutrals/Eris_PrimeV3.05-Vision-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

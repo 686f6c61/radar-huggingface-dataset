@@ -2,93 +2,100 @@
 
 ## Resumen
 
-Copal 1 Mini es un modelo de lenguaje especializado en tool-calling y razonamiento agéntico, desarrollado por VertexAGI como proyecto de investigación independiente. Se trata de un fine-tune del modelo Gemma 3 4B IT de Google, entrenado mediante LoRA sobre un checkpoint cuantizado a 4 bits, con el objetivo de mejorar la capacidad del modelo base para decidir cuándo invocar una herramienta, seleccionar la adecuada, interpretar el resultado y continuar la conversación o responder al usuario. El modelo utiliza una convención de texto simple basada en etiquetas `<tool_call>` y `<tool_result>`, en lugar de los esquemas JSON típicos de las APIs de function-calling.
+Copal 1 Mini es un ajuste fino (fine-tune) de tipo LoRA fusionado sobre Gemma 3 4B IT, desarrollado por VertexAGI como proyecto de investigación independiente. Su propósito no es el chat general, sino el juicio en el uso de herramientas: decidir cuándo invocar una tool, seleccionar la correcta, interpretar su resultado y continuar el bucle de acción o responder en texto plano. Emplea una convención textual propia basada en bloques `<tool_call>` y `<tool_result>` en lugar de una API de function calling con esquema JSON.
 
-La relevancia de Copal 1 Mini radica en que ofrece una alternativa ligera y ejecutable en hardware de consumo para experimentar con agentes y automatización de tareas, sin necesidad de recurrir a modelos propietarios de gran tamaño. Está entrenado por destilación de trayectorias generadas por el modelo GLM 5.2 a través de la API NIM de NVIDIA, sobre un conjunto de 930 episodios agénticos depurados. Con una arquitectura densa decoder-only de aproximadamente 4 mil millones de parámetros (aunque los pesos liberados ocupan 711 millones de parámetros en formato cuantizado), el modelo está diseñado para ejecutarse localmente en Apple Silicon mediante MLX, y su licencia es la de los términos de uso de Gemma.
+El modelo parte de `google/gemma-3-4b-it` y se distribuye en cuantización 4-bit (group size 64) sobre el checkpoint QAT de `mlx-community/gemma-3-4b-it-qat-4bit`, con pesos fusionados con el adaptador y sin desquantizar. Está pensado para ejecución local en Apple Silicon mediante MLX y `mlx-lm`, con un tamaño de repositorio de 2,6 GB y 4.551.515.648 parámetros totales.
 
-## Especificaciones tecnicas
+Es relevante ahora porque cubre un nicho concreto: agentes ligeros que corren en hardware de consumo y que necesitan una tasa alta de invocación correcta de herramientas sin depender de infraestructura en la nube. El autor reporta 11/12 usos apropiados de tools en tareas retenidas frente a 8/12 del modelo base, sin errores de parseo en ninguno de los dos brazos.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Gemma 3 (decoder-only transformer, dense) |
-| Parametros totales | 711.484.928 (pesos del checkpoint liberado; el modelo base tiene ~4B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (heredado del modelo base Gemma 3 4B IT) |
-| Tipos de cuantizacion | 4-bit (QAT, mismo esquema que el checkpoint base) |
-| Idiomas soportados | Ingles |
+| Arquitectura | Gemma 3, transformer decoder-only denso |
+| Parámetros totales | 4.551.515.648 |
+| Parámetros activos | no disponible (modelo denso) |
+| Longitud de contexto | no disponible (el entrenamiento usó secuencias de 4096 tokens) |
+| Tipos de cuantización | 4-bit (group size 64), pesos ya cuantizados y fusionados con el adaptador |
+| Idiomas soportados | inglés (en) |
 | Licencia | Gemma Terms of Use |
-| Formato de pesos | MLX (safetensors) |
+| Formato de pesos | safetensors (MLX); no se proporciona build GGUF |
 
 ## Arquitectura y entrenamiento
 
-Copal 1 Mini parte del checkpoint `mlx-community/gemma-3-4b-it-qat-4bit`, una versión cuantizada a 4 bits de Gemma 3 4B IT. Sobre este checkpoint se aplicó un fine-tune con LoRA de rango 8, escala 20.0 y dropout 0.0, entrenando los módulos `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj` de 16 capas. El entrenamiento se realizó con MLX en Apple Silicon, usando el optimizador Adam con una tasa de aprendizaje constante de 1e-5, longitud de secuencia de 4096 tokens y gradient checkpointing. Se ejecutaron 2500 iteraciones, seleccionándose el checkpoint de la iteración 2250 por tener la menor pérdida de validación (0.236).
+La base es Gemma 3 4B IT, un transformer decoder-only denso. El ajuste se realizó con LoRA de rango 8, dropout 0.0 y escala 20.0, fusionado posteriormente en los pesos base. Los módulos entrenados son `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj` en 16 capas. El framework fue MLX / `mlx-lm` sobre Apple Silicon, con optimizador Adam, learning rate 1e-5 constante, longitud de secuencia de 4096 tokens y gradient checkpointing activado.
 
-El conjunto de entrenamiento consistió en 930 trayectorias agénticas depuradas (de 1152 generadas originalmente), destiladas del modelo `z-ai/glm-5.2` mediante la API NIM de NVIDIA. Cada trayectoria incluye un prompt de tarea, llamadas a herramientas, resultados simulados y respuestas finales, cubriendo 10 categorías: orquestación de APIs, seguimiento de estado, selección de herramientas, planificación multi-paso, clarificación de peticiones ambiguas, recuperación de errores, decisión basada en salida de herramientas, ejecución concisa, flujos de navegador y salida estructurada. El método de entrenamiento fue supervisado (SFT) sin RLHF ni DPO.
+El dataset consta de 930 trayectorias agénticas depuradas de 1.152 generadas originalmente, destiladas desde `z-ai/glm-5.2` vía NVIDIA NIM API. Cada trayectoria es un episodio multi-turno completo con prompt de tarea, llamadas a tools, resultados simulados y respuesta final o llamadas adicionales. Las tareas abarcan 10 categorías: orquestación de API, seguimiento de estado, selección de tool, planificación multi-paso, clarificación ante peticiones incompletas, recuperación de errores, lectura-y-decisión, ejecución concisa, flujo de navegador y salida estructurada. Se generaron de forma programática sobre múltiples entidades para evitar sobreajuste a plantillas. El entrenamiento corrió 2.500 iteraciones con validación cada 50 pasos; los pesos publicados corresponden al checkpoint de la iteración 2.250, seleccionado por menor pérdida de validación (0.236), que se estabilizó con ruido a partir de la iteración 1.000 aproximadamente.
 
 ## Capacidades
 
-- Tool-calling y function-calling mediante una convención de texto propia: el modelo emite bloques `<tool_call>` con JSON interno y espera `<tool_result>` como siguiente turno.
-- Razonamiento agéntico multi-paso: puede encadenar varias llamadas a herramientas, interpretar resultados y decidir si continuar actuando o responder en texto plano.
-- Selección de herramientas: entrenado para elegir la herramienta adecuada entre varias opciones en función del contexto.
-- Manejo de errores: capacidad de recuperarse de fallos en la ejecución de herramientas y de reconocer peticiones subespecificadas pidiendo aclaraciones.
-- Generación de salida estructurada: puede producir respuestas en formatos concretos cuando la tarea lo requiere.
-- Multilingüe: limitado al inglés, aunque hereda parcialmente las capacidades multilingües del modelo base Gemma 3 4B IT (no garantizado).
+- Generación de texto conversacional multi-turno en inglés.
+- Decisión de invocación de herramientas: determina cuándo una petición requiere una tool y cuándo basta una respuesta directa.
+- Selección de tool entre un conjunto disponible y construcción de argumentos en formato `{"name": ..., "arguments": {...}}`.
+- Interpretación de resultados de herramientas y ramificación condicional sobre la salida (read-and-decide).
+- Planificación multi-paso y ejecución de cadenas de llamadas hasta alcanzar una respuesta final.
+- Recuperación de errores: manejo de resultados fallidos o incompletos dentro del bucle agéntico.
+- Clarificación: reconocimiento de peticiones infraespecificadas antes de actuar.
+- Salida estructurada y ejecución concisa dentro de las categorías entrenadas.
+- No soporta visión, audio ni modo de razonamiento extendido más allá de lo heredado de Gemma 3 4B IT.
+- No emplea tool calling estilo OpenAI con esquema JSON; requiere adaptación del harness al formato textual propio.
 
 ## Casos de uso
 
-- Orquestación de APIs: el modelo puede recibir una petición que requiera consultar varios endpoints, decidir qué llamadas realizar, interpretar las respuestas y sintetizar un resultado final. Es adecuado porque su entrenamiento incluye categorías de orquestación y flujos multi-paso.
-- Automatización de tareas de oficina: por ejemplo, consultar un calendario, comprobar disponibilidad y reservar una reunión, mediante herramientas simuladas. Su formato de tool-calling permite integrarse en scripts locales.
-- Agentes de atención al cliente en entornos controlados: puede gestionar conversaciones multi-turno donde necesite consultar una base de conocimientos o un sistema de tickets, aunque no está recomendado para producción.
-- Investigación en agentes y tool-use: al ser un modelo pequeño y ejecutable en hardware de consumo, sirve para experimentar con bucles agénticos, evaluación de llamadas a herramientas y destilación de comportamientos.
-- Prototipado rápido de asistentes con herramientas en Apple Silicon: gracias a su soporte nativo MLX, se puede integrar en aplicaciones macOS o iOS sin necesidad de GPU dedicada.
-- Generación de salida estructurada en flujos de datos: puede producir JSON u otros formatos estructurados como parte de un pipeline de procesamiento, aprovechando su entrenamiento en salidas estructuradas.
+- Automatización de tareas locales en Apple Silicon: el modelo corre en 4-bit con 2,6 GB de pesos vía `mlx-lm`, lo que permite desplegar un agente de herramientas en un MacBook sin GPU dedicada, útil para prototipado rápido de bucles agénticos.
+- Orquestación de APIs internas: con la convención `<tool_call>`/`<tool_result>`, se puede conectar a endpoints REST y encadenar consultas dependientes, usando las categorías de orquestación de API y seguimiento de estado presentes en el entrenamiento.
+- Investigación sobre bucles agénticos: al ser un checkpoint pequeño y con formato explícito, resulta adecuado para estudiar tasas de invocación correcta, errores de parseo y comportamiento multi-paso en experimentos controlados con semilla fija.
+- Asistentes de consulta a bases de datos: el modelo puede emitir llamadas a una tool de query, leer el resultado y decidir si necesita una segunda consulta o responder, aprovechando la categoría read-and-decide.
+- Flujos de navegador simulado: las tareas de browser workflow del dataset permiten usar el modelo como planificador de acciones secuenciales sobre un entorno web instrumentado.
+- Enrutamiento y selección de herramientas en pipelines: dado un catálogo de tools, el modelo elige la más adecuada y construye los argumentos, lo que sirve como capa de decisión antes de un executor determinista.
+- Recuperación de errores en automatizaciones: ante un resultado de tool con fallo, el modelo puede reintentar con argumentos corregidos o escalar a una respuesta textual, gracias a la categoría de error recovery.
+- Extracción con salida estructurada: para tareas de parsing de respuestas de tools hacia formatos definidos, dentro de los límites de la categoría structured output entrenada.
 
 ## Benchmarks y rendimiento
 
-El autor evaluó el modelo frente al base sin ajustar (Gemma 3 4B IT) en 12 tareas agénticas no vistas durante el entrenamiento, usando el mismo entorno de herramientas simulado y la misma semilla RNG para ambas variantes:
+Evaluación del autor sobre 12 tareas agénticas retenidas, con entorno de tools simulado y la misma semilla para ambos brazos:
 
-| Metrica | Base (Gemma 3 4B IT) | Copal 1 Mini |
+| Modelo | Uso apropiado de tools | Errores de parseo de tool-call |
 |---|---|---|
-| Uso de herramientas cuando procede | 8 / 12 | 11 / 12 |
-| Errores de parseo de llamadas | 0 | 0 |
+| Gemma 3 4B IT (base) | 8 / 12 | 0 |
+| Copal 1 Mini | 11 / 12 | 0 |
 
-No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- El checkpoint liberado pesa 2.6 GB, lo que sugiere que la inferencia en 4-bit requiere aproximadamente 2.5-3 GB de VRAM (estimación razonable para un modelo de 4B cuantizado a 4 bits, aunque no se indica oficialmente).
-- Al estar en formato MLX, está optimizado para Apple Silicon (M1/M2/M3/M4). Se puede ejecutar en Macs con al menos 8 GB de RAM unificada.
-- En GPUs consumer, el modelo podría ejecutarse mediante vLLM u otros frameworks que soporten safetensors, pero no se proporcionan datos de latencia o throughput.
-- No se indican GPUs recomendadas específicas; por su tamaño, cabría en una RTX 3060 de 12 GB o similar, aunque no hay confirmación oficial.
-- Opciones de despliegue: MLX (nativo), llama.cpp (si se convierte a GGUF), vLLM, Ollama (si se añade soporte), TGI (con adaptación).
+- VRAM estimada para inferencia: aproximadamente 2,6 GB de pesos en 4-bit, más overhead de contexto y KV cache; el consumo real no está documentado.
+- GPU recomendadas: no disponible para CUDA; el modelo está empaquetado para MLX y Apple Silicon.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente para los 2,6 GB de pesos más el contexto.
+- Opciones de despliegue: `mlx-lm` sobre MLX; no se proporciona build GGUF, por lo que llama.cpp, Ollama y TGI no están soportados de forma nativa sin conversión adicional.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| Copal 1 Mini | ~4B (base) | No disponible | Gemma Terms | Tool-calling agéntico |
-| Gemma 3 4B IT (base) | ~4B | 32k (segun documentacion oficial, no confirmado en esta ficha) | Gemma Terms | Chat general, tool-calling limitado |
-| Qwen 2.5 3B Instruct | ~3B | 32k | Apache 2.0 | Chat y tool-calling estandar (JSON schema) |
-| Llama 3.2 3B Instruct | ~3B | 128k | Llama 3.2 Community | Chat, tool-calling estandar |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Copal 1 Mini | 4.551.515.648 | no disponible | Tool calling agéntico, formato textual propio, 4-bit MLX | Gemma Terms of Use | Hugging Face, solo MLX |
+| google/gemma-3-4b-it | 4B (aprox.) | no disponible | Chat general multimodal (base) | Gemma Terms of Use | Hugging Face, múltiples formatos |
+| mlx-community/gemma-3-4b-it-qat-4bit | 4B (aprox.) | no disponible | Base cuantizada QAT para MLX | Gemma Terms of Use | Hugging Face, MLX |
 
-La comparativa se basa en datos generales de los modelos; no se dispone de benchmarks comunes para comparar rendimiento agéntico. Copal 1 Mini se distingue por su formato de tool-calling propio y su entrenamiento especifico en trayectorias agénticas destiladas de un modelo mayor.
+La comparación con alternativas de tool calling de otros linajes no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado con un conjunto de datos pequeño (930 ejemplos) y generado sinteticamente, por lo que su comportamiento puede ser inconsistente fuera de las categorias representadas.
-- Destilado de un unico modelo profesor (GLM 5.2) sin revision humana de todas las trayectorias; puede heredar sesgos o errores ocasionales del profesor.
-- Utiliza un formato de tool-calling personalizado basado en texto, no compatible con APIs que esperan esquemas OpenAI-style JSON; requiere adaptar el harness.
-- Hereda las limitaciones generales y el corte de conocimiento del modelo base Gemma 3 4B IT.
-- Solo soporta ingles; el rendimiento en otros idiomas no esta garantizado.
-- No esta recomendado para uso en produccion, tareas de alto riesgo o entornos de seguridad critica.
-- Es un checkpoint de primera generacion en una serie en desarrollo; puede haber mejoras posteriores.
+- Dataset de entrenamiento pequeño (930 ejemplos) y generado sintéticamente: el comportamiento puede ser inconsistente fuera de las 10 categorías representadas.
+- Destilado de un único modelo profesor (`z-ai/glm-5.2`) sin revisión humana de todas las trayectorias; pueden persistir sesgos o errores de uso de tools heredados del profesor.
+- Formato de tool call propio, no un esquema estandarizado: no es sustituto directo de APIs que esperan tool calls estilo OpenAI y exige adaptar el harness.
+- Hereda las limitaciones generales y el corte de conocimiento de Gemma 3 4B IT.
+- Solo inglés; no hay soporte multilingüe declarado.
+- Licencia Gemma Terms of Use: conviene revisar las condiciones antes de uso comercial.
+- El propio autor lo declara no apto para uso en producción, alta criticidad o seguridad.
+- Es un checkpoint de primera generación dentro de una serie en desarrollo.
+- Riesgo de alucinación: no se han publicado evaluaciones específicas de factualidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/VertexAGI/copal-1-mini
-- Perfil del autor en Hugging Face: https://huggingface.co/VertexAIco/models
-- Anuncio en X: https://x.com/vertexagi
-- Discusion sobre soporte de inferencia: https://huggingface.co/spaces/huggingface/InferenceSupport/discussions/11785
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
-- Checkpoint base cuantizado: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit
-- Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
+- Checkpoint QAT de partida: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit
+- MLX: https://github.com/ml-explore/mlx
+- Términos de licencia Gemma: https://ai.google.dev/gemma/terms

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ThuraAung1601/qwen3-asr-0.6b-megaspeech-filtered-unrefined",
+  "slug": "thuraaung1601-qwen3-asr-0-6b-megaspeech-filtered-unrefined",
+  "author": "ThuraAung1601",
+  "url": "https://huggingface.co/ThuraAung1601/qwen3-asr-0.6b-megaspeech-filtered-unrefined",
+  "created_at": "2026-11-21T09:16:36.000Z",
+  "updated_at": "2026-11-21T09:17:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3-asr",
+    "thai",
+    "speech-recognition",
+    "th",
+    "base_model:Qwen/Qwen3-ASR-0.6B-hf",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B-hf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 1576357741,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-ASR-0.6B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

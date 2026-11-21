@@ -2,99 +2,125 @@
 
 ## Resumen
 
-El modelo `sigmanih/google-gemma-4-12B-it-GGUF-Q6_K` es una cuantización en formato GGUF con cuantización Q6_K del modelo base `google/gemma-4-12B-it`, publicada por el usuario `sigmanih` a través de su herramienta Sigma Studio. Se trata de una versión optimizada para inferencia local de alto rendimiento, orientada a tareas de generación de texto, programación, asistentes conversacionales y razonamiento autónomo. La cuantización reduce el peso del modelo a 9,11 GB, lo que permite ejecutarlo en GPUs de consumo con 12 GB o más de VRAM, manteniendo una velocidad de decodificación medida de 49,2 tokens por segundo en una RTX 5070 Ti.
+`google-gemma-4-12B-it-GGUF-Q6_K` es una cuantización en formato GGUF (variante Q6_K) del modelo `google/gemma-4-12B-it`, publicada por el usuario `sigmanih` a través de la herramienta Sigma Studio. No se trata de un modelo entrenado desde cero, sino de una redistribución cuantizada del modelo base de Google, orientada a inferencia local en GPU de consumo con un peso en disco de aproximadamente 9,8 GB y un requisito estimado de VRAM en torno a 10,7 GB para descarga completa en GPU.
 
-El modelo base Gemma 4 12B es un transformer decoder-only de 12 mil millones de parámetros con una ventana de contexto de 262.144 tokens, desarrollado por Google DeepMind. Esta versión cuantizada hereda la arquitectura y las capacidades del modelo original, aunque se publica bajo una licencia marcada como "other" en la metadata de Hugging Face, lo que requiere revisar los términos específicos antes de su uso comercial.
+El modelo base es un transformer causal de tipo decoder-only con 11.907.350.576 parámetros totales (aproximadamente 12B), ventana de contexto declarada de 32.768 tokens y capacidades conversacionales (sufijo `-it`). La model card del publicador declara soporte para inglés e italiano, aunque la información disponible no detalla la composición multilingüe real del entrenamiento original de Google.
 
-## Especificaciones técnicas
+La relevancia de esta ficha es doble: por un lado, documenta una opción práctica para desplegar un modelo de 12B en hardware de consumo; por otro, advierte de que los datos de benchmarks publicados en la model card proceden de una evaluación propia del publicador sobre subconjuntos reducidos de cada suite (entre 7 y 14 preguntas por benchmark), por lo que no son comparables con resultados de suite completa ni con las cifras oficiales de Google.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura base `gemma4`) |
-| Parametros totales | 12 mil millones (12B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Q6_K (este archivo); también disponible Q8_0 en el mismo repositorio del autor |
-| Idiomas soportados | Inglés (en) e italiano (it) según la metadata; el modelo base puede soportar más idiomas, pero no se especifica |
-| Licencia | Otra (metadata: `other`; la model card muestra un badge Apache-2.0, pero el modelo base Gemma 4 tiene sus propios términos de uso) |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer causal decoder-only (CausalLM), según model card del publicador |
+| Parametros totales | 11.907.350.576 (~12B) |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Longitud de contexto | 32.768 tokens (según model card del publicador) |
+| Tipos de cuantizacion | GGUF Q6_K (esta publicación); otras variantes no disponibles |
+| Idiomas soportados | en, it (según tags y model card) |
+| Licencia | other (la model card incluye un badge Apache-2.0, pero el campo de licencia de Hugging Face es `other`; consultar los términos del modelo base de Google) |
+| Formato de pesos | GGUF (Q6_K); el campo de formato en la model card aparece como "Sconosciuto/sconosciuta", inconsistente con el nombre del repositorio |
+| Tamano del repositorio | 9,8 GB |
+| Modelo base | google/gemma-4-12B-it |
+| Descargas / likes | 724 / 2 |
+| Fecha de creacion / actualizacion | 2026-08-31 / 2026-11-02 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización GGUF Q6_K del checkpoint `google/gemma-4-12B-it`, que corresponde a la variante instruida del modelo Gemma 4 12B de Google DeepMind. La arquitectura base es un transformer decoder-only de 48 capas con dimensión oculta de 3840, según los datos de la model card. No se dispone de información detallada sobre el proceso de entrenamiento del modelo original (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO) en la documentación proporcionada. La cuantización Q6_K es un método de compresión de pesos que mantiene 6 bits por peso, ofreciendo un equilibrio entre fidelidad y tamaño. El autor indica que el modelo fue publicado mediante el módulo Model Hub de Sigma Studio, una herramienta propia para optimización y despliegue de modelos.
+La información disponible no describe la arquitectura interna del modelo base más allá de la etiqueta `CausalLM` y la indicación de que se trata de un transformer decoder-only de aproximadamente 12B parámetros. No se dispone de datos sobre número de capas, dimensión oculta, número de cabezas de atención, tipo de atención (completa, GQA, sliding window), función de activación ni normalización. Tampoco se documenta si el modelo base emplea mezcla de expertos: el recuento de parámetros totales coincide con el recuento de parámetros activos declarado (12B), lo que apunta a un modelo denso, pero no puede confirmarse con la información proporcionada.
+
+Respecto al entrenamiento, no hay información sobre volumen de tokens, composición del corpus, fases de preentrenamiento, ajuste supervisado, RLHF o DPO. La model card del publicador no aporta detalles del proceso original de Google; únicamente documenta el proceso de cuantización y publicación mediante Sigma Studio. La innovación técnica atribuible a esta publicación concreta es la cuantización Q6_K en GGUF, que reduce el peso a 9,8 GB manteniendo una precisión nominal alta (6 bits por peso con escalas por bloque), y su integración declarada con el motor SigmaEngine para inferencia acelerada en GPU.
 
 ## Capacidades
 
-Según la model card, el modelo está recomendado para:
-
-- Generación de texto conversacional y asistencia en tareas cotidianas.
-- Programación de alta velocidad (generación de código, completado, depuración).
-- Razonamiento autónomo y bucles de agentes (multi-step reasoning).
-- Capacidades multilingües limitadas a inglés e italiano según la metadata, aunque el modelo base podría soportar más idiomas (no confirmado en esta ficha).
-
-No se documenta explícitamente soporte para tool calling, function calling, visión o audio en esta versión cuantizada. Dado que el modelo base Gemma 4 12B es multimodal según fuentes externas (LM Studio lo describe como "Unified" con proyección directa de parches de imagen), es posible que esta cuantización conserve cierta capacidad de procesamiento de imágenes, pero no hay confirmación en la información proporcionada. Se recomienda probar la funcionalidad real antes de asumirla.
+- Generación de texto conversacional multi-turno en inglés e italiano, según los idiomas declarados.
+- Razonamiento paso a paso: la model card documenta un modo "Deep Thinking" (cadena de pensamiento) con una mejora declarada de +3,6 puntos porcentuales frente al modo directo en su evaluación propia.
+- Generación de código: se reportan resultados en HumanEval y MBPP dentro de la evaluación del publicador, aunque sobre subconjuntos muy reducidos.
+- Razonamiento matemático: se reportan resultados en GSM8K y MATH, de nuevo sobre subconjuntos parciales.
+- Tool calling y uso de agentes: la model card incluye una sección de protocolo agéntico con métricas de adherencia a herramientas y contención en sandbox.
+- Capacidades multilingües limitadas a los idiomas declarados (en, it); no se documenta cobertura adicional.
+- No se declaran capacidades de visión, audio ni multimodalidad en la información disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede gestionar diálogos multi-turno con contexto largo gracias a su ventana de 262.144 tokens, adecuado para chatbots que requieren recordar conversaciones extensas.
-- Generación de código en producción: con un rendimiento del 100% en HumanEval (sobre subconjunto) y 77,8% en MBPP, puede integrarse en pipelines de desarrollo como autocompletado o generación de tests unitarios.
-- Razonamiento matemático: con 88,9% en GSM8K y MATH (medido sobre subconjuntos), es útil para resolución de problemas matemáticos de nivel escolar y competición.
-- Agentes autónomos: el modelo puede ejecutar bucles de razonamiento multi-paso, lo que lo hace apto para tareas de planificación y ejecución de acciones en entornos controlados.
-- Educación y tutoría: su capacidad de razonamiento y generación de explicaciones permite crear tutores virtuales para materias STEM.
-- Análisis de documentos largos: la ventana de contexto amplia permite procesar informes, artículos o libros completos en una sola pasada, extrayendo resúmenes o respondiendo preguntas específicas.
+- Asistente conversacional local en estación de trabajo: con 9,8 GB de pesos en Q6_K y unos 10,7 GB de VRAM estimados, el modelo puede ejecutarse íntegramente en una GPU de 12-16 GB, lo que permite desplegar un asistente privado sin dependencia de API externa.
+- Generación de código en entornos con requisitos de privacidad: el formato GGUF y el soporte de llama.cpp u Ollama permiten integrar el modelo en flujos de autocompletado o revisión de código sin enviar el código fuente a terceros.
+- Prototipado de agentes con tool calling: la model card declara soporte de adherencia a esquemas de herramientas y un sandbox de ejecución; útil para validar pipelines agénticos antes de migrar a modelos mayores.
+- Atención al cliente en inglés e italiano: la ventana de 32.768 tokens permite mantener conversaciones multi-turno con historial extenso y documentación de contexto inyectada.
+- Razonamiento matemático asistido: el modo de cadena de pensamiento está orientado a problemas de lógica y matemáticas, adecuado para herramientas internas de resolución de ejercicios o verificación de cálculos.
+- Inferencia en CPU o híbrida: la model card estima unos 10,0 GB de RAM para ejecución CPU/híbrida, lo que permite desplegar el modelo en servidores sin GPU dedicada, con mayor latencia.
+- Evaluación comparativa de cuantizaciones: al ser una variante Q6_K de un modelo base, sirve para medir la pérdida de calidad frente a pesos completos en tareas concretas del dominio propio.
 
 ## Benchmarks y rendimiento
 
-La model card incluye resultados de evaluación realizados por el autor sobre un subconjunto de cada dataset (100 preguntas en total), con temperatura 0.0 y semilla 42, ejecutados en GPU mediante SigmaEngine. **Importante: estos resultados no son comparables con ejecuciones completas de los benchmarks y deben interpretarse como indicativos.**
+Los datos siguientes proceden exclusivamente de la model card del publicador, evaluados con el motor SigmaEngine (temperatura 0.0, semilla 42) sobre subconjuntos parciales de cada suite. La propia model card advierte de que las puntuaciones no son comparables con ejecuciones de suite completa.
 
-| Dataset | Dominio | Correctos / Total | Precisión (%) |
-|---|---|---|---|
-| ARC-Challenge | Razonamiento científico escolar | 8 / 9 | 88,9 |
-| BIG-Bench Hard | Lógica y simbólica multi-tarea | 6 / 7 | 85,7 |
-| GPQA | Razonamiento académico de posgrado | 4 / 9 | 44,4 |
-| GSM8K | Matemáticas de escuela primaria multi-paso | 8 / 9 | 88,9 |
-| HellaSwag | Razonamiento de sentido común | 5 / 9 | 55,6 |
-| HumanEval | Generación de código Python (pass@1) | 7 / 7 | 100,0 |
-| MATH | Matemáticas de competición | 8 / 9 | 88,9 |
-| MBPP | Programación Python con tests unitarios | 7 / 9 | 77,8 |
-| MMLU | Conocimiento general multi-materia | 8 / 14 | 57,1 |
-| MMLU-Pro | Razonamiento multi-paso avanzado | 8 / 9 | 88,9 |
-| TruthfulQA | Factualidad y anti-alucinación | 8 / 9 | 88,9 |
-| **Total** | **Todos los conjuntos** | **77 / 100** | **77,0** |
+| Benchmark | Aciertos / total | Precision declarada |
+|---|---|---|
+| ARC-Challenge | 8 / 9 | 89% |
+| BIG-Bench Hard | 6 / 7 | 86% |
+| GPQA | 4 / 9 | 44% |
+| GSM8K | 8 / 9 | 89% |
+| HellaSwag | 5 / 9 | 56% |
+| HumanEval | 7 / 7 | 100% |
+| MATH | 8 / 9 | 89% |
+| MBPP | 7 / 9 | 78% |
+| MMLU | 8 / 14 | 57% |
+| MMLU-Pro | 8 / 9 | 89% |
+| TruthfulQA | 8 / 9 | 89% |
+| Total agregado | 77 / 100 | 77% |
 
-No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible.
+Comparativa de modos de razonamiento declarada por el publicador:
+
+| Modo | Precision | Preguntas superadas |
+|---|---|---|
+| Sin razonamiento (respuesta directa) | 75,4% | 43 / 57 |
+| Razonamiento CoT (Deep Thinking) | 79,1% | 34 / 43 |
+
+Métricas del protocolo agéntico (sandbox del publicador):
+
+| Metrica | Resultado |
+|---|---|
+| Adherencia al protocolo de herramientas | 56,5% |
+| Finalizacion autonoma de tarea | 0,0% (0/1 escenarios) |
+| Contencion en sandbox | 100% conforme |
+| Eficiencia de ejecucion | 0 turnos (0,0 s) |
+
+No se han publicado resultados de benchmarks oficiales del modelo base de Google en la información disponible.
 
 ## Requisitos de hardware
 
-- El archivo GGUF Q6_K ocupa 9,11 GB en disco, por lo que cabe en GPUs con 12 GB de VRAM o más (por ejemplo, RTX 3060 12GB, RTX 4070, RTX 5070 Ti).
-- La velocidad medida por el autor en una NVIDIA GeForce RTX 5070 Ti (15,9 GB VRAM) fue de:
-  - Decodificación de un solo flujo (lo que percibe el usuario en un chat): 49,2 tokens/s.
-  - Procesamiento de prompt: 430 tokens/s.
-  - Throughput agregado durante evaluación (varias peticiones simultáneas): 47,4 tokens/s.
-- No se han medido velocidades en otros hardware, por lo que no se pueden extrapolar cifras fiables.
-- Opciones de despliegue: el modelo es compatible con `llama.cpp` (comando `llama-cli -hf sigmanih/google-gemma-4-12B-it-GGUF-Q6_K -p "..." -ngl 99`), y con Sigma Studio, que ofrece aceleración por GPU y chat visual. También debería funcionar con otras herramientas que soporten GGUF como Ollama o vLLM (aunque no se mencionan explícitamente).
-- Para cargar el modelo completo en GPU con contexto máximo, se recomienda al menos 12 GB de VRAM; con 8 GB podría ser necesario limitar el contexto o usar una cuantización menor.
+- VRAM estimada: aproximadamente 10,7 GB para descarga completa en GPU con Q6_K; unos 10,0 GB de RAM en modo CPU o híbrido, según la model card.
+- GPU recomendadas por el publicador: 12-16 GB de VRAM, citando RTX 3060 y RTX 4070 como ejemplos.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más de VRAM (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090). En tarjetas de 8 GB requeriría descarga parcial a RAM.
+- Opciones de despliegue: llama.cpp, Ollama y otros runtimes compatibles con GGUF; la model card menciona además el motor propietario SigmaEngine y compatibilidad con endpoints. vLLM y TGI no se citan y su soporte de GGUF Q6_K no está confirmado en la información disponible.
+- Latencia y throughput: no disponibles. La model card solo indica cualitativamente que el modo sin razonamiento tiene menor latencia y que el modo CoT añade sobrecarga por tokens de razonamiento.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoría (por ejemplo, Llama 3 12B, Mistral 12B o el propio Gemma 4 sin cuantizar) en la información proporcionada. El autor publica también una versión Q8_0 del mismo modelo (`sigmanih/google-gemma-4-12B-it-GGUF-Q8_0`), que tendrá mayor fidelidad pero mayor tamaño de archivo. Se recomienda consultar los benchmarks oficiales de Google DeepMind para Gemma 4 12B para una comparativa rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| google-gemma-4-12B-it-GGUF-Q6_K (esta ficha) | ~12B | 32.768 | other | GGUF Q6_K | Cuantización de terceros; benchmarks parciales del publicador |
+| google/gemma-4-12B-it (modelo base) | ~12B | no disponible en esta ficha | other | safetensors | Pesos completos; referencia para medir pérdida por cuantización |
+| Otras cuantizaciones GGUF del mismo base | ~12B | 32.768 (heredado) | other | GGUF (Q4, Q5, Q8, etc.) | No disponibles en la información proporcionada |
+
+No se dispone de datos de benchmarks comparables de modelos alternativos de la misma categoría en la información proporcionada, por lo que no se incluye comparación de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks reportados se realizaron sobre subconjuntos reducidos (100 preguntas en total) y no son extrapolables a la precisión real en la suite completa; el propio autor advierte que no son comparables con ejecuciones completas.
-- La licencia está marcada como "other" en Hugging Face, y aunque la model card muestra un badge Apache-2.0, el modelo base Gemma 4 tiene sus propios términos de uso de Google. Es imprescindible revisar la licencia del modelo base antes de cualquier uso comercial o redistribución.
-- Al ser una cuantización Q6_K, puede haber una ligera pérdida de precisión frente al modelo original en tareas que requieren máxima exactitud (por ejemplo, matemáticas avanzadas o razonamiento legal).
-- Los resultados en GPQA (44,4%) y HellaSwag (55,6%) son moderados, lo que sugiere limitaciones en razonamiento académico de alto nivel y sentido común situacional.
-- No se documentan sesgos específicos, pero al derivar de un modelo entrenado por Google, es probable que herede sesgos presentes en los datos de entrenamiento del modelo base.
-- Riesgo de alucinación: aunque TruthfulQA muestra 88,9%, el modelo puede generar información incorrecta en contextos poco cubiertos; se recomienda validación humana en aplicaciones críticas.
-- La metadata indica idiomas "en, it", por lo que el rendimiento en otros idiomas no está garantizado.
+- Los benchmarks publicados proceden de subconjuntos muy reducidos (entre 7 y 14 preguntas por suite) y no son comparables con resultados de suite completa ni con cifras oficiales; el 100% en HumanEval sobre 7 preguntas no es estadísticamente significativo.
+- El resultado de finalización autónoma de tareas agénticas es 0,0% (0 de 1 escenarios) y la adherencia al protocolo de herramientas es del 56,5%, lo que desaconseja su uso en agentes autónomos en producción sin validación adicional.
+- La model card contiene inconsistencias: declara formato de pesos "Sconosciuto" pese a ser un GGUF Q6_K, indica un tamaño en disco de "0.0 GB" frente a los 9,8 GB reales del repositorio, y mezcla un badge Apache-2.0 con un campo de licencia `other`. Debe verificarse la licencia aplicable antes de cualquier uso comercial.
+- La licencia del modelo base de Google es `other`; los términos de uso de Gemma pueden imponer restricciones adicionales que prevalecen sobre cualquier declaración del publicador de la cuantización.
+- Idiomas declarados limitados a inglés e italiano; el rendimiento en castellano no está documentado y no debe asumirse.
+- Riesgo de alucinación inherente a modelos de 12B; el resultado declarado en TruthfulQA (89% sobre 9 preguntas) no es evidencia suficiente para descartarlo.
+- No hay información sobre sesgos del modelo base ni sobre evaluación de seguridad en la documentación disponible.
+- El repositorio tiene un volumen bajo de descargas (724) y likes (2), y procede de un publicador individual, no de Google; no hay garantía de mantenimiento ni de correspondencia exacta con los pesos oficiales.
+- El soporte en vLLM y TGI no está confirmado; el despliegue en producción a gran escala requeriría validar el runtime.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q6_K
-- Versión Q8_0 del mismo autor: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q8_0
-- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B
-- Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Anuncio de Gemma 4 12B en el blog de Google: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
-- Ficha del modelo en LM Studio: https://lmstudio.ai/models/google/gemma-4-12b
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q6_K
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
+- Perfil del publicador en Hugging Face: https://huggingface.co/sigmanih

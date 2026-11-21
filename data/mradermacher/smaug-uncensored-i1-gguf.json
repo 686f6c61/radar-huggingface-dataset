@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Smaug-Uncensored-i1-GGUF",
   "created_at": "2026-11-18T22:47:43.000Z",
-  "updated_at": "2026-11-19T22:28:57.000Z",
+  "updated_at": "2026-11-20T22:34:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 736,
+  "downloads_30d": 1583,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

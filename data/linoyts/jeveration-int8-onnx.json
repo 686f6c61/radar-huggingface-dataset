@@ -22,13 +22,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6254938058,
-  "storage_human": "6.3 GB",
+  "storage_bytes": 7561388907,
+  "storage_human": "7.6 GB",
   "context_length": null,
   "base_model": "linlinlinlinsdada/Jeveration",
   "formats": [

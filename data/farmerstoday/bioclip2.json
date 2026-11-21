@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "FarmersToday/bioclip2",
+  "slug": "farmerstoday-bioclip2",
+  "author": "FarmersToday",
+  "url": "https://huggingface.co/FarmersToday/bioclip2",
+  "created_at": "2026-11-21T06:21:38.000Z",
+  "updated_at": "2026-11-21T06:25:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1216680809,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

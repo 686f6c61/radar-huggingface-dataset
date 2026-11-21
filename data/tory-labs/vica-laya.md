@@ -2,110 +2,106 @@
 
 ## Resumen
 
-Vica Laya es un ajuste fino (fine-tune) del modelo multilingue Laya, desarrollado por tory-labs, orientado a la clasificacion y toma de decisiones sobre texto en coreano. No es un modelo generativo al uso: se distribuye como un artefacto compilado para el runtime `laya` de ggmlc, con una grafo de decision embebido y una taxonomia de preguntas tipadas. Su proposito es servir como motor de juicio local dentro de la aplicacion Vica, clasificando fragmentos de noticias en cuatro categorias (seguridad, IA, desarrollo y otros) y resolviendo otras tareas de etiquetado estructurado.
+Vica Laya es un ajuste fino (fine-tune) del modelo multilingüe Laya, desarrollado por tory-labs, especializado en clasificación de texto y toma de decisiones para el agente de programación Vica. No es un modelo generativo: se trata de un modelo de decisión que responde preguntas de sí/no y clasifica entradas según taxonomías predefinidas, principalmente en coreano con soporte de inglés. La versión publicada, release 2026.11.13.1, incorpora el checkpoint B3, entrenado durante tres épocas sobre el experimento de juicio directo para responder a tres preguntas concretas del flujo de edición de código de Vica: `check` (si una edición cumple lo solicitado), `locate` (si una línea candidata es el lugar correcto para modificar) y `done` (si la última respuesta del agente afirma haber terminado el trabajo).
 
-El modelo parte de `convaiinnovations/laya-multilingual` (revision `1720e3e3`) y fue ajustado con ejemplos de juicio en coreano y extractos de noticias publicas, con replay de tareas previas y datos de calibracion separados. Cuenta con 323.182.859 parametros totales y se exporta en cuantizacion Q8_0 dentro de un fichero GGUF de 361.797.216 bytes, aunque este GGUF no es compatible con llama.cpp ni con Ollama, sino unicamente con el ejecutable `laya` de ggmlc v0.9.7.
+El modelo parte de convaiinnovations/laya-multilingual y cuenta con 321.908.998 parámetros totales. Su arquitectura subyacente es la de Laya, un transformer multilingüe, aunque el autor no detalla la arquitectura interna en la información disponible. El repositorio incluye tanto pesos en formato safetensors (float16) para la librería Python `laya`, como un GGUF empaquetado junto a un binario compilado específico (`vica-laya`) para macOS arm64, Linux x86_64 y Windows x86_64.
 
-Su relevancia actual es limitada pero concreta: documenta un caso de uso de clasificacion ligera en dispositivo (posiblemente Apple Silicon), con latencias de daemon caliente de 19,51 ms de mediana y 27,52 ms de p95, y con una evaluacion final honesta de 93/130 aciertos (71,5%) que no alcanza el objetivo interno del 85%. Es un modelo de nicho, con cero descargas y cero likes en el momento de la ficha, y con un conjunto de test ya consumido.
+La relevancia de este modelo es acotada y muy específica: no compite con LLM generativos, sino que actúa como un clasificador de decisión de bajo coste integrado en un agente de código. Su interés técnico radica en el enfoque de empaquetar un modelo pequeño con un runtime propio basado en ggmlc y una política de versionado estricta con checkpoints y compuertas de evaluación. El propio autor reconoce que no alcanzó el objetivo del 85 % de precisión y que solo la tarea `done` se usa en producción dentro de Vica.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Laya multilingue; artefacto compilado `laya.cpp` con grafo de decision) |
-| Parametros totales | 323.182.859 |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer (base: convaiinnovations/laya-multilingual); no se detalla la arquitectura interna |
+| Parámetros totales | 321.908.998 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (unica exportacion publicada) |
-| Idiomas soportados | coreano (ko), ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`laya_multilingual_q8_0.gguf`, 361.797.216 bytes), con tokenizer embebido |
+| Tipos de cuantización | Q8_0 (export GGUF); float16 (safetensors) |
+| Idiomas soportados | coreano (ko), inglés (en) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (float16), GGUF (Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-El modelo deriva de `convaiinnovations/laya-multilingual` y se distribuye como un artefacto compilado para el runtime `laya` de ggmlc, no como un transformer generativo convencional. El ajuste fino afecto a 22 capas del encoder, con una tasa de aprendizaje de `3e-6` para el encoder y `8e-6` para la cabeza de clasificacion, semilla `20261105` y seleccion de la epoca 3. La ultima etapa aceptada utilizo 1.565 filas de entrenamiento y 415 filas de calibracion, con ejemplos de juicio en coreano, extractos de noticias publicas y replay de tareas previas. La exportacion Q8_0 se realizo con `monatis/ggmlc` en el commit `5490a13661d95add025ec1b111adbc88234a9b4f` (v0.9.7).
+El modelo es un fine-tune del checkpoint `convaiinnovations/laya-multilingual`, del que no se detalla en la información disponible la arquitectura interna más allá de su naturaleza transformer. El autor indica que se entrenó a partir de `training-checkpoints/mix25-epoch-1` (release 2026.11.06.1) y no desde el release 2026.11.08.1, por lo que no incorpora el aprendizaje de grafo de conocimiento y resumen de investigación de esa versión intermedia. El entrenamiento cubre tres épocas y conserva las tareas de juicio anteriores junto con las tres nuevas preguntas del flujo de edición directa de Vica (`check`, `locate`, `done`).
 
-El modelo no procesa pixeles de pantalla ni infiere coordenadas: recibe texto y limites de pantalla actuales, y el agente anfitrion gestiona etiquetas, colores, posicionamiento, desplazamiento y observaciones obsoletas. Las respuestas incluyen una categoria seleccionada y puntuaciones que son estimaciones del modelo, no probabilidades calibradas de acierto. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa.
+Las etiquetas de entrenamiento no fueron escritas por humanos, sino generadas por Claude y verificadas por otra instancia de Claude, lo que introduce dependencia del comportamiento de un modelo de terceros en la supervisión. El autor no especifica el número de tokens de entrenamiento ni la composición exacta del dataset. El checkpoint exportado es el checkpoint de entrenamiento original copiado byte a byte, en float16, y el GGUF Q8_0 contiene los mismos 130 tensores que la exportación Q8 de B3, con solo el nombre del modelo y el checkpoint en los metadatos modificados; las respuestas se verificaron idénticas en las 1.034 preguntas de calibración de juicio directo.
 
 ## Capacidades
 
-- Clasificacion de texto en categorias tipadas mediante preguntas definidas por el usuario (taxonomia de cuatro vias para noticias: `security`, `ai`, `development`, `other`).
-- Juicio y toma de decisiones estructurada sobre entradas de texto, con salida de categoria y puntuaciones por opcion.
-- Modo workflow: prediccion del siguiente paso en flujos de trabajo (253/272 en el conjunto de regresion).
-- Prediccion de siguiente accion (106/138) y etiquetado trabajo/chat (136/138).
-- Clasificacion de tipo de mensaje (90/98), deteccion de necesidad de accion (85/98) y estado de evidencia (88/96).
-- Soporte bilingue coreano-ingles: diagnostico pareado de 26/32 en cada idioma.
-- Ejecucion como daemon con peticiones JSON por linea en stdin, para peticiones repetidas de baja latencia.
-- No soporta tool calling generativo, agentes multi-paso ni vision; el soporte de agentes se limita a alimentar decisiones de clasificacion al host.
+- Clasificación de texto y respuesta a preguntas de sí/no sobre entradas en coreano (principal) e inglés.
+- Juicio de edición de código: `check` (verifica si una edición cumple lo solicitado), `locate` (determina si una línea candidata es el lugar de cambio) y `done` (detecta si la respuesta del agente afirma haber terminado).
+- Clasificación de temas de noticias según una taxonomía de cuatro categorías (`topic-questions.json`).
+- Tareas de juicio previas conservadas del entrenamiento anterior.
+- Ejecución mediante un runner compilado propio (`vica-laya`) con soporte de estado (`--state-file`) y preguntas (`--questions-file`), salida en JSON.
+- No es un modelo generativo: no produce texto libre, no soporta tool calling ni razonamiento multi-paso.
+- No dispone de visión, audio ni modo de pensamiento.
 
 ## Casos de uso
 
-- Clasificacion de noticias tecnologicas: el modelo recibe un extracto y la taxonomia `topic-questions.json` y devuelve una de las cuatro categorias (seguridad, IA, desarrollo, otros). Es adecuado por su entrenamiento especifico en este dominio y su latencia de decenas de milisegundos.
-- Enrutamiento de contenido en un agregador o boletin: integrado como daemon, permite etiquetar flujos continuos de articulos con una unica instancia viva y peticiones JSON por linea, reduciendo el coste de arranque por peticion.
-- Observador de uso de computadora: el agente anfitrion extrae texto y limites de pantalla y consulta al modelo para decidir la siguiente accion o el tipo de mensaje; el modelo no lee pixeles, pero aporta el juicio de clasificacion.
-- Moderacion o triaje de mensajes en coreano: las tareas de tipo de mensaje y necesidad de accion permiten priorizar conversaciones que requieren intervencion humana.
-- Clasificacion de estado de evidencia en flujos de soporte: el modelo etiqueta si una evidencia esta presente o es suficiente, como paso previo a la respuesta de un agente mayor.
-- Filtrado previo en pipelines de datos: al ser un modelo pequeno (323 M parametros, Q8_0 de ~362 MB), puede ejecutarse en local para descartar o etiquetar articulos antes de enviarlos a modelos mayores, ahorrando coste de inferencia.
-- Evaluacion de decisiones en entornos con restricciones de red: al ejecutarse en local con el runtime `laya`, es apto para despliegues en dispositivo sin dependencia de API externa.
+- Verificación de parches en un agente de código: el modelo responde `check` para confirmar si una edición realizada por el agente cumple la petición original, integrándose en el bucle de decisión de Vica antes de aceptar el cambio.
+- Localización de líneas a modificar: la tarea `locate` permite filtrar candidatos de línea antes de aplicar una edición, reduciendo falsos positivos en la selección del punto de cambio.
+- Detección de finalización de tarea: la tarea `done` (la única que el autor indica que se usa en producción dentro de Vica) identifica si la última respuesta del agente declara el trabajo terminado, con 98/98 aciertos en la partición de prueba reservada y 238/238 en `test3`.
+- Clasificación de noticias en coreano: con `topic-questions.json`, el modelo etiqueta titulares o textos en una taxonomía de cuatro categorías; el autor reporta 391 aciertos de 474 frente a 355 del release anterior.
+- Procesamiento local en estaciones de trabajo sin GPU: los binarios para macOS arm64 (Metal) y Linux/Windows x86_64 (Vulkan) permiten ejecutar el modelo sin dependencias de Python ni de un runtime LLM genérico, útil para entornos con requisitos de privacidad o sin conectividad.
+- Filtrado previo en pipelines de CI/CD: al ser un clasificador pequeño (GGUF de 361.797.056 bytes), puede ejecutarse como paso de verificación en flujos automatizados que necesiten una señal binaria rápida sobre el estado de una edición.
+- Evaluación de taxonomías de decisión: el repositorio incluye scripts y registros agregados del experimento (`experiments/direct-judgment/`) que sirven como referencia para reproducir o adaptar el enfoque de juicio directo a otras tareas.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Resultado |
-|---|---|
-| Clasificacion de noticias (test final, 130 extractos) | 93/130 (71,5%) |
-| Recall medio por clase | 71,1% |
-| Recall IA | 13/22 (59,1%) |
-| Recall desarrollo | 11/14 (78,6%) |
-| Recall negocio/otros | 41/56 (73,2%) |
-| Recall seguridad | 28/38 (73,7%) |
-| Workflow mode (regresion) | 253/272 |
-| Next action (regresion) | 106/138 |
-| Work/chat label (regresion) | 136/138 |
-| Message kind (regresion) | 90/98 |
-| Needs action (regresion) | 85/98 |
-| Evidence status (regresion) | 88/96 |
-| Diagnostico pareado coreano/ingles | 26/32 en cada idioma |
-| Latencia daemon caliente (Apple Silicon, 20 entradas x 3 repeticiones) | 19,51 ms mediana / 27,52 ms p95 |
+Resultados reportados por el autor en la model card para el release 2026.11.13.1 (B3), comparados con el modelo Jev cuando se indica:
 
-La version local previa alcanzo 71/130 (54,6%) en el mismo test final, pero la comparacion no es contra el modelo upstream sin tocar. Los conjuntos de regresion se usaron durante el desarrollo y no constituyen tests finales independientes. Las etiquetas de referencia fueron redactadas por un asistente independiente y no fueron adjudicadas por humanos. El test final ya esta consumido.
+| Tarea | Resultado Vica Laya (B3) | Referencia Jev |
+|---|---|---|
+| `done` (partición de prueba reservada) | 98/98 | 98/98 |
+| `done` (`test3`, 871 filas) | 238/238 | no disponible |
+| `check` | 176/239 | 230/239 |
+| `locate` | 56/82 | 71/82 |
+| Clasificación de temas de noticias (474 casos) | 391 | no disponible (release anterior: 355) |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor indica que no se alcanzó el objetivo del 85 % de precisión y que la evaluación en los datos de grafo de conocimiento y resumen de investigación no se realizó.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero Q8_0 ocupa 361.797.216 bytes (~345 MiB), por lo que la inferencia cabe holgadamente en cualquier GPU consumer con al menos 1 GB de memoria libre; en la practica el cuello de botella es el runtime, no la memoria.
-- GPU recomendadas: no se especifican en la informacion disponible; las mediciones publicadas se hicieron en una maquina local con Apple Silicon (CPU/GPU integrada).
-- Cabe en GPU consumer: si, dado el tamano del artefacto, aunque no hay lista de GPUs validadas.
-- Opciones de despliegue: exclusivamente el runtime `laya` de ggmlc v0.9.7 (modo `decide` o `daemon`). No es compatible con llama.cpp, Ollama, vLLM ni TGI, al ser un artefacto compilado con grafo de decision, no un LLM generativo GGUF.
-- Latencia y throughput: 19,51 ms de mediana y 27,52 ms de p95 en round-trip de daemon caliente sobre una carga fija de calibracion de 20 entradas repetidas tres veces en Apple Silicon. No se publica throughput ni latencia en otras plataformas.
+- El GGUF Q8_0 ocupa 361.797.056 bytes (aproximadamente 345 MiB), por lo que la inferencia requiere muy poca memoria en comparación con un LLM generativo.
+- macOS arm64: binario con backend Metal; no requiere instalar nada más.
+- Linux x86_64: binario con Vulkan; requiere el cargador `libvulkan.so.1` y una CPU con AVX2, FMA y BMI2 (Intel Haswell de 2013 o AMD Excavator de 2015 en adelante); compilado sobre Ubuntu 22.04 (glibc 2.35).
+- Windows x86_64: binario con Vulkan; requiere `vulkan-1.dll` (instalado con los drivers de GPU) y los DLL del runtime de Visual C++ incluidos junto a `vica-laya.exe`.
+- Cabe en cualquier GPU de consumo con soporte Vulkan o Metal, así como en CPU, dado el tamaño reducido del modelo.
+- Opciones de despliegue: exclusivamente el runner compilado `vica-laya` (basado en ggmlc v0.9.7). El autor indica explícitamente que el modelo no es para llama.cpp ni Ollama. Para el checkpoint float16 existe la librería Python `laya`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vica Laya (tory-labs) | 323 M | no disponible | Clasificacion de juicio en coreano | Apache 2.0 | Hugging Face, runtime `laya` |
-| convaiinnovations/laya-multilingual (upstream) | no disponible | no disponible | Modelo multilingue base | Apache 2.0 | Hugging Face |
-| Modelos de clasificacion tipo BERT multilingue | ~100-300 M | 512 tokens tipico | Clasificacion de texto generica | variable | Hugging Face, transformers |
+| Vica Laya (este modelo) | 321.908.998 | no disponible | Clasificación / decisión sí-no (ko, en) | apache-2.0 | Hugging Face, binarios por plataforma |
+| convaiinnovations/laya-multilingual (base) | no disponible | no disponible | Modelo multilingüe base | no disponible | Hugging Face |
+| Jev | no disponible | no disponible | Juicio directo (referencia interna del autor) | no disponible | no disponible públicamente en la información |
 
-No se dispone de resultados de benchmarks comparativos contra alternativas en la informacion proporcionada. La comparacion con el upstream no es posible porque el autor no publica resultados del modelo base sin ajustar sobre el mismo test. Los modelos BERT multilingues se incluyen como referencia de categoria por tamano, no por rendimiento medido.
+No se dispone de datos suficientes para comparar con alternativas públicas de la misma categoría (clasificadores de decisión para agentes de código). El modelo Jev se menciona únicamente como referencia de evaluación interna y no se detalla su procedencia ni disponibilidad.
 
 ## Limitaciones y advertencias
 
-- El test final de 130 extractos ya esta consumido y sus etiquetas no fueron adjudicadas por humanos, por lo que la cifra de 71,5% debe interpretarse con cautela.
-- No alcanza el objetivo interno del 85% de precision; el recall de la clase IA es especialmente bajo (59,1%).
-- Las puntuaciones de confianza pueden ser altas en respuestas incorrectas; no deben tratarse como probabilidades calibradas.
-- Los articulos ambiguos y la frontera entre aplicaciones de IA, desarrollo general, lanzamientos tecnicos y anuncios de negocio son fuentes de error documentadas.
-- El modelo no lee pixeles ni infiere coordenadas de pantalla; requiere que el host aporte texto y limites actuales.
-- Cambiar las instrucciones de las preguntas puede alterar la precision; para reproducir el resultado publicado hay que usar `topic-questions.json`.
-- El artefacto solo funciona con el runtime `laya` de ggmlc v0.9.7; no es desplegable en llama.cpp, Ollama, vLLM ni TGI.
-- Los conjuntos de regresion se usaron durante el desarrollo y no son tests finales independientes.
-- No se incluyen ejemplos de entrenamiento/evaluacion en bruto, logs locales ni el modelo de enrutamiento separado de Vica.
-- Cobertura linguistica limitada a coreano e ingles; no hay datos sobre otros idiomas.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, se trata de un derivado modificado, no de una release oficial de Laya; deben conservarse `LICENSE` y `NOTICE`.
-- El repositorio registra cero descargas y cero likes, sin validacion externa por parte de la comunidad.
+- No es un modelo generativo: no puede usarse para generación de texto libre, chat, tool calling ni razonamiento multi-paso.
+- Solo la tarea `done` se emplea en producción dentro de Vica; `check` y `locate` quedan por debajo de Jev (176/239 frente a 230/239 y 56/82 frente a 71/82) y no se usan.
+- El objetivo del 85 % de precisión no se alcanzó, según el propio autor.
+- Las etiquetas de entrenamiento fueron generadas por Claude y verificadas por otra instancia de Claude, no por anotadores humanos, lo que puede propagar sesgos y errores del modelo supervisor.
+- El modelo parte de 2026.11.06.1, no de 2026.11.08.1, por lo que no incluye el aprendizaje de grafo de conocimiento y resumen de investigación; la precisión en esos datos no se midió.
+- El modelo está orientado principalmente al coreano; el soporte de inglés existe pero no se detalla su rendimiento.
+- El binario de macOS no está notarizado y Gatekeeper puede bloquear la descarga hasta que se permita manualmente.
+- Los binarios x86_64 requieren AVX2, FMA y BMI2, lo que excluye CPUs anteriores a 2013-2015.
+- El runtime es específico (`vica-laya`, basado en ggmlc) y no es compatible con llama.cpp ni Ollama; el texto de ayuda integrado conserva la redacción del proyecto upstream.
+- Licencia apache-2.0: permite uso comercial, pero debe verificarse la licencia del modelo base `convaiinnovations/laya-multilingual`, no detallada en la información disponible.
+- Riesgo de alucinación en el sentido de clasificaciones erróneas: el autor documenta fallos en `check` y `locate`, por lo que no debe usarse como única señal de validación en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tory-labs/vica-laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
-- Revision del modelo base: https://huggingface.co/convaiinnovations/laya-multilingual/blob/1720e3e3357cfe1e281542e223f8273b0890ca34/README.md
-- Runtime ggmlc v0.9.7: https://github.com/monatis/ggmlc/releases/tag/v0.9.7
-- Repositorio ggmlc: https://github.com/monatis/ggmlc
+- Repositorio del runner: https://github.com/su-record/vica-laya
+- ggmlc v0.9.7 (dependencia del runtime): https://github.com/monatis/ggmlc/tree/5490a13661d95add025ec1b111adbc88234a9b4f
+- Registros del experimento de juicio directo: `experiments/direct-judgment/` dentro del repositorio del modelo (resultados agregados en `results-20261112.json`, `results-round2.json` y `results-round3.json`)
+- Evaluación del release: `evaluation.json` en el repositorio del modelo
+- Taxonomía de noticias: `topic-questions.json` en el repositorio del modelo
+- Ejemplo de estado y petición: `example-state.json` y `example-request.jsonl` en el repositorio del modelo

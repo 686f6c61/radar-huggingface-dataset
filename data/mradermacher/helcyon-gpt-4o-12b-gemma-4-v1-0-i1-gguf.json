@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Helcyon-GPT-4o-12b-Gemma-4-v1.0-i1-GGUF",
   "created_at": "2026-11-05T03:53:10.000Z",
-  "updated_at": "2026-11-05T06:17:01.000Z",
+  "updated_at": "2026-11-20T10:55:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3799,
+  "downloads_30d": 3813,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

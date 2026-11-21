@@ -2,74 +2,87 @@
 
 ## Resumen
 
-`pcskinandblood` es un reloj epigenético (aging clock) basado en metilación de ADN, desarrollado por el grupo de Higgins-Chen et al. y publicado en *Nature Aging* en 2022. El modelo predice la edad cronológica de un individuo a partir de los niveles de metilación en muestras de piel, sangre total y fibroblastos cultivados. Se trata de una regresión con elastic net aplicada sobre componentes principales (PCA) de los datos de metilación, una arquitectura ligera y computacionalmente eficiente que no requiere GPU para su uso.
+`pyaging/pcskinandblood` es un reloj epigenético (aging clock) publicado en el ecosistema de la librería pyaging. No es un modelo de lenguaje ni una red neuronal profunda: es un estimador estadístico que predice la edad cronológica de un individuo a partir de datos de metilación del ADN, combinando un análisis de componentes principales (PCA) con una regresión elastic net. Fue entrenado para aproximar la puntuación del reloj original Horvath2 utilizando muestras de piel, sangre completa y fibroblastos cultivados de *Homo sapiens*.
 
-Su relevancia radica en que ofrece una versión simplificada y robusta del reloj de Horvath (versión 2), entrenada específicamente para tejidos accesibles en entornos clínicos y de investigación. Al estar integrado en la librería `pyaging`, permite a los investigadores calcular la edad epigenética con una sola línea de código, facilitando estudios longitudinales, ensayos clínicos y monitorización de intervenciones antienvejecimiento. El modelo está disponible bajo licencia BSD-3-Clause, lo que permite uso comercial y académico sin restricciones significativas.
+El modelo se enmarca en la línea de trabajo de Higgins-Chen et al. (2022), publicada en *Nature Aging*, que propone soluciones computacionales para mejorar la fiabilidad de los relojes epigenéticos en ensayos clínicos y seguimiento longitudinal. La relevancia actual del modelo radica en que los relojes de primera generación presentan una fiabilidad test-retest limitada; esta variante basada en PCA actúa como proxy del reloj de referencia, reduciendo dimensionalidad y ruido técnico.
+
+El repositorio ocupa 0,4 GB y acumula 754 descargas, con licencia MIT para el software, aunque los pesos conservan los términos de los autores originales. La ficha se limita a lo documentado en la model card y en la información de Hugging Face, ya que no se han publicado detalles adicionales sobre el conjunto de entrenamiento ni métricas de rendimiento.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | PCA + elastic net regression |
-| Parametros totales | no disponible (modelo de regresión sobre componentes principales, no es una red neuronal) |
-| Parametros activos | no aplica |
-| Longitud de contexto | no aplica (no es un modelo de lenguaje) |
-| Tipos de cuantizacion | no aplica |
-| Idiomas soportados | no aplica |
-| Licencia | BSD-3-Clause |
-| Formato de pesos | no disponible (probablemente serialización interna de `pyaging`, no safetensors ni GGUF) |
+| Arquitectura | PCA + regresión elastic net |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de secuencia) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible (no procesa lenguaje natural) |
+| Licencia | MIT (el software); los pesos conservan los términos de los autores originales |
+| Formato de pesos | no disponible (integrado en pyaging; repositorio de 0,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza una pipeline de dos etapas: primero se aplica un análisis de componentes principales (PCA) sobre las medidas de metilación de ADN (probablemente en sitios CpG específicos), y posteriormente se entrena una regresión con regularización elastic net sobre los componentes principales resultantes. Esta combinación reduce la dimensionalidad y selecciona características relevantes para la predicción de la edad.
+El modelo es un pipeline de dos etapas sobre datos de metilación del ADN: primero reduce la dimensionalidad de las señales de metilación mediante análisis de componentes principales y, a continuación, aplica una regresión elastic net sobre esas componentes para predecir la edad cronológica. Esta combinación de PCA y regularización L1/L2 es habitual en relojes epigenéticos que buscan estabilidad frente al ruido técnico y a la colinealidad entre sitios CpG.
 
-Según la model card, el modelo fue entrenado contra el score del reloj de Horvath original (versión 2) utilizando datasets de piel, sangre total y fibroblastos cultivados. No se proporcionan detalles sobre el número de muestras, la cobertura de CpG ni el proceso de validación. El año de creación indicado es 2022, coincidiendo con la publicación del artículo de Higgins-Chen et al. que describe una solución computacional para mejorar la fiabilidad de los relojes epigenéticos.
+El entrenamiento se realizó contra la puntuación del reloj original Horvath2, utilizando conjuntos de datos de piel, sangre completa y fibroblastos cultivados. La model card no especifica el número de muestras, la composición exacta del dataset ni si se aplicaron procedimientos adicionales de validación cruzada o ajuste. El año de referencia indicado es 2022, coincidiendo con la publicación de Higgins-Chen et al. en *Nature Aging*. No se documentan innovaciones como decodificación especulativa, atención lineal ni mecanismos de RLHF/DPO, ya que no son aplicables a este tipo de estimador.
 
 ## Capacidades
 
-- Predicción de edad cronológica a partir de datos de metilación de ADN.
-- Funciona en tres tipos de tejido: piel, sangre total y fibroblastos cultivados.
-- Modelo de regresión continua, devuelve una estimación numérica de la edad (en años).
-- Integración sencilla con la librería `pyaging` mediante la función `predict_age`.
-- Diseñado para ser computacionalmente ligero: no requiere GPU, solo datos de metilación procesados.
-- No es un modelo generativo ni de lenguaje; no soporta tool calling, agentes ni razonamiento multilingüe.
+- Predicción de edad cronológica a partir de perfiles de metilación del ADN en *Homo sapiens*.
+- Funciona sobre tres tipos de tejido: piel, sangre completa y fibroblastos cultivados.
+- Actúa como proxy del reloj Horvath2, aproximando su puntuación mediante PCA y elastic net.
+- Integración directa con la librería pyaging mediante `pya.pred.predict_age(adata, ["pcskinandblood"])`.
+- Diseñado para escenarios de fiabilidad mejorada en ensayos clínicos y seguimiento longitudinal, según la motivación del paper de referencia.
+- No soporta tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingües, al no ser un modelo de lenguaje.
+- No procesa visión, audio ni texto libre.
 
 ## Casos de uso
 
-- Investigación en envejecimiento: permite estimar la edad biológica a partir de muestras de sangre o piel en estudios observacionales y de intervención.
-- Ensayos clínicos de terapias antienvejecimiento: sirve como biomarcador de eficacia, comparando la edad epigenética antes y después del tratamiento.
-- Monitorización longitudinal de pacientes: al ser un modelo ligero, puede ejecutarse en entornos clínicos con recursos limitados, procesando múltiples muestras de un mismo individuo a lo largo del tiempo.
-- Validación de otros relojes epigenéticos: al estar entrenado contra el score de Horvath2, puede usarse como referencia para comparar nuevas versiones o relojes alternativos.
-- Análisis de datos de metilación en biobancos: se puede aplicar a grandes cohortes para estudiar asociaciones entre edad epigenética y enfermedades relacionadas con la edad.
-- Educación y formación en bioinformática: sirve como ejemplo didáctico de un modelo de regresión aplicado a datos ómicos, fácil de ejecutar en notebooks.
+- **Estimación de edad biológica en estudios de envejecimiento**: el modelo se aplica a matrices de metilación de sangre completa para obtener una predicción de edad cronológica que sirva como referencia en análisis de edad epigenética acelerada.
+- **Seguimiento longitudinal en ensayos clínicos**: la motivación del paper de referencia es mejorar la fiabilidad test-retest; el modelo puede emplearse para medir cambios de edad epigenética en pacientes a lo largo del tiempo con menor ruido técnico.
+- **Investigación en fibroblastos cultivados**: permite estimar la edad de líneas celulares de fibroblastos en experimentos de reprogramación o senescencia, usando el proxy del reloj Horvath2.
+- **Estudios dermatológicos sobre piel**: al incluir tejido cutáneo en el entrenamiento, es adecuado para analizar envejecimiento cutáneo en cohortes con biopsias de piel.
+- **Armonización de cohorts multi-tejido**: al cubrir piel, sangre y fibroblastos, facilita comparaciones de edad epigenética entre estudios que emplean distintos tejidos, siempre dentro del dominio de entrenamiento.
+- **Integración en pipelines bioinformáticos con pyaging**: se puede encadenar con otros relojes del catálogo de pyaging para comparar predicciones y evaluar la robustez de los resultados en un mismo conjunto de datos.
+- **Filtrado y control de calidad en datos de metilación**: la predicción puede usarse como variable de control para detectar muestras atípicas o lotes problemáticos en estudios epigenómicos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de rendimiento como correlación con la edad real, error absoluto medio (MAE) ni comparaciones con otros relojes. Para obtener datos de rendimiento, sería necesario consultar el artículo original de Higgins-Chen et al. (2022) o ejecutar el modelo sobre conjuntos de datos de metilación públicos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de regresión con PCA + elastic net, los requisitos de hardware son mínimos.
-- No requiere GPU; puede ejecutarse en CPU de cualquier ordenador moderno.
-- La memoria RAM necesaria es reducida (probablemente menos de 1 GB, ya que el tamaño del repositorio es de 0.1 GB).
-- No se dispone de datos de latencia o throughput, pero al ser un modelo de inferencia directa sobre un vector de metilación, la predicción es prácticamente instantánea.
-- Opciones de despliegue: se integra en la librería `pyaging` de Python, por lo que puede usarse en entornos Jupyter, scripts o pipelines de análisis de datos. No está diseñado para servir como API REST ni para uso con vLLM, llama.cpp u otras herramientas de inferencia de LLM.
+- **VRAM estimada para inferencia**: no aplica; el modelo no requiere GPU para inferencia en el sentido habitual. Es un estimador estadístico sobre componentes principales y coeficientes de elastic net.
+- **GPU recomendadas**: no disponibles; el cálculo puede ejecutarse en CPU.
+- **Compatibilidad con GPU de consumo**: no relevante; el cuello de botella es el preprocesado de datos de metilación, no el modelo.
+- **Opciones de despliegue**: librería pyaging (Python), invocable mediante `pya.pred.predict_age`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables.
+- **Latencia y throughput estimados**: no disponibles. El repositorio ocupa 0,4 GB, lo que sugiere que los pesos y artefactos asociados son ligeros en comparación con modelos neuronales.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente en la ficha para realizar una comparativa cuantitativa con otros relojes epigenéticos. Existen alternativas conocidas como el reloj de Horvath (versión original), el reloj de Hannum o el PhenoAge, pero no se han proporcionado datos de rendimiento, contexto ni licencias de estos modelos en la información disponible. Por tanto, la comparativa se limita a señalar que `pcskinandblood` se centra en tejidos específicos (piel, sangre, fibroblastos) y que su arquitectura PCA + elastic net es más simple que otras basadas en redes neuronales, lo que facilita su interpretabilidad y despliegue.
+| Modelo | Tipo | Tejidos | Predice | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pcskinandblood | PCA + elastic net | piel, sangre, fibroblastos | edad cronológica (proxy Horvath2) | MIT (software); pesos con términos originales | Hugging Face, pyaging |
+| Horvath2 (reloj original) | Reloj epigenético de referencia | múltiples tejidos | edad cronológica | no disponible | no disponible en la información proporcionada |
+| Otros relojes del catálogo pyaging | diversos (elastic net, PCA, etc.) | variable | edad cronológica o fenotípica | variable | Catálogo pyaging |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo solo está entrenado para tres tipos de tejido (piel, sangre y fibroblastos); su aplicación a otros tejidos puede producir predicciones poco fiables.
-- La predicción se basa en datos de metilación de ADN, que requieren un preprocesamiento adecuado (normalización, control de calidad) para obtener resultados válidos.
-- No se han publicado métricas de precisión ni validación externa en la model card; es necesario revisar el artículo original para conocer su rendimiento real.
-- Al ser un modelo de regresión lineal con regularización, puede no capturar relaciones no lineales complejas entre la metilación y la edad.
-- La licencia BSD-3-Clause permite uso comercial, pero se recomienda citar la publicación original en cualquier trabajo derivado.
-- No se dispone de información sobre sesgos demográficos (edad, sexo, etnia) en los datos de entrenamiento; podría existir un sesgo hacia las poblaciones de los datasets originales.
+- **Ámbito restringido a tres tejidos**: solo es válido para piel, sangre completa y fibroblastos cultivados; su uso en otros tejidos no está respaldado por el entrenamiento documentado.
+- **Especie única**: entrenado exclusivamente para *Homo sapiens*; no debe aplicarse a otras especies.
+- **Dependencia del reloj Horvath2**: al ser un proxy, hereda las limitaciones y sesgos del reloj de referencia contra el que fue entrenado.
+- **Sin métricas publicadas**: no se han documentado MAE, correlación ni fiabilidad test-retest en la información disponible, lo que dificulta evaluar su precisión real.
+- **Riesgo de alucinación**: no aplica en el sentido de modelos generativos, pero existe riesgo de predicciones sesgadas si los datos de entrada se salen de la distribución de entrenamiento.
+- **Sesgos poblacionales**: no se documenta la composición demográfica del conjunto de entrenamiento, por lo que se desconoce si el modelo generaliza a todas las poblaciones.
+- **Licencia de los pesos**: aunque el software es MIT, los pesos conservan los términos de los autores originales; es necesario revisarlos antes de un uso comercial.
+- **Sin soporte de texto ni lenguaje**: no debe confundirse con un modelo de lenguaje; no procesa prompts, instrucciones ni documentos.
+- **Preprocesado crítico**: la calidad de la predicción depende del pipeline de normalización de metilación y de la selección de CpG, que no se detalla en la model card.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/pyaging/pcskinandblood
-- Publicación original (Nature Aging, 2022): https://doi.org/10.1038/s43587-022-00248-2
-- Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
+- [Hugging Face: pyaging/pcskinandblood](https://huggingface.co/pyaging/pcskinandblood)
+- [Catálogo de relojes de pyaging](https://pyaging.readthedocs.io)
+- [Paper de referencia: Higgins-Chen et al., Nature Aging 2022](https://doi.org/10.1038/s43587-022-00248-2)

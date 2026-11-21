@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/ishiki-asr-0.5-GGUF",
   "created_at": "2026-11-18T06:00:06.000Z",
-  "updated_at": "2026-11-18T06:15:20.000Z",
+  "updated_at": "2026-11-20T11:20:43.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

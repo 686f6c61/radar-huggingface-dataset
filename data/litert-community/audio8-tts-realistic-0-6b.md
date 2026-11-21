@@ -2,96 +2,98 @@
 
 ## Resumen
 
-Audio8-TTS-Realistic-0.6b es un modelo de síntesis de voz (text-to-speech) con clonación de voz zero-shot desarrollado por Edge0, distribuido aquí en formato LiteRT por la comunidad litert-community para su ejecución íntegra en dispositivo (on-device). El modelo base es `Edge0/Audio8-TTS-Realistic-0.6b`, construido sobre Audio8-TTS-Preview-0.6b, y esta conversión emplea litert-torch 0.9.4 y ai-edge-quantizer 0.9.0 sobre LiteRT 2.2.0. Su relevancia actual radica en que permite generar voz de alta calidad a 44,1 kHz en teléfonos Android sin conexión a red, con factores de tiempo real por debajo de 1.
+Audio8-TTS-Realistic-0.6b es una conversión a LiteRT del modelo de síntesis de voz `Edge0/Audio8-TTS-Realistic-Air`, publicada por la comunidad `litert-community`. El modelo original, desarrollado por Edge0, es un sistema de text-to-speech de 0,6 mil millones de parámetros que soporta 23 idiomas y clonación de voz zero-shot a partir de una grabación de referencia y su transcripción exacta. Esta versión LiteRT empaqueta el modelo en cinco grafos TFLite optimizados para ejecución en dispositivo (on-device), con cuantización int8 en los grafos autorregresivos, y se distribuye junto con una aplicación Android de ejemplo y un bucle de inferencia en Python para escritorio.
 
-La arquitectura es un diseño DualAR inspirado en Fish Audio S2 Pro: un transformer "lento" de 24 capas predice un token semántico por trama de audio (2.048 muestras, 46 ms), un transformer "rápido" de 4 capas predice los 10 codebooks del códec uno a uno, y un códec neuronal convierte las tramas en audio. El nombre indica 0,6 mil millones de parámetros, y el modelo cubre 23 idiomas, incluidos chino, inglés, japonés, coreano, español, alemán, francés, árabe, hindi y cantonés.
+La relevancia de esta ficha radica en que traslada un TTS multilingüe con clonación de voz a hardware móvil de consumo: según la model card, un Pixel 11 Pro sintetiza una frase de 18 tokens en inglés (5,48 s de audio) con un factor de tiempo real de 0,853, y un Galaxy S26 con 0,797. Un factor inferior a 1 significa que el audio está listo antes de que termine de reproducirse, lo que habilita aplicaciones de voz interactivas sin conexión a servidores.
 
-El repositorio incluye cinco grafos LiteRT (AR lento, AR rápido, decodificador de códec en dos ventanas y codificador de códec), el tokenizador original, dos voces de referencia, un bucle anfitrión en Python para escritorio y una app de ejemplo para Android. La licencia es Apache 2.0 para los pesos y el modelo, con el código de la app Android bajo MIT.
+El modelo base emplea un diseño DualAR inspirado en Fish Audio S2 Pro: un transformer lento de 24 capas que predice un token semántico por trama de audio (2.048 muestras, 46 ms a 44,1 kHz), un transformer rápido de 4 capas que predice los 10 codebooks del códec trama a trama, y un códec neuronal que convierte las tramas en audio. La licencia es Apache 2.0 y el repositorio ocupa 2,1 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | DualAR (transformer autorregresivo lento de 24 capas + transformer rápido de 4 capas + códec neuronal), inspirada en Fish Audio S2 Pro |
-| Parámetros totales | 0,6 mil millones (aprox., según nombre del modelo; no se detalla desglose exacto) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1.024 posiciones de KV cache en el AR lento; hasta 256 posiciones de prompt por llamada (firma `prefill_256`); máximo 512 tramas de audio generadas |
-| Tipos de cuantización | Pesos int8 dinámicos por canal + tablas de embedding int8 (grafos AR); pesos float16 (decodificador y codificador de códec) |
+| Arquitectura | DualAR (transformer lento de 24 capas + transformer rápido de 4 capas + códec neuronal) |
+| Parametros totales | 0,6 mil millones (aproximado, según nombre del modelo) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el prompt se prellena en trozos de 256 posiciones, con un último trozo de hasta 64) |
+| Tipos de cuantizacion | int8 con activaciones float (dynamic-range quantization) en los dos grafos autorregresivos; códec en TFLite |
 | Idiomas soportados | 23: zh, en, ja, ko, de, fr, es, it, ru, ar, fi, hi, id, ms, nl, no, pl, pt, sv, th, tr, vi, yue |
-| Licencia | Apache 2.0 (pesos y modelo); MIT para el código de la app Android |
-| Formato de pesos | TFLite (LiteRT); tokenizador en `tokenizer.json` (Qwen2 BPE) |
+| Licencia | Apache 2.0 (la app Android de ejemplo tiene licencia MIT) |
+| Formato de pesos | TFLite (LiteRT); cinco grafos: slow AR, fast AR, decodificador de códec en dos tamaños de ventana y codificador de códec |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un esquema DualAR en el que dos transformadores autorregresivos colaboran jerárquicamente. El AR lento, de 24 capas, consume el texto tokenizado y predice un token semántico por trama de audio de 2.048 muestras (46 ms a 44,1 kHz); su KV cache abarca 1.024 posiciones y devuelve 4.097 logits (4.096 tokens semánticos más el token de fin de habla) junto con el estado oculto que alimenta al AR rápido. Este último, de 4 capas y con una KV cache de 10 posiciones, se invoca 10 veces por trama para predecir secuencialmente los 10 codebooks del códec: la posición 0 recibe el estado oculto del AR lento y las posiciones 1 a 9 el token del codebook anterior. Finalmente, un códec neuronal (decodificador y codificador) transforma las tramas en audio de 44,1 kHz.
+El modelo sigue un diseño DualAR. Un transformer lento de 24 capas predice un token semántico por cada trama de audio de 2.048 muestras (46 ms a 44,1 kHz). Un transformer rápido de 4 capas predice, para cada trama, los 10 codebooks del códec uno a uno. Finalmente, un códec neuronal transforma las tramas en audio. La conversión a LiteRT se realizó con litert-torch 0.9.4 y ai-edge-quantizer 0.9.0 para LiteRT 2.2.0, y cuantiza los dos grafos autorregresivos a pesos int8 con activaciones float.
 
-La conversión a LiteRT aplica cuantización dinámica int8 por canal a los pesos de ambos grafos AR (con tablas de embedding int8) y mantiene float16 en el códec. El decodificador del códec se reescribió específicamente para GPUs móviles y se ofrece en dos ventanas (128 tramas / 5,9 s y 192 tramas / 8,9 s). El codificador procesa hasta 10,03 s de audio a 44,1 kHz para producir 10 × 216 códigos, lo que permite registrar una voz de referencia. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la documentación proporcionada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada. La model card del modelo base indica que soporta clonación de voz zero-shot a partir de una grabación de referencia y su transcripción, o síntesis sin referencia. La transcripción debe coincidir exactamente con la grabación de referencia. En la app Android, los dos grafos autorregresivos corren en CPU con 4 hilos; el grafo lento actualiza su caché KV in situ y prellena el prompt en trozos de 256 posiciones, con un último trozo de hasta 64 posiciones mediante `prefill_64`. El decodificador de códec corre en GPU cuando la correlación con la salida de CPU es igual o superior a 0,99; en caso contrario, cae a CPU.
 
 ## Capacidades
 
-- Síntesis de voz de alta fidelidad a 44,1 kHz con generación de audio natural.
-- Clonación de voz zero-shot a partir de una grabación de referencia de hasta 10 s y su transcripción exacta.
-- Síntesis sin voz de referencia (modo sin referencia).
-- Multilingüe: 23 idiomas, incluidos español, inglés, chino, japonés, coreano, árabe, hindi y cantonés.
-- Ejecución completamente on-device en Android mediante LiteRT 2.2.0 (CompiledModel API) y en escritorio mediante el intérprete ai-edge-litert.
-- Muestreo configurable: temperatura 0,7, top-p 0,9, top-k 50 por defecto (configuración del repositorio fuente), con redibujado consciente de repeticiones del proveedor.
-- Control de longitud: hasta 512 tramas de audio y hasta 49 tokens de texto por frase en la app Android.
-- Aceleración opcional por GPU para el decodificador del códec, con verificación de correlación (≥ 0,99) frente a CPU y fallback automático.
-- No se documenta soporte de tool calling, function calling, agentes, visión ni audio de entrada más allá de la referencia de voz.
+- Síntesis de voz multilingüe en 23 idiomas, incluidos chino, inglés, japonés, coreano, alemán, francés, español, italiano, ruso, árabe, finlandés, hindi, indonesio, malayo, neerlandés, noruego, polaco, portugués, sueco, tailandés, turco, vietnamita y cantonés.
+- Clonación de voz zero-shot a partir de una grabación de referencia de hasta 10 segundos y su transcripción exacta.
+- Síntesis sin voz de referencia, usando una voz por defecto.
+- Ejecución completamente on-device en Android (Pixel 11 Pro, Galaxy S26) y en escritorio mediante un bucle Python con ai-edge-litert.
+- Control de muestreo configurable: temperatura (por defecto 0,7), top-p (0,9), top-k (50), máximo de 512 tramas y semilla.
+- Redibujado consciente de repeticiones (repetition-aware re-draw) heredado del repositorio original.
+- No se documentan capacidades de tool calling, agentes, visión, audio de entrada o modo de razonamiento; es un modelo exclusivamente de texto a voz.
 
 ## Casos de uso
 
-- **Lectura de contenido en aplicaciones móviles sin conexión**: el modelo puede narrar artículos, noticias o libros electrónicos íntegramente en el dispositivo, sin enviar texto a servidores, gracias a sus grafos LiteRT y a un factor de tiempo real inferior a 1 en Pixel 11 Pro (0,884) y Galaxy S26 (0,725).
-- **Asistentes de voz personalizados**: integrado en un asistente Android, permite respuestas habladas en 23 idiomas y con la voz del propio usuario mediante clonación zero-shot a partir de una grabación de 10 s, manteniendo la privacidad al no salir el audio del terminal.
-- **Accesibilidad para personas con discapacidad visual o del habla**: la clonación de voz permite a usuarios con trastornos del habla generar una voz sintética a partir de una muestra corta, y la síntesis multilingüe facilita la lectura de pantalla en el idioma preferido del usuario.
-- **Localización de aplicaciones y contenido multimedia**: generación de voces en español, inglés, japonés y otros 20 idiomas para doblaje de tutoriales, audiolibros o interfaces de producto, con la ventaja de ejecutarse en el propio dispositivo de desarrollo o de prueba.
-- **Prototipado de interfaces conversacionales**: desarrolladores que necesitan validar flujos de voz en Android pueden usar la app de ejemplo y el bucle Python para iterar rápidamente sin depender de APIs en la nube ni de costes por petición.
-- **Sistemas de navegación y avisos en vehículos o dispositivos embebidos**: la baja latencia (RTF < 1) y la ejecución local permiten anuncios de navegación y alertas habladas en tiempo real sin conectividad, con voces adaptadas al idioma del conductor.
-- **Investigación en TTS on-device**: el repositorio expone los grafos por separado (AR lento, AR rápido, códec) y un bucle anfitrión configurable, lo que facilita experimentar con muestreo, cuantización y aceleración GPU/CPU en entornos de investigación.
+- Asistentes de voz sin conexión en Android: la app de ejemplo sintetiza frases de hasta 49 tokens con un factor de tiempo real inferior a 1 en Pixel 11 Pro y Galaxy S26, lo que permite respuestas habladas interactivas sin enviar audio a un servidor.
+- Lectura de notificaciones y accesibilidad: el modelo puede leer texto en 23 idiomas en el propio dispositivo, útil para usuarios con discapacidad visual o para interfaces manos libres.
+- Clonación de voz personal: la app permite grabar 10 segundos de voz y usar esa voz para sintetizar texto nuevo, con la transcripción exacta de la grabación como referencia.
+- Audiolibros y contenido narrado en escritorio: el bucle Python permite generar WAV por lotes con una voz clonada o por defecto, adecuado para preproducción de narraciones.
+- Localización de contenidos de voz: al soportar 23 idiomas, se puede reutilizar una misma voz de referencia para generar locuciones en varios idiomas, aunque con las limitaciones de idioma cruzado indicadas más abajo.
+- Prototipado de interfaces conversacionales: al ejecutarse en CPU con 4 hilos y con grafos TFLite, se integra en apps Kotlin mediante la API CompiledModel de LiteRT 2.2.0 sin depender de infraestructura cloud.
+- Generación de avisos y mensajes dinámicos en dispositivos empotrados: el modelo cabe en un repositorio de 2,1 GB y usa una caché de pesos empaquetados de unos 365 MB en los teléfonos probados, lo que facilita su despliegue en móviles de gama alta.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos de rendimiento publicados en la información disponible son medidas de factor de tiempo real (RTF) en dispositivos Android:
+| Prueba | Pixel 11 Pro | Galaxy S26 |
+|---|---|---|
+| Frase de 18 tokens en inglés (5,48 s de audio) | RTF 0,853 | — |
+| Frase de 18 tokens en inglés (6,36 s de audio) | — | RTF 0,797 |
+| Medición | mediana de 6 ejecuciones (2026-11-03) | mediana de 6 ejecuciones (2026-11-03) |
+| Memoria residente pico (Apple M4 Max, ai-edge-litert 2.2.0, 4 frases) | 2.074,7 MiB con `prefill_64`; 1.670,6 MiB sin él | no disponible |
+| Caché de pesos empaquetados (XNNPACK) | 365.205.496 bytes | 365.259.896 bytes |
 
-| Dispositivo | Frase | Duración de audio | RTF (mediana de 6 ejecuciones) |
-|---|---|---|---|
-| Pixel 11 Pro | 18 tokens en inglés | 5,48 s | 0,884 |
-| Galaxy S26 | 18 tokens en inglés | 6,36 s | 0,725 |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, dado que se trata de un modelo de síntesis de voz y no de un modelo de lenguaje general.
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM/RAM estimada para inferencia**: el repositorio ocupa 1,6 GB; los grafos AR int8 suman aproximadamente 620 MB y el decodificador float16 unos 262 MB, por lo que se necesita del orden de 1 a 1,5 GB de memoria para cargar el conjunto completo en CPU.
-- **GPU recomendadas**: no se especifican GPU de escritorio; el decodificador del códec puede ejecutarse en GPU móvil (verificado en Pixel 11 Pro y Galaxy S26). En escritorio, el bucle Python usa el intérprete ai-edge-litert en CPU con 4 hilos por defecto.
-- **Compatibilidad con GPU de consumo**: no se documenta soporte para GPU de consumo tipo RTX 4090; el diseño está orientado a CPU y GPU móvil.
-- **Opciones de despliegue**: LiteRT 2.2.0 (CompiledModel API en Android), ai-edge-litert Interpreter en Python de escritorio, app Android de ejemplo en Kotlin. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato.
-- **Latencia y throughput**: RTF de 0,884 en Pixel 11 Pro y 0,725 en Galaxy S26, es decir, la síntesis termina antes de que el audio hablado habría finalizado su reproducción. El AR lento actualiza su KV cache in situ y ambos grafos AR corren en CPU con 4 hilos.
+- VRAM estimada: no disponible; el modelo está pensado para ejecución en CPU con pesos int8 y no se documentan requisitos de VRAM para GPU.
+- GPU recomendadas: no se especifican modelos de GPU de escritorio; en Android el decodificador de códec puede ejecutarse en GPU del teléfono.
+- Cabe en GPU de consumo: no disponible como dato explícito; el despliegue documentado es CPU en móvil y CPU en escritorio.
+- Memoria: en Apple M4 Max, la generación de cuatro frases de prueba alcanzó un pico de 2.074,7 MiB de memoria residente con la firma `prefill_64`.
+- Opciones de despliegue: LiteRT (ai-edge-litert) en Python para escritorio; LiteRT 2.2.0 CompiledModel API en Android; no se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: RTF de 0,853 en Pixel 11 Pro y 0,797 en Galaxy S26 para una frase de 18 tokens en inglés, con 4 hilos de CPU en los grafos autorregresivos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A modo orientativo, se puede contrastar con otras familias de TTS on-device, pero sin cifras verificadas en esta ficha:
-
-| Modelo | Parámetros | Contexto / límite | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Idiomas | Clonación de voz | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| Audio8-TTS-Realistic-0.6b (LiteRT) | ~0,6 B | 512 tramas de audio, 1.024 posiciones KV | 23 | Apache 2.0 | TFLite |
-| Alternativas de TTS on-device | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Audio8-TTS-Realistic-0.6b (LiteRT) | 0,6 mil millones (aprox.) | 23 | Zero-shot con referencia y transcripción | Apache 2.0 | LiteRT on-device (Android, escritorio) |
+| Edge0/Audio8-TTS-Realistic-Air | 0,6 mil millones (aprox.) | 23 | Zero-shot con referencia y transcripción | no disponible en la información | Repositorio original, no LiteRT |
+| Fish Audio S2 Pro | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La información disponible solo permite comparar con el modelo base del que deriva esta conversión. No se dispone de datos de benchmarks ni de especificaciones de Fish Audio S2 Pro más allá de la inspiración arquitectónica citada en la model card.
 
 ## Limitaciones y advertencias
 
-- **Riesgo de uso indebido de la clonación de voz**: la capacidad zero-shot permite imitar voces con una muestra de 10 s; es necesario obtener consentimiento explícito y cumplir la normativa aplicable sobre suplantación de identidad y deepfakes.
-- **Sesgos y cobertura lingüística desigual**: aunque se declaran 23 idiomas, no se documenta el volumen de datos por idioma ni la calidad relativa; el español y otras lenguas pueden tener un rendimiento inferior al inglés o al chino.
-- **Riesgo de alucinación acústica**: como todo modelo generativo, puede producir pronunciaciones incorrectas, omisiones o artefactos en textos largos, nombres propios o dominios especializados; se recomienda validación humana en producción.
-- **Límites de longitud**: la app Android admite frases de hasta 49 tokens y el modelo genera como máximo 512 tramas; el decodificador trabaja en ventanas de 128 o 192 tramas, lo que puede requerir segmentación para audios largos.
-- **Dependencia de la transcripción de referencia**: la calidad de la clonación depende de que la transcripción de la muestra sea exacta; errores en ella degradan el resultado.
-- **Restricciones de licencia**: los pesos y el modelo son Apache 2.0 (uso comercial permitido con atribución), pero el código de la app Android es MIT; conviene revisar las licencias de las voces de referencia incluidas (la voz inglesa es CC BY 4.0).
-- **Madurez del ecosistema**: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la fecha de creación es 2026-11-02, por lo que la comunidad y el soporte son aún incipientes.
-- **Dependencia de versiones concretas**: la conversión requiere LiteRT 2.2.0, litert-torch 0.9.4 y ai-edge-quantizer 0.9.0; cambios de versión pueden romper la compatibilidad de los grafos.
+- La transcripción de la grabación de referencia debe coincidir exactamente con el audio; cualquier discrepancia puede degradar la clonación.
+- La model card advierte sobre el caso de una voz clonada que habla en un idioma distinto al de su grabación de referencia; se remite a la sección de limitaciones del modelo base, no incluida en la información disponible.
+- No se documentan sesgos conocidos, tasas de alucinación ni evaluación de calidad subjetiva (MOS) en la información proporcionada.
+- El contexto de prompt se prellena en trozos de 256 posiciones con un último trozo de hasta 64; no se especifica la longitud máxima de texto de entrada, aunque la app Android limita las frases a 49 tokens.
+- El rendimiento medido se limita a dos teléfonos de gama alta (Pixel 11 Pro y Galaxy S26) con frases en inglés; no hay datos de latencia para otros idiomas ni para hardware de gama media.
+- La licencia Apache 2.0 permite uso comercial, pero la app Android de ejemplo se distribuye bajo MIT; conviene revisar ambas licencias por separado.
+- El modelo es exclusivamente de texto a voz: no soporta tool calling, agentes, visión ni audio de entrada.
+- El repositorio ocupa 2,1 GB y la caché de pesos empaquetados ronda los 365 MB en los dispositivos probados, lo que requiere espacio de almacenamiento considerable en móvil.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b
-- Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
-- App Android de ejemplo: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/tree/main/android
-- Instrucciones de compilación Android: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/blob/main/android/README.md
-- No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos más allá de los enlaces anteriores.
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b
+- Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air
+- App Android y README: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/tree/main/android
+- README de Android: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/blob/main/android/README.md
+- Licencia de la app Android: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/blob/main/android/LICENSE
+- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

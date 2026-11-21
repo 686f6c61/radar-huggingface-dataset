@@ -5,7 +5,7 @@
   "author": "keptn",
   "url": "https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-i8g",
   "created_at": "2026-10-24T10:28:56.000Z",
-  "updated_at": "2026-11-19T13:44:01.000Z",
+  "updated_at": "2026-11-20T08:58:38.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 185,
+  "downloads_30d": 203,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

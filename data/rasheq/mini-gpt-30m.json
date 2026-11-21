@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "rasheq/mini-gpt-30m",
+  "slug": "rasheq-mini-gpt-30m",
+  "author": "rasheq",
+  "url": "https://huggingface.co/rasheq/mini-gpt-30m",
+  "created_at": "2026-11-21T08:38:59.000Z",
+  "updated_at": "2026-11-21T08:47:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gpt",
+    "causal-lm",
+    "from-scratch",
+    "rope",
+    "swiglu",
+    "rmsnorm",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29893120,
+  "parameters_human": "29.9M",
+  "storage_bytes": 119577912,
+  "storage_human": "120 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text generation (zero-shot)",
+      "dataset": "BLiMP",
+      "metric": "accuracy",
+      "value": 76.05
+    },
+    {
+      "task": "Text generation (zero-shot)",
+      "dataset": "ARC-Easy",
+      "metric": "normalized accuracy",
+      "value": 39.9
+    },
+    {
+      "task": "Text generation (zero-shot)",
+      "dataset": "PIQA",
+      "metric": "normalized accuracy",
+      "value": 58.22
+    },
+    {
+      "task": "Text generation (zero-shot)",
+      "dataset": "HellaSwag",
+      "metric": "normalized accuracy",
+      "value": 27.91
+    },
+    {
+      "task": "Text generation (zero-shot)",
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "accuracy",
+      "value": 22.1
+    },
+    {
+      "task": "Text generation (zero-shot)",
+      "dataset": "WinoGrande",
+      "metric": "accuracy",
+      "value": 50.67
+    }
+  ],
+  "sources": []
+}

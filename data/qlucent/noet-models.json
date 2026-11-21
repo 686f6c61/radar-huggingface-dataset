@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "qlucent/noet-munshi",
+  "renamed_at": "2026-11-21T10:28:10.092Z",
   "benchmarks": [],
   "sources": []
 }

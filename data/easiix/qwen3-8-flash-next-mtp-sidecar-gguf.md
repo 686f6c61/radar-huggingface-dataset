@@ -2,95 +2,98 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje completo, sino un componente auxiliar: el *draft head* de predicción multi-token (MTP) del modelo Qwen/Qwen3.8-Flash-Next, exportado como un archivo GGUF independiente (sidecar) para su uso con decodificación especulativa en llama.cpp. El autor, EasiiX, lo publica porque las conversiones GGUF estándar del modelo base eliminan los pesos MTP, impidiendo aprovechar esta técnica de aceleración. El sidecar permite que llama.cpp genere varios tokens candidatos por paso, aumentando el *throughput* de inferencia sin pérdida de calidad a temperatura 0.
+Qwen3.8-Flash-Next-MTP-Sidecar-GGUF es un artefacto derivado publicado por el usuario EasiiX que extrae la cabeza de predicción multi-token (MTP, multi-token prediction) del checkpoint oficial Qwen/Qwen3.8-Flash-Next y la exporta como GGUF independiente para su uso como modelo borrador en decodificación especulativa con llama.cpp. No es un modelo generativo autónomo: es un sidecar de 3.878.549.248 parámetros (4,1 GB en Q8_0) que debe emparejarse con el modelo objetivo Qwen3.8-Flash-Next cuantizado (por ejemplo, UD-IQ3_XXS) para acelerar la inferencia.
 
-El modelo base Qwen3.8-Flash-Next es un MoE multimodal de 125 mil millones de parámetros con arquitectura Qwen4, contexto de 262K tokens y capacidades de razonamiento avanzado. El sidecar MTP, con 3.878.549.248 parámetros, se distribuye en formato GGUF cuantizado a Q8_0 (4,1 GB) y está pensado para entornos con memoria unificada como el AMD Strix Halo. La licencia es Qwen Community License 1.0, con cláusula Model-as-a-Service que debe revisarse antes de uso comercial.
+El problema que resuelve es concreto: los pesos MTP vienen incluidos en el checkpoint original de Qwen, pero las conversiones GGUF habituales los descartan, de modo que los usuarios de llama.cpp no pueden aprovechar la decodificación especulativa nativa del modelo. Este repositorio proporciona esos tensores ya convertidos y, además, incluye los tensores de hiperconexión (hc) que llama.cpp exige desde el PR upstream #28901.
+
+Su relevancia actual es práctica y acotada: está ajustado y medido sobre AMD Strix Halo (Ryzen AI MAX+ 395, gfx1151), un hardware de memoria unificada donde el ancho de banda es el cuello de botella. El autor reporta un incremento de decodificación del 50 % en código (de 23,5 a 35,7 t/s con ~85 % de aceptación) manteniendo la pérdida nula a temperatura 0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MTP draft head (multi-token prediction) para Qwen4 (qwen4exp) |
-| Parametros totales | 3.878.549.248 (sidecar; el modelo base tiene 125B) |
-| Parametros activos | No aplica (no es MoE, es un head denso) |
-| Longitud de contexto | No disponible (depende del modelo base, que soporta 262K) |
-| Tipos de cuantizacion | Q8_0 (archivo proporcionado); tambien se puede generar BF16 |
-| Idiomas soportados | No disponible (hereda del modelo base) |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Cabeza MTP (multi-token prediction) de Qwen3.8-Flash-Next, exportada como GGUF para decodificacion especulativa en llama.cpp |
+| Parametros totales | 3.878.549.248 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no aplicable al sidecar; el ejemplo de uso configura 32.768 tokens en el modelo objetivo y se reportan mediciones hasta 156K de profundidad de contexto |
+| Tipos de cuantizacion | Q8_0 (unico publicado); el procedimiento de conversion permite generar BF16 intermedio |
+| Idiomas soportados | no disponible |
+| Licencia | Qwen Community License 1.0 (etiquetada como `other`, `license_name: qwen-community-1.0`) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El sidecar contiene exclusivamente los pesos del *draft head* de predicción multi-token (MTP) del modelo Qwen3.8-Flash-Next. Este head, diseñado por el equipo Qwen, predice varios tokens futuros simultáneamente a partir de la representación interna del modelo base. Durante el entrenamiento del modelo base, el head MTP se optimiza junto con el transformer principal, pero en las conversiones GGUF convencionales se descarta. Este repositorio lo recupera y lo empaqueta como un archivo independiente.
+El sidecar contiene exclusivamente los tensores de la cabeza MTP del modelo base Qwen3.8-Flash-Next, un mecanismo de predicción multi-token que actúa como borrador interno: propone varios tokens candidatos que el modelo objetivo verifica en paralelo, aceptando el prefijo correcto y descartando el resto. En llama.cpp se integra mediante el tipo de especulación `draft-mtp` (soporte qwen4exp introducido en el PR #27742), y el diseño de la cabeza procede del equipo Qwen (PR #27739).
 
-El modelo base emplea una arquitectura híbrida GDN + QSA (según el repositorio oficial de Qwen), con mejoras en atención, residual, embedding y optimización. El sidecar no añade capacidades nuevas al modelo; su función es puramente aceleradora: en decodificación especulativa, el head MTP propone hasta 4 tokens candidatos por paso, que el modelo base verifica en paralelo. A temperatura 0, el proceso es lossless (sin pérdida de calidad). No se dispone de información sobre el dataset de entrenamiento del head MTP, ya que se entrena conjuntamente con el modelo base.
+No se ha publicado información sobre datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF/DPO para este artefacto, ya que no se ha entrenado de forma independiente: hereda los pesos del checkpoint oficial. La innovación técnica relevante es de empaquetado y compatibilidad. La versión vigente, `mtp-Qwen3.8-Flash-Next-hc-Q8_0.gguf`, incluye los tensores de hiperconexión (`output_hc_norm.weight` y similares) requeridos por llama.cpp desde el PR #28901; la versión anterior sin sufijo `-hc-` está deprecada desde el 19 de septiembre de 2026 y las builds actuales la rechazan con el error `check_tensor_dims: tensor 'output_hc_norm.weight' not found`. La conversión puede reproducirse con `convert_hf_to_gguf.py --remote --mtp`, que transmite únicamente los tensores MTP (unos 8 GB de tráfico).
 
 ## Capacidades
 
-- Decodificación especulativa: acelera la generación de texto al proponer múltiples tokens por paso, con una tasa de aceptación medida del 85% en tareas de código.
-- Compatibilidad con llama.cpp: requiere una rama específica con soporte para el MTP draft head de qwen4exp (la rama `strix-halo-qwen4exp` de Aristo94).
-- Integración con el modelo base Qwen3.8-Flash-Next: funciona como un complemento que se carga junto con el GGUF principal del modelo.
-- Sin pérdida de calidad a temperatura 0: la decodificación especulativa es determinista y no altera la distribución de salida.
-- Optimización para hardware con memoria unificada: probado en AMD Strix Halo (Ryzen AI MAX+ 395), donde se obtienen ganancias de velocidad significativas.
-- No es un modelo de lenguaje autónomo: no puede generar texto por sí mismo; requiere el modelo base.
+- Aceleración de decodificación especulativa: actúa como modelo borrador para el objetivo Qwen3.8-Flash-Next en llama.cpp, con aceptación reportada de ~85 % en código.
+- Generación de borradores multi-token con ventana configurable (`--spec-draft-n-max 4` en el ejemplo del autor).
+- Control de confianza mediante puerta de probabilidad mínima (`--spec-draft-p-min 0.75`), que evita la degradación en texto libre donde la aceptación es baja.
+- Combinación con especulación por n-gramas (`--spec-type draft-mtp,ngram-mod`).
+- Pérdida nula a temperatura 0 (decodificación especulativa sin cambio de distribución).
+- No genera texto de forma autónoma, no soporta tool calling por sí mismo, no tiene modo thinking, visión ni audio: esas capacidades pertenecen al modelo objetivo.
+- Capacidades multilingües: no disponible (no documentadas para el sidecar).
 
 ## Casos de uso
 
-- Inferencia local acelerada en AMD Strix Halo: el sidecar permite aumentar la velocidad de generación de 23,5 a 35,7 t/s en tareas de código, aprovechando la memoria unificada del APU sin necesidad de GPU dedicada.
-- Despliegue de servidores de chat de baja latencia: al reducir el tiempo por token, se mejora la experiencia en aplicaciones conversacionales interactivas, especialmente con contexto largo (hasta 156K tokens).
-- Generación de código en entornos de desarrollo: la alta tasa de aceptación (~85%) en código hace que la decodificación especulativa sea especialmente eficaz en autocompletado y generación de funciones.
-- Procesamiento de documentos extensos: con contexto de 262K tokens en el modelo base, el sidecar mantiene la aceleración incluso a profundidades de contexto elevadas, útil para análisis de codebases completos o informes largos.
-- Optimización de costes en infraestructura: al mejorar el *throughput* sin necesidad de hardware adicional, se reduce el coste por token en despliegues locales o en la nube con GPUs compartidas.
-- Investigación en decodificación especulativa: el repositorio sirve como referencia para implementar y evaluar MTP sidecars en otros modelos de la familia Qwen4.
+- Servicio de código en hardware de memoria unificada: en un Strix Halo con objetivo UD-IQ3_XXS, el sidecar eleva la decodificación de 23,5 a 35,7 t/s en tareas de código, lo que hace viable la asistencia de programación interactiva sin GPU discreta.
+- Autocompletado y generación en IDE sobre equipos de sobremesa: al mantener la aceleración incluso a 156K de profundidad de contexto, resulta adecuado para repositorios grandes donde el prompt ocupa gran parte de la ventana.
+- Despliegue local de agentes de código con contexto largo: el objetivo conserva 32.768 tokens de contexto en la configuración de referencia, suficiente para sesiones multi-turno con archivos extensos.
+- Sustitución de decodificación especulativa con modelo borrador separado: en lugar de cargar un modelo draft adicional en VRAM, se usa la cabeza MTP ya entrenada por Qwen, con menor huella (4,1 GB en Q8_0).
+- Evaluación comparativa de técnicas de aceleración: permite medir aceptación y throughput de MTP frente a draft models clásicos o n-gramas en el mismo objetivo y hardware.
+- Reproducción de pipelines de inferencia en CI: al ser determinista a temperatura 0, sirve para generar baterías de pruebas reproducibles con mayor throughput que la decodificación estándar.
+- Investigación sobre decodificación especulativa: la puerta `--spec-draft-p-min` permite estudiar el equilibrio entre aceptación y coste de borradores rechazados en distintos dominios (código frente a prosa).
 
 ## Benchmarks y rendimiento
 
-Los datos de rendimiento provienen de la model card del autor, medidos en AMD Strix Halo (Ryzen AI MAX+ 395, gfx1151) con el modelo base cuantizado a UD-IQ3_XXS y temperatura 0:
-
-| Metrica | Sin sidecar | Con sidecar | Mejora |
+| Metrica | Sin MTP | Con MTP sidecar | Condiciones |
 |---|---|---|---|
-| Velocidad de decodificacion (codigo) | 23,5 t/s | 35,7 t/s | +50% |
-| Tasa de aceptacion (codigo) | - | ~85% | - |
-| Velocidad a 156K contexto | - | +49% | - |
+| Decodificacion en codigo (t/s) | 23,5 | 35,7 (+50 %) | AMD Strix Halo, Ryzen AI MAX+ 395, gfx1151, objetivo UD-IQ3_XXS, temperatura 0, aceptacion ~85 % |
+| Decodificacion a 156K de profundidad de contexto | no disponible | +49 % respecto a sin MTP | Mismas condiciones |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para el sidecar, ya que no es un modelo independiente. El rendimiento depende del modelo base y de la configuración de llama.cpp.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible; el artefacto no altera la calidad del modelo objetivo a temperatura 0.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica directamente; el sidecar se carga en memoria unificada junto con el modelo base. El modelo base Qwen3.8-Flash-Next requiere aproximadamente 78 GB de RAM/memoria unificada según Unsloth.
-- GPU recomendadas: probado en AMD Strix Halo (Ryzen AI MAX+ 395, gfx1151). No requiere GPU dedicada con VRAM; funciona con memoria unificada.
-- Compatibilidad con consumer GPU: no se ha probado en GPUs convencionales; la rama de llama.cpp incluye parches específicos para Strix Halo.
-- Opciones de despliegue: llama.cpp (rama `strix-halo-qwen4exp`), con `llama-server` o `llama-cli`. No se menciona compatibilidad con vLLM, Ollama o TGI.
-- Latencia y throughput: en el hardware de prueba, 35,7 t/s en código con contexto estándar y +49% a 156K tokens. La latencia por token depende del tamaño del modelo base y de la cuantización.
+- VRAM adicional para el sidecar: 4,1 GB en Q8_0, sumados a la memoria del modelo objetivo.
+- Hardware de referencia: AMD Strix Halo (Ryzen AI MAX+ 395, gfx1151) con memoria unificada; las mediciones del autor corresponden a este sistema.
+- GPU discretas: no se han publicado mediciones para A100, H100 o RTX 4090. El sidecar es independiente del backend, pero el rendimiento depende de la implementación de `draft-mtp` en la build de llama.cpp.
+- Compatibilidad con GPU de consumo: viable en la medida en que lo sea el objetivo; el sobrecoste de 4,1 GB condiciona especialmente a tarjetas de 8-12 GB.
+- Despliegue: exclusivamente llama.cpp, con una build que incluya la cabeza MTP qwen4exp (PR #27742) y los tensores hc (PR #28901). La rama probada es Aristo94/EngramHalo.cpp, que incluye parches de kernel para Strix Halo y guía de compilación. No hay soporte documentado para vLLM, TGI ni Ollama.
+- Configuración de referencia: `-ngl 999 -fa on -ctk q8_0 -ctv q8_0 -c 32768 -ub 2048 -md <sidecar> --spec-type draft-mtp,ngram-mod --spec-draft-n-max 4 --spec-draft-p-min 0.75`.
+- Latencia y throughput: ver tabla de benchmarks; solo disponibles para el hardware de referencia.
 
 ## Comparativa con modelos similares
 
-No hay una comparativa directa con otros sidecars MTP, ya que es un componente especializado. Se puede comparar con la situación sin sidecar (inferencia estándar) y con alternativas de decodificación especulativa:
+| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| EasiiX/Qwen3.8-Flash-Next-MTP-Sidecar-GGUF | 3.878.549.248 | no aplicable (sidecar) | Borrador MTP para decodificacion especulativa | Qwen Community License 1.0 | GGUF en Hugging Face, 724 descargas |
+| Qwen/Qwen3.8-Flash-Next (objetivo) | no disponible en la informacion | no disponible | Modelo generativo completo con cabeza MTP incluida | Qwen Community License 1.0 | Checkpoint oficial en Hugging Face |
+| Conversiones GGUF comunitarias de Qwen3.8-Flash-Next | no disponible | no disponible | Modelo objetivo sin tensores MTP | Qwen Community License 1.0 | GGUF, requieren sidecar para especulacion |
+| dzannotti MTP GGUF (trabajo comunitario citado) | no disponible | no disponible | Borrador MTP alternativo | no disponible | Repositorio comunitario |
 
-| Configuracion | Velocidad (codigo) | Complejidad | Licencia |
-|---|---|---|---|
-| Qwen3.8-Flash-Next sin sidecar | 23,5 t/s | Baja (GGUF estándar) | qwen-community-1.0 |
-| Qwen3.8-Flash-Next con sidecar MTP | 35,7 t/s | Media (rama especifica de llama.cpp) | qwen-community-1.0 |
-| Otros draft heads (ngram, prompt lookup) | No disponible | Baja | Varía |
-
-El sidecar de EasiiX es el único publicado específicamente para Qwen3.8-Flash-Next en formato GGUF, aunque existe trabajo comunitario relacionado (dzannotti) con MTP GGUF para otros modelos.
+No se dispone de datos para comparar con modelos borrador independientes (draft models de menor tamaño) en términos de aceptación o throughput en el mismo hardware.
 
 ## Limitaciones y advertencias
 
-- No es un modelo completo: requiere el modelo base Qwen3.8-Flash-Next y no funciona de forma autónoma.
-- Dependencia de una rama específica de llama.cpp: la rama `strix-halo-qwen4exp` no es oficial y puede no recibir mantenimiento a largo plazo.
-- Rendimiento variable según el tipo de texto: la ganancia es mayor en código (~85% aceptación) que en prosa; el autor recomienda usar `--spec-draft-p-min 0.75` para evitar pérdidas en texto de baja aceptación.
-- Licencia con cláusula Model-as-a-Service: la Qwen Community License 1.0 restringe el uso del modelo como servicio comercial; debe revisarse antes de desplegar en producción.
-- Soporte de hardware limitado: las mediciones se realizaron únicamente en AMD Strix Halo; no hay garantía de funcionamiento en otras plataformas.
-- Riesgo de alucinación y sesgos: heredados del modelo base, no mitigados por el sidecar.
-- Fecha de publicación futura (agosto de 2026) y cero descargas: el repositorio es reciente y no tiene validación comunitaria amplia.
+- No es utilizable de forma autónoma: sin el modelo objetivo Qwen3.8-Flash-Next y una build parcheada de llama.cpp no produce ninguna salida.
+- La versión sin sufijo `-hc-` está deprecada y falla en builds actuales por ausencia de `output_hc_norm.weight`; usar únicamente `mtp-Qwen3.8-Flash-Next-hc-Q8_0.gguf`.
+- Sin `--spec-draft-p-min 0.75`, la prosa con baja aceptación pierde más por borradores rechazados de lo que gana; el ajuste es sensible al dominio.
+- Las ganancias publicadas (+50 % en código, +49 % a 156K) proceden de un único sistema Strix Halo y un único objetivo UD-IQ3_XXS; no deben extrapolarse a otras GPU o cuantizaciones.
+- Licencia Qwen Community License 1.0: incluye una cláusula de Model-as-a-Service que debe revisarse antes de servir el modelo comercialmente. El campo `license: other` en Hugging Face exige consultar el fichero LICENSE del repositorio.
+- Idiomas soportados no documentados para el sidecar; la cobertura lingüística efectiva depende del modelo objetivo.
+- Riesgo de alucinación: no aplicable al sidecar en sí (no genera contenido propio), pero la verificación del modelo objetivo sigue siendo el mecanismo de control de calidad.
+- Dependencia de una rama no oficial de llama.cpp (EngramHalo.cpp) para el hardware de referencia; los PR #28901 y #27742 pueden cambiar de estado y romper la compatibilidad.
+- Sesgos conocidos: no documentados en la información disponible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Sidecar-GGUF
-- Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Rama de llama.cpp con soporte qwen4exp: https://github.com/Aristo94/llama.cpp/tree/strix-halo-qwen4exp
-- PR de llama.cpp para MTP draft head: https://github.com/ggml-org/llama.cpp/pull/27739
-- PR de llama.cpp para soporte qwen4exp: https://github.com/ggml-org/llama.cpp/pull/27742
-- Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Documentación de Unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- llama.cpp PR #27739 (diseño de la cabeza MTP): https://github.com/ggml-org/llama.cpp/pull/27739
+- llama.cpp PR #27742 (soporte qwen4exp): https://github.com/ggml-org/llama.cpp/pull/27742
+- llama.cpp PR #28901 (tensores de hiperconexión): https://github.com/ggml-org/llama.cpp/pull/28901
+- Rama probada con parches para Strix Halo: https://github.com/Aristo94/EngramHalo.cpp

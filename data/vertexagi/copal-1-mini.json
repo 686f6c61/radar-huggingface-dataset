@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 690,
+  "downloads_30d": 733,
   "trending_score": 0,
   "parameters": 4551515648,
   "parameters_human": "4.55B",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "VertexAIco (Vertex AI) - Hugging Face",
-      "url": "https://huggingface.co/VertexAIco/models",
-      "snippet": "Building practical AI systems with a focus on open-weight LLMs, AI agents, tool use, efficient inference, and developer experience. Interested in model training, fine-tuning, multimodal AI, local inference (MLX/Ollama), and scalable AI infrastructure."
-    },
-    {
-      "title": "Vertex AI (@vertexagi) / Posts / X",
-      "url": "https://x.com/vertexagi",
-      "snippet": "🛠️ Introducing Copal 1 MiniOur first agentic model in the Copal series.• Gemma 3 4B base• Fine-tuned for tool calling + agents• Distilled from GLM 5.2• Trained with LoRA on Apple Silicon• 11/12 tool-use success on held-out tests🤗"
-    },
-    {
-      "title": "️ Introducing Copal 1 Mini Our first agentic model in the Copal series ...",
-      "url": "https://x.com/vertexagi/status/2086016474469028283",
-      "snippet": "Vertex AI (@vertexagi). 6 views. 🛠️ Introducing Copal 1 Mini Our first agentic model in the Copal series. • Gemma 3 4B base • Fine-tuned for tool calling + agents • Distilled from GLM 5.2 • Trained with LoRA on Apple Silicon • 11/12 tool-use success on held-out tests 🤗"
-    },
-    {
-      "title": "huggingface/InferenceSupport · VertexAIco/copal-1-mini",
-      "url": "https://huggingface.co/spaces/huggingface/InferenceSupport/discussions/11785",
-      "snippet": "Copal 1 Mini is a lightweight ~4B Gemma-based fine-tune focused on agentic tool calling and function calling. Featherless AI feels like an especially good fit given its support for a broad range of open and community models."
-    },
-    {
-      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
-      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
-      "snippet": "Explore the Google models available in Gemini Enterprise Agent Platform, including featured, generally available, and preview Gemini, Gemma, Veo, and embedding models."
-    }
-  ]
+  "sources": []
 }

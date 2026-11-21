@@ -1,92 +1,83 @@
 # tinyopsec/LFM-2.5-2.6B-heretic-GGUF
 
 ## Resumen
+LFM-2.5-2.6B-heretic-GGUF es una distribucion en formato GGUF del modelo heretic-org/LFM-2.5-2.6B-heretic, una variante "abliterated" o "decensored" del LFM2.5-2.6B original de Liquid AI. El autor de esta conversion es el usuario tinyopsec, que publica el modelo con 13 niveles de cuantizacion distintos generados mediante llama.cpp, desde F16 hasta Q2_K. El modelo base pertenece a la familia LFM2.5 de Liquid AI, disenada para generacion de texto conversacional con un equilibrio entre tamano reducido y capacidades de razonamiento.
 
-LFM-2.5-2.6B-heretic-GGUF es un conjunto de cuantizaciones en formato GGUF de un modelo derivado de LiquidAI/LFM2.5-2.6B, la familia LFM2.5 de Liquid AI, con 2.697.198.592 parámetros totales. La particularidad es que no se trata del modelo original, sino de una versión «abliterated»/«decensored» generada con la herramienta Heretic, que elimina o atenúa el comportamiento de rechazo aprendido durante el alineamiento. El repositorio lo publica el usuario tinyopsec, no Liquid AI, y actúa como empaquetador del trabajo previo de heretic-org.
+El interes de esta publicacion es doble. Por un lado, ofrece el modelo en un formato directamente ejecutable en runtimes de inferencia local como llama.cpp, Ollama, LM Studio o koboldcpp, lo que facilita su despliegue en hardware de consumo. Por otro, incorpora la modificacion "heretic", que elimina total o parcialmente los mecanismos de rechazo y alineacion del modelo original, un tipo de intervencion que interesa a investigadores que estudian el comportamiento de modelos abliterated y a desarrolladores que necesitan un modelo sin filtros de contenido para casos de uso creativos o de investigacion.
 
-El problema que resuelve es de naturaleza muy concreta: ofrece el modelo base en cuantizaciones de 2 a 16 bits listas para llama.cpp y runtimes compatibles, de modo que se puede ejecutar en hardware de consumo sin necesidad de convertir pesos ni de disponer de GPU. Es relevante ahora porque los modelos de ~2,6 B parámetros son el punto dulce para inferencia local en portátiles y equipos sin acelerador dedicado, y porque las variantes sin censura interesan a investigadores que estudian el alineamiento, la negativa a responder y los sesgos residuales.
-
-Conviene subrayar que la información publicada es mínima: la model card solo describe los ficheros y el uso con llama.cpp. No hay datos sobre arquitectura interna, longitud de contexto, composición del dataset de entrenamiento, idiomas soportados ni resultados de benchmarks, por lo que todos esos campos se marcan como no disponibles.
+Con 2.697.198.592 parametros (aproximadamente 2.7 mil millones) y un repositorio de 26.3 GB que alberga todas las cuantizaciones, el modelo se posiciona en la gama de modelos pequenos aptos para ejecucion en GPU de consumo. El modelo acumula 735 descargas en Hugging Face y no cuenta con likes, lo que sugiere una adopcion temprana y limitada. La licencia es "other", heredada de la LFM Open License v1.0 del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Familia LFM2 (Liquid AI); detalles internos no disponibles en la información proporcionada |
-| Parametros totales | 2.697.198.592 (~2,7 B) |
+| Arquitectura | no disponible (modelo base LFM2.5 de Liquid AI; arquitectura exacta no especificada en la informacion) |
+| Parametros totales | 2.697.198.592 (aproximadamente 2.7B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
-| Licencia | other (LFM Open License v1.0, según la model card) |
-| Formato de pesos | GGUF (solo cuantizaciones; no se publican safetensors en este repo) |
+| Licencia | other (LFM Open License v1.0, segun la model card) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
+La informacion proporcionada no detalla la arquitectura interna del modelo base LFM2.5-2.6B de Liquid AI. Se sabe que el modelo original pertenece a la familia LFM2.5, pero no se especifica si emplea un transformer clasico, una arquitectura hibrida o algun otro diseno. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original.
 
-No se dispone de información sobre la arquitectura interna del modelo en los materiales publicados. La etiqueta `lfm2` y el campo `base_model: LiquidAI/LFM2.5-2.6B` sitúan el origen en la familia LFM2 de Liquid AI, pero la model card de este repositorio no documenta número de capas, tipo de atención, mecanismo de mezcla (atención, convolución o híbrido), vocabulario ni tokenizador. Tampoco se indica la ventana de contexto nativa ni si el modelo base usa atención lineal o alguna variante eficiente.
-
-Respecto al entrenamiento, lo único documentado es el proceso de «abliteration» mediante Heretic sobre el checkpoint heretic-org/LFM-2.5-2.6B-heretic, que a su vez deriva de LiquidAI/LFM2.5-2.6B. No hay datos sobre tokens de preentrenamiento, composición del dataset, fases de SFT, RLHF o DPO, ni sobre el método exacto de intervención aplicado (direcciones de rechazo, edición de pesos por capa, etc.). Tampoco se documenta si la cuantización se generó con `llama.cpp` estándar y qué métricas de perplejidad se obtuvieron por nivel de bits.
+La innovacion tecnica destacable de esta publicacion concreta es el proceso "heretic" aplicado por heretic-org, que produce una version abliterated del modelo, es decir, una intervencion sobre los pesos orientada a eliminar la direccion de rechazo aprendida durante el alineamiento. Sobre esa variante, tinyopsec genera las cuantizaciones GGUF mediante llama.cpp, preservando el comportamiento del modelo base en cada nivel de compresion. No se dispone de informacion sobre el metodo exacto de abliteration empleado ni sobre el impacto cuantitativo de la intervencion en las capacidades del modelo.
 
 ## Capacidades
-
-- Generación de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` indica uso orientado a diálogo.
-- Ejecución local: todas las cuantizaciones están pensadas para llama.cpp, Ollama, LM Studio o koboldcpp.
-- Respuesta sin rechazo aprendido: al ser una variante abliterated, no aplica el comportamiento de negativa del modelo alineado original (con las advertencias de la sección de limitaciones).
-- Razonamiento y código: no disponible; no hay documentación ni benchmarks que lo confirmen para esta variante.
-- Tool calling / function calling: no disponible; no se documenta plantilla de herramientas ni soporte de agentes.
-- Capacidades multimodales (visión, audio): no disponibles; no se declaran.
-- Multilingüismo: no disponible; no se enumeran idiomas en la model card ni en los metadatos.
-- Modo «thinking» o razonamiento extendido: no disponible.
+- Generacion de texto conversacional: el pipeline declarado es text-generation y el tag "conversational" indica soporte para dialogos multi-turno.
+- Modelo "decensored" o "abliterated": no aplica los filtros de rechazo tipicos del modelo alineado original, lo que permite generar contenido que el modelo base rechazaria.
+- Compatibilidad con runtimes GGUF: funciona en llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con el formato.
+- Ejecucion local: el tamano de 2.7B permite inferencia en hardware de consumo.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; los idiomas no estan especificados.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
-
-- Inferencia local en portátil sin GPU: con la cuantización Q4_K_M el modelo ocupa del orden de 1,7 GB, de modo que cabe en RAM y se puede ejecutar con llama.cpp u Ollama en equipos de 8 GB, útil para prototipado offline.
-- Investigación sobre alineamiento y negativa: comparar las respuestas del modelo abliterated con las del LFM2.5-2.6B original permite estudiar qué comportamientos se eliminan al aplicar Heretic y cuánto degrada la calidad general.
-- Clasificación y etiquetado de texto por lotes: al ser un modelo pequeño, se pueden procesar grandes volúmenes de documentos en CPU con coste bajo, siempre que la tarea no requiera contexto largo.
-- Generación de texto creativo sin filtros editoriales: escritura de ficción o guiones donde el modelo alineado impondría restricciones, con revisión humana posterior obligatoria.
-- Base para fine-tuning ligero: las cuantizaciones Q8_0 o F16 sirven como referencia de comportamiento antes de adaptar el modelo a un dominio concreto con LoRA sobre los pesos originales.
-- Experimentación educativa con cuantización: el repositorio cubre desde Q2_K hasta F16, lo que permite medir empíricamente la pérdida de calidad por bit y entender el compromiso tamaño/rendimiento en un modelo de 2,7 B.
-- Pruebas de robustez y red teaming: evaluar la facilidad con la que un modelo sin alineamiento produce contenido problemático, como caso de estudio controlado en entornos de seguridad.
+- Investigacion sobre alineacion y abliteration: el modelo permite estudiar como la eliminacion de la direccion de rechazo afecta al comportamiento generativo, comparando las respuestas del modelo heretic con las del LFM2.5-2.6B original en conjuntos de prompts controlados.
+- Generacion creativa sin restricciones: escritores y creadores de contenido pueden emplear el modelo para narrativa, guiones o poesia donde el modelo alineado aplicaria filtros, ejecutandolo localmente con llama.cpp y la cuantizacion Q4_K_M para un equilibrio entre calidad y consumo de memoria.
+- Despliegue en hardware de consumo: con 2.7B parametros y cuantizaciones desde Q2_K, el modelo cabe en GPUs de gama media y en CPU con RAM suficiente, lo que lo hace adecuado para prototipos y demos en portatiles.
+- Experimentacion con cuantizacion: el repositorio ofrece 13 niveles de cuantizacion, lo que permite a investigadores medir la degradacion de calidad y el impacto en el comportamiento del modelo a medida que se reduce la precision, desde F16 hasta Q2_K.
+- Chatbot local sin conexion: integrado en Ollama o LM Studio, el modelo puede servir como asistente conversacional en entornos air-gapped donde no se permite enviar datos a APIs externas.
+- Evaluacion comparativa de variantes heretic: desarrolladores que construyen pipelines de evaluacion pueden comparar esta variante GGUF con otras versiones abliterated del mismo modelo base para seleccionar la que mejor preserve las capacidades originales.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada para inferencia (cálculos a partir de los 2,7 B parámetros y los tamaños declarados, incluyendo overhead de contexto y caché KV): F16 ~5,2 GB de pesos, ~6-7 GB en ejecución; Q8_0 ~2,9 GB, ~3,5-4 GB; Q4_K_M ~1,7 GB, ~2,2-2,8 GB; Q2_K ~1,1 GB, ~1,5-2 GB.
-- GPU recomendadas: cualquier GPU con 4-8 GB de VRAM es suficiente (RTX 3060, RTX 4060, RTX 4090 sobrada). Para despliegue con concurrencia, A100/H100 no aportan ventaja significativa por el tamaño reducido del modelo; el cuello de botella es más probablemente la CPU o el ancho de banda.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones de 4 bits o menos, incluidas iGPU con memoria unificada.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, koboldcpp. vLLM y TGI no soportan GGUF de forma nativa y generalizada; requerirían los pesos originales en safetensors, que no se publican en este repositorio.
-- Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo para ninguna de las cuantizaciones.
+- VRAM estimada para inferencia: aproximadamente 5.2 GB para F16, en torno a 2.8-3.0 GB para Q8_0, cerca de 2.0-2.2 GB para Q4_K_M y alrededor de 1.2-1.5 GB para Q2_K (estimaciones basadas en el tamano de los ficheros y el numero de parametros; no confirmadas en la informacion).
+- GPU recomendadas: no disponibles en la informacion. Por tamano, el modelo es apto para GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o superiores, asi como para GPUs de datacenter (A100, H100) si se busca throughput alto.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs con 4 GB o mas de VRAM usando cuantizaciones Q4 o inferiores.
+- Opciones de despliegue: llama.cpp (referencia explicita en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyopsec/LFM-2.5-2.6B-heretic-GGUF | ~2,7 B | no disponible | LFM Open License v1.0 | GGUF (13 cuantizaciones) | Variante abliterated; sin benchmarks publicados |
-| LiquidAI/LFM2.5-2.6B (base) | ~2,7 B | no disponible en esta busqueda | LFM Open License v1.0 | safetensors (original) | Modelo alineado de referencia; permite comparar el efecto de la abliteration |
-| heretic-org/LFM-2.5-2.6B-heretic | ~2,7 B | no disponible | no disponible | no disponible | Origen directo de estas cuantizaciones |
-| Alternativas de ~3 B (p. ej. Qwen2.5-3B, Llama-3.2-3B, Gemma-2-2B) | 2-3 B | 32k-128k según familia | Apache 2.0 / Llama / Gemma | safetensors, GGUF comunitario | Ecosistema más maduro y con benchmarks públicos; datos de referencia general, no verificados en la búsqueda |
+| tinyopsec/LFM-2.5-2.6B-heretic-GGUF | 2.7B | no disponible | other (LFM Open License v1.0) | GGUF | Hugging Face, 735 descargas |
+| heretic-org/LFM-2.5-2.6B-heretic | 2.7B | no disponible | no disponible | safetensors (presumible) | Hugging Face (modelo base) |
+| LiquidAI/LFM2.5-2.6B | 2.7B | no disponible | LFM Open License v1.0 | safetensors | Hugging Face (modelo original) |
+
+La comparativa se limita a las tres variantes del mismo modelo base, ya que la informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de otros autores. No se dispone de datos de benchmarks que permitan comparar capacidades con modelos de la misma categoria.
 
 ## Limitaciones y advertencias
-
-- Modelo «decensored»/«abliterated»: el alineamiento de seguridad se ha eliminado deliberadamente, por lo que puede producir contenido dañino, ilegal o sexualmente explícito sin aplicar negativas. No es apto para aplicaciones de cara al público sin filtros externos.
-- La propia model card incluye un descargo explícito («Evaluate before use») y no ofrece ninguna garantía de calidad tras la intervención.
-- Riesgo de alucinación: no disponible como dato medido, pero al tratarse de un modelo de ~2,7 B parámetros y de una modificación de pesos, es esperable degradación respecto al original; no hay perplejidad ni evaluación publicada para confirmarlo.
-- Sesgos conocidos: no documentados. La abliteration puede alterar la distribución de respuestas en temas sensibles sin que exista una evaluación de sesgo asociada.
-- Contexto e idiomas: se desconocen la ventana de contexto efectiva y la cobertura idiomática. No se debe asumir buen rendimiento en castellano.
-- Licencia: LFM Open License v1.0 (campo `license: other`). Es una licencia con condiciones específicas, no OSI; hay que revisar los términos exactos de Liquid AI antes de cualquier uso comercial, y verificar si la redistribución de derivados abliterated está permitida.
-- El repositorio es de un tercero (tinyopsec), no del autor original; no hay auditoría de que las cuantizaciones correspondan fielmente al checkpoint de heretic-org.
-- Solo se publican ficheros GGUF: no hay safetensors en este repo, lo que impide reanudar entrenamiento o fine-tuning desde aquí.
-- 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria ni evidencia de uso en producción.
-- El repositorio ocupa 26,3 GB en total por acumular las 13 cuantizaciones; descargar solo el fichero necesario.
+- Modelo decensored/abliterated: la model card advierte explicitamente "Evaluate before use". El modelo no aplica los filtros de seguridad del LFM2.5 original, por lo que puede generar contenido inapropiado, ofensivo o danoso.
+- Riesgo de alucinacion: no se dispone de evaluaciones especificas, pero al ser un modelo de 2.7B parametros es esperable una tasa de alucinacion superior a la de modelos de mayor tamano.
+- Idiomas: no se especifican los idiomas soportados; se desconoce el rendimiento en castellano.
+- Contexto: la longitud de contexto no esta documentada en la informacion disponible, lo que impide garantizar conversaciones de contexto largo.
+- Licencia: la LFM Open License v1.0 puede imponer restricciones al uso comercial; debe revisarse el texto completo de la licencia antes de desplegar el modelo en produccion. La modificacion heretic puede no estar cubierta explicitamente por la licencia original.
+- Sesgos: no se han documentado sesgos especificos, pero la eliminacion de la alineacion puede amplificar sesgos presentes en los datos de entrenamiento.
+- Adopcion limitada: 735 descargas y 0 likes indican poca validacion por parte de la comunidad; no hay evidencia de uso en produccion.
+- Procedencia de la cuantizacion: el autor de la conversion es un usuario individual (tinyopsec), no el equipo de Liquid AI; la calidad de las cuantizaciones no ha sido auditada por el desarrollador original.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/tinyopsec/LFM-2.5-2.6B-heretic-GGUF
-- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Checkpoint de origen de la abliteration: https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/LFM-2.5-2.6B-heretic-GGUF
+- Modelo base (heretic): https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic
+- Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-2.6B
+- Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com
-- La búsqueda web realizada no devolvió resultados relevantes para este modelo (solo páginas de contenido para adultos sin relación).
+- LM Studio: https://lmstudio.ai
+- koboldcpp: https://github.com/LostRuins/koboldcpp

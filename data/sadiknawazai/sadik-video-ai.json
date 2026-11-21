@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "SadikNawazAI/SADIK-VIDEO-AI",
+  "slug": "sadiknawazai-sadik-video-ai",
+  "author": "SadikNawazAI",
+  "url": "https://huggingface.co/SadikNawazAI/SADIK-VIDEO-AI",
+  "created_at": "2026-11-21T08:36:52.000Z",
+  "updated_at": "2026-11-21T08:36:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video",
+    "video-generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "diffusers:WanPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 28935465418,
+  "storage_human": "28.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

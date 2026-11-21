@@ -134,31 +134,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !Read more"
-    },
-    {
-      "title": "Toute l'actualité locale sur Arras, Lens et Béthune",
-      "url": "https://www.horizonactu.fr/",
-      "snippet": "Station-service Horizon : retrouvez les bons plans carburant près de chez vous ! Vous cherchez où faire le plein moins cher ? …"
-    },
-    {
-      "title": "Horizon — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Horizon",
-      "snippet": "Conceptuellement, l' horizon est la limite de ce que l'on peut observer, du fait de sa propre position ou situation. Ce concept simple …"
-    },
-    {
-      "title": "Écouter Horizon en direct et gratuit",
-      "url": "https://www.radio-en-ligne.fr/horizon",
-      "snippet": "Écoutez Horizon en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
-    },
-    {
-      "title": "Définitions : horizon - Dictionnaire de français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/francais/horizon/40381",
-      "snippet": "Partie de la terre, de la mer ou du ciel qui borne cette ligne : Apercevoir une voile à l'horizon. 3. Étendue de terre et de ciel qu'un …"
-    }
-  ]
+  "sources": []
 }

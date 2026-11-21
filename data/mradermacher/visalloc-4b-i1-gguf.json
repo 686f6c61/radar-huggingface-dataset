@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/VisAlloc-4B-i1-GGUF",
   "created_at": "2026-11-18T06:31:18.000Z",
-  "updated_at": "2026-11-18T07:17:14.000Z",
+  "updated_at": "2026-11-20T10:51:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4881,
+  "downloads_30d": 7098,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",

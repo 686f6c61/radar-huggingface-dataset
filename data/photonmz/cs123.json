@@ -30,8 +30,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "cs123mts/policy_registry",
+  "renamed_at": "2026-11-21T10:18:47.052Z",
   "benchmarks": [],
   "sources": []
 }

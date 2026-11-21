@@ -5,7 +5,7 @@
   "author": "desert-ant-labs",
   "url": "https://huggingface.co/desert-ant-labs/voz",
   "created_at": "2026-08-19T07:40:11.000Z",
-  "updated_at": "2026-11-05T20:40:39.000Z",
+  "updated_at": "2026-11-20T22:35:34.000Z",
   "license": "desert-ant-labs-source-available",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -79,7 +79,7 @@
     "region:us"
   ],
   "likes": 61,
-  "downloads_30d": 1521,
+  "downloads_30d": 1545,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,

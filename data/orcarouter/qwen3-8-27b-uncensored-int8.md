@@ -2,84 +2,90 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-27B-Uncensored-INT8` es una version cuantizada a 8 bits (W8A8) y ablizada (abliterated) del modelo base Qwen/Qwen3.8-27B, creada por el usuario orcarouter. La abliteracion es una tecnica que elimina las direcciones de rechazo en los pesos del modelo, de modo que deja de emitir negativas de contenido, orientandolo a tareas de red-teaming y evaluacion de seguridad en IA.
+Qwen3.8-27B-Uncensored-INT8 es una versión cuantizada a 8 bits y "abliterated" (sin censura) del modelo multimodal Qwen3.8-27B de Alibaba Qwen, publicada por el usuario orcarouter en Hugging Face. El modelo conserva la arquitectura vision-language del original (pipeline image-text-to-text, familia qwen3_5) con 27.360.627.952 parámetros totales, y sustituye los pesos en coma flotante por una cuantización W8A8 gestionada mediante compressed-tensors, lo que reduce el repositorio a 31,3 GB y permite servirlo con vLLM en GPUs de gama alta.
 
-El modelo conserva las capacidades del Qwen3.8-27B original: procesamiento multimodal de imagen y texto, razonamiento multi-paso, function calling y prediccion multi-token (MTP). La cuantizacion a INT8 con compressed-tensors reduce el peso total a aproximadamente 31,3 GB en disco, lo que permite su despliegue en GPUs de 32-40 GB de VRAM y es compatible con vLLM para inferencia en produccion.
+La relevancia de esta ficha es doble. Por un lado, demuestra el flujo habitual de la comunidad: tomar un modelo frontera abierto, aplicar técnicas de abliteration para eliminar los rechazos de seguridad y cuantizarlo para hacerlo desplegable en infraestructura propia. Por otro, su etiquetado explícito como material de red-teaming, ai-red-team y uncensored lo convierte en una herramienta pensada para evaluar robustez y alineación, no para producción orientada al usuario final. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
-Su relevancia actual reside en que proporciona una version sin filtros de un modelo de ultima generacion, util para investigadores de seguridad que necesitan generar contenido adversario, probar la robustez de sistemas de moderacion y estudiar el comportamiento de modelos no alineados.
+Es importante señalar que parte de los metadatos del modelo (nombre Qwen3.8, tags qwen3_5, qwen3.8, soporte de MTP) no se corresponden con ninguna familia publicada oficialmente por Qwen en el momento de redactar esta ficha, por lo que deben tratarse como datos declarados por el autor y no verificados de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (basada en Qwen3.8-27B) |
-| Parametros totales | 27.360.627.952 (~27,4B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible (heredada del modelo base) |
-| Tipos de cuantizacion | INT8 (W8A8) con compressed-tensors |
-| Idiomas soportados | en, zh (ingles y chino) |
+| Arquitectura | Transformer multimodal (vision-language), familia declarada qwen3_5; detalles de capas y atencion no disponibles |
+| Parametros totales | 27.360.627.952 (dato real de safetensors) |
+| Parametros activos | no disponible (no se declara que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | INT8 W8A8 (pesos y activaciones a 8 bits) mediante compressed-tensors |
+| Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (compressed-tensors) |
+| Formato de pesos | safetensors (compatible con transformers y vLLM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen/Qwen3.8-27B, cuya arquitectura se identifica con la etiqueta qwen3_5. No se dispone de detalles publicos sobre si se trata de una arquitectura densa o de mezcla de expertos (MoE), ni sobre el numero de tokens de entrenamiento del modelo base. Las tags indican que el modelo original soporta procesamiento multimodal (imagen y texto), razonamiento, function calling y prediccion multi-token (MTP).
+El modelo base es Qwen/Qwen3.8-27B, un modelo de la familia Qwen con capacidad de entrada imagen-texto (pipeline image-text-to-text), lo que implica un codificador visual acoplado a un decoder de lenguaje. Los tags incluyen referencias a MTP (multi-token prediction) y a razonamiento, function-calling y conversación, pero no se dispone de información pública verificable sobre el número de capas, la dimensión oculta, el mecanismo de atención ni el tamaño del vocabulario en la información proporcionada.
 
-El proceso de creacion de esta variante incluye dos pasos principales: la ablbilacion (eliminacion de los pesos responsables de las negativas de contenido) y la cuantizacion a INT8 con activaciones de 8 bits (W8A8) mediante la libreria compressed-tensors, optimizada para inferencia con vLLM. No se ha publicado informacion sobre datasets adicionales de entrenamiento o procesos de alineacion (RLHF/DPO) aplicados a esta version cuantizada.
+Sobre el proceso de entrenamiento del modelo base no hay datos disponibles: no se indica el volumen de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o aprendizaje por refuerzo con verificación. La modificación respecto al original consiste en una abliteration (eliminación de la dirección de rechazo en el espacio de activaciones) seguida de una cuantización post-entrenamiento a INT8 con esquema W8A8, empaquetada con compressed-tensors para su carga directa en vLLM. No se documentan métodos de calibración, número de muestras de calibración ni la pérdida de calidad asociada a la cuantización.
 
 ## Capacidades
 
-- Procesamiento multimodal: acepta entradas de texto e imagen (pipeline image-text-to-text).
-- Razonamiento multi-paso: soporta cadenas de razonamiento para problemas complejos.
-- Function calling: permite invocar herramientas y APIs mediante llamadas estructuradas.
-- Prediccion multi-token (MTP): acelera la generacion de texto al predecir varios tokens simultaneamente.
-- Conversacion multi-turno: mantiene contexto en dialogos extensos.
-- Multilingue limitado: soporta ingles y chino (en, zh).
-- Sin restricciones de contenido: al estar ablizado, no rechaza solicitudes que el modelo original bloquearia, adecuado para red-teaming.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Comprensión de imágenes y respuesta en texto (image-text-to-text), incluyendo preguntas sobre el contenido visual.
+- Razonamiento explícito, con soporte declarado de modo de pensamiento (thinking) según los tags del autor.
+- Generación de código y matemáticas, aunque sin benchmarks publicados que lo cuantifiquen.
+- Function calling / tool calling, según los tags del repositorio.
+- Soporte de flujos agénticos y razonamiento multi-paso (declarado, no verificado).
+- Predicción multi-token (MTP) declarada, lo que en teoría permitiría decodificación especulativa nativa.
+- Comportamiento sin rechazos (uncensored/abliterated): responde a peticiones que el modelo base rechazaría.
+- Compatibilidad con endpoints y despliegue en vLLM gracias al formato compressed-tensors.
 
 ## Casos de uso
 
-- Red-teaming de sistemas de IA: el modelo puede generar prompts adversarios y respuestas no filtradas para probar la robustez de sistemas de moderacion y deteccion de contenido en produccion.
-- Investigacion de alineacion: comparar el comportamiento del modelo ablizado frente al original permite estudiar los mecanismos internos de rechazo y disenar mejores tecnicas de alineacion.
-- Pruebas de sistemas de vision-lenguaje: al aceptar imagenes, se puede evaluar como el modelo procesa contenido visual sin filtros de seguridad, util para auditar pipelines multimodales.
-- Simulacion de usuarios adversarios: generar conversaciones que intenten evadir filtros de contenido para testear sistemas de moderacion de chats.
-- Generacion de contenido creativo sin restricciones: escritura de ficcion, guiones o material donde el modelo original bloquearia ciertos topicos, en contextos de investigacion academica.
-- Evaluacion de robustez de cuantizacion: verificar si la cuantizacion INT8 mantiene la calidad de razonamiento del modelo original en tareas de vision y texto.
+- Red-teaming y evaluación de alineación: el modelo sirve como sujeto de prueba para medir la eficacia de filtros de seguridad, ya que su abliteration elimina las negativas del modelo original y permite estudiar qué contenidos emergen sin salvaguardas.
+- Investigación en seguridad de modelos multimodales: al aceptar entradas de imagen y texto, permite construir conjuntos de ataques que combinan instrucciones textuales con estímulos visuales para evaluar jailbreaks.
+- Generación de datos adversarios para entrenar clasificadores de seguridad: se puede usar para producir pares pregunta-respuesta que alimenten un detector de contenido dañino, siempre en un entorno controlado y con revisión humana.
+- Análisis de sesgos y robustez lingüística: su cobertura limitada a inglés y chino permite estudiar cómo se degrada el comportamiento en otros idiomas y qué sesgos aparecen en cada uno.
+- Pruebas de cuantización INT8 en producción: al estar empaquetado con compressed-tensors, es un banco de pruebas realista para medir la degradación de calidad de W8A8 frente a BF16 en tareas de razonamiento y visión.
+- Evaluación de pipelines agénticos con tool calling: útil para comprobar cómo se comporta un modelo sin restricciones de rechazo cuando se le da acceso a herramientas, un escenario clave para estudiar riesgos de ejecución autónoma.
+- Prototipado de asistentes sobre documentos e imágenes en entornos de investigación cerrados, donde la licencia Apache 2.0 facilita la experimentación interna.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamano del repositorio: 31,3 GB (pesos INT8 en safetensors).
-- VRAM estimada para inferencia: aproximadamente 32-36 GB con INT8 y contexto medio (pesos 27,4 GB mas KV cache y activaciones).
-- GPUs recomendadas: NVIDIA A100 40GB, H100 80GB, RTX 4090 24GB (con cuantizacion adicional o contexto reducido), o GPUs con 32 GB o mas de VRAM.
-- No cabe en GPUs consumer de 16 GB sin cuantizacion adicional (GGUF Q4, etc.).
-- Opciones de despliegue: vLLM (compatible con compressed-tensors), Hugging Face Transformers, y endpoints compatibles de Hugging Face.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: al menos 31,3 GB solo para los pesos en INT8, más overhead de KV cache, activaciones y codificador visual; en la práctica se recomienda un mínimo de 40-48 GB para contextos moderados y bastante más para contextos largos.
+- GPU recomendadas: A100 80 GB, H100 80 GB, L40S 48 GB o A6000 48 GB. En GPUs de 24 GB (RTX 4090, RTX 3090) no cabe en INT8 sin offloading a CPU o sin recurrir a una cuantización adicional a 4 bits no publicada en este repositorio.
+- Cabe en consumer GPU: no de forma nativa en 24 GB; sí en configuraciones multi-GPU o con offloading parcial.
+- Opciones de despliegue: vLLM es la vía principal por el formato compressed-tensors; transformers para carga directa; llama.cpp/Ollama requerirían una conversión a GGUF que no se proporciona en el repositorio.
+- Latencia y throughput estimados: no disponibles. Como referencia cualitativa, W8A8 en vLLM suele ofrecer mejor throughput que BF16 en GPUs con soporte de kernels INT8 (Ada Lovelace, Hopper), pero no hay cifras publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Acceso |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | 27,4B | FP16/BF16 | no disponible | apache-2.0 | Publico en HF |
-| orcarouter/Qwen3.8-27B-Uncensored-INT8 | 27,4B | INT8 (W8A8) | no disponible | apache-2.0 | Gated (restricido) |
-| Otros modelos ablizados de la serie Qwen | no disponible | variable | no disponible | variable | Variable |
+| orcarouter/Qwen3.8-27B-Uncensored-INT8 | 27,36 B | no disponible | imagen-texto | Apache 2.0 | gated |
+| Qwen/Qwen3.8-27B (base) | 27,36 B (declarado) | no disponible | imagen-texto | Apache 2.0 (según este repo) | no disponible |
+| Alternativas abliterated de la familia Qwen | variable | variable | texto o multimodal | Apache 2.0 habitualmente | variable |
 
-No se dispone de resultados de rendimiento comparativos entre estas versiones en la informacion disponible.
+No se dispone de datos verificables de benchmarks ni de especificaciones del modelo base en la información proporcionada, por lo que la comparación cuantitativa con alternativas de la misma categoría no está disponible.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar las condiciones en Hugging Face para poder descargar el modelo.
-- Contenido sin restricciones: al estar ablizado, puede generar contenido inapropiado, ilegal o danino. No debe desplegarse en produccion sin moderacion externa.
-- Idiomas limitados: solo ingles y chino, sin soporte nativo para espanol u otros idiomas.
-- Longitud de contexto no verificada: no se ha confirmado la ventana de contexto efectiva de esta version cuantizada.
-- Perdida de calidad por cuantizacion: la conversion a INT8 puede degradar ligeramente la precision en tareas de razonamiento complejo frente al modelo FP16.
-- Sin benchmarks publicados: no hay datos que verifiquen el rendimiento real de esta variante.
-- La ablbilizacion puede eliminar tambien otras capacidades de alineacion y seguridad, no solo las negativas de contenido.
+- Modelo sin censura: la abliteration elimina los mecanismos de rechazo, por lo que puede generar contenido dañino, ilegal o sexualmente explícito. No debe desplegarse de cara al público sin capas de moderación externas.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face; el uso comercial está sujeto tanto a la licencia Apache 2.0 como a las condiciones de acceso del autor.
+- Idiomas limitados a inglés y chino: el rendimiento en castellano no está documentado y previsiblemente será inferior.
+- Riesgo elevado de alucinación: no hay benchmarks publicados que cuantifiquen la precisión factual, y la cuantización INT8 puede degradar tareas sensibles a la precisión numérica.
+- Metadatos no verificados: la denominación Qwen3.8 y los tags qwen3_5 no corresponden a una familia publicada oficialmente, lo que impide confirmar la arquitectura, el contexto y el entrenamiento reales.
+- Sin datos de calibración de la cuantización: se desconoce la pérdida de calidad frente al modelo en BF16.
+- Contexto desconocido: no se puede planificar el uso en tareas de contexto largo sin confirmar la ventana real del modelo base.
+- Sin garantías de soporte: es una publicación de un tercero (orcarouter), no del equipo oficial de Qwen, por lo que no hay mantenimiento ni parches de seguridad garantizados.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-INT8)
-- [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-INT8
+- Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
+- Documentación de compressed-tensors (formato de cuantización): https://github.com/neuralmagic/compressed-tensors
+- Documentación de vLLM (despliegue): https://docs.vllm.ai
+- Documentación de transformers: https://huggingface.co/docs/transformers

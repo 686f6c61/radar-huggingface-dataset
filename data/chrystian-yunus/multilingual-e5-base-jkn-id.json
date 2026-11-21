@@ -1,0 +1,146 @@
+{
+  "schema": 2,
+  "id": "chrystian-yunus/multilingual-e5-base-jkn-id",
+  "slug": "chrystian-yunus-multilingual-e5-base-jkn-id",
+  "author": "chrystian-yunus",
+  "url": "https://huggingface.co/chrystian-yunus/multilingual-e5-base-jkn-id",
+  "created_at": "2026-11-18T13:54:53.000Z",
+  "updated_at": "2026-11-21T10:25:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:687",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.620253164556962
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8734177215189873
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9493670886075949
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@1",
+      "value": 0.620253164556962
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@3",
+      "value": 0.291139240506329
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@5",
+      "value": 0.1898734177215189
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@10",
+      "value": 0.09999999999999996
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@1",
+      "value": 0.620253164556962
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@3",
+      "value": 0.8734177215189873
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@5",
+      "value": 0.9493670886075949
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8186861531642585
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7593329314848302
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Map@100",
+      "value": 0.7593329314848302
+    }
+  ],
+  "sources": []
+}

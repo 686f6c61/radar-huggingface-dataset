@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/WaifuGemma4-26b-a4b-v1-i1-GGUF",
   "created_at": "2026-09-18T18:12:16.000Z",
-  "updated_at": "2026-09-19T04:37:51.000Z",
+  "updated_at": "2026-11-20T11:21:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -68,7 +68,7 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 3224,
   "trending_score": 0,
   "parameters": 25233142046,

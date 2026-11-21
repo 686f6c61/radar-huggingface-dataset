@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickForma",
+  "slug": "kyle308666-brickgpt-qwen3-1-7b-brickforma",
+  "author": "Kyle308666",
+  "url": "https://huggingface.co/Kyle308666/BrickGPT-Qwen3-1.7B-BrickForma",
+  "created_at": "2026-10-17T05:09:37.000Z",
+  "updated_at": "2026-11-21T10:20:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 283,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3522390646,
+  "storage_human": "3.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

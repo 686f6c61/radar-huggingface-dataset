@@ -2,98 +2,108 @@
 
 ## Resumen
 
-LFM3-1.7B-chv-v2-GGUF es la distribucion en formato GGUF del modelo LFM3-1.7B-chv-v2, un ajuste fino del modelo base LiquidAI LFM3-1.7B especializado en traduccion bidireccional entre chuvasio (chv) y ruso (ru). Lo desarrolla la organizacion chuvash-ai, centrada en recursos abiertos para la lengua chuvasia, una lengua turquica de bajos recursos hablada principalmente en la republica de Chuvasia (Rusia). El modelo resuelve un problema concreto: la escasez de sistemas de traduccion neuronal de calidad para pares de lenguas de bajos recursos, ofreciendo un traductor ligero de 1.728.801.600 parametros que cabe en hardware de consumo.
+LFM3-1.7B-chv-v2-GGUF es la distribucion en formato GGUF del modelo LFM3-1.7B-chv-v2, un modelo de traduccion especializado en el par chuvasio-ruso desarrollado por la organizacion chuvash-ai. El modelo parte del LFM3-1.7B de LiquidAI y ha sido afinado especificamente para traduccion, con un total de 1.728.801.600 parametros (aproximadamente 1,7 mil millones). Este repositorio concreto anade una plantilla de chat de traductor que permite usar el modelo directamente en LM Studio, llama.cpp server y cualquier aplicacion que renderice plantillas de chat GGUF.
 
-La particularidad de esta variante GGUF no esta en los pesos (identicos a los del repositorio principal, solo cuantizados a Q4_K_M), sino en la plantilla de chat: el modelo se entreno como traductor de estilo completion, no como modelo conversacional, y esta distribucion reemplaza la plantilla de chat nativa de LFM3 por una que renderiza cada peticion en el formato exacto de entrenamiento. Segun el autor, las salidas son byte-identicas a las de los prompts de completion en crudo.
+La relevancia de esta publicacion radica en que el modelo original fue entrenado como traductor de estilo completion, no como modelo conversacional. La plantilla de chat nativa de LFM3 envolvia los mensajes en un formato que el modelo nunca vio durante el entrenamiento, degradando la calidad de las traducciones. Este repo mantiene los pesos cuantizados identicos pero sustituye la plantilla de chat por una que renderiza cada peticion en el formato exacto de entrenamiento, con salidas verificadas como identicas byte a byte a las de las peticiones de completion en crudo.
 
-Es relevante ahora porque permite desplegar un traductor especializado chuvasio-ruso en LM Studio o llama.cpp sin infraestructura dedicada, con licencia LFM Open License v1.0 que autoriza uso comercial por debajo de 10 millones de dolares de ingresos anuales. La arquitectura subyacente es la LFM3 hibrida conv/attention de LiquidAI, con 1,7 mil millones de parametros y contexto no especificado en la informacion disponible.
+El modelo esta pensado para entornos de bajos recursos linguisticos, concretamente el chuvasio, una lengua minoritaria de la familia turkica hablada en la region del Volga. El repositorio ocupa 1,1 GB y distribuye pesos en Q4_K_M, lo que lo hace desplegable en hardware modesto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM3 hibrida conv/attention (segun model card) |
+| Arquitectura | LFM3 (hibrida conv/attention), segun la model card |
 | Parametros totales | 1.728.801.600 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (unico archivo publicado) |
+| Tipos de cuantizacion | Q4_K_M |
 | Idiomas soportados | chuvasio (chv), ruso (ru) |
 | Licencia | LFM Open License v1.0 (uso comercial permitido por debajo de 10 M USD de ingresos anuales) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura LFM3 de LiquidAI, descrita en la model card como hibrida conv/attention. No se dispone de detalles adicionales sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni composicion del dataset de entrenamiento en la informacion proporcionada. El ajuste fino se realizo sobre el modelo base LiquidAI LFM3-1.7B para especializarlo en traduccion chuvasio-ruso.
+El modelo base LFM3-1.7B emplea la arquitectura LFM3 de LiquidAI, descrita en la model card como hibrida conv/attention. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El modelo original fue afinado como traductor de estilo completion con el formato exacto:
 
-El aspecto tecnico mas destacable es el diseno como traductor de completion en lugar de modelo conversacional: el formato nativo de inferencia es un prompt fijo con la instruccion "Переведи на чувашский язык.", el texto fuente y el marcador "Перевод:". El autor advierte que la plantilla de chat nativa de LFM3 degrada la calidad de traduccion porque el modelo nunca vio ese marcado durante el entrenamiento. Esta variante GGUF mantiene los tensores cuantizados identicos al repositorio principal y solo modifica `tokenizer.chat_template` y `general.name` para renderizar las peticiones en el formato de entrenamiento. No se documenta en la informacion disponible si hubo RLHF, DPO ni el volumen de tokens de entrenamiento.
+```
+Переведи на чувашский язык.
+
+{texto origen}
+
+Перевод:
+```
+
+El repositorio GGUF no reentrena ni modifica los pesos: los tensores son identicos a los del GGUF del repositorio principal. Las unicas diferencias son la plantilla `tokenizer.chat_template` y el campo `general.name`. La plantilla nueva renderiza cada peticion en el formato de entrenamiento, y el autor indica que las salidas han sido verificadas como identicas byte a byte a las de las peticiones de completion sin plantilla.
+
+Una innovacion destacable es el control de direccion de traduccion mediante system prompt: sin system prompt el modelo traduce de ruso a chuvasio (sentido por defecto); con el system prompt `Переведи на русский язык.` traduce de chuvasio a ruso. El modelo no es un modelo de razonamiento y nunca emite `</think>`.
 
 ## Capacidades
 
-- Traduccion bidireccional chuvasio-ruso y ruso-chuvasio, con control de direccion mediante system prompt.
-- Traduccion de un solo turno: el modelo esta disenado para traducir un texto por peticion, no para mantener conversaciones multi-turno.
-- Inferencia en modo greedy (temperatura 0) recomendada por el autor para traduccion.
-- Compatibilidad con llama.cpp server, LM Studio y cualquier runtime que renderice plantillas de chat GGUF.
-- Compatibilidad con la API `/completion` en crudo usando el formato de prompt nativo, sin necesidad de plantilla.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking en la informacion disponible.
-- Capacidades multilingues limitadas a los dos idiomas de entrenamiento declarados (chv, ru).
+- Traduccion de texto entre ruso y chuvasio en ambos sentidos, mediante control explicito de direccion por system prompt.
+- Traduccion de un solo turno: el modelo no esta disenado para conversacion multi-turno.
+- Compatibilidad con plantillas de chat GGUF en LM Studio y llama.cpp server, ademas de la API `/completion` en crudo.
+- Funcionamiento en modo greedy (temperature 0) para traduccion.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- No dispone de modo thinking ni de capacidades de vision o audio.
+- Cobertura linguistica limitada a chuvasio y ruso; no se documentan otros idiomas.
 
 ## Casos de uso
 
-- Traduccion de documentacion oficial al chuvasio: el modelo traduce textos administrativos o institucionales del ruso al chuvasio en modo greedy, adecuado para producir borradores que un hablante nativo revise antes de publicacion.
-- Localizacion de interfaces y contenido web: integracion via llama.cpp server o LM Studio para traducir cadenas de texto de aplicaciones al chuvasio, aprovechando que el modelo cabe en hardware modesto y no requiere GPU dedicada.
-- Preservacion linguistica y corpus digitales: traduccion de material ruso a chuvasio para alimentar archivos linguisticos y proyectos de documentacion de la lengua, dado el enfoque del autor en recursos abiertos para chuvasio.
-- Traduccion asistida para hablantes de chuvasio: uso como primera pasada en flujos de traduccion humana, donde el traductor revisa y corrige la salida del modelo en lugar de partir de cero.
-- Procesamiento por lotes de textos cortos: el modelo de 1,7 B en Q4_K_M permite ejecutar traducciones masivas en CPU o GPU de consumo mediante llama.cpp, con coste por token muy bajo comparado con APIs comerciales.
-- Investigacion en NLP de bajos recursos: servir como linea base reproducible para experimentos de traduccion chuvasio-ruso, con la advertencia de usar la version bf16 del repositorio principal para benchmarking y esta Q4 solo para servicio.
-- Educacion y aprendizaje del chuvasio: apoyo a estudiantes rusohablantes mediante traduccion de frases y textos, siempre con supervision humana por el riesgo de errores en un modelo de este tamano.
+- Traduccion de documentacion administrativa al chuvasio: el modelo permite convertir textos oficiales en ruso a chuvasio para servicios publicos regionales, con direccion controlada por system prompt y salida greedy determinista.
+- Localizacion de contenidos web para comunidades chuvasio-parlantes: se puede integrar en un pipeline que reciba HTML o texto plano en ruso y devuelva la version en chuvasio, procesando cada fragmento como peticion independiente de un solo turno.
+- Digitalizacion y traduccion de patrimonio cultural: traduccion de textos literarios o etnograficos del chuvasio al ruso para investigadores que no dominan la lengua, usando el sentido chv→ru mediante system prompt.
+- Generacion de subtitulos y material educativo bilingue: el modelo puede producir pares de frases ru/chv para materiales didacticos de escuelas de la region, con Q4_K_M suficiente para servir en hardware modesto.
+- Traduccion asistida en herramientas de escritorio: despliegue local en LM Studio con Q4_K_M (1,1 GB de repo) para traductores que trabajan con textos cortos y necesitan confidencialidad sin enviar datos a la nube.
+- Preprocesado de corpus para NLP de bajos recursos: uso del modelo para generar traducciones sinteticas chv→ru que alimenten corpus de entrenamiento o evaluacion de otros sistemas de NLP para el chuvasio.
+- Integracion en servidores llama.cpp para APIs de traduccion: `llama-server -m ... --jinja --temp 0` expone un endpoint compatible con clientes que consumen traduccion bajo demanda.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados de chrF++ (sacrebleu, a nivel de corpus) sobre un conjunto de test fijo reservado, con decodificacion greedy:
+Metrica: chrF++ (sacrebleu, a nivel de corpus), test held-out fijo, decodificacion greedy.
 
 | Variante | Motor | ru→chv | chv→ru |
 |---|---|---:|---:|
 | LFM3-1.7B-chv-v2 bf16 | transformers | 34,89 | 35,10 |
-| Q4_K_M (este repositorio) | llama.cpp | 30,03 | no disponible |
+| Q4_K_M (este repo) | llama.cpp | 30,03 | no disponible |
 
-El autor indica que la arquitectura hibrida conv/attention de LFM3 pierde entre 2,6 y 4,9 puntos de chrF con la cuantizacion Q4_K_M, y recomienda usar el bf16 del repositorio principal para benchmarking y la Q4 para servicio. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales en la informacion disponible.
+El autor indica que la arquitectura hibrida conv/attention pierde aproximadamente 2,6-4,9 puntos de chrF con Q4_K_M, y recomienda usar bf16 del repositorio principal para benchmarking y Q4 para servir. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo Q4_K_M ocupa aproximadamente 1,1 GB (tamano del repositorio), por lo que la inferencia requiere alrededor de 1,5-2 GB de memoria considerando overhead de contexto y runtime.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; el modelo es viable en RTX 3060, RTX 4060, RTX 4090 y GPUs de datacenter como A100 o H100, aunque estas ultimas estan sobredimensionadas para 1,7 B de parametros.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp (requiere build posterior a b11938, del 27 de octubre de 2026, donde se fusiono la arquitectura `lfm3`), LM Studio (motor llama.cpp 2.65.1 o superior), llama-server con `--jinja` para habilitar la plantilla de chat, y la API `/completion` en crudo sin plantilla.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: el repositorio ocupa 1,1 GB y solo se distribuye Q4_K_M; con overhead de contexto y cache KV, la huella tipica se situa en torno a 2 GB o menos, aunque no se publican cifras oficiales.
+- GPU recomendadas: no se especifican modelos concretos; por tamano, cualquier GPU consumer con al menos 4 GB de VRAM deberia poder cargar Q4_K_M.
+- Cabe en GPU consumer: si, previsiblemente en GTX/RTX de gama media y en GPUs integradas con suficiente memoria compartida, aunque el autor no confirma modelos concretos.
+- Opciones de despliegue: llama.cpp (requiere build posterior a b11938, donde se integro la arquitectura `lfm3`, del 27 de octubre de 2026), llama-server, LM Studio con motor llama.cpp 2.65.1 o superior, y cualquier runtime compatible con GGUF y plantillas Jinja.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables de traduccion chuvasio-ruso en la informacion proporcionada. Como referencia estructural, se compara con el modelo base y su variante sin cuantizar:
-
-| Modelo | Parametros | Contexto | Formato | Licencia | chrF++ ru→chv |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-chv-v2-GGUF Q4_K_M | 1,73 B | no disponible | GGUF | LFM Open License v1.0 | 30,03 |
-| LFM3-1.7B-chv-v2 bf16 | 1,73 B | no disponible | safetensors | LFM Open License v1.0 | 34,89 |
-| LiquidAI LFM3-1.7B (base) | 1,73 B | no disponible | safetensors | LFM Open License v1.0 | no disponible (no especializado en chuvasio) |
+| LFM3-1.7B-chv-v2-GGUF (este) | 1,7 B | no disponible | chrF++ 30,03 ru→chv (Q4_K_M) | LFM Open License v1.0 | GGUF en HF |
+| LFM3-1.7B-chv-v2 (bf16) | 1,7 B | no disponible | chrF++ 34,89 ru→chv / 35,10 chv→ru | LFM Open License v1.0 | Pesos bf16 en HF |
+| LFM3-1.7B (base LiquidAI) | 1,7 B | no disponible | no disponible para chuvasio | LFM Open License v1.0 | HF |
 
-No se identifican en la informacion disponible otros modelos abiertos especializados en traduccion chuvasio-ruso para una comparativa directa.
+No se dispone de informacion sobre otros modelos especializados en traduccion chuvasio-ruso para una comparativa adicional.
 
 ## Limitaciones y advertencias
 
-- Modelo de un solo turno: no mantiene conversaciones; cada traduccion debe iniciarse en un chat nuevo. Usarlo en modo conversacional degrada la calidad.
-- Perdida de calidad por cuantizacion: la version Q4_K_M pierde entre 2,6 y 4,9 puntos de chrF++ respecto al bf16, segun el propio autor. Para evaluacion o produccion con requisitos de calidad estrictos, usar el bf16 del repositorio principal.
-- Riesgo de alucinacion y errores de traduccion: con 1,7 B de parametros y entrenamiento en una lengua de bajos recursos, es esperable una tasa de error no despreciable; se recomienda revision humana en contextos criticos.
-- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse sobre datos en ruso y chuvasio, puede heredar sesgos de esas fuentes.
-- Limitaciones de contexto e idioma: solo se declaran chv y ru; no se especifica la longitud de contexto soportada, lo que limita el diseno de flujos con textos largos sin validacion previa.
-- Restricciones de licencia: LFM Open License v1.0 permite uso comercial solo por debajo de 10 M USD de ingresos anuales; por encima se requiere licencia adicional de LiquidAI.
-- Dependencia de version de runtime: requiere llama.cpp posterior a b11938 (27 de octubre de 2026) o LM Studio con motor 2.65.1 o superior; versiones anteriores fallan con `unknown architecture: 'lfm3'`.
-- Temperatura: el autor recomienda temperatura 0 (greedy) para traduccion; otros valores pueden degradar la salida.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria independiente.
+- El modelo es un traductor de un solo turno; no debe usarse como chatbot conversacional.
+- El modo de razonamiento debe estar desactivado: el modelo nunca emite `</think>`, y si la aplicacion activa el parseo de razonamiento, la respuesta queda vacia.
+- La plantilla de chat original de LFM3 degrada la calidad de traduccion; es imprescindible usar la plantilla incluida en este repo o el formato de prompt en crudo.
+- La cuantizacion Q4_K_M introduce una perdida de calidad de aproximadamente 2,6-4,9 puntos chrF frente a bf16.
+- Cobertura linguistica limitada a chuvasio y ruso; no se documentan otros idiomas ni capacidades multilingues.
+- Riesgo de alucinacion en textos largos, terminologia especializada o dominios tecnicos no cubiertos por el entrenamiento; no se publican evaluaciones al respecto.
+- Sesgos: no se documentan sesgos conocidos en la informacion disponible.
+- Licencia LFM Open License v1.0: uso comercial permitido solo por debajo de 10 M USD de ingresos anuales; por encima se requiere licencia adicional de LiquidAI.
+- Requiere builds de llama.cpp posteriores a b11938 (27 de octubre de 2026) para reconocer la arquitectura `lfm3`; engines antiguos fallan con `unknown architecture: 'lfm3'`.
+- No soporta tool calling, agentes ni reasoning, lo que limita su integracion en pipelines complejos.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2-GGUF
-- Repositorio principal (bf16): https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2
-- Modelo base LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
+- Repositorio Hugging Face: https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2-GGUF
+- Modelo base (bf16): https://huggingface.co/chuvash-ai/LFM3-1.7B-chv-v2
+- Modelo original LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Licencia: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Organizacion chuvash-ai: https://huggingface.co/chuvash-ai

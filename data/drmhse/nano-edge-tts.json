@@ -5,7 +5,7 @@
   "author": "drmhse",
   "url": "https://huggingface.co/drmhse/nano-edge-tts",
   "created_at": "2026-11-11T14:28:36.000Z",
-  "updated_at": "2026-11-11T14:34:17.000Z",
+  "updated_at": "2026-11-20T21:28:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 314,
+  "downloads_30d": 364,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,

@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 600,
+  "downloads_30d": 847,
   "trending_score": 0,
   "parameters": 1888668781,
   "parameters_human": "1.89B",
@@ -51,5 +51,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Baskets artisanales en cuir & streetwear | Martin Valen",
+      "url": "https://martinvalen.com/fr/",
+      "snippet": "De notre studio aux rues du monde entier, Martin Valen incarne une mode contemporaine avec du caractère. Singulière mais facile à …"
+    },
+    {
+      "title": "Valen - Aston Martin",
+      "url": "https://www.astonmartin.com/en/models/valen",
+      "snippet": "Valen is defined by design cues you rarely see in Aston Martin front-mid engine models. From the full carbon fibre body exterior to …"
+    },
+    {
+      "title": "Valen - Aston Martin FR",
+      "url": "https://www.astonmartin.com/fr/models/valen",
+      "snippet": "Valen se définit par un design que l'on voit rarement sur les modèles à moteur avant-central d’Aston Martin. De la carrosserie …"
+    },
+    {
+      "title": "GitHub - Valen-Team/Valen: Open multimodal decision models, 0.8B …",
+      "url": "https://github.com/Valen-Team/Valen",
+      "snippet": "Use Valen’s probabilities to choose which tickets to route automatically and which need human review. Compare 0.8B, 2B and 4B by …"
+    },
+    {
+      "title": "Valen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Valen",
+      "snippet": "This disambiguation page lists articles associated with the title Valen. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
 }

@@ -2,59 +2,58 @@
 
 ## Resumen
 
-Xing4.0-29B-Intent es un modelo de lenguaje especializado en reconocimiento de intenciones y extracción estructurada de información, desarrollado por XingChen-AGI (China Telecom Artificial Intelligence Technology Co., Ltd.) a partir del modelo base Xing4.0-29B-A4B. Su funcionamiento se guía por esquemas (schema-guided): el usuario proporciona las categorías candidatas y las definiciones de campos, y el modelo devuelve un array JSON donde cada elemento contiene `category` y `args`. Unifica en una sola representación cuatro tareas clásicas de NLP: reconocimiento de intención con slot filling, reconocimiento de entidades nombradas (NER), extracción de relaciones y extracción de eventos.
+Xing4.0-29B-Intent es un modelo de lenguaje especializado en reconocimiento de intenciones y extracción estructurada de información, desarrollado por XingChen-AGI (China Telecom Artificial Intelligence Technology Co., Ltd.). Parte del modelo base Xing4.0-29B-A4B, un transformer con arquitectura de mezcla de expertos (MoE) de aproximadamente 29B parámetros totales y unos 4B activos por token, y se ha afinado específicamente para convertir lenguaje natural en resultados estructurados en formato JSON que los sistemas de negocio pueden consumir directamente.
 
-El modelo emplea una arquitectura de mezcla de expertos (MoE) con aproximadamente 29B parámetros totales y unos 4B activos por token, lo que reduce el coste de inferencia frente a un modelo denso del mismo tamaño. Está afinado sobre el modelo base Xing4.0-29B-A4B y su pipeline es text-generation con soporte de código personalizado (`custom_code`) en transformers. Soporta chino e inglés, y su licencia Apache 2.0 facilita el uso comercial.
+El modelo resuelve un problema concreto: unificar bajo una misma representación (`category` + `args`) cuatro tareas clásicas de procesamiento del lenguaje natural —reconocimiento de intenciones con relleno de slots, reconocimiento de entidades nombradas, extracción de relaciones y extracción de eventos— guiadas por un esquema (schema-guided). Esto permite definir mediante un esquema las categorías candidatas y los campos extraíbles, y obtener respuestas consistentes en todos los escenarios de negocio sin cambiar el protocolo de entrada/salida.
 
-Su relevancia actual radica en que ofrece una alternativa abierta y desplegable en infraestructura propia para tareas de parsing semántico orientado a sistemas de negocio (asistentes, enrutamiento de peticiones, extracción documental), con resultados que, según la model card, superan a varios modelos propietarios de gran escala en su conjunto de evaluación. El repositorio ocupa 62,4 GB y acumula más de 6.000 descargas y 327 likes en Hugging Face.
+Es relevante ahora porque ofrece un rendimiento competitivo frente a modelos propietarios de gran escala en tareas de extracción estructurada (según la evaluación del autor, 58 de puntuación global frente a 49 de Gemini-3.6-Flash o 46 de Qwen3.8-Max), con licencia Apache 2.0 y pesos abiertos en formato safetensors, lo que facilita su despliegue en asistentes inteligentes, enrutamiento de peticiones y extracción documental. El modelo soporta chino e inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) transformer; modelo base Xing4.0-29B-A4B |
-| Parametros totales | 31.215.031.088 (~31,2B; la model card indica ~29B) |
-| Parametros activos | ~4B por token |
+| Arquitectura | Transformer con mezcla de expertos (MoE), modelo base Xing4.0-29B-A4B |
+| Parametros totales | 31.215.031.088 (aprox. 29B según model card) |
+| Parametros activos | Aproximadamente 4B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repo en safetensors sin cuantizaciones publicadas) |
-| Idiomas soportados | chino (zh) e inglés (en) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | Chino (zh) e inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería transformers, con custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Xing4.0-29B-A4B, un modelo de lenguaje semántico con arquitectura de mezcla de expertos en la que aproximadamente 4B de los ~29B parámetros se activan por token. Esta configuración permite mantener una capacidad de representación propia de un modelo grande con un coste computacional por token comparable a un modelo denso de menor tamaño. El modelo base incorpora pesos en safetensors y requiere `custom_code` en transformers para su carga, lo que implica que la definición de la arquitectura no es la estándar de la librería y debe confiarse en el código del repositorio.
+El modelo se construye sobre Xing4.0-29B-A4B, un transformer con arquitectura de mezcla de expertos (MoE) en el que cada token activa aproximadamente 4B de los 29B parámetros totales. La model card no detalla la configuración interna de la MoE (número de expertos, política de enrutamiento) ni la longitud de contexto nativa; remite para ello a la documentación del modelo base en el repositorio de GitHub.
 
-El ajuste fino se orienta a tareas de extracción estructurada guiada por esquema: el modelo recibe instrucciones de tarea, el esquema (categorías candidatas y definiciones de campos) y el texto o conversación, y produce un array JSON con objetos `category`/`args`. No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El dataset asociado es XingChen-AGI/Xing4.0-29B-Intent-oss. La model card remite a los papers citados (arXiv 2610.34343, 2512.24157, 2507.18013, 2401.03804) para los detalles técnicos, pero su contenido no está incluido en la información proporcionada.
+El ajuste específico se orienta a tareas de extracción estructurada guiada por esquema. El modelo recibe instrucciones de tarea, un esquema (categorías candidatas, descripciones y definiciones de campos) y el texto o conversación, y devuelve un array JSON cuyos elementos contienen `category` y `args`. La representación unificada cubre reconocimiento de intenciones y relleno de slots, NER, extracción de relaciones y extracción de eventos. No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset (más allá del dataset companion Xing4.0-29B-Intent-oss), ni si se emplearon técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento de intención y slot filling: identifica la intención del usuario y extrae los parámetros de negocio asociados en una sola pasada.
-- Reconocimiento de entidades nombradas (NER): extrae entidades según los tipos definidos en el esquema.
-- Extracción de relaciones: identifica relaciones entre entidades y devuelve las entidades participantes y campos relevantes.
-- Extracción de eventos: extrae participantes, hora, lugar y demás campos del evento según el esquema.
-- Salida estructurada uniforme: array JSON con objetos `category` y `args`, con soporte de múltiples categorías y múltiples instancias de argumentos por objeto; `args` vacío (`[]`) cuando no hay argumentos que rellenar.
-- Configuración guiada por esquema: misma interfaz de entrada/salida entre escenarios de negocio mediante categorías candidatas, descripciones y definiciones de campos.
-- Multilingüe limitado a chino e inglés, con evaluación en corpus de ambos idiomas.
-- SDK complementario: definiciones de esquema, ensamblado de prompts, entrada de conversación multi-turno, llamadas síncronas y asíncronas y acceso cómodo a resultados estructurados.
-- Soporte de entrada conversacional multi-turno (según el SDK descrito).
+- Reconocimiento de intenciones y relleno de slots (slot filling) en conversaciones, devolviendo la intención y sus parámetros de negocio.
+- Reconocimiento de entidades nombradas (NER) guiado por esquema, con tipos de entidad definidos por el usuario.
+- Extracción de relaciones entre entidades, con los participantes y campos relevantes.
+- Extracción de eventos, incluyendo participantes, tiempo, ubicación y otros campos del evento.
+- Salida estructurada en JSON con arrays que soportan múltiples categorías y múltiples instancias de argumentos; `args` vacío cuando no hay argumentos que rellenar.
+- Configuración de tareas mediante esquema: categorías candidatas, descripciones de categoría y definiciones de campos, con el mismo protocolo de entrada/salida entre escenarios.
+- Capacidad multilingüe limitada a chino e inglés.
+- SDK companion que ofrece definiciones de esquema, ensamblado de prompts, entrada de conversación multi-turno y llamadas síncronas y asíncronas.
+- No se documentan en la información disponible capacidades de visión, audio, tool calling nativo ni modo de razonamiento (thinking mode).
 
 ## Casos de uso
 
-- Asistentes virtuales y chatbots de negocio: el modelo convierte cada turno del usuario en una intención y sus parámetros (por ejemplo, origen, destino y fecha en una búsqueda de vuelos), lo que permite al backend ejecutar la acción correspondiente sin lógica de parsing ad hoc.
-- Enrutamiento de peticiones (request routing): en un sistema de atención al cliente, clasifica la consulta entrante en una categoría del esquema y extrae los datos necesarios para dirigirla al equipo o flujo adecuado.
-- Extracción de información documental: dada una definición de campos, extrae entidades y relaciones de contratos, facturas o informes en chino o inglés y devuelve JSON listo para persistir.
-- Construcción de bases de conocimiento: la extracción de relaciones y eventos permite poblar grafos de conocimiento con entidades, relaciones y eventos estructurados a partir de texto no estructurado.
-- Procesamiento de conversaciones multi-turno: con el SDK de conversación, se puede mantener el contexto de un diálogo y resolver intenciones que dependen de turnos anteriores.
-- Monitorización de eventos en noticias o redes: la extracción de eventos con participantes, hora y lugar facilita la generación de alertas y resúmenes estructurados.
-- Integración en pipelines de datos: la salida JSON uniforme permite encadenar el modelo con validadores de esquema (por ejemplo, JSON Schema) y sistemas downstream sin transformaciones adicionales.
-- Despliegue on-premise con requisitos de soberanía de datos: al ser Apache 2.0 y con pesos abiertos, puede ejecutarse en infraestructura propia para datos sensibles.
+- Enrutamiento de peticiones en asistentes inteligentes: el modelo identifica la intención del usuario (por ejemplo, búsqueda de vuelos) y extrae los parámetros (origen, destino, fecha) en un único paso, lo que permite derivar la petición al servicio adecuado sin lógica ad hoc por dominio.
+- Atención al cliente automatizada: con el SDK se gestionan conversaciones multi-turno y se extraen de cada turno la intención y los slots rellenados, manteniendo un formato JSON estable que los sistemas de ticketing o CRM pueden consumir.
+- Extracción de información de documentos: a partir de un esquema que defina tipos de entidad y campos, el modelo extrae entidades y relaciones de contratos, facturas o informes en chino e inglés para poblar bases de datos estructuradas.
+- Construcción de grafos de conocimiento: la extracción de relaciones y eventos con `category` + `args` permite generar tripletas y registros de eventos listos para ingestión en un grafo, reduciendo el postprocesado respecto a salidas en texto libre.
+- Monitorización de eventos en flujos de noticias o redes: la extracción de eventos con participantes, tiempo y ubicación facilita la detección y el seguimiento de sucesos a partir de texto no estructurado.
+- Análisis de conversaciones y voz del cliente: clasificación de intenciones y extracción de entidades en transcripciones para medir motivos de contacto, productos mencionados y resultados, con salida directamente agregable.
+- Automatización de formularios y back office: conversión de texto libre (correos, mensajes) en campos estructurados según el esquema del formulario de destino, reduciendo la introducción manual de datos.
 
 ## Benchmarks y rendimiento
 
-Resultados de la model card en una escala 0–100 (redondeados a enteros), sobre cuatro tipos de tarea:
+Resultados publicados por el autor en la model card, en escala 0–100 y redondeados a enteros. La columna "Category" corresponde a la tarea de categorización; el resto de columnas a las tareas indicadas.
 
-| Modelo | Overall | Category | Event Extraction | Named Entity Recognition | Relation Extraction | Intent Understanding |
+| Modelo | Global | Category | Event extraction | NER | Relation extraction | Intent understanding |
 |---|---:|---:|---:|---:|---:|---:|
 | **Xing4.0-29B-Intent** | **58** | 69 | **40** | **72** | **38** | **81** |
 | Gemini-3.6-Flash | 49 | **71** | 30 | 71 | 29 | 64 |
@@ -68,51 +67,44 @@ Resultados de la model card en una escala 0–100 (redondeados a enteros), sobre
 | LongCat-2.0 | 41 | 68 | 24 | 62 | 23 | 53 |
 | GPT-6-Luna | 39 | 64 | 24 | 59 | 20 | 51 |
 
-No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K; la evaluación se limita a las cuatro tareas de extracción descritas.
+No se detallan en la información disponible los conjuntos de evaluación concretos, el protocolo de puntuación ni los tamaños de muestra empleados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo MoE de ~31B parámetros en safetensors ocupa aproximadamente 62 GB en fp16/bf16; en cuantizaciones de 8 bits rondaría los 31 GB y en 4 bits unos 16 GB, aunque no se publican cuantizaciones oficiales.
-- GPU recomendadas: no especificadas por el autor. Para fp16 serían necesarias GPUs con al menos 80 GB (A100 80GB, H100) o varias GPUs en paralelo; las cuantizaciones de menor precisión podrían caber en una RTX 4090 (24 GB) si se generan pesos GGUF, algo no confirmado en la información disponible.
-- Cabe en GPU de consumo: no confirmado; dependería de cuantizaciones no publicadas.
-- Opciones de despliegue: transformers con `custom_code` (requisito del repositorio); el SDK del proyecto ofrece llamadas síncronas y asíncronas. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles; la activación de ~4B parámetros por token sugiere un coste de cómputo inferior al de un modelo denso de ~29B, pero no se aportan cifras.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Como referencia de orden de magnitud, los pesos en safetensors ocupan 62,4 GB en el repositorio (aproximadamente 2 bytes por parámetro), lo que exige al menos ese espacio en memoria para cargar el modelo en precisión de 16 bits; la cuantización reduciría el requisito, pero no se documentan tipos de cuantización soportados.
+- GPU recomendadas: no disponible. Por el tamaño de los pesos, se requiere una GPU con memoria suficiente para cargar el modelo completo o varias GPU en paralelo; no se especifican modelos concretos (A100, H100, RTX 4090) en la documentación disponible.
+- ¿Cabe en GPU de consumo? No disponible. Con 62,4 GB de pesos en 16 bits no cabría en una GPU de consumo de 24 GB sin cuantización, pero no se confirma en la información proporcionada.
+- Opciones de despliegue: librería transformers (con `custom_code`, lo que implica confiar en código remoto del repositorio). No se documentan en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Overall (evaluación del autor) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Global (bench. autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xing4.0-29B-Intent | ~29B totales, ~4B activos (MoE) | no disponible | 58 | Apache 2.0 | Pesos abiertos en HF, ModelScope, Modelers |
+| Xing4.0-29B-Intent | ~29B totales, ~4B activos (MoE) | no disponible | 58 | Apache 2.0 | Pesos abiertos en Hugging Face, ModelScope, Modelers |
 | Gemini-3.6-Flash | no disponible | no disponible | 49 | Propietaria | API |
 | Qwen3.8-Max | no disponible | no disponible | 46 | Propietaria | API |
-| Kimi-K3 | no disponible | no disponible | 45 | Propietaria | API |
 | GPT-5.6-Sol | no disponible | no disponible | 45 | Propietaria | API |
 
-La comparativa se limita a los datos de la model card; no se dispone de información sobre parámetros, contexto ni licencia de los modelos propietarios comparados. En la tarea de categoría, varios modelos propietarios superan ligeramente a Xing4.0-29B-Intent (71 frente a 69), mientras que este lidera en extracción de eventos, NER, extracción de relaciones y comprensión de intención.
+La comparativa se limita a los datos de la evaluación del autor; no se dispone de parámetros, contexto ni licencia de los modelos propietarios incluidos. Frente a alternativas abiertas de tamaño comparable no se aportan datos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a chino e inglés; el rendimiento en otros idiomas no está evaluado.
-- La longitud de contexto no está publicada; no se debe asumir una ventana amplia para documentos largos sin validación previa.
-- Resultados de evaluación moderados en términos absolutos (58/100 global, 38 en extracción de relaciones), lo que indica margen de error relevante en producción.
-- El modelo está especializado en extracción estructurada; no debe emplearse como modelo generalista de generación, razonamiento o código sin validación.
-- Riesgo de alucinación en los campos extraídos: la salida JSON puede contener valores no presentes en el texto; se recomienda validación contra esquema y verificación de spans.
-- La model card advierte explícitamente de que el rendimiento en casos concretos debe validarse con los datos y el esquema objetivo.
-- Requiere `custom_code` en transformers: implica `trust_remote_code=True` y revisión del código del repositorio antes de ejecutarlo.
-- Licencia Apache 2.0 permite uso comercial, pero se desconoce si el modelo base impone condiciones adicionales; conviene revisar la licencia de Xing4.0-29B-A4B.
-- No se han publicado datos sobre sesgos; al entrenarse con corpus en chino e inglés, pueden aparecer sesgos culturales y lingüísticos propios de esos datos.
-- No se publican cuantizaciones oficiales, lo que puede dificultar el despliegue en hardware de consumo.
+- Sesgos conocidos: no documentados en la información proporcionada. Al entrenarse principalmente con corpus en chino e inglés, el rendimiento en otros idiomas no está garantizado.
+- Riesgo de alucinación: la model card advierte que el rendimiento en casos de uso específicos debe validarse con los datos y el esquema objetivo; la extracción estructurada puede producir categorías o argumentos incorrectos aunque el formato JSON sea válido.
+- Limitaciones de contexto e idioma: solo se declaran chino e inglés; la longitud de contexto no está disponible, lo que impide garantizar el procesamiento de documentos o conversaciones largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo usa `custom_code` en transformers, por lo que es necesario revisar y confiar en el código remoto del repositorio antes de desplegarlo en producción.
+- Dependencia del esquema: la calidad de la extracción depende de la definición de categorías y campos; esquemas ambiguos o incompletos degradarán los resultados.
+- Caveat de evaluación: los benchmarks proceden del propio autor y no se detallan los conjuntos ni el protocolo, por lo que deben interpretarse con cautela.
+- Disponibilidad de cuantizaciones y de integración con motores de inferencia de alto rendimiento no documentada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent
-- GitHub: https://github.com/XingChen-AGI/Xing4.0-29B-Intent
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
-- GitHub del modelo base: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
-- Dataset: https://huggingface.co/datasets/XingChen-AGI/Xing4.0-29B-Intent-oss
+- Repositorio GitHub: https://github.com/XingChen-AGI/Xing4.0-29B-Intent
+- Repositorio GitHub del modelo base: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
+- Dataset companion: https://huggingface.co/datasets/XingChen-AGI/Xing4.0-29B-Intent-oss
 - ModelScope: https://www.modelscope.cn/models/XingChen-AGI/Xing4.0-29B-Intent
 - Modelers: https://modelers.cn/models/XingChen-AGI/Xing4.0-29B-Intent
-- Paper arXiv 2610.34343: https://arxiv.org/abs/2610.34343
-- Paper arXiv 2512.24157: https://arxiv.org/abs/2512.24157
-- Paper arXiv 2507.18013: https://arxiv.org/abs/2507.18013
-- Paper arXiv 2401.03804: https://arxiv.org/abs/2401.03804
+- Papers referenciados en los tags (identificadores arXiv): 2611.22115, 2610.34343, 2512.24157, 2507.18013, 2401.03804

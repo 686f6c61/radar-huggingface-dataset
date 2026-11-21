@@ -2,98 +2,85 @@
 
 ## Resumen
 
-SZL-Nemotron-Mini-4B-Estate-v1 es un ajuste fino supervisado (SFT) del modelo nvidia/Nemotron-Mini-4B-Instruct, desarrollado por SZLHOLDINGS. El modelo parte de una arquitectura transformer de 4.190.509.056 parametros (aproximadamente 4,19 mil millones) y se ha entrenado mediante QLoRA de 4 bits con rango 16 sobre un corpus propietario compuesto por la documentacion de los 126 repositorios activos de la organizacion szl-holdings, textos doctrinales, un corpus de analisis cuantitativo y conjuntos SFT especificos.
+SZL-Nemotron-Mini-4B-Estate-v1 es un ajuste fino (fine-tune) del modelo nvidia/Nemotron-Mini-4B-Instruct, publicado por la organizacion SZLHOLDINGS dentro de lo que el autor denomina su "governed-AI estate". Se trata de un modelo de generacion de texto de 4.190.509.056 parametros (aproximadamente 4,19 mil millones) distribuido en formato safetensors y pensado para su uso con la libreria transformers. El modelo hereda la arquitectura y las capacidades del Nemotron Mini 4B Instruct de NVIDIA, sobre el que el autor ha aplicado un entrenamiento adicional cuyos detalles no se documentan en la model card.
 
-El objetivo declarado es dotar al modelo base de conocimiento interno de la organizacion: doctrina canonica, formulas y el denominado "quant analyst persona", ademas de un mecanismo de contrapeso a la abstencion ("abstention counterweight") construido a partir de fallos de confabulacion medidos en las evaluaciones previas. Se trata de un modelo de generacion de texto orientado a conversacion, con licencia Apache 2.0 y pesos en formato safetensors.
+La relevancia de esta publicacion es limitada y fundamentalmente practica: ofrece una variante de un modelo pequeno y ligero (4B) bajo la licencia nvidia-open-model-license, con un peso en disco de 8,4 GB en el repositorio. El modelo base Nemotron-Mini-4B-Instruct esta disenado para instrucciones y generacion de texto en ingles, y este derivado mantiene ese enfoque segun los metadatos disponibles (idioma declarado: en).
 
-La relevancia de esta ficha es limitada fuera del ecosistema del autor: no se han publicado resultados de benchmarks, la evaluacion de calidad esta pendiente y el modelo solo declara soporte para ingles. Su interes tecnico reside en el proceso documentado de ajuste fino (4.855 ejemplos, 606 pasos, una RTX A6000) y en el enfoque de contrapesar la abstencion frente a la confabulacion, un problema recurrente en modelos pequenos desplegados en dominios especializados.
+La model card es deliberadamente parca en informacion tecnica: no se detallan los datos de entrenamiento del ajuste, no se aportan resultados de benchmarks y se remite a ficheros de "receipts" externos que no estan incluidos en la informacion disponible. Esto limita seriamente la evaluacion independiente del modelo y obliga a tratar cualquier afirmacion de rendimiento como no verificada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de nvidia/Nemotron-Mini-4B-Instruct) |
-| Parametros totales | 4.190.509.056 |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Arquitectura | no disponible (derivado de nvidia/Nemotron-Mini-4B-Instruct; arquitectura del base no detallada en la informacion proporcionada) |
+| Parametros totales | 4.190.509.056 (4,19 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el artefacto publicado es un modelo fusionado en 16 bits; el entrenamiento uso QLoRA de 4 bits) |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
+| Tipos de cuantizacion | no disponible (el repositorio contiene pesos safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | en (ingles) |
+| Licencia | nvidia-open-model-license |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del transformer nvidia/Nemotron-Mini-4B-Instruct, convertido previamente a safetensors por el mismo autor. El entrenamiento se realizo con QLoRA de 4 bits (rango 16), durante 2 epocas, con learning rate 2e-4, longitud de secuencia 1024, batch size 1 y acumulacion de gradiente 16, totalizando 606 pasos. El artefacto publicado es el modelo completo fusionado en 16 bits. El hardware empleado fue una unica RTX A6000 en Massed Compute, con backend Unsloth.
+No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El modelo es un fine-tune de nvidia/Nemotron-Mini-4B-Instruct, por lo que se asume que conserva la arquitectura del modelo base, pero la model card no especifica si se trata de un transformer denso, un modelo hibrido o cualquier otra variante, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion.
 
-El corpus de entrenamiento suma 4.855 ejemplos procedentes de seis conjuntos de datos: estate-knowledge-corpus-v1 (1.650), doctrine-corpus-v2 (236), szl-quant-sft-v1 (2.693), szl-quant-abstention-sft-v1 (29), szl-frontier-sft-mix-v2 (206) y szl-1-doctrine-sft (41). La composicion combina documentacion de repositorios, textos doctrinales, datos de dominio cuantitativo y un pequeno conjunto de abstencion. No se documenta el uso de RLHF ni DPO, ni innovaciones arquitectonicas propias; el valor diferencial esta en la curacion del dataset y en el contrapeso de abstencion.
+Respecto al entrenamiento, la model card indica explicitamente que las afirmaciones sobre entrenamiento y evaluacion "viven en sus ficheros de receipt" dentro del "estate mesh" del autor, y que cualquier dato no registrado alli se considera UNKNOWN. No se proporcionan el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o SFT en el ajuste. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.). En consecuencia, todos estos apartados deben considerarse no disponibles.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada del modelo base Nemotron-Mini-4B-Instruct.
-- Conocimiento interno de la organizacion szl-holdings: documentacion de 126 repositorios, tesis canonica v8 y textos doctrinales.
-- Razonamiento de dominio cuantitativo y adopcion de una "persona" de analista quant, segun los conjuntos SFT empleados.
-- Comportamiento de abstencion calibrado mediante un conjunto especifico de contrapeso (29 ejemplos), orientado a reducir la confabulacion.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Generacion de texto en ingles: el modelo esta etiquetado para la tarea text-generation y declara soporte unicamente para ingles.
+- Seguimiento de instrucciones: al derivar de un modelo "-Instruct", se espera que mantenga la capacidad de responder a instrucciones, aunque no se documenta el alcance de dicho ajuste.
+- Razonamiento y codigo: no se documenta explicitamente en la informacion disponible; debe considerarse no verificado.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la model card.
-- Modo thinking, vision o audio: no disponible.
+- Capacidades multilingues: limitadas al ingles segun los metadatos; no se declaran otros idiomas.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Asistente interno de documentacion: el modelo ha leido los README de los 126 repositorios activos de la organizacion, por lo que puede responder preguntas sobre estructura, proposito y uso de cada repositorio sin necesidad de busqueda externa.
-- Consulta de doctrina y tesis canonica: adecuado para responder preguntas sobre los textos doctrinales de SZL Holdings, ya que estos forman parte directa del corpus de entrenamiento.
-- Analisis cuantitativo asistido: el conjunto szl-quant-sft-v1 (2.693 ejemplos) entrena al modelo para adoptar el rol de analista quant, util en tareas de interpretacion de formulas y metricas del dominio.
-- Mitigacion de confabulacion en produccion: el contrapeso de abstencion busca que el modelo decline responder cuando no dispone de informacion, un comportamiento deseable en asistentes internos donde una respuesta inventada tiene coste alto.
-- Prototipado rapido en una sola GPU: con 4,19 mil millones de parametros y pesos en safetensors de 16 bits (repo de 8,4 GB), puede desplegarse en una GPU consumer de gama alta para pruebas internas.
-- Base para nuevos ajustes de dominio: al estar bajo Apache 2.0 y en formato transformers estandar, sirve como punto de partida para SFT adicionales sobre corpus propios de la organizacion.
+- Prototipado rapido de asistentes conversacionales en ingles: con 4,19 B de parametros y pesos safetensors, el modelo puede cargarse en una GPU de consumo para experimentar con pipelines de generacion de texto sin requerir infraestructura de gran escala.
+- Fine-tuning adicional sobre dominios especificos: al ser un modelo pequeno y ya ajustado a instrucciones, sirve como punto de partida para tareas de adaptacion con LoRA o QLoRA en entornos con recursos limitados.
+- Generacion de texto en aplicaciones de baja latencia: el tamano reducido permite despliegues en una sola GPU, adecuado para tareas de completado o resumen en ingles donde la latencia importa mas que la profundidad de razonamiento.
+- Evaluacion comparativa de fine-tunes: util para investigadores que quieran contrastar el efecto de ajustes sobre Nemotron-Mini-4B-Instruct frente al modelo base, siempre que se disponga de los receipts del autor.
+- Despliegue en entornos con licencia permisiva: la nvidia-open-model-license permite ciertos usos comerciales bajo condiciones; conviene revisar los terminos antes de integrarlo en productos.
+- Educacion y experimentacion: su tamano manejable lo hace apropiado para cursos o talleres sobre fine-tuning y despliegue de LLMs en ingles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La propia model card indica explicitamente que no constituye una evaluacion independiente de calidad, que no se reclama ninguna metrica de precision o rendimiento y que la evaluacion de flota esta pendiente.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma explicitamente que no se aserta ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y remite a ficheros de receipt externos que no se incluyen en la documentacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en 16 bits: aproximadamente 8,4 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda entre 10 y 12 GB.
-- VRAM estimada en cuantizacion de 8 bits: alrededor de 4,5 a 5 GB de pesos.
-- VRAM estimada en cuantizacion de 4 bits: alrededor de 2,5 a 3 GB de pesos.
-- GPU recomendadas: RTX A6000 (la usada en entrenamiento), A100 o H100 para despliegue concurrente; RTX 4090 o RTX 3090 para inferencia en 16 bits.
-- Cabe en GPU consumer: si, en tarjetas con 12 GB o mas en 16 bits (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090) y en tarjetas de 8 GB con cuantizacion.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: en precision fp16, aproximadamente 8,4 GB solo para los pesos (4,19 B x 2 bytes); con overhead de activaciones y cache KV, se recomienda al menos 10-12 GB. En cuantizacion de 8 bits, en torno a 4,2 GB; en 4 bits, aproximadamente 2,1 GB (estimaciones teoricas, no confirmadas por el autor).
+- GPU recomendadas: para fp16, una RTX 4090 (24 GB) o A100/H100 si se requiere mayor throughput; para cuantizacion 4/8 bits, GPUs consumer como RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) pueden ser suficientes.
+- Cabe en GPU consumer: si, en modelos con 8 GB o mas de VRAM en cuantizacion, y en 12-16 GB en fp16.
+- Opciones de despliegue: transformers (libreria declarada); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, aunque al ser un modelo compatible con transformers es probable que pueda convertirse a GGUF, si bien esto no esta confirmado.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
-|---|---|---|---|---|---|
-| SZL-Nemotron-Mini-4B-Estate-v1 | 4,19 B | no disponible | Apache 2.0 | en | Ajuste SFT de dominio privado, sin benchmarks publicados |
-| nvidia/Nemotron-Mini-4B-Instruct | 4 B (aprox.) | no disponible | no disponible en la informacion proporcionada | no disponible | Modelo base; dispone de evaluacion publica del autor original |
-| Modelos de ~4 B de proposito general (p. ej. familias Llama o Qwen de tamano similar) | ~4 B | variable | variable | multilingue en general | Alternativas genericas; no especializadas en el corpus de SZL Holdings |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| SZL-Nemotron-Mini-4B-Estate-v1 | 4,19 B | no disponible | nvidia-open-model-license | Hugging Face (SZLHOLDINGS) |
+| nvidia/Nemotron-Mini-4B-Instruct | ~4 B (modelo base) | no disponible en la informacion | nvidia-open-model-license | Hugging Face (NVIDIA) |
+| Alternativas de tamano similar (p. ej. Qwen2.5-3B/7B, Llama-3.2-3B) | 3-7 B | 32K-128K segun modelo | Apache 2.0 / Llama license | Hugging Face |
 
-La comparacion cuantitativa con alternativas no es posible: no hay benchmarks publicados de este ajuste ni datos de contexto en la informacion disponible. Frente al modelo base, la diferencia es la especializacion en el corpus interno y el contrapeso de abstencion, no una mejora demostrada de capacidad general.
+No se dispone de datos de rendimiento comparativo para este modelo, por lo que la comparativa se limita a parametros, licencia y disponibilidad. Cualquier comparacion de calidad queda fuera del alcance de la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No existe evaluacion independiente de calidad: la model card declara explicitamente que no se reclama precision ni rendimiento y que la evaluacion de flota esta pendiente.
-- El efecto del contrapeso de abstencion sobre la confabulacion es la medicion clave pendiente; no hay evidencia publicada de que funcione.
-- Riesgo de alucinacion: al ser un modelo de 4 B ajustado sobre un corpus pequeno (4.855 ejemplos), es probable que generalice de forma incorrecta fuera del dominio entrenado.
-- Solo soporta ingles; no se declara capacidad multilingue.
-- Longitud de contexto no documentada; el entrenamiento uso secuencias de 1024 tokens, lo que sugiere un contexto efectivo limitado en la practica.
-- Sesgos: no documentados, pero el corpus esta compuesto integramente por material interno de una organizacion, lo que puede introducir un sesgo fuerte hacia su doctrina y terminologia.
-- Licencia Apache 2.0 permite uso comercial, pero el contenido del corpus de entrenamiento es propietario y su procedencia no se detalla mas alla de los enlaces a los datasets.
-- El modelo tiene cero descargas y cero likes en el momento de la ficha, y fue creado y actualizado el mismo dia (2026-11-05); no hay evidencia de uso externo.
-- La evidencia de entrenamiento remite a un log en un dataset privado y a un repositorio de GitHub, no verificable de forma independiente desde la model card publica.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al derivar de un modelo entrenado principalmente en ingles, es probable que herede sesgos del corpus original, pero no hay datos verificables.
+- Riesgo de alucinacion: no cuantificado; como todo LLM de 4B, es esperable un riesgo de alucinacion mayor que en modelos de mayor tamano, aunque no se aportan evaluaciones.
+- Limitaciones de contexto o idioma: el modelo declara soporte unicamente para ingles; no se especifica la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo.
+- Restricciones de licencia: la nvidia-open-model-license impone condiciones de uso (incluida la necesidad de cumplir con los terminos de NVIDIA); debe revisarse antes de cualquier uso comercial.
+- Caveat para produccion: la ausencia de benchmarks, de documentacion del entrenamiento y de receipts accesibles hace que el modelo no sea recomendable para produccion sin una evaluacion independiente previa. La model card advierte que cualquier dato no registrado en sus receipts es UNKNOWN.
+- Trazabilidad: el autor remite a un "estate mesh" externo para verificar afirmaciones; sin acceso a esos ficheros, la mayoria de las capacidades declaradas no son verificables.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1
+- Organizacion del autor: https://huggingface.co/SZLHOLDINGS
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
-- Conversion a safetensors del modelo base: https://huggingface.co/SZLHOLDINGS/Nemotron-Mini-4B-Instruct-st
-- Dataset estate-knowledge-corpus-v1: https://huggingface.co/datasets/SZLHOLDINGS/estate-knowledge-corpus-v1
-- Dataset doctrine-corpus-v2: https://huggingface.co/datasets/SZLHOLDINGS/doctrine-corpus-v2
-- Dataset szl-quant-sft-v1: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-sft-v1
-- Dataset szl-quant-abstention-sft-v1: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-abstention-sft-v1
-- Dataset szl-frontier-sft-mix-v2: https://huggingface.co/datasets/SZLHOLDINGS/szl-frontier-sft-mix-v2
-- Dataset szl-1-doctrine-sft: https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft
-- Logs de entrenamiento (dataset privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
-- Script de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Repositorio de la organizacion (referenciado en la card): https://github.com/szl-holdings
+- Herramienta de generacion de cards (referenciada): https://github.com/szl-holdings/estate-cards

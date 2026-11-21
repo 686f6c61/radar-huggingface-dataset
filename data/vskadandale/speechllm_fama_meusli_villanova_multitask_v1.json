@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "SpeechTek/speechllm_fama_meusli_villanova_multitask_v1",
+  "renamed_at": "2026-11-21T11:44:05.763Z",
   "benchmarks": [],
   "sources": []
 }

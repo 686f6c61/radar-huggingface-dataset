@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "loch-08/english-german-slm",
+  "slug": "loch-08-english-german-slm",
+  "author": "loch-08",
+  "url": "https://huggingface.co/loch-08/english-german-slm",
+  "created_at": "2026-11-21T04:48:13.000Z",
+  "updated_at": "2026-11-21T04:51:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "marian",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73944309,
+  "parameters_human": "73.9M",
+  "storage_bytes": 297371626,
+  "storage_human": "297 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loch - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Loch",
+      "snippet": "Loch (/ lɒx / LOKH) is a word meaning \"lake\" or \"sea inlet\" in Scottish and Irish Gaelic, subsequently borrowed into English. In Irish …Read more"
+    }
+  ]
+}

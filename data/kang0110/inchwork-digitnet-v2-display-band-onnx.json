@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "kang0110/inchwork-digitnet-v2-display-band-onnx",
+  "slug": "kang0110-inchwork-digitnet-v2-display-band-onnx",
+  "author": "kang0110",
+  "url": "https://huggingface.co/kang0110/inchwork-digitnet-v2-display-band-onnx",
+  "created_at": "2026-11-21T09:54:31.000Z",
+  "updated_at": "2026-11-21T09:54:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "seven-segment",
+    "offline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94667,
+  "storage_human": "94667 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

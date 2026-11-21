@@ -2,95 +2,89 @@
 
 ## Resumen
 
-SZL-AncientMath-0.8B-v1 es un modelo de lenguaje de 873 millones de parametros publicado por SZLHOLDINGS, derivado mediante ajuste fino supervisado (SFT) del modelo base SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que a su vez pertenece a la familia Qwen 3.5. El modelo esta especializado en lo que el autor denomina "computacion matematica antigua certificada": razonamiento sobre procedimientos matematicos de siete tradiciones historicas (china, india, egipcia, babilonica, griega, andina y moderna), con enfasis en que toda solucion debe acompanarse de una cota de error explicita.
+SZL-AncientMath-0.8B-v1 es un modelo de generacion de texto de 873 millones de parametros publicado por SZLHOLDINGS, un proyecto que agrupa modelos, datasets y Spaces bajo lo que el autor denomina "governed-AI estate", con enfasis en trazabilidad y resultados verificables mediante ficheros de recibo (receipts). El modelo se presenta como un artefacto especializado en matemáticas antiguas, derivado por ajuste fino del modelo base SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que a su vez pertenece a la familia Qwen 3.5 segun la etiqueta `qwen3_5` del repositorio.
 
-Su relevancia es mas experimental que practica. El propio autor reconoce que el entrenamiento se realizo sobre un conjunto de solo 24 ejemplos y que la evaluacion esta pendiente de una ablacion de tres condiciones. En la linea base reportada, tanto el modelo base como el modelo entrenado en razonamiento obtienen 0.0 en exactitud sobre 48 puzles certificados, lo que sugiere que la escala de 0.8B es insuficiente para resolverlos de forma exacta. Se trata, por tanto, de una pieza de investigacion sobre metodologia de entrenamiento y doctrina de uso honesto, no de un modelo listo para produccion.
+La relevancia de este lanzamiento es limitada pero concreta: se trata de un modelo pequeno (menos de 1.000 millones de parametros) bajo licencia Apache 2.0, lo que permite su despliegue en hardware de consumo y su uso comercial sin restricciones adicionales. Su interes principal radica en el nicho: procesamiento de contenido matematico historico o de tradicion antigua, un dominio poco cubierto por los modelos generalistas.
 
-El modelo se distribuye con licencia Apache 2.0, soporta exclusivamente ingles y esta orientado a generacion de texto conversacional con capacidad de razonamiento. Su interes principal reside en la filosofia de "salida no confiable": el autor insiste en que cualquier resultado del modelo debe tratarse como una propuesta a verificar, nunca como conocimiento certificado.
+No obstante, la model card es extremadamente parca en informacion tecnica. No se documentan la longitud de contexto, la composicion del dataset de entrenamiento, el numero de tokens utilizados ni resultados de benchmarks. El autor declara explicitamente que cualquier dato no respaldado por un "receipt" se etiqueta como UNKNOWN, lo que refleja una politica de honestidad pero deja al evaluador sin metricas objetivas para juzgar la calidad del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen 3.5, segun tag `qwen3_5`) |
+| Arquitectura | Transformer (familia Qwen 3.5, segun etiqueta `qwen3_5`; detalles no disponibles) |
 | Parametros totales | 873.438.784 |
-| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors de 16 bits tras el merge) |
-| Idiomas soportados | ingles (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (merge en 16 bits) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones GGUF/AWQ no documentadas) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Qwen 3.5, con 873 millones de parametros. El modelo se obtuvo mediante QLoRA SFT con Unsloth y TRL sobre una NVIDIA A6000, seguido de un merge en 16 bits para la publicacion. El modelo base es SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, un ajuste previo del mismo autor orientado a agentes de recibos, lo que implica que este modelo hereda dos capas de especializacion superpuestas.
+El modelo es un transformer decoder-only de 873 millones de parametros, heredero de la arquitectura Qwen 3.5 segun la etiqueta del repositorio. Se ha obtenido mediante ajuste fino supervisado (SFT) sobre SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, un modelo intermedio del mismo autor orientado a tareas de agente con recibos. No se especifica si hubo fases adicionales de RLHF, DPO o preference tuning.
 
-El conjunto de entrenamiento, SZLHOLDINGS/ancient-math-reasoning-sft-v1, contiene 24 ejemplos que cubren siete tradiciones matematicas. La innovacion metodologica declarada no es arquitectonica sino epistemologica: cada ejemplo ensena que "un resultado sin su cota de error no es conocimiento", citando explicitamente a Liu Hui, Madhava, Arquimedes y los escribas babilonios, ademas de los guardianes de quipus andinos como inventores de registros a prueba de manipulacion. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion detallada del dataset ni el uso de RLHF o DPO.
+La informacion sobre el corpus de entrenamiento es practicamente inexistente: no se indica el numero de tokens, la composicion del dataset ni la proporcion de contenido matematico historico frente a datos generales. El autor remite a los ficheros de recibo del "estate mesh" para cualquier afirmacion de entrenamiento o evaluacion, y declara explicitamente que lo no documentado debe considerarse desconocido. No se describen innovaciones tecnicas como decodificacion especulativa, attention lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento matematico guiado por procedimientos historicos de siete tradiciones.
-- Formulacion de cotas de error junto a los resultados, segun la doctrina de entrenamiento.
-- Modo de razonamiento (tag `reasoning` en la model card).
-- Soporte declarado de `text-generation-inference` y despliegue con transformers.
-- Compatibilidad con endpoints (`endpoints_compatible`).
-- Capacidad multimodal declarada en los tags (`image-text-to-text`), aunque no se documenta en la model card.
-- No se documenta soporte de tool calling ni de agentes multi-paso en la informacion disponible.
+- Generacion de texto en ingles orientada a contenido matematico, presumiblemente con enfasis en notacion y terminologia de tradicion antigua o historica.
+- Razonamiento matematico basico derivado del modelo base Qwen 3.5, aunque no se documenta su alcance ni su fiabilidad.
+- Ajuste fino de tipo SFT sobre un modelo previo orientado a agentes con recibos, lo que sugiere cierta capacidad de seguir instrucciones estructuradas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado para esta variante.
+- Capacidades multilingues: limitadas al ingles segun el campo `language` del repositorio.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Investigacion sobre metodologia de SFT: el modelo sirve como punto de datos en la ablacion de tres condiciones que el autor esta ejecutando sobre el mismo modelo base, util para estudiar como influye un dataset minusculo y muy especializado en el comportamiento de un modelo de 0.8B.
-- Docencia de historia de las matematicas: puede generar explicaciones de procedimientos de Liu Hui, Madhava o los escribas babilonios, siempre que el docente verifique las cifras y las cotas de error aportadas.
-- Prototipado de asistentes con doctrina de salida no confiable: util como banco de pruebas para disenar interfaces que presenten la salida del modelo como propuesta a validar, con indicacion explicita de incertidumbre.
-- Experimentos de calibracion y cotas de error: el enfasis del entrenamiento en acompanar resultados con bounds permite estudiar si un modelo pequeno aprende a expresar incertidumbre, aunque la evidencia publicada es todavia preliminar.
-- Base para futuros ajustes especializados: al ser un modelo pequeno con licencia Apache 2.0, puede servir como punto de partida para fine-tunes de dominio en entornos con recursos limitados.
-- Evaluacion comparativa de tecnicas de merge QLoRA: el flujo Unsloth + TRL + merge 16-bit documentado permite reproducir y comparar pipelines de ajuste en una sola GPU A6000.
-- Demostraciones educativas sobre limites de los modelos pequenos: el resultado de 0.0 en exactitud sobre 48 puzles certificados es un caso ilustrativo de que la escala importa en razonamiento exacto.
+- Procesamiento de textos matematicos historicos: el modelo puede emplearse para reformatear, resumir o explicar pasajes de matematicas antiguas (por ejemplo, problemas de tradicion babilonica, griega o china) en ingles moderno, aprovechando su ajuste especifico de dominio.
+- Asistencia educativa en historia de las matematicas: integrado en una aplicacion docente, puede generar explicaciones de metodos antiguos (regla de falsa posicion, algebra geometrica) para estudiantes, con la ventaja de su reducido tamano para despliegue local.
+- Generacion de ejercicios tematicos: util para crear problemas de practica inspirados en matematicas historicas, con enunciados y soluciones, en un pipeline de generacion de contenido educativo.
+- Prototipado rapido en entornos con GPU de consumo: al ocupar menos de 2 GB en pesos originales, permite iterar en portatiles con GPU de 8 GB o menos, lo que facilita experimentacion academica sin infraestructura dedicada.
+- Filtrado y clasificacion de corpus: puede usarse como modelo auxiliar para etiquetar o filtrar documentos matematicos historicos en un pipeline de curacion de datos, aprovechando su especializacion.
+- Base para ajuste fino adicional: dado su tamano y licencia permisiva, sirve como punto de partida para fine-tuning en subdominios concretos (por ejemplo, matematicas de una civilizacion especifica) con costes de computo muy bajos.
 
 ## Benchmarks y rendimiento
 
-| Evaluacion | Modelo base | Modelo con razonamiento (este) | Metrica |
-|---|---|---|---|
-| 48 puzles certificados | 0.0 exacto | 0.0 exacto | exactitud exacta |
-
-El autor indica que la evaluacion esta en estado `THREE_CONDITION_ABLATION_PENDING` y que este modelo constituye el tercer punto de datos de la ablacion. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y no se incluye ninguna medicion en el repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en 16 bits: aproximadamente 1.8 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, entre 3 y 4 GB para contextos moderados.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 1 GB para pesos; en 4 bits, alrededor de 0.5 GB.
-- GPU recomendadas para entrenamiento: NVIDIA A6000 (la usada por el autor); cualquier GPU con 24 GB o mas permite reproducir el flujo QLoRA.
-- GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090; tambien en GPUs de 8 GB con cuantizacion.
-- Opciones de despliegue: transformers, text-generation-inference (declarado en los tags), y previsiblemente llama.cpp u Ollama si se generan pesos GGUF, aunque no se documenta su publicacion.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,8 GB solo para pesos, mas overhead de activaciones y cache KV (tipicamente 2,5-3,5 GB en total para contextos moderados).
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 1 GB para pesos; en 4 bits, aproximadamente 0,5-0,6 GB.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM es suficiente en FP16; una RTX 3060, RTX 4060, RTX 4090 o incluso una GTX 1660 con 6 GB pueden ejecutarlo en cuantizacion.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU moderna de escritorio o portatil con 6-8 GB de VRAM.
+- Opciones de despliegue: transformers (referencia), vLLM, TGI, llama.cpp/Ollama (previa conversion a GGUF, no publicada), y servidores compatibles con la familia Qwen.
+- Latencia y throughput: no disponibles; al tratarse de un modelo sub-1B, se espera un throughput alto (cientos de tokens por segundo en GPU modernas), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| SZL-AncientMath-0.8B-v1 | 873 M | no disponible | Apache 2.0 | Matematicas historicas certificadas | Hugging Face |
-| Qwen 3.5 0.8B (familia base) | ~0.8 B | no disponible | segun variante | Proposito general | Hugging Face |
-| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3 | ~0.8 B | no disponible | no disponible | Agente de recibos | Hugging Face |
+| SZL-AncientMath-0.8B-v1 | 873 M | no disponible | Apache 2.0 | en | Especializado en matematicas antiguas; sin benchmarks |
+| Qwen2.5-0.5B / Qwen3-0.6B | 0,5-0,6 B | 32 K (Qwen2.5) | Apache 2.0 | multilingue | Modelos generalistas de referencia en el rango sub-1B |
+| TinyLlama-1.1B | 1,1 B | 2 K | Apache 2.0 | en | Generalista, ampliamente desplegado en consumer |
+| SmolLM2-1.7B | 1,7 B | 8 K | Apache 2.0 | en | Generalista con mejor rendimiento documentado |
 
-No se dispone de datos de rendimiento comparativo con alternativas, por lo que la comparacion se limita a parametros, licencia y enfoque. Cualquier modelo de ~0.8B de proposito general de la misma familia resulta un punto de referencia natural, pero no se han publicado metricas que permitan situar a este fine-tune por encima o por debajo.
+La comparacion directa es dificil porque SZL-AncientMath no publica contexto ni benchmarks. Frente a los generalistas del mismo rango, su ventaja es la especializacion de dominio; su desventaja es la ausencia de metricas y de cuantizaciones listas para usar.
 
 ## Limitaciones y advertencias
 
-- El propio autor califica la salida del modelo como "propuesta no confiable" (untrusted proposal); no debe usarse como fuente de verdad matematica.
-- Exactitud de 0.0 sobre 48 puzles certificados: la escala de 0.8B es insuficiente para soluciones exactas segun el autor.
-- Entrenamiento con solo 24 ejemplos, lo que implica un riesgo alto de sobreajuste y de generalizacion muy limitada.
-- Evaluacion incompleta: la ablacion de tres condiciones esta pendiente.
-- Soporte exclusivo de ingles; no se documenta multilinguismo.
-- Longitud de contexto no documentada, lo que dificulta planificar su uso en conversaciones largas.
-- Riesgo elevado de alucinacion en cifras, procedimientos historicos y cotas de error, precisamente el ambito que el modelo pretende ensenar.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, la calidad y fiabilidad del modelo no lo hacen apto para produccion sin validacion humana exhaustiva.
-- No se documenta soporte de tool calling ni de agentes, pese a heredar de un modelo orientado a agentes de recibos.
-- El tag `image-text-to-text` sugiere capacidades multimodales no confirmadas en la model card; conviene verificarlas antes de asumirlas.
+- Ausencia total de benchmarks: no hay evidencia publicada de su calidad en matematicas, razonamiento o generacion, lo que impide una evaluacion objetiva.
+- Sesgos conocidos: no documentados; al entrenarse presumiblemente sobre corpus historicos, puede reproducir sesgos culturales o historiograficos de las fuentes.
+- Riesgo de alucinacion: elevado en un modelo de 0,8 B sin datos de evaluacion; especialmente en notacion matematica historica, donde puede inventar terminos o atribuciones.
+- Limitacion de idioma: solo ingles declarado; no se garantiza calidad en castellano ni en otras lenguas.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantias ni soporte.
+- Documentacion insuficiente para produccion: la model card remite a "receipts" externos no enlazados directamente, lo que dificulta la verificacion.
+- Fecha de creacion futura (2026-11-06) en los metadatos: conviene verificar la autenticidad y vigencia del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-AncientMath-0.8B-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZLHOLDINGS/SZL-AncientMath-0.8B-v1 (URL canonica indicada en la model card)
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
-- Dataset de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/ancient-math-reasoning-sft-v1
-- Registros de la ola de entrenamiento: https://huggingface.co/SZLHOLDINGS/wave-logs
+- Repositorio de la organizacion en GitHub: https://github.com/szl-holdings
+- Herramienta de generacion de model cards: https://github.com/szl-holdings/estate-cards

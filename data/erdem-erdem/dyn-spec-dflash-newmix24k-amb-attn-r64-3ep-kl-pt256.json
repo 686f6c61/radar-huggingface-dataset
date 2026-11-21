@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "erdem-erdem/dyn-spec-dflash-newmix24k-amb-attn-r64-3ep-kl-pt256",
+  "slug": "erdem-erdem-dyn-spec-dflash-newmix24k-amb-attn-r64-3ep-kl-pt256",
+  "author": "erdem-erdem",
+  "url": "https://huggingface.co/erdem-erdem/dyn-spec-dflash-newmix24k-amb-attn-r64-3ep-kl-pt256",
+  "created_at": "2026-11-21T11:10:46.000Z",
+  "updated_at": "2026-11-21T11:11:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speculators",
+    "dflash",
+    "speculative-decoding",
+    "lora-generator",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209845244,
+  "storage_human": "210 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dyn-spec-dflash-mix100k-generator-attn-r64-3ep-kl-pt256",
+      "url": "https://huggingface.co/erdem-erdem/dyn-spec-dflash-mix100k-generator-attn-r64-3ep-kl-pt256",
+      "snippet": "DFlash drafter adaptation run (direct arm) from the dyn-spec DFlash generator port. Training checkpoint (with optimizer state), …Read more"
+    },
+    {
+      "title": "GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative ...",
+      "url": "https://github.com/z-lab/dflash",
+      "snippet": "DFlash is a lightweight block diffusion model designed for speculative decoding. It enables efficient and high-quality parallel drafting. …Read more"
+    },
+    {
+      "title": "dyn-spec-dflash-mix24k-generator-attn-r32-3ep-kl - Hugging Face",
+      "url": "https://huggingface.co/erdem-erdem/dyn-spec-dflash-mix24k-generator-attn-r32-3ep-kl",
+      "snippet": "DFlash drafter adaptation run (direct arm) from the dyn-spec DFlash generator port. Training checkpoint (with optimizer state), …Read more"
+    },
+    {
+      "title": "erdem-erdem/dyn-spec-dflash-abl24k-generator-attn-r64-2ep-kl-pt256 ...",
+      "url": "https://huggingface.co/erdem-erdem/dyn-spec-dflash-abl24k-generator-attn-r64-2ep-kl-pt256",
+      "snippet": "DFlash drafter adaptation run (direct arm) from the dyn-spec DFlash generator port. Training checkpoint (with optimizer state), …Read more"
+    }
+  ]
+}

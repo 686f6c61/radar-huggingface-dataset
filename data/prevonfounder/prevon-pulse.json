@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PrevonFounder - GitHub",
-      "url": "https://github.com/PrevonFounder",
-      "snippet": "PrevonFounder has one repository available. Follow their code on GitHub."
-    },
-    {
-      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
-      "url": "https://www.promptzone.com/ai-model-releases",
-      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
-    },
-    {
-      "title": "PrevonFounder - Repositories - GitHub",
-      "url": "https://github.com/PrevonFounder?tab=repositories",
-      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
-    },
-    {
-      "title": "Hugging Face - The AI community building the future.",
-      "url": "https://huggingface.co/",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Graphon AI raises $8.3M seed to build a pre-model intelligence layer ...",
-      "url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
-      "snippet": "Graphon AI emerged from stealth with $8.3 million in seed funding to build a \"pre-model intelligence layer\" that discovers relationships across multimodal enterprise data before it reaches a ..."
-    }
-  ]
+  "sources": []
 }

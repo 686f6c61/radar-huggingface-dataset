@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "proofbird/gector-bert-da",
+  "slug": "proofbird-gector-bert-da",
+  "author": "proofbird",
+  "url": "https://huggingface.co/proofbird/gector-bert-da",
+  "created_at": "2026-11-21T10:51:38.000Z",
+  "updated_at": "2026-11-21T10:52:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "onnx",
+    "grammatical-error-correction",
+    "gector",
+    "on-device",
+    "danish",
+    "token-classification",
+    "da",
+    "dataset:wikimedia/wikipedia",
+    "base_model:NbAiLab/nb-bert-base",
+    "base_model:quantized:NbAiLab/nb-bert-base",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 733903289,
+  "storage_human": "734 MB",
+  "context_length": null,
+  "base_model": "NbAiLab/nb-bert-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

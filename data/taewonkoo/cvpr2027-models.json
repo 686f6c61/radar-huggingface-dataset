@@ -5,13 +5,14 @@
   "author": "taewonkoo",
   "url": "https://huggingface.co/taewonkoo/CVPR2027-models",
   "created_at": "2026-11-20T06:53:40.000Z",
-  "updated_at": "2026-11-20T06:53:42.000Z",
+  "updated_at": "2026-11-20T11:08:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "robotics",
     "backup",
     "region:us"
@@ -21,11 +22,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 83957532,
-  "storage_human": "84 MB",
+  "storage_bytes": 774991644008,
+  "storage_human": "775.0 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

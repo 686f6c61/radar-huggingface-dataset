@@ -2,98 +2,82 @@
 
 ## Resumen
 
-`dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX` es una cuantización de 8 bits del modelo `openai/gpt-oss-20b`, publicada por el usuario dicksondickson y empaquetada en formato MLX para su ejecución en Apple Silicon. No es un modelo entrenado desde cero: es un checkpoint derivado que reutiliza los pesos del modelo abierto de OpenAI y los recodifica con la herramienta oMLX 0.71.dev1 aplicando cuantización de 8 bits con matriz de importancia (imatrix), dejando los tensores críticos en bf16.
+Este repositorio contiene una cuantización del modelo open source `openai/gpt-oss-20b` de OpenAI, publicada por el usuario dicksondickson. No se trata de un modelo entrenado desde cero, sino de una conversión de los pesos originales a un formato mixto de precisión (mayoritariamente 8 bits con tensores críticos en bf16) compatible con MLX, el framework de Apple para ejecutar modelos en silicio de la serie M. El objetivo es permitir la inferencia local del modelo de 20.000 millones de parámetros en equipos Mac con memoria unificada, reduciendo el peso del repositorio respecto a los pesos en bf16 completos.
 
-El interés de esta ficha no está en la arquitectura, heredada íntegramente del modelo base, sino en el proceso de compresión y en el ecosistema de ejecución: MLX, la librería de Apple para cómputo tensorial en chips M-series. Frente a la distribución oficial de OpenAI, que reparte los pesos en MXFP4 para las proyecciones MoE, esta versión apunta a máquinas con memoria unificada de gama alta y requiere M3 o posterior según el autor, porque los tensores sensibles se mantienen en bf16.
+El modelo base, gpt-oss-20b, es un transformer denso (no MoE según los datos disponibles en este repositorio) de aproximadamente 20.914.757.184 parámetros, publicado por OpenAI bajo licencia MIT. Esta versión cuantizada emplea la herramienta oQ de oMLX (versión 0.7.3.dev2) con cuantización de precisión mixta e imatrix, dejando los tensores más sensibles en bf16 para preservar la calidad. La model card indica que está pensada para chips Apple M3 y posteriores.
 
-El modelo base es un transformer de mezcla de expertos (MoE) de aproximadamente 20 900 millones de parámetros totales y unos 4000 millones activos por token, lo que lo sitúa en la franja de modelos de razonamiento de tamaño medio. La licencia declarada en este repositorio es MIT, aunque conviene revisar la licencia y la política de uso del modelo original antes de un despliegue comercial.
+La relevancia de esta ficha radica en que documenta una vía práctica para desplegar un modelo de 20B en hardware de consumo Apple sin GPU dedicada, algo relevante para desarrolladores que trabajan en local con macOS. No obstante, conviene señalar que la información publicada por el autor es muy escasa: no hay benchmarks, ni detalles de entrenamiento, ni especificaciones de contexto o idiomas en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); pesos del modelo base `openai/gpt-oss-20b` |
-| Parametros totales | 20 914 757 184 (~20,9 B), dato real de los safetensors |
-| Parametros activos | ~4 B por token de inferencia (dato de NVIDIA NIM para el modelo base) |
-| Longitud de contexto | No disponible en la informacion de este repositorio; la documentacion de OpenAI para `gpt-oss-20b` declara 128 000 tokens |
-| Tipos de cuantizacion | Checkpoint en 8 bits (esquema oQ8e) con tensores importantes en bf16; el autor publica tambien variantes oQ5e y oQ6e |
-| Idiomas soportados | No disponible |
-| Licencia | MIT (repositorio); el modelo base se distribuye bajo Apache 2.0 con la politica de uso gpt-oss de OpenAI |
-| Formato de pesos | safetensors en formato MLX (libreria `mlx`); no se ofrece GGUF |
-| Tamano del repositorio | 44,5 GB |
-| Herramienta de cuantizacion | oMLX 0.71.dev1 con imatrix habilitada |
-| Fecha de recuantizacion | 18 de octubre de 2026 (el autor pide volver a descargar respecto a copias anteriores) |
-| Descargas / likes | 296 / 1 |
+| Arquitectura | Transformer (según modelo base gpt-oss-20b; detalles no disponibles) |
+| Parametros totales | 20.914.757.184 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Cuantización mixta oQe de 8 bits con tensores críticos en bf16 (imatrix, Better Low-Bit oQ) |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base, sin modificaciones estructurales: un transformer disperso con capas de mezcla de expertos, 20 900 millones de parámetros totales y aproximadamente 4000 millones activos por token. En la distribución original de OpenAI todos los pesos están en BF16 salvo las proyecciones de los expertos MoE, que se publican en MXFP4. Este checkpoint no altera el grafo: sustituye el esquema de representación numérica por una cuantización de 8 bits con matriz de importancia, manteniendo en bf16 los tensores que el autor considera críticos para preservar la calidad.
+Este repositorio no entrena ningún modelo: es una cuantización del checkpoint `openai/gpt-oss-20b`. Por tanto, la arquitectura subyacente corresponde a la del modelo base de OpenAI, si bien la model card de esta conversión no detalla si se trata de un transformer denso, MoE o híbrido, ni aporta información sobre el número de tokens de entrenamiento, la composición del dataset o si hubo fases de RLHF o DPO. Toda esa información debe consultarse en la ficha del modelo original.
 
-No se dispone de información sobre los datos de entrenamiento (número de tokens, composición del corpus, fases de RLHF o DPO) en la documentación de este repositorio; esa información correspondería a la model card de `openai/gpt-oss-20b`, que aquí no se ha proporcionado. La innovación técnica atribuible a este checkpoint es exclusivamente de compresión y empaquetado: el uso de imatrix para decidir qué pesos toleran la reducción a 8 bits, la preservación selectiva en bf16 y el formato MLX, optimizado para el backend Metal y la memoria unificada de los chips M-series. El autor advierte que los tensores en bf16 están pensados para M3 y posteriores.
+La innovación técnica de esta versión es el proceso de cuantización: se ha utilizado oQ de oMLX 0.7.3.dev2 con cuantización de precisión mixta guiada por imatrix y la variante Better Low-Bit oQ. Los tensores considerados importantes se mantienen en bf16, mientras que el resto se comprime a 8 bits, lo que reduce el tamaño del repositorio a 66,7 GB. El autor indica que esta configuración está orientada a chips Apple M3 y posteriores, y que la versión se re-cuantizó el 24 de octubre de 2026 con una mejora de la cuantización oQe.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, heredados del modelo base `openai/gpt-oss-20b`.
-- Generación de código y resolución de problemas matemáticos, capacidades propias de la familia gpt-oss.
-- Soporte de tool calling y function calling en el modelo original; no documentado explícitamente en este repositorio.
-- Ejecución local íntegra en Apple Silicon mediante MLX, sin dependencia de servicios en la nube.
-- Cuantización de 8 bits con tensores críticos en bf16, orientada a preservar la fidelidad de las activaciones más sensibles.
-- Compatibilidad con el runtime oMLX y con el ecosistema MLX (`mlx-lm`); el autor cita también LM Studio en las variantes hermanas.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de visión, audio o modo thinking explícito: no disponible en la información proporcionada para este checkpoint.
+- Generación de texto y razonamiento: heredadas del modelo base gpt-oss-20b; no se detallan en esta model card.
+- Código y matemáticas: no se especifican capacidades concretas en la información disponible.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; la model card no declara idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Inferencia local en Apple Silicon mediante MLX: capacidad confirmada por el formato y la librería declarada.
 
 ## Casos de uso
 
-- Asistente de razonamiento en local para portátiles Apple Silicon: el modelo se ejecuta sobre memoria unificada con MLX, lo que permite mantener conversaciones de razonamiento sin enviar datos a terceros, algo relevante en entornos con requisitos de confidencialidad.
-- Generación y revisión de código en el editor: al heredar las capacidades del modelo base, puede emplearse como asistente integrado en flujos de desarrollo sobre macOS, con la ventaja de que la inferencia ocurre en la propia máquina y no añade latencia de red.
-- Prototipado de agentes con tool calling: la arquitectura MoE de ~4 B activos reduce el coste por token frente a un modelo denso del mismo tamaño, lo que facilita iterar sobre bucles de razonamiento y llamadas a herramientas en una estación de trabajo.
-- Procesamiento de documentación técnica con contexto largo: si se confirma la ventana de 128 000 tokens del modelo base, permite resumir y consultar repositorios de documentación o expedientes completos en una sola pasada, condicionado a la memoria disponible para la caché KV.
-- Evaluación comparativa de cuantizaciones: este checkpoint sirve para medir la pérdida de calidad de un esquema de 8 bits con imatrix frente al MXFP4 original de OpenAI y frente a las variantes oQ5e y oQ6e del mismo autor, en una misma máquina Apple.
-- Desarrollo offline en campo o en entornos aislados: al ser un paquete MLX autónomo, puede desplegarse en equipos sin conectividad, útil en laboratorios, auditorías o entornos de investigación con air-gap.
-- Docencia e investigación sobre cuantización: el repositorio documenta la herramienta, la versión y el esquema empleados, lo que lo convierte en un caso reproducible para estudiar el impacto de imatrix y de la preservación selectiva en bf16.
+- Prototipado local en macOS: un desarrollador puede cargar el modelo con oMLX en un Mac con chip M3 o superior y probar prompts de razonamiento o generación de texto sin depender de APIs externas ni de una GPU NVIDIA.
+- Evaluación comparativa de cuantizaciones: al ser una conversión mixta 8 bits/bf16, sirve para medir la pérdida de calidad frente a los pesos originales en tareas concretas del equipo.
+- Desarrollo de asistentes offline: integrable en aplicaciones de escritorio para macOS que requieran generación de texto sin conexión, siempre que el contexto y los idiomas del modelo base cubran la necesidad.
+- Investigación sobre cuantización: útil para estudiar el efecto de imatrix y de la precisión mixta en modelos de 20B dentro del ecosistema MLX.
+- Pruebas de pipelines de agentes en local: permite validar flujos multi-paso en un entorno de desarrollo antes de migrar a infraestructura con GPU, sujeto a confirmar las capacidades de tool calling del modelo base.
+- Docencia y experimentación: adecuado para cursos o talleres sobre despliegue de LLM en hardware de consumo Apple, dado su formato MLX y su licencia MIT.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de ningún otro conjunto, y tampoco se han proporcionado métricas de latencia o throughput para esta cuantización concreta.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM equivalente estimada: en torno a 21 GB solo para los pesos en 8 bits (20,9 B de parámetros), más la caché KV y el overhead del runtime. El repositorio ocupa 44,5 GB, un tamaño superior al de los pesos, cuya composición exacta no se detalla en la información disponible.
-- Plataforma: exclusivamente Apple Silicon. El autor indica que los tensores en bf16 requieren chips M3 o posteriores.
-- Memoria unificada recomendada: 32 GB como mínimo para contexto corto; 48-64 GB para explotar ventanas de contexto largas con comodidad.
-- GPU NVIDIA/AMD: no soportadas por este formato; MLX no es un runtime CUDA. Para CUDA habría que recurrir a los pesos originales en MXFP4 o a una conversión GGUF.
-- Opciones de despliegue: oMLX (https://github.com/jundot/omlx), según las instrucciones del autor; el ecosistema `mlx-lm`; las variantes hermanas del mismo autor se han usado en LM Studio.
-- Latencia y throughput: no disponibles. Dependerán del chip concreto (M3, M3 Pro/Max, M4 family), del ancho de banda de memoria y de la longitud de contexto.
+- VRAM estimada: no disponible de forma oficial; el repositorio ocupa 66,7 GB, por lo que se requiere memoria unificada suficiente para cargar los pesos más el contexto y el estado de inferencia.
+- GPU recomendadas: Apple Silicon M3 o posterior, según indica el autor; no se mencionan GPU NVIDIA ni AMD.
+- ¿Cabe en GPU de consumo? Está diseñado para Mac con memoria unificada; no se indica compatibilidad con GPU de consumo tipo RTX 4090.
+- Opciones de despliegue: oMLX (https://github.com/jundot/omlx); no se documentan vLLM, llama.cpp, Ollama ni TGI para este repositorio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / esquema | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| `dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX` (este) | ~20,9 B totales / ~4 B activos | No disponible en el repo (128 000 tokens segun OpenAI) | MLX safetensors, 8 bits con tensores clave en bf16 | MIT en el repo; base Apache 2.0 | Hugging Face, 296 descargas |
-| `dicksondickson/gpt-oss-20b-oQ6e-bf16-MLX` | ~20,9 B totales / ~4 B activos | No disponible | MLX safetensors, 6 bits; ~17,4 GB de pesos | MIT en el repo | Hugging Face |
-| `dicksondickson/gpt-oss-20b-oQ5e-bf16-MLX` | ~20,9 B totales / ~4 B activos | No disponible | MLX safetensors, 5 bits | MIT en el repo | Hugging Face |
-| `openai/gpt-oss-20b` (original) | ~20 B totales / ~4 B activos | 128 000 tokens segun la model card de OpenAI | Safetensors, BF16 con proyecciones MoE en MXFP4 | Apache 2.0 + politica de uso gpt-oss | Hugging Face, ampliamente distribuido |
-
-La comparación relevante es interna a la familia de cuantizaciones del mismo autor: oQ8e prioriza fidelidad a costa de ~21 GB de pesos, mientras que oQ6e reduce el espacio a unos 17,4 GB y oQ5e baja aún más el requisito de memoria. No se han proporcionado datos de calidad comparada entre estas variantes.
+| dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX | 20.914.757.184 | no disponible | MIT | safetensors MLX | Cuantización mixta 8 bits/bf16 para Apple Silicon |
+| openai/gpt-oss-20b | 20.914.757.184 (según este repo) | no disponible | MIT | safetensors | Modelo base original de OpenAI |
+| Otras cuantizaciones de gpt-oss-20b | no disponible | no disponible | MIT (heredada) | GGUF, MLX, etc. | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- La cuantización de 8 bits con preserve de tensores en bf16 puede introducir degradaciones respecto al modelo original en MXFP4/BF16; no hay evaluaciones publicadas que cuantifiquen esa pérdida.
-- El repositorio no documenta sesgos, comportamiento multilingüe ni tasas de alucinación; esas advertencias deben tomarse de la model card de `openai/gpt-oss-20b`.
-- Requiere hardware Apple M3 o posterior según el autor; no es utilizable en GPUs NVIDIA o AMD sin reconversión.
-- El tamaño del repo (44,5 GB) es notablemente superior al de los pesos en 8 bits, lo que puede complicar el almacenamiento y la descarga en equipos con disco limitado.
-- El autor ha recuantizado el modelo (18 de octubre de 2026) y recomienda volver a descargar; versiones anteriores pueden diferir en calidad sin aviso en el nombre del repositorio.
-- Licencia: el repositorio declara MIT, pero el modelo base es Apache 2.0 con la política de uso gpt-oss de OpenAI. Conviene verificar ambas antes de un uso comercial, especialmente en lo relativo a la atribución y a los casos de uso restringidos.
-- El modelo tiene un único like y 296 descargas, con lo que la validación comunitaria es muy limitada; no debe asumirse estabilidad de producción.
-- No hay información sobre idiomas soportados ni sobre calidad en castellano; el comportamiento en español debe evaluarse empíricamente antes de desplegarlo.
+- La model card no documenta sesgos, idiomas ni evaluación de alucinación; deben asumirse los del modelo base.
+- La cuantización mixta a 8 bits puede introducir degradación de calidad frente a los pesos originales en tareas sensibles, aunque no se aportan métricas que lo cuantifiquen.
+- El autor advierte que los tensores en bf16 están pensados para Apple M3 y posteriores; en chips anteriores el comportamiento no está garantizado.
+- El repositorio se re-cuantizó el 24 de octubre de 2026; versiones descargadas antes de esa fecha pueden diferir y conviene volver a descargar.
+- Licencia MIT heredada del modelo base: permite uso comercial, pero debe verificarse la ficha de `openai/gpt-oss-20b` para condiciones adicionales de uso responsable.
+- No hay información sobre longitud de contexto efectiva tras la cuantización ni sobre rendimiento en producción.
+- El autor es un particular, no OpenAI; no hay garantías de mantenimiento ni soporte.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
-- Herramienta oMLX: https://github.com/jundot/omlx
-- Variante oQ6e: https://huggingface.co/dicksondickson/gpt-oss-20b-oQ6e-bf16-MLX
-- Variante oQ5e: https://huggingface.co/dicksondickson/gpt-oss-20b-oQ5e-bf16-MLX
-- Model card de OpenAI para gpt-oss: https://openai.com/index/gpt-oss-model-card/
-- Documentación de la API de OpenAI para gpt-oss-20b: https://developers.openai.com/api/docs/models/gpt-oss-20b
-- Ficha en NVIDIA NIM: https://build.nvidia.com/openai/gpt-oss-20b/modelcard
+- Herramienta de cuantización oMLX: https://github.com/jundot/omlx

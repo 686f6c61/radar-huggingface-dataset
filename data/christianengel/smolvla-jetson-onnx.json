@@ -5,7 +5,7 @@
   "author": "christianengel",
   "url": "https://huggingface.co/christianengel/smolvla-jetson-onnx",
   "created_at": "2026-11-20T10:37:01.000Z",
-  "updated_at": "2026-11-20T10:37:59.000Z",
+  "updated_at": "2026-11-20T10:59:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",

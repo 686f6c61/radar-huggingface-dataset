@@ -2,100 +2,99 @@
 
 ## Resumen
 
-PCP-MAE (Point Cloud Prediction Masked Autoencoder) es un modelo de clasificación de nubes de puntos 3D desarrollado por Xiangdong Zhang, Shaofeng Zhang y Junchi Yan, publicado en NeurIPS 2024. La versión recogida aquí, `pcp-mae.modelnet40.xiangdong-zhang`, es el checkpoint afinado sobre el dataset ModelNet40 y convertido al ecosistema de la librería `torch-pointcloud` por Arthur Dujardin. Resuelve la tarea de clasificar una nube de puntos 3D en una de 40 categorías de objetos (silla, mesa, avión, etc.).
+PCP-MAE (Point Cloud Prediction Masked Autoencoder) es un modelo de clasificación de nubes de puntos 3D desarrollado por Xiangdong Zhang, Shaofeng Zhang y Junchi Yan, publicado en NeurIPS 2024. Esta ficha concreta corresponde al checkpoint afinado sobre el dataset ModelNet40 y convertido al ecosistema `torch-pointcloud` por Arthur Dujardin. El modelo resuelve la tarea de clasificación de formas 3D a partir de nubes de puntos, asignando cada objeto a una de 40 categorías (silla, mesa, avión, etc.).
 
-La innovación central del trabajo es el preentrenamiento auto-supervisado de tipo masked point autoencoder: en lugar de reconstruir las coordenadas de los puntos enmascarados, el modelo predice sus centros, lo que estabiliza el entrenamiento y mejora la representación aprendida. El modelo es deliberadamente compacto: 22,3 millones de parámetros y un vector de características de 768 dimensiones, lo que lo hace viable en GPUs de consumo.
+La innovación central de PCP-MAE es formular el preentrenamiento autoencoder enmascarado no como reconstrucción de las coordenadas de los puntos enmascarados, sino como predicción de sus centros (centroides de parches). Esto reduce la ambigüedad del objetivo de reconstrucción y mejora la calidad de las representaciones aprendidas. El modelo tiene 22,3 millones de parámetros, una dimensión de característica de 768 y se distribuye en formato safetensors con licencia MIT.
 
-Es relevante para desarrolladores e investigadores que necesitan un backbone de clasificación de nubes de puntos con licencia MIT, pesos en safetensors y una API Python integrada en `torch-pointcloud`, sin depender de frameworks propietarios ni de checkpoints de gran tamaño.
+Es relevante para desarrolladores e investigadores que necesitan un clasificador de nubes de puntos ligero, con licencia permisiva y resultados sólidos en el benchmark estándar ModelNet40 (93,52 % de accuracy global), sin depender de infraestructura propietaria ni de modelos de gran tamaño.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer para nubes de puntos (masked point autoencoder, PCP-MAE) |
-| Parámetros totales | 22.347.688 (22,3 M) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica: entrada de nube de puntos, 8192 puntos en el ejemplo de uso) |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Arquitectura | Transformer con autoencoder enmascarado (masked point autoencoder, predicción de centros de parche) |
+| Parametros totales | 22.347.688 (22,3 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica; entrada de nube de puntos, ejemplo con 8192 puntos) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo no lingüístico; opera sobre geometría 3D) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Dimensión de características | 768 |
-| Número de clases | 40 (ModelNet40) |
-| Entrada | coordenadas `pos` (N, 3) y normales `normal` (N, 3) |
-| Modelo base | torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang |
-| Tamaño del repositorio | 0,1 GB |
-| Librería | torch-pointcloud |
+| Dimension de caracteristica | 768 |
+| Numero de clases | 40 |
+| Libreria | torch-pointcloud |
+| Tamano del repo | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la familia de masked autoencoders adaptada a nubes de puntos. Durante el preentrenamiento se enmascaran grupos de puntos y la red debe predecir los centros de las regiones enmascaradas en lugar de reconstruir cada coordenada individual; esta formulación, descrita en el paper PCP-MAE (arXiv:2408.08753), evita la ambigüedad de reconstruir puntos dispersos y produce representaciones más discriminativas. La arquitectura es un transformer con atención sobre tokens de puntos y un vector de características de 768 dimensiones.
+PCP-MAE es un transformer de tipo masked autoencoder adaptado a nubes de puntos. La entrada consiste en puntos 3D con sus normales (`pos` y `normal`), que se agrupan en parches y se enmascaran parcialmente. A diferencia de los MAE clásicos de imágenes o de nubes de puntos que reconstruyen coordenadas, PCP-MAE entrena al modelo para predecir los centros (centroides) de los parches enmascarados, un objetivo más estable y menos ambiguo. El encoder produce una representación global de 768 dimensiones que alimenta una cabeza de clasificación de 40 clases.
 
-El checkpoint publicado aquí es el resultado del ajuste fino supervisado sobre ModelNet40, con 40 clases de salida. El preentrenamiento se realizó sobre el modelo base `pcp-mae.pretrain.xiangdong-zhang`; la información disponible no detalla el volumen de tokens ni la composición exacta del corpus de preentrenamiento más allá del uso de ModelNet40 para la fase supervisada. No se documenta en la información proporcionada el uso de RLHF, DPO ni técnicas de decodificación especulativa, que no aplican a una tarea de clasificación.
+El checkpoint aquí descrito parte del modelo preentrenado `torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang` y se afina sobre ModelNet40, un dataset de referencia de formas 3D con 40 categorías. No se dispone en la información proporcionada del número exacto de tokens de entrenamiento, la composición detallada del dataset de preentrenamiento ni si se aplicaron etapas de RLHF o DPO (no aplicables en un modelo de visión 3D). La conversión a `torch-pointcloud` la realizó Arthur Dujardin a partir del repositorio original `aHapBean/PCP-MAE` (MIT).
 
 ## Capacidades
 
 - Clasificación de nubes de puntos 3D en 40 categorías de ModelNet40.
-- Extracción de características: `forward_features` devuelve embeddings de 768 dimensiones por muestra, útiles para transfer learning o recuperación.
-- Clasificador reconfigurable: `reset_classifier(num_classes=0)` permite usar el backbone sin cabeza de clasificación.
-- Entrada multimodálica de geometría: coordenadas y normales por punto.
-- Procesamiento por lotes mediante `collate` de `torch-pointcloud`.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo puramente viso-geométrico.
+- Extracción de características globales de 768 dimensiones mediante `forward_features` o `reset_classifier(num_classes=0)`.
+- Procesamiento de nubes de puntos con coordenadas y normales; el ejemplo de la model card usa 8192 puntos por muestra.
+- Soporte de inferencia por lotes mediante `collate` de `torch-pointcloud`.
+- No soporta tool calling, function calling ni agentes: es un modelo puramente perceptivo de visión 3D.
+- No dispone de capacidades multilingües, de generación de texto, de código ni de matemáticas.
+- No dispone de modo thinking, visión 2D, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Clasificación de objetos escaneados en robótica móvil: el modelo recibe la nube de puntos de un sensor LiDAR o RGB-D y devuelve la categoría del objeto, con 22,3 M de parámetros que permiten inferencia en el propio robot o en un edge device.
-- Preprocesado en pipelines de realidad aumentada: identificar el tipo de objeto antes de superponer contenido digital, usando el backbone de 768 dimensiones como extractor de características.
-- Etiquetado automático de datasets 3D: generar etiquetas preliminares sobre nubes de puntos no anotadas para acelerar la revisión humana en proyectos de percepción.
-- Recuperación de formas 3D (shape retrieval): usar los embeddings de `forward_features` para indexar y buscar objetos similares en una base de datos de mallas escaneadas.
-- Transfer learning a dominios específicos: partir del checkpoint de ModelNet40 y reentrenar la cabeza para clases industriales (piezas, componentes) con pocos datos etiquetados.
-- Control de calidad en fabricación: clasificar piezas 3D capturadas por escáneres de luz estructurada para detectar categorías inesperadas en una línea de producción.
-- Investigación en representación 3D: servir de baseline reproducible (licencia MIT, pesos safetensors) para comparar métodos de auto-supervisión en nubes de puntos.
+- Clasificación de objetos 3D en pipelines de escaneo: dado un escaneo LiDAR o de profundidad convertido a nube de puntos, el modelo asigna una de las 40 categorías de ModelNet40, útil para inventariado automático de objetos en interiores.
+- Preprocesado en robótica de manipulación: clasificar la forma del objeto antes de planificar una prensión, usando las 768 dimensiones de características como entrada a un planificador posterior.
+- Etiquetado asistido de datasets 3D: el modelo puede preetiquetar nubes de puntos y reducir el coste de anotación manual, con revisión humana posterior.
+- Extracción de embeddings para búsqueda de formas: usar `forward_features` para indexar objetos 3D y recuperar formas similares por similitud vectorial.
+- Baseline de investigación en visión 3D: punto de partida reproducible (MIT, 22,3 M de parámetros) para comparar nuevas arquitecturas de autoencoders enmascarados sobre ModelNet40.
+- Filtrado de calidad en digitalización 3D: clasificar objetos capturados por escáneres para descartar capturas fuera de las categorías esperadas antes de almacenarlas.
+- Módulo de percepción en prototipos de realidad aumentada: identificar el tipo de objeto físico que el usuario enfoca para superponer información contextual.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card sobre ModelNet40 (no verificados de forma independiente):
+Resultados declarados por el autor en la model card (no verificados de forma independiente):
 
-| Dataset | Métrica | Valor |
-|---|---|---|
-| ModelNet40 | OA (overall accuracy) | 93,64 |
-| ModelNet40 | mAcc (mean accuracy) | 90,60 |
+| Dataset | Tarea | Metrica | Valor |
+|---|---|---|---|
+| ModelNet40 | point-cloud-classification | OA (accuracy global) | 93,52 |
+| ModelNet40 | point-cloud-classification | mAcc (accuracy media por clase) | 90,5 |
 
-No se han publicado en la información disponible resultados de benchmarks adicionales (p. ej. comparativas con PointNet, PointNet++ o DGCNN) ni mediciones de latencia o throughput.
+No se han publicado en la información disponible resultados adicionales (por ejemplo, en ScanObjectNN, ShapeNet o tareas de segmentación) ni comparativas numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 22,3 M de parámetros en fp32 el modelo ocupa aproximadamente 90 MB de pesos, más el coste de activaciones para lotes de nubes de 8192 puntos.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; RTX 3060, RTX 4090, A100 o H100 son sobradas para inferencia y fine-tuning ligero.
-- Cabe en GPU de consumo: sí, en cualquier GPU moderna con 4 GB o más; también es viable en CPU para lotes pequeños.
-- Opciones de despliegue: la vía documentada es la librería `torch-pointcloud` sobre PyTorch (`tp.create_model`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: muy baja; con 22,3 M de parámetros en fp32 el peso ocupa aproximadamente 90 MB, y con un lote pequeño de 8192 puntos la inferencia cabe holgadamente en menos de 1 GB de VRAM.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en RTX 3060, RTX 4090, A100, H100 y también en CPU para inferencia puntual.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: PyTorch nativo mediante `torch-pointcloud` (`tp.create_model`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo se espera latencia de milisegundos por muestra en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de resultados de modelos comparables (PointNet, PointNet++, DGCNN, Point Transformer) sobre ModelNet40, por lo que la comparación numérica no está disponible. A continuación se comparan únicamente los atributos conocidos de este modelo:
+No se dispone en la información proporcionada de resultados numéricos de modelos alternativos comparables (por ejemplo, Point-MAE, PointNet++ o Point Transformer afinados en ModelNet40), por lo que la comparación cuantitativa se marca como no disponible. A nivel cualitativo:
 
-| Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pcp-mae.modelnet40.xiangdong-zhang | 22,3 M | nube de puntos (8192 puntos en el ejemplo) | MIT | Hugging Face, safetensors |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
+| PCP-MAE (este) | 22,3 M | nube de puntos (ej. 8192 puntos) | MIT | Hugging Face, torch-pointcloud |
+| Alternativas de la familia MAE de nubes de puntos | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente para clasificación de 40 clases de ModelNet40; no generaliza a categorías fuera de ese conjunto sin reentrenamiento de la cabeza.
-- ModelNet40 contiene objetos CAD sintéticos y limpios; el rendimiento sobre nubes de puntos reales con ruido, oclusiones o densidades variables puede degradarse y no está documentado.
-- No es un modelo generativo ni de lenguaje: no admite prompts, razonamiento ni conversación.
-- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false` en la model-index).
-- Riesgo de sesgo inherente al dataset: la distribución de clases de ModelNet40 no representa la diversidad de objetos del mundo real.
-- Licencia MIT: permite uso comercial y modificación, pero conviene conservar la atribución del paper y de la conversión a `torch-pointcloud`.
-- No se documentan cuantizaciones oficiales; cualquier despliegue en precisión reducida debe validarse empíricamente.
-- La fecha de creación del repositorio (2026-10-30) y el bajo número de descargas (19) sugieren un modelo poco adoptado; conviene verificar la reproducibilidad antes de usarlo en producción.
+- El modelo está entrenado exclusivamente sobre ModelNet40, un dataset de formas 3D sintéticas y limpias; su rendimiento en escaneos reales con ruido, oclusiones o densidades distintas puede degradarse de forma significativa.
+- Solo clasifica en 40 categorías; cualquier objeto fuera de ese vocabulario se asignará a la clase más parecida, con riesgo de error.
+- Los resultados de 93,52 % OA y 90,5 % mAcc son declarados por el autor y no han sido verificados de forma independiente (`verified: false`).
+- No hay información publicada sobre sesgos del dataset (por ejemplo, desbalance entre clases o sobrerrepresentación de ciertas categorías), aunque mAcc inferior a OA sugiere cierto desbalance de rendimiento entre clases.
+- No aplica el riesgo de alucinación lingüística, pero sí el de clasificaciones erróneas con alta confianza en entradas fuera de distribución.
+- La licencia MIT permite uso comercial y modificación; conviene conservar el aviso de copyright y citar el paper original.
+- No se documentan cuantizaciones oficiales ni formatos alternativos a safetensors; para despliegue en CPU o edge habría que exportar el modelo uno mismo.
+- El modelo no procesa texto ni lenguaje natural; no debe emplearse en tareas de NLP.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang
-- Paper PCP-MAE: https://arxiv.org/abs/2408.08753
-- Repositorio original del autor: https://github.com/aHapBean/PCP-MAE
-- Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- DOI de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632
-- Modelo base de preentrenamiento: https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
+- Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang
+- Modelo base (preentrenamiento): https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
+- Paper PCP-MAE (arXiv): https://arxiv.org/abs/2408.08753
+- Repositorio original: https://github.com/aHapBean/PCP-MAE
+- Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Dataset ModelNet40 (referencia, 3D ShapeNets): https://modelnet.cs.princeton.edu/

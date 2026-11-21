@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "karthe05/maintenance-work-order-triage-5M",
+  "slug": "karthe05-maintenance-work-order-triage-5m",
+  "author": "karthe05",
+  "url": "https://huggingface.co/karthe05/maintenance-work-order-triage-5M",
+  "created_at": "2026-11-21T10:49:09.000Z",
+  "updated_at": "2026-11-21T11:55:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "maintenance",
+    "manufacturing",
+    "work-orders",
+    "triage",
+    "small-language-model",
+    "text-classification",
+    "en",
+    "dataset:karthe05/mwo-triage-data",
+    "base_model:google/bert_uncased_L-4_H-128_A-2",
+    "base_model:finetune:google/bert_uncased_L-4_H-128_A-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4783754,
+  "parameters_human": "4.8M",
+  "storage_bytes": 19143664,
+  "storage_human": "19 MB",
+  "context_length": null,
+  "base_model": "google/bert_uncased_L-4_H-128_A-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

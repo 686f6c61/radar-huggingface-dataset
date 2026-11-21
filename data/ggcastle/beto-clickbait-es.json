@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "ggcastle/beto-clickbait-es",
+  "slug": "ggcastle-beto-clickbait-es",
+  "author": "ggcastle",
+  "url": "https://huggingface.co/ggcastle/beto-clickbait-es",
+  "created_at": "2026-10-09T12:00:55.000Z",
+  "updated_at": "2026-11-21T10:26:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "clickbait",
+    "text-classification",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 109852418,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439433208,
+  "storage_human": "439 MB",
+  "context_length": null,
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "xanderwick",
   "url": "https://huggingface.co/xanderwick/LawGranite",
   "created_at": "2026-11-19T00:17:38.000Z",
-  "updated_at": "2026-11-19T06:20:37.000Z",
+  "updated_at": "2026-11-20T16:55:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 8791592960,

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "LatentMesh-Labs/latentmesh-blitz-capture",
+  "slug": "latentmesh-labs-latentmesh-blitz-capture",
+  "author": "LatentMesh-Labs",
+  "url": "https://huggingface.co/LatentMesh-Labs/latentmesh-blitz-capture",
+  "created_at": "2026-11-21T11:46:05.000Z",
+  "updated_at": "2026-11-21T11:46:16.000Z",
+  "license": "latentmesh-blitz-capture-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289147349,
+  "storage_human": "289 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

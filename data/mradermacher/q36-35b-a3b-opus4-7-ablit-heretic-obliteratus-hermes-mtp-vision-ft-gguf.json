@@ -50,7 +50,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 720,
+  "downloads_30d": 719,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -71,31 +71,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-GGUF",
-      "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
-      "url": "https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
-      "url": "https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
-      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里 ..."
-    },
-    {
-      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
-      "url": "https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
-      "snippet": "The non-MTP version is still available at mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF — slightly smaller, but no self-spec. File sizes Each quant is ~2.5% larger than its non-MTP counterpart (one extra transformer-block worth of weights, no embedding duplication since MTP shares the trunk&#x27;s embed_tokens). MTP draft head precision The bundled MTP head (blk.40 ..."
-    },
-    {
-      "title": "Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-claude-4.7-opus-reasoning-distilled-apex-mtp-gguf-mudler",
-      "snippet": "Overview Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF is a quantized Mixture-of-Experts language model built on the Qwen 3.6 35B-A3B architecture with knowledge distillation from Claude 4.7 Opus, optimized for reasoning tasks. Maintained by mudler, it bundles a multi-token prediction (MTP) head for self-speculative decoding in a single GGUF file compatible with llama.cpp ..."
-    }
-  ]
+  "sources": []
 }

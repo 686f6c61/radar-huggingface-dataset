@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Fred-9B-i1-GGUF",
   "created_at": "2026-09-12T11:45:54.000Z",
-  "updated_at": "2026-09-12T13:07:35.000Z",
+  "updated_at": "2026-11-20T20:17:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 340,
+  "downloads_30d": 343,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

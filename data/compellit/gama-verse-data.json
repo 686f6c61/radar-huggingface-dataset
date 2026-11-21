@@ -5,7 +5,7 @@
   "author": "compellit",
   "url": "https://huggingface.co/compellit/gama-verse-data",
   "created_at": "2026-11-19T22:50:08.000Z",
-  "updated_at": "2026-11-19T23:31:40.000Z",
+  "updated_at": "2026-11-20T10:27:08.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,16 +15,14 @@
     "es"
   ],
   "tags": [
-    "kenlm",
-    "poetry",
-    "scansion",
     "spelling-normalization",
+    "poetry",
+    "Galician",
     "gl",
-    "es",
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

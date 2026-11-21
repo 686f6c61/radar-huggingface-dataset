@@ -5,7 +5,7 @@
   "author": "tripathyShaswata",
   "url": "https://huggingface.co/tripathyShaswata/LedgerFM",
   "created_at": "2026-11-20T13:46:36.000Z",
-  "updated_at": "2026-11-20T13:46:52.000Z",
+  "updated_at": "2026-11-20T15:13:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 26576121,
   "parameters_human": "26.6M",

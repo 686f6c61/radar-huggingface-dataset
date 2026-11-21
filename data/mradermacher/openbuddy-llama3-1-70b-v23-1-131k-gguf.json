@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/openbuddy-llama3.1-70b-v23.1-131k-GGUF",
+  "slug": "mradermacher-openbuddy-llama3-1-70b-v23-1-131k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/openbuddy-llama3.1-70b-v23.1-131k-GGUF",
+  "created_at": "2025-03-20T14:01:19.000Z",
+  "updated_at": "2026-11-21T06:37:45.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302983776,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "OpenBuddy/openbuddy-llama3.1-70b-v23.1-131k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "dphn/dolphin-2.9.2-qwen2-72b-eetq",
+  "slug": "dphn-dolphin-2-9-2-qwen2-72b-eetq",
+  "author": "dphn",
+  "url": "https://huggingface.co/dphn/dolphin-2.9.2-qwen2-72b-eetq",
+  "created_at": "2024-07-15T05:26:28.000Z",
+  "updated_at": "2026-11-21T09:40:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "eetq",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 72717795328,
+  "parameters_human": "72.72B",
+  "storage_bytes": 75223128024,
+  "storage_human": "75.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,103 +2,103 @@
 
 ## Resumen
 
-Amethyst 2.5 Mini es un modelo de chat de 4.022 millones de parámetros desarrollado por VertexAGI, un proyecto de investigación independiente, mediante ajuste fino supervisado (LoRA) sobre Qwen3-4B. Su propósito es acotado y bien definido: gestionar la decisión de cuándo invocar una herramienta `web_search`, responder de forma breve citando los fragmentos utilizados como `[1]`, `[2]`, y declarar explícitamente cuándo los resultados de búsqueda no contienen la respuesta en lugar de inventar un dato. Es, por tanto, un modelo orientado a tool calling con honestidad epistémica como criterio de diseño central.
+Amethyst 2.5 Mini es un ajuste fino (fine-tune) del modelo Qwen3-4B desarrollado por VertexAGI, un proyecto de investigación independiente. El modelo está especializado en conversación con capacidad de invocar una herramienta de búsqueda web (`web_search`) de forma selectiva: decide cuándo es necesario buscar información actualizada y cuándo puede responder directamente con conocimiento estable. Además, cita las fuentes consultadas y, cuando los resultados no contienen la respuesta, lo indica explícitamente en lugar de inventar datos.
 
-El modelo parte de Qwen3-4B, un transformer decoder-only denso, y se distribuye en tres formatos dentro del mismo repositorio: pesos MLX en precisión mixta (capas ajustadas a 8 bits, resto a 4 bits, 2,9 GB), GGUF Q8_0 (4,3 GB) y GGUF Q4_K_M (2,5 GB). La licencia es Apache 2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales.
+Técnicamente se trata de un transformer denso decoder-only de 4.022.468.096 parámetros (aproximadamente 4B), derivado de Qwen3-4B y ajustado mediante LoRA sobre el checkpoint cuantizado a 4 bits de `mlx-community`. El entrenamiento se realizó con MLX en Apple Silicon, con un conjunto sintético de 3.205 conversaciones generadas por destilación desde modelos maestros de mayor tamaño. La longitud de contexto heredada del modelo base es de 32.768 tokens según la documentación pública de Qwen3-4B, aunque la model card no la especifica explícitamente.
 
-Su relevancia ahora es doble. Por un lado, aborda un problema práctico poco cubierto por modelos pequeños: el comportamiento tras una búsqueda fallida o infructuosa, con 448 conversaciones dedicadas específicamente a enseñar al modelo a decir que los resultados no responden a la pregunta. Por otro, su pipeline de entrenamiento documenta un fallo habitual en la destilación sintética (un dataset de 20.000 filas que contenía solo ~1.000 prompts únicos) y cómo se corrigió, lo que resulta útil como referencia metodológica para quien entrene adaptadores similares.
+Su relevancia radica en el enfoque: en lugar de maximizar el tamaño, optimiza el comportamiento en tool calling y la honestidad ante resultados insuficientes, un problema recurrente en asistentes con acceso a búsqueda. Se distribuye en formatos MLX y GGUF con licencia Apache 2.0, lo que facilita su despliegue en hardware de consumo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3, transformer decoder-only denso |
-| Parámetros totales | 4.022.468.096 |
-| Parámetros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (heredada de Qwen3-4B) |
-| Tipos de cuantización | MLX mixta (8 bits en capas LoRA, 4 bits en el resto), GGUF Q8_0, GGUF Q4_K_M |
-| Idiomas soportados | inglés |
+| Arquitectura | Transformer decoder-only denso (familia Qwen3) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la model card (el base Qwen3-4B soporta 32.768 tokens) |
+| Tipos de cuantizacion | MLX mixta (capas ajustadas 8-bit, resto 4-bit), GGUF Q4_K_M, GGUF Q8_0 |
+| Idiomas soportados | Ingles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX), GGUF |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3-4B, un transformer decoder-only denso de 4B parámetros. Sobre él se aplicó un LoRA de rango 16, escala 20.0, dropout 0.0 y 16 capas, con la pérdida calculada únicamente sobre los turnos del asistente (`mask_prompt`). El entrenamiento se ejecutó con MLX y `mlx-lm` sobre Apple Silicon, con optimizador Adam, tasa de aprendizaje constante de 6e-5, batch de 4, longitud de secuencia 2.048 y gradient checkpointing, durante 2 épocas y 2.341 iteraciones. La ejecución se pausó manualmente en torno a la iteración 1.580 y se reanudó desde los pesos de la iteración 1.400 para las 941 iteraciones restantes, sin estado del optimizador guardado, por lo que Adam se reinició en frío en ese punto.
+El modelo parte de Qwen3-4B, un transformer decoder-only denso de aproximadamente 4B parámetros, y se ajusta mediante LoRA con rango 16, escala 20.0, dropout 0.0 y 16 capas adaptadas. El entrenamiento se ejecutó con MLX y `mlx-lm` sobre Apple Silicon, con pérdida calculada únicamente sobre los turnos del asistente (`mask_prompt`). Se usó el optimizador Adam con learning rate constante de 6e-5, batch size 4, longitud de secuencia 2.048, gradient checkpointing, 2 épocas y 2.341 iteraciones. La ejecución se pausó manualmente en torno a la iteración 1.580 y se reanudó desde los pesos de la iteración 1.400 para las 941 iteraciones restantes, reiniciando Adam en frío al no haberse guardado el estado del optimizador.
 
-El dataset de entrenamiento consta de 3.205 conversaciones sintéticas (4.683 muestras tras dividir cada conversación en una muestra por turno del asistente), generadas por destilación desde GLM 5.3, GLM 5.3 Flash, Kimi K3, poolside Laguna S 2.1 y MiniMax M3.1 Flash a través de NVIDIA NIM y OpenRouter. Todos los resultados de búsqueda del corpus son inventados por los modelos profesor; no se rastreó ninguna página web real. La composición está diseñada para diversidad y concisión: 817 conversaciones de chat general, 309 más 42 de dos turnos para respuestas directas sin búsqueda, 500 de instrucciones de formato estricto, 502 de búsqueda de hechos actuales con una consulta, 127 de fuentes en desacuerdo, 97 más 21 de refinamiento de consulta, 192 de fallo de búsqueda y 448 de resultados en tema pero sin la respuesta. Las filas con resultados de búsqueda pasaron una comprobación automática de grounding: la respuesta final solo puede citar resultados existentes y solo puede usar números y nombres propios presentes en el último resultado o en la pregunta.
+Los datos de entrenamiento son 3.205 conversaciones sintéticas (4.683 muestras tras dividir cada conversación en una muestra por turno del asistente), generadas por destilación desde GLM 5.3, GLM 5.3 Flash, Kimi K3, poolside Laguna S 2.1 y MiniMax M3.1 Flash a través de NVIDIA NIM y OpenRouter. Todos los resultados de búsqueda del dataset son inventados por los maestros; no se rastrearon páginas web reales. La mezcla cubre chat general (817), respuestas cortas sin búsqueda (309 + 42), instrucciones de formato conciso (500), búsqueda de hechos actuales con una consulta (502), fuentes en desacuerdo (127), refinamiento de consultas débiles (97 + 21), fallos de búsqueda (192) y, de forma destacada, resultados en tema pero sin la respuesta (448). Las filas con resultados de búsqueda pasaron una verificación automática de grounding: la respuesta solo puede citar resultados existentes y usar cifras y nombres propios presentes en el último resultado o en la pregunta.
 
-La innovación técnica destacable está en la distribución MLX: un merge en 4 bits plano re-cuantiza el ajuste fino y lo destruye, por lo que las 112 capas lineales adaptadas por LoRA se fusionan en fp16 y se re-cuantizan a 8 bits, mientras el resto permanece en el 4 bits original del modelo base. El autor verificó que el modelo fusionado coincide con el adaptador: misma pérdida de validación hasta tres decimales y puntuaciones idénticas en sus prompts de validación.
+Como innovación destacable, el build MLX emplea cuantización mixta: las 112 capas lineales adaptadas por LoRA se fusionan en fp16 y se recuantizan a 8 bits, mientras el resto permanece en 4 bits, evitando que la recuantización destruya el ajuste. El autor verificó que el modelo fusionado coincide con el adaptador (misma pérdida de validación hasta tres decimales e idénticas puntuaciones en los prompts de validación).
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés con respuestas breves y directas.
-- Tool calling: invoca una herramienta `web_search` para información cambiante (noticias, marcadores, precios, términos como "latest") y responde sin buscar las preguntas estables.
-- Citación de fuentes: tras una búsqueda, responde brevemente y cita los fragmentos usados como `[1]`, `[2]`.
-- Abstención explícita: si la búsqueda falla, no devuelve resultados o devuelve páginas en tema que no contienen la respuesta, lo declara y orienta sobre dónde consultar, sin inventar cifras.
-- Manejo de fuentes contradictorias: señala que las fuentes discrepan y cita ambas.
-- Refinamiento de consulta: reformula la búsqueda una vez cuando los primeros resultados son débiles.
-- Instrucciones de formato estricto: "exactamente 3 viñetas", "menos de 20 palabras", "una sola frase", traducción y reescritura.
-- Resúmenes con citas, descomposición en múltiples consultas y seguimiento de preguntas elípticas.
-- Concición medida: en dos de sus tres conjuntos de validación, las respuestas simples promedian 31-38 palabras, frente a 45-66 del Qwen3-4B base.
+- Decisión selectiva de invocar la herramienta `web_search`: busca para información cambiante (noticias, resultados deportivos, precios, términos como "latest") y responde sin buscar ante preguntas estables.
+- Respuestas con citas numeradas (`[1]`, `[2]`) de los fragmentos consultados tras una búsqueda.
+- Declaración explícita de ausencia de respuesta cuando la búsqueda falla, devuelve vacío o los resultados no contienen el dato, señalando dónde consultar en su lugar.
+- Manejo de fuentes en desacuerdo: indica que difieren y cita ambas.
+- Refinamiento de consultas de búsqueda cuando los primeros resultados son débiles.
+- Seguimiento de instrucciones de formato estricto ("exactamente 3 viñetas", "menos de 20 palabras", "una frase"), traducción y reescritura.
+- Descomposición de consultas múltiples, resúmenes con citas y seguimiento de preguntas elípticas.
+- Soporte de tool calling / function calling para la herramienta de búsqueda web.
+- Capacidades multilingües: no disponible (entrenado y declarado únicamente para inglés).
 
 ## Casos de uso
 
-- Asistente de atención al cliente con búsqueda en base de conocimiento: el modelo decide si la consulta requiere recuperación externa o puede responderse directamente, y cuando la recuperación no cubre la pregunta lo indica en lugar de improvisar una respuesta, lo que reduce escalados erróneos y respuestas inventadas.
-- Agente de noticias y datos actuales: ante preguntas sobre marcadores deportivos, cotizaciones o titulares, emite una llamada `web_search` bien formada y devuelve una respuesta corta con citas numeradas que el usuario puede verificar.
-- Verificación de hechos con trazabilidad: el formato de citas `[1]`, `[2]` y la comprobación de grounding del entrenamiento lo hacen adecuado para flujos donde cada afirmación debe apuntar a un fragmento concreto de la fuente.
-- Integración en pipelines de agentes con function calling: su tasa del 100% de llamadas bien formadas en los conjuntos de validación del autor permite conectarlo a orquestadores que exigen esquemas de herramienta válidos sin capas de reparación adicionales.
-- Despliegue en Apple Silicon para prototipado: el build MLX de 2,9 GB se ejecuta con `mlx-lm` en portátiles y equipos de sobremesa con chip de Apple, lo que facilita iterar localmente sobre el comportamiento de búsqueda antes de pasar a producción.
-- Servicio ligero en CPU o GPU modesta: las variantes GGUF Q4_K_M (2,5 GB) y Q8_0 (4,3 GB) funcionan con llama.cpp, Ollama y LM Studio, útiles para asistentes internos con presupuesto de hardware reducido.
-- Generación de respuestas con formato controlado: las 500 conversaciones de instrucciones de formato permiten usarlo para producir salidas con restricciones estrictas de longitud o estructura en tareas de resumen y reescritura.
+- Asistentes de atención al cliente con acceso a búsqueda: el modelo solo consulta cuando la pregunta requiere información actual (estado de un pedido, precios vigentes) y responde directamente ante preguntas de política estables, reduciendo llamadas innecesarias a APIs externas.
+- Chatbots de noticias y resultados deportivos: ante consultas como "último resultado del partido", invoca `web_search`, responde en pocas palabras y cita los fragmentos utilizados, lo que facilita la verificación por parte del usuario.
+- Agentes de investigación con pipeline de búsqueda propia: el modelo emite tool calls bien formadas (el autor reporta 100% en sus conjuntos de validación) y puede integrarse en orquestadores que ejecuten la búsqueda y devuelvan snippets al modelo.
+- Sistemas que priorizan la honestidad factual: en dominios donde inventar una cifra es costoso (finanzas, salud informativa), el modelo declara cuando los resultados no contienen la respuesta en lugar de alucinar un dato.
+- Despliegue en hardware de consumo: con GGUF Q4_K_M de 2,50 GB puede ejecutarse en portátiles con GPU modesta o en CPU mediante llama.cpp, Ollama o LM Studio, adecuado para prototipos y aplicaciones de escritorio.
+- Aplicaciones en Apple Silicon: el build MLX de 3,07 GB está pensado para `mlx-lm` en Macs, permitiendo inferencia local con un consumo de memoria contenido.
+- Generación de respuestas con formato estricto: útil en integraciones que requieren salidas acotadas (resúmenes de una frase, listas de tres elementos) para insertar en interfaces o notificaciones.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros). La evaluación disponible se limita a decodificación greedy sobre prompts de validación hechos a mano, en tres conjuntos de 44, 64 y 36 prompts. El conjunto de 44 se escribió después de congelar la mezcla de entrenamiento y se excluyó de ella por palabra clave, por lo que es el más limpio; los de 64 y 36 solapan más con los temas de entrenamiento.
+La model card incluye una evaluación propia con decodificación greedy sobre prompts de validación hechos a mano, en tres conjuntos de 44, 64 y 36 prompts. Los resultados publicados de forma explícita son:
 
-| Métrica | Amethyst 2.5 Mini | Qwen3-4B base |
+| Metrica | Amethyst 2.5 Mini | Qwen3-4B base |
 |---|---|---|
-| Llamadas de herramienta bien formadas | 100% | 60-88% |
-| Búsquedas innecesarias | 0% | no disponible |
-| Longitud media de respuesta simple (conjuntos 1 y 2) | 31-38 palabras | 45-66 palabras |
-| Longitud media de respuesta simple (conjunto 3) | igual de breve que la base | igual de breve |
+| Tool calls bien formadas (3 conjuntos, 44/64/36 prompts) | 100% | 60-88% |
+| Busquedas innecesarias en preguntas estables | 0% | no disponible |
+| Longitud media de respuesta llana (conjuntos 1 y 2) | 31-38 palabras | 45-66 palabras |
+| Longitud media de respuesta llana (conjunto 3) | similar al base | similar al modelo |
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor advierte que los conjuntos de 64 y 36 prompts se solapan más con los temas de entrenamiento que el de 44, por lo que la columna de 44 prompts es la más representativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5 GB con GGUF Q4_K_M, unos 4,3 GB con GGUF Q8_0 y unos 2,9 GB con el build MLX mixto, más el overhead de contexto y del runtime.
-- GPU recomendadas: no se especifican en la información proporcionada; por tamaño, cualquier GPU con al menos 6-8 GB de memoria libre debería acomodar las variantes cuantizadas.
-- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más (RTX 3060, 4060, 4070 y superiores), aunque el autor no publica pruebas en estas GPU.
-- Apple Silicon: el formato principal es MLX, pensado para `mlx-lm` en chips de Apple; es el entorno en el que se entrenó y validó el modelo.
-- Opciones de despliegue: `mlx-lm` para el build MLX; llama.cpp, Ollama y LM Studio para los GGUF. El repositorio incluye la etiqueta `endpoints_compatible`. No se mencionan vLLM ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: aproximadamente 2,5 GB para GGUF Q4_K_M, 4,3 GB para GGUF Q8_0 y 3,1 GB para el build MLX mixto (más overhead del runtime y de la caché KV).
+- GPU recomendadas: no disponible de forma explícita; por tamaño, cualquier GPU con 6-8 GB de VRAM o más puede alojar las variantes cuantizadas. El formato MLX está orientado a Apple Silicon (memoria unificada).
+- GPU de consumo: sí, cabe en tarjetas con 6-8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) usando Q4_K_M, y en Macs con Apple Silicon mediante MLX.
+- Opciones de despliegue: `mlx-lm` (MLX), llama.cpp, Ollama y LM Studio (GGUF). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI, aunque no se detalla en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formatos |
 |---|---|---|---|---|---|
-| Amethyst 2.5 Mini | 4,02B (denso) | no disponible | Chat + tool calling de búsqueda con abstención explícita | Apache 2.0 | MLX, GGUF Q8_0, GGUF Q4_K_M |
-| Qwen3-4B (base) | 4B (denso) | no disponible | Modelo generalista | Apache 2.0 | safetensors y múltiples cuantizaciones de la comunidad |
-| mlx-community/Qwen3-4B-4bit | 4B (denso) | no disponible | Checkpoint base cuantizado para MLX | Apache 2.0 | MLX |
+| Amethyst 2.5 Mini | 4,02B | no disponible (base: 32.768) | Chat + tool calling de busqueda web con citas y abstención | Apache 2.0 | MLX, GGUF |
+| Qwen3-4B (base) | ~4B | 32.768 | Modelo generalista multilingüe | Apache 2.0 | safetensors, GGUF (comunidad) |
+| Qwen3-4B-Instruct | ~4B | 32.768 | Chat generalista con soporte de tool calling | Apache 2.0 | safetensors, GGUF (comunidad) |
 
-La comparación cuantitativa solo está disponible frente al Qwen3-4B base en las métricas propias del autor: 100% frente a 60-88% de llamadas de herramienta bien formadas y respuestas entre 14 y 35 palabras más cortas en dos de los tres conjuntos. No se han publicado comparaciones con otros modelos ajustados para tool calling en la información disponible.
+La comparación directa con alternativas especializadas en búsqueda web y abstención no está disponible en la información proporcionada. Frente a su base, Amethyst 2.5 Mini sacrifica multilingüismo y generalidad a cambio de un comportamiento más fiable en tool calling y concisión, según la evaluación del propio autor.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo inglés. No hay soporte declarado de castellano ni de otros idiomas, aunque el modelo base Qwen3-4B es multilingüe y parte de esa capacidad podría conservarse sin garantías.
-- Volumen de entrenamiento reducido: 3.205 conversaciones sintéticas y 2.341 iteraciones de LoRA. El ajuste es estrecho y puede degradar capacidades generales del modelo base fuera del dominio de chat con búsqueda.
-- Datos completamente sintéticos: todos los resultados de búsqueda del entrenamiento fueron inventados por modelos profesor; no se validó con páginas web reales, lo que puede producir un desajuste de distribución frente a resultados reales de un motor de búsqueda.
-- Evaluación limitada: los conjuntos de validación son pequeños (44, 64 y 36 prompts), hechos a mano y parcialmente solapados con los temas de entrenamiento. No hay benchmarks estándar ni evaluación independiente.
-- Riesgo de alucinación: aunque el modelo está entrenado para abstenerse cuando los resultados no responden, no hay garantía de que lo haga siempre en producción; conviene mantener validación de las citas en el pipeline.
-- Sesgos: no se documenta ninguna evaluación de sesgos en la información proporcionada.
-- Contexto: la longitud de contexto no se especifica en la ficha; debe consultarse la del modelo base antes de diseñar flujos con historiales largos o muchos resultados de búsqueda.
-- Licencia: Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen3-4B; conviene revisar su documentación.
-- Madurez: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y el proyecto se describe como investigación independiente sin respaldo institucional.
-- Procedimiento de entrenamiento con interrupción manual y reinicio en frío del optimizador, lo que introduce una discontinuidad no cuantificada en la trayectoria de optimización.
+- Solo soporta inglés; no se declaran capacidades multilingües.
+- Entrenado exclusivamente con datos sintéticos generados por destilación; los resultados de búsqueda del dataset son inventados, lo que puede limitar la robustez ante snippets reales con formatos, ruido o HTML no vistos.
+- La evaluación se basa en conjuntos de validación pequeños (44, 64 y 36 prompts) hechos a mano por el autor, sin benchmarks estandar ni evaluación independiente; los conjuntos de 64 y 36 se solapan con los temas de entrenamiento.
+- Riesgo de alucinación reducido por diseño en el escenario de búsqueda, pero no eliminado: fuera del flujo de tool calling no hay garantías específicas más allá de las del modelo base.
+- El proceso de entrenamiento incluyó una pausa manual con reinicio en frío del optimizador, lo que puede afectar la reproducibilidad exacta del ajuste.
+- El build MLX usa cuantización mixta no estándar; otras herramientas distintas de `mlx-lm` pueden no interpretarlo correctamente.
+- Licencia Apache 2.0, que permite uso comercial, pero se heredan las condiciones y consideraciones del modelo base Qwen3-4B.
+- La longitud de contexto efectiva no se documenta en la model card; conviene verificar el comportamiento con contextos largos antes de usarlo en producción.
+- Sin datos publicados de latencia, throughput ni consumo en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/VertexAGI/amethyst-2-5-mini
-- Modelo base: https://huggingface.co/Qwen/Qwen3-4B
-- Checkpoint de ajuste fino: https://huggingface.co/mlx-community/Qwen3-4B-4bit
+- Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
+- Checkpoint de ajuste mlx-community/Qwen3-4B-4bit: https://huggingface.co/mlx-community/Qwen3-4B-4bit
 - Framework MLX: https://github.com/ml-explore/mlx
+- No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos del autor.

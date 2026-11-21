@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "braindecode/samba-100s-pretrained",
+  "slug": "braindecode-samba-100s-pretrained",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/samba-100s-pretrained",
+  "created_at": "2026-11-21T07:08:19.000Z",
+  "updated_at": "2026-11-21T07:08:22.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "safetensors",
+    "pytorch",
+    "eeg",
+    "samba",
+    "mamba",
+    "foundation-model",
+    "arxiv:2511.18571",
+    "base_model:Dcode-AI/SAMBA-100s",
+    "base_model:finetune:Dcode-AI/SAMBA-100s",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 391987,
+  "parameters_human": "391987",
+  "storage_bytes": 1586652,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": "Dcode-AI/SAMBA-100s",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Braindecode",
+      "url": "https://braindecode.org/stable/_downloads/53a59ea1d06acee36d30fedeab79e4bd/plot_load_pretrained_models.py",
+      "snippet": "If you are not redirected automatically, follow this link"
+    }
+  ]
+}

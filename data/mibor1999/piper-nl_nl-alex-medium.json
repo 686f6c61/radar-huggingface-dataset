@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "Mibor1999/piper-nl_NL-alex-medium",
+  "slug": "mibor1999-piper-nl_nl-alex-medium",
+  "author": "Mibor1999",
+  "url": "https://huggingface.co/Mibor1999/piper-nl_NL-alex-medium",
+  "created_at": "2026-11-21T12:23:52.000Z",
+  "updated_at": "2026-11-21T12:27:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "onnx",
+    "speaches",
+    "piper",
+    "text-to-speech",
+    "nl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63221984,
+  "storage_human": "63 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

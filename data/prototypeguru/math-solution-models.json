@@ -5,7 +5,7 @@
   "author": "prototypeguru",
   "url": "https://huggingface.co/prototypeguru/math-solution-models",
   "created_at": "2026-11-18T08:19:27.000Z",
-  "updated_at": "2026-11-18T08:39:15.000Z",
+  "updated_at": "2026-11-20T10:52:28.000Z",
   "license": "mixed-mit-apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",

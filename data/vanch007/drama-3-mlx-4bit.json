@@ -5,7 +5,7 @@
   "author": "vanch007",
   "url": "https://huggingface.co/vanch007/Drama-3-MLX-4bit",
   "created_at": "2026-10-14T17:25:52.000Z",
-  "updated_at": "2026-11-16T12:30:55.000Z",
+  "updated_at": "2026-11-16T13:14:00.000Z",
   "license": "fish-audio-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 8720553088,
   "parameters_human": "8.72B",

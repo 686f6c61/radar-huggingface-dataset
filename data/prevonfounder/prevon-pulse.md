@@ -2,104 +2,91 @@
 
 ## Resumen
 
-prevon-pulse es un modelo de generacion de texto publicado en Hugging Face por el usuario PrevonFounder bajo el identificador `PrevonFounder/prevon-pulse`. Se trata de un checkpoint de tipo transformer para generacion de texto conversacional, con 268.098.176 parametros reales declarados en los ficheros safetensors del repositorio (aproximadamente 268,1 millones). El tag de arquitectura `gemma3_text` indica que la topologia corresponde a la familia Gemma 3 en su variante exclusivamente de texto, aunque no hay confirmacion del autor sobre si se trata de un fine-tuning, una destilacion o un entrenamiento desde cero.
+Prevon Pulse es un ajuste fino completo de FunctionGemma, el modelo de 270 millones de parametros de Google especializado en function calling. Lo desarrolla PrevonFounder para su aplicacion de notas Prevon: el modelo recibe una peticion en lenguaje natural y devuelve una accion de la aplicacion junto con sus argumentos, ejecutandose integramente en el dispositivo del usuario. Se distribuye tanto en pesos safetensors compatibles con Transformers como en formato LiteRT-LM (`.litertlm`), que es el artefacto que descarga la aplicacion en Android, iOS, macOS sobre Apple Silicon y Windows.
 
-El modelo no dispone de model card util: el README es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas soportados, longitud de contexto, composicion del dataset de entrenamiento ni resultados de evaluacion. El repositorio se creo el 26 de septiembre de 2026 y se actualizo menos de una hora despues, con 0 descargas y 0 "likes" en el momento de redactar esta ficha.
+El modelo parte de `google/functiongemma-270m-it` y se ha entrenado mediante un fine-tune completo de todos los pesos sobre datos propios de Prevon. Con 268.098.176 parametros efectivos y un repositorio de 1,9 GB, esta pensado para inferencia local con requisitos de memoria muy bajos, no para conversacion general. Su relevancia actual reside en el patron de despliegue: un modelo pequeno, especializado y empaquetado para ejecucion on-device, que evita depender de la nube para tareas de seleccion de accion y relleno de argumentos.
 
-Su relevancia practica es limitada pero concreta: por tamano, encaja en la categoria de modelos ultraligeros (sub-500M) pensados para inferencia en CPU, dispositivos de borde o GPUs de gama baja, y como base para experimentacion y fine-tuning de bajo coste. No obstante, la ausencia total de documentacion, licencia y evaluaciones hace que su uso en produccion requiera una validacion previa por parte del integrador.
+La model card indica explicitamente que esta primera release ha sido superada por Prevon Pulse MK2 y MK4, y que se mantiene publicada solo porque compilaciones antiguas de la aplicacion siguen referenciandola. La licencia combina los terminos de Gemma con condiciones adicionales de Prevon que restringen el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, tag `gemma3_text` (arquitectura de la familia Gemma 3, solo texto) |
-| Parametros totales | 268.098.176 (268,1 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors; no hay GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (libreria transformers) |
-
-Datos adicionales verificables: tamano del repositorio 1,9 GB, pipeline `text-generation`, tags `transformers`, `safetensors`, `text-generation-inference`, `endpoints_compatible`, `conversational`, `region:us`.
-
-Observacion tecnica: un checkpoint de 268,1 M de parametros en bf16 ocupa aproximadamente 0,54 GB y en fp32 aproximadamente 1,07 GB. El tamano del repositorio (1,9 GB) es superior a ambas cifras, lo que sugiere que puede contener pesos en fp32 junto con ficheros adicionales, o bien varias copias del checkpoint. Este punto no esta documentado por el autor.
+| Arquitectura | transformer decoder-only (familia Gemma 3, variante text; heredada de `google/functiongemma-270m-it`) |
+| Parametros totales | 268.098.176 |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible; se distribuye un artefacto LiteRT-LM (`.litertlm`) cuyo esquema interno de cuantizacion no se detalla |
+| Idiomas soportados | no disponible en la informacion proporcionada (la model card no declara lista de idiomas) |
+| Licencia | gemma-prevon-model-terms (Gemma Terms of Use + Prohibited Use Policy + terminos adicionales de Prevon) |
+| Formato de pesos | safetensors (Transformers), LiteRT-LM (`.litertlm`) |
 
 ## Arquitectura y entrenamiento
 
-La unica evidencia sobre la arquitectura es el tag `gemma3_text`, que situa el modelo en la familia Gemma 3 de Google para texto. Esto implica, con alta probabilidad, un transformer decoder-only con normalizacion RMSNorm, atencion por grupos (GQA) y activaciones GeGLU/SwiGLU propias de esa familia. Sin embargo, ni la model card ni la informacion disponible confirman el numero de capas, la dimension del modelo, el numero de cabezas de atencion, el vocabulario ni si se emplearon variantes de atencion lineal o ventanas deslizantes. Todos estos datos deben considerarse "no disponibles".
+La arquitectura es la de FunctionGemma 270M, un transformer decoder-only de la familia Gemma 3 en su variante exclusivamente de texto (`gemma3_text`). No hay mezcla de expertos, attention lineal ni componentes de estado recurrente documentados: es un transformer denso de pequeno tamano optimizado para generar llamadas a funciones estructuradas en lugar de texto libre.
 
-Respecto al entrenamiento, no hay informacion alguna: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste supervisado, RLHF, DPO o destilacion, y si el modelo parte de pesos preentrenados de Gemma 3 o de un entrenamiento propio. El tag `arxiv:1910.09700` incluido en los metadatos corresponde al articulo de Lacoste et al. (2019) sobre calculo del impacto ambiental, que aparece de forma automatica en la plantilla de model card de Hugging Face; no es una referencia al articulo tecnico del modelo.
+El entrenamiento consistio en un fine-tune completo de todos los pesos del modelo base sobre datos propios de Prevon. La model card no especifica volumen de tokens, composicion del dataset, uso de RLHF o DPO, ni hiperparametros. No se documentan innovaciones tecnicas adicionales mas alla del ajuste al formato de prompt propietario de la aplicacion Prevon y del empaquetado en LiteRT-LM para despliegue on-device.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: es la capacidad declarada por el pipeline `text-generation` y por el tag `conversational`, que implica formato de dialogo multi-turno.
-- Conversacion: el tag `conversational` sugiere plantilla de chat con roles, aunque no se documenta el formato exacto de prompt ni los tokens especiales.
-- Compatibilidad con transformers y text-generation-inference: el modelo se puede cargar con la libreria `transformers` y desplegar con TGI, segun los tags del repositorio.
-- Compatibilidad con endpoints de Hugging Face: el tag `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints sin configuracion adicional.
-- Llamada a herramientas (tool calling / function calling): no disponible, no declarado.
-- Razonamiento multi-paso y uso como agente: no disponible, no declarado.
-- Capacidades multilingues: no disponible; no se declara ningun idioma.
-- Vision, audio, modo "thinking" o decodificacion especulativa: no disponible; el tag de arquitectura es exclusivamente de texto.
+- Seleccion de accion: dado un enunciado del usuario, el modelo elige una accion de la aplicacion Prevon de entre las disponibles.
+- Relleno de argumentos: genera los parametros asociados a la accion seleccionada siguiendo el formato de prompt propio de Prevon.
+- Function calling estructurado: capacidad heredada del modelo base FunctionGemma, orientada a salidas con estructura de llamada a funcion.
+- Inferencia on-device: el artefacto LiteRT-LM permite ejecucion local en Android, iOS, macOS sobre Apple Silicon y Windows.
+- Conversacion limitada: la model card advierte que no es un modelo de chat general y que esta construido para el formato de prompt de la aplicacion Prevon.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking, vision o audio: no disponible; el modelo es exclusivamente de texto.
 
 ## Casos de uso
 
-- Prototipado rapido de asistentes conversacionales: por su tamano de 268 M de parametros, el modelo puede cargarse en entornos de desarrollo con recursos minimos (incluso CPU) para validar plantillas de prompt, flujos de conversacion y formatos de salida antes de migrar a un modelo mayor.
-- Inferencia en dispositivos de borde y sin conexion: con pesos de aproximadamente 0,14 GB en int4 o 0,27 GB en int8, es candidato para ejecutarse en Raspberry Pi, moviles o portatiles sin GPU dedicada, siempre que se generen los ficheros cuantizados (no publicados en el repositorio).
-- Base para fine-tuning de dominio especifico: al ser un checkpoint pequeno, el coste de un ajuste supervisado sobre datos propios (soporte tecnico, clasificacion de tickets, generacion de respuestas de plantilla) es bajo en una unica GPU consumer.
-- Generacion de texto de bajo volumen en backends modestos: respuestas cortas, resumenes de fragmentos pequenos o reformulacion de texto donde no se requiere contexto largo ni razonamiento complejo.
-- Experimentacion academica y docencia: util como banco de pruebas para comparar tecnicas de cuantizacion, destilacion o ajuste fino con un coste computacional reducido.
-- Filtrado y preprocesado de texto en pipelines de datos: puede emplearse como generador para tareas auxiliares (etiquetado aproximado, normalizacion de texto) siempre que se valide su calidad previamente, dado que no hay benchmarks publicados.
-- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` permite levantar una API de generacion gestionada sin infraestructura propia, adecuada para demos internas.
-
-Advertencia: ninguno de estos casos esta respaldado por evaluaciones publicadas; se derivan de las caracteristicas tecnicas declaradas (tamano, pipeline, tags) y requieren validacion empirica antes de un uso real.
+- Asistente de acciones dentro de la app Prevon: el modelo interpreta una frase del usuario ("crea una nota con etiqueta trabajo") y devuelve la accion y los argumentos que la aplicacion ejecuta, con latencia local y sin envio de datos a la nube.
+- Procesamiento de lenguaje natural sin conexion: al ejecutarse via LiteRT-LM en el dispositivo, permite comandos por voz o texto en movil incluso sin conectividad, manteniendo la privacidade de las notas del usuario.
+- Automatizacion de notas con etiquetas y recordatorios: el modelo puede mapear peticiones a acciones de creacion, etiquetado o programacion dentro de la app, reduciendo la interaccion manual a un unico turno.
+- Integracion en compilaciones existentes de la aplicacion: dado que esta release se conserva por compatibilidad, sirve para mantener el comportamiento esperado en versiones antiguas de Prevon que referencian este checkpoint.
+- Base para fine-tunes derivados: por su tamano (268 M parametros) y su formato safetensors, es util como punto de partida para experimentos de adaptacion a otros esquemas de acciones con recursos de GPU modestos.
+- Evaluacion de pipelines de function calling on-device: permite medir latencia, consumo de memoria y tasas de acierto de seleccion de accion en entornos moviles reales, como paso previo a adoptar MK2 o MK4.
+- Prototipado de interfaces comandadas por lenguaje natural: desarrolladores que construyan apps de notas o productividad pueden usar el modelo para validar un flujo de intencion-a-accion antes de entrenar su propio modelo especializado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-El autor no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Bench ni similares) en la model card, y la busqueda web no aporta datos de rendimiento del modelo. Tampoco hay informacion sobre latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que existen releases posteriores (MK2 y MK4) con mejores puntuaciones, pero no proporciona cifras concretas para esta primera version ni para esas variantes.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos, segun precision: aproximadamente 1,07 GB en fp32, 0,54 GB en fp16/bf16, 0,27 GB en int8 y 0,14 GB en int4. A estas cifras hay que sumar la memoria de la cache KV, que depende de la longitud de contexto (no disponible).
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente para el modelo sin cuantizar, incluidas NVIDIA GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4060/4090, asi como GPUs de datacenter (T4, L4, A100, H100) donde el modelo quedaria enormemente infrautilizado.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en GPUs integradas con memoria compartida.
-- Inferencia en CPU: viable por el reducido numero de parametros; no hay medidas de tokens por segundo publicadas.
-- Opciones de despliegue: `transformers` (confirmado por la libreria del repositorio), text-generation-inference (tag `text-generation-inference`) y Hugging Face Inference Endpoints (tag `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ficheros en ese formato. vLLM es compatible en principio con la arquitectura Gemma 3, pero no esta confirmado para este checkpoint concreto.
+- VRAM estimada para inferencia: no disponible de forma oficial. Por el numero de parametros (268 M), los pesos en precision completa ocuparian aproximadamente 0,5 GB en FP16/BF16 y en torno a 0,27 GB en INT8; estas cifras son estimaciones teoricas a partir del recuento de parametros, no datos publicados por el autor.
+- GPU recomendadas: no disponible. El modelo esta disenado para ejecucion on-device mediante LiteRT-LM, no para servidores con A100 o H100.
+- Cabe en GPU consumer: si, por tamano deberia caber con holgura en cualquier GPU consumer con al menos 1-2 GB de memoria libre, incluidas GTX/RTX de gama baja; no hay confirmacion oficial de compatibilidad.
+- Opciones de despliegue: LiteRT-LM (Android, iOS, Apple Silicon Mac, Windows) es la via principal; los pesos safetensors permiten carga con Transformers y, en principio, conversion a otros runtimes, aunque el autor no documenta recetas para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece con modelos ultraligeros de proposito general de la misma franja de tamano. Los datos de los modelos alternativos proceden de su documentacion publica y no de la busqueda web realizada para esta ficha; conviene verificarlos antes de citarlos.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Prevon Pulse | 268 M | no disponible | function calling para app Prevon, on-device | Gemma Terms + terminos Prevon (uso comercial restringido) | Hugging Face, LiteRT-LM |
+| google/functiongemma-270m-it | 270 M (aprox., segun nombre) | no disponible | function calling general | Gemma Terms of Use | Hugging Face |
+| Prevon Pulse MK2 | no disponible | no disponible | misma tarea, version posterior | no disponible en detalle | Hugging Face |
+| Prevon Pulse MK4 | no disponible | no disponible | misma tarea, version posterior con mejores puntuaciones | no disponible en detalle | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| prevon-pulse | 268,1 M | no disponible | no disponible | Hugging Face, safetensors |
-| Gemma 3 270M | 268 M | 32 K (segun documentacion del fabricante) | Terminos de uso de Gemma | Pesos abiertos en Hugging Face |
-| Qwen3 0.6B | 0,6 B | 32 K (segun documentacion del fabricante) | Apache 2.0 | Pesos abiertos en Hugging Face |
-| SmolLM2 360M | 360 M | 8 K (segun documentacion del fabricante) | Apache 2.0 | Pesos abiertos en Hugging Face |
-
-Diferencias relevantes: frente a las alternativas, prevon-pulse no publica licencia ni contexto, lo que impide evaluar su viabilidad legal y funcional. La coincidencia exacta entre su numero de parametros (268.098.176) y el de Gemma 3 270M sugiere que comparte topologia con ese modelo, pero no hay confirmacion del autor. En rendimiento no es posible comparar porque no existen benchmarks publicados de prevon-pulse.
+Los datos de contexto, rendimiento y licencia de MK2 y MK4 no estan detallados en la informacion proporcionada; solo se indica que obtienen mejores puntuaciones que esta primera release.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: no se declara ninguna licencia, lo que impide determinar si el uso comercial esta permitido. En la practica, esto supone un riesgo legal para cualquier integracion en produccion.
-- Posible herencia de los terminos de Gemma: si el modelo deriva de pesos de Gemma 3 (hipotesis coherente con el tag `gemma3_text` y con el numero de parametros), se aplicarian los Terminos de Uso de Gemma, que incluyen obligaciones de atribucion y restricciones de uso. Este punto no esta confirmado ni desmentido por el autor.
-- Model card vacia: todos los campos del README son la plantilla autogenerada, sin informacion sobre datos de entrenamiento, sesgos, idiomas o evaluacion.
-- Riesgo de alucinacion: los modelos de esta franja de tamano tienden a generar contenido factualmente incorrecto con mayor frecuencia que modelos grandes; no hay evaluaciones que permitan cuantificar este riesgo en prevon-pulse.
-- Cobertura de idiomas desconocida: no se declara ningun idioma soportado, por lo que no se puede garantizar un rendimiento aceptable en castellano ni en ninguna otra lengua sin pruebas previas.
-- Longitud de contexto desconocida: al no documentarse la ventana de contexto, no se puede planificar su uso en tareas que requieran conversaciones largas o documentos extensos.
-- Sin ficheros cuantizados: la ausencia de GGUF o formatos de 4/8 bits obliga a generar las cuantizaciones antes de desplegar en dispositivos de borde.
-- Sin validacion de la comunidad: 0 descargas y 0 "likes" en el momento de la consulta, y publicacion seguida de actualizacion en menos de una hora, lo que es consistente con un repositorio de prueba y no con un modelo validado. No se recomienda su uso en produccion sin una evaluacion propia.
-- Sin garantias de mantenimiento: el autor no documenta soporte, versionado ni plan de actualizaciones.
+- Modelo no generalista: esta construido para el formato de prompt de la aplicacion Prevon; no debe usarse como chatbot generico.
+- Salidas potencialmente incorrectas: la model card advierte explicitamente que las salidas pueden ser erroneas y recomienda revisar cualquier accion antes de confiar en ella.
+- Version superada: MK2 y MK4 existen y puntuan mejor; esta release se mantiene solo por compatibilidad con compilaciones antiguas de la aplicacion.
+- Licencia restrictiva para uso comercial: los terminos de Prevon permiten uso gratuito a personas, escuelas, investigadores y entidades sin animo de lucro; empresas y cualquier uso con animo de lucro requieren permiso escrito de Prevon, los competidores nunca estan cubiertos y las modificaciones exigen renombrar el modelo.
+- Terminos de Gemma aplicables en su totalidad, incluida la Prohibited Use Policy de Google.
+- Idiomas y contexto no declarados: al no documentarse la lista de idiomas ni la ventana de contexto, no es posible garantizar cobertura multilingue ni conversaciones de contexto largo.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion proporcionada.
+- Riesgo de alucinacion en argumentos: en tareas de relleno de parametros, el modelo puede generar valores plausibles pero incorrectos, por lo que la aplicacion deberia validar los argumentos antes de ejecutar la accion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/PrevonFounder/prevon-pulse
-- Perfil del autor en GitHub: https://github.com/PrevonFounder
-- Repositorios del autor en GitHub: https://github.com/PrevonFounder?tab=repositories
-- Articulo referenciado en el tag del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
-
-Nota: el resto de resultados de la busqueda web (listados genericos de lanzamientos de modelos, la pagina principal de Hugging Face y una noticia sobre la ronda de financiacion de Graphon AI) no guardan relacion con este modelo y no se incluyen como fuentes.
+- Terminos del modelo Prevon: https://huggingface.co/PrevonFounder/prevon-pulse/blob/main/PREVON_MODEL_TERMS.md
+- Modelo base: https://huggingface.co/google/functiongemma-270m-it
+- Gemma Terms of Use: https://ai.google.dev/gemma/terms
+- Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy
+- Prevon Pulse MK4: https://huggingface.co/PrevonFounder/prevon-pulse-mk4
+- Prevon Pulse MK2: https://huggingface.co/PrevonFounder/prevon-pulse-mk2

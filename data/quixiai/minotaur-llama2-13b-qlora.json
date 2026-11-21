@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "QuixiAI/minotaur-llama2-13b-qlora",
+  "slug": "quixiai-minotaur-llama2-13b-qlora",
+  "author": "QuixiAI",
+  "url": "https://huggingface.co/QuixiAI/minotaur-llama2-13b-qlora",
+  "created_at": "2023-08-03T21:25:23.000Z",
+  "updated_at": "2026-11-21T09:40:34.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "base_model:TheBloke/Llama-2-13B-fp16",
+    "base_model:adapter:TheBloke/Llama-2-13B-fp16",
+    "license:llama2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2505590403,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": "TheBloke/Llama-2-13B-fp16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-Shot)",
+      "metric": "normalized accuracy",
+      "value": 60.07
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-Shot)",
+      "metric": "normalized accuracy",
+      "value": 82.42
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-Shot)",
+      "metric": "accuracy",
+      "value": 55.87
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": null,
+      "value": 45.57
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 76.24
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot)",
+      "metric": "accuracy",
+      "value": 12.05
+    }
+  ],
+  "sources": []
+}

@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "SpeechTek/speechllm_fama_meusli_villanova_st_en2it_v1",
+  "renamed_at": "2026-11-21T11:44:06.459Z",
   "benchmarks": [],
   "sources": []
 }

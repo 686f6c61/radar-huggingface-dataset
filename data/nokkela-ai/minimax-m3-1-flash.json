@@ -5,7 +5,7 @@
   "author": "nokkela-ai",
   "url": "https://huggingface.co/nokkela-ai/MiniMax-M3.1-Flash",
   "created_at": "2026-11-20T16:20:57.000Z",
-  "updated_at": "2026-11-20T16:42:07.000Z",
+  "updated_at": "2026-11-21T10:00:04.000Z",
   "license": "minimax-community",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 220490854016,
   "parameters_human": "220.49B",

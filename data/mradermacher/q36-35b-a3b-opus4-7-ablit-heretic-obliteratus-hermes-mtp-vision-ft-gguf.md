@@ -2,174 +2,98 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF estáticas del modelo `oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT`, preparadas por mradermacher, un cuantizador habitual en el ecosistema de Hugging Face. Se trata de un modelo de lenguaje basado en la arquitectura Qwen3.6-35B-A3B (Mixture of Experts) que ha sido destilado de Claude 4.7 Opus, posteriormente abliterado para reducir rechazos (uncensored), y afinado con datasets de function calling y razonamiento agéntico (Hermes). Además, incorpora soporte multimodal (visión) y un cabezal MTP (Multi-Token Prediction) para decodificación especulativa.
+Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT es un modelo de lenguaje multimodal de tipo Mixture-of-Experts (MoE) con 35.505.251.456 parámetros totales y 3B parámetros activos por token (según el sufijo A3B del nombre), derivado de la familia Qwen 3.6 (tag `qwen3_5_moe`). Esta ficha concreta es la cuantización estática en GGUF publicada por mradermacher sobre el modelo base de oktaydu, que a su vez es un fine-tuning orientado a razonamiento, function calling y uso agéntico sobre una variante "abliterated" (sin rechazos) del modelo original.
 
-La relevancia de este modelo radica en que ofrece una versión cuantizada de un modelo de razonamiento y agente de gran tamaño, con capacidades de visión y tool calling, en formatos GGUF que pueden ejecutarse en hardware local mediante llama.cpp, Ollama u otros motores compatibles. La licencia Apache-2.0 permite uso comercial sin restricciones, aunque el modelo está pensado para entornos de desarrollo y experimentación.
+El modelo acumula varias modificaciones sobre la base: eliminación de mecanismos de rechazo (tags `abliterated`, `heretic`, `obliteratus`, `not-for-all-audiences`), fine-tuning con los datasets `NousResearch/hermes-function-calling-v1` y `lambda/hermes-agent-reasoning-traces`, soporte de visión (componente `mmproj` en los GGUF), y una cabeza MTP/NextN (Multi-Token Prediction) que permite decodificación especulativa nativa. El resultado es un modelo orientado a agentes, coding agéntico y tool use, con capacidades multimodales.
 
-## Especificaciones técnicas
+La relevancia práctica de esta publicación es que ofrece el modelo en 13 cuantizaciones GGUF (desde Q2_K de 13,3 GB hasta Q8_0 de 37,9 GB) más dos variantes del proyector multimodal, lo que permite desplegarlo en hardware de consumo. La licencia declarada es Apache 2.0, aunque las modificaciones de alineación (abliteration) y los datasets de entrenamiento introducen caveats importantes para producción.
 
-| Parametro | Valor |
-|---|---|
-| Arquitectura | Qwen3.6 MoE (Mixture of Experts) con cabez MTP (Multi-Token Prediction) y proyector de visión |
-| Parametros totales | no disponible (la nomenclatura del modelo sugiere 35B, pero el dato reportado de safetensors es 446M, probablemente de un archivo auxiliar) |
-| Parametros activos | 3B (según nomenclatura A3B) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16 (todos estáticos, sin imatrix) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (incluye mmproj para visión en Q8_0 y f16) |
-
-## Arquitectura y entrenamiento
-
-El modelo base es una variante de Qwen3.6-35B-A3B, una arquitectura MoE con 3.000 millones de parámetros activos por token. Ha sido destilado a partir de Claude 4.7 Opus, lo que le confiere capacidades de razonamiento avanzado. Posteriormente se aplicó un proceso de "abliteración" (refusal reduction) que elimina parcialmente las barreras de rechazo del modelo, y se realizó un fine-tuning con los datasets `NousResearch/hermes-function-calling-v1` y `lambda/hermes-agent-reasoning-traces` para reforzar el uso de herramientas y el razonamiento agéntico. El modelo incluye un cabez MTP (Multi-Token Prediction) que permite decodificación especulativa (self-speculative decoding) y un proyector multimodal para entrada de imágenes.
-
-No se dispone de información sobre el número total de tokens de entrenamiento ni sobre el proceso de entrenamiento detallado (RLHF, DPO, etc.).
-
-## Capacidades
-
-- Generación de texto y conversación multironda.
-- Razonamiento complejo y destilación de Claude 4.7 Opus para tareas de lógica y matemáticas.
-- Generación de código y agentic coding (uso de herramientas, ejecución de comandos).
-- Function calling / tool use, entrenado con datasets de Hermes.
-- Capacidades agénticas multi-paso (multi-step reasoning).
-- Soporte multimodal (visión) mediante proyector de imágenes.
-- Decodificación especulativa gracias al cabez MTP, lo que reduce la latencia en inferencia.
-- Abliterado: el modelo tiene menos rechazos, lo que permite generar contenido que normalmente sería bloqueado (uso responsable recomendado).
-
-## Casos de uso
-
-- **Atención al cliente automatizada**: con su capacidad de tool calling y razonamiento multi-turno, puede gestionar conversaciones complejas integrando APIs de CRM o bases de conocimiento.
-- **Generación de código en producción**: su destilación de Opus y el entrenamiento en function calling lo hacen apto para pipelines de CI/CD, generación de tests, refactorización y autocompletado.
-- **Agentes autónomos**: su entrenamiento en agent reasoning traces le permite planificar y ejecutar tareas de varios pasos, como la automatización de flujos de trabajo internos.
-- **Análisis de imágenes con razonamiento**: al combinar visión con razonamiento, puede describir imágenes, extraer información y razonar sobre contenido visual, por ejemplo para análisis de capturas de pantalla en depuración.
-- **Asistente de investigación**: con su capacidad de razonamiento y acceso a herramientas, puede buscar, resumir y sintetizar información técnica.
-- **Prototipado de aplicaciones multimodales**: al ser un modelo GGUF, se puede integrar en aplicaciones locales para procesar texto e imágenes sin depender de la nube, por ejemplo en entornos de salud o finanzas con datos sensibles.
-
-## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye ninguna tabla de rendimiento ni comparaciones con otros modelos.
-
-## Requisitos de hardware
-
-- El repositorio contiene archivos GGUF de tamaño variable, pero el tamaño total del repo es 21,9 GB. No se listan los tamaños individuales de cada cuantización.
-- Los archivos `mmproj` (para visión) ocupan entre 0,7 y 1,0 GB.
-- Para un modelo de 35B MoE con 3B activos, las cuantizaciones Q4_K_M o Q5_K_M suelen requerir entre 10 y 14 GB de VRAM, pero no se dispone de datos exactos.
-- GPU recomendadas: cualquier GPU con al menos 12 GB de VRAM para las cuantizaciones pequeñas (Q2_K, Q3_K), y 24 GB para las de mayor precisión (Q8_0).
-- Se puede ejecutar en CPU con llama.cpp u Ollama, aunque la velocidad será inferior.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, o cualquier motor compatible con GGUF.
-
-## Comparativa con modelos similares
-
-| Modelo | Parámetros | Contexto | Licencia | Cuantizaciones |
-|---|---|---|---|---|
-| mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF | 35B (MoE, 3B activos) | no disponible | Apache-2.0 | GGUF (múltiples quants) |
-| mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF | 35B (MoE, 3B activos) | no disponible | no disponible | GGUF (incluye MTP) |
-| Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-GGUF | 35B (MoE, 3B activos) | no disponible | no disponible | GGUF |
-
-Los tres modelos son cuantizaciones de variantes del mismo modelo base (Qwen3.6-35B-A3B) destilado de Claude 4.7 Opus, con diferencias en la abliteración y el entrenamiento adicional. La principal diferencia de este modelo es la inclusión de MTP y el soporte multimodal (visión), así como la licencia Apache-2.0 explícita.
-
-## Limitaciones y advertencias
-
-- **Abliterado**: el modelo ha sido modificado para reducir rechazos, lo que puede generar contenido inapropiado, sesgado o perjudicial. Debe usarse con responsabilidad y no en producción sin filtros adicionales.
-- **Idioma**: solo está entrenado en inglés (tag `en`), por lo que su rendimiento en otros idiomas será limitado.
-- **Contexto**: no se ha publicado la longitud máxima de contexto; se recomienda probar con ventanas moderadas (por ejemplo, 8K tokens) para evitar degradación.
-- **Sin benchmarks**: no hay métricas objetivas de rendimiento, por lo que es difícil comparar con otros modelos de forma cuantitativa.
-- **Cuantizaciones estáticas**: los quants son estáticos y no se han aplicado imatrix, por lo que la calidad puede ser ligeramente inferior a los quants con imatrix.
-- **Dependencia de hardware**: para un rendimiento óptimo se necesita GPU con suficiente VRAM, y el uso de MTP puede requerir soporte específico en el motor de inferencia (llama.cpp).
-- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base puede tener restricciones adicionales si se utiliza en entornos regulados (no se especifica).
-
-## Enlaces
-
-- Repositorio GGUF: https://huggingface.co/mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF
-- Modelo base: https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT
-- Dataset Hermes function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
-- Dataset Hermes agent reasoning traces: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
-- Página de gestión de modelos de mradermacher: https://hf.tst.eu/model#Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF
-- Modelo similar (mudler): https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF
-
-Nota: Los datos sobre parámetros totales y activos se basan en la nomenclatura del modelo, no en una medición directa. El dato de safetensors (446M) parece corresponder a un archivo auxiliar y no al tamaño del modelo completo.</think>## Resumen
-
-Este repositorio contiene las cuantizaciones GGUF estáticas del modelo `oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT`, preparadas por mradermacher, un cuantizador activo en el ecosistema de Hugging Face. Se trata de un modelo de lenguaje basado en la arquitectura Qwen3.6-35B-A3B (Mixture of Experts), destilado de Claude 4.7 Opus, abliterado para reducir rechazos, afinado con datasets de function calling y razonamiento agéntico (Hermes), y con soporte multimodal y cabez MTP (Multi-Token Prediction) para decodificación especulativa.
-
-La relevancia de este modelo radica en que ofrece una versión cuantizada de un modelo de razonamiento y agente de gran tamaño, con capacidades de visión y tool calling, en formato GGUF apto para ejecución local mediante llama.cpp, Ollama u otros motores. La licencia Apache-2.0 permite uso comercial sin restricciones. No obstante, al tratarse de una versión abliterada y sin benchmarks publicados, su uso en producción debe evaluarse con cautela.
-
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.6 MoE (Mixture of Experts) con cabecera MTP y proyector de visión |
-| Parametros totales | no disponible (la nomenclatura sugiere 35B, pero el dato reportado de safetensors es 446.571.248, probablemente de un archivo auxiliar) |
-| Parametros activos | 3B (según nomenclatura A3B) |
+| Arquitectura | Mixture-of-Experts (MoE) tipo transformer, base Qwen 3.6 (`qwen3_5_moe`), con MTP/NextN y torre de visión |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | 3B (según el sufijo A3B del nombre; no confirmado en la model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS (estáticas, sin imatrix) |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (incluye mmproj para visión en Q8_0 y f16) |
+| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; proyector multimodal en mmproj-Q8_0 y mmproj-f16; pesos originales en bfloat16 |
+| Idiomas soportados | en (inglés, declarado en la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (esta ficha) y safetensors/bfloat16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una variante de Qwen3.6-35B-A3B, una arquitectura de tipo MoE con 3.000 millones de parámetros activos por token. Ha sido destilado a partir de Claude 4.7 Opus, lo que le confiere capacidades de razonamiento avanzado. Se aplicó un proceso de abliteración (refusal reduction) para eliminar las barreras de rechazo del modelo, y posteriormente un fine-tuning con los datasets `NousResearch/hermes-function-calling-v1` y `lambda/hermes-agent-reasoning-traces`, orientados a reforzar el uso de herramientas y el razonamiento agéntico. El modelo incorpora una cabecera MTP que permite decodificación especulativa (self-speculative decoding) y un proyector de visión para entrada de imágenes.
+La arquitectura es un transformer con capas Mixture-of-Experts, identificado en los tags como `qwen3_5_moe`, lo que lo sitúa en la línea Qwen 3.6 de Alibaba. Con 35,5B parámetros totales y 3B activos, el coste computacional por token se aproxima al de un modelo denso de 3B, mientras que la capacidad efectiva de parámetros es diez veces mayor. Incluye una cabeza MTP (Multi-Token Prediction, también etiquetada `nextn`), un mecanismo de predicción de varios tokens por paso que habilita decodificación especulativa y mejora el throughput en inferencia. Dispone además de un proyector multimodal (`mmproj`) que conecta un codificador visual con el espacio de tokens del modelo, lo que le confiere capacidades vision-language.
 
-No se dispone de información sobre el número total de tokens de entrenamiento, el diseño del dataset (composición, balance) ni sobre el uso de técnicas como RLHF o DPO.
+El entrenamiento parte del modelo base de oktaydu, que combina varias fases: una ablación de las direcciones de rechazo en el espacio de activaciones (abliteration, con las variantes `heretic` y `obliteratus`), seguida de fine-tuning supervisado con `NousResearch/hermes-function-calling-v1` (function calling) y `lambda/hermes-agent-reasoning-traces` (trazas de razonamiento agéntico). No se especifican en la información disponible el número de tokens de entrenamiento, la composición completa del dataset ni si hubo fases de RLHF o DPO. La model card no documenta hiperparámetros, metodología de alineación ni detalles del proceso de abliteration.
 
 ## Capacidades
 
-- Generación de texto y conversación multilingüe (aunque el idioma principal es el inglés).
-- Razonamiento complejo y destilación de Claude 4.7 Opus para tareas de lógica y matemáticas.
-- Generación de código y agentic coding (uso de herramientas, ejecución de comandos).
-- Function calling / tool calling, entrenado con datasets de Hermes.
-- Razonamiento agéntico multi-paso (multi-step reasoning).
-- Soporte multimodal (visión) mediante proyector de imágenes.
-- Decodificación especulativa con MTP para reducir latencia.
-- Abliterado: genera contenido con menos rechazos que el modelo original.
+- Generación de texto y razonamiento multi-paso, con soporte declarado de modo de razonamiento (`reasoning`).
+- Function calling y tool use, entrenado explícitamente con `hermes-function-calling-v1`.
+- Comportamiento agéntico: trazas de razonamiento agéntico (`hermes-agent-reasoning-traces`) y tag `agentic-coding`.
+- Generación y edición de código, incluyendo flujos de coding agéntico.
+- Capacidades multimodales de visión-lenguaje mediante el proyector `mmproj` (comprensión de imágenes).
+- Decodificación especulativa nativa vía MTP/NextN, orientada a reducir latencia.
+- Multilingüe limitado: la model card solo declara inglés.
+- Sin mecanismos de rechazo (abliterated): responde a peticiones que un modelo alineado estándar rechazaría.
 
 ## Casos de uso
 
-- **Atención al cliente automatizada**: gracias a su soporte de tool calling y conversación multi-turn, puede gestionar interacciones con clientes integrando sistemas CRM o bases de conocimiento externas.
-- **Generación de código en producción**: su destilación de Opus y el entrenamiento de agente lo hacen adecuado para pipelines de CI/CD, generación de tests, refactorización y autocompletado en IDEs.
-- **Agentes autónomos**: su capacidad de razonamiento agéntico permite planificar y ejecutar tareas de varios pasos, como automatización de procesos de datos o investigación web.
-- **Análisis de imágenes con razonamiento**: combina visión y razonamiento para describir imágenes, extraer información y razonar sobre contenido visual, por ejemplo en depuración de capturas de pantalla.
-- **Asistente de investigación técnica**: con acceso a herramientas externas, puede buscar, resumir y analizar documentación técnica o papers.
-- **Aplicaciones locales multimodales**: al ser GGUF, se puede integrar en entornos locales para procesar texto e imágenes sin depender de la nube, adecuado para sectores con requisitos de privacidad.
+- Agentes de código autónomos: el modelo puede operar bucles de edición-ejecución-verificación sobre repositorios, apoyándose en el entrenamiento con trazas agénticas y en el soporte de tool calling para invocar compiladores, tests y linters.
+- Automatización de pipelines CI/CD: integrado como paso de revisión o corrección, puede invocar herramientas vía function calling para leer logs de fallo, proponer parches y validarlos contra la suite de tests.
+- Asistente de terminal con herramientas: al ser un MoE de 3B activos, ofrece latencia baja por token, adecuada para agentes interactivos que necesitan muchas llamadas cortas a herramientas.
+- Análisis de capturas e interfaces: gracias a la torre de visión, puede interpretar screenshots de aplicaciones, diagramas o gráficos y convertirlos en descripciones estructuradas o en código de reproducción.
+- Extracción estructurada de documentos: combinando visión y function calling, puede procesar imágenes de formularios o tablas y emitir JSON validable contra un esquema.
+- Despliegue en hardware de consumo para prototipado: las cuantizaciones Q4_K_M (21,8 GB) permiten ejecutar el modelo en una GPU de 24 GB, lo que facilita experimentación local con un modelo de 35B.
+- Generación de datos sintéticos para fine-tuning: su naturaleza sin rechazos y su capacidad de razonamiento lo hacen útil para producir trazas de razonamiento y pares de instrucción-respuesta en dominios donde los modelos alineados estándar se niegan a responder.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye ninguna tabla de métricas ni comparativas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El tamaño total del repositorio es de 21,9 GB, pero no se listan los tamaños individuales de cada cuantización. Los archivos `mmproj` ocupan entre 0,7 y 1,0 GB.
-- Para un modelo MoE de 35B totales con 3B activos, las cuantizaciones pequeñas (Q2_K, Q3_K) pueden caber en GPUs de 8 GB VRAM, mientras que las más precisas (Q8_0) requieren al menos 24 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para quants medianos, A100/H100 para quants grandes y despliegue de alto rendimiento.
-- Se puede ejecutar en CPU con llama.cpp, pero la velocidad será limitada.
-- Motores compatibles: llama.cpp, vLLM (con conversión), Ollama, TGI, llama-cpp-python.
-- Latencia y throughput: no disponibles; el uso de MTP puede mejorar la velocidad de decodificación en motores que lo soporten.
+- VRAM estimada (solo pesos, sin caché KV): Q2_K 13,3 GB; Q3_K_S 15,6 GB; Q3_K_M 17,3 GB; Q3_K_L 18,7 GB; IQ4_XS 19,5 GB; Q4_K_S 20,5 GB; Q4_K_M 21,8 GB; Q5_K_S 24,7 GB; Q5_K_M 25,4 GB; Q6_K 29,3 GB; Q8_0 37,9 GB. Añadir 0,7 GB (mmproj-Q8_0) o 1,0 GB (mmproj-f16) si se usa visión.
+- GPU de 24 GB (RTX 3090, RTX 4090): ejecutan hasta Q4_K_M con comodidad; Q5_K_M requiere ajustar el offload de capas o reducir contexto.
+- GPU de 32 GB (RTX 5090, V100 32GB): Q6_K sin problemas, Q8_0 con offload parcial.
+- GPU profesionales (A100 40/80 GB, H100 80 GB): Q8_0 completo en VRAM con contexto amplio; el modelo en bfloat16 (≈71 GB) cabe en una H100 80 GB o en dos A100 40 GB.
+- Consumer GPU de 16 GB (RTX 4080, 4060 Ti 16GB): viable con Q3_K_M o IQ4_XS y offload parcial a RAM; Q4_K_S es el límite práctico.
+- Consumer GPU de 12 GB: solo Q2_K con offload agresivo de capas; degradación de calidad notable.
+- Despliegue: llama.cpp y Ollama para GGUF (soporte de `mmproj` para visión en llama.cpp); vLLM y TGI quedan limitados al modelo base en safetensors, no a esta cuantización. Los tags indican `endpoints_compatible`.
+- Throughput y latencia: no disponibles en la información proporcionada. Como referencia estructural, los 3B parámetros activos sitúan el coste por token en el orden de un modelo denso de 3B, y la cabeza MTP puede reducir el número de pasos de decodificación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Params | Contexto | Licencia | Capacidades |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato disponible | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF | Qwen3.6 MoE | 35B (3B activos) | no disponible | Apache-2.0 | Visión, MTP, abliterado |
-| mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF | Qwen3.6 MoE | 35B (3B activos) | no disponible | no disponible | MTP, sin visión |
-| Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-GGUF | Qwen3.6 MoE | 35B (3B activos) | no disponible | no disponible | Abliterado, sin visión |
+| Este modelo (GGUF de mradermacher) | 35,5B / 3B | no disponible | Apache 2.0 | GGUF (11 cuantizaciones) + safetensors en base | Multimodal, MTP, abliterated, fine-tuning Hermes |
+| Qwen3-30B-A3B (referencia de familia) | 30,5B / 3,3B | 262.144 tokens (nativo, ampliable) | Apache 2.0 | safetensors, GGUF | MoE denso estándar, alineado, sin visión en todas las variantes |
+| Qwen3-32B (denso) | 32,8B / 32,8B | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Mayor coste por token al ser denso; sin capacidades multimodales |
+| Mixtral 8x7B | 46,7B / 12,9B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | MoE con el triple de parámetros activos; sin visión ni MTP |
 
-Los tres modelos son variantes cuantizadas del mismo modelo base, con diferencias en la abliteración, el soporte multimodal y la cabecera MTP. Este modelo es el único que combina visión, MTP y abliteración en un solo paquete GGUF.
+La comparación con Qwen3-30B-A3B es la más directa por tamaño y arquitectura MoE, pero conviene señalar que la información disponible no confirma que este modelo derive de esa versión concreta ni permite comparar rendimiento real, al no haber benchmarks publicados.
 
 ## Limitaciones y advertencias
 
-- **Abliterado**: el modelo está modificado para reducir rechazos, lo que puede generar contenido inapropiado, sesgado o peligroso. No es adecuado para producción sin filtros de seguridad adicionales.
-- **Idioma**: solo se indica inglés (`en`); su rendimiento en otros idiomas puede ser inferior.
-- **Contexto**: no se especifica la longitud máxima de contexto; se recomienda probar con ventanas cortas (por ejemplo, 8K tokens) para evitar degradación.
-- **Sin benchmarks**: no hay métricas objetivas de rendimiento, lo que dificulta la comparación con otros modelos.
-- **Cuantizaciones estáticas**: al no usar imatrix, la calidad puede ser ligeramente inferior a cuantizaciones con imatrix.
-- **MTP**: la cabecera MTP requiere soporte específico en el motor de inferencia (por ejemplo, llama.cpp) para aprovechar la decodificación especulativa; de lo contrario, no se obtiene beneficio.
-- **Datos de safetensors**: el número de parámetros reportado (446M) parece corresponder a un archivo auxiliar, no al modelo completo. Se recomienda consultar la documentación del modelo base para obtener parámetros reales.
+- Modelo abliterated: se han eliminado las direcciones de rechazo, por lo que puede generar contenido dañino, ilegal o NSFW. El tag `not-for-all-audiences` lo indica explícitamente. No es apto para aplicaciones de cara al público sin un filtro externo.
+- La abliteration degrada habitualmente la coherencia y la calidad del razonamiento en tareas benignas; no hay evaluaciones publicadas que cuantifiquen esa pérdida.
+- Riesgo elevado de alucinación: no se han publicado evaluaciones de factualidad ni benchmarks de ningún tipo.
+- Solo se declara inglés; el rendimiento en castellano no está verificado y puede ser deficiente, especialmente tras el fine-tuning con datasets en inglés.
+- Longitud de contexto no documentada en la información disponible; no debe asumirse la ventana nativa de la familia Qwen sin verificación empírica.
+- Licencia Apache 2.0 declarada, pero la cadena de modelos base y los datasets de entrenamiento (`NousResearch/hermes-function-calling-v1`, `lambda/hermes-agent-reasoning-traces`) pueden imponer condiciones adicionales no reflejadas en la model card.
+- El repositorio ocupa 244,4 GB y contiene pesos duplicados en varias cuantizaciones; conviene descargar solo los ficheros necesarios.
+- La model card del cuantizador no documenta el proceso de conversión más allá de metadatos internos (`quantize_version: 2`, `convert_type: hf`), ni incluye evaluación de perplejidad de las cuantizaciones.
+- Sin garantías de mantenimiento: 719 descargas y 1 like en el momento de la consulta, con última actualización en noviembre de 2026.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF
-- Modelo base: https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT
-- Dataset Hermes function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
-- Dataset Hermes agent reasoning traces: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
-- Página de gestión de modelos de mradermacher: https://hf.tst.eu/model#Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF
-- Variante similar de mudler: https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF
+- Modelo base (safetensors): https://huggingface.co/oktaydu/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT
+- Cuantizaciones ponderadas / imatrix: https://huggingface.co/mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF
+- Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
+- Dataset de trazas agénticas: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
+- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

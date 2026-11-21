@@ -5,10 +5,10 @@
   "author": "chiron-group",
   "url": "https://huggingface.co/chiron-group/chiron",
   "created_at": "2026-11-11T10:07:00.000Z",
-  "updated_at": "2026-11-18T05:22:30.000Z",
+  "updated_at": "2026-11-20T17:02:42.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "peft",
   "languages": [
     "en"
@@ -20,12 +20,14 @@
     "psychology",
     "measurement",
     "lora",
+    "text-generation",
     "en",
+    "arxiv:2611.24830",
     "base_model:Qwen/Qwen3.6-35B-A3B",
     "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 3,
   "trending_score": 0,
   "parameters": null,

@@ -1,0 +1,510 @@
+{
+  "schema": 2,
+  "id": "Alibaba-NLP/gte-multilingual-base",
+  "slug": "alibaba-nlp-gte-multilingual-base",
+  "author": "Alibaba-NLP",
+  "url": "https://huggingface.co/Alibaba-NLP/gte-multilingual-base",
+  "created_at": "2024-07-20T08:37:28.000Z",
+  "updated_at": "2026-11-21T09:29:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "af",
+    "ar",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "ca",
+    "ceb",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "gl",
+    "gu",
+    "he",
+    "hi",
+    "hr",
+    "ht",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "jv",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ky",
+    "lo",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "pa",
+    "pl",
+    "pt",
+    "qu",
+    "ro",
+    "ru",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "uk",
+    "ur",
+    "vi",
+    "yo",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gte",
+    "feature-extraction",
+    "mteb",
+    "transformers",
+    "multilingual",
+    "sentence-similarity",
+    "text-embeddings-inference",
+    "af",
+    "ar",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "ca",
+    "ceb",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "gl",
+    "gu",
+    "he",
+    "hi",
+    "hr",
+    "ht",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "jv",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ky",
+    "lo",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "pa",
+    "pl",
+    "pt",
+    "qu",
+    "ro",
+    "ru",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "uk",
+    "ur",
+    "vi",
+    "yo",
+    "zh",
+    "arxiv:2407.19669",
+    "arxiv:2210.09984",
+    "arxiv:2402.03216",
+    "arxiv:2007.15207",
+    "arxiv:2104.08663",
+    "arxiv:2402.07440",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 395,
+  "downloads_30d": 808315,
+  "trending_score": 0,
+  "parameters": 305369089,
+  "parameters_human": "305.4M",
+  "storage_bytes": 2511190920,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB 8TagsClustering",
+      "metric": null,
+      "value": 33.66681726329994
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 43.54760696384009
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 48.91186363417501
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AllegroReviews",
+      "metric": null,
+      "value": 41.689860834990064
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlloProfClusteringP2P",
+      "metric": null,
+      "value": 54.20241337977897
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlloProfClusteringS2S",
+      "metric": null,
+      "value": 44.34083695608643
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlloprofReranking",
+      "metric": null,
+      "value": 64.91495250072002
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AlloprofRetrieval",
+      "metric": null,
+      "value": 53.638
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 75.95522388059702
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 80.717625
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 43.64199999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 40.108
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 40.169999999999995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 39.56799999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 35.75000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 33.342000000000006
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 58.231
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna-PL",
+      "metric": null,
+      "value": 53.166000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringP2P",
+      "metric": null,
+      "value": 46.01900557959478
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringS2S",
+      "metric": null,
+      "value": 41.06626465345723
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 61.87514497610431
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 81.21450112991194
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 51.71589543397271
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BSARDRetrieval",
+      "metric": null,
+      "value": 26.115
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BUCC (de-en)",
+      "metric": null,
+      "value": 98.6169102296451
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BUCC (fr-en)",
+      "metric": null,
+      "value": 97.89603052314916
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BUCC (ru-en)",
+      "metric": null,
+      "value": 97.12388869645537
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BUCC (zh-en)",
+      "metric": null,
+      "value": 98.15692469720906
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 85.36038961038962
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BiorxivClusteringP2P",
+      "metric": null,
+      "value": 37.5903826674123
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BiorxivClusteringS2S",
+      "metric": null,
+      "value": 34.21474277151329
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CBD",
+      "metric": null,
+      "value": 62.519999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CDSC-E",
+      "metric": null,
+      "value": 74.90132799162956
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CDSC-R",
+      "metric": null,
+      "value": 90.30727955142524
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CLSClusteringP2P",
+      "metric": null,
+      "value": 37.94850105022274
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CLSClusteringS2S",
+      "metric": null,
+      "value": 38.11958675421534
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CMedQAv1",
+      "metric": null,
+      "value": 86.10950950485399
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CMedQAv2",
+      "metric": null,
+      "value": 87.28038294231966
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackAndroidRetrieval",
+      "metric": null,
+      "value": 47.099000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackEnglishRetrieval",
+      "metric": null,
+      "value": 45.973000000000006
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackGamingRetrieval",
+      "metric": null,
+      "value": 55.606
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackGisRetrieval",
+      "metric": null,
+      "value": 36.638
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackMathematicaRetrieval",
+      "metric": null,
+      "value": 30.711
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackPhysicsRetrieval",
+      "metric": null,
+      "value": 44.523
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackProgrammersRetrieval",
+      "metric": null,
+      "value": 37.940000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackRetrieval",
+      "metric": null,
+      "value": 38.12183333333333
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackStatsRetrieval",
+      "metric": null,
+      "value": 32.684000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackTexRetrieval",
+      "metric": null,
+      "value": 26.735
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackUnixRetrieval",
+      "metric": null,
+      "value": 36.933
+    },
+    {
+      "task": null,
+      "dataset": "MTEB CQADupstackWebmastersRetrieval",
+      "metric": null,
+      "value": 33.747
+    }
+  ],
+  "sources": []
+}

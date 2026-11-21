@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 881952532,
-  "storage_human": "882 MB",
+  "storage_bytes": 1018030014,
+  "storage_human": "1.0 GB",
   "context_length": null,
   "base_model": "metrika-labs/PP-OCRv6_medium_rec_cyrillic_safetensors",
   "formats": [

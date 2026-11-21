@@ -5,7 +5,7 @@
   "author": "julienkay",
   "url": "https://huggingface.co/julienkay/FLUX.2-klein-4B-onnx",
   "created_at": "2026-11-20T22:03:23.000Z",
-  "updated_at": "2026-11-20T22:05:31.000Z",
+  "updated_at": "2026-11-20T22:53:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

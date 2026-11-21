@@ -5,7 +5,7 @@
   "author": "Soho77",
   "url": "https://huggingface.co/Soho77/mbert-xnli-multilingual",
   "created_at": "2026-11-17T18:03:17.000Z",
-  "updated_at": "2026-11-20T04:40:31.000Z",
+  "updated_at": "2026-11-20T05:10:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

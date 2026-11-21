@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "netprojects/Qwen3.8-27B-super-adapter-MLX-2.5bit",
+  "slug": "netprojects-qwen3-8-27b-super-adapter-mlx-2-5bit",
+  "author": "netprojects",
+  "url": "https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-MLX-2.5bit",
+  "created_at": "2026-11-21T07:42:52.000Z",
+  "updated_at": "2026-11-21T07:43:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "agents",
+    "coding-agent",
+    "pi",
+    "hermes",
+    "opencode",
+    "lora",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "base_model:harness-hub/Qwen3.8-27B-super-adapter",
+    "base_model:quantized:harness-hub/Qwen3.8-27B-super-adapter",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27745371136,
+  "parameters_human": "27.75B",
+  "storage_bytes": 11826808867,
+  "storage_human": "11.8 GB",
+  "context_length": null,
+  "base_model": "harness-hub/Qwen3.8-27B-super-adapter",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Supermarchés et Horaires - Lidl.fr",
+      "url": "https://www.lidl.fr/c/supermarches-et-horaires/s10019824",
+      "snippet": "Supermarchés et Horaires Retrouvez les horaires de nos supermarchés et les différentes équipements à votre disposition en …Read more"
+    }
+  ]
+}

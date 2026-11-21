@@ -5,7 +5,7 @@
   "author": "csukuangfj",
   "url": "https://huggingface.co/csukuangfj/sherpa-onnx-w2v-bert-ctc-gl-int8-2026-11-20",
   "created_at": "2026-11-20T08:21:27.000Z",
-  "updated_at": "2026-11-20T08:26:36.000Z",
+  "updated_at": "2026-11-21T01:02:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -15,8 +15,6 @@
   ],
   "tags": [
     "onnx",
-    "automatic-speech-recognition",
-    "gl",
     "license:apache-2.0",
     "region:us"
   ],

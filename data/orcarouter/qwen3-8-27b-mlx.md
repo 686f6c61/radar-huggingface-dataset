@@ -2,88 +2,104 @@
 
 ## Resumen
 
-Qwen3.8-27B-MLX es una compilación en formato MLX del modelo oficial Qwen/Qwen3.8-27B, publicada por OrcaRouter (orcarouter) el 21 de agosto de 2026. Se trata de un modelo denso de 27 000 millones de parámetros con arquitectura híbrida de atención (Gated DeltaNet lineal combinada con atención completa), diseñado de forma nativa para visión-lenguaje (image-text-to-text), con control de pensamiento (thinking mode), soporte de tool calling y una cabeza de predicción multi-token (MTP) para decodificación especulativa. La compilación MLX ofrece cuantizaciones afines de 4, 6 y 8 bits, manteniendo la torre de visión, las normalizaciones y las capas convolucionales en BF16, lo que permite ejecutar el modelo en Apple Silicon con memoria unificada.
+Qwen3.8-27B-MLX es una compilación en formato MLX del modelo oficial Qwen/Qwen3.8-27B, publicada por orcarouter para su ejecución nativa en Apple Silicon. Se trata de un modelo denso de 27 356 728 560 parámetros (aproximadamente 27,36 mil millones) con arquitectura de atención híbrida (Gated DeltaNet lineal combinada con atención completa), capacidad nativa de visión-lenguaje y una cabeza MTP (multi-token prediction) para decodificación especulativa. El repositorio ofrece tres precisiones cuantizadas de forma afín —4, 6 y 8 bits— más un drafter MTP independiente en BF16.
 
-La relevancia de esta ficha radica en que Qwen3.8-27B es uno de los primeros modelos de 27B con visión y razonamiento híbrido que se puede ejecutar localmente en hardware de consumo (Mac con 24 GB o más de RAM), gracias a la cuantización MLX. El repositorio incluye además un drafter MTP separado en BF16 (~0,9 GB) que acelera la generación mediante decodificación especulativa sin pérdida de calidad. La licencia Apache 2.0 permite uso comercial sin restricciones, y el modelo soporta inglés y chino.
+La relevancia de esta ficha radica en que traslada un modelo multimodal de 27B al ecosistema local de Apple, un segmento donde la oferta de modelos densos con visión, tool calling y control de razonamiento es todavía limitada. El build mantiene la torre de visión, las capas de normalización y las convoluciones en BF16, y solo cuantiza los pesos lineales del modelo de lenguaje (incluidos `embed_tokens` y `lm_head`), lo que preserva la fidelidad de la rama visual.
 
-## Especificaciones técnicas
+El modelo base resuelve tareas de razonamiento, generación de código, matemáticas y comprensión de imagen-texto, con soporte declarado de function calling y modos de pensamiento. La licencia Apache 2.0 y la disponibilidad de cuantizaciones de 16 a 31 GB lo hacen viable en equipos de consumo con memoria unificada, aunque con limitaciones claras de idioma (solo inglés y chino) y de plataforma (exclusivo de MLX).
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Densa, atención híbrida (Gated DeltaNet lineal + atención completa), visión-lenguaje, cabeza MTP |
-| Parametros totales | 27B (modelo base); 4.665.462.000 según safetensors del repositorio MLX |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | 4-bit (grupo 64), 6-bit (grupo 32), 8-bit (grupo 32), drafter MTP en BF16 |
-| Idiomas soportados | Inglés (en), chino (zh) |
+| Arquitectura | Transformer denso con atención híbrida: Gated DeltaNet (atención lineal) + atención completa; torre de visión nativa; cabeza MTP |
+| Parametros totales | 27 356 728 560 (≈27,36 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4-bit (group size 64), 6-bit (group size 32), 8-bit (group size 32), todas afines; BF16 para torre de visión, normas y convoluciones; drafter MTP en BF16 |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | MLX (safetensors) |
+| Formato de pesos | MLX (safetensors); subcarpetas `4-bit/`, `6-bit/`, `8-bit/` y `mtp/`; la raíz del repositorio equivale a `4-bit/` |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B emplea una arquitectura densa con atención híbrida: combina capas de atención lineal basadas en Gated DeltaNet con capas de atención completa (full attention). Esta mezcla busca reducir el coste computacional en secuencias largas manteniendo la calidad de la atención estándar. El modelo integra una torre de visión (vision tower) que permite procesar imágenes junto con texto, y una cabeza de predicción multi-token (MTP) que, en la compilación MLX, se carga como un drafter separado para decodificación especulativa. El control de pensamiento (thinking mode) permite alternar entre respuestas razonadas y directas, y el soporte de tool calling habilita la integración con funciones externas.
+El modelo base Qwen3.8-27B emplea una arquitectura de atención híbrida que combina capas de Gated DeltaNet —un mecanismo de atención lineal con estado recurrente— con capas de atención completa. Esta mezcla busca reducir el coste computacional y de memoria en contextos largos sin renunciar a la calidad de recuperación de la atención densa. El modelo es nativamente vision-lenguaje, con una torre visual integrada que en este build MLX se conserva íntegramente en BF16, igual que las normas y las capas convolucionales. Incorpora además una cabeza MTP (multi-token prediction) que actúa como drafter para decodificación especulativa, empaquetada por separado en la carpeta `mtp/` con un peso aproximado de 0,9 GB.
 
-Los datos de entrenamiento del modelo base no se han publicado en la información disponible. La compilación MLX de OrcaRouter no modifica los pesos del modelo original, solo los cuantiza: la torre de visión, las normalizaciones y las capas convolucionales se mantienen en BF16, mientras que los pesos lineales del modelo de lenguaje (incluyendo embed_tokens y lm_head) se cuantizan. Esta estrategia preserva la calidad visual y reduce el uso de memoria. No se dispone de información sobre el uso de RLHF o DPO en el entrenamiento del modelo base.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación posteriores al preentrenamiento. Tampoco se detalla la innovación concreta del mecanismo Gated DeltaNet más allá de su carácter de atención lineal con compuerta. La información disponible se limita a la naturaleza del build MLX: cuantización afín de los pesos lineales del LM, preservación en BF16 de los componentes sensibles a precisión y publicación de métricas de divergencia KL frente a la referencia BF16 (wikitext-2, 1024 tokens): 8-bit con KLD medio de 0,00068 y 98,34 % de acuerdo Top-1; 6-bit con 0,00216 y 96,97 %; 4-bit con 0,02824 y 92,68 %.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-turno con control de pensamiento (thinking mode) activable o desactivable.
-- Comprensión de imágenes: entrada multimodal image-text-to-text para descripción, respuesta a preguntas visuales y análisis de contenido gráfico.
-- Tool calling / function calling: puede invocar herramientas externas y estructurar llamadas a funciones.
-- Decodificación especulativa mediante cabeza MTP: acelera la generación sin pérdida de calidad (aceptación lossless).
-- Capacidades multilingües en inglés y chino.
-- Servidor compatible con la API de OpenAI (a través de mlx-vlm server) para integración en aplicaciones existentes.
+- Generación de texto y razonamiento multi-paso, con modo de pensamiento controlable (thinking control).
+- Comprensión de imagen y texto (pipeline `image-text-to-text`), con torre de visión preservada en BF16.
+- Generación de código y resolución de problemas matemáticos, según la categoría del modelo base.
+- Tool calling y function calling declarados en las etiquetas del repositorio.
+- Decodificación especulativa mediante drafter MTP separado, orientada a reducir latencia en Apple Silicon.
+- Conversación multi-turno.
+- Capacidades multilingües limitadas a inglés y chino.
 
 ## Casos de uso
 
-- Asistente multimodal en Mac: un usuario puede preguntar sobre una imagen local (por ejemplo, "describe este gráfico" o "extrae el texto de esta captura") y obtener respuestas razonadas con el modelo en 4-bit, ejecutándose en una Mac con 24 GB de RAM unificada.
-- Generación de código con tool calling en local: el modelo puede integrarse en un entorno de desarrollo para autocompletar, refactorizar o generar tests, invocando herramientas de análisis estático mediante function calling, todo sin conexión a internet.
-- Razonamiento complejo con thinking mode: para tareas de lógica, matemáticas o planificación, se activa el modo de pensamiento que produce cadenas de razonamiento antes de la respuesta final, útil en investigación o educación.
-- Chat conversacional bilingüe: al soportar inglés y chino, puede servir como asistente de atención al cliente o traducción informal en ambos idiomas, desplegado en un servidor local compatible con OpenAI.
-- Prototipado rápido en Apple Silicon: desarrolladores que no disponen de GPUs NVIDIA pueden probar un VLM de 27B en su MacBook Pro o Mac Studio usando mlx-vlm, sin necesidad de infraestructura cloud.
-- Decodificación especulativa para baja latencia: en entornos donde la velocidad de respuesta es crítica (por ejemplo, chatbots en tiempo real), el drafter MTP reduce el número de pasos de avance, mejorando el throughput en hardware Apple Silicon.
+- Asistente de razonamiento local en Mac: con la cuantización 8-bit (~31 GB) y un equipo de 32–64 GB de memoria unificada, el modelo puede ejecutar cadenas de razonamiento largas con una fidelidad respecto a BF16 del 98,34 % en Top-1, adecuado para análisis técnicos que no pueden salir a la nube.
+- Automatización de documentación técnica con capturas: al ser vision-lenguaje, permite extraer texto y estructura de diagramas, interfaces y capturas de pantalla, y redactar documentación en inglés o chino sin depender de servicios externos.
+- Agente de desarrollo con tool calling: integrado en un entorno local tipo LM Studio, el modelo puede invocar funciones para consultar repositorios, ejecutar tests o leer ficheros, aprovechando la decodificación especulativa del drafter MTP para reducir la latencia por token en flujos interactivos.
+- Análisis de imágenes en investigación: clasificación y descripción de figuras científicas, gráficos y tablas escaneadas, con la ventaja de que la torre visual en BF16 evita la degradación típica de cuantizar la rama de imagen.
+- Prototipado sin conexión en entornos restringidos: al ejecutarse íntegramente en local con MLX y licencia Apache 2.0, sirve para pruebas de concepto en organizaciones que no permiten enviar datos a APIs externas.
+- Evaluación comparativa de cuantizaciones: el repositorio publica métricas de KLD y acuerdo Top-1 por precisión, lo que permite al equipo elegir 4-bit (~16 GB, 24 GB de RAM mínima) para prototipos rápidos o 8-bit para producción con requisitos de fidelidad.
+- Generación de código en pipelines locales: con 4-bit en un Mac de 24 GB, el modelo puede asistir en tareas de autocompletado y revisión de parches dentro de un flujo de CI local, siempre que el equipo acepte la limitación idiomática a inglés y chino.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio únicamente reporta métricas de divergencia KL y acuerdo Top-1 frente al modelo BF16 de referencia (wikitext-2, 1024 tokens), que se resumen a continuación:
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-| Precision | Mean KLD | KLD p95 | Acuerdo Top-1 |
+La model card únicamente incluye métricas de fidelidad de cuantización frente a BF16 (wikitext-2, 1024 tokens), que se recogen aquí por su valor técnico:
+
+| Precision | KLD medio | KLD p95 | Acuerdo Top-1 |
 |---|---:|---:|---:|
-| 8-bit | 0.00068 | 0.00233 | 98.34 % |
-| 6-bit | 0.00216 | 0.00795 | 96.97 % |
-| 4-bit | 0.02824 | 0.10857 | 92.68 % |
+| 8-bit | 0,00068 | 0,00233 | 98,34 % |
+| 6-bit | 0,00216 | 0,00795 | 96,97 % |
+| 4-bit | 0,02824 | 0,10857 | 92,68 % |
 
-Estos datos indican que la cuantización de 8 y 6 bits es prácticamente indistinguible del modelo original, mientras que la de 4 bits mantiene un acuerdo alto pero con mayor divergencia.
+No se dispone de datos de MMLU, HumanEval, GSM8K ni de comparativas de rendimiento frente a otros modelos.
 
 ## Requisitos de hardware
 
-- 4-bit: ~16 GB de memoria unificada, requiere Mac con 24 GB o más de RAM (16 GB no es suficiente).
-- 6-bit: ~24 GB de memoria unificada, requiere Mac con 32 GB o más.
-- 8-bit: ~31 GB de memoria unificada, requiere Mac con 32–64 GB.
-- Drafter MTP: ~0.9 GB adicionales en BF16.
-- GPU: Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra). No se requiere GPU NVIDIA.
-- Opciones de despliegue: mlx-vlm (CLI y servidor OpenAI-compatible), LM Studio (cargando la raíz del repositorio que apunta a 4-bit), Ollama (etiqueta `qwen3.8:27b-mlx` desde la versión 0.32.12).
-- Latencia y throughput: no disponibles. Se recomienda el drafter MTP para mejorar la velocidad de generación.
+- VRAM/memoria unificada estimada: 8-bit ≈31 GB (mínimo 32–64 GB de RAM en Mac); 6-bit ≈24 GB (mínimo 32 GB); 4-bit ≈16 GB (mínimo 24 GB); drafter MTP ≈0,9 GB adicional.
+- GPU recomendadas: exclusivamente Apple Silicon con soporte MLX; no se documenta compatibilidad con CUDA ni ROCm en este build.
+- Cabe en GPU de consumo: sí, en equipos Apple con memoria unificada de 24 GB o superior para 4-bit; 6-bit requiere 32 GB y 8-bit, 32–64 GB.
+- Opciones de despliegue: MLX y LM Studio (la raíz del repositorio carga directamente como 4-bit); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La decodificación especulativa con el drafter MTP está prevista para reducir latencia, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoría (VLM de ~27B en formato MLX). La comparación más directa es contra el propio modelo base en BF16 y entre las distintas cuantizaciones, cuyas diferencias de calidad se reflejan en la tabla de benchmarks. Existen versiones alternativas del mismo modelo en otros formatos (GGUF y FP8) publicadas por OrcaRouter, pero no son modelos distintos. Para una comparativa con alternativas como Qwen2.5-VL-7B o Llama-3.2-11B-Vision, no hay información suficiente en los datos proporcionados.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. La comparación con el modelo base sin cuantizar es la única referencia disponible:
+
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-MLX (este) | ≈27,36 B | no disponible | MLX 4/6/8-bit | Apache 2.0 | Build para Apple Silicon, visión en BF16, drafter MTP |
+| Qwen/Qwen3.8-27B (base) | ≈27,36 B | no disponible | safetensors BF16 | Apache 2.0 | Referencia de precisión completa; requiere más memoria |
+
+No se identifican en la información disponible alternativas de terceros con las que establecer una comparativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés y chino; no se garantiza un rendimiento adecuado en otros idiomas.
-- La cuantización de 4 bits introduce una degradación medible de calidad (KLD medio 0.028, acuerdo Top-1 del 92.68 %), que puede afectar a tareas de precisión como razonamiento matemático o extracción de datos.
-- Requiere hardware Apple Silicon con al menos 24 GB de memoria unificada; los Mac de 16 GB no pueden ejecutar el modelo en 4 bits.
-- En LM Studio, la cuantización de la caché KV no está soportada en esta arquitectura de visión; debe desactivarse para evitar fallos de carga.
-- La versión de mlx-vlm debe ser igual o superior a 0.6.13 y mlx >= 0.32 para soportar el tipo de modelo `qwen3_5`.
-- No se documentan sesgos específicos del modelo base, pero al ser un VLM entrenado principalmente en inglés y chino, puede presentar sesgos culturales o alucinaciones visuales en imágenes ambiguas.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar el cumplimiento de la licencia del modelo base y de cualquier dependencia de terceros.
+- Idiomas: solo inglés y chino declarados; el rendimiento en castellano no está garantizado ni evaluado.
+- Plataforma: el formato MLX limita la ejecución a Apple Silicon; no es desplegable en GPU NVIDIA o AMD sin conversión previa.
+- Contexto: la longitud de contexto no se especifica en la información disponible, lo que impide planificar cargas de documentos largos con garantías.
+- Cuantización: el 4-bit presenta un KLD medio de 0,02824 y un acuerdo Top-1 del 92,68 %, con una cola p95 de 0,10857; puede degradar tareas sensibles a precisión frente a 8-bit.
+- Riesgo de alucinación: no se documentan evaluaciones de factualidad ni tasas de alucinación; debe asumirse el riesgo habitual de los modelos generativos.
+- Sesgos: no se publica información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento, lo que impide evaluar su impacto.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B y de los componentes de terceros.
+- Producción: el repositorio tiene 726 descargas y 27 likes en el momento de la consulta, con última actualización el 27 de octubre de 2026; es un build de la comunidad, no oficial de Qwen, por lo que la trazabilidad de cambios depende del autor.
+- La model card incluye promociones de servicios de OrcaRouter ajenas al modelo; no deben interpretarse como especificaciones técnicas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Blog de OrcaRouter sobre MLX en Apple Silicon: https://www.orcarouter.ai/blog/qwen-3-8-27b-mlx
-- Artículo de ExplainX sobre la compilación: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
+- Ficha del modelo en OrcaRouter: https://www.orcarouter.ai/models/qwen/qwen3.8-27b
 - Catálogo de modelos de OrcaRouter: https://www.orcarouter.ai/models
-- GitHub de Continuum-AI-Corp (OrcaRouter): https://github.com/Continuum-AI-Corp
+- Sitio web de OrcaRouter: https://www.orcarouter.ai
+- GitHub de Continuum AI Corp: https://github.com/Continuum-AI-Corp
+- Discord: https://discord.gg/yAh6Tex6kx
+- X (Twitter): https://x.com/OrcaRouter
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

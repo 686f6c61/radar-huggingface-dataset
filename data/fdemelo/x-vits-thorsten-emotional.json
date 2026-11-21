@@ -5,7 +5,7 @@
   "author": "fdemelo",
   "url": "https://huggingface.co/fdemelo/x-vits-thorsten-emotional",
   "created_at": "2026-11-19T17:58:54.000Z",
-  "updated_at": "2026-11-19T17:59:10.000Z",
+  "updated_at": "2026-11-20T14:53:33.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -25,8 +25,6 @@
     "german",
     "thorsten",
     "de",
-    "base_model:Thorsten-Voice/Piper-Scratch",
-    "base_model:quantized:Thorsten-Voice/Piper-Scratch",
     "license:cc0-1.0",
     "region:us"
   ],
@@ -35,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 100150765,
-  "storage_human": "100 MB",
+  "storage_bytes": 264566539,
+  "storage_human": "265 MB",
   "context_length": null,
   "base_model": "Thorsten-Voice/Piper-Scratch",
   "formats": [

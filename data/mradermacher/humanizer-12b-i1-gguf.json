@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/humanizer-12b-i1-GGUF",
   "created_at": "2026-11-11T19:21:27.000Z",
-  "updated_at": "2026-11-12T00:03:36.000Z",
+  "updated_at": "2026-11-20T20:16:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 5435,
+  "downloads_30d": 5671,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

@@ -2,119 +2,101 @@
 
 ## Resumen
 
-Hadra-ASR-whisper-medium es un adaptador de reconocimiento automatico del habla (ASR) para darija argelina, publicado por el colectivo algerian-nlp. No es un modelo completo: se trata de un adaptador QLoRA de rango 64 entrenado sobre el modelo base `openai/whisper-medium`, que permanece congelado. El adaptador anade 69.206.016 parametros entrenables sobre los 763.857.920 parametros del base, lo que da un total de 833.063.936 parametros, y se distribuye en formato safetensors dentro de un repositorio de 0,3 GB.
+EL-ANKA es un adaptador LoRA para reconocimiento automático del habla (ASR) especializado en dariya argelina (`arq`), desarrollado por el colectivo Algerian NLP (Kamel Touati). Se construye sobre el backbone encoder-decoder de `openai/whisper-medium` (763,9 M de parámetros congelados) al que se añaden 69,2 M de parámetros entrenables (rango 64, alpha 128), alcanzando un total de 833,1 M de parámetros. El modelo resuelve un problema concreto: la baja cobertura de las variantes magrebíes del árabe en los sistemas ASR multilingües, que suelen degradarse notablemente fuera del árabe estándar moderno.
 
-El problema que resuelve es concreto: el reconocimiento de voz en dialecto argelino, un dominio poco cubierto por los modelos ASR multilingues. La model card reporta tasas de error de palabra (WER) del 0,68 %, 0,34 % y 0,95 % en tres particiones de test de las colecciones OddAdmix, declaradas por el autor en una unica ejecucion y bajo un normalizador especifico de darija. Frente al adaptador hermano sobre Whisper small, la mejora declarada es de aproximadamente 50x, una cifra que el propio autor califica de extraordinaria y pendiente de reproduccion independiente.
+El adaptador se entrenó con un currículo de tres fases sobre 77.150 enunciados de audio argelino (31.661 pasos acumulados), empleando los corpus OddAdmix de Kahwa Podcast, Loubna Stories y Rawi Stories. La entrada es audio mono a 16 kHz procesado en ventanas de 30 segundos, el formato nativo de Whisper.
 
-Es relevante ahora porque la licencia MIT y su tamano reducido permiten desplegarlo en hardware de consumo para transcripcion de podcasts, videos y entrevistas en darija, ademas de servir como punto de partida para ajuste fino en otras tareas de voz en arabe argelino. Como contrapartida, la model card documenta un defecto conocido en `tokenizer_config.json` que rompe `WhisperProcessor.from_pretrained` en transformers 4.57.6, y no existen benchmarks ancla aplicables (DziriEval y MADAR son suites de texto, no de voz).
+La relevancia actual del modelo reside en su especialización estrecha y en el reducido coste de despliegue: al ser un adaptador PEFT sobre un backbone congelado, el repositorio ocupa 0,3 GB y permite servir ASR de dariya sobre infraestructura modesta. La licencia MIT del adaptador facilita su integración comercial, aunque los pesos del backbone Whisper mantienen su propia licencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (Whisper medium) con adaptadores LoRA/QLoRA de rango 64 |
-| Parametros totales | 833.063.936 (763.857.920 del base congelado + 69.206.016 entrenables del adaptador) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 30 s de audio por ventana de entrada (`chunk_length_s=30`); maximo de 448 tokens en el decodificador, heredado de whisper-medium |
-| Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; el entrenamiento uso QLoRA, pero no se documentan pesos cuantizados para inferencia) |
-| Idiomas soportados | arabe argelino (darija, codigo `arq`) |
-| Licencia | MIT |
-| Formato de pesos | safetensors (adaptador PEFT sobre `openai/whisper-medium`) |
-| Libreria de carga | peft (+ transformers, torch, librosa) |
-| Rango LoRA | 64 |
+| Arquitectura | Whisper-medium encoder-decoder (transformer) + adaptador LoRA (r=64, alpha=128) |
+| Parametros totales | 833,1 M (763,9 M backbone congelado + 69,2 M LoRA entrenables, 8,31 %) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (ventanas de audio de 30 s, limite nativo de Whisper) |
+| Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; el backbone admite las cuantizaciones de Whisper en el runtime elegido) |
+| Idiomas soportados | dariya argelina (`arq`); se recomienda forzar `language="arabic"` en la generacion |
+| Licencia | MIT (adaptador) |
+| Formato de pesos | safetensors (adaptador PEFT); backbone en safetensors desde el repositorio base |
+| Entrada de audio | 16 kHz mono float32, chunks de 30 s, 80 mel bins x 3000 frames |
+| Libreria | peft (compatible con transformers) |
 | Tamano del repositorio | 0,3 GB |
 | Modelo base | openai/whisper-medium |
-| Fecha de publicacion | 17 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del sistema es la de Whisper medium: un transformer encoder-decoder con entrada de espectrograma mel de 80 canales, ventanas de 30 segundos y decodificacion autorregresiva. Sobre ese base congelado se insertan adaptadores LoRA de rango 64, con 69.206.016 parametros entrenables (aproximadamente el 9,1 % del total del base) entrenados mediante QLoRA. No se modifica ningun peso del modelo base, por lo que el adaptador puede cargarse y descargarse sobre la misma instancia de Whisper medium.
+La arquitectura es la de Whisper-medium: un transformer encoder-decoder con atención completa, preprocesado log-Mel de 80 canales y decodificación autorregresiva condicionada por tokens de idioma y tarea. Sobre el backbone congelado se aplica un adaptador LoRA de rango 64 y alpha 128, que inyecta 69,2 M de parámetros entrenables en las proyecciones del modelo. No se modifica la arquitectura base ni se introduce decodificación especulativa ni atención lineal.
 
-El entrenamiento siguio un curriculo de tres fases sobre tres colecciones de audio argelino de OddAdmix: Kahwa podcast (23.264 filas de train declaradas), Loubna stories (48.590) y Rawi stories (5.296), con un total acumulado de 31.661 pasos. La model card no detalla la composicion exacta de mezclas por fase, la duracion total de audio ni si hubo etapas de RLHF o DPO; esos datos figuran como no disponibles. Tampoco se documenta la particion de test de las colecciones: el autor indica que el numero de filas de test no esta medido y que las particiones de evaluacion no estan documentadas.
-
-La innovacion practica no esta en la arquitectura, sino en el procedimiento de evaluacion: las WER declaradas se calculan tras aplicar un normalizador de darija que elimina diacriticos y tatweel, normaliza alef y yaa y elimina puntuacion. El autor advierte explicitamente que comparar estas cifras con WER calculadas sobre texto sin normalizar no es valido.
+El entrenamiento siguió un currículo de tres fases sobre 77.150 enunciados argelinos, con 31.661 pasos acumulados. Los datos provienen de tres colecciones OddAdmix: Kahwa Podcast (23.264 filas de entrenamiento), Loubna Stories (48.590 filas) y Rawi Stories (5.296 filas). No se documentan en la información disponible el volumen total de horas, la composición exacta del dataset, ni si se aplicaron etapas de RLHF o DPO (poco habituales en ASR). Tampoco se detallan los hiperparámetros de entrenamiento más allá del currículo y el rango LoRA.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en darija argelina, con el decodificador forzado a arabe (`language="arabic"`, `task="transcribe"`).
-- Procesamiento de audio largo mediante troceado en ventanas de 30 segundos (`chunk_length_s=30`), lo que permite transcribir podcasts, entrevistas y videos de duracion arbitraria.
-- Extraccion de caracteristicas compatible con `WhisperFeatureExtractor` (muestreo a 16 kHz, salida de forma `[1, 80, 3000]` por segundo de audio).
-- Punto de partida para ajuste fino en otras tareas de voz en arabe argelino, al estar empaquetado como adaptador PEFT independiente.
-- Generacion de subtitulos para contenido audiovisual en darija.
-- No soporta tool calling ni function calling: es un modelo ASR, no un modelo de lenguaje instructivo.
-- No soporta razonamiento multi-paso ni flujos de agente.
-- No soporta texto a voz ni generacion de audio de ningun tipo.
-- No soporta traduccion entre idiomas (la tarea esta fijada a transcripcion).
-- No cubre idiomas ni dialectos distintos del darija argelino.
-- No debe usarse para tomar decisiones sobre personas, segun la propia model card.
+- Transcripción de voz a texto en dariya argelina (`arq`) sobre audio de 16 kHz mono.
+- Procesamiento de audio en ventanas de 30 segundos con `chunk_length_s=30`, lo que permite transcripciones de duración arbitraria mediante troceado.
+- Generación de subtítulos y transcripción de contenido largo (podcasts, entrevistas, narraciones, vídeos de YouTube).
+- Salida de texto en escritura árabe, con normalización de diacríticos, tatweel y variantes alif/ya documentada por el autor.
+- Adaptación de dominio adicional: al ser un adaptador PEFT, sirve como punto de partida para especializaciones regionales o temáticas posteriores.
+- No soporta síntesis de voz, generación de audio, traducción automática ni idiomas distintos de la dariya argelina.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso (no aplica a un modelo ASR).
 
 ## Casos de uso
 
-- Transcripcion de podcasts en darija: el modelo convierte episodios completos en texto encadenando ventanas de 30 segundos con `chunk_length_s=30`. Las WER declaradas de 0,34 % a 0,95 % en las tres colecciones OddAdmix lo hacen adecuado para publicar transcripciones con revision minima en ese dominio.
-- Subtitulado automatico de video en YouTube: el pipeline de transformers con PEFT genera segmentos de texto alineados con el audio, que se pueden exportar a SRT o VTT. El tamano del adaptador (0,3 GB) permite ejecutarlo en una maquina de edicion sin GPU dedicada grande.
-- Archivado y busqueda de contenido oral: transcripcion masiva de entrevistas y programas para indexarlos y hacerlos buscables. El modelo esta entrenado especificamente sobre material de podcast y narracion, que es el registro dominante en estos archivos.
-- Entrada de voz para asistentes: transcripcion en tiempo real de comandos hablados en darija, alimentando un modulo de comprension posterior. El modelo es solo el componente ASR; requiere un NLU externo.
-- Investigacion en variedades del arabe: servir de linea base dialectal en estudios comparativos de ASR en darija, con la advertencia de que las cifras son de una unica ejecucion.
-- Punto de partida para ajuste fino: las organizaciones con audio propio en darija pueden entrenar un adaptador adicional o continuar el existente, sin tocar los pesos de Whisper medium.
-- Accesibilidad: generacion de transcripciones para personas con discapacidad auditiva en contenido hablado en darija.
+- Transcripción de podcasts argelinos: el modelo se entrenó específicamente sobre el corpus Kahwa Podcast y transcribe episodios completos troceando el audio en ventanas de 30 s con `chunk_length_s=30`, lo que lo hace adecuado para productoras que necesitan texto buscable de su catálogo.
+- Subtitulado de vídeo para creadores de contenido: la salida en escritura árabe normalizada permite generar ficheros SRT a partir de audio de YouTube o redes sociales, reduciendo el coste frente a servicios comerciales que cubren mal la dariya.
+- Archivística y documentación oral: digitalización de entrevistas y testimonios en dariya (por ejemplo, corpus de historias como Loubna o Rawi) para su indexación y consulta posterior mediante búsqueda textual.
+- Entrada de voz en aplicaciones locales: integración del adaptador en asistentes o apps argelinas que necesitan dictado en dariya, con un footprint de 0,3 GB que permite su despliegue en servidores modestos o incluso en estaciones de trabajo con GPU de gama media.
+- Investigación lingüística y sociolingüística: generación de transcripciones masivas para análisis de léxico, variación dialectal o estudios de corpus, usando el modelo como anotador automático previo a revisión humana.
+- Base para adaptación a dominios específicos: al ser un adaptador LoRA sobre Whisper-medium, equipos con datos propios (por ejemplo, llamadas de atención al cliente o terminología médica) pueden continuar el entrenamiento sin partir del backbone completo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo en el `model-index`. Se trata de WER calculado tras aplicar el normalizador de darija (diacriticos y tatweel eliminados, alef y yaa normalizados, puntuacion eliminada), en una unica ejecucion y sin semillas medidas (`verified: false` en los tres casos).
+Resultados declarados por el autor en el model-index de la model card. Las cifras corresponden a una única ejecución, con semilla no registrada y decodificación no documentada; el propio autor indica que la reproducción independiente multi-semilla está pendiente.
 
-| Sistema | Kahwa podcast | Loubna stories | Rawi stories |
-|---|---|---|---|
-| Hadra-ASR-whisper-medium + LoRA | 0,68 % | 0,34 % | 0,95 % |
-| Hadra-ASR-whisper-small (linea base) | 34,85 % | 14,87 % | 27,54 % |
+| Sistema | Kahwa Podcast (WER) | Loubna Stories (WER) | Rawi Stories (WER) |
+|---|---:|---:|---:|
+| EL-ANKA (LoRA) | 0,68 % | 0,34 % | 0,95 % |
+| EL-ANKA-Lite (LoRA) | 34,85 % | 14,87 % | 27,54 % |
 
-Ambas filas proceden de una unica medicion por sistema; la linea base es `algerian-nlp/Hadra-ASR-whisper-small`, puntuada en el mismo arnes y con el mismo normalizador, pero no re-ejecutada para esta publicacion y con ajustes de decodificacion y numero de filas de test no documentados.
-
-No hay benchmarks ancla disponibles: las suites de referencia del colectivo (DziriEval y MADAR) son de texto y no cubren reconocimiento de voz, por lo que no existe puntuacion ancla aplicable a este modelo. El autor indica que la mejora de aproximadamente 50x respecto al adaptador small es extraordinaria y requiere reproduccion independiente antes de citarse como hecho.
+Las métricas se calcularon tras aplicar el normalizador `normalize_darja_text` (eliminación de diacríticos árabes, tatweel, unificación de alif y ya, y eliminación de puntuación). Los recuentos de filas de los splits de test no están documentados por el proveedor de los datasets. No se han publicado resultados en benchmarks estándar de ASR (Common Voice, FLEURS, MLS) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el base Whisper medium ocupa alrededor de 1,5 GB en fp16 y unos 3 GB en fp32. Sumando el adaptador de 69 millones de parametros, el presupuesto total queda en torno a 1,6 GB en fp16, sin contar activaciones ni el coste de atencion sobre ventanas de 30 segundos.
-- Cabe en GPU de consumo: cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060) puede ejecutarlo en fp16. El ejemplo de la model card selecciona `torch.float16` si hay CUDA disponible.
-- Inferencia en CPU viable: al ser un modelo de 763 millones de parametros, la transcripcion en CPU es lenta pero funcional; el pipeline de ejemplo cae a `torch.float32` cuando no hay GPU.
-- GPU profesionales: A100, H100 o L4 no son necesarias para este tamano; solo tendrian sentido para procesar grandes volumenes en paralelo o para reentrenar el adaptador.
-- Opciones de despliegue: `transformers` + `peft` es la ruta documentada y verificada. La model card advierte de un defecto en el repositorio que rompe `WhisperProcessor.from_pretrained(REPO)` y, por tanto, el uso directo de `pipeline(...)` en transformers 4.57.6 (`AttributeError: 'list' object has no attribute 'keys'`, por `extra_special_tokens` almacenado como lista en lugar de como mapping). El extractor de caracteristicas y los pesos no se ven afectados. La ultima version de transformers que funciona no esta medida: hay que fijar la version verificada antes de reportar cifras.
-- Integracion con vLLM, TGI, llama.cpp u Ollama: no documentada para este adaptador. Cualquier conversion a CTranslate2 o faster-whisper exigiria fusionar previamente el adaptador con el base, paso que la model card no describe.
-- Latencia y throughput: no disponibles. No se publican mediciones de tiempo real, RTF ni tokens por segundo.
+- VRAM estimada para inferencia: el adaptador añade 69,2 M de parámetros sobre un backbone de 763,9 M. En fp16, el conjunto completo ronda los 1,7 GB de pesos; en fp32, unos 3,3 GB. Con cuantización int8 del backbone, el uso de pesos baja a aproximadamente 0,9-1 GB, más el espacio de activaciones y buffers de audio.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16 en inferencia por lotes pequeños; A100, H100 o L4 para despliegues con concurrencia y throughput alto.
+- Cabe en GPU de consumo: sí, en RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090, así como en GPUs de portátil con 6-8 GB.
+- Opciones de despliegue: `transformers` + `peft` con el pipeline `automatic-speech-recognition`, o servidores compatibles con Whisper (por ejemplo, implementaciones basadas en Faster-Whisper o vLLM con soporte de audio, sujeto a la compatibilidad del adaptador). No se documenta soporte nativo en llama.cpp ni Ollama para este adaptador.
+- Latencia y throughput: no disponibles en la información proporcionada. Como referencia cualitativa, el coste por segundo de audio es el de Whisper-medium con un adaptador LoRA de bajo rango, es decir, muy próximo al del backbone sin adaptar.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto de audio | WER declarada en darija | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / audio | Idiomas | Licencia | WER dariya argelina |
 |---|---|---|---|---|---|
-| Hadra-ASR-whisper-medium | 833 M totales (69 M entrenables) | 30 s por ventana | 0,68 % / 0,34 % / 0,95 % (OddAdmix, unica ejecucion) | MIT | Hugging Face, adaptador PEFT |
-| Hadra-ASR-whisper-small | no disponible en la informacion proporcionada | 30 s por ventana | 34,85 % / 14,87 % / 27,54 % | no disponible en la informacion proporcionada | Hugging Face (referenciado como linea base) |
-| openai/whisper-medium (base) | 763.857.920 | 30 s por ventana | no disponible para darija en la informacion proporcionada | MIT (modelo original de OpenAI) | Hugging Face, safetensors |
-| openai/whisper-large-v3 | no disponible en la informacion proporcionada | 30 s por ventana | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| EL-ANKA (este modelo) | 833,1 M (69,2 M entrenables) | Ventanas de 30 s | `arq` | MIT (adaptador) | 0,68 / 0,34 / 0,95 % (declarado, ejecución única) |
+| EL-ANKA-Lite | no disponible | Ventanas de 30 s | `arq` | no disponible | 34,85 / 14,87 / 27,54 % (declarado) |
+| openai/whisper-medium (base) | 763,9 M | Ventanas de 30 s | 99 idiomas, sin dariya específica | MIT (pesos originales) | no disponible para dariya en la información proporcionada |
+| Whisper-large-v3 | 1.550 M | Ventanas de 30 s | 99 idiomas, sin dariya específica | MIT | no disponible para dariya en la información proporcionada |
 
-Las dos unicas cifras comparables directamente son las de las dos filas de Hadra, y ambas proceden de una unica ejecucion cada una bajo el mismo normalizador. La comparacion con Whisper medium sin ajustar en darija no esta publicada en la informacion disponible.
+La comparación con Whisper base y Whisper-large-v3 se ofrece como referencia de categoría (ASR multilingüe de código abierto); no se dispone de cifras de WER en dariya argelina para esos modelos en la información proporcionada, por lo que no puede cuantificarse la mejora relativa.
 
 ## Limitaciones y advertencias
 
-- Defecto conocido y reproducible: `WhisperProcessor.from_pretrained(REPO)` falla en transformers 4.57.6 porque `tokenizer_config.json` almacena `extra_special_tokens` como lista en lugar de mapping. Afecta al uso directo del `pipeline` de ASR; no afecta al extractor de caracteristicas ni a los pesos. La ultima version de transformers funcional no esta medida.
-- Las WER declaradas proceden de una sola ejecucion por sistema, sin semillas medidas, y estan marcadas como no verificadas. No existe todavia reproduccion independiente.
-- La mejora de aproximadamente 50x sobre el adaptador small se basa en dos mediciones unicas; el propio autor pide tratarla como afirmacion pendiente de confirmacion.
-- Las particiones de test de las colecciones OddAdmix no estan documentadas y el numero de filas de test no esta medido, por lo que no se puede juzgar la significacion estadistica de los resultados.
-- No hay benchmarks ancla aplicables: DziriEval y MADAR son suites de texto, no de voz.
-- Sesgos: el modelo no ha sido evaluado para sesgo, toxicidad ni factualidad, segun declara el autor.
-- Riesgo de alucinacion: no se documenta ninguna evaluacion especifica al respecto en la informacion disponible.
-- Ambito geografico y dialectal limitado: los acentos del este de Argelia y del Sahara quedan fuera de los dominios de entrenamiento y pueden degradar el rendimiento.
-- Codigo mezclado con frances: el cambio de codigo frecuente puede transcribirse foneticamente a escritura arabe, generando texto no estandar.
-- Usos prohibidos por el autor: texto a voz o cualquier generacion de audio, traduccion entre idiomas, cualquier idioma o dialecto distinto del darija argelino, y cualquier decision sobre personas.
-- La puntuacion y los diacriticos no se preservan en la salida evaluada: las cifras de WER corresponden a texto pasado por el normalizador de darija, no a transcripcion literal.
-- Licencia MIT: permite uso comercial, pero conviene conservar el aviso de copyright y tener en cuenta que el modelo base `openai/whisper-medium` mantiene sus propias condiciones.
+- Los WER declarados (0,34-0,95 %) proceden de una única ejecución, con semilla no registrada, decodificación no documentada y recuentos de test no publicados. Son cifras excepcionalmente bajas para ASR en un dialecto y deben tratarse como no verificadas hasta su reproducción independiente.
+- El modelo está entrenado exclusivamente para dariya argelina; su uso con árabe estándar, otros dialectos magrebíes o árabe oriental no está validado y probablemente degrade el rendimiento.
+- Riesgo de alucinación en pasajes de audio con ruido, música o silencios largos, comportamiento conocido en la familia Whisper; se recomienda filtrado de VAD y revisión humana en producción.
+- Sesgos derivados del corpus: los tres datasets de entrenamiento son podcasts, narraciones y contenido oral, por lo que la cobertura de habla espontánea, acentos rurales o vocabulario técnico puede ser limitada.
+- Problema de compatibilidad documentado: en `transformers 4.57.6`, `WhisperProcessor.from_pretrained` y, por tanto, `pipeline(...)` fallan con `AttributeError: 'list' object has no attribute 'keys'` porque `tokenizer_config.json` almacena `extra_special_tokens` como lista en lugar de mapping. El extractor de características y los pesos del adaptador no se ven afectados.
+- Licencia: el adaptador es MIT, pero los pesos del backbone Whisper-medium conservan la licencia de OpenAI; conviene revisar los términos del modelo base antes de un uso comercial.
+- No apto para síntesis de voz, generación de audio, traducción automática ni reconocimiento de idiomas fuera del ámbito argelino.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-medium
 - Modelo base: https://huggingface.co/openai/whisper-medium
-- Linea base small del colectivo: https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-small
-- Dataset Kahwa podcast: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-kahwa-postcast
-- Dataset Loubna stories: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-loubna-stories
-- Dataset Rawi stories: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-rawi
-- Paper de Whisper (referencia arXiv 2212.04356): https://arxiv.org/abs/2212.04356
+- Variante ligera: https://huggingface.co/algerian-nlp/EL-ANKA-Lite
+- Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
+- Dataset Kahwa Podcast: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-kahwa-postcast
+- Dataset Loubna Stories: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-loubna-stories
+- Dataset Rawi Stories: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-rawi
 - Libreria PEFT: https://github.com/huggingface/peft
-- Busqueda web: no se han encontrado enlaces adicionales relevantes sobre este modelo; los resultados devueltos no guardan relacion con el modelo.

@@ -2,109 +2,88 @@
 
 ## Resumen
 
-Pyrut-8B-Instruct-Uncensored-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo Pyrex-8B-Instruct-Uncensored, publicado por el usuario mradermacher. El modelo original lo desarrolla ImposterOnline y consiste en un ajuste fino por instrucciones de 7.615.616.512 parametros (aproximadamente 7,6B), orientado especificamente a tareas de programacion y con el filtro de moderacion eliminado, de ahi la etiqueta "uncensored". El repositorio que nos ocupa no aporta pesos nuevos: unicamente ofrece versiones comprimidas del modelo base para su uso con llama.cpp, Ollama y otros runners compatibles con GGUF.
+Pyrut-8B-Instruct-Uncensored-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo ImposterOnline/Pyrex-8B-Instruct-Uncensored, publicada por el usuario mradermacher. El modelo original es un ajuste fino de 8B parametros orientado a generacion de codigo y conversacion sin filtros de moderacion (uncensored), entrenado sobre datasets de codigo e instrucciones como OpenCoder-SFT-stage1, CodeAlpaca-20k, evol-codealpaca-v1, databricks-dolly-15k y hermes-function-calling-v1. Esta publicacion no introduce pesos nuevos: su valor esta en ofrecer los pesos originales en multiples niveles de cuantizacion para facilitar su despliegue en hardware modesto.
 
-La relevancia de esta ficha radica en que es la via practica de desplegar el modelo en hardware de consumo. El repositorio incluye doce cuantizaciones distintas, desde Q2_K (3,1 GB) hasta f16 (15,3 GB), lo que permite ejecutar el modelo en equipos con poca VRAM o incluso en CPU con RAM suficiente. El modelo esta entrenado con QLoRA sobre una mezcla de datasets de codigo e instrucciones generales, e incorpora soporte declarado de function calling y flujos agenticos.
+El modelo cuenta con 7.615.616.512 parametros (aproximadamente 7,6B) y esta pensado para inferencia local mediante llama.cpp y herramientas compatibles con GGUF. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales. El repositorio incluye once variantes de cuantizacion, desde Q2_K (3,1 GB) hasta f16 (15,3 GB), ademas de una version con cuantizacion ponderada/imatrix publicada en un repositorio separado.
 
-La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, si bien conviene tener presente que el caracter "uncensored" implica ausencia de filtros de seguridad y traslada al desarrollador toda la responsabilidad sobre las salidas. El modelo solo declara soporte de ingles y no se han publicado resultados de benchmarks en la informacion disponible.
+Es relevante ahora porque satisface la demanda de modelos de codigo ejecutables en GPU de consumo, con soporte declarado para function calling y un enfasis explicito en la ausencia de censura, algo que interesa a desarrolladores que necesitan respuestas sin bloqueos en tareas tecnicas. No obstante, la informacion publicada es escasa: no se detallan la longitud de contexto, la composicion exacta del dataset ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador (familia no especificada en la informacion disponible) |
-| Parametros totales | 7.615.616.512 (aprox. 7,6B) |
+| Arquitectura | no disponible (transformers; probablemente transformer decoder-only, sin confirmar) |
+| Parametros totales | 7.615.616.512 (aproximadamente 7,6B) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas quants ponderados/imatrix en repositorio separado |
+| Idiomas soportados | ingles (en) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (cuantizaciones); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el modelo base como un ajuste fino por instrucciones de 7,6B parametros realizado mediante QLoRA sobre un modelo preentrenado no identificado explicitamente. El autor lo define como "coding-first", es decir, con una receta de datos volcada hacia tareas de programacion. Los datasets declarados son: OpenCoder-LLM/opencoder-sft-stage1, sahil2801/CodeAlpaca-20k, theblackcat102/evol-codealpaca-v1, databricks/databricks-dolly-15k y NousResearch/hermes-function-calling-v1. La combinacion mezcla datos masivos de codigo (OpenCoder, CodeAlpaca, evol-codealpaca), instrucciones generales (dolly-15k) y ejemplos de llamada a funciones (hermes-function-calling-v1), lo que explica la orientacion agentica del modelo.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Por el tamano (7,6B parametros) y la libreria declarada (transformers), se trata presumiblemente de un transformer decoder-only, pero la model card no especifica la familia arquitectonica, el numero de capas, las dimensiones ocultas ni el mecanismo de atencion. Tampoco se indica la longitud de contexto nativa.
 
-No se detalla en la informacion proporcionada el numero total de tokens de entrenamiento, la composicion exacta de la mezcla, ni si se aplicaron fases de RLHF o DPO posteriores al SFT. Tampoco se especifican innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). Esta ficha corresponde exclusivamente al repositorio de cuantizaciones GGUF generadas por mradermacher mediante conversion desde el modelo base en formato Hugging Face; el proceso de cuantizacion es estatico (quantize_version 2, output_tensor_quantised 1) y existe una variante alternativa con pesos ponderados e imatrix publicada en un repositorio independiente.
+El entrenamiento se realizo mediante ajuste fino supervisado (SFT) sobre cinco datasets: OpenCoder-LLM/opencoder-sft-stage1, sahil2801/CodeAlpaca-20k, theblackcat102/evol-codealpaca-v1, databricks/databricks-dolly-15k y NousResearch/hermes-function-calling-v1. Esta combinacion sugiere un enfasis en generacion de codigo, instrucciones generales y function calling. No se documenta el numero de tokens de entrenamiento, la composicion proporcional de cada dataset, ni si se aplicaron tecnicas de RLHF o DPO. La etiqueta "uncensored" indica que se elimino o redujo el alineamiento de seguridad, pero no se detalla el procedimiento. Esta publicacion concreta es unicamente una conversion y cuantizacion de los pesos originales, sin reentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto y codigo: el ajuste "coding-first" y los datasets de codigo apuntan a un rendimiento solido en generacion, explicacion y refactorizacion de codigo.
-- Instrucciones generales: la inclusion de databricks-dolly-15k anade capacidades conversacionales y de respuesta a instrucciones fuera del ambito puramente tecnico.
-- Function calling / tool calling: el dataset NousResearch/hermes-function-calling-v1 habilita el formato de llamada a funciones estructurada.
-- Flujos agenticos: la etiqueta "agentic" indica soporte para razonamiento multi-paso y encadenamiento de herramientas.
-- Modo sin censura: el modelo no aplica filtros de contenido, lo que se traduce en respuestas directas ante peticiones que otros modelos rechazarian.
-- Multilingue: limitado al ingles segun la declaracion de idiomas del repositorio.
-- Capacidades de vision o audio: no disponible.
-- Modo "thinking" explicito: no disponible.
+- Generacion de texto conversacional en ingles, con formato instruct.
+- Generacion y asistencia en codigo, dado el peso de los datasets de programacion en el entrenamiento.
+- Soporte declarado de function calling / tool calling, gracias al dataset hermes-function-calling-v1.
+- Respuestas sin filtros de moderacion (uncensored), orientado a contenido que otros modelos rechazan.
+- Capacidad multilingue limitada: solo se declara ingles.
+- No se documentan capacidades de vision, audio, modo thinking ni razonamiento multi-paso explicito.
+- Compatible con endpoints de inferencia (etiqueta endpoints_compatible) y con llama.cpp.
 
 ## Casos de uso
 
-- Asistente de programacion en local: integrado en editores como VS Code mediante extensiones compatibles con llama.cpp u Ollama, el modelo puede autocompletar, explicar y refactorizar codigo sin enviar datos a servicios externos. Su tamano de 7,6B permite ejecutarlo en una GPU de consumo.
-- Generacion de codigo en tuberias de CI/CD: gracias al soporte de function calling, puede invocarse desde scripts para generar tests, parches o documentacion de forma automatizada dentro de un pipeline.
-- Analisis de codigo heredado: su entrenamiento sobre evol-codealpaca y OpenCoder lo hace util para tareas de traduccion entre lenguajes, deteccion de antipatrones y generacion de comentarios en bases de codigo antiguas.
-- Entornos de investigacion en seguridad ofensiva: al no aplicar filtros de contenido, encaja en laboratorios autorizados de red team que necesitan analizar tecnicas de explotacion o generar PoCs sin bloqueos de moderacion.
-- Agentes autonomos de bajo coste: con cuantizaciones Q4_K_M (4,8 GB), puede actuar como cerebro de un agente que planifica pasos, llama a herramientas y encadena acciones en hardware modesto.
-- Procesamiento por lotes de datos en ingles: generacion de resumenes, clasificacion o reformateo de grandes volumenes de texto mediante scripts desatendidos en CPU o GPU.
-- Prototipado rapido sin conexion: en entornos air-gapped o con requisitos estrictos de privacidad, el formato GGUF permite desplegar el modelo en una estacion de trabajo sin dependencia de red.
+- Asistente de programacion local: el modelo puede generar y explicar codigo en ingles dentro de entornos de desarrollo integrados, ejecutandose en GPU de consumo gracias a las cuantizaciones Q4_K_M (4,8 GB) o Q5_K_M (5,5 GB).
+- Autocompletado y refactorizacion de codigo en pipelines de CI/CD: con soporte de function calling, puede integrarse en flujos automatizados que invocan herramientas externas, aunque requiere validacion humana por el riesgo de alucinacion.
+- Prototipado rapido de agentes: la combinacion de formato instruct y function calling permite construir agentes sencillos que llaman a APIs en entornos controlados y de investigacion.
+- Generacion de contenido tecnico sin restricciones: util para redaccion de documentacion, analisis de seguridad o pruebas de robustez donde los filtros de moderacion interfieren con la tarea.
+- Investigacion sobre alineamiento y censura: al ser un modelo uncensored con licencia MIT, sirve como linea base para estudiar el comportamiento de modelos sin alineamiento de seguridad.
+- Despliegue en hardware modesto: las variantes Q2_K (3,1 GB) y Q3_K_S (3,6 GB) permiten ejecucion en equipos con poca VRAM o incluso CPU, para tareas de generacion de texto de baja exigencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de cuantizaciones no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalentes, ni para el modelo base ni para las versiones cuantizadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada por cuantizacion (segun tamanos declarados en el repositorio):
-  - Q2_K: 3,1 GB
-  - Q3_K_S: 3,6 GB
-  - Q3_K_M: 3,9 GB
-  - Q3_K_L: 4,2 GB
-  - IQ4_XS: 4,4 GB
-  - Q4_K_S: 4,6 GB
-  - Q4_K_M: 4,8 GB
-  - Q5_K_S: 5,4 GB
-  - Q5_K_M: 5,5 GB
-  - Q6_K: 6,4 GB
-  - Q8_0: 8,2 GB
-  - f16: 15,3 GB
-- GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 con cuantizaciones Q4 y Q5. Las versiones Q8_0 y f16 requieren GPUs de 12-16 GB o superior.
-- GPU de datacenter: A100, H100, L40S y similares pueden ejecutar cualquier cuantizacion, incluida f16, con margen para contextos largos y lotes grandes.
-- Despliegue en CPU: las cuantizaciones Q4_K_M y Q5_K_M son viables en CPU con 8-16 GB de RAM, con throughput reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-inference (TGI) y cualquier runner compatible con GGUF. El modelo tambien es compatible con endpoints.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
-- Nota sobre la variante imatrix: existen cuantizaciones ponderadas con imatrix en un repositorio separado que suelen ofrecer mejor calidad por bit que las estaticas incluidas aqui.
+- VRAM estimada para inferencia: aproximadamente 3,1 GB (Q2_K), 3,6 GB (Q3_K_S), 4,6-4,8 GB (Q4_K_S/Q4_K_M), 5,4-5,5 GB (Q5_K_S/Q5_K_M), 6,4 GB (Q6_K), 8,2 GB (Q8_0) y 15,3 GB (f16), sin contar el overhead de contexto y del runtime.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060, RTX 4060, RTX 4070 o superiores para las variantes de mayor calidad; A100 o H100 no son necesarias para un modelo de este tamano.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 8 GB o mas para Q4_K_M y Q5_K_M; las variantes Q2_K y Q3_K_S pueden ejecutarse en GPUs de 4 GB o en CPU.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), y servidores compatibles con GGUF; el modelo base puede usarse con transformers y presumiblemente con vLLM o TGI si se dispone de los pesos en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Orientacion |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Pyrut-8B-Instruct-Uncensored (GGUF) | 7,6B | no disponible | Apache 2.0 | Hugging Face, GGUF | Codigo sin censura |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face, GGUF, amplia | Generalista |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32K (extensible) | Apache 2.0 | Hugging Face, GGUF, amplia | Codigo |
+| Pyrut-8B-Instruct-Uncensored-GGUF | 7,6B | no disponible | MIT | GGUF | Enfocado en codigo y uncensored; sin benchmarks publicados |
+| ImposterOnline/Pyrex-8B-Instruct-Uncensored | 7,6B | no disponible | MIT | safetensors | Modelo base del que deriva esta cuantizacion |
+| Alternativas de 7-8B para codigo (p. ej. CodeLlama-7B, Qwen2.5-Coder-7B) | 7-8B | variable | variable | safetensors/GGUF | No se dispone de datos comparativos de rendimiento en la informacion proporcionada |
 
-La comparacion cuantitativa de rendimiento no es posible porque no hay benchmarks publicados para Pyrut-8B en la informacion disponible. Frente a Llama 3.1 8B Instruct y Qwen2.5-Coder-7B-Instruct, las diferencias principales son la ausencia de filtros de seguridad, el enfoque "coding-first" y un ecosistema de soporte mucho menor (182 descargas y 0 likes en el momento de la ficha frente a millones en los modelos alternativos). Qwen2.5-Coder-7B-Instruct comparte licencia Apache 2.0 y una orientacion similar a codigo, por lo que es la alternativa mas directa si se prioriza madurez y soporte; Pyrut solo se justifica cuando se necesita explicitamente la ausencia de moderacion.
+No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa fiable con modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de filtros de seguridad: el modelo puede generar contenido ofensivo, ilegal o peligroso sin restricciones. Su uso en produccion exige moderacion externa si el publico no es controlado.
-- Riesgo de alucinacion: como cualquier modelo de 7,6B ajustado por instrucciones, puede inventar APIs, funciones o hechos con aparente seguridad. No se ha publicado ninguna evaluacion de fidelidad.
-- Idiomas: solo se declara ingles. El rendimiento en castellano u otros idiomas es desconocido y probablemente deficiente.
-- Contexto desconocido: al no especificarse la longitud de contexto, no se puede garantizar el comportamiento en conversaciones largas o documentos extensos.
-- Cuantizaciones de baja precision: Q2_K y Q3_K degradan notablemente la calidad. El propio autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S, Q4_K_M o superiores.
-- Ecosistema reducido: 182 descargas y 0 likes indican una adopcion marginal, con pocas garantias de mantenimiento o comunidad.
-- Trazabilidad limitada: no se identifica el modelo preentrenado subyacente ni los detalles del dataset de SFT, lo que dificulta auditar sesgos o procedencia de los datos.
-- Discrepancia en el nombre: el repositorio se llama "Pyrut" mientras que el modelo base es "Pyrex"; conviene verificar la correspondencia antes de integrarlo.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones, pero no exime de responsabilidad legal por el contenido generado.
+- Sesgos conocidos: no documentados; al ser un modelo uncensored, es probable que reproduzca sesgos de sus datos de entrenamiento sin mitigacion.
+- Riesgo de alucinacion: elevado en tareas de codigo y factuales, especialmente en cuantizaciones bajas (Q2_K, Q3_K) y sin benchmarks que validen su fiabilidad.
+- Limitacion de idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado.
+- Longitud de contexto: no documentada, lo que dificulta planificar su uso en conversaciones largas o analisis de repositorios extensos.
+- Licencia: MIT permite uso comercial, pero el caracter uncensored implica responsabilidad legal y etica sobre el contenido generado; conviene revisar las politicas de uso en produccion.
+- Caveat de produccion: la ausencia de benchmarks, de documentacion de arquitectura y de datos de entrenamiento detallados limita la evaluacion rigurosa; se recomienda validacion propia antes de desplegar.
+- Las cuantizaciones Q2_K y Q3_K_M degradan la calidad de forma notable segun las notas del autor.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-GGUF
 - Modelo base: https://huggingface.co/ImposterOnline/Pyrex-8B-Instruct-Uncensored
-- Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-i1-GGUF
-- Pagina de resumen del modelo: https://hf.tst.eu/model#Pyrut-8B-Instruct-Uncensored-GGUF
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Ficha del modelo base en featherless.ai: https://featherless.ai/models/ImposterOnline/Pyrex-8B-Instruct-Uncensored
-- Lista curada de modelos sin censura para seguridad ofensiva: https://github.com/JoasASantos/Offensive-Security-AI-Models
-- Empresa del autor de las cuantizaciones: https://www.nethype.de/
-- Guia sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Quants ponderados/imatrix: https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Pyrut-8B-Instruct-Uncensored-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

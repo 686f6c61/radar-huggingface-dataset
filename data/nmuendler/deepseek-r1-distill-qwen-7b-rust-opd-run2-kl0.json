@@ -20,10 +20,12 @@
     "text-generation",
     "conversational",
     "arxiv:1910.09700",
+    "base_model:nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-kl0-baked",
+    "base_model:adapter:nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-kl0-baked",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

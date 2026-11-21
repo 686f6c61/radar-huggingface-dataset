@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/LFM2.5-VL-450M",
   "created_at": "2026-08-13T01:04:56.000Z",
-  "updated_at": "2026-11-20T01:39:17.000Z",
+  "updated_at": "2026-11-20T09:36:49.000Z",
   "license": "lfm-open-license-v1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1461,
+  "downloads_30d": 1512,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

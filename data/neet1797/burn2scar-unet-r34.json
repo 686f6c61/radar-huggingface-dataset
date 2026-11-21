@@ -5,7 +5,7 @@
   "author": "neet1797",
   "url": "https://huggingface.co/neet1797/burn2scar-unet-r34",
   "created_at": "2026-11-08T13:01:41.000Z",
-  "updated_at": "2026-11-14T14:31:18.000Z",
+  "updated_at": "2026-11-20T13:33:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

@@ -5,7 +5,7 @@
   "author": "hiroshiya",
   "url": "https://huggingface.co/hiroshiya/GLM-5.3-Flash-HYPERFLARE-GB10-TP2",
   "created_at": "2026-11-18T01:13:03.000Z",
-  "updated_at": "2026-11-20T07:05:06.000Z",
+  "updated_at": "2026-11-21T04:39:39.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

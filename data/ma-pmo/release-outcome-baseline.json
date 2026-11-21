@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "ma-pmo/release-outcome-baseline",
+  "slug": "ma-pmo-release-outcome-baseline",
+  "author": "ma-pmo",
+  "url": "https://huggingface.co/ma-pmo/release-outcome-baseline",
+  "created_at": "2026-11-21T00:55:47.000Z",
+  "updated_at": "2026-11-21T00:55:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "skops",
+    "project-management",
+    "schedule-risk",
+    "scope-management",
+    "ma-pmo",
+    "dataset:ma-pmo/jira-release-slip",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45714750,
+  "storage_human": "46 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Issue outcome by the release date (14 days before)",
+      "dataset": "Jira Release Slip",
+      "metric": "Log loss",
+      "value": 0.715
+    },
+    {
+      "task": "Issue outcome by the release date (14 days before)",
+      "dataset": "Jira Release Slip",
+      "metric": "Macro-F1",
+      "value": 0.444
+    },
+    {
+      "task": "Issue outcome by the release date (28 days before)",
+      "dataset": "Jira Release Slip",
+      "metric": "Log loss",
+      "value": 0.744
+    },
+    {
+      "task": "Issue outcome by the release date (28 days before)",
+      "dataset": "Jira Release Slip",
+      "metric": "Macro-F1",
+      "value": 0.415
+    }
+  ],
+  "sources": []
+}

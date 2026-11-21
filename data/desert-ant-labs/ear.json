@@ -5,7 +5,7 @@
   "author": "desert-ant-labs",
   "url": "https://huggingface.co/desert-ant-labs/ear",
   "created_at": "2026-08-25T12:10:00.000Z",
-  "updated_at": "2026-11-05T20:40:28.000Z",
+  "updated_at": "2026-11-20T22:35:29.000Z",
   "license": "desert-ant-labs-source-available",
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -233,8 +233,8 @@
     "model-index",
     "region:us"
   ],
-  "likes": 15,
-  "downloads_30d": 712,
+  "likes": 16,
+  "downloads_30d": 710,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -251,32 +251,67 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "desert-ant-labs/ear · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/ear",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "task": "Spoken language identification",
+      "dataset": "Common Voice, 15 languages, 7,500 clips of 5 to 30 seconds",
+      "metric": "language identification accuracy",
+      "value": 0.98
     },
     {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
+      "task": "Spoken language identification",
+      "dataset": "Common Voice, 15 languages, 7,500 clips of 5 to 30 seconds",
+      "metric": "recognizer routing accuracy",
+      "value": 0.99
     },
     {
-      "title": "desert-ant-labs (Desert Ant Labs) - Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs",
-      "snippet": "Org profile for Desert Ant Labs on Hugging Face, the AI community building the future."
+      "task": "Spoken language identification",
+      "dataset": "VoxPopuli, 16 languages, 3,221 clips of 5 to 30 seconds",
+      "metric": "language identification accuracy",
+      "value": 0.993
     },
     {
-      "title": "Desert Ant Labs - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs",
-      "snippet": "Desert Ant Labs is a European AI lab building small, opinionated on-device models."
+      "task": "Spoken language identification",
+      "dataset": "VoxPopuli, 16 languages, 3,221 clips of 5 to 30 seconds",
+      "metric": "recognizer routing accuracy",
+      "value": 0.998
     },
     {
-      "title": "GitHub - Desert-Ant-Labs/desert-ant-core: On-device AI SDKs for iOS ...",
-      "url": "https://github.com/Desert-Ant-Labs/desert-ant-core/tree/main",
-      "snippet": "On-device AI SDKs for iOS, macOS, Android, and the web. Small, focused models that run fully offline in Swift, Kotlin, and JavaScript with Core ML, LiteRT, and WebAssembly. - Desert-Ant-Labs/desert..."
+      "task": "Spoken language identification",
+      "dataset": "Multilingual LibriSpeech, 7 languages, 2,660 clips of 5 to 30 seconds",
+      "metric": "language identification accuracy",
+      "value": 0.992
+    },
+    {
+      "task": "Spoken language identification",
+      "dataset": "Multilingual LibriSpeech, 7 languages, 2,660 clips of 5 to 30 seconds",
+      "metric": "recognizer routing accuracy",
+      "value": 0.997
+    },
+    {
+      "task": "Spoken language identification",
+      "dataset": "NST, Norwegian and Swedish, 1,000 clips of 5 to 30 seconds",
+      "metric": "language identification accuracy",
+      "value": 0.996
+    },
+    {
+      "task": "Spoken language identification",
+      "dataset": "NST, Norwegian and Swedish, 1,000 clips of 5 to 30 seconds",
+      "metric": "recognizer routing accuracy",
+      "value": 1
+    },
+    {
+      "task": "Spoken language identification",
+      "dataset": "English in four conditions (LibriSpeech, AMI, CHiME-6, NOTSOFAR-1), 1,660 clips of 5 to 30 seconds",
+      "metric": "language identification accuracy",
+      "value": 0.977
+    },
+    {
+      "task": "Spoken language identification",
+      "dataset": "English in four conditions (LibriSpeech, AMI, CHiME-6, NOTSOFAR-1), 1,660 clips of 5 to 30 seconds",
+      "metric": "recognizer routing accuracy",
+      "value": 0.98
     }
-  ]
+  ],
+  "sources": []
 }

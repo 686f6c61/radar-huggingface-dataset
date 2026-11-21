@@ -5,7 +5,7 @@
   "author": "abbuibuibui",
   "url": "https://huggingface.co/abbuibuibui/HimariAzuma-Lora",
   "created_at": "2026-10-31T06:08:09.000Z",
-  "updated_at": "2026-11-20T03:39:49.000Z",
+  "updated_at": "2026-11-20T04:03:47.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 133,
+  "downloads_30d": 153,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

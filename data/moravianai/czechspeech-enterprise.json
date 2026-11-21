@@ -5,7 +5,7 @@
   "author": "moravianai",
   "url": "https://huggingface.co/moravianai/CzechSpeech-Enterprise",
   "created_at": "2026-11-20T08:28:18.000Z",
-  "updated_at": "2026-11-20T08:32:07.000Z",
+  "updated_at": "2026-11-20T19:39:14.000Z",
   "license": "moravian-ai-commercial",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",

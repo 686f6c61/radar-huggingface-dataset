@@ -24,11 +24,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18838969668,
+  "storage_bytes": 18841823082,
   "storage_human": "18.8 GB",
   "context_length": null,
   "base_model": "Valen-Team/Valen-Decision-1.5-4B",

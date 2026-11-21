@@ -5,7 +5,7 @@
   "author": "tetraturtle",
   "url": "https://huggingface.co/tetraturtle/Glistening-Gem-31B-v2.2-BF16-embd-GGUF",
   "created_at": "2026-11-19T19:08:21.000Z",
-  "updated_at": "2026-11-19T19:43:34.000Z",
+  "updated_at": "2026-11-20T17:32:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1457,
+  "downloads_30d": 2820,
   "trending_score": 0,
   "parameters": 32106631740,
   "parameters_human": "32.11B",

@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "coffeecatai/cohere-transcribe-arabic-coreml",
+  "renamed_at": "2026-11-21T11:43:47.669Z",
   "benchmarks": [],
   "sources": []
 }

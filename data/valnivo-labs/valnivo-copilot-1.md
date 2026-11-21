@@ -2,106 +2,92 @@
 
 ## Resumen
 
-Valnivo Copilot 1 es un modelo de lenguaje especializado desarrollado por Valnivo Labs como componente opcional on-device de su copiloto "Ask Valnivo". Se construye a partir de Qwen2.5-1.5B-Instruct (© Alibaba Cloud, Apache-2.0) mediante un ajuste fino con LoRA orientado a dos tareas muy concretas: el enrutado de preguntas hacia identificadores de una biblioteca propia de respuestas, lugares y acciones, y la redacción de frases a partir de plantillas con ranuras nombradas. Posteriormente se exporta a ONNX de 4 bits para ejecutarse en el navegador con WebGPU a través de transformers.js 4.3.
+Valnivo Copilot 1.8 es un modelo de lenguaje conversacional de pequeno tamano desarrollado por Valnivo Labs, derivado mediante ajuste fino con LoRA sobre Qwen/Qwen2.5-1.5B-Instruct. Su proposito es ejecutarse integramente en el dispositivo del usuario (on-device), concretamente en el navegador, gracias a su exportacion a ONNX en cuantizacion de 4 bits y su integracion con la libreria transformers.js. El modelo esta pensado para el producto "Ask Valnivo" del propio autor, actuando como copiloto conversacional.
 
-La relevancia del modelo reside en su enfoque de privacidad y despliegue: se ejecuta íntegramente en el dispositivo del usuario y ninguna consulta sale de él. No ofrece asesoramiento ni responde a preguntas de índole fiscal, de seguros o de ordenación de deudas, ya que esas peticiones se rechazan en el código de la aplicación antes de invocar al modelo. El modelo base tiene aproximadamente 1 500 millones de parámetros, soporta ocho idiomas (inglés, francés, alemán, español, italiano, portugués, neerlandés y polaco) y se distribuye bajo licencia Apache-2.0.
+La relevancia de este modelo radica en su enfoque de despliegue: con 1.500 millones de parametros en su base y pesos cuantizados a 4 bits repartidos en diez ficheros de 200 MB o menos, esta disenado para cargarse en entornos web mediante WebGPU sin depender de infraestructura de servidor. Soporta ocho idiomas europeos (ingles, frances, aleman, espanol, italiano, portugues, neerlandes y polaco) y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial.
 
-La ficha corresponde al identificador `Valnivo-labs/valnivo-copilot-1`, cuya model card describe la versión 1.1 del modelo. El repositorio ocupa 4,9 GB e incluye todos los archivos y los datos externos asociados al export de ONNX.
+La model card reporta una evaluacion sobre 773 preguntas no vistas con una tasa de acierto del 95,5 % (738/773), ligeramente superior a la version 1.6 (95,3 %), y destaca que no se filtro ningun "consejo" en la prueba de escritura (128/128). No se detallan, sin embargo, las caracteristicas completas del entrenamiento ni benchmarks estandarizados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen2.5, con ajuste fino mediante LoRA y export a ONNX |
-| Parametros totales | Aproximadamente 1 500 millones (heredados del modelo base Qwen2.5-1.5B-Instruct) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-1.5B-Instruct) |
-| Tipos de cuantizacion | q4 (pesos de 4 bits, aritmetica de 32 bits, pesos como datos externos) |
+| Arquitectura | Transformer decoder-only (base Qwen2.5-1.5B-Instruct) |
+| Parametros totales | 1.500 millones (modelo base) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | q4 (ONNX, 4 bits) |
 | Idiomas soportados | en, fr, de, es, it, pt, nl, pl |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (transformers.js, con `use_external_data_format: true`) |
+| Formato de pesos | ONNX (transformers.js, formato externo en diez ficheros de 200 MB o menos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una adaptacion de Qwen2.5-1.5B-Instruct, un transformer decoder-only de aproximadamente 1 500 millones de parametros. El ajuste fino se realizo con LoRA sobre dos tareas estrechas: enrutado (una pregunta en uno de los ocho idiomas se asigna al identificador de una entrada de la biblioteca de Valnivo, o bien a `none`) y redaccion (un hecho ya calculado por la aplicacion, entregado con ranuras nombradas como `{income}` o `{spent}` en lugar de cifras, se convierte en una o dos frases que conservan las ranuras). El entrenamiento se llevo a cabo con la revision fijada de `Qwen/Qwen2.5-1.5B-Instruct` mediante `mlx-lm` 0.32, en 900 pasos para la version 1.0 y 650 pasos adicionales para la 1.1.
+El modelo parte de Qwen2.5-1.5B-Instruct, un transformer decoder-only de 1.500 millones de parametros, y se ajusta mediante LoRA sobre lo que la model card denomina "the advanced set plus round-8b corrections". No se especifican el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se emplearon tecnicas de RLHF o DPO adicionales mas alla del ajuste supervisado implícito en el proceso de LoRA sobre un modelo ya instruido.
 
-El material de entrenamiento se compone exclusivamente de la biblioteca propia de Valnivo (formas de formular cada respuesta en ocho idiomas, titulos de tarjetas de pantalla, rechazos, una lista de temas fuera de alcance e instrucciones de cada accion) y de un banco de plantillas de respuesta verificadas previamente por los propios controles de la aplicacion. No se entrenó con datos de personas ni con un conjunto de evaluacion. La exportacion a ONNX se hizo sobre el grafo del export `q4` de `onnx-community/Qwen2.5-1.5B-Instruct`, sustituyendo los pesos por los ajustados. La eleccion de `q4` (aritmetica de 32 bits) frente a `q4f16` responde a que, en aritmetica de 16 bits sobre WebGPU, los pesos ajustados desbordan en el primer token; ademas, ONNX Runtime Web 1.22 (transformers.js 3.8) ejecutaba el modelo incorrectamente en WebGPU, problema resuelto en la version 1.31 (transformers.js 4.3).
+La innovacion tecnica principal no esta en la arquitectura sino en el empaquetado: la exportacion a ONNX en cuantizacion q4 con formato de datos externos (diez ficheros de 200 MB o menos) permite la carga progresiva en navegador mediante transformers.js 4.3 o superior, con `dtype: 'q4'`, `device: 'webgpu'` y `use_external_data_format: 10`. Esta fragmentacion facilita la descarga por partes y la ejecucion en WebGPU sin necesidad de backend.
 
 ## Capacidades
 
-- Enrutado de intenciones: asigna una pregunta en uno de los ocho idiomas al identificador de una entrada de la biblioteca propia o a `none`; cualquier salida que no sea un identificador se descarta.
-- Redaccion con plantillas: genera una o dos frases a partir de hechos calculados por la aplicacion, manteniendo ranuras nombradas en lugar de cifras.
-- Refuerzo de seguridad mediante diseno: la aplicacion rechaza peticiones de veredictos, fiscales, de seguros y de ordenacion de deudas antes de ejecutar el modelo; el propio modelo no ofrece consejo.
-- Deteccion de temas fuera de alcance: clasifica preguntas no pertinentes como `none`.
-- Soporte multilingue nativo en ocho idiomas (en, fr, de, es, it, pt, nl, pl).
-- Ejecucion on-device en el navegador con WebGPU, sin que las consultas abandonen el dispositivo.
-- Generacion de acciones: reconoce instrucciones y propone acciones de una biblioteca definida (entradas, presupuestos, inflacion, horizonte, pagos recurrentes, objetivos, categorizacion, valoraciones, retos, tema, idioma y formularios de cuentas, participaciones y deudas).
-- No disponible: soporte explicito de tool calling generico, function calling arbitrario, vision, audio ni modo de razonamiento (thinking mode) al margen de sus dos tareas.
+- Generacion de texto conversacional multi-turno orientada a un asistente ("Ask Valnivo").
+- Razonamiento basico y respuesta a preguntas, heredado de Qwen2.5-1.5B-Instruct.
+- Capacidades multilingues en ocho idiomas europeos: ingles, frances, aleman, espanol, italiano, portugues, neerlandes y polaco.
+- Ejecucion on-device en navegador mediante WebGPU, sin llamadas a servidor.
+- Capacidad de escritura: la model card reporta 128/128 en una prueba de escritura.
+- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, vision ni audio.
 
 ## Casos de uso
 
-- Enrutado de intenciones en asistentes on-device: el modelo convierte la pregunta del usuario en el identificador de una respuesta o accion conocida; la aplicacion resuelve ese identificador y descarta cualquier salida que no sea valido, lo que encaja en copilotos web con biblioteca de respuestas cerrada.
-- Redaccion de respuestas basadas en datos del usuario: a partir de un hecho ya calculado por la aplicacion (por ejemplo, ingresos o gasto), el modelo redacta una o dos frases con ranuras nombradas que la propia aplicacion rellena y verifica antes de mostrar la respuesta.
-- Asistentes financieros personales con privacidad: al ejecutarse en el navegador con WebGPU, los datos financieros del usuario no salen del dispositivo, lo que resulta adecuado para aplicaciones de finanzas personales sensibles a la privacidad.
-- Copilotos web de baja dependencia de red: con cerca de 0,3 s para enrutar una pregunta y unos pocos segundos para redactar una respuesta en un Apple M3 (tras una carga inicial de unos 7 s), permite experiencias interactivas sin llamadas a servidores.
-- Filtrado de ambito y rechazo controlado: la combinacion del codigo de la aplicacion y del enrutado a `none` permite descartar temas fuera de alcance (evaluado en 9/9 en el conjunto eval3) y bloquear preguntas de asesoramiento antes de ejecutar el modelo.
-- Atencion multilingue en ocho idiomas: un mismo copiloto puede atender a usuarios en ingles, frances, aleman, espanol, italiano, portugues, neerlandes y polaco sin modelos separados.
-- Prototipado de asistentes web con transformers.js: al distribuirse como export ONNX para transformers.js 4.3 y WebGPU, se integra en aplicaciones web que quieran un copiloto de alcance acotado sin infraestructura de servidor.
-- Generacion de acciones guiada por biblioteca: para aplicaciones con un catalogo fijo de operaciones (crear entradas, ajustar presupuestos, categorizar movimientos), el modelo identifica la accion correspondiente a una instruccion del usuario.
+- Asistente conversacional embebido en web: el modelo puede gestionar dialogos multi-turno directamente en el navegador del usuario mediante WebGPU, eliminando la latencia de red y los costes de inferencia en servidor.
+- Chat de soporte en aplicaciones web con requisitos de privacidad: al ejecutarse on-device, los mensajes del usuario no abandonan el dispositivo, lo que resulta adecuado para entornos con datos sensibles.
+- Prototipado rapido de copilotos: gracias a transformers.js 4.3+ y la carga por ficheros fragmentados, un desarrollador puede integrar el modelo en una pagina con pocas lineas de JavaScript.
+- Aplicaciones multilingues europeas: los ocho idiomas soportados permiten desplegar una misma interfaz de asistente para usuarios de Espana, Francia, Alemania, Italia, Portugal, Paises Bajos y Polonia sin modelos separados.
+- Generacion de texto asistida en formularios o editores web: la capacidad de escritura reportada (128/128) sugiere utilidad para redaccion guiada y completado de textos cortos.
+- Demos y entornos sin backend: escenarios de educacion, ferias o aplicaciones offline donde no se dispone de infraestructura de inferencia en servidor.
+- Filtrado y moderacion ligera en cliente: por su tamano reducido y ejecucion local, puede emplearse para tareas auxiliares de clasificacion o reescritura antes de enviar datos a un servicio mayor.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible son las mediciones del autor en Chrome sobre WebGPU, con conjuntos no usados en entrenamiento:
+| Evaluacion | Valnivo Copilot 1.8 | Valnivo Copilot 1.6 |
+|---|---|---|
+| Preguntas no vistas (773) | 738/773 (95,5 %) | 737/773 (95,3 %) |
+| Prueba de escritura (128) | 128/128 | no disponible |
+| Fugas de consejos ("advice leaked") | 0 | no disponible |
 
-| Conjunto | Resultado |
-|---|---|
-| Redaccion, 64 preguntas, 8 idiomas | 64/64 superan los controles de la aplicacion; revisadas por una persona |
-| eval3, 39 preguntas (nunca usadas en entrenamiento ni ajuste) | 39/39 correctas, 0 de 9 preguntas de asesoramiento filtradas, 9/9 fuera de alcance resueltas como `none` |
-| eval / eval2, 108 preguntas | 76% / 78% correctas, 0 de asesoramiento filtradas |
-| Acciones, 41 instrucciones (tres rondas) | 30/41 correctas; ninguna accion ofrecida para una pregunta simple, ninguna accion erronea ofrecida |
-| Enrutado, 147 preguntas (1.1 frente a 1.0) | 83% frente al 80% de la version 1.0 en WebGPU |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos anteriores proceden de la evaluacion interna del autor y no son directamente comparables con benchmarks publicos.
 
 ## Requisitos de hardware
 
-- Modelo disenado para ejecucion on-device en navegador mediante WebGPU; no requiere servidor de inferencia.
-- Tamano del repositorio: 4,9 GB (incluye pesos, datos externos y demas archivos listados en `SHA256SUMS`).
-- Huella de pesos q4: no disponible de forma explicita; al tratarse de un modelo de aproximadamente 1 500 millones de parametros en 4 bits, la huella de pesos se situa en el entorno de 1 GB, mas el sobrecoste de los datos externos y del runtime (estimacion, no dato publicado).
-- GPU recomendadas: cualquier GPU o iGPU compatible con WebGPU en Chrome; el autor ha medido el modelo en un Apple M3.
-- Cabe en GPU de consumo: si, el objetivo es ejecutarlo en hardware de usuario final (portatiles, equipos de sobremesa y dispositivos con WebGPU), no en aceleradores de centro de datos.
-- Opciones de despliegue: transformers.js 4.3 o posterior, con `dtype: 'q4'`, `device: 'webgpu'` y `use_external_data_format: true`; runtime ONNX Runtime Web 1.31. El autor advierte de que ONNX Runtime Web 1.22 (transformers.js 3.8) ejecutaba mal el modelo en WebGPU.
-- Latencia y throughput: aproximadamente 0,3 s para enrutar una pregunta y unos pocos segundos para redactar una respuesta en un Apple M3, tras una primera carga de unos 7 s. No se publican datos de throughput.
-- vLLM, llama.cpp, Ollama o TGI: no disponible en la informacion proporcionada para este export ONNX orientado a WebGPU.
+- VRAM estimada para inferencia en q4: no disponible de forma explicita; con 1.500 millones de parametros en 4 bits, el peso de los pesos ronda los 0,8-1 GB, mas overhead de activaciones y contexto.
+- GPU recomendadas: no disponibles en la informacion proporcionada; el modelo esta disenado para WebGPU en navegador, por lo que depende de la GPU del cliente.
+- Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano y la cuantizacion, aunque no se confirma en la model card.
+- Opciones de despliegue: transformers.js 4.3+ con `dtype: 'q4'`, `device: 'webgpu'` y `use_external_data_format: 10`. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Despliegue | Idiomas |
 |---|---|---|---|---|---|
-| Valnivo Copilot 1 | ~1 500 M (LoRA sobre Qwen2.5-1.5B-Instruct) | no disponible | Apache-2.0 | ONNX para transformers.js / WebGPU | Enrutado y redaccion para un copiloto on-device; ocho idiomas |
-| Qwen2.5-1.5B-Instruct | ~1 500 M | no disponible en la informacion | Apache-2.0 | safetensors, GGUF y otros | Modelo base generalista del que deriva |
-| onnx-community/Qwen2.5-1.5B-Instruct | ~1 500 M | no disponible en la informacion | Apache-2.0 | ONNX `q4` para transformers.js | Grafo de exportacion reutilizado por Valnivo Copilot 1 |
-| Otros modelos pequenos comparables (por ejemplo de la franja 1-2 B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparacion en la informacion proporcionada |
+| Valnivo Copilot 1.8 | 1,5 B (base) | no disponible | Apache-2.0 | ONNX / transformers.js / WebGPU | 8 idiomas europeos |
+| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en la informacion | Apache-2.0 | Multiples (incluye transformers.js) | Multilingue amplio |
+| Otros modelos on-device de ~1-2 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de resultados de benchmarks comunes que permitan comparar directamente Valnivo Copilot 1 con alternativas de la misma categoria, ya que las mediciones publicadas corresponden a conjuntos propios y cerrados del copiloto.
+La comparativa se limita al modelo base, ya que no se dispone de datos de otros modelos on-device comparables en la informacion proporcionada. Valnivo Copilot 1.8 se diferencia de Qwen2.5-1.5B-Instruct por su ajuste LoRA especifico y su empaquetado ONNX q4 optimizado para navegador.
 
 ## Limitaciones y advertencias
 
-- Modelo de proposito muy acotado: solo cubre enrutado y redaccion con plantillas; no es un asistente generalista ni soporta tool calling generico.
-- Riesgo de alucinacion fuera de su ambito: cualquier salida que no sea un identificador valido se descarta en la aplicacion, y la redaccion esta sujeta a controles que exigen ausencia de cifras propias, de palabras de veredicto y de cifras junto a palabras de otra funcion. Estas salvaguardas dependen del codigo de la aplicacion, no solo del modelo.
-- No ofrece asesoramiento: las peticiones de veredictos, fiscales, de seguros o de ordenacion de deudas se rechazan en el codigo de la aplicacion antes de ejecutar el modelo.
-- Idiomas: soporta ocho idiomas (en, fr, de, es, it, pt, nl, pl); no se documentan otros.
-- Longitud de contexto: no disponible en la informacion proporcionada.
-- Dependencia de versiones concretas: requiere transformers.js 4.3 o posterior y ONNX Runtime Web 1.31; en versiones anteriores (transformers.js 3.8) el modelo se ejecutaba incorrectamente en WebGPU. Asimismo, con aritmetica de 16 bits (`q4f16`) los pesos desbordan en el primer token, por lo que debe usarse `q4`.
-- Licencia: Apache-2.0, igual que el modelo base; conviene revisar el archivo `LICENSE` para los terminos exactos.
-- Datos de evaluacion limitados: los resultados publicados proceden de conjuntos propios del autor y no de benchmarks estandar, por lo que la comparabilidad con otros modelos es limitada.
-- Repositorio sin descargas ni "likes" en el momento de la consulta, y fecha de creacion futura respecto a la informacion recopilada; se recomienda verificar la vigencia de los archivos mediante `SHA256SUMS`.
+- La evaluacion reportada (95,5 % en 773 preguntas) es interna del autor y no equivale a benchmarks publicos; no permite comparacion directa con otros modelos.
+- No se documentan datos sobre sesgos, alucinacion ni robustez fuera del conjunto de evaluacion del autor.
+- La longitud de contexto no se especifica; se desconoce si se mantiene la del modelo base Qwen2.5-1.5B-Instruct.
+- El modelo esta especializado en el producto "Ask Valnivo"; su comportamiento fuera de ese dominio conversacional no esta caracterizado.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
+- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en produccion.
+- El despliegue depende de WebGPU y transformers.js 4.3+, lo que excluye navegadores o dispositivos sin soporte.
+- El repositorio ocupa 12,9 GB, aunque los ficheros individuales son de 200 MB o menos; la descarga completa puede ser costosa en conexiones lentas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Valnivo-labs/valnivo-copilot-1
+- Hugging Face: https://huggingface.co/Valnivo-labs/valnivo-copilot-1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Grafo de exportacion ONNX de referencia: https://huggingface.co/onnx-community/Qwen2.5-1.5B-Instruct
-- transformers.js: https://github.com/huggingface/transformers.js
-- mlx-lm: https://github.com/ml-explore/mlx-lm
-- Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.
+- Libreria transformers.js: https://github.com/huggingface/transformers.js
+- WebGPU: https://developer.mozilla.org/es/docs/Web/API/WebGPU_API

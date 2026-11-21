@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/PaperQwen3.5-4B-i1-GGUF",
   "created_at": "2026-11-05T03:30:23.000Z",
-  "updated_at": "2026-11-05T16:55:00.000Z",
+  "updated_at": "2026-11-20T10:55:52.000Z",
   "license": "cc-by-nc-sa-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1613,
+  "downloads_30d": 1614,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",

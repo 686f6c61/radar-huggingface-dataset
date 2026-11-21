@@ -5,7 +5,7 @@
   "author": "khadija1ab",
   "url": "https://huggingface.co/khadija1ab/pneumonia-x-densenet121",
   "created_at": "2026-11-20T18:39:50.000Z",
-  "updated_at": "2026-11-20T18:39:52.000Z",
+  "updated_at": "2026-11-20T19:08:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "timm",
+    "onnx",
     "safetensors",
     "image-classification",
     "medical-imaging",
@@ -27,11 +28,12 @@
   "trending_score": 0,
   "parameters": 7038529,
   "parameters_human": "7.0M",
-  "storage_bytes": 28238276,
-  "storage_human": "28 MB",
+  "storage_bytes": 56452709,
+  "storage_human": "56 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

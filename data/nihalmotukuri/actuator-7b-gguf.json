@@ -5,7 +5,7 @@
   "author": "nihalmotukuri",
   "url": "https://huggingface.co/nihalmotukuri/actuator-7b-gguf",
   "created_at": "2026-11-20T21:55:56.000Z",
-  "updated_at": "2026-11-20T22:26:15.000Z",
+  "updated_at": "2026-11-20T22:40:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,7 +33,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 7615616512,

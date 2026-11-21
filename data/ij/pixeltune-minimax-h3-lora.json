@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 714,
+  "downloads_30d": 717,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Arrêt maladie : indemnités journalières versées au salarié",
-      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3053",
-      "snippet": "Vous souhaitez connaître les conditions d'indemnisation, savoir s'il y a un délai de carence avant de percevoir vos IJ, leur montant …"
-    },
-    {
-      "title": "Arrêt de travail pour maladie : les indemnités journalières du salarié",
-      "url": "https://www.ameli.fr/assure/remboursements/indemnites-journalieres-maladie-maternite-paternite/indemnites-journalieres-pour-maladie/arret-maladie-salarie",
-      "snippet": "Sep 1, 2026 · Les indemnités journalières (IJ) vous sont versées par l'Assurance Maladie pour compenser la perte de vos allocations …"
-    },
-    {
-      "title": "Montants maximum des indemnités journalières (IJ) - ameli",
-      "url": "https://www.ameli.fr/entreprise/vos-salaries/montants-reference/indemnites-journalieres-montants-maximum",
-      "snippet": "Jun 1, 2026 · Connaître le montant maximal des indemnités journalières (IJ) de l’Assurance Maladie vous permet de calculer le …"
-    },
-    {
-      "title": "IJ Connect – Info Jeunes France",
-      "url": "https://infojeunesfrance.org/ijconnect/",
-      "snippet": "Ce parcours, destiné à tou (te)s les pros du réseau IJ, vous accompagne progressivement dans la découverte et l’utilisation …"
-    },
-    {
-      "title": "Bienvenue dans votre portail IJ",
-      "url": "https://portailij.fr/",
-      "snippet": "Veuillez saisir votre identifiant : Suivant"
-    }
-  ]
+  "sources": []
 }

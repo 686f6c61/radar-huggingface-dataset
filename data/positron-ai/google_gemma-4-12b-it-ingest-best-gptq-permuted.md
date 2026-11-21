@@ -2,104 +2,88 @@
 
 ## Resumen
 
-`positron-ai/google_gemma-4-12B-it-ingest-best-gptq-permuted` es una compilación cuantizada en 4 bits del modelo `google/gemma-4-12B-it`, publicada por Positron AI. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor parte de los pesos oficiales de Google y aplica cuantización GPTQ con el objetivo de reducir la huella de memoria y facilitar el despliegue en GPUs con menos VRAM que las necesarias para el modelo en precisión completa.
+`positron-ai/google_gemma-4-12B-it-ingest-best-gptq-permuted` es una compilación cuantizada de 4 bits del modelo `google/gemma-4-12B-it`, publicada por el usuario Positron AI en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de inferencia derivado: el autor toma los pesos originales de Google y los somete a una cuantización GPTQ con el objetivo de reducir la huella de memoria y facilitar el despliegue en GPUs de gama media. El repositorio ocupa 8,0 GB y contiene 11.959.730.224 parámetros según los metadatos de safetensors.
 
-El modelo base pertenece a la familia Gemma 4 de Google en su variante instruct de 12B parámetros (11.959.730.224 parámetros reales según los safetensors del repositorio). La arquitectura declarada es `gemma4_unified` y el pipeline es `image-text-to-text`, lo que indica que el modelo base es multimodal —acepta imagen y texto como entrada y genera texto—, aunque el artefacto cuantizado se etiqueta también como `text-generation`.
+La relevancia de esta ficha reside en que documenta un artefacto de cuantización, no un modelo base. La model card es extremadamente escueta: no aporta métricas de calidad, no declara idiomas soportados, no especifica la longitud de contexto y remite explícitamente a la licencia original de Gemma 4. Cualquier evaluación rigurosa del comportamiento del modelo debe hacerse contra el modelo base `google/gemma-4-12B-it`, cuyos detalles técnicos no se incluyen en la información disponible.
 
-La relevancia de esta ficha es práctica: permite evaluar si un build GPTQ de terceros es adecuado para producción. El repositorio ocupa 8,0 GB, tiene 698 descargas y ninguna interacción social. La model card es explícitamente parca: no publica métricas de calidad, divergencia KL ni perplejidad, y remite la validación a seguimiento interno del autor. Esa opacidad es el dato más importante para cualquier evaluador.
+El artefacto se publicó el 25 de agosto de 2026 y se actualizó el 18 de noviembre de 2026, con 726 descargas y ningún "like". La ficha, por tanto, describe con precisión lo que el repositorio declara y marca como "no disponible" todo aquello que el autor no ha hecho público, sin extrapolar datos del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `gemma4_unified` (transformer multimodal, según etiqueta de la librería) |
+| Arquitectura | no disponible (modelo base: `google/gemma-4-12B-it`; el repositorio declara la arquitectura `gemma4_unified` en sus tags) |
 | Parametros totales | 11.959.730.224 |
-| Parametros activos | no disponible (no se declara MoE) |
+| Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GPTQ 4 bits, group size 64, simétrica, `desc_act=true`, damp 0,05; activaciones sin cuantizar |
+| Tipos de cuantizacion | GPTQ 4-bit, grupo de 64, simetrica, `desc_act=true`, damp 0,05 % |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (con `license_link` a la licencia de Gemma 4 de Google, que prevalece) |
-| Formato de pesos | safetensors (GPTQ), compatible con `transformers` |
-| Parametros del build | toolchain GPTQModel 7.1.0, transformers 5.11.0, torch 2.9.1, CUDA 12.8 |
-| Calibracion | conjunto mixto de dominio, 128 muestras, longitud 4096 |
-| Tamano del repositorio | 8,0 GB |
-| Fecha de publicacion declarada | 2026-09-02 |
+| Licencia | apache-2.0 (con `license_link` a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors (libreria `transformers`, pipeline `text-generation`, modalidad `image-text-to-text`) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto no entrena nada: hereda íntegramente la arquitectura y el entrenamiento del modelo base `google/gemma-4-12B-it`. La etiqueta `gemma4_unified` sugiere una arquitectura unificada dentro de la familia Gemma 4, y el pipeline `image-text-to-text` confirma naturaleza multimodal (visión y lenguaje). No se dispone de información sobre número de tokens de entrenamiento, composición del dataset, ni si hubo RLHF, DPO o decodificación especulativa; la model card no los documenta.
+El repositorio no documenta la arquitectura interna del modelo base. Los tags de Hugging Face indican `gemma4_unified` como arquitectura declarada y `image-text-to-text` como modalidad, lo que sugiere un modelo multimodal de entrada imagen-texto, pero el autor no detalla capas, atención, normalización ni estrategia de entrenamiento. Tampoco se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO o alguna fase de ajuste por preferencias. Todo ello corresponde al modelo original de Google, cuya documentación no forma parte de la información proporcionada.
 
-La innovación técnica del repositorio es exclusivamente la cuantización. Se aplica GPTQ post-entrenamiento a 4 bits sobre pesos, con ordenación descendente de activaciones (`desc_act=true`) y grupo de 64. El `desc_act` activado es relevante: mejora la fidelidad en capas sensibles a la magnitud de activaciones, a costa de una inferencia algo más lenta que con `desc_act=false`. Las activaciones permanecen en precisión original, lo que es el comportamiento habitual en GPTQ y evita el coste de kernels W4A16. El proceso de calibración emplea 128 muestras de 4096 tokens de un conjunto mixto, un tamaño de calibración estándar pero no especialmente generoso, lo que puede afectar a la robustez fuera del dominio de calibración.
-
-No hay información sobre si se preservaron las capas de visión en el proceso de cuantización, ni sobre cómo se comporta la torre visual a 4 bits. Es un punto ciego importante dado el pipeline multimodal declarado.
+La innovación técnica documentada es exclusivamente la cuantización. El proceso se ejecutó con GPTQModel 7.1.0 sobre transformers 5.11.0, torch 2.9.1 y CUDA 12.8. Se aplicó GPTQ de 4 bits con tamaño de grupo 64, cuantización simétrica y `desc_act=true` (ordenación de activaciones descendente), con un porcentaje de damp del 0,05 %. La calibración utilizó 128 muestras de un conjunto mixto de dominios con longitud de secuencia 4096. Solo se cuantizaron los pesos: las activaciones permanecen sin cuantizar. El autor no publica la precisión de origen ni el runtime o hardware objetivo.
 
 ## Capacidades
 
-- Generación de texto conversacional en modo instruct, heredada del modelo base.
-- Procesamiento de entrada imagen-texto según el pipeline declarado (`image-text-to-text`); la preservación de esta capacidad tras la cuantización no está documentada.
-- Razonamiento y matemáticas: presumibles por la familia base, sin métricas publicadas que lo confirmen en este build.
-- Generación de código: presumible por la familia base, sin datos específicos.
-- Tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas (el campo de idiomas figura como no disponible).
-- Modo de razonamiento explícito (thinking): no documentado.
+- Generación de texto conversacional, según el pipeline declarado `text-generation` y la etiqueta `conversational`.
+- Procesamiento de entrada imagen-texto, según la modalidad `image-text-to-text` declarada en los tags.
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; el autor no declara idiomas.
+- Modo "thinking", audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Despliegue en GPUs de gama media para prototipado: con pesos de 4 bits y un repositorio de 8,0 GB, el modelo cabe en tarjetas de 12-16 GB de VRAM (por ejemplo, RTX 4080 o 4070 Ti SUPER) siempre que la ventana de contexto se mantenga moderada. Adecuado para entornos de desarrollo donde no hay acceso a A100/H100.
-- Servicio de chat interno con presupuesto de VRAM ajustado: al reducir el peso de los parámetros, se libera memoria para caché KV, lo que permite sostener conversaciones multi-turno en una sola GPU consumer.
-- Evaluación comparativa de formatos de cuantización: útil como referencia GPTQ frente a otros builds (AWQ, GGUF) del mismo `gemma-4-12B-it` antes de fijar un formato en producción.
-- Procesamiento de documentos con imagen escaneada y extracción de texto: si la torre visual sobrevive a la cuantización, el pipeline imagen-texto permitiría tareas de descripción y extracción; requiere validación previa obligatoria.
-- Base para fine-tuning con QLoRA: un checkpoint GPTQ no es el formato habitual para QLoRA (se prefiere bnb-4bit), pero puede servir como referencia de calidad del cuantizado antes de adaptar.
-- Entornos de CI con tests de regresión de calidad: desplegar este build en un runner con GPU para detectar degradaciones respecto al modelo original en tareas concretas.
+- Despliegue en GPUs de consumo con memoria limitada: al ser una compilación GPTQ de 4 bits con un repositorio de 8,0 GB, permite cargar el modelo en tarjetas con 12-16 GB de VRAM que no admitirían los pesos en precisión completa, siempre que se valide la calidad frente al original.
+- Servicio de chat multimodal en prototipos: la modalidad `image-text-to-text` y la etiqueta `conversational` permiten construir asistentes que reciben imágenes y texto, útil para demos internas y pruebas de concepto antes de migrar a producción.
+- Evaluación comparativa de cuantizaciones: sirve como artefacto de referencia para medir la degradación de GPTQ 4-bit con grupo 64 y `desc_act` frente a otros formatos (GGUF, AWQ) del mismo modelo base.
+- Integración en pipelines de `transformers`: al declarar `library_name: transformers` y pesos en safetensors, se puede cargar con `AutoModelForCausalLM` y `AutoTokenizer` en scripts existentes sin cambios de formato.
+- Endpoints gestionados de Hugging Face: la etiqueta `endpoints_compatible` permite desplegarlo como endpoint inferencia gestionado, útil para equipos que no quieren administrar infraestructura propia.
+- Investigación sobre calibración GPTQ: los parámetros publicados (128 muestras, longitud 4096, damp 0,05 %) permiten reproducir o variar la configuración y estudiar su efecto en la perplejidad, aunque el autor no publique esas métricas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explícitamente que no reporta métricas de rendimiento ni de calidad (sin divergencia KL, sin accuracy, sin perplejidad) y que la validación se gestiona internamente.
-
-| Metrica | Valor |
-|---|---|
-| MMLU | no disponible |
-| HumanEval | no disponible |
-| GSM8K | no disponible |
-| Perplejidad / KL-divergence vs. base | no disponible |
-| Throughput / latencia | no disponible |
+No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no reporta métricas de rendimiento ni de calidad (ni KL-divergence, ni accuracy, ni perplejidad) y que las validaciones se gestionan internamente en Positron AI.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 7-8 GB solo para pesos (4 bits sobre 12B parámetros). Con caché KV y overhead del runtime, un presupuesto realista de 10-14 GB para contextos moderados; contextos largos elevan el requisito de forma significativa.
-- GPU recomendadas: RTX 4090 (24 GB) para contexto amplio y holgura; RTX 4080 / 4070 Ti SUPER (16 GB) para uso con contextos moderados; A100 40 GB y H100 para servir varias instancias o contextos muy largos.
-- Cabe en GPU consumer: sí, en tarjetas de 16 GB en adelante con cuantización GPTQ 4 bits. En 12 GB es ajustado y depende de la longitud de contexto.
-- Opciones de despliegue: `transformers` con kernels GPTQ (toolchain declarado: GPTQModel 7.1.0, transformers 5.11.0, torch 2.9.1, CUDA 12.8). Para servir a escala, vLLM o TGI si soportan `gemma4_unified` con GPTQ; llama.cpp/Ollama requerirían convertir a GGUF, lo que es un proceso aparte. La compatibilidad con endpoint no está verificada más allá de la etiqueta `endpoints_compatible`.
+- VRAM estimada para inferencia: los pesos en 4 bits suman aproximadamente 8,0 GB en disco; en VRAM hay que añadir overhead de activaciones, caché KV y buffers de runtime. Con contexto corto, una estimación razonable es de 9-11 GB, aunque no hay medición publicada.
+- GPU recomendadas: no declaradas por el autor. Por tamaño, encajan GPUs con 16 GB o más (RTX 4080, RTX 4090, A100 40 GB, H100). En GPUs de 12 GB el margen es ajustado y depende de la longitud de contexto.
+- ¿Cabe en GPU de consumo? Probablemente en RTX 4090 (24 GB) y RTX 4080 (16 GB); en RTX 3060 de 12 GB requiere contexto reducido y verificación empírica.
+- Opciones de despliegue: `transformers` con GPTQModel o kernels GPTQ compatibles; vLLM, llama.cpp, Ollama y TGI no están confirmados para este artefacto en la información disponible (llama.cpp y Ollama requerirían conversión a GGUF, que no se incluye).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Estado |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| positron-ai/google_gemma-4-12B-it-ingest-best-gptq-permuted | 11,96B | no disponible | GPTQ 4-bit | apache-2.0 (+ licencia Gemma 4) | Build de terceros, sin métricas |
-| google/gemma-4-12B-it (base) | 11,96B | no disponible | BF16/FP16 original | licencia Gemma 4 | Modelo oficial de Google |
-| Otros builds cuantizados del mismo base | 11,96B | no disponible | AWQ / GGUF / GPTQ alternativos | según autor | no verificado en esta ficha |
+| `positron-ai/google_gemma-4-12B-it-ingest-best-gptq-permuted` | 11.959.730.224 | no disponible | GPTQ 4-bit, grupo 64 | apache-2.0 (licencia Gemma 4) | Hugging Face, 726 descargas |
+| `google/gemma-4-12B-it` (modelo base) | no disponible en la informacion | no disponible | sin cuantizar | licencia Gemma 4 de Google | Hugging Face |
+| Otras cuantizaciones del mismo base (GGUF, AWQ) | mismas que el base | no disponible | GGUF/AWQ | segun autor | no disponible en la informacion |
 
-La comparación relevante no es frente a otras familias, sino frente al propio modelo base en precisión completa: este build sacrifica fidelidad numérica a cambio de ~4x menos memoria en pesos. Al no publicarse métricas, no es posible cuantificar esa pérdida.
+No se dispone de datos de rendimiento del artefacto ni del modelo base en la información proporcionada, por lo que la comparativa se limita a parámetros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de métricas de calidad: no hay perplejidad, KL-divergence ni evaluaciones de tarea. Desplegar sin una validación propia previa es arriesgado.
-- La licencia declarada como `apache-2.0` convive con `license_link` a la licencia de Gemma 4 de Google. La model card indica que las restricciones del modelo original siguen aplicándose; en la práctica debe prevalecer la licencia de Google, no la Apache-2.0 del artefacto.
-- Build de terceros no oficial: no procede de Google y no hay garantía de mantenimiento ni de corrección de defectos. Cero likes y 698 descargas indican escasa validación comunitaria.
-- Cuantización a 4 bits: degradación esperable en tareas sensibles a precisión numérica (matemáticas, código con sintaxis estricta, razonamiento de cadena larga). No cuantificada.
-- Calibración con solo 128 muestras de 4096 tokens: posible sesgo hacia el dominio de calibración y comportamiento errático fuera de él.
-- Capacidad multimodal incierta: el pipeline se declara `image-text-to-text`, pero no se documenta si la torre visual se cuantizó ni con qué calibración, lo que pone en duda la fiabilidad en tareas de imagen.
-- Idiomas no declarados: no hay confirmación de soporte multilingüe ni de calidad por idioma.
-- Contexto no documentado: imposible dimensionar la caché KV o planificar despliegues con ventanas largas.
-- Riesgo de alucinación: inherente al modelo base, no mitigado ni evaluado en este build.
-- Toolchain muy reciente (transformers 5.11.0, torch 2.9.1): posibles incompatibilidades con entornos de producción estables.
+- La model card no publica ninguna métrica de calidad: no hay evidencia de que la cuantización GPTQ 4-bit preserve el comportamiento del modelo original. Hay que validar tarea por tarea antes de producción.
+- Sesgos conocidos: no documentados por el autor. Al heredar los pesos del modelo base, arrastra los sesgos de este, que no se detallan.
+- Riesgo de alucinación: no cuantificado; la cuantización agresiva puede incrementar la degradación en tareas de razonamiento largo.
+- Idiomas: no se declara ningún idioma soportado, lo que impide garantizar calidad en castellano u otras lenguas sin evaluación propia.
+- Longitud de contexto: no declarada; la calibración se hizo con secuencias de 4096 tokens, pero eso no confirma el contexto máximo de inferencia.
+- Licencia: el repositorio figura como apache-2.0, pero el `license_link` remite a la licencia de Gemma 4 de Google y la model card afirma que "la licencia y restricciones de uso originales siguen aplicándose". Conviene revisar los términos de Gemma 4 antes de uso comercial.
+- Artefacto de terceros: no es una publicación oficial de Google; el mantenimiento, las actualizaciones y el soporte dependen de Positron AI.
+- Sin datos de toolchain de inferencia validado: el autor no declara el runtime ni el hardware objetivo, lo que aumenta el riesgo de incompatibilidades.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/positron-ai/google_gemma-4-12B-it-ingest-best-gptq-permuted
+- Repositorio Hugging Face: https://huggingface.co/positron-ai/google_gemma-4-12B-it-ingest-best-gptq-permuted
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Documentación de GPTQModel: https://github.com/ModelCloud/GPTQModel
-- Documentación de transformers (carga de modelos GPTQ): https://huggingface.co/docs/transformers/main/en/quantization/gptq
+- GPTQModel: no disponible en la informacion proporcionada
+- Paper de GPTQ: no disponible en la informacion proporcionada
+- Blog o demo de Positron AI: no disponible en la informacion proporcionada

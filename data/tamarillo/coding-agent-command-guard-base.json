@@ -1,0 +1,99 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/coding-agent-command-guard-base",
+  "slug": "tamarillo-coding-agent-command-guard-base",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/coding-agent-command-guard-base",
+  "created_at": "2026-11-21T09:38:38.000Z",
+  "updated_at": "2026-11-21T09:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "agent-security",
+    "coding-agents",
+    "claude-code",
+    "shell-safety",
+    "tool-call-safety",
+    "command-safety",
+    "guardrails",
+    "runtime-security",
+    "mmbert",
+    "quantized",
+    "en",
+    "multilingual",
+    "dataset:amyrmahdy/decima-agent-decisions",
+    "dataset:agentapprove/coding-agent-tool-call-safety",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:quantized:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307532547,
+  "parameters_human": "307.5M",
+  "storage_bytes": 3393624688,
+  "storage_human": "3.4 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Coding-Agent Command & Tool-Call Policy Classification",
+      "dataset": "Decima Agent Decisions (bash/test, 3-class ALLOW/ASK/DENY)",
+      "metric": "3-Class Macro F1",
+      "value": 0.9561
+    },
+    {
+      "task": "Coding-Agent Command & Tool-Call Policy Classification",
+      "dataset": "Decima Agent Decisions (bash/test, 3-class ALLOW/ASK/DENY)",
+      "metric": "Accuracy",
+      "value": 0.9567
+    },
+    {
+      "task": "Coding-Agent Command & Tool-Call Policy Classification",
+      "dataset": "Decima Agent Decisions (bash/test, 3-class ALLOW/ASK/DENY)",
+      "metric": "DENY Recall",
+      "value": 0.9957
+    },
+    {
+      "task": "Coding-Agent Policy Boundary Detection",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (confirmation/holdout)",
+      "metric": "Binary Risk F1",
+      "value": 0.9519
+    },
+    {
+      "task": "Coding-Agent Policy Boundary Detection",
+      "dataset": "AgentApprove Coding-Agent Tool-Call Safety (confirmation/holdout)",
+      "metric": "Binary Risk AUROC",
+      "value": 0.8703
+    }
+  ],
+  "sources": []
+}

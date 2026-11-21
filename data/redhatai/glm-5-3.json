@@ -52,29 +52,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "YouTube Help",
-      "url": "https://support.google.com/youtube/?hl=en",
-      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI",
+      "snippet": "August 2026 Collection of third-party generative AI models validated by Red Hat AI for use across the Red Hat AI Product Portfolio."
     },
     {
-      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
-      "url": "https://www.pinkbike.com/",
-      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
-    },
-    {
-      "title": "What is YouTube Music? - YouTube Music Help - Google Help",
-      "url": "https://support.google.com/youtubemusic/answer/6313529?hl=en",
-      "snippet": "With the YouTube Music app, you can watch music videos, stay connected to artists you love, and discover music and podcasts to …"
-    },
-    {
-      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
-      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
-      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
-    },
-    {
-      "title": "Channel or account terminations - YouTube Help - Google Help",
-      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
-      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+      "title": "RedHatAI (Red Hat AI) - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/models",
+      "snippet": "RedHatAI/Mistral-Medium-3.5-128B ... RedHatAI/diffusiongemma-26B-A4B-it-NVFP4 ... RedHatAI/diffusiongemma-26B-A4B-it-FP8 …"
     }
   ]
 }

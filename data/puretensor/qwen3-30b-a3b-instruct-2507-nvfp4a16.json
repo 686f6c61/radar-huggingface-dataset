@@ -5,7 +5,7 @@
   "author": "puretensor",
   "url": "https://huggingface.co/puretensor/Qwen3-30B-A3B-Instruct-2507-NVFP4A16",
   "created_at": "2026-11-21T01:09:47.000Z",
-  "updated_at": "2026-11-21T01:29:25.000Z",
+  "updated_at": "2026-11-21T05:02:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",

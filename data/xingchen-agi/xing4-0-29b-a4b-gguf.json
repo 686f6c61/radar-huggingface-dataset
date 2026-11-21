@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 164,
-  "downloads_30d": 13856,
+  "downloads_30d": 13830,
   "trending_score": 11,
   "parameters": 31215031088,
   "parameters_human": "31.22B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "XingChen-AGI/Xing4.0-29B-A4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF",
-      "snippet": "This repository provides low-bit quantized weights and a quantization imatrix for Xing4.0-29B-A4B, covering a 2–8-bit quantization …"
-    },
-    {
-      "title": "XingChen-AGI_Xing4.0-29B-A4B-GGUF - Hugging Face",
-      "url": "https://huggingface.co/bartowski/XingChen-AGI_Xing4.0-29B-A4B-GGUF",
-      "snippet": "Text Generation model with 31B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "GitHub - XingChen-AGI/Xing4.0-29B-A4B",
-      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-A4B",
-      "snippet": "Sep 17, 2026 · Xing4.0-29B-A4B has 29B total parameters and only 4B activated per token. It natively supports a 256K context …"
-    },
-    {
-      "title": "Xing4.0-29B-A4B-GGUF · Models - modelscope.cn",
-      "url": "https://www.modelscope.cn/models/XingChen-AGI/Xing4.0-29B-A4B-GGUF",
-      "snippet": "本仓库提供 Hugging Face Transformers 格式的 Xing4.0-29B-A4B 模型权重及配置文件，兼容 Transformers、vLLM、SGLang …"
-    },
-    {
-      "title": "Xing4.0 29B A4B GGUF: hardware, VRAM & setup | YouRunAI",
-      "url": "https://www.yourunai.com/models/xing4-0/xingchen-agi-xing4-0-29b-a4b-gguf-5f7ef8",
-      "snippet": "Sep 16, 2026 · Xing4.0 29B A4B GGUF is a quantized text-generation model from the Xing series, licensed under Apache-2.0. It has …"
-    }
-  ]
+  "sources": []
 }

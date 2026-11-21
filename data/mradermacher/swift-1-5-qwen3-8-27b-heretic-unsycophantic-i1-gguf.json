@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-unsycophantic-i1-GGUF",
   "created_at": "2026-11-16T05:53:42.000Z",
-  "updated_at": "2026-11-16T10:00:06.000Z",
+  "updated_at": "2026-11-20T10:53:26.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3095,
+  "downloads_30d": 6311,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

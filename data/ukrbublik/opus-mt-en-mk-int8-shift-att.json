@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "ukrbublik/opus-mt-en-mk-int8-shift-att",
+  "slug": "ukrbublik-opus-mt-en-mk-int8-shift-att",
+  "author": "ukrbublik",
+  "url": "https://huggingface.co/ukrbublik/opus-mt-en-mk-int8-shift-att",
+  "created_at": "2026-11-21T07:50:11.000Z",
+  "updated_at": "2026-11-21T07:50:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "mk"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "marian",
+    "en",
+    "mk",
+    "base_model:Helsinki-NLP/opus-mt-en-mk",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-mk",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140855608,
+  "storage_human": "141 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-en-mk",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

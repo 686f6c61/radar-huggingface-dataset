@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/One-For-All-12B-i1-GGUF",
   "created_at": "2026-11-18T04:26:56.000Z",
-  "updated_at": "2026-11-18T07:18:17.000Z",
+  "updated_at": "2026-11-20T10:52:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 8440,
+  "downloads_30d": 11571,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
