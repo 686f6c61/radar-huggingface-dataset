@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/maid-yuzu-v8-alter-GGUF",
+  "slug": "mradermacher-maid-yuzu-v8-alter-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/maid-yuzu-v8-alter-GGUF",
+  "created_at": "2024-12-19T09:44:15.000Z",
+  "updated_at": "2026-11-22T19:28:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:rhplus0831/maid-yuzu-v8-alter",
+    "base_model:quantized:rhplus0831/maid-yuzu-v8-alter",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 318496103264,
+  "storage_human": "318.5 GB",
+  "context_length": 32768,
+  "base_model": "rhplus0831/maid-yuzu-v8-alter",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

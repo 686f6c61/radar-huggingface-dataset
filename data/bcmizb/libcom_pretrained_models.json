@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "BCMIZB/Libcom_pretrained_models",
+  "slug": "bcmizb-libcom_pretrained_models",
+  "author": "BCMIZB",
+  "url": "https://huggingface.co/BCMIZB/Libcom_pretrained_models",
+  "created_at": "2023-10-23T04:06:04.000Z",
+  "updated_at": "2026-11-22T18:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62511074732,
+  "storage_human": "62.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

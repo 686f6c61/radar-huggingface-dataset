@@ -1,0 +1,91 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/toxicity-safety-guard-tiny-en",
+  "slug": "tamarillo-toxicity-safety-guard-tiny-en",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/toxicity-safety-guard-tiny-en",
+  "created_at": "2026-11-22T19:53:48.000Z",
+  "updated_at": "2026-11-22T19:54:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "toxicity",
+    "safety",
+    "guardrails",
+    "llm-guard",
+    "content-moderation",
+    "ai-security",
+    "tamarillo",
+    "en",
+    "dataset:google/civil_comments",
+    "dataset:nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+    "dataset:OpenSafetyLab/Salad-Data",
+    "dataset:ToxicityPrompts/PolyGuardMix",
+    "dataset:argilla/ultrafeedback-binarized-preferences-cleaned",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-32m",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32034056,
+  "parameters_human": "32.0M",
+  "storage_bytes": 320791897,
+  "storage_human": "321 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamarillo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tamarillo",
+      "snippet": "Le Tamarillo (Solanum betaceum) est une espèce du genre Solanum et de la famille des Solanaceae originaire de la cordillère des …"
+    },
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …"
+    }
+  ]
+}

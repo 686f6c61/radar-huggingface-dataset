@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "tmtdev/Qwen3-1.7B-VNL-QA-V1",
+  "slug": "tmtdev-qwen3-1-7b-vnl-qa-v1",
+  "author": "tmtdev",
+  "url": "https://huggingface.co/tmtdev/Qwen3-1.7B-VNL-QA-V1",
+  "created_at": "2026-11-22T18:28:56.000Z",
+  "updated_at": "2026-11-22T18:33:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:ntphuc149/ViLegalQwen3-1.7B-Base",
+    "base_model:finetune:ntphuc149/ViLegalQwen3-1.7B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2570526652,
+  "storage_human": "2.6 GB",
+  "context_length": null,
+  "base_model": "ntphuc149/ViLegalQwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "calmcam/Qwen3-1.7B-Countdown-GRPO-512tok",
+  "slug": "calmcam-qwen3-1-7b-countdown-grpo-512tok",
+  "author": "calmcam",
+  "url": "https://huggingface.co/calmcam/Qwen3-1.7B-Countdown-GRPO-512tok",
+  "created_at": "2026-11-22T15:26:05.000Z",
+  "updated_at": "2026-11-22T15:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "grpo",
+    "reinforcement-learning",
+    "rlvr",
+    "countdown",
+    "math-reasoning",
+    "conversational",
+    "en",
+    "dataset:longphann/Countdown-Tasks-3to4",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Countdown-Tasks-3to4 (test, 1024 problems)",
+      "metric": "mean@4 accuracy (512-token budget, T=1.0)",
+      "value": 61.5
+    },
+    {
+      "task": null,
+      "dataset": "Countdown-Tasks-3to4 (test, 1024 problems)",
+      "metric": "pass@4 (512-token budget, T=1.0)",
+      "value": 71.58
+    }
+  ],
+  "sources": []
+}

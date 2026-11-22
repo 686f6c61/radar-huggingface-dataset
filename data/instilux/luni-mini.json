@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "instilux/luni-mini",
+  "slug": "instilux-luni-mini",
+  "author": "instilux",
+  "url": "https://huggingface.co/instilux/luni-mini",
+  "created_at": "2026-06-08T17:25:55.000Z",
+  "updated_at": "2026-11-22T15:58:40.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "lb"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "lb",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 362,
+  "trending_score": 0,
+  "parameters": 68457664,
+  "parameters_human": "68.5M",
+  "storage_bytes": 273842880,
+  "storage_human": "274 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

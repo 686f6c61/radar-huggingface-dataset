@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "Eiki-AI/plamo-3-translate-2b-af-no-preview-NVFP4",
+  "slug": "eiki-ai-plamo-3-translate-2b-af-no-preview-nvfp4",
+  "author": "Eiki-AI",
+  "url": "https://huggingface.co/Eiki-AI/plamo-3-translate-2b-af-no-preview-NVFP4",
+  "created_at": "2026-11-19T01:43:38.000Z",
+  "updated_at": "2026-11-19T01:44:13.000Z",
+  "license": "plamo-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja",
+    "af",
+    "no"
+  ],
+  "tags": [
+    "safetensors",
+    "plamo3",
+    "translation",
+    "plamo",
+    "afrikaans",
+    "norwegian",
+    "nvfp4",
+    "fp4",
+    "modelopt",
+    "custom_code",
+    "en",
+    "ja",
+    "af",
+    "no",
+    "base_model:pfnet/plamo-3-translate-2b",
+    "base_model:finetune:pfnet/plamo-3-translate-2b",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2878595584,
+  "parameters_human": "2.88B",
+  "storage_bytes": 2410985032,
+  "storage_human": "2.4 GB",
+  "context_length": null,
+  "base_model": "pfnet/plamo-3-translate-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix (NFLX) Q3 2026 Earnings Preview: Ad-Tier Scale and …",
+      "url": "https://news.alphastreet.com/netflix-nflx-q3-2026-earnings-preview-ad-tier-scale-and-password-sharing-monetization-set-the-bar/",
+      "snippet": "Oct 15, 2026 · The advertising-supported tier has achieved scale faster than most observers projected. Netflix’s ad-supported plan …Read more"
+    }
+  ]
+}

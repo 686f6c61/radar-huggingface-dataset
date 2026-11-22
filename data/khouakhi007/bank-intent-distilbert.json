@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Khouakhi007/bank-intent-distilbert",
+  "slug": "khouakhi007-bank-intent-distilbert",
+  "author": "Khouakhi007",
+  "url": "https://huggingface.co/Khouakhi007/bank-intent-distilbert",
+  "created_at": "2026-11-22T20:32:03.000Z",
+  "updated_at": "2026-11-22T20:32:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "banking",
+    "teaching",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67009609,
+  "parameters_human": "67.0M",
+  "storage_bytes": 268050972,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

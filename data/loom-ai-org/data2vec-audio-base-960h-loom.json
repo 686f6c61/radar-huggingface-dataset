@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "loom-ai-org/data2vec-audio-base-960h-loom",
+  "slug": "loom-ai-org-data2vec-audio-base-960h-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/data2vec-audio-base-960h-loom",
+  "created_at": "2026-09-17T10:14:25.000Z",
+  "updated_at": "2026-11-22T17:33:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "loom",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:facebook/data2vec-audio-base-960h",
+    "base_model:quantized:facebook/data2vec-audio-base-960h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 93188130,
+  "parameters_human": "93.2M",
+  "storage_bytes": 745688032,
+  "storage_human": "746 MB",
+  "context_length": null,
+  "base_model": "facebook/data2vec-audio-base-960h",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    },
+    {
+      "title": "Log in to Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Télécharger Loom (gratuit) Windows, iOS, Mac, Web, Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche435849-loom-2.html",
+      "snippet": "5 days ago · Original et multiplateforme, Loom est un logiciel macOS bien pratique pour réaliser des captures d'écran vidéo avec …"
+    }
+  ]
+}

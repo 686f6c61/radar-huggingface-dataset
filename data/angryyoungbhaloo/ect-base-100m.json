@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "AngryYoungBhaloo/ect-base-100m",
+  "slug": "angryyoungbhaloo-ect-base-100m",
+  "author": "AngryYoungBhaloo",
+  "url": "https://huggingface.co/AngryYoungBhaloo/ect-base-100m",
+  "created_at": "2026-11-22T20:31:16.000Z",
+  "updated_at": "2026-11-22T20:32:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "research",
+    "language-model",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:AngryYoungBhaloo/ect-pretraining-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100291200,
+  "parameters_human": "100.3M",
+  "storage_bytes": 401175496,
+  "storage_human": "401 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

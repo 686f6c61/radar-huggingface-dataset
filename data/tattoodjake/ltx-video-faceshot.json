@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "TattoodJake/ltx-video-faceshot",
+  "slug": "tattoodjake-ltx-video-faceshot",
+  "author": "TattoodJake",
+  "url": "https://huggingface.co/TattoodJake/ltx-video-faceshot",
+  "created_at": "2026-11-22T16:11:06.000Z",
+  "updated_at": "2026-11-22T16:11:06.000Z",
+  "license": "ltx-video-faceshot",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REPLAY TF1: Emissions à revoir",
+      "url": "https://www.replay.fr/emissions+tf1/videos",
+      "snippet": "Dix ans après leurs vacances en Corse, la joyeuse troupe des randonneurs a décidé de repartir ensemble. Mais à l'aube de leurs …Read more"
+    }
+  ]
+}

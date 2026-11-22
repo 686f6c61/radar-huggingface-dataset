@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "id": "manuelgscom/rumor-village-e4b-GGUF",
+  "slug": "manuelgscom-rumor-village-e4b-gguf",
+  "author": "manuelgscom",
+  "url": "https://huggingface.co/manuelgscom/rumor-village-e4b-GGUF",
+  "created_at": "2026-11-22T18:46:33.000Z",
+  "updated_at": "2026-11-22T19:07:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "gemma",
+    "lora",
+    "game",
+    "simulation",
+    "agents",
+    "multi-agent",
+    "generative-agents",
+    "npc",
+    "json",
+    "structured-output",
+    "grammar",
+    "cuda",
+    "vulkan",
+    "offline",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 5522251877,
+  "storage_human": "5.5 GB",
+  "context_length": 131072,
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Neighbor decisions (frozen test, English)",
+      "dataset": "Rumor Village frozen decision test (en, 1,000 cards)",
+      "metric": "Made-up memories (%)",
+      "value": 0
+    },
+    {
+      "task": "Neighbor decisions (frozen test, English)",
+      "dataset": "Rumor Village frozen decision test (en, 1,000 cards)",
+      "metric": "Contradictions (%)",
+      "value": 0.1
+    },
+    {
+      "task": "Neighbor decisions (frozen test, English)",
+      "dataset": "Rumor Village frozen decision test (en, 1,000 cards)",
+      "metric": "Incoherent text (%)",
+      "value": 0.6
+    },
+    {
+      "task": "Neighbor decisions (frozen test, English)",
+      "dataset": "Rumor Village frozen decision test (en, 1,000 cards)",
+      "metric": "Rejected actions (%)",
+      "value": 0.9
+    },
+    {
+      "task": "Neighbor decisions (frozen test, Spanish)",
+      "dataset": "Rumor Village frozen decision test (es, 1,000 cards)",
+      "metric": "Made-up memories (%)",
+      "value": 0
+    },
+    {
+      "task": "Neighbor decisions (frozen test, Spanish)",
+      "dataset": "Rumor Village frozen decision test (es, 1,000 cards)",
+      "metric": "Contradictions (%)",
+      "value": 0.2
+    },
+    {
+      "task": "Neighbor decisions (frozen test, Spanish)",
+      "dataset": "Rumor Village frozen decision test (es, 1,000 cards)",
+      "metric": "Incoherent text (%)",
+      "value": 0
+    },
+    {
+      "task": "Neighbor decisions (frozen test, Spanish)",
+      "dataset": "Rumor Village frozen decision test (es, 1,000 cards)",
+      "metric": "Rejected actions (%)",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

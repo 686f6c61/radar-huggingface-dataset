@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "DrAbdulmalek/qwen2.5-7b-abliterated",
+  "slug": "drabdulmalek-qwen2-5-7b-abliterated",
+  "author": "DrAbdulmalek",
+  "url": "https://huggingface.co/DrAbdulmalek/qwen2.5-7b-abliterated",
+  "created_at": "2026-11-22T20:06:32.000Z",
+  "updated_at": "2026-11-22T20:10:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "abliterated",
+    "uncensored",
+    "qwen2.5",
+    "obliteratus",
+    "en",
+    "ar",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693645,
+  "storage_human": "15.2 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

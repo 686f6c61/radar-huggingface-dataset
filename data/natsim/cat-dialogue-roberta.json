@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "natsim/cat-dialogue-RoBERTa",
+  "slug": "natsim-cat-dialogue-roberta",
+  "author": "natsim",
+  "url": "https://huggingface.co/natsim/cat-dialogue-RoBERTa",
+  "created_at": "2025-12-16T03:10:21.000Z",
+  "updated_at": "2026-11-22T17:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "emotion-classification",
+    "pettichat",
+    "research",
+    "text-classification",
+    "en",
+    "base_model:SamLowe/roberta-base-go_emotions",
+    "base_model:finetune:SamLowe/roberta-base-go_emotions",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4488052226,
+  "storage_human": "4.5 GB",
+  "context_length": null,
+  "base_model": "SamLowe/roberta-base-go_emotions",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

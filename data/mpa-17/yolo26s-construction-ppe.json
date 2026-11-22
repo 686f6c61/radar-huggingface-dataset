@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "mpa-17/yolo26s-construction-ppe",
+  "slug": "mpa-17-yolo26s-construction-ppe",
+  "author": "mpa-17",
+  "url": "https://huggingface.co/mpa-17/yolo26s-construction-ppe",
+  "created_at": "2026-11-22T12:38:33.000Z",
+  "updated_at": "2026-11-22T12:38:46.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "ppe-detection",
+    "construction-safety",
+    "int8",
+    "dataset:Francesco/construction-safety-gsnvb",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90824423,
+  "storage_human": "91 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MPa : Qu'est ce que le Mégapascal ? - Mon batiment !",
+      "url": "https://monbatiment.fr/mpa-quest-ce-que-le-megapascal/",
+      "snippet": "Feb 7, 2025 · En construction, le mégapascal ou « MPa » est la valeur qui permet de connaitre la quantité de pression qu’un …"
+    }
+  ]
+}

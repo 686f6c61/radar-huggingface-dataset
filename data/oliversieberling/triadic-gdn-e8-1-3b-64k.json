@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "OliverSieberling/triadic-gdn-e8-1.3b-64k",
+  "slug": "oliversieberling-triadic-gdn-e8-1-3b-64k",
+  "author": "OliverSieberling",
+  "url": "https://huggingface.co/OliverSieberling/triadic-gdn-e8-1.3b-64k",
+  "created_at": "2026-11-22T20:37:50.000Z",
+  "updated_at": "2026-11-22T20:38:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "linear-attention",
+    "gated-deltanet",
+    "long-context",
+    "en",
+    "arxiv:2609.36529",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1378339840,
+  "parameters_human": "1.38B",
+  "storage_bytes": 5513393656,
+  "storage_human": "5.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

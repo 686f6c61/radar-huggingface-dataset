@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "panlr/CosyVoice3-Teochew-TTS-SFT-DPO-GRPO-RFT",
+  "slug": "panlr-cosyvoice3-teochew-tts-sft-dpo-grpo-rft",
+  "author": "panlr",
+  "url": "https://huggingface.co/panlr/CosyVoice3-Teochew-TTS-SFT-DPO-GRPO-RFT",
+  "created_at": "2026-11-22T14:59:07.000Z",
+  "updated_at": "2026-11-22T15:12:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "cosyvoice",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "cosyvoice",
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "teochew",
+    "teochew-tts",
+    "code-switching",
+    "zh",
+    "base_model:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "base_model:quantized:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7515031469,
+  "storage_human": "7.5 GB",
+  "context_length": null,
+  "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

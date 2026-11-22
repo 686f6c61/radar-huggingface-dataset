@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "MostafaMaroof/wav2vec2-arabic-phoneme-asr",
+  "slug": "mostafamaroof-wav2vec2-arabic-phoneme-asr",
+  "author": "MostafaMaroof",
+  "url": "https://huggingface.co/MostafaMaroof/wav2vec2-arabic-phoneme-asr",
+  "created_at": "2026-04-28T19:46:57.000Z",
+  "updated_at": "2026-11-22T20:07:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "ctc",
+    "arabic",
+    "phoneme-recognition",
+    "automatic-speech-recognition",
+    "ar",
+    "dataset:tunis-ai/arabic_speech_corpus",
+    "dataset:IqraEval/Iqra_train",
+    "base_model:facebook/wav2vec2-large-xlsr-53",
+    "base_model:finetune:facebook/wav2vec2-large-xlsr-53",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2385,
+  "trending_score": 0,
+  "parameters": 315520720,
+  "parameters_human": "315.5M",
+  "storage_bytes": 5048480228,
+  "storage_human": "5.0 GB",
+  "context_length": null,
+  "base_model": "facebook/wav2vec2-large-xlsr-53",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

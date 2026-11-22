@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "KeTuTu/swedish-grammaticality-scoring",
+  "slug": "ketutu-swedish-grammaticality-scoring",
+  "author": "KeTuTu",
+  "url": "https://huggingface.co/KeTuTu/swedish-grammaticality-scoring",
+  "created_at": "2026-11-22T13:21:54.000Z",
+  "updated_at": "2026-11-22T13:22:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "grammaticality",
+    "sv",
+    "dataset:KeTuTu/swedish-grammaticality-pairs",
+    "arxiv:2007.01658",
+    "base_model:KB/bert-base-swedish-cased",
+    "base_model:finetune:KB/bert-base-swedish-cased",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124101890,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496430912,
+  "storage_human": "496 MB",
+  "context_length": null,
+  "base_model": "KB/bert-base-swedish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

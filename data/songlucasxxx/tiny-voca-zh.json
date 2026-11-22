@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "songLucasXXX/tiny-voca-zh",
+  "slug": "songlucasxxx-tiny-voca-zh",
+  "author": "songLucasXXX",
+  "url": "https://huggingface.co/songLucasXXX/tiny-voca-zh",
+  "created_at": "2026-11-22T16:21:10.000Z",
+  "updated_at": "2026-11-22T16:33:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "tts",
+    "text-to-speech",
+    "chinese",
+    "mandarin",
+    "fastspeech2",
+    "source-filter",
+    "tiny-voca",
+    "trained-from-scratch",
+    "zh",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19107493,
+  "storage_human": "19 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-Speech",
+      "dataset": "Held-out set (64 sentences, 2 x 32)",
+      "metric": "Character Error Rate (student, voices F+M)",
+      "value": 2.16
+    },
+    {
+      "task": "Text-to-Speech",
+      "dataset": "Held-out set (64 sentences, 2 x 32)",
+      "metric": "Character Error Rate (teacher reference)",
+      "value": 1.4
+    }
+  ],
+  "sources": []
+}

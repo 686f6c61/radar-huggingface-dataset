@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "f0rkB0mb161/Wizard-Vicuna-13B-Uncensored-GGUF",
+  "slug": "f0rkb0mb161-wizard-vicuna-13b-uncensored-gguf",
+  "author": "f0rkB0mb161",
+  "url": "https://huggingface.co/f0rkB0mb161/Wizard-Vicuna-13B-Uncensored-GGUF",
+  "created_at": "2026-11-22T20:28:56.000Z",
+  "updated_at": "2026-11-22T20:28:57.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "en",
+    "dataset:ehartford/wizard_vicuna_70k_unfiltered",
+    "base_model:QuixiAI/Wizard-Vicuna-13B-Uncensored",
+    "base_model:quantized:QuixiAI/Wizard-Vicuna-13B-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801915264,
+  "storage_human": "88.8 GB",
+  "context_length": 2048,
+  "base_model": "QuixiAI/Wizard-Vicuna-13B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

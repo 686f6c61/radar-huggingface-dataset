@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "shauryathakur07/swedish-grammar-kbbert",
+  "slug": "shauryathakur07-swedish-grammar-kbbert",
+  "author": "shauryathakur07",
+  "url": "https://huggingface.co/shauryathakur07/swedish-grammar-kbbert",
+  "created_at": "2026-11-22T17:29:08.000Z",
+  "updated_at": "2026-11-22T17:33:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sv",
+    "dataset:shauryathakur07/swedish-grammar-data",
+    "base_model:KBLab/bert-base-swedish-cased",
+    "base_model:finetune:KBLab/bert-base-swedish-cased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124691713,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498790396,
+  "storage_human": "499 MB",
+  "context_length": null,
+  "base_model": "KBLab/bert-base-swedish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

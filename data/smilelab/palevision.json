@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "smilelab/PaleVision",
+  "slug": "smilelab-palevision",
+  "author": "smilelab",
+  "url": "https://huggingface.co/smilelab/PaleVision",
+  "created_at": "2026-11-22T14:54:36.000Z",
+  "updated_at": "2026-11-22T14:55:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "hyperspectral",
+    "semantic-segmentation",
+    "opsin",
+    "image-segmentation",
+    "arxiv:2412.19439",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426474086,
+  "storage_human": "426 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smilelab",
+      "url": "https://smilelab.com/en-us",
+      "snippet": "Smilelab No sensitivity, no fuss — just a fresher, whiter smile with every brush."
+    },
+    {
+      "title": "SMILE LAB - Laboratoire d'Orthodontie et impression par Frittage Laser",
+      "url": "https://smilelabortho.be/",
+      "snippet": "Merci à l'équipe \"SmileLAB\"! un travail professionnel avec des appareils orthodontiques de qualité. C'est MON laboratoire de référence."
+    },
+    {
+      "title": "Nouveau Sourire Sans Chirurgie | Facettes Amovible Smile Lab",
+      "url": "https://www.smilelabparis.com/",
+      "snippet": "SmileLab et LA solution Nos facettes amovibles cachent toutes les imperfections visibles sans toucher à vos vraies dents. Elles …Read more"
+    },
+    {
+      "title": "LABORATOIRE SMILELAB - Le Sourire Made In France",
+      "url": "https://lesprothesistesdentairesfrancais.fr/prothesiste/laboratoires/laboratoire-smilelab/",
+      "snippet": "LABORATOIRE SMILELAB est un laboratoire de prothèse dentaire agréé Sourire Made in France. Spécialités, coordonnées et …Read more"
+    }
+  ]
+}

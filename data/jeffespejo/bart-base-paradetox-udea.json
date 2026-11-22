@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "jeffespejo/bart-base-paradetox-udea",
+  "slug": "jeffespejo-bart-base-paradetox-udea",
+  "author": "jeffespejo",
+  "url": "https://huggingface.co/jeffespejo/bart-base-paradetox-udea",
+  "created_at": "2026-11-22T15:40:43.000Z",
+  "updated_at": "2026-11-22T15:41:15.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bart",
+    "detoxification",
+    "style-transfer",
+    "paradetox",
+    "text2text-generation",
+    "en",
+    "dataset:s-nlp/paradetox",
+    "base_model:facebook/bart-base",
+    "base_model:finetune:facebook/bart-base",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 557912620,
+  "storage_human": "558 MB",
+  "context_length": null,
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

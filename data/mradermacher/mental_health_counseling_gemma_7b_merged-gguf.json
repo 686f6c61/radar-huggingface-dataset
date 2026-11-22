@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/mental_health_counseling_gemma_7b_merged-GGUF",
+  "slug": "mradermacher-mental_health_counseling_gemma_7b_merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mental_health_counseling_gemma_7b_merged-GGUF",
+  "created_at": "2025-03-01T02:29:47.000Z",
+  "updated_at": "2026-11-22T18:19:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "trl",
+    "sft",
+    "en",
+    "base_model:neuralweb/mental_health_counseling_gemma_7b_merged",
+    "base_model:quantized:neuralweb/mental_health_counseling_gemma_7b_merged",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 8537680896,
+  "parameters_human": "8.54B",
+  "storage_bytes": 77018479104,
+  "storage_human": "77.0 GB",
+  "context_length": 8192,
+  "base_model": "neuralweb/mental_health_counseling_gemma_7b_merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
